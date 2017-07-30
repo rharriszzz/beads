@@ -1,0 +1,7 @@
+c:\Users\rharris\Downloads\web\web\beads.pov
+800x600 AA 0.3
++KFF2400 +fj -Omovie
+
+cd /cygdrive/c/users/rharris/downloads/web/web/beads
+export PATH=/cygdrive/c/users/rharris/downloads/ffmpeg/ffmpeg-20140330-git-c01ddf8-win32-static/bin:$PATH
+ffmpeg -i movie%04.jpg -c:v libx264 -pix_fmt yuv420p beads.mp4
