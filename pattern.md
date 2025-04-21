@@ -97,7 +97,7 @@ Along the way you refined the approach from a circle‑detection heuristic to a 
    Confirm the recovered palette and pattern length against your POV‑Ray ground truth.
 2. **Real‑photo evaluation**  
    ```bash
-   python main.py "beaded example 1.jpg" "beaded example 2.png"
+   python main.py "bead-example-3.jpg"
    ```  
    Inspect each `(bead_index, color_index, certainty)` and overlay region outlines.
 3. **Parameter tuning**  
@@ -138,7 +138,7 @@ Along the way you refined the approach from a circle‑detection heuristic to a 
 | turn2search0  | [Autocorrelation periodicity detection via FFT (SciPy)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.correlate.html) | 2 (Method Overview)              |
 | turn1search0  | [KMP prefix-function for minimal period (Knuth–Morris–Pratt)](https://en.wikipedia.org/wiki/Knuth–Morris–Pratt_algorithm) | 2 (Method Overview)              |
 | turn0search5  | [SLIC superpixel segmentation (scikit-image)](https://scikit-image.org/docs/dev/api/skimage.segmentation.html#skimage.segmentation.slic) | 2 (Method Overview)              |
-| turn0search3  | [RAG mean-color merging (skimage.future.graph.rag_mean_color)](https://scikit-image.org/docs/dev/api/skimage.future.graph.html#skimage.future.graph.rag_mean_color) | 2 (Method Overview)              |
+| turn0search3  | [RAG mean-color merging (skimage.graph.rag_mean_color)](https://scikit-image.org/docs/dev/api/skimage.graph.html#skimage.graph.rag_mean_color) | 2 (Method Overview)              |
 | turn0search0  | [PEP 8 comment guidelines](https://www.python.org/dev/peps/pep-0008/#comments)                        | 3.1 (VS Code install)            |
 | turn1search1  | [VS Code setup on Windows/macOS](https://code.visualstudio.com/docs/setup/setup-overview)             | 3.1 (VS Code install)            |
 | turn1search2  | [Git for Windows / Homebrew installer](https://git-scm.com/download)                                 | 3.2 (Git & Bash)                 |
