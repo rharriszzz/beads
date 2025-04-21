@@ -2,7 +2,10 @@
 
 import numpy as np
 from skimage import segmentation, color, graph, morphology
-from skimage.future import graph as future_graph
+try:
+    import skimage.future.graph as future_graph # type: ignore
+except ImportError:
+    import skimage.graph as future_graph
 from skimage.measure import label, regionprops
 from skimage.color import rgb2lab
 import cv2
