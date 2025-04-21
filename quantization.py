@@ -42,5 +42,5 @@ def assign_color_and_certainty(image, props, palette, expected_area):
         color_index = int(np.argmin(dists))
         # certainty based on observed vs. expected bead area 
         certainty = min(1.0, r.area / expected_area)
-        bead_data.append((r.label - 1, color_index, certainty))
+        bead_data.append((r.label - 1, color_index, certainty, r.area))
     return bead_data
