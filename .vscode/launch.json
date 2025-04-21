@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Python: Run main.py with args",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
+      "args": [
+        "*.jpg",
+        "--verbose",
+        "--n_colors", "3",
+        "--expected_area", "500",
+        "--n_segments", "1000"
+      ]
+    }
+  ]
+}
