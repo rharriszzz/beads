@@ -86,19 +86,14 @@ def centerline_rmse(centerline: Centerline, target_y: float) -> float:
 
 
 def band_widths(mask: np.ndarray) -> np.ndarray:
-    """Return per-column band thickness (max-min y) where mask is present."""
+    """Return per-column band thickness as the longest run of contiguous True."""
     if mask.ndim != 2:
         raise ValueError("Mask must be 2D boolean array")
     height, width = mask.shape
     widths = np.zeros(width, dtype=float)
-    ys = np.arange(height)
     for x in range(width):
         col = mask[:, x]
-        if not col.any():
-            widths[x] = 0.0
-            continue
-        present = ys[col]
-        widths[x] = float(present.max() - present.min() + 1)
+        widths[x] = float(_longest_run(col))
     return widths
 
 
@@ -149,3 +144,18 @@ def otsu_threshold(gray: np.ndarray) -> int:
             max_var = var_between
             threshold = t
     return int(threshold)
+
+
+def _longest_run(col: np.ndarray) -> int:
+    """Return length of the longest contiguous True run in a 1D boolean array."""
+    if col.size == 0:
+        return 0
+    # Pad with False to flush any trailing run
+    padded = np.concatenate([[False], col.astype(bool), [False]])
+    diffs = np.diff(padded.astype(int))
+    starts = np.flatnonzero(diffs == 1)
+    ends = np.flatnonzero(diffs == -1)
+    if starts.size == 0:
+        return 0
+    lengths = ends - starts
+    return int(lengths.max())

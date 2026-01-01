@@ -60,6 +60,15 @@ class SegmentationTests(unittest.TestCase):
         # Widths where band exists should be close to band_height + 1 (inclusive range)
         non_zero = widths[widths > 0]
         self.assertTrue(np.allclose(non_zero, band_height + 1))
+        # Two separated bands should still yield single-band width
+        img2 = Image.new("RGB", (200, 100), color=(255, 255, 255))
+        draw = ImageDraw.Draw(img2)
+        draw.rectangle([0, 10, 200, 20], fill=(180, 0, 180))
+        draw.rectangle([0, 60, 200, 70], fill=(180, 0, 180))
+        mask2 = segmentation.mask_bracelet(img2)
+        widths2 = segmentation.band_widths(mask2)
+        non_zero2 = widths2[widths2 > 0]
+        self.assertTrue(np.allclose(non_zero2, 11))
 
     def test_estimate_geometry(self):
         band_top = 20
