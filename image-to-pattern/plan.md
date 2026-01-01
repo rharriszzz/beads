@@ -41,3 +41,4 @@ Progress notes
 - Added layout helper that mirrors POV math (`beads_per_row=6.5`, `nrows=floor(0.5 + nbeads/6.5)`) and evenly alternates 6/7-bead rows to sum to `nbeads` (Bresenham-style distribution).
 - Unit tests cover row counts and bead_index→(row,col) mapping for POV cases 1, 2, and 7; these pass and confirm the 6/7 alternation. Use this mapping when unwrapping bead sequences from images.
 - Captured the canonical `beads.pov` patterns in code (all 8 cases) so tests can validate lengths, bead counts, and row distributions programmatically. Case 3 is regenerated from the POV loops to reach length 372.
+- Added minimal segmentation primitives: `mask_bracelet` (brightness thresholding) and `centerline_from_mask` (mean y per column), with tests on synthetic band images. This is the first image-side checkpoint; real photos will need improved color/morphology, but the test harness is in place.
