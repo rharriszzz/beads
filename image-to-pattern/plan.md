@@ -42,3 +42,4 @@ Progress notes
 - Unit tests cover row counts and bead_index→(row,col) mapping for POV cases 1, 2, and 7; these pass and confirm the 6/7 alternation. Use this mapping when unwrapping bead sequences from images.
 - Captured the canonical `beads.pov` patterns in code (all 8 cases) so tests can validate lengths, bead counts, and row distributions programmatically. Case 3 is regenerated from the POV loops to reach length 372.
 - Added minimal segmentation primitives: `mask_bracelet` (brightness thresholding) and `centerline_from_mask` (mean y per column), with tests on synthetic band images. This is the first image-side checkpoint; real photos will need improved color/morphology, but the test harness is in place.
+- Added sampling helpers to place bead centers along a centerline (arc-length interpolation) and sample mean colors in circular regions; tests use synthetic bead images to validate spacing/offset behavior and color reads.
