@@ -6,15 +6,12 @@ from typing import Optional, Sequence
 
 from PIL import Image
 
-from . import pipeline, pov_patterns, segmentation
+from . import pipeline, segmentation
 
 
 def parse_palette(case: Optional[int], palette: Optional[Sequence[str]]):
-    if case is not None:
-        pat = pov_patterns.get_pattern(case)
-        # Fall back to basic RGB if palette not defined
-        if pat.palette and all(c is not None for c in pat.palette):
-            return [tuple(float(x) * 255 for x in c) for c in pat.palette]
+    # We no longer rely on POV patterns for palette inference; case is ignored
+    # and only retained for CLI compatibility.
     if palette:
         def parse_color(s: str):
             parts = s.split(",")
@@ -29,7 +26,7 @@ def parse_palette(case: Optional[int], palette: Optional[Sequence[str]]):
 def main():
     parser = argparse.ArgumentParser(description="Run bead image → pattern pipeline.")
     parser.add_argument("image", type=Path, help="Path to input image")
-    parser.add_argument("--case", type=int, help="Assume POV case for palette")
+    parser.add_argument("--case", type=int, help="(Deprecated) POV case; ignored for palette inference")
     parser.add_argument("--palette", nargs="+", help="Explicit palette colors as R,G,B triplets")
     parser.add_argument("--spacing", type=float, help="Bead spacing in pixels (auto if omitted)")
     parser.add_argument("--radius", type=float, help="Bead sampling radius in pixels (auto if omitted)")
