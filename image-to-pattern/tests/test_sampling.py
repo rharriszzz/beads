@@ -69,6 +69,14 @@ class SamplingTests(unittest.TestCase):
             # Colors should be close to the fill values
             self.assertTrue(np.allclose(color, exp, atol=5.0))
 
+    def test_centerline_length(self):
+        xs = [0, 3, 6]
+        ys = [0, 4, 0]
+        cl = segmentation.Centerline(xs=xs, ys=ys)
+        length = sampling.centerline_length(cl)
+        # Two segments: 3-4-5 triangles
+        self.assertAlmostEqual(length, 10.0)
+
 
 if __name__ == "__main__":
     unittest.main()

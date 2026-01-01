@@ -51,6 +51,18 @@ def positions_along_centerline(
     return positions
 
 
+def centerline_length(centerline: Centerline) -> float:
+    """Compute arc length of a centerline."""
+    xs = np.array(centerline.xs, dtype=float)
+    ys = np.array(centerline.ys, dtype=float)
+    if xs.size < 2:
+        return 0.0
+    dx = np.diff(xs)
+    dy = np.diff(ys)
+    seg_lengths = np.sqrt(dx * dx + dy * dy)
+    return float(seg_lengths.sum())
+
+
 def sample_disk_mean(img: Image.Image, center: Tuple[float, float], radius: float) -> Tuple[float, float, float]:
     """Average RGB color inside a disk region."""
     if radius <= 0:

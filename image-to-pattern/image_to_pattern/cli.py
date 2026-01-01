@@ -33,6 +33,7 @@ def main():
     parser.add_argument("--palette", nargs="+", help="Explicit palette colors as R,G,B triplets")
     parser.add_argument("--spacing", type=float, help="Bead spacing in pixels (auto if omitted)")
     parser.add_argument("--radius", type=float, help="Bead sampling radius in pixels (auto if omitted)")
+    parser.add_argument("--expected-beads", type=int, help="If set, derive spacing from centerline length / expected_beads")
     parser.add_argument("--offset", type=float, default=0.0, help="Starting offset along centerline")
     parser.add_argument("--brightness-threshold", type=int, help="Mask threshold (lower is darker); auto if omitted")
     args = parser.parse_args()
@@ -45,9 +46,16 @@ def main():
     radius = args.radius
     if spacing is None or radius is None:
         geom = segmentation.estimate_geometry(mask)
+        if spacing is None and args.expected_beads:
+            from image_to_pattern.sampling import centerline_length
+
+            cl = segmentation.centerline_from_mask(mask)
+            arc_len = centerline_length(cl)
+            spacing = arc_len / args.expected_beads if args.expected_beads > 0 else geom.spacing_px
         spacing = spacing or geom.spacing_px
         radius = radius or geom.radius_px
-        print(f"[auto] thickness={geom.thickness_px:.2f}px spacing={spacing:.2f}px radius={radius:.2f}px")
+        extra = f" (expected_beads={args.expected_beads})" if args.expected_beads else ""
+        print(f"[auto] thickness={geom.thickness_px:.2f}px spacing={spacing:.2f}px radius={radius:.2f}px{extra}")
 
     res = pipeline.infer_pattern(
         img,
