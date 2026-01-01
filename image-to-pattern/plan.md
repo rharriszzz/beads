@@ -47,3 +47,4 @@ Progress notes
 - Added an end-to-end pipeline wiring segmentation → centerline → sampling → palette mapping, with a synthetic integration test that recovers the expected palette index sequence for a generated bracelet image. This sets the stage for running on real photos and adding periodicity detection.
 - Added periodicity utilities (normalized autocorrelation, period estimation, pattern extraction) with tests including noisy sequences, prepping for pattern-length inference on sampled bead indices.
 - Extended the pipeline with a pattern-detection helper that returns period and extracted pattern from sampled palette indices; synthetic integration test validates recovery of a 3-bead repeating pattern.
+- Added pattern matching helpers to compare sampled indices against the canonical POV patterns (offset search, best-match selection) with unit tests for shifts and empty input. This will help choose the best case/palette when decoding real photos.
