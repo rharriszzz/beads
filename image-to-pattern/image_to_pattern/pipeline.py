@@ -31,12 +31,22 @@ def infer_palette_indices(
     brightness_threshold: Optional[int] = None,
     offset_px: float = 0.0,
     min_coverage: float = 0.3,
+    use_bead_detection: bool = False,
 ) -> PipelineResult:
     """Run segmentation -> centerline -> sampling -> palette mapping."""
     mask = mask_bracelet(img, brightness_threshold=brightness_threshold)
     centerline = centerline_from_mask(mask)
-    positions = positions_along_centerline(centerline, spacing_px=spacing_px, offset_px=offset_px)
-    samples = sample_beads(img, positions, radius=radius_px, mask=mask)
+    if use_bead_detection:
+        from .bead_detect import detect_bead_centers
+        from .bead_graph import order_beads_by_mst
+
+        detected = detect_bead_centers(mask, spacing_px=spacing_px)
+        ordered = order_beads_by_mst(detected)
+        positions = ordered.centers
+    else:
+        positions = positions_along_centerline(centerline, spacing_px=spacing_px, offset_px=offset_px)
+
+    samples = sample_beads(img, positions, radius=radius_px, mask=mask, use_median=True)
     filtered = [s for s in samples if s.coverage >= min_coverage]
     indices = nearest_palette_indices([s.color for s in filtered], palette_colors) if filtered else []
     return PipelineResult(mask=mask, centerline=centerline, positions=positions, samples=samples, indices=indices)
