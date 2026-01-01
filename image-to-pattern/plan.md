@@ -43,3 +43,4 @@ Progress notes
 - Captured the canonical `beads.pov` patterns in code (all 8 cases) so tests can validate lengths, bead counts, and row distributions programmatically. Case 3 is regenerated from the POV loops to reach length 372.
 - Added minimal segmentation primitives: `mask_bracelet` (brightness thresholding) and `centerline_from_mask` (mean y per column), with tests on synthetic band images. This is the first image-side checkpoint; real photos will need improved color/morphology, but the test harness is in place.
 - Added sampling helpers to place bead centers along a centerline (arc-length interpolation) and sample mean colors in circular regions; tests use synthetic bead images to validate spacing/offset behavior and color reads.
+- Added palette utilities to map sampled colors to nearest palette entries and compute mean colors; tests cover nearest-neighbor classification and error handling. Ready to plug sampled bead colors into pattern inference.
