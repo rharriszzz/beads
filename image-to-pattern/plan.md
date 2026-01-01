@@ -45,3 +45,4 @@ Progress notes
 - Added sampling helpers to place bead centers along a centerline (arc-length interpolation) and sample mean colors in circular regions; tests use synthetic bead images to validate spacing/offset behavior and color reads.
 - Added palette utilities to map sampled colors to nearest palette entries and compute mean colors; tests cover nearest-neighbor classification and error handling. Ready to plug sampled bead colors into pattern inference.
 - Added an end-to-end pipeline wiring segmentation → centerline → sampling → palette mapping, with a synthetic integration test that recovers the expected palette index sequence for a generated bracelet image. This sets the stage for running on real photos and adding periodicity detection.
+- Added periodicity utilities (normalized autocorrelation, period estimation, pattern extraction) with tests including noisy sequences, prepping for pattern-length inference on sampled bead indices.
