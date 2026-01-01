@@ -56,6 +56,22 @@ class PipelineTests(unittest.TestCase):
         expected = [i % len(palette_colors) for i in range(len(result.indices))]
         self.assertEqual(result.indices[: len(expected)], expected)
 
+    def test_pipeline_pattern_detection(self):
+        palette_colors = ((255, 0, 0), (0, 255, 0), (0, 0, 255))
+        img, centers, radius, _ = synthetic_beads(colors=palette_colors)
+        spacing = centers[1][0] - centers[0][0]
+        offset = centers[0][0]
+        result = pipeline.infer_pattern(
+            img,
+            palette_colors=palette_colors,
+            spacing_px=spacing,
+            radius_px=radius * 0.8,
+            brightness_threshold=250,
+            offset_px=offset,
+        )
+        self.assertEqual(result.period, 3)
+        self.assertEqual(result.pattern, [0, 1, 2])
+
 
 if __name__ == "__main__":
     unittest.main()

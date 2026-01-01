@@ -19,6 +19,8 @@ class PipelineResult:
     positions: List[tuple]
     samples: List[BeadSample]
     indices: List[int]
+    period: int | None = None
+    pattern: List[int] | None = None
 
 
 def infer_palette_indices(
@@ -36,3 +38,29 @@ def infer_palette_indices(
     samples = sample_beads(img, positions, radius=radius_px)
     indices = nearest_palette_indices([s.color for s in samples], palette_colors)
     return PipelineResult(mask=mask, centerline=centerline, positions=positions, samples=samples, indices=indices)
+
+
+def infer_pattern(
+    img: Image.Image,
+    palette_colors: Sequence[tuple],
+    spacing_px: float,
+    radius_px: float,
+    brightness_threshold: int = 230,
+    offset_px: float = 0.0,
+) -> PipelineResult:
+    """Run full pipeline and estimate pattern periodicity."""
+    from . import periodicity  # local import to avoid circular at module import
+
+    base = infer_palette_indices(
+        img,
+        palette_colors=palette_colors,
+        spacing_px=spacing_px,
+        radius_px=radius_px,
+        brightness_threshold=brightness_threshold,
+        offset_px=offset_px,
+    )
+    period = periodicity.estimate_period(base.indices, min_period=1)
+    pattern = periodicity.extract_pattern(base.indices, period=period)
+    base.period = period
+    base.pattern = pattern
+    return base
