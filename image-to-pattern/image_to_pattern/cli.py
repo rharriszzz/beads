@@ -34,7 +34,7 @@ def main():
     parser.add_argument("--spacing", type=float, help="Bead spacing in pixels (auto if omitted)")
     parser.add_argument("--radius", type=float, help="Bead sampling radius in pixels (auto if omitted)")
     parser.add_argument("--offset", type=float, default=0.0, help="Starting offset along centerline")
-    parser.add_argument("--brightness-threshold", type=int, default=230, help="Mask threshold (lower is darker)")
+    parser.add_argument("--brightness-threshold", type=int, help="Mask threshold (lower is darker); auto if omitted")
     args = parser.parse_args()
 
     palette_colors = parse_palette(args.case, args.palette)

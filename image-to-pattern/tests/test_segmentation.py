@@ -24,14 +24,14 @@ def synthetic_band(width=200, height=100, band_top=40, band_height=20, band_colo
 class SegmentationTests(unittest.TestCase):
     def test_mask_bracelet_counts(self):
         img, (top, bottom) = synthetic_band()
-        mask = segmentation.mask_bracelet(img, brightness_threshold=230)
+        mask = segmentation.mask_bracelet(img)
         self.assertEqual(mask.dtype, np.bool_)
         expected_area = (bottom - top + 1) * img.width
         self.assertGreater(mask.sum(), 0.9 * expected_area)
 
     def test_centerline_horizontal_band(self):
         img, (top, bottom) = synthetic_band()
-        mask = segmentation.mask_bracelet(img, brightness_threshold=230)
+        mask = segmentation.mask_bracelet(img)
         centerline = segmentation.centerline_from_mask(mask)
         self.assertLessEqual(min(centerline.xs), 1)  # morphology may shave a pixel
         self.assertGreaterEqual(max(centerline.xs), img.width - 2)
@@ -45,11 +45,17 @@ class SegmentationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             segmentation.centerline_from_mask(mask)
 
+    def test_otsu_threshold(self):
+        # Half dark, half bright should pick a mid threshold
+        gray = np.concatenate([np.full((10, 10), 20, dtype=np.uint8), np.full((10, 10), 240, dtype=np.uint8)], axis=1)
+        t = segmentation.otsu_threshold(gray)
+        self.assertTrue(20 <= t <= 240)
+
     def test_band_widths(self):
         band_top = 30
         band_height = 15
         img, (top, bottom) = synthetic_band(band_top=band_top, band_height=band_height)
-        mask = segmentation.mask_bracelet(img, brightness_threshold=230)
+        mask = segmentation.mask_bracelet(img)
         widths = segmentation.band_widths(mask)
         # Widths where band exists should be close to band_height + 1 (inclusive range)
         non_zero = widths[widths > 0]
@@ -59,7 +65,7 @@ class SegmentationTests(unittest.TestCase):
         band_top = 20
         band_height = 20
         img, _ = synthetic_band(band_top=band_top, band_height=band_height)
-        mask = segmentation.mask_bracelet(img, brightness_threshold=230)
+        mask = segmentation.mask_bracelet(img)
         geom = segmentation.estimate_geometry(mask)
         thickness_expected = band_height + 1
         self.assertAlmostEqual(geom.thickness_px, thickness_expected)

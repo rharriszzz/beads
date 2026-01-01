@@ -28,7 +28,7 @@ def infer_palette_indices(
     palette_colors: Sequence[tuple],
     spacing_px: float,
     radius_px: float,
-    brightness_threshold: int = 230,
+    brightness_threshold: Optional[int] = None,
     offset_px: float = 0.0,
 ) -> PipelineResult:
     """Run segmentation -> centerline -> sampling -> palette mapping."""
@@ -45,7 +45,7 @@ def infer_pattern(
     palette_colors: Sequence[tuple],
     spacing_px: float,
     radius_px: float,
-    brightness_threshold: int = 230,
+    brightness_threshold: Optional[int] = None,
     offset_px: float = 0.0,
 ) -> PipelineResult:
     """Run full pipeline and estimate pattern periodicity."""

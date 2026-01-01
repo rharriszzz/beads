@@ -19,7 +19,7 @@ from PIL import Image
 
 def mask_bracelet(
     img: Image.Image,
-    brightness_threshold: int = 230,
+    brightness_threshold: Optional[int] = None,
     min_component_area: Optional[int] = None,
 ) -> np.ndarray:
     """Return a boolean mask where bracelet pixels are True.
@@ -29,7 +29,8 @@ def mask_bracelet(
     threshold to drop speckle noise.
     """
     gray = np.array(img.convert("L"))
-    mask = gray < brightness_threshold
+    thresh = brightness_threshold if brightness_threshold is not None else otsu_threshold(gray)
+    mask = gray <= thresh
 
     if min_component_area:
         labeled, num = ndimage.label(mask)
@@ -119,3 +120,32 @@ def estimate_geometry(
     spacing = float(thickness * spacing_scale)
     radius = float(thickness * radius_scale)
     return GeometryEstimate(thickness_px=thickness, spacing_px=spacing, radius_px=radius)
+
+
+def otsu_threshold(gray: np.ndarray) -> int:
+    """Compute Otsu's threshold for a grayscale image."""
+    if gray.ndim != 2:
+        raise ValueError("Expected 2D grayscale array")
+    hist, bin_edges = np.histogram(gray.ravel(), bins=256, range=(0, 256))
+    total = gray.size
+    sum_total = np.dot(hist, np.arange(256))
+
+    sum_b = 0.0
+    w_b = 0.0
+    max_var = -1.0
+    threshold = 0
+    for t in range(256):
+        w_b += hist[t]
+        if w_b == 0:
+            continue
+        w_f = total - w_b
+        if w_f == 0:
+            break
+        sum_b += t * hist[t]
+        m_b = sum_b / w_b
+        m_f = (sum_total - sum_b) / w_f
+        var_between = w_b * w_f * (m_b - m_f) ** 2
+        if var_between > max_var:
+            max_var = var_between
+            threshold = t
+    return int(threshold)
