@@ -30,13 +30,15 @@ def infer_palette_indices(
     radius_px: float,
     brightness_threshold: Optional[int] = None,
     offset_px: float = 0.0,
+    min_coverage: float = 0.3,
 ) -> PipelineResult:
     """Run segmentation -> centerline -> sampling -> palette mapping."""
     mask = mask_bracelet(img, brightness_threshold=brightness_threshold)
     centerline = centerline_from_mask(mask)
     positions = positions_along_centerline(centerline, spacing_px=spacing_px, offset_px=offset_px)
-    samples = sample_beads(img, positions, radius=radius_px)
-    indices = nearest_palette_indices([s.color for s in samples], palette_colors)
+    samples = sample_beads(img, positions, radius=radius_px, mask=mask)
+    filtered = [s for s in samples if s.coverage >= min_coverage]
+    indices = nearest_palette_indices([s.color for s in filtered], palette_colors) if filtered else []
     return PipelineResult(mask=mask, centerline=centerline, positions=positions, samples=samples, indices=indices)
 
 
@@ -47,6 +49,7 @@ def infer_pattern(
     radius_px: float,
     brightness_threshold: Optional[int] = None,
     offset_px: float = 0.0,
+    min_coverage: float = 0.3,
 ) -> PipelineResult:
     """Run full pipeline and estimate pattern periodicity."""
     from . import periodicity  # local import to avoid circular at module import
@@ -58,6 +61,7 @@ def infer_pattern(
         radius_px=radius_px,
         brightness_threshold=brightness_threshold,
         offset_px=offset_px,
+        min_coverage=min_coverage,
     )
     period = periodicity.estimate_period(base.indices, min_period=1)
     pattern = periodicity.extract_pattern(base.indices, period=period)

@@ -77,6 +77,14 @@ class SamplingTests(unittest.TestCase):
         # Two segments: 3-4-5 triangles
         self.assertAlmostEqual(length, 10.0)
 
+    def test_disk_coverage_and_filtering(self):
+        mask = np.zeros((20, 20), dtype=bool)
+        mask[5:15, 5:15] = True
+        cov = sampling.disk_coverage(mask, (10, 10), radius=5)
+        self.assertGreater(cov, 0.95)
+        cov_edge = sampling.disk_coverage(mask, (2, 2), radius=3)
+        self.assertLess(cov_edge, 0.2)
+
 
 if __name__ == "__main__":
     unittest.main()

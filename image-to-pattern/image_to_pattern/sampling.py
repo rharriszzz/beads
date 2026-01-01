@@ -15,6 +15,7 @@ from .segmentation import Centerline
 class BeadSample:
     center: Tuple[float, float]
     color: Tuple[float, float, float]  # RGB in [0, 255]
+    coverage: float = 1.0  # fraction of sampling disk covered by mask (if provided)
 
 
 def positions_along_centerline(
@@ -85,14 +86,58 @@ def sample_disk_mean(img: Image.Image, center: Tuple[float, float], radius: floa
     return (float(mean[0]), float(mean[1]), float(mean[2]))
 
 
+def sample_disk_median(img: Image.Image, center: Tuple[float, float], radius: float) -> Tuple[float, float, float]:
+    """Median RGB color inside a disk region (more robust to highlights)."""
+    arr = np.array(img.convert("RGB"))
+    h, w, _ = arr.shape
+    cx, cy = center
+    x0 = max(int(cx - radius), 0)
+    x1 = min(int(cx + radius) + 1, w)
+    y0 = max(int(cy - radius), 0)
+    y1 = min(int(cy + radius) + 1, h)
+    if x0 >= x1 or y0 >= y1:
+        return (0.0, 0.0, 0.0)
+    y_grid, x_grid = np.ogrid[y0:y1, x0:x1]
+    mask = (x_grid - cx) ** 2 + (y_grid - cy) ** 2 <= radius * radius
+    if not np.any(mask):
+        return (0.0, 0.0, 0.0)
+    region = arr[y0:y1, x0:x1][mask]
+    median = np.median(region, axis=0)
+    return (float(median[0]), float(median[1]), float(median[2]))
+
+
 def sample_beads(
     img: Image.Image,
     positions: Sequence[Tuple[float, float]],
     radius: float,
+    mask: np.ndarray | None = None,
+    use_median: bool = True,
 ) -> List[BeadSample]:
     """Sample colors at bead centers."""
     samples: List[BeadSample] = []
+    mask_arr = None if mask is None else mask.astype(bool)
     for pos in positions:
-        color = sample_disk_mean(img, pos, radius)
-        samples.append(BeadSample(center=pos, color=color))
+        color = sample_disk_median(img, pos, radius) if use_median else sample_disk_mean(img, pos, radius)
+        coverage = 1.0
+        if mask_arr is not None:
+            coverage = disk_coverage(mask_arr, pos, radius)
+        samples.append(BeadSample(center=pos, color=color, coverage=coverage))
     return samples
+
+
+def disk_coverage(mask: np.ndarray, center: Tuple[float, float], radius: float) -> float:
+    """Compute fraction of pixels inside a disk that are True in mask."""
+    h, w = mask.shape
+    cx, cy = center
+    x0 = max(int(cx - radius), 0)
+    x1 = min(int(cx + radius) + 1, w)
+    y0 = max(int(cy - radius), 0)
+    y1 = min(int(cy + radius) + 1, h)
+    if x0 >= x1 or y0 >= y1:
+        return 0.0
+    y_grid, x_grid = np.ogrid[y0:y1, x0:x1]
+    disk = (x_grid - cx) ** 2 + (y_grid - cy) ** 2 <= radius * radius
+    if not np.any(disk):
+        return 0.0
+    masked = mask[y0:y1, x0:x1]
+    return float(masked[disk].mean())

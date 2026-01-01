@@ -33,6 +33,7 @@ def main():
     parser.add_argument("--expected-beads", type=int, help="If set, derive spacing from centerline length / expected_beads")
     parser.add_argument("--offset", type=float, default=0.0, help="Starting offset along centerline")
     parser.add_argument("--brightness-threshold", type=int, help="Mask threshold (lower is darker); auto if omitted")
+    parser.add_argument("--min-coverage", type=float, default=0.3, help="Minimum mask coverage to keep a bead sample")
     args = parser.parse_args()
 
     palette_colors = parse_palette(args.case, args.palette)
@@ -61,6 +62,7 @@ def main():
         radius_px=radius,
         brightness_threshold=args.brightness_threshold,
         offset_px=args.offset,
+        min_coverage=args.min_coverage,
     )
     print(f"Samples: {len(res.indices)}")
     print(f"Estimated period: {res.period}")
