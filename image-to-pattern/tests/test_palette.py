@@ -28,6 +28,19 @@ class PaletteTests(unittest.TestCase):
         mean = palette.mean_palette_color(samples)
         self.assertTrue(np.allclose(mean, (20, 30, 40)))
 
+    def test_kmeans_palette_and_indices(self):
+        samples = (
+            [(250, 5, 5)] * 10
+            + [(5, 250, 5)] * 10
+            + [(5, 5, 250)] * 10
+            + [(250, 250, 5)] * 5
+        )
+        pal = palette.kmeans_palette(samples, k=3, iters=5)
+        self.assertEqual(len(pal), 3)
+        idxs = palette.kmeans_indices(samples, k=3, iters=5)
+        self.assertEqual(len(idxs), len(samples))
+        self.assertEqual(len(set(idxs)), 3)
+
     def test_empty_palette_raises(self):
         with self.assertRaises(ValueError):
             palette.nearest_palette_indices([(0, 0, 0)], [])
