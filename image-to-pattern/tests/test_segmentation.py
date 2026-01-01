@@ -55,6 +55,17 @@ class SegmentationTests(unittest.TestCase):
         non_zero = widths[widths > 0]
         self.assertTrue(np.allclose(non_zero, band_height + 1))
 
+    def test_estimate_geometry(self):
+        band_top = 20
+        band_height = 20
+        img, _ = synthetic_band(band_top=band_top, band_height=band_height)
+        mask = segmentation.mask_bracelet(img, brightness_threshold=230)
+        geom = segmentation.estimate_geometry(mask)
+        thickness_expected = band_height + 1
+        self.assertAlmostEqual(geom.thickness_px, thickness_expected)
+        self.assertGreater(geom.spacing_px, geom.thickness_px)  # spacing scale >1
+        self.assertTrue(geom.radius_px < geom.spacing_px)
+
 
 if __name__ == "__main__":
     unittest.main()

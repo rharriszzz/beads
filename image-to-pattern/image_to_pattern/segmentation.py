@@ -51,6 +51,13 @@ class Centerline:
     ys: List[float]
 
 
+@dataclass
+class GeometryEstimate:
+    thickness_px: float
+    spacing_px: float
+    radius_px: float
+
+
 def centerline_from_mask(mask: np.ndarray) -> Centerline:
     """Estimate centerline as mean y for each x where mask has coverage."""
     if mask.ndim != 2:
@@ -92,3 +99,23 @@ def band_widths(mask: np.ndarray) -> np.ndarray:
         present = ys[col]
         widths[x] = float(present.max() - present.min() + 1)
     return widths
+
+
+def estimate_geometry(
+    mask: np.ndarray,
+    spacing_scale: float = 1.05,
+    radius_scale: float = 0.45,
+) -> GeometryEstimate:
+    """Estimate bead spacing/radius from mask thickness.
+
+    Uses the median nonzero band width; spacing/radius scales are heuristic
+    and can be tuned. spacing_scale > 1 gives slight separation.
+    """
+    widths = band_widths(mask)
+    nz = widths[widths > 0]
+    if nz.size == 0:
+        raise ValueError("No mask coverage to estimate geometry")
+    thickness = float(np.median(nz))
+    spacing = float(thickness * spacing_scale)
+    radius = float(thickness * radius_scale)
+    return GeometryEstimate(thickness_px=thickness, spacing_px=spacing, radius_px=radius)

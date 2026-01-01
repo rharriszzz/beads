@@ -6,7 +6,7 @@ from typing import Sequence
 
 from PIL import Image
 
-from . import pipeline, pov_patterns
+from . import pipeline, pov_patterns, segmentation
 
 
 def parse_palette(case: int | None, palette: Sequence[str] | None):
@@ -31,19 +31,29 @@ def main():
     parser.add_argument("image", type=Path, help="Path to input image")
     parser.add_argument("--case", type=int, help="Assume POV case for palette")
     parser.add_argument("--palette", nargs="+", help="Explicit palette colors as R,G,B triplets")
-    parser.add_argument("--spacing", type=float, default=15.0, help="Bead spacing in pixels")
-    parser.add_argument("--radius", type=float, default=6.0, help="Bead sampling radius in pixels")
+    parser.add_argument("--spacing", type=float, help="Bead spacing in pixels (auto if omitted)")
+    parser.add_argument("--radius", type=float, help="Bead sampling radius in pixels (auto if omitted)")
     parser.add_argument("--offset", type=float, default=0.0, help="Starting offset along centerline")
     parser.add_argument("--brightness-threshold", type=int, default=230, help="Mask threshold (lower is darker)")
     args = parser.parse_args()
 
     palette_colors = parse_palette(args.case, args.palette)
     img = Image.open(args.image)
+    # Build mask once so we can auto-tune geometry if needed.
+    mask = segmentation.mask_bracelet(img, brightness_threshold=args.brightness_threshold)
+    spacing = args.spacing
+    radius = args.radius
+    if spacing is None or radius is None:
+        geom = segmentation.estimate_geometry(mask)
+        spacing = spacing or geom.spacing_px
+        radius = radius or geom.radius_px
+        print(f"[auto] thickness={geom.thickness_px:.2f}px spacing={spacing:.2f}px radius={radius:.2f}px")
+
     res = pipeline.infer_pattern(
         img,
         palette_colors=palette_colors,
-        spacing_px=args.spacing,
-        radius_px=args.radius,
+        spacing_px=spacing,
+        radius_px=radius,
         brightness_threshold=args.brightness_threshold,
         offset_px=args.offset,
     )

@@ -49,3 +49,4 @@ Progress notes
 - Extended the pipeline with a pattern-detection helper that returns period and extracted pattern from sampled palette indices; synthetic integration test validates recovery of a 3-bead repeating pattern.
 - Added pattern matching helpers to compare sampled indices against the canonical POV patterns (offset search, best-match selection) with unit tests for shifts and empty input. This will help choose the best case/palette when decoding real photos.
 - Improved segmentation robustness with optional component filtering and morphology; added band width estimator for spacing/radius heuristics. CLI added for running the pipeline on images with tunable parameters. Next: tune params on real photos and integrate band width–driven spacing/radius defaults.
+- Added geometry estimation from mask thickness (median band width) to auto-select spacing/radius; CLI now supports auto geometry when spacing/radius are omitted. Tests cover geometry estimation.
