@@ -36,3 +36,8 @@ Testing plan and checkpoints
 - Segmentation sanity: verify bracelet masks cover expected area (e.g., mask area within [x%, y%] of bounding box) and centerline continuity.
 - Color quantization tests: feed synthetic bead crops of each palette color and ensure classifier labels them correctly; add a confusion matrix check against fixture crops.
 - Autocorrelation robustness: test periodicity detection on synthetic sequences with noise/occlusion to ensure the detected pattern length remains stable.
+
+Progress notes
+- Added layout helper that mirrors POV math (`beads_per_row=6.5`, `nrows=floor(0.5 + nbeads/6.5)`) and evenly alternates 6/7-bead rows to sum to `nbeads` (Bresenham-style distribution).
+- Unit tests cover row counts and bead_index→(row,col) mapping for POV cases 1, 2, and 7; these pass and confirm the 6/7 alternation. Use this mapping when unwrapping bead sequences from images.
+- Captured the canonical `beads.pov` patterns in code (all 8 cases) so tests can validate lengths, bead counts, and row distributions programmatically. Case 3 is regenerated from the POV loops to reach length 372.
