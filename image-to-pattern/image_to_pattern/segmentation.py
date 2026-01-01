@@ -10,7 +10,7 @@ This module stays minimal (Pillow + numpy + optional scipy) and provides:
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Iterable, List, Tuple
+from typing import Iterable, List, Optional, Tuple
 
 import numpy as np
 from scipy import ndimage
@@ -20,7 +20,7 @@ from PIL import Image
 def mask_bracelet(
     img: Image.Image,
     brightness_threshold: int = 230,
-    min_component_area: int | None = None,
+    min_component_area: Optional[int] = None,
 ) -> np.ndarray:
     """Return a boolean mask where bracelet pixels are True.
 

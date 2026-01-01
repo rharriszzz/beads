@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from typing import Iterable, List
+from typing import Iterable, List, Optional
 
 import numpy as np
 
 
-def normalized_autocorrelation(seq: Iterable[int], max_lag: int | None = None) -> np.ndarray:
+def normalized_autocorrelation(seq: Iterable[int], max_lag: Optional[int] = None) -> np.ndarray:
     """Compute normalized autocorrelation for integer sequence."""
     arr = np.array(list(seq), dtype=float)
     n = len(arr)
@@ -30,7 +30,7 @@ def normalized_autocorrelation(seq: Iterable[int], max_lag: int | None = None) -
     return corrs
 
 
-def estimate_period(seq: Iterable[int], max_period: int | None = None, min_period: int = 1) -> int:
+def estimate_period(seq: Iterable[int], max_period: Optional[int] = None, min_period: int = 1) -> int:
     """Estimate dominant period using autocorrelation peak."""
     arr = list(seq)
     if not arr:

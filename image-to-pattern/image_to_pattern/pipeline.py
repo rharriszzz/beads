@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import List, Sequence
+from typing import List, Optional, Sequence
 
 from PIL import Image
 
@@ -19,8 +19,8 @@ class PipelineResult:
     positions: List[tuple]
     samples: List[BeadSample]
     indices: List[int]
-    period: int | None = None
-    pattern: List[int] | None = None
+    period: Optional[int] = None
+    pattern: Optional[List[int]] = None
 
 
 def infer_palette_indices(

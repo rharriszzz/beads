@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Iterable, List, Sequence, Tuple
+from typing import Iterable, List, Optional, Sequence, Tuple
 
 from .pov_patterns import PatternDefinition, PATTERNS
 
@@ -54,7 +54,7 @@ def match_pattern(indices: Sequence[int], pattern: PatternDefinition) -> MatchRe
 
 def best_pattern_match(indices: Sequence[int], patterns: Iterable[PatternDefinition] = PATTERNS) -> MatchResult:
     """Return the best matching pattern among provided definitions."""
-    best: MatchResult | None = None
+    best: Optional[MatchResult] = None
     for pat in patterns:
         res = match_pattern(indices, pat)
         if best is None or res.match_rate > best.match_rate:

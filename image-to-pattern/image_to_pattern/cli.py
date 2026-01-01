@@ -2,14 +2,14 @@
 
 import argparse
 from pathlib import Path
-from typing import Sequence
+from typing import Optional, Sequence
 
 from PIL import Image
 
 from . import pipeline, pov_patterns, segmentation
 
 
-def parse_palette(case: int | None, palette: Sequence[str] | None):
+def parse_palette(case: Optional[int], palette: Optional[Sequence[str]]):
     if case is not None:
         pat = pov_patterns.get_pattern(case)
         # Fall back to basic RGB if palette not defined
