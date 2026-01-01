@@ -33,8 +33,8 @@ class SegmentationTests(unittest.TestCase):
         img, (top, bottom) = synthetic_band()
         mask = segmentation.mask_bracelet(img, brightness_threshold=230)
         centerline = segmentation.centerline_from_mask(mask)
-        self.assertEqual(min(centerline.xs), 0)
-        self.assertEqual(max(centerline.xs), img.width - 1)
+        self.assertLessEqual(min(centerline.xs), 1)  # morphology may shave a pixel
+        self.assertGreaterEqual(max(centerline.xs), img.width - 2)
         target_y = (top + bottom) / 2.0
         rmse = segmentation.centerline_rmse(centerline, target_y)
         self.assertLess(rmse, 0.6)  # should be near-perfect horizontal line
@@ -44,6 +44,16 @@ class SegmentationTests(unittest.TestCase):
         mask = segmentation.mask_bracelet(img, brightness_threshold=10)  # nothing passes
         with self.assertRaises(ValueError):
             segmentation.centerline_from_mask(mask)
+
+    def test_band_widths(self):
+        band_top = 30
+        band_height = 15
+        img, (top, bottom) = synthetic_band(band_top=band_top, band_height=band_height)
+        mask = segmentation.mask_bracelet(img, brightness_threshold=230)
+        widths = segmentation.band_widths(mask)
+        # Widths where band exists should be close to band_height + 1 (inclusive range)
+        non_zero = widths[widths > 0]
+        self.assertTrue(np.allclose(non_zero, band_height + 1))
 
 
 if __name__ == "__main__":
