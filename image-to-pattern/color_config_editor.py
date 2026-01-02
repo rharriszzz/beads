@@ -20,7 +20,11 @@ from typing import Dict, List
 
 import matplotlib
 
-matplotlib.use("TkAgg")
+# Prefer TkAgg for interactivity; fall back to Agg in headless/test environments.
+try:
+    matplotlib.use("TkAgg")
+except Exception:
+    matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.widgets import RectangleSelector
 import numpy as np
