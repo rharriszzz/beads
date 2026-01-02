@@ -127,6 +127,14 @@ class ColorConfigGUI:
         return {"image_filename": self.image_path.name, "colors": []}
 
     def save_config(self):
+        # Resolve overlaps automatically before saving
+        if self.img_hsv is not None:
+            try:
+                from color_config_editor import resolve_overlaps
+            except Exception:
+                resolve_overlaps = None
+            if resolve_overlaps:
+                resolve_overlaps(self.cfg, self.img_hsv, prompt_user=True)
         with open(self.config_path, "w") as f:
             json.dump(self.cfg, f, indent=2)
         messagebox.showinfo("Saved", f"Config saved to {self.config_path}")

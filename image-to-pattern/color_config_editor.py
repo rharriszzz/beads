@@ -126,8 +126,11 @@ def mask_from_hsv_set(img_hsv: np.ndarray, hsv_set: set) -> np.ndarray:
     return hits.reshape(img_hsv.shape[:2])
 
 
-def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray):
-    """Detect overlapping HSV sets between colors and interactively resolve them."""
+def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray, prompt_user: bool = True):
+    """Detect overlapping HSV sets between colors and interactively resolve them.
+
+    If prompt_user is False, overlaps are left as-is.
+    """
     colors = cfg.get("colors", [])
     hsv_sets = []
     for c in colors:
@@ -156,8 +159,14 @@ def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray):
             if not overlap:
                 continue
             count = len(overlap)
-            print(f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' of {count} HSV values.")
-            choice = input("Keep overlap (k, first wins), drop from first (f), drop from second (s), drop from both (b)? [k/f/s/b]: ").strip().lower()
+            print(
+                f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' of {count} HSV values."
+            )
+            if not prompt_user:
+                continue
+            choice = input(
+                "Keep overlap (k, first wins), drop from first (f), drop from second (s), drop from both (b)? [k/f/s/b]: "
+            ).strip().lower()
             if choice == "k":
                 continue  # first wins, do nothing
             if choice == "f":
