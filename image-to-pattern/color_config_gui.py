@@ -8,7 +8,10 @@ Features
 - Panning/zooming on the image propagates to mask/overlay (shared axes).
 
 Usage
-  python3.11 color_config_gui.py --image beads-photo-2.jpg [--config beads-photo-2.json]
+  From repo root:
+    XDG_CACHE_HOME=./image-to-pattern/debug-output/mpl-cache \
+    MPLCONFIGDIR=./image-to-pattern/debug-output/mpl-cache \
+    python3.11 image-to-pattern/color_config_gui.py --image beads-photo-2.jpg [--config beads-photo-2.json]
 
 Notes
 - Requires tkinter + matplotlib (TkAgg backend).

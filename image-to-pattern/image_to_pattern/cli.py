@@ -7,6 +7,8 @@ from typing import Optional, Sequence
 from PIL import Image
 
 from . import pipeline, segmentation
+from .color_masks import load_color_config, masks_from_config, combined_bracelet_mask
+import numpy as np
 
 
 def parse_palette(case: Optional[int], palette: Optional[Sequence[str]]):
@@ -35,12 +37,28 @@ def main():
     parser.add_argument("--brightness-threshold", type=int, help="Mask threshold (lower is darker); auto if omitted")
     parser.add_argument("--min-coverage", type=float, default=0.3, help="Minimum mask coverage to keep a bead sample")
     parser.add_argument("--detect-beads", action="store_true", help="Use bead detection instead of uniform spacing sampling")
+    parser.add_argument("--color-config", type=Path, help="Optional color config JSON (rectangles -> masks)")
     args = parser.parse_args()
 
-    palette_colors = parse_palette(args.case, args.palette)
     img = Image.open(args.image)
+    mask = None
+    color_masks = None
+    color_names = None
+    background_names = set()
+    palette_colors = parse_palette(args.case, args.palette)
+    if args.color_config:
+        cfg = load_color_config(args.color_config)
+        if cfg.get("image_filename") and cfg["image_filename"] != str(args.image):
+            print(f"[warn] config image_filename {cfg['image_filename']} does not match input {args.image}")
+        img_rgb = np.array(img.convert("RGB"))
+        img_hsv = np.array(img.convert("HSV"))
+        color_masks, color_names, background_names = masks_from_config(cfg, img_rgb, img_hsv)
+        mask = combined_bracelet_mask(color_masks, color_names, background_names)
+        # when using explicit color masks, palette colors are ignored for index assignment
+
     # Build mask once so we can auto-tune geometry if needed.
-    mask = segmentation.mask_bracelet(img, brightness_threshold=args.brightness_threshold)
+    if mask is None:
+        mask = segmentation.mask_bracelet(img, brightness_threshold=args.brightness_threshold)
     spacing = args.spacing
     radius = args.radius
     if spacing is None or radius is None:
@@ -65,6 +83,9 @@ def main():
         offset_px=args.offset,
         min_coverage=args.min_coverage,
         use_bead_detection=args.detect_beads,
+        color_masks=color_masks,
+        color_names=color_names,
+        background_names=background_names,
     )
     print(f"Samples: {len(res.indices)}")
     print(f"Estimated period: {res.period}")

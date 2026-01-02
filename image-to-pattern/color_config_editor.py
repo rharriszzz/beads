@@ -95,6 +95,87 @@ def collect_rectangles(img_rgb: np.ndarray) -> List[List[int]]:
     return rects
 
 
+def rectangles_from_mask(mask: np.ndarray) -> List[List[int]]:
+    """Convert a boolean mask to a list of rectangles (runs per row)."""
+    rects: List[List[int]] = []
+    h, w = mask.shape
+    for y in range(h):
+        row = mask[y]
+        x = 0
+        while x < w:
+            if row[x]:
+                x_start = x
+                while x < w and row[x]:
+                    x += 1
+                x_end = x - 1
+                rects.append([x_start, x_end, y, y])
+            x += 1
+    return rects
+
+
+def mask_from_hsv_set(img_hsv: np.ndarray, hsv_set: set) -> np.ndarray:
+    """Fast mask: pixels whose HSV is in hsv_set."""
+    if not hsv_set:
+        return np.zeros(img_hsv.shape[:2], dtype=bool)
+    arr = img_hsv.reshape(-1, 3)
+    dtype = np.dtype((np.void, arr.dtype.itemsize * arr.shape[1]))
+    arr_view = arr.view(dtype).reshape(-1)
+    set_array = np.array(list(hsv_set), dtype=arr.dtype)
+    set_view = set_array.view(dtype).reshape(-1)
+    hits = np.isin(arr_view, set_view)
+    return hits.reshape(img_hsv.shape[:2])
+
+
+def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray):
+    """Detect overlapping HSV sets between colors and interactively resolve them."""
+    colors = cfg.get("colors", [])
+    hsv_sets = []
+    for c in colors:
+        rects = c.get("rectangles", [])
+        hsv_set = set()
+        hgt, wdt, _ = img_hsv.shape
+        for rect in rects:
+            if len(rect) != 4:
+                continue
+            x_min, x_max, y_min, y_max = rect
+            x_min = max(0, x_min)
+            y_min = max(0, y_min)
+            x_max = min(wdt - 1, x_max)
+            y_max = min(hgt - 1, y_max)
+            if x_min > x_max or y_min > y_max:
+                continue
+            region = img_hsv[y_min : y_max + 1, x_min : x_max + 1, :]
+            flat = region.reshape(-1, 3)
+            for tup in map(tuple, flat):
+                hsv_set.add(tup)
+        hsv_sets.append(hsv_set)
+
+    for i in range(len(colors)):
+        for j in range(i + 1, len(colors)):
+            overlap = hsv_sets[i].intersection(hsv_sets[j])
+            if not overlap:
+                continue
+            count = len(overlap)
+            print(f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' of {count} HSV values.")
+            choice = input("Keep overlap (k, first wins), drop from first (f), drop from second (s), drop from both (b)? [k/f/s/b]: ").strip().lower()
+            if choice == "k":
+                continue  # first wins, do nothing
+            if choice == "f":
+                hsv_sets[i] = hsv_sets[i] - overlap
+            elif choice == "s":
+                hsv_sets[j] = hsv_sets[j] - overlap
+            elif choice == "b":
+                hsv_sets[i] = hsv_sets[i] - overlap
+                hsv_sets[j] = hsv_sets[j] - overlap
+            else:
+                print("Unknown choice, keeping overlap.")
+                continue
+            # Rebuild rectangles for affected colors
+            for idx in (i, j):
+                mask = mask_from_hsv_set(img_hsv, hsv_sets[idx])
+                colors[idx]["rectangles"] = rectangles_from_mask(mask)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Minimal interactive color config editor.")
     parser.add_argument("--image", required=True, help="Image filename")
@@ -103,16 +184,20 @@ def main():
 
     cfg_path = Path(args.config) if args.config else Path(Path(args.image).with_suffix(".json").name)
     cfg = load_config(cfg_path, Path(args.image).name)
-    img_rgb = np.array(Image.open(args.image).convert("RGB"))
+    img = Image.open(args.image)
+    img_rgb = np.array(img.convert("RGB"))
+    img_hsv = np.array(img.convert("HSV"))
 
     while True:
-        cmd = input("(l)ist, (a)dd, (e)dit, (d)elete, add (r)ectangles, (s)ave, (q)uit: ").strip().lower()
+        cmd = input("(l)ist, (a)dd, (e)dit, (d)elete, add (r)ectangles, (o)verlap resolve, (s)ave, (q)uit: ").strip().lower()
         if cmd == "l":
             list_colors(cfg)
         elif cmd == "a":
             name = input("Color name: ").strip()
             bg = input("Is background? (y/n): ").strip().lower().startswith("y")
             add_color(cfg, name, bg)
+        elif cmd == "o":
+            resolve_overlaps(cfg, img_hsv)
         elif cmd == "e":
             idx = int(input("Index to edit: "))
             new_name = input("New name (blank to keep): ").strip()

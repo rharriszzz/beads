@@ -47,6 +47,17 @@ def build_masks(img_hsv: np.ndarray, color_sets: List[Tuple[str, set]]) -> Dict[
     return masks
 
 
+def masks_from_config(cfg: Dict, img_rgb: np.ndarray, img_hsv: np.ndarray) -> Dict[str, np.ndarray]:
+    """Convenience wrapper to build masks dict directly from config + images."""
+    color_sets = []
+    for color_entry in cfg.get("colors", []):
+        name = color_entry.get("name") or "unnamed"
+        rects = color_entry.get("rectangles", [])
+        hsv_set = rectangles_to_hsv_set(img_hsv, rects)
+        color_sets.append((name, hsv_set))
+    return build_masks(img_hsv, color_sets)
+
+
 def save_masks(img_rgb: np.ndarray, masks: Dict[str, np.ndarray], outdir: Path, stem: str):
     for name, mask in masks.items():
         mask_img = (mask.astype(np.uint8) * 255)
