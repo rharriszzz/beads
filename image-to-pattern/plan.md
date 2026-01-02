@@ -66,9 +66,10 @@ Progress notes
 - Centerline/mask: added `midline_between_background` to derive the centerline from the two largest interior background regions (excludes border components, uses medial axis with downscaling for stability, falls back to a straight line if too thin). Debug overlays now show bead/background masks and splines.
 - Palette discovery: added histogram-peak palette builder (no fixed k) and hue-aware merging (`merge_close_hues`) to collapse near hues after k-means/peak detection; `debug_palette_masks` supports `--merge-hues`. Current k=10 HSV on `beads-photo-2` merges to ~5 dominant colors, but k-means still blends bead colors with the magenta background, so a more robust color-separation method is needed.
 - Tests: added coverage for histogram-peak palette selection and hue-merge helper; dependencies installed and unit suite passing locally.
+- Manual color annotation: added JSON-based color config format (rectangles → HSV sets) plus CLI (`color_masks_from_config.py`), terminal editor, and GUI (`color_config_gui.py`). Pipeline/CLI can now consume `--color-config` to build masks and assign bead indices by mask membership (bypassing automatic palette inference). This is meant to recover patterns even on POV-rendered images where automatic color separation failed.
 
 Next steps
 - Push color separation: tune hue-merge tolerance, explore peak-based palette sizing (auto color count), and test on `beads1`–`beads7` until visible-bead match rate is near 100%.
 - Solidify centerline: keep midpoint-from-background approach and verify on all beads*.jpg; adjust smoothing so splines track bracelet edges without bead-level artifacts.
-- Integrate detection flow: use bead detection + centerline projection + coverage filtering to place beads on bead_index grid, then rerun autocorrelation/pattern detection against POV fixtures.
+- Integrate detection flow: use bead detection + centerline projection + coverage filtering to place beads on bead_index grid, then rerun autocorrelation/pattern detection against POV fixtures. Leverage manual masks for color assignment where available.
 - Hard cases: plan separate handling for very dark/black beads where HSV peaks may fail (e.g., fallback morphology or brightness-only separation).
