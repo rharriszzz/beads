@@ -25,13 +25,25 @@ from typing import Dict, List, Optional, Set, Tuple
 
 import matplotlib
 
-matplotlib.use("TkAgg")
+# Prefer TkAgg for interactivity; fall back to Agg in headless/test environments.
+try:
+    matplotlib.use("TkAgg")
+except Exception:
+    matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+try:
+    from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+except Exception:
+    FigureCanvasTkAgg = None
 from matplotlib.widgets import RectangleSelector
 import numpy as np
-import tkinter as tk
-from tkinter import messagebox, simpledialog
+try:
+    import tkinter as tk
+    from tkinter import messagebox, simpledialog
+except Exception:
+    tk = None
+    messagebox = None
+    simpledialog = None
 from PIL import Image
 
 
@@ -89,6 +101,8 @@ def hsv_swatch_image(hsv_values: List[Tuple[int, int, int]], max_cells: int = 40
 
 class ColorConfigGUI:
     def __init__(self, image_path: Path, config_path: Optional[Path]):
+        if tk is None or FigureCanvasTkAgg is None:
+            raise RuntimeError("Tkinter/TkAgg backend not available; GUI cannot run in this environment.")
         self.image_path = image_path
         self.config_path = config_path or image_path.with_suffix(".json")
         self.img_rgb = np.array(Image.open(image_path).convert("RGB"))
