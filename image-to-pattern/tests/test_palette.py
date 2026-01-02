@@ -25,6 +25,16 @@ class PaletteTests(unittest.TestCase):
         indices_lab = palette.nearest_palette_indices(samples, palette_colors, use_lab=True)
         self.assertEqual(indices_lab, [0, 1, 2, 1])
 
+    def test_nearest_palette_indices_hsv(self):
+        palette_colors = [(200, 0, 0), (0, 200, 0)]
+        samples = [
+            (220, 30, 30),  # red bright
+            (120, 0, 0),    # red dark
+            (10, 180, 10),  # green
+        ]
+        indices = palette.nearest_palette_indices_hsv(samples, palette_colors)
+        self.assertEqual(indices, [0, 0, 1])
+
     def test_mean_palette_color(self):
         samples = [(10, 20, 30), (20, 30, 40), (30, 40, 50)]
         mean = palette.mean_palette_color(samples)

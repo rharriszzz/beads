@@ -14,6 +14,9 @@ from typing import Iterable, List, Optional, Tuple
 
 import numpy as np
 from scipy import ndimage
+from skimage import morphology
+from skimage import measure
+import networkx as nx
 from PIL import Image
 
 
@@ -60,20 +63,77 @@ class GeometryEstimate:
 
 
 def centerline_from_mask(mask: np.ndarray) -> Centerline:
-    """Estimate centerline as mean y for each x where mask has coverage."""
+    """Estimate centerline via medial axis and ordered skeleton.
+
+    - Downscale large masks for speed.
+    - Use medial_axis; if empty, fall back to column means.
+    - Order skeleton points:
+        * If the shape is elongated, sort along x (or y).
+        * Otherwise, sort by polar angle around centroid to trace the loop.
+    """
     if mask.ndim != 2:
         raise ValueError("Mask must be 2D boolean array")
-    height, width = mask.shape
-    xs: List[int] = []
-    ys: List[float] = []
-    for x in range(width):
-        ys_at_x = np.flatnonzero(mask[:, x])
-        if ys_at_x.size == 0:
-            continue
-        xs.append(x)
-        ys.append(float(np.mean(ys_at_x)))
-    if not xs:
-        raise ValueError("No mask columns with coverage; cannot compute centerline")
+    scale = 1.0
+    max_pixels = 1_000_000
+    if mask.size > max_pixels:
+        scale = (max_pixels / mask.size) ** 0.5
+        mask = ndimage.zoom(mask.astype(float), zoom=scale, order=0) > 0.5
+
+    # Medial axis skeleton
+    skel = morphology.medial_axis(mask.astype(bool))
+    pts = np.column_stack(np.nonzero(skel))
+    if pts.size == 0:
+        # Fallback to column means
+        height, width = mask.shape
+        xs: List[int] = []
+        ys: List[float] = []
+        for x in range(width):
+            ys_at_x = np.flatnonzero(mask[:, x])
+            if ys_at_x.size == 0:
+                continue
+            xs.append(x)
+            ys.append(float(np.mean(ys_at_x)))
+        if not xs:
+            raise ValueError("No mask columns with coverage; cannot compute centerline")
+        return Centerline(xs=[x / scale for x in xs], ys=[y / scale for y in ys])
+
+    pts_xy = np.array([[c, r] for r, c in pts], dtype=float)  # x,y
+    min_r, min_c = pts.min(axis=0)
+    max_r, max_c = pts.max(axis=0)
+    bbox_h = max_r - min_r + 1
+    bbox_w = max_c - min_c + 1
+    if bbox_w > 1.2 * bbox_h:
+        # Treat as horizontal band
+        cols = np.nonzero(mask.sum(axis=0) > 0)[0]
+        if cols.size == 0:
+            raise ValueError("No mask columns with coverage; cannot compute centerline")
+        xs = (cols / scale).tolist()
+        y_center = float(np.mean(np.nonzero(mask)[0])) / scale
+        ys = [y_center for _ in xs]
+        return Centerline(xs=xs, ys=ys)
+    elif bbox_h > 1.2 * bbox_w:
+        # Vertical band
+        rows = np.nonzero(mask.sum(axis=1) > 0)[0]
+        if rows.size == 0:
+            raise ValueError("No mask rows with coverage; cannot compute centerline")
+        ys = (rows / scale).tolist()
+        x_center = float(np.mean(np.nonzero(mask)[1])) / scale
+        xs = [x_center for _ in ys]
+        return Centerline(xs=xs, ys=ys)
+
+    ordered = pts_xy
+    cx = ordered[:, 0].mean()
+    cy = ordered[:, 1].mean()
+    ang = np.arctan2(ordered[:, 1] - cy, ordered[:, 0] - cx)
+    idxs = np.argsort(ang)
+    ordered = ordered[idxs]
+    xs = (ordered[:, 0] / scale).tolist()
+    ys = (ordered[:, 1] / scale).tolist()
+    if len(xs) < 2:
+        height, width = mask.shape
+        cy = float((min_r + max_r) / 2.0) / scale
+        xs = [0.0, float(width - 1)]
+        ys = [cy, cy]
     return Centerline(xs=xs, ys=ys)
 
 
@@ -83,6 +143,80 @@ def centerline_rmse(centerline: Centerline, target_y: float) -> float:
         return float("inf")
     diffs = np.array(centerline.ys) - target_y
     return float(np.sqrt(np.mean(diffs**2)))
+
+
+def midline_between_background(mask: np.ndarray) -> Centerline:
+    """Compute a midline equidistant between the two largest interior non-bead regions.
+
+    Excludes any non-bead component touching the image border (outer background),
+    then picks the two largest remaining components and computes the locus where
+    their distance transforms are equal, thins it, and orders the path.
+    """
+    if mask.ndim != 2:
+        raise ValueError("Mask must be 2D boolean array")
+    inv = ~mask
+    labeled, num = ndimage.label(inv)
+    if num < 2:
+        return centerline_from_mask(mask)
+    # Filter out components touching border
+    keep_labels = []
+    for idx in range(1, num + 1):
+        comp = labeled == idx
+        if (
+            comp[0, :].any()
+            or comp[-1, :].any()
+            or comp[:, 0].any()
+            or comp[:, -1].any()
+        ):
+            continue
+        keep_labels.append(idx)
+    if len(keep_labels) < 2:
+        return centerline_from_mask(mask)
+    sizes = ndimage.sum(inv, labeled, index=keep_labels)
+    largest_idx = [keep_labels[i] for i in np.argsort(sizes)[-2:]]
+    comps = [(labeled == idx) for idx in largest_idx]
+    compA, compB = comps
+    distA = ndimage.distance_transform_edt(~compA)
+    distB = ndimage.distance_transform_edt(~compB)
+    diff = np.abs(distA - distB)
+    thresh = np.percentile(diff, 1)
+    mid = diff <= thresh
+    mid = morphology.thin(mid)
+    coords = np.column_stack(np.nonzero(mid))
+    if coords.size == 0:
+        return centerline_from_mask(mask)
+    ordered = _order_coords(coords)
+    xs = ordered[:, 1].tolist()
+    ys = ordered[:, 0].tolist()
+    return Centerline(xs=xs, ys=ys)
+
+
+def _order_coords(coords: np.ndarray) -> np.ndarray:
+    """Order coordinates along the longest path of an MST."""
+    pts = np.array([[c, r] for r, c in coords], dtype=float)
+    n = len(pts)
+    if n <= 2:
+        return pts
+    G = nx.Graph()
+    for i in range(n):
+        G.add_node(i)
+    k = min(8, n - 1)
+    for i in range(n):
+        d = np.linalg.norm(pts - pts[i], axis=1)
+        idxs = np.argsort(d)[1 : k + 1]
+        for j_idx in idxs:
+            G.add_edge(i, int(j_idx), weight=float(d[j_idx]))
+    mst = nx.minimum_spanning_tree(G)
+    lengths = dict(nx.all_pairs_dijkstra_path_length(mst))
+    max_len = -1
+    start = end = 0
+    for i in range(n):
+        for j, d in lengths[i].items():
+            if d > max_len:
+                max_len = d
+                start, end = i, j
+    path = nx.shortest_path(mst, source=start, target=end, weight="weight")
+    return pts[path]
 
 
 def band_widths(mask: np.ndarray) -> np.ndarray:

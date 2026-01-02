@@ -36,6 +36,31 @@ class ColorDetectTests(unittest.TestCase):
         idxs = color_detect.most_separable_labels(palette, top_n=2)
         self.assertEqual(len(idxs), 2)
 
+    def test_palette_from_hist_peaks(self):
+        img = np.zeros((10, 20, 3), dtype=float)
+        img[:, :10] = [255, 0, 0]
+        img[:, 10:] = [0, 255, 0]
+        mask = np.ones((10, 20), dtype=bool)
+        palette = color_detect.palette_from_hist_peaks(
+            img,
+            mask=mask,
+            max_colors=3,
+            drop_background=False,
+            h_bins=12,
+            s_bins=4,
+            min_prominence=0.05,
+            radius_s=0.4,
+            radius_v=0.6,
+        )
+        self.assertGreaterEqual(palette.shape[0], 2)
+
+    def test_merge_close_hues(self):
+        palette = np.array([[255, 0, 0], [250, 5, 5], [0, 255, 0]], dtype=float)
+        counts = [100, 50, 80]
+        merged, mapping = color_detect.merge_close_hues(palette, counts=counts, hue_tol=0.05, sat_tol=1.0, val_tol=1.0)
+        self.assertLess(merged.shape[0], palette.shape[0])
+        self.assertEqual(len(mapping), len(palette))
+
 
 if __name__ == "__main__":
     unittest.main()

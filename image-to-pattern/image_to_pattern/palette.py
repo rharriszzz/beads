@@ -30,6 +30,25 @@ def nearest_palette_indices(
     return out
 
 
+def nearest_palette_indices_hsv(
+    colors: Sequence[Color], palette: Sequence[Color], weights=(1.0, 0.2, 0.1)
+) -> List[int]:
+    """Assign each color to nearest palette using HSV distance with hue wrap."""
+    if len(palette) == 0:
+        raise ValueError("Palette is empty")
+    colors_hsv = color.rgb2hsv(np.clip(np.array(colors, dtype=float) / 255.0, 0, 1))
+    palette_hsv = color.rgb2hsv(np.clip(np.array(palette, dtype=float) / 255.0, 0, 1))
+    w_h, w_s, w_v = weights
+    out: List[int] = []
+    for c in colors_hsv:
+        dh = np.minimum(np.abs(c[0] - palette_hsv[:, 0]), 1.0 - np.abs(c[0] - palette_hsv[:, 0]))
+        ds = np.abs(c[1] - palette_hsv[:, 1])
+        dv = np.abs(c[2] - palette_hsv[:, 2])
+        dist2 = (w_h * dh) ** 2 + (w_s * ds) ** 2 + (w_v * dv) ** 2
+        out.append(int(np.argmin(dist2)))
+    return out
+
+
 def mean_palette_color(samples: Sequence[Color]) -> Color:
     """Compute the mean RGB of provided samples."""
     if len(samples) == 0:

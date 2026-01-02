@@ -81,6 +81,15 @@ class SegmentationTests(unittest.TestCase):
         self.assertGreater(geom.spacing_px, geom.thickness_px)  # spacing scale >1
         self.assertTrue(geom.radius_px < geom.spacing_px)
 
+    def test_midline_between_background(self):
+        img = Image.new("RGB", (100, 60), color=(255, 255, 255))
+        draw = ImageDraw.Draw(img)
+        # Two holes inside a band
+        draw.rectangle([0, 20, 100, 40], fill=(180, 0, 180))
+        mask = segmentation.mask_bracelet(img)
+        mid = segmentation.midline_between_background(mask)
+        self.assertTrue(len(mid.xs) > 0)
+
 
 if __name__ == "__main__":
     unittest.main()

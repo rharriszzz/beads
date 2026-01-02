@@ -24,10 +24,18 @@ class ColorPeaksTests(unittest.TestCase):
         img = np.zeros((10, 10, 3), dtype=float)
         img[:, :5] = [0.0, 1.0, 1.0]  # H=0
         mask = np.ones((10, 10), dtype=bool)
-        masks = color_peaks.build_peak_masks(img, mask, peaks=[(0.0, 1.0)], radius_h=0.1, radius_s=0.2)
+        masks = color_peaks.build_peak_masks(img, mask, peaks=[(0.0, 1.0)], radius_h=0.1, radius_s=0.2, radius_v=0.5)
         self.assertEqual(len(masks), 1)
         self.assertTrue(masks[0][:, :5].all())
         self.assertFalse(masks[0][:, 5:].any())
+
+    def test_auto_shrink_peak_masks(self):
+        img = np.zeros((20, 20, 3), dtype=float)
+        img[:, :10] = [0.0, 1.0, 1.0]
+        img[:, 10:] = [0.5, 1.0, 1.0]
+        mask = np.ones((20, 20), dtype=bool)
+        peaks, radii = color_peaks.auto_shrink_peak_masks(img, mask, num_peaks=2, spacing_px=5.0)
+        self.assertTrue(len(peaks) >= 1)
 
 
 if __name__ == "__main__":

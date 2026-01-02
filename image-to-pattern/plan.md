@@ -63,3 +63,12 @@ Progress notes
 - Added bead detection via distance-transform peaks on the mask to locate individual bead centers without hardcoded colors; tests cover synthetic grids. This is the next step to anchor geometry and must be integrated into the matching flow.
 - Added an MST-based bead ordering helper to arrange detected beads along the chain (networkx dependency). Early bead-detection tests on `beads1`–`beads7` improved the best-case match for some images (e.g., up to ~0.82) but with very few retained samples; still far from 100%. Need to integrate detection into the pipeline and boost retention/color accuracy.
 - Added HSV peak detection utilities to derive per-image color clusters without hardcoded palettes. Early experiment combining per-peak masks + bead detection still yields low match rates on `beads1`–`beads7` (~0.28–0.76 best-case), so color separation and bead retention remain insufficient.
+- Centerline/mask: added `midline_between_background` to derive the centerline from the two largest interior background regions (excludes border components, uses medial axis with downscaling for stability, falls back to a straight line if too thin). Debug overlays now show bead/background masks and splines.
+- Palette discovery: added histogram-peak palette builder (no fixed k) and hue-aware merging (`merge_close_hues`) to collapse near hues after k-means/peak detection; `debug_palette_masks` supports `--merge-hues`. Current k=10 HSV on `beads-photo-2` merges to ~5 dominant colors.
+- Tests: added coverage for histogram-peak palette selection and hue-merge helper; dependencies installed and unit suite passing locally.
+
+Next steps
+- Push color separation: tune hue-merge tolerance, explore peak-based palette sizing (auto color count), and test on `beads1`–`beads7` until visible-bead match rate is near 100%.
+- Solidify centerline: keep midpoint-from-background approach and verify on all beads*.jpg; adjust smoothing so splines track bracelet edges without bead-level artifacts.
+- Integrate detection flow: use bead detection + centerline projection + coverage filtering to place beads on bead_index grid, then rerun autocorrelation/pattern detection against POV fixtures.
+- Hard cases: plan separate handling for very dark/black beads where HSV peaks may fail (e.g., fallback morphology or brightness-only separation).
