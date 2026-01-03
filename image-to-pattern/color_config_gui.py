@@ -138,10 +138,19 @@ if wx:
                 ax.sharex(self.ax_img)
                 ax.sharey(self.ax_img)
             self.canvas = FigureCanvasWxAgg(panel, -1, self.fig)
-            toolbar = NavigationToolbar2WxAgg(self.canvas)
-            toolbar.Realize()
             fig_sizer = wx.BoxSizer(wx.VERTICAL)
-            fig_sizer.Add(toolbar, 0, wx.EXPAND)
+            # Custom pan/zoom buttons (no save)
+            tool_row = wx.BoxSizer(wx.HORIZONTAL)
+            pan_btn = wx.Button(panel, label="Pan/Zoom On")
+            pan_off_btn = wx.Button(panel, label="Pan/Zoom Off")
+            reset_btn = wx.Button(panel, label="Reset View")
+            tool_row.Add(pan_btn, 0, wx.ALL, 2)
+            tool_row.Add(pan_off_btn, 0, wx.ALL, 2)
+            tool_row.Add(reset_btn, 0, wx.ALL, 2)
+            pan_btn.Bind(wx.EVT_BUTTON, lambda evt: self.toggle_nav(True))
+            pan_off_btn.Bind(wx.EVT_BUTTON, lambda evt: self.toggle_nav(False))
+            reset_btn.Bind(wx.EVT_BUTTON, lambda evt: self.reset_view())
+            fig_sizer.Add(tool_row, 0, wx.EXPAND)
             fig_sizer.Add(self.canvas, 1, wx.EXPAND)
             sizer.Add(fig_sizer, 1, wx.EXPAND | wx.ALL, 4)
 
@@ -238,6 +247,17 @@ if wx:
                 matplotlib.patches.Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="red")
             )
             self.canvas.draw()
+
+        def toggle_nav(self, enable: bool):
+            nav = self.canvas.toolbar
+            if nav:
+                nav.pan() if enable else nav.pan()
+                nav.zoom() if enable else nav.zoom()
+
+        def reset_view(self):
+            nav = self.canvas.toolbar
+            if nav:
+                nav.home(None)
 
         def on_key_press(self, event):
             if event.key == "enter" and self.rect_selector and self.rect_selector.active:
