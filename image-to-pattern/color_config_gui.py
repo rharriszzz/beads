@@ -259,18 +259,27 @@ if wx:
             pass
 
         def add_color(self, event=None):
-            dlg = wx.TextEntryDialog(self, "Color name:", "Add Color")
-            if dlg.ShowModal() != wx.ID_OK:
-                return
-            name = dlg.GetValue().strip()
+            dlg = wx.Dialog(self, title="Add Color")
+            vbox = wx.BoxSizer(wx.VERTICAL)
+            name_lbl = wx.StaticText(dlg, label="Color name:")
+            name_txt = wx.TextCtrl(dlg)
+            bg_chk = wx.CheckBox(dlg, label="Background")
+            vbox.Add(name_lbl, 0, wx.ALL, 4)
+            vbox.Add(name_txt, 0, wx.ALL | wx.EXPAND, 4)
+            vbox.Add(bg_chk, 0, wx.ALL, 4)
+            btn_sizer = dlg.CreateSeparatedButtonSizer(wx.OK | wx.CANCEL)
+            if btn_sizer:
+                vbox.Add(btn_sizer, 0, wx.ALL | wx.EXPAND, 4)
+            dlg.SetSizer(vbox)
+            if dlg.ShowModal() == wx.ID_OK:
+                name = name_txt.GetValue().strip()
+                bg = bg_chk.GetValue()
+                if name:
+                    self.cfg.setdefault("colors", []).append({"name": name, "background": bg, "rectangles": []})
+                    self.current_idx = len(self.cfg["colors"]) - 1
+                    self.refresh_listbox()
+                    self.on_select_color()
             dlg.Destroy()
-            if not name:
-                return
-            bg = wx.MessageBox("Is this a background color?", "Background", wx.YES_NO | wx.ICON_QUESTION) == wx.YES
-            self.cfg.setdefault("colors", []).append({"name": name, "background": bg, "rectangles": []})
-            self.current_idx = len(self.cfg["colors"]) - 1
-            self.refresh_listbox()
-            self.on_select_color()
 
         def edit_color(self, event=None):
             if self.current_idx is None:
