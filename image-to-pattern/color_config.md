@@ -10,7 +10,20 @@ Color annotation file format (per image)
     {
       "name": "background",
       "background": true,
-      "rectangles": [[x_min, x_max, y_min, y_max], ...]
+      "rectangles": [
+        {
+          "x_min": 0,
+          "x_max": 10,
+          "y_min": 0,
+          "y_max": 5,
+          "h_min": 200,
+          "h_max": 220,
+          "s_min": 10,
+          "s_max": 30,
+          "v_min": 180,
+          "v_max": 210
+        }
+      ]
     },
     {
       "name": "red",
@@ -20,6 +33,9 @@ Color annotation file format (per image)
   ]
 }
 ```
+- Rectangles may be specified as objects (recommended) or legacy `[x_min, x_max, y_min, y_max]` arrays. Object fields:
+  - `x_min`, `x_max`, `y_min`, `y_max`: integers (pixel indices, 0-based inclusive).
+  - Optional `h_min`, `h_max`, `s_min`, `s_max`, `v_min`, `v_max`: summary of HSV range for that rect (auto-added by GUI).
 - Semantics: collect all HSV values from each rectangle for a color; any pixel whose HSV matches any of those values is assigned that color. Pixels matching no color are assigned the implicit color `"other"`.
 - Coordinate system: pixel indices into the image (0-based), inclusive ranges for x and y.
 

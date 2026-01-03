@@ -269,7 +269,7 @@ if wx:
             x2, y2 = int(erelease.xdata), int(erelease.ydata)
             x_min, x_max = sorted([x1, x2])
             y_min, y_max = sorted([y1, y2])
-            self.pending_rects.append([x_min, x_max, y_min, y_max])
+            self.pending_rects.append({"x_min": x_min, "x_max": x_max, "y_min": y_min, "y_max": y_max})
             self.ax_img.add_patch(
                 matplotlib.patches.Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="red")
             )
@@ -341,7 +341,9 @@ if wx:
             if self.pending_rects:
                 hmins, hmaxs, smins, smaxs, vmins, vmaxs = [], [], [], [], [], []
                 values: List[Tuple[int, int, int]] = []
-                for x_min, x_max, y_min, y_max in self.pending_rects:
+                for rect in self.pending_rects:
+                    x_min, x_max = rect["x_min"], rect["x_max"]
+                    y_min, y_max = rect["y_min"], rect["y_max"]
                     region = self.img_hsv[y_min : y_max + 1, x_min : x_max + 1, :]
                     hmins.append(int(region[:, :, 0].min()))
                     hmaxs.append(int(region[:, :, 0].max()))
@@ -356,6 +358,10 @@ if wx:
                 vmin, vmax = min(vmins), max(vmaxs)
                 self.last_range_summary = f"H {hmin}-{hmax} S {smin}-{smax} V {vmin}-{vmax}"
                 self.last_range_values = values
+                for idx in range(len(self.pending_rects)):
+                    self.pending_rects[idx].update(
+                        {"h_min": hmin, "h_max": hmax, "s_min": smin, "s_max": smax, "v_min": vmin, "v_max": vmax}
+                    )
                 self.set_status(f"Last rect HSV ranges: {self.last_range_summary}")
             self.pending_rects = []
             self.rect_selector.set_active(False)
