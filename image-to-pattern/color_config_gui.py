@@ -499,19 +499,14 @@ if wx:
                     overlay[mask] = self.img_rgb[mask]
                 self.ax_overlay.imshow(overlay)
                 self.ax_overlay.set_title("Overlay", **title_kwargs)
-                # draw rectangles overlay
+                # draw rectangles overlay only on the original image
                 for r in color_entry.get("rectangles", []):
                     x_min, x_max = r.get("x_min", 0), r.get("x_max", 0)
                     y_min, y_max = r.get("y_min", 0), r.get("y_max", 0)
                     rect_patch = matplotlib.patches.Rectangle(
-                        (x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="lime", linewidth=1
+                        (x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="yellow", linewidth=1
                     )
                     self.ax_img.add_patch(rect_patch)
-                    self.ax_overlay.add_patch(
-                        matplotlib.patches.Rectangle(
-                            (x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="lime", linewidth=1
-                        )
-                    )
             else:
                 self.ax_mask.set_title("Mask (no color selected)", **title_kwargs)
                 self.ax_overlay.set_title("Overlay", **title_kwargs)
