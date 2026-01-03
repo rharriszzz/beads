@@ -322,13 +322,17 @@ if wx:
             x2, y2 = int(erelease.xdata), int(erelease.ydata)
             x_min, x_max = sorted([x1, x2])
             y_min, y_max = sorted([y1, y2])
-            self.pending_rects.append({"x_min": x_min, "x_max": x_max, "y_min": y_min, "y_max": y_max})
-            self.ax_img.add_patch(
-                matplotlib.patches.Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="red")
+            self.pending_rects = [{"x_min": x_min, "x_max": x_max, "y_min": y_min, "y_max": y_max}]
+            if self.current_rect_patch is not None:
+                try:
+                    self.current_rect_patch.remove()
+                except Exception:
+                    pass
+            self.current_rect_patch = matplotlib.patches.Rectangle(
+                (x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="red"
             )
+            self.ax_img.add_patch(self.current_rect_patch)
             self.canvas.draw()
-            # Only allow one rect; finish immediately
-            self.finish_rect_mode()
 
         def toggle_nav(self, enable: bool):
             nav = self.canvas.toolbar
@@ -385,8 +389,14 @@ if wx:
             self.pending_rects = []
             self.rect_mode = "add"
             self.edit_rect_idx = None
+            if self.current_rect_patch is not None:
+                try:
+                    self.current_rect_patch.remove()
+                except Exception:
+                    pass
+                self.current_rect_patch = None
             self.rect_selector.set_active(True)
-            self.set_status("Drag one rectangle; press Enter to finish")
+            self.set_status("Drag one rectangle; adjust handles, press Enter to finish")
             self.canvas.draw()
 
         def start_edit_rect(self, event=None):
@@ -400,8 +410,14 @@ if wx:
             self.pending_rects = []
             self.rect_mode = "edit"
             self.edit_rect_idx = sel
+            if self.current_rect_patch is not None:
+                try:
+                    self.current_rect_patch.remove()
+                except Exception:
+                    pass
+                self.current_rect_patch = None
             self.rect_selector.set_active(True)
-            self.set_status("Drag replacement rect; press Enter to finish")
+            self.set_status("Drag replacement rect; adjust handles, press Enter to finish")
             self.canvas.draw()
 
         def delete_rect(self, event=None):
