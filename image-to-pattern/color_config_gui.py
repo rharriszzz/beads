@@ -90,6 +90,7 @@ if wx:
             self.last_range_summary: Optional[str] = None
             self.rect_mode: Optional[str] = None
             self.edit_rect_idx: Optional[int] = None
+            self.current_rect_patch = None
 
             self.build_ui()
             self.update_all()
