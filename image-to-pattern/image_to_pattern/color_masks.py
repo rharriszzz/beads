@@ -49,6 +49,24 @@ def mask_from_hsv_set(img_hsv: np.ndarray, hsv_set: Set[Tuple[int, int, int]]) -
     return hits.reshape(img_hsv.shape[:2])
 
 
+def rectangles_from_mask(mask: np.ndarray) -> List[List[int]]:
+    """Convert a boolean mask to a list of rectangles (runs per row)."""
+    rects: List[List[int]] = []
+    h, w = mask.shape
+    for y in range(h):
+        row = mask[y]
+        x = 0
+        while x < w:
+            if row[x]:
+                x_start = x
+                while x < w and row[x]:
+                    x += 1
+                x_end = x - 1
+                rects.append([x_start, x_end, y, y])
+            x += 1
+    return rects
+
+
 def masks_from_config(cfg: Dict, img_rgb: np.ndarray, img_hsv: np.ndarray):
     """Build masks dict and metadata from config + images.
 

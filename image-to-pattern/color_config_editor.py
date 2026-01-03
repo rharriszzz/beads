@@ -29,6 +29,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import RectangleSelector
 import numpy as np
 from PIL import Image
+from image_to_pattern.color_masks import mask_from_hsv_set, rectangles_from_mask
 
 
 def load_config(path: Path, image_filename: str) -> Dict:
@@ -93,37 +94,6 @@ def collect_rectangles(img_rgb: np.ndarray) -> List[List[int]]:
     plt.show()
     rect_selector.set_active(False)
     return rects
-
-
-def rectangles_from_mask(mask: np.ndarray) -> List[List[int]]:
-    """Convert a boolean mask to a list of rectangles (runs per row)."""
-    rects: List[List[int]] = []
-    h, w = mask.shape
-    for y in range(h):
-        row = mask[y]
-        x = 0
-        while x < w:
-            if row[x]:
-                x_start = x
-                while x < w and row[x]:
-                    x += 1
-                x_end = x - 1
-                rects.append([x_start, x_end, y, y])
-            x += 1
-    return rects
-
-
-def mask_from_hsv_set(img_hsv: np.ndarray, hsv_set: set) -> np.ndarray:
-    """Fast mask: pixels whose HSV is in hsv_set."""
-    if not hsv_set:
-        return np.zeros(img_hsv.shape[:2], dtype=bool)
-    arr = img_hsv.reshape(-1, 3)
-    dtype = np.dtype((np.void, arr.dtype.itemsize * arr.shape[1]))
-    arr_view = arr.view(dtype).reshape(-1)
-    set_array = np.array(list(hsv_set), dtype=arr.dtype)
-    set_view = set_array.view(dtype).reshape(-1)
-    hits = np.isin(arr_view, set_view)
-    return hits.reshape(img_hsv.shape[:2])
 
 
 def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray, prompt_user: bool = True):
