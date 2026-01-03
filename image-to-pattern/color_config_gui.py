@@ -352,9 +352,8 @@ if wx:
                 nav.zoom() if enable else nav.zoom()
 
         def reset_view(self):
-            nav = self.canvas.toolbar
-            if nav:
-                nav.home(None)
+            h, w, _ = self.img_rgb.shape
+            self._sync_limits((0, w), (h, 0))
 
         def set_status(self, msg: str):
             self.status.SetLabel(msg)
