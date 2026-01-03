@@ -271,6 +271,8 @@ if wx:
             if btn_sizer:
                 vbox.Add(btn_sizer, 0, wx.ALL | wx.EXPAND, 4)
             dlg.SetSizer(vbox)
+            vbox.Fit(dlg)
+            dlg.Layout()
             if dlg.ShowModal() == wx.ID_OK:
                 name = name_txt.GetValue().strip()
                 bg = bg_chk.GetValue()
