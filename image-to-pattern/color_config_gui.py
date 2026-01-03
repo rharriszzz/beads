@@ -143,7 +143,7 @@ if wx:
             edit_rect_btn.Bind(wx.EVT_BUTTON, self.start_edit_rect)
             del_rect_btn.Bind(wx.EVT_BUTTON, self.delete_rect)
             save_btn.Bind(wx.EVT_BUTTON, self.save_config)
-            quit_btn.Bind(wx.EVT_BUTTON, lambda evt: self.Close())
+            quit_btn.Bind(wx.EVT_BUTTON, self.on_quit)
 
             self.bg_checkbox = wx.CheckBox(ctrl_panel, label="Background")
             self.bg_checkbox.Bind(wx.EVT_CHECKBOX, self.set_background_flag)
@@ -473,6 +473,12 @@ if wx:
             self.rect_selector.set_active(False)
             self.rect_mode = None
             self.edit_rect_idx = None
+            if self.current_rect_patch is not None:
+                try:
+                    self.current_rect_patch.remove()
+                except Exception:
+                    pass
+                self.current_rect_patch = None
             self.update_all()
             self.refresh_rect_list()
 
@@ -517,6 +523,10 @@ if wx:
             with open(self.config_path, "w") as f:
                 json.dump(self.cfg, f, indent=2)
             wx.MessageBox(f"Config saved to {self.config_path}", "Saved")
+
+        def on_quit(self, event=None):
+            self.Close()
+            wx.CallAfter(wx.GetApp().ExitMainLoop)
 
         def update_all(self):
             title_kwargs = {"fontsize": 8}
