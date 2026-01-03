@@ -86,6 +86,8 @@ if wx:
             self.cfg = load_color_config(self.config_path) if self.config_path.exists() else {"image_filename": image_path.name, "colors": []}
             self.current_idx: Optional[int] = 0 if self.cfg["colors"] else None
             self.pending_rects: List[List[int]] = []
+            self.last_range_values: Optional[List[Tuple[int, int, int]]] = None
+            self.last_range_summary: Optional[str] = None
 
             self.build_ui()
             self.update_all()
@@ -327,7 +329,7 @@ if wx:
                 return
             self.pending_rects = []
             self.rect_selector.set_active(True)
-            self.set_status("Drag to add one rectangle; press Enter to finish")
+            self.set_status("Drag one rectangle; press Enter to finish")
             self.canvas.draw()
 
         def finish_rect_mode(self):
@@ -335,9 +337,28 @@ if wx:
                 return
             colors = self.cfg["colors"]
             colors[self.current_idx].setdefault("rectangles", []).extend(self.pending_rects)
+            # Summarize HSV range for the added rect(s)
+            if self.pending_rects:
+                hmins, hmaxs, smins, smaxs, vmins, vmaxs = [], [], [], [], [], []
+                values: List[Tuple[int, int, int]] = []
+                for x_min, x_max, y_min, y_max in self.pending_rects:
+                    region = self.img_hsv[y_min : y_max + 1, x_min : x_max + 1, :]
+                    hmins.append(int(region[:, :, 0].min()))
+                    hmaxs.append(int(region[:, :, 0].max()))
+                    smins.append(int(region[:, :, 1].min()))
+                    smaxs.append(int(region[:, :, 1].max()))
+                    vmins.append(int(region[:, :, 2].min()))
+                    vmaxs.append(int(region[:, :, 2].max()))
+                    uniq = np.unique(region.reshape(-1, 3), axis=0)
+                    values.extend([tuple(map(int, u)) for u in uniq])
+                hmin, hmax = min(hmins), max(hmaxs)
+                smin, smax = min(smins), max(smaxs)
+                vmin, vmax = min(vmins), max(vmaxs)
+                self.last_range_summary = f"H {hmin}-{hmax} S {smin}-{smax} V {vmin}-{vmax}"
+                self.last_range_values = values
+                self.set_status(f"Last rect HSV ranges: {self.last_range_summary}")
             self.pending_rects = []
             self.rect_selector.set_active(False)
-            self.set_status("")
             self.update_all()
 
         def resolve_overlaps_gui(self):
@@ -409,9 +430,11 @@ if wx:
                 self.ax_mask.set_title("Mask (no color selected)", **title_kwargs)
                 self.ax_overlay.set_title("Overlay", **title_kwargs)
 
-            swatch_img = hsv_swatch_image(hsv_values, max_cells=2000)
+            swatch_source = self.last_range_values if self.last_range_values is not None else hsv_values
+            swatch_img = hsv_swatch_image(swatch_source, max_cells=2000)
             self.ax_swatches.imshow(swatch_img)
-            self.ax_swatches.set_title(f"HSV ({len(hsv_values)} vals, cap 2000)", **title_kwargs)
+            title_suffix = f"{'range' if self.last_range_values is not None else 'vals'}"
+            self.ax_swatches.set_title(f"HSV ({len(swatch_source)} {title_suffix}, cap 2000)", **title_kwargs)
             self.ax_swatches.axis("off")
 
             for ax in [self.ax_img, self.ax_mask, self.ax_overlay]:
