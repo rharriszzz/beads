@@ -332,7 +332,7 @@ if wx:
 
             swatch_img = hsv_swatch_image(hsv_values, max_cells=2000)
             self.ax_swatches.imshow(swatch_img)
-            self.ax_swatches.set_title(f"HSV swatches ({len(hsv_values)} values, capped to 2000)")
+            self.ax_swatches.set_title(f"HSV ({len(hsv_values)} vals, cap 2000)")
             self.ax_swatches.axis("off")
 
             for ax in [self.ax_img, self.ax_mask, self.ax_overlay]:
