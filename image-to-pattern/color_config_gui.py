@@ -327,6 +327,8 @@ if wx:
                 matplotlib.patches.Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="red")
             )
             self.canvas.draw()
+            # Only allow one rect; finish immediately
+            self.finish_rect_mode()
 
         def toggle_nav(self, enable: bool):
             nav = self.canvas.toolbar
