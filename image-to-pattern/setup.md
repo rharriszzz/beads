@@ -25,6 +25,10 @@ export XDG_CACHE_HOME=$PWD/image-to-pattern/debug-output/mpl-cache
 export MPLCONFIGDIR=$PWD/image-to-pattern/debug-output/mpl-cache
 ```
 You can add these to your shell rc or use `direnv` with a `.envrc`.
+Direnv quickstart:
+- Install (`brew install direnv` or `sudo port install direnv`).
+- Add to shell rc (zsh): `eval "$(direnv hook zsh)"`.
+- In repo root, run `direnv allow` (uses the provided .envrc) to auto-set these vars on entry.
 
 ## Running the pipeline CLI
 From repo root:
