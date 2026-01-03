@@ -109,20 +109,26 @@ if wx:
             self.listbox.Bind(wx.EVT_LISTBOX, self.on_select_color)
             ctrl_sizer.Add(self.listbox, 0, wx.EXPAND | wx.ALL, 4)
 
-            grid = wx.GridSizer(3, 3, 4, 4)
+            # Color buttons (row 1)
+            btn_row1 = wx.BoxSizer(wx.HORIZONTAL)
             add_btn = wx.Button(ctrl_panel, label="Add Color")
             edit_btn = wx.Button(ctrl_panel, label="Edit Color")
             del_btn = wx.Button(ctrl_panel, label="Delete Color")
             rect_btn = wx.Button(ctrl_panel, label="Add Rect")
             edit_rect_btn = wx.Button(ctrl_panel, label="Edit Rect")
             del_rect_btn = wx.Button(ctrl_panel, label="Delete Rect")
+            for b in [add_btn, edit_btn, del_btn, rect_btn, edit_rect_btn, del_rect_btn]:
+                btn_row1.Add(b, 0, wx.EXPAND | wx.ALL, 2)
+            ctrl_sizer.Add(btn_row1, 0, wx.EXPAND | wx.ALL, 4)
+
+            # Row 2: Save/Quit
+            btn_row2 = wx.BoxSizer(wx.HORIZONTAL)
             save_btn = wx.Button(ctrl_panel, label="Save")
             quit_btn = wx.Button(ctrl_panel, label="Quit")
-            for b in [add_btn, edit_btn, del_btn, rect_btn, save_btn, quit_btn]:
-                grid.Add(b, 0, wx.EXPAND)
-            for b in [edit_rect_btn, del_rect_btn]:
-                grid.Add(b, 0, wx.EXPAND)
-            ctrl_sizer.Add(grid, 0, wx.EXPAND | wx.ALL, 4)
+            for b in [save_btn, quit_btn]:
+                btn_row2.Add(b, 0, wx.EXPAND | wx.ALL, 2)
+            ctrl_sizer.Add(btn_row2, 0, wx.EXPAND | wx.ALL, 4)
+
             add_btn.Bind(wx.EVT_BUTTON, self.add_color)
             edit_btn.Bind(wx.EVT_BUTTON, self.edit_color)
             del_btn.Bind(wx.EVT_BUTTON, self.delete_color)
