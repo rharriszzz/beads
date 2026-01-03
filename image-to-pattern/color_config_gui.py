@@ -47,6 +47,12 @@ from image_to_pattern.color_masks import (
     load_color_config,
 )
 
+# Ensure a wx.App exists so Matplotlib cleanup does not fail in headless imports/tests
+_wx_placeholder_app = None
+if wx and wx.GetApp() is None:
+    _wx_placeholder_app = wx.App(False)
+    _wx_placeholder_app.SetExitOnFrameDelete(False)
+
 
 # Re-export helpers for tests/backward compatibility
 def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List[List[int]]) -> Set[Tuple[int, int, int]]:
@@ -479,6 +485,18 @@ if wx:
                 except Exception:
                     pass
                 self.current_rect_patch = None
+            # Remove any RectangleSelector artifacts (handles/selection)
+            try:
+                if self.rect_selector and getattr(self.rect_selector, "_selection_artist", None):
+                    self.rect_selector._selection_artist.remove()
+                if self.rect_selector and getattr(self.rect_selector, "_handles_artists", None):
+                    for h in list(self.rect_selector._handles_artists):
+                        try:
+                            h.remove()
+                        except Exception:
+                            pass
+            except Exception:
+                pass
             self.update_all()
             self.refresh_rect_list()
 
@@ -589,7 +607,8 @@ def main():
 
     if wx is None:
         raise RuntimeError("wxPython not available; install wxPython for your Python build to run the GUI.")
-    app = wx.App(False)
+    app = wx.GetApp() or wx.App(False)
+    app.SetExitOnFrameDelete(True)
     gui = ColorConfigGUI(Path(args.image), Path(args.config) if args.config else None)
     gui.Show()
     app.MainLoop()
