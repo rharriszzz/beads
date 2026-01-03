@@ -487,18 +487,27 @@ if wx:
                 self.current_rect_patch = None
             # Remove any RectangleSelector artifacts (handles/selection)
             try:
-                if self.rect_selector and getattr(self.rect_selector, "_selection_artist", None):
-                    self.rect_selector._selection_artist.remove()
-                if self.rect_selector and getattr(self.rect_selector, "_handles_artists", None):
-                    for h in list(self.rect_selector._handles_artists):
-                        try:
-                            h.remove()
-                        except Exception:
-                            pass
+                if self.rect_selector:
+                    sel_art = getattr(self.rect_selector, "_selection_artist", None)
+                    if sel_art:
+                        sel_art.remove()
+                        self.rect_selector._selection_artist = None
+                    for attr in ("_handles_artists", "_corner_handles"):
+                        handles = getattr(self.rect_selector, attr, None)
+                        if handles:
+                            for h in list(handles):
+                                try:
+                                    h.remove()
+                                except Exception:
+                                    pass
+                            setattr(self.rect_selector, attr, [])
+                    if hasattr(self.rect_selector, "set_visible"):
+                        self.rect_selector.set_visible(False)
             except Exception:
                 pass
             self.update_all()
             self.refresh_rect_list()
+            self.canvas.draw_idle()
 
         def resolve_overlaps_gui(self):
             colors = self.cfg.get("colors", [])
