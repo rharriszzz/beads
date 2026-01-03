@@ -142,6 +142,7 @@ if wx:
             # Custom pan/zoom buttons (no save)
             tool_row = wx.BoxSizer(wx.HORIZONTAL)
             pan_btn = wx.Button(panel, label="Pan/Zoom On")
+            pan_btn.SetToolTip("Left-drag to pan, scroll to zoom")
             pan_off_btn = wx.Button(panel, label="Pan/Zoom Off")
             reset_btn = wx.Button(panel, label="Reset View")
             tool_row.Add(pan_btn, 0, wx.ALL, 2)
