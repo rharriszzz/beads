@@ -13,6 +13,11 @@ Usage
     MPLCONFIGDIR=./image-to-pattern/debug-output/mpl-cache \
     python3.11 image-to-pattern/color_config_gui.py --image beads-photo-2.jpg [--config beads-photo-2.json]
 
+Env convenience (optional)
+- Install direnv (`brew install direnv` or `port install direnv`), add to your shell rc (zsh):
+    eval "$(direnv hook zsh)"
+- In repo root, .envrc is provided; run `direnv allow` once to auto-set XDG_CACHE_HOME/MPLCONFIGDIR when entering the repo.
+
 Notes
 - Requires tkinter + matplotlib (TkAgg backend).
 - Saves to the provided config path (or <image>.json if not given).
@@ -179,7 +184,6 @@ class ColorConfigGUI:
         self.rect_selector = RectangleSelector(
             self.ax_img,
             self.on_select_rect,
-            drawtype="box",
             useblit=True,
             button=[1],
             minspanx=2,
