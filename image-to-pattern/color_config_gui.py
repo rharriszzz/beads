@@ -214,6 +214,16 @@ if wx:
             sizer.Add(fig_sizer, 1, wx.EXPAND | wx.ALL, 4)
 
             # Rectangle selector
+            self._create_rect_selector()
+            self.fig.canvas.mpl_connect("key_press_event", self.on_key_press)
+
+            self.refresh_listbox()
+            self.refresh_rect_list()
+            panel.Layout()
+            self.Layout()
+
+        def _create_rect_selector(self):
+            """Create a fresh RectangleSelector (used to reset and clear handles)."""
             self.rect_selector = RectangleSelector(
                 self.ax_img,
                 self.on_select_rect,
@@ -225,12 +235,6 @@ if wx:
                 interactive=True,
             )
             self.rect_selector.set_active(False)
-            self.fig.canvas.mpl_connect("key_press_event", self.on_key_press)
-
-            self.refresh_listbox()
-            self.refresh_rect_list()
-            panel.Layout()
-            self.Layout()
 
         def refresh_listbox(self):
             self.listbox.Clear()
@@ -505,6 +509,13 @@ if wx:
                         self.rect_selector.set_visible(False)
             except Exception:
                 pass
+            # fully reset selector to drop any lingering artists/handles
+            try:
+                self.rect_selector.set_active(False)
+                self.rect_selector.disconnect_events()
+            except Exception:
+                pass
+            self._create_rect_selector()
             self.update_all()
             self.refresh_rect_list()
             self.canvas.draw_idle()
