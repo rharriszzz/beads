@@ -7,6 +7,7 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 from PIL import Image
+from image_to_pattern.color_masks import mask_from_rect_ranges
 
 
 def load_config(path: Path) -> Dict:
@@ -14,52 +15,25 @@ def load_config(path: Path) -> Dict:
         return json.load(f)
 
 
-def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List[Dict[str, int]]) -> set:
-    """Support rectangles as dicts with x_min/x_max/y_min/y_max."""
-    h_set = set()
-    for rect in rectangles:
-        if not isinstance(rect, dict):
-            continue
-        x_min = rect.get("x_min", 0)
-        x_max = rect.get("x_max", 0)
-        y_min = rect.get("y_min", 0)
-        y_max = rect.get("y_max", 0)
-        x_min = max(0, x_min)
-        y_min = max(0, y_min)
-        x_max = min(img_hsv.shape[1] - 1, x_max)
-        y_max = min(img_hsv.shape[0] - 1, y_max)
-        if x_min > x_max or y_min > y_max:
-            continue
-        region = img_hsv[y_min : y_max + 1, x_min : x_max + 1, :]
-        flat = region.reshape(-1, 3)
-        for tup in map(tuple, flat):
-            h_set.add(tup)
-    return h_set
-
-
-def build_masks(img_hsv: np.ndarray, color_sets: List[Tuple[str, set]]) -> Dict[str, np.ndarray]:
-    h, w, _ = img_hsv.shape
+def build_masks(img_hsv: np.ndarray, colors: List[Tuple[str, List[Dict[str, int]]]]) -> Dict[str, np.ndarray]:
     masks = {}
-    flat = img_hsv.reshape(-1, 3)
-    assigned = np.zeros(flat.shape[0], dtype=bool)
-    for name, hsv_set in color_sets:
-        hits = np.array([tuple(px) in hsv_set for px in flat], dtype=bool)
-        mask = hits.reshape(h, w)
+    assigned = np.zeros(img_hsv.shape[:2], dtype=bool)
+    for name, rects in colors:
+        mask = mask_from_rect_ranges(img_hsv, rects)
         masks[name] = mask
-        assigned |= hits
-    masks["other"] = (~assigned).reshape(h, w)
+        assigned |= mask
+    masks["other"] = ~assigned
     return masks
 
 
 def masks_from_config(cfg: Dict, img_rgb: np.ndarray, img_hsv: np.ndarray) -> Dict[str, np.ndarray]:
     """Convenience wrapper to build masks dict directly from config + images."""
-    color_sets = []
+    colors = []
     for color_entry in cfg.get("colors", []):
         name = color_entry.get("name") or "unnamed"
         rects = color_entry.get("rectangles", [])
-        hsv_set = rectangles_to_hsv_set(img_hsv, rects)
-        color_sets.append((name, hsv_set))
-    return build_masks(img_hsv, color_sets)
+        colors.append((name, rects))
+    return build_masks(img_hsv, colors)
 
 
 def save_masks(img_rgb: np.ndarray, masks: Dict[str, np.ndarray], outdir: Path, stem: str):
@@ -84,14 +58,13 @@ def main():
     img_rgb = np.array(Image.open(img_path).convert("RGB"))
     img_hsv = np.array(Image.open(img_path).convert("HSV"))
 
-    color_sets = []
+    colors = []
     for color_entry in cfg.get("colors", []):
         name = color_entry.get("name") or "unnamed"
         rects = color_entry.get("rectangles", [])
-        hsv_set = rectangles_to_hsv_set(img_hsv, rects)
-        color_sets.append((name, hsv_set))
+        colors.append((name, rects))
 
-    masks = build_masks(img_hsv, color_sets)
+    masks = build_masks(img_hsv, colors)
     args.outdir.mkdir(parents=True, exist_ok=True)
     save_masks(img_rgb, masks, args.outdir, img_path.stem)
     print(f"Saved masks/overlays to {args.outdir}")

@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import RectangleSelector
 import numpy as np
 from PIL import Image
-from image_to_pattern.color_masks import mask_from_hsv_set, rectangles_from_mask
+from image_to_pattern.color_masks import mask_from_rect_ranges, rectangles_from_mask
 
 
 def load_config(path: Path, image_filename: str) -> Dict:
@@ -102,35 +102,19 @@ def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray, prompt_user: bool = True):
     If prompt_user is False, overlaps are left as-is.
     """
     colors = cfg.get("colors", [])
-    hsv_sets = []
+    masks = []
     for c in colors:
         rects = c.get("rectangles", [])
-        hsv_set = set()
-        hgt, wdt, _ = img_hsv.shape
-        for rect in rects:
-            if len(rect) != 4:
-                continue
-            x_min, x_max, y_min, y_max = rect
-            x_min = max(0, x_min)
-            y_min = max(0, y_min)
-            x_max = min(wdt - 1, x_max)
-            y_max = min(hgt - 1, y_max)
-            if x_min > x_max or y_min > y_max:
-                continue
-            region = img_hsv[y_min : y_max + 1, x_min : x_max + 1, :]
-            flat = region.reshape(-1, 3)
-            for tup in map(tuple, flat):
-                hsv_set.add(tup)
-        hsv_sets.append(hsv_set)
+        masks.append(mask_from_rect_ranges(img_hsv, rects))
 
     for i in range(len(colors)):
         for j in range(i + 1, len(colors)):
-            overlap = hsv_sets[i].intersection(hsv_sets[j])
-            if not overlap:
+            overlap = masks[i] & masks[j]
+            count = int(overlap.sum())
+            if count == 0:
                 continue
-            count = len(overlap)
             print(
-                f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' of {count} HSV values."
+                f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' of {count} pixels."
             )
             if not prompt_user:
                 continue
@@ -140,18 +124,18 @@ def resolve_overlaps(cfg: Dict, img_hsv: np.ndarray, prompt_user: bool = True):
             if choice == "k":
                 continue  # first wins, do nothing
             if choice == "f":
-                hsv_sets[i] = hsv_sets[i] - overlap
+                masks[i] = masks[i] & (~overlap)
             elif choice == "s":
-                hsv_sets[j] = hsv_sets[j] - overlap
+                masks[j] = masks[j] & (~overlap)
             elif choice == "b":
-                hsv_sets[i] = hsv_sets[i] - overlap
-                hsv_sets[j] = hsv_sets[j] - overlap
+                masks[i] = masks[i] & (~overlap)
+                masks[j] = masks[j] & (~overlap)
             else:
                 print("Unknown choice, keeping overlap.")
                 continue
             # Rebuild rectangles for affected colors
             for idx in (i, j):
-                mask = mask_from_hsv_set(img_hsv, hsv_sets[idx])
+                mask = masks[idx]
                 colors[idx]["rectangles"] = rectangles_from_mask(mask)
 
 

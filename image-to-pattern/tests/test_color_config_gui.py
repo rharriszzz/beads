@@ -41,6 +41,22 @@ class ColorConfigGUITests(unittest.TestCase):
         self.assertFalse(mask[0, 1])
         self.assertFalse(mask[1, 0])
 
+    def test_mask_from_rect_ranges(self):
+        img = np.array(
+            [
+                [[0, 0, 0], [1, 1, 1]],
+                [[2, 2, 2], [3, 3, 3]],
+            ],
+            dtype=np.uint8,
+        )
+        rects = [{"x_min": 0, "x_max": 1, "y_min": 0, "y_max": 0}]
+        mask = gui.mask_from_rect_ranges(img, rects)
+        # range covers hsv 0-1 for all channels, so both pixels in first row are included
+        self.assertTrue(mask[0, 0])
+        self.assertTrue(mask[0, 1])
+        self.assertFalse(mask[1, 0])
+        self.assertFalse(mask[1, 1])
+
     def test_hsv_swatch_image(self):
         vals = [(0, 255, 255), (120, 255, 255), (240, 255, 255)]
         swatch = gui.hsv_swatch_image(vals, max_cells=4)

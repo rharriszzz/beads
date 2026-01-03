@@ -43,6 +43,7 @@ from PIL import Image
 from image_to_pattern.color_masks import (
     rectangles_to_hsv_set as _rectangles_to_hsv_set,
     mask_from_hsv_set as _mask_from_hsv_set,
+    mask_from_rect_ranges as _mask_from_rect_ranges,
     rectangles_from_mask,
     load_color_config,
 )
@@ -61,6 +62,10 @@ def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List[List[int]]) -> S
 
 def mask_from_hsv_set(img_hsv: np.ndarray, hsv_set: Set[Tuple[int, int, int]]) -> np.ndarray:
     return _mask_from_hsv_set(img_hsv, hsv_set)
+
+
+def mask_from_rect_ranges(img_hsv: np.ndarray, rectangles: List[Dict[str, int]]) -> np.ndarray:
+    return _mask_from_rect_ranges(img_hsv, rectangles)
 
 
 def hsv_swatch_image(hsv_values: List[Tuple[int, int, int]], max_cells: int = 4000) -> np.ndarray:
@@ -521,20 +526,20 @@ if wx:
 
         def resolve_overlaps_gui(self):
             colors = self.cfg.get("colors", [])
-            hsv_sets = []
+            masks = []
             for c in colors:
                 rects = c.get("rectangles", [])
-                hsv_sets.append(rectangles_to_hsv_set(self.img_hsv, rects))
+                masks.append(mask_from_rect_ranges(self.img_hsv, rects))
             for i in range(len(colors)):
                 for j in range(i + 1, len(colors)):
-                    overlap = hsv_sets[i].intersection(hsv_sets[j])
-                    if not overlap:
+                    overlap_mask = masks[i] & masks[j]
+                    count = int(overlap_mask.sum())
+                    if count == 0:
                         continue
-                    count = len(overlap)
                     choices = ["Keep (first wins)", "Drop from first", "Drop from second", "Drop from both"]
                     dlg = wx.SingleChoiceDialog(
                         self,
-                        f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' ({count} HSV values). Choose resolution:",
+                        f"Overlap between '{colors[i].get('name')}' and '{colors[j].get('name')}' ({count} pixels). Choose resolution:",
                         "Resolve Overlap",
                         choices,
                     )
@@ -544,14 +549,14 @@ if wx:
                     sel = dlg.GetSelection()
                     dlg.Destroy()
                     if sel == 1:
-                        hsv_sets[i] = hsv_sets[i] - overlap
+                        masks[i] = masks[i] & (~overlap_mask)
                     elif sel == 2:
-                        hsv_sets[j] = hsv_sets[j] - overlap
+                        masks[j] = masks[j] & (~overlap_mask)
                     elif sel == 3:
-                        hsv_sets[i] = hsv_sets[i] - overlap
-                        hsv_sets[j] = hsv_sets[j] - overlap
+                        masks[i] = masks[i] & (~overlap_mask)
+                        masks[j] = masks[j] & (~overlap_mask)
                     for idx in (i, j):
-                        mask = mask_from_hsv_set(self.img_hsv, hsv_sets[idx])
+                        mask = masks[idx]
                         colors[idx]["rectangles"] = rectangles_from_mask(mask)
 
         def save_config(self, event=None):
@@ -578,9 +583,13 @@ if wx:
             hsv_values: List[Tuple[int, int, int]] = []
             if self.current_idx is not None and self.cfg["colors"]:
                 color_entry = self.cfg["colors"][self.current_idx]
-                hsv_set = rectangles_to_hsv_set(self.img_hsv, color_entry.get("rectangles", []))
-                hsv_values = sorted(hsv_set)
-                mask = mask_from_hsv_set(self.img_hsv, hsv_set)
+                rects = color_entry.get("rectangles", [])
+                mask = mask_from_rect_ranges(self.img_hsv, rects)
+                # use stored ranges for swatches if available
+                for r in rects:
+                    if all(k in r for k in ("h_min", "h_max", "s_min", "s_max", "v_min", "v_max")):
+                        hsv_values.append((r["h_min"], r["s_min"], r["v_min"]))
+                        hsv_values.append((r["h_max"], r["s_max"], r["v_max"]))
                 self.ax_mask.imshow(mask, cmap="gray")
                 self.ax_mask.set_title(f"Mask: {color_entry.get('name')}", **title_kwargs)
                 overlay = np.full_like(self.img_rgb, 255, dtype=np.uint8)

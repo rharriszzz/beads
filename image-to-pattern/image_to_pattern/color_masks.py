@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Set, Tuple, Optional
 
 import numpy as np
 from PIL import Image
@@ -50,6 +50,51 @@ def mask_from_hsv_set(img_hsv: np.ndarray, hsv_set: Set[Tuple[int, int, int]]) -
     return hits.reshape(img_hsv.shape[:2])
 
 
+def _rect_range(rect: Dict[str, int], img_hsv: np.ndarray) -> Optional[Tuple[int, int, int, int, int, int]]:
+    """Return (hmin, hmax, smin, smax, vmin, vmax) for a rectangle, computing if missing."""
+    hgt, wdt, _ = img_hsv.shape
+    x_min, x_max = int(rect.get("x_min", 0)), int(rect.get("x_max", 0))
+    y_min, y_max = int(rect.get("y_min", 0)), int(rect.get("y_max", 0))
+    x_min = max(0, x_min)
+    y_min = max(0, y_min)
+    x_max = min(wdt - 1, x_max)
+    y_max = min(hgt - 1, y_max)
+    if x_min > x_max or y_min > y_max:
+        return None
+    hmin = rect.get("h_min")
+    hmax = rect.get("h_max")
+    smin = rect.get("s_min")
+    smax = rect.get("s_max")
+    vmin = rect.get("v_min")
+    vmax = rect.get("v_max")
+    if None in (hmin, hmax, smin, smax, vmin, vmax):
+        region = img_hsv[y_min : y_max + 1, x_min : x_max + 1, :]
+        hmin = int(region[:, :, 0].min())
+        hmax = int(region[:, :, 0].max())
+        smin = int(region[:, :, 1].min())
+        smax = int(region[:, :, 1].max())
+        vmin = int(region[:, :, 2].min())
+        vmax = int(region[:, :, 2].max())
+    return int(hmin), int(hmax), int(smin), int(smax), int(vmin), int(vmax)
+
+
+def mask_from_rect_ranges(img_hsv: np.ndarray, rectangles: List[Dict[str, int]]) -> np.ndarray:
+    """Mask built from HSV ranges (min/max) per rectangle, applied to the whole image."""
+    if not rectangles:
+        return np.zeros(img_hsv.shape[:2], dtype=bool)
+    mask = np.zeros(img_hsv.shape[:2], dtype=bool)
+    h = img_hsv[:, :, 0]
+    s = img_hsv[:, :, 1]
+    v = img_hsv[:, :, 2]
+    for rect in rectangles:
+        rng = _rect_range(rect, img_hsv)
+        if rng is None:
+            continue
+        hmin, hmax, smin, smax, vmin, vmax = rng
+        mask |= (h >= hmin) & (h <= hmax) & (s >= smin) & (s <= smax) & (v >= vmin) & (v <= vmax)
+    return mask
+
+
 def rectangles_from_mask(mask: np.ndarray) -> List[List[int]]:
     """Convert a boolean mask to a list of rectangle dicts (runs per row)."""
     rects: List[Dict[str, int]] = []
@@ -82,8 +127,7 @@ def masks_from_config(cfg: Dict, img_rgb: np.ndarray, img_hsv: np.ndarray):
         if color_entry.get("background", False):
             background_names.add(name)
         rects = color_entry.get("rectangles", [])
-        hsv_set = rectangles_to_hsv_set(img_hsv, rects)
-        masks[name] = mask_from_hsv_set(img_hsv, hsv_set)
+        masks[name] = mask_from_rect_ranges(img_hsv, rects)
     # other is implicit; built later if needed
     return masks, color_names, background_names
 
