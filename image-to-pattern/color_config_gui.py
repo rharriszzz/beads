@@ -109,7 +109,7 @@ if wx:
             add_btn = wx.Button(ctrl_panel, label="Add")
             edit_btn = wx.Button(ctrl_panel, label="Edit")
             del_btn = wx.Button(ctrl_panel, label="Delete")
-            rect_btn = wx.Button(ctrl_panel, label="Add Rects")
+            rect_btn = wx.Button(ctrl_panel, label="Add Rect")
             save_btn = wx.Button(ctrl_panel, label="Save")
             quit_btn = wx.Button(ctrl_panel, label="Quit")
             for b in [add_btn, edit_btn, del_btn, rect_btn, save_btn, quit_btn]:
@@ -327,7 +327,7 @@ if wx:
                 return
             self.pending_rects = []
             self.rect_selector.set_active(True)
-            self.set_status("Drag to add rectangles; press Enter to finish")
+            self.set_status("Drag to add one rectangle; press Enter to finish")
             self.canvas.draw()
 
         def finish_rect_mode(self):
