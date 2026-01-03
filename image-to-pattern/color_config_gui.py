@@ -88,6 +88,8 @@ if wx:
             self.pending_rects: List[List[int]] = []
             self.last_range_values: Optional[List[Tuple[int, int, int]]] = None
             self.last_range_summary: Optional[str] = None
+            self.rect_mode: Optional[str] = None
+            self.edit_rect_idx: Optional[int] = None
 
             self.build_ui()
             self.update_all()
@@ -107,26 +109,37 @@ if wx:
             self.listbox.Bind(wx.EVT_LISTBOX, self.on_select_color)
             ctrl_sizer.Add(self.listbox, 0, wx.EXPAND | wx.ALL, 4)
 
-            grid = wx.GridSizer(2, 3, 4, 4)
-            add_btn = wx.Button(ctrl_panel, label="Add")
-            edit_btn = wx.Button(ctrl_panel, label="Edit")
-            del_btn = wx.Button(ctrl_panel, label="Delete")
+            grid = wx.GridSizer(3, 3, 4, 4)
+            add_btn = wx.Button(ctrl_panel, label="Add Color")
+            edit_btn = wx.Button(ctrl_panel, label="Edit Color")
+            del_btn = wx.Button(ctrl_panel, label="Delete Color")
             rect_btn = wx.Button(ctrl_panel, label="Add Rect")
+            edit_rect_btn = wx.Button(ctrl_panel, label="Edit Rect")
+            del_rect_btn = wx.Button(ctrl_panel, label="Delete Rect")
             save_btn = wx.Button(ctrl_panel, label="Save")
             quit_btn = wx.Button(ctrl_panel, label="Quit")
             for b in [add_btn, edit_btn, del_btn, rect_btn, save_btn, quit_btn]:
+                grid.Add(b, 0, wx.EXPAND)
+            for b in [edit_rect_btn, del_rect_btn]:
                 grid.Add(b, 0, wx.EXPAND)
             ctrl_sizer.Add(grid, 0, wx.EXPAND | wx.ALL, 4)
             add_btn.Bind(wx.EVT_BUTTON, self.add_color)
             edit_btn.Bind(wx.EVT_BUTTON, self.edit_color)
             del_btn.Bind(wx.EVT_BUTTON, self.delete_color)
-            rect_btn.Bind(wx.EVT_BUTTON, self.start_rect_mode)
+            rect_btn.Bind(wx.EVT_BUTTON, self.start_add_rect)
+            edit_rect_btn.Bind(wx.EVT_BUTTON, self.start_edit_rect)
+            del_rect_btn.Bind(wx.EVT_BUTTON, self.delete_rect)
             save_btn.Bind(wx.EVT_BUTTON, self.save_config)
             quit_btn.Bind(wx.EVT_BUTTON, lambda evt: self.Close())
 
             self.bg_checkbox = wx.CheckBox(ctrl_panel, label="Background")
             self.bg_checkbox.Bind(wx.EVT_CHECKBOX, self.set_background_flag)
             ctrl_sizer.Add(self.bg_checkbox, 0, wx.ALL, 4)
+
+            ctrl_sizer.Add(wx.StaticText(ctrl_panel, label="Rectangles"), 0, wx.ALL, 4)
+            self.rect_list = wx.ListBox(ctrl_panel)
+            self.rect_list.Bind(wx.EVT_LISTBOX, self.on_select_rect_list)
+            ctrl_sizer.Add(self.rect_list, 0, wx.EXPAND | wx.ALL, 4)
 
             self.status = wx.StaticText(ctrl_panel, label="")
             status_font = self.status.GetFont()
@@ -196,6 +209,7 @@ if wx:
             self.fig.canvas.mpl_connect("key_press_event", self.on_key_press)
 
             self.refresh_listbox()
+            self.refresh_rect_list()
             panel.Layout()
             self.Layout()
 
@@ -207,6 +221,7 @@ if wx:
                 self.listbox.Append(f"{name}{' [bg]' if bg else ''}")
             if self.current_idx is not None and 0 <= self.current_idx < self.listbox.GetCount():
                 self.listbox.SetSelection(self.current_idx)
+            self.refresh_rect_list()
 
         def on_select_color(self, event=None):
             if self.listbox.GetSelection() == wx.NOT_FOUND:
@@ -215,6 +230,21 @@ if wx:
             self.current_idx = self.listbox.GetSelection()
             self.bg_checkbox.SetValue(self.cfg["colors"][self.current_idx].get("background", False))
             self.update_all()
+            self.refresh_rect_list()
+
+        def refresh_rect_list(self):
+            self.rect_list.Clear()
+            if self.current_idx is None or not self.cfg.get("colors"):
+                return
+            rects = self.cfg["colors"][self.current_idx].get("rectangles", [])
+            for idx, r in enumerate(rects):
+                desc = f"{idx}: x[{r.get('x_min')}..{r.get('x_max')}] y[{r.get('y_min')}..{r.get('y_max')}]"
+                if all(k in r for k in ("h_min", "h_max", "s_min", "s_max", "v_min", "v_max")):
+                    desc += f" H[{r['h_min']}-{r['h_max']}] S[{r['s_min']}-{r['s_max']}] V[{r['v_min']}-{r['v_max']}]"
+                self.rect_list.Append(desc)
+
+        def on_select_rect_list(self, event=None):
+            pass
 
         def add_color(self, event=None):
             dlg = wx.TextEntryDialog(self, "Color name:", "Add Color")
@@ -323,20 +353,50 @@ if wx:
             if event.key == "enter" and self.rect_selector and self.rect_selector.active:
                 self.finish_rect_mode()
 
-        def start_rect_mode(self, event=None):
+        def start_add_rect(self, event=None):
             if self.current_idx is None:
                 wx.MessageBox("Select a color first.", "Info")
                 return
             self.pending_rects = []
+            self.rect_mode = "add"
+            self.edit_rect_idx = None
             self.rect_selector.set_active(True)
             self.set_status("Drag one rectangle; press Enter to finish")
             self.canvas.draw()
+
+        def start_edit_rect(self, event=None):
+            if self.current_idx is None:
+                wx.MessageBox("Select a color first.", "Info")
+                return
+            sel = self.rect_list.GetSelection()
+            if sel == wx.NOT_FOUND:
+                wx.MessageBox("Select a rectangle to edit.", "Info")
+                return
+            self.pending_rects = []
+            self.rect_mode = "edit"
+            self.edit_rect_idx = sel
+            self.rect_selector.set_active(True)
+            self.set_status("Drag replacement rect; press Enter to finish")
+            self.canvas.draw()
+
+        def delete_rect(self, event=None):
+            if self.current_idx is None or not self.cfg.get("colors"):
+                return
+            sel = self.rect_list.GetSelection()
+            if sel == wx.NOT_FOUND:
+                wx.MessageBox("Select a rectangle to delete.", "Info")
+                return
+            rects = self.cfg["colors"][self.current_idx].get("rectangles", [])
+            if 0 <= sel < len(rects):
+                rects.pop(sel)
+                self.refresh_rect_list()
+                self.update_all()
 
         def finish_rect_mode(self):
             if self.current_idx is None:
                 return
             colors = self.cfg["colors"]
-            colors[self.current_idx].setdefault("rectangles", []).extend(self.pending_rects)
+            rects = colors[self.current_idx].setdefault("rectangles", [])
             # Summarize HSV range for the added rect(s)
             if self.pending_rects:
                 hmins, hmaxs, smins, smaxs, vmins, vmaxs = [], [], [], [], [], []
@@ -363,9 +423,16 @@ if wx:
                         {"h_min": hmin, "h_max": hmax, "s_min": smin, "s_max": smax, "v_min": vmin, "v_max": vmax}
                     )
                 self.set_status(f"Last rect HSV ranges: {self.last_range_summary}")
+                if self.rect_mode == "edit" and self.edit_rect_idx is not None and 0 <= self.edit_rect_idx < len(rects):
+                    rects[self.edit_rect_idx] = self.pending_rects[0]
+                else:
+                    rects.extend(self.pending_rects)
             self.pending_rects = []
             self.rect_selector.set_active(False)
+            self.rect_mode = None
+            self.edit_rect_idx = None
             self.update_all()
+            self.refresh_rect_list()
 
         def resolve_overlaps_gui(self):
             colors = self.cfg.get("colors", [])
@@ -432,6 +499,19 @@ if wx:
                     overlay[mask] = self.img_rgb[mask]
                 self.ax_overlay.imshow(overlay)
                 self.ax_overlay.set_title("Overlay", **title_kwargs)
+                # draw rectangles overlay
+                for r in color_entry.get("rectangles", []):
+                    x_min, x_max = r.get("x_min", 0), r.get("x_max", 0)
+                    y_min, y_max = r.get("y_min", 0), r.get("y_max", 0)
+                    rect_patch = matplotlib.patches.Rectangle(
+                        (x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="lime", linewidth=1
+                    )
+                    self.ax_img.add_patch(rect_patch)
+                    self.ax_overlay.add_patch(
+                        matplotlib.patches.Rectangle(
+                            (x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="lime", linewidth=1
+                        )
+                    )
             else:
                 self.ax_mask.set_title("Mask (no color selected)", **title_kwargs)
                 self.ax_overlay.set_title("Overlay", **title_kwargs)
