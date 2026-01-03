@@ -109,25 +109,31 @@ if wx:
             self.listbox.Bind(wx.EVT_LISTBOX, self.on_select_color)
             ctrl_sizer.Add(self.listbox, 0, wx.EXPAND | wx.ALL, 4)
 
-            # Color buttons (row 1)
+            # Row 1: Color buttons
             btn_row1 = wx.BoxSizer(wx.HORIZONTAL)
             add_btn = wx.Button(ctrl_panel, label="Add Color")
             edit_btn = wx.Button(ctrl_panel, label="Edit Color")
             del_btn = wx.Button(ctrl_panel, label="Delete Color")
-            rect_btn = wx.Button(ctrl_panel, label="Add Rect")
-            edit_rect_btn = wx.Button(ctrl_panel, label="Edit Rect")
-            del_rect_btn = wx.Button(ctrl_panel, label="Delete Rect")
-            for b in [add_btn, edit_btn, del_btn, rect_btn, edit_rect_btn, del_rect_btn]:
+            for b in [add_btn, edit_btn, del_btn]:
                 btn_row1.Add(b, 0, wx.EXPAND | wx.ALL, 2)
             ctrl_sizer.Add(btn_row1, 0, wx.EXPAND | wx.ALL, 4)
 
-            # Row 2: Save/Quit
+            # Row 2: Rect buttons
             btn_row2 = wx.BoxSizer(wx.HORIZONTAL)
+            rect_btn = wx.Button(ctrl_panel, label="Add Rect")
+            edit_rect_btn = wx.Button(ctrl_panel, label="Edit Rect")
+            del_rect_btn = wx.Button(ctrl_panel, label="Delete Rect")
+            for b in [rect_btn, edit_rect_btn, del_rect_btn]:
+                btn_row2.Add(b, 0, wx.EXPAND | wx.ALL, 2)
+            ctrl_sizer.Add(btn_row2, 0, wx.EXPAND | wx.ALL, 4)
+
+            # Row 3: Save/Quit
+            btn_row3 = wx.BoxSizer(wx.HORIZONTAL)
             save_btn = wx.Button(ctrl_panel, label="Save")
             quit_btn = wx.Button(ctrl_panel, label="Quit")
             for b in [save_btn, quit_btn]:
-                btn_row2.Add(b, 0, wx.EXPAND | wx.ALL, 2)
-            ctrl_sizer.Add(btn_row2, 0, wx.EXPAND | wx.ALL, 4)
+                btn_row3.Add(b, 0, wx.EXPAND | wx.ALL, 2)
+            ctrl_sizer.Add(btn_row3, 0, wx.EXPAND | wx.ALL, 4)
 
             add_btn.Bind(wx.EVT_BUTTON, self.add_color)
             edit_btn.Bind(wx.EVT_BUTTON, self.edit_color)
