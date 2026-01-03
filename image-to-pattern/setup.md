@@ -70,3 +70,23 @@ python3.11 -m unittest discover -s image-to-pattern/tests
 - k-means color detection performs poorly on these images (merges bead colors with background); prefer manual masks or histogram/peak-based methods.
 - GUI requires Tk; if unavailable, use the terminal editor and mask generator.
 - Use the Matplotlib cache env vars for quiet, reliable runs.
+
+## Tk/Tkinter setup for GUI
+- The GUI (`color_config_gui.py`) needs a Python build with Tk support. If you see `RuntimeError: Tkinter/TkAgg backend not available`, install Tkinter for your Python:
+  - MacPorts: `sudo port install py311-tkinter` (matching your Python version).
+  - Homebrew Python usually bundles Tk; if not, reinstall `python@3.11` or `python-tk@3.11`.
+- Recreate venv (if used) with the Tk-enabled Python:
+  ```
+  rm -rf .venv
+  python3.11 -m venv .venv
+  source .venv/bin/activate
+  python3.11 -m pip install -r image-to-pattern/requirements.txt
+  ```
+- Verify Tk works:
+  ```
+  python3.11 - <<'PY'
+  import tkinter
+  print("Tk OK:", tkinter.TkVersion)
+  PY
+  ```
+- If Tk isn’t available, use the terminal editor (`color_config_editor.py`) and `color_masks_from_config.py`.
