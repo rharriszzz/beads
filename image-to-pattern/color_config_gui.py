@@ -145,12 +145,30 @@ if wx:
             pan_btn.SetToolTip("Left-drag to pan, scroll to zoom")
             pan_off_btn = wx.Button(panel, label="Pan/Zoom Off")
             reset_btn = wx.Button(panel, label="Reset View")
+            zoom_in_btn = wx.Button(panel, label="Zoom In")
+            zoom_out_btn = wx.Button(panel, label="Zoom Out")
+            pan_l_btn = wx.Button(panel, label="Pan Left")
+            pan_r_btn = wx.Button(panel, label="Pan Right")
+            pan_u_btn = wx.Button(panel, label="Pan Up")
+            pan_d_btn = wx.Button(panel, label="Pan Down")
             tool_row.Add(pan_btn, 0, wx.ALL, 2)
             tool_row.Add(pan_off_btn, 0, wx.ALL, 2)
             tool_row.Add(reset_btn, 0, wx.ALL, 2)
+            tool_row.Add(zoom_in_btn, 0, wx.ALL, 2)
+            tool_row.Add(zoom_out_btn, 0, wx.ALL, 2)
+            tool_row.Add(pan_l_btn, 0, wx.ALL, 2)
+            tool_row.Add(pan_r_btn, 0, wx.ALL, 2)
+            tool_row.Add(pan_u_btn, 0, wx.ALL, 2)
+            tool_row.Add(pan_d_btn, 0, wx.ALL, 2)
             pan_btn.Bind(wx.EVT_BUTTON, lambda evt: self.toggle_nav(True))
             pan_off_btn.Bind(wx.EVT_BUTTON, lambda evt: self.toggle_nav(False))
             reset_btn.Bind(wx.EVT_BUTTON, lambda evt: self.reset_view())
+            zoom_in_btn.Bind(wx.EVT_BUTTON, lambda evt: self.zoom(factor=0.8))
+            zoom_out_btn.Bind(wx.EVT_BUTTON, lambda evt: self.zoom(factor=1.25))
+            pan_l_btn.Bind(wx.EVT_BUTTON, lambda evt: self.pan(dx_frac=-0.1, dy_frac=0))
+            pan_r_btn.Bind(wx.EVT_BUTTON, lambda evt: self.pan(dx_frac=0.1, dy_frac=0))
+            pan_u_btn.Bind(wx.EVT_BUTTON, lambda evt: self.pan(dx_frac=0, dy_frac=-0.1))
+            pan_d_btn.Bind(wx.EVT_BUTTON, lambda evt: self.pan(dx_frac=0, dy_frac=0.1))
             fig_sizer.Add(tool_row, 0, wx.EXPAND)
             fig_sizer.Add(self.canvas, 1, wx.EXPAND)
             sizer.Add(fig_sizer, 1, wx.EXPAND | wx.ALL, 4)
@@ -259,6 +277,36 @@ if wx:
             nav = self.canvas.toolbar
             if nav:
                 nav.home(None)
+
+        def _sync_limits(self, xlim, ylim):
+            for ax in [self.ax_img, self.ax_mask, self.ax_overlay]:
+                ax.set_xlim(xlim)
+                ax.set_ylim(ylim)
+            self.canvas.draw()
+
+        def zoom(self, factor: float):
+            """Zoom relative to current view; factor <1 zooms in, >1 zooms out."""
+            ax = self.ax_img
+            x0, x1 = ax.get_xlim()
+            y0, y1 = ax.get_ylim()
+            cx = 0.5 * (x0 + x1)
+            cy = 0.5 * (y0 + y1)
+            width = (x1 - x0) * factor
+            height = (y1 - y0) * factor
+            new_xlim = (cx - 0.5 * width, cx + 0.5 * width)
+            new_ylim = (cy - 0.5 * height, cy + 0.5 * height)
+            self._sync_limits(new_xlim, new_ylim)
+
+        def pan(self, dx_frac: float, dy_frac: float):
+            """Pan by fraction of current view width/height."""
+            ax = self.ax_img
+            x0, x1 = ax.get_xlim()
+            y0, y1 = ax.get_ylim()
+            dx = (x1 - x0) * dx_frac
+            dy = (y1 - y0) * dy_frac
+            new_xlim = (x0 + dx, x1 + dx)
+            new_ylim = (y0 + dy, y1 + dy)
+            self._sync_limits(new_xlim, new_ylim)
 
         def on_key_press(self, event):
             if event.key == "enter" and self.rect_selector and self.rect_selector.active:
