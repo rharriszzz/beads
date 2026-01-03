@@ -126,6 +126,12 @@ if wx:
             self.bg_checkbox.Bind(wx.EVT_CHECKBOX, self.set_background_flag)
             ctrl_sizer.Add(self.bg_checkbox, 0, wx.ALL, 4)
 
+            self.status = wx.StaticText(ctrl_panel, label="")
+            status_font = self.status.GetFont()
+            status_font.PointSize = max(status_font.PointSize - 2, 8)
+            self.status.SetFont(status_font)
+            ctrl_sizer.Add(self.status, 0, wx.ALL | wx.EXPAND, 4)
+
             sizer.Add(ctrl_panel, 0, wx.EXPAND | wx.ALL, 4)
 
             # Figure
@@ -278,6 +284,9 @@ if wx:
             if nav:
                 nav.home(None)
 
+        def set_status(self, msg: str):
+            self.status.SetLabel(msg)
+
         def _sync_limits(self, xlim, ylim):
             for ax in [self.ax_img, self.ax_mask, self.ax_overlay]:
                 ax.set_xlim(xlim)
@@ -318,7 +327,7 @@ if wx:
                 return
             self.pending_rects = []
             self.rect_selector.set_active(True)
-            self.ax_img.set_title("Drag to add rectangles; press Enter to finish")
+            self.set_status("Drag to add rectangles; press Enter to finish")
             self.canvas.draw()
 
         def finish_rect_mode(self):
@@ -328,7 +337,7 @@ if wx:
             colors[self.current_idx].setdefault("rectangles", []).extend(self.pending_rects)
             self.pending_rects = []
             self.rect_selector.set_active(False)
-            self.ax_img.set_title("Original")
+            self.set_status("")
             self.update_all()
 
         def resolve_overlaps_gui(self):
@@ -374,13 +383,14 @@ if wx:
             wx.MessageBox(f"Config saved to {self.config_path}", "Saved")
 
         def update_all(self):
+            title_kwargs = {"fontsize": 8}
             self.ax_img.clear()
             self.ax_mask.clear()
             self.ax_overlay.clear()
             self.ax_swatches.clear()
 
             self.ax_img.imshow(self.img_rgb)
-            self.ax_img.set_title("Original")
+            self.ax_img.set_title("Original", **title_kwargs)
             mask = None
             hsv_values: List[Tuple[int, int, int]] = []
             if self.current_idx is not None and self.cfg["colors"]:
@@ -389,19 +399,19 @@ if wx:
                 hsv_values = sorted(hsv_set)
                 mask = mask_from_hsv_set(self.img_hsv, hsv_set)
                 self.ax_mask.imshow(mask, cmap="gray")
-                self.ax_mask.set_title(f"Mask: {color_entry.get('name')}")
+                self.ax_mask.set_title(f"Mask: {color_entry.get('name')}", **title_kwargs)
                 overlay = np.full_like(self.img_rgb, 255, dtype=np.uint8)
                 if mask.any():
                     overlay[mask] = self.img_rgb[mask]
                 self.ax_overlay.imshow(overlay)
-                self.ax_overlay.set_title("Overlay")
+                self.ax_overlay.set_title("Overlay", **title_kwargs)
             else:
-                self.ax_mask.set_title("Mask (no color selected)")
-                self.ax_overlay.set_title("Overlay")
+                self.ax_mask.set_title("Mask (no color selected)", **title_kwargs)
+                self.ax_overlay.set_title("Overlay", **title_kwargs)
 
             swatch_img = hsv_swatch_image(hsv_values, max_cells=2000)
             self.ax_swatches.imshow(swatch_img)
-            self.ax_swatches.set_title(f"HSV ({len(hsv_values)} vals, cap 2000)")
+            self.ax_swatches.set_title(f"HSV ({len(hsv_values)} vals, cap 2000)", **title_kwargs)
             self.ax_swatches.axis("off")
 
             for ax in [self.ax_img, self.ax_mask, self.ax_overlay]:
