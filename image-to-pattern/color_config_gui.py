@@ -7,11 +7,9 @@ Features
 - Live displays: original image, current color mask, current color overlay, HSV swatch grid.
 
 Usage (from repo root)
-  XDG_CACHE_HOME=./image-to-pattern/debug-output/mpl-cache \\
-  MPLCONFIGDIR=./image-to-pattern/debug-output/mpl-cache \\
   python3.11 image-to-pattern/color_config_gui.py --image beads-photo-2.jpg [--config beads-photo-2.json]
 
-Direnv convenience: install direnv, add `eval "$(direnv hook zsh)"` to ~/.zshrc, run `direnv allow` in repo to auto-set cache vars.
+Direnv convenience: install direnv, add `eval "$(direnv hook zsh)"` to ~/.zshrc, run `direnv allow` in repo to auto-set cache vars (see .envrc).
 
 Tk/TkAgg is no longer used; this GUI uses wxPython + WXAgg. Ensure wxPython is installed for your Python build.
 """
