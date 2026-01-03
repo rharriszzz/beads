@@ -14,19 +14,16 @@ def load_config(path: Path) -> Dict:
         return json.load(f)
 
 
-def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List) -> set:
-    """Support rectangles as [x_min,x_max,y_min,y_max] or dict with those keys."""
+def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List[Dict[str, int]]) -> set:
+    """Support rectangles as dicts with x_min/x_max/y_min/y_max."""
     h_set = set()
     for rect in rectangles:
-        if isinstance(rect, dict):
-            x_min = rect.get("x_min", 0)
-            x_max = rect.get("x_max", 0)
-            y_min = rect.get("y_min", 0)
-            y_max = rect.get("y_max", 0)
-        elif len(rect) == 4:
-            x_min, x_max, y_min, y_max = rect
-        else:
+        if not isinstance(rect, dict):
             continue
+        x_min = rect.get("x_min", 0)
+        x_max = rect.get("x_max", 0)
+        y_min = rect.get("y_min", 0)
+        y_max = rect.get("y_max", 0)
         x_min = max(0, x_min)
         y_min = max(0, y_min)
         x_max = min(img_hsv.shape[1] - 1, x_max)

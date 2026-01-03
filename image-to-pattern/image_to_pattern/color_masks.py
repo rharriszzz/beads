@@ -15,20 +15,15 @@ def load_color_config(path: Path) -> Dict:
         return json.load(f)
 
 
-def _rect_to_coords(rect) -> Tuple[int, int, int, int]:
-    if isinstance(rect, dict):
-        return int(rect.get("x_min", 0)), int(rect.get("x_max", 0)), int(rect.get("y_min", 0)), int(rect.get("y_max", 0))
-    elif hasattr(rect, "__len__") and len(rect) == 4:
-        return int(rect[0]), int(rect[1]), int(rect[2]), int(rect[3])
-    return 0, -1, 0, -1
-
-
-def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List) -> Set[Tuple[int, int, int]]:
-    """Collect HSV tuples from rectangles (list of lists or dicts)."""
+def rectangles_to_hsv_set(img_hsv: np.ndarray, rectangles: List[Dict[str, int]]) -> Set[Tuple[int, int, int]]:
+    """Collect HSV tuples from rectangles (list of dicts)."""
     h_set: Set[Tuple[int, int, int]] = set()
     hgt, wdt, _ = img_hsv.shape
     for rect in rectangles:
-        x_min, x_max, y_min, y_max = _rect_to_coords(rect)
+        if not isinstance(rect, dict):
+            continue
+        x_min, x_max = int(rect.get("x_min", 0)), int(rect.get("x_max", 0))
+        y_min, y_max = int(rect.get("y_min", 0)), int(rect.get("y_max", 0))
         x_min = max(0, x_min)
         y_min = max(0, y_min)
         x_max = min(wdt - 1, x_max)

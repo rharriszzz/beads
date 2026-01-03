@@ -69,8 +69,8 @@ def delete_color(cfg: Dict, idx: int):
         colors.pop(idx)
 
 
-def collect_rectangles(img_rgb: np.ndarray) -> List[List[int]]:
-    rects: List[List[int]] = []
+def collect_rectangles(img_rgb: np.ndarray) -> List[Dict[str, int]]:
+    rects: List[Dict[str, int]] = []
     fig, ax = plt.subplots()
     ax.imshow(img_rgb)
     ax.set_title("Drag to draw rectangles, press Enter when done")
@@ -80,7 +80,7 @@ def collect_rectangles(img_rgb: np.ndarray) -> List[List[int]]:
         x2, y2 = int(erelease.xdata), int(erelease.ydata)
         x_min, x_max = sorted([x1, x2])
         y_min, y_max = sorted([y1, y2])
-        rects.append([x_min, x_max, y_min, y_max])
+        rects.append({"x_min": x_min, "x_max": x_max, "y_min": y_min, "y_max": y_max})
         ax.add_patch(matplotlib.patches.Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, fill=False, edgecolor="red"))
         fig.canvas.draw()
 

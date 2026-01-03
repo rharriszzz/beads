@@ -33,7 +33,7 @@ Color annotation file format (per image)
   ]
 }
 ```
-- Rectangles may be specified as objects (recommended) or legacy `[x_min, x_max, y_min, y_max]` arrays. Object fields:
+- Rectangles are objects with fields:
   - `x_min`, `x_max`, `y_min`, `y_max`: integers (pixel indices, 0-based inclusive).
   - Optional `h_min`, `h_max`, `s_min`, `s_max`, `v_min`, `v_max`: summary of HSV range for that rect (auto-added by GUI).
 - Semantics: collect all HSV values from each rectangle for a color; any pixel whose HSV matches any of those values is assigned that color. Pixels matching no color are assigned the implicit color `"other"`.

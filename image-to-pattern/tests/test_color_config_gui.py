@@ -21,7 +21,7 @@ class ColorConfigGUITests(unittest.TestCase):
     def test_rectangles_to_hsv_set(self):
         img = np.zeros((4, 4, 3), dtype=np.uint8)
         img[1:3, 1:3, :] = [10, 20, 30]
-        rects = [[1, 2, 1, 2]]
+        rects = [{"x_min": 1, "x_max": 2, "y_min": 1, "y_max": 2}]
         hsv_set = gui.rectangles_to_hsv_set(img, rects)
         self.assertIn((10, 20, 30), hsv_set)
         self.assertEqual(len(hsv_set), 1)
