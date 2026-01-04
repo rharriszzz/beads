@@ -43,6 +43,8 @@ class CenterlineMaskFrame(wx.Frame):
         self.center_y = self.h // 2
         self.current_hsv: Optional[np.ndarray] = None
         self.mask = np.zeros((self.h, self.w), dtype=bool)
+        self.last_range = None
+        self.current_overlay = np.full_like(self.img_rgb, 255, dtype=np.uint8)
 
         panel = wx.Panel(self)
         sizer = wx.BoxSizer(wx.HORIZONTAL)
@@ -82,6 +84,7 @@ class CenterlineMaskFrame(wx.Frame):
 
         # Mouse move handling
         self.cid_motion = self.fig.canvas.mpl_connect("motion_notify_event", self.on_motion)
+        self.cid_click = self.fig.canvas.mpl_connect("button_press_event", self.on_click)
 
     def _make_slider(self, parent, label: str, value: int, minv: int, maxv: int, handler):
         box = wx.BoxSizer(wx.VERTICAL)
@@ -112,6 +115,22 @@ class CenterlineMaskFrame(wx.Frame):
         self.set_status_from_hsv(hsv, x, y)
         self.update_mask()
 
+    def on_click(self, event):
+        if self.current_hsv is None or self.last_range is None:
+            return
+        outdir = Path("image-to-pattern/debug-output")
+        outdir.mkdir(parents=True, exist_ok=True)
+        hmin, hmax, smin, smax, vmin, vmax = self.last_range
+        stem = self.image_path.stem
+        suffix = f"h{hmin}-{hmax}_s{smin}-{smax}_v{vmin}-{vmax}"
+        mask_path = outdir / f"{stem}_mask_{suffix}.png"
+        overlay_path = outdir / f"{stem}_overlay_{suffix}.png"
+        # Save mask (255 for True)
+        mask_img = (self.mask.astype(np.uint8) * 255)
+        Image.fromarray(mask_img, mode="L").save(mask_path)
+        Image.fromarray(self.current_overlay, mode="RGB").save(overlay_path)
+        self.status.SetLabel(f"Saved {mask_path.name} and {overlay_path.name}")
+
     def set_status_from_hsv(self, hsv: np.ndarray, x: int, y: int):
         h, s, v = map(int, hsv)
         msg = f"Pos ({x},{y}) centerline HSV=({h},{s},{v})  tol H={self.h_slider.GetValue()} S={self.s_slider.GetValue()} V={self.v_slider.GetValue()}"
@@ -136,11 +155,12 @@ class CenterlineMaskFrame(wx.Frame):
         s = self.img_hsv[:, :, 1]
         v = self.img_hsv[:, :, 2]
         self.mask = (h >= hmin) & (h <= hmax) & (s >= smin) & (s <= smax) & (v >= vmin) & (v <= vmax)
-        overlay = np.full_like(self.img_rgb, 255, dtype=np.uint8)
+        self.current_overlay = np.full_like(self.img_rgb, 255, dtype=np.uint8)
         if self.mask.any():
-            overlay[self.mask] = self.img_rgb[self.mask]
-        self.overlay_img.set_data(overlay)
+            self.current_overlay[self.mask] = self.img_rgb[self.mask]
+        self.overlay_img.set_data(self.current_overlay)
         self.ax_mask.set_title(f"Mask overlay (range H[{hmin}-{hmax}] S[{smin}-{smax}] V[{vmin}-{vmax}])", fontsize=9)
+        self.last_range = (hmin, hmax, smin, smax, vmin, vmax)
         self.canvas.draw_idle()
 
 
