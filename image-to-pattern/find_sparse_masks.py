@@ -25,7 +25,7 @@ def load_image(path: Path) -> Tuple[np.ndarray, np.ndarray]:
     return img_rgb, img_hsv
 
 
-def build_mask(img_hsv: np.ndarray, x: int, y: int, tol_h: int, tol_s: int, tol_v: int) -> np.ndarray:
+def build_mask(img_hsv: np.ndarray, x: int, y: int, tol_h: int, tol_s: int, tol_v: int) -> Tuple[np.ndarray, Tuple[int, int, int, int, int, int]]:
     h0, s0, v0 = map(int, img_hsv[y, x, :])
     hmin, hmax = max(0, h0 - tol_h), min(255, h0 + tol_h)
     smin, smax = max(0, s0 - tol_s), min(255, s0 + tol_s)
@@ -33,7 +33,16 @@ def build_mask(img_hsv: np.ndarray, x: int, y: int, tol_h: int, tol_s: int, tol_
     h = img_hsv[:, :, 0]
     s = img_hsv[:, :, 1]
     v = img_hsv[:, :, 2]
-    return (h >= hmin) & (h <= hmax) & (s >= smin) & (s <= smax) & (v >= vmin) & (v <= vmax)
+    mask = (h >= hmin) & (h <= hmax) & (s >= smin) & (s <= smax) & (v >= vmin) & (v <= vmax)
+    return mask, (hmin, hmax, smin, smax, vmin, vmax)
+
+
+def hsv_in_ranges(hsv: Tuple[int, int, int], ranges: list[Tuple[int, int, int, int, int, int]]) -> bool:
+    h, s, v = hsv
+    for (hmin, hmax, smin, smax, vmin, vmax) in ranges:
+        if hmin <= h <= hmax and smin <= s <= smax and vmin <= v <= vmax:
+            return True
+    return False
 
 
 def downsample(mask: np.ndarray, step: int = 4) -> np.ndarray:
@@ -123,11 +132,16 @@ def main():
 
     kept = 0
     attempts = 0
+    excluded_ranges: list[Tuple[int, int, int, int, int, int]] = []
     while kept < args.count:
         attempts += 1
         x = random.randint(0, w - 1)
         y = random.randint(0, h - 1)
-        mask = build_mask(img_hsv, x, y, args.tol_h, args.tol_s, args.tol_v)
+        base_hsv = tuple(map(int, img_hsv[y, x, :]))
+        if hsv_in_ranges(base_hsv, excluded_ranges):
+            print(f"[attempt {attempts}] skip x={x} y={y} base_hsv={base_hsv} (in excluded ranges)")
+            continue
+        mask, rng = build_mask(img_hsv, x, y, args.tol_h, args.tol_s, args.tol_v)
         is_sparse = classify_sparse(mask)
         stem = f"{Path(args.image).stem}_x{x}_y{y}_h{args.tol_h}_s{args.tol_s}_v{args.tol_v}"
         if is_sparse:
@@ -135,8 +149,9 @@ def main():
             kept += 1
             print(f"[{kept}/{args.count}] kept {stem}")
         else:
-            # discard; nothing saved
-            print(f"[attempt {attempts}] discard {stem}")
+            if not hsv_in_ranges(base_hsv, excluded_ranges):
+                excluded_ranges.append(rng)
+            print(f"[attempt {attempts}] discard {stem}; added range {rng}")
 
     print(f"Done. Attempts: {attempts}, kept: {kept}")
 
