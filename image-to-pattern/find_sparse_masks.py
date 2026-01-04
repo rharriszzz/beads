@@ -132,16 +132,36 @@ def classify_sparse(mask: np.ndarray) -> bool:
     largest_frac = largest_component_fraction(m)
     edge_ratio, thickness_est = edge_ratio_and_thickness(m)
     speckle_ratio = speckle(m)
-    # Heuristics tuned to separate sparse dots from outlines/bands.
-    # Reference sparse mask: area~0.006, lcf~0.00013, thickness~1.0, edge~0.006, speckle~0.98.
-    # Tightened to reject chunky/outline masks that were slipping through.
+    return _sparse_pass(area_ratio, largest_frac, thickness_est, edge_ratio, speckle_ratio)
+
+
+# Thresholds for the tightened sparse heuristic
+AREA_MAX = 0.01
+LCF_MAX = 0.001
+THICK_MAX = 2.0
+EDGE_MAX = 0.008
+SPECKLE_MIN = 0.9
+
+
+def _sparse_pass(area_ratio: float, largest_frac: float, thickness_est: float, edge_ratio: float, speckle_ratio: float) -> bool:
+    """Apply tightened sparse thresholds."""
     return (
-        (area_ratio < 0.01)
-        and (largest_frac < 0.001)
-        and (thickness_est < 2.0)
-        and (edge_ratio < 0.008)
-        and (speckle_ratio > 0.9)
+        (area_ratio < AREA_MAX)
+        and (largest_frac < LCF_MAX)
+        and (thickness_est < THICK_MAX)
+        and (edge_ratio < EDGE_MAX)
+        and (speckle_ratio > SPECKLE_MIN)
     )
+
+
+def sparse_metrics(mask: np.ndarray):
+    """Compute metrics used for sparse classification."""
+    m = downsample(mask, step=4)
+    area_ratio = m.mean()
+    largest_frac = largest_component_fraction(m)
+    edge_ratio, thickness_est = edge_ratio_and_thickness(m)
+    speckle_ratio = speckle(m)
+    return area_ratio, largest_frac, thickness_est, edge_ratio, speckle_ratio
 
 
 def classify_sparse_old(mask: np.ndarray) -> bool:
@@ -195,7 +215,8 @@ def main():
             if not hsv_in_ranges(base_hsv, excluded_ranges):
                 excluded_ranges.append(rng)
             continue
-        is_sparse_new = classify_sparse(mask)
+        area_ratio, largest_frac, thickness_est, edge_ratio, speckle_ratio = sparse_metrics(mask)
+        is_sparse_new = _sparse_pass(area_ratio, largest_frac, thickness_est, edge_ratio, speckle_ratio)
         is_sparse_old = classify_sparse_old(mask)
         stem = f"{Path(args.image).stem}_x{x}_y{center_y}_h{args.tol_h}_s{args.tol_s}_v{args.tol_v}"
         if is_sparse_new:
@@ -203,8 +224,15 @@ def main():
             kept += 1
             print(f"[{kept}/{args.count}] kept {stem}")
         else:
-            # Only avoid future samples if the old heuristic also rejects.
-            if (not is_sparse_old) and (not hsv_in_ranges(base_hsv, excluded_ranges)):
+            only_lcf_fail = (
+                (area_ratio < AREA_MAX)
+                and (thickness_est < THICK_MAX)
+                and (edge_ratio < EDGE_MAX)
+                and (speckle_ratio > SPECKLE_MIN)
+                and (largest_frac >= LCF_MAX)
+            )
+            # Only avoid future samples if the old heuristic also rejects AND this isn't just a largest-component failure.
+            if (not is_sparse_old) and (not only_lcf_fail) and (not hsv_in_ranges(base_hsv, excluded_ranges)):
                 excluded_ranges.append(rng)
 
     print(f"Done. Evaluated positions: {evaluated}, kept: {kept}")
