@@ -125,6 +125,8 @@ def main():
     parser.add_argument("--tol_s", type=int, default=24)
     parser.add_argument("--tol_v", type=int, default=24)
     parser.add_argument("--outdir", type=Path, default=Path("image-to-pattern/debug-output"))
+    parser.add_argument("--min_ratio", type=float, default=0.001, help="Minimum allowed mask true-pixel ratio")
+    parser.add_argument("--max_ratio", type=float, default=0.2, help="Maximum allowed mask true-pixel ratio")
     args = parser.parse_args()
 
     img_rgb, img_hsv = load_image(Path(args.image))
@@ -141,6 +143,11 @@ def main():
         if hsv_in_ranges(base_hsv, excluded_ranges):
             continue
         mask, rng = build_mask(img_hsv, x, y, args.tol_h, args.tol_s, args.tol_v)
+        ratio = mask.mean()
+        if ratio < args.min_ratio or ratio > args.max_ratio:
+            if not hsv_in_ranges(base_hsv, excluded_ranges):
+                excluded_ranges.append(rng)
+            continue
         is_sparse = classify_sparse(mask)
         stem = f"{Path(args.image).stem}_x{x}_y{y}_h{args.tol_h}_s{args.tol_s}_v{args.tol_v}"
         if is_sparse:
