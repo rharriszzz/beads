@@ -139,7 +139,6 @@ def main():
         y = random.randint(0, h - 1)
         base_hsv = tuple(map(int, img_hsv[y, x, :]))
         if hsv_in_ranges(base_hsv, excluded_ranges):
-            print(f"[attempt {attempts}] skip x={x} y={y} base_hsv={base_hsv} (in excluded ranges)")
             continue
         mask, rng = build_mask(img_hsv, x, y, args.tol_h, args.tol_s, args.tol_v)
         is_sparse = classify_sparse(mask)
