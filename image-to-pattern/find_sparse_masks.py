@@ -134,12 +134,13 @@ def classify_sparse(mask: np.ndarray) -> bool:
     speckle_ratio = speckle(m)
     # Heuristics tuned to separate sparse dots from outlines/bands.
     # Reference sparse mask: area~0.006, lcf~0.00013, thickness~1.0, edge~0.006, speckle~0.98.
+    # Tightened to reject chunky/outline masks that were slipping through.
     return (
-        (area_ratio < 0.02)
-        and (largest_frac < 0.01)
-        and (thickness_est < 5.0)
-        and (edge_ratio < 0.02)
-        and (speckle_ratio > 0.6)
+        (area_ratio < 0.01)
+        and (largest_frac < 0.001)
+        and (thickness_est < 2.0)
+        and (edge_ratio < 0.008)
+        and (speckle_ratio > 0.9)
     )
 
 
