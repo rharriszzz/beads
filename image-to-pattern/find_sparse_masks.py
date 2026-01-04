@@ -143,6 +143,15 @@ def classify_sparse(mask: np.ndarray) -> bool:
     )
 
 
+def classify_sparse_old(mask: np.ndarray) -> bool:
+    """Prior heuristic (before speckle) kept for comparison to gate exclusions."""
+    m = downsample(mask, step=4)
+    area_ratio = m.mean()
+    largest_frac = largest_component_fraction(m)
+    edge_ratio, thickness_est = edge_ratio_and_thickness(m)
+    return (area_ratio < 0.02) and (largest_frac < 0.01) and (thickness_est < 5.0) and (edge_ratio < 0.02)
+
+
 def save_mask_and_overlay(img_rgb: np.ndarray, mask: np.ndarray, outdir: Path, stem: str):
     outdir.mkdir(parents=True, exist_ok=True)
     mask_img = (mask.astype(np.uint8) * 255)
@@ -185,14 +194,16 @@ def main():
             if not hsv_in_ranges(base_hsv, excluded_ranges):
                 excluded_ranges.append(rng)
             continue
-        is_sparse = classify_sparse(mask)
+        is_sparse_new = classify_sparse(mask)
+        is_sparse_old = classify_sparse_old(mask)
         stem = f"{Path(args.image).stem}_x{x}_y{center_y}_h{args.tol_h}_s{args.tol_s}_v{args.tol_v}"
-        if is_sparse:
+        if is_sparse_new:
             save_mask_and_overlay(img_rgb, mask, args.outdir, stem)
             kept += 1
             print(f"[{kept}/{args.count}] kept {stem}")
         else:
-            if not hsv_in_ranges(base_hsv, excluded_ranges):
+            # Only avoid future samples if the old heuristic also rejects.
+            if (not is_sparse_old) and (not hsv_in_ranges(base_hsv, excluded_ranges)):
                 excluded_ranges.append(rng)
 
     print(f"Done. Evaluated positions: {evaluated}, kept: {kept}")
