@@ -11,7 +11,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import random
 from pathlib import Path
 from typing import Optional, Tuple
 
@@ -131,25 +130,26 @@ def main():
 
     img_rgb, img_hsv = load_image(Path(args.image))
     h, w, _ = img_rgb.shape
+    center_y = h // 2
 
     kept = 0
-    attempts = 0
+    evaluated = 0
     excluded_ranges: list[Tuple[int, int, int, int, int, int]] = []
-    while kept < args.count:
-        attempts += 1
-        x = random.randint(0, w - 1)
-        y = random.randint(0, h - 1)
-        base_hsv = tuple(map(int, img_hsv[y, x, :]))
+    for x in range(w):
+        if kept >= args.count:
+            break
+        evaluated += 1
+        base_hsv = tuple(map(int, img_hsv[center_y, x, :]))
         if hsv_in_ranges(base_hsv, excluded_ranges):
             continue
-        mask, rng = build_mask(img_hsv, x, y, args.tol_h, args.tol_s, args.tol_v)
+        mask, rng = build_mask(img_hsv, x, center_y, args.tol_h, args.tol_s, args.tol_v)
         ratio = mask.mean()
         if ratio < args.min_ratio or ratio > args.max_ratio:
             if not hsv_in_ranges(base_hsv, excluded_ranges):
                 excluded_ranges.append(rng)
             continue
         is_sparse = classify_sparse(mask)
-        stem = f"{Path(args.image).stem}_x{x}_y{y}_h{args.tol_h}_s{args.tol_s}_v{args.tol_v}"
+        stem = f"{Path(args.image).stem}_x{x}_y{center_y}_h{args.tol_h}_s{args.tol_s}_v{args.tol_v}"
         if is_sparse:
             save_mask_and_overlay(img_rgb, mask, args.outdir, stem)
             kept += 1
@@ -158,7 +158,7 @@ def main():
             if not hsv_in_ranges(base_hsv, excluded_ranges):
                 excluded_ranges.append(rng)
 
-    print(f"Done. Attempts: {attempts}, kept: {kept}")
+    print(f"Done. Evaluated positions: {evaluated}, kept: {kept}")
 
 
 if __name__ == "__main__":
