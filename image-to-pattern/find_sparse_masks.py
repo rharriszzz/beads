@@ -96,15 +96,51 @@ def edge_ratio_and_thickness(mask: np.ndarray) -> Tuple[float, float]:
     return edge_ratio, thickness
 
 
+def speckle(mask: np.ndarray) -> float:
+    """Fraction of pixels not in the largest connected component."""
+    total_true = mask.sum()
+    if total_true == 0:
+        return 0.0
+    visited = np.zeros_like(mask, dtype=bool)
+    coords = np.argwhere(mask)
+    sizes = []
+    for y, x in coords:
+        if visited[y, x]:
+            continue
+        stack = [(y, x)]
+        visited[y, x] = True
+        sz = 0
+        while stack:
+            cy, cx = stack.pop()
+            sz += 1
+            for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                ny, nx = cy + dy, cx + dx
+                if 0 <= ny < mask.shape[0] and 0 <= nx < mask.shape[1]:
+                    if mask[ny, nx] and not visited[ny, nx]:
+                        visited[ny, nx] = True
+                        stack.append((ny, nx))
+        sizes.append(sz)
+    sizes.sort(reverse=True)
+    largest = sizes[0] if sizes else 0
+    return (sum(sizes) - largest) / float(total_true)
+
+
 def classify_sparse(mask: np.ndarray) -> bool:
     """Return True if mask resembles the sparse first-pair look."""
     m = downsample(mask, step=4)
     area_ratio = m.mean()
     largest_frac = largest_component_fraction(m)
     edge_ratio, thickness_est = edge_ratio_and_thickness(m)
+    speckle_ratio = speckle(m)
     # Heuristics tuned to separate sparse dots from outlines/bands.
-    # Loosened to admit the reference sparse mask (area~0.006, lcf~0.00013, thickness~1.0, edge~0.006).
-    return (area_ratio < 0.02) and (largest_frac < 0.01) and (thickness_est < 5.0) and (edge_ratio < 0.02)
+    # Reference sparse mask: area~0.006, lcf~0.00013, thickness~1.0, edge~0.006, speckle~0.98.
+    return (
+        (area_ratio < 0.02)
+        and (largest_frac < 0.01)
+        and (thickness_est < 5.0)
+        and (edge_ratio < 0.02)
+        and (speckle_ratio > 0.6)
+    )
 
 
 def save_mask_and_overlay(img_rgb: np.ndarray, mask: np.ndarray, outdir: Path, stem: str):
