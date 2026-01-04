@@ -150,7 +150,6 @@ def main():
         else:
             if not hsv_in_ranges(base_hsv, excluded_ranges):
                 excluded_ranges.append(rng)
-            print(f"[attempt {attempts}] discard {stem}; added range {rng}")
 
     print(f"Done. Attempts: {attempts}, kept: {kept}")
 
