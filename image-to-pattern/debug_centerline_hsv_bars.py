@@ -63,6 +63,44 @@ def plot_bars(
     print(f"Saved {out_path}")
 
 
+def plot_centerline_metric(img_hsv: np.ndarray, img_rgb: np.ndarray, metric: str, out_path: Path):
+    """Plot centerline bars colored by HSV with height from a chosen metric (gray/h/s/v)."""
+    h, w, _ = img_hsv.shape
+    y = h // 2
+    hsv_row = img_hsv[y, :, :]  # uint8
+    rgb_row = img_rgb[y, :, :].astype(float)
+    if metric == "gray":
+        # luminance approximation from RGB
+        heights = (0.299 * rgb_row[:, 0] + 0.587 * rgb_row[:, 1] + 0.114 * rgb_row[:, 2])
+        label = "Grayscale (0-255)"
+    elif metric == "h":
+        heights = hsv_row[:, 0].astype(float)
+        label = "Hue channel (0-255)"
+    elif metric == "s":
+        heights = hsv_row[:, 1].astype(float)
+        label = "Saturation channel (0-255)"
+    elif metric == "v":
+        heights = hsv_row[:, 2].astype(float)
+        label = "Value channel (0-255)"
+    else:
+        raise ValueError(f"Unknown metric {metric}")
+    colors = []
+    for pix in hsv_row:
+        hsv_norm = np.array([pix[0] / 255.0, pix[1] / 255.0, pix[2] / 255.0])
+        colors.append(mcolors.hsv_to_rgb(hsv_norm))
+    x = np.arange(w)
+    plt.figure(figsize=(12, 3))
+    plt.bar(x, heights, color=colors, width=1.0, edgecolor=None)
+    plt.ylim(0, 255)
+    plt.xlabel("Pixel index (x)")
+    plt.ylabel(label)
+    plt.title(f"Centerline bars colored by HSV, height = {label}")
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=200)
+    plt.close()
+    print(f"Saved {out_path}")
+
+
 def save_centerline_overlay(img_rgb: np.ndarray, out_path: Path):
     """Save the original image with the sampled centerline overlaid in black."""
     import matplotlib.pyplot as plt
@@ -109,6 +147,12 @@ def main():
         out_path=args.outdir / f"{args.image.stem}-centerline-bars-raw.png",
     )
     save_centerline_overlay(img_rgb, args.outdir / f"{args.image.stem}-centerline-overlay.png")
+
+    # Metric-based centerline plots
+    plot_centerline_metric(img_arr, img_rgb, "gray", args.outdir / f"{args.image.stem}-centerline-bars-gray.png")
+    plot_centerline_metric(img_arr, img_rgb, "h", args.outdir / f"{args.image.stem}-centerline-bars-hue.png")
+    plot_centerline_metric(img_arr, img_rgb, "s", args.outdir / f"{args.image.stem}-centerline-bars-sat.png")
+    plot_centerline_metric(img_arr, img_rgb, "v", args.outdir / f"{args.image.stem}-centerline-bars-val.png")
 
     if args.neighbors and args.neighbors.exists():
         neigh_map = load_neighbor_counts(args.neighbors)
