@@ -5,13 +5,13 @@ from collections import Counter
 from pathlib import Path
 from typing import Dict, Tuple
 
-import matplotlib
-
-matplotlib.use("Agg")  # headless backend
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib
 from matplotlib import colors as mcolors
 from PIL import Image
+
+# plt is imported after backend selection in main()
+plt = None  # type: ignore
 
 
 def load_counts(img: np.ndarray) -> Dict[Tuple[int, int, int], int]:
@@ -99,6 +99,7 @@ def plot_centerline_metric(img_hsv: np.ndarray, img_rgb: np.ndarray, metric: str
     plt.savefig(out_path, dpi=200)
     plt.close()
     print(f"Saved {out_path}")
+    return x, heights, colors, label
 
 
 def save_centerline_overlay(img_rgb: np.ndarray, out_path: Path):
@@ -124,6 +125,7 @@ def fmt_tol(tol: int) -> str:
 
 
 def main():
+    global plt
     parser = argparse.ArgumentParser(description="Centerline HSV bar chart with log-scaled counts.")
     parser.add_argument("image", type=Path, help="Input image")
     parser.add_argument("--neighbors", type=Path, help="NPZ with neighbor_counts to use instead of raw counts")
@@ -131,12 +133,50 @@ def main():
     parser.add_argument("--h-tol", type=int, default=0, help="Hue tolerance to report in titles")
     parser.add_argument("--s-tol", type=int, default=0, help="Saturation tolerance to report in titles")
     parser.add_argument("--v-tol", type=int, default=0, help="Value tolerance to report in titles")
+    parser.add_argument("--show-only", action="store_true", help="Show four stacked plots instead of saving outputs")
     args = parser.parse_args()
 
-    args.outdir.mkdir(parents=True, exist_ok=True)
+    if args.show_only:
+        # use default interactive backend
+        import matplotlib.pyplot as plt  # type: ignore
+    else:
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt  # type: ignore
+    globals()["plt"] = plt
+
     img = Image.open(args.image).convert("HSV")
     img_arr = np.array(img, dtype=np.uint8)
     img_rgb = np.array(img.convert("RGB"))
+
+    if args.show_only:
+        # Build four stacked plots in one window, no files written.
+        h, w, _ = img_arr.shape
+        y = h // 2
+        hsv_row = img_arr[y, :, :]
+        rgb_row = img_rgb[y, :, :].astype(float)
+        metrics = [
+            ("gray", "Grayscale (0-255)", 0.299 * rgb_row[:, 0] + 0.587 * rgb_row[:, 1] + 0.114 * rgb_row[:, 2]),
+            ("h", "Hue channel (0-255)", hsv_row[:, 0].astype(float)),
+            ("s", "Saturation channel (0-255)", hsv_row[:, 1].astype(float)),
+            ("v", "Value channel (0-255)", hsv_row[:, 2].astype(float)),
+        ]
+        colors = []
+        for pix in hsv_row:
+            hsv_norm = np.array([pix[0] / 255.0, pix[1] / 255.0, pix[2] / 255.0])
+            colors.append(mcolors.hsv_to_rgb(hsv_norm))
+        x = np.arange(w)
+        fig, axes = plt.subplots(4, 1, figsize=(12, 12), sharex=True)
+        for ax, (name, label, heights) in zip(axes, metrics):
+            ax.bar(x, heights, color=colors, width=1.0, edgecolor=None)
+            ax.set_ylim(0, 255)
+            ax.set_ylabel(label)
+            ax.set_title(f"Centerline bars colored by HSV, height = {label}")
+        axes[-1].set_xlabel("Pixel index (x)")
+        plt.tight_layout()
+        plt.show()
+        return
+
+    args.outdir.mkdir(parents=True, exist_ok=True)
 
     # Raw counts map
     counts_map = load_counts(img_arr)
