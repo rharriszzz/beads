@@ -1,75 +1,156 @@
-Project goal: Build a Python tool that takes an input image and produces a `bead_pattern` payload compatible with the `beads.pov` case statement (essentially reversing the beads.pov rendering path). Use `beads1.jpg`-`beads7.jpg` as round-trip fixtures and `beads-photo-1.jpg`-`beads-photo-11.jpg` as the target photos.
+# Photo → Bead Pattern: Plan v2
 
-High-level plan
-- Understand target format: read `beads.pov` to document the bead grid dimensions, coordinate ordering, palette, and the exact `bead_pattern` representation expected in the case statement.
-- Establish palette and sizing: infer bead size/layout from `beads1.jpg`-`beads7.jpg` (and any constants in `beads.pov`) to know how to rescale/crop/quantize incoming images onto the bead grid.
-- Build conversion pipeline: Python script that loads an image, normalizes orientation/cropping, resizes to the bead grid, quantizes to the bead palette, and emits a structured `bead_pattern` (plus a ready-to-paste case clause).
-- Validate against fixtures: run the pipeline on `beads1.jpg`-`beads7.jpg` and compare against the known patterns from `beads.pov` to verify correctness of ordering and palette mapping.
-- Apply to target photos: process `beads-photo-1.jpg`-`beads-photo-11.jpg`, review outputs visually/numerically, and iterate on heuristics (palette thresholds, alignment) as needed.
-- Document usage: add a README/usage section in this folder explaining CLI options, dependencies (e.g., Pillow), and how to drop generated patterns into `beads.pov`.
+Goal: given a photograph of a crocheted bead-rope bracelet lying loosely on a table,
+recover the linear repeating `color_pattern` (and `ngroups`, palette) in the format
+consumed by the `#case` blocks of `beads.pov` in the `beads` repo.
 
-Notes from `beads.pov`
-- There are 8 `bead_pattern` cases; each defines `color_pattern` (ints), `pattern_rows_per_group` (all but case 3), `beads_per_row` (always 6.5), and `ngroups`. Derived values: `pattern_length = len(color_pattern)`, `nbeads = ngroups * pattern_length`, `nrows = floor(0.5 + nbeads / beads_per_row)`, `exact_beads_per_row = nbeads / nrows`.
-- Palette per case is defined in a second `#switch`; `color_pattern` indexes into the case-local `beads` array. Case summaries: 1 (3 colors, 4x6 pattern, 28 groups), 2 (4 colors, 5x7 pattern, 20 groups), 3 (3 colors, auto-built 372 length = (50+12)*3*2, 2 groups), 4 (5 colors, 6x7 pattern, 18 groups), 5 (6 colors, 6x7 pattern with trailing 7th row fragment, 18 groups), 6 (4 colors, 6x14 pattern, 9 groups), 7 (3 colors, 4x6 pattern, 28 groups), 8 (5 colors, 5x6 pattern, 24 groups). Need to decode how the 6.5 beads/row translates to alternating 6/7 rows when unwrapping.
-- `bead_index` increments linearly; rendered position uses `chain_angle` (bead_index / nbeads) and `row_angle` (bead_index / exact_beads_per_row), implying a helical ordering. Reverse mapping likely requires simulating bead_index → (row, col) to align image pixels to the 1D `color_pattern` order.
+This is the second major attempt. The first lives on the `image-to-pattern` branch of
+the `beads` repo (`image-to-pattern/plan.md` and the `image_to_pattern/` package).
+Read its progress notes before writing code: they are an honest record of what was
+tried and how it failed. Treat that history as evidence, not as instructions.
 
-Observations from fixtures
-- `beads1.jpg`: 800x600; dominant colors are white with strong red/green/blue accents (matches case 1 palette), so it is a good alignment/palette sanity check.
-- `beads-photo-2.jpg`: 2540x3182 (portrait); dominant purples/pinks with some darker reds, so expect quantization toward a purple/skin-tone palette and need to crop/resize before mapping to the bead grid.
+## Context and assets
 
-Ordered processing steps (covers the requested tasks)
-- Separate bracelet vs background: build a mask (color thresholding + morphology) to keep only bracelet pixels.
-- Trace bracelet centerline: extract the bracelet band from the mask and fit a spline through its medial axis.
-- Estimate bead spacing and radius: measure band width along the spline to set bead diameter and sampling interval.
-- Establish bracelet coordinates: define an arc-length parameter along the spline and a radial offset axis; decide origin and axis orientation to express bead centers.
-- Determine helicity: analyze how rows wrap around the spline (clockwise/counterclockwise) using shading cues or cross-section ordering to match `bead_index` winding.
-- Sample visible bead centers: march along arc length at bead spacing and place bead centers on the band using the helicity/radial offset; this yields bead positions in the image frame.
-- Identify bead colors: for each sampled bead region, extract dominant color (clustering or median) to classify into palette candidates; note uncertain/occluded beads.
-- Map to `bead_index`: unwrap sampled beads into 1D order that matches the POV helical ordering (simulate chain_angle/row_angle to choose row/column ordering and alternating 6/7 rows).
-- Infer invisible beads: fill missing beads along the chain by interpolating along the arc-length grid.
-- Autocorrelate along `bead_index`: run autocorrelation on the color index sequence to infer pattern length and then the repeating `color_pattern`.
-- Emit POV-ready output: format `color_pattern`, derived `pattern_rows_per_group`, `ngroups`, and palette mapping into a ready-to-paste `#case` block.
+- Forward model: `beads.pov` (beads repo). Key math: `beads_per_row = 6.5`;
+  `nbeads = ngroups * pattern_length`; `nrows = floor(0.5 + nbeads/6.5)`; bead placed
+  by `chain_angle = 360*(bead_index/nbeads + ...)` and
+  `row_angle = 360*(bead_index/exact_beads_per_row + ...)`.
+  The rope is a helix: consecutive beads advance ~1/6.5 of a turn; rows alternate 6/7.
+- Rendered fixtures: `beads1.jpg`–`beads8.jpg` (beads repo) are POV-Ray renders of
+  the 8 `#case` patterns. Known ground truth, but synthetic lighting/background.
+- Real photos: `beads-photo-1.jpg`–`beads-photo-11.jpg` (beads repo) are photographs
+  of physical bracelets on magenta paper.
+- **Known correspondence:** `beads-photo-4.jpg` is a photo of a bracelet made with
+  the same pattern as `beads.pov` case 4 (rendered in `beads4.jpg`). It is the one
+  real photo with a known answer — the most valuable single image in the project.
+  Other render↔photo pattern matches (with n ≠ m) may exist but are unconfirmed;
+  identifying any would expand the ground-truth set cheaply.
+- Synthetic data on demand: POV-Ray can render any pattern, and a fast pure-Python
+  "flat render" of the visible lattice can be built from the layout math.
+- Prior code worth examining: `image_to_pattern/layout.py` + its tests in
+  `beads:image-to-pattern` (bead_index → (row,col), 6/7 alternation, all 8 canonical
+  POV patterns encoded for testing). The tests pass, but do not assume the math is
+  correct — verify it against `beads.pov` independently, and feel free to rewrite it.
+- Human-in-the-loop color tools that already exist: `hsv_tools` repo
+  (`hsv_picker.py`, `hsv_counts.py`) and the JSON color-config format documented in
+  `beads:image-to-pattern/image-to-pattern/color_config.md`.
+- Centerline work that exists in the `bead_map` repo (`bead_map.py`,
+  `bracelet-pattern-extractor.py`): known to have serious bugs — it finds the
+  bracelet edges badly because it is confused by the bracelet's shadows on the
+  paper. Useful as a reference for the approach, not as working code.
 
-Testing plan and checkpoints
-- Geometry/mapping unit tests: given known `color_pattern`/palette from `beads.pov`, simulate forward render ordering and ensure the reverse mapping reproduces bead_index sequences and alternating 6/7 row layout.
-- Fixture round-trips: run the pipeline on `beads1.jpg`-`beads7.jpg` and assert recovered `color_pattern` matches the source case (tolerating color classification noise thresholds).
-- Segmentation sanity: verify bracelet masks cover expected area (e.g., mask area within [x%, y%] of bounding box) and centerline continuity.
-- Color quantization tests: feed synthetic bead crops of each palette color and ensure classifier labels them correctly; add a confusion matrix check against fixture crops.
-- Autocorrelation robustness: test periodicity detection on synthetic sequences with noise/occlusion to ensure the detected pattern length remains stable.
+## Lessons from v1 (history, not law)
 
-Progress notes
-- Added layout helper that mirrors POV math (`beads_per_row=6.5`, `nrows=floor(0.5 + nbeads/6.5)`) and evenly alternates 6/7-bead rows to sum to `nbeads` (Bresenham-style distribution).
-- Unit tests cover row counts and bead_index→(row,col) mapping for POV cases 1, 2, and 7; these pass and confirm the 6/7 alternation. Use this mapping when unwrapping bead sequences from images.
-- Captured the canonical `beads.pov` patterns in code (all 8 cases) so tests can validate lengths, bead counts, and row distributions programmatically. Case 3 is regenerated from the POV loops to reach length 372.
-- Added minimal segmentation primitives: `mask_bracelet` (brightness thresholding) and `centerline_from_mask` (mean y per column), with tests on synthetic band images. This is the first image-side checkpoint; real photos will need improved color/morphology, but the test harness is in place.
-- Added sampling helpers to place bead centers along a centerline (arc-length interpolation) and sample mean colors in circular regions; tests use synthetic bead images to validate spacing/offset behavior and color reads.
-- Added palette utilities to map sampled colors to nearest palette entries and compute mean colors; tests cover nearest-neighbor classification and error handling. Ready to plug sampled bead colors into pattern inference.
-- Added an end-to-end pipeline wiring segmentation → centerline → sampling → palette mapping, with a synthetic integration test that recovers the expected palette index sequence for a generated bracelet image. This sets the stage for running on real photos and adding periodicity detection.
-- Added periodicity utilities (normalized autocorrelation, period estimation, pattern extraction) with tests including noisy sequences, prepping for pattern-length inference on sampled bead indices.
-- Extended the pipeline with a pattern-detection helper that returns period and extracted pattern from sampled palette indices; synthetic integration test validates recovery of a 3-bead repeating pattern.
-- Added pattern matching helpers to compare sampled indices against the canonical POV patterns (offset search, best-match selection) with unit tests for shifts and empty input. This will help choose the best case/palette when decoding real photos.
-- Improved segmentation robustness with optional component filtering and morphology; added band width estimator for spacing/radius heuristics. CLI added for running the pipeline on images with tunable parameters. Next: tune params on real photos and integrate band width–driven spacing/radius defaults.
-- Added geometry estimation from mask thickness (median band width) to auto-select spacing/radius; CLI now supports auto geometry when spacing/radius are omitted. Tests cover geometry estimation.
-- Adjusted type hints for Python 3.9 compatibility and smoke-tested the CLI on `beads1.jpg`; auto geometry overestimates thickness due to multiple bracelet passes per column (only 3 samples found). Next: refine geometry estimation (e.g., per-column run-length median instead of min/max span) and tune thresholds on real photos.
-- Reduced magic constants: `mask_bracelet` now defaults to Otsu-derived threshold when none provided, keeping thresholds data-driven; CLI/pipeline accept `brightness_threshold=None` to auto-tune. Tests updated accordingly.
-- Refined band width measurement to use longest run per column (instead of max span), so multiple passes of the bracelet in one column do not blow up thickness/spacing. Tests include dual-band synthetic image to confirm the width stays at single-band height.
-- CLI smoke tests (auto-threshold/geometry): `beads1.jpg` now yields thickness ~77px, 20 samples, pattern `[1]` with case 1 match; `beads-photo-2.jpg` yields thickness ~165px, 159 samples, pattern `[0]` with case 1 match. Period detection still returns 1; need better color palette selection and segmentation tuning for real photos to extract a longer repeating pattern.
-- Added centerline arc-length helper and CLI option `--expected-beads` to derive spacing from centerline length / expected_beads (reducing manual spacing). This keeps spacing data-driven when we know the bead count (e.g., 672 for case 1). Period detection still flat on real photos—next fix is palette/segmentation tuning so indices aren’t collapsed.
-- Added k-means palette inference utilities (auto-derives palette from sampled bead colors) with tests; used to reduce reliance on hardcoded palettes.
-- Evaluation on `beads1.jpg`-`beads7.jpg` using auto-threshold, expected bead counts, k-means palette, and case-aligned pattern matching shows low match rates (0.14–0.45) and incorrect patterns—colors are still misclassified/aliased. K-means also tended to merge bead colors with the magenta background on photos, and split dominant hues; recommendation: avoid k-means for color detection and use manual masks or histogram/peak-based methods instead. Next: improve color normalization/quantization (e.g., background masking robustness, illumination normalization, larger sample radius/anti-aliasing) and possibly sample in HSV with per-channel scaling; also consider using the known POV palettes directly by sampling color swatches from the rendered beads.
-- Removed reliance on POV palette information in the CLI (case flag now ignored); palette inference is purely user-provided or data-driven (k-means). Keep POV patterns/colors only for testing and validation, not for runtime inference on unknown bracelets.
-- Added mask-aware sampling coverage; samples now carry a coverage fraction and the pipeline/CLI can drop low-coverage beads (near edges). This reduces edge noise. However, re-running on `beads1.jpg`-`beads7.jpg` with coverage filtering and k-means + label permutation still yields poor best-case match rates (≈0.33–0.75, often with very few retained samples). The limiting factors are color separation/quantization and robust segmentation; next work: normalize colors (e.g., LAB/HSV clustering), enlarge sampling radius with anti-aliasing, and improve masking to keep full beads while rejecting background glints.
-- Added LAB-based color clustering (histogram-driven) and separability helpers: sample masked pixels, cluster in LAB (k-means with restarts), pick most separated clusters, and label images by palette. Added geometry helpers to project bead centers onto the centerline and measure neighbor angles. Sampling now supports median color and mask coverage. Tests cover the new utilities. These set up data-driven color extraction and geometric angle measurement for photos like `beads-photo-2.jpg` without hardcoded palette clues.
-- Added bead detection via distance-transform peaks on the mask to locate individual bead centers without hardcoded colors; tests cover synthetic grids. This is the next step to anchor geometry and must be integrated into the matching flow.
-- Added an MST-based bead ordering helper to arrange detected beads along the chain (networkx dependency). Early bead-detection tests on `beads1`–`beads7` improved the best-case match for some images (e.g., up to ~0.82) but with very few retained samples; still far from 100%. Need to integrate detection into the pipeline and boost retention/color accuracy.
-- Added HSV peak detection utilities to derive per-image color clusters without hardcoded palettes. Early experiment combining per-peak masks + bead detection still yields low match rates on `beads1`–`beads7` (~0.28–0.76 best-case), so color separation and bead retention remain insufficient.
-- Centerline/mask: added `midline_between_background` to derive the centerline from the two largest interior background regions (excludes border components, uses medial axis with downscaling for stability, falls back to a straight line if too thin). Debug overlays now show bead/background masks and splines.
-- Palette discovery: added histogram-peak palette builder (no fixed k) and hue-aware merging (`merge_close_hues`) to collapse near hues after k-means/peak detection; `debug_palette_masks` supports `--merge-hues`. Current k=10 HSV on `beads-photo-2` merges to ~5 dominant colors, but k-means still blends bead colors with the magenta background, so a more robust color-separation method is needed.
-- Tests: added coverage for histogram-peak palette selection and hue-merge helper; dependencies installed and unit suite passing locally.
-- Manual color annotation: added JSON-based color config format (rectangles → HSV sets) plus CLI (`color_masks_from_config.py`), terminal editor, and GUI (`color_config_gui.py`). Pipeline/CLI can now consume `--color-config` to build masks and assign bead indices by mask membership (bypassing automatic palette inference). This is meant to recover patterns even on POV-rendered images where automatic color separation failed.
+- Fully automatic color separation (several k-means / histogram-peak variants) never
+  reached usable accuracy on these images; the human-seeded direction (hsv_tools,
+  color-config JSON) was created in response and showed more promise.
+- End-to-end match rate was the only metric for most of v1, which gave no signal
+  about *which* stage was failing. Per-stage metrics arrived late.
+- Work moved to hard images before any easier case had been solved end to end, so
+  there was never a trusted baseline to regress against.
 
-Next steps
-- Push color separation: tune hue-merge tolerance, explore peak-based palette sizing (auto color count), and test on `beads1`–`beads7` until visible-bead match rate is near 100%.
-- Solidify centerline: keep midpoint-from-background approach and verify on all beads*.jpg; adjust smoothing so splines track bracelet edges without bead-level artifacts.
-- Integrate detection flow: use bead detection + centerline projection + coverage filtering to place beads on bead_index grid, then rerun autocorrelation/pattern detection against POV fixtures. Leverage manual masks for color assignment where available.
-- Hard cases: plan separate handling for very dark/black beads where HSV peaks may fail (e.g., fallback morphology or brightness-only separation).
+## Open problems likely needing innovation
+
+The plan deliberately does not prescribe methods here. These are the areas where
+fresh research and experimentation are expected:
+
+- Separating bead colors reliably under real lighting (gloss, shadow, background).
+- Distinguishing the bracelet from its own cast shadow on the paper — the known
+  failure mode of the existing centerline code.
+- Finding individual beads in the photo, including partially visible ones.
+- Recovering the helical bead ordering — mapping visible beads to positions in the
+  one-dimensional chain when roughly half the beads are hidden.
+- Inferring the repeating pattern from incomplete, noisy observations.
+- Knowing when an answer is right — validation that doesn't depend on already
+  knowing the pattern.
+
+## Design principles
+
+1. **Gated milestones.** Do not start a milestone until the previous gate passes
+   numerically.
+2. **Measure every stage.** Each stage emits a metric and a debug image written to
+   `debug-output/` (PNG files, never only interactive windows — must work headless
+   on WSL). If a stage cannot be scored, it cannot be trusted.
+3. **Append-only progress log.** Keep `progress.md` in this directory: every
+   experiment gets an entry with what was tried, the metric, and the conclusion —
+   failures included. Never rewrite or delete entries. The v1 log is the only reason
+   this v2 plan could be written.
+
+## Milestones and gates
+
+- **M0 — Establish the layout core.**
+  New package `pattern_from_photo/` on this branch. Bring over or rewrite the layout
+  math and the canonical POV pattern tables from `beads:image-to-pattern`
+  (existing tests pass, but verify the math against `beads.pov` independently
+  rather than trusting it). Add a pure-Python
+  flat render (pattern → image of the visible lattice) for cheap synthetic data.
+  *Gate:* layout tests pass on macOS and WSL, including at least one new test
+  derived directly from `beads.pov` rather than from the v1 code.
+
+- **M1 — Synthetic round trip.**
+  Recover patterns from flat renders, then from the existing POV renders
+  `beads1.jpg`–`beads8.jpg` (generate more, varying lighting/background, if useful).
+  *Gate:* exact `color_pattern` recovery (period and colors) for all 8 POV cases.
+
+- **M2 — The known photo.**
+  Run on `beads-photo-4.jpg`, the one real photo with a known answer (case 4).
+  Hand-label its visible beads first so every stage can be scored, not just the
+  end result. As a side task, compare recovered patterns (or even just palettes)
+  from the other photos against the 8 POV cases to hunt for additional unconfirmed
+  render↔photo matches; each one found expands ground truth for free.
+  *Gate:* exact pattern recovery on `beads-photo-4.jpg`, with a per-stage accounting
+  of where errors occur on any failed attempt along the way.
+
+- **M3 — Unknown-pattern photos.**
+  Run on the remaining `beads-photo-*.jpg`, plus calibration-bracelet photos
+  if available. Hand-label a small ground-truth set on one or two of them so
+  intermediate stages can be scored even though the final pattern is unknown.
+  *Gate:* recovered pattern is stable under perturbation (e.g., randomly dropping
+  20% of detected beads gives the same answer) and survives visual comparison with
+  the photo.
+
+- **M4 — Write it up.** README with CLI usage, any human-annotation workflow, and a
+  results table per image.
+
+## Calibration bracelets (new branch in the `beads` repo)
+
+Suggested branch name in `beads`: **`calibration-patterns`**. Add new `#case`
+blocks (and renders) for patterns designed to make image analysis easier:
+
+1. **Lighthouse** (Rick's idea): all beads color A except a single bead of color B.
+   Isolates geometry completely: the odd bead's reappearances along the rope reveal
+   beads-per-turn and helix phase with zero color ambiguity.
+2. **Ruler**: color B at every k-th bead (k coprime to 13 = 2×6.5, e.g. 11),
+   color A elsewhere — many geometric anchors per window.
+3. **Barber pole**: strict A/B alternation (period 2) — any ordering/phase error is
+   instantly visible.
+4. **Photo-realistic render variant** (optional): table-colored background,
+   softer/angled lighting, and if feasible a non-circular centerline, to narrow the
+   synthetic-to-real gap. Keep it a separate .pov include.
+
+If a physical lighthouse or ruler bracelet gets crocheted and photographed on the
+usual table, that photo becomes the most informative geometry asset in the project.
+
+## Environment and portability (macOS + WSL2)
+
+- Python 3.11+, venv: `python3 -m venv .venv && . .venv/bin/activate &&
+  pip install -r requirements.txt`. Same commands on both platforms.
+- Likely dependencies: numpy, opencv-python, scikit-image, scipy, matplotlib.
+  No GNU-vs-BSD shell tool differences in any required path; any shell helpers must
+  be POSIX `sh` compatible. Prefer Python entry points over shell scripts.
+- All debug/visual output saved as PNG to `debug-output/` (gitignored). Interactive
+  tools may use OpenCV HighGUI or Tk (native on macOS, WSLg on WSL2), but no
+  pipeline stage may *require* a display.
+- For WSL, keep clones inside the Linux filesystem (`~/git/...`), not `/mnt/c/...`,
+  for performance and to avoid permission surprises.
+
+## Instructions for Claude Code
+
+- Work on the branch and repo where this plan lives (`image-to-pattern-2` in the
+  `beads` repo). Treat other branches and the `hsv_tools` and `bead_map` repos as
+  read-only references; the calibration patterns described above may go on this
+  branch or on a separate `calibration-patterns` branch.
+- Enforce the gates. If a gate fails, iterate inside that milestone and log every
+  attempt in `progress.md` (append-only) with its metric.
+- Commit small and often; keep tests green; run the test suite on both platforms
+  before declaring a milestone done (a Mac and WSL are both available).
