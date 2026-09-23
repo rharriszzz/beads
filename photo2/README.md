@@ -130,3 +130,13 @@ tested shape/tilt/depth alternatives, while the pitch/count/twist equivalence st
 pixel-identical. This is discrete synthetic discrimination with fixed registration,
 not extraction from shaded images or an accepted photo geometry. Generated reports,
 images, include files and logs remain under ignored `output/`.
+
+## Legacy repeat visibility (R023)
+
+Run `.venv/bin/python photo2/practice_legacy.py`, then
+`.venv/bin/python photo2/legacy_visibility.py`. [VISIBILITY.md](VISIBILITY.md)
+records known bead/slot traces in the original scene for 40- and 13-color repeats.
+Every 40-repeat slot has substantial coverage; the 13-repeat case includes a slot
+exposed only through small gaps in one phase. Reports retain all missing indices,
+per-view and quarter-ring support, exact-mask checks and annotated beauty views.
+This is visibility measurement with known source indices, not automatic recovery.

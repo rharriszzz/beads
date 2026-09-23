@@ -1,18 +1,43 @@
 # Beads session handoff
 
-Updated 2026-09-23 for R022 working bead-count clarification. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `acae61b` matched origin;
-R022 retains the adequate provisional bead count; documentation only. The final
+Updated 2026-09-23 after R023 legacy repeat visibility. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `271fdca` matched origin;
+R023 completes the illustrated visibility step. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
 Read `PLAN.md`, latest `REQUEST_LOG.md`, `photo2/progress.md` and
-**`photo2/SYNTHETIC.md`**. Python is **3.12.14**, normally `.venv/bin/python`.
+**`photo2/VISIBILITY.md`**; `photo2/PRACTICE.md` is its source-scene context.
+`photo2/SYNTHETIC.md` remains historical evidence. Python is **3.12.14**, normally `.venv/bin/python`.
 User instructions override prior plans. **Continue** launches the next bounded
 step and the publication/handoff routine in AGENTS.md. Resume unfinished
 publication before starting another task.
 
 ## Current capability and latest result
+
+R023 traces actual legacy bead indices and repeat slots through two practice
+phases for the 40-color/800-bead example and a 13-color/780-bead example. The
+tracked scene and photo settings are unchanged. Separate generated ID passes
+match original-palette silhouettes/colors exactly. Every 40-repeat slot has
+at least ten >=100-pixel occurrences in each view. The 13-repeat phase-half
+view exposes slot 0 only through small gaps: four >=12-pixel occurrences, none
+>=100; strongest #533 exposes 69/4094 pixels (1.6854%). Some quarter-ring sections
+miss several slots. These oblique full-ring views do not produce an entirely
+hidden slot at the 1-pixel threshold; no universal completeness claim follows.
+
+Reproduce with `.venv/bin/python photo2/legacy_visibility.py` after R017 practice
+outputs exist. Final inspected run: `photo2/output/legacy-visibility-verified/`.
+See `VISIBILITY.md` for exact reproduction, results, coverage chart, full index
+traces and weak-slot close-up. The report preserves all missing indices, source
+positions, per-bead pixel counts, per-slot support, commands and hashes. Its SHA-256
+is `12ac2b92948e920b89e7da5a49ae1ecfdfcfb44c102d4c07e53606344489c7c0`.
+Seventeen tests, compilation, source/artifact hash checks and 16 isolated-body
+checks pass. Two runs agree on original numerical results, four geometry CSVs and
+22 common rendered pixel arrays. Improved figure labels and four additional
+isolated checks were added for the final run. All four trace views, coverage
+chart and weak-slot close-up inspected. No recovery, segmentation, literature
+review or photo refit. No repeat default-render regression because original
+sources are unchanged; R017 source/artifact hashes verified instead.
 
 R017: ran actual legacy `beads.pov` with an invented 40-bead color repeat, 20
 groups and two within-case clock values. A small optional pattern override keeps
@@ -114,21 +139,20 @@ Do not restrict repeat lengths to divisors of that provisional number.
 The user believes sufficient information is present and expects an established
 algorithm to work. Seek primary-source methods for periodic sequence recovery
 with missing observations before custom recovery development; no method has
-been selected or validated by this clarification. The visibility check below
-remains the next bounded task.
+been selected or validated by this clarification. R023 has now completed the
+bounded visibility check; see the results above.
 
-Next task: use the **same legacy practice renders and known sequence** to trace
-selected bead indices/repeat slots and measure visibility across repeat
-occurrences. Also test the user's multiple-of-13 counterexample: at exactly 6.5
-beads/turn these repeats return to the same cross-section phase and may leave
-slots consistently hidden. Check closure/viewing effects; keep unseen slots
-unknown. Keep any ID instrumentation separate from beauty renders. Stop at
-an illustrated visibility/sequence check before automated recovery or photo
-refitting. Do not automatically resume the unrestricted R015 model. This
-documentation round has not started that experiment.
+Next task: **review established image-registration and periodic-sequence methods
+in primary sources**, choose an approach compatible with unknown bead indices,
+missing slots, uncertain colors and whole-repeat closure, and specify a small
+synthetic validation using these known legacy renders. Stop with a justified
+method choice and concrete test plan, before implementing recovery or photo
+refitting. Do not automatically resume the unrestricted R015 model. Continue
+with the adequate 2,698-bead working estimate; do not revisit it merely because
+of the maker's usual necklace range or restrict periods to its exact divisors.
 
-Stay in this conversation: **no `/new` needed** after this clarification. Use
-**gpt-6-astra / High** for the next experiment when requested. This is a task-based
+Recommend a **fresh `/new`** for that distinct method-selection task. Use
+**gpt-6-astra / High**, retaining the prior recommendation. This is a task-based
 recommendation for scientific/visibility
 reasoning, consistent with [official reasoning guidance](https://developers.openai.com/api/docs/guides/reasoning)
 checked through OpenAI Docs in R016, not a measured model comparison. User-supplied
@@ -143,8 +167,9 @@ and enough saved context to answer without remembering the previous session.
 Do not append new questions at round end. Save answers here and in the request log;
 these are not extra approval gates. R020's questions have now been answered by
 R021's natural placement and whole-repeat construction guidance above. Do not
-repeat them or invent specific bead edits at the join. This turn records the
-answers without opening another round of questions or starting the experiment.
+repeat them or invent specific bead edits at the join. R023 continued the round
+after those answers, without another question gate. Open the next work round
+with contextualized advice questions; none are newly pending at this step's end.
 
 ## Preserved history
 

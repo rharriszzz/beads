@@ -221,3 +221,37 @@ for current work; remove R021's proposed revision based on usual necklace counts
 The estimate is not an exact measurement or a divisibility filter on repeat
 length. Whole-repeat construction and next visibility task remain unchanged.
 Documentation correction only; no scene/settings changes or runtime checks.
+
+## 2026-09-23 — R023 illustrated legacy bead/repeat visibility
+
+Started on daisy at clean 271fdca, fetch/upstream 0/0. Continued after the saved
+opening answers; no repeated questions. Added a generated instrumentation copy
+of the unchanged beads.pov, POV-Ray ID materials, authored 13-color counterexample,
+Python visibility/figure runner and four focused tests. Case-1 shapes and camera
+come from the original scene, not R015's unrestricted geometry.
+
+Forty colors/20 groups: 800 beads, 123 turns, 54-degree repeat advance. Each phase
+shows all slots with >=100 pixels in at least ten occurrences. Thirteen colors/
+60 groups: 780 beads, 120 turns, zero repeat advance. Every slot has some pixels
+in the full oblique view, but phase-half slot 0 has only four >=12-pixel occurrences
+and none >=100. Its strongest occurrence (#533) exposes 69/4094 isolated pixels
+(1.6854%). Quarter-ring sections miss several slots. This tests local/weak support;
+it does not establish a wholly hidden full-ring slot in these particular views.
+
+Final run: output/legacy-visibility-verified, 26 renders, 74 hashed artifacts;
+report SHA-256 12ac2b92948e920b89e7da5a49ae1ecfdfcfb44c102d4c07e53606344489c7c0.
+All source/artifact hashes match. Four full ID/palette silhouettes and color maps
+agree exactly; sixteen isolated masks satisfy containment, including complete
+occlusion. Clear image borders checked. First/final runs match all prior numeric
+visibility results, four layout CSVs and 22 common render pixel arrays. Figure
+labels initially overlapped in the weak-slot trace; final margin labels fix it.
+Four full trace views, coverage chart and weak-slot close-up inspected. Seventeen
+tests, compilation and whitespace checks pass. R017 practice hashes verified;
+no legacy source/settings changed, so no repeated before/after beauty regression.
+No noise/resolution sweep, segmentation, algorithm literature search, inverse
+recovery or photo refit. Generated files/environments remain ignored.
+
+See VISIBILITY.md. Next: primary-source review and choice of an established
+registration/periodic-sequence approach with a concrete synthetic validation plan;
+stop before implementation/photo refit. Retain Astra/High; fresh /new recommended
+for that distinct task, with opening questions based on saved construction answers.

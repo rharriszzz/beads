@@ -615,3 +615,69 @@ Commit/push four scoped docs under R006/R010 and verify remote tip/final status;
 final response records delivery. Generated outputs and .venv remain excluded.
 Retain gpt-6-astra / High and this conversation (no /new) for the next illustrated
 legacy repeat-visibility check, stopping before automated recovery/photo refit.
+
+## R023 — Continue the illustrated legacy visibility check (2026-09-23)
+
+> you can continue
+
+Proceed with the saved bounded task after R020–R022's opening answers. Use the
+original 40-bead/800-total practice scene and a 13-bead/780-total counterexample;
+trace known indices and repeat slots at both practice clock phases, separating
+per-view coverage from coverage using two views. Keep exact ID instrumentation
+separate from beauty images, preserve missing indices and do not infer a pattern
+from a photo. Stop at an illustrated report/checks, before automated recovery or
+photo refitting. Retain 2,698 as the adequate photo working estimate. No repeat
+questions needed: this continues the round whose opening answers are saved.
+
+Preflight: daisy, clean photo-2-reconstruction at 271fdca, tracking origin branch,
+no stashes; fetch succeeded, ahead/behind 0/0. Python 3.12.14 and local POV-Ray
+available; R017 practice images/report available. No new status/usage supplied;
+R020 attribution remains. No transfer or delegation. An initial read used the
+nonexistent bead-geometry.inc filename; corrected to bead-shape.inc.
+
+Implementation scope: a fail-closed generated instrumentation copy of beads.pov,
+using its unchanged placement/camera and shared bead macro; original scene stays
+unchanged. Verify ID silhouettes against original palette bodies at the same
+raster, selected isolated-bead visibility, repeat-slot accounting and source/
+artifact hashes. Record commands and generated outputs under ignored photo2/output.
+
+R023 outcome: completed the illustrated visibility check using original case-1
+geometry/camera. Added legacy_visibility.py, its POV-Ray ID body include, a
+13-color pattern and four focused tests. Forty-color repeat exposes every slot
+with >=100 pixels at least ten times in each phase. The 13-repeat closes at exact
+6.5 beads/turn with zero repeat advance; its phase-half slot 0 has only four
+>=12-pixel occurrences and none >=100. Strongest #533 exposes 69/4094 pixels
+(1.6854%). Quarter-ring sections miss several slots; full-ring oblique views do
+not leave any slot wholly unseen at the 1-pixel threshold. No recovery claim or
+general refutation of the user's possible hidden-side case. Known indices and
+missing positions retained; two-view union explicitly separated from single views.
+
+Checks: all 17 tests pass, including actual POV-Ray original-palette/ID agreement;
+compilation passes. Four full silhouette/color maps agree exactly, sixteen
+selected isolated masks contain all corresponding visible pixels, all four full
+images have clear borders. R017 source/artifact hashes verified. First and final
+runs match all prior coverage/count/centroid results, four layout CSVs and 22
+common renderer image pixel arrays. Initial weak-slot annotation labels overlapped;
+final run moves these to the margin and adds close-ups/four isolated checks.
+All four trace views, coverage chart and weak-slot close-up visually inspected.
+No source/settings changes to beads.pov, bead-shape.inc or the photo model, so
+the prior before/after default beauty regression was not rerun. Legacy beauty
+warnings remain; mask gamma is explicit. No segmentation, noise/resolution sweep,
+inverse recovery, primary-source algorithm search or photo refit in this step.
+
+Final output: photo2/output/legacy-visibility-verified (26 renders, 74 artifacts).
+Seven source and 74 artifact hashes match disk; report SHA-256:
+12ac2b92948e920b89e7da5a49ae1ecfdfcfb44c102d4c07e53606344489c7c0.
+Details/reproduction in VISIBILITY.md; updated README, PLAN, progress and handoff.
+Whitespace review, scoped staging/commit/push and remote-tip/final-status checks
+finish publication under R006/R010. Generated images, includes, reports, logs and
+.venv remain ignored. Final response records delivery commit. No delegation,
+machine transfer, account inspection or model change; no new usage was supplied.
+
+Next: review established registration and periodic-sequence methods in primary
+sources; choose one for uncertain/missing bead observations and specify a concrete
+synthetic validation. Stop at method choice/test plan before implementation or
+photo refit. Retain gpt-6-astra / High; recommend fresh /new for that distinct task.
+This retains the earlier model recommendation, not a new measured comparison.
+R020's opening questions were answered in R021/R022; do not append new questions
+at this round's end, and preserve those answers for the next opening discussion.

@@ -119,7 +119,7 @@ R016. Preserve that benchmark's evidence, but its unrestricted twist redundancy
 does not prove ambiguity under the user's construction constraints. Repeated
 colors in different visible sections can supply evidence for hidden repeat slots.
 
-## Next bounded step within Step 2
+## R017–R023 legacy practice and visibility within Step 2
 
 R017 supersedes the proposed recovery benchmark with direct practice using
 `beads.pov`: invent a small repeating color sequence, render it through the
@@ -195,3 +195,28 @@ algorithm, literature search or rendering was performed in this answer-saving tu
 R022: retain 2,698 beads as the working estimate. This accepts its adequacy for
 current work, not an exact measured count; whole-repeat construction remains
 valid without restricting candidate periods to divisors of 2,698. Next task unchanged.
+
+## R023 completed; next bounded step
+
+Measured known bead and repeat-slot visibility in the actual legacy camera/body
+model using the 40-color/800-bead practice case and a 13-color/780-bead case.
+Separate instrumentation passes match the original palette silhouettes/colors
+exactly. All 40 slots have at least ten occurrences with >=100 visible pixels in
+each tested phase. The 13-repeat case has zero phase drift but changing local
+view direction around the ring; in phase half, slot 0 is exposed only in small
+slivers (maximum 69 pixels, 1.6854% of that body's isolated projection). It fails
+the 100-pixel coverage threshold; quarter-ring sections also have missing slots.
+No slot is completely hidden over the full ring at the 1-pixel threshold in these
+particular oblique views. Do not generalize to other views or photo identifiability.
+Details and illustrated checks: `photo2/VISIBILITY.md`. Seventeen tests pass;
+source/artifact checks and repeated-render numerical/pixel comparisons pass.
+Original scene and photo settings unchanged; the 2,698 working estimate remains.
+
+Next: review established image-registration and periodic-sequence methods from
+primary sources, choose an approach that supports unknown bead indices, missing
+slots, uncertain colors and whole-repeat closure, and specify a small validation
+using the known legacy renders. Stop with a justified method choice and concrete
+test plan, before implementing recovery or refitting the photo. This follows the
+user's R021 direction to use existing algorithms and supersedes the earlier
+next-visibility task, now complete. Open the next round with contextualized advice
+questions; do not repeat R019–R022's saved construction answers.
