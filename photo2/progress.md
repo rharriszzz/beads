@@ -192,3 +192,13 @@ rounds; half-step advance comes from attachment to the previous row. Recorded as
 maker knowledge in plan/handoff/log. The multiple-of-13 case remains a synthetic
 visibility check, not the expected photo-2 pattern. No new experiment or code
 change; documentation review/whitespace checks only. Next bounded task unchanged.
+
+## 2026-09-23 — R020 questions at the beginning of each round
+
+User replaces R018's end-of-round questions with beginning-of-round questions,
+because answering after /new requires remembering lost conversation context.
+Updated standing instructions, plan and handoff; preserve answers and pending
+questions across sessions. Asked about positioning photo 2 and bead changes at
+the join; answers pending. Recorded supplied old-session timing/usage separately
+from new-session status in REQUEST_LOG. No experiment/code change; next task is
+still the illustrated legacy visibility check. Documentation checks only.

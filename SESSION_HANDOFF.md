@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R019 maker guidance. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `c84c74e` matched origin;
-R019 saves the user's answers for next round; documentation only. The final
+Updated 2026-09-23 for R020 beginning-of-round questions. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `ee72bec` matched origin;
+R020 updates question timing and saves supplied session status; documentation only. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -115,14 +115,26 @@ Stay in this conversation: **no `/new` needed** after this clarification. Use
 recommendation for scientific/visibility
 reasoning, consistent with [official reasoning guidance](https://developers.openai.com/api/docs/guides/reasoning)
 checked through OpenAI Docs in R016, not a measured model comparison. User-supplied
-prior usage and current status are separately attributed under R016. No current
+prior usage and current status are now separately attributed under R020. No current
 usage was invented, model switched or account inspected.
 
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live
 remote tip and final local status, report branch/commit and exclusions, recommend
 next model/level and fresh-versus-current conversation, then stop.
-End every work round with two or three focused questions for the user's advice
-on construction, observations or next choices. These are not extra approval gates.
+**R020 supersedes R018:** begin each work round with two or three focused questions
+and enough saved context to answer without remembering the previous session.
+Do not append new questions at round end. Save answers here and in the request log;
+these are not extra approval gates. Current questions were presented before work
+on this documentation update; answers are pending, not assumed:
+
+- For photo 2, did the user rotate parts of the rope to display particular colors
+  when laying it flat, or did it settle by itself? This informs viewing/phase
+  assumptions in the planned repeat-visibility check.
+- At the join, did the bead sequence continue unchanged, or were beads added,
+  omitted or rearranged? The user need not recall an exact answer.
+
+Do not re-ask these if answered later in this conversation; persist the answers
+before a fresh session. No visibility experiment was started by R020.
 
 ## Preserved history
 

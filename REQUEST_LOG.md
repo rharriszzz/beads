@@ -518,3 +518,49 @@ tip/local status; generated outputs and .venv remain excluded. Final response
 records delivery. Stay here with gpt-6-astra / High, no /new; next round stops at
 illustrated bead/repeat visibility checks before automated recovery/photo refit.
 Offer focused questions for next round without requiring immediate answers.
+
+## R020 — Move advice questions to the beginning of each round (2026-09-23)
+
+> Worked for 6m 20s · done 4:35 PM  plus a couple of minutes answering questions at the end.  It inconvient to answer questions after starting a new session, because /new erases to old context, and my memory is not too good.  Let's do questions at the beginning of each round, instead.
+
+The user supplies new-session /status and says they are waiting for questions.
+R020 supersedes R018's end-of-round timing. Ask two or three contextualized
+questions at the beginning; read saved answers first, preserve answers and
+pending questions for the next session, and do not append questions at the end.
+This is a workflow/status update and opening discussion, not an instruction to
+start the next visibility experiment. Already authorized work needs no new gate.
+
+Supplied prior-session resume ID: `01a0cfe2-3bf7-7f81-935d-1a2aa10fc31f`, title
+"Continue Codex setup", gpt-6-astra / high, ~/git/beads. Reported work duration
+6m 20s, done 4:35 PM, plus a couple of minutes answering questions; these are
+user-supplied timings, not independently measured. Supplied token totals for
+that prior session: total 128,594; input 107,367 (+2,754,048 cached); output
+21,227 (reasoning 2,614). Do not attribute those totals to this new session or
+infer that they cover only the timed round.
+
+Current supplied session `01a0d004-cac1-7443-88ad-b2ff19ab6dfa`: Codex v0.155.1,
+gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads, Workspace
+(Ask for approval), Default collaboration mode, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly limit 45% left, resets 17:37 on 28 Sep;
+credits 283; Luna Reserve 100% left, resets 16:45 on 30 Sep. No current-session
+token usage supplied. No account inspection or automatic model change.
+
+Preflight: daisy, clean photo-2-reconstruction at ee72bec, tracking
+origin/photo-2-reconstruction, no stashes. Fetch succeeded; ahead/behind 0/0.
+No computer transfer requested; this does not establish remote-machine inactivity.
+Read handoff, recent requests, plan, progress and PRACTICE notes. Asked up front:
+whether photo-2 sections were rotated to display colors or settled naturally;
+whether beads were added/omitted/rearranged at the join. Answers pending.
+
+Updated AGENTS, PLAN, handoff, progress and this log. One multi-file patch failed
+on an unmatched progress-file context and changed nothing; corrected successfully.
+Review diff and whitespace before publication. Runtime tests/renders skipped for
+documentation-only changes. Commit/push five scoped docs under R006/R010, verify
+live remote tip and final status; final response records the delivery commit.
+Generated outputs and .venv remain ignored. No delegation or new experiment.
+
+Retain the existing gpt-6-astra / High recommendation for the next illustrated
+legacy bead/repeat-slot visibility check, stopping before automated recovery or
+photo refit. Stay in this conversation; no /new needed. The recommendation is
+carried forward from R016, not a new model comparison. OpenAI Docs SKILL.md was
+read; no new product/model research was needed for this workflow correction.

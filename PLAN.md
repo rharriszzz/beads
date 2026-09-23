@@ -150,7 +150,8 @@ keep different colors on hidden and visible sides. At exactly 6.5 beads/turn,
 Include a multiple-of-13 practice pattern alongside the 40-bead example when
 checking visibility. Actual coverage still depends on closure and camera view
 around the ring; never infer completeness from repetition alone. Positions with
-no visible evidence stay unknown. End each round with focused advice questions.
+no visible evidence stay unknown. R020 moves focused advice questions to the
+beginning of each round, superseding R018's original end-of-round timing.
 
 R019 maker guidance: the user designed and made the necklace in photo 2 and has
 never designed a multiple-of-13 pattern, although they may in future. Treat that
@@ -161,3 +162,9 @@ deliberate alternating stitch/round instruction. Geometric turns in the model
 must not be confused with maker-controlled rounds. Exact photo repeat length
 and a numerical attachment rule have not been supplied. Record these answers
 as user knowledge; do not ask the same questions again. Next task unchanged.
+
+R020 workflow correction: ask contextualized questions at the beginning of each
+round and preserve answers/pending questions across sessions. The user finds
+answering after /new difficult because the old context is no longer available
+to them. This request records workflow/status and opens the questions; it does
+not launch the visibility experiment. The next bounded task remains unchanged.
