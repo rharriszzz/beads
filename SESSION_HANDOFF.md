@@ -3,8 +3,9 @@
 Updated 2026-09-23. Working branch: **photo-2-reconstruction**, source/base
 `402663eb579a8b66abe553cc3c917ab8f0cbc7c0`. Local checkout is
 `/home/rharris/git/beads`, PC/WSL `daisy`. Step 1 was committed and pushed as
-`63ba75c` under REQUEST_LOG R006. R008's material clarification is included in
-the final documentation correction; R009 records its preparation for delivery.
+`63ba75c` under REQUEST_LOG R006; material clarification was pushed as `1d836cd`.
+R010 establishes recurring end-of-step publication verification and model/session
+recommendations; this workflow update is prepared for scoped publication.
 No computer transfer was requested. Verify another session's release before
 concurrent edits; local Git does not reveal its unpublished work or processes.
 
@@ -69,6 +70,25 @@ This needs geometric/inverse reasoning, so Astra/high remains a suitable choice
 from the user's supplied catalog. Once fitting equations and acceptance checks
 are settled, a specified implementation can use Sol/medium or high. No model
 switch or delegation occurred; availability should be checked in the next session.
+
+## Next session and end-of-step reporting
+
+For the next geometry-fitting step, use **gpt-6-astra / High**, starting a fresh
+conversation in `~/git/beads`. The user will use `/new` and `/status`; preserve
+the supplied status excerpt in the request log with session attribution. Initial
+task prompt: "Read SESSION_HANDOFF.md and continue with the next step."
+No need to reopen this completed setup step or repeat the all-branch review.
+
+At each step end, update records, add/commit/push the scoped changes, verify the
+live remote branch tip and local status, then explicitly report delivery and
+the next model/level plus whether to use `/new`. Preserve the unrelated files
+listed below and distinguish them from undelivered task work. A fresh chat is
+recommended here because setup is complete and geometry fitting is a new phase.
+
+Official OpenAI documentation confirms `/new` starts a fresh chat in the same
+CLI session and `/status` displays session information. Start Codex with the
+correct workspace; `/new` itself is not a directory-change command:
+[developer commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli).
 
 ## Preserved user work
 

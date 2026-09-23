@@ -150,3 +150,24 @@ needed. Stage only AGENTS.md, PLAN.md, REQUEST_LOG.md, SESSION_HANDOFF.md and
 photo2/README.md; preserve pre-existing untracked work. Final response records
 the actual correction commit/push outcome. The next geometry-fitting task remains
 queued; it is not started by this status question.
+
+## R010 — Recurring publication confirmation and session handoff
+
+> after finishing each step, please conform that everything is pushed, and let me know the model and level you want .  my place is to change the working directory int ~/git/beads, then do /new (unless you want to stay in this conversation) and also a /status
+
+Scope: make push confirmation, next model/reasoning recommendation and explicit
+new-versus-current conversation guidance part of every completed step. Together
+with R006, this establishes recurring scoped end-of-step add/commit/push unless
+qualified. The user controls working directory, model selection and session
+commands. Record supplied status without inventing unavailable session data.
+
+Outcome prepared: updated AGENTS.md and SESSION_HANDOFF.md. Recommend
+gpt-6-astra / High for the next geometry-fitting task, with a fresh conversation
+in `~/git/beads`; then `/status` and the prompt "Read SESSION_HANDOFF.md and
+continue with the next step." This recommendation uses the user's model catalog
+and the unresolved geometric reasoning, not a claim of measured model superiority.
+Used OpenAI Docs to check official `/new` and `/status` command behavior; linked
+the official documentation in the handoff. No model switch or new task launch.
+Documentation diff/whitespace checks only; no runtime checks needed. Commit/push
+these three scoped documentation files, then verify the live remote tip and local
+status and report the actual delivery result. Preserve pre-existing untracked work.

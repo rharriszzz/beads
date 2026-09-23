@@ -23,8 +23,17 @@ experiment notes before continuing. User instructions override historical plans.
 - Update the handoff with results, checks/skips, limitations and one next task.
   A computer switch needs an explicit transfer of local unpublished changes and
   task ownership. A clean checkout alone cannot establish remote inactivity.
-- Commit/push only when authorized by the user. This repository does not inherit
-  the vortex lab's automatic publication meaning for the word `Continue`.
+- R006/R010 establish the end-of-step routine: add, commit and push scoped work,
+  unless the user qualifies that authorization. Verify push success, remote
+  branch tip and final local status before confirming delivery. Report the
+  branch/commit and any intentionally excluded files; do not call unpushed work
+  pushed or stage unrelated files merely to make the checkout clean.
+- At every completed step, recommend the next model and reasoning level, give
+  its concrete task and stopping point, and explicitly recommend a fresh `/new`
+  or staying in the conversation. The user starts in `~/git/beads`, chooses
+  model/level and supplies `/status` output. Record supplied status with session
+  attribution; redact secrets, distinguish old/new session data and never invent
+  missing usage. No automatic model switch or account inspection.
 
 The old `image-to-pattern/plan.md` is historical. Its uncompleted inverse gates
 remain useful evidence, but this branch follows the user's photo-2 forward-model
