@@ -1,0 +1,109 @@
+# Photo 2 reconstruction
+
+This is an initial, reproducible forward model of `beads-photo-2.jpg`, with
+diagnostics for later inverse fitting. It is **not a recovered necklace pattern**.
+The broad arrangement is matched by a closed spline; bead layout, camera,
+materials and illumination are provisional. See `../SESSION_HANDOFF.md`.
+
+## Run with Python 3.12
+
+From the beads repository:
+
+```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r photo2/requirements.txt
+.venv/bin/python -m unittest discover -s photo2 -p 'test_*.py' -v
+.venv/bin/python photo2/reconstruct.py --render --width 800
+```
+
+POV-Ray must be on PATH. The script invokes it with `-D` for headless rendering
+and four worker threads. No GUI packages or neighboring checkouts are required.
+The tested environment is CPython 3.12.14, NumPy 2.5.3, SciPy 1.18.1,
+Pillow 12.3.0 and POV-Ray 3.7.0.10.unofficial on PC/WSL. Other hosts are untested.
+Dependency ranges express minimum compatibility, not a frozen environment.
+
+The command produces `photo2/output/comparison.png`, `render.png`,
+`centerline-overlay.png`, `unwrap-sections.png`, `unwrap.png`,
+`observations.npz`, `scene-data.inc`, `analysis.json`, and render command/log
+files. Output is ignored by Git. Use `--output photo2/output/attempt-02` to
+preserve one run while trying another; reusing an output directory replaces its
+generated files. Reports bind image and source checksums and record settings.
+
+For direct rendering after generation:
+
+```sh
+povray +Ibeads.pov Declare=Photo2=1 +Lphoto2/output +Ophoto2/output/render.png +W800 +H1002 +FN -D +A0.2 +WT4
+```
+
+Without `Declare=Photo2=1`, `beads.pov` retains its original eight animated
+patterns. `bead-shape.inc` contains its shared rounded bead macro unchanged.
+
+## Coordinates and adjustable parameters
+
+The saved centerline comes from the `fft-image-explorer` main branch's
+`beads-photo-2_splines.json`. `centerline.json` retains the centerline coordinates,
+source checksum, target-image checksum and dimensions. It includes the closing
+point. Python fits a periodic cubic spline, smooths it by 4 square pixels per
+control point and tabulates arc length on 20,001 points before uniform sampling.
+The camera is an orthographic approximation. One model unit is one source pixel;
+no physical necklace dimensions or camera calibration are available.
+
+In image space x points right and y down; z points above the paper. For tangent
+`T=(tx,ty)`, the normal is `N=(-ty,tx)`. Bead i uses
+`theta = handedness * 2*pi*turns*i/count + phase` and position
+`C(s) + rope_radius*sin(theta)*N`, with height
+`rope_radius + bead_radius + rope_radius*cos(theta)`.
+Only the POV export flips image y. Handedness +/- is defined by this equation,
+not yet assigned to the photographed object. The starting point is marked in
+white on the centerline overlay. Hole axes currently follow the rope tangent;
+crochet tilt, local twist, bead-size variation and local stretch are not fitted.
+
+`settings.json` exposes dimensions, helix phase/sign, beads per turn, turn pitch,
+colors, light position/extent/intensity and surface finish. The initial 6.5
+beads/turn comes from the old forward model, **not a measurement of this photo**.
+The 22.26-pixel pitch uses a longitudinal texture peak as a starting hypothesis;
+the diagnostic warns about harmonics and color motifs. Integer turns enforce
+geometric closure; the count is derived from those assumptions, not bead counting.
+The current 2,698 beads and 415 turns are therefore provisional.
+
+The paper uses a magenta pigment with procedural bump texture; it does not use
+the photograph as a texture. An upper-left area light and shadowless fill give
+directional shadows and highlights. Near-black, red and yellow/orange glossy
+opaque materials are appearance proxies. The photo alone does not establish
+glass versus plastic, pigment albedo, refractive index or transmission. The
+palette and material parameters are starting values, not identified chemistry.
+
+## Color observations and repeat hypotheses
+
+The default render samples colors at predicted bead centers and fills remaining
+unknown preview colors with black. Even a perfect-looking preview would not
+establish the underlying repeat. Hidden and uncertain indices stay `-1` in
+inverse analysis; preview fills are never used as evidence.
+
+Conservative color boxes separate red/yellow/black from magenta paper, using five
+interior samples to reduce isolated glints. They need validation against labeled
+photo beads. Only centers with `cos(theta)>0.25` and at least three agreeing
+samples vote. Boundary and partially occluded beads are intentionally uncertain.
+
+Both signs are evaluated across every integer period 200–400. Five contiguous
+arc blocks supply holdout folds. Training votes are grouped by **original bead
+index modulo period**; missing indices are never removed. Tied votes earn
+fractional validation credit, independent of arbitrary color numbering. Missing
+or tied pattern slots stay unknown. Candidates are ranked by accuracy times
+held-out coverage. The report includes the majority-color baseline, coverage,
+per-slot support and confidence. These are conditional geometry diagnostics,
+not calibrated probabilities or validation on independently labeled photo beads.
+Searching 201 lengths and both signs also creates selection bias.
+
+To inspect a candidate explicitly, keeping it separate from the default:
+
+```sh
+.venv/bin/python photo2/reconstruct.py --period 311 --output photo2/output/candidate-311 --render
+.venv/bin/python photo2/reconstruct.py --handedness -1 --output photo2/output/opposite-hand --render
+```
+
+These are illustrative commands, not recommendations to accept period 311 or a
+sign. The current best scores (~0.45 versus majority baselines ~0.41–0.43) do
+not establish recovery. Resolve bead-center correspondence and local twist
+before refining repeat inference. Unseen parts may remain unidentifiable from
+one view even with better fitting.
