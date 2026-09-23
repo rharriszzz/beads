@@ -40,7 +40,7 @@ class LegacyVisibilityChecks(unittest.TestCase):
             scene = out/'wrapper.pov'
             for hand in (1, -1):
                 with self.subTest(hand=hand):
-                    scene.write_text(f'#declare LegacyHelicity={hand};\n'+wrapper(pattern, instrument.name))
+                    scene.write_text(f'#declare Helicity={hand};\n'+wrapper(pattern, instrument.name))
                     ids = decode(render(out,f'ids-{hand}',scene,'0',[],width=480,height=360), 780)
                     palette = render(out,f'palette-{hand}',scene,'0',[],palette=True,width=480,height=360)
                     mask = ids > 0
@@ -56,10 +56,10 @@ class LegacyVisibilityChecks(unittest.TestCase):
             scene = out/'invalid.pov'
             for hand in (0, 2, .5):
                 with self.subTest(hand=hand):
-                    scene.write_text(f'#declare LegacyHelicity={hand};\n#include "beads.pov"\n')
+                    scene.write_text(f'#declare Helicity={hand};\n#include "beads.pov"\n')
                     with self.assertRaises(subprocess.CalledProcessError):
                         render(out, 'invalid', scene, '0', [], beauty=True, width=80, height=60)
-                    self.assertIn('LegacyHelicity must be +1 or -1', (out/'invalid.log').read_text())
+                    self.assertIn('Helicity must be +1 or -1', (out/'invalid.log').read_text())
 
 
 if __name__ == '__main__':

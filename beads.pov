@@ -22,9 +22,9 @@ plane { z, 0 pigment { White } finish { diffuse 0.90 }}
 // +1 preserves the original helix; -1 reverses winding around the small radius.
 // Phase/clock, chain traversal, bead indices, colors and hole axes stay fixed.
 // This switch belongs to the legacy scene; Photo2 uses settings.json handedness.
-#ifndef (LegacyHelicity) #declare LegacyHelicity = 1; #end
-#if ((LegacyHelicity != 1) & (LegacyHelicity != -1))
-  #error "LegacyHelicity must be +1 or -1"
+#ifndef (Helicity) #declare Helicity = 1; #end
+#if ((Helicity != 1) & (Helicity != -1))
+  #error "Helicity must be +1 or -1"
 #end
 #declare bclock = clock * 0.99999;
 #declare bead_pattern_count = 8;
@@ -288,7 +288,7 @@ material{texture{pigment{bead_color filter 0.3}
 #declare bead_index = 0;
 #while ( bead_index < nbeads )   
   #declare chain_angle = 360*(bead_index/nbeads + rclock*0.1666);
-  #declare row_angle = 360*(LegacyHelicity*bead_index/exact_beads_per_row + rclock*1.00);
+  #declare row_angle = 360*(Helicity*bead_index/exact_beads_per_row + rclock*1.00);
   #declare t1 = vaxis_rotate(<chain_major, 0, 0>, z, chain_angle);
   #declare t2 = vaxis_rotate(<0, 0, chain_minor>, vcross(-z, t1), row_angle); 
   object{ beads[color_pattern[mod(bead_index, pattern_length)]]

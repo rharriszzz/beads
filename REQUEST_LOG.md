@@ -930,3 +930,81 @@ slots, and exact-count closure only for synthetic N. Stop after report/tests bef
 automatic image-edge integration or photo refit. Retain gpt-6-astra / High;
 recommend fresh /new for that distinct step. R029 opening questions are answered
 in R030; no new questions at this round's end.
+
+## R032 — Rename helicity variable; ask questions and wait (2026-09-23)
+
+> Please remove the word legacy from that variable name, it does not provide value.  any questions?  please wait for answers.
+
+Identified the new `LegacyHelicity` variable in beads.pov and its test, audit and
+documentation references. Planned replacement: `Helicity`. User explicitly asks
+to wait for answers; no rename, experiment or publication performed this turn.
+Save this opening record locally, with publication pending the answered follow-up.
+
+Prior supplied session: `01a0d02e-6cd9-7982-adae-0e1418129685`, titled
+"Summarize Codex session", Codex v0.155.1, gpt-6-astra / high, ~/git/beads.
+Reported work 18m 39s, done 5:58 PM. Supplied tokens: total 133,076;
+input 100,260 (+2,599,936 cached); output 32,816 (reasoning 5,688).
+These are user-supplied prior-session totals, not current-session measurements.
+
+Current supplied session: `01a0d047-ddf3-7590-ba43-60942ec7c413`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly limit 41% left, resets 17:37 on 28 Sep;
+credits 283; Luna Reserve Weekly 100% left, resets 17:58 on 30 Sep.
+No current token totals supplied; no account inspection or model change.
+
+Read AGENTS.md, handoff, recent request log, relevant NEIGHBORS/METHODS notes,
+latest plan and variable references. Preflight: daisy, clean tracked/untracked
+status at entry, photo-2-reconstruction at 08ba3bb, tracking origin with cached
+ahead/behind 0/0, no stashes. Python 3.12.14. No fetch/live remote verification,
+computer transfer or delegation. Runtime tests skipped for this opening record.
+
+Pending questions (saved in the handoff):
+
+1. When you specify a pattern's length, do you mean the shortest repeating color
+   block, or can your written pattern contain several identical smaller blocks?
+2. Does your pattern have a designated first bead and stringing direction that
+   the recovered instructions should preserve, or are cyclic shifts and reversed
+   lists acceptable if their direction is clearly stated?
+
+Context retained: the maker already specified three colors, error-free repeating
+construction and whole-repeat closure. The questions address reporting conventions,
+not those answered constraints. Wait for answers before implementation. Resume
+the rename first; the previously planned sequence validation remains a later task.
+
+## R033 — Shortest repeat and free orientation; continue rename (2026-09-23)
+
+> Yes, it means the shortest repeattern pattern block.  A written pattern might contain smaller identical blocks, But I view that as a mistake on my part, since I approve of code that is compact.  No, I don't care about a designated forst bead, stringing direction or helicity, just choose it in any way.  continue
+
+R032's questions are answered. Pattern length means the shortest repeating color
+block; a written pattern duplicating a smaller block is a mistake to simplify.
+No designated starting bead, stringing direction or helicity is required: choose
+any consistent convention. This removes those presentation requirements, not
+uncertainty in image correspondence or unobserved colors. No new question gate.
+
+Resume the pending Helicity rename as this bounded step; update references and
+record these constraints for the subsequent sequence-only validation. Stop after
+rename checks and publication, before implementing that separate experiment.
+Preflight: daisy, photo-2-reconstruction at 08ba3bb, only our unpublished R032
+REQUEST_LOG/SESSION_HANDOFF edits present, no stashes. Fetch origin succeeded;
+ahead/behind 0/0. Python 3.12.14. No transfer, delegation or new status/usage.
+
+R033 outcome: renamed the option to Helicity throughout beads.pov, audit scene
+generation, existing tests and current usage documentation. Preserved historical
+request-log names and generated artifacts. Recorded the shortest-block and free-
+orientation guidance in METHODS/PLAN/handoff/progress; R032 questions are answered.
+No sequence-validation implementation, image indexing or photo refit this step.
+
+Checks: `.venv/bin/python -m unittest discover -s photo2 -p 'test_*.py' -v`
+passes all 25 tests, including actual both-hand ID/palette renders and invalid
+helicity rejection. Byte comparisons of the three changed source/test files
+against entry HEAD verify exact LegacyHelicity-to-Helicity substitution only.
+No new tests or full 49-render audit for this identifier-only change; historical
+report hashes describe the original sources. Whitespace checks pass. No failures
+encountered. Publish scoped changes including R032's earlier local record, then
+verify the live remote branch tip and final status; final response records commit.
+Generated outputs and .venv remain intentionally ignored.
+
+Next: METHODS.md §B sequence-only synthetic validation; stop after its report/tests
+before automatic image-edge integration or photo refit. Keep gpt-6-astra / High
+and stay in this conversation, no /new needed. No questions remain pending.

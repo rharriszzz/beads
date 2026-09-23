@@ -44,15 +44,15 @@ povray +Ibeads.pov Declare=Photo2=1 +Lphoto2/output +Ophoto2/output/render.png +
 
 Without `Declare=Photo2=1`, `beads.pov` retains its original eight animated
 patterns. `bead-shape.inc` contains its shared rounded bead macro unchanged.
-The legacy scene now accepts `Declare=LegacyHelicity=-1` for the opposite winding;
-omitting it or using `Declare=LegacyHelicity=1` preserves the original hand.
+The legacy scene now accepts `Declare=Helicity=-1` for the opposite winding;
+omitting it or using `Declare=Helicity=1` preserves the original hand.
 The sign multiplies the bead-index contribution to the small-radius angle, keeping
 the clock phase, large-circle traversal, colors and tangent hole axes fixed.
 Only +1 and -1 are accepted. These are equation signs, not a measured photo hand.
 Photo2 mode continues to use `settings.json` / Python's `--handedness` instead.
 
 ```sh
-povray +Ibeads.pov Declare=LegacyHelicity=-1 +K0 +W800 +H600 +FN -D +WT2 +Ophoto2/output/legacy-opposite.png
+povray +Ibeads.pov Declare=Helicity=-1 +K0 +W800 +H600 +FN -D +WT2 +Ophoto2/output/legacy-opposite.png
 .venv/bin/python photo2/neighbor_audit.py --output photo2/output/neighbor-audit-final
 ```
 

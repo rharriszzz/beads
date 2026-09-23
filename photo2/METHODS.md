@@ -144,10 +144,14 @@ For example, `R ? Y` passes adjacent comparisons at L=1 if each comparison throu
 example is a check on the selected rule, not a photo result.
 
 Report all compatible candidates, their support and unsupported slots. The
-smallest compatible length is a descriptive preference, not proof of the maker's
-intended repeat: longer candidates and different completions can remain possible.
-Represent phase shifts as equivalent rotations; retain reversal/hand ambiguity
-separately rather than claiming that color agreement determines stitch direction.
+maker defines pattern length as the shortest repeating color block (R033); reduce
+a fully specified repeating pattern to that block. With missing observations,
+the smallest compatible length need not establish the true shortest block:
+different completions can remain possible. Preserve that uncertainty.
+The maker accepts any starting bead, stringing direction and helicity. Choose a
+consistent reporting convention, treating cyclic shifts and reversal as equivalent
+presentations without relabeling colors. This freedom does not establish a photo's
+physical hand or validate an index mapping; retain competing image fits as needed.
 At the synthetic stage N is known, so whole-repeat compatibility can be checked
 exactly. Never apply that exact-count divisor filter to provisional photo N.
 

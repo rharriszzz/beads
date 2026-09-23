@@ -275,7 +275,7 @@ def main():
                 name = f'{case}-h{hand:+d}-{phase}'
                 layout_path = out/f'{name}-layout.csv'
                 scene = out/f'{name}.pov'
-                scene.write_text(f'#declare LegacyHelicity={hand};\n'
+                scene.write_text(f'#declare Helicity={hand};\n'
                                  + wrapper(pattern, 'instrumented.pov', layout_path))
                 ids = decode(render(out, name+'-ids', scene, clock, commands), count)
                 palette = render(out, name+'-palette', scene, clock, commands, palette=True)
@@ -285,7 +285,7 @@ def main():
                 expected = colors[np.array(pattern['colors'])[(ids[mask]-1) % len(pattern['colors'])]]
                 np.testing.assert_array_equal(palette[mask], expected)
                 beauty_scene = out/f'{name}-beauty.pov'
-                beauty_scene.write_text(f'#declare LegacyHelicity={hand};\n'+wrapper(pattern, 'beads.pov'))
+                beauty_scene.write_text(f'#declare Helicity={hand};\n'+wrapper(pattern, 'beads.pov'))
                 beauty = render(out, name+'-beauty', beauty_scene, clock, commands, beauty=True)
                 layout = np.loadtxt(layout_path, delimiter=',')
                 if 'projection_check' not in report:

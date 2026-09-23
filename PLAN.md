@@ -289,3 +289,20 @@ unsupported slots. Stop after that report/tests before automatic image-edge
 integration or photo refit. Keep 2,698 provisional; exact divisibility uses only
 known synthetic counts. Retain gpt-6-astra / High and recommend fresh /new for
 this distinct task. Begin its round with focused questions using saved answers.
+
+## R032/R033: helicity name and pattern conventions
+
+Rename the scene option to `Helicity` and update its callers, tests and current
+examples. Preserve the +1 default and both-hand behavior. Historical generated
+reports remain unchanged; their source hashes refer to their original revisions.
+
+R033 answers: pattern length is the shortest repeating color block, with redundant
+copies removed. Starting bead, stringing direction and helicity may be chosen
+freely. Apply a consistent presentation convention while preserving unsupported
+colors and genuinely different candidate completions/index mappings. A shortest
+compatible period under erasure is not proof of the complete pattern's period.
+
+Stop this step after the rename, checks and publication. Next remains METHODS.md
+§B's sequence-only synthetic validation, stopping after its report/tests before
+image-edge integration or photo refit. Use gpt-6-astra / High and stay in this
+conversation; R032's opening questions are answered and no questions are pending.

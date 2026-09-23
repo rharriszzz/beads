@@ -1,15 +1,39 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R030/R031: both legacy helicities and the synthetic
-neighbor/index audit. Branch **photo-2-reconstruction**, checkout
-`/home/rharris/git/beads`, PC/WSL `daisy`; step entry ab79158 matched origin.
-Final response reports the verified publication commit. No computer transfer
-requested; local state cannot establish other-machine inactivity.
+Updated 2026-09-23 for R032/R033: renamed the scene option to `Helicity`
+and recorded the maker's pattern conventions. Branch **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`; step entry `08ba3bb` matched
+origin after fetch. Final response reports the verified publication commit.
+No computer transfer requested; local state cannot establish remote inactivity.
 
-Current supplied session is `01a0d02e-6cd9-7982-adae-0e1418129685`, gpt-6-astra /
-High. R029 separately attributes the prior timing/tokens to session
-`01a0d01f-e860-71b3-9e18-4bfc4162d0cc`. No current token totals or later usage
-supplied; no account inspection or model change.
+Current supplied session: `01a0d047-ddf3-7590-ba43-60942ec7c413`, Codex
+v0.155.1, gpt-6-astra / High. R032 separately records prior-session timing/tokens
+for `01a0d02e-6cd9-7982-adae-0e1418129685`. No current token totals or later
+usage supplied; no account inspection or model change.
+
+**R032 questions answered in R033:** pattern length means the **shortest
+repeating color block**. A written pattern containing redundant copies of a smaller
+block should be simplified. The maker does not require a designated first bead,
+stringing direction or helicity; choose any consistent convention. This permits
+normalizing equivalent presentations, not filling unsupported colors or claiming
+an uncertain image mapping is known. With erasures, the shortest compatible
+period may still differ from the complete pattern's shortest period. No questions
+remain pending; do not repeat these answered questions.
+
+This step completes the pending variable rename, before the separate sequence
+validation. The POV-Ray option, generated audit declarations, existing tests and
+current usage examples now use `Helicity`. Geometry and defaults are unchanged.
+Historical generated reports remain untouched, including their original source
+hashes and commands. R030/R031's audit corresponds to Git `08ba3bb`, not the
+renamed checkout; regenerate into a fresh output directory for current hashes.
+
+R033 checks: all 25 existing tests pass, including both-hand ID/palette renders
+and invalid helicity values. Byte comparisons against step-entry HEAD confirm
+that beads.pov, neighbor_audit.py and test_legacy_visibility.py contain only the
+identifier substitution. No new tests or full 49-render audit were needed for
+this rename; old audit evidence was not regenerated. Whitespace checks pass.
+Generated artifacts and `.venv` remain ignored. No sequence validation or photo
+refit in this step. Publication includes the earlier R032 local records.
 
 **R029 questions answered in R030:** ±1 runs around the torus's small radius;
 ±6 and ±7 are the diagonals, whose orientation depends on helicity. Inspect the
@@ -46,7 +70,7 @@ publication before starting another task.
 
 ## Current capability and latest result
 
-R030/R031: `Declare=LegacyHelicity=-1` enables the opposite legacy hand; omitted
+R030/R031 capability (option renamed in R033): `Declare=Helicity=-1` enables the opposite legacy hand; omitted
 or +1 retains the original. Only the index-dependent row-angle rate changes sign;
 phase, chain traversal, bead/color ordering and tangent hole axes stay fixed.
 Photo2 mode retains its separate handedness control. Invalid values are rejected.
@@ -237,15 +261,16 @@ winding treatment; the photo's provisional count is not an exact modulus.
 Next task: **known-index partial-word repeat validation**, METHODS.md §B. Use
 the known 40/13 synthetic patterns and missing/unknown observations; enumerate
 strongly compatible periods, retain unsupported slots, test whole-repeat closure
-only with exact synthetic N, and preserve competing phases/reversals. This is
+only with exact synthetic N, and normalize equivalent rotations/reversals per R033
+while preserving different compatible completions. This is
 sequence-only validation, not automatic image-edge identification. Stop after its
 synthetic report/tests, before integrating inferred image neighbors or photo refit.
 Preserve the adequate 2,698 photo estimate without a divisor filter.
 
-**Fresh /new recommended**, with **gpt-6-astra / High**, for that distinct task.
+**Stay in this conversation**, with **gpt-6-astra / High**, for that task.
 This retains the prior model recommendation, not a new measured comparison.
-Opening questions for the next round should build on saved answers, not repeat
-the palette, error-free stringing, direction, visibility or whole-repeat questions.
+R032 opening questions are answered in R033; retain those conventions. Future
+questions must not repeat the saved construction and presentation answers.
 
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live
 remote tip and final local status, report branch/commit and exclusions, recommend

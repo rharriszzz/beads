@@ -321,3 +321,23 @@ recovery or photo refit.
 Next: METHODS.md §B known-index partial-word sequence validation, stopping before
 automatic image-edge integration/photo refit. Retain Astra/High; fresh /new advised.
 No unanswered construction questions remain for this round.
+
+## 2026-09-23 — R032/R033 Helicity rename and pattern conventions
+
+Renamed the scene option from LegacyHelicity to Helicity, including the audit
+runner, tests and current documentation examples. Source/test byte comparisons
+against entry commit 08ba3bb confirm only that substitution in the three affected
+code files. All 25 existing tests pass, including both-hand real renders and
+invalid-value rejection; whitespace checks pass. No new tests or full 49-render
+audit were needed. Historical outputs and hashes remain unchanged and refer to
+their original sources; rerun the audit in a fresh directory for current hashes.
+
+Maker defines pattern length as the shortest repeating block, considers redundant
+copies a mistake, and accepts arbitrary first bead, stringing direction and
+helicity. Updated METHODS/PLAN/handoff to carry those conventions forward while
+retaining unknown colors and different possible completions. R032's questions are
+answered; no new questions at round end. No new usage supplied under R033.
+
+Next: METHODS.md §B sequence-only synthetic validation; stop after report/tests
+before image-edge integration or photo refit. Use gpt-6-astra / High and stay in
+this conversation. This step publishes the rename and the R032/R033 records.

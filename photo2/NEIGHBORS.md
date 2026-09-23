@@ -24,7 +24,12 @@ at the end. Generated files stay under ignored `photo2/output/`.
 
 ## Helicity convention and construction directions
 
-Use `Declare=LegacyHelicity=-1` for the opposite hand. Omission or `=1` preserves
+R032/R033 rename the option to `Helicity`; historical R030/R031 generated files
+use the previous name and remain unchanged. The recorded audit used commit
+`08ba3bb`; its source hashes do not describe the renamed checkout. Use a fresh
+output directory when rerunning the audit with current sources.
+
+Use `Declare=Helicity=-1` for the opposite hand. Omission or `=1` preserves
 the original scene. Values other than exactly +1 and -1 are rejected. This is a
 legacy-only option; `Photo2=1` retains its separate Python/settings handedness.
 
@@ -32,7 +37,7 @@ For index i, exact beads/row e and clock phase r, the angles in degrees are:
 
 ```
 chain_angle = 360 * (i/N + r*0.1666)
-row_angle   = 360 * (LegacyHelicity*i/e + r)
+row_angle   = 360 * (Helicity*i/e + r)
 ```
 
 Only the small-radius winding rate changes sign. Clock phase, large-circle
