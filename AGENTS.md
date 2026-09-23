@@ -37,4 +37,6 @@ experiment notes before continuing. User instructions override historical plans.
 
 The old `image-to-pattern/plan.md` is historical. Its uncompleted inverse gates
 remain useful evidence, but this branch follows the user's photo-2 forward-model
-task; do not switch branches or overwrite the pre-existing untracked package.
+task. The former untracked v2 package/render were preserved on
+`archive/image-to-pattern-2-wip` under R012; see `photo2/archive-manifest.json`.
+Do not restore archived work into this branch without a task-specific reason.

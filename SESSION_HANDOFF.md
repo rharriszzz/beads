@@ -5,7 +5,8 @@ Updated 2026-09-23. Working branch: **photo-2-reconstruction**, source/base
 `/home/rharris/git/beads`, PC/WSL `daisy`. Step 1 was committed and pushed as
 `63ba75c` under REQUEST_LOG R006; material clarification was pushed as `1d836cd`.
 R010 establishes recurring end-of-step publication verification and model/session
-recommendations; this workflow update is prepared for scoped publication.
+recommendations. R012 archived the former untracked work on a separate pushed
+branch and returned here; the archive details are below.
 No computer transfer was requested. Verify another session's release before
 concurrent edits; local Git does not reveal its unpublished work or processes.
 
@@ -90,16 +91,20 @@ CLI session and `/status` displays session information. Start Codex with the
 correct workspace; `/new` itself is not a directory-change command:
 [developer commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli).
 
-## Preserved user work
+## Archived prior work — completed R012
 
-`beads-render.png` and `image-to-pattern/pattern_from_photo/` were untracked at
-entry and must remain untouched and excluded from this step's commit. There
-were no stashes. The full legacy test suite has optional GUI/image-analysis
-dependencies not required by this new isolated pipeline and was not run.
+The six former untracked files (`beads-render.png` and the five files in
+`image-to-pattern/pattern_from_photo/`) are preserved byte for byte on
+**`archive/image-to-pattern-2-wip`**, commit
+`debec4056a30a2206f73a30b40dec8aab9bb3b79`. Push succeeded on retry after one
+GitHub internal server error; the live remote tip was verified. Their source
+hashes and sizes are retained in `photo2/archive-manifest.json`.
 
-R011 requests a suggested cleanup method. Recommended, not yet executed: create
-`archive/image-to-pattern-2-wip` from the original `image-to-pattern-2` branch,
-commit all six files there as unfinished work, push and verify their preservation,
-then return to `photo-2-reconstruction`. This clears those untracked files here
-while preserving the original branch and the work. Stay in this conversation
-for that small task; Sol/Medium is sufficient if a model change is desired.
+Returned to `photo-2-reconstruction`; all six paths are absent here and the
+working tree was verified clean before recording completion. The original
+`image-to-pattern-2` branch remains at `402663e`. No stashes or files were
+discarded. Existing ignored environment/render outputs remain local as intended.
+The archive is unfinished historical work, with no new correctness claim.
+
+The next task remains the geometry-fitting step above, using Astra/High in a
+fresh conversation. No geometry work was performed during this archive step.

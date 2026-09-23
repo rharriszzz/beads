@@ -210,3 +210,23 @@ six known untracked files, no tracked changes and no stashes. Record source
 hashes before switching. The archive base is `402663e`; its proposed branch name
 is `archive/image-to-pattern-2-wip`. This entry is committed on the reconstruction
 branch before switching so it stays attached to the current workflow.
+
+R012 outcome: all six files archived byte for byte in commit
+`debec4056a30a2206f73a30b40dec8aab9bb3b79` on
+`archive/image-to-pattern-2-wip`. First push failed with GitHub Internal Server
+Error; remote inspection showed no branch. One retry succeeded, and live
+`ls-remote` returned the exact archive commit. Returned to
+`photo-2-reconstruction`; verified all six paths absent here, all six committed
+payload hashes equal to their originals, original `image-to-pattern-2` unchanged
+at `402663e`, and clean Git status before completion records. Saved the file
+hashes/sizes and archive identity in `photo2/archive-manifest.json`.
+
+Changed this request log, AGENTS.md, SESSION_HANDOFF.md and the new manifest on
+the reconstruction branch. Archive branch contains exactly the six preserved
+files as additions to the original base. No source repair, code execution from
+the archive, tests or renders were needed; this is preservation, not validation
+of unfinished code. Diff/whitespace checks precede final publication. Push the
+reconstruction start/completion records under the user's authorization, verify
+both live branch tips and clean final status, then report completion. Next:
+gpt-6-astra / High, fresh conversation in `~/git/beads`, `/status`, then follow
+the geometry task in SESSION_HANDOFF.md. No model switch or task processes.
