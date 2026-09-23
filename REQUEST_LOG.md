@@ -1008,3 +1008,122 @@ Generated outputs and .venv remain intentionally ignored.
 Next: METHODS.md §B sequence-only synthetic validation; stop after its report/tests
 before automatic image-edge integration or photo refit. Keep gpt-6-astra / High
 and stay in this conversation, no /new needed. No questions remain pending.
+
+## R034 — Supplied session status; ask questions and wait (2026-09-23)
+
+> ask questions, then wait
+
+User also supplied the prior session's completion banner and current /status.
+Prior session: `01a0d047-ddf3-7590-ba43-60942ec7c413`, titled "Review completed
+work", Codex v0.155.1, gpt-6-astra high, ~/git/beads. Reported work 2m 54s,
+done 6:08 PM. Supplied tokens: total 52,275; input 46,304 (+590,848 cached);
+output 5,971 (reasoning 325). These are prior-session supplied totals, not
+current-session measurements.
+
+Current supplied session: `01a0d050-4cd7-7672-ab8e-b5c59d5822c1`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly limit 41% left, resets 17:37 on 28 Sep;
+credits 283; Luna Reserve Weekly 100% left, resets 18:08 on 30 Sep.
+No current token totals supplied; no account inspection or model change.
+
+Read AGENTS.md, current handoff, recent request log and METHODS.md. Preflight:
+daisy, clean working tree, photo-2-reconstruction at e1acf5f, tracking origin
+with cached ahead/behind 0/0, no stashes. No fetch/live remote verification,
+transfer or delegation. Saved the opening questions in the handoff:
+
+1. Roughly how many beads are in the shortest repeat blocks you usually design?
+   A broad range is useful; no exact photo-2 answer is needed.
+2. Do your designs use long runs of one color, or sections that are almost
+   identical except for one or two beads? Which would be most useful to include
+   as a challenging synthetic example?
+
+These seek construction guidance for the upcoming known-index sequence test;
+they do not repeat the answered shortest-block or orientation questions.
+Outcome: questions presented, waiting for answers as requested. No sequence
+validation, renders, implementation, commit or push. Runtime checks skipped for
+this record-only turn; documentation whitespace checked. Opening records remain
+local pending the answered follow-up; the next experiment and stopping point
+are unchanged.
+
+## R035 — Pattern-length advice and simpler staircase example (2026-09-23)
+
+> the under length 5, the sequence is boring. 5 is ok.  This picture 2 is my longest.  I am sure it is less that 400.  I carefully designed on graph paper that I specifically made for designing bead sequences.  This pattern has black yellow red spirals, carefully designed to be continuous is a specific way.  Length 42 is pretty nice, since id aligns with both diagonals.  I assume you want a less challenging test then picture 2.  How about this, there are 3 colors, you choose the. 123333, 112333,111233, 111123, 111112.  Probably one of the patterns in beads.pov is similar to this.
+
+R034 opening questions answered. Record photo-2 shortest repeat <400 as supplied
+guidance, distinguish the under-five aesthetic preference from a hard bound, and
+retain the custom graph paper/continuous three-color spiral construction. The
+exact spiral continuity rule was not supplied. Length 42 is design advice,
+not a claimed photo-2 period.
+
+Interpret the five supplied six-bead groups as one concatenated 30-bead repeat;
+choose 1=red, 2=yellow, 3=black under the user's free color choice. A direct
+Python enumeration of complete repeated blocks confirms shortest period 30 and
+counts 15/5/10. Inspected beads.pov cases 1 and 7: related three-color staircases,
+not this exact sequence. No scene, palette or generated artifact changed.
+
+Updated handoff, plan and METHODS.md to make this the next experiment's simple
+introductory symbolic control while retaining 40/13 measured-visibility cases.
+No mask/render evidence exists for the new sequence; no such evidence claimed.
+No full sequence-validation implementation, renders or photo fit this turn.
+
+Preflight: daisy, photo-2-reconstruction at e1acf5f, tracking origin with cached
+ahead/behind 0/0; only R034 REQUEST_LOG/SESSION_HANDOFF edits present, no stashes.
+No fetch/live remote verification, transfer, delegation or new supplied usage.
+Checked documentation whitespace; runtime suite skipped for these planning edits.
+R034/R035 records and plans remain local, uncommitted/unpushed for the next work
+step. No questions remain pending. Retain gpt-6-astra / High and stay here for
+sequence validation, stopping after report/tests before image integration/refit.
+
+## R036 — Continue sequence validation in this conversation (2026-09-23)
+
+> you did not say to use /new, so please continue.  Or if /new is what you think is best, do not continue.
+
+Stay in this conversation with the retained gpt-6-astra / High recommendation;
+/new is not needed. Continue METHODS.md §B, adding R035's 30-bead introductory
+control and retaining the 40/13 visibility cases. R034's opening questions are
+answered by R035; do not repeat them or add another question gate. Stop after
+sequence-only synthetic report/tests and scoped publication, before automatic
+image-neighbor detection or photo fitting.
+
+Preflight: daisy, Python 3.12.14, photo-2-reconstruction at e1acf5f, upstream
+origin/photo-2-reconstruction, no stashes. Four local files hold our R034/R035
+records/plans; preserve and include them in this step. Fetch succeeded and
+ahead/behind is 0/0. No computer transfer, delegation, model change or new usage.
+
+R036 outcome: implemented partial_word.py and sequence_audit.py with the new
+30-bead maker fixture plus eight separate 40/13 visibility cases. All 72 variants
+and 288 quarter holdouts satisfy their expected checks. The 63 uncorrupted inputs
+retain truth with correct supported colors; conditional true-period holdouts
+give 24,383 correct, zero wrong, 52 abstained. The weak 13-bead phase-half/T100
+view retains slot 0 unknown and three distinct completions. All nine wrong-color
+controls reject truth, while the four 40-bead cases retain longer alternatives.
+Report all compatible candidates, closure flags, support, witnesses, frozen
+holdout scores and canonical complete/partial presentations; do not claim unique
+photo recovery. All-unknown cases retain every candidate without observations.
+
+Checks: all 32 tests pass (seven new, including 6,372 exhaustive small word/period
+checks against an independent pairwise definition); compilation and whitespace
+pass. Final and reproduced runs have all 77 artifacts byte-identical; reports
+agree except for command/output path. Six current source hashes, seven historical
+source hashes against ab79158, and all 74 historical artifacts verified. Both
+evidence-chart panels visually inspected. Final report is under
+photo2/output/sequence-audit-final, SHA-256
+b0a9fe4b011eeb3f95570cd1a3eb626bd3c80dcb8790e5fe1bc84132dede3b80.
+
+No failed test/audit assertion. During review, relaxed the original-report hash
+pin to allow re-rendered historical inputs with verified source/artifact manifests;
+record actual input-report hashes. Re-ran focused tests and the audit after that
+adjustment. Historical recreation commands were inspected, not executed; no new
+visibility render or additional full legacy render regression was necessary.
+One documentation patch failed on unmatched context without editing any files;
+corrected and reapplied. Development output directories remain ignored alongside
+final evidence and .venv. No scene, material, photo-fit or segmentation changes.
+
+Updated SEQUENCES/README/METHODS/PLAN/progress/handoff. Publish the 11 scoped
+source/docs files, including R034/R035's saved local discussion; then verify live
+remote tip and final status. Final response records branch/commit and delivery.
+Next: infer synthetic neighbor edges from anonymous visible-mask centroids with
+truth indices/colors withheld from construction; stop after illustrated edge/
+relative-index accuracy and checks, before segmentation/refit. Retain gpt-6-astra
+/ High; recommend fresh /new for that distinct next task. No end-of-round questions.

@@ -9,8 +9,11 @@ The selected next approach uses the maker's ±1/±6/±7 neighbor graph to assign
 bead indices, then tests repeating colors while preserving unknown observations.
 See [method review and synthetic test plan](METHODS.md) and the
 [synthetic neighbor/index audit](NEIGHBORS.md). Supplied signed edges now support
-checked relative indexing; automatic image-neighbor identification and pattern
-recovery remain unvalidated. The confirmed photo palette is red, yellow and black.
+checked relative indexing. The [known-index sequence audit](SEQUENCES.md) now
+validates strong-period testing with missing colors, preserving alternative
+completions and unsupported slots. Automatic image-neighbor identification and
+photo pattern recovery remain unvalidated. The confirmed palette is red, yellow
+and black.
 
 ## Run with Python 3.12
 

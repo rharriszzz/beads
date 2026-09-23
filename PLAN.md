@@ -306,3 +306,39 @@ Stop this step after the rename, checks and publication. Next remains METHODS.md
 §B's sequence-only synthetic validation, stopping after its report/tests before
 image-edge integration or photo refit. Use gpt-6-astra / High and stay in this
 conversation; R032's opening questions are answered and no questions are pending.
+
+## R035: maker's simpler sequence and photo period guidance
+
+R034's questions are answered: photo 2 is the maker's longest pattern, with
+shortest repeat <400. Under-five repeats are considered boring; five is acceptable.
+Its black/yellow/red spirals were deliberately made continuous on custom graph
+paper; the precise continuity rule remains unspecified. Length 42 is a useful
+design length because it aligns with both 6/7 diagonals, not an asserted photo
+period. Preserve the provisional count without a divisor restriction.
+
+Introduce the maker's simpler `123333, 112333, 111233, 111123, 111112` example
+in the next sequence-only test, interpreted as one 30-bead repeat with
+1=red, 2=yellow, 3=black. Its shortest complete block is 30 by direct enumeration.
+Keep the existing 40/13 visibility cases; the new example has no rendered
+visibility evidence. Record-only follow-up; no experiment started. Stop the next
+implementation after its synthetic report/tests, before image integration/refit.
+Stay in this conversation with gpt-6-astra / High; no opening questions pending.
+
+## R036: known-index sequence validation — complete
+
+Implemented the maker's 30-bead symbolic control and the original 40/13 visibility
+cases. All 72 cases and 288 quarter holdouts pass the expected checks; all 32
+repository tests pass. The true period survives all 63 uncorrupted inputs with
+correct supported colors. Its holdout totals are 24,383 correct, zero wrong and
+52 abstained. The weak 13-slot view leaves slot 0 unknown with three distinct
+completions. Wrong-color controls reject truth but can retain longer alternatives.
+Preserve that ambiguity; no photo recovery or automatic image reading is claimed.
+SEQUENCES.md contains the complete scope, commands, evidence and limitations.
+
+Next bounded task: infer synthetic construction neighbors from supplied visible-
+mask centroids with anonymous IDs, keeping source bead indices/colors hidden from
+edge construction. Evaluate ±1/±6/±7 edge labels and relative indices against truth
+at bends/occluded edges/crossings, preserving unresolved alternatives. Supplied
+mask detections remain oracle segmentation. Stop after an illustrated report and
+checks, before beauty segmentation or photo fitting. Recommend gpt-6-astra / High
+and a fresh /new for this distinct perception step. No new questions at round end.

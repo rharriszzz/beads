@@ -1,5 +1,123 @@
 # Beads session handoff
 
+## R036 completed — sequence component validated on known synthetic indices
+
+Updated 2026-09-23. Continued in this conversation as requested; no /new or model
+change occurred. Branch photo-2-reconstruction on daisy; step entry e1acf5f.
+Fetch confirmed 0/0 ahead/behind, no stashes; the four prior R034/R035 local
+record/plan edits are included in this step's scoped publication. Final response
+records delivery commit and remote/status verification. No machine transfer.
+
+Implemented `photo2/partial_word.py`, `sequence_audit.py`, seven focused tests,
+and the maker's `staircase-pattern-30.json`. Read **photo2/SEQUENCES.md** for
+reproduction, exact scope and results. The 30-bead example is symbolic (20 repeats,
+600 beads); no visibility render for it is claimed. Historical 40/13 masks retain
+their original thresholds and separate views, with authored symbol labels.
+
+All 72 cases and 288 quarter holdouts satisfy their expected checks. All 63
+uncorrupted inputs retain the true period and correct supported slot colors.
+Conditional true-period holdouts total 24,383 correct, zero wrong, 52 abstained;
+overlapping variants are not independent accuracy trials. The weak 13-bead
+phase-half/T100 view preserves unknown slot 0 and three distinct completions.
+All nine wrong-color controls reject the true period, but four retain longer
+alternatives. All-unknown inputs retain every candidate without color support.
+Unknown observations never become observations through inference. Complete
+patterns normalize rotations/reversals and primitive blocks; partial families
+keep all unsupported slots and their own stated lengths.
+
+All 32 tests pass; exhaustive independent pairwise checks cover 6,372 small
+word/period combinations. Compilation and whitespace pass. Final and reproduced
+runs have 77 byte-identical artifacts. Six current source hashes, seven historical
+source hashes against ab79158, and all 74 historical artifacts verified. Both
+chart panels inspected. Final output: `photo2/output/sequence-audit-final/`;
+report SHA-256 `b0a9fe4b011eeb3f95570cd1a3eb626bd3c80dcb8790e5fe1bc84132dede3b80`.
+Reproduce into a fresh directory with `.venv/bin/python photo2/sequence_audit.py
+--output photo2/output/sequence-audit-new`. SEQUENCES.md includes historical-input
+recreation commands if ignored artifacts are absent; those fallback render
+commands were inspected but not rerun this step. Fresh reports can differ by
+timestamp/path; actual input hashes and their source/artifact verification are
+retained. No failed runtime checks. One documentation patch had unmatched context
+and made no changes; corrected and reapplied. No new scene/geometry/material fit,
+automatic image edges, segmentation or photo recovery. Generated outputs and
+.venv remain ignored.
+
+**Next task:** infer construction neighbors from supplied visible-mask centroids
+on existing synthetic views, with anonymous vertex IDs and no source indices or
+colors in edge construction. Evaluate ±1/±6/±7 labels and relative indices against
+hidden truth at bends/occluded edges/crossings; retain ambiguities and abstentions.
+These detections remain oracle segmentation. Stop after its illustrated report
+and checks, before beauty-image segmentation or photo fitting.
+
+Recommend **gpt-6-astra / High and fresh /new** for that distinct perception step.
+The user controls session/model selection; no new usage was supplied after R034.
+Opening advice questions for this round were answered in R035; no new questions
+at round end. In the next round, read all saved construction advice first.
+
+## Saved advice and session records
+
+## R035 — maker's answers and simpler proposed test
+
+R034's opening questions are answered. The maker finds repeats below five beads
+boring, accepts five, and says photo 2 is their longest, certainly **less than
+400 beads per repeat**. Treat <400 as supplied photo guidance; the under-five
+remark is a design preference, not a mathematical exclusion for validation controls.
+Photo 2 was designed on custom graph paper with black/yellow/red spirals made
+continuous in a specific way; the exact continuity rule has not been supplied.
+The maker likes length 42 because it aligns with both ±6/±7 diagonals.
+
+Proposed simpler example: `123333, 112333, 111233, 111123, 111112`.
+Read these as consecutive six-bead groups forming one 30-bead repeat (an explicit
+interpretation, not a claim of five separate patterns). Choose 1=red, 2=yellow,
+3=black, as the maker allows. Direct string enumeration confirms shortest block
+30, with color counts 15/5/10. Case 1 in beads.pov:37–46 and case 7:135–144
+contain related three-color staircases, but neither is this exact sequence.
+No scene or palette was changed and no rendered appearance was checked.
+
+Next sequence-validation step should use this maker-proposed example as its
+simple introductory control, retaining the existing 40/13 fixtures for their
+measured visibility cases. Its synthetic erasures must be labeled as such until
+it has its own visibility renders. Preserve the existing report/tests stopping
+point before image-edge integration or photo refit. The photo bound <400 does
+not replace the independent synthetic candidate domains, and the provisional
+2,698 photo bead estimate still supplies no exact-divisor filter.
+
+No questions remain pending. R035 initially recorded this advice without starting
+the experiment; R036 above completes it and includes these records in publication.
+
+## R034 opening — answered by R035
+
+On 2026-09-23 the user supplied prior-session totals and current-session status,
+then explicitly requested: "ask questions, then wait". No experiment or
+publication starts from this request. The next bounded task remains METHODS.md
+§B's known-index sequence validation, after the user's answers/instruction.
+
+Current supplied session: `01a0d050-4cd7-7672-ab8e-b5c59d5822c1`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 41% left (resets 17:37 on 28 Sep),
+283 credits, Luna Reserve Weekly 100% left (resets 18:08 on 30 Sep).
+No current-session token totals supplied. R034 in REQUEST_LOG.md records the
+separately attributed prior-session totals; no account inspection/model change.
+
+Saved context: seek the shortest repeat; any origin, direction or helicity is
+acceptable. The next test uses synthetic known bead indices and unknown colors.
+Opening questions, not additional approval gates:
+
+1. Roughly how many beads are in the shortest repeat blocks you usually design?
+   A broad range is useful; no exact photo-2 answer is needed.
+2. Do your designs use long runs of one color, or sections that are almost
+   identical except for one or two beads? Which would be most useful to include
+   as a challenging synthetic example?
+
+At this opening, wait for answers (subsequently supplied in R035). Entry state:
+daisy, photo-2-reconstruction at e1acf5f, clean
+working tree, tracking origin/photo-2-reconstruction with cached ahead/behind
+0/0, no stashes. No live remote verification or machine transfer. Only this
+opening record and the appended request-log entry are locally modified;
+publication is pending. Runtime checks skipped; documentation whitespace checked.
+
+## Previous completed step
+
 Updated 2026-09-23 for R032/R033: renamed the scene option to `Helicity`
 and recorded the maker's pattern conventions. Branch **photo-2-reconstruction**,
 checkout `/home/rharris/git/beads`, PC/WSL `daisy`; step entry `08ba3bb` matched
@@ -258,17 +376,13 @@ for recognizing/signing the three families remain to be tested. Local integer
 indices and full-ring indices modulo exact synthetic N require distinct seam/
 winding treatment; the photo's provisional count is not an exact modulus.
 
-Next task: **known-index partial-word repeat validation**, METHODS.md §B. Use
-the known 40/13 synthetic patterns and missing/unknown observations; enumerate
-strongly compatible periods, retain unsupported slots, test whole-repeat closure
-only with exact synthetic N, and normalize equivalent rotations/reversals per R033
-while preserving different compatible completions. This is
-sequence-only validation, not automatic image-edge identification. Stop after its
-synthetic report/tests, before integrating inferred image neighbors or photo refit.
-Preserve the adequate 2,698 photo estimate without a divisor filter.
+R036 completes **known-index partial-word repeat validation**, METHODS.md §B,
+including R035's maker example. The next task is the synthetic neighbor-inference
+test stated at the top of this handoff. Preserve the adequate 2,698 photo estimate
+without a divisor filter and R035's supplied repeat bound <400.
 
-**Stay in this conversation**, with **gpt-6-astra / High**, for that task.
-This retains the prior model recommendation, not a new measured comparison.
+Use **gpt-6-astra / High with a fresh /new** for that next distinct step.
+This retains the model recommendation, not a new measured comparison.
 R032 opening questions are answered in R033; retain those conventions. Future
 questions must not repeat the saved construction and presentation answers.
 

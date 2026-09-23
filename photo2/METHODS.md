@@ -12,7 +12,10 @@ R030 implements the illustrated synthetic neighbor/index check in §A, extended
 to both legacy helicities; results are in [NEIGHBORS.md](NEIGHBORS.md). A bead may
 have a known index and an unknown color. The graph rule comes from the maker;
 automatic identification of corresponding image neighbors still needs validation.
-The next bounded task is §B's sequence-only test with known synthetic indices.
+R036 completes §B's sequence-only test with known synthetic indices; see
+[SEQUENCES.md](SEQUENCES.md). The next bounded task is synthetic edge inference
+from supplied visible-mask centroids, withholding truth indices/colors from edge
+construction; stop after its illustrated report/checks before segmentation/refit.
 
 R025 supplies the intended palette **red, yellow, black** and the working
 assumption of error-free construction: the maker checks every pattern sequence
@@ -212,6 +215,24 @@ and the existing suite if shared code changes. Stop after this illustrated audit
 and its checks, before segmentation, photo indexing or repeat recovery.
 
 ### B. Later sequence-only experiment: known-index partial-word recovery
+
+**Completed in R036.** `sequence_audit.py` implements this plan, plus R035's
+introductory example below. See SEQUENCES.md for 72 cases, 288 holdouts, candidate
+tables, completion ambiguities, negative controls and reproduction commands.
+The following settings are the retained design, not a pending experiment.
+
+R035 adds a maker-proposed introductory control: concatenate
+`123333, 112333, 111233, 111123, 111112` into one 30-bead repeat, assigning
+1=red, 2=yellow, 3=black. Direct enumeration confirms its shortest complete block
+is 30. Use deterministic symbolic missing-color examples first; this pattern
+has no measured visibility mask yet. Retain the 40/13 fixtures below for those
+visibility tests. The maker's photo-2 repeat is certainly <400, and repeats below
+five are considered boring (five is acceptable). That preference is not a ban
+on short-period synthetic controls; the photo upper bound does not change the
+known-N synthetic search domains below. Photo 2's deliberately continuous
+black/yellow/red spirals were designed on custom graph paper; no exact continuity
+constraint was supplied. Length 42 is a favored design because it aligns with
+both diagonal steps, 6 and 7. Do not infer photo 2's period from that example.
 
 Use `practice-pattern.json` (40 slots, 800 beads) and
 `visibility-pattern-13.json` (13 slots, 780 beads), with each of the two R023 views.

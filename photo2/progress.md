@@ -341,3 +341,32 @@ answered; no new questions at round end. No new usage supplied under R033.
 Next: METHODS.md §B sequence-only synthetic validation; stop after report/tests
 before image-edge integration or photo refit. Use gpt-6-astra / High and stay in
 this conversation. This step publishes the rename and the R032/R033 records.
+
+## 2026-09-23 — R034–R036 advice and known-index sequence validation
+
+Saved separately attributed session status and the maker's answers: photo-2
+repeat <400, custom graph-paper design of continuous three-color spirals, and a
+simpler 30-bead staircase example. Keep the 2,698 total provisional. Implemented
+strong-period testing with original indexed unknowns, conflict witnesses, support
+provenance, exact-synthetic-count closure flags and rotation/reversal conventions.
+
+All 72 synthetic cases and 288 holdouts satisfy the expected checks; all 32 tests
+pass. Known periods survive all 63 uncorrupted cases; supported true-slot colors
+match truth. At the known period holdouts give 24,383 correct, zero wrong and
+52 abstained predictions. Weak 13-slot phase-half/T100 leaves slot 0 unknown and
+three distinct completions. Longer compatible candidates can survive wrong-color
+injection. No evidence is silently filled, and no unique photo recovery is claimed.
+
+Final/reproduced runs have 77 byte-identical artifacts; six current source hashes,
+seven historical source hashes and 74 historical artifacts verified. Compilation,
+whitespace and visual inspection of both chart panels pass. No failed runtime
+checks. One documentation patch had an unmatched context and made no changes;
+corrected its context and reapplied it. Adjusted provenance handling to allow
+regenerated historical report hashes while checking source/artifact manifests.
+Historical fallback render commands were inspected but not rerun. Generated
+outputs and .venv remain ignored.
+
+See SEQUENCES.md. Next: synthetic neighbor inference from anonymous visible-mask
+centroids, tested against hidden indices; stop after illustrated edge/index
+accuracy and checks, before segmentation/photo refit. Use gpt-6-astra / High;
+recommend fresh /new for that separate task. No questions pending for this round.
