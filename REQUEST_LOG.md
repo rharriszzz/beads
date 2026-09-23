@@ -195,3 +195,18 @@ has not run. Publish these records under R010 and report actual delivery. For th
 small archival task, stay in this conversation; Sol/Medium would also suffice if
 the user switches models. The following geometry task remains Astra/High in a
 fresh conversation. No model switch or reconstruction work occurred.
+
+## R012 — Execute the archive and report completion
+
+> ok, let me know when all that work is finished.
+
+Scope: execute R011's recommended archive branch, preserve all six files byte for
+byte, commit/push and verify the archive, return to `photo-2-reconstruction`,
+update continuity and publish the completion record. Do not modify the original
+`image-to-pattern-2` branch or begin the next geometry task.
+
+Started on PC/WSL `daisy`, `photo-2-reconstruction` at `078966c`, with only the
+six known untracked files, no tracked changes and no stashes. Record source
+hashes before switching. The archive base is `402663e`; its proposed branch name
+is `archive/image-to-pattern-2-wip`. This entry is committed on the reconstruction
+branch before switching so it stays attached to the current workflow.
