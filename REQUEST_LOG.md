@@ -473,3 +473,27 @@ this conversation, no /new; retain gpt-6-astra / High recommendation from R016
 (official guidance already consulted in this session), no model switch.
 Final staging initially failed because .git/index.lock was read-only in the
 sandbox; escalated staging succeeded. Scoped staged whitespace check passed.
+
+## R018 — Hidden-side counterexample and end-of-round advice (2026-09-23)
+
+> It is possible to invent a bead pattern that is completely different on the hidden side than the visible side, particularly bith a bead pattern that is a multiple of 13 beads.
+
+> remind me what model/level you want; also, at the end of every round of work, please present  some questions for me, so I can give advice
+
+Scope/outcome: persist the user's counterexample and standing request for focused
+advice questions at every round end. At exact 6.5 beads/turn, 13 beads span two
+turns; repeat slots may remain hidden. The next legacy visibility check includes
+both this case and the 40-bead example, measures closure/view effects, and leaves
+unseen slots unknown. No render, inverse experiment or photo refit in this round.
+Ask two or three concrete questions, without turning them into approval gates.
+
+Preflight: daisy, clean photo-2-reconstruction at 9f9db91, no stashes; escalated
+fetch succeeded and upstream ahead/behind is 0/0. No new usage/status supplied;
+R016 attribution retained. No account inspection, model switch or transfer.
+Update AGENTS, plan, handoff, progress and this log; review diff/whitespace and
+publish under R010, verifying remote tip and final local status. Runtime tests
+unnecessary for docs only; generated outputs and .venv remain excluded.
+Reminder: gpt-6-astra / High, stay here (no /new). Next task stops at an illustrated
+legacy bead/repeat-slot visibility check before automated recovery/photo refit.
+This repeats the R016 recommendation, whose OpenAI Docs guidance was already
+read in this conversation; no new model comparison is claimed.

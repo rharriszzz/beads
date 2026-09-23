@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R017 practice. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `ed31bbb` matched origin;
-plan checkpoint committed as `0fbd48f` before practice, as requested. The final
+Updated 2026-09-23 after R018 workflow guidance. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `9f9db91` matched origin;
+R017 practice and its plan checkpoint are delivered. R018 changes only docs. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -93,11 +93,13 @@ does not establish impossibility under the construction constraints.
 
 Next task: use the **same legacy practice renders and known sequence** to trace
 selected bead indices/repeat slots and measure visibility across repeat
-occurrences. Keep any ID instrumentation separate from beauty renders. Stop at
+occurrences. Also test the user's multiple-of-13 counterexample: at exactly 6.5
+beads/turn these repeats return to the same cross-section phase and may leave
+slots consistently hidden. Check closure/viewing effects; keep unseen slots
+unknown. Keep any ID instrumentation separate from beauty renders. Stop at
 an illustrated visibility/sequence check before automated recovery or photo
-refitting. Do not automatically resume the unrestricted R015 model. R017's
-practice step is complete; only its final scoped publication remains in this
-handoff snapshot, with verified delivery reported in the final response.
+refitting. Do not automatically resume the unrestricted R015 model. This
+documentation round has not started that experiment.
 
 Stay in this conversation: **no `/new` needed** after this clarification. Use
 **gpt-6-astra / High** for the next experiment when requested. This is a task-based
@@ -110,6 +112,8 @@ usage was invented, model switched or account inspected.
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live
 remote tip and final local status, report branch/commit and exclusions, recommend
 next model/level and fresh-versus-current conversation, then stop.
+End every work round with two or three focused questions for the user's advice
+on construction, observations or next choices. These are not extra approval gates.
 
 ## Preserved history
 

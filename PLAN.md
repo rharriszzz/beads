@@ -143,3 +143,11 @@ Next: trace selected known bead indices/repeat slots through these same legacy
 renders and measure visibility across occurrences. Stop at an illustrated
 visibility/sequence check before automated recovery or real-photo refit. Do not
 automatically return to the unrestricted R015 model.
+
+R018 counterexample supplied by the user: a repeat length divisible by 13 can
+keep different colors on hidden and visible sides. At exactly 6.5 beads/turn,
+13 beads span two turns, so repeat slots return to the same cross-section phase.
+Include a multiple-of-13 practice pattern alongside the 40-bead example when
+checking visibility. Actual coverage still depends on closure and camera view
+around the ring; never infer completeness from repetition alone. Positions with
+no visible evidence stay unknown. End each round with focused advice questions.

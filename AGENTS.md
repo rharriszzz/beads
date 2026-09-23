@@ -49,6 +49,10 @@ commands; the user controls `/new`, `/status` and model selection.
   model/level and supplies `/status` output. Record supplied status with session
   attribution; redact secrets, distinguish old/new session data and never invent
   missing usage. No automatic model switch or account inspection.
+- End every round of work with a few concrete questions inviting the user's
+  construction knowledge or advice on the results and next step (R018). Prefer
+  two or three focused questions, avoid repeating answered questions, and do not
+  turn them into approval gates for work already authorized.
 
 The old `image-to-pattern/plan.md` is historical. Its uncompleted inverse gates
 remain useful evidence, but this branch follows the user's photo-2 forward-model

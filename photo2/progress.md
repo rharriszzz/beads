@@ -174,3 +174,12 @@ report hash verification pass. Initial crop was mostly blank center; corrected
 and rerendered. Existing missing gamma/version placement warnings remain.
 Next: trace known indices and measure visibility across these same repeats,
 stopping at an illustrated check before automatic recovery/photo refitting.
+
+## 2026-09-23 — R018 user advice and questions workflow
+
+User notes that multiples-of-13 patterns may conceal a different hidden-side
+pattern. At exact 6.5 beads/turn, 13 spans two turns; add such a case to the next
+visibility check instead of relying solely on favorable 40-bead phase advance.
+Closure/camera coverage still need measurement. User requests advice questions
+at every round end; recorded in AGENTS and handoff. Documentation only; no new
+render or test experiment. Retain Astra/High and this conversation for next work.
