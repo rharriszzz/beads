@@ -1,110 +1,99 @@
 # Beads session handoff
 
-Updated 2026-09-23. Working branch: **photo-2-reconstruction**, source/base
-`402663eb579a8b66abe553cc3c917ab8f0cbc7c0`. Local checkout is
-`/home/rharris/git/beads`, PC/WSL `daisy`. Step 1 was committed and pushed as
-`63ba75c` under REQUEST_LOG R006; material clarification was pushed as `1d836cd`.
-R010 establishes recurring end-of-step publication verification and model/session
-recommendations. R012 archived the former untracked work on a separate pushed
-branch and returned here; the archive details are below.
-No computer transfer was requested. Verify another session's release before
-concurrent edits; local Git does not reveal its unpublished work or processes.
+Updated 2026-09-23 after R014. Branch: **photo-2-reconstruction**, checkout
+`/home/rharris/git/beads`, PC/WSL `daisy`. Entry commit `f6fb3b3` matched origin;
+R014's scoped source/data/docs are prepared for authorized commit/push. The final
+response reports the verified delivery commit. No computer transfer requested;
+local Git/process inspection cannot establish other-machine inactivity.
 
-Read `PLAN.md` for the full objective and Step 1 boundary, `REQUEST_LOG.md` for
-all supplied instructions, and `photo2/progress.md` for evidence and failures.
-The initial forward model is implemented and checked; real repeat and helicity
-are unresolved. The latest code uses **Python 3.12**, `.venv/bin/python`.
+Read `PLAN.md`, latest `REQUEST_LOG.md` and `photo2/progress.md`. Python is
+**3.12.14**, normally `.venv/bin/python`. User instructions override prior plans.
+**Continue** launches the next bounded task and the full publication/handoff
+routine in AGENTS.md. Resume unfinished publication before starting another task.
 
-## Current capability
+## Current capability and latest result
 
-`beads.pov` selects photo mode with `Declare=Photo2=1`; its original mode remains.
-Python generates a closed spline layout, diagnostics, observations and POV include
-data. POV-Ray renders magenta textured paper, area illumination and three glossy
-opaque bead proxies. `photo2/README.md` gives commands and coordinate definitions.
-All image coordinates are original pixels; physical scale is unknown.
+The initial Python/POV-Ray forward model renders photo 2 using a saved closed
+spline, adjustable paper/light and provisional glossy bead materials. Legacy mode
+is preserved. Commands and coordinates are in `photo2/README.md`.
+
+R014 adds `photo2/geometry-labels.json` (103 provisional visual center/color
+labels, six straight/bend patches) and `photo2/fit_geometry.py`. See
+**`photo2/GEOMETRY.md`** before further geometry work. Labels are assistant visual
+estimates, not human-reviewed or complete segmentation; original indices stay
+null, and colors do not enter geometry scoring.
+
+Both hands use the same observations. Shared pitch/count/radius fit 51 training
+centers; three separate patches calibrate local phase/offset on 25 left-half
+centers and withhold 27 right-half centers. This is partial patch holdout, not
+prediction of whole patches without calibration. Withheld RMSE is 6.2728 px for
+negative versus 6.4124 px for positive; patch preferences disagree. Original-photo
+residuals are similar. Typical annotation uncertainty is estimated at 4 px, with
+worse dark/edge beads possible. **No hand, count, radius or repeat is accepted.**
+
+The sparse point-set objective favors dense models and does not account for true
+occlusion. Distinct seeds find competing geometry. Exact tests show that pitch,
+beads/turn and unconstrained linear twist can change together without changing
+any centers; reported fits fix twist to zero as a convention. Hole-axis tilt and
+bead dimensions cannot be estimated from centers alone. There are no reliable
+hole-rim landmarks. A front-half visibility assumption breaks an otherwise exact
+projected-hand symmetry, but has not been validated as an image model.
 
 Run:
 
 ```sh
-.venv/bin/python photo2/reconstruct.py --render --width 800
+.venv/bin/python photo2/fit_geometry.py
 .venv/bin/python -m unittest discover -s photo2 -p 'test_*.py' -v
+.venv/bin/python photo2/reconstruct.py --render --width 800
 ```
 
-The comparison is `photo2/output/comparison.png`; the five-section unwrap is
-`photo2/output/unwrap-sections.png`. Outputs and `.venv` are ignored and recreated
-from tracked source inputs. The copied centerline carries checksums; the source
-FFT-explorer checkout is no longer a runtime dependency. Analysis JSON contains
-source/image hashes, settings, environment versions and both-sign rankings.
+Geometry outputs are `photo2/output/geometry-fit/report.json` and six
+`*-comparison.png` files with source/labels/both fits. The report binds source,
+image and label hashes, settings, environments and results. All generated outputs
+and `.venv` remain ignored; tracked inputs reproduce them. Nine focused tests
+pass. Two complete deterministic geometry runs reproduced the numerical result.
+No render code changed in R014, so the earlier legacy pixel-equality check was
+not rerun. No Mac, animation, camera comparison, synthetic-image recovery,
+material fitting or real-repeat validation was done in this step.
 
-## Evidence and limitations
+The baseline still has 2,698 beads, 415 turns and nominal 6.5 beads/turn: these
+remain hypotheses, not updated measurements. Its exploratory repeat scores near
+0.45 used different observations per sign and are not a controlled comparison.
+"Material" means fitted POV-Ray properties (R008), not physical composition.
+Do not equate photo-sampled appearance or temporary fit assignments with order.
 
-Five focused tests pass on Python 3.12.14. They establish periodic spline/frame
-behavior, handedness reflection, selective color classification, categorical
-missing-data period recovery and unknown-residue retention. They do not validate
-inverse image recovery. A legacy frame at clock 0.32 is pixel-identical before
-and after extracting the shared bead macro. New mode has been rendered at
-800x1002 and inspected; no Mac or animation tests were run.
+## Next task and stopping point
 
-The 2,698 model beads, 415 turns and 6.5 nominal beads/turn are hypotheses derived
-from a texture-peak pitch and the old forward model. Current bead orientation,
-twist and spacing are visibly too regular. "Material" specifically means POV-Ray
-pigment, finish, normal and interior properties (R008). The existing glossy
-opaque settings are initial values; fitting them to the photo remains work. The best
-period scores are only about 0.45 versus majority baselines 0.41–0.43, with
-different observations for each sign. No period or helicity is accepted.
+Build a small **occlusion-aware synthetic patch benchmark** in POV-Ray with
+known bead IDs, body dimensions, hole-axis tilt and both hands. Use Python to
+score visible centers and body outlines, exposing density bias and missing-label
+sensitivity. Determine which observations recover or correctly reject the known
+geometry. Stop after a reproducible benchmark report and focused checks, or an
+evidenced ambiguity. Do not refit real-photo geometry or resume repeat search
+in that bounded step. PLAN Step 2 remains open.
 
-The old inverse attempts failed at color/geometry/order stages. Read
-`photo2/BRANCH_REVIEW.md` before borrowing them. The user instructed reading all
-branch Markdown except POV-Ray/physical Navier–Stokes and workflow-only lab.
-This was completed by distinct blob, with scope recorded in that review.
+Use **gpt-6-astra / High** and a fresh **`/new`** in `~/git/beads`; supply `/status`
+and **Continue**. This is a task-based recommendation for geometric/visibility
+reasoning, consistent with [official reasoning guidance](https://developers.openai.com/api/docs/guides/reasoning)
+checked through OpenAI Docs in R014. It does not claim a measured model comparison.
+The user's supplied current model/status/usage is recorded with session
+attribution under R014; no model switch or account inspection occurred.
 
-## Next task
+At each step end, update plan/log/handoff, add/commit/push scoped changes, verify
+live remote branch tip and final local status, and report branch/commit,
+intentional exclusions, next model/level and fresh-versus-current conversation.
 
-Label visible bead centers/colors in several separated sections of the unwrapped
-rope, including both bends and straight sections; fit pitch, circumference
-count, phase, local twist and hole-axis tilt against a common observation set.
-Report residuals on held-out patches and compare both hands without changing
-the observations. Stop after that geometry comparison or an evidenced ambiguity;
-do not promote a repeat merely because it improves the rendered appearance.
+## Preserved history
 
-This needs geometric/inverse reasoning, so Astra/high remains a suitable choice
-from the user's supplied catalog. Once fitting equations and acceptance checks
-are settled, a specified implementation can use Sol/medium or high. No model
-switch or delegation occurred; availability should be checked in the next session.
+Step 1: `63ba75c`; material clarification: `1d836cd`. R006/R010 establish the
+recurring publication authorization, R013 the Continue shortcut. The all-branch
+Markdown review is complete in `photo2/BRANCH_REVIEW.md`; do not repeat it.
+Old `image-to-pattern/plan.md` is historical; its inverse gates remain useful.
 
-## Next session and end-of-step reporting
-
-For the next geometry-fitting step, use **gpt-6-astra / High**, starting a fresh
-conversation in `~/git/beads`. The user will use `/new` and `/status`; preserve
-the supplied status excerpt in the request log with session attribution. The
-entire task prompt is now **Continue**, defined in `AGENTS.md` under R013.
-No need to reopen this completed setup step or repeat the all-branch review.
-
-At each step end, update records, add/commit/push the scoped changes, verify the
-live remote branch tip and local status, then explicitly report delivery and
-the next model/level plus whether to use `/new`. Preserve archived and unrelated
-work and distinguish it from undelivered task changes. A fresh chat is
-recommended here because setup is complete and geometry fitting is a new phase.
-
-Official OpenAI documentation confirms `/new` starts a fresh chat in the same
-CLI session and `/status` displays session information. Start Codex with the
-correct workspace; `/new` itself is not a directory-change command:
-[developer commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli).
-
-## Archived prior work — completed R012
-
-The six former untracked files (`beads-render.png` and the five files in
-`image-to-pattern/pattern_from_photo/`) are preserved byte for byte on
-**`archive/image-to-pattern-2-wip`**, commit
-`debec4056a30a2206f73a30b40dec8aab9bb3b79`. Push succeeded on retry after one
-GitHub internal server error; the live remote tip was verified. Their source
-hashes and sizes are retained in `photo2/archive-manifest.json`.
-
-Returned to `photo-2-reconstruction`; all six paths are absent here and the
-working tree was verified clean before recording completion. The original
-`image-to-pattern-2` branch remains at `402663e`. No stashes or files were
-discarded. Existing ignored environment/render outputs remain local as intended.
-The archive is unfinished historical work, with no new correctness claim.
-
-The next task remains the geometry-fitting step above, using Astra/High in a
-fresh conversation. No geometry work was performed during this archive step.
+The six former untracked files (prior PNG plus five `pattern_from_photo` files)
+are archived byte for byte on **archive/image-to-pattern-2-wip** at
+`debec4056a30a2206f73a30b40dec8aab9bb3b79`. `photo2/archive-manifest.json`
+records hashes/sizes and the archive identity. Archive push succeeded after a
+GitHub internal-server-error retry and its remote tip was verified under R012.
+The original `image-to-pattern-2` stays at `402663e`; do not restore the archive
+without a task-specific reason. No stashes or user files were discarded.

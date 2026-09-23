@@ -248,3 +248,67 @@ empty stashes; prior files already archived. Changed three documentation files;
 diff/whitespace review only, no runtime tests needed. Publish under R010 and
 verify live remote tip and final status. Next remains gpt-6-astra / High, fresh
 conversation in `~/git/beads`, `/status`, then **Continue**.
+
+## R014 — Continue with supplied session status (2026-09-23)
+
+> continue
+
+User-supplied status attribution: session `01a0ced9-f9a5-7a62-a7c2-9b9043596c33`,
+Codex v0.155.1, gpt-6-astra / high, summaries auto, provider OpenAI,
+`~/git/beads`, Workspace (Ask for approval), Default collaboration mode,
+AGENTS.md loaded. Account identifier omitted; supplied plan Pro Lite. Weekly
+limit 48% left (reset 17:37 on 28 Sep), credits 283, Luna Reserve weekly 100%
+(reset 11:19 on 30 Sep). Supplied usage: total 263,301, input 219,451,
+cached input 12,278,656, output 43,850, reasoning 8,256. The user did not
+identify the usage counter's session/time span; retain as supplied, not as
+new work usage or a measured delta. No account inspection or model switch.
+
+Preflight: daisy, clean `photo-2-reconstruction` at `f6fb3b3`, matching upstream,
+no stashes. Fetch first failed because sandbox makes .git read-only; authorized
+escalated fetch succeeded, ahead/behind 0/0. Python 3.12.14 available in .venv.
+Process-name inspection in this sandbox sees Codex only; this does not establish
+other-machine inactivity. No computer transfer requested. One attempted patch
+to this log failed to match context and made no change.
+
+Scope: resume PLAN Step 2; create a fixed visible-bead annotation set across
+straight/bend patches, compare both hands and geometry parameters against it,
+measure withheld observations, and stop at comparison or evidenced ambiguity.
+Keep scene defaults provisional, preserve unknown order/color, and defer repeat
+and material inference. Publish scoped source/data/docs under R010.
+
+R014 outcome: completed the bounded geometry comparison at evidenced ambiguity;
+PLAN Step 2 remains open. Added 103 provisional assistant-labeled centers/colors
+across six straight/bend patches, a reproducible both-hand fitting command and
+four focused numerical tests. Train on 51 centers; calibrate 25 centers in three
+separate patches and withhold their other 27. This partial patch holdout gives
+RMSE 6.2728 px (negative) versus 6.4124 px (positive); local patch preferences
+disagree. Labels are incomplete and not human verified. The objective has density
+bias and seed-dependent solutions, so no hand, circumference count or dimension
+is accepted. Derived/tested exact pitch/count/linear-twist degeneracy and
+unrestricted projected-hand symmetry. Hole-axis tilt, body sizes and camera
+adequacy remain unmeasured; no hole-rim evidence was invented. Scene defaults,
+materials, repeat inference and original unknown indices are preserved.
+
+Validation: two complete deterministic fits reproduced identical numerical
+results. Final report's five source/input SHA-256 hashes match current files.
+All nine tests pass under Python 3.12.14; py_compile and git diff --check pass.
+Source patches and selected label/residual panels visually inspected, as detailed
+in progress.md. No POV-Ray code changed, so no legacy/render rerun; no rendered
+synthetic-image recovery, Mac/animation, real-repeat or perspective validation.
+No other agent, model change, remote message or computer transfer occurred.
+
+Updated plan/handoff/progress/README and added GEOMETRY.md with equations, search
+bounds, fitted parameters, holdout limits and commands. Publish nine scoped files;
+generated outputs and .venv remain ignored, with no unrelated untracked work.
+The final staged check, commit, push, live remote-tip and local-status verification
+follow under recurring R010 authorization; the final response records the actual
+commit and delivery result without another log-only commit.
+
+Next bounded task: POV-Ray synthetic patch benchmark with known bead IDs,
+body size, hole-axis tilt and occlusion, using Python center/outline scoring to
+test density and missing-label ambiguity. Stop at benchmark results/checks before
+real-photo refit or repeat search. Recommend gpt-6-astra / High and a fresh /new,
+then supplied /status and Continue. OpenAI Docs skill used solely for model
+handoff guidance; fetched official reasoning documentation supports this as a
+reasonable task-based recommendation, not a measured model comparison:
+https://developers.openai.com/api/docs/guides/reasoning . No account inspection.

@@ -39,7 +39,7 @@ sequence identification are separate claims. Instructions are in `REQUEST_LOG.md
 Stages can inform each other, but each result must retain its evidence and
 limitations. A visually plausible image alone cannot pass Step 4.
 
-## This step: Step 1 only, plus exploratory Step 4 diagnostics
+## Completed baseline: Step 1, plus exploratory Step 4 diagnostics
 
 This step produces a runnable initial scene and a reliable place to continue.
 It includes repository synchronization, all-branch Markdown review, Python 3.12
@@ -65,10 +65,23 @@ established. The exploratory period ranking establishes a baseline and tests
 the data path only.
 No animation, physical necklace measurement or Mac validation is in this step.
 
-## Following step
+## R014 step: fixed-observation geometry comparison — complete at ambiguity
 
-Build and fit a small labeled geometry dataset in several separated rope patches.
-The result should quantify center/width/phase errors and compare both hands on
-identical labeled beads. Use that result to decide what local twist/stretch
-model is necessary before another repeat search. Preserve this baseline and
-report an inconclusive comparison if the evidence cannot distinguish the signs.
+Created a provisional 103-center/color dataset across three straight and three
+bend patches. Compared both hands on identical annotations, with shared geometry
+trained on three patches and 27 withheld centers after partial calibration of
+three separate patches. Full results and equations: `photo2/GEOMETRY.md`.
+Withheld errors are 6.27/6.41 px and inconsistent across patches; neither hand
+is accepted. Pitch/count/linear-twist have an exact degeneracy. Hole-axis tilt,
+body dimensions and camera adequacy are unmeasured by these centers. Numerical
+fits condition on zero local twist and front-half visibility. No change to
+scene defaults or repeat claims. Step 2 as a whole remains open.
+
+## Next bounded step within Step 2
+
+Build a small POV-Ray synthetic patch benchmark with known bead IDs, body
+sizes, hole-axis tilt and true occlusion, for both hands. Use Python to score
+visible centers and outlines, test density bias and missing-label sensitivity,
+and establish which observations distinguish known geometry. Stop after the
+benchmark report and checks, including an explicit ambiguity if appropriate.
+Do not refit real-photo geometry or resume repeat inference during that step.

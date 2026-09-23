@@ -109,3 +109,13 @@ sign. The current best scores (~0.45 versus majority baselines ~0.41–0.43) do
 not establish recovery. Resolve bead-center correspondence and local twist
 before refining repeat inference. Unseen parts may remain unidentifiable from
 one view even with better fitting.
+
+## Fixed-observation geometry comparison (R014)
+
+Run `.venv/bin/python photo2/fit_geometry.py` for the six labeled-patch comparison.
+See [GEOMETRY.md](GEOMETRY.md) for annotations, equations, holdout protocol,
+results and exact ambiguities. The 103 provisional labels are shared by both
+hands; 27 centers are withheld after partial calibration of three validation
+patches. Withheld RMSE is 6.27 versus 6.41 source pixels, insufficient to choose
+handedness. Pitch/count/twist and hole-axis tilt remain underdetermined. This
+experiment leaves the original render settings and unknown chain indices intact.

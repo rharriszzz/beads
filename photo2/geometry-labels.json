@@ -1,0 +1,791 @@
+{
+  "schema": 1,
+  "image": "beads-photo-2.jpg",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "centerline_sha256": "49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36",
+  "annotation_method": "Assistant visual estimates in 4x bicubic displays of bilinearly sampled unwrapped photo crops. Approximate bead-body centers; dark-bead centers are particularly uncertain around glints. Not segmentation or human-verified labels. No model overlay used for annotation. Colors: 0 near-black, 1 red, 2 yellow-orange.",
+  "coordinate_definition": "s = patch start + local x, normal offset n; image xy = C(s) + n*N(s).",
+  "center_uncertainty_px": 4.0,
+  "color_confidence": "provisional visual labels; black boundaries and edge beads particularly uncertain",
+  "hole_axis_observations": [],
+  "hole_axis_note": "No unambiguous paired hole rims marked. Body elongation in this unwrap is not a measured hole axis.",
+  "unknown_chain_indices": true,
+  "patches": [
+    {
+      "id": "straight_a",
+      "start_s_px": 200,
+      "length_px": 160,
+      "shape": "straight",
+      "split": "train",
+      "beads": [
+        {
+          "id": "straight_a_00",
+          "x_px": 8,
+          "n_px": -12,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_01",
+          "x_px": 26,
+          "n_px": -31,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_02",
+          "x_px": 49,
+          "n_px": -13,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_03",
+          "x_px": 74,
+          "n_px": 7,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_04",
+          "x_px": 96,
+          "n_px": 24,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_05",
+          "x_px": 118,
+          "n_px": 35,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_06",
+          "x_px": 140,
+          "n_px": 40,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_07",
+          "x_px": 69,
+          "n_px": -22,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_08",
+          "x_px": 93,
+          "n_px": -6,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_09",
+          "x_px": 116,
+          "n_px": 13,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_10",
+          "x_px": 137,
+          "n_px": 24,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_11",
+          "x_px": 111,
+          "n_px": -32,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_12",
+          "x_px": 135,
+          "n_px": -19,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_13",
+          "x_px": 29,
+          "n_px": 31,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_14",
+          "x_px": 52,
+          "n_px": 40,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_15",
+          "x_px": 31,
+          "n_px": 9,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_16",
+          "x_px": 10,
+          "n_px": 27,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_a_17",
+          "x_px": 76,
+          "n_px": 34,
+          "color": 0,
+          "chain_index": null
+        }
+      ]
+    },
+    {
+      "id": "bend_a",
+      "start_s_px": 1850,
+      "length_px": 160,
+      "shape": "bend",
+      "split": "validation",
+      "beads": [
+        {
+          "id": "bend_a_00",
+          "x_px": 8,
+          "n_px": -18,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_01",
+          "x_px": 27,
+          "n_px": -36,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_02",
+          "x_px": 29,
+          "n_px": 2,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_03",
+          "x_px": 47,
+          "n_px": -16,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_04",
+          "x_px": 67,
+          "n_px": -36,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_05",
+          "x_px": 88,
+          "n_px": -46,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_06",
+          "x_px": 93,
+          "n_px": 18,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_07",
+          "x_px": 113,
+          "n_px": 0,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_08",
+          "x_px": 134,
+          "n_px": -23,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_09",
+          "x_px": 75,
+          "n_px": 32,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_10",
+          "x_px": 52,
+          "n_px": 18,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_11",
+          "x_px": 72,
+          "n_px": -5,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_12",
+          "x_px": 95,
+          "n_px": -23,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_13",
+          "x_px": 115,
+          "n_px": -38,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_14",
+          "x_px": 120,
+          "n_px": 29,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_15",
+          "x_px": 139,
+          "n_px": 16,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_a_16",
+          "x_px": 34,
+          "n_px": 27,
+          "color": 0,
+          "chain_index": null
+        }
+      ]
+    },
+    {
+      "id": "bend_b",
+      "start_s_px": 3920,
+      "length_px": 160,
+      "shape": "bend",
+      "split": "train",
+      "beads": [
+        {
+          "id": "bend_b_00",
+          "x_px": 15,
+          "n_px": -10,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_01",
+          "x_px": 38,
+          "n_px": -28,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_02",
+          "x_px": 38,
+          "n_px": 10,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_03",
+          "x_px": 61,
+          "n_px": -9,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_04",
+          "x_px": 82,
+          "n_px": -28,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_05",
+          "x_px": 108,
+          "n_px": -38,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_06",
+          "x_px": 64,
+          "n_px": 22,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_07",
+          "x_px": 88,
+          "n_px": 31,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_08",
+          "x_px": 129,
+          "n_px": 2,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_09",
+          "x_px": 151,
+          "n_px": -20,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_10",
+          "x_px": 151,
+          "n_px": 14,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_11",
+          "x_px": 85,
+          "n_px": 0,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_12",
+          "x_px": 108,
+          "n_px": 10,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_13",
+          "x_px": 108,
+          "n_px": -20,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_14",
+          "x_px": 130,
+          "n_px": -33,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_b_15",
+          "x_px": 19,
+          "n_px": 25,
+          "color": 1,
+          "chain_index": null
+        }
+      ]
+    },
+    {
+      "id": "straight_b",
+      "start_s_px": 4520,
+      "length_px": 160,
+      "shape": "straight",
+      "split": "validation",
+      "beads": [
+        {
+          "id": "straight_b_00",
+          "x_px": 19,
+          "n_px": 2,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_01",
+          "x_px": 39,
+          "n_px": -17,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_02",
+          "x_px": 61,
+          "n_px": -32,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_03",
+          "x_px": 84,
+          "n_px": -37,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_04",
+          "x_px": 106,
+          "n_px": -30,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_05",
+          "x_px": 128,
+          "n_px": -17,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_06",
+          "x_px": 149,
+          "n_px": -31,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_07",
+          "x_px": 152,
+          "n_px": 0,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_08",
+          "x_px": 86,
+          "n_px": -15,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_09",
+          "x_px": 65,
+          "n_px": 6,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_10",
+          "x_px": 42,
+          "n_px": 22,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_11",
+          "x_px": 22,
+          "n_px": 34,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_12",
+          "x_px": 112,
+          "n_px": 36,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_13",
+          "x_px": 91,
+          "n_px": 25,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_14",
+          "x_px": 111,
+          "n_px": 6,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_15",
+          "x_px": 134,
+          "n_px": 21,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_16",
+          "x_px": 66,
+          "n_px": 36,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_b_17",
+          "x_px": 14,
+          "n_px": -29,
+          "color": 0,
+          "chain_index": null
+        }
+      ]
+    },
+    {
+      "id": "bend_c",
+      "start_s_px": 5450,
+      "length_px": 160,
+      "shape": "bend",
+      "split": "train",
+      "beads": [
+        {
+          "id": "bend_c_00",
+          "x_px": 35,
+          "n_px": -47,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_01",
+          "x_px": 62,
+          "n_px": -37,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_02",
+          "x_px": 86,
+          "n_px": -48,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_03",
+          "x_px": 131,
+          "n_px": -23,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_04",
+          "x_px": 152,
+          "n_px": -39,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_05",
+          "x_px": 25,
+          "n_px": 0,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_06",
+          "x_px": 45,
+          "n_px": 15,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_07",
+          "x_px": 91,
+          "n_px": 11,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_08",
+          "x_px": 110,
+          "n_px": -9,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_09",
+          "x_px": 132,
+          "n_px": 14,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_10",
+          "x_px": 152,
+          "n_px": -9,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_11",
+          "x_px": 17,
+          "n_px": -30,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_12",
+          "x_px": 41,
+          "n_px": -21,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_13",
+          "x_px": 69,
+          "n_px": -7,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_14",
+          "x_px": 93,
+          "n_px": -25,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_15",
+          "x_px": 110,
+          "n_px": -41,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "bend_c_16",
+          "x_px": 66,
+          "n_px": 28,
+          "color": 2,
+          "chain_index": null
+        }
+      ]
+    },
+    {
+      "id": "straight_c",
+      "start_s_px": 7000,
+      "length_px": 160,
+      "shape": "straight",
+      "split": "validation",
+      "beads": [
+        {
+          "id": "straight_c_00",
+          "x_px": 12,
+          "n_px": -24,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_01",
+          "x_px": 34,
+          "n_px": -38,
+          "color": 2,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_02",
+          "x_px": 37,
+          "n_px": -6,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_03",
+          "x_px": 59,
+          "n_px": -27,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_04",
+          "x_px": 81,
+          "n_px": -33,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_05",
+          "x_px": 122,
+          "n_px": -34,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_06",
+          "x_px": 147,
+          "n_px": -23,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_07",
+          "x_px": 15,
+          "n_px": 14,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_08",
+          "x_px": 106,
+          "n_px": 16,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_09",
+          "x_px": 91,
+          "n_px": 32,
+          "color": 1,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_10",
+          "x_px": 61,
+          "n_px": 23,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_11",
+          "x_px": 40,
+          "n_px": 32,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_12",
+          "x_px": 76,
+          "n_px": 3,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_13",
+          "x_px": 101,
+          "n_px": -14,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_14",
+          "x_px": 126,
+          "n_px": -1,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_15",
+          "x_px": 149,
+          "n_px": 13,
+          "color": 0,
+          "chain_index": null
+        },
+        {
+          "id": "straight_c_16",
+          "x_px": 131,
+          "n_px": 31,
+          "color": 0,
+          "chain_index": null
+        }
+      ]
+    }
+  ],
+  "center_uncertainty_note": "4 px is an estimated typical annotation scale, not calibrated statistical error or a hard bound; dark and occluded beads can be worse."
+}
