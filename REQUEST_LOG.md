@@ -312,3 +312,65 @@ then supplied /status and Continue. OpenAI Docs skill used solely for model
 handoff guidance; fetched official reasoning documentation supports this as a
 reasonable task-based recommendation, not a measured model comparison:
 https://developers.openai.com/api/docs/guides/reasoning . No account inspection.
+
+## R015 — Continue with separate prior/current session status (2026-09-23)
+
+> continue
+
+Supplied prior-session completion: worked 11m 24s, done 11:31 AM; resume session
+`01a0ced9-f9a5-7a62-a7c2-9b9043596c33`, Codex v0.155.1, gpt-6-astra / high.
+Supplied token usage: total 85,641; input 67,115 (+1,004,544 cached); output
+18,526 (reasoning 4,056). These are prior-session figures, not this step's usage.
+Current supplied /status: session `01a0cee6-0e62-7592-8fa0-e8a855a02d7f`,
+Codex v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider,
+`~/git/beads`, Workspace (Ask for approval), Default collaboration, AGENTS.md.
+Account identifier omitted; Pro Lite. Weekly 48% left (reset 17:37 on 28 Sep),
+283 credits; Luna Reserve weekly 100% (reset 11:33 on 30 Sep). No current token
+usage supplied, account inspection or model switch.
+
+Preflight: daisy/WSL, clean `photo-2-reconstruction` at `01dd173`, no stashes;
+fetch required escalation for read-only .git, then succeeded with ahead/behind
+0/0. Python 3.12.14 and POV-Ray available. Sandbox process listing sees Codex
+only and cannot establish other-machine inactivity. No transfer requested.
+An initial read used nonexistent `photo2/test_geometry.py`; corrected to
+`test_fit_geometry.py`, with no writes from that failed read.
+
+Scope: known-geometry POV-Ray synthetic patch benchmark for both hands, measured
+occlusion, center/outline scores and missing-label/density sensitivity. Stop at
+reproducible results or evidenced ambiguity; no photo refit or repeat inference.
+
+R015 outcome: completed the bounded benchmark. Added known-geometry, both-hand
+POV-Ray patches, exact ID masks, isolated-body visibility, center/centroid and
+boundary/silhouette scoring, 24 trials at each missing-label/noise condition,
+and four focused checks. Dense stress geometry wins all full-label sigma=2
+center trials; shape/tilt/depth alternatives tie noiseless center truth. Perfect
+internal boundaries distinguish those tested alternatives; depth-reflected
+silhouettes and pitch/count/twist-equivalent full masks remain exactly identical.
+Twelve truly visible beads per hand violate the old front-half cutoff. No real
+photo geometry accepted or scene defaults changed. See `photo2/SYNTHETIC.md`.
+
+Validation: 13 tests pass under Python 3.12.14, including actual POV-Ray occlusion;
+py_compile passes. Two complete 84-render runs reproduce every numerical score,
+86 common decoded images and 24 include files. A raw PNG hash-equality check
+failed because POV-Ray embeds render timestamps; decoded comparison and chunk
+inspection resolved it. Final report retains actual source/image hashes, all
+verified against files. Beauty and both-hand boundary panels visually inspected.
+No legacy render rerun (shared/legacy sources unchanged), photo refit, material
+fit, bend/camera comparison, shaded-image segmentation or real-repeat inference.
+Perfect masks and fixed registration limit the result; no segmentation robustness
+or continuous inverse recovery is claimed. No delegation or computer transfer.
+
+Updated PLAN, handoff, progress and README; added SYNTHETIC.md, the Python/POV-Ray
+benchmark and tests. Publish these nine scoped files under R010; generated
+reports/images/includes/logs and .venv intentionally remain ignored. Final staged
+checks, commit, push, live remote-tip verification and local-status inspection
+follow; final response records the verified commit without another log-only commit.
+
+Next: practical boundary extraction on shaded synthetic patches with controlled
+blur/noise and fitted local alignment, stopping at a validation report before photo
+refit. Recommend gpt-6-astra / High and a fresh /new, then /status and Continue.
+OpenAI Docs skill used for this task-based handoff recommendation; fetched official
+reasoning guidance supports complex scientific/coding work at higher effort,
+without establishing a measured model comparison:
+https://developers.openai.com/api/docs/guides/reasoning . No model switch or account
+inspection. Current-session token usage was not supplied and is not invented.

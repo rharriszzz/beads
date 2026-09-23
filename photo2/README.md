@@ -119,3 +119,14 @@ hands; 27 centers are withheld after partial calibration of three validation
 patches. Withheld RMSE is 6.27 versus 6.41 source pixels, insufficient to choose
 handedness. Pitch/count/twist and hole-axis tilt remain underdetermined. This
 experiment leaves the original render settings and unknown chain indices intact.
+
+## Synthetic occlusion benchmark (R015)
+
+Run `.venv/bin/python photo2/synthetic_benchmark.py` for the both-hand, known-geometry
+POV-Ray experiment. [SYNTHETIC.md](SYNTHETIC.md) describes its exact ID/visibility
+masks, center and outline scores, missing-label/noise trials and reproduction.
+Center-only scores favor dense alternatives; perfect internal boundaries distinguish
+tested shape/tilt/depth alternatives, while the pitch/count/twist equivalence stays
+pixel-identical. This is discrete synthetic discrimination with fixed registration,
+not extraction from shaded images or an accepted photo geometry. Generated reports,
+images, include files and logs remain under ignored `output/`.

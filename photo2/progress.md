@@ -102,3 +102,47 @@ R014 final-run SHA-256 provenance:
 - `photo2/centerline.json`: `49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36`
 - `beads-photo-2.jpg`: `eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb`
 - Generated `output/geometry-fit/report.json`: `1c6c18da6944541e566689d8efe0c98c3e5ea0f911ad7bf92c171fee3e9ab705`
+
+## 2026-09-23 — R015 synthetic occlusion benchmark
+
+Started on daisy at clean `01dd173`, tracking `photo-2-reconstruction`; fetch
+confirmed 0/0 after escalation for read-only .git. User's old usage/current
+session status are separately attributed in R015. Python 3.12.14, NumPy 2.5.3,
+SciPy 1.18.1, Pillow 12.3.0, POV-Ray 3.7.0.10.unofficial.
+
+Added `synthetic_benchmark.py`, `synthetic-patch.pov` and four focused tests.
+Each complete run renders 84 images: 24 candidate ID masks, two beauty images
+and 58 isolated reference beads. Ground truth has 29 visible centers per hand;
+12 per hand are behind the cylinder's front half. Reference bodies are certified
+non-intersecting by enclosing spheres. Partial occlusion affects 15/19 beads;
+centroid-to-center RMS shifts are 1.5336/1.4347 units (negative/positive hand).
+Exact parameters, equations, metrics and limitations are in `SYNTHETIC.md`.
+
+Both-hand density stress candidates win all 24 full-label trials at sigma=2
+coordinate noise. Center scores also cannot distinguish body size, tilt or depth
+reflection. Internal boundaries distinguish these particular alternatives under
+perfect segmentation, including tested 75%-missing instance subsets; silhouette
+alone leaves reflection exactly ambiguous. Pitch/count/twist-equivalent geometry
+has pixel-identical ID masks. No geometry accepted for the real photo.
+
+First run: `output/synthetic-benchmark/`. After adding recorded trial IDs/protocol,
+source-test hash and runtime image-invariant/visibility assertions, second full
+run: `output/synthetic-benchmark-verified/`. All candidate scores and every prior
+trial score reproduce exactly. All 86 common decoded image arrays match, as do
+24 include files byte for byte. An initial raw-hash assertion failed: POV-Ray's
+84 PNGs contain changing render timestamps in tIME/tEXt chunks. Pixel comparison
+and metadata inspection resolved this; actual per-run file hashes are retained.
+All final report source/artifact hashes match their files. Final report SHA-256:
+`398b9424a9b8acb4efb33b8eb4c22745ed2b9b4caaadf545471a685d88043a66`.
+
+Inspected negative-hand beauty and both-hand ID/boundary comparison panels.
+Thirteen tests pass, including a real POV-Ray front/rear occlusion integration
+test; py_compile passes. Final diff/whitespace checks precede publication. No
+legacy scene changes, so no repeat legacy pixel test. No photo refit, material
+optimization, curved/perspective test, segmentation from beauty images or repeat
+inference. Outlines stay exact when centers are noisy; no robustness claim follows.
+No sub-agent work, model change, remote messaging or computer transfer.
+
+Next: shaded synthetic boundary extraction with controlled blur/noise and local
+alignment fitting; validate errors/ambiguities against hidden mask truth before
+photo refit. Step 2 remains open. Generated outputs and .venv stay ignored.

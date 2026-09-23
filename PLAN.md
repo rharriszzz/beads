@@ -77,11 +77,22 @@ body dimensions and camera adequacy are unmeasured by these centers. Numerical
 fits condition on zero local twist and front-half visibility. No change to
 scene defaults or repeat claims. Step 2 as a whole remains open.
 
+## R015 step: synthetic occlusion benchmark — complete at limited discrimination
+
+Added a both-hand POV-Ray benchmark with exact instance/isolated masks and known
+body geometry. Center-only scoring favors dense stress geometry under noise and
+cannot distinguish depth reflection, size or tilt here. Exact internal boundaries
+distinguish those discrete alternatives; silhouette alone does not resolve depth
+reflection. The pitch/count/twist gauge remains pixel-identical. Missing-label
+trials retain unknown indices; mask centroids and true centers are separate.
+Details, checks and limitations: `photo2/SYNTHETIC.md`. No photo settings changed.
+This is fixed-registration candidate discrimination with perfect masks, not
+continuous geometry recovery; Step 2 remains open.
+
 ## Next bounded step within Step 2
 
-Build a small POV-Ray synthetic patch benchmark with known bead IDs, body
-sizes, hole-axis tilt and true occlusion, for both hands. Use Python to score
-visible centers and outlines, test density bias and missing-label sensitivity,
-and establish which observations distinguish known geometry. Stop after the
-benchmark report and checks, including an explicit ambiguity if appropriate.
-Do not refit real-photo geometry or resume repeat inference during that step.
+Test practical boundary observations from shaded synthetic patches with controlled
+blur/noise and fitted local alignment. Compare extracted observations against
+hidden instance-mask truth, measure alternative rejection/ambiguity under
+observation error, and retain the exact gauge equivalence. Stop at a reproducible
+validation report and focused checks before real-photo refit or repeat search.
