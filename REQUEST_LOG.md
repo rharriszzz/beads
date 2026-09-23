@@ -1267,3 +1267,92 @@ inference-audit-reproduced-verified so source hashes match the final files. All
 208 artifacts are identical to each other and the earlier inspected run; reports
 agree except command output path. The final report hash above is the verified
 run's hash. No logic changed or additional runtime suite was needed for whitespace.
+
+## R040 — Supplied session status; ask questions then wait (2026-09-23)
+
+> ansk any questions you have now, then wait.  If you have no questions, just keep going.
+
+User supplied prior-session completion: worked 17m 47s, done 7:02 PM;
+session `01a0d068-9ed3-7372-9120-2113f652b7ba`, titled "Summarize Codex work",
+Codex v0.155.1, gpt-6-astra high, ~/git/beads. Supplied prior tokens:
+total 138,864; input 104,400 (+2,748,416 cached); output 34,464 (reasoning 7,235).
+These are previous-session totals, not measurements of this session.
+
+Current supplied session: `01a0d082-2e8a-7100-9d66-ab498610e013`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 38% left, resets 17:37 on 28 Sep;
+credits 283; Luna Reserve Weekly 100% left, resets 19:02 on 30 Sep.
+No current token totals supplied; no account inspection or model change.
+
+Read AGENTS.md, handoff/saved answers, recent request log and INFERENCE.md.
+Preflight: daisy, clean photo-2-reconstruction at
+1365b4b8cd72de198584a77fdb560be146452f60, tracking origin/photo-2-reconstruction,
+cached ahead/behind 0/0, no stashes. No fetch/live remote verification, transfer
+or delegation. Save two new pending questions in the handoff:
+
+1. When one neighbor is ambiguous, does the maker trace a longer row, check a
+   three-bead triangle, or use another cue? Context: joint constraints using 1+6=7.
+2. What specific continuity rule governs photo 2's red/yellow/black spirals:
+   same-color paths along ±6/±7 diagonals, or another graph-paper rule?
+
+Outcome: ask and wait as requested. No inference experiment, render, source
+implementation, commit or push. Opening records remain local for the follow-up.
+Runtime tests skipped; documentation whitespace checked. One documentation patch
+failed on unmatched request-log context without edits, then was corrected.
+Next task remains the synthetic joint-neighbor edge/component-index report,
+before photo segmentation, sequence integration or fitting. Stay here with
+gpt-6-astra / High; no additional /new needed. No questions repeated from saved
+answers about direction families, bead shape, movement, color or repeat bounds.
+
+## R041 — Maker advice and request for a marked hard case (2026-09-23)
+
+> There is never a time when a neighbor is ambiguous unless it is close to the edge, I think that may be because ai general purpose vision may have a way to go, especially when encountering patters that are relatively rare.  You definately want to trace both in the 1 direction as well as 6 and 7.  Can you find a hard case?  and like draw a circle or rectangle around it in the context of the whole image.  The spiral is such that it changes directions like +1 for some steps, then +7 for several steps, then -1 for some steps, then -7 for some steps.  I don't remember whether I used 6 or 7 or both.
+
+R040 questions answered. Preserve the maker's edge-only ambiguity guidance and
+trace all three families; do not equate heuristic failure with human ambiguity.
+The initial spiral recollection is corrected by R042 below.
+
+Preflight: daisy, photo-2-reconstruction at 1365b4b, tracking origin; only R040
+REQUEST_LOG/SESSION_HANDOFF changes present, no stashes. Fetch succeeded and
+ahead/behind 0/0; no pull, machine transfer, delegation or new usage supplied.
+Python 3.12.14. Read saved handoff/answers, latest log, INFERENCE.md, plan/progress
+and existing audit source/results; visually inspected photo 2, full synthetic
+render and prior bend panel. Selected an actual saved algorithm failure.
+
+Outcome: new show_neighbor_failure.py and NEIGHBOR_FAILURE.md produce the full
+synthetic render with a locator rectangle and magnified labeled detail. Saved
+shape/T12/seed17/convention+1 proposes 611 → 613 as +7; true difference is +2.
+Intermediate 612 is visible and the two actual +1 steps are shown. Circles mark
+visible-mask centroids, not body centers; no physical thread tracing claimed.
+The case is illustrative, selected after inspecting errors, not a new accuracy
+trial or a demonstrated hard case for a person. It is not an indexed photo case.
+
+SVG embeds the unchanged source PNG; system librsvg/Cairo renders the PNG preview.
+Reproduce: .venv/bin/python photo2/show_neighbor_failure.py
+Final output: photo2/output/neighbor-failure/whole-image-failure.png and .svg,
+with source/artifact hashes, settings and coordinates in report.json.
+Saved manifests validate the three audit JSON inputs and beauty render. Exact
+false-edge and visible-intermediate assertions pass. Two runs reproduce both
+artifacts byte for byte. Recorded hashes and embedded original bytes verified;
+compilation, whitespace and visual figure review pass. One exploratory import
+failed because photo2 was absent from sys.path; corrected. Dependency probe
+found no Python SVG renderer/CLI but did find installed librsvg/Cairo. No new
+dependency installed. No inference tests rerun for this display-only change.
+No algorithm changes, new scene render, segmentation, sequence fit or photo fit.
+
+Update plan/progress/handoff, publish six scoped source/docs files including
+R040 records, then verify live remote tip and final status. Generated diagrams,
+reports, reproduced outputs and environments stay ignored. Next: maker review
+of the example then joint 1/6/7 tracing with lattice checks and existing controls,
+stopping after synthetic edge/component-index evidence. Stay here with
+gpt-6-astra / High; no /new needed now and no new end-of-round questions.
+
+## R042 — Spiral recollection corrected during R041 work (2026-09-23)
+
+> anyway, the spirals formed a rectange, sort of.  So I think it was not +1 and -1, but plus and minus 6 and 7.
+
+Saved this as the latest construction recollection: roughly rectangular paths,
+probably using ±6 and ±7. Supersedes R041's tentative ±1/±7 turns. Retain the
+maker's uncertainty; no exact path lengths or pattern constraints invented.
+Included in the R041 docs/handoff; the illustration task continues unchanged.

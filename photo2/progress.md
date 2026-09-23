@@ -413,3 +413,26 @@ orientation, preserving alternatives and abstentions. Retain this baseline and
 failure controls; stop after synthetic edge/component-index report/checks before
 photo segmentation, sequence integration or fitting. gpt-6-astra / High, fresh
 /new recommended. No pending or end-of-round questions.
+
+## 2026-09-23 — R040–R042 questions, advice and one illustrated failure
+
+Saved separately attributed session status and answered advice questions.
+The maker sees neighbor ambiguity only at edges and recommends tracing all
+three directions. The spiral forms a rough rectangle, probably using ±6/±7;
+this later correction supersedes the initial ±1/±7 recollection.
+
+Created show_neighbor_failure.py and NEIGHBOR_FAILURE.md: whole synthetic render
+with a rectangle and detail of the false 611 → 613 edge (predicted +7, actual +2).
+Visible intermediate 612 is marked; no human/photo ambiguity is claimed.
+SVG embeds original image bytes unchanged; system librsvg/Cairo creates its PNG.
+Saved input manifests, exact false edge, intermediate visibility, source/artifact
+hashes and embedded image equality pass. Both diagram artifacts reproduce byte
+for byte; compilation and whitespace pass; figure visually inspected. Exploratory
+import initially lacked photo2 on sys.path, corrected without source changes.
+No inference suite, new scene render, segmentation or photo fit needed/run.
+
+Fetch succeeded on daisy, branch photo-2-reconstruction, ahead/behind 0/0.
+Publish six scoped source/docs files including R040 local records; generated
+diagrams/reports and .venv remain ignored. Next: review this case then trace all
+three families jointly with lattice checks, stopping at synthetic edge/index
+evidence. Stay in this conversation, gpt-6-astra / High; no /new needed now.

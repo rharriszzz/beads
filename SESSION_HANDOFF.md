@@ -1,5 +1,70 @@
 # Beads session handoff
 
+## R041/R042 — concrete failure illustrated; maker advice saved
+
+R040 questions are answered. The maker says neighbors are never ambiguous except
+near the edge and advises tracing all three directions: 1, 6 and 7. Do not frame
+the present heuristic's failures as demonstrated human/photo ambiguity.
+The color paths form a rough rectangle. R042 corrects the initial ±1/±7
+recollection: probably ±6 and ±7 instead. Exact directions remain tentative.
+
+Requested bounded work: find a hard case and mark it in whole-image context.
+Completed a reproducible **synthetic baseline error** diagram, not photo indexing:
+`photo2/output/neighbor-failure/whole-image-failure.png` (also self-contained SVG).
+See **photo2/NEIGHBOR_FAILURE.md**; reproduce using
+`.venv/bin/python photo2/show_neighbor_failure.py`.
+R039 shape/T12/seed17/convention+1 proposes 611 → 613 as +7, actual +2.
+Bead 612 is visible; detail shows the true two-step +1 path. Circles are visible-
+mask centroids, not physical centers. Original render bytes remain unchanged.
+
+Preflight: daisy, photo-2-reconstruction at 1365b4b, only R040's two local record
+edits. Fetch succeeded; ahead/behind 0/0, no stashes, pull or machine transfer.
+Python 3.12.14. Saved source/artifact manifests checked for the illustrated inputs;
+two runs reproduce both diagrams byte for byte, all recorded hashes and embedded
+source bytes verified, compilation/whitespace checked and final figure inspected.
+One exploratory import failed because photo2 was absent from sys.path; corrected.
+No inference suite rerun needed for this display-only script. No new inference,
+scene render, photo segmentation or fitting. No delegation/new supplied usage.
+Publish the six scoped source/docs files including R040 records; final response
+reports verified delivery. Generated evidence and environments remain ignored.
+
+**Next:** maker review of this example, then trace directions 1/6/7 jointly with
+local lattice constraints and existing controls, stopping after a synthetic
+edge/component-index report before photo segmentation or fitting. Stay in this
+conversation with **gpt-6-astra / High**; no additional `/new` needed now. No
+pending questions and no new end-of-round questions.
+
+## R040 opening — answered by R041/R042
+
+2026-09-23: user supplied new session status and requested "ansk any questions
+you have now, then wait. If you have no questions, just keep going."
+Read saved construction answers and R039's INFERENCE.md. No experiment starts
+from this opening; ask these two new advice questions and wait:
+
+1. When one neighbor is ambiguous, do you resolve it by tracing a longer row of
+   beads, checking a small triangle of three neighboring beads, or another cue?
+   The next synthetic test will check neighbors jointly using 1+6=7.
+2. You said photo 2's red/yellow/black spirals were designed to be continuous in
+   a specific way. What is that rule—do same-color paths follow the ±6 or ±7
+   diagonals, or is continuity defined differently on your graph paper?
+
+Current supplied session: `01a0d082-2e8a-7100-9d66-ab498610e013`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 38% left (resets 17:37 on 28 Sep),
+283 credits; Luna Reserve Weekly 100% left (resets 19:02 on 30 Sep).
+No current-session token totals supplied. R040 in REQUEST_LOG.md separately
+records the previous session's totals. No account inspection or model change.
+
+Preflight: daisy, clean photo-2-reconstruction at
+`1365b4b8cd72de198584a77fdb560be146452f60`, tracking origin with cached
+ahead/behind 0/0, no stashes. No fetch/live remote verification, machine transfer
+or delegation. Only request/handoff records edited locally; no commit or push.
+Runtime tests skipped for this record-only opening; whitespace checked.
+Next task/stopping point remains R039's joint-neighbor synthetic report, before
+photo segmentation, sequence integration or fitting. Stay in this conversation
+with gpt-6-astra / High; no further /new needed for the follow-up.
+
 ## R039 completed — outline cues help; automatic indexing remains open
 
 Updated 2026-09-23. Continued after R037/R038 answers, on daisy,

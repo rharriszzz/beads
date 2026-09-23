@@ -378,3 +378,19 @@ this fixed baseline and missing/crossing controls; evaluate against withheld tru
 Stop after synthetic edge/component-index evidence and checks, before photo
 segmentation, sequence integration or fitting. Recommend gpt-6-astra / High with
 a fresh /new for that distinct algorithm task. No questions at round end.
+
+## R041/R042: illustrate a concrete failure — complete
+
+NEIGHBOR_FAILURE.md and show_neighbor_failure.py locate one saved synthetic
+false edge in the whole render, with a labeled detail. The predicted +7 edge
+611 → 613 has true difference +2; visible bead 612 gives the intervening +1 path.
+This is an algorithm failure, not established human/photo ambiguity. Source and
+artifact hashes, embedded original bytes and two-run reproducibility checked.
+No inference or photo-fitting work was started by this illustration request.
+
+The maker says ambiguity occurs only near edges and advises tracing 1, 6 and 7.
+The rough rectangular color paths probably use ±6/±7, correcting the initial
+±1 recollection; exact pattern steps remain unspecified. Carry these into the
+next bounded joint-tracing/constraint test without making color-based truth
+assumptions. Stop after synthetic edge/component-index checks. Stay here with
+gpt-6-astra / High for this example's review; no /new needed now.
