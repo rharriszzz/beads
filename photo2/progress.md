@@ -255,3 +255,12 @@ See VISIBILITY.md. Next: primary-source review and choice of an established
 registration/periodic-sequence approach with a concrete synthetic validation plan;
 stop before implementation/photo refit. Retain Astra/High; fresh /new recommended
 for that distinct task, with opening questions based on saved construction answers.
+
+## 2026-09-23 — R024 new-session status and opening questions
+
+Read saved construction answers and R023 visibility evidence. Asked about intended
+photo-2 colors/similar shades and occasional stringing errors; answers pending in
+the handoff. Recorded prior-session timing/usage separately from current supplied
+status. No literature review, experiment, code or scene changes. Next task remains
+the primary-source method choice and concrete synthetic test plan. Stay here with
+the retained Astra/High recommendation; no further /new needed for this round.

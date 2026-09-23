@@ -220,3 +220,8 @@ test plan, before implementing recovery or refitting the photo. This follows the
 user's R021 direction to use existing algorithms and supersedes the earlier
 next-visibility task, now complete. Open the next round with contextualized advice
 questions; do not repeat R019–R022's saved construction answers.
+
+R024 opens the new session with two questions about the intended photo-2 palette
+and whether to allow occasional stringing errors. Answers are pending in the
+handoff. Method-selection scope/stopping point unchanged; no review or experiment
+started by the status/questions request. Stay in the current conversation.

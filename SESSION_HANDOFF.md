@@ -1,10 +1,27 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R023 legacy repeat visibility. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `271fdca` matched origin;
-R023 completes the illustrated visibility step. The final
+Updated 2026-09-23 after R024 opening questions/status. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. R024 entry `a3f130f` matched origin;
+R023 completed the illustrated visibility step. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
+
+R024 opens the new round; no method review or experiment has started. Current
+supplied session is `01a0d01f-e860-71b3-9e18-4bfc4162d0cc`, gpt-6-astra / High.
+Prior-session timing/token totals belong to `01a0d004-cac1-7443-88ad-b2ff19ab6dfa`;
+see REQUEST_LOG for separate attribution. Stay in this conversation for answers
+and the planned method-selection task; no additional /new is needed now.
+
+Opening questions pending (asked through the question tool):
+
+1. For photo 2, which bead colors were intentionally used, including similar
+   shades that reconstruction should keep separate?
+2. Are stringing repeats checked/corrected before crochet, or should recovery
+   allow occasional extra, missing or wrong-color beads? Any known photo-2
+   exceptions? This asks about errors, not the already answered whole-repeat rule.
+
+Save replies here; do not repeat these questions or assume answers. They inform
+the observation/error model without creating an approval gate.
 
 Read `PLAN.md`, latest `REQUEST_LOG.md`, `photo2/progress.md` and
 **`photo2/VISIBILITY.md`**; `photo2/PRACTICE.md` is its source-scene context.
@@ -151,12 +168,13 @@ refitting. Do not automatically resume the unrestricted R015 model. Continue
 with the adequate 2,698-bead working estimate; do not revisit it merely because
 of the maker's usual necklace range or restrict periods to its exact divisors.
 
-Recommend a **fresh `/new`** for that distinct method-selection task. Use
+R023 recommended a fresh `/new`; R024 supplies the new session. **Stay here** for
+the opening answers and that distinct method-selection task. Use
 **gpt-6-astra / High**, retaining the prior recommendation. This is a task-based
 recommendation for scientific/visibility
 reasoning, consistent with [official reasoning guidance](https://developers.openai.com/api/docs/guides/reasoning)
 checked through OpenAI Docs in R016, not a measured model comparison. User-supplied
-prior usage and current status are now separately attributed under R020. No current
+prior usage and current status are now separately attributed under R024. No current
 usage was invented, model switched or account inspected.
 
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live
@@ -169,7 +187,7 @@ these are not extra approval gates. R020's questions have now been answered by
 R021's natural placement and whole-repeat construction guidance above. Do not
 repeat them or invent specific bead edits at the join. R023 continued the round
 after those answers, without another question gate. Open the next work round
-with contextualized advice questions; none are newly pending at this step's end.
+with contextualized advice questions; R024's pending questions are saved above.
 
 ## Preserved history
 

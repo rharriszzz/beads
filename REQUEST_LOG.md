@@ -681,3 +681,47 @@ photo refit. Retain gpt-6-astra / High; recommend fresh /new for that distinct t
 This retains the earlier model recommendation, not a new measured comparison.
 R020's opening questions were answered in R021/R022; do not append new questions
 at this round's end, and preserve those answers for the next opening discussion.
+
+## R024 — New-session status and invitation for opening questions (2026-09-23)
+
+> ready for any questions you may have
+
+User supplies prior-session completion/tokens and current /status. Read saved
+answers and ask two focused opening questions under R020. This opens discussion;
+it does not launch the next method review or experiment.
+
+Prior supplied session: `01a0d004-cac1-7443-88ad-b2ff19ab6dfa`, title "Ask questions
+before each round", Codex v0.155.1, gpt-6-astra / high, ~/git/beads. Reported work
+15m 13s, done 5:10 PM. Supplied tokens: total 155,035; input 122,512
+(+2,465,280 cached); output 32,523 (reasoning 7,440). These are user-supplied
+session figures, not measured here or assumed specific to one round.
+
+Current supplied session: `01a0d01f-e860-71b3-9e18-4bfc4162d0cc`, Codex v0.155.1,
+gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads, Workspace
+(Ask for approval), Default collaboration mode, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly limit 44% left, resets 17:37 on 28 Sep;
+credits 283; Luna Reserve Weekly 100% left, resets 17:15 on 30 Sep. No current
+session token totals supplied. No account inspection or automatic model change.
+
+Asked through the question tool, answers pending:
+
+1. For the necklace in photo 2, which bead colors did you intentionally use?
+   In particular, are there similar shades that reconstruction should keep separate?
+2. When stringing a repeating pattern, do you check/correct it before crocheting,
+   or should reconstruction allow occasional extra, missing or wrong-color beads?
+   Any known exceptions in photo 2 would be useful.
+
+Questions inform palette uncertainty and the error model, without repeating the
+saved natural-placement, whole-repeat or adequate-count answers. Saved pending
+questions in handoff. Next remains primary-source method selection and a concrete
+synthetic validation plan, stopping before implementation/photo refit. Retain
+gpt-6-astra / High; stay here, no further /new needed now.
+
+Preflight: daisy/WSL, clean photo-2-reconstruction at a3f130f, tracking origin,
+no stashes. Initial sandbox fetch could not write .git/FETCH_HEAD; escalated
+fetch succeeded, ahead/behind 0/0. No transfer or delegation. Read AGENTS, handoff,
+recent log, plan/progress and VISIBILITY notes. An initial multi-file patch failed
+on handoff context and changed nothing; corrected with a smaller patch.
+Documentation only: review diff/whitespace; runtime tests/renders unnecessary.
+Publish four scoped docs under R006/R010 and verify live remote tip/final status;
+final response records delivery. Generated outputs and .venv remain excluded.
