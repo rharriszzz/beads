@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 for R020 beginning-of-round questions. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `ee72bec` matched origin;
-R020 updates question timing and saves supplied session status; documentation only. The final
+Updated 2026-09-23 for R021 placement and repeat-count answers. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `0be03ce` matched origin;
+R021 saves answers and revises count/recovery constraints; documentation only. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -30,6 +30,8 @@ and version-placement warnings remain. No photo fit or color recovery occurred.
 The initial Python/POV-Ray forward model renders photo 2 with a saved closed
 spline and provisional paper/light/glossy bead materials. Legacy mode remains
 preserved. The baseline 2,698 beads, 415 turns and 6.5 beads/turn are hypotheses.
+R021's usual necklace range is 3,000–5,000 beads, so revisit that provisional
+count in the next photo fit; no scene defaults have yet been changed.
 "Material" means fitted POV-Ray appearance properties, not physical composition.
 
 R014 added 103 provisional visual center/color labels and a fixed-observation
@@ -100,6 +102,17 @@ row. Do not describe this as deliberate alternating rounds or ask the answered
 round-count question again. Exact repeat length and attachment mathematics are
 still unspecified. No experiment starts from this record-only request.
 
+**R021 answers:** photo 2 settled naturally into the photographed position.
+Do not infer zero local twist from this. The maker always uses an integer number
+of complete pattern repeats, enough for 700–800 bracelet beads or 3,000–5,000
+necklace beads. Require N = kL (integer k) when fitting total count and repeat
+length; these ranges are usual construction guidance, not exact photo-2 counts.
+The user believes sufficient information is present and expects an established
+algorithm to work. Seek primary-source methods for periodic sequence recovery
+with missing observations before custom recovery development; no method has
+been selected or validated by this clarification. The visibility check below
+remains the next bounded task.
+
 Next task: use the **same legacy practice renders and known sequence** to trace
 selected bead indices/repeat slots and measure visibility across repeat
 occurrences. Also test the user's multiple-of-13 counterexample: at exactly 6.5
@@ -124,17 +137,10 @@ next model/level and fresh-versus-current conversation, then stop.
 **R020 supersedes R018:** begin each work round with two or three focused questions
 and enough saved context to answer without remembering the previous session.
 Do not append new questions at round end. Save answers here and in the request log;
-these are not extra approval gates. Current questions were presented before work
-on this documentation update; answers are pending, not assumed:
-
-- For photo 2, did the user rotate parts of the rope to display particular colors
-  when laying it flat, or did it settle by itself? This informs viewing/phase
-  assumptions in the planned repeat-visibility check.
-- At the join, did the bead sequence continue unchanged, or were beads added,
-  omitted or rearranged? The user need not recall an exact answer.
-
-Do not re-ask these if answered later in this conversation; persist the answers
-before a fresh session. No visibility experiment was started by R020.
+these are not extra approval gates. R020's questions have now been answered by
+R021's natural placement and whole-repeat construction guidance above. Do not
+repeat them or invent specific bead edits at the join. This turn records the
+answers without opening another round of questions or starting the experiment.
 
 ## Preserved history
 

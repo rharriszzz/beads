@@ -27,7 +27,11 @@ sequence identification are separate claims. Instructions are in `REQUEST_LOG.md
    their rendered agreement with the photo. R008 defines material in this sense.
 4. **Recover and validate the repeat.** Preserve hidden/uncertain positions in
    the helical index sequence. Search 200–400 jointly with remaining layout
-   ambiguity; use categorical evidence, held-out repeats, support/confidence
+   ambiguity; require total bead count N = kL for integer repeat count k and
+   pattern length L (R021). Use the maker's usual 3,000–5,000 necklace beads as
+   a count prior, not an exact photo-2 measurement. Review established methods
+   for periodic sequence recovery with missing observations before designing a
+   custom algorithm. Use categorical evidence, held-out repeats, support/confidence
    maps, perturbation checks and synthetic known-pattern image round trips.
    Test documented photo-4/case-4 correspondence when needed. Accept a pattern
    only if the evidence distinguishes it from alternatives; report unresolved
@@ -168,3 +172,19 @@ round and preserve answers/pending questions across sessions. The user finds
 answering after /new difficult because the old context is no longer available
 to them. This request records workflow/status and opens the questions; it does
 not launch the visibility experiment. The next bounded task remains unchanged.
+
+R021 answers: photo 2 settled into its photographed position on its own; the
+user did not rotate sections to display selected colors. This does not measure
+local twist or require a zero-twist model. The maker always uses an integer
+number of pattern repeats, enough for 700–800 beads for a bracelet or
+3,000–5,000 for a necklace. Apply N = kL in subsequent count/repeat fitting;
+revisit the provisional 2,698-bead photo model, which falls below that usual
+necklace range. Exact photo-2 count/repeat length remain unspecified. Do not
+invent join edits or ask again whether whole repeats are used.
+
+The user is confident the photo contains enough information and expects an
+existing clever algorithm to suffice. Treat this as direction to seek established
+methods, not a validated recovery result. Retain the next bounded visibility
+check; before the later recovery implementation, research relevant primary
+sources and justify the chosen method against this observation model. No new
+algorithm, literature search or rendering was performed in this answer-saving turn.

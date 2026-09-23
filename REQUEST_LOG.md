@@ -564,3 +564,35 @@ legacy bead/repeat-slot visibility check, stopping before automated recovery or
 photo refit. Stay in this conversation; no /new needed. The recommendation is
 carried forward from R016, not a new model comparison. OpenAI Docs SKILL.md was
 read; no new product/model research was needed for this workflow correction.
+
+## R021 — Natural placement, complete repeats and typical bead counts (2026-09-23)
+
+> It settled into that position on its own.  I am not worried, there is enough information.  You will have to use a clever algorithm, but you will not need to invent one yourself.  I always use an integer number of repeats of the pattern, enough for 700 to 800 beads for a bracelet, and 3000 to 5000 beads for a necklace.
+
+Save these answers to R020's opening questions. Photo 2 settled naturally, without
+deliberately positioning sections to show colors. Whole repeats imply N = kL
+for total bead count N, pattern length L and integer repeat count k. The supplied
+700–800 bracelet and 3,000–5,000 necklace ranges are usual construction guidance,
+not exact measurements of photo 2. The provisional 2,698-bead model falls below
+the necklace range and should be revisited when fitting the photo. Do not infer
+zero twist, an exact repeat length or specific bead edits at the join.
+
+User expresses confidence in sufficient information and directs us toward existing
+algorithms. Record a primary-source review of applicable periodic sequence
+recovery methods before later custom implementation. No method selected or
+recovery success asserted. Next task remains the illustrated legacy visibility
+check; this answer-saving turn does not start it. No new questions needed while
+recording answers to the opening questions.
+
+Preflight: daisy, clean photo-2-reconstruction at 0be03ce, tracking origin branch,
+no stashes. Fetch succeeded and upstream ahead/behind is 0/0. No new status or
+usage supplied; R020's current-session attribution remains. No account inspection,
+model switch, delegation or machine transfer. Read current handoff, recent log,
+plan/progress and legacy practice notes. Updated four scoped docs; review diff
+and whitespace, then commit/push under R006/R010 and verify remote tip/final
+status. Runtime tests/renders skipped for documentation only. Generated outputs
+and .venv remain ignored. Final response records the verified delivery commit.
+
+Retain existing gpt-6-astra / High recommendation; stay in this conversation,
+no /new. Next experiment stops at the illustrated bead/repeat-slot visibility
+check before automated recovery or photo refit. No new model comparison made.

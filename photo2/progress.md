@@ -202,3 +202,14 @@ questions across sessions. Asked about positioning photo 2 and bead changes at
 the join; answers pending. Recorded supplied old-session timing/usage separately
 from new-session status in REQUEST_LOG. No experiment/code change; next task is
 still the illustrated legacy visibility check. Documentation checks only.
+
+## 2026-09-23 — R021 natural placement and integer pattern repeats
+
+Photo 2 settled naturally; no deliberate rotation to display colors was needed.
+User always uses whole pattern repeats, totaling usually 700–800 bracelet beads
+or 3,000–5,000 necklace beads. Record N = kL for later inference and revisit the
+provisional 2,698-bead photo count. No exact photo-2 count is supplied, and natural
+placement does not imply zero local twist. User expects enough information and
+an established algorithm; plan a primary-source method review before custom
+recovery development. Saved opening answers; no repeated questions, new experiment,
+literature search or settings change. Next illustrated visibility task unchanged.
