@@ -151,3 +151,13 @@ Include a multiple-of-13 practice pattern alongside the 40-bead example when
 checking visibility. Actual coverage still depends on closure and camera view
 around the ring; never infer completeness from repetition alone. Positions with
 no visible evidence stay unknown. End each round with focused advice questions.
+
+R019 maker guidance: the user designed and made the necklace in photo 2 and has
+never designed a multiple-of-13 pattern, although they may in future. Treat that
+case as a synthetic counterexample, not an expected explanation of photo 2.
+Every crochet stitch is the same; the maker need not count or manage rounds.
+The half-step advance is built into attachment to the preceding row, not a
+deliberate alternating stitch/round instruction. Geometric turns in the model
+must not be confused with maker-controlled rounds. Exact photo repeat length
+and a numerical attachment rule have not been supplied. Record these answers
+as user knowledge; do not ask the same questions again. Next task unchanged.

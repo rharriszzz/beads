@@ -497,3 +497,24 @@ Reminder: gpt-6-astra / High, stay here (no /new). Next task stops at an illustr
 legacy bead/repeat-slot visibility check before automated recovery/photo refit.
 This repeats the R016 recommendation, whose OpenAI Docs guidance was already
 read in this conversation; no new model comparison is claimed.
+
+## R019 — Save the maker's construction answers (2026-09-23)
+
+> I have never designed a multiple of 13 pattern yen, however, I might in the future.  Puoto 2 is of a neclace I designed and made myself.  When croceting it, every stich is the saame, there is no need for the maker to worry about rounds.  The 1/2 extra progress is an artifact of the way each stich is attached to the previous row, it is sort of built in to this process..  now I will let you record this informatiopn to be saved for the next round.
+
+Scope/outcome: save these answers in plan, handoff and progress; no next experiment
+started. User designed/made photo 2, has not designed a multiple-of-13 repeat,
+and explains that identical stitch attachments inherently produce the half-step
+advance without maker-controlled rounds. Distinguish geometric turns from
+construction instructions. Exact repeat length and attachment formula remain
+unspecified. Retain multiples of 13 as a synthetic counterexample only, and avoid
+repeating answered questions. The next visibility task and stopping point remain.
+
+Preflight: daisy, clean photo-2-reconstruction at c84c74e, no stashes; escalated
+fetch succeeded, upstream ahead/behind 0/0. No new usage/status, model switch,
+account inspection, delegation or transfer. Review four scoped docs and whitespace;
+runtime tests/renders unnecessary. Commit/push under R010 and verify live remote
+tip/local status; generated outputs and .venv remain excluded. Final response
+records delivery. Stay here with gpt-6-astra / High, no /new; next round stops at
+illustrated bead/repeat visibility checks before automated recovery/photo refit.
+Offer focused questions for next round without requiring immediate answers.

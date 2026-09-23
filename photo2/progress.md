@@ -183,3 +183,12 @@ visibility check instead of relying solely on favorable 40-bead phase advance.
 Closure/camera coverage still need measurement. User requests advice questions
 at every round end; recorded in AGENTS and handoff. Documentation only; no new
 render or test experiment. Retain Astra/High and this conversation for next work.
+
+## 2026-09-23 — R019 maker's answers saved for next round
+
+User designed and made photo 2's necklace; has not designed a multiple-of-13
+pattern, though may in future. Every stitch is identical, with no need to manage
+rounds; half-step advance comes from attachment to the previous row. Recorded as
+maker knowledge in plan/handoff/log. The multiple-of-13 case remains a synthetic
+visibility check, not the expected photo-2 pattern. No new experiment or code
+change; documentation review/whitespace checks only. Next bounded task unchanged.

@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R018 workflow guidance. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `9f9db91` matched origin;
-R017 practice and its plan checkpoint are delivered. R018 changes only docs. The final
+Updated 2026-09-23 after R019 maker guidance. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `c84c74e` matched origin;
+R019 saves the user's answers for next round; documentation only. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -90,6 +90,15 @@ PLAN R016 records source values and exceptions. These are authorized assumptions
 not recovered measurements. R015's arbitrary 20-degree tilt and 0.3 hole ratio
 are not the required reference geometry. Its unrestricted parameter redundancy
 does not establish impossibility under the construction constraints.
+
+**R019 answers from the maker:** the user personally designed and made photo 2's
+necklace. They have never designed a multiple-of-13 pattern, but may in future;
+retain that synthetic counterexample without treating it as expected for photo 2.
+Every crochet stitch is identical and the maker need not worry about rounds.
+The half-step advance emerges from how each stitch attaches to the preceding
+row. Do not describe this as deliberate alternating rounds or ask the answered
+round-count question again. Exact repeat length and attachment mathematics are
+still unspecified. No experiment starts from this record-only request.
 
 Next task: use the **same legacy practice renders and known sequence** to trace
 selected bead indices/repeat slots and measure visibility across repeat
