@@ -3,6 +3,21 @@
 Read `SESSION_HANDOFF.md`, the latest `REQUEST_LOG.md` entries, and the relevant
 experiment notes before continuing. User instructions override historical plans.
 
+## One-word continuation
+
+When the user says **Continue** as a task instruction (case-insensitive, with
+optional punctuation), read the current handoff and carry out its next bounded
+step under the workflow below. Check repository/machine state, record the
+request, explain this step's scope, complete the work and relevant checks, update
+the plan/log/handoff, add/commit/push scoped changes, verify delivery, and report
+the next model/level and whether to use `/new`. Then stop at the step boundary.
+Resume unfinished work before starting a later step. Explicit qualifications,
+such as "Continue without pushing", override the default. Quoting or discussing
+the word does not launch work. This shortcut does not change models or run UI
+commands; the user controls `/new`, `/status` and model selection.
+
+## Working rules
+
 - Use Python 3.12, normally `.venv/bin/python`. Keep dependencies local to beads.
 - Inspect branch, working tree, upstream, stashes and local machine identity
   before writes. Preserve unrelated/untracked work. Synchronize deliberately;

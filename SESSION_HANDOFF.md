@@ -76,14 +76,14 @@ switch or delegation occurred; availability should be checked in the next sessio
 
 For the next geometry-fitting step, use **gpt-6-astra / High**, starting a fresh
 conversation in `~/git/beads`. The user will use `/new` and `/status`; preserve
-the supplied status excerpt in the request log with session attribution. Initial
-task prompt: "Read SESSION_HANDOFF.md and continue with the next step."
+the supplied status excerpt in the request log with session attribution. The
+entire task prompt is now **Continue**, defined in `AGENTS.md` under R013.
 No need to reopen this completed setup step or repeat the all-branch review.
 
 At each step end, update records, add/commit/push the scoped changes, verify the
 live remote branch tip and local status, then explicitly report delivery and
-the next model/level plus whether to use `/new`. Preserve the unrelated files
-listed below and distinguish them from undelivered task work. A fresh chat is
+the next model/level plus whether to use `/new`. Preserve archived and unrelated
+work and distinguish it from undelivered task changes. A fresh chat is
 recommended here because setup is complete and geometry fitting is a new phase.
 
 Official OpenAI documentation confirms `/new` starts a fresh chat in the same

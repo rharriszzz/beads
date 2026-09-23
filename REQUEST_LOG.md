@@ -230,3 +230,21 @@ reconstruction start/completion records under the user's authorization, verify
 both live branch tips and clean final status, then report completion. Next:
 gpt-6-astra / High, fresh conversation in `~/git/beads`, `/status`, then follow
 the geometry task in SESSION_HANDOFF.md. No model switch or task processes.
+
+## R013 — One-word continuation
+
+> that is good, but I don't want to have to type so many words, can you make what I need to type be fewer words.
+
+Scope/outcome: defined **Continue** in AGENTS.md as the shortcut for reading the
+current handoff, completing its next bounded step and checks, updating records,
+adding/committing/pushing scoped changes, verifying delivery, reporting the next
+model/level and new-versus-current conversation recommendation, then stopping.
+Explicit qualifications override defaults. Updated SESSION_HANDOFF.md to replace
+the long initial prompt. The shortcut does not itself launch the queued geometry
+task, change models or execute `/new`/`/status`.
+
+Preflight: PC/WSL daisy, clean `photo-2-reconstruction` tracking its remote,
+empty stashes; prior files already archived. Changed three documentation files;
+diff/whitespace review only, no runtime tests needed. Publish under R010 and
+verify live remote tip and final status. Next remains gpt-6-astra / High, fresh
+conversation in `~/git/beads`, `/status`, then **Continue**.
