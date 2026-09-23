@@ -222,6 +222,45 @@ next-visibility task, now complete. Open the next round with contextualized advi
 questions; do not repeat R019–R022's saved construction answers.
 
 R024 opens the new session with two questions about the intended photo-2 palette
-and whether to allow occasional stringing errors. Answers are pending in the
+and whether to allow occasional stringing errors. R025 answers are saved in the
 handoff. Method-selection scope/stopping point unchanged; no review or experiment
 started by the status/questions request. Stay in the current conversation.
+
+R025 constraints for method selection: exactly three physical colors, red, yellow
+and black. The maker checks every pattern sequence against the previous one;
+assume no construction mistakes. Retain observation/registration uncertainty.
+Insufficiently visible beads must be recorded as "color unknown" and contribute
+no color evidence; retain sequence positions and unknown indices. Unknown is
+not a fourth palette color, and later repeat-based inference must not overwrite
+the observed unknown. No photo readability cutoff has been calibrated; do not
+adopt R023's synthetic pixel thresholds as a supplied rule. Both opening questions
+are answered; next remains method choice/test plan, before implementation/refit.
+
+## R026 review draft and R027 indexing guidance
+
+The primary-source review is drafted in `photo2/METHODS.md`. Select strong-period
+partial-word testing for exact indexed observations, preserving unknown colors and
+all compatible candidates. The proposed CPD registration component is now only a
+fallback: during the review the maker offered a method to assign bead_index to
+every visible bead. The requested walkthrough is pending in the handoff. Prioritize
+that guidance, then finish the method/test-plan choice before any implementation.
+The sequence-only synthetic test plan remains useful independently of index source.
+No new recovery/registration experiment or photo refit occurred. R026 is unfinished
+pending the indexing explanation; stay in this conversation with Astra/High.
+
+## R028 final method choice and next bounded step
+
+The maker supplies the missing rule: identify immediate neighbors along three
+index directions ±1, ±6 and ±7. Select signed graph traversal/difference constraints
+for bead indexing, then strong-period partial-word testing for color repeats.
+R026's method review is complete with this steering incorporated in METHODS.md;
+CPD is not the chosen indexing route, and no questions remain pending. No method
+has yet been validated on photo 2.
+
+Next: implement an illustrated neighbor/index audit on the four existing legacy
+views, using known topology with anonymous vertex IDs to isolate propagation,
+cycle consistency, missing edges/components and seam/winding handling. Inspect
+projected neighbor directions at bends and the weak-slot region. Follow METHODS.md
+§A; stop after the illustrated audit and checks before automatic edge detection,
+photo indexing, color recovery or refit. Keep known index separate from unknown
+color. Stay here with gpt-6-astra / High; no /new needed after this useful discussion.

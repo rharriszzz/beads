@@ -264,3 +264,36 @@ the handoff. Recorded prior-session timing/usage separately from current supplie
 status. No literature review, experiment, code or scene changes. Next task remains
 the primary-source method choice and concrete synthetic test plan. Stay here with
 the retained Astra/High recommendation; no further /new needed for this round.
+
+## 2026-09-23 — R025 palette, checked repeats and unknown colors
+
+Saved the maker's answers: photo 2 uses red, yellow and black; each pattern
+sequence is carefully checked against the preceding one, so assume no construction
+mistakes. Beads with too little visibility to decide color are "color unknown",
+excluded from color evidence while preserving sequence positions/index uncertainty.
+No numerical readability threshold supplied. Observation errors remain possible;
+later inferred colors must stay distinct from observed unknowns. Opening questions
+are answered. Documentation only; no method review, implementation or photo refit.
+Next method-selection task and stopping point unchanged; stay here with Astra/High.
+
+## 2026-09-23 — R026 review draft; R027 direct indexing advice pending
+
+Reviewed primary papers on CPD, strong periods of partial words, DTW and event-log
+MDL, plus official rectangular-assignment documentation. Drafted METHODS.md with
+a sequence-only synthetic validation and a conditional registration test. Verified
+all seven R023 source and 74 artifact hashes; no new experiment or runtime tests.
+During the review, the maker offered a direct method for assigning every visible
+bead an index. Asked for their walkthrough and deferred the registration choice;
+CPD remains only a fallback. Known indices and unknown colors are independent.
+The full method-selection step remains unfinished until this advice is incorporated.
+
+## 2026-09-23 — R028 neighbor rule resolves method choice
+
+Maker specifies neighbors along ±1, ±6, ±7 index directions. Replaced the proposed
+registration route with graph index propagation and cycle checks, followed by
+partial-word strong periods for colors. METHODS.md contains primary sources and
+a concrete synthetic graph audit as the next task; unknown colors keep their bead
+positions. Automatic identification/signing of image edges is unvalidated. Full-ring
+winding, disconnected offsets and wrong bridge edges are explicit test cases.
+The literature/design step is complete; no recovery implementation or experiment.
+Documentation review/whitespace and local-link checks; runtime tests skipped.

@@ -1,27 +1,35 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R024 opening questions/status. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. R024 entry `a3f130f` matched origin;
+Updated 2026-09-23 after R026–R028 method selection and neighbor guidance. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. R025 entry `5f9e87a` matched origin;
 R023 completed the illustrated visibility step. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
-R024 opens the new round; no method review or experiment has started. Current
+R026–R028 complete the primary-source method review in photo2/METHODS.md.
+R028 supplies the neighbor rule; no recovery implementation or experiment ran. Current
 supplied session is `01a0d01f-e860-71b3-9e18-4bfc4162d0cc`, gpt-6-astra / High.
 Prior-session timing/token totals belong to `01a0d004-cac1-7443-88ad-b2ff19ab6dfa`;
-see REQUEST_LOG for separate attribution. Stay in this conversation for answers
-and the planned method-selection task; no additional /new is needed now.
+see REQUEST_LOG for separate attribution. Stay in this conversation for the
+planned neighbor/index check; no additional /new is needed now.
 
-Opening questions pending (asked through the question tool):
+R025 answers to the opening questions:
 
-1. For photo 2, which bead colors were intentionally used, including similar
-   shades that reconstruction should keep separate?
-2. Are stringing repeats checked/corrected before crochet, or should recovery
-   allow occasional extra, missing or wrong-color beads? Any known photo-2
-   exceptions? This asks about errors, not the already answered whole-repeat rule.
+1. Photo 2 has exactly three bead colors: red, yellow and black.
+2. The maker carefully checks each pattern sequence against the previous one;
+   there should be no mistakes. Use an error-free repeating construction as the
+   working assumption. Image classification and registration may still be wrong.
+3. The maker has seen beads visible only through tiny gaps: if visibility is
+   insufficient to decide color, record "color unknown" and exclude that bead
+   from color evidence. Preserve its position/index uncertainty; do not delete
+   sequence positions or interpret unknown as a fourth physical color. A later
+   repeat-based inference must remain distinct from the observed unknown.
 
-Save replies here; do not repeat these questions or assume answers. They inform
-the observation/error model without creating an approval gate.
+No readability threshold was supplied; R023's pixel thresholds remain synthetic
+sensitivity checks, not photo-calibrated rules. Save these as method-selection
+constraints; R026 subsequently reviewed methods without implementing recovery.
+Do not repeat answered questions or add a new question gate for this round.
+R028 also answers the indexing follow-up below; no questions remain pending.
 
 Read `PLAN.md`, latest `REQUEST_LOG.md`, `photo2/progress.md` and
 **`photo2/VISIBILITY.md`**; `photo2/PRACTICE.md` is its source-scene context.
@@ -159,23 +167,42 @@ with missing observations before custom recovery development; no method has
 been selected or validated by this clarification. R023 has now completed the
 bounded visibility check; see the results above.
 
-Next task: **review established image-registration and periodic-sequence methods
-in primary sources**, choose an approach compatible with unknown bead indices,
-missing slots, uncertain colors and whole-repeat closure, and specify a small
-synthetic validation using these known legacy renders. Stop with a justified
-method choice and concrete test plan, before implementing recovery or photo
-refitting. Do not automatically resume the unrestricted R015 model. Continue
-with the adequate 2,698-bead working estimate; do not revisit it merely because
-of the maker's usual necklace range or restrict periods to its exact divisors.
+**R026–R028 method choice completed:** `photo2/METHODS.md` selects a neighbor
+graph with signed integer index differences, followed by strong-period testing
+of a partial word for indexed red/yellow/black observations with unknowns. Primary
+sources support graph traversal/difference constraints and partial-word periods.
+CPD, DTW and event-log MDL were reviewed but are not the chosen indexing route.
+The seven R023 source hashes and 74 artifact hashes were verified; no new period
+scan, render, graph/registration test or photo fit was run.
 
-R023 recommended a fresh `/new`; R024 supplies the new session. **Stay here** for
-the opening answers and that distinct method-selection task. Use
-**gpt-6-astra / High**, retaining the prior recommendation. This is a task-based
-recommendation for scientific/visibility
-reasoning, consistent with [official reasoning guidance](https://developers.openai.com/api/docs/guides/reasoning)
-checked through OpenAI Docs in R016, not a measured model comparison. User-supplied
-prior usage and current status are now separately attributed under R024. No current
-usage was invented, model switched or account inspected.
+**R027/R028 maker's indexing guidance:** every visible bead should be assigned a
+bead_index by identifying its nearest neighbors along the three directions with
+index differences **±1, ±6, ±7**. This answers the requested walkthrough's key
+construction rule. Use it as the primary approach. Pick a seed, propagate signed
+edge increments, check reciprocal edges and cycles (+1 +6 -7 = 0), and preserve
+unresolved component offsets. Known index and unknown color are independent.
+Do not replace a hidden immediate neighbor with the next visible bead, confuse
+screen proximity across rope crossings with construction neighbors, or assume
+automatic image-edge identification has already been validated. The image rules
+for recognizing/signing the three families remain to be tested. Local integer
+indices and full-ring indices modulo exact synthetic N require distinct seam/
+winding treatment; the photo's provisional count is not an exact modulus.
+
+Next task: **illustrated synthetic neighbor/index audit using ±1, ±6, ±7** on the
+four R023 legacy views. Implement propagation/consistency checks on anonymous
+vertices with evaluator-supplied edge offsets; check truth only afterward. Measure
+components at visibility thresholds 1/12/100, reciprocal/cycle consistency, relative
+index accuracy and winding behavior. Include contradictory/missing edges and a
+wrong-bridge negative control, plus annotated projected directions at a bend and
+the weak-slot region. This first step explicitly uses known topology, not automatic
+edge extraction. Stop after the illustrated audit and tests, before segmentation,
+photo indexing, repeat recovery or refit. Detailed contract: METHODS.md §A.
+The later sequence test remains specified in §B. Preserve the 2,698 working estimate.
+
+**Stay here, no /new**, with **gpt-6-astra / High**, retaining the prior
+recommendation for the construction-based indexing check rather than making a
+new model comparison. Supplied prior usage and current status are separately
+attributed under R024; no new usage was supplied or account inspected.
 
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live
 remote tip and final local status, report branch/commit and exclusions, recommend
@@ -187,7 +214,8 @@ these are not extra approval gates. R020's questions have now been answered by
 R021's natural placement and whole-repeat construction guidance above. Do not
 repeat them or invent specific bead edits at the join. R023 continued the round
 after those answers, without another question gate. Open the next work round
-with contextualized advice questions; R024's pending questions are saved above.
+with contextualized advice questions; R024's questions are answered under R025 above.
+R027/R028 supply the indexing follow-up and answer, preserved above.
 
 ## Preserved history
 

@@ -725,3 +725,91 @@ on handoff context and changed nothing; corrected with a smaller patch.
 Documentation only: review diff/whitespace; runtime tests/renders unnecessary.
 Publish four scoped docs under R006/R010 and verify live remote tip/final status;
 final response records delivery. Generated outputs and .venv remain excluded.
+
+## R025 — Three-color palette, checked repeats and unknown observations (2026-09-23)
+
+> "some remain visible only through tiny gaps", yes, I have seen that, ignore the beads with not enough visiblity to decide  (that is, record them as "color unknown".  There are three bead colors, red, yellow and black.  I carefully check each patttern sequence against the previous one, there should be no mistakes.
+
+Save both opening answers: exactly red/yellow/black; use an error-free repeating
+construction as the working assumption. Insufficient visibility means observed
+"color unknown", excluded from color evidence but retaining sequence positions
+and index uncertainty. Do not treat it as a fourth bead color or silently replace
+it with a later inferred color. Observation/registration errors remain possible;
+no numerical color-readability threshold supplied. No repeat questions needed.
+
+Preflight: daisy, clean photo-2-reconstruction at 5f9e87a, tracking origin, no
+stashes; fetch succeeded, ahead/behind 0/0. Read handoff/log/plan/progress and R023
+visibility limitations. Updated four scoped docs; no code or scene changes.
+No new status supplied; R024 session attribution retained. User then requested
+Continue while documentation publication was unfinished; include this answer
+record in R026's scoped publication. No unpushed work is claimed delivered.
+
+## R026 — Continue primary-source method selection (2026-09-23)
+
+> continue
+
+Continue the bounded method review with R025's saved answers; do not repeat the
+opening questions. Review established registration and periodic-sequence methods,
+choose one compatible with unknown bead indices, unreadable colors and whole-repeat
+closure, and specify synthetic validation on the legacy scenes. Stop before
+recovery implementation or photo refit. Preserve the adequate 2,698-bead estimate
+without restricting periods to its divisors. Finish R025 documentation publication
+along with this step. Current machine/branch preflight is recorded under R025;
+only our four documentation files have changed since it. No delegation or transfer.
+
+## R027 — Maker offers a direct bead-indexing method (2026-09-23)
+
+> You should be able to assign a bead_index to every visual bead.  I can tell you how to do it if you want.
+
+Steering during R026: prioritize the maker's direct indexing method before choosing
+or implementing generic registration. Asked for a walkthrough from a starting
+bead through subsequent indices, including hidden beads and overlaps. Answer pending.
+Known index and unknown color are independent states. Marked the drafted CPD
+proposal as a researched fallback; no registration/recovery implementation exists.
+The partial-word method review and sequence-only validation design remain useful.
+Do not claim direct indexing validated before receiving/testing the explanation.
+
+## R028 — Immediate neighbors determine index differences (2026-09-23)
+
+> The key part is that you need to identify every nearest neighbor to each visible bead, along each of the three directions + or minus 1, plus or minus 6 and plus or minus 7.
+
+This answers R027's indexing follow-up. Record the maker's ±1/±6/±7 adjacency rule
+as the primary construction constraint. Select graph traversal with signed index
+differences and cycle checks, followed by strong-period partial-word color testing.
+A seed fixes arbitrary origin; known index can coexist with unknown color. Missing
+immediate neighbors remain missing; apparent proximity across a rope crossing
+must not create a false construction edge. Disconnected offsets and direction/sign
+alternatives remain explicit. Full-ring winding is treated modulo known synthetic
+N, not the provisional photo count. No new question gate or repeated questions.
+
+R026 outcome with R027/R028 steering: completed primary-source review and concrete
+test plan in photo2/METHODS.md. Read CPD §§3–4, partial-word definitions in the 2012
+Blanchet-Sadri/Mandel/Sisodia author manuscript, DTW and event-log MDL, official
+SciPy assignment docs, and authors' graph-traversal/MIT difference-constraint notes.
+CPD was initially proposed, then deferred on R027 and replaced by the maker's graph
+rule under R028. No CPD implementation is scheduled. Direct opens of Berstel/Boasson
+1999 PDF and publisher failed; used the accessible 2012 primary manuscript for
+checked definitions. An initial local read named geometry_fit.py, which does not
+exist; corrected to fit_geometry.py after listing files. No source changes resulted.
+
+Checks/evidence: Python 3.12.14 verified seven source hashes and all 74 artifacts
+of R023. Report SHA-256 remains
+12ac2b92948e920b89e7da5a49ae1ecfdfb44c102d4c07e53606344489c7c0.
+Inspected pattern files, report fields, legacy placement and existing fitting/
+sequence code. No new render, period scan, graph test, registration or photo refit.
+Runtime tests skipped for documentation only; review diff/whitespace and local
+links before publication. R025 answers and all intervening steering are included
+in this scoped publication, rather than claimed published earlier. No new usage,
+account inspection, model switch, transfer or delegation.
+
+Next: METHODS.md §A's illustrated neighbor/index audit on the four R023 views,
+with evaluator-supplied topology, anonymous vertices, cycle/reciprocal checks,
+components, index accuracy and winding/contradiction controls. Stop after its
+illustrated report/tests before automatic edge detection, photo indexing, repeat
+recovery or refit. The later sequence validation is separately specified in §B.
+Retain gpt-6-astra / High and this conversation, no /new; preserve the maker's
+fresh guidance. Publish six scoped docs under R006/R010; verify live remote tip
+and final status. Generated files and .venv stay excluded; final reports commit.
+
+Final documentation checks passed: staged whitespace check, six-file scope review,
+and all five local Markdown links in METHODS/README. No runtime tests were run.

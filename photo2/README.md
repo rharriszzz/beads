@@ -5,6 +5,12 @@ diagnostics for later inverse fitting. It is **not a recovered necklace pattern*
 The broad arrangement is matched by a closed spline; bead layout, camera,
 materials and illumination are provisional. See `../SESSION_HANDOFF.md`.
 
+The selected next approach uses the maker's ±1/±6/±7 neighbor graph to assign
+bead indices, then tests repeating colors while preserving unknown observations.
+See [method review and synthetic test plan](METHODS.md). This is a planned
+capability; automatic image-neighbor identification and pattern recovery remain
+unvalidated. The confirmed photo palette is red, yellow and black.
+
 ## Run with Python 3.12
 
 From the beads repository:
