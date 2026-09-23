@@ -115,12 +115,20 @@ colors in different visible sections can supply evidence for hidden repeat slots
 
 ## Next bounded step within Step 2
 
-Build a deterministic known repeating-pattern synthetic test using legacy bead
-geometry/orientation and closure, extending existing Python/POV-Ray tools. Keep
-original bead/stitch indices, repeat truth and rendered visibility. Test recovery
-of hidden repeat slots from multiple visible occurrences at fixed known layout.
-Validate shaded-image observations with controlled blur/noise and fitted local
-alignment against hidden mask truth. Measure recovery and unresolved slots; this
-does not yet establish joint geometry/order recovery from the photo. Stop at a
-reproducible report and focused checks before photo refitting or real-repeat
-claims. R016 records guidance only; this experiment has not started.
+R017 supersedes the proposed recovery benchmark with direct practice using
+`beads.pov`: invent a small repeating color sequence, render it through the
+legacy scene, inspect the full necklace and enlarged bead overlaps at two phases,
+and record what the source and images actually show. Keep the original camera,
+lighting, materials, bead shape/orientation and closure rule. A small optional
+pattern override may be added; verify the default legacy render is unchanged.
+Retain deterministic pattern inputs, render commands, parameters and hashes;
+generated scenes/images/reports stay ignored. Stop after the practice renders,
+observations and checks, then commit/push. No segmentation, inverse benchmark,
+photo refit or repeat-recovery claim in this step. Reconsider the next experiment
+after inspecting these renders rather than automatically resuming R015's approach.
+
+Further source reading: color is indexed by `bead_index mod pattern_length`,
+whereas angular placement uses `exact_beads_per_row`; a color repeat need not
+equal a geometric row. `clock` chooses one of eight cases and also sets two
+rotations through `rclock`; practice views must stay in the same case. The legacy
+scene represents bead bodies and their placement, not actual thread/stitches.

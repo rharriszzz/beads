@@ -423,3 +423,28 @@ Stay in this conversation, no /new; recommend gpt-6-astra / High for the next
 experiment. OpenAI Docs skill used to search and open official reasoning guidance
 https://developers.openai.com/api/docs/guides/reasoning ; this is a task-based
 recommendation, not a measured comparison. No delegation or new experiment.
+
+## R017 — Practice the original scene; commit the plan first (2026-09-23)
+
+> you might have learned unhelpful stuff in your synthetic test.  recommend you practice running beads.pov with a pattern you create yourself.
+
+> ok.  record my recommendations and anything you just learned from beads.pov, review and possibly alter your plan for this step, commit it, and finally continue.
+
+User questions the relevance of the previous synthetic test and directs practice
+with the actual legacy scene. Revised scope: invented repeating pattern, original
+geometry/materials/camera, two within-case phases, full/crop visual inspection,
+reproducible commands/hashes and unchanged-default check if adding a pattern hook.
+No inverse experiment or photo fit. Commit this plan before implementation, then
+continue without another confirmation; publish results under R010 at step end.
+
+Further source findings: modulo color indexing is independent of fractional
+beads/row; clock selects both a case and within-case motion; hole axes follow the
+central circle tangent, not the helical row angle. The scene models bead placement
+without explicit thread/stitch geometry. R016 records proportions/closure and
+the user's construction constraints; the earlier unrestricted benchmark must not
+drive claims about this constrained object.
+
+Preflight: daisy, clean photo-2-reconstruction at ed31bbb, no stashes, Python
+3.12.14 and /usr/local/bin/povray available. Fetch first failed on read-only
+.git/FETCH_HEAD; escalated fetch succeeded, ahead/behind 0/0. No new status or
+usage supplied; R016 remains the latest session attribution. No machine transfer.

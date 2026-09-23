@@ -78,13 +78,14 @@ not recovered measurements. R015's arbitrary 20-degree tilt and 0.3 hole ratio
 are not the required reference geometry. Its unrestricted parameter redundancy
 does not establish impossibility under the construction constraints.
 
-Next: a **known repeating-pattern synthetic test following legacy beads.pov**,
-with deterministic invented colors, preserved bead/stitch indices, closure and
-actual visibility. Test hidden repeat-slot recovery from multiple occurrences at
-known layout; validate shaded observations under blur/noise and fitted alignment
-against hidden masks. Stop at a reproducible report and focused checks before
-photo refit or real-repeat claims. No new experiment started in R016; code and
-scene defaults remain unchanged. Documentation diff/whitespace checks only.
+R017 active task: **practice running the actual legacy beads.pov with an invented
+pattern** before another recovery benchmark. First commit this revised plan at
+the user's request, then continue to full renders and enlarged inspections at
+two within-case phases. Preserve scene geometry/materials/camera and verify any
+optional pattern hook leaves default rendering unchanged. Record commands,
+source/image hashes and observations. Stop after practice results and checks,
+publish scoped work, and reconsider the next task. No segmentation or inverse
+experiment is authorized as part of this bounded practice step.
 
 Stay in this conversation: **no `/new` needed** after this clarification. Use
 **gpt-6-astra / High** for the next experiment when requested. This is a task-based
