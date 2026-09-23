@@ -213,3 +213,11 @@ placement does not imply zero local twist. User expects enough information and
 an established algorithm; plan a primary-source method review before custom
 recovery development. Saved opening answers; no repeated questions, new experiment,
 literature search or settings change. Next illustrated visibility task unchanged.
+
+## 2026-09-23 — R022 retain the working bead estimate
+
+User clarifies that the provisional estimate is good enough. Keep 2,698 beads
+for current work; remove R021's proposed revision based on usual necklace counts.
+The estimate is not an exact measurement or a divisibility filter on repeat
+length. Whole-repeat construction and next visibility task remain unchanged.
+Documentation correction only; no scene/settings changes or runtime checks.

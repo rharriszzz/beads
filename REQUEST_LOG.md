@@ -596,3 +596,22 @@ and .venv remain ignored. Final response records the verified delivery commit.
 Retain existing gpt-6-astra / High recommendation; stay in this conversation,
 no /new. Next experiment stops at the illustrated bead/repeat-slot visibility
 check before automated recovery or photo refit. No new model comparison made.
+
+## R022 — Provisional bead estimate is adequate (2026-09-23)
+
+> your provisional estimate of bead count is good enough
+
+Correction to R021: retain 2,698 as the adequate working estimate and remove the
+planned revision based on usual necklace counts. This does not establish an exact
+count; do not restrict candidate repeat lengths to divisors of 2,698. Whole-repeat
+construction remains valid. Updated plan, handoff and progress; no code/settings
+change or next experiment. No further questions needed for this clarification.
+
+Preflight: daisy, clean photo-2-reconstruction at acae61b, tracking origin branch,
+no stashes; fetch succeeded, ahead/behind 0/0. No new status/usage supplied;
+R020 session attribution retained. No transfer, delegation or account inspection.
+Review scoped documentation diff and whitespace; skip runtime tests/renders.
+Commit/push four scoped docs under R006/R010 and verify remote tip/final status;
+final response records delivery. Generated outputs and .venv remain excluded.
+Retain gpt-6-astra / High and this conversation (no /new) for the next illustrated
+legacy repeat-visibility check, stopping before automated recovery/photo refit.

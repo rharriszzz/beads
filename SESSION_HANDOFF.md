@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 for R021 placement and repeat-count answers. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `0be03ce` matched origin;
-R021 saves answers and revises count/recovery constraints; documentation only. The final
+Updated 2026-09-23 for R022 working bead-count clarification. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `acae61b` matched origin;
+R022 retains the adequate provisional bead count; documentation only. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -30,8 +30,9 @@ and version-placement warnings remain. No photo fit or color recovery occurred.
 The initial Python/POV-Ray forward model renders photo 2 with a saved closed
 spline and provisional paper/light/glossy bead materials. Legacy mode remains
 preserved. The baseline 2,698 beads, 415 turns and 6.5 beads/turn are hypotheses.
-R021's usual necklace range is 3,000–5,000 beads, so revisit that provisional
-count in the next photo fit; no scene defaults have yet been changed.
+R022: the user says the provisional bead estimate is good enough. Keep 2,698
+for current work; do not revise it merely to match R021's usual necklace range.
+It remains an estimate, not an exact count constraining pattern divisibility.
 "Material" means fitted POV-Ray appearance properties, not physical composition.
 
 R014 added 103 provisional visual center/color labels and a fixed-observation
@@ -51,7 +52,8 @@ separate tested body size, hole-axis tilt or depth reflection. Exact internal
 visible boundaries distinguish these alternatives, including tested seven-instance
 subsets. Depth-reflected silhouettes remain identical. The pitch/count/twist gauge
 preserves every body and full rendered mask: no image can resolve it in this model.
-**No hand, count, radius, material or repeat is accepted for the photo.**
+**That benchmark validates no hand, count, radius, material or repeat for the
+photo. R022 separately accepts the provisional count as adequate for current work.**
 
 This benchmark compares twelve discrete candidates per hand at fixed registration,
 using perfect instrumentation. Noise applies to centers only; outlines stay exact.
@@ -107,6 +109,8 @@ Do not infer zero local twist from this. The maker always uses an integer number
 of complete pattern repeats, enough for 700–800 bracelet beads or 3,000–5,000
 necklace beads. Require N = kL (integer k) when fitting total count and repeat
 length; these ranges are usual construction guidance, not exact photo-2 counts.
+R022 supersedes the proposed count revision: 2,698 is an adequate working estimate.
+Do not restrict repeat lengths to divisors of that provisional number.
 The user believes sufficient information is present and expects an established
 algorithm to work. Seek primary-source methods for periodic sequence recovery
 with missing observations before custom recovery development; no method has

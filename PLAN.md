@@ -28,8 +28,10 @@ sequence identification are separate claims. Instructions are in `REQUEST_LOG.md
 4. **Recover and validate the repeat.** Preserve hidden/uncertain positions in
    the helical index sequence. Search 200–400 jointly with remaining layout
    ambiguity; require total bead count N = kL for integer repeat count k and
-   pattern length L (R021). Use the maker's usual 3,000–5,000 necklace beads as
-   a count prior, not an exact photo-2 measurement. Review established methods
+   pattern length L (R021). Keep 2,698 as the adequate working bead-count
+   estimate (R022); the maker's usual ranges do not require revising it.
+   Do not treat that estimate as an exact divisibility constraint on L.
+   Review established methods
    for periodic sequence recovery with missing observations before designing a
    custom algorithm. Use categorical evidence, held-out repeats, support/confidence
    maps, perturbation checks and synthetic known-pattern image round trips.
@@ -177,9 +179,10 @@ R021 answers: photo 2 settled into its photographed position on its own; the
 user did not rotate sections to display selected colors. This does not measure
 local twist or require a zero-twist model. The maker always uses an integer
 number of pattern repeats, enough for 700–800 beads for a bracelet or
-3,000–5,000 for a necklace. Apply N = kL in subsequent count/repeat fitting;
-revisit the provisional 2,698-bead photo model, which falls below that usual
-necklace range. Exact photo-2 count/repeat length remain unspecified. Do not
+3,000–5,000 for a necklace. Apply N = kL in subsequent count/repeat fitting.
+R022 clarifies that the provisional 2,698-bead photo estimate is good enough;
+retain it without a count-revision task based on the usual necklace range.
+Exact photo-2 count/repeat length remain unspecified. Do not
 invent join edits or ask again whether whole repeats are used.
 
 The user is confident the photo contains enough information and expects an
@@ -188,3 +191,7 @@ methods, not a validated recovery result. Retain the next bounded visibility
 check; before the later recovery implementation, research relevant primary
 sources and justify the chosen method against this observation model. No new
 algorithm, literature search or rendering was performed in this answer-saving turn.
+
+R022: retain 2,698 beads as the working estimate. This accepts its adequacy for
+current work, not an exact measured count; whole-repeat construction remains
+valid without restricting candidate periods to divisors of 2,698. Next task unchanged.
