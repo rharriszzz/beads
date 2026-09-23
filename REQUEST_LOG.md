@@ -171,3 +171,27 @@ the official documentation in the handoff. No model switch or new task launch.
 Documentation diff/whitespace checks only; no runtime checks needed. Commit/push
 these three scoped documentation files, then verify the live remote tip and local
 status and report the actual delivery result. Preserve pre-existing untracked work.
+
+## R011 — Suggest preserving and clearing the untracked files
+
+> I want to get rid of the untracked files.  suggest a method.  Maybe switch to the branch I was working on, then add commit, push, then switch back to the branch you are using.  Or do you have a better idea?
+
+Scope: inspect and recommend a preservation method, without executing an
+unselected archive/move/delete operation. Confirmed the original working branch
+was `image-to-pattern-2` at `402663e`; all six files remain untracked, with no
+other changes or stashes at entry. The package describes itself as v2 work.
+
+Recommendation: create `archive/image-to-pattern-2-wip` from `image-to-pattern-2`,
+add the six existing files, commit as unfinished work, push the new archive
+branch and verify its contents/remote tip, then return to `photo-2-reconstruction`.
+Once tracked on the archive branch, Git removes those paths when switching back
+to this branch, where they are absent. This preserves the original branch and
+keeps the unfinished work recoverable without deletion or an unpushed stash.
+Archive the existing PNG too, as a historical artifact. No validation claim about
+the old source is implied by an archival commit; compare saved/committed bytes.
+
+Only this recommendation and the handoff note change now; the archive operation
+has not run. Publish these records under R010 and report actual delivery. For the
+small archival task, stay in this conversation; Sol/Medium would also suffice if
+the user switches models. The following geometry task remains Astra/High in a
+fresh conversation. No model switch or reconstruction work occurred.

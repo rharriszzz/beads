@@ -96,3 +96,10 @@ correct workspace; `/new` itself is not a directory-change command:
 entry and must remain untouched and excluded from this step's commit. There
 were no stashes. The full legacy test suite has optional GUI/image-analysis
 dependencies not required by this new isolated pipeline and was not run.
+
+R011 requests a suggested cleanup method. Recommended, not yet executed: create
+`archive/image-to-pattern-2-wip` from the original `image-to-pattern-2` branch,
+commit all six files there as unfinished work, push and verify their preservation,
+then return to `photo-2-reconstruction`. This clears those untracked files here
+while preserving the original branch and the work. Stay in this conversation
+for that small task; Sol/Medium is sufficient if a model change is desired.
