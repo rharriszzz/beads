@@ -19,8 +19,12 @@ The [image-space neighbor baseline](INFERENCE.md) now compares anonymous mask
 centroids with mask-outline orientation on eight synthetic views. At T12 the
 shape cue improves pair precision from 90.85% to 95.45%, with lower recall;
 signed-label errors still make every tested full graph inconsistent. Oracle
-masks, disconnected offsets and false crossing links remain explicit. Next is
-joint local triangle/lattice inference, before photo segmentation or fitting.
+masks, disconnected offsets and false crossing links remain explicit.
+The [joint triangle/trace test](JOINT_INFERENCE.md) now rejects the known false
+bridges but loses most correct rendered-view edges: T12 shape recall falls to
+16.73%. It does not validate indexing. Next is a synthetic diagnostic comparing
+mask centroids with projected body centers and auditing true-direction geometry,
+before another inference algorithm or photo fitting.
 
 ## Run with Python 3.12
 

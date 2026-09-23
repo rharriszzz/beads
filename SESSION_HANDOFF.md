@@ -1,5 +1,75 @@
 # Beads session handoff
 
+## R043 completed — joint constraints reject bridges but lose too many edges
+
+Continued the answered R041/R042 round on daisy, entry e17dd60,
+photo-2-reconstruction, clean tracked tree and no stashes. Sandboxed fetch failed
+on read-only .git/FETCH_HEAD; escalated fetch succeeded, ahead/behind 0/0. No pull,
+computer transfer, delegation, new supplied usage or model change. Python 3.12.14.
+
+Read **photo2/JOINT_INFERENCE.md**. New joint_neighbors.py uses anonymous
+centroids/mask covariances, nearby sector-label alternatives, signed 1+6=7 triangles
+and smooth two-edge 1/6/7 continuations. It retains score ties and competing
+conventions, requires reciprocal choices, repeatedly removes unsupported edges,
+and follows maximal surviving traces. This is a local heuristic, not global row
+optimization; no source indices/colors/body axes/camera/helicity/N enter it.
+All constants were fixed before the scored experiment; no threshold tuning.
+
+At T12, shape pair precision improves 95.45%→96.86%, but recall falls
+55.61%→16.73% (1,850 true / 1,910 proposed, 11,057 available). Best evaluator-only
+signed precision is 94.40%. Forty of 192 joint convention graphs still contain
+inconsistent components. Even evaluator-best convention per view and per-component
+reversal leave 66 wrong indices among 846 nonseed vertices in 33 consistent
+components at T12/shape; 3,349 vertices are isolated. No photo recovery claim.
+
+The ideal brick ring retains all 520 correct signed edges and 199 nonseed indices.
+The missing-detection control keeps 480/504 correct pairs with zero false bridges,
+188 correct nonseed indices and eight isolated vertices. Crossing shape keeps
+594/1,040 correct pairs with zero false pairs; centers keep 350. This is still
+2-D superposition without rendered occlusion. The R041 false 611–613 edge is
+rejected, but both true 611–612–613 edges are also absent. Whole-ring locator
+and detail make that abstention visible, without claiming human ambiguity.
+
+Loss attribution, T12/shape: reciprocal candidates contain 7,707 true pairs;
+initial triangle+continuation support leaves 4,033; reciprocal selection 3,929;
+repeated support pruning 1,850. This identifies stages, not yet the cause among
+centroid displacement, projected curvature or inappropriate geometric support.
+
+All 47 tests pass (eight new), compilation/whitespace pass. All 48 paired shuffle
+comparisons preserve signed source-pair sets. Ten current source hashes, seven
+baseline sources/208 artifacts, eleven current/historical render sources/148
+artifacts verified, with input reports cross-bound. Two final runs reproduce all
+114 artifacts byte for byte; reports agree except command output path. Ten crop
+panels inspected in contact sheets; opposite-hand weak-slot crop, summary,
+crossing and whole-ring plots inspected full size. R041 detail also inspected.
+An audit failed serializing a new NumPy integer diagnostic; converted to Python
+int and both full audits then passed. No failed unit test or inference change
+after score inspection. No new scene/visibility render or full legacy regression;
+existing small renderer tests ran in the suite. No segmentation, sequence
+integration, material change or photo fit. Development/failed outputs stay ignored.
+
+Final output: `photo2/output/joint-audit-verified-2/`; report SHA-256
+`3e2672183f55b93bb258f3f7acd8bb365184f6ba6efc3827a2c4810b0e874f71`.
+Reproduce with `.venv/bin/python photo2/joint_audit.py --output
+photo2/output/joint-audit-new`. The experiment note gives matched missing-input
+recreation commands; those were inspected, not executed.
+Publish ten scoped source/docs files, verify live remote tip and final status;
+final response records branch/commit. Generated outputs and .venv stay ignored.
+Final local doc links and source/artifact hashes pass. Live remote lookup required
+escalation after sandbox DNS failure; retry confirmed entry e17dd60 before publish.
+
+**One next task:** diagnose the projected geometric assumptions on these same
+synthetic vertices. Compare visible-mask centroids with exact projected body
+centers from saved layout CSVs / `neighbor_audit.projected_centers`; measure where
+known true 1/6/7 continuations violate the fixed turn/spacing/support rules and
+mark representative losses in whole-image context. This is instrumented causal
+diagnosis: truth centers/edges must remain distinct from recovered observations.
+Stop after its comparison/report/checks, before changing inference or fitting
+photo 2. Recommend **gpt-6-astra / High with a fresh /new** for this distinct step.
+No pending questions; do not repeat the maker's saved answers or append new
+questions at this round's end. Photo count 2,698 remains provisional (no divisor
+filter), repeat bound <400, rectangular color paths probably ±6/±7 (tentative).
+
 ## R041/R042 — concrete failure illustrated; maker advice saved
 
 R040 questions are answered. The maker says neighbors are never ambiguous except

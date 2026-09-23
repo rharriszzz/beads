@@ -1,5 +1,11 @@
 # Registration and repeat recovery: review and test plan — R026–R028
 
+**R043 update:** [joint triangle/trace constraints](JOINT_INFERENCE.md) reject
+known false bridges but produce sparse, sometimes wrongly indexed patches.
+Next diagnose centroid displacement versus projected-direction/support assumptions
+using instrumented synthetic centers/edges; keep that diagnostic distinct from
+image recovery. Stop after its causal report before another algorithm or photo fit.
+
 **R039 update:** the centroid-versus-outline baseline is completed in
 [INFERENCE.md](INFERENCE.md). Shape improves pair precision but all 192 convention
 graphs retain contradictions; automatic indexing remains unvalidated. Next test

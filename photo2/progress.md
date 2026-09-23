@@ -436,3 +436,43 @@ Publish six scoped source/docs files including R040 local records; generated
 diagrams/reports and .venv remain ignored. Next: review this case then trace all
 three families jointly with lattice checks, stopping at synthetic edge/index
 evidence. Stay in this conversation, gpt-6-astra / High; no /new needed now.
+
+## 2026-09-23 — R043 joint triangle/trace inference
+
+Continued the answered round on daisy, clean photo-2-reconstruction at e17dd60.
+Sandboxed fetch failed on read-only FETCH_HEAD; escalation succeeded, 0/0
+ahead/behind. No pull, transfer, delegation or new supplied status.
+
+Implemented joint_neighbors.py, joint_audit.py and eight tests, with fixed local
+triangle and three-family continuation support, retained competing candidates,
+reciprocal selection, repeated support pruning and maximal surviving traces.
+Source truth enters evaluation only. See JOINT_INFERENCE.md for all parameters
+and the oracle-mask/global-ellipse/projection limitations.
+
+T12 shape gives 1,850/1,910 correct pairs (96.86%) and 16.73% recall, compared
+with baseline 95.45%/55.61%. Best evaluator-only signed precision is 94.40%.
+Forty of 192 convention graphs remain inconsistent. Even optimistic convention
+selection leaves 66/846 nonseed indices wrong in consistent components. The
+ideal lattice remains exact; missing control keeps 480/504 true pairs, crossing
+shape keeps 594/1,040, both without false pairs. The example's false shortcut
+and its true replacement path are both rejected. No human ambiguity asserted.
+
+All 47 tests pass; compilation and whitespace pass. Verified ten current source
+hashes, seven baseline sources/208 artifacts, eleven current/historical render
+sources/148 artifacts and matched input-report hashes. All 48 paired shuffles
+agree; two final audits reproduce 114 artifacts byte for byte, reports agree
+except command. Ten crops inspected in contact sheets and selected detailed/
+whole/summary/crossing figures full size. One added crossing metric initially
+failed JSON serialization as NumPy int64; converted to int, both full audits
+rerun successfully. No failed unit test or threshold optimization.
+
+Final output: joint-audit-verified-2, report hash recorded in JOINT_INFERENCE.md.
+Generated final/reproduced/development/failed outputs stay ignored. No new
+visibility render/full legacy regression, scene/material change, segmentation,
+sequence integration or photo fit; existing renderer tests ran in the suite.
+Publish ten scoped source/docs files and verify remote/status.
+
+Next: causal synthetic comparison of mask centroids and projected true centers,
+auditing true-neighbor turn/spacing/support violations and marking losses in
+whole-image context. Stop at diagnosis before algorithm changes or photo fitting.
+Use gpt-6-astra / High with fresh /new. No end-of-round questions.

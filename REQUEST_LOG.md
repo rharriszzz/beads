@@ -1356,3 +1356,91 @@ Saved this as the latest construction recollection: roughly rectangular paths,
 probably using ±6 and ±7. Supersedes R041's tentative ±1/±7 turns. Retain the
 maker's uncertainty; no exact path lengths or pattern constraints invented.
 Included in the R041 docs/handoff; the illustration task continues unchanged.
+
+## R043 — Continue joint three-direction inference (2026-09-23)
+
+> continue
+
+Continue the bounded synthetic test after R041/R042's saved advice and example.
+Trace 1/6/7 together, use local 1+6=7 triangles, preserve alternatives and compare
+with the unchanged R039 baseline and missing/crossing controls. Stop after the
+illustrated edge/component-index report and checks; no photo segmentation,
+sequence integration or fitting. This continues the answered work round.
+
+Preflight: daisy, clean photo-2-reconstruction at e17dd60, tracking origin,
+no stashes. Sandboxed fetch failed on read-only .git/FETCH_HEAD; escalated fetch
+succeeded, ahead/behind 0/0. No pull, transfer, delegation or new supplied usage.
+Python 3.12.14. Read handoff/log, INFERENCE/NEIGHBOR_FAILURE, plan and source.
+
+Initial fixed experimental design (before new scored runs): reuse the anonymous
+centroid/mask frame and 12-neighbor/1.6-reach baseline; allow 12 degrees of sector
+boundary uncertainty; keep candidate distances within the baseline 1.15 nearest
+ratio per endpoint/direction. Require signed three-family triangles and local
+same-family continuations (at most 35-degree turn, length ratio at most 1.8).
+Score by occupied triangle sides and continuation endpoints, preserve score ties,
+and require reciprocal choices. Prune until every retained edge participates in
+a retained triangle and a retained continuation. These are fixed heuristic
+settings, not recovered photo measurements or a parameter search. Source truth,
+colors, camera, helicity, N and physical axes remain absent from inference.
+
+R043 outcome: implemented joint_neighbors.py, joint_audit.py and eight tests.
+Signed three-family triangles use minimum sine 0.08 to exclude near-collinearity.
+Candidates retain boundary labels/ties, reciprocal choices and both conventions;
+final edges require surviving triangles and continuations. Trace maximal paths
+and cycles afterward. No global long-row optimization or source-truth repair.
+
+T12 shape: 1,850/1,910 correct pairs, 96.86% precision, 16.73% recall versus the
+unchanged baseline's 95.45%/55.61%. Best evaluator-only signed precision is 94.40%.
+Forty of 192 joint convention graphs contain inconsistent components. Even the
+best evaluator convention per view leaves 66 wrong relative indices among 846
+nonseed vertices in 33 consistent components (per-component reversal allowed).
+There are 3,349 isolated vertices across those T12/shape views. All candidates,
+loss stages, missing indices, conflicts, offsets and two conventions are retained.
+
+Ideal brick ring: 520/520 correct signed edges and 199/199 relative indices.
+Missing-detection control: 480/504 true pairs, zero false bridges, 188 correct
+nonseed indices and eight isolated observations. Superposed crossing: shape
+594/1,040 true pairs and zero false pairs; centers 350/1,040 and zero false pairs.
+Still 2-D superposition without rendered occlusion, not a physical crossing claim.
+R041's false 611–613 edge is rejected, but both correct 611–612–613 edges are too.
+The whole-ring locator and detail explicitly show the abstention. No human
+ambiguity or photo indexing claimed.
+
+At T12 shape, correct pairs fall from 7,707 in reciprocal candidates to 4,033
+after initial motif support, 3,929 after reciprocal score selection, and 1,850
+after repeated support pruning. This locates losses at stages without yet
+identifying centroid displacement versus geometric assumptions as their cause.
+
+Checks: all 47 tests pass, including eight new; compilation/whitespace pass.
+Ten current source hashes, seven baseline sources/208 artifacts, eleven render
+sources (current or historical 08ba3bb)/148 artifacts verified; baseline/render
+reports must match. All 48 paired shuffles agree on signed source-pair sets.
+Two final runs reproduce all 114 artifacts byte for byte; reports agree except
+command output path. Source/artifact hashes match. Ten inherited crops inspected
+via contact sheets, opposite-hand weak-slot crop and whole/summary/crossing
+figures full size; R041 detail inspected in the development run.
+Final: photo2/output/joint-audit-verified-2/report.json, SHA-256
+3e2672183f55b93bb258f3f7acd8bb365184f6ba6efc3827a2c4810b0e874f71.
+
+One audit run failed serializing a new crossing metric as NumPy int64; converted
+to Python int and reran both full audits successfully. No inference logic or
+parameter changes after scored runs, no failed unit test. Fixed a missing font
+glyph in the summary title and corrected one rounded percentage in documentation
+during review. Missing-input recreation commands inspected, not executed. No
+new scene/visibility render/full legacy regression needed; existing small
+renderer tests ran with the suite. No scene/material change, photo segmentation,
+sequence integration or fitting.
+
+Updated JOINT_INFERENCE/README/METHODS/PLAN/progress/handoff. Publish ten scoped
+source/docs files, then verify live remote tip and final status. Generated final,
+reproduced, development/failed outputs and .venv remain ignored.
+Next bounded task: compare mask centroids with projected true body centers from
+saved layouts on identical synthetic vertices; audit known 1/6/7 continuation
+turn/spacing/support failures, marking representative losses in whole-image
+context. These are instrumented causal diagnostics, not recovered observations.
+Stop after its comparison/report/checks, before algorithm changes or photo fit.
+Recommend gpt-6-astra / High with fresh /new. No questions at this round's end.
+
+Final source/artifact hashes and local documentation links pass. Sandboxed live
+remote lookup failed on GitHub DNS resolution; escalated retry succeeded and
+confirmed the branch still at entry e17dd60. Proceed with scoped publication.

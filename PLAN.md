@@ -394,3 +394,28 @@ The rough rectangular color paths probably use ±6/±7, correcting the initial
 next bounded joint-tracing/constraint test without making color-based truth
 assumptions. Stop after synthetic edge/component-index checks. Stay here with
 gpt-6-astra / High for this example's review; no /new needed now.
+
+## R043: joint triangle and three-family tracing — complete at excessive abstention
+
+See photo2/JOINT_INFERENCE.md for the fixed rule, scores, controls and reproduction.
+Local 1+6=7 triangles and smooth same-family continuations reject the known false
+bridges but lose too many true edges: T12 shape precision 96.86%, recall 16.73%
+versus baseline 95.45%/55.61%. Best evaluator-only signed precision is 94.40%.
+Even best-convention evaluation leaves 66/846 nonseed relative indices wrong in
+consistent components. This does not validate photo indexing or human ambiguity.
+The ideal lattice stays exact; missing detections and superposed crossings lose
+their false bridges at the cost of further missing edges. R041's false shortcut
+and its true replacement path are both absent.
+
+All 47 tests, compilation/whitespace and hash checks pass. Two final audits
+reproduce all 114 artifacts; all 48 paired shuffles preserve signed edges.
+Source/artifact provenance and failed NumPy-scalar serialization (corrected) are
+recorded. No scene/material, photo, segmentation or sequence changes. Publish ten
+scoped source/docs files; generated outputs/environments stay ignored.
+
+Next bounded task: compare visible-mask centroids with projected true body
+centers on the same synthetic vertices and audit true 1/6/7 turn/spacing/support
+violations. Use saved layout CSVs and neighbor_audit.projected_centers; distinguish
+instrumented truth diagnostics from recoverable image evidence. Mark losses in
+whole-image context and stop after the causal comparison/report, before another
+inference algorithm or photo fit. gpt-6-astra / High; fresh /new recommended.
