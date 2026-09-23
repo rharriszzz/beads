@@ -374,3 +374,52 @@ reasoning guidance supports complex scientific/coding work at higher effort,
 without establishing a measured model comparison:
 https://developers.openai.com/api/docs/guides/reasoning . No model switch or account
 inspection. Current-session token usage was not supplied and is not invented.
+
+## R016 — Construction guidance and synthetic-pattern permission (2026-09-23)
+
+The user first asked not to start yet and requested an explanation of geometry
+ambiguity. They then explained pre-stringing, a slipknot, crocheting a chain
+stitch with one bead per stitch, difficulty of the first three rows, and small
+twist only as needed to join the ends. They authorize assuming bead size and hole
+direction from `beads.pov`, expect repeating colors to enable reconstruction of
+hidden beads, and ask us to consult them about unresolved questions.
+
+> ok,  But I think  you can learn enough from beads.pov; you can also create a bead pattern yourself to thest out any thing you want to see.
+
+Scope: inspect the source and preserve this guidance; revise the next bounded
+test. No new reconstruction experiment, render or inverse claim in this turn.
+Earlier explanations distinguished projected centers/combined silhouettes from
+internal occlusion edges; unrestricted model redundancy is not proof of physical
+non-uniqueness under the newly supplied constraints.
+
+Supplied prior session `01a0cee6-0e62-7592-8fa0-e8a855a02d7f`: Codex v0.155.1,
+gpt-6-astra / high; tokens total 95,952, input 75,117 (+1,059,712 cached), output
+20,835 (reasoning 3,202). Current supplied session
+`01a0cfe2-3bf7-7f81-935d-1a2aa10fc31f`: same version/model/effort, summaries auto,
+OpenAI provider, ~/git/beads, Workspace (Ask for approval), Default mode,
+AGENTS.md loaded, Pro Lite (account identifier omitted). Weekly 47% left, resets
+17:37 on 28 Sep; credits 283; Luna Reserve 100%, resets 16:08 on 30 Sep. No
+current token usage supplied, account inspection or model change.
+
+Preflight: daisy, clean photo-2-reconstruction at 4ebd2c2, no stashes; fetch
+succeeded and upstream ahead/behind is 0/0. Live remote lookup hit sandbox DNS
+failure; escalated retry verified the same full tip. No machine transfer; these
+checks cannot establish another machine's inactivity. A read referenced missing
+photo2/model.py; corrected by reading reconstruct.py. One multi-file patch failed
+verification and changed nothing; corrected before continuing.
+
+Outcome: source confirms tangent hole axes, hole ratio 0.14, nominal 6.5 beads/row
+and rounded-turn closure; most cases use height/diameter 0.7 and roundedness 0.8,
+with case exceptions. R015's hole ratio 0.3/tilt 20 degrees and provisional photo
+height 0.78 differ. Updated PLAN, handoff, progress and SYNTHETIC context; no code
+or settings changed. Next: source-constrained known repeating-pattern synthetic
+test with preserved indices/visibility and hidden-slot recovery at known layout;
+stop at report/checks before photo refit or real-pattern claims.
+
+Review documentation and git diff --check, then publish five scoped docs under
+R010 and verify live remote/local status. Runtime tests/renders skipped for docs
+only; generated output and .venv remain ignored. Final response records delivery.
+Stay in this conversation, no /new; recommend gpt-6-astra / High for the next
+experiment. OpenAI Docs skill used to search and open official reasoning guidance
+https://developers.openai.com/api/docs/guides/reasoning ; this is a task-based
+recommendation, not a measured comparison. No delegation or new experiment.

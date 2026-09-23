@@ -14,8 +14,9 @@ sequence identification are separate claims. Instructions are in `REQUEST_LOG.md
    legacy renderer and create request/experiment/handoff records.
 2. **Fit the bead geometry to visible evidence.** Label centers and colors in
    several separated photo patches, including both bends and straight sections.
-   Fit local rope width, bead dimensions, pitch, circumference count, phase,
-   twist and hole-axis tilt. Compare both helicities with the same observations.
+   Assume bead proportions and hole orientation from legacy `beads.pov` (R016).
+   Fit image scale, rope width, pitch, circumference count and phase under the
+   crochet connectivity and small closure-twist constraints. Compare both hands.
    Decide whether the orthographic approximation is sufficient. Measure residuals
    and hold out patches; do not use arbitrary nearest-neighbor chain ordering.
 3. **Fit paper, lighting and POV-Ray materials.** Use background-only patches
@@ -89,10 +90,37 @@ Details, checks and limitations: `photo2/SYNTHETIC.md`. No photo settings change
 This is fixed-registration candidate discrimination with perfect masks, not
 continuous geometry recovery; Step 2 remains open.
 
+## R016: construction constraints and source authority
+
+User guidance: beads are pre-strung, then a slipknot is added, then crocheted one
+bead per chain stitch. The first three rows require dexterity. Additional twist
+is small, no more than joining the ends requires. Ask the user about construction
+uncertainties; no numerical twist bound or precise stitch-to-row map was supplied.
+Use legacy `beads.pov` for assumed bead size/proportions and hole direction.
+The user explicitly authorizes invented repeating patterns for synthetic tests.
+
+Inspected source: local y is the hole axis; rotation by `chain_angle` about z
+makes it tangent to the central circle, independent of `row_angle`. Hole/body
+radius ratio is 0.14. Most cases use height/diameter 0.7, roundedness 0.8 and
+relative size 1.0, with case-specific exceptions. All eight cases use nominal
+6.5 beads/row. `nrows=round(nbeads/6.5)` and `exact_beads_per_row=nbeads/nrows`
+close the helix with a small distributed adjustment. Image scale still needs
+fitting; these are source assumptions, not newly recovered photo measurements.
+
+R015 instead used hole ratio 0.3, height ratio 0.65 and tilt 20 degrees; current
+photo settings use provisional height ratio 0.78. No code/settings change in
+R016. Preserve that benchmark's evidence, but its unrestricted twist redundancy
+does not prove ambiguity under the user's construction constraints. Repeated
+colors in different visible sections can supply evidence for hidden repeat slots.
+
 ## Next bounded step within Step 2
 
-Test practical boundary observations from shaded synthetic patches with controlled
-blur/noise and fitted local alignment. Compare extracted observations against
-hidden instance-mask truth, measure alternative rejection/ambiguity under
-observation error, and retain the exact gauge equivalence. Stop at a reproducible
-validation report and focused checks before real-photo refit or repeat search.
+Build a deterministic known repeating-pattern synthetic test using legacy bead
+geometry/orientation and closure, extending existing Python/POV-Ray tools. Keep
+original bead/stitch indices, repeat truth and rendered visibility. Test recovery
+of hidden repeat slots from multiple visible occurrences at fixed known layout.
+Validate shaded-image observations with controlled blur/noise and fitted local
+alignment against hidden mask truth. Measure recovery and unresolved slots; this
+does not yet establish joint geometry/order recovery from the photo. Stop at a
+reproducible report and focused checks before photo refitting or real-repeat
+claims. R016 records guidance only; this experiment has not started.

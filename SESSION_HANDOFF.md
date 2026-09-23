@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R015. Branch: **photo-2-reconstruction**, checkout
-`/home/rharris/git/beads`, PC/WSL `daisy`. Entry commit `01dd173` matched origin;
-R015's scoped source/docs are prepared for authorized commit/push. The final
+Updated 2026-09-23 after R016 clarification. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `4ebd2c2` matched the
+live remote; R016 documentation is prepared for authorized commit/push. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -69,18 +69,29 @@ segmentation or repeat search occurred. Generated outputs and .venv stay ignored
 
 ## Next task and stopping point
 
-Test **practical boundary observations from shaded synthetic patches** with
-controlled blur/noise and fitted local alignment. Compare extracted observations
-against hidden ID-mask truth and measure whether alternatives are rejected or
-correctly left ambiguous under observation error. Keep pitch/count/twist equivalence
-explicit. Stop at a reproducible validation report and focused checks; do not
-refit the real photograph or resume repeat search in that bounded step.
+**R016 user constraints supersede the unrestricted geometry search.** Beads are
+pre-strung, then crocheted one per chain stitch. Additional twist is small and
+limited to matching the ends. Assume bead size/proportions and hole direction
+from legacy `beads.pov`; fit image scale. Ask the user about construction details.
+PLAN R016 records source values and exceptions. These are authorized assumptions,
+not recovered measurements. R015's arbitrary 20-degree tilt and 0.3 hole ratio
+are not the required reference geometry. Its unrestricted parameter redundancy
+does not establish impossibility under the construction constraints.
 
-Use **gpt-6-astra / High** and a fresh **`/new`** in `~/git/beads`; supply `/status`
-and **Continue**. This is a task-based recommendation for scientific/visibility
+Next: a **known repeating-pattern synthetic test following legacy beads.pov**,
+with deterministic invented colors, preserved bead/stitch indices, closure and
+actual visibility. Test hidden repeat-slot recovery from multiple occurrences at
+known layout; validate shaded observations under blur/noise and fitted alignment
+against hidden masks. Stop at a reproducible report and focused checks before
+photo refit or real-repeat claims. No new experiment started in R016; code and
+scene defaults remain unchanged. Documentation diff/whitespace checks only.
+
+Stay in this conversation: **no `/new` needed** after this clarification. Use
+**gpt-6-astra / High** for the next experiment when requested. This is a task-based
+recommendation for scientific/visibility
 reasoning, consistent with [official reasoning guidance](https://developers.openai.com/api/docs/guides/reasoning)
-checked through OpenAI Docs in R015, not a measured model comparison. User-supplied
-prior usage and current status are separately attributed under R015. No current
+checked through OpenAI Docs in R016, not a measured model comparison. User-supplied
+prior usage and current status are separately attributed under R016. No current
 usage was invented, model switched or account inspected.
 
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live

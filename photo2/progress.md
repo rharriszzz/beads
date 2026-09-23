@@ -146,3 +146,16 @@ No sub-agent work, model change, remote messaging or computer transfer.
 Next: shaded synthetic boundary extraction with controlled blur/noise and local
 alignment fitting; validate errors/ambiguities against hidden mask truth before
 photo refit. Step 2 remains open. Generated outputs and .venv stay ignored.
+
+## 2026-09-23 — R016 construction clarification, no experiment
+
+User supplies pre-stringing/slipknot/one-bead-per-chain-stitch construction, small
+end-matching twist, permission to assume bead shape/orientation from `beads.pov`,
+and permission to invent test patterns. Inspected legacy source and shared macro:
+hole axis tangent to center circle, hole ratio 0.14, nominal count 6.5 with rounded
+turn count for closure, case-specific bead proportions. R015's tilt/hole ratio
+and current photo height differ; no source/settings changed in this step.
+Updated plan/handoff and contextualized historical ambiguity claims. Next is a
+known-pattern rendered recovery test with source geometry, actual visibility and
+fixed known layout, before photo refitting. Ask user when construction matters.
+Documentation review/whitespace checks only; runtime tests/renders unnecessary.

@@ -1,5 +1,12 @@
 # Occlusion-aware synthetic patch benchmark — R015
 
+R016 clarification: this historical experiment uses deliberately exploratory
+geometry. The user now directs us to assume bead proportions and hole direction
+from legacy `beads.pov`, with small closure twist and one bead per crochet stitch.
+Its unrestricted parameter equivalence does not demonstrate non-uniqueness under
+those constraints. See PLAN R016 for the revised known-pattern test; the results
+below are unchanged, and the new experiment has not started.
+
 **Centers alone fail this benchmark.** Internal visible bead boundaries separate
 the tested depth-reflected, size and tilt alternatives under perfect segmentation.
 Pitch/count/linear-twist equivalence survives even exact rendered masks. This is
