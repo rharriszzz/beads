@@ -297,3 +297,27 @@ positions. Automatic identification/signing of image edges is unvalidated. Full-
 winding, disconnected offsets and wrong bridge edges are explicit test cases.
 The literature/design step is complete; no recovery implementation or experiment.
 Documentation review/whitespace and local-link checks; runtime tests skipped.
+
+## 2026-09-23 — R029 opening answers; R030/R031 helicity and neighbor audit
+
+Saved current/prior session status separately and asked about identifying neighbor
+directions and hidden beads. Maker answered: ±1 follows the small radius, ±6/±7
+are diagonals affected by helicity; hidden beads lie at visible-patch edges.
+Added the requested legacy helicity switch and implemented the scheduled supplied-
+edge audit. Both hands of four fixtures pass 240 graph trials with exact relative
+indices and retained component origins; all 24 full-ring threshold graphs connect.
+Wrong-bridge and reversal controls show why consistency cannot establish image
+edges or hand. See NEIGHBORS.md for evidence, images and commands.
+
+Eight default cases retain pixel equality; four +1 fixtures retain full-resolution
+ID/beauty/layout equality. Both hands match ID/palette pixels and analytic source
+placement. Twenty-five tests pass. Initial checks corrected Python's interpretation
+of the legacy sine expression and camera projection (horizontal orientation and
+default 1.33 right-vector length); isolated markers now agree within 0.15 pixel.
+All ten final panels inspected. Legacy geometry remains unchanged except for the
+optional opposite winding. No automatic edge extraction, photo indexing, period
+recovery or photo refit.
+
+Next: METHODS.md §B known-index partial-word sequence validation, stopping before
+automatic image-edge integration/photo refit. Retain Astra/High; fresh /new advised.
+No unanswered construction questions remain for this round.

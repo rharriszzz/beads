@@ -1,17 +1,23 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R026–R028 method selection and neighbor guidance. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. R025 entry `5f9e87a` matched origin;
-R023 completed the illustrated visibility step. The final
-response reports the verified delivery commit. No computer transfer requested;
-local Git/process inspection cannot establish other-machine inactivity.
+Updated 2026-09-23 after R030/R031: both legacy helicities and the synthetic
+neighbor/index audit. Branch **photo-2-reconstruction**, checkout
+`/home/rharris/git/beads`, PC/WSL `daisy`; step entry ab79158 matched origin.
+Final response reports the verified publication commit. No computer transfer
+requested; local state cannot establish other-machine inactivity.
 
-R026–R028 complete the primary-source method review in photo2/METHODS.md.
-R028 supplies the neighbor rule; no recovery implementation or experiment ran. Current
-supplied session is `01a0d01f-e860-71b3-9e18-4bfc4162d0cc`, gpt-6-astra / High.
-Prior-session timing/token totals belong to `01a0d004-cac1-7443-88ad-b2ff19ab6dfa`;
-see REQUEST_LOG for separate attribution. Stay in this conversation for the
-planned neighbor/index check; no additional /new is needed now.
+Current supplied session is `01a0d02e-6cd9-7982-adae-0e1418129685`, gpt-6-astra /
+High. R029 separately attributes the prior timing/tokens to session
+`01a0d01f-e860-71b3-9e18-4bfc4162d0cc`. No current token totals or later usage
+supplied; no account inspection or model change.
+
+**R029 questions answered in R030:** ±1 runs around the torus's small radius;
+±6 and ±7 are the diagonals, whose orientation depends on helicity. Inspect the
+beads.pov equations for that orientation. The maker says unseen beads are at the
+edges, not between visible neighbors. Preserve this construction guidance;
+threshold-based vertex removal and deliberately missing-edge controls are separate
+synthetic stress cases. No follow-up needed or pending. R030 authorizes the
+helicity fix alongside the scheduled audit; R031 confirms continuing that work.
 
 R025 answers to the opening questions:
 
@@ -29,7 +35,7 @@ No readability threshold was supplied; R023's pixel thresholds remain synthetic
 sensitivity checks, not photo-calibrated rules. Save these as method-selection
 constraints; R026 subsequently reviewed methods without implementing recovery.
 Do not repeat answered questions or add a new question gate for this round.
-R028 also answers the indexing follow-up below; no questions remain pending.
+R030 answers the direction/visibility follow-up; no questions remain pending.
 
 Read `PLAN.md`, latest `REQUEST_LOG.md`, `photo2/progress.md` and
 **`photo2/VISIBILITY.md`**; `photo2/PRACTICE.md` is its source-scene context.
@@ -39,6 +45,46 @@ step and the publication/handoff routine in AGENTS.md. Resume unfinished
 publication before starting another task.
 
 ## Current capability and latest result
+
+R030/R031: `Declare=LegacyHelicity=-1` enables the opposite legacy hand; omitted
+or +1 retains the original. Only the index-dependent row-angle rate changes sign;
+phase, chain traversal, bead/color ordering and tangent hole axes stay fixed.
+Photo2 mode retains its separate handedness control. Invalid values are rejected.
+
+The audit covers both hands of all four R023 configurations. All 24 full-ring
+visibility graphs (8 views × thresholds 1/12/100) are connected. All 240 graph
+trials including two shuffles and integer-lifted quarter patches have zero relative
+index errors and unexplained cycle/reciprocal/uniqueness conflicts. Phase-half
+quarter 0 splits at the explicit index-seam cut; its component offsets remain
+unknown. Correct modulo-N winding is recorded separately. The wrong-bridge control
+passes cycle checks but is wrong against truth: image edges still need independent
+validation. Colors and truth indices are absent from the propagation interface.
+
+See **`photo2/NEIGHBORS.md`**. Reproduce:
+`.venv/bin/python photo2/neighbor_audit.py --output photo2/output/neighbor-audit-final`.
+It regenerates baseline scenes from Git ab79158, so no earlier output is required.
+The final run binds source hashes at entry/exit, render commands and artifact
+hashes; generated data stay ignored. Eight default legacy cases match historical
+pixels at 480×360; four +1 ID/beauty/layout fixtures match at 2400×1800. Both hands'
+ID/palette masks and colors match; analytic coordinates and winding signs agree.
+Rendered markers validate the corrected projection to <0.15 pixel. Twenty-five
+tests pass. Initial audit failures corrected a radians/degrees assumption in
+Python (legacy geometry unchanged), then camera horizontal orientation and the
+default 1.33 camera right-vector length. Initial output directories are diagnostic
+only; use neighbor-audit-final. All ten final panels visually inspected. No
+automatic edge detection or photo/repeat fit.
+
+Final report SHA-256:
+`d1bd07fe49675342db49fd70a7983cb3509d50f4db663b4abfaf7ced3f7ab242`.
+All 11 source and 148 artifact hashes verified, plus old R023's seven source
+hashes against baseline Git and 74 artifacts against disk. The four original
+ID/beauty/layout arrays and visibility statistics reproduce R023 exactly.
+Compilation and whitespace checks pass; 49 renders in the final audit.
+
+Old practice/visibility source hashes no longer match current beads.pov and the
+updated visibility test. Keep those historical reports unchanged. To run the old
+visibility workflow again, regenerate practice into a fresh directory and supply
+it via `legacy_visibility.py --practice`; do not bypass its stale-source checks.
 
 R023 traces actual legacy bead indices and repeat slots through two practice
 phases for the 40-color/800-bead example and a 13-color/780-bead example. The
@@ -188,21 +234,18 @@ for recognizing/signing the three families remain to be tested. Local integer
 indices and full-ring indices modulo exact synthetic N require distinct seam/
 winding treatment; the photo's provisional count is not an exact modulus.
 
-Next task: **illustrated synthetic neighbor/index audit using ±1, ±6, ±7** on the
-four R023 legacy views. Implement propagation/consistency checks on anonymous
-vertices with evaluator-supplied edge offsets; check truth only afterward. Measure
-components at visibility thresholds 1/12/100, reciprocal/cycle consistency, relative
-index accuracy and winding behavior. Include contradictory/missing edges and a
-wrong-bridge negative control, plus annotated projected directions at a bend and
-the weak-slot region. This first step explicitly uses known topology, not automatic
-edge extraction. Stop after the illustrated audit and tests, before segmentation,
-photo indexing, repeat recovery or refit. Detailed contract: METHODS.md §A.
-The later sequence test remains specified in §B. Preserve the 2,698 working estimate.
+Next task: **known-index partial-word repeat validation**, METHODS.md §B. Use
+the known 40/13 synthetic patterns and missing/unknown observations; enumerate
+strongly compatible periods, retain unsupported slots, test whole-repeat closure
+only with exact synthetic N, and preserve competing phases/reversals. This is
+sequence-only validation, not automatic image-edge identification. Stop after its
+synthetic report/tests, before integrating inferred image neighbors or photo refit.
+Preserve the adequate 2,698 photo estimate without a divisor filter.
 
-**Stay here, no /new**, with **gpt-6-astra / High**, retaining the prior
-recommendation for the construction-based indexing check rather than making a
-new model comparison. Supplied prior usage and current status are separately
-attributed under R024; no new usage was supplied or account inspected.
+**Fresh /new recommended**, with **gpt-6-astra / High**, for that distinct task.
+This retains the prior model recommendation, not a new measured comparison.
+Opening questions for the next round should build on saved answers, not repeat
+the palette, error-free stringing, direction, visibility or whole-repeat questions.
 
 At step end, update plan/log/handoff, add/commit/push scoped changes, verify live
 remote tip and final local status, report branch/commit and exclusions, recommend
@@ -215,7 +258,8 @@ R021's natural placement and whole-repeat construction guidance above. Do not
 repeat them or invent specific bead edits at the join. R023 continued the round
 after those answers, without another question gate. Open the next work round
 with contextualized advice questions; R024's questions are answered under R025 above.
-R027/R028 supply the indexing follow-up and answer, preserved above.
+R027/R028 supply the adjacency rule; R029/R030 supply the answered direction and
+visibility follow-up, preserved above. Do not append questions at this round's end.
 
 ## Preserved history
 

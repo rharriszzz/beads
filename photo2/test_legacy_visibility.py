@@ -1,5 +1,6 @@
 """Check unknown-slot accounting and instrumentation against original palette bodies."""
 import tempfile
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -37,15 +38,28 @@ class LegacyVisibilityChecks(unittest.TestCase):
             instrument = out/'instrument.pov'
             instrument.write_text(instrument_source((ROOT/'beads.pov').read_text()))
             scene = out/'wrapper.pov'
-            scene.write_text(wrapper(pattern, instrument.name))
-            ids = decode(render(out,'ids',scene,'0',[],width=480,height=360), 780)
-            palette = render(out,'palette',scene,'0',[],palette=True,width=480,height=360)
-        mask = ids > 0
-        self.assertGreater(int(mask.sum()), 1000)
-        np.testing.assert_array_equal(mask, np.any(palette != 0,axis=2))
-        colors = np.array([[255,0,0],[0,255,0],[0,0,255]], dtype=np.uint8)
-        slot_colors = np.array(pattern['colors'])[(ids[mask]-1)%13]
-        np.testing.assert_array_equal(palette[mask], colors[slot_colors])
+            for hand in (1, -1):
+                with self.subTest(hand=hand):
+                    scene.write_text(f'#declare LegacyHelicity={hand};\n'+wrapper(pattern, instrument.name))
+                    ids = decode(render(out,f'ids-{hand}',scene,'0',[],width=480,height=360), 780)
+                    palette = render(out,f'palette-{hand}',scene,'0',[],palette=True,width=480,height=360)
+                    mask = ids > 0
+                    self.assertGreater(int(mask.sum()), 1000)
+                    np.testing.assert_array_equal(mask, np.any(palette != 0,axis=2))
+                    colors = np.array([[255,0,0],[0,255,0],[0,0,255]], dtype=np.uint8)
+                    slot_colors = np.array(pattern['colors'])[(ids[mask]-1)%13]
+                    np.testing.assert_array_equal(palette[mask], colors[slot_colors])
+
+    def test_legacy_rejects_invalid_helicity(self):
+        with tempfile.TemporaryDirectory(prefix='beads-invalid-helicity-') as tmp:
+            out = Path(tmp)
+            scene = out/'invalid.pov'
+            for hand in (0, 2, .5):
+                with self.subTest(hand=hand):
+                    scene.write_text(f'#declare LegacyHelicity={hand};\n#include "beads.pov"\n')
+                    with self.assertRaises(subprocess.CalledProcessError):
+                        render(out, 'invalid', scene, '0', [], beauty=True, width=80, height=60)
+                    self.assertIn('LegacyHelicity must be +1 or -1', (out/'invalid.log').read_text())
 
 
 if __name__ == '__main__':

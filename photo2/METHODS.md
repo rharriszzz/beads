@@ -8,11 +8,11 @@ methods to propagate those labels; use partial-word periodicity for color repeat
 CPD is no longer the primary indexing proposal. No recovery code or new experiment
 was run in this method-selection step.
 
-The immediate next task is an illustrated synthetic neighbor/index check, including
-cycle consistency and missing connections, before automatic photo indexing or
-color recovery. A bead may have a known index and an unknown color. The graph
-rule comes from the maker; automatic identification of the corresponding image
-neighbors still needs validation.
+R030 implements the illustrated synthetic neighbor/index check in §A, extended
+to both legacy helicities; results are in [NEIGHBORS.md](NEIGHBORS.md). A bead may
+have a known index and an unknown color. The graph rule comes from the maker;
+automatic identification of corresponding image neighbors still needs validation.
+The next bounded task is §B's sequence-only test with known synthetic indices.
 
 R025 supplies the intended palette **red, yellow, black** and the working
 assumption of error-free construction: the maker checks every pattern sequence
@@ -107,6 +107,14 @@ labelings. The user's rule does not itself supply a calibrated pixel-distance
 cutoff, an automatic bead detector or an occlusion-bridging rule. Color is not
 required to identify an edge, so unreadable colors must not remove otherwise
 usable vertices. Separate touching rope sections at image crossings.
+
+R030 clarifies the directions: ±1 runs around the small torus radius and ±6/±7
+along the diagonals; helicity affects their orientation. The maker states that
+unseen beads occur at the edges of the visible patch, not between visible
+neighbors. Use that construction guidance rather than assuming routine internal
+gaps. Synthetic threshold removal and deliberately missing-edge controls remain
+separate stress tests. Inspect the actual legacy angle equations when assigning
+image directions; they rotate around the rope and change with hand.
 
 The next synthetic check will first test this graph logic with evaluator-generated
 edges, then inspect the projected neighbor directions. It does not pretend that
@@ -275,22 +283,29 @@ registration runs or recovery accuracy measurements were performed. Runtime test
 are unnecessary for these documentation-only changes. Documentation consistency,
 links to local files and whitespace are checked before publication.
 
-The hash verification can be repeated from the repository root:
+The historical hash verification can be repeated from the repository root.
+R030 changed beads.pov and the visibility test, so check old source hashes against
+the method-selection Git revision rather than claiming they match today's files:
 
 ```sh
 .venv/bin/python - <<'PY'
-import hashlib, json
+import hashlib, json, subprocess
 from pathlib import Path
 root = Path.cwd()
 out = root / 'photo2/output/legacy-visibility-verified'
 report = json.loads((out / 'report.json').read_text())
-for base, records in [(root, report['sources']), (out, report['artifacts'])]:
-    for name, expected in records.items():
-        assert hashlib.sha256((base / name).read_bytes()).hexdigest() == expected, name
+baseline = 'ab7915841577c27cfb03f779cc765e556ffc9dcd'
+for name, expected in report['sources'].items():
+    data = subprocess.check_output(['git', 'show', baseline + ':' + name], cwd=root)
+    assert hashlib.sha256(data).hexdigest() == expected, name
+for name, expected in report['artifacts'].items():
+    assert hashlib.sha256((out / name).read_bytes()).hexdigest() == expected, name
 print(len(report['sources']), len(report['artifacts']))
 print(hashlib.sha256((out / 'report.json').read_bytes()).hexdigest())
 PY
 ```
 
-If generated outputs are absent, reproduce them with the commands in
-[VISIBILITY.md](VISIBILITY.md); this step does not require additional rendering.
+If historical outputs are absent, reproduce them at that Git revision with the
+commands in [VISIBILITY.md](VISIBILITY.md). A new run on current sources has its
+own provenance. R030's [neighbor audit](NEIGHBORS.md) independently regenerates
+its required historical baseline renders and both current hands.

@@ -264,3 +264,28 @@ projected neighbor directions at bends and the weak-slot region. Follow METHODS.
 §A; stop after the illustrated audit and checks before automatic edge detection,
 photo indexing, color recovery or refit. Keep known index separate from unknown
 color. Stay here with gpt-6-astra / High; no /new needed after this useful discussion.
+
+## R030/R031: both helicities and supplied-edge audit — complete
+
+R029's opening questions were answered by R030: ±1 is around the small radius,
+±6/±7 are diagonal and depend on helicity. Unseen beads lie at visible-patch edges
+according to the maker. User adds both-hand support in legacy beads.pov to the
+scheduled graph audit. The new LegacyHelicity switch preserves the default;
+Photo2's existing handedness control is separate.
+
+NEIGHBORS.md records the both-hand audit. All 24 full-ring threshold graphs are
+connected and all 240 graph trials recover exact relative indices with supplied
+topology. Quarter patches retain offsets at the explicit index seam. Contradiction,
+duplicate-index, missing-edge, winding and wrong-bridge controls delimit the claim:
+consistent graph labels alone do not establish a correct image edge or helicity.
+Eight original cases retain identical default pixels; four original fixtures
+retain identical full-resolution beauty/ID/layout results. Both hands' masks,
+colors, analytic placement and calibrated annotation projection are checked.
+Twenty-five tests pass. No photo setting, fitted material or repeat is accepted.
+
+Next bounded task: METHODS.md §B, sequence-only strong-period validation on known
+synthetic indices with unknown colors, preserving all compatible periods and
+unsupported slots. Stop after that report/tests before automatic image-edge
+integration or photo refit. Keep 2,698 provisional; exact divisibility uses only
+known synthetic counts. Retain gpt-6-astra / High and recommend fresh /new for
+this distinct task. Begin its round with focused questions using saved answers.

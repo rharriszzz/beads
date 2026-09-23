@@ -7,9 +7,10 @@ materials and illumination are provisional. See `../SESSION_HANDOFF.md`.
 
 The selected next approach uses the maker's ±1/±6/±7 neighbor graph to assign
 bead indices, then tests repeating colors while preserving unknown observations.
-See [method review and synthetic test plan](METHODS.md). This is a planned
-capability; automatic image-neighbor identification and pattern recovery remain
-unvalidated. The confirmed photo palette is red, yellow and black.
+See [method review and synthetic test plan](METHODS.md) and the
+[synthetic neighbor/index audit](NEIGHBORS.md). Supplied signed edges now support
+checked relative indexing; automatic image-neighbor identification and pattern
+recovery remain unvalidated. The confirmed photo palette is red, yellow and black.
 
 ## Run with Python 3.12
 
@@ -43,6 +44,25 @@ povray +Ibeads.pov Declare=Photo2=1 +Lphoto2/output +Ophoto2/output/render.png +
 
 Without `Declare=Photo2=1`, `beads.pov` retains its original eight animated
 patterns. `bead-shape.inc` contains its shared rounded bead macro unchanged.
+The legacy scene now accepts `Declare=LegacyHelicity=-1` for the opposite winding;
+omitting it or using `Declare=LegacyHelicity=1` preserves the original hand.
+The sign multiplies the bead-index contribution to the small-radius angle, keeping
+the clock phase, large-circle traversal, colors and tangent hole axes fixed.
+Only +1 and -1 are accepted. These are equation signs, not a measured photo hand.
+Photo2 mode continues to use `settings.json` / Python's `--handedness` instead.
+
+```sh
+povray +Ibeads.pov Declare=LegacyHelicity=-1 +K0 +W800 +H600 +FN -D +WT2 +Ophoto2/output/legacy-opposite.png
+.venv/bin/python photo2/neighbor_audit.py --output photo2/output/neighbor-audit-final
+```
+
+The audit renders both hands at the four R023 configurations and checks graph
+indices at three visibility thresholds. It also renders the historical Git source
+to verify that the default stays pixel-identical. Generated panels and reports
+are ignored by Git; the script recreates them without requiring older outputs.
+Previously generated practice reports have stale source hashes after this change:
+rerun `practice_legacy.py` into a new output directory before using it as input
+to a fresh `legacy_visibility.py --practice ...` run. Preserve older evidence.
 
 ## Coordinates and adjustable parameters
 

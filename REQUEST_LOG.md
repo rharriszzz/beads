@@ -813,3 +813,120 @@ and final status. Generated files and .venv stay excluded; final reports commit.
 
 Final documentation checks passed: staged whitespace check, six-file scope review,
 and all five local Markdown links in METHODS/README. No runtime tests were run.
+
+## R029 — New-session status; ask questions and wait (2026-09-23)
+
+> give me any questions, then wait until I have answers.
+
+Prior supplied session: `01a0d01f-e860-71b3-9e18-4bfc4162d0cc`, titled "Review task
+status", Codex v0.155.1, gpt-6-astra / high, ~/git/beads. Reported work 10m 26s,
+done 5:30 PM. Supplied tokens: total 144,509; input 123,055 (+1,895,168 cached);
+output 21,454 (reasoning 3,064). These are user-supplied prior-session totals,
+not measurements of this session or necessarily one work round.
+
+Current supplied session: `01a0d02e-6cd9-7982-adae-0e1418129685`, Codex v0.155.1,
+gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads, Workspace
+(Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite (account
+identifier omitted). Weekly limit 43% left, resets 17:37 on 28 Sep; credits 283;
+Luna Reserve Weekly 100% left, resets 17:31 on 30 Sep. No current-session token
+totals supplied; no account inspection or model change.
+
+Read saved answers, AGENTS.md, handoff, recent log and METHODS.md. Preflight:
+machine daisy, clean photo-2-reconstruction at ab79158, tracking origin with
+cached ahead/behind 0/0, no stashes. No fetch or live remote verification this
+turn. No transfer, delegation, code edits or experiments. Save the opening
+questions locally and wait as explicitly requested; publication remains pending
+with the answered discussion/next completed step. Runtime tests are unnecessary
+for this opening record.
+
+Pending questions:
+
+1. On a visible patch, what visual cue tells you which neighbor direction is
+   ±1 and which are ±6 and ±7—for example, bead tilt, hole direction or the way
+   the rows line up?
+2. When part of a bead is hidden or the rope bends, how do you decide whether
+   two visible beads are immediate neighbors or have an unseen bead between them?
+
+The supplied adjacency rule is retained; these ask how to recognize its edges
+in an image, not for the already answered construction rule. Wait for answers
+before further work. Next remains METHODS.md §A's illustrated synthetic audit,
+stopping before automatic edge extraction, photo indexing or repeat recovery.
+Retain gpt-6-astra / High and this conversation; no /new needed.
+
+## R030 — Maker explains directions; add both legacy helicities this round (2026-09-23)
+
+> So you can figure out yourself by carefull;y examining the code in beads.pov, but since I am here, I can say that The 1 direction is around the smaller radius of the torus, and the 6 and 7 are along the diagonals, also note that the helicity matters, beads.pov has only one helicity right now.. How about you fix that in this round, along with your regularly scheduled work.  It is not really possible to havetwo visible beads with an unseen bead between them,  the unseen beads are always at the edges.  ok, if you want better answers to these questions, do a follup question, and wait.
+
+R029's questions are answered: ±1 follows the torus small radius; ±6/±7 follow
+the diagonals, whose orientation depends on helicity. The maker says unseen
+beads occur at patch edges, not between visible neighbors. Keep this construction
+guidance distinct from synthetic visibility thresholds removing faint vertices.
+No follow-up is needed after inspecting the placement loop and bead macro.
+User authorizes both-helicity support in beads.pov alongside METHODS.md §A's
+scheduled illustrated synthetic neighbor/index audit. Preserve the legacy default
+and check its rendered regression; stop before automatic image-edge extraction,
+photo indexing, period recovery or refit. No new session usage supplied.
+
+Preflight: daisy, photo-2-reconstruction at ab79158, only R029's two local docs
+modified, no stashes. Initial fetch failed on sandbox .git/FETCH_HEAD permissions;
+escalated fetch succeeded, ahead/behind 0/0. Python 3.12.14 and local POV-Ray
+available. No machine transfer or delegation. R029 publication joins this step.
+
+## R031 — Confirm ongoing continuation (2026-09-23)
+
+> continue if you are not already
+
+Already executing R030's helicity extension and scheduled neighbor/index audit.
+Continue the same bounded round without another opening-question gate. No new
+scope, usage or model change; acknowledged that the work was underway.
+
+R030/R031 outcome: added LegacyHelicity ±1 to the legacy scene; +1 is the unchanged
+default and -1 reverses the index-dependent small-radius winding while preserving
+phase, large-circle traversal, indices/colors, body dimensions and tangent hole
+axes. Invalid values fail parsing. Photo2 mode retains its separate handedness.
+Implemented neighbor_graph.py and neighbor_audit.py with anonymous vertices,
+supplied ±1/±6/±7 edges, independent component origins, reciprocal/cycle/index-
+uniqueness checks and explicit modulo-N winding. No colors or evaluator truth
+enter propagation. All 24 full-ring threshold configurations connect; all 240
+trials across both hands, two shuffles and full/quarter regions recover exact
+relative indices. The phase-half quarter containing the index seam retains two
+components. Wrong-bridge/reversal controls delimit what consistency can establish.
+
+Tests/checks: 25 tests pass, including real both-hand ID/palette renders, invalid
+helicity values, contradictory/missing/duplicate graph edges, disconnected offsets,
+seam/winding and a consistent-but-wrong bridge. Eight default cases match baseline
+pixels at 480x360; four explicit +1 fixtures match baseline full-resolution
+beauty/ID/layout. All eight current views match original-palette masks/colors and
+analytic geometry/phase/winding. Three isolated projection markers agree within
+0.15 pixel. All ten final bend/weak-slot panels visually inspected. Compilation
+and whitespace checks pass. Final output photo2/output/neighbor-audit-final:
+49 renders, 11 verified source hashes and 148 verified artifact hashes; report
+SHA-256 d1bd07fe49675342db49fd70a7983cb3509d50f4db663b4abfaf7ced3f7ab242.
+Historical R023's seven source hashes match baseline Git ab79158, all 74 artifacts
+match disk, and all four original ID/beauty/layout arrays and visibility statistics
+match the new +1 run. Do not claim old source hashes match the changed checkout.
+
+Actual failures/corrections: initial analytic coordinate assertion used a degree-
+converted sine instead of POV's literal radian sine expression; corrected Python
+only, preserving legacy dimensions. Initial diagrams exposed the reversed camera
+horizontal axis; isolated-marker checks then exposed the default camera right
+length 1.33 rather than exact 4/3. Corrected both and regenerated final outputs.
+Earlier audit directories are development diagnostics, not final evidence. One
+multi-file documentation patch failed on malformed patch syntax without edits;
+applied smaller edits. One ad-hoc hash/equality script had an unmatched parenthesis
+and was corrected before the successful checks. No failed check is reported passed.
+
+Updated plan, methods, README, progress and handoff; NEIGHBORS.md records exact
+scope, commands, results and limitations. No segmentation, automatic image edges,
+photo indexing, period recovery or photo refit. Keep the 2,698 adequate estimate;
+no divisibility filter on it. No new usage, delegation, transfer or model change.
+Publish the 12 scoped source/docs files under R006/R010, including R029's earlier
+local record; verify live remote tip and final status. Generated artifacts and
+.venv remain intentionally ignored. The final response records delivery commit.
+
+Next: METHODS.md §B's sequence-only strong-period validation using known synthetic
+indices with unknown colors. Preserve compatible alternatives and unsupported
+slots, and exact-count closure only for synthetic N. Stop after report/tests before
+automatic image-edge integration or photo refit. Retain gpt-6-astra / High;
+recommend fresh /new for that distinct step. R029 opening questions are answered
+in R030; no new questions at this round's end.
