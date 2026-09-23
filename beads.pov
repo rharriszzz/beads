@@ -150,6 +150,16 @@ plane { z, 0 pigment { White } finish { diffuse 0.90 }}
  
 #end
 
+// Optional user sequence; colors index the selected legacy case's bead palette.
+// With no override, all original patterns and scene settings are unchanged.
+#ifdef (CustomColorPattern)
+  #ifndef (CustomPatternGroups)
+    #error "CustomColorPattern requires CustomPatternGroups"
+  #end
+  #declare color_pattern = CustomColorPattern;
+  #declare ngroups = CustomPatternGroups;
+#end
+
 #declare pattern_length = dimension_size(color_pattern, 1);
 #declare nbeads = ngroups * pattern_length;
 #declare nrows = floor(0.5 + (nbeads / beads_per_row));  

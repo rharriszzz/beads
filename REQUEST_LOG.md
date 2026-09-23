@@ -448,3 +448,28 @@ Preflight: daisy, clean photo-2-reconstruction at ed31bbb, no stashes, Python
 3.12.14 and /usr/local/bin/povray available. Fetch first failed on read-only
 .git/FETCH_HEAD; escalated fetch succeeded, ahead/behind 0/0. No new status or
 usage supplied; R016 remains the latest session attribution. No machine transfer.
+
+R017 outcome: committed plan first as 0fbd48f, then continued the bounded practice.
+Added a small optional CustomColorPattern/CustomPatternGroups hook to beads.pov;
+authored 40-color sequence and Python runner generate a wrapper including the
+original scene. Rendered both case-1 phases at 2400x1800 with unchanged original
+camera/materials/geometry. POV reports 800 beads, 123 turns, 6.504065041 beads/row.
+Source calculation gives 54 degrees between repeat occurrences and -27.6923
+degrees total closure adjustment relative to nominal count. These clarify why
+other repeats can expose different slots, without claiming measured completeness.
+Inspected both full images and both corrected detail crops. First crop contained
+too much blank center, then corrected and regenerated. Gamma/version placement
+warnings remain from legacy rendering; no unrelated modernization performed.
+
+Checks: default 640x480 case-1 pre/post-hook renders pixel-identical; all 13
+existing tests pass; practice script compiles; final report source/artifact hashes
+match disk. Commands/parameters/hashes in generated report and PRACTICE.md.
+No segmentation, inverse recovery, photo refit, account inspection or delegation.
+Publish scoped source/docs and both step commits under R010; generated images,
+wrapper/logs/report and .venv stay ignored. Verify push/live remote/final status.
+Next: known bead/repeat-slot visibility tracing in these same original renders,
+stop at illustrated check before automated recovery or photo refitting. Stay in
+this conversation, no /new; retain gpt-6-astra / High recommendation from R016
+(official guidance already consulted in this session), no model switch.
+Final staging initially failed because .git/index.lock was read-only in the
+sandbox; escalated staging succeeded. Scoped staged whitespace check passed.

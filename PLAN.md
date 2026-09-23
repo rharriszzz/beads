@@ -132,3 +132,14 @@ whereas angular placement uses `exact_beads_per_row`; a color repeat need not
 equal a geometric row. `clock` chooses one of eight cases and also sets two
 rotations through `rclock`; practice views must stay in the same case. The legacy
 scene represents bead bodies and their placement, not actual thread/stitches.
+
+R017 completed: original-scene custom sequence rendered at two phases; default
+render remains pixel-identical. Forty colors repeated 20 times give 800 beads,
+123 turns and a 54-degree cross-section advance between repeat occurrences.
+Full images and overlap crops inspected; details/commands in `photo2/PRACTICE.md`.
+Thirteen tests, compilation, report hash verification and whitespace checks pass.
+
+Next: trace selected known bead indices/repeat slots through these same legacy
+renders and measure visibility across occurrences. Stop at an illustrated
+visibility/sequence check before automated recovery or real-photo refit. Do not
+automatically return to the unrestricted R015 model.

@@ -1,8 +1,8 @@
 # Beads session handoff
 
-Updated 2026-09-23 after R016 clarification. Branch: **photo-2-reconstruction**,
-checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `4ebd2c2` matched the
-live remote; R016 documentation is prepared for authorized commit/push. The final
+Updated 2026-09-23 after R017 practice. Branch: **photo-2-reconstruction**,
+checkout `/home/rharris/git/beads`, PC/WSL `daisy`. Entry `ed31bbb` matched origin;
+plan checkpoint committed as `0fbd48f` before practice, as requested. The final
 response reports the verified delivery commit. No computer transfer requested;
 local Git/process inspection cannot establish other-machine inactivity.
 
@@ -13,6 +13,19 @@ step and the publication/handoff routine in AGENTS.md. Resume unfinished
 publication before starting another task.
 
 ## Current capability and latest result
+
+R017: ran actual legacy `beads.pov` with an invented 40-bead color repeat, 20
+groups and two within-case clock values. A small optional pattern override keeps
+legacy geometry/materials/camera intact. Results: 800 beads, 123 turns; repeat
+occurrences advance 54 degrees around the rope, showing why hidden colors may
+be exposed in other occurrences. Full renders and corrected overlap crops were
+inspected. This is direct forward-render practice, not an inverse experiment.
+See **`photo2/PRACTICE.md`**; reproduce with
+`.venv/bin/python photo2/practice_legacy.py`. Generated output is ignored under
+`photo2/output/legacy-practice/`, with commands, hashes and renderer logs.
+Default legacy before/after renders are pixel-identical; 13 existing tests,
+compilation and report source/artifact hash checks pass. Existing renderer gamma
+and version-placement warnings remain. No photo fit or color recovery occurred.
 
 The initial Python/POV-Ray forward model renders photo 2 with a saved closed
 spline and provisional paper/light/glossy bead materials. Legacy mode remains
@@ -78,14 +91,13 @@ not recovered measurements. R015's arbitrary 20-degree tilt and 0.3 hole ratio
 are not the required reference geometry. Its unrestricted parameter redundancy
 does not establish impossibility under the construction constraints.
 
-R017 active task: **practice running the actual legacy beads.pov with an invented
-pattern** before another recovery benchmark. First commit this revised plan at
-the user's request, then continue to full renders and enlarged inspections at
-two within-case phases. Preserve scene geometry/materials/camera and verify any
-optional pattern hook leaves default rendering unchanged. Record commands,
-source/image hashes and observations. Stop after practice results and checks,
-publish scoped work, and reconsider the next task. No segmentation or inverse
-experiment is authorized as part of this bounded practice step.
+Next task: use the **same legacy practice renders and known sequence** to trace
+selected bead indices/repeat slots and measure visibility across repeat
+occurrences. Keep any ID instrumentation separate from beauty renders. Stop at
+an illustrated visibility/sequence check before automated recovery or photo
+refitting. Do not automatically resume the unrestricted R015 model. R017's
+practice step is complete; only its final scoped publication remains in this
+handoff snapshot, with verified delivery reported in the final response.
 
 Stay in this conversation: **no `/new` needed** after this clarification. Use
 **gpt-6-astra / High** for the next experiment when requested. This is a task-based

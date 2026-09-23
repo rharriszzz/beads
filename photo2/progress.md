@@ -159,3 +159,18 @@ Updated plan/handoff and contextualized historical ambiguity claims. Next is a
 known-pattern rendered recovery test with source geometry, actual visibility and
 fixed known layout, before photo refitting. Ask user when construction matters.
 Documentation review/whitespace checks only; runtime tests/renders unnecessary.
+
+## 2026-09-23 — R017 direct legacy practice
+
+User requested original beads.pov practice, then explicitly requested a plan
+commit before continuing. Committed revised plan/log/handoff as 0fbd48f.
+Added optional legacy color/group override, authored 40-color pattern and a
+runner that includes the actual legacy scene. Two 2400x1800 case-1 views contain
+800 beads and 123 turns; each repeat advances 54 degrees around the rope.
+Both full images and corrected right-side crops inspected; no inferred indices
+or photo recovery claims. See PRACTICE.md for source lessons, hashes and commands.
+Default 640x480 before/after pixels match. All 13 tests, compilation and final
+report hash verification pass. Initial crop was mostly blank center; corrected
+and rerendered. Existing missing gamma/version placement warnings remain.
+Next: trace known indices and measure visibility across these same repeats,
+stopping at an illustrated check before automatic recovery/photo refitting.
