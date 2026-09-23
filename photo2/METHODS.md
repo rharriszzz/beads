@@ -1,5 +1,13 @@
 # Registration and repeat recovery: review and test plan — R026–R028
 
+**R039 update:** the centroid-versus-outline baseline is completed in
+[INFERENCE.md](INFERENCE.md). Shape improves pair precision but all 192 convention
+graphs retain contradictions; automatic indexing remains unvalidated. Next test
+joint local triangle/lattice constraints for edge selection and signed labels,
+retaining ambiguity/abstention and the fixed baseline controls. Stop at a synthetic
+edge/component-index report and checks, before segmentation, sequence integration
+or photo fitting. The earlier next-step descriptions below are retained history.
+
 Select **a neighbor graph with integer index differences**, followed by
 **strong-period testing of a partial word**. R028 supplies the key construction
 rule: each visible bead has neighbors along the three directions with index
@@ -16,6 +24,18 @@ R036 completes §B's sequence-only test with known synthetic indices; see
 [SEQUENCES.md](SEQUENCES.md). The next bounded task is synthetic edge inference
 from supplied visible-mask centroids, withholding truth indices/colors from edge
 construction; stop after its illustrated report/checks before segmentation/refit.
+
+R038 adds a shape cue to that next test: the maker reports almost no tilting or
+sliding, rectangular-looking top beads, close spacing along direction 1 described
+as "the shorter length close by", and brick-like 6/7 neighbors with short edges
+together and successive layers halfway offset. Compare the centroid-only baseline
+with outline/orientation cues measured from the supplied visible masks. Do not
+pass true body axes, source indices or colors to edge construction. These are
+qualitative construction cues, not yet a calibrated image-direction rule.
+The shared bead-shape.inc defines a rounded hollow cylinder, local hole axis y;
+beads.pov case 1 uses roundedness 0.8, height/diameter 0.7, relative size 1.0,
+and hole/outer radius 0.14. Bead bodies rotate by chain_angle about z only;
+row_angle controls their placement. Oracle mask outlines remain oracle segmentation.
 
 R025 supplies the intended palette **red, yellow, black** and the working
 assumption of error-free construction: the maker checks every pattern sequence

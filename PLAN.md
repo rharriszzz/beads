@@ -342,3 +342,39 @@ at bends/occluded edges/crossings, preserving unresolved alternatives. Supplied
 mask detections remain oracle segmentation. Stop after an illustrated report and
 checks, before beauty segmentation or photo fitting. Recommend gpt-6-astra / High
 and a fresh /new for this distinct perception step. No new questions at round end.
+
+## R038: shape guidance for neighbor inference
+
+R037 opening questions are answered. The maker reports almost no tilting/sliding;
+top beads look rectangular, with direction 1 close along the shorter dimension
+and directions 6/7 forming staggered brick-like layers. Preserve the exact wording
+in REQUEST_LOG/handoff rather than treating it as a calibrated image-axis rule.
+Re-read beads.pov and bead-shape.inc: rounded hollow cylinders, case-1 axial
+height/diameter 0.7, local y hole axis, body rotation by chain_angle only.
+Extend the next test to compare centroid-only inference with visible-mask shape/
+orientation cues; withhold truth axes, indices and colors from construction.
+The report/check stopping point and oracle-segmentation limitation remain unchanged.
+No experiment started by this advice record. Stay in this conversation with
+gpt-6-astra / High; no further /new needed and no questions pending.
+
+## R039: centroid-versus-shape neighbor baseline — complete
+
+Implemented the bounded synthetic perception comparison; see photo2/INFERENCE.md.
+At T12, pair precision improves from 90.85% to 95.45% with mask orientation, while
+recall falls from 61.30% to 55.61%. Even the best truth-evaluated sign/convention
+choice gives shape signed precision only 82.24%. All 192 convention graphs retain
+contradictions; no photo indexing claimed. The ideal brick lattice works exactly,
+but missing detections cause four false bridges and the superposed-ring crossing
+control still gives 96 shape cross-sheet links. Retain these exposed failures.
+
+All 39 tests, compilation, provenance/whitespace checks pass; two runs reproduce
+all 208 artifacts byte for byte. No scene/material or photo changes. Publish the
+scoped source/report/docs and R037/R038 advice/status records. Generated artifacts
+and environments remain ignored.
+
+Next bounded task: joint local triangle/lattice constraints for selecting and
+signing ±1/±6/±7 edges using 1+6=7, mask orientation and explicit abstention. Keep
+this fixed baseline and missing/crossing controls; evaluate against withheld truth.
+Stop after synthetic edge/component-index evidence and checks, before photo
+segmentation, sequence integration or fitting. Recommend gpt-6-astra / High with
+a fresh /new for that distinct algorithm task. No questions at round end.

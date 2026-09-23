@@ -1,5 +1,129 @@
 # Beads session handoff
 
+## R039 completed — outline cues help; automatic indexing remains open
+
+Updated 2026-09-23. Continued after R037/R038 answers, on daisy,
+photo-2-reconstruction at entry 8cecceb. Included the four earlier local advice/
+status/plan edits. Sandboxed fetch failed on read-only .git/FETCH_HEAD; escalated
+fetch succeeded and confirmed ahead/behind 0/0. No transfer or delegation.
+Pre-publication live lookup also needed escalation after sandbox DNS failure;
+the retry confirmed the remote still at entry 8cecceb. Local doc links pass.
+The supplied current-session status remains R037's; no new usage/model change.
+
+Read **photo2/INFERENCE.md** for scope, results, reproduction and limitations.
+Implemented anonymous centroid inference and a mask-covariance orientation
+variant, both preserving two signed/6-versus-7 conventions, nearest-choice ties,
+nonreciprocal proposals and all missing source indices. No truth indices, colors,
+body axes, camera, helicity or N enters inference. Exact synthetic N is used only
+afterward for graph/seam diagnostics. The instance masks remain oracle inputs.
+
+Across eight views at T12 (one shuffle, no double counting), centers give
+6,778/7,461 correct pairs, 90.85% precision and 61.30% recall; shape gives
+6,149/6,442, 95.45% precision and 55.61% recall. Even the evaluation-only best
+convention/reversal yields only 82.24% correct signed labels for shape. At T100,
+shape pair precision is 98.56%, recall 60.85%, best signed precision 89.04%.
+All 192 convention graphs contain an inconsistent component. Small apparently
+consistent components can still have wrong indices; raw tree potentials are
+diagnostic only. This neither recovers photo 2 nor disproves its recoverability.
+
+The ideal 200-point brick ring gives 520/520 correct edges/labels and exact
+relative indices. Removing three interior detections produces four false bridges.
+The artificial 2-D crossing stress gives 104 center / 96 shape cross-sheet false
+links. It superposes point clouds without rendering occlusion; the eight saved
+POV ring views contain no crossing. The covariance-ellipse frame is a limited
+single-ring heuristic, not a general curve tracker or full bead-boundary fit.
+
+All 39 tests pass (seven new); compilation and whitespace pass. Seven current
+source hashes, eleven input source hashes via current/historical Git, and 148
+input artifact hashes verified. All 48 paired shuffles preserve signed source-
+pair sets. Two runs have all 208 artifacts byte-identical, reports identical
+except command output path. Ten crop panels inspected in contact sheets, the
+original-hand bend also at full size, and summary/crossing figures at full size.
+Final output: photo2/output/inference-audit-verified/; report SHA-256
+`e27feb373c35931b023e89ab0ece93f5955d3ebf0b16e73d2021b58847153438`.
+Reproduce: `.venv/bin/python photo2/inference_audit.py --output
+photo2/output/inference-audit-new`. INFERENCE.md gives missing-input recreation.
+No failed runtime tests/assertions; one patch failed on unmatched context without
+edits, corrected and reapplied. Exact diagonal-boundary ambiguity found in review
+now abstains symmetrically. No threshold search or truth-based edge repair.
+Staged whitespace caught an extra fixture EOF blank line; removed it and reran
+both complete audits for final source hashes. All 208 artifacts also match the
+earlier inspected run byte for byte; no logic change or extra test suite needed.
+
+No scene/material changes, photo fit, segmentation or sequence integration. No
+new visibility render/full legacy audit needed; existing renderer unit checks
+ran in the full suite. Generated outputs, development runs and .venv stay ignored.
+Publish eleven scoped source/docs files, then verify live remote tip and final
+status; final response records delivery commit. No questions remain pending.
+
+**Next task:** joint local triangle/lattice constraints for edge selection and
+±1/±6/±7 assignment, using 1+6=7 and mask orientation; preserve competing choices
+and abstain instead of forcing labels. Compare against this fixed baseline and
+its missing/crossing failures without truth-based edge selection. Stop after its
+synthetic edge/component-index report and checks, before photo segmentation,
+sequence integration or fitting. Keep photo count 2,698 provisional and repeat
+bound <400; no divisor filter. Recommend **gpt-6-astra / High with a fresh /new**
+for that distinct algorithm step. User controls session/model selection.
+
+## R038 — opening questions answered; bead-shape guidance saved
+
+The maker reports almost no bead tilting or sliding at bends. Some beads on top
+look rectangular. For direction 1, "the rectangles [are] close with the shorter
+length close by"; directions 6 and 7 resemble stacked bricks, "where the short
+edges are together, and the next layer is halfway offset". Preserve these words
+as qualitative guidance; do not invent a calibrated image-axis/contact rule.
+R037's questions are answered; do not repeat them.
+
+Re-read beads.pov and its shared bead-shape.inc. The bead is a rounded hollow
+cylinder assembled from two annular cylinders and four scaled tori, with local
+hole axis y. Case 1 uses roundedness 0.8, axial height/outer diameter 0.7 and
+relative size 1.0; hole/outer radius is 0.14. Its side outline can therefore
+appear as a rounded rectangle. Placement rotates each bead only about z by
+chain_angle; row_angle changes its position, not its body orientation.
+
+For the upcoming synthetic neighbor test, retain the centroid-only baseline
+but also test visible-mask outline/orientation cues motivated by this advice.
+Keep source indices, colors and true body axes hidden from edge construction;
+evaluate afterward against truth. Shape cues inferred from oracle masks still
+do not validate photo segmentation. Stop after the illustrated neighbor/index
+report and checks, before beauty-image segmentation or photo fitting.
+
+This answer records guidance and the requested source review; no experiment or
+scene change yet. R037/R038 records and plan updates remain local for the next
+work step. Stay here with gpt-6-astra / High; no /new needed. No questions pending.
+
+## R037 opening — answered by R038
+
+On 2026-09-23 the user supplied the previous session's completion/tokens and a
+new session's status, then requested: "ask questions, then wait for the answers".
+Do not start the next experiment from this request. R036 remains completed;
+the next task below remains synthetic neighbor inference with truth withheld.
+
+Current supplied session: `01a0d068-9ed3-7372-9120-2113f652b7ba`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 40% left (resets 17:37 on 28 Sep),
+283 credits, Luna Reserve Weekly 100% left (resets 18:34 on 30 Sep).
+No current token totals supplied. REQUEST_LOG R037 separately attributes the
+previous session's supplied totals; no account inspection or model change.
+
+Saved context: neighbors differ by ±1, ±6 or ±7; ±1 goes around the rope,
+and the diagonals depend on helicity. The next test asks whether bead positions
+alone let us recognize these neighbors in synthetic images. Questions, now answered:
+
+1. When you trace neighbors in a photograph, what visual cue helps you distinguish
+   the around-the-rope direction from the two diagonals: rows of bead centers,
+   bead tilt/hole direction, visible thread, or something else?
+2. At a tight bend, how does the bead arrangement change in your experience—do
+   gaps mainly open on the outside and close on the inside, or do beads also
+   noticeably tilt or slide relative to their neighbors?
+
+Entry: daisy, clean photo-2-reconstruction at 8cecceb, tracking origin with cached
+ahead/behind 0/0, no stashes. No fetch/live remote verification, transfer or
+delegation. Only opening records are edited; no experiment, commit or push.
+At that opening, waited for the user's answers. Stay in this conversation, gpt-6-astra / High;
+no further /new needed for these questions and the subsequent bounded task.
+
 ## R036 completed — sequence component validated on known synthetic indices
 
 Updated 2026-09-23. Continued in this conversation as requested; no /new or model

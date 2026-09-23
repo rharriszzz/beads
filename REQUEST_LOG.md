@@ -1127,3 +1127,143 @@ Next: infer synthetic neighbor edges from anonymous visible-mask centroids with
 truth indices/colors withheld from construction; stop after illustrated edge/
 relative-index accuracy and checks, before segmentation/refit. Retain gpt-6-astra
 / High; recommend fresh /new for that distinct next task. No end-of-round questions.
+
+## R037 — Supplied session status; ask questions and wait (2026-09-23)
+
+> ask questions, then wait for the answers
+
+User supplied prior-session completion: worked 12m 18s, done 6:34 PM;
+session `01a0d050-4cd7-7672-ab8e-b5c59d5822c1`, titled "Review Codex session
+status", Codex v0.155.1, gpt-6-astra high, ~/git/beads. Supplied prior tokens:
+total 111,630; input 85,960 (+1,553,152 cached); output 25,670 (reasoning 4,093).
+These are previous-session totals, not measurements of this session.
+
+Current supplied session: `01a0d068-9ed3-7372-9120-2113f652b7ba`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 40% left, resets 17:37 on 28 Sep;
+credits 283; Luna Reserve Weekly 100% left, resets 18:34 on 30 Sep.
+No current token totals supplied; no account inspection or model change.
+
+Read AGENTS.md, current handoff/saved answers, recent request log, METHODS.md
+and sequence experiment notes. Preflight: daisy, clean photo-2-reconstruction
+at 8cecceb4742eef1167aabe0bdb84a6788eacfa3f, upstream origin/photo-2-reconstruction,
+cached ahead/behind 0/0, no stashes. No fetch/live remote verification, computer
+transfer or delegation. Saved two pending questions in the handoff:
+
+1. When tracing neighbors in a photograph, what visual cue distinguishes the
+   around-the-rope direction from the two diagonals: rows of bead centers,
+   bead tilt/hole direction, visible thread, or something else?
+2. At a tight bend, do gaps mainly open outside and close inside, or do beads
+   also noticeably tilt or slide relative to their neighbors?
+
+Outcome: ask these construction-advice questions and wait as explicitly requested.
+No neighbor-inference experiment, render, implementation, commit or push.
+Runtime tests skipped for this record-only turn; documentation whitespace checked.
+Opening records remain local for the answered follow-up. Next task/stopping point
+unchanged: synthetic inferred-edge/relative-index report before segmentation/refit.
+Stay in this conversation with gpt-6-astra / High; no additional /new needed.
+
+## R038 — Minimal movement and rectangular bead cues (2026-09-23)
+
+> almost no tilting or sliding.  Some of the beids, the ones on the top, are visibly rectangular (re-read the individual bead geometry from beads.pov).  The 1 direction puts the rectangles close with the shorter length close by.  The 6 and 7 directions are sort of like stacking bricks, where the short edges are together, and the next layer is halfway offset.
+
+R037 opening questions answered. Re-read beads.pov including bead-shape.inc:
+two annular cylinders and four scaled tori form a rounded hollow cylinder with
+local y hole axis. Case 1 uses roundedness 0.8, height/diameter 0.7 and relative
+size 1.0; hole/outer radius 0.14. Each body rotates about z by chain_angle;
+row_angle changes position without an additional body rotation. This supplies a
+rounded rectangular side outline consistent with the user's visual cue; no new
+render or measured photo-axis alignment is claimed. Preserve the user's exact
+direction/contact wording pending image tests, and minimal tilt/slide as advice.
+
+Updated METHODS/PLAN/handoff: compare centroid-only neighbor inference with shape
+and orientation measured from supplied visible masks; withhold true axes, source
+indices and colors. Still oracle segmentation, not validated photo detection.
+Next task stops at the illustrated synthetic edge/relative-index report and checks.
+
+Preflight: daisy, photo-2-reconstruction tracking origin, cached ahead/behind 0/0,
+no stashes; only R037 REQUEST_LOG/SESSION_HANDOFF edits present at entry. No fetch,
+live remote verification, machine transfer, delegation or new supplied usage.
+One search used nonexistent photo2/PLAN.md and returned exit 2; located root
+PLAN.md with rg --files and read it. Documentation whitespace checked; runtime
+tests skipped for source review/advice-only edits. No implementation, experiment,
+scene change, commit or push; records remain local for the next work step.
+Stay here with gpt-6-astra / High, no /new needed. No questions remain pending.
+
+## R039 — Continue synthetic neighbor inference (2026-09-23)
+
+> continue
+
+Continue the bounded synthetic image-neighbor test, including R038's shape cues.
+Opening questions are answered; no new question gate. Compare anonymous visible-
+mask centroids with mask-outline/orientation cues; withhold source indices,
+colors and true body axes from edge construction. Evaluate edge labels and relative
+indices, retain failures/ambiguities, and stop at the illustrated report/checks
+before beauty segmentation or photo fitting. Publish scoped work including the
+four local R037/R038 record/plan edits.
+
+Preflight: daisy, Python 3.12.14, photo-2-reconstruction at 8cecceb, upstream
+origin/photo-2-reconstruction, no stashes. Four local record/plan files present.
+Initial sandboxed fetch failed because .git/FETCH_HEAD was read-only; escalated
+fetch succeeded, ahead/behind 0/0. No pull needed, transfer, delegation, new status
+or model change. Preserve generated outputs and .venv outside Git.
+
+R039 outcome: implemented infer_neighbors.py, inference_audit.py,
+inference_controls.py and seven tests. Read actual bead geometry; compare
+centroid-ellipse directions with covariance-axis cues from anonymous visible
+instance masks. Withhold source indices/colors/body axes/camera/helicity/N from
+inference. Retain both conventions, ambiguous candidates, nonreciprocal proposals,
+missing indices and exact graph diagnostics; do not repair with truth.
+
+At T12 across eight views once each, centers: 6,778/7,461 correct pairs, 90.85%
+precision, 61.30% recall. Shape: 6,149/6,442, 95.45% precision, 55.61% recall.
+Even an evaluator-only best convention/global reversal gives shape signed-label
+precision 82.24%. T100 shape pair precision 98.56%, recall 60.85%, best signed
+precision 89.04%. All 192 convention graphs contain an inconsistent component.
+Some small consistent components still assign wrong indices. No photo recovery.
+
+Ideal 200-point brick ring: both rules recover all 520 signed edges and exact
+relative indices. Three missing detections produce four false bridges. A 2-D
+superposition crossing stress produces 104 center / 96 shape cross-sheet links;
+no occlusion renderer or physical crossing claim. Outline cues help but this
+single-ellipse, nearest-sector heuristic does not validate automatic indexing.
+
+Checks: all 39 tests pass, including seven new; compilation and whitespace pass.
+Seven current and eleven input source hashes (current or historical 08ba3bb) and
+148 input artifact hashes verified. All 48 paired shuffles agree on signed
+source-pair sets. Two full runs reproduce all 208 artifacts byte for byte; reports
+agree except command output path. Ten crop panels inspected via contact sheets,
+original-hand bend also full size, summary/crossing figures full size. Final
+photo2/output/inference-audit-verified/report.json SHA-256:
+e27feb373c35931b023e89ab0ece93f5955d3ebf0b16e73d2021b58847153438.
+
+No failed runtime test/assertion. One development patch failed on unmatched
+context without edits; reapplied with corrected context. Crossing review exposed
+an exact diagonal-boundary tie; now retained as an abstention symmetrically under
+both conventions. No threshold optimization or truth-based edge repair. The
+missing-input recreation command was inspected, not rerun. No scene/material
+change, new visibility render, full legacy audit, photo segmentation/fit or
+sequence integration. Existing small renderer checks ran with the full suite.
+
+Updated INFERENCE/README/METHODS/PLAN/progress/handoff. Publish eleven scoped
+source/docs files including prior R037/R038 records, then verify live branch tip
+and final status; final response records delivery commit. Generated final,
+reproduced and development output directories plus .venv stay ignored.
+Next: joint local triangle/lattice constraints for edge selection and ±1/±6/±7
+labels using 1+6=7, mask orientation and abstention; compare fixed baseline and
+missing/crossing controls without source truth. Stop after synthetic edge/
+component-index report/checks before segmentation, sequence integration or photo
+fitting. Recommend gpt-6-astra / High with fresh /new. No end-of-round questions.
+
+Pre-publication review confirms actual cycle conflicts in all 192 graphs and
+checks the local documentation links. Sandboxed live remote lookup failed on
+GitHub DNS resolution; escalated retry succeeded, confirming the remote branch
+still at entry 8cecceb. Publication continues with the authorized scoped files.
+
+Staged whitespace check caught one extra blank line at the new fixture's EOF.
+Removed it and regenerated both complete audits in inference-audit-verified and
+inference-audit-reproduced-verified so source hashes match the final files. All
+208 artifacts are identical to each other and the earlier inspected run; reports
+agree except command output path. The final report hash above is the verified
+run's hash. No logic changed or additional runtime suite was needed for whitespace.

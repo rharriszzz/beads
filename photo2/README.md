@@ -15,6 +15,13 @@ completions and unsupported slots. Automatic image-neighbor identification and
 photo pattern recovery remain unvalidated. The confirmed palette is red, yellow
 and black.
 
+The [image-space neighbor baseline](INFERENCE.md) now compares anonymous mask
+centroids with mask-outline orientation on eight synthetic views. At T12 the
+shape cue improves pair precision from 90.85% to 95.45%, with lower recall;
+signed-label errors still make every tested full graph inconsistent. Oracle
+masks, disconnected offsets and false crossing links remain explicit. Next is
+joint local triangle/lattice inference, before photo segmentation or fitting.
+
 ## Run with Python 3.12
 
 From the beads repository:

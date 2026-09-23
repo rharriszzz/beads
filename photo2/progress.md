@@ -370,3 +370,46 @@ See SEQUENCES.md. Next: synthetic neighbor inference from anonymous visible-mask
 centroids, tested against hidden indices; stop after illustrated edge/index
 accuracy and checks, before segmentation/photo refit. Use gpt-6-astra / High;
 recommend fresh /new for that separate task. No questions pending for this round.
+
+## 2026-09-23 — R037–R039 advice and image-neighbor baseline
+
+Saved separately attributed supplied session status and maker advice: almost no
+tilting/sliding, rectangular top-bead faces, close direction-1 spacing and
+half-offset brick-like diagonals. Re-read the actual shared bead geometry.
+
+Implemented anonymous centroid proposals and a visible-mask orientation variant;
+both preserve label conventions, ties, missing indices and failed reciprocal
+proposals. No source indices, colors, true axes, helicity, camera or N enters
+inference. The oracle masks do not validate photo segmentation. INFERENCE.md
+records parameters, exact scope, results, controls and reproduction commands.
+
+At T12 across eight views once each, shape improves pair precision 90.85%→95.45%
+and reduces recall 61.30%→55.61%. Best evaluator-selected signed precision is still
+only 82.24%; all 192 convention graphs contain contradictions. Consistent small
+components also contain wrong indices. Ideal brick-ring inference is exact;
+missing detections create four false bridges, and superposed rings create 96
+shape cross-sheet false links. The crossing is a 2-D stress, not a new render.
+
+All 39 tests pass, including seven new checks. Compilation, whitespace, seven
+current/eleven input source hashes and 148 input artifact hashes pass. All 48
+paired shuffles agree. Two full runs reproduce all 208 artifacts byte for byte.
+Ten crop panels inspected in contact sheets, original-hand bend also full size,
+and summary/crossing figures full size. One development patch failed on context
+without edits; corrected/reapplied. No failed runtime tests/assertions. Exact
+diagonal ties found in review now abstain symmetrically; no threshold search.
+Staged whitespace later caught an extra fixture EOF blank line. Removed it and
+regenerated both audits for final source hashes; all 208 artifacts remain identical
+to the inspected run. Final evidence is inference-audit-verified, documented in
+INFERENCE.md. No logic change or repeat runtime suite needed for whitespace.
+
+Initial fetch failed on sandbox read-only .git/FETCH_HEAD; escalation succeeded,
+ahead/behind 0/0. No scene, material, photo, segmentation or sequence changes.
+No new visibility render/full legacy regression needed; existing small renderer
+checks ran with the suite. Generated final/reproduced/development outputs and
+.venv remain ignored. Publish eleven scoped files including R037/R038 records.
+
+Next: joint local triangle/lattice edge and label inference with 1+6=7 and mask
+orientation, preserving alternatives and abstentions. Retain this baseline and
+failure controls; stop after synthetic edge/component-index report/checks before
+photo segmentation, sequence integration or fitting. gpt-6-astra / High, fresh
+/new recommended. No pending or end-of-round questions.
