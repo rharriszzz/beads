@@ -121,3 +121,32 @@ Final source-hash/Python-3.12/finite-geometry/orientation checks passed. The fir
 staged whitespace check found a copied extra blank line in `bead-shape.inc`;
 removed it before the final staged check. The staged inventory contains exactly
 the 17 scoped source/docs files, without generated outputs or pre-existing work.
+
+## R008 — Clarify material in the POV-Ray sense
+
+> I meant material specifically in the povray sense
+
+Scope: correct the interpretation of "material" throughout the current plan and
+handoff. It means POV-Ray pigment, finish, normal and interior settings: color,
+diffuse response, specular/phong highlights, roughness, reflection, filter/transmit
+and IOR as appropriate to reproducing the photograph.
+
+Outcome: updated AGENTS.md, PLAN.md, SESSION_HANDOFF.md and photo2/README.md.
+Physical bead composition is not a project objective. Existing glossy opaque
+POV-Ray settings remain starting values to fit; no scene parameters changed.
+This follow-up is documentation only; inspect the diff and whitespace, without
+rerunning numerical tests or renders. Step 1 was published as `63ba75c` on
+`origin/photo-2-reconstruction`; this clarification is recorded locally.
+
+## R009 — Confirm step completion
+
+> are you finished with this step?
+
+Scope/outcome: implementation and checks are finished. Complete the remaining
+publication of R008's scoped correction under R006's end-of-step commit/push
+authorization. Reviewed the five documentation diffs and corrected plan wording;
+whitespace checks pass. No code or rendering changed, so no runtime rerun is
+needed. Stage only AGENTS.md, PLAN.md, REQUEST_LOG.md, SESSION_HANDOFF.md and
+photo2/README.md; preserve pre-existing untracked work. Final response records
+the actual correction commit/push outcome. The next geometry-fitting task remains
+queued; it is not started by this status question.

@@ -2,8 +2,9 @@
 
 Updated 2026-09-23. Working branch: **photo-2-reconstruction**, source/base
 `402663eb579a8b66abe553cc3c917ab8f0cbc7c0`. Local checkout is
-`/home/rharris/git/beads`, PC/WSL `daisy`. This step's final add/commit/push is
-authorized by REQUEST_LOG R006; delivery outcome belongs in Git/final response.
+`/home/rharris/git/beads`, PC/WSL `daisy`. Step 1 was committed and pushed as
+`63ba75c` under REQUEST_LOG R006. R008's material clarification is included in
+the final documentation correction; R009 records its preparation for delivery.
 No computer transfer was requested. Verify another session's release before
 concurrent edits; local Git does not reveal its unpublished work or processes.
 
@@ -44,8 +45,9 @@ and after extracting the shared bead macro. New mode has been rendered at
 
 The 2,698 model beads, 415 turns and 6.5 nominal beads/turn are hypotheses derived
 from a texture-peak pitch and the old forward model. Current bead orientation,
-twist and spacing are visibly too regular. Material type and optical values
-are proxies; the photograph does not identify glass/plastic chemistry. The best
+twist and spacing are visibly too regular. "Material" specifically means POV-Ray
+pigment, finish, normal and interior properties (R008). The existing glossy
+opaque settings are initial values; fitting them to the photo remains work. The best
 period scores are only about 0.45 versus majority baselines 0.41–0.43, with
 different observations for each sign. No period or helicity is accepted.
 

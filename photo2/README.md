@@ -69,9 +69,11 @@ The current 2,698 beads and 415 turns are therefore provisional.
 The paper uses a magenta pigment with procedural bump texture; it does not use
 the photograph as a texture. An upper-left area light and shadowless fill give
 directional shadows and highlights. Near-black, red and yellow/orange glossy
-opaque materials are appearance proxies. The photo alone does not establish
-glass versus plastic, pigment albedo, refractive index or transmission. The
-palette and material parameters are starting values, not identified chemistry.
+opaque POV-Ray materials are initial settings. "Material" here specifically means
+pigment, finish, normal and interior properties: color, diffuse response,
+specular/phong highlights, roughness, reflection, filter/transmit and IOR where
+applicable. The objective is to fit these rendering properties to the photo.
+The current palette and material values have not yet been fitted systematically.
 
 ## Color observations and repeat hypotheses
 

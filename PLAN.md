@@ -1,7 +1,7 @@
 # Photo-2 reconstruction plan
 
 The goal is to extend `beads.pov` to reproduce `beads-photo-2.jpg` using Python
-and POV-Ray, and recover defensible bead colors/material appearance, helicity,
+and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
@@ -18,10 +18,12 @@ sequence identification are separate claims. Instructions are in `REQUEST_LOG.md
    twist and hole-axis tilt. Compare both helicities with the same observations.
    Decide whether the orthographic approximation is sufficient. Measure residuals
    and hold out patches; do not use arbitrary nearest-neighbor chain ordering.
-3. **Fit paper, lighting and material appearance.** Use background-only patches
+3. **Fit paper, lighting and POV-Ray materials.** Use background-only patches
    and bead interiors/highlights/shadows. Separate illumination from pigment
-   estimates where possible. Compare glossy opaque and translucent proxies;
-   report optical parameters as fitted appearances, not proof of bead chemistry.
+   estimates where possible. Fit pigment color/filter/transmit, finish diffuse,
+   specular/phong, roughness and reflection, normal texture, and interior IOR
+   where relevant. Compare opaque/translucent and glossy/frosted settings by
+   their rendered agreement with the photo. R008 defines material in this sense.
 4. **Recover and validate the repeat.** Preserve hidden/uncertain positions in
    the helical index sequence. Search 200–400 jointly with remaining layout
    ambiguity; use categorical evidence, held-out repeats, support/confidence
@@ -58,8 +60,9 @@ Completion criteria:
   recorded; scoped source/docs are committed and pushed, with user files excluded.
 
 Stop this step after those checks and publication. Do not claim the exact bead
-count, helicity, material chemistry or repeating pattern is identified. The
-exploratory period ranking establishes a baseline and tests the data path only.
+count, helicity, fitted POV-Ray material parameters or repeating pattern is
+established. The exploratory period ranking establishes a baseline and tests
+the data path only.
 No animation, physical necklace measurement or Mac validation is in this step.
 
 ## Following step

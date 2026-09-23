@@ -11,6 +11,8 @@ experiment notes before continuing. User instructions override historical plans.
   actual checks, failures, assumptions and evidence; do not invent observations.
 - Keep numerical geometry/analysis in Python and scene appearance in POV-Ray.
   Use deterministic inputs and retain image/source hashes and parameter values.
+- "Material" means POV-Ray pigment/finish/normal/interior properties fitted to
+  the photo. Physical bead composition is outside the objective (R008).
 - Do not equate a photo-sampled render with recovered bead order or a pattern.
   Retain missing bead indices, color uncertainty, competing helicities and
   validation on known synthetic patterns before making inverse claims.
