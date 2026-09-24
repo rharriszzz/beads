@@ -1,5 +1,10 @@
 # Observed-region anchor robustness — R052
 
+Follow-up R055 is complete in [HIGHLIGHT_REGIONS.md](HIGHLIGHT_REGIONS.md):
+conservative highlight filling improves jitter tolerance without improving
+detection counts or resolving helicity. The original protocol/results below
+remain unchanged; the follow-up note defines the current next task.
+
 ## Frozen protocol (before scoring)
 
 The maker confirms equal bead size/shape across colors, small gloss differences,

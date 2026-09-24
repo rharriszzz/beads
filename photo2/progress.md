@@ -589,3 +589,40 @@ Next: fixed highlight-tolerant observed-region extraction comparison on these
 two patches, retaining black/shadow/missing-region/jitter controls and both hands.
 Stop after local region/anchor/index evidence before ring growth/photo fitting.
 Recommend gpt-6-astra / High with fresh /new; no end-of-round questions.
+
+## 2026-09-23 — R055 conservative highlight repair
+
+R053 status is saved with prior-session usage distinguished. R054 maker answers:
+smoothly rounded surfaces; usually one bright reflection, depending on lighting.
+No exactly-one-highlight constraint. R055 authorizes the bounded comparison.
+See HIGHLIGHT_REGIONS.md, highlight_regions.py and highlight_region_audit.py.
+
+One fixed image-only rule fills enclosed bright, low-saturation cavities touching
+exactly one existing region. All old labels stay fixed; shared/open/dark gaps
+remain unassigned. Reuse 128 R052 fits and both hands across the same 16 conditions;
+no new fits/renders. Seventy cavities add 4,672 correctly owned pixels, no
+background or wrong-owner pixels. Region matches, false regions, missing indices,
+color summaries and split/merge counts stay unchanged in every condition.
+
+Three-anchor acceptance improves 123→134/272, four-anchor 100→115/272, with no
+acceptance losses and no increase in wrong-index trials (36 in each group size).
+Original gray gains 14 four-click acceptances, all correct seeds; second gray
+gains one with the known 761-for-767 seed slip despite correct output indices.
+Original gray nominal first clicks still lie in cavities shared by two regions.
+Existing wrong hands, second R/Y/black failure and black failure remain.
+
+Background/duplicate controls reject throughout; phase exclusion retains 10/32
+alternatives with either method. Thirteen applicable region-deletion controls
+restore no removed pixels; three already-empty gray seed cases are inapplicable.
+Nine focused controls/tests plus full suite: all 78 pass. Compilation, dependency
+and whitespace checks pass. Two final runs reproduce 80 artifacts byte for byte,
+reports equal except output path; 13 sources and all bound inputs verify.
+After initial scoring, ownership reporting and deletion-control serialization
+order changed; all original numerical/gate/control results remain identical.
+No rule/click/fit tuning. Small renderer tests ran; full legacy regression skipped
+for unchanged POV sources. Generated outputs and environments remain ignored.
+
+Next: compare fixed distance/gradient assignment of shared bright cavities with
+current abstention, preserving existing region labels, both hands and controls.
+Stop after added-pixel ownership/region/anchor/index evidence and checks before
+ring growth/photo fitting. Recommend gpt-6-astra / High with fresh /new.

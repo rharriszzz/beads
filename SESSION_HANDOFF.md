@@ -1,5 +1,126 @@
 # Beads session handoff
 
+## R055 — highlight repair improves jitter tolerance, not detection or helicity
+
+User authorized "ok" after R053/R054 opening advice. No pending questions.
+Current supplied status remains R053, session `01a0d0ff-cddd-7df2-a129-5995d5cc9183`,
+gpt-6-astra / High; no new usage, account inspection or model change. Maker:
+smoothly rounded surfaces, usually one bright patch depending on lighting;
+retain equal size/shape, small gloss differences, invisible lengthwise holes
+and invisible white thread. Assistant marks anchors. Do not re-ask these.
+
+Completed highlight_regions.py, highlight_region_audit.py, nine focused tests
+and **photo2/HIGHLIGHT_REGIONS.md**. Fixed rule fills enclosed zero-label cavities
+only when all pixels have S<.20/V>=.75 and their eight-neighbor boundary touches
+exactly one nonzero region. Preserve every assigned pixel; no new region or
+exactly-one-highlight constraint. Shared/open/dark gaps remain unresolved.
+
+Reused all 128 R052 smooth fits and masks, both hands, 16 conditions/two frozen
+patches, three/four anchors and 17 variants each, plus 96 prior controls. No new
+fitting or renders. Seventy cavities / 4,672 pixels filled, all correctly owned
+under IoU>.5 evaluation; no background, wrong-owner or unresolved-owner additions.
+Every condition's supported region/color/missing-index summary is unchanged,
+as are false-positive foreground pixels and raw split/merge counts. All old
+gates, retained hypotheses and scores exactly reproduce R052.
+
+Acceptance: three anchors 123→134/272, four 100→115/272; no acceptance losses.
+Wrong-index trials remain 36 per group size. All retained four-anchor bodies
+correct in 85→99 trials: 14 original-gray gains have correct seeds, one second-
+gray gain retains the known 761-for-767 seed slip despite 35/35 correct output
+indices. Original gray four-click acceptance: identity 6→11/17, translation
+6→11/17, smooth 5→9/17. Second gray 11→12/17. Original nominal gray still fails
+because the first click touches a bright cavity shared by two observed labels.
+Other filled original-gray anchor cavities belong unambiguously to one label.
+Second R/Y/black still rejects all variants; all-black and wrong hands unresolved.
+
+Background/duplicate controls reject in all 32 combinations each; excluded
+phase retains alternatives in 10/32 under either method. Additional first-region
+deletion is applicable in 13/16 conditions and restores no deleted pixels;
+three gray first clicks already have no label and are marked inapplicable.
+No tuning from truth. First-run reporting added pixel ownership and moved the
+already image-only deletion control before truth loading; all original fit/gate/
+control/region metrics remain identical. One patch context failure was atomic
+and corrected; no failed runtime audit or test.
+
+All 78 tests pass, including nine focused tests. Compilation, dependency and
+whitespace checks pass. Pip warned about the external nonwritable cache, found
+no broken requirements and made no environment changes. Two final runs reproduce
+all 80 artifacts byte for byte, reports equal except command output path;
+13 current sources verify. R052 10 sources/80 artifacts and all five bound
+reports verified with their source/artifact manifests and baseline historical
+verifier. Small renderer tests ran; no full legacy regression for unchanged POV
+sources. All 16 initial panels reviewed in contact sheet; gray panels and final
+second-R/Y/black/black failures reviewed at full size.
+
+Final report: photo2/output/highlight-regions-r055-final/report.json, SHA-256
+`00cb9976af8fce21d82d1407fe872e0b985e6bc13d7c2523e75eeb9e401b4054`.
+Reproduce: `.venv/bin/python photo2/highlight_region_audit.py --output
+photo2/output/highlight-regions-new`. HIGHLIGHT_REGIONS.md gives prerequisites.
+
+Preflight daisy, entry 6ab84bf, only R053/R054 records modified; fetch succeeded,
+ahead/behind 0/0, no stashes/pull/transfer/delegation. Live remote lookup failed
+on sandbox GitHub DNS, then approved retry confirmed entry tip. Publish scoped
+source/docs including opening records; final response reports verified commit
+and remote delivery. Generated outputs/review figures and .venv stay ignored.
+
+**One next task:** compare fixed distance-based and image-gradient-based
+assignment of enclosed bright cavities touching multiple observed regions,
+versus R055 abstention. Preserve every existing label and abstain on ties;
+keep fixed fits/clicks/jitter, both hands and black/shadow/missing-region controls.
+Stop after added-pixel ownership and region/anchor/index evidence/checks, before
+ring growth/photo fitting. Keep provisional 2,698 count without divisor filtering,
+repeat bound <400, missing indices and unknown colors. Recommend **gpt-6-astra /
+High with a fresh `/new`** for this distinct step. No new end-of-round questions.
+
+## R054 — smooth surfaces and lighting-dependent highlights
+
+R053 questions answered: bead surfaces are smoothly rounded; usually one bright
+patch appears per bead, depending on lighting. Treat this as typical appearance,
+not a requirement of exactly one highlight or a guaranteed bead-count cue.
+No new scene/material parameters or illumination measurements were supplied.
+No questions remain pending; preserve the earlier construction answers.
+
+This advice exchange only updates request/handoff records, which remain local
+for follow-up publication. No experiment or implementation started. Preflight:
+daisy, photo-2-reconstruction at 6ab84bf, only R053's two record files modified,
+cached upstream ahead/behind 0/0, no stashes. Documentation whitespace checked;
+runtime tests skipped. No fetch/live remote check, transfer or new status.
+
+Next task remains fixed highlight-tolerant observed-region extraction on two
+frozen patches, retaining controls and both helicities; stop after local region,
+anchor and index evidence before ring growth/photo fitting. Stay here with
+gpt-6-astra / High; no additional `/new` needed.
+
+## R053 — new-session status and opening advice questions
+
+User supplied prior-session completion and current `/status`; no Continue/go
+instruction accompanied it. Record this opening without starting the next audit.
+Current session: `01a0d0ff-cddd-7df2-a129-5995d5cc9183`, Codex v0.155.1,
+gpt-6-astra / High. Full supplied usage is attributed separately in R053 of
+REQUEST_LOG.md; no current-session token total was supplied.
+
+R052 found that bright reflections can be excluded from observed bead regions.
+Next bounded task remains a fixed highlight-tolerant region rule on the two
+frozen synthetic patches, preserving separators, controls and both helicities;
+stop after region/anchor/index evidence before ring growth or photo fitting.
+Saved advice: same size/shape, small gloss differences, invisible lengthwise
+holes and invisible white thread; assistant marks anchors. Do not repeat it.
+
+Two opening questions, answered in R054 above:
+
+1. Are the bead surfaces smoothly rounded throughout, or do they have noticeable
+   flat facets or surface texture that we should represent?
+2. In photo 2, can one bead show several separate bright reflections, or do you
+   usually recognize a single bright patch per bead?
+
+Preflight: daisy, clean photo-2-reconstruction at 6ab84bfa27bca87b8b068b7932b31b6507aa29b3,
+tracking origin with cached ahead/behind 0/0, no stashes; Python 3.12.14.
+Read workflow, current handoff/saved answers, latest log and REGION_ANCHORS.md.
+No fetch/live remote check, transfer, experiment, account inspection or model
+change. Only opening records edited locally for follow-up publication; runtime
+tests skipped, documentation whitespace checked. Stay in this conversation with
+gpt-6-astra / High; no further `/new` needed for the pending task.
+
 ## R052 — region anchors improve some cases; seed and helicity failures remain
 
 User authorized "ok. go." after R048–R051 advice. No pending questions. Current

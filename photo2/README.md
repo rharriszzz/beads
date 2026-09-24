@@ -37,8 +37,11 @@ The [observed-region anchor test](REGION_ANCHORS.md) now removes the margin fail
 on original R/Y/black identity/translation (34/37 and 32/34 correct indices for
 all 17 jitter variants). It also admits wrong-hand alternatives in warped cases
 and fails on the second R/Y/black patch. New gray outputs can be correct despite
-a misidentified anchor. Next: highlight-tolerant region extraction on the two
-frozen patches, retaining both hands and all failed-region/index evidence.
+a misidentified anchor. The [highlight-region repair](HIGHLIGHT_REGIONS.md) assigns
+4,672 omitted pixels to their correct enclosing beads and improves four-anchor
+acceptance from 100 to 115/272 without increasing wrong-index trials. It does
+not improve bead detection or resolve helicity. Next: test ownership of bright
+cavities shared by multiple regions, preserving existing labels and both hands.
 
 ## Run with Python 3.12
 

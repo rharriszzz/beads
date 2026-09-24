@@ -1,9 +1,16 @@
 # Visible beads first, indexed beads second — R045
 
+R055 follow-up: [HIGHLIGHT_REGIONS.md](HIGHLIGHT_REGIONS.md) tests conservative
+bright-cavity filling with existing labels fixed. Added pixels have correct
+ownership in this audit; anchor jitter tolerance improves, but detection counts,
+seed slips and wrong-hand alternatives remain. Next: compare distance/gradient
+ownership for shared bright cavities with abstention, using unchanged fits and
+controls, before ring growth or photo fitting.
+
 R052 follow-up: [REGION_ANCHORS.md](REGION_ANCHORS.md) measures three/four-region
 anchors under fixed jitter on two patches. The original R/Y/black patch improves;
 wrong-hand alternatives, highlight-related region gaps and second-patch failures
-remain. Next is a bounded highlight-tolerant region-extraction comparison.
+remain. R055 completes the bounded highlight-tolerant region comparison above.
 
 R047 follow-up: [LOCAL_PATCH.md](LOCAL_PATCH.md) implements a first calibrated
 local contour/index comparison with both hands and smooth corrections. It exposes
