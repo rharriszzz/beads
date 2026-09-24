@@ -1,0 +1,1164 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/image_edges.py",
+    "--output",
+    "photo2/output/image-edges-r067-final",
+    "--review-bundle",
+    "photo2/review/r067"
+  ],
+  "parameters": {
+    "search_radius_px": 24,
+    "grid_step_px": 1,
+    "paper_offsets_px": [
+      35,
+      45,
+      55
+    ],
+    "tangent_offsets_px": [
+      -4,
+      0,
+      4
+    ],
+    "transition_offsets_px": [
+      3,
+      5,
+      7
+    ],
+    "chromaticity_scale_floor": 0.025,
+    "brightness_weight": 0.25,
+    "image_weight": 4.0,
+    "width_sigma_px": 8.0,
+    "clear_position_sigma_px": 8.0,
+    "other_position_sigma_px": 20.0,
+    "second_difference_sigma_px": 6.0,
+    "cost_smoothing_grid_sigma": 1.0,
+    "interpolation": "C1 cubic Hermite",
+    "optimizer_maxiter": 400
+  },
+  "sources": {
+    "photo2/image_edges.py": "be78bf504fb61a970d27e1603c3dddce1b2082af021a6c9057f5e88a8db166c6",
+    "photo2/transect_review.py": "5b1e5ecabb5f17155b45bce7a27bf031891200bcee514312d6a27f02bbd709d2",
+    "photo2/width_correction.py": "12c2a674eaa5b71fae9a64aead22f1cdb07a2999322c0243e25b43d4245b0d20",
+    "photo2/boundary-splines-source.json": "1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7",
+    "photo2/centerline.json": "49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/transect-annotations-r066.json": "ad8e1d2d50798006baa2da827ff96378000f7323852db9fec803ed341a913d0b",
+    "photo2/test_image_edges.py": "7436213b92b9de0c99fb82cc0c6f567c7a978c0afc276efeffe169a6e21bdd53"
+  },
+  "fit": {
+    "model": "affine width versus image y; nonnegative slope; robust soft_l1",
+    "coefficients": [
+      95.819713828734,
+      2.9195435392430504e-13
+    ],
+    "free_coefficients": [
+      95.75969527231693,
+      -0.6542214338074462
+    ],
+    "top_bottom_width_px": [
+      95.8197138287337,
+      95.8197138287343
+    ],
+    "reliable_samples": 96,
+    "reliable_y_range": [
+      273.9731609683191,
+      3012.3071861716912
+    ],
+    "residual_band_px": [
+      -6.234693664593891,
+      7.029324714319237
+    ],
+    "median_absolute_residual_px": 3.3758749339504206,
+    "empirical_band_note": "10th\u201390th percentile calibration residuals; not a statistical confidence interval"
+  },
+  "optimizers": {
+    "image_guided": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 93,
+      "objective": -2454.13946101809,
+      "width_sigma_px": 8.0,
+      "image_weight": 4.0,
+      "min_width_px": 91.30726095212754,
+      "max_width_px": 113.97103760332107,
+      "max_edge_displacement_from_width_only_px": 17.929537483415245,
+      "search_bound_hits": 0
+    },
+    "width_sigma_6": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 72,
+      "objective": -2360.469947616192,
+      "width_sigma_px": 6.0,
+      "image_weight": 4.0,
+      "min_width_px": 91.77626837211105,
+      "max_width_px": 108.58045027708535,
+      "max_edge_displacement_from_width_only_px": 17.37487512976945,
+      "search_bound_hits": 0
+    },
+    "width_sigma_12": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 102,
+      "objective": -2598.1168457520516,
+      "width_sigma_px": 12.0,
+      "image_weight": 4.0,
+      "min_width_px": 90.78569147418554,
+      "max_width_px": 118.67203258533914,
+      "max_edge_displacement_from_width_only_px": 18.486884220823825,
+      "search_bound_hits": 0
+    },
+    "no_image": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 48,
+      "objective": 25.47756743073398,
+      "width_sigma_px": 8.0,
+      "image_weight": 0.0,
+      "min_width_px": 91.67542608624157,
+      "max_width_px": 100.32296472165768,
+      "max_edge_displacement_from_width_only_px": 11.310261407697695,
+      "search_bound_hits": 0
+    }
+  },
+  "summary": {
+    "original": {
+      "edges_inside": 12,
+      "edges_within_2px": 18,
+      "mean_edge_distance_outside_px": 1.7134975290350154,
+      "max_edge_distance_outside_px": 11.27488838622719,
+      "centers_inside": 8
+    },
+    "width_only": {
+      "edges_inside": 14,
+      "edges_within_2px": 23,
+      "mean_edge_distance_outside_px": 0.494199536490006,
+      "max_edge_distance_outside_px": 2.3978500581185926,
+      "centers_inside": 11
+    },
+    "image_guided": {
+      "edges_inside": 13,
+      "edges_within_2px": 18,
+      "mean_edge_distance_outside_px": 1.2611234023560745,
+      "max_edge_distance_outside_px": 7.280168282289097,
+      "centers_inside": 9
+    },
+    "width_sigma_6": {
+      "edges_inside": 11,
+      "edges_within_2px": 19,
+      "mean_edge_distance_outside_px": 1.0378200245441616,
+      "max_edge_distance_outside_px": 6.13015358424974,
+      "centers_inside": 8
+    },
+    "width_sigma_12": {
+      "edges_inside": 11,
+      "edges_within_2px": 16,
+      "mean_edge_distance_outside_px": 2.0957022523558213,
+      "max_edge_distance_outside_px": 10.249840978923103,
+      "centers_inside": 9
+    },
+    "no_image": {
+      "edges_inside": 18,
+      "edges_within_2px": 22,
+      "mean_edge_distance_outside_px": 0.35206858264895696,
+      "max_edge_distance_outside_px": 2.7069934868845564,
+      "centers_inside": 11
+    }
+  },
+  "transects": [
+    {
+      "id": "A",
+      "location": "top left",
+      "sample": 468,
+      "center_xy": [
+        1152.3466492293471,
+        331.3787150621021
+      ],
+      "review": {
+        "outer_interval_px": [
+          -51,
+          -43
+        ],
+        "inner_interval_px": [
+          43,
+          52
+        ],
+        "note": "Moderate blur at both edges; top reference."
+      },
+      "methods": {
+        "original": {
+          "outer": -48.668605916242576,
+          "inner": 48.9768307587035,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -48.668605916242576,
+          "inner": 48.9768307587035,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -54.06900993314421,
+          "inner": 43.74534042921003,
+          "center": -5.161834751967088,
+          "edge_distances_outside_px": [
+            3.0690099331442084,
+            0.0
+          ],
+          "center_distance_outside_px": 1.1618347519670884
+        },
+        "width_sigma_6": {
+          "outer": -54.07733503636177,
+          "inner": 42.71732970451369,
+          "center": -5.6800026659240395,
+          "edge_distances_outside_px": [
+            3.0773350363617666,
+            0.2826702954863123
+          ],
+          "center_distance_outside_px": 1.6800026659240395
+        },
+        "width_sigma_12": {
+          "outer": -53.554942941789584,
+          "inner": 59.122915457442666,
+          "center": 2.783986257826541,
+          "edge_distances_outside_px": [
+            2.5549429417895837,
+            7.122915457442666
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -48.73204693178711,
+          "inner": 46.67840681067615,
+          "center": -1.0268200605554796,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "B",
+      "location": "top right",
+      "sample": 499,
+      "center_xy": [
+        1623.168065451622,
+        286.06386645812745
+      ],
+      "review": {
+        "outer_interval_px": [
+          -52,
+          -46
+        ],
+        "inner_interval_px": [
+          44,
+          52
+        ],
+        "note": "Outer dark bead and inner dark bead against brighter paper."
+      },
+      "methods": {
+        "original": {
+          "outer": -48.40550061276303,
+          "inner": 48.00171109271597,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -48.40550061276303,
+          "inner": 48.00171109271597,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -55.21605427223542,
+          "inner": 49.017230272992066,
+          "center": -3.099411999621676,
+          "edge_distances_outside_px": [
+            3.216054272235418,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -54.087036290987946,
+          "inner": 48.490192424758554,
+          "center": -2.798421933114696,
+          "edge_distances_outside_px": [
+            2.087036290987946,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -55.97955141984705,
+          "inner": 49.5665995998665,
+          "center": -3.2064759099902744,
+          "edge_distances_outside_px": [
+            3.9795514198470485,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -47.51578115327988,
+          "inner": 47.81637454048011,
+          "center": 0.1502966936001151,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "C",
+      "location": "upper left slope",
+      "sample": 426,
+      "center_xy": [
+        565.1413032627967,
+        589.9557987465539
+      ],
+      "review": {
+        "outer_interval_px": [
+          -56,
+          -51
+        ],
+        "inner_interval_px": [
+          41,
+          52
+        ],
+        "note": "Inner reddish/yellow bead blends into colored shadow."
+      },
+      "methods": {
+        "original": {
+          "outer": -56.899847372767084,
+          "inner": 54.370800377134074,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.8998473727670842,
+            2.370800377134074
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -56.899847372767084,
+          "inner": 39.206079932783695,
+          "center": -8.823459655875428,
+          "edge_distances_outside_px": [
+            0.8998473727670842,
+            1.7939200672163054
+          ],
+          "center_distance_outside_px": 1.3234596558754284
+        },
+        "image_guided": {
+          "outer": -56.67762270825372,
+          "inner": 39.08416933719839,
+          "center": -8.796726685527666,
+          "edge_distances_outside_px": [
+            0.6776227082537218,
+            1.9158306628016106
+          ],
+          "center_distance_outside_px": 1.2967266855276662
+        },
+        "width_sigma_6": {
+          "outer": -56.682061920929534,
+          "inner": 39.12616139634655,
+          "center": -8.77795026229149,
+          "edge_distances_outside_px": [
+            0.6820619209295344,
+            1.8738386036534465
+          ],
+          "center_distance_outside_px": 1.2779502622914904
+        },
+        "width_sigma_12": {
+          "outer": -56.67262972523312,
+          "inner": 39.011400205912,
+          "center": -8.830614759660563,
+          "edge_distances_outside_px": [
+            0.6726297252331221,
+            1.9885997940880031
+          ],
+          "center_distance_outside_px": 1.3306147596605626
+        },
+        "no_image": {
+          "outer": -56.88710446248071,
+          "inner": 38.9355007687513,
+          "center": -8.975801846864705,
+          "edge_distances_outside_px": [
+            0.887104462480707,
+            2.0644992312487034
+          ],
+          "center_distance_outside_px": 1.4758018468647052
+        }
+      }
+    },
+    {
+      "id": "D",
+      "location": "left upper bend",
+      "sample": 389,
+      "center_xy": [
+        247.39229042827466,
+        1055.870236043831
+      ],
+      "review": {
+        "outer_interval_px": [
+          -57,
+          -50
+        ],
+        "inner_interval_px": [
+          32,
+          49
+        ],
+        "note": "Dark inner bead has a broad ambiguous transition."
+      },
+      "methods": {
+        "original": {
+          "outer": -58.639911637404786,
+          "inner": 55.93584936803212,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            1.6399116374047864,
+            6.935849368032123
+          ],
+          "center_distance_outside_px": 0.5
+        },
+        "width_only": {
+          "outer": -58.639911637404786,
+          "inner": 38.44117143127891,
+          "center": -10.00844420227584,
+          "edge_distances_outside_px": [
+            1.6399116374047864,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -61.39507307940039,
+          "inner": 34.674410221307554,
+          "center": -13.360331429046418,
+          "edge_distances_outside_px": [
+            4.39507307940039,
+            0.0
+          ],
+          "center_distance_outside_px": 0.8603314290464184
+        },
+        "width_sigma_6": {
+          "outer": -61.372847760472624,
+          "inner": 34.82032346407495,
+          "center": -13.276262148198835,
+          "edge_distances_outside_px": [
+            4.372847760472624,
+            0.0
+          ],
+          "center_distance_outside_px": 0.7762621481988354
+        },
+        "width_sigma_12": {
+          "outer": -61.40535446011711,
+          "inner": 34.37406362778823,
+          "center": -13.515645416164439,
+          "edge_distances_outside_px": [
+            4.40535446011711,
+            0.0
+          ],
+          "center_distance_outside_px": 1.015645416164439
+        },
+        "no_image": {
+          "outer": -58.50480388614301,
+          "inner": 37.36095252715205,
+          "center": -10.571925679495479,
+          "edge_distances_outside_px": [
+            1.5048038861430086,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "E",
+      "location": "left lower bend",
+      "sample": 369,
+      "center_xy": [
+        243.38124102869477,
+        1356.404988061752
+      ],
+      "review": {
+        "outer_interval_px": [
+          -59,
+          -49
+        ],
+        "inner_interval_px": [
+          29,
+          42
+        ],
+        "note": "Outer scallop/notch at the transect; inner dark bead merges with shadow."
+      },
+      "methods": {
+        "original": {
+          "outer": -54.4126025093529,
+          "inner": 53.27488838622719,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            11.27488838622719
+          ],
+          "center_distance_outside_px": 3.5
+        },
+        "width_only": {
+          "outer": -54.4126025093529,
+          "inner": 44.39785005811859,
+          "center": -4.864021421997437,
+          "edge_distances_outside_px": [
+            0.0,
+            2.3978500581185926
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -57.08901122526716,
+          "inner": 45.93344149676707,
+          "center": -5.577784864250045,
+          "edge_distances_outside_px": [
+            0.0,
+            3.933441496767067
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -56.622443908071126,
+          "inner": 44.74657208896913,
+          "center": -5.937935909550998,
+          "edge_distances_outside_px": [
+            0.0,
+            2.746572088969131
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -57.3553454422261,
+          "inner": 52.2498409789231,
+          "center": -2.5527522316514997,
+          "edge_distances_outside_px": [
+            0.0,
+            10.249840978923103
+          ],
+          "center_distance_outside_px": 0.9472477683485003
+        },
+        "no_image": {
+          "outer": -54.01424280003365,
+          "inner": 42.27543144885742,
+          "center": -5.869405675588116,
+          "edge_distances_outside_px": [
+            0.0,
+            0.2754314488574181
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "F",
+      "location": "middle return",
+      "sample": 304,
+      "center_xy": [
+        1127.744825790869,
+        1530.774096214664
+      ],
+      "review": {
+        "outer_interval_px": [
+          -51,
+          -45
+        ],
+        "inner_interval_px": [
+          44,
+          51
+        ],
+        "note": "Yellow outer edge and dark inner edge; useful reference."
+      },
+      "methods": {
+        "original": {
+          "outer": -43.490092589011944,
+          "inner": 43.92371814122918,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            1.5099074109880561,
+            0.07628185877081961
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -43.490092589011944,
+          "inner": 43.92371814122918,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            1.5099074109880561,
+            0.07628185877081961
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -54.12826096801313,
+          "inner": 50.087743566190866,
+          "center": -2.020258700911132,
+          "edge_distances_outside_px": [
+            3.12826096801313,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -52.82557548061869,
+          "inner": 49.789107592799546,
+          "center": -1.5182339439095713,
+          "edge_distances_outside_px": [
+            1.8255754806186886,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -55.02573952686675,
+          "inner": 50.43711261533158,
+          "center": -2.294313455767586,
+          "edge_distances_outside_px": [
+            4.025739526866751,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -46.67235497013009,
+          "inner": 46.52349284034855,
+          "center": -0.07443106489076712,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "G",
+      "location": "lower loop left",
+      "sample": 172,
+      "center_xy": [
+        933.1804729107353,
+        2479.3445876975875
+      ],
+      "review": {
+        "outer_interval_px": [
+          -54,
+          -46
+        ],
+        "inner_interval_px": [
+          36,
+          46
+        ],
+        "note": "Outer scallop; inner yellow/dark bead against shadow."
+      },
+      "methods": {
+        "original": {
+          "outer": -54.0836026244901,
+          "inner": 49.50045940717666,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.08360262449009781,
+            3.5004594071766633
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -54.0836026244901,
+          "inner": 47.57991908085752,
+          "center": -1.5270989001050705,
+          "edge_distances_outside_px": [
+            0.08360262449009781,
+            1.5799190808575219
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -55.08362725018373,
+          "inner": 53.2801682822891,
+          "center": -0.9017294839473173,
+          "edge_distances_outside_px": [
+            1.0836272501837314,
+            7.280168282289097
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -54.417754626444975,
+          "inner": 52.13015358424974,
+          "center": -1.1438005210976172,
+          "edge_distances_outside_px": [
+            0.4177546264449745,
+            6.13015358424974
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -55.683908453199216,
+          "inner": 53.97898623005297,
+          "center": -0.852461111573124,
+          "edge_distances_outside_px": [
+            1.6839084531992157,
+            7.978986230052968
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -53.22245606755706,
+          "inner": 43.80132799532333,
+          "center": -4.7105640361168675,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "H",
+      "location": "lower loop shadow",
+      "sample": 156,
+      "center_xy": [
+        994.6376253765239,
+        2716.824283824441
+      ],
+      "review": {
+        "outer_interval_px": [
+          -63,
+          -57
+        ],
+        "inner_interval_px": [
+          33,
+          47
+        ],
+        "note": "Outer black bead tip; inner dark bead/shadow transition."
+      },
+      "methods": {
+        "original": {
+          "outer": -55.976448562652685,
+          "inner": 55.14728684406668,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            1.0235514373473151,
+            8.147286844066677
+          ],
+          "center_distance_outside_px": 5.0
+        },
+        "width_only": {
+          "outer": -55.976448562652685,
+          "inner": 39.855154246834985,
+          "center": -8.06032508937056,
+          "edge_distances_outside_px": [
+            1.0235514373473151,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -58.855026576855586,
+          "inner": 39.056582458500046,
+          "center": -9.89922205917777,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -59.269595222756486,
+          "inner": 35.233650818001514,
+          "center": -12.017972202377486,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -58.72128681475574,
+          "inner": 43.5215621260479,
+          "center": -7.599862344353923,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -55.989186532039426,
+          "inner": 39.87390456013373,
+          "center": -8.057640985952848,
+          "edge_distances_outside_px": [
+            1.010813467960574,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "I",
+      "location": "bottom left",
+      "sample": 124,
+      "center_xy": [
+        1372.9329114466252,
+        3010.161503965672
+      ],
+      "review": {
+        "outer_interval_px": [
+          -56,
+          -48
+        ],
+        "inner_interval_px": [
+          33,
+          47
+        ],
+        "note": "Blurred bottom contour, especially the inner dark bead."
+      },
+      "methods": {
+        "original": {
+          "outer": -55.76881359814077,
+          "inner": 50.661553972435485,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            3.6615539724354846
+          ],
+          "center_distance_outside_px": 0.5
+        },
+        "width_only": {
+          "outer": -55.76881359814077,
+          "inner": 47.855997327799564,
+          "center": -2.0779820622290663,
+          "edge_distances_outside_px": [
+            0.0,
+            0.8559973277995638
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -56.889096940793955,
+          "inner": 39.08550773179003,
+          "center": -8.901794604501962,
+          "edge_distances_outside_px": [
+            0.8890969407939551,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -56.8968074943062,
+          "inner": 38.87031717767794,
+          "center": -9.013245158314131,
+          "edge_distances_outside_px": [
+            0.8968074943062021,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -56.891351195219585,
+          "inner": 39.5020442819254,
+          "center": -8.694653456647092,
+          "edge_distances_outside_px": [
+            0.8913511952195847,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -54.602497579055246,
+          "inner": 42.0059886826479,
+          "center": -6.2982544482036715,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "J",
+      "location": "bottom right",
+      "sample": 102,
+      "center_xy": [
+        1698.530672306149,
+        2958.688427034243
+      ],
+      "review": {
+        "outer_interval_px": [
+          -59,
+          -45
+        ],
+        "inner_interval_px": [
+          45,
+          53
+        ],
+        "note": "Outer red bead in shadow; inner yellow bead against brighter paper."
+      },
+      "methods": {
+        "original": {
+          "outer": -51.6644387098256,
+          "inner": 50.581245390929396,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -51.6644387098256,
+          "inner": 50.581245390929396,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -55.38701351470635,
+          "inner": 51.87117142356703,
+          "center": -1.7579210455696597,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -51.22487592130868,
+          "inner": 51.61541587409287,
+          "center": 0.19526997639209398,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -60.661080031462,
+          "inner": 52.300136573722426,
+          "center": -4.180471728869787,
+          "edge_distances_outside_px": [
+            1.6610800314619993,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -48.87194484018833,
+          "inner": 48.75337283888393,
+          "center": -0.059286000652200244,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "K",
+      "location": "right middle",
+      "sample": 13,
+      "center_xy": [
+        2297.655976362077,
+        1803.8835100107885
+      ],
+      "review": {
+        "outer_interval_px": [
+          -59,
+          -46
+        ],
+        "inner_interval_px": [
+          48,
+          57
+        ],
+        "note": "Outer yellow bead merges into brown shadow; bright inner yellow edge."
+      },
+      "methods": {
+        "original": {
+          "outer": -54.461656825919846,
+          "inner": 53.403227372924654,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -47.06461929800376,
+          "inner": 53.403227372924654,
+          "center": 3.373523676969222,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -51.27826148434084,
+          "inner": 55.77221897448457,
+          "center": 2.2469787450718677,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -47.697080133115264,
+          "inner": 55.386247226784334,
+          "center": 3.844583546834535,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_12": {
+          "outer": -53.549879592451916,
+          "inner": 56.30139840945965,
+          "center": 1.3757594085038676,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -43.293006513115444,
+          "inner": 52.953482596953734,
+          "center": 4.830238041919145,
+          "edge_distances_outside_px": [
+            2.7069934868845564,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    },
+    {
+      "id": "L",
+      "location": "upper right",
+      "sample": 549,
+      "center_xy": [
+        2110.468216038014,
+        838.5735906611956
+      ],
+      "review": {
+        "outer_interval_px": [
+          -54,
+          -42
+        ],
+        "inner_interval_px": [
+          45,
+          55
+        ],
+        "note": "Outer red/dark bead in shadow; brighter inner edge."
+      },
+      "methods": {
+        "original": {
+          "outer": -51.78322021091335,
+          "inner": 51.63601084222505,
+          "center": 0.0,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_only": {
+          "outer": -51.03474909097373,
+          "inner": 51.63601084222505,
+          "center": 0.3669862862468122,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "image_guided": {
+          "outer": -54.67877606266346,
+          "inner": 53.77507137180463,
+          "center": -0.45185234542941544,
+          "edge_distances_outside_px": [
+            0.6787760626634594,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "width_sigma_6": {
+          "outer": -41.53694046834671,
+          "inner": 55.05196787492622,
+          "center": 6.7575137032897565,
+          "edge_distances_outside_px": [
+            0.4630595316532933,
+            0.05196787492621979
+          ],
+          "center_distance_outside_px": 0.25751370328975653
+        },
+        "width_sigma_12": {
+          "outer": -57.08195384229855,
+          "inner": 54.42380613968956,
+          "center": -1.3290738513044964,
+          "edge_distances_outside_px": [
+            3.081953842298553,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        },
+        "no_image": {
+          "outer": -45.92117269283317,
+          "inner": 50.79166268043364,
+          "center": 2.435244993800236,
+          "edge_distances_outside_px": [
+            0.0,
+            0.0
+          ],
+          "center_distance_outside_px": 0.0
+        }
+      }
+    }
+  ],
+  "full_report_sha256": "b3cf77e8920e531f4d77dd03dcad6325f5655efc92bd8848e31feb9d53a6ef68",
+  "artifacts": {
+    "center-comparison.png": "62690ce26f4a5545f52c03e151bdd9a86e5bb21e712ed486e8ef4cf02b84d34a",
+    "comparison-1.png": "575dd9dcb0d8bed5859248cbead11ab50a12873f36c913e439925834dd1c98b2",
+    "comparison-2.png": "f527003a8c62942079d4debc57ba0ec6fe41cc586cccd9cf630710da2a84b406",
+    "comparison-3.png": "050f6ba1407e639eef93ff37d00373b52888b140b230a8d0c1bc0bd6c8b2b8a2",
+    "review.html": "f638dfb7bae09ce7f10506cc5ac5e67d6334c9ef13fa5392fa6a4b229bedfff7",
+    "transition-profiles.svg": "7b2dd6c3a0014b298baf29c463d305e18acc9aa90814ed3720a15550d6a69838"
+  }
+}

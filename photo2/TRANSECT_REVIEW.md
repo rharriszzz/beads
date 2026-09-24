@@ -115,7 +115,13 @@ No source-pattern lookup, bead detection, new render or full legacy regression.
 Original spline data, width-correction algorithm and reconstruction defaults
 are unchanged. Bulk duplicate outputs remain ignored.
 
-## Next bounded task
+## Follow-up comparison — R067
+
+The [direct image-edge experiment](IMAGE_EDGES.md) is complete. Its tested color
+transition cue regresses versus width-only and is rejected; no new geometry is
+adopted. Resume the generated-image inventory, starting with beads1.jpg.
+
+## Original next bounded task (completed in R067)
 
 Test direct image evidence for bead-to-paper transitions on both edges, keeping
 width as a soft prior rather than a fixed target. Evaluate against these frozen

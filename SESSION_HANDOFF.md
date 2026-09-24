@@ -1,5 +1,60 @@
 # Beads session handoff
 
+## R067 — direct image cue rejected; return to generated visible inventory
+
+User: "keep going". Completed the bounded original/width-only/image-guided
+comparison requested by the R066 handoff. Read pending questions; no maker replies
+or new session/status supplied. Preflight daisy, clean photo-2-reconstruction at
+eaa40e9, no stashes, Python3.12.14, origin upstream. Fetch needed escalation after
+read-only FETCH_HEAD, then ahead/behind0/0. No transfer/delegation.
+
+New photo2/image_edges.py samples normalized local paper color/brightness across
+600 normal transects and optimizes both edges with soft width/position/cyclic
+smoothness penalties. Fixed settings and two width-scale variants plus no-image
+ablation were recorded before evaluation. Frozen R066 annotation hash remains
+ad8e1d2d50798006baa2da827ff96378000f7323852db9fec803ed341a913d0b.
+Annotations are read only after all optimizations; no label-based fitting/tuning.
+
+REJECT default image-guided candidate: within2px of subjective visual ranges
+18/24 versus23/24 width-only; mean outside distance1.26 versus0.49px; max7.28
+versus2.40px; centers inside9/12 versus11/12. Four edges improve,ten worsen,ten tie.
+G inner is worst reviewed regression; H improves. Stronger/weaker width scales
+also regress. No-image ablation gives mixed metrics (18 inside,22 within2px,
+mean.35,max2.71); do not adopt from this small review. C/E residuals not resolved.
+These are subjective interval compatibility measures, not true geometric errors.
+Original curves, width-only algorithm, annotations and reconstruction defaults
+unchanged. Width-only proposal remains provisional; perspective unresolved.
+
+Initial piecewise-linear score interpolation caused three image-weighted fits
+to hit400 iterations. Replaced numerical interpolation with C1 cubic Hermite;
+no physical cue/penalty retuning. All final fits converge93/72/102/48 iterations.
+Five new controls pass: color shade-invariance, smooth score derivatives, full
+objective finite-difference gradient, red-band known silhouette with/without
+shadow, and flat paper no force. Nine width+four transect tests also pass (18),
+compilation passes. Known synthetic controls do not validate colored real shadows.
+Two runs reproduce2 bulk artifacts+6 curated review artifacts byte for byte;
+8 source hashes/frozen annotation hash verify; full reports equal except commands,
+review reports also differ in full-report binding. All curves finite/closed/in-frame,
+centers between paired edges; all4 PNGs inspected,SVG parsed. No render, pattern
+lookup, bead detector or full legacy regression. See photo2/IMAGE_EDGES.md.
+Full report SHA256b3cf77e8920e531f4d77dd03dcad6325f5655efc92bd8848e31feb9d53a6ef68.
+
+Commit photo2/review/r067/ (four PNGs,SVG,HTML,report) with question evidence and
+code/tests/docs. Bulk curves/profiles and duplicate runs remain ignored.
+photo2/QUESTIONS_FOR_MAKER.md still holds the same three pending questions
+(left edge, other shadows, clear width reference), now with F/G failure and H
+improvement examples. No additional live questions or maker approval gate.
+Publish scoped changes and verify remote/local state; final response records tip.
+
+Next bounded task: resume beads1.jpg visible-bead inventory from the JPEG alone.
+Read photo2/BLIND_GENERATED.md and R059 detector/candidate data; correct missed/
+merged/fragmented visible instances and color/unknown records, retaining slivers
+and whole-image context. No POV-Ray pattern lookup. Stop after a reviewable
+instance/color map and checks, before repeat inference; extend to beads2–7 later.
+Do not continue tuning the failed photo cue to these12 intervals. Maker answers
+can be saved whenever supplied but do not block generated-image work.
+Recommend gpt-6-astra / High; stay here, no `/new` needed.
+
 ## R066 — completed direct image-transect check; candidates remain provisional
 
 User: "keep hoing.  thanks." Continued the handoff's next bounded geometry check.

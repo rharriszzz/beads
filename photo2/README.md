@@ -4,12 +4,10 @@ Start with the [overall plan and methods](../METHODS_AND_PLAN.md) for direct
 answers about background removal, saved outer/inner/centerline curves and the
 current limits of individual-bead identification.
 
-**Current requested step (R066):** the
-[twelve-transect boundary review](TRANSECT_REVIEW.md) checks the
-[width-based shadow correction](WIDTH_CORRECTION.md), with
-[questions and committed illustrations](QUESTIONS_FOR_MAKER.md). The candidate
-curves remain provisional; next compare direct image-edge evidence with the
-width-only candidate before adopting them.
+**Latest completed step (R067):** the [image-edge comparison](IMAGE_EDGES.md)
+regressed against the provisional width-only candidate, so it is rejected.
+[Questions and supporting illustrations](QUESTIONS_FOR_MAKER.md) remain saved.
+Next: return to beads1.jpg's visible-bead inventory before pattern inference.
 
 **Underlying reconstruction priority (R059): generated JPEGs first.** The
 [blind beads1.jpg–beads7.jpg test](BLIND_GENERATED.md) produces reviewable bead

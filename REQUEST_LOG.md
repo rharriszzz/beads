@@ -2447,3 +2447,65 @@ above refers to the numerical analysis/tests. Markdown/HTML links and whitespace
 checks pass.
 Staging initially failed creating .git/index.lock on the read-only sandbox;
 approved escalation staged the scoped files successfully.
+
+## R067 — Continue with direct image-edge evidence (2026-09-24)
+
+> keep going
+
+Proceed with the next bounded comparison: original, width-only and image-guided
+boundaries, evaluating against the frozen R066 assistant intervals. No maker
+answers received; keep pending questions in the committed file. No pattern
+lookup, geometry-default adoption or bead indexing in this step.
+Preflight: daisy, clean photo-2-reconstruction at eaa40e9, no stashes, upstream
+origin, Python3.12.14. Fetch first failed on read-only FETCH_HEAD; escalation
+succeeded. No transfer, delegation or new status/usage supplied.
+
+Predeclare method before evaluating labels: shade-normalized local paper color
+plus a weak brightness-transition cue, sampled perpendicular to each boundary;
+optimize both edges with soft width, position and smooth-displacement penalties.
+Default width scale8px, position scales8px (clear) /20px (other), second-difference
+scale6px, image weight4, search radius24px about the width-only candidate.
+Report width-scale sensitivity6/12px and a no-image ablation; do not select a
+variant by the twelve saved review intervals or revise those intervals.
+
+### R067 outcome and checks
+
+Implemented image_edges.py: normalized local paper-color transition with weak
+brightness cue, joint soft-width/position/smoothness optimization of both edges.
+Default, width-scale6/12px and no-image ablation retained as predefined; frozen
+R066 annotations read only after optimization and unchanged. Original width
+model/source geometry/defaults unchanged. Reject the new image-cue candidate.
+
+Default versus width-only:18/24 versus23/24 within2px of visual intervals;
+mean outside1.26 versus.49px, maximum7.28 versus2.40px, compatible centers9/12
+versus11/12. Four edges improve,ten worsen,ten tie. G inner is largest reviewed
+regression; H improves. C/E residual concerns persist. Sensitivity variants also
+regress; no-image ablation has mixed metrics and is not adopted. These are
+subjective assistant-interval comparisons, not representative true accuracy.
+
+Initial piecewise-linear interpolation caused three fits to hit400 iterations;
+no-image fit converged. Replacing numerical interpolation with C1 cubic Hermite
+resolved convergence, keeping physical settings fixed. All final fits converge
+in93/72/102/48 iterations. Five new tests plus nine width/four transect tests
+pass (18 total), compilation passes. Tests cover shade-normalized color,
+interpolation derivatives/continuity, full objective gradient, known red-band
+edges with/without shadow, and flat paper. No tuning to make review scores pass.
+
+Two final runs reproduce both bulk artifacts and six review artifacts byte for
+byte; eight source hashes/frozen annotation hash verify. Reports equal except
+commands (and full-report hash binding for curated reports). Curves finite,
+closed,in-frame; centers equal paired-edge midpoints. All four PNGs inspected,
+SVG parsed; file-link/whitespace checks at publication. No renderer, source
+pattern lookup, bead detector or full legacy regression in this bounded step.
+Full report SHA256b3cf77e8920e531f4d77dd03dcad6325f5655efc92bd8848e31feb9d53a6ef68.
+Curated review SHA2561f684ea3cc65fecc6e50f4a7a345aa28a9a188dc79ddb00c1d181bb737343778.
+
+Commit four PNGs,SVG,HTML/report under photo2/review/r067 plus code/tests/notes.
+Questions retain their three pending topics with F/G failure,H improvement
+illustrations. No replies received. Bulk candidate curves/profiles/duplicate
+runs stay ignored. Next: resume beads1.jpg's reviewed visible instance/color map
+from JPEG alone, preserving unknowns/slivers; stop at map/checks before pattern
+inference, then extend to remaining generated images. gpt-6-astra/High, stay here;
+no `/new` needed. Width-only photo candidate remains provisional.
+Publication checks: updated Markdown/HTML links, whitespace and final source
+hashes pass. Approved remote lookup confirms origin still at entry eaa40e9.

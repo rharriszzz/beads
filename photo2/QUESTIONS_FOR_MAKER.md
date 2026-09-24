@@ -5,6 +5,21 @@ supporting illustrations are committed; future questions will follow this format
 image-advice questions and the completed comparison. No further pattern or
 construction information is being requested.
 
+## R067 comparison: additional evidence for questions 2 and 3
+
+The [new image-edge test](review/r067/review.html) was worse overall, so its green
+candidate has **not** replaced the cyan width-only candidate. The existing three
+questions below remain pending; no answers have been received and no additional
+construction-pattern information is requested.
+
+In the close-up below, **G** is the largest regression: green moves farther into
+the dark area on the right. **F** illustrates a nominally clear edge moving too
+far outward. **H** improves. These letters may help explain the actual bead edge
+in your answers to questions 2 and 3. White brackets are the unchanged assistant
+visual estimates, not confirmed measurements. Read at the horizontal side ticks.
+
+![F/G failure examples and H improvement: width-only cyan, image-guided green](review/r067/comparison-2.png)
+
 ## R066 follow-up evidence for the same pending questions
 
 No maker answers have been received. The three questions below remain open;

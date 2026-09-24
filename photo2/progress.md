@@ -772,3 +772,15 @@ Four new plus nine existing tests, compilation, artifact/source hashes and
 repeatability pass. Questions gain lettered supporting images, no maker answers
 yet. Next: direct image-edge evidence on both sides with width as a soft prior,
 compare against frozen intervals and stop before geometry adoption.
+
+## 2026-09-24 — R067 image-edge cue rejected
+
+Completed the fixed-setting direct color/brightness-edge comparison; see
+IMAGE_EDGES.md and committed review/r067/. Default image-guided candidate has
+18/24 edges within2px of frozen visual intervals versus23/24 width-only; mean
+outside1.26 versus.49px. Reject it, retaining provisional width-only geometry.
+Sensitivity variants also regress; no-image metrics mixed, not adopted.
+Initial linear interpolation hit iteration limits; C1 interpolation converges.
+Five new+nine width+four transect tests pass (18); compilation, hashes, geometry
+sanity and repeatability checks pass. Questions gain F/G/H supporting images.
+Next: resume beads1.jpg visible inventory before further pattern inference.

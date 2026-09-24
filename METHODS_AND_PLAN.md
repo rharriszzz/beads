@@ -4,7 +4,8 @@ Updated 2026-09-24. This explains what is available now and what still needs
 work. The immediate inputs are **beads1.jpg–beads7.jpg**, the generated images.
 R062–R065 temporarily prioritize the requested photo-2 shadow/width diagnostic;
 its [results](photo2/WIDTH_CORRECTION.md),
-[R066 boundary review](photo2/TRANSECT_REVIEW.md) and
+[R066 boundary review](photo2/TRANSECT_REVIEW.md),
+[R067 rejected image-edge candidate](photo2/IMAGE_EDGES.md) and
 [illustrated questions](photo2/QUESTIONS_FOR_MAKER.md) are now available.
 Pattern identification must use the images without
 consulting the pattern definitions in the POV-Ray file.
@@ -206,7 +207,8 @@ but none establishes the whole pattern.
 R066 checked twelve photo-2 transects using frozen assistant visual intervals;
 23/24 corrected edges are within two pixels of those intervals, compared with
 18/24 original edges. These are subjective checks, not ground-truth accuracy.
-The next bounded work item tests direct image-edge evidence with uncertainty on
-both sides, stopping at a candidate comparison before adoption into bead geometry. Then
-resume the reviewed visible-bead inventory for **beads1.jpg**, keeping unresolved
-regions explicit. No additional construction-pattern information is needed.
+R067 completed the direct image-edge comparison: its local paper-transition
+method regressed, so it is rejected and the width-only proposal remains provisional.
+The next bounded work item resumes the reviewed visible-bead inventory for
+**beads1.jpg**, keeping unresolved regions explicit and stopping after the map
+and checks, before repeat inference. No additional construction-pattern information is needed.
