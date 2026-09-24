@@ -11,7 +11,7 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R062–R065: shadow/width correction and illustrated review
+## Current step — R066: direct transect review of the shadow correction
 
 Completed the requested photo-2 diagnostic: clear-edge anchoring plus a robust
 width model produces provisional corrected boundaries and centerline. See
@@ -21,8 +21,14 @@ The left bend's estimated excess width is 16.7 pixels (9.6–22.9 variability
 range), with an 8.8-pixel typical center shift. Fourteen regions merit review;
 a positive perspective gradient is not yet established. Original defaults remain.
 
-Next: validate a few reviewed edge/width transects, revise quality selection if
-needed, and stop after that boundary check before adopting new bead geometry.
+R066 completed twelve assistant-reviewed image transects with frozen visual
+intervals: 23/24 corrected edges versus 18/24 original edges lie within two pixels
+of the ranges. Small disagreements remain; this is not ground-truth accuracy.
+See [review and limitations](photo2/TRANSECT_REVIEW.md).
+
+Next: test direct bead/paper transition evidence on both boundaries with width
+as a soft prior. Compare original, width-only and image-guided candidates against
+frozen intervals without fitting to them; stop after the comparison before adoption.
 Then return to the generated-image inventory. gpt-6-astra / High; stay here,
 no `/new`. Future questions and useful supporting images are committed files
 (R065), with saved answers carried in the handoff.

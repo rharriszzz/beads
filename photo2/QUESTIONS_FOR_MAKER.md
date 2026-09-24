@@ -5,6 +5,28 @@ supporting illustrations are committed; future questions will follow this format
 image-advice questions and the completed comparison. No further pattern or
 construction information is being requested.
 
+## R066 follow-up evidence for the same pending questions
+
+No maker answers have been received. The three questions below remain open;
+this step adds closer views rather than another set of questions. The
+[new transect review](review/r066/review.html) has raw images, comparison overlays
+and [lettered locations](review/r066/locations.png). White brackets are my visual
+edge estimates, orange is the original boundary and cyan the proposed boundary.
+Read the horizontal midpoint marked by the side ticks. Coincident orange/cyan
+lines appear cyan. These estimates are not confirmed ground truth.
+
+For question 1, **C** may move slightly too far into a bead, while **D** supports
+the leftward correction. For question 2, **E** may still leave some shadow inside
+the outline, and **H** supports the lower-loop correction. For question 3, **F**
+shows how a small bead scallop can disagree with an otherwise clear-looking edge.
+Please use those letters if they help explain your answers to the questions below.
+
+![C and D: possible overcorrection and left-bend improvement](review/r066/comparison-1.png)
+
+![E to H: residual shadow, clear-edge scallop and lower-loop improvement](review/r066/comparison-2.png)
+
+## Original pending questions (R064–R065)
+
 Open the [illustrated review page](review/r064/review.html)
 for the comparisons, numbered whole-image map and width plot. Measurements use
 original-photo pixels. Cyan is the centerline, green the proposed boundaries,

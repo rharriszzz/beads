@@ -760,3 +760,15 @@ confirmed remote still4cadaf6. Bulk outputs/environment stay ignored; curated
 question illustrations are intentionally committed under the user's exception.
 Next: reviewed edge/width references and geometry check before adoption, then
 return to generated inventories. gpt-6-astra/High, stay here; no `/new` needed.
+
+## 2026-09-24 — R066 direct transect check
+
+Twelve assistant-reviewed image transects support the main width correction,
+with residual over/undercorrection at C/E. See TRANSECT_REVIEW.md and committed
+review/r066/. Within2px of visual ranges:18/24 original,23/24 corrected; this is
+subjective compatibility, not true accuracy. Annotations frozen before reading
+projected offsets. No new width fit, curve/default change or perspective claim.
+Four new plus nine existing tests, compilation, artifact/source hashes and
+repeatability pass. Questions gain lettered supporting images, no maker answers
+yet. Next: direct image-edge evidence on both sides with width as a soft prior,
+compare against frozen intervals and stop before geometry adoption.

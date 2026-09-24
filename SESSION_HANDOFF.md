@@ -1,5 +1,59 @@
 # Beads session handoff
 
+## R066 — completed direct image-transect check; candidates remain provisional
+
+User: "keep hoing.  thanks." Continued the handoff's next bounded geometry check.
+Read saved questions; no maker answers or new session/status data received.
+Preflight: daisy, clean photo-2-reconstruction at be8c9d4, no stashes, upstream
+origin; Python3.12.14. Fetch succeeded, ahead/behind0/0. No transfer/delegation.
+
+Added photo2/transect_review.py and frozen assistant annotations in
+photo2/transect-annotations-r066.json. Twelve positions A–L cover heights/sides,
+bends and return loop. Raw normal strips (±90px, tangent context±28px, 4x bilinear)
+were inspected before recording intervals and reading predicted offsets. Earlier
+whole-image results were known: not observer-blind or independent human truth.
+Annotations bind the photo/raw images; do not silently retune them to improve a
+candidate. The script rejects mismatched photo/raw hashes. Full protocol and
+limits in photo2/TRANSECT_REVIEW.md; committed review at photo2/review/r066/review.html.
+
+Original versus corrected: 12/24 versus14/24 edges inside the visual intervals;
+18/24 versus23/24 within2px; mean distance outside1.71 versus0.49px; maximum11.27
+versus2.40px. Centers inside midpoint intervals8/12 versus11/12. These are interval
+compatibility measures, not true geometric errors or representative accuracy.
+D/H support main corrections. C crosses to1.79px inward of its visual range and
+its center is1.32px beyond midpoint range; E remains2.40px outward. Small nominally
+clear-anchor disagreements are all<1.64px and may reflect blur/scallops/annotation.
+All12 visual width intervals include95.8px; no perspective slope established.
+Original width algorithm, source curves and reconstruction defaults unchanged.
+Recommendation: keep provisional width candidate, add direct edge evidence and
+uncertainty on both boundaries before adoption. No new global width fit from
+these subjective samples, no recovered beads/indices/pattern claims.
+
+Questions remain the same three in photo2/QUESTIONS_FOR_MAKER.md (left correction,
+other shadow regions, clear width reference). Added an R066 section with lettered
+C/D/E/F/H close-ups that support those questions; do not repeat them in chat.
+All7 supporting PNGs, HTML and report committed under R065. Bulk duplicate outputs
+stay ignored. No answers yet; incorporate them if received without creating a gate.
+
+Checks: four new tests (intervals and image rectification) plus nine existing
+width tests pass; compilation passes. Two final runs reproduce all8 image/HTML
+artifacts byte for byte; reports match except commands; seven source hashes
+verify. Candidate projections match R065 to1e-10px; axes orthonormal. All raw and
+comparison sheets plus map visually inspected. No analysis/test failures in
+this step; no render, POV-pattern lookup, bead detection or full legacy regression.
+Report SHA2566b2b9ea31bc095e69e20b884eb0c5a17e51e243c7938b6039b30e035b7046ba2.
+Prepublication remote lookup hit sandbox DNS failure; approved escalation
+confirmed origin still at be8c9d4. Publish scoped code/annotations/review/docs,
+verify remote and local state; final
+response records delivered commit. Historical R064/R065 review is retained.
+
+Next bounded task: test bead-to-paper transition evidence on both edges with
+width as a soft prior. Compare original, width-only and image-guided candidates
+against the frozen R066 intervals (evaluation only, no fitting to these labels).
+Include C/E residuals and clear-edge scallops; stop after comparison before global
+adoption or bead indexing. Then resume generated visible inventories, beads1 first.
+Recommend gpt-6-astra / High; stay here, no `/new` needed.
+
 ## R062–R065 — width-based shadow correction and committed illustrated questions
 
 Completed the user's requested photo-2 geometry step before the pending generated

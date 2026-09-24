@@ -1,0 +1,144 @@
+{
+  "author": "assistant visual review, not maker annotation or ground truth",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "protocol": "Intervals selected from raw rectified strips without original/corrected overlays or reading predicted edge offsets. Prior whole-image corrections were already known, so review is not observer-blind. Each interval describes plausible bead/paper transition at tangent=0; local bead scallops are included, not an inferred smooth envelope.",
+  "raw_artifact_sha256": {
+    "raw-1.png": "ad47b4cb971dcdb606393d0335b9547598b2d66fb7312255fa88aeefdf1ce6e5",
+    "raw-2.png": "7eb53cbefd301901a0c68b18ef8ededd7d687c1113b4babb5869371899f2e07c",
+    "raw-3.png": "3801b48e3ed1f130d2cd2eb6e7178ff7ad0cc22213060752d9aa0a98c2ba130a"
+  },
+  "transects": {
+    "A": {
+      "outer_interval_px": [
+        -51,
+        -43
+      ],
+      "inner_interval_px": [
+        43,
+        52
+      ],
+      "note": "Moderate blur at both edges; top reference."
+    },
+    "B": {
+      "outer_interval_px": [
+        -52,
+        -46
+      ],
+      "inner_interval_px": [
+        44,
+        52
+      ],
+      "note": "Outer dark bead and inner dark bead against brighter paper."
+    },
+    "C": {
+      "outer_interval_px": [
+        -56,
+        -51
+      ],
+      "inner_interval_px": [
+        41,
+        52
+      ],
+      "note": "Inner reddish/yellow bead blends into colored shadow."
+    },
+    "D": {
+      "outer_interval_px": [
+        -57,
+        -50
+      ],
+      "inner_interval_px": [
+        32,
+        49
+      ],
+      "note": "Dark inner bead has a broad ambiguous transition."
+    },
+    "E": {
+      "outer_interval_px": [
+        -59,
+        -49
+      ],
+      "inner_interval_px": [
+        29,
+        42
+      ],
+      "note": "Outer scallop/notch at the transect; inner dark bead merges with shadow."
+    },
+    "F": {
+      "outer_interval_px": [
+        -51,
+        -45
+      ],
+      "inner_interval_px": [
+        44,
+        51
+      ],
+      "note": "Yellow outer edge and dark inner edge; useful reference."
+    },
+    "G": {
+      "outer_interval_px": [
+        -54,
+        -46
+      ],
+      "inner_interval_px": [
+        36,
+        46
+      ],
+      "note": "Outer scallop; inner yellow/dark bead against shadow."
+    },
+    "H": {
+      "outer_interval_px": [
+        -63,
+        -57
+      ],
+      "inner_interval_px": [
+        33,
+        47
+      ],
+      "note": "Outer black bead tip; inner dark bead/shadow transition."
+    },
+    "I": {
+      "outer_interval_px": [
+        -56,
+        -48
+      ],
+      "inner_interval_px": [
+        33,
+        47
+      ],
+      "note": "Blurred bottom contour, especially the inner dark bead."
+    },
+    "J": {
+      "outer_interval_px": [
+        -59,
+        -45
+      ],
+      "inner_interval_px": [
+        45,
+        53
+      ],
+      "note": "Outer red bead in shadow; inner yellow bead against brighter paper."
+    },
+    "K": {
+      "outer_interval_px": [
+        -59,
+        -46
+      ],
+      "inner_interval_px": [
+        48,
+        57
+      ],
+      "note": "Outer yellow bead merges into brown shadow; bright inner yellow edge."
+    },
+    "L": {
+      "outer_interval_px": [
+        -54,
+        -42
+      ],
+      "inner_interval_px": [
+        45,
+        55
+      ],
+      "note": "Outer red/dark bead in shadow; brighter inner edge."
+    }
+  }
+}

@@ -2394,3 +2394,56 @@ confirmed remote still4cadaf6. Bulk outputs/environment stay ignored; curated
 question illustrations are intentionally committed under the user's exception.
 Next: reviewed edge/width references and geometry check before adoption, then
 return to generated inventories. gpt-6-astra/High, stay here; no `/new` needed.
+
+## R066 — Continue with boundary/width validation (2026-09-24)
+
+> keep hoing.  thanks.
+
+Continue the handoff's next bounded step: check selected image transects against
+visible bead/paper transitions, compare original and width-constrained geometry,
+and revise the recommendation before adoption. No maker answers have arrived;
+existing questions remain pending in their committed file, without repeating
+live questions or creating an approval gate. Use image-only assistant review,
+explicitly distinguished from independent human ground truth. Commit supporting
+review images/questions and scoped code/docs; bulk output stays ignored.
+Preflight: daisy, clean photo-2-reconstruction at be8c9d4, upstream origin,
+no stashes, Python3.12.14. Fetch succeeded; no transfer/delegation/new status.
+
+### R066 outcome and checks
+
+Completed twelve preselected image-transect checks. Added reproducible normal
+strip/overlay review, four tests and frozen assistant visual annotations. Raw
+sheets were inspected and intervals saved before predicted offsets were read;
+earlier whole-image results were known, so not observer-blind or human truth.
+Intervals stay frozen after comparison. Annotation SHA256:
+ad8e1d2d50798006baa2da827ff96378000f7323852db9fec803ed341a913d0b.
+
+Original versus width-constrained:12/24 versus14/24 edges inside visual ranges;
+18/24 versus23/24 within2px; mean distance outside1.71 versus0.49px; maximum11.27
+versus2.40px. Centers compatible8/12 versus11/12. These are subjective interval
+compatibility counts, not representative true accuracy. D/H support correction;
+C may overcorrect (1.79px inside interval bound, center1.32px past midpoint range),
+E may undercorrect (2.40px outward). Clear-anchor deviations are<1.64px; cannot
+separate small real errors from blur/scallops/annotation. All12 width ranges
+include95.8px; perspective remains unresolved. No algorithm/geometry defaults
+changed. Recommend direct image-edge evidence with uncertainty on both sides.
+
+Committed review includes7 PNGs, HTML/report; existing questions updated with
+lettered evidence, no new/repeated live questions. No maker answers received.
+Updated methods/plan/README/notes/handoff/progress. Four new tests plus nine width
+tests and compilation pass. Two runs reproduce8 review artifacts byte for byte;
+reports equal except commands;7 source hashes verify. Candidate projections
+match R065 to1e-10px and axes are orthonormal. All7 PNGs visually inspected.
+Report SHA2566b2b9ea31bc095e69e20b884eb0c5a17e51e243c7938b6039b30e035b7046ba2.
+No execution/test failures, renders, pattern lookup, bead detection or full
+legacy regression in this step. Duplicate experimental outputs remain ignored.
+Next: compare original/width-only/image-guided edges using frozen R066 intervals
+only for evaluation; stop before adopting geometry or bead indices. Use
+gpt-6-astra/High, stay here, no `/new` needed. Generated inventories remain pending.
+
+Publication check: ls-remote failed on sandbox DNS; approved escalation succeeded
+and confirmed origin still at entry be8c9d4. The no-execution-failures statement
+above refers to the numerical analysis/tests. Markdown/HTML links and whitespace
+checks pass.
+Staging initially failed creating .git/index.lock on the read-only sandbox;
+approved escalation staged the scoped files successfully.

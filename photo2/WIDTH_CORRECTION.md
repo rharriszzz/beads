@@ -153,7 +153,15 @@ initial exact-zero assertion failed on floating-point rounding (~1.8e-15);
 bounded blend weights and a numerical tolerance resolve it. No bead detection,
 pattern lookup, new rendering or full legacy regression was needed in this step.
 
-## Next bounded task
+## Follow-up review — R066
+
+The [twelve-transect check](TRANSECT_REVIEW.md) compares frozen assistant visual
+intervals with the original/candidate curves. It supports the main correction
+but leaves small local disagreements and unresolved perspective. The next step
+is direct image-edge evidence with uncertainty on both boundaries, before adoption.
+The original width algorithm and defaults are unchanged.
+
+## Original next bounded task (completed as an assistant review in R066)
 
 Use the illustrated questions and a few independently reviewed width transects
 to validate or revise the reliable-edge selection and width model. Stop after

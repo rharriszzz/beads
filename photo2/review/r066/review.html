@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><title>Transect boundary review</title>
+<style>body{font:17px system-ui;max-width:1100px;margin:2em auto;padding:0 1em}img{max-width:100%;height:auto}td,th{border:1px solid #ccc;padding:.4em}table{border-collapse:collapse}</style>
+<h1>Photo 2: direct boundary review</h1>
+<p>Twelve preselected locations. White brackets show assistant visual estimates from raw image strips, recorded before reading predicted offsets. The reviewer knew earlier whole-image results; these are not blind human ground truth. Original-photo pixels are used throughout.</p>
+<p>Orange: saved edge. Cyan: width-constrained edge. Coincident lines appear cyan. Examine the horizontal midpoint, marked by side ticks; bead scallops above and below it can differ.</p>
+<img src="locations.png" alt="Twelve labeled transect locations">
+<h2>Transects ABCD</h2><details open><summary>Raw image: no predicted boundary</summary><img src="raw-1.png" alt="Raw transects group 1"></details><details><summary>Compare with original and corrected edges</summary><img src="comparison-1.png" alt="Compared transects group 1"></details>
+<h2>Transects EFGH</h2><details open><summary>Raw image: no predicted boundary</summary><img src="raw-2.png" alt="Raw transects group 2"></details><details><summary>Compare with original and corrected edges</summary><img src="comparison-2.png" alt="Compared transects group 2"></details>
+<h2>Transects IJKL</h2><details open><summary>Raw image: no predicted boundary</summary><img src="raw-3.png" alt="Raw transects group 3"></details><details><summary>Compare with original and corrected edges</summary><img src="comparison-3.png" alt="Compared transects group 3"></details>
+<h2>Distances outside visual intervals</h2><p>Zero means compatible with the marked interval, not a proven exact fit. These brackets describe local visible bead edges, while the saved curves are smooth outlines.</p><table><tr><th>Location</th><th>Visual width range</th><th>Original outer / inner</th><th>Corrected outer / inner</th><th>Visual observation</th></tr>
+<tr><td>A: top left</td><td>86–103</td><td>0.0 / 0.0</td><td>0.0 / 0.0</td><td>Moderate blur at both edges; top reference.</td></tr>
+<tr><td>B: top right</td><td>90–104</td><td>0.0 / 0.0</td><td>0.0 / 0.0</td><td>Outer dark bead and inner dark bead against brighter paper.</td></tr>
+<tr><td>C: upper left slope</td><td>92–108</td><td>0.9 / 2.4</td><td>0.9 / 1.8</td><td>Inner reddish/yellow bead blends into colored shadow.</td></tr>
+<tr><td>D: left upper bend</td><td>82–106</td><td>1.6 / 6.9</td><td>1.6 / 0.0</td><td>Dark inner bead has a broad ambiguous transition.</td></tr>
+<tr><td>E: left lower bend</td><td>78–101</td><td>0.0 / 11.3</td><td>0.0 / 2.4</td><td>Outer scallop/notch at the transect; inner dark bead merges with shadow.</td></tr>
+<tr><td>F: middle return</td><td>89–102</td><td>1.5 / 0.1</td><td>1.5 / 0.1</td><td>Yellow outer edge and dark inner edge; useful reference.</td></tr>
+<tr><td>G: lower loop left</td><td>82–100</td><td>0.1 / 3.5</td><td>0.1 / 1.6</td><td>Outer scallop; inner yellow/dark bead against shadow.</td></tr>
+<tr><td>H: lower loop shadow</td><td>90–110</td><td>1.0 / 8.1</td><td>1.0 / 0.0</td><td>Outer black bead tip; inner dark bead/shadow transition.</td></tr>
+<tr><td>I: bottom left</td><td>81–103</td><td>0.0 / 3.7</td><td>0.0 / 0.9</td><td>Blurred bottom contour, especially the inner dark bead.</td></tr>
+<tr><td>J: bottom right</td><td>90–112</td><td>0.0 / 0.0</td><td>0.0 / 0.0</td><td>Outer red bead in shadow; inner yellow bead against brighter paper.</td></tr>
+<tr><td>K: right middle</td><td>94–116</td><td>0.0 / 0.0</td><td>0.0 / 0.0</td><td>Outer yellow bead merges into brown shadow; bright inner yellow edge.</td></tr>
+<tr><td>L: upper right</td><td>87–109</td><td>0.0 / 0.0</td><td>0.0 / 0.0</td><td>Outer red/dark bead in shadow; brighter inner edge.</td></tr>
+</table><p>The width correction improves several shadow-side edges but does not establish that every clear anchor is accurate. The original geometry remains the default. A direct edge-evidence term with uncertainty on both sides is needed before adoption.</p>

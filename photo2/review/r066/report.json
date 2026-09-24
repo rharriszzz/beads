@@ -1,0 +1,895 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/transect_review.py",
+    "--output",
+    "photo2/review/r066",
+    "--annotations",
+    "photo2/transect-annotations-r066.json"
+  ],
+  "sources": {
+    "photo2/transect_review.py": "5b1e5ecabb5f17155b45bce7a27bf031891200bcee514312d6a27f02bbd709d2",
+    "photo2/test_transect_review.py": "ff8b7338bcbe0ccc0a3afb0584e55cc81e88c405f38792aa33713ced7831f321",
+    "photo2/width_correction.py": "12c2a674eaa5b71fae9a64aead22f1cdb07a2999322c0243e25b43d4245b0d20",
+    "photo2/boundary-splines-source.json": "1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7",
+    "photo2/centerline.json": "49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/transect-annotations-r066.json": "ad8e1d2d50798006baa2da827ff96378000f7323852db9fec803ed341a913d0b"
+  },
+  "sampling": "12 preselected locations; normal offsets -90..90, tangent -28..28; 4x bilinear display; visual review at tangent 0",
+  "fit": {
+    "model": "affine width versus image y; nonnegative slope; robust soft_l1",
+    "coefficients": [
+      95.819713828734,
+      2.9195435392430504e-13
+    ],
+    "free_coefficients": [
+      95.75969527231693,
+      -0.6542214338074462
+    ],
+    "top_bottom_width_px": [
+      95.8197138287337,
+      95.8197138287343
+    ],
+    "reliable_samples": 96,
+    "reliable_y_range": [
+      273.9731609683191,
+      3012.3071861716912
+    ],
+    "residual_band_px": [
+      -6.234693664593891,
+      7.029324714319237
+    ],
+    "median_absolute_residual_px": 3.3758749339504206,
+    "empirical_band_note": "10th\u201390th percentile calibration residuals; not a statistical confidence interval"
+  },
+  "transects": [
+    {
+      "id": "A",
+      "location": "top left",
+      "sample": 468,
+      "center_xy": [
+        1152.3466492293471,
+        331.3787150621021
+      ],
+      "direction": [
+        0.25694216044681023,
+        0.9664267826301822
+      ],
+      "tangent": [
+        0.9664267826301822,
+        -0.25694216044681023
+      ],
+      "original": {
+        "inner": 48.9768307587035,
+        "outer": -48.668605916242576,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 48.9768307587035,
+        "outer": -48.668605916242576,
+        "center": 0.0
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -51,
+          -43
+        ],
+        "inner_interval_px": [
+          43,
+          52
+        ],
+        "note": "Moderate blur at both edges; top reference.",
+        "width_interval_px": [
+          86,
+          103
+        ],
+        "midpoint_interval_px": [
+          -4.0,
+          4.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "B",
+      "location": "top right",
+      "sample": 499,
+      "center_xy": [
+        1623.168065451622,
+        286.06386645812745
+      ],
+      "direction": [
+        -0.2320331871859332,
+        0.9727078698377728
+      ],
+      "tangent": [
+        0.9727078698377728,
+        0.2320331871859332
+      ],
+      "original": {
+        "inner": 48.00171109271597,
+        "outer": -48.40550061276303,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 48.00171109271597,
+        "outer": -48.40550061276303,
+        "center": 0.0
+      },
+      "clear": {
+        "inner": true,
+        "outer": false
+      },
+      "review": {
+        "outer_interval_px": [
+          -52,
+          -46
+        ],
+        "inner_interval_px": [
+          44,
+          52
+        ],
+        "note": "Outer dark bead and inner dark bead against brighter paper.",
+        "width_interval_px": [
+          90,
+          104
+        ],
+        "midpoint_interval_px": [
+          -4.0,
+          3.0
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "C",
+      "location": "upper left slope",
+      "sample": 426,
+      "center_xy": [
+        565.1413032627967,
+        589.9557987465539
+      ],
+      "direction": [
+        0.5997445031552678,
+        0.8001915589001429
+      ],
+      "tangent": [
+        0.8001915589001429,
+        -0.5997445031552678
+      ],
+      "original": {
+        "inner": 54.370800377134074,
+        "outer": -56.899847372767084,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 39.206079932783695,
+        "outer": -56.899847372767084,
+        "center": -8.823459655875428
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -56,
+          -51
+        ],
+        "inner_interval_px": [
+          41,
+          52
+        ],
+        "note": "Inner reddish/yellow bead blends into colored shadow.",
+        "width_interval_px": [
+          92,
+          108
+        ],
+        "midpoint_interval_px": [
+          -7.5,
+          0.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 2.370800377134074,
+          "outer": 0.8998473727670842,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 1.7939200672163054,
+          "outer": 0.8998473727670842,
+          "center": 1.3234596558754284
+        }
+      }
+    },
+    {
+      "id": "D",
+      "location": "left upper bend",
+      "sample": 389,
+      "center_xy": [
+        247.39229042827466,
+        1055.870236043831
+      ],
+      "direction": [
+        0.9456247081414492,
+        0.3252597598111378
+      ],
+      "tangent": [
+        0.3252597598111378,
+        -0.9456247081414492
+      ],
+      "original": {
+        "inner": 55.93584936803212,
+        "outer": -58.639911637404786,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 38.44117143127891,
+        "outer": -58.639911637404786,
+        "center": -10.00844420227584
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -57,
+          -50
+        ],
+        "inner_interval_px": [
+          32,
+          49
+        ],
+        "note": "Dark inner bead has a broad ambiguous transition.",
+        "width_interval_px": [
+          82,
+          106
+        ],
+        "midpoint_interval_px": [
+          -12.5,
+          -0.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 6.935849368032123,
+          "outer": 1.6399116374047864,
+          "center": 0.5
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 1.6399116374047864,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "E",
+      "location": "left lower bend",
+      "sample": 369,
+      "center_xy": [
+        243.38124102869477,
+        1356.404988061752
+      ],
+      "direction": [
+        0.9365422117471212,
+        -0.35055482540654104
+      ],
+      "tangent": [
+        -0.35055482540654104,
+        -0.9365422117471212
+      ],
+      "original": {
+        "inner": 53.27488838622719,
+        "outer": -54.4126025093529,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 44.39785005811859,
+        "outer": -54.4126025093529,
+        "center": -4.864021421997437
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -59,
+          -49
+        ],
+        "inner_interval_px": [
+          29,
+          42
+        ],
+        "note": "Outer scallop/notch at the transect; inner dark bead merges with shadow.",
+        "width_interval_px": [
+          78,
+          101
+        ],
+        "midpoint_interval_px": [
+          -15.0,
+          -3.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 11.27488838622719,
+          "outer": 0.0,
+          "center": 3.5
+        },
+        "corrected": {
+          "inner": 2.3978500581185926,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "F",
+      "location": "middle return",
+      "sample": 304,
+      "center_xy": [
+        1127.744825790869,
+        1530.774096214664
+      ],
+      "direction": [
+        -0.21238246901403418,
+        -0.9771866182339497
+      ],
+      "tangent": [
+        -0.9771866182339497,
+        0.21238246901403418
+      ],
+      "original": {
+        "inner": 43.92371814122918,
+        "outer": -43.490092589011944,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 43.92371814122918,
+        "outer": -43.490092589011944,
+        "center": 0.0
+      },
+      "clear": {
+        "inner": true,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -51,
+          -45
+        ],
+        "inner_interval_px": [
+          44,
+          51
+        ],
+        "note": "Yellow outer edge and dark inner edge; useful reference.",
+        "width_interval_px": [
+          89,
+          102
+        ],
+        "midpoint_interval_px": [
+          -3.5,
+          3.0
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 0.07628185877081961,
+          "outer": 1.5099074109880561,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 0.07628185877081961,
+          "outer": 1.5099074109880561,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "G",
+      "location": "lower loop left",
+      "sample": 172,
+      "center_xy": [
+        933.1804729107353,
+        2479.3445876975875
+      ],
+      "direction": [
+        0.9992795226049017,
+        -0.03795307237259972
+      ],
+      "tangent": [
+        -0.03795307237259972,
+        -0.9992795226049017
+      ],
+      "original": {
+        "inner": 49.50045940717666,
+        "outer": -54.0836026244901,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 47.57991908085752,
+        "outer": -54.0836026244901,
+        "center": -1.5270989001050705
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -54,
+          -46
+        ],
+        "inner_interval_px": [
+          36,
+          46
+        ],
+        "note": "Outer scallop; inner yellow/dark bead against shadow.",
+        "width_interval_px": [
+          82,
+          100
+        ],
+        "midpoint_interval_px": [
+          -9.0,
+          0.0
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 3.5004594071766633,
+          "outer": 0.08360262449009781,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 1.5799190808575219,
+          "outer": 0.08360262449009781,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "H",
+      "location": "lower loop shadow",
+      "sample": 156,
+      "center_xy": [
+        994.6376253765239,
+        2716.824283824441
+      ],
+      "direction": [
+        0.9036727866159172,
+        -0.42822365036254484
+      ],
+      "tangent": [
+        -0.42822365036254484,
+        -0.9036727866159172
+      ],
+      "original": {
+        "inner": 55.14728684406668,
+        "outer": -55.976448562652685,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 39.855154246834985,
+        "outer": -55.976448562652685,
+        "center": -8.06032508937056
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -63,
+          -57
+        ],
+        "inner_interval_px": [
+          33,
+          47
+        ],
+        "note": "Outer black bead tip; inner dark bead/shadow transition.",
+        "width_interval_px": [
+          90,
+          110
+        ],
+        "midpoint_interval_px": [
+          -15.0,
+          -5.0
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 8.147286844066677,
+          "outer": 1.0235514373473151,
+          "center": 5.0
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 1.0235514373473151,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "I",
+      "location": "bottom left",
+      "sample": 124,
+      "center_xy": [
+        1372.9329114466252,
+        3010.161503965672
+      ],
+      "direction": [
+        0.21593977546635848,
+        -0.9764066844156378
+      ],
+      "tangent": [
+        -0.9764066844156378,
+        -0.21593977546635848
+      ],
+      "original": {
+        "inner": 50.661553972435485,
+        "outer": -55.76881359814077,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 47.855997327799564,
+        "outer": -55.76881359814077,
+        "center": -2.0779820622290663
+      },
+      "clear": {
+        "inner": false,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -56,
+          -48
+        ],
+        "inner_interval_px": [
+          33,
+          47
+        ],
+        "note": "Blurred bottom contour, especially the inner dark bead.",
+        "width_interval_px": [
+          81,
+          103
+        ],
+        "midpoint_interval_px": [
+          -11.5,
+          -0.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 3.6615539724354846,
+          "outer": 0.0,
+          "center": 0.5
+        },
+        "corrected": {
+          "inner": 0.8559973277995638,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "J",
+      "location": "bottom right",
+      "sample": 102,
+      "center_xy": [
+        1698.530672306149,
+        2958.688427034243
+      ],
+      "direction": [
+        -0.510109306980039,
+        -0.8601095830952846
+      ],
+      "tangent": [
+        -0.8601095830952846,
+        0.510109306980039
+      ],
+      "original": {
+        "inner": 50.581245390929396,
+        "outer": -51.6644387098256,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 50.581245390929396,
+        "outer": -51.6644387098256,
+        "center": 0.0
+      },
+      "clear": {
+        "inner": true,
+        "outer": true
+      },
+      "review": {
+        "outer_interval_px": [
+          -59,
+          -45
+        ],
+        "inner_interval_px": [
+          45,
+          53
+        ],
+        "note": "Outer red bead in shadow; inner yellow bead against brighter paper.",
+        "width_interval_px": [
+          90,
+          112
+        ],
+        "midpoint_interval_px": [
+          -7.0,
+          4.0
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "K",
+      "location": "right middle",
+      "sample": 13,
+      "center_xy": [
+        2297.655976362077,
+        1803.8835100107885
+      ],
+      "direction": [
+        -0.999035734941985,
+        0.04390444520692375
+      ],
+      "tangent": [
+        0.04390444520692375,
+        0.999035734941985
+      ],
+      "original": {
+        "inner": 53.403227372924654,
+        "outer": -54.461656825919846,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 53.403227372924654,
+        "outer": -47.06461929800376,
+        "center": 3.373523676969222
+      },
+      "clear": {
+        "inner": true,
+        "outer": false
+      },
+      "review": {
+        "outer_interval_px": [
+          -59,
+          -46
+        ],
+        "inner_interval_px": [
+          48,
+          57
+        ],
+        "note": "Outer yellow bead merges into brown shadow; bright inner yellow edge.",
+        "width_interval_px": [
+          94,
+          116
+        ],
+        "midpoint_interval_px": [
+          -5.5,
+          5.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    },
+    {
+      "id": "L",
+      "location": "upper right",
+      "sample": 549,
+      "center_xy": [
+        2110.468216038014,
+        838.5735906611956
+      ],
+      "direction": [
+        -0.949276094643577,
+        0.3144437885190909
+      ],
+      "tangent": [
+        0.3144437885190909,
+        0.949276094643577
+      ],
+      "original": {
+        "inner": 51.63601084222505,
+        "outer": -51.78322021091335,
+        "center": 0.0
+      },
+      "corrected": {
+        "inner": 51.63601084222505,
+        "outer": -51.03474909097373,
+        "center": 0.3669862862468122
+      },
+      "clear": {
+        "inner": true,
+        "outer": false
+      },
+      "review": {
+        "outer_interval_px": [
+          -54,
+          -42
+        ],
+        "inner_interval_px": [
+          45,
+          55
+        ],
+        "note": "Outer red/dark bead in shadow; brighter inner edge.",
+        "width_interval_px": [
+          87,
+          109
+        ],
+        "midpoint_interval_px": [
+          -4.5,
+          6.5
+        ]
+      },
+      "outside_visual_interval_px": {
+        "original": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        },
+        "corrected": {
+          "inner": 0.0,
+          "outer": 0.0,
+          "center": 0.0
+        }
+      }
+    }
+  ],
+  "summary": {
+    "original": {
+      "edge_count": 24,
+      "edges_inside": 12,
+      "edges_within_2px": 18,
+      "mean_edge_distance_outside_px": 1.7134975290350154,
+      "max_edge_distance_outside_px": 11.27488838622719,
+      "centers_inside": 8,
+      "mean_center_distance_outside_px": 0.7916666666666666
+    },
+    "corrected": {
+      "edge_count": 24,
+      "edges_inside": 14,
+      "edges_within_2px": 23,
+      "mean_edge_distance_outside_px": 0.494199536490006,
+      "max_edge_distance_outside_px": 2.3978500581185926,
+      "centers_inside": 11,
+      "mean_center_distance_outside_px": 0.1102883046562857
+    },
+    "clear_anchors": [
+      {
+        "id": "A",
+        "side": "outer",
+        "outside_px": 0.0
+      },
+      {
+        "id": "B",
+        "side": "inner",
+        "outside_px": 0.0
+      },
+      {
+        "id": "C",
+        "side": "outer",
+        "outside_px": 0.8998473727670842
+      },
+      {
+        "id": "D",
+        "side": "outer",
+        "outside_px": 1.6399116374047864
+      },
+      {
+        "id": "E",
+        "side": "outer",
+        "outside_px": 0.0
+      },
+      {
+        "id": "F",
+        "side": "inner",
+        "outside_px": 0.07628185877081961
+      },
+      {
+        "id": "F",
+        "side": "outer",
+        "outside_px": 1.5099074109880561
+      },
+      {
+        "id": "G",
+        "side": "outer",
+        "outside_px": 0.08360262449009781
+      },
+      {
+        "id": "H",
+        "side": "outer",
+        "outside_px": 1.0235514373473151
+      },
+      {
+        "id": "I",
+        "side": "outer",
+        "outside_px": 0.0
+      },
+      {
+        "id": "J",
+        "side": "inner",
+        "outside_px": 0.0
+      },
+      {
+        "id": "J",
+        "side": "outer",
+        "outside_px": 0.0
+      },
+      {
+        "id": "K",
+        "side": "inner",
+        "outside_px": 0.0
+      },
+      {
+        "id": "L",
+        "side": "inner",
+        "outside_px": 0.0
+      }
+    ],
+    "interpretation": "Compatibility with subjective assistant intervals at 12 selected transects; not true error, a random sample, or statistical validation. Midpoints are silhouette midpoints, not calibrated physical axes."
+  },
+  "artifacts": {
+    "comparison-1.png": "2358c41edc3bbecccf30f604288daa838e4ce4464a84fcb12dc830c5420ef925",
+    "comparison-2.png": "b5d9762955fbdc7e7d05a252ece59c830151bfcd5b1d57cb7c2ab02700110ce3",
+    "comparison-3.png": "8a5b2db733f641264babf59ebc2a8431d7acef207e7fc79fbeddc64934f342ed",
+    "locations.png": "97efb1e01d73c62783e963530b23885e9c5190bda7b6a3c7a2dd21baf35781f0",
+    "raw-1.png": "ad47b4cb971dcdb606393d0335b9547598b2d66fb7312255fa88aeefdf1ce6e5",
+    "raw-2.png": "7eb53cbefd301901a0c68b18ef8ededd7d687c1113b4babb5869371899f2e07c",
+    "raw-3.png": "3801b48e3ed1f130d2cd2eb6e7178ff7ad0cc22213060752d9aa0a98c2ba130a",
+    "review.html": "5109ae02a4ee14f955856eaf34c945650013371448450a06ed926116e5b20375"
+  }
+}
