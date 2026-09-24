@@ -702,3 +702,17 @@ Correct/review beads1.jpg's visible inventory next, retaining full-image context
 and unknown slivers. Stop after its instance/color map and checks, then extend to
 the remaining six images before further indexing or photographs. User's complete
 seven-pattern objective is still unfinished. gpt-6-astra / High, stay here.
+
+## 2026-09-24 — R060 plan/methods explanation and geometry inventory
+
+Wrote ../METHODS_AND_PLAN.md at the user's request. Generated JPEGs currently
+have approximate masks and incomplete bead candidates, but no saved three-spline
+set in the active pipeline. Photo 2 has outer/inner/centerline curves (907/847/303
+samples) in the existing sibling spline file; only the centerline is copied here.
+Verified source/photo hashes, closure/finite coordinates, rounding correspondence,
+and R059 source/input/artifact hashes. Read actual threshold, watershed and spline
+methods; preserved historical predicate uncertainty and unmeasured boundary accuracy.
+
+No new experiment or algorithm: documentation links/whitespace checked, runtime
+and renderer tests skipped. Generated-image visible-bead correction remains first;
+next bounded step is beads1.jpg's reviewed instance/color map before repeat inference.

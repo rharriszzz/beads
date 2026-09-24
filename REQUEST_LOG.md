@@ -2236,3 +2236,42 @@ from the JPEG alone, preserving full-image context and uncertain slivers. Stop
 after its reviewed instance/color map and checks; extend to beads2–7 before
 further indexing/repeat algorithms or photographs. No new pattern questions.
 Recommend gpt-6-astra / High, stay here; no additional `/new` needed.
+
+## R060 — Explain overall plan, methods and available geometry (2026-09-24)
+
+> Please write a document that explains your overal plan, and methods.  Are you able able to separate the background from the necklace, do you have the splines that identify the outer edge of be bracelet and the inner edge of the pracelet, and the centerline of the bracelet? are you able to identify the beacs, and what method did you use?  thanks.
+
+Completed METHODS_AND_PLAN.md, linked from PLAN.md and photo2/README.md. Distinguish
+actual capability from proposed work: approximate generated-image foreground masks,
+partial brightness-peak/compact-watershed bead candidates, no verified complete
+inventory or pattern, and no saved three-spline set in that seven-image pipeline.
+Photo 2's existing outer/inner/centerline curves are available in the sibling
+fft-image-explorer repository; only the centerline is copied into beads.
+
+Preflight: daisy, clean photo-2-reconstruction at
+24353a56e008591b6fb1f10e26c4349567eb72b6, upstream origin/photo-2-reconstruction,
+no stashes. Fetch initially failed because .git/FETCH_HEAD was read-only; approved
+escalated retry succeeded, ahead/behind 0/0. Python 3.12.14. No pull, transfer,
+delegation, new supplied status/usage or account inspection. R059 already says
+enough pattern knowledge is supplied; no repeated advice questions for this doc.
+
+Read handoff/latest requests/plan/BLIND_GENERATED.md/current detector and spline
+code, plus read-only sibling extractor/inventory. One broad search output was
+truncated; targeted source reads recovered method details. No POV pattern lookup.
+Reverified saved photo-2 source hash 1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7,
+matching source/target photo hash, 907/847/303 outer/inner/centerline samples,
+152/142 boundary controls, finite coordinates and closed curves. Copied centerline
+coordinate differences <=0.0000500000001 pixel. Saved no-intersection flag reported
+as metadata only, not a rerun geometric check. Saved image_only_hsv file lacks
+predicate_mode: document does not invent the exact historical threshold choice
+from today's code. R059 source, seven image and 29 artifact hashes verified.
+
+Document explains mask versus curves versus individual-bead map, actual methods,
+uncertainty, local file locations/gallery, and staged visible-first plan through
+indexing, repeat completion, photographs and POV-Ray appearance fitting. No new
+algorithm, numerical experiment, detection run, render or photo fit. Documentation
+links and whitespace checked; runtime tests skipped for documentation-only work.
+Publish six scoped documentation files; generated evidence/.venv and all sibling
+files excluded. Next task stays beads1.jpg visible-inventory correction, stopping
+after its reviewed instance/color map and checks, then extend to images 2–7.
+Recommend gpt-6-astra / High, stay here; no `/new` needed or pending advice.

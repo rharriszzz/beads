@@ -1,5 +1,9 @@
 # Photo-2 reconstruction plan
 
+For a plain-language account of the current capability, available splines,
+background separation, bead detector and staged plan, read
+[METHODS_AND_PLAN.md](METHODS_AND_PLAN.md) (R060, 2026-09-24).
+
 The goal is to extend `beads.pov` to reproduce `beads-photo-2.jpg` using Python
 and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and

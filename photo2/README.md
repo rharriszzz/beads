@@ -1,5 +1,9 @@
 # Photo 2 reconstruction
 
+Start with the [overall plan and methods](../METHODS_AND_PLAN.md) for direct
+answers about background removal, saved outer/inner/centerline curves and the
+current limits of individual-bead identification.
+
 **Current priority (R059): generated JPEGs first.** The
 [blind beads1.jpg–beads7.jpg test](BLIND_GENERATED.md) produces reviewable bead
 candidate maps without reading source patterns, but has not recovered a complete

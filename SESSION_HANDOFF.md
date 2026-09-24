@@ -1,5 +1,51 @@
 # Beads session handoff
 
+## R060 — overall plan/methods document and verified spline inventory
+
+User requests a document explaining the overall plan and methods, and asks
+whether background separation, outer/inner/centerline splines and individual-bead
+identification are available. Completed **METHODS_AND_PLAN.md**, linked from
+PLAN.md and photo2/README.md. This is documentation/inspection, not a new
+detection experiment or change to R059's generated-images-first priority.
+No new pattern questions; R059 says sufficient knowledge is already supplied.
+
+Direct answers: generated images have approximate foreground masks and bead
+candidates, but no saved outer/inner/centerline splines in the current pipeline
+and no verified complete bead inventory or full pattern. Photo 2 already has
+all three curves in ../fft-image-explorer/beads-photo-2_splines.json: 907 outer,
+847 inner and 303 centerline samples, with 152/142 boundary controls. Only its
+centerline is copied into this repository. Do not conflate photo splines with
+generated-image geometry or a foreground mask with individual-bead separation.
+
+Reverified source SHA-256
+1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7,
+source/target photograph hashes and copied centerline rounding <=0.0000500000001
+pixel per coordinate. All three saved curves finite and closed. Saved metadata
+says image_only_hsv/Catmull–Rom and no intersection; did not independently rerun
+intersection or boundary-accuracy tests. Saved file lacks predicate_mode, so
+do not invent its exact historical threshold choice from today's extractor.
+Verified R059 detector source, seven input and 29 artifact hashes. Read current
+detector/centerline code and sibling extractor; no sibling edits or pattern reads.
+
+Document explains threshold/morphology background mask, saved HSV-derived curves,
+midpoint centerline, brightness-peak/compact-watershed candidate detection and
+why these do not yet recover all beads. Stages: review masks/geometry, complete
+visible inventories, select/validate indexing, infer repeat/unknowns, then photos
+and appearance fitting. Existing inconsistent indexing remains a failed baseline.
+
+Preflight daisy, clean photo-2-reconstruction at 24353a5, no stashes. Fetch first
+failed on read-only .git/FETCH_HEAD; approved escalation succeeded, ahead/behind
+0/0. Python 3.12.14. No pull/transfer/delegation or new status/usage. Documentation
+links/whitespace checked; runtime tests/renders skipped for documentation-only
+work. Publish scoped docs; generated data, environment and sibling files remain
+excluded. Final response records verified delivery.
+
+**Next task unchanged:** review/correct the visible-bead inventory for beads1.jpg
+from its JPEG, keeping full-image context and unknown slivers. Stop after its
+instance/color map and checks, then extend to beads2–7 before further pattern
+inference or photographs. Recommend gpt-6-astra / High and stay here; no `/new`
+needed or pending advice. R059's overall recovery task remains unfinished.
+
 ## R059 — generated JPEGs first; blind detection/indexing does not yet recover patterns
 
 User: first identify all visible beads, then choose an algorithm to find the
