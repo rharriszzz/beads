@@ -5,7 +5,25 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current direction — R057
+## Current direction — R059: generated JPEGs, visible beads first
+
+The user supersedes the second-anchor experiment: first identify every visible
+bead, then choose how to infer the rest. Test beads1.jpg–beads7.jpg before any
+photographs, without consulting the patterns in beads.pov. Existing pattern
+knowledge is sufficient; no further construction-pattern questions are needed.
+
+The blind attempt in **photo2/BLIND_GENERATED.md** produces image-only candidate
+maps for all seven JPEGs, but **zero verified complete inventories and zero
+recovered full patterns**. All four indexing variants per image have conflicts.
+Do not treat the 352/392/435/410/403/354/417 candidates as correct bead counts.
+
+Next bounded task: correct and review the visible-bead inventory on beads1.jpg
+from the JPEG alone, retaining full-image context and all uncertain slivers.
+Stop after its reviewed instance/color map and checks; extend to the other six
+images before returning to pattern inference or photographs. Use gpt-6-astra /
+High and stay in the conversation; no additional `/new` or advice needed.
+
+## Previous direction — R057 (superseded by R059)
 
 The maker's new request supersedes the pending centroid/body-center diagnostic.
 Work on two explicit tasks: detect the visible bead regions/colors from beauty
@@ -68,7 +86,7 @@ Recommend gpt-6-astra / High with a fresh `/new` for this distinct step.
 R049–R051 constraints: assistant marks anchors; equal bead size/shape, small
 gloss differences; hole axes lengthwise, holes invisible; white thread invisible.
 
-The historical plan below retains prior evidence; R057 defines the current next task.
+The historical plan below retains prior evidence; R059 defines the current next task.
 
 ## Whole plan
 

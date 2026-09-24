@@ -1,5 +1,112 @@
 # Beads session handoff
 
+## R059 — generated JPEGs first; blind detection/indexing does not yet recover patterns
+
+User: first identify all visible beads, then choose an algorithm to find the
+rest; enough pattern knowledge is already supplied. First identify patterns in
+the existing generated images without consulting POV-Ray pattern definitions.
+Clarification: **not the photos**. Scope is beads1.jpg–beads7.jpg. This supersedes
+the second-anchor experiment and withdraws R058's pending advice questions.
+No further pattern questions or source-pattern lookup. Current supplied status
+remains R058 (gpt-6-astra / High); no new usage or account inspection.
+
+Completed a blind *attempt*, not the user's full recovery objective:
+`photo2/blind_generated.py`, `blind_generated_index.py`, five tests and
+**BLIND_GENERATED.md**. Reads seven JPEGs and its own observations; no POV source,
+pattern fixtures, ID passes, source layouts or old audit inputs. Palettes/HSV
+boxes are assistant choices from visual inspection, not unsupervised recovery.
+Retains known ±1/±6/±7 construction differences and both sign conventions.
+
+Candidate counts images 1–7: 352/392/435/410/403/354/417; flagged counts:
+28/60/217/68/83/70/90. These are not bead counts. Visual review of every original
+and boundary overlay finds separated clear front beads but side-boundary errors,
+missed slivers and black/glint fragments. Counts change with peak settings.
+Neither full visible-bead completeness nor exact colors are verified.
+
+Marker and candidate-centroid indexing, each with both conventions and a seam
+cut, fails graph consistency on every image. Conflicting directed-edge ranges:
+44–96, 28–50, 30–38, 66–118, 50–66, 54–80, 60. Duplicate indices also remain.
+Only beads3 has internally consistent >=12-candidate local groups; partial
+compatible periods/unknowns remain recorded, with unknown component offsets.
+No exact ring count/modulus, no accepted full sequence: **zero of seven full
+patterns recovered**. Do not turn this implementation failure into impossibility.
+
+Gradient-only watershed initially trapped glints/spread other regions; the final
+compact value/gradient variant improves the visual maps but is still unverified.
+Local sinusoid/projected-torus glint fits also failed reliable alignment/indexing;
+do not restart fitting instead of correcting visible observations. Development
+parameters were adjusted using JPEGs only, with no renderer truth or source
+pattern. See note for failed approach details and local scratch paths.
+
+Reproduce:
+`.venv/bin/python photo2/blind_generated.py --output photo2/output/blind-generated-new`
+then `.venv/bin/python photo2/blind_generated_index.py --observations
+photo2/output/blind-generated-new --output photo2/output/blind-generated-new-index`.
+Review gallery: `photo2/output/blind-generated-r059-final/index.html` (all seven
+originals, hoverable IDs/colors/flags and ID toggle), plus per-image numbered and
+boundary PNGs, observation JSON and label NPY. Observation report SHA-256
+`be59c090dbdb013ee4f14a2803622db2626e03fa4c9029f7efcc6b05c01ecba8`;
+index report in `blind-generated-r059-final-index/`, SHA-256
+`6fd94616bf6d53e22754160ca52e133fe2927afc8d6c16dd96027e174ca357e6`.
+
+Nineteen relevant tests pass (five new, seven neighbor-inference, seven graph).
+Initial contradiction-control coordinates caused seam removal; corrected fixture
+and reran all nineteen. Compilation passes; two final runs match all 29+7
+artifacts byte for byte, reports except command paths. Seven JPEG hashes,
+source/artifact hashes and observation bindings verify. Runtime/render regression
+beyond relevant tests skipped: prior sources/POV scenes unchanged. No render,
+photo processing, hidden-bead completion or complete-pattern claim.
+
+Preflight daisy, entry 6028329, only R058 records modified; fetch succeeded,
+ahead/behind 0/0, no stashes/pull/transfer/delegation. Publish scoped new programs,
+tests, note and workflow docs including R058 opening records; generated files,
+scratch experiments and .venv stay excluded. Final response records delivery.
+
+**One next task:** correct and review every visible bead in beads1.jpg from its
+JPEG, saving an instance/color map with full-image context and explicit uncertain
+slivers, misses, duplicates and merges. Stop after that reviewed inventory and
+checks, then extend to beads2–7 before another indexing/repeat algorithm or photos.
+User's overall seven-pattern objective remains unfinished. Recommend gpt-6-astra
+/ High, stay in this conversation; no `/new` needed and no pending advice.
+
+## R058 — new-session status and opening advice
+
+User supplied previous completion and current `/status`; no Continue/go
+instruction or new experiment in this opening. Current supplied session
+`01a0d11e-5bf6-7fb2-8c2d-43591b476b4b`, Codex v0.155.1, gpt-6-astra / High.
+REQUEST_LOG.md R058 separately attributes previous-session tokens and current
+limits; no current token totals supplied, account inspection or model change.
+
+Saved guidance includes edge-led recognition, all three neighbor directions,
+assistant-selected anchors, equal bead geometry, invisible holes/thread and
+iPhone capture with unknown flash. R057 waived its round's unanswered lighting
+questions; do not repeat them. Photo 2's designed spiral continuity rule remains
+unspecified. Two new opening advice questions are pending:
+
+1. You described photo 2's red/yellow/black spirals as continuous by design. What
+   continuity rule did you use—for example, must each colored stripe stay
+   connected along a particular neighbor direction?
+2. When checking the indexing between two separated bead groups, would you
+   trace a connecting path bead by bead, or use the surrounding color motif
+   to check their relative positions?
+
+Next task remains R057's second spatially separated observed-region group test
+within frozen crops, using fixed fits and R055 conservative repair. Measure lost
+correct and rejected wrong helicity/phase alternatives; retain jitter and
+controls. Stop after local hypothesis/seed/index evidence and checks, before
+ring growth or photo fitting. Advice is not an additional approval gate.
+Stay in this conversation with gpt-6-astra / High; no further `/new` needed.
+
+Preflight: daisy, clean photo-2-reconstruction at
+6028329625bca479b0bed758663a3f8ac982aa99, tracking origin with cached
+ahead/behind 0/0, no stashes; Python 3.12.14. No fetch/live remote lookup,
+pull, transfer or delegation. Read workflow, current handoff/saved advice,
+latest requests and SHARED_HIGHLIGHTS.md; targeted reads recovered material
+after initial combined output truncation. Only request/handoff opening records
+saved locally for follow-up publication; no implementation, render, commit or
+push. Documentation whitespace checked; runtime tests skipped for record-only
+edits. Previous experimental results below remain historical evidence.
+
 ## R057 — shared highlights improve acceptance but introduce wrong ownership
 
 User explicitly says continue without answers; opening advice questions are

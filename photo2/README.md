@@ -1,5 +1,12 @@
 # Photo 2 reconstruction
 
+**Current priority (R059): generated JPEGs first.** The
+[blind beads1.jpg–beads7.jpg test](BLIND_GENERATED.md) produces reviewable bead
+candidate maps without reading source patterns, but has not recovered a complete
+pattern from any of the seven images. Visible-bead inventories need correction
+before further indexing or photograph work. Reproduction commands and the
+interactive observation gallery are described in that note.
+
 This is an initial, reproducible forward model of `beads-photo-2.jpg`, with
 diagnostics for later inverse fitting. It is **not a recovered necklace pattern**.
 The broad arrangement is matched by a closed spline; bead layout, camera,

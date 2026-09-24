@@ -1,5 +1,12 @@
 # Visible beads first, indexed beads second — R045
 
+**R059 supersedes the pending second-anchor experiment:** the user requires
+visible-bead identification and blind pattern attempts on beads1.jpg–beads7.jpg
+before photographs, without POV-Ray pattern definitions. The
+[seven-image blind test](BLIND_GENERATED.md) produces candidate maps but recovers
+no full pattern. Correct the visible-bead inventory first, beginning with a
+reviewed map of beads1.jpg; no more pattern-advice questions are needed.
+
 R057 follow-up: [SHARED_HIGHLIGHTS.md](SHARED_HIGHLIGHTS.md) completes the fixed
 distance/gradient shared-cavity test. Both improve gray-anchor acceptance but
 introduce wrong ownership and worsen excluded-phase rejection. Keep R055 repair

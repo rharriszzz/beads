@@ -673,3 +673,32 @@ repair, and measure both lost correct and rejected wrong alternatives. Retain
 jitter and background/duplicate/excluded-phase controls. Stop after local
 hypothesis/seed/index evidence and checks, before ring growth or photo fitting.
 Recommend gpt-6-astra / High with a fresh `/new` for this distinct step.
+
+## 2026-09-23 — R059 blind generated-image test; visible inventory remains first
+
+User explicitly redirects work to beads1.jpg–beads7.jpg before photographs and
+requires visible-bead identification before choosing how to infer remaining beads.
+No more pattern knowledge is needed. Supersedes the second-anchor experiment.
+
+The JPEG-only pipeline produces candidate maps for all seven images, an interactive
+observation gallery, sensitivity counts and both-convention index attempts. It
+reads no POV-Ray pattern definitions, saved patterns, source layouts or ID truth.
+Candidate counts are 352/392/435/410/403/354/417; these are not verified bead counts.
+All four indexing variants per image have contradictory/duplicate indices; **zero
+full patterns recovered**. Small consistent groups in beads3 retain only local,
+conditional period families. No photographic or complete visible-inventory claim.
+See **BLIND_GENERATED.md** for methods, table, commands, hashes and failures.
+
+The gradient-only watershed failed around highlights; the final compact
+value/gradient method improves the map but still cuts through side beads and
+omits/slivers or fragments dark/bright evidence. Explored local/global glint
+geometry did not establish valid indices. All seven originals and final-method
+boundary maps inspected. Five new controls and fourteen relevant existing tests
+pass; a seam-sensitive test fixture was corrected before the final pass.
+Compilation, source/input/artifact hashes and byte reproducibility of 29+7
+artifacts pass. No old renderer regression for unchanged sources; no new render.
+
+Correct/review beads1.jpg's visible inventory next, retaining full-image context
+and unknown slivers. Stop after its instance/color map and checks, then extend to
+the remaining six images before further indexing or photographs. User's complete
+seven-pattern objective is still unfinished. gpt-6-astra / High, stay here.

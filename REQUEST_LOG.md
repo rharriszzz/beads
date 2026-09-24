@@ -2125,3 +2125,114 @@ No pending or new end-of-round questions.
 
 Publication staging initially failed because sandbox Git metadata was read-only
 (index.lock creation denied). Approved escalated staging succeeded; no work lost.
+
+## R058 — New-session status and opening advice (2026-09-23)
+
+User supplied previous completion: "Worked for 11m 29s · done 9:52 PM",
+Codex v0.155.1, gpt-6-astra high, ~/git/beads; resume title "Summarize Codex
+run", session `01a0d110-26b5-7700-8b92-f7810194e19b`. Previous tokens:
+total 106,841; input 85,780 (+1,657,216 cached); output 21,061 (reasoning
+2,296). These are prior-session totals, not current-session usage.
+
+Current supplied `/status`: session `01a0d11e-5bf6-7fb2-8c2d-43591b476b4b`,
+Codex v0.155.1, gpt-6-astra (reasoning high, summaries auto), OpenAI provider,
+~/git/beads, Workspace (Ask for approval), AGENTS.md loaded, Default
+collaboration, Pro Lite (account identifier omitted). Weekly limit 28% left,
+resets 17:37 on 28 Sep; 283 credits; Luna Reserve Weekly 100% left, resets
+21:53 on 30 Sep. No current token totals supplied, account inspection or model
+change. Status alone does not launch the next experimental step.
+
+Preflight: daisy, clean photo-2-reconstruction at
+6028329625bca479b0bed758663a3f8ac982aa99, tracking origin/photo-2-reconstruction,
+cached ahead/behind 0/0, no stashes; Python 3.12.14. No fetch/live remote lookup,
+pull, transfer or delegation. Read current handoff, saved construction advice,
+recent requests, AGENTS.md and SHARED_HIGHLIGHTS.md. Initial combined output
+truncated; targeted reads covered current results, advice and next task.
+
+Asked two opening advice questions about the designed spiral continuity rule
+and tracing versus motif comparison when checking separated bead groups. Exact
+questions pending in SESSION_HANDOFF.md. Preserve saved advice and R057's
+lighting-question waiver; do not infer flash settings or ask for user clicks.
+
+Outcome: status and pending questions saved locally for follow-up publication;
+no experiment, implementation, render, commit or push. Documentation whitespace
+checked; runtime tests skipped for record-only edits. Next bounded task remains
+the second separated observed-region group test with fixed fits and R055
+conservative repair, reporting lost correct/rejected wrong alternatives with
+jitter and controls. Stop after local hypothesis/seed/index evidence and checks,
+before ring growth/photo fitting. Stay here with gpt-6-astra / High; no additional
+`/new` needed. Advice is not an extra approval gate for authorized work.
+
+## R059 — Visible beads and blind JPEG pattern identification first (2026-09-23)
+
+> your task is first to identify all the visible beads, then to choose an algorithm to find the rest.  You already know enough about the pattern.  Are you already able to dientify the pattern in each of the beads-n.jpg without referring to the patterns in the povray file?  do that first.
+
+This supersedes the planned second-anchor experiment and withdraws R058's
+pending pattern-advice questions. Inspect existing JPEGs and attempt bead maps
+and pattern identification from image evidence, without consulting POV-Ray
+pattern definitions or importing known-pattern fixtures. Asked only which
+filename set is intended: beads1.jpg–beads7.jpg versus beads-photo-1.jpg–11.jpg;
+begin with the seven beadsN.jpg render images while clarification is pending.
+Do not claim existing local synthetic indexing tests already solve these images.
+
+Preflight: daisy, photo-2-reconstruction at 6028329, only R058 request/handoff
+records modified, no stashes. Fetch succeeded; cached ahead/behind 0/0. No pull,
+transfer or delegation. Read current plan/detection code/notes and inspected all
+seven 800x600 JPEGs. Python 3.12.14, existing NumPy/SciPy/Pillow/scikit-image.
+Two discovery reads named nonexistent geometry/sequence modules; corrected with
+rg --files. No POV-Ray source or stored source patterns read for this task.
+
+R059 clarification received during work:
+> not the photos, the generated images are first
+
+Confirmed scope is beads1.jpg–beads7.jpg, all seven 800x600 generated JPEGs;
+no photographs processed. Continue image-only observation and blind inference.
+
+R059 outcome: the current code cannot yet recover a complete pattern from any
+of these seven generated JPEGs. Added image-only observation/neighbor-audit
+programs, five focused tests and BLIND_GENERATED.md. Produced all seven candidate
+maps with anonymous IDs, masks/bboxes, colors/unknowns, flags and an interactive
+hover/ID gallery. Candidate counts 352/392/435/410/403/354/417; flagged counts
+28/60/217/68/83/70/90. These are not verified bead counts. Palettes/HSV boxes were
+chosen by assistant inspection of the JPEGs, not renderer patterns.
+
+Every image's four indexing variants (marker versus region-centroid, both
+conventions, explicit seam cut) has conflicts and duplicate indices. Directed
+conflict ranges respectively 44–96/28–50/30–38/66–118/50–66/54–80/60. Only beads3
+has >=12-candidate consistent local groups; preserve their competing local
+periods/unknowns and unknown component offsets without accepting a full pattern.
+No exact N/modulus, no pattern lookup or source-truth scoring. No photographs,
+new renders, hidden-bead completion or full recovery. User objective remains
+unfinished; this step establishes that prior capability is insufficient.
+
+All seven original images and final-method boundary maps visually inspected.
+Front-facing beads often separate, but side boundaries cut through bodies,
+edge/sliver evidence is omitted and black/glints fragment. Counts change under
+spacing/contrast sensitivity. Initial gradient-only watershed isolated glints
+and merged surrounding bodies; revised negative-value/gradient compact watershed
+improves maps but is not verified segmentation. Exploratory local sinusoid and
+projected-torus glint fitting failed reliable alignment/indexing; no such fit
+adopted. Development used JPEGs, no renderer truth or POV pattern definitions.
+Scratch scripts/results are local and limitations preserved in the experiment note.
+
+Nineteen relevant tests pass: five new, seven inference and seven propagation.
+Initial contradictory-graph fixture put its conflict across the deliberate seam
+cut; corrected fixture coordinates and reran all nineteen. Compilation passes.
+Two final runs match all 29 observation and seven index artifacts byte for byte;
+reports equal except command paths. All seven JPEG hashes, source/artifact hashes
+and observation-input bindings verify. Whitespace checked. Full prior regression
+and rendering skipped because prior source/POV files did not change.
+
+Final gallery: photo2/output/blind-generated-r059-final/index.html.
+Observation report SHA-256:
+be59c090dbdb013ee4f14a2803622db2626e03fa4c9029f7efcc6b05c01ecba8.
+Index report: photo2/output/blind-generated-r059-final-index/report.json,
+SHA-256 6fd94616bf6d53e22754160ca52e133fe2927afc8d6c16dd96027e174ca357e6.
+Publish ten scoped source/docs files including R058 records. Generated evidence,
+scratch experiments and .venv remain excluded. No user files discarded.
+
+Next bounded task: correct and review the visible-bead inventory in beads1.jpg
+from the JPEG alone, preserving full-image context and uncertain slivers. Stop
+after its reviewed instance/color map and checks; extend to beads2–7 before
+further indexing/repeat algorithms or photographs. No new pattern questions.
+Recommend gpt-6-astra / High, stay here; no additional `/new` needed.
