@@ -28,6 +28,13 @@ and local model-guided indexing. See the [new staged test program](DETECTION_PRO
 for the recovered 303-point centerline, HSV picker, competing segmentation
 methods, first beauty-image comparison and proposed smooth local corrections.
 
+The [local calibrated contour/index test](LOCAL_PATCH.md) implements fixed,
+translation and smooth fitting with both helicities. Two warped patches yield
+34/38 and 38/38 correct region/color/index matches, but the anchor gate rejects
+the unwarped inputs and all-black fitting fails. Camera/rope geometry is supplied;
+these are conditional synthetic results, not recovered photo indices. Next:
+anchors based on observed bead regions, tested under click jitter and a new patch.
+
 ## Run with Python 3.12
 
 From the beads repository:

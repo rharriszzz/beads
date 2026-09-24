@@ -1,5 +1,119 @@
 # Beads session handoff
 
+## R047 — calibrated local fitting works in two cases; anchor gate remains brittle
+
+R046 answered: the maker uses specular reflections for black beads when visible,
+otherwise periodic saturation/value changes. Three/four beads suffice for an
+anchor: preferably two along ±1 plus one/two along ±6/±7; all three directions
+are best. Helicity must be determined or both alternatives kept until one fails.
+No questions pending; do not repeat these or append end-of-round questions.
+Current supplied session/status is R046 below; no newer usage supplied.
+
+Implemented local_patch.py, local_patch_audit.py and seven tests. See
+**photo2/LOCAL_PATCH.md**. This is explicitly a **calibrated** test: legacy camera,
+rope geometry and scale are supplied, not recovered from pixels. Four visually
+recorded clicks per hand were frozen before scoring and reused across paired
+palettes. Eight independent model renders (two hands × four phases) predict
+contours/indices; observed truth is loaded only after predictions are saved.
+Compare fixed, translation and bounded smooth correction on 14 paired trials,
+with no-model segmentation and oracle alignment. S/V gradient edges include
+highlight edges but do not implement periodic or specular-model fitting.
+
+Only two smooth-fit trials retain an anchor/index hypothesis: warped R/Y/black
+has 34/38 correct region/color/relative-index matches and one false region;
+paired gray has 38/38 and no false regions. No-model matches are 26/38 and 31/38.
+Missing R/Y/black source indices: 418, 428, 429, 435. Both use the true positive
+hand/phase within the supplied bank; this is not photo recovery. The other 12
+smooth trials reject every anchor, including all unwarped inputs: clicks span
+all three families but fail the arbitrary eight-pixel interior margin. Small
+warps change this acceptance. Do not mistake our brittle gate for a failure of
+the maker's three/four-bead principle; all-three-family/margin gates are ours.
+
+The unwarped R/Y/black opposite-hand contour score is within the .5-pixel tie
+margin of the correct hand (0.9329 versus 0.4493), but only 6/26 matched regions
+have correct candidate relative indices versus 34/34 for the correct hand.
+Both fail the anchor gate. Keep alternatives, not an image-only helicity claim.
+All-black smooth candidates recover no supported true beads, including with
+oracle-supplied seed locations transferred from RGB. Exact alignment itself has
+contour support for only three black beads. Full model masks are not detections.
+Smooth corrections improve gray holdout distance but not R/Y/black or opposite-
+hand RGB consistently. Three candidate optimizations hit the 60-evaluation cap;
+all are recorded and none retained. This is not a global optimization result.
+
+False-background, one-click slip and excluded-true-phase controls reject in all
+three R/Y/black conditions, including the successful smoothly warped positive.
+The original identity negative tests alone would have been vacuous. Seven tests
+cover warp inversion/label preservation, translation capture with heldout
+contours, empty-black evidence, anchor topology/duplicate clicks, helicity ties
+and circular-hue independence. All 61 tests pass. Compilation, dependency
+consistency and whitespace checks pass. No tracked POV source change or full
+legacy eight-case regression; existing small renderer tests ran.
+
+Verified 11 current sources, 70 output artifacts, 34 template artifacts,
+24 R045 fixture artifacts, 163 R045 detection artifacts, 148 baseline artifacts
+and four bound input report hashes; template generator snapshot also verifies.
+First final pair reproduced all 70 artifacts byte for byte. Final reporting
+review adds numeric conditional indices, corrects the generic edge caption and
+extends seed controls; numerical fit/index summaries remain unchanged.
+Two final post-review runs reproduce all 70 artifacts byte for byte; reports
+agree except command output path and all source/input/artifact hashes pass.
+All 14 earlier final panels inspected in contact sheets; final gray/R/Y/black
+indexed panels and black failure panel inspected full size.
+
+Final evidence: photo2/output/local-patch-r047-verified/report.json; SHA-256
+825ad517d0b4a970c6f1d2462e9815e8ae4c8c543485917caae9780d3139f9ec.
+Reproduce: `.venv/bin/python photo2/local_patch_audit.py --templates
+photo2/output/local-patch-templates-r047-final --output photo2/output/local-patch-new`.
+The note gives missing-input prerequisites. New template generation needs eight
+renders; reproduction reuses verified templates. Development and final template
+sets each rendered eight. No photo work, scene refit or whole-ring growth.
+
+Preflight daisy, entry 314db666, only R046's opening records modified; fetch
+succeeded, ahead/behind 0/0, no stashes/pull/transfer/delegation. Live remote check
+failed on sandbox GitHub DNS then succeeded under approved escalation, still at
+entry. Publish scoped source/docs including R046; generated output/figures and
+.venv remain ignored. Final response records verified branch/commit.
+Initial audit comparison incorrectly warped earlier segmentation outputs;
+corrected before final runs to segment actual perturbed beauty pixels. No model
+fit/threshold/click tuning after scoring. No failed runtime test or audit.
+
+**One next task:** replace the brittle point-interior gate with evidence from
+three/four observed bead regions; retain both hands and test fixed click jitter
+plus a separately frozen patch. Use image-derived interiors/region support, not
+truth-corrected clicks or a margin lowered to pass old scores. Stop after local
+seed-robustness/detection/index evidence and checks, before whole-ring growth
+or photo fitting. Preserve unresolved black cues, competing hands, unknown
+colors/offsets, provisional photo count 2,698 without divisor filtering, repeat
+bound <400. Recommend **gpt-6-astra / High with a fresh /new**.
+
+## R046 opening — answered by R047 above (historical record)
+
+User supplied current session `01a0d0d1-2db2-7c91-9866-b0a1f599712a`,
+gpt-6-astra / high, and requested: "if you have questions, ask them now and
+wait, otherwise you can continue". Full supplied status and separately
+attributed prior-session usage are recorded in REQUEST_LOG.md R046.
+
+Read saved answers, recent requests, DETECTION_PROGRAM.md and progress notes.
+The next task remains local model-guided visible-boundary/index fitting with
+fixed versus smooth corrections, wrong-seed/phase and black-run controls;
+stop before whole-ring growth or photo claims. Existing advice already settles
+edge-led recognition, same-color separability and all three neighbor directions.
+
+Two pending advice questions for this new round:
+
+1. When separating adjacent black beads in photo 2, which visual cue helps most:
+   reflections/highlights on each bead, narrow gaps between beads, or another cue?
+2. To anchor a small patch, would you start with one clearly outlined red/yellow
+   bead, or a distinctive group of several beads? What makes that anchor easy
+   to recognize again as you follow its neighbors?
+
+Wait for answers as requested; no experiment or implementation started.
+Preflight: daisy, clean photo-2-reconstruction at 314db6663178ca3d1c5927711454f749102929e0,
+cached upstream ahead/behind 0/0, no stashes, Python 3.12.14. No fetch/live
+remote check, transfer, delegation or account inspection. Only opening records
+edited locally, pending publication with the follow-up; runtime tests skipped.
+Stay in this conversation with gpt-6-astra / High; no additional /new needed.
+
 ## R045 — boundary detection baseline; local model-guided indexing next
 
 R044 questions answered: the maker identifies neighbors from visible edges,

@@ -1,5 +1,11 @@
 # Visible beads first, indexed beads second — R045
 
+R047 follow-up: [LOCAL_PATCH.md](LOCAL_PATCH.md) implements a first calibrated
+local contour/index comparison with both hands and smooth corrections. It exposes
+a brittle click-margin gate and remaining black failure; image-derived geometry,
+automatic seeds and whole-ring growth remain unimplemented. The R045 program and
+results below remain the original baseline, not a claim all stages are complete.
+
 The maker identifies neighbors from visible edges without locating bead centers,
 and can separate adjacent beads even when every bead has the same color. The
 computer has not yet matched that ability. The objective is now two separately

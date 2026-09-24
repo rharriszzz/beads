@@ -5,7 +5,7 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current direction — R045
+## Current direction — R047
 
 The maker's new request supersedes the pending centroid/body-center diagnostic.
 Work on two explicit tasks: detect the visible bead regions/colors from beauty
@@ -24,7 +24,22 @@ publication; no photo recovery or exact-index claim. Next is a bounded local
 model-guided visible-boundary/index experiment, with seed/phase/width/centerline
 perturbations and comparison of fixed versus smoothly corrected predictions.
 
-The historical plan below retains prior evidence; R045 is the current priority.
+R047 implemented the first **geometry-calibrated local** contour/index experiment;
+see photo2/LOCAL_PATCH.md. Smooth corrections give 34/38 correct region/color/index
+matches (one false region) on one warped R/Y/black patch and 38/38 on paired gray.
+The known legacy camera/rope dimensions are supplied calibration. The click-margin
+gate rejects all unwarped cases and most other trials, and all-black fitting fails.
+An opposite-hand candidate has a near-tied contour score but mostly wrong indices.
+These results do not establish automatic photo geometry, helicity or indexing.
+
+Next bounded task: anchor registration in three/four observed bead regions,
+replace the brittle click-interior gate, and test fixed click jitter plus a new
+frozen patch with both hands. Stop after local seed robustness/region/index
+evidence, before whole-ring growth or photo fitting. Use gpt-6-astra / High with
+a fresh /new. Keep the maker's specular and periodic S/V cues for black beads;
+the current gradient test does not implement periodic or highlight-model fitting.
+
+The historical plan below retains prior evidence; R047 is the current priority.
 
 ## Whole plan
 

@@ -1563,3 +1563,121 @@ alignment and smooth corrections with wrong-phase/seed and black-run controls.
 Freeze patch/perturbations before scoring; stop after local contour/index evidence
 before whole-ring growth or photo claims. Recommend gpt-6-astra / High with fresh
 /new. R044 questions are answered; no new end-of-round questions.
+
+## R046 — Supplied session status; opening questions and wait (2026-09-23)
+
+> if you have questions, ask them now and wait, otherwise you can continue
+
+User supplied previous-session completion: worked 19m 5s, done 8:28 PM;
+session `01a0d0a6-9665-79d2-b6fb-963fa37cab9c`, titled "Review Codex session
+status", Codex v0.155.1, gpt-6-astra high, ~/git/beads. Supplied previous tokens:
+total 153,550; input 120,344 (+2,886,144 cached); output 33,206 (reasoning 6,454).
+These describe the previous session, not current-session usage.
+
+Current supplied session: `01a0d0d1-2db2-7c91-9866-b0a1f599712a`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 34% left, resets 17:37 on 28 Sep; credits
+283; Luna Reserve Weekly 100% left, resets 20:29 on 30 Sep. No current-session
+token totals supplied; no account inspection or model change.
+
+Read AGENTS.md, current handoff/saved answers, latest R044/R045 records,
+DETECTION_PROGRAM.md and progress notes. Combined reads were output-truncated;
+targeted handoff read covered the opening and recent saved construction advice.
+Preflight: daisy, clean photo-2-reconstruction at
+314db6663178ca3d1c5927711454f749102929e0, tracking origin/photo-2-reconstruction,
+cached ahead/behind 0/0, no stashes; Python 3.12.14. No fetch/live remote check,
+pull, transfer or delegation.
+
+Ask two construction/advice questions: the visual cues distinguishing adjacent
+black beads in photo 2, and whether a single outlined colored bead or a small
+distinctive group makes the best local anchor. Exact questions saved at the
+top of the handoff. Do not repeat edge-versus-center, same-color recognition,
+neighbor direction, tilting/sliding, missing-bead or color-count questions.
+
+Outcome: ask and wait as requested. No experiment, render, implementation,
+commit or push; opening records remain local for follow-up publication.
+Runtime tests skipped; check documentation whitespace. Next task remains
+local model-guided boundary/index patch evidence with fixed/smooth correction
+and wrong-seed/phase/black controls, before whole-ring growth or photo claims.
+Stay here with gpt-6-astra / High; no additional /new needed.
+
+## R047 — Three/four-bead anchors, black cues and competing helicities (2026-09-23)
+
+> black beads are hard, I use the specular reflections if I can see them, otherwise I use the periodic variations in saturation and value.  You only need 3 or four beads, hopefully 2 in the plus or minus one direction, then another one or two in the 6 or 7 direction. having all three directions is best.  You can't map to bead_index unless you have also figured out the helicity, unless you are willing to use both until one fails.
+
+R046 questions answered. Use specular reflections and periodic saturation/value
+variation as candidate black-bead cues; a three/four-bead anchor should span ±1
+and ±6/±7, ideally all three directions. Retain both helicities until evidence
+rejects one; do not assign unconditional indices from a single assumed hand.
+No new question gate; continue the authorized local experiment.
+
+Preflight: daisy, photo-2-reconstruction at 314db6663178ca3d1c5927711454f749102929e0;
+only R046 request/handoff records modified, no stashes. Fetch succeeded and
+ahead/behind is 0/0; no pull, transfer, delegation or new supplied usage.
+Read saved instructions, current experiment program and detector/renderer sources.
+
+Scope: a geometry-calibrated local template-registration test on existing legacy
+beauty images, with independent forward-rendered candidate contours for both
+hands/phases. Known legacy camera/rope dimensions are supplied calibration, not
+image-recovered geometry. Compare no-model segmentation, fixed alignment,
+translation and bounded smooth corrections, plus an oracle alignment ceiling.
+Include manually recorded four-bead anchors, wrong seed/phase, a black control,
+and deterministic image warps. Freeze protocol before scoring. Preserve alternate
+helicities, unsupported regions and provisional relative indices. Stop after
+local contour/index evidence and checks, before whole-ring growth or photo work.
+
+R047 outcome: implemented local_patch.py, local_patch_audit.py, seven tests and
+LOCAL_PATCH.md. Eight independent candidate template renders (two hands/four
+phases) support fixed/translation/smooth contour fitting and conditional relative
+indices. Four visually recorded clicks and exact legacy camera/rope/scale are
+explicit supplied calibration. Truth is loaded after prediction output. Four
+paired views/three warps plus two gradient ablations give 14 trials/336 fits.
+
+Two smooth trials retain indices: warped R/Y/black 34/38 correct region/color/
+indices plus one false region; warped gray 38/38 with no false region. No-model
+actual segmentation matches 26/38 and 31/38. Other smooth trials reject anchors,
+including all unwarped cases: correct three-family groups fail our arbitrary
+eight-pixel point-interior margin. Small warps alter acceptance. Opposite-hand
+contour scores can nearly tie while relative indices are mostly wrong. All-black
+smooth fitting recovers no supported true regions. No photo recovery claim.
+
+False-background, duplicate-neighbor click and excluded-true-phase controls
+reject in all three R/Y/black conditions, including the successful smooth-warp
+positive. Both helicities/all phases and every support/unknown/index alternative
+remain in saved predictions. Three smooth candidates hit the 60-evaluation cap;
+recorded and none retained. Initial no-model comparison incorrectly warped prior
+segmentation masks; corrected before final runs to segment actual warped beauty
+pixels. No model-fit/threshold/click tuning after scoring. Later reporting-only
+changes add conditional index labels, fix the generic edge caption and extend
+controls; all numerical fit/index summaries remain unchanged.
+
+Checks: all 61 tests pass, including seven new. Compilation, dependency consistency
+and whitespace pass. Eleven sources/70 artifacts/34 template artifacts, including
+generator snapshot, verified; 24 R045 fixtures/163 R045 detection artifacts/148
+baseline artifacts and four bound input reports verified. Two final runs reproduce
+all 70 artifacts byte for byte; reports differ only in command output path.
+All 14 earlier final panels reviewed in contact sheets; final gray/R/Y/black
+indexed panels and black failure panel inspected full size. No failed runtime
+test/audit. Existing small renderer tests ran; full legacy regression skipped
+for unchanged tracked POV sources. Development/final template sets each rendered
+eight scenes; repeated audits reused final templates. No photo segmentation,
+automatic geometry/seed estimation, material refit, ring growth or repeat search.
+
+Final report: photo2/output/local-patch-r047-verified/report.json, SHA-256
+825ad517d0b4a970c6f1d2462e9815e8ae4c8c543485917caae9780d3139f9ec.
+Sandboxed live remote lookup failed on GitHub DNS; approved escalated retry
+succeeded, confirming the branch still at entry 314db666. No model/account
+inspection or delegation. Updated plan/progress/README/program/handoff. Publish
+ten scoped source/docs files including R046 opening records; then verify live
+remote tip and final status. Generated outputs, figures and .venv stay ignored.
+
+Next bounded task: observed-region three/four-bead anchors replacing the brittle
+point-interior gate; fixed click jitter and a separately frozen patch, both hands
+retained. Stop at local seed robustness/region/index evidence before ring growth
+or photo fit. Recommend gpt-6-astra / High with fresh /new. No pending or new
+end-of-round questions.
+
+Sandboxed staging failed because .git/index.lock is read-only; approved
+escalated git add succeeded for exactly the ten scoped files. Staged whitespace
+and file-scope checks pass.

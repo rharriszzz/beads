@@ -525,3 +525,33 @@ and .venv remain ignored. Next: local model-guided visible-boundary/index patch
 test, fixed versus smooth correction, including wrong-phase and black-run
 controls; stop before whole-ring propagation/photo work. Recommend
 gpt-6-astra / High, fresh /new. No new questions at round end.
+
+## 2026-09-23 — R047 calibrated local contour/index comparison
+
+Saved the maker's black-bead cues (specular reflections, otherwise periodic
+saturation/value variation), three/four-bead anchor advice and explicit need
+to retain both helicities. No pending questions. See LOCAL_PATCH.md.
+
+Implemented eight independently rendered hand/phase templates, fixed/translation/
+smooth alignment, image contour support and conditional seed-relative indices.
+Four supplied image clicks and known legacy camera/rope/scale are explicit
+assistance; observed ID truth enters only after predictions. Four paired source
+views × three warps plus two evidence ablations give 14 local trials.
+
+Two smooth target conditions yield accepted hypotheses: R/Y/black 34/38 correct
+region/color/indices plus one false region; gray 38/38 with none false. Actual
+no-model segmentation matches 26/38 and 31/38. The anchor margin rejects all
+unwarped cases despite correct three-family topology; small warps change that
+gate. Opposite-hand contour near-ties can have mostly incorrect indices. All-
+black smooth candidates fail. No robust automatic indexer or photo claim.
+
+All 61 tests pass; compilation/dependency/whitespace checks pass. Source/input/
+artifact hashes verified. Initial comparison incorrectly warped prior masks
+for the no-model baseline, corrected before final runs. Fits, thresholds and
+clicks remain unchanged after scoring. Three optimizations hit the fixed budget;
+recorded and none retained. Final reproduction/publication recorded in request
+log. Generated outputs/environments ignored; no tracked POV source change.
+
+Next: observed-region anchors with prescribed click jitter and a new frozen
+patch, both helicities retained. Stop at local seed/region/index evidence before
+whole-ring growth/photo fitting. Recommend gpt-6-astra / High, fresh /new.
