@@ -4,10 +4,11 @@ Start with the [overall plan and methods](../METHODS_AND_PLAN.md) for direct
 answers about background removal, saved outer/inner/centerline curves and the
 current limits of individual-bead identification.
 
-**Latest completed step (R067):** the [image-edge comparison](IMAGE_EDGES.md)
-regressed against the provisional width-only candidate, so it is rejected.
-[Questions and supporting illustrations](QUESTIONS_FOR_MAKER.md) remain saved.
-Next: return to beads1.jpg's visible-bead inventory before pattern inference.
+**Latest completed step (R068):** [beads1 reviewed inventory](BEADS1_INVENTORY.md)
+contains 323 supported body observations and 37 unresolved fragments, with
+[questions and committed illustrations](BEADS1_QUESTIONS.md). These are not a
+verified total or recovered pattern. Next review beads2.jpg from its JPEG alone.
+The earlier [photo image-edge candidate](IMAGE_EDGES.md) remains rejected.
 
 **Underlying reconstruction priority (R059): generated JPEGs first.** The
 [blind beads1.jpg–beads7.jpg test](BLIND_GENERATED.md) produces reviewable bead

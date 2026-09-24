@@ -784,3 +784,14 @@ Initial linear interpolation hit iteration limits; C1 interpolation converges.
 Five new+nine width+four transect tests pass (18); compilation, hashes, geometry
 sanity and repeatability checks pass. Questions gain F/G/H supporting images.
 Next: resume beads1.jpg visible inventory before further pattern inference.
+
+## 2026-09-24 — R068 beads1 reviewed observation map
+
+Added323 supported bodies and37 unresolved fragment records, preserving colors
+and unknown indices. Removed21 unsupported/duplicate markers; added29 visible
+fragments including11 coverage-audit slivers. Color-constrained provisional
+regions retain41 unassigned pixels; coverage is not completeness. See
+BEADS1_INVENTORY.md and committed review/r068. Two illustrated questions saved
+in BEADS1_QUESTIONS.md; no maker replies yet. Ten tests, compilation, hashes,
+repeatability, seed/ID/color/connectivity checks pass. Next extend review to
+beads2.jpg, adapt palette support, stop at map/checks before any indexing.

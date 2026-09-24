@@ -1,5 +1,60 @@
 # Beads session handoff
 
+## R068 — beads1 reviewed observations; next extend to beads2
+
+User: "continue". Completed the next bounded generated-image inventory/map step.
+Preflight daisy, clean photo-2-reconstruction at d9f4096, no stashes, origin
+upstream, Python3.12.14. Approved fetch succeeded; ahead/behind0/0. Read handoff,
+requests, R059 detector/notes and saved questions. No maker answers, new supplied
+status/usage, transfer or delegation. Only beads1.jpg supplied new image evidence;
+no POV-Ray patterns/source, truth/layouts, photo geometry or hidden-bead inference.
+
+New photo2/beads1_inventory.py + beads1-review-r068.json retain323 visually
+supported body observations (136red/134green/53blue) and37 unresolved fragments
+(14red/15green/8blue). They are NOT360 independent beads or a verified complete
+inventory. From352 baseline markers, removed21:18 neutral boundary/background/
+shadow markers,2 unsupported edge glints, and duplicate211 merged into217.
+Retained8 old edge observations as fragments; added18 reviewed caps/crescents,
+then11 colored slivers found in the unassigned-pixel audit (IDs371–381). All29
+additions are identity-unresolved fragments, not automatic extra beads.
+
+Reviewed full JPEG and all8 raw/ID/grid crops; final12 PNGs inspected. Same-color
+boundaries remain provisional. New mask uses dominant RGB channel margin>25,
+maximum>=35, fills enclosed highlight holes<=64px, leaves big opening intact.
+Color-separated compact watershed cannot cross palette classes; seeds snap<=6px
+(actual maximum2). Unassigned colored patches retained, not forced into beads.
+Initial258 pixels had11 components>=6px; visual review promoted those to fragment
+records. Final41 unassigned pixels all in components<6px. All99,809 color-support
+pixels fall in reviewed crops; old broad mask103,467. Coverage is not completeness.
+Each of360 observation regions is nonempty, connected and color-pure; all chain
+indices unknown, physical centers not claimed. See photo2/BEADS1_INVENTORY.md.
+
+Committed review at photo2/review/r068/review.html contains interactive full-image
+context, eight magnified crops, region map, sliver sheet, duplicate comparison,
+inventory/report JSON. All14 artifacts +2 bulk NPY maps reproduce byte for byte;
+reports equal except commands;5 source hashes verify. IDs unique, removed IDs
+absent, seeds preserved, regions connected/palette-pure. Five new support/coverage
+controls +five existing detector/sequence controls pass (10); compilation passes.
+No analysis/test failures, render, new index/repeat search, other-image review or
+full legacy regression. Bulk/scratch/duplicate outputs remain ignored.
+Review report SHA256b1a13a22b09f3d83e587d9a5400ec11c2ef1512f25b33a4378e622c358ece45a.
+Annotations SHA256780a41a1e8be2095f4436ba1af5b29eb7378d1e67cd5df6bc479d1ca55c27032.
+Publish scoped source/annotations/tests/docs and curated supporting images;
+final response records verified remote/local tip.
+
+Pending questions in photo2/BEADS1_QUESTIONS.md: can fragment371/381 be attributed
+to separate mostly hidden beads or already represented bodies; is211/217 one
+red body as reviewed or actually two? Both illustrated. No extra pattern knowledge
+requested and no approval gate. Prior photo questions remain in QUESTIONS_FOR_MAKER.md.
+No answers to either set yet; save replies in handoff when supplied.
+
+Next bounded task: extend review to beads2.jpg from its JPEG alone. Read R059
+baseline and adapt color-support/instance review to its own palette (do not apply
+beads1's RGB-only mask blindly). Preserve beads1's37 unresolved records and any
+maker answers. Stop after beads2's reviewable body/color/fragment map and checks;
+then beads3–7 before indexing/repeat inference. Full visible inventories and
+seven-pattern recovery remain unfinished. gpt-6-astra / High; stay here, no `/new`.
+
 ## R067 — direct image cue rejected; return to generated visible inventory
 
 User: "keep going". Completed the bounded original/width-only/image-guided

@@ -2509,3 +2509,56 @@ inference, then extend to remaining generated images. gpt-6-astra/High, stay her
 no `/new` needed. Width-only photo candidate remains provisional.
 Publication checks: updated Markdown/HTML links, whitespace and final source
 hashes pass. Approved remote lookup confirms origin still at entry eaa40e9.
+
+## R068 — Continue: beads1.jpg visible-bead inventory (2026-09-24)
+
+> continue
+
+Resume the next bounded handoff step: review/correct visible instances and
+colors in beads1.jpg from the JPEG, retain uncertain edge/sliver observations,
+and stop at the inventory/map/checks before indexing or repeat inference.
+Read handoff, latest log, R059 detector/notes and saved questions. No maker
+answers received; photo questions remain pending, not a gate. No further
+construction-pattern questions needed. No POV-Ray pattern/source/truth lookup.
+Preflight: daisy, clean photo-2-reconstruction at d9f4096, origin upstream,
+no stashes, Python3.12.14. Approved fetch succeeded, ahead/behind0/0. No machine
+transfer, delegation or new supplied status/usage. Commit scoped code, review
+annotations and supporting question images; routine bulk output stays ignored.
+
+### R068 outcome and checks
+
+Completed a reviewable beads1 map from its JPEG:323 supported body observations
+(136red,134green,53blue),37 identity-unresolved fragments(14red,15green,8blue).
+Not a total independent bead count or verified complete inventory. Removed21
+baseline markers:18 neutral boundary/background/shadow,2 unsupported edge glints,
+1 duplicate(211 merged into217). Eight baseline fragments retained. Added18
+visually noted fragments plus11 slivers from the coverage audit; all29 additions
+remain fragments, with nearby-body references where available, not assignments.
+
+Full image and eight raw/numbered/grid crops reviewed; twelve final PNGs inspected.
+New RGB palette-constrained support/compact watershed excludes neutral shadow
+and prevents cross-color spreading. Same-color boundaries/physical centers remain
+unverified. Initial258 unassigned colored pixels contained11 components>=6px;
+those visually reviewed slivers became IDs371–381. Final41 pixels remain in
+components<6px. All99,809 color-support pixels fall in reviewed crops; old mask
+103,467. Coverage is not completeness. All360 recorded regions nonempty, connected,
+color-pure; all IDs unique, removed IDs absent, seeds retained, chain indices null.
+
+Five new support/coverage tests and five existing detector/sequence controls pass
+(10 total), compilation passes. Two runs reproduce14 curated artifacts and2 bulk
+maps byte for byte; reports equal except command paths;5 source hashes verify.
+No analysis/test failures. No renderer, source-pattern lookup, new indexing/repeat
+search, other-image inventory or full legacy regression. Existing photo pipeline
+and R059 detector unchanged. Full counts/edits/limits in BEADS1_INVENTORY.md.
+Report SHA256b1a13a22b09f3d83e587d9a5400ec11c2ef1512f25b33a4378e622c358ece45a.
+Annotation SHA256780a41a1e8be2095f4436ba1af5b29eb7378d1e67cd5df6bc479d1ca55c27032.
+
+Commit code/tests/manual edits and review/r068 (twelve PNGs,interactive HTML,
+inventory/report JSON). Bulk label/support maps,scratch/duplicate runs stay ignored.
+Two illustrated questions saved in BEADS1_QUESTIONS.md: fragment371/381 ownership
+and whether211/217 is a duplicate. No replies; previous photo questions preserved.
+Next: beads2 JPEG-only body/color/fragment review with palette-specific support,
+stop at map/checks; then remaining generated images before indexing/inference.
+Retain beads1 uncertainties. gpt-6-astra/High, stay here, no `/new` needed.
+Publication checks: Markdown/HTML links, whitespace and final source hashes pass.
+Approved remote lookup confirms origin still at entry d9f4096.

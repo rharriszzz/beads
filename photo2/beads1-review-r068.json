@@ -1,0 +1,618 @@
+{
+  "image": "beads1.jpg",
+  "image_sha256": "3d4f784f0906276aa312cdb6d80d414c6611fb785c8528af08de54ef36bfbc18",
+  "baseline_source_sha256": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+  "reviewer": "assistant visual JPEG review; no renderer truth or maker confirmation",
+  "review_protocol": "Reviewed original full image and raw/ID/grid views in all eight overlapping boxes. All surviving unflagged baseline markers except explicit edits are visually supported bodies, not exact masks or physical bead centers. Partial fragments do not establish independent bead identity.",
+  "boxes": {
+    "T1": [
+      80,
+      45,
+      300,
+      170
+    ],
+    "T2": [
+      280,
+      45,
+      510,
+      165
+    ],
+    "T3": [
+      495,
+      60,
+      720,
+      210
+    ],
+    "L": [
+      75,
+      150,
+      235,
+      360
+    ],
+    "R": [
+      595,
+      185,
+      735,
+      385
+    ],
+    "BL": [
+      115,
+      320,
+      350,
+      490
+    ],
+    "BM": [
+      330,
+      375,
+      570,
+      500
+    ],
+    "BR": [
+      540,
+      315,
+      715,
+      475
+    ]
+  },
+  "removed": [
+    {
+      "id": 44,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 68,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 93,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 109,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 138,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 144,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 150,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 155,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 162,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 173,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 181,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 188,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 198,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 213,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 314,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 330,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 340,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 352,
+      "reason": "marker on neutral silhouette/background/shadow; retain nearby colored evidence in fragment/coverage audit"
+    },
+    {
+      "id": 43,
+      "reason": "edge glint next to red body 55; no separately supported body"
+    },
+    {
+      "id": 95,
+      "reason": "edge glint next to red body 105; no separately supported body"
+    },
+    {
+      "id": 211,
+      "reason": "second brightness marker on the same red body as 217",
+      "merged_into": 217
+    }
+  ],
+  "fragment_ids": [
+    1,
+    4,
+    92,
+    112,
+    120,
+    226,
+    234,
+    289
+  ],
+  "added_fragments": [
+    {
+      "id": 353,
+      "xy": [
+        229,
+        88
+      ],
+      "color": "green",
+      "note": "top rear cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 354,
+      "xy": [
+        262,
+        77
+      ],
+      "color": "red",
+      "note": "top rear cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 355,
+      "xy": [
+        291,
+        69
+      ],
+      "color": "green",
+      "note": "top rear cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 356,
+      "xy": [
+        322,
+        65
+      ],
+      "color": "green",
+      "note": "top rear cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 357,
+      "xy": [
+        356,
+        63
+      ],
+      "color": "blue",
+      "note": "top rear cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 358,
+      "xy": [
+        541,
+        95
+      ],
+      "color": "blue",
+      "note": "upper-right rear cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 359,
+      "xy": [
+        665,
+        180
+      ],
+      "color": "green",
+      "note": "outer right cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 360,
+      "xy": [
+        679,
+        203
+      ],
+      "color": "blue",
+      "note": "outer right cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 361,
+      "xy": [
+        110,
+        184
+      ],
+      "color": "green",
+      "note": "outer left crescent",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 362,
+      "xy": [
+        95,
+        248
+      ],
+      "color": "green",
+      "note": "outer left crescent",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 363,
+      "xy": [
+        161,
+        245
+      ],
+      "color": "red",
+      "note": "inner left red strip",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 364,
+      "xy": [
+        164,
+        267
+      ],
+      "color": "blue",
+      "note": "inner left blue strip",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 365,
+      "xy": [
+        710,
+        276
+      ],
+      "color": "green",
+      "note": "outer right green strip",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 366,
+      "xy": [
+        710,
+        320
+      ],
+      "color": "red",
+      "note": "outer right red strip",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 367,
+      "xy": [
+        261,
+        374
+      ],
+      "color": "green",
+      "note": "lower-left inner cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 368,
+      "xy": [
+        390,
+        412
+      ],
+      "color": "red",
+      "note": "bottom inner red cap",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 369,
+      "xy": [
+        486,
+        410
+      ],
+      "color": "green",
+      "note": "bottom inner green sliver",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 370,
+      "xy": [
+        602,
+        443
+      ],
+      "color": "red",
+      "note": "bottom-right red sliver; may belong to body 306",
+      "status": "fragment_identity_unresolved"
+    },
+    {
+      "id": 371,
+      "xy": [
+        419,
+        68
+      ],
+      "color": "red",
+      "note": "Coverage audit U1: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U1",
+        "pixels": 17,
+        "bbox_xyxy": [
+          418,
+          65,
+          423,
+          73
+        ],
+        "marker_xy": [
+          419.0,
+          67.58823529411765
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 372,
+      "xy": [
+        239,
+        84
+      ],
+      "color": "red",
+      "note": "Coverage audit U2: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U2",
+        "pixels": 8,
+        "bbox_xyxy": [
+          237,
+          83,
+          241,
+          87
+        ],
+        "marker_xy": [
+          238.75,
+          84.375
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 373,
+      "xy": [
+        187,
+        185
+      ],
+      "color": "red",
+      "note": "Coverage audit U3: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U3",
+        "pixels": 31,
+        "bbox_xyxy": [
+          184,
+          182,
+          193,
+          190
+        ],
+        "marker_xy": [
+          186.96774193548387,
+          184.96774193548387
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 374,
+      "xy": [
+        176,
+        200
+      ],
+      "color": "blue",
+      "note": "Coverage audit U4: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U4",
+        "pixels": 13,
+        "bbox_xyxy": [
+          174,
+          199,
+          180,
+          202
+        ],
+        "marker_xy": [
+          176.15384615384616,
+          199.84615384615384
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 375,
+      "xy": [
+        700,
+        358
+      ],
+      "color": "green",
+      "note": "Coverage audit U5: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U5",
+        "pixels": 10,
+        "bbox_xyxy": [
+          698,
+          356,
+          702,
+          362
+        ],
+        "marker_xy": [
+          699.5,
+          358.2
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 376,
+      "xy": [
+        235,
+        359
+      ],
+      "color": "red",
+      "note": "Coverage audit U6: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U6",
+        "pixels": 9,
+        "bbox_xyxy": [
+          233,
+          357,
+          238,
+          361
+        ],
+        "marker_xy": [
+          235.0,
+          358.55555555555554
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 377,
+      "xy": [
+        685,
+        382
+      ],
+      "color": "blue",
+      "note": "Coverage audit U7: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U7",
+        "pixels": 16,
+        "bbox_xyxy": [
+          683,
+          380,
+          689,
+          385
+        ],
+        "marker_xy": [
+          685.3125,
+          381.5625
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 378,
+      "xy": [
+        676,
+        390
+      ],
+      "color": "blue",
+      "note": "Coverage audit U8: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U8",
+        "pixels": 14,
+        "bbox_xyxy": [
+          675,
+          388,
+          679,
+          394
+        ],
+        "marker_xy": [
+          676.4285714285714,
+          389.64285714285717
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 379,
+      "xy": [
+        385,
+        442
+      ],
+      "color": "red",
+      "note": "Coverage audit U9: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U9",
+        "pixels": 17,
+        "bbox_xyxy": [
+          384,
+          438,
+          387,
+          447
+        ],
+        "marker_xy": [
+          385.0,
+          442.0
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 380,
+      "xy": [
+        367,
+        449
+      ],
+      "color": "red",
+      "note": "Coverage audit U10: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U10",
+        "pixels": 14,
+        "bbox_xyxy": [
+          366,
+          445,
+          369,
+          453
+        ],
+        "marker_xy": [
+          366.7142857142857,
+          448.7857142857143
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    },
+    {
+      "id": 381,
+      "xy": [
+        506,
+        477
+      ],
+      "color": "blue",
+      "note": "Coverage audit U11: visible colored sliver; independent bead identity unresolved",
+      "status": "fragment_identity_unresolved",
+      "coverage_region": {
+        "id": "U11",
+        "pixels": 68,
+        "bbox_xyxy": [
+          499,
+          474,
+          515,
+          481
+        ],
+        "marker_xy": [
+          505.79411764705884,
+          477.0
+        ],
+        "status": "unassigned_colored_region_not_a_bead_count"
+      }
+    }
+  ],
+  "limitations": [
+    "A reviewed body marker is not an exact bead center or verified segmentation.",
+    "Same-colored silhouette fragments may belong to an already represented bead; fragment IDs are not extra bead counts.",
+    "Coverage of colored pixels cannot prove that every visible bead was found.",
+    "No bead index, total chain length or pattern inferred."
+  ],
+  "coverage_review": "Inspected all 11 initially unassigned regions >=6 pixels in raw sixfold crops; retained them as fragment observations 371..381. Smaller residual pixels remain recorded, not silently assigned."
+}

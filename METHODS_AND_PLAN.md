@@ -12,6 +12,8 @@ consulting the pattern definitions in the POV-Ray file.
 
 The main problem is currently **identifying every visible bead reliably**.
 We have approximate bracelet/background separation and many bead candidates.
+R068 adds a [reviewed beads1 map](photo2/BEADS1_INVENTORY.md):323 supported body
+observations and 37 unresolved fragments, with provisional color-constrained masks.
 We do not yet have a verified complete bead inventory or a recovered full
 pattern for any of the seven generated images.
 
@@ -123,6 +125,13 @@ a bead inventory or a recovered pattern.
 
 ## Individual beads: the method used and its limitations
 
+R068 now supplements the baseline below with an assistant-reviewed beads1 map.
+Its RGB-specific color support removes neutral shadow from candidate regions,
+preserves small highlights, and constrains watershed regions to one color.
+Unresolved fragments are separate records rather than extra counted beads; see
+[the inventory method](photo2/BEADS1_INVENTORY.md). Other images retain the
+original candidate maps until reviewed.
+
 Inside each generated image's foreground mask, the current detector does this:
 
 1. Smooth the brightness channel and find local brightness peaks. Peaks must
@@ -209,6 +218,8 @@ R066 checked twelve photo-2 transects using frozen assistant visual intervals;
 18/24 original edges. These are subjective checks, not ground-truth accuracy.
 R067 completed the direct image-edge comparison: its local paper-transition
 method regressed, so it is rejected and the width-only proposal remains provisional.
-The next bounded work item resumes the reviewed visible-bead inventory for
-**beads1.jpg**, keeping unresolved regions explicit and stopping after the map
-and checks, before repeat inference. No additional construction-pattern information is needed.
+R068 completed beads1's first reviewed observation map, retaining 37 unresolved
+fragments rather than inventing their bead identities. The next bounded work item
+is the same image-only review for **beads2.jpg**, stopping after its body/color/
+fragment map and checks. Review beads3–7 afterward before repeat inference.
+No additional construction-pattern information is needed.

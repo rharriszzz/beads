@@ -120,7 +120,15 @@ JPEG hashes, source hashes, observation-input bindings and artifact hashes verif
 No full prior rendering suite: existing sources and POV-Ray scenes are unchanged.
 No new rendering, photo processing, hidden-bead completion or pattern-source check.
 
-## Next task
+## R068 follow-up: beads1 reviewed observations
+
+The [beads1 inventory](BEADS1_INVENTORY.md) now contains 323 visually supported
+body observations and 37 unresolved fragments after removal/addition review and
+color-constrained segmentation. It is not a verified complete bead count or
+pattern. The historical table above remains the original R059 baseline. Next
+extend the inventory review to beads2.jpg, retaining beads1 uncertainties.
+
+## Original next task (reviewable first-image map completed in R068)
 
 Correct and review the visible-bead inventory on **beads1.jpg** from the JPEG
 alone. Preserve full-image context and explicitly mark edge/sliver uncertainty,

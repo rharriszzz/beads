@@ -11,22 +11,20 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R067 complete; return to generated visible-bead inventory
+## Current step — R068 beads1 reviewed map complete; next beads2
 
-The [direct image-edge comparison](photo2/IMAGE_EDGES.md) is complete. Its local
-paper-transition cue regresses against the width-only proposal: 18/24 reviewed
-edges within2px of the frozen assistant intervals, versus23/24 for width-only.
-All four final optimizations converge and18 focused tests pass; this is an
-algorithmic failure on the review, not an accepted improvement. Retain the
-provisional width-only candidate; original geometry/defaults stay unchanged.
-No new perspective or true-edge accuracy claim. Questions and useful supporting
-images remain committed in [the questions file](photo2/QUESTIONS_FOR_MAKER.md).
+The [beads1 inventory](photo2/BEADS1_INVENTORY.md) records 323 supported bodies and
+37 unresolved fragments. Removed 21 unsupported/duplicate markers and added 29
+visible fragments, with a color-constrained provisional region map. All colored
+support lies in reviewed crops, but that does not verify a complete bead count.
+Keep fragment identities, exact same-color boundaries and all indices unresolved.
+[Illustrated questions](photo2/BEADS1_QUESTIONS.md) are committed; no replies yet.
 
-Next bounded task: review/correct beads1.jpg's visible-bead inventory from the
-JPEG alone, retaining unknown/sliver observations. Stop after its instance/color
-map and checks, before repeat inference; extend to beads2–7 afterward. No POV-Ray
-pattern lookup. Use gpt-6-astra / High; stay here, no `/new`. Maker replies may
-clarify the saved photo review but are not a gate to the generated-image work.
+Next bounded task: review/correct beads2.jpg's visible body/color/fragment map
+from the JPEG alone, adapting color support to its palette. Stop at its map and
+checks, preserving beads1's unresolved records and any maker answers. Then review
+beads3–7 before another index/repeat attempt. No POV-Ray pattern lookup or photo
+fitting. gpt-6-astra / High; stay here, no `/new` needed.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 
@@ -40,7 +38,7 @@ maps for all seven JPEGs, but **zero verified complete inventories and zero
 recovered full patterns**. All four indexing variants per image have conflicts.
 Do not treat the 352/392/435/410/403/354/417 candidates as correct bead counts.
 
-Now resume: correct and review the visible-bead inventory on beads1.jpg
+R068 completed the first reviewable beads1 map; now review the inventory on beads2.jpg
 from the JPEG alone, retaining full-image context and all uncertain slivers.
 Stop after its reviewed instance/color map and checks; extend to the other six
 images before returning to pattern inference or photographs. Use gpt-6-astra /

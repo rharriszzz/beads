@@ -1,5 +1,9 @@
 # Questions for reviewing the shadow correction
 
+Current generated-image questions are in [BEADS1_QUESTIONS.md](BEADS1_QUESTIONS.md)
+(R068), with committed sliver and duplicate-marker illustrations. The photo
+questions below remain pending; no answers have been received.
+
 2026-09-24 — saved here as requested in R064–R065. This file and its
 supporting illustrations are committed; future questions will follow this format. These consolidate the two opening
 image-advice questions and the completed comparison. No further pattern or
