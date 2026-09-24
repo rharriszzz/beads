@@ -2275,3 +2275,37 @@ Publish six scoped documentation files; generated evidence/.venv and all sibling
 files excluded. Next task stays beads1.jpg visible-inventory correction, stopping
 after its reviewed instance/color map and checks, then extend to images 2–7.
 Recommend gpt-6-astra / High, stay here; no `/new` needed or pending advice.
+
+## R061 — Image with saved centerline overlay (2026-09-24)
+
+> can you please make an image that shows the image, with the centerline overlaid on top please?
+
+Used photo 2, explicitly stated to the user, because its saved centerline is
+available and belongs to that image. Preflight daisy, clean photo-2-reconstruction
+at a707f699f4ff5233e7e723c48128751ca622677b, upstream origin, no stashes.
+Read current handoff/latest requests and existing overlay code. No pattern
+questions, new supplied usage, transfer or delegation.
+
+Added photo2/show_centerline.py and a link/command in METHODS_AND_PLAN.md. Plot
+the 303 saved points as a closed cyan polyline (6px) with black halo (10px) over
+the matching original photograph. No curve refit, detections or pattern inference.
+Full 2540×3182 PNG and smaller preview under photo2/output/centerline-view-r061/;
+report records command, source/input hashes, style parameters and output hashes.
+Source image hash/dimensions and coordinate closure/finite/in-bounds checks pass.
+Original and preview visually inspected. Two runs produce byte-identical PNGs,
+reports equal except command paths; all hashes verify. Pixels outside the plotted
+stroke are unchanged from decoded photograph. Compilation/whitespace pass; no new
+unit tests or old runtime/render regression for this low-impact display helper.
+
+Publish six scoped helper/docs files; generated PNGs/reports and .venv stay
+ignored. Next task unchanged: review/correct beads1.jpg's visible instance/color
+map and stop after checks, then extend to the other generated images. This photo
+display does not change that priority. gpt-6-astra / High, stay here; no `/new`
+needed or pending advice. Overall pattern recovery remains unfinished.
+
+Verification detail: the first outside-stroke check failed because its footprint
+used a one-bit mask and only the halo drawing. Rebuilt the footprint using the
+same RGB mode and both stroke operations; the unchanged-outside-footprint check
+then passed. Overlay images were unchanged. Remote lookup initially failed on
+sandbox DNS; approved escalation confirmed origin still at entry a707f69.
+Full PNG SHA-256: 468cd1bb894cf5a2a16c359768b5d4018e7c0683a4692357666bb7f71682ff6e.

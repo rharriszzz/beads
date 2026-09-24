@@ -76,6 +76,12 @@ a smoothed periodic cubic spline to the copied centerline and evaluates it at
 uniform distances along the curve. That supports image sampling and the
 provisional photo-2 forward model.
 
+[View photo 2 with its saved centerline in cyan](photo2/output/centerline-view-r061/photo2-centerline.png).
+This overlay joins the saved sample points without refitting them. Recreate it
+with `.venv/bin/python photo2/show_centerline.py --output photo2/output/centerline-view-r061`.
+The script also saves a smaller preview and source/artifact hashes; images stay
+local and out of Git.
+
 I verified on 2026-09-24 that:
 
 - The source spline file matches the hash recorded in the copied centerline.

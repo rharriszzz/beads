@@ -3,6 +3,8 @@
 For a plain-language account of the current capability, available splines,
 background separation, bead detector and staged plan, read
 [METHODS_AND_PLAN.md](METHODS_AND_PLAN.md) (R060, 2026-09-24).
+R061 adds a reproducible saved-centerline overlay of photo 2 for inspection;
+it does not change the generated-images-first analysis priority.
 
 The goal is to extend `beads.pov` to reproduce `beads-photo-2.jpg` using Python
 and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity

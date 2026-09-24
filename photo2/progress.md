@@ -716,3 +716,12 @@ methods; preserved historical predicate uncertainty and unmeasured boundary accu
 No new experiment or algorithm: documentation links/whitespace checked, runtime
 and renderer tests skipped. Generated-image visible-bead correction remains first;
 next bounded step is beads1.jpg's reviewed instance/color map before repeat inference.
+
+## 2026-09-24 — R061 requested centerline visualization
+
+Created a reproducible photo-2 overlay with the saved 303-point centerline in cyan,
+without refitting. Full-resolution and preview PNGs plus source/artifact hashes
+are under output/centerline-view-r061/. Run show_centerline.py to reproduce.
+Visually inspected original/preview; input dimensions/hash and coordinate checks,
+compilation, byte reproducibility and unchanged pixels outside the stroke pass.
+No detection, rendering or pattern work. Generated-image priority remains unchanged.

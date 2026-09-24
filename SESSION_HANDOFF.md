@@ -1,5 +1,32 @@
 # Beads session handoff
 
+## R061 — requested saved-centerline overlay
+
+User requests the image with the centerline overlaid. Used photo 2 because it
+is the photograph to which the available saved coordinates belong, as stated
+to the user. Added photo2/show_centerline.py, which verifies the photograph
+hash/dimensions and finite, closed, in-bounds saved coordinates, then plots the
+303-point polyline in cyan with a narrow black halo. No refit or new inference.
+
+Full image: photo2/output/centerline-view-r061/photo2-centerline.png (2540×3182).
+Preview: photo2-centerline-preview.png in the same directory. Command:
+`.venv/bin/python photo2/show_centerline.py --output photo2/output/centerline-view-r061`.
+Report binds source/photo/coordinate hashes and both PNGs. Visually inspected
+the original and preview. Two runs reproduce both PNGs byte for byte and reports
+except command paths; hashes verify, pixels outside the plotted stroke unchanged.
+Compilation/whitespace pass. No new tests or runtime regression for this display
+helper; no detection, rendering or geometry change. Linked from METHODS_AND_PLAN.md.
+
+Preflight: daisy, clean photo-2-reconstruction at a707f69, upstream origin,
+no stashes, no transfer/delegation/new usage. Publish scoped helper/docs, keeping
+generated images and environment ignored. Final response records delivery.
+No pending questions. The full recovery task remains unfinished.
+
+Next task stays beads1.jpg's reviewed visible instance/color map and checks,
+then the remaining generated images before pattern inference or photo fitting.
+Use gpt-6-astra / High; stay here, no `/new` needed. This requested photo display
+does not supersede the generated-images-first reconstruction priority.
+
 ## R060 — overall plan/methods document and verified spline inventory
 
 User requests a document explaining the overall plan and methods, and asks
