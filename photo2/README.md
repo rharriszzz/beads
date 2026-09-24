@@ -32,8 +32,13 @@ The [local calibrated contour/index test](LOCAL_PATCH.md) implements fixed,
 translation and smooth fitting with both helicities. Two warped patches yield
 34/38 and 38/38 correct region/color/index matches, but the anchor gate rejects
 the unwarped inputs and all-black fitting fails. Camera/rope geometry is supplied;
-these are conditional synthetic results, not recovered photo indices. Next:
-anchors based on observed bead regions, tested under click jitter and a new patch.
+these are conditional synthetic results, not recovered photo indices.
+The [observed-region anchor test](REGION_ANCHORS.md) now removes the margin failure
+on original R/Y/black identity/translation (34/37 and 32/34 correct indices for
+all 17 jitter variants). It also admits wrong-hand alternatives in warped cases
+and fails on the second R/Y/black patch. New gray outputs can be correct despite
+a misidentified anchor. Next: highlight-tolerant region extraction on the two
+frozen patches, retaining both hands and all failed-region/index evidence.
 
 ## Run with Python 3.12
 

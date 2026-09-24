@@ -1681,3 +1681,189 @@ end-of-round questions.
 Sandboxed staging failed because .git/index.lock is read-only; approved
 escalated git add succeeded for exactly the ten scoped files. Staged whitespace
 and file-scope checks pass.
+
+## R048 — Supplied session status and opening questions (2026-09-23)
+
+> questions?
+
+User supplied previous-session completion: worked 19m 27s, done 8:55 PM;
+session `01a0d0d1-2db2-7c91-9866-b0a1f599712a`, titled "Review Codex task
+status", Codex v0.155.1, gpt-6-astra high, ~/git/beads. Previous tokens:
+total 146,025; input 113,198 (+2,970,240 cached); output 32,827 (reasoning 8,528).
+These belong to the previous session, not the current session.
+
+Current supplied session: `01a0d0ea-3b8b-70f2-8172-4753ac2babea`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 32% left, resets 17:37 on 28 Sep; credits
+283; Luna Reserve Weekly 100% left, resets 20:56 on 30 Sep. No current-session
+token totals supplied; no account inspection or model change.
+
+Read AGENTS.md, current handoff/saved answers, latest R046/R047 log entries,
+LOCAL_PATCH.md and recent progress. Initial combined output was truncated;
+targeted reads covered current results, next task and saved advice. Preflight:
+daisy, clean photo-2-reconstruction at bac83f43ea3bcbfe7f9dc76e2019c3fffabc376c,
+tracking origin/photo-2-reconstruction with cached ahead/behind 0/0, no stashes;
+Python 3.12.14. No fetch/live remote verification, pull, transfer or delegation.
+
+Ask two advice questions, saved verbatim in the handoff: one interior click
+versus a short surface stroke for marking each anchor bead; whether a visible
+hole rim helps recognize bead extent versus using the outer outline. Do not
+repeat answered group-size, direction, helicity or black-cue questions.
+
+Outcome: opening questions and wait. No experiment, render, implementation,
+commit or push; request/handoff records stay local for follow-up publication.
+Runtime tests skipped; documentation whitespace checked. Next task remains
+observed-region anchors, prescribed jitter and a new frozen patch, retaining
+both hands; stop at local seed/region/index evidence before ring growth or
+photo fitting. Stay here with gpt-6-astra / High; no additional /new needed.
+
+## R049 — Assistant marking, invisible holes and replacement questions (2026-09-23)
+
+> 1. are you asking me to click on the beads?  Why can't you do it?  A bead is a torus, its hole is never visible.  Please ask more questions right now.
+
+Clarified that the assistant can choose/mark the starting beads itself; no user
+annotation is required. Withdraw the marking-preference question. Save maker's
+correction: a bead is a torus and its hole is never visible; the earlier question
+incorrectly assumed visible hole rims. Do not use that premise as photo evidence
+or infer an instruction to alter existing scene geometry.
+
+Read current handoff/latest log and targeted saved construction answers/source
+geometry. Preflight: daisy, photo-2-reconstruction at bac83f4, tracking origin;
+only R048 REQUEST_LOG.md and SESSION_HANDOFF.md records modified, no stashes.
+No fetch/live remote check, synchronization, transfer, delegation or new usage.
+
+User explicitly requests more questions now. Ask whether the three colors share
+size/shape/gloss or differ visibly, and whether crochet thread is visible in
+photo 2 and its color if so. Exact questions saved at the handoff's top. The
+earlier general thread-as-direction-cue question did not establish thread
+visibility/color; do not re-ask the settled neighbor-direction guidance.
+
+Outcome: save clarification, ask replacement questions and wait. No experiment,
+render, implementation, commit or push. Runtime tests skipped; documentation
+whitespace checked. These records remain local for follow-up publication.
+Next bounded task/stopping point unchanged: observed-region anchor robustness
+before whole-ring growth/photo fitting. Stay here with gpt-6-astra / High;
+no additional /new needed.
+
+## R050 — Bead-hole axes follow necklace length (2026-09-23)
+
+> remember that the bead holes are aligned with the long axis of the necklace.
+
+Saved construction reminder: hole axes align with the local lengthwise/tangent
+direction of the necklace rope. This is the interpretation of "long axis" for
+the curved necklace, not a new measured photo orientation. Retain R049's
+statement that holes are never visible; a known axis does not imply a visible
+hole. R049's two replacement questions remain pending.
+
+Same daisy checkout/branch and opening-record-only edits as the immediately
+preceding preflight; no intervening scene/code changes, new status or usage.
+Only request/handoff records updated; documentation whitespace checked, runtime
+tests skipped. No experiment, commit or push; publication remains with the
+follow-up work. Stay in this conversation, gpt-6-astra / High; no /new needed.
+
+## R051 — Shared bead geometry, small gloss differences, invisible white thread (2026-09-23)
+
+> Alike in size and shape, and there are small differences in gloss. The thread is white and it is never visible.
+
+R049 questions answered: red/yellow/black beads share size and shape; small
+gloss differences exist, with no numerical values or ordering by color supplied.
+Thread is white and never visible. Save alongside invisible holes and local
+lengthwise hole axes; do not identify white image features as visible thread.
+Assistant selects/marks anchors; no user annotation required. No questions pending.
+
+Preflight: daisy, photo-2-reconstruction at bac83f4 tracking origin; only this
+exchange's REQUEST_LOG.md/SESSION_HANDOFF.md edits present, no stashes. Read
+current handoff/latest log. No fetch/live remote check, synchronization,
+transfer, delegation, account inspection or new supplied usage.
+
+Outcome: construction answers recorded; no experiment, render, scene/code edit,
+commit or push in this advice exchange. Documentation whitespace checked;
+runtime tests skipped. Records remain local for follow-up publication. Next
+task remains observed-region anchor robustness with fixed jitter/new patch and
+both hands, stopping before whole-ring growth/photo fitting. Stay here with
+gpt-6-astra / High; no additional /new needed.
+
+## R052 — Proceed with observed-region anchor robustness (2026-09-23)
+
+> ok.  go.
+
+Continue the answered R048–R051 round: assistant selects/marks seed groups;
+beads share size/shape with small gloss differences, invisible holes have
+lengthwise axes, and white thread is never visible. No further question gate.
+
+Preflight: daisy, photo-2-reconstruction at bac83f43ea3bcbfe7f9dc76e2019c3fffabc376c;
+only this round's request/handoff records modified; no stashes. Fetch succeeds,
+ahead/behind 0/0; no pull, transfer, delegation or new supplied usage. Python
+3.12.14. Read handoff, log, source and relevant local experiment/program notes.
+One combined read ended with missing root README.md; located photo2/README.md.
+
+Scope: replace arbitrary point-interior acceptance with image-derived observed
+region correspondence for three/four-bead anchors. Reuse unchanged calibrated
+contour fitting, compare old gate under fixed click jitter, and freeze a second
+patch/visual clicks before scoring. Retain competing hands, failed regions and
+conditional indices; wrong seed/phase and black controls. Stop after local
+robustness/detection/index evidence and checks; update records and publish
+scoped changes, including opening advice/status records.
+
+R052 outcome: implemented observed-region anchor correspondence, a frozen
+two-patch audit and eight meaningful tests. Independent gray-boundary regions
+must overlap supported predicted bodies at IoU >.5 and form connected three/four
+seed groups spanning at least two 1/6/7 families. The old margin/all-three-family
+gate remains unchanged as a comparator. Known camera/rope/scale are supplied;
+assistant selected new clicks from beauty pixels before scoring, with no repair
+from truth. No gate, fit, segmentation or click tuning after scoring.
+
+Sixteen conditions, two group sizes, 17 nominal/jitter variants and three controls
+give 544 positive trials/96 controls. Reused 96 verified smooth fits; 32 new
+fits on the left-side spatial patch, all converged. No new candidate renders.
+Original R/Y/black identity/translation accept all 17 four-click variants,
+recovering 34/37 and 32/34 correct region/color/indices with no false regions.
+Old gate accepts 6/17 and 8/17. Across all four-anchor conditions acceptance
+rises 59→100/272, but wrong-index alternatives occur in 36 accepted trials
+versus old 19. Three-anchor acceptance rises 70→123/272, wrong-index alternatives
+26→36. These are paired perturbations of shared scenes, not independent images.
+
+Nominal warped R/Y/black retains the true hand (34/38 correct combined matches,
+one false region) and two wrong hands with 6/25 and 6/27 correct matched indices,
+seven false regions each. All four anchor bodies match correctly for all retained
+candidates and all span three families; their signed 1/6/7 assignments differ.
+Keep unresolved helicity. Opposite-hand RGB smooth also retains a wrong hand.
+Second gray: 35/35 correct output indices but seed 1 selects bead 761 rather
+than 767. Separate seed identification from correct aligned-template output.
+Original gray highlights can be unassigned; second R/Y/black has poor watershed
+overlap and rejects every jitter. All-black still fails. Background and duplicate
+controls reject for both methods in all 32 combinations each. True-phase removal
+retains region-gate alternatives in 10/32 controls (old gate 2/32).
+
+All 69 tests pass, including eight new; compilation/dependency/whitespace pass.
+Pip check reports a nonwritable external cache warning and no broken requirements;
+no environment change. Two final runs reproduce all 80 artifacts byte for byte;
+reports equal except command output path. Ten sources/five bound input reports
+verified, plus R047 11 sources/70 artifacts, template six sources/34 artifacts,
+R045 fixture six sources/24 artifacts and detection 11 sources/163 artifacts.
+Baseline's current/historical source/artifact verifier also passes. Three reused
+historical optimizations hit the cap; none is retained in any gate/control.
+
+After first scores, added anchor-identity diagnostics and fixed panel overlap/
+false-region labels only. Every original fit, gate and score remains identical.
+All 16 initial panels reviewed as a contact sheet; final gray success/anchor-slip,
+warped R/Y/black competing hands and second R/Y/black failure inspected full size.
+No failed runtime test/audit, scene edits, material fit, automatic seed/geometry
+inference, whole-ring growth or photo claim. Small renderer tests ran; full
+legacy regression skipped for unchanged tracked POV sources.
+
+Final report: photo2/output/region-anchors-r052-final/report.json; SHA-256
+5ed1ae8545799d2ff7beec46676b7f1bbfe52a0dda77203e9ab071a4aa933d48.
+Updated plan/progress/README/program/local-note/handoff. Publish eleven scoped
+source/docs files including R048–R051 records, then verify remote tip and local
+status. Generated outputs/review images and .venv remain outside Git.
+
+Next bounded task: fixed highlight-tolerant observed-region extraction on these
+two frozen patches, preserving black/shadow/missing-region/jitter controls and
+both helicities; stop after local region/anchor/index evidence before ring growth
+or photo fitting. Recommend gpt-6-astra / High with fresh /new; no pending or
+new end-of-round questions.
+
+Publication preflight: sandboxed live remote lookup failed on GitHub DNS;
+approved escalated retry succeeded, confirming the branch still at entry bac83f4.

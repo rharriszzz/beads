@@ -1,5 +1,10 @@
 # Local calibrated contour/index experiment — R047
 
+R052 follow-up: [REGION_ANCHORS.md](REGION_ANCHORS.md) replaces the click-margin
+gate with observed-region correspondence and measures fixed jitter/spatial
+transfer. It improves some cases but exposes wrong-hand alternatives and region
+selection errors. The R047 protocol/results below remain historical evidence.
+
 Protocol frozen before the first scored run. This first test supplies the legacy
 camera, global rope geometry and scale as calibration. It tests local boundary
 alignment and conditional indexing, **not** image-derived centerline/width/pose.

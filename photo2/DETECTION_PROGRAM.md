@@ -1,5 +1,10 @@
 # Visible beads first, indexed beads second — R045
 
+R052 follow-up: [REGION_ANCHORS.md](REGION_ANCHORS.md) measures three/four-region
+anchors under fixed jitter on two patches. The original R/Y/black patch improves;
+wrong-hand alternatives, highlight-related region gaps and second-patch failures
+remain. Next is a bounded highlight-tolerant region-extraction comparison.
+
 R047 follow-up: [LOCAL_PATCH.md](LOCAL_PATCH.md) implements a first calibrated
 local contour/index comparison with both hands and smooth corrections. It exposes
 a brittle click-margin gate and remaining black failure; image-derived geometry,
@@ -53,7 +58,9 @@ Record a fitted body position only when a shape fit supports it. A region's
 centroid is a descriptive statistic; it is not assumed to be the physical center.
 Keep touching-instance merges, splits, missed slivers and background/shadow
 false positives. Do not label everything left after red/yellow removal as black:
-that remainder can include holes, shadows, highlights and uncertain background.
+that remainder can include shadows, highlights and uncertain background.
+R049–R051 clarify that photo bead holes and the white crochet thread are never
+visible; hole axes run lengthwise. Beads share size/shape with small gloss differences.
 
 **Indexing:** attach signed ±1/±6/±7 edges to those observations, retain competing
 sign/family assignments, and propagate indices from a declared seed. Preserve

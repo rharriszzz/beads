@@ -1,5 +1,152 @@
 # Beads session handoff
 
+## R052 — region anchors improve some cases; seed and helicity failures remain
+
+User authorized "ok. go." after R048–R051 advice. No pending questions. Current
+supplied status remains R048, session `01a0d0ea-3b8b-70f2-8172-4753ac2babea`,
+gpt-6-astra / High; no newer usage, account inspection or model change.
+Assistant marks anchors. Beads share size/shape with small gloss differences;
+hole axes follow necklace length, holes are invisible, white thread is invisible.
+
+Completed region_anchors.py, region_anchor_audit.py, eight tests and
+**photo2/REGION_ANCHORS.md**. Independent watershed regions selected by clicks
+must match supported predicted bodies at IoU >.5, form a connected three/four-
+bead 1/6/7 graph spanning >=2 families, and pass fixed size/border checks.
+No margin lowering, truth-corrected clicks or post-score parameter changes.
+Keep calibrated geometry and both hands; this is not an automatic photo indexer.
+
+Sixteen conditions across original/right and new/left patches, 17 fixed click
+variants per three/four-bead group, plus three controls: 544 positive trials and
+96 controls. Reused 96 R047 smooth fits, computed 32 new fits; no new candidate
+renders. Original R/Y/black identity/translation accept 17/17 four-click variants
+with 34/37 and 32/34 correct region/color/indices, no false regions. Old gate:
+6/17 and 8/17. Four-anchor acceptance across conditions rises 59→100/272, but
+36 accepted trials contain a wrong-index alternative, versus 19 for the old gate.
+
+Nominal smoothly warped R/Y/black retains the correct hand (34/38 correct
+region/color/indices, one false region) plus two wrong-hand alternatives (only
+6/25 and 6/27 matched indices correct, seven false regions each). All four seed
+bodies match correctly under every retained hand, all span three families,
+but signed 1/6/7 assignments differ. Correct seed bodies do not resolve helicity.
+Opposite-hand RGB smooth case also retains a wrong-hand alternative. No selection
+by evaluator truth; every alternative, miss, unknown and index remains saved.
+
+Second gray patch has 35/35 correct output indices and no false regions, yet
+its second anchor selects bead 761 instead of intended 767. That is a seed
+failure despite correct template output. Four-click acceptance 11/17 vs old 2/17.
+Original gray clicks often land on bright pixels omitted by foreground detection.
+Second R/Y/black rejects all jitter variants; poor independent region overlap.
+All-black still fails. Background/duplicate controls reject in all 32 combinations
+each, both methods; phase exclusion retains region-rule alternatives in 10/32.
+
+Checks: all 69 tests pass, compilation/dependencies/whitespace pass. Reporting-
+only anchor identity diagnostics and panel corrections preserve original fit,
+gate and index scores. All 80 final artifacts reproduce byte for byte; reports
+equal except command output path. Ten sources/five input-report hashes verify;
+R047 11 sources/70 artifacts, templates six sources/34 artifacts, R045 fixtures
+six sources/24 artifacts and detection 11 sources/163 artifacts verify. Baseline
+verifier passes. Three historical optimizer cap stops remain; none retained in
+any gate/control, and all 32 new optimizations converge. No failed runtime audit
+or test. Small renderer tests ran; unchanged tracked POV sources need no full
+legacy regression. All 16 initial panels reviewed in contact sheet; final gray
+success/anchor-slip, R/Y/black failure and warped-hand comparison viewed full size.
+
+Final report: photo2/output/region-anchors-r052-final/report.json; SHA-256
+`5ed1ae8545799d2ff7beec46676b7f1bbfe52a0dda77203e9ab071a4aa933d48`.
+Reproduce: `.venv/bin/python photo2/region_anchor_audit.py --output
+photo2/output/region-anchors-new`. REGION_ANCHORS.md explains prerequisites.
+
+Preflight daisy, entry bac83f4, only R048–R051 opening records modified; fetch
+succeeded, ahead/behind 0/0, no stashes/pull/transfer/delegation. Publish scoped
+source/docs including these opening records; final response reports verified
+commit/remote delivery. Generated outputs, review images and .venv remain ignored.
+
+**One next task:** diagnose and compare a fixed highlight-tolerant observed-
+region extraction rule on these two frozen patches, keeping bright surface
+reflections inside bead regions without merging adjacent bodies. Retain black,
+shadow, missing-region and jitter controls, unchanged template bank and both
+helicities. Stop after region/anchor/index evidence and checks before ring growth
+or photo fitting. Keep provisional 2,698 count without divisor filtering, repeat
+bound <400, missing indices and unknown colors. Recommend **gpt-6-astra / High,
+fresh /new** for that distinct step. No new end-of-round questions.
+
+## R051 — opening questions answered; construction constraints saved
+
+Red, yellow and black beads are alike in size and shape, with small differences
+in gloss. No quantitative gloss values or ordering by color were supplied.
+Thread is white and never visible. Together with R049/R050: hole axes follow
+the necklace's local lengthwise direction, holes are never visible, and the
+assistant chooses/marks its own starting beads. Do not treat white image
+features as visible thread or ask for user clicks. No questions remain pending.
+
+This completes the advice exchange only; no experiment or scene edit started.
+Next bounded task remains observed-region three/four-bead anchors, fixed click
+jitter and a separately frozen patch, retaining both helicities. Stop after
+local seed-robustness/region/index evidence before whole-ring growth/photo fit.
+Stay here with gpt-6-astra / High; no additional /new needed. Request/handoff
+records remain local for publication with follow-up work.
+
+## R050 — hole-axis orientation reminder
+
+User: "remember that the bead holes are aligned with the long axis of the
+necklace." Interpret this as the local lengthwise/tangent direction of the
+necklace rope, not the major axis of its overall photographed loop. Preserve
+this construction constraint alongside R049's invisible-hole statement. No
+scene change or new experiment requested. R049's questions were subsequently
+answered in R051; do not ask the user to mark beads.
+
+## R049 clarification — assistant marks anchors; holes never visible
+
+The user objects to being asked to mark beads: the assistant should choose and
+mark its own starting group. The maker states that a bead is a torus and its
+hole is never visible. Do not propose visible hole rims as photo evidence.
+This corrects the premise of R048 question 2; no scene geometry change is
+requested. User explicitly asks for more questions now; continue advice only.
+
+Two replacement questions, answered in R051:
+
+1. Are the red, yellow and black beads alike in size, shape and gloss, or is
+   there a consistent visible difference besides color?
+2. Is any crochet thread visible between beads in photo 2? If so, what color
+   is it? This would help distinguish thread from shadows and black beads.
+
+Assistant can mark anchors without user clicks. Preserve the already answered
+three/four-bead grouping, neighbor directions, black cues and both helicities.
+R048's marking-preference question is withdrawn; its hole question is corrected.
+Answers saved in R051 above; no experiment started during this exchange.
+Only request/handoff records are modified, pending follow-up publication.
+Stay here with gpt-6-astra / High; no /new needed.
+
+## R048 opening — questions superseded by R049 above
+
+User supplied previous-session completion and current status, then asked
+"questions?". Full status is recorded in REQUEST_LOG.md R048, with previous
+usage separate from the current session. Current session is
+`01a0d0ea-3b8b-70f2-8172-4753ac2babea`, gpt-6-astra / High.
+
+The last test rejected good starting groups because clicks were too close to
+predicted bead edges. Next work replaces that arbitrary margin with observed
+bead-region evidence, testing fixed click jitter and a separately frozen patch
+while retaining both helicities. Saved advice already covers three/four-bead
+groups, all three neighbor directions and black-bead cues; do not re-ask it.
+
+Two questions asked at that opening (now superseded):
+
+1. To mark a starting group of three or four beads, would you prefer one click
+   inside each bead, or a short stroke across each bead's visible surface?
+2. When a bead's hole is visible, does its rim help you recognize that bead's
+   extent, or do you mainly use the outside outline and ignore the hole?
+
+Wait for answers; no experiment or implementation started by this opening.
+Preflight: daisy, clean photo-2-reconstruction at
+bac83f43ea3bcbfe7f9dc76e2019c3fffabc376c, tracking origin with cached
+ahead/behind 0/0, no stashes; Python 3.12.14. No fetch/live remote check,
+pull, transfer, delegation or account inspection. Opening records remain local
+for follow-up publication; runtime tests skipped, documentation whitespace checked.
+Stay in this conversation with gpt-6-astra / High; no additional /new needed.
+Next stopping point remains local seed-robustness/region/index evidence, before
+whole-ring growth or photo fitting.
+
 ## R047 — calibrated local fitting works in two cases; anchor gate remains brittle
 
 R046 answered: the maker uses specular reflections for black beads when visible,
@@ -7,7 +154,7 @@ otherwise periodic saturation/value changes. Three/four beads suffice for an
 anchor: preferably two along ±1 plus one/two along ±6/±7; all three directions
 are best. Helicity must be determined or both alternatives kept until one fails.
 No questions pending; do not repeat these or append end-of-round questions.
-Current supplied session/status is R046 below; no newer usage supplied.
+Session/status for that completed round is R046 below; R048 records newer status.
 
 Implemented local_patch.py, local_patch_audit.py and seven tests. See
 **photo2/LOCAL_PATCH.md**. This is explicitly a **calibrated** test: legacy camera,

@@ -5,7 +5,7 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current direction — R047
+## Current direction — R052
 
 The maker's new request supersedes the pending centroid/body-center diagnostic.
 Work on two explicit tasks: detect the visible bead regions/colors from beauty
@@ -32,14 +32,27 @@ gate rejects all unwarped cases and most other trials, and all-black fitting fai
 An opposite-hand candidate has a near-tied contour score but mostly wrong indices.
 These results do not establish automatic photo geometry, helicity or indexing.
 
-Next bounded task: anchor registration in three/four observed bead regions,
-replace the brittle click-interior gate, and test fixed click jitter plus a new
-frozen patch with both hands. Stop after local seed robustness/region/index
-evidence, before whole-ring growth or photo fitting. Use gpt-6-astra / High with
-a fresh /new. Keep the maker's specular and periodic S/V cues for black beads;
-the current gradient test does not implement periodic or highlight-model fitting.
+R052 implements observed-region anchors and tests 17 click variants for both
+three/four-bead groups in 16 conditions across two frozen patches. See
+photo2/REGION_ANCHORS.md. Original R/Y/black identity/translation now accept all
+17 variants with correct indices (34/37 and 32/34 matches); warped conditions
+retain wrong-hand alternatives. Four-anchor acceptance rises 59→100/272, but
+36 accepted trials include wrong indices. Second-patch gray gives 35/35 correct
+output indices despite one wrong anchor selection; R/Y/black there and all-black
+still fail. Higher acceptance does not establish reliable seed/helicity recovery.
 
-The historical plan below retains prior evidence; R047 is the current priority.
+Next bounded task: compare current observed-region extraction with a fixed
+highlight-tolerant rule on these two frozen patches, keeping bright reflections
+inside bead regions without merging neighbors. Retain black/shadow/missing-region
+and jitter controls, unchanged template bank and both helicities. Stop after
+region/anchor/index evidence and checks, before ring growth/photo fitting.
+Recommend gpt-6-astra / High with fresh /new. The maker's periodic S/V suggestion
+remains untested; no specular or periodic-signal model has been fitted.
+
+R049–R051 constraints: assistant marks anchors; equal bead size/shape, small
+gloss differences; hole axes lengthwise, holes invisible; white thread invisible.
+
+The historical plan below retains prior evidence; R052 is the current priority.
 
 ## Whole plan
 

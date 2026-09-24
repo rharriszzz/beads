@@ -555,3 +555,37 @@ log. Generated outputs/environments ignored; no tracked POV source change.
 Next: observed-region anchors with prescribed click jitter and a new frozen
 patch, both helicities retained. Stop at local seed/region/index evidence before
 whole-ring growth/photo fitting. Recommend gpt-6-astra / High, fresh /new.
+
+## 2026-09-23 — R052 observed-region anchors: useful gains, unresolved failures
+
+Saved R048–R051 status/advice: assistant marks its seeds; equal size/shape, small
+gloss differences; lengthwise hole axes, invisible holes and invisible white
+thread. Implemented region_anchors.py, region_anchor_audit.py and eight tests;
+see REGION_ANCHORS.md for frozen protocol, scores and reproduction.
+
+Sixteen conditions/two patches, three/four anchors, 17 nominal/jitter variants
+and three controls each. Reused 96 verified smooth fits and computed 32 on the
+new patch. Original R/Y/black identity/translation recover 34/37 and 32/34 correct
+region/color/indices for all 17 four-anchor variants, versus old 6/17 and 8/17
+acceptance. Four-anchor total acceptance rises 59→100/272, with wrong-index
+alternatives in 36 accepted trials versus 19 previously. Keep both helicities.
+Nominal warped R/Y/black alternatives identify all four anchor bodies correctly
+yet assign different signed 1/6/7 increments and mostly wrong patch indices.
+
+Second gray patch: 35/35 correct output indices, but second anchor selects
+source 761 instead of 767. Second R/Y/black region matching and all-black fail.
+Gray highlights can remain unassigned by foreground segmentation. Background
+and duplicate controls reject throughout; true-phase exclusion often fails to
+reject. No automatic seed/helicity/geometry or photo-recovery claim.
+
+All 69 tests, compilation/dependency/whitespace pass. Two final runs reproduce
+all 80 artifacts byte for byte; ten sources/five bound reports and prior inputs
+verify. Reporting-only anchor diagnostics/panel corrections leave original scores
+unchanged. No threshold/click tuning or failed runtime test/audit. Small renderer
+tests ran; no new candidate renders or full legacy regression. Generated output
+and environments remain ignored. Publication and final status recorded in log.
+
+Next: fixed highlight-tolerant observed-region extraction comparison on these
+two patches, retaining black/shadow/missing-region/jitter controls and both hands.
+Stop after local region/anchor/index evidence before ring growth/photo fitting.
+Recommend gpt-6-astra / High with fresh /new; no end-of-round questions.
