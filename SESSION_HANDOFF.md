@@ -1,5 +1,110 @@
 # Beads session handoff
 
+## R045 — boundary detection baseline; local model-guided indexing next
+
+R044 questions answered: the maker identifies neighbors from visible edges,
+without needing centers, and can separate adjacent beads of the same color.
+Manual HSV line samples help the computer find red/yellow; black remains hard.
+The new request **supersedes** the R043 next centroid/body-center diagnostic:
+design progressively harder tests and competing methods for (1) visible bead
+position/color and (2) exact relative bead indices, using forward-model neighbor
+predictions and smooth local corrections. See photo2/DETECTION_PROGRAM.md.
+No pending questions; do not repeat these answers or ask at the round's end.
+
+Recovered: photo2/centerline.json has 303 points, source/photo hashes verify;
+the original fft-image-explorer spline differs only by <=0.0000500000001 pixel
+rounding. hsv_tools/hsv_picker.py is the two-click sampler (union of HSV tolerance
+boxes with hue wrap, not a convex hull). Targeted source/data reads build on
+the existing all-branch inventory; no sibling checkout changes.
+
+Completed implementation: four fixed beauty-image segmentation baselines and a scored
+16-view comparison (8 saved RGB, 6 newly rendered R/Y/black-gray-black controls,
+2 R/Y/black blur/noise variants). Model correction/index propagation is designed
+but not implemented; null bead_index fields must not be mistaken for recovery.
+No new questions needed. Current supplied session/usage remains R044 below.
+
+At >=100 visible pixels and IoU >0.5, gray-boundary watershed matches 883/1,008
+all-gray beads (87.60% recall, 70.92% precision), while color components merge
+the rope into one region per view and match none. R/Y/black gray-boundary
+matches 616/1,008, with 721 unmatched predictions; hybrid matches 609/1,008,
+with 675 unmatched predictions and 605 correctly colored matches (4 unknown).
+Hybrid finds 179/199 red, 287/379 yellow, 143/430 black beads. All-black is very
+poor (gray-boundary 29/1,008); phase-0 foreground union still has 95.22% IoU,
+but only 18/515 matched beads. Legacy pure Black loses diffuse boundary contrast;
+this extreme control is not fitted photo black or a human ambiguity claim.
+
+Final evidence: photo2/output/detection-audit-r045-final/report.json,
+SHA-256 `a788689beecd55253a3cf7c79e9052af2f663ce440977a5125754a469e62a65e`.
+Reproduce: `.venv/bin/python photo2/detection_audit.py --fixtures
+photo2/output/detection-fixtures-r045-final --output photo2/output/detection-audit-new`.
+Missing baseline input can be recreated with NEIGHBORS.md. Fixture source changes
+require a new --fixtures directory; old development outputs are deliberately kept.
+Masks, object records, null indices, all misses, per-color scores, T12/T100 metrics
+and fixed whole/detail figures are retained. Source truth is evaluator-only.
+
+All 54 tests pass; seven focused tests pass again after adding foreground-union
+checks. Compilation, pip dependency consistency and whitespace pass. Eleven
+current sources/163 artifacts/24 fixture artifacts verify; the runner verifies
+eleven current/historical baseline sources and 148 artifacts. RGB identity
+rerenders exactly match both saved beauty images. Final aggregate scores equal
+the initial run; only evaluation/figure labeling changed after scoring. No
+threshold tuning, failed runtime test/audit, tracked scene edits or photo fit.
+Initial pip download failed on sandbox DNS, then approved network installation
+added scikit-image 0.26.0/dependencies locally. Both final runs reproduce all 163
+artifacts byte for byte; reports agree except command output path. Selected
+details, six-panel contact sheet and whole R/Y/black/black figures reviewed.
+
+Preflight daisy, entry 74d4f573, only R044's two record edits; fetch succeeded,
+ahead/behind 0/0, no stashes/pull/transfer/delegation. Publish the scoped source/
+docs including R044 records; generated development/final/reproduced outputs,
+fixtures and .venv stay ignored. Final response records verified branch/commit.
+
+**One next task:** implement the local model-guided visible-boundary/index patch
+experiment in DETECTION_PROGRAM.md: seed with a separated bead/patch, predict
+±1/±6/±7 neighbors using the fixed legacy bead shape, fit contours, compare fixed
+alignment with smooth tangent/normal (and supported phase) corrections. Include
+wrong seed/phase and black-run controls; freeze patch/perturbation choices before
+scoring. Stop after local contour and relative-index evidence/checks, before
+whole-ring growth or photo claims. Keep competing helicities, missing positions,
+unknown colors/component offsets, provisional photo count 2,698 with no divisor
+filter and repeat bound <400. Recommend **gpt-6-astra / High, fresh /new**.
+
+## R044 opening — answered by R045 above (historical record)
+
+2026-09-23: user supplied prior completion/status and requested "questions?
+please wait for answers." No diagnostic experiment starts from this request.
+Read saved answers and JOINT_INFERENCE.md: the joint rule rejects the known
+shortcut but also discards its correct path; next work diagnoses visible-mask
+centers versus projected body centers and fixed geometric support assumptions.
+Retain edge-only ambiguity guidance, all three direction families, almost no
+tilting/sliding, brick-like outlines and tentative rectangular ±6/±7 color paths.
+
+Pending questions:
+
+1. When a bead is partly covered, do you mentally complete its outline to locate
+   its center, or identify its neighbors from the visible edges without needing
+   a center?
+2. Would you expect to trace the same 1/6/7 rows just as confidently if every
+   bead were one color, or do the red/yellow/black transitions help you follow
+   the rows?
+
+Current supplied session: `01a0d0a6-9665-79d2-b6fb-963fa37cab9c`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 36% left, resets 17:37 on 28 Sep; credits
+283; Luna Reserve Weekly 100% left, resets 19:41 on 30 Sep. No current-session
+token totals supplied. R044 in REQUEST_LOG.md attributes prior totals separately.
+No account inspection or model change.
+
+Preflight: daisy, clean photo-2-reconstruction at
+`74d4f57363f650ef8d96a9cd896c1fff43df88a6`, tracking origin with cached
+ahead/behind 0/0, no stashes. No fetch/live remote verification or transfer.
+Only request/handoff records edited locally; publication pending for follow-up.
+Runtime checks skipped for this opening; documentation whitespace checked.
+Wait for answers. Stay here with gpt-6-astra / High; no additional /new needed.
+Next bounded task remains the geometric diagnostic report above, stopping before
+inference changes or photo fitting, subject to the user's answers.
+
 ## R043 completed — joint constraints reject bridges but lose too many edges
 
 Continued the answered R041/R042 round on daisy, entry e17dd60,

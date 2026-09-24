@@ -22,9 +22,11 @@ signed-label errors still make every tested full graph inconsistent. Oracle
 masks, disconnected offsets and false crossing links remain explicit.
 The [joint triangle/trace test](JOINT_INFERENCE.md) now rejects the known false
 bridges but loses most correct rendered-view edges: T12 shape recall falls to
-16.73%. It does not validate indexing. Next is a synthetic diagnostic comparing
-mask centroids with projected body centers and auditing true-direction geometry,
-before another inference algorithm or photo fitting.
+16.73%. It does not validate indexing. The maker's **R045 request supersedes
+the planned centroid/body-center diagnostic** with visible-boundary detection
+and local model-guided indexing. See the [new staged test program](DETECTION_PROGRAM.md)
+for the recovered 303-point centerline, HSV picker, competing segmentation
+methods, first beauty-image comparison and proposed smooth local corrections.
 
 ## Run with Python 3.12
 
@@ -41,6 +43,7 @@ POV-Ray must be on PATH. The script invokes it with `-D` for headless rendering
 and four worker threads. No GUI packages or neighboring checkouts are required.
 The tested environment is CPython 3.12.14, NumPy 2.5.3, SciPy 1.18.1,
 Pillow 12.3.0 and POV-Ray 3.7.0.10.unofficial on PC/WSL. Other hosts are untested.
+The R045 segmentation comparison also uses scikit-image 0.26.0.
 Dependency ranges express minimum compatibility, not a frozen environment.
 
 The command produces `photo2/output/comparison.png`, `render.png`,

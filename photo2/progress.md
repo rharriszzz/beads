@@ -476,3 +476,52 @@ Next: causal synthetic comparison of mask centroids and projected true centers,
 auditing true-neighbor turn/spacing/support violations and marking losses in
 whole-image context. Stop at diagnosis before algorithm changes or photo fitting.
 Use gpt-6-astra / High with fresh /new. No end-of-round questions.
+
+## 2026-09-23 — R045 visible-boundary detection program
+
+The maker answered R044: neighbors are recognized from visible edges, without
+centers; same-color neighbors remain distinguishable. The new request replaces
+the pending centroid diagnostic with two tasks: visible bead position/color,
+then exact relative indices, using progressively harder tests and multiple
+methods including local forward-model prediction with smooth corrections.
+No pending questions. Read DETECTION_PROGRAM.md for the complete ladder.
+
+Found the 303-point photo centerline and verified its source/photo hashes and
+rounding-only difference from fft-image-explorer's saved spline. Found the HSV
+two-click sampler in hsv_tools; it unions tolerance boxes with circular hue,
+not a convex hull. Sibling checkouts remained untouched.
+
+New detect_beads.py accepts only beauty pixels, method and known palette.
+Compared color components, color-distance watershed, gray-boundary watershed
+and color-seeded boundary watershed on 16 views /64 trials. Eight are saved
+legacy RGB views; six are matched pigment-only R/Y/black, gray and black
+rerenders; two are fixed mild blur/noise variants. Separate evaluation retains
+IoU matches, all missed/hidden indices, splits/merges and per-color scores.
+Every detection's bead_index remains null. No inference truth input.
+
+At >=100 visible pixels /IoU >0.5, gray-boundary finds 883/1,008 all-gray beads
+(87.60% recall, 70.92% precision), versus zero whole-bead matches from color
+components. The same method finds 616/1,008 in R/Y/black, but 721 predictions
+remain unmatched. All-black fails: 29/1,008 matches. Its phase-0 foreground
+union nevertheless has 95.22% IoU, illustrating coverage versus separation.
+Pure legacy Black is an extreme control, not fitted photo appearance.
+
+Both unmodified RGB control renders reproduce saved beauty pixels. All 54
+tests pass; seven focused tests pass again after adding foreground-union
+assertions. Compilation, dependency/whitespace checks pass; verified 11 new
+source hashes, 163 artifacts, 24 fixture artifacts, and the runner verifies
+11 current/historical baseline sources/148 artifacts. Final report path/hash
+in DETECTION_PROGRAM.md. Both final runs reproduce all 163 artifacts byte for
+byte; reports agree except the command output path. Selected details, six-panel
+contact sheet and whole R/Y/black/black context figures visually reviewed.
+Initial sandbox pip DNS failure corrected by approved download into local .venv;
+no failed runtime test/audit. Only reporting additions after first scores,
+no detector/threshold tuning. No photo segmentation or index-recovery claim.
+
+Preflight daisy, photo-2-reconstruction at 74d4f573; R044's two local record
+edits included. Fetch succeeded, 0/0 ahead/behind, no stashes/pull/transfer or
+delegation. Publish scoped source/docs and verify delivery; generated outputs
+and .venv remain ignored. Next: local model-guided visible-boundary/index patch
+test, fixed versus smooth correction, including wrong-phase and black-run
+controls; stop before whole-ring propagation/photo work. Recommend
+gpt-6-astra / High, fresh /new. No new questions at round end.

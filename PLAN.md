@@ -5,6 +5,27 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
+## Current direction — R045
+
+The maker's new request supersedes the pending centroid/body-center diagnostic.
+Work on two explicit tasks: detect the visible bead regions/colors from beauty
+images, then assign bead indices using visible boundaries, local ±1/±6/±7
+neighbors and forward-model predictions with smooth local corrections.
+The maker can identify neighbors without centers and separate same-colored
+beads; color selection is a useful computational aid, especially red/yellow.
+
+The staged comparison and concrete correction-field experiment are specified in
+**photo2/DETECTION_PROGRAM.md**. The 303-point photo centerline and two-click HSV
+picker have been found and their provenance checked. First executable stage:
+four fixed color/boundary methods on eight existing legacy beauty views, six
+matched palette-control views and two mild blur/noise variants. Truth masks are
+used only by the evaluator. Stop this step after the comparison, checks and
+publication; no photo recovery or exact-index claim. Next is a bounded local
+model-guided visible-boundary/index experiment, with seed/phase/width/centerline
+perturbations and comparison of fixed versus smoothly corrected predictions.
+
+The historical plan below retains prior evidence; R045 is the current priority.
+
 ## Whole plan
 
 1. **Establish a reproducible forward model and evidence baseline.** Pull the

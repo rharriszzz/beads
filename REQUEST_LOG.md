@@ -1444,3 +1444,122 @@ Recommend gpt-6-astra / High with fresh /new. No questions at this round's end.
 Final source/artifact hashes and local documentation links pass. Sandboxed live
 remote lookup failed on GitHub DNS resolution; escalated retry succeeded and
 confirmed the branch still at entry e17dd60. Proceed with scoped publication.
+
+## R044 — Supplied session status; questions and wait (2026-09-23)
+
+> questions? please wait for answers.
+
+User supplied previous-session completion: worked 16m 58s, done 7:39 PM;
+session `01a0d082-2e8a-7100-9d66-ab498610e013`, titled "Summarize Codex work",
+Codex v0.155.1, gpt-6-astra high, ~/git/beads. Supplied previous tokens:
+total 176,968; input 135,642 (+4,072,448 cached); output 41,326 (reasoning 7,938).
+These describe the previous session, not current-session usage.
+
+Current supplied session: `01a0d0a6-9665-79d2-b6fb-963fa37cab9c`, Codex
+v0.155.1, gpt-6-astra / high, summaries auto, OpenAI provider, ~/git/beads,
+Workspace (Ask for approval), Default collaboration, AGENTS.md loaded, Pro Lite
+(account identifier omitted). Weekly 36% left, resets 17:37 on 28 Sep; credits
+283; Luna Reserve Weekly 100% left, resets 19:41 on 30 Sep. No current token
+totals supplied; no account inspection or model change.
+
+Read AGENTS.md, handoff/saved answers, recent request log and JOINT_INFERENCE.md.
+Preflight: daisy, clean photo-2-reconstruction at
+74d4f57363f650ef8d96a9cd896c1fff43df88a6, tracking origin/photo-2-reconstruction,
+cached ahead/behind 0/0, no stashes. No fetch/live remote check, transfer or
+delegation. Initial combined read output was truncated; targeted follow-up read
+covered saved recent answers and the relevant experiment note.
+
+Save two pending questions in the handoff: when partly covered, does the maker
+mentally complete a bead outline to locate its center or use visible neighbor
+edges without centers; and could the maker trace 1/6/7 rows equally confidently
+in a single-color rope, or do color transitions help? Do not repeat saved advice
+about tilting/sliding, direction families, missing beads or color count.
+
+Outcome: ask and wait as requested. No experiment, source implementation,
+render, commit or push; opening records remain local for the follow-up.
+Runtime tests skipped; documentation whitespace checked. Next bounded task
+remains centroid/body-center and geometric-support diagnostics, before inference
+changes or photo fitting. Stay here with gpt-6-astra / High; no further /new.
+
+## R045 — Boundary-led bead detection and indexing test program (2026-09-23)
+
+> identify neighbors from the visible edges without needing a center, yes.  Yes even if every bead were the same color, I can separaate it from adjacent beads.  But I have found it difficult to get any program to do it, without manual help, for instance one of the repos I mentioned in the very beginning included a color picker, in which I would manually select two points within a single bead, and it would include every HSV value along the path from the two points, then maybe generalize the HSV values slightly to obtain some sort of convex 3d space, and then match all of the pixels.  this allows finding the red and yellow beads in a way that make is easy to distinguish them.  Black beads are more difficult.  I can easily do it by eye, but I have not figured out the method for the computer to do it.  Suppose you focus on this task for a while.  How can you design a series of more complicated tests, and also a set of tests which use different approaches.  Here are some.  Suppose you can figure out the positions of the yellow and separatly the positions of the red beads.  Then you can figure out the positions of all the beads, because you should have already been able to distinguish the background from the bracelet (except possibly close to the shadows).  So you know the diameter of the bracelet as you see it in the photo,  And you also have a 3 to 4 hundred point spline along the centerline (I can do it, I hope you can figure out a way, or at least find it amoung all the markdown file in all the branches of all the repos I mentioned at the beginning).  then you choose a starting bead, find the positions of all its neighbors, and you have the beginnings of an iterative approach in which you have the exact locations of all the beads in a region, you use beads.pov to figure out where to look, you find out the exact position in the image of a specied bead, and you build another function something like a spline that lists all the small corrections along the way. You have two tasks.  Figure out the position and color of each bead you see (for this you might want to practice on the actual existing outputs of beads.pov, before graduating to the photographs), and second, finding the exact bead_index for each visible and identifiable bead.
+
+R044 questions answered: use visible boundaries without centers; single-color
+neighbors remain distinguishable to the maker. Colors are useful computational
+anchors, not required human cues. Black is a known algorithmic difficulty.
+The user redirects the next step from centroid-only causal diagnostics toward
+a progressively harder, multiple-method detection and indexing program with
+local forward-model predictions and a smooth correction field. Historical
+no-segmentation stopping points are superseded by this explicit request.
+
+Preflight: daisy, photo-2-reconstruction at 74d4f573, tracking origin; only R044's
+request/handoff edits present, no stashes. Fetch succeeded, ahead/behind 0/0;
+no pull or transfer. Python 3.12.14. Read handoff, relevant notes, prior branch
+inventory and targeted sources in hsv_tools, bead_map and fft-image-explorer.
+No sibling repository edits. No delegation/new supplied usage/model change.
+
+Bounded execution: recover the existing tools/provenance, design separate
+detection and indexing ladders, and run a first reproducible comparison of
+color components, distance watershed, grayscale-boundary watershed and a
+color/boundary hybrid on actual legacy beauty renders, with paired recolored
+controls. Ground-truth instance masks/indices are evaluator-only. This establishes
+an image-input baseline before local model-guided propagation and photo claims.
+Fixed settings will be recorded before scoring; retain failed detections,
+same-color/black splits and merges, missing indices and source/image hashes.
+
+R045 outcome: implemented detect_beads.py, detection_metrics.py and
+detection_audit.py with seven meaningful unit tests, plus the staged experiment
+program in DETECTION_PROGRAM.md. Recovered the 303-point centerline with matching
+original source/photo hashes and rounding error <=0.0000500000001 pixel. Found
+hsv_tools' actual two-click implementation: union of adjustable HSV tolerance
+boxes with circular hue, not a convex hull. Source commits/hashes in the note.
+
+Four fixed methods /16 views /64 trials: eight saved RGB beauty views, six
+actual pigment-only R/Y/black, gray and black rerenders, and two R/Y/black mild
+blur/noise variants. At >=100 visible truth pixels /IoU >0.5, gray-boundary
+matches 883/1,008 all-gray beads, 87.60% recall and 70.92% precision (362 false
+predictions). Color components match none in all-gray, merging each rope.
+Mixed R/Y/black: gray-boundary matches 616/1,008 with 721 unmatched predictions;
+hybrid matches 609/1,008 with 675 unmatched predictions, 605 correct colors,
+four unknowns. Hybrid finds 179/199 red, 287/379 yellow and 143/430 black beads.
+All-black fails (gray-boundary 29/1,008). Its phase-0 foreground-union IoU is
+95.22% but only 18/515 beads match, separating rope coverage from instance
+separation. Legacy pure Black is an extreme shading control, not fitted photo
+black or a claim about human ambiguity. All misses, hidden IDs, splits/merges,
+colors/unknowns and T12/T100 scores remain in reports. All output indices null.
+
+Checks: all 54 tests pass; seven focused tests rerun successfully after adding
+foreground-union assertions. Compilation, pip dependency consistency and
+whitespace pass. Eleven current source hashes/163 artifacts/24 fixture artifacts
+verified, along with the runner's eleven current/historical baseline sources
+and 148 baseline artifacts. Both RGB identity rerenders are pixel-identical to
+saved originals. Two final segmentation runs reproduce all 163 artifacts byte
+for byte; reports differ only in command output path. Aggregate scores also
+match the initial development run. No detector/threshold changes after scoring;
+only foreground-union evaluation and figure labeling were added. Development
+and final fixture sets each required eight renders; the reproduction reused
+final verified fixtures. Existing small renderer tests ran; no full legacy
+eight-case regression needed for unchanged tracked POV source.
+
+Visual review: phase-0 gray and R/Y/black details, whole black scene, six final
+detail panels in a contact sheet (two opposite-hand RGB including weak-slot
+view, half-phase gray/black/R/Y/black and noisy R/Y/black), final whole R/Y/black
+figure. Panels label full-image counts and show the fixed crop in context.
+Final report: photo2/output/detection-audit-r045-final/report.json, SHA-256
+a788689beecd55253a3cf7c79e9052af2f663ce440977a5125754a469e62a65e.
+
+Initial pip download failed on sandbox DNS; approved escalation installed
+scikit-image 0.26.0/dependencies in beads' local .venv. No failed runtime test
+or audit. One documentation patch failed on unmatched log context without
+edits; corrected. No photo segmentation, manual sample trial, scene refit,
+index-recovery or pattern claim. Updated plan/progress/README/handoff; publish
+eleven scoped source/docs files including R044 records, then verify live remote
+tip and final status. Generated development/final/reproduced outputs, fixtures,
+review contact sheet and .venv remain outside Git.
+
+Next: local model-guided visible-boundary/index patch experiment, comparing fixed
+alignment and smooth corrections with wrong-phase/seed and black-run controls.
+Freeze patch/perturbations before scoring; stop after local contour/index evidence
+before whole-ring growth or photo claims. Recommend gpt-6-astra / High with fresh
+/new. R044 questions are answered; no new end-of-round questions.
