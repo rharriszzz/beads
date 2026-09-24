@@ -11,7 +11,23 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current direction — R059: generated JPEGs, visible beads first
+## Current step — R062–R065: shadow/width correction and illustrated review
+
+Completed the requested photo-2 diagnostic: clear-edge anchoring plus a robust
+width model produces provisional corrected boundaries and centerline. See
+[results and uncertainty](photo2/WIDTH_CORRECTION.md) and
+[committed questions with illustrations](photo2/QUESTIONS_FOR_MAKER.md).
+The left bend's estimated excess width is 16.7 pixels (9.6–22.9 variability
+range), with an 8.8-pixel typical center shift. Fourteen regions merit review;
+a positive perspective gradient is not yet established. Original defaults remain.
+
+Next: validate a few reviewed edge/width transects, revise quality selection if
+needed, and stop after that boundary check before adopting new bead geometry.
+Then return to the generated-image inventory. gpt-6-astra / High; stay here,
+no `/new`. Future questions and useful supporting images are committed files
+(R065), with saved answers carried in the handoff.
+
+## Underlying direction — R059: generated JPEGs, visible beads first
 
 The user supersedes the second-anchor experiment: first identify every visible
 bead, then choose how to infer the rest. Test beads1.jpg–beads7.jpg before any
@@ -23,7 +39,7 @@ maps for all seven JPEGs, but **zero verified complete inventories and zero
 recovered full patterns**. All four indexing variants per image have conflicts.
 Do not treat the 352/392/435/410/403/354/417 candidates as correct bead counts.
 
-Next bounded task: correct and review the visible-bead inventory on beads1.jpg
+After the R062–R065 boundary review, correct and review the visible-bead inventory on beads1.jpg
 from the JPEG alone, retaining full-image context and all uncertain slivers.
 Stop after its reviewed instance/color map and checks; extend to the other six
 images before returning to pattern inference or photographs. Use gpt-6-astra /

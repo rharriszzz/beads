@@ -1,5 +1,65 @@
 # Beads session handoff
 
+## R062–R065 — width-based shadow correction and committed illustrated questions
+
+Completed the user's requested photo-2 geometry step before the pending generated
+inventory. All future questions go in tracked files, with useful supporting
+images committed (R065); AGENTS.md now records this exception to routine image
+exclusion. This round's three pending questions are in
+[photo2/QUESTIONS_FOR_MAKER.md](photo2/QUESTIONS_FOR_MAKER.md), with images embedded.
+They ask whether the left correction follows actual beads, whether the lower loop
+has the same shadow error, and which two-edge width reference is clearest.
+No answers received. Do not repeat these in chat or ask construction-pattern
+questions; read/save the answers and carry them forward. R064 requested end-of-round
+file delivery for this round. No extra approval gate.
+
+Result: width_correction.py intersects normals with saved boundaries at 600 equal
+arc positions. Exterior magenta-paper support/brightness selects 96 two-clear-edge
+references, 500 one-clear and four neither-clear. Robust nonnegative width-versus-y
+fit is effectively constant 95.8px; a positive perspective gradient is not yet
+established. The empirical clear-width band is 89.6–102.8px, not a confidence
+interval. The left bend's median excess width is 16.7px (9.6–22.9 variability
+range), applied center shift 8.8px. Lower-loop zone 2: 15.5px excess, 8.2px shift.
+207/600 positions (34.5% of sampled arc) strongly flag shadow plus excess width;
+14 regions shown, 296 positions receive a blended shift, maximum14.7px.
+Clear edges stay fixed; both/neither-clear centers unchanged. Shadow extent is
+separate: roughly124px beyond saved edge at left,110px at lower loop; some right
+references leave frame and are explicitly unavailable. No true edge labels yet.
+
+Original centerline and forward-model defaults remain unchanged. Exact original
+boundary source is now tracked in photo2/boundary-splines-source.json, matching
+centerline provenance SHA256 1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7.
+See photo2/WIDTH_CORRECTION.md for methods, sensitivities, limitations and commands.
+Committed photo2/review/r064/ contains four PNGs, width SVG, HTML review and manifest.
+Bulk measurements, candidate curves/full overlays remain ignored under
+photo2/output/width-correction-r065-final/. Reproduce using width_correction.py
+--output photo2/output/width-correction-new --review-bundle photo2/review/r064.
+Manifest binds source and artifact hashes, summary and report hash.
+
+Checks: nine focused unit tests and compilation pass. Two final runs reproduce
+ten analysis and six curated review artifacts byte for byte; five source hashes
+and manifest/report binding verify. Curves finite, closed, centers between paired
+edges; clear anchors and abstention preserved. No strict interior segment crossings
+found within/between tested curves. Visual inspection of original, left/lower/bottom
+comparisons, corrected preview and overview; SVG parsed as XML. Initial inadequate
+holdout coverage and out-of-frame NaNs now report unavailable; initial 1.8e-15
+exact-zero assertion fixed with bounded weights and numerical tolerance. No render,
+bead detector, POV pattern lookup or full legacy regression in this geometry step.
+
+Preflight: daisy, clean photo-2-reconstruction at4cadaf6, no stashes, Python3.12.14.
+Fetch needed approved escalation for read-only FETCH_HEAD; ahead/behind0/0.
+Prepublication remote lookup needed escalation for sandbox DNS and confirmed
+unchanged4cadaf6. No pull, transfer, delegation, new supplied status or usage.
+Publish scoped source/docs/questions/curated illustrations; final response records
+verified commit/remote tip. Routine outputs and environment remain excluded.
+
+Next bounded task: validate a few independent boundary/width transects using this
+illustrated review (incorporate maker answers if supplied), revise quality/width
+selection as needed, and stop after the geometry check before adopting it for
+bead work. Then resume beads1.jpg's reviewed visible inventory, followed by the
+other generated images before whole-pattern inference. No complete inventory or
+pattern claimed. Recommend gpt-6-astra / High; stay here, no `/new` needed.
+
 ## R061 — requested saved-centerline overlay
 
 User requests the image with the centerline overlaid. Used photo 2 because it

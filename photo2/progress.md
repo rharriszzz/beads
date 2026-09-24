@@ -725,3 +725,38 @@ are under output/centerline-view-r061/. Run show_centerline.py to reproduce.
 Visually inspected original/preview; input dimensions/hash and coordinate checks,
 compilation, byte reproducibility and unchanged pixels outside the stroke pass.
 No detection, rendering or pattern work. Generated-image priority remains unchanged.
+
+## 2026-09-24 — R062–R065 width correction and illustrated review
+
+Completed width/shadow diagnostic and provisional corrected curves. The source
+boundary JSON is now tracked byte-identically with its original provenance hash.
+600 normal cross sections yield96 both-clear references,500 one-clear and4 neither.
+Robust width95.8px; positive perspective slope not established. Left region excess
+width16.7px, empirical uncertainty9.6–22.9px, center shift8.8px; lower loop15.5px/8.2px.
+Fourteen regions flagged;207/600 strong positions,296 blended shifts, max14.7px.
+Shadow extent is distinct (left124px, lower110px), with missing frame references
+explicitly unavailable. Threshold sensitivity gives left shifts8.6–9.1px. Reference
+holdout errors3.1–8.0px; one holdout unavailable after losing vertical coverage.
+No true-edge accuracy or camera tilt established. Original geometry/defaults stay.
+
+Added width_correction.py, nine focused tests, WIDTH_CORRECTION.md, three saved
+questions and curated review bundle (four PNGs, SVG, HTML, hash manifest). Updated
+overall methods, plan, README, handoff, progress and standing AGENTS workflow.
+Future questions and useful supporting images must be committed files (R065).
+No replies to the opening advice questions; consolidated them into the file.
+
+Nine tests and compilation pass. Two final runs reproduce10 analysis artifacts
+and6 curated review artifacts byte for byte; reports equal except commands, all5
+source hashes and manifest/report binding verify. Report SHA256:
+089e42c36d6d45c1104f3d4b0e7359df8bd3819ecf6cf8ce38727717692090c6.
+Finite/closed curves, center-between-edges, unchanged clear anchors and abstention
+checks pass. No strict interior crossings found in candidate curves or paired
+boundaries. Original and all comparison/overview/preview PNGs visually inspected;
+SVG checked as XML. Initial run failed on insufficient holdout coverage and NaN
+references, now unavailable results. Initial exact-zero assertion failed at1.8e-15;
+bounded gain and numerical tolerance fixed it. No patterns read, render or legacy
+regression needed. Prepublication ls-remote hit sandbox DNS failure; escalation
+confirmed remote still4cadaf6. Bulk outputs/environment stay ignored; curated
+question illustrations are intentionally committed under the user's exception.
+Next: reviewed edge/width references and geometry check before adoption, then
+return to generated inventories. gpt-6-astra/High, stay here; no `/new` needed.

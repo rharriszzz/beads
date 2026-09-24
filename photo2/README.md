@@ -4,7 +4,12 @@ Start with the [overall plan and methods](../METHODS_AND_PLAN.md) for direct
 answers about background removal, saved outer/inner/centerline curves and the
 current limits of individual-bead identification.
 
-**Current priority (R059): generated JPEGs first.** The
+**Current requested step (R062–R065):** review the
+[width-based shadow correction](WIDTH_CORRECTION.md), with
+[questions and committed illustrations](QUESTIONS_FOR_MAKER.md). The candidate
+curves are provisional; next validate edge/width references before adopting them.
+
+**Underlying reconstruction priority (R059): generated JPEGs first.** The
 [blind beads1.jpg–beads7.jpg test](BLIND_GENERATED.md) produces reviewable bead
 candidate maps without reading source patterns, but has not recovered a complete
 pattern from any of the seven images. Visible-bead inventories need correction

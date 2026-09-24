@@ -2309,3 +2309,88 @@ same RGB mode and both stroke operations; the unchanged-outside-footprint check
 then passed. Overlay images were unchanged. Remote lookup initially failed on
 sandbox DNS; approved escalation confirmed origin still at entry a707f69.
 Full PNG SHA-256: 468cd1bb894cf5a2a16c359768b5d4018e7c0683a4692357666bb7f71682ff6e.
+
+## R062 — Width-based correction of shadowed bracelet boundaries (2026-09-24)
+
+> The centerline view is pretty good.  The only problem is near the leftmost part of the bracelet, where the centerline if somewhat too far to the right, because the shadow on the right makes it difficult to distinguish the edge of the bracelet, from the equally dark shadows of the background.  I think the way to fix this is to measure the width of the bracelet as it goes around.  I don't think the camera was directly overhead, so there should be a smooth progressen from the farthest away part of the bracelet (the top of the image), to the closest part of the bracelet (the bottom of the image).  Where there are deep shadows, the edge that has the deep shadows might be a bit unreliable, so start form the edge that does not have shadows, and make the other boundary spline be determined by an estimatioon of the width.  Doing this should help us to get closer to location all the beads in the manner we planed out earlier.
+
+Treat as an authorized bounded photo-2 geometry diagnostic/correction, ahead of
+the pending generated-image inventory step. Preserve original curves and no new
+pattern claims. Maker identifies leftmost bend's inner/right boundary shadow
+bias; proposes clear-edge anchoring and smoothly varying width, with a possible
+top-to-bottom perspective trend. Measure that trend rather than assuming it.
+Asked two optional image-advice questions: clearest two-edge reference section,
+and other shadow-contaminated stretches. Continue independently using image
+measurements; no approval gate or repeated pattern/construction questions.
+
+Preflight: daisy, clean photo-2-reconstruction at 4cadaf6, no stashes, Python
+3.12.14. Fetch initially failed on read-only FETCH_HEAD; approved escalation
+succeeded, ahead/behind 0/0. No pull/transfer/delegation/new supplied status.
+Read handoff/latest requests, methods, saved centerline and original sibling
+boundary splines. No POV pattern lookup or source-pattern inputs.
+
+## R063 — Quantify shadow uncertainty around the image (2026-09-24)
+
+> also, please come up with an estimate of how much trouble the shadows are causing, including the width of the uncertain part, to try to see if there are other parts of the image that can be adjusted in a similar way.
+
+Extend the same active task: quantify uncertain boundary-strip width, predicted
+edge/centerline displacement, image-location intervals and other candidate
+shadow corrections. Distinguish width-model disagreement, empirical variability
+and visible cast-shadow extent from measured true-boundary error. Preserve areas
+with neither edge reliable as unresolved; report the effect of quality thresholds.
+
+## R064 — Continue; save questions in a file and illustrate problems (2026-09-24)
+
+> keep going, and at the end this time put your questions to me in a file, and also, if you can illustartrate any problems with an image, that will be helpful.  Maybe I will recognize the problem.
+
+Continue R062/R063 width/shadow work. User overrides normal question timing for
+this round: save questions at the end in a file, with illustrated problem areas.
+Add lower-loop and bottom-reference comparisons alongside the left-bend image,
+whole-image map and width profile. No additional live question or approval gate.
+
+## R065 — Commit future question files and supporting images (2026-09-24)
+
+> also, please use images to illustrate questions in future steps, where it make sense.  and put future questions in a file.  i would like the questions and supporting images commited, of course
+
+Standing workflow change: future questions belong in tracked files, with curated
+supporting images where useful, and both must be committed. Updated AGENTS.md to
+supersede earlier chat-question delivery and to make an explicit exception to
+routine generated-image exclusion. Preserve source hashes/recreation commands.
+For this round, commit four illustrated review PNGs, the width plot and a small
+HTML review/manifest under photo2/review/r064/, linked from QUESTIONS_FOR_MAKER.md.
+Bulk measurements, full-resolution overlays and environment remain ignored.
+
+### R062–R065 outcome and checks
+
+Completed width/shadow diagnostic and provisional corrected curves. The source
+boundary JSON is now tracked byte-identically with its original provenance hash.
+600 normal cross sections yield96 both-clear references,500 one-clear and4 neither.
+Robust width95.8px; positive perspective slope not established. Left region excess
+width16.7px, empirical uncertainty9.6–22.9px, center shift8.8px; lower loop15.5px/8.2px.
+Fourteen regions flagged;207/600 strong positions,296 blended shifts, max14.7px.
+Shadow extent is distinct (left124px, lower110px), with missing frame references
+explicitly unavailable. Threshold sensitivity gives left shifts8.6–9.1px. Reference
+holdout errors3.1–8.0px; one holdout unavailable after losing vertical coverage.
+No true-edge accuracy or camera tilt established. Original geometry/defaults stay.
+
+Added width_correction.py, nine focused tests, WIDTH_CORRECTION.md, three saved
+questions and curated review bundle (four PNGs, SVG, HTML, hash manifest). Updated
+overall methods, plan, README, handoff, progress and standing AGENTS workflow.
+Future questions and useful supporting images must be committed files (R065).
+No replies to the opening advice questions; consolidated them into the file.
+
+Nine tests and compilation pass. Two final runs reproduce10 analysis artifacts
+and6 curated review artifacts byte for byte; reports equal except commands, all5
+source hashes and manifest/report binding verify. Report SHA256:
+089e42c36d6d45c1104f3d4b0e7359df8bd3819ecf6cf8ce38727717692090c6.
+Finite/closed curves, center-between-edges, unchanged clear anchors and abstention
+checks pass. No strict interior crossings found in candidate curves or paired
+boundaries. Original and all comparison/overview/preview PNGs visually inspected;
+SVG checked as XML. Initial run failed on insufficient holdout coverage and NaN
+references, now unavailable results. Initial exact-zero assertion failed at1.8e-15;
+bounded gain and numerical tolerance fixed it. No patterns read, render or legacy
+regression needed. Prepublication ls-remote hit sandbox DNS failure; escalation
+confirmed remote still4cadaf6. Bulk outputs/environment stay ignored; curated
+question illustrations are intentionally committed under the user's exception.
+Next: reviewed edge/width references and geometry check before adoption, then
+return to generated inventories. gpt-6-astra/High, stay here; no `/new` needed.

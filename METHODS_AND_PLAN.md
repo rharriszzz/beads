@@ -2,7 +2,10 @@
 
 Updated 2026-09-24. This explains what is available now and what still needs
 work. The immediate inputs are **beads1.jpg–beads7.jpg**, the generated images.
-Photographs come afterward. Pattern identification must use the images without
+R062–R065 temporarily prioritize the requested photo-2 shadow/width diagnostic;
+its [results](photo2/WIDTH_CORRECTION.md) and
+[illustrated questions](photo2/QUESTIONS_FOR_MAKER.md) are now available.
+Pattern identification must use the images without
 consulting the pattern definitions in the POV-Ray file.
 
 The main problem is currently **identifying every visible bead reliably**.
@@ -69,9 +72,10 @@ resamples the boundaries, finds the nearest point on the outer polyline for
 each inner sample, and takes the midpoint. This is an approximate middle path;
 it need not be the exact physical axis, particularly around tight bends.
 
-Only the photo-2 centerline was copied into this repository:
-[photo2/centerline.json](photo2/centerline.json). The outer and inner curves
-remain in the sibling repository. [reconstruct.py](photo2/reconstruct.py) fits
+The photo-2 centerline is copied into
+[photo2/centerline.json](photo2/centerline.json). R062–R065 also retain the exact
+original three-curve source in
+[photo2/boundary-splines-source.json](photo2/boundary-splines-source.json). [reconstruct.py](photo2/reconstruct.py) fits
 a smoothed periodic cubic spline to the copied centerline and evaluates it at
 uniform distances along the curve. That supports image sampling and the
 provisional photo-2 forward model.
@@ -98,6 +102,22 @@ inner/outer intersection; I did not independently rerun that geometric test.
 They belong to a different image. Producing and reviewing comparable curves for
 the generated images is still a task, not a capability already demonstrated on
 all seven.
+
+## Width-based shadow correction
+
+The new diagnostic measures normal cross sections at 600 positions, selects
+clear edges using exterior paper color and brightness, and fits a robust width
+model. It holds the clear edge fixed and estimates the opposite edge where
+shadows inflate apparent width. Clear sections suggest about 95.8 pixels; the
+left bend appears about 16.7 pixels too wide and its candidate center moves
+about 8.8 pixels left. The reference variability gives a 9.6–22.9-pixel uncertain
+boundary strip there. Fourteen regions are flagged for review.
+
+The expected perspective gradient is not yet established by these measurements.
+The [method and uncertainty note](photo2/WIDTH_CORRECTION.md) separates boundary
+uncertainty from the much wider cast shadow. Candidate curves remain separate
+from the original geometry until the illustrated boundary review. This is not
+a bead inventory or a recovered pattern.
 
 ## Individual beads: the method used and its limitations
 
@@ -153,7 +173,7 @@ contains commands to recreate it, detailed results and checks.
    whole bracelet, correct missed beads, split merged regions and remove duplicate
    fragments. Record every visible bead's region and color, with explicit unknowns
    for unreadable slivers. Keep direct observations separate from model predictions.
-   Extend to the other six images. This is the immediate priority.
+   Extend to the other six images after the requested photo-2 boundary review.
 3. **Assign relative bead indices.** After the observations are reliable, compare
    ways of tracing the supplied neighbor directions ±1, ±6 and ±7. Select the
    method on those observations. Retain both helicities until evidence resolves
@@ -182,7 +202,7 @@ Trying to extract a full pattern from those assignments would turn detection
 errors into a fabricated sequence. Small compatible local fragments are retained,
 but none establishes the whole pattern.
 
-The next bounded work item remains a reviewed visible-bead inventory for
-**beads1.jpg**, with explicit unresolved regions. Its stopping point is that map
-and its checks, before another repeat search. No additional pattern information
-from you is needed to do this work.
+The next bounded work item is to validate a few photo-2 boundary/width transects
+using the illustrated review, stopping before adoption into bead geometry. Then
+resume the reviewed visible-bead inventory for **beads1.jpg**, keeping unresolved
+regions explicit. No additional construction-pattern information is needed.

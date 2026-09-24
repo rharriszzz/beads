@@ -1,0 +1,66 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/width_correction.py",
+    "--output",
+    "photo2/output/width-correction-r065-final",
+    "--review-bundle",
+    "photo2/review/r064"
+  ],
+  "sources": {
+    "photo2/width_correction.py": "12c2a674eaa5b71fae9a64aead22f1cdb07a2999322c0243e25b43d4245b0d20",
+    "photo2/boundary-splines-source.json": "1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7",
+    "photo2/centerline.json": "49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/test_width_correction.py": "0010cfed858dcb2309bfbb890e3a83b6e920d907de9612e33379886254aa8778"
+  },
+  "report_sha256": "089e42c36d6d45c1104f3d4b0e7359df8bd3819ecf6cf8ce38727717692090c6",
+  "summary": {
+    "sample_count": 600,
+    "arc_length_px": 9248.911016843209,
+    "both_clear": 96,
+    "one_clear": 500,
+    "neither_clear": 4,
+    "strong_samples": 207,
+    "strong_arc_fraction": 0.345,
+    "applied_samples": 296,
+    "max_center_shift_px": 14.72981328244105,
+    "left_sample_count": 57,
+    "left_median_observed_width_px": 112.50783460431211,
+    "left_median_center_shift_px": 8.963298864222983
+  },
+  "fit": {
+    "model": "affine width versus image y; nonnegative slope; robust soft_l1",
+    "coefficients": [
+      95.81971382873398,
+      2.9195468172605563e-13
+    ],
+    "free_coefficients": [
+      95.75969518599511,
+      -0.654221698225827
+    ],
+    "top_bottom_width_px": [
+      95.81971382873368,
+      95.81971382873428
+    ],
+    "reliable_samples": 96,
+    "reliable_y_range": [
+      273.9731609683191,
+      3012.3071861716912
+    ],
+    "residual_band_px": [
+      -6.234693664593806,
+      7.02932471431923
+    ],
+    "median_absolute_residual_px": 3.3758749339504703,
+    "empirical_band_note": "10th\u201390th percentile calibration residuals; not a statistical confidence interval"
+  },
+  "artifacts": {
+    "left-comparison.png": "e12288ad7030ac45e06007eb644440a9441aac6ff92e7231afcf3c7874bb3fd2",
+    "lower-loop-comparison.png": "2e71373de43aaca29883abd0e9a613afef60132796655c069423795120207ceb",
+    "bottom-reference.png": "79e977ab8ef6d2a71b0d7a24659a01973e1cce857c0a56889cad6574c56c6fcb",
+    "shadow-overview.png": "d5d83b03cbdac0193d501ae88066ea84356731409c2c129830e1a72299052951",
+    "width-profile.svg": "ea98508627c2e4daf523bd264a0d9624c023c929649b1b83efa9f22959e7255e",
+    "review.html": "754f563c8d4edd3a3a425bdde5d4c6a3c3c34461221089352387fef48efbd8e6"
+  }
+}

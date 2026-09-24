@@ -33,8 +33,10 @@ commands; the user controls `/new`, `/status` and model selection.
   validation on known synthetic patterns before making inverse claims.
 - Work toward one useful capability or resolved question per step. Preserve
   enough context to avoid repeating failed approaches; document size is not a goal.
-- Keep generated images, include files and environments out of Git. Preserve
-  source inputs and a command that recreates every reported result.
+- Keep routine generated outputs, include files and environments out of Git.
+  **R065 exception:** commit questions and their curated supporting images;
+  use images to illustrate questions whenever helpful. Preserve source inputs,
+  hashes and a command that recreates every reported result and illustration.
 - Update the handoff with results, checks/skips, limitations and one next task.
   A computer switch needs an explicit transfer of local unpublished changes and
   task ownership. A clean checkout alone cannot establish remote inactivity.
@@ -49,13 +51,15 @@ commands; the user controls `/new`, `/status` and model selection.
   model/level and supplies `/status` output. Record supplied status with session
   attribution; redact secrets, distinguish old/new session data and never invent
   missing usage. No automatic model switch or account inspection.
-- Begin every round of work with two or three focused questions inviting the
-  user's construction knowledge or advice (R020 supersedes R018's end-of-round
-  timing). Read the saved answers first, briefly restate the context needed to
-  answer, and avoid repeating answered questions. Save answers and pending
-  questions in the handoff so a fresh /new does not require the user to remember
-  the previous conversation. Do not turn advice into extra approval gates for
-  already authorized work; do not append new questions at round end.
+- Read saved answers before each round. **R065 supersedes the earlier question
+  delivery rule:** put future questions in a tracked file, with enough context
+  to answer and supporting images where useful; commit the file and images.
+  Keep questions focused (normally two or three), avoid repeating answered
+  questions, and link the file for the user instead of scattering questions in
+  chat. Preserve answers and pending questions in the handoff so a fresh /new
+  does not require the user to remember earlier conversations. Questions are
+  not extra approval gates for already authorized work. R064 specifically asks
+  for this round's questions at the end, with illustrated problems.
 
 The old `image-to-pattern/plan.md` is historical. Its uncompleted inverse gates
 remain useful evidence, but this branch follows the user's photo-2 forward-model
