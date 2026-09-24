@@ -1,11 +1,16 @@
 # Visible beads first, indexed beads second — R045
 
+R057 follow-up: [SHARED_HIGHLIGHTS.md](SHARED_HIGHLIGHTS.md) completes the fixed
+distance/gradient shared-cavity test. Both improve gray-anchor acceptance but
+introduce wrong ownership and worsen excluded-phase rejection. Keep R055 repair
+as the baseline. Next: a second separated validation group within each crop,
+with fixed fits, to test surviving wrong-helicity/phase alternatives.
+
 R055 follow-up: [HIGHLIGHT_REGIONS.md](HIGHLIGHT_REGIONS.md) tests conservative
 bright-cavity filling with existing labels fixed. Added pixels have correct
 ownership in this audit; anchor jitter tolerance improves, but detection counts,
-seed slips and wrong-hand alternatives remain. Next: compare distance/gradient
-ownership for shared bright cavities with abstention, using unchanged fits and
-controls, before ring growth or photo fitting.
+seed slips and wrong-hand alternatives remain. R057 completes the shared-cavity
+comparison above without adopting its less conservative assignments.
 
 R052 follow-up: [REGION_ANCHORS.md](REGION_ANCHORS.md) measures three/four-region
 anchors under fixed jitter on two patches. The original R/Y/black patch improves;

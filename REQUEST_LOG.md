@@ -2006,3 +2006,122 @@ versus conservative abstention, preserving all existing labels/ties, unchanged
 fits/clicks, both hands and controls. Stop after added-pixel ownership and local
 region/anchor/index evidence/checks, before ring growth/photo fitting. Recommend
 gpt-6-astra / High with a fresh `/new`; no pending or new end-of-round questions.
+
+## R056 — New-session status and opening questions (2026-09-23)
+
+User supplied previous completion: "Worked for 13m 47s · done 9:37 PM",
+Codex v0.155.1, gpt-6-astra high, ~/git/beads; resume title "Summarize Codex
+session", session `01a0d0ff-cddd-7df2-a129-5995d5cc9183`. Previous tokens:
+total 131,267; input 105,132 (+2,047,872 cached); output 26,135 (reasoning
+4,043). These are prior-session totals, not current-session usage.
+
+Current supplied `/status`: session `01a0d110-26b5-7700-8b92-f7810194e19b`,
+Codex v0.155.1, gpt-6-astra (reasoning high, summaries auto), OpenAI provider,
+~/git/beads, Workspace (Ask for approval), AGENTS.md loaded, Default
+collaboration, Pro Lite (account identifier omitted). Weekly limit 29% left,
+resets 17:37 on 28 Sep; 283 credits; Luna Reserve Weekly 100% left, resets
+21:37 on 30 Sep. No current token totals supplied, account inspection or model
+change. Status alone does not launch the next experimental step.
+
+Preflight: daisy, clean photo-2-reconstruction at
+613859f4c576d6b015b47bfc5c24b3a5c65d7136, tracking origin/photo-2-reconstruction,
+cached ahead/behind 0/0, no stashes, Python 3.12.14. No fetch/live remote lookup,
+pull, transfer or delegation. Read current handoff, recent requests, workflow
+and HIGHLIGHT_REGIONS.md. Initial combined output truncated; targeted reads
+covered current results, saved advice and next task.
+
+Asked two opening advice questions about photo-2 illumination sources and
+visible color reflections from paper/neighboring beads onto black beads. Exact
+questions pending in the handoff. Retain prior surface/highlight/geometry/thread
+answers and assistant-selected anchors; no repeated questions or user clicks.
+
+Outcome: status and pending questions saved locally for follow-up publication;
+no experiment, implementation, render, commit or push. Documentation whitespace
+checked; runtime tests skipped for record-only edits. Next bounded task remains
+fixed distance/gradient assignment of shared bright cavities versus abstention,
+preserving labels, ties, fits/clicks, both hands and controls. Stop after pixel
+ownership and local region/anchor/index evidence before ring growth/photo
+fitting. Stay here with gpt-6-astra / High; no additional `/new` needed.
+
+
+## R057 — Continue without further advice; shared highlights (2026-09-23)
+
+> I am tired, please continue without answers.  It was an iphone, so if the flash was enabled, all the bright spots would be directly at the camera.  I don't remember if it used flash.
+
+Proceed with the next bounded step and publication. Save iPhone capture and
+unknown flash use; the camera-directed reflection statement is the maker's
+conditional explanation, not measured illumination or a scene parameter.
+Color-reflection advice remains unspecified; do not wait or re-ask this round.
+R056 supplied status remains current; no new usage or account inspection.
+
+Preflight: daisy, photo-2-reconstruction at 613859f4c576d6b015b47bfc5c24b3a5c65d7136,
+tracking origin; only R056 request/handoff records modified, no stashes. Fetch
+succeeded, ahead/behind 0/0; no pull, transfer or delegation. Read current
+handoff/log, HIGHLIGHT_REGIONS.md, relevant sources and current plan. A discovery
+search named two nonexistent documentation paths; corrected using rg --files.
+
+Scope: compare one-pass distance and RGB-gradient path assignment for enclosed
+bright cavities shared by observed labels, against unchanged R055 abstention.
+Freeze parameters before scores; keep existing labels, ties, saved fits/clicks,
+both hands and controls. Stop after pixel ownership and local region/anchor/index
+evidence/checks, before ring growth/photo fitting. Publish scoped source/docs
+including opening records; generated data stay ignored.
+
+R057 outcome: fixed one-pass distance/gradient comparison implemented with eight
+behavioral tests and SHARED_HIGHLIGHTS.md. Keep R055 conservative repair as the
+baseline: improved acceptance comes with wrong ownership. Across 45 shared
+cavities, distance assigns 1,465 pixels (1,112 correct, 137 wrong, 216 unresolved)
+and leaves 222 ties; gradient assigns 1,679 (1,227 correct, 151 wrong, 301
+unresolved), eight ties. No added background. Pre/post-growth owner matches agree;
+R055's 4,672 correct single-owner pixels and all original labels remain fixed.
+All supported region/color/unknown/missing-index summaries, foreground false
+positives and split/merge counts unchanged. No post-score tuning.
+
+Reused all 128 fits, both hands, 16 conditions, 544 positive and 96 prior control
+trials. Three-anchor acceptance 134→155/272, four 115→140/272; no losses. Wrong-
+index trials stay 36 per group size. Four-anchor all-correct seed groups 99→121:
+20 original-gray gains correct, second gray gains two correct and three with
+known seed slip. All four gray conditions accept 17/17 variants. Original gray
+nominal outputs 37/37, 34/34, 38/38 correct matched indices/seeds. Second gray
+35/35 output remains compatible with a wrong second seed. Wrong hands and
+second R/Y/black/all-black failures remain.
+
+Background/duplicate controls reject all 32 combinations each. Excluded-phase
+alternatives retained 10→12/32 (original-gray smooth three/four groups newly
+accepted). Thirteen applicable region deletions restore no pixels, seeds stay
+unassigned; three already-unassigned original-gray seeds are inapplicable.
+
+All 86 tests pass; compilation/dependency/whitespace pass. Pip nonwritable
+external-cache warning, no broken requirements or environment changes. Two final
+runs reproduce all 80 artifacts byte for byte; reports equal except command
+output path. Sixteen current sources, R052 10 sources/80 artifacts, R055 13/80
+and all five bound input manifests verify, including historical baseline checks.
+All R052 gates/scores and R055 masks/gates/baselines/ownership/retained scores
+reproduce. After initial scoring added only aggregate reporting and evaluator
+ownership overlay colors; initial/final trials and prediction/evaluation/mask
+bytes unchanged. Independently checked aggregate acceptance. Scratch summary
+initially included false_background in positives under an incorrect control
+name; corrected before reporting final 272-trial denominators. No failed runtime
+test/audit. All 16 initial panels reviewed in contact sheet; final original/second
+gray, second black and warped R/Y/black panels full size. Small renderer tests
+ran; no full legacy rerender for unchanged POV sources. No new fits/renders,
+scene/material/photo changes, automatic geometry or recovery claims.
+
+Final report: photo2/output/shared-highlights-r057-final/report.json; SHA-256
+6095d26bd555b5dde171d48f0df40557a102707db15989cbee8752cc5a0a1efd.
+Updated plan/progress/README/program/prior-note/handoff. Publish eleven scoped
+source/docs files including R056 status records; generated outputs/review figures
+and .venv stay ignored. Live remote lookup failed on sandbox GitHub DNS; approved
+retry confirmed origin still at entry 613859f.
+
+Next bounded task: Test a second spatially separated observed-region group within each frozen
+crop against surviving wrong-helicity/phase candidates. Select from beauty and
+observed regions before evaluator truth, keep fixed fits and R055 conservative
+repair, and measure both lost correct and rejected wrong alternatives. Retain
+jitter and background/duplicate/excluded-phase controls. Stop after local
+hypothesis/seed/index evidence and checks, before ring growth or photo fitting.
+Recommend gpt-6-astra / High with a fresh `/new` for this distinct step.
+No pending or new end-of-round questions.
+
+Publication staging initially failed because sandbox Git metadata was read-only
+(index.lock creation denied). Approved escalated staging succeeded; no work lost.

@@ -5,7 +5,7 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current direction — R055
+## Current direction — R057
 
 The maker's new request supersedes the pending centroid/body-center diagnostic.
 Work on two explicit tasks: detect the visible bead regions/colors from beauty
@@ -49,17 +49,26 @@ first nominal gray clicks still touch cavities shared by two regions, and the
 second-gray seed slip remains. Smooth surfaces and usually one lighting-dependent
 highlight are maker guidance, not an exactly-one-highlight constraint.
 
-Next bounded task: compare fixed distance-based and image-gradient-based
-assignment of bright cavities shared by multiple observed regions, versus R055
-abstention. Preserve existing labels and ties, fixed fits/clicks, both hands and
-black/shadow/missing-region/jitter controls. Stop after added-pixel ownership and
-region/anchor/index evidence/checks, before ring growth/photo fitting. Recommend
-gpt-6-astra / High with fresh /new. Periodic S/V and specular fitting remain untested.
+R057 compares fixed distance and RGB-gradient paths in shared bright cavities;
+see photo2/SHARED_HIGHLIGHTS.md. Both raise four-anchor acceptance 115→140/272,
+but add respectively 137/151 wrong-owner pixels and 216/301 unresolved-owner
+pixels. Wrong-index trials remain 36; excluded-phase acceptance worsens 10→12/32.
+Supported region/color/missing-index summaries and split/merge counts do not
+improve. Keep R055 conservative abstention as the baseline, not either extension.
+Unknown photo flash use remains unspecified; no lighting/model parameter changed.
+
+Next bounded task: test a second spatially separated observed-region group
+within each frozen crop against surviving wrong-helicity/phase candidates. Select from beauty and
+observed regions before evaluator truth, keep fixed fits and R055 conservative
+repair, and measure both lost correct and rejected wrong alternatives. Retain
+jitter and background/duplicate/excluded-phase controls. Stop after local
+hypothesis/seed/index evidence and checks, before ring growth or photo fitting.
+Recommend gpt-6-astra / High with a fresh `/new` for this distinct step.
 
 R049–R051 constraints: assistant marks anchors; equal bead size/shape, small
 gloss differences; hole axes lengthwise, holes invisible; white thread invisible.
 
-The historical plan below retains prior evidence; R055 defines the current next task.
+The historical plan below retains prior evidence; R057 defines the current next task.
 
 ## Whole plan
 

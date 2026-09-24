@@ -1,5 +1,116 @@
 # Beads session handoff
 
+## R057 — shared highlights improve acceptance but introduce wrong ownership
+
+User explicitly says continue without answers; opening advice questions are
+waived for this round. Photo taken with an iPhone; flash use unknown. The
+camera-directed reflection statement is conditional maker advice, not measured
+lighting. Color reflections remain unspecified. Do not re-ask or infer a flash
+parameter. Retain saved construction guidance and assistant-selected anchors.
+Current supplied status remains R056, session `01a0d110-26b5-7700-8b92-f7810194e19b`,
+gpt-6-astra / High; no new usage, account inspection or model change.
+
+Completed shared_highlights.py, shared_highlight_audit.py, eight behavioral tests
+and **photo2/SHARED_HIGHLIGHTS.md**. Freeze one-pass distance and RGB-gradient
+path costs for enclosed all-bright shared cavities, preserving existing labels
+and abstaining on ties. Reuse R055 single-owner repair, all 128 R052 fits/masks,
+16 conditions/two patches, 544 positive trials, 96 prior controls and both hands.
+No fit, click or parameter tuning; no new fits/renders.
+
+Decision: keep conservative R055 abstention as the baseline. Forty-five shared
+cavities / 1,687 pixels: distance adds 1,465 (1,112 correct, 137 wrong, 216
+unresolved) and leaves 222 ties. Gradient adds 1,679 (1,227 correct, 151 wrong,
+301 unresolved) and leaves eight ties. No added background; original R055 4,672
+single-owner additions stay correct. Ownership matches before/after growth agree.
+All supported region/color/unknown/missing-index summaries, false foreground
+and split/merge counts stay unchanged. Wrong-owner pixels make neither extension
+an established improvement to segmentation, despite increased anchor acceptance.
+
+Three-anchor acceptance 134→155/272 and four 115→140/272 for both extensions;
+no losses. Wrong-index trials remain 36 per group size. Accepted four-anchor
+groups with all retained seed bodies correct rise 99→121. Twenty original-gray
+gains have correct seeds; two of five second-gray gains have correct seeds and
+three retain the 761-for-767 seed slip. All four gray conditions accept all 17
+variants. Original nominal gray identity/translation/smooth now have 37/37,
+34/34, 38/38 correct matched indices and correct seeds. Second gray remains
+35/35 despite a wrong seed. Existing wrong hands, second R/Y/black and black
+failures remain; this is calibrated synthetic evidence only.
+
+Background/duplicate controls reject in all 32 combinations each. Excluded
+phase now retains alternatives in 12/32 versus conservative 10/32: added
+original-gray smooth three/four groups. All 13 applicable region deletions
+restore no deleted pixels and leave seeds unassigned; three original-gray
+first clicks already unassigned, so those deletions are inapplicable.
+
+All 86 tests pass, including eight new. Compilation/dependency/whitespace pass;
+pip nonwritable external-cache warning only. Two final runs reproduce all 80
+artifacts byte for byte; reports equal except command output path. Sixteen
+current sources verify, R052 10 sources/80 artifacts, R055 13/80, all five bound
+reports/manifests and historical baseline verifier checked. R052 gates/scores
+and R055 masks, gates, baselines, ownership, retained alternatives and scores
+reproduce exactly. After initial scoring only aggregate reporting/evaluator
+panel colors changed; initial/final numerical trials and prediction/evaluation/
+mask bytes identical. Aggregate acceptance independently checked. No failed
+runtime test/audit or rule tuning. Visual review of all 16 initial panels in
+contact sheet and final original/second gray, second black and warped R/Y/black
+full size. Small renderer tests ran; full legacy regression skipped for unchanged
+POV sources. No photo/scene/material/whole-ring recovery claim.
+
+Final report: photo2/output/shared-highlights-r057-final/report.json, SHA-256
+`6095d26bd555b5dde171d48f0df40557a102707db15989cbee8752cc5a0a1efd`.
+Reproduce: `.venv/bin/python photo2/shared_highlight_audit.py --output
+photo2/output/shared-highlights-new`; prerequisites in SHARED_HIGHLIGHTS.md.
+
+Preflight daisy, entry 613859f, only R056 records modified; fetch succeeded,
+ahead/behind 0/0, no stashes/pull/transfer/delegation. Live remote lookup failed
+on sandbox DNS; approved retry confirmed entry tip. Publish scoped source/docs
+including R056 records; final response reports verified commit/remote delivery.
+Generated outputs, review figures and .venv stay ignored.
+
+**One next task:** Test a second spatially separated observed-region group within each frozen
+crop against surviving wrong-helicity/phase candidates. Select from beauty and
+observed regions before evaluator truth, keep fixed fits and R055 conservative
+repair, and measure both lost correct and rejected wrong alternatives. Retain
+jitter and background/duplicate/excluded-phase controls. Stop after local
+hypothesis/seed/index evidence and checks, before ring growth or photo fitting.
+Recommend gpt-6-astra / High with a fresh `/new` for this distinct step.
+No new end-of-round questions; no pending advice needed for this completed round.
+
+## R056 — new-session status and opening advice questions
+
+User supplied previous completion and current `/status`, without a go/Continue
+instruction. Record this opening; the next experiment has not started.
+Current supplied session `01a0d110-26b5-7700-8b92-f7810194e19b`, Codex v0.155.1,
+gpt-6-astra / High. R056 in REQUEST_LOG.md separates the prior session's token
+totals from current status; no current token total supplied or account inspected.
+
+Saved advice remains smooth surfaces, usually one lighting-dependent bright
+patch, common geometry, small gloss differences, invisible lengthwise holes
+and white thread, and assistant-selected anchors. Two opening questions, waived
+by R057 above (flash context supplied; no further answers required):
+
+1. For photo 2, do you remember the lighting setup—window light, room lights,
+   camera flash, or a combination? This would help interpret bright reflections
+   that obscure bead boundaries.
+2. Have you noticed the magenta paper or neighboring colored beads casting
+   visible color reflections onto the black beads? This would help distinguish
+   reflected color from bead color.
+
+Next bounded task remains the R055 distance/gradient comparison for shared
+bright cavities, keeping fixed fits/clicks, both hands and controls. Stop after
+pixel ownership and local region/anchor/index evidence, before ring growth or
+photo fitting. Advice is not an additional approval gate for authorized work.
+
+Preflight: daisy, clean photo-2-reconstruction at
+613859f4c576d6b015b47bfc5c24b3a5c65d7136, tracking origin with cached ahead/behind
+0/0, no stashes; Python 3.12.14. No fetch/live remote check, pull, transfer or
+delegation. Read current handoff, latest log, workflow and HIGHLIGHT_REGIONS.md;
+targeted reads recovered the current material after initial output truncation.
+Only request/handoff records updated locally for follow-up publication. No
+experiment, implementation, render, commit or push. Documentation whitespace
+checked; runtime tests skipped. Stay here with gpt-6-astra / High; no new `/new`
+needed for the pending step.
+
 ## R055 — highlight repair improves jitter tolerance, not detection or helicity
 
 User authorized "ok" after R053/R054 opening advice. No pending questions.

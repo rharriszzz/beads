@@ -40,8 +40,11 @@ and fails on the second R/Y/black patch. New gray outputs can be correct despite
 a misidentified anchor. The [highlight-region repair](HIGHLIGHT_REGIONS.md) assigns
 4,672 omitted pixels to their correct enclosing beads and improves four-anchor
 acceptance from 100 to 115/272 without increasing wrong-index trials. It does
-not improve bead detection or resolve helicity. Next: test ownership of bright
-cavities shared by multiple regions, preserving existing labels and both hands.
+not improve bead detection or resolve helicity. The [shared-cavity comparison](SHARED_HIGHLIGHTS.md)
+raises four-anchor acceptance to 140/272 with both distance and gradient paths,
+but adds 137/151 wrong-owner pixels and worsens phase rejection. Keep conservative
+abstention as the baseline. Next: test a second separated observed-region group
+against surviving helicity/phase alternatives, holding the current fits fixed.
 
 ## Run with Python 3.12
 

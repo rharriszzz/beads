@@ -626,3 +626,50 @@ Next: compare fixed distance/gradient assignment of shared bright cavities with
 current abstention, preserving existing region labels, both hands and controls.
 Stop after added-pixel ownership/region/anchor/index evidence and checks before
 ring growth/photo fitting. Recommend gpt-6-astra / High with fresh /new.
+
+
+## 2026-09-23 — R057 shared highlights: more acceptance, incorrect ownership
+
+R056 current/prior-session status saved separately. R057 authorizes continuation
+without more answers: iPhone capture, flash unknown; color reflections unspecified.
+No lighting parameter or scene change inferred. See SHARED_HIGHLIGHTS.md for
+protocol, results, controls and reproduction.
+
+R057 compares fixed distance and RGB-gradient paths in shared bright cavities;
+see SHARED_HIGHLIGHTS.md. Both raise four-anchor acceptance 115→140/272,
+but add respectively 137/151 wrong-owner pixels and 216/301 unresolved-owner
+pixels. Wrong-index trials remain 36; excluded-phase acceptance worsens 10→12/32.
+Supported region/color/missing-index summaries and split/merge counts do not
+improve. Keep R055 conservative abstention as the baseline, not either extension.
+Unknown photo flash use remains unspecified; no lighting/model parameter changed.
+
+Distance adds 1,465 shared pixels: 1,112 correct, 137 wrong, 216 unresolved;
+gradient adds 1,679: 1,227 correct, 151 wrong, 301 unresolved. No added background.
+R055's 4,672 correct single-owner pixels and all existing labels stay fixed.
+Forty-five shared cavities, 222/8 ties. Three-anchor acceptance 134→155/272;
+four 115→140/272; no losses, 36 wrong-index trials per group size unchanged.
+Twenty original-gray four-anchor gains have correct seeds; two of five second-
+gray gains have correct seeds, three retain the known seed slip. Four gray
+conditions accept all 17 variants; second R/Y/black and black still fail.
+
+Background/duplicate controls reject throughout. Excluded phase retains 12/32
+instead of 10/32. All 13 applicable deletion controls leave seeds unassigned
+and restore no deleted pixels; three original-gray ablations are inapplicable.
+Reused 128 fits, both hands, 16 conditions, 544 positive and 96 control trials;
+no fitting/rendering. All old/conservative masks, gates, scores and ownership
+reproduce; all 86 tests pass. Compilation/dependency/whitespace checks pass;
+pip cache warning only. Two final runs reproduce 80 artifacts byte for byte;
+16 sources and previous/bound manifests verify. Initial/final numerical results
+and prediction/evaluation/mask bytes identical after reporting-only additions.
+Visual review: 16 initial contact-sheet panels and four final full-size panels.
+No failed runtime test/audit, scene/material/photo change or automatic recovery
+claim. Small renderer tests ran; full legacy regression skipped for unchanged
+POV sources. Generated outputs/.venv remain ignored.
+
+Next: Test a second spatially separated observed-region group within each frozen
+crop against surviving wrong-helicity/phase candidates. Select from beauty and
+observed regions before evaluator truth, keep fixed fits and R055 conservative
+repair, and measure both lost correct and rejected wrong alternatives. Retain
+jitter and background/duplicate/excluded-phase controls. Stop after local
+hypothesis/seed/index evidence and checks, before ring growth or photo fitting.
+Recommend gpt-6-astra / High with a fresh `/new` for this distinct step.

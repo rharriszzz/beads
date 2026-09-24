@@ -139,7 +139,14 @@ size. Generated output and environments stay ignored.
 Final report: `output/highlight-regions-r055-final/report.json`, SHA-256
 `00cb9976af8fce21d82d1407fe872e0b985e6bc13d7c2523e75eeb9e401b4054`.
 
-## One next task
+## Follow-up completed in R057
+
+[SHARED_HIGHLIGHTS.md](SHARED_HIGHLIGHTS.md) records the comparison below. Both
+extensions improve acceptance but introduce wrong ownership and weaken phase
+rejection; conservative R055 repair remains the baseline. See that note for the
+current next task.
+
+## Original next task
 
 Compare fixed distance-based and image-gradient-based assignment of enclosed
 bright cavities touching multiple observed regions. Preserve every already
