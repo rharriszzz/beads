@@ -18,9 +18,65 @@ chain indexing or recovered full pattern is established for any image.
 [R081 illustrated queue and definitions](photo2/AREA_WARNING_STABILITY.md): sensitivity
 is to one omitted area reference, not a completeness or body-identity test.
 
+R084 maker-directed shape calibration: [eight one-black-bead walks](photo2/BLACK_BEAD_WALK.md),
+26 consecutive indices at each of eight major-circle locations, both helicities. Known synthetic
+indices are separate from the image-only inventories above. S/V paths between
+bead interiors are the next method gap; the beads5 area diagnostic is deferred.
+
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R084 — Eight black-bead walks, both helicities (2026-09-24)
+
+Maker redirects work from area-cut diagnostics to visible shape and S/V changes
+between bead interiors. Requested 26 consecutive one-black/all-white renders,
+then eight or twelve major-circle locations, then opposite helicity. Chose eight
+locations per hand: **416 renders total**, no extra baseline/ID/isolated renders.
+R083 explanation-only turn and supplied session/status are recorded in REQUEST_LOG.
+Same session 01a0d682-1bc1-7fd3-90c2-c2cf5e390450, Astra high; no new usage,
+delegation or computer transfer. Preflight daisy/WSL2, clean branch b0e2461,
+origin upstream, no stashes; escalated fetch succeeds, ahead/behind 0/0.
+
+[Illustrated assessment](photo2/BLACK_BEAD_WALK.md) ·
+[Paired animations and close-ups](photo2/review/r084/helicity.html).
+Original beads.pov/bead-shape.inc unchanged. Case-3 opaque white/black material,
+676 beads, 104 turns, 6.5/turn; fixed camera/light and phase. Start indices
+0/84/169/253/338/422/507/591, 26 each, Helicity ±1. Retains legacy gamma warnings.
+Python 3.12.14, POV-Ray 3.7.0.10.unofficial. This is known synthetic calibration,
+not source-pattern lookup for the JPEG inventories.
+
+Broad exposed portions become crescents and disappear/reappear with occlusion.
+For static hand comparisons select multiples of 13: black position/orientation
+then match exactly; neighbor coverage changes sides. Eight pairs' response areas
+differ <2.6%, while mask intersection/union is 0.832–0.875: area alone misses
+shape differences. White highlights remain on black beads. Response masks use
+the per-walk pixelwise maximum reference and thresholds 3/10/25; not exact
+silhouettes. Most animated matching indices move to a different minor-circle
+position when hand flips. No image-only helicity, indexing or body-count claim.
+
+Checks: both 208-frame verifiers, comparison verifier and compilation pass.
+Verified assignments, dimensions, all source/image/artifact hashes, response
+counts, 24 animations and HTML links. Exactly 416 rendered PNGs. Ninety-two
+checkpoint figures unchanged by comparison. Inspected both eight-location
+overviews, all eight aligned close-ups and selected complete walk sheets.
+No browser playback, inverse-model or legacy rendering suite. Corrected initial
+phase tolerance assertion (reported phase 0.000000027) and draft comparison
+newline syntax error; reused first render, no extra images. Raw renders/wrappers/
+logs and environment remain ignored; curated review evidence committed.
+
+All seven active inventory counts unchanged (313/318/304/342/328/310/327),
+none verified complete. Carry beads6 144/189, beads3 122/405, beads5 188, R081
+queue, provisional colors/borders, beads7 glint repairs, missing observations
+and null indices. Ignore slivers; no ownership decisions. No new maker questions;
+prior photo-shadow questions pending. Beads5 349/364 assessment is deferred.
+
+Next bounded task: measure S and V along illustrated paths between visible bead
+interiors in beads6, using the shape experiment to guide candidate boundaries;
+compare seams with within-bead shading/highlight controls. Stop at illustrated
+method assessment before mask/count/exclusion/index changes. No JPEG source-
+pattern lookup. White/black calibration cannot test saturation changes itself.
+Recommend **gpt-6-astra / High, fresh `/new`** when ready; do not auto-continue.
 
 ## R082 — beads6 144/189 boundary/scale diagnostic (2026-09-24)
 

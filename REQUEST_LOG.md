@@ -3268,3 +3268,97 @@ confirmed 746f57f72b13dbc69b28533f70eab55370a4d2b6. Final local status at that
 check was clean, ahead/behind 0/0. Staged whitespace check passed for all 15 scoped
 files. This delivery record is a documentation-only follow-up.
 Staging the delivery record hit read-only .git/index.lock; retried with escalation.
+
+## R083 — Explain beads6 unresolved examples only (2026-09-24)
+
+User supplied prior completion: worked 7m25s, done 10:58 PM, session
+01a0d679-0bfe-7a00-9d15-4096c977d6a0, 76,948 total tokens (64,068 input,
+12,880 output, 582 reasoning, 836,224 cached). New supplied session
+01a0d682-1bc1-7fd3-90c2-c2cf5e390450: Codex 0.155.1, gpt-6-astra high,
+Workspace/Ask for approval, Default, ~/git/beads; weekly 7% left (Sep 28 17:37),
+283 credits, Luna Reserve 100% (Oct 1 23:00). Account identity omitted.
+No current-session usage supplied. User requested example images and whether to
+read BEADS6_BOUNDARY_DIAGNOSTIC.md, explicitly no further work; tired/low weekly
+limit. Answered from saved notes and existing boundary-comparison.png: outlines
+are not verified single bodies; opening/competing interpretations suffice, no
+answer required. No files changed or experiment run on that turn. Recorded now
+as part of the subsequently authorized R084 step.
+
+## R084 — One black bead moving through 26 white-bead scenes (2026-09-24)
+
+User says the pictures do not appear to use saturation/value changes along the
+path from one bead to the next, or beads.pov geometry to understand consecutive
+visible portions. For the second issue, requests an all-white scene with one
+black bead advanced one index per picture, at most 13*2 pictures, then inspect
+visible black-bead shapes. This supersedes the queued beads5 349/364 diagnostic.
+Same supplied session/status as R083; no new usage or delegation supplied.
+Preflight: daisy/WSL2, clean photo-2-reconstruction at b0e2461, origin upstream,
+no stashes; Python 3.12.14, POV-Ray 3.7.0.10.unofficial. Fetch initially blocked
+by read-only FETCH_HEAD; escalated fetch succeeded, ahead/behind 0/0. Initial
+file search had nonexistent glob paths; corrected by using existing scene/helpers.
+Scope: exactly 26 beauty renders, black index 0–25, 676 total beads (104 turns,
+6.5 beads/turn), original case-3 white/black geometry/finish/camera/light. Frozen
+phase and helicity. Python generates colors and summaries; beads.pov renders.
+This is explicitly known synthetic calibration, not image-only pattern recovery.
+Do not change JPEG inventories or resolve ignored fragment ownership. Record S/V
+path tracing as a method gap and next task, not as completed by this experiment.
+
+R084 steering: user adds repeating the experiment at about eight or twelve
+positions around the torus major axis to compare angles. Choose eight evenly
+spaced starts (0,84,169,253,338,422,507,591), 26 consecutive indices each,
+208 beauty renders total. Fixed camera; no additional object-ID or baseline
+renders. This extends the earlier 26-total limit to 26 per requested repetition.
+First render succeeded but the phase assertion was too strict: renderer reports
+0.000000027 rather than <1e-8 (CLI precision). Relax to <1e-6, record actual phase,
+and reuse that frame; no rerender. Preserve original scene/finish, including its
+legacy gamma behavior. No renderer or model change.
+
+R084 second steering: user asks to observe the opposite helicity and its subtle
+visible differences. Repeat all eight 26-frame walks with Helicity=-1, keeping
+camera/light/shape/finish/count/phase fixed: 416 total renders. Reuse all positive
+renders. Publish matched-index paired animations plus static comparisons at
+indices divisible by 13 (same black-bead position/orientation in both scenes;
+neighbor winding differs). Most other matched indices have different minor-circle
+positions, which must not be confused with pure local shape differences.
+
+### R084 outcome and checks
+
+[Illustrated assessment](photo2/BLACK_BEAD_WALK.md) ·
+[Paired animations and close-ups](photo2/review/r084/helicity.html).
+Original beads.pov/bead-shape.inc unchanged. Case-3 opaque white/black material,
+676 beads, 104 turns, 6.5/turn; fixed camera/light and phase. Start indices
+0/84/169/253/338/422/507/591, 26 each, Helicity ±1. Retains legacy gamma warnings.
+Python 3.12.14, POV-Ray 3.7.0.10.unofficial. This is known synthetic calibration,
+not source-pattern lookup for the JPEG inventories.
+
+Broad exposed portions become crescents and disappear/reappear with occlusion.
+For static hand comparisons select multiples of 13: black position/orientation
+then match exactly; neighbor coverage changes sides. Eight pairs' response areas
+differ <2.6%, while mask intersection/union is 0.832–0.875: area alone misses
+shape differences. White highlights remain on black beads. Response masks use
+the per-walk pixelwise maximum reference and thresholds 3/10/25; not exact
+silhouettes. Most animated matching indices move to a different minor-circle
+position when hand flips. No image-only helicity, indexing or body-count claim.
+
+Checks: both 208-frame verifiers, comparison verifier and compilation pass.
+Verified assignments, dimensions, all source/image/artifact hashes, response
+counts, 24 animations and HTML links. Exactly 416 rendered PNGs. Ninety-two
+checkpoint figures unchanged by comparison. Inspected both eight-location
+overviews, all eight aligned close-ups and selected complete walk sheets.
+No browser playback, inverse-model or legacy rendering suite. Corrected initial
+phase tolerance assertion (reported phase 0.000000027) and draft comparison
+newline syntax error; reused first render, no extra images. Raw renders/wrappers/
+logs and environment remain ignored; curated review evidence committed.
+
+All seven active inventory counts unchanged (313/318/304/342/328/310/327),
+none verified complete. Carry beads6 144/189, beads3 122/405, beads5 188, R081
+queue, provisional colors/borders, beads7 glint repairs, missing observations
+and null indices. Ignore slivers; no ownership decisions. No new maker questions;
+prior photo-shadow questions pending. Beads5 349/364 assessment is deferred.
+
+Next bounded task: measure S and V along illustrated paths between visible bead
+interiors in beads6, using the shape experiment to guide candidate boundaries;
+compare seams with within-bead shading/highlight controls. Stop at illustrated
+method assessment before mask/count/exclusion/index changes. No JPEG source-
+pattern lookup. White/black calibration cannot test saturation changes itself.
+Recommend **gpt-6-astra / High, fresh `/new`** when ready; do not auto-continue.

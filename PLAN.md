@@ -11,24 +11,26 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R082 beads6 144/189 diagnostic complete
+## Current step — R084 maker-directed visible-shape experiment
 
-[Illustrated assessment](photo2/BEADS6_BOUNDARY_DIAGNOSTIC.md): retain both mask
-extents unresolved. JPEG seam evidence exists, but exploratory portions cross
-half-median cutoffs with ±2px cut shifts. No stable two-substantial-body split
-established; no active mask, ID, selection or index changes. Sixteen controls,
-frozen-label/source hashes, repeat artifacts and numerical evidence verify.
+[Eight one-black-bead walks](photo2/BLACK_BEAD_WALK.md): 26 consecutive indices
+at each of eight positions around the necklace's major circle, both helicities, with original
+beads.pov geometry, fixed camera/light and opaque white/black palette. This
+known-index synthetic calibration supersedes the queued beads5 349/364 area
+assessment. It supplies examples of exposed shapes and neighbor occlusion;
+it does not recover source-pattern indices from the generated JPEGs.
 
-Counts remain 313/318/304/342/328/310/327; none verified complete. Preserve the
-[R081 image-scoped queue](photo2/AREA_WARNING_STABILITY.md), beads3 122/405,
-beads5 188 and all provisional color/border/glint warnings and null indices.
+Counts remain 313/318/304/342/328/310/327; none verified complete. Preserve
+beads6 144/189 unresolved, beads3 122/405, beads5 188, the R081 queue, all
+provisional color/border/glint warnings and missing/null indices. Ignore slivers.
 
-Next bounded task: assess beads5 349/364's newly exposed large-area sensitivities
-using JPEG boundary evidence and frozen masks. Publish an illustrated resolve-or-
-retain assessment with competing body-count hypotheses, then stop before mask
-changes, new IDs, sliver ownership, indexing or photographs. No source-pattern
-lookup. No new maker questions; older photo questions remain pending. Recommend
-**gpt-6-astra / High, fresh `/new`** using SESSION_HANDOFF.md.
+Next bounded task: measure S and V along illustrated paths between visible bead
+interiors in beads6, using this shape calibration to guide candidate boundaries.
+Compare candidate seams with within-bead shading/highlight controls; stop at an
+illustrated method assessment before mask/count/exclusion/index changes. Keep
+source-pattern lookup out of the JPEG assessment. No new maker questions;
+older photo questions remain pending. Recommend **gpt-6-astra / High, fresh
+`/new`** when ready. No automatic continuation tonight.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 
