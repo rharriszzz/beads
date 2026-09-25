@@ -1,0 +1,232 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/beads6_boundary_diagnostic.py",
+    "--output",
+    "photo2/review/r082"
+  ],
+  "parameters": {
+    "image": "beads6.jpg",
+    "inventory": "photo2/review/r078/inventory.json",
+    "baseline_report": "photo2/review/r078/report.json",
+    "shifts_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "parallel_offsets_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "gaussian_sigmas_px": [
+      0,
+      0.8,
+      1.2
+    ],
+    "sample_step_px": 0.25,
+    "profile_half_length_px": 7,
+    "targets": [
+      {
+        "id": 144,
+        "crop_xyxy": [
+          130,
+          188,
+          182,
+          248
+        ],
+        "side_seam_xy": [
+          [
+            149,
+            203
+          ],
+          [
+            151,
+            208
+          ],
+          [
+            152,
+            213
+          ],
+          [
+            154,
+            220
+          ],
+          [
+            154,
+            225
+          ]
+        ],
+        "lower_seam_xy": [
+          [
+            130,
+            225
+          ],
+          [
+            182,
+            225
+          ]
+        ],
+        "profiles": [
+          {
+            "name": "side-upper",
+            "center_xy": [
+              151,
+              208
+            ],
+            "axis_xy": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "side-middle",
+            "center_xy": [
+              153,
+              217
+            ],
+            "axis_xy": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "lower-neck",
+            "center_xy": [
+              161,
+              225
+            ],
+            "axis_xy": [
+              0,
+              1
+            ]
+          }
+        ],
+        "hypotheses": [
+          "One substantial central body with uncertain adjacent portions included in the mask.",
+          "Two adjacent substantial portions across the visible side seam; narrow continuation remains unclassified."
+        ]
+      },
+      {
+        "id": 189,
+        "crop_xyxy": [
+          90,
+          272,
+          143,
+          335
+        ],
+        "side_seam_xy": null,
+        "lower_seam_xy": [
+          [
+            98,
+            303
+          ],
+          [
+            104,
+            306
+          ],
+          [
+            109,
+            309
+          ],
+          [
+            114,
+            309
+          ],
+          [
+            120,
+            313
+          ],
+          [
+            123,
+            314
+          ]
+        ],
+        "profiles": [
+          {
+            "name": "lower-left",
+            "center_xy": [
+              105,
+              306.5
+            ],
+            "axis_xy": [
+              0,
+              1
+            ]
+          },
+          {
+            "name": "lower-middle",
+            "center_xy": [
+              110,
+              309
+            ],
+            "axis_xy": [
+              0,
+              1
+            ]
+          },
+          {
+            "name": "lower-right",
+            "center_xy": [
+              116,
+              310.3
+            ],
+            "axis_xy": [
+              0,
+              1
+            ]
+          }
+        ],
+        "hypotheses": [
+          "One substantial upper body with uncertain lower continuation included in the mask.",
+          "Two vertically adjacent usable body portions separated by the curved lower seam."
+        ]
+      }
+    ],
+    "notes": "JPEG-selected exploratory cuts, not recovered boundaries. Preserve original masks, IDs, exclusions and null indices. No narrow portion ownership or source-pattern lookup."
+  },
+  "sources": {
+    "beads6.jpg": "ce86d5c1faa5a5c3da931bd867156eccada3225857e7fa35a62cf280b36a2059",
+    "photo2/beads1_inventory.py": "0165ba8bfde46e795efe36f09d7bb07d0ad5a3ede120c8893fd129d5fd24e328",
+    "photo2/beads5_188_diagnostic.py": "7436cd295ab3ec4e5cb252b038da4650dfbb38b45e337f483a287660cce30506",
+    "photo2/beads5_inventory.py": "0cced2d5d9632e98b0caf115a8a91dd19707acec5d772c2ce02bb9c0978e808a",
+    "photo2/beads6-boundaries-r082.json": "7b13da1c93bd53cfe0971485283d2eb88e1798f1a9b02d68c70fb82f5b4c7972",
+    "photo2/beads6-review-r078.json": "981a0c825d5ca79babe794d65aa25544ce62f056d1b670142c7de1bc20713e87",
+    "photo2/beads6_boundary_diagnostic.py": "ff12a616f6a973d8e5d45ad3d0e2a79a23fb9a94068fe098c4ed42284a889b0b",
+    "photo2/beads6_inventory.py": "26e68f65710bec247e638565881d1440bab7bc06e75a74eb7257dac9945e1907",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/review/r078/inventory.json": "e7748d6028e0d6f4a161cd107bfc1123a86029c1e35e79023e106f35252f8911",
+    "photo2/review/r078/report.json": "7ad0191e240f07405101350cf47200bc7ef37e5d1f5a20861aa60b15cefbd84a",
+    "photo2/test_beads5_188_diagnostic.py": "e7fd07e508c6e4a794fd6ea07091f1392de504699bd6bb56cdb4dab681230077",
+    "photo2/test_beads6_boundary_diagnostic.py": "b88ffc933aa74282214c9cf4947cf24618d32d679f1b41cc204d4d3a71a31887",
+    "photo2/test_beads6_inventory.py": "81531f5e88cdae6a0f3728d66b5bbb54495a18b974a9e4ff05cfdae3f1152adc"
+  },
+  "checks": {
+    "baseline_sources_verified": true,
+    "inventory_hash_verified": true,
+    "regenerated_labels_match_R078": "0339fec4daf1f4835697396ee105c4c9c68970e47bd911a49c3f6966e1a26b70",
+    "all_partitions_conserve_pixels": true,
+    "active_count": 310,
+    "chain_indices_null": true,
+    "profile_sample_rows": 5130
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "artifacts": {
+    "area-sensitivity.png": "c780582832ee6e41a3f1470929a83a5d0739e2af2005cf6acc5e09251c10e569",
+    "boundary-comparison.png": "65b1a14eaecc617a95a7254be7cc26aa4708e0460f7c1cd9c0c39abc747de102",
+    "diagnostics.json": "5ee3feec2aa7bbcb8fcfecb4c4c1b0ac04f49cdbf4336248e4226c7cda105e91",
+    "profiles.csv": "00180fa2cb7593873c022227d681478ee3c9d40d89ecf85dacccb589ddb64bd8",
+    "profiles.png": "b0d2f37ba294f0cac80ac5c5c904b31790edca9ad848b2a757550262d4eaeb6d",
+    "review.html": "2ee15c2a1f9c47929ec56b92ff4e0ebfbfa4ffef442955b011e281250f646d6e"
+  }
+}

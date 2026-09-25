@@ -12,7 +12,7 @@ chain indexing or recovered full pattern is established for any image.
 | beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved and persistently large; [R081 queue](photo2/AREA_WARNING_STABILITY.md): 47/163/198/199/346 sensitive |
 | beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); R081: 272 sensitive; same-color/white-shadow borders and completeness provisional |
 | beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); [R080 diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md): 188 unresolved; R081: 188/349/364 sensitive; neutral seams/colors/completeness provisional |
-| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); R081: 144/189 sensitive, next diagnostic; same-color/white-shadow borders and completeness provisional |
+| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); [R082 diagnostic](photo2/BEADS6_BOUNDARY_DIAGNOSTIC.md): 144/189 retained unresolved; same-color/white-shadow borders and completeness provisional |
 | beads7 | 327 | [R079 active map](photo2/BEADS7_INVENTORY.md); R081: 128/200/236 sensitive; manual black-glint repairs and pale labels/borders/completeness provisional |
 
 [R081 illustrated queue and definitions](photo2/AREA_WARNING_STABILITY.md): sensitivity
@@ -21,6 +21,57 @@ is to one omitted area reference, not a completeness or body-identity test.
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R082 — beads6 144/189 boundary/scale diagnostic (2026-09-24)
+
+User requested "continue" with prior completion usage and new `/status`.
+Prior session `01a0d670-d54c-7122-8fc1-71bd1ca0b22a`: Astra high, worked 7m31s,
+75,038 total (61,772 input, 13,266 output, 873 reasoning, 871,808 cached).
+New session `01a0d679-0bfe-7a00-9d15-4096c977d6a0`: Astra high, Codex 0.155.1,
+weekly 7% left (Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:50).
+No current-session usage supplied. Account identity omitted; no delegation/transfer.
+Preflight daisy/WSL2, clean photo-2-reconstruction at b868203, origin upstream,
+no stashes, Python 3.12.14. Fetch needed escalation for read-only FETCH_HEAD;
+succeeded, ahead/behind 0/0.
+
+**Retain beads6 144/189 unresolved; active inventory remains 310.**
+[Illustrated diagnostic](photo2/BEADS6_BOUNDARY_DIAGNOSTIC.md) preserves one/two-body
+hypotheses for each target. No active masks, IDs, exclusions or indices changed.
+144's middle side seam has raw depth 66/255, still 36.71 at sigma 1.2. 189's
+middle lower seam persists, but its right profile has no located trough; its
+left profile reaches background and is not independent internal-boundary evidence.
+
+144: 557 pixels / 282.5 median = 1.9717; omission range 1.8754–2.0784.
+189: 663 / 346 = 1.9162; range 1.7586–2.1048. Four of eight omissions cross >2
+for each, reproducing R081; original R078 selection warnings stay unchanged.
+Thirty exploratory partitions shifted ±2px conserve all saved pixels. 144 nominal
+central/side/lower = 336/161/60, ranges 281–381/127–198/49–79. 189 upper/lower =
+513/150, ranges 474–545/118–189. 144 side and 189 lower cross half-median cutoffs;
+no robust two-substantial-body split established. Cuts are not recovered boundaries
+and do not resolve sliver ownership. Shading/JPEG/occlusion and provisional
+reference masks limit interpretation; no confidence intervals or body-count test.
+
+Checks: two new curved-cut controls + three reused diagnostic + four beads6 +
+seven selection controls pass (16); compilation passes. All seven baseline sources
+and frozen inventory verify; regenerated labels match R078 NPY hash exactly.
+15 source hashes and six curated artifact hashes verify; repeat artifacts
+byte-identical, reports equal except command. Documented verification recomputes
+profile statistics from 5,130 CSV samples and checks all 30 partition sums and HTML
+links. All three final figures inspected. No browser interaction, other-image
+analysis or legacy rendering/indexing suite. No analysis/test failures.
+Report SHA256 878f75cd5f20daa06b7a9cf436116f8ec814e226a4a603fac5e189e8d2144544.
+Scratch/repeat/environment remain ignored; curated evidence committed.
+
+Carry beads3 122/405, beads5 188, the rest of the R081 queue, provisional colors,
+same-color/white-shadow borders, beads7 manual glint repairs, missing observations
+and null chain indices. None of seven inventories is verified complete.
+No new maker questions; saved R069 answers applied, older photo questions pending.
+
+Next bounded task: assess beads5 349/364's newly exposed large-area sensitivities
+using JPEG boundary evidence and frozen masks. Publish an illustrated resolve-or-
+retain assessment with competing body-count hypotheses; stop before mask edits,
+new IDs, sliver ownership, indexing or photographs. No source-pattern lookup.
+Recommend **gpt-6-astra / High, fresh `/new`**; user controls model/session changes.
 
 ## R081 — seven-image area warning stability (2026-09-24)
 

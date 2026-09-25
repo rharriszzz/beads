@@ -2,7 +2,9 @@
 
 **310 provisional active observations:** 140 red, 118 blue-gray and 52 white.
 No complete inventory, physical centers, chain indices or pattern is established.
-No large-area or sparse-reference warnings remain on beads6. Beads3 122/405 and
+No large-area or sparse-reference warnings remain on beads6. R081 exposed
+reference-sensitive extents at 144/189; the [R082 boundary diagnostic](BEADS6_BOUNDARY_DIAGNOSTIC.md)
+retains both unresolved without changing this saved inventory. Beads3 122/405 and
 beads5 188 remain unresolved; observation IDs are specific to each image.
 
 [Review page](review/r078/review.html) · [Active map](review/r078/active-overview.png) ·

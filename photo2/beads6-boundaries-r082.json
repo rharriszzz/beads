@@ -1,0 +1,43 @@
+{
+  "image": "beads6.jpg",
+  "inventory": "photo2/review/r078/inventory.json",
+  "baseline_report": "photo2/review/r078/report.json",
+  "shifts_px": [-2, -1, 0, 1, 2],
+  "parallel_offsets_px": [-2, -1, 0, 1, 2],
+  "gaussian_sigmas_px": [0, 0.8, 1.2],
+  "sample_step_px": 0.25,
+  "profile_half_length_px": 7,
+  "targets": [
+    {
+      "id": 144,
+      "crop_xyxy": [130, 188, 182, 248],
+      "side_seam_xy": [[149, 203], [151, 208], [152, 213], [154, 220], [154, 225]],
+      "lower_seam_xy": [[130, 225], [182, 225]],
+      "profiles": [
+        {"name": "side-upper", "center_xy": [151, 208], "axis_xy": [1, 0]},
+        {"name": "side-middle", "center_xy": [153, 217], "axis_xy": [1, 0]},
+        {"name": "lower-neck", "center_xy": [161, 225], "axis_xy": [0, 1]}
+      ],
+      "hypotheses": [
+        "One substantial central body with uncertain adjacent portions included in the mask.",
+        "Two adjacent substantial portions across the visible side seam; narrow continuation remains unclassified."
+      ]
+    },
+    {
+      "id": 189,
+      "crop_xyxy": [90, 272, 143, 335],
+      "side_seam_xy": null,
+      "lower_seam_xy": [[98, 303], [104, 306], [109, 309], [114, 309], [120, 313], [123, 314]],
+      "profiles": [
+        {"name": "lower-left", "center_xy": [105, 306.5], "axis_xy": [0, 1]},
+        {"name": "lower-middle", "center_xy": [110, 309], "axis_xy": [0, 1]},
+        {"name": "lower-right", "center_xy": [116, 310.3], "axis_xy": [0, 1]}
+      ],
+      "hypotheses": [
+        "One substantial upper body with uncertain lower continuation included in the mask.",
+        "Two vertically adjacent usable body portions separated by the curved lower seam."
+      ]
+    }
+  ],
+  "notes": "JPEG-selected exploratory cuts, not recovered boundaries. Preserve original masks, IDs, exclusions and null indices. No narrow portion ownership or source-pattern lookup."
+}

@@ -3200,3 +3200,64 @@ PLAN, handoff and request log. No unrelated files staged.
 R081 delivery checks: the documented verification command also passes. Initial
 staging was blocked by read-only .git/index.lock; escalated staging succeeded.
 Staged whitespace check passes; only the 14 scoped audit/workflow files are staged.
+
+## R082 — Continue with beads6 144/189 boundary diagnostic (2026-09-24)
+
+User request: "continue" with prior completion banner (worked 7m31s, done
+10:49 PM). Prior session `01a0d670-d54c-7122-8fc1-71bd1ca0b22a`, Astra high:
+75,038 total tokens (61,772 input; 13,266 output; 873 reasoning; 871,808 cached).
+New supplied session `01a0d679-0bfe-7a00-9d15-4096c977d6a0`, Codex 0.155.1,
+gpt-6-astra high, Workspace/Ask for approval, Default, ~/git/beads. Weekly 7% left
+(Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:50). Account identity
+omitted. No current-session usage, delegation or transfer supplied.
+Preflight: daisy/WSL2, clean photo-2-reconstruction at b868203, origin upstream,
+no stashes, Python 3.12.14. Fetch blocked by read-only FETCH_HEAD; escalated fetch
+succeeded, ahead/behind 0/0. Read current handoff, recent requests, plan, saved
+answers and relevant inventory/diagnostic notes. Scope: JPEG boundary profiles
+and frozen masks for beads6 144/189; publish illustrated resolve-or-retain
+assessments with competing body-count hypotheses. Stop before mask edits, new
+IDs, sliver ownership, indexing or photographs; no source-pattern lookup.
+
+### R082 outcome and checks
+
+**Retain beads6 144/189 unresolved; active inventory remains 310.**
+[Illustrated diagnostic](photo2/BEADS6_BOUNDARY_DIAGNOSTIC.md) preserves one/two-body
+hypotheses for each target. No active masks, IDs, exclusions or indices changed.
+144's middle side seam has raw depth 66/255, still 36.71 at sigma 1.2. 189's
+middle lower seam persists, but its right profile has no located trough; its
+left profile reaches background and is not independent internal-boundary evidence.
+
+144: 557 pixels / 282.5 median = 1.9717; omission range 1.8754–2.0784.
+189: 663 / 346 = 1.9162; range 1.7586–2.1048. Four of eight omissions cross >2
+for each, reproducing R081; original R078 selection warnings stay unchanged.
+Thirty exploratory partitions shifted ±2px conserve all saved pixels. 144 nominal
+central/side/lower = 336/161/60, ranges 281–381/127–198/49–79. 189 upper/lower =
+513/150, ranges 474–545/118–189. 144 side and 189 lower cross half-median cutoffs;
+no robust two-substantial-body split established. Cuts are not recovered boundaries
+and do not resolve sliver ownership. Shading/JPEG/occlusion and provisional
+reference masks limit interpretation; no confidence intervals or body-count test.
+
+Checks: two new curved-cut controls + three reused diagnostic + four beads6 +
+seven selection controls pass (16); compilation passes. All seven baseline sources
+and frozen inventory verify; regenerated labels match R078 NPY hash exactly.
+15 source hashes and six curated artifact hashes verify; repeat artifacts
+byte-identical, reports equal except command. Documented verification recomputes
+profile statistics from 5,130 CSV samples and checks all 30 partition sums and HTML
+links. All three final figures inspected. No browser interaction, other-image
+analysis or legacy rendering/indexing suite. No analysis/test failures.
+Report SHA256 878f75cd5f20daa06b7a9cf436116f8ec814e226a4a603fac5e189e8d2144544.
+Scratch/repeat/environment remain ignored; curated evidence committed.
+
+Carry beads3 122/405, beads5 188, the rest of the R081 queue, provisional colors,
+same-color/white-shadow borders, beads7 manual glint repairs, missing observations
+and null chain indices. None of seven inventories is verified complete.
+No new maker questions; saved R069 answers applied, older photo questions pending.
+
+Next bounded task: assess beads5 349/364's newly exposed large-area sensitivities
+using JPEG boundary evidence and frozen masks. Publish an illustrated resolve-or-
+retain assessment with competing body-count hypotheses; stop before mask edits,
+new IDs, sliver ownership, indexing or photographs. No source-pattern lookup.
+Recommend **gpt-6-astra / High, fresh `/new`**; user controls model/session changes.
+
+Scoped delivery: diagnostic code, annotations, two controls, curated figures and
+numerical evidence, methods, PLAN, handoff and request log. No unrelated files staged.
