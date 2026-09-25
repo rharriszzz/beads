@@ -5,24 +5,63 @@
 Generated JPEGs first (R059); ignore slivers (R069). No complete inventory,
 chain indexing or recovered full pattern is established for any image.
 
-| Image | Current active observations | Evidence and limits |
+| Image | Active observations | Current evidence and unresolved issues |
 | --- | ---: | --- |
-| beads1 | 313 | [R069 selection](photo2/INVENTORY_SELECTION.md); fragments and image-specific 211 excluded |
-| beads2 | 318 | [R070 review](photo2/BEADS2_INVENTORY.md); pale-lavender support, provisional borders |
-| beads3 | 304 | [R071/R072 inventory](photo2/BEADS3_INVENTORY.md); [R073/R074 geometry diagnostic](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved |
-| beads4–7 | Not reviewed beyond R059 baseline | Candidate counts are not accepted inventories |
+| beads1 | 313 | [R069 active map and sliver exclusions](photo2/INVENTORY_SELECTION.md); fragments remain excluded under the maker's answer |
+| beads2 | 318 | [R070 active map](photo2/BEADS2_INVENTORY.md); palette and same-color borders remain provisional |
+| beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved |
+| beads4 | Not reviewed | [R059 baseline](photo2/BLIND_GENERATED.md); candidate count is not an accepted inventory |
+| beads5 | Not reviewed | [R059 baseline](photo2/BLIND_GENERATED.md); candidate count is not an accepted inventory |
+| beads6 | Not reviewed | [R059 baseline](photo2/BLIND_GENERATED.md); candidate count is not an accepted inventory |
+| beads7 | Not reviewed | [R059 baseline](photo2/BLIND_GENERATED.md); candidate count is not an accepted inventory |
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R075 — local mask geometry calibration (2026-09-24)
+
+User said "continue" and supplied a completion banner plus `/status`. The banner
+reports 21m49s and resumable session `01a0d11e-5bf6-7fb2-8c2d-43591b476b4b`;
+the supplied status identifies session `01a0d62b-8ba4-70e2-a204-3417eaff3777`.
+Keep those IDs distinct. Supplied status: gpt-6-luna medium, 1,247,572 total
+tokens (999,424 input; 248,148 output; 76,503 reasoning; 26,777,216 cached),
+weekly limit 13% left (resets 2026-09-28 17:37 local status display), 283 credits.
+Account identity omitted. No delegation or machine transfer supplied.
+
+Preflight: daisy; clean `photo-2-reconstruction` at `cc87c6d`; origin upstream;
+no stashes. Initial fetch was blocked because `.git/FETCH_HEAD` was read-only;
+approved fetch then succeeded, ahead/behind 0/0. `.venv` is local. R075 uses
+only beads3.jpg and R071 review labels/markers; no POV source, pattern, render,
+photo input or index lookup.
+
+`photo2/neighbor_geometry_calibration.py` transfers local mask-centroid offsets
+and covariance ellipse proxies from nearby same-color active controls. It uses
+ten controls around 122 and eight around 405, excludes both warning targets and
+all warning-bearing controls, and leaves each control out in turn. Median/p90/
+maximum centroid errors: 122 2.38/4.52/7.37 px; 405 3.14/5.54/8.20 px. Median
+control contour-transfer symmetric mean: 2.44 px / 2.32 px (p90 3.57/3.60).
+Warning-mask versus transferred ellipse error is larger: symmetric mean 5.94 px
+(p90 12.22) at 122 and 4.00 px (p90 8.15) at 405. Masks and markers remain
+provisional; this validates mask-to-mask transfer only, not physical centers.
+Neither warning is cleared or split. Beads3 remains 304; all chain indices null.
+R069 sliver policy unchanged. See [illustrated method/results](photo2/BLACK_REGION_METHODS.md)
+and [R075 artifacts](photo2/review/r075/report.json).
+
+Compilation passed; a second run reproduced all three curated artifacts byte for
+byte; `git diff --check` passed. Unit/legacy tests were not run. Figures visually
+reviewed. No new questions. Next bounded task: JPEG-only beads4 body/color review,
+adapt its palette and apply R069, stopping at an illustrated active map/checks.
+Carry the 122/405 warnings and null indices. Recommend gpt-6-astra / High, fresh
+`/new`; user controls model/session changes.
 
 ## R073/R074 — geometry primary; HSV supporting evidence
 
 R073 proposes center-to-center HSV sampling and local bead-outline recreation.
 R074 explicitly recommends the latter as primary: predicting nearby visible
 positions is also necessary for indexing. Exact requests are in REQUEST_LOG.md;
-this is the saved maker answer, not an unanswered question. No new questions
-needed for the next calibration step. Older photo questions remain pending.
+this is the saved maker answer, not an unanswered question. No new calibration
+question was needed for R075. Older photo questions remain pending.
 This supersedes R071's beads4-next instruction below.
 
 Preflight daisy, clean photo-2-reconstruction at 3e64b4a, origin upstream,
@@ -65,13 +104,10 @@ suite or count/index inference run. Bulk/scratch/repeat outputs ignored; curated
 plots/data/HTML committed under the user's illustrated-evidence exception.
 Report SHA256 e7843f5c71d463325e478c088a924d83a952987e3110414c63ac2b753bfdb7b0.
 
-Next bounded task: calibrate projected centers/outlines on clearer neighboring
-bodies, fit local spacing/projection with contour/occlusion support, and validate
-withheld-neighbor positions and outlines. Stop at an illustrated calibration
-report before missing-bead or index assignments; retain competing arrangements
-and R069 ignore-slivers policy. Then revisit 122/405 before resuming beads4.
-Recommend gpt-6-astra / High and a fresh `/new` using this handoff; user controls
-model/session changes. Do not reopen already answered construction questions.
+The calibration step described here was completed in R075. Its provisional-mask
+transfer does not resolve physical centers or the 122/405 warnings. See the R075
+handoff above for the next beads4 task and stopping point. Do not reopen already
+answered construction questions.
 
 ## R071/R072 — beads3 neutral-body map and requested black-region images
 

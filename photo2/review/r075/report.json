@@ -1,0 +1,30 @@
+{
+  "command": [
+    "photo2/neighbor_geometry_calibration.py",
+    "--review-bundle",
+    "photo2/review/r075"
+  ],
+  "parameters": {
+    "max_reference_distance_px": 58.0,
+    "max_references": 12,
+    "minimum_references": 5,
+    "same_color_only": true,
+    "outline_mahalanobis_radius": 2.0
+  },
+  "sources": {
+    "photo2/neighbor_geometry_calibration.py": "5f5dcad02c4787c959f955c7e5f24c1937b0d351685672611c2152267ae2e9f7",
+    "photo2/black-region-review-r073.json": "077b39280591cc0daebc3c3b5d7960393fd9eeb799f2293d520e3584232ecad7",
+    "photo2/review/r071/inventory.json": "e4d1a73a9a4e30b84e9f6f2998de552a47938db86897e3ad22ffb8d42c649ff0",
+    "photo2/review/r071/report.json": "35335aee0a64cc07976f478019be773702ba1dd4d50473bb49b8c1eb4e95ad5e",
+    "beads3.jpg": "adbbe759bd90db54aaa826282f195c5bcb26297d7fa7705e0da9cd0b0b455bfe",
+    "photo2/requirements.txt": "62509de39f4c22de4479d5e44ddfab71b776fe561b21428be84b50f28e674739",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/output/beads3-final/labels.npy": "1368e519b0840eabb1b9b0c63443ee363eba5df1826d1057f75080a6e63acf74"
+  },
+  "artifacts": {
+    "122-calibration.png": "3cec690bf45022ce1db3501aeae29f4bacb3dacbbb712b368585d300fdb1287e",
+    "405-calibration.png": "6d1dee4b1e6ba7d523acd9ea0110500eaa8c90a2ee5b79ac1811468409ac379a",
+    "calibration.json": "ee0d5f6cd2c806d09c853ed9bb5d6ede656f7f7fe89e6d28816fd2705c368d44"
+  },
+  "inventory_changed": false
+}

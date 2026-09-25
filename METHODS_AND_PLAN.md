@@ -25,8 +25,12 @@ Its mask includes uncertain shadow strips; its count and boundaries remain
 provisional. R073/R074 prioritize [local geometry and HSV diagnostics](photo2/BLACK_REGION_METHODS.md)
 for those two regions. Neighborhood geometry is primary: predict visible
 neighbors and calibrate projected outlines before trusting missing positions or
-indices. Current prediction errors of 3.16/6.32 pixels require further calibration.
-HSV supplies a faint second highlight at 405 but no accepted split. Beads4 is deferred.
+indices. R075 calibrated local marker-to-mask offsets and ellipse proxies against
+clearer same-color masks near 122/405. Leave-one-out mask-centroid medians are
+2.38/3.14 px (p90 4.52/5.54 px). Warning-mask contour mismatches remain 5.94/4.00
+px symmetric mean, with tails above 8 px. This tests transfer among provisional
+masks only; both warnings remain unresolved and beads3 stays at 304. Beads4 review
+resumes next. HSV supplies a faint second highlight at 405 but no accepted split.
 We do not yet have a verified complete bead inventory or a recovered full
 pattern for any of the seven generated images.
 

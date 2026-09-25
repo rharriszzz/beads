@@ -2779,3 +2779,40 @@ before delivery. JavaScript syntax check also passes (node --check).
 LF correction verified: five controls/compilation pass again; eight source
 hashes and seven byte-identical repeated artifacts pass. Final report SHA256
 e7843f5c71d463325e478c088a924d83a952987e3110414c63ac2b753bfdb7b0 supersedes the pre-LF report hash above.
+
+## R075 — Calibrate local geometry around beads3 warnings (2026-09-24)
+
+User request: "continue". Supplied completion banner: worked 21m49s; resumable
+session ID `01a0d11e-5bf6-7fb2-8c2d-43591b476b4b`. Separately supplied `/status`
+identifies session `01a0d62b-8ba4-70e2-a204-3417eaff3777`; keep the IDs distinct.
+That status says gpt-6-luna medium, total 1,247,572 tokens (999,424 input,
+248,148 output, 76,503 reasoning, 26,777,216 cached), 13% weekly limit remaining,
+283 credits. Account identity omitted. No delegation or transfer supplied.
+
+Preflight: daisy; clean `photo-2-reconstruction` at `cc87c6d`; origin upstream;
+no stashes; Python 3.12.14 in `.venv`. First fetch attempt failed because
+`.git/FETCH_HEAD` was read-only; after the required approval, fetch succeeded and
+ahead/behind was 0/0. The exact bounded task was to calibrate local projected
+centers/outlines on clearer neighboring bodies, validate withheld neighbors and
+stop before missing-bead or index assignments. Only beads3.jpg and R071 marker/
+mask data were used; no POV source, pattern lookup, rendering, photo work or
+inventory/index changes.
+
+Added `photo2/neighbor_geometry_calibration.py`; curated evidence is in
+`photo2/review/r075/`. It transfers median marker-to-mask-centroid offsets and
+mask covariance ellipse proxies from nearby same-color active bodies, excluding
+warning targets and warning-bearing controls. Ten controls near 122 and eight
+near 405 were evaluated with leave-one-out. Centroid error median/p90/max is
+2.38/4.52/7.37 px at 122 and 3.14/5.54/8.20 px at 405. Median control-contour
+symmetric-mean error is 2.44/2.32 px (p90 3.57/3.60). Comparing warning masks
+with transferred ellipses gives symmetric-mean errors 5.94 px (p90 12.22) and
+4.00 px (p90 8.15). These are mask-to-mask measurements, not physical-center or
+true-silhouette validation. Both warnings remain unresolved; inventory remains
+304 and bead indices null. R069 ignore-slivers rule unchanged.
+
+Compilation passed. A second run reproduced all three curated artifacts byte
+for byte; `git diff --check` passed. Both figures were visually inspected. No
+unit tests or legacy suite were run. No new questions. Handoff and plan updated;
+next bounded task is JPEG-only beads4 body/color review under R069, stop after an
+illustrated active map and checks, carrying 122/405 warnings. Recommend
+gpt-6-astra / High and fresh `/new`.

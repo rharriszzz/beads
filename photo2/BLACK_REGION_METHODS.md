@@ -113,16 +113,65 @@ is underconstrained and is not evidence for one bead. Those exploratory
 fits are not acceptance results; the reproducible diagnostic here retains
 the measured contours and competing hypotheses instead of selecting a count.
 
+## R075: calibration against clearer neighboring masks
+
+R075 uses the R071 provisional labels as local controls. For each warning, the
+training set contains the nearest same-color active bodies within 58 px; warning
+rows and any controls carrying a warning are excluded. This gives ten controls
+for 122 and eight for 405. The target warning mask is never used to train its
+own transferred outline.
+
+For each control, measure the mask centroid relative to its reviewed marker and
+the 2D covariance of its assigned pixels. Predict a held-out mask centroid by
+adding the median marker-to-mask offset from the other controls. Transfer the
+elementwise-median covariance as an ellipse proxy. Leave each control out in
+turn, then compare its predicted centroid and proxy contour with its R071 mask.
+This calibrates transfer among provisional masks. It does not establish marker
+or mask-centroid error relative to physical bead centers.
+
+| Warning neighborhood | Controls | Leave-one-out centroid error, median / p90 / max | Ellipse-to-control-mask symmetric mean, median / p90 | Warning mask vs transferred ellipse, symmetric mean / p90 |
+| --- | ---: | ---: | ---: | ---: |
+| 122 | 10 | 2.38 / 4.52 / 7.37 px | 2.44 / 3.57 px | 5.94 / 12.22 px |
+| 405 | 8 | 3.14 / 5.54 / 8.20 px | 2.32 / 3.60 px | 4.00 / 8.15 px |
+
+The control transfer is measurable, but its tails are several pixels and the
+warning masks disagree more strongly with a single-bead ellipse proxy. In 122,
+the warning mask spans a broad irregular dark area; 405 also has a mask much
+broader than the transferred proxy. Since R071 masks can include shadow,
+merging, or watershed-boundary error, this mismatch is not a bead-count test.
+Neither region is split and neither warning is cleared. Keep the 304-observation
+inventory and the R069 ignore-slivers policy unchanged.
+
+![Region 122 local mask calibration and warning-mask comparison](review/r075/122-calibration.png)
+
+![Region 405 local mask calibration and warning-mask comparison](review/r075/405-calibration.png)
+
+The full per-control measurements and reproduction hashes are in
+[calibration.json](review/r075/calibration.json) and
+[report.json](review/r075/report.json). Reproduce with:
+
+```sh
+.venv/bin/python photo2/beads3_inventory.py --output photo2/output/beads3-final --review-bundle /tmp/beads-r071-rebuilt-review
+.venv/bin/python photo2/neighbor_geometry_calibration.py --review-bundle photo2/review/r075
+```
+
+The first command rebuilds the ignored R071 label array if needed; its temporary
+review bundle is kept outside Git. It may be omitted when the hash-verified
+`photo2/output/beads3-final/labels.npy` already exists.
+
+Python compilation passed. A second run produced all three curated artifacts
+byte for byte. `git diff --check` passed. No unit tests, legacy suite, indexing,
+missing-bead assignments, POV-Ray lookup, or pattern recovery were run.
+
 ## Next bounded task and saved advice
 
-Calibrate projected centers and outlines on clearer neighboring bead bodies,
-using their visible contours and local occlusion. Fit local spacing/projection
-jointly, then repeat withheld-neighbor position and contour checks. Stop at an
-illustrated calibration report before assigning missing beads or indices.
-Maintain alternative local arrangements when evidence cannot distinguish them.
-Only after geometry passes those checks should dark-region splits be assessed
-with visible-area support and the existing ignore-slivers rule. Beads4 review
-is deferred for this local diagnostic.
+The local geometry calibration is complete as a diagnostic, but it does not
+clear the 122/405 warnings or authorize missing-bead assignments. Resume the
+R059 generated-JPEG priority with a beads4.jpg body/color review, adapting its
+palette and applying R069. Carry both beads3 warnings forward unchanged. Keep
+indices null and stop after the illustrated active body/color map and relevant
+checks. Geometry can be revisited only with new image evidence or a better
+calibrated center/contour measurement.
 
 **Saved maker answer (R074):** approach 2 is primary because it should be more
 reliable in very black regions and neighbor prediction is necessary for proper

@@ -842,3 +842,15 @@ compilation, eight source hashes and seven repeated artifact hashes pass.
 Matplotlib initially absent, installed locally/pinned; crude partial-contour fit
 rejected. Next calibrate clearer neighbor centers/outlines and validate withheld
 predictions before missing-bead/index claims. Beads4 deferred; fresh /new advised.
+
+## 2026-09-24 — R075 calibrate local mask geometry near beads3 warnings
+
+Transferred same-color marker-to-mask offsets and covariance ellipse proxies
+from nearby R071 bodies; warning rows and warning-bearing controls excluded.
+Leave-one-out mask-centroid median/p90 errors are 2.38/4.52 px at 122 and
+3.14/5.54 px at 405. Target warning-mask contour errors remain larger: 5.94/4.00
+px symmetric mean with p90 12.22/8.15. This calibrates provisional mask transfer
+only; both warnings and the 304-observation inventory remain unchanged. Added the
+script and two curated figures. Compilation, repeat artifact hashes and
+whitespace check pass; no tests run. Next beads4 JPEG-only body/color review,
+R069 applied, retain 122/405 warnings; recommend fresh `/new`.
