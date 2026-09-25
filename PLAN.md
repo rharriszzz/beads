@@ -11,20 +11,21 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R069 slivers ignored; next beads2
+## Current step — R070 beads2 map complete; next beads3
 
-The maker's reply closes both [beads1 questions](photo2/BEADS1_QUESTIONS.md):
-ignore all slivers and marker 211. The [active selection](photo2/INVENTORY_SELECTION.md)
-contains 313 body observations; 37 known fragments and ten regions below half
-nearby bodies' median area are excluded. All ten are near an edge. Historical
-records stay intact; missing indices and same-color boundaries remain unresolved.
-Bright point-like lighting is the maker's suspected cause, not a measured result.
+The [beads2 inventory](photo2/BEADS2_INVENTORY.md) contains 318 active body
+observations: 111 orange, 124 lavender, 45 violet, 38 yellow. Pale-color support,
+manual marker corrections and R069 selection ignore slivers. Region boundaries
+and completeness remain provisional; no full pattern has been recovered.
+The [beads1 selection](photo2/INVENTORY_SELECTION.md) remains at 313 observations.
+No new maker questions; earlier photo questions do not block generated images.
 
-Next bounded task: review/correct beads2.jpg's visible body/color map from the
-JPEG alone, adapting color support to its palette and applying the R069 policy.
-Ignore slivers without resolving ownership. Stop at its map and checks. Then
-review beads3–7 before another index/repeat attempt. No POV-Ray pattern lookup
-or photo fitting. gpt-6-astra / High; stay here, no `/new` needed.
+Next bounded task: review beads3.jpg's visible body/color map from its JPEG alone.
+Adapt support for red, black and white, separating neutral bodies from neutral
+shadows; retain uncertainty rather than using a chroma-only mask. Apply R069
+sliver/local-area policy. Stop at its map and checks, then review beads4–7 before
+index/repeat inference. No POV-Ray pattern lookup or photo fitting.
+gpt-6-astra / High; stay here, no `/new` needed.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 

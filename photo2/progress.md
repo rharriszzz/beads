@@ -806,3 +806,14 @@ pixels. Beads1 questions answered; lighting suspicion saved as a hypothesis.
 See INVENTORY_SELECTION.md and review/r069 for method and illustrated results.
 Twelve tests, compilation, source hashes, repeatability and label checks pass.
 Next beads2 JPEG-only review with its own palette and the R069 selection policy.
+
+## 2026-09-24 — R070 beads2 image-only active inventory
+
+Reviewed beads2 with pale-lavender support and R069 policy: 318 active bodies
+(111 orange, 124 lavender, 45 violet, 38 yellow). Removed 56 markers, added two
+bodies, ignored seven known fragments and 13 small candidates. Corrected violet
+324 but its area remains below cutoff; bottom 382 retained, duplicate 383 removed.
+No new questions or pattern claim. BEADS2_INVENTORY.md and review/r070 contain
+method, maps and correction examples. Eleven tests, compilation, source hashes,
+repeatability and region/ID checks pass. Next beads3, distinguish neutral beads
+from shadow, stop after active map/checks without indexing or POV pattern lookup.

@@ -1,0 +1,110 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/beads2_inventory.py",
+    "--output",
+    "photo2/output/beads2-final",
+    "--review-bundle",
+    "photo2/review/r070"
+  ],
+  "parameters": {
+    "minimum_chroma": 12,
+    "minimum_value": 35,
+    "warm_hue": [
+      0.025,
+      0.23
+    ],
+    "purple_hue": [
+      0.63,
+      0.94
+    ],
+    "yellow_hue_min": 0.105,
+    "violet_saturation_min": 0.45,
+    "fill_highlight_holes_below": 64,
+    "maximum_seed_snap_px": 6.0,
+    "watershed_compactness": 0.002,
+    "maximum_assignment_distance_px": 28.0
+  },
+  "selection_parameters": {
+    "neighbor_count": 8,
+    "neighbor_radius_px": 45.0,
+    "minimum_neighbors": 4,
+    "minimum_area_ratio": 0.5,
+    "large_area_warning_ratio": 2.0,
+    "edge_radius_multiplier": 1.0,
+    "silhouette_closing_radius": 2,
+    "silhouette_hole_limit_px": 128,
+    "explicit_excluded_ids": []
+  },
+  "sources": {
+    "photo2/beads2_inventory.py": "c01165cd3caa91a007fe2b6079c9e1e9f4792bf2e9a333025134306c3f0abdf0",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/beads1_inventory.py": "0165ba8bfde46e795efe36f09d7bb07d0ad5a3ede120c8893fd129d5fd24e328",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/beads2-review-r070.json": "cbd14ac8c8c200e8b8af924ec4d617463c8d3e0063c47b6ac03048f146dcdd0f",
+    "beads2.jpg": "35d4bdbbe61a764f530b59f624b8af463b846a80bfa625e62b456eb34255f736",
+    "photo2/test_beads2_inventory.py": "a1f056613843e13e56d11f885ac406bb84cec78a4631cd95f9ad1b4bb19a6733"
+  },
+  "summary": {
+    "baseline_candidates": 392,
+    "removed_markers": 56,
+    "added_bodies": 2,
+    "active_count": 318,
+    "active_colors": {
+      "orange": 111,
+      "lavender": 124,
+      "violet": 45,
+      "yellow": 38
+    },
+    "excluded_count": 20,
+    "known_fragments_ignored": 7,
+    "small_ids": [
+      29,
+      42,
+      72,
+      103,
+      125,
+      194,
+      210,
+      230,
+      251,
+      262,
+      276,
+      291,
+      297,
+      304,
+      324,
+      330,
+      385
+    ],
+    "active_warning_ids": [],
+    "support_pixels": 106675,
+    "original_unassigned_pixels": 3111,
+    "original_unassigned_regions": 88,
+    "active_pixels": 100981,
+    "ignored_assigned_pixels": 2583,
+    "support_pixels_outside_review": 0,
+    "complete_visible_inventory_verified": false,
+    "pattern_status": "not inferred"
+  },
+  "artifacts": {
+    "BL-review.png": "22c5151f087840136be1d9b68a37fbb16535045eb8ca5d5dad87b180adda74f9",
+    "BM-review.png": "f688ba101d8ec5628735010f17b7a51b80de584af7ed68932fa6bbf4ece7522e",
+    "BR-review.png": "9902bda594f4b097407754eead7add4a3a8ddccd9cc4c47166c68a4bd796deaf",
+    "L-review.png": "a18708fdfbc42f053dd1596d3c650b7ba165117036149225c4724b943eb3d52f",
+    "R-review.png": "51d9d8cfa120a0a3e178ef2f57fc37a80d27557b8df167ac462162036c8dbfd3",
+    "T1-review.png": "7003a7896fd4f18495af7841ed8e13e47369501083799e556113d3d78491b979",
+    "T2-review.png": "466155adcb6ab5ad4fbafd981e781d134c0e36ac325b07337dc13cae1ad203c0",
+    "T3-review.png": "6c21f51d2615cdf634bc170a50753deedd39c843b1362300f9920ca6a760dc0c",
+    "active-overview.png": "23911ef958c05dc4b306361084bf9353125163b8eab050fce771b1a2e0629ea2",
+    "corrections.png": "24ff1242d6fa70ec5a64cebf4f292543056f8e3bbc5930b674baaed2179adf7d",
+    "inventory.json": "ad8f8277686aaf845f6d13c2680f937b5a0c3d66cd1551d19b6bb15468c3cb6b",
+    "regions.png": "d0ff6497a543df39c9fe6db13b4acd0d6e0c4b20784c5fbe4faa63cea6887d8b",
+    "review.html": "0c4e05dfeceff4c6a10be6f94e8bc61543dfeb2396d0614c07a51f64888c4939"
+  },
+  "bulk_artifacts": {
+    "active-labels.npy": "0a0d45a0015ea758a2c40e051a8240f089d811f55dae59d3fb026e376120e3e8",
+    "color-support.npy": "45fbca9335c4f0f6d6474db8e626b5281b145e9e259f2813bbc9f8ac4d198172",
+    "labels.npy": "4d98def2dd1726225ac24026f80fbfa652dfdeaaa4c6aaf4c4d874a5f9fa94ca"
+  }
+}

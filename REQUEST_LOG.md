@@ -2607,3 +2607,46 @@ bulk/scratch/repeat outputs stay ignored. Next beads2 JPEG-only body/color map
 with adapted palette and R069 selection, stop after map/checks. Model recommendation
 gpt-6-astra / High, stay here, no `/new` needed.
 Report SHA256 a0b2b682aa3a47a1bed1839d1690d3c1783e8014149dc193b32831409c35b8ac.
+
+## R070 — Continue with beads2 under the sliver policy (2026-09-24)
+
+> if no questions, continue
+
+No open beads1 questions; older photo-shadow questions do not block generated
+image work. Continue the handoff's bounded beads2 JPEG-only body/color review,
+using its own palette and R069 local-area/sliver policy. Stop at map and checks,
+without source-pattern lookup or sliver ownership accounting. Preflight daisy,
+clean photo-2-reconstruction at 5a2512f, upstream origin, no stashes, Python 3.12.14.
+Approved fetch succeeded; ahead/behind 0/0. No new status/usage or transfer.
+
+### R070 outcome and checks
+
+Completed beads2 JPEG-only active map: 318 observations (111 orange, 124 lavender,
+45 violet, 38 yellow). Reviewed full image, eight baseline/corrected crops,
+raw coordinate close-ups, largest 24 initial unassigned regions, overview and
+boundaries. Palette-aware support preserves pale lavender, rejects neutral
+shadow; masks and same-color boundaries provisional. No POV source/truth lookup.
+392 baseline minus 56 removals plus two added bodies minus seven known fragments
+minus 13 additional small candidates = 318 active. Added 394 yellow and 395
+lavender after large-area warnings. Bottom 382 recentered, duplicate 383 removed.
+Corrected 324's lavender misclassification to violet; its area ratio 0.472 still
+fails unchanged R069 threshold. An intermediate 319-count draft treated this as
+an extra body393; original-marker review corrected it. ID393 unused. Beads2's
+211 remains active, since user's 211 exclusion referred to beads1.
+
+All active observations have eight local references and no warnings. 106,675
+support pixels; 3,111 unassigned before selection, 2,583 assigned pixels ignored,
+100,981 active. Residual components remain unassigned under sliver policy, not
+new bead identities. All support lies in reviewed crops; not proof of complete
+inventory. Four new tests plus seven selection controls pass (11); compilation
+passes. Seven source hashes verify; 13 curated artifacts and three bulk maps
+reproduce byte for byte; reports equal except command paths. Active regions
+nonempty, connected, palette-pure, seed-preserving; max seed snap 2 px. IDs unique,
+excluded/removed IDs absent, no active pixel reassignment, chain indices null.
+No test or execution failures. No renderer, indexing, other-image changes or
+full legacy regression. New BEADS2_INVENTORY.md records no new maker questions;
+prior photo questions remain pending. Lighting suspicion stays a hypothesis.
+Curated maps/correction images committed; bulk/scratch/repeat files ignored.
+Next beads3 JPEG-only active map with neutral-body/shadow support, then checks;
+gpt-6-astra / High, stay here, no `/new` needed.
+Report SHA256 2d6f250b9e1b4d65b40e0d0dfb709f2657faa129690a826c994a90bc9a90f8b7.

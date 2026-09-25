@@ -4,11 +4,13 @@ Start with the [overall plan and methods](../METHODS_AND_PLAN.md) for direct
 answers about background removal, saved outer/inner/centerline curves and the
 current limits of individual-bead identification.
 
-**Latest completed step (R069):** [sliver exclusion and local area selection](INVENTORY_SELECTION.md)
-leave 313 active beads1 body observations. All 37 known fragments and ten small
-regions are ignored; 211 remains excluded. [Saved questions and answers](BEADS1_QUESTIONS.md)
-record the maker's reply. These observations are not a verified total or recovered
-pattern. Next review beads2.jpg from its JPEG alone, applying this policy.
+**Latest completed step (R070):** [beads2 visible inventory](BEADS2_INVENTORY.md)
+contains 318 active body observations, with pale-color support and the R069
+sliver policy. [Map](review/r070/review.html) and
+[correction close-ups](review/r070/corrections.png) are committed. No new questions
+or recovered full pattern. Next review beads3.jpg, accounting for neutral beads
+and shadows. [Beads1](INVENTORY_SELECTION.md) remains at 313 active observations;
+[its saved answers](BEADS1_QUESTIONS.md) still govern slivers and marker 211.
 The earlier [photo image-edge candidate](IMAGE_EDGES.md) remains rejected.
 
 **Underlying reconstruction priority (R059): generated JPEGs first.** The

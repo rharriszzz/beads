@@ -1,5 +1,56 @@
 # Beads session handoff
 
+## R070 — beads2 active map complete; next beads3
+
+User: "if no questions, continue". No open generated-image questions; prior
+photo-shadow questions remain saved and do not block this work. Applied R069:
+ignore slivers, compare local area, no sliver ownership accounting. No new
+questions. Beads1's 211 exclusion stays image-specific. Maker lighting suspicion
+remains a hypothesis; no source-pattern/light lookup or rendering.
+
+Preflight daisy, clean photo-2-reconstruction at 5a2512f, origin upstream,
+no stashes, Python 3.12.14. Approved fetch succeeded, ahead/behind 0/0. No supplied
+status/usage, delegation or machine/task transfer. Exact request logged.
+
+New photo2/beads2_inventory.py and beads2-review-r070.json produce 318 active
+observations: 111 orange, 124 lavender, 45 violet, 38 yellow. Starting with 392
+R059 markers, remove 55 boundary/background glints and duplicate 383; add two
+visible bodies (394 yellow near 203, 395 lavender below 212); ignore seven
+known fragments and 13 additional small candidates. Reposition bottom lavender
+382, retain it. Correct 324 from lavender to violet and reposition; its area
+ratio 0.472 fails unchanged cutoff, so exclude. Early draft gave it extra ID393
+and counted 319; corrected before final. ID393 unused. Beads2's 211 stays active.
+
+Palette support accepts chroma >=12, value >=35, warm/purple hue windows, fills
+small highlight holes, and separates four palette classes before watershed.
+Full parameter values in report; see photo2/BEADS2_INVENTORY.md. R069 local area
+parameters unchanged, explicit excluded ID list empty for beads2. Active rows
+all have eight references; no remaining large-area/sparse-reference warnings.
+Masks/centers/colors remain provisional, indices null; no complete inventory
+or pattern claim. Three maps: preselection labels, active labels, color support.
+106,675 support pixels; 3,111 initially unassigned, 2,583 assigned pixels ignored,
+100,981 active. 88 original residual components >=6 px, largest 203 px on narrow
+orange edge. Ignore these without identifying sliver ownership. All support
+inside reviewed crops, which does not prove completeness.
+
+Reviewed original JPEG, eight baseline numbered crops, revised crops, raw
+coordinate close-ups, largest 24 initial residual crops, overview and boundaries.
+Committed review/r070 has 11 PNGs including four correction comparisons, HTML,
+inventory/report. Four new controls and seven selection tests pass (11), plus
+compilation. Seven source hashes verified; 13 artifacts and three bulk maps
+reproduce byte for byte, reports equal except command paths. Every active region
+nonempty, connected, palette-pure, seed-preserving; IDs unique, excluded IDs
+absent, no active pixel growth or reassignment. Max seed snap 2 px. No test or
+execution failures. No renderer/indexing, other-image changes or legacy suite.
+Report SHA256 2d6f250b9e1b4d65b40e0d0dfb709f2657faa129690a826c994a90bc9a90f8b7.
+Bulk/scratch/repeat files ignored; publish scoped code, edits, curated review/docs.
+
+Next bounded task: review beads3.jpg from its JPEG alone. Its red/black/white
+appearance needs support separating neutral beads from neutral shadows; do not
+blindly reuse saturated/purple masks. Apply R069 selection, keep uncertainty,
+stop at active body/color map and checks before indexing. Then beads4–7.
+Recommend gpt-6-astra / High; stay in this conversation, no `/new` needed.
+
 ## R069 — ignore slivers and 211; next beads2
 
 Maker answers: ignore all slivers (multiple kinds, not worth accounting for),
