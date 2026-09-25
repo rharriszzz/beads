@@ -12,7 +12,7 @@ chain indexing or recovered full pattern is established for any image.
 | beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved and persistently large; [R081 queue](photo2/AREA_WARNING_STABILITY.md): 47/163/198/199/346 sensitive |
 | beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); R081: 272 sensitive; same-color/white-shadow borders and completeness provisional |
 | beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); [R080 diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md): 188 unresolved; R081: 188/349/364 sensitive; neutral seams/colors/completeness provisional |
-| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); [R082 diagnostic](photo2/BEADS6_BOUNDARY_DIAGNOSTIC.md): 144/189 retained unresolved; same-color/white-shadow borders and completeness provisional |
+| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); [R087 S/V paths](photo2/BEADS6_SV_PATHS.md): 144/189 unresolved; [endpoint questions](photo2/BEADS6_SV_QUESTIONS.md) pending; same-color/white-shadow borders and completeness provisional |
 | beads7 | 327 | [R079 active map](photo2/BEADS7_INVENTORY.md); R081: 128/200/236 sensitive; manual black-glint repairs and pale labels/borders/completeness provisional |
 
 [R081 illustrated queue and definitions](photo2/AREA_WARNING_STABILITY.md): sensitivity
@@ -23,11 +23,66 @@ R084–R085 calibration: [full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md),
 **For future boundary/shape tasks read [the layered reasoning guide](photo2/SHAPE_REASONING.md).**
 R086 confirms a planar necklace on paper/table: in-plane section direction plus
 global camera view determines the shape family; do not fit local out-of-plane tilt.
-S/V paths between bead interiors are the next method gap; beads5 area-cut work is deferred.
+R087 supplies exploratory S/V paths and explained travel-order visuals; endpoint
+identity/placement remains provisional. Beads5 area-cut work is deferred.
 
-No open generated-image questions require answers. Prior photo-shadow questions
-remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
+Two R087 generated-image [endpoint questions](photo2/BEADS6_SV_QUESTIONS.md) are
+pending. No answers received. Prior photo-shadow questions remain in
+photo2/QUESTIONS_FOR_MAKER.md; neither set is an approval gate for diagnostic work.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R087 — Explained interior S/V paths (2026-09-25)
+
+User requests continuation with questions at the end, then says R082's comparison
+showed mysterious/unexplainable paths and asks for more pictures/explanations.
+Finally requests visuals showing what is learned while travelling along a path.
+**Future path reviews must show raw context, endpoint reasons, the route, and
+useful color strips/stops linked to the image and lessons.** AGENTS.md and the
+shape guide now record this. Old R082 area cuts were hand-selected trials, not
+recovered bead boundaries. Historical artifacts stay intact, with a new pointer.
+
+[Assessment](photo2/BEADS6_SV_PATHS.md) · [Walkthrough](photo2/review/r087/review.html) ·
+[Two illustrated questions](photo2/BEADS6_SV_QUESTIONS.md).
+Ten selected paths plus rejected K, five translations, three smoothing levels:
+165 traces / 9,240 samples. Same-color A/B/E/F retain positive raw dips across
+±2 px shifts; A/B nominal dips are 46.00/37.42 and 31.85/34.19 after sigma 1.2.
+C's dip can disappear under translation despite a visible cyan/red transition.
+H's within-face highlight spans S range 0.994 with red at both ends. S/V signals
+alone do not establish boundaries or counts. D/J are shading controls; G crosses
+both a white/cyan boundary and a highlight; I retains endpoint-shoulder sensitivity.
+
+K's initial endpoint lay in the stripe under test: reject its intended
+interior-to-interior interpretation, not the possibility of a seam. Revised B
+connects central/right cyan faces and is a different hypothesis. H was extended
+out of its highlight shoulder after visual review. This is exploratory, not blind
+classifier validation. No source-pattern/renderer truth, local out-of-plane tilt,
+sliver ownership, new mask or index assignment. All seven active inventories
+and warnings remain unchanged; none is verified complete. Carry 144/189, beads3
+122/405, beads5 188, R081 queue, color/border/glint uncertainty and missing/null indices.
+
+Checks: five analytic controls and compilation pass. Verified 13 source hashes,
+15 byte-identical repeat artifacts, 165 recomputed metrics from 9,240 CSV samples,
+coordinates and HTML links. Curated visuals inspected. No browser interaction,
+new renders, legacy/indexing suite or other-image analysis. Initial missing
+discovery paths corrected; one atomic documentation-patch context mismatch fixed.
+No numerical test failure. Scratch, repeat output and environment remain ignored.
+
+Preflight daisy, clean photo-2-reconstruction at 2d00c59; fetch, ahead/behind 0/0,
+no stashes; Python 3.12.14. Current supplied session
+01a0d6bb-97f0-7dd0-ad22-a419e626d75b: Astra high, Codex 0.155.1, weekly 3%
+(Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 2 00:03). Prior session
+01a0d682-1bc1-7fd3-90c2-c2cf5e390450: 35m14s, 218,652 total / 161,069 input /
+57,583 output, 18,240 reasoning, 7,010,048 cached. No current-session usage,
+model switch, delegation, account lookup or computer transfer.
+
+Questions: Q1 asks whether A's P/Q are useful separate substantial interiors;
+Q2 asks whether revised B connects the intended visible portions. Both pending;
+no answer assumed. R069 sliver answers applied; older photo-shadow questions
+remain pending. Next bounded task: incorporate feedback and assess independent
+endpoint perturbations in these same neighborhoods; publish illustrated
+supported/ambiguous/rejected paths, stopping before mask/count/index changes or
+source-pattern lookup. If no answers arrive, keep endpoint identity provisional.
+Recommend **gpt-6-astra / High, fresh `/new`** after feedback; stop at this boundary.
 
 ## R086 — Planarity correction (2026-09-24)
 

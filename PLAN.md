@@ -11,34 +11,39 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R085 full-circle shape atlas and durable reasoning guide
+## Current step — R087 explained S/V paths and travel-order visuals
 
-Read [SHAPE_REASONING](photo2/SHAPE_REASONING.md) at the level needed for the task:
-quick model, task/evidence table, then detailed recipes. AGENTS.md requires that
-entry point for bead boundaries, visible shapes, geometry and helicity. Separate
-minor-circle winding direction from the local section's camera-relative angle;
-estimate that viewing angle before choosing expected bead shape families.
-R086 fixes the major centerline to the paper/table plane. Use in-plane local
-direction and the global camera/plane relationship; do not fit local out-of-plane
-deviations. The beads and their minor-circle positions remain three-dimensional.
+[Illustrated assessment](photo2/BEADS6_SV_PATHS.md) and
+[walkthrough](photo2/review/r087/review.html): ten selected paths plus one rejected
+placement in beads6, five translations and three RGB smoothing levels. Candidate
+same-color seams can produce V dips with little S change; highlights inside one
+apparent face can produce large S changes. K starts in the stripe being tested
+and is rejected. Revised B is a different connection, not evidence of improved
+classification accuracy. No bead identities or boundaries are established.
 
-[The full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md) uses one added object-label
-render for all 676 known synthetic positions (483 nonzero, 193 hidden), with
-12×13 view/phase examples and an index viewer. Original and tangent-aligned
-shapes demonstrate pose-dependent exposure beyond simple rotation. R084 supplies
-the 416 beauty renders and both-hand overlap examples; R085 uses +1 only.
-These are synthetic calibration, not JPEG source-pattern recovery or a photo fit.
+Maker found R082's lines mysterious and asks to see what is learned along paths.
+AGENTS.md and [SHAPE_REASONING](photo2/SHAPE_REASONING.md) now require raw context,
+explained endpoints, a separate sampling route, and useful travel-order color
+strips with image-linked stops and plain-language lessons. Four sets of these
+pictures include A, revised B, red highlight H and failed K. Old R082 cuts were
+area-partition guesses, not fitted boundaries; preserve that historical evidence.
 
-All seven active counts and warnings are unchanged; none is verified complete.
-Keep beads6 144/189, beads3 122/405, beads5 188, R081 queue, color/border/glint
-uncertainty and missing/null indices. Ignore slivers. No new maker questions.
+Five analytic controls pass; source/artifact hashes, 15 byte-identical repeat
+artifacts, 9,240 samples and 165 metric records verify. All seven active counts
+remain 313/318/304/342/328/310/327 and none is verified complete. Keep beads6
+144/189, beads3 122/405, beads5 188, R081 queue, colors/borders/glint repairs,
+missing observations and null indices. Ignore slivers; no source-pattern lookup.
+Planar section views plus global camera view remain the geometric constraints.
 
-Next bounded task: evaluate S/V paths between visible bead interiors in beads6,
-guided by shape/occlusion hypotheses, with within-bead shading/highlight controls
-and modest path-placement variations. Publish an illustrated method assessment;
-stop before mask/count/exclusion/index changes or JPEG source-pattern lookup.
-Defer the former beads5 349/364 area-cut task. Recommend **gpt-6-astra / High,
-fresh `/new`** when ready; no automatic further experiment.
+[Two illustrated endpoint questions](photo2/BEADS6_SV_QUESTIONS.md) are pending;
+R069 answers remain applied and older photo questions remain pending.
+Next bounded task: incorporate endpoint feedback, then assess independently
+perturbed interior endpoints in the same two neighborhoods. Preserve rejected
+routes and publish a small illustrated supported/ambiguous/rejected path review.
+If no answers arrive, retain identity hypotheses; questions are not approval
+gates. Stop before mask/count/index changes or source-pattern lookup. Beads5 area
+cuts remain deferred. Recommend **gpt-6-astra / High, fresh `/new`** after feedback;
+user controls model/session changes and the next experiment.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 

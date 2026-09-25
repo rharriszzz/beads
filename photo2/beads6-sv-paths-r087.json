@@ -1,0 +1,285 @@
+{
+  "image": "beads6.jpg",
+  "sample_step_px": 0.25,
+  "offsets_px": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "sigmas_px": [
+    0,
+    0.8,
+    1.2
+  ],
+  "endpoint_window_px": 2,
+  "panels": [
+    {
+      "name": "Left upper section / beads6 144",
+      "box": [
+        130,
+        187,
+        181,
+        230
+      ],
+      "tangent_xy": [
+        [
+          174,
+          199
+        ],
+        [
+          168,
+          219
+        ]
+      ],
+      "view": "Oblique in-plane section; overlapping side faces may be narrow or notched. No local tilt or atlas index assigned."
+    },
+    {
+      "name": "Left section / beads6 189",
+      "box": [
+        90,
+        275,
+        146,
+        323
+      ],
+      "tangent_xy": [
+        [
+          96,
+          281
+        ],
+        [
+          98,
+          301
+        ]
+      ],
+      "view": "Near-vertical image tangent in the planar loop; side coverage and highlights can cut into a broad visible face. No local tilt or atlas index assigned."
+    },
+    {
+      "name": "Front section / comparison controls",
+      "box": [
+        347,
+        406,
+        444,
+        483
+      ],
+      "tangent_xy": [
+        [
+          402,
+          479
+        ],
+        [
+          424,
+          479
+        ]
+      ],
+      "view": "Near-horizontal front section, broad exposed faces and staggered occluding edges. Qualitative view hypothesis, not recovered minor phase."
+    }
+  ],
+  "paths": [
+    {
+      "id": "A",
+      "panel": 0,
+      "kind": "candidate_same_color",
+      "name": "144 side seam",
+      "ends": [
+        [
+          145,
+          216
+        ],
+        [
+          160,
+          216
+        ]
+      ],
+      "hypothesis": "Two exposed cyan portions across the side seam versus shading within one portion; endpoints avoid the bright left highlight. Ignore the lower extension."
+    },
+    {
+      "id": "B",
+      "panel": 1,
+      "kind": "candidate_same_color",
+      "name": "189 central to right cyan",
+      "ends": [
+        [
+          112,
+          300
+        ],
+        [
+          127,
+          302
+        ]
+      ],
+      "hypothesis": "Connect broad central and right cyan portions across the dark side edge. The right portion is a neighboring image region, not an asserted chain neighbor. Avoid the lower continuation."
+    },
+    {
+      "id": "C",
+      "panel": 1,
+      "kind": "candidate_different_color",
+      "name": "Cyan to red near 189",
+      "ends": [
+        [
+          127,
+          302
+        ],
+        [
+          131,
+          315
+        ]
+      ],
+      "hypothesis": "Exposed cyan and red interiors separated by an oblique color edge; apparent image neighbors, no chain relationship assigned."
+    },
+    {
+      "id": "D",
+      "panel": 0,
+      "kind": "within_shading",
+      "name": "144 central shading control",
+      "ends": [
+        [
+          157,
+          210
+        ],
+        [
+          158,
+          219
+        ]
+      ],
+      "hypothesis": "Path inside the apparent central face, away from the side seam; single-body status is a visual hypothesis."
+    },
+    {
+      "id": "E",
+      "panel": 2,
+      "kind": "candidate_same_color",
+      "name": "Front red to red",
+      "ends": [
+        [
+          362,
+          425
+        ],
+        [
+          380,
+          425
+        ]
+      ],
+      "hypothesis": "Adjacent broad red faces separated by a curved overlap edge; path below first highlight and above second."
+    },
+    {
+      "id": "F",
+      "panel": 2,
+      "kind": "candidate_same_color",
+      "name": "Front cyan to cyan",
+      "ends": [
+        [
+          417,
+          460
+        ],
+        [
+          435,
+          460
+        ]
+      ],
+      "hypothesis": "Two staggered cyan faces across an overlap edge; endpoints below their highlights."
+    },
+    {
+      "id": "G",
+      "panel": 2,
+      "kind": "candidate_different_color",
+      "name": "Front white to cyan",
+      "ends": [
+        [
+          401,
+          450
+        ],
+        [
+          401,
+          469
+        ]
+      ],
+      "hypothesis": "Broad white face above a cyan face; cyan highlight lies beyond the candidate seam along the same path."
+    },
+    {
+      "id": "H",
+      "panel": 2,
+      "kind": "within_highlight",
+      "name": "Inside red through highlight",
+      "ends": [
+        [
+          354,
+          420
+        ],
+        [
+          369,
+          420
+        ]
+      ],
+      "hypothesis": "Both endpoints lie in the same apparent red face; a white highlight is inside it, not a separate bead. Initial end x=366 was in the highlight shoulder; moved to x=369 after raw-image review. No independent validation claim.",
+      "initial_ends_before_visual_review": [
+        [
+          354,
+          420
+        ],
+        [
+          366,
+          420
+        ]
+      ]
+    },
+    {
+      "id": "I",
+      "panel": 2,
+      "kind": "within_highlight",
+      "name": "Inside cyan through highlight",
+      "ends": [
+        [
+          413,
+          457
+        ],
+        [
+          423,
+          457
+        ]
+      ],
+      "hypothesis": "Both endpoints lie in the same apparent cyan face; cross the internal highlight."
+    },
+    {
+      "id": "J",
+      "panel": 2,
+      "kind": "within_shading",
+      "name": "Inside cyan toward shadow",
+      "ends": [
+        [
+          419,
+          461
+        ],
+        [
+          419,
+          467
+        ]
+      ],
+      "hypothesis": "Shaded lower part of the same apparent cyan face, with endpoint kept above its lower seam."
+    },
+    {
+      "id": "K",
+      "panel": 1,
+      "kind": "rejected_placement",
+      "name": "Rejected: start in shadow stripe",
+      "ends": [
+        [
+          104,
+          300
+        ],
+        [
+          116,
+          300
+        ]
+      ],
+      "hypothesis": "Initial B was intended to connect two interiors but starts in the very shadow stripe under examination. Retained as a failed placement example, not negative seam evidence."
+    }
+  ],
+  "limitations": [
+    "All endpoint identities and local views are visual hypotheses selected from the JPEG, not renderer truth.",
+    "Straight paths are descriptive measurements, not fitted boundaries or a validated classifier.",
+    "Offsets translate both endpoints; they do not exhaust independent endpoint or curved-path uncertainty.",
+    "Inspect full corridors against the silhouette; saved masks are not a body-identity oracle.",
+    "No source pattern, renderer ownership, fragment ownership or chain indexing is used."
+  ]
+}

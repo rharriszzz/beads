@@ -3480,3 +3480,93 @@ references in the active guide, atlas notes and AGENTS.md. They now prohibit loc
 out-of-plane fitting freedoms. Historical request-log statements remain preserved
 and explicitly superseded. No numerical or rendering checks rerun for this
 text-only correction.
+
+## R087 — Interior-to-interior S/V paths (2026-09-25)
+
+User supplies prior completion and current `/status`, then asks: "if you have no
+questions right now, please continue. but at the end, please come up with a couple
+of questions, it it is convenient. thanks" Saved generated-image answers are
+closed; older photo questions do not block this task. No delegation requested.
+Prior session 01a0d682-1bc1-7fd3-90c2-c2cf5e390450: worked 35m14s, completion
+11:59 PM (date not supplied); total 218,652, input 161,069, cached 7,010,048,
+output 57,583 including reasoning 18,240. Current session
+01a0d6bb-97f0-7dd0-ad22-a419e626d75b: Codex 0.155.1, gpt-6-astra high,
+summaries auto, Default, Workspace/Ask for approval, ~/git/beads. Weekly 3%
+left, resets Sep 28 17:37; 283 credits; Luna Reserve 100%, resets Oct 2 00:03.
+No current-session token usage supplied. Account identity omitted.
+
+Preflight: daisy, photo-2-reconstruction at 2d00c59, clean tracked/untracked
+status, origin upstream, no stashes; fetch succeeds, ahead/behind 0/0.
+Python 3.12.14 in local .venv. Same machine as handoff, no ownership transfer.
+Read current handoff, log, shape reasoning/atlas, R082 and R069 saved answers.
+Two initial discovery paths were nonexistent (photo2/PLAN.md and atlas-original.png);
+corrected to PLAN.md and screen-shapes.png before analysis.
+Scope: frozen JPEG-only S/V paths between proposed interiors, same/different-color
+comparisons, within-body shading/highlight controls and placement/smoothing
+sensitivity. Use planar section-view/occlusion hypotheses. Publish illustrated
+assessment and two focused questions; stop before inventory/mask/count/exclusion/
+index changes, source-pattern lookup, new renders or fragment ownership.
+
+R087 steering: maker says the R082 boundary-comparison picture showed
+"mysterious unexplainable paths" and asks for more pictures/explanations to help
+avoid this. Address in this step: explain old hand-selected area cuts versus
+short V probes, supply individual raw/endpoints/path cards, explicitly record
+failed endpoint placement, and make future illustrated path rationale required
+in the reasoning guide. Initial B starts in a shadow stripe rather than a
+supported interior. Keep that failure as K, and test revised B between broader
+central/right portions; no lower-continuation ownership work. Initial H ends in
+the highlight shoulder; retain its initial coordinates in config and extend the
+final endpoint to red interior after visual inspection. These are exploratory
+image-selected measurements, not a preregistered or blind validation set.
+
+R087 second steering: "in the future, if you can, add visuals for what you learned
+when you are travelling along a path, like you said." Implemented now and recorded
+in AGENTS.md / SHAPE_REASONING: raw context, endpoint rationale, route, sampled
+colors in travel order, image-linked numbered stops, S/V and plain-language lessons.
+
+### R087 outcome and checks
+
+[Assessment](photo2/BEADS6_SV_PATHS.md), [walkthrough](photo2/review/r087/review.html)
+and [two illustrated endpoint questions](photo2/BEADS6_SV_QUESTIONS.md).
+Ten selected paths plus rejected K, five translations and three smoothing levels:
+165 traces / 9,240 samples. A/B nominal V dips 46.00/37.42, 31.85/34.19 after
+sigma 1.2; A/B/E/F raw dips stay positive across ±2 px shifts. C's dip can disappear
+with translation. H's internal highlight has S range 0.994 despite red endpoints.
+These demonstrate useful appearance evidence and confounders, not a boundary
+classifier, body identity/count, calibrated pose or recovered indices.
+
+K starts in its test stripe and is retained as a failed endpoint placement.
+B now connects broader central/right cyan portions; it is a different connection,
+not proof of classifier improvement. H's initial highlight-shoulder endpoint is
+recorded before extending it to red interior. Trial choices are exploratory.
+Four raw/endpoints/path cards plus four travel-order color-strip/stop figures
+illustrate A/B/H/K. Technical overview and three profile sheets preserve all
+translations, smoothing and failed-route evidence. Old R082 images are unchanged;
+the R082 note now points to the explanation of its guessed area cuts and short V
+probes. One atomic documentation patch failed context matching, then was corrected.
+
+Five analytic controls pass; compilation passes. Verified 13 source hashes,
+15 byte-identical repeat artifacts, 165 metrics independently recomputed from
+9,240 CSV samples, coordinates and HTML links. Curated figures inspected.
+No numerical test failure, browser interaction, render/legacy/indexing suite or
+other-image analysis. No source-pattern lookup or local out-of-plane section tilt.
+All seven active inventories and warnings unchanged (313/318/304/342/328/310/327),
+none verified complete; keep beads6 144/189, beads3 122/405, beads5 188, R081
+queue, provisional colors/borders/glints, missing observations and null indices.
+Ignore slivers and retain beads1 211 exclusion. Scratch/repeat/.venv stay ignored.
+
+Q1 asks whether A's endpoints are useful separate substantial interiors; Q2 asks
+whether revised B connects the intended portions. Both pending. No answers
+invented. Saved R069 answers applied; older photo questions remain pending.
+Next bounded task: incorporate endpoint feedback and test independent endpoint
+perturbations in the same neighborhoods; publish illustrated supported/ambiguous/
+rejected paths and stop before mask/count/index changes or source-pattern lookup.
+Without answers, keep identity hypotheses provisional; questions are not approval
+gates. Recommend gpt-6-astra / High, fresh `/new` after feedback. No auto-continuation.
+
+R087 final pre-delivery review: documentation links resolve and all seven active
+inventory JSON files are byte-identical to pre-step HEAD. Report SHA256
+`d6cbb1bf5d5ce18a6390813948701f9e086108d3af95b1062a1e88c64fc81e15`.
+Scoped whitespace check passes. No unrelated/untracked work was present or staged.
+Staging initially failed because .git/index.lock was read-only in the sandbox;
+rerunning git add with escalation succeeded. Scoped staged whitespace check passes.

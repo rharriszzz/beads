@@ -1,0 +1,342 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/beads6_sv_paths.py",
+    "--output",
+    "photo2/review/r087"
+  ],
+  "parameters": {
+    "image": "beads6.jpg",
+    "sample_step_px": 0.25,
+    "offsets_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "sigmas_px": [
+      0,
+      0.8,
+      1.2
+    ],
+    "endpoint_window_px": 2,
+    "panels": [
+      {
+        "name": "Left upper section / beads6 144",
+        "box": [
+          130,
+          187,
+          181,
+          230
+        ],
+        "tangent_xy": [
+          [
+            174,
+            199
+          ],
+          [
+            168,
+            219
+          ]
+        ],
+        "view": "Oblique in-plane section; overlapping side faces may be narrow or notched. No local tilt or atlas index assigned."
+      },
+      {
+        "name": "Left section / beads6 189",
+        "box": [
+          90,
+          275,
+          146,
+          323
+        ],
+        "tangent_xy": [
+          [
+            96,
+            281
+          ],
+          [
+            98,
+            301
+          ]
+        ],
+        "view": "Near-vertical image tangent in the planar loop; side coverage and highlights can cut into a broad visible face. No local tilt or atlas index assigned."
+      },
+      {
+        "name": "Front section / comparison controls",
+        "box": [
+          347,
+          406,
+          444,
+          483
+        ],
+        "tangent_xy": [
+          [
+            402,
+            479
+          ],
+          [
+            424,
+            479
+          ]
+        ],
+        "view": "Near-horizontal front section, broad exposed faces and staggered occluding edges. Qualitative view hypothesis, not recovered minor phase."
+      }
+    ],
+    "paths": [
+      {
+        "id": "A",
+        "panel": 0,
+        "kind": "candidate_same_color",
+        "name": "144 side seam",
+        "ends": [
+          [
+            145,
+            216
+          ],
+          [
+            160,
+            216
+          ]
+        ],
+        "hypothesis": "Two exposed cyan portions across the side seam versus shading within one portion; endpoints avoid the bright left highlight. Ignore the lower extension."
+      },
+      {
+        "id": "B",
+        "panel": 1,
+        "kind": "candidate_same_color",
+        "name": "189 central to right cyan",
+        "ends": [
+          [
+            112,
+            300
+          ],
+          [
+            127,
+            302
+          ]
+        ],
+        "hypothesis": "Connect broad central and right cyan portions across the dark side edge. The right portion is a neighboring image region, not an asserted chain neighbor. Avoid the lower continuation."
+      },
+      {
+        "id": "C",
+        "panel": 1,
+        "kind": "candidate_different_color",
+        "name": "Cyan to red near 189",
+        "ends": [
+          [
+            127,
+            302
+          ],
+          [
+            131,
+            315
+          ]
+        ],
+        "hypothesis": "Exposed cyan and red interiors separated by an oblique color edge; apparent image neighbors, no chain relationship assigned."
+      },
+      {
+        "id": "D",
+        "panel": 0,
+        "kind": "within_shading",
+        "name": "144 central shading control",
+        "ends": [
+          [
+            157,
+            210
+          ],
+          [
+            158,
+            219
+          ]
+        ],
+        "hypothesis": "Path inside the apparent central face, away from the side seam; single-body status is a visual hypothesis."
+      },
+      {
+        "id": "E",
+        "panel": 2,
+        "kind": "candidate_same_color",
+        "name": "Front red to red",
+        "ends": [
+          [
+            362,
+            425
+          ],
+          [
+            380,
+            425
+          ]
+        ],
+        "hypothesis": "Adjacent broad red faces separated by a curved overlap edge; path below first highlight and above second."
+      },
+      {
+        "id": "F",
+        "panel": 2,
+        "kind": "candidate_same_color",
+        "name": "Front cyan to cyan",
+        "ends": [
+          [
+            417,
+            460
+          ],
+          [
+            435,
+            460
+          ]
+        ],
+        "hypothesis": "Two staggered cyan faces across an overlap edge; endpoints below their highlights."
+      },
+      {
+        "id": "G",
+        "panel": 2,
+        "kind": "candidate_different_color",
+        "name": "Front white to cyan",
+        "ends": [
+          [
+            401,
+            450
+          ],
+          [
+            401,
+            469
+          ]
+        ],
+        "hypothesis": "Broad white face above a cyan face; cyan highlight lies beyond the candidate seam along the same path."
+      },
+      {
+        "id": "H",
+        "panel": 2,
+        "kind": "within_highlight",
+        "name": "Inside red through highlight",
+        "ends": [
+          [
+            354,
+            420
+          ],
+          [
+            369,
+            420
+          ]
+        ],
+        "hypothesis": "Both endpoints lie in the same apparent red face; a white highlight is inside it, not a separate bead. Initial end x=366 was in the highlight shoulder; moved to x=369 after raw-image review. No independent validation claim.",
+        "initial_ends_before_visual_review": [
+          [
+            354,
+            420
+          ],
+          [
+            366,
+            420
+          ]
+        ]
+      },
+      {
+        "id": "I",
+        "panel": 2,
+        "kind": "within_highlight",
+        "name": "Inside cyan through highlight",
+        "ends": [
+          [
+            413,
+            457
+          ],
+          [
+            423,
+            457
+          ]
+        ],
+        "hypothesis": "Both endpoints lie in the same apparent cyan face; cross the internal highlight."
+      },
+      {
+        "id": "J",
+        "panel": 2,
+        "kind": "within_shading",
+        "name": "Inside cyan toward shadow",
+        "ends": [
+          [
+            419,
+            461
+          ],
+          [
+            419,
+            467
+          ]
+        ],
+        "hypothesis": "Shaded lower part of the same apparent cyan face, with endpoint kept above its lower seam."
+      },
+      {
+        "id": "K",
+        "panel": 1,
+        "kind": "rejected_placement",
+        "name": "Rejected: start in shadow stripe",
+        "ends": [
+          [
+            104,
+            300
+          ],
+          [
+            116,
+            300
+          ]
+        ],
+        "hypothesis": "Initial B was intended to connect two interiors but starts in the very shadow stripe under examination. Retained as a failed placement example, not negative seam evidence."
+      }
+    ],
+    "limitations": [
+      "All endpoint identities and local views are visual hypotheses selected from the JPEG, not renderer truth.",
+      "Straight paths are descriptive measurements, not fitted boundaries or a validated classifier.",
+      "Offsets translate both endpoints; they do not exhaust independent endpoint or curved-path uncertainty.",
+      "Inspect full corridors against the silhouette; saved masks are not a body-identity oracle.",
+      "No source pattern, renderer ownership, fragment ownership or chain indexing is used."
+    ]
+  },
+  "sources": {
+    "beads6.jpg": "ce86d5c1faa5a5c3da931bd867156eccada3225857e7fa35a62cf280b36a2059",
+    "photo2/beads1_inventory.py": "0165ba8bfde46e795efe36f09d7bb07d0ad5a3ede120c8893fd129d5fd24e328",
+    "photo2/beads6-review-r078.json": "981a0c825d5ca79babe794d65aa25544ce62f056d1b670142c7de1bc20713e87",
+    "photo2/beads6-sv-paths-r087.json": "e0220bddec741d216efc3ebfbcea00245198468e8081cb3fb943665c5eba30ec",
+    "photo2/beads6_inventory.py": "26e68f65710bec247e638565881d1440bab7bc06e75a74eb7257dac9945e1907",
+    "photo2/beads6_sv_paths.py": "fcc9ca51632c4a3f5361809a79cc6f17fd3d5682136bdcf80b408082153781c3",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/review/r078/inventory.json": "e7748d6028e0d6f4a161cd107bfc1123a86029c1e35e79023e106f35252f8911",
+    "photo2/review/r078/report.json": "7ad0191e240f07405101350cf47200bc7ef37e5d1f5a20861aa60b15cefbd84a",
+    "photo2/test_beads6_inventory.py": "81531f5e88cdae6a0f3728d66b5bbb54495a18b974a9e4ff05cfdae3f1152adc",
+    "photo2/test_beads6_sv_paths.py": "eba3597630cc463f7c6d4cda519a57aa9f6fe2cc55224bc75f9aa762df67f3e2",
+    "photo2/verify_beads6_sv_paths.py": "e732945199ba7d17a8fd35fd29ab5f1aa0fc1a05dc2779360fe3b5137008f1de"
+  },
+  "artifacts": {
+    "paths.png": "2df033ce6c40207cc15ac7c831bc032e85b378c35bcf22ac1a3dc08673a6227d",
+    "profiles-1.png": "81c888aa2762b78755364ed221c492341d848dea31bfba1af06e36f8e9ddffc7",
+    "profiles-2.png": "b8771d8cea2fc94a1219e7313a402550d7f6b406737cd08d3e8f2c4fd4f46653",
+    "profiles-3.png": "adb021a2e0c6b14369b36b3b52e5bd16a9fb0aca5974ba959bf18a68e8bdd9ca",
+    "explain-A.png": "ed8d8f1584d7348020ae83e9cc11cbd99a5f59936e8e499a745a28fda34a3c86",
+    "explain-B.png": "a7603a851d39f1d0cfbe119b427d07ebcc1e7a67043df4dda0c6d90606bd8993",
+    "explain-H.png": "6da32f7b6a615d010ecce4c6e35c71d0ae8c19b1a992ebb0422db4040392cda4",
+    "explain-K.png": "6e32d79f06defa476ffa3fee7356fba56656c70e79302d5ab2888c7a5cd16ce5",
+    "journey-A.png": "bf3c3691cee7392dcb91874537c3262093200b04abd5b9db11e25d13a266e440",
+    "journey-B.png": "740f74bcd7c02d624c7eeca30f90f4e72cda91fcacea950167acaf56f0b4100a",
+    "journey-H.png": "49622fad923cc63e03ab32fc11d5c0cfe22683be06e86b23852fdc34f4b235dd",
+    "journey-K.png": "69ced46cf760161049abb9aa1d8c29d375515f6e3551d8a98680bbb2f7af1f77",
+    "profiles.csv": "0792bc0547cfe2ffd2e3d039e6d05cafada9d67e7d9ca64f943eda5e5aa6c3fe",
+    "measurements.json": "83bda01567d8391c4c9a7c3563adb430d15baa84e0221a12d60ba1aaf4a92aa2",
+    "review.html": "797f58c7ba0830c3797c9095042fe3fd7deb6af36e7776a3077e392562f5d6e3"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "checks": {
+    "baseline_sources_verified": true,
+    "inventory_hash_verified": true,
+    "active_count": 310,
+    "active_chain_indices_null": true,
+    "path_count": 11,
+    "trace_count": 165,
+    "sample_rows": 9240
+  },
+  "encoding": "Pillow RGB decode; stored 0\u2013255 channels, no linearization; smooth RGB before bilinear sampling before S/V",
+  "metric_definition": "Endpoint medians within 2 px; dip = lower endpoint V median minus inner minimum. Peak = inner maximum minus higher endpoint V median. Inner excludes endpoint windows. S delta = end minus start median. Descriptive, not acceptance thresholds."
+}

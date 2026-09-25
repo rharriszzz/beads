@@ -1,5 +1,12 @@
 # beads6 144/189: retain unresolved mask extents — R082
 
+**R087 clarification:** the maker found these paths insufficiently explained.
+The yellow lines below were hand-selected area-partition trials, not recovered
+boundaries; numbered probes did not connect supported interiors. See the
+[new explanation and illustrated S/V walkthrough](BEADS6_SV_PATHS.md) and
+[two endpoint questions](BEADS6_SV_QUESTIONS.md). Historical results below are
+preserved; their former next task is superseded by the current handoff.
+
 **Keep both observations unresolved and the 310-observation inventory unchanged.**
 The JPEG contains seams within the saved masks, but the tested cuts do not establish
 two consistently substantial visible bodies. The masks should not be treated as

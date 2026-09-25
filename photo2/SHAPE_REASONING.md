@@ -119,18 +119,25 @@ make an image-only decision appear successful.
 
 ### B. S/V must be measured along the proposed connection
 
-This is **the next method to implement and evaluate**, not an already completed
-R084/R085 detector. R082 only measured V across short hand-selected suspected
-seams. Do not describe that as a saturation/value path method between beads.
+[R087](BEADS6_SV_PATHS.md) implements an exploratory JPEG path assessment with
+same/different-color paths, shading/highlight controls and placement sensitivity.
+It is not a validated detector. R082 only measured V across short hand-selected
+suspected seams; its trial area cuts were not recovered boundaries.
 
 1. Select endpoints inside the two proposed visible bead interiors. Do not
    silently use brightest pixels, mask centroids or hidden geometric centers as
    equivalent endpoints. Show the selected endpoints and full path on the image.
+   R087 maker feedback: unexplained lines made the R082 picture unhelpful. Show
+   raw context, then just the proposed endpoints with a reason for each, then
+   the sampling route. State what question the connection tests. Keep trial
+   area cuts and boundary hypotheses visually distinct from sampling paths.
 2. Follow a stated straight or curved path between them. Sample RGB and compute
    V=max(R,G,B), S=(max−min)/max, with S=0 when max=0. Record whether channels use
    0–1 or 0–255, image encoding, interpolation and smoothing. Plot S and V against
    distance along the same path. These descriptive values are not a calibrated
-   perceptual/material model.
+   perceptual/material model. When useful, add a sampled-color strip in travel
+   order and numbered stops linked to both the image and S/V traces. Explain
+   what was learned at those stops and what remains uncertain (R087 maker request).
 3. Compare a candidate seam with paths wholly within a bead, including a
    highlight and a shaded part. Include both same-color and different-color
    neighbors. A highlight can raise V and lower S within one physical body;
@@ -138,6 +145,9 @@ seams. Do not describe that as a saturation/value path method between beads.
 4. Vary path placement modestly and inspect nearby parallel paths. Verify that
    the purported internal seam does not come from the outside silhouette or
    white background. Save contrary evidence as well as a favorable trace.
+   R087's rejected K starts in the stripe it was meant to test; its negative
+   dip score cannot be interpreted as absence of a seam. Endpoint-window
+   extrema are a reason to inspect placement, not an automatic body decision.
 5. Interpret the transition together with the expected exposed contours of both
    portions and their occluding neighbors. Report whether the evidence improves
    a boundary decision. Stop before changing masks/IDs unless that is the

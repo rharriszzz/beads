@@ -83,6 +83,12 @@ commands; the user controls `/new`, `/status` and model selection.
   not extra approval gates for already authorized work. R064 specifically asks
   for this round's questions at the end, with illustrated problems.
 
+- R087: make measurement paths explainable. Show raw context, proposed interior
+  endpoints, why they were chosen, and the sampling route separately from any
+  boundary hypothesis or trial area cut. Where useful, illustrate what changes
+  while travelling along the path with sampled colors, stops linked to the image,
+  and plain-language lessons/limitations. Preserve failed placements explicitly.
+
 The old `image-to-pattern/plan.md` is historical. Its uncompleted inverse gates
 remain useful evidence. R059 currently prioritizes generated JPEG inventories
 before photographs or pattern inference; the photo-2 forward model remains the
