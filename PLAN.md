@@ -11,26 +11,31 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R084 maker-directed visible-shape experiment
+## Current step — R085 full-circle shape atlas and durable reasoning guide
 
-[Eight one-black-bead walks](photo2/BLACK_BEAD_WALK.md): 26 consecutive indices
-at each of eight positions around the necklace's major circle, both helicities, with original
-beads.pov geometry, fixed camera/light and opaque white/black palette. This
-known-index synthetic calibration supersedes the queued beads5 349/364 area
-assessment. It supplies examples of exposed shapes and neighbor occlusion;
-it does not recover source-pattern indices from the generated JPEGs.
+Read [SHAPE_REASONING](photo2/SHAPE_REASONING.md) at the level needed for the task:
+quick model, task/evidence table, then detailed recipes. AGENTS.md requires that
+entry point for bead boundaries, visible shapes, geometry and helicity. Separate
+minor-circle winding direction from the local section's camera-relative angle;
+estimate that viewing angle before choosing expected bead shape families.
 
-Counts remain 313/318/304/342/328/310/327; none verified complete. Preserve
-beads6 144/189 unresolved, beads3 122/405, beads5 188, the R081 queue, all
-provisional color/border/glint warnings and missing/null indices. Ignore slivers.
+[The full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md) uses one added object-label
+render for all 676 known synthetic positions (483 nonzero, 193 hidden), with
+12×13 view/phase examples and an index viewer. Original and tangent-aligned
+shapes demonstrate pose-dependent exposure beyond simple rotation. R084 supplies
+the 416 beauty renders and both-hand overlap examples; R085 uses +1 only.
+These are synthetic calibration, not JPEG source-pattern recovery or a photo fit.
 
-Next bounded task: measure S and V along illustrated paths between visible bead
-interiors in beads6, using this shape calibration to guide candidate boundaries.
-Compare candidate seams with within-bead shading/highlight controls; stop at an
-illustrated method assessment before mask/count/exclusion/index changes. Keep
-source-pattern lookup out of the JPEG assessment. No new maker questions;
-older photo questions remain pending. Recommend **gpt-6-astra / High, fresh
-`/new`** when ready. No automatic continuation tonight.
+All seven active counts and warnings are unchanged; none is verified complete.
+Keep beads6 144/189, beads3 122/405, beads5 188, R081 queue, color/border/glint
+uncertainty and missing/null indices. Ignore slivers. No new maker questions.
+
+Next bounded task: evaluate S/V paths between visible bead interiors in beads6,
+guided by shape/occlusion hypotheses, with within-bead shading/highlight controls
+and modest path-placement variations. Publish an illustrated method assessment;
+stop before mask/count/exclusion/index changes or JPEG source-pattern lookup.
+Defer the former beads5 349/364 area-cut task. Recommend **gpt-6-astra / High,
+fresh `/new`** when ready; no automatic further experiment.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 

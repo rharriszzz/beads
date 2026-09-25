@@ -18,14 +18,75 @@ chain indexing or recovered full pattern is established for any image.
 [R081 illustrated queue and definitions](photo2/AREA_WARNING_STABILITY.md): sensitivity
 is to one omitted area reference, not a completeness or body-identity test.
 
-R084 maker-directed shape calibration: [eight one-black-bead walks](photo2/BLACK_BEAD_WALK.md),
-26 consecutive indices at each of eight major-circle locations, both helicities. Known synthetic
-indices are separate from the image-only inventories above. S/V paths between
-bead interiors are the next method gap; the beads5 area diagnostic is deferred.
+R084–R085 calibration: [full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md),
+676 known positions, 483 nonzero masks; these are not active JPEG observations.
+**For future boundary/shape tasks read [the layered reasoning guide](photo2/SHAPE_REASONING.md).**
+S/V paths between bead interiors are the next method gap; beads5 area-cut work is deferred.
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R085 — Full-circle visible-shape atlas and future-session guidance (2026-09-24)
+
+User requests generalizing shapes around the whole necklace, with helicity
+unimportant for this test; then explicitly asks for abstract and detailed
+explanations for future sessions depending on analysis task. Same supplied
+session/status as R083–R084, no new usage, delegation or transfer. Preflight
+following R084 delivery: daisy, clean photo-2-reconstruction at a0b9199, origin
+verified identical; no intervening unrelated files. R084's 416-render experiment
+was committed/pushed before this bounded extension.
+
+**Start future shape/boundary work with [SHAPE_REASONING](photo2/SHAPE_REASONING.md):**
+quick conceptual model, task-specific evidence table, then detailed recipes only
+as needed. AGENTS.md now requires that entry point for boundaries, shapes,
+geometry and helicity. The guide distinguishes established evidence from the
+unimplemented S/V path method, synthetic ownership from JPEG mask hypotheses,
+and visible adjacency from chain adjacency. Maker's final clarification: helicity
+governs minor-circle progression; estimate the current section's camera-relative
+angle to predict shape families along the major circle. An image tangent alone
+does not establish out-of-plane tilt. No universal oval or area-only
+identity rule; preserve pose, occlusion, hidden indices and helicity alternatives.
+
+[Full-circle assessment](photo2/FULL_CIRCLE_SHAPES.md) ·
+[Interactive atlas](photo2/review/r085/review.html).
+One additional object-label render, Helicity=+1, unchanged legacy geometry:
+676 positions, 483 nonzero shapes, 193 zero-pixel positions at 1200×900.
+441 masks >=12 pixels, 392 >=100; these are calibration counts, not active
+inventories or fragment decisions. Sum 225,907 visible pixels. Shape data keeps
+all 676 indices; representative atlases have 12 major-angle rows ×13 minor-phase
+columns, max angle mismatch 3.373°. Original orientation and tangent-aligned
+views show that rotation alone cannot explain changing exposure. A slider
+selects every index, including hidden ones.
+
+Checks against the 208 prior +1 beauty frames: 123 substantial pairs have median
+response precision 95.20%, recall 99.27%; minima 83.77%/93.64%. Just 25/72,028
+response pixels lie beyond a one-pixel label dilation. Anti-aliasing/threshold/
+highlight differences remain. Known synthetic shape calibration is not JPEG
+segmentation, source-pattern recovery, a trained general shape predictor or a
+photo fit. One additional render only; R084 beauty frames reused.
+
+All 676 shapes, 156 unclipped atlas cells, 208 comparisons, source/artifact hashes,
+links and render parameters verify. Three non-rendering legacy visibility controls
+pass, Python compilation passes, Node mock-DOM exercises all 676 selections and
+wrap controls. No browser visual interaction or full legacy/render suite. Eight
+atlas artifacts regenerate byte-identically with --analyze-only. Both atlases
+inspected. Corrected verifier's overly conservative bounding-box corner check to
+use actual mask pixels (max radius 20.81 <30 pixel half-crop). Initial nonexistent
+geometry/legacy-note paths corrected via discovered VISIBILITY.md. No extra
+render needed; raw label image/layout/log stay ignored. Report SHA256 2e53873e11a46346f9af4928f85b6dea3f5e126300491a0bab3bddb2dde41e2d.
+
+All seven JPEG inventory counts and warnings stay unchanged; carry beads6 144/189,
+beads3 122/405, beads5 188, R081 queue, colors/borders/glint repairs, missing/null
+indices, and unverified completeness. Ignore slivers; no ownership decisions.
+No new maker questions; prior photo-shadow questions remain pending. Deferred
+beads5 349/364 area-cut work must not displace the maker's requested method change.
+
+Next bounded task: use the reasoning guide and shape atlas to design/evaluate S/V
+paths between visible interiors in beads6, with within-bead shading/highlight
+controls and explicit path-placement sensitivity. Publish illustrated method
+assessment; stop before mask/count/exclusion/index changes and source-pattern
+lookup. Recommend **gpt-6-astra / High, fresh `/new`** when ready; stop here.
 
 ## R084 — Eight black-bead walks, both helicities (2026-09-24)
 

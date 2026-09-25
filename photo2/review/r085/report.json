@@ -1,0 +1,2145 @@
+{
+  "render_count": 1,
+  "helicity": 1,
+  "nbeads": 676,
+  "size": [
+    1200,
+    900
+  ],
+  "clock": 0,
+  "nonzero_shapes": 483,
+  "zero_pixel_indices": [
+    2,
+    3,
+    4,
+    9,
+    10,
+    16,
+    17,
+    22,
+    23,
+    24,
+    29,
+    30,
+    35,
+    36,
+    37,
+    42,
+    43,
+    49,
+    50,
+    55,
+    56,
+    62,
+    63,
+    68,
+    69,
+    75,
+    76,
+    81,
+    82,
+    88,
+    89,
+    95,
+    101,
+    102,
+    108,
+    114,
+    115,
+    121,
+    122,
+    127,
+    128,
+    134,
+    135,
+    140,
+    141,
+    147,
+    148,
+    153,
+    154,
+    160,
+    161,
+    166,
+    167,
+    173,
+    179,
+    180,
+    186,
+    187,
+    192,
+    193,
+    199,
+    200,
+    205,
+    206,
+    212,
+    213,
+    218,
+    219,
+    225,
+    226,
+    231,
+    232,
+    238,
+    239,
+    244,
+    245,
+    251,
+    252,
+    257,
+    258,
+    264,
+    270,
+    271,
+    276,
+    277,
+    283,
+    284,
+    289,
+    290,
+    296,
+    297,
+    302,
+    303,
+    309,
+    310,
+    315,
+    316,
+    321,
+    322,
+    323,
+    328,
+    329,
+    334,
+    335,
+    336,
+    341,
+    342,
+    347,
+    348,
+    353,
+    354,
+    355,
+    360,
+    361,
+    366,
+    367,
+    368,
+    373,
+    374,
+    379,
+    380,
+    386,
+    387,
+    392,
+    393,
+    399,
+    400,
+    405,
+    406,
+    412,
+    413,
+    418,
+    419,
+    425,
+    426,
+    431,
+    432,
+    438,
+    444,
+    445,
+    451,
+    457,
+    458,
+    464,
+    470,
+    471,
+    476,
+    477,
+    483,
+    484,
+    489,
+    490,
+    528,
+    541,
+    548,
+    549,
+    554,
+    561,
+    562,
+    567,
+    568,
+    574,
+    575,
+    580,
+    581,
+    587,
+    588,
+    594,
+    600,
+    601,
+    607,
+    613,
+    614,
+    620,
+    621,
+    626,
+    627,
+    633,
+    634,
+    639,
+    640,
+    646,
+    647,
+    652,
+    653,
+    654,
+    659,
+    660,
+    665,
+    666,
+    667,
+    672,
+    673
+  ],
+  "total_visible_pixels": 225907,
+  "commands": [
+    {
+      "cwd": "/home/rharris/git/beads",
+      "argv": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/full-circle-shapes/wrapper.pov",
+        "+L/home/rharris/git/beads",
+        "+L/home/rharris/git/beads/photo2/output/full-circle-shapes",
+        "+O/home/rharris/git/beads/photo2/output/full-circle-shapes/ids.png",
+        "+W1200",
+        "+H900",
+        "+K0",
+        "+FN8",
+        "-D",
+        "+WT2",
+        "-A",
+        "-J",
+        "File_Gamma=1.0",
+        "Dither=Off",
+        "Declare=VisibilityOnly=-1",
+        "Declare=VisibilityPalette=0"
+      ]
+    }
+  ],
+  "sources": {
+    "photo2/full_circle_shapes.py": "93f95316d1165f1100e97bbf46bfaab7a7c2c7c81a527d491a9820b89ea2085a",
+    "photo2/full_circle_shapes.html": "ceb9670de200fdb037602c8595c125d61119cf69540b1ff9a1efeae19ac1b46c",
+    "beads.pov": "2b720a9bb091b75f43c3e8adc1e3fb44d0de621146ede75df16fe513abc8f971",
+    "bead-shape.inc": "178c5bb7c0fa0fccc0373a6d1ea0cfcb006d9dbd284954a500961c11467096fe",
+    "photo2/legacy_visibility.py": "564ffd0084ccf9ca251e0e1654a4c5793e2570e68ec07011f94e48529f3e7fc6",
+    "photo2/legacy-visibility-body.inc": "5e0349b73b06e1fe772cf4dadc2984437161830e061d5800825bf185d1ed8d04",
+    "photo2/neighbor_audit.py": "4e5190f1846bfa784a50cca51dc91bb9c3e078063922a09dc951fa4df396b2b5",
+    "photo2/practice_legacy.py": "c4ce806b68d3c3ac070ea166b5b58dcfd85daa90b32c3e72dfc03e7d069d2eae",
+    "photo2/black_bead_walk.py": "ec8daf64b3223bbf39f3c9feb1c3b4638ba6a411793ef30528be2f4394996415",
+    "photo2/verify_full_circle_shapes.py": "3d345ff64b8832688a3479cecf95d6f104094cf4f0a72cb67b8111b7ed34f065",
+    "photo2/check_full_circle_viewer.cjs": "d4faaf56642978a07291b5afa98bd5b1e6516d760dc2dddd70ae1068b03f4062",
+    "photo2/review/r084/angles-report.json": "475c9654a5186abe4edd14b04d89741d17376f9ab3f8617419fd85004a2ab832"
+  },
+  "raw_artifacts": {
+    "photo2/output/full-circle-shapes/ids.png": "470dd3ecfbce2b5abf739eff3e86a8e1f149306667a2bf25dd27271f0722b6dd",
+    "photo2/output/full-circle-shapes/layout.csv": "1e7b63b64d9c09612fa70ef9a049a998cdae2e4ec51850478c4bb59543dff1cc",
+    "photo2/output/full-circle-shapes/instrument.pov": "cadf80062dc9bb1f28c9cceacf3fe34162a3fbe4b4967e6af32be35681626770",
+    "photo2/output/full-circle-shapes/wrapper.pov": "6960665b6a730190bb5dc05a9ee353df9d71d1a3f5bb393ef9d3620e7e7a60aa",
+    "photo2/output/full-circle-shapes/ids.log": "1a84361909a4e9cd8a635de20b8636c8e5b2333b926c38f7786718ab26c9780c"
+  },
+  "artifacts": {
+    "full-circle.png": "f14b3bf22647ae25cfa70478c46a5586953a9bf6b29a39243d603ebd7a952037",
+    "outlines-on-white.png": "f520b1e37301e7a33e2bf621080ab0b9244850bef5946479456e03e5fe48b359",
+    "review.html": "23b7339aac75e0c86c1b9b414dc5708b1e942b4db05d7b7e31da894343201a6a",
+    "screen-shapes.png": "0da1f2395e1b79c2a7f137cc9b7b6a36d380927cf7611f7abeb78985a5c9900c",
+    "shapes.json": "20d40fae66391eda37642e89457637718ca6d4f7103384be1333c52489860885",
+    "tangent-shapes.png": "ba0e80339bae6533f704543429b4dedb01b6bfa22dca73d346e3a17b362808c2",
+    "visibility-grid.png": "a8d286fe6e27d2eda8a6116d7fa3960234dd6af34eac0913678a59432a914ce5",
+    "white-reference.png": "6557ec63c4c8070a502ff9c9fae4f357654325022fd4a1629053fa7ae066a126"
+  },
+  "response_comparison": [
+    {
+      "index": 0,
+      "response_pixels": 700,
+      "id_pixels": 675,
+      "overlap": 671,
+      "precision": 0.9585714285714285,
+      "recall": 0.9940740740740741,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 1,
+      "response_pixels": 477,
+      "id_pixels": 446,
+      "overlap": 446,
+      "precision": 0.9350104821802935,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 2,
+      "response_pixels": 1,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": 0.0,
+      "recall": null,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 3,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 4,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 5,
+      "response_pixels": 250,
+      "id_pixels": 220,
+      "overlap": 220,
+      "precision": 0.88,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 6,
+      "response_pixels": 652,
+      "id_pixels": 628,
+      "overlap": 622,
+      "precision": 0.9539877300613497,
+      "recall": 0.9904458598726115,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 7,
+      "response_pixels": 637,
+      "id_pixels": 605,
+      "overlap": 601,
+      "precision": 0.9434850863422292,
+      "recall": 0.9933884297520661,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 8,
+      "response_pixels": 273,
+      "id_pixels": 250,
+      "overlap": 250,
+      "precision": 0.9157509157509157,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 9,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 10,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 11,
+      "response_pixels": 1,
+      "id_pixels": 1,
+      "overlap": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 12,
+      "response_pixels": 477,
+      "id_pixels": 444,
+      "overlap": 444,
+      "precision": 0.9308176100628931,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 13,
+      "response_pixels": 683,
+      "id_pixels": 665,
+      "overlap": 659,
+      "precision": 0.9648609077598829,
+      "recall": 0.9909774436090225,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 14,
+      "response_pixels": 526,
+      "id_pixels": 497,
+      "overlap": 496,
+      "precision": 0.9429657794676806,
+      "recall": 0.9979879275653923,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 15,
+      "response_pixels": 34,
+      "id_pixels": 23,
+      "overlap": 23,
+      "precision": 0.6764705882352942,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 16,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 17,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 18,
+      "response_pixels": 154,
+      "id_pixels": 129,
+      "overlap": 129,
+      "precision": 0.8376623376623377,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 19,
+      "response_pixels": 612,
+      "id_pixels": 582,
+      "overlap": 577,
+      "precision": 0.9428104575163399,
+      "recall": 0.9914089347079038,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 20,
+      "response_pixels": 654,
+      "id_pixels": 624,
+      "overlap": 619,
+      "precision": 0.9464831804281345,
+      "recall": 0.9919871794871795,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 21,
+      "response_pixels": 346,
+      "id_pixels": 327,
+      "overlap": 327,
+      "precision": 0.9450867052023122,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 22,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 23,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 24,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 25,
+      "response_pixels": 401,
+      "id_pixels": 371,
+      "overlap": 371,
+      "precision": 0.9251870324189526,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 84,
+      "response_pixels": 473,
+      "id_pixels": 445,
+      "overlap": 445,
+      "precision": 0.9408033826638478,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 85,
+      "response_pixels": 746,
+      "id_pixels": 733,
+      "overlap": 727,
+      "precision": 0.9745308310991957,
+      "recall": 0.9918144611186903,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 86,
+      "response_pixels": 631,
+      "id_pixels": 612,
+      "overlap": 605,
+      "precision": 0.9587955625990491,
+      "recall": 0.988562091503268,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 87,
+      "response_pixels": 145,
+      "id_pixels": 136,
+      "overlap": 136,
+      "precision": 0.9379310344827586,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 88,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 89,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 90,
+      "response_pixels": 168,
+      "id_pixels": 149,
+      "overlap": 149,
+      "precision": 0.8869047619047619,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 91,
+      "response_pixels": 667,
+      "id_pixels": 640,
+      "overlap": 635,
+      "precision": 0.952023988005997,
+      "recall": 0.9921875,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 92,
+      "response_pixels": 746,
+      "id_pixels": 726,
+      "overlap": 720,
+      "precision": 0.9651474530831099,
+      "recall": 0.9917355371900827,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 93,
+      "response_pixels": 463,
+      "id_pixels": 439,
+      "overlap": 439,
+      "precision": 0.9481641468682506,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 94,
+      "response_pixels": 1,
+      "id_pixels": 1,
+      "overlap": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 95,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 96,
+      "response_pixels": 9,
+      "id_pixels": 7,
+      "overlap": 7,
+      "precision": 0.7777777777777778,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 97,
+      "response_pixels": 461,
+      "id_pixels": 431,
+      "overlap": 431,
+      "precision": 0.9349240780911063,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 98,
+      "response_pixels": 756,
+      "id_pixels": 739,
+      "overlap": 732,
+      "precision": 0.9682539682539683,
+      "recall": 0.9905277401894452,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 99,
+      "response_pixels": 663,
+      "id_pixels": 647,
+      "overlap": 642,
+      "precision": 0.9683257918552036,
+      "recall": 0.9922720247295209,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 100,
+      "response_pixels": 201,
+      "id_pixels": 185,
+      "overlap": 185,
+      "precision": 0.9203980099502488,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 101,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 102,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 103,
+      "response_pixels": 162,
+      "id_pixels": 137,
+      "overlap": 137,
+      "precision": 0.845679012345679,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 104,
+      "response_pixels": 666,
+      "id_pixels": 642,
+      "overlap": 636,
+      "precision": 0.954954954954955,
+      "recall": 0.9906542056074766,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 105,
+      "response_pixels": 768,
+      "id_pixels": 750,
+      "overlap": 743,
+      "precision": 0.9674479166666666,
+      "recall": 0.9906666666666667,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 106,
+      "response_pixels": 510,
+      "id_pixels": 486,
+      "overlap": 486,
+      "precision": 0.9529411764705882,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 107,
+      "response_pixels": 5,
+      "id_pixels": 4,
+      "overlap": 4,
+      "precision": 0.8,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 108,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 109,
+      "response_pixels": 4,
+      "id_pixels": 4,
+      "overlap": 4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 169,
+      "response_pixels": 653,
+      "id_pixels": 657,
+      "overlap": 631,
+      "precision": 0.9663093415007658,
+      "recall": 0.9604261796042618,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 170,
+      "response_pixels": 802,
+      "id_pixels": 804,
+      "overlap": 780,
+      "precision": 0.972568578553616,
+      "recall": 0.9701492537313433,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 171,
+      "response_pixels": 578,
+      "id_pixels": 581,
+      "overlap": 555,
+      "precision": 0.9602076124567474,
+      "recall": 0.955249569707401,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 172,
+      "response_pixels": 54,
+      "id_pixels": 41,
+      "overlap": 41,
+      "precision": 0.7592592592592593,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 173,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 174,
+      "response_pixels": 1,
+      "id_pixels": 2,
+      "overlap": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 175,
+      "response_pixels": 449,
+      "id_pixels": 440,
+      "overlap": 412,
+      "precision": 0.9175946547884187,
+      "recall": 0.9363636363636364,
+      "outside_one_pixel": 2
+    },
+    {
+      "index": 176,
+      "response_pixels": 774,
+      "id_pixels": 765,
+      "overlap": 739,
+      "precision": 0.9547803617571059,
+      "recall": 0.9660130718954248,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 177,
+      "response_pixels": 735,
+      "id_pixels": 735,
+      "overlap": 707,
+      "precision": 0.9619047619047619,
+      "recall": 0.9619047619047619,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 178,
+      "response_pixels": 358,
+      "id_pixels": 338,
+      "overlap": 338,
+      "precision": 0.9441340782122905,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 179,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 180,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 181,
+      "response_pixels": 161,
+      "id_pixels": 137,
+      "overlap": 137,
+      "precision": 0.8509316770186336,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 182,
+      "response_pixels": 663,
+      "id_pixels": 656,
+      "overlap": 628,
+      "precision": 0.947209653092006,
+      "recall": 0.9573170731707317,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 183,
+      "response_pixels": 797,
+      "id_pixels": 799,
+      "overlap": 772,
+      "precision": 0.9686323713927227,
+      "recall": 0.9662077596996246,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 184,
+      "response_pixels": 576,
+      "id_pixels": 574,
+      "overlap": 547,
+      "precision": 0.9496527777777778,
+      "recall": 0.9529616724738676,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 185,
+      "response_pixels": 51,
+      "id_pixels": 42,
+      "overlap": 42,
+      "precision": 0.8235294117647058,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 186,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 187,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 188,
+      "response_pixels": 461,
+      "id_pixels": 453,
+      "overlap": 428,
+      "precision": 0.928416485900217,
+      "recall": 0.9448123620309051,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 189,
+      "response_pixels": 766,
+      "id_pixels": 771,
+      "overlap": 748,
+      "precision": 0.9765013054830287,
+      "recall": 0.9701686121919585,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 190,
+      "response_pixels": 742,
+      "id_pixels": 730,
+      "overlap": 711,
+      "precision": 0.9582210242587601,
+      "recall": 0.9739726027397261,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 191,
+      "response_pixels": 351,
+      "id_pixels": 332,
+      "overlap": 332,
+      "precision": 0.9458689458689459,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 192,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 193,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 194,
+      "response_pixels": 148,
+      "id_pixels": 129,
+      "overlap": 129,
+      "precision": 0.8716216216216216,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 253,
+      "response_pixels": 485,
+      "id_pixels": 462,
+      "overlap": 457,
+      "precision": 0.9422680412371134,
+      "recall": 0.9891774891774892,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 254,
+      "response_pixels": 760,
+      "id_pixels": 745,
+      "overlap": 737,
+      "precision": 0.9697368421052631,
+      "recall": 0.9892617449664429,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 255,
+      "response_pixels": 655,
+      "id_pixels": 632,
+      "overlap": 626,
+      "precision": 0.9557251908396946,
+      "recall": 0.990506329113924,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 256,
+      "response_pixels": 188,
+      "id_pixels": 171,
+      "overlap": 171,
+      "precision": 0.9095744680851063,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 257,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 258,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 259,
+      "response_pixels": 182,
+      "id_pixels": 161,
+      "overlap": 161,
+      "precision": 0.8846153846153846,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 260,
+      "response_pixels": 678,
+      "id_pixels": 655,
+      "overlap": 648,
+      "precision": 0.9557522123893806,
+      "recall": 0.9893129770992366,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 261,
+      "response_pixels": 747,
+      "id_pixels": 720,
+      "overlap": 714,
+      "precision": 0.9558232931726908,
+      "recall": 0.9916666666666667,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 262,
+      "response_pixels": 453,
+      "id_pixels": 428,
+      "overlap": 428,
+      "precision": 0.9448123620309051,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 263,
+      "response_pixels": 3,
+      "id_pixels": 3,
+      "overlap": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 264,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 265,
+      "response_pixels": 1,
+      "id_pixels": 1,
+      "overlap": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 266,
+      "response_pixels": 496,
+      "id_pixels": 477,
+      "overlap": 475,
+      "precision": 0.9576612903225806,
+      "recall": 0.9958071278825996,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 267,
+      "response_pixels": 747,
+      "id_pixels": 726,
+      "overlap": 720,
+      "precision": 0.963855421686747,
+      "recall": 0.9917355371900827,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 268,
+      "response_pixels": 621,
+      "id_pixels": 595,
+      "overlap": 590,
+      "precision": 0.9500805152979066,
+      "recall": 0.9915966386554622,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 269,
+      "response_pixels": 139,
+      "id_pixels": 120,
+      "overlap": 120,
+      "precision": 0.8633093525179856,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 270,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 271,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 272,
+      "response_pixels": 198,
+      "id_pixels": 179,
+      "overlap": 179,
+      "precision": 0.9040404040404041,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 273,
+      "response_pixels": 674,
+      "id_pixels": 652,
+      "overlap": 646,
+      "precision": 0.9584569732937686,
+      "recall": 0.99079754601227,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 274,
+      "response_pixels": 714,
+      "id_pixels": 697,
+      "overlap": 691,
+      "precision": 0.9677871148459384,
+      "recall": 0.9913916786226685,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 275,
+      "response_pixels": 402,
+      "id_pixels": 379,
+      "overlap": 379,
+      "precision": 0.9427860696517413,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 276,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 277,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 278,
+      "response_pixels": 6,
+      "id_pixels": 3,
+      "overlap": 3,
+      "precision": 0.5,
+      "recall": 1.0,
+      "outside_one_pixel": 2
+    },
+    {
+      "index": 338,
+      "response_pixels": 687,
+      "id_pixels": 656,
+      "overlap": 652,
+      "precision": 0.9490538573508006,
+      "recall": 0.9939024390243902,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 339,
+      "response_pixels": 516,
+      "id_pixels": 487,
+      "overlap": 487,
+      "precision": 0.9437984496124031,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 340,
+      "response_pixels": 19,
+      "id_pixels": 10,
+      "overlap": 10,
+      "precision": 0.5263157894736842,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 341,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 342,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 343,
+      "response_pixels": 206,
+      "id_pixels": 189,
+      "overlap": 189,
+      "precision": 0.9174757281553398,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 344,
+      "response_pixels": 643,
+      "id_pixels": 616,
+      "overlap": 612,
+      "precision": 0.9517884914463453,
+      "recall": 0.9935064935064936,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 345,
+      "response_pixels": 631,
+      "id_pixels": 607,
+      "overlap": 601,
+      "precision": 0.9524564183835182,
+      "recall": 0.9901153212520593,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 346,
+      "response_pixels": 266,
+      "id_pixels": 238,
+      "overlap": 238,
+      "precision": 0.8947368421052632,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 347,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 348,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 349,
+      "response_pixels": 12,
+      "id_pixels": 9,
+      "overlap": 9,
+      "precision": 0.75,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 350,
+      "response_pixels": 531,
+      "id_pixels": 503,
+      "overlap": 503,
+      "precision": 0.9472693032015066,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 351,
+      "response_pixels": 695,
+      "id_pixels": 663,
+      "overlap": 659,
+      "precision": 0.9482014388489208,
+      "recall": 0.9939668174962293,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 352,
+      "response_pixels": 470,
+      "id_pixels": 444,
+      "overlap": 444,
+      "precision": 0.9446808510638298,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 353,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 354,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 355,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 356,
+      "response_pixels": 314,
+      "id_pixels": 288,
+      "overlap": 288,
+      "precision": 0.9171974522292994,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 357,
+      "response_pixels": 683,
+      "id_pixels": 655,
+      "overlap": 652,
+      "precision": 0.9546120058565154,
+      "recall": 0.9954198473282443,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 358,
+      "response_pixels": 611,
+      "id_pixels": 585,
+      "overlap": 580,
+      "precision": 0.9492635024549918,
+      "recall": 0.9914529914529915,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 359,
+      "response_pixels": 182,
+      "id_pixels": 162,
+      "overlap": 162,
+      "precision": 0.8901098901098901,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 360,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 361,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 362,
+      "response_pixels": 54,
+      "id_pixels": 45,
+      "overlap": 45,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "outside_one_pixel": 2
+    },
+    {
+      "index": 363,
+      "response_pixels": 593,
+      "id_pixels": 570,
+      "overlap": 566,
+      "precision": 0.954468802698145,
+      "recall": 0.9929824561403509,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 422,
+      "response_pixels": 912,
+      "id_pixels": 884,
+      "overlap": 880,
+      "precision": 0.9649122807017544,
+      "recall": 0.995475113122172,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 423,
+      "response_pixels": 558,
+      "id_pixels": 526,
+      "overlap": 526,
+      "precision": 0.942652329749104,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 424,
+      "response_pixels": 12,
+      "id_pixels": 8,
+      "overlap": 8,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 425,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 426,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 427,
+      "response_pixels": 539,
+      "id_pixels": 522,
+      "overlap": 519,
+      "precision": 0.9628942486085343,
+      "recall": 0.9942528735632183,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 428,
+      "response_pixels": 932,
+      "id_pixels": 908,
+      "overlap": 901,
+      "precision": 0.9667381974248928,
+      "recall": 0.9922907488986784,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 429,
+      "response_pixels": 792,
+      "id_pixels": 770,
+      "overlap": 764,
+      "precision": 0.9646464646464646,
+      "recall": 0.9922077922077922,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 430,
+      "response_pixels": 215,
+      "id_pixels": 193,
+      "overlap": 193,
+      "precision": 0.8976744186046511,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 431,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 432,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 433,
+      "response_pixels": 201,
+      "id_pixels": 187,
+      "overlap": 187,
+      "precision": 0.9303482587064676,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 434,
+      "response_pixels": 845,
+      "id_pixels": 818,
+      "overlap": 812,
+      "precision": 0.9609467455621302,
+      "recall": 0.9926650366748166,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 435,
+      "response_pixels": 947,
+      "id_pixels": 928,
+      "overlap": 921,
+      "precision": 0.9725448785638859,
+      "recall": 0.9924568965517241,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 436,
+      "response_pixels": 559,
+      "id_pixels": 533,
+      "overlap": 533,
+      "precision": 0.9534883720930233,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 437,
+      "response_pixels": 8,
+      "id_pixels": 5,
+      "overlap": 5,
+      "precision": 0.625,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 438,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 439,
+      "response_pixels": 3,
+      "id_pixels": 2,
+      "overlap": 2,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 440,
+      "response_pixels": 623,
+      "id_pixels": 603,
+      "overlap": 597,
+      "precision": 0.9582664526484751,
+      "recall": 0.9900497512437811,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 441,
+      "response_pixels": 990,
+      "id_pixels": 961,
+      "overlap": 952,
+      "precision": 0.9616161616161616,
+      "recall": 0.9906347554630593,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 442,
+      "response_pixels": 816,
+      "id_pixels": 786,
+      "overlap": 779,
+      "precision": 0.9546568627450981,
+      "recall": 0.9910941475826972,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 443,
+      "response_pixels": 201,
+      "id_pixels": 183,
+      "overlap": 183,
+      "precision": 0.9104477611940298,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 444,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 445,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 446,
+      "response_pixels": 276,
+      "id_pixels": 250,
+      "overlap": 250,
+      "precision": 0.9057971014492754,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 447,
+      "response_pixels": 910,
+      "id_pixels": 884,
+      "overlap": 876,
+      "precision": 0.9626373626373627,
+      "recall": 0.9909502262443439,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 507,
+      "response_pixels": 871,
+      "id_pixels": 868,
+      "overlap": 841,
+      "precision": 0.965556831228473,
+      "recall": 0.9688940092165899,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 508,
+      "response_pixels": 216,
+      "id_pixels": 195,
+      "overlap": 195,
+      "precision": 0.9027777777777778,
+      "recall": 1.0,
+      "outside_one_pixel": 5
+    },
+    {
+      "index": 509,
+      "response_pixels": 34,
+      "id_pixels": 30,
+      "overlap": 30,
+      "precision": 0.8823529411764706,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 510,
+      "response_pixels": 4,
+      "id_pixels": 2,
+      "overlap": 2,
+      "precision": 0.5,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 511,
+      "response_pixels": 507,
+      "id_pixels": 479,
+      "overlap": 479,
+      "precision": 0.9447731755424064,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 512,
+      "response_pixels": 966,
+      "id_pixels": 956,
+      "overlap": 925,
+      "precision": 0.9575569358178054,
+      "recall": 0.9675732217573222,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 513,
+      "response_pixels": 990,
+      "id_pixels": 992,
+      "overlap": 959,
+      "precision": 0.9686868686868687,
+      "recall": 0.9667338709677419,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 514,
+      "response_pixels": 602,
+      "id_pixels": 597,
+      "overlap": 564,
+      "precision": 0.9368770764119602,
+      "recall": 0.9447236180904522,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 515,
+      "response_pixels": 13,
+      "id_pixels": 9,
+      "overlap": 9,
+      "precision": 0.6923076923076923,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 516,
+      "response_pixels": 36,
+      "id_pixels": 30,
+      "overlap": 30,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 517,
+      "response_pixels": 72,
+      "id_pixels": 62,
+      "overlap": 62,
+      "precision": 0.8611111111111112,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 518,
+      "response_pixels": 794,
+      "id_pixels": 792,
+      "overlap": 758,
+      "precision": 0.9546599496221663,
+      "recall": 0.9570707070707071,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 519,
+      "response_pixels": 1010,
+      "id_pixels": 1014,
+      "overlap": 983,
+      "precision": 0.9732673267326732,
+      "recall": 0.9694280078895463,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 520,
+      "response_pixels": 874,
+      "id_pixels": 877,
+      "overlap": 845,
+      "precision": 0.9668192219679634,
+      "recall": 0.9635119726339795,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 521,
+      "response_pixels": 207,
+      "id_pixels": 186,
+      "overlap": 185,
+      "precision": 0.893719806763285,
+      "recall": 0.9946236559139785,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 522,
+      "response_pixels": 34,
+      "id_pixels": 28,
+      "overlap": 28,
+      "precision": 0.8235294117647058,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 523,
+      "response_pixels": 6,
+      "id_pixels": 2,
+      "overlap": 2,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "outside_one_pixel": 2
+    },
+    {
+      "index": 524,
+      "response_pixels": 510,
+      "id_pixels": 477,
+      "overlap": 477,
+      "precision": 0.9352941176470588,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 525,
+      "response_pixels": 966,
+      "id_pixels": 970,
+      "overlap": 943,
+      "precision": 0.9761904761904762,
+      "recall": 0.9721649484536082,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 526,
+      "response_pixels": 1007,
+      "id_pixels": 1009,
+      "overlap": 981,
+      "precision": 0.974180734856008,
+      "recall": 0.9722497522299306,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 527,
+      "response_pixels": 611,
+      "id_pixels": 609,
+      "overlap": 583,
+      "precision": 0.9541734860883797,
+      "recall": 0.9573070607553367,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 528,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 529,
+      "response_pixels": 23,
+      "id_pixels": 19,
+      "overlap": 19,
+      "precision": 0.8260869565217391,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 530,
+      "response_pixels": 77,
+      "id_pixels": 60,
+      "overlap": 60,
+      "precision": 0.7792207792207793,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 531,
+      "response_pixels": 813,
+      "id_pixels": 791,
+      "overlap": 781,
+      "precision": 0.9606396063960639,
+      "recall": 0.9873577749683944,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 532,
+      "response_pixels": 1060,
+      "id_pixels": 1038,
+      "overlap": 1027,
+      "precision": 0.9688679245283018,
+      "recall": 0.9894026974951831,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 591,
+      "response_pixels": 965,
+      "id_pixels": 944,
+      "overlap": 936,
+      "precision": 0.9699481865284975,
+      "recall": 0.9915254237288136,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 592,
+      "response_pixels": 594,
+      "id_pixels": 569,
+      "overlap": 562,
+      "precision": 0.9461279461279462,
+      "recall": 0.9876977152899824,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 593,
+      "response_pixels": 1,
+      "id_pixels": 1,
+      "overlap": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 594,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 595,
+      "response_pixels": 13,
+      "id_pixels": 11,
+      "overlap": 11,
+      "precision": 0.8461538461538461,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 596,
+      "response_pixels": 556,
+      "id_pixels": 530,
+      "overlap": 530,
+      "precision": 0.9532374100719424,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 597,
+      "response_pixels": 954,
+      "id_pixels": 935,
+      "overlap": 928,
+      "precision": 0.9727463312368972,
+      "recall": 0.9925133689839573,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 598,
+      "response_pixels": 827,
+      "id_pixels": 799,
+      "overlap": 794,
+      "precision": 0.9600967351874244,
+      "recall": 0.9937421777221527,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 599,
+      "response_pixels": 231,
+      "id_pixels": 208,
+      "overlap": 208,
+      "precision": 0.9004329004329005,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 600,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 601,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 602,
+      "response_pixels": 172,
+      "id_pixels": 152,
+      "overlap": 152,
+      "precision": 0.8837209302325582,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 603,
+      "response_pixels": 796,
+      "id_pixels": 759,
+      "overlap": 753,
+      "precision": 0.9459798994974874,
+      "recall": 0.9920948616600791,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 604,
+      "response_pixels": 924,
+      "id_pixels": 908,
+      "overlap": 899,
+      "precision": 0.9729437229437229,
+      "recall": 0.9900881057268722,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 605,
+      "response_pixels": 592,
+      "id_pixels": 571,
+      "overlap": 569,
+      "precision": 0.9611486486486487,
+      "recall": 0.9964973730297724,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 606,
+      "response_pixels": 8,
+      "id_pixels": 3,
+      "overlap": 3,
+      "precision": 0.375,
+      "recall": 1.0,
+      "outside_one_pixel": 1
+    },
+    {
+      "index": 607,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 608,
+      "response_pixels": 2,
+      "id_pixels": 2,
+      "overlap": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 609,
+      "response_pixels": 475,
+      "id_pixels": 448,
+      "overlap": 448,
+      "precision": 0.9431578947368421,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 610,
+      "response_pixels": 899,
+      "id_pixels": 875,
+      "overlap": 869,
+      "precision": 0.9666295884315906,
+      "recall": 0.9931428571428571,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 611,
+      "response_pixels": 798,
+      "id_pixels": 769,
+      "overlap": 762,
+      "precision": 0.9548872180451128,
+      "recall": 0.9908972691807543,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 612,
+      "response_pixels": 258,
+      "id_pixels": 233,
+      "overlap": 233,
+      "precision": 0.9031007751937985,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 613,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 614,
+      "response_pixels": 0,
+      "id_pixels": 0,
+      "overlap": 0,
+      "precision": null,
+      "recall": null,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 615,
+      "response_pixels": 103,
+      "id_pixels": 91,
+      "overlap": 91,
+      "precision": 0.883495145631068,
+      "recall": 1.0,
+      "outside_one_pixel": 0
+    },
+    {
+      "index": 616,
+      "response_pixels": 713,
+      "id_pixels": 687,
+      "overlap": 682,
+      "precision": 0.9565217391304348,
+      "recall": 0.992721979621543,
+      "outside_one_pixel": 0
+    }
+  ],
+  "response_summary": {
+    "precision_median": 0.952023988005997,
+    "precision_minimum": 0.8376623376623377,
+    "recall_median": 0.992721979621543,
+    "recall_minimum": 0.9363636363636364,
+    "compared_substantial": 123,
+    "response_pixels": 72028,
+    "response_outside_one_pixel": 25
+  }
+}

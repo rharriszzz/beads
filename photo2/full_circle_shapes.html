@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><title>Full-circle visible bead shapes</title>
+<style>body{font:17px system-ui;max-width:1500px;margin:2em auto;padding:0 1em}img{max-width:100%;height:auto}canvas{max-width:100%;height:auto}input{width:70%}.panels{display:grid;grid-template-columns:3fr 1fr;gap:1em}button{padding:.5em}</style>
+<h1>Visible bead shapes around the whole necklace</h1>
+<p>One known synthetic necklace, helicity +1. Each outline is the visible part of one rendered bead, including neighbor occlusion. Indices are known render indices; this is not an inventory of any existing JPEG. Hidden indices remain selectable.</p>
+<p><button id="prev">Previous</button> <input id="index" type="range" min="0" max="675" value="0"> <button id="next">Next</button></p>
+<p id="info"></p><div class="panels"><canvas id="whole" width="1200" height="900"></canvas><canvas id="detail" width="360" height="360"></canvas></div>
+<p>Magenta: selected visible outline. Cross: projected geometric center, which can be hidden. The white appearance reference reuses two earlier black-bead renders; outlines come from one flat object-label render without shading, highlights or antialiasing.</p>
+<h2>Shape changes around the major circle and around the rope</h2>
+<p>Rows sample major-circle position every 30°. Columns hold minor-circle phase fixed. Actual indices differ slightly from the requested major angles because beads are discrete. Every cell has the same pixel scale; zero-pixel positions are gray. Small shapes are retained here for calibration, not promoted to an active inventory.</p>
+<p><a href="screen-shapes.png"><img src="screen-shapes.png"></a></p>
+<p>The following version rotates each shape so the local projected rope tangent points right. It does not rescale the bead. This separates rotation in the picture from changing exposure and perspective. Masks in the data retain original pixel coordinates.</p>
+<p><a href="tangent-shapes.png"><img src="tangent-shapes.png"></a></p>
+<h2>Complete coverage</h2><p>All 676 bead positions, arranged in 52 groups of 13; darker cells have more visible area (scale capped at 1100 pixels). Columns are minor-circle phase. No hidden position is omitted.</p>
+<p><img src="visibility-grid.png"></p><p><a href="full-circle.png">Full-circle phase colors</a> · <a href="outlines-on-white.png">All outlines on white appearance</a> · <a href="shapes.json">All shapes and coordinates</a> · <a href="report.json">Measurements and provenance</a></p>
+<script>
+const data=__SHAPE_DATA__;
+const image=new Image(), slider=document.getElementById('index'), whole=document.getElementById('whole'), detail=document.getElementById('detail');
+function outline(ctx, bead){ctx.beginPath();for(const points of bead.contours){points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath()}ctx.stroke()}
+function draw(){let bead=data.beads[+slider.value], [x,y]=bead.projected_center;
+let ctx=whole.getContext('2d');ctx.drawImage(image,0,0);ctx.strokeStyle='#cf0088';ctx.lineWidth=2;outline(ctx,bead);ctx.beginPath();ctx.moveTo(x-6,y);ctx.lineTo(x+6,y);ctx.moveTo(x,y-6);ctx.lineTo(x,y+6);ctx.stroke();
+let d=detail.getContext('2d');d.setTransform(1,0,0,1,0,0);d.fillStyle='white';d.fillRect(0,0,360,360);d.imageSmoothingEnabled=false;d.setTransform(4,0,0,4,180-4*x,180-4*y);d.drawImage(image,0,0);d.strokeStyle='#cf0088';d.lineWidth=.6;outline(d,bead);
+document.getElementById('info').textContent=`Index ${bead.index} · major angle ${bead.major_angle.toFixed(1)}° · minor phase ${bead.minor_phase.toFixed(1)}° · ${bead.pixels} visible pixels${bead.pixels?'':' — hidden at this raster'}`;
+}
+slider.oninput=draw;document.getElementById('prev').onclick=()=>{slider.value=(+slider.value+675)%676;draw()};document.getElementById('next').onclick=()=>{slider.value=(+slider.value+1)%676;draw()};image.onload=draw;image.src='white-reference.png';
+</script>

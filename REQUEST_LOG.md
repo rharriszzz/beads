@@ -3362,3 +3362,90 @@ compare seams with within-bead shading/highlight controls. Stop at illustrated
 method assessment before mask/count/exclusion/index changes. No JPEG source-
 pattern lookup. White/black calibration cannot test saturation changes itself.
 Recommend **gpt-6-astra / High, fresh `/new`** when ready; do not auto-continue.
+
+R084 delivery: commit a0b9199 pushed to origin/photo-2-reconstruction. Remote tip
+verified as a0b9199a2d2af5f358bc3d529e677d6c26c57a22; local status clean and
+upstream synchronized. Staging initially needed escalation for read-only index.
+A documentation EOF blank-line warning was corrected before staging. Routine
+renders/wrappers/logs and environment intentionally remain ignored.
+
+## R085 — Generalize visible shapes around the full circle (2026-09-24)
+
+User steering: "Now you may want to generalize the chapes to see what they look
+like all around the circle. for this test, the helicity does not matter. You
+already have some idea what helicity does, based on your recent tests."
+Same session/status as R083/R084, no new usage or transfer. Preflight following
+R084 delivery: daisy, clean photo-2-reconstruction at a0b9199, origin matches,
+no intervening user files. Scope: one-helicity full-circle shape atlas using
+all 676 known synthetic bead positions. One additional flat object-label render
+through existing legacy geometry instrumentation; organize visible outlines by
+major-circle angle and minor-circle phase, preserving hidden indices. Compare
+against the existing positive-helicity black-bead responses as an independent
+appearance check. No new black-bead sweep, no JPEG inventory or pattern changes.
+
+R085 documentation steering: "I am hoping you will explain this to future
+incarnations of yourself maybe at an abstract level, and at more detailed levels,
+depending which analysis task is being done." Implemented a layered reasoning
+guide and explicit AGENTS.md / PLAN / handoff pointers. No new experiment was
+added for this documentation request.
+
+### R085 outcome and checks
+
+**Start future shape/boundary work with [SHAPE_REASONING](photo2/SHAPE_REASONING.md):**
+quick conceptual model, task-specific evidence table, then detailed recipes only
+as needed. AGENTS.md now requires that entry point for boundaries, shapes,
+geometry and helicity. The guide distinguishes established evidence from the
+unimplemented S/V path method, synthetic ownership from JPEG mask hypotheses,
+and visible adjacency from chain adjacency. No universal oval or area-only
+identity rule; preserve pose, occlusion, hidden indices and helicity alternatives.
+
+[Full-circle assessment](photo2/FULL_CIRCLE_SHAPES.md) ·
+[Interactive atlas](photo2/review/r085/review.html).
+One additional object-label render, Helicity=+1, unchanged legacy geometry:
+676 positions, 483 nonzero shapes, 193 zero-pixel positions at 1200×900.
+441 masks >=12 pixels, 392 >=100; these are calibration counts, not active
+inventories or fragment decisions. Sum 225,907 visible pixels. Shape data keeps
+all 676 indices; representative atlases have 12 major-angle rows ×13 minor-phase
+columns, max angle mismatch 3.373°. Original orientation and tangent-aligned
+views show that rotation alone cannot explain changing exposure. A slider
+selects every index, including hidden ones.
+
+Checks against the 208 prior +1 beauty frames: 123 substantial pairs have median
+response precision 95.20%, recall 99.27%; minima 83.77%/93.64%. Just 25/72,028
+response pixels lie beyond a one-pixel label dilation. Anti-aliasing/threshold/
+highlight differences remain. Known synthetic shape calibration is not JPEG
+segmentation, source-pattern recovery, a trained general shape predictor or a
+photo fit. One additional render only; R084 beauty frames reused.
+
+All 676 shapes, 156 unclipped atlas cells, 208 comparisons, source/artifact hashes,
+links and render parameters verify. Three non-rendering legacy visibility controls
+pass, Python compilation passes, Node mock-DOM exercises all 676 selections and
+wrap controls. No browser visual interaction or full legacy/render suite. Eight
+atlas artifacts regenerate byte-identically with --analyze-only. Both atlases
+inspected. Corrected verifier's overly conservative bounding-box corner check to
+use actual mask pixels (max radius 20.81 <30 pixel half-crop). Initial nonexistent
+geometry/legacy-note paths corrected via discovered VISIBILITY.md. No extra
+render needed; raw label image/layout/log stay ignored. Report SHA256 2e53873e11a46346f9af4928f85b6dea3f5e126300491a0bab3bddb2dde41e2d.
+
+All seven JPEG inventory counts and warnings stay unchanged; carry beads6 144/189,
+beads3 122/405, beads5 188, R081 queue, colors/borders/glint repairs, missing/null
+indices, and unverified completeness. Ignore slivers; no ownership decisions.
+No new maker questions; prior photo-shadow questions remain pending. Deferred
+beads5 349/364 area-cut work must not displace the maker's requested method change.
+
+Next bounded task: use the reasoning guide and shape atlas to design/evaluate S/V
+paths between visible interiors in beads6, with within-bead shading/highlight
+controls and explicit path-placement sensitivity. Publish illustrated method
+assessment; stop before mask/count/exclusion/index changes and source-pattern
+lookup. Recommend **gpt-6-astra / High, fresh `/new`** when ready; stop here.
+
+R085 final conceptual clarification from maker: "as you know, helicity is
+important for progress about the minor axis of the torus. But for progress about
+the major axis, you sort of need to kown the angle the current section is at, in
+order to know what shapes you will see from the beads."
+Updated AGENTS.md, layered reasoning guide, atlas notes, PLAN and handoff:
+helicity controls minor-circle progression; the current section's orientation
+relative to the camera selects the expected exposed-shape family along the major
+circle. In the fixed torus/camera, major angle determines this view. For photos,
+image tangent alone does not determine out-of-plane tilt. No additional render
+or analysis experiment was started for this clarification.

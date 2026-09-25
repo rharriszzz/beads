@@ -2,6 +2,13 @@
 
 Read `SESSION_HANDOFF.md`, the latest `REQUEST_LOG.md` entries, and the relevant
 experiment notes before continuing. User instructions override historical plans.
+For bead boundaries, visible shapes, local geometry or helicity, first read the
+quick model and relevant task row in `photo2/SHAPE_REASONING.md`. Read its detailed
+recipes only as needed for the current analysis; follow links for evidence and
+reproduction. R084–R085 establish pose-dependent exposed shapes and neighbor
+occlusion, not a universal oval or an image-only index/pattern solution. Keep
+minor-circle progression (helicity) separate from the local section angle to the
+camera, which determines the expected shape family around the major circle.
 
 ## One-word continuation
 
