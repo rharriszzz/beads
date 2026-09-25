@@ -11,19 +11,19 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R078 beads6 active map complete
+## Current step — R079 beads7 active map complete
 
-[Beads6 review](photo2/BEADS6_INVENTORY.md) records 310 provisional observations:
-140 red, 118 blue-gray and 52 white. Counts for beads1–6 are
-313/318/304/342/328/310; none is a verified complete inventory or pattern.
-Beads6 has no remaining large-area/sparse-reference flags. Beads5 188 and beads3
-122/405 remain unresolved. Colors, same-color borders and shadow separation
-remain provisional; all chain indices remain null.
+[Beads7 review](photo2/BEADS7_INVENTORY.md) records 327 provisional observations:
+45 red, 86 green, 62 black, 41 silver and 93 white. Counts for beads1–7 are
+313/318/304/342/328/310/327; none is a verified complete inventory or pattern.
+Beads7 has no remaining large-area/sparse-reference flags, but manual black-glint
+repairs, pale labels, same-color borders and shadow separation remain provisional.
+Beads5 188 and beads3 122/405 remain unresolved. All chain indices stay null.
 
-Next bounded task: review beads7.jpg from the JPEG alone, adapting its palette
-and dark/neutral support before applying R069. Stop after an illustrated active
-map/checks; carry prior warnings and unknown chain indices. Complete generated
-JPEG review before returning to indexing or photographs. No new maker question.
+Next bounded task: assess beads5 188 with JPEG-visible boundary profiles and
+neighboring-mask scale, retaining competing one/two-body hypotheses. Publish an
+illustrated resolve-or-retain decision and stop before indexing or photographs.
+Carry beads3 warnings and missing observations. No new maker question.
 Recommend gpt-6-astra / High and a fresh `/new` using SESSION_HANDOFF.md.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
@@ -38,8 +38,8 @@ maps for all seven JPEGs, but **zero verified complete inventories and zero
 recovered full patterns**. All four indexing variants per image have conflicts.
 Do not treat the 352/392/435/410/403/354/417 candidates as correct bead counts.
 
-R068–R078 provide provisional active maps for beads1–6. Continue with beads7
-as specified above; preserve missing observations and color/border
+R068–R079 provide provisional active maps for all seven JPEGs. Resolve or
+characterize the remaining body/mask warnings as specified above; preserve missing observations and color/border
 uncertainty. R069 supersedes earlier fragment-accounting plans: ignore slivers.
 
 ## Previous direction — R057 (superseded by R059)
