@@ -44,6 +44,12 @@ commands; the user controls `/new`, `/status` and model selection.
   use images to illustrate questions whenever helpful. Preserve source inputs,
   hashes and a command that recreates every reported result and illustration.
 - Update the handoff with results, checks/skips, limitations and one next task.
+  R071: keep a short current progress table at its top, linking each generated
+  image's active inventory and unresolved issues. Read this and the latest step
+  before historical entries. Scope observation IDs/exclusions to their image.
+  For a new palette, review foreground, colors and region masks before applying
+  the local-area rule; a bad mask is not evidence of a sliver. Carry warnings
+  forward explicitly and keep source-pattern lookup out of image-only review.
   A computer switch needs an explicit transfer of local unpublished changes and
   task ownership. A clean checkout alone cannot establish remote inactivity.
 - R006/R010 establish the end-of-step routine: add, commit and push scoped work,
@@ -68,7 +74,8 @@ commands; the user controls `/new`, `/status` and model selection.
   for this round's questions at the end, with illustrated problems.
 
 The old `image-to-pattern/plan.md` is historical. Its uncompleted inverse gates
-remain useful evidence, but this branch follows the user's photo-2 forward-model
-task. The former untracked v2 package/render were preserved on
+remain useful evidence. R059 currently prioritizes generated JPEG inventories
+before photographs or pattern inference; the photo-2 forward model remains the
+underlying project. The former untracked v2 package/render were preserved on
 `archive/image-to-pattern-2-wip` under R012; see `photo2/archive-manifest.json`.
 Do not restore archived work into this branch without a task-specific reason.

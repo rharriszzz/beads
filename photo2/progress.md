@@ -817,3 +817,14 @@ No new questions or pattern claim. BEADS2_INVENTORY.md and review/r070 contain
 method, maps and correction examples. Eleven tests, compilation, source hashes,
 repeatability and region/ID checks pass. Next beads3, distinguish neutral beads
 from shadow, stop after active map/checks without indexing or POV pattern lookup.
+
+## 2026-09-24 — R071/R072 beads3 neutral bodies and black-region illustrations
+
+304 selected observations (120 white, 117 black, 67 red), with slivers ignored.
+New neutral-color support, marker corrections and connected masks; 122/405 retain
+large-area warnings. Requested raw/marked/outlined close-ups plus whole-image
+locations committed with the review. BEADS3_INVENTORY.md records method, rejected
+approaches and limits. Twelve tests, compilation, hashes, repeatability and label
+checks pass. Handoff now starts with a progress table; AGENTS clarifies palette/
+mask review before area filtering and image-specific IDs. No new questions.
+Next beads4 active map/checks, retain beads3 warnings; recommend fresh `/new`.

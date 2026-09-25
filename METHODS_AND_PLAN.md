@@ -19,8 +19,10 @@ excluding 37 known fragments and ten additional regions below half the local
 median area. Historical records are retained; sliver ownership is outside scope.
 R070 adds a [beads2 map](photo2/BEADS2_INVENTORY.md) with 318 active observations,
 using support for orange, yellow, violet and pale lavender. Eleven relevant tests
-and repeatability checks pass; same-color boundaries remain provisional. Next
-review beads3's red/black/white bodies and neutral shadows from the JPEG alone.
+and repeatability checks pass; same-color boundaries remain provisional. R071 adds a [beads3 neutral-body map](photo2/BEADS3_INVENTORY.md): 304 selected
+observations, with two large black-region warnings illustrated in R072.
+Its mask includes uncertain shadow strips; its count and boundaries remain
+provisional. Next review beads4 from the JPEG alone.
 We do not yet have a verified complete bead inventory or a recovered full
 pattern for any of the seven generated images.
 

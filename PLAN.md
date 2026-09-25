@@ -11,21 +11,20 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R070 beads2 map complete; next beads3
+## Current step — R071/R072 beads3 review and black-region images
 
-The [beads2 inventory](photo2/BEADS2_INVENTORY.md) contains 318 active body
-observations: 111 orange, 124 lavender, 45 violet, 38 yellow. Pale-color support,
-manual marker corrections and R069 selection ignore slivers. Region boundaries
-and completeness remain provisional; no full pattern has been recovered.
-The [beads1 selection](photo2/INVENTORY_SELECTION.md) remains at 313 observations.
-No new maker questions; earlier photo questions do not block generated images.
+The [beads3 map](photo2/BEADS3_INVENTORY.md) has 304 selected observations:
+120 white, 117 black, 67 red. Neutral-color support and marker review improve
+on the baseline; boundaries remain provisional. Large-area warnings 122 and 405
+are retained with [close-ups](photo2/review/r071/black-regions.png) and
+[locations](photo2/review/r071/black-region-locations.png), as requested in R072.
+No complete inventory or recovered pattern is claimed. Beads1/2 remain at
+313/318 active observations. The handoff's progress table links all three.
 
-Next bounded task: review beads3.jpg's visible body/color map from its JPEG alone.
-Adapt support for red, black and white, separating neutral bodies from neutral
-shadows; retain uncertainty rather than using a chroma-only mask. Apply R069
-sliver/local-area policy. Stop at its map and checks, then review beads4–7 before
-index/repeat inference. No POV-Ray pattern lookup or photo fitting.
-gpt-6-astra / High; stay here, no `/new` needed.
+Next bounded task: review beads4.jpg from the JPEG alone, adapt its palette
+including white, apply R069 and stop at active map/checks. Carry beads3 warnings
+forward; then beads5–7 before indexing. No new required maker questions or
+POV-Ray pattern lookup. Recommend gpt-6-astra / High and a fresh `/new`.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 

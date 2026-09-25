@@ -1,0 +1,105 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/beads3_inventory.py",
+    "--output",
+    "photo2/output/beads3-final",
+    "--review-bundle",
+    "photo2/review/r071"
+  ],
+  "parameters": {
+    "envelope_closing_radius": 10,
+    "envelope_fill_holes_below": 1500,
+    "red_dominance": 40,
+    "red_minimum": 45,
+    "black_value_max": 95,
+    "fill_black_highlight_holes_below": 64,
+    "maximum_seed_snap_px": 6.0,
+    "watershed_compactness": 0.03,
+    "black_seed_interior_radius": 4,
+    "maximum_assignment_distance_px": 28.0
+  },
+  "selection_parameters": {
+    "neighbor_count": 8,
+    "neighbor_radius_px": 45.0,
+    "minimum_neighbors": 4,
+    "minimum_area_ratio": 0.5,
+    "large_area_warning_ratio": 2.0,
+    "edge_radius_multiplier": 1.0,
+    "silhouette_closing_radius": 2,
+    "silhouette_hole_limit_px": 128,
+    "explicit_excluded_ids": []
+  },
+  "sources": {
+    "photo2/beads3_inventory.py": "c8f289421cf04979953a85c836656443e2c242888b21075882208dd8a9c8c6bb",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/beads1_inventory.py": "0165ba8bfde46e795efe36f09d7bb07d0ad5a3ede120c8893fd129d5fd24e328",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/beads3-review-r071.json": "917a8d60c6b1ceb171aaa31fb6b9ed0b0998a0746afc3856f9824386d71be299",
+    "beads3.jpg": "adbbe759bd90db54aaa826282f195c5bcb26297d7fa7705e0da9cd0b0b455bfe",
+    "photo2/test_beads3_inventory.py": "fb28260311ae53cde1998b111bdd58d65b941e73bcea2cb4a8640f000955957d"
+  },
+  "summary": {
+    "baseline_candidates": 435,
+    "removed_markers": 152,
+    "added_bodies": 32,
+    "active_count": 304,
+    "active_colors": {
+      "white": 120,
+      "black": 117,
+      "red": 67
+    },
+    "excluded_count": 11,
+    "known_fragments_ignored": 0,
+    "small_ids": [
+      8,
+      146,
+      245,
+      324,
+      330,
+      334,
+      354,
+      373,
+      393,
+      424,
+      426
+    ],
+    "active_warning_ids": [
+      122,
+      405
+    ],
+    "support_pixels": 114882,
+    "original_unassigned_pixels": 5342,
+    "original_unassigned_regions": 93,
+    "active_pixels": 108058,
+    "ignored_assigned_pixels": 1482,
+    "support_pixels_outside_review": 0,
+    "complete_visible_inventory_verified": false,
+    "pattern_status": "not inferred"
+  },
+  "artifacts": {
+    "BL-review.png": "1f2f6aad46a8427d28af21e1c667625b5ce7882a653a0b15af50826aeec54caf",
+    "BM-review.png": "dfb6fbdfa00ec6462d061437d72ad19e75b4664aba7acf5e90c996172edc85b3",
+    "BR-review.png": "f018a89a1e25ac0e1dab10a27fe9527a6519c5481174fa855f29b8d60537b711",
+    "L-review.png": "952045085ca6bc47ccaab6340d868b78745b67691daa55dd802e7961e843c551",
+    "R-review.png": "7e1d4a158feaccb5a7aa9a9177f40abcc0242bf452546334eb9240de0d7f4e7d",
+    "T1-review.png": "126252ac7d903fcc677175aa61f1999d0f5fa94913e2c87f1e53d7c583c624a0",
+    "T2-review.png": "62ebc4fcaa63f0118fdad6f3328a7affc249acdfb86227da5ef28f6ff0f76901",
+    "T3-review.png": "ff5bdf7cce3c7035c52bf9dc508586e76912ba004606bb51ac408d143ca7a19b",
+    "active-overview.png": "ac7787de86097f20d3fd7d2e8aa368682e32cd8460f2753a8ff78a26101f1e1d",
+    "black-region-locations.png": "73781fa1db61a9a5575cf3d1710918cc113c513158d1cb13c3ef19a2e7ad51a5",
+    "black-regions.png": "9cea3883e1dab4ac79e3b639f376466bfc7a0cfe25acb158987451efafc169f5",
+    "corrections.png": "2acf11e7be63b8bb2be27947f0e088e61fb8ce989efaf83407e87f70d82fa9ce",
+    "envelope.png": "85afd6e90ef04ae68a481eac341969b79e5deb55e9299a4cb68eedb6a4b09608",
+    "inventory.json": "e4d1a73a9a4e30b84e9f6f2998de552a47938db86897e3ad22ffb8d42c649ff0",
+    "regions.png": "e5f8247327381aefdaddfbed275d5b26b7346ef36c2e440e38cf5c04142cb4bf",
+    "review.html": "5857533f9d9f48cb06180b84baf4cdc473f0051278b948764f384e6d2f5fed26",
+    "warnings.png": "d2a9e2b294e406cb982044b587b5f811d8958988c7a8bfb0c3582db4eee43847"
+  },
+  "bulk_artifacts": {
+    "active-labels.npy": "e3d0291ea769c4007b6a63694cd725259ed52bdcfc99f862083629cbe94e404c",
+    "color-support.npy": "aad9f972f5c99c3f750f788388eaeb1a2a2cffdae2ff19403854b74ae89d5489",
+    "envelope.npy": "f263edf53d13960ca5240a5e5250f1f76350a6d9890bcf01a47ddb4948803121",
+    "labels.npy": "1368e519b0840eabb1b9b0c63443ee363eba5df1826d1057f75080a6e63acf74"
+  }
+}

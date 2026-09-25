@@ -2650,3 +2650,64 @@ Curated maps/correction images committed; bulk/scratch/repeat files ignored.
 Next beads3 JPEG-only active map with neutral-body/shadow support, then checks;
 gpt-6-astra / High, stay here, no `/new` needed.
 Report SHA256 2d6f250b9e1b4d65b40e0d0dfb709f2657faa129690a826c994a90bc9a90f8b7.
+
+## R071 — Continue with beads3; improve handoff only where useful (2026-09-24)
+
+> if no questions, please continue.  Update the handoff procedures to represent the recent progress, but only if you thing it actually helpful.
+
+No open generated-image questions. Continue beads3 JPEG-only body/color review
+under R069; adapt neutral-body/shadow separation and stop after map/checks.
+Update handoff procedure only with useful, transferable recent lessons, retaining
+prior results and avoiding extra approval gates. Preflight daisy, clean branch
+photo-2-reconstruction at 114881b, origin upstream, no stashes, Python 3.12.14.
+Approved fetch succeeded; ahead/behind 0/0. No new status, delegation or transfer.
+
+## R072 — Illustrate the remaining black regions (during R071, 2026-09-24)
+
+> make one or images showhing these black regions, please.
+
+Steering for the active beads3 step: create focused raw/marked/region close-ups
+for the remaining large-area warnings 122 and 405, plus a whole-image location
+view. Save reproducible images in the curated bundle and commit/push with R071.
+No change to the inventory objective or permission scope; no new maker questions.
+
+### R071/R072 outcome and checks
+
+Beads3 map now has 304 selected observations: 120 white, 117 black, 67 red.
+435 baseline minus 152 removals (109 unsupported/boundary, 43 duplicate peaks)
+plus 32 added visible bodies minus 11 small-area exclusions. Palette and marker
+corrections based only on JPEG review. No complete inventory or pattern claim.
+R069 retained; no sliver identity accounting. Black regions 122 and 405 remain
+large-area warnings (683/754 px, ratios 2.72/2.03); R072 focused close-ups show
+raw image, markers and magenta assigned boundaries, plus full-image locations.
+Reviewing earlier warnings added bodies 465–467; warnings 36/176 clear. No maker
+reply to these images yet; no new required questions. Earlier photo questions
+remain saved. No lighting diagnosis, POV source lookup or rendering.
+
+Initial manual envelope cut bodies and was rejected. R059 foreground omitted
+white interiors; closing/filling repairs support. R059 color sampling mislabeled
+white as black; local brightness medians confused black glints; support classes
+plus visual overrides adopted. Watershed .002 starved adjacent white regions;
+.03 adopted, flat-surface geometry for black. Five disconnected-label cases found
+and fixed by retaining the seed-connected component, leaving 97 pixels unassigned.
+These were exploratory method/validation findings, not test execution failures.
+114,882 envelope pixels; 5,342 initially unassigned (93 components >=6 px),
+1,482 filtered pixels, 108,058 active. Envelope still includes uncertain shadow;
+all support within reviewed crops does not establish completeness.
+
+Five new controls and seven selection tests pass (12); compilation passes.
+Seven source hashes verify; 17 curated artifacts (15 PNGs, HTML, inventory JSON)
+and four bulk maps reproduce byte for byte, reports equal except commands.
+Active regions nonempty, connected, palette-pure, seed-preserving, IDs unique;
+removed IDs absent, no filter pixel reassignment, chain indices null. Actual
+max seed shift 4 px, 7–8 references per active body. Full image, eight crops,
+coordinate grids, 18 residual close-ups, region outlines/warnings visually reviewed.
+No test/execution failures; no full legacy regression, indexing, other-image edits.
+
+Handoff procedures updated only with useful lessons: progress table at top,
+image-scoped IDs, palette/mask review before area filtering, explicit unresolved
+warnings, and current generated-JPEG-first priority. Exact evidence and commands
+in BEADS3_INVENTORY.md. Commit scoped source/edits/tests/docs and curated images;
+bulk/scratch/repeat outputs remain ignored. Next beads4 JPEG-only map/checks,
+carry 122/405 warnings; gpt-6-astra / High, fresh `/new` recommended.
+Report SHA256 35335aee0a64cc07976f478019be773702ba1dd4d50473bb49b8c1eb4e95ad5e.

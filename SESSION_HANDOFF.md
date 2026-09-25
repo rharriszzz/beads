@@ -1,5 +1,80 @@
 # Beads session handoff
 
+## Current progress — read this and the latest step first
+
+Generated JPEGs first (R059); ignore slivers (R069). No complete inventory,
+chain indexing or recovered full pattern is established for any image.
+
+| Image | Current active observations | Evidence and limits |
+| --- | ---: | --- |
+| beads1 | 313 | [R069 selection](photo2/INVENTORY_SELECTION.md); fragments and image-specific 211 excluded |
+| beads2 | 318 | [R070 review](photo2/BEADS2_INVENTORY.md); pale-lavender support, provisional borders |
+| beads3 | 304 | [R071/R072 review](photo2/BEADS3_INVENTORY.md); 122/405 large-area warnings remain |
+| beads4–7 | Not reviewed beyond R059 baseline | Candidate counts are not accepted inventories |
+
+No open generated-image questions require answers. Prior photo-shadow questions
+remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
+Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R071/R072 — beads3 neutral-body map and requested black-region images
+
+R071: "if no questions, please continue. Update the handoff procedures to represent
+the recent progress, but only if you thing it actually helpful." R072 during
+work: "make one or images showhing these black regions, please." Exact requests
+logged. Preflight daisy, clean photo-2-reconstruction at 114881b, origin upstream,
+no stashes, Python 3.12.14. Fetch succeeded; ahead/behind 0/0. No status/usage,
+delegation or machine transfer supplied. No scene/pattern lookup or rendering.
+
+304 selected observations: 120 white, 117 black, 67 red. From 435 baseline
+markers, remove 152 (109 unsupported boundaries/background, 43 duplicate peaks),
+add 32 image-supported bodies (436–467), then exclude 11 small regions under
+R069. All chain indices null, centers/borders provisional. No sliver ownership
+accounting. Marker/class corrections in photo2/beads3-review-r071.json.
+Black regions 122 (683 px, 2.72 x median) and 405 (754 px, 2.03 x median) retain
+possible-merge/uncertain-boundary warnings. Do not silently treat them as clean
+one-bead masks. R072 images: review/r071/black-regions.png (raw, markers, magenta
+region outlines) and black-region-locations.png (full context). Earlier four
+warning locations retained in warnings.png; additions clear warnings at 36/176.
+No new required maker question. Keep the images available for any volunteered
+interpretation; no reply has yet been received to them.
+
+Method: close R059 foreground gaps with 10 px disk, fill holes <=1,500 px to
+retain white bodies; large opening preserved. Neutral-shadow border remains
+uncertain. Palette: red dominance >40 and red >=45, otherwise max RGB <95 black,
+else white; fill enclosed black glint holes <=64 px. Review marker colors; R059
+non-highlight sampling incorrectly calls many white bodies black. Red/white
+compact watershed .03; black flat-surface geometric watershed and interior seed
+shift <=4 px. Assignment radius 28 px. Keep seed-connected component only:
+97 detached pixels unassigned. R069 area parameters unchanged, image exclusion
+list empty. Active rows have 7–8 neighbors; 11 small exclusions, 8 near edge.
+
+Rejected/diagnostic lessons: guessed manual outline cut through bodies; original
+mask omitted bright white interiors; local brightness median confused black
+glints with white; .002 watershed let bright white bodies absorb dimmer neighbors.
+Five disconnected-label cases found in checking were fixed by seed-component
+retention. Earlier provisional counts changed during review, final 304 only.
+Do not copy image-specific thresholds without reviewing palette and masks first.
+114,882 envelope pixels; 5,342 initially unassigned (93 components >=6 px),
+1,482 assigned pixels ignored by filtering, 108,058 active. All support is inside
+reviewed crops; no completeness claim. See BEADS3_INVENTORY.md for reproduction.
+
+Reviewed full JPEG, eight baseline/revised crops, coordinate grids, 18 largest
+intermediate residuals, outlines and warning close-ups. Five new controls plus
+seven selection controls pass (12); compilation passes. Seven source hashes
+verify; 17 curated artifacts and four bulk maps reproduce byte for byte; reports
+equal except commands. Active regions nonempty, connected, palette-pure,
+seed-preserving; IDs unique, removed IDs absent, no filter pixel reassignment.
+No test/execution failures; exploratory method failures above. No legacy suite,
+indexing or changes to earlier inventories. Bulk/scratch/repeat outputs ignored.
+Report SHA256 35335aee0a64cc07976f478019be773702ba1dd4d50473bb49b8c1eb4e95ad5e.
+AGENTS updated with useful handoff procedure: compact progress table, image-scoped
+IDs, mask/color review before area filters, carry warnings and JPEG-first priority.
+
+Next bounded task: beads4.jpg JPEG-only body/color review, adapting its palette
+including white; apply R069 and stop at active map/checks. Carry 122/405 warnings
+forward. Then beads5–7 before any indexing. Recommend gpt-6-astra / High and a
+fresh `/new`, using this handoff; user controls model and session changes.
+
 ## R070 — beads2 active map complete; next beads3
 
 User: "if no questions, continue". No open generated-image questions; prior
