@@ -11,20 +11,24 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R079 beads7 active map complete
+## Current step — R080 beads5 188 diagnostic complete
 
-[Beads7 review](photo2/BEADS7_INVENTORY.md) records 327 provisional observations:
-45 red, 86 green, 62 black, 41 silver and 93 white. Counts for beads1–7 are
-313/318/304/342/328/310/327; none is a verified complete inventory or pattern.
-Beads7 has no remaining large-area/sparse-reference flags, but manual black-glint
-repairs, pale labels, same-color borders and shadow separation remain provisional.
-Beads5 188 and beads3 122/405 remain unresolved. All chain indices stay null.
+[Illustrated decision](photo2/BEADS5_188_DIAGNOSTIC.md): retain beads5 188's
+unresolved mask and the unchanged 328-observation inventory. The visible side
+seam supports adjacent portions, but ±2px cuts give a threshold-sensitive side
+area; no robust two-body split follows. The 2.008 area ratio becomes 1.970–2.046
+when one reference is omitted. R069 is unchanged; no sliver identities assigned.
 
-Next bounded task: assess beads5 188 with JPEG-visible boundary profiles and
-neighboring-mask scale, retaining competing one/two-body hypotheses. Publish an
-illustrated resolve-or-retain decision and stop before indexing or photographs.
-Carry beads3 warnings and missing observations. No new maker question.
-Recommend gpt-6-astra / High and a fresh `/new` using SESSION_HANDOFF.md.
+Counts for beads1–7 remain 313/318/304/342/328/310/327; none is a verified complete
+inventory or pattern. Beads3 122/405 remain unresolved. All color/border warnings,
+beads7 manual glint repairs, missing observations and null chain indices remain.
+
+Next bounded task: audit local-area warning stability across all seven frozen
+active inventories using leave-one-reference-out medians. Publish an image-scoped
+review queue distinguishing threshold-sensitive and persistent flags. Stop before
+mask changes, new body decisions, indexing or photographs; this does not test
+completeness. No new maker question. Recommend gpt-6-astra / High and a fresh
+`/new` using SESSION_HANDOFF.md.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 
@@ -38,7 +42,7 @@ maps for all seven JPEGs, but **zero verified complete inventories and zero
 recovered full patterns**. All four indexing variants per image have conflicts.
 Do not treat the 352/392/435/410/403/354/417 candidates as correct bead counts.
 
-R068–R079 provide provisional active maps for all seven JPEGs. Resolve or
+R068–R080 provide provisional active maps for all seven JPEGs. Resolve or
 characterize the remaining body/mask warnings as specified above; preserve missing observations and color/border
 uncertainty. R069 supersedes earlier fragment-accounting plans: ignore slivers.
 

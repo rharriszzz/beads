@@ -3071,3 +3071,65 @@ photos. Carry beads3 122/405 and all color/border warnings. Recommend
 
 Scoped commit/push: beads7 pipeline, annotations, five controls, curated review
 bundle, methods, PLAN, handoff and request log. No unrelated files staged.
+
+## R080 — Continue with beads5 188 boundary diagnostic (2026-09-24)
+
+User request: "continue" with prior completion usage and new `/status`.
+Prior session `01a0d65d-6938-7610-adf6-2e97b9f696be`, gpt-6-astra high:
+125,175 total tokens (108,686 input; 16,489 output; 3,169 reasoning;
+1,789,184 cached). New supplied session `01a0d667-7ec7-7571-9427-3971065f2e8f`,
+Codex 0.155.1, gpt-6-astra high, Workspace/Ask for approval, Default, ~/git/beads.
+Weekly 9% left (Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:31).
+Account identity omitted. No current-session usage, delegation or transfer supplied.
+Preflight: daisy/WSL2, clean photo-2-reconstruction at d5f51d5, origin upstream,
+no stashes, Python 3.12.14. Initial fetch blocked by read-only FETCH_HEAD;
+escalated fetch succeeded, ahead/behind 0/0. Initial notes read used nonexistent
+photo2/PLAN.md; corrected to root PLAN.md. Read current handoff, requests,
+beads5 methods/code and saved answers. Scope: JPEG-visible boundary profiles and
+neighboring-mask scale for beads5 188; preserve one/two-body alternatives and
+publish an illustrated resolve-or-retain decision. Stop before indexing/photos.
+Carry beads3 122/405 and all provisional color/border/completeness warnings.
+
+### R080 outcome and checks
+
+Completed the illustrated beads5 188 resolve-or-retain diagnostic: **retain the
+unresolved mask; the 328-observation inventory stays unchanged**. JPEG side seam
+supports adjacent portions, but one-central-body and two-adjacent-upper-portions
+hypotheses remain. No narrow portion given an identity. Raw middle-side profile
+depth 28/255; smoothing and line placement change depths substantially. Lower
+neck minimum lies at the search-window boundary, not a stable located cut.
+
+Original 534 pixels / 266 median = 2.008. Leave-one-reference-out ratios range
+1.970–2.046, four of eight below the warning threshold. Reference 179 itself has
+547 pixels; no reference is promoted to bead truth. Twenty-five diagnostic cuts
+shifted ±2px give central 217–340, side 122–231, lower 68–106 pixels; nominal
+275/174/85. Side crosses the half-median threshold, lower remains below. No robust
+two-substantial-body split established. No inventory/mask change, new IDs, pixel
+reassignment, sliver ownership, indexing, photos or source-pattern lookup.
+R069 unchanged; beads3 122/405 and all color/border/completeness warnings remain.
+
+Three new numerical controls, four beads5 and seven selection controls pass
+(14); compilation passes. Original labels regenerate to R077 NPY hash exactly.
+All 25 partitions conserve pixels. Twelve source hashes/six curated artifacts
+verify; repeated artifacts byte-identical, reports equal except command.
+3,420 CSV samples; HTML links resolve; three final figures inspected. No browser
+interaction or legacy rendering/index suite. Initial failed notes reads for
+photo2/PLAN.md and root requirements.txt corrected; failed chained crop generation
+caused an image-read failure, corrected by regeneration. Matplotlib temporary
+cache warning corrected with writable MPLCONFIGDIR. Initial out-of-crop marker
+label clipped before publication. No analysis/test failures.
+
+Updated diagnostic methods, beads5 methods link, PLAN and handoff/progress table.
+No new maker questions; saved R069 answers applied, older photo questions pending.
+Next: local-area warning stability audit across seven frozen inventories using
+leave-one-reference-out medians; publish image-scoped review queue and stop before
+mask changes/new body decisions/indexing/photos. Recommend gpt-6-astra / High,
+fresh /new. Scoped delivery includes diagnostic code, annotations, three controls,
+curated images/numerical evidence and workflow docs. Scratch/repeat/environment
+remain ignored. Report SHA256
+9ad718c5c2bbe057143c2b5dcae0e9ddf1e4947d53deee1137ebc66329b7854e.
+
+R080 delivery correction: staged diff check caught default CSV CRLF as trailing
+whitespace. Set the writer to LF, regenerated both bundles, and reverified all
+source/artifact hashes, report equality and links. Final report SHA256
+239cb76aeb60b6fe48e1ff44f6e435d3456aa797566193a413004227653a6175 supersedes the pre-delivery hash above.

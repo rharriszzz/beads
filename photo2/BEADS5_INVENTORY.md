@@ -5,6 +5,11 @@ No complete inventory, physical centers, chain indices or pattern is established
 **Beads5 188 remains an uncertain possible merge.** Beads3's separate 122/405
 warnings remain unchanged; observation IDs are image-specific.
 
+R080 follow-up: [boundary and scale diagnostic](BEADS5_188_DIAGNOSTIC.md)
+retains the unresolved 188 mask and this inventory unchanged. Its warning is
+sensitive to the reference set; visible seams do not establish a stable split.
+The current next task is in [PLAN.md](../PLAN.md); the R077 next task below is historical.
+
 [Review page](review/r077/review.html) · [Active map](review/r077/active-overview.png) ·
 [Records](review/r077/inventory.json) · [Parameters and hashes](review/r077/report.json)
 

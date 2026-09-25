@@ -11,13 +11,63 @@ chain indexing or recovered full pattern is established for any image.
 | beads2 | 318 | [R070 active map](photo2/BEADS2_INVENTORY.md); palette and same-color borders remain provisional |
 | beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved |
 | beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); same-color borders/white-shadow separation provisional; completeness unverified |
-| beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); 188 possible merge unresolved; neutral seams/colors provisional, completeness unverified |
+| beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); [R080 boundary/scale diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md) retains 188 unresolved; neutral seams/colors provisional, completeness unverified |
 | beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); same-color/white-shadow borders provisional; completeness unverified |
 | beads7 | 327 | [R079 active map](photo2/BEADS7_INVENTORY.md); manual black-glint repairs and pale labels/borders provisional; completeness unverified |
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R080 — beads5 188 boundary/scale diagnostic (2026-09-24)
+
+User requested "continue" with prior usage and new `/status`.
+Prior session `01a0d65d-6938-7610-adf6-2e97b9f696be`: Astra high, 125,175 total
+(108,686 input, 16,489 output, 3,169 reasoning, 1,789,184 cached).
+New session `01a0d667-7ec7-7571-9427-3971065f2e8f`: Astra high, Codex 0.155.1,
+weekly 9% left (Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:31).
+No current-session usage supplied. Account identity omitted; no delegation/transfer.
+Preflight daisy/WSL2, clean photo-2-reconstruction at d5f51d5, origin upstream,
+no stashes, Python 3.12.14. Fetch needed escalation for read-only FETCH_HEAD;
+succeeded, ahead/behind 0/0.
+
+**Retain beads5 188 unresolved; active inventory remains 328.**
+[Illustrated diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md) and
+[measurements](photo2/review/r080/diagnostics.json) preserve one-central-body and
+two-adjacent-upper-portions hypotheses, without assigning narrow portions any
+identity. Side seam visible, raw middle-trace depth 28/255; smoothing/placement
+sensitive. Lower-cut evidence weak and its trough is at the search-window edge.
+These are supporting image measurements, not a count or boundary classifier.
+
+The 534-pixel mask / 266 local median = 2.008 warning changes to 1.970–2.046
+under leave-one-reference-out medians (four of eight fall below the threshold).
+One reference, 179, has 547 pixels; references remain provisional, not clean
+bead truth. Diagnostic cuts shifted ±2px yield central 217–340, side 122–231,
+lower 68–106 pixels; nominal 275/174/85. Side crosses half-median cutoff;
+lower stays below. No cut promoted to an active mask, no IDs added or removed,
+no pixel reassignment, no sliver ownership. R069 unchanged. Stop before indexing,
+photos or source-pattern lookup. Beads3 122/405 and all color/border/completeness
+warnings remain; none of seven inventories is complete and all indices stay null.
+
+Checks: three new numerical controls + four beads5 + seven selection controls
+pass (14); compilation passes. Regenerated labels match R077 NPY hash exactly.
+12 source hashes and six curated artifacts verify; repeat artifacts byte-identical,
+reports equal except command. All 25 cuts conserve pixels; CSV 3,420 samples;
+HTML links resolve. Three final figures inspected. No browser interaction,
+legacy rendering/index suite or other-image analysis. Failed notes paths and
+scratch-image read corrected; initial Matplotlib cache warning fixed with
+MPLCONFIGDIR. Out-of-crop plot label clipped. Staged whitespace check caught CSV CRLF;
+writer changed to LF and both bundles regenerated/verified. No analysis/test failures.
+Report SHA256 239cb76aeb60b6fe48e1ff44f6e435d3456aa797566193a413004227653a6175.
+Scratch/repeat/environment ignored; curated evidence committed. No new questions;
+saved R069 answers applied and older photo questions remain pending.
+
+Next bounded task: audit local-area warning stability across all seven frozen
+active inventories with leave-one-reference-out medians. Publish an image-scoped
+review queue of threshold-sensitive versus persistent flags, then stop before
+mask changes, new body decisions, indexing or photographs. This is not a
+completeness test. Recommend **gpt-6-astra / High, fresh `/new`**; model/session
+changes remain user-controlled.
 
 ## R079 — beads7 five-color active map (2026-09-24)
 

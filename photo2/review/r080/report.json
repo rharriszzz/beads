@@ -1,0 +1,156 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/beads5_188_diagnostic.py",
+    "--output",
+    "photo2/review/r080"
+  ],
+  "parameters": {
+    "image": "beads5.jpg",
+    "inventory": "photo2/review/r077/inventory.json",
+    "baseline_report": "photo2/review/r077/report.json",
+    "target_id": 188,
+    "crop_xyxy": [
+      640,
+      200,
+      705,
+      265
+    ],
+    "side_seam_xy": [
+      [
+        665,
+        212
+      ],
+      [
+        663,
+        220
+      ],
+      [
+        663,
+        226
+      ],
+      [
+        664,
+        230
+      ],
+      [
+        666,
+        234
+      ],
+      [
+        668,
+        238
+      ]
+    ],
+    "lower_cut_y": 238,
+    "seam_shift_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "lower_cut_shift_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "profiles": [
+      {
+        "name": "side-upper",
+        "center_xy": [
+          663,
+          222
+        ],
+        "axis_xy": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "side-middle",
+        "center_xy": [
+          663.5,
+          228
+        ],
+        "axis_xy": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "side-lower",
+        "center_xy": [
+          666,
+          234
+        ],
+        "axis_xy": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "lower-neck",
+        "center_xy": [
+          669,
+          238
+        ],
+        "axis_xy": [
+          0,
+          1
+        ]
+      }
+    ],
+    "profile_half_length_px": 7,
+    "sample_step_px": 0.25,
+    "parallel_offsets_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "gaussian_sigmas_px": [
+      0,
+      0.8,
+      1.2
+    ],
+    "notes": "JPEG-selected diagnostic cuts, not recovered boundaries or bead centers. Narrow portions have no assigned identity. Neither partition nor profile changes the active inventory. No source-pattern lookup."
+  },
+  "sources": {
+    "beads5.jpg": "4f1ef42e0d7ba623b483b197fd26dd69a83eabf5221d724a3501904b751620cc",
+    "photo2/beads1_inventory.py": "0165ba8bfde46e795efe36f09d7bb07d0ad5a3ede120c8893fd129d5fd24e328",
+    "photo2/beads5-188-r080.json": "8527da77081e53368a32ef67ac3e2d665ab18ff1a6c90c1c88f26366788b08c1",
+    "photo2/beads5-review-r077.json": "6ff4e6c9bdfa2acba32ebee100fef30350b74264600e7c21a9a28a4a37581400",
+    "photo2/beads5_188_diagnostic.py": "7436cd295ab3ec4e5cb252b038da4650dfbb38b45e337f483a287660cce30506",
+    "photo2/beads5_inventory.py": "0cced2d5d9632e98b0caf115a8a91dd19707acec5d772c2ce02bb9c0978e808a",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/review/r077/inventory.json": "d2f451ab8c254ab4354729986f72ec002275368cc274ae635dacabdc8ab46fd8",
+    "photo2/review/r077/report.json": "dc5af4f7fdbff46e587727c66237024205714efd7e47efab3ef6c7e3097ccf1b",
+    "photo2/test_beads5_188_diagnostic.py": "e7fd07e508c6e4a794fd6ea07091f1392de504699bd6bb56cdb4dab681230077",
+    "photo2/test_beads5_inventory.py": "d317ba28099b85f9982fc0cc1fffd7680ed98748dfe319223b6ebb8b79581357"
+  },
+  "checks": {
+    "baseline_sources_verified": true,
+    "regenerated_labels_match_R077": true,
+    "partition_conserves_pixels_all_25_cuts": true,
+    "active_inventory_unchanged": true
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "artifacts": {
+    "area-sensitivity.png": "50a4741ff9a003972a0010c1ea0c78fb5baa68bdbac3f5353063d3f0b6a3999b",
+    "boundary-comparison.png": "34174342be755e1447d0ead637980c6730a5bb9375252e373ee34e97ee14c6fe",
+    "diagnostics.json": "8e69639a649c6b979312446b0a588321a74030e31bb76ddfc3e28f8ccb7c5060",
+    "profiles.csv": "85e8c4463eb5fac79cbae747e0d933e1e3c4c69adc6cfdb749eff2b04f6a7664",
+    "profiles.png": "506de3f36ea7d5615131dd700a25de002f8b0cb04caa7285dc3382cccc916118",
+    "review.html": "ab9519470b043de47ce73cd29cc38349b8297adba709ea7f6804df1457252dc0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "image": "beads5.jpg",
+  "inventory": "photo2/review/r077/inventory.json",
+  "baseline_report": "photo2/review/r077/report.json",
+  "target_id": 188,
+  "crop_xyxy": [640, 200, 705, 265],
+  "side_seam_xy": [[665, 212], [663, 220], [663, 226], [664, 230], [666, 234], [668, 238]],
+  "lower_cut_y": 238,
+  "seam_shift_px": [-2, -1, 0, 1, 2],
+  "lower_cut_shift_px": [-2, -1, 0, 1, 2],
+  "profiles": [
+    {"name": "side-upper", "center_xy": [663, 222], "axis_xy": [1, 0]},
+    {"name": "side-middle", "center_xy": [663.5, 228], "axis_xy": [1, 0]},
+    {"name": "side-lower", "center_xy": [666, 234], "axis_xy": [1, 0]},
+    {"name": "lower-neck", "center_xy": [669, 238], "axis_xy": [0, 1]}
+  ],
+  "profile_half_length_px": 7,
+  "sample_step_px": 0.25,
+  "parallel_offsets_px": [-2, -1, 0, 1, 2],
+  "gaussian_sigmas_px": [0, 0.8, 1.2],
+  "notes": "JPEG-selected diagnostic cuts, not recovered boundaries or bead centers. Narrow portions have no assigned identity. Neither partition nor profile changes the active inventory. No source-pattern lookup."
+}
