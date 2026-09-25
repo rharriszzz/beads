@@ -3261,3 +3261,10 @@ Recommend **gpt-6-astra / High, fresh `/new`**; user controls model/session chan
 
 Scoped delivery: diagnostic code, annotations, two controls, curated figures and
 numerical evidence, methods, PLAN, handoff and request log. No unrelated files staged.
+
+R082 delivery checks: scoped commit 746f57f pushed successfully. Initial remote-tip
+verification failed on sandbox DNS resolution; escalated read-only ls-remote
+confirmed 746f57f72b13dbc69b28533f70eab55370a4d2b6. Final local status at that
+check was clean, ahead/behind 0/0. Staged whitespace check passed for all 15 scoped
+files. This delivery record is a documentation-only follow-up.
+Staging the delivery record hit read-only .git/index.lock; retried with escalation.
