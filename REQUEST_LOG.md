@@ -2816,3 +2816,63 @@ unit tests or legacy suite were run. No new questions. Handoff and plan updated;
 next bounded task is JPEG-only beads4 body/color review under R069, stop after an
 illustrated active map and checks, carrying 122/405 warnings. Recommend
 gpt-6-astra / High and fresh `/new`.
+
+## R076 — Continue with beads4 JPEG inventory (2026-09-24)
+
+User supplied prior completion banner: worked 9m52s, done 9:37 PM;
+prior session `01a0d62b-8ba4-70e2-a204-3417eaff3777`, gpt-6-luna medium,
+132,985 total tokens (108,364 input, 24,621 output, 10,090 reasoning,
+2,940,288 cached). New supplied status: session
+`01a0d635-fd9b-7701-b68d-b39d40a6a3a5`, Codex 0.155.1, gpt-6-astra high,
+Workspace/Ask for approval, Default collaboration, ~/git/beads. Weekly 13% left
+(resets 17:37 Sep 28), 283 credits, Luna Reserve 100% (resets 21:37 Oct 1).
+Account identity omitted; new-session token usage not supplied. Request:
+"continue". No delegation or machine transfer supplied.
+
+Preflight: daisy, clean photo-2-reconstruction at b747a09, origin upstream,
+no stashes, local Python 3.12.14. Initial fetch blocked by read-only FETCH_HEAD;
+approved fetch succeeded, ahead/behind 0/0. Read current handoff, recent requests,
+saved answers and relevant inventory methods. PLAN.md still described the older
+calibration task; current R075 handoff governs. Scope: beads4 JPEG-only palette,
+body and mask review, R069 selection, illustrated active map/checks; carry beads3
+122/405 warnings. No source-pattern lookup or indexing.
+
+### R076 outcome and checks
+
+Completed beads4 JPEG-only active map: 342 observations (49 red, 70 yellow,
+72 green, 78 cyan, 73 white). 410 candidates − 68 removals + seven additions
+− seven area exclusions. 64 removals are unsupported boundary peaks/tiny
+fragments, four are white-body duplicates. Added yellow 411/417, cyan 412/416,
+white 413–415; fixed colors/positions including white 14/379/382 and yellow 357.
+Area-sheet review identified 196 as a duplicate white-body marker of 203,
+misclassified green, so it is removed as a duplicate, not a small-body exclusion.
+No large-area warnings remain on beads4; same-color borders, white/shadow
+separation and completeness remain unverified. Beads3 122/405 remain unresolved.
+All chain indices null; no source-pattern lookup, rendering, photo or indexing.
+
+R069 unchanged: seven small regions ignored, six near edge, no filter pixel
+reassignment; beads4 211 remains active. 116,962 support pixels; 6,116 original
+unassigned (120 components >=6px); 1,009 filtered pixels; 109,837 active. 22
+detached pixels remain unassigned. No fragment ownership attempted. Full-image,
+eight-crop, coordinate, largest-24-residual, palette/envelope/outline and
+correction/area-sheet review completed. All support inside reviewed crops is
+coverage only, not proof of completeness. Reproduction commands and evidence
+are in photo2/BEADS4_INVENTORY.md and photo2/review/r076/.
+
+Four new controls plus seven selection controls pass (11); compilation passes.
+Seven source hashes and 16 curated artifacts/four bulk maps verify; repeat
+artifacts byte-identical, reports equal except command. Pipeline validates
+connected/nonempty/seed-preserving/palette-pure masks, IDs, area bookkeeping,
+null indices and no filtering reassignment. Max seed snap 1.414px, minimum seven
+references. HTML links resolve; browser controls not exercised. No full legacy
+suite. Initial read of nonexistent photo2/plan.md corrected to root PLAN.md;
+exploratory print failed on wrong area-ratio key, corrected; initial HTML-link
+check preceded the method document, final check passed. No unit-test failures.
+
+Updated stale PLAN current step, handoff/progress and reproduction methods.
+No new questions; saved photo questions remain pending. Next beads5 JPEG-only
+palette/body map and checks, then stop; recommend gpt-6-astra / High, fresh /new.
+Scope for commit/push: new pipeline, annotations, four controls, illustrated
+bundle and methods, PLAN/handoff/request log. Bulk/repeat/scratch/environment
+remain ignored. Report SHA256
+be6c615237e51cfc77d588b357d273d5014b1303c4c2a6c19f0efcafd51529ff.

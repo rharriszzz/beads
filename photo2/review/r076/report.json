@@ -1,0 +1,120 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/beads4_inventory.py",
+    "--output",
+    "photo2/output/beads4-final",
+    "--review-bundle",
+    "photo2/review/r076"
+  ],
+  "parameters": {
+    "envelope_closing_radius": 10,
+    "envelope_fill_holes_below": 1500,
+    "minimum_chroma": 20,
+    "minimum_saturation": 0.16,
+    "minimum_white_value": 95,
+    "red_hue_max": 0.08,
+    "yellow_hue_max": 0.22,
+    "green_hue_max": 0.47,
+    "fill_color_highlight_holes_below": 64,
+    "maximum_seed_snap_px": 6.0,
+    "watershed_compactness": 0.03,
+    "maximum_assignment_distance_px": 28.0
+  },
+  "selection_parameters": {
+    "neighbor_count": 8,
+    "neighbor_radius_px": 45.0,
+    "minimum_neighbors": 4,
+    "minimum_area_ratio": 0.5,
+    "large_area_warning_ratio": 2.0,
+    "edge_radius_multiplier": 1.0,
+    "silhouette_closing_radius": 2,
+    "silhouette_hole_limit_px": 128,
+    "explicit_excluded_ids": []
+  },
+  "checks": {
+    "unique_ids": true,
+    "removed_ids_absent": true,
+    "connected_nonempty_active": true,
+    "active_seeds_preserved": true,
+    "palette_pure": true,
+    "areas_match": true,
+    "no_filter_pixel_reassignment": true,
+    "chain_indices_null": true,
+    "max_seed_snap_px": 1.4142135623730951,
+    "minimum_local_references": 7,
+    "detached_pixels_unassigned": 22
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "skimage": "0.26.0"
+  },
+  "sources": {
+    "photo2/beads4_inventory.py": "e4d36e5a51c830a0285e1f111ee641c335af84b685aca0965357fed1cfdba3a3",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/beads1_inventory.py": "0165ba8bfde46e795efe36f09d7bb07d0ad5a3ede120c8893fd129d5fd24e328",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/beads4-review-r076.json": "3330f892127010a36a1ea8d728a57d815ae6ceeeb855cf2c669a355099131ef2",
+    "beads4.jpg": "c531a84dff1960bee480ab018b9a14b8045581007e198d1a1124b78c180b7433",
+    "photo2/test_beads4_inventory.py": "d6d915bada8eafd90dc64196c645dac25b83f1afbf19cf407c6a6ebefa8f954c"
+  },
+  "summary": {
+    "baseline_candidates": 410,
+    "removed_markers": 68,
+    "added_bodies": 7,
+    "active_count": 342,
+    "active_colors": {
+      "white": 73,
+      "green": 72,
+      "cyan": 78,
+      "yellow": 70,
+      "red": 49
+    },
+    "excluded_count": 7,
+    "known_fragments_ignored": 0,
+    "small_ids": [
+      86,
+      333,
+      335,
+      340,
+      343,
+      395,
+      400
+    ],
+    "active_warning_ids": [],
+    "support_pixels": 116962,
+    "original_unassigned_pixels": 6116,
+    "original_unassigned_regions": 120,
+    "active_pixels": 109837,
+    "ignored_assigned_pixels": 1009,
+    "support_pixels_outside_review": 0,
+    "complete_visible_inventory_verified": false,
+    "pattern_status": "not inferred"
+  },
+  "artifacts": {
+    "BL-review.png": "9647f7f656d35aa88091c06b6124685cac5f9d3297022db0d796e8568885c0cc",
+    "BM-review.png": "90703033d52ea69714fc12cc99c46e65dd07a1924cb3530349ef6633c834b7b2",
+    "BR-review.png": "65bd8032e45ee0fdf0aa30ba01331540e53ca4a717deaba58b6110a3460bf528",
+    "L-review.png": "e8b5a7ff356f704a0f1fcb11ec9644af94312ceaed108958b6b7910dbbeb6fdb",
+    "R-review.png": "d47224bacc435440ca3d558069891e8713c3c1eeb4e5a89b319c3cb3dc5f0a84",
+    "T1-review.png": "58ee610dc13a3fb607a45dab0f825e4699a891376d2680005e29cb403d8b0edd",
+    "T2-review.png": "3f5c686754e19eb5c1d5f5d13da2c89651f5791e2b53dcdc1d5a2d2b12ac1c0b",
+    "T3-review.png": "bb2a558d3ea1d4282531c0ca19178936d64a3d5fa44564b300571d61f52f3e1c",
+    "active-overview.png": "95b8040b3593c7c480521410b707eb8f97ee2ac932fb8ebebcc670a6c73e1a97",
+    "area-review.png": "f93ac18ad8ced4ebf73824a409933c77c3ae0f350823f6fe67b3e600e173395f",
+    "corrections.png": "2da15a295d8f3647050272d1fa7c6df880918d57c658e51c3e9dbad1368b1053",
+    "envelope.png": "895d2f2b2ba4fb567fce96d785e8551821bfccdb2386b8c94a82f04998e254ba",
+    "inventory.json": "bd503b3ee96c50e6063de29f9b533db9817efcede5bb302f22b9a03a80a8388a",
+    "palette.png": "185f81eae2f82081d4234a9b391b49cee3c0cd0d90951759410f18fe9a1db91e",
+    "regions.png": "e56b4840910cd245e0665eff77449d288696ac645a3a99cf32e173b756d558ea",
+    "review.html": "4c35cbe897c3d38319e9e4d04b9ab0f69b798ba212bbb0bd27a9d948beb1bc56"
+  },
+  "bulk_artifacts": {
+    "active-labels.npy": "1fa818f681928fea806aba2476bf7c6d4795411ab904af55fd08c3d0ca3fa872",
+    "color-support.npy": "67f1cb43fd16c4151f5b6048401b48c7eaaf55018f16570010e9fdd9ab3ccaaa",
+    "envelope.npy": "e8d6f00dcd7549a1821c2eb66c222af6f1e759137f423d0e1a69e1f9cec7a9dc",
+    "labels.npy": "ddcd871ef6c38d992350def372ce3b15e7e27b3de2d2a9136f07ea2c2707be8e"
+  }
+}
