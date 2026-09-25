@@ -3449,3 +3449,10 @@ relative to the camera selects the expected exposed-shape family along the major
 circle. In the fixed torus/camera, major angle determines this view. For photos,
 image tangent alone does not determine out-of-plane tilt. No additional render
 or analysis experiment was started for this clarification.
+
+R085 delivery verified: d70647e8cc05ad47d01fab1d40be8b06a7d9b978 pushed to
+origin/photo-2-reconstruction; ls-remote matched HEAD and local tracked status
+was clean/upstream synchronized. Scoped staged whitespace check passed. Staging
+needed escalation for read-only .git/index.lock. Raw diagnostic render, wrappers,
+layout, logs and environment intentionally remain ignored. This delivery record
+is a documentation-only follow-up; no experiment or render is added.
