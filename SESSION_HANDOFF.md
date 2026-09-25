@@ -12,12 +12,68 @@ chain indexing or recovered full pattern is established for any image.
 | beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved |
 | beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); same-color borders/white-shadow separation provisional; completeness unverified |
 | beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); 188 possible merge unresolved; neutral seams/colors provisional, completeness unverified |
-| beads6 | Not reviewed | [R059 baseline](photo2/BLIND_GENERATED.md); candidate count is not an accepted inventory |
+| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); same-color/white-shadow borders provisional; completeness unverified |
 | beads7 | Not reviewed | [R059 baseline](photo2/BLIND_GENERATED.md); candidate count is not an accepted inventory |
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R078 — beads6 red/blue-gray/white active map (2026-09-24)
+
+User requested "continue" with prior completion usage and new `/status`.
+Prior session `01a0d640-cf5a-7450-8d06-6851c448e2b7`: Astra high, 107,727 total
+(93,149 input, 14,578 output, 2,018 reasoning, 1,586,944 cached), worked 10m0s.
+New session `01a0d653-e279-7182-9c2f-4628d90f788a`: Astra high, Codex 0.155.1,
+weekly 11% left (Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:10).
+No new-session usage supplied. Account identity omitted. No delegation/transfer.
+Preflight daisy, clean photo-2-reconstruction at 904e89c, origin upstream, no
+stashes, Python 3.12.14. Initial fetch blocked by read-only FETCH_HEAD; escalated
+fetch succeeded, ahead/behind 0/0.
+
+**310 active observations: 140 red, 118 blue-gray, 52 white.** 354 baseline −
+53 removals + 17 additions − eight small exclusions. Removed 50 unsupported
+boundary/tiny-fragment peaks and three duplicates; added 11 white and six
+blue-gray bodies. Added 367/368 clear initial 46/96 large-area warnings. No
+beads6 large-area/sparse-reference warnings remain. Beads3 122/405 and beads5
+188 remain unresolved. All indices null; colors, physical centers, same-color
+seams, white/shadow borders and inventory completeness remain provisional.
+See [illustrated methods/results](photo2/BEADS6_INVENTORY.md).
+
+JPEG-only palette and body review; no POV/source-pattern lookup, rendering,
+photo analysis or indexing. Corrected white labels/positions before area
+selection; initial zero-area masks at 175/327 were annotation errors, not sliver
+evidence. Duplicate 258 belongs to retained 241 after marker review; final
+annotation corrected before regeneration. Exploratory 365 withdrawn as duplicate
+of 248; ID not reused. No sliver ownership attempted. Beads6 211 removed for its
+own unsupported boundary peak, independently of beads1's explicit exclusion.
+
+R069 parameters unchanged. Eight small exclusions 86/117/196/281/340/348/364/370,
+all near edge; 364 ratio .490 is threshold-sensitive. Envelope closing 10px,
+holes ≤1500px; red R−max(G,B) ≥25, blue-gray min(G,B)−R ≥12, saturation ≥.13;
+white maxRGB ≥95. Enclosed chromatic glint repair ≤128px; watershed .03,
+assignment 28px, seed-connected masks. 101,998 support pixels, 3,884 initial
+unassigned (125 components ≥6px), 910 filtered, 97,204 active; one detached pixel
+unassigned. All support inside expanded review crops does not prove completeness.
+
+Checks: four new controls plus seven selection controls pass (11), compilation
+passes. Seven source hashes, 17 curated artifacts and four bulk maps verify;
+repeat artifacts byte-identical and reports equal except command. Active masks
+nonempty/connected/seed-preserving/class-pure, IDs unique, removals absent, areas
+agree, indices null, no filter reassignment. Max seed snap 2px; eight references
+for every active record. Full JPEG, eight baseline/revised crops, coordinate
+close-ups, largest 12 intermediate residuals, envelope/palette/region maps and
+correction/area sheets inspected. HTML links pass; browser controls not exercised.
+No legacy rendering/index suite. Exploratory residual-sheet command failed on
+float crop coordinates, corrected by rounding; no pipeline or test failures.
+Routine/scratch/repeat/environment remain ignored; curated evidence committed.
+Report SHA256 7ad0191e240f07405101350cf47200bc7ef37e5d1f5a20861aa60b15cefbd84a.
+
+No new questions; saved R069 answers remain applied and older photo questions
+remain pending. Next bounded task: beads7 JPEG-only palette/body and mask review,
+including dark/neutral regions; apply R069 and stop after an illustrated active
+map/checks. Carry prior warnings and null indices. Recommend **gpt-6-astra / High,
+fresh `/new`**; user controls model/session changes and supplies `/status`.
 
 ## R077 — beads5 purple/neutral active map (2026-09-24)
 
