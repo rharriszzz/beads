@@ -31,6 +31,12 @@ commands; the user controls `/new`, `/status` and model selection.
 - Do not equate a photo-sampled render with recovered bead order or a pattern.
   Retain missing bead indices, color uncertainty, competing helicities and
   validation on known synthetic patterns before making inverse claims.
+- R069: ignore all slivers/fragments in active inventories; do not spend steps
+  resolving their ownership. Compare visible pixel area with nearby bodies,
+  especially for small regions near an edge. Keep beads1 marker 211 excluded.
+  Preserve historical records and missing indices without absorbing ignored
+  pixels into neighbors. See `photo2/INVENTORY_SELECTION.md` for the current
+  numerical heuristic; suspected bright point-source lighting is not verified.
 - Work toward one useful capability or resolved question per step. Preserve
   enough context to avoid repeating failed approaches; document size is not a goal.
 - Keep routine generated outputs, include files and environments out of Git.

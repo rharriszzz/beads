@@ -11,20 +11,20 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R068 beads1 reviewed map complete; next beads2
+## Current step — R069 slivers ignored; next beads2
 
-The [beads1 inventory](photo2/BEADS1_INVENTORY.md) records 323 supported bodies and
-37 unresolved fragments. Removed 21 unsupported/duplicate markers and added 29
-visible fragments, with a color-constrained provisional region map. All colored
-support lies in reviewed crops, but that does not verify a complete bead count.
-Keep fragment identities, exact same-color boundaries and all indices unresolved.
-[Illustrated questions](photo2/BEADS1_QUESTIONS.md) are committed; no replies yet.
+The maker's reply closes both [beads1 questions](photo2/BEADS1_QUESTIONS.md):
+ignore all slivers and marker 211. The [active selection](photo2/INVENTORY_SELECTION.md)
+contains 313 body observations; 37 known fragments and ten regions below half
+nearby bodies' median area are excluded. All ten are near an edge. Historical
+records stay intact; missing indices and same-color boundaries remain unresolved.
+Bright point-like lighting is the maker's suspected cause, not a measured result.
 
-Next bounded task: review/correct beads2.jpg's visible body/color/fragment map
-from the JPEG alone, adapting color support to its palette. Stop at its map and
-checks, preserving beads1's unresolved records and any maker answers. Then review
-beads3–7 before another index/repeat attempt. No POV-Ray pattern lookup or photo
-fitting. gpt-6-astra / High; stay here, no `/new` needed.
+Next bounded task: review/correct beads2.jpg's visible body/color map from the
+JPEG alone, adapting color support to its palette and applying the R069 policy.
+Ignore slivers without resolving ownership. Stop at its map and checks. Then
+review beads3–7 before another index/repeat attempt. No POV-Ray pattern lookup
+or photo fitting. gpt-6-astra / High; stay here, no `/new` needed.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 

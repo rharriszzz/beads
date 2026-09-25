@@ -1,26 +1,27 @@
-# beads1.jpg: two image-review questions — R068
+# beads1.jpg: saved questions and answers — R069
 
-The [review page](review/r068/review.html) has the full image, IDs and magnified
-crops. Cyan marks 323 supported body observations; orange marks 37 fragments whose
-independent bead identities remain unresolved. Their sum is not a bead count.
-No additional construction-pattern information is needed, and these questions
-do not block reviewing the next generated image. Answers can refer to IDs.
+**No open beads1 questions.** The maker's R069 reply resolves the two R068
+questions operationally. It does not establish the physical identity of fragments.
+See the [current selection method](INVENTORY_SELECTION.md) and
+[active map](review/r069/review.html).
 
-1. **Mostly hidden beads:** In the sheet below, can you tell whether red fragment
-   **371** (between two green bodies) and blue fragment **381** (below a red body)
-   belong to separate mostly hidden beads, or to bodies already visible nearby?
-   Any similar fragment you recognize would help establish how to treat these.
-   The [whole-image map](review/r068/overview.png) gives their wider context.
+1. **Fragment ownership (answered):** The earlier question asked whether fragments
+   371 and 381 belonged to separate mostly hidden beads or neighboring bodies.
+   The maker says to ignore all slivers: there are multiple kinds and accounting
+   for them would require more work. Compare visible pixel area with nearby beads,
+   and ignore edge slivers. We therefore exclude all 37 known fragments and ten
+   additional small regions from the active inventory, retaining historical data.
 
-   ![Visible colored slivers with unresolved bead identity](review/r068/slivers.png)
+   ![Earlier fragment examples, now ignored](review/r068/slivers.png)
 
-2. **Duplicate marker:** I treated **211 and 217** as two highlights/markers on
-   the same red bead and retained 217. Does the raw crop support that, or do you
-   see a real boundary separating two beads? The three panels show the photo,
-   original markers and revised interpretation.
+2. **Markers 211 and 217 (answered):** The earlier question asked whether these
+   represented one or two beads. The maker is happy to ignore 211. It remains
+   excluded; 217 remains active. No claim of physical identity follows from this
+   answer. The maker suspects overly bright, point-like lighting, perhaps behind
+   the camera; that cause has not been verified.
 
-   ![Original photo and duplicate-marker correction](review/r068/duplicate-211-217.png)
+   ![Earlier 211 and 217 comparison](review/r068/duplicate-211-217.png)
 
-The earlier [photo-2 shadow questions](QUESTIONS_FOR_MAKER.md) remain saved;
-no answers have been received for either set. Future answers will be recorded
-in the handoff rather than requiring you to repeat them.
+The [new close-ups](review/r069/area-review.png) illustrate the area rule and
+retained 217. The earlier [photo-2 shadow questions](QUESTIONS_FOR_MAKER.md)
+remain pending; the reply concerned generated-image slivers and 211.

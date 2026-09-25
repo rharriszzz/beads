@@ -1,0 +1,74 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/inventory_selection.py",
+    "--output",
+    "photo2/output/selection-r069-final",
+    "--review-bundle",
+    "photo2/review/r069"
+  ],
+  "parameters": {
+    "neighbor_count": 8,
+    "neighbor_radius_px": 45.0,
+    "minimum_neighbors": 4,
+    "minimum_area_ratio": 0.5,
+    "large_area_warning_ratio": 2.0,
+    "edge_radius_multiplier": 1.0,
+    "silhouette_closing_radius": 2,
+    "silhouette_hole_limit_px": 128,
+    "explicit_excluded_ids": [
+      211
+    ]
+  },
+  "summary": {
+    "source_observations": 360,
+    "active_count": 313,
+    "active_colors": {
+      "red": 130,
+      "green": 132,
+      "blue": 51
+    },
+    "excluded_observations": 47,
+    "known_fragments_ignored": 37,
+    "additional_small_bodies_excluded": 10,
+    "small_ids": [
+      21,
+      55,
+      84,
+      105,
+      239,
+      247,
+      258,
+      275,
+      312,
+      327
+    ],
+    "small_near_edge": 10,
+    "active_near_edge": 38,
+    "active_warning_ids": [],
+    "ignored_region_pixels": 3644,
+    "active_region_pixels": 96124,
+    "explicit_211_excluded": true
+  },
+  "sources": {
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/test_inventory_selection.py": "3a680a627c53e1166b6276f06f268bdfe0139e38227b247fa6abf8e7e72d644d",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/review/r068/report.json": "b1a13a22b09f3d83e587d9a5400ec11c2ef1512f25b33a4378e622c358ece45a",
+    "photo2/review/r068/inventory.json": "da006deb99c6406643a5a5e382113c55facbb0ed75a5a4e0ea31d87a51d975bb",
+    "beads1.jpg": "3d4f784f0906276aa312cdb6d80d414c6611fb785c8528af08de54ef36bfbc18"
+  },
+  "source_bulk_hashes": {
+    "color-support.npy": "2a6c2f0ed8488981315efe24576e91ac9fa80c43d4b83c6ae05f5e3e288731b0",
+    "labels.npy": "d9dfb53d0ee0d51a65782c9c987a100914d2d68a5bae989dca0dfef81020f688"
+  },
+  "artifacts": {
+    "active-overview.png": "8aaff1cd4c18964937f467e0bcce7332911edaaae126b5dcc5e67f88d5df483b",
+    "area-review.png": "0b53febba94e077ec845e11bbd7eed578901ff50df5391829d479cb8261eee48",
+    "inventory.json": "575ba9d51921f9a5d7d5528667cc87398a98483d20c4dda8f6a64560bb3c7a72",
+    "review.html": "8af24b8a6e78c73e4bbfeeae7363dcd0826ef5be82892da1802d657def6b3d16"
+  },
+  "bulk_artifacts": {
+    "active-labels.npy": "5cc431ac2498451511101d5ab3ada0d37b9ae60e7a664ba0a3c4f4fe4948f8c8"
+  }
+}

@@ -1,5 +1,10 @@
 # beads1.jpg: reviewed visible inventory — R068
 
+**R069 update:** the maker requests ignoring all slivers and 211. The
+[active selection](INVENTORY_SELECTION.md) now contains 313 body observations;
+37 fragments and ten small body candidates are excluded. The R068 measurements
+below remain historical evidence, and its questions are answered operationally.
+
 The first generated image now has a reviewed observation map: **323 visibly
 supported bead bodies and 37 unresolved colored fragments**. This is progress
 beyond the original 352 automatic candidates, but it is **not a verified total

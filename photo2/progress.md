@@ -795,3 +795,14 @@ BEADS1_INVENTORY.md and committed review/r068. Two illustrated questions saved
 in BEADS1_QUESTIONS.md; no maker replies yet. Ten tests, compilation, hashes,
 repeatability, seed/ID/color/connectivity checks pass. Next extend review to
 beads2.jpg, adapt palette support, stop at map/checks before any indexing.
+
+## 2026-09-24 — R069 ignore slivers and compare local area
+
+Applied maker reply: all 37 known fragments ignored; 211 remains excluded.
+Local area below half eight nearby bodies' median excludes ten further regions,
+all near an edge, leaving 313 active body observations. 38 normal-sized edge
+observations remain. Historical masks/IDs preserved; no reassignment of excluded
+pixels. Beads1 questions answered; lighting suspicion saved as a hypothesis.
+See INVENTORY_SELECTION.md and review/r069 for method and illustrated results.
+Twelve tests, compilation, source hashes, repeatability and label checks pass.
+Next beads2 JPEG-only review with its own palette and the R069 selection policy.

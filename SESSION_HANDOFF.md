@@ -1,5 +1,54 @@
 # Beads session handoff
 
+## R069 — ignore slivers and 211; next beads2
+
+Maker answers: ignore all slivers (multiple kinds, not worth accounting for),
+compare visible pixel area with surrounding beads, and ignore edge slivers.
+Ignore 211. Suspected overly bright point-source lighting, perhaps behind the
+camera, remains a hypothesis; no scene lookup, lighting diagnosis or render.
+Both beads1 questions are closed operationally in BEADS1_QUESTIONS.md. Do not
+repeat them or spend future steps determining sliver ownership. Earlier photo
+shadow questions remain pending, saved in QUESTIONS_FOR_MAKER.md. No new questions.
+
+Preflight daisy, clean photo-2-reconstruction at 020c3b6, no stashes, upstream
+origin, Python 3.12.14. Approved fetch succeeded, ahead/behind 0/0. No new supplied
+status/usage, transfer or delegation. R069 request recorded verbatim in log.
+
+New inventory_selection.py leaves 313 active bodies (130 red, 132 green, 51 blue).
+Ignore 37 known fragments and ten additional small candidates: 21, 55, 84, 105,
+239, 247, 258, 275, 312, 327. 211 remains absent; 217 remains active. Reference:
+up to eight original reviewed bodies within 45 px, at least four; exclude below
+half the median pixel area. Frozen pool prevents cascades. Threshold is our
+initial interpretation, not specified by the maker. Near edge means marker
+within sqrt(local median area / pi) of smoothed support background. All ten
+small exclusions are near edge; 38 ordinary-sized edge observations stay active.
+Above twice median would flag a possible merge; no active warnings here.
+See photo2/INVENTORY_SELECTION.md for parameters, limits and reproduction.
+
+Selection preserves original masks, IDs and unknown chain indices. Active label
+map keeps 96,124 assigned pixels, ignores 3,644, does not regrow neighbors; prior
+41 unsupported pixels remain unassigned. R068 historical artifacts unchanged.
+Curated review/r069 has active overview, close-up sheet, interactive map hiding
+excluded records by default, inventory and report. Both PNGs inspected. The pure
+selection function is reusable, but CLI/gallery currently target beads1 only.
+Do not apply beads1's palette or fixed pixel parameters blindly to other images.
+
+Seven selection tests plus five source-inventory tests pass (12); compilation
+passes. Four curated artifacts and one bulk map reproduce byte for byte; reports
+equal except commands; six source hashes verify. All 47 excluded records absent,
+211 absent, 217 present, active pixels/IDs preserved. No numerical/test failures;
+one documentation patch was rejected before applying and corrected. Two initial
+note lookups used wrong paths, then corrected to root METHODS_AND_PLAN.md and
+photo2/progress.md. No full legacy regression, other-image inventory or rendering.
+Report SHA256 a0b2b682aa3a47a1bed1839d1690d3c1783e8014149dc193b32831409c35b8ac.
+Bulk NPY and duplicate/scratch runs ignored; commit curated review and scoped work.
+
+Next bounded task: review beads2.jpg from its JPEG alone, adapt support to its
+palette and apply R069 selection; ignore slivers without identity accounting.
+Stop at a reviewable active body/color map and checks, before indexing/pattern
+inference. Then beads3–7. No recovered complete pattern yet. Recommended model:
+gpt-6-astra / High; stay in this conversation, no `/new` needed.
+
 ## R068 — beads1 reviewed observations; next extend to beads2
 
 User: "continue". Completed the next bounded generated-image inventory/map step.

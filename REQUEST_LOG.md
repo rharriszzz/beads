@@ -2562,3 +2562,48 @@ stop at map/checks; then remaining generated images before indexing/inference.
 Retain beads1 uncertainties. gpt-6-astra/High, stay here, no `/new` needed.
 Publication checks: Markdown/HTML links, whitespace and final source hashes pass.
 Approved remote lookup confirms origin still at entry d9f4096.
+
+## R069 — Ignore slivers and 211; compare visible area locally (2026-09-24)
+
+> Lets ignore all slivers.  There are two or more kinds of slivers, and the would be work to account for.  Another heuristic is that the visible number of pixels shoudl be roughly comparable to that of the surrounding beads; also, if a sliver is near an edge, lets ignore it.  I think the lighting was too much of a point source and too bright, in the generated images.  This tends to highlight effects that would be hidden by shadows in the photos.  I see number 211 and I don't like it.  I am not sure what I did wrong, maybe the same thing I complained about before: too bright lighting, perhaps behind the camerra.  I would be happy to ignore 211.
+
+Apply the user's new active-inventory scope: exclude all known slivers/fragments
+and keep211 excluded, without erasing historical observations or filling their
+pixels into neighboring regions. Add a reusable local visible-area/edge check.
+The two beads1 questions are resolved operationally; no need to determine sliver
+ownership or physically prove211/217 correspondence. Record bright point-like
+lighting as the maker's suspected cause, not verified scene/light parameters;
+no rendering/lighting edit or POV source lookup requested here.
+Preflight daisy, clean photo-2-reconstruction at020c3b6, no stashes, Python3.12.14,
+origin upstream. Approved fetch succeeded, ahead/behind0/0; no transfer/delegation
+or new supplied status. Future inventories should apply this scope too.
+
+### R069 outcome and checks
+
+Applied the maker's policy without determining sliver ownership. All 37 known
+fragments ignored; 211 remains excluded, 217 retained. Initial assistant-chosen
+area cutoff is half the median of up to eight original reviewed bodies within
+45 px (minimum four). Frozen references avoid cascades. Ten extra body candidates
+excluded: 21, 55, 84, 105, 239, 247, 258, 275, 312, 327; all near the support edge.
+38 ordinary-sized edge bodies retained. 313 active observations: 130 red, 132 green,
+51 blue. These are not a complete count or pattern. No active large-area/sparse
+reference warnings. 96,124 pixels retained, 3,644 ignored without reassignment;
+41 previously unassigned support pixels remain. Historical R068 files unchanged.
+
+Seven new selection tests plus five source-inventory controls pass (12), and
+compilation passes. Four curated artifacts plus active-labels.npy reproduce byte
+for byte in two runs; reports equal except commands. Six source hashes verified.
+All 47 excluded records absent from active labels, 211 absent, 217 present;
+active pixels/IDs unchanged, indices null. Both new PNGs visually inspected.
+No numerical/test failures. One documentation patch was rejected atomically for
+multiple operations on the same path, then corrected; two wrong note paths were
+corrected. No rendering, scene/pattern lookup, other-image work or legacy suite.
+
+BEADS1_QUESTIONS.md saves answers with images; no new questions. Prior photo
+questions remain pending. Suspected excessive point-like lighting recorded as
+maker hypothesis, not verified source parameters. AGENTS/plan/methods/handoff
+carry the policy forward. Commit review/r069, code/tests and scoped notes;
+bulk/scratch/repeat outputs stay ignored. Next beads2 JPEG-only body/color map
+with adapted palette and R069 selection, stop after map/checks. Model recommendation
+gpt-6-astra / High, stay here, no `/new` needed.
+Report SHA256 a0b2b682aa3a47a1bed1839d1690d3c1783e8014149dc193b32831409c35b8ac.

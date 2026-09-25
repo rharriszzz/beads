@@ -12,8 +12,11 @@ consulting the pattern definitions in the POV-Ray file.
 
 The main problem is currently **identifying every visible bead reliably**.
 We have approximate bracelet/background separation and many bead candidates.
-R068 adds a [reviewed beads1 map](photo2/BEADS1_INVENTORY.md):323 supported body
-observations and 37 unresolved fragments, with provisional color-constrained masks.
+R068 adds a [reviewed beads1 map](photo2/BEADS1_INVENTORY.md) with provisional
+color-constrained masks. R069 applies the maker's instruction to ignore slivers
+and 211: [313 active body observations](photo2/INVENTORY_SELECTION.md) remain,
+excluding 37 known fragments and ten additional regions below half the local
+median area. Historical records are retained; sliver ownership is outside scope.
 We do not yet have a verified complete bead inventory or a recovered full
 pattern for any of the seven generated images.
 
