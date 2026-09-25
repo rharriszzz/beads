@@ -3133,3 +3133,70 @@ R080 delivery correction: staged diff check caught default CSV CRLF as trailing
 whitespace. Set the writer to LF, regenerated both bundles, and reverified all
 source/artifact hashes, report equality and links. Final report SHA256
 239cb76aeb60b6fe48e1ff44f6e435d3456aa797566193a413004227653a6175 supersedes the pre-delivery hash above.
+
+## R081 — Continue with seven-image area-warning stability audit (2026-09-24)
+
+User request: "continue" with prior completion banner (worked 8m58s, done
+10:41 PM). Prior session `01a0d667-7ec7-7571-9427-3971065f2e8f`, Astra high:
+80,580 total tokens (64,565 input; 16,015 output; 1,776 reasoning;
+900,224 cached). New supplied session `01a0d670-d54c-7122-8fc1-71bd1ca0b22a`,
+Codex 0.155.1, gpt-6-astra high, Workspace/Ask for approval, Default, ~/git/beads.
+Weekly 8% left (Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:41).
+Account identity omitted. No current-session usage, delegation or transfer supplied.
+Preflight: daisy/WSL2, clean photo-2-reconstruction at 1bbc01f, origin upstream,
+no stashes, Python 3.12.14. Fetch blocked by read-only FETCH_HEAD; escalated fetch
+succeeded, ahead/behind 0/0. Read handoff, recent requests, plan, saved answers,
+selection code and relevant diagnostic notes.
+Scope: leave-one-reference-out audit of all seven frozen active inventories,
+preserving original pre-selection reference pools (including subsequently
+area-excluded references). Publish an image-scoped queue and illustrations;
+stop before mask changes, new body decisions, indexing or photographs.
+No completeness claim or source-pattern lookup. R069 exclusions stay unchanged.
+
+### R081 outcome and checks
+
+**2,242 active observations audited: 14 threshold-sensitive, two persistently
+large, 2,226 stable ordinary in this probe.** Active counts remain
+313/318/304/342/328/310/327. No mask, selection, ID or body-count decisions changed.
+[Illustrated queue](photo2/AREA_WARNING_STABILITY.md) and
+[all measurements](photo2/review/r081/all-observations.csv) preserve image-scoped IDs.
+Beads3 122/405 remain persistent large; beads5 188 remains threshold-sensitive
+and unresolved. Thirteen previously unflagged targets cross a threshold: five
+small, eight large. Beads3 346 is nominally exactly 2.0 (ordinary under strict >2).
+
+Sensitive IDs: beads3 47/163/198/199/346; beads4 272; beads5 188/349/364;
+beads6 144/189; beads7 128/200/236. Beads1/2 have no active sensitivity flags
+under this probe. This does not validate masks, body identities or completeness.
+Same-color borders, white/shadow separation, colors, beads7 manual glint repairs,
+missing observations and all null chain indices remain. No sliver ownership,
+excluded-target reassessment, indexing, photographs or source-pattern lookup.
+
+Original pre-selection neighbors stay frozen: 308 targets use references later
+excluded by area. Replay matches saved active status, neighbors, medians, ratios
+and warnings exactly. 2,239 targets have eight references; three have seven.
+All 17,933 omission trials retain sufficient references; none use replacements.
+Strict thresholds remain <0.5 and >2; ranges are not confidence intervals.
+
+Checks: five new numerical controls plus seven selection controls pass (12);
+compilation passes. All 25 source hashes/seven artifact hashes verify; repeat
+artifacts byte-identical, reports equal except command. Independently recomputed
+all omission ranges from CSV; HTML links resolve; three figures inspected.
+No browser interaction, mask regeneration or legacy rendering/index suite.
+No analysis/test failures. Repeat/cache/environment remain ignored; curated
+illustrations and numerical evidence committed. Report SHA256
+9a5be47a6843f24a97d690fbdd41d831166ff5ef95cbb96394db7a62cdf77c5e.
+No new maker questions; saved R069 answers applied, older photo questions pending.
+
+Next bounded task: assess beads6 144/189's same-color mask extents using JPEG
+boundary profiles and frozen masks; publish an illustrated resolve-or-retain
+assessment with competing body-count hypotheses. Stop before mask edits, new IDs,
+sliver ownership, indexing or photographs. Carry the rest of the R081 queue and
+prior unresolved masks. Recommend **gpt-6-astra / High, fresh `/new`**; user controls
+model/session changes.
+
+Scoped delivery: audit code, five controls, curated review evidence, methods,
+PLAN, handoff and request log. No unrelated files staged.
+
+R081 delivery checks: the documented verification command also passes. Initial
+staging was blocked by read-only .git/index.lock; escalated staging succeeded.
+Staged whitespace check passes; only the 14 scoped audit/workflow files are staged.

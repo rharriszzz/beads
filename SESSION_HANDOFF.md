@@ -7,17 +7,71 @@ chain indexing or recovered full pattern is established for any image.
 
 | Image | Active observations | Current evidence and unresolved issues |
 | --- | ---: | --- |
-| beads1 | 313 | [R069 active map and sliver exclusions](photo2/INVENTORY_SELECTION.md); fragments remain excluded under the maker's answer |
-| beads2 | 318 | [R070 active map](photo2/BEADS2_INVENTORY.md); palette and same-color borders remain provisional |
-| beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved |
-| beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); same-color borders/white-shadow separation provisional; completeness unverified |
-| beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); [R080 boundary/scale diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md) retains 188 unresolved; neutral seams/colors provisional, completeness unverified |
-| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); same-color/white-shadow borders provisional; completeness unverified |
-| beads7 | 327 | [R079 active map](photo2/BEADS7_INVENTORY.md); manual black-glint repairs and pale labels/borders provisional; completeness unverified |
+| beads1 | 313 | [R069 active map/exclusions](photo2/INVENTORY_SELECTION.md); [R081 audit](photo2/AREA_WARNING_STABILITY.md) has no active sensitivity flags; completeness unverified |
+| beads2 | 318 | [R070 active map](photo2/BEADS2_INVENTORY.md); R081 has no active sensitivity flags; palette/same-color borders provisional |
+| beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved and persistently large; [R081 queue](photo2/AREA_WARNING_STABILITY.md): 47/163/198/199/346 sensitive |
+| beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); R081: 272 sensitive; same-color/white-shadow borders and completeness provisional |
+| beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); [R080 diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md): 188 unresolved; R081: 188/349/364 sensitive; neutral seams/colors/completeness provisional |
+| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); R081: 144/189 sensitive, next diagnostic; same-color/white-shadow borders and completeness provisional |
+| beads7 | 327 | [R079 active map](photo2/BEADS7_INVENTORY.md); R081: 128/200/236 sensitive; manual black-glint repairs and pale labels/borders/completeness provisional |
+
+[R081 illustrated queue and definitions](photo2/AREA_WARNING_STABILITY.md): sensitivity
+is to one omitted area reference, not a completeness or body-identity test.
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R081 — seven-image area warning stability (2026-09-24)
+
+User requested "continue" with prior completion usage and new `/status`.
+Prior session `01a0d667-7ec7-7571-9427-3971065f2e8f`: Astra high, worked 8m58s,
+80,580 total (64,565 input, 16,015 output, 1,776 reasoning, 900,224 cached).
+New session `01a0d670-d54c-7122-8fc1-71bd1ca0b22a`: Astra high, Codex 0.155.1,
+weekly 8% left (Sep 28 17:37), 283 credits, Luna Reserve 100% (Oct 1 22:41).
+No current-session usage supplied. Account identity omitted; no delegation/transfer.
+Preflight daisy/WSL2, clean photo-2-reconstruction at 1bbc01f, origin upstream,
+no stashes, Python 3.12.14. Fetch needed escalation for read-only FETCH_HEAD;
+succeeded, ahead/behind 0/0.
+
+**2,242 active observations audited: 14 threshold-sensitive, two persistently
+large, 2,226 stable ordinary in this probe.** Active counts remain
+313/318/304/342/328/310/327. No mask, selection, ID or body-count decisions changed.
+[Illustrated queue](photo2/AREA_WARNING_STABILITY.md) and
+[all measurements](photo2/review/r081/all-observations.csv) preserve image-scoped IDs.
+Beads3 122/405 remain persistent large; beads5 188 remains threshold-sensitive
+and unresolved. Thirteen previously unflagged targets cross a threshold: five
+small, eight large. Beads3 346 is nominally exactly 2.0 (ordinary under strict >2).
+
+Sensitive IDs: beads3 47/163/198/199/346; beads4 272; beads5 188/349/364;
+beads6 144/189; beads7 128/200/236. Beads1/2 have no active sensitivity flags
+under this probe. This does not validate masks, body identities or completeness.
+Same-color borders, white/shadow separation, colors, beads7 manual glint repairs,
+missing observations and all null chain indices remain. No sliver ownership,
+excluded-target reassessment, indexing, photographs or source-pattern lookup.
+
+Original pre-selection neighbors stay frozen: 308 targets use references later
+excluded by area. Replay matches saved active status, neighbors, medians, ratios
+and warnings exactly. 2,239 targets have eight references; three have seven.
+All 17,933 omission trials retain sufficient references; none use replacements.
+Strict thresholds remain <0.5 and >2; ranges are not confidence intervals.
+
+Checks: five new numerical controls plus seven selection controls pass (12);
+compilation passes. All 25 source hashes/seven artifact hashes verify; repeat
+artifacts byte-identical, reports equal except command. Independently recomputed
+all omission ranges from CSV; HTML links resolve; three figures inspected.
+No browser interaction, mask regeneration or legacy rendering/index suite.
+No analysis/test failures. Repeat/cache/environment remain ignored; curated
+illustrations and numerical evidence committed. Report SHA256
+9a5be47a6843f24a97d690fbdd41d831166ff5ef95cbb96394db7a62cdf77c5e.
+No new maker questions; saved R069 answers applied, older photo questions pending.
+
+Next bounded task: assess beads6 144/189's same-color mask extents using JPEG
+boundary profiles and frozen masks; publish an illustrated resolve-or-retain
+assessment with competing body-count hypotheses. Stop before mask edits, new IDs,
+sliver ownership, indexing or photographs. Carry the rest of the R081 queue and
+prior unresolved masks. Recommend **gpt-6-astra / High, fresh `/new`**; user controls
+model/session changes.
 
 ## R080 — beads5 188 boundary/scale diagnostic (2026-09-24)
 

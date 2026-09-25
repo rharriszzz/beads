@@ -1,0 +1,118 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/area_warning_stability.py",
+    "--output",
+    "photo2/review/r081"
+  ],
+  "summary": [
+    {
+      "image": "beads1",
+      "active_count": 313,
+      "categories": {
+        "stable_ordinary": 313
+      },
+      "observations_with_excluded_references": 51
+    },
+    {
+      "image": "beads2",
+      "active_count": 318,
+      "categories": {
+        "stable_ordinary": 318
+      },
+      "observations_with_excluded_references": 62
+    },
+    {
+      "image": "beads3",
+      "active_count": 304,
+      "categories": {
+        "stable_ordinary": 297,
+        "threshold_sensitive": 5,
+        "persistent_large": 2
+      },
+      "observations_with_excluded_references": 59
+    },
+    {
+      "image": "beads4",
+      "active_count": 342,
+      "categories": {
+        "stable_ordinary": 341,
+        "threshold_sensitive": 1
+      },
+      "observations_with_excluded_references": 30
+    },
+    {
+      "image": "beads5",
+      "active_count": 328,
+      "categories": {
+        "stable_ordinary": 325,
+        "threshold_sensitive": 3
+      },
+      "observations_with_excluded_references": 14
+    },
+    {
+      "image": "beads6",
+      "active_count": 310,
+      "categories": {
+        "stable_ordinary": 308,
+        "threshold_sensitive": 2
+      },
+      "observations_with_excluded_references": 44
+    },
+    {
+      "image": "beads7",
+      "active_count": 327,
+      "categories": {
+        "stable_ordinary": 324,
+        "threshold_sensitive": 3
+      },
+      "observations_with_excluded_references": 48
+    }
+  ],
+  "checks": {
+    "inventory_and_jpeg_hashes_verified": true,
+    "all_original_selection_replayed": true,
+    "all_active_chain_indices_null": true
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "sources": {
+    "photo2/area_warning_stability.py": "3cf512fd2e2a555dc8c1b8a8d5f928a143cde12bae144b082fa47119e31be060",
+    "photo2/test_area_warning_stability.py": "3c72be7d4e307763a3279cf93bfc58bf650d3dbb31212270d6085d9c4e1137b1",
+    "photo2/inventory_selection.py": "8236fb5c542aed6f5a782cfe6eb2e92dd91022777fc103380c636dcefa6de1be",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/review/r069/inventory.json": "575ba9d51921f9a5d7d5528667cc87398a98483d20c4dda8f6a64560bb3c7a72",
+    "photo2/review/r069/report.json": "a0b2b682aa3a47a1bed1839d1690d3c1783e8014149dc193b32831409c35b8ac",
+    "beads1.jpg": "3d4f784f0906276aa312cdb6d80d414c6611fb785c8528af08de54ef36bfbc18",
+    "photo2/review/r070/inventory.json": "ad8f8277686aaf845f6d13c2680f937b5a0c3d66cd1551d19b6bb15468c3cb6b",
+    "photo2/review/r070/report.json": "2d6f250b9e1b4d65b40e0d0dfb709f2657faa129690a826c994a90bc9a90f8b7",
+    "beads2.jpg": "35d4bdbbe61a764f530b59f624b8af463b846a80bfa625e62b456eb34255f736",
+    "photo2/review/r071/inventory.json": "e4d1a73a9a4e30b84e9f6f2998de552a47938db86897e3ad22ffb8d42c649ff0",
+    "photo2/review/r071/report.json": "35335aee0a64cc07976f478019be773702ba1dd4d50473bb49b8c1eb4e95ad5e",
+    "beads3.jpg": "adbbe759bd90db54aaa826282f195c5bcb26297d7fa7705e0da9cd0b0b455bfe",
+    "photo2/review/r076/inventory.json": "bd503b3ee96c50e6063de29f9b533db9817efcede5bb302f22b9a03a80a8388a",
+    "photo2/review/r076/report.json": "be6c615237e51cfc77d588b357d273d5014b1303c4c2a6c19f0efcafd51529ff",
+    "beads4.jpg": "c531a84dff1960bee480ab018b9a14b8045581007e198d1a1124b78c180b7433",
+    "photo2/review/r077/inventory.json": "d2f451ab8c254ab4354729986f72ec002275368cc274ae635dacabdc8ab46fd8",
+    "photo2/review/r077/report.json": "dc5af4f7fdbff46e587727c66237024205714efd7e47efab3ef6c7e3097ccf1b",
+    "beads5.jpg": "4f1ef42e0d7ba623b483b197fd26dd69a83eabf5221d724a3501904b751620cc",
+    "photo2/review/r078/inventory.json": "e7748d6028e0d6f4a161cd107bfc1123a86029c1e35e79023e106f35252f8911",
+    "photo2/review/r078/report.json": "7ad0191e240f07405101350cf47200bc7ef37e5d1f5a20861aa60b15cefbd84a",
+    "beads6.jpg": "ce86d5c1faa5a5c3da931bd867156eccada3225857e7fa35a62cf280b36a2059",
+    "photo2/review/r079/inventory.json": "6d892418d99882278730885bb1fcd7da33a1bb9fb1f311e21aabb2ac3b330c9e",
+    "photo2/review/r079/report.json": "ad9a88b553dd9393b85070dba7f79434c687d340c75a741f3d01e2933b40d90d",
+    "beads7.jpg": "2d8adcc98454b7cf23ebaed7aa249bbd95d97f09946c16f809f0cf9ec6b3aef8"
+  },
+  "artifacts": {
+    "all-observations.csv": "c482853850b28b667eb72bc9c310a98357e9741dd1db7bb89068b53fd46d879e",
+    "audit.json": "e09d362a07e1dce6d2017aa0653c2d89646bc14fce32e7813c57278304da3c3b",
+    "queue-context-1.png": "505c5d8b9a4ceb99c31b8953e17f6c33330b270d3a3fca03274032edff35d3d1",
+    "queue-context-2.png": "41567896bb9a4113c4a11c8de6ab91ddb7e05655281f4a64cbc28fa72b15a762",
+    "ratio-ranges.png": "0cb828b8193df486ce505d150c31d7afa25132cfb1d18cda22074aa0db842033",
+    "review-queue.csv": "68803be1e708984336515d8278a37426ed4c7c906680bc4bd328485ffbc04cd9",
+    "review.html": "e20c1ec816b7a350005cde895f6c6862e7fefda2cc5352b3bcbe7f20909073bd"
+  }
+}

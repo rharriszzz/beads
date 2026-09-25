@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><title>Area warning stability</title>
+<style>body{font:17px system-ui;max-width:1250px;margin:2em auto}img{max-width:100%}td,th{padding:.4em;text-align:left}table{border-collapse:collapse}tr{border-bottom:1px solid #ddd}</style>
+<h1>Seven frozen inventories: area warning stability</h1>
+<p>Only active observations are targets. Original reference pools include later area-excluded candidates. Omit one saved reference at a time without replacement; minimum four references, small &lt;0.5, large &gt;2. Equality is ordinary. This is a sensitivity audit, not a confidence interval or completeness test. No mask, selection or body decision changes.</p>
+<p><a href="audit.json">Queue omission trials and image summaries</a> · <a href="all-observations.csv">All active observations</a> · <a href="review-queue.csv">Queue CSV</a> · <a href="report.json">Source hashes</a></p>
+<img src="ratio-ranges.png" alt="Original and omission area ratios">
+<table><tr><th>Image / ID</th><th>Category</th><th>Original ratio</th><th>Omission range</th><th>Trial states</th></tr>
+<tr><td>beads3 / 47</td><td>threshold_sensitive</td><td>0.509275</td><td>0.454819–0.578544</td><td>{&#x27;ordinary&#x27;: 4, &#x27;small&#x27;: 4}</td></tr>
+<tr><td>beads3 / 122</td><td>persistent_large</td><td>2.715706</td><td>2.710317–2.721116</td><td>{&#x27;large&#x27;: 8}</td></tr>
+<tr><td>beads3 / 163</td><td>threshold_sensitive</td><td>1.844523</td><td>1.689320–2.031128</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+<tr><td>beads3 / 198</td><td>threshold_sensitive</td><td>0.514706</td><td>0.480769–0.553797</td><td>{&#x27;small&#x27;: 4, &#x27;ordinary&#x27;: 4}</td></tr>
+<tr><td>beads3 / 199</td><td>threshold_sensitive</td><td>1.938776</td><td>1.821086–2.072727</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+<tr><td>beads3 / 346</td><td>threshold_sensitive</td><td>2.000000</td><td>1.902439–2.108108</td><td>{&#x27;large&#x27;: 4, &#x27;ordinary&#x27;: 4}</td></tr>
+<tr><td>beads3 / 405</td><td>persistent_large</td><td>2.029610</td><td>2.016043–2.043360</td><td>{&#x27;large&#x27;: 8}</td></tr>
+<tr><td>beads4 / 272</td><td>threshold_sensitive</td><td>0.522152</td><td>0.491071–0.557432</td><td>{&#x27;small&#x27;: 4, &#x27;ordinary&#x27;: 4}</td></tr>
+<tr><td>beads5 / 188</td><td>threshold_sensitive</td><td>2.007519</td><td>1.970480–2.045977</td><td>{&#x27;large&#x27;: 4, &#x27;ordinary&#x27;: 4}</td></tr>
+<tr><td>beads5 / 349</td><td>threshold_sensitive</td><td>1.918654</td><td>1.800000–2.054054</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+<tr><td>beads5 / 364</td><td>threshold_sensitive</td><td>1.965567</td><td>1.924157–2.008798</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+<tr><td>beads6 / 144</td><td>threshold_sensitive</td><td>1.971681</td><td>1.875421–2.078358</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+<tr><td>beads6 / 189</td><td>threshold_sensitive</td><td>1.916185</td><td>1.758621–2.104762</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+<tr><td>beads7 / 128</td><td>threshold_sensitive</td><td>0.506631</td><td>0.468137–0.552023</td><td>{&#x27;ordinary&#x27;: 4, &#x27;small&#x27;: 4}</td></tr>
+<tr><td>beads7 / 200</td><td>threshold_sensitive</td><td>0.510779</td><td>0.478261–0.548043</td><td>{&#x27;ordinary&#x27;: 4, &#x27;small&#x27;: 4}</td></tr>
+<tr><td>beads7 / 236</td><td>threshold_sensitive</td><td>1.980276</td><td>1.901515–2.065844</td><td>{&#x27;ordinary&#x27;: 4, &#x27;large&#x27;: 4}</td></tr>
+</table>
+<img src="queue-context-1.png" alt="Image-scoped queue JPEG contexts">
+<img src="queue-context-2.png" alt="Image-scoped queue JPEG contexts">
+<p>Beads3 122/405 and beads5 188 remain unresolved even if a numerical warning changes. Same-color borders, pale/shadow separation, colors, beads7 manual glint repairs and inventory completeness remain provisional. No new maker questions; saved R069 sliver exclusions still apply.</p>
