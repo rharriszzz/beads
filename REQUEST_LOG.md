@@ -2876,3 +2876,63 @@ Scope for commit/push: new pipeline, annotations, four controls, illustrated
 bundle and methods, PLAN/handoff/request log. Bulk/repeat/scratch/environment
 remain ignored. Report SHA256
 be6c615237e51cfc77d588b357d273d5014b1303c4c2a6c19f0efcafd51529ff.
+
+## R077 — Continue with beads5 JPEG inventory (2026-09-24)
+
+User request: "continue" with prior completion banner (worked 9m46s, done
+9:48 PM), prior session `01a0d635-fd9b-7701-b68d-b39d40a6a3a5`, Astra high,
+120,565 total tokens (104,362 input; 16,203 output; 2,494 reasoning;
+2,112,128 cached). New supplied status identifies session
+`01a0d640-cf5a-7450-8d06-6851c448e2b7`, Codex 0.155.1, gpt-6-astra high,
+Workspace/Ask for approval, Default, ~/git/beads; weekly 12% left (Sep 28
+17:37), 283 credits, Luna Reserve 100% (Oct 1 21:49). Account identity omitted.
+No new-session token usage, delegation or machine transfer supplied.
+
+Preflight: daisy, clean photo-2-reconstruction at f5f5485, origin upstream,
+no stashes, local Python 3.12.14. Fetch initially blocked by read-only FETCH_HEAD;
+escalated fetch succeeded, ahead/behind 0/0. Read handoff, latest requests,
+saved answers, plan and inventory methods. Scope: beads5 JPEG-only palette/body
+and mask review (including neutrals), R069 selection, illustrated active map
+and relevant checks; stop before beads6 or indexing. Carry beads3 122/405 warnings.
+
+### R077 outcome and checks
+
+Completed beads5 JPEG-only map: 328 provisional active observations (93 purple,
+136 gray, 99 white). 403 baseline − 88 removals + 16 gray additions − three
+local-area exclusions. Removed 87 unsupported boundary/tiny-fragment candidates
+and white duplicate 232 (retain 233). Added 404–419; 416 later area-excluded.
+Corrected body colors including purple 359/394/395, neutral labels and marker
+positions 218/406/407. No source-pattern lookup, render, photo or indexing work;
+all bead indices null. No sliver ownership attempted; R069 unchanged.
+
+Gray/white use shared neutral support with visually reviewed body labels,
+avoiding a brightness split through glints/shadows. Purple enclosed-hole repair
+increased 64→128 pixels after reviewing unfilled glints. Neutral cutoff 45;
+other mask/watershed/assignment parameters and sources saved in report.json.
+Beads5 188 retains a possible-merge flag (534 pixels, 2.008 x local median);
+its area is unchanged, but nearby corrections lower its reference median.
+Added bodies clear intermediate 183/210/172 flags. Beads3 122/405 unresolved.
+Same-color seams, gray/white labels, neutral shadows and completeness unverified.
+
+Three small exclusions 283/329/416, all near edge; 416's .491 area ratio is close
+to the heuristic cutoff. Beads5 211 remains active. Support 117,017 pixels;
+1,279 initial unassigned, 405 filtered, 115,333 active, one detached pixel left
+unassigned. 35 unassigned components >=6px are not missing-bead counts. All
+support within review boxes is coverage only, not completeness proof.
+
+Four new tests and seven selection tests pass (11); compilation passes. Seven
+source hashes, 17 curated artifacts/four bulk maps verify; repeated artifacts
+byte-identical, reports equal except commands. Checks confirm nonempty connected
+active masks, seeds, two support classes, IDs, areas, no filter reassignment and
+null chain indices. Max seed snap 4px, minimum seven local references. Full JPEG,
+eight baseline/revised crops, coordinate close-ups, 12 intermediate residual
+close-ups, palette/envelope/regions and correction/area/warning sheets inspected.
+HTML links pass; browser controls not exercised. No analysis or test failures;
+no legacy rendering/index suite. Initial fetch escalation recorded above.
+
+Updated methods, plan and handoff/progress. No new questions; older photo
+questions remain pending. Next: beads6 JPEG-only palette/body map/checks, then
+stop; recommend gpt-6-astra / High and fresh /new, carrying all prior warnings.
+Scoped commit/push: pipeline, annotations, four controls, curated review bundle,
+methods, plan/handoff/request log. Bulk/scratch/repeat outputs/environment ignored.
+Report SHA256 dc5af4f7fdbff46e587727c66237024205714efd7e47efab3ef6c7e3097ccf1b.
