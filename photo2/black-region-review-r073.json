@@ -1,0 +1,145 @@
+{
+  "image": "beads3.jpg",
+  "source_review": "photo2/review/r071",
+  "cases": {
+    "122": {
+      "crop": [
+        187,
+        88,
+        272,
+        160
+      ],
+      "reference_ids": [
+        60,
+        66,
+        86,
+        95
+      ],
+      "step_pairs": [
+        [
+          60,
+          86
+        ],
+        [
+          86,
+          466
+        ],
+        [
+          66,
+          95
+        ],
+        [
+          95,
+          122
+        ]
+      ],
+      "prediction_anchor": 122,
+      "glint_line_xy": [
+        [
+          222,
+          122
+        ],
+        [
+          211,
+          136
+        ]
+      ],
+      "exterior": {
+        "origin": [
+          218,
+          127
+        ],
+        "along": [
+          0.8944271909999159,
+          0.4472135954999579
+        ],
+        "outward": [
+          -0.4472135954999579,
+          0.8944271909999159
+        ],
+        "span": [
+          -16,
+          16
+        ],
+        "depth": [
+          -5,
+          35
+        ]
+      },
+      "note": "B extrapolates one local row step below 122; it is a hypothesis, not an observed center. The glint line ends on a dark candidate patch, not a confirmed second glint.",
+      "validation_anchor": 95
+    },
+    "405": {
+      "crop": [
+        487,
+        429,
+        580,
+        514
+      ],
+      "reference_ids": [
+        367,
+        391,
+        396
+      ],
+      "step_pairs": [
+        [
+          381,
+          390
+        ],
+        [
+          390,
+          411
+        ],
+        [
+          367,
+          391
+        ]
+      ],
+      "prediction_anchor": 396,
+      "alternate_cross_pair": [
+        391,
+        396
+      ],
+      "glint_line_xy": [
+        [
+          530,
+          482
+        ],
+        [
+          546,
+          484
+        ]
+      ],
+      "exterior": {
+        "origin": [
+          539,
+          483
+        ],
+        "along": [
+          1,
+          0
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "span": [
+          -18,
+          18
+        ],
+        "depth": [
+          -4,
+          25
+        ]
+      },
+      "note": "B extrapolates the local row step from 396. A second prediction transfers the 391-to-396 displacement to 405. Neither uses bead indices or a source pattern.",
+      "validation_anchor": 391
+    }
+  },
+  "limitations": [
+    "Reviewed markers and masks are provisional, not calibrated projected centers.",
+    "Local ellipse proxies do not model 3D occlusion, bead holes, perspective or lighting.",
+    "A second brightness peak or plausible local slot is not a verified extra bead.",
+    "Do not adopt a split or revive slivers without independent visible-area and boundary support."
+  ]
+}

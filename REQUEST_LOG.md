@@ -2711,3 +2711,71 @@ in BEADS3_INVENTORY.md. Commit scoped source/edits/tests/docs and curated images
 bulk/scratch/repeat outputs remain ignored. Next beads4 JPEG-only map/checks,
 carry 122/405 warnings; gpt-6-astra / High, fresh `/new` recommended.
 Report SHA256 35335aee0a64cc07976f478019be773702ba1dd4d50473bb49b8c1eb4e95ad5e.
+
+## R073 — Test HSV profiles and local bead-outline reconstruction (2026-09-24)
+
+> OK there are two ways to resolve the black reason problem.  One is to draw a line between the projected centers of what you think might be two beads, then sample the pixels along this line in HSV, and look for subtle changes along this line.  This method might not work.  The other way is that you have already identified many of the beads in the general area, and you know where they are, so you can do a kind of in-house recreation of what beads.pov does when it draws a region of beads, the idea is to examine the outline of each bead as you proceed by a little along the long axis or the short axis.  This is really easy for me to do, but I might have had more practice, and I have eyes and stuff.
+
+Prioritize the two suggested image-only diagnostics on beads3 regions 122/405,
+before beads4. Sample HSV between plausible centers and compare translated local
+outline models constrained by nearby reviewed beads. Do not consult POV patterns
+or mistake glints for centers; preserve alternatives and sliver policy. Save
+illustrated results and any useful questions in files. Preflight daisy, clean
+photo-2-reconstruction at 3e64b4a, origin upstream, no stashes, Python 3.12.14.
+Approved fetch succeeded; ahead/behind 0/0. No new status, delegation or transfer.
+
+## R074 — Make local geometry primary; validate neighborhood prediction (during R073, 2026-09-24)
+
+> I do recommend approach number 2, as it will turn out to be more reliable in dealing with very black regions.  And also, proper indexing of the beads depends on being able to predict the positions of visible beads in the neighborhood of a given bead.  But approach 1 might solve part of the problem.
+
+Use local projected geometry as the primary direction; HSV remains supporting
+evidence. Add held-out predictions of already visible target markers and pair
+leave-one-out checks before trusting new local slots. Distinguish provisional
+markers/mask centroids from calibrated physical centers. Continue this diagnostic
+step before beads4; no scope change to source-pattern prohibition or sliver rule.
+
+### R073/R074 outcome and checks
+
+Geometry-first diagnostic completed on 122/405, prioritizing R074 before beads4.
+Median local neighbor displacements predict slots; reference-mask second moments
+provide ellipse proxies with interactive long/short-axis moves and axial scale.
+Four committed plots show prediction errors, competing outlines, dark-exterior
+sweeps and HSV. These are hypotheses, not an optimized 3D bead reconstruction.
+Withhold target-containing pairs: marker errors 3.16/6.32px. Calibration pair
+leave-one-out ranges 2.24–4.12/1.80–3.16px. Proxy outlines extend into background;
+405 row/cross-row candidate predictions disagree 6.32px. Need physical-center,
+shape and projection calibration before indexing or missing-bead decisions.
+
+405 has a faint second highlight (centerline V 76.36, five-line median 6.43), but
+no median peaks on predicted-center line.122 has no distinct second highlight.
+Candidate-center lines are nearly black for 77.6%/71.7% of samples; hue unusable.
+Four-cutoff envelope sensitivity median/max 5.38/13.75px at 122, 2/4.75px at 405;
+not pure shadow widths or confidence intervals. Neither region split; beads3
+still 304 provisional observations. R069 unchanged; no sliver accounting, source
+pattern lookup, rendering, photo analysis or recovered indices/pattern claim.
+
+Actual initial failure: Matplotlib import missing; installed in local .venv and
+pinned 3.11.2. Exploratory unrotated one/two-ellipse partial-envelope fit failed to
+distinguish bodies reliably and was rejected, not used for count selection.
+Five new measurement/holdout controls pass; compilation passes. Eight source
+hashes and seven curated artifact hashes verify; artifacts reproduce byte for
+byte and reports match except command. Four plots visually reviewed. HTML
+references/content checked; controls not browser-tested. No legacy suite rerun
+because inventory algorithms/data are unchanged. Bulk/scratch/repeat outputs
+remain ignored. Reproduction commands in BLACK_REGION_METHODS.md.
+
+Plan, methods, progress and handoff updated: calibrate clearer neighbor centers/
+outlines, fit local projection/spacing and validate withheld-neighbor predictions,
+stop at illustrated calibration report before missing-bead/index assignments.
+No new questions; R074 saved as the maker's answer. Older photo questions remain
+pending. Recommend gpt-6-astra / High, fresh /new. Commit/push scoped diagnostic,
+curated evidence and docs. Report SHA256
+ a98fa2852f808007e542bbe29cfccacdcaf3debda56a8f427e43b701c4b00deb.
+
+Final staging check found CSV CRLF terminators flagged as trailing whitespace.
+Set the CSV writer to LF, regenerate both bundles and reverify hashes/checks
+before delivery. JavaScript syntax check also passes (node --check).
+
+LF correction verified: five controls/compilation pass again; eight source
+hashes and seven byte-identical repeated artifacts pass. Final report SHA256
+e7843f5c71d463325e478c088a924d83a952987e3110414c63ac2b753bfdb7b0 supersedes the pre-LF report hash above.

@@ -4,12 +4,13 @@ Start with the [overall plan and methods](../METHODS_AND_PLAN.md) for direct
 answers about background removal, saved outer/inner/centerline curves and the
 current limits of individual-bead identification.
 
-**Latest completed step (R071/R072):** [beads3 neutral-body review](BEADS3_INVENTORY.md)
-contains 304 selected observations. [Black-region close-ups](review/r071/black-regions.png)
-and [locations](review/r071/black-region-locations.png) illustrate the remaining
-warnings at 122 and 405. These are provisional regions, not confirmed bead edges.
-Beads1/2 remain at 313/318 active observations. No new required questions or
-recovered pattern. Next beads4 JPEG-only map/checks; see the handoff progress table.
+**Latest completed step (R073/R074):** [black-region geometry and HSV diagnostics](BLACK_REGION_METHODS.md)
+implement the maker's geometry-first recommendation. [Interactive outline inspection](review/r073/review.html)
+and four plots show local predictions, position errors, contour sensitivity and
+HSV profiles for 122/405. Geometry needs calibration; neither region is split.
+Beads1/2/3 remain at 313/318/304 observations. Next calibrate projected centers
+and outlines on clearer neighbors, then validate withheld predictions before
+indexing. No new questions needed. Beads4 review is temporarily deferred.
 The earlier [photo image-edge candidate](IMAGE_EDGES.md) remains rejected.
 
 **Underlying reconstruction priority (R059): generated JPEGs first.** The

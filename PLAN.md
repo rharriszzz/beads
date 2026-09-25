@@ -11,20 +11,21 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R071/R072 beads3 review and black-region images
+## Current step — R073/R074 neighborhood geometry for black regions
 
-The [beads3 map](photo2/BEADS3_INVENTORY.md) has 304 selected observations:
-120 white, 117 black, 67 red. Neutral-color support and marker review improve
-on the baseline; boundaries remain provisional. Large-area warnings 122 and 405
-are retained with [close-ups](photo2/review/r071/black-regions.png) and
-[locations](photo2/review/r071/black-region-locations.png), as requested in R072.
-No complete inventory or recovered pattern is claimed. Beads1/2 remain at
-313/318 active observations. The handoff's progress table links all three.
+The maker selects local projected geometry as primary and HSV as supporting
+evidence. [Black-region methods and illustrated results](photo2/BLACK_REGION_METHODS.md)
+compare both on beads3 regions 122/405. Held-out target-marker errors are
+3.16/6.32 px; transferred ellipse proxies need center/shape calibration.
+The 405 profile has a faint second glint; neither region has an accepted split.
+Inventory counts remain beads1/2/3 = 313/318/304; ignore slivers under R069.
 
-Next bounded task: review beads4.jpg from the JPEG alone, adapt its palette
-including white, apply R069 and stop at active map/checks. Carry beads3 warnings
-forward; then beads5–7 before indexing. No new required maker questions or
-POV-Ray pattern lookup. Recommend gpt-6-astra / High and a fresh `/new`.
+Next bounded task: calibrate projected centers/outlines on clearer neighbors,
+fit local spacing/projection, validate withheld-neighbor locations and contours,
+and stop at an illustrated calibration report before missing-bead or index
+assignments. Beads4 is deferred. Preserve alternate arrangements, use no POV
+source patterns. No new questions needed; maker's recommendation is saved.
+Recommend gpt-6-astra / High and a fresh `/new` with SESSION_HANDOFF.md.
 
 ## Underlying direction — R059: generated JPEGs, visible beads first
 

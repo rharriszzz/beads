@@ -22,7 +22,11 @@ using support for orange, yellow, violet and pale lavender. Eleven relevant test
 and repeatability checks pass; same-color boundaries remain provisional. R071 adds a [beads3 neutral-body map](photo2/BEADS3_INVENTORY.md): 304 selected
 observations, with two large black-region warnings illustrated in R072.
 Its mask includes uncertain shadow strips; its count and boundaries remain
-provisional. Next review beads4 from the JPEG alone.
+provisional. R073/R074 prioritize [local geometry and HSV diagnostics](photo2/BLACK_REGION_METHODS.md)
+for those two regions. Neighborhood geometry is primary: predict visible
+neighbors and calibrate projected outlines before trusting missing positions or
+indices. Current prediction errors of 3.16/6.32 pixels require further calibration.
+HSV supplies a faint second highlight at 405 but no accepted split. Beads4 is deferred.
 We do not yet have a verified complete bead inventory or a recovered full
 pattern for any of the seven generated images.
 

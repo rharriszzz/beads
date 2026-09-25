@@ -1,5 +1,9 @@
 # beads3.jpg: neutral-body review — R071/R072
 
+R073/R074 follow-up: [neighborhood geometry and HSV measurements](BLACK_REGION_METHODS.md)
+examine 122/405 without changing this inventory. Local center/outline calibration
+is now the next task before further inventory or index changes.
+
 The current image-only map has **304 selected observations**: 120 white,
 117 black and 67 red. **Regions 122 and 405 remain unusually large and uncertain.**
 This is a reviewed provisional map, not a verified complete inventory or pattern.

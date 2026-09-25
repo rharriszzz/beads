@@ -1,5 +1,12 @@
 # Registration and repeat recovery: review and test plan — R026–R028
 
+**R074 current direction:** use [local projected geometry](BLACK_REGION_METHODS.md)
+as the primary black-region method and HSV as supporting evidence. Calibrate
+centers/outlines on clearer neighbors and validate withheld predictions before
+indexing. The R073 diagnostic has 3.16/6.32-pixel target-marker errors, so its
+provisional ellipse placements cannot yet justify missing beads. The older
+synthetic plans below remain history; do not consult POV patterns for this task.
+
 **R043 update:** [joint triangle/trace constraints](JOINT_INFERENCE.md) reject
 known false bridges but produce sparse, sometimes wrongly indexed patches.
 Next diagnose centroid displacement versus projected-direction/support assumptions

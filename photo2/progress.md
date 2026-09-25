@@ -828,3 +828,17 @@ approaches and limits. Twelve tests, compilation, hashes, repeatability and labe
 checks pass. Handoff now starts with a progress table; AGENTS clarifies palette/
 mask review before area filtering and image-specific IDs. No new questions.
 Next beads4 active map/checks, retain beads3 warnings; recommend fresh `/new`.
+
+## 2026-09-24 — R073/R074 local geometry first for black regions
+
+Implemented maker's two diagnostics on 122/405; geometry is primary, HSV supports.
+Median neighbor-step predictions and mask-derived ellipse proxies expose 3.16/
+6.32px held-out marker errors; outlines extend into background. Interactive
+long/short-axis shifts, static contours and HSV plots saved in review/r073.
+405 has a faint second glint;122 is mostly quantized black. Neither split is
+accepted, all inventories unchanged. BLACK_REGION_METHODS.md records methods,
+threshold sensitivity and saved advice; no new questions required. Five controls,
+compilation, eight source hashes and seven repeated artifact hashes pass.
+Matplotlib initially absent, installed locally/pinned; crude partial-contour fit
+rejected. Next calibrate clearer neighbor centers/outlines and validate withheld
+predictions before missing-bead/index claims. Beads4 deferred; fresh /new advised.

@@ -1,0 +1,57 @@
+{
+  "command": [
+    "/home/rharris/git/beads/.venv/bin/python",
+    "photo2/black_region_diagnostics.py",
+    "--output",
+    "photo2/output/black-region-r073",
+    "--review-bundle",
+    "photo2/review/r073"
+  ],
+  "parameters": {
+    "sample_step_px": 0.25,
+    "line_extension_fraction": 0.25,
+    "strip_offsets_px": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "hue_min_value": 0.08,
+    "hue_min_saturation": 0.15,
+    "peak_prominence_8bit": 5,
+    "contour_value_thresholds_8bit": [
+      20,
+      40,
+      60,
+      90
+    ],
+    "exterior_step_px": 0.25
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "sources": {
+    "photo2/black_region_diagnostics.py": "f4c6bb77608d80c2580c4f0ba86304b4032e2761e6e8d7fc0b324f9a7e379c73",
+    "photo2/black-region-review-r073.json": "077b39280591cc0daebc3c3b5d7960393fd9eeb799f2293d520e3584232ecad7",
+    "photo2/review/r071/inventory.json": "e4d1a73a9a4e30b84e9f6f2998de552a47938db86897e3ad22ffb8d42c649ff0",
+    "photo2/review/r071/report.json": "35335aee0a64cc07976f478019be773702ba1dd4d50473bb49b8c1eb4e95ad5e",
+    "beads3.jpg": "adbbe759bd90db54aaa826282f195c5bcb26297d7fa7705e0da9cd0b0b455bfe",
+    "photo2/requirements.txt": "62509de39f4c22de4479d5e44ddfab71b776fe561b21428be84b50f28e674739",
+    "photo2/blind_generated.py": "24f3384fbb02c9aa0ec42a3537e78430e53339a8a152ab282a867af472c52080",
+    "photo2/test_black_region_diagnostics.py": "63f2deaf3b5060d5daac8f7ba0a3d042611b8b2dbf0aeb07d86dfc80ff99c9e8"
+  },
+  "source_labels_sha256": "1368e519b0840eabb1b9b0c63443ee363eba5df1826d1057f75080a6e63acf74",
+  "artifacts": {
+    "122-hsv.png": "80c180d6d9813428928f1b4782b898ed465ca95dbcf0addfcb98689197b44f34",
+    "122-outlines.png": "14d132c2dad629b00a57b22fc5df0419dfb8ea967a5ac5136df8a3f0c8d54f3a",
+    "405-hsv.png": "e61cf8b4e7102a47318c298f90953220b9092c6675f444210a5d23d8629ee4fa",
+    "405-outlines.png": "2104c891cbd3c92db72ba038f9d93506e14f777488ba1442caf70a6f589e251a",
+    "diagnostics.json": "71f9c97010a1bb8c4379ef17c55b984e409e076d69f127c0b5db7bba1da31d55",
+    "profiles.csv": "25ee1c208fb69b81c215d0a1da6e712a714f3a1c612d05385a43831b138be8ec",
+    "review.html": "b8b992e8a82b67242375d2aeda2cab73ccf2892fcf6de47ff64f64b8874e566c"
+  },
+  "inventory_changed": false
+}

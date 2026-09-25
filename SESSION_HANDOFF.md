@@ -9,12 +9,69 @@ chain indexing or recovered full pattern is established for any image.
 | --- | ---: | --- |
 | beads1 | 313 | [R069 selection](photo2/INVENTORY_SELECTION.md); fragments and image-specific 211 excluded |
 | beads2 | 318 | [R070 review](photo2/BEADS2_INVENTORY.md); pale-lavender support, provisional borders |
-| beads3 | 304 | [R071/R072 review](photo2/BEADS3_INVENTORY.md); 122/405 large-area warnings remain |
+| beads3 | 304 | [R071/R072 inventory](photo2/BEADS3_INVENTORY.md); [R073/R074 geometry diagnostic](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved |
 | beads4–7 | Not reviewed beyond R059 baseline | Candidate counts are not accepted inventories |
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R073/R074 — geometry primary; HSV supporting evidence
+
+R073 proposes center-to-center HSV sampling and local bead-outline recreation.
+R074 explicitly recommends the latter as primary: predicting nearby visible
+positions is also necessary for indexing. Exact requests are in REQUEST_LOG.md;
+this is the saved maker answer, not an unanswered question. No new questions
+needed for the next calibration step. Older photo questions remain pending.
+This supersedes R071's beads4-next instruction below.
+
+Preflight daisy, clean photo-2-reconstruction at 3e64b4a, origin upstream,
+no stashes, Python 3.12.14; fetch succeeded, ahead/behind 0/0. No supplied status,
+usage, delegation or transfer. No POV pattern lookup, rendering or photo work.
+
+New black_region_diagnostics.py and black-region-review-r073.json use beads3
+JPEG, R071 markers and hash-bound labels only. Median neighbor displacements
+predict local slots; mask second moments supply provisional ellipse axes/sizes.
+The interactive review/r073/review.html moves candidate outlines along long/short
+axes and adjusts axial scale. This is a 2D proxy, not recovered 3D geometry;
+controls inspect hypotheses, do not optimize or modify inventories. Four saved
+PNGs show predictions/errors, outline alternatives, exterior sweeps and HSV.
+
+Held-out target-marker errors: 122=3.16 px, 405=6.32 px. Calibration-pair
+leave-one-out ranges 2.24–4.12 and 1.80–3.16 px respectively. Preselected pairs
+are adjacency hypotheses, not source index labels. The 405 target error exceeds
+all calibration errors; marker-to-center bias and projection remain unresolved.
+Alternative B predictions near 405 disagree by 6.32 px. Transferred ellipse
+outlines include background: do not accept these centers/shapes or split either
+region. All inventories unchanged; beads3 stays 304 with both warnings.
+
+HSV supports a faint second glint at 405, strongly sensitive to line placement:
+centerline V peak 76.36 vs five-line median 6.43. No peaks on its candidate-center
+median profile. Candidate-center lines are nearly black (maxRGB<=2) for 77.6% /
+71.7% of samples in 122/405; no usable hue. At122 no distinct second glint.
+Exterior cutoff sweeps V20/40/60/90 vary by median 5.38/max 13.75px at 122 and
+median 2/max 4.75px at 405. These are ray-wise threshold sensitivities including
+shadow/neighbor transitions, not calibrated pure shadow widths. Full method,
+limitations, figures and commands in photo2/BLACK_REGION_METHODS.md.
+
+Checks: five diagnostic controls and compilation pass; eight source hashes and
+seven artifact hashes verify. All seven artifacts repeat byte for byte, reports
+equal except command. Four plots visually inspected. HTML links/content checked;
+interactive controls were not exercised in a browser. Initial missing-Matplotlib
+import resolved by local installation, pinned 3.11.2. CSV CRLF staging warnings
+fixed by writing LF and regenerating/rechecking both bundles. An exploratory unrotated
+one/two-ellipse partial-contour fit was rejected as underconstrained. No legacy
+suite or count/index inference run. Bulk/scratch/repeat outputs ignored; curated
+plots/data/HTML committed under the user's illustrated-evidence exception.
+Report SHA256 e7843f5c71d463325e478c088a924d83a952987e3110414c63ac2b753bfdb7b0.
+
+Next bounded task: calibrate projected centers/outlines on clearer neighboring
+bodies, fit local spacing/projection with contour/occlusion support, and validate
+withheld-neighbor positions and outlines. Stop at an illustrated calibration
+report before missing-bead or index assignments; retain competing arrangements
+and R069 ignore-slivers policy. Then revisit 122/405 before resuming beads4.
+Recommend gpt-6-astra / High and a fresh `/new` using this handoff; user controls
+model/session changes. Do not reopen already answered construction questions.
 
 ## R071/R072 — beads3 neutral-body map and requested black-region images
 
