@@ -18,6 +18,9 @@ quick model, task/evidence table, then detailed recipes. AGENTS.md requires that
 entry point for bead boundaries, visible shapes, geometry and helicity. Separate
 minor-circle winding direction from the local section's camera-relative angle;
 estimate that viewing angle before choosing expected bead shape families.
+R086 fixes the major centerline to the paper/table plane. Use in-plane local
+direction and the global camera/plane relationship; do not fit local out-of-plane
+deviations. The beads and their minor-circle positions remain three-dimensional.
 
 [The full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md) uses one added object-label
 render for all 676 known synthetic positions (483 nonzero, 193 hidden), with

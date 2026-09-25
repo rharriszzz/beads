@@ -6,8 +6,10 @@ this generalization with either helicity; this experiment uses +1 only. The make
 subsequently clarified the key distinction: helicity governs minor-circle
 progression, while the section's camera-relative angle governs which shape
 family is visible during major-circle progression. In this fixed torus/camera,
-major angle indexes that section orientation; image tangent alone would not
-establish the full viewing angle for an arbitrary photograph.
+major angle indexes that section orientation. R086 confirms the necklace is
+flat on paper on a table: use its planar local direction and the global camera
+view of that plane. Do not fit independent out-of-plane section deviations.
+This constraint preserves the bead shapes and minor-circle placement in 3D.
 
 [Interactive full-circle atlas](review/r085/review.html) ·
 [Task-specific reasoning guide for future sessions](SHAPE_REASONING.md) ·

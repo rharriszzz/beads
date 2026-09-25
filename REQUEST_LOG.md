@@ -3456,3 +3456,27 @@ was clean/upstream synchronized. Scoped staged whitespace check passed. Staging
 needed escalation for read-only .git/index.lock. Raw diagnostic render, wrappers,
 layout, logs and environment intentionally remain ignored. This delivery record
 is a documentation-only follow-up; no experiment or render is added.
+
+## R086 — Planarity correction (2026-09-24)
+
+Maker: "I don't think there is any out of plane devistions; the necklace is on a
+piece of paper, on a table. all flat." Treat the major centerline as planar on
+the paper/table. Local section angle changes within that plane relative to the
+fixed camera. Camera obliquity is global; no independent local out-of-plane
+bend/tilt should be added to explain shapes. Bead geometry and minor-circle
+placement remain 3D. This corrects the assistant's unsupported R085 tilt caveat.
+
+Updated AGENTS.md, layered SHAPE_REASONING guide, atlas notes, PLAN and handoff.
+Documentation only: no render, mask, inventory, index or analysis changes.
+Preflight remains daisy, clean photo-2-reconstruction at 6330b7c before these
+edits, same supplied session/status; no new usage or transfer. R085 experiments
+and checks remain valid. No questions. Next task remains the illustrated S/V
+path assessment with planar section-view/shape hypotheses and within-bead
+controls; stop before mask/count/index changes. Recommend gpt-6-astra / High,
+fresh `/new` when ready.
+
+R086 checks: scoped whitespace check passes; reviewed all remaining tilt/planarity
+references in the active guide, atlas notes and AGENTS.md. They now prohibit local
+out-of-plane fitting freedoms. Historical request-log statements remain preserved
+and explicitly superseded. No numerical or rendering checks rerun for this
+text-only correction.

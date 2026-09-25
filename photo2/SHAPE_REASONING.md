@@ -29,9 +29,12 @@ angle; knowing the viewing angle does not supply the direction of minor winding.
 
 For an image-analysis task, first estimate the local section orientation/view,
 then compare plausible exposed shapes at different minor phases. Use helicity
-to interpret their progression and neighbor overlap. The projected rope tangent
-supplies image-plane orientation, but does not by itself determine out-of-plane
-tilt or the full camera-relative view. Preserve uncertainty in those quantities.
+to interpret their progression and neighbor overlap. The maker confirms the necklace lies flat on paper on a table. Keep its major
+centerline planar. Estimate the section's direction within that plane relative
+to the fixed camera; do not introduce independent out-of-plane section tilts.
+The camera may view the paper obliquely, which is a single global camera/plane
+relationship. The beads' 3D shapes and minor-circle placement remain intact;
+planarity does not force all individual bead centers to the same height.
 
 **Helicity also changes which neighbors cover which edges.** It can leave the total
 visible area almost unchanged while changing the left/right cut-ins and overlap.
@@ -83,14 +86,20 @@ section's orientation fixed at a given index. R085 chooses Helicity=+1.
 
 The section angle relative to the camera is the relevant viewing quantity.
 For this fixed camera and torus, θ determines the local section orientation and
-therefore its view. For a distorted necklace or different camera, a global polar
-angle or image tangent alone is not equivalent to that 3D viewing angle. Estimate
-or fit the local section orientation, including plausible tilt, before selecting
-an expected shape family. This is the maker's explicit clarification after R085.
+therefore its view. For the photographed necklace, follow the actual planar
+centerline rather than assuming a perfect circle. Its local tangent within the
+table plane, together with the fixed camera-to-plane relationship, determines
+the section view. An image-space angle may require perspective correction, but
+there is no independent local out-of-plane bend or tilt to fit. R086 explicitly
+corrects the assistant's earlier suggestion of such a freedom.
+
+Thus generalize over planar section direction and minor-circle phase. Estimate
+any unknown camera obliquity globally. Do not explain a bad visible-bead fit by
+lifting or tilting sections away from the paper without new maker evidence.
  There are 13 distinct φ values over two
 small-circle turns. These are known synthetic coordinates, not inferred JPEG
-indices. A real necklace may require a different centerline, scale, circumference,
-phase, camera and local correction; the torus calibration is not a photo fit.
+indices. A real necklace may require a different planar centerline, scale, circumference,
+phase, camera and in-plane local correction; the torus calibration is not a photo fit.
 
 Hold φ approximately fixed while comparing θ around the necklace. Then hold the
 local view approximately fixed while comparing φ. This separates two sources of

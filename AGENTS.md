@@ -9,6 +9,9 @@ reproduction. R084–R085 establish pose-dependent exposed shapes and neighbor
 occlusion, not a universal oval or an image-only index/pattern solution. Keep
 minor-circle progression (helicity) separate from the local section angle to the
 camera, which determines the expected shape family around the major circle.
+R086: the necklace lies flat on paper on a table. Keep the major centerline planar;
+use in-plane section direction plus the global camera/plane view, without adding
+independent out-of-plane section bends/tilts. Bead geometry remains 3D.
 
 ## One-word continuation
 

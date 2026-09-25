@@ -21,11 +21,31 @@ is to one omitted area reference, not a completeness or body-identity test.
 R084–R085 calibration: [full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md),
 676 known positions, 483 nonzero masks; these are not active JPEG observations.
 **For future boundary/shape tasks read [the layered reasoning guide](photo2/SHAPE_REASONING.md).**
+R086 confirms a planar necklace on paper/table: in-plane section direction plus
+global camera view determines the shape family; do not fit local out-of-plane tilt.
 S/V paths between bead interiors are the next method gap; beads5 area-cut work is deferred.
 
 No open generated-image questions require answers. Prior photo-shadow questions
 remain in photo2/QUESTIONS_FOR_MAKER.md and do not block generated-image review.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R086 — Planarity correction (2026-09-24)
+
+Maker: "I don't think there is any out of plane devistions; the necklace is on a
+piece of paper, on a table. all flat." Treat the major centerline as planar on
+the paper/table. Local section angle changes within that plane relative to the
+fixed camera. Camera obliquity is global; no independent local out-of-plane
+bend/tilt should be added to explain shapes. Bead geometry and minor-circle
+placement remain 3D. This corrects the assistant's unsupported R085 tilt caveat.
+
+Updated AGENTS.md, layered SHAPE_REASONING guide, atlas notes, PLAN and handoff.
+Documentation only: no render, mask, inventory, index or analysis changes.
+Preflight remains daisy, clean photo-2-reconstruction at 6330b7c before these
+edits, same supplied session/status; no new usage or transfer. R085 experiments
+and checks remain valid. No questions. Next task remains the illustrated S/V
+path assessment with planar section-view/shape hypotheses and within-bead
+controls; stop before mask/count/index changes. Recommend gpt-6-astra / High,
+fresh `/new` when ready.
 
 ## R085 — Full-circle visible-shape atlas and future-session guidance (2026-09-24)
 
@@ -44,8 +64,9 @@ geometry and helicity. The guide distinguishes established evidence from the
 unimplemented S/V path method, synthetic ownership from JPEG mask hypotheses,
 and visible adjacency from chain adjacency. Maker's final clarification: helicity
 governs minor-circle progression; estimate the current section's camera-relative
-angle to predict shape families along the major circle. An image tangent alone
-does not establish out-of-plane tilt. No universal oval or area-only
+angle to predict shape families along the major circle. R086 subsequently
+confirms planarity: use in-plane section direction and global camera/plane view;
+do not add local out-of-plane tilt. No universal oval or area-only
 identity rule; preserve pose, occlusion, hidden indices and helicity alternatives.
 
 [Full-circle assessment](photo2/FULL_CIRCLE_SHAPES.md) ·
