@@ -11,7 +11,17 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R087 explained S/V paths and travel-order visuals
+## Current delivery — R088 short question PDF
+
+[Three-page PDF](photo2/review/r088/beads6-questions.pdf): clearer versions of the
+same two pending questions, large raw/marked crops, sampled-color strips, and a
+support page. Presentation only; R087 inputs and all inventories are unchanged.
+[Reproduction/checks](photo2/review/r088/README.md). Both questions remain unanswered.
+Next: read answers and update the two interpretation hypotheses, stopping before
+new analysis or masks. Recommend **gpt-6-astra / High, stay in this conversation**
+for feedback. The separate diagnostic experiment below is deferred until requested.
+
+## Previous analysis — R087 explained S/V paths and travel-order visuals
 
 [Illustrated assessment](photo2/BEADS6_SV_PATHS.md) and
 [walkthrough](photo2/review/r087/review.html): ten selected paths plus one rejected

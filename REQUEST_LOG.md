@@ -3570,3 +3570,43 @@ inventory JSON files are byte-identical to pre-step HEAD. Report SHA256
 Scoped whitespace check passes. No unrelated/untracked work was present or staged.
 Staging initially failed because .git/index.lock was read-only in the sandbox;
 rerunning git add with escalation succeeded. Scoped staged whitespace check passes.
+
+## R088 — Short illustrated question PDF (2026-09-25)
+
+User: "the questions seem more difficult this time. Please prepare a pdf of the
+questions and the supporting material including imags. Please feel free to
+improve the clarity and shorten then length of the document."
+Scope: rephrase the same two pending questions, produce a concise printable PDF
+with large raw/marked crops and essential supporting examples, inspect rendered
+pages, preserve reproduction/hashes, and deliver scoped documentation/artifacts.
+No new analysis or inventory changes. Preflight daisy, clean
+photo-2-reconstruction at 5506903, origin upstream, no stashes, ahead/behind 0/0
+after escalated fetch (sandbox FETCH_HEAD read-only). Same supplied R087 session;
+no new status/usage, transfer or delegation. R069 answers remain applied; the
+R087 questions and older photo questions are still unanswered. Python 3.12.14,
+existing Matplotlib/Pillow and system Poppler; no new dependency needed.
+
+### R088 outcome and checks
+
+Created [three-page PDF](photo2/review/r088/beads6-questions.pdf): two question
+pages with large raw/marked crops, plain-language endpoint explanations,
+travel-order color strips and choices “two beads / one bead / cannot tell.”
+One supporting page illustrates an internal highlight and rejected initial
+placement. Optional endpoint directions preserve the earlier connection question.
+Shortened the tracked question index; both questions remain pending, no answers
+invented. All R087 numerical inputs/results and seven inventories remain unchanged.
+
+Existing Matplotlib/Pillow generated the PDF without new dependencies. Frozen
+R087 source hashes verified; three US Letter pages with selectable text and
+embedded images verified through Poppler; rendered pages and extracted text
+inspected. Fixed an overlong supporting-page title found in the first preview.
+Compilation and text-bounds checks pass; repeat PDF is byte-identical and manifest
+hashes verify. No numerical tests or renders rerun for this presentation-only task.
+PDF SHA256 fc0b437163bd773884a4398e926bf2d2aa04d4273ad201654da288aa47e4b4be.
+Reproduction script, PDF and hash manifest are tracked; raster previews/extracted
+text live in /tmp, repeat output remains ignored. No unrelated work present.
+
+Next: read maker answers and update the two interpretation hypotheses, stopping
+before new analysis/mask edits. Recommend gpt-6-astra / High; stay in this
+conversation for PDF feedback and answers. The earlier endpoint experiment is
+deferred, not automatically started. A later separate experiment can use `/new`.

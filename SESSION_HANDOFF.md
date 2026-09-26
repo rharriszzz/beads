@@ -26,10 +26,38 @@ global camera view determines the shape family; do not fit local out-of-plane ti
 R087 supplies exploratory S/V paths and explained travel-order visuals; endpoint
 identity/placement remains provisional. Beads5 area-cut work is deferred.
 
-Two R087 generated-image [endpoint questions](photo2/BEADS6_SV_QUESTIONS.md) are
-pending. No answers received. Prior photo-shadow questions remain in
+Two R087 generated-image [endpoint questions](photo2/BEADS6_SV_QUESTIONS.md),
+now in the [short R088 PDF](photo2/review/r088/beads6-questions.pdf), are pending. No answers received. Prior photo-shadow questions remain in
 photo2/QUESTIONS_FOR_MAKER.md; neither set is an approval gate for diagnostic work.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R088 — Short question PDF (2026-09-25)
+
+Maker found the questions harder and requested a PDF with supporting images,
+with permission to clarify and shorten it. **Use the [three-page PDF](photo2/review/r088/beads6-questions.pdf)**
+for the pending questions. One page per question; large raw/marked crops and
+color strips, then one support page explaining the highlight and rejected-path
+examples. Both ask whether P and Q appear on two different beads, with choices
+“two beads / one bead / cannot tell” and optional directions to move a point.
+The same R087 A/B locations are retained; H/K are supporting examples.
+[Question index](photo2/BEADS6_SV_QUESTIONS.md) is shortened; no answers received.
+
+Presentation only: frozen JPEG/path/sample inputs, no new analysis or inventory
+changes. All seven counts/warnings, null indices, R069 sliver guidance and older
+photo questions remain as above. PDF source/reproduction/hashes are in
+[the R088 notes](photo2/review/r088/README.md). Three US Letter pages, selectable
+text, embedded images; rendered pages inspected, text extraction checked,
+source hashes and byte-identical repeat PDF verified, compilation/text bounds
+pass. Initial overlong supporting-page title fixed; no numerical tests rerun.
+No new dependencies; previews/repeat scratch remain ignored/outside Git.
+
+Preflight daisy, clean photo-2-reconstruction at 5506903, no stashes, origin
+0/0 after escalated fetch (sandbox FETCH_HEAD read-only). Same supplied R087
+session; no new usage/status, transfer or delegation. This request supersedes
+starting the planned endpoint experiment in this turn. Next: read the maker's
+answers and update the two interpretation hypotheses; stop before new analysis
+or mask edits. Recommend gpt-6-astra / High, **stay in this conversation** for
+PDF feedback and answers. A later separate experiment can use a fresh `/new`.
 
 ## R087 — Explained interior S/V paths (2026-09-25)
 
