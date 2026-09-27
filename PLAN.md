@@ -7,9 +7,18 @@ One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.
 
+R103 generality constraint: final inference should use little image-specific
+color or bead-location knowledge. Current fixed routes, paper reference centers
+and historical HSV boxes are diagnostic fixtures only. The eventual pipeline
+must estimate background statistics and necklace location from the supplied
+image; color cues should use local differences or image-derived models, not
+hard-coded red beads/magenta paper. Validate on changed palettes/backgrounds and
+translated/rotated placements, keeping manually reviewed cases separate from
+the algorithm's inputs. These generalization tests have not yet run.
+
 | Aspect | Intended result | Status |
 | --- | --- | --- |
-| Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R099 three-path FFT/spatial comparison complete; crossing spread and dark-bead failure need review |
+| Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R099 texture comparison plus R100–R102 T1/T2 hue clues and confirmed overlapping HSV-map history; exact edges unresolved |
 | Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | Deferred; research primary sources when this phase starts |
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
 | Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | Deferred; offer methods before fitting |
@@ -34,8 +43,12 @@ DC-only/finite exclusions, raw/detrended power fractions, spatial texture and
 paper references. [Findings and limitations](photo2/BACKGROUND_TRANSITIONS.md).
 Small windows narrow the texture response but have not established an edge rule.
 
+R100–R102 adds [hue measurements and confirmed HSV-map provenance](photo2/HUE_TRANSITIONS.md).
+Overlap does not eliminate useful hue transitions; white-balanced presets must
+not be applied to the original JPEG without a new calibration.
+
 Next bounded task: incorporate [visual feedback](photo2/TRANSITION_QUESTIONS.md),
-then assess a few nearby parallel routes and additional paper reference patches.
+then compare hue and texture on a few nearby parallel routes with paper controls.
 Preserve the T3 dark-bead failure and test whether reported crossing spreads
 remain stable. Stop for illustrated review before connecting any crossings into
 a full contour or fitting centerline/scene parameters. If answers are absent,

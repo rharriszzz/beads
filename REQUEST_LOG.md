@@ -262,3 +262,106 @@ Final figures/report hashes and reproducibility rechecked after that presentatio
 change. Full CSV retained in photo2/output/r099/samples.csv, with review-run copy
 also under ignored output; neither CSV is staged. Only scoped documentation,
 new script, five curated PNGs and report are included for delivery.
+
+## R100 — Hue clues and provenance of shadow overlap (2026-09-27)
+
+User: “In t1 and t2, there is shadow. the red bead color, in sufficient shadow,
+overlaps with the magenta background color, in suficient shadow.  However in
+these examples, I think that if you measure hue across both of these lines.
+It will stell give a little clue where the beads stop and the background begins.
+In a previous comment, I saw you wondering how I know this HSV stuff, it is
+because of work in one of the other repos, in some branch,  Where i identified
+rectangles (or maybe lines) all of whose pixels definitely belonged to red beads,
+going to the edges (but still inside the beads image) as belong to red beads,
+Then I did the same for the shadowed background.  There is definately some overlap.”
+
+Preflight daisy, clean photo-2-reconstruction-v2 at efda09a, no stashes, upstream
+0/0 after fetch. Read current handoff/log/questions, prior shape guidance and
+R099 paths. No new status/usage, dependencies, delegation or machine transfer.
+Scope: save evidence, locate earlier labeled-color work, measure raw hue on
+existing T1/T2, and stop before boundary fitting. Prior parallel-route step is
+deferred for this more specific instruction.
+
+Found hsv_tools line picker and saved red/background masks; it saves expanded
+HSV-match masks, not the original clicked lines. Found fft-image-explorer named
+white-balanced red/shadow/edge presets. Sibling repositories read only, clean
+tracked preflight. Their main/radial-sum listings and relevant history inspected;
+no sibling fetch or writes. Related bead_map masks found but not adopted.
+
+## R101 — Look for named HSV ranges and earlier revisions (2026-09-27)
+
+User: “Ia that time, i did not have a good process, so you will need to look for
+a map, in some python file, between names and hsv regions.  Then look at the
+previous revisions of that file.”
+
+Inspected all four available hsv_mask_triptych.py revisions. 27b8de7 has no
+named map; 4ebb4b0 introduces original-image union rules; 9bdfdb3 introduces
+named original/white-balanced profiles including overlapping red/shadow and
+red/edge ranges; 2caf070 splits out red-and-shadow/red-and-edge and adds overlap
+exploration. Immutable revisions and exact hashes frozen by reproducible exporter.
+
+## R102 — Confirm the intended HSV map (2026-09-27)
+
+User: “that is it: fft-image-explorer has explicitly overlapping ‘red-and-shadow’
+and ‘shadow’”
+
+Maker confirms this is the intended prior evidence. Do not keep labeling the
+provenance as merely suspected or require the maker to recreate the selections.
+Exact original spatial coordinates remain unrecovered, and this confirmation
+does not label exact T1/T2 boundary pixels or answer T3.
+
+### R100–R102 outcome and checks
+
+Verified red-and-shadow is wholly contained in shadow in the white-balanced
+0–255 HSV map; red-and-edge wholly contained in edge. Four-revision history and
+six source hashes preserved in hsv-provenance-r100.json, with exporter script.
+Do not transfer white-balanced ranges to original photo or mix with the older
+OpenCV hue 0–179 convention. Original sibling JPEG hash matches current photo;
+white-balanced image hash differs. Historical expanded JPEG masks are not exact
+manual annotation pixels; no empirical overlap percentage invented.
+
+386 unsmoothed original-JPEG pixel samples on frozen R099 T1/T2 routes. Hue plotted
+relative to red avoids 360° wrapping; S/V/chroma accompany it. At distance40→64,
+T1 hue −9.1→−22.2°, T2 −9.5→−22.2°; farther paper reaches about −44/−43° at Q.
+Minimum chroma .118/.239; no achromatic pixels. Local clue established, no hue
+threshold, pixel surface assignment, exact boundary or global mask established.
+Two explained raw/endpoint/route/color-strip/HSV figures curated; no new question,
+existing questions updated with qualitative evidence and source confirmation.
+
+Controls pass: primary hue conversion, red wrap, achromatic saturation. Independent
+colorsys conversion checks all 386 samples. Four repeat artifacts and provenance
+export byte-identical; source/revision/artifact hashes and document links checked,
+scripts compile, whitespace passes. Both figures inspected. No numerical control
+failure. Initial one-off read-only probe used Matplotlib's default nonwritable
+cache and warned; scripts set a writable /tmp cache. No render or prior FFT rerun.
+Source photo, beads.pov, R092/R099 scripts and artifacts unchanged. Full CSV and
+reruns remain ignored. Only scoped source/provenance/docs/curated images/report
+included for publication; all sibling working trees remain untouched.
+
+Next: compare hue and texture on a few parallel neighboring routes with paper
+controls, apply any visual edge feedback, preserve uncertainty and T3 failure.
+Stop before selecting/connecting contour points or fitting geometry/scene.
+Recommend gpt-6-astra / High; stay in this conversation, no /new.
+
+## R103 — Avoid image-specific color and location knowledge (2026-09-27)
+
+User: “But, remember, I am hoping that the final code that you yse not have much
+knowledge of the colors in the picture, or the exact locations of the beads in
+the image.”
+
+Recorded as a final-inference constraint. Current hand-selected T1/T2 paths,
+paper-reference centers and historical HSV boxes are diagnostic/validation
+references, not final runtime priors. A final method should estimate background
+appearance and necklace location from its input, using relative hue differences
+or learned-from-image statistics if useful. Do not hard-code red/magenta labels
+or bead positions into automatic reconstruction. No claim of palette/background/
+placement generality from the present two-path experiment; those tests remain
+future work. Updated AGENTS, plan, assessment and handoff. No additional question
+or permission gate; finish and publish this diagnostic step, not a new full solver.
+
+Final R100–R103 checks: 386 independent colorsys comparisons agree; four repeat
+artifacts and the provenance export are byte-identical; all six external source
+and four revision hashes verify against immutable Git blobs. 36 local links
+resolve, scripts compile and whitespace passes. Prior scene/photo/R092/R099
+inputs unchanged. Full CSV retained under ignored output, excluded from staging.
+Red=0 is a plotting convention only, not a final color-classification prior.

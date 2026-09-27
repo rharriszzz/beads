@@ -6,7 +6,54 @@
 | --- | --- | --- |
 | beads-photo-2.jpg | None on this branch | [Six sample contexts](photo2/review/r092/sample-context.png), [raw/FFT comparisons](photo2/review/r092/raw-and-fft.png), [scale plot](photo2/review/r092/scale-comparison.png); no confirmed silhouette, centerline or bead indices |
 | Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
+| Photo-2 R100 hue figures | None; same T1/T2 routes | [T1 hue](photo2/review/r100/T1-hue.png), [T2 hue](photo2/review/r100/T2-hue.png); local red-to-magenta change, not a recovered edge; overlap-map provenance confirmed by maker |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
+
+## R100–R103 — Hue clues, confirmed map history and generality constraint
+
+Maker reports definite shadowed red-bead/paper HSV overlap from prior deliberately
+labeled regions, including bead edges kept inside the bead image. Suggests hue
+along T1/T2 can still help; asks to find a name-to-HSV map in Python and inspect
+its previous revisions. Then explicitly confirms fft-image-explorer's
+`red-and-shadow` / `shadow` map is the intended work. Treat this as established
+maker evidence, not merely an unexplained impression about HSV.
+
+[Assessment and history](photo2/HUE_TRANSITIONS.md), [frozen map/revisions](photo2/hsv-provenance-r100.json).
+Inspected four file revisions: 27b8de7 viewer, 4ebb4b0 original-photo union,
+9bdfdb3 named profiles including overlapping white-balanced red/shadow,
+2caf070 splits out red-and-shadow/red-and-edge. Verified these foreground boxes
+are subsets of shadow/edge background boxes. Presets use H/S/V 0–255 and belong
+to beads-photo-2-wb.jpg; never transfer them directly to the original JPEG.
+Original sibling JPEG matches current source hash. No original spatial selection
+coordinates recovered; maker confirmation identifies the map, not T1/T2 edge pixels.
+
+Measured hue/S/V/chroma at every pixel on unchanged R099 T1/T2 (386 samples).
+Relative to red, at distances 40→64 px hue changes −9.1→−22.2° on T1 and
+−9.5→−22.2° on T2, then continues toward magenta farther out. This supports
+the proposed local cue but does not identify an exact silhouette or classify
+each pixel. No smoothing, hue threshold, white-balance transformation or contour
+adopted. T3 failure and prior FFT results remain unchanged.
+
+Checks: hue conversion/wrap/achromatic controls, independent colorsys comparison
+at all 386 samples, repeat images/report/CSV and provenance export byte-identical,
+revision/source/artifact hashes, two images inspected, links/compilation/whitespace.
+No renders or old analysis reruns. Sibling repositories read only. Full sample
+CSV/reruns ignored; curated figures/report, exporter and frozen map tracked.
+Preflight daisy, clean efda09a, no stashes, origin 0/0 after fetch; Python 3.12.14.
+No new status/usage, dependencies, delegation or ownership transfer.
+
+R103 explicitly reiterates that final code should have little knowledge of the
+photo's colors or exact bead locations. Diagnostic fixed routes, paper centers
+and historical HSV boxes must not become final runtime priors. Use image-derived
+appearance/location and relative hue cues if helpful; future palette/background/
+placement tests required before generality claims. No such tests run yet.
+
+Saved qualitative answers in the existing question file; no new questions.
+T1/T2 exact edges, T3 answer and Gaussian convention still pending. Next: compare
+local hue and texture on a few neighboring parallel routes, incorporating any
+edge feedback and paper controls. Preserve disagreements; stop before contour
+point selection or global fitting. Recommend **gpt-6-astra / High; stay here,
+no `/new`** for this focused follow-up. Publication verified after commit.
 
 ## R099 — Smaller windows and spatial texture at three transitions
 

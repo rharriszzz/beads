@@ -1,6 +1,12 @@
 # Two visual questions — no need to catch up on the older questions
 
-R099, pending. The cyan boxes show where several automatic scores change; they
+R100–R102 update: the maker confirms shadows in T1/T2, red/paper HSV overlap
+based on earlier labeled work, and suggests local hue as an additional clue.
+The named overlap map has been found and maker-confirmed. [Hue plots and map
+history](HUE_TRANSITIONS.md) now support question 1. Exact edge placement and
+question 2/T3 remain unanswered; this feedback does not approve the cyan boxes.
+
+Original R099 questions follow. The cyan boxes show where several automatic scores change; they
 are **not accepted bead boundaries**. Paper in shadow counts as background.
 The middle column shows where each measurement travels; numbers are pixels
 from P. The first column stays unmarked for comparison.
@@ -17,6 +23,6 @@ from P. The first column stays unmarked for comparison.
 
 Larger walkthroughs: [T1](review/r099/T1.png), [T2](review/r099/T2.png),
 [T3](review/r099/T3.png). [Findings in plain language](BACKGROUND_TRANSITIONS.md).
-No precise pixel annotation is required. No answers have been supplied.
+No precise pixel annotation is required. Partial qualitative feedback is saved above.
 The [earlier Gaussian-radius question](QUESTIONS.md) remains optional; its
 unanswered status did not block this explicitly parameterized comparison.

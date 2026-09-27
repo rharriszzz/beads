@@ -12,6 +12,15 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   Prefer color-independent evidence; do not hard-code magenta as the definition.
   R096 notes shadowed-paper/bead HSV overlap; retain texture/context and explicit
   uncertainty rather than forcing a color-only threshold.
+  R100–R102 confirm the maker's labeled evidence and identify the overlapping
+  white-balanced HSV map; see photo2/HUE_TRANSITIONS.md before reusing ranges.
+  Local hue changes can still help; preserve circular hue and image/unit conventions.
+- R103: final inference must have little prior knowledge of the image's colors or
+  bead locations. Hand-selected routes and saved color ranges are diagnostic/
+  validation references, not final runtime priors. Estimate appearance and location
+  from each input; test changes of palette, background and placement before claiming
+  generality. Do not silently promote diagnostic coordinates or hue boxes into code
+  that is presented as automatic reconstruction.
 - User R093 rejects the later edge correction's implausible indents and bumps.
   Show raw crops next to candidate outlines and uncertainty before propagating
   those outlines. Do not smooth away real bead-scale scallops indiscriminately.

@@ -1,0 +1,613 @@
+{
+  "sources": [
+    {
+      "repo": "hsv_tools",
+      "commit": "3e70fe304bd586b160caf12e45b657f33d8141ea",
+      "path": "hsv_picker.py",
+      "sha256": "26f1062c3024f3ecb7fc8fd33fb42136cece66d83aeee2f65de1a74c41b64537"
+    },
+    {
+      "repo": "hsv_tools",
+      "commit": "3e70fe304bd586b160caf12e45b657f33d8141ea",
+      "path": "beads-photo-2-red.jpg",
+      "sha256": "06839aa4bd642e713f56331673b0a1fb8ba0dc73cc520d2b1e0e17a88e8fd5df"
+    },
+    {
+      "repo": "hsv_tools",
+      "commit": "3e70fe304bd586b160caf12e45b657f33d8141ea",
+      "path": "beads-photo-2-background.jpg",
+      "sha256": "59a7087acec72b9dded70fb7bbbfaffe3942adfaadd28e4001a66de96540c3ff"
+    },
+    {
+      "repo": "fft-image-explorer",
+      "commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+      "path": "hsv_mask_triptych.py",
+      "sha256": "8797d45ce41d30ba368cda21b7338e041dbe18d0ec3806e4a634097c43fa0d1a"
+    },
+    {
+      "repo": "fft-image-explorer",
+      "commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+      "path": "beads-photo-2.jpg",
+      "sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb"
+    },
+    {
+      "repo": "fft-image-explorer",
+      "commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+      "path": "beads-photo-2-wb.jpg",
+      "sha256": "de79165580cc790a2a7188a4becc42c85286cceae99a743208b4580203e5b4d4"
+    }
+  ],
+  "history": [
+    {
+      "commit": "27b8de7a2e3ac95db8b928156d00bbaca7845ae8",
+      "source_sha256": "283551d71a5d4744bc71744fe27240925fe99fd4ac13e00da13baa533563571d",
+      "profiles": null,
+      "legacy_components_source": null
+    },
+    {
+      "commit": "4ebb4b0c8e0d22aadb16287a647c5d21a97c20e8",
+      "source_sha256": "f877ba71c6c57559756a07cb21beeb0e1d431461e8a359faa9cfb7eb08b4deda",
+      "profiles": null,
+      "legacy_components_source": "def _hsv_preset_components(h_u8: np.ndarray, v_u8: np.ndarray) -> dict[str, np.ndarray]:\n    # Condition 1: red hue range with minimum value (wrapped 242..262).\n    red = ((h_u8 >= 242) | (h_u8 <= 6)) & (v_u8 >= 128)\n\n    # Condition 2: yellow hue range.\n    yellow = (h_u8 >= 8) & (h_u8 <= 44)\n\n    # Condition 3: black by value threshold.\n    black = v_u8 <= 64\n\n    return {\"red\": red, \"yellow\": yellow, \"black\": black}"
+    },
+    {
+      "commit": "9bdfdb3dfc644479c4da94890e7c2ed26b883a7e",
+      "source_sha256": "1461016a95a925175c8e74b79839bc9dc84573e69bafaf2a4bba75c60c2fef90",
+      "profiles": {
+        "beads-photo-2": {
+          "red": {
+            "h": [
+              [
+                242,
+                255
+              ],
+              [
+                0,
+                6
+              ]
+            ],
+            "s": [
+              0,
+              255
+            ],
+            "v": [
+              128,
+              255
+            ],
+            "role": "fg"
+          },
+          "yellow": {
+            "h": [
+              [
+                8,
+                44
+              ]
+            ],
+            "s": [
+              0,
+              255
+            ],
+            "v": [
+              0,
+              255
+            ],
+            "role": "fg"
+          },
+          "black": {
+            "h": [
+              [
+                0,
+                255
+              ]
+            ],
+            "s": [
+              0,
+              255
+            ],
+            "v": [
+              0,
+              64
+            ],
+            "role": "fg"
+          }
+        },
+        "beads-photo-2-wb": {
+          "yellow": {
+            "h": [
+              [
+                22,
+                29
+              ]
+            ],
+            "s": [
+              196,
+              255
+            ],
+            "v": [
+              122,
+              250
+            ],
+            "role": "fg"
+          },
+          "red": {
+            "h": [
+              [
+                0,
+                5
+              ],
+              [
+                254,
+                255
+              ]
+            ],
+            "s": [
+              75,
+              217
+            ],
+            "v": [
+              43,
+              255
+            ],
+            "role": "fg"
+          },
+          "black": {
+            "h": [
+              [
+                0,
+                45
+              ],
+              [
+                240,
+                255
+              ]
+            ],
+            "s": [
+              80,
+              200
+            ],
+            "v": [
+              0,
+              30
+            ],
+            "role": "fg"
+          },
+          "shadow": {
+            "h": [
+              [
+                0,
+                36
+              ],
+              [
+                250,
+                255
+              ]
+            ],
+            "s": [
+              35,
+              180
+            ],
+            "v": [
+              31,
+              109
+            ],
+            "role": "bg"
+          },
+          "edge": {
+            "h": [
+              [
+                5,
+                36
+              ]
+            ],
+            "s": [
+              35,
+              140
+            ],
+            "v": [
+              110,
+              190
+            ],
+            "role": "bg"
+          },
+          "background": {
+            "h": [
+              [
+                10,
+                32
+              ]
+            ],
+            "s": [
+              28,
+              75
+            ],
+            "v": [
+              130,
+              255
+            ],
+            "role": "bg"
+          }
+        }
+      },
+      "legacy_components_source": null
+    },
+    {
+      "commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+      "source_sha256": "8797d45ce41d30ba368cda21b7338e041dbe18d0ec3806e4a634097c43fa0d1a",
+      "profiles": {
+        "beads-photo-2": {
+          "red": {
+            "h": [
+              [
+                242,
+                255
+              ],
+              [
+                0,
+                6
+              ]
+            ],
+            "s": [
+              0,
+              255
+            ],
+            "v": [
+              128,
+              255
+            ],
+            "role": "fg"
+          },
+          "yellow": {
+            "h": [
+              [
+                8,
+                44
+              ]
+            ],
+            "s": [
+              0,
+              255
+            ],
+            "v": [
+              0,
+              255
+            ],
+            "role": "fg"
+          },
+          "black": {
+            "h": [
+              [
+                0,
+                255
+              ]
+            ],
+            "s": [
+              0,
+              255
+            ],
+            "v": [
+              0,
+              64
+            ],
+            "role": "fg"
+          }
+        },
+        "beads-photo-2-wb": {
+          "yellow": {
+            "h": [
+              [
+                18,
+                29
+              ]
+            ],
+            "s": [
+              196,
+              255
+            ],
+            "v": [
+              100,
+              250
+            ],
+            "role": "fg"
+          },
+          "red": {
+            "h": [
+              [
+                0,
+                5
+              ],
+              [
+                254,
+                255
+              ]
+            ],
+            "s": [
+              141,
+              255
+            ],
+            "v": [
+              110,
+              255
+            ],
+            "role": "fg"
+          },
+          "red-and-shadow": {
+            "h": [
+              [
+                0,
+                5
+              ],
+              [
+                254,
+                255
+              ]
+            ],
+            "s": [
+              75,
+              180
+            ],
+            "v": [
+              43,
+              109
+            ],
+            "role": "fg"
+          },
+          "red-and-edge": {
+            "h": [
+              [
+                5,
+                5
+              ]
+            ],
+            "s": [
+              75,
+              140
+            ],
+            "v": [
+              110,
+              190
+            ],
+            "role": "fg"
+          },
+          "black": {
+            "h": [
+              [
+                0,
+                45
+              ],
+              [
+                240,
+                255
+              ]
+            ],
+            "s": [
+              80,
+              200
+            ],
+            "v": [
+              0,
+              30
+            ],
+            "role": "fg"
+          },
+          "shadow": {
+            "h": [
+              [
+                0,
+                36
+              ],
+              [
+                250,
+                255
+              ]
+            ],
+            "s": [
+              35,
+              180
+            ],
+            "v": [
+              31,
+              109
+            ],
+            "role": "bg"
+          },
+          "edge": {
+            "h": [
+              [
+                5,
+                36
+              ]
+            ],
+            "s": [
+              35,
+              140
+            ],
+            "v": [
+              110,
+              190
+            ],
+            "role": "bg"
+          },
+          "background": {
+            "h": [
+              [
+                10,
+                32
+              ]
+            ],
+            "s": [
+              28,
+              75
+            ],
+            "v": [
+              130,
+              255
+            ],
+            "role": "bg"
+          }
+        }
+      },
+      "legacy_components_source": null
+    }
+  ],
+  "profile": {
+    "yellow": {
+      "h": [
+        [
+          18,
+          29
+        ]
+      ],
+      "s": [
+        196,
+        255
+      ],
+      "v": [
+        100,
+        250
+      ],
+      "role": "fg"
+    },
+    "red": {
+      "h": [
+        [
+          0,
+          5
+        ],
+        [
+          254,
+          255
+        ]
+      ],
+      "s": [
+        141,
+        255
+      ],
+      "v": [
+        110,
+        255
+      ],
+      "role": "fg"
+    },
+    "red-and-shadow": {
+      "h": [
+        [
+          0,
+          5
+        ],
+        [
+          254,
+          255
+        ]
+      ],
+      "s": [
+        75,
+        180
+      ],
+      "v": [
+        43,
+        109
+      ],
+      "role": "fg"
+    },
+    "red-and-edge": {
+      "h": [
+        [
+          5,
+          5
+        ]
+      ],
+      "s": [
+        75,
+        140
+      ],
+      "v": [
+        110,
+        190
+      ],
+      "role": "fg"
+    },
+    "black": {
+      "h": [
+        [
+          0,
+          45
+        ],
+        [
+          240,
+          255
+        ]
+      ],
+      "s": [
+        80,
+        200
+      ],
+      "v": [
+        0,
+        30
+      ],
+      "role": "fg"
+    },
+    "shadow": {
+      "h": [
+        [
+          0,
+          36
+        ],
+        [
+          250,
+          255
+        ]
+      ],
+      "s": [
+        35,
+        180
+      ],
+      "v": [
+        31,
+        109
+      ],
+      "role": "bg"
+    },
+    "edge": {
+      "h": [
+        [
+          5,
+          36
+        ]
+      ],
+      "s": [
+        35,
+        140
+      ],
+      "v": [
+        110,
+        190
+      ],
+      "role": "bg"
+    },
+    "background": {
+      "h": [
+        [
+          10,
+          32
+        ]
+      ],
+      "s": [
+        28,
+        75
+      ],
+      "v": [
+        130,
+        255
+      ],
+      "role": "bg"
+    }
+  },
+  "user_confirmation": "R102: maker identifies red-and-shadow/shadow map as the intended earlier work",
+  "convention": "HSV-space inclusive integer boxes; all H/S/V channels rounded from matplotlib HSV*255; white-balanced profile",
+  "subset_checks": {
+    "red-and-shadow_inside_shadow": true,
+    "red-and-edge_inside_edge": true
+  },
+  "spatial_annotation_coordinates": "Not recovered; presets are HSV boxes, not spatial rectangles. User confirms map provenance, not exact T1/T2 edge pixels."
+}
