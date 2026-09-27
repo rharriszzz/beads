@@ -7,6 +7,30 @@
 | beads-photo-2.jpg | None on this branch | [Six sample contexts](photo2/review/r092/sample-context.png), [raw/FFT comparisons](photo2/review/r092/raw-and-fft.png), [scale plot](photo2/review/r092/scale-comparison.png); no confirmed silhouette, centerline or bead indices |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R098 — Directional FFT guidance saved
+
+Maker uses a band-pass filter (reject low and high frequencies) to inspect peaks
+at expected spacings for directions 1/6/7. Reports that the direction-1 feature's
+angle relative to the local centerline determines helicity, and that interpreting
+a centerline-centered Gaussian FFT is difficult. [Saved method / display plan](photo2/PRIOR_WORK.md#r098--makers-directional-fft-method).
+Plan raw context, a tangent-aligned patch, visible frequency mask, labeled peak
+pairs and corresponding photo directions. Establish coordinate/sign conventions
+and calibrate with known opposite-helicity POV-Ray examples before photo inference.
+No direction estimator, helicity result or new numerical experiment in this step.
+
+Documentation only: updated prior-work notes, plan, handoff and append-only log.
+Preflight daisy, clean eae80ce, no stashes, upstream 0/0 after fetch. Prior delivery
+eae80ce was pushed and remote-tip verified. No new status/usage or ownership transfer.
+Checks: changed Markdown links and whitespace; probe/source/illustration hashes
+remain unchanged. No numerical tests or renders rerun for saved advice.
+
+Next remains the background transition comparison from R095–R097: smaller FFT
+windows versus spatial texture, explicit excluded frequencies, absolute/fractional
+power with paper controls, and explained raw/routes/uncertainty illustrations.
+Stop before whole-image contours or centerline/scene changes. Recommend
+**gpt-6-astra / High; stay in this conversation**, no `/new` needed. Directional
+analysis is a later aspect; no new question needed for this advice.
+
 ## R092–R097 — Restart from default branch; first background-method review
 
 Machine daisy. New branch **photo-2-reconstruction-v2**, based directly on

@@ -51,3 +51,33 @@ needs them; this step did not conduct another exhaustive branch review.
 Historical generated-JPEG inventories remain there, with unresolved extents,
 palette/border uncertainty, missing indices and no verified complete inventory.
 Their counts are not transferred into a photo-2 inventory on this branch.
+
+## R098 — Maker's directional FFT method
+
+For directions, the maker removed **both low and high frequencies** and inspected
+peaks at expected bead spacings for directions **1, 6 and 7**. This is a band-pass
+direction measurement, distinct from the background test's remaining-power score.
+The maker reports that the angular difference between the direction-1 FFT feature
+and the bracelet's local centerline is sufficient to identify helicity. Preserve
+that as the proposed inference rule to implement and calibrate; the current
+background probe has not identified those peaks or tested the rule.
+
+The maker finds a Gaussian-window FFT centered on the centerline hard to interpret.
+For the eventual direction review, present raw context, a centerline-tangent-aligned
+patch, the visible band-pass mask, labeled peak pairs, and corresponding directions
+overlaid on the photograph. An optional inverse transform of selected peaks can
+show which image structure each peak family represents. Keep the original patch
+and coordinate transform available so alignment does not hide a sign convention.
+
+Define image-axis orientation, tangent/normal axes, and the mapping between a
+frequency vector and its associated spatial structure before assigning hand.
+Account for opposite FFT peak pairs and line angles modulo 180 degrees. Calibrate
+the direction-1 association and signed relative angle on known opposite-helicity
+POV-Ray examples at several in-plane section directions under a fixed camera.
+Do not silently identify a frequency-vector angle with a real-space bead-connection
+angle, or assume that 1/6/7 labels imply raw FFT-radius ratios of 1:6:7.
+Keep the major centerline planar and local viewing direction distinct from winding.
+
+Window width, frequency-band limits and the maker's peak-label convention remain
+unspecified. Resolve them with illustrated alternatives when this phase starts;
+do not reopen all background questions or interrupt the current boundary task.

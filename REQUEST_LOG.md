@@ -161,3 +161,36 @@ artifacts are byte-identical; source/script/three image hashes match the report;
 compilation passes. Staged whitespace check caught a trailing blank line in the
 new .gitignore, which was removed before commit. Only the 15 listed new-branch
 files are staged; local environments, caches and routine output remain ignored.
+
+## R098 — Band-pass FFT directions and helicity (2026-09-27)
+
+User: “Also when I used fft to figure out directions, I filtered out both high
+frequencies and low frequencies, so I could look at peaks having the expected
+bead spacings, in the 1,6,7 directions.  The difference in the angle of direction
+1 part of the fft, and the centerline of the bracelet is all you need to tell you
+the helicity.  It is sort of a pain to interpred the gaussion fft ceneterd over
+the centerline of the bracelet.”
+
+Preflight: daisy, clean photo-2-reconstruction-v2 at eae80ce, no stashes; origin
+0/0 after escalated fetch. Previous eae80ce push and remote-tip verification
+succeeded, with clean final tree. Read handoff, latest log, plan, saved answers,
+prior-work quick model and historical SHAPE_REASONING quick model/task rows.
+No new session/status/usage, delegation or computer ownership transfer.
+
+Saved the maker's directional method separately from the background-power test:
+band-pass around bead-spacing features, directions 1/6/7, direction-1 angle
+relative to local centerline as proposed helicity rule. No numeric band limits,
+peak-to-direction convention or helicity label inferred. Future presentation:
+raw context, tangent-aligned patch, visible pass band, labeled peak pairs and
+corresponding directions on the photo; optional selected-peak inverse transform.
+Calibrate coordinate conventions and the signed relative angle with known
+opposite-helicity POV-Ray examples at multiple section directions. Preserve planar
+centerline and the distinction between local view and minor winding. No claim
+that raw spectral radius ratios equal 1:6:7 or that this rule has been tested here.
+
+Updated four documentation files. Local changed-document links/whitespace checked;
+source/probe/illustration hashes unchanged. No numerical tests, new illustrations,
+rendering, segmentation or direction estimation required for saving this advice.
+No new question. Next remains the bounded background-transition experiment;
+stop before global contours, centerline or scene changes. Recommend gpt-6-astra /
+High, stay here with no /new. Routine outputs/environments remain excluded.
