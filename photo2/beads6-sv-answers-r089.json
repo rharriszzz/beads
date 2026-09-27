@@ -1,0 +1,92 @@
+{
+  "request": "R089",
+  "date": "2026-09-27",
+  "image": "beads6.jpg",
+  "evidence_type": "maker_review_not_independent_classifier_validation",
+  "answers": [
+    {
+      "question": "Q1",
+      "path": "A",
+      "mapping": "explicit PDF question 1",
+      "decision": "endpoints_on_different_beads",
+      "maker_reason": "The bright spot left of P is a specular reflection. The surface darkens approaching the edge of the bead under P and becomes lighter over the bead under Q.",
+      "scope": "Maker-confirmed different-bead relation at the two annotated points; exact boundary, full extents, and shifted endpoints not labeled.",
+      "ends_xy": [
+        [
+          145,
+          216
+        ],
+        [
+          160,
+          216
+        ]
+      ]
+    },
+    {
+      "question": "Q2",
+      "path": "B",
+      "mapping": "explicit PDF question 2",
+      "decision": "endpoints_on_different_beads",
+      "maker_reason": "P and Q are on different beads, by the same reasoning as Q1.",
+      "scope": "Maker-confirmed different-bead relation at the two annotated points; does not settle observation 189 lower extent.",
+      "ends_xy": [
+        [
+          112,
+          300
+        ],
+        [
+          127,
+          302
+        ]
+      ]
+    },
+    {
+      "question": "Q3",
+      "path": "H",
+      "mapping": "inferred from first supporting example on PDF page 3",
+      "decision": "specular_highlight_not_boundary_evidence",
+      "maker_reason": "The bright spot is a specular reflection; it never signals the boundary between beads.",
+      "scope": "Do not use specular spots as boundary landmarks or color changes within a highlight as bead transitions. No new exact mask or endpoint ownership labels supplied.",
+      "ends_xy": [
+        [
+          354,
+          420
+        ],
+        [
+          369,
+          420
+        ]
+      ]
+    },
+    {
+      "question": "Q4",
+      "path": "K",
+      "mapping": "inferred from second supporting example on PDF page 3",
+      "decision": "both_endpoints_on_bead_boundaries",
+      "maker_reason": "Both points are on the boundary between beads.",
+      "scope": "Reject both P and Q as interior references. This supersedes the earlier diagnosis focusing only on P; does not label which bead pair owns either boundary.",
+      "ends_xy": [
+        [
+          104,
+          300
+        ],
+        [
+          116,
+          300
+        ]
+      ]
+    }
+  ],
+  "hsv_convention_note": "The user describes darkening then lightening but reverses the direction of HSV Value in words. Keep V=max(R,G,B): darkening lowers V; lightening raises V. Preserve verbatim wording in REQUEST_LOG.md.",
+  "limitations": [
+    "No exact boundary pixels, full masks, new counts or indices are established.",
+    "Maker confirmation applies to original A/B endpoints, not automatically to shifted or independently perturbed endpoints.",
+    "H/K question-number mapping is inferred from the order of the two PDF supporting examples."
+  ],
+  "sources": {
+    "beads6.jpg": "ce86d5c1faa5a5c3da931bd867156eccada3225857e7fa35a62cf280b36a2059",
+    "photo2/beads6-sv-paths-r087.json": "e0220bddec741d216efc3ebfbcea00245198468e8081cb3fb943665c5eba30ec",
+    "photo2/review/r087/profiles.csv": "0792bc0547cfe2ffd2e3d039e6d05cafada9d67e7d9ca64f943eda5e5aa6c3fe",
+    "photo2/review/r088/beads6-questions.pdf": "fc0b437163bd773884a4398e926bf2d2aa04d4273ad201654da288aa47e4b4be"
+  }
+}

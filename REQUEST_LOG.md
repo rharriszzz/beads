@@ -3610,3 +3610,64 @@ Next: read maker answers and update the two interpretation hypotheses, stopping
 before new analysis/mask edits. Recommend gpt-6-astra / High; stay in this
 conversation for PDF feedback and answers. The earlier endpoint experiment is
 deferred, not automatically started. A later separate experiment can use `/new`.
+
+## R089 — Save maker answers and correct path interpretations (2026-09-27)
+
+User: "here are the answers: Q1 the bright spot to the left pf P is the specular
+reflection of the lighting reflected by the bead. Along the line from P to Q,
+the HSV value increases (the pixels get darker) as we approach the edge of the
+bead that point P is over; as soon as we are fully over the bead that Q is over,
+the value decreases (the pixel is lighter). P is over one of the beads, Q is over
+a different one. Q2. P and Q are indeed over different beads, by the same reasoning
+as Q1. Q3. the bright spot is the specular reflection; it never signals the
+boundary between and the next. Q4. both points are on the boundary between beads.
+continue"
+
+Preflight: daisy, clean photo-2-reconstruction at 7d3f08b, origin upstream, no
+stashes; fetch required escalation for read-only FETCH_HEAD, then ahead/behind
+0/0. Python 3.12.14. Same conversation as supplied R087 session; no new status,
+usage, account inspection, delegation or computer transfer. Old usage remains
+historical, not a current reading. Read handoff/current plan, saved R069 answers,
+R087 assessment/shape guidance and R088 question/PDF provenance.
+
+Follow the current R088 next-step boundary: save answers, revise the two
+interpretations and durable guidance, then stop before new numerical analysis
+or mask edits. Q1 maps explicitly to A; Q2 to B. Interpret Q3/Q4 as the two
+supporting examples H/K, respectively, in their PDF page-3 order; this mapping
+is a stated contextual inference, not explicit numbering in the PDF. No blocking
+clarification is needed. Preserve the user's exact value wording here, but use
+the conventional HSV definition in analysis: V=max(R,G,B), so darker means lower
+V and lighter means higher V. The described darkening/recovery is understood;
+no numerical values or saved traces need inversion.
+
+### R089 outcome and checks
+
+Saved [answered question record](photo2/BEADS6_SV_QUESTIONS.md) and
+[structured labels with exact original endpoints and source hashes](photo2/beads6-sv-answers-r089.json).
+A/B different-bead relations are now maker-confirmed. H's spot is specular
+reflection, not a boundary landmark. K has both endpoints on boundaries,
+superseding the incomplete P-only diagnosis; reject both as interior references.
+Q3/H and Q4/K mapping remains explicitly inferred from PDF support-example order.
+Keep the user's visual darkening/lightening interpretation and conventional HSV
+signs; no saved numerical inversion or new measurement was made.
+
+Updated current guide/plan/handoff and answered status in R087/R088 notes. Original
+PDF/illustrations/CSV/config/code remain frozen as reviewed historical evidence.
+Both numbered questions are closed; no new questions. Older photo-shadow
+questions stay pending; R069 ignore-slivers guidance remains applied. All seven
+inventories/counts/warnings remain unchanged. Point-level maker confirmation is
+not a full mask, split, missing-index, count or perturbed-endpoint solution; keep
+beads6 144/189 full extents, beads3 122/405, beads5 188, R081 queue, provisional
+colors/borders/glints and missing/null indices unresolved.
+
+Checks pass: four answer coordinates match the R087 config; answer source hashes
+and all R087/R088 source/artifact hashes verify; all seven inventory JSON files
+are byte-identical to pre-step HEAD; documentation links and whitespace pass.
+No numerical tests, render, browser/PDF regeneration or source-pattern lookup
+for this documentation/answer step. No unrelated or scratch outputs added.
+
+Next: independently perturb endpoints around confirmed A/B pairs, retaining H
+highlight and K invalid-interior examples. Publish illustrated placement
+sensitivity and lessons; keep moved-point identities provisional. Stop before
+mask/count/index edits or source-pattern lookup. Recommend gpt-6-astra / High,
+fresh `/new` for that separate experiment. Stop at the R088 next-task boundary.

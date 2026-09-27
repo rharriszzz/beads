@@ -11,15 +11,28 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current delivery — R088 short question PDF
+## Current step — R089 maker answers applied
 
-[Three-page PDF](photo2/review/r088/beads6-questions.pdf): clearer versions of the
-same two pending questions, large raw/marked crops, sampled-color strips, and a
-support page. Presentation only; R087 inputs and all inventories are unchanged.
-[Reproduction/checks](photo2/review/r088/README.md). Both questions remain unanswered.
-Next: read answers and update the two interpretation hypotheses, stopping before
-new analysis or masks. Recommend **gpt-6-astra / High, stay in this conversation**
-for feedback. The separate diagnostic experiment below is deferred until requested.
+[Saved answers](photo2/BEADS6_SV_QUESTIONS.md) close the R087/R088 round. The maker
+confirms original A/B endpoints lie on different beads. Specular bright spots
+are not boundary landmarks. Both rejected K endpoints lie on boundaries; the
+earlier P-only diagnosis was incomplete. Q3/H and Q4/K mappings are inferred
+from PDF support-example order. Conventional HSV Value falls as pixels darken
+and rises as they lighten; no saved numerical traces need changing.
+
+This step records reviewed point relationships, not full outlines, mask splits,
+perturbed-endpoint labels, counts or chain indices. All inventories remain
+unchanged; 144/189 full extents and prior warnings stay unresolved. Frozen
+R087/R088 evidence is preserved. No new maker questions; older photo questions
+remain pending. Checks cover answer coordinates, source/artifact hashes, unchanged
+inventories, documentation links and whitespace, with no new numerical experiment.
+
+Next bounded task: evaluate independent endpoint perturbations around the
+maker-confirmed A/B pairs; keep H as a highlight example and K as an invalid
+interior comparison. Publish explained routes, color strips and supported/
+ambiguous/rejected placement evidence. Do not transfer maker labels automatically
+to moved points. Stop before mask/count/index changes or source-pattern lookup.
+Recommend **gpt-6-astra / High, fresh `/new`** for this separate experiment.
 
 ## Previous analysis — R087 explained S/V paths and travel-order visuals
 
@@ -45,8 +58,9 @@ remain 313/318/304/342/328/310/327 and none is verified complete. Keep beads6
 missing observations and null indices. Ignore slivers; no source-pattern lookup.
 Planar section views plus global camera view remain the geometric constraints.
 
-[Two illustrated endpoint questions](photo2/BEADS6_SV_QUESTIONS.md) are pending;
-R069 answers remain applied and older photo questions remain pending.
+[Endpoint questions were answered in R089](photo2/BEADS6_SV_QUESTIONS.md); the
+current status above supersedes this earlier next-step description. R069 answers
+remain applied and older photo questions remain pending.
 Next bounded task: incorporate endpoint feedback, then assess independently
 perturbed interior endpoints in the same two neighborhoods. Preserve rejected
 routes and publish a small illustrated supported/ambiguous/rejected path review.

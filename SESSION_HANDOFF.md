@@ -12,7 +12,7 @@ chain indexing or recovered full pattern is established for any image.
 | beads3 | 304 | [R071 active map](photo2/BEADS3_INVENTORY.md); [R075 calibration](photo2/BLACK_REGION_METHODS.md), 122/405 unresolved and persistently large; [R081 queue](photo2/AREA_WARNING_STABILITY.md): 47/163/198/199/346 sensitive |
 | beads4 | 342 | [R076 active map](photo2/BEADS4_INVENTORY.md); R081: 272 sensitive; same-color/white-shadow borders and completeness provisional |
 | beads5 | 328 | [R077 active map](photo2/BEADS5_INVENTORY.md); [R080 diagnostic](photo2/BEADS5_188_DIAGNOSTIC.md): 188 unresolved; R081: 188/349/364 sensitive; neutral seams/colors/completeness provisional |
-| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); [R087 S/V paths](photo2/BEADS6_SV_PATHS.md): 144/189 unresolved; [endpoint questions](photo2/BEADS6_SV_QUESTIONS.md) pending; same-color/white-shadow borders and completeness provisional |
+| beads6 | 310 | [R078 active map](photo2/BEADS6_INVENTORY.md); [R089 answers](photo2/BEADS6_SV_QUESTIONS.md): A/B different-bead pairs confirmed by maker; both K endpoints on boundaries; 144/189 full extents, other borders and completeness unresolved |
 | beads7 | 327 | [R079 active map](photo2/BEADS7_INVENTORY.md); R081: 128/200/236 sensitive; manual black-glint repairs and pale labels/borders/completeness provisional |
 
 [R081 illustrated queue and definitions](photo2/AREA_WARNING_STABILITY.md): sensitivity
@@ -23,13 +23,64 @@ R084–R085 calibration: [full-circle atlas](photo2/FULL_CIRCLE_SHAPES.md),
 **For future boundary/shape tasks read [the layered reasoning guide](photo2/SHAPE_REASONING.md).**
 R086 confirms a planar necklace on paper/table: in-plane section direction plus
 global camera view determines the shape family; do not fit local out-of-plane tilt.
-R087 supplies exploratory S/V paths and explained travel-order visuals; endpoint
-identity/placement remains provisional. Beads5 area-cut work is deferred.
+R087 supplies exploratory S/V paths and explained travel-order visuals. R089
+confirms the original A/B endpoint pairs are on different beads; both rejected K
+endpoints are on boundaries. Perturbed endpoints and full extents remain
+provisional. Specular highlights are not boundary markers. Beads5 area-cut work
+is deferred.
 
-Two R087 generated-image [endpoint questions](photo2/BEADS6_SV_QUESTIONS.md),
-now in the [short R088 PDF](photo2/review/r088/beads6-questions.pdf), are pending. No answers received. Prior photo-shadow questions remain in
-photo2/QUESTIONS_FOR_MAKER.md; neither set is an approval gate for diagnostic work.
+The [R089 answers](photo2/BEADS6_SV_QUESTIONS.md) close this generated-image question
+round. Q3/Q4 are inferred to refer to supporting H/K examples on page 3 of the
+preserved R088 PDF. Conventional HSV V falls with darkening and rises with
+lightening; the reply reversed those value words, not the visual observation.
+Older photo-shadow questions remain pending in photo2/QUESTIONS_FOR_MAKER.md.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
+
+## R089 — Maker answers applied (2026-09-27)
+
+User supplies Q1–Q4 answers and says continue. Completed the R088 handoff's
+bounded next task: record answers, update interpretations/guidance, stop before
+new numerical analysis or mask edits. [Saved answers and illustration](photo2/BEADS6_SV_QUESTIONS.md) ·
+[Structured labels / coordinates / hashes](photo2/beads6-sv-answers-r089.json).
+
+- Q1/A: P and Q lie on different beads. The bright spot left of P is specular
+  reflection; the surface darkens toward P's bead edge and lightens over Q's bead.
+- Q2/B: different beads, same reasoning. These original endpoint relations are
+  maker-confirmed; they are no longer merely competing one/two-bead hypotheses.
+- Q3/H: specular reflection does not signal a bead boundary; exclude the bright
+  spot as a boundary landmark. No new exact outline or H endpoint labels supplied.
+- Q4/K: **both endpoints** lie on bead boundaries. The earlier focus only on P
+  was incomplete. Reject both as interior references; do not equate a negative
+  dip with an absent boundary. Q3→H/Q4→K is inferred from the two PDF support
+  examples' order; only Q1/Q2 were explicitly numbered in that document.
+
+The user's words reverse HSV Value direction; preserve them verbatim in the log,
+but retain conventional V=max(R,G,B): darker lowers V, lighter raises V. R087
+already used this definition, so no inversion or recomputation is needed.
+These maker labels establish the relations at the original points, not exact
+boundary pixels, complete masks, shifted/perturbed endpoint labels, body counts
+or indices. Keep all seven inventories and warnings; 144/189 full extents remain
+unresolved. No sliver ownership or source-pattern lookup. R069 guidance stays
+applied; older photo questions remain pending. No new questions in this round.
+
+Updated question/answer index, R087 assessment status, R088 PDF provenance notes,
+shape guide, plan and handoff. Old PDF/images/CSV/config/code remain frozen.
+Checks: answer coordinates match R087 config; hashes for their source images,
+CSV and PDF verify; R087/R088 source/artifact hashes verify; all seven inventory
+JSON files match pre-step HEAD; documentation links and whitespace pass. No
+numerical/render tests rerun for this answer/documentation-only change.
+
+Preflight daisy, clean photo-2-reconstruction at 7d3f08b, no stashes, origin
+0/0 after escalated fetch (FETCH_HEAD read-only in sandbox), Python 3.12.14.
+Same conversation as supplied R087 session; no new status/usage or ownership
+transfer, no delegation. Do not reuse Sep 25 quota figures as current readings.
+
+Next bounded task: independently perturb endpoints around the maker-confirmed
+A/B pairs and assess placement sensitivity, retaining H as a highlight example
+and K as an invalid-interior example. Show paths, sampled colors, and lessons;
+keep new endpoints provisional and stop before mask/count/index changes or
+source-pattern lookup. Recommend **gpt-6-astra / High, fresh `/new`** for that
+separate experiment. The user controls model/session changes; stop here.
 
 ## R088 — Short question PDF (2026-09-25)
 

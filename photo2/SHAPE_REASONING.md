@@ -47,6 +47,14 @@ valley alone is not enough: shading, highlights, outside background and occlusio
 also change S/V. A white highlight can lie inside a blue or black bead. Use the
 expected visible shape and the neighboring portions to interpret the path.
 
+R089 maker review confirms the original A and B paths connect different beads;
+the darkening toward one bead's edge and lightening over its neighbor is boundary
+evidence in those examples. Specular bright spots are lighting reflections, not
+boundary markers. In rejected K, **both** endpoints lie on bead boundaries;
+neither is an interior reference. See the [saved answers](BEADS6_SV_QUESTIONS.md).
+Use conventional HSV signs: darker means lower V, lighter means higher V. These
+maker labels do not supply full outlines or transfer to perturbed endpoints.
+
 A useful working description is:
 
 > visible portion = projected bead surface left exposed by neighboring beads;
@@ -145,8 +153,10 @@ suspected seams; its trial area cuts were not recovered boundaries.
 4. Vary path placement modestly and inspect nearby parallel paths. Verify that
    the purported internal seam does not come from the outside silhouette or
    white background. Save contrary evidence as well as a favorable trace.
-   R087's rejected K starts in the stripe it was meant to test; its negative
-   dip score cannot be interpreted as absence of a seam. Endpoint-window
+   R089 corrects the earlier P-only diagnosis of rejected K: the maker identifies
+   both P and Q as boundary points (mapping Q4 to PDF support example K by order).
+   Neither endpoint is a supported interior; its negative dip score cannot be
+   interpreted as absence of a seam. Check both endpoints. Endpoint-window
    extrema are a reason to inspect placement, not an automatic body decision.
 5. Interpret the transition together with the expected exposed contours of both
    portions and their occluding neighbors. Report whether the evidence improves

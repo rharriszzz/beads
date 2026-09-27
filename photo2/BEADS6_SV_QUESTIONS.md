@@ -1,25 +1,45 @@
-# Two illustrated questions about beads6
+# Beads6 questions — answers saved, R089
 
-**[Open the three-page PDF](review/r088/beads6-questions.pdf).**
-R088 simplifies the same pending R087 questions. No answers have been received.
+**The two questions are answered.** The maker replied on 27 September 2026 and
+also commented on both supporting examples. The [original three-page PDF](review/r088/beads6-questions.pdf)
+is preserved as the document that was reviewed; its “pending” footer is historical.
 
-Each question has an unmarked image beside the same image with P and Q marked.
-The yellow line shows where colors are sampled, not a proposed bead outline.
+| Reply / picture | Maker's answer | What changes in the analysis |
+| --- | --- | --- |
+| Q1 / A | P and Q are on different beads. The bright spot left of P is specular reflection. The surface darkens toward the first bead's edge, then lightens over the next bead. | Use the original A endpoints as a maker-confirmed different-bead pair. The one-bead explanation for this pair is superseded. |
+| Q2 / B | P and Q are on different beads, for the same reason. | Use the original B endpoints as a second maker-confirmed different-bead pair. |
+| Q3 / H | The bright spot is specular reflection; it does not signal a bead boundary. | Keep specular highlights out of boundary evidence. A highlight can change the sampled color within a bead. |
+| Q4 / K | Both points are on boundaries between beads. | Reject **both** P and Q as interior references. My earlier explanation identified only P's problem and was incomplete. |
 
-1. **Across the blue stripe (path A):** Do P and Q appear to be on two different
-   beads? Answer **two beads / one bead / cannot tell**.
-2. **The neighboring blue areas (path B):** Do P and Q appear to be on two
-   different beads? Answer **two beads / one bead / cannot tell**.
+The PDF numbered only Q1 and Q2. Q3→H and Q4→K are interpreted from the order
+of its two supporting examples on page 3; this association is recorded as an
+inference. The answers themselves are preserved in [REQUEST_LOG](../REQUEST_LOG.md)
+and a [structured record with coordinates and source hashes](beads6-sv-answers-r089.json).
 
-If a mark is badly placed, an optional direction such as “move P left” is enough.
-No coordinates, bead counts or decisions about tiny fragments are needed.
+**Value terminology:** the maker's visual description is darkening then lightening.
+In conventional HSV, V=max(R,G,B), so V **falls** as pixels darken and **rises**
+as they lighten. The reply used the opposite increase/decrease wording. The
+saved R087 traces already use the conventional definition and are unchanged.
 
-Pages 1–2 contain the questions, large images and sampled-color strips. Page 3
-explains how a highlight and a poor starting point can mislead. The picture
-locations and measurements are unchanged; only the wording and presentation
-have been simplified. The earlier request about choosing a better connection
-is retained as the optional endpoint correction.
+## The answered pictures
 
-[Full technical assessment](BEADS6_SV_PATHS.md) ·
-[Earlier detailed walkthrough](review/r087/review.html) ·
-[PDF reproduction and checks](review/r088/README.md).
+[A: the two different beads](review/r087/explain-A.png) ·
+[B: the second different-bead pair](review/r087/explain-B.png) ·
+[H: specular-highlight example](review/r087/journey-H.png).
+
+K needs the explicit correction below: both marked endpoints are on boundaries,
+even though the old picture's title mentions only the starting point.
+
+![Rejected K: the maker identifies both P and Q as boundary points](review/r087/explain-K.png)
+
+These answers label the relationships at the original marked points. They do
+not supply exact boundary pixels, complete bead outlines, eligibility of small
+portions, chain indices, or labels for perturbed endpoints. All 310 active beads6
+observations remain unchanged; full mask extents near 144/189 remain unresolved.
+No new maker questions are needed for this round. Older photo-shadow questions
+remain pending and separate from these answers.
+
+Next: assess independently perturbed endpoints around the confirmed A/B pairs,
+using H as a highlight example and K as an invalid-interior example. Show the
+route and what changes along it; stop before masks, counts or indices are edited.
+[Historical assessment](BEADS6_SV_PATHS.md) · [PDF reproduction](review/r088/README.md).

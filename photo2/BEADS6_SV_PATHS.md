@@ -1,5 +1,15 @@
 # What changes between visible bead interiors — R087
 
+**R089 maker review, 2026-09-27:** [answers are now saved](BEADS6_SV_QUESTIONS.md).
+A and B each connect different beads at the original marked endpoints. The
+bright spots discussed are specular reflections, not boundary markers. In K,
+both endpoints are on boundaries; the original P-only diagnosis was incomplete.
+Q3/Q4 are mapped to the PDF's supporting H/K examples by their order. The
+measurements and illustrations below are the preserved pre-answer assessment;
+its identity uncertainty for the original A/B pairs is superseded by maker
+confirmation. Full mask extents, split locations and perturbed endpoints remain
+undetermined. No inventory change follows automatically.
+
 **The paths now show useful appearance evidence, but do not recover boundaries
 or settle bead identities.** A cyan seam candidate can show a brightness dip with
 little saturation change. A highlight inside one apparent red bead can change
@@ -179,14 +189,15 @@ where useful, travel-order color strips with image-linked stops and lessons.
 
 ## Saved questions and next step
 
-[Two illustrated questions](BEADS6_SV_QUESTIONS.md) ask whether A's endpoints are
-useful and whether revised B connects the intended visible portions. Pending;
-no answers invented. R069's ignore-slivers guidance remains applied. Older
+[The two questions are answered](BEADS6_SV_QUESTIONS.md): the maker confirms A/B
+different-bead pairs; H is a specular-highlight example; both K endpoints are
+boundaries. See the R089 notice above for the inferred Q3/Q4 mapping and scope.
+R069's ignore-slivers guidance remains applied. Older
 photo-shadow questions remain pending and do not block generated-image work.
 
-Next: incorporate endpoint feedback, then evaluate independently perturbed
+Next: using the saved answers, evaluate independently perturbed
 interior endpoints in these same two neighborhoods, keeping rejected routes
 visible. Publish a small illustrated supported/ambiguous/rejected path assessment;
-stop before segmentation edits, indices or source-pattern lookup. If no answers
-arrive, retain endpoint identities as hypotheses. Recommend gpt-6-astra / High
+stop before segmentation edits, indices or source-pattern lookup. Keep perturbed
+endpoint identities provisional until supported. Recommend gpt-6-astra / High
 and a fresh `/new`; no automatic next experiment.

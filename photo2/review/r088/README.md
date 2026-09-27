@@ -1,5 +1,10 @@
 # Short question PDF — R088
 
+**Answered in R089 (2026-09-27):** see [the saved replies](../../BEADS6_SV_QUESTIONS.md).
+The PDF is preserved as reviewed; its pending wording and P-only explanation of
+the rejected path are historical. The maker identifies both K endpoints as
+boundary points and confirms the original A/B pairs are on different beads.
+
 [Open the PDF](beads6-questions.pdf): three US Letter pages, one per pending
 question and one supporting page. Large raw/marked crops and travel-order color
 strips replace technical plots/tables. Questions use the same choices: two beads,
