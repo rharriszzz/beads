@@ -3671,3 +3671,74 @@ highlight and K invalid-interior examples. Publish illustrated placement
 sensitivity and lessons; keep moved-point identities provisional. Stop before
 mask/count/index edits or source-pattern lookup. Recommend gpt-6-astra / High,
 fresh `/new` for that separate experiment. Stop at the R088 next-task boundary.
+
+## R090 — Continuation interrupted before numerical work (2026-09-27)
+
+User: "continue"
+
+Read current handoff/log/plan, shape guide, R087 paths/config/code, saved R069/R089
+answers and relevant notes. Preflight daisy, clean photo-2-reconstruction at
+a8851eb, origin upstream, no stashes; initial fetch failed on sandbox-read-only
+FETCH_HEAD, escalated fetch succeeded and ahead/behind was 0/0. Python 3.12.14.
+No new session/status/usage supplied; no ownership transfer or delegation.
+Explained scope: independent endpoint perturbations around confirmed A/B,
+retaining H/K and stopping before inventory/index changes. User interrupted
+before any file writes or experiment execution and supplied R091. Endpoint
+experiment is deferred; no results or endpoint labels were generated.
+
+## R091 — Explain current methods in Markdown (2026-09-27)
+
+User: "Can you please explain your methods so far?  how do you separate the
+background from the nekclace, how do you find the centerline? how are you
+determining bead locations?  put it in a markdown file, then add commit push."
+
+Preflight remains daisy, clean photo-2-reconstruction at a8851eb, origin upstream,
+no stashes. Refetched with escalation and verified 0/0 before writes. No new
+status, usage, model change, account lookup, transfer or delegation.
+
+Updated the existing METHODS_AND_PLAN.md rather than creating a competing
+overview. Explains baseline dark-channel foreground and palette-specific support,
+photo-2 HSV background and saved boundary curves, nearest-outer midpoint
+centerline from resampled control polylines, periodic spline evaluation,
+brightness peaks followed by explicit manual corrections, per-support watershed,
+local-area selection, and exploratory S/V paths with R089 answers. Separates
+generated-image masks from photo curves; distinguishes marker/seed/visible
+centroid/physical center/chain index; updates seven counts and warnings. Includes
+three existing curated illustrations, implementation links and reproduction
+commands that write only local output. Original geometry, masks and experiments
+remain unchanged. No new questions; older photo questions remain pending.
+
+The available sibling find_splines.py was read to verify the centerline recipe;
+the saved image_only_hsv metadata does not record which current predicate option
+produced it, so no exact historical threshold provenance is invented. Its code
+is separate from this repository; frozen curve data is tracked here.
+
+Initial documentation checks verified overview links, curve counts/closure,
+source/photo hashes, rounded centerline agreement, seven counts/null indices and
+inventory equality to HEAD. The supplementary illustration-hash check then
+looked for r064/report.json, which does not exist; discovered r064/manifest.json
+and corrected that check. No numerical analysis or test failure occurred.
+
+### R091 outcome and checks
+
+The three reused illustration hashes verify against r064/manifest.json and
+r078/r087 reports. All 24 overview links and new plan/handoff links resolve.
+Saved spline counts/closure, source/photo hashes and rounded centerline copy
+agree. All seven active inventories retain 313/318/304/342/328/310/327 observations,
+null indices and their recorded hashes; their bytes equal pre-step HEAD. Only
+METHODS_AND_PLAN.md, PLAN.md, SESSION_HANDOFF.md and this log changed. Scoped
+whitespace check passes. No numerical tests, rendering, segmentation reruns or
+new measurements were needed for documentation; prior experiment checks are
+described as historical evidence, not rerun results.
+
+Inspected sibling find_splines.py SHA256:
+`a4f0795b01ff9871c9f67f4f7f39dc49cd75314784348b12625b49e8610f3ead`.
+The frozen curve source matches centerline.json's recorded source hash and the
+available sibling spline file. The separate repository was read only.
+
+Next remains the deferred A/B independent-endpoint experiment, with H/K controls,
+provisional moved-point identity and an illustrated assessment stopping before
+masks/counts/indices or source-pattern lookup. Recommend gpt-6-astra / High,
+fresh `/new` for the experiment; stay here for document feedback. No questions
+added or prior answers reopened. Routine ignored outputs and .venv stay outside
+the four-file documentation commit; no unrelated work was present.

@@ -11,7 +11,26 @@ and POV-Ray, fit bead colors and POV-Ray materials, and identify helicity
 and a repeating sequence of roughly 200–400 beads. Appearance fitting and
 sequence identification are separate claims. Instructions are in `REQUEST_LOG.md`.
 
-## Current step — R089 maker answers applied
+## Current step — R091 methods explanation
+
+[METHODS_AND_PLAN.md](METHODS_AND_PLAN.md) now explains current background masks,
+photo-2 boundary/centerline construction, automatic brightness markers, manual
+review, provisional watershed regions, area selection and recent S/V paths.
+It replaces stale review milestones with all seven current inventories and
+distinguishes markers, seeds, visible centroids and physical centers. Existing
+illustrations and implementation/evidence links support the explanation.
+
+R090's one-word continuation reached read-only preflight, then the user requested
+this documentation instead. No endpoint experiment was run. Documentation only;
+all inventories and numerical evidence remain unchanged. No new questions.
+
+Next bounded task remains independent endpoint perturbations around confirmed
+A/B, retaining H/K as cautionary examples and moved-point labels as provisional.
+Stop after explained placement-sensitivity evidence, before mask/count/index
+changes or source-pattern lookup. Recommend **gpt-6-astra / High, fresh `/new`**
+for that experiment; stay here for feedback on the explanation.
+
+## Previous step — R089 maker answers applied
 
 [Saved answers](photo2/BEADS6_SV_QUESTIONS.md) close the R087/R088 round. The maker
 confirms original A/B endpoints lie on different beads. Specular bright spots

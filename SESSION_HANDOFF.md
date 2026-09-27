@@ -36,6 +36,42 @@ lightening; the reply reversed those value words, not the visual observation.
 Older photo-shadow questions remain pending in photo2/QUESTIONS_FOR_MAKER.md.
 Use image-specific IDs; do not transfer beads1's 211 exclusion to another image.
 
+## R091 — Explain the methods so far (2026-09-27)
+
+User redirects the pending continuation to a Markdown explanation, then explicitly
+requests add/commit/push. Updated [METHODS_AND_PLAN.md](METHODS_AND_PLAN.md) with
+the generated-JPEG background mask and palette refinements, the separate photo-2
+HSV/curve workflow, nearest-boundary midpoint centerline construction, brightness
+peak markers, manual JPEG corrections, watershed masks and sliver selection.
+Includes existing illustrations, current seven-image counts/warnings, R089 path
+answers, limitations and source/reproduction links. Corrected stale milestones.
+
+R090 continuation completed read-only preflight/inspection only before the user
+interrupted it; no independent endpoint perturbations or numerical edits ran.
+All saved answers remain applied. Both generated-image questions are closed;
+older photo-shadow questions remain pending. No new questions or images needed.
+All seven inventory counts, masks, unknown indices and warnings above persist.
+
+Checks: 24 overview links and new plan/handoff links resolve; saved curve counts,
+closure, source/photo hashes and rounded centerline agreement verify; all seven
+inventory hashes/counts/null indices match their reports and pre-step HEAD.
+Three reused illustration hashes verify. Whitespace passes. One initial hash
+check used nonexistent r064/report.json, corrected to manifest.json. No numerical
+tests, renders, segmentation runs or new path measurements for this documentation
+change. Only four documentation files are scoped for delivery.
+
+Preflight: daisy, clean photo-2-reconstruction at a8851eb, origin 0/0 after fetch,
+no stashes; Python 3.12.14. Initial R090 fetch required escalation because
+FETCH_HEAD is sandbox read-only; R091 fetch succeeds with escalation. No new
+session/status/usage supplied, no ownership transfer or delegation.
+
+Next bounded task: independently perturb original A/B endpoints, keep H as the
+highlight example and K as invalid interior placement, show raw context/routes/
+sampled colors and lessons, and retain moved-point identities as provisional.
+Stop before masks/counts/indices or source-pattern lookup. Recommend
+**gpt-6-astra / High, fresh `/new`** for the experiment; stay here for document
+feedback. Delivery checks are recorded in the request log.
+
 ## R089 — Maker answers applied (2026-09-27)
 
 User supplies Q1–Q4 answers and says continue. Completed the R088 handoff's

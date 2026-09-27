@@ -1,242 +1,285 @@
-# Bead reconstruction: plan, methods, and current capability
+# How the reconstruction methods work so far
 
-Updated 2026-09-24. This explains what is available now and what still needs
-work. The immediate inputs are **beads1.jpg–beads7.jpg**, the generated images.
-R062–R065 temporarily prioritize the requested photo-2 shadow/width diagnostic;
-its [results](photo2/WIDTH_CORRECTION.md),
-[R066 boundary review](photo2/TRANSECT_REVIEW.md),
-[R067 rejected image-edge candidate](photo2/IMAGE_EDGES.md) and
-[illustrated questions](photo2/QUESTIONS_FOR_MAKER.md) are now available.
-Pattern identification must use the images without
-consulting the pattern definitions in the POV-Ray file.
+Updated 2026-09-27 for R091. **We can isolate an approximate necklace region and
+produce reviewed candidate bead maps. We have a saved centerline for photo 2.
+We do not yet have a verified complete bead inventory or recovered full pattern.**
 
-The main problem is currently **identifying every visible bead reliably**.
-We have approximate bracelet/background separation and many bead candidates.
-R068 adds a [reviewed beads1 map](photo2/BEADS1_INVENTORY.md) with provisional
-color-constrained masks. R069 applies the maker's instruction to ignore slivers
-and 211: [313 active body observations](photo2/INVENTORY_SELECTION.md) remain,
-excluding 37 known fragments and ten additional regions below half the local
-median area. Historical records are retained; sliver ownership is outside scope.
-R070 adds a [beads2 map](photo2/BEADS2_INVENTORY.md) with 318 active observations,
-using support for orange, yellow, violet and pale lavender. Eleven relevant tests
-and repeatability checks pass; same-color boundaries remain provisional. R071 adds a [beads3 neutral-body map](photo2/BEADS3_INVENTORY.md): 304 selected
-observations, with two large black-region warnings illustrated in R072.
-Its mask includes uncertain shadow strips; its count and boundaries remain
-provisional. R073/R074 prioritize [local geometry and HSV diagnostics](photo2/BLACK_REGION_METHODS.md)
-for those two regions. Neighborhood geometry is primary: predict visible
-neighbors and calibrate projected outlines before trusting missing positions or
-indices. R075 calibrated local marker-to-mask offsets and ellipse proxies against
-clearer same-color masks near 122/405. Leave-one-out mask-centroid medians are
-2.38/3.14 px (p90 4.52/5.54 px). Warning-mask contour mismatches remain 5.94/4.00
-px symmetric mean, with tails above 8 px. This tests transfer among provisional
-masks only; both warnings remain unresolved and beads3 stays at 304. Beads4 review
-resumes next. HSV supplies a faint second highlight at 405 but no accepted split.
-We do not yet have a verified complete bead inventory or a recovered full
-pattern for any of the seven generated images.
+There are two separate workflows. The current work on **beads1.jpg–beads7.jpg**
+uses generated JPEGs, without consulting their source patterns. The earlier
+**beads-photo-2.jpg** work has saved boundary curves and a centerline. The current
+generated-image detector does not use the photograph's curves.
 
-## Direct answers
-
-| Question | Generated images: beads1.jpg–beads7.jpg | Existing work for beads-photo-2.jpg |
+| Product | What it means | What we have |
 | --- | --- | --- |
-| Can we separate the background from the necklace? | Approximately, yes. A binary foreground mask isolates the broad bracelet region and its central opening. Shadows, pale beads and tiny edge fragments are not reliably separated. | An HSV color-based outline workflow and saved boundary curves exist. Their pixel-level accuracy is not established. |
-| Do we have an outer-edge spline? | No saved outer spline in the current seven-image pipeline. It uses a pixel mask. | Yes: 907 sampled points, with 152 control points in the saved file. |
-| Do we have an inner-edge spline? | No saved inner spline in the current seven-image pipeline. | Yes: 847 sampled points, with 142 control points. |
-| Do we have a centerline? | No saved centerline spline in the current seven-image pipeline. Neighbor inference estimates an elliptical orientation from the candidate positions. | Yes: 303 saved points; a copy is tracked in this repository. |
-| Can we identify individual beads? | Partially. Brightness peaks and watershed segmentation produce candidate regions, with missed beads, fragments and incorrect boundaries still present. | Earlier work has provisional labels and local fits, not a verified complete inventory. |
-| Can we identify the complete repeating pattern? | Not yet, for any of the seven images. | Not yet. |
+| Foreground mask | Pixels that may belong to the necklace | Approximate masks; shadow and pale edges remain difficult |
+| Inner/outer boundaries | The two sides of the whole rope | Saved photo-2 curves; pixel envelopes for the seven JPEGs |
+| Centerline | A path along the middle of the whole rope | Saved photo-2 curve; no equivalent saved spline in the current seven-image inventory pipeline |
+| Bead observations | Markers, colors and provisional visible regions | Reviewed maps for all seven JPEGs |
+| Physical bead centers / chain indices | Actual 3D positions / order along the thread | Not recovered by these inventory maps |
 
-A **mask** labels pixels as foreground or background. A **boundary curve** follows
-the bracelet's outline. A **centerline** runs along the middle of the rope.
-An **individual-bead map** separates neighboring beads within that rope. These
-are different products; having the first three does not supply the fourth.
+## 1. How I separate the background from the necklace
 
-## Background separation: the method we actually use
+### Generated images: first obtain a broad search region
 
-For the generated images, [blind_generated.py](photo2/blind_generated.py) starts
-with their light background:
+The original detector, [blind_generated.py](photo2/blind_generated.py), uses
+the light background of the 800×600 JPEGs:
 
-1. Select pixels where at least one RGB channel is below 190 on the 0–255 scale.
-   This selects strongly colored or dark pixels and rejects much of the white floor.
-2. Apply morphological closing with a four-pixel radius. This joins small gaps
-   to make a more continuous bracelet region.
-3. Keep the largest connected foreground component.
-4. Fill enclosed background holes smaller than 300 pixels, while preserving
-   the large central opening and background connected to the image border.
+1. Keep a pixel if **at least one RGB channel is below 190**, on a 0–255 scale.
+   A bright red pixel can qualify even though its red channel is bright, because
+   its green and blue channels are dark. Nearly white floor pixels usually fail.
+2. Close small gaps using a disk of radius **4 pixels**. This expands and then
+   contracts the selected region, connecting nearby pieces.
+3. Keep the largest connected piece as the approximate necklace region.
+4. Fill enclosed holes smaller than **300 pixels**. Preserve the large central
+   opening and any background component connected to the image border.
 
-The result is a useful **approximate search region**. It is not an exact
-silhouette: dark floor shadows can be included, pale bead edges can be missed,
-and small disconnected visible beads can be discarded. Closing can also bridge
-real gaps between beads. We need to check those errors before treating this as
-complete background removal. These thresholds are for the 800×600 generated
-JPEGs, not a universal rule for photographs.
+This is a search mask, not precise background removal. It can include dark cast
+shadow, omit pale bead surfaces, discard disconnected portions, or bridge real
+gaps. The thresholds were chosen for these images and are not universal.
 
-For photo 2, the existing `fft-image-explorer` workflow uses color selection in
-HSV space—hue, saturation and brightness—to distinguish the magenta paper and
-bracelet. This is a separate method; the light-background rule above is not
-suitable for that photograph. The current extractor has a paper-color box and
-an alternative union of red/yellow/black selections. The saved spline file
-records `image_only_hsv`, but does not record which of those current predicate
-options was used. Its exact historical threshold choice should not be invented.
+### Reviewed inventories: adapt the mask to each palette
 
-## The splines we already have
+The later maps refine this with **color support**: a mask of pixels eligible for
+each visible color. These are image-specific rules chosen from JPEG inspection,
+not a trained segmentation model or palette read from the renderer.
 
-All three photo-2 curves are in the existing sibling-repository file
-[beads-photo-2_splines.json](../fft-image-explorer/beads-photo-2_splines.json).
-They are closed sampled curves in original image coordinates, with x increasing
-rightward and y downward. The file records Catmull–Rom boundary interpolation.
-Counts in the table include the repeated closing point.
+- **beads1:** use strong red/green/blue channel dominance. The largest channel
+  must exceed the second-largest by more than 25 and be at least 35. This rejects
+  much neutral floor/shadow. Fill enclosed highlight holes up to 64 pixels and
+  borrow the nearest colored support's class for those holes.
+- **beads2:** use its own orange/yellow/violet/lavender hue and color-strength
+  rules, including a separate pale-lavender class.
+- **beads3–7:** white, gray or black bodies need a broader search envelope.
+  Close the original mask with a **10-pixel** disk and fill enclosed holes up to
+  **1,500 pixels**, retaining the main opening. Then apply each image's color
+  and brightness rules inside that envelope.
 
-The available [find_splines.py](../fft-image-explorer/find_splines.py) traces
-foreground/background transitions to obtain the outer and inner boundary
-controls, then interpolates the boundary curves. Its centerline builder
-resamples the boundaries, finds the nearest point on the outer polyline for
-each inner sample, and takes the midpoint. This is an approximate middle path;
-it need not be the exact physical axis, particularly around tight bends.
+For example, [beads6](photo2/BEADS6_INVENTORY.md) accepts red when
+`R − max(G,B) ≥ 25`, and blue-gray when `min(G,B) − R ≥ 12`, with saturation
+at least 0.13. Other eligible pixels with maximum RGB at least 95 supply white
+support. Small enclosed glints are filled within the chromatic classes.
 
-The photo-2 centerline is copied into
-[photo2/centerline.json](photo2/centerline.json). R062–R065 also retain the exact
-original three-curve source in
-[photo2/boundary-splines-source.json](photo2/boundary-splines-source.json). [reconstruct.py](photo2/reconstruct.py) fits
-a smoothed periodic cubic spline to the copied centerline and evaluates it at
-uniform distances along the curve. That supports image sampling and the
-provisional photo-2 forward model.
+![beads6 search envelope, still including uncertain edge/shadow pixels](photo2/review/r078/envelope.png)
 
-[View photo 2 with its saved centerline in cyan](photo2/output/centerline-view-r061/photo2-centerline.png).
-This overlay joins the saved sample points without refitting them. Recreate it
-with `.venv/bin/python photo2/show_centerline.py --output photo2/output/centerline-view-r061`.
-The script also saves a smaller preview and source/artifact hashes; images stay
-local and out of Git.
+The difficult cases remain white beads against white floor, black beads against
+shadow, and highlights connected to neighboring pale regions. Beads7 needed two
+explicitly recorded local black-glint repairs; those are manual corrections,
+not a general solution. A poor mask can make a substantial bead look artificially
+small, so I review the foreground and colors before applying the size filter.
+See [the beads7 repair examples](photo2/BEADS7_INVENTORY.md).
 
-I verified on 2026-09-24 that:
+### Photo 2: select the colored paper in HSV
 
-- The source spline file matches the hash recorded in the copied centerline.
-- Its photograph matches this repository's photo 2 byte for byte.
-- All three saved curves contain finite coordinates and close on themselves.
-- The copied centerline differs by at most 0.0000500000001 pixel per coordinate,
-  consistent with its recorded rounding.
+Photo 2 lies on magenta paper. Its existing extraction workflow uses **HSV**:
+hue describes color, saturation describes color strength, and value is the
+largest RGB channel, so darker pixels have lower value. A selected paper-color
+range distinguishes background from possible necklace pixels. The current
+extractor also has an alternative that selects the union of red, yellow and
+black foreground colors.
 
-These checks establish that the files exist and correspond to the same image.
-They do not establish an exact boundary fit. The saved file reports no
-inner/outer intersection; I did not independently rerun that geometric test.
+The saved file says `image_only_hsv`, but does not specify which of the current
+predicate options produced it. I cannot reconstruct its exact historical
+threshold choice from that metadata. The implementation is in the sibling
+repository's [find_splines.py](../fft-image-explorer/find_splines.py); the frozen
+[curve source](photo2/boundary-splines-source.json) is tracked here. Shadows can
+shift paper outside its selected color range, which is why the resulting outline
+still needs review.
 
-**The current generated-image bead detector does not use these photo splines.**
-They belong to a different image. Producing and reviewing comparable curves for
-the generated images is still a task, not a capability already demonstrated on
-all seven.
+## 2. How I find the centerline
 
-## Width-based shadow correction
+For photo 2, the method first traces the outside of the necklace and the inside
+edge around the opening. The saved display curves use Catmull–Rom interpolation:
+a smooth curve passes through the boundary control points.
 
-The new diagnostic measures normal cross sections at 600 positions, selects
-clear edges using exterior paper color and brightness, and fits a robust width
-model. It holds the clear edge fixed and estimates the opposite edge where
-shadows inflate apparent width. Clear sections suggest about 95.8 pixels; the
-left bend appears about 16.7 pixels too wide and its candidate center moves
-about 8.8 pixels left. The reference variability gives a 9.6–22.9-pixel uncertain
-boundary strip there. Fourteen regions are flagged for review.
+The available centerline builder works from the **boundary control polylines**:
 
-The expected perspective gradient is not yet established by these measurements.
-The [method and uncertainty note](photo2/WIDTH_CORRECTION.md) separates boundary
-uncertainty from the much wider cast shadow. Candidate curves remain separate
-from the original geometry until the illustrated boundary review. This is not
-a bead inventory or a recovered pattern.
+1. Resample the inner and outer closed polylines at evenly spaced distances.
+2. For each inner sample, find the closest point on the outer polyline.
+3. Take the midpoint of that pair as a centerline sample.
+4. Join the samples into a closed path. Half the pair's distance is an
+   accompanying estimate of the rope's projected half-width.
 
-## Individual beads: the method used and its limitations
+For an inner point `I` and its nearest outer point `O`, the center sample is
+`C = (I + O) / 2`. This is an approximate geometric middle. At tight bends,
+nearest points need not be physically corresponding cross-section edges; a
+shadow-biased outline also shifts the midpoint. It is not a skeleton extracted
+from individual bead centers.
 
-R068 now supplements the baseline below with an assistant-reviewed beads1 map.
-Its RGB-specific color support removes neutral shadow from candidate regions,
-preserves small highlights, and constrains watershed regions to one color.
-Unresolved fragments are separate records rather than extra counted beads; see
-[the inventory method](photo2/BEADS1_INVENTORY.md). Other images retain the
-original candidate maps until reviewed.
+The saved photo-2 geometry contains **907 outer-boundary samples, 847 inner
+samples and 303 centerline points**, including repeated closing points. The
+outer/inner control arrays contain 152/142 points. The centerline copy is
+[centerline.json](photo2/centerline.json), with source and photograph hashes.
 
-Inside each generated image's foreground mask, the current detector does this:
+For the forward model, [reconstruct.py](photo2/reconstruct.py) fits a smooth
+periodic cubic spline to those centerline points. It then evaluates positions
+at requested distances along the curve, also obtaining tangent and normal
+directions. Equal distance along this curve is different from equal increments
+of a spline's internal parameter.
 
-1. Smooth the brightness channel and find local brightness peaks. Peaks must
-   be at least five pixels apart and brighter than their broader neighborhood.
-   These often correspond to bead highlights.
-2. Use each peak as a seed for **watershed segmentation**. Imagine regions
-   growing from the seeds until they meet: brightness valleys and image edges
-   help determine where they stop. A compactness term limits excessive spreading.
-3. Assign each resulting region an anonymous observation ID, mask, bounding box,
-   descriptive centroid and tentative color. Color sampling avoids many white
-   highlights and uses palette boxes chosen by viewing the JPEGs.
-4. Flag small regions and peaks close to the estimated silhouette for extra
-   review. Uncertain colors remain unknown where the rule cannot assign one.
+![Photo-2 left bend: raw image, saved curves and proposed width correction](photo2/review/r064/left-comparison.png)
 
-A highlight is not necessarily a bead's center, and one peak does not guarantee
-one bead. A bead may have no detectable highlight or several local maxima.
-The watershed may split one bead, merge neighbors, or put their shared boundary
-in the wrong place. A region centroid is also not generally the physical center
-of a partly hidden bead. Color labels and unflagged regions still need review.
+The picture shows the shadow problem and a later **proposed** correction. The
+[width diagnostic](photo2/WIDTH_CORRECTION.md) measures cross sections, estimates
+width from clearer sections, and moves an uncertain edge while holding the
+clearer edge fixed. These candidate curves have not replaced the original
+geometry. A later [direct image-edge attempt](photo2/IMAGE_EDGES.md) performed
+worse against the saved visual review and was rejected. That visual review was
+an assistant assessment, not independently measured ground truth.
 
-The first watershed version used image gradients alone; it often isolated the
-highlight instead of the bead. The current version combines negative smoothed
-brightness with the color gradient and compactness. This improves the visible
-maps but has not solved the inventory problem.
+For the seven generated-image inventories, I have **not** extracted and adopted
+equivalent centerline splines. An older neighbor experiment estimated rough
+tangent directions from an ellipse fitted to the spread of candidate positions.
+That reference ellipse is not a recovered centerline, and it does not determine
+the current bead masks.
 
-| Image | Candidate regions | Candidates flagged for extra review |
-| --- | ---: | ---: |
-| beads1.jpg | 352 | 28 |
-| beads2.jpg | 392 | 60 |
-| beads3.jpg | 435 | 217 |
-| beads4.jpg | 410 | 68 |
-| beads5.jpg | 403 | 83 |
-| beads6.jpg | 354 | 70 |
-| beads7.jpg | 417 | 90 |
+## 3. How I determine bead locations
 
-These are **not verified bead counts**. The counts change when peak spacing or
-contrast thresholds change. The [observation gallery](photo2/output/blind-generated-r059-final/index.html)
-shows all seven images with hoverable candidate records and optional ID labels.
-It is a local generated artifact; [BLIND_GENERATED.md](photo2/BLIND_GENERATED.md)
-contains commands to recreate it, detailed results and checks.
+### Start with brightness peaks, then review the image
 
-## Overall plan and the evidence needed at each stage
+The original automatic detector smooths HSV value with a Gaussian of sigma
+**1.25 pixels** and finds local peaks at least **5 pixels** apart. It requires
+value above **0.22** on a 0–1 scale and contrast above **0.025** compared with
+a broader sigma-4 smoothed neighborhood. Many peaks are specular highlights.
 
-1. **Establish the image region and geometry.** For the generated images, review
-   background masks and distinguish bracelet, central opening and cast shadow.
-   Extract outer/inner contours and a centerline where useful, keeping the actual
-   pixel boundaries alongside smooth curves. Smooth curves provide direction and
-   width; they must not erase visible edge beads or dictate bead locations.
-2. **Complete the visible-bead inventory.** Start with beads1.jpg, inspect the
-   whole bracelet, correct missed beads, split merged regions and remove duplicate
-   fragments. Record every visible bead's region and color, with explicit unknowns
-   for unreadable slivers. Keep direct observations separate from model predictions.
-   Extend to the other six images after the requested photo-2 boundary review.
-3. **Assign relative bead indices.** After the observations are reliable, compare
-   ways of tracing the supplied neighbor directions ±1, ±6 and ±7. Select the
-   method on those observations. Retain both helicities until evidence resolves
-   them; check reciprocal edges, loops and duplicate indices. Disconnected groups
-   keep unknown offsets. The existing nearest-neighbor sector method is a failed
-   baseline on these seven images, not the accepted final algorithm.
-4. **Infer the repeat and the remaining information.** Test indexed color
-   observations for repeating sequences while keeping missing positions in place.
-   Repeated occurrences may supply evidence for a color hidden at another
-   occurrence. Unsupported positions remain unknown; inferred colors must be
-   labeled as inferred. Check candidate repeats against observations not used to
-   select them, retain alternatives, and do not look up the POV-Ray patterns.
-   Successful toy sequence tests alone do not establish image recovery.
-5. **Transfer the demonstrated method to photographs.** Only after success on
-   the generated images, reuse the existing photo-2 curves and adapt background,
-   boundary and color handling to the photograph. Do not assume synthetic-image
-   accuracy carries over automatically.
-6. **Fit and validate the appearance.** Use Python for geometry/analysis and
-   POV-Ray for camera, lighting and bead appearance. Compare reconstructed images
-   and separate crops with the input. A similar-looking render is not by itself
-   proof that bead order or the repeat is correct.
+Each peak becomes a **marker**, a candidate starting location for one region.
+It is not assumed to be the bead's physical center. A bead can have no strong
+peak, several peaks, or a peak displaced toward its edge.
 
-The current index attempt already illustrates why the order matters: all four
-variants on every generated image produce contradictory or duplicate indices.
-Trying to extract a full pattern from those assignments would turn detection
-errors into a fabricated sequence. Small compatible local fragments are retained,
-but none establishes the whole pattern.
+I then review the whole JPEG and enlarged numbered crops. Saved annotations
+remove unsupported and duplicate peaks, add substantial visible bodies missed
+by peak finding, and correct marker positions and color labels. This makes the
+current inventories **partly automatic and partly manually reviewed**. The
+scripts replay those explicit corrections; they do not discover them anew.
 
-R066 checked twelve photo-2 transects using frozen assistant visual intervals;
-23/24 corrected edges are within two pixels of those intervals, compared with
-18/24 original edges. These are subjective checks, not ground-truth accuracy.
-R067 completed the direct image-edge comparison: its local paper-transition
-method regressed, so it is rejected and the width-only proposal remains provisional.
-R068 completed beads1's first reviewed observation map, retaining 37 unresolved
-fragments rather than inventing their bead identities. The next bounded work item
-is the same image-only review for **beads2.jpg**, stopping after its body/color/
-fragment map and checks. Review beads3–7 afterward before repeat inference.
-No additional construction-pattern information is needed.
+Beads6 provides a concrete example: 354 initial candidates, minus 53 reviewed
+removals, plus 17 additions, minus eight small-region exclusions, leaves **310
+active observations**. This arithmetic records decisions; it is not a count
+verified against known bead identities.
+
+### Grow a provisional visible region around each marker
+
+The segmentation method is **watershed**. Think of flooding a landscape from
+several marked starting points: each grows a region until it meets another
+region or an eligibility boundary.
+
+The original landscape combines negative smoothed brightness with a smaller
+color-gradient term; a compactness penalty discourages very long regions. That
+was an improvement over a gradient-only trial which often isolated glints.
+The reviewed maps instead segment each eligible support class separately, usually
+using negative sigma-1 smoothed brightness with compactness. Black classes in
+beads3 and beads7 use a flat landscape, relying on support and seed geometry
+because their glints are poor boundary guides. This can still divide a region
+arbitrarily when the pixels do not reveal a seam.
+
+Some color names share a support class: gray/white in beads5 and silver/white in
+beads7. A color label therefore does not always supply a separate pixel boundary.
+
+A marker can be moved slightly to nearby support of its assigned color, usually
+by at most six pixels. Assigned pixels are limited to within 28 pixels of a
+same-class seed. Later inventories retain only the component connected to each
+seed and leave detached islands unassigned. These safeguards prevent some
+implausible assignments but do not establish true bead outlines.
+
+The location terms matter:
+
+| Stored location | Meaning |
+| --- | --- |
+| Marker | Original brightness peak or manually reviewed image point |
+| Segmentation seed | Marker adjusted to eligible color/interior support |
+| Region centroid | Average position of assigned visible pixels, where recorded |
+| Physical bead center | A 3D geometric quantity that these points do not directly measure |
+| Observation ID | A stable reference within one image, not an index along the thread |
+
+### Ignore slivers and flag suspicious areas
+
+Following the maker's instruction, known fragments are ignored. The numerical
+[area rule](photo2/INVENTORY_SELECTION.md) compares each reviewed region with
+up to eight nearby reviewed bodies within 45 pixels, requiring at least four
+references. The reference pool is frozen before filtering.
+
+Regions below **half** the neighbors' median area are excluded; regions above
+**twice** it are warned as possibly merged. Those thresholds are assistant-chosen
+heuristics, not physical bead-identity tests. Excluded pixels remain unassigned;
+neighbors do not absorb them. Beads1 marker 211 remains explicitly excluded.
+Small masks must first be checked for segmentation mistakes.
+
+The [reference-sensitivity audit](photo2/AREA_WARNING_STABILITY.md) found 14
+active observations whose area status changes when one reference is omitted,
+plus two persistently large beads3 regions. Passing this check does not establish
+a complete or correct bead map.
+
+## 4. What the recent paths add
+
+The latest work examines difficult **same-color neighbors**. I choose a path
+between proposed visible interiors, sample its RGB colors, and plot saturation
+and value along it. Darkening toward an edge followed by lightening over the
+next face can help explain a seam. A highlight can instead produce a large color
+change inside one bead; ordinary shading can also make a brightness valley.
+
+![A: raw context, endpoint positions and the sampling route](photo2/review/r087/explain-A.png)
+
+The illustration preserves the original provisional wording. The maker has
+since [confirmed that A and B connect different beads](photo2/BEADS6_SV_QUESTIONS.md).
+The [travel-order pictures](photo2/review/r087/review.html) show sampled colors
+and stops linked to the image. In the rejected K example, the maker identifies
+**both endpoints as boundary points**, so neither is a valid interior reference.
+Specular spots are not boundary markers. Those answers establish relationships
+at the original points, not exact outlines or labels for moved endpoints.
+
+These paths are measurements across a possible boundary, not lines tracing it.
+They have not changed any inventory mask. Whole-path translations and smoothing
+were tested in R087; the proposed independent endpoint experiment has **not yet
+been run**.
+
+Shape interpretation now follows the [pose and occlusion guide](photo2/SHAPE_REASONING.md):
+we see only the part of a 3D bead exposed by its neighbors, which can be broad,
+narrow, notched or hidden. A universal oval is inadequate. The necklace's major
+centerline stays planar on the paper; section direction within that plane and
+the global camera view affect the expected shapes. Helicity describes progression
+around the rope's small cross-section and is a separate issue. The synthetic
+shape atlas informs this reasoning; it is not a fitted shape detector for these
+JPEG inventories.
+
+## 5. What is established, and what comes next
+
+| Image | Active observations | Principal remaining issues / evidence |
+| --- | ---: | --- |
+| beads1 | 313 | [Active map](photo2/INVENTORY_SELECTION.md); completeness and same-color borders provisional |
+| beads2 | 318 | [Active map](photo2/BEADS2_INVENTORY.md); palette and same-color borders provisional |
+| beads3 | 304 | [Active map](photo2/BEADS3_INVENTORY.md); large 122/405 unresolved, five reference-sensitive regions |
+| beads4 | 342 | [Active map](photo2/BEADS4_INVENTORY.md); white/shadow borders, reference-sensitive 272 |
+| beads5 | 328 | [Active map](photo2/BEADS5_INVENTORY.md); 188 unresolved, 188/349/364 reference-sensitive |
+| beads6 | 310 | [Active map](photo2/BEADS6_INVENTORY.md); full extents of 144/189 unresolved despite confirmed A/B point relations |
+| beads7 | 327 | [Active map](photo2/BEADS7_INVENTORY.md); local glint repairs, pale labels/borders, reference-sensitive 128/200/236 |
+
+All seven maps retain unknown chain indices and unverified completeness.
+The old generated-image indexing attempt produced conflicts in every tested
+variant; it has not recovered bead order or a complete pattern. A render colored
+by sampling the photograph can resemble it without solving either problem.
+
+The next bounded experiment remains independent endpoint perturbations around
+A/B, with H as a highlight example and K as invalid interior placement. It will
+assess placement sensitivity, then stop before mask/count/index changes. Beyond
+that, reliable visible observations and geometry must precede chain-order and
+repeat inference. Known synthetic tests are needed before making inverse claims;
+the source patterns must stay out of image-only inventory decisions.
+
+## Evidence and reproduction
+
+The linked experiment notes preserve input/source hashes, parameters, saved
+annotations, commands and prior checks. Curated illustrations above are existing
+tracked artifacts; no new segmentation or numerical experiment was run for this
+explanation. The current overview was checked against the implementation, saved
+curve data, seven inventory records and R089 answers on 2026-09-27.
+
+To recreate a useful centerline overlay and the beads6 map without overwriting
+the committed review evidence, use the local Python 3.12 environment:
+
+```sh
+.venv/bin/python photo2/show_centerline.py --output photo2/output/centerline-explanation
+.venv/bin/python photo2/beads6_inventory.py --output photo2/output/beads6-explanation --review-bundle photo2/output/beads6-explanation-review
+```
+
+These commands replay existing methods. Their outputs are local generated
+artifacts. The sibling `find_splines.py` link requires that separate repository;
+the frozen curves and all other linked evidence are in this repository.
