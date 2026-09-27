@@ -7,7 +7,56 @@
 | beads-photo-2.jpg | None on this branch | [Six sample contexts](photo2/review/r092/sample-context.png), [raw/FFT comparisons](photo2/review/r092/raw-and-fft.png), [scale plot](photo2/review/r092/scale-comparison.png); no confirmed silhouette, centerline or bead indices |
 | Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
 | Photo-2 R100 hue figures | None; same T1/T2 routes | [T1 hue](photo2/review/r100/T1-hue.png), [T2 hue](photo2/review/r100/T2-hue.png); local red-to-magenta change, not a recovered edge; overlap-map provenance confirmed by maker |
+| Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
+
+## R104–R105 — Local sensitivity completed; bridge ambiguity from neighbors next
+
+[Assessment and three next-method options](photo2/PARALLEL_PATHS.md),
+[script/config/report](photo2/review/r104/report.json),
+[saved guidance and optional visual questions](photo2/TRANSITION_QUESTIONS.md).
+
+R104 “continue” completed nine routes at −8/0/+8 px offsets, sigma24/12/6,
+two texture cues, two threshold multipliers and five reference families.
+1,737 hue samples; 1,323 texture records; 18 new paper/scale measurements;
+540 crossings. Local hue trends persist, but maximum hue changes can indicate
+internal bead colors/highlights. Fixed-setting texture crossings are comparatively
+stable to small route shifts, yet depend strongly on reference choice.
+
+Adding clear/shadow controls left the original maxima unchanged; explicitly
+extended to replacement-only references. New-clear/shadow-only references move
+matched crossings 0–24/4–32 px toward Q. Two T3 original-reference small-window
+spatial failures remain unresolved; changed thresholds are not proof of correction.
+Paper centers/shifted endpoints are provisional diagnostic fixtures. No adopted
+contour, edge anchors, generality claim or inferred pixel labels.
+
+R105: maker says to move farther in either direction around the necklace until
+the boundary is reliable, then use smoothness on the larger scale, allowing the
+small curves of individual beads. This supersedes the initially proposed next
+whole-image texture search. Preserve the distinction between supported boundary
+evidence and inferred smooth spans. Old exact-edge/T3/radius questions stay
+optional and unanswered; the strategy is saved and does not require repetition.
+
+**Next bounded task:** expand one ambiguous neighborhood along the necklace,
+identify candidate reliable boundary neighborhoods on either side, then compare
+a short smooth bridge if its anchors are supported. Three options documented:
+local cubic interpolation, robust smoothing spline, coupled inner/outer envelopes.
+Begin with the simplest local bridge; show raw evidence, anchor/tangent choices,
+inferred span and sensitivity separately. Leave unsupported spans unresolved.
+Stop for illustrated review before adopting a whole-necklace contour, centerline,
+scene changes or bead assignments. Fixed crops are validation fixtures under
+R103, not final runtime location priors. Recommend **gpt-6-astra / High; fresh
+`/new` for the next implementation**, or stay here to discuss the current images.
+
+Checks: four hue controls; independent 1,737 hue conversions, 1,593 circular
+differences, 540 crossing calculations/all reference maxima; 441 nominal texture
+measurements match R099. Nine repeat artifacts byte-identical, all recorded hashes
+verified. Five images inspected; repaired overlapping T3 labels and reran.
+Curated five images/report, routine CSVs/repeats ignored. No earlier experiment,
+photo or scene changes; no renders or old pipeline tests needed. Preflight daisy,
+clean72b8573, no stashes, origin0/0 after fetch, Python3.12.14. No supplied status,
+usage, new dependencies, delegation or ownership transfer. Delivery checks follow
+the scoped commit; do not infer a future push from this pre-delivery entry.
 
 ## R100–R103 — Hue clues, confirmed map history and generality constraint
 

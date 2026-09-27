@@ -1,5 +1,19 @@
 # Two visual questions — no need to catch up on the older questions
 
+**R105 saved guidance:** where the local boundary is unreliable, move farther
+around the necklace in either direction to find reliable evidence, then bridge
+the ambiguous span using large-scale smoothness. Individual beads still make
+small curves. This supplies a strategy, not exact labels for the old questions;
+those remain optional and need not block the wider-context experiment.
+
+**R104 new evidence, same pending questions:** [parallel-route comparison](PARALLEL_PATHS.md)
+shows how the hue and texture cues change when the line moves eight pixels.
+No new question round or inferred answer. T1/T2 actual edges and T3's edge/P
+placement remain unresolved. This compact raw/route view may make them easier
+to judge; white stops at 40/64 pixels are sampling guides, not proposed edges.
+
+![T2/T3 raw views and parallel paths](review/r104/review-crops.png)
+
 R100–R102 update: the maker confirms shadows in T1/T2, red/paper HSV overlap
 based on earlier labeled work, and suggests local hue as an additional clue.
 The named overlap map has been found and maker-confirmed. [Hue plots and map

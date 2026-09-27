@@ -1,0 +1,18 @@
+{
+  "offsets_px": [-8, 0, 8],
+  "sigmas_px": [24, 12, 6],
+  "threshold_multipliers": [2, 3],
+  "hue_halfwidth_px": 8,
+  "hue_comparison_stops_px": [40, 64],
+  "reference_sets": ["original", "plus_clear", "plus_shadow", "new_clear_only", "shadow_only"],
+  "adaptive_note": "Initial additive reference comparison left maxima unchanged. Added replacement-only sets to expose dependence on old reference maxima; no settings chosen as best.",
+  "extra_paper": [
+    {"id": "C1", "center": [800, 850], "group": "clear", "reason": "Inside upper loop, separated from necklace"},
+    {"id": "C2", "center": [1500, 900], "group": "clear", "reason": "Inside upper loop, toward right"},
+    {"id": "C3", "center": [1500, 2400], "group": "clear", "reason": "Inside lower loop"},
+    {"id": "C4", "center": [400, 2700], "group": "clear", "reason": "Outside lower loop"},
+    {"id": "S1", "center": [2320, 1170], "group": "shadow", "reason": "R092 E: shadowed paper beside right section; window may mix nearby beads"},
+    {"id": "S2", "center": [1870, 1690], "group": "shadow", "reason": "R092 F: shadowed paper by inner bend; window may mix nearby beads"}
+  ],
+  "scope": "Diagnostic sensitivity, not an automatic image-location or color prior. All shifted endpoints and new reference labels are provisional."
+}

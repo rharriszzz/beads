@@ -18,7 +18,7 @@ the algorithm's inputs. These generalization tests have not yet run.
 
 | Aspect | Intended result | Status |
 | --- | --- | --- |
-| Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R099 texture comparison plus R100–R102 T1/T2 hue clues and confirmed overlapping HSV-map history; exact edges unresolved |
+| Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R104 hue trend survives ±8 px; hue maxima and reference-scaled texture crossings remain unreliable as edge rules |
 | Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | Deferred; research primary sources when this phase starts |
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
 | Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | Deferred; offer methods before fitting |
@@ -47,9 +47,21 @@ R100–R102 adds [hue measurements and confirmed HSV-map provenance](photo2/HUE_
 Overlap does not eliminate useful hue transitions; white-balanced presets must
 not be applied to the original JPEG without a new calibration.
 
-Next bounded task: incorporate [visual feedback](photo2/TRANSITION_QUESTIONS.md),
-then compare hue and texture on a few nearby parallel routes with paper controls.
-Preserve the T3 dark-bead failure and test whether reported crossing spreads
-remain stable. Stop for illustrated review before connecting any crossings into
-a full contour or fitting centerline/scene parameters. If answers are absent,
-proceed with controls and provisional labels; do not invent maker edge locations.
+R104 completes the [parallel-route/reference sensitivity comparison](photo2/PARALLEL_PATHS.md).
+Largest hue changes can mark internal bead colors/highlights; changing paper
+reference moves texture crossings by up to 32 pixels. No contour points selected.
+
+R105 supplies the next strategy: move farther along the necklace in either
+direction until boundary evidence is reliable; bridge ambiguous stretches with
+a smooth large-scale envelope, keeping bead-scale scallops separate.
+
+Next bounded task: expand one ambiguous neighborhood along the necklace, show
+candidate reliable boundary anchors on either side and compare a short smooth
+bridge with the raw image. Compare local cubic interpolation, a robust smoothing
+spline, and coupled inner/outer envelopes as implementation options. Start with
+the simplest local bridge if evidence supports its endpoints. Show anchor evidence
+separately from inferred spans and sensitivity to anchor choice; leave unsupported
+spans unresolved. Stop for review before whole-necklace contour adoption,
+centerline/scene fitting or bead assignments. Diagnostic crops remain validation
+fixtures, not runtime priors. The earlier proposed whole-image search is deferred
+to follow the maker's more specific guidance.

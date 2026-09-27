@@ -365,3 +365,70 @@ and four revision hashes verify against immutable Git blobs. 36 local links
 resolve, scripts compile and whitespace passes. Prior scene/photo/R092/R099
 inputs unchanged. Full CSV retained under ignored output, excluded from staging.
 Red=0 is a plotting convention only, not a final color-classification prior.
+
+## R104 — Parallel-path and paper-reference sensitivity (2026-09-27)
+
+User: “continue”
+
+Preflight daisy, clean photo-2-reconstruction-v2 at 72b8573, no stashes, upstream
+0/0 after fetch. Python 3.12.14. Read current handoff/latest log/plan, saved
+qualitative answers, hue/provenance experiment, R099 code and shape quick model.
+No new answers, status/usage, dependencies, delegation or machine transfer.
+Bounded task: compare local hue/texture on parallel paths and vary paper controls,
+preserving T3 failures and stopping before selecting contour points. Fixed image
+locations remain diagnostic fixtures under R103, not final runtime priors.
+
+### R104 outcome and checks
+
+Compared nine paths (T1/T2/T3 at sideways offsets −8/0/+8 pixels): 1,737 raw
+hue samples and 1,323 texture measurements, with 18 additional paper/scale
+measurements and 540 candidate crossings. Hue change over 40→64 survives these
+small route shifts, but the strongest local hue difference often identifies
+internal colors/highlights. T3's +8 route moves the maximum from 56 to 16 pixels
+and reverses its sign. No largest-hue-response boundary rule adopted.
+
+At fixed sigma12/2× original reference, T1/T2 texture crossings change little
+with route; FFT/spatial still disagree. Original small sigma6/3× spatial T3
+failure persists at offset0 and also occurs at −8. Added clear/shadow controls
+never exceed the old reference maxima, so that first comparison is uninformative
+about sensitivity. Explicit adaptive extension: replace the references with new
+clear-only or shadow-only maxima. Matched valid crossings move 0–24 or 4–32 pixels
+toward paper. Two original failures are excluded from those shift comparisons,
+not declared corrected when replacement thresholds produce crossings.
+
+Four synthetic hue controls pass. Independently checked all 1,737 raw hues,
+1,593 circular differences, 540 crossings, every reference maximum and 441 nominal
+texture samples against R099. Nine artifacts byte-identical on repeat; source,
+config, helper, base and artifact hashes verified. Five figures inspected; fixed
+overlapping 40/64 labels in compact T3 view, then regenerated and repeated checks.
+No numerical failures. Curated five figures/report; full CSVs, initial additive
+result and repeats remain ignored. No photo/scene/earlier-analysis edits or renders.
+
+## R105 — Bridge ambiguous boundaries from reliable neighbors (2026-09-27)
+
+User: “So when you have no reliable boundary rule, go further in one way or the
+other around the bracelet, until you are able to determine the boundary reliably,
+then assume the boundary of the bracelet is smooth, that isthere are little
+curves relating to the geometry of each beed, but rather smooth on a larger scale.”
+
+Save as an explicit strategy: search farther along the necklace in either direction
+for reliable boundary neighborhoods, then interpolate the larger-scale envelope
+across ambiguity. Keep real bead-scale scallops separate from the smooth envelope.
+Smoothness is a prior, not evidence that a boundary anchor is correct. No exact
+T1/T2/T3 edge labels or answers to the old placement questions inferred.
+
+Revised next step from the initially proposed whole-image texture search to one
+wider-context anchor-and-bridge comparison. Documented three options: local cubic
+bridge, robust smoothing spline, coupled inner/outer envelopes. Begin with the
+simplest supported local bridge, show raw evidence and inferred gaps separately,
+vary anchor choices, leave unsupported gaps unresolved, then stop for review.
+This step finishes R104 and records R105; it does not fit an unreviewed global
+contour or advance to lighting/centerline. Generality constraint R103 remains.
+Recommend gpt-6-astra / High; fresh /new for this next bounded implementation,
+or stay here for reviewing the current illustrations. No model switch performed.
+
+Final R104–R105 documentation checks: 49 local links resolve, Python compilation
+and whitespace pass, prior photo/scene/analysis/artifacts unchanged. Scoped source,
+configuration, notes, saved guidance and five curated figures/report prepared for
+commit/push. Routine outputs/environments remain intentionally excluded. Remote
+publication and final checkout checks are performed after this log entry.

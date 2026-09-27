@@ -24,6 +24,10 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 - User R093 rejects the later edge correction's implausible indents and bumps.
   Show raw crops next to candidate outlines and uncertainty before propagating
   those outlines. Do not smooth away real bead-scale scallops indiscriminately.
+  R105: when a local boundary is ambiguous, search farther along the necklace
+  in either direction for reliable boundary evidence, then bridge using smoothness
+  at the larger necklace scale. Keep bead-scale scallops separate. Mark inferred
+  stretches distinctly; smoothness alone does not verify an anchor or a gap.
 - For shape/geometry/helicity, first read the quick model in photo2/PRIOR_WORK.md.
   Necklace centerline lies in the paper/table plane. Beads are three-dimensional.
   Keep helicity separate from section direction relative to the global camera.
