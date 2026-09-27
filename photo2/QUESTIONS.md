@@ -1,5 +1,10 @@
 # Two questions before extending the background experiment
 
+R099: the maker says these have not yet been reviewed. No answers are inferred;
+the explicitly parameterized experiment proceeded. For the current image review,
+see [two short visual questions](TRANSITION_QUESTIONS.md); no need to catch up
+on this older set first.
+
 Updated through R097, 2026-09-27. Question 1 is partly clarified; question 2 has a
 working direction from your latest reply. Your R093 feedback is saved: the later edge
 correction produced implausible indents and bumps. Future contour reviews will

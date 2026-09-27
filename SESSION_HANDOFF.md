@@ -5,7 +5,51 @@
 | Image / artifact | Active inventory | Evidence / unresolved issues |
 | --- | --- | --- |
 | beads-photo-2.jpg | None on this branch | [Six sample contexts](photo2/review/r092/sample-context.png), [raw/FFT comparisons](photo2/review/r092/raw-and-fft.png), [scale plot](photo2/review/r092/scale-comparison.png); no confirmed silhouette, centerline or bead indices |
+| Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
+
+## R099 — Smaller windows and spatial texture at three transitions
+
+User: “continue, apologies that I did not look at your questions yet”. Questions
+remain optional; no new answers inferred. Completed the agreed background step,
+not the later direction/helicity phase. [Assessment](photo2/BACKGROUND_TRANSITIONS.md)
+and [two visual questions](photo2/TRANSITION_QUESTIONS.md).
+
+Three paths × 49 centers × four sigmas plus 18 overlapping paper windows × four
+sigmas = 660 records. Compare detrended/raw FFT, DC-only and finite central
+exclusions, power fractions and spatial high-pass texture. Window sigmas
+48/24/12/6; fixed 289-square FFT grid; all patches fit without padding. T1/T2
+initial near-seam starts rejected before measurement, with coordinates preserved.
+T3 dark-region start is provisional. No HSV predicate or old masks/geometry used.
+
+Findings: broad windows displace texture crossings toward paper. Across small
+windows, three metrics and three reference multiples, crossing spreads are
+T1 18–62, T2 2–62, T3 54–90 pixels from P. These are score disagreement spans,
+not verified edges or confidence intervals. T3 sigma-6 spatial cue at 3× paper
+reference is below threshold at P and unresolved. Reference windows overlap and
+cover only two clear-paper neighborhoods; brightness/shadow robustness unproven.
+
+Constant-patch control explains a Gaussian-window artifact: DC-only removal
+leaves 65.7–99.5% of raw power as sigma shrinks. A fixed finite exclusion also
+leaks the broadened central peak. Weighted-plane subtraction removes that control
+response. Detrended fractions alone still confuse weak paper texture with strong
+bead texture. No mask/contour or automatic edge rule adopted.
+
+Checks: analytic controls pass without failures; repeat artifacts byte-identical;
+660 CSV records and 108 crossing cases verified, report/source/helper/artifact
+hashes checked, five figures inspected, documentation links/compilation/whitespace
+checked. Fixed a clipped Q label during visual review. No render or old pipeline
+tests needed. Source photo, beads.pov, R092 code/artifacts unchanged. Routine CSV
+and repeat files remain ignored; five question-support figures/report are curated.
+
+Preflight daisy, clean 505f0e5, no stashes, origin 0/0 after fetch. Python 3.12.14.
+No new status/usage, delegation, dependencies or machine transfer. Old Gaussian
+convention question stays pending; R098 directional FFT advice remains deferred.
+
+Next: apply visual feedback, then check a few nearby parallel routes and extra
+paper controls, preserving failures and uncertainty. Stop before a full contour,
+centerline or scene edit. Recommend **gpt-6-astra / High; stay here, no `/new`**
+for the image review and focused follow-up. Delivery checks follow the commit.
 
 ## R098 — Directional FFT guidance saved
 

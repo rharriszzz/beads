@@ -1,5 +1,10 @@
 # First aspect: separate paper from necklace
 
+**Latest experiment:** [R099 smaller-window transition comparison](BACKGROUND_TRANSITIONS.md)
+with [two short visual questions](TRANSITION_QUESTIONS.md). The initial probe
+below is preserved as historical evidence; R099 now computes raw-power fractions
+and spatial texture as well as the original detrended FFT cue.
+
 The target is **all visible paper, including cast shadows**, versus visible bead
 surfaces. A pixel can remain uncertain near blur or occlusion. The paper's magenta
 pigment is a later, adjustable POV-Ray parameter, not a required segmentation color.

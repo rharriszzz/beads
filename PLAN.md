@@ -9,7 +9,7 @@ not automatic authorization to select all later methods.
 
 | Aspect | Intended result | Status |
 | --- | --- | --- |
-| Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | Five options and initial local FFT probe ready for review |
+| Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R099 three-path FFT/spatial comparison complete; crossing spread and dark-bead failure need review |
 | Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | Deferred; research primary sources when this phase starts |
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
 | Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | Deferred; offer methods before fitting |
@@ -29,14 +29,14 @@ opposite helicities before assigning the photograph's hand. This preserves the
 maker's proposed angular rule without treating the background-energy probe as
 an implemented direction estimator.
 
-Next bounded task, refined by R095: compare progressively smaller FFT windows
-and spatial texture cues along a few short paper/shadow/necklace transitions.
-Question 2 has a working direction; question 1's Gaussian definition remains
-provisional. Show raw/annotated pairs, explain the sampling routes, and show
-uncertainty. Stop for review before fitting a whole-image contour or spline.
-R097 refinement: compare DC-only versus finite central-peak exclusion, absolute
-retained power and retained fractions (with explicit denominators), using paper
-controls. Show excluded frequencies; do not tune the metric only on successful
-examples or equate an uncalibrated score with a background probability.
-If feedback is absent, keep the radius interpretation provisional and restrict
-work to independent controls and clearly labeled alternatives.
+R099 completed the bounded transition comparison: 48/24/12/6-pixel windows,
+DC-only/finite exclusions, raw/detrended power fractions, spatial texture and
+paper references. [Findings and limitations](photo2/BACKGROUND_TRANSITIONS.md).
+Small windows narrow the texture response but have not established an edge rule.
+
+Next bounded task: incorporate [visual feedback](photo2/TRANSITION_QUESTIONS.md),
+then assess a few nearby parallel routes and additional paper reference patches.
+Preserve the T3 dark-bead failure and test whether reported crossing spreads
+remain stable. Stop for illustrated review before connecting any crossings into
+a full contour or fitting centerline/scene parameters. If answers are absent,
+proceed with controls and provisional labels; do not invent maker edge locations.

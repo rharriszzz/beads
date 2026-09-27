@@ -194,3 +194,71 @@ rendering, segmentation or direction estimation required for saving this advice.
 No new question. Next remains the bounded background-transition experiment;
 stop before global contours, centerline or scene changes. Recommend gpt-6-astra /
 High, stay here with no /new. Routine outputs/environments remain excluded.
+
+## R099 — Continue with questions still unread (2026-09-27)
+
+User: “continue, apologies that I did not look at your questions yet”
+
+Preflight daisy, clean photo-2-reconstruction-v2 at 505f0e5, no stashes, upstream
+0/0 after fetch with protected-.git escalation. Python 3.12.14. Read handoff,
+latest log, plan, saved questions/answers, background experiment, shape quick
+model and applicable historical task rows. No new status/usage, dependencies,
+delegation or computer ownership transfer. No answers inferred or approval gate
+added. Scope: the already agreed three-path background comparison, then stop
+before global contours, centerline or scene changes.
+
+Implemented background_transitions.py: fixed 289×289 window support, Gaussian
+sigmas 48/24/12/6, 49 four-pixel-spaced centers per path. Compare raw/detrended
+FFT, center-bin/1⁄64/1⁄32 exclusions and explicit raw/detrended fractions against
+spatial RMS of grayscale minus sigma-4 blur. Paper references: maxima across
+18 overlapping centers in two old clear-paper regions, not independent validation.
+Margins 1.5/2/3 and scales/cutoffs specified before measurement. No HSV classifier.
+
+Initial raw preview put T1 P=(2180,1170), T2 P=(1760,1690) near internal seams.
+Rejected and moved before measurement to visible yellow faces (2200,1170),
+(1780,1702); old coordinates/reasons saved. T3 P=(1410,275) remains a provisional
+dark-bead-region sample near a glint. No maker labels or exact edge inferred.
+
+### R099 results and checks
+
+660 sample records: 588 path/scale and 72 paper/scale. 108 crossing settings.
+Across sigmas ≤24, three cues and three thresholds, crossing spreads from P:
+T1 18–62, T2 2–62, T3 54–90 px. T3 has one unresolved setting (sigma-6 spatial,
+3× paper reference already fails at P). These spans describe method disagreement,
+not calibrated confidence or recovered boundaries. Full large-scale crossings
+preserved. Small windows reduce mixing but can lose dark-bead structure.
+
+Synthetic constant input retains 65.7–99.5% raw power after DC-only removal as
+sigma shrinks; fixed 1/64 exclusion leaves RMS .0234 at sigma24 and .4147 at
+sigma6 for constant value .5. The Gaussian's own broadening spectrum explains
+this control artifact. Weighted-plane subtraction reduces it below 1e-15. This
+does not establish improved boundary accuracy or exactly reproduce the maker's
+unknown central-peak exclusion. Detrended power fractions can remain high on paper.
+
+Analytic controls for constant/ramp removal, amplitude scaling, fraction scaling
+invariance, Parseval normalization, known crossing/unresolved endpoints pass;
+no numerical test failures. Five illustrations inspected; a clipped Q label in
+the first review grid was fixed. Raw context, endpoint-only panels, routes,
+sampled colors, curves, frequency masks and separate disagreement boxes supplied.
+Two new focused visual questions saved; older Gaussian convention question is
+still optional/unanswered. User has not supplied new edge labels.
+
+Repeat outputs byte-identical; source/helper/script/artifact hashes verified,
+660 CSV rows and 108 candidate crossings checked, links/compilation/whitespace
+checked. Source photo, beads.pov and all R092 artifacts unchanged. No render,
+lighting/helicity inference or old pipeline suite for this bounded task. Curated
+five PNGs/report tracked; full CSV and reruns remain local under ignored output.
+
+Next: incorporate image feedback, then assess a few parallel routes and additional
+paper controls. Preserve T3 failure and all provisional identities; stop before
+connecting scores into a contour or changing centerline/scene. Recommend
+gpt-6-astra / High, stay here with no /new for this focused review/follow-up.
+
+R099 final verification: all seven repeat artifacts match byte-for-byte;
+660 finite sample rows and all 108 crossing calculations independently verified
+from CSV; 45 local documentation links resolve. A first Q-label clipping fix
+caused overlap with the 144-pixel label; moved Q below the route and reinspected.
+Final figures/report hashes and reproducibility rechecked after that presentation
+change. Full CSV retained in photo2/output/r099/samples.csv, with review-run copy
+also under ignored output; neither CSV is staged. Only scoped documentation,
+new script, five curated PNGs and report are included for delivery.

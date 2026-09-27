@@ -1,0 +1,1158 @@
+{
+  "source_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "script_sha256": "f7eceffb9754bf018397900688c71f604f6ebfb6b0fbdc3dccb91ed9b71eaf8c",
+  "helper_sha256": "92116f15a3d1a37284e50b46419c8e8b044a86c2a33b648b19465c79d5a802ae",
+  "sigmas": [
+    48.0,
+    24.0,
+    12.0,
+    6.0
+  ],
+  "half_support": 144,
+  "paths": [
+    {
+      "id": "T1",
+      "title": "Right section: yellow bead toward shadowed paper",
+      "start": [
+        2200,
+        1170
+      ],
+      "direction": [
+        1,
+        0
+      ],
+      "reason": "P moved onto the visible yellow face; Q lies beyond the dark shadow."
+    },
+    {
+      "id": "T2",
+      "title": "Inner bend: yellow bead toward shadowed paper",
+      "start": [
+        1780,
+        1702
+      ],
+      "direction": [
+        1,
+        0
+      ],
+      "reason": "P moved off an internal dark seam onto a yellow face; Q is outward on paper."
+    },
+    {
+      "id": "T3",
+      "title": "Upper section: dark bead toward paper below",
+      "start": [
+        1410,
+        275
+      ],
+      "direction": [
+        0,
+        1
+      ],
+      "reason": "P samples the dark bead region near a glint; its exact interior status remains provisional. Q is on paper below."
+    }
+  ],
+  "paper_centers": [
+    [
+      1076,
+      926
+    ],
+    [
+      1076,
+      950
+    ],
+    [
+      1076,
+      974
+    ],
+    [
+      1100,
+      926
+    ],
+    [
+      1100,
+      950
+    ],
+    [
+      1100,
+      974
+    ],
+    [
+      1124,
+      926
+    ],
+    [
+      1124,
+      950
+    ],
+    [
+      1124,
+      974
+    ],
+    [
+      426,
+      2326
+    ],
+    [
+      426,
+      2350
+    ],
+    [
+      426,
+      2374
+    ],
+    [
+      450,
+      2326
+    ],
+    [
+      450,
+      2350
+    ],
+    [
+      450,
+      2374
+    ],
+    [
+      474,
+      2326
+    ],
+    [
+      474,
+      2350
+    ],
+    [
+      474,
+      2374
+    ]
+  ],
+  "distances": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    72,
+    76,
+    80,
+    84,
+    88,
+    92,
+    96,
+    100,
+    104,
+    108,
+    112,
+    116,
+    120,
+    124,
+    128,
+    132,
+    136,
+    140,
+    144,
+    148,
+    152,
+    156,
+    160,
+    164,
+    168,
+    172,
+    176,
+    180,
+    184,
+    188,
+    192
+  ],
+  "rejected_initial_starts": {
+    "T1": [
+      2180,
+      1170
+    ],
+    "T2": [
+      1760,
+      1690
+    ]
+  },
+  "rejected_reason": "Initial preview put P near an internal seam; moved onto visible yellow face before measurements.",
+  "channel": "JPEG grayscale .299R+.587G+.114B",
+  "spatial_blur_sigma": 4,
+  "threshold_margins": [
+    1.5,
+    2,
+    3
+  ],
+  "threshold_reference": "max of 18 overlapping paper-control windows, per sigma and metric",
+  "edge_padding": "none for FFT patches; global spatial Gaussian uses reflect at distant photo edge",
+  "synthetic": [
+    {
+      "sigma": 48.0,
+      "constant_raw_dc_fraction": 0.6569342326571387,
+      "constant_raw_64_rms": 0.0009268135593347737,
+      "constant_detrended_64_rms": 2.538240754779629e-17
+    },
+    {
+      "sigma": 24.0,
+      "constant_raw_dc_fraction": 0.913336413312025,
+      "constant_raw_64_rms": 0.023419130857652872,
+      "constant_detrended_64_rms": 1.763758219989778e-17
+    },
+    {
+      "sigma": 12.0,
+      "constant_raw_dc_fraction": 0.9783341031780302,
+      "constant_raw_64_rms": 0.23575529930218686,
+      "constant_detrended_64_rms": 2.816417517556797e-17
+    },
+    {
+      "sigma": 6.0,
+      "constant_raw_dc_fraction": 0.9945835257945077,
+      "constant_raw_64_rms": 0.41466603293352106,
+      "constant_detrended_64_rms": 9.207435545855373e-17
+    }
+  ],
+  "checks": [
+    "constant and ramp removed",
+    "amplitude scaling",
+    "fraction scaling invariance",
+    "Parseval normalization",
+    "known crossing and unresolved endpoint controls"
+  ],
+  "samples": 660,
+  "references": {
+    "48.0": {
+      "detrended_rms_64": 0.020696860140837388,
+      "detrended_rms_32": 0.019043042358211235,
+      "spatial_rms": 0.015517691717766971
+    },
+    "24.0": {
+      "detrended_rms_64": 0.021638071812477806,
+      "detrended_rms_32": 0.020087288299815376,
+      "spatial_rms": 0.016930741338280833
+    },
+    "12.0": {
+      "detrended_rms_64": 0.02306614007458813,
+      "detrended_rms_32": 0.022638639090342694,
+      "spatial_rms": 0.019229715643891043
+    },
+    "6.0": {
+      "detrended_rms_64": 0.024609299874376014,
+      "detrended_rms_32": 0.02445848145836742,
+      "spatial_rms": 0.021288247963999283
+    }
+  },
+  "candidates": [
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.031045290211256082,
+      "distance": 98.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.041393720281674776,
+      "distance": 86.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.062090580422512164,
+      "distance": 70.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.028564563537316852,
+      "distance": 90.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.03808608471642247,
+      "distance": 78.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.057129127074633704,
+      "distance": 62.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.023276537576650456,
+      "distance": 82.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.031035383435533942,
+      "distance": 70.0
+    },
+    {
+      "id": "T1",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.04655307515330091,
+      "distance": 50.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.03245710771871671,
+      "distance": 62.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04327614362495561,
+      "distance": 54.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.06491421543743342,
+      "distance": 46.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.030130932449723064,
+      "distance": 58.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04017457659963075,
+      "distance": 50.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.06026186489944613,
+      "distance": 42.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.02539611200742125,
+      "distance": 50.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.033861482676561666,
+      "distance": 46.0
+    },
+    {
+      "id": "T1",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.0507922240148425,
+      "distance": 34.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.034599210111882196,
+      "distance": 46.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04613228014917626,
+      "distance": 42.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.06919842022376439,
+      "distance": 34.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.03395795863551404,
+      "distance": 46.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04527727818068539,
+      "distance": 42.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.06791591727102808,
+      "distance": 34.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.028844573465836562,
+      "distance": 38.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.038459431287782085,
+      "distance": 34.0
+    },
+    {
+      "id": "T1",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.057689146931673124,
+      "distance": 26.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.03691394981156402,
+      "distance": 42.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04921859974875203,
+      "distance": 26.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.07382789962312804,
+      "distance": 22.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.03668772218755113,
+      "distance": 42.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04891696291673484,
+      "distance": 26.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.07337544437510227,
+      "distance": 22.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.031932371945998926,
+      "distance": 38.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.042576495927998566,
+      "distance": 26.0
+    },
+    {
+      "id": "T1",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.06386474389199785,
+      "distance": 18.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.031045290211256082,
+      "distance": 98.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.041393720281674776,
+      "distance": 86.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.062090580422512164,
+      "distance": 70.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.028564563537316852,
+      "distance": 90.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.03808608471642247,
+      "distance": 78.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.057129127074633704,
+      "distance": 62.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.023276537576650456,
+      "distance": 78.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.031035383435533942,
+      "distance": 66.0
+    },
+    {
+      "id": "T2",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.04655307515330091,
+      "distance": 46.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.03245710771871671,
+      "distance": 62.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04327614362495561,
+      "distance": 58.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.06491421543743342,
+      "distance": 50.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.030130932449723064,
+      "distance": 58.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04017457659963075,
+      "distance": 54.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.06026186489944613,
+      "distance": 42.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.02539611200742125,
+      "distance": 50.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.033861482676561666,
+      "distance": 42.0
+    },
+    {
+      "id": "T2",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.0507922240148425,
+      "distance": 30.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.034599210111882196,
+      "distance": 50.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04613228014917626,
+      "distance": 46.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.06919842022376439,
+      "distance": 34.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.03395795863551404,
+      "distance": 46.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04527727818068539,
+      "distance": 42.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.06791591727102808,
+      "distance": 30.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.028844573465836562,
+      "distance": 42.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.038459431287782085,
+      "distance": 34.0
+    },
+    {
+      "id": "T2",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.057689146931673124,
+      "distance": 18.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.03691394981156402,
+      "distance": 34.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04921859974875203,
+      "distance": 30.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.07382789962312804,
+      "distance": 22.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.03668772218755113,
+      "distance": 34.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04891696291673484,
+      "distance": 30.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.07337544437510227,
+      "distance": 22.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.031932371945998926,
+      "distance": 30.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.042576495927998566,
+      "distance": 26.0
+    },
+    {
+      "id": "T2",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.06386474389199785,
+      "distance": 2.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.031045290211256082,
+      "distance": 118.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.041393720281674776,
+      "distance": 106.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.062090580422512164,
+      "distance": 90.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.028564563537316852,
+      "distance": 114.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.03808608471642247,
+      "distance": 102.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.057129127074633704,
+      "distance": 86.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.023276537576650456,
+      "distance": 102.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.031035383435533942,
+      "distance": 90.0
+    },
+    {
+      "id": "T3",
+      "sigma": 48.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.04655307515330091,
+      "distance": 70.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.03245710771871671,
+      "distance": 90.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04327614362495561,
+      "distance": 82.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.06491421543743342,
+      "distance": 74.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.030130932449723064,
+      "distance": 86.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04017457659963075,
+      "distance": 78.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.06026186489944613,
+      "distance": 70.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.02539611200742125,
+      "distance": 78.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.033861482676561666,
+      "distance": 70.0
+    },
+    {
+      "id": "T3",
+      "sigma": 24.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.0507922240148425,
+      "distance": 58.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.034599210111882196,
+      "distance": 74.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04613228014917626,
+      "distance": 70.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.06919842022376439,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.03395795863551404,
+      "distance": 70.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04527727818068539,
+      "distance": 70.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.06791591727102808,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.028844573465836562,
+      "distance": 66.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.038459431287782085,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 12.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.057689146931673124,
+      "distance": 54.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 1.5,
+      "threshold": 0.03691394981156402,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 2.0,
+      "threshold": 0.04921859974875203,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "detrended_rms_64",
+      "margin": 3.0,
+      "threshold": 0.07382789962312804,
+      "distance": 58.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 1.5,
+      "threshold": 0.03668772218755113,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 2.0,
+      "threshold": 0.04891696291673484,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "detrended_rms_32",
+      "margin": 3.0,
+      "threshold": 0.07337544437510227,
+      "distance": 58.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 1.5,
+      "threshold": 0.031932371945998926,
+      "distance": 62.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 2.0,
+      "threshold": 0.042576495927998566,
+      "distance": 58.0
+    },
+    {
+      "id": "T3",
+      "sigma": 6.0,
+      "metric": "spatial_rms",
+      "margin": 3.0,
+      "threshold": 0.06386474389199785,
+      "distance": null
+    }
+  ],
+  "summary": {
+    "T1": {
+      "score_crossing_spread": [
+        18.0,
+        62.0
+      ],
+      "valid": 27,
+      "unresolved": 0
+    },
+    "T2": {
+      "score_crossing_spread": [
+        2.0,
+        62.0
+      ],
+      "valid": 27,
+      "unresolved": 0
+    },
+    "T3": {
+      "score_crossing_spread": [
+        54.0,
+        90.0
+      ],
+      "valid": 26,
+      "unresolved": 1
+    }
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "artifacts": {
+    "T1.png": "3b5052ba3e644740eb6f6ee35d703f466623f4deac6d00eae35c53fbe21ae54e",
+    "T2.png": "7c21882e6dd20f4a21416f764414981d3187cf6311780f62d5fafa543cc7f754",
+    "T3.png": "72dc7519037c9d8db5ef0e79a05a07b360fd2f4a2695cb1811be0a86a66c4d5a",
+    "edge-review.png": "a5952919cbeeebf1e264ff90496ab79d0354e0580e30f7e74b6cf7f20ce3ac23",
+    "filters-and-fractions.png": "3f38f64d97b089a5dd099b8f5725823307638794a28d2e53b5f2a2e2fe147582",
+    "samples.csv": "bc1b063e93db8acbaeb9161bb52a251286552bf575627f0e689d147565d0e964"
+  }
+}
