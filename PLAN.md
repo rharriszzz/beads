@@ -3,6 +3,15 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
+R106 documentation detour completed: [initial question and construction facts](INITIAL_QUESTION.md)
+and [reusable methods collection](METHODS.md). The catalog proposes five background
+methods under varying illumination, with failures and validation plans. No new
+classifier or contour was implemented. All supplied images place the bracelet
+centrally with substantial margins; use that generic prior for background seeds,
+not fixed bead coordinates or a prescribed border width. Enclosed paper/gaps need
+support beyond exterior connectivity. The anchor/bridge experiment below remains
+the next bounded numerical task; this detour did not run it.
+
 One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.

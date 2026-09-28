@@ -1,9 +1,12 @@
 # First aspect: separate paper from necklace
 
-**Latest experiment:** [R099 smaller-window transition comparison](BACKGROUND_TRANSITIONS.md)
-with [two short visual questions](TRANSITION_QUESTIONS.md). The initial probe
-below is preserved as historical evidence; R099 now computes raw-power fractions
-and spatial texture as well as the original detrended FFT cue.
+**Reusable catalog:** [METHODS.md](../METHODS.md) compares five current background
+approaches and incorporates R106's substantial-margin assumption. **Latest
+experiment:** [R104 parallel-route/reference sensitivity](PARALLEL_PATHS.md),
+following [R099 transitions](BACKGROUND_TRANSITIONS.md) and
+[R100 hue/provenance](HUE_TRANSITIONS.md). The initial probe and its proposed next
+steps below are historical evidence, not the current execution plan. Use the
+[current plan](../PLAN.md) and [saved visual questions](TRANSITION_QUESTIONS.md).
 
 The target is **all visible paper, including cast shadows**, versus visible bead
 surfaces. A pixel can remain uncertain near blur or occlusion. The paper's magenta

@@ -10,6 +10,10 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   Put questions in tracked files and commit their curated supporting images.
 - Background includes all visible paper, including necklace shadows and gaps.
   Prefer color-independent evidence; do not hard-code magenta as the definition.
+  R106: all supplied computed/actual images place the bracelet in the middle with
+  substantial margins. Use this generic framing prior for background initialization;
+  no numeric margin width or bead coordinates are supplied. Enclosed paper and
+  gaps remain background even without a connection to the image border.
   R096 notes shadowed-paper/bead HSV overlap; retain texture/context and explicit
   uncertainty rather than forcing a color-only threshold.
   R100–R102 confirm the maker's labeled evidence and identify the overlapping
@@ -43,6 +47,9 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 - Record supplied requests and actual outcomes in the append-only request log.
   Preserve source hashes, parameters and reproduction commands. Keep routine
   generated outputs and environments ignored; curated question images are tracked.
+  INITIAL_QUESTION.md consolidates the opening request and construction facts;
+  METHODS.md is the reusable procedure index. Keep proposals, evidence and maker
+  facts distinct, and link experiments instead of duplicating their full records.
 - Update plan/log/handoff at each bounded step. Add/commit/push scoped work unless
   qualified by the user; verify remote tip and final status before claiming delivery.
 - End with a concrete next task, stopping point, model/reasoning recommendation

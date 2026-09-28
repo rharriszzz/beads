@@ -10,6 +10,56 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R106 — Reusable brief and methods documentation detour
+
+User requests an initial-question Markdown containing this conversation's opening
+and prior physical-construction guidance, deduplicated after branch-history review;
+a methods collection; and five background-pixel methods under varied illumination.
+New maker fact: **all computed and actual images put the bracelet centrally with
+substantial margins**. No numerical margin width or exact location is supplied.
+
+[INITIAL_QUESTION.md](INITIAL_QUESTION.md) preserves R092's opening verbatim and
+adds nonduplicate facts grouped by topic: crochet/closure, natural planar placement,
+bead shapes/axes/invisible holes and thread, ±1/±6/±7 neighbors, palette/repeat
+conventions, and current FFT/color/smoothness advice. Separates maker facts from
+source geometry, tentative spiral recollection and the historical 2,698 estimate.
+Contains pinned source references and a seven-branch history review. Root c100ac8
+has no Markdown; first pattern document is misspelled patterm.md at1580239, renamed
+in2eaf8d3. No archive code restored; sibling repositories were not changed.
+
+[METHODS.md](METHODS.md) is the reusable catalog: shading-aware paper modeling,
+Gaussian-window FFT, spatial texture/local ordering, seeded region propagation,
+and supported boundary anchors with smooth envelope completion. Each explains
+inputs/output, margin use, illumination failures, implementation status and tests.
+Includes later-aspect procedure links. Border seeds cannot alone reach enclosed
+paper; do not fill gaps or declare every low-texture/black pixel paper. Literal
+arbitrary-lighting recovery cannot be guaranteed when image evidence disappears;
+retain unresolved pixels. These are proposals plus linked existing local evidence,
+not a new full-image classifier, benchmark or contour.
+
+Preflight daisy, clean d60274f, no stashes, fetch succeeded/upstream0/0. Read current
+workflow/plan/log and relevant experiments; examined all seven branch histories,
+earliest distinct plans and later maker construction/corrections. Two read-only
+lookup errors corrected: branch/path ambiguity (use full refs and --), and the
+earliest pattern filename typo. No new environment/dependencies, supplied status,
+usage, delegation or ownership transfer. No render/analysis rerun for this docs
+detour; original sources, illustrations and experiment reports remain unchanged.
+
+Checks: opening matches R092 verbatim; exactly five numbered methods; 61 local
+links resolve and five unique historical linked blobs exist at pinned commits.
+Local/remote branch pairs agree; four experiment source-photo hashes verified.
+Markdown-only change scope and whitespace checked; no numerical tests required.
+Seven scoped documents prepared for commit/push, ignored outputs excluded.
+Remote-tip verification follows publication, not assumed by this handoff entry.
+
+**Next bounded task remains:** the R105 wider-context boundary-anchor/short-bridge
+comparison described below, incorporating margin-derived initialization only if
+useful. Stop for illustrated review before whole-necklace contour adoption or
+centerline/scene/index work. Existing visual questions remain optional; no new
+construction question is needed after consolidating the saved answers. Recommend
+**gpt-6-astra / High; fresh `/new` for that numerical experiment**, or stay here for
+editing/reviewing the two new documents. User controls model/session changes.
+
 ## R104–R105 — Local sensitivity completed; bridge ambiguity from neighbors next
 
 [Assessment and three next-method options](photo2/PARALLEL_PATHS.md),

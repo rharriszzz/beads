@@ -432,3 +432,71 @@ and whitespace pass, prior photo/scene/analysis/artifacts unchanged. Scoped sour
 configuration, notes, saved guidance and five curated figures/report prepared for
 commit/push. Routine outputs/environments remain intentionally excluded. Remote
 publication and final checkout checks are performed after this log entry.
+
+## R106 — Reusable initial question, methods collection and image margins (2026-09-28)
+
+User: “we are going to take a little detour.  Eventually I am hoping to collect a
+number of useful procedures and algorithms for solving several of the parts of
+this problem, also in another file, I want to build a "initial question" that
+contains much of the information I have given.  So for the "initial question"
+there should be a markdown file that contains this conversarion's initial
+question, together with whatever I said about the physical construction of the
+bracelet (in a markdown file on a recent branch of this repo), you are incouraged
+to look at the earliest commits to every branch, then eliminate duplicate
+information.  Also a methods markdown (which you may have already started).
+I want you to think of 5 different methods of determining the pixels that are
+part of the background, under whatever illumination.  I should say this (which
+can go in the initial question).  all the computed images and actual images have
+the bracelet in the middle of the picture, with substantial margins.”
+
+The supplied replacement AGENTS instructions match the current tracked workflow.
+Preflight daisy, clean d60274f on photo-2-reconstruction-v2, no stashes; fetch
+succeeded, upstream 0/0. Read handoff/latest log/plan, background and shape notes.
+Scope: documentation detour, consolidate opening request and maker construction,
+review earliest branch histories, propose exactly five background methods with
+illumination limitations and use of the newly stated clear margins. No boundary
+experiment or scene change this step. No new status/usage or ownership transfer.
+
+### R106 outcome and checks
+
+Created INITIAL_QUESTION.md with the exact R092 opening request and consolidated
+additional facts from prior maker answers: pre-stringing/slipknot/one bead per
+stitch, built-in half-step, small closure twist, natural planar placement,
+whole-repeat counts, common smoothly rounded geometry, lengthwise invisible
+holes and invisible white thread, neighbor families, checked three-color repeat,
+unknown observations and free reporting conventions. Source-model formulas and
+provisional 2,698 count are explicitly distinguished from measured facts. Later
+spiral recollection replaces the earlier tentative direction; margin statement
+added without inventing a width. No new construction answers requested.
+
+Reviewed seven distinct published branches, their shared root c100ac8, earliest
+relevant Markdown/branch additions and recent construction records. Local/remote
+pairs agree. Master/root have no Markdown. Pattern's first document is
+1580239:patterm.md, renamed in2eaf8d3; inspected both initial and later content.
+Image-to-pattern starts at42358e3; v2 replacement402663e; old photo branch starts
+63ba75c; archive debec40 adds six non-Markdown files; current restart eae80ce.
+Pinned source links and reproduction Git commands recorded in the brief.
+Initial read-only branch/path ambiguity and incorrect pattern.md historical
+lookup failed, then were corrected with full refs/-- and actual patterm.md name.
+No historical checkout, archive restoration or sibling writes.
+
+Created METHODS.md as the reusable catalog: exactly five approaches based on
+paper appearance with shading, local FFT spectra, spatial texture/local ordering,
+seeded graph propagation, and supported boundaries with smooth completion.
+Each gives procedure, margin use, output, illumination failure cases and validation.
+Existing FFT/spatial measurements are labeled local evidence; new extensions are
+proposals. Enclosed paper and visible gaps cannot be handled by exterior flood
+fill alone. No method guarantees labels where arbitrary illumination destroys
+image evidence. Added a concise later-aspect procedure index and linked existing
+reproducible experiments. Updated old background report's stale latest pointer.
+
+Checks: exact opening matches R092 verbatim; five numbered methods; 61 local links
+resolve and five unique historical linked blobs exist at pinned commits. All
+local/remote branch pairs agree; four experiment source hashes still match the
+photo. Tracked changes are Markdown only; prior code/scenes/images/reports
+unchanged. Whitespace passes. No runtime tests or renders warranted for this
+text-only detour, and no new analysis result claimed. Seven scoped Markdown files
+prepared for publication; ignored environments/outputs excluded. Delivery checks
+follow the commit. Next remains one wider-context anchor/bridge comparison, then
+illustrated review; gpt-6-astra / High, fresh /new for that experiment or stay here
+for editing the documents.
