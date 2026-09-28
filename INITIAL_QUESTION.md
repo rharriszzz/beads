@@ -84,6 +84,18 @@ Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
   determines helicity; demonstrate conventions and validate it before claiming
   recovery. The Gaussian “radius” convention remains unspecified; existing
   experiments explicitly interpret it as spatial sigma.
+- Once approximate inner/outer boundaries give a usable centerline, consider
+  bead colors and other identifying features, pixel sizes, directions 1/6/7 and
+  helicity without requiring a perfect mask first. Sample pixels along the
+  centerline and inspect their path through HSV: local dark areas can indicate
+  seams (poorly for black beads), and very bright areas can indicate specular
+  reflections. Compare nearby paths and other cues rather than treating either
+  brightness rule as certain. For directional analysis, center Gaussian 2D FFT
+  windows on the curve with width comparable to the local necklace width;
+  interpret directions 1/6/7 and compare direction 1 to the centerline for
+  helicity. [Six bead-analysis methods](METHODS.md#bead-analysis-given-approximate-boundaries-and-a-centerline)
+  include these maker proposals and alternatives. This assumes a centerline for
+  planning; it does not assert one has been recovered in the current work.
 - If a boundary is locally ambiguous, go farther in either direction **along the
   necklace** until reliable boundary evidence appears. Bridge the uncertain
   span using a smooth larger-scale envelope. Individual bead geometry still
@@ -194,7 +206,7 @@ Historical construction sources are pinned at commit
 | Palette, checked repeats, unknown colors, neighbors, free conventions, example | Same log, R025/R028/R030/R033/R035 |
 | Rectangular cues, corrected spiral recollection, holes, thread, gloss/highlights | Same log, R038/R042/R049–R051/R054; flash unknown in R057 |
 | Ignore slivers; planar centerline, exposed shapes and camera view | Same log, R069/R086; [SHAPE_REASONING.md](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/SHAPE_REASONING.md) |
-| Color independence, FFT advice, HSV evidence, smooth bridging, margins, HSV-region proposal and spline purpose | [Current request log](REQUEST_LOG.md), R092–R108 |
+| Color independence, FFT advice, HSV evidence, smooth bridging, margins, HSV-region proposal, spline purpose and centerline bead cues | [Current request log](REQUEST_LOG.md), R092–R109 |
 
 ### Branch-history review for this consolidation
 

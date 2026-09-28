@@ -79,5 +79,10 @@ angle, or assume that 1/6/7 labels imply raw FFT-radius ratios of 1:6:7.
 Keep the major centerline planar and local viewing direction distinct from winding.
 
 Window width, frequency-band limits and the maker's peak-label convention remain
-unspecified. Resolve them with illustrated alternatives when this phase starts;
-do not reopen all background questions or interrupt the current boundary task.
+unspecified numerically. R109 now specifies a window width comparable to the
+necklace width, centered along the centerline; Gaussian sigma/FWHM convention
+still needs to be stated explicitly in an implementation. The maker also proposes
+HSV paths along the centerline, with dark seam and bright specular clues and a
+black-bead limitation. [Six methods and the proposed local comparison](../METHODS.md#bead-analysis-given-approximate-boundaries-and-a-centerline)
+record these together. Resolve remaining spectral choices with illustrated
+alternatives when this phase starts; no directional estimator has been run.

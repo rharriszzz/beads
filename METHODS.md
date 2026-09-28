@@ -6,6 +6,10 @@ in [PLAN.md](PLAN.md). Start each future entry with its inputs, output, assumpti
 procedure, known failures, validation and a reproduction link. Distinguish a
 proposal from an implemented procedure and a validated capability.
 
+Start with [background methods](#current-aspect-background-pixels-under-varying-illumination),
+[shadow handling for splines](#shadowed-paper-alternatives-and-evaluation-for-splines),
+or [bead methods given a centerline](#bead-analysis-given-approximate-boundaries-and-a-centerline).
+
 ## Current aspect: background pixels under varying illumination
 
 **Background means every visible part of the paper**, including cast shadows,
@@ -360,6 +364,239 @@ images are the analysis inputs. Extreme clipping tests should allow abstention.
 Vary the perimeter sampling width and hold out whole regions so overlapping windows
 do not masquerade as independent validation. Review raw context beside labels and
 support maps. No such full comparison has run in this documentation step.
+
+## Bead analysis given approximate boundaries and a centerline
+
+R109 asks us to take the nearly trusted inner/outer boundaries and their derived
+centerline as given, then consider colors, bead identification, pixel sizes,
+directions 1/6/7 and helicity. This section is that **conditional method plan**;
+it does not assert that the current branch has already recovered these curves.
+A usable approximate centerline is enough to begin local analysis; it need not
+wait for a perfect background mask.
+
+Parameterize the centerline by image arc length `s`, with local tangent `T(s)`,
+normal `N(s)` and apparent necklace width `W(s)`. Pair boundary positions across
+local cross-sections rather than pairing unrelated spline parameters. Record the
+orientation convention and source-image coordinates. Use short tangent-aligned
+patches or a narrow strip `C(s) + u N(s)` to compare sections. Preserve pixel scale:
+normalizing transverse coordinates by width is useful for displays but must not
+silently turn pixel distances into normalized distances. In tight bends, large
+patches mix orientations and strip coordinates can overlap; shorten the patch
+or inspect it in the original image.
+
+### Six complementary methods
+
+| Method | Main procedure | Most useful outputs | Main limitation |
+| --- | --- | --- | --- |
+| B1. Centerline paths through HSV — maker's proposal | Sample by arc length; inspect circular hue, saturation, value, chroma and their local changes; compare nearby parallel paths | Candidate seams, highlights, color interiors and along-path spacing | A single path misses beads and can cross internal shading; black beads and specular peaks defeat simple rules |
+| B2. Local Gaussian-window 2D FFT — maker's proposal | Center windows on the curve, use width comparable to W, band-pass, inspect directional peak families and their spatial interpretation | Local scale/direction hypotheses; direction-1 angle relative to tangent for helicity | Spectral peaks mix geometry, color pattern, highlights, harmonics and window effects; labels need calibration |
+| B3. Spatial repetition / patch matching | Find displacements that align local image structure; inspect a 2D autocorrelation or shifted-patch similarity map | Neighbor displacement/spacing candidates and a real-space check on FFT interpretation | Repeated colors can dominate; shape changes/occlusion weaken repeats; not an independent vote when derived from the same spectrum |
+| B4. Seam and outline tracing | Detect local dark valleys and gradients; connect supported curves and split seeded regions | Visible bead portions and boundaries, including adjacent same-color beads | Highlights and shading make false edges; one bead may split and several may merge |
+| B5. Color regions with separate highlight handling | Learn image-specific appearance clusters from supported interiors, grow locally and combine with seams | Palette candidates, color evidence per visible region and highlight flags | Same-color neighbors merge; shadows make one pigment appear as several clusters; white glints are not extra beads/colors |
+| B6. Local 3D geometry and neighbor constraints | Fit small occlusion-aware bead arrangements under both helicities to observed contours/appearance | Joint scale, phase, exposed-shape, neighbor-label and helicity hypotheses | Needs reasonable initialization; a plausible model can impose unsupported beads or choose the wrong hand |
+
+### B1 — Read the path through HSV space
+
+Sample original RGB along the centerline at uniform arc-length steps, preserving
+the interpolation rule and coordinates, then convert to HSV. Display the raw
+route, pixel-color strip, H/S/V/chroma against distance, and a color-space path
+whose points retain their image positions. Hue is circular; unwrap locally for
+plots or use circular differences, and downweight hue in low-chroma/near-black
+samples. Mild smoothing should be applied consistently, with the raw trace retained.
+Choose sampling and smoothing relative to the estimated bead scale, not a fixed
+photo coordinate or palette.
+
+The maker's cues are a useful first hypothesis: **local V troughs may be seams;
+very bright excursions may be specular reflections**. Compare each trough with
+its nearby shoulders, and look for changes in H/S or agreement on nearby offset
+paths. A sustained, relatively stable color portion between candidate seams can
+supply an interior sample. Track repeated trough spacing as an apparent scale
+cue. Brightness alone cannot assign surface identity: a black body is dark over
+an interval, one bead may contain shading valleys, and a yellow/white diffuse
+surface can be bright without being a highlight. Specular reflection may also
+change hue/saturation; it is not always a neutral white spike.
+
+Use several paths at small positive/negative offsets from the centerline, scaled
+to local width. This tests whether a feature extends as a plausible seam or is
+an isolated glint. Multiple paths can still share the same lighting ambiguity.
+The distance between two seams on one path is a **visible chord**, not necessarily
+the bead's full diameter. Traversal along the necklace centerline is not the
+crochet string order; do not turn successive path events into consecutive bead
+indices or require the centerline to intersect every bead.
+
+[Historical S/V paths and maker review](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/BEADS6_SV_PATHS.md)
+support using these cues while preserving failed endpoints and internal-highlight
+examples. Current T1/T2/T3 are cross-boundary diagnostics, not centerline traces;
+no centerline-HSV detector has been run in this step.
+
+### B2 — Gaussian FFT along the centerline
+
+Take local patches centered on `C(s)`, display them relative to the tangent, and
+apply a **spatial Gaussian window whose width is comparable to the local necklace
+width**. Specify the width convention: for example, an initial Gaussian FWHM of
+`W` means sigma `W / 2.355`; compare neighboring widths rather than claiming this
+is the maker's unspecified convention. This is a proposed starting definition,
+not an adopted parameter. Use enough longitudinal support to see several repeats,
+but keep the tangent variation small. An anisotropic window is an option if the
+cross-rope extent needs limiting while longitudinal support remains useful.
+
+Remove slow variation, suppress the central low-frequency region and very high
+frequencies, then inspect peak pairs in a bead-scale band. Initially explore a
+range of bands because bead spacing is itself an output; use B1/B3 only as loose
+scale proposals. Run intensity first; compare color-sensitive channels if needed.
+Do not Fourier-transform wrapped H as an ordinary scalar. Retain raw-versus-
+detrended views, the exact band mask and window support. A hard silhouette mask
+creates its own spectral edges; avoid treating them as bead lattice evidence.
+
+The maker reports that these spectra reveal families 1/6/7 and that **direction
+1's angle relative to the centerline directly determines helicity**. Use this as
+the primary directional hypothesis. Show peak pairs beside corresponding image
+structures, optionally reconstructing selected bands to see what produced them.
+Frequency vectors describe phase variation; their angle is not automatically the
+real-space bead-neighbor angle. Convert/calibrate that relationship before labeling
+a peak “1,” “6” or “7.” These labels are index offsets, not frequency-radius ratios
+of 1:6:7. The reciprocal of a peak frequency measures a periodic wavelength along
+its frequency direction, not automatically bead diameter or a neighbor distance.
+
+For the spatial direction-1 line angle `theta1` and tangent `thetaT`, inspect the
+signed relative angle wrapped modulo 180 degrees. Define image y orientation,
+viewing side, tangent convention and hand labels, then calibrate the mapping on
+known opposite-helicity POV-Ray examples at several loop positions. Tangent reversal
+should not change a line angle modulo 180 degrees; reflections/coordinate changes
+must be accounted for. Keep alternate assignments when peaks are weak, the angle
+is near an ambiguous configuration, or families cannot be separated. A consistent
+hand across well-supported sections is stronger evidence than a single peak.
+
+The current FFT code measures background texture power; it does **not** implement
+this directional estimator. [R098's saved display/convention plan](photo2/PRIOR_WORK.md#r098--makers-directional-fft-method)
+remains applicable. Width-scale spectral analysis does not by itself locate every
+bead: Fourier power loses phase, and candidate spacing still needs localization.
+
+### B3 — Look for repetition in image-space displacements
+
+Compare a short patch with translated copies, measuring similarity of detrended
+intensity, gradients or local appearance over their valid overlap. Normalize for
+overlap and contrast, discount shifts with too little support, and inspect peaks
+away from zero displacement. Plot arrows for the candidate shifts directly on
+the photograph. Repeat over several local windows; gradients may reduce dependence
+on a particular color sequence but are still affected by reflections and seams.
+
+A local 2D autocorrelation is one implementation. It can display spacing in pixels
+more intuitively than a frequency plot. For the same signal, autocorrelation and
+Fourier power are mathematically linked: agreement is an interpretation check,
+not independent confirmation. Try direct feature/patch comparisons when the raw
+appearance varies strongly. Subdivide windows where curvature or projection makes
+a single translation inappropriate; the visible rope is not a globally flat lattice.
+
+Use multiple plausible displacement families as candidates for ±1/±6/±7, requiring
+compatible local neighbor triangles and image evidence to label them. A repeated
+color motif may favor several-bead displacements; the strongest nonzero peak need
+not be the nearest bead. This method offers spacings/directions, not absolute bead
+origins or hidden-bead identities. Compare its inferred directions with B2 before
+using either to assign helicity.
+
+### B4 — Trace seams and visible outlines
+
+Find dark valley curves and intensity/S/V gradients at several scales within the
+necklace strip. Use B1 interior candidates or supported region interiors as seeds;
+trace candidate seams or use seeded watershed/region splitting. Retain competing
+splits when evidence is weak. Require a proposed seam to fit neighboring visible
+surfaces, not merely pass through a brightness minimum.
+
+This can distinguish adjacent same-color beads that color clustering would merge.
+It can also incorrectly partition a single glossy bead or miss an occluded seam.
+Regularize at the bead scale, using local orientation/spacing hypotheses without
+forcing every visible portion into an ellipse or rectangle. Projected caps,
+crescents and notches are possible after occlusion. Exposed area or centroid is
+not the full bead's size or physical center. For dark beads, use clearer neighboring
+outlines and highlight context, while leaving truly unsupported extents unresolved.
+
+### B5 — Infer appearance groups, then separate bodies
+
+Sample candidate interiors from several supported sections, retaining both
+ordinary shading and flagged highlights. Estimate the palette from those samples
+with circular hue and brightness/chroma information; do not require red/yellow/
+black in the general implementation. The maker's known palette is useful for
+review, not an input that forces a desired result. Use robust color summaries and
+local shading variation; postpone exact POV-Ray material parameters to lighting/
+material fitting. A color cluster is not a material measurement.
+
+Grow compatible regions locally, then split them using B4 seams and B2/B3 scale
+information. Keep a bead's ordinary surface and possible highlight pixels related
+without treating each bright component as a new bead or a new pigment. Associate
+highlights only when enclosing/neighboring evidence supports it; leave shared or
+clipped bright areas unresolved. Black-bead glints can supply useful landmarks,
+but neither their count nor positions are guaranteed bead counts or centers.
+
+Simple clustering alone merges same-color neighbors and can turn shadows into
+spurious extra colors. A low-S/high-V point alone is not sufficient to distinguish
+a highlight from a pale bead. Preserve per-region color alternatives and unknown
+readings rather than forcing every portion into a palette class.
+
+### B6 — Fit a small geometry/occlusion model with neighbor constraints
+
+Use the centerline, local width and B1–B5 hypotheses to initialize a short patch
+of the known bead geometry. Compare both helicities, minor-circle phases, image
+scale and local position, using the planar necklace/global camera relationship.
+Neighbor index offsets are ±1/±6/±7; cycle consistency and supported neighbor
+triangles can reject assignments. They do not turn every nearest image point into
+a correct crochet neighbor. Keep overlapping rope sections separate.
+
+Render or project the **exposed** portions after neighbor occlusion, compare
+predicted outlines and observed seams, and test withheld parts of the patch.
+Use numerical geometry in Python and appearance in POV-Ray. Once calibrated,
+clear neighbors may constrain a black bead even when its own HSV trace is weak.
+Do not require every predicted site to have a detected visible body, and do not
+confuse a model prediction with an observation. Retain wrong-hand alternatives
+when the image scores do not distinguish them.
+
+This is the most informative eventual joint method, but also the most demanding
+and easiest to overconstrain. [Historical calibrated local fitting](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/LOCAL_PATCH.md)
+had successful examples as well as black-region and competing-helicity failures;
+it did not establish automatic photo recovery. Use it after establishing local
+appearance/scale evidence, rather than guessing all parameters simultaneously.
+
+### What “bead size” and “identified bead” mean here
+
+Keep separate measurements for visible footprint extent, path chord length,
+neighbor displacement in each family, and inferred projected full-body size.
+All may be in pixels, but they are different quantities. Foreshortening and
+occlusion change them around the loop. Necklace width divided by 6.5 is not a
+bead-diameter measurement: the 6.5 counts progression around a 3D cross-section,
+not beads laid across the image width. Recover full-body scale through calibrated
+geometry or well-exposed shapes, with the assumptions stated.
+
+For each candidate visible body retain a region/observation ID, supported pixels,
+color evidence, highlight/seam flags, candidate neighbor links and uncertainty.
+A body can be identifiable while its color or index remains unknown. A bright
+spot, color patch, visible centroid and physical bead center are different objects.
+Ignore slivers as active observations without merging their pixels into neighbors.
+Material fitting and full repeating-pattern inference remain later tasks.
+
+### Recommended first comparison once a centerline is available
+
+Start with **B1 + B2** on the same few short sections: the maker's HSV paths give
+localized evidence, while Gaussian FFT proposes organization/scale and a helicity
+cue. Use **B3 as an interpretation cross-check**, not an independent spectral vote.
+Choose sections with different local tangents and include a difficult dark portion.
+Display raw context, centerline/offset paths, color strips and HSV trajectories,
+window/band masks, peak pairs and corresponding spatial direction arrows together.
+Perturb the centerline slightly and vary window width/band limits to expose fragility.
+
+Then use B4/B5 to turn supported cues into candidate visible bead regions/colors;
+bring in B6 only where geometry is needed to resolve weak black/occluded portions
+or competing directions. A complete detector is not needed to compare the first
+cues. This ordering is a reasoned proposal, not a measured ranking of the six methods.
+
+Validate on known-pattern POV-Ray beauty images with both helicities, several
+in-plane section directions, changed palettes (including same-color/dark cases),
+light/highlight changes, scale and modest blur. The evaluator may use true masks,
+indices and centers, but the image-analysis input must not include those labels.
+Check local direction/spacing errors and handedness, region splits/merges and
+misses, interior color stability and sensitivity to centerline error separately.
+Treat source geometry supplied to B6 as explicit calibration, not image-inferred
+knowledge. Show unresolved cases. Stop after the illustrated local comparison,
+before whole-necklace bead indexing or pattern recovery.
 
 ## Procedures for later aspects
 

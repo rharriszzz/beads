@@ -10,6 +10,45 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R109 — Six bead-analysis methods conditional on a usable centerline
+
+Maker asks for alternatives for bead colors/identity, helicity, pixel size and
+directions1/6/7, supposing approximate boundaries already give a centerline.
+Their methods: trace HSV along the centerline (dark seam/bright specular clues,
+black-bead limitation); Gaussian 2D FFT centered on the curve at necklace-width
+scale, then direction1 relative to tangent for helicity. Preserve this as a
+conditional planning premise, not an assertion that current curves are recovered.
+
+[New methods section](METHODS.md#bead-analysis-given-approximate-boundaries-and-a-centerline)
+compares B1 HSV paths, B2 Gaussian FFT, B3 spatial repetition/patch matching,
+B4 seam/outline tracing, B5 appearance regions with separate highlights, and
+B6 local 3D/neighbor-constrained fitting. Recommends B1+B2 on the same short
+sections, B3 for interpretation, then B4/B5 regions and B6 where geometry helps.
+Explains circular/weak hue, nearby paths, Gaussian width conventions, band/peak
+label ambiguity, frequency versus spatial directions, coordinate-calibrated
+helicity, correlated FFT/autocorrelation evidence, and uncertain black regions.
+Distinguishes path chords/visible footprints/neighbor spacing/full-body size;
+centerline traversal is not crochet order and highlights are not bead centers.
+
+The initial brief, plan and saved FFT guidance now link this discussion. No new
+image labels, estimator, bead inventory, source-pattern lookup, photo spline,
+render or experimental accuracy claim. Prior evidence remains unchanged.
+Preflight daisy, cleanbbfb066, no stashes, fetch succeeded/origin0/0; read current
+workflow and relevant shape/task, HSV-path and local-model evidence. No supplied
+status/usage, dependencies, delegation or ownership transfer. Documentation only.
+Checks pass: 62 local links/anchors, 11 pinned historical blobs, six bead methods
+and five background methods, original opening verbatim, six Markdown-only files
+and whitespace. No numerical tests/renders needed; no failed checks. Scoped
+commit/push and remote verification follow this pre-publication record.
+
+**Next bounded implementation remains:** the pending wider-context boundary
+anchor/short-bridge review, without a perfect-mask prerequisite. Once a usable
+centerline is available, the first bead experiment is B1+B2 on a few sections,
+with original coordinates, nearby-path/window perturbations and known-helicity
+synthetic calibration; stop at illustrated local evidence before full indexing
+or repeat recovery. Recommend **gpt-6-astra / High; stay here for methods review,
+fresh `/new` when starting the numerical experiment**. No automatic switching.
+
 ## R107–R108 — Shadow-aware paper evidence for a useful spline
 
 R107 proposes sampling an image-margin strip, enclosing its HSV samples and

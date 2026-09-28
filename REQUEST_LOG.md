@@ -571,3 +571,61 @@ push follows; routine outputs/environments excluded, remote verified afterward.
 Next remains one wider-context supported-anchor/short-bridge comparison, stopping
 at illustrated review; gpt-6-astra / High, fresh /new for the experiment or stay
 here for discussion. No model/session switch performed.
+
+## R109 — Bead-analysis methods given approximate boundaries/centerline (2026-09-28)
+
+User: “Now supposing we have bracelet inner and outer boundaries that we almost
+trust, we can easily find the centerline.  The next step is to determine any of
+these things: The bead colors, and anything else that can identify the beads,
+the helicity, the bead sizes in pixels, the 1,6,7 directions.  There are several
+ways of figuring out the way to distinguish the beads, list them, please.  One
+of them is, since we have a centerline, we just sample the pixels along the
+centerline, looking for clues in the path through HSV space.  Locally darker
+areas are likely to represent the edges between beads (except that this works
+poorly for black beads).  Very bright areas are likely to represent specular
+reflections.  Using 2d gaussian fft on the centerline, with a width comparable
+to the bracelet width can identify the 1,6,7 directions (although this is tricky),
+then comparing the 1 direction with the centerline direction directly gives you
+the helicity.  Please Consider my method among other methods you should come
+up with, and put these methods in the document.”
+
+Preflight daisy, clean bbfb066 on photo-2-reconstruction-v2, no stashes; fetch
+succeeded, upstream0/0. Read handoff/log/plan/catalog, shape quick model/task rows,
+prior FFT advice and relevant historical local-contour/SV-path notes. Scope:
+conditional method catalog, taking approximate boundaries/centerline as inputs.
+No claim that those inputs have been recovered on this branch. Include the
+maker's HSV-path and width-scale Gaussian FFT ideas, alternative bead cues,
+outputs, limitations and a recommended comparison. No numerical implementation,
+scene edit, supplied status/usage, dependencies, delegation or ownership transfer.
+
+### R109 outcome and checks
+
+Added six bead-analysis methods to METHODS.md: B1 centerline/nearby HSV paths,
+B2 width-scale Gaussian FFT, B3 spatial repetition/patch matching, B4 seam/outline
+tracing, B5 learned color regions with separate highlight handling, B6 local
+occlusion-aware 3D/neighbor fitting. Each states procedure, outputs and failures.
+Retained the maker's direction1-versus-tangent helicity proposal, with frequency-
+to-spatial interpretation and synthetic coordinate/sign calibration before
+inference. Width comparable to W is now supplied; FWHM=W/sigma=W/2.355 is an
+explicit possible convention, not a fitted value or assumed maker definition.
+
+Recommended initial local B1+B2 comparison; B3 helps interpret spectral peaks
+but autocorrelation from the same data is not independent evidence. B4/B5 supply
+candidate regions/colors and B6 later constrains weak black/occluded cases.
+Clarified that centerline traversal is not crochet order, dark troughs and bright
+peaks are hypotheses, highlights are not centers, and path chords/visible area/
+neighbor spacing/full-body size differ. Image-learned palette remains distinct
+from known photo colors and POV-Ray material fitting. No new detector, helicity,
+size, color or index result claimed. Updated initial brief/plan/prior-work/handoff;
+added method-section navigation. Existing background and shadow methods retained.
+
+Checks pass: 62 local links/anchors, 11 unique pinned historical blobs exist,
+six bead methods and five background methods retained, opening R092 verbatim
+unchanged, exactly six Markdown files changed, whitespace clean. Earlier code,
+images/scenes and reports unchanged; no runtime tests/renders warranted for a
+methods-only addition. No failed checks or new dependencies/questions. Scoped
+publication follows; routine outputs/environments excluded, remote/final status
+verified afterward. Stay in the conversation for method review with gpt-6-astra /
+High; use a fresh /new for numerical work. Pending boundary bridge remains the
+next implementation; once a usable centerline exists, compare local B1+B2 and
+stop for illustrated review before whole-necklace indexing/pattern inference.

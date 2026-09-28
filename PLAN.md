@@ -21,6 +21,16 @@ useful spline without broad cast-shadow bias; pixel-perfect masks can wait for
 later geometry refinement. Judge signed displacement, stability and supported
 coverage, preserving unresolved stretches.
 
+R109 adds [six bead-analysis methods given a centerline](METHODS.md#bead-analysis-given-approximate-boundaries-and-a-centerline):
+centerline HSV paths, Gaussian-window FFT at necklace-width scale, spatial
+repetition, seam tracing, color/highlight regions, and local 3D/neighbor fitting.
+Recommend the maker's HSV + FFT pair first, with spatial repetition as an
+interpretation check; then region/color and geometry refinement. This is a
+conditional methods discussion, not a recovered centerline or a new detector.
+The bounded boundary task remains pending; once a usable curve is available,
+compare these cues on a few sections and stop for illustrated review before
+whole-necklace indexing or pattern recovery.
+
 One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.
@@ -39,9 +49,9 @@ the algorithm's inputs. These generalization tests have not yet run.
 | Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R104 hue trend survives ±8 px; hue maxima and reference-scaled texture crossings remain unreliable as edge rules |
 | Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | Deferred; research primary sources when this phase starts |
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
-| Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | Deferred; offer methods before fitting |
-| Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | Deferred |
-| Helicity and spacings | Band-pass FFT peaks for directions 1/6/7; direction-1 angle relative to local centerline | R098 maker method saved; deferred with synthetic sign/convention validation |
+| Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | R109 six methods documented; implementation deferred |
+| Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | R109 image-appearance methods documented; material fitting deferred |
+| Helicity and spacings | Band-pass FFT peaks for directions 1/6/7; direction-1 angle relative to local centerline | R098/R109 maker method saved, width-scale window specified qualitatively; synthetic sign/convention validation pending |
 | Repeating pattern | Competing sequences of length 200–400 with explicit uncertainty | Deferred; no photo-2 sequence established |
 
 The phases can require revisiting shared parameters; lighting and material are
