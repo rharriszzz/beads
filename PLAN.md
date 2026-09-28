@@ -31,6 +31,13 @@ The bounded boundary task remains pending; once a usable curve is available,
 compare these cues on a few sections and stop for illustrated review before
 whole-necklace indexing or pattern recovery.
 
+R110 clarifies prior practical FFT success and [the source baseline](photo2/FFT_EXPLORER_NOTES.md):
+Gaussian-window low-pass power for background (saved scanner uses a fraction),
+band-pass plus three opposite peak pairs for directions1/6/7. Reproduce the raw
+explorer statistic before replacing it with detrending/spatial texture; method
+priority becomes appearance + FFT + smooth completion, spatial cue as comparator.
+This updates the recommendation above without claiming a new benchmark.
+
 One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.
@@ -83,7 +90,13 @@ R105 supplies the next strategy: move farther along the necklace in either
 direction until boundary evidence is reliable; bridge ambiguous stretches with
 a smooth large-scale envelope, keeping bead-scale scallops separate.
 
-Next bounded task: expand one ambiguous neighborhood along the necklace, show
+Next bounded task: reproduce the saved explorer low-pass-fraction baseline on a
+few existing lit-paper, shadow-paper and bead contexts; compare the current beads
+FFT/spatial statistics with explicit masks/denominators and stop at illustrated
+local evidence. No whole-image scanner or three-pair direction implementation in
+that step. This prepares the pending boundary task below, without discarding it.
+
+Pending boundary task: expand one ambiguous neighborhood along the necklace, show
 candidate reliable boundary anchors on either side and compare a short smooth
 bridge with the raw image. Compare local cubic interpolation, a robust smoothing
 spline, and coupled inner/outer envelopes as implementation options. Start with

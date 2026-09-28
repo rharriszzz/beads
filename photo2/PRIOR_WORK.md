@@ -40,13 +40,20 @@ quick model and applicable task row; follow detailed recipes only as needed.
 
 ## Reusable FFT ideas
 
+**R110 update:** the maker reports Gaussian-window FFT works well for shadowed
+background and for bead directions. [Inspected source/metric details](FFT_EXPLORER_NOTES.md)
+identify the scanner's `hp_removed` as low-pass retained power fraction and the
+explorer's opposite-pair grouping/reconstruction. Reproduce that raw-window
+baseline before substituting detrended texture or spatial filters. Directional
+analysis explicitly seeks three noncentral opposite pairs for 1/6/7.
+
 Read local fft-image-explorer main at
 `2caf0707c2b63a0d7540e2cac447d2f1b883d8c1`: README and Gaussian-window code in
 map_from_fft.py. It uses spatial Gaussian weighting and local FFT metrics.
 The new probe independently implements a weighted-plane residual and records its
 own parameters. No external code dependency, spline import or pattern lookup.
 Other permitted repositories/branches can be consulted when a specific phase
-needs them; this step did not conduct another exhaustive branch review.
+needs them; R110 compared the two FFT source files on main/radial-sum read-only.
 
 Historical generated-JPEG inventories remain there, with unresolved extents,
 palette/border uncertainty, missing indices and no verified complete inventory.

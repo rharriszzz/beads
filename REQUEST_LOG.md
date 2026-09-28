@@ -629,3 +629,57 @@ verified afterward. Stay in the conversation for method review with gpt-6-astra 
 High; use a fresh /new for numerical work. Pending boundary bridge remains the
 next implementation; once a usable centerline exists, compare local B1+B2 and
 stop for illustrated review before whole-necklace indexing/pattern inference.
+
+## R110 — Prior Gaussian FFT success, low-pass power and three peak pairs (2026-09-28)
+
+User: “I made a repo for studying how the 2d fft is usefule both in identifying
+background (especially where it is in shadows), and for identifying bead
+directions; in both cases a 2d fft with a gaussina mask works pretty well.   In
+the first case, I just used a low pass filter, and calculated the power of the
+signal, as I saw that usually it could tell background from non background.  In
+the second, I used a bandpass filter, to leave the signal at the anticipated
+bead spacings, while filtering most of the rest out.  Then we look for 3 pairs
+of peaks in the 2d fft, and if you find 3 pairs of peaks, these will represent
+the 3 directions, of 1,6,7.”
+
+Preflight daisy, clean8399fa3, no stashes, origin0/0 after fetch. Read current
+workflow/handoff/log/plan, prior FFT notes, method sections and shape quick/task
+model. Sibling fft-image-explorer clean on main2caf070; inspected main/radial-sum
+FFT source, metadata and relevant history read-only, no sibling fetch or writes.
+Scope: record maker's reported success as prior practical evidence, distinguish
+low-pass and retained-power metrics, identify reusable peak-pair implementation,
+and correct the method priority. No new photo classifier, direction labels or
+benchmark. No supplied status/usage, dependencies, delegation or transfer.
+
+### R110 outcome and checks
+
+Added photo2/FFT_EXPLORER_NOTES.md with immutable source links/hashes, exact power
+formulas and saved configuration. The scanner's hp_removed computes low-pass
+retained fraction, complementary to high-pass retained fraction at the same hard
+cutoff; it uses raw Gaussian-windowed luminance, unlike current detrended beads
+RMS. Explorer separately reports low/high-pass removed and combined remaining
+power. One saved map metadata record has window128, cutoff8%, stride8; current
+source implies sigma12.8 and cutoff0.05657 cycles/pixel. This is not a newly
+reproduced map or proof of historical map/code identity. No thresholds transferred.
+
+Peak code merges opposite offsets, includes origin in generic top_k7 output, and
+provides reconstruction with retained complex coefficients. Saved explicit target:
+three noncentral opposite pairs for1/6/7; do not confuse log-magnitude support with
+power or treat arbitrary harmonic pairs as automatically labeled directions.
+Maker's reported successful experience is retained as prior evidence, separate
+from future coordinate/sign calibration and any new benchmark.
+
+Methods/brief/prior-work/plan/handoff now prioritize reproducing the maker's raw
+FFT baseline, with spatial texture and detrended probes as comparisons. Earlier
+source/model notes and experimental artifacts retained. Next bounded step is a
+small baseline comparison on existing contexts, then illustrated review; the
+boundary bridge follows later, and direction estimation is still deferred.
+
+Checks: 69 local links/anchors, 14 unique historical linked blobs, three SHA256
+source records, main/radial-sum source equivalence, clean sibling working tree,
+parameter arithmetic and original opening verbatim all pass. Seven Markdown files
+only; earlier code/scenes/images/reports unchanged; whitespace clean. No photo
+analysis, GUI, render or numerical classification tests for this source/doc review.
+No failures or new questions. Scoped commit/push and remote verification follow;
+routine outputs/environments excluded. gpt-6-astra / High; stay here for discussion,
+fresh /new for the next bounded baseline experiment. No automatic switch.

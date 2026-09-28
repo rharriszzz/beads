@@ -46,7 +46,7 @@ background classifier on this branch.
 | Method | Main evidence | How it uses the margins | Illumination limitation | Status |
 | --- | --- | --- | --- | --- |
 | 1. Fit paper appearance while allowing shading | Paper reflectance/texture consistent with a local lighting field | Learn appearance from several perimeter regions | Abrupt/colored illumination and bead colors can fit the same model | Proposed; old fixed-HSV masks are a separate baseline |
-| 2. Gaussian-window spectral texture | Power and directional structure after removing slow variation | Learn paper spectra and noise distributions | Hard shadows create power; dark smooth beads may not | Local FFT probes implemented, no global mask |
+| 2. Gaussian-window spectral texture | Maker's raw-window low-pass power fraction; detrended texture as a separate comparison | Learn paper spectra and noise distributions | Hard shadows change spectra; weak dark signals remain ambiguous | Existing explorer baseline found in R110; beads probes use different statistics |
 | 3. Spatial texture and local ordering | Small-scale structure across several spatial scales | Learn distribution of paper residuals and local order changes | Paper grain, sharp shadows, clipping and low signal | Gaussian residual implemented; ordering extension proposed |
 | 4. Seeded region propagation | Agreement of neighboring regions with paper/bead evidence | Start with known exterior-paper seeds | Can leak across weak edges; enclosed paper needs separate support | Proposed; not just a border flood fill |
 | 5. Boundary anchors and smooth envelope completion | Reliable silhouette sections plus larger-scale geometry | Establish exterior side and reject contour excursions into clear margins | Smooth wrong outlines are possible; small gaps need separate treatment | Maker-directed next comparison; bridge not yet fitted |
@@ -118,10 +118,22 @@ and uncertainty across scales, not a thresholded contour by default.
 
 Start with the maker's `r = 0.05 * sqrt(width * height)`; explicitly state whether
 `r` is sigma. The existing convention is a spatial Gaussian window with sigma
-`r`, not simply a Gaussian blur of the image. Fit/subtract a weighted constant
-or plane, apply the window, then compute the 2D FFT. Compare retained band power
-with paper controls; also retain the spectrum's directional organization and
-band-power ratios. Keep absolute power and normalized spectral shape separate.
+`r`, not simply a Gaussian blur of the image. **R110 clarifies the maker's useful
+background method: Gaussian-window FFT, low-pass filtering and a power score.**
+The inspected explorer scanner computes the fraction inside the central disk,
+named `hp_removed` because it is the power removed by a complementary high-pass
+mask. It uses raw windowed luminance, without subtracting a fitted plane.
+
+Reproduce that baseline before changing it. For the same spectrum and hard
+cutoff, low-pass retained fraction equals one minus high-pass retained fraction;
+this connects the latest description to the earlier central-removal description.
+Absolute power and fractions are different, and the maker's exact historical
+interactive settings are not all known. [Source review, formulas and one saved
+configuration](photo2/FFT_EXPLORER_NOTES.md) make these distinctions explicit.
+
+Compare weighted-mean/plane removal and retained texture bands as **separate
+variants**, not silent replacements. Also retain directional organization.
+Keep absolute power and normalized spectral shape separate.
 Use a noise floor and minimum signal requirement before normalizing weak spectra.
 Estimate paper reference distributions from multiple separated margin regions;
 check interior shadow controls before extending that reference across the image.
@@ -246,7 +258,7 @@ the model and existing local experiments**, not a new accuracy benchmark.
 | --- | --- | --- | --- |
 | A. Expand the HSV region using actual shadowed-paper samples | Add independently supported shadow strips/patches as separate modes; retain their locations | Requires trustworthy sample membership; the saved red/shadow overlap survives | Use alongside margin samples; strongest direct color evidence available |
 | B. Predict a shading family from lit paper | Permit darker versions of learned paper; in a restricted linear-RGB model compare `a * paper`, with positive scale `a` | Real shadows can change hue/saturation through mixed lights and reflections; near-black beads fit too | Candidate generator or fallback, never a blanket “lower V means paper” rule |
-| C. Follow texture across a lighting change | Compare fine paper structure after local trend removal/limited contrast normalization; use spatial filters or Gaussian-window FFT | Paper grain, hard shadows, mixed windows and dark bead interiors confuse the cue | Use spatial texture first for simplicity, retain FFT as a paired comparator |
+| C. Follow texture across a lighting change | Compare local spectral shape or spatial structure through the darker region | Paper grain, hard shadows, mixed windows and weak dark signals confuse the cue | R110: reproduce the maker's Gaussian FFT baseline first; compare spatial texture on the same samples |
 | D. Grow supported paper regions into shadow | Propagate through gradual appearance changes with texture support; allow a brightness edge without automatically treating it as a surface edge | Weak bead edges permit leakage; no exterior route reaches a fully enclosed paper island | Use only conservatively if local candidates need connection; not the first whole-image solver |
 | E. Complete the necklace boundary from clearer neighbors | Infer the coarse bead envelope between supported sections; paper beyond it remains background even if dark | Smooth but biased anchors produce a smooth wrong curve; long gaps and bends need sensitivity checks | Primary way to stop ambiguous shadow bands pulling the spline outward |
 
@@ -293,17 +305,20 @@ the proposed combined method.
 
 ### Which combination I would choose, and why
 
-Choose **method 1 + method 3 + method 5** as the first practical combination:
+R110 strengthens the FFT choice with the maker's prior practical experience.
+Choose **method 1 + method 2 + method 5**, keeping method 3 as the spatial
+comparison; this supersedes R108's spatial-first proposal:
 
 1. **Learn paper colors from the image.** Start with margin strips; add only
    supported shadow-paper samples. Compare an HSV box with a circular-hue density
    region. Use a restricted shading extension to propose additional candidates,
    not to turn every low-V pixel into background. This makes use of the maker's
    successful sampling idea without hard-coding the paper's pigment.
-2. **Check candidates with local structure and context.** Use a small spatial
-   filter stack as the initial texture check because its responses are easy to
-   relate to the image. Run the existing FFT cue on the same patches as a
-   comparison, keeping it if its spectral information improves discrimination.
+2. **Check candidates with local structure and context.** Reproduce the explorer's
+   raw Gaussian-window low-pass fraction, which the maker found useful even for
+   shadows. Compare the beads detrended FFT statistics and a spatial filter stack
+   on identical patches; preserve parameters and denominators so the comparison
+   actually tests the methods described.
    These correlated cues are not independent votes; disagreement means weak
    evidence. Neither low texture nor a matching HSV value alone proves paper.
 3. **Fit the broad curve from supported boundary sections.** Use several anchors
@@ -316,7 +331,8 @@ Choose **method 1 + method 3 + method 5** as the first practical combination:
 I would postpone a full graph propagation system and a detailed light/reflectance
 fit until this combination fails in a way they could address. They add unknowns
 and failure modes without yet resolving the key issue: which boundary evidence
-is trustworthy. FFT remains part of the comparison, not a required final mask.
+is trustworthy. FFT is now the first texture baseline to reproduce, not a promise
+that every final mask must use it.
 No method choice here has been benchmarked as superior on the full photograph.
 
 ### What counts as good enough for this stage
@@ -441,7 +457,8 @@ but keep the tangent variation small. An anisotropic window is an option if the
 cross-rope extent needs limiting while longitudinal support remains useful.
 
 Remove slow variation, suppress the central low-frequency region and very high
-frequencies, then inspect peak pairs in a bead-scale band. Initially explore a
+frequencies, then look for **three opposite, noncentral peak pairs** in a bead-scale
+band. R110 explicitly identifies these as the maker's 1/6/7 families. Initially explore a
 range of bands because bead spacing is itself an output; use B1/B3 only as loose
 scale proposals. Run intensity first; compare color-sensitive channels if needed.
 Do not Fourier-transform wrapped H as an ordinary scalar. Retain raw-versus-
@@ -452,6 +469,11 @@ The maker reports that these spectra reveal families 1/6/7 and that **direction
 1's angle relative to the centerline directly determines helicity**. Use this as
 the primary directional hypothesis. Show peak pairs beside corresponding image
 structures, optionally reconstructing selected bands to see what produced them.
+The explorer already groups opposite peaks and offers pair reconstruction; its
+generic peak list includes the origin and does not automatically identify three
+physical families. [R110 source review](photo2/FFT_EXPLORER_NOTES.md) records what
+to reuse. Preserve weak/extra/harmonic candidates instead of forcing any three
+pairs into the labels merely because conjugate symmetry is present.
 Frequency vectors describe phase variation; their angle is not automatically the
 real-space bead-neighbor angle. Convert/calibrate that relationship before labeling
 a peak “1,” “6” or “7.” These labels are index offsets, not frequency-radius ratios

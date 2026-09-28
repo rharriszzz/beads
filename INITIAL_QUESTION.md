@@ -77,9 +77,16 @@ Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
   use H/S/V on 0–255. Local hue changes can still give boundary clues. Do not
   transfer those boxes to the original JPEG or treat overlap as proof that hue
   is useless. See [the recovered provenance](photo2/HUE_TRANSITIONS.md).
-- In the maker's background FFT experiment, remove the strong central peak and
-  inspect the remaining power. For direction analysis, reject both low and high
-  frequencies and examine peaks at the bead spacings for directions 1/6/7.
+- The maker reports Gaussian-window FFT works well in `fft-image-explorer` for
+  background, especially shadowed paper, and for bead directions. Latest background
+  description: use a low-pass filter and measure power. An earlier description
+  removed the central peak and inspected remaining power. The saved scanner's
+  `hp_removed` is low-frequency retained power divided by total power; this is
+  complementary to retained high-frequency fraction with the same cutoff.
+  Preserve the exact statistic when reproducing it; see [source notes](photo2/FFT_EXPLORER_NOTES.md).
+  For direction analysis, reject both low and high frequencies outside expected
+  bead spacings, then find **three pairs of opposite noncentral peaks** representing
+  directions 1/6/7. This is prior maker experience, not a newly measured result here.
   The maker proposes that direction 1's angle relative to the local centerline
   determines helicity; demonstrate conventions and validate it before claiming
   recovery. The Gaussian “radius” convention remains unspecified; existing
@@ -206,7 +213,7 @@ Historical construction sources are pinned at commit
 | Palette, checked repeats, unknown colors, neighbors, free conventions, example | Same log, R025/R028/R030/R033/R035 |
 | Rectangular cues, corrected spiral recollection, holes, thread, gloss/highlights | Same log, R038/R042/R049–R051/R054; flash unknown in R057 |
 | Ignore slivers; planar centerline, exposed shapes and camera view | Same log, R069/R086; [SHAPE_REASONING.md](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/SHAPE_REASONING.md) |
-| Color independence, FFT advice, HSV evidence, smooth bridging, margins, HSV-region proposal, spline purpose and centerline bead cues | [Current request log](REQUEST_LOG.md), R092–R109 |
+| Color independence, FFT advice, HSV evidence, smooth bridging, margins, HSV-region proposal, spline purpose and centerline bead cues | [Current request log](REQUEST_LOG.md), R092–R110 |
 
 ### Branch-history review for this consolidation
 

@@ -10,6 +10,51 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R110 — Reuse the maker's actual FFT baseline and three-pair method
+
+Maker reports Gaussian-window FFT worked well for shadowed background and bead
+directions. Latest background description is low-pass power; directional method
+is band-pass around anticipated bead spacings, then three opposite peak pairs
+representing1/6/7. Treat this as prior practical experience, not an untried idea.
+
+[Source review and hashes](photo2/FFT_EXPLORER_NOTES.md) inspected fft-image-explorer
+main2caf070 read-only; map_from_fft.py and fft_image_explorer.py match radial-sum.
+Scanner hp_removed = 100*P_low/P_total, computed from raw Gaussian-windowed
+luminance without plane subtraction. At a matching hard cutoff this complements
+the high-pass retained fraction, relating R110 to R097. Do not confuse fractions,
+absolute power or the beads detrended RMS. Saved metadata window128/cutoff8%/
+stride8 is one historical configuration, not universal maker settings; current
+scanner implies sigma12.8 and cutoff~0.05657 cycles/pixel. Display near100 is not
+the metric; original map/code provenance and accuracy were not audited.
+
+Explorer merges opposite peak offsets and provides complex-coefficient pair
+reconstruction. Generic top_k7 includes the center, not exactly three physical
+families. Seek three nonzero pair representatives and interpret them as maker's
+1/6/7 families with image reconstruction and coordinate/helicity checks. Harmonics
+or arbitrary conjugate pairs do not automatically establish correct labels.
+No new map, classification, direction or helicity result in this documentation step.
+
+METHODS/INITIAL_QUESTION/PRIOR_WORK/PLAN now preserve this explicitly. Background
+recommendation changes from appearance+spatial+geometry to appearance+FFT+geometry,
+keeping spatial as comparator. The raw source baseline must be reproduced before
+claiming that detrending or other replacement improves it.
+
+Preflight daisy, clean8399fa3, no stashes, beads fetch/upstream0/0. Sibling clean
+main2caf070, no fetch/writes/checkout; inspected relevant source/history/metadata.
+No supplied status/usage, dependencies, delegation, ownership transfer or GUI run.
+Checks pass: 69 local links/anchors, 14 pinned historical blobs, three source
+SHA256 records, matching main/radial-sum FFT files, clean sibling, parameter
+arithmetic, original opening unchanged and whitespace. Seven Markdown files;
+prior numerical artifacts/code unchanged. No new image benchmark or failed check.
+Scoped publication and remote verification follow this pre-delivery record.
+
+**Next bounded task:** reproduce the source low-pass-fraction baseline on a few
+existing lit-paper/shadow-paper/bead contexts, compare current FFT/spatial metrics
+with explicit windows/masks/numerators/denominators, then stop at illustrated
+local evidence. No whole-image scan, boundary fit or three-pair estimator yet.
+The anchor/bridge task stays pending after this focused baseline check. Recommend
+**gpt-6-astra / High; stay here for discussion, fresh `/new` for the experiment**.
+
 ## R109 — Six bead-analysis methods conditional on a usable centerline
 
 Maker asks for alternatives for bead colors/identity, helicity, pixel size and
