@@ -10,6 +10,41 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R113 — Recover the 13 explanation and reconcile the active plan
+
+User asks for a future reminder of why multiples of 13 hinder inversion, then
+comparison/revision of METHODS and the next-step plan. Read historical R018,
+PLAN and R023 VISIBILITY at 2c4c116. At exact 6.5 beads/turn, 13m beads span
+2m full turns: repeated slots return to the same cross-section phase and can
+remain hidden. Saved in INITIAL_QUESTION and METHODS with pinned sources.
+Actual views/closure affect coverage; the old study showed weak support, not
+a universally invisible slot. Excluding multiples of 13 does not ensure full
+coverage. R112's photo-specific exclusion remains unchanged.
+
+Review found contradictory boundary-first scheduling and an unstated local
+geometry/detection prerequisite. METHODS is now explicitly a catalog, its old
+“current background aspect” heading and unconditional boundary-next instruction
+are corrected. PLAN begins with one authoritative active schedule; earlier
+rationale is labeled historical. Later checkpoints connect expanded geometry/
+indices and exact closure to shortest-repeat recovery and then appearance fitting.
+Both FFT explorations remain explicit bounded comparisons with optional adoption.
+
+**Next bounded task:** one local observation/index/color pilot. Start with raw
+context, body/interior proposals and tangent/spacing evidence (B1/B4/B5), then
+I1+C1 where supported, targeted I2/C2 where needed. Record assistance and compare
+a known synthetic counterpart with evaluator-only truth. Deliver observation/
+edge tables, relative index alternatives, palette evidence, uncertainty panels
+and one small illustrated question. Stop at review even if labels remain unresolved;
+do not force indices or run full-ring/count/pattern/appearance work in this step.
+Use a local boundary bridge only if geometry evidence requires it.
+
+Preflight daisy, clean 3c12fb1, photo-2-reconstruction-v2, no stashes; fetched
+origin and verified0/0. Read workflow/latest records and relevant historical
+visibility evidence. Documentation only; no new photo measurements, numerical
+experiments, scene edits, dependencies, delegation or supplied usage/status.
+Checks/outcomes are appended in R113; publication follows the pre-delivery record.
+Recommend gpt-6-astra / High; stay for discussion, fresh /new for numerical work.
+
 ## R112 — Shortest repeat and later POV-Ray appearance methods
 
 Maker says complete bead indexing establishes exact N, asks for one/two methods

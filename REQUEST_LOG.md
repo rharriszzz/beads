@@ -785,3 +785,50 @@ no persistent code/tests added. No runtime pipeline tests or renders warranted
 for this documentation step; no failed checks. Prior code, scenes, photos and
 experimental artifacts unchanged. Scoped add/commit/push and remote-tip/final
 status verification follow this pre-delivery record.
+
+## R113 — Explain the multiple-of-13 ambiguity and reconcile the plan (2026-09-28)
+
+User: “So I know why multiple of 13 is bad for this reverse analysis, bug can
+you add a sentence to remind your future self why this is bad, please (it was
+discussed on the previous branch).  Next, please compare this new methods
+document with your plans for the next steps.  Do you want to update either the
+methods document, or the planned step?  If so, then revise any files.”
+
+Preflight daisy, clean 3c12fb1, photo-2-reconstruction-v2, no stashes; fetch
+succeeded and upstream0/0. Read AGENTS/current handoff/latest log/plan, relevant
+METHODS sections, initial brief and prior-work quick model. Inspected R018 and
+R023 visibility report plus old plan at 2c4c116 read-only. No branch switching,
+dependencies, delegation, supplied usage/status or ownership transfer.
+
+### R113 outcome
+
+Added the requested reminder: 13m beads are 2m full turns at 6.5 beads/turn,
+so the same repeat slot returns to the same cross-section phase and can remain
+hidden across occurrences. Pinned historical links preserve the maker's
+counterexample and measured caveat: actual view/closure affects coverage and the
+old tested view showed weak support, not a wholly invisible slot at every pixel
+threshold. Nonmultiples of 13 do not guarantee fully readable slot coverage.
+
+Compared methods with next-step instructions. Corrected stale unconditional
+boundary-first scheduling, marked the method collection as a catalog rather
+than an execution order, and put one authoritative active schedule at the top
+of PLAN. Kept the local indexing/color pilot next but made body/interior and
+tangent/spacing evidence explicit prerequisites within that pilot. Preserve
+assistance and unresolved alternatives; review may stop without confident indices.
+Both requested FFT explorations now have explicit supporting tasks, with optional
+adoption and no perfect-mask gate. Later checkpoints connect full-ring geometry/
+index closure to shortest-repeat evidence and local POV-Ray appearance review.
+Updated handoff. No algorithm implementation, new images or photo result claimed.
+Stop after this documentation reconciliation. Next: local pilot with tracked
+illustrated question; gpt-6-astra / High, stay for discussion, fresh /new for
+numerical work. No automatic phase or session change.
+
+### R113 checks
+
+Passed: 80 local links/anchors; unchanged verbatim opening; append-only request
+log; exactly five Markdown-only paths; three pinned historical source blobs;
+13/6.5 phase arithmetic; stale-schedule checks; git diff --check. The rg search
+for removed stale phrases returned no matches (normal exit1, not a failed check).
+No runtime tests/renders needed for this documentation-only revision, no failed
+validation and no source/image/artifact changes. Scoped publication and remote
+tip/final working-tree verification follow this pre-delivery record.

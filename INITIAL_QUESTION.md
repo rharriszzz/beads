@@ -192,6 +192,12 @@ R112 strengthens the earlier recollection: **this necklace's repeat length is
 not a multiple of 13**. Apply that exclusion to photo 2; keep the general solver
 configurable and retain multiples of 13 as synthetic tests. It does not imply
 that the total bead count is indivisible by 13.
+Reminder from the earlier discussion: at 6.5 beads per turn, 13 beads span two
+full turns, so a multiple-of-13 repeat returns each color slot to the same
+cross-section position and can keep that slot hidden across repeat occurrences.
+See the [historical visibility check](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/VISIBILITY.md);
+actual coverage also depends on viewing geometry, and excluding such repeats
+does not by itself guarantee that every slot is readable.
 
 Once every bead has a complete, consistent full-string index, the total count
 is known. Find the smallest color repeat matching all clearly visible indexed

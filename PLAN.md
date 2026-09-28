@@ -3,14 +3,73 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
+## Active schedule after the R113 methods review
+
+The next aspect remains **local bead observations, relative indices and colors**.
+Do not restart global boundary optimization or attempt the full pattern now.
+The comparison with METHODS found stale boundary-first language, an implicit
+assumption that usable local geometry already existed, and later phases listed
+without clear input/output checkpoints. The schedule below replaces those gaps;
+historical rationale follows for provenance, not as competing next-step orders.
+
+1. **One local evidence pilot (next).** Select one diagnostic photo patch with
+   several clear bodies, same-color adjacency and a dark/highlight case where
+   available. Show raw context, candidate bodies/interior samples and local
+   tangent/spacing evidence using B1/B4/B5 before attempting I1 neighbor labels
+   and C1 color summaries. Use I2/C2 only for a specific ambiguity. Record manual
+   assistance; a patch selected for review is not automatic necklace localization.
+   Compare with a small known synthetic counterpart, with truth used only for
+   evaluation. Inventory unresolved visible bodies as well as supported ones.
+   Deliver raw/candidate/uncertainty panels, observation and edge tables, relative
+   index alternatives, palette evidence, checks and one focused illustrated
+   question in the tracked question file. **Stop for local review**, even if
+   insufficient evidence prevents a confident graph. No full-ring count yet.
+2. **Expand geometry and indices after review.** Extend useful local evidence
+   around the necklace; bridge only supported ambiguous boundary stretches,
+   connect index components, test helicity conventions and check closure to
+   establish exact N. Review gaps and coverage before calling the inventory
+   complete. Run the two supporting FFT comparisons below in separate bounded
+   steps during this phase, or earlier if the first pilot needs one; choosing
+   not to adopt FFTs must not erase the requested exploration.
+3. **Shortest-repeat checkpoint.** With resolved global indices, verified exact
+   N and accepted color evidence, adapt historical P1 and check with P2. Apply
+   photo-specific L<400, L dividing N and L not divisible by 13; include shorter
+   candidates below the rough 200 estimate. Deliver rejected-length witnesses,
+   slot support/unknowns, alternatives and withheld-section predictions. Stop
+   to review unresolved pattern slots rather than inventing their colors.
+4. **POV-Ray appearance checkpoint.** Once geometry and palette assignments
+   support it, compare A1/A2 paper-shadow/highlight initialization, A3 pooled
+   pigments and A4 bounded render refinement on one section plus a held-out
+   section. Stop at raw/render/residual review before full-image tuning. Unknown
+   pattern slots outside the tested observations need not block a local material
+   experiment, but must remain explicit. Final scene needs both completed or
+   explicitly uncertain sequence inputs and tested appearance parameters.
+
+Supporting explorations are bounded tasks, not mandatory algorithm components:
+
+- **Background FFT:** compare the explorer's raw Gaussian low-pass power fraction
+  with current detrended/spatial cues on lit paper, shadowed paper and beads;
+  report exact windows, masks and power normalization. Use a local anchor/bridge
+  comparison if ambiguous boundaries prevent useful tangent/width evidence.
+- **Directional FFT:** compare Gaussian band-pass peak pairs with spatial neighbor
+  evidence on the same short section, testing 1/6/7 labels and helicity conventions
+  against synthetic truth. Show window/band masks, pair reconstructions/direction
+  overlays and sensitivity; retain a non-FFT solution if it works better.
+
+These checkpoints do not authorize running all phases in one turn. A standalone
+continue executes the unfinished bounded step and stops. Recommend gpt-6-astra /
+High, stay for methods discussion and use a fresh /new for the numerical pilot.
+
+## Evidence and rationale retained from preceding requests
+
 R106 documentation detour completed: [initial question and construction facts](INITIAL_QUESTION.md)
 and [reusable methods collection](METHODS.md). The catalog proposes five background
 methods under varying illumination, with failures and validation plans. No new
 classifier or contour was implemented. All supplied images place the bracelet
 centrally with substantial margins; use that generic prior for background seeds,
 not fixed bead coordinates or a prescribed border width. Enclosed paper/gaps need
-support beyond exterior connectivity. The anchor/bridge experiment below remains
-the next bounded numerical task; this detour did not run it.
+support beyond exterior connectivity. The anchor/bridge experiment was then the
+next task; it remains unrun and is now supporting work under the active schedule.
 
 R107–R108 extend the [methods discussion](METHODS.md#shadowed-paper-alternatives-and-evaluation-for-splines)
 with the maker's strip-to-HSV-region proposal and five shadow treatments.
@@ -24,7 +83,7 @@ coverage, preserving unresolved stretches.
 R109 adds [six bead-analysis methods given a centerline](METHODS.md#bead-analysis-given-approximate-boundaries-and-a-centerline):
 centerline HSV paths, Gaussian-window FFT at necklace-width scale, spatial
 repetition, seam tracing, color/highlight regions, and local 3D/neighbor fitting.
-Recommend the maker's HSV + FFT pair first, with spatial repetition as an
+R109 recommended the maker's HSV + FFT pair first, with spatial repetition as an
 interpretation check; then region/color and geometry refinement. This is a
 conditional methods discussion, not a recovered centerline or a new detector.
 The bounded boundary task remains pending; once a usable curve is available,
@@ -36,7 +95,8 @@ Gaussian-window low-pass power for background (saved scanner uses a fraction),
 band-pass plus three opposite peak pairs for directions1/6/7. Reproduce the raw
 explorer statistic before replacing it with detrending/spatial texture; method
 priority becomes appearance + FFT + smooth completion, spatial cue as comparator.
-This updates the recommendation above without claiming a new benchmark.
+This was a method-priority update, not a benchmark; the active R111/R113 schedule supersedes
+its implication that FFT work must come first.
 
 **R111 supersedes FFT-first scheduling:** explore FFTs for both background/shadows
 and bead directions/spacings/helicity, but adoption is optional. The next inference
@@ -111,14 +171,9 @@ R105 supplies the next strategy: move farther along the necklace in either
 direction until boundary evidence is reliable; bridge ambiguous stretches with
 a smooth large-scale envelope, keeping bead-scale scallops separate.
 
-Next bounded task: a short local visible-bead inventory and index/color pilot.
-Show the raw patch, supported bodies/interiors, candidate signed neighbors,
-component-index alternatives and palette assignments; compare/check against a
-known synthetic counterpart with assistance declared. Use available local
-geometry/centerline evidence, improving it only as needed; a perfect global mask
-or completed FFT pipeline is not a prerequisite. Stop at illustrated local review,
-before full-necklace numbering/count closure or repeat inference. FFT comparisons
-in the two requested roles remain scheduled explorations, not required outcomes.
+The active schedule above is the authoritative next-task description. No confirmed
+centerline or bead detections yet exist: establish evidence within the local pilot
+before propagating indices. A perfect global mask is not a prerequisite.
 
 Available supporting boundary task: expand one ambiguous neighborhood along the necklace, show
 candidate reliable boundary anchors on either side and compare a short smooth

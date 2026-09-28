@@ -6,7 +6,7 @@ in [PLAN.md](PLAN.md). Start each future entry with its inputs, output, assumpti
 procedure, known failures, validation and a reproduction link. Distinguish a
 proposal from an implemented procedure and a validated capability.
 
-Start with [background methods](#current-aspect-background-pixels-under-varying-illumination),
+Start with [background methods](#background-pixels-under-varying-illumination),
 [shadow handling for splines](#shadowed-paper-alternatives-and-evaluation-for-splines),
 [bead methods given a centerline](#bead-analysis-given-approximate-boundaries-and-a-centerline),
 [index and color assignment](#assign-bead_index-and-color-to-clearly-visible-beads),
@@ -17,7 +17,14 @@ Start with [background methods](#current-aspect-background-pixels-under-varying-
 spacings/helicity, alongside non-FFT alternatives. Adoption is optional in either
 use; an FFT result is not a prerequisite for the index/color pilot below.
 
-## Current aspect: background pixels under varying illumination
+**Execution order (R113):** this is a method catalog, not a requirement to run
+every section in document order. The next bounded task is the
+[local observation/index/color pilot](#outputs-evaluation-and-the-bounded-first-pilot).
+[PLAN.md](PLAN.md) defines its evidence requirements, stopping point and later
+checkpoints. Background bridges and the two FFT explorations supply evidence
+where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
+
+## Background pixels under varying illumination
 
 **Background means every visible part of the paper**, including cast shadows,
 the enclosed center and gaps between beads. It does not mean “magenta,” “bright,”
@@ -56,7 +63,7 @@ background classifier on this branch.
 | 2. Gaussian-window spectral texture | Maker's raw-window low-pass power fraction; detrended texture as a separate comparison | Learn paper spectra and noise distributions | Hard shadows change spectra; weak dark signals remain ambiguous | Existing explorer baseline found in R110; beads probes use different statistics |
 | 3. Spatial texture and local ordering | Small-scale structure across several spatial scales | Learn distribution of paper residuals and local order changes | Paper grain, sharp shadows, clipping and low signal | Gaussian residual implemented; ordering extension proposed |
 | 4. Seeded region propagation | Agreement of neighboring regions with paper/bead evidence | Start with known exterior-paper seeds | Can leak across weak edges; enclosed paper needs separate support | Proposed; not just a border flood fill |
-| 5. Boundary anchors and smooth envelope completion | Reliable silhouette sections plus larger-scale geometry | Establish exterior side and reject contour excursions into clear margins | Smooth wrong outlines are possible; small gaps need separate treatment | Maker-directed next comparison; bridge not yet fitted |
+| 5. Boundary anchors and smooth envelope completion | Reliable silhouette sections plus larger-scale geometry | Establish exterior side and reject contour excursions into clear margins | Smooth wrong outlines are possible; small gaps need separate treatment | Pending supporting comparison when geometry needs it; bridge not yet fitted |
 
 ### 1. Fit paper appearance while allowing shading
 
@@ -375,8 +382,10 @@ Assess the actual purpose with:
 
 Proceed once the curve is useful and the remaining ambiguity is localized and
 explicit; later stages may refine it. Do not claim this stopping condition is
-already satisfied. The next numerical step remains one wider-context anchor/bridge
-comparison with shadow-aware supporting measurements, then illustrated review.
+already satisfied. If the local bead pilot lacks useful geometry because a boundary
+is ambiguous, use one wider-context anchor/bridge comparison with shadow-aware
+measurements, then illustrated review. This is supporting work, not the unconditional
+next numerical step; the active schedule is in [PLAN.md](PLAN.md).
 
 ## Shared pixel-level validation
 
@@ -606,6 +615,8 @@ Material fitting and full repeating-pattern inference remain later tasks.
 
 ### Recommended first comparison once a centerline is available
 
+This is a focused directional-method comparison when that evidence is needed,
+not a mandatory sequence of B1 through B6 before starting the index/color pilot.
 Explore **B1 + B2** on the same few short sections: the maker's HSV paths give
 localized evidence, while Gaussian FFT proposes organization/scale and a helicity
 cue. R111 makes B2 optional in the final solution; spatial directions or B4/B6
@@ -777,7 +788,14 @@ not a claim of measured superiority or a new assigned bead in the photograph.
 First pilot: one short patch with supported visible bodies, including neighboring
 same-color beads, a dark bead and a highlight where available. Show the raw patch,
 observation inventory, proposed signed edges, index alternatives and interior color
-samples separately. Compare the non-FFT direction baseline with FFT proposals
+samples separately. No confirmed centerline or detections currently exist: first
+use B1/B4/B5 (local appearance paths, seams and region evidence) to propose bodies
+and local tangent/spacing, then apply I1+C1 only where this supports them. Mark
+any hand-selected patch, path, anchor or region as diagnostic assistance, never
+as a learned or automatic result. Use I2 locally for unresolved shape/direction
+hypotheses; if labels remain ambiguous, present alternatives instead of forcing
+indices to complete the pilot. Do not demand a full centerline first.
+Compare the non-FFT direction baseline with FFT proposals
 when available, so exploration does not turn into mandatory adoption. Evaluate
 on a known synthetic counterpart with truth available only to the evaluator;
 any supplied camera/geometry/region masks must be declared as assistance.
@@ -790,6 +808,10 @@ scores improve. Test held-out bodies and modest input/anchor perturbations; a
 wrong consistent graph or an overly permissive color model must be able to fail.
 Stop at the illustrated local index/color review, before full-necklace numbering,
 closing the unknown global count, or repeat-pattern inference.
+Save a short illustrated question about the most consequential body separation
+or neighbor alternative in the tracked question file, with its curated crop and
+current assumptions. The review may conclude that better local evidence is needed;
+it is not a requirement to produce confident labels from insufficient evidence.
 
 ## Shortest color pattern from indexed observations
 
@@ -800,6 +822,17 @@ indexing of every bead, including hidden positions, establishes N; indexing just
 the visible bodies does not by itself establish the missing closure interval.
 With a complete zero-based assignment N = max(index) + 1. Do not substitute the
 largest visible index or the historical approximate count.
+
+**Why 13 matters:** at exactly 6.5 beads per turn, a repeat of 13m beads advances
+2m full turns, returning each pattern slot to the same cross-section phase, so
+repeated copies can all conceal the same unknown color on the hidden side.
+This is the maker's earlier R018 counterexample, preserved in the
+[historical plan](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/PLAN.md)
+and tested in the [R023 visibility study](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/VISIBILITY.md).
+That study showed weak slot coverage, not a wholly invisible slot in every view:
+camera direction around the loop still changes. Allow for actual closure/twist
+and viewing geometry; a nonmultiple of 13 improves phase diversity in the ideal
+model but is not proof of complete observable coverage. Report slot support.
 
 This is an existing problem: **periodicity of a partial word**, where unreadable
 positions are holes. Strong periodicity requires agreement between every pair
