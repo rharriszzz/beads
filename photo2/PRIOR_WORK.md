@@ -43,8 +43,9 @@ quick model and applicable task row; follow detailed recipes only as needed.
 **R110 update:** the maker reports Gaussian-window FFT works well for shadowed
 background and for bead directions. [Inspected source/metric details](FFT_EXPLORER_NOTES.md)
 identify the scanner's `hp_removed` as low-pass retained power fraction and the
-explorer's opposite-pair grouping/reconstruction. Reproduce that raw-window
-baseline before substituting detrended texture or spatial filters. Directional
+explorer's opposite-pair grouping/reconstruction. R111 asks to explore that
+raw-window baseline alongside detrended/spatial alternatives, with FFT adoption
+optional in both background and directional tasks. It is not an indexing gate. Directional
 analysis explicitly seeks three noncentral opposite pairs for 1/6/7.
 
 Read local fft-image-explorer main at

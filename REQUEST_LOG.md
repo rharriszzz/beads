@@ -683,3 +683,54 @@ analysis, GUI, render or numerical classification tests for this source/doc revi
 No failures or new questions. Scoped commit/push and remote verification follow;
 routine outputs/environments excluded. gpt-6-astra / High; stay here for discussion,
 fresh /new for the next bounded baseline experiment. No automatic switch.
+
+## R111 — FFT exploration is optional in the solution; choose indexing/color methods (2026-09-28)
+
+User: “I am not necessarily requiring you to use ffts.  But I would like you to
+explore the use of ffts in the two problems that can use them.  The next step
+in the process is to assign a bead_index (see beads.pov) to every clearly visible
+bead, and also to choose a bead color for every clearly visible bead.  Please
+choose some methods for accomplishing this.”
+
+Preflight daisy, clean f2ea46c, photo-2-reconstruction-v2, no stashes; fetch
+succeeded/upstream0/0. Read current workflow/handoff/log/plan, methods, prior
+shape quick/task model and historical graph/partial-word notes. Read actual
+beads.pov index/color placement loop and closure definitions. Scope: select and
+document index/color methods, explicitly exploring FFTs for background and
+spacings/directions/helicity without making their use mandatory or a prerequisite
+to the index/color pilot. No new per-photo bead assignments or pattern inference.
+No supplied status/usage, dependencies, delegation or ownership transfer.
+
+### R111 outcome and checks
+
+Added four indexing choices: signed neighbor graph (selected), local 3D template
+matching (targeted support), ordered strip/row tracking, and joint discrete
+constraint solving. Added three color choices: robust supported-interior summary
+with image-learned palette (selected), restricted local shading refinement, and
+reviewed prototype samples as an explicitly assisted fallback. Included concrete
+propagation, alternate-path/triangle checks, uniqueness, patch reconciliation,
+closure/winding distinction and a hypothetical three-node Mermaid example.
+
+Current beads.pov confirms full-string bead_index drives both angle equations
+and palette lookup via index mod pattern_length. Clarified observation IDs versus
+relative component indices versus globally resolved indices, independent index/
+color uncertainty, no compression of missing positions and full accounting of
+clearly visible difficult bodies. Retained sliver exclusion. Repeat inference and
+POV material fitting remain distinct; no pattern-forced colors or fixed HSV boxes.
+
+FFT remains an exploration in BOTH requested roles, with non-FFT alternatives
+and optional final adoption. Removed active FFT-first prerequisites from methods,
+plan and source notes while retaining accurate baseline/provenance information.
+Next pilot is local index/color evidence, using whatever supported geometry is
+available and improving it as needed; no global perfect mask or FFT implementation
+gate. Actual photo assignments are not claimed by this method-selection step.
+
+Checks pass: 74 local links/anchors; 14 unique historical linked blobs; four index
+methods, three color estimators and six earlier bead methods; original opening
+verbatim; actual POV index-loop statements; eight Markdown-only files and clean
+whitespace. Earlier code/images/scenes/reports unchanged. No runtime tests/renders
+warranted for documentation; no failed checks or new dependencies/questions.
+Scoped commit/push and remote verification follow; environments/routine outputs
+excluded. gpt-6-astra / High, stay here for method review or fresh /new for the
+bounded numerical pilot, stopping at illustrated local review before full numbering
+or repeating-pattern inference. No automatic model/session switch.

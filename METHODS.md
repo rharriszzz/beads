@@ -8,7 +8,12 @@ proposal from an implemented procedure and a validated capability.
 
 Start with [background methods](#current-aspect-background-pixels-under-varying-illumination),
 [shadow handling for splines](#shadowed-paper-alternatives-and-evaluation-for-splines),
-or [bead methods given a centerline](#bead-analysis-given-approximate-boundaries-and-a-centerline).
+[bead methods given a centerline](#bead-analysis-given-approximate-boundaries-and-a-centerline),
+or [index and color assignment](#assign-bead_index-and-color-to-clearly-visible-beads).
+
+**R111 clarification:** explore FFTs for background/shadows and for directions/
+spacings/helicity, alongside non-FFT alternatives. Adoption is optional in either
+use; an FFT result is not a prerequisite for the index/color pilot below.
 
 ## Current aspect: background pixels under varying illumination
 
@@ -124,7 +129,8 @@ The inspected explorer scanner computes the fraction inside the central disk,
 named `hp_removed` because it is the power removed by a complementary high-pass
 mask. It uses raw windowed luminance, without subtracting a fitted plane.
 
-Reproduce that baseline before changing it. For the same spectrum and hard
+When testing FFT, include that source baseline so changes are compared fairly.
+Its adoption is optional under R111. For the same spectrum and hard
 cutoff, low-pass retained fraction equals one minus high-pass retained fraction;
 this connects the latest description to the earlier central-removal description.
 Absolute power and fractions are different, and the maker's exact historical
@@ -258,7 +264,7 @@ the model and existing local experiments**, not a new accuracy benchmark.
 | --- | --- | --- | --- |
 | A. Expand the HSV region using actual shadowed-paper samples | Add independently supported shadow strips/patches as separate modes; retain their locations | Requires trustworthy sample membership; the saved red/shadow overlap survives | Use alongside margin samples; strongest direct color evidence available |
 | B. Predict a shading family from lit paper | Permit darker versions of learned paper; in a restricted linear-RGB model compare `a * paper`, with positive scale `a` | Real shadows can change hue/saturation through mixed lights and reflections; near-black beads fit too | Candidate generator or fallback, never a blanket “lower V means paper” rule |
-| C. Follow texture across a lighting change | Compare local spectral shape or spatial structure through the darker region | Paper grain, hard shadows, mixed windows and weak dark signals confuse the cue | R110: reproduce the maker's Gaussian FFT baseline first; compare spatial texture on the same samples |
+| C. Follow texture across a lighting change | Compare local spectral shape or spatial structure through the darker region | Paper grain, hard shadows, mixed windows and weak dark signals confuse the cue | R111: compare the maker's Gaussian FFT baseline with spatial texture; neither is mandatory |
 | D. Grow supported paper regions into shadow | Propagate through gradual appearance changes with texture support; allow a brightness edge without automatically treating it as a surface edge | Weak bead edges permit leakage; no exterior route reaches a fully enclosed paper island | Use only conservatively if local candidates need connection; not the first whole-image solver |
 | E. Complete the necklace boundary from clearer neighbors | Infer the coarse bead envelope between supported sections; paper beyond it remains background even if dark | Smooth but biased anchors produce a smooth wrong curve; long gaps and bends need sensitivity checks | Primary way to stop ambiguous shadow bands pulling the spline outward |
 
@@ -305,9 +311,9 @@ the proposed combined method.
 
 ### Which combination I would choose, and why
 
-R110 strengthens the FFT choice with the maker's prior practical experience.
-Choose **method 1 + method 2 + method 5**, keeping method 3 as the spatial
-comparison; this supersedes R108's spatial-first proposal:
+R110 supplies practical FFT experience; R111 makes adoption optional.
+Choose **method 1 + a tested texture cue (2 or 3) + method 5**. Compare FFT and
+spatial evidence without making either a prerequisite for useful local geometry:
 
 1. **Learn paper colors from the image.** Start with margin strips; add only
    supported shadow-paper samples. Compare an HSV box with a circular-hue density
@@ -331,8 +337,9 @@ comparison; this supersedes R108's spatial-first proposal:
 I would postpone a full graph propagation system and a detailed light/reflectance
 fit until this combination fails in a way they could address. They add unknowns
 and failure modes without yet resolving the key issue: which boundary evidence
-is trustworthy. FFT is now the first texture baseline to reproduce, not a promise
-that every final mask must use it.
+is trustworthy. Explore the source FFT baseline alongside spatial texture and
+choose by demonstrated usefulness. R111 does not require FFT adoption or require
+that this comparison block local index/color work.
 No method choice here has been benchmarked as superior on the full photograph.
 
 ### What counts as good enough for this stage
@@ -597,9 +604,11 @@ Material fitting and full repeating-pattern inference remain later tasks.
 
 ### Recommended first comparison once a centerline is available
 
-Start with **B1 + B2** on the same few short sections: the maker's HSV paths give
+Explore **B1 + B2** on the same few short sections: the maker's HSV paths give
 localized evidence, while Gaussian FFT proposes organization/scale and a helicity
-cue. Use **B3 as an interpretation cross-check**, not an independent spectral vote.
+cue. R111 makes B2 optional in the final solution; spatial directions or B4/B6
+geometry can instead support indexing. Use **B3 as an interpretation cross-check**,
+not an independent spectral vote.
 Choose sections with different local tangents and include a difficult dark portion.
 Display raw context, centerline/offset paths, color strips and HSV trajectories,
 window/band masks, peak pairs and corresponding spatial direction arrows together.
@@ -619,6 +628,166 @@ misses, interior color stability and sensitivity to centerline error separately.
 Treat source geometry supplied to B6 as explicit calibration, not image-inferred
 knowledge. Show unresolved cases. Stop after the illustrated local comparison,
 before whole-necklace bead indexing or pattern recovery.
+
+## Assign bead_index and color to clearly visible beads
+
+R111 selects the next inference objective: every clearly visible bead should have
+a `bead_index` and a color. FFTs are **candidates to explore in two upstream uses**
+(background/shadow separation and bead directions/spacings/helicity), not a required
+component of the final solution. Compare against non-FFT alternatives and keep the
+useful evidence. An FFT estimates structure; it does not directly assign an index
+or a pigment to each visible body.
+
+### Match the meaning in beads.pov
+
+The [actual placement loop](beads.pov) starts `bead_index = 0`, increments by one
+through all `nbeads`, and uses that same index for both major-circle and minor-circle
+placement. Its palette lookup is `color_pattern[mod(bead_index, pattern_length)]`.
+Thus **bead_index is a position in the full string**, not an image-region number,
+a count of visible beads, a distance along the centerline, or a repeat-slot number.
+Color assignment now does not require discovering `pattern_length` first.
+
+Give each visible observation a stable `observation_id`. A seed can establish
+index0 in a chosen convention; the maker permits arbitrary origin and stringing
+orientation. Keep physical-helicity hypotheses separate from that reporting freedom.
+Unknown/hidden positions must not be deleted to make visible indices consecutive.
+Disconnected components have local indices with unknown relative offsets until
+there is evidence connecting them. Do not call those global bead_index assignments.
+
+The target is complete coverage of **clearly visible bodies**, including clearly
+visible black beads. Record unresolved cases in the inventory instead of quietly
+omitting them. A visible bead with unreadable color still needs an observation
+record and may have a known index. Conversely, a clear color does not establish
+its index. Ignore tiny slivers under the existing maker rule, without absorbing
+their pixels into neighbors. No complete current photo inventory is claimed.
+
+### Four ways to assign the indices
+
+| Method | How indices are obtained | Advantage | Failure / choice |
+| --- | --- | --- | --- |
+| I1. Signed neighbor graph | Identify immediate neighbors in the ±1/±6/±7 families; propagate index differences and check loops | Directly uses the maker's construction; tolerates unknown colors | A wrong edge can corrupt a patch; nearest image distance alone is inadequate. **First choice.** |
+| I2. Local 3D template matching | Fit both-helicity/phase/scale arrangements, then match visible observations one-to-one to predicted exposed beads | Occlusion and shape can constrain difficult black beads and connect regions | Requires calibration and may have equally plausible wrong-hand fits. **Local support for I1.** |
+| I3. Ordered strip/row tracking | In centerline coordinates, track several diagonal bead/seam chains jointly; use constrained dynamic programming to match them to a candidate 6.5-turn layout | Uses continuity across a long section and can retain skipped observations | A single missed row/phase slip can shift many indices; sorting by arc length is insufficient. Alternative for clearly traceable sections. |
+| I4. Joint discrete constraint solving | Retain several candidate neighbors/index labels; optimize consistent integer assignments with uniqueness, geometry and cycle constraints | Can resolve choices that greedy propagation cannot | More expensive and still vulnerable to consistently wrong image evidence. Escalate only where I1/I2 leave concrete competing assignments. |
+
+All four share the appearance procedure below, so their index quality can be
+compared without changing the palette model at the same time. Repeat-pattern
+agreement is reserved for a later cross-check, not used to manufacture index/color
+agreement in this first assignment stage.
+
+### Selected indexing procedure: I1 with local I2 support
+
+1. **Build a reviewable observation inventory.** Combine the earlier B1/B4/B5
+   path, seam and appearance cues into candidate visible regions. Review a short
+   patch's missed, merged and split bodies. Use supported interiors/outlines;
+   visible centroids are convenient anchors but are not assumed physical centers.
+   Do not wait for every boundary pixel to be perfect.
+2. **Propose actual construction neighbors.** For each body, use local orientation,
+   spacing, exposed shapes and boundary contacts to propose edges labeled
+   `d in {-7,-6,-1,+1,+6,+7}`. FFT directions may help, or spatial matching and
+   outline orientation may supply them. Keep uncertain signs, 6/7 swaps and both
+   hands as alternatives. Do not connect different rope sections merely because
+   they touch in the photograph, or skip a missing immediate neighbor while
+   pretending the next visible body is adjacent.
+3. **Propagate supported constraints.** Each accepted edge u→v asserts
+   `index(v) = index(u) + d`. Start from a small well-supported seed group and
+   check all alternate paths, not only a traversal tree. Require reciprocal labels
+   and unique indices for distinct observations. A local triangle must satisfy
+   `1 + 6 = 7`. If constraints conflict, flag the implicated region/edges rather
+   than renumbering to hide the contradiction. A consistent graph can still be
+   wrong, so also check held-out image evidence.
+4. **Use geometry where it adds information.** Fit a small exposed-bead model
+   around difficult regions, comparing both hands/phases and supported contours.
+   One predicted physical bead can own several disconnected visible fragments;
+   body-level assignment must handle that without counting each fragment as a bead.
+   Permit unmatched observations/predictions and record why. Withhold part of the
+   patch for checking; do not let predicted indices become their own evidence.
+5. **Extend and reconcile patches.** Shared supported bodies establish component
+   offsets; overlapping patches must agree on index differences and colors.
+   Preserve disconnected offsets instead of estimating missing counts from a
+   rough centerline length alone. For the full closed loop, use a documented cut
+   or indices modulo an established total N: a winding cycle can add ±N, whereas
+   a small local cycle sums to zero. The old approximate N is not exact closure truth.
+
+A small hypothetical constraint example (not a photo annotation or visibility map):
+
+```mermaid
+flowchart LR
+    A["Observation A: index 0"] -->|"+1"| B["Observation B: index 1"]
+    B -->|"+6"| C["Observation C: index 7"]
+    A -->|"+7: independent route"| C
+```
+
+If the two routes assign different indices to C, inspect the edges. The omitted
+indices in this schematic are not assertions that those beads are hidden.
+
+[Historical graph method](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/METHODS.md)
+already explains the construction constraints. Its numerical graph checks did not
+solve automatic image-neighbor identification. [Local contour fitting](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/LOCAL_PATCH.md)
+provides useful conditional evidence and wrong-hand/black-region failures. Reuse
+those lessons rather than presenting either as a finished photo-indexing solver.
+
+### Choose colors from bead surfaces, not from a single pixel
+
+Compare three appearance estimators on the **same supported regions**:
+
+| Color method | Procedure | Choice |
+| --- | --- | --- |
+| C1. Robust interior summary plus learned palette | Use interior pixel distributions, suppress supported highlight/mixed-edge outliers, classify against appearance groups learned from this image | **First baseline:** transparent and easy to illustrate; needs shadow-aware support |
+| C2. Joint palette and local shading model | Let one latent pigment produce a family of observed colors under local shading; share lighting context across nearby beads | Refine when C1 splits one pigment into several shadow clusters; constrain flexibility so every color cannot explain everything |
+| C3. Small reviewed prototype set | Select a few clearly supported bead interiors for each observed appearance group, including shaded examples; classify others with distances/distributions | Useful diagnostic or assisted fallback; selected examples and human assistance must be explicit, not baked into final code |
+
+I would start with **C1**, adding a restricted **C2** where shadow/gloss causes
+systematic mistakes. Preserve hue wrap and use chroma/value as well as hue: hue
+alone cannot identify black or distinguish pale/neutral beads. Use robust RGB or
+circular-HSV statistics, never an ordinary arithmetic mean across the hue wrap.
+Do not discard every dark pixel as a seam; black-bead interiors are dark. Likewise,
+a bright pixel is only a possible reflection, not automatically a different pigment
+or a pixel to delete from a pale bead. Retain the raw distribution and rejected
+pixels so color choices can be reviewed.
+
+Learn candidate palette groups across several image sections, then merge or split
+them only with supporting appearance/lighting evidence. Do not fix red/yellow/black
+or a color count in the general solver; the maker's known photo-2 palette can be
+used for review. Associate a stable palette ID and representative appearance with
+each assigned color. A per-bead palette ID is not the recovered repeating
+`color_pattern`, and neither establishes POV-Ray finish/normal/interior properties.
+
+If evidence is insufficient, keep ranked color candidates or unknown, even when
+an index is clear. Never choose a color just to make a future repeat fit. Preserve
+observed readings separately from any colors later inferred for hidden positions.
+These unresolved cases count against completion of the assignment target.
+
+### Outputs, evaluation and the bounded first pilot
+
+For every observation, retain: image/region reference, visibility assessment,
+component and local index, global bead_index or explicit alternatives, neighbor
+constraints, palette ID/candidates, supported interior pixels and uncertainty
+reasons. Indices and colors have separate statuses. Uncalibrated scores are not
+probabilities. A clearly visible bead is not silently excluded for being difficult.
+
+Choose **I1 + C1**, with **I2/C2 as targeted support**. This avoids making a full
+inverse-rendering fit or an FFT result a prerequisite to useful local assignments.
+I3 is worth comparing where rows can be followed cleanly; I4 is justified when
+specific remaining ambiguities require joint choices. This is a selected plan,
+not a claim of measured superiority or a new assigned bead in the photograph.
+
+First pilot: one short patch with supported visible bodies, including neighboring
+same-color beads, a dark bead and a highlight where available. Show the raw patch,
+observation inventory, proposed signed edges, index alternatives and interior color
+samples separately. Compare the non-FFT direction baseline with FFT proposals
+when available, so exploration does not turn into mandatory adoption. Evaluate
+on a known synthetic counterpart with truth available only to the evaluator;
+any supplied camera/geometry/region masks must be declared as assistance.
+
+Report visible-body coverage, false/split/merged observations, correct signed
+neighbor labels, index errors after one allowed component origin/orientation
+alignment, color errors/unknowns, contradictions and unresolved component offsets.
+Do not align each bead independently or delete contradictory observations to make
+scores improve. Test held-out bodies and modest input/anchor perturbations; a
+wrong consistent graph or an overly permissive color model must be able to fail.
+Stop at the illustrated local index/color review, before full-necklace numbering,
+closing the unknown global count, or repeat-pattern inference.
 
 ## Procedures for later aspects
 

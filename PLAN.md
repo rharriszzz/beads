@@ -38,6 +38,14 @@ explorer statistic before replacing it with detrending/spatial texture; method
 priority becomes appearance + FFT + smooth completion, spatial cue as comparator.
 This updates the recommendation above without claiming a new benchmark.
 
+**R111 supersedes FFT-first scheduling:** explore FFTs for both background/shadows
+and bead directions/spacings/helicity, but adoption is optional. The next inference
+objective is bead_index and color for every clearly visible body. [Chosen methods](METHODS.md#assign-bead_index-and-color-to-clearly-visible-beads):
+signed ±1/±6/±7 neighbor graph plus robust interior color/palette assignment,
+with local 3D template and shading models as targeted support. Ordered strip/row
+tracking and joint discrete constraints are alternatives for specific failures.
+No new assignments or measured performance in this method-selection step.
+
 One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.
@@ -58,6 +66,7 @@ the algorithm's inputs. These generalization tests have not yet run.
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
 | Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | R109 six methods documented; implementation deferred |
 | Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | R109 image-appearance methods documented; material fitting deferred |
+| Visible-bead indices and colors | Full-string bead_index plus observed palette ID, preserving missing/unknown states | R111 graph + robust color method selected; local pilot pending |
 | Helicity and spacings | Band-pass FFT peaks for directions 1/6/7; direction-1 angle relative to local centerline | R098/R109 maker method saved, width-scale window specified qualitatively; synthetic sign/convention validation pending |
 | Repeating pattern | Competing sequences of length 200–400 with explicit uncertainty | Deferred; no photo-2 sequence established |
 
@@ -90,13 +99,16 @@ R105 supplies the next strategy: move farther along the necklace in either
 direction until boundary evidence is reliable; bridge ambiguous stretches with
 a smooth large-scale envelope, keeping bead-scale scallops separate.
 
-Next bounded task: reproduce the saved explorer low-pass-fraction baseline on a
-few existing lit-paper, shadow-paper and bead contexts; compare the current beads
-FFT/spatial statistics with explicit masks/denominators and stop at illustrated
-local evidence. No whole-image scanner or three-pair direction implementation in
-that step. This prepares the pending boundary task below, without discarding it.
+Next bounded task: a short local visible-bead inventory and index/color pilot.
+Show the raw patch, supported bodies/interiors, candidate signed neighbors,
+component-index alternatives and palette assignments; compare/check against a
+known synthetic counterpart with assistance declared. Use available local
+geometry/centerline evidence, improving it only as needed; a perfect global mask
+or completed FFT pipeline is not a prerequisite. Stop at illustrated local review,
+before full-necklace numbering/count closure or repeat inference. FFT comparisons
+in the two requested roles remain scheduled explorations, not required outcomes.
 
-Pending boundary task: expand one ambiguous neighborhood along the necklace, show
+Available supporting boundary task: expand one ambiguous neighborhood along the necklace, show
 candidate reliable boundary anchors on either side and compare a short smooth
 bridge with the raw image. Compare local cubic interpolation, a robust smoothing
 spline, and coupled inner/outer envelopes as implementation options. Start with

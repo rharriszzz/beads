@@ -43,6 +43,11 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 - Preserve missing indices and color uncertainty; test inverse claims against
   known synthetic examples. Photo-sampled rendering is not recovered bead order.
   Ignore slivers in active inventories; historical beads1 marker 211 is excluded.
+  R111: explore FFTs for background/shadows and for directions/spacings/helicity,
+  but adoption is optional and not a gate before useful index/color work. Target
+  bead_index and color for every clearly visible body; keep observation IDs,
+  local component indices and resolved full-string indices distinct. Unresolved
+  visible bodies remain in coverage accounting instead of being dropped.
 - Explain measurement paths: raw context, interior endpoints and reasons, sampling
   route, then measurements and limitations. Highlights are not boundary markers.
 - Inspect machine, branch, upstream, status and stashes before writes. Preserve

@@ -58,8 +58,10 @@ noise/clipping break that simple invariance. Small total power needs an explicit
 weak-signal condition; the scanner returns0 when P is at most1e-12, which is a
 numerical convention, not evidence that a black patch is a bead.
 
-**Priority:** reproduce this raw-window low-pass-fraction baseline before adding
-plane detrending or replacing it with spatial texture. Compare against the current
+**R111 scope:** explore this raw-window low-pass-fraction baseline alongside
+plane-detrended and spatial alternatives; final FFT adoption is optional. A new
+FFT trial should preserve the source statistic as a fair reference, but it need
+not precede useful bead index/color work. Compare against the current
 beads probes on identical patches, storing numerator, denominator, mask, Gaussian
 parameters and absolute power separately. The R099/R104 detrended high-band RMS
 is a different statistic. Its successes/failures cannot by themselves validate

@@ -10,6 +10,51 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R111 — Optional FFT adoption; select visible-bead index/color methods
+
+Maker asks to explore FFT in both background/shadow and direction/helicity tasks,
+without requiring its use. Next inference objective: assign bead_index and color
+to every clearly visible bead. This supersedes mandatory FFT-first sequencing.
+Current turn selects methods; it does not claim photo assignments or a detector.
+
+[METHODS.md](METHODS.md#assign-bead_index-and-color-to-clearly-visible-beads) now
+compares I1 signed neighbor graph, I2 local 3D matching, I3 ordered strip/row
+tracking, and I4 joint integer constraints. Select **I1 + robust interior color
+classification C1**, with I2 and a restricted shading model C2 as targeted support.
+Reviewed prototypes C3 are a diagnostic fallback with assistance recorded.
+Index rule: edge u→v with d∈{±1,±6,±7} gives index(v)=index(u)+d; check alternate
+paths, uniqueness and triangles. Wrong but consistent graphs still require image
+checks. Color summaries use supported interiors, preserving highlight/shadow
+ambiguity and image-learned palette; no repeat-pattern forcing or hard-coded colors.
+
+Read current beads.pov: full-string indices0..N−1 drive both placements and
+color_pattern[index mod L]. Observation IDs, component-relative indices and global
+indices are distinct. Missing/hidden positions do not compress the index sequence;
+disconnected components keep unknown offsets. A closed winding cycle differs from
+a small zero-sum cycle; old approximate N is not exact closure truth. Every clearly
+visible body stays in coverage accounting even when its index/color is unresolved.
+No new indexed bead, color label, source-pattern recovery or numerical experiment.
+
+Updated brief/AGENTS/plan/source notes to keep FFT exploration in both roles
+without making adoption or completion a gate. Prior FFT statistics/provenance
+are unchanged. Preflight daisy, cleanf2ea46c, no stashes, fetch succeeded/upstream0/0;
+read workflow/handoff/log/plan, shape/task and historical graph notes plus current
+POV loop. No supplied status/usage, dependencies, delegation or ownership transfer.
+Checks: 74 local links/anchors, 14 pinned historical blobs, 4 indexing/3 color/
+6 bead methods, original opening verbatim and POV-loop statements all pass.
+Eight Markdown-only changes, whitespace clean, prior code/images/reports unchanged.
+No runtime tests/renders needed, failed checks or new questions. Scoped publication
+and remote verification follow this pre-delivery entry.
+
+**Next bounded task:** one short local visible-body inventory and index/color
+pilot, with raw context, candidate neighbors, component-index alternatives and
+interior palette evidence, checked on a known synthetic counterpart with any
+assistance declared. Use available local geometry; improve boundaries only as
+needed instead of requiring a global mask/FFT completion. Stop at illustrated
+local review before full-necklace numbering, count closure or repeat inference.
+Recommend **gpt-6-astra / High; stay here for method review, fresh `/new` for
+the numerical pilot**. Earlier FFT/boundary tasks remain supporting options.
+
 ## R110 — Reuse the maker's actual FFT baseline and three-pair method
 
 Maker reports Gaussian-window FFT worked well for shadowed background and bead
