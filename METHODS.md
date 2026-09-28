@@ -9,7 +9,9 @@ proposal from an implemented procedure and a validated capability.
 Start with [background methods](#current-aspect-background-pixels-under-varying-illumination),
 [shadow handling for splines](#shadowed-paper-alternatives-and-evaluation-for-splines),
 [bead methods given a centerline](#bead-analysis-given-approximate-boundaries-and-a-centerline),
-or [index and color assignment](#assign-bead_index-and-color-to-clearly-visible-beads).
+[index and color assignment](#assign-bead_index-and-color-to-clearly-visible-beads),
+[shortest repeat](#shortest-color-pattern-from-indexed-observations), or
+[POV-Ray appearance](#fit-paper-bead-materials-and-lighting-in-pov-ray).
 
 **R111 clarification:** explore FFTs for background/shadows and for directions/
 spacings/helicity, alongside non-FFT alternatives. Adoption is optional in either
@@ -788,6 +790,163 @@ scores improve. Test held-out bodies and modest input/anchor perturbations; a
 wrong consistent graph or an overly permissive color model must be able to fail.
 Stop at the illustrated local index/color review, before full-necklace numbering,
 closing the unknown global count, or repeat-pattern inference.
+
+## Shortest color pattern from indexed observations
+
+R112 asks for one or two methods and guarantees that photo 2's repeat length is
+not divisible by 13. This is conditional planning: this branch still has no
+resolved photo inventory, exact N or recovered sequence. Complete full-string
+indexing of every bead, including hidden positions, establishes N; indexing just
+the visible bodies does not by itself establish the missing closure interval.
+With a complete zero-based assignment N = max(index) + 1. Do not substitute the
+largest visible index or the historical approximate count.
+
+This is an existing problem: **periodicity of a partial word**, where unreadable
+positions are holes. Strong periodicity requires agreement between every pair
+of known positions congruent modulo L, not just adjacent occurrences separated
+by L. See [Blanchet-Sadri, Periodicity on Partial Words (2004)](https://libres.uncg.edu/ir/uncg/f/F_Blanchet-Sadri_Periodicity_2004.pdf).
+Our older branch already implements this in
+[partial_word.py](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/partial_word.py),
+with [known-index synthetic evaluation](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/SEQUENCES.md).
+Those results validate a sequence stage supplied with indices/colors, not photo
+recognition. Inspect/reuse the solver in a later bounded implementation; it has
+not been imported or rerun here. The historical implementation accepts only
+three integer color labels and scans 1..floor(N/2), separately flagging closure.
+Reuse its residue logic, but make the alphabet, candidate domain and photo-specific
+13 exclusion explicit; do not silently inherit its benchmark assumptions.
+
+### P1 — Exhaustive residue-class consistency (recommended)
+
+Inputs: verified exact N, indexed visible colors and their evidence, and the
+maker's whole-repeat construction. Enumerate L in increasing order with
+`N % L == 0` and, for photo 2 only, `L % 13 != 0`. Use the confirmed `<400`
+bound, but include lengths below 200 when checking minimality: the earlier
+rough 200–400 estimate is not proof of a lower bound. Keep an unrestricted
+diagnostic scan available if supplied facts and observations conflict.
+
+For each L, group observations by `r = bead_index % L`. A candidate passes if
+every group has a single consistent color. Retain every supporting original
+index and a conflicting pair for each rejection. The first passing candidate
+is the smallest compatible length under the stated constraints. Keep the other
+passing candidates for ambiguity review. Work is O(M D) for M observations and
+D candidate divisors; this is small enough to prefer clarity to elaborate search.
+
+If colors are candidate sets rather than certain labels, intersect all sets in
+each residue class. Empty intersection rejects L; several remaining colors stay
+ambiguous. No observation means an unsupported slot, not permission to claim a
+color. A fully unknown observation supplies no color constraint. Preserve these
+states separately from measured labels. Never majority-vote away a contradiction
+to report an exact match; revisit its actual image evidence or index assignment.
+
+Toy illustration only: for N=18, observations `0:A, 1:B, 2:C, 3:A, 4:B, 5:C,
+9:A, 16:B, 17:C` support shortest block `ABC` of length 3. L=1 conflicts at
+indices 0/1; L=2 conflicts at 0/2. All three slots are supported. Conversely,
+observations only at `0:A, 3:A, 6:A` allow L=1 even if unseen beads would reveal
+a longer true design. A smallest compatible completion is not automatically
+proof of the maker's complete original pattern.
+
+### P2 — Eliminate divisors using different-color distances
+
+For each pair of confidently differently colored beads at indices i,j, compute
+`d = abs(i-j)`. Every candidate L dividing d is impossible: those beads would
+occupy the same pattern slot. Remove such divisors from the initial candidate
+set, retaining witness pairs; choose the smallest survivor and construct its
+slots with P1. Same-color pairs do not prove any period. Contradictory labels at
+the same index invalidate the input rather than becoming a normal distance test.
+
+This is an independent formulation of the same exact constraints for certain
+labels. A simple version costs O(M² D), though distances can be deduplicated and
+their divisors cached. It is useful as a checking oracle and for explaining why
+a shorter repeat fails, not my first production choice. Pairwise intersections
+alone are insufficient for uncertain color sets: `{A,B}`, `{B,C}`, `{A,C}` have
+no common color despite pairwise overlap. Use P1's full intersection in that case.
+
+### Evidence required before calling a pattern recovered
+
+Report exact-N provenance, candidate domain/exclusions, shortest compatible L,
+slot colors/alternatives, support indices and unobserved slots. Every accepted
+clear observation must match; missing indices must not be compacted. No admissible
+L means a conflict to investigate, not an invented pattern or silent relaxation
+of the maker's promise. N may itself be a multiple of 13 even when L is not.
+Keep alternatives when N or disconnected index offsets remain unresolved.
+
+To distinguish agreement from prediction, freeze a candidate using training
+sections and predict separately withheld sections, recording abstentions. After
+validation, refit using all accepted observations and check every one. Reject
+all shorter admissible lengths with witnesses. A complete minimal block can be
+presented up to cyclic rotation/reversal without changing actual color identities;
+retain the transformation to original indices and the independent physical
+helicity convention. Unknown slots and longer compatible alternatives limit
+claims about the true authored sequence even when minimum-length fitting succeeds.
+
+Future Python validation should compare P1/P2 on known synthetic words with holes,
+whole missing slots, wrong colors/indices, cyclic shifts/reversals, and exact-N
+errors. Include period 13 both with the photo-specific exclusion disabled and
+enabled; include total N divisible by 13 but allowed L. Truth is evaluator-only.
+No additional FFT is needed for this sequence stage. The two requested spatial
+FFT explorations remain optional supporting work in their original roles.
+
+## Fit paper, bead materials and lighting in POV-Ray
+
+These are four proposed, complementary fitting methods for the later appearance
+phase, not fitted parameters or changes to beads.pov. Use recovered geometry,
+indices and palette membership when available. Pattern colors are discrete labels;
+rendered RGB additionally depends on pigment, finish, illumination and camera
+processing. Fit shared material per color first, allowing small per-bead changes
+only if repeated evidence supports them.
+
+| Method | Evidence and fitting procedure | Main limitation |
+| --- | --- | --- |
+| A1. Paper and cast-shadow fit | Fit an independently colored plane from reliable lit paper; use cast-shadow direction, displacement and softness to propose light position/extent and fill. Jointly check lit and shadowed paper in several sections. | Shadow displacement depends on bead height/camera as well as light; paper brightness alone cannot separate pigment from light intensity. |
+| A2. Highlight and surface-normal fit | On many modeled bead surfaces, use highlight locations to constrain source directions; fit highlight shape/width alongside cast-shadow softness to separate source extent from finish roughness. Compare one broad source, broad source plus fill, and two sources if supported. | Normals depend on correct geometry; clipping, multiple sources and occlusion make a single glint insufficient. |
+| A3. Repeated-color material fit | Pool diffuse interior samples for each palette label across positions and illumination; estimate one pigment per class under the shared lights, then finish strength/roughness from highlights. Compare material swatch renders on the actual bead geometry. | Dark pigment versus shade and light color versus pigment remain coupled; do not fit a different pigment to every shadowed occurrence. |
+| A4. Alternating render-and-compare fit | Python proposes bounded parameter changes, invokes POV-Ray, and compares paper, shadows, diffuse bead interiors and highlights separately. Alternate light, pigment and finish groups, starting with a coarse parameter grid and then local derivative-free refinement. | Flexible models can hide wrong geometry or camera processing; use held-out sections, parameter bounds and several initializations. |
+
+I would initialize with **A1+A2**, estimate pigments with **A3**, then refine with
+**A4**. Keeping these evidence types separate helps explain failures: broad shadow
+errors suggest lighting/geometry; repeated diffuse-color errors suggest pigment
+or color processing; highlight-width errors suggest source size or finish.
+These are proposed diagnostic interpretations, not unique inverse solutions.
+
+The paper should be a shadow-receiving plane (or a finite sheet if its edges
+matter), with pigment estimated from this input and independently configurable.
+Do not bake the photograph's shadows into its texture and then shadow it again.
+Start smooth and matte; add measured fine texture/normal variation only if it
+improves held-out comparisons. Magenta is a scene parameter, never the definition
+of a background pixel. Margins, enclosed paper and cast-shadow paper all constrain
+the fit, with uncertain bead-edge pixels excluded from calibration measurements.
+
+Implementation reference: POV-Ray's `finish` offers diffuse, specular/roughness
+and reflection controls. A finite `area_light` gives soft shadows; in 3.7,
+`area_illumination` is needed to include its extent in diffuse/specular lighting.
+Do not enlarge a default area light and assume its highlight response also changes.
+See the official [3.7 lighting and finish reference](https://www.povray.org/documentation/3.7.0/r3_4.html).
+Our proposal is to compare those direct-light highlights with a visible emissive
+panel plus reflection only if highlight shape calls for it, checking against
+double-counting the same source. Start with opaque smooth beads; introduce
+`normal` or transmissive `interior` parameters only with image evidence, not a
+guess about physical composition. Small finish differences by color are allowed.
+
+Paper color may contribute indirect illumination onto beads. Compare a simple
+fill model with radiosity if residuals support it. Radiosity models diffuse
+interreflection; it changes how ambient/emission settings should be interpreted.
+See the official [radiosity tutorial](https://wiki.povray.org/content/Documentation%3ATutorial_Section_3.7).
+For a new scene use the documented [linear-light assumed_gamma convention](https://www.povray.org/documentation/view/3.7.0/260/).
+Record image encoding, white balance and display transform; an iPhone JPEG need
+not be an exact linear radiance measurement after decoding. Avoid treating raw
+JPEG RGB as pigment. Fix an exposure/light scale convention and constrain color
+balance: absolute reflectance and illumination cannot both be uniquely measured
+from this one uncalibrated image. Report an effective matching scene and remaining
+parameter alternatives rather than claiming the original physical lighting.
+
+Future comparison: show the raw crop beside renders and residuals for a short
+section with paper, cast shadow, multiple colors and highlights. Balance losses
+by region so abundant paper pixels cannot swamp bead evidence; use robust diffuse
+errors and treat clipped highlights separately. Hold out another section, compare
+source models, and recover known synthetic examples before claiming generality.
+Save scene parameters, input hashes, renderer version/options and Python commands.
+Stop for an illustrated local review before fitting the full image. This catalog
+does not authorize jumping over the pending local indexing/color pilot.
 
 ## Procedures for later aspects
 

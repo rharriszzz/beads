@@ -734,3 +734,54 @@ Scoped commit/push and remote verification follow; environments/routine outputs
 excluded. gpt-6-astra / High, stay here for method review or fresh /new for the
 bounded numerical pilot, stopping at illustrated local review before full numbering
 or repeating-pattern inference. No automatic model/session switch.
+
+## R112 — Shortest color repeat and paper/material/light methods (2026-09-28)
+
+User: “If you have a bead_index for every bead, you also know exactly the total
+number of beads.  Now find the smallest bead color pattern that correctly matches
+all the clearly visible beads, no repeat that is a multiple of 13 is involved,
+I promise.  There might be an existing method to do this, if not please come up
+with one or two ways.  Finally, now that we have the bead pattern, we still need
+to model the background, individual bead colors and lighting in povray, please
+name some methods for figuring this out.”
+
+Preflight daisy, clean ce36d76 on photo-2-reconstruction-v2, no stashes; fetch
+succeeded/upstream0/0. Prior ce36d76 push/remote verification completed before
+this request. Read required workflow/current records, initial brief, relevant
+methods/shape quick model and scene; inspected historical partial_word.py and
+SEQUENCES.md at 2c4c116 read-only. Browsed primary partial-word literature and
+official POV-Ray documentation for technical method/source verification.
+No new dependencies, supplied status/usage, delegation or ownership transfer.
+
+### R112 outcome
+
+Added two sequence methods: P1 residue-class consistency (recommended) and P2
+different-color distance/divisor exclusion (checking alternative). Existing older
+solver is relevant but has a three-color alphabet and a benchmark scan domain;
+document adaptation rather than pretending it already implements this request.
+Preserve exact closure versus visible-only index distinction, unknown/ambiguous
+slots, conflict witnesses, shorter-than-200 candidates and conditional minimality.
+R112's no-multiple-of-13 promise is now a photo-specific repeat-length exclusion,
+not a total-count restriction or generic solver rule. Original opening preserved.
+
+Added four appearance approaches: paper/cast-shadow fitting, highlight/normal
+fitting, pooled repeated-color pigment/finish estimation, and alternating bounded
+Python/POV-Ray render comparison. Recommend that initialization/refinement order.
+Include gamma/camera-processing limits, source-size/roughness coupling, optional
+indirect lighting, independently colored paper and held-out-section evaluation.
+Source citations distinguish existing definitions/options from proposed inference.
+No photo count, pattern or appearance result claimed, no scene/runtime edits,
+and no automatic advancement beyond method selection. Local index/color pilot
+remains next; stop at illustrated review. Stay for discussion, gpt-6-astra / High,
+fresh /new for the numerical pilot; user controls switching.
+
+### R112 checks and stopping point
+
+Passed: 77 local links/anchors, unchanged original opening, append-only request
+history, exactly six Markdown paths, the toy N=18 shortest-repeat example,
+N=26/L=2 exclusion distinction, uncertain-set intersection example, two linked
+historical blobs and git diff --check. Checks ran with .venv/bin/python 3.12.14;
+no persistent code/tests added. No runtime pipeline tests or renders warranted
+for this documentation step; no failed checks. Prior code, scenes, photos and
+experimental artifacts unchanged. Scoped add/commit/push and remote-tip/final
+status verification follow this pre-delivery record.

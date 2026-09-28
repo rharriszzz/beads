@@ -46,6 +46,18 @@ with local 3D template and shading models as targeted support. Ordered strip/row
 tracking and joint discrete constraints are alternatives for specific failures.
 No new assignments or measured performance in this method-selection step.
 
+R112 extends the documentation roadmap: [two shortest-repeat methods](METHODS.md#shortest-color-pattern-from-indexed-observations)
+and [four POV-Ray appearance methods](METHODS.md#fit-paper-bead-materials-and-lighting-in-pov-ray).
+Prefer residue-class consistency, reusing the historical partial-word solver's
+core with explicit configurable inputs. With verified exact N, test candidate
+divisors; exclude multiples of 13 for this necklace, not generic inputs or N.
+Preserve unsupported slots and contradiction witnesses. The <400 bound is saved;
+the rough 200 lower estimate must not conceal shorter compatible candidates.
+For later appearance, initialize from paper/shadows and bead highlights, pool
+pigments by color, then alternate bounded Python-driven POV-Ray fits. These are
+method proposals, not a recovered sequence, count or appearance fit. The local
+index/color pilot remains the next numerical step.
+
 One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.
@@ -62,13 +74,13 @@ the algorithm's inputs. These generalization tests have not yet run.
 | Aspect | Intended result | Status |
 | --- | --- | --- |
 | Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R104 hue trend survives ±8 px; hue maxima and reference-scaled texture crossings remain unreliable as edge rules |
-| Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | Deferred; research primary sources when this phase starts |
+| Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | R112 four fitting methods and official POV-Ray references saved; fitting deferred |
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
 | Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | R109 six methods documented; implementation deferred |
 | Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | R109 image-appearance methods documented; material fitting deferred |
 | Visible-bead indices and colors | Full-string bead_index plus observed palette ID, preserving missing/unknown states | R111 graph + robust color method selected; local pilot pending |
 | Helicity and spacings | Band-pass FFT peaks for directions 1/6/7; direction-1 angle relative to local centerline | R098/R109 maker method saved, width-scale window specified qualitatively; synthetic sign/convention validation pending |
-| Repeating pattern | Competing sequences of length 200–400 with explicit uncertainty | Deferred; no photo-2 sequence established |
+| Repeating pattern | Shortest compatible divisor of exact N, <400 and not divisible by 13; preserve ambiguity | R112 two methods documented; include candidates below rough 200 estimate; no photo-2 sequence established |
 
 The phases can require revisiting shared parameters; lighting and material are
 coupled. Background color is a configurable scene property, never a fixed rule

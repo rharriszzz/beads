@@ -188,8 +188,19 @@ This is my longest design; I confirmed it is less than 400, consistent with the
 opening estimate of roughly 200–400. It was designed on custom graph paper with
 continuous black/yellow/red spirals. My later recollection was roughly rectangular
 paths, probably using ±6/±7; the exact continuity rule and path lengths are unknown.
-I have not designed a multiple-of-13 repeat, although I might in future; retain
-those as synthetic cases, not a ban on algorithms considering them.
+R112 strengthens the earlier recollection: **this necklace's repeat length is
+not a multiple of 13**. Apply that exclusion to photo 2; keep the general solver
+configurable and retain multiples of 13 as synthetic tests. It does not imply
+that the total bead count is indivisible by 13.
+
+Once every bead has a complete, consistent full-string index, the total count
+is known. Find the smallest color repeat matching all clearly visible indexed
+beads, using whole-repeat closure. Visible-only indexing still needs verified
+closure across hidden regions to establish that count. Preserve unresolved colors
+and unobserved pattern slots. Then fit the paper, individual bead colors and
+lighting in POV-Ray; compare methods before implementation. See the
+[repeat methods](METHODS.md#shortest-color-pattern-from-indexed-observations) and
+[appearance methods](METHODS.md#fit-paper-bead-materials-and-lighting-in-pov-ray).
 
 Invented patterns are authorized for tests. One supplied simpler example is the
 concatenated 30-bead sequence `123333 112333 111233 111123 111112`, with freely

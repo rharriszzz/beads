@@ -48,6 +48,11 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   bead_index and color for every clearly visible body; keep observation IDs,
   local component indices and resolved full-string indices distinct. Unresolved
   visible bodies remain in coverage accounting instead of being dropped.
+  R112: photo-2 repeat length is not divisible by 13; this is not a restriction
+  on total bead count or generic synthetic tests. With verified exact N, test
+  divisors for the shortest repeat compatible with all visible observations.
+  Preserve unknown slots and conflict witnesses; visible-only indices do not
+  establish N without closure. Do not claim a recovered pattern from proposals.
 - Explain measurement paths: raw context, interior endpoints and reasons, sampling
   route, then measurements and limitations. Highlights are not boundary markers.
 - Inspect machine, branch, upstream, status and stashes before writes. Preserve

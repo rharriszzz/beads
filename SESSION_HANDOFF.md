@@ -10,6 +10,43 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R112 — Shortest repeat and later POV-Ray appearance methods
+
+Maker says complete bead indexing establishes exact N, asks for one/two methods
+to find the smallest color repeat matching every clear bead, guarantees this
+repeat is not a multiple of 13, and asks for later paper/material/light methods.
+Saved in INITIAL_QUESTION and METHODS. This strengthens the earlier nonbinding
+13 recollection for photo 2 only. N itself may still be divisible by 13.
+
+Recommend P1 residue-class consistency over candidate divisors of verified N,
+with P2 different-color pair-distance exclusion as an independent check. Scan
+below the rough 200 lower estimate to establish minimum; confirmed <400 remains.
+Preserve unsupported/ambiguous slots, conflict witnesses and alternate candidates.
+Visible-only indices need closure to determine N. Shortest compatible completion
+does not alone prove the true design if unseen slots allow alternatives.
+Read historical partial_word.py and SEQUENCES at 2c4c116: existing exact solver
+core is reusable, but its three-color alphabet/benchmark domain need explicit
+adaptation. No historical tests rerun or code imported. Primary partial-word
+research and official POV-Ray references are linked in METHODS.
+
+Appearance options: A1 paper/cast shadows, A2 highlight/normal geometry,
+A3 repeated-color pigment/finish fitting, A4 alternating Python/POV-Ray renders.
+Choose A1+A2 initialization, A3 pigments, then A4 refinement. Account for source
+extent versus roughness, image encoding/exposure ambiguity, indirect paper color
+and area_illumination behavior. These are proposals only; no recovered N, pattern,
+bead assignments or scene changes. FFT exploration remains optional in both roles.
+
+Preflight daisy, clean ce36d76, no stashes, fetched origin/upstream0/0. Read required
+workflow, latest records, quick shape model, current scene and historical solver.
+Documentation checks are recorded in R112. No new dependencies, supplied status/
+usage, delegation or ownership transfer. Scoped publication follows this entry.
+
+**Next bounded task:** the local visible-body index/color pilot described in R111,
+with raw context, neighbor alternatives and interior evidence, checked against a
+known synthetic counterpart. Stop at illustrated local review. Discuss these
+methods here; recommend **gpt-6-astra / High and a fresh `/new` for numerical work**.
+Do not automatically advance to whole-necklace indexing, repeat recovery or fitting.
+
 ## R111 — Optional FFT adoption; select visible-bead index/color methods
 
 Maker asks to explore FFT in both background/shadow and direction/helicity tasks,
