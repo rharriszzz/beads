@@ -10,6 +10,55 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R107–R108 — Shadow-aware paper evidence for a useful spline
+
+R107 proposes sampling an image-margin strip, enclosing its HSV samples and
+classifying matches as background; the earlier chat-only explanation is now saved.
+R108 asks how to cover shadowed paper, evaluate alternatives and recommend methods.
+The explicit goal is a smooth necklace spline excluding cast-shadow bias;
+pixel-perfect separation is unnecessary because later geometry can refine it.
+
+[METHODS.md](METHODS.md#shadowed-paper-alternatives-and-evaluation-for-splines)
+now compares actual shadow-paper samples, predicted shading families, spatial/FFT
+texture continuity, conservative region propagation, and boundary completion.
+It also compares HSV boxes, convex hulls and density regions for the strip idea.
+Color compatibility alone cannot separate the maker's overlapping red/shadow
+colors. A lit-strip model need not cover shadows, and simply lowering V admits
+dark beads. Supported shadow samples retain provenance; new predictions are not
+reused as independent confirmation. Near-black/clipped regions may stay unknown.
+
+Recommendation: **image-trained paper appearance + spatial texture + supported
+anchors/smooth completion**, with FFT on the same patches as a comparator. Begin
+with simple HSV box versus circular-hue density regions; use actual supported
+shadow samples and only a restricted shading extension. Defer full graph growth
+and detailed illumination fitting until a specific failure warrants them.
+This is qualitative evaluation grounded in R100/R104, not a new measured winner.
+
+Criterion: broad shadow bands must not shift the spline. Small uncertain scallops
+and gaps may wait. Smoothing a biased mask is insufficient. Assess held-out signed
+boundary/centerline error, perturbation stability, supported coverage and usefulness
+for the later bead-search band. The illustrative one-edge error d → midpoint
+error d/2 is algebra, not a photo measurement or exact projected 3D centerline.
+No new mask, anchor, spline, rendered scene or numerical result in this docs step.
+INITIAL_QUESTION, AGENTS and PLAN carry the purpose forward; original R092 text
+and historical evidence are preserved. No new maker question or approval gate.
+
+Preflight daisy, clean5c4165d, no stashes, fetch succeeded/origin0/0; read required
+docs and relevant HSV/parallel/shape evidence. No supplied status/usage, dependencies,
+delegation or transfer. One atomic documentation patch failed on a stale context
+line and was corrected; no numerical tests were run for this text-only change.
+Checks pass: 54 local links/anchors, original opening unchanged verbatim, five
+main methods/five shadow treatments, six Markdown-only files and whitespace.
+Earlier code/images/reports unchanged; existing illustrations linked as evidence,
+not new labels. Scoped publication and remote verification follow these records.
+
+**Next bounded task:** expand one ambiguous neighborhood along the necklace;
+show supported paper/shadow samples, texture evidence and candidate anchors;
+compare a short smooth bridge and its sensitivity. Stop at illustrated review
+before a whole-necklace contour, physical centerline/scene fitting or bead indexing.
+Do not require a perfect mask. Recommend **gpt-6-astra / High; fresh `/new` for
+that experiment**, or stay here for this methods discussion. User controls switching.
+
 ## R106 — Reusable brief and methods documentation detour
 
 User requests an initial-question Markdown containing this conversation's opening

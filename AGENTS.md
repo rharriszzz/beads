@@ -14,6 +14,9 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   substantial margins. Use this generic framing prior for background initialization;
   no numeric margin width or bead coordinates are supplied. Enclosed paper and
   gaps remain background even without a connection to the image border.
+  R108: background separation serves a useful smooth spline that excludes cast
+  shadow. Do not require pixel-perfect masks before later geometry refinement;
+  prioritize broad shadow-induced bias, supported coverage and explicit uncertainty.
   R096 notes shadowed-paper/bead HSV overlap; retain texture/context and explicit
   uncertainty rather than forcing a color-only threshold.
   R100–R102 confirm the maker's labeled evidence and identify the overlapping

@@ -60,6 +60,16 @@ Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
   Final code should have little knowledge of this picture's particular colors
   or bead locations. The known palette below describes this necklace; do not use
   it as a required segmentation palette for other inputs.
+- The immediate purpose of identifying paper is to fit smooth splines to the
+  necklace without including cast shadow in its outline. Pixel-perfect separation
+  is not required now; later bead/geometry steps can refine it. Prioritize avoiding
+  broad shadow-induced displacement and preserve local uncertainty.
+- One proposed background method is to sample every HSV value in a strip around
+  a line near an image edge, fit an enclosing region in HSV space, and test other
+  pixels for membership. The line should remain on paper. Include ways to handle
+  shadowed paper, evaluate the alternatives for spline fitting, and explain the
+  recommended combination. This is a method proposal, not a confirmed rule that
+  every matching color belongs to paper; see [METHODS.md](METHODS.md).
 - Shadowed red beads and shadowed paper definitely overlap in HSV, from the
   maker's earlier deliberately labeled regions. The intended saved map is
   `fft-image-explorer/hsv_mask_triptych.py`, with overlapping `red-and-shadow`
@@ -184,7 +194,7 @@ Historical construction sources are pinned at commit
 | Palette, checked repeats, unknown colors, neighbors, free conventions, example | Same log, R025/R028/R030/R033/R035 |
 | Rectangular cues, corrected spiral recollection, holes, thread, gloss/highlights | Same log, R038/R042/R049–R051/R054; flash unknown in R057 |
 | Ignore slivers; planar centerline, exposed shapes and camera view | Same log, R069/R086; [SHAPE_REASONING.md](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/SHAPE_REASONING.md) |
-| Color independence, FFT advice, HSV evidence, smooth bridging, margins | [Current request log](REQUEST_LOG.md), R092–R106 |
+| Color independence, FFT advice, HSV evidence, smooth bridging, margins, HSV-region proposal and spline purpose | [Current request log](REQUEST_LOG.md), R092–R108 |
 
 ### Branch-history review for this consolidation
 

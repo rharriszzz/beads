@@ -12,6 +12,15 @@ not fixed bead coordinates or a prescribed border width. Enclosed paper/gaps nee
 support beyond exterior connectivity. The anchor/bridge experiment below remains
 the next bounded numerical task; this detour did not run it.
 
+R107–R108 extend the [methods discussion](METHODS.md#shadowed-paper-alternatives-and-evaluation-for-splines)
+with the maker's strip-to-HSV-region proposal and five shadow treatments.
+Recommend image-trained lit/shadow appearance, spatial texture with an FFT
+comparison, and supported boundary anchors with smooth completion. This is a
+reasoned choice, not a measured full-image winner. The intermediate goal is a
+useful spline without broad cast-shadow bias; pixel-perfect masks can wait for
+later geometry refinement. Judge signed displacement, stability and supported
+coverage, preserving unresolved stretches.
+
 One aspect at a time; offer 3–6 implementation methods at each phase and use
 short illustrated feedback rounds. A phase boundary is a reviewable result,
 not automatic authorization to select all later methods.
@@ -70,7 +79,9 @@ bridge with the raw image. Compare local cubic interpolation, a robust smoothing
 spline, and coupled inner/outer envelopes as implementation options. Start with
 the simplest local bridge if evidence supports its endpoints. Show anchor evidence
 separately from inferred spans and sensitivity to anchor choice; leave unsupported
-spans unresolved. Stop for review before whole-necklace contour adoption,
+spans unresolved. Use supported paper/shadow samples and local texture to assess
+anchors; do not expand this into a perfect-mask prerequisite. Stop for review
+before whole-necklace contour adoption,
 centerline/scene fitting or bead assignments. Diagnostic crops remain validation
 fixtures, not runtime priors. The earlier proposed whole-image search is deferred
 to follow the maker's more specific guidance.

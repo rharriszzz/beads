@@ -500,3 +500,74 @@ prepared for publication; ignored environments/outputs excluded. Delivery checks
 follow the commit. Next remains one wider-context anchor/bridge comparison, then
 illustrated review; gpt-6-astra / High, fresh /new for that experiment or stay here
 for editing the documents.
+
+## R107 — Learn an HSV background region from an image-margin strip (2026-09-28)
+
+User: “suppose you draw a line across the image, near one of the boundaries, and
+collected every HSV value near that line, then invent some sort of surface in
+HSV space that encloses that space, then said If a poind is inside this HSV
+region, Then it is a background point.  Is this approach (kind of related to a
+"manual" approach I tried in another of my repos, is it similar to any of your
+methods?”
+
+Previous response explained this as a concrete instance of method 1 (learn paper
+appearance); compared HSV boxes, convex hull and density regions; retained hue
+wrapping and the known shadowed red/paper overlap. Membership establishes color
+compatibility, not surface identity; lit-margin samples may miss shadow colors.
+That response made no repository changes. This step saves the idea and adds its
+shadow/spline role below. A line must remain in paper; a line near the necklace
+edge is not automatically a labeled background sample.
+
+## R108 — Shadowed paper methods evaluated for useful splines (2026-09-28)
+
+User: “Also please add to this discussion some ways to make sure to figure out
+the background pixels that are in the shadows.  The goal of identifying the
+background pixels are to be able to find smooth splines that fit the necklace,
+without including the shadowed background.  Ultimately, later steps will make
+it less necessary to achieve perfection in this process.  So I hope for
+explanation and evaluation of these alternative methods, and an explanation of
+which method(s) would you choose, and why.”
+
+Preflight daisy, clean 5c4165d, photo-2-reconstruction-v2, no stashes; fetch
+succeeded, origin0/0. Read current handoff/plan/log, methods, HSV provenance,
+parallel/reference experiment and shape quick/task model. Scope: extend the
+method discussion with shadow-specific alternatives, qualitative evaluation
+against existing evidence, recommendation and spline-oriented acceptance goals.
+No new segmentation benchmark or fitted spline promised by this documentation
+step. No supplied status/usage, dependencies, delegation or ownership transfer.
+
+### R107–R108 outcome and checks
+
+Extended METHODS.md with the strip-to-HSV proposal (box/convex-hull/density
+alternatives), hue wrap/low-chroma handling, sample provenance and the distinction
+between paper-color compatibility and surface identity. Compared five shadow
+strategies: actual shadow-paper samples, a restricted predicted shading family,
+spatial/FFT texture continuity, conservative propagation, and smooth boundary
+completion from clearer neighboring sections. Included practical sample selection
+and warnings against self-confirming model updates. The reference/hue findings
+from R100/R104 support a qualitative comparison; no new performance measurements.
+
+Recommended methods1+3+5: learn paper appearance including supported shadows,
+check local spatial texture with FFT as a paired comparator, and fit supported
+boundary sections while bridging ambiguity. Prefer a simple HSV box versus a
+circular-hue density model comparison; do not automatically extend every hue to
+V=0. Defer full graph growth and detailed light fitting. No hue palette, fixed
+bead locations, new pixel labels or scene parameters adopted.
+
+Updated initial brief/workflow/plan/handoff: prioritize useful smooth splines
+without broad cast-shadow displacement, not pixel-perfect masks. Later steps may
+refine uncertain scallops/gaps. Added signed held-out curve error, perturbation
+stability, supported coverage and downstream search-band usefulness to evaluation.
+Explained why smoothing a shadow-biased mask retains bias; one-edge error d causes
+midpoint error d/2 in a simple cross-section, explicitly an algebraic illustration.
+
+Checks pass: 54 local links/anchors, original R092 opening unchanged verbatim,
+five main methods and five shadow variants, exactly six Markdown files changed,
+whitespace clean; earlier code/images/reports unchanged. One atomic patch context
+mismatch corrected before checks; no runtime tests/renders warranted for this
+text-only step. No newly generated illustrations or questions needed; existing
+raw/route evidence linked without relabeling paths as pure paper. Scoped commit/
+push follows; routine outputs/environments excluded, remote verified afterward.
+Next remains one wider-context supported-anchor/short-bridge comparison, stopping
+at illustrated review; gpt-6-astra / High, fresh /new for the experiment or stay
+here for discussion. No model/session switch performed.
