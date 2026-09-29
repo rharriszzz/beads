@@ -1,0 +1,2752 @@
+{
+  "request_id": "R132",
+  "cases": [
+    {
+      "dataset": "synthetic",
+      "hypothesis": "H1",
+      "hand": 1,
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "camera": {
+        "kind": "orthographic"
+      },
+      "method": "masked_regions",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1346.9990395566697,
+        287.55215542630015,
+        7.905452844925254,
+        0.7005150600033395,
+        55.0,
+        6.952788511608965,
+        6.390669161309178
+      ],
+      "start_parameters": [
+        1345.132038938911,
+        287.47539841987737,
+        7.857492102776845,
+        3.8091410216913477,
+        55.0,
+        3.4422853994886164,
+        5.569019251700095
+      ],
+      "python_training_loss": 0.0,
+      "pov_training_loss": 0.0,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.8608247422680413,
+          "area_ratio": 0.9566395663956639,
+          "predicted_area": 353,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.914364640883978,
+          "area_ratio": 0.9659574468085106,
+          "predicted_area": 681,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.9460370994940978,
+          "area_ratio": 0.9726495726495726,
+          "predicted_area": 569,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.7701711491442543,
+          "area_ratio": 0.962059620596206,
+          "predicted_area": 355,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.9030303030303031,
+          "area_ratio": 0.9323076923076923,
+          "predicted_area": 606,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.9017735334242838,
+          "area_ratio": 0.946927374301676,
+          "predicted_area": 678,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 1.0,
+          "iou": 0.8414154652686763,
+          "area_ratio": 0.9568245125348189,
+          "predicted_area": 687,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.8683544303797468,
+          "area_ratio": 1.0,
+          "predicted_area": 369,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.9258241758241759,
+          "area_ratio": 0.9886524822695035,
+          "predicted_area": 697,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.9303482587064676,
+          "area_ratio": 0.9897435897435898,
+          "predicted_area": 579,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.8238213399503722,
+          "area_ratio": 0.991869918699187,
+          "predicted_area": 366,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.9555895865237366,
+          "area_ratio": 0.9646153846153847,
+          "predicted_area": 627,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.9136302294197031,
+          "area_ratio": 0.9804469273743017,
+          "predicted_area": 702,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 1.0,
+          "iou": 0.9142857142857143,
+          "area_ratio": 0.9596100278551533,
+          "predicted_area": 689,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 178,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.0009208103130755064,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 95,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.0,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 197,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.1263385421359115,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 209,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 7.329614280414612e-05,
+          "end_loss": 0.0
+        }
+      ],
+      "ray_pov_mismatches": 2,
+      "render_provenance": {
+        "scene_sha256": "447f8c638d9976bd85d6d0d7ac66a57781cb1f04e4e8fdabcc2042376b5be74a",
+        "png_sha256": "bb0435c95cc54ddab03fcc6d0a9a5d630c4e69f5521d6944ff094ee020593a16",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/synthetic-H1-masked_regions-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/synthetic-H1-masked_regions-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "synthetic-H1-masked_regions-r6-e3",
+      "fit_code_sha256": "fee738f3c830e266b1cda2aa48ea417f3b43dcdd180ab00b56689d67208394c6"
+    },
+    {
+      "dataset": "synthetic",
+      "hypothesis": "H1",
+      "hand": 1,
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "camera": {
+        "kind": "orthographic"
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1346.3225372620716,
+        288.4165530603127,
+        8.160117182299535,
+        -0.1325722067203018,
+        55.0,
+        8.416099172088137,
+        6.433424995055218
+      ],
+      "start_parameters": [
+        1345.132038938911,
+        287.47539841987737,
+        7.857492102776845,
+        3.8091410216913477,
+        55.0,
+        3.4422853994886164,
+        5.569019251700095
+      ],
+      "python_training_loss": 0.0,
+      "pov_training_loss": 0.0,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.8608247422680413,
+          "area_ratio": 0.9566395663956639,
+          "predicted_area": 353,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.914364640883978,
+          "area_ratio": 0.9659574468085106,
+          "predicted_area": 681,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.9460370994940978,
+          "area_ratio": 0.9726495726495726,
+          "predicted_area": 569,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.7701711491442543,
+          "area_ratio": 0.962059620596206,
+          "predicted_area": 355,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.9030303030303031,
+          "area_ratio": 0.9323076923076923,
+          "predicted_area": 606,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.9017735334242838,
+          "area_ratio": 0.946927374301676,
+          "predicted_area": 678,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 1.0,
+          "iou": 0.8414154652686763,
+          "area_ratio": 0.9568245125348189,
+          "predicted_area": 687,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.8413461538461539,
+          "area_ratio": 1.075880758807588,
+          "predicted_area": 397,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.9242021276595744,
+          "area_ratio": 1.052482269503546,
+          "predicted_area": 742,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.9384116693679092,
+          "area_ratio": 1.0444444444444445,
+          "predicted_area": 611,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.7962529274004684,
+          "area_ratio": 1.0785907859078592,
+          "predicted_area": 398,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8787023977433004,
+          "area_ratio": 1.0492307692307692,
+          "predicted_area": 682,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.8607918263090677,
+          "area_ratio": 1.0349162011173185,
+          "predicted_area": 741,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 1.0,
+          "iou": 0.8314465408805032,
+          "area_ratio": 1.0278551532033426,
+          "predicted_area": 738,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 196,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.0013123359580052493,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 91,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.0,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 191,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.09050876601750228,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 101,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.0,
+          "end_loss": 0.0
+        }
+      ],
+      "ray_pov_mismatches": 1,
+      "render_provenance": {
+        "scene_sha256": "f11c4cc873824c651affbe5ac6a848842464570029a43eda83d6a874b4495351",
+        "png_sha256": "0b2d6ceda3ed4fa454ced6c90fbd5f99c2047edcb5c1636e3bd91bcd1faa7a8b",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/synthetic-H1-cores-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/synthetic-H1-cores-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "synthetic-H1-cores-r6-e3",
+      "fit_code_sha256": "fee738f3c830e266b1cda2aa48ea417f3b43dcdd180ab00b56689d67208394c6"
+    },
+    {
+      "dataset": "synthetic",
+      "hypothesis": "H2",
+      "hand": -1,
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "camera": {
+        "kind": "orthographic"
+      },
+      "method": "masked_regions",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1344.1725551111615,
+        289.3782704101139,
+        7.661789215141852,
+        11.058859200677832,
+        55.0,
+        -13.485369925154835,
+        3.96533229812402
+      ],
+      "start_parameters": [
+        1342.7301457910753,
+        288.234626360469,
+        7.7272506710214195,
+        13.578174071113773,
+        55.0,
+        -15.06964429509137,
+        5.702817497278146
+      ],
+      "python_training_loss": 0.004094654051261414,
+      "pov_training_loss": 0.004094654051261414,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.7684729064039408,
+          "area_ratio": 0.94579945799458,
+          "predicted_area": 349,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.839622641509434,
+          "area_ratio": 0.9361702127659575,
+          "predicted_area": 660,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.8927392739273927,
+          "area_ratio": 0.9606837606837607,
+          "predicted_area": 562,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.7860696517412935,
+          "area_ratio": 0.94579945799458,
+          "predicted_area": 349,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8652694610778443,
+          "area_ratio": 0.916923076923077,
+          "predicted_area": 596,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.8525469168900804,
+          "area_ratio": 0.9301675977653632,
+          "predicted_area": 666,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 0.9620535714285714,
+          "iou": 0.7620865139949109,
+          "area_ratio": 0.9289693593314763,
+          "predicted_area": 667,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.6861313868613139,
+          "area_ratio": 0.8780487804878049,
+          "predicted_area": 324,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 0.9816091954022989,
+          "iou": 0.7952127659574468,
+          "area_ratio": 0.9148936170212766,
+          "predicted_area": 645,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 0.9971509971509972,
+          "iou": 0.8426229508196721,
+          "area_ratio": 0.9213675213675213,
+          "predicted_area": 539,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.76010101010101,
+          "area_ratio": 0.8888888888888888,
+          "predicted_area": 328,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8385185185185186,
+          "area_ratio": 0.9092307692307692,
+          "predicted_area": 591,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 0.984304932735426,
+          "iou": 0.7939632545931758,
+          "area_ratio": 0.909217877094972,
+          "predicted_area": 651,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 0.9977678571428571,
+          "iou": 0.836436170212766,
+          "area_ratio": 0.9233983286908078,
+          "predicted_area": 663,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 80,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": false,
+          "start_loss": 0.019159882023909763,
+          "end_loss": 0.025117049827685107
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 152,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.007585460475476269,
+          "end_loss": 0.00437232333386588
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 339,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.11338342514934306,
+          "end_loss": 0.010175042278002061
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 374,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.011265853300374646,
+          "end_loss": 0.004094654051261414
+        }
+      ],
+      "ray_pov_mismatches": 1,
+      "render_provenance": {
+        "scene_sha256": "7b0843cbce7fbcaa4fa3d8d00a19ca5b0120dfbe2713883e0171b2b3dba03a10",
+        "png_sha256": "70f082a6d4288dd3db333d5858fe50394d625e8e2ed26a16e5ae6d45cad1506f",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/synthetic-H2-masked_regions-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/synthetic-H2-masked_regions-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "synthetic-H2-masked_regions-r6-e3",
+      "fit_code_sha256": "fee738f3c830e266b1cda2aa48ea417f3b43dcdd180ab00b56689d67208394c6"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "synthetic",
+      "hypothesis": "H2",
+      "hand": -1,
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "camera": {
+        "kind": "orthographic"
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1342.7160802920894,
+        288.7356186973672,
+        8.010772379316121,
+        13.770835815328619,
+        55.0,
+        -16.376214863815612,
+        8.090373669842906
+      ],
+      "start_parameters": [
+        1342.7301457910753,
+        288.234626360469,
+        7.7272506710214195,
+        13.578174071113773,
+        55.0,
+        -15.06964429509137,
+        5.702817497278146
+      ],
+      "python_training_loss": 0.0007662835249042146,
+      "pov_training_loss": 0.0007662835249042146,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.7684729064039408,
+          "area_ratio": 0.94579945799458,
+          "predicted_area": 349,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.839622641509434,
+          "area_ratio": 0.9361702127659575,
+          "predicted_area": 660,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.8927392739273927,
+          "area_ratio": 0.9606837606837607,
+          "predicted_area": 562,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.7860696517412935,
+          "area_ratio": 0.94579945799458,
+          "predicted_area": 349,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8652694610778443,
+          "area_ratio": 0.916923076923077,
+          "predicted_area": 596,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.8525469168900804,
+          "area_ratio": 0.9301675977653632,
+          "predicted_area": 666,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 0.9620535714285714,
+          "iou": 0.7620865139949109,
+          "area_ratio": 0.9289693593314763,
+          "predicted_area": 667,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.8108747044917257,
+          "area_ratio": 1.075880758807588,
+          "predicted_area": 397,
+          "observed_area": 369,
+          "core_pixels": 170
+        },
+        "C": {
+          "core_coverage": 0.9954022988505747,
+          "iou": 0.7738693467336684,
+          "area_ratio": 1.0028368794326241,
+          "predicted_area": 707,
+          "observed_area": 705,
+          "core_pixels": 435
+        },
+        "E": {
+          "core_coverage": 1.0,
+          "iou": 0.8066465256797583,
+          "area_ratio": 1.0444444444444445,
+          "predicted_area": 611,
+          "observed_area": 585,
+          "core_pixels": 351
+        },
+        "F": {
+          "core_coverage": 1.0,
+          "iou": 0.6826086956521739,
+          "area_ratio": 1.0975609756097562,
+          "predicted_area": 405,
+          "observed_area": 369,
+          "core_pixels": 172
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.9044862518089725,
+          "area_ratio": 1.0246153846153847,
+          "predicted_area": 666,
+          "observed_area": 650,
+          "core_pixels": 415
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.8005018820577164,
+          "area_ratio": 1.0041899441340782,
+          "predicted_area": 719,
+          "observed_area": 716,
+          "core_pixels": 446
+        },
+        "J": {
+          "core_coverage": 1.0,
+          "iou": 0.7549019607843137,
+          "area_ratio": 0.9944289693593314,
+          "predicted_area": 714,
+          "observed_area": 718,
+          "core_pixels": 448
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 163,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": false,
+          "start_loss": 0.007853669454108933,
+          "end_loss": 0.014435695538057743
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 246,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.006324404761904761,
+          "end_loss": 0.0007662835249042146
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 163,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.063958897345662,
+          "end_loss": 0.014435695538057743
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 238,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.005952380952380952,
+          "end_loss": 0.003426079734219269
+        }
+      ],
+      "ray_pov_mismatches": 1,
+      "render_provenance": {
+        "scene_sha256": "7b42291f4a07972b9311cfab43955e09835afa7ddfdb38d22302e6801cd8b118",
+        "png_sha256": "f099529e74a82f61b2e404b0213e964d08bfaf0e5b090d262b09b93668aeb9c3",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/synthetic-H2-cores-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/synthetic-H2-cores-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "synthetic-H2-cores-r6-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H1",
+      "hand": 1,
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "masked_regions",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1349.260933995226,
+        283.29147064758183,
+        8.352192717501111,
+        18.50053576765394,
+        55.0,
+        -8.996160533451492,
+        44.60106148695185
+      ],
+      "start_parameters": [
+        1348.9112347032783,
+        282.86569985796194,
+        8.368014945039002,
+        18.990547401826106,
+        55.0,
+        -9.47215239248219,
+        44.9505622788956
+      ],
+      "python_training_loss": 0.4836672016317465,
+      "pov_training_loss": 0.4849221698497628,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9388297872340425,
+          "iou": 0.6274256144890039,
+          "area_ratio": 1.0522022838499185,
+          "predicted_area": 645,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.8324873096446701,
+          "iou": 0.49363057324840764,
+          "area_ratio": 1.2693548387096774,
+          "predicted_area": 787,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9137168141592921,
+          "iou": 0.5739320920043811,
+          "area_ratio": 1.1070381231671553,
+          "predicted_area": 755,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.861328125,
+          "iou": 0.6451612903225806,
+          "area_ratio": 0.8214285714285714,
+          "predicted_area": 644,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9596928982725528,
+          "iou": 0.7543103448275862,
+          "area_ratio": 1.0426599749058971,
+          "predicted_area": 831,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8712871287128713,
+          "iou": 0.5045045045045045,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9144893111638955,
+          "iou": 0.6964504283965728,
+          "area_ratio": 1.0686567164179104,
+          "predicted_area": 716,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.9468085106382979,
+          "iou": 0.6443569553805775,
+          "area_ratio": 1.0440456769983686,
+          "predicted_area": 640,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.817258883248731,
+          "iou": 0.4830508474576271,
+          "area_ratio": 1.2580645161290323,
+          "predicted_area": 780,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.918141592920354,
+          "iou": 0.5812154696132596,
+          "area_ratio": 1.098240469208211,
+          "predicted_area": 749,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.849609375,
+          "iou": 0.6363636363636364,
+          "area_ratio": 0.8137755102040817,
+          "predicted_area": 638,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.946257197696737,
+          "iou": 0.7387580299785867,
+          "area_ratio": 1.0376411543287327,
+          "predicted_area": 827,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8836633663366337,
+          "iou": 0.5161290322580645,
+          "area_ratio": 1.3138461538461539,
+          "predicted_area": 854,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9002375296912114,
+          "iou": 0.6779661016949152,
+          "area_ratio": 1.0686567164179104,
+          "predicted_area": 716,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 80,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": false,
+          "start_loss": 0.6447056137274633,
+          "end_loss": 0.6481084567165116
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 288,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.4881995942184358,
+          "end_loss": 0.4840909165513909
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 237,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.8914837162938355,
+          "end_loss": 0.6500307632972037
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 361,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.5095055214905558,
+          "end_loss": 0.4836672016317465
+        }
+      ],
+      "ray_pov_mismatches": 3,
+      "render_provenance": {
+        "scene_sha256": "6bcf75576108ed0bcd69dd7e949c662930cace2f2818412b43338f08f7e05ed3",
+        "png_sha256": "4771b76afc24d74dd7d8c555427840cd5aed277928e14f6f4dcdca0bc7afece5",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H1-masked_regions-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H1-masked_regions-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H1-masked_regions-r6-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H1",
+      "hand": 1,
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1346.3270347733367,
+        285.22022715590816,
+        9.422076368257907,
+        15.02384012948587,
+        55.0,
+        -6.323687125767186,
+        46.469058633998195
+      ],
+      "start_parameters": [
+        1348.9112347032783,
+        282.86569985796194,
+        8.368014945039002,
+        18.990547401826106,
+        55.0,
+        -9.47215239248219,
+        44.9505622788956
+      ],
+      "python_training_loss": 0.0382738991167624,
+      "pov_training_loss": 0.038642630680184226,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9388297872340425,
+          "iou": 0.6274256144890039,
+          "area_ratio": 1.0522022838499185,
+          "predicted_area": 645,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.8324873096446701,
+          "iou": 0.49363057324840764,
+          "area_ratio": 1.2693548387096774,
+          "predicted_area": 787,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9137168141592921,
+          "iou": 0.5739320920043811,
+          "area_ratio": 1.1070381231671553,
+          "predicted_area": 755,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.861328125,
+          "iou": 0.6451612903225806,
+          "area_ratio": 0.8214285714285714,
+          "predicted_area": 644,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9596928982725528,
+          "iou": 0.7543103448275862,
+          "area_ratio": 1.0426599749058971,
+          "predicted_area": 831,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8712871287128713,
+          "iou": 0.5045045045045045,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9144893111638955,
+          "iou": 0.6964504283965728,
+          "area_ratio": 1.0686567164179104,
+          "predicted_area": 716,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.8696808510638298,
+          "iou": 0.45180722891566266,
+          "area_ratio": 1.3588907014681892,
+          "predicted_area": 833,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 1.0,
+          "iou": 0.5347544022242817,
+          "area_ratio": 1.6709677419354838,
+          "predicted_area": 1036,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9889380530973452,
+          "iou": 0.5602294455066922,
+          "area_ratio": 1.3929618768328447,
+          "predicted_area": 950,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.95703125,
+          "iou": 0.6353535353535353,
+          "area_ratio": 1.0650510204081634,
+          "predicted_area": 835,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.982725527831094,
+          "iou": 0.5922077922077922,
+          "area_ratio": 1.3074027603513174,
+          "predicted_area": 1042,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.5612612612612613,
+          "area_ratio": 1.666153846153846,
+          "predicted_area": 1083,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9524940617577197,
+          "iou": 0.5491559086395233,
+          "area_ratio": 1.328358208955224,
+          "predicted_area": 890,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 336,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.13067131865387382,
+          "end_loss": 0.06052454879553681
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 170,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.042306108401418276,
+          "end_loss": 0.0382738991167624
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 344,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.15713515370123785,
+          "end_loss": 0.0639717852953147
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.05070861410284277,
+          "end_loss": 0.04256024057508926
+        }
+      ],
+      "ray_pov_mismatches": 2,
+      "render_provenance": {
+        "scene_sha256": "7dba15ed6052789155b19ba2b3f27005edd7216cf6c733bd67d2f8427b3864d1",
+        "png_sha256": "9953be5b9f7ef0b50417d6aef79ca2554829e89b4090b061332fe2a55c7775d3",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H1-cores-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H1-cores-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H1-cores-r6-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H1",
+      "hand": 1,
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 10,
+      "erosion_px": 3,
+      "parameters": [
+        1347.2336536105006,
+        285.063943328498,
+        9.416480548699854,
+        14.055071806807417,
+        55.0,
+        -4.439997841828552,
+        46.318642874949305
+      ],
+      "start_parameters": [
+        1348.9112347032783,
+        282.86569985796194,
+        8.368014945039002,
+        18.990547401826106,
+        55.0,
+        -9.47215239248219,
+        44.9505622788956
+      ],
+      "python_training_loss": 0.04083552377219454,
+      "pov_training_loss": 0.04083552377219454,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9388297872340425,
+          "iou": 0.6274256144890039,
+          "area_ratio": 1.0522022838499185,
+          "predicted_area": 645,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.8324873096446701,
+          "iou": 0.49363057324840764,
+          "area_ratio": 1.2693548387096774,
+          "predicted_area": 787,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9137168141592921,
+          "iou": 0.5739320920043811,
+          "area_ratio": 1.1070381231671553,
+          "predicted_area": 755,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.861328125,
+          "iou": 0.6451612903225806,
+          "area_ratio": 0.8214285714285714,
+          "predicted_area": 644,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9596928982725528,
+          "iou": 0.7543103448275862,
+          "area_ratio": 1.0426599749058971,
+          "predicted_area": 831,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8712871287128713,
+          "iou": 0.5045045045045045,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9144893111638955,
+          "iou": 0.6964504283965728,
+          "area_ratio": 1.0686567164179104,
+          "predicted_area": 716,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.8776595744680851,
+          "iou": 0.4566532258064516,
+          "area_ratio": 1.3572593800978794,
+          "predicted_area": 832,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.9949238578680203,
+          "iou": 0.5345149253731343,
+          "area_ratio": 1.653225806451613,
+          "predicted_area": 1025,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9911504424778761,
+          "iou": 0.5613026819923371,
+          "area_ratio": 1.3900293255131966,
+          "predicted_area": 948,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.92578125,
+          "iou": 0.6049751243781094,
+          "area_ratio": 1.0573979591836735,
+          "predicted_area": 829,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9788867562380038,
+          "iou": 0.6012216404886562,
+          "area_ratio": 1.302383939774153,
+          "predicted_area": 1038,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.5608656447249775,
+          "area_ratio": 1.6630769230769231,
+          "predicted_area": 1081,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9667458432304038,
+          "iou": 0.5615615615615616,
+          "area_ratio": 1.328358208955224,
+          "predicted_area": 890,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.13452663214786215,
+          "end_loss": 0.057738095238095234
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 336,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.04713012910607058,
+          "end_loss": 0.04083552377219454
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.16186840833940688,
+          "end_loss": 0.057889822595704944
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 239,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.044992191845722625,
+          "end_loss": 0.041455375980748485
+        }
+      ],
+      "ray_pov_mismatches": 12,
+      "render_provenance": {
+        "scene_sha256": "97efdb7a3e26890cf42a8aebbbd2d3daf99334a01932c757999573b45c77e77c",
+        "png_sha256": "e08363fccec391e137132fbfd3d05e645c2b0fab3d431d8e43b40d3e2b5c3d72",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H1-cores-r10-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H1-cores-r10-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H1-cores-r10-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H1",
+      "hand": 1,
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 5,
+      "parameters": [
+        1348.7063276328397,
+        280.9666942674025,
+        9.059396682840186,
+        17.014709908318917,
+        55.0,
+        -5.928636291654059,
+        50.85496117939658
+      ],
+      "start_parameters": [
+        1348.9112347032783,
+        282.86569985796194,
+        8.368014945039002,
+        18.990547401826106,
+        55.0,
+        -9.47215239248219,
+        44.9505622788956
+      ],
+      "python_training_loss": 0.0019102196752626551,
+      "pov_training_loss": 0.0019102196752626551,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9388297872340425,
+          "iou": 0.6274256144890039,
+          "area_ratio": 1.0522022838499185,
+          "predicted_area": 645,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.8324873096446701,
+          "iou": 0.49363057324840764,
+          "area_ratio": 1.2693548387096774,
+          "predicted_area": 787,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9137168141592921,
+          "iou": 0.5739320920043811,
+          "area_ratio": 1.1070381231671553,
+          "predicted_area": 755,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.861328125,
+          "iou": 0.6451612903225806,
+          "area_ratio": 0.8214285714285714,
+          "predicted_area": 644,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9596928982725528,
+          "iou": 0.7543103448275862,
+          "area_ratio": 1.0426599749058971,
+          "predicted_area": 831,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8712871287128713,
+          "iou": 0.5045045045045045,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9144893111638955,
+          "iou": 0.6964504283965728,
+          "area_ratio": 1.0686567164179104,
+          "predicted_area": 716,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.9228723404255319,
+          "iou": 0.5079533404029692,
+          "area_ratio": 1.3197389885807504,
+          "predicted_area": 809,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.9568527918781726,
+          "iou": 0.5268817204301075,
+          "area_ratio": 1.5193548387096774,
+          "predicted_area": 942,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9845132743362832,
+          "iou": 0.5855130784708249,
+          "area_ratio": 1.310850439882698,
+          "predicted_area": 894,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.884765625,
+          "iou": 0.5949748743718593,
+          "area_ratio": 1.024234693877551,
+          "predicted_area": 803,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.982725527831094,
+          "iou": 0.661582459485224,
+          "area_ratio": 1.1869510664993725,
+          "predicted_area": 946,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.9851485148514851,
+          "iou": 0.5441729323308271,
+          "area_ratio": 1.5276923076923077,
+          "predicted_area": 993,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9928741092636579,
+          "iou": 0.6758620689655173,
+          "area_ratio": 1.1761194029850746,
+          "predicted_area": 788,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 208,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.06155077408891071,
+          "end_loss": 0.03648097745492327
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.015541054799426933,
+          "end_loss": 0.0019102196752626551
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.10512763570634391,
+          "end_loss": 0.01659145813391677
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 302,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.0046424601124211255,
+          "end_loss": 0.0027987849750262263
+        }
+      ],
+      "ray_pov_mismatches": 12,
+      "render_provenance": {
+        "scene_sha256": "c56d06f716480d9f8df33a816116164dbc4efcccdc8a3423f2a403f907477f09",
+        "png_sha256": "09ea76a720c549aa62a774586fbf709a9c5b069ad752391a25263fe9f22279e7",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H1-cores-r6-e5.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H1-cores-r6-e5.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H1-cores-r6-e5"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H2",
+      "hand": -1,
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "masked_regions",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1347.1789143711444,
+        288.6590504357683,
+        8.207216465807642,
+        15.516042461849128,
+        55.0,
+        -11.273556979008923,
+        36.99495188846828
+      ],
+      "start_parameters": [
+        1345.782188053876,
+        289.7238417394321,
+        8.341169485118245,
+        16.202979048345412,
+        55.0,
+        -12.618885890067759,
+        34.36254024943338
+      ],
+      "python_training_loss": 0.47853867914148523,
+      "pov_training_loss": 0.4787874353603907,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9920212765957447,
+          "iou": 0.7978723404255319,
+          "area_ratio": 0.9298531810766721,
+          "predicted_area": 570,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.850253807106599,
+          "iou": 0.5117773019271948,
+          "area_ratio": 1.2774193548387096,
+          "predicted_area": 792,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.8893805309734514,
+          "iou": 0.5785310734463277,
+          "area_ratio": 1.0483870967741935,
+          "predicted_area": 715,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.7578125,
+          "iou": 0.5348571428571428,
+          "area_ratio": 0.7130102040816326,
+          "predicted_area": 559,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8260869565217391,
+          "area_ratio": 1.055207026348808,
+          "predicted_area": 841,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8267326732673267,
+          "iou": 0.4778761061946903,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9928741092636579,
+          "iou": 0.7158273381294964,
+          "area_ratio": 1.135820895522388,
+          "predicted_area": 761,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 1.0,
+          "iou": 0.7864661654135339,
+          "area_ratio": 0.9380097879282219,
+          "predicted_area": 575,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.799492385786802,
+          "iou": 0.48596112311015116,
+          "area_ratio": 1.2193548387096773,
+          "predicted_area": 756,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9137168141592921,
+          "iou": 0.6236811254396248,
+          "area_ratio": 1.030791788856305,
+          "predicted_area": 703,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.7265625,
+          "iou": 0.5145739910313901,
+          "area_ratio": 0.7232142857142857,
+          "predicted_area": 567,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9980806142034548,
+          "iou": 0.823728813559322,
+          "area_ratio": 1.0250941028858218,
+          "predicted_area": 817,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8143564356435643,
+          "iou": 0.47995991983967934,
+          "area_ratio": 1.2723076923076924,
+          "predicted_area": 827,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9857482185273159,
+          "iou": 0.7406015037593985,
+          "area_ratio": 1.0731343283582089,
+          "predicted_area": 719,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 183,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.6317978854266579,
+          "end_loss": 0.6134904649446594
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 190,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.4798295423836266,
+          "end_loss": 0.47853867914148523
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 183,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.8574133085948986,
+          "end_loss": 0.6134904649446594
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 190,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.4798295423836266,
+          "end_loss": 0.47853867914148523
+        }
+      ],
+      "ray_pov_mismatches": 2,
+      "render_provenance": {
+        "scene_sha256": "16d2af5e1feca2bc52200317fa55e2be2a463274c30f1fdfa5f781dd8d11485c",
+        "png_sha256": "148ff7e3f002b7d5a8b1d8f568e67d15387ed3f4928dcdfa4ffb78c6463044f6",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H2-masked_regions-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H2-masked_regions-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H2-masked_regions-r6-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H2",
+      "hand": -1,
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 3,
+      "parameters": [
+        1343.1725343948838,
+        291.13940359325875,
+        9.206605559905295,
+        13.34478149839041,
+        55.0,
+        -12.13682636235433,
+        37.93142683609438
+      ],
+      "start_parameters": [
+        1345.782188053876,
+        289.7238417394321,
+        8.341169485118245,
+        16.202979048345412,
+        55.0,
+        -12.618885890067759,
+        34.36254024943338
+      ],
+      "python_training_loss": 0.045813190016390094,
+      "pov_training_loss": 0.045813190016390094,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9920212765957447,
+          "iou": 0.7978723404255319,
+          "area_ratio": 0.9298531810766721,
+          "predicted_area": 570,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.850253807106599,
+          "iou": 0.5117773019271948,
+          "area_ratio": 1.2774193548387096,
+          "predicted_area": 792,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.8893805309734514,
+          "iou": 0.5785310734463277,
+          "area_ratio": 1.0483870967741935,
+          "predicted_area": 715,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.7578125,
+          "iou": 0.5348571428571428,
+          "area_ratio": 0.7130102040816326,
+          "predicted_area": 559,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8260869565217391,
+          "area_ratio": 1.055207026348808,
+          "predicted_area": 841,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8267326732673267,
+          "iou": 0.4778761061946903,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9928741092636579,
+          "iou": 0.7158273381294964,
+          "area_ratio": 1.135820895522388,
+          "predicted_area": 761,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.9707446808510638,
+          "iou": 0.6506765067650676,
+          "area_ratio": 1.1892332789559543,
+          "predicted_area": 729,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.9771573604060914,
+          "iou": 0.5164628410159925,
+          "area_ratio": 1.6,
+          "predicted_area": 992,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9601769911504425,
+          "iou": 0.5784708249496981,
+          "area_ratio": 1.3005865102639296,
+          "predicted_area": 887,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.857421875,
+          "iou": 0.5418367346938775,
+          "area_ratio": 0.9272959183673469,
+          "predicted_area": 727,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9942418426103646,
+          "iou": 0.6983240223463687,
+          "area_ratio": 1.288582183186951,
+          "predicted_area": 1027,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 1.0,
+          "iou": 0.5558633425669437,
+          "area_ratio": 1.5923076923076922,
+          "predicted_area": 1035,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9596199524940617,
+          "iou": 0.521823472356935,
+          "area_ratio": 1.3417910447761194,
+          "predicted_area": 899,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.13720571270457577,
+          "end_loss": 0.057551488979958425
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 349,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.048266974343196455,
+          "end_loss": 0.045813190016390094
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.16449271579914487,
+          "end_loss": 0.057551488979958425
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 349,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.048266974343196455,
+          "end_loss": 0.045813190016390094
+        }
+      ],
+      "ray_pov_mismatches": 3,
+      "render_provenance": {
+        "scene_sha256": "fe6e19ed6009af376da788e56cb9b6dc0b5cbf8aceb91b9bfbc599f2d4235339",
+        "png_sha256": "d00e8543bb2414eb58a9293dc8ace7c437b537843af07fcb59681790631330af",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H2-cores-r6-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H2-cores-r6-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H2-cores-r6-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H2",
+      "hand": -1,
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 10,
+      "erosion_px": 3,
+      "parameters": [
+        1343.2989070122992,
+        290.6485331301596,
+        9.192503277670063,
+        11.449345149963124,
+        55.0,
+        -10.874132739364107,
+        40.25778817198358
+      ],
+      "start_parameters": [
+        1345.782188053876,
+        289.7238417394321,
+        8.341169485118245,
+        16.202979048345412,
+        55.0,
+        -12.618885890067759,
+        34.36254024943338
+      ],
+      "python_training_loss": 0.04618553390646924,
+      "pov_training_loss": 0.04618553390646924,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9920212765957447,
+          "iou": 0.7978723404255319,
+          "area_ratio": 0.9298531810766721,
+          "predicted_area": 570,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.850253807106599,
+          "iou": 0.5117773019271948,
+          "area_ratio": 1.2774193548387096,
+          "predicted_area": 792,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.8893805309734514,
+          "iou": 0.5785310734463277,
+          "area_ratio": 1.0483870967741935,
+          "predicted_area": 715,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.7578125,
+          "iou": 0.5348571428571428,
+          "area_ratio": 0.7130102040816326,
+          "predicted_area": 559,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8260869565217391,
+          "area_ratio": 1.055207026348808,
+          "predicted_area": 841,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8267326732673267,
+          "iou": 0.4778761061946903,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9928741092636579,
+          "iou": 0.7158273381294964,
+          "area_ratio": 1.135820895522388,
+          "predicted_area": 761,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.9627659574468085,
+          "iou": 0.6395209580838324,
+          "area_ratio": 1.233278955954323,
+          "predicted_area": 756,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.9822335025380711,
+          "iou": 0.49953746530989823,
+          "area_ratio": 1.614516129032258,
+          "predicted_area": 1001,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9601769911504425,
+          "iou": 0.5795339412360689,
+          "area_ratio": 1.2859237536656891,
+          "predicted_area": 877,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.89453125,
+          "iou": 0.5708460754332314,
+          "area_ratio": 0.9655612244897959,
+          "predicted_area": 757,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9923224568138196,
+          "iou": 0.6966292134831461,
+          "area_ratio": 1.273525721455458,
+          "predicted_area": 1015,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.9975247524752475,
+          "iou": 0.5373406193078324,
+          "area_ratio": 1.596923076923077,
+          "predicted_area": 1038,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9311163895486936,
+          "iou": 0.49903660886319845,
+          "area_ratio": 1.3223880597014925,
+          "predicted_area": 886,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 260,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.14118644636201844,
+          "end_loss": 0.06819657416231097
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.05053128040140605,
+          "end_loss": 0.04618553390646924
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 260,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.169125880356241,
+          "end_loss": 0.06819657416231097
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 400,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "accepted": true,
+          "start_loss": 0.05053128040140605,
+          "end_loss": 0.04618553390646924
+        }
+      ],
+      "ray_pov_mismatches": 0,
+      "render_provenance": {
+        "scene_sha256": "f815e945ee6f242df60c143c0eb0d8f1ae88f325f602f6b5cb72ac22ba66249b",
+        "png_sha256": "d7c0bd7221ec933796776f000f826c6475c752c2e482ea661e4ec9bfac628b3d",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H2-cores-r10-e3.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H2-cores-r10-e3.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H2-cores-r10-e3"
+    },
+    {
+      "fit_code_sha256": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+      "dataset": "photo",
+      "hypothesis": "H2",
+      "hand": -1,
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "camera": {
+        "kind": "perspective",
+        "focal_px": 4799.175227618243,
+        "principal_xy": [
+          1269.5,
+          1590.5
+        ]
+      },
+      "method": "cores",
+      "ignore_point_xy": [
+        1364,
+        278
+      ],
+      "ignore_radius_px": 6,
+      "erosion_px": 5,
+      "parameters": [
+        1343.8496175598823,
+        287.9320294542487,
+        8.976612470092372,
+        11.45140944643544,
+        55.0,
+        -10.800629233180395,
+        43.7508275529694
+      ],
+      "start_parameters": [
+        1345.782188053876,
+        289.7238417394321,
+        8.341169485118245,
+        16.202979048345412,
+        55.0,
+        -12.618885890067759,
+        34.36254024943338
+      ],
+      "python_training_loss": 0.0,
+      "pov_training_loss": 0.0,
+      "baseline_metrics": {
+        "B": {
+          "core_coverage": 0.9920212765957447,
+          "iou": 0.7978723404255319,
+          "area_ratio": 0.9298531810766721,
+          "predicted_area": 570,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.850253807106599,
+          "iou": 0.5117773019271948,
+          "area_ratio": 1.2774193548387096,
+          "predicted_area": 792,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.8893805309734514,
+          "iou": 0.5785310734463277,
+          "area_ratio": 1.0483870967741935,
+          "predicted_area": 715,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.7578125,
+          "iou": 0.5348571428571428,
+          "area_ratio": 0.7130102040816326,
+          "predicted_area": 559,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 1.0,
+          "iou": 0.8260869565217391,
+          "area_ratio": 1.055207026348808,
+          "predicted_area": 841,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.8267326732673267,
+          "iou": 0.4778761061946903,
+          "area_ratio": 1.3123076923076924,
+          "predicted_area": 853,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9928741092636579,
+          "iou": 0.7158273381294964,
+          "area_ratio": 1.135820895522388,
+          "predicted_area": 761,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "metrics": {
+        "B": {
+          "core_coverage": 0.9654255319148937,
+          "iou": 0.6422569027611045,
+          "area_ratio": 1.231647634584013,
+          "predicted_area": 755,
+          "observed_area": 613,
+          "core_pixels": 376
+        },
+        "C": {
+          "core_coverage": 0.9593908629441624,
+          "iou": 0.5038167938931297,
+          "area_ratio": 1.5419354838709678,
+          "predicted_area": 956,
+          "observed_area": 620,
+          "core_pixels": 394
+        },
+        "E": {
+          "core_coverage": 0.9469026548672567,
+          "iou": 0.5689479060265578,
+          "area_ratio": 1.252199413489736,
+          "predicted_area": 854,
+          "observed_area": 682,
+          "core_pixels": 452
+        },
+        "F": {
+          "core_coverage": 0.912109375,
+          "iou": 0.6114044350580782,
+          "area_ratio": 0.9464285714285714,
+          "predicted_area": 742,
+          "observed_area": 784,
+          "core_pixels": 512
+        },
+        "G": {
+          "core_coverage": 0.9961612284069098,
+          "iou": 0.7366863905325444,
+          "area_ratio": 1.2095357590966123,
+          "predicted_area": 964,
+          "observed_area": 797,
+          "core_pixels": 521
+        },
+        "H": {
+          "core_coverage": 0.9579207920792079,
+          "iou": 0.5166051660516605,
+          "area_ratio": 1.5292307692307692,
+          "predicted_area": 994,
+          "observed_area": 650,
+          "core_pixels": 404
+        },
+        "J": {
+          "core_coverage": 0.9453681710213777,
+          "iou": 0.5480167014613778,
+          "area_ratio": 1.2134328358208955,
+          "predicted_area": 813,
+          "observed_area": 670,
+          "core_pixels": 421
+        }
+      },
+      "optimizer": [
+        {
+          "restart": 0,
+          "spacing": 2,
+          "evaluations": 319,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.07567202244871529,
+          "end_loss": 0.014882968314894255
+        },
+        {
+          "restart": 0,
+          "spacing": 1,
+          "evaluations": 154,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.008716147518254922,
+          "end_loss": 0.0
+        },
+        {
+          "restart": 1,
+          "spacing": 2,
+          "evaluations": 350,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.1067655979591841,
+          "end_loss": 0.010373719909562441
+        },
+        {
+          "restart": 1,
+          "spacing": 1,
+          "evaluations": 168,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "accepted": true,
+          "start_loss": 0.006381700692454632,
+          "end_loss": 0.0
+        }
+      ],
+      "ray_pov_mismatches": 1,
+      "render_provenance": {
+        "scene_sha256": "95412ea01fdaf8bcf02e4ef0eecfec190d74b40a80d77340f9cbf225eb88b12c",
+        "png_sha256": "cfd27ddc3a387ea7b5b0402b8606229c31daeb3cd04503e5bd8e0ffceccda164",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r132/photo-H2-cores-r6-e5.pov",
+          "+O/home/rharris/git/beads/photo2/output/r132/photo-H2-cores-r6-e5.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      },
+      "stem": "photo-H2-cores-r6-e5"
+    }
+  ],
+  "synthetic_provenance": {
+    "scene_sha256": "ab2320f4eedaea5e0082838a7c67a75de2c3a6e21e0dc2933384f229838ebbc6",
+    "png_sha256": "de6f6e27be56d44567da5a9195bbb4559e41cecb4320080b0755e4d8507a06a3",
+    "command": [
+      "povray",
+      "+I/home/rharris/git/beads/photo2/output/r132/synthetic/truth.pov",
+      "+O/home/rharris/git/beads/photo2/output/r132/synthetic/truth.png",
+      "+W125",
+      "+H130",
+      "+FN",
+      "-D",
+      "-A",
+      "+WT2",
+      "File_Gamma=1"
+    ]
+  },
+  "synthetic_truth": {
+    "parameters": [
+      1348,
+      289,
+      8,
+      -4,
+      55,
+      10,
+      5
+    ],
+    "hand": 1,
+    "mapping": {
+      "B": -1,
+      "C": 0,
+      "E": 6,
+      "F": 12,
+      "G": 7,
+      "H": 13,
+      "J": 1
+    }
+  },
+  "evaluation_support": {
+    "erosion_px": 3,
+    "ignore_radius_px": 6,
+    "held_out": "G"
+  },
+  "assistance": "R126 assistant polygons and tentative charts, warm-started from frozen fits. No automatic detector or new maker coordinates. Circle radii and erosions are diagnostic choices; P is never assigned an owner.",
+  "source_sha256": {
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/local-fit-r126.json": "126416e9065164e98cb4564771e5fcc761623fc3ac260ad6854dd6a23d409d29",
+    "photo2/local-surface-review-r130.json": "de21ccd639a9358d67748766b2a054297c7b52d7f2b8003190399e9d6591a56b",
+    "photo2/refine_surface_constraints.py": "83a5cf29967b325c0e5c6dec9b3d178a17c43018f970dcbc5491d9a03a57d3c1",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/check_local_perspective.py": "4ba13f245756fb1324c5f4496cdc90e30f77e747b209119968643c9a9756c50a",
+    "photo2/check_local_surface_fit.py": "f5c0f143f6aa6c53d99e6b7542677d304f0c5f444cdce3f4bf78a919b67bd201",
+    "photo2/review/r126/perspective-report.json": "1e70cbad61751f432ee67fe6485589b25d788af948c49443dac683a98a0ec81a",
+    "photo2/review/r126/synthetic-fits.json": "449c8133169b6f80fd3e43567e2426505e0cbfb4f12372951992373ab911952f"
+  }
+}

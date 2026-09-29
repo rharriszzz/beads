@@ -1,6 +1,44 @@
 # Beads session handoff — new branch
 
-## Current R130–R131 — P likely non-bead near an edge; preserve uncertainty
+## Current R132–R133 — Constraint comparison complete; PLAN.md is the roadmap
+
+R132 “continue” tested whether uncertain outline penalties caused the C/F fit
+mismatch. Read [SURFACE_CONSTRAINTS](photo2/SURFACE_CONSTRAINTS.md) and its raw/
+control/interiors comparison. Three methods were presented: omit P but retain
+outline constraints, use positive cores only, or use selected clear boundary
+arcs. The first two were tested with G withheld; twelve synthetic/photo cases.
+
+Result: interiors-only fitting is not adopted. At radius 6/erosion 3, C core
+coverage improves to 100%/97.7% for H1/H2, but its area grows to 1.67/1.60 times the
+rough polygon and withheld G overlap falls to 59.2%/69.8% from control 73.9%/82.4%.
+Sensitivity cases preserve the tradeoff. Known synthetic wrong-chart cores fit
+99.92%, and its held-out overlap can beat the correct chart under core-only
+fitting. Thus these scores do not validate correspondence or full silhouettes.
+
+All twelve independent POV comparisons pass (0–12 differing pixels of 16,250).
+Three new tests guard unknown-region invariance, holdout/unassigned-pixel
+exclusion and supported-ray equivalence. Nine of 48 optimizer stages hit their
+caps; retain that limitation. P remains tentatively non-bead near an edge with
+no confirmed boundary or owner. Core erosions 3/5 and radii 6/10 are diagnostic
+choices; no color/ID/neighbor/count inference or ring propagation occurred.
+
+**Next bounded task:** selected clear boundary arcs combined with interior support
+to constrain local size/shape, retaining unknown P and withheld G. Review
+[Q132.1](photo2/SURFACE_CONSTRAINT_QUESTIONS.md) if answered: B/C direction1 versus
+6/7 or not-immediate/unclear. Both current charts assume direction1 with opposite
+signs; family confirmation alone would not select a chart. Question remains
+pending; Q126.1 about P is already answered and must not be repeated.
+
+R133 asks which Markdown file shows the current problem and its place in the
+whole solution. Use [PLAN.md](PLAN.md): opening problem/status/next test, followed
+by a four-stage roadmap (local neighbors, whole-ring indices, repeat, appearance).
+The experiment is detail; this handoff is session state. The supplied replacement
+AGENTS workflow was applied without changing scope. Stay in this session;
+gpt-6-astra / High, no /new requested. Preflight daisy, clean 9631dc8, upstream 0/0,
+no stashes. No new dependencies or delegation.
+
+
+## Historical R130–R131 — P likely non-bead near an edge; preserve uncertainty
 
 R130: P is in the shadow of all four adjacent beads; ownership initially unclear.
 R131: maker thinks P is not over a bead and is close to an edge. Record likely

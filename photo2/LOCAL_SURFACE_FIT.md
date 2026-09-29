@@ -1,5 +1,10 @@
 # Seven-body surface fit — R126–R128
 
+**Later R132:** [clear-surface constraint comparison](SURFACE_CONSTRAINTS.md)
+keeps P unknown but rejects interiors-only fitting as a replacement: coverage
+improves while predictions grow and withheld overlap worsens. Original R126
+numerical evidence below is frozen; both local charts remain tentative.
+
 Two fitted local models reproduce much of the seven-body patch, including the
 withheld bead G. **Their 6/7 assignments remain alternatives.** Several predicted
 outlines miss visible body features; neither model is ready to propagate around

@@ -1302,3 +1302,71 @@ prior-artifact files byte-identical to HEAD; 98 local links; git diff --check.
 Only six Markdown documents and one review JSON change. No numerical test/render
 needed for this annotation-only step; no failed checks. Scoped commit/push and
 exact remote-tip/final-status verification follow this pre-delivery record.
+
+## R132 — Compare supported surfaces with uncertain outlines (2026-09-29)
+
+User: “continue”
+
+Resumed the bounded local C/F mismatch step after R130–R131, preserving P as
+unknown. Preflight daisy, clean 9631dc8, photo-2-reconstruction-v2, upstream 0/0,
+no stashes; refreshed upstream again before publication with no divergence.
+Read current workflow, handoff, plan, latest requests and local experiment.
+No dependencies or delegation. The supplied AGENTS workflow refresh was applied.
+
+Presented three methods: omit P's neighborhood but retain outline penalties;
+use supported interiors only; or combine interiors with selected clear boundary
+arcs. Compared the first two, retaining both tentative charts and withholding G.
+The experiment, measurements, figures and reproduction commands are in
+[Surface constraints](photo2/SURFACE_CONSTRAINTS.md). Diagnostic radii 6/10 and
+erosions 3/5 are assistant choices, not maker boundaries or automatic selection.
+Unknown labels cannot affect either distances or penalties. Final evaluations
+use common support and independent POV-Ray ownership masks.
+
+Completed four known-synthetic and eight photo cases. Nominal H1/H2 interior-only
+C coverage rises to 100%/97.7%, but C's area reaches 1.67/1.60 times the rough
+observed area, while withheld G overlap falls to 59.2%/69.8% from outline controls
+73.9%/82.4%. Sensitivities retain the tradeoff. In the known example, the wrong
+chart covers 99.92% of training cores and can beat the correct chart on withheld
+G under this objective. Do not adopt interior-only fitting or select either chart.
+Keep explicit unknown-region treatment. Nine of 48 optimizer stages hit their
+caps; the records preserve this limitation, not a global-optimum claim.
+
+An initial full-grid run was stopped to trace only supported rays for the core
+objective; a unit test verifies equivalence. An execution-environment refresh
+then interrupted the optimized run after three synthetic cases. Added validated
+checkpoint resumption and completed the remaining nine cases. Per-case code
+hashes preserve which wrapper ran; the numerical kernel did not change during
+resumption. Routine scenes, logs and caches remain ignored; curated figures and
+reports are tracked. All twelve independent ray/POV comparisons pass, with at
+most 12 differing pixels of 16,250 (0.074%).
+
+Asked [Q132.1](photo2/SURFACE_CONSTRAINT_QUESTIONS.md), with a raw/marked crop:
+are B/C immediate direction-1 neighbors, direction 6/7, or not immediate/unclear?
+It remains pending. Both charts assume direction 1 with opposite signs; family
+confirmation alone would not choose between them. Q126.1 about P stays answered.
+All original IDs, D/B separation, exclusions and missing slots remain preserved.
+No new color assignment, neighbor acceptance, string index or ring expansion.
+
+Stop at this completed comparison. Next bounded task: selected clear boundary
+arcs plus interior support to constrain local size/shape, keeping P unknown and
+G withheld; incorporate Q132.1 if answered. Recommend gpt-6-astra / High; stay in
+this session, no /new required.
+
+## R133 — Locate the current problem within the whole solution (2026-09-29)
+
+User: “whioh md file should I look at to see which problem you are currently working on, and where that problems in the overal solution?”
+
+Answered PLAN.md and updated its opening with the current unresolved problem,
+completed comparison, next bounded task and linked experiment/question. Added a
+four-stage roadmap: local geometry/neighbors (current), whole-necklace coverage
+and indices, shortest repeat, rendered appearance. Handoff records session state;
+experiment documents hold the detailed evidence. This request steers documentation
+within R132; it does not start the next numerical aspect.
+
+### R132–R133 final checks
+
+Passed all nine unit tests, source/report/review/per-case hashes, twelve-case
+accounting, render and optimizer totals, 20 source/prior-artifact files unchanged
+from HEAD and 108 local documentation links. Inspected curated evidence and
+comparison images. No answer to Q132.1 supplied. Append-only history and whitespace
+checks precede scoped commit/push and exact remote-tip/final-status verification.

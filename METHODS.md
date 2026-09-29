@@ -644,6 +644,15 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R132 constraint comparison:** [omit unknown regions explicitly](photo2/SURFACE_CONSTRAINTS.md).
+Use missing ownership in both the penalty and distance transforms; do not turn
+an uncertain junction into an artificial boundary. Positive interior support is
+useful but cannot replace shape constraints: this test increases coverage by
+enlarging predictions and worsens held-out overlap. The known wrong chart also
+fits almost all cores. Keep the unknown handling, do not adopt interiors-only
+fitting or infer correspondence from its score. Selected clear boundary arcs
+with interior support are the next bounded candidate, not yet implemented.
+
 **R126–R128 executed local fit:** [seven-body surface experiment](photo2/LOCAL_SURFACE_FIT.md)
 compared uncertain point fitting, exposed-region fitting and full shaded-image
 fitting, selecting exposed regions. Original rounded annular surfaces and latent

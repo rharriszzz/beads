@@ -3,7 +3,40 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
-## Active schedule after R130–R131: preserve shadow uncertainty, use clearer surfaces
+## Current problem — R132: fit clear surfaces without trusting shadowed boundaries
+
+**Latest bounded step completed:** compared the old outline objective with P's
+neighborhood omitted against positive interior constraints only. Interior coverage
+improved, but C's predicted area grew to 1.60–1.67 times its rough observed area
+and withheld G overlap fell from 74–82% to 59–70%. Sensitivity and known-synthetic
+checks did not support accepting the new outlines or either neighbor chart.
+
+**Current unresolved problem:** establish a local shape/correspondence fit that
+covers clear interiors without extending unsupported outlines into surrounding
+regions. Keep P uncertain. **Next bounded test:** selected clear boundary arcs
+plus interior support, with G withheld. Review [Q132.1](photo2/SURFACE_CONSTRAINT_QUESTIONS.md)
+about B/C's neighbor family if answered; both current charts assume direction1.
+No full-necklace walk is authorized by this local result.
+
+[Current experiment, comparison figures and limitations](photo2/SURFACE_CONSTRAINTS.md).
+The current stopping point is this illustrated comparison and pending small
+neighbor question. The interiors-only replacement was not adopted.
+
+## Where this sits in the overall solution
+
+| Stage | Purpose | Status |
+| --- | --- | --- |
+| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** Two tentative charts; C/F mismatch unresolved |
+| 2. Whole-necklace coverage and indexing | Follow supported central bodies around the loop; preserve gaps; resolve string indices and closure/N | Not started from an accepted local chart |
+| 3. Shortest repeating pattern | Combine verified indices and uncertain colors; test repeat divisors with conflict witnesses | Waiting for stage 2 |
+| 4. Rendered appearance | Fit POV-Ray materials, lights and camera; compare against the photo | Local rendering calibrated, final appearance recovery pending |
+
+Background/centerline refinement and the requested FFT comparisons support these
+stages when needed; they are not completed merely because local fitting has begun.
+The final method must estimate location and appearance from each input. Today's
+hand-selected patch is diagnostic evidence, not an automatic reconstruction.
+
+## Starting evidence and limits
 
 The [seven-body fit](photo2/LOCAL_SURFACE_FIT.md) is complete to illustrated review.
 B/C/E/F/H/J were fitted; G was withheld. Both H1/H2 neighbor charts remain tentative.
@@ -26,15 +59,13 @@ type supplied. The picture contains four red, two yellow and at least two black
 beads: contextual maker evidence, not a color-to-ID map or a changed fitting
 inventory. Numerical R126 results remain frozen.
 
-**Next bounded task:** compare constraints from clear visible surfaces away from
-this junction to address the C/F outline and correspondence mismatch. Do not use
-P as positive or negative ownership evidence; no uncertainty-mask extent was
-supplied. Do not require P to be resolved. Keep +/-1/6/7 labels tentative and
-retain both charts until supported. All twelve original IDs, D/B separation and
-excluded A/D/I/K/L remain preserved; do not expand around the ring yet.
+R132 completed the comparison described above. A further local fit must keep
+P out of positive and negative ownership constraints; the diagnostic circle is
+not a maker-supplied boundary. All twelve original IDs, D/B separation and
+excluded A/D/I/K/L remain preserved. Both +/-1/6/7 charts remain tentative.
 
-The current stop is the saved maker answer and fit uncertainty, not a recovered local
-index graph. FFT comparisons remain pending, adoption optional. Recommend
+The current stop is the completed constraint-comparison review, not a recovered
+local index graph. FFT comparisons remain pending, adoption optional. Recommend
 gpt-6-astra / High. Stay in this session; R126 explicitly declines /new and reports
 84% context remaining (user report, not an independently measured status).
 Historical scheduling below is superseded where it requests the already completed
@@ -47,7 +78,7 @@ assumption that usable local geometry already existed, and later phases listed
 without clear input/output checkpoints. The schedule below replaces those gaps;
 historical rationale follows for provenance, not as competing next-step orders.
 
-1. **One local evidence pilot (R114 completed to review).** Select one diagnostic photo patch with
+1. **Establish reliable local geometry and neighbors (current stage; R114 pilot reviewed).** Select one diagnostic photo patch with
    several clear bodies, same-color adjacency and a dark/highlight case where
    available. Show raw context, candidate bodies/interior samples and local
    tangent/spacing evidence using B1/B4/B5 before attempting I1 neighbor labels
@@ -93,7 +124,7 @@ Supporting explorations are bounded tasks, not mandatory algorithm components:
 
 These checkpoints do not authorize running all phases in one turn. A standalone
 continue executes the unfinished bounded step and stops. Recommend gpt-6-astra /
-High, stay for methods discussion and use a fresh /new for the numerical pilot.
+High; stay in the current session as requested, no /new required.
 
 ## Evidence and rationale retained from preceding requests
 
