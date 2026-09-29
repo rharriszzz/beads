@@ -1,0 +1,2509 @@
+{
+  "scope": "Assisted positive surface-point ownership; no automatic detection or recovered full indices",
+  "training_numbers": [
+    16,
+    17,
+    19,
+    20,
+    21,
+    22
+  ],
+  "held_out_number": 23,
+  "origin_number": 20,
+  "projection": "Orthographic local straight planar-centerline limit",
+  "camera_elevation_gauge_deg": 55,
+  "gauge_is_measurement": false,
+  "radius": 2.110915748921366,
+  "pitch": 0.443292307273487,
+  "latent_indices": [
+    -26,
+    -25,
+    -24,
+    -23,
+    -22,
+    -21,
+    -20,
+    -19,
+    -18,
+    -17,
+    -16,
+    -15,
+    -14,
+    -13,
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "synthetic_points": {
+    "16": [
+      168,
+      158
+    ],
+    "17": [
+      166,
+      197
+    ],
+    "19": [
+      196,
+      144
+    ],
+    "20": [
+      192,
+      184
+    ],
+    "21": [
+      192,
+      216
+    ],
+    "22": [
+      219,
+      163
+    ],
+    "23": [
+      217,
+      205
+    ]
+  },
+  "evaluator_truth": {
+    "parameters": [
+      200,
+      180,
+      9,
+      -6,
+      55,
+      18,
+      35
+    ],
+    "hand": 1,
+    "mapping": {
+      "16": -7,
+      "17": -6,
+      "19": -1,
+      "20": 0,
+      "21": 1,
+      "22": 6,
+      "23": 7
+    },
+    "crop": [
+      100,
+      90,
+      300,
+      270
+    ],
+    "point_rule": "Maximum visible-mask interior distance; exact supplied calibration points",
+    "scene_sha256": "75daf644756d231aa448d7a3f85ec3d5e851b896b76d7112d8089a0a7d0baf5b",
+    "png_sha256": "64c5b18e92b128d0f6054096ca4a5abce35dea609768db37ce2d736b026f9a78",
+    "command": [
+      "povray",
+      "+I/home/rharris/git/beads/photo2/output/r149/synthetic-truth.pov",
+      "+O/home/rharris/git/beads/photo2/output/r149/synthetic-truth.png",
+      "+W200",
+      "+H180",
+      "+FN",
+      "-D",
+      "-A",
+      "+WT2",
+      "File_Gamma=1"
+    ]
+  },
+  "photo_points": {
+    "16": [
+      1316.1060802069858,
+      258.1500646830531
+    ],
+    "17": [
+      1324.1785252263908,
+      292.9624838292367
+    ],
+    "19": [
+      1336.2871927554982,
+      245.03234152652004
+    ],
+    "20": [
+      1345.8732212160414,
+      273.79042690815004
+    ],
+    "21": [
+      1346.882276843467,
+      308.6028460543338
+    ],
+    "22": [
+      1363.0271668822768,
+      254.61836998706337
+    ],
+    "23": [
+      1371.0996119016818,
+      298.0077619663648
+    ]
+  },
+  "maxfev_per_stage": 180,
+  "results": {
+    "synthetic": [
+      {
+        "family": "A",
+        "hand": -1,
+        "mapping": {
+          "16": -7,
+          "17": -6,
+          "19": -1,
+          "20": 0,
+          "21": 1,
+          "22": 6,
+          "23": 7
+        },
+        "crop": [
+          119,
+          97,
+          266,
+          263
+        ],
+        "selected": {
+          "parameters": [
+            196.53031783890066,
+            146.56598740617662,
+            11.583937340147349,
+            4.54304071433541,
+            55.0,
+            -9.225500086034593,
+            136.82885701718877
+          ],
+          "training_loss_px2": 67.83333333333334,
+          "training_distances_px": [
+            13.038404810405298,
+            0.0,
+            4.0,
+            4.47213595499958,
+            13.601470508735444,
+            4.0
+          ],
+          "training_correct": 1,
+          "ownership": {
+            "16": {
+              "expected": -7,
+              "actual": -5,
+              "correct": false,
+              "held_out": false
+            },
+            "17": {
+              "expected": -6,
+              "actual": -6,
+              "correct": true,
+              "held_out": false
+            },
+            "19": {
+              "expected": -1,
+              "actual": 2,
+              "correct": false,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": 1,
+              "correct": false,
+              "held_out": false
+            },
+            "21": {
+              "expected": 1,
+              "actual": 0,
+              "correct": false,
+              "held_out": false
+            },
+            "22": {
+              "expected": 6,
+              "actual": 1,
+              "correct": false,
+              "held_out": false
+            },
+            "23": {
+              "expected": 7,
+              "actual": -999,
+              "correct": false,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 8,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 4.456212327094029,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            },
+            {
+              "spacing": 1,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              196.53031783890066,
+              146.56598740617662,
+              11.583937340147349,
+              4.54304071433541,
+              55.0,
+              -9.225500086034593,
+              136.82885701718877
+            ],
+            "training_loss_px2": 67.83333333333334,
+            "training_distances_px": [
+              13.038404810405298,
+              0.0,
+              4.0,
+              4.47213595499958,
+              13.601470508735444,
+              4.0
+            ],
+            "training_correct": 1,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -5,
+                "correct": false,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": 2,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 1,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": 0,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 1,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": -999,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 8,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 4.456212327094029,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          },
+          {
+            "parameters": [
+              196.53031783890066,
+              146.56598740617662,
+              11.583937340147349,
+              4.54304071433541,
+              55.0,
+              -9.225500086034598,
+              136.82885701718874
+            ],
+            "training_loss_px2": 67.83333333333334,
+            "training_distances_px": [
+              13.038404810405298,
+              0.0,
+              4.0,
+              4.47213595499958,
+              13.601470508735444,
+              4.0
+            ],
+            "training_correct": 1,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -5,
+                "correct": false,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": 2,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 1,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": 0,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 1,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": -999,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 8,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 4.456212327189925,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          }
+        ],
+        "seconds": 49.15675687597832,
+        "independent_pov_check": {
+          "mismatches": 0,
+          "pixels": 24402,
+          "fraction": 0.0,
+          "unfinished_ray_pairs": 8,
+          "scene_sha256": "b6c6b4885c5a5003425cfb87f57ab7611198324d03661f9a2a03c99ad5dfc290",
+          "png_sha256": "f5d30b2199af50b8ca1531919d79c70a944f51df21d1a7de5cb750c4ac11a1de",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/synthetic-A--1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/synthetic-A--1.png",
+            "+W147",
+            "+H166",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "hand": 1,
+        "mapping": {
+          "16": -7,
+          "17": -6,
+          "19": -1,
+          "20": 0,
+          "21": 1,
+          "22": 6,
+          "23": 7
+        },
+        "crop": [
+          119,
+          97,
+          266,
+          263
+        ],
+        "selected": {
+          "parameters": [
+            196.1610429074166,
+            170.6294911361604,
+            7.835795462018318,
+            5.395592553445378,
+            55.0,
+            5.5099478314112575,
+            -308.2747246901035
+          ],
+          "training_loss_px2": 0.0,
+          "training_distances_px": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "training_correct": 6,
+          "ownership": {
+            "16": {
+              "expected": -7,
+              "actual": -7,
+              "correct": true,
+              "held_out": false
+            },
+            "17": {
+              "expected": -6,
+              "actual": -6,
+              "correct": true,
+              "held_out": false
+            },
+            "19": {
+              "expected": -1,
+              "actual": -1,
+              "correct": true,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": 0,
+              "correct": true,
+              "held_out": false
+            },
+            "21": {
+              "expected": 1,
+              "actual": 1,
+              "correct": true,
+              "held_out": false
+            },
+            "22": {
+              "expected": 6,
+              "actual": 6,
+              "correct": true,
+              "held_out": false
+            },
+            "23": {
+              "expected": 7,
+              "actual": 7,
+              "correct": true,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 0,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 4.456212326905645,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 0,
+              "success": true,
+              "message": "All six exact training rays have expected ownership; feasible stop"
+            },
+            {
+              "spacing": 1,
+              "evaluations": 0,
+              "success": true,
+              "message": "All six exact training rays have expected ownership; feasible stop"
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              196.1610429074166,
+              170.6294911361604,
+              7.835795462018318,
+              5.395592553445378,
+              55.0,
+              5.5099478314112575,
+              -308.2747246901035
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 4.456212326905645,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          },
+          {
+            "parameters": [
+              196.16113728217326,
+              170.62902133846953,
+              7.83581694250358,
+              5.395639718043896,
+              55.0,
+              5.509935766993714,
+              -308.27402110943603
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 4.456212327426565,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          }
+        ],
+        "seconds": 0.11334908800199628,
+        "independent_pov_check": {
+          "mismatches": 0,
+          "pixels": 24402,
+          "fraction": 0.0,
+          "unfinished_ray_pairs": 8,
+          "scene_sha256": "9dd017840932e4d045b6ed47e69c6237d0f7331a90fed699b5b89941002678ed",
+          "png_sha256": "90111ba53d3d01d718bac72edb7dc6f7989a5a1fb3780290b4b372b2d50ccd0b",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/synthetic-A-1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/synthetic-A-1.png",
+            "+W147",
+            "+H166",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "hand": -1,
+        "mapping": {
+          "16": -6,
+          "17": -7,
+          "19": 1,
+          "20": 0,
+          "21": -1,
+          "22": 7,
+          "23": 6
+        },
+        "crop": [
+          119,
+          97,
+          266,
+          263
+        ],
+        "selected": {
+          "parameters": [
+            199.05951598215475,
+            178.3733915562203,
+            9.064540091100396,
+            -24.441803784475624,
+            55.0,
+            15.355668105147622,
+            30.50812400684972
+          ],
+          "training_loss_px2": 0.0,
+          "training_distances_px": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "training_correct": 6,
+          "ownership": {
+            "16": {
+              "expected": -6,
+              "actual": -6,
+              "correct": true,
+              "held_out": false
+            },
+            "17": {
+              "expected": -7,
+              "actual": -7,
+              "correct": true,
+              "held_out": false
+            },
+            "19": {
+              "expected": 1,
+              "actual": 1,
+              "correct": true,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": 0,
+              "correct": true,
+              "held_out": false
+            },
+            "21": {
+              "expected": -1,
+              "actual": -1,
+              "correct": true,
+              "held_out": false
+            },
+            "22": {
+              "expected": 7,
+              "actual": 7,
+              "correct": true,
+              "held_out": false
+            },
+            "23": {
+              "expected": 6,
+              "actual": 6,
+              "correct": true,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 0,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 5.9882283014120885,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            },
+            {
+              "spacing": 1,
+              "evaluations": 0,
+              "success": true,
+              "message": "All six exact training rays have expected ownership; feasible stop"
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              199.05951598215475,
+              178.3733915562203,
+              9.064540091100396,
+              -24.441803784475624,
+              55.0,
+              15.355668105147622,
+              30.50812400684972
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.9882283014120885,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          },
+          {
+            "parameters": [
+              199.05951598215475,
+              178.3733915562203,
+              9.064540091100396,
+              -24.441803784475624,
+              55.0,
+              15.355668105147615,
+              30.508124006849656
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.988228301839371,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          }
+        ],
+        "seconds": 1.880149648990482,
+        "independent_pov_check": {
+          "mismatches": 1,
+          "pixels": 24402,
+          "fraction": 4.0980247520695025e-05,
+          "unfinished_ray_pairs": 5,
+          "scene_sha256": "eb12af0933d9041c860d18d7964d80531d40f117e92ee98d4a52a25cd28dedac",
+          "png_sha256": "5b8aae6ded0a10ee3482df3505b770d1a7b0a7a38f5e35682ec41b8d18f0bf1f",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/synthetic-B--1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/synthetic-B--1.png",
+            "+W147",
+            "+H166",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "hand": 1,
+        "mapping": {
+          "16": -6,
+          "17": -7,
+          "19": 1,
+          "20": 0,
+          "21": -1,
+          "22": 7,
+          "23": 6
+        },
+        "crop": [
+          119,
+          97,
+          266,
+          263
+        ],
+        "selected": {
+          "parameters": [
+            197.06502157576926,
+            181.9810252832703,
+            6.816773479625078,
+            -72.3158261249407,
+            55.0,
+            -59.050119092009936,
+            370.6463050589364
+          ],
+          "training_loss_px2": 315.8333333333333,
+          "training_distances_px": [
+            29.5296461204668,
+            8.0,
+            5.830951894845301,
+            1.4142135623730951,
+            18.35755975068582,
+            24.20743687382041
+          ],
+          "training_correct": 0,
+          "ownership": {
+            "16": {
+              "expected": -6,
+              "actual": 6,
+              "correct": false,
+              "held_out": false
+            },
+            "17": {
+              "expected": -7,
+              "actual": -1,
+              "correct": false,
+              "held_out": false
+            },
+            "19": {
+              "expected": 1,
+              "actual": 7,
+              "correct": false,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": -7,
+              "correct": false,
+              "held_out": false
+            },
+            "21": {
+              "expected": -1,
+              "actual": -14,
+              "correct": false,
+              "held_out": false
+            },
+            "22": {
+              "expected": 7,
+              "actual": -5,
+              "correct": false,
+              "held_out": false
+            },
+            "23": {
+              "expected": 6,
+              "actual": -19,
+              "correct": false,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 7,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 5.988228301261415,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            },
+            {
+              "spacing": 1,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              197.06502157576926,
+              181.9810252832703,
+              6.816773479625078,
+              -72.3158261249407,
+              55.0,
+              -59.050119092009936,
+              370.6463050589364
+            ],
+            "training_loss_px2": 315.8333333333333,
+            "training_distances_px": [
+              29.5296461204668,
+              8.0,
+              5.830951894845301,
+              1.4142135623730951,
+              18.35755975068582,
+              24.20743687382041
+            ],
+            "training_correct": 0,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": 6,
+                "correct": false,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -1,
+                "correct": false,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 7,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": -7,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -14,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": -5,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": -19,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 7,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.988228301261415,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          },
+          {
+            "parameters": [
+              197.06502157576926,
+              181.9810252832703,
+              6.816773479625078,
+              -72.3158261249407,
+              55.0,
+              -59.050119092009936,
+              370.6463050589363
+            ],
+            "training_loss_px2": 315.8333333333333,
+            "training_distances_px": [
+              29.5296461204668,
+              8.0,
+              5.830951894845301,
+              1.4142135623730951,
+              18.35755975068582,
+              24.20743687382041
+            ],
+            "training_correct": 0,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": 6,
+                "correct": false,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -1,
+                "correct": false,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 7,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": -7,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -14,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": -5,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": -19,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 7,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.9882283012847095,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          }
+        ],
+        "seconds": 41.30690624599811,
+        "independent_pov_check": {
+          "mismatches": 1,
+          "pixels": 24402,
+          "fraction": 4.0980247520695025e-05,
+          "unfinished_ray_pairs": 7,
+          "scene_sha256": "76c938fb7c443188c82c884977089ec1ec19ceae93c0a0f6f1fc63face375dfe",
+          "png_sha256": "94de6832222714fa95a54debb8cde0732205f520911a79f745e992d4776c6a09",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/synthetic-B-1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/synthetic-B-1.png",
+            "+W147",
+            "+H166",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      }
+    ],
+    "photo": [
+      {
+        "family": "A",
+        "hand": -1,
+        "mapping": {
+          "16": -7,
+          "17": -6,
+          "19": -1,
+          "20": 0,
+          "21": 1,
+          "22": 6,
+          "23": 7
+        },
+        "crop": [
+          1274,
+          203,
+          1405,
+          350
+        ],
+        "selected": {
+          "parameters": [
+            1344.1935901973832,
+            295.4596038779176,
+            8.145092191975456,
+            -13.348912652101179,
+            55.0,
+            -0.163205634548222,
+            256.2213330757932
+          ],
+          "training_loss_px2": 8.135495030581339,
+          "training_distances_px": [
+            0.0,
+            1.0778709232120887,
+            2.9676584734799576,
+            4.224540319295878,
+            3.7870042310904584,
+            2.579927457412516
+          ],
+          "training_correct": 1,
+          "ownership": {
+            "16": {
+              "expected": -7,
+              "actual": -7,
+              "correct": true,
+              "held_out": false
+            },
+            "17": {
+              "expected": -6,
+              "actual": -2,
+              "correct": false,
+              "held_out": false
+            },
+            "19": {
+              "expected": -1,
+              "actual": -999,
+              "correct": false,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": 5,
+              "correct": false,
+              "held_out": false
+            },
+            "21": {
+              "expected": 1,
+              "actual": -3,
+              "correct": false,
+              "held_out": false
+            },
+            "22": {
+              "expected": 6,
+              "actual": 5,
+              "correct": false,
+              "held_out": false
+            },
+            "23": {
+              "expected": 7,
+              "actual": 4,
+              "correct": false,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 88,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 3.9978942146632073,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            },
+            {
+              "spacing": 1,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              1344.1935901973832,
+              295.4596038779176,
+              8.145092191975456,
+              -13.348912652101179,
+              55.0,
+              -0.163205634548222,
+              256.2213330757932
+            ],
+            "training_loss_px2": 8.135495030581339,
+            "training_distances_px": [
+              0.0,
+              1.0778709232120887,
+              2.9676584734799576,
+              4.224540319295878,
+              3.7870042310904584,
+              2.579927457412516
+            ],
+            "training_correct": 1,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -2,
+                "correct": false,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": -999,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 5,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": -3,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 5,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": 4,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 88,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 3.9978942146632073,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          },
+          {
+            "parameters": [
+              1344.1935901973832,
+              295.4596038779176,
+              8.145092191975456,
+              -13.348912652101179,
+              55.0,
+              -0.163205634548222,
+              256.2213330757932
+            ],
+            "training_loss_px2": 8.135495030581339,
+            "training_distances_px": [
+              0.0,
+              1.0778709232120887,
+              2.9676584734799576,
+              4.224540319295878,
+              3.7870042310904584,
+              2.579927457412516
+            ],
+            "training_correct": 1,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -2,
+                "correct": false,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": -999,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 5,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": -3,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 5,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": 4,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 88,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 3.997894214741004,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          }
+        ],
+        "seconds": 35.028572723967955,
+        "independent_pov_check": {
+          "mismatches": 5,
+          "pixels": 19257,
+          "fraction": 0.00025964584307005243,
+          "unfinished_ray_pairs": 88,
+          "scene_sha256": "9403582526c2035af523e4ff12653b50e987b8346d9eeb7f6aee336d23b31230",
+          "png_sha256": "9b51efa9ceb64cea0922ba7f5af4b168c511c0610c3f954c0e12607f29ed9f77",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/photo-A--1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/photo-A--1.png",
+            "+W131",
+            "+H147",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "hand": 1,
+        "mapping": {
+          "16": -7,
+          "17": -6,
+          "19": -1,
+          "20": 0,
+          "21": 1,
+          "22": 6,
+          "23": 7
+        },
+        "crop": [
+          1274,
+          203,
+          1405,
+          350
+        ],
+        "selected": {
+          "parameters": [
+            1340.4650077912956,
+            286.3063082706688,
+            7.007803860821395,
+            4.021941804787753,
+            55.0,
+            -8.026554275228149,
+            15.909759975249116
+          ],
+          "training_loss_px2": 0.0,
+          "training_distances_px": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "training_correct": 6,
+          "ownership": {
+            "16": {
+              "expected": -7,
+              "actual": -7,
+              "correct": true,
+              "held_out": false
+            },
+            "17": {
+              "expected": -6,
+              "actual": -6,
+              "correct": true,
+              "held_out": false
+            },
+            "19": {
+              "expected": -1,
+              "actual": -1,
+              "correct": true,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": 0,
+              "correct": true,
+              "held_out": false
+            },
+            "21": {
+              "expected": 1,
+              "actual": 1,
+              "correct": true,
+              "held_out": false
+            },
+            "22": {
+              "expected": 6,
+              "actual": 6,
+              "correct": true,
+              "held_out": false
+            },
+            "23": {
+              "expected": 7,
+              "actual": 7,
+              "correct": true,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 0,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 3.997894214895925,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 0,
+              "success": true,
+              "message": "All six exact training rays have expected ownership; feasible stop"
+            },
+            {
+              "spacing": 1,
+              "evaluations": 0,
+              "success": true,
+              "message": "All six exact training rays have expected ownership; feasible stop"
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              1340.4650077912956,
+              286.3063082706688,
+              7.007803860821395,
+              4.021941804787753,
+              55.0,
+              -8.026554275228149,
+              15.909759975249116
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 3.997894214895925,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          },
+          {
+            "parameters": [
+              1340.4651732485306,
+              286.30632578601,
+              7.007803749062655,
+              4.021491266360008,
+              55.0,
+              -8.026077292119085,
+              -344.0902565555424
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 3.997894215021565,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          }
+        ],
+        "seconds": 0.08715758798643947,
+        "independent_pov_check": {
+          "mismatches": 1,
+          "pixels": 19257,
+          "fraction": 5.192916861401049e-05,
+          "unfinished_ray_pairs": 3,
+          "scene_sha256": "6de661569e28930315eca6f0f56bec314df0e7634bc0b27dd0ae49e61bed25df",
+          "png_sha256": "7bac9926b6942d9755f145d8486b5654d744b07d05a2a3b211e5ab7f2e27c77c",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/photo-A-1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/photo-A-1.png",
+            "+W131",
+            "+H147",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "hand": -1,
+        "mapping": {
+          "16": -6,
+          "17": -7,
+          "19": 1,
+          "20": 0,
+          "21": -1,
+          "22": 7,
+          "23": 6
+        },
+        "crop": [
+          1274,
+          203,
+          1405,
+          350
+        ],
+        "selected": {
+          "parameters": [
+            1339.4648694148482,
+            287.2117160645862,
+            8.327285418871577,
+            14.59279344940261,
+            55.0,
+            -34.299913357366044,
+            1.8976174401954609
+          ],
+          "training_loss_px2": 0.0,
+          "training_distances_px": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "training_correct": 6,
+          "ownership": {
+            "16": {
+              "expected": -6,
+              "actual": -6,
+              "correct": true,
+              "held_out": false
+            },
+            "17": {
+              "expected": -7,
+              "actual": -7,
+              "correct": true,
+              "held_out": false
+            },
+            "19": {
+              "expected": 1,
+              "actual": 1,
+              "correct": true,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": 0,
+              "correct": true,
+              "held_out": false
+            },
+            "21": {
+              "expected": -1,
+              "actual": -1,
+              "correct": true,
+              "held_out": false
+            },
+            "22": {
+              "expected": 7,
+              "actual": 7,
+              "correct": true,
+              "held_out": false
+            },
+            "23": {
+              "expected": 6,
+              "actual": 5,
+              "correct": false,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 0,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 5.207184393334722,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            },
+            {
+              "spacing": 1,
+              "evaluations": 0,
+              "success": true,
+              "message": "All six exact training rays have expected ownership; feasible stop"
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              1339.4648694148482,
+              287.2117160645862,
+              8.327285418871577,
+              14.59279344940261,
+              55.0,
+              -34.299913357366044,
+              1.8976174401954609
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": 5,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.207184393334722,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          },
+          {
+            "parameters": [
+              1337.3407559201107,
+              287.21062265291863,
+              8.32506307755955,
+              14.588235748976052,
+              55.0,
+              -34.299913357366044,
+              12.079065789792214
+            ],
+            "training_loss_px2": 0.0,
+            "training_distances_px": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "training_correct": 6,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": -6,
+                "correct": true,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -7,
+                "correct": true,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 1,
+                "correct": true,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": 0,
+                "correct": true,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -1,
+                "correct": true,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": 7,
+                "correct": true,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": 6,
+                "correct": true,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 0,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.207184393375564,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 0,
+                "success": true,
+                "message": "All six exact training rays have expected ownership; feasible stop"
+              }
+            ]
+          }
+        ],
+        "seconds": 1.7124854100402445,
+        "independent_pov_check": {
+          "mismatches": 0,
+          "pixels": 19257,
+          "fraction": 0.0,
+          "unfinished_ray_pairs": 10,
+          "scene_sha256": "19cace9bb98d9f2e93a80192aeca5577c79b55263278ca73714a55c835fce734",
+          "png_sha256": "f928ebe27cc5ac5abf139b614c7638361e2f5510717de7f8240d44e80d9f2cd3",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/photo-B--1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/photo-B--1.png",
+            "+W131",
+            "+H147",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "hand": 1,
+        "mapping": {
+          "16": -6,
+          "17": -7,
+          "19": 1,
+          "20": 0,
+          "21": -1,
+          "22": 7,
+          "23": 6
+        },
+        "crop": [
+          1274,
+          203,
+          1405,
+          350
+        ],
+        "selected": {
+          "parameters": [
+            1343.1811493756506,
+            278.82612624500376,
+            6.0409487774094845,
+            -80.89064832515729,
+            55.0,
+            -61.635914642736694,
+            381.18374439519124
+          ],
+          "training_loss_px2": 280.023324000017,
+          "training_distances_px": [
+            28.077397670564395,
+            2.990343613708714,
+            7.574717408893744,
+            5.269412119541748,
+            19.427662401456992,
+            20.50074181159993
+          ],
+          "training_correct": 0,
+          "ownership": {
+            "16": {
+              "expected": -6,
+              "actual": 6,
+              "correct": false,
+              "held_out": false
+            },
+            "17": {
+              "expected": -7,
+              "actual": -1,
+              "correct": false,
+              "held_out": false
+            },
+            "19": {
+              "expected": 1,
+              "actual": 7,
+              "correct": false,
+              "held_out": false
+            },
+            "20": {
+              "expected": 0,
+              "actual": -6,
+              "correct": false,
+              "held_out": false
+            },
+            "21": {
+              "expected": -1,
+              "actual": -14,
+              "correct": false,
+              "held_out": false
+            },
+            "22": {
+              "expected": 7,
+              "actual": 1,
+              "correct": false,
+              "held_out": false
+            },
+            "23": {
+              "expected": 6,
+              "actual": -19,
+              "correct": false,
+              "held_out": true
+            }
+          },
+          "unfinished_grid_ray_pairs": 4,
+          "unfinished_point_ray_pairs": 0,
+          "proposal_outward_mse_px2": 5.2071843933842645,
+          "stages": [
+            {
+              "spacing": 3,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            },
+            {
+              "spacing": 1,
+              "evaluations": 180,
+              "success": false,
+              "message": "Maximum number of function evaluations has been exceeded."
+            }
+          ]
+        },
+        "seed_results": [
+          {
+            "parameters": [
+              1343.1811493756506,
+              278.82612624500376,
+              6.0409487774094845,
+              -80.89064832515729,
+              55.0,
+              -61.635914642736694,
+              381.18374439519124
+            ],
+            "training_loss_px2": 280.023324000017,
+            "training_distances_px": [
+              28.077397670564395,
+              2.990343613708714,
+              7.574717408893744,
+              5.269412119541748,
+              19.427662401456992,
+              20.50074181159993
+            ],
+            "training_correct": 0,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": 6,
+                "correct": false,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -1,
+                "correct": false,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 7,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": -6,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -14,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": 1,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": -19,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 4,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.2071843933842645,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          },
+          {
+            "parameters": [
+              1343.1811493756506,
+              278.82612624500376,
+              6.0409487774094845,
+              -80.89064832515729,
+              55.0,
+              -61.635914642736694,
+              381.1837443951912
+            ],
+            "training_loss_px2": 280.023324000017,
+            "training_distances_px": [
+              28.077397670564395,
+              2.990343613708714,
+              7.574717408893744,
+              5.269412119541748,
+              19.427662401456992,
+              20.50074181159993
+            ],
+            "training_correct": 0,
+            "ownership": {
+              "16": {
+                "expected": -6,
+                "actual": 6,
+                "correct": false,
+                "held_out": false
+              },
+              "17": {
+                "expected": -7,
+                "actual": -1,
+                "correct": false,
+                "held_out": false
+              },
+              "19": {
+                "expected": 1,
+                "actual": 7,
+                "correct": false,
+                "held_out": false
+              },
+              "20": {
+                "expected": 0,
+                "actual": -6,
+                "correct": false,
+                "held_out": false
+              },
+              "21": {
+                "expected": -1,
+                "actual": -14,
+                "correct": false,
+                "held_out": false
+              },
+              "22": {
+                "expected": 7,
+                "actual": 1,
+                "correct": false,
+                "held_out": false
+              },
+              "23": {
+                "expected": 6,
+                "actual": -19,
+                "correct": false,
+                "held_out": true
+              }
+            },
+            "unfinished_grid_ray_pairs": 4,
+            "unfinished_point_ray_pairs": 0,
+            "proposal_outward_mse_px2": 5.2071843935595,
+            "stages": [
+              {
+                "spacing": 3,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              },
+              {
+                "spacing": 1,
+                "evaluations": 180,
+                "success": false,
+                "message": "Maximum number of function evaluations has been exceeded."
+              }
+            ]
+          }
+        ],
+        "seconds": 34.508458258991595,
+        "independent_pov_check": {
+          "mismatches": 2,
+          "pixels": 19257,
+          "fraction": 0.00010385833722802097,
+          "unfinished_ray_pairs": 4,
+          "scene_sha256": "6969781257968eaba8edc1c3aa744f0bccfc7490616b83f7a9893c7d622870f2",
+          "png_sha256": "c6597b09f10eb723de973bc63023cfd6d19268ff8b243b31b8a10817fb0dc744",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r149/photo-B-1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r149/photo-B-1.png",
+            "+W131",
+            "+H147",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/manual-labels-r146.json": "94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de",
+    "photo2/review/r144/corrected-report.json": "5705860d5010d36ec28ed2a87f24eb3578ea756579818050983751bf8f74d999",
+    "photo2/fit_maker_points.py": "8571a597a30756866eccc953d0534960d56d0f44003cd6b9614e67e42b8dcca1",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/check_local_surface_fit.py": "f5c0f143f6aa6c53d99e6b7542677d304f0c5f444cdce3f4bf78a919b67bd201"
+  }
+}

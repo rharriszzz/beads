@@ -11,7 +11,25 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R148: launcher fix complete
+## Current task — R149: local point comparison complete; outlines need review
+
+The maker declines the launcher retry and asks to move on; existing R148 checks
+stand. [Seven-point comparison](photo2/MAKER_POINT_FIT.md) fits six maker locations
+around C=20, withholding G=23's location. Both remaining 6/7 families admit a pose
+passing all seven points. A known synthetic example also admits the wrong family
+at all seven points, so this positive-only test cannot select the assignment.
+
+Nine independent Python/POV surface checks pass; two new tests guard signed
+mapping symmetry and holdout exclusion. Optimization is bounded (20/32 stages
+cap), orthographic straight-tube geometry remains diagnostic, and fixed elevation
+is a camera/phase gauge. No accepted surface pose or full-string indices.
+
+**Next bounded task:** review C's proposed visible extent in
+[Q149.1](photo2/MAKER_POINT_QUESTIONS.md), then constrain poses using supported
+body boundaries. Preserve ambiguous shadow/occlusion. Stop at this comparison;
+do not walk around the necklace from an unaccepted local fit.
+
+## Prior task — R148: launcher fix complete
 
 The maker explicitly requests completion of the interrupted launch fix. The
 [labeler](photo2/LABELER.md) now selects a free port when default 8765 is busy,
@@ -20,8 +38,8 @@ failed launchers yield a quiet manual URL. Thirteen Python tests pass; actual
 Windows browser selection is mocked in those tests. Existing annotations and
 graph artifacts are preserved. Stop after scoped launcher delivery.
 
-**Next task:** maker stops/restarts the server to use the new launcher, then return
-to the seven-body family/projection comparison below. No geometry work in this fix.
+The suggested manual retry is deferred by R149. No geometry work occurred in
+the launcher fix; the resumed comparison is documented above.
 
 ## Prior task — R144–R147: extract the maker's local neighbor chart
 

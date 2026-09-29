@@ -1785,3 +1785,79 @@ the committed versions. Live annotations remain revision 162 with exact SHA-256
 `94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de`.
 Append-only log and 116 local documentation links pass. Syntax/help/whitespace
 checks pass. Refreshed origin before scoped publication; no other task advanced.
+
+## R149 — Skip launcher retry; resume local family comparison (2026-09-29)
+
+User, verbatim: “i don't want to do that test now, i think we already have the results you wanted.  let us move on.”
+
+The requested manual launcher retry is deferred by the maker; R148's completed
+automated checks stand. Resume the planned seven-body comparison around C=20,
+using corrected saved locations and series. Preflight daisy, branch
+photo-2-reconstruction-v2, HEAD b14077904896bfa8554f756e6da965320bcb7b39,
+upstream 0/0, no stashes, clean working tree. Read handoff, latest log, plan,
+maker graph, quick model and prior local surface/perspective/render checks.
+
+Presented three methods: visible-point ownership; reviewed body outlines;
+joint torus/centerline placement. Selected positive-point ownership as the
+smallest experiment directly using the confirmed maker locations. These points
+are visible-surface evidence, not measured centers, outward anchors or highlights.
+Fit six locations 16/17/19/20/21/22; G=23's location is evaluator-only. Its graph
+relation remains available. Both 6/7 families and both helicities are tested.
+No live annotation edits, launcher retry, colors or automatic detector in scope.
+
+Use the calibrated rounded annular bead and straight planar-centerline limit.
+Fix the existing 55-degree camera/phase gauge without calling it an elevation
+measurement. Orthographic projection is a local diagnostic; unknown perspective,
+torus curvature and actual row pitch remain limitations. Retain every latent
+model bead in first-hit occlusion, including unmarked/edge bodies. Calibration
+indices and the 676-bead radius calculation do not supply photo indices or N.
+
+Synthetic visible points come from independent POV-Ray ID surfaces. Truth pose
+does not seed fitting. Image-derived training positions set proposal bounds;
+outward-point least squares only proposes poses. Final cost checks exact ray
+ownership and, for misses, distance to the correct visible region. Unmarked
+pixels are unconstrained; there is no invented background/outside support.
+G does not determine bounds, seeds, fitting costs or candidate selection.
+Run command: `.venv/bin/python photo2/fit_maker_points.py --maxfev 180`.
+Preserve outcomes and provenance below after the bounded comparison completes.
+
+R149 comparison outcome: both photo families have a pose satisfying all seven
+maker points. A/+1 selected pose passes six training points and G. B/−1 first
+retained training-selected pose passes six but misses G; its second retained pose
+passes six AND G. Candidate-range figure preserves both rather than reporting
+the first B miss as rejection. No fitting or selection uses G. Known synthetic
+truth A/+1 likewise permits wrong B/−1 at all seven points: positive ownership
+alone fails to identify the assignment. Twenty of 32 Powell stages hit the
+180-evaluation cap; failed poses do not prove infeasibility. No family accepted.
+
+Nine independent Python/POV ID checks pass: eight selected cases and photo B's
+second start. Maximum disagreement 5/19,257 pixels (0.026%); grid tracing leaves
+up to 88 grazing ray/body pairs unfinished, while selected point rays converge.
+Two tests pass for signed offset/minor-circle symmetry and G exclusion from
+bounds/proposals. Review script initially required conversion of JSON mapping keys
+back to integers; fixed before producing final review images. An early diagnostic
+run was interrupted to make exact satisfied point rays zero loss; only the
+subsequent completed run is preserved. No source/live annotations changed.
+
+Fit/report/code/parameters/render provenance and raw/outline figures preserved
+under photo2/review/r149. Commands above and
+`.venv/bin/python photo2/review_maker_points.py` reproduce evidence. Q149.1 asks
+which proposed C=20 visible outline (A/B1/B2/none) follows the raw body most closely;
+tracked question and supporting images are available. Pending, no acceptance
+or new constraint inferred. Existing Q135.1 remains pending. Stop at comparison;
+next use reviewed surface extent rather than propagate an unaccepted fit.
+Recommend gpt-6.1-sol / High; same session, no /new needed. Scoped integrity and
+commit/push verification follow.
+
+R149 integrity outcome: all fit-report source/code hashes and independent scene/PNG
+hashes match; review-report/image hashes match. All sixteen retained starts keep
+their reported point ownership at tighter ray tolerance 1e-5 (no unfinished point
+pairs). Synthetic truth owns all seven supplied points. Expanding latent indices
+to −52..66 preserves the two all-seven photo witnesses. Thirteen protected
+historical source/evidence/startup files and the exact live revision-162 save are
+unchanged. Request history remains append-only; syntax/whitespace and 127 local
+documentation links pass. Refreshed origin remains 0/0 before scoped publication.
+Additional unchanged dependency SHA-256: bead_placement.py
+`9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534`;
+check_placement.py
+`af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd`.

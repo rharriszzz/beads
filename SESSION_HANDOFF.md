@@ -1,6 +1,39 @@
 # Beads session handoff — new branch
 
-## Current R148 — Launcher fixed and verified
+## Current R149 — Maker-point family comparison complete
+
+User declines manual launcher retry and asks to move on. R148 automated checks
+stand; do not reask the retry. Preflight daisy, photo-2-reconstruction-v2,
+b140779, upstream 0/0, no stashes, clean tree. Read
+[current experiment](photo2/MAKER_POINT_FIT.md), [question](photo2/MAKER_POINT_QUESTIONS.md)
+and [PLAN.md](PLAN.md). Corrected maker revision 162 and live save are read only.
+
+Both families tested at both helicities on independent known-synthetic points and
+photo patch 16/17/19/20/21/22/23. Fit six surface locations; G=23 evaluator-only,
+its graph relation allowed. Training positions derive bounds/proposals. Loose
+outward proposals do not establish outward anchors. Final exact first-hit ownership
+and visible-region distance use no colors, old polygons or outside/background labels.
+
+Photo A/+1 passes 6/6 and G. B/−1 first retained start passes 6/6 but misses G;
+second retained start passes 6/6 AND G. Show both B starts rather than implying
+the first miss rejects B. Synthetic wrong B/−1 also passes all seven. Neither
+family or pose accepted. Gauge 55 degrees is not measured elevation; orthographic
+straight-tube/6.5 pitch are local assumptions. Unknown perspective, curvature,
+origin, full-string sign, N/closure/repeat/colors remain unresolved.
+
+Nine independent Python/POV ID checks pass; max 5/19,257 pixel disagreement.
+Up to 88 grazing ray/body pairs unfinished on grids; selected point rays converge.
+20/32 optimization stages cap, no global exclusion claimed. Two tests guard
+signed mappings/symmetry and G exclusion from bounds and proposals. Reports and
+raw/outline images under photo2/review/r149, routine rendering under ignored output.
+Reproduce fit_maker_points.py --maxfev 180, then review_maker_points.py.
+
+**Stopping point:** publish local comparison, retain both families. **Next task:**
+maker Q149.1 reviews C's visible outline (A/B1/B2/none); then fit supported boundary
+evidence. No acceptance assumed while pending. Do not advance whole-ring walking.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior R148 — Launcher fixed and verified
 
 User: “fix the launcher, please.” Completes the separate interrupted R142 work.
 Preflight daisy/WSL2, photo-2-reconstruction-v2, 79d8ef9, upstream 0/0, no stashes,

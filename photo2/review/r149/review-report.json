@@ -1,0 +1,29 @@
+{
+  "report_sha256": "566758e2cec1765aef8e9b639d7dccb0962a62c86411ce508a6d170672beaa9e",
+  "reviewer_sha256": "4cff6d5adaeed5425d3b0789830c6f7a2aeee32d3f184959d1fbe78f18c11db1",
+  "B_second_start_independent_check": {
+    "mismatches": 1,
+    "pixels": 19257,
+    "fraction": 5.192916861401049e-05,
+    "unfinished_ray_pairs": 8,
+    "scene_sha256": "6d4c3525db279d3d3f0eef53d6b52eed2eb5bbe04a16f82d1a6d9782c27b92ec",
+    "png_sha256": "2600ea82ae1a26d0c8288bf16d9630ffdcae5ec70f8ca8fcf2caa7e919d5af0e",
+    "command": [
+      "povray",
+      "+I/home/rharris/git/beads/photo2/output/r149/photo-B-second-start.pov",
+      "+O/home/rharris/git/beads/photo2/output/r149/photo-B-second-start.png",
+      "+W131",
+      "+H147",
+      "+FN",
+      "-D",
+      "-A",
+      "+WT2",
+      "File_Gamma=1"
+    ]
+  },
+  "selection": "Show training-selected A and both retained training-feasible B starts; no G-based refitting",
+  "figures": {
+    "candidate-range.png": "a16ec6939010754f5bdcce2ebe3e9b3ebeb3aef7795b103f80944bbc8b47bc2f",
+    "c-question.png": "ca99dfcd98d461162f91bf0515525d715f4b1fa0fec7312d7863b1d0408bab05"
+  }
+}

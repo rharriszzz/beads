@@ -644,6 +644,17 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R149 maker-point ownership comparison:** [positive-only surface fitting](photo2/MAKER_POINT_FIT.md)
+uses six confirmed locations around C, holds out G's location, and tests both
+6/7 families/helicities with all latent neighbors in first-hit occlusion. Loose
+outward proposals are initialization only. Both photo families have poses passing
+all seven points; the independently rendered known-synthetic case also permits
+the wrong family. This guards against claiming index recovery from point success.
+Nine Python/POV checks validate the local surface kernel; two tests guard mapping
+symmetry and holdout exclusion. No uniqueness, automatic detector or accepted
+whole-necklace fit. Next use supported visible boundaries after
+[illustrated maker review](photo2/MAKER_POINT_QUESTIONS.md).
+
 **R144–R147 maker graph extraction:** [exact cycle propagation](photo2/LABEL_SERIES.md)
 turns completed series into a connected discussion lattice, preserving UUIDs,
 maker numbers and unknown full indices. Twenty-eight corrected triangle/cycle
