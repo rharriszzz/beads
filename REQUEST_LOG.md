@@ -1393,3 +1393,104 @@ Preflight daisy, clean f28d581, photo-2-reconstruction-v2 with tracked upstream,
 no stashes. Only three documentation files change; no dependencies or delegation.
 Append-only request-history and whitespace/link checks precede scoped publication;
 no numerical tests needed for this documentation-only step.
+
+## R135 — Test selected boundary brackets with interiors (2026-09-29)
+
+User: “continue”
+
+Resumed one bounded local C/F step. Preflight daisy, clean 2bd0392,
+photo-2-reconstruction-v2, upstream 0/0 following fetch, no stashes. Read current
+AGENTS, handoff, latest requests, plan, R132 experiment and prior quick shape model.
+No dependencies installed or delegation. Presented three methods: paired samples
+beside clear boundary segments, distance penalties to those segments, and local
+image-gradient transition matching. Selected paired samples plus supported cores.
+
+The [experiment](photo2/BOUNDARY_ARC_FIT.md) records raw context, interior hints,
+selected L/S/R arcs, uncertainty bands, sampling normals/pairs, methods, scores,
+limitations and commands. All three segments are assistant proposals; no maker
+edge coordinates or automatic detector. Black E/F/H/J retain interior evidence,
+G is withheld, P excluded, A/D/I/K/L excluded and all twelve original IDs retained.
+Outside samples mean not that bead, without assigning paper or another bead.
+
+Three invalid synthetic pairs crossed thin/concave bodies in a preflight. Added
+region-side validation, rejecting those pairs, and a targeted thin-body test.
+The two preliminary synthetic fits are superseded, retained only in ignored
+outputs. On final synthetic truth, all retained cores and brackets agree exactly.
+No photo pairs are rejected. Initial plotting used a temporary Matplotlib cache;
+analysis helpers use /tmp/beads-matplotlib. No environment installation needed.
+
+Completed six base cases (two synthetic and four photo) and two photo weight
+sensitivities. Narrow band-3 fits still make C about 1.69 times its rough area;
+G overlap is 58.1%/68.6% versus old controls 73.9%/82.4%. Stronger H2 bracket
+penalties reduce C area to 1.19, but H core coverage drops to 30.2% and G overlap
+to 48.2%. Correct/wrong synthetic charts both satisfy all brackets; wrong-chart
+training-core coverage is 99.89%, with G overlap 91.9% versus correct 86.3%.
+Sparse support cannot establish correspondence; no replacement accepted.
+
+Eight independent Python/POV full-grid ownership checks pass, maximum 12 pixels
+of 16,250 (0.074%). Final region metrics use POV masks, subpixel bracket scores
+use Python. Eight of 32 optimizer stages cap across six cases; local fits do not
+prove global optima or uniquely identify the remaining error. Common core/P
+support is used for region comparisons and common band-3 bracket evaluation is
+included alongside each variant's training score. Four new tests pass; all
+thirteen local unit tests pass. Ordinary scenes/logs/preflight outputs ignored;
+curated raw/question/comparison/known-synthetic figures and reports tracked.
+
+Asked optional Q135.1 in photo2/BOUNDARY_ARC_QUESTIONS.md, with raw/marked C:
+do L/S follow its left/lower boundary, or cross its visible surface? Pending.
+The earlier Q132.1 is answered during this step by R136, recorded next.
+Stop after the comparison and feedback; no new-family fit or whole-ring walk.
+
+## R136 — Coupled BC/CG neighbor families, signs unknown (2026-09-29)
+
+User: “if b and c is 6 then c and g is 7; if b and c is 7 then c and g is 6.  I am not sure about the signs of these directions.”
+
+Answers Q132.1 with two conditional alternatives: BC=6/CG=7 or BC=7/CG=6.
+Both signs unresolved. Saved verbatim answer, source hashes and eight unaccepted
+signed discussion options from C in photo2/neighbor-review-r136.json, plus a raw/
+two-alternative image. Weighted sums are relative labels, not full-string indices.
+No maker E/F/H/J relation, exact origin, N or bead color assignment is supplied.
+
+Neither old H1/H2 BC=1 chart represents the supplied alternatives. Retain all
+old numerical reports as historical controls, superseding those maps as active
+photo hypotheses. R136 arrived after all eight fits completed; they did not use
+this answer. Update question status, methods, plan, handoff and supersession notes.
+Do not silently refit/relabel old results or choose a family/sign. G's image pixels
+can remain withheld from future continuous fitting; the maker's CG family evidence
+will enter future candidate graphs, so that information is no longer unknown.
+
+Next bounded task: compare the coupled BC/CG families and unresolved signs,
+rebuilding other patch relations from supported evidence. Preserve original IDs,
+D/B separation, central black bodies, P uncertainty and missing slots. Remain in
+local stage 1. Recommend gpt-6.1-sol / High; stay here, no /new required.
+
+## R137 — Show wider context for the question picture (2026-09-29)
+
+User: “can you give me a wider context for that picture, please?”
+
+Generated a tracked whole-photo/raw-wider/labeled-wider figure from the original
+EXIF-oriented source. Wider source bounds x1180–1540, y130–520; existing B/C/G
+interior observations labeled only in the third panel. Whole-image box locates
+the top-of-necklace patch beside the yellow-to-red/black transition; green box
+locates the small boundary crop. Displayed immediately and linked in both current
+question files and the experiment/plan. No new body or physical-center annotation.
+This steering request adds context within the completed bounded R135 step.
+
+### R135–R137 final checks
+
+All thirteen unit tests pass. Source/report/reviewer/annotation hashes, eight-case
+accounting, render/optimizer totals, common-support metrics, unknown and holdout
+exclusions, signed-coordinate sums, original ID preservation, unchanged source/
+prior artifacts, local links, append-only history and whitespace are checked
+before scoped commit/push. Q135.1 remains pending; Q132.1 and Q126.1 are answered.
+Final integrity details are recorded with the curated results. Exact remote-tip
+and clean-branch verification follow publication; no next-phase fitting this turn.
+
+R135–R137 integrity outcome: all eight training-score and independent POV region
+metric recomputations match saved values; source/report/reviewer/answer hashes
+match; retained sample sides and P exclusion pass; G excluded from training;
+eight signed-coordinate sums pass; original twelve IDs and blank full-string
+indices preserved; 31 prior files unchanged; 138 local links and append-only
+request history pass. Curated checks.json adds dependency/image hashes and
+Python version. Inspected raw, photo-fit, synthetic, neighbor and wider figures.
+Only this scoped experiment, review interpretation and roadmap state are staged.

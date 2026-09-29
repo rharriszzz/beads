@@ -1,0 +1,240 @@
+{
+  "request_id": "R136",
+  "question_id": "Q132.1",
+  "verbatim_answer": "if b and c is 6 then c and g is 7; if b and c is 7 then c and g is 6.  I am not sure about the signs of these directions.",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/local-fit-r126.json": "126416e9065164e98cb4564771e5fcc761623fc3ac260ad6854dd6a23d409d29",
+    "photo2/review/r132/neighbor-question.png": "90bbbe0fef34955e161d234e0d8cf336f95b431b16b975783d6059a5b45cdef6"
+  },
+  "coupled_family_alternatives": [
+    {
+      "BC": 6,
+      "CG": 7
+    },
+    {
+      "BC": 7,
+      "CG": 6
+    }
+  ],
+  "signs": "Unresolved for both connections",
+  "observation_ids": [
+    "B",
+    "C",
+    "G"
+  ],
+  "discussion_origin": "C; full-string origin unknown",
+  "signed_options": [
+    {
+      "id": "BC6-CG7-B-1-G-1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          -1,
+          0
+        ],
+        "G": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": -6,
+        "G": -7
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC6-CG7-B-1-G+1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          -1,
+          0
+        ],
+        "G": [
+          0,
+          0,
+          1
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": -6,
+        "G": 7
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC6-CG7-B+1-G-1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          1,
+          0
+        ],
+        "G": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": 6,
+        "G": -7
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC6-CG7-B+1-G+1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          1,
+          0
+        ],
+        "G": [
+          0,
+          0,
+          1
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": 6,
+        "G": 7
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC7-CG6-B-1-G-1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0,
+          -1
+        ],
+        "G": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": -7,
+        "G": -6
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC7-CG6-B-1-G+1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0,
+          -1
+        ],
+        "G": [
+          0,
+          1,
+          0
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": -7,
+        "G": 6
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC7-CG6-B+1-G-1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0,
+          1
+        ],
+        "G": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": 7,
+        "G": -6
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    },
+    {
+      "id": "BC7-CG6-B+1-G+1",
+      "direction_counts_from_C": {
+        "C": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0,
+          1
+        ],
+        "G": [
+          0,
+          1,
+          0
+        ]
+      },
+      "relative_weighted_sums": {
+        "C": 0,
+        "B": 7,
+        "G": 6
+      },
+      "status": "Unaccepted signed alternatives; not full-string indices"
+    }
+  ],
+  "other_observations": "E/F/H/J remain recorded; maker supplies no family or sign assignments to them here",
+  "prior_chart_implication": "H1/H2 both place B/C in family 1. Neither represents these supplied alternatives. Retain as historical controls, supersede as active photo mappings.",
+  "limits": "Conditional families are preserved without choosing either, inferring signs, accepting string indices or expanding the ring. G image pixels remain withheld from continuous fitting; future candidate graphs will use maker CG information and cannot claim ignorance of it."
+}

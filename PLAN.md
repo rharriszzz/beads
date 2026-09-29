@@ -11,30 +11,35 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current problem — R132: fit clear surfaces without trusting shadowed boundaries
+## Current problem — R135–R136: correct the local neighbor chart
 
-**Latest bounded step completed:** compared the old outline objective with P's
-neighborhood omitted against positive interior constraints only. Interior coverage
-improved, but C's predicted area grew to 1.60–1.67 times its rough observed area
-and withheld G overlap fell from 74–82% to 59–70%. Sensitivity and known-synthetic
-checks did not support accepting the new outlines or either neighbor chart.
+**Latest bounded step completed:** tested selected boundary brackets with interior
+support. Narrow bands still enlarged C; stronger H2 boundary penalties improved C
+but lost other clear interiors and reduced G overlap to 48.2%. No replacement fit
+was adopted. Eight independent render checks pass; local optimization remains limited.
 
-**Current unresolved problem:** establish a local shape/correspondence fit that
-covers clear interiors without extending unsupported outlines into surrounding
-regions. Keep P uncertain. **Next bounded test:** selected clear boundary arcs
-plus interior support, with G withheld. Review [Q132.1](photo2/SURFACE_CONSTRAINT_QUESTIONS.md)
-about B/C's neighbor family if answered; both current charts assume direction1.
-No full-necklace walk is authorized by this local result.
+**New maker evidence — R136:** B/C family 6 implies C/G family 7; B/C family 7
+implies C/G family 6. Both signs are unresolved. Both old charts used B/C family 1,
+so neither represents these alternatives; retain their fits as historical controls,
+superseding them as active photo maps. [Verbatim answer and illustration](photo2/SURFACE_CONSTRAINT_QUESTIONS.md).
 
-[Current experiment, comparison figures and limitations](photo2/SURFACE_CONSTRAINTS.md).
-The current stopping point is this illustrated comparison and pending small
-neighbor question. The interiors-only replacement was not adopted.
+**Next bounded task:** compare the two coupled B/C/G families and unresolved signs,
+rebuilding other proposed patch relations from supported evidence. Do not inherit
+old E/F/H/J offsets as maker facts. Keep P unknown and G's pixels withheld from
+continuous fitting; future graph construction will use the maker's C/G relation.
+No whole-necklace walk or full-string index recovery yet.
+
+[Completed experiment and limitations](photo2/BOUNDARY_ARC_FIT.md).
+The current stopping point is this comparison plus saved maker review.
+[Q135.1](photo2/BOUNDARY_ARC_QUESTIONS.md) about C's proposed segments remains
+pending; Q132.1 is answered. R137's [wider context](photo2/review/r135/wider-context.png)
+is in both review files.
 
 ## Where this sits in the overall solution
 
 | Stage | Purpose | Status |
 | --- | --- | --- |
-| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** Two tentative charts; C/F mismatch unresolved |
+| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** Coupled 6/7 family alternatives; signs and other patch relations unresolved |
 | 2. Whole-necklace coverage and indexing | Follow supported central bodies around the loop; preserve gaps; resolve string indices and closure/N | Not started from an accepted local chart |
 | 3. Shortest repeating pattern | Combine verified indices and uncertain colors; test repeat divisors with conflict witnesses | Waiting for stage 2 |
 | 4. Rendered appearance | Fit POV-Ray materials, lights and camera; compare against the photo | Local rendering calibrated, final appearance recovery pending |
@@ -47,7 +52,8 @@ hand-selected patch is diagnostic evidence, not an automatic reconstruction.
 ## Starting evidence and limits
 
 The [seven-body fit](photo2/LOCAL_SURFACE_FIT.md) is complete to illustrated review.
-B/C/E/F/H/J were fitted; G was withheld. Both H1/H2 neighbor charts remain tentative.
+B/C/E/F/H/J were fitted; G was withheld. H1/H2 are historical controls superseded
+as active photo mappings by R136; they do not represent its supplied alternatives.
 Orthographic held-out overlap is 76.1%/80.5%; a nominal metadata-based perspective
 fit gives 75.4%/82.2%. These compare against assistant polygons, not verified truth.
 C and F retain meaningful outline errors, so no full-ring propagation is justified.
@@ -70,11 +76,12 @@ inventory. Numerical R126 results remain frozen.
 R132 completed the comparison described above. A further local fit must keep
 P out of positive and negative ownership constraints; the diagnostic circle is
 not a maker-supplied boundary. All twelve original IDs, D/B separation and
-excluded A/D/I/K/L remain preserved. Both +/-1/6/7 charts remain tentative.
+excluded A/D/I/K/L remain preserved. See R136 above for the current family alternatives.
 
-The current stop is the completed constraint-comparison review, not a recovered
-local index graph. FFT comparisons remain pending, adoption optional. Recommend
-gpt-6.1-sol / High (R134). Stay in this session; R126 explicitly declines /new and reports
+The current stop is the boundary-bracket comparison and saved R136/R137 review;
+local correspondence remains unresolved. FFT comparisons remain pending, adoption
+optional. Recommend gpt-6.1-sol / High (R134). Stay in this session; R126 explicitly
+declines /new and reports
 84% context remaining (user report, not an independently measured status).
 Historical scheduling below is superseded where it requests the already completed
 first seven-body fit or defers black beads.

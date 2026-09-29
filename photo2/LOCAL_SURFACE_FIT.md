@@ -1,5 +1,10 @@
 # Seven-body surface fit — R126–R128
 
+**R135–R136 supersession:** [boundary comparison and maker neighbor alternatives](BOUNDARY_ARC_FIT.md).
+The maker offers BC=6/CG=7 or BC=7/CG=6, signs unresolved. Both older charts used
+BC=1; preserve their numerical evidence below as historical controls, superseding
+them as active photo mappings. No new full-string index is accepted.
+
 **Later R132:** [clear-surface constraint comparison](SURFACE_CONSTRAINTS.md)
 keeps P unknown but rejects interiors-only fitting as a replacement: coverage
 improves while predictions grow and withheld overlap worsens. Original R126

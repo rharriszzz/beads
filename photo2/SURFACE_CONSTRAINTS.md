@@ -1,5 +1,10 @@
 # Clear-surface constraint comparison — R132
 
+**Later R135–R136:** [boundary brackets and maker neighbor review](BOUNDARY_ARC_FIT.md)
+complete the next comparison. Q132.1 is answered with coupled BC/CG families 6/7
+or 7/6, signs unresolved; both old charts used BC=1 and are superseded as active
+photo mappings. Numerical reports and the historical status below remain frozen.
+
 **Completed to review:** positive interiors improve core coverage but permit
 oversized visible regions and worsen the withheld prediction. Do not adopt
 interiors-only fitting as a replacement or select a neighbor chart from it.

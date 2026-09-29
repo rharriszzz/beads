@@ -1,0 +1,61 @@
+{
+  "request_ids": [
+    "R135",
+    "R136",
+    "R137"
+  ],
+  "base_commit": "2bd0392500641e4c4659516457951f7fda9c46e3",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "unit_tests_passed": 13,
+  "cases_verified": 8,
+  "optimizer_capped_stages": 8,
+  "total_optimizer_stages": 32,
+  "max_ray_pov_mismatches": 12,
+  "pixels_per_render": 16250,
+  "unchanged_prior_files": 31,
+  "local_links_checked": 138,
+  "append_only_log": true,
+  "signed_alternatives_checked": 8,
+  "G_excluded_from_training": true,
+  "retained_brackets_outside_P": true,
+  "all_final_metric_recomputations_passed": true,
+  "source_sha256": {
+    "photo2/bead_placement.py": "9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534",
+    "photo2/check_placement.py": "af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd",
+    "photo2/review_local_surface_fit.py": "231d2f3b0337800bea017cab197b167702ce8d1e01d70628d5a970b296cc3e34",
+    "photo2/test_boundary_arcs.py": "3fd67202f309534784a268192d0c187c381a60d448d2232ac97eedfa11a794cc",
+    "photo2/review_boundary_arcs.py": "a099ed1abd58075674316a569c74f476a83613438c196ad4aa502b8180a7cf6a",
+    "photo2/neighbor-review-r136.json": "a411c60f55581b24eaaa821843bae931f1c951a250613dbe4b8aa88df47c499c",
+    "photo2/local-pilot-r114.json": "a3272f19f8a79573d7c95e6c88c5b7b6f900b8f653383f7b9400d0ba94cdabea",
+    "photo2/review/r114/observations.csv": "14b435390a284efd75d0bbc1e5977e051cb73762d9365f2e048b0714cc9b0efc"
+  },
+  "curated_sha256": {
+    "photo2/review/r135/arc-comparison.png": "0c52c0bf5b21aaed205a505d6a7271118608c9ccff96432fe852854ee44f51e4",
+    "photo2/review/r135/weight-report.json": "1222a72b9b1ff24c3740697c7ec2e716ac0e5cac1a4f3b6a2cef4feaca227f84",
+    "photo2/review/r135/synthetic-arcs.png": "b4dc8ba1c52094efdcdf3aed41754835b8788c288ca35c8e1334b76e42297309",
+    "photo2/review/r135/summary.json": "662b2541b8fd1f53cf4c4d40f3f729ddcdb0cb493169c70cc2ea86ed77985e13",
+    "photo2/review/r135/wider-context.png": "34abb1720187f9d7d07fc7959dc813f5fb6884eae54a541ec3bafc5488863664",
+    "photo2/review/r135/arc-evidence.png": "9f7a60a184fd2545362fa6ab322d754a4834e5df1f204608447b6bb7b8d1abd7",
+    "photo2/review/r135/neighbor-alternatives.png": "9089c53b9d76045ef1b45cca4534d33112ab013dea6f5970279ae761dab0f684",
+    "photo2/review/r135/report.json": "5e301ad9d658b1fb2f5bea75ee068f594a90d215d0793ae10af1013e6c33ddab"
+  },
+  "verification_commands": [
+    ".venv/bin/python -m unittest discover -s photo2 -p test_*.py -v",
+    "git diff --check"
+  ],
+  "original_observation_ids": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "accepted_full_string_indices": 0
+}

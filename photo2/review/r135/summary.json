@@ -1,0 +1,143 @@
+{
+  "rows": [
+    {
+      "stem": "synthetic-H1-band3",
+      "core_miss": 0.0,
+      "bracket_miss": 0.0,
+      "common_python_bracket_miss": 0.0,
+      "C_core": 1.0,
+      "F_core": 1.0,
+      "C_area": 1.0198581560283688,
+      "G_iou": 0.8626609442060086,
+      "capped_stages": 0,
+      "ray_mismatches": 1
+    },
+    {
+      "stem": "synthetic-H2-band3",
+      "core_miss": 0.0011160714285714285,
+      "bracket_miss": 0.0,
+      "common_python_bracket_miss": 0.0,
+      "C_core": 1.0,
+      "F_core": 1.0,
+      "C_area": 1.0283687943262412,
+      "G_iou": 0.9188405797101449,
+      "capped_stages": 1,
+      "ray_mismatches": 2
+    },
+    {
+      "stem": "photo-H1-band3",
+      "core_miss": 0.04462776935233206,
+      "bracket_miss": 0.13194444444444445,
+      "common_python_bracket_miss": 0.13194444444444445,
+      "C_core": 1.0,
+      "F_core": 0.873046875,
+      "C_area": 1.685483870967742,
+      "G_iou": 0.5808124459809854,
+      "capped_stages": 2,
+      "ray_mismatches": 2
+    },
+    {
+      "stem": "photo-H1-band5",
+      "core_miss": 0.04537242186946384,
+      "bracket_miss": 0.09027777777777778,
+      "common_python_bracket_miss": 0.1875,
+      "C_core": 0.9619289340101523,
+      "F_core": 0.927734375,
+      "C_area": 1.5403225806451613,
+      "G_iou": 0.6575212866603595,
+      "capped_stages": 1,
+      "ray_mismatches": 6
+    },
+    {
+      "stem": "photo-H2-band3",
+      "core_miss": 0.05417407796820243,
+      "bracket_miss": 0.125,
+      "common_python_bracket_miss": 0.125,
+      "C_core": 1.0,
+      "F_core": 0.837890625,
+      "C_area": 1.6919354838709677,
+      "G_iou": 0.6856368563685636,
+      "capped_stages": 1,
+      "ray_mismatches": 1
+    },
+    {
+      "stem": "photo-H2-band5",
+      "core_miss": 0.13249105481697263,
+      "bracket_miss": 0.013888888888888888,
+      "common_python_bracket_miss": 0.1388888888888889,
+      "C_core": 0.9695431472081218,
+      "F_core": 0.833984375,
+      "C_area": 1.3725806451612903,
+      "G_iou": 0.75,
+      "capped_stages": 1,
+      "ray_mismatches": 3
+    },
+    {
+      "stem": "photo-H1-band3-weight3",
+      "core_miss": 0.05326992404978057,
+      "bracket_miss": 0.1388888888888889,
+      "common_python_bracket_miss": 0.1388888888888889,
+      "C_core": 0.9949238578680203,
+      "F_core": 0.84375,
+      "C_area": 1.6951612903225806,
+      "G_iou": 0.5563973063973064,
+      "capped_stages": 0,
+      "ray_mismatches": 12
+    },
+    {
+      "stem": "photo-H2-band3-weight3",
+      "core_miss": 0.3041278828080943,
+      "bracket_miss": 0.013888888888888888,
+      "common_python_bracket_miss": 0.013888888888888888,
+      "C_core": 0.9974619289340102,
+      "F_core": 0.677734375,
+      "C_area": 1.1870967741935483,
+      "G_iou": 0.4818449460255152,
+      "capped_stages": 2,
+      "ray_mismatches": 3
+    }
+  ],
+  "report_sha256": "5e301ad9d658b1fb2f5bea75ee068f594a90d215d0793ae10af1013e6c33ddab",
+  "weight_report_sha256": "1222a72b9b1ff24c3740697c7ec2e716ac0e5cac1a4f3b6a2cef4feaca227f84",
+  "review_code_sha256": "a099ed1abd58075674316a569c74f476a83613438c196ad4aa502b8180a7cf6a",
+  "control_render_provenance": {
+    "H1": {
+      "scene_sha256": "6bcf75576108ed0bcd69dd7e949c662930cace2f2818412b43338f08f7e05ed3",
+      "png_sha256": "d1c54952773279a7b586d38896d059e7d47f7ded9f208b6eed1011a8c7f8bf34",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r135/control-H1.pov",
+        "+O/home/rharris/git/beads/photo2/output/r135/control-H1.png",
+        "+W125",
+        "+H130",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    "H2": {
+      "scene_sha256": "16d2af5e1feca2bc52200317fa55e2be2a463274c30f1fdfa5f781dd8d11485c",
+      "png_sha256": "4e6af2ef6d14abf871a0ed6bddfceaac080ad11a2b2a4d24a803fa4689c2d6a0",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r135/control-H2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r135/control-H2.png",
+        "+W125",
+        "+H130",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    }
+  },
+  "question": {
+    "id": "Q135.1",
+    "status": "pending",
+    "text": "Do L and S follow C's left and lower boundary, or does either run through its visible surface?"
+  },
+  "neighbor_review_sha256": "a411c60f55581b24eaaa821843bae931f1c951a250613dbe4b8aa88df47c499c"
+}

@@ -1,6 +1,46 @@
 # Beads session handoff — new branch
 
-## Current R134 — Updated model recommendation; geometry task unchanged
+## Current R135–R137 — Boundary test complete; maker changes the neighbor premise
+
+Read [PLAN.md](PLAN.md) for current problem and overall stages, then
+[boundary experiment](photo2/BOUNDARY_ARC_FIT.md). R135 “continue” compared paired
+samples beside three assistant-selected arcs plus existing interiors. Six base
+cases and two stronger-weight photo sensitivities completed. Three methods were
+presented first: bracket pairs, selected-segment distance, gradient transitions.
+
+No replacement accepted. Narrow bands yield C area about 1.69 times its rough
+polygon. Stronger H2 brackets reduce that to 1.19, but H core coverage drops to
+30.2% and G overlap to 48.2%. Synthetic correct/wrong charts both satisfy every
+retained bracket; wrong-chart core coverage is 99.89%, so sparse support does not
+identify correspondence. All eight independent Python/POV checks pass, maximum
+12/16,250 differing pixels. Eight of 32 optimizer stages cap; no global optimum.
+A preflight caught three pairs crossing thin/concave synthetic bodies. Region-side
+validation removes them; truth then satisfies all cores/pairs. Four new tests guard
+these constraints. Old reports/source/observations remain unchanged.
+
+R136 answers Q132.1: if BC is 6 then CG is 7; if BC is 7 then CG is 6; signs unknown.
+[Verbatim record](photo2/SURFACE_CONSTRAINT_QUESTIONS.md) and
+[hashed eight signed discussion alternatives](photo2/neighbor-review-r136.json).
+Neither old BC=1 chart represents this supplied pair of alternatives. Preserve
+old fits as controls, supersede as active photo maps. Do not choose a family,
+assign signs, inherit E/F/H/J offsets as maker evidence or recover string indices.
+R136 arrived after numerical fitting; no new-family fit occurred this turn.
+
+R137 asks for wider context. [Whole-photo/raw/labeled view](photo2/review/r135/wider-context.png)
+places B/C/G in the top section, beside the yellow-to-red/black transition. It is
+linked in both review files. Dots are existing interior observations, not centers.
+Q135.1 about L/S boundary segments remains pending; Q126.1 stays answered.
+
+**Next bounded task:** compare the coupled BC/CG families and unresolved signs,
+rebuilding other patch relations from supported evidence. Keep P unknown, black
+central bodies and missing slots. G's pixels remain a continuous-fitting holdout,
+while future graph construction will use the maker's CG family observation.
+Stop here; no ring expansion or new color/index inference. Recommend gpt-6.1-sol /
+High, stay in this session, no /new. Preflight daisy, clean 2bd0392, upstream 0/0
+following fetch, no stashes/dependencies/delegation. Curated evidence is tracked.
+
+
+## Historical R134 — Updated model recommendation; geometry task unchanged
 
 User reports gpt-6.1-sol offers similar ability to gpt-6-astra at one fifth the
 cost. Checked the [official model catalog](https://developers.openai.com/api/docs/models)
@@ -15,7 +55,7 @@ the C/F local fit, P unknown and G withheld. Q132.1 is pending. This turn only
 updates model guidance; no numerical work or ring expansion. Preflight daisy,
 clean f28d581, tracked upstream, no stashes. See PLAN.md for the solution roadmap.
 
-## R132–R133 — Constraint comparison complete; PLAN.md is the roadmap
+## Historical R132–R133 — Constraint comparison complete; PLAN.md is the roadmap
 
 R132 “continue” tested whether uncertain outline penalties caused the C/F fit
 mismatch. Read [SURFACE_CONSTRAINTS](photo2/SURFACE_CONSTRAINTS.md) and its raw/

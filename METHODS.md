@@ -644,6 +644,15 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R135–R136 current evidence:** [boundary-bracket comparison](photo2/BOUNDARY_ARC_FIT.md)
+adds negative ownership only beside selected local segments, validating pair sides
+against supplied regions to avoid crossing thin/concave bodies. Eight checks pass,
+but sparse brackets do not identify a chart; stronger C constraints can lose other
+interiors. Maker supplies coupled BC=6/CG=7 or BC=7/CG=6 with unknown signs.
+[Preserved alternatives](photo2/neighbor-review-r136.json) supersede the old BC=1
+maps as active photo hypotheses. Next compare those coupled families and signs,
+keeping other observation assignments provisional and G's image pixels withheld.
+
 **R132 constraint comparison:** [omit unknown regions explicitly](photo2/SURFACE_CONSTRAINTS.md).
 Use missing ownership in both the penalty and distance transforms; do not turn
 an uncertain junction into an artificial boundary. Positive interior support is
@@ -651,7 +660,7 @@ useful but cannot replace shape constraints: this test increases coverage by
 enlarging predictions and worsens held-out overlap. The known wrong chart also
 fits almost all cores. Keep the unknown handling, do not adopt interiors-only
 fitting or infer correspondence from its score. Selected clear boundary arcs
-with interior support are the next bounded candidate, not yet implemented.
+with interior support were tested in R135; their results are linked above.
 
 **R126–R128 executed local fit:** [seven-body surface experiment](photo2/LOCAL_SURFACE_FIT.md)
 compared uncertain point fitting, exposed-region fitting and full shaded-image

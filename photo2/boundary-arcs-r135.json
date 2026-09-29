@@ -1,0 +1,15 @@
+{
+  "request_id": "R135",
+  "source_image": "beads-photo-2.jpg",
+  "coordinate_convention": "EXIF-transposed source image pixels, x right, y down; no resize",
+  "status": "Assistant-selected diagnostic segments; not maker-confirmed edges or automatic detections",
+  "ignore_point_xy": [1364, 278],
+  "ignore_radius_px": 6,
+  "arcs": [
+    {"id": "L", "body": "C", "points": [[1334,268],[1331,274],[1332,282],[1337,289]], "interior_hint": [1345,280], "reason": "Left red-to-dark transition away from P; highlights remain inside and are not anchors"},
+    {"id": "S", "body": "C", "points": [[1337,289],[1344,293],[1352,291],[1356,286]], "interior_hint": [1345,280], "reason": "Lower red-to-dark transition; blur and shading make the last few pixels uncertain"},
+    {"id": "R", "body": "B", "points": [[1368,252],[1367,259],[1362,266],[1355,268]], "interior_hint": [1357,254], "reason": "Lower-right red-to-dark transition away from the upper paper shadow"}
+  ],
+  "question": {"id": "Q135.1", "status": "pending", "text": "Do L and S follow C's left and lower boundary, or does either run through its visible surface?"},
+  "limits": "The dark side is only evidence of not this particular bead, not confirmed paper or an assigned neighbor. F/E/H/J boundaries are too ambiguous for new negative constraints; their existing interior evidence remains. G is withheld. No source-loop index is a photo label."
+}
