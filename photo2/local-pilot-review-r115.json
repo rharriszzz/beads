@@ -1,0 +1,41 @@
+{
+  "request_id": "R115",
+  "date": "2026-09-28",
+  "maker_response_verbatim": "Yes, D is separate from B.  Being closer to the edge, everything about D is more difficult to establish.",
+  "source_observations": "photo2/review/r114/observations.csv",
+  "source_observations_sha256": "14b435390a284efd75d0bbc1e5977e051cb73762d9365f2e048b0714cc9b0efc",
+  "source_config": "photo2/local-pilot-r114.json",
+  "source_config_sha256": "a3272f19f8a79573d7c95e6c88c5b7b6f900b8f653383f7b9400d0ba94cdabea",
+  "application": "Review annotation over frozen R114 evidence; do not change measurements or use as automatic runtime prior.",
+  "observation_updates": [
+    {
+      "observation_id": "D",
+      "body_status": "maker_confirmed_separate_from_B",
+      "distinct_from": [
+        "B"
+      ],
+      "evidence_source": "maker_response_R115",
+      "visibility_note": "Closer to necklace edge; other properties harder to establish.",
+      "boundary_status": "unresolved",
+      "interior_sample_support": "unverified",
+      "pigment_status": "unresolved",
+      "neighbor_family_status": "unresolved",
+      "component_index": null,
+      "bead_index": null
+    }
+  ],
+  "unchanged_unresolved_regions": [
+    "L"
+  ],
+  "coverage": {
+    "selected_observation_records": 12,
+    "other_proposed_bodies": 10,
+    "maker_confirmed_distinct_from_B": [
+      "D"
+    ],
+    "unresolved_body_regions": [
+      "L"
+    ],
+    "complete_crop_inventory": false
+  }
+}

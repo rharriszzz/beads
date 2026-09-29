@@ -4,11 +4,34 @@
 
 | Image / artifact | Active inventory | Evidence / unresolved issues |
 | --- | --- | --- |
-| beads-photo-2.jpg | R114 assisted local proposals: ten bodies and two unresolved regions | [Local pilot](photo2/LOCAL_PILOT.md), [inventory](photo2/review/r114/inventory.png), [B/D question](photo2/LOCAL_PILOT_QUESTIONS.md); no confirmed silhouette, centerline, global bead indices or pigment labels |
+| beads-photo-2.jpg | R115 review: ten proposed bodies, D confirmed separate from B, L unresolved | [Local pilot](photo2/LOCAL_PILOT.md), [original inventory](photo2/review/r114/inventory.png), [B/D answer](photo2/LOCAL_PILOT_QUESTIONS.md); D's edge/sample/color/index uncertain; no confirmed silhouette, centerline, global bead indices or pigment labels |
 | Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
 | Photo-2 R100 hue figures | None; same T1/T2 routes | [T1 hue](photo2/review/r100/T1-hue.png), [T2 hue](photo2/review/r100/T2-hue.png); local red-to-magenta change, not a recovered edge; overlap-map provenance confirmed by maker |
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
+
+## R115 — Maker confirms D is separate from B
+
+Maker: “Yes, D is separate from B.  Being closer to the edge, everything about
+D is more difficult to establish.” Saved verbatim in the question file and
+request log, with a [machine-readable review](photo2/local-pilot-review-r115.json).
+D's separation from B is now maker-confirmed. Do not infer a boundary, pure
+interior disk, pigment assignment, neighbor-family label or index from this.
+The edge proximity remains a reason for uncertainty in those properties; L is
+still unresolved. Twelve observation IDs remain, with ten proposed bodies,
+D confirmed distinct from B, and one unresolved region L.
+
+R114 numerical inputs/results/images remain frozen and describe the pre-review
+state; apply R115's separate annotation when interpreting that inventory. No
+new measurements, render, graph propagation or next-phase implementation.
+Clean c3b7bf6 on daisy/photo-2-reconstruction-v2, no stashes; fetch succeeded,
+upstream0/0. Prior pilot push/remote-tip verification completed before this reply.
+
+**Next bounded task:** present 3–6 local geometry comparison methods, select one
+and run a small comparison for the unresolved 6/7 families. Keep D's edge-related
+uncertainty explicit and stop at local review before expansion. This turn stops
+after saving feedback. Recommend gpt-6-astra / High; stay for discussion, optional
+fresh /new for the numerical comparison. User controls switching.
 
 ## R114 — Local observation/index/color pilot, stopped at review
 

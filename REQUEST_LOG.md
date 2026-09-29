@@ -917,3 +917,44 @@ to LF, regenerated both analyses/reports and the evaluator output, and repeated
 all ten photo-artifact byte comparisons plus both provenance/control checks;
 all passed. Numerical inputs/results and curated images were unchanged. Final
 staged whitespace verification follows this correction.
+
+## R115 — Maker confirms D is separate from B (2026-09-28)
+
+User: “Yes, D is separate from B.  Being closer to the edge, everything about D is more difficult to establish.”
+
+Preflight daisy, clean c3b7bf6 on photo-2-reconstruction-v2, tracked upstream,
+no stashes. Fetch with required .git access succeeded; upstream0/0. Prior R114
+commit/push and exact remote-tip verification completed before this reply. Read
+AGENTS, handoff, latest log, plan, local pilot/question/config and relevant method
+status. No dependencies, delegation, supplied usage/status or ownership transfer.
+
+### R115 outcome
+
+Saved the reply verbatim in LOCAL_PILOT_QUESTIONS and a machine-readable review
+annotation, local-pilot-review-r115.json, with hashes of its frozen R114 source
+config/table. D is maker-confirmed separate from B. Preserve uncertainty about
+its boundary, sample purity, pigment, construction neighbors and indices;
+proximity to the necklace edge makes those properties harder to establish.
+No new precise labels or red-pigment confirmation inferred. L remains unresolved.
+
+Current accounting: twelve selected observation records = ten proposed bodies,
+D with confirmed separation from B, and one unresolved body region L. The other
+ten proposals are not newly maker-confirmed. Updated current pilot interpretation,
+question status, PLAN and handoff. R114 CSV/config/reports/images remain unchanged
+pre-review evidence; apply the separate R115 annotation when using that inventory.
+No remeasurement, render, graph propagation or new phase implementation warranted.
+
+Stop after recording feedback. Next bounded task: present 3–6 local geometry
+comparison methods, select one and run a small comparison for the 6/7 ambiguity,
+retaining D's edge-related uncertainty. Stop at local review before ring expansion.
+Recommend gpt-6-astra / High; stay for discussion, optional /new for numerical
+work. No new question is needed; the B/D question is answered.
+
+### R115 checks
+
+Passed with .venv/bin/python3.12: source hashes; verbatim answer in question/log;
+D-only body-status annotation, blank indices and unresolved L; twelve-record
+accounting; append-only request history; 24 source/artifact files byte-identical
+to HEAD; 73 local link paths; git diff --check. No runtime tests or renders needed
+for this review metadata/documentation change; no failed checks. Scoped six-file
+commit/push and exact remote-tip/final-status verification follow this record.

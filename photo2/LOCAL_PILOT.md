@@ -4,7 +4,11 @@ The first local pilot supports useful interior measurements, but **does not yet
 justify photo bead indices or a recovered pigment palette**. Two consistent
 neighbor graphs remain possible. The simple color baseline splits red-looking
 surfaces and groups an uncertain orange fragment with a red-looking sample.
-Stop at the [one illustrated B/D body question](LOCAL_PILOT_QUESTIONS.md).
+**R115 review:** the maker confirms D is separate from B and notes that its
+proximity to the edge makes everything about D harder to establish. The
+[illustrated answer](LOCAL_PILOT_QUESTIONS.md) resolves only that body distinction;
+D's boundary, sampling support, pigment and index remain uncertain. Stop after
+recording this feedback; the next numerical step has not begun.
 
 ## Scope and assistance
 
@@ -30,13 +34,20 @@ remain pending supporting tasks, with optional adoption.
 
 ![Raw patch, sample disks and uncertainty](review/r114/inventory.png)
 
-[Observation table](review/r114/observations.csv) preserves all twelve selected
+[Original R114 observation table](review/r114/observations.csv) preserves all twelve selected
 regions, including uncertainty. Eight substantial bodies B/C/E/F/G/H/I/J and
-two partially exposed bodies A/K are proposed. D may be a separate cap or part
-of B; L may be a separate body/fragment or part of K. Neither has been dropped
-or promoted to a resolved bead. Ignore verified slivers under the existing rule;
-L has not been verified as one. Thus **10 proposed bodies + 2 unresolved regions**
-is an assisted review set, not a confirmed count of twelve beads.
+two partially exposed bodies A/K are proposed. **R115 confirms D is distinct
+from B**; L may be a separate body/fragment or part of K. Current accounting is
+**10 proposed bodies + D with confirmed separation from B + 1 unresolved region L**,
+still twelve observation records, not a confirmed count of twelve beads. Ignore
+verified slivers under the existing rule; L has not been verified as one.
+
+Apply the [R115 review annotation](local-pilot-review-r115.json) when interpreting
+the original table. R114 config, CSV, reports and images are frozen pre-review
+evidence: their unresolved-B/D wording records the earlier state. Review changes
+only D's body distinction and its provenance, not numerical measurements or
+uncertainty in its other attributes. Maker feedback is diagnostic/validation
+evidence, not an automatic detector output or a final runtime location prior.
 
 The wider crop also contains context bodies outside this selected set. There is
 no complete-crop or whole-photo detection-coverage claim, and no ground truth for
@@ -132,7 +143,7 @@ of colors or red/yellow/black box is supplied. At .18 the five groups are:
 | P1 | A, K | Yellow/orange-looking samples |
 | P2 | B, L | Red-looking B grouped with uncertain orange-looking fragment L |
 | P3 | C, G, I | Other red-looking faces; may share pigment with B |
-| P4 | D | Singleton shaded reddish cap; identity and pigment unresolved |
+| P4 | D | Singleton shaded reddish cap; R115 confirms separation from B, pigment unresolved |
 | P5 | E, F, H, J | Dark surfaces; hue alone would be misleading |
 
 The three thresholds give six/five/four groups. At .24, B joins C/G/I but L joins
@@ -223,8 +234,9 @@ were used. Endpoint plotting was widened for the larger synthetic bodies.
 The final artifacts were visually inspected; numerical and reproduction checks
 are recorded in R114's request-log outcome.
 
-Stop here. Next: preserve the maker's B/D answer and revise this observation set;
-then select a bounded local geometry comparison for the 6/7 ambiguity before
+R115 records the maker's B/D answer and updates the interpretation of this
+observation set. Stop here. Next: select a bounded local geometry comparison
+for the 6/7 ambiguity, retaining D's edge-related uncertainty, before
 expanding indices. No full-ring count, pattern recovery or material fitting was
-attempted. Recommend gpt-6-astra / High; stay in this session for the visual reply,
+attempted. Recommend gpt-6-astra / High; stay in this session for discussion,
 use a fresh /new for the next numerical experiment if desired.
