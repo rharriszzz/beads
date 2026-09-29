@@ -11,7 +11,30 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R150–R151: outward-point direction angles calculated
+## Current task — R152–R155: existing patch exceeds the one-step size scale
+
+The maker asks how large a connected region must be to identify helicity.
+[Assessment](photo2/PATCH_SUFFICIENCY.md) recommends starting with the existing
+27-body patch and its six recorded complete neighbor stars. Roughly 20–30 clear
+bodies with several overlapping stars is a practical target, not a measured
+minimum. Seven accurately located outward anchors may suffice in favorable
+geometry; R149's arbitrary visible points do not test that stricter claim.
+
+R153–R154 ask for a one-bead count difference using the computed angles. Outward
+angles 47.72°/43.31° imply a common centerline span of 18.6183 model units,
+6.4615 nominal row spacings, with seven direction-6 steps versus six direction-7
+steps. Chord, unrolled-arc and index calculations agree. R155 asks if 27 is enough:
+the candidate index spans correspond to about ten rows and exceed this geometric
+size scale. A larger equally clear patch may help precision; use the existing
+patch first. Hidden intermediate bodies and anchor/view uncertainty remain.
+
+**Next bounded task:** assess supported outward locations and compare competing
+projected poses on the saved patch, allowing centerline curvature and holding out
+a neighboring group. Judge alternatives against location uncertainty, not bead
+count alone. No additional labels requested and no new fit performed in this
+assessment. Stop at the requested explanation; neither helicity accepted.
+
+## Prior task — R150–R151: outward-point direction angles calculated
 
 The maker asks for 1/6/7 angles for both helicities, emphasizing each bead's
 point farthest from the minor-circle center. [Calculation](photo2/DIRECTION_ANGLES.md)

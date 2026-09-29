@@ -644,6 +644,18 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R152–R155 patch sufficiency:** [geometry and withheld-evidence criterion](photo2/PATCH_SUFFICIENCY.md)
+uses the existing 27-body/six-star patch first. A proposed 20–30-body practical
+target is not a measured minimum. Preserve breadth, all neighbor families,
+outward-point exposure/uncertainty and camera/curved-centerline uncertainty.
+Arbitrary visible-point ownership is weaker than measured outward positions.
+Adjacency alone cannot identify helicity; compare feasible projected alternatives
+and predictions on a withheld group before accepting one. No size sweep performed.
+Earlier outward angles yield a one-step count difference over 6.46 nominal row
+spacings: seven +6 steps versus six +7 steps. The current chart's roughly ten-row
+candidate span exceeds that scale. Chord/arc/index calculations agree; count
+hidden positions explicitly rather than assuming the whole path is visible.
+
 **R150–R151 outward-point direction geometry:** [intrinsic angle calculation](photo2/DIRECTION_ANGLES.md)
 uses the outer-wall midpoint in the minor-radial direction, radius chain_minor
 plus bead_radius. Distinguish shortest unrolled minor arcs, 3D point chords and

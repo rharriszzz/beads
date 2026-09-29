@@ -1913,3 +1913,76 @@ calculator files; both-helicity signs and outward reference radius pass independ
 checks. Syntax/whitespace and 122 local documentation links pass. Nine protected
 source/prior evidence files, exact live revision-162 save and append-only request
 history preserved. Refreshed origin remains 0/0 before scoped commit/push.
+
+## R152 — How large a patch establishes helicity? (2026-09-29)
+
+User, verbatim: “suppose you identify a large enough region of beads, connected by the adjaceny pattern that we already investigated.  How large does this patch need to be to make it clear what the helicity is?”
+
+Angle calculation R150–R151 completed/pushed as
+21d8a64d9596363c0f8fa52ddc3d0e765eacd539; exact remote tip and clean tree checked
+before this explanatory step. Same machine/branch, no stashes. Existing corrected
+chart: 27 bodies, six recorded complete neighbor stars at 5/8/11/14/17/20.
+
+Recommend using that existing patch first. Roughly 20–30 substantial visible
+bodies with several overlapping stars is a practical starting target, explicitly
+not a measured minimum or a guarantee. Breadth across the tube and repeated
+stations matter; adjacency alone remains compatible with reflection. Seven true
+outward anchors may suffice in favorable constrained geometry; prior seven-point
+ownership test used arbitrary surface locations and cannot disprove that.
+
+Nominal outward direction 1's intrinsic tilt from perpendicular is only about
+4.3–4.5 degrees; projected tilt still depends on camera/section geometry.
+Compare plausible helicity/6–7 poses against supported outward locations and
+uncertainty, withhold a whole group and account for varying centerline tangent.
+No new fit, patch-size sweep, calibrated confidence or label collection performed
+or claimed. No source/live annotations changed. Recorded illustrated assessment
+photo2/PATCH_SUFFICIENCY.md using the existing curated chart, and updated plan/
+methods/handoff. Stop at explanation; next assess outward positions/projected
+poses on existing patch. Recommend gpt-6.1-sol / High, same session, no /new needed.
+
+## R153–R154 — Magnify the angle difference into one extra bead step (2026-09-29)
+
+R153 user, verbatim: “How far to go th magnify the plus or minus 2.7 degrees so that you get an extra bead in one direction than you do in the other.”
+
+R154 user, verbatim: “use the angles you computed earlier”
+
+Steers the unfinished patch-size explanation. Use R151's nominal outward-point
+3D angles 47.71799021485714° and 43.30697171728896°, a gap 4.411018497568179°
+or ±2.2055092487840895° around the mean. Transverse chord T=2.9248757237168284.
+Angle-derived centerline steps a6=T/tan(alpha6)=2.659753843640921 and
+a7=T/tan(alpha7)=3.103046150914408. One-step count excess at common centerline
+span L solves L*(1/a6−1/a7)=1, giving L=18.61827690548642 model units.
+This is 6.461538461538451 nominal row spacings or 4.41 bead diameters, with
+seven direction-6 steps and six direction-7 steps. Index identity 7×6=6×7=42
+and unrolled-angle calculation independently agree within 1e-10 model units.
+
+Counts including the common origin are eight versus seven; two completed paths
+meet at index +42 and contain thirteen unique bodies in total. They wind around
+the minor circle, so their intermediate outward points cannot all be assumed
+visible. Preserve hidden positions/edge exclusions and distinguish this geometric
+count scale from verified photo helicity. Opposite winding exchanges the side
+with the extra step. Reproduction inputs in photo2/review/r150/nominal.json;
+formula and all parameters in photo2/PATCH_SUFFICIENCY.md. No new photo fit.
+
+## R155 — Is the saved 27-body patch already large enough? (2026-09-29)
+
+User, verbatim: “Is the existing 27 bead patch large enough, or would a larger patch make it easier?”
+
+Compute full chart's two candidate offset spans as 67 and 65 indices, about
+10.3077 and 10 nominal row spacings, exceeding the calculated 6.4615-row scale.
+The patch is already longitudinally large enough for that scale; use it first.
+A larger equally clear patch could improve accuracy, while supported outward
+positions, exposure, camera and curved-centerline geometry remain to be checked.
+No guaranteed helicity from size alone and no additional labels requested.
+Same bounded explanatory step as R152–R154; its tracked drafts are kept together.
+Source/annotations/previous numerical outputs unchanged. Updated assessment,
+angle cross-link, methods, plan and handoff. Stop at answer/count calculation;
+next test existing patch's outward-position support/projected competing poses.
+Recommend gpt-6.1-sol / High, same session, no /new required.
+
+R152–R155 integrity outcome: angle-derived chord, unrolled-arc and index-closure
+calculations agree within 1e-10 model units; graph candidate spans and six complete
+stars independently checked. Nine protected source/prior evidence/calculator
+files unchanged. Request history remains append-only; whitespace and 131 local
+documentation links pass. Scoped explanatory publication follows; no new code,
+image fitting or patch-size experiment included.

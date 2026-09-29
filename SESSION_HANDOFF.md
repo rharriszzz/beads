@@ -1,6 +1,39 @@
 # Beads session handoff — new branch
 
-## Current R150–R151 — Minor-outward direction angles
+## Current R152–R155 — Patch size and one extra neighbor step
+
+Maker asks how large a connected bead region must be for clear helicity. Read
+[assessment](photo2/PATCH_SUFFICIENCY.md) and [PLAN.md](PLAN.md). Angle calculation
+21d8a64 pushed; exact remote tip and clean status verified before this explanatory
+step. Existing 27-body chart has six recorded six-neighbor stars at 5/8/11/14/17/20.
+Use it first. Proposed practical target 20–30 substantial bodies/several overlapping
+stars is NOT measured minimum or guarantee. Breadth, anchor uncertainty, camera
+and varying centerline tangent matter. Adjacency alone does not fix chirality.
+
+R153–R154 request magnification into a one-bead count difference, using earlier
+angles. Nominal outward 3D angles 47.717990°/43.306972° and transverse chord
+2.924875724 give axial steps 2.659753844/3.103046151. Solve
+L*(1/a6−1/a7)=1: L=18.618276905, seven +6 steps versus six +7 steps. Both reach
+index +42. This is 6.4615 row spacings or 4.41 bead diameters. Unrolled angles
+independently agree. Paths wind around minor circle; hidden bodies stay missing.
+R155 asks if existing 27 is enough: its candidate spans 67/65 indices are about
+10.31/10 nominal rows, exceeding the one-step scale. Use current patch first;
+larger equally clear evidence could improve accuracy, no guaranteed hand yet.
+
+R149's seven arbitrary visible-surface points are not measured outward anchors;
+its ambiguity does not establish insufficiency of seven true outward points.
+Seven may suffice under favorable constrained geometry, but this has not been
+calibrated. No new fit, size sweep, source/annotation changes or label request.
+Compare both helicities/6–7 assignments with supported outward positions, check
+exposure and withhold a whole neighboring group. Reject alternatives only against
+measurement uncertainty and adequate optimization, not failed bounded searches.
+
+**Stopping point:** size/decision criterion explained. **Next task:** use existing
+patch to assess outward locations and projected competing poses with curvature.
+Neither hand accepted; Q149.1 remains pending. Recommend gpt-6.1-sol / High;
+same session, no /new needed.
+
+## Prior R150–R151 — Minor-outward direction angles
 
 Maker asks angles of directions 1/6/7 relative to centerline for both helicities,
 then emphasizes points farthest away in the minor-circle direction. Read

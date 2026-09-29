@@ -97,6 +97,10 @@ require their own exposure/occlusion check; none is supplied by this calculation
 
 ## Reproduce, checks and stopping point
 
+[Patch-size calculation](PATCH_SUFFICIENCY.md) uses these angles to obtain the
+centerline span giving one extra direction-6 neighbor step: 6.46 nominal row
+spacings, with seven direction-6 steps versus six direction-7 steps.
+
 ```sh
 .venv/bin/python photo2/direction_angles.py
 .venv/bin/python photo2/direction_angles.py --nbeads 672
