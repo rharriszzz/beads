@@ -124,17 +124,24 @@ algebra, not physical correspondence. Missing and excluded beads are not compres
 
 ![Small ownership question with raw context](review/r126/ownership-question.png)
 
-[Question record](LOCAL_SURFACE_FIT_QUESTIONS.md): which bead owns dark patch P
-at source (1364,278), immediately to the right of C: C, E, another bead/gap, or
-unclear? This addresses one ambiguous boundary assignment, not camera elevation
-or an exact outline. Do not treat a pending answer as confirmation.
+[Q126.1 is answered, R130–R131](LOCAL_SURFACE_FIT_QUESTIONS.md). Initially unclear
+because of shadow from all four adjacent beads, P is now described by the maker
+as probably outside a bead and near an edge. Keep this classification tentative;
+no exact boundary, edge type, paper/gap mask or four adjacent IDs are supplied.
+The shown picture contains four red, two yellow and at least two black beads,
+according to the maker; these counts do not establish color-to-ID assignments
+or a complete seven-body/crop inventory.
 
-Stop at this illustrated fit review. Next bounded task: use supported ownership
-feedback to revise the local observations if warranted, then test the specific
-remaining correspondence/shape mismatch. Compare methods before selecting that
-implementation. Do not expand around the necklace until the local evidence
-supports the proposed relations. Stay in this session as requested; recommended
-model/reasoning remains gpt-6-astra / High, no /new requested.
+The [review annotation](local-surface-review-r130.json) overlays the frozen R126
+results. No polygons, fits or scores have changed. The old numerical report's
+pending question status is historical. A subsequent fit should not penalize
+ownership at P; the maker supplied no numeric uncertainty-region extent.
+
+Stop after recording this answer. Next bounded task: compare constraints from
+clearer surfaces away from the shadowed junction to address C/F's shape or
+correspondence mismatch. Compare methods before selecting that implementation.
+Do not require P's ownership to be resolved or expand the necklace graph yet.
+Stay in this session; recommendation remains gpt-6-astra / High, no /new.
 
 ## Reproduce
 

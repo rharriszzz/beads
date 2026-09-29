@@ -1,0 +1,56 @@
+{
+  "request_id": "R130",
+  "question_id": "Q126.1",
+  "date": "2026-09-28",
+  "maker_response_verbatim": "Q126.1 — Ownership immediately to C's right:  unclear, its in the shadow of all four adjacent beads.  The picture includes four read beads, two yellow beads, and two or more black beads.",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/review/r126/ownership-question.png": "da1cea191adb8040a651efab4af45546f74ca456d9d25b364e19b4706f638ef7",
+    "photo2/review/r126/review-report.json": "8fe9352b8512e11f7c83cb82526ddd5b949bb896b48f4be3483a8da1ae9a0602",
+    "photo2/local-fit-r126.json": "126416e9065164e98cb4564771e5fcc761623fc3ac260ad6854dd6a23d409d29"
+  },
+  "application": "Maker review annotation over frozen R126–R128 fitting evidence; not an automatic runtime prior or a refit.",
+  "question_status": "answered_with_tentative_nonbead_followup",
+  "point_xy": [
+    1364,
+    278
+  ],
+  "ownership": null,
+  "maker_shadow_description": "In the shadow of all four adjacent beads.",
+  "adjacent_bead_count": 4,
+  "adjacent_observation_ids": null,
+  "picture_counts": {
+    "scope": "Picture shown for Q126.1, including contextual/partially cropped bodies; not the seven-body fitting set or full necklace.",
+    "red": {
+      "count": 4,
+      "relation": "exact"
+    },
+    "yellow": {
+      "count": 2,
+      "relation": "exact"
+    },
+    "black": {
+      "count": 2,
+      "relation": "at_least"
+    },
+    "observation_id_assignments": null,
+    "normalization": "Interpret maker typo read as red; preserve original wording above."
+  },
+  "consequences": [
+    "R131 favors non-bead area near an edge; retain tentative status, no exact owner or confirmed paper/gap mask.",
+    "Do not use this shadowed point as positive or negative ownership evidence in a subsequent fit; no uncertainty-region extent was supplied.",
+    "No existing polygon, graph, index or color-to-ID assignment is confirmed by these contextual counts.",
+    "Retain both H1/H2; seek useful surface evidence away from this shadowed junction."
+  ],
+  "followup_reviews": [
+    {
+      "request_id": "R131",
+      "maker_response_verbatim": "I do not think P is over a bead.  It is close to an edge, I think.",
+      "interpretation": "Tentatively outside bead surfaces and near an unspecified edge; no exact boundary, edge type, or confirmed paper label supplied."
+    }
+  ],
+  "latest_request_id": "R131",
+  "probable_surface_class": "non_bead",
+  "classification_status": "maker_tentative",
+  "edge_relation": "probably near an edge; type and position unspecified"
+}

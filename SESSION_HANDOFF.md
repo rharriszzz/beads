@@ -1,6 +1,29 @@
 # Beads session handoff — new branch
 
-## Current R126–R128 — Seven-body fit stopped at illustrated review
+## Current R130–R131 — P likely non-bead near an edge; preserve uncertainty
+
+R130: P is in the shadow of all four adjacent beads; ownership initially unclear.
+R131: maker thinks P is not over a bead and is close to an edge. Record likely
+non-bead area near an edge, with tentative status and no exact edge type/boundary.
+The pictured context includes four red, two yellow and at least two black beads.
+Read the [verbatim answers](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md) and
+[hashed annotation](photo2/local-surface-review-r130.json). “read” is interpreted
+as the typo “red.” Four adjacent IDs and color-to-ID assignments are not supplied.
+Do not promote picture counts to a complete fitting-set/full-necklace inventory.
+Q126.1 is answered; the frozen numerical report's pending field is historical.
+
+**Next bounded task:** compare constraints from clearer surfaces away from this
+shadowed junction to address the C/F outline/correspondence mismatch. Do not use
+P as positive or negative ownership evidence; no numeric uncertainty-mask extent
+was supplied. No need to resolve P before progress. Retain both tentative charts,
+all twelve original IDs and D/B separation; no ring expansion yet.
+
+This turn only saves maker review and updates interpretation/next steps. No code,
+polygons, numerical results or original review images changed. Initial daisy,
+clean bdf6425, upstream 0/0 after fetch, no stashes. R129's preceding file-location
+question/answer is also logged. Recommend gpt-6-astra / High; stay here, no /new.
+
+## Historical R126–R128 — Seven-body fit stopped at illustrated review
 
 Read [local surface fit](photo2/LOCAL_SURFACE_FIT.md), its figures and
 [Q126.1](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md). Two tentative neighbor charts survive.

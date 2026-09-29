@@ -3,7 +3,7 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
-## Active schedule after R126–R128: review the local surface fit
+## Active schedule after R130–R131: preserve shadow uncertainty, use clearer surfaces
 
 The [seven-body fit](photo2/LOCAL_SURFACE_FIT.md) is complete to illustrated review.
 B/C/E/F/H/J were fitted; G was withheld. Both H1/H2 neighbor charts remain tentative.
@@ -19,14 +19,21 @@ Perspective sensitivity is evaluated at half/nominal/double an approximate focal
 calibration; image-center principal point and unknown crop remain assumptions.
 The 55-degree local camera/phase convention is not measured global elevation.
 
-**Next bounded task:** review [Q126.1](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md), ownership
-of the dark patch immediately right of C. Use any supported answer to revise that
-local observation, then compare targeted methods for the remaining surface or
-correspondence mismatch. Keep signed +/-1/6/7 neighbor labels tentative. Do not
-expand around the ring or accept either full local chart merely from its score.
-All twelve original IDs, D/B separation and excluded A/D/I/K/L remain preserved.
+**R130–R131 review:** [Q126.1](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md) is answered.
+R130 describes shadow from four adjacent beads; R131 considers P probably outside
+a bead and near an edge. This remains tentative, with no exact boundary or edge
+type supplied. The picture contains four red, two yellow and at least two black
+beads: contextual maker evidence, not a color-to-ID map or a changed fitting
+inventory. Numerical R126 results remain frozen.
 
-The current stop is the illustrated fit/uncertainty review, not a recovered local
+**Next bounded task:** compare constraints from clear visible surfaces away from
+this junction to address the C/F outline and correspondence mismatch. Do not use
+P as positive or negative ownership evidence; no uncertainty-mask extent was
+supplied. Do not require P to be resolved. Keep +/-1/6/7 labels tentative and
+retain both charts until supported. All twelve original IDs, D/B separation and
+excluded A/D/I/K/L remain preserved; do not expand around the ring yet.
+
+The current stop is the saved maker answer and fit uncertainty, not a recovered local
 index graph. FFT comparisons remain pending, adoption optional. Recommend
 gpt-6-astra / High. Stay in this session; R126 explicitly declines /new and reports
 84% context remaining (user report, not an independently measured status).

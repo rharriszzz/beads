@@ -653,8 +653,12 @@ Independent POV checks validate the numerical surface renderer, and the known
 synthetic example favors its correct chart. This does not validate photo labels.
 Camera elevation/phase has an unobservable local freedom; keep it distinct from
 a measured view. R128's close-iPhone information prompted metadata-based pinhole
-sensitivity tests. Next resolve one illustrated ownership ambiguity and the
-remaining local shape/correspondence mismatch before propagation.
+sensitivity tests. R130 describes shadow from four adjacent beads; R131 considers
+P probably non-bead and near an edge. Keep that classification tentative and omit
+P from bead-fitting constraints; seek clearer surface evidence for the C/F mismatch. Picture counts
+(four red, two yellow, at least two black) are contextual maker review, not a
+color-to-ID assignment, an automatic runtime prior or an exact full inventory.
+[Answer and annotation](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md).
 
 **Current R117–R125 route: fit a patch, then walk neighbors.** Establish a patch
 of 5–12 substantial central bodies, including locatable black beads. Maker says

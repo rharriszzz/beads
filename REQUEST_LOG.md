@@ -1241,3 +1241,64 @@ request history;31 source/prior-artifact files byte-identical to HEAD;141 local
 links; git diff --check. Inspected the raw/model, question, synthetic and
 perspective review figures. No new answer to Q126.1 has been supplied.
 Scoped publication and exact remote-tip/final-status verification follow.
+
+## R129 — Locate the review question file (2026-09-28)
+
+User: “which file should I read to find your question?”
+
+Answered directly with photo2/LOCAL_SURFACE_FIT_QUESTIONS.md, which contains the
+question and supporting image. No numerical work or file changes in that reply.
+This entry is appended with the subsequent maker-answer record.
+
+## R130–R131 — P is shadowed and likely non-bead near an edge (2026-09-28)
+
+R130 user: “Q126.1 — Ownership immediately to C's right:  unclear, its in the shadow of all four adjacent beads.  The picture includes four read beads, two yellow beads, and two or more black beads.”
+
+R131 user: “I do not think P is over a bead.  It is close to an edge, I think.”
+
+Preflight daisy, clean bdf6425, photo-2-reconstruction-v2 with tracked upstream,
+no stashes. Fetch succeeded, upstream0/0. Read handoff, latest request log, plan,
+local surface-fit experiment and question record; inspected the existing curated
+question image. No dependencies or delegation. R131 arrived while recording R130
+and refines that answer within the same bounded review step.
+
+### Outcome
+
+Q126.1 is answered, no longer pending. R130 says P is in the shadow of all four
+adjacent beads; R131 considers it probably outside a bead and near an edge. Keep
+this tentative non-bead interpretation, without inventing an exact boundary,
+edge type, confirmed paper/gap mask or identities for the four adjacent beads.
+Do not assign P to C or E or require ownership resolution before useful work.
+Omit it from future bead-fitting constraints; no numeric uncertainty-mask extent
+was supplied and no fit/code change is performed in this review-only step.
+
+Preserved maker wording verbatim, interpreting “read” as the obvious typo “red”
+in the normalized description: four red, two yellow and at least two black beads
+in the pictured context. Counts include contextual/partially cropped bodies and
+are not a color-to-ID mapping, confirmation of existing polygons, exact black
+count, revised seven-body fitting inventory, full-necklace count or index graph.
+Both H1/H2 remain tentative. Original twelve observations and D/B separation remain.
+
+Saved photo2/local-surface-review-r130.json with source hashes, original answer,
+R131 follow-up, tentative classification and count semantics. The question file,
+experiment interpretation, methods, plan and handoff reference that annotation.
+R126–R128 numerical reports, including their historical pending question field,
+remain frozen; the new review supersedes the old status. Reused the tracked
+question image; no new render, polygon, color label, neighbor relation or index.
+
+Stop after saving this feedback. Next bounded task: compare constraints from
+clearer visible surfaces away from this shadowed junction to address C/F's shape
+or correspondence mismatch, then choose a targeted implementation. Do not repeat
+Q126.1 without new evidence or propagate the full ring yet. Recommend gpt-6-astra /
+High; stay in this session, no /new. Integrity checks and scoped publication follow.
+
+
+### R130–R131 integrity checks
+
+Passed: verbatim R130/R131 answers in question/log/annotation; source hashes;
+tentative non-bead classification without exact ownership or adjacent IDs; black
+count retained as a lower bound; append-only request history; 38 source/code/
+prior-artifact files byte-identical to HEAD; 98 local links; git diff --check.
+Only six Markdown documents and one review JSON change. No numerical test/render
+needed for this annotation-only step; no failed checks. Scoped commit/push and
+exact remote-tip/final-status verification follow this pre-delivery record.
