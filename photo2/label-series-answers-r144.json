@@ -1,0 +1,65 @@
+{
+  "request_ids": [
+    "R144",
+    "R145",
+    "R146",
+    "R147"
+  ],
+  "snapshots": {
+    "photo2/manual-labels-r144.json": "ec40c84a7db8aacbdb6ef8bd4b80df66a6d9f404e77765b462d5fb47871423a8",
+    "photo2/manual-labels-r146.json": "94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de"
+  },
+  "corrected_revision": 162,
+  "Q144_1": {
+    "question": "Were d1 10\u219212 and d2 2\u21929 two-step jumps through 11 and 5?",
+    "maker_reply_R145": "do you want me to fix this issue?",
+    "maker_reply_R146": "OK, i fixed both those problems",
+    "corrected_series": [
+      {
+        "direction": "d1",
+        "bead_numbers": [
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "direction": "d2",
+        "bead_numbers": [
+          2,
+          5,
+          9,
+          12
+        ]
+      }
+    ],
+    "status": "Corrected by maker in saved series"
+  },
+  "Q144_2": {
+    "question": "Do maker beads 22/20/23 correspond to old B/C/G?",
+    "maker_reply_R147": "yes",
+    "confirmed_aliases": {
+      "B": {
+        "maker_number": 22,
+        "stable_id": "8da52395-5224-4d6a-834b-97f9484cfef1"
+      },
+      "C": {
+        "maker_number": 20,
+        "stable_id": "2ed70a3c-43a7-4634-a212-3612b8f6bc43"
+      },
+      "G": {
+        "maker_number": 23,
+        "stable_id": "f6351d9c-5893-4659-a222-120d86b52f22"
+      }
+    },
+    "status": "Maker-confirmed"
+  },
+  "unknowns": [
+    "6/7 assignment to d2/d3",
+    "positive full-string orientation",
+    "full-string origin",
+    "N/closure/repeat",
+    "maker colors"
+  ],
+  "other_aliases": "E/24, H/26, J/21 remain assistant spatial proposals; F unmapped"
+}

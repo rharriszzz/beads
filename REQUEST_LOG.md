@@ -1622,3 +1622,123 @@ prefix unchanged and whitespace/syntax checks pass. Fetched origin and verified
 HEAD/upstream 0/0 before publication. GUI opening was not attempted. Scripted
 app workflow rerun passes after adding multiple-pointer guarding/loading control;
 this does not change the stated real-browser limitation.
+
+## R142 — Launch reports occupied port and unavailable Linux browser (2026-09-29)
+
+Maker ran the default labeler: “[Errno 98] Address already in use”, then ran
+`.venv/bin/python photo2/label_beads.py --port 4000`, which printed
+`Bead labeler: http://127.0.0.1:4000/` and the ignored annotations path.
+`xdg-open` reported missing x-www-browser/firefox/iceweasel/seamonkey/mozilla/
+epiphany/konqueror/chromium/chromium-browser/google-chrome/www-browser/links2/
+elinks/links/lynx/w3m, ending “no method available for opening
+'http://127.0.0.1:4000/'”. The server had started; advised manual browser URL.
+
+Preflight detects daisy WSL2 and powershell.exe in Windows interop PATH. Three
+approaches presented: manual URL, Windows launcher from WSL, Linux browser install.
+Drafted Windows-launcher/quiet fallback and automatic default-port fallback while
+honoring explicit ports; added mock/temporary-port tests. Daemon restart and a
+later intentional interruption prevented verification from returning a result.
+These two source/test files remain uncommitted and unverified. No running maker
+server killed/restarted, browser launched by agent, dependency installed or change
+published. Preserve this unfinished scope; do not report the launch fix complete.
+
+## R143 — Check that saving created a file (2026-09-29)
+
+User, verbatim: “I ran the labeller, and clicked save.  Can you see a new file?”
+
+Read ignored photo2/output/labeler/annotations.json and its previous backup.
+Revision 149 contains 27 unique numbers 1–27 and 19 completed series: nine d1,
+five d2, five d3. Reported file/counts to maker. No live file edited.
+
+## R144 — Extract information from maker labels and series (2026-09-29)
+
+User, verbatim: “Can you extract any useful information from the labels and series?”
+
+This explicit request shifts the bounded task to graph/evidence extraction,
+preserving unfinished startup changes separately. Read handoff/plan/latest requests,
+AGENTS, quick shape model and relevant boundary/neighbor evidence. Preflight daisy,
+e77f8a5, photo-2-reconstruction-v2, upstream 0/0, no stashes; two unrelated startup
+files modified. Presented graph/cycle checks, local location lattice and model
+placement/projection. Selected graph checks with raw-location diagnostic review.
+
+Preserved exact revision-149 bytes in photo2/manual-labels-r144.json, SHA-256
+`ec40c84a7db8aacbdb6ef8bd4b80df66a6d9f404e77765b462d5fb47871423a8`.
+Original image hash stays
+`eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb`.
+27 bodies/52 links, one component, cycle rank 26. Under d1=(1,0), d2=(0,1),
+d3=(−1,1), no consistent chart with 0/1 omitted links; exactly one among all
+1,326 two-link omissions: d1 10→12 and d2 2→9. Remaining 50 links connect all
+27 bodies consistently. Independent recorded paths imply two-step jumps through
+11 and 5. Source-context crops support these proposals; displayed and asked
+Q144.1 instead of silently changing series/step counts.
+
+## R145 — Offer to correct skipped clicks (2026-09-29)
+
+User, verbatim: “do you want me to fix this issue?”
+
+Requested d1 10→11→12 and d2 2→5→9→12, retaining original 9→12 connection.
+Continued independent extraction; did not edit the maker's live annotation file.
+
+## R146 — Maker corrects both series (2026-09-29)
+
+User, verbatim: “OK, i fixed both those problems”
+
+Read revision 162; both requested series present. Preserved exact bytes in
+photo2/manual-labels-r146.json, SHA-256
+`94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de`.
+All 27 annotation records and source metadata unchanged. Still 19 completed
+series; now 54 links, one component, zero omissions, 28 independent cycles close.
+Coordinates identical to conditional chart from original save. All 28 triangle
+counts are (1,−1,1), with independent edge-incidence rank 28. Q144.1 answered.
+
+Six bodies have complete recorded ±d1/±d2/±d3 sets: 5,8,11,14,17,20. Proposed
+seven-body fitting seed around 20: 16/17/19/20/21/22/23. Graph implies unrecorded
+3→6 d2 and 25→26 d3; retain as proposals, not independent or maker-added evidence.
+
+Old rough polygons tentatively contain B/22,C/20,G/23,E/24,H/26,J/21; F none.
+Displayed raw/numbered/historical-polygon context and asked Q144.2 only about
+B/C/G identity. No new boundary acceptance or physical-center claim.
+
+## R147 — Confirm B/C/G correspondence (2026-09-29)
+
+User, verbatim: “yes”
+
+Answers Q144.2: maker 22=B,20=C,23=G. C→B is recorded d3 and C→G is d2, matching
+earlier coupled 6/7 observation. E/24,H/26,J/21 remain tentative. Neither 6/7
+assignment nor string-index sign/origin supplied. Machine-readable answer record
+photo2/label-series-answers-r144.json and illustrated verbatim question file
+preserve maker facts separately from graph proposals.
+
+### R144–R147 result, tests and stopping point
+
+Integer discussion chart rooted at maker1 supports relative index candidates:
+d1/d2/d3=(+1,+7,+6) or (−1,+6,+7), plus global reversals. Relative offsets are
+reported for every numbered body with C=20 as unknown full-index origin K.
+Candidate spans 68/66 index positions with 27 named bodies leave unknown slots;
+these are not invisible-bead counts, N/closure, recovered colors or a repeat.
+
+Added reproducible photo2/analyze_label_series.py, bounded to at most two excluded
+links and 200 links, with preserved reports, raw/labeled charts and question images.
+Four tests pass: known synthetic coordinates/signed candidates; synthetic omitted
+clicks/input preservation; contradictions/disconnected bodies; original/corrected
+maker saves including unchanged positions and exact cycle/jump results. No socket,
+GUI, dependency installation, numerical 3D fit or delegation needed. Syntax and
+scoped integrity checks follow. Updated plan/methods/handoff with current stage,
+all answered label-series questions and separately unfinished startup files.
+
+Stop at graph extraction and scoped delivery. Next: compare two family/helicity
+interpretations on seven-body C neighborhood, respecting surface anchors, camera
+uncertainty and G image holdout. Recommend gpt-6.1-sol / High; no /new required.
+Do not mix unverified startup changes into this commit or claim a clean worktree.
+
+R144–R147 integrity outcome: both reports recompute exactly from preserved saves;
+annotation/source/script/historical-polygon hashes match; all 54 corrected edge
+vectors and all four signed offset candidates pass independent checks. Original
+27 annotation records unchanged; independent triangle incidence rank 28. Thirteen
+prior source/evidence files unchanged, 116 local documentation links valid,
+request history remains append-only; syntax/whitespace pass. A first integrity
+harness comparison needed normalization of Python tuple vectors to JSON lists;
+normalized recomputation passes without changing analysis data or assumptions.
+Live save remains revision 162 and was read only. Pending launcher/test file
+hashes preserved; no claim of startup verification or clean worktree. Scoped
+analysis publication and exact remote-tip verification follow.

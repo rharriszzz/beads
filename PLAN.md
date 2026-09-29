@@ -11,31 +11,34 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R138–R141: numbered locations and direction series
+## Current task — R144–R147: extract the maker's local neighbor chart
 
-The requested [raw-photo labeler](photo2/LABELER.md) now lets the maker place each
-bead by hand, assign a unique number, then Start a d1/d2/d3 series, click existing
-beads in order and End it. Arrows and the sidebar show click order. Renumbering
-preserves stable-ID series references; saving/undo cover locations and series.
+[Maker-series analysis](photo2/LABEL_SERIES.md) completes this bounded step.
+Corrected save revision 162 contains 27 numbered locations, 19 series and 54
+links in one connected graph. All 28 independent cycles close; all 28 triangles
+agree on d2=d1+d3. Six beads have complete six-neighbor sets. The maker corrected
+two skipped clicks and confirms B=22, C=20, G=23. Original/corrected snapshots,
+source hashes, figures and four passing synthetic/real-data tests are preserved.
 
-[Q138.1 and Q139.1](photo2/LABELER_QUESTIONS.md) are answered. R140–R141 clarify
-d3 as down to up clockwise, equivalently up to down counterclockwise; d2 remains
-up to down clockwise. No d2/d3 mapping to 6/7 or numerical signs is supplied.
+Integer chart d1=(1,0), d2=(0,1), d3=(−1,1) provides discussion coordinates.
+Two 6/7 assignments remain, plus global reversal; full-string origin/N/repeat
+and colors are not recovered. No 3D fit or whole-necklace walk in this step.
 
-**Stopping point:** the program and automated verification are complete for this
-bounded step. Real graphical-browser interaction is unverified in this environment.
-**Next task:** the maker runs the program and supplies numbered patch/series
-annotations; review those before resuming numerical chart comparison.
+**Next bounded task:** compare the two family/helicity interpretations using
+seven-body star 16/17/19/20/21/22/23 around C=20, treating maker points as visible
+surface anchors. Keep G's pixels withheld from continuous fitting; use its graph
+relation. No supplied camera elevation or acceptance of old BC=1 charts.
+[Answered review questions](photo2/LABEL_SERIES_QUESTIONS.md).
 
-This collects manual evidence for local geometry/neighbors (stage 1). No old
-assistant markers are preloaded; unique numbers are not accepted as string indices.
-The coupled BC/CG alternatives and unknown signs remain preserved for later analysis.
+The [labeler](photo2/LABELER.md) remains usable. Separate launch/port changes in
+photo2/label_beads.py and its tests are uncommitted/unverified after interruption;
+this analysis preserves them without mixing them into its publication.
 
 ## Where this sits in the overall solution
 
 | Stage | Purpose | Status |
 | --- | --- | --- |
-| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** Numbered maker locations/series program ready; awaiting annotations, coupled 6/7 families/signs unresolved |
+| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** 27-body maker graph consistent; seven-body fitting seed available, 6/7 choice and geometry unresolved |
 | 2. Whole-necklace coverage and indexing | Follow supported central bodies around the loop; preserve gaps; resolve string indices and closure/N | Not started from an accepted local chart |
 | 3. Shortest repeating pattern | Combine verified indices and uncertain colors; test repeat divisors with conflict witnesses | Waiting for stage 2 |
 | 4. Rendered appearance | Fit POV-Ray materials, lights and camera; compare against the photo | Local rendering calibrated, final appearance recovery pending |

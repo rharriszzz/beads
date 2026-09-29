@@ -99,6 +99,12 @@ locations, colors, closure, total bead count, repeat or resolved string indices.
 
 ## Verification and stopping point
 
+R143–R147: the maker ran the labeler, saved 27 locations and 19 direction series,
+and corrected two series in the app. [The resulting graph analysis](LABEL_SERIES.md)
+provides manual workflow evidence and a seven-body seed for projection fitting.
+The automated graphical-browser limitation below remains unchanged.
+
+
 Eight Python tests pass, covering raw crop/EXIF geometry, original-coordinate
 save/reload, ordered series and renumbering, invalid/dangling references and
 duplicate-number rejection, source/backup protection, stale revisions and real

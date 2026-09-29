@@ -644,6 +644,17 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R144–R147 maker graph extraction:** [exact cycle propagation](photo2/LABEL_SERIES.md)
+turns completed series into a connected discussion lattice, preserving UUIDs,
+maker numbers and unknown full indices. Twenty-eight corrected triangle/cycle
+checks support d2=d1+d3 on 27 bodies/54 links. A bounded exhaustive omission audit
+localized two skipped clicks; maker corrections are preserved alongside originals.
+B=22,C=20,G=23 confirmed; six complete neighbor stars provide a seven-body fitting
+seed around C. Two 6/7 choices plus global reversal remain. Treat graph-implied
+unrecorded edges as proposals and hand-picked anchors as visible-surface locations,
+not physical centers or automatic runtime coordinates. Synthetic known-chart,
+skipped-step and contradiction tests guard inverse claims.
+
 **R138–R141 interactive maker labeling:** [local raw-photo editor](photo2/LABELER.md)
 collects hand-picked anchors, unique numbers and ordered d1/d2/d3 click series in
 original oriented source coordinates. Stable IDs preserve paths on renumbering;

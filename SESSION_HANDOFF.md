@@ -1,6 +1,44 @@
 # Beads session handoff — new branch
 
-## Current R138–R141 — Numbered bead locations and ordered direction series
+## Current R144–R147 — Maker graph analyzed and corrected
+
+Read [PLAN.md](PLAN.md), [analysis](photo2/LABEL_SERIES.md) and
+[answered illustrated questions](photo2/LABEL_SERIES_QUESTIONS.md). Maker revision
+149: 27 bodies/52 links. Exhaustive 0/1/2 exclusions finds a unique repair pair:
+d1 10→12 via 11 and d2 2→9 via 5. Maker fixes both (R146); read save revision 162
+with d1 10→11→12 and d2 2→5→9→12. All 27 positions/numbers/stable IDs unchanged.
+Curated original/corrected snapshots retain exact bytes/source hashes.
+
+Corrected graph: 19 series, 54 links, one connected component, 28 independent
+cycles pass; 28 triangles agree d2=d1+d3. Integer coordinates rooted at maker1:
+d1=(1,0), d2=(0,1), d3=(−1,1). Six recorded six-neighbor stars at 5/8/11/14/17/20.
+For 20: −d1=19,+d1=21,−d2=16,+d2=23,−d3=17,+d3=22. Maker R147 confirms
+B=22,C=20,G=23. Other E/24,H/26,J/21 matches are tentative, F unmapped.
+
+Two clockwise-positive weight choices: d1/d2/d3=(+1,+7,+6) or (−1,+6,+7), plus
+their global reversals. Only relative offset candidates, not resolved full-string
+indices. Unknown origin, N/closure/repeat, colors and edge bodies preserved.
+Graph-implied unrecorded 3→6 d2 and 25→26 d3 are proposals, not accepted evidence.
+
+Four synthetic/real-data tests pass. Reproduce with photo2/analyze_label_series.py;
+reports/figures under photo2/review/r144, corrected subfolder for current figures.
+No numerical geometry/material/camera fit, detector, dependency or delegation.
+Live ignored annotations are never edited by analysis.
+
+**Next bounded task:** compare two family/helicity models on seven-body patch
+16/17/19/20/21/22/23 around C=20. Keep G's pixels held out from continuous fitting,
+use its graph relation. Preserve Q135.1 pending and old BC=1 charts as controls.
+Stop at graph delivery this turn. Recommend gpt-6.1-sol / High; no /new needed.
+
+**Separate unfinished launch fix — R142:** WSL/Windows launcher and occupied-port
+fallback edits/tests remain in photo2/label_beads.py and photo2/test_label_beads.py.
+Verification was interrupted; no completed socket-test result or publication.
+Do not silently commit those unrelated edits with this analysis or claim a clean
+working tree. Current preflight daisy, e77f8a5, branch photo-2-reconstruction-v2,
+upstream 0/0, no stashes. R143 confirmed the live saved file; R144 shifts this
+bounded step to evidence extraction. The graph publication is scoped separately.
+
+## Prior R138–R141 — Numbered bead locations and ordered direction series
 
 The maker requested a raw wider-photo labeling program, then supplied unique
 numbers and Start/click/End direction series. [Q138.1 and Q139.1](photo2/LABELER_QUESTIONS.md)
