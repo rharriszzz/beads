@@ -1,6 +1,34 @@
 # Beads session handoff — new branch
 
-## Current R144–R147 — Maker graph analyzed and corrected
+## Current R148 — Launcher fixed and verified
+
+User: “fix the launcher, please.” Completes the separate interrupted R142 work.
+Preflight daisy/WSL2, photo-2-reconstruction-v2, 79d8ef9, upstream 0/0, no stashes,
+only launcher/source tests modified. Graph analysis 79d8ef9 was pushed and exact
+remote tip verified before launcher completion.
+
+Read [labeler instructions](photo2/LABELER.md). Normal run remains
+`.venv/bin/python photo2/label_beads.py`. Stop the existing server with Ctrl+C
+before restarting to load new Python code. On WSL use wslview, then PowerShell;
+missing/failing/timed-out launchers yield a quiet manual URL. Default busy 8765
+falls back to an OS-selected free port; explicit --port is honored, --port 0 asks
+for a free port. Bind permission errors do not cause fallback. --no-browser skips
+launch. Browser-launch exceptions/timeouts leave server available. No dependency
+installation or actual GUI opening by agent/tests; Windows spawning is mocked.
+
+Thirteen Python tests pass, including real HTTP/data preservation and five startup
+checks with temporary sockets/mocked launchers. Syntax/whitespace pass. Source
+image, live annotations, saved original/corrected evidence and graph artifacts
+preserved. Only launcher/tests and status/instructions included in this fix.
+No numerical fit or graph changes. The earlier pending launcher note below is
+historical and superseded by this completed step.
+
+**Stopping point:** deliver launcher fix. **Next task:** maker reruns it, then
+compare the two family/helicity models on seven-body C neighborhood described
+below. Keep unknown 6/7 choice, global orientation, full-string origin and N/repeat.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior R144–R147 — Maker graph analyzed and corrected
 
 Read [PLAN.md](PLAN.md), [analysis](photo2/LABEL_SERIES.md) and
 [answered illustrated questions](photo2/LABEL_SERIES_QUESTIONS.md). Maker revision
@@ -30,7 +58,7 @@ Live ignored annotations are never edited by analysis.
 use its graph relation. Preserve Q135.1 pending and old BC=1 charts as controls.
 Stop at graph delivery this turn. Recommend gpt-6.1-sol / High; no /new needed.
 
-**Separate unfinished launch fix — R142:** WSL/Windows launcher and occupied-port
+**Historical launcher draft at the graph-only checkpoint — R142:** WSL/Windows launcher and occupied-port
 fallback edits/tests remain in photo2/label_beads.py and photo2/test_label_beads.py.
 Verification was interrupted; no completed socket-test result or publication.
 Do not silently commit those unrelated edits with this analysis or claim a clean

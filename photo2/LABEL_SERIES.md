@@ -160,5 +160,5 @@ task:** compare the two family/helicity interpretations using the seven-body pat
 and Python/POV projection, with source points treated as visible-surface anchors
 and no assumed camera elevation. Retain all unknown indices and excluded edge
 regions. No 3D fitting occurred here. Recommend gpt-6.1-sol / High, same session;
-no /new needed. The separate launch fixes remain uncommitted and unverified after
-interruption; this analysis does not publish or claim completion of that work.
+no /new needed. The separate launch work interrupted during this analysis is now completed in
+R148; see [launcher instructions and verification](LABELER.md).

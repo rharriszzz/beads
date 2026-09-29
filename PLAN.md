@@ -11,7 +11,19 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R144–R147: extract the maker's local neighbor chart
+## Current task — R148: launcher fix complete
+
+The maker explicitly requests completion of the interrupted launch fix. The
+[labeler](photo2/LABELER.md) now selects a free port when default 8765 is busy,
+honors explicit ports, and tries Windows browser launchers on WSL. Missing or
+failed launchers yield a quiet manual URL. Thirteen Python tests pass; actual
+Windows browser selection is mocked in those tests. Existing annotations and
+graph artifacts are preserved. Stop after scoped launcher delivery.
+
+**Next task:** maker stops/restarts the server to use the new launcher, then return
+to the seven-body family/projection comparison below. No geometry work in this fix.
+
+## Prior task — R144–R147: extract the maker's local neighbor chart
 
 [Maker-series analysis](photo2/LABEL_SERIES.md) completes this bounded step.
 Corrected save revision 162 contains 27 numbered locations, 19 series and 54
@@ -30,9 +42,8 @@ surface anchors. Keep G's pixels withheld from continuous fitting; use its graph
 relation. No supplied camera elevation or acceptance of old BC=1 charts.
 [Answered review questions](photo2/LABEL_SERIES_QUESTIONS.md).
 
-The [labeler](photo2/LABELER.md) remains usable. Separate launch/port changes in
-photo2/label_beads.py and its tests are uncommitted/unverified after interruption;
-this analysis preserves them without mixing them into its publication.
+The [labeler](photo2/LABELER.md) remains usable; separate launch/port changes were
+completed and verified in R148, after the graph analysis was published separately.
 
 ## Where this sits in the overall solution
 

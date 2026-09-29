@@ -1,14 +1,80 @@
+import errno
 import json
+import subprocess
 from io import BytesIO
 from pathlib import Path
 import tempfile
 import threading
+from types import SimpleNamespace
 import unittest
+from unittest.mock import patch
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 from PIL import Image
-from label_beads import AnnotationError, LabelStore, SaveConflict, make_server
+import label_beads
+from label_beads import AnnotationError, LabelStore, SaveConflict, make_server, open_browser, start_server
+
+
+class StartupTests(unittest.TestCase):
+    def test_busy_default_uses_a_free_port_but_explicit_port_is_honored(self):
+        occupied = make_server(None, port=0)
+        self.addCleanup(occupied.server_close)
+        with patch.object(label_beads, 'DEFAULT_PORT', occupied.server_port):
+            server = start_server(None)
+            self.addCleanup(server.server_close)
+            self.assertNotEqual(server.server_port, occupied.server_port)
+            with self.assertRaises(OSError) as error:
+                start_server(None, occupied.server_port)
+            self.assertEqual(error.exception.errno, errno.EADDRINUSE)
+            automatic = start_server(None, 0)
+            self.addCleanup(automatic.server_close)
+            self.assertGreater(automatic.server_port, 0)
+
+    def test_other_bind_errors_do_not_trigger_port_fallback(self):
+        with patch.object(label_beads, 'make_server', side_effect=PermissionError(errno.EACCES, 'denied')) as bind:
+            with self.assertRaises(PermissionError): start_server(None)
+            self.assertEqual(bind.call_count, 1)
+
+    def test_wsl_uses_windows_launcher_without_running_it_in_tests(self):
+        url = 'http://127.0.0.1:4000/'
+        find = lambda name: '/mock/powershell.exe' if name == 'powershell.exe' else None
+        with patch.object(label_beads.sys, 'platform', 'linux'), \
+             patch.object(label_beads.platform, 'release', return_value='6.18-microsoft-standard-WSL2'), \
+             patch.object(label_beads.shutil, 'which', side_effect=find), \
+             patch.object(label_beads.subprocess, 'run', return_value=SimpleNamespace(returncode=0)) as run, \
+             patch.object(label_beads.webbrowser, 'open') as browser:
+            self.assertTrue(open_browser(url))
+            self.assertEqual(run.call_args.args[0], ['/mock/powershell.exe', '-NoProfile', '-NonInteractive', '-Command', 'Start-Process', url])
+            browser.assert_not_called()
+            run.return_value = SimpleNamespace(returncode=1)
+            self.assertFalse(open_browser(url))
+            run.side_effect = OSError('Windows interop unavailable')
+            self.assertFalse(open_browser(url))
+
+    def test_missing_launchers_return_manual_fallback_without_xdg_open(self):
+        with patch.object(label_beads.sys, 'platform', 'linux'), \
+             patch.object(label_beads.shutil, 'which', return_value=None), \
+             patch.dict(label_beads.os.environ, {}, clear=True), \
+             patch.object(label_beads.webbrowser, 'open') as browser, \
+             patch.object(label_beads.subprocess, 'run') as run:
+            for kernel in ['6.18-microsoft-standard-WSL2', '6.18-generic']:
+                with patch.object(label_beads.platform, 'release', return_value=kernel):
+                    self.assertFalse(open_browser('http://127.0.0.1:4000/'))
+            browser.assert_not_called()
+            run.assert_not_called()
+
+    def test_wslview_failure_or_timeout_tries_windows_browser(self):
+        with patch.object(label_beads.sys, 'platform', 'linux'), \
+             patch.object(label_beads.platform, 'release', return_value='microsoft-WSL2'), \
+             patch.object(label_beads.shutil, 'which', side_effect=lambda name: '/mock/' + name), \
+             patch.object(label_beads.subprocess, 'run') as run:
+            for failure in [SimpleNamespace(returncode=1), subprocess.TimeoutExpired('wslview', 5)]:
+                run.reset_mock()
+                run.side_effect = [failure, SimpleNamespace(returncode=0)]
+                self.assertTrue(open_browser('http://127.0.0.1:4000/'))
+                self.assertEqual(run.call_args_list[0].args[0][0], '/mock/wslview')
+                self.assertEqual(run.call_args_list[1].args[0][0], '/mock/powershell.exe')
 
 
 class LabelStoreTests(unittest.TestCase):

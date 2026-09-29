@@ -660,7 +660,9 @@ collects hand-picked anchors, unique numbers and ordered d1/d2/d3 click series i
 original oriented source coordinates. Stable IDs preserve paths on renumbering;
 revision-checked saving and undo cover both locations and series. d2 is up to down
 clockwise; d3 is down to up clockwise, equivalently up to down counterclockwise.
-No d2/d3 mapping to 6/7, signs or verified step counts is inferred. The diagnostic
+No d2/d3 mapping to 6/7, signs or verified step counts is inferred. R148 adds
+WSL Windows-browser launch with a quiet manual URL fallback and automatic selection
+of a free port when the default is busy; explicit ports are honored. The diagnostic
 viewing crop is explicit, with no assistant coordinates/colors imported. Manual
 numbers require reconciliation with observation IDs before bead_index/coverage
 claims. This evidence collection task supersedes another numerical chart comparison.

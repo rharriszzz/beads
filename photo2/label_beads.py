@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime, timezone
+import errno
 import hashlib
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from io import BytesIO
@@ -10,6 +11,10 @@ import json
 import math
 import os
 from pathlib import Path
+import platform
+import shutil
+import subprocess
+import sys
 import tempfile
 import threading
 from urllib.parse import urlsplit
@@ -21,6 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = Path(__file__).with_name('labeler')
 DEFAULT_IMAGE = ROOT / 'beads-photo-2.jpg'
 DEFAULT_CROP = (1180, 130, 1540, 520)
+DEFAULT_PORT = 8765
 DIRECTIONS = {
     'd1': 'plus or minus 1 direction',
     'd2': 'up to down while proceeding clockwise around the bracelet (according to the major diameter of the torus)',
@@ -250,15 +256,58 @@ def make_server(store, host='127.0.0.1', port=8765):
     return ThreadingHTTPServer((host, port), Handler)
 
 
+def start_server(store, port=None):
+    """Honor explicit ports; let the OS find a free port if the default is busy."""
+    try:
+        return make_server(store, port=DEFAULT_PORT if port is None else port)
+    except OSError as exc:
+        if port is not None or exc.errno != errno.EADDRINUSE:
+            raise
+        return make_server(store, port=0)
+
+
+def open_browser(url):
+    """Use Windows' default browser on WSL, avoiding headless xdg-open noise."""
+    if sys.platform.startswith('linux'):
+        if 'microsoft' in platform.release().lower():
+            launcher = shutil.which('wslview')
+            powershell = shutil.which('powershell.exe')
+            commands = []
+            if launcher:
+                commands.append([launcher, url])
+            if powershell:
+                commands.append([powershell, '-NoProfile', '-NonInteractive',
+                                 '-Command', 'Start-Process', url])
+            for command in commands:
+                try:
+                    result = subprocess.run(command, stdout=subprocess.DEVNULL,
+                                            stderr=subprocess.DEVNULL, timeout=5, check=False)
+                    if result.returncode == 0:
+                        return True
+                except (OSError, subprocess.TimeoutExpired):
+                    continue
+            return False
+        browsers = ('firefox', 'chromium', 'chromium-browser', 'google-chrome',
+                    'google-chrome-stable', 'brave-browser', 'microsoft-edge')
+        if not os.environ.get('BROWSER') and not any(shutil.which(name) for name in browsers):
+            return False
+    try:
+        return webbrowser.open(url)
+    except (OSError, webbrowser.Error):
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--image', type=Path, default=DEFAULT_IMAGE)
     parser.add_argument('--crop', nargs=4, type=int, metavar=('X0', 'Y0', 'X1', 'Y1'))
     parser.add_argument('--full-image', action='store_true')
     parser.add_argument('--annotations', type=Path, default=ROOT / 'photo2/output/labeler/annotations.json')
-    parser.add_argument('--port', type=int, default=8765)
+    parser.add_argument('--port', type=int, help='Listen on this port; 0 chooses a free port. Default: 8765, with automatic fallback if busy.')
     parser.add_argument('--no-browser', action='store_true')
     args = parser.parse_args()
+    if args.port is not None and not 0 <= args.port <= 65535:
+        parser.error('Port must be between 0 and 65535.')
     if args.full_image and args.crop:
         parser.error('Choose --full-image or --crop.')
     crop = args.crop
@@ -268,14 +317,18 @@ def main():
         store = LabelStore(args.image, crop, args.annotations)
         if store.path == store.image_path:
             parser.error('The annotations file must differ from the source image.')
-        server = make_server(store, port=args.port)
+        server = start_server(store, port=args.port)
     except (AnnotationError, OSError) as exc:
+        if isinstance(exc, OSError) and exc.errno == errno.EADDRINUSE:
+            parser.error(f'Port {args.port} is already in use. Choose another --port or use --port 0.')
         parser.error(str(exc))
     url = f'http://127.0.0.1:{server.server_port}/'
+    if args.port is None and server.server_port != DEFAULT_PORT:
+        print(f'Port {DEFAULT_PORT} is busy; using an available port instead.', flush=True)
     print(f'Bead labeler: {url}\nAnnotations: {store.path}\nCtrl+C stops the server.', flush=True)
-    if not args.no_browser:
-        webbrowser.open(url)
     try:
+        if not args.no_browser and not open_browser(url):
+            print(f'Open this URL in your browser manually: {url}', flush=True)
         server.serve_forever()
     except KeyboardInterrupt:
         pass

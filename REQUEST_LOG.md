@@ -1742,3 +1742,46 @@ normalized recomputation passes without changing analysis data or assumptions.
 Live save remains revision 162 and was read only. Pending launcher/test file
 hashes preserved; no claim of startup verification or clean worktree. Scoped
 analysis publication and exact remote-tip verification follow.
+
+## R148 — Complete the launcher fix (2026-09-29)
+
+User, verbatim: “fix the launcher, please.”
+
+Explicitly completes interrupted R142 startup work after separate graph analysis.
+Verified graph commit 79d8ef934b199ea946490bc4591e2b47ccf52362 pushed and exact
+remote tip matching; only two launcher/test drafts remained modified. Preflight
+daisy WSL2, photo-2-reconstruction-v2, upstream 0/0, no stashes.
+
+Completed OS-selected free-port fallback when default 8765 is occupied. Explicit
+ports are honored; busy explicit ports explain another port/--port 0. Port range
+0–65535 validated. Non-address bind errors propagate instead of trying other
+ports. Actual port is printed. Existing annotation source/path/crop unchanged.
+
+On WSL, try wslview then powershell.exe Start-Process for the Windows browser.
+Known daisy interop PATH includes PowerShell. Launches use argument arrays,
+quiet stdout/stderr, five-second timeouts per candidate; missing/failed/timed-out
+launchers produce a manual URL. Non-WSL Linux without a configured/known browser
+skips noisy xdg-open probing. --no-browser skips opening. Ctrl+C/close handling
+covers both launch and serve lifetime. No actual browser launched by agent/tests,
+existing maker server killed/restarted, dependency installed or live data edited.
+
+All thirteen Python labeler tests pass, including actual ephemeral occupied-port
+fallback/explicit-port behavior and real loopback HTTP image/save/reload/conflict.
+Five startup tests also cover permission errors, mock Windows launcher selection,
+missing launchers and wslview failure/timeout fallback to PowerShell. This run
+returns a completed result, unlike interrupted R142 attempts. Tests use temporary
+files/sockets and mock browser spawning; GUI launch itself remains for maker's
+normal run. Syntax checks pass. Runtime instructions, plan and handoff updated;
+prior graph report/series identities/relative candidates not changed.
+
+Stop at launcher delivery. Next: stop the old server with Ctrl+C and run the normal
+command to load the fixed launcher, then resume seven-body model comparison in
+a separate bounded step. Recommend gpt-6.1-sol / High, same session; no /new needed.
+Scoped preservation/whitespace checks and commit/push verification follow.
+
+R148 integrity outcome: nineteen source/curated graph/UI files unchanged; core
+annotation validation, atomic persistence, LabelStore and HTTP handler ASTs match
+the committed versions. Live annotations remain revision 162 with exact SHA-256
+`94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de`.
+Append-only log and 116 local documentation links pass. Syntax/help/whitespace
+checks pass. Refreshed origin before scoped publication; no other task advanced.

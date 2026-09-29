@@ -1,4 +1,4 @@
-# Interactive bead labeler — R138–R141
+# Interactive bead labeler — R138–R148
 
 From the repository root:
 
@@ -6,9 +6,17 @@ From the repository root:
 .venv/bin/python photo2/label_beads.py
 ```
 
-Open the printed local URL (normally `http://127.0.0.1:8765/`) if the browser does
-not open. Keep the terminal running; Ctrl+C stops the server. The default view
-is the original photograph's EXIF-oriented wider raw crop x1180–1540, y130–520,
+On WSL, the launcher opens the Windows browser using `wslview` when available,
+then PowerShell if needed. If launching fails, it quietly prints the URL to open
+manually. On a Linux machine without a browser, it also gives the manual URL.
+Keep the terminal running; Ctrl+C stops the server.
+
+The default port is 8765. If it is occupied, the program asks the OS for a free
+port and prints the actual URL. An explicit `--port 4000` is honored and gives a
+clear error if busy; `--port 0` explicitly requests a free port. `--no-browser`
+skips automatic opening. No browser installation is required for WSL launching.
+
+The default view is the original photograph's EXIF-oriented wider raw crop x1180–1540, y130–520,
 360×390 pixels. No existing B/C/G annotations are loaded. Installed Pillow is
 the only third-party runtime dependency.
 
@@ -104,11 +112,13 @@ and corrected two series in the app. [The resulting graph analysis](LABEL_SERIES
 provides manual workflow evidence and a seven-body seed for projection fitting.
 The automated graphical-browser limitation below remains unchanged.
 
-
-Eight Python tests pass, covering raw crop/EXIF geometry, original-coordinate
+Thirteen Python tests pass, covering raw crop/EXIF geometry, original-coordinate
 save/reload, ordered series and renumbering, invalid/dangling references and
 duplicate-number rejection, source/backup protection, stale revisions and real
-HTTP image/save/reload/conflict. Six JavaScript model tests cover coordinates,
+HTTP image/save/reload/conflict. Five launch tests cover actual temporary occupied-
+port fallback, explicit port/zero behavior, non-port bind errors, mocked Windows
+launching, absent launchers and timeout/failure fallback from wslview to PowerShell.
+No real browser is opened by the tests. Six JavaScript model tests cover coordinates,
 number validation, click snapping, series transitions and identity/history.
 One scripted application test uses the real UI handlers with a minimal DOM/canvas
 adapter to place beads, reject a duplicate, click/end a d3 series, renumber, undo
@@ -123,6 +133,7 @@ node photo2/labeler/test_app.mjs
 node --check photo2/labeler/app.mjs
 ```
 
-Stop at the numbered-location/series program. Next task: the maker runs it and
-labels the raw patch; then review that evidence before resuming neighbor fitting.
+The graph review is complete and the R148 launcher fix is delivered. Stop an
+existing server with Ctrl+C, then rerun the normal command to load the fix. Next
+analysis task: compare the two relative-index families on the seven-body patch.
 Recommend gpt-6.1-sol / High; stay in this session, no /new required.
