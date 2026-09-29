@@ -10,6 +10,35 @@
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
 
+## R116 — Start from clear non-black bodies away from the edge
+
+Maker suggests these bodies may already provide everything needed. Treat this
+as a sufficiency hypothesis and an inference priority: do not require black/edge
+body resolution before useful structure work. All twelve R114 observation IDs
+remain accounted for, with R115's D/B separation preserved. No new indices,
+pigment labels, count or recovered pattern are claimed.
+
+Reviewed the existing raw/labeled crop. B/C/G are an assistant shortlist of broad
+colored faces; E/F/H/J are dark and A/K/D/I/L are conservatively deferred from
+the initial anchors for edge proximity/partial exposure/fragment uncertainty.
+This is diagnostic selection, not maker labels or a final automatic selector.
+No new coordinates or numerical measurements. The old C/E/G triangle stays as
+conditional history, not a requirement to decode black E first.
+
+Compared I1 clear-anchor graph, B3 repeated displacements, I3 row tracking with
+gaps and I2 local 3D fitting. Use I1+B3 first; only escalate for a concrete
+ambiguity. Next bounded task: test the clear subset's local index constraints,
+withhold a clear body/relation and check the sparse procedure on known synthetic
+truth. If needed, seek additional clear bodies nearby; preserve skipped positions
+and unresolved offsets. Stop at a small illustrated review before full-ring work.
+Both FFT explorations remain pending with optional adoption. R116 changes work
+order, not the eventual coverage accounting or exact-count/repeat checkpoints.
+
+This turn saves the guidance, candidate shortlist and revised procedure/plan;
+no inference implementation or new experiment. Clean 41bfe19 on daisy,
+photo-2-reconstruction-v2, no stashes; fetched/upstream0/0. Recommend gpt-6-astra /
+High; stay for discussion, optional fresh /new for the next numerical test.
+
 ## R115 — Maker confirms D is separate from B
 
 Maker: “Yes, D is separate from B.  Being closer to the edge, everything about

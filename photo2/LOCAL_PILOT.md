@@ -10,6 +10,18 @@ proximity to the edge makes everything about D harder to establish. The
 D's boundary, sampling support, pigment and index remain uncertain. Stop after
 recording this feedback; the next numerical step has not begun.
 
+**R116 priority update:** the maker suggests the clearest non-black bodies away
+from the necklace edge may be enough. In the labeled inventory below, B/C/G are
+assistant-selected starting candidates with broad colored faces; their selection
+is not a new maker confirmation or a claim of exact centers. First test what
+those anchors, plus any needed nearby clear bodies, constrain. A/K/D/I/L are
+deferred from this conservative starting set because of edge proximity, partial
+exposure or fragment uncertainty; E/F/H/J because of dark appearance. Deferral
+does not remove any observation, establish its pigment, or resolve an index.
+No numerical threshold for edge distance or color is introduced. The original
+C/E/G triangle remains historical conditional evidence; black E is no longer a
+required anchor for the next attempt. See the [revised method choice](../METHODS.md#assign-bead_index-and-color-to-clearly-visible-beads).
+
 ## Scope and assistance
 
 ![Photo context and manual tangent](review/r114/context.png)
@@ -235,8 +247,9 @@ The final artifacts were visually inspected; numerical and reproduction checks
 are recorded in R114's request-log outcome.
 
 R115 records the maker's B/D answer and updates the interpretation of this
-observation set. Stop here. Next: select a bounded local geometry comparison
-for the 6/7 ambiguity, retaining D's edge-related uncertainty, before
+observation set. R116 changes the next priority to clear non-black interior
+anchors. Stop here. Next: test whether that subset constrains the local index
+structure, retaining skipped positions and D's edge-related uncertainty, before
 expanding indices. No full-ring count, pattern recovery or material fitting was
 attempted. Recommend gpt-6-astra / High; stay in this session for discussion,
 use a fresh /new for the next numerical experiment if desired.

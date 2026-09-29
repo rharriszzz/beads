@@ -3,9 +3,17 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
-## Active schedule after the R115 body review
+## Active schedule after the R116 clear-body guidance
 
-**R114 pilot and R115 B/D review recorded; stop after feedback.**
+**R116: begin with the clearest non-black bodies away from the necklace edge.**
+They may already constrain the local structure; test that possibility before
+spending more effort on D, black bodies or edge fragments. The four approaches
+and choice are recorded in [METHODS](METHODS.md#assign-bead_index-and-color-to-clearly-visible-beads):
+I1 graph with B3 repeated-displacement support first, I3/I2 as targeted alternatives.
+B/C/G are an assistant shortlist from the existing crop, not new maker labels
+or verified centers. Keep all twelve observations and unknown index slots.
+
+R114 pilot and R115 B/D review remain the evidence baseline.
 [Evidence and limitations](photo2/LOCAL_PILOT.md) and
 [maker's B/D answer](photo2/LOCAL_PILOT_QUESTIONS.md) are available. D is separate
 from B; its proximity to the edge makes its other properties harder to establish.
@@ -14,9 +22,14 @@ separation from B, and unresolved region L. No accepted global indices or pigmen
 labels; D's boundary and sample purity remain uncertain. Two conditional C/E/G
 graphs remain consistent; the synthetic counterpart demonstrates that consistency
 can hide a 13-index error. C1 photo appearance groups remain shading-sensitive.
-Next bounded task is to present 3–6 local geometry comparison methods, then select
-and run a small comparison to distinguish 6/7 families. Retain D's uncertain
-attributes; its confirmed separation does not verify a neighbor edge or index.
+Next bounded task: test clear-body anchors and their relative-index alternatives
+on this short section, using an additional clear body/relation as a held-out check
+and a known synthetic counterpart. Compare spatial displacements and supported
+neighbors without requiring black or edge bodies to be resolved. If the subset
+is insufficient, seek additional clear bodies nearby and retain unknown offsets;
+do not force successive selected bodies into consecutive string indices. Retain
+D's uncertain attributes; its confirmed separation does not verify an index.
+Deliver a small raw/anchor/alternative comparison and stop at local review.
 Do not expand around the ring or run later phases automatically.
 Stay here for discussion; gpt-6-astra / High, optional
 fresh /new for the next numerical experiment. The schedule below retains the
@@ -155,7 +168,7 @@ the algorithm's inputs. These generalization tests have not yet run.
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
 | Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | R115: ten proposed bodies, D confirmed distinct from B, L unresolved; D's edge/shape remain uncertain; no automatic detector or accepted outlines |
 | Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | R114 C1 appearance baseline splits red-looking surfaces; pigment/material fitting deferred |
-| Visible-bead indices and colors | Full-string bead_index plus observed palette ID, preserving missing/unknown states | R114 local pilot at review; conditional C/E/G index alternatives and twelve appearance summaries; global indices unresolved |
+| Visible-bead indices and colors | Full-string bead_index plus observed palette ID, preserving missing/unknown states | R116 prioritizes clear non-black interior bodies; R114 alternatives/summaries retained, global indices unresolved |
 | Helicity and spacings | Band-pass FFT peaks for directions 1/6/7; direction-1 angle relative to local centerline | R098/R109 maker method saved, width-scale window specified qualitatively; synthetic sign/convention validation pending |
 | Repeating pattern | Shortest compatible divisor of exact N, <400 and not divisible by 13; preserve ambiguity | R112 two methods documented; include candidates below rough 200 estimate; no photo-2 sequence established |
 

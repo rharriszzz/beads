@@ -48,6 +48,11 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   bead_index and color for every clearly visible body; keep observation IDs,
   local component indices and resolved full-string indices distinct. Unresolved
   visible bodies remain in coverage accounting instead of being dropped.
+  R116: start inference from the clearest non-black bodies away from the necklace
+  edge; they may suffice to constrain the structure. Do not make black/edge-body
+  resolution a prerequisite. Retain those observations and missing index slots;
+  test the clear subset's sufficiency instead of assuming it. For general runtime
+  selection use image-derived observability, not fixed color ranges/coordinates.
   R112: photo-2 repeat length is not divisible by 13; this is not a restriction
   on total bead count or generic synthetic tests. With verified exact N, test
   divisors for the shortest repeat compatible with all visible observations.

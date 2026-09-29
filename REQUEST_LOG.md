@@ -958,3 +958,56 @@ accounting; append-only request history; 24 source/artifact files byte-identical
 to HEAD; 73 local link paths; git diff --check. No runtime tests or renders needed
 for this review metadata/documentation change; no failed checks. Scoped six-file
 commit/push and exact remote-tip/final-status verification follow this record.
+
+## R116 — Prioritize clear non-black beads away from the edge (2026-09-28)
+
+User: “You might actually have all you need if you just manage to identify the most clear beads, those that are not black and are not to close to the edge.”
+
+Preflight daisy, clean41bfe19 on photo-2-reconstruction-v2, tracked upstream,
+no stashes; fetch succeeded/upstream0/0. Prior R115 push and exact remote-tip
+verification completed before this request. Read workflow/handoff/latest log,
+PLAN, index/color methods, prior-work quick model and local pilot/config/answer;
+visually inspected the tracked R114 raw/inventory panel. No dependencies,
+delegation, supplied usage/status or ownership transfer.
+
+### R116 outcome
+
+Accepted this as a change in inference priority and a sufficiency hypothesis:
+start from the clearest non-black bodies away from the necklace edge. Their
+structure may be enough; dark/edge-body resolution is not a prerequisite.
+All twelve observations and missing index positions remain in coverage accounting.
+R115's D/B separation and D's uncertain remaining attributes are unchanged.
+
+Shortlisted B/C/G from the existing illustration as assistant-selected starting
+anchors with broad colored faces. No new maker labels, exact centers, coordinates,
+thresholds or measurements. Conservatively defer E/F/H/J for dark appearance and
+A/K/D/I/L for edge proximity, partial exposure or fragment uncertainty; deferral
+neither removes them nor confirms their pigments. The R114 C/E/G triangle remains
+conditional history; black E is no longer a mandatory anchor for the next step.
+
+Compared four available approaches: I1 neighbor graph on clear anchors, B3
+repeated-displacement matching, I3 row tracking with gaps, and I2 local 3D fitting.
+Select I1+B3 first; use I3/I2 only where a concrete ambiguity warrants it. Preserve
+skipped bodies and multi-step index differences: consecutive selected observations
+must not be forced into consecutive string indices or immediate ±1/±6/±7 edges.
+Use image-derived observability for eventual runtime selection, not fixed red/
+yellow boxes or the diagnostic coordinates. Bright highlights alone are not clear
+non-black bodies. Local sufficiency does not establish exact N or a unique repeat.
+
+Updated AGENTS, METHODS, PLAN, handoff and pilot interpretation. Reused the
+already tracked raw/labeled image; no new question, image, inference code, render
+or experiment was needed for this guidance change. Stop after this prioritization.
+Next bounded task: test clear-body index constraints on a short section, with a
+held-out clear body/relation and known synthetic check; seek additional clear
+bodies nearby if needed. Stop at illustrated local review before ring expansion.
+Recommend gpt-6-astra / High; stay for discussion, optional fresh /new for numerical
+work. Both FFT explorations remain pending with optional adoption.
+
+### R116 checks
+
+Passed with Python3.12: exactly six Markdown-only changed files; append-only
+request log; shortlist/deferred groups account for all twelve original IDs once;
+25 source/artifact files unchanged byte-for-byte; 93 local link paths; git diff
+--check. No numerical tests or renders warranted for this priority/method update,
+no failed checks. Scoped publication and exact remote-tip/final-status verification
+follow this pre-delivery record.

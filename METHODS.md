@@ -651,6 +651,37 @@ global alignment. Photo RGB appearance clusters do not yet resolve pigments.
 The method catalog below remains a proposal for broader inference, not a claim
 of automatic detection or accepted photo indices.
 
+**R116 priority:** bootstrap from the clearest non-black bodies away from the
+necklace edge. The maker suggests these may already supply enough evidence.
+This is a proposed sufficient subset, not a claim that the current indices are
+resolved. Black and edge observations remain in coverage accounting, but their
+decoding is not a gate before testing the clearer bodies. R115 confirms D is
+separate from B without making D a reliable geometry or pigment anchor.
+
+| Clear-body approach | Role in the next local test |
+| --- | --- |
+| I1 neighbor graph on clear anchors | First choice: use supported immediate-neighbor edges; keep multiple labels when needed |
+| B3 repeated-displacement matching | Compare several clear-body pairs to find repeated arrangements; allow skipped bodies and projection effects |
+| I3 row tracking with gaps | Alternative if a slightly longer section supplies traceable chains; do not compress missing positions |
+| I2 local 3D fitting to clear exposed surfaces | Targeted fallback if graph/displacement evidence cannot distinguish phase or 6/7 families; difficult bodies need not be fitted first |
+
+Start with I1 plus B3 support. In the existing R114 review, B/C/G are assistant
+shortlist candidates with broad colored faces; not newly maker-labeled beads,
+verified physical centers or an automatic selection. Inspect a slightly wider
+local section for additional clear bodies if needed, before returning to D or
+black-body ambiguity. Hold out a clear observation or relation, preserve alternate
+assignments, and check the sparse procedure on a known synthetic counterpart.
+Two successive *selected* bodies need not be construction neighbors: any longer
+index difference must have its own support, not a forced ±1/±6/±7 label.
+
+Judge body separation, exposed interior support and distance from the uncertain
+necklace boundary together. A bright specular spot does not make a black bead
+a clear colored anchor. Fixed red/yellow rules and the saved B/C/G coordinates
+remain diagnostic assistance, not final runtime priors. Revisit difficult bodies
+after a supported structure exists, retaining inferred versus observed labels.
+Enough evidence for a local structure does not itself prove exact N or a unique
+full color repeat; those checkpoints retain their separate evidence requirements.
+
 R111 selects the next inference objective: every clearly visible bead should have
 a `bead_index` and a color. FFTs are **candidates to explore in two upstream uses**
 (background/shadow separation and bead directions/spacings/helicity), not a required
