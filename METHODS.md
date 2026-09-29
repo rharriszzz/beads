@@ -644,6 +644,15 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R150–R151 outward-point direction geometry:** [intrinsic angle calculation](photo2/DIRECTION_ANGLES.md)
+uses the outer-wall midpoint in the minor-radial direction, radius chain_minor
+plus bead_radius. Distinguish shortest unrolled minor arcs, 3D point chords and
+camera projection. Nominal local chord inclinations are 85.54°/47.72°/43.31° for
+directions 1/6/7; signed sides reverse with helicity. Explicit source row rounding
+and full-torus phase dependence prevent treating these as exact photo angles.
+Placement/outward-point checks validate the calculation; exposure and projected
+direction comparison remain separate, not automatic consequences of visibility.
+
 **R149 maker-point ownership comparison:** [positive-only surface fitting](photo2/MAKER_POINT_FIT.md)
 uses six confirmed locations around C, holds out G's location, and tests both
 6/7 families/helicities with all latent neighbors in first-hit occlusion. Loose

@@ -1,6 +1,33 @@
 # Beads session handoff — new branch
 
-## Current R149 — Maker-point family comparison complete
+## Current R150–R151 — Minor-outward direction angles
+
+Maker asks angles of directions 1/6/7 relative to centerline for both helicities,
+then emphasizes points farthest away in the minor-circle direction. Read
+[calculation](photo2/DIRECTION_ANGLES.md), [PLAN.md](PLAN.md) and reports/images
+under photo2/review/r150. Preflight daisy, photo-2-reconstruction-v2, dc942d7,
+upstream 0/0, no stashes, clean tree. Prior request/log/model read; no new fit.
+
+Use outer-wall midpoint per existing minor_outward_point: radius 4+R=6.110915749,
+not bead-center radius 4. Source literal bead radius 2.110915749, row advance
+2.881399997, nominal index pitch .443292307. Source h=+1 increases minor angle
+with index; h=−1 reverses minor progression. Positive centerline follows index.
+Local nominal 3D chord angles: +85.54°,−47.72°,+43.31° for +1/+6/+7; opposite
+helicity reverses signs. Unrolled reference angles: +85.71°,−48.00°,+43.59°.
+
+Calculator direction_angles.py also reports supplied N's row rounding and full
+torus chord ranges over section phase; N=672 default-source example is NOT photo N.
+Same bead size does not fix exact torus or image angles everywhere. Unknown
+camera/section pose and outward-point visibility remain. 24 local placement-angle
+and 10 full-torus outward-position checks pass. Source, live save and prior
+comparison preserved. No source geometry changed; no new test suite or rendering.
+
+**Stopping point:** requested intrinsic calculation complete. **Next task:**
+project these outward anchors under candidate poses and check exposure before
+using observed directions. Q149.1 remains pending and neither family accepted.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior R149 — Maker-point family comparison complete
 
 User declines manual launcher retry and asks to move on. R148 automated checks
 stand; do not reask the retry. Preflight daisy, photo-2-reconstruction-v2,

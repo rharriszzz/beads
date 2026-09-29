@@ -1861,3 +1861,55 @@ Additional unchanged dependency SHA-256: bead_placement.py
 `9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534`;
 check_placement.py
 `af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd`.
+
+## R150 — Calculate 1/6/7 angles for both helicities (2026-09-29)
+
+User, verbatim: “Assume the beads are the same size as in beads.pov.  What is the angle of directions 1, 6, and 7 with respect to the centerline.  Calculate these angles for both helicities.”
+
+Preflight daisy, photo-2-reconstruction-v2, dc942d73b3bad0a1e8fb8317e9bbbc577cc4f877,
+upstream 0/0, no stashes, clean tree. Read handoff/latest log/plan, quick model,
+prior maker-point experiment, original placement loop and reusable placement code.
+Presented three definitions: unrolled surface, 3D point chords, camera projection.
+Calculate the intrinsic first two, without inventing a measured camera or phase.
+
+## R151 — Focus on the minor-outward bead point (2026-09-29)
+
+User, verbatim: “remember that I am most interested ithe bead position of the part of tthe bead farthest away from the center of the minor axis of the necklace.”
+
+Steers the same unfinished calculation to outer-wall midpoints, matching the
+existing minor_outward_point and R118–R119 minor-circle direction. Initial
+bead-center calculations are not the primary answer. Reference radius is
+chain_minor+bead_radius = 6.110915748921366, from literal source bead radius
+2.110915748921366. No new outward-anchor measurements are assigned to maker points.
+
+Nominal 6.5 beads/turn: row advance 2.8813999972776654, index pitch .443292307273487.
+Short minor displacements for +1/+6/+7 are +55.384615°/−27.692308°/+27.692308°
+for source winding h=+1. Local 3D outward-point chord angles relative to forward
+centerline are +85.537249°/−47.717990°/+43.306972°. Opposite winding h=−1 reverses
+signs. Unrolled reference-tube angles are +85.708326°/−47.995985°/+43.585944°.
+Source h means row-angle sign, not an inferred image-clockwise or physical hand.
+
+Source loop's rounded rows make q=N/round(N/6.5). Default clock-zero N=672 example
+gives q=6.524271845 and local outward chord magnitudes 85.538554°/49.041027°/41.914799°.
+This N is generator metadata, not recovered photo N. Full torus chord angles
+depend on section phase; midpoint-centerline-tangent inclinations range about
+85.03–86.05°/45.68–52.79°/38.57–45.77° in that source example. Camera projection
+and exposure are not established by size or intrinsic direction alone.
+
+Added calculator photo2/direction_angles.py, explanatory DIRECTION_ANGLES.md and
+curated plot/reports under photo2/review/r150. Reproduce with
+`.venv/bin/python photo2/direction_angles.py` and
+`.venv/bin/python photo2/direction_angles.py --nbeads 672`.
+Twenty-four comparisons against existing local placement agree within 1e-12°;
+ten full-torus point comparisons against existing minor_outward_point agree within
+1.1e-14 model units. No new fit, source geometry edit, live annotation edit,
+dependencies or rendering. Update plan/methods/handoff; preserve Q149.1 pending,
+neither family accepted. Stop at intrinsic angles; next project/check exposure of
+these outward anchors before comparing observed direction angles. Recommend
+gpt-6.1-sol / High, same session, no /new required. Scoped integrity/publication follow.
+
+R150–R151 integrity outcome: both report provenance hashes match current source/
+calculator files; both-helicity signs and outward reference radius pass independent
+checks. Syntax/whitespace and 122 local documentation links pass. Nine protected
+source/prior evidence files, exact live revision-162 save and append-only request
+history preserved. Refreshed origin remains 0/0 before scoped commit/push.

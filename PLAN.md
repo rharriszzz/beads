@@ -11,7 +11,21 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R149: local point comparison complete; outlines need review
+## Current task — R150–R151: outward-point direction angles calculated
+
+The maker asks for 1/6/7 angles for both helicities, emphasizing each bead's
+point farthest from the minor-circle center. [Calculation](photo2/DIRECTION_ANGLES.md)
+uses reference radius 4+bead_radius=6.110915749. Nominal local 3D point-to-point
+angles are +85.54°, −47.72°, +43.31° for source winding; opposite winding reverses
+signs. Unrolled reference angles are +85.71°, −48.00°, +43.59°. Source row rounding
+and exact torus phase dependence are preserved separately; photo angles require
+camera/section pose and anchor exposure. No photo fit changed or family selected.
+
+**Next bounded task:** project outward anchors under competing poses and check
+their exposure before using observed angles. Stop at the requested intrinsic
+calculation. Q149.1 remains pending; no outline acceptance is inferred.
+
+## Prior task — R149: local point comparison complete; outlines need review
 
 The maker declines the launcher retry and asks to move on; existing R148 checks
 stand. [Seven-point comparison](photo2/MAKER_POINT_FIT.md) fits six maker locations

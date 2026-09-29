@@ -1,0 +1,140 @@
+{
+  "convention": "Positive index advance defines positive centerline direction; h=+1 is source row-angle sign; h=-1 reverses row-angle sign",
+  "surface": "Shortest minor arc on unrolled local straight reference tube; signed angles in degrees",
+  "chord": "3D anchor-to-anchor inclination in local straight limit; sign denotes minor-circle side",
+  "camera": "No camera projection or exposure guarantee; outward points need a visibility check",
+  "result": {
+    "nbeads": 672,
+    "nrows": 103,
+    "exact_beads_per_turn": 6.524271844660194,
+    "bead_radius": 2.110915748921366,
+    "minor_radius": 4.0,
+    "anchor": "outward",
+    "observation_radius": 6.110915748921366,
+    "advance_per_turn": 2.8813999972776654,
+    "pitch_per_index": 0.4416431543446422,
+    "rows": [
+      {
+        "hand": 1,
+        "index_step": 1,
+        "axial": 0.4416431543446422,
+        "minor_delta_deg": 55.17857142857145,
+        "minor_arc": 5.885103650066389,
+        "transverse_chord": 5.660300577836176,
+        "surface_angle_deg": 85.70832586399821,
+        "chord_angle_deg": 85.5385538947005
+      },
+      {
+        "hand": 1,
+        "index_step": 6,
+        "axial": 2.649858926067853,
+        "minor_delta_deg": -28.928571428571402,
+        "minor_arc": -3.0853941466367436,
+        "transverse_chord": 3.0527260282844377,
+        "surface_angle_deg": -49.34270735014205,
+        "chord_angle_deg": -49.04102672157801
+      },
+      {
+        "hand": 1,
+        "index_step": 7,
+        "axial": 3.0915020804124955,
+        "minor_delta_deg": 26.250000000000046,
+        "minor_arc": 2.799709503429645,
+        "transverse_chord": 2.7752878239659284,
+        "surface_angle_deg": 42.16444884955872,
+        "chord_angle_deg": 41.91479864082497
+      },
+      {
+        "hand": -1,
+        "index_step": 1,
+        "axial": 0.4416431543446422,
+        "minor_delta_deg": -55.17857142857142,
+        "minor_arc": -5.885103650066386,
+        "transverse_chord": 5.660300577836173,
+        "surface_angle_deg": -85.7083258639982,
+        "chord_angle_deg": -85.5385538947005
+      },
+      {
+        "hand": -1,
+        "index_step": 6,
+        "axial": 2.649858926067853,
+        "minor_delta_deg": 28.928571428571402,
+        "minor_arc": 3.0853941466367436,
+        "transverse_chord": 3.0527260282844377,
+        "surface_angle_deg": 49.34270735014205,
+        "chord_angle_deg": 49.04102672157801
+      },
+      {
+        "hand": -1,
+        "index_step": 7,
+        "axial": 3.0915020804124955,
+        "minor_delta_deg": -26.249999999999996,
+        "minor_arc": -2.7997095034296398,
+        "transverse_chord": 2.775287823965923,
+        "surface_angle_deg": -42.16444884955867,
+        "chord_angle_deg": -41.91479864082492
+      }
+    ]
+  },
+  "provenance": {
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/bead_placement.py": "9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/direction_angles.py": "a172af92fd7a78f2c44542799e033c2928439c907f1823bf31c7d90f78e5288c"
+  },
+  "exact_torus_chord_ranges": {
+    "nbeads": 672,
+    "anchor": "outward",
+    "chain_major": 47.234672416946566,
+    "phase_spacing_deg": 0.5,
+    "tangent_definition": "Planar centerline tangent at midpoint major angle",
+    "rows": [
+      {
+        "hand": 1,
+        "index_step": 1,
+        "min_unsigned_angle_deg": 85.02944401194256,
+        "max_unsigned_angle_deg": 86.04840308360681,
+        "index_zero_clock_zero_angle_deg": 85.77457025767946
+      },
+      {
+        "hand": 1,
+        "index_step": 6,
+        "min_unsigned_angle_deg": 45.677006972142465,
+        "max_unsigned_angle_deg": 52.79458771764401,
+        "index_zero_clock_zero_angle_deg": 48.15860445996459
+      },
+      {
+        "hand": 1,
+        "index_step": 7,
+        "min_unsigned_angle_deg": 38.56910609911855,
+        "max_unsigned_angle_deg": 45.77177933815478,
+        "index_zero_clock_zero_angle_deg": 42.73332456810704
+      },
+      {
+        "hand": -1,
+        "index_step": 1,
+        "min_unsigned_angle_deg": 85.02944401194256,
+        "max_unsigned_angle_deg": 86.04840308360681,
+        "index_zero_clock_zero_angle_deg": 85.30264526293023
+      },
+      {
+        "hand": -1,
+        "index_step": 6,
+        "min_unsigned_angle_deg": 45.67700697214251,
+        "max_unsigned_angle_deg": 52.794587717644,
+        "index_zero_clock_zero_angle_deg": 49.93383305677029
+      },
+      {
+        "hand": -1,
+        "index_step": 7,
+        "min_unsigned_angle_deg": 38.56910609911849,
+        "max_unsigned_angle_deg": 45.771779338154744,
+        "index_zero_clock_zero_angle_deg": 41.10333480583335
+      }
+    ]
+  },
+  "independent_outward_point_check": {
+    "comparisons": 10,
+    "max_position_error": 1.0058400026574543e-14
+  }
+}
