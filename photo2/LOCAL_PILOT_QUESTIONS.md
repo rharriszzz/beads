@@ -31,3 +31,20 @@ pigment, label construction neighbors, or assign an index. L remains unresolved.
 the narrow status update separately from the frozen R114 measurements/config.
 The original illustration remains unchanged and linked above. No further answer
 to this question is needed.
+
+
+## R118–R125 — Answered anchor and coordinate clarifications
+
+The assistant asked whether “outside” meant the minor tube direction or the
+whole necklace ring's outside. R119 answered: “its the smaller direction of the
+necklace torus.” [Curated central visibility illustration](review/r118/central-visibility.png)
+and [almost-hidden counterexample](review/r118/outward-counterexample.png) support
+the discussion. R120 observes that the exceptions are almost completely hidden;
+R121 directs us to ignore edge/behind-edge bodies in active work. Adopted, without
+claiming universal exposure or an automatic photo selection threshold.
+
+R123 clarifies labels as signed counts in directions 1/6/7. R124/R125 emphasize
+that these can help discussion, particularly a bead's nearest neighbors, regardless
+of whether they help internal fitting. Adopted: use “the +6 neighbor of B,” mark
+uncertain edges, and retain stable observation IDs. No further question is pending.
+Full user wording is preserved in [REQUEST_LOG](../REQUEST_LOG.md).

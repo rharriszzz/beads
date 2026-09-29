@@ -1011,3 +1011,105 @@ request log; shortlist/deferred groups account for all twelve original IDs once;
 --check. No numerical tests or renders warranted for this priority/method update,
 no failed checks. Scoped publication and exact remote-tip/final-status verification
 follow this pre-delivery record.
+
+## R117–R125 — Placement, central visibility and neighbor discussion (2026-09-28)
+
+### Supplied requests, in order
+
+R117 user: “It is possible to locate the black beads, its just twice as difficult as the red or yellow beads.  I am sort of hoping that after identifying a patch of 5 to 12 beads, you will be able to run a python version of the beads.pov loop that places the beads, then maps them to the right coordinates (method 1), OR (method 2) become competent at identifying the nearest neighbors of a bead in directions plus or minus 1, plus or minus 6, and plus or minus 7, ignoring beads which are too close to the edge, and stepping from one bead to another until you can cover ll of the beads that are close enough to the centerline, all the way around.”
+
+R118 user: “recommend for method 1 that you find the point of each bead closest to the outside boundary of the neclace, and also the point of each bead closest to the camer, then compare them to see if the bead is invisible, and if visible use the point closest to the outside of the torus.”
+
+R119 user: “its the smaller direction of the necklace torus.  And I think that any point of this torus, if it is part of a bead, will be visible if the bead is visible at all.  Think about this. do you agree.”
+
+R120 user: “You are right.  But those beads are almost completely hidden”
+
+R121 user: “good  lets ignore beads close to the edge, or even behind the edge,  That should be easy since only a small fractions of these beads will be visible.”
+
+R122 user: “you know, you can find a coordinate system with 2 or three numbers to label each bead, rather than worrying about bead_index now.  its easily solved for later.”
+
+R123 user: “that works, ut I had in mind labelling the 1,6,7 directions as separate indices, and calculating the bead_index from this information”
+
+R124 user: “This method might not be helpful for you, but it could be helpful when you discus issues with me.”
+
+R125 user: “especially when talking about nearest neighbors of a particular bead.”
+
+### Preflight and bounded implementation
+
+Started on daisy, clean 07f12e4, photo-2-reconstruction-v2, tracking origin,
+no stashes; fetched and verified 0/0. Read workflow, handoff, latest request log,
+plan, prior-work shape model and relevant R114–R116 pilot/method records.
+No dependencies installed, delegation, ownership transfer or supplied usage claims.
+
+Presented three methods: Python placement fit, direct six-direction walk, and
+fit-then-walk; selected the third. Implemented forward calibration first, plus
+surface visibility checks as the user clarified the anchor. This is not an
+inverse fit or a full-ring walk. [Experiment](photo2/PLACEMENT_PILOT.md) preserves
+parameters, reproduction commands, curated figures and hashed reports.
+
+Seven assistant-selected photo candidates B/C/E/F/G/H/J include four dark bodies.
+Initial discussion included I as an eighth; the curated conservative set defers
+I with A/D/K/L for edge/partial exposure. Existing interior disks are reused, not
+new centers or outward anchors. D/B separation is retained and all twelve original
+observations remain recorded. R114 outputs and R115 review stay frozen.
+
+### Findings and corrections
+
+Ported the literal beads.pov loop, preserving its sine expression and original
+radius, instead of transferring R114's simplified synthetic geometry. Five
+N/clock/hand cases compare 3,427 positions within 8.30e-13 scene units. Seven
+rendered markers calibrate projection within 0.150 pixels. Three supplied marker
+pairs predict four held-out points within 0.254 pixels; reversed training pairs
+produce 94.33 pixels mean held-out error. Marker pairs are supplied calibration,
+not recovered correspondences. An initial right-handed camera basis produced
+mirrored predictions; independent marker rendering caught it, and the final basis
+matches POV-Ray. No failure was suppressed or reinterpreted as a photo result.
+
+R119 answered the outside-direction clarification: the smaller torus direction.
+The implementation uses the midpoint of the outer-wall band as an exact outward
+anchor, with sampled closest-camera surface points as comparison. Ray tracing
+checks actual occlusion. Doubling nearest-point sampling changes projected points
+by at most 0.640 pixels; these nearest samples are approximate. An initial
+matplotlib cache-location warning was fixed by setting MPLCONFIGDIR before import.
+
+Visibility tests use one known pose and 61 beads plus individual renders for
+area denominators. Initial central filters included two artificially exposed
+finite-window end beads (-17/-16); added a 13-index guard at each end and reran.
+With clipping/end guards and visible fraction >=0.25, the narrower central band
+has 7/7 outward points exposed and the wider band 10/10. At >=0.50, both have
+3/3; at >=0.75 neither has eligible bodies, hence no evidence. Supported visible-
+remnant counterexamples have <=10.81% of isolated area visible, consistent with
+R120. R121's practical restriction is adopted; this is not a universal visibility
+proof or a photo-side visibility-fraction estimator. Thresholds are diagnostic,
+not user-supplied. No arbitrary comparison of two point distances is called a
+visibility classifier.
+
+Initially interpreted R122 as geometric-angle labels. R123 corrects this to
+signed direction counts (n1,n6,n7), deriving index=origin+n1+6*n6+7*n7.
+R124/R125 clarify their primary use can be discussion of a bead's neighbors;
+internal fitting variables are unrestricted. Saved that distinction throughout
+current guidance. A small supplied-edge helper checks alternate equivalent paths,
+conflicting cycles, collisions and disconnected observations. Four unit tests
+pass; a tracked symbolic example is explicitly not a photo graph. Stable IDs
+remain separate from path triples and derived component indices. Winding cycles
+need a cut or verified N. No new photo neighbors or indices are claimed.
+
+### Stopping point
+
+Completed forward placement/projection calibration, the central surface-anchor
+check, discussion-coordinate helper and records. Next bounded task is the actual
+seven-body inverse fit, with held-out evidence and known-synthetic validation;
+stop at raw/model/uncertainty review before expanding around the necklace.
+Recommend gpt-6-astra / High; optional /new for that fitting experiment.
+Final integrity checks and scoped commit/push verification follow this record.
+
+
+### Final integrity checks
+
+Passed Python 3.12 direction-coordinate tests (4); report/code/source SHA-256
+matches and exact report copies; append-only request history; original opening
+record unchanged apart from the new guidance bullet; beads.pov, source photo,
+R114 curated artifacts and R115 annotation byte-identical to HEAD; twelve-ID
+coverage; 125 local document links; git diff --check. All numerical runs described
+above completed after their relevant code corrections. Scoped commit/push and
+exact remote-tip/final-status verification are the remaining delivery operations.

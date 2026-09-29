@@ -1,5 +1,13 @@
 # Local observation, index and color pilot — R114
 
+**Current R117–R125 supersession:** the [placement/anchor pilot](PLACEMENT_PILOT.md)
+calibrates forward geometry and selects B/C/E/F/G/H/J for the next fit, including
+four dark bodies. Edge/behind-edge A/D/I/K/L stay outside that fitting set without
+erasing their records. Signed 1/6/7 direction counts are useful discussion labels,
+especially for nearest neighbors; they need not drive internal fitting variables.
+No new photo neighbors or indices are inferred. R115/R116 stopping instructions
+below describe their historical steps, not the present handoff.
+
 The first local pilot supports useful interior measurements, but **does not yet
 justify photo bead indices or a recovered pigment palette**. Two consistent
 neighbor graphs remain possible. The simple color baseline splits red-looking

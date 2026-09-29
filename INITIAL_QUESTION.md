@@ -109,6 +109,19 @@ Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
   `beads.pov`) and a color for every clearly visible bead. Select methods for
   that task; do not replace string indices with consecutive visible-region labels.
   See [index and color methods](METHODS.md#assign-bead_index-and-color-to-clearly-visible-beads).
+- R117–R122 clarify the working route: black beads can be located (roughly twice
+  as difficult as red/yellow, a maker estimate rather than a calibrated weight).
+  Start with 5–12 bodies; either place/project a Python version of beads.pov,
+  or follow the six construction-neighbor directions around the whole necklace.
+  Ignore edge/behind-edge beads in this active fit/walk; retain gaps in the string.
+  R122–R125 propose signed counts (n1,n6,n7) in the three neighbor directions,
+  particularly for discussing a bead's nearest neighbors. These are optional
+  internal coordinates, distinct from placement angles. Once relations are
+  established, bead_index = origin+n1+6*n6+7*n7; preserve tentative relations.
+  For model correspondence, the proposed outer point is in the **minor-circle**
+  direction from the local rope centerline. Compare it with the nearest-camera
+  surface point and visibility; the maker accepts ignoring nearly hidden
+  exceptions. [Implemented calibration and current limits](photo2/PLACEMENT_PILOT.md).
 - If a boundary is locally ambiguous, go farther in either direction **along the
   necklace** until reliable boundary evidence appears. Bridge the uncertain
   span using a smooth larger-scale envelope. Individual bead geometry still

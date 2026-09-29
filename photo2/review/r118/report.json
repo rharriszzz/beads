@@ -1,0 +1,2396 @@
+{
+  "parameters": {
+    "nbeads": 676,
+    "indices": [
+      -20,
+      -19,
+      -18,
+      -17,
+      -16,
+      -15,
+      -14,
+      -13,
+      -12,
+      -11,
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "roundedness": 0.8,
+    "height_ratio": 0.7,
+    "coarse_sampling": [
+      32,
+      256
+    ],
+    "fine_sampling": [
+      64,
+      512
+    ],
+    "ray_tolerance": 0.0001,
+    "camera": {
+      "location": [
+        60,
+        -160,
+        120
+      ],
+      "look_at": [
+        45,
+        4,
+        8
+      ],
+      "width": 800,
+      "height": 600,
+      "angle": 12,
+      "sky": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "source_scene_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+  "placement_python_sha256": "9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534",
+  "checker_sha256": "1bec7a782be8addabceefec5a7a37722ea47d442ea61b528459d3f148e683102",
+  "generated_scene_sha256": "fc3ea5bfde93258207b84405307995dc8efb461a05ffd319b10363da586ab282",
+  "id_image_sha256": "a6f03d7712eca184a9ce042ce2e7a5052d5c39357043d3471fd385f278e7edb8",
+  "command": [
+    "povray",
+    "+I/home/rharris/git/beads/photo2/output/r118/visibility.pov",
+    "+O/home/rharris/git/beads/photo2/output/r118/visibility.png",
+    "+W800",
+    "+H600",
+    "+FN",
+    "-D",
+    "-A",
+    "+WT2",
+    "File_Gamma=1"
+  ],
+  "observations": [
+    {
+      "index": -20,
+      "nearest_camera_point": [
+        49.00977046649682,
+        -10.601416080838423,
+        13.36411817543653
+      ],
+      "projected_xy": [
+        331.9592902899615,
+        371.3058203679752
+      ],
+      "coarse_to_fine_projected_shift_px": 0.12482075337664837,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 6276,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        49.66253956836168,
+        -9.339752133780772,
+        13.632778669984242
+      ],
+      "outward_projected_xy": [
+        319.6666778092474,
+        350.23657866391494
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -1.0231815394945443e-12,
+      "outward_all_depth_gap": -1.0231815394945443e-12,
+      "isolated_body_pixels": 6283,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.9988858825401878,
+      "visible_centroid_normalized_offset": 0.08848030541226357
+    },
+    {
+      "index": -19,
+      "nearest_camera_point": [
+        45.4847225921538,
+        -9.499158306979055,
+        13.349582497006594
+      ],
+      "projected_xy": [
+        404.2250638039621,
+        366.1524544143434
+      ],
+      "coarse_to_fine_projected_shift_px": 0.12403136994620517,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 5695,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        44.155772113809384,
+        -7.879926771150195,
+        13.632778669984248
+      ],
+      "outward_projected_xy": [
+        431.87215309937653,
+        345.17182024488585
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 0.0,
+      "outward_all_depth_gap": 0.0,
+      "isolated_body_pixels": 6203,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.9181041431565372,
+      "visible_centroid_normalized_offset": 0.5099463223909578
+    },
+    {
+      "index": -18,
+      "nearest_camera_point": [
+        43.46935806981493,
+        -8.721050930420038,
+        10.297292928297301
+      ],
+      "projected_xy": [
+        436.4808958409129,
+        411.3331928353929
+      ],
+      "coarse_to_fine_projected_shift_px": 0.4412904957210127,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 4383,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        41.0456789775428,
+        -6.931892876320801,
+        8.958420995537677
+      ],
+      "outward_projected_xy": [
+        480.58853457250655,
+        416.7789000674782
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.0188540269099917,
+      "outward_all_depth_gap": 1.0188540269099917,
+      "isolated_body_pixels": 6047,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.7248222258971391,
+      "visible_centroid_normalized_offset": 0.6684858422864428
+    },
+    {
+      "index": -17,
+      "nearest_camera_point": [
+        44.818941677644865,
+        -8.505786706108765,
+        6.850488867858533
+      ],
+      "projected_xy": [
+        400.0394885245778,
+        461.2202762355416
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5160818552733305,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 4734,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        43.097317923101876,
+        -6.867012963798314,
+        3.647745378607035
+      ],
+      "outward_projected_xy": [
+        425.3208484421555,
+        495.4273785740977
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.920212085893013,
+      "outward_all_depth_gap": 1.920212085893013,
+      "isolated_body_pixels": 5929,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.7984483049418114,
+      "visible_centroid_normalized_offset": 0.22234260896945346
+    },
+    {
+      "index": -16,
+      "nearest_camera_point": [
+        48.39993311535484,
+        -8.62706494909012,
+        5.964697808513134
+      ],
+      "projected_xy": [
+        326.45554982913,
+        469.1441672815585
+      ],
+      "coarse_to_fine_projected_shift_px": 0.12106301796188805,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 4981,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        48.61313699599261,
+        -7.2832470895561565,
+        2.288487854447537
+      ],
+      "outward_projected_xy": [
+        313.84863777513766,
+        510.0792247817292
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.9110965812319876,
+      "outward_all_depth_gap": 1.9110965812319876,
+      "isolated_body_pixels": 5916,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.8419540229885057,
+      "visible_centroid_normalized_offset": 0.32609956677949714
+    },
+    {
+      "index": -15,
+      "nearest_camera_point": [
+        51.17420507881784,
+        -8.555193464464942,
+        8.447105229703645
+      ],
+      "projected_xy": [
+        276.8899591930056,
+        422.5866354803796
+      ],
+      "coarse_to_fine_projected_shift_px": 0.44005277196118087,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 5024,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        52.888847154406136,
+        -7.421903202185445,
+        6.054870908970023
+      ],
+      "outward_projected_xy": [
+        237.92785065939916,
+        443.64057249390163
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 0.6305800553350025,
+      "outward_all_depth_gap": 0.6305800553350025,
+      "isolated_body_pixels": 6021,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.8344128882245474,
+      "visible_centroid_normalized_offset": 0.6814074484970453
+    },
+    {
+      "index": -14,
+      "nearest_camera_point": [
+        50.80140724483756,
+        -8.03284376103996,
+        12.121916976073512
+      ],
+      "projected_xy": [
+        293.32712290907284,
+        357.2274997236386
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5214250921140209,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 3496,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        52.276713237854324,
+        -6.841171088792736,
+        11.693227305049186
+      ],
+      "outward_projected_xy": [
+        263.1390719302552,
+        346.9960966144502
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 1.9895196601282805e-12,
+      "outward_all_depth_gap": 1.9895196601282805e-12,
+      "isolated_body_pixels": 6116,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.5716154349247874,
+      "visible_centroid_normalized_offset": 0.5263187151819009
+    },
+    {
+      "index": -13,
+      "nearest_camera_point": [
+        47.645470061968105,
+        -7.1683228930138485,
+        13.838638410294553
+      ],
+      "projected_xy": [
+        361.8057317114714,
+        325.66756503380844
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5212573865298887,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 3248,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        47.34552389548944,
+        -5.748787408087255,
+        14.332747246764098
+      ],
+      "outward_projected_xy": [
+        369.3591509639686,
+        301.6588816010583
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -9.947598300641403e-13,
+      "outward_all_depth_gap": -9.947598300641403e-13,
+      "isolated_body_pixels": 6118,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.5308924485125858,
+      "visible_centroid_normalized_offset": 0.19699012545441544
+    },
+    {
+      "index": -12,
+      "nearest_camera_point": [
+        44.45824002433593,
+        -6.360968003705672,
+        12.105021955955179
+      ],
+      "projected_xy": [
+        421.35885118482275,
+        351.77805821145034
+      ],
+      "coarse_to_fine_projected_shift_px": 0.3055627403961552,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.9454974669639853,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1527,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        42.39897567724374,
+        -4.748713171507046,
+        11.69322730504918
+      ],
+      "outward_projected_xy": [
+        460.9335189265234,
+        344.2271981758641
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -4.007461029686965e-12,
+      "outward_all_depth_gap": -4.007461029686965e-12,
+      "isolated_body_pixels": 5990,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.25492487479131887,
+      "visible_centroid_normalized_offset": 0.8053802343261364
+    },
+    {
+      "index": -11,
+      "nearest_camera_point": [
+        44.03580308751205,
+        -5.885743577279375,
+        8.441665092575848
+      ],
+      "projected_xy": [
+        419.72661578691714,
+        406.26543023231125
+      ],
+      "coarse_to_fine_projected_shift_px": 0.12024855768860528,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 4.364515765215998,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 211,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        41.76023598495254,
+        -4.284555451058648,
+        6.054870908970015
+      ],
+      "outward_projected_xy": [
+        457.52429496122255,
+        430.0189072299522
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.7314158409869833,
+      "outward_all_depth_gap": 5.339296266426999,
+      "isolated_body_pixels": 5830,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.03619210977701544,
+      "visible_centroid_normalized_offset": 0.2446262438433129
+    },
+    {
+      "index": -10,
+      "nearest_camera_point": [
+        46.799051536320384,
+        -5.728852210988081,
+        5.991894397952282
+      ],
+      "projected_xy": [
+        358.90210047207256,
+        437.4003152578139
+      ],
+      "coarse_to_fine_projected_shift_px": 0.4306273557441845,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 1038,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        46.03127196863608,
+        -4.2908102258043765,
+        2.28848785444754
+      ],
+      "outward_projected_xy": [
+        364.83747091547673,
+        479.6528358809951
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8738442462829994,
+      "outward_all_depth_gap": 4.932338410721002,
+      "isolated_body_pixels": 5764,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.18008327550312284,
+      "visible_centroid_normalized_offset": 0.03356956746172443
+    },
+    {
+      "index": -9,
+      "nearest_camera_point": [
+        50.38225179354763,
+        -5.602277109616692,
+        6.878861007468943
+      ],
+      "projected_xy": [
+        290.51353701352986,
+        414.2785387076669
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5294275082805218,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 3.148824069002984,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 100,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        51.56460545447216,
+        -4.323565570993303,
+        3.6477453786070395
+      ],
+      "outward_projected_xy": [
+        260.7124674065748,
+        447.55396783914136
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.7319063453410024,
+      "outward_all_depth_gap": 5.546263365426,
+      "isolated_body_pixels": 5806,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.01722356183258698,
+      "visible_centroid_normalized_offset": 0.2488862666747892
+    },
+    {
+      "index": -8,
+      "nearest_camera_point": [
+        51.726618110544756,
+        -5.23018746169425,
+        10.358956601595274
+      ],
+      "projected_xy": [
+        272.04554825341785,
+        351.18123846794623
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5124699882754203,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.8326899213519994,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1716,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        53.61107184403345,
+        -3.9937335621806622,
+        8.958420995537683
+      ],
+      "outward_projected_xy": [
+        232.31658950250716,
+        355.41571221203054
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -4.007461029686965e-12,
+      "outward_all_depth_gap": -4.007461029686965e-12,
+      "isolated_body_pixels": 5907,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.2905027932960894,
+      "visible_centroid_normalized_offset": 0.8126387288930642
+    },
+    {
+      "index": -7,
+      "nearest_camera_point": [
+        49.661724257367865,
+        -4.623439676899937,
+        13.402320018800992
+      ],
+      "projected_xy": [
+        320.76408518897387,
+        298.975705189311
+      ],
+      "coarse_to_fine_projected_shift_px": 0.42647990168921474,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 3205,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        50.42622645637186,
+        -3.2854971724614686,
+        13.632778669984255
+      ],
+      "outward_projected_xy": [
+        306.54714719923476,
+        278.28623143985993
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 1.0231815394945443e-12,
+      "outward_all_depth_gap": 1.0231815394945443e-12,
+      "isolated_body_pixels": 5971,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.5367610115558533,
+      "visible_centroid_normalized_offset": 0.23768586619498588
+    },
+    {
+      "index": -6,
+      "nearest_camera_point": [
+        46.03060673534356,
+        -3.9566688488545605,
+        13.394339068041916
+      ],
+      "projected_xy": [
+        393.36607189190266,
+        299.48232353589344
+      ],
+      "coarse_to_fine_projected_shift_px": 0.42452957129207675,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2565,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        44.78364703367947,
+        -2.500083048254474,
+        13.632778669984255
+      ],
+      "outward_projected_xy": [
+        418.70574588082627,
+        281.8218741631836
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -2.0179413695586845e-12,
+      "outward_all_depth_gap": -2.0179413695586845e-12,
+      "isolated_body_pixels": 5925,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.43291139240506327,
+      "visible_centroid_normalized_offset": 0.49518105820927294
+    },
+    {
+      "index": -5,
+      "nearest_camera_point": [
+        43.959711910944385,
+        -3.418938342699265,
+        10.35089619530828
+      ],
+      "projected_xy": [
+        426.1499972381272,
+        347.20576655837016
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5067978009258027,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 6.00781791860598,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 269,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        41.58195711958392,
+        -1.933841689842031,
+        8.958420995537692
+      ],
+      "outward_projected_xy": [
+        468.4574975766887,
+        357.53259312814055
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 0.5892211056620056,
+      "outward_all_depth_gap": 0.5892211056620056,
+      "isolated_body_pixels": 5782,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.046523694223452094,
+      "visible_centroid_normalized_offset": 0.9185481409545507
+    },
+    {
+      "index": -4,
+      "nearest_camera_point": [
+        45.2665298914719,
+        -3.0577030053283405,
+        6.882766887889578
+      ],
+      "projected_xy": [
+        391.4065633434748,
+        395.39301166871326
+      ],
+      "coarse_to_fine_projected_shift_px": 0.501201908981878,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 8.199461202646006,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 2,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        43.61081689801486,
+        -1.62213707735003,
+        3.647745378607035
+      ],
+      "outward_projected_xy": [
+        414.93198375061115,
+        432.6238265671044
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8482831751749984,
+      "outward_all_depth_gap": 9.134462753218997,
+      "isolated_body_pixels": 5652,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.00035385704175513094,
+      "visible_centroid_normalized_offset": 0.19049194551777549
+    },
+    {
+      "index": -3,
+      "nearest_camera_point": [
+        48.81979915753516,
+        -2.735207076326736,
+        6.0061684773675665
+      ],
+      "projected_xy": [
+        320.2202780493498,
+        397.9707032235734
+      ],
+      "coarse_to_fine_projected_shift_px": 0.5001591637586029,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 9.966182820797997,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        49.13659091932062,
+        -1.3704778677570437,
+        2.288487854447537
+      ],
+      "outward_projected_xy": [
+        305.95113982005284,
+        439.23163007377656
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8470546880699885,
+      "outward_all_depth_gap": 8.836012571927995,
+      "isolated_body_pixels": 5644,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": -2,
+      "nearest_camera_point": [
+        51.56389316540142,
+        -2.3319156226840487,
+        8.478724752340703
+      ],
+      "projected_xy": [
+        272.5862290892477,
+        348.44318399739655
+      ],
+      "coarse_to_fine_projected_shift_px": 0.29798739980105826,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 6.213744777151987,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 44,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        53.397839484162354,
+        -0.9927431129829506,
+        6.054870908970019
+      ],
+      "outward_projected_xy": [
+        232.4511027667215,
+        367.67624622136077
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.0341122911430034,
+      "outward_all_depth_gap": 4.470236925454003,
+      "isolated_body_pixels": 5704,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.007713884992987377,
+      "visible_centroid_normalized_offset": 0.8781785207438587
+    },
+    {
+      "index": -1,
+      "nearest_camera_point": [
+        51.13349374486517,
+        -1.8601586259873502,
+        12.152888876321079
+      ],
+      "projected_xy": [
+        289.66287929995855,
+        284.8968582909719
+      ],
+      "coarse_to_fine_projected_shift_px": 0.10390970780291049,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 1.4379854581419806,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 2469,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        52.72016919199897,
+        -0.49002978071713327,
+        11.693227305049179
+      ],
+      "outward_projected_xy": [
+        258.1384335885149,
+        273.6299743404961
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 1.0231815394945443e-12,
+      "outward_all_depth_gap": 1.0231815394945443e-12,
+      "isolated_body_pixels": 5796,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.42598343685300205,
+      "visible_centroid_normalized_offset": 0.6264756715288793
+    },
+    {
+      "index": 0,
+      "nearest_camera_point": [
+        47.8769825569629,
+        -1.3848170476694324,
+        13.878500093136603
+      ],
+      "projected_xy": [
+        358.2748039855848,
+        258.55564982995116
+      ],
+      "coarse_to_fine_projected_shift_px": 0.42077315041808194,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2998,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        47.69326146953828,
+        0.0,
+        14.332747246764098
+      ],
+      "outward_projected_xy": [
+        363.26972444875986,
+        236.23441966156608
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5811,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.515918086387885,
+      "visible_centroid_normalized_offset": 0.07114912500924717
+    },
+    {
+      "index": 1,
+      "nearest_camera_point": [
+        44.61630761244838,
+        -0.9701718356954436,
+        12.148379795604628
+      ],
+      "projected_xy": [
+        417.88010261812315,
+        289.1575248109542
+      ],
+      "coarse_to_fine_projected_shift_px": 0.10324770154272316,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.656327060482994,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1706,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        42.66223352864561,
+        0.3965420684597894,
+        11.693227305049179
+      ],
+      "outward_projected_xy": [
+        454.48914046198803,
+        285.5099824097292
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -1.9895196601282805e-12,
+      "outward_all_depth_gap": -1.9895196601282805e-12,
+      "isolated_body_pixels": 5725,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.29799126637554585,
+      "visible_centroid_normalized_offset": 0.7388261527240281
+    },
+    {
+      "index": 2,
+      "nearest_camera_point": [
+        44.155033083554436,
+        -0.5641503865244165,
+        8.460080544966461
+      ],
+      "projected_xy": [
+        417.0182941540971,
+        344.4667688011433
+      ],
+      "coarse_to_fine_projected_shift_px": 0.41212370876341764,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 9.467104131593999,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        41.972202937131726,
+        0.7803239944739483,
+        6.0548709089700194
+      ],
+      "outward_projected_xy": [
+        452.26411228069753,
+        371.5495083286161
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.4513904161659923,
+      "outward_all_depth_gap": 8.68532095837898,
+      "isolated_body_pixels": 5589,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 3,
+      "nearest_camera_point": [
+        46.87990343134089,
+        -0.06602873295460965,
+        6.016921856550335
+      ],
+      "projected_xy": [
+        358.37440883313155,
+        371.44339123395974
+      ],
+      "coarse_to_fine_projected_shift_px": 0.2925617670706511,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 12.630956890793016,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        46.212852189510095,
+        1.2889313228026218,
+        2.288487854447537
+      ],
+      "outward_projected_xy": [
+        362.2073941421342,
+        414.9226847213645
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8300190782549919,
+      "outward_all_depth_gap": 14.415064829572998,
+      "isolated_body_pixels": 5492,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 4,
+      "nearest_camera_point": [
+        50.42374342714885,
+        0.4897743144368072,
+        6.893483646744645
+      ],
+      "projected_xy": [
+        292.53087881882425,
+        344.08564256027057
+      ],
+      "coarse_to_fine_projected_shift_px": 0.40961091612315814,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 9.726878942382001,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        51.70978966481316,
+        1.923384450087726,
+        3.647745378607035
+      ],
+      "outward_projected_xy": [
+        261.5388396612118,
+        375.78880210062414
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.7945327602219834,
+      "outward_all_depth_gap": 12.269890676860996,
+      "isolated_body_pixels": 5520,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 5,
+      "nearest_camera_point": [
+        51.6930820934372,
+        1.0177634187788898,
+        10.370677317665569
+      ],
+      "projected_xy": [
+        276.0874934589226,
+        280.4697495082248
+      ],
+      "coarse_to_fine_projected_shift_px": 0.41303320514444836,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 3.208172909013996,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1121,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        53.701578154889845,
+        2.4974858770494364,
+        8.958420995537692
+      ],
+      "outward_projected_xy": [
+        235.11789466491885,
+        282.45910562563375
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -1.3017142919125035e-11,
+      "outward_all_depth_gap": -1.3017142919125035e-11,
+      "isolated_body_pixels": 5606,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.19996432393863717,
+      "visible_centroid_normalized_offset": 0.875094373873034
+    },
+    {
+      "index": 6,
+      "nearest_camera_point": [
+        49.573143798648964,
+        1.3693610301535901,
+        13.413586303634354
+      ],
+      "projected_xy": [
+        324.5263490474803,
+        232.1602326522362
+      ],
+      "coarse_to_fine_projected_shift_px": 0.6394571911407394,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2802,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        50.45458541267517,
+        2.8166677359276426,
+        13.632778669984253
+      ],
+      "outward_projected_xy": [
+        308.3965317956153,
+        211.06542504924784
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5675,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4937444933920705,
+      "visible_centroid_normalized_offset": 0.36863589975967404
+    },
+    {
+      "index": 7,
+      "nearest_camera_point": [
+        45.888755301628365,
+        1.590974573741,
+        13.412592447073644
+      ],
+      "projected_xy": [
+        396.31515880751914,
+        237.76796415794536
+      ],
+      "coarse_to_fine_projected_shift_px": 0.6377689232197515,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2524,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        44.758475535807804,
+        2.9162175151815397,
+        13.632778669984257
+      ],
+      "outward_projected_xy": [
+        418.75316799900975,
+        222.3396227904504
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5648,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4468838526912181,
+      "visible_centroid_normalized_offset": 0.376854133825746
+    },
+    {
+      "index": 8,
+      "nearest_camera_point": [
+        43.76566902844785,
+        1.871650335015568,
+        10.36967336045034
+      ],
+      "projected_xy": [
+        429.33714603202634,
+        288.0238014623433
+      ],
+      "coarse_to_fine_projected_shift_px": 0.4100936097529163,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 4.948870195327004,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 654,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        41.511876692408606,
+        3.09240926310688,
+        8.958420995537683
+      ],
+      "outward_projected_xy": [
+        468.34937198598385,
+        301.68962282202716
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 6.991740519879386e-12,
+      "outward_all_depth_gap": 6.991740519879386e-12,
+      "isolated_body_pixels": 5526,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.11834961997828447,
+      "visible_centroid_normalized_offset": 0.899803859705986
+    },
+    {
+      "index": 9,
+      "nearest_camera_point": [
+        45.019363709282146,
+        2.385086681790469,
+        6.894487603959871
+      ],
+      "projected_xy": [
+        396.31769451885276,
+        334.33427785848147
+      ],
+      "coarse_to_fine_projected_shift_px": 0.40537427930534237,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 11.924131496436985,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        43.48837195954755,
+        3.6463932204205993,
+        3.6477453786070395
+      ],
+      "outward_projected_xy": [
+        416.89185160802026,
+        373.5255977192864
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.798321801051003,
+      "outward_all_depth_gap": 16.18316273366301,
+      "isolated_body_pixels": 5401,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 10,
+      "nearest_camera_point": [
+        48.507970366102775,
+        3.1308555348714204,
+        6.003759369724843
+      ],
+      "projected_xy": [
+        328.047274639572,
+        332.70573576855907
+      ],
+      "coarse_to_fine_projected_shift_px": 0.40367859432212533,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 12.014235673852,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        48.94352270107828,
+        4.562276007401363,
+        2.28848785444754
+      ],
+      "outward_projected_xy": [
+        311.81000252824066,
+        372.99738945951384
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8159755124110006,
+      "outward_all_depth_gap": 18.497168705994,
+      "isolated_body_pixels": 5365,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 11,
+      "nearest_camera_point": [
+        51.184097478211164,
+        3.859346906317953,
+        8.465720223818156
+      ],
+      "projected_xy": [
+        283.0625684838462,
+        280.7650963629544
+      ],
+      "coarse_to_fine_projected_shift_px": 0.10035597256071402,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 6.737902795145999,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        53.12817107277672,
+        5.45089340626964,
+        6.054870908970017
+      ],
+      "outward_projected_xy": [
+        241.94620517545357,
+        297.14775783735064
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.3606173673099988,
+      "outward_all_depth_gap": 5.2877028362729845,
+      "isolated_body_pixels": 5415,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 12,
+      "nearest_camera_point": [
+        50.6830740126016,
+        4.271883574597365,
+        12.138061041531403
+      ],
+      "projected_xy": [
+        301.1097005404813,
+        219.1225123732483
+      ],
+      "coarse_to_fine_projected_shift_px": 0.6297073406527814,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.333745785469006,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1951,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        52.39484636384209,
+        5.868257265012291,
+        11.693227305049183
+      ],
+      "outward_projected_xy": [
+        268.0883804883533,
+        205.68228284168114
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5497,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.3549208659268692,
+      "visible_centroid_normalized_offset": 0.7266863870728357
+    },
+    {
+      "index": 13,
+      "nearest_camera_point": [
+        47.39328364620348,
+        4.348407870004997,
+        13.867415551756885
+      ],
+      "projected_xy": [
+        368.5587901508088,
+        197.58083440342472
+      ],
+      "coarse_to_fine_projected_shift_px": 0.2994113255796249,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2786,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        47.34552389548944,
+        5.748787408087255,
+        14.332747246764098
+      ],
+      "outward_projected_xy": [
+        370.8087172445215,
+        175.44289370613245
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 0.0,
+      "outward_all_depth_gap": 0.0,
+      "isolated_body_pixels": 5538,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.5030697002527988,
+      "visible_centroid_normalized_offset": 0.06948826318698616
+    },
+    {
+      "index": 14,
+      "nearest_camera_point": [
+        44.12679528007623,
+        4.366807097456832,
+        12.142157870598853
+      ],
+      "projected_xy": [
+        426.8142766343684,
+        232.08149727924888
+      ],
+      "coarse_to_fine_projected_shift_px": 0.48918163530031966,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.0916304289640095,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1884,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        42.3033799482163,
+        5.53601483213351,
+        11.693227305049186
+      ],
+      "outward_projected_xy": [
+        460.12702752784736,
+        230.6686970594062
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -9.947598300641403e-13,
+      "outward_all_depth_gap": -9.947598300641403e-13,
+      "isolated_body_pixels": 5466,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.3446761800219539,
+      "visible_centroid_normalized_offset": 0.6443685165934496
+    },
+    {
+      "index": 15,
+      "nearest_camera_point": [
+        43.61793645047443,
+        4.722528451102709,
+        8.467099781574746
+      ],
+      "projected_xy": [
+        426.80103858496267,
+        287.294936278856
+      ],
+      "coarse_to_fine_projected_shift_px": 0.4030470567179156,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 8.663557731339978,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        41.5721206573176,
+        5.833824559030506,
+        6.054870908970023
+      ],
+      "outward_projected_xy": [
+        458.63952017817894,
+        316.86450288535116
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.1063386638330144,
+      "outward_all_depth_gap": 4.9653333146480065,
+      "isolated_body_pixels": 5348,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 16,
+      "nearest_camera_point": [
+        46.263754184108656,
+        5.5309885188294805,
+        5.996862619692247
+      ],
+      "projected_xy": [
+        370.8137441890093,
+        311.3658445673919
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09879735343562653,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 14.63286083545401,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        45.720544963180636,
+        6.849877350302591,
+        2.2884878544475367
+      ],
+      "outward_projected_xy": [
+        372.12197151935044,
+        354.64952361128695
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8098011047769944,
+      "outward_all_depth_gap": 18.267222656504003,
+      "isolated_body_pixels": 5250,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 17,
+      "nearest_camera_point": [
+        49.7149469491109,
+        6.5191625114976475,
+        6.879449401653743
+      ],
+      "projected_xy": [
+        308.43174517017565,
+        280.0444736043166
+      ],
+      "coarse_to_fine_projected_shift_px": 0.399337742109219,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 12.105401710588978,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        51.10092870153558,
+        8.142287194801886,
+        3.6477453786070333
+      ],
+      "outward_projected_xy": [
+        276.2508641471262,
+        309.4541050766839
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8060860207330052,
+      "outward_all_depth_gap": 12.099307598785998,
+      "isolated_body_pixels": 5241,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 18,
+      "nearest_camera_point": [
+        50.89234996168846,
+        7.190395752229098,
+        10.346263238544559
+      ],
+      "projected_xy": [
+        294.30779901380686,
+        216.36997042137807
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09949473326404722,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 4.975941776471018,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 575,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        53.00899453082526,
+        8.952286348343739,
+        8.958420995537677
+      ],
+      "outward_projected_xy": [
+        252.4105043616023,
+        215.37077748525476
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 0.45908829350497626,
+      "outward_all_depth_gap": 0.45908829350497626,
+      "isolated_body_pixels": 5321,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.1080623942867882,
+      "visible_centroid_normalized_offset": 0.9174807408401046
+    },
+    {
+      "index": 19,
+      "nearest_camera_point": [
+        48.74899868952574,
+        7.281642445024646,
+        13.389417850696118
+      ],
+      "projected_xy": [
+        341.9889772234821,
+        171.64354609034322
+      ],
+      "coarse_to_fine_projected_shift_px": 0.29552214807977695,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2445,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        49.74720289982988,
+        8.877759286143558,
+        13.632778669984248
+      ],
+      "outward_projected_xy": [
+        324.0630216865531,
+        149.2208791549372
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 1.0231815394945443e-12,
+      "outward_all_depth_gap": 1.0231815394945443e-12,
+      "isolated_body_pixels": 5396,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4531134173461824,
+      "visible_centroid_normalized_offset": 0.4974152644934512
+    },
+    {
+      "index": 20,
+      "nearest_camera_point": [
+        45.064774108794566,
+        7.0546792720740745,
+        13.395851196436224
+      ],
+      "projected_xy": [
+        411.9930715224949,
+        181.78192357398518
+      ],
+      "coarse_to_fine_projected_shift_px": 0.2954381639323186,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2507,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        44.08062467731463,
+        8.28999306049625,
+        13.632778669984242
+      ],
+      "outward_projected_xy": [
+        431.1318334473318,
+        167.34690339255064
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5387,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4653796175979209,
+      "visible_centroid_normalized_offset": 0.24206535554801392
+    },
+    {
+      "index": 21,
+      "nearest_camera_point": [
+        42.92541796791285,
+        7.063617193598409,
+        10.336173814844686
+      ],
+      "projected_xy": [
+        444.4102298192874,
+        234.62698843961985
+      ],
+      "coarse_to_fine_projected_shift_px": 0.4810961195049158,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 3.145907072054001,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1024,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        40.83645962645249,
+        8.073565925500478,
+        8.958420995537688
+      ],
+      "outward_projected_xy": [
+        479.5304241351147,
+        249.86312750023953
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5291,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.19353619353619353,
+      "visible_centroid_normalized_offset": 0.8430299891595379
+    },
+    {
+      "index": 22,
+      "nearest_camera_point": [
+        44.124330956503705,
+        7.736259791120136,
+        6.873446804090824
+      ],
+      "projected_xy": [
+        412.9719801107274,
+        278.78303205739235
+      ],
+      "coarse_to_fine_projected_shift_px": 0.3964150057052032,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 12.360744448622995,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        42.73176863062482,
+        8.861750894075051,
+        3.64774537860704
+      ],
+      "outward_projected_xy": [
+        430.3928792739039,
+        318.7641786027665
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.6900061429190032,
+      "outward_all_depth_gap": 15.540498565847003,
+      "isolated_body_pixels": 5166,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 23,
+      "nearest_camera_point": [
+        47.49950434699663,
+        8.894794677190033,
+        5.968747695724866
+      ],
+      "projected_xy": [
+        348.28915318876136,
+        273.5389598567391
+      ],
+      "coarse_to_fine_projected_shift_px": 0.39411249672084814,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 12.529671012479014,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        48.03674771063926,
+        10.428501625020985,
+        2.288487854447534
+      ],
+      "outward_projected_xy": [
+        330.3697951278815,
+        312.0160377383024
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8130928508680029,
+      "outward_all_depth_gap": 19.495037760291012,
+      "isolated_body_pixels": 5110,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 24,
+      "nearest_camera_point": [
+        50.07032561417025,
+        9.938297900075298,
+        8.420283912666422
+      ],
+      "projected_xy": [
+        306.5291629058203,
+        219.68323195152217
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09783713613111113,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 9.378427927144003,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": true,
+      "outward_point": [
+        52.08377429292762,
+        11.815043625315832,
+        6.054870908970025
+      ],
+      "outward_projected_xy": [
+        265.12085528284206,
+        232.65703500618287
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.6134580350109786,
+      "outward_all_depth_gap": 8.812067769956997,
+      "isolated_body_pixels": 5156,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 25,
+      "nearest_camera_point": [
+        49.52042688692834,
+        10.295490449261838,
+        12.105870661703142
+      ],
+      "projected_xy": [
+        325.24386931477335,
+        159.5475574181729
+      ],
+      "coarse_to_fine_projected_shift_px": 0.39899052938287355,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.8291196643840237,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1501,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        51.30548869278143,
+        12.140971905653288,
+        11.693227305049195
+      ],
+      "outward_projected_xy": [
+        291.6909076871799,
+        143.71243502261677
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -3.0127011996228248e-12,
+      "outward_all_depth_gap": -3.0127011996228248e-12,
+      "isolated_body_pixels": 5237,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.28661447393545925,
+      "visible_centroid_normalized_offset": 0.808211755251705
+    },
+    {
+      "index": 26,
+      "nearest_camera_point": [
+        46.233126780476205,
+        9.957739256540375,
+        13.817395809729314
+      ],
+      "projected_xy": [
+        390.9671604874527,
+        142.81446273376238
+      ],
+      "coarse_to_fine_projected_shift_px": 0.6171454445306761,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2612,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        46.30738197020941,
+        11.41374455062274,
+        14.332747246764098
+      ],
+      "outward_projected_xy": [
+        390.90745699615894,
+        119.82888288656113
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -9.947598300641403e-13,
+      "outward_all_depth_gap": -9.947598300641403e-13,
+      "isolated_body_pixels": 5291,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4936684936684937,
+      "visible_centroid_normalized_offset": 0.20957793404427524
+    },
+    {
+      "index": 27,
+      "nearest_camera_point": [
+        42.98781316300258,
+        9.579293578565178,
+        12.099494868258107
+      ],
+      "projected_xy": [
+        447.4219193195814,
+        180.7313540952415
+      ],
+      "coarse_to_fine_projected_shift_px": 0.6140832899444334,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 1.0109068549919868,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 2041,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": true,
+      "outward_point": [
+        41.327647829226386,
+        10.594760033534973,
+        11.69322730504917
+      ],
+      "outward_projected_xy": [
+        477.0090483795964,
+        180.2438647669392
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -1.0231815394945443e-12,
+      "outward_all_depth_gap": -1.0231815394945443e-12,
+      "isolated_body_pixels": 5242,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.38935520793590234,
+      "visible_centroid_normalized_offset": 0.5320914491730536
+    },
+    {
+      "index": 28,
+      "nearest_camera_point": [
+        42.45727949520111,
+        9.87285487951769,
+        8.425132203754176
+      ],
+      "projected_xy": [
+        447.58100453595193,
+        236.0329973746366
+      ],
+      "coarse_to_fine_projected_shift_px": 0.3944604569166662,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 6.4888255702740025,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 97,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        40.565823246056695,
+        10.802254824887553,
+        6.0548709089700345
+      ],
+      "outward_projected_xy": [
+        475.8536607258316,
+        266.51233911899595
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 0.695161692363996,
+      "outward_all_depth_gap": 0.695161692363996,
+      "isolated_body_pixels": 5115,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.018963831867057673,
+      "visible_centroid_normalized_offset": 0.9531798255379407
+    },
+    {
+      "index": 29,
+      "nearest_camera_point": [
+        44.98871934158079,
+        10.992262914091842,
+        5.944509890850195
+      ],
+      "projected_xy": [
+        394.66751230785565,
+        257.23809699370213
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09658282098758911,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 13.562167652653983,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": false,
+      "outward_point": [
+        44.56152923758689,
+        12.310936741454668,
+        2.2884878544475367
+      ],
+      "outward_projected_xy": [
+        393.61494738233864,
+        299.3911757023493
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8166583536229837,
+      "outward_all_depth_gap": 19.751778413118984,
+      "isolated_body_pixels": 5017,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 30,
+      "nearest_camera_point": [
+        48.298381180902375,
+        12.387294257341107,
+        6.816782471822027
+      ],
+      "projected_xy": [
+        336.35010537164743,
+        222.9438281348394
+      ],
+      "coarse_to_fine_projected_shift_px": 0.38969339192752245,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 12.598101339219,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": false,
+      "outward_point": [
+        49.746901128519475,
+        14.242457057381836,
+        3.6477453786070324
+      ],
+      "outward_projected_xy": [
+        303.6212507127747,
+        249.07836617669
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.819740643486,
+      "outward_all_depth_gap": 15.533699086447001,
+      "isolated_body_pixels": 5004,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 31,
+      "nearest_camera_point": [
+        49.38940969583953,
+        13.193772584168324,
+        10.273367035878087
+      ],
+      "projected_xy": [
+        324.3805965255757,
+        159.39072571542334
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09704970610640985,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 6.234588182111992,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 96,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        51.54342040064105,
+        15.276542325885943,
+        8.958420995537674
+      ],
+      "outward_projected_xy": [
+        282.83498477425235,
+        154.62808393001077
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 0.9306850680719947,
+      "outward_all_depth_gap": 0.9306850680719947,
+      "isolated_body_pixels": 5067,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.018946121965660152,
+      "visible_centroid_normalized_offset": 0.9405410083280891
+    },
+    {
+      "index": 32,
+      "nearest_camera_point": [
+        47.245432509062624,
+        13.033321280222678,
+        13.333044417469642
+      ],
+      "projected_xy": [
+        371.1083994988996,
+        117.59592737808671
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09788969229034548,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 1.303503698382002,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 2133,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        48.314394147759934,
+        14.809393114994583,
+        13.632778669984257
+      ],
+      "outward_projected_xy": [
+        352.31326712212115,
+        93.2119134646525
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 0.0,
+      "outward_all_depth_gap": 0.0,
+      "isolated_body_pixels": 5153,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4139336308946245,
+      "visible_centroid_normalized_offset": 0.6088280547902419
+    },
+    {
+      "index": 33,
+      "nearest_camera_point": [
+        43.59638479005866,
+        12.355173646552334,
+        13.339817159554041
+      ],
+      "projected_xy": [
+        438.842298845906,
+        131.9159132738386
+      ],
+      "coarse_to_fine_projected_shift_px": 0.3961216754316415,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2509,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        42.75997905010405,
+        13.542881839550303,
+        13.632778669984264
+      ],
+      "outward_projected_xy": [
+        454.86281241425286,
+        117.31042788209743
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5160,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4862403100775194,
+      "visible_centroid_normalized_offset": 0.1051978000048098
+    },
+    {
+      "index": 34,
+      "nearest_camera_point": [
+        41.490728866491374,
+        12.109512355786404,
+        10.28667515591366
+      ],
+      "projected_xy": [
+        469.76960156771446,
+        186.4537613348788
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09723030152917177,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 2.789577376484999,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1384,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        39.56555502344396,
+        12.936991816613107,
+        8.958420995537688
+      ],
+      "outward_projected_xy": [
+        501.16792272899085,
+        202.52853997713993
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -4.007461029686965e-12,
+      "outward_all_depth_gap": -4.007461029686965e-12,
+      "isolated_body_pixels": 5079,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.2724945855483363,
+      "visible_centroid_normalized_offset": 0.765959838374098
+    },
+    {
+      "index": 35,
+      "nearest_camera_point": [
+        42.607217146877666,
+        12.909780751266593,
+        6.803950064256785
+      ],
+      "projected_xy": [
+        440.11486247000454,
+        229.4327290582238
+      ],
+      "coarse_to_fine_projected_shift_px": 0.38798465522848286,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 10.002471459534007,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": false,
+      "outward_point": [
+        41.35203989150468,
+        13.947884284768739,
+        3.6477453786070266
+      ],
+      "outward_projected_xy": [
+        454.53588024610747,
+        268.8236307879863
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.5120930068199812,
+      "outward_all_depth_gap": 12.318815169537999,
+      "isolated_body_pixels": 4959,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 36,
+      "nearest_camera_point": [
+        45.830979195946206,
+        14.480914212754758,
+        5.908681962508001
+      ],
+      "projected_xy": [
+        379.43815004865036,
+        220.60616645440786
+      ],
+      "coarse_to_fine_projected_shift_px": 0.2755633290679881,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 14.096990366353992,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": false,
+      "outward_point": [
+        46.42948876924371,
+        16.142656206007256,
+        2.2884878544475344
+      ],
+      "outward_projected_xy": [
+        360.5036849873232,
+        256.7527388440707
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.8362453778130146,
+      "outward_all_depth_gap": 21.052088545714014,
+      "isolated_body_pixels": 4876,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 37,
+      "nearest_camera_point": [
+        48.26022640629752,
+        15.825171458591223,
+        8.35066560176082
+      ],
+      "projected_xy": [
+        341.3550257399911,
+        165.27640397688793
+      ],
+      "coarse_to_fine_projected_shift_px": 0.46666238592325393,
+      "own_surface_ray_error": 1.0231815394945443e-12,
+      "occluder_depth_gap": 9.855894415832012,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 0,
+      "body_has_any_rendered_pixel": false,
+      "context_supported": false,
+      "outward_point": [
+        50.279878801441974,
+        18.00690390314371,
+        6.054870908970062
+      ],
+      "outward_projected_xy": [
+        300.63718609439,
+        174.6138095990646
+      ],
+      "outward_point_exposed": false,
+      "outward_own_depth_gap": 1.7870652639169862,
+      "outward_all_depth_gap": 11.73507969488901,
+      "isolated_body_pixels": 4907,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.0,
+      "visible_centroid_normalized_offset": null
+    },
+    {
+      "index": 38,
+      "nearest_camera_point": [
+        47.66570763455667,
+        16.096302436332525,
+        12.009514051451019
+      ],
+      "projected_xy": [
+        360.64662040083215,
+        107.48657242297773
+      ],
+      "coarse_to_fine_projected_shift_px": 0.38967479223102514,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 3.113144906058011,
+      "nearest_point_exposed": false,
+      "rendered_body_pixels": 1094,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        49.46798146668093,
+        18.236643836822076,
+        11.693227305049156
+      ],
+      "outward_projected_xy": [
+        327.6061443295495,
+        88.09551343162204
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 5.9969806898152456e-12,
+      "outward_all_depth_gap": 5.9969806898152456e-12,
+      "isolated_body_pixels": 4991,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.21919455019034262,
+      "visible_centroid_normalized_offset": 0.8632455023514943
+    },
+    {
+      "index": 39,
+      "nearest_camera_point": [
+        44.45346517045158,
+        15.37791354987777,
+        13.745658815183841
+      ],
+      "projected_xy": [
+        423.6755199033347,
+        94.04652423116272
+      ],
+      "coarse_to_fine_projected_shift_px": 0.09703096061530818,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2460,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        44.59397414066076,
+        16.912263596095745,
+        14.332747246764098
+      ],
+      "outward_projected_xy": [
+        422.43570795089425,
+        69.77854520229889
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": 9.947598300641403e-13,
+      "outward_all_depth_gap": 9.947598300641403e-13,
+      "isolated_body_pixels": 5056,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.4865506329113924,
+      "visible_centroid_normalized_offset": 0.3357354265400124
+    },
+    {
+      "index": 40,
+      "nearest_camera_point": [
+        41.259053878747174,
+        14.601339953662464,
+        12.026092069976956
+      ],
+      "projected_xy": [
+        477.90890401502816,
+        135.1505630007681
+      ],
+      "coarse_to_fine_projected_shift_px": 0.3907794703118228,
+      "own_surface_ray_error": 0.0,
+      "occluder_depth_gap": 0.0,
+      "nearest_point_exposed": true,
+      "rendered_body_pixels": 2180,
+      "body_has_any_rendered_pixel": true,
+      "context_supported": false,
+      "outward_point": [
+        39.74926554312812,
+        15.49900977632561,
+        11.693227305049138
+      ],
+      "outward_projected_xy": [
+        504.22133621095395,
+        134.64118585844145
+      ],
+      "outward_point_exposed": true,
+      "outward_own_depth_gap": -9.947598300641403e-13,
+      "outward_all_depth_gap": -9.947598300641403e-13,
+      "isolated_body_pixels": 5021,
+      "isolated_clipped": false,
+      "visible_fraction_of_isolated": 0.43417645887273454,
+      "visible_centroid_normalized_offset": 0.4137332125034448
+    }
+  ],
+  "nearest_hidden_but_body_visible_indices": [
+    -12,
+    -11,
+    -9,
+    -8,
+    -5,
+    -4,
+    -2,
+    -1,
+    1,
+    5,
+    8,
+    12,
+    14,
+    18,
+    21,
+    25,
+    27,
+    28,
+    31,
+    32,
+    34,
+    38
+  ],
+  "outward_hidden_but_body_visible_indices": [
+    -18,
+    -17,
+    -16,
+    -15,
+    -11,
+    -10,
+    -9,
+    -5,
+    -4,
+    -2,
+    18,
+    28,
+    31
+  ],
+  "substantial_central_subsets": [
+    {
+      "min_visible_fraction": 0.25,
+      "max_normalized_centerline_distance": 0.4,
+      "eligible_indices": [
+        -7,
+        0,
+        6,
+        7,
+        13,
+        20,
+        26
+      ],
+      "hidden_outward_indices": []
+    },
+    {
+      "min_visible_fraction": 0.25,
+      "max_normalized_centerline_distance": 0.6,
+      "eligible_indices": [
+        -7,
+        -6,
+        0,
+        6,
+        7,
+        13,
+        19,
+        20,
+        26,
+        27
+      ],
+      "hidden_outward_indices": []
+    },
+    {
+      "min_visible_fraction": 0.5,
+      "max_normalized_centerline_distance": 0.4,
+      "eligible_indices": [
+        -7,
+        0,
+        13
+      ],
+      "hidden_outward_indices": []
+    },
+    {
+      "min_visible_fraction": 0.5,
+      "max_normalized_centerline_distance": 0.6,
+      "eligible_indices": [
+        -7,
+        0,
+        13
+      ],
+      "hidden_outward_indices": []
+    },
+    {
+      "min_visible_fraction": 0.75,
+      "max_normalized_centerline_distance": 0.4,
+      "eligible_indices": [],
+      "hidden_outward_indices": []
+    },
+    {
+      "min_visible_fraction": 0.75,
+      "max_normalized_centerline_distance": 0.6,
+      "eligible_indices": [],
+      "hidden_outward_indices": []
+    }
+  ],
+  "subset_caveat": "Evaluator uses known rendered centerline/envelope and isolated masks. Exclude 13 model indices at each finite segment end (two turns of context), so open-end exposure does not masquerade as necklace visibility. Thresholds .25/.5/.75 and .4/.6 are diagnostic, not maker-supplied or image-learned. This one pose is not validation around the entire ring.",
+  "outward_definition": "R119 minor-circle outward direction; exact midpoint of the outer bead wall, on the reference torus with minor radius chain_minor+bead_radius.",
+  "note": "Nearest camera point on individual bead; neighbor occlusion evaluated separately. Any-pixel visibility includes slivers and image-boundary truncation. R120 substantial/central subsets separately exclude clipped isolated silhouettes and stratify visible fraction/centrality. No unspecified two-point distance/angle rule is implemented. This checks the R119 claim that an outward torus point must be visible if its bead is visible.",
+  "illustrated_witness": {
+    "index": 18,
+    "nearest_camera_point": [
+      50.89234996168846,
+      7.190395752229098,
+      10.346263238544559
+    ],
+    "projected_xy": [
+      294.30779901380686,
+      216.36997042137807
+    ],
+    "coarse_to_fine_projected_shift_px": 0.09949473326404722,
+    "own_surface_ray_error": 0.0,
+    "occluder_depth_gap": 4.975941776471018,
+    "nearest_point_exposed": false,
+    "rendered_body_pixels": 575,
+    "body_has_any_rendered_pixel": true,
+    "context_supported": true,
+    "outward_point": [
+      53.00899453082526,
+      8.952286348343739,
+      8.958420995537677
+    ],
+    "outward_projected_xy": [
+      252.4105043616023,
+      215.37077748525476
+    ],
+    "outward_point_exposed": false,
+    "outward_own_depth_gap": 0.45908829350497626,
+    "outward_all_depth_gap": 0.45908829350497626,
+    "isolated_body_pixels": 5321,
+    "isolated_clipped": false,
+    "visible_fraction_of_isolated": 0.1080623942867882,
+    "visible_centroid_normalized_offset": 0.9174807408401046
+  },
+  "illustration_appearance_sha256": "f10dbe7699a6688334658bea5bcfec7e83c639af6a1378af67be1b084ba4d7af"
+}

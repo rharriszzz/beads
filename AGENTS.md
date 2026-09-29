@@ -48,11 +48,22 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   bead_index and color for every clearly visible body; keep observation IDs,
   local component indices and resolved full-string indices distinct. Unresolved
   visible bodies remain in coverage accounting instead of being dropped.
-  R116: start inference from the clearest non-black bodies away from the necklace
-  edge; they may suffice to constrain the structure. Do not make black/edge-body
-  resolution a prerequisite. Retain those observations and missing index slots;
-  test the clear subset's sufficiency instead of assuming it. For general runtime
-  selection use image-derived observability, not fixed color ranges/coordinates.
+  R117 supersedes a black-bead exclusion: black bodies are locatable, roughly
+  twice as difficult per the maker, not unusable. Establish a 5–12-body patch;
+  use Python placement/projection or walk the six neighbor directions around
+  the necklace. R118–R119's outward anchor is in the minor-circle direction,
+  away from the rope's local centerline; validate its exposure separately.
+  R120–R121: ignore edge/behind-edge beads in active fitting and walking; target
+  substantial central bodies, including black. Preserve excluded regions and
+  missing slots without requiring their resolution or compressing indices.
+  R122–R125: signed direction counts (n1,n6,n7) are useful discussion labels,
+  especially for a bead's +/-1, +/-6 and +/-7 neighbors; they need not be the
+  fitter's internal coordinates. Derive index = origin+n1+6*n6+7*n7 when supported.
+  Different path triples can name the same bead; check weighted sums, retain
+  stable observation IDs and mark tentative edges. Source-loop indices
+  in calibration are not inferred photo labels. Runtime selection must remain
+  image-derived, not fixed color ranges/coordinates. Clear colored beads may seed
+  the patch, but the earlier three-body-only shortlist is no longer the goal.
   R112: photo-2 repeat length is not divisible by 13; this is not a restriction
   on total bead count or generic synthetic tests. With verified exact N, test
   divisors for the shortest repeat compatible with all visible observations.

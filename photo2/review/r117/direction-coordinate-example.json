@@ -1,0 +1,44 @@
+{
+  "status": "symbolic example, not photo labels",
+  "result": {
+    "coordinates": {
+      "A": {
+        "n1": 0,
+        "n6": 0,
+        "n7": 0
+      },
+      "C": {
+        "n1": 0,
+        "n6": 0,
+        "n7": 1
+      },
+      "B": {
+        "n1": 1,
+        "n6": 0,
+        "n7": 0
+      }
+    },
+    "derived_component_indices": {
+      "A": 0,
+      "C": 7,
+      "B": 1
+    },
+    "consistent_alternate_paths": [
+      {
+        "observation_id": "C",
+        "via": "B",
+        "delta": 6,
+        "alternative": {
+          "n1": 1,
+          "n6": 1,
+          "n7": 0
+        }
+      }
+    ],
+    "conflicts": [],
+    "distinct_observation_index_collisions": [],
+    "unresolved": [
+      "unresolved"
+    ]
+  }
+}

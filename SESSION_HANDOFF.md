@@ -1,10 +1,42 @@
 # Beads session handoff — new branch
 
+## Current R117–R125 — Forward calibration completed; photo fit next
+
+Read [placement/anchor pilot](photo2/PLACEMENT_PILOT.md) and its curated figures.
+Maker method 1 (Python placement/projection), method 2 (six-direction walk), and
+a fit-then-walk combination were compared; select the combination. Seven photo
+candidates B/C/E/F/G/H/J include dark E/F/H/J. Ignore edge/behind-edge A/D/I/K/L
+in this first fit, preserve all original observations and unknown slots. D remains
+separate from B. Interior sample dots are not centers or outward surface anchors.
+
+The literal original placement loop matches independent POV-Ray execution over
+3,427 positions within 8.30e-13; seven markers agree within 0.150 pixels, four
+held-out similarity predictions within 0.254 pixels. Wrong correspondences fail.
+The minor-outward band midpoint is exposed on 7/7 narrow-central and 10/10 wider-
+central synthetic bodies with >=25% visibility, in one pose with end/clipping
+guards. Remaining visible-remnant counterexamples have <=10.81% visibility.
+This supports the practical central-body restriction, not universal visibility.
+
+R122–R125: signed counts (n1,n6,n7) support discussion of neighbors, e.g. “the +6
+neighbor of B.” They need not be fitter internals. Derived index is
+origin+n1+6*n6+7*n7. Different paths can give equivalent triples; preserve IDs,
+uncertain edges and disconnected components. The supplied-edge helper passes
+four tests, but does not detect neighbors. No photo pose, new neighbor labels,
+global indices, pigment labels, N or repeat were recovered in this calibration.
+
+**Next bounded task:** fit the seven-body photo patch, compare supported surface
+anchors and pose/phase/correspondence alternatives, withhold a body or relation,
+and validate the fitting procedure against a known synthetic counterpart. Stop
+at illustrated raw/model/uncertainty review before full-ring propagation.
+The planar centerline need not be circular. FFT comparisons remain pending,
+adoption optional. Recommend gpt-6-astra / High; /new is optional for that fit.
+Earlier sections below are chronological history where superseded.
+
 ## Current progress
 
 | Image / artifact | Active inventory | Evidence / unresolved issues |
 | --- | --- | --- |
-| beads-photo-2.jpg | R115 review: ten proposed bodies, D confirmed separate from B, L unresolved | [Local pilot](photo2/LOCAL_PILOT.md), [original inventory](photo2/review/r114/inventory.png), [B/D answer](photo2/LOCAL_PILOT_QUESTIONS.md); D's edge/sample/color/index uncertain; no confirmed silhouette, centerline, global bead indices or pigment labels |
+| beads-photo-2.jpg | Seven proposed fitting bodies B/C/E/F/G/H/J; A/D/I/K/L excluded from this fit, all twelve records preserved | [Placement pilot](photo2/PLACEMENT_PILOT.md), [original inventory](photo2/review/r114/inventory.png), [B/D answer](photo2/LOCAL_PILOT_QUESTIONS.md); D separate from B, L unresolved; no fitted photo pose, confirmed global bead indices or pigments |
 | Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
 | Photo-2 R100 hue figures | None; same T1/T2 routes | [T1 hue](photo2/review/r100/T1-hue.png), [T2 hue](photo2/review/r100/T2-hue.png); local red-to-magenta change, not a recovered edge; overlap-map provenance confirmed by maker |
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |

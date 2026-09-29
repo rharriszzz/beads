@@ -644,6 +644,44 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**Current R117–R125 route: fit a patch, then walk neighbors.** Establish a patch
+of 5–12 substantial central bodies, including locatable black beads. Maker says
+black is roughly twice as difficult, not impossible; this is not a fixed numeric
+classifier weight. Ignore edge/behind-edge beads in the active fit/walk. Keep
+their exclusions and missing slots explicit. R122–R125 propose signed direction
+counts for discussion, without requiring the fitter to use them internally.
+
+| Implementation route | Current choice |
+| --- | --- |
+| Maker method 1: Python placement and camera projection | Implemented/calibrated forward primitives; fit a small observed patch next using geometric coordinates and exposed surface anchors |
+| Maker method 2: direct six-direction neighbor walk | Alternative: connect central bodies using local lattice coordinates, carry uncertain/missing steps, and continue around the necklace |
+| Fit a patch, then initialize the walk | Selected overall route: calibrate placement first, fit the patch, then use neighbor consistency to check expansion |
+
+[Placement/surface pilot](photo2/PLACEMENT_PILOT.md) implements the circular
+prototype with two independent angles (major position, minor phase); the direct
+API needs no bead_index or N. For a noncircular planar centerline, use arc length
+and minor phase in the local frame. These are placement variables, distinct from
+the maker's discussion labels `(n1,n6,n7)`: signed step counts in the three
+construction directions. Derive `bead_index = origin+n1+6*n6+7*n7`. The triples
+`(0,0,1)` and `(1,1,0)` can name the same bead via different paths. The
+[local consistency helper](photo2/neighbor_coordinates.py) checks supplied edges,
+alternate paths, conflicts and index collisions; it does not identify neighbors.
+Use stable observation IDs, tentative edge labels and separate components. Say
+“the +6 neighbor of B” in reviews; neither unique triples nor immediate global
+indices are required. Keep missing slots; handle a full winding cycle only with
+a documented cut or verified N. No photo direction label is newly established.
+
+R118–R119's candidate anchor is the bead's outward surface point in the minor
+circle, not its center or a highlight. The reference implementation chooses the
+midpoint of the legacy bead's outer-wall band. Test whether it is exposed before
+using it as a correspondence; compare nearest-camera surface evidence as support.
+R120–R121 restrict use to substantial central bodies, excluding edge remnants.
+Known-pose synthetic checks support trying this subset, not a universal visibility
+theorem or an automatic photo selector. No two-point threshold was supplied.
+
+The R114 pilot and R116 method discussion below are historical evidence/options;
+their black-bead deferral and index-first ordering are superseded by this route.
+
 **R114 pilot evidence:** [assisted local observations and synthetic check](photo2/LOCAL_PILOT.md)
 implement the first I1/C1 diagnostic. Both candidate triangles are algebraically
 consistent, while a wrong synthetic alternative retains a 13-index error after
@@ -651,7 +689,7 @@ global alignment. Photo RGB appearance clusters do not yet resolve pigments.
 The method catalog below remains a proposal for broader inference, not a claim
 of automatic detection or accepted photo indices.
 
-**R116 priority:** bootstrap from the clearest non-black bodies away from the
+**Historical R116 priority:** bootstrap from the clearest non-black bodies away from the
 necklace edge. The maker suggests these may already supply enough evidence.
 This is a proposed sufficient subset, not a claim that the current indices are
 resolved. Black and edge observations remain in coverage accounting, but their
@@ -665,7 +703,7 @@ separate from B without making D a reliable geometry or pigment anchor.
 | I3 row tracking with gaps | Alternative if a slightly longer section supplies traceable chains; do not compress missing positions |
 | I2 local 3D fitting to clear exposed surfaces | Targeted fallback if graph/displacement evidence cannot distinguish phase or 6/7 families; difficult bodies need not be fitted first |
 
-Start with I1 plus B3 support. In the existing R114 review, B/C/G are assistant
+R116 selected I1 plus B3 support. In the existing R114 review, B/C/G were assistant
 shortlist candidates with broad colored faces; not newly maker-labeled beads,
 verified physical centers or an automatic selection. Inspect a slightly wider
 local section for additional clear bodies if needed, before returning to D or
