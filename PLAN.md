@@ -3,6 +3,14 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
+**Current model recommendation — R134:** gpt-6.1-sol / High for the next bounded
+task. The [official model catalog](https://developers.openai.com/api/docs/models)
+describes near-Astra performance and lists input/output prices of $2/$10 per
+million tokens versus Astra's $10/$50, checked 2026-09-29. This supersedes older
+Astra recommendations below. Project-specific quality remains to be evaluated
+using the existing synthetic, holdout and illustrated checks. User controls
+model selection; stay in this session, no /new required.
+
 ## Current problem — R132: fit clear surfaces without trusting shadowed boundaries
 
 **Latest bounded step completed:** compared the old outline objective with P's
@@ -66,7 +74,7 @@ excluded A/D/I/K/L remain preserved. Both +/-1/6/7 charts remain tentative.
 
 The current stop is the completed constraint-comparison review, not a recovered
 local index graph. FFT comparisons remain pending, adoption optional. Recommend
-gpt-6-astra / High. Stay in this session; R126 explicitly declines /new and reports
+gpt-6.1-sol / High (R134). Stay in this session; R126 explicitly declines /new and reports
 84% context remaining (user report, not an independently measured status).
 Historical scheduling below is superseded where it requests the already completed
 first seven-body fit or defers black beads.
@@ -123,7 +131,7 @@ Supporting explorations are bounded tasks, not mandatory algorithm components:
   overlays and sensitivity; retain a non-FFT solution if it works better.
 
 These checkpoints do not authorize running all phases in one turn. A standalone
-continue executes the unfinished bounded step and stops. Recommend gpt-6-astra /
+continue executes the unfinished bounded step and stops. Recommend gpt-6.1-sol /
 High; stay in the current session as requested, no /new required.
 
 ## Evidence and rationale retained from preceding requests

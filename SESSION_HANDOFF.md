@@ -1,6 +1,21 @@
 # Beads session handoff — new branch
 
-## Current R132–R133 — Constraint comparison complete; PLAN.md is the roadmap
+## Current R134 — Updated model recommendation; geometry task unchanged
+
+User reports gpt-6.1-sol offers similar ability to gpt-6-astra at one fifth the
+cost. Checked the [official model catalog](https://developers.openai.com/api/docs/models)
+on 2026-09-29: near-Astra performance is the published description; listed input/
+output prices are $2/$10 versus $10/$50 per million tokens. Recommend
+**gpt-6.1-sol / High** for the next bounded task, superseding older recommendations.
+This is a recommendation, not a model switch or a measured beads-task comparison.
+User controls selection; stay here, no /new required.
+
+The next task remains selected clear boundary arcs plus interior support for
+the C/F local fit, P unknown and G withheld. Q132.1 is pending. This turn only
+updates model guidance; no numerical work or ring expansion. Preflight daisy,
+clean f28d581, tracked upstream, no stashes. See PLAN.md for the solution roadmap.
+
+## R132–R133 — Constraint comparison complete; PLAN.md is the roadmap
 
 R132 “continue” tested whether uncertain outline penalties caused the C/F fit
 mismatch. Read [SURFACE_CONSTRAINTS](photo2/SURFACE_CONSTRAINTS.md) and its raw/

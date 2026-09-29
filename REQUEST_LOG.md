@@ -1370,3 +1370,26 @@ accounting, render and optimizer totals, 20 source/prior-artifact files unchange
 from HEAD and 108 local documentation links. Inspected curated evidence and
 comparison images. No answer to Q132.1 supplied. Append-only history and whitespace
 checks precede scoped commit/push and exact remote-tip/final-status verification.
+
+## R134 — Consider GPT-6.1 Sol for the next bounded task (2026-09-29)
+
+User: “there is a new model available gpt-6.1-sol iwhich is supposed to give similar ability to gpt-6-astra at 1/5 the cost.”
+
+Applied the OpenAI Docs skill. Exact-name official-domain search returned no
+results; opened the official model catalog and located both named models there:
+https://developers.openai.com/api/docs/models (checked 2026-09-29).
+It describes GPT-6.1 Sol as near-Astra performance and lists input/output token
+prices $2/$10 per million versus Astra $10/$50, supporting the one-fifth ratio
+for those listed rates. This does not measure performance or total task cost
+on the beads problem or establish account-specific subscription usage rates.
+
+Recommend gpt-6.1-sol / High for the next bounded task; update PLAN and handoff,
+with older experiment/log recommendations retained as history. User controls
+model selection; no model-switch action is claimed. Stay here, no /new required.
+The next geometry task remains selected clear boundary arcs plus interior support,
+P unknown and G withheld. Stop after this guidance update, no new numerical run.
+
+Preflight daisy, clean f28d581, photo-2-reconstruction-v2 with tracked upstream,
+no stashes. Only three documentation files change; no dependencies or delegation.
+Append-only request-history and whitespace/link checks precede scoped publication;
+no numerical tests needed for this documentation-only step.
