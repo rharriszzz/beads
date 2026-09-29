@@ -1,0 +1,31 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #19232d; background: #f3f5f7; }
+* { box-sizing: border-box; }
+body { margin: 0; height: 100dvh; display: flex; flex-direction: column; }
+header { background: white; padding: 12px 20px 8px; border-bottom: 1px solid #dde3e8; }
+h1 { margin: 0; font-size: 21px; } header p { margin: 5px 0 0; font-size: 14px; }
+nav { padding: 9px 16px; display: flex; align-items: center; flex-wrap: wrap; gap: 7px; border-bottom: 1px solid #d8dfe5; }
+button { font: inherit; font-size: 13px; border: 1px solid #bac5ce; background: white; border-radius: 5px; padding: 6px 10px; cursor: pointer; }
+button:hover { background: #eaf2f8; } button:disabled { opacity: .45; cursor: default; }
+button:focus-visible, input:focus-visible { outline: 2px solid #1374a8; outline-offset: 2px; }
+nav label, #zoom { font-size: 13px; } #zoom { width: 48px; } nav label { margin: 0 12px; }
+main { display: flex; flex: 1; min-height: 0; }
+#viewport { flex: 1; position: relative; overflow: hidden; background: #29333d; min-width: 0; }
+canvas { width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+aside { width: 330px; background: white; padding: 15px; min-height: 0; overflow-y: auto; border-left: 1px solid #ccd5dd; }
+h2 { font-size: 15px; margin: 0 0 10px; } #empty, .help { font-size: 13px; line-height: 1.45; color: #556674; }
+.help { margin: 16px 0 18px; } #editor label { display: block; font-size: 13px; }
+#remove { color: #a42a31; }
+.marker-row { display: block; width: 100%; margin-bottom: 5px; text-align: left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.marker-row.selected { border-color: #1374a8; background: #e6f3fa; }
+footer { min-height: 37px; background: white; padding: 9px 16px; display: flex; gap: 15px; justify-content: space-between; border-top: 1px solid #d8dfe5; font-size: 12px; }
+#status.error { color: #a42a31; }
+[hidden] { display: none !important; }
+@media (max-width: 700px) { aside { width: 230px; padding: 10px; } nav label { margin: 0 4px; } footer { flex-wrap: wrap; } }
+#number, #direction { width: 100%; padding: 8px; margin: 6px 0 10px; font: inherit; border: 1px solid #aab8c3; border-radius: 4px; }
+#active { font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+#direction-help { margin: 0 0 10px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 5px; }
+.series-row { padding: 8px 0; border-bottom: 1px solid #e1e7ec; font-size: 13px; overflow-wrap: anywhere; }
+.series-row span { display: block; margin-bottom: 4px; }
+hr { border: 0; border-top: 1px solid #d8dfe5; margin: 18px 0; }
+#editor label, aside > label { font-size: 13px; }

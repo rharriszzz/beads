@@ -11,7 +11,41 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current problem — R135–R136: correct the local neighbor chart
+## Current task — R138–R141: numbered locations and direction series
+
+The requested [raw-photo labeler](photo2/LABELER.md) now lets the maker place each
+bead by hand, assign a unique number, then Start a d1/d2/d3 series, click existing
+beads in order and End it. Arrows and the sidebar show click order. Renumbering
+preserves stable-ID series references; saving/undo cover locations and series.
+
+[Q138.1 and Q139.1](photo2/LABELER_QUESTIONS.md) are answered. R140–R141 clarify
+d3 as down to up clockwise, equivalently up to down counterclockwise; d2 remains
+up to down clockwise. No d2/d3 mapping to 6/7 or numerical signs is supplied.
+
+**Stopping point:** the program and automated verification are complete for this
+bounded step. Real graphical-browser interaction is unverified in this environment.
+**Next task:** the maker runs the program and supplies numbered patch/series
+annotations; review those before resuming numerical chart comparison.
+
+This collects manual evidence for local geometry/neighbors (stage 1). No old
+assistant markers are preloaded; unique numbers are not accepted as string indices.
+The coupled BC/CG alternatives and unknown signs remain preserved for later analysis.
+
+## Where this sits in the overall solution
+
+| Stage | Purpose | Status |
+| --- | --- | --- |
+| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** Numbered maker locations/series program ready; awaiting annotations, coupled 6/7 families/signs unresolved |
+| 2. Whole-necklace coverage and indexing | Follow supported central bodies around the loop; preserve gaps; resolve string indices and closure/N | Not started from an accepted local chart |
+| 3. Shortest repeating pattern | Combine verified indices and uncertain colors; test repeat divisors with conflict witnesses | Waiting for stage 2 |
+| 4. Rendered appearance | Fit POV-Ray materials, lights and camera; compare against the photo | Local rendering calibrated, final appearance recovery pending |
+
+Background/centerline refinement and the requested FFT comparisons support these
+stages when needed; they are not completed merely because local fitting has begun.
+The final method must estimate location and appearance from each input. Today's
+hand-selected patch is diagnostic evidence, not an automatic reconstruction.
+
+## Prior bounded step — R135–R136: correct the local neighbor chart
 
 **Latest bounded step completed:** tested selected boundary brackets with interior
 support. Narrow bands still enlarged C; stronger H2 boundary penalties improved C
@@ -35,19 +69,6 @@ The current stopping point is this comparison plus saved maker review.
 pending; Q132.1 is answered. R137's [wider context](photo2/review/r135/wider-context.png)
 is in both review files.
 
-## Where this sits in the overall solution
-
-| Stage | Purpose | Status |
-| --- | --- | --- |
-| 1. Local geometry and neighbors | Establish usable bead surfaces and +/-1/6/7 relations on a small patch | **Current.** Coupled 6/7 family alternatives; signs and other patch relations unresolved |
-| 2. Whole-necklace coverage and indexing | Follow supported central bodies around the loop; preserve gaps; resolve string indices and closure/N | Not started from an accepted local chart |
-| 3. Shortest repeating pattern | Combine verified indices and uncertain colors; test repeat divisors with conflict witnesses | Waiting for stage 2 |
-| 4. Rendered appearance | Fit POV-Ray materials, lights and camera; compare against the photo | Local rendering calibrated, final appearance recovery pending |
-
-Background/centerline refinement and the requested FFT comparisons support these
-stages when needed; they are not completed merely because local fitting has begun.
-The final method must estimate location and appearance from each input. Today's
-hand-selected patch is diagnostic evidence, not an automatic reconstruction.
 
 ## Starting evidence and limits
 

@@ -1494,3 +1494,131 @@ indices preserved; 31 prior files unchanged; 138 local links and append-only
 request history pass. Curated checks.json adds dependency/image hashes and
 Python version. Inspected raw, photo-fit, synthetic, neighbor and wider figures.
 Only this scoped experiment, review interpretation and roadmap state are staged.
+
+## R138 — Build an interactive bead labeler; format to follow (2026-09-29)
+
+User: “write a program for me.  It should take the wider raw context photo, and show it to me, and allow me to label each bead.  I will tell you what the labels should look like in my next comment.”
+
+This explicit task defers the previously planned numerical chart comparison.
+Preflight daisy, clean d72f863, photo-2-reconstruction-v2, upstream 0/0 following
+fetch, no stashes. Read AGENTS, handoff, latest requests, plan and relevant patch
+experiment. Three approaches presented: local browser app launched by Python,
+desktop Python GUI, notebook widget. Selected local browser/stdlib/Pillow app;
+no new dependency or delegation, no remote service or message to others.
+
+Implemented photo2/label_beads.py and browser assets under photo2/labeler/.
+Shows the original EXIF-oriented wider raw crop [1180,130,1540,520], not the
+annotated review figure. Supports arbitrary image/crop inputs, pan/zoom, marker
+placement and movement, independent label movement, selection/edit/delete,
+undo/redo, raw overlay toggle, autosave and JSON download. Text is provisional
+and opaque; pending format must not be inferred from historical bead labels.
+Stable internal IDs remain separate from displayed labels and string indices.
+Positions/label offsets use original oriented source coordinates.
+
+Default annotations go to ignored photo2/output/labeler/annotations.json with
+source hash, oriented size, crop and revision. Atomic replacement/previous-file
+backup, validation and stale revision rejection preserve user work. Browser draft
+recovery retains unsent same-revision edits when storage is available. No old
+assistant markers, color ranges, pattern, graph or source indices are preloaded.
+No numerical fitting or adoption of labels as recovered indices/coverage.
+
+Asked Q138.1 for promised label content/appearance while continuing independent
+work. Recorded it in photo2/LABELER_QUESTIONS.md with existing tracked context.
+It remains pending; this checkpoint implements the foundation and provisional
+text field, not the final requested label format. Updated plan/handoff and
+photo2/LABELER.md with commands, controls, persistence and limits.
+
+Six Python tests pass, including real HTTP raw image/save/reload/conflict,
+EXIF geometry, source-coordinate persistence, invalid/source-mismatch data
+preservation, prior backup/stale-save protection and source/backup path guard.
+Initial HTTP test failed on sandbox loopback socket denial; escalation rerun
+passed. Three JavaScript coordinate/history/crop-bound tests pass when run directly
+with Node; --test output groups the file differently, so documented the direct
+command. Python and JavaScript syntax checks pass. Node and installed Pillow used;
+Playwright/Puppeteer/Selenium and a graphical Linux browser are unavailable, so
+actual pointer end-to-end testing remains pending. No failed check is concealed.
+
+Next task: use the maker's next comment to implement label format and verify that
+interaction. Preserve all earlier evidence, questions and source photo. Recommend
+gpt-6.1-sol / High; stay here, no /new required. Stop at this checkpoint while the
+format requirement is pending; scoped integrity checks and commit/push follow.
+
+R138 integrity checks: default raw PNG crop matches the original oriented image
+pixel-for-pixel (360x390), starts with zero preloaded markers; 14 source/prior files
+unchanged; local documentation links and append-only request log pass; whitespace
+and code syntax pass. No annotation output was created during the source-crop
+check. GUI/browser opening was not attempted; run command opens the browser when
+available and always prints the local URL. Format remains pending at publication.
+
+## R139 — Hand-picked numbered locations and named direction series (2026-09-29)
+
+User, verbatim:
+
+> I want to assign each visible bead a location (that I pick by hand) and a unique number.  Then I want to click near each location that lies in a particular direction, I will want to start a series, name the direction, then click on some number of bbeads that  a specific direction from a given bead.  Then I will end the series.  I will use d1 for the plus or minus 1 direction, d2 for up to down while proceeding clockwise around the bracelet (according to the major diameter of the torus), and d3 for up to down while proceeding clockwise.
+
+This arrived while R138 publication was interrupted. Inspected actual HEAD/status:
+still d72f863; the foundation remained unstaged/uncommitted/unpushed. R138's final
+publication wording was prospective, not actual delivery. Corrected handoff.
+No real annotation output existed. Continued the program within this same step.
+
+Replaced provisional free-text labels with hand-picked points and unique integer
+numbers. Click chooses a pending point; Add bead/Enter confirms the maker's number.
+Next unused number is a suggestion; duplicate numbers are rejected in UI/server.
+Choose d1/d2/d3, Start series, click first bead and following beads, End series.
+Series store ordered stable IDs, not inferred index offsets. Nearest stored points
+within 18 screen pixels or number labels can be clicked; misses add nothing.
+Arrows/sidebar show click order, global Undo/Redo cover locations and series,
+last-click undo/cancel/remove revise series. Active series persist on reload.
+Moving/renumbering preserves references; referenced bead deletion is blocked to
+avoid silently bridging its adjacent clicks. No known adjacency/step count or
+6/7/sign inference is attached to the recorded links.
+
+Schema 2 saves annotations and series together, retaining original oriented
+coordinates/source hash/size, definitions, revisions and atomic backups. Existing
+unsupported schemas/mismatched source fail without overwrite. Q138.1 is answered.
+Asked Q139.1 to distinguish identical d2/d3 descriptions and continued independent
+numbered-location/series work while waiting.
+
+## R140 — Correct d3 direction (2026-09-29)
+
+User, verbatim: “d3 is down to up, sorry”
+
+## R141 — Equivalent counterclockwise description (2026-09-29)
+
+User, verbatim: “but that is the same as up to down while proceeding counterclockwise.”
+
+Q139.1 answered. Implement d2 as up to down clockwise and d3 as down to up
+clockwise, equivalently up to down counterclockwise. Definitions appear in the
+selector/help and saved JSON. No d2/d3 mapping to 6/7 or signs was supplied.
+Preserved full specification/clarification with the tracked wider context in
+photo2/LABELER_QUESTIONS.md; no labeler question remains pending.
+
+### R139–R141 validation and stopping point
+
+Eight Python tests pass, including real HTTP raw crop/config/numbered-series
+save/reload/conflict, EXIF coordinates, revision backup, unique numbers, dangling/
+invalid series references, renumber persistence and source/backup protection.
+Six JavaScript model tests pass: coordinate transforms, history, crop clipping,
+number uniqueness, nearest-point snapping and ordered-series lifecycle/reference
+protection. One scripted application workflow passes using the actual app handlers
+with a minimal DOM/canvas adapter: manual points/numbers, duplicate rejection,
+near-location clicks, d3 series/end, renumber, blocked deletion, undo/last-click
+undo and saves. This is not a graphical browser test; actual browser layout/
+pointer verification remains untested in this environment. Syntax checks pass.
+Initial HTTP rerun failed on sandbox socket denial; escalated rerun passes all
+eight tests. No external service, dependency installation, delegation or fitting.
+
+Updated plan, methods, handoff and run instructions. Stop at program delivery;
+next task is maker annotation of the raw patch and review before neighbor fitting.
+Recommend gpt-6.1-sol / High, same session, no /new required. Scoped integrity
+checks and commit/push verification follow; no annotation output is published.
+
+R138–R141 integrity outcome: raw [1180,130,1540,520] crop is pixel-identical to
+the original oriented photograph, 360×390 from 2540×3182 source. Source SHA-256
+`eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb`.
+No preloaded points/series and no annotation output created. Twelve original/
+prior curated files unchanged, 103 local documentation links valid, request log
+prefix unchanged and whitespace/syntax checks pass. Fetched origin and verified
+HEAD/upstream 0/0 before publication. GUI opening was not attempted. Scripted
+app workflow rerun passes after adding multiple-pointer guarding/loading control;
+this does not change the stated real-browser limitation.

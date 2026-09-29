@@ -644,6 +644,16 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R138–R141 interactive maker labeling:** [local raw-photo editor](photo2/LABELER.md)
+collects hand-picked anchors, unique numbers and ordered d1/d2/d3 click series in
+original oriented source coordinates. Stable IDs preserve paths on renumbering;
+revision-checked saving and undo cover both locations and series. d2 is up to down
+clockwise; d3 is down to up clockwise, equivalently up to down counterclockwise.
+No d2/d3 mapping to 6/7, signs or verified step counts is inferred. The diagnostic
+viewing crop is explicit, with no assistant coordinates/colors imported. Manual
+numbers require reconciliation with observation IDs before bead_index/coverage
+claims. This evidence collection task supersedes another numerical chart comparison.
+
 **R135–R136 current evidence:** [boundary-bracket comparison](photo2/BOUNDARY_ARC_FIT.md)
 adds negative ownership only beside selected local segments, validating pair sides
 against supplied regions to avoid crossing thin/concave bodies. Eight checks pass,

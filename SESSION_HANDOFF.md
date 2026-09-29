@@ -1,6 +1,48 @@
 # Beads session handoff — new branch
 
-## Current R135–R137 — Boundary test complete; maker changes the neighbor premise
+## Current R138–R141 — Numbered bead locations and ordered direction series
+
+The maker requested a raw wider-photo labeling program, then supplied unique
+numbers and Start/click/End direction series. [Q138.1 and Q139.1](photo2/LABELER_QUESTIONS.md)
+are answered. R140–R141: d3 = down to up clockwise = up to down counterclockwise;
+d2 = up to down clockwise; d1 = plus or minus 1. No 6/7 or sign mapping supplied.
+This explicit program request defers numerical neighbor-chart comparison.
+
+Read [LABELER.md](photo2/LABELER.md). Run from the root:
+`.venv/bin/python photo2/label_beads.py`, open printed localhost URL if needed.
+Default is original EXIF-oriented crop [1180,130,1540,520], 360×390. No assistant
+observations imported. Click a point, enter a unique integer and Add bead; select
+or drag to revise. Choose d1/d2/d3, Start series, click the starting bead and next
+numbered beads, End series. Arrows show click order; unknown step counts/signs
+remain unknown. Stable IDs preserve series on renumber/move. Removing a referenced
+bead is blocked until its series are removed, avoiding silent path bridging.
+
+Pan/zoom, raw overlay, independent number-label movement, undo/redo, series cancel/
+remove/last-click undo, autosave/atomic replacement/backup/revision conflicts and
+JSON export implemented. Active series reloads. Schema 2 default output is ignored
+photo2/output/labeler/annotations.json. Original source coordinates, maker numbers,
+stable IDs and historical observation IDs remain distinct. No annotation file
+existed at the schema change; unsupported old schemas fail without overwrite.
+
+Eight Python tests, six JS model tests and one scripted real-handler workflow pass.
+The script uses a minimal DOM/canvas adapter; real graphical browser layout/pointer
+verification remains untested because no browser is installed. HTTP test rerun
+with escalation passes after sandbox socket denial. No dependencies, delegation
+or numerical fits. Original source and prior evidence remain unchanged.
+
+Preflight daisy, branch photo-2-reconstruction-v2, HEAD d72f863, upstream 0/0,
+no stashes. R138 publication was interrupted by the maker's specification, so its
+foundation was not separately committed/pushed. This combined scoped step follows the project commit/push workflow. Check actual
+HEAD/upstream/status before continuing rather than assuming publication from docs.
+Manual annotation outputs stay ignored.
+
+**Next task:** maker runs the program and labels the raw patch; review that evidence
+before numerical fitting. Stop after delivering the program. Keep Q135.1 pending,
+Q132.1 answered and R136 family/sign alternatives. Recommend gpt-6.1-sol / High,
+same session, no /new required.
+
+
+## Historical R135–R137 — Boundary test complete; maker changes the neighbor premise
 
 Read [PLAN.md](PLAN.md) for current problem and overall stages, then
 [boundary experiment](photo2/BOUNDARY_ARC_FIT.md). R135 “continue” compared paired
