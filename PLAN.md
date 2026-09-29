@@ -3,7 +3,20 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
-## Active schedule after the R113 methods review
+## Active schedule after the R114 local pilot
+
+**R114 local pilot completed; stop at review.** [Evidence and limitations](photo2/LOCAL_PILOT.md)
+and [one B/D question](photo2/LOCAL_PILOT_QUESTIONS.md) are now available. Twelve
+selected photo observations comprise ten proposed bodies and two unresolved
+regions; no accepted global indices or pigment labels. Two conditional C/E/G
+graphs remain consistent; the synthetic counterpart demonstrates that consistency
+can hide a 13-index error. C1 photo appearance groups remain shading-sensitive.
+Next bounded task is to preserve the maker's B/D response and revise this local
+inventory, then select a small geometry comparison to distinguish 6/7 families.
+Do not infer an answer from “continue,” expand around the ring, or run later
+phases automatically. Stay here for the visual reply; gpt-6-astra / High, optional
+fresh /new for the next numerical experiment. The schedule below retains the
+R113 phase definitions; step 1 has now reached its specified review checkpoint.
 
 The next aspect remains **local bead observations, relative indices and colors**.
 Do not restart global boundary optimization or attempt the full pattern now.
@@ -12,7 +25,7 @@ assumption that usable local geometry already existed, and later phases listed
 without clear input/output checkpoints. The schedule below replaces those gaps;
 historical rationale follows for provenance, not as competing next-step orders.
 
-1. **One local evidence pilot (next).** Select one diagnostic photo patch with
+1. **One local evidence pilot (R114 completed to review).** Select one diagnostic photo patch with
    several clear bodies, same-color adjacency and a dark/highlight case where
    available. Show raw context, candidate bodies/interior samples and local
    tangent/spacing evidence using B1/B4/B5 before attempting I1 neighbor labels
@@ -136,9 +149,9 @@ the algorithm's inputs. These generalization tests have not yet run.
 | Paper versus necklace | Paper includes cast shadow and visible gaps; uncertain border retained | R104 hue trend survives ±8 px; hue maxima and reference-scaled texture crossings remain unreliable as edge rules |
 | Lighting and paper appearance | Independently parameterized paper pigment; lighting constrained by shadows and specular reflections | R112 four fitting methods and official POV-Ray references saved; fitting deferred |
 | Planar centerline and camera | Spline matching physical arrangement, with global plane/camera view | Deferred; old spline is reference, not ground truth |
-| Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | R109 six methods documented; implementation deferred |
-| Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | R109 image-appearance methods documented; material fitting deferred |
-| Visible-bead indices and colors | Full-string bead_index plus observed palette ID, preserving missing/unknown states | R111 graph + robust color method selected; local pilot pending |
+| Bead locations and exposed shapes | Occlusion-aware 3D candidates with missing/hidden observations | R114 ten manually proposed bodies and two unresolved regions; no automatic detector or accepted outlines |
+| Colors and POV-Ray materials | Pigment/finish/normal/interior separated from lighting effects | R114 C1 appearance baseline splits red-looking surfaces; pigment/material fitting deferred |
+| Visible-bead indices and colors | Full-string bead_index plus observed palette ID, preserving missing/unknown states | R114 local pilot at review; conditional C/E/G index alternatives and twelve appearance summaries; global indices unresolved |
 | Helicity and spacings | Band-pass FFT peaks for directions 1/6/7; direction-1 angle relative to local centerline | R098/R109 maker method saved, width-scale window specified qualitatively; synthetic sign/convention validation pending |
 | Repeating pattern | Shortest compatible divisor of exact N, <400 and not divisible by 13; preserve ambiguity | R112 two methods documented; include candidates below rough 200 estimate; no photo-2 sequence established |
 
@@ -172,7 +185,7 @@ direction until boundary evidence is reliable; bridge ambiguous stretches with
 a smooth large-scale envelope, keeping bead-scale scallops separate.
 
 The active schedule above is the authoritative next-task description. No confirmed
-centerline or bead detections yet exist: establish evidence within the local pilot
+centerline or automatic bead detections yet exist: review the R114 local proposals
 before propagating indices. A perfect global mask is not a prerequisite.
 
 Available supporting boundary task: expand one ambiguous neighborhood along the necklace, show

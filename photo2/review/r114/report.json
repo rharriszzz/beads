@@ -1,0 +1,619 @@
+{
+  "config_sha256": "a3272f19f8a79573d7c95e6c88c5b7b6f900b8f653383f7b9400d0ba94cdabea",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "script_sha256": "a95ce56d5ca6690d7369565ba91e82e83d8257ac44443277eed93eb3da3f1035",
+  "assistance": "Assistant selected this diagnostic patch, twelve interior disks and candidate connections by inspecting RGB only. No old HSV boxes, source pattern, geometry or bead indices used. This is a selected observation set, not a complete rectangular-crop inventory. Peripheral bodies remain context; coverage of the selected set is explicitly conditional on body review.",
+  "parameters": {
+    "disk_radius_px": 3,
+    "thresholds": [
+      0.12,
+      0.18,
+      0.24
+    ],
+    "color_feature": "median encoded RGB, complete linkage Euclidean distance",
+    "path": "bilinear RGB at <=1 px spacing; HSV after interpolation; no smoothing",
+    "crop": [
+      1295,
+      220,
+      1420,
+      350
+    ],
+    "coordinate": "EXIF-transposed source pixel centers, x right, y down"
+  },
+  "summaries": [
+    {
+      "rgb": [
+        0.6941176470588235,
+        0.2901960784313726,
+        0.011764705882352941
+      ],
+      "hue_deg": 23.230095006142474,
+      "hue_strength": 0.9998079243984396,
+      "s": 0.9833333333333334,
+      "v": 0.6941176470588235,
+      "v10": 0.6611764705882353,
+      "v90": 0.7262745098039215
+    },
+    {
+      "rgb": [
+        0.7215686274509804,
+        0.20392156862745098,
+        0.23529411764705882
+      ],
+      "hue_deg": 356.3465679090492,
+      "hue_strength": 0.9996268758143688,
+      "s": 0.715846994535519,
+      "v": 0.7215686274509804,
+      "v10": 0.6854901960784314,
+      "v90": 0.8305882352941176
+    },
+    {
+      "rgb": [
+        0.7019607843137254,
+        0.14901960784313725,
+        0.1803921568627451
+      ],
+      "hue_deg": 356.36188752821556,
+      "hue_strength": 0.9998163822267627,
+      "s": 0.7873563218390804,
+      "v": 0.7019607843137254,
+      "v10": 0.6807843137254902,
+      "v90": 0.7372549019607844
+    },
+    {
+      "rgb": [
+        0.49019607843137253,
+        0.050980392156862744,
+        0.1450980392156863
+      ],
+      "hue_deg": 346.2615047534549,
+      "hue_strength": 0.999948917256235,
+      "s": 0.8909090909090909,
+      "v": 0.49019607843137253,
+      "v10": 0.43058823529411766,
+      "v90": 0.5843137254901961
+    },
+    {
+      "rgb": [
+        0.1411764705882353,
+        0.01568627450980392,
+        0.054901960784313725
+      ],
+      "hue_deg": 341.5370541893716,
+      "hue_strength": 0.9945454857074183,
+      "s": 0.8823529411764706,
+      "v": 0.1411764705882353,
+      "v10": 0.11215686274509803,
+      "v90": 0.1811764705882353
+    },
+    {
+      "rgb": [
+        0.09019607843137255,
+        0.00784313725490196,
+        0.050980392156862744
+      ],
+      "hue_deg": 327.530471779798,
+      "hue_strength": 0.998408958002845,
+      "s": 0.9166666666666666,
+      "v": 0.09019607843137255,
+      "v10": 0.0784313725490196,
+      "v90": 0.13725490196078433
+    },
+    {
+      "rgb": [
+        0.7607843137254902,
+        0.11372549019607843,
+        0.17254901960784313
+      ],
+      "hue_deg": 354.344551334169,
+      "hue_strength": 0.9997002094600288,
+      "s": 0.8512820512820513,
+      "v": 0.7607843137254902,
+      "v10": 0.6705882352941176,
+      "v90": 0.7929411764705881
+    },
+    {
+      "rgb": [
+        0.1607843137254902,
+        0.027450980392156862,
+        0.08235294117647059
+      ],
+      "hue_deg": 335.9676020612464,
+      "hue_strength": 0.9990833957336505,
+      "s": 0.8545454545454546,
+      "v": 0.1607843137254902,
+      "v10": 0.13725490196078433,
+      "v90": 0.2368627450980392
+    },
+    {
+      "rgb": [
+        0.6980392156862745,
+        0.12549019607843137,
+        0.21176470588235294
+      ],
+      "hue_deg": 351.35944754276335,
+      "hue_strength": 0.9991112056994481,
+      "s": 0.8258426966292135,
+      "v": 0.6980392156862745,
+      "v10": 0.6580392156862745,
+      "v90": 0.7458823529411764
+    },
+    {
+      "rgb": [
+        0.17254901960784313,
+        0.01568627450980392,
+        0.047058823529411764
+      ],
+      "hue_deg": 349.47748469246835,
+      "hue_strength": 0.9992878282067781,
+      "s": 0.9024390243902439,
+      "v": 0.17254901960784313,
+      "v10": 0.16,
+      "v90": 0.18588235294117647
+    },
+    {
+      "rgb": [
+        0.788235294117647,
+        0.38823529411764707,
+        0.09411764705882353
+      ],
+      "hue_deg": 26.50255819095922,
+      "hue_strength": 0.9995109593383298,
+      "s": 0.8817733990147784,
+      "v": 0.788235294117647,
+      "v10": 0.7686274509803922,
+      "v90": 0.8564705882352941
+    },
+    {
+      "rgb": [
+        0.7098039215686275,
+        0.28627450980392155,
+        0.20784313725490197
+      ],
+      "hue_deg": 9.668531137234586,
+      "hue_strength": 0.9988585785360097,
+      "s": 0.7103825136612021,
+      "v": 0.7098039215686275,
+      "v10": 0.6627450980392157,
+      "v90": 0.7482352941176471
+    }
+  ],
+  "palette_groups": {
+    "0.12": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      5,
+      3,
+      5,
+      3,
+      5,
+      6,
+      2
+    ],
+    "0.18": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      5,
+      3,
+      5,
+      3,
+      5,
+      1,
+      2
+    ],
+    "0.24": [
+      1,
+      2,
+      2,
+      3,
+      4,
+      4,
+      2,
+      4,
+      2,
+      4,
+      1,
+      2
+    ]
+  },
+  "anchor_perturbations": [
+    {
+      "shift": [
+        -2,
+        0
+      ],
+      "nearest_groups": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        2,
+        5,
+        2,
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "shift": [
+        2,
+        0
+      ],
+      "nearest_groups": [
+        1,
+        3,
+        3,
+        4,
+        5,
+        5,
+        3,
+        5,
+        3,
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "shift": [
+        0,
+        -2
+      ],
+      "nearest_groups": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        3,
+        5,
+        3,
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "shift": [
+        0,
+        2
+      ],
+      "nearest_groups": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        3,
+        5,
+        3,
+        5,
+        1,
+        2
+      ]
+    }
+  ],
+  "leave_one_anchor_out_fixed_groups": [
+    {
+      "id": "A",
+      "nearest_group": 1,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "B",
+      "nearest_group": 2,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "C",
+      "nearest_group": 3,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "D",
+      "nearest_group": 3,
+      "same_group": false,
+      "group_has_other_samples": false
+    },
+    {
+      "id": "E",
+      "nearest_group": 5,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "F",
+      "nearest_group": 5,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "G",
+      "nearest_group": 3,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "H",
+      "nearest_group": 5,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "I",
+      "nearest_group": 3,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "J",
+      "nearest_group": 5,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "K",
+      "nearest_group": 1,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "L",
+      "nearest_group": 2,
+      "same_group": true,
+      "group_has_other_samples": true
+    }
+  ],
+  "paths": [
+    {
+      "id": "BC",
+      "u": "B",
+      "v": "C",
+      "purpose": "Two red interiors: candidate separation",
+      "start": [
+        1360.0,
+        256.0
+      ],
+      "end": [
+        1348.0,
+        280.0
+      ],
+      "length_px": 26.832815729997478,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.5061973624692381,
+          "min_t": 0.4074074074074074,
+          "endpoint_v_min": 0.6932252804588276,
+          "dip": 0.1870279179895895
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.5475187605906529,
+          "min_t": 0.37037037037037035,
+          "endpoint_v_min": 0.7019607843137254,
+          "dip": 0.15444202372307259
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.5939690132534928,
+          "min_t": 0.2962962962962963,
+          "endpoint_v_min": 0.734050866709797,
+          "dip": 0.1400818534563042
+        }
+      ]
+    },
+    {
+      "id": "CG",
+      "u": "C",
+      "v": "G",
+      "purpose": "Same-color neighbors: candidate separation",
+      "start": [
+        1348.0,
+        280.0
+      ],
+      "end": [
+        1373.0,
+        303.0
+      ],
+      "length_px": 33.97057550292606,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.39424987715288423,
+          "min_t": 0.3529411764705882,
+          "endpoint_v_min": 0.689452644742141,
+          "dip": 0.29520276758925673
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.36984870072596426,
+          "min_t": 0.3529411764705882,
+          "endpoint_v_min": 0.7019607843137254,
+          "dip": 0.3321120835877612
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.33546955957689834,
+          "min_t": 0.3529411764705882,
+          "endpoint_v_min": 0.7007690065031174,
+          "dip": 0.365299446926219
+        }
+      ]
+    },
+    {
+      "id": "EF",
+      "u": "E",
+      "v": "F",
+      "purpose": "Dark bodies: reflection/seam ambiguity",
+      "start": [
+        1382.0,
+        280.0
+      ],
+      "end": [
+        1404.0,
+        262.0
+      ],
+      "length_px": 28.42534080710379,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.07793137517250433,
+          "min_t": 0.41379310344827586,
+          "endpoint_v_min": 0.14829875064543657,
+          "dip": 0.07036737547293224
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.08670350423165707,
+          "min_t": 0.4482758620689655,
+          "endpoint_v_min": 0.10196078431372549,
+          "dip": 0.01525728008206842
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.08951483840473913,
+          "min_t": 0.3103448275862069,
+          "endpoint_v_min": 0.08739488766578263,
+          "dip": -0.0021199507389565025
+        }
+      ]
+    },
+    {
+      "id": "BD",
+      "u": "B",
+      "v": "D",
+      "purpose": "Uncertain upper cap: one or two bodies?",
+      "start": [
+        1360.0,
+        256.0
+      ],
+      "end": [
+        1377.0,
+        247.0
+      ],
+      "length_px": 19.235384061671343,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.5275309740356858,
+          "min_t": 0.7000000000000001,
+          "endpoint_v_min": 0.5751405136755193,
+          "dip": 0.0476095396398335
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.43455882352941183,
+          "min_t": 0.75,
+          "endpoint_v_min": 0.49019607843137253,
+          "dip": 0.0556372549019607
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.3599900713392178,
+          "min_t": 0.75,
+          "endpoint_v_min": 0.4401768226439732,
+          "dip": 0.08018675130475539
+        }
+      ]
+    },
+    {
+      "id": "B-control",
+      "u": "B",
+      "v": "B",
+      "start": [
+        1356.0,
+        252.0
+      ],
+      "end": [
+        1361.0,
+        257.0
+      ],
+      "purpose": "Short within-B shading control",
+      "length_px": 7.0710678118654755,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.6958392573479646,
+          "min_t": 0.625,
+          "endpoint_v_min": 0.7226355997593807,
+          "dip": 0.026796342411416152
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.728921568627451,
+          "min_t": 0.75,
+          "endpoint_v_min": 0.7490196078431373,
+          "dip": 0.020098039215686203
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.7067761649465013,
+          "min_t": 0.75,
+          "endpoint_v_min": 0.668127776478551,
+          "dip": -0.03864838846795027
+        }
+      ]
+    }
+  ],
+  "graphs": {
+    "H1": {
+      "indices": {
+        "C": 0,
+        "E": 6,
+        "G": 7
+      },
+      "conflicts": [],
+      "duplicates": [],
+      "disconnected": []
+    },
+    "H2": {
+      "indices": {
+        "C": 0,
+        "E": 7,
+        "G": 6
+      },
+      "conflicts": [],
+      "duplicates": [],
+      "disconnected": []
+    }
+  },
+  "checks": {
+    "contradiction_detected": true,
+    "duplicate_detected": true,
+    "disconnected_retained": true,
+    "hue_wrap": true
+  },
+  "manual_tangent": {
+    "endpoints": [
+      [
+        1305,
+        290
+      ],
+      [
+        1410,
+        280
+      ]
+    ],
+    "angle_image_deg": -5.440332031005506,
+    "endpoint_y_perturbation_3px_angles": [
+      -8.664135433108068,
+      -2.181641403551466
+    ],
+    "status": "visual large-scale direction only; not physical centerline or camera calibration"
+  }
+}

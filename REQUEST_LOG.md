@@ -832,3 +832,88 @@ for removed stale phrases returned no matches (normal exit1, not a failed check)
 No runtime tests/renders needed for this documentation-only revision, no failed
 validation and no source/image/artifact changes. Scoped publication and remote
 tip/final working-tree verification follow this pre-delivery record.
+
+## R114 — Continue the local observation/index/color pilot (2026-09-28)
+
+User: “continue”
+
+Executed only the R113 next bounded step, stopping at local illustrated review.
+Preflight daisy, clean 2222556 on photo-2-reconstruction-v2, tracked upstream,
+no stashes. Initial git fetch failed because the sandbox cannot write
+.git/FETCH_HEAD; reran with required escalation, succeeded, upstream0/0. Read
+AGENTS, handoff, latest request entries, PLAN, applicable METHODS, prior shape
+quick model/task rows at 2c4c116 and R100/R104 measurement evidence. An initial
+read used nonexistent root QUESTIONS.md and later a nonexistent hue-path config;
+corrected to the actual tracked question/evidence files. No branch switch,
+dependencies, delegation, supplied usage/status or ownership transfer.
+
+### R114 outcome
+
+Restated four indexing methods and used the already selected I1/C1 baseline
+with assisted B1/B4/B5 evidence. Added local_pilot.py and two explicit diagnostic
+configs; [full evidence](photo2/LOCAL_PILOT.md) links source hashes, raw context,
+candidate interiors, uncertainty panels, sampling routes, palette/neighbor
+alternatives, CSV tables and all reproduction commands. No automatic detector,
+complete patch inventory, accepted outlines or global photo indices claimed.
+Twelve selected regions comprise ten proposed bodies and two unresolved D/L
+regions, all retained. Observation IDs, conditional local alternatives and blank
+accepted/full-string indices are separate. No color-range or pattern lookup.
+
+B→C and C→G V valleys persist under ±2 px path shifts; dark E→F changes from
+.070 to −.002 dip, and B→D remains inconclusive. Manual tangent is −5.44° with
+−8.66°…−2.18° endpoint perturbation range, not a fitted centerline or helicity.
+Conditional C/E/G indices 0/6/7 versus 0/7/6 both satisfy a triangle; neither is
+selected or propagated. Median RGB complete-linkage appearance groups at
+.12/.18/.24 number six/five/four; .18 splits red-looking B from C/G/I and groups
+uncertain L with B. Three of48 shifted-disk classifications change. Fixed-group
+leave-one-prototype-out diagnostic agrees11/12, with D's singleton unsupported;
+not independent accuracy or recovered pigments. I2/C2 follow-ups remain optional
+targeted work; no full-ring, count, repeat, FFT or appearance fitting this turn.
+
+New local POV-Ray counterpart reuses the unchanged bead macro, with a straight
+planar axis and 3D beads, changed palette/background and declared settings.
+Nine RGB-selected anchors and graph hypotheses frozen before ID evaluation;
+ID/palette truth enters only the separate evaluator. Nine distinct bodies, pure
+29-pixel sample disks, 0/36 color-pair errors at each threshold. Both synthetic
+graphs are consistent, but H1 has3/3 correct signed edges; H2 has0/3 and retains
+one −13 index error after best allowed component reversal. Six additional
+observations have no inferred component indices. This is a conditional assisted
+sanity check and failure witness, not an automatic inverse solver; detection
+coverage/shape metrics and generality remain unmeasured. The synthetic is much
+larger/sharper than the photo; equal pixel perturbations are not scale-matched.
+
+Saved and asked [one B/D body question](photo2/LOCAL_PILOT_QUESTIONS.md) with
+curated raw/sample image: separate bead, shaded part of B, or unclear. Pending;
+no answer inferred. Updated METHODS with measured limitations, PLAN and handoff
+to the review checkpoint. Next: save the maker's response and revise this local
+inventory, then select a bounded geometry comparison for 6/7 families. Recommend
+gpt-6-astra / High; stay here for visual review, optional fresh /new for the next
+numerical experiment. No automatic phase/session advance.
+
+### R114 checks and stopping point
+
+Python3.12.14 / existing pinned packages; POV-Ray3.7.0.10.unofficial. Both renders
+completed. First analysis failed on duplicate explicit control endpoint keywords
+in dict(); corrected before results were used. Plot extents were adjusted to
+include synthetic endpoints. One atomic PLAN patch failed on stale context and
+was reapplied successfully. No unresolved execution/validation failure.
+
+Passed graph contradiction, duplicate-index and disconnected-node controls, plus
+circular-hue wrap; source/config/script SHA256 checks for both reports; all nine
+synthetic disk purities and palette/graph evaluation assertions; blank accepted
+indices and 12/9 observation accounting; 89 local link paths; unchanged initial
+brief; byte-identical reproduction of all ten photo artifacts; git diff --check.
+Inspected raw/question/path/inventory/graph panels, with color summaries reviewed
+numerically. Routine output/scene/truth masks are ignored; curated images, reports
+and small observation/edge tables are tracked. Original photos, beads.pov and
+prior experiments are unchanged. Scoped add/commit/push and remote-tip/final
+status verification follow this pre-delivery record.
+
+### R114 final staging check
+
+The staged whitespace check then exposed csv.DictWriter's default CRLF endings
+as trailing whitespace in four newly tracked tables. Set the writer explicitly
+to LF, regenerated both analyses/reports and the evaluator output, and repeated
+all ten photo-artifact byte comparisons plus both provenance/control checks;
+all passed. Numerical inputs/results and curated images were unchanged. Final
+staged whitespace verification follows this correction.

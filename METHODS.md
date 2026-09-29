@@ -644,6 +644,13 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R114 pilot evidence:** [assisted local observations and synthetic check](photo2/LOCAL_PILOT.md)
+implement the first I1/C1 diagnostic. Both candidate triangles are algebraically
+consistent, while a wrong synthetic alternative retains a 13-index error after
+global alignment. Photo RGB appearance clusters do not yet resolve pigments.
+The method catalog below remains a proposal for broader inference, not a claim
+of automatic detection or accepted photo indices.
+
 R111 selects the next inference objective: every clearly visible bead should have
 a `bead_index` and a color. FFTs are **candidates to explore in two upstream uses**
 (background/shadow separation and bead directions/spacings/helicity), not a required

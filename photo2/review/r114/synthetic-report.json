@@ -1,0 +1,485 @@
+{
+  "config_sha256": "4e42424f6a4cc349b47d330efed60312991820f6b6bbe8d2a3395f1ab607a1ae",
+  "image_sha256": "9082287cfeb2505527b81286d151effd2be34f00d3002b9f36ee7cfe40001609",
+  "script_sha256": "a95ce56d5ca6690d7369565ba91e82e83d8257ac44443277eed93eb3da3f1035",
+  "assistance": "Nine interior anchors and two graph alternatives selected manually from RGB before reading truth.png. Generator/model family is known, but masks, bead indices and palette assignments are not inference inputs. Synthetic is a simplified straight local counterpart, not photo-matched geometry. No complete-crop detector claim.",
+  "parameters": {
+    "disk_radius_px": 3,
+    "thresholds": [
+      0.12,
+      0.18,
+      0.24
+    ],
+    "color_feature": "median encoded RGB, complete linkage Euclidean distance",
+    "path": "bilinear RGB at <=1 px spacing; HSV after interpolation; no smoothing",
+    "crop": [
+      285,
+      60,
+      700,
+      485
+    ],
+    "coordinate": "EXIF-transposed source pixel centers, x right, y down"
+  },
+  "summaries": [
+    {
+      "rgb": [
+        0.12941176470588237,
+        0.12941176470588237,
+        0.12941176470588237
+      ],
+      "hue_deg": null,
+      "hue_strength": 0,
+      "s": 0.0,
+      "v": 0.12941176470588237,
+      "v10": 0.12941176470588237,
+      "v90": 0.12941176470588237
+    },
+    {
+      "rgb": [
+        0.12941176470588237,
+        0.12941176470588237,
+        0.12941176470588237
+      ],
+      "hue_deg": null,
+      "hue_strength": 0,
+      "s": 0.0,
+      "v": 0.12941176470588237,
+      "v10": 0.12941176470588237,
+      "v90": 0.13333333333333333
+    },
+    {
+      "rgb": [
+        0.12549019607843137,
+        0.12549019607843137,
+        0.12549019607843137
+      ],
+      "hue_deg": null,
+      "hue_strength": 0,
+      "s": 0.0,
+      "v": 0.12549019607843137,
+      "v10": 0.12156862745098039,
+      "v90": 0.12549019607843137
+    },
+    {
+      "rgb": [
+        0.8549019607843137,
+        0.7019607843137254,
+        0.2823529411764706
+      ],
+      "hue_deg": 44.037869739290734,
+      "hue_strength": 0.9999968708114639,
+      "s": 0.6697247706422018,
+      "v": 0.8549019607843137,
+      "v10": 0.8470588235294118,
+      "v90": 0.8588235294117647
+    },
+    {
+      "rgb": [
+        0.8313725490196079,
+        0.6862745098039216,
+        0.27450980392156865
+      ],
+      "hue_deg": 44.06796113565043,
+      "hue_strength": 0.9999953387048705,
+      "s": 0.6698113207547169,
+      "v": 0.8313725490196079,
+      "v10": 0.8235294117647058,
+      "v90": 0.84
+    },
+    {
+      "rgb": [
+        0.21568627450980393,
+        0.5176470588235295,
+        0.7607843137254902
+      ],
+      "hue_deg": 206.59579737806158,
+      "hue_strength": 0.999995563395304,
+      "s": 0.717948717948718,
+      "v": 0.7607843137254902,
+      "v10": 0.7568627450980392,
+      "v90": 0.7654901960784314
+    },
+    {
+      "rgb": [
+        0.21176470588235294,
+        0.5098039215686274,
+        0.7490196078431373
+      ],
+      "hue_deg": 206.581325418982,
+      "hue_strength": 0.9999965218566866,
+      "s": 0.71875,
+      "v": 0.7490196078431373,
+      "v10": 0.7450980392156863,
+      "v90": 0.7529411764705882
+    },
+    {
+      "rgb": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "hue_deg": null,
+      "hue_strength": 0,
+      "s": 0.0,
+      "v": 0.11372549019607843,
+      "v10": 0.11372549019607843,
+      "v90": 0.11372549019607843
+    },
+    {
+      "rgb": [
+        0.20392156862745098,
+        0.4980392156862745,
+        0.7294117647058823
+      ],
+      "hue_deg": 206.59090899126514,
+      "hue_strength": 0.999995324717533,
+      "s": 0.717391304347826,
+      "v": 0.7294117647058823,
+      "v10": 0.7215686274509804,
+      "v90": 0.7372549019607844
+    }
+  ],
+  "palette_groups": {
+    "0.12": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      1,
+      3
+    ],
+    "0.18": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      1,
+      3
+    ],
+    "0.24": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      1,
+      3
+    ]
+  },
+  "anchor_perturbations": [
+    {
+      "shift": [
+        -2,
+        0
+      ],
+      "nearest_groups": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "shift": [
+        2,
+        0
+      ],
+      "nearest_groups": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "shift": [
+        0,
+        -2
+      ],
+      "nearest_groups": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "shift": [
+        0,
+        2
+      ],
+      "nearest_groups": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ]
+    }
+  ],
+  "leave_one_anchor_out_fixed_groups": [
+    {
+      "id": "S1",
+      "nearest_group": 1,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S2",
+      "nearest_group": 1,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S3",
+      "nearest_group": 1,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S4",
+      "nearest_group": 2,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S5",
+      "nearest_group": 2,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S6",
+      "nearest_group": 3,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S7",
+      "nearest_group": 3,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S8",
+      "nearest_group": 1,
+      "same_group": true,
+      "group_has_other_samples": true
+    },
+    {
+      "id": "S9",
+      "nearest_group": 3,
+      "same_group": true,
+      "group_has_other_samples": true
+    }
+  ],
+  "paths": [
+    {
+      "id": "S1S2",
+      "u": "S1",
+      "v": "S2",
+      "purpose": "Adjacent same-color dark surfaces",
+      "start": [
+        365.0,
+        155.0
+      ],
+      "end": [
+        352.0,
+        285.0
+      ],
+      "length_px": 130.64838307457157,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.06352132990919017,
+          "min_t": 0.3969465648854962,
+          "endpoint_v_min": 0.12941176470588237,
+          "dip": 0.0658904347966922
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.06430175123484508,
+          "min_t": 0.3969465648854962,
+          "endpoint_v_min": 0.12941176470588237,
+          "dip": 0.06511001347103729
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.06897380554957343,
+          "min_t": 0.3893129770992366,
+          "endpoint_v_min": 0.12941176470588237,
+          "dip": 0.06043795915630894
+        }
+      ]
+    },
+    {
+      "id": "S4S5",
+      "u": "S4",
+      "v": "S5",
+      "purpose": "Adjacent same-color yellow surfaces",
+      "start": [
+        460.0,
+        218.0
+      ],
+      "end": [
+        448.0,
+        365.0
+      ],
+      "length_px": 147.48898263938224,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.04313725490196078,
+          "min_t": 0.40540540540540543,
+          "endpoint_v_min": 0.8268388499978234,
+          "dip": 0.7837015950958627
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.043137254901960784,
+          "min_t": 0.38513513513513514,
+          "endpoint_v_min": 0.8313725490196079,
+          "dip": 0.7882352941176471
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.043137254901960784,
+          "min_t": 0.38513513513513514,
+          "endpoint_v_min": 0.8359322510545485,
+          "dip": 0.7927949961525877
+        }
+      ]
+    },
+    {
+      "id": "S6S9",
+      "u": "S6",
+      "v": "S9",
+      "purpose": "Adjacent blue surfaces and occlusion",
+      "start": [
+        550.0,
+        292.0
+      ],
+      "end": [
+        539.0,
+        422.0
+      ],
+      "length_px": 130.4645545732633,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.26274509803921564,
+          "min_t": 0.4427480916030534,
+          "endpoint_v_min": 0.724856836735783,
+          "dip": 0.4621117386965674
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.26274509803921564,
+          "min_t": 0.4580152671755725,
+          "endpoint_v_min": 0.7294117647058823,
+          "dip": 0.4666666666666667
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.26274509803921564,
+          "min_t": 0.45038167938931295,
+          "endpoint_v_min": 0.7333333333333333,
+          "dip": 0.47058823529411764
+        }
+      ]
+    },
+    {
+      "id": "S1-control",
+      "u": "S1",
+      "v": "S1",
+      "start": [
+        354.0,
+        145.0
+      ],
+      "end": [
+        373.0,
+        164.0
+      ],
+      "purpose": "Within-body shading control",
+      "length_px": 26.870057685088806,
+      "offsets": [
+        {
+          "offset_px": -2,
+          "min_v": 0.12941176470588234,
+          "min_t": 0.4444444444444444,
+          "endpoint_v_min": 0.12549019607843137,
+          "dip": -0.0039215686274509665
+        },
+        {
+          "offset_px": 0,
+          "min_v": 0.12941176470588234,
+          "min_t": 0.5185185185185185,
+          "endpoint_v_min": 0.12549019607843137,
+          "dip": -0.0039215686274509665
+        },
+        {
+          "offset_px": 2,
+          "min_v": 0.12549019607843137,
+          "min_t": 0.7777777777777777,
+          "endpoint_v_min": 0.12549019607843137,
+          "dip": 0.0
+        }
+      ]
+    }
+  ],
+  "graphs": {
+    "H1": {
+      "indices": {
+        "S1": 0,
+        "S2": -1,
+        "S4": 6
+      },
+      "conflicts": [],
+      "duplicates": [],
+      "disconnected": []
+    },
+    "H2": {
+      "indices": {
+        "S1": 0,
+        "S2": 1,
+        "S4": 7
+      },
+      "conflicts": [],
+      "duplicates": [],
+      "disconnected": []
+    }
+  },
+  "checks": {
+    "contradiction_detected": true,
+    "duplicate_detected": true,
+    "disconnected_retained": true,
+    "hue_wrap": true
+  }
+}

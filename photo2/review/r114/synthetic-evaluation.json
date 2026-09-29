@@ -1,0 +1,147 @@
+{
+  "assistance": "All observation anchors and proposed edges supplied manually from RGB. No automatic detection. Evaluator maps anchors to rendered IDs only after frozen RGB analysis.",
+  "observations": [
+    {
+      "id": "S1",
+      "truth_index": 0,
+      "truth_palette": 2,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S2",
+      "truth_index": -1,
+      "truth_palette": 2,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S3",
+      "truth_index": -2,
+      "truth_palette": 2,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S4",
+      "truth_index": 6,
+      "truth_palette": 1,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S5",
+      "truth_index": 5,
+      "truth_palette": 1,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S6",
+      "truth_index": 12,
+      "truth_palette": 0,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S7",
+      "truth_index": 19,
+      "truth_palette": 0,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S8",
+      "truth_index": 18,
+      "truth_palette": 2,
+      "disk_purity": 1.0
+    },
+    {
+      "id": "S9",
+      "truth_index": 11,
+      "truth_palette": 0,
+      "disk_purity": 1.0
+    }
+  ],
+  "unique_bodies": 9,
+  "signed_edges": [
+    {
+      "hypothesis": "H1",
+      "u": "S1",
+      "v": "S2",
+      "proposed": -1,
+      "actual": -1,
+      "correct": true
+    },
+    {
+      "hypothesis": "H1",
+      "u": "S1",
+      "v": "S4",
+      "proposed": 6,
+      "actual": 6,
+      "correct": true
+    },
+    {
+      "hypothesis": "H1",
+      "u": "S2",
+      "v": "S4",
+      "proposed": 7,
+      "actual": 7,
+      "correct": true
+    },
+    {
+      "hypothesis": "H2",
+      "u": "S1",
+      "v": "S2",
+      "proposed": 1,
+      "actual": -1,
+      "correct": false
+    },
+    {
+      "hypothesis": "H2",
+      "u": "S1",
+      "v": "S4",
+      "proposed": 7,
+      "actual": 6,
+      "correct": false
+    },
+    {
+      "hypothesis": "H2",
+      "u": "S2",
+      "v": "S4",
+      "proposed": 6,
+      "actual": 7,
+      "correct": false
+    }
+  ],
+  "color_pair_checks": {
+    "0.12": {
+      "errors": [],
+      "pairs": 36
+    },
+    "0.18": {
+      "errors": [],
+      "pairs": 36
+    },
+    "0.24": {
+      "errors": [],
+      "pairs": 36
+    }
+  },
+  "one_component_alignment": {
+    "H1": {
+      "sign": 1,
+      "origin": 0,
+      "errors": {
+        "S1": 0,
+        "S2": 0,
+        "S4": 0
+      },
+      "exact": 3
+    },
+    "H2": {
+      "sign": -1,
+      "origin": 0,
+      "errors": {
+        "S1": 0,
+        "S2": 0,
+        "S4": -13
+      },
+      "exact": 2
+    }
+  },
+  "detection_coverage": "not measured: assisted anchors, no reference-blind detector or complete inventory"
+}

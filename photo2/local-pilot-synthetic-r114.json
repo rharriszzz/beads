@@ -1,0 +1,27 @@
+{
+  "image":"photo2/output/r114/synthetic/appearance.png",
+  "crop":[285,60,700,485],
+  "assistance":"Nine interior anchors and two graph alternatives selected manually from RGB before reading truth.png. Generator/model family is known, but masks, bead indices and palette assignments are not inference inputs. Synthetic is a simplified straight local counterpart, not photo-matched geometry. No complete-crop detector claim.",
+  "observations":[
+    {"id":"S1","xy":[365,155],"visibility":"substantial body","body_status":"proposed","reason":"Dark interior right/below highlight."},
+    {"id":"S2","xy":[352,285],"visibility":"substantial body","body_status":"proposed","reason":"Dark interior right/below highlight; same-color neighbor of S1."},
+    {"id":"S3","xy":[340,416],"visibility":"substantial body","body_status":"proposed","reason":"Dark lower visible body, separate from S2 by occlusion seam."},
+    {"id":"S4","xy":[460,218],"visibility":"substantial body","body_status":"proposed","reason":"Yellow interior right/below highlight."},
+    {"id":"S5","xy":[448,365],"visibility":"substantial body","body_status":"proposed","reason":"Yellow lower body away from white highlight."},
+    {"id":"S6","xy":[550,292],"visibility":"substantial body","body_status":"proposed","reason":"Blue interior right/below highlight."},
+    {"id":"S7","xy":[655,220],"visibility":"substantial body","body_status":"proposed","reason":"Blue upper-right interior away from highlight."},
+    {"id":"S8","xy":[641,377],"visibility":"substantial body","body_status":"proposed","reason":"Dark body away from reflection."},
+    {"id":"S9","xy":[539,422],"visibility":"partial body","body_status":"proposed","reason":"Blue lower cap avoiding highlight and seam."}
+  ],
+  "paths":[
+    {"id":"S1S2","u":"S1","v":"S2","purpose":"Adjacent same-color dark surfaces"},
+    {"id":"S4S5","u":"S4","v":"S5","purpose":"Adjacent same-color yellow surfaces"},
+    {"id":"S6S9","u":"S6","v":"S9","purpose":"Adjacent blue surfaces and occlusion"},
+    {"id":"S1-control","u":"S1","v":"S1","start":[354,145],"end":[373,164],"purpose":"Within-body shading control"}
+  ],
+  "graph_nodes":["S1","S2","S4"],
+  "hypotheses":{
+    "H1":[["S1","S2",-1],["S1","S4",6],["S2","S4",7]],
+    "H2":[["S1","S2",1],["S1","S4",7],["S2","S4",6]]
+  }
+}

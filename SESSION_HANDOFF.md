@@ -4,11 +4,46 @@
 
 | Image / artifact | Active inventory | Evidence / unresolved issues |
 | --- | --- | --- |
-| beads-photo-2.jpg | None on this branch | [Six sample contexts](photo2/review/r092/sample-context.png), [raw/FFT comparisons](photo2/review/r092/raw-and-fft.png), [scale plot](photo2/review/r092/scale-comparison.png); no confirmed silhouette, centerline or bead indices |
+| beads-photo-2.jpg | R114 assisted local proposals: ten bodies and two unresolved regions | [Local pilot](photo2/LOCAL_PILOT.md), [inventory](photo2/review/r114/inventory.png), [B/D question](photo2/LOCAL_PILOT_QUESTIONS.md); no confirmed silhouette, centerline, global bead indices or pigment labels |
 | Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
 | Photo-2 R100 hue figures | None; same T1/T2 routes | [T1 hue](photo2/review/r100/T1-hue.png), [T2 hue](photo2/review/r100/T2-hue.png); local red-to-magenta change, not a recovered edge; overlap-map provenance confirmed by maker |
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |
 | Historical generated JPEGs | Remain on photo-2-reconstruction | See [prior-work record](photo2/PRIOR_WORK.md); uncertainties and missing indices are not resolved or transferred by this restart |
+
+## R114 — Local observation/index/color pilot, stopped at review
+
+Standalone “continue” executed the R113 bounded pilot. Machine daisy, clean
+2222556 on photo-2-reconstruction-v2, no stashes. Initial sandbox fetch could not
+write .git/FETCH_HEAD; escalated fetch succeeded and verified upstream0/0. Read
+workflow, handoff/latest requests/plan, indexing/color methods, shape model and
+R100/R104 evidence. No dependencies, delegation, scene replacement or transfer.
+
+[Pilot evidence](photo2/LOCAL_PILOT.md) and [configuration](photo2/local-pilot-r114.json)
+declare all assistant-selected anchors/paths/tangent. Ten bodies proposed, D/L
+unresolved, twelve appearance summaries; no complete-crop detection claim or
+accepted global indices. B→C/C→G valleys persist under ±2 px path shifts; E→F
+does not. C1 produces six/five/four groups across distance .12/.18/.24, splitting
+red-looking faces and grouping uncertain orange L with B at .18. Do not call
+these recovered pigments. Photo triangle C/E/G has local alternatives 0/6/7 and
+0/7/6; both are conditional, neither selected or propagated.
+
+New simplified POV-Ray counterpart reuses the bead macro on a straight planar
+axis with 3D beads. Nine RGB-selected anchors were frozen before ID evaluation.
+Evaluator-only truth finds nine distinct/pure sampled bodies and 0/36 color-pair
+errors at each tested threshold. Both triangles pass graph checks, but H1 matches
+3/3 signed edges; H2 matches0/3 and retains a −13 index error on one node after
+its best component reversal. This validates a failure witness, not an automatic
+image-only selector or photo geometry fit. Synthetic sizes/appearance differ;
+generality and full detection coverage remain untested. Code, configs, curated
+images, reports and small tables are tracked; routine scene/masks/CSV stay ignored.
+
+**Stopping point:** [one B/D question](photo2/LOCAL_PILOT_QUESTIONS.md), pending.
+Next task: preserve the answer and revise this observation set; then choose a
+bounded geometry comparison to resolve 6/7 families. Do not infer labels from
+“continue” or expand the ring automatically. Both FFT explorations stay pending
+and optional to adopt. Recommend gpt-6-astra / High; stay here for the visual
+answer, optional fresh /new for the next numerical experiment. Checks and actual
+publication outcomes are recorded in R114 below/REQUEST_LOG; no supplied usage.
 
 ## R113 — Recover the 13 explanation and reconcile the active plan
 

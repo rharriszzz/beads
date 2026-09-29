@@ -1,0 +1,33 @@
+{
+  "image": "beads-photo-2.jpg",
+  "crop": [1295, 220, 1420, 350],
+  "tangent": [[1305,290],[1410,280]],
+  "question_pair": ["B","D"],
+  "assistance": "Assistant selected this diagnostic patch, twelve interior disks and candidate connections by inspecting RGB only. No old HSV boxes, source pattern, geometry or bead indices used. This is a selected observation set, not a complete rectangular-crop inventory. Peripheral bodies remain context; coverage of the selected set is explicitly conditional on body review.",
+  "observations": [
+    {"id":"A","xy":[1335,251],"visibility":"partial body","body_status":"proposed","reason":"Yellow/orange interior of upper cap, away from bright left patch."},
+    {"id":"B","xy":[1360,256],"visibility":"substantial body","body_status":"proposed","reason":"Red surface right of reflection and inside dark lower edge."},
+    {"id":"C","xy":[1348,280],"visibility":"substantial body","body_status":"proposed","reason":"Red right-side interior, avoiding left reflection and outer seam."},
+    {"id":"D","xy":[1377,247],"visibility":"uncertain cap","body_status":"unresolved separation from B","reason":"Dark reddish upper cap; could be separate body or connected shaded part. Kept in coverage."},
+    {"id":"E","xy":[1382,280],"visibility":"substantial dark body","body_status":"proposed","reason":"Dark surface below/right of reflection near 1376,270; disk may be shading-sensitive."},
+    {"id":"F","xy":[1404,262],"visibility":"substantial dark body","body_status":"proposed","reason":"Dark surface below reflection near 1398,250, away from bright spot."},
+    {"id":"G","xy":[1373,303],"visibility":"substantial body","body_status":"proposed","reason":"Red right-side interior, away from reflection near 1363,298."},
+    {"id":"H","xy":[1408,294],"visibility":"substantial dark body","body_status":"proposed","reason":"Dark surface below/right of reflection near 1402,285; possible mixed-edge sensitivity."},
+    {"id":"I","xy":[1399,318],"visibility":"substantial body","body_status":"proposed","reason":"Red right-side interior away from reflection near 1390,309."},
+    {"id":"J","xy":[1348,316],"visibility":"substantial dark body","body_status":"proposed","reason":"Dark right/lower surface beyond reflection near 1342,309."},
+    {"id":"K","xy":[1332,332],"visibility":"partial body","body_status":"proposed","reason":"Yellow/orange lower cap right of bright patch, inside visible surface."},
+    {"id":"L","xy":[1349,335],"visibility":"uncertain fragment","body_status":"unresolved fragment or body","reason":"Low-contrast orange edge fragment adjacent to K. Do not assign a new bead or discard before review."}
+  ],
+  "paths": [
+    {"id":"BC","u":"B","v":"C","purpose":"Two red interiors: candidate separation"},
+    {"id":"CG","u":"C","v":"G","purpose":"Same-color neighbors: candidate separation"},
+    {"id":"EF","u":"E","v":"F","purpose":"Dark bodies: reflection/seam ambiguity"},
+    {"id":"BD","u":"B","v":"D","purpose":"Uncertain upper cap: one or two bodies?"},
+    {"id":"B-control","u":"B","v":"B","start":[1356,252],"end":[1361,257],"purpose":"Short within-B shading control"}
+  ],
+  "graph_nodes":["C","E","G"],
+  "hypotheses": {
+    "H1": [["C","E",6],["E","G",1],["C","G",7]],
+    "H2": [["C","E",7],["E","G",-1],["C","G",6]]
+  }
+}
