@@ -1,6 +1,42 @@
 # Beads session handoff — new branch
 
-## Current R117–R125 — Forward calibration completed; photo fit next
+## Current R126–R128 — Seven-body fit stopped at illustrated review
+
+Read [local surface fit](photo2/LOCAL_SURFACE_FIT.md), its figures and
+[Q126.1](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md). Two tentative neighbor charts survive.
+Six assistant-proposed regions were fitted and G withheld. Orthographic H1/H2
+training overlap is 59.3%/60.2%, G overlap 76.1%/80.5%. C and F retain substantial
+outline errors; scores against rough regions do not establish photo indices.
+Signed-count paths and proposed +/-1/6/7 edges are saved for discussion only.
+
+Independent POV ray checks differ by 2/4 pixels out of 16,250 in two views; final
+orthographic candidates differ by 0/4 pixels. The assisted known-synthetic inverse
+check favors correct H1 (training penalty .0260 vs .0865; G overlap 91.3% vs 87.4%).
+Holdout-isolation and local camera/phase-equivalence tests pass. No detector,
+recovered pigments, exact N, repeat or ring walk is claimed.
+
+R127: user recognized that specular reflection depends on camera and lighting;
+no elevation estimate supplied. R128: iPhone, likely fairly close. Inspected file
+metadata: iPhone 11 Pro lens 4.25mm, 51mm equivalent, zoom 1.96875, image 2540x3182;
+no subject distance. A nominal diagonal-equivalence calculation gives focal 4799px,
+with unknown crop and assumed image-center principal point. Half/nominal/double
+pinhole sensitivity preserves both charts; nominal G overlaps 75.4%/82.2%.
+Perspective does not fix the C mismatch. A fixed 55-degree camera/phase gauge is
+not measured elevation; local view, illumination and global camera remain distinct.
+
+**Next bounded task:** review the marked dark patch P at (1364,278), immediately
+right of C; ownership question remains pending. Preserve any answer, revise only
+supported local evidence, then compare targeted methods for the remaining shape/
+correspondence mismatch. Do not propagate the graph around the ring yet. All
+original 12 IDs and R115 D/B separation remain; A/D/I/K/L excluded from active fit.
+
+R126 requests same-session continuation and reports 84% context remaining. Do not
+invent an updated usage estimate. Stay here; no /new requested. Recommend
+gpt-6-astra / High. Machine daisy, clean ed735de at start, upstream 0/0 after fetch,
+no stashes. No dependencies or delegation. Earlier sections below are history.
+
+
+## Historical R117–R125 — Forward calibration completed; photo fit next
 
 Read [placement/anchor pilot](photo2/PLACEMENT_PILOT.md) and its curated figures.
 Maker method 1 (Python placement/projection), method 2 (six-direction walk), and
@@ -36,7 +72,7 @@ Earlier sections below are chronological history where superseded.
 
 | Image / artifact | Active inventory | Evidence / unresolved issues |
 | --- | --- | --- |
-| beads-photo-2.jpg | Seven proposed fitting bodies B/C/E/F/G/H/J; A/D/I/K/L excluded from this fit, all twelve records preserved | [Placement pilot](photo2/PLACEMENT_PILOT.md), [original inventory](photo2/review/r114/inventory.png), [B/D answer](photo2/LOCAL_PILOT_QUESTIONS.md); D separate from B, L unresolved; no fitted photo pose, confirmed global bead indices or pigments |
+| beads-photo-2.jpg | Seven bodies fitted to two tentative local charts; G withheld; all twelve original records preserved | [Surface fit](photo2/LOCAL_SURFACE_FIT.md), [original inventory](photo2/review/r114/inventory.png), [B/D answer](photo2/LOCAL_PILOT_QUESTIONS.md); D separate from B, L unresolved; no verified photo pose, confirmed global bead indices or pigments |
 | Photo-2 R099 transition figures | None; local measurements only | [Raw/routes/crossing spread](photo2/review/r099/edge-review.png); [T1](photo2/review/r099/T1.png), [T2](photo2/review/r099/T2.png), [T3](photo2/review/r099/T3.png); [filters/fractions](photo2/review/r099/filters-and-fractions.png). Unverified edge locations, overlapping paper controls, small-window dark-bead failure |
 | Photo-2 R100 hue figures | None; same T1/T2 routes | [T1 hue](photo2/review/r100/T1-hue.png), [T2 hue](photo2/review/r100/T2-hue.png); local red-to-magenta change, not a recovered edge; overlap-map provenance confirmed by maker |
 | Photo-2 R104 parallel paths | None; nine diagnostic routes | [Raw/routes](photo2/review/r104/review-crops.png), [T1](photo2/review/r104/T1-parallel.png), [T2](photo2/review/r104/T2-parallel.png), [T3](photo2/review/r104/T3-parallel.png), [paper controls](photo2/review/r104/paper-controls.png). Hue maxima can be internal; reference choice shifts texture crossings up to 32 px; no confirmed edges |

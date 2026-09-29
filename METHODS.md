@@ -644,6 +644,18 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R126–R128 executed local fit:** [seven-body surface experiment](photo2/LOCAL_SURFACE_FIT.md)
+compared uncertain point fitting, exposed-region fitting and full shaded-image
+fitting, selecting exposed regions. Original rounded annular surfaces and latent
+occluders were fitted to six assistant-proposed regions, withholding G. Both
+6/7 charts survive; H2 is only slightly better on approximate photo observations.
+Independent POV checks validate the numerical surface renderer, and the known
+synthetic example favors its correct chart. This does not validate photo labels.
+Camera elevation/phase has an unobservable local freedom; keep it distinct from
+a measured view. R128's close-iPhone information prompted metadata-based pinhole
+sensitivity tests. Next resolve one illustrated ownership ambiguity and the
+remaining local shape/correspondence mismatch before propagation.
+
 **Current R117–R125 route: fit a patch, then walk neighbors.** Establish a patch
 of 5–12 substantial central bodies, including locatable black beads. Maker says
 black is roughly twice as difficult, not impossible; this is not a fixed numeric
@@ -653,7 +665,7 @@ counts for discussion, without requiring the fitter to use them internally.
 
 | Implementation route | Current choice |
 | --- | --- |
-| Maker method 1: Python placement and camera projection | Implemented/calibrated forward primitives; fit a small observed patch next using geometric coordinates and exposed surface anchors |
+| Maker method 1: Python placement and camera projection | Forward primitives calibrated; R126 local surface fit leaves two tentative correspondence charts and visible shape errors |
 | Maker method 2: direct six-direction neighbor walk | Alternative: connect central bodies using local lattice coordinates, carry uncertain/missing steps, and continue around the necklace |
 | Fit a patch, then initialize the walk | Selected overall route: calibrate placement first, fit the patch, then use neighbor consistency to check expansion |
 

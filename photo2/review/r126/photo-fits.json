@@ -1,0 +1,446 @@
+[
+  {
+    "hypothesis": "H1",
+    "mapping": {
+      "B": -1,
+      "C": 0,
+      "E": 6,
+      "F": 12,
+      "G": 7,
+      "H": 13,
+      "J": 1
+    },
+    "hand": -1,
+    "parameters": [
+      1349.4280891610906,
+      288.62388803654807,
+      7.9287077811730775,
+      4.678073014595015,
+      55.0,
+      12.98638125693917,
+      -108.13942263516682
+    ],
+    "coarse_parameters": [
+      1348.2797606337733,
+      293.8798755242535,
+      7.6590836825960436,
+      13.631398743602983,
+      55.0,
+      2.271042518177846,
+      -123.33567870054799
+    ],
+    "coarse_centroid_mse": 29.064452091493497,
+    "before": {
+      "B": {
+        "iou": 0.25806451612903225,
+        "predicted_area": 40,
+        "observed_area": 155
+      },
+      "C": {
+        "iou": 0.006369426751592357,
+        "predicted_area": 3,
+        "observed_area": 155
+      },
+      "E": {
+        "iou": 0.0,
+        "predicted_area": 1,
+        "observed_area": 176
+      },
+      "F": {
+        "iou": 0.17733990147783252,
+        "predicted_area": 39,
+        "observed_area": 200
+      },
+      "G": {
+        "iou": 0.009950248756218905,
+        "predicted_area": 2,
+        "observed_area": 201
+      },
+      "H": {
+        "iou": 0.0,
+        "predicted_area": 2,
+        "observed_area": 161
+      },
+      "J": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 164
+      }
+    },
+    "after": {
+      "B": {
+        "iou": 0.499194847020934,
+        "predicted_area": 318,
+        "observed_area": 613
+      },
+      "C": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 622
+      },
+      "E": {
+        "iou": 0.003968253968253968,
+        "predicted_area": 49,
+        "observed_area": 710
+      },
+      "F": {
+        "iou": 0.39367088607594936,
+        "predicted_area": 317,
+        "observed_area": 784
+      },
+      "G": {
+        "iou": 0.0012547051442910915,
+        "predicted_area": 1,
+        "observed_area": 797
+      },
+      "H": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 650
+      },
+      "J": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 670
+      }
+    },
+    "region_loss": 0.7813664843234096,
+    "evaluations": 176,
+    "optimizer_success": true,
+    "unfinished_ray_pairs": 6,
+    "seconds": 2.282081352022942
+  },
+  {
+    "hypothesis": "H1",
+    "mapping": {
+      "B": -1,
+      "C": 0,
+      "E": 6,
+      "F": 12,
+      "G": 7,
+      "H": 13,
+      "J": 1
+    },
+    "hand": 1,
+    "parameters": [
+      1348.7589044667307,
+      282.26612095362583,
+      8.566218966512904,
+      16.770171851575316,
+      55.0,
+      -5.209140583204879,
+      30.778747289623563
+    ],
+    "coarse_parameters": [
+      1348.2805268245813,
+      293.8778727650521,
+      7.658965396883278,
+      17.352831229953235,
+      55.0,
+      -2.271226981542234,
+      13.296848961320617
+    ],
+    "coarse_centroid_mse": 29.06445208524262,
+    "before": {
+      "B": {
+        "iou": 0.5235294117647059,
+        "predicted_area": 104,
+        "observed_area": 155
+      },
+      "C": {
+        "iou": 0.39565217391304347,
+        "predicted_area": 166,
+        "observed_area": 155
+      },
+      "E": {
+        "iou": 0.6424870466321243,
+        "predicted_area": 141,
+        "observed_area": 176
+      },
+      "F": {
+        "iou": 0.21862348178137653,
+        "predicted_area": 101,
+        "observed_area": 200
+      },
+      "G": {
+        "iou": 0.8019323671497585,
+        "predicted_area": 172,
+        "observed_area": 201
+      },
+      "H": {
+        "iou": 0.308,
+        "predicted_area": 166,
+        "observed_area": 161
+      },
+      "J": {
+        "iou": 0.7351351351351352,
+        "predicted_area": 157,
+        "observed_area": 164
+      }
+    },
+    "after": {
+      "B": {
+        "iou": 0.6317829457364341,
+        "predicted_area": 650,
+        "observed_area": 613
+      },
+      "C": {
+        "iou": 0.48144433299899697,
+        "predicted_area": 855,
+        "observed_area": 622
+      },
+      "E": {
+        "iou": 0.5840336134453782,
+        "predicted_area": 798,
+        "observed_area": 710
+      },
+      "F": {
+        "iou": 0.6080627099664053,
+        "predicted_area": 652,
+        "observed_area": 784
+      },
+      "G": {
+        "iou": 0.7613882863340564,
+        "predicted_area": 827,
+        "observed_area": 797
+      },
+      "H": {
+        "iou": 0.5285132382892057,
+        "predicted_area": 851,
+        "observed_area": 650
+      },
+      "J": {
+        "iou": 0.7229813664596273,
+        "predicted_area": 717,
+        "observed_area": 670
+      }
+    },
+    "region_loss": 0.4474249441992144,
+    "evaluations": 567,
+    "optimizer_success": true,
+    "unfinished_ray_pairs": 8,
+    "seconds": 17.4423755640164
+  },
+  {
+    "hypothesis": "H2",
+    "mapping": {
+      "B": 1,
+      "C": 0,
+      "E": 7,
+      "F": 14,
+      "G": 6,
+      "H": 13,
+      "J": -1
+    },
+    "hand": -1,
+    "parameters": [
+      1344.3889404067695,
+      289.19066123428496,
+      8.615341726045084,
+      18.76800223302258,
+      55.0,
+      -13.314140119129247,
+      19.219622412221167
+    ],
+    "coarse_parameters": [
+      1345.096269532766,
+      293.2456647237565,
+      7.464478399371658,
+      24.155057851770113,
+      55.0,
+      -15.482208607331337,
+      13.876752827086753
+    ],
+    "coarse_centroid_mse": 28.01098471288768,
+    "before": {
+      "B": {
+        "iou": 0.46285714285714286,
+        "predicted_area": 101,
+        "observed_area": 155
+      },
+      "C": {
+        "iou": 0.3805309734513274,
+        "predicted_area": 157,
+        "observed_area": 155
+      },
+      "E": {
+        "iou": 0.671957671957672,
+        "predicted_area": 140,
+        "observed_area": 176
+      },
+      "F": {
+        "iou": 0.2605042016806723,
+        "predicted_area": 100,
+        "observed_area": 200
+      },
+      "G": {
+        "iou": 0.7451923076923077,
+        "predicted_area": 162,
+        "observed_area": 201
+      },
+      "H": {
+        "iou": 0.2903225806451613,
+        "predicted_area": 159,
+        "observed_area": 161
+      },
+      "J": {
+        "iou": 0.7348066298342542,
+        "predicted_area": 150,
+        "observed_area": 164
+      }
+    },
+    "after": {
+      "B": {
+        "iou": 0.7871064467766117,
+        "predicted_area": 579,
+        "observed_area": 613
+      },
+      "C": {
+        "iou": 0.49797979797979797,
+        "predicted_area": 861,
+        "observed_area": 622
+      },
+      "E": {
+        "iou": 0.5815450643776824,
+        "predicted_area": 764,
+        "observed_area": 710
+      },
+      "F": {
+        "iou": 0.5222222222222223,
+        "predicted_area": 586,
+        "observed_area": 784
+      },
+      "G": {
+        "iou": 0.8036876355748374,
+        "predicted_area": 866,
+        "observed_area": 797
+      },
+      "H": {
+        "iou": 0.5140280561122245,
+        "predicted_area": 861,
+        "observed_area": 650
+      },
+      "J": {
+        "iou": 0.7071428571428572,
+        "predicted_area": 764,
+        "observed_area": 670
+      }
+    },
+    "region_loss": 0.44126695457241016,
+    "evaluations": 481,
+    "optimizer_success": true,
+    "unfinished_ray_pairs": 10,
+    "seconds": 22.046218860021327
+  },
+  {
+    "hypothesis": "H2",
+    "mapping": {
+      "B": 1,
+      "C": 0,
+      "E": 7,
+      "F": 14,
+      "G": 6,
+      "H": 13,
+      "J": -1
+    },
+    "hand": 1,
+    "parameters": [
+      1347.6865912274343,
+      289.2684020672198,
+      7.707250570764722,
+      -5.79978529737825,
+      55.0,
+      12.971092720198813,
+      -109.05953480542081
+    ],
+    "coarse_parameters": [
+      1345.0962375387346,
+      293.24568915073263,
+      7.464480615175799,
+      -1.4125923924417467,
+      55.0,
+      15.482284581175852,
+      -125.85380368911603
+    ],
+    "coarse_centroid_mse": 28.010984710879793,
+    "before": {
+      "B": {
+        "iou": 0.2064516129032258,
+        "predicted_area": 32,
+        "observed_area": 155
+      },
+      "C": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 155
+      },
+      "E": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 176
+      },
+      "F": {
+        "iou": 0.165,
+        "predicted_area": 33,
+        "observed_area": 200
+      },
+      "G": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 201
+      },
+      "H": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 161
+      },
+      "J": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 164
+      }
+    },
+    "after": {
+      "B": {
+        "iou": 0.46337579617834396,
+        "predicted_area": 306,
+        "observed_area": 613
+      },
+      "C": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 622
+      },
+      "E": {
+        "iou": 0.0,
+        "predicted_area": 20,
+        "observed_area": 710
+      },
+      "F": {
+        "iou": 0.3883248730964467,
+        "predicted_area": 310,
+        "observed_area": 784
+      },
+      "G": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 797
+      },
+      "H": {
+        "iou": 0.0,
+        "predicted_area": 0,
+        "observed_area": 650
+      },
+      "J": {
+        "iou": 0.0,
+        "predicted_area": 1,
+        "observed_area": 670
+      }
+    },
+    "region_loss": 0.7457415532411079,
+    "evaluations": 267,
+    "optimizer_success": true,
+    "unfinished_ray_pairs": 5,
+    "seconds": 3.214570873999037
+  }
+]

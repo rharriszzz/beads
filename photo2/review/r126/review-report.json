@@ -1,0 +1,976 @@
+{
+  "photo": [
+    {
+      "hypothesis": "H1",
+      "mapping": {
+        "B": -1,
+        "C": 0,
+        "E": 6,
+        "F": 12,
+        "G": 7,
+        "H": 13,
+        "J": 1
+      },
+      "hand": 1,
+      "parameters": [
+        1348.7589044667307,
+        282.26612095362583,
+        8.566218966512904,
+        16.770171851575316,
+        55.0,
+        -5.209140583204879,
+        30.778747289623563
+      ],
+      "coarse_parameters": [
+        1348.2805268245813,
+        293.8778727650521,
+        7.658965396883278,
+        17.352831229953235,
+        55.0,
+        -2.271226981542234,
+        13.296848961320617
+      ],
+      "coarse_centroid_mse": 29.06445208524262,
+      "before": {
+        "B": {
+          "iou": 0.5235294117647059,
+          "predicted_area": 104,
+          "observed_area": 155
+        },
+        "C": {
+          "iou": 0.39565217391304347,
+          "predicted_area": 166,
+          "observed_area": 155
+        },
+        "E": {
+          "iou": 0.6424870466321243,
+          "predicted_area": 141,
+          "observed_area": 176
+        },
+        "F": {
+          "iou": 0.21862348178137653,
+          "predicted_area": 101,
+          "observed_area": 200
+        },
+        "G": {
+          "iou": 0.8019323671497585,
+          "predicted_area": 172,
+          "observed_area": 201
+        },
+        "H": {
+          "iou": 0.308,
+          "predicted_area": 166,
+          "observed_area": 161
+        },
+        "J": {
+          "iou": 0.7351351351351352,
+          "predicted_area": 157,
+          "observed_area": 164
+        }
+      },
+      "after": {
+        "B": {
+          "iou": 0.6317829457364341,
+          "predicted_area": 650,
+          "observed_area": 613
+        },
+        "C": {
+          "iou": 0.48144433299899697,
+          "predicted_area": 855,
+          "observed_area": 622
+        },
+        "E": {
+          "iou": 0.5840336134453782,
+          "predicted_area": 798,
+          "observed_area": 710
+        },
+        "F": {
+          "iou": 0.6080627099664053,
+          "predicted_area": 652,
+          "observed_area": 784
+        },
+        "G": {
+          "iou": 0.7613882863340564,
+          "predicted_area": 827,
+          "observed_area": 797
+        },
+        "H": {
+          "iou": 0.5285132382892057,
+          "predicted_area": 851,
+          "observed_area": 650
+        },
+        "J": {
+          "iou": 0.7229813664596273,
+          "predicted_area": 717,
+          "observed_area": 670
+        }
+      },
+      "region_loss": 0.4474249441992144,
+      "evaluations": 567,
+      "optimizer_success": true,
+      "unfinished_ray_pairs": 8,
+      "seconds": 17.4423755640164,
+      "independent_pov_metrics": {
+        "B": {
+          "iou": 0.6317829457364341,
+          "region_loss": 0.11241778517310286,
+          "predicted_area": 650,
+          "observed_area": 613,
+          "core_coverage": 0.9441489361702128
+        },
+        "C": {
+          "iou": 0.48144433299899697,
+          "region_loss": 0.9905962545746502,
+          "predicted_area": 855,
+          "observed_area": 622,
+          "core_coverage": 0.856396866840731
+        },
+        "E": {
+          "iou": 0.5840336134453782,
+          "region_loss": 0.32414027766924686,
+          "predicted_area": 798,
+          "observed_area": 710,
+          "core_coverage": 0.9201773835920177
+        },
+        "F": {
+          "iou": 0.6080627099664053,
+          "region_loss": 0.2582325410225919,
+          "predicted_area": 652,
+          "observed_area": 784,
+          "core_coverage": 0.833984375
+        },
+        "G": {
+          "iou": 0.7613882863340564,
+          "region_loss": 0.06972719453346604,
+          "predicted_area": 827,
+          "observed_area": 797,
+          "core_coverage": 0.9673704414587332
+        },
+        "H": {
+          "iou": 0.5285132382892057,
+          "region_loss": 0.7521900010075357,
+          "predicted_area": 851,
+          "observed_area": 650,
+          "core_coverage": 0.8960396039603961
+        },
+        "J": {
+          "iou": 0.7229813664596273,
+          "region_loss": 0.2469728057481588,
+          "predicted_area": 717,
+          "observed_area": 670,
+          "core_coverage": 0.9406175771971497
+        }
+      },
+      "training_mean_iou": 0.5928030344826746,
+      "held_out_iou": 0.7613882863340564,
+      "training_region_loss_by_band": {
+        "2": 0.7453706855843016,
+        "3": 0.4474249441992144,
+        "4": 0.24846408111068105
+      },
+      "ray_pov_mismatches": 0,
+      "ray_pairs_unfinished": 8,
+      "tentative_edges": [
+        [
+          "B",
+          "C",
+          1
+        ],
+        [
+          "B",
+          "E",
+          7
+        ],
+        [
+          "C",
+          "E",
+          6
+        ],
+        [
+          "C",
+          "G",
+          7
+        ],
+        [
+          "C",
+          "J",
+          1
+        ],
+        [
+          "E",
+          "F",
+          6
+        ],
+        [
+          "E",
+          "G",
+          1
+        ],
+        [
+          "E",
+          "H",
+          7
+        ],
+        [
+          "F",
+          "H",
+          1
+        ],
+        [
+          "G",
+          "H",
+          6
+        ],
+        [
+          "G",
+          "J",
+          -6
+        ]
+      ],
+      "direction_coordinates": {
+        "coordinates": {
+          "C": {
+            "n1": 0,
+            "n6": 0,
+            "n7": 0
+          },
+          "B": {
+            "n1": -1,
+            "n6": 0,
+            "n7": 0
+          },
+          "E": {
+            "n1": -1,
+            "n6": 0,
+            "n7": 1
+          },
+          "G": {
+            "n1": 0,
+            "n6": 0,
+            "n7": 1
+          },
+          "J": {
+            "n1": 1,
+            "n6": 0,
+            "n7": 0
+          },
+          "F": {
+            "n1": -1,
+            "n6": 1,
+            "n7": 1
+          },
+          "H": {
+            "n1": -1,
+            "n6": 0,
+            "n7": 2
+          }
+        },
+        "derived_component_indices": {
+          "C": 0,
+          "B": -1,
+          "E": 6,
+          "G": 7,
+          "J": 1,
+          "F": 12,
+          "H": 13
+        },
+        "consistent_alternate_paths": [
+          {
+            "observation_id": "E",
+            "via": "C",
+            "delta": 6,
+            "alternative": {
+              "n1": 0,
+              "n6": 1,
+              "n7": 0
+            }
+          },
+          {
+            "observation_id": "H",
+            "via": "F",
+            "delta": 1,
+            "alternative": {
+              "n1": 0,
+              "n6": 1,
+              "n7": 1
+            }
+          },
+          {
+            "observation_id": "H",
+            "via": "G",
+            "delta": 6,
+            "alternative": {
+              "n1": 0,
+              "n6": 1,
+              "n7": 1
+            }
+          },
+          {
+            "observation_id": "J",
+            "via": "G",
+            "delta": -6,
+            "alternative": {
+              "n1": 0,
+              "n6": -1,
+              "n7": 1
+            }
+          }
+        ],
+        "conflicts": [],
+        "distinct_observation_index_collisions": [],
+        "unresolved": []
+      },
+      "outward_anchor_predictions": {
+        "B": {
+          "xy": [
+            1356.1687586607309,
+            237.7122874614185
+          ],
+          "ray_owner_index": -1,
+          "assigned_index": -1,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 0.00010024063575420072
+        },
+        "C": {
+          "xy": [
+            1352.225464647136,
+            279.19176302849354
+          ],
+          "ray_owner_index": 0,
+          "assigned_index": 0,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 6.343624068705367e-06
+        },
+        "E": {
+          "xy": [
+            1379.2050742681736,
+            260.75922285962736
+          ],
+          "ray_owner_index": 6,
+          "assigned_index": 6,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 3.300151529472828e-05
+        },
+        "F": {
+          "xy": [
+            1404.2987576443347,
+            248.38176908500208
+          ],
+          "ray_owner_index": 12,
+          "assigned_index": 12,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 0.00010024063576175024
+        },
+        "G": {
+          "xy": [
+            1372.5817068489507,
+            308.9980831715617
+          ],
+          "ray_owner_index": 7,
+          "assigned_index": 7,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 2.0741341312024986e-05
+        },
+        "H": {
+          "xy": [
+            1400.3554636307401,
+            289.86124465207706
+          ],
+          "ray_owner_index": 13,
+          "assigned_index": 13,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 6.3436240678171885e-06
+        },
+        "J": {
+          "xy": [
+            1345.2875115345512,
+            323.3270857336308
+          ],
+          "ray_owner_index": 1,
+          "assigned_index": 1,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 6.879428939132737e-05
+        }
+      },
+      "render_provenance": {
+        "scene_sha256": "ed0337c2d8e3f421b05d5cfd83100121409dad86c9a4046ed30ed9bf9af99acf",
+        "png_sha256": "a4c6c6dd621b74db5d700944b0051707365e155078dfe11b2dde0268a7ab3e3b",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r126/final/H1-final.pov",
+          "+O/home/rharris/git/beads/photo2/output/r126/final/H1-final.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      }
+    },
+    {
+      "hypothesis": "H2",
+      "mapping": {
+        "B": 1,
+        "C": 0,
+        "E": 7,
+        "F": 14,
+        "G": 6,
+        "H": 13,
+        "J": -1
+      },
+      "hand": -1,
+      "parameters": [
+        1344.3889404067695,
+        289.19066123428496,
+        8.615341726045084,
+        18.76800223302258,
+        55.0,
+        -13.314140119129247,
+        19.219622412221167
+      ],
+      "coarse_parameters": [
+        1345.096269532766,
+        293.2456647237565,
+        7.464478399371658,
+        24.155057851770113,
+        55.0,
+        -15.482208607331337,
+        13.876752827086753
+      ],
+      "coarse_centroid_mse": 28.01098471288768,
+      "before": {
+        "B": {
+          "iou": 0.46285714285714286,
+          "predicted_area": 101,
+          "observed_area": 155
+        },
+        "C": {
+          "iou": 0.3805309734513274,
+          "predicted_area": 157,
+          "observed_area": 155
+        },
+        "E": {
+          "iou": 0.671957671957672,
+          "predicted_area": 140,
+          "observed_area": 176
+        },
+        "F": {
+          "iou": 0.2605042016806723,
+          "predicted_area": 100,
+          "observed_area": 200
+        },
+        "G": {
+          "iou": 0.7451923076923077,
+          "predicted_area": 162,
+          "observed_area": 201
+        },
+        "H": {
+          "iou": 0.2903225806451613,
+          "predicted_area": 159,
+          "observed_area": 161
+        },
+        "J": {
+          "iou": 0.7348066298342542,
+          "predicted_area": 150,
+          "observed_area": 164
+        }
+      },
+      "after": {
+        "B": {
+          "iou": 0.7871064467766117,
+          "predicted_area": 579,
+          "observed_area": 613
+        },
+        "C": {
+          "iou": 0.49797979797979797,
+          "predicted_area": 861,
+          "observed_area": 622
+        },
+        "E": {
+          "iou": 0.5815450643776824,
+          "predicted_area": 764,
+          "observed_area": 710
+        },
+        "F": {
+          "iou": 0.5222222222222223,
+          "predicted_area": 586,
+          "observed_area": 784
+        },
+        "G": {
+          "iou": 0.8036876355748374,
+          "predicted_area": 866,
+          "observed_area": 797
+        },
+        "H": {
+          "iou": 0.5140280561122245,
+          "predicted_area": 861,
+          "observed_area": 650
+        },
+        "J": {
+          "iou": 0.7071428571428572,
+          "predicted_area": 764,
+          "observed_area": 670
+        }
+      },
+      "region_loss": 0.44126695457241016,
+      "evaluations": 481,
+      "optimizer_success": true,
+      "unfinished_ray_pairs": 10,
+      "seconds": 22.046218860021327,
+      "independent_pov_metrics": {
+        "B": {
+          "iou": 0.7882882882882883,
+          "region_loss": 0.011074662611966844,
+          "predicted_area": 578,
+          "observed_area": 613,
+          "core_coverage": 0.9920212765957447
+        },
+        "C": {
+          "iou": 0.49797979797979797,
+          "region_loss": 0.8941616186492612,
+          "predicted_area": 861,
+          "observed_area": 622,
+          "core_coverage": 0.8746736292428199
+        },
+        "E": {
+          "iou": 0.5815450643776824,
+          "region_loss": 0.32829875004402187,
+          "predicted_area": 764,
+          "observed_area": 710,
+          "core_coverage": 0.8913525498891353
+        },
+        "F": {
+          "iou": 0.5222222222222223,
+          "region_loss": 0.4492708821272181,
+          "predicted_area": 586,
+          "observed_area": 784,
+          "core_coverage": 0.7578125
+        },
+        "G": {
+          "iou": 0.8045602605863192,
+          "region_loss": 0.02643423244925971,
+          "predicted_area": 865,
+          "observed_area": 797,
+          "core_coverage": 1.0
+        },
+        "H": {
+          "iou": 0.5135135135135135,
+          "region_loss": 0.8491635364505528,
+          "predicted_area": 862,
+          "observed_area": 650,
+          "core_coverage": 0.8762376237623762
+        },
+        "J": {
+          "iou": 0.7071428571428572,
+          "region_loss": 0.12189545880046389,
+          "predicted_area": 764,
+          "observed_area": 670,
+          "core_coverage": 0.9857482185273159
+        }
+      },
+      "training_mean_iou": 0.6017819572540603,
+      "held_out_iou": 0.8045602605863192,
+      "training_region_loss_by_band": {
+        "2": 0.7275008839708995,
+        "3": 0.4423108181139141,
+        "4": 0.24691483092088226
+      },
+      "ray_pov_mismatches": 4,
+      "ray_pairs_unfinished": 10,
+      "tentative_edges": [
+        [
+          "B",
+          "C",
+          -1
+        ],
+        [
+          "B",
+          "E",
+          6
+        ],
+        [
+          "C",
+          "E",
+          7
+        ],
+        [
+          "C",
+          "G",
+          6
+        ],
+        [
+          "C",
+          "J",
+          -1
+        ],
+        [
+          "E",
+          "F",
+          7
+        ],
+        [
+          "E",
+          "G",
+          -1
+        ],
+        [
+          "E",
+          "H",
+          6
+        ],
+        [
+          "F",
+          "H",
+          -1
+        ],
+        [
+          "G",
+          "H",
+          7
+        ],
+        [
+          "G",
+          "J",
+          -7
+        ]
+      ],
+      "direction_coordinates": {
+        "coordinates": {
+          "C": {
+            "n1": 0,
+            "n6": 0,
+            "n7": 0
+          },
+          "B": {
+            "n1": 1,
+            "n6": 0,
+            "n7": 0
+          },
+          "E": {
+            "n1": 1,
+            "n6": 1,
+            "n7": 0
+          },
+          "G": {
+            "n1": 0,
+            "n6": 1,
+            "n7": 0
+          },
+          "J": {
+            "n1": -1,
+            "n6": 0,
+            "n7": 0
+          },
+          "F": {
+            "n1": 1,
+            "n6": 1,
+            "n7": 1
+          },
+          "H": {
+            "n1": 1,
+            "n6": 2,
+            "n7": 0
+          }
+        },
+        "derived_component_indices": {
+          "C": 0,
+          "B": 1,
+          "E": 7,
+          "G": 6,
+          "J": -1,
+          "F": 14,
+          "H": 13
+        },
+        "consistent_alternate_paths": [
+          {
+            "observation_id": "E",
+            "via": "C",
+            "delta": 7,
+            "alternative": {
+              "n1": 0,
+              "n6": 0,
+              "n7": 1
+            }
+          },
+          {
+            "observation_id": "H",
+            "via": "F",
+            "delta": -1,
+            "alternative": {
+              "n1": 0,
+              "n6": 1,
+              "n7": 1
+            }
+          },
+          {
+            "observation_id": "H",
+            "via": "G",
+            "delta": 7,
+            "alternative": {
+              "n1": 0,
+              "n6": 1,
+              "n7": 1
+            }
+          },
+          {
+            "observation_id": "J",
+            "via": "G",
+            "delta": -7,
+            "alternative": {
+              "n1": 0,
+              "n6": 1,
+              "n7": -1
+            }
+          }
+        ],
+        "conflicts": [],
+        "distinct_observation_index_collisions": [],
+        "unresolved": []
+      },
+      "outward_anchor_predictions": {
+        "B": {
+          "xy": [
+            1357.1769404461581,
+            240.87094959638316
+          ],
+          "ray_owner_index": 1,
+          "assigned_index": 1,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 0.00022771879994709643
+        },
+        "C": {
+          "xy": [
+            1352.8971543266446,
+            276.55719627086336
+          ],
+          "ray_owner_index": 0,
+          "assigned_index": 0,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 3.204691545288796e-05
+        },
+        "E": {
+          "xy": [
+            1380.5511425782859,
+            258.07664980241117
+          ],
+          "ray_owner_index": 7,
+          "assigned_index": 7,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 4.9405082314102344e-05
+        },
+        "F": {
+          "xy": [
+            1405.9354094634657,
+            247.54753946031357
+          ],
+          "ray_owner_index": 14,
+          "assigned_index": 14,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 0.00022771879994820665
+        },
+        "G": {
+          "xy": [
+            1372.0525058183605,
+            304.6085071766083
+          ],
+          "ray_owner_index": 6,
+          "assigned_index": 6,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 1.4557224982780781e-05
+        },
+        "H": {
+          "xy": [
+            1401.6556233439521,
+            283.2337861347937
+          ],
+          "ray_owner_index": 13,
+          "assigned_index": 13,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 3.204691545022342e-05
+        },
+        "J": {
+          "xy": [
+            1341.2673731384375,
+            323.1571207226207
+          ],
+          "ray_owner_index": -1,
+          "assigned_index": -1,
+          "ray_owner_matches": true,
+          "point_exposed": true,
+          "point_depth_error": 9.422089777011422e-05
+        }
+      },
+      "render_provenance": {
+        "scene_sha256": "2b0d7ca0dd433e5af4144d38b18464e301a9bff3aae068185b0245d54b23e194",
+        "png_sha256": "d3e04853fa57f4419d3cff0f5607dde8699fcb1093454a16a6fd594b5affd57b",
+        "command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r126/final/H2-final.pov",
+          "+O/home/rharris/git/beads/photo2/output/r126/final/H2-final.png",
+          "+W125",
+          "+H130",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ]
+      }
+    }
+  ],
+  "synthetic": [
+    {
+      "hypothesis": "H1",
+      "hand": 1,
+      "region_loss": 0.026048080460313625,
+      "held_out_iou": 0.9127604166666666,
+      "metrics": {
+        "B": {
+          "iou": 0.8608247422680413,
+          "region_loss": 0.00878764413853465,
+          "predicted_area": 353,
+          "observed_area": 369,
+          "core_coverage": 0.9932203389830508
+        },
+        "C": {
+          "iou": 0.9131034482758621,
+          "region_loss": 0.0005867047625681234,
+          "predicted_area": 681,
+          "observed_area": 706,
+          "core_coverage": 0.9983633387888707
+        },
+        "E": {
+          "iou": 0.9433333333333334,
+          "region_loss": 0.0,
+          "predicted_area": 574,
+          "observed_area": 592,
+          "core_coverage": 1.0
+        },
+        "F": {
+          "iou": 0.7701711491442543,
+          "region_loss": 0.08025591194210145,
+          "predicted_area": 355,
+          "observed_area": 369,
+          "core_coverage": 0.9290540540540541
+        },
+        "G": {
+          "iou": 0.9127604166666666,
+          "region_loss": 0.01981114878044788,
+          "predicted_area": 714,
+          "observed_area": 755,
+          "core_coverage": 0.9756838905775076
+        },
+        "H": {
+          "iou": 0.9017735334242838,
+          "region_loss": 0.012180655519187655,
+          "predicted_area": 678,
+          "observed_area": 716,
+          "core_coverage": 0.9822580645161291
+        },
+        "J": {
+          "iou": 0.8414154652686763,
+          "region_loss": 0.05447756639948989,
+          "predicted_area": 687,
+          "observed_area": 718,
+          "core_coverage": 0.9454253611556982
+        }
+      }
+    },
+    {
+      "hypothesis": "H2",
+      "hand": -1,
+      "region_loss": 0.08654812442312752,
+      "held_out_iou": 0.8740359897172236,
+      "metrics": {
+        "B": {
+          "iou": 0.7684729064039408,
+          "region_loss": 0.0862890708470042,
+          "predicted_area": 349,
+          "observed_area": 369,
+          "core_coverage": 0.9389830508474576
+        },
+        "C": {
+          "iou": 0.8353413654618473,
+          "region_loss": 0.06529681721383725,
+          "predicted_area": 665,
+          "observed_area": 706,
+          "core_coverage": 0.9476268412438625
+        },
+        "E": {
+          "iou": 0.8841761827079935,
+          "region_loss": 0.031841789790929595,
+          "predicted_area": 563,
+          "observed_area": 592,
+          "core_coverage": 0.968
+        },
+        "F": {
+          "iou": 0.7860696517412935,
+          "region_loss": 0.037087640624921425,
+          "predicted_area": 349,
+          "observed_area": 369,
+          "core_coverage": 0.9594594594594594
+        },
+        "G": {
+          "iou": 0.8740359897172236,
+          "region_loss": 0.04702939576916914,
+          "predicted_area": 703,
+          "observed_area": 755,
+          "core_coverage": 0.952887537993921
+        },
+        "H": {
+          "iou": 0.8525469168900804,
+          "region_loss": 0.049591052801288685,
+          "predicted_area": 666,
+          "observed_area": 716,
+          "core_coverage": 0.9483870967741935
+        },
+        "J": {
+          "iou": 0.7620865139949109,
+          "region_loss": 0.249182375260784,
+          "predicted_area": 667,
+          "observed_area": 718,
+          "core_coverage": 0.898876404494382
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/local-fit-r126.json": "126416e9065164e98cb4564771e5fcc761623fc3ac260ad6854dd6a23d409d29",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/check_local_surface_fit.py": "f5c0f143f6aa6c53d99e6b7542677d304f0c5f444cdce3f4bf78a919b67bd201",
+    "photo2/review_local_surface_fit.py": "231d2f3b0337800bea017cab197b167702ce8d1e01d70628d5a970b296cc3e34"
+  },
+  "question": {
+    "point_xy": [
+      1364,
+      278
+    ],
+    "text": "Which bead owns dark patch P immediately to the right of C: C, E, another bead/gap, or unclear?",
+    "status": "pending"
+  },
+  "limitations": [
+    "Assistant-drawn diagnostic regions, no automatic detector or maker-confirmed boundaries.",
+    "Both local hypotheses remain tentative; G is withheld from continuous fitting and chart scoring.",
+    "Straight planar section and orthographic approximation; fixed 55-degree elevation is a camera/phase gauge, not measured global elevation.",
+    "Numerical search is local and bounded, not proof of a global optimum.",
+    "No full-string indices, exact N, recovered pigments, pattern or ring propagation."
+  ],
+  "perspective_report_sha256": "1e70cbad61751f432ee67fe6485589b25d788af948c49443dac683a98a0ec81a"
+}

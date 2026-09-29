@@ -1,0 +1,21 @@
+{
+  "image": "beads-photo-2.jpg",
+  "crop": [1295,220,1420,350],
+  "assistance": "Assistant-drawn approximate visible-body polygons from the raw R114 patch. These are diagnostic fitting observations, not maker-confirmed outlines, physical centers, outward-point annotations, or an automatic detector. A 3-pixel boundary band is uncertain. Dark boundaries are especially tentative. All seven IDs come from R114; no new bodies are introduced.",
+  "boundary_uncertainty_px": 3.0,
+  "held_out": "G",
+  "observations": {
+    "B": [[1345,242],[1352,237],[1363,241],[1370,250],[1369,260],[1361,268],[1349,265],[1343,255]],
+    "C": [[1338,264],[1349,263],[1358,271],[1359,281],[1353,290],[1343,293],[1333,285],[1331,274]],
+    "E": [[1372,259],[1384,257],[1392,268],[1393,281],[1387,290],[1378,292],[1367,283],[1367,271]],
+    "F": [[1393,237],[1405,237],[1413,247],[1413,260],[1406,272],[1396,274],[1387,263],[1387,249]],
+    "G": [[1362,286],[1373,284],[1383,294],[1385,309],[1377,319],[1365,320],[1357,309],[1357,295]],
+    "H": [[1400,274],[1410,274],[1419,285],[1418,297],[1410,305],[1398,303],[1392,295],[1393,283]],
+    "J": [[1337,298],[1348,299],[1357,307],[1359,319],[1352,327],[1340,327],[1330,317],[1330,307]]
+  },
+  "hypotheses": {
+    "H1": {"B":-1,"C":0,"E":6,"F":12,"G":7,"H":13,"J":1},
+    "H2": {"B":1,"C":0,"E":7,"F":14,"G":6,"H":13,"J":-1}
+  },
+  "hypothesis_status": "Assistant extensions of the historical C/E/G alternatives. Both directions of minor progression and local camera view are fitted. These are proposals, not established photo labels. G is withheld from all continuous fitting. Neighbor masks outside these IDs remain latent occluders."
+}

@@ -1,5 +1,10 @@
 # Local observation, index and color pilot — R114
 
+**Latest R126–R128:** [local surface fitting](LOCAL_SURFACE_FIT.md) compares two
+seven-body correspondence proposals with G withheld. Both remain uncertain;
+see the [small ownership question](LOCAL_SURFACE_FIT_QUESTIONS.md) before any
+ring expansion. Original R114 measurements below remain frozen.
+
 **Current R117–R125 supersession:** the [placement/anchor pilot](PLACEMENT_PILOT.md)
 calibrates forward geometry and selects B/C/E/F/G/H/J for the next fit, including
 four dark bodies. Edge/behind-edge A/D/I/K/L stay outside that fitting set without

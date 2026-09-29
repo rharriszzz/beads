@@ -3,40 +3,35 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
-## Active schedule after R117–R125: placement and neighbor relationships
+## Active schedule after R126–R128: review the local surface fit
 
-**Fit a 5–12-body central patch, including usable black beads, using geometric
-coordinates before bead_index.** Compare maker method 1 (Python placement and
-projection), method 2 (six-direction neighbor walking), and a fitted patch that
-initializes the walk. Select the third route, starting with method 1's calibration.
-Black beads are harder to locate, not excluded. Edge/behind-edge bodies are
-excluded from active fitting/walking under R121, with gaps preserved.
+The [seven-body fit](photo2/LOCAL_SURFACE_FIT.md) is complete to illustrated review.
+B/C/E/F/H/J were fitted; G was withheld. Both H1/H2 neighbor charts remain tentative.
+Orthographic held-out overlap is 76.1%/80.5%; a nominal metadata-based perspective
+fit gives 75.4%/82.2%. These compare against assistant polygons, not verified truth.
+C and F retain meaningful outline errors, so no full-ring propagation is justified.
+The independent POV surface checks and assisted known-synthetic inverse test pass.
 
-[Completed forward/anchor pilot](photo2/PLACEMENT_PILOT.md): Python placement and
-camera projection match independent POV-Ray results; the minor-outward surface
-point is exposed for the tested substantial central subset in one known pose.
-Seven photo candidates B/C/E/F/G/H/J include four dark bodies. Their existing
-sample dots are not physical centers or located outward points. A/D/I/K/L remain
-outside this first fitting set; D/B separation is maker-confirmed. All twelve
-observation records remain available. No photo pose, coordinates, pigment labels,
-string indices, count or repeat have been recovered by this calibration.
+R127 supplies no camera elevation: reflections couple camera and lighting.
+R128 says iPhone, likely fairly close. File metadata identifies an iPhone 11 Pro
+lens, focal 4.25mm, 51mm equivalent and 1.96875 digital zoom; no subject distance.
+Perspective sensitivity is evaluated at half/nominal/double an approximate focal
+calibration; image-center principal point and unknown crop remain assumptions.
+The 55-degree local camera/phase convention is not measured global elevation.
 
-**Next bounded task:** fit geometric placement to this seven-body patch, using
-supported visible surface evidence and the minor-outward anchor where exposed.
-Compare local phase/view/scale alternatives with a withheld body or relation;
-validate the fit on a known synthetic counterpart before propagation. Use signed
-direction counts (n1,n6,n7) when discussing neighbors; keep tentative family labels
-explicit. Internal geometry may use centerline position and minor phase instead.
-Derive index = origin+n1+6*n6+7*n7 from supported relations. Stop at raw/model/
-uncertainty review; do not expand the ring in the
-same step. Later walk all usable central bodies around the necklace, reconcile
-charts/geometry, then establish string indices and exact closure before repeats.
+**Next bounded task:** review [Q126.1](photo2/LOCAL_SURFACE_FIT_QUESTIONS.md), ownership
+of the dark patch immediately right of C. Use any supported answer to revise that
+local observation, then compare targeted methods for the remaining surface or
+correspondence mismatch. Keep signed +/-1/6/7 neighbor labels tentative. Do not
+expand around the ring or accept either full local chart merely from its score.
+All twelve original IDs, D/B separation and excluded A/D/I/K/L remain preserved.
 
-The current circular prototype uses major/minor angles; the photo's planar
-centerline need not be circular. Do not turn a successful known-pose calibration
-into a photo geometry assumption. Recommend gpt-6-astra / High; stay for discussion,
-optional fresh /new for the inverse-fitting experiment. Earlier evidence below
-remains historical where it prescribes black-bead deferral or immediate indices.
+The current stop is the illustrated fit/uncertainty review, not a recovered local
+index graph. FFT comparisons remain pending, adoption optional. Recommend
+gpt-6-astra / High. Stay in this session; R126 explicitly declines /new and reports
+84% context remaining (user report, not an independently measured status).
+Historical scheduling below is superseded where it requests the already completed
+first seven-body fit or defers black beads.
 
 The next aspect is **local bead geometry and correspondence**, with colors as evidence.
 Do not restart global boundary optimization or attempt the full pattern now.

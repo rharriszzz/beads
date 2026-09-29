@@ -152,6 +152,12 @@ show chosen colors. The necklace lies flat on paper on a table. Keep the major
 centerline planar, with a single global camera/plane relationship; individual
 beads and their placement around the rope remain three-dimensional.
 
+R127–R128: the maker supplies no camera-elevation estimate, recognizing that
+specular reflection depends on both camera and lighting. The photo was made with
+an iPhone and was likely taken fairly close. These are maker facts/uncertainties;
+the file's lens/focal metadata and resulting perspective hypotheses are recorded
+separately in [the local fitting experiment](photo2/LOCAL_SURFACE_FIT.md).
+
 I use an integer number of complete pattern repeats: total beads `N = kL` for
 integer repeat count `k` and repeat length `L`. Typical totals are 700–800 for a
 bracelet and 3,000–5,000 for a necklace, not exact counts for this photo. An older

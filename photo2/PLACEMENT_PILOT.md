@@ -1,5 +1,10 @@
 # Placement, visible surface anchors and neighbor language — R117–R125
 
+**Later R126–R128 outcome:** the [seven-body surface fit](LOCAL_SURFACE_FIT.md)
+has now been attempted, including a held-out body and perspective sensitivity.
+Both neighbor charts remain tentative; the text below records the earlier
+forward-calibration stopping point.
+
 The Python forward placement now matches `beads.pov`, and signed direction counts
 are available for discussing neighbors. **The seven-body photo patch has not yet
 been fitted. No new photo neighbors or bead indices are established.**

@@ -64,6 +64,10 @@ Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
   in calibration are not inferred photo labels. Runtime selection must remain
   image-derived, not fixed color ranges/coordinates. Clear colored beads may seed
   the patch, but the earlier three-body-only shortlist is no longer the goal.
+  R127–R128: no camera elevation estimate is supplied. Specular reflection couples
+  camera and lighting. Photo was made with an iPhone, likely fairly close; test
+  perspective using available metadata without treating unknown crop/distance
+  as calibrated intrinsics. A fitted camera/phase gauge is not measured elevation.
   R112: photo-2 repeat length is not divisible by 13; this is not a restriction
   on total bead count or generic synthetic tests. With verified exact N, test
   divisors for the shortest repeat compatible with all visible observations.

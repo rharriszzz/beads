@@ -1113,3 +1113,131 @@ R114 curated artifacts and R115 annotation byte-identical to HEAD; twelve-ID
 coverage; 125 local document links; git diff --check. All numerical runs described
 above completed after their relevant code corrections. Scoped commit/push and
 exact remote-tip/final-status verification are the remaining delivery operations.
+
+## R126–R128 — Seven-body fit, reflections and close-camera perspective (2026-09-28)
+
+R126 user: “I have 84% left of the context windo, I will not use /new this time.  continue”
+
+R127 user: “I was going to talk about camera elevation from specular reflection, but then I realized it is both the camera and the lighting.  So I don't know.”
+
+R128 user: “well, it was with an iphone, and was likely fairly close, if that helps at all.”
+
+### Preflight and selected bounded task
+
+Stayed in the same session as requested. The 84% figure is the user's report,
+not an independently read usage/status estimate. Machine daisy, clean ed735de,
+photo-2-reconstruction-v2, tracked origin, no stashes. Escalated fetch succeeded
+and upstream was0/0. Read AGENTS, handoff, recent requests, plan, placement pilot,
+prior-work quick model, original source macro and historical SHAPE_REASONING
+through git show. An initial guessed local-pilot-config.json filename did not
+exist; read the actual local-pilot-r114.json instead. No dependency installation,
+delegation, ownership transfer or unrelated changes.
+
+Presented three approaches: uncertain outward-point fitting, exposed surface/
+region fitting, and full shaded-image fitting. Selected the second. Implemented
+one bounded local inverse-fit/review step, not a full-ring walk. R127/R128 steered
+the camera treatment within this same fit, rather than replacing the task.
+
+### Observations, implementation and checks
+
+Added assistant-drawn rough polygons for seven existing IDs B/C/E/F/G/H/J in the
+raw photo crop. A3px uncertainty band is diagnostic, not maker-supplied. Dark
+boundaries are especially tentative. The raw/proposal/model figure makes the
+assistance explicit. G's region is held out of initialization, fitting and ranking;
+its relative index is part of each conditional chart. All original12IDs remain,
+D separate from B, and A/D/I/K/L excluded from active fitting. R114/R115 and prior
+calibration artifacts remain unchanged.
+
+Ported the calibrated loop's straight planar-section limit, original rounded
+annular surface and latent occluders. The local camera starts orthographic;
+body-region ownership is found by sphere tracing, not ellipses or highlights.
+Eight deterministic centroid proposals per chart/hand initialize bounded surface
+fits. Centroids are only rough initial guesses, not observed outward anchors.
+Both hands and two explicit extensions of the historical C/E/G graphs were tested.
+Saved tentative signed-direction charts, keeping observation IDs and proposed
+relative indices distinct from accepted full-string labels.
+
+Initial point fits admitted back-side solutions that matched locations while
+hiding most bodies. Actual surface ownership rejects those poor fits. An80-step
+ray budget disagreed with POV at154/42 pixels out of16,250 due to grazing rays;
+400steps reduce this to2/4. Final orthographic candidate checks differ by0/4;
+remaining unconverged ray/object pairs are counted, and final photo metrics use
+independent POV masks. The original POV macro supplies the independent surfaces.
+
+Early fits retained an unobservable camera-elevation/phase freedom. Verified the
+joint rotation equivalence and fixed elevation55degrees as a local coordinate
+convention, never a measured global camera elevation. A broader multistart
+refinement probe was stopped after two saved diagnostic runs; final implementation
+uses the documented deterministic two-stage bounded fit. Coarse-only perspective
+scores were superseded by full-pixel refinement for comparable final objectives.
+A matplotlib cache warning in the new checker was fixed by setting MPLCONFIGDIR
+before importing plotting; the checker was rerun. An empty stale-context patch
+attempt on AGENTS failed without changes, then the actual context was patched.
+
+The assisted known-synthetic inverse check uses independently rendered regions,
+with truth only in evaluation. CorrectH1 has training penalty.0260 vs wrongH2.0865;
+withheldG overlap91.3% vs87.4%. This validates one assisted local example, not
+image-only detection or general hand recovery. The wrong graph remains plausible.
+Two new tests pass: camera/phase equivalence and strict holdout isolation (moving
+G far away does not change any fitted parameter or training score).
+
+For the photo, orthographic H1/H2 mean training overlap is59.3%/60.2%, withheldG
+76.1%/80.5%, and3px-band penalty.4474/.4423. Scores are against assistant polygons,
+not probabilities or verified truth. Both charts survive. C misses some bright
+left surface and includes uncertain dark pixels on its right; F also fits poorly.
+All seven predicted outward points pass model self/neighbor visibility checks,
+but none is promoted to a measured photo anchor. No global indices, pigments,
+exactN, repeat or ring expansion is claimed.
+
+### R127/R128 camera evidence and perspective sensitivity
+
+R127 supplies no elevation estimate. Agreed that a specular highlight depends on
+viewing direction, lighting and surface normal; retain joint camera/light fitting
+for later appearance work. Reflections are not boundary markers.
+
+R128 prompted direct EXIF inspection: image2540x3182, orientation1, lens
+iPhone11Pro back triple camera4.25mm f/1.8, focal4.25mm, equivalent51mm,
+digital zoom1.96875. No SubjectDistance value. No GPS or unrelated metadata used.
+A provisional diagonal-equivalence calculation gives focal4799.18px; unknown
+crop/calibration and assumed image-center principal point prevent treating this
+as established intrinsics. No physical working distance is inferred.
+
+Fitted pinhole scenarios at0.5x/1x/2x nominal focal length with the off-center crop
+handled explicitly; G stays withheld. Independent POV ownership differs by0–8
+pixels out of16,250. Nominal H1/H2 training penalties.5081/.4844, withheldG
+75.4%/82.2%. Half/double cases preserve both proposals. Perspective does not fix
+C's main mismatch. Do not reject perspective or accept a graph from these rough
+region scores; these are local sensitivity fits, not a calibrated camera recovery
+or an independently demonstrated perspective inverse benchmark.
+
+### Illustrated review and stopping point
+
+Saved raw/proposed/POV outline comparisons, known-synthetic comparison, perspective
+comparison, source/config/code hashes and reproduction commands in the
+[local surface experiment](photo2/LOCAL_SURFACE_FIT.md). Routine generated scenes
+and logs remain ignored; curated question figures/reports are tracked.
+
+Asked optional Q126.1 with raw and labeled crops: which bead owns dark patchP
+at(1364,278), immediately right ofC — C, E, another bead/gap, or unclear?
+Question is in photo2/LOCAL_SURFACE_FIT_QUESTIONS.md and remains pending; elapsed
+time does not supply an answer. Independent fitting/checking continued while
+waiting. This is an evidence question, not permission to complete authorized work.
+
+The bounded fit is complete to illustrated review, with unresolved correspondence
+and surface mismatch. Next task: preserve any ownership answer, revise supported
+local evidence only, then compare targeted methods for the remaining mismatch
+before propagation. Recommend gpt-6-astra / High; stay in this session, no /new.
+Scoped final integrity checks, commit/push and exact remote-tip verification follow.
+
+
+### R126–R128 final integrity checks
+
+Passed all6 local unit tests; independent POV orthographic/perspective comparisons;
+known-synthetic correct-chart preference and >90% withheldG overlap; holdout
+isolation and camera/phase equivalence; all curated source/config/code hashes
+and generated-config agreement;6 final perspective scenarios;7 exposed model
+anchors per chart; tentative graph consistency;12-ID coverage; append-only
+request history;31 source/prior-artifact files byte-identical to HEAD;141 local
+links; git diff --check. Inspected the raw/model, question, synthetic and
+perspective review figures. No new answer to Q126.1 has been supplied.
+Scoped publication and exact remote-tip/final-status verification follow.
