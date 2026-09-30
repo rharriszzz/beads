@@ -2291,3 +2291,127 @@ live save and prior numeric evidence unchanged; request history keeps its full
 previous prefix. Three scripts parse; 159 local documentation links and whitespace
 checks pass. Final artifact hashes in review/r160/integrity.json. Remote refreshed
 and remains 0/0 before scoped publication. No additional phase advanced.
+
+
+## R161 — Extended maker labels saved
+
+Request: “I extended the labelled beads, and saved the file.”
+
+Preflight daisy, photo-2-reconstruction-v2 at 2503009, clean upstream 0/0, no
+stashes; remote refreshed, no rebase/autostash. Read handoff/latest log/plan,
+quick model and relevant interior/series experiments. Save exact live revision296
+as manual-labels-r161.json, SHA a525aaf05a7be8da79db93fc54f91c21205a08766912420ccc13566eed7a75e2.
+Old 27 points/IDs and all54 links unchanged. Now40 bodies,30 complete series,
+86 links,47 independent closing cycles, no exclusions/collisions. Independent
+triangle incidence rank47 spans all cycles. Ten complete six-neighbor stars:
+5/8/11/14/17/20/24/26/32/33. Both A/B index maps remain injective; no family
+selected. New offsets extend to+53/+51, beyond saved ray-domain+47. Extend and
+check latent-neighbor coverage before testing new points; no new pose fit now.
+Consider graph audit, frozen prediction and expanded refit; choose graph audit.
+Curated report/figure in review/r161; source/live save/old fits untouched.
+Reproduce .venv/bin/python photo2/audit_label_extension.py.
+
+## R162 — How many diagonal steps?
+
+Request: “In order to get a large enough patch to determine the helicity, you
+might have to go in both the diagonal directions for a sufficient number of
+steps.  what number of steps is this?”
+
+Use the earlier outward-angle scale: seven direction6 steps versus six direction7
+steps, both advancing42 indices over18.618276905 model units/6.461538 nominal rows.
+Initially recommend seven in each named diagonal to cover either assignment;
+R163 refines this for the endpoint identity test. Steps are links, not bead count.
+New save longest d2/d3 runs each five steps/six beads. All paths retained in report.
+No assertion that every outward point/intermediate body is exposed.
+
+## R163 — Guaranteed minimum?
+
+Request: “can you figure out what the guaranteed minimum is?”
+
+No universal guarantee from arbitrary visible-body count, camera/position error
+or positive interiors. Distinguish accumulated spacing, exact endpoint identity,
+and empirical pose-size sweeps. Exact conditional two-forward-diagonal test has
+minimum6*m=7*n ->m7,n6, thirteen total links. For six d2 versus seven d3,
+A predicts same endpoint, B index difference-13; seven d2 versus six d3 reverses.
+Known same/different endpoints therefore choose the family if every link is one
+consecutive neighbor and identities are correct, with N>13. Forty distinct bodies
+supply this lower bound without exact N. Combined paths have13 distinct bodies
+if closing,14 otherwise. This is minimum for that particular identity test, not
+all inference methods or a guarantee of visibility. No such witness in current
+40-body graph: local triangles span every cycle and both index maps are injective.
+A genuine minor-wrap cycle may fail planar(u,v); preserve/test weighted closure
+rather than automatically remove it. Explain in DIAGONAL_MINIMUM.md; revise the
+old overly broad adjacency-only statement in PATCH_SUFFICIENCY.md.
+
+## R164 — Larger image and preserved labels
+
+Request: “Can you give me an image that is a superset of this image, with the
+existing labelling preserved, so that I can continue the labelling.  Or a larger
+image, and a json file the preserves the labelling?”
+
+Consider full original image, larger original-coordinate app crop, or portable
+PNG/translated JSON. Supply a1000x700 raw lossless crop [900,0,1900,700] containing
+the old [1180,130,1540,520] view, and matched portable labels under review/r164.
+All40 IDs/numbers/label offsets and30 ordered series retained. Portable x shifts
+by-900,y unchanged; manifest stores inverse transform and hashes. Create editable
+portable copy in ignored output/labeler-wider/annotations.json, without overwriting
+original live data. Prefer .venv/bin/python photo2/label_beads.py --crop 900 0 1900 700 --port 0
+using original image and original live save. --full-image also works. Stop current
+server first; no launcher change or manual retry request. Reproduce
+.venv/bin/python photo2/export_label_context.py. Exact pixel identity, original
+coordinate recovery, stable identity/series and actual LabelStore loads verify
+both workflows without sockets/GUI. WIDER_LABEL_VIEW.md documents both.
+
+## R165 — Modulo 13 visibility estimate
+
+Request: “what is 42 mod 13?  You can use mod 13 to get an estimate of visibility.”
+
+42mod13=3. At nominal q6.5,13 indices make two minor turns: relative phase is
+h*720*(k mod13)/13 modulo360, so k42≈h166.153846 degrees from the starting phase.
+Use supported relative index k, not maker numbers. Phase/start camera/local tangent
+and neighbor occlusion determine exposure; body visibility is distinct from
+outward-point visibility. At q6.45–6.55 exact phase42 differs from nominal by
++18.03/-17.76 degrees. Preserve approximate status, hidden/edge exclusions and
+R112: this is no13-bead color-repeat or total-N restriction.
+
+## R166 — Photo-only helicity inference
+
+Request: “I have the original necklace somewhere, but in this project, I was
+hoping we can use only the photo to determine the helicity.”
+
+Explicit photo-only scope. Do not request physical-necklace inspection, physical
+bead counts or hidden-body labelling. The conditional closure proof is explanatory,
+not an inference gate. Preserve this constraint in plan/handoff/step reasoning.
+Next geometry task would be frozen A/B validation on added13 points after domain
+coverage checks, retaining old held-out22/23/24/25. No physical measurement/new
+fit/global indices/closure/repeat performed in this audit/export step.
+
+## R167 — Automatic whole-photo bead and adjacency labels (in progress)
+
+Request: “Can you automatically do this bead labelling and adjacency labelling
+process?  It seems to me that if you label all the beads that have sufficient
+visibility all the way around, the helicity might become obvious.”
+
+Treat as instruction to implement automatic substantial-visible-body locations
+and directional adjacency throughout the photograph, including black. Preserve
+manual40-body/86-link evidence for evaluation, original live annotations unchanged.
+Four methods presented: color/highlight regions, blob detection, a necklace-strip
+detector and projected-template walking. Select image-derived necklace strip with
+color/highlight evidence. No fixed saved coordinates/HSV boxes/magenta definition
+as runtime priors. Preserve uncertain instances, edge/hidden exclusions and missing
+slots; automatic proposals are separate from maker-confirmed labels. Photo-only.
+This request expands the ongoing task; automatic pipeline is now active, not yet
+implemented or claimed complete. The earlier audit/explanatory/export assets are
+ready for a scoped checkpoint; continue directly into automatic detection work.
+
+R167 concurrent-save update: while preparing assets, the user continued labelling
+in the expanded original-coordinate view. Capture separate revision322 snapshot
+manual-labels-r167.json with66 points/30 series for detector evaluation; do not
+replace revision296 or write the live file. The 40-body graph audit stays tied to
+its original snapshot. Automatic work remains active after this checkpoint.
+
+R167 capture detail: the live save advanced again before the snapshot read.
+Actual immutable automatic-evaluation snapshot is revision 340,
+66 beads/33 series/96 completed links, SHA
+77bbb2c6a445763215e1a7cef24bc9acf22e721c46c698890b447ba410036abe. This supersedes
+the anticipated revision322/30-series description above; live editing continues.

@@ -11,7 +11,48 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R160: confirmed-interior refit
+## Current task — R167: automatic whole-photo bead/adjacency proposals
+
+User asks to automate all sufficiently visible bodies and their directional
+neighbors around the entire photograph, with photo-only helicity inference.
+Preserve the new 40-body/86-link manual evidence for evaluation and keep live
+annotations untouched. Present color/highlight regions, blob detection, necklace
+strip detection and projected-template walking; begin with an image-derived
+strip plus interior color/reflection evidence. Learn background/palette/location
+from the input, including black; no saved coordinates/HSV boxes or magenta rule.
+Keep uncertain/gap/edge bodies explicit and tentative links separate from confirmed
+maker relations. Current stage is implementation, not a finished detector or
+accepted helicity. Continue after the audit/export checkpoint without stopping.
+
+## Prior task — R161–R166: extended labels and wider photo-only workspace
+
+[Revision 296 audit](photo2/LABEL_EXTENSION.md): 40 bodies, 30 series, 86 links,
+47 closing cycles, ten six-neighbor stars; all old points/links preserved.
+Both conditional index maps remain valid. Longest diagonal runs are five steps.
+No larger-patch geometry test has yet been performed.
+
+[Step minimum and visibility](photo2/DIAGONAL_MINIMUM.md) distinguish the nominal
+7/6 scale from a conditional endpoint-identity guarantee; no universal bead-count
+minimum. Exact consecutive 7/6-link paths decide the family if end identities
+are known; that witness is absent here and may include hidden bodies.
+42 mod13=3 gives nominal relative minor phase ±166.15°, approximate for q≠6.5.
+
+[Wider labeling assets](photo2/WIDER_LABEL_VIEW.md): raw crop [900,0,1900,700],
+portable matching JSON, all 40 IDs/numbers/series preserved. Prefer widening the
+original-coordinate app crop; original live save untouched. No launcher change.
+
+**R166 constraint:** inference uses only the photograph. Do not require inspecting
+the original necklace, physical counts or hidden-body labels. Conditional closure
+arithmetic is explanatory, not a gate. Target substantial central visible bodies.
+
+**Stopping point:** audit, mathematical clarification and wider assets complete.
+**Next task:** compare saved A/B poses with the 13 added visible surface points
+after extending/checking latent coverage (old +47 limit; new +53/+51 offsets).
+Preserve held-out 22/23/24/25; use new points first as validation. No fresh fit,
+whole-ring walk, N/repeat/full-string indices or physical-necklace request.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior task — R160: confirmed-interior refit
 
 The maker confirms all five green loops are inside their red/yellow/black beads;
 Q157.1 and Q159.1 are answered. Black color is clear despite uncertain full-body

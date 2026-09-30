@@ -1,6 +1,78 @@
 # Beads session handoff — new branch
 
-## Current R160 — Maker-confirmed interiors refitted
+## Current R167 — Automatic whole-photo labels requested; active
+
+User asks to automatically locate all sufficiently visible beads and label
+directional adjacency around the whole photo, then see if helicity becomes clear.
+Photo-only; include substantial black bodies, ignore edge slivers/hidden bodies
+while preserving unknown slots. Preserve original live labels and immutable
+revision296; manual40 locations/86 edges are validation evidence, not runtime
+seeds. Candidate automatic IDs/links must stay separate from maker-confirmed ones.
+
+Four methods presented: color/highlight regions, blob detection, image-derived
+necklace-strip detection, projected-template neighbor walking. Select strip with
+local H/S/V colored interior and reflection/dark-context black evidence. Derive
+background/palette/scale/locations from RGB; no fixed HSV boxes, magenta definition
+or diagnostic coordinates as automatic priors. Implementation has not begun yet.
+Do not stop after delivering audit/export; the new automatic task remains active.
+Existing local_pilot.py/interior_loops.py are assisted diagnostics, not detectors.
+SciPy/skimage/numpy installed; cv2/sklearn absent. No agent delegation authorized.
+
+Live save keeps advancing while user labels. Fixed new evaluation snapshot is
+manual-labels-r167.json revision340, 66 points/33 series (use exact completed links
+from snapshot); do not reread live data as fitter/detector input or overwrite it.
+The prior revision296 40-point graph report and portable export remain immutable.
+
+Prior audit/export/explanation code, docs, snapshot and curated images below are
+complete but pending checkpoint publication. Record/verify them, then continue
+automatic pipeline. Methods should be tested on manual evidence and independent
+source-macro synthetic appearance/ID examples before any inverse/helicity claim.
+
+## Prior R161–R166 — Extended save and wider photo-only view
+
+User extends labels, asks diagonal steps/guaranteed minimum, requests larger
+image plus preserved JSON, suggests mod13 visibility, and requires photo-only
+inference. Preflight daisy, photo-2-reconstruction-v2 at 2503009, clean/upstream
+0/0, no stashes. Read [audit](photo2/LABEL_EXTENSION.md),
+[step/visibility reasoning](photo2/DIAGONAL_MINIMUM.md),
+[wider view](photo2/WIDER_LABEL_VIEW.md), plan and latest request entries.
+
+Exact snapshot manual-labels-r161.json rev296 SHA
+a525aaf05a7be8da79db93fc54f91c21205a08766912420ccc13566eed7a75e2.
+40 points, 30 completed series, 86 links; all 27 old points/54 links unchanged.
+47 closing cycles; triangle matrix rank47 spans all cycles; no omissions/collisions.
+Both A/B maps injective. Ten six-neighbor stars: 5/8/11/14/17/20/24/26/32/33.
+Longest d2/d3 runs five steps. Only implied unrecorded link 3→6 d2 stays unconfirmed.
+Consider graph audit, frozen predictions, expanded fitting; audit only this step.
+
+No universal visible-body-count guarantee. Exact conditional test: 6 d2 versus
+7 d3 ends same→A, distinct→B; 7 d2 versus 6 d3 reverses. Wrong-family difference
+±13 cannot close if N>13 (40 distinct bodies give the required lower bound).
+Minimum for this two-forward-diagonal identity test: 13 links, 13 bodies if they
+meet or 14 if not; no witness here. Requires exact consecutive neighbors/identities.
+A valid minor-wrap cycle may violate planar (u,v); test weighted closure instead
+of dropping it. No hidden-body labels or physical-necklace inspection required.
+42 mod13=3; nominal phase h*166.15° from start. Camera/start phase/occlusion
+control exposure. q6.45–6.55 shifts phase42 by +18.03°/−17.76° from nominal.
+Approximate visibility phase, not a color-repeat or N restriction.
+
+Wider PNG 1000×700 crop[900,0,1900,700] and portable JSON under review/r164.
+Portable x=original x−900; y, IDs, numbers, offsets, all series unchanged.
+Editable copy in ignored output/labeler-wider/annotations.json. Prefer original
+source/live file: .venv/bin/python photo2/label_beads.py --crop 900 0 1900 700 --port 0.
+--full-image also works. Stop current server first. No launcher changes/tests.
+Exporter verifies raw pixels, exact coordinate recovery, actual LabelStore loads;
+original live save unchanged. Reproduce audit_label_extension.py and
+export_label_context.py. Original source/kernel/domain/previous fits preserved.
+
+**Stopping point:** audit/explanation/wider assets complete. **Next task:**
+photo-only frozen A/B comparison on added 13 points using new snapshot/mappings;
+extend/check latent domain first (old ends+47, new Amax53/Bmax51). Keep old
+22/23/24/25 evaluator-only; new points first validation. No fresh fit, whole-ring
+walk, physical necklace or N/repeat/full indices yet. Recommend gpt-6.1-sol / High;
+same session, no /new needed.
+
+## Prior R160 — Maker-confirmed interiors refitted
 
 Maker confirms all green loops on 8/11/14/17/20 are inside their red/yellow/black
 beads. Close Q157.1 and Q159.1 with the [confirmation](photo2/interior-confirmed-r160.json).

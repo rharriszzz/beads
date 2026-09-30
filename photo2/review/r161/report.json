@@ -1,0 +1,2675 @@
+{
+  "assumptions": [
+    "Completed click order supplies directed relations, not measured step counts.",
+    "Trial chart assumes each retained link is one neighbor step.",
+    "d3=d2-d1 is a proposed local relation supported by the recorded triangles.",
+    "Skipped steps inferred from other paths remain proposals until maker confirmation.",
+    "Maker numbers, stable IDs, discussion coordinates and full-string indices stay distinct."
+  ],
+  "revision": 296,
+  "bead_count": 40,
+  "completed_series": {
+    "d2": 7,
+    "d3": 9,
+    "d1": 14
+  },
+  "active_series": 0,
+  "recorded_link_count": 86,
+  "components": [
+    [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ]
+  ],
+  "cycle_rank": 47,
+  "recorded_direction_neighbors": {
+    "1": {
+      "+d1": [
+        2
+      ],
+      "+d2": [
+        4
+      ]
+    },
+    "2": {
+      "+d1": [
+        3
+      ],
+      "+d2": [
+        5
+      ],
+      "+d3": [
+        4
+      ],
+      "-d1": [
+        1
+      ]
+    },
+    "3": {
+      "+d3": [
+        5
+      ],
+      "-d1": [
+        2
+      ]
+    },
+    "4": {
+      "+d1": [
+        5
+      ],
+      "+d2": [
+        8
+      ],
+      "+d3": [
+        7
+      ],
+      "-d2": [
+        1
+      ],
+      "-d3": [
+        2
+      ]
+    },
+    "5": {
+      "+d1": [
+        6
+      ],
+      "+d2": [
+        9
+      ],
+      "+d3": [
+        8
+      ],
+      "-d1": [
+        4
+      ],
+      "-d2": [
+        2
+      ],
+      "-d3": [
+        3
+      ]
+    },
+    "6": {
+      "+d3": [
+        9
+      ],
+      "-d1": [
+        5
+      ]
+    },
+    "7": {
+      "+d1": [
+        8
+      ],
+      "+d2": [
+        10
+      ],
+      "-d3": [
+        4
+      ]
+    },
+    "8": {
+      "+d1": [
+        9
+      ],
+      "+d2": [
+        11
+      ],
+      "+d3": [
+        10
+      ],
+      "-d1": [
+        7
+      ],
+      "-d2": [
+        4
+      ],
+      "-d3": [
+        5
+      ]
+    },
+    "9": {
+      "+d2": [
+        12
+      ],
+      "+d3": [
+        11
+      ],
+      "-d1": [
+        8
+      ],
+      "-d2": [
+        5
+      ],
+      "-d3": [
+        6
+      ]
+    },
+    "10": {
+      "+d1": [
+        11
+      ],
+      "+d2": [
+        14
+      ],
+      "+d3": [
+        13
+      ],
+      "-d2": [
+        7
+      ],
+      "-d3": [
+        8
+      ]
+    },
+    "11": {
+      "+d1": [
+        12
+      ],
+      "+d2": [
+        15
+      ],
+      "+d3": [
+        14
+      ],
+      "-d1": [
+        10
+      ],
+      "-d2": [
+        8
+      ],
+      "-d3": [
+        9
+      ]
+    },
+    "12": {
+      "+d3": [
+        15
+      ],
+      "-d1": [
+        11
+      ],
+      "-d2": [
+        9
+      ]
+    },
+    "13": {
+      "+d1": [
+        14
+      ],
+      "+d2": [
+        16
+      ],
+      "-d3": [
+        10
+      ]
+    },
+    "14": {
+      "+d1": [
+        15
+      ],
+      "+d2": [
+        17
+      ],
+      "+d3": [
+        16
+      ],
+      "-d1": [
+        13
+      ],
+      "-d2": [
+        10
+      ],
+      "-d3": [
+        11
+      ]
+    },
+    "15": {
+      "+d2": [
+        18
+      ],
+      "+d3": [
+        17
+      ],
+      "-d1": [
+        14
+      ],
+      "-d2": [
+        11
+      ],
+      "-d3": [
+        12
+      ]
+    },
+    "16": {
+      "+d1": [
+        17
+      ],
+      "+d2": [
+        20
+      ],
+      "+d3": [
+        19
+      ],
+      "-d2": [
+        13
+      ],
+      "-d3": [
+        14
+      ]
+    },
+    "17": {
+      "+d1": [
+        18
+      ],
+      "+d2": [
+        21
+      ],
+      "+d3": [
+        20
+      ],
+      "-d1": [
+        16
+      ],
+      "-d2": [
+        14
+      ],
+      "-d3": [
+        15
+      ]
+    },
+    "18": {
+      "+d3": [
+        21
+      ],
+      "-d1": [
+        17
+      ],
+      "-d2": [
+        15
+      ]
+    },
+    "19": {
+      "+d1": [
+        20
+      ],
+      "+d2": [
+        22
+      ],
+      "-d3": [
+        16
+      ]
+    },
+    "20": {
+      "+d1": [
+        21
+      ],
+      "+d2": [
+        23
+      ],
+      "+d3": [
+        22
+      ],
+      "-d1": [
+        19
+      ],
+      "-d2": [
+        16
+      ],
+      "-d3": [
+        17
+      ]
+    },
+    "21": {
+      "+d3": [
+        23
+      ],
+      "-d1": [
+        20
+      ],
+      "-d2": [
+        17
+      ],
+      "-d3": [
+        18
+      ]
+    },
+    "22": {
+      "+d1": [
+        23
+      ],
+      "+d2": [
+        24
+      ],
+      "+d3": [
+        30
+      ],
+      "-d2": [
+        19
+      ],
+      "-d3": [
+        20
+      ]
+    },
+    "23": {
+      "+d2": [
+        25
+      ],
+      "+d3": [
+        24
+      ],
+      "-d1": [
+        22
+      ],
+      "-d2": [
+        20
+      ],
+      "-d3": [
+        21
+      ]
+    },
+    "24": {
+      "+d1": [
+        25
+      ],
+      "+d2": [
+        26
+      ],
+      "+d3": [
+        31
+      ],
+      "-d1": [
+        30
+      ],
+      "-d2": [
+        22
+      ],
+      "-d3": [
+        23
+      ]
+    },
+    "25": {
+      "+d2": [
+        28
+      ],
+      "+d3": [
+        26
+      ],
+      "-d1": [
+        24
+      ],
+      "-d2": [
+        23
+      ]
+    },
+    "26": {
+      "+d1": [
+        28
+      ],
+      "+d2": [
+        27
+      ],
+      "+d3": [
+        32
+      ],
+      "-d1": [
+        31
+      ],
+      "-d2": [
+        24
+      ],
+      "-d3": [
+        25
+      ]
+    },
+    "27": {
+      "+d2": [
+        29
+      ],
+      "+d3": [
+        33
+      ],
+      "-d1": [
+        32
+      ],
+      "-d2": [
+        26
+      ],
+      "-d3": [
+        28
+      ]
+    },
+    "28": {
+      "+d3": [
+        27
+      ],
+      "-d1": [
+        26
+      ],
+      "-d2": [
+        25
+      ]
+    },
+    "29": {
+      "+d3": [
+        34
+      ],
+      "-d1": [
+        33
+      ],
+      "-d2": [
+        27
+      ]
+    },
+    "30": {
+      "+d1": [
+        24
+      ],
+      "+d2": [
+        31
+      ],
+      "-d3": [
+        22
+      ]
+    },
+    "31": {
+      "+d1": [
+        26
+      ],
+      "+d2": [
+        32
+      ],
+      "+d3": [
+        36
+      ],
+      "-d2": [
+        30
+      ],
+      "-d3": [
+        24
+      ]
+    },
+    "32": {
+      "+d1": [
+        27
+      ],
+      "+d2": [
+        33
+      ],
+      "+d3": [
+        37
+      ],
+      "-d1": [
+        36
+      ],
+      "-d2": [
+        31
+      ],
+      "-d3": [
+        26
+      ]
+    },
+    "33": {
+      "+d1": [
+        29
+      ],
+      "+d2": [
+        34
+      ],
+      "+d3": [
+        38
+      ],
+      "-d1": [
+        37
+      ],
+      "-d2": [
+        32
+      ],
+      "-d3": [
+        27
+      ]
+    },
+    "34": {
+      "+d2": [
+        35
+      ],
+      "+d3": [
+        39
+      ],
+      "-d1": [
+        38
+      ],
+      "-d2": [
+        33
+      ],
+      "-d3": [
+        29
+      ]
+    },
+    "35": {
+      "+d3": [
+        40
+      ],
+      "-d1": [
+        39
+      ],
+      "-d2": [
+        34
+      ]
+    },
+    "36": {
+      "+d1": [
+        32
+      ],
+      "+d2": [
+        37
+      ],
+      "-d3": [
+        31
+      ]
+    },
+    "37": {
+      "+d1": [
+        33
+      ],
+      "+d2": [
+        38
+      ],
+      "-d2": [
+        36
+      ],
+      "-d3": [
+        32
+      ]
+    },
+    "38": {
+      "+d1": [
+        34
+      ],
+      "+d2": [
+        39
+      ],
+      "-d2": [
+        37
+      ],
+      "-d3": [
+        33
+      ]
+    },
+    "39": {
+      "+d1": [
+        35
+      ],
+      "+d2": [
+        40
+      ],
+      "-d2": [
+        38
+      ],
+      "-d3": [
+        34
+      ]
+    },
+    "40": {
+      "-d2": [
+        39
+      ],
+      "-d3": [
+        35
+      ]
+    }
+  },
+  "six_recorded_neighbors": [
+    5,
+    8,
+    11,
+    14,
+    17,
+    20,
+    24,
+    26,
+    32,
+    33
+  ],
+  "edges": [
+    {
+      "start": 1,
+      "end": 4,
+      "direction": "d2",
+      "series_id": "19ee604a-359b-41a9-ab3c-d51cc13cc242",
+      "position": 0
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "direction": "d2",
+      "series_id": "19ee604a-359b-41a9-ab3c-d51cc13cc242",
+      "position": 1
+    },
+    {
+      "start": 8,
+      "end": 11,
+      "direction": "d2",
+      "series_id": "19ee604a-359b-41a9-ab3c-d51cc13cc242",
+      "position": 2
+    },
+    {
+      "start": 11,
+      "end": 15,
+      "direction": "d2",
+      "series_id": "19ee604a-359b-41a9-ab3c-d51cc13cc242",
+      "position": 3
+    },
+    {
+      "start": 15,
+      "end": 18,
+      "direction": "d2",
+      "series_id": "19ee604a-359b-41a9-ab3c-d51cc13cc242",
+      "position": 4
+    },
+    {
+      "start": 7,
+      "end": 10,
+      "direction": "d2",
+      "series_id": "4a4acdc4-4670-44bd-b6ae-3e98c82d4997",
+      "position": 0
+    },
+    {
+      "start": 10,
+      "end": 14,
+      "direction": "d2",
+      "series_id": "4a4acdc4-4670-44bd-b6ae-3e98c82d4997",
+      "position": 1
+    },
+    {
+      "start": 14,
+      "end": 17,
+      "direction": "d2",
+      "series_id": "4a4acdc4-4670-44bd-b6ae-3e98c82d4997",
+      "position": 2
+    },
+    {
+      "start": 17,
+      "end": 21,
+      "direction": "d2",
+      "series_id": "4a4acdc4-4670-44bd-b6ae-3e98c82d4997",
+      "position": 3
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "direction": "d3",
+      "series_id": "a1da65c7-648e-41e5-9fc8-219d32dc67fb",
+      "position": 0
+    },
+    {
+      "start": 4,
+      "end": 7,
+      "direction": "d3",
+      "series_id": "a1da65c7-648e-41e5-9fc8-219d32dc67fb",
+      "position": 1
+    },
+    {
+      "start": 3,
+      "end": 5,
+      "direction": "d3",
+      "series_id": "35f5ae3a-e083-4889-a095-4a1f1f6a28fd",
+      "position": 0
+    },
+    {
+      "start": 5,
+      "end": 8,
+      "direction": "d3",
+      "series_id": "35f5ae3a-e083-4889-a095-4a1f1f6a28fd",
+      "position": 1
+    },
+    {
+      "start": 8,
+      "end": 10,
+      "direction": "d3",
+      "series_id": "35f5ae3a-e083-4889-a095-4a1f1f6a28fd",
+      "position": 2
+    },
+    {
+      "start": 10,
+      "end": 13,
+      "direction": "d3",
+      "series_id": "35f5ae3a-e083-4889-a095-4a1f1f6a28fd",
+      "position": 3
+    },
+    {
+      "start": 6,
+      "end": 9,
+      "direction": "d3",
+      "series_id": "7d04091b-7811-49db-86a3-2221cebf09b6",
+      "position": 0
+    },
+    {
+      "start": 9,
+      "end": 11,
+      "direction": "d3",
+      "series_id": "7d04091b-7811-49db-86a3-2221cebf09b6",
+      "position": 1
+    },
+    {
+      "start": 11,
+      "end": 14,
+      "direction": "d3",
+      "series_id": "7d04091b-7811-49db-86a3-2221cebf09b6",
+      "position": 2
+    },
+    {
+      "start": 14,
+      "end": 16,
+      "direction": "d3",
+      "series_id": "7d04091b-7811-49db-86a3-2221cebf09b6",
+      "position": 3
+    },
+    {
+      "start": 16,
+      "end": 19,
+      "direction": "d3",
+      "series_id": "7d04091b-7811-49db-86a3-2221cebf09b6",
+      "position": 4
+    },
+    {
+      "start": 1,
+      "end": 2,
+      "direction": "d1",
+      "series_id": "03ae7404-54b0-4e5a-892e-0bbb751c0d01",
+      "position": 0
+    },
+    {
+      "start": 2,
+      "end": 3,
+      "direction": "d1",
+      "series_id": "03ae7404-54b0-4e5a-892e-0bbb751c0d01",
+      "position": 1
+    },
+    {
+      "start": 4,
+      "end": 5,
+      "direction": "d1",
+      "series_id": "33059cb7-db70-437e-878d-be78d1c24307",
+      "position": 0
+    },
+    {
+      "start": 5,
+      "end": 6,
+      "direction": "d1",
+      "series_id": "33059cb7-db70-437e-878d-be78d1c24307",
+      "position": 1
+    },
+    {
+      "start": 7,
+      "end": 8,
+      "direction": "d1",
+      "series_id": "f939e7e4-9413-4ac7-87d2-5b79cbb6fba4",
+      "position": 0
+    },
+    {
+      "start": 8,
+      "end": 9,
+      "direction": "d1",
+      "series_id": "f939e7e4-9413-4ac7-87d2-5b79cbb6fba4",
+      "position": 1
+    },
+    {
+      "start": 13,
+      "end": 14,
+      "direction": "d1",
+      "series_id": "22aa85be-55d4-47a5-9504-afb2a6a39fcb",
+      "position": 0
+    },
+    {
+      "start": 14,
+      "end": 15,
+      "direction": "d1",
+      "series_id": "22aa85be-55d4-47a5-9504-afb2a6a39fcb",
+      "position": 1
+    },
+    {
+      "start": 16,
+      "end": 17,
+      "direction": "d1",
+      "series_id": "16f6942e-0bce-4141-b248-a601b25405c3",
+      "position": 0
+    },
+    {
+      "start": 17,
+      "end": 18,
+      "direction": "d1",
+      "series_id": "16f6942e-0bce-4141-b248-a601b25405c3",
+      "position": 1
+    },
+    {
+      "start": 19,
+      "end": 20,
+      "direction": "d1",
+      "series_id": "630ce294-4729-44de-848b-4b794ff46d7a",
+      "position": 0
+    },
+    {
+      "start": 20,
+      "end": 21,
+      "direction": "d1",
+      "series_id": "630ce294-4729-44de-848b-4b794ff46d7a",
+      "position": 1
+    },
+    {
+      "start": 22,
+      "end": 23,
+      "direction": "d1",
+      "series_id": "ec325f9c-93aa-4b8a-9682-06f3854a20d5",
+      "position": 0
+    },
+    {
+      "start": 10,
+      "end": 11,
+      "direction": "d1",
+      "series_id": "99f17f9a-e45e-4d28-8d90-389daeea872e",
+      "position": 0
+    },
+    {
+      "start": 11,
+      "end": 12,
+      "direction": "d1",
+      "series_id": "99f17f9a-e45e-4d28-8d90-389daeea872e",
+      "position": 1
+    },
+    {
+      "start": 2,
+      "end": 5,
+      "direction": "d2",
+      "series_id": "3a116b7a-9a11-4bbf-9963-3c7330edec01",
+      "position": 0
+    },
+    {
+      "start": 5,
+      "end": 9,
+      "direction": "d2",
+      "series_id": "3a116b7a-9a11-4bbf-9963-3c7330edec01",
+      "position": 1
+    },
+    {
+      "start": 9,
+      "end": 12,
+      "direction": "d2",
+      "series_id": "3a116b7a-9a11-4bbf-9963-3c7330edec01",
+      "position": 2
+    },
+    {
+      "start": 30,
+      "end": 31,
+      "direction": "d2",
+      "series_id": "3c1c5f24-3965-47e7-b1fe-8a889d343cee",
+      "position": 0
+    },
+    {
+      "start": 31,
+      "end": 32,
+      "direction": "d2",
+      "series_id": "3c1c5f24-3965-47e7-b1fe-8a889d343cee",
+      "position": 1
+    },
+    {
+      "start": 32,
+      "end": 33,
+      "direction": "d2",
+      "series_id": "3c1c5f24-3965-47e7-b1fe-8a889d343cee",
+      "position": 2
+    },
+    {
+      "start": 33,
+      "end": 34,
+      "direction": "d2",
+      "series_id": "3c1c5f24-3965-47e7-b1fe-8a889d343cee",
+      "position": 3
+    },
+    {
+      "start": 34,
+      "end": 35,
+      "direction": "d2",
+      "series_id": "3c1c5f24-3965-47e7-b1fe-8a889d343cee",
+      "position": 4
+    },
+    {
+      "start": 36,
+      "end": 37,
+      "direction": "d2",
+      "series_id": "be0d2153-e1e2-4fd5-a666-90d4d4902c27",
+      "position": 0
+    },
+    {
+      "start": 37,
+      "end": 38,
+      "direction": "d2",
+      "series_id": "be0d2153-e1e2-4fd5-a666-90d4d4902c27",
+      "position": 1
+    },
+    {
+      "start": 38,
+      "end": 39,
+      "direction": "d2",
+      "series_id": "be0d2153-e1e2-4fd5-a666-90d4d4902c27",
+      "position": 2
+    },
+    {
+      "start": 39,
+      "end": 40,
+      "direction": "d2",
+      "series_id": "be0d2153-e1e2-4fd5-a666-90d4d4902c27",
+      "position": 3
+    },
+    {
+      "start": 13,
+      "end": 16,
+      "direction": "d2",
+      "series_id": "6da97a8f-46f0-4c1e-b033-64a74b53f7d7",
+      "position": 0
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "direction": "d2",
+      "series_id": "6da97a8f-46f0-4c1e-b033-64a74b53f7d7",
+      "position": 1
+    },
+    {
+      "start": 20,
+      "end": 23,
+      "direction": "d2",
+      "series_id": "6da97a8f-46f0-4c1e-b033-64a74b53f7d7",
+      "position": 2
+    },
+    {
+      "start": 23,
+      "end": 25,
+      "direction": "d2",
+      "series_id": "6da97a8f-46f0-4c1e-b033-64a74b53f7d7",
+      "position": 3
+    },
+    {
+      "start": 25,
+      "end": 28,
+      "direction": "d2",
+      "series_id": "6da97a8f-46f0-4c1e-b033-64a74b53f7d7",
+      "position": 4
+    },
+    {
+      "start": 19,
+      "end": 22,
+      "direction": "d2",
+      "series_id": "36adbe29-a033-45ec-a533-a9697bfdd88e",
+      "position": 0
+    },
+    {
+      "start": 22,
+      "end": 24,
+      "direction": "d2",
+      "series_id": "36adbe29-a033-45ec-a533-a9697bfdd88e",
+      "position": 1
+    },
+    {
+      "start": 24,
+      "end": 26,
+      "direction": "d2",
+      "series_id": "36adbe29-a033-45ec-a533-a9697bfdd88e",
+      "position": 2
+    },
+    {
+      "start": 26,
+      "end": 27,
+      "direction": "d2",
+      "series_id": "36adbe29-a033-45ec-a533-a9697bfdd88e",
+      "position": 3
+    },
+    {
+      "start": 27,
+      "end": 29,
+      "direction": "d2",
+      "series_id": "36adbe29-a033-45ec-a533-a9697bfdd88e",
+      "position": 4
+    },
+    {
+      "start": 12,
+      "end": 15,
+      "direction": "d3",
+      "series_id": "e4360d7a-f298-496b-a52a-371bdbc4bfb7",
+      "position": 0
+    },
+    {
+      "start": 15,
+      "end": 17,
+      "direction": "d3",
+      "series_id": "e4360d7a-f298-496b-a52a-371bdbc4bfb7",
+      "position": 1
+    },
+    {
+      "start": 17,
+      "end": 20,
+      "direction": "d3",
+      "series_id": "e4360d7a-f298-496b-a52a-371bdbc4bfb7",
+      "position": 2
+    },
+    {
+      "start": 20,
+      "end": 22,
+      "direction": "d3",
+      "series_id": "e4360d7a-f298-496b-a52a-371bdbc4bfb7",
+      "position": 3
+    },
+    {
+      "start": 22,
+      "end": 30,
+      "direction": "d3",
+      "series_id": "e4360d7a-f298-496b-a52a-371bdbc4bfb7",
+      "position": 4
+    },
+    {
+      "start": 18,
+      "end": 21,
+      "direction": "d3",
+      "series_id": "38e0747c-cd1f-4a28-aad3-ff4119b746ad",
+      "position": 0
+    },
+    {
+      "start": 21,
+      "end": 23,
+      "direction": "d3",
+      "series_id": "38e0747c-cd1f-4a28-aad3-ff4119b746ad",
+      "position": 1
+    },
+    {
+      "start": 23,
+      "end": 24,
+      "direction": "d3",
+      "series_id": "38e0747c-cd1f-4a28-aad3-ff4119b746ad",
+      "position": 2
+    },
+    {
+      "start": 24,
+      "end": 31,
+      "direction": "d3",
+      "series_id": "38e0747c-cd1f-4a28-aad3-ff4119b746ad",
+      "position": 3
+    },
+    {
+      "start": 31,
+      "end": 36,
+      "direction": "d3",
+      "series_id": "38e0747c-cd1f-4a28-aad3-ff4119b746ad",
+      "position": 4
+    },
+    {
+      "start": 25,
+      "end": 26,
+      "direction": "d3",
+      "series_id": "38545396-2999-40e5-90b7-aee0535a97fb",
+      "position": 0
+    },
+    {
+      "start": 26,
+      "end": 32,
+      "direction": "d3",
+      "series_id": "38545396-2999-40e5-90b7-aee0535a97fb",
+      "position": 1
+    },
+    {
+      "start": 32,
+      "end": 37,
+      "direction": "d3",
+      "series_id": "38545396-2999-40e5-90b7-aee0535a97fb",
+      "position": 2
+    },
+    {
+      "start": 28,
+      "end": 27,
+      "direction": "d3",
+      "series_id": "d53a73c9-a8ba-44c2-b863-0461389f66f3",
+      "position": 0
+    },
+    {
+      "start": 27,
+      "end": 33,
+      "direction": "d3",
+      "series_id": "d53a73c9-a8ba-44c2-b863-0461389f66f3",
+      "position": 1
+    },
+    {
+      "start": 33,
+      "end": 38,
+      "direction": "d3",
+      "series_id": "d53a73c9-a8ba-44c2-b863-0461389f66f3",
+      "position": 2
+    },
+    {
+      "start": 29,
+      "end": 34,
+      "direction": "d3",
+      "series_id": "087d6bf4-499f-4026-a787-c00f9c447eb7",
+      "position": 0
+    },
+    {
+      "start": 34,
+      "end": 39,
+      "direction": "d3",
+      "series_id": "087d6bf4-499f-4026-a787-c00f9c447eb7",
+      "position": 1
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "direction": "d3",
+      "series_id": "1021e8f3-3afc-4d92-ae79-3c21f556e85d",
+      "position": 0
+    },
+    {
+      "start": 30,
+      "end": 24,
+      "direction": "d1",
+      "series_id": "1d3c7093-4d37-4de6-808b-dfcae8e8b66c",
+      "position": 0
+    },
+    {
+      "start": 24,
+      "end": 25,
+      "direction": "d1",
+      "series_id": "1d3c7093-4d37-4de6-808b-dfcae8e8b66c",
+      "position": 1
+    },
+    {
+      "start": 31,
+      "end": 26,
+      "direction": "d1",
+      "series_id": "db3fb03d-5956-491f-b9b8-6874a9766c47",
+      "position": 0
+    },
+    {
+      "start": 26,
+      "end": 28,
+      "direction": "d1",
+      "series_id": "db3fb03d-5956-491f-b9b8-6874a9766c47",
+      "position": 1
+    },
+    {
+      "start": 36,
+      "end": 32,
+      "direction": "d1",
+      "series_id": "1eb77949-ea64-451a-bcb6-1ce659a3132e",
+      "position": 0
+    },
+    {
+      "start": 32,
+      "end": 27,
+      "direction": "d1",
+      "series_id": "1eb77949-ea64-451a-bcb6-1ce659a3132e",
+      "position": 1
+    },
+    {
+      "start": 37,
+      "end": 33,
+      "direction": "d1",
+      "series_id": "79be169e-6365-47e9-aac8-3f0c8085ba60",
+      "position": 0
+    },
+    {
+      "start": 33,
+      "end": 29,
+      "direction": "d1",
+      "series_id": "79be169e-6365-47e9-aac8-3f0c8085ba60",
+      "position": 1
+    },
+    {
+      "start": 38,
+      "end": 34,
+      "direction": "d1",
+      "series_id": "a664f707-1453-41db-afe6-0ee4dd38722b",
+      "position": 0
+    },
+    {
+      "start": 39,
+      "end": 35,
+      "direction": "d1",
+      "series_id": "420cb428-5725-4cff-8e05-0c349a38738c",
+      "position": 0
+    }
+  ],
+  "triangles": [
+    {
+      "beads": [
+        1,
+        2,
+        4
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        2,
+        3,
+        5
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        2,
+        4,
+        5
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        4,
+        5,
+        8
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        4,
+        7,
+        8
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        5,
+        6,
+        9
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        5,
+        8,
+        9
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        7,
+        8,
+        10
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        8,
+        9,
+        11
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        8,
+        10,
+        11
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        9,
+        11,
+        12
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        10,
+        11,
+        14
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        10,
+        13,
+        14
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        11,
+        12,
+        15
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        11,
+        14,
+        15
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        13,
+        14,
+        16
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        14,
+        15,
+        17
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        14,
+        16,
+        17
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        15,
+        17,
+        18
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        16,
+        17,
+        20
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        16,
+        19,
+        20
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        17,
+        18,
+        21
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        17,
+        20,
+        21
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        19,
+        20,
+        22
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        20,
+        21,
+        23
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        20,
+        22,
+        23
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        22,
+        23,
+        24
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        22,
+        24,
+        30
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        23,
+        24,
+        25
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        24,
+        25,
+        26
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        24,
+        26,
+        31
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        24,
+        30,
+        31
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        25,
+        26,
+        28
+      ],
+      "signed_direction_counts": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "beads": [
+        26,
+        27,
+        28
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        26,
+        27,
+        32
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        26,
+        31,
+        32
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        27,
+        29,
+        33
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        27,
+        32,
+        33
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        29,
+        33,
+        34
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        31,
+        32,
+        36
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        32,
+        33,
+        37
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        32,
+        36,
+        37
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        33,
+        34,
+        38
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        33,
+        37,
+        38
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        34,
+        35,
+        39
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        34,
+        38,
+        39
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "beads": [
+        35,
+        39,
+        40
+      ],
+      "signed_direction_counts": [
+        -1,
+        1,
+        -1
+      ]
+    }
+  ],
+  "search": [
+    {
+      "omission_count": 0,
+      "checked": 1,
+      "solutions": 1
+    }
+  ],
+  "conditional_charts": [
+    {
+      "origin_bead": 1,
+      "direction_steps": {
+        "d1": [
+          1,
+          0
+        ],
+        "d2": [
+          0,
+          1
+        ],
+        "d3": [
+          -1,
+          1
+        ]
+      },
+      "coordinates": {
+        "1": [
+          0,
+          0
+        ],
+        "2": [
+          1,
+          0
+        ],
+        "3": [
+          2,
+          0
+        ],
+        "4": [
+          0,
+          1
+        ],
+        "5": [
+          1,
+          1
+        ],
+        "6": [
+          2,
+          1
+        ],
+        "7": [
+          -1,
+          2
+        ],
+        "8": [
+          0,
+          2
+        ],
+        "9": [
+          1,
+          2
+        ],
+        "10": [
+          -1,
+          3
+        ],
+        "11": [
+          0,
+          3
+        ],
+        "12": [
+          1,
+          3
+        ],
+        "13": [
+          -2,
+          4
+        ],
+        "14": [
+          -1,
+          4
+        ],
+        "15": [
+          0,
+          4
+        ],
+        "16": [
+          -2,
+          5
+        ],
+        "17": [
+          -1,
+          5
+        ],
+        "18": [
+          0,
+          5
+        ],
+        "19": [
+          -3,
+          6
+        ],
+        "20": [
+          -2,
+          6
+        ],
+        "21": [
+          -1,
+          6
+        ],
+        "22": [
+          -3,
+          7
+        ],
+        "23": [
+          -2,
+          7
+        ],
+        "24": [
+          -3,
+          8
+        ],
+        "25": [
+          -2,
+          8
+        ],
+        "26": [
+          -3,
+          9
+        ],
+        "27": [
+          -3,
+          10
+        ],
+        "28": [
+          -2,
+          9
+        ],
+        "29": [
+          -3,
+          11
+        ],
+        "30": [
+          -4,
+          8
+        ],
+        "31": [
+          -4,
+          9
+        ],
+        "32": [
+          -4,
+          10
+        ],
+        "33": [
+          -4,
+          11
+        ],
+        "34": [
+          -4,
+          12
+        ],
+        "35": [
+          -4,
+          13
+        ],
+        "36": [
+          -5,
+          10
+        ],
+        "37": [
+          -5,
+          11
+        ],
+        "38": [
+          -5,
+          12
+        ],
+        "39": [
+          -5,
+          13
+        ],
+        "40": [
+          -5,
+          14
+        ]
+      },
+      "unit_link_count": 86,
+      "independent_unit_cycles": 47,
+      "coordinate_collisions": 0,
+      "implied_unrecorded_links": [
+        {
+          "start": 3,
+          "end": 6,
+          "direction": "d2",
+          "status": "Graph-implied unit relation; not recorded or maker-confirmed"
+        }
+      ],
+      "proposed_jumps": [],
+      "relative_index_candidates": [
+        {
+          "weights": {
+            "d1": -1,
+            "d2": 6,
+            "d3": 7
+          },
+          "offsets": {
+            "1": 0,
+            "2": -1,
+            "3": -2,
+            "4": 6,
+            "5": 5,
+            "6": 4,
+            "7": 13,
+            "8": 12,
+            "9": 11,
+            "10": 19,
+            "11": 18,
+            "12": 17,
+            "13": 26,
+            "14": 25,
+            "15": 24,
+            "16": 32,
+            "17": 31,
+            "18": 30,
+            "19": 39,
+            "20": 38,
+            "21": 37,
+            "22": 45,
+            "23": 44,
+            "24": 51,
+            "25": 50,
+            "26": 57,
+            "27": 63,
+            "28": 56,
+            "29": 69,
+            "30": 52,
+            "31": 58,
+            "32": 64,
+            "33": 70,
+            "34": 76,
+            "35": 82,
+            "36": 65,
+            "37": 71,
+            "38": 77,
+            "39": 83,
+            "40": 89
+          },
+          "status": "Conditional relative offsets; origin and whole-string orientation unknown"
+        },
+        {
+          "weights": {
+            "d1": -1,
+            "d2": -7,
+            "d3": -6
+          },
+          "offsets": {
+            "1": 0,
+            "2": -1,
+            "3": -2,
+            "4": -7,
+            "5": -8,
+            "6": -9,
+            "7": -13,
+            "8": -14,
+            "9": -15,
+            "10": -20,
+            "11": -21,
+            "12": -22,
+            "13": -26,
+            "14": -27,
+            "15": -28,
+            "16": -33,
+            "17": -34,
+            "18": -35,
+            "19": -39,
+            "20": -40,
+            "21": -41,
+            "22": -46,
+            "23": -47,
+            "24": -53,
+            "25": -54,
+            "26": -60,
+            "27": -67,
+            "28": -61,
+            "29": -74,
+            "30": -52,
+            "31": -59,
+            "32": -66,
+            "33": -73,
+            "34": -80,
+            "35": -87,
+            "36": -65,
+            "37": -72,
+            "38": -79,
+            "39": -86,
+            "40": -93
+          },
+          "status": "Conditional relative offsets; origin and whole-string orientation unknown"
+        },
+        {
+          "weights": {
+            "d1": 1,
+            "d2": -6,
+            "d3": -7
+          },
+          "offsets": {
+            "1": 0,
+            "2": 1,
+            "3": 2,
+            "4": -6,
+            "5": -5,
+            "6": -4,
+            "7": -13,
+            "8": -12,
+            "9": -11,
+            "10": -19,
+            "11": -18,
+            "12": -17,
+            "13": -26,
+            "14": -25,
+            "15": -24,
+            "16": -32,
+            "17": -31,
+            "18": -30,
+            "19": -39,
+            "20": -38,
+            "21": -37,
+            "22": -45,
+            "23": -44,
+            "24": -51,
+            "25": -50,
+            "26": -57,
+            "27": -63,
+            "28": -56,
+            "29": -69,
+            "30": -52,
+            "31": -58,
+            "32": -64,
+            "33": -70,
+            "34": -76,
+            "35": -82,
+            "36": -65,
+            "37": -71,
+            "38": -77,
+            "39": -83,
+            "40": -89
+          },
+          "status": "Conditional relative offsets; origin and whole-string orientation unknown"
+        },
+        {
+          "weights": {
+            "d1": 1,
+            "d2": 7,
+            "d3": 6
+          },
+          "offsets": {
+            "1": 0,
+            "2": 1,
+            "3": 2,
+            "4": 7,
+            "5": 8,
+            "6": 9,
+            "7": 13,
+            "8": 14,
+            "9": 15,
+            "10": 20,
+            "11": 21,
+            "12": 22,
+            "13": 26,
+            "14": 27,
+            "15": 28,
+            "16": 33,
+            "17": 34,
+            "18": 35,
+            "19": 39,
+            "20": 40,
+            "21": 41,
+            "22": 46,
+            "23": 47,
+            "24": 53,
+            "25": 54,
+            "26": 60,
+            "27": 67,
+            "28": 61,
+            "29": 74,
+            "30": 52,
+            "31": 59,
+            "32": 66,
+            "33": 73,
+            "34": 80,
+            "35": 87,
+            "36": 65,
+            "37": 72,
+            "38": 79,
+            "39": 86,
+            "40": 93
+          },
+          "status": "Conditional relative offsets; origin and whole-string orientation unknown"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "annotations_sha256": "a525aaf05a7be8da79db93fc54f91c21205a08766912420ccc13566eed7a75e2",
+    "previous_sha256": "94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de",
+    "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "script_sha256": "aae5aad969898a83def93f5ff4cb2e56c46f2febaff53a5e81b4703e93bd1ab7",
+    "graph_analyzer_sha256": "2365843747620a5af76ebadcd6b1af38bed6220bc4c2e9ae8ba9add575f9fb11"
+  },
+  "extension": {
+    "previous_revision": 162,
+    "added_beads": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "removed_beads": [],
+    "changed_existing_beads": [],
+    "added_links": [
+      [
+        22,
+        30,
+        "d3"
+      ],
+      [
+        24,
+        31,
+        "d3"
+      ],
+      [
+        25,
+        26,
+        "d3"
+      ],
+      [
+        25,
+        28,
+        "d2"
+      ],
+      [
+        26,
+        28,
+        "d1"
+      ],
+      [
+        26,
+        32,
+        "d3"
+      ],
+      [
+        27,
+        29,
+        "d2"
+      ],
+      [
+        27,
+        33,
+        "d3"
+      ],
+      [
+        28,
+        27,
+        "d3"
+      ],
+      [
+        29,
+        34,
+        "d3"
+      ],
+      [
+        30,
+        24,
+        "d1"
+      ],
+      [
+        30,
+        31,
+        "d2"
+      ],
+      [
+        31,
+        26,
+        "d1"
+      ],
+      [
+        31,
+        32,
+        "d2"
+      ],
+      [
+        31,
+        36,
+        "d3"
+      ],
+      [
+        32,
+        27,
+        "d1"
+      ],
+      [
+        32,
+        33,
+        "d2"
+      ],
+      [
+        32,
+        37,
+        "d3"
+      ],
+      [
+        33,
+        29,
+        "d1"
+      ],
+      [
+        33,
+        34,
+        "d2"
+      ],
+      [
+        33,
+        38,
+        "d3"
+      ],
+      [
+        34,
+        35,
+        "d2"
+      ],
+      [
+        34,
+        39,
+        "d3"
+      ],
+      [
+        35,
+        40,
+        "d3"
+      ],
+      [
+        36,
+        32,
+        "d1"
+      ],
+      [
+        36,
+        37,
+        "d2"
+      ],
+      [
+        37,
+        33,
+        "d1"
+      ],
+      [
+        37,
+        38,
+        "d2"
+      ],
+      [
+        38,
+        34,
+        "d1"
+      ],
+      [
+        38,
+        39,
+        "d2"
+      ],
+      [
+        39,
+        35,
+        "d1"
+      ],
+      [
+        39,
+        40,
+        "d2"
+      ]
+    ],
+    "removed_links": [],
+    "duplicate_recorded_links": 0
+  },
+  "independent_cycle_check": {
+    "triangle_count": 47,
+    "triangle_matrix_rank": 47,
+    "all_triangle_rows_close": true,
+    "all_recorded_unit_links_match_chart": true
+  },
+  "relative_families": {
+    "A": {
+      "weights": {
+        "d1": 1,
+        "d2": 7,
+        "d3": 6
+      },
+      "origin_bead": 20,
+      "offsets": {
+        "1": -40,
+        "2": -39,
+        "3": -38,
+        "4": -33,
+        "5": -32,
+        "6": -31,
+        "7": -27,
+        "8": -26,
+        "9": -25,
+        "10": -20,
+        "11": -19,
+        "12": -18,
+        "13": -14,
+        "14": -13,
+        "15": -12,
+        "16": -7,
+        "17": -6,
+        "18": -5,
+        "19": -1,
+        "20": 0,
+        "21": 1,
+        "22": 6,
+        "23": 7,
+        "24": 13,
+        "25": 14,
+        "26": 20,
+        "27": 27,
+        "28": 21,
+        "29": 34,
+        "30": 12,
+        "31": 19,
+        "32": 26,
+        "33": 33,
+        "34": 40,
+        "35": 47,
+        "36": 25,
+        "37": 32,
+        "38": 39,
+        "39": 46,
+        "40": 53
+      },
+      "minimum": -40,
+      "maximum": 53,
+      "span": 93,
+      "unlabelled_slots_in_span": 54,
+      "status": "Conditional offsets; missing slots are not inferred hidden beads or recovered whole-string indices"
+    },
+    "B": {
+      "weights": {
+        "d1": -1,
+        "d2": 6,
+        "d3": 7
+      },
+      "origin_bead": 20,
+      "offsets": {
+        "1": -38,
+        "2": -39,
+        "3": -40,
+        "4": -32,
+        "5": -33,
+        "6": -34,
+        "7": -25,
+        "8": -26,
+        "9": -27,
+        "10": -19,
+        "11": -20,
+        "12": -21,
+        "13": -12,
+        "14": -13,
+        "15": -14,
+        "16": -6,
+        "17": -7,
+        "18": -8,
+        "19": 1,
+        "20": 0,
+        "21": -1,
+        "22": 7,
+        "23": 6,
+        "24": 13,
+        "25": 12,
+        "26": 19,
+        "27": 25,
+        "28": 18,
+        "29": 31,
+        "30": 14,
+        "31": 20,
+        "32": 26,
+        "33": 32,
+        "34": 38,
+        "35": 44,
+        "36": 27,
+        "37": 33,
+        "38": 39,
+        "39": 45,
+        "40": 51
+      },
+      "minimum": -40,
+      "maximum": 51,
+      "span": 91,
+      "unlabelled_slots_in_span": 52,
+      "status": "Conditional offsets; missing slots are not inferred hidden beads or recovered whole-string indices"
+    }
+  },
+  "previous_model_domain": {
+    "minimum": -60,
+    "maximum": 47,
+    "status": "R160 ray-model domain; extend with latent-neighbor margins before testing this larger patch"
+  },
+  "diagonal_runs": {
+    "d2": {
+      "maximum_recorded_steps": 5,
+      "longest_recorded_paths": [
+        [
+          1,
+          4,
+          8,
+          11,
+          15,
+          18
+        ],
+        [
+          13,
+          16,
+          20,
+          23,
+          25,
+          28
+        ],
+        [
+          19,
+          22,
+          24,
+          26,
+          27,
+          29
+        ],
+        [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      ],
+      "status": "Links count steps; an m-step run contains m+1 numbered bodies"
+    },
+    "d3": {
+      "maximum_recorded_steps": 5,
+      "longest_recorded_paths": [
+        [
+          6,
+          9,
+          11,
+          14,
+          16,
+          19
+        ],
+        [
+          12,
+          15,
+          17,
+          20,
+          22,
+          30
+        ],
+        [
+          18,
+          21,
+          23,
+          24,
+          31,
+          36
+        ]
+      ],
+      "status": "Links count steps; an m-step run contains m+1 numbered bodies"
+    }
+  },
+  "nominal_one_step_difference": {
+    "direction6_steps": 7,
+    "direction7_steps": 6,
+    "familyA": {
+      "d2_steps": 6,
+      "d3_steps": 7
+    },
+    "familyB": {
+      "d2_steps": 7,
+      "d3_steps": 6
+    },
+    "centerline_distance": 18.618276905,
+    "nominal_rows": 6.461538,
+    "reference_sha256": "1e7e7548170148fbdaa81f2e035e1c2f1586144acafcc24814a6e10d4ec206c3",
+    "status": "Earlier nominal outward-angle comparison scale, not a guaranteed minimum; intermediate bodies can be hidden"
+  },
+  "conditional_diagonal_identity_test": {
+    "minimum_direction6_steps": 7,
+    "minimum_direction7_steps": 6,
+    "total_links": 13,
+    "unique_bodies_if_paths_meet": 13,
+    "unique_bodies_if_paths_do_not_meet": 14,
+    "tests": [
+      {
+        "d2_steps": 6,
+        "d3_steps": 7,
+        "A_endpoint_index_difference": 0,
+        "B_endpoint_index_difference": -13
+      },
+      {
+        "d2_steps": 7,
+        "d3_steps": 6,
+        "A_endpoint_index_difference": 13,
+        "B_endpoint_index_difference": 0
+      }
+    ],
+    "guaranteed_only_if": [
+      "Each link is an exact consecutive neighbor in the named direction",
+      "Endpoint and intermediate bead identities are correct",
+      "The two paths share a start and move forward in the same major-circle sense",
+      "Necklace contains more than 13 distinct beads; the current 40-body inventory supplies this lower bound if identities are correct"
+    ],
+    "present_in_current_graph": false,
+    "current_graph_evidence": "Both index maps are injective and the 47 local triangles span all 47 cycles; no family-specific closure/collision witness",
+    "limitation": "Minimum for this two-forward-diagonal-path identity test, not a universal minimum for helicity inference or a promise of visible paths"
+  }
+}

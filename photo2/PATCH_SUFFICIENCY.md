@@ -75,8 +75,10 @@ across the tube and a portion that can be withheld from fitting.
 
 ## Why count alone cannot guarantee the answer
 
-- A neighbor graph can be reflected while preserving adjacency. It does not by
-  itself supply geometric chirality, even with many vertices.
+- A local graph whose cycles only express d2=d1+d3 admits both signed index
+  families, regardless of its vertex count. A witnessed nonlocal closure or
+  index/identity collision can select a family; see the later
+  [conditional diagonal identity test](DIAGONAL_MINIMUM.md).
 - A long narrow chain supplies little evidence across the minor circle. Retain
   all three neighbor families and appreciable transverse coverage; length alone
   is not a substitute.

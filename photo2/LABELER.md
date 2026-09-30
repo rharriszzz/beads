@@ -20,6 +20,10 @@ The default view is the original photograph's EXIF-oriented wider raw crop x1180
 360×390 pixels. No existing B/C/G annotations are loaded. Installed Pillow is
 the only third-party runtime dependency.
 
+R164: [expand to x900–1900, y0–700 with the saved 40-bead labels](WIDER_LABEL_VIEW.md).
+The app loads the existing annotation file; a larger raw PNG and matching
+portable JSON are also available there. No re-labelling or launcher change.
+
 Source SHA-256: `eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb`;
 oriented source size 2540×3182. Integrity checking confirmed the served crop
 matches the original pixel-for-pixel and creates no annotation file until saving.

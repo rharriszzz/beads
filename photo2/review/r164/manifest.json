@@ -1,0 +1,29 @@
+{
+  "source_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "input_labels_sha256": "a525aaf05a7be8da79db93fc54f91c21205a08766912420ccc13566eed7a75e2",
+  "exporter_sha256": "2a1c159c5f8c8ebc9bdc2bcbd2cbb3f34ef686e38dd91945f22a432b76ebceaa",
+  "crop_in_original_source": [
+    900,
+    0,
+    1900,
+    700
+  ],
+  "image_sha256": "d59295aef3c249f5120a6a3f2d1907b228526538baf2f7384314d927da4c7250",
+  "labels_sha256": "04936aa93919d9ed9999d2133d4b90a4ee23208af412befb8883cfedeec494e1",
+  "revision": 296,
+  "bead_count": 40,
+  "series_count": 30,
+  "coordinates": "Portable x/y = original x/y minus crop left/top; IDs, numbers, offsets and series unchanged",
+  "inverse_transform": {
+    "add_x": 900,
+    "add_y": 0
+  },
+  "verified": {
+    "raw_pixels_identical": true,
+    "all_markers_and_series_preserved": true,
+    "original_positions_recover_exactly": true,
+    "real_label_store_loads_both_workflows": true
+  },
+  "preferred_command": ".venv/bin/python photo2/label_beads.py --crop 900 0 1900 700 --port 0",
+  "portable_command": ".venv/bin/python photo2/label_beads.py --image photo2/review/r164/wider-photo.png --annotations photo2/output/labeler-wider/annotations.json --port 0"
+}

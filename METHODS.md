@@ -644,6 +644,16 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R161–R166 extended manual evidence:** [40-body graph audit](photo2/LABEL_EXTENSION.md)
+checks saved-data deltas, cycles and triangle-basis rank. Both weighted maps are
+injective; local triangle closure alone cannot choose them.
+[Exact diagonal endpoint identity](photo2/DIAGONAL_MINIMUM.md) distinguishes a family
+given consecutive 7/6-step paths and known same/different endpoints; conditional,
+not a universal photo patch-size threshold. Mod13 estimates minor phase, not
+color repeat or measured exposure. Inference stays photo-only.
+[Wider labeling export](photo2/WIDER_LABEL_VIEW.md) preserves raw pixels and IDs/
+series with explicit translation; prefer the original-coordinate app crop.
+
 **R160 confirmed-interior refit:** [bounded comparison](photo2/INTERIOR_REFIT.md)
 refits both families from retained poses using 23 training marks and five
 maker-confirmed positive cores/routes. Equal per-body loss, all outside pixels
