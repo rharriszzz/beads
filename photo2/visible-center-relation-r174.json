@@ -1,0 +1,40 @@
+{
+  "request": "R174",
+  "statement": "In fact the true center of the visible part of 14 is about midway between the center of the visible part of 11 and the center of the visible part of 16.  but again, 14 is black.",
+  "maker_constraint": {
+    "maker_numbers": [
+      11,
+      14,
+      16
+    ],
+    "direction": "d3",
+    "position_role": "center of the visible part of each bead",
+    "relation": "c14_visible approximately equals (c11_visible + c16_visible) / 2",
+    "approximate": true,
+    "numeric_tolerance": null
+  },
+  "observation_identities": {
+    "11": {
+      "automatic_observation_id": "15411382-cc29-5606-8025-478a38e07075",
+      "maker_observation_id": "edd9c662-880d-42f1-ae5b-ef589744fd12"
+    },
+    "14": {
+      "automatic_observation_id": "3fc05c37-f6c6-5482-827d-fe559cf7b000",
+      "maker_observation_id": "bce8fa1a-8a44-4dd0-9a6d-bee490044f13"
+    },
+    "16": {
+      "automatic_observation_id": "0c32bde9-f6e9-522e-9d45-9129f55bccfd",
+      "maker_observation_id": "1c5d48fe-0694-41c9-9e33-726b40ff6a44"
+    }
+  },
+  "selected14_reflection_xy": [
+    1293.368441660141,
+    280.908125
+  ],
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "annotation_sha256": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+  "supporting_image": "photo2/review/r171/neighbor-comparison.png",
+  "supporting_image_sha256": "7a868294b20144804daaeca851cdad6374183d47a703ba230660e290f7f28054",
+  "interpretation": "Approximate visible-center relationship supplied by the maker; existing selected interior/reflection locations are not independently measured visible centers.",
+  "role": "Diagnostic maker constraint for position refinement and validation; not an image-derived automatic runtime prior."
+}

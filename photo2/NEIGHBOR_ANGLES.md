@@ -13,6 +13,17 @@ The48.32° result measures connections between these selected points, not a bend
 between bead centers. Body ownership remains confirmed while geometric position
 is uncertain. No replacement point or numerical offset was supplied.
 
+**R174 maker geometry:** the center of the visible part of14 is approximately
+midway between the visible-part centers of11 and16. Save this as
+`c14_visible ≈ (c11_visible + c16_visible)/2` in
+[visible-center-relation-r174.json](visible-center-relation-r174.json).
+This supplies an approximate alignment/equal-spacing reference for the correct
+d3 chain.14 is black, and its reflection remains the observation anchor while
+its representative position needs refinement. The existing selected points on11
+and16 are not independently measured visible-area centers, so their arithmetic
+midpoint would only be a provisional proxy. Use the maker relation for diagnostic
+refinement/validation, keeping automatic runtime location inference image-derived.
+
 ## Q171.1 — Ownership of point S on the proposed bead16
 
 In the **raw left panel**, does cyan **S** lie inside the same yellow bead as
@@ -139,6 +150,8 @@ image hashes, exact pair measurements and every variant's results.
 reweighting fix with controlled counterexamples. **Next bounded task:** preserve
 competing neighbors and test small triangle consistency using supported body
 identities, representing reflection-point displacement as positional uncertainty
-instead of treating each point as a precise representative location. Do not infer
+instead of treating each point as a precise representative location. First use
+R174's approximate visible-center midpoint relation to diagnose position14 with
+uncertainty in both endpoint centers. Do not infer
 full-string indices,N,closure,repeat or helicity from this experiment.
 Recommend **gpt-6.1-sol / High**, same conversation; no `/new` needed.

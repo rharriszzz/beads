@@ -2717,3 +2717,30 @@ scoped record/docs and verify remote tip before delivery. Stopping point: maker
 fact preserved and angular interpretation qualified. Next bounded task: local
 triangle/neighbor constraints with uncertain anchor positions and competing edges.
 Recommend gpt-6.1-sol / High, same conversation; no /new needed.
+## R174 — Visible-area center14 approximately midway between11 and16
+
+User: “In fact the true center of the visible part of 14 is about midway between
+the center of the visible part of 11 and the center of the visible part of 16.
+but again, 14 is black.” Preserve exact original spacing/statement in
+visible-center-relation-r174.json with stable IDs, source/snapshot/supporting-image
+hashes. Maker relation is c14_visible≈(c11_visible+c16_visible)/2, approximate,
+for the already confirmed11→14→16 d3 chain. Black14's reflection retains body
+identity support but is not a measured visible-area center.
+
+Preflight daisy, photo-2-reconstruction-v2 at3699446,clean/no stashes,fetch and
+upstream0/0. Update neighbor interpretation, method index, plan/handoff. Keep
+supplied approximate geometry distinct from image-derived runtime location
+inference. No pixel center coordinates, numeric tolerance or corrected14 point
+supplied. Current selected11/16 marks aren't independently measured visible-area
+centers; their mean would only be a provisional proxy. No production changes,
+point moves, fitting, new images or recalculated angle claims in this bounded
+maker-evidence step. All old numerical outputs and live annotations preserved.
+
+Validate new record IDs/provenance, local links, append-only log and whitespace;
+no repeated numerical tests needed. Commit/push scoped record/docs and verify
+exact remote tip before delivery. Stopping point: midpoint relation recorded.
+Next bounded task: diagnostic14 position refinement using uncertain endpoint
+visible-center estimates and this approximate relation, then neighbor/triangle
+alternatives. Retain separate visible-area center, physical center and outward
+minor-circle anchor roles. Recommend gpt-6.1-sol / High, same conversation;
+no /new needed.

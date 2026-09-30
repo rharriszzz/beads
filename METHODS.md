@@ -661,6 +661,11 @@ its visible-area center. Ownership does not imply representative-point precision
 carry positional uncertainty into triangle/neighbor inference. The48.32° bend
 is measured between selected anchors, not bead centers. No replacement coordinate
 or quantitative offset supplied. See [maker fact](photo2/anchor-position-note-r173.json).
+R174 adds [approximate visible-center midpoint evidence](photo2/visible-center-relation-r174.json):
+`c14_visible ≈ (c11_visible+c16_visible)/2`. Use this as a diagnostic position
+constraint with uncertainty in both endpoint centers before judging angular
+failure. Averaging current interior/reflection marks is only a proxy. This maker
+reference is not a runtime prior or a physical-center/outward-anchor measurement.
 
 **R169 reflection competition correction:** [paired evidence](photo2/REFLECTION_SUPPRESSION.md)
 shows that a colored-highlight flank can suppress a real black-bead peak before

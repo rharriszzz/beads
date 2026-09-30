@@ -11,7 +11,23 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current clarification — R173: bead14 ownership versus position
+## Current clarification — R174: visible14 lies approximately midway
+
+Maker supplies `c14_visible ≈ (c11_visible+c16_visible)/2`, where each c is the
+center of the visible part of that bead. [Saved relation](photo2/visible-center-relation-r174.json)
+preserves the exact statement, three stable identities and source provenance.
+This is a diagnostic geometric constraint on the correct11→14→16 d3 chain;
+numeric tolerance and pixel center locations were not supplied.14 is black;
+its reflection remains an ownership anchor with uncertain representative position.
+
+**Stopping point:** record the midpoint relation; preserve all numerical outputs
+and observations. **Next bounded task:** diagnose14's representative position
+using this approximate relation with uncertain11/16 visible-center estimates,
+then test neighbor/triangle alternatives. Keep this maker constraint separate
+from image-derived automatic runtime inference and from the outward-anchor target.
+Recommend gpt-6.1-sol / High, same conversation; no /new needed.
+
+## Prior R173: bead14 ownership versus position
 
 The maker confirms11→14→16 is correct and says the selected point on14 is not
 close to the center of its visible part, because black beads are hard to see.

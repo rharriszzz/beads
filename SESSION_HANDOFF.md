@@ -1,6 +1,31 @@
 # Beads session handoff — new branch
 
-## Current R173 — Confirmed chain; black14's reflection is off-center
+## Current R174 — Maker supplies a visible-center midpoint relation
+
+Maker says the true center of the visible part of14 is approximately midway
+between the visible-part centers of11 and16, and reiterates14 is black.
+[visible-center-relation-r174.json](photo2/visible-center-relation-r174.json)
+stores exact statement, `c14_visible ≈ (c11_visible+c16_visible)/2`, stable
+observation/maker identities and source/snapshot/image hashes. See
+[NEIGHBOR_ANGLES.md](photo2/NEIGHBOR_ANGLES.md). Preflight daisy,
+photo-2-reconstruction-v2 at3699446,clean/no stashes,fetch/upstream0/0. No agents.
+
+Keep this approximate maker alignment/equal-spacing reference distinct from
+runtime image-derived evidence. No pixel center coordinates or numerical tolerance
+were supplied. Existing selected points on11/16 aren't independently measured
+visible-area centers; averaging them is only a provisional proxy.14's reflection
+still locates the owned body, but needs separate representative-position refinement.
+Visible-area center differs from physical center/outward minor-circle anchor;
+maker's preferred outward-anchor target remains separate. No automatic indexing/
+helicity or position-update claims; all measurements/observations/code unchanged.
+
+**Stopping point:** preserve the maker midpoint constraint.
+**Next bounded task:** diagnostic refinement of14's representative position using
+uncertain visible-center estimates11/16 and the supplied approximate relation,
+then compare neighbor/triangle alternatives. Recommend gpt-6.1-sol / High,
+same session,no/new. Scoped record/docs delivery then stop.
+
+## Prior R173 — Confirmed chain; black14's reflection is off-center
 
 Maker correction:11→14→16 is correct, but the selected point on14 is not close
 to the center of its visible part; black beads are hard to see. Exact statement/
