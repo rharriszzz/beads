@@ -1,6 +1,43 @@
 # Beads session handoff — new branch
 
-## Current R157–R158 — Conservative interiors replace rejected outlines
+## Current R159 — Frozen-pose comparison on provisional interiors complete
+
+User “continue” resumes the interior constraint step. Preflight daisy/WSL2,
+photo-2-reconstruction-v2 at 3f99a41, upstream 0/0, clean tree, no stashes.
+Read [comparison and Q159.1](photo2/INTERIOR_POSE_COMPARISON.md), plan and saved
+loop/curved experiments. Existing code/evidence/live annotations unchanged.
+
+Consider scoring frozen poses, refitting, or deriving positions from interiors;
+implement frozen scoring now. Q157.1 remains unanswered; continue is permission
+to analyze, not loop acceptance. Use all five provisional loops on 8/11/14/17/20,
+454 equal-arc fractional line samples and 660 enclosed integer pixels. Equal
+weight per bead; only first-hit correct-relative-owner passes. Outside remains
+unknown, including paper/shadow/gaps. No full-body boundary is drawn or fitted.
+
+All 26 retained R156 fits scored, including synthetic/photo, both families/windings,
+camera and q conditions. Baseline B1 covers all 660 pixels and 454 samples; A1/A2/A3
+miss 38/171/31 enclosed pixels. B is stronger among saved poses only. Fixed q B1
+also covers all; nominal perspective has a full-coverage B alternative with an old
+held-out failure. Keep held-out counts beside scores; no selected accepted pose.
+Photo A alternatives need refitting before any family exclusion. Synthetic true
+generating A pose covers all cores/routes; prior correct-family point fits miss
+some true interiors, while old wrong B has lower positive-region coverage.
+
+Independent source-macro/trig POV checks: nine renders agree on all 660 core
+pixels each, and nine exact fractional line-miss witnesses agree. Caps for grazing
+ray/body pairs remain recorded; baseline B1 and A1/A3 sample rays converge.
+Reports/curated raw+interior figures under review/r159; routine scenes ignored.
+Reproduce score_interior_poses.py then check_interior_scores.py. No new dependency,
+geometry fit, source change, N/camera/color-order inference or whole-ring walk.
+
+**Stopping point:** frozen comparison complete. **Next task:** bounded refit of
+both families with reviewed/provisional-positive interiors plus existing training
+marks; preserve held-out 22/23/24/25 and uncertainty. Q159.1 focuses on whether
+bead8's green loop/orange samples lie inside that yellow body; pending, no answer
+assumed. Q157.1 independently pending. Retired outline questions are not gates.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior R157–R158 — Conservative interiors replace rejected outlines
 
 R157 maker rejects all proposed complete outlines as crossing into other beads.
 Requests closed lines comfortably inside bodies, H for red/yellow color and S/V

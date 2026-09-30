@@ -644,6 +644,16 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R159 positive-interior pose scoring:** [frozen comparison](photo2/INTERIOR_POSE_COMPARISON.md)
+uses equal-arc fractional samples on conservative closed loops and every enclosed
+integer pixel. Score first-hit expected-owner coverage with equal weight per body;
+retain missing samples/actual model owners and keep outside pixels unknown.
+Compare all saved poses and keep prior held-out scores visible. Independent
+source-macro/trig POV checks validate model ownership. Known synthetic interiors
+show why a failed frozen pose cannot rule out its whole family. No refitting,
+silhouette loss, automatic detector or accepted helicity; loop acceptance remains
+separate. Next refit competing families on supported positive regions.
+
 **R157–R158 conservative interiors:** [local HSV/reflection loops](photo2/INTERIOR_LOOPS.md)
 supersede full-body outline review after the maker rejects the projected contours.
 Use circular local H for chromatic appearance and S/V to retain strong interiors;

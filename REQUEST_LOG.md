@@ -2129,3 +2129,81 @@ history remains append-only. Syntax/whitespace and 154 local documentation
 links verified. Final report/image hashes recorded. Q157.1 remains pending; no
 maker acceptance or subsequent geometry work is assumed. Scoped publication
 follows on the existing branch.
+
+## R159 — Continue with interior samples against the saved poses (2026-09-29)
+
+User, verbatim: “continue”
+
+Resume the next bounded interior-constraint comparison. Preflight daisy/WSL2,
+photo-2-reconstruction-v2 at 3f99a4195c7ae24ed85d6df81f4a3f48e82ed05d,
+upstream 0/0, clean tree, no stashes. Read handoff/latest log/plan, interior-loop
+and curved-pose experiments plus prior shape model. Q157.1 is unanswered;
+continue authorizes analysis, not maker acceptance of the provisional loops.
+
+Present three methods: score saved poses on closed routes/enclosed interiors;
+refit both families with positive regions; or derive geometric positions from
+interiors. Select the frozen-pose comparison now. Add score_interior_poses.py
+and independent check_interior_scores.py. Preserve all existing input evidence,
+parameters and the rejected full-body-outline status.
+
+Use unchanged loops on maker 8/11/14/17/20: 454 equal-arc line samples at 0.5
+source-pixel spacing and 660 enclosed integer pixel centers. Polygon reconstruction
+matches all saved core counts. Score correct first-hit ownership only, equal
+weight per bead. Keep missed coordinates/model owners, stable maker UUIDs and
+relative indices separate from unknown full-string indices. Outside pixels remain
+unknown; owner −999 is no model hit, not a paper label. No silhouette, negative
+background loss, color fit, pose refit or outward-anchor measurement.
+
+All 26 retained R156 poses across 16 conditions scored. Baseline q-free
+orthographic B1 covers every core and route sample and all four old held-out marks.
+A1/A2/A3 cover 622/489/629 of 660 enclosed pixels respectively and miss some
+line samples. Their mean per-body core coverage is 95.46/79.78/95.27 percent.
+B is stronger among the saved candidates, not accepted helicity or proof against
+an unrefitted A pose. Fixed q=6.5 likewise has full-coverage B; best saved A reaches
+96.97 percent mean core coverage but passes only 3/4 old held-out marks. A nominal
+perspective B alternative covers all interiors while missing an old held-out mark;
+keep those separate scores visible instead of silently selecting it as accepted.
+
+Independent known-synthetic POV ID interiors, inset four pixels, calibrate scoring.
+Generating true A pose covers all five cores/routes. Old correct-family point
+fits miss some true interiors (98.75–99.52 percent mean core), while the old wrong
+B fit reaches 88.94 percent. A failed frozen pose is not a failed whole family.
+Evaluator truth is explicit assistance, not HSV extraction or an automatic detector.
+
+Nine independent source-macro/trig POV renders agree on all 660 core pixels each
+(5,940 comparisons), plus nine exact fractional line-miss witnesses. Iteration
+caps remain recorded for grazing ray/body pairs; baseline B1 and A1/A3 sample
+rays converge. No new test suite that mirrors simple scoring; independent known
+truth, ownership, input-preservation and reconstruction checks provide validation.
+
+Q159.1 in INTERIOR_POSE_COMPARISON.md asks if bead 8's green loop and orange
+locations remain comfortably inside the yellow body. Its crop is chosen by the
+B-versus-best-saved-A core-coverage gap; this selects only the question view,
+never moves a loop or a pose. Raw/detail five-body and focused images tracked
+under review/r159. Q159.1 and broad Q157.1 remain pending; no answer assumed.
+
+Update plan/methods/handoff. Source/live revision-162 save, all prior numeric/
+curated evidence and frozen parameters preserved. No new dependency, geometry
+fit, whole-necklace walk, N/closure/repeat/colors/camera inference. Reproduce
+.venv/bin/python photo2/score_interior_poses.py, then
+.venv/bin/python photo2/check_interior_scores.py. Routine scenes ignored.
+
+Stopping point: completed conditional frozen-pose comparison. Next bounded task
+is refitting both families with the positive interiors plus existing training
+marks, preserving held-out 22/23/24/25 and loop uncertainty. Recommend
+gpt-6.1-sol / High; same session, no /new needed.
+
+R159 integrity outcome: code/input hashes, every frozen parameter set, all
+independent core counts and exact miss witnesses verified. 141 local documentation
+links and syntax/whitespace pass. Stable UUID metadata added without changing
+samples/parameters; independent-check provenance reconciled after verifying those
+counts and witnesses. Source/live save and prior evidence unchanged; request
+history preserves its full prior prefix. Final artifact hashes recorded in
+review/r159/integrity.json. Refreshed remote remains 0/0 before scoped publication.
+
+R159 publication detail: exhaustive routine ray-coordinate records are ignored
+under output/r159/full-scores.json. Tracked curated report retains all condition
+scores, complete miss coordinates for the raw A1/A2/A3/B1 review, and the full
+record's hash/reproduction path. Aggregate scores and independent witnesses
+verified unchanged after this output separation. Source/loop/pose inputs remain
+unchanged; no additional fitting or acceptance occurred.

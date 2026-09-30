@@ -11,7 +11,29 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R157–R158: replace rejected outlines with interior loops
+## Current task — R159: frozen poses scored on provisional interiors
+
+[Interior comparison and Q159.1](photo2/INTERIOR_POSE_COMPARISON.md) evaluates
+all saved R156 poses on five unchanged R157 loops: 454 fractional line samples
+and 660 enclosed pixels, positive evidence only. Baseline B1 covers everything;
+saved A1/A2/A3 miss 38/171/31 enclosed pixels. Fixed q and nominal phone-camera
+sensitivity also favor a saved B pose, though one all-interior perspective pose
+misses an old held-out mark. Scores do not erase those failures.
+
+B is stronger among the saved poses, not accepted helicity. Q157.1 and focused
+Q159.1 remain unanswered, so loops/results are provisional. No pose refitting
+or negative/background loss was performed. Known synthetic calibration also
+shows that a correct-family point fit can miss true interiors; a failed frozen
+pose does not rule out its family. Original model extents remain rejected.
+
+**Stopping point:** complete frozen-pose/interior comparison with independent
+POV checks. **Next task:** bounded refit of both families using the interior
+samples plus existing training marks, preserving held-out 22/23/24/25 and loop
+uncertainty. No outline acceptance is required first; do not infer closure,
+full-string indices/colors/repeat or start whole-necklace walking. Recommend
+gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior task — R157–R158: replace rejected outlines with interior loops
 
 The maker rejects all prior full-body outlines because they cross into adjacent
 beads. Use conservative closed interior loops, hue for red/yellow appearance,
