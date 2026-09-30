@@ -1,6 +1,42 @@
 # Beads session handoff — new branch
 
-## Current R152–R155 — Patch size and one extra neighbor step
+## Current R156 — Curved 27-body comparison complete
+
+User “continue” resumes the existing patch comparison. Preflight daisy/WSL2,
+photo-2-reconstruction-v2 at 81cbb8e, upstream 0/0, no stashes, clean tree.
+Read [experiment](photo2/CURVED_PATCH_FIT.md), [question](photo2/CURVED_PATCH_QUESTIONS.md)
+and [PLAN.md](PLAN.md). Maker revision 162/source/previous results stay unchanged.
+
+Local planar constant-curvature model uses original rounded source beads and
+free camera elevation/azimuth/phase. Ordinary surface marks are NOT measured
+outward anchors. Fit 23; whole 22/23/24/25 group evaluator-only, including G23.
+All location-derived bounds/proposals/rankings use training only. Two families,
+both windings, orthographic baseline and nominal EXIF perspective sensitivity;
+q 6.45–6.55 plus fixed 6.5. No q/curvature-to-photo-N inference or loop closure.
+
+A/+1 and B/−1 each have a pose owning all 27 under orthographic projection,
+including fixed q. A1 misses withheld25; A2/A3 pass. Preserve those alternatives.
+Known synthetic wrong B/−1 also passes all 27. Positive marks still do not fix
+family, pose or anchor. Model exposure compares correct owner AND front depth,
+with .005-unit tolerance, so a same-body self-hidden wall is not called exposed.
+The models' prediction that all photo anchors are exposed is NOT supplied fact;
+outward initialization favors this. Predicted boundaries can spill into gaps.
+
+Four source/straight-limit/exposure/whole-group-isolation tests pass. Independent
+POV checks use source macro and separate trig placement. See tracked reports for
+pixel disagreement, exact/fractional point checks and grazing iteration caps.
+One A2 point ray has an unfinished grazing pair; A3/B1 selected point rays have
+none. 512 proposals terminate within cap; 2/26 retained refinements cap. No global
+exclusion. Routine scenes under ignored output/r156; curated raw/question images
+tracked. Reproduce the four commands in the experiment, maxfev550.
+
+**Stopping point:** comparison delivered, neither helicity accepted. **Next task:**
+Q156.1 reviews bead11's visible extent (A1/A2/B1/none/unclear); then constrain a
+central body with supported boundary evidence before deriving photo-supported
+outward points. Q149.1 also pending; do not assume either answer. No whole-ring
+walking/colors/closure/repeat. Recommend gpt-6.1-sol / High, same session, no /new.
+
+## Prior R152–R155 — Patch size and one extra neighbor step
 
 Maker asks how large a connected bead region must be for clear helicity. Read
 [assessment](photo2/PATCH_SUFFICIENCY.md) and [PLAN.md](PLAN.md). Angle calculation

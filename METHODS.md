@@ -644,6 +644,20 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R156 curved-patch diagnostic:** [27-body comparison](photo2/CURVED_PATCH_FIT.md)
+fits positive ordinary surface marks with source rounded beads, a local planar
+arc and free camera pose. Hold out a whole neighbor group, derive bounds/seeds/
+rankings from training locations only, and retain distinct poses rather than
+phase-period duplicates. Compare both assignments/windings, perspective
+sensitivity and fixed/free row pitch. Check minor-outward exposure by correct
+owner AND front-hit depth; a same-body first hit can hide the far wall. Both
+photo families and the known synthetic wrong family pass all 27 ordinary marks.
+This validates neither outward anchors nor helicity. Source-circle/straight-limit/
+self-hidden-wall/holdout-isolation tests and independent POV ownership checks
+validate the forward computation. Raw extent/anchor proposals are reviewed in
+[Q156.1](photo2/CURVED_PATCH_QUESTIONS.md) before adding supported boundary
+constraints; no automatic reconstruction, source-N inference or accepted outline.
+
 **R152–R155 patch sufficiency:** [geometry and withheld-evidence criterion](photo2/PATCH_SUFFICIENCY.md)
 uses the existing 27-body/six-star patch first. A proposed 20–30-body practical
 target is not a measured minimum. Preserve breadth, all neighbor families,

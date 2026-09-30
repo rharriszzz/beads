@@ -1986,3 +1986,73 @@ stars independently checked. Nine protected source/prior evidence/calculator
 files unchanged. Request history remains append-only; whitespace and 131 local
 documentation links pass. Scoped explanatory publication follows; no new code,
 image fitting or patch-size experiment included.
+
+## R156 — Continue the curved comparison on the 27-body patch (2026-09-29)
+
+User, verbatim: “continue”
+
+Resume the unfinished bounded task from R152–R155, not the deferred launcher
+retry. Preflight daisy/WSL2, photo-2-reconstruction-v2 at
+81cbb8e4b8ebe39c22a0fc348a6ae0533d92b7f2, upstream 0/0, no stashes, clean tree.
+Read handoff, latest log, plan, prior shape model and relevant graph/point/angle/
+size experiments. Consider three methods before implementation: curved positive
+point fitting with outward prediction/review; reviewed outline fitting; shading
+inference. Select the first using existing marks without reclassifying them as
+outward measurements. No additional bulk labeling or color inference.
+
+Add curved_surface_fit.py, fit_curved_patch.py, check_curved_patch.py,
+review_curved_patch.py and four meaningful tests. Local planar arc, original
+rounded-annular source beads and minor-outward wall midpoint; free camera pose,
+curvature and bounded row pitch. Whole group 22/23/24/25 is evaluator-only. All
+bounds/proposals/start ranking use training locations. Retain up to three distinct
+poses rather than phase-period copies. Final positive-ray ownership cost imposes
+no outside/background labels. Runtime manual coordinates remain explicit
+diagnostic assistance, not an automatic reconstruction method.
+
+Sixteen conditions compare both families/windings on independent known-curved
+synthetic ordinary points, photo orthographic/nominal phone-perspective models,
+and orthographic fixed q=6.5 sensitivity. A/+1 and B/−1 both have a pose passing
+all 27 photo marks, including the withheld group and fixed q. The synthetic wrong
+B/−1 also passes all 27. A1 misses withheld 25; A2/A3 pass, so do not reject A from
+its first fit. No family, camera or full index is accepted. Unknown photo N,
+origin/closure/repeat/colors stay unresolved. Free pitch/curvature do not infer N.
+
+Derived outward exposure requires both correct owner and first-hit depth within
+.005 scene units; a self-hidden wall with the same owner is rejected. Model
+prediction that all 27 outward anchors are exposed is not supplied photo fact;
+initialization favors exposed poses. Ordinary marks leave substantial anchor and
+camera uncertainty; reviewed body extents are the next independent evidence.
+
+Four tests pass against exact source-circle placement, legacy straight tracing,
+self-hidden exposure and complete held-out-group isolation. Three forward and
+16 retained-fit POV checks pass; largest retained disagreement 8/48,825 pixels,
+with up to 195 unfinished grazing ray/body pairs on grids. One A2 point ray has
+an unfinished pair; A3/B1 have none. Fifty-four independent single-pixel POV
+renders through exact fractional maker locations verify A3/B1 at 27/27 each.
+Rounded coordinates can cross boundaries and do not replace those exact checks.
+All 512 proposal starts terminate within 120 evaluations; 2/26 retained refinements
+cap at 550. No global impossibility or confidence claim from failed searches.
+
+Tracked experiment CURVED_PATCH_FIT.md, pending Q156.1 in
+CURVED_PATCH_QUESTIONS.md, complete numeric/hash provenance and three curated
+raw/comparison/question images under review/r156. Ask which A1/A2/B1 outline
+best follows clear central bead 11, or none/unclear; no answer assumed. Q149.1
+remains pending independently. Update methods/plan/handoff. Source image,
+beads.pov, maker revision 162/live save and prior evidence preserved; no new
+dependency or GUI/server action. Routine scenes/renders remain ignored.
+
+Reproduce four commands in the experiment, including fit_curved_patch.py
+--maxfev 550. Stop after this bounded comparison and illustrated review. Next
+constrain a central body with reviewed boundary evidence before deriving
+photo-supported outward anchors, not whole-necklace walking/colors/closure.
+Recommend gpt-6.1-sol / High; same session, no /new needed. Scoped integrity and
+publication follow.
+
+R156 integrity outcome: four tests pass; code/report hashes and all retained
+parameters match independent rendered checks. Fifty-four exact fractional POV
+point checks pass. Source image/geometry, all prior tracked photo2 evidence and
+the exact live revision-162 save are unchanged. Request history preserves its
+entire prior prefix. Syntax/whitespace and 143 local documentation links pass.
+Final integrity.json records environment and artifact hashes. Refreshed remote
+remains 0/0 before scoped commit/push. Questions remain pending; no acceptance
+or next-phase work is inferred.

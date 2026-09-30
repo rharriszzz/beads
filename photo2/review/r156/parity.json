@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "parameters": [
+        1345,
+        285,
+        8,
+        -8,
+        60,
+        15,
+        10,
+        0.018,
+        6.5
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1170,
+        220,
+        1500,
+        365
+      ],
+      "mismatches": 5,
+      "pixels": 47850,
+      "mismatch_fraction": 0.0001044932079414838,
+      "unfinished_ray_pairs": 41,
+      "scene_sha256": "17c1812638dbe6e4042ebb439707e7f5fcd80ae86dd380ae94d16f8ac2798966",
+      "png_sha256": "e263b63b4220a8bfafcd54e7dfee9d7144c4d82abe7220e9676b7c41e9748600",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/parity/check-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/parity/check-0.png",
+        "+W330",
+        "+H145",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "parameters": [
+        1345,
+        285,
+        8,
+        -8,
+        60,
+        15,
+        10,
+        -0.018,
+        6.5
+      ],
+      "hand": -1,
+      "focal": null,
+      "crop": [
+        1170,
+        220,
+        1500,
+        365
+      ],
+      "mismatches": 2,
+      "pixels": 47850,
+      "mismatch_fraction": 4.179728317659352e-05,
+      "unfinished_ray_pairs": 34,
+      "scene_sha256": "4ad79673063ccb50196ddddd3addd9ead9b1941d60925c8bdfd0b8430caa08ce",
+      "png_sha256": "8177fd7c3af482af394435ba2f3ac29209c8956a327ff24c265e268d76c07fca",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/parity/check-1.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/parity/check-1.png",
+        "+W330",
+        "+H145",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "parameters": [
+        1345,
+        285,
+        8,
+        -8,
+        60,
+        15,
+        10,
+        0.018,
+        6.5
+      ],
+      "hand": 1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1170,
+        220,
+        1500,
+        365
+      ],
+      "mismatches": 3,
+      "pixels": 47850,
+      "mismatch_fraction": 6.269592476489028e-05,
+      "unfinished_ray_pairs": 34,
+      "scene_sha256": "069b247ba89d4c233d672db233bddf0177e738e9544fabc0497db76c59809781",
+      "png_sha256": "04c7fce6933d285769f74202af45d00f50f9c9bfc898b84e19db22c882fc0b36",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/parity/check-2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/parity/check-2.png",
+        "+W330",
+        "+H145",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    }
+  ],
+  "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+  "kernel_sha256": "9f881dde6ab6652367c89ff8568c221806f551a3eefcbdcb6359914d194b0915",
+  "checker_sha256": "f3f95b26224cae7de43c396fbd3a2e097320087820e7d4ddf34da245abbc9436"
+}

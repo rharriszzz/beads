@@ -11,7 +11,30 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R152–R155: existing patch exceeds the one-step size scale
+## Current task — R156: curved 27-body comparison complete; outline review pending
+
+[Curved comparison](photo2/CURVED_PATCH_FIT.md) fits 23 ordinary maker surface
+locations and withholds the neighboring 22/23/24/25 group. Both A/+1 and B/−1
+have a pose owning all 27 marks under orthographic projection, including when
+pitch is fixed at 6.5. The wrong family also passes all 27 in a known curved
+POV example. The nominal phone-perspective sensitivity is not calibrated and
+does not justify rejecting A. Neither helicity, camera nor outward anchor is
+accepted. Predicted outward exposure is checked by owner AND first-hit depth,
+but remains a model prediction, not an image measurement.
+
+Raw context, proposed visible extents and outward points are compared in
+[Q156.1](photo2/CURVED_PATCH_QUESTIONS.md), asking about clear central bead 11.
+The older Q149.1 remains pending independently. Preserve passing alternative A
+starts rather than treating the first start's withheld failure as family rejection.
+
+**Stopping point:** this bounded comparison and illustrated review. **Next task:**
+constrain a central body with the reviewed extent or a short reliable boundary
+segment, then derive supported outward positions. The existing patch remains
+the appropriate starting region; do not request a larger patch or begin the
+whole-necklace walk/color/closure/repeat phase from these unaccepted poses.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior task — R152–R155: existing patch exceeds the one-step size scale
 
 The maker asks how large a connected region must be to identify helicity.
 [Assessment](photo2/PATCH_SUFFICIENCY.md) recommends starting with the existing

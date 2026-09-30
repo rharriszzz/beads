@@ -1,0 +1,6156 @@
+{
+  "cases": [
+    {
+      "parameters": [
+        1336.7719131211682,
+        286.7034678026524,
+        7.751507056568809,
+        -10.562210435852581,
+        5.000001848158804,
+        -7.424853124514541,
+        -290.8419258149764,
+        -0.005917450565802678,
+        6.494001773595113
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 4,
+      "pixels": 48825,
+      "mismatch_fraction": 8.19252432155658e-05,
+      "unfinished_ray_pairs": 26,
+      "scene_sha256": "b284b94f66019e20de9ebf77641e7f003fefa55cfb4043c047b9b2c58df0558b",
+      "png_sha256": "9e87447ef12114111dbd1e9ebd7646b5ad570d0bf9e7c911118ea00909c37dbc",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-4-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-4-0.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 15,
+          "expected": 14,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 4,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1337.6866246104619,
+        288.98917701543155,
+        7.793878786354751,
+        -3.9268912070628095,
+        89.49752854380154,
+        -3.2591802134255725,
+        -24.176721739226636,
+        0.006997329160727045,
+        6.516282988756993
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 3,
+      "pixels": 48825,
+      "mismatch_fraction": 6.144393241167435e-05,
+      "unfinished_ray_pairs": 195,
+      "scene_sha256": "178dc4af208dbcf074913afd02ba06a149a350bec94ae338d38b215c0f7144d4",
+      "png_sha256": "3ef1656c864e97bdbdb01f3f521ea4de98246d6cac840164be6e4be136b0b1dd",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-4-1.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-4-1.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 14,
+          "expected": 14,
+          "pov_pass": true
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 4,
+      "retained": 1
+    },
+    {
+      "parameters": [
+        1337.2426132250844,
+        289.4386890707237,
+        7.814193236703807,
+        167.13234609483357,
+        34.85475631282399,
+        -168.18820879341135,
+        -78.79461031717928,
+        0.014446140378175666,
+        6.528737771806425
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 4,
+      "pixels": 48825,
+      "mismatch_fraction": 8.19252432155658e-05,
+      "unfinished_ray_pairs": 25,
+      "scene_sha256": "e30a4febf5700ab42f89d951ba6532175fda1d269e6cca892a52f1ec38004cda",
+      "png_sha256": "4bce7d7784227e7a9a8623f361a026bc83502749db2d14565438bf58c22bbb05",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-4-2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-4-2.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 14,
+          "expected": 14,
+          "pov_pass": true
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 4,
+      "retained": 2
+    },
+    {
+      "parameters": [
+        1339.1762038831835,
+        281.4638068100045,
+        8.063770836321142,
+        153.9961990384422,
+        47.05498743277381,
+        -162.74428473986373,
+        -45.80823599928355,
+        0.00677326689698727,
+        6.549552557068861
+      ],
+      "hand": -1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 2,
+      "pixels": 48825,
+      "mismatch_fraction": 4.09626216077829e-05,
+      "unfinished_ray_pairs": 15,
+      "scene_sha256": "6264f7634416969b8fac21d6119b2a49ad941c42a024a81b8116e9f580bf834f",
+      "png_sha256": "2f602d14235af34af7d30206f7fb458c033bfb768145d82d0656b97575b1056f",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-7-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-7-0.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -999,
+          "expected": -38,
+          "pov_pass": false
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -34,
+          "expected": -34,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -21,
+          "expected": -21,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -8,
+          "expected": -8,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 12,
+          "expected": 12,
+          "pov_pass": true
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 19,
+          "expected": 19,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 25,
+          "expected": 25,
+          "pov_pass": true
+        }
+      ],
+      "case": 7,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1336.078421907004,
+        286.5197504873428,
+        7.5530701033577285,
+        -7.5244047469776,
+        89.41596453303768,
+        -2.5350390242973195,
+        -2.9324698045870066,
+        0.0040351476604216854,
+        6.494984413041373
+      ],
+      "hand": 1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 3,
+      "pixels": 48825,
+      "mismatch_fraction": 6.144393241167435e-05,
+      "unfinished_ray_pairs": 25,
+      "scene_sha256": "3a167fb3d53d563f071e82af17286deb248c458259b296138754236b178ac501",
+      "png_sha256": "cba498255a5a9e56f09aebdab11448346bcb0e9f38c2f2efd1ccadee789eddfa",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-8-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-8-0.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 15,
+          "expected": 14,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 8,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1335.6386356237442,
+        286.96045802282566,
+        7.546612499329672,
+        -9.55364485968357,
+        89.468556365614,
+        -0.5367784124435021,
+        -4.494777461330402,
+        0.003627084764878714,
+        6.496559868590958
+      ],
+      "hand": 1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 1,
+      "pixels": 48825,
+      "mismatch_fraction": 2.048131080389145e-05,
+      "unfinished_ray_pairs": 25,
+      "scene_sha256": "2510c8b8b1b6bb4cd04d68f849345962c714b710f4c33916f1ed7e28c873884a",
+      "png_sha256": "57f1cccc20a3fb4eed024e567c5ecfab2f5cae14bbd09ad918aad6dd5d8aa9c7",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-8-1.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-8-1.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 15,
+          "expected": 14,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 8,
+      "retained": 1
+    },
+    {
+      "parameters": [
+        1336.618375558262,
+        288.8309641196589,
+        7.583075591528881,
+        46.78388053299238,
+        89.4945816358106,
+        -54.77864441416747,
+        -10.708798889149412,
+        0.006098707548172957,
+        6.510616261981366
+      ],
+      "hand": 1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 6,
+      "pixels": 48825,
+      "mismatch_fraction": 0.0001228878648233487,
+      "unfinished_ray_pairs": 17,
+      "scene_sha256": "298b6af5da86d396c21bb2f90aafb5cb14aa681011feae659d33fa6de423e9f8",
+      "png_sha256": "aa544306cf041237a936ea613af3db2b65c8ea75622cb7ce3266c3b903df2389",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-8-2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-8-2.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 15,
+          "expected": 14,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 8,
+      "retained": 2
+    },
+    {
+      "parameters": [
+        1333.4789169870132,
+        282.29557264887865,
+        8.193226721040489,
+        -16.328945595918228,
+        8.512570285780917,
+        -18.325094763403467,
+        -262.7227859226439,
+        -0.00333217701906041,
+        6.549156755397366
+      ],
+      "hand": -1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 5,
+      "pixels": 48825,
+      "mismatch_fraction": 0.00010240655401945725,
+      "unfinished_ray_pairs": 10,
+      "scene_sha256": "733163663ddce2429f5c4f7ad9f22e50b97da72f2a8fdeb29c3b9dfacc603b44",
+      "png_sha256": "3e22019c0ee9563d1299c5f196cb77f46bc00fca40ee4309ff078264d567f798",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-11-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-11-0.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -34,
+          "expected": -34,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -21,
+          "expected": -21,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -8,
+          "expected": -8,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 12,
+          "expected": 12,
+          "pov_pass": true
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 19,
+          "expected": 19,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 25,
+          "expected": 25,
+          "pov_pass": true
+        }
+      ],
+      "case": 11,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1336.433235946309,
+        281.9348092437333,
+        7.88931806359511,
+        160.28571514763527,
+        24.638578076180735,
+        -170.65900616105347,
+        -57.50196287771938,
+        0.008110296991394662,
+        6.549481883895874
+      ],
+      "hand": -1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 4,
+      "pixels": 48825,
+      "mismatch_fraction": 8.19252432155658e-05,
+      "unfinished_ray_pairs": 18,
+      "scene_sha256": "f333eba7368949a9eb276aff65734e442787b7c0197bc3fd12c05616a7588daa",
+      "png_sha256": "f202f603d8e4c9e3209415e72da749c82ca14637aeed37b10f5e66aa3f188ef2",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-11-1.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-11-1.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -34,
+          "expected": -34,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -21,
+          "expected": -21,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -8,
+          "expected": -8,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 18,
+          "expected": 12,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 19,
+          "expected": 19,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 25,
+          "expected": 25,
+          "pov_pass": true
+        }
+      ],
+      "case": 11,
+      "retained": 1
+    },
+    {
+      "parameters": [
+        1339.1630911736518,
+        279.8958974854087,
+        8.037128712260644,
+        -19.68507700441863,
+        89.41273198252495,
+        4.842425838242326,
+        4.656792981285673,
+        0.005039472566374538,
+        6.54961171400864
+      ],
+      "hand": -1,
+      "focal": 4799.175227618243,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 3,
+      "pixels": 48825,
+      "mismatch_fraction": 6.144393241167435e-05,
+      "unfinished_ray_pairs": 15,
+      "scene_sha256": "f3c0046de01a25d6c535952c294cb9b05acc052c3962c33029774189d1d031a7",
+      "png_sha256": "ca9b98a14bc022cd18e9c3f073b5f3eebc0e8d13269217959bd70418f7795fa5",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-11-2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-11-2.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -999,
+          "expected": -38,
+          "pov_pass": false
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -34,
+          "expected": -34,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -21,
+          "expected": -21,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -8,
+          "expected": -8,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 11,
+          "expected": 12,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 19,
+          "expected": 19,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 25,
+          "expected": 25,
+          "pov_pass": true
+        }
+      ],
+      "case": 11,
+      "retained": 2
+    },
+    {
+      "parameters": [
+        1336.1365435655603,
+        286.96413573026314,
+        7.782317705977502,
+        -4.058346874384509,
+        62.365120080162114,
+        -6.16732983884056,
+        9.043445934276544,
+        0.004152384222483036,
+        6.499999999901003
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 8,
+      "pixels": 48825,
+      "mismatch_fraction": 0.0001638504864311316,
+      "unfinished_ray_pairs": 44,
+      "scene_sha256": "24ef076f56f21aba61c0d601a51fb174351abb2d7290b52dd313ff2a9d7a3af8",
+      "png_sha256": "128571cf0e49a16fb02920276ffe87457626d095c7018431cc5f0be05a77084e",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-12-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-12-0.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 15,
+          "expected": 14,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 12,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1337.2184443629203,
+        287.142077097474,
+        7.7641380006722684,
+        -10.175370530318318,
+        5.000007586284415,
+        -7.254112961345657,
+        -291.93902673655447,
+        -0.005726381096758699,
+        6.499999999900002
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 7,
+      "pixels": 48825,
+      "mismatch_fraction": 0.00014336917562724014,
+      "unfinished_ray_pairs": 32,
+      "scene_sha256": "3cfbff52af8d112647c436365ca0e17b21ab61aaf4342b378531d16c6e0e614b",
+      "png_sha256": "2e31611d5ca19a10c962102a95ab12e80543fdff30c2d4ce74cc570f3c16636b",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-12-1.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-12-1.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -31,
+          "expected": -31,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 15,
+          "expected": 14,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 12,
+      "retained": 1
+    },
+    {
+      "parameters": [
+        1336.2565532363449,
+        287.17378671338304,
+        7.694219794190966,
+        166.78653394687046,
+        28.326220119821922,
+        -169.98726147146542,
+        -439.665461361855,
+        0.01294075640985871,
+        6.500000000099999
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 5,
+      "pixels": 48825,
+      "mismatch_fraction": 0.00010240655401945725,
+      "unfinished_ray_pairs": 34,
+      "scene_sha256": "02addc03875714b05cdab15d0901d941e0188f524828f883681a00b53feaa07b",
+      "png_sha256": "6b22b7a67246d9eb126b951af2626501d09a91a64bfe78bbdb6c86dc77ca923d",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-12-2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-12-2.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -999,
+          "expected": -40,
+          "pov_pass": false
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -999,
+          "expected": -31,
+          "pov_pass": false
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -18,
+          "expected": -18,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -5,
+          "expected": -5,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 14,
+          "expected": 14,
+          "pov_pass": true
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 20,
+          "expected": 20,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 27,
+          "expected": 27,
+          "pov_pass": true
+        }
+      ],
+      "case": 12,
+      "retained": 2
+    },
+    {
+      "parameters": [
+        1337.961316347589,
+        286.64227955319626,
+        7.943242153911835,
+        151.28579331928756,
+        48.002773413470095,
+        -153.95874028710702,
+        -59.980874449461574,
+        0.01137250047763446,
+        6.499999999976393
+      ],
+      "hand": -1,
+      "focal": null,
+      "crop": [
+        1180,
+        210,
+        1495,
+        365
+      ],
+      "mismatches": 5,
+      "pixels": 48825,
+      "mismatch_fraction": 0.00010240655401945725,
+      "unfinished_ray_pairs": 7,
+      "scene_sha256": "f6932e878f0686a61e9075bf54f85aa86be3724029ab5630559e5f32d0b6effa",
+      "png_sha256": "d1c4edf153f4e3b82f21cf39801912fa0c0be719e2c6a16d48e05df0ece268f0",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/photo-15-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/photo-15-0.png",
+        "+W315",
+        "+H155",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "rounded_point_checks": [
+        {
+          "number": 1,
+          "role": "training",
+          "rounded_pixel": [
+            1201,
+            270
+          ],
+          "pov_owner": -38,
+          "expected": -38,
+          "pov_pass": true
+        },
+        {
+          "number": 2,
+          "role": "training",
+          "rounded_pixel": [
+            1211,
+            304
+          ],
+          "pov_owner": -39,
+          "expected": -39,
+          "pov_pass": true
+        },
+        {
+          "number": 3,
+          "role": "training",
+          "rounded_pixel": [
+            1224,
+            337
+          ],
+          "pov_owner": -40,
+          "expected": -40,
+          "pov_pass": true
+        },
+        {
+          "number": 4,
+          "role": "training",
+          "rounded_pixel": [
+            1228,
+            280
+          ],
+          "pov_owner": -32,
+          "expected": -32,
+          "pov_pass": true
+        },
+        {
+          "number": 5,
+          "role": "training",
+          "rounded_pixel": [
+            1240,
+            310
+          ],
+          "pov_owner": -33,
+          "expected": -33,
+          "pov_pass": true
+        },
+        {
+          "number": 6,
+          "role": "training",
+          "rounded_pixel": [
+            1249,
+            348
+          ],
+          "pov_owner": -34,
+          "expected": -34,
+          "pov_pass": true
+        },
+        {
+          "number": 7,
+          "role": "training",
+          "rounded_pixel": [
+            1241,
+            259
+          ],
+          "pov_owner": -25,
+          "expected": -25,
+          "pov_pass": true
+        },
+        {
+          "number": 8,
+          "role": "training",
+          "rounded_pixel": [
+            1257,
+            286
+          ],
+          "pov_owner": -26,
+          "expected": -26,
+          "pov_pass": true
+        },
+        {
+          "number": 9,
+          "role": "training",
+          "rounded_pixel": [
+            1267,
+            325
+          ],
+          "pov_owner": -27,
+          "expected": -27,
+          "pov_pass": true
+        },
+        {
+          "number": 10,
+          "role": "training",
+          "rounded_pixel": [
+            1275,
+            274
+          ],
+          "pov_owner": -19,
+          "expected": -19,
+          "pov_pass": true
+        },
+        {
+          "number": 11,
+          "role": "training",
+          "rounded_pixel": [
+            1284,
+            304
+          ],
+          "pov_owner": -20,
+          "expected": -20,
+          "pov_pass": true
+        },
+        {
+          "number": 12,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            336
+          ],
+          "pov_owner": -21,
+          "expected": -21,
+          "pov_pass": true
+        },
+        {
+          "number": 13,
+          "role": "training",
+          "rounded_pixel": [
+            1288,
+            253
+          ],
+          "pov_owner": -12,
+          "expected": -12,
+          "pov_pass": true
+        },
+        {
+          "number": 14,
+          "role": "training",
+          "rounded_pixel": [
+            1300,
+            283
+          ],
+          "pov_owner": -13,
+          "expected": -13,
+          "pov_pass": true
+        },
+        {
+          "number": 15,
+          "role": "training",
+          "rounded_pixel": [
+            1310,
+            315
+          ],
+          "pov_owner": -14,
+          "expected": -14,
+          "pov_pass": true
+        },
+        {
+          "number": 16,
+          "role": "training",
+          "rounded_pixel": [
+            1316,
+            258
+          ],
+          "pov_owner": -6,
+          "expected": -6,
+          "pov_pass": true
+        },
+        {
+          "number": 17,
+          "role": "training",
+          "rounded_pixel": [
+            1324,
+            293
+          ],
+          "pov_owner": -7,
+          "expected": -7,
+          "pov_pass": true
+        },
+        {
+          "number": 18,
+          "role": "training",
+          "rounded_pixel": [
+            1331,
+            331
+          ],
+          "pov_owner": -8,
+          "expected": -8,
+          "pov_pass": true
+        },
+        {
+          "number": 19,
+          "role": "training",
+          "rounded_pixel": [
+            1336,
+            245
+          ],
+          "pov_owner": 1,
+          "expected": 1,
+          "pov_pass": true
+        },
+        {
+          "number": 20,
+          "role": "training",
+          "rounded_pixel": [
+            1346,
+            274
+          ],
+          "pov_owner": 0,
+          "expected": 0,
+          "pov_pass": true
+        },
+        {
+          "number": 21,
+          "role": "training",
+          "rounded_pixel": [
+            1347,
+            309
+          ],
+          "pov_owner": -1,
+          "expected": -1,
+          "pov_pass": true
+        },
+        {
+          "number": 22,
+          "role": "held-out",
+          "rounded_pixel": [
+            1363,
+            255
+          ],
+          "pov_owner": 7,
+          "expected": 7,
+          "pov_pass": true
+        },
+        {
+          "number": 23,
+          "role": "held-out",
+          "rounded_pixel": [
+            1371,
+            298
+          ],
+          "pov_owner": 6,
+          "expected": 6,
+          "pov_pass": true
+        },
+        {
+          "number": 24,
+          "role": "held-out",
+          "rounded_pixel": [
+            1386,
+            271
+          ],
+          "pov_owner": 13,
+          "expected": 13,
+          "pov_pass": true
+        },
+        {
+          "number": 25,
+          "role": "held-out",
+          "rounded_pixel": [
+            1395,
+            314
+          ],
+          "pov_owner": 18,
+          "expected": 12,
+          "pov_pass": false
+        },
+        {
+          "number": 26,
+          "role": "training",
+          "rounded_pixel": [
+            1410,
+            287
+          ],
+          "pov_owner": 19,
+          "expected": 19,
+          "pov_pass": true
+        },
+        {
+          "number": 27,
+          "role": "training",
+          "rounded_pixel": [
+            1440,
+            301
+          ],
+          "pov_owner": 25,
+          "expected": 25,
+          "pov_pass": true
+        }
+      ],
+      "case": 15,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1338.0708237742977,
+        285.08399859954255,
+        7.336958045024516,
+        2.0862092290048673,
+        89.27612787356139,
+        0.2953645894789201,
+        -18.66637713494368,
+        0.013149765529358945,
+        6.478199474520436
+      ],
+      "hand": 1,
+      "focal": null,
+      "crop": [
+        1170,
+        200,
+        1510,
+        385
+      ],
+      "mismatches": 9,
+      "pixels": 62900,
+      "mismatch_fraction": 0.00014308426073131957,
+      "unfinished_ray_pairs": 188,
+      "scene_sha256": "60d90d41915350b2a7da9916cff90a43cca89754a32a9cd0bd851b16b39db80c",
+      "png_sha256": "0c289a069046670278b3ba87ee56461c7847c653fd4d4b9a97658b9a4d1c9a6c",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/synthetic-0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/synthetic-0.png",
+        "+W340",
+        "+H185",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "case": 0,
+      "retained": 0
+    },
+    {
+      "parameters": [
+        1329.4458630894892,
+        284.49232790957984,
+        7.5687065928752935,
+        156.32844490216087,
+        58.328360849344946,
+        -151.88379200765638,
+        -413.44533553205235,
+        0.018984777027429563,
+        6.549447918800871
+      ],
+      "hand": -1,
+      "focal": null,
+      "crop": [
+        1170,
+        200,
+        1510,
+        385
+      ],
+      "mismatches": 1,
+      "pixels": 62900,
+      "mismatch_fraction": 1.589825119236884e-05,
+      "unfinished_ray_pairs": 4,
+      "scene_sha256": "c7fdbee00a3846ddd6999d503ae5aabaf3ff528ee671c697d60f2eaa7a2d0e2f",
+      "png_sha256": "0ebfaabed9f73a28034e244e2caf857f2e7e8bbf96e8843673b5ee504daa27ab",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r156/review/synthetic-3.pov",
+        "+O/home/rharris/git/beads/photo2/output/r156/review/synthetic-3.png",
+        "+W340",
+        "+H185",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "case": 3,
+      "retained": 0
+    }
+  ],
+  "exact_fractional_points": [
+    {
+      "candidate": "A3",
+      "points": [
+        {
+          "number": 1,
+          "point": [
+            1201.0737386804658,
+            270.2587322121604
+          ],
+          "expected": -40,
+          "owner": -40,
+          "passed": true,
+          "scene_sha256": "46506c708aec6a11f5af0740fddba18d12322f48ebac72a1efacd70198f77bba",
+          "png_sha256": "1718a903474cde0067e51f0a2f53d680922aa0f0d4df7dfd537fc17cbf9c99fa",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-1.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 2,
+          "point": [
+            1211.1642949547218,
+            304.0620957309185
+          ],
+          "expected": -39,
+          "owner": -39,
+          "passed": true,
+          "scene_sha256": "5cb4862b8fee89a0fa001c24ad906b8cb2817463ce09368ff8f6d9b84eac52b7",
+          "png_sha256": "84a279391e31be260169b9dbc00dc4c339ad22e9de81017891ca9cc8f1878bb4",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-2.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-2.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 3,
+          "point": [
+            1224.282018111255,
+            337.3609314359638
+          ],
+          "expected": -38,
+          "owner": -38,
+          "passed": true,
+          "scene_sha256": "ba15d1cd3e11e9074c203778de79c6a3214d6fa311e7b7fe1d7a2800d33e1b40",
+          "png_sha256": "963e7160d5bef65fbb64b45499ec557082105b9266f1a078396bae679609b7b9",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-3.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-3.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 4,
+          "point": [
+            1227.8137128072444,
+            280.3492884864165
+          ],
+          "expected": -33,
+          "owner": -33,
+          "passed": true,
+          "scene_sha256": "2606f22d1ed9b0a6e798b64ebaccf4b93227724a3fa380d61225d3765c6bd0e4",
+          "png_sha256": "9113a39f8c6cde27971735b361a6e9b63d58eecfa58181e5e31b79af83c6eb9f",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-4.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-4.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 5,
+          "point": [
+            1239.9223803363518,
+            310.1164294954722
+          ],
+          "expected": -32,
+          "owner": -32,
+          "passed": true,
+          "scene_sha256": "0684088973340a2691403bf8f0ec2656b23d6232aed2ed5f4493d8b562a493fd",
+          "png_sha256": "a92c86fb39cae545f6074a4999fe0bca78aa35033a1b4647114adf4fbd56f727",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-5.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-5.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 6,
+          "point": [
+            1249.0038809831824,
+            347.9560155239327
+          ],
+          "expected": -31,
+          "owner": -31,
+          "passed": true,
+          "scene_sha256": "47d3906c1fb882296a643445d264d39c6c5b66d115be806ebbb611d28ea5907e",
+          "png_sha256": "93819c9b6e3acf8a1d8c9504c65187da7dd68fd52958b065e6195ce443fb07f8",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-6.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-6.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 7,
+          "point": [
+            1240.9314359637774,
+            258.6545924967659
+          ],
+          "expected": -27,
+          "owner": -27,
+          "passed": true,
+          "scene_sha256": "b7546f4ce1e1b4fb587f9f997a603e308295f64083e64ecd15d2ca80c325cb64",
+          "png_sha256": "e026e639517b41decb8565543ae5826ecb7e5db584d9a14cb2f2f1622f46db5b",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-7.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-7.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 8,
+          "point": [
+            1256.5717981888745,
+            286.4036222509702
+          ],
+          "expected": -26,
+          "owner": -26,
+          "passed": true,
+          "scene_sha256": "ce56e1d34e27ec558e75b661669d5ad7e5070f7925b1d45a5e7d54a53703679e",
+          "png_sha256": "e461273a34a77b5a0120ec4b0b5f052c5dad5844a8a7ac1d1dde5cd15616185d",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-8.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-8.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 9,
+          "point": [
+            1266.6623544631307,
+            324.7477360931436
+          ],
+          "expected": -25,
+          "owner": -25,
+          "passed": true,
+          "scene_sha256": "ead17040cd9efc24d948ba0d292f6ccda70597ae20a145161c666532ca40adeb",
+          "png_sha256": "61786ebaa75066dc57c72391f6e03d97726acc90dc3876a875746363a08f93f2",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-9.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-9.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 10,
+          "point": [
+            1274.7347994825357,
+            273.79042690815004
+          ],
+          "expected": -20,
+          "owner": -20,
+          "passed": true,
+          "scene_sha256": "dcb580c24f6569b0052d7e0fdfc545e8cf002aad2d02d66f5f8a707c35fbb0ad",
+          "png_sha256": "1c1d021118dbb375b77fac61060b41a343146d0ea827d977dc9694f6673d02c5",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-10.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-10.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 11,
+          "point": [
+            1283.816300129366,
+            304.0620957309185
+          ],
+          "expected": -19,
+          "owner": -19,
+          "passed": true,
+          "scene_sha256": "33632f44b3a3769c53ca192e353c9dd91d9c1390955aef9dc994cd89aa01f342",
+          "png_sha256": "38b58e4d1ed938be618e29376978c99041695daafb6020e371fb31d2d4174986",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-11.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-11.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 12,
+          "point": [
+            1287.8525226390686,
+            336.3518758085381
+          ],
+          "expected": -18,
+          "owner": -18,
+          "passed": true,
+          "scene_sha256": "5cd7154adac9760d5aa321820a2314569959479a8db74207b146f02d002eb258",
+          "png_sha256": "3026d31579ff7cad2df3306b60beec5b7802e53197af23eb871b19108f88d69a",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-12.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-12.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 13,
+          "point": [
+            1287.8525226390686,
+            253.10478654592498
+          ],
+          "expected": -14,
+          "owner": -14,
+          "passed": true,
+          "scene_sha256": "c3ae21784d68f407d2194d6da1422a9a878fbf78503ac38d437bfa263534027f",
+          "png_sha256": "569b8867f8a90cd901847187716c616e86171d7e780b028b56ae061cad90eefa",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-13.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-13.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 14,
+          "point": [
+            1300.4657179818887,
+            283.3764553686934
+          ],
+          "expected": -13,
+          "owner": -13,
+          "passed": true,
+          "scene_sha256": "14fa198b6445a878d818167234101218ec9a518a824ca043590a2ea914f550f8",
+          "png_sha256": "5468f6cea1a6ae4311bc49797f0d9cb0331ccdcf7366ca0cb7ef94b470d5c845",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-14.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-14.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 15,
+          "point": [
+            1309.5472186287193,
+            314.65717981888747
+          ],
+          "expected": -12,
+          "owner": -12,
+          "passed": true,
+          "scene_sha256": "1e5c8a9053a325d27e7938a33afe741aae67e3312c7a9fc2ad886aa10f9023fe",
+          "png_sha256": "99b7fc70dd1b8d926e9e99a4eec83bdaff6714690f81d67061fb792a7b81cd54",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-15.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-15.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 16,
+          "point": [
+            1316.1060802069858,
+            258.1500646830531
+          ],
+          "expected": -7,
+          "owner": -7,
+          "passed": true,
+          "scene_sha256": "7f2065acba8ada86eb52a5ad9fc61c2dc0a2e25b995bd07bda34a1ced54bff1c",
+          "png_sha256": "6dc95031dfbb07179719d9a078c805d25954c01af7eb5d0308b8981bfa963a68",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-16.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-16.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 17,
+          "point": [
+            1324.1785252263908,
+            292.9624838292367
+          ],
+          "expected": -6,
+          "owner": -6,
+          "passed": true,
+          "scene_sha256": "f8763999a39adde5e08b391d8b152ebbfbfb1a01371a2610cb9adbfafb019ba1",
+          "png_sha256": "b29429b49ff88208de176fd2c84e11f41769d382cd0f5338e5bc8e95b08cf733",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-17.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-17.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 18,
+          "point": [
+            1331.24191461837,
+            331.3065976714101
+          ],
+          "expected": -5,
+          "owner": -5,
+          "passed": true,
+          "scene_sha256": "a90cd36d722e540beb1c015ce2b9e104b9bc7cb7576383f4cc03012d05c76057",
+          "png_sha256": "08b04c133137e2afb528d8f0b7543907d143a2cd9e5f47a932d35551d5491863",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-18.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-18.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 19,
+          "point": [
+            1336.2871927554982,
+            245.03234152652004
+          ],
+          "expected": -1,
+          "owner": -1,
+          "passed": true,
+          "scene_sha256": "2ffc7cead3ca76be98d6406ab0093460523f4174f1a5fb042b041140b5609421",
+          "png_sha256": "a0162a58c581e5bef4579fb60315173486d87a082ca27ccdbc55acbc1ba266aa",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-19.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-19.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 20,
+          "point": [
+            1345.8732212160414,
+            273.79042690815004
+          ],
+          "expected": 0,
+          "owner": 0,
+          "passed": true,
+          "scene_sha256": "90e4e7632f8babdc00cc4f2bfe8c34640b6f95e0ad82ae88c97be6d5d38137f5",
+          "png_sha256": "49b1f475a16b1a843ed629f4d62e5a142a8df58c691b46f61a46cc8fbdb0a6ec",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-20.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-20.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 21,
+          "point": [
+            1346.882276843467,
+            308.6028460543338
+          ],
+          "expected": 1,
+          "owner": 1,
+          "passed": true,
+          "scene_sha256": "ac28e1afd7758640fe98971cb72d59605d8bd2671e91c2e64adb82ff88b7c873",
+          "png_sha256": "10407f15b903d2133645154e6adac08207c4588ede53f0e6003cfec23fafa18d",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-21.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-21.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 22,
+          "point": [
+            1363.0271668822768,
+            254.61836998706337
+          ],
+          "expected": 6,
+          "owner": 6,
+          "passed": true,
+          "scene_sha256": "ae6294706b11feece6b08fd52c34ecff019db5b50b6213c07ebda77a6a3c10e1",
+          "png_sha256": "7e6ab7643e581bd5521b82748cec5bbfb3f4e58ccb3be284c475fb75d93035fc",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-22.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-22.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 23,
+          "point": [
+            1371.0996119016818,
+            298.0077619663648
+          ],
+          "expected": 7,
+          "owner": 7,
+          "passed": true,
+          "scene_sha256": "2f617877d9f34916f171235bee99d1bf1f77cfe3e2fefbf9f3464515006c7d3a",
+          "png_sha256": "01f7b6e0b3f84962a76edbc1769749794699ac40d82d55b49ef9f652767330d7",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-23.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-23.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 24,
+          "point": [
+            1385.7309184993533,
+            271.26778783958605
+          ],
+          "expected": 13,
+          "owner": 13,
+          "passed": true,
+          "scene_sha256": "6219ecc9693d53fb51d81e49bc7e523945c4c2f118d7a0e7e01e44d4858e97ee",
+          "png_sha256": "a609e320c8098a949e5dd9e5664884f373a920aac2d1af951d4b21b00e4e0a43",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-24.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-24.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 25,
+          "point": [
+            1394.8124191461836,
+            313.6481241914618
+          ],
+          "expected": 14,
+          "owner": 14,
+          "passed": true,
+          "scene_sha256": "8efd86974051e4a278fdf99d0a6b549f383e8f6dcaae07411ae9ec87fbab5df1",
+          "png_sha256": "d61ded190f670cf1017dc91ad7eafa942a7c3d42600c5db664ec98a1bb92aa6e",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-25.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-25.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 26,
+          "point": [
+            1409.948253557568,
+            286.908150064683
+          ],
+          "expected": 20,
+          "owner": 20,
+          "passed": true,
+          "scene_sha256": "7ff6ce11f84835ab8c01f1422c19c18761d53c026843926fb883b6298a05dc79",
+          "png_sha256": "298f2e39a2fec2acf443092b645eec439de68ee9b9839107db018aa003cb9dc7",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-26.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-26.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 27,
+          "point": [
+            1440.2199223803364,
+            301.03492884864164
+          ],
+          "expected": 27,
+          "owner": 27,
+          "passed": true,
+          "scene_sha256": "dbd5108ae73bcd544f30a034b55e522657d43dce8a248f544af08332b213e620",
+          "png_sha256": "420cf603ea490f962e07f7a3c92b89fa6d5743a363774f37c93beb3fa834a48a",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/A3-27.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/A3-27.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": "B1",
+      "points": [
+        {
+          "number": 1,
+          "point": [
+            1201.0737386804658,
+            270.2587322121604
+          ],
+          "expected": -38,
+          "owner": -38,
+          "passed": true,
+          "scene_sha256": "c1497bb525c4db0f895f32da247636b239cc9bad7f95bed8bbed38f5b408a204",
+          "png_sha256": "7cf13b2a79e7c83c7f3f197e6fbc02b5fdfd7d58595df8afa87d3dd78e25617b",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-1.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-1.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 2,
+          "point": [
+            1211.1642949547218,
+            304.0620957309185
+          ],
+          "expected": -39,
+          "owner": -39,
+          "passed": true,
+          "scene_sha256": "d1166e1a97dcfc3c4bbf619582f013522dc46ea6accfb12dcfec37fd01d01986",
+          "png_sha256": "79792b1ff1d691ebbdb3220dec5242c68eb689a3dadb68f68a43f0fe61358dc6",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-2.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-2.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 3,
+          "point": [
+            1224.282018111255,
+            337.3609314359638
+          ],
+          "expected": -40,
+          "owner": -40,
+          "passed": true,
+          "scene_sha256": "c2ba6390c5427e3c236edd28e3e558e4db0f925e67e4019230909afaa5276efc",
+          "png_sha256": "94fd6d914bc418548dda3c07d157c26c1bd5c538d480a4a83ce8c22ac21e38f1",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-3.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-3.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 4,
+          "point": [
+            1227.8137128072444,
+            280.3492884864165
+          ],
+          "expected": -32,
+          "owner": -32,
+          "passed": true,
+          "scene_sha256": "e8908bfe43e1a8f683c60f3b1e4f7060eb209e97c0c269b8280be6dbd170c28b",
+          "png_sha256": "dbe477ef7524ff3c5358592dfe5bf463bcf870d9da78d9d4825cb47deecda107",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-4.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-4.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 5,
+          "point": [
+            1239.9223803363518,
+            310.1164294954722
+          ],
+          "expected": -33,
+          "owner": -33,
+          "passed": true,
+          "scene_sha256": "8e438212fad72e94d8ca6cd6e9b7ddd0031dc048fba78985ef05e8c177972e34",
+          "png_sha256": "8e4648f32b00cd99a09f72faa36b0391dd2a80ee062018414d5252f2f5cb66ee",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-5.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-5.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 6,
+          "point": [
+            1249.0038809831824,
+            347.9560155239327
+          ],
+          "expected": -34,
+          "owner": -34,
+          "passed": true,
+          "scene_sha256": "f26fb071943a7811214344994d16c24eb3d4bf3b99c24c02842cbae9090582e6",
+          "png_sha256": "48b61f058783ebd44f0e0ab214f224934809e934916cb15ba31f3e93064cb7f7",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-6.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-6.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 7,
+          "point": [
+            1240.9314359637774,
+            258.6545924967659
+          ],
+          "expected": -25,
+          "owner": -25,
+          "passed": true,
+          "scene_sha256": "dbc3909fa3715d6810b6be8f416e28108328aaf4db91cda09f1f35cdcd695497",
+          "png_sha256": "b8be78fc46d2f6b0911fa581a207862e03565f95d675a6570ee6830208106a25",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-7.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-7.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 8,
+          "point": [
+            1256.5717981888745,
+            286.4036222509702
+          ],
+          "expected": -26,
+          "owner": -26,
+          "passed": true,
+          "scene_sha256": "e20c87afaaa72d7ecae49775bd31f41ea1a279a0d5881e05c8f05a61bc3804f6",
+          "png_sha256": "88bba72f75e8255a1b0eab01fa8172e9d7ef2c8ca6655e421ec2d9ad717824e3",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-8.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-8.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 9,
+          "point": [
+            1266.6623544631307,
+            324.7477360931436
+          ],
+          "expected": -27,
+          "owner": -27,
+          "passed": true,
+          "scene_sha256": "4bcfdf5804c979e406e978d3f370d4157c01b3eeda642db3ad8211ff4a5a2886",
+          "png_sha256": "324423fbfde285c7a6623ba64a15171b7d65af7c4632203ec904089f157530c5",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-9.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-9.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 10,
+          "point": [
+            1274.7347994825357,
+            273.79042690815004
+          ],
+          "expected": -19,
+          "owner": -19,
+          "passed": true,
+          "scene_sha256": "b3a9968765d32a929ab79a27b8270bd612cd897ca8b4039c4349e2211109c770",
+          "png_sha256": "526fbf72a9bfe3570334f2394a94a6be39dccc6321e688088f020ec70179aaf5",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-10.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-10.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 11,
+          "point": [
+            1283.816300129366,
+            304.0620957309185
+          ],
+          "expected": -20,
+          "owner": -20,
+          "passed": true,
+          "scene_sha256": "f65ddf57f7a9bd01307210527df739144f9e32928ced0530dcfcff103ffaba2c",
+          "png_sha256": "8c2b1852557d7630f25889a04654fe6c2323a06a65e0d5853edca33a6b79388c",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-11.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-11.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 12,
+          "point": [
+            1287.8525226390686,
+            336.3518758085381
+          ],
+          "expected": -21,
+          "owner": -21,
+          "passed": true,
+          "scene_sha256": "8550f498f467a4bca6ea7ad204241fdd4862d55159b6b9d107f553cac9484a21",
+          "png_sha256": "74afb335ab8c446b0d18ab100a7353e6e50392e9023dd3d891970243b2ae7362",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-12.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-12.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 13,
+          "point": [
+            1287.8525226390686,
+            253.10478654592498
+          ],
+          "expected": -12,
+          "owner": -12,
+          "passed": true,
+          "scene_sha256": "8cd5504fca56415926d4b2506d64024d2ecb82a5d73b6f2d5791063c944516e8",
+          "png_sha256": "8aadf00df2f8bfe8e7cddcaeaadccc896d8ed9df3a98dc6343b97628fcd8024a",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-13.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-13.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 14,
+          "point": [
+            1300.4657179818887,
+            283.3764553686934
+          ],
+          "expected": -13,
+          "owner": -13,
+          "passed": true,
+          "scene_sha256": "cf894de1baa3d52e8e24871121b11c423f2f2a7b5f9fcba3f866fa8017cd0663",
+          "png_sha256": "1ca8fcba903347144bc4f2595ba532d4fd67422ca3b14d3370758cb98c261cf2",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-14.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-14.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 15,
+          "point": [
+            1309.5472186287193,
+            314.65717981888747
+          ],
+          "expected": -14,
+          "owner": -14,
+          "passed": true,
+          "scene_sha256": "70dce1533beedea807e84b2c457d2d87eacf94a28887c100c711e73586017895",
+          "png_sha256": "72407486e844a4c8ceb233b5beee89ca02dff9a379ad0d70fd58821c4505b00d",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-15.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-15.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 16,
+          "point": [
+            1316.1060802069858,
+            258.1500646830531
+          ],
+          "expected": -6,
+          "owner": -6,
+          "passed": true,
+          "scene_sha256": "6a1ded392b0b6a259ef4cc1f979c39286e8d86c5470d415eedfbe59ed2ebdda1",
+          "png_sha256": "e34fde7a38b90bbbec8a27f276d5176ccd6bd65eb0cde00347e5aeb896a9fed1",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-16.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-16.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 17,
+          "point": [
+            1324.1785252263908,
+            292.9624838292367
+          ],
+          "expected": -7,
+          "owner": -7,
+          "passed": true,
+          "scene_sha256": "128e7204866d8b2f34534c8a227ea7ffe390df09b2c3e13e5bf57a0e171861b5",
+          "png_sha256": "fe5d175fd45d4253315d150ba9215873c9a3889c66422d0fe53d72136403604c",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-17.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-17.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 18,
+          "point": [
+            1331.24191461837,
+            331.3065976714101
+          ],
+          "expected": -8,
+          "owner": -8,
+          "passed": true,
+          "scene_sha256": "de6fe5b89cff24e88c015e6099a107f4488d0f8fce01382438a4cb4e55e0b927",
+          "png_sha256": "b03a37fc7cab09f50ea62fba0461f206fd64cf757d2b911ffa66582e6e9b9f9d",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-18.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-18.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 19,
+          "point": [
+            1336.2871927554982,
+            245.03234152652004
+          ],
+          "expected": 1,
+          "owner": 1,
+          "passed": true,
+          "scene_sha256": "5e143d087fb9f0be85bc326cef2f6a46ba4491202bcd920de9e154d30534836d",
+          "png_sha256": "2512f5ce21624a1ff9644982a49e0be6808bd714e354bf9058e25609240fc36f",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-19.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-19.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 20,
+          "point": [
+            1345.8732212160414,
+            273.79042690815004
+          ],
+          "expected": 0,
+          "owner": 0,
+          "passed": true,
+          "scene_sha256": "aa14e97c2745a9d3e9623a0b74a5e14ac6c8a21504b059d0626d6dcce7ced70c",
+          "png_sha256": "facdc217e8a1e8d264d692d329865b1ee847e6223eae756dbf940543973c53a5",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-20.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-20.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 21,
+          "point": [
+            1346.882276843467,
+            308.6028460543338
+          ],
+          "expected": -1,
+          "owner": -1,
+          "passed": true,
+          "scene_sha256": "57b41a99bfe077e3eaa1958c1826c5a0cff4cfed171cd233f985939d83f2c40d",
+          "png_sha256": "415d9e6b5d8f6e01387002c5820298987a63ef431ceb1554e599db20967e4870",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-21.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-21.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 22,
+          "point": [
+            1363.0271668822768,
+            254.61836998706337
+          ],
+          "expected": 7,
+          "owner": 7,
+          "passed": true,
+          "scene_sha256": "1ef0f79f4d9bd8591541763444fd04568d5e4442be9be4a104799686cc85ffeb",
+          "png_sha256": "3159134cd14e887b69a295e6a6b031a5cd3b8dde0f4acdd32685a8b55fd952d7",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-22.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-22.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 23,
+          "point": [
+            1371.0996119016818,
+            298.0077619663648
+          ],
+          "expected": 6,
+          "owner": 6,
+          "passed": true,
+          "scene_sha256": "ffa501e7669cfdbe9936df2557dc518a7b52a7f5130d00c907e4d371720d2758",
+          "png_sha256": "114d0e92787efdb8361d9327f4b7c51d8ec85ad65b993f8fa873bf8c75feb42d",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-23.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-23.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 24,
+          "point": [
+            1385.7309184993533,
+            271.26778783958605
+          ],
+          "expected": 13,
+          "owner": 13,
+          "passed": true,
+          "scene_sha256": "83149dc1e262c679f060cb99a2343ad432e90bae89bf6c8ac394353bebc922e0",
+          "png_sha256": "d32ac740770c15aad912a013f66e50a394d7a3d6ae76fb076dc5aa38f397fa8d",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-24.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-24.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 25,
+          "point": [
+            1394.8124191461836,
+            313.6481241914618
+          ],
+          "expected": 12,
+          "owner": 12,
+          "passed": true,
+          "scene_sha256": "06015f3d96b9eb471b64f3240862e26996835f67e162598b5ada95627acabb87",
+          "png_sha256": "0c238b41fc64dc61540ef1530e5d5a411d4a89bebbcadf88c376945a3e1a2e0e",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-25.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-25.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 26,
+          "point": [
+            1409.948253557568,
+            286.908150064683
+          ],
+          "expected": 19,
+          "owner": 19,
+          "passed": true,
+          "scene_sha256": "b6b5deff5645dd4dfbb8c77e4b73856faba0a0ae9a160f2d84073657ffd96f6d",
+          "png_sha256": "fc7c03f89dc7d7253575d4fc5bf9d84245e5467c1b35925885f2103fce525849",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-26.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-26.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        },
+        {
+          "number": 27,
+          "point": [
+            1440.2199223803364,
+            301.03492884864164
+          ],
+          "expected": 25,
+          "owner": 25,
+          "passed": true,
+          "scene_sha256": "8292cc7c2bb1eefcb8cacf38e541b1580171dcad96e79e928aaf80353416aef3",
+          "png_sha256": "00534d1fbd448eacfbf5b03e052d536b55e1d72a81f4e874e6e40015276d4ac4",
+          "command": [
+            "povray",
+            "+I/home/rharris/git/beads/photo2/output/r156/exact-points/B1-27.pov",
+            "+O/home/rharris/git/beads/photo2/output/r156/exact-points/B1-27.png",
+            "+W1",
+            "+H1",
+            "+FN",
+            "-D",
+            "-A",
+            "+WT2",
+            "File_Gamma=1"
+          ]
+        }
+      ]
+    }
+  ],
+  "kernel_sha256": "9f881dde6ab6652367c89ff8568c221806f551a3eefcbdcb6359914d194b0915",
+  "checker_sha256": "f3f95b26224cae7de43c396fbd3a2e097320087820e7d4ddf34da245abbc9436"
+}
