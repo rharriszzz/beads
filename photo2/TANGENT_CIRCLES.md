@@ -2,7 +2,9 @@
 
 **R179:** [Both helicities at original and +5% counts](HELICITY_COUNT_COMPARISON.md)
 provides four whole-photo overlays and matching local/wider comparisons.
-These are additional views; the earlier spacing question remains pending.
+**R181–R182:** [Interactive viewer](TANGENT_VIEWER.md) adds a count slider,
+helicity control, zoom/pan and saved choices. [R180 feedback](drift-review-r180.json)
+records similar drift for both hands; the best count remains unresolved.
 
 The Python prototype constructs the entire bracelet on a planar centerline,
 finds each bead's minor-outward point and tangent plane, and projects a small
@@ -104,8 +106,10 @@ establishes the true outward point.
 
 **Q177.1:** In this wider upper-arc comparison, does the spacing of the cyan
 circles look closer to the photographed bead spacing after increasing the
-count to 2,833? Pending. This asks about spacing, not whether every circle
-has the correct bead identity. Whole-image drift remains visible.
+count to 2,833? R180 supplies a qualitative answer: drift to boundaries occurs
+after130–156 bead steps at2698 and65–91 at the increased count, similarly for
+both hands. The correct count remains unresolved. This asks about spacing,
+not whether every circle has the correct bead identity.
 
 ## Run and adjust
 

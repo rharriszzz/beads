@@ -36,6 +36,14 @@ reuse each hand's original colored-core registration, fix its phase/origin
 within the count pair, use identical camera/spline/exposure, and retain exact
 parameters. This separates a count adjustment from helicity-specific local
 alignment; no new fit or helicity conclusion is implied.
+R181–R182 add [interactive count/helicity inspection with zoom and pan](photo2/TANGENT_VIEWER.md).
+The local Python browser server recomputes exact model-point exposure, sends
+compact projected ellipse axes, rejects stale replies and preserves viewport
+across count changes. Save selected parameters separately with source hashes;
+export the full source image regardless of viewport. Validate against frozen
+forward variants and test zoom/pan/race and save/reload behavior. The maker's
+[unsigned drift review](photo2/drift-review-r180.json) motivates a broad adjustable
+count range, not a recovered N or helicity conclusion.
 
 Place beads uniformly in world arclength with minor-circle phase and integer-turn
 closure. At the minor-radial outer-wall midpoint P=C+(4+R)u, use plane

@@ -1,6 +1,48 @@
 # Beads session handoff — new branch
 
-## Current R179 — Both helicities and both counts, matched image sets
+## Current R180–R182 — Drift feedback; count slider with zoom/pan
+
+Maker review: minus2698 center→boundary drift over130–156 index steps
+(10–12×13), increased count over65–91 (5–7×13), plus behavior similar to
+minus. “Minus3833” interpreted provisionally as supplied2833; exact wording
+and source/image hashes in [drift-review-r180.json](photo2/drift-review-r180.json).
+Unsigned rates alone don't establish N or helicity; starting route/error
+threshold/direction are unmeasured. Preserve all prior comparisons.
+
+R181 asks for active Python count slider; R182 adds zoom/pan. Three methods
+presented: desktop/browser/notebook; choose local browser using existing
+labeller launcher. [Viewer instructions](photo2/TANGENT_VIEWER.md):
+`.venv/bin/python photo2/tangent_viewer.py`. Default count2698,hand−1,
+slider2000–3600 with editable endpoints; port8766/free fallback. Explicit
+port0/--no-browser supported. No new dependencies. User starts it locally;
+no browser, launcher or server interaction test run in this delivery.
+
+Full original photo; wheel zoom anchored at pointer; left-drag pan; fit/100%/
+starting-patch buttons. Count/hand edits retain viewport. Uses saved A/+1
+and B/−1 phases/origins, common camera/spline/sizes, no refit. Full-loop exact
+exposure excludes hidden/grazing/unresolved outward points. Debounced count
+requests/12-frame cache; stale responses rejected, previous circles dimmed,
+save/export disabled until displayed count/hand current. Local zoom needs
+no geometry request. Compact exact projected ellipse axes preserve loops.
+
+Save choice→photo2/output/tangent-viewer/choice.json with previous backup,
+source/UI/model hashes and view; restart restores choice. PNG exports full
+source photo, JSON works with static tangent_circles.py overlay. Existing
+non-viewer documents rejected rather than overwritten. Manual live labels
+and all prior outputs unchanged. Four Python tests cover all4 frozen variants,
+ellipse transport, choice persistence and validation; four JS viewport/race
+checks pass. Lower/middle/upper2000/2750/3600×both hands finish20–27ms in
+initial measurement; timing is local diagnostic, not a browser guarantee.
+Syntax/hash/link/append-only-log/whitespace checks and
+[validation record](photo2/review/r182/validation.json) saved.
+
+Preflight daisy at eabd881, clean/no stashes, fetched/upstream0/0, no agents.
+**Stopping point:** viewer code and maker feedback delivery. **Next bounded
+task:** read maker's saved preferred count and assess an unfitted neighboring
+patch; no N/closure/helicity claim. gpt-6.1-sol / High, same session, no/new.
+Scoped commit/push verified before reporting delivery.
+
+## Prior R179 — Both helicities and both counts, matched image sets
 
 User: still working on spacing review; meantime requests same images for both
 helicities at original and +5%. [Four-way review](photo2/HELICITY_COUNT_COMPARISON.md)

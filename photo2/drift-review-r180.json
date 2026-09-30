@@ -1,0 +1,49 @@
+{
+  "request": "R180",
+  "statement": "In minus 2698, over about 130 to 156 beads (10 to 12 times 13), the little circles drift from being over the center of the beads to being over the boundaries of the beads.  In minus 3833, a similar drift happens between 5 to 7 times 13 beads.  I am not sure if the correct number is less than 2698, between 2698 and 2833, or greater than 2833.  In plus 2698, the differences are similar to minus 2698.  Plus 2833 is similar to minus 2833.",
+  "kind": "Maker qualitative/approximate visual review",
+  "observations": {
+    "original_count": 2698,
+    "original_drift_index_span": [
+      130,
+      156
+    ],
+    "original_blocks_of_13": [
+      10,
+      12
+    ],
+    "increased_count_as_written": 3833,
+    "increased_count_interpreted": 2833,
+    "increased_blocks_of_13": [
+      5,
+      7
+    ],
+    "increased_drift_index_span": [
+      65,
+      91
+    ],
+    "plus_behavior_reported_similar_to_minus": true,
+    "signed_direction_unknown": true,
+    "drift_component_along_or_across_unknown": true,
+    "common_start_and_endpoint_threshold_unmeasured": true
+  },
+  "interpretation_note": "3833 is provisionally treated as a typo for supplied minus2833; retain exact statement and do not treat this correction as maker-confirmed.",
+  "count_candidates": "Below2698, between2698and2833, or above2833 remain unresolved by the maker.",
+  "derived_unsigned_rate_ratio": {
+    "range": [
+      1.4285714285714286,
+      2.4
+    ],
+    "assumptions": "Comparable starting alignment, route and center-to-boundary displacement; not a numeric count estimate."
+  },
+  "old_question": "Q177.1 receives a qualitative drift review; best count remains unresolved.",
+  "next_action": "User asks for interactive count slider with zoom/pan (R181/R182); do not require a signed-drift answer first.",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/review/r179/summary.json": "6fb77fa57d4c5dcd789036d7d8fbd4dcfea679939dd87cd0cf0ee1350e1ac84f",
+    "photo2/review/r179/minus-2698/bracelet-overlay.png": "ab627786ad9a5dae74a5cc6251cd60df6db6f112ec23b51b07ce3d7fab412ca3",
+    "photo2/review/r179/minus-2833/bracelet-overlay.png": "c5de0528f87faed7dd7561a98fb1f54b6f8c9ef61723d6a5ad9a9b6e64954a56",
+    "photo2/review/r179/plus-2698/bracelet-overlay.png": "a71c49a870d5010f7b9d5873dc750391f5bbf77613b658365ad4147a0171ed67",
+    "photo2/review/r179/plus-2833/bracelet-overlay.png": "da5b944d62ab41074d24e9cb094ee54d7415d2523dc8806b32d72530b305b0d3"
+  }
+}

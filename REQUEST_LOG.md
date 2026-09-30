@@ -2891,3 +2891,83 @@ review. Next bounded task incorporates feedback then refines an adjacent
 unfitted colored patch with both hypotheses retained. Recommend gpt-6.1-sol /
 High,same session,no/new. Update method/plan/handoff; commit/push scoped work
 and verify exact remote tip and clean status before claiming delivery.
+
+
+## R180 — Maker reports unsigned count-dependent drift for both helicities
+
+User: “In minus 2698, over about 130 to 156 beads (10 to 12 times 13), the little circles drift from being over the center of the beads to being over the boundaries of the beads.  In minus 3833, a similar drift happens between 5 to 7 times 13 beads.  I am not sure if the correct number is less than 2698, between 2698 and 2833, or greater than 2833.  In plus 2698, the differences are similar to minus 2698.  Plus 2833 is similar to minus 2833.”
+
+Preserve exact maker wording and image/source hashes in drift-review-r180.json.
+Interpret “minus3833” provisionally as the supplied minus2833, explicitly
+not a confirmed correction. At2698 center→boundary drift appears over130–156
+bead steps (10–12×13); increased model over65–91 (5–7×13); plus similar to
+minus. Qualitative review of Q177.1 received; maker has not selected a best
+count. Conditional unsigned drift-rate ratio130/91→156/65=1.43–2.4 assumes
+same route/start/error threshold, which aren't measured. Do not treat the
+boundary as a known half-bead-index error, derive a signed count correction,
+claim helicity or promote a speculative numeric N range. True count below,
+between or above the two trials remains unresolved from this review alone.
+
+Preflight daisy,eabd881,photo-2-reconstruction-v2,clean/no stashes,fetch and
+upstream0/0; read handoff/log/plan/relevant geometry comparison. No agents.
+Three diagnostic methods considered: signed drift, a count sweep, image-derived
+spacing. Start with interpreting signed drift, but R181/R182 immediately steer
+to interactive inspection before requiring a signed-direction answer. Preserve
+all historical numerical outputs, images, maker labels and geometry kernel.
+
+## R181 — Active Python bead-count slider
+
+User: “Can you an active python program with a slider that gives a good range
+of bead counts?  I can adjust it to the best place.”
+
+Present three interfaces: desktop window, local browser, notebook. Implement
+local Python browser viewer using existing WSL-aware launcher; no dependency
+installation. tangent_viewer.py plus canvas/HTML/CSS/JS assets. Default2698,
+hand−1; slider2000–3600 gives lower/intermediate/higher choices, range editable
+within100–10000. Numeric count and2698/2833 preset buttons, both hand selections.
+Reuse each hand's saved original phase/origin; common camera/spline/sizes;
+no fit or index/N/closure inference. Every count recomputes all-bead occlusion,
+only exposed minor-outward points drawn. Exact projected circle center/two axes
+sent to browser; smooth48-segment rings match full projected tangent circles.
+
+Coalesce slider updates, keep12-frame cache, reject stale replies and dim prior
+circles until latest count/hand displayed. Save/export disabled for pending
+model frames. Save explicitchoice to photo2/output/tangent-viewer/choice.json
+with view/source/model/UI hashes and previous backup; restart restores it.
+Download portable parameters/full-source PNG. Default8766 with free-port
+fallback; explicit--port0/--no-browser supported. Existing non-viewer save
+files rejected without replacement; manual annotations stay untouched.
+
+## R182 — Zoom, pan and count adjustment in one viewer
+
+User: “need to be able to zoom and pan on the image, and also adjust the total
+bead count.”
+
+Mouse wheel zooms around pointer; left drag pans. Fit photo, starting-patch,
+100%,zoom buttons. Photo and circles share original EXIF source coordinates.
+Count/hand changes don't reset pan/zoom; browser redraws view locally while
+Python handles only model recomputation. Startup retains whole photo; explicit
+starting-patch shortcut is diagnostic user assistance, not automatic inference.
+
+Four Python tests pass: all4 frozen hand/count variants reproduce parameters,
+anchor locations/exposure counts; exact compact ellipse/full-loop projection;
+save/reload/backup and unrelated-document preservation; invalid selections.
+Four JS viewport tests pass: pointer-anchored zoom including limits, pan/resize
+photo/circle alignment, whole/patch framing and late reply rejection. Node
+syntax/Python compile, hashes/link/append-only log/whitespace checks completed.
+Geometry kernel and its previously passed4 tests unchanged; no broad rerun.
+No socket/server/browser/launcher interaction test run. No GUI launched. User
+runs .venv/bin/python photo2/tangent_viewer.py and follows printed URL.
+
+Initial2000/2750/3600×both hands finish20–27ms each on daisy; fresh timing,
+exposure exclusions and all current source hashes in review/r182/validation.json.
+No promise of measured browser response speed; old full-source comparisons
+remain frozen. TANGENT_VIEWER.md describes launch, controls, parameters and
+reproduction of tests. Update method index, plan/handoff and comparison links.
+
+Stopping point: runnable adjustable Python viewer and preserved maker review.
+Next bounded task: use maker's saved count to examine remaining drift on an
+adjacent unfitted patch, retaining both hands/unknown closure. No required
+signed-drift answer or new question before viewer use. Recommend gpt-6.1-sol /
+High,same session,no/new. Commit/push scoped implementation/evidence/docs and
+verify exact remote tip plus clean tracked status before delivery.

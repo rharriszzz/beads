@@ -11,7 +11,31 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R179: both helicities at original and +5% counts
+## Current R180–R182: maker drift feedback and interactive count viewer
+
+Maker reports center-to-boundary drift after130–156 bead steps at2698 and
+65–91 at the increased count, similarly for both hands. “Minus3833” is
+provisionally interpreted as supplied2833, exact wording preserved in
+[drift review](photo2/drift-review-r180.json). Signed/component drift and
+best count remain unknown; do not derive a numeric N from an assumed boundary.
+
+User asks for an active Python count slider with zoom/pan. Three interfaces
+considered: desktop, browser (selected), notebook. [Viewer/launch instructions](photo2/TANGENT_VIEWER.md)
+implement full-source canvas with pointer-centered zoom, drag pan, count slider
+2000–3600/editable endpoints, both saved helicity registrations, no viewport
+reset on model changes, latest-response handling and save/reload/PNG/JSON.
+Recompute full-model outward-point exposure for every count; no new fit.
+Maker saves are separate from annotations. Four Python and four viewport
+checks pass; original4 frozen variants reproduce. Browser/server/launcher
+interaction not tested. Existing geometry/production detector unchanged.
+
+**Stopping point:** working viewer program and preserved maker evidence.
+**Next bounded task:** read maker-selected count and assess remaining drift
+on an adjacent unfitted patch; retain both hands and unknown N/closure.
+No required signed-drift answer before viewer use. gpt-6.1-sol / High;
+same session, no /new needed.
+
+## Prior R179: both helicities at original and +5% counts
 
 User is still reviewing spacing and requests the same images for both
 helicities at both counts. [Four-way review](photo2/HELICITY_COUNT_COMPARISON.md)

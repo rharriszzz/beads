@@ -1,0 +1,103 @@
+{
+  "requests": [
+    "R180",
+    "R181",
+    "R182"
+  ],
+  "created_at": "2026-09-30T23:00:58.205420+00:00",
+  "machine": "daisy",
+  "python": "3.12.14",
+  "default_range": [
+    2000,
+    3600
+  ],
+  "range_probe": [
+    {
+      "count": 2000,
+      "hand": -1,
+      "visible_anchors": 924,
+      "excluded_anchors": 1076,
+      "unfinished_rays": 10,
+      "calculation_ms": 25.3
+    },
+    {
+      "count": 2750,
+      "hand": -1,
+      "visible_anchors": 1270,
+      "excluded_anchors": 1480,
+      "unfinished_rays": 15,
+      "calculation_ms": 22.6
+    },
+    {
+      "count": 3600,
+      "hand": -1,
+      "visible_anchors": 1661,
+      "excluded_anchors": 1939,
+      "unfinished_rays": 14,
+      "calculation_ms": 26.9
+    },
+    {
+      "count": 2000,
+      "hand": 1,
+      "visible_anchors": 924,
+      "excluded_anchors": 1076,
+      "unfinished_rays": 12,
+      "calculation_ms": 20.7
+    },
+    {
+      "count": 2750,
+      "hand": 1,
+      "visible_anchors": 1264,
+      "excluded_anchors": 1486,
+      "unfinished_rays": 16,
+      "calculation_ms": 24.4
+    },
+    {
+      "count": 3600,
+      "hand": 1,
+      "visible_anchors": 1662,
+      "excluded_anchors": 1938,
+      "unfinished_rays": 23,
+      "calculation_ms": 27.0
+    }
+  ],
+  "tests": {
+    "python_checks": 4,
+    "viewport_checks": 4,
+    "status": "passed",
+    "python_command": ".venv/bin/python -m unittest discover -s photo2 -p test_tangent_viewer.py",
+    "viewport_command": "node photo2/tangent_viewer/viewport.test.mjs"
+  },
+  "coverage": [
+    "all four frozen +/-1 and2698/2833 frames",
+    "compact ellipse/full projected loop parity",
+    "save/reload/previous backup",
+    "unrelated-document and invalid-choice protection",
+    "pointer-centered zoom",
+    "photo/circle pan and resize alignment",
+    "whole and starting-patch framing",
+    "stale reply rejected"
+  ],
+  "not_run": [
+    "browser UI interaction",
+    "socket/server integration",
+    "WSL browser launcher"
+  ],
+  "source_sha256": {
+    "photo2/tangent_viewer.py": "03f2240bad61ec0e1ad6609292cd500b022c86d4d8ce7d5cd187bcbfd9b9ff66",
+    "photo2/test_tangent_viewer.py": "00de9ffbf3eb06cb7e39855a9b3ba04cf9ccadf2af863037d0c71645c1785d2a",
+    "photo2/tangent_viewer/index.html": "ab8a20effd35fd21736fe90aceae45779cf6ecdc2be126bb022b63b7597bbff0",
+    "photo2/tangent_viewer/style.css": "38a7dc53b9b393d702819b6053b79434cbdfe7532a2672a4fa7731e8d855d009",
+    "photo2/tangent_viewer/app.mjs": "ef2545f2a1051a37688fd03e7bb4d24f15dd2326efe7d1d3d37471130e7dd52e",
+    "photo2/tangent_viewer/viewport.mjs": "72913b74ae065d04d51c454f526cbaaad59b298542e810eacacb337ca5da50e6",
+    "photo2/tangent_viewer/viewport.test.mjs": "198717d8165f2346cf23a97d2d3e75be32c0fdb642d99c67614df965326488c5",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/label_beads.py": "4f8503b3edb59026790d8c5563b9da9e514e9b01fb01d748c3ab8ee102a8061a",
+    "photo2/drift-review-r180.json": "2ea0be1bbc763d2d3dcc96790e9d86cd3fef252aa12c6e5fbc24118f87d1ef76",
+    "photo2/review/r179/summary.json": "6fb77fa57d4c5dcd789036d7d8fbd4dcfea679939dd87cd0cf0ee1350e1ac84f",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f"
+  },
+  "limits": "User-selected diagnostic count/hand; no new fit, recovered N, closure or helicity claim."
+}

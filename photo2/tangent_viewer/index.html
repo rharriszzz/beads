@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bracelet count viewer</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Bracelet count viewer</h1>
+    <div class="controls">
+      <label>Helicity <select id="hand"><option value="-1">−1</option><option value="1">+1</option></select></label>
+      <label for="count">Bead count</label><input id="count" type="number" step="1" aria-label="Total bead count">
+      <input id="slider" type="range" step="1" aria-label="Adjust total bead count">
+      <button id="original">2,698</button><button id="increased">2,833 (+5%)</button>
+      <details><summary>Slider range</summary><div class="range-controls">
+        <label>From <input id="minimum" type="number" step="1"></label>
+        <label>To <input id="maximum" type="number" step="1"></label>
+        <button id="range">Apply range</button>
+      </div></details>
+    </div>
+    <div class="controls">
+      <button id="fit">Fit photo</button><button id="patch">Starting patch</button>
+      <button id="one">100%</button><button id="out" aria-label="Zoom out">−</button><button id="in" aria-label="Zoom in">+</button>
+      <output id="zoom">—</output>
+      <label><input id="show" type="checkbox" checked> Show cyan circles</label>
+      <button id="save" disabled>Save choice</button><button id="png" disabled>Download full PNG</button>
+      <button id="json" disabled>Download parameters</button>
+    </div>
+    <p class="help">Wheel to zoom at the pointer · drag to pan · change the count without losing your view. Circles mark exposed outward points in a provisional model.</p>
+  </header>
+  <main id="stage"><canvas id="canvas" aria-label="Bracelet photograph with adjustable cyan circles"></canvas></main>
+  <footer><span id="status" role="status">Loading photograph…</span><span id="saved"></span></footer>
+  <script type="module" src="/app.mjs"></script>
+</body>
+</html>

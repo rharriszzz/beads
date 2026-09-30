@@ -1,5 +1,10 @@
 # Both helicities at original and +5% counts — R179
 
+**R180–R182 update:** [Maker drift review](drift-review-r180.json) reports
+similar behavior for both helicities, without identifying a correct count.
+The [interactive count viewer](TANGENT_VIEWER.md) now supplies zoom/pan and
+a slider so the maker can find a preferred value.
+
 Four matched sets of cyan tangent-circle images are available. Each retains
 the whole source photo at 2540 × 3182 pixels. **Rows are helicity +1 / −1;
 columns are original 2,698 / increased 2,833 beads.**
@@ -18,8 +23,8 @@ columns are original 2,698 / increased 2,833 beads.**
 The larger upper-arc context is available as raw / original / increased count
 for [helicity +1](review/r179/plus-spacing-comparison.png) and
 [helicity −1](review/r179/minus-spacing-comparison.png). The earlier R177
-figures and Q177.1 remain unchanged while the maker continues that review;
-there is no additional question in this step.
+figures remain unchanged. R180 supplies qualitative feedback to Q177.1;
+there was no additional question in the R179 delivery.
 
 ## What is held fixed
 
