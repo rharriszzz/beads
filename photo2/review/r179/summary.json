@@ -1,0 +1,1051 @@
+{
+  "request": "R179",
+  "variants": [
+    {
+      "name": "plus-2698",
+      "hand": 1,
+      "count": 2698,
+      "family": "A",
+      "config": {
+        "spline": "photo2/spline-seed-r175.json",
+        "cores": "photo2/review/r157/report.json",
+        "circle_radius": 0.37996483480584586,
+        "parameters": {
+          "nbeads": 2698,
+          "hand": 1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -22.297197099857737,
+          "origin_fraction": 0.8015246087559217
+        },
+        "family": "A"
+      },
+      "original_core_fit": {
+        "family": "A",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": 1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -22.297197099857737,
+          "origin_fraction": 0.8015246087559217
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -19,
+          0
+        ],
+        "outward_xy": [
+          [
+            1255.9592672128206,
+            287.6256041079764
+          ],
+          [
+            1283.9904187425307,
+            304.58057979230716
+          ],
+          [
+            1344.3013290000652,
+            270.94466842906036
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          true,
+          true,
+          true
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score": 0.0,
+        "centroid_proposal_rms": 1.2063471997175665,
+        "converged": true
+      },
+      "projected_scale_pixels_per_unit": 7.7240571220247825,
+      "overlay": {
+        "visible_anchors": 1244,
+        "excluded_hidden_or_grazing": 1454,
+        "unfinished_rays": 10,
+        "local_checks": [
+          {
+            "maker_number": 8,
+            "model_index": 2672,
+            "relative_index": -26,
+            "outward_xy": [
+              1255.9592672128178,
+              287.62560410796823
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 11,
+            "model_index": 2679,
+            "relative_index": -19,
+            "outward_xy": [
+              1283.9904187425293,
+              304.5805797923035
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 14,
+            "model_index": 2685,
+            "relative_index": -13,
+            "outward_xy": [
+              1299.9800415543307,
+              278.7316565095307
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 16,
+            "model_index": 2691,
+            "relative_index": -7,
+            "outward_xy": [
+              1317.2552854178264,
+              257.2330830299095
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 17,
+            "model_index": 2692,
+            "relative_index": -6,
+            "outward_xy": [
+              1327.6070103968768,
+              296.35057885777815
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 20,
+            "model_index": 0,
+            "relative_index": 0,
+            "outward_xy": [
+              1344.3013290000652,
+              270.94466842906036
+            ],
+            "exposed": true
+          }
+        ]
+      },
+      "independent_check": {
+        "visible_anchors": 1244,
+        "unfinished_rays": 10,
+        "independent_same_ray_check": {
+          "verified_rays": 2693,
+          "mismatches": 0,
+          "unverified_rays": 5
+        },
+        "independent_pov_pixel_check": {
+          "agree": 1187,
+          "total": 1244,
+          "mismatch_indices": [
+            12,
+            25,
+            64,
+            103,
+            142,
+            194,
+            220,
+            298,
+            337,
+            350,
+            402,
+            415,
+            428,
+            441,
+            454,
+            467,
+            506,
+            522,
+            561,
+            574,
+            587,
+            600,
+            613,
+            782,
+            873,
+            899,
+            912,
+            964,
+            990,
+            1029,
+            1081,
+            1107,
+            1146,
+            1159,
+            1198,
+            1211,
+            1250,
+            1354,
+            1380,
+            1484,
+            1657,
+            1731,
+            1861,
+            1865,
+            2017,
+            2021,
+            2030,
+            2229,
+            2268,
+            2411,
+            2424,
+            2476,
+            2554,
+            2567,
+            2580,
+            2606,
+            2658
+          ],
+          "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+        },
+        "appearance_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/plus-2698/plus-2698.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/plus-2698/plus-2698.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "id_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/plus-2698/plus-2698-ids.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/plus-2698/plus-2698-ids.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "appearance_scene_sha256": "5339ddf9718335ef53892401929f27fc59d722f0feccab698d0c5511515da67a",
+        "id_scene_sha256": "98f3c5a2c36a2595920d901dd3b9b490d41d88a0aefee6d8293e4e6324b564e4"
+      },
+      "report_sha256": "b50a2056a2c17bf6f6d749dfdf5377353fe1423eab26411160ed525a399f1bb7"
+    },
+    {
+      "name": "plus-2833",
+      "hand": 1,
+      "count": 2833,
+      "family": "A",
+      "config": {
+        "spline": "photo2/spline-seed-r175.json",
+        "cores": "photo2/review/r157/report.json",
+        "circle_radius": 0.37996483480584586,
+        "parameters": {
+          "nbeads": 2833,
+          "hand": 1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -22.297197099857737,
+          "origin_fraction": 0.8015246087559217
+        },
+        "family": "A"
+      },
+      "original_core_fit": {
+        "family": "A",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": 1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -22.297197099857737,
+          "origin_fraction": 0.8015246087559217
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -19,
+          0
+        ],
+        "outward_xy": [
+          [
+            1255.9592672128206,
+            287.6256041079764
+          ],
+          [
+            1283.9904187425307,
+            304.58057979230716
+          ],
+          [
+            1344.3013290000652,
+            270.94466842906036
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          true,
+          true,
+          true
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score": 0.0,
+        "centroid_proposal_rms": 1.2063471997175665,
+        "converged": true
+      },
+      "projected_scale_pixels_per_unit": 7.352026847798817,
+      "overlay": {
+        "visible_anchors": 1307,
+        "excluded_hidden_or_grazing": 1526,
+        "unfinished_rays": 18,
+        "local_checks": [
+          {
+            "maker_number": 8,
+            "model_index": 2807,
+            "relative_index": -26,
+            "outward_xy": [
+              1260.203692979967,
+              287.0714388008166
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 11,
+            "model_index": 2814,
+            "relative_index": -19,
+            "outward_xy": [
+              1286.8949855424175,
+              303.36725414985267
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 14,
+            "model_index": 2820,
+            "relative_index": -13,
+            "outward_xy": [
+              1302.1915658007151,
+              278.9439361173438
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 16,
+            "model_index": 2826,
+            "relative_index": -7,
+            "outward_xy": [
+              1318.685734111063,
+              258.670172659022
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 17,
+            "model_index": 2827,
+            "relative_index": -6,
+            "outward_xy": [
+              1328.5086006594213,
+              295.8735996545331
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 20,
+            "model_index": 0,
+            "relative_index": 0,
+            "outward_xy": [
+              1344.4365074081413,
+              271.8331609640086
+            ],
+            "exposed": true
+          }
+        ]
+      },
+      "independent_check": {
+        "visible_anchors": 1307,
+        "unfinished_rays": 18,
+        "independent_same_ray_check": {
+          "verified_rays": 2829,
+          "mismatches": 0,
+          "unverified_rays": 4
+        },
+        "independent_pov_pixel_check": {
+          "agree": 1246,
+          "total": 1307,
+          "mismatch_indices": [
+            12,
+            25,
+            51,
+            116,
+            168,
+            181,
+            285,
+            298,
+            324,
+            398,
+            415,
+            428,
+            658,
+            671,
+            697,
+            762,
+            853,
+            931,
+            957,
+            1009,
+            1035,
+            1074,
+            1097,
+            1110,
+            1149,
+            1175,
+            1240,
+            1253,
+            1279,
+            1331,
+            1344,
+            1357,
+            1370,
+            1422,
+            1461,
+            1500,
+            1513,
+            1552,
+            1578,
+            1617,
+            1695,
+            1955,
+            2016,
+            2029,
+            2094,
+            2107,
+            2224,
+            2263,
+            2276,
+            2302,
+            2328,
+            2354,
+            2484,
+            2588,
+            2611,
+            2637,
+            2663,
+            2689,
+            2728,
+            2741,
+            2780
+          ],
+          "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+        },
+        "appearance_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/plus-2833/plus-2833.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/plus-2833/plus-2833.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "id_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/plus-2833/plus-2833-ids.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/plus-2833/plus-2833-ids.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "appearance_scene_sha256": "c6e9346a18f6545b526ee2096ab51bdb99057f8ed95c01e73f1c8809cbdfe113",
+        "id_scene_sha256": "4d420c966073cd84a5702effc66de2862defe3fec491123cdee3dee85c9ee691"
+      },
+      "report_sha256": "157be55a308f0ddd516bc3a91199878d6b526eb1be36c0470aeba26d9129bb10"
+    },
+    {
+      "name": "minus-2698",
+      "hand": -1,
+      "count": 2698,
+      "family": "B",
+      "config": {
+        "spline": "photo2/spline-seed-r175.json",
+        "cores": "photo2/review/r157/report.json",
+        "circle_radius": 0.37996483480584586,
+        "parameters": {
+          "nbeads": 2698,
+          "hand": -1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -21.979857484559343,
+          "origin_fraction": 0.8016461717772337
+        },
+        "family": "B"
+      },
+      "original_core_fit": {
+        "family": "B",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": -1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -21.979857484559343,
+          "origin_fraction": 0.8016461717772337
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -20,
+          0
+        ],
+        "outward_xy": [
+          [
+            1257.0327822128854,
+            287.2315820085814
+          ],
+          [
+            1281.7263611687245,
+            304.96305573091126
+          ],
+          [
+            1345.4616088879611,
+            271.00445456583384
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          true,
+          true,
+          true
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score": 0.0,
+        "centroid_proposal_rms": 1.1345602069120866,
+        "converged": true
+      },
+      "projected_scale_pixels_per_unit": 7.7240571220247825,
+      "overlay": {
+        "visible_anchors": 1246,
+        "excluded_hidden_or_grazing": 1452,
+        "unfinished_rays": 12,
+        "local_checks": [
+          {
+            "maker_number": 8,
+            "model_index": 2672,
+            "relative_index": -26,
+            "outward_xy": [
+              1257.0327822128888,
+              287.2315820085928
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 11,
+            "model_index": 2678,
+            "relative_index": -20,
+            "outward_xy": [
+              1281.7263611687292,
+              304.96305573094037
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 14,
+            "model_index": 2685,
+            "relative_index": -13,
+            "outward_xy": [
+              1301.102024974505,
+              278.5607176730605
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 16,
+            "model_index": 2692,
+            "relative_index": -6,
+            "outward_xy": [
+              1321.8528687433297,
+              256.5338160500478
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 17,
+            "model_index": 2691,
+            "relative_index": -7,
+            "outward_xy": [
+              1325.3724305228548,
+              296.89094678435754
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 20,
+            "model_index": 0,
+            "relative_index": 0,
+            "outward_xy": [
+              1345.4616088879611,
+              271.00445456583384
+            ],
+            "exposed": true
+          }
+        ]
+      },
+      "independent_check": {
+        "visible_anchors": 1246,
+        "unfinished_rays": 12,
+        "independent_same_ray_check": {
+          "verified_rays": 2694,
+          "mismatches": 0,
+          "unverified_rays": 4
+        },
+        "independent_pov_pixel_check": {
+          "agree": 1180,
+          "total": 1246,
+          "mismatch_indices": [
+            1,
+            144,
+            157,
+            196,
+            287,
+            313,
+            391,
+            456,
+            755,
+            976,
+            980,
+            1006,
+            1058,
+            1097,
+            1110,
+            1158,
+            1175,
+            1201,
+            1227,
+            1357,
+            1370,
+            1383,
+            1396,
+            1409,
+            1448,
+            1461,
+            1474,
+            1487,
+            1500,
+            1526,
+            1539,
+            1682,
+            1708,
+            1721,
+            1747,
+            1812,
+            1825,
+            1838,
+            1890,
+            1903,
+            1929,
+            1942,
+            1968,
+            1994,
+            2007,
+            2033,
+            2046,
+            2062,
+            2127,
+            2166,
+            2179,
+            2218,
+            2244,
+            2283,
+            2296,
+            2361,
+            2426,
+            2452,
+            2465,
+            2478,
+            2491,
+            2504,
+            2569,
+            2582,
+            2608,
+            2686
+          ],
+          "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+        },
+        "appearance_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/minus-2698/minus-2698.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/minus-2698/minus-2698.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "id_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/minus-2698/minus-2698-ids.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/minus-2698/minus-2698-ids.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "appearance_scene_sha256": "0ec49c7cb270dfe7af355147a44c7808f65f4b34346b2b6c9efa0da36dba8050",
+        "id_scene_sha256": "d01b74b0376a90e754fa16eefb67e708bec0d14b58aa46fc1d382613dd3d1790"
+      },
+      "report_sha256": "6d9e0c873652831f4b501d03c41fa74fb66fd165830466d348f0fa7bd3098012"
+    },
+    {
+      "name": "minus-2833",
+      "hand": -1,
+      "count": 2833,
+      "family": "B",
+      "config": {
+        "spline": "photo2/spline-seed-r175.json",
+        "cores": "photo2/review/r157/report.json",
+        "circle_radius": 0.37996483480584586,
+        "parameters": {
+          "nbeads": 2833,
+          "hand": -1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -21.979857484559343,
+          "origin_fraction": 0.8016461717772337
+        },
+        "family": "B"
+      },
+      "original_core_fit": {
+        "family": "B",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": -1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -21.979857484559343,
+          "origin_fraction": 0.8016461717772337
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -20,
+          0
+        ],
+        "outward_xy": [
+          [
+            1257.0327822128854,
+            287.2315820085814
+          ],
+          [
+            1281.7263611687245,
+            304.96305573091126
+          ],
+          [
+            1345.4616088879611,
+            271.00445456583384
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          true,
+          true,
+          true
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score": 0.0,
+        "centroid_proposal_rms": 1.1345602069120866,
+        "converged": true
+      },
+      "projected_scale_pixels_per_unit": 7.352026847798817,
+      "overlay": {
+        "visible_anchors": 1307,
+        "excluded_hidden_or_grazing": 1526,
+        "unfinished_rays": 12,
+        "local_checks": [
+          {
+            "maker_number": 8,
+            "model_index": 2807,
+            "relative_index": -26,
+            "outward_xy": [
+              1261.5096600041386,
+              287.78136636928184
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 11,
+            "model_index": 2813,
+            "relative_index": -20,
+            "outward_xy": [
+              1284.966615226275,
+              304.6092080168323
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 14,
+            "model_index": 2820,
+            "relative_index": -13,
+            "outward_xy": [
+              1303.415818477189,
+              279.3220970615753
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 16,
+            "model_index": 2827,
+            "relative_index": -6,
+            "outward_xy": [
+              1323.1475956243205,
+              258.1875728145642
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 17,
+            "model_index": 2826,
+            "relative_index": -7,
+            "outward_xy": [
+              1326.483908271457,
+              296.6762351441196
+            ],
+            "exposed": true
+          },
+          {
+            "maker_number": 20,
+            "model_index": 0,
+            "relative_index": 0,
+            "outward_xy": [
+              1345.5943166168802,
+              271.881614103876
+            ],
+            "exposed": true
+          }
+        ]
+      },
+      "independent_check": {
+        "visible_anchors": 1307,
+        "unfinished_rays": 12,
+        "independent_same_ray_check": {
+          "verified_rays": 2828,
+          "mismatches": 0,
+          "unverified_rays": 5
+        },
+        "independent_pov_pixel_check": {
+          "agree": 1235,
+          "total": 1307,
+          "mismatch_indices": [
+            1,
+            53,
+            79,
+            92,
+            118,
+            131,
+            144,
+            170,
+            271,
+            284,
+            297,
+            336,
+            349,
+            388,
+            401,
+            414,
+            427,
+            440,
+            453,
+            505,
+            518,
+            531,
+            557,
+            648,
+            752,
+            765,
+            804,
+            817,
+            843,
+            869,
+            973,
+            1012,
+            1047,
+            1086,
+            1164,
+            1216,
+            1242,
+            1281,
+            1320,
+            1372,
+            1385,
+            1411,
+            1450,
+            1463,
+            1476,
+            1528,
+            1541,
+            1554,
+            1593,
+            1606,
+            1619,
+            1720,
+            1746,
+            1811,
+            1837,
+            1863,
+            1902,
+            2058,
+            2188,
+            2305,
+            2331,
+            2344,
+            2448,
+            2509,
+            2535,
+            2626,
+            2639,
+            2665,
+            2704,
+            2756,
+            2808,
+            2821
+          ],
+          "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+        },
+        "appearance_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/minus-2833/minus-2833.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/minus-2833/minus-2833.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "id_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r179/minus-2833/minus-2833-ids.pov",
+          "+O/home/rharris/git/beads/photo2/output/r179/minus-2833/minus-2833-ids.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "appearance_scene_sha256": "5576194c5b96eed33cd0b54bd5e78440f5071014918ad72bb13df3d83c0956ef",
+        "id_scene_sha256": "1a1274d5f60fb2dbf36dbb6dd27dbfac153c3f5e55c02628ad5a3c0424794f3b"
+      },
+      "report_sha256": "c3701bb86b7445190e6bb14c64181d8ad301b457819dc3101dcfaae9d55a1419"
+    }
+  ],
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/bead_placement.py": "9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534",
+    "photo2/curved_surface_fit.py": "9f881dde6ab6652367c89ff8568c221806f551a3eefcbdcb6359914d194b0915",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/check_placement.py": "af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/review/r157/report.json": "09f11f82081155431875b9d52dbe5ac408f1ea1bdbde717b9ea52418e3191308",
+    "photo2/review/r160/report.json": "4a657a80ce92dfcffb9871d52b0e941ef0199c8801fdc6e2dcd063f350a53ecb",
+    "photo2/manual-labels-r169.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/compare_tangent_helicities.py": "a1ef0e3b7cda3884d99db65d06a567f2482d5af5a037bb3c6d32aabc5902019a",
+    "photo2/review/r175/summary.json": "7c74f8f04c99c2aaf7ee9c4cd68fdd2246e0f45609dfe753a18c45dc9f9ce63f",
+    "photo2/review/r175/parameters.json": "a5c5c4163c9aea83c5b2ef2a336432ec6cc2eb641eebc69b4f2fc19dd656f36f"
+  },
+  "method": "Reuse each hand/chart original 8/11/20 core fit; change count only within that hand; no new fit.",
+  "identical_between_helicities": [
+    "spline",
+    "camera elevation/roll",
+    "physical bead dimensions",
+    "circle radius",
+    "exposure rule",
+    "source photo",
+    "crops"
+  ],
+  "differing_registration_between_helicities": [
+    "saved phase",
+    "saved along-spline origin",
+    "diagnostic index chart"
+  ],
+  "helicity_sign": "Positive advances increasing minor-circle phase along the clockwise image centerline; negative decreases it.",
+  "exposure_rule": "Only self-first, depth-matching, finished, non-grazing minor-outward points are drawn; all beads remain occluders.",
+  "pending_review": "Q177.1 remains pending; user still working, no new question required.",
+  "limits": "Diagnostic forward hypotheses, not recovered photo helicity, N, camera or full bead correspondence.",
+  "reproduction_command": ".venv/bin/python photo2/compare_tangent_helicities.py",
+  "artifact_sha256": {
+    "photo2/review/r179/minus-2698/bracelet-overlay.png": "ab627786ad9a5dae74a5cc6251cd60df6db6f112ec23b51b07ce3d7fab412ca3",
+    "photo2/review/r179/minus-2698/parameters.json": "a5c5c4163c9aea83c5b2ef2a336432ec6cc2eb641eebc69b4f2fc19dd656f36f",
+    "photo2/review/r179/minus-2698/patch-overlay.png": "c17ee866656f9307e0627c9e4c7904802c32d0915cc29946fc6dbf7852a5768e",
+    "photo2/review/r179/minus-2833/bracelet-overlay.png": "c5de0528f87faed7dd7561a98fb1f54b6f8c9ef61723d6a5ad9a9b6e64954a56",
+    "photo2/review/r179/minus-2833/parameters.json": "05935c84cbdc2590b9883b540c162fc49f16dfae5ac181011c00de1471790373",
+    "photo2/review/r179/minus-2833/patch-overlay.png": "2b5e5c1ba90a03b0933be8715bd21c78c2c32582283b660760f94b5efa1082dc",
+    "photo2/review/r179/minus-spacing-comparison.png": "9642d1f176f02a34a4e327ee7a60bf16f4177f8b5d27c7b9a06e1535cc7b8218",
+    "photo2/review/r179/patch-comparison.png": "1ab069f3437790b3188af973be0a3d2ec09d0cf315b1b516d4b7fd5b64c53ba6",
+    "photo2/review/r179/plus-2698/bracelet-overlay.png": "a71c49a870d5010f7b9d5873dc750391f5bbf77613b658365ad4147a0171ed67",
+    "photo2/review/r179/plus-2698/parameters.json": "98608ec2641016054e17348da62febec02f45dc388ad973234f8bb6cd278d9db",
+    "photo2/review/r179/plus-2698/patch-overlay.png": "d5e76eaad75a92534bbe138aabcfcd8e44acfb5621579e140492fc86959b71ea",
+    "photo2/review/r179/plus-2833/bracelet-overlay.png": "da5b944d62ab41074d24e9cb094ee54d7415d2523dc8806b32d72530b305b0d3",
+    "photo2/review/r179/plus-2833/parameters.json": "696ce708734e0edeaa76f02e64e1bd8acb4c40e88a3ca439971ee9c2feb7cd84",
+    "photo2/review/r179/plus-2833/patch-overlay.png": "a773574b335ced37857632a23692debcd44c4c6e23251d725a6d5439698d1aff",
+    "photo2/review/r179/plus-spacing-comparison.png": "d48f067bbd880ed9bc002fe5a7deca2c9844b1e6da1d8030c360458d1994a94b",
+    "photo2/review/r179/whole-comparison.png": "e9cfb31b6eb74a03e61dbda9186b3e298069b03ec56c394b9ea62f187744a6c8"
+  }
+}

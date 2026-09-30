@@ -2844,3 +2844,50 @@ source pixels,2833-bead model and1307 exposed-point cyan circles. Entire photo
 retained with original coordinate system; no cropping/rescaling. Link whole
 image in commentary and TANGENT_CIRCLES.md, retain separate local/wider reviews.
 This is the current count-adjusted overlay, not a claim of whole-photo matching.
+
+
+## R179 — Both helicities at original and five-percent increased counts
+
+User: “I am still working on that.  In the meantime, can you make the same
+images for both helicities as well as original and +5%.”
+
+Preflight daisy, photo-2-reconstruction-v2 at2357a83, clean/no stashes;
+fetch/upstream0/0. Read current handoff/log/plan/tangent-circle experiment.
+No delegation. Preserve Q177.1 as pending and all R175/R177 files, maker live
+annotations, original photo/beads.pov, detector and geometry kernel. No added
+question while maker is still working on the existing spacing review.
+
+Create compare_tangent_helicities.py, which reads frozen original best fits
+A/+1 and B/−1 for the same confirmed yellow8/11 and red20 cores. Both original
+fits are exposed and inside all3 positive cores. Use common saved spline,
+guessed camera89°/roll0°, physical dimensions, circle radius and visibility
+criteria; each hand has its saved small phase/origin adjustment. This distinction
+is explicit in HELICITY_COUNT_COMPARISON.md rather than silently claiming that
+phase/origin are identical across hands. Within each hand, count2698→2833 is
+the sole parameter change. No new registration, black/held-group fitting,
+centroid/outward-anchor assertion, index/N or helicity inference.
+
+Deliver4 original-resolution2540×3182 whole-photo overlays,4 raw/local
+comparisons,2 larger raw/original/+5% upper-arc comparisons and whole/local
+2×2 grids. Rows+1/−1,columns2698/2833. Save portable parameters and exact
+source/image hashes/commands in review/r179/summary.json. Negative-hand
+parameters and both image types reproduce delivered R175/R177 byte-for-byte.
+Only exposed minor-outward points receive circles, including same unresolved/
+grazing exclusions; all beads remain occluders. Routine scenes/renders/geometry
+ignored, curated image evidence tracked. No GUI/server/launcher tests.
+
+Independent source-macro POV same-pixel ownership checks finish with0 mismatches
+for all4 variants: +1/2698 has2693 verified,5 unverified,1244 drawn anchors;
++1/2833 has2829 verified,4 unverified,1307 anchors; −1/2698 has2694 verified,
+4 unverified,1246 anchors; −1/2833 has2828 verified,5 unverified,1307 anchors.
+Model mathematical-point exposure and finite-preview rounding remain separately
+recorded. Original4 geometry tests/kernel unchanged; no repeat required. Check
+image dimensions/cyan-only pixel changes, saved parameter invariants, source/
+artifact hashes, append-only log, local links, compile/whitespace and inspect
+whole/local grids and matching raw/wider comparisons.
+
+Stopping point: requested four-way image comparison while maker continues
+review. Next bounded task incorporates feedback then refines an adjacent
+unfitted colored patch with both hypotheses retained. Recommend gpt-6.1-sol /
+High,same session,no/new. Update method/plan/handoff; commit/push scoped work
+and verify exact remote tip and clean status before claiming delivery.

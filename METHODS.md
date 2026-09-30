@@ -31,6 +31,11 @@ beads.pov rounded-annular dimensions, camera hypothesis, and three maker-confirm
 colored interiors for diagnostic registration. **Output:** 3D outward points,
 tangent planes/circles, model exposure masks and cyan whole-photo overlays.
 [Implemented procedure / reproduction / spacing question](photo2/TANGENT_CIRCLES.md).
+R179 adds [matched whole/local comparisons for both helicities and counts](photo2/HELICITY_COUNT_COMPARISON.md):
+reuse each hand's original colored-core registration, fix its phase/origin
+within the count pair, use identical camera/spline/exposure, and retain exact
+parameters. This separates a count adjustment from helicity-specific local
+alignment; no new fit or helicity conclusion is implied.
 
 Place beads uniformly in world arclength with minor-circle phase and integer-turn
 closure. At the minor-radial outer-wall midpoint P=C+(4+R)u, use plane

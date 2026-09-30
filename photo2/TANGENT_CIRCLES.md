@@ -1,5 +1,9 @@
 # Minor-outward tangent circles — R175–R178
 
+**R179:** [Both helicities at original and +5% counts](HELICITY_COUNT_COMPARISON.md)
+provides four whole-photo overlays and matching local/wider comparisons.
+These are additional views; the earlier spacing question remains pending.
+
 The Python prototype constructs the entire bracelet on a planar centerline,
 finds each bead's minor-outward point and tangent plane, and projects a small
 cyan circle there. **A circle is drawn only when its center point is exposed

@@ -1,6 +1,37 @@
 # Beads session handoff — new branch
 
-## Current R175–R178 — Tangent circles; count increased five percent
+## Current R179 — Both helicities and both counts, matched image sets
+
+User: still working on spacing review; meantime requests same images for both
+helicities at original and +5%. [Four-way review](photo2/HELICITY_COUNT_COMPARISON.md)
+and [frozen summary](photo2/review/r179/summary.json). Preflight daisy,
+photo-2-reconstruction-v2 at2357a83, clean/no stashes, fetch/upstream0/0.
+No delegation. Preserve all old images/reports, live annotations and geometry
+kernel. No new fitting or broad testing; generate the requested four views.
+
+compare_tangent_helicities.py reads saved original8/11/20 fits A/+1 and B/−1;
+both original fits place all3 points inside confirmed cores. Common spline,
+camera89°/roll0°, physical bead dimensions, marker size and exposure rule.
+Per-hand phase/origin differ slightly, explicitly recorded; each count pair
+changes only N2698→2833. Labels use the corresponding diagnostic chart,
+not recovered string indices. Whole-source2540×3182 overlays for all4,
+raw/local pairs, wider raw/original/+5% for each hand, whole/local2×2 grids.
+Negative-hand images/configs byte-identical to R175/R177, checked automatically.
+
+Independent source-macro POV same-pixel ownership checks for each variant;
+finished rays must agree, unresolved rays preserved/excluded. Model-point
+visibility retained, no physical-photo visibility/helicity/N claim. Curated
+hashes, copied parameters, full-image pixel preservation, local links,
+compilation and whitespace checked; images inspected. Kernel tests already
+passed and remain unchanged; no browser/server/launcher tests.
+
+**Stopping point:** requested four-way image delivery. User's spacing review
+and Q177.1 remain pending; no extra question now. **Next bounded task:** take
+maker feedback, then refine a neighboring unfitted colored patch with both
+hypotheses retained. gpt-6.1-sol / High, same session, no/new. Scoped commit/
+push and exact remote/status verification before claiming delivery.
+
+## Prior R175–R178 — Tangent circles; count increased five percent
 
 User requests a diversion from neighbor/triangle refinement: reuse a centerline,
 build Python minor-outward bead points/tangent planes, first model-only, then

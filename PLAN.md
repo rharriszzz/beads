@@ -11,7 +11,22 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R175–R178: forward tangent circles and +5% count overlay
+## Current R179: both helicities at original and +5% counts
+
+User is still reviewing spacing and requests the same images for both
+helicities at both counts. [Four-way review](photo2/HELICITY_COUNT_COMPARISON.md)
+contains full-source overlays, matching raw/local crops, wider spacing
+comparisons and parameter files for +1/−1 ×2698/2833. Each helicity reuses its
+saved original fit to8/11/20; camera/spline/physical dimensions are common,
+phase/origin stay fixed within each count pair. No new fit or inference.
+Earlier −1 overlays are reproduced byte-for-byte; pending Q177.1 unchanged.
+
+**Stopping point:** four matched image sets and independent forward-visibility
+checks. **Next bounded task:** incorporate the maker review, then refine an
+unfitted adjacent colored patch while preserving both hypotheses. No added
+question while the user is working. gpt-6.1-sol / High, same session; no /new.
+
+## Prior R175–R178: forward tangent circles and +5% count overlay
 
 The user diverts from triangle refinement to a planar-spline forward model:
 calculate minor-outward points and tangent planes, show cyan circles only where
