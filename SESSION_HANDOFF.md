@@ -1,6 +1,49 @@
 # Beads session handoff — new branch
 
-## Current R180–R182 — Drift feedback; count slider with zoom/pan
+## Current R183 — Model width guides, adjustable +7% comparison
+
+Maker asks centerline±maximum-radius edges and suspects diameter may be about7%
+larger. [Width experiment / Q183.1](photo2/WIDTH_GUIDES.md),
+[raw versus guides](photo2/review/r183/raw-width-comparison.png),
+[whole overlay](photo2/review/r183/whole-guides.png),
+[provenance](photo2/review/r183/summary.json). Preflight daisy at a0920ef,
+photo-2-reconstruction-v2, clean/no stashes, fetch/upstream0/0, no agents.
+No saved viewer choice existed; no choice invented or annotation altered.
+
+Three approaches presented: smooth image-normal offsets (selected), projected
+3D envelope, traced discrete bead silhouettes. width_guides samples2048 equal
+world-arc intervals; rho=4+R=6.110915749, pixel radius=rho*view.scale.
+Edges=c±radius*n_image with unit normal perpendicular to projected tangent.
+Normal support of a circular section agrees under orthographic projection,
+tested at65/89°. Smooth band omits discrete scallops/axial curvature effects;
+not actual detected edges/verifiedmask or maker-supplied centerline truth.
+
+Viewer white dashed centerline; amber dashed100% edges; green comparison107%
+initially, adjustable80–130%. Model width/+7% presets, visibility checkboxes.
+Width setting changes guides only, not geometry/circles/occlusion. Existing
+count/hand controls retain viewport and still recompute current radius scale.
+At2698 diam94.402→101.010px;2833 diam89.855→96.145px. Thus percentage applies
+to selected count;7% is unconfirmed. PNG export includes chosen guides and
+circle visibility; save/restart retains guide settings. Older choices default
+to107% guides; legacy running server gives a restart message. User Ctrl+C,
+reruns same tangent_viewer.py command and reloads browser. No launch performed.
+
+Seven Python/five JS checks pass, including unchanged four frozen circle
+variants, exact ellipse projection, guide closure/unit normal/projected
+support/count scale, symmetric offsets under zoom/pan and save/backward
+compatibility. Syntax/hash/links/append-only-log/whitespace verified; raw/local
+and full figures inspected. Existing geometry kernel/beads.pov/photo/maker
+labels and old outputs untouched. No browser/server/launcher tests or broad
+POV suite rerun. Curator reproduction: review_width_guides.py.
+
+**Stopping point:** requested smooth edge guides and adjustable width comparison.
+Q183.1 asks whether107% brackets visible bodies better than100%, excluding
+cast shadow/smallscallops; pending, not permission. **Next bounded task:**
+incorporate review/saved settings to resolve width versus centerline bias before
+refining count drift. gpt-6.1-sol / High, same session, no/new. Scoped commit/
+push and exact remote/status verification before claiming delivery.
+
+## Prior R180–R182 — Drift feedback; count slider with zoom/pan
 
 Maker review: minus2698 center→boundary drift over130–156 index steps
 (10–12×13), increased count over65–91 (5–7×13), plus behavior similar to

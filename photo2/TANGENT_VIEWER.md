@@ -1,5 +1,9 @@
 # Interactive count, helicity, zoom and pan — R181–R182
 
+**R183:** [Width guides and +7% comparison](WIDTH_GUIDES.md) add the centerline,
+current maximum-radius edges and an adjustable width reference. Restart a
+running Python server and reload the page to enable the new controls.
+
 Run the Python viewer from the repository:
 
 ```bash
@@ -26,13 +30,17 @@ precedence on restart unless `--count` / `--hand` is supplied.
   the spline, camera and physical dimensions are common. Phase/station stay
   fixed within each helicity while the count changes.
 - Uncheck Show cyan circles for an unobstructed raw-photo comparison.
+- White dashed marks the centerline; amber dashed marks its±maximum-radius
+  model edges. Green is an adjustable comparison starting at107% width.
+  Guide width changes80–130% without moving cyan circles. Edges/Centerline
+  checkboxes toggle these references; Model width/+7% buttons restore presets.
 - Slider range lets you adjust its endpoints. Supported whole counts are
   100–10,000; the initial range spans below, between and above both trial counts.
-- Save choice writes the current count, helicity and view to
+- Save choice writes the current count, helicity, view and width-guide settings to
   `photo2/output/tangent-viewer/choice.json`. Restart restores that choice.
   Each save retains the previous version in `choice.previous.json`.
 - Download full PNG exports the entire source photograph with the current
-  cyan circles, independent of the zoomed viewport. Download parameters exports
+  selected cyan circles and guides, independent of the zoomed viewport. Download parameters exports
   a portable JSON usable with the existing static-overlay program.
 
 For a different initial range or save file:

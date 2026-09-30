@@ -26,7 +26,15 @@
       <button id="save" disabled>Save choice</button><button id="png" disabled>Download full PNG</button>
       <button id="json" disabled>Download parameters</button>
     </div>
-    <p class="help">Wheel to zoom at the pointer · drag to pan · change the count without losing your view. Circles mark exposed outward points in a provisional model.</p>
+    <div class="controls">
+      <label><input id="edges" type="checkbox" checked> Edges</label>
+      <label><input id="centerline" type="checkbox" checked> Centerline</label>
+      <label>Guide width <input id="width" type="number" min="80" max="130" step="0.5" value="107">%</label>
+      <input id="width-slider" type="range" min="80" max="130" step="0.5" value="107" aria-label="Width comparison percentage">
+      <button id="width-original">Model width</button><button id="width-seven">+7%</button>
+      <span class="legend">White: centerline · amber: model edges · green: width guide</span>
+    </div>
+    <p class="help">Wheel to zoom at the pointer · drag to pan · change the count without losing your view. Width guides leave cyan circles fixed; they are smooth model references.</p>
   </header>
   <main id="stage"><canvas id="canvas" aria-label="Bracelet photograph with adjustable cyan circles"></canvas></main>
   <footer><span id="status" role="status">Loading photograph…</span><span id="saved"></span></footer>

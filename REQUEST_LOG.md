@@ -2971,3 +2971,63 @@ adjacent unfitted patch, retaining both hands/unknown closure. No required
 signed-drift answer or new question before viewer use. Recommend gpt-6.1-sol /
 High,same session,no/new. Commit/push scoped implementation/evidence/docs and
 verify exact remote tip plus clean tracked status before delivery.
+
+
+## R183 — Mark centerline±maximum-radius edges and compare possible7% width increase
+
+User: “can you mark the edges (centerline plus or minus the maximum radius),, I think the actual visible diameter in the photo is a little bit largetm from what you are using (maybe 7 percent?).”
+
+Preflight daisy,photo-2-reconstruction-v2 at a0920ef,clean/no stashes,fetch and
+upstream0/0. Read current handoff/plan/log/interactive viewer and prior shape
+model. No agents. No viewer choice existed; preserve that absence, live manual
+annotations and all historical images/outputs.7% is a maker suggestion, not a
+measurement, size correction or permission to claim recovered photo boundaries.
+
+Present three methods: smooth image-normal centerline offsets (selected),
+projected3D envelope, traced discrete bead silhouettes. Python width_guides
+samples2048 equal-world-arc stations and projects centerline/tangent. At each,
+use unit image normal n and radius_pixels=(4+R)*view.scale, R2.110915749,
+maximum minor radius6.110915749. Guides=c±radius_pixels*n. For a circular
+cross-section under orthographic projection, its support perpendicular to the
+projected tangent is this radius, including camera elevation. It is a reference
+band, not a discrete annular-bead silhouette; preserve scallop/axial curvature/
+cast shadow/centerline bias uncertainty. No detected mask, automated edge fit
+or physical-width/camera/count inference.
+
+Add white dashed centerline, amber dashed100% model edges and green107%
+comparison to viewer. Width control80–130%, Model width/+7% presets,
+Edges/Centerline toggles. Both sides scale symmetrically, so107% radius is107%
+full diameter. Width change redraws guides locally without moving cyan circles
+or altering bead placement/exposure. Count changes update baseline radius;
+2698 diameter94.402px→101.010px at107%;2833 89.855px→96.145px. Do not silently
+use the2698 diameter at another count. Same geometric width band for both hands.
+
+Save/restart retains guide percentage/visibility in viewer_choice.guides;
+older choice files default107% without modification until explicit save.
+PNG export includes selected guides/circle visibility; parameter download
+retains guide metadata separately. No existing user save overwritten. Legacy
+running server reports restart requirement; Ctrl+C/rerun tangent_viewer.py and
+reload page. No browser or launcher executed during this work.
+
+Seven Python and five JS tests pass. Existing four frozen hand/count circle
+locations/exposure/parameters remain identical; compact circle projection
+checked. New checks cover closed/unit-normal guides, scale-dependent radius
+with fixed centerline, projected circular-section support at65°/89°, symmetric
+107% offsets and unchanged centerline through zoom/pan, guide save/reload and
+old-choice compatibility. Syntax, source/artifact hashes, local links,
+append-only-log/whitespace checks completed. Geometry kernel unchanged; no
+broad repeat POV or old launcher/socket/browser/server tests.
+
+review_width_guides.py produces full-source2540×3182 overlay with cyan circles
+and a raw/local before-after comparison at2698/−1. Curated PNGs and summary
+track exact parameters, radius/dimensions, code/photo hashes and reproduction
+commands. Visually inspect both views. WIDTH_GUIDES.md explains reference
+limitations and Q183.1: do green107% lines bracket visible bodies better than
+amber100%, ignoring cast shadow/smallscallops? Question pending, not approval.
+Update viewer instructions/method/plan/handoff. Preserve old numerical evidence.
+
+Stopping point: interactive model-edge/centerline guides and adjustable +7%
+comparison. Next bounded task: use maker review/saved guide choice to separate
+width and centerline bias before refining count drift. Recommend gpt-6.1-sol /
+High,same session,no/new. Commit/push scoped implementation/curated evidence/
+docs and verify exact remote tip/clean status before claiming delivery.

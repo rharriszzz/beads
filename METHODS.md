@@ -44,6 +44,13 @@ export the full source image regardless of viewport. Validate against frozen
 forward variants and test zoom/pan/race and save/reload behavior. The maker's
 [unsigned drift review](photo2/drift-review-r180.json) motivates a broad adjustable
 count range, not a recovered N or helicity conclusion.
+R183 adds [centerline ± maximum-radius width references](photo2/WIDTH_GUIDES.md).
+Offset the projected spline along its image unit normal by(4+R)*scale;
+compare an independently adjustable percentage, initially107%, without changing
+bead anchors. Test circular-section normal support, closed curves and symmetric
+scaling; save guide settings separately from geometry. Show raw photo beside
+guides, exclude cast shadow from width judgments and preserve centerline bias
+as a competing explanation. These smooth curves are not detected silhouettes.
 
 Place beads uniformly in world arclength with minor-circle phase and integer-turn
 closure. At the minor-radial outer-wall midpoint P=C+(4+R)u, use plane

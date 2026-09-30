@@ -22,6 +22,40 @@ from label_beads import atomic_json, open_browser
 ASSETS = Path(__file__).with_name('tangent_viewer')
 COUNT_LIMITS = (100, 10000)
 DEFAULT_PORT = 8766
+WIDTH_LIMITS = (80, 130)
+
+
+def validate_guides(value=None):
+    defaults = dict(width_percent=107., show_edges=True, show_centerline=True)
+    if value is None:
+        return defaults
+    if not isinstance(value, dict):
+        raise ValueError('Width-guide settings must be an object.')
+    clean = defaults | value
+    width = clean['width_percent']
+    if isinstance(width, bool) or not isinstance(width, (int, float)) or not np.isfinite(width) or not WIDTH_LIMITS[0] <= width <= WIDTH_LIMITS[1]:
+        raise ValueError('Guide width must be between 80% and 130%.')
+    for key in ['show_edges', 'show_centerline']:
+        if type(clean[key]) is not bool:
+            raise ValueError('Guide visibility must be true or false.')
+    return dict(width_percent=float(width), show_edges=clean['show_edges'], show_centerline=clean['show_centerline'])
+
+
+def width_guides(model, samples=2048):
+    """Smooth image-normal offsets, not a discrete bead silhouette or edge fit.
+
+    A circular section of radius rho has orthographic support rho*scale
+    perpendicular to its projected centerline tangent, including elevation.
+    """
+    g = model.geometry(np.linspace(0, model.source.nbeads, samples+1))
+    centerline = model.view.project(g['line'])
+    right, down, _ = model.view.basis()
+    tangent = np.column_stack((g['tangent'] @ right, g['tangent'] @ down))
+    normal = np.column_stack((-tangent[:, 1], tangent[:, 0]))
+    normal /= np.linalg.norm(normal, axis=1)[:, None]
+    radius = model.source.chain_minor + model.source.bead_radius
+    return dict(centerline=centerline.tolist(), normals=normal.tolist(),
+                radius_pixels=float(radius*model.view.scale), radius_model_units=float(radius))
 
 
 def validate_selection(count, hand):
@@ -71,6 +105,7 @@ class ViewerStore:
         self.minimum = min(min_count, self.initial_count)
         self.maximum = max(max_count, self.initial_count)
         self.initial_view = saved.get('viewer_choice', {}).get('view') if saved else None
+        self.initial_guides = validate_guides(saved.get('viewer_choice', {}).get('guides') if saved else None)
 
     def read_choice(self):
         if not self.path.exists():
@@ -82,6 +117,7 @@ class ViewerStore:
         validate_selection(doc['parameters']['nbeads'], doc['parameters']['hand'])
         if choice.get('view') is not None:
             validate_view(choice['view'])
+        validate_guides(choice.get('guides'))
         return doc
 
     def configuration(self, count, hand):
@@ -113,6 +149,7 @@ class ViewerStore:
                 visible_anchors=int(keep.sum()), excluded_anchors=int((~keep).sum()),
                 unfinished_rays=int(np.sum(visibility['unfinished_pairs_per_ray'] > 0)),
                 parameters=config, nrows=model.source.nrows, scale_pixels_per_unit=model.view.scale,
+                guides=width_guides(model),
                 calculation_ms=round(1000*(time.perf_counter()-started), 1))
             self.cache[key] = result
             while len(self.cache) > 12:
@@ -122,6 +159,7 @@ class ViewerStore:
     def config(self):
         return dict(source=self.source, image_url='/image.png', initial_count=self.initial_count,
             initial_hand=self.initial_hand, initial_view=self.initial_view,
+            initial_guides=self.initial_guides, width_range=WIDTH_LIMITS,
             min_count=self.minimum, max_count=self.maximum, allowed_range=COUNT_LIMITS,
             save_path=str(self.path), starting_patch=[1210, 210, 1450, 365])
 
@@ -130,8 +168,9 @@ class ViewerStore:
             raise ValueError('A choice must include count and helicity.')
         count, hand = validate_selection(payload.get('count'), payload.get('hand'))
         view = validate_view(payload.get('view'))
+        guides = validate_guides(payload.get('guides'))
         doc = self.configuration(count, hand)
-        doc['viewer_choice'] = dict(schema_version=1, source=self.source, view=view,
+        doc['viewer_choice'] = dict(schema_version=1, source=self.source, view=view, guides=guides,
             saved_at=datetime.now(timezone.utc).isoformat(),
             source_sha256={str(p.relative_to(ROOT)): sha(p) for p in [
                 Path(__file__), ROOT/'beads.pov', ROOT/'photo2/tangent_circles.py',

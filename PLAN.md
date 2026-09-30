@@ -11,7 +11,28 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R180–R182: maker drift feedback and interactive count viewer
+## Current R183: centerline ± maximum radius and +7% width guide
+
+User requests marked model edges and suggests photo diameter may be about7%
+larger. [Width review / Q183.1](photo2/WIDTH_GUIDES.md) supplies raw alongside
+white centerline, amber current-width and green107% guides; whole-photo view
+also saved. Viewer adds80–130% guide control, toggles and saved/exported settings.
+Only reference curves change: count, physical beads/circles and exposure remain
+the same. Current guide radius is(4+R)*image scale, perpendicular to projected
+centerline tangent. Smooth references are not detected/verified photo edges.
+
+Seven Python and five viewport tests pass; old circle variants preserved,
+guide closure/support, symmetric width scaling and old save compatibility
+checked. No browser/server/launcher test. User restarts the server and reloads.
+Q183.1 asks which width better brackets bead bodies, excluding cast shadow;
+pending, not an approval gate.7% is a maker proposal, not a measured diameter.
+
+**Stopping point:** interactive width guides and curated raw comparison.
+**Next bounded task:** use width review/saved settings to separate width versus
+centerline bias before count-drift refinement. gpt-6.1-sol / High, same session,
+no /new needed; retain both helicities and unverified count/closure.
+
+## Prior R180–R182: maker drift feedback and interactive count viewer
 
 Maker reports center-to-boundary drift after130–156 bead steps at2698 and
 65–91 at the increased count, similarly for both hands. “Minus3833” is

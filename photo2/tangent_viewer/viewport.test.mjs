@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {toSource, toScreen, zoomAt, resizeView, fitView, RequestGate} from './viewport.mjs';
+import {toSource, toScreen, zoomAt, resizeView, fitView, guideEdges, RequestGate} from './viewport.mjs';
 const close = (a,b) => assert.ok(Math.abs(a-b)<1e-9, `${a} != ${b}`);
 
 test('zoom keeps the source bead beneath the pointer, even at zoom limits',()=>{
@@ -39,4 +39,18 @@ test('a delayed earlier count reply cannot overwrite a newer slider choice',asyn
   const newer=gate.invalidate();
   assert.ok(gate.accepts(newer));release();
   assert.equal(await oldReply,false);
+});
+test('width comparison offsets both edges symmetrically and keeps centerline fixed through zoom/pan',()=>{
+  const guides={centerline:[[20,40],[30,40],[20,40]],normals:[[0,1],[0,1],[0,1]],radius_pixels:10};
+  const saved=JSON.stringify(guides), original=guideEdges(guides), expanded=guideEdges(guides,107);
+  const view={x:-22,y:48,scale:3.2};
+  for(let i=0;i<guides.centerline.length;i++) {
+    close((expanded[0][i][1]+expanded[1][i][1])/2,guides.centerline[i][1]);
+    close((expanded[0][i][1]-expanded[1][i][1])/(original[0][i][1]-original[1][i][1]),1.07);
+    const a=toScreen({x:expanded[0][i][0],y:expanded[0][i][1]},view);
+    const b=toScreen({x:expanded[1][i][0],y:expanded[1][i][1]},view);
+    const c=toScreen({x:guides.centerline[i][0],y:guides.centerline[i][1]},view);
+    close((a.y+b.y)/2,c.y);close(a.y-b.y,2*10*1.07*view.scale);
+  }
+  assert.equal(JSON.stringify(guides),saved);
 });

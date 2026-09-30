@@ -1,0 +1,80 @@
+{
+  "request": "R183",
+  "proposal": "Maker estimates actual visible diameter may be about7% larger; not verified.",
+  "demonstration_parameters": {
+    "spline": "photo2/spline-seed-r175.json",
+    "cores": "photo2/review/r157/report.json",
+    "circle_radius": 0.37996483480584586,
+    "parameters": {
+      "nbeads": 2698,
+      "hand": -1,
+      "elevation": 89.0,
+      "roll": 0.0,
+      "phase": -21.979857484559343,
+      "origin_fraction": 0.8016461717772337
+    },
+    "family": "B"
+  },
+  "crop": [
+    1180,
+    130,
+    1540,
+    520
+  ],
+  "definition": "Image-normal offset of projected centerline by plus/minus (chain_minor+bead_radius)*orthographic_scale; reference band, not detected silhouette.",
+  "orthographic_support": "A circular cross-section has this normal support radius at any camera elevation; guides omit discrete scallops and axial curvature effects.",
+  "samples": 2048,
+  "baseline_radius_model_units": 6.110915748921366,
+  "diameter_pixels": {
+    "2698": {
+      "model": 94.40212462509898,
+      "comparison_107_percent": 101.01027334885592
+    },
+    "2833": {
+      "model": 89.855233301413,
+      "comparison_107_percent": 96.14509963251191
+    }
+  },
+  "circles_unchanged": true,
+  "geometry_scale_unchanged": true,
+  "saves_compatible_with_prior_choice_format": true,
+  "validation": {
+    "python_checks": 7,
+    "viewport_checks": 5,
+    "status": "passed",
+    "not_run": [
+      "Browser/UI/server interaction",
+      "Launcher"
+    ]
+  },
+  "question": {
+    "id": "Q183.1",
+    "status": "pending",
+    "text": "In the raw/guide comparison, do green107% lines bracket the visible bead bodies better than amber100% lines, ignoring cast shadow and small scallops?",
+    "file": "photo2/WIDTH_GUIDES.md"
+  },
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/tangent_viewer.py": "e110a04270386cc4572c9758f0a28f8a03a110c6cc9aae73d50723ab61d03a32",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/review_width_guides.py": "0b2e6c8ffb3414b6a09089df7e0ca03e9cbfea5a983738af080edcc7aa45e4cc",
+    "photo2/test_tangent_viewer.py": "9510817d06d3cd58b725718484c7cb80ae7c2ded93698ed3c9ef775109c8be24",
+    "photo2/tangent_viewer/app.mjs": "124a7f346a9431ddf12e626f53abbe7c215f8debac50c76b2c8eb6a19e67db4d",
+    "photo2/tangent_viewer/viewport.mjs": "da006ef14a2192606e758c7df835a7a6a5004b453839e961ab340d61df67feff",
+    "photo2/tangent_viewer/viewport.test.mjs": "971e1103bb2d5e4b6ddcce36a651f1c338dbf957081a71343be518f941fe618e",
+    "photo2/tangent_viewer/index.html": "9f4c4ccad68802a7105aa39c51af51dbb551de207c2a00567afc3e9d834ab9b5",
+    "photo2/tangent_viewer/style.css": "7e70c2efdc5a67e516c71deb5e1b358a0e0603abab197a4aaf72f27c175669a7"
+  },
+  "artifact_sha256": {
+    "photo2/review/r183/whole-guides.png": "e0cf1d9aa931986223cf37833514c5c6bec02ef362f74b1c22bdbaa2923a93aa",
+    "photo2/review/r183/raw-width-comparison.png": "dc906e2c5f6c4dd60a192cacfac991bbda8f6982afb9ebc4c23aebf6dfd32c06"
+  },
+  "reproduction_commands": [
+    ".venv/bin/python photo2/review_width_guides.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_tangent_viewer.py",
+    "node photo2/tangent_viewer/viewport.test.mjs"
+  ],
+  "limits": "Approximate historical spline and camera/count hypotheses; no edge detection, width measurement, helicity or count recovery."
+}

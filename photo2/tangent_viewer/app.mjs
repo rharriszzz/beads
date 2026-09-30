@@ -1,4 +1,4 @@
-import {toSource, zoomAt, fitView, resizeView, RequestGate} from './viewport.mjs';
+import {zoomAt, fitView, resizeView, guideEdges, RequestGate} from './viewport.mjs';
 
 const $ = id => document.getElementById(id);
 const canvas = $('canvas'), ctx = canvas.getContext('2d');
@@ -6,6 +6,7 @@ for (const element of document.querySelectorAll('button,input,select')) element.
 const gate = new RequestGate();
 let config, image, frame, view, width = 0, height = 0, drag = null, timer, controller;
 let requestedCount, requestedHand, saving = false;
+let widthPercent=107;
 const angles = Array.from({length: 49}, (_, i) => [Math.cos(i*Math.PI/24), Math.sin(i*Math.PI/24)]);
 function status(message, error=false) {
   $('status').textContent = message; $('status').classList.toggle('error', error);
@@ -28,12 +29,33 @@ function drawCircles(context, circles, transform, alpha=1) {
   }
   context.stroke(); context.restore();
 }
+function guideSettings() {
+  return {width_percent:widthPercent,show_edges:$('edges').checked,show_centerline:$('centerline').checked};
+}
+function drawGuides(context, guides, transform, settings, alpha=1) {
+  context.save();context.globalAlpha=alpha;context.lineWidth=1;
+  function lines(paths,color,dashes=[]) {
+    context.strokeStyle=color;context.setLineDash(dashes);context.beginPath();
+    for(const path of paths) for(let i=0;i<path.length;i++) {
+      const [x,y]=path[i],sx=x*transform.scale+transform.x,sy=y*transform.scale+transform.y;
+      if(i===0)context.moveTo(sx,sy);else context.lineTo(sx,sy);
+    }
+    context.stroke();
+  }
+  if(settings.show_centerline)lines([guides.centerline],'#ffffff',[5,5]);
+  if(settings.show_edges) {
+    lines(guideEdges(guides,100),'#ffb347',[7,3]);
+    if(settings.width_percent!==100)lines(guideEdges(guides,settings.width_percent),'#80ff80');
+  }
+  context.restore();
+}
 function render() {
   if (!image || !view) return;
   const dpr = window.devicePixelRatio || 1;
   ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,width,height);
   ctx.imageSmoothingEnabled = true;
   ctx.drawImage(image,view.x,view.y,image.naturalWidth*view.scale,image.naturalHeight*view.scale);
+  if(frame)drawGuides(ctx,frame.guides,view,guideSettings(),current()?1:.3);
   if (frame && $('show').checked) drawCircles(ctx,frame.circles,view,current()?1:.3);
   $('zoom').textContent = `${Math.round(view.scale*100)}%`;
 }
@@ -69,6 +91,7 @@ async function loadFrame(generation,count,hand) {
   try {
     const response=await fetch(`/api/frame?count=${count}&hand=${hand}`,{signal:activeController.signal});
     const result=await response.json(); if (!response.ok) throw new Error(result.error || 'Could not calculate circles.');
+    if(!result.guides)throw new Error('Restart the Python viewer to enable width guides, then reload this page.');
     if (!gate.accepts(generation)) return;
     frame=result; buttons(); render();
     status(`Showing ${count.toLocaleString()} beads · helicity ${hand>0?'+1':'−1'} · ${result.visible_anchors.toLocaleString()} cyan circles`);
@@ -97,6 +120,17 @@ $('fit').onclick=()=>{view=fitView(width,height,[0,0,...config.source.oriented_s
 $('patch').onclick=()=>{view=fitView(width,height,config.starting_patch);render();};
 $('one').onclick=()=>zoom(1/view.scale); $('in').onclick=()=>zoom(1.25); $('out').onclick=()=>zoom(.8);
 $('show').onchange=render;
+$('edges').onchange=$('centerline').onchange=render;
+function changeWidth(value) {
+  if(!Number.isFinite(value) || value<config.width_range[0] || value>config.width_range[1]) {
+    status('Choose a guide width between 80% and 130%.',true);return;
+  }
+  widthPercent=value;$('width').value=$('width-slider').value=value;render();
+}
+$('width-slider').oninput=()=>changeWidth(+$('width-slider').value);
+$('width').onchange=()=>changeWidth(+$('width').value);
+$('width').onkeydown=event=>{if(event.key==='Enter'){event.preventDefault();changeWidth(+$('width').value);}};
+$('width-original').onclick=()=>changeWidth(100);$('width-seven').onclick=()=>changeWidth(107);
 canvas.addEventListener('wheel',event=>{
   event.preventDefault();
   const delta=event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?height:1);
@@ -117,24 +151,25 @@ canvas.addEventListener('lostpointercapture',stopDrag);
 $('save').onclick=async()=>{
   if(!current() || saving) return;
   saving=true;buttons();
-  const choice={count:frame.count,hand:frame.hand,view:{...view}};
+  const choice={count:frame.count,hand:frame.hand,view:{...view},guides:guideSettings()};
   try {
     const response=await fetch('/api/choice',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(choice)});
     const result=await response.json();if(!response.ok)throw new Error(result.error || 'Could not save choice.');
-    $('saved').textContent=`Saved ${choice.count.toLocaleString()}, helicity ${choice.hand>0?'+1':'−1'} → ${result.path}`;
+    $('saved').textContent=`Saved ${choice.count.toLocaleString()}, helicity ${choice.hand>0?'+1':'−1'}, width guide ${choice.guides.width_percent}% → ${result.path}`;
   } catch(error) { $('saved').textContent=`Save failed: ${error.message}`; }
   finally {saving=false;buttons();}
 };
 $('json').onclick=()=>{
   if(!current())return;
-  download(new Blob([JSON.stringify(frame.parameters,null,2)+'\n'],{type:'application/json'}),`beads-${frame.hand>0?'plus':'minus'}-${frame.count}.json`);
+  download(new Blob([JSON.stringify({...frame.parameters,viewer_guides:guideSettings()},null,2)+'\n'],{type:'application/json'}),`beads-${frame.hand>0?'plus':'minus'}-${frame.count}.json`);
 };
 $('png').onclick=()=>{
   if(!current())return;
   const selected=frame, output=document.createElement('canvas');
   [output.width,output.height]=config.source.oriented_size;
   const context=output.getContext('2d');context.drawImage(image,0,0);
-  drawCircles(context,selected.circles,{x:0,y:0,scale:1});
+  drawGuides(context,selected.guides,{x:0,y:0,scale:1},guideSettings());
+  if($('show').checked)drawCircles(context,selected.circles,{x:0,y:0,scale:1});
   output.toBlob(blob=>{if(blob)download(blob,`beads-${selected.hand>0?'plus':'minus'}-${selected.count}.png`);},'image/png');
 };
 new ResizeObserver(resize).observe($('stage'));
@@ -142,8 +177,12 @@ async function start() {
   try {
     const response=await fetch('/api/config');config=await response.json();
     if(!response.ok)throw new Error(config.error || 'Could not load viewer.');
+    config.width_range ||= [80,130];
     for(const id of ['count','minimum','maximum']) {$(id).min=config.allowed_range[0];$(id).max=config.allowed_range[1];}
     $('minimum').value=$('slider').min=config.min_count;$('maximum').value=$('slider').max=config.max_count;
+    const initial=config.initial_guides || {width_percent:107,show_edges:true,show_centerline:true};
+    widthPercent=initial.width_percent;$('width').value=$('width-slider').value=widthPercent;
+    $('edges').checked=initial.show_edges;$('centerline').checked=initial.show_centerline;
     const loaded=new Image();loaded.src=config.image_url;await loaded.decode();image=loaded;
     for (const element of document.querySelectorAll('button,input,select')) element.disabled=false;
     resize();schedule(config.initial_count,config.initial_hand);

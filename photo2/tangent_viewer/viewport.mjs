@@ -18,6 +18,11 @@ export function resizeView(view, oldSize, newSize) {
   return {...view, x: view.x + (newSize.width-oldSize.width)/2,
                    y: view.y + (newSize.height-oldSize.height)/2};
 }
+export function guideEdges(guides, percent=100) {
+  const radius=guides.radius_pixels*percent/100;
+  return [1,-1].map(sign=>guides.centerline.map(([x,y],i)=>
+    [x+sign*radius*guides.normals[i][0], y+sign*radius*guides.normals[i][1]]));
+}
 // Changing the model invalidates outstanding replies without moving the view.
 export class RequestGate {
   constructor() { this.generation = 0; }

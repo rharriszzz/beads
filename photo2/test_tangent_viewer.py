@@ -5,7 +5,7 @@ import tempfile
 import unittest
 
 import numpy as np
-from tangent_viewer import ViewerStore, validate_selection, ROOT
+from tangent_viewer import ViewerStore, validate_selection, validate_guides, width_guides, ROOT
 from tangent_circles import load_model, tangent_circles
 
 
@@ -53,10 +53,12 @@ class ViewerTests(unittest.TestCase):
             path = Path(folder) / 'saved.json'
             store = ViewerStore(path)
             view = dict(x=-315., y=88., scale=3.5)
-            first = store.save(dict(count=2742, hand=1, view=view))['document']
+            guides = dict(width_percent=107.5, show_edges=True, show_centerline=False)
+            first = store.save(dict(count=2742, hand=1, view=view, guides=guides))['document']
             resumed = ViewerStore(path)
             self.assertEqual((resumed.initial_count, resumed.initial_hand), (2742, 1))
             self.assertEqual(resumed.initial_view, view)
+            self.assertEqual(resumed.initial_guides, guides)
             self.assertEqual(first['parameters'], store.configuration(2742, 1)['parameters'])
             store.save(dict(count=2600, hand=-1, view=view))
             self.assertEqual(json.loads(path.with_name('saved.previous.json').read_text()), first)
@@ -66,6 +68,46 @@ class ViewerTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 ViewerStore(unrelated)
             self.assertEqual(unrelated.read_bytes(), before)
+
+    def test_guides_are_closed_and_follow_count_scale_without_moving_centerline(self):
+        reference = None
+        for count in [2698, 2833]:
+            frame = self.store.frame(count, -1)
+            guide = frame['guides']
+            centers = np.array(guide['centerline']); normals = np.array(guide['normals'])
+            np.testing.assert_allclose(centers[0], centers[-1], atol=1e-10)
+            np.testing.assert_allclose(normals[0], normals[-1], atol=1e-10)
+            np.testing.assert_allclose(np.linalg.norm(normals, axis=1), 1, atol=1e-12)
+            if reference is not None:
+                np.testing.assert_allclose(centers, reference, atol=1e-10)
+            reference = centers
+            self.assertAlmostEqual(guide['radius_pixels'], guide['radius_model_units']*frame['scale_pixels_per_unit'])
+
+    def test_image_normal_radius_is_the_projected_cross_section_support(self):
+        for elevation in [65., 89.]:
+            config = self.store.configuration(2698, 1)
+            config['parameters']['elevation'] = elevation
+            model = load_model(config, config['parameters'])
+            guide = width_guides(model)
+            g = model.geometry([0]); center = np.array(guide['centerline'][0])
+            screen_normal = np.array(guide['normals'][0])
+            phi = np.linspace(0, 2*np.pi, 4097)
+            radial = np.sin(phi)[:, None]*g['normal'][0] + np.cos(phi)[:, None]*[0,0,1]
+            surface = g['line'][0]+guide['radius_model_units']*radial
+            support = (model.view.project(surface)-center)@screen_normal
+            self.assertAlmostEqual(float(support.max()), guide['radius_pixels'], delta=1e-4)
+            self.assertAlmostEqual(float(support.min()), -guide['radius_pixels'], delta=1e-4)
+
+    def test_older_choices_restore_default_guides_and_invalid_width_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'choice.json'; store = ViewerStore(path)
+            old = store.save(dict(count=2698, hand=-1, view=dict(x=0, y=0, scale=1)))['document']
+            del old['viewer_choice']['guides']; path.write_text(json.dumps(old))
+            resumed = ViewerStore(path)
+            self.assertEqual(resumed.initial_guides, dict(width_percent=107., show_edges=True, show_centerline=True))
+        for value in [dict(width_percent=float('nan')), dict(width_percent=200), dict(show_edges=1)]:
+            with self.assertRaises(ValueError):
+                validate_guides(value)
 
     def test_invalid_inputs_cannot_choose_a_different_model_or_write_a_choice(self):
         for count, hand in [(True,1), (2698.5,1), (0,1), (10001,1), (2698,0), (2698,True)]:
