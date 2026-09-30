@@ -11,7 +11,29 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R159: frozen poses scored on provisional interiors
+## Current task — R160: confirmed-interior refit
+
+The maker confirms all five green loops are inside their red/yellow/black beads;
+Q157.1 and Q159.1 are answered. Black color is clear despite uncertain full-body
+position/extent/boundaries. Orange dots were positive interior samples misowned
+by a saved model, not boundary locations.
+
+[Refit both families](photo2/INTERIOR_REFIT.md) using the unchanged loops plus
+23 maker training marks; withhold 22/23/24/25 from bounds, objective and ranking.
+Both A and B now have orthographic poses covering all 660 core pixels, 454 route
+samples and all 27 marks, including fixed q=6.5. Keep A1's old withheld failure
+and the refitted nominal-perspective B failures explicit. Known synthetic wrong
+B also passes all positive evidence after fitting. No helicity accepted.
+
+**Stopping point:** bounded refit plus independent POV and held-out isolation
+checks. **Next task:** find an additional clear training body within the current
+27-bead patch where the competing poses differ; show raw context and conservative
+interior evidence before using a new loop. Retain H/S/V and reflection/dark-context
+methods; no complete boundary or larger patch required yet. Do not start the
+whole-necklace walk or infer full indices/N/closure/repeat. Recommend
+gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior task — R159: frozen poses scored on provisional interiors
 
 [Interior comparison and Q159.1](photo2/INTERIOR_POSE_COMPARISON.md) evaluates
 all saved R156 poses on five unchanged R157 loops: 454 fractional line samples

@@ -1,6 +1,47 @@
 # Beads session handoff — new branch
 
-## Current R159 — Frozen-pose comparison on provisional interiors complete
+## Current R160 — Maker-confirmed interiors refitted
+
+Maker confirms all green loops on 8/11/14/17/20 are inside their red/yellow/black
+beads. Close Q157.1 and Q159.1 with the [confirmation](photo2/interior-confirmed-r160.json).
+Black color is clear; full positions/extents/invisible boundaries remain unknown.
+Orange dots were model-misowned positive core pixels, naturally inside loops.
+Preflight daisy/WSL2, photo-2-reconstruction-v2 at 44fa1de, clean, 0/0, no stashes.
+Read [refit](photo2/INTERIOR_REFIT.md), plan and latest request record.
+
+Consider direct ownership, rendered-region distances, or unknown-surface-position
+fitting; choose direct ownership. Fit all 26 old retained starts with unchanged
+source geometry/loops, training23 and five interiors (660 core/454 route samples).
+Half mark/half interior objective, equal per body and core/route; outside unknown.
+Black inside ownership is as strong as colored; its smaller area constrains less
+extent. Whole held group 22/23/24/25 stays out of bounds/objective/ranking. Use
+sparse least squares max_nfev90 then full Powell maxfev700. A has more retained
+starts; equal caps per start, not equal total compute. Four search caps explicit.
+
+Baseline A1/A2/A3 now cover every core/route; A1 still misses withheld25, A2/A3
+pass all27. B1 already passes everything. Fixed q6.5 A1/A2/A3 and B1 pass all27
+and all interiors. Nominal phone perspective A alternatives pass all27, B
+alternatives fit all interiors but miss withheld25. Keep conditions separate;
+phone intrinsics/elevation unknown, no family acceptance. Known synthetic true
+A and wrong B both fit every positive sample and all27; free q in that check.
+
+Independent POV source-macro/trig checks verify fitted ownership and exact
+fractional marks/routes. Whole-held-group displacement leaves training/bounds/
+loss identical in both families, sparse/full. Ray caps remain explicit. Reproduce
+refit_interior_poses.py, summarize_interior_refit.py, check_interior_refit.py.
+Routine exhaustive report/scenes ignored; curated report and raw/interior figure
+tracked. Original image/source/live annotations/prior numeric evidence unchanged.
+Ten POV comparisons agree on 9,480 core locations, 50 exact fractional route
+locations and 270 maker marks; four held-out isolation conditions pass.
+No complete boundary, minor-outward anchor, camera, full index/N/repeat inferred.
+
+**Stopping point:** confirmed-interior refit/verification complete. **Next task:**
+within existing 27-body patch select a clear training bead where A/B ownership
+differs, show raw context and conservative interior support; test new evidence.
+No full outline, larger patch or whole-ring walk yet. Recommend gpt-6.1-sol / High;
+same session, no /new needed.
+
+## Prior R159 — Frozen-pose comparison on provisional interiors complete
 
 User “continue” resumes the interior constraint step. Preflight daisy/WSL2,
 photo-2-reconstruction-v2 at 3f99a41, upstream 0/0, clean tree, no stashes.

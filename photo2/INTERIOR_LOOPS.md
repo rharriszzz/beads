@@ -11,7 +11,10 @@ estimate the bead silhouette or the minor-outward point.
 
 **Q157.1:** Do all five green loops stay comfortably inside their intended beads?
 If one does not, name the bead number and the offending side. “Unclear” is valid.
-This question is pending; no maker acceptance is assumed. White + marks the old
+**Answered in R160:** the maker confirms all five loops are inside their intended
+red, yellow and black beads. Black color is clear even though its boundaries
+remain invisible; the loops do not locate full-body centers or extents. See the
+[saved confirmation](interior-confirmed-r160.json). White + marks the old
 maker click, which need not be enclosed by the new conservative loop.
 
 ![Wider raw context and the five loops](review/r157/wider-interiors.png)
@@ -76,7 +79,8 @@ core and fragmented reflection regions; it was discarded before publication.
 ## Outcome and reproduction
 
 The five loops have been inspected against the unchanged raw crops and kept well
-within the visible central bodies. They remain proposals pending maker review.
+within the visible central bodies. Initially proposals, all five are now
+maker-confirmed interior routes in R160; the original numeric report is preserved.
 Their cores contain 116/193/58/99/194 pixels for beads 8/11/14/17/20; each closed
 route is 3.5 pixels from the nearest rejected support pixel. Independent Python
 colorsys conversion agrees with matplotlib HSV on all 232 sampled route pixels

@@ -3,17 +3,22 @@
 The saved baseline B1 pose covers all five provisional interior loops and all
 660 enclosed pixels. Every saved A pose misses some of that interior evidence.
 **B is the stronger candidate among the saved poses; helicity is not established.**
-The loops have not yet received maker acceptance, and the competing A poses
-have not been refitted to the new constraints. No full bead outline is used.
+At publication the loops were provisional and A had not been refitted. R160 now
+confirms all five loops and [refits both families](INTERIOR_REFIT.md); use that
+later result for the current conclusion. This frozen comparison is preserved.
+No full bead outline is used.
 
 ![Raw bead 8 and interior ownership under the competing poses](review/r159/question.png)
 
 **Q159.1:** Are the green loop and orange locations comfortably inside yellow
-bead 8? If any are outside, identify the side. “Unclear” is valid. This is pending;
-no acceptance is assumed. Orange/red indicate that the model assigns another
+bead 8? If any are outside, identify the side. “Unclear” is valid.
+**Answered in R160:** all five green loops are inside their intended beads.
+Orange dots are the tested enclosed interior pixels that a saved pose assigns
+to another bead; they are naturally inside the green loop. Orange/red indicate
+that the model assigns another
 surface owner at that photo location; they do not label the photo location as
 wrong. All panels use the same unmodified raw pixels and unchanged interior loop.
-The older broad [Q157.1](INTERIOR_LOOPS.md) remains pending independently.
+The older broad [Q157.1](INTERIOR_LOOPS.md) is also answered by R160.
 
 ## Evidence and method
 

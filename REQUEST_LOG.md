@@ -2207,3 +2207,87 @@ scores, complete miss coordinates for the raw A1/A2/A3/B1 review, and the full
 record's hash/reproduction path. Aggregate scores and independent witnesses
 verified unchanged after this output separation. Source/loop/pose inputs remain
 unchanged; no additional fitting or acceptance occurred.
+
+## R160 — Maker confirms interiors; refit both families
+
+Request, verbatim: “The green loops are inside all the beads, both the red and
+yellows, and the blacks.  I don't understand the orange dots, but it seems to me
+that they are never outside the green loops.  So there is less support for the
+position of the black beads, but it is clear that the bead is black, even though
+its boundaries are not visible.  please continue”
+
+Answer Q157.1 and Q159.1: all five loops on 8/11/14/17/20 are inside their
+intended beads. Black color is clear; full positions/extents/boundaries are not.
+Preserve maker facts in photo2/interior-confirmed-r160.json. Explain orange dots:
+positive enclosed samples assigned the wrong model owner by a saved pose, not
+attempted bead edges. No accepted camera, center, outward anchor or helicity.
+
+Preflight daisy/WSL2, photo-2-reconstruction-v2 at 44fa1de, clean upstream 0/0,
+no stashes. Read handoff/latest log/plan/quick model and relevant interior/curved
+experiments. Consider direct first-hit ownership fitting, rendered visible-region
+distance fitting, or unknown surface-point fitting; select first-hit ownership.
+Resume this bounded step only, no whole-necklace walk. No agent delegation,
+new dependency, launcher test, GUI, source or live-annotation change.
+
+Refit every old retained pose: 26 starts over synthetic/photo, both families,
+both source windings, orthographic/nominal phone perspective, free q6.45–6.55
+and fixed q6.5 photo sensitivity. Objective: half training 23 mark loss, half
+equal-body interior loss; core/route equal within each of five bodies. Keep
+all 660 enclosed pixel centers and 454 fractional 0.5-pixel line samples fixed.
+Only positive interiors, all outside pixels unknown. Black ownership is equally
+required; smaller confirmed spatial support does not establish full extent.
+Manual marks and HSV loops are diagnostic assistance, not automatic runtime priors.
+Withhold all 22/23/24/25 coordinates from training/bounds/selection; report them
+afterward without ranking on their outcomes. Stable UUIDs, maker numbers and
+conditional relative indices remain separate from unresolved full-string indices.
+
+Sparse least-squares max_nfev90 (additional numerical Jacobian evaluations), then
+full Powell maxfev700/maxiter50 with local widths [25,25,3,30,35,45,50,.025,.05].
+Retain the best full-training objective, including the original start; zero full
+loss needs no refinement. Equal cap per saved start, not equal total compute:
+orthographic A has three previously retained starts, B one. Four opposite-winding
+searches reach evaluation caps; no global family exclusion inferred.
+
+Outcome: A1/A2/A3 now cover all photo core/route samples; A1 still misses
+withheld 25, A2/A3 pass all 27. Existing B1 already passes all 27 and all interiors.
+Fixed q6.5 A1/A2/A3 and B1 likewise pass all 27 plus all interiors. Nominal phone
+perspective A starts pass all 27 and all interiors; B starts fit all interiors but
+miss withheld 25. Keep those failures; phone intrinsics/crop/distance are unknown.
+Known-synthetic true A and wrong B both fit every interior sample and all 27 after
+refitting, with q free. This witnesses ambiguity of these constraints, not all
+photos or fixed-q synthetic fits. No accepted helicity or measured outward anchor.
+
+Independent original-source-macro/separate-trigonometry POV checks agree with
+Python at 9,480 core locations across ten fitted poses, 50 exact fractional route
+locations and all 270 ordinary maker marks. Four whole-group isolation conditions
+move held-out 22/23/24/25 by [98765,-65432] and preserve fitting samples, bounds and
+loss exactly for both families, sparse/full. Ray/body iteration caps stay explicit.
+Curated report/figure and independent-check provenance under photo2/review/r160;
+exhaustive routine samples/scenes ignored under photo2/output/r160. The curated
+report preserves the exhaustive record hash and original parameters/ranks/scores.
+
+Source hashes: beads.pov
+b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0;
+beads-photo-2.jpg
+eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb;
+maker rev162
+94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de.
+All loop/old-fit/kernel/code/confirmation hashes and exact POV commands retained.
+Reproduce: .venv/bin/python photo2/refit_interior_poses.py, then
+.venv/bin/python photo2/summarize_interior_refit.py, then
+.venv/bin/python photo2/check_interior_refit.py.
+
+Update plan/methods/handoff and question statuses; preserve old numeric evidence.
+Stopping point: maker-confirmed interior refit independently checked. Next bounded
+task: within the existing 27 patch select a clear training body where A/B predicted
+ownership differs, show raw context and conservative interior evidence, and test
+its discriminating value. No full boundary, larger patch, whole-ring walk,
+N/closure/repeat or resolved full-string colors yet. Recommend gpt-6.1-sol / High;
+same session, no /new needed.
+
+R160 integrity outcome: all recorded input/code hashes, exhaustive-record hash,
+independent ownership/held-out counts and accepted-loop provenance agree. Source,
+live save and prior numeric evidence unchanged; request history keeps its full
+previous prefix. Three scripts parse; 159 local documentation links and whitespace
+checks pass. Final artifact hashes in review/r160/integrity.json. Remote refreshed
+and remains 0/0 before scoped publication. No additional phase advanced.

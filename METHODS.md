@@ -644,6 +644,16 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R160 confirmed-interior refit:** [bounded comparison](photo2/INTERIOR_REFIT.md)
+refits both families from retained poses using 23 training marks and five
+maker-confirmed positive cores/routes. Equal per-body loss, all outside pixels
+unknown, whole 22/23/24/25 group evaluator-only. Both families cover all interiors
+and all 27 marks under orthographic projection, including fixed q. A known
+synthetic wrong family also passes after refitting. Validate first-hit ownership
+with independent source-macro POV renders and whole-held-group isolation; do not
+infer uniqueness, centers, complete extents or minor-outward anchors from positive
+interiors alone. Black color is clear despite uncertain full-body extent.
+
 **R159 positive-interior pose scoring:** [frozen comparison](photo2/INTERIOR_POSE_COMPARISON.md)
 uses equal-arc fractional samples on conservative closed loops and every enclosed
 integer pixel. Score first-hit expected-owner coverage with equal weight per body;

@@ -1,0 +1,52 @@
+{
+  "protected_inputs": {
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/manual-labels-r146.json": "94470dc222324dd6d2081cd43f94f187c01f18c13958761392af14ddd8bdf7de",
+    "photo2/curved_surface_fit.py": "9f881dde6ab6652367c89ff8568c221806f551a3eefcbdcb6359914d194b0915",
+    "photo2/fit_curved_patch.py": "5bc4c8b52a0b90cc94503c2fdad11577335a889633cd6c4a28b8ae3bfaf4d1e9",
+    "photo2/review/r144/corrected-report.json": "5705860d5010d36ec28ed2a87f24eb3578ea756579818050983751bf8f74d999",
+    "photo2/review/r156/report.json": "c19d98721f3d511da41ea124e56cea4f5ece1b43597a6e9c6030a24206cf31c3",
+    "photo2/review/r157/report.json": "09f11f82081155431875b9d52dbe5ac408f1ea1bdbde717b9ea52418e3191308",
+    "photo2/review/r159/report.json": "1f95707c8148d62fcf47a33a7ff46d3a28071e4766d660d2c4fdec619ef9d801",
+    "photo2/review/r159/independent-checks.json": "efa6353a6b3f45f76a10689cf354c334bcd194619e0790f49158f80cf545571d"
+  },
+  "live_annotations_unchanged": true,
+  "request_log_prior_prefix_sha256": "eceae5520dfca461b823c01fd14eceeb15c11710fa52d1fa5be03d7e0017b7e4",
+  "request_log_append_only": true,
+  "report_hashes_and_independent_counts_agree": true,
+  "syntax_scripts": [
+    "photo2/refit_interior_poses.py",
+    "photo2/summarize_interior_refit.py",
+    "photo2/check_interior_refit.py"
+  ],
+  "local_documentation_links": 159,
+  "core_locations": 9480,
+  "exact_route_locations": 50,
+  "exact_maker_marks": 270,
+  "heldout_isolation_conditions": 4,
+  "artifacts": {
+    "METHODS.md": "54e0d9c725e3795dcaf2b8a413636449b27cd97ed6cb2f4c14a176cbb5d36f71",
+    "PLAN.md": "2524db11428941c72ebcdbed6838550a95b6fd0106df7ea875e6cd6d67d368f0",
+    "REQUEST_LOG.md": "8ed57c7cee26b3524dc3697d1b4e300be82f89ab2080d77b24c526688221038a",
+    "SESSION_HANDOFF.md": "9ac6a1a59901bb79f657ed3f0ad528212c6e74557d5ed81213bc18bc5c5d561c",
+    "photo2/INTERIOR_LOOPS.md": "2b52e124111d651c4faf775699390f66f68cb17627acfe5f27e027a77b5f3d7d",
+    "photo2/INTERIOR_POSE_COMPARISON.md": "369120b8f27f798d23f0b0c67f341e951da7a804fe4281abaadb77b68ea46c47",
+    "photo2/INTERIOR_REFIT.md": "ebdfa19ebbaa9c1b33b10d02ecb6ac9e87ab921cc90ee972e1ebf7e00c4af908",
+    "photo2/interior-confirmed-r160.json": "553c44488eb396646980af3ea35ca3c81e072977a9ae22a37b5ad723c2e068b9",
+    "photo2/refit_interior_poses.py": "514b44003f212b219a4c898d34a2c07d820f9c296588d7977b28e8009bc102d7",
+    "photo2/summarize_interior_refit.py": "8313faa563c035f0a50bc57283b08d3b755253497c3e23ee5ff4ceb9bade3191",
+    "photo2/check_interior_refit.py": "21847b93848d1815d39947c8cc3863f5cbb9ecab779a0de7612a433a777c5db1",
+    "photo2/review/r160/report.json": "4a657a80ce92dfcffb9871d52b0e941ef0199c8801fdc6e2dcd063f350a53ecb",
+    "photo2/review/r160/independent-checks.json": "7a52d3612294cd6e17bd684e0361ebecfe81dffecfef65c83167a9f532d34ee5",
+    "photo2/review/r160/interior-refit.png": "52b4cca3624ecce95b6d320eb27ebe14e992ee772295f3bc7857c49b2a3dd77f"
+  },
+  "additional_dependencies": {
+    "photo2/score_interior_poses.py": "5827d1b0ea1e4daff49021c6a13347df16aba04b58542353bae27bab0aadbcaa",
+    "photo2/check_curved_patch.py": "f3f95b26224cae7de43c396fbd3a2e097320087820e7d4ddf34da245abbc9436",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/check_placement.py": "af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd"
+  },
+  "base_commit": "44fa1de7977caf15b543db483bf3d7faa0584e75",
+  "branch": "photo-2-reconstruction-v2"
+}
