@@ -644,6 +644,18 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R169 reflection competition correction:** [paired evidence](photo2/REFLECTION_SUPPRESSION.md)
+shows that a colored-highlight flank can suppress a real black-bead peak before
+appearance classification. Extract small local peaks, check color association/
+dark surroundings, then apply bead-scale suppression within accepted dark seeds.
+Keep learned threshold and all chromatic locations; don't add saved core coords
+to runtime. Prior confirmed core14 gives stronger ownership evidence than nearest
+maker-mark association. Known renders gain eligible bodies without added duplicate
+points/paper hits, but neighbor precision declines; do not interpret more proposed
+points/links as a uniformly better graph. Preserve maker sources, ambiguity and
+gaps. Regression uses the real independently confirmed core only as evaluator.
+Before/after pixel routes, hashes, scripts and Q169.1 are in the linked experiment.
+
 **R167 automatic whole-photo proposal pass:** [implementation and calibration](photo2/AUTO_LABELS.md)
 takes only RGB at runtime, learns perimeter background/palette/scale, traces an
 approximate necklace image strip, and places conservative chromatic-interior or

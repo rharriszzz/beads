@@ -5,10 +5,22 @@ from unittest.mock import patch
 import numpy as np
 import auto_label_beads as auto
 from label_beads import LabelStore
-from PIL import Image
+from PIL import Image,ImageOps
 
 
 class AutomaticLabelTests(unittest.TestCase):
+    def test_colored_highlight_does_not_erase_confirmed_black_core(self):
+        # This is independently maker-confirmed ownership, not a detector mask.
+        # Run the detector before reading the evaluator polygon. The committed
+        # R167 detector has no proposal here despite a strong black reflection.
+        result=auto.detect(np.array(ImageOps.exif_transpose(Image.open(auto.ROOT/'beads-photo-2.jpg')).convert('RGB')))
+        from matplotlib.path import Path as Polygon
+        report=json.loads((auto.ROOT/'photo2/review/r157/report.json').read_text())
+        core=next(q for q in report['results'] if q['number']==14)
+        owners=[p for p in result['points'] if Polygon(core['loop_xy']).contains_point(p['source_xy'])]
+        self.assertTrue(any(p['kind']=='dark-reflection' for p in owners),
+            'A nearby colored highlight suppressed the confirmed black-bead reflection')
+
     def test_missing_mark_does_not_displace_valid_nearby_association(self):
         # Two maker marks share one nearby proposal; the other proposal is remote.
         # Forced Hungarian assignment used to steal that proposal from mark1.

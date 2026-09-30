@@ -1,5 +1,10 @@
 # Automatic whole-photo bead and adjacency proposals — R167
 
+R169 adds a [reflection-suppression correction](REFLECTION_SUPPRESSION.md) with
+a separate958-point proposal file and paired checks. The counts/figures below
+remain the frozen first pass; its annotation file is preserved. Coverage improves
+but some extra neighbor proposals are wrong. No helicity has been established.
+
 The first implementation produces **908 observation proposals and 1,330
 tentative directional links around the photograph**, including 266 reflection/
 dark-surround proposals. It runs from the image alone. It is incomplete and does

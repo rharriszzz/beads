@@ -1,0 +1,4066 @@
+{
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "baseline_commit": "3a74cdfefc401fe4d74b509152ce76268635cee0",
+  "baseline_detector_sha256": "99af3a42cfcc6673934cf207623f46094167d763f69f564494d2ac0fc7843da1",
+  "detector_sha256": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+  "review_script_sha256": "69f63372eec279814b0263a89b01f51eb1c2d6ec2e59ec338b64be2725a91a6e",
+  "calibration_script_sha256": "7747c0e5252b926024b6a61c752382929ba9ec2dfdf71ad8dcda298ed99a1b76",
+  "annotation_sha256": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+  "annotation_revision": 422,
+  "parameters": {
+    "analysis_size": [
+      1277,
+      1600
+    ],
+    "scale_xy": [
+      0.502755905511811,
+      0.502828409805154
+    ],
+    "background_chromaticity": [
+      0.41883766651153564,
+      0.20576922595500946
+    ],
+    "background_mad": [
+      0.006991998758167028,
+      0.011370813474059105
+    ],
+    "background_value": 0.843137264251709,
+    "foreground_threshold": 20.025123596191406,
+    "border_fraction": 0.025,
+    "band_smoothing_sigma": 3.076923076923077,
+    "other_component_area": 0,
+    "apparent_internal_width": 8.495227600363814,
+    "apparent_diameter": 13.671342289621748,
+    "strip_halfwidth": 24.413111231467404,
+    "hue_modes_degrees": [
+      27,
+      353
+    ],
+    "saturation_floor": 0.5740740895271301,
+    "reflection_response_floor": 0.02981969714164734,
+    "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+    "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+  },
+  "before_inventory": {
+    "points": 908,
+    "links": 1330
+  },
+  "after_inventory": {
+    "proposed_bodies": 958,
+    "chromatic": 642,
+    "dark_reflection": 316,
+    "candidate_links": 1462,
+    "excluded_edge_features": 510
+  },
+  "added_proposals": 50,
+  "removed_proposals": 0,
+  "retained_source_positions": 908,
+  "targets": {
+    "P": {
+      "x": 636.0,
+      "y": 136.0,
+      "kind": "dark-reflection",
+      "appearance_mode": 0,
+      "support_area": 1.0,
+      "band_clearance": 10.04987562112089,
+      "reflection_response": 0.19424420595169067,
+      "chromatic_ring_fraction": 0.325,
+      "ring_value": 0.2921568751335144,
+      "status": "reflection/dark-surround body proposal; full extent/color uncertainty retained",
+      "station": 4852,
+      "cross": -14.792059432817965,
+      "source_xy": [
+        1265.5219263899764,
+        270.964375
+      ],
+      "stable_id": "3b2b508a-2e13-57d7-b18e-0b341747a35d"
+    },
+    "R": {
+      "source_xy": [
+        1293.368441660141,
+        280.908125
+      ],
+      "kind": "dark-reflection",
+      "stable_id": "3fc05c37-f6c6-5482-827d-fe559cf7b000"
+    }
+  },
+  "suppression": {
+    "analysis_peak_xy": [
+      650,
+      141
+    ],
+    "radius_analysis_pixels": 5,
+    "restored_response": 0.24305078387260437,
+    "competing_response": 0.2450847625732422,
+    "competing_source_xy": [
+      1283.423257635082,
+      290.851875
+    ],
+    "meaning": "A brighter colored-highlight flank enters the old pixel maximum filter; it is not a black-bead boundary."
+  },
+  "maker_confirmed_core_ownership": {
+    "8": {
+      "before": [
+        {
+          "source_xy": [
+            1259.588618098181,
+            290.87105513436757
+          ],
+          "kind": "chromatic"
+        }
+      ],
+      "after": [
+        {
+          "source_xy": [
+            1259.588618098181,
+            290.87105513436757
+          ],
+          "kind": "chromatic"
+        }
+      ]
+    },
+    "11": {
+      "before": [
+        {
+          "source_xy": [
+            1285.648748356184,
+            303.64697633969314
+          ],
+          "kind": "chromatic"
+        }
+      ],
+      "after": [
+        {
+          "source_xy": [
+            1285.648748356184,
+            303.64697633969314
+          ],
+          "kind": "chromatic"
+        }
+      ]
+    },
+    "14": {
+      "before": [],
+      "after": [
+        {
+          "source_xy": [
+            1293.368441660141,
+            280.908125
+          ],
+          "kind": "dark-reflection"
+        }
+      ]
+    },
+    "17": {
+      "before": [
+        {
+          "source_xy": [
+            1321.2149569303053,
+            294.829375
+          ],
+          "kind": "dark-reflection"
+        }
+      ],
+      "after": [
+        {
+          "source_xy": [
+            1321.2149569303053,
+            294.829375
+          ],
+          "kind": "dark-reflection"
+        }
+      ]
+    },
+    "20": {
+      "before": [],
+      "after": []
+    }
+  },
+  "before_evaluation": {
+    "annotation_sha256": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "revision": 422,
+    "manual_beads": 76,
+    "matched_within_gate": 58,
+    "gate_pixels": 20.393131809412814,
+    "matches": [
+      {
+        "number": 1,
+        "automatic_point": 883,
+        "distance": 6.463506314407378,
+        "nearest_distance": 6.463506314407378,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 2,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 20.17969444164729,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 3,
+        "automatic_point": 882,
+        "distance": 12.76258349299016,
+        "nearest_distance": 12.76258349299016,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 4,
+        "automatic_point": 885,
+        "distance": 4.313108841622742,
+        "nearest_distance": 4.313108841622742,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 5,
+        "automatic_point": 884,
+        "distance": 15.182394922863688,
+        "nearest_distance": 15.182394922863688,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 6,
+        "automatic_point": 886,
+        "distance": 7.215601784248151,
+        "nearest_distance": 7.215601784248151,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 7,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 24.211795817710808,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 8,
+        "automatic_point": 887,
+        "distance": 5.390654777747197,
+        "nearest_distance": 5.390654777747197,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 9,
+        "automatic_point": 888,
+        "distance": 3.6511881954965313,
+        "nearest_distance": 3.6511881954965313,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 10,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 20.95681228262631,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 11,
+        "automatic_point": 889,
+        "distance": 1.8788801486362086,
+        "nearest_distance": 1.8788801486362086,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 12,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 25.496373569575994,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 13,
+        "automatic_point": 890,
+        "distance": 5.463562390425445,
+        "nearest_distance": 5.463562390425445,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 14,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 23.37370093059781,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 15,
+        "automatic_point": 891,
+        "distance": 3.066081542644152,
+        "nearest_distance": 3.066081542644152,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 16,
+        "automatic_point": 893,
+        "distance": 11.813698581725621,
+        "nearest_distance": 11.37407530073553,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 17,
+        "automatic_point": 892,
+        "distance": 3.502573295312579,
+        "nearest_distance": 3.502573295312579,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 18,
+        "automatic_point": 894,
+        "distance": 6.241899850649592,
+        "nearest_distance": 6.241899850649592,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 19,
+        "automatic_point": 895,
+        "distance": 12.88077169987316,
+        "nearest_distance": 12.88077169987316,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 20,
+        "automatic_point": 897,
+        "distance": 9.21068118340742,
+        "nearest_distance": 9.21068118340742,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 21,
+        "automatic_point": 896,
+        "distance": 6.159377303234367,
+        "nearest_distance": 6.159377303234367,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 22,
+        "automatic_point": 898,
+        "distance": 8.938942922437317,
+        "nearest_distance": 8.938942922437317,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 23,
+        "automatic_point": 899,
+        "distance": 6.2978616239081795,
+        "nearest_distance": 6.2978616239081795,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 24,
+        "automatic_point": 900,
+        "distance": 9.115817155949994,
+        "nearest_distance": 9.115817155949994,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 25,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 15.65381911177153,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 26,
+        "automatic_point": 902,
+        "distance": 7.462107320112838,
+        "nearest_distance": 7.462107320112838,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 27,
+        "automatic_point": 904,
+        "distance": 9.7659149825781,
+        "nearest_distance": 9.7659149825781,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 28,
+        "automatic_point": 903,
+        "distance": 13.133081305668743,
+        "nearest_distance": 13.133081305668743,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 29,
+        "automatic_point": 907,
+        "distance": 7.870837819996641,
+        "nearest_distance": 7.870837819996641,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 30,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 11.695119650026955,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 31,
+        "automatic_point": 901,
+        "distance": 3.2846467838967697,
+        "nearest_distance": 3.2846467838967697,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 32,
+        "automatic_point": 905,
+        "distance": 14.399726464289047,
+        "nearest_distance": 14.399726464289047,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 33,
+        "automatic_point": 906,
+        "distance": 8.870544898633876,
+        "nearest_distance": 8.870544898633876,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 34,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 17.785984591863738,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 35,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 23.940302139012953,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 36,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 27.216907438639534,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 37,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 17.585241436425004,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 38,
+        "automatic_point": 0,
+        "distance": 16.783010948887963,
+        "nearest_distance": 16.783010948887963,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 39,
+        "automatic_point": 1,
+        "distance": 5.429155248873225,
+        "nearest_distance": 5.429155248873225,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 40,
+        "automatic_point": 2,
+        "distance": 9.65538046961464,
+        "nearest_distance": 9.65538046961464,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 41,
+        "automatic_point": 7,
+        "distance": 10.024778632626854,
+        "nearest_distance": 10.024778632626854,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 42,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 37.767201011972446,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 43,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 21.520639205171836,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 44,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 19.973269744283957,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 45,
+        "automatic_point": 5,
+        "distance": 9.771995999024233,
+        "nearest_distance": 9.771995999024233,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 46,
+        "automatic_point": 9,
+        "distance": 6.162576795835391,
+        "nearest_distance": 6.162576795835391,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 47,
+        "automatic_point": 13,
+        "distance": 10.239708782483742,
+        "nearest_distance": 10.239708782483742,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 48,
+        "automatic_point": 3,
+        "distance": 1.1304656904912846,
+        "nearest_distance": 1.1304656904912846,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 49,
+        "automatic_point": 6,
+        "distance": 4.068434176840148,
+        "nearest_distance": 4.068434176840148,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 50,
+        "automatic_point": 8,
+        "distance": 9.94401379827404,
+        "nearest_distance": 9.94401379827404,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 51,
+        "automatic_point": 12,
+        "distance": 3.097169006163978,
+        "nearest_distance": 3.097169006163978,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 52,
+        "automatic_point": 15,
+        "distance": 1.9058670232608663,
+        "nearest_distance": 1.9058670232608663,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 53,
+        "automatic_point": 16,
+        "distance": 7.539658538139966,
+        "nearest_distance": 7.539658538139966,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 54,
+        "automatic_point": 11,
+        "distance": 8.820472928103676,
+        "nearest_distance": 8.820472928103676,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 55,
+        "automatic_point": 14,
+        "distance": 0.5486114339779488,
+        "nearest_distance": 0.5486114339779488,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 56,
+        "automatic_point": 17,
+        "distance": 7.784044257719629,
+        "nearest_distance": 7.784044257719629,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 57,
+        "automatic_point": 19,
+        "distance": 8.597741902450341,
+        "nearest_distance": 8.597741902450341,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 58,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 31.52884160692408,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 59,
+        "automatic_point": 18,
+        "distance": 6.531275757791241,
+        "nearest_distance": 6.531275757791241,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 60,
+        "automatic_point": 21,
+        "distance": 7.4575081856851835,
+        "nearest_distance": 7.4575081856851835,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 61,
+        "automatic_point": 22,
+        "distance": 9.193354890239798,
+        "nearest_distance": 9.193354890239798,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 62,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 19.074835814620336,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 63,
+        "automatic_point": 20,
+        "distance": 20.362588159036445,
+        "nearest_distance": 12.144938084235617,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 64,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 20.090876045988452,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 65,
+        "automatic_point": 25,
+        "distance": 7.362078585048861,
+        "nearest_distance": 7.362078585048861,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 66,
+        "automatic_point": 27,
+        "distance": 5.111444272907551,
+        "nearest_distance": 5.111444272907551,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 67,
+        "automatic_point": 24,
+        "distance": 6.13440363640574,
+        "nearest_distance": 6.13440363640574,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 68,
+        "automatic_point": 28,
+        "distance": 15.800870441338091,
+        "nearest_distance": 15.800870441338091,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 69,
+        "automatic_point": 31,
+        "distance": 18.58351158345994,
+        "nearest_distance": 11.63770232018905,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 70,
+        "automatic_point": 32,
+        "distance": 9.10271273772322,
+        "nearest_distance": 9.10271273772322,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 71,
+        "automatic_point": 23,
+        "distance": 17.844158756403534,
+        "nearest_distance": 17.844158756403534,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 72,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 21.014166138433705,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 73,
+        "automatic_point": 29,
+        "distance": 6.619863536764954,
+        "nearest_distance": 6.619863536764954,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 74,
+        "automatic_point": 33,
+        "distance": 18.420215856196737,
+        "nearest_distance": 8.938326564173174,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 75,
+        "automatic_point": 34,
+        "distance": 8.955451499834291,
+        "nearest_distance": 8.955451499834291,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 76,
+        "automatic_point": 36,
+        "distance": 11.725637785892003,
+        "nearest_distance": 11.725637785892003,
+        "status": "proximity association for validation; bead identity not proven"
+      }
+    ],
+    "manual_links": 129,
+    "forward_links_agree": 44,
+    "reverse_links": 0,
+    "relations": [
+      {
+        "start": 1,
+        "end": 4,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 4,
+        "end": 8,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 7,
+        "end": 10,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 2,
+        "end": 4,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 4,
+        "end": 7,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 3,
+        "end": 5,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 5,
+        "end": 8,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 8,
+        "end": 10,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 10,
+        "end": 13,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 9,
+        "end": 11,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 14,
+        "end": 16,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 1,
+        "end": 2,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 2,
+        "end": 3,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 4,
+        "end": 5,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 5,
+        "end": 6,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 7,
+        "end": 8,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 8,
+        "end": 9,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 13,
+        "end": 14,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 14,
+        "end": 15,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 16,
+        "end": 17,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 19,
+        "end": 20,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 20,
+        "end": 21,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 10,
+        "end": 11,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 11,
+        "end": 12,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 2,
+        "end": 5,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 5,
+        "end": 9,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 9,
+        "end": 12,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 30,
+        "end": 31,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 31,
+        "end": 32,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 32,
+        "end": 33,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 34,
+        "end": 35,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 37,
+        "end": 38,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 39,
+        "end": 40,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 13,
+        "end": 16,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 16,
+        "end": 20,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 23,
+        "end": 25,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 25,
+        "end": 28,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 22,
+        "end": 24,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 24,
+        "end": 26,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 26,
+        "end": 27,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 12,
+        "end": 15,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 20,
+        "end": 22,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 22,
+        "end": 30,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 18,
+        "end": 21,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 21,
+        "end": 23,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 24,
+        "end": 31,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 31,
+        "end": 36,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 25,
+        "end": 26,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 26,
+        "end": 32,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 32,
+        "end": 37,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 28,
+        "end": 27,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 33,
+        "end": 38,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 34,
+        "end": 39,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 30,
+        "end": 24,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 24,
+        "end": 25,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 31,
+        "end": 26,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 26,
+        "end": 28,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 36,
+        "end": 32,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 32,
+        "end": 27,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 37,
+        "end": 33,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 33,
+        "end": 29,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 38,
+        "end": 34,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 39,
+        "end": 35,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 42,
+        "end": 43,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 43,
+        "end": 44,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 44,
+        "end": 45,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 45,
+        "end": 46,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 46,
+        "end": 47,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 48,
+        "end": 49,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 49,
+        "end": 50,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 51,
+        "end": 52,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 52,
+        "end": 53,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 62,
+        "end": 63,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 63,
+        "end": 67,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 67,
+        "end": 68,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 68,
+        "end": 69,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 69,
+        "end": 70,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 71,
+        "end": 72,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 72,
+        "end": 73,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 73,
+        "end": 74,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 74,
+        "end": 75,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 75,
+        "end": 76,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 59,
+        "end": 60,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 60,
+        "end": 64,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 64,
+        "end": 65,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 54,
+        "end": 55,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 55,
+        "end": 57,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 57,
+        "end": 61,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 40,
+        "end": 45,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 45,
+        "end": 50,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 50,
+        "end": 54,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 41,
+        "end": 46,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 46,
+        "end": 51,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 51,
+        "end": 55,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 47,
+        "end": 52,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 52,
+        "end": 56,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 56,
+        "end": 59,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 59,
+        "end": 62,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 57,
+        "end": 60,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 60,
+        "end": 63,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 61,
+        "end": 64,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      }
+    ],
+    "limitation": "No true body boundaries supplied; nearest point association is provisional, and completed series can contain skipped steps"
+  },
+  "after_evaluation": {
+    "annotation_sha256": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "revision": 422,
+    "manual_beads": 76,
+    "matched_within_gate": 63,
+    "gate_pixels": 20.393131809412814,
+    "matches": [
+      {
+        "number": 1,
+        "automatic_point": 931,
+        "distance": 6.463506314407378,
+        "nearest_distance": 6.463506314407378,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 2,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 20.17969444164729,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 3,
+        "automatic_point": 930,
+        "distance": 12.76258349299016,
+        "nearest_distance": 12.76258349299016,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 4,
+        "automatic_point": 933,
+        "distance": 4.313108841622742,
+        "nearest_distance": 4.313108841622742,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 5,
+        "automatic_point": 932,
+        "distance": 15.182394922863688,
+        "nearest_distance": 15.182394922863688,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 6,
+        "automatic_point": 934,
+        "distance": 7.215601784248151,
+        "nearest_distance": 7.215601784248151,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 7,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 24.211795817710808,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 8,
+        "automatic_point": 935,
+        "distance": 5.390654777747197,
+        "nearest_distance": 5.390654777747197,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 9,
+        "automatic_point": 936,
+        "distance": 3.6511881954965313,
+        "nearest_distance": 3.6511881954965313,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 10,
+        "automatic_point": 937,
+        "distance": 9.63657615583253,
+        "nearest_distance": 9.63657615583253,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 11,
+        "automatic_point": 938,
+        "distance": 1.8788801486362086,
+        "nearest_distance": 1.8788801486362086,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 12,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 25.496373569575994,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 13,
+        "automatic_point": 939,
+        "distance": 5.463562390425445,
+        "nearest_distance": 5.463562390425445,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 14,
+        "automatic_point": 940,
+        "distance": 7.5142521914197475,
+        "nearest_distance": 7.5142521914197475,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 15,
+        "automatic_point": 941,
+        "distance": 3.066081542644152,
+        "nearest_distance": 3.066081542644152,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 16,
+        "automatic_point": 943,
+        "distance": 11.813698581725621,
+        "nearest_distance": 11.37407530073553,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 17,
+        "automatic_point": 942,
+        "distance": 3.502573295312579,
+        "nearest_distance": 3.502573295312579,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 18,
+        "automatic_point": 944,
+        "distance": 6.241899850649592,
+        "nearest_distance": 6.241899850649592,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 19,
+        "automatic_point": 945,
+        "distance": 12.88077169987316,
+        "nearest_distance": 12.88077169987316,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 20,
+        "automatic_point": 947,
+        "distance": 9.21068118340742,
+        "nearest_distance": 9.21068118340742,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 21,
+        "automatic_point": 946,
+        "distance": 6.159377303234367,
+        "nearest_distance": 6.159377303234367,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 22,
+        "automatic_point": 948,
+        "distance": 8.938942922437317,
+        "nearest_distance": 8.938942922437317,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 23,
+        "automatic_point": 949,
+        "distance": 6.2978616239081795,
+        "nearest_distance": 6.2978616239081795,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 24,
+        "automatic_point": 950,
+        "distance": 9.115817155949994,
+        "nearest_distance": 9.115817155949994,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 25,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 15.65381911177153,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 26,
+        "automatic_point": 952,
+        "distance": 7.462107320112838,
+        "nearest_distance": 7.462107320112838,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 27,
+        "automatic_point": 954,
+        "distance": 9.7659149825781,
+        "nearest_distance": 9.7659149825781,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 28,
+        "automatic_point": 953,
+        "distance": 13.133081305668743,
+        "nearest_distance": 13.133081305668743,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 29,
+        "automatic_point": 957,
+        "distance": 7.870837819996641,
+        "nearest_distance": 7.870837819996641,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 30,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 11.695119650026955,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 31,
+        "automatic_point": 951,
+        "distance": 3.2846467838967697,
+        "nearest_distance": 3.2846467838967697,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 32,
+        "automatic_point": 955,
+        "distance": 14.399726464289047,
+        "nearest_distance": 14.399726464289047,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 33,
+        "automatic_point": 956,
+        "distance": 8.870544898633876,
+        "nearest_distance": 8.870544898633876,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 34,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 17.653128837961468,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 35,
+        "automatic_point": 2,
+        "distance": 8.515081205926396,
+        "nearest_distance": 8.515081205926396,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 36,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 27.216907438639534,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 37,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 17.585241436425004,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 38,
+        "automatic_point": 0,
+        "distance": 16.783010948887963,
+        "nearest_distance": 16.66591331054477,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 39,
+        "automatic_point": 3,
+        "distance": 5.429155248873225,
+        "nearest_distance": 5.429155248873225,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 40,
+        "automatic_point": 4,
+        "distance": 9.65538046961464,
+        "nearest_distance": 9.65538046961464,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 41,
+        "automatic_point": 9,
+        "distance": 10.024778632626854,
+        "nearest_distance": 10.024778632626854,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 42,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 22.093177547599822,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 43,
+        "automatic_point": 1,
+        "distance": 9.897341531077938,
+        "nearest_distance": 9.897341531077938,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 44,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 19.973269744283957,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 45,
+        "automatic_point": 7,
+        "distance": 9.771995999024233,
+        "nearest_distance": 9.771995999024233,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 46,
+        "automatic_point": 11,
+        "distance": 6.162576795835391,
+        "nearest_distance": 6.162576795835391,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 47,
+        "automatic_point": 15,
+        "distance": 10.239708782483742,
+        "nearest_distance": 10.239708782483742,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 48,
+        "automatic_point": 5,
+        "distance": 1.1304656904912846,
+        "nearest_distance": 1.1304656904912846,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 49,
+        "automatic_point": 8,
+        "distance": 4.068434176840148,
+        "nearest_distance": 4.068434176840148,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 50,
+        "automatic_point": 10,
+        "distance": 9.94401379827404,
+        "nearest_distance": 9.94401379827404,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 51,
+        "automatic_point": 14,
+        "distance": 3.097169006163978,
+        "nearest_distance": 3.097169006163978,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 52,
+        "automatic_point": 17,
+        "distance": 1.9058670232608663,
+        "nearest_distance": 1.9058670232608663,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 53,
+        "automatic_point": 18,
+        "distance": 7.539658538139966,
+        "nearest_distance": 7.539658538139966,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 54,
+        "automatic_point": 13,
+        "distance": 8.820472928103676,
+        "nearest_distance": 8.820472928103676,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 55,
+        "automatic_point": 16,
+        "distance": 0.5486114339779488,
+        "nearest_distance": 0.5486114339779488,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 56,
+        "automatic_point": 19,
+        "distance": 7.784044257719629,
+        "nearest_distance": 7.784044257719629,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 57,
+        "automatic_point": 21,
+        "distance": 8.597741902450341,
+        "nearest_distance": 8.597741902450341,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 58,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 31.52884160692408,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 59,
+        "automatic_point": 20,
+        "distance": 6.531275757791241,
+        "nearest_distance": 6.531275757791241,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 60,
+        "automatic_point": 23,
+        "distance": 7.4575081856851835,
+        "nearest_distance": 7.4575081856851835,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 61,
+        "automatic_point": 24,
+        "distance": 9.193354890239798,
+        "nearest_distance": 9.193354890239798,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 62,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 19.074835814620336,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 63,
+        "automatic_point": 22,
+        "distance": 20.362588159036445,
+        "nearest_distance": 12.144938084235617,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 64,
+        "automatic_point": null,
+        "distance": null,
+        "nearest_distance": 20.090876045988452,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 65,
+        "automatic_point": 27,
+        "distance": 7.362078585048861,
+        "nearest_distance": 7.362078585048861,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 66,
+        "automatic_point": 30,
+        "distance": 5.111444272907551,
+        "nearest_distance": 5.111444272907551,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 67,
+        "automatic_point": 26,
+        "distance": 6.13440363640574,
+        "nearest_distance": 6.13440363640574,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 68,
+        "automatic_point": 31,
+        "distance": 15.800870441338091,
+        "nearest_distance": 15.800870441338091,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 69,
+        "automatic_point": 34,
+        "distance": 18.58351158345994,
+        "nearest_distance": 11.63770232018905,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 70,
+        "automatic_point": 35,
+        "distance": 9.10271273772322,
+        "nearest_distance": 9.10271273772322,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 71,
+        "automatic_point": 25,
+        "distance": 17.844158756403534,
+        "nearest_distance": 17.844158756403534,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 72,
+        "automatic_point": 29,
+        "distance": 6.115564036792301,
+        "nearest_distance": 6.115564036792301,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 73,
+        "automatic_point": 32,
+        "distance": 6.619863536764954,
+        "nearest_distance": 6.619863536764954,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 74,
+        "automatic_point": 36,
+        "distance": 18.420215856196737,
+        "nearest_distance": 8.938326564173174,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 75,
+        "automatic_point": 37,
+        "distance": 8.955451499834291,
+        "nearest_distance": 8.955451499834291,
+        "status": "proximity association for validation; bead identity not proven"
+      },
+      {
+        "number": 76,
+        "automatic_point": 39,
+        "distance": 11.725637785892003,
+        "nearest_distance": 11.725637785892003,
+        "status": "proximity association for validation; bead identity not proven"
+      }
+    ],
+    "manual_links": 129,
+    "forward_links_agree": 49,
+    "reverse_links": 0,
+    "relations": [
+      {
+        "start": 1,
+        "end": 4,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 4,
+        "end": 8,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 7,
+        "end": 10,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 2,
+        "end": 4,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 4,
+        "end": 7,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 3,
+        "end": 5,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 5,
+        "end": 8,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 8,
+        "end": 10,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 10,
+        "end": 13,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 9,
+        "end": 11,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 14,
+        "end": 16,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 1,
+        "end": 2,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 2,
+        "end": 3,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 4,
+        "end": 5,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 5,
+        "end": 6,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 7,
+        "end": 8,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 8,
+        "end": 9,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 13,
+        "end": 14,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 14,
+        "end": 15,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 16,
+        "end": 17,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 19,
+        "end": 20,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 20,
+        "end": 21,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 10,
+        "end": 11,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 11,
+        "end": 12,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 2,
+        "end": 5,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 5,
+        "end": 9,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 9,
+        "end": 12,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 30,
+        "end": 31,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 31,
+        "end": 32,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 32,
+        "end": 33,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 34,
+        "end": 35,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 37,
+        "end": 38,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 39,
+        "end": 40,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 13,
+        "end": 16,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 16,
+        "end": 20,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 23,
+        "end": 25,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 25,
+        "end": 28,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 22,
+        "end": 24,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 24,
+        "end": 26,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 26,
+        "end": 27,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 12,
+        "end": 15,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 20,
+        "end": 22,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 22,
+        "end": 30,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 18,
+        "end": 21,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 21,
+        "end": 23,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 24,
+        "end": 31,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 31,
+        "end": 36,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 25,
+        "end": 26,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 26,
+        "end": 32,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 32,
+        "end": 37,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 28,
+        "end": 27,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 33,
+        "end": 38,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 34,
+        "end": 39,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 30,
+        "end": 24,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 24,
+        "end": 25,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 31,
+        "end": 26,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 26,
+        "end": 28,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 36,
+        "end": 32,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 32,
+        "end": 27,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 37,
+        "end": 33,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 33,
+        "end": 29,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 38,
+        "end": 34,
+        "direction": "d1",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 39,
+        "end": 35,
+        "direction": "d1",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 42,
+        "end": 43,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 43,
+        "end": 44,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 44,
+        "end": 45,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 45,
+        "end": 46,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 46,
+        "end": 47,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 48,
+        "end": 49,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 49,
+        "end": 50,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 51,
+        "end": 52,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 52,
+        "end": 53,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 62,
+        "end": 63,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 63,
+        "end": 67,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 67,
+        "end": 68,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 68,
+        "end": 69,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 69,
+        "end": 70,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 71,
+        "end": 72,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 72,
+        "end": 73,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 73,
+        "end": 74,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 74,
+        "end": 75,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 75,
+        "end": 76,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 59,
+        "end": 60,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 60,
+        "end": 64,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 64,
+        "end": 65,
+        "direction": "d2",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 54,
+        "end": 55,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 55,
+        "end": 57,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 57,
+        "end": 61,
+        "direction": "d2",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 40,
+        "end": 45,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 45,
+        "end": 50,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 50,
+        "end": 54,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 41,
+        "end": 46,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 46,
+        "end": 51,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 51,
+        "end": 55,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 47,
+        "end": 52,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 52,
+        "end": 56,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 56,
+        "end": 59,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 59,
+        "end": 62,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 57,
+        "end": 60,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": true,
+        "reverse_only": false
+      },
+      {
+        "start": 60,
+        "end": 63,
+        "direction": "d3",
+        "endpoints_associated": true,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      },
+      {
+        "start": 61,
+        "end": 64,
+        "direction": "d3",
+        "endpoints_associated": false,
+        "forward_agrees": false,
+        "reverse_only": false
+      }
+    ],
+    "limitation": "No true body boundaries supplied; nearest point association is provisional, and completed series can contain skipped steps"
+  },
+  "graph_after": {
+    "components": 37,
+    "component_sizes": [
+      204,
+      106,
+      105,
+      100,
+      75,
+      68,
+      51,
+      43,
+      31,
+      30,
+      26,
+      20,
+      17,
+      14,
+      13,
+      12,
+      9,
+      7,
+      6,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "isolated_observations": 17,
+    "ambiguous_direction_choices": 62,
+    "possible_skipped_step_links": 190
+  },
+  "calibration_before": [
+    {
+      "hand": 1,
+      "palette": 0,
+      "offset": 0,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "ddb41ee3067af074d4c8906a797b164ec183be52b1c6525ea3a67f78801a5c7b",
+      "id_scene_sha256": "5f81f8d65e0a71544257fdad0cb3601c05e3080e662e1997713848d50ad6f731",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "id_sha256": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+      "proposals": 136,
+      "eligible_visible": 168,
+      "eligible_located": 130,
+      "distinct_bodies": 132,
+      "on_paper": 0,
+      "duplicate_points": 4,
+      "adjacency_proposals": 281,
+      "true_unsigned_neighbors": 273,
+      "per_direction": {
+        "d1": {
+          "count": 73,
+          "true_neighbor": 69,
+          "deltas": {
+            "0": 3,
+            "1": 69,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 104,
+          "true_neighbor": 101,
+          "deltas": {
+            "0": 1,
+            "1": 1,
+            "6": 2,
+            "7": 98,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 104,
+          "true_neighbor": 103,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 103,
+            "7": 0,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.40317460894584656,
+          0.3333333134651184
+        ],
+        "background_mad": [
+          0.0007699664565734565,
+          0.001208280911669135
+        ],
+        "background_value": 0.5568627715110779,
+        "foreground_threshold": 26.269535064697266,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 25.48452241133466,
+        "apparent_diameter": 34.37962187110266,
+        "strip_halfwidth": 61.39218191268331,
+        "hue_modes_degrees": [
+          30,
+          227
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    },
+    {
+      "hand": -1,
+      "palette": 0,
+      "offset": 0,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "8eab3b2327cfa5d8abe6fdfd3f36959b58dd81fe4776d98505f8b330ddd9d84c",
+      "id_scene_sha256": "f9ff3ea38c1643f0dd764f77a78f9c44be32a2e27fa4b44fd20ee713c9a7efb1",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "id_sha256": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+      "proposals": 135,
+      "eligible_visible": 168,
+      "eligible_located": 130,
+      "distinct_bodies": 131,
+      "on_paper": 0,
+      "duplicate_points": 4,
+      "adjacency_proposals": 274,
+      "true_unsigned_neighbors": 268,
+      "per_direction": {
+        "d1": {
+          "count": 76,
+          "true_neighbor": 70,
+          "deltas": {
+            "0": 4,
+            "1": 70,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 101,
+          "true_neighbor": 101,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 101,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 97,
+          "true_neighbor": 97,
+          "deltas": {
+            "0": 0,
+            "1": 3,
+            "6": 1,
+            "7": 93,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.40317460894584656,
+          0.3333333134651184
+        ],
+        "background_mad": [
+          0.0007699664565734565,
+          0.001208280911669135
+        ],
+        "background_value": 0.5568627715110779,
+        "foreground_threshold": 26.269535064697266,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 20.938777397956073,
+        "apparent_diameter": 34.32484814241718,
+        "strip_halfwidth": 61.29437168288782,
+        "hue_modes_degrees": [
+          30,
+          227
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    },
+    {
+      "hand": 1,
+      "palette": 1,
+      "offset": 2,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "998737243b2178789363b079b708e492ccdf8a91407b181b77d66cbb840615b3",
+      "id_scene_sha256": "038a5a587d2b2c4bf54caee1d97c0879bbe12fbda6f41751276ac791010e03ab",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "id_sha256": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd",
+      "proposals": 138,
+      "eligible_visible": 169,
+      "eligible_located": 132,
+      "distinct_bodies": 135,
+      "on_paper": 0,
+      "duplicate_points": 3,
+      "adjacency_proposals": 285,
+      "true_unsigned_neighbors": 276,
+      "per_direction": {
+        "d1": {
+          "count": 73,
+          "true_neighbor": 69,
+          "deltas": {
+            "0": 3,
+            "1": 69,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 104,
+          "true_neighbor": 100,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 1,
+            "7": 99,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 108,
+          "true_neighbor": 107,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 107,
+            "7": 0,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.23151126503944397,
+          0.32415902614593506
+        ],
+        "background_mad": [
+          0.0009364110883325338,
+          0.0009334948263131082
+        ],
+        "background_value": 0.5137255191802979,
+        "foreground_threshold": 22.57506561279297,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 23.043910475038267,
+        "apparent_diameter": 34.452518050209335,
+        "strip_halfwidth": 61.5223536610881,
+        "hue_modes_degrees": [
+          133,
+          313
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    }
+  ],
+  "calibration_after": [
+    {
+      "hand": 1,
+      "palette": 0,
+      "offset": 0,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "ddb41ee3067af074d4c8906a797b164ec183be52b1c6525ea3a67f78801a5c7b",
+      "id_scene_sha256": "5f81f8d65e0a71544257fdad0cb3601c05e3080e662e1997713848d50ad6f731",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "id_sha256": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+      "proposals": 141,
+      "eligible_visible": 168,
+      "eligible_located": 132,
+      "distinct_bodies": 137,
+      "on_paper": 0,
+      "duplicate_points": 4,
+      "adjacency_proposals": 292,
+      "true_unsigned_neighbors": 280,
+      "per_direction": {
+        "d1": {
+          "count": 75,
+          "true_neighbor": 71,
+          "deltas": {
+            "0": 3,
+            "1": 71,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 108,
+          "true_neighbor": 101,
+          "deltas": {
+            "0": 1,
+            "1": 2,
+            "6": 3,
+            "7": 96,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 109,
+          "true_neighbor": 108,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 106,
+            "7": 2,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.40317460894584656,
+          0.3333333134651184
+        ],
+        "background_mad": [
+          0.0007699664565734565,
+          0.001208280911669135
+        ],
+        "background_value": 0.5568627715110779,
+        "foreground_threshold": 26.269535064697266,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 25.48452241133466,
+        "apparent_diameter": 34.37962187110266,
+        "strip_halfwidth": 61.39218191268331,
+        "hue_modes_degrees": [
+          30,
+          227
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    },
+    {
+      "hand": -1,
+      "palette": 0,
+      "offset": 0,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "8eab3b2327cfa5d8abe6fdfd3f36959b58dd81fe4776d98505f8b330ddd9d84c",
+      "id_scene_sha256": "f9ff3ea38c1643f0dd764f77a78f9c44be32a2e27fa4b44fd20ee713c9a7efb1",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "id_sha256": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+      "proposals": 139,
+      "eligible_visible": 168,
+      "eligible_located": 133,
+      "distinct_bodies": 135,
+      "on_paper": 0,
+      "duplicate_points": 4,
+      "adjacency_proposals": 279,
+      "true_unsigned_neighbors": 271,
+      "per_direction": {
+        "d1": {
+          "count": 78,
+          "true_neighbor": 72,
+          "deltas": {
+            "0": 4,
+            "1": 71,
+            "6": 1,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 103,
+          "true_neighbor": 102,
+          "deltas": {
+            "0": 0,
+            "1": 1,
+            "6": 101,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 98,
+          "true_neighbor": 97,
+          "deltas": {
+            "0": 0,
+            "1": 3,
+            "6": 1,
+            "7": 93,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.40317460894584656,
+          0.3333333134651184
+        ],
+        "background_mad": [
+          0.0007699664565734565,
+          0.001208280911669135
+        ],
+        "background_value": 0.5568627715110779,
+        "foreground_threshold": 26.269535064697266,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 20.938777397956073,
+        "apparent_diameter": 34.32484814241718,
+        "strip_halfwidth": 61.29437168288782,
+        "hue_modes_degrees": [
+          30,
+          227
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    },
+    {
+      "hand": 1,
+      "palette": 1,
+      "offset": 2,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "998737243b2178789363b079b708e492ccdf8a91407b181b77d66cbb840615b3",
+      "id_scene_sha256": "038a5a587d2b2c4bf54caee1d97c0879bbe12fbda6f41751276ac791010e03ab",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "id_sha256": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd",
+      "proposals": 141,
+      "eligible_visible": 169,
+      "eligible_located": 133,
+      "distinct_bodies": 138,
+      "on_paper": 0,
+      "duplicate_points": 3,
+      "adjacency_proposals": 291,
+      "true_unsigned_neighbors": 279,
+      "per_direction": {
+        "d1": {
+          "count": 74,
+          "true_neighbor": 69,
+          "deltas": {
+            "0": 3,
+            "1": 69,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 107,
+          "true_neighbor": 101,
+          "deltas": {
+            "0": 0,
+            "1": 1,
+            "6": 2,
+            "7": 98,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 110,
+          "true_neighbor": 109,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 107,
+            "7": 2,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.23151126503944397,
+          0.32415902614593506
+        ],
+        "background_mad": [
+          0.0009364110883325338,
+          0.0009334948263131082
+        ],
+        "background_value": 0.5137255191802979,
+        "foreground_threshold": 22.57506561279297,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 23.043910475038267,
+        "apparent_diameter": 34.452518050209335,
+        "strip_halfwidth": 61.5223536610881,
+        "hue_modes_degrees": [
+          133,
+          313
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    }
+  ],
+  "caveat": "Proposals and proximity associations are not complete body identities, unit steps, physical centers, outward anchors or helicity.",
+  "curated_image_sha256": {
+    "patch-comparison.png": "1bf906ba39a49bb86290c50d2bcd7d55caa4da84c45e766aca8103621d83858d",
+    "recovered-black.png": "e6ba7a04842eb89087bb9b3c1e58b46054943cd081d831c5c10e7fc6812a8fa8"
+  }
+}

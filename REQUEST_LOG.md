@@ -2514,3 +2514,90 @@ and bounded identity review are complete; coverage/helicity remain unresolved.
 Next narrow task is improving missed/merged/split central bodies and their
 neighbors. No new numerical fit or repeated tests needed for saving this answer.
 Recommend gpt-6.1-sol / High, stay here; no /new needed. Continue scoped delivery.
+
+## R169 — Continue; recover missed central black reflections
+
+User: “continue.” Resume the unfinished missed/merged/split central-body and
+neighbor step. Preflight daisy/WSL2, photo-2-reconstruction-v2 at3a74cdf,
+clean checkout, no stashes, upstream0/0 after fetch. No delegation. Preserve
+the live maker save and R167 automatic outputs; freeze a separate exact capture
+manual-labels-r169.json, revision422,76 points/41 series/129 completed links,
+SHA1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff.
+
+Consider four methods: weaker reflections with dark context, brightness seams
+for joined chromatic regions, supported missing-neighbor searches, projected
+templates. Diagnose reflection competition and implement that narrow correction.
+Bead14's strong black reflection (.24305 response) was erased by a brighter
+colored-highlight flank (.24508) inside the old five-pixel maximum filter before
+context classification. Extract peaks at two-pixel spacing, keep the existing
+appearance/dark-surround tests, then apply the original inclusive bead-scale
+suppression among accepted dark-surround seeds. No threshold lowering, maker
+coordinates, confirmed cores or saved color boxes enter runtime detection.
+
+Replay pinned baseline and new detector on identical source pixels, before
+reading maker evidence. Retain all908 baseline positions/IDs, including the
+R168-confirmed three distinct bodies; add50 reflection proposals, remove0.
+New inventory958 (642chromatic/316dark-reflection),1462tentative links,
+510excluded edge features (not bead count). Components45→37, largest192→204,
+17isolates,62ambiguous choices,190possible skipped-step links. Against the same
+76-point snapshot, nearby one-to-one associations58→63/76 at20.393px;
+associated-endpoint completed links78→92, forward-agree links44→49 out of129
+total supplied links. Proximity does not establish all identities or completeness.
+
+Recovered R=(1293.36844,280.908125) lies inside bead14's maker-confirmed R160
+interior; the unchanged reflection on17 also lies in its confirmed core.
+P=(1265.52193,270.964375) requires ownership review. Curate raw/before/after
+figure with P/R and broader patch comparison, plus parameters/hashes/results in
+review/r169. Q169.1 asks only whether P belongs to maker10, in
+REFLECTION_SUPPRESSION.md. Supplied14→17 d2 is reproduced,11→14 d3 remains
+missing. Highlight/interior locations are not full boundaries, physical centers
+or exposed outward minor-circle anchors.
+
+Independent known-source R167 fixtures, both hands plus changed palette/paper/
+placement, still have0points on paper and unchanged4/4/3duplicates. Eligible
+body coverage130→132/168,130→133/168,132→133/169. True unsigned neighbors
+273/281→280/292,268/274→271/279,276/285→279/291. More correct bodies/links
+but also more wrong links: precision97.2→95.9%,97.8→97.1%,96.8→95.9%.
+Preserve this tradeoff; unsigned checks do not establish direction signs or
+photograph helicity. Existing fixture reports stay unchanged; new --fixtures
+option separates reused render inputs from new report outputs.
+
+All11tests pass (4automatic,7LabelStore), including a confirmed-black-core
+regression which fails on baseline. Blind CLI and evaluator CLI produce identical
+annotations, IDs, parameters, observations and adjacency. Actual LabelStore
+loads958points/1462series without running a browser/server/launcher. Curated
+images inspected; source/curated/script hashes, links and whitespace checked.
+No camera/geometry fit, full indices,N,closure,repeat or helicity recovered.
+
+Photo SHAeb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb;
+beads.pov SHAb131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0;
+detector SHA57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd.
+Other hashes/commands in review/r169/summary.json. Reproduce with
+.venv/bin/python photo2/auto_label_beads.py --output photo2/output/r169/context-first --validation photo2/manual-labels-r169.json
+(fresh directory, or --replace-proposals only for unchanged generated output),
+.venv/bin/python photo2/check_auto_labels.py --reuse --fixtures photo2/output/r167/calibration --output photo2/output/r169/calibration
+and .venv/bin/python photo2/review_reflection_suppression.py.
+Tests: env PYTHONPATH=photo2 .venv/bin/python -m unittest test_auto_labels test_label_beads.LabelStoreTests.
+
+Stopping point: one reflection-suppression correction with independent checks
+and illustrated ownership review. Next bounded task: diagnose missing/wrong
+neighbors using accepted interiors, specifically11→14 d3, before any wider
+geometry/helicity phase. Scoped code/evidence/docs prepared for commit/push;
+delivery verification reported after publication. Recommend gpt-6.1-sol / High,
+same conversation, no /new. No physical necklace needed.
+
+## R170 — Maker confirms recovered reflection P belongs to bead10
+
+Reply to Q169.1: “Yes, P is inside bead 10.” Preserve the exact statement,
+source coordinate/stable automatic ID, maker10's stable ID, revision422 snapshot
+hash and supporting image hash in reflection-confirmed-r170.json. Link this
+answer from REFLECTION_SUPPRESSION.md and update plan/handoff. This is diagnostic
+maker ownership evidence, never a runtime coordinate prior. Numerical outputs
+remain unchanged by the answer.
+
+Together with bead14's confirmed core and bead17's unchanged core-supported
+point, this establishes three black-bead identities along the supplied10→14→17
+d2 chain, which the program reproduces. It does not confirm all proposed links,
+unit string offsets/signs, bead extents, outward anchors or helicity. The
+supplied11→14 d3 link remains the concrete next adjacency issue. Complete this
+bounded delivery and stop; recommend gpt-6.1-sol / High here, no /new needed.

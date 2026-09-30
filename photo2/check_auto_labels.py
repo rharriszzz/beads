@@ -77,13 +77,17 @@ def score(result,graph,ids,N):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=ROOT/'photo2/output/r167/calibration')
-    p.add_argument('--reuse',action='store_true');args=p.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+    p.add_argument('--reuse',action='store_true')
+    p.add_argument('--fixtures',type=Path,help='Existing render directory for --reuse; write the new report separately to --output')
+    args=p.parse_args()
+    if args.fixtures and not args.reuse:p.error('--fixtures requires --reuse')
+    args.output.mkdir(parents=True,exist_ok=True);fixture_dir=args.fixtures or args.output
     reports=[]
     for hand,palette,offset in [(1,0,0),(-1,0,0),(1,1,2)]:
         name=f'hand{hand:+d}-palette{palette}-shift{offset}'
         if args.reuse:
-            png=args.output/(name+'.png');ids=args.output/(name+'-ids.png')
-            provenance=json.loads((args.output/(name+'-provenance.json')).read_text())
+            png=fixture_dir/(name+'.png');ids=fixture_dir/(name+'-ids.png')
+            provenance=json.loads((fixture_dir/(name+'-provenance.json')).read_text())
         else:
             png,ids,provenance=render(args.output,hand,palette,offset)
             (args.output/(name+'-provenance.json')).write_text(json.dumps(provenance,indent=2)+'\n')

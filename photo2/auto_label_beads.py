@@ -175,10 +175,13 @@ def detect(image,max_dimension=1600):
     # Keep its first filter narrow; a bead-sized blur can erase black-bead seeds.
     response=ndi.gaussian_filter(v,max(.65,min(1.5,diameter*.08)))-ndi.gaussian_filter(v,diameter*.40)
     noise=float(np.median(abs(response[border]-np.median(response[border])))*1.4826)
-    locations=peak_local_max(response,min_distance=max(2,int(diameter*.4)),
+    # Classify the local surroundings before bead-scale peak suppression. A
+    # colored bead's stronger highlight must not erase a nearby black seed.
+    # The two-pixel floor suppresses pixel noise, not neighboring bead bodies.
+    locations=peak_local_max(response,min_distance=2,
         threshold_abs=max(.015,4*noise),labels=band)
     dark_max=float(np.quantile(v[foreground],.48))
-    colored=list(points);reflection_rejections=[]
+    colored=list(points);reflection_rejections=[];dark_seeds=[]
     for y,x in locations:
         if dt[y,x]<diameter*.35:
             excluded.append(dict(x=float(x),y=float(y),kind='dark-reflection',reason='near approximate band edge'))
@@ -202,6 +205,12 @@ def detect(image,max_dimension=1600):
                 reason='associated colored interior' if associated else 'chromatic surround' if chromatic_fraction>.55 else 'surround insufficiently dark',
                 chromatic_ring_fraction=chromatic_fraction,ring_value=ring_value))
             continue
+        if any(max(abs(x-xx),abs(y-yy))<=max(2,int(diameter*.4)) for yy,xx in dark_seeds):
+            reflection_rejections.append(dict(x=float(x),y=float(y),
+                reason='near stronger accepted dark-surround reflection',
+                chromatic_ring_fraction=chromatic_fraction,ring_value=ring_value))
+            continue
+        dark_seeds.append((int(y),int(x)))
         points.append(dict(x=float(x),y=float(y),kind='dark-reflection',appearance_mode=0,
             support_area=1.,band_clearance=float(dt[y,x]),reflection_response=float(response[y,x]),
             chromatic_ring_fraction=chromatic_fraction,ring_value=ring_value,
@@ -217,6 +226,7 @@ def detect(image,max_dimension=1600):
         border_fraction=.025,band_smoothing_sigma=sigma,other_component_area=other_component_area,
         apparent_internal_width=internal_width,apparent_diameter=diameter,strip_halfwidth=axis['width'],
         hue_modes_degrees=modes,saturation_floor=smin,reflection_response_floor=max(.015,4*noise),
+        reflection_suppression='two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds',
         role='Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee')
     for rows in (excluded,reflection_rejections):
         for p in rows:p['source_xy']=((np.array([p['x'],p['y']])+.5)/scale-.5).tolist()

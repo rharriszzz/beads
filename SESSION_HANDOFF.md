@@ -1,6 +1,61 @@
 # Beads session handoff — new branch
 
-## Current R167 — First automatic whole-photo pass implemented; review next
+## Current R169 — Black reflections restored before color competition
+
+User “continue” resumes central-bead coverage, one bounded aspect. Read
+[REFLECTION_SUPPRESSION.md](photo2/REFLECTION_SUPPRESSION.md) and
+[summary/raw before-after](photo2/review/r169/summary.json). Preflight daisy/WSL2,
+photo-2-reconstruction-v2 at3a74cdf,clean,no stashes,fetch/upstream0/0. No agents.
+Consider weaker reflections, brightness seams, supported missing-neighbor slots,
+projected templates; diagnose first, choose reflection-context suppression.
+
+Old global peak maximum filter removed strong black core14 reflection (.24305)
+because a colored-highlight flank in its5analysis-pixel window was brighter
+(.24508). Keep filter/threshold/color checks/radius; extract2px local peaks,
+classify surroundings, then suppress only accepted nearby dark-surround seeds
+with the inclusive old radius. All908baseline coordinates retained; add50points.
+958 proposals (642chromatic/316dark-reflection),1462tentative edges. No boundary
+fitting, pose/camera/hand refinement or full-string index/N/repeat claim.
+
+New exact live snapshot manual-labels-r169.json revision422,76points/41series/
+129completedlinks SHA1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff.
+User can keep saving live; never write it or assume its hash stays fixed. New
+snapshot/every old snapshot protected. Baseline same76 evaluator58associations/
+44forward links; after63/49,20.39px gate,provisional identity. R14 recovered point
+is inside prior maker-confirmed core; R170 says “Yes, P is inside bead 10.” Don't
+ask about R14 again. R168 confirmed448/449/450IDs/sourcepositions still present;
+automatic numbers shift after insertion, compare stable IDs/coordinates instead.
+The supplied14→17 d2 edge now has both points inside confirmed cores and is
+reproduced;11→14 d3 remains missing. P→R d2 also reproduces supplied10→14 with
+maker-confirmed P ownership; the10→14→17 d2 chain has established body identities.
+
+Known render/ID fixtures unchanged; new reports separate with check_auto_labels
+--reuse --fixtures old_render_dir --output new_report_dir. Eligible coverage
+130→132/168,130→133/168,132→133/169;0onpaper and4/4/3duplicates unchanged.
+True unsigned neighbor ratios273/281→280/292,268/274→271/279,276/285→279/291:
+extra wrong links retained explicitly. No blanket accuracy improvement/hand claim.
+Photo graph45→37components,largest192→204,17isolates,62ambiguities,190gaplinks;
+510rejected edge features aren't510excluded beads. Reflective interior locations
+aren't physical centers/outward anchors; body/link uncertainty remains separate.
+
+Full new proposal file output/r169/context-first/annotations.json loads in app;
+old r167 file untouched. Blind/evaluator runs identical. Eleven tests pass
+(4automatic,7LabelStore), including actual original image/maker-confirmed core14
+regression with no diagnostic coordinates inside runtime. No sockets/GUI tested.
+Original photo/beads.pov/old fits unchanged. review_reflection_suppression.py
+replays pinned committed detector3a74cdf with source-SHA assertion; all maker
+data read after detection/adjacency decisions. Curated figures/summary tracked,
+routine outputs ignored. Source/core/snapshot/script/image hashes preserved.
+
+**Stopping point:** one coverage correction, paired checks and ownership review.
+**Next bounded task:** missing/wrong local adjacency from established body
+identities, notably11→14 d3; retain uncertainty before any nonlocal hand witness.
+Q169.1 is answered (P on10); no other inventory/link certainty follows. No physical
+necklace/hidden-body requirement. Recommend gpt-6.1-sol / High,same session,no/new.
+Current delivery is scoped implementation/docs/curated images; prior3a74cdf pushed
+and exact remote tip verified. User controls model/session; no usage claim.
+
+## Prior R167 — First automatic whole-photo pass implemented; review
 
 User asks automatic substantial-visible-body/adjacency labels around the whole
 photograph, including black, then photo-only helicity. First program implemented:

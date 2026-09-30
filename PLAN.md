@@ -11,7 +11,38 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R167: first automatic pass delivered; coverage review next
+## Current task — R169: recover suppressed black reflections
+
+Standalone continue resumes central-body coverage. [Correction and Q169.1](photo2/REFLECTION_SUPPRESSION.md)
+move bead-scale reflection suppression after appearance-context checks. A colored
+highlight flank was erasing a strong reflection in maker-confirmed black core14.
+Choose this mechanism after comparing weaker reflections, colored-region seams,
+missing-neighbor searches and projected templates. Do not lower the learned
+reflection threshold or change color priors/geometry to fix this error.
+
+Preserve all908 baseline locations and add50 dark-surround reflection proposals:
+958 points,1462 tentative links. Freeze revision422 (76points/41series/129links)
+separately; original live labels and old snapshots stay untouched. Paired photo
+comparison58→63 nearby associations,44→49 forward-agree links. R on14 is inside
+the previously confirmed core; R170 confirmsP is inside maker10. The supplied
+10→14→17 d2 chain is reproduced with established body identities.
+No new confirmed identity follows from a proximity association alone.
+
+Known-source fixtures locate130→132/168,130→133/168,132→133/169 eligible bodies;
+0 points on paper, duplicate counts remain4/4/3. Neighbor precision declines
+97.2→95.9%,97.8→97.1%,96.8→95.9%; preserve this tradeoff and tentative edges.
+Graph45→37components,largest192→204,17isolates,62ambiguities,190possible gaps.
+Blind/evaluator runs identical; all R168 confirmed stable IDs/positions retained.
+Eleven tests pass, including an independent maker-confirmed black-core regression;
+no sockets/browser/launcher test. No pose fitting, index/N/repeat or hand inference.
+
+**Stopping point:** one suppression correction with paired checks and illustrated
+ownership review. **Next bounded task:** diagnose missing/wrong local neighbor
+links from established body identities, especially supplied11→14 d3 (still absent),
+before treating any whole-ring path as consecutive steps. No physical necklace
+or hidden-body prerequisites. Recommend gpt-6.1-sol / High; stay here, no /new.
+
+## Prior R167: first automatic pass delivered; coverage review
 
 User asks to automate all sufficiently visible bodies and directional neighbors
 around the photograph, using only the photo. The [first implementation and checks](photo2/AUTO_LABELS.md)
