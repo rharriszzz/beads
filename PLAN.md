@@ -11,18 +11,35 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R167: automatic whole-photo bead/adjacency proposals
+## Current task — R167: first automatic pass delivered; coverage review next
 
-User asks to automate all sufficiently visible bodies and their directional
-neighbors around the entire photograph, with photo-only helicity inference.
-Preserve the new 40-body/86-link manual evidence for evaluation and keep live
-annotations untouched. Present color/highlight regions, blob detection, necklace
-strip detection and projected-template walking; begin with an image-derived
-strip plus interior color/reflection evidence. Learn background/palette/location
-from the input, including black; no saved coordinates/HSV boxes or magenta rule.
-Keep uncertain/gap/edge bodies explicit and tentative links separate from confirmed
-maker relations. Current stage is implementation, not a finished detector or
-accepted helicity. Continue after the audit/export checkpoint without stopping.
+User asks to automate all sufficiently visible bodies and directional neighbors
+around the photograph, using only the photo. The [first implementation and checks](photo2/AUTO_LABELS.md)
+produce908 proposals (642 chromatic/266 reflection-dark) and1330 tentative links.
+The live maker file is untouched. Learn background/palette/scale/locations from
+the image; no saved coordinates, fixed HSV boxes or magenta rule. Four methods
+considered; select learned image strip plus interior/reflection evidence.
+
+Fixed revision340 evaluation:50/66 nearby point associations,34/54 associated
+maker links agree (96 supplied links total). Proximity does not prove identity.
+Independent source-macro fixtures:130/168,130/168,132/169 eligible bodies located;
+0 points on paper,3–4 duplicates,96.8–97.8% true unsigned neighbors. Two hands
+and changed palette/background/displacement tested; completeness is unresolved.
+Blind/evaluator runs identical; actual labeler load/save provenance and three
+regressions pass. Automatic proposals remain marked after editing/saving.
+
+Whole-photo graph45 components,20 isolated observations,66 ambiguous choices,
+207 possible skipped-step links. Missing/excluded evidence remains explicit;
+297 rejected edge features are not297 excluded beads. No accepted helicity,
+full-string indices,N,closure or repeat. Earlier geometry fits remain unchanged.
+
+**Stopping point:** automatic program, separate labeler export, independent checks
+and curated raw/point/link review. [Q167.1](photo2/AUTO_LABEL_REVIEW.md) is answered:
+maker confirms448/449/450are three distinct beads (R168), not all proposed edges.
+**Next bounded task:** improve missed/merged/split central bodies and their
+neighbors. Do not use unverified whole-ring cycles as hand witnesses.
+No physical necklace or hidden-body prerequisites. Recommend gpt-6.1-sol / High;
+same session, no /new needed. R161–166 checkpoint92700e4 was published and verified.
 
 ## Prior task — R161–R166: extended labels and wider photo-only workspace
 

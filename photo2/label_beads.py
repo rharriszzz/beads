@@ -181,6 +181,12 @@ class LabelStore:
                        revision=previous['revision'] + 1, annotation_kind='manual numbered bead locations and ordered direction series',
                        created_at=previous.get('created_at', now), updated_at=now, annotations=annotations, series=series,
                        direction_definitions=DIRECTIONS)
+            if previous.get('automatic_proposals') is True:
+                # Editing one proposal does not confirm the remaining inventory.
+                # Preserve the origin and uncertainty across subsequent saves.
+                doc['automatic_proposals'] = True
+                doc['automatic_origin'] = previous.get('automatic_origin', {})
+                doc['annotation_kind'] = 'automatic bead/adjacency proposals with manual edits; confirmation is not implied'
             if self.path.exists():
                 atomic_json(self.path.with_name(self.path.stem + '.previous.json'), previous)
             atomic_json(self.path, doc)

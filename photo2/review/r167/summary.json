@@ -1,0 +1,530 @@
+{
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "detector_sha256": "99af3a42cfcc6673934cf207623f46094167d763f69f564494d2ac0fc7843da1",
+  "calibration_sha256": "7227ee0963f16a7940b817d4f26af5b3c6f6c5fd5623e0974f55abac15837d24",
+  "review_script_sha256": "75890fd4416741387dad56de5cc4e75d2b0e9944a59779eeae1da489f5254343",
+  "parameters": {
+    "analysis_size": [
+      1277,
+      1600
+    ],
+    "scale_xy": [
+      0.502755905511811,
+      0.502828409805154
+    ],
+    "background_chromaticity": [
+      0.41883766651153564,
+      0.20576922595500946
+    ],
+    "background_mad": [
+      0.006991998758167028,
+      0.011370813474059105
+    ],
+    "background_value": 0.843137264251709,
+    "foreground_threshold": 20.025123596191406,
+    "border_fraction": 0.025,
+    "band_smoothing_sigma": 3.076923076923077,
+    "other_component_area": 0,
+    "apparent_internal_width": 8.495227600363814,
+    "apparent_diameter": 13.671342289621748,
+    "strip_halfwidth": 24.413111231467404,
+    "hue_modes_degrees": [
+      27,
+      353
+    ],
+    "saturation_floor": 0.5740740895271301,
+    "reflection_response_floor": 0.02981969714164734,
+    "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+  },
+  "inventory": {
+    "proposed_bodies": 908,
+    "chromatic": 642,
+    "dark_reflection": 266,
+    "candidate_links": 1330,
+    "excluded_edge_features": 297
+  },
+  "graph": {
+    "components": 45,
+    "component_sizes": [
+      192,
+      101,
+      77,
+      62,
+      59,
+      49,
+      46,
+      41,
+      29,
+      29,
+      24,
+      23,
+      23,
+      20,
+      19,
+      17,
+      15,
+      13,
+      13,
+      11,
+      7,
+      7,
+      5,
+      4,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "isolated_observations": 20,
+    "ambiguous_direction_choices": 66,
+    "possible_skipped_step_links": 207
+  },
+  "manual_evaluation": {
+    "annotation_sha256": "77bbb2c6a445763215e1a7cef24bc9acf22e721c46c698890b447ba410036abe",
+    "revision": 340,
+    "manual_beads": 66,
+    "matched_within_gate": 50,
+    "gate_pixels": 20.393131809412814,
+    "manual_links": 96,
+    "forward_links_agree": 34,
+    "reverse_links": 0,
+    "limitation": "No true body boundaries supplied; nearest point association is provisional, and completed series can contain skipped steps",
+    "associated_relations": 54,
+    "unmatched_maker_numbers": [
+      2,
+      7,
+      10,
+      12,
+      14,
+      25,
+      30,
+      34,
+      35,
+      36,
+      37,
+      42,
+      43,
+      44,
+      58,
+      62
+    ]
+  },
+  "calibration": [
+    {
+      "hand": 1,
+      "palette": 0,
+      "offset": 0,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette0-shift0-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "ddb41ee3067af074d4c8906a797b164ec183be52b1c6525ea3a67f78801a5c7b",
+      "id_scene_sha256": "5f81f8d65e0a71544257fdad0cb3601c05e3080e662e1997713848d50ad6f731",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "id_sha256": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+      "proposals": 136,
+      "eligible_visible": 168,
+      "eligible_located": 130,
+      "distinct_bodies": 132,
+      "on_paper": 0,
+      "duplicate_points": 4,
+      "adjacency_proposals": 281,
+      "true_unsigned_neighbors": 273,
+      "per_direction": {
+        "d1": {
+          "count": 73,
+          "true_neighbor": 69,
+          "deltas": {
+            "0": 3,
+            "1": 69,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 104,
+          "true_neighbor": 101,
+          "deltas": {
+            "0": 1,
+            "1": 1,
+            "6": 2,
+            "7": 98,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 104,
+          "true_neighbor": 103,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 103,
+            "7": 0,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.40317460894584656,
+          0.3333333134651184
+        ],
+        "background_mad": [
+          0.0007699664565734565,
+          0.001208280911669135
+        ],
+        "background_value": 0.5568627715110779,
+        "foreground_threshold": 26.269535064697266,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 25.48452241133466,
+        "apparent_diameter": 34.37962187110266,
+        "strip_halfwidth": 61.39218191268331,
+        "hue_modes_degrees": [
+          30,
+          227
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    },
+    {
+      "hand": -1,
+      "palette": 0,
+      "offset": 0,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand-1-palette0-shift0-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "8eab3b2327cfa5d8abe6fdfd3f36959b58dd81fe4776d98505f8b330ddd9d84c",
+      "id_scene_sha256": "f9ff3ea38c1643f0dd764f77a78f9c44be32a2e27fa4b44fd20ee713c9a7efb1",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "id_sha256": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+      "proposals": 135,
+      "eligible_visible": 168,
+      "eligible_located": 130,
+      "distinct_bodies": 131,
+      "on_paper": 0,
+      "duplicate_points": 4,
+      "adjacency_proposals": 274,
+      "true_unsigned_neighbors": 268,
+      "per_direction": {
+        "d1": {
+          "count": 76,
+          "true_neighbor": 70,
+          "deltas": {
+            "0": 4,
+            "1": 70,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 101,
+          "true_neighbor": 101,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 101,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 97,
+          "true_neighbor": 97,
+          "deltas": {
+            "0": 0,
+            "1": 3,
+            "6": 1,
+            "7": 93,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.40317460894584656,
+          0.3333333134651184
+        ],
+        "background_mad": [
+          0.0007699664565734565,
+          0.001208280911669135
+        ],
+        "background_value": 0.5568627715110779,
+        "foreground_threshold": 26.269535064697266,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 20.938777397956073,
+        "apparent_diameter": 34.32484814241718,
+        "strip_halfwidth": 61.29437168288782,
+        "hue_modes_degrees": [
+          30,
+          227
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    },
+    {
+      "hand": 1,
+      "palette": 1,
+      "offset": 2,
+      "N": 312,
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r167/calibration/hand+1-palette1-shift2-ids.png",
+        "+W800",
+        "+H800",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "scene_sha256": "998737243b2178789363b079b708e492ccdf8a91407b181b77d66cbb840615b3",
+      "id_scene_sha256": "038a5a587d2b2c4bf54caee1d97c0879bbe12fbda6f41751276ac791010e03ab",
+      "source_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "id_sha256": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd",
+      "proposals": 138,
+      "eligible_visible": 169,
+      "eligible_located": 132,
+      "distinct_bodies": 135,
+      "on_paper": 0,
+      "duplicate_points": 3,
+      "adjacency_proposals": 285,
+      "true_unsigned_neighbors": 276,
+      "per_direction": {
+        "d1": {
+          "count": 73,
+          "true_neighbor": 69,
+          "deltas": {
+            "0": 3,
+            "1": 69,
+            "6": 0,
+            "7": 0,
+            "None": 0
+          }
+        },
+        "d2": {
+          "count": 104,
+          "true_neighbor": 100,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 1,
+            "7": 99,
+            "None": 0
+          }
+        },
+        "d3": {
+          "count": 108,
+          "true_neighbor": 107,
+          "deltas": {
+            "0": 0,
+            "1": 0,
+            "6": 107,
+            "7": 0,
+            "None": 0
+          }
+        }
+      },
+      "limitation": "Visible-area eligibility is diagnostic; on-bead ownership does not establish one point per body, outward anchors or direction signs.",
+      "parameters": {
+        "analysis_size": [
+          800,
+          800
+        ],
+        "scale_xy": [
+          1.0,
+          1.0
+        ],
+        "background_chromaticity": [
+          0.23151126503944397,
+          0.32415902614593506
+        ],
+        "background_mad": [
+          0.0009364110883325338,
+          0.0009334948263131082
+        ],
+        "background_value": 0.5137255191802979,
+        "foreground_threshold": 22.57506561279297,
+        "border_fraction": 0.025,
+        "band_smoothing_sigma": 1.5384615384615385,
+        "other_component_area": 0,
+        "apparent_internal_width": 23.043910475038267,
+        "apparent_diameter": 34.452518050209335,
+        "strip_halfwidth": 61.5223536610881,
+        "hue_modes_degrees": [
+          133,
+          313
+        ],
+        "saturation_floor": 0.2,
+        "reflection_response_floor": 0.015,
+        "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+      }
+    }
+  ],
+  "question_observations": {
+    "448": {
+      "x": 563.1114063276373,
+      "y": 1092.1294800059081,
+      "kind": "chromatic",
+      "appearance_mode": 1,
+      "support_area": 99.0,
+      "inset_support_radius": 2.983624440091522,
+      "band_clearance": 19.79898987322333,
+      "status": "automatic interior proposal; unreviewed",
+      "station": 2539,
+      "cross": 1.3271702322615684,
+      "source_xy": [
+        1120.5438309101007,
+        2172.46687836175
+      ],
+      "stable_id": "6654d6b7-3a0b-554b-81ba-f1cc948b34ed"
+    },
+    "449": {
+      "x": 572.0,
+      "y": 1093.0,
+      "kind": "dark-reflection",
+      "appearance_mode": 0,
+      "support_area": 1.0,
+      "band_clearance": 15.652475842498529,
+      "reflection_response": 0.24834156036376953,
+      "chromatic_ring_fraction": 0.0,
+      "ring_value": 0.1882352977991104,
+      "status": "reflection/dark-surround body proposal; full extent/color uncertainty retained",
+      "station": 2547,
+      "cross": 6.711912873740599,
+      "source_xy": [
+        1138.2235708692247,
+        2174.198125
+      ],
+      "stable_id": "cd932f54-bd6d-596d-af03-e5c45c55569e"
+    },
+    "450": {
+      "x": 568.8981267834149,
+      "y": 1079.0234980498217,
+      "kind": "chromatic",
+      "appearance_mode": 1,
+      "support_area": 108.0,
+      "inset_support_radius": 2.547050635546497,
+      "band_clearance": 17.46424919657298,
+      "status": "automatic interior proposal; unreviewed",
+      "station": 2551,
+      "cross": -6.99196501151423,
+      "source_xy": [
+        1132.0538308769567,
+        2146.402356746583
+      ],
+      "stable_id": "1a292a0f-c7c8-5ed0-9330-bb347c45958c"
+    }
+  },
+  "caveat": "Unreviewed automatic candidates; no completeness, body identity, helicity, N, closure or color-repeat claim",
+  "curated_image_sha256": {
+    "adjacency-context.png": "00e7bffab4249bcc5e099784028ab5a145beb1cf648af45c62729dd2ee72dde9",
+    "body-question.png": "0061f801f7da8d934f5013a9065dadf3febabf50d849a34874e38278ee1541ae",
+    "known-examples.png": "5d6307374127cd2bb13050c3bcf91f3366ddc224fa469e644107a8fc925ec399",
+    "manual-comparison.png": "e3416299082b420808bff242466a514496dde72eca25f74494c1ad06829a8739",
+    "whole-photo.png": "da067446e63afcd673a92ebbc1ae0f9327bef25421fc354f7202dd0d0bddfdae"
+  }
+}

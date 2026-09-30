@@ -109,6 +109,14 @@ Another photograph defaults to its whole oriented extent. This is a manual evide
 collection tool. The viewing crop is explicit; it supplies no automatic bead
 locations, colors, closure, total bead count, repeat or resolved string indices.
 
+R167 adds a separate [automatic proposal generator](AUTO_LABELS.md). Its
+schema2 output opens in this app with `--full-image --annotations` pointing to
+the separate generated file. Automatic numbers/links remain provisional.
+Saving an edited automatic file preserves its origin and uncertainty; it does
+not declare every untouched proposal maker-confirmed. Original manual saves
+retain their existing behavior. The generator refuses the maker live path and
+refuses to overwrite reviewed output.
+
 ## Verification and stopping point
 
 R143–R147: the maker ran the labeler, saved 27 locations and 19 direction series,

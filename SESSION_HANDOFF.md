@@ -1,32 +1,57 @@
 # Beads session handoff — new branch
 
-## Current R167 — Automatic whole-photo labels requested; active
+## Current R167 — First automatic whole-photo pass implemented; review next
 
-User asks to automatically locate all sufficiently visible beads and label
-directional adjacency around the whole photo, then see if helicity becomes clear.
-Photo-only; include substantial black bodies, ignore edge slivers/hidden bodies
-while preserving unknown slots. Preserve original live labels and immutable
-revision296; manual40 locations/86 edges are validation evidence, not runtime
-seeds. Candidate automatic IDs/links must stay separate from maker-confirmed ones.
-
-Four methods presented: color/highlight regions, blob detection, image-derived
-necklace-strip detection, projected-template neighbor walking. Select strip with
-local H/S/V colored interior and reflection/dark-context black evidence. Derive
-background/palette/scale/locations from RGB; no fixed HSV boxes, magenta definition
-or diagnostic coordinates as automatic priors. Implementation has not begun yet.
-Do not stop after delivering audit/export; the new automatic task remains active.
-Existing local_pilot.py/interior_loops.py are assisted diagnostics, not detectors.
+User asks automatic substantial-visible-body/adjacency labels around the whole
+photograph, including black, then photo-only helicity. First program implemented:
+[AUTO_LABELS.md](photo2/AUTO_LABELS.md), [review/Q167.1](photo2/AUTO_LABEL_REVIEW.md),
+[summary](photo2/review/r167/summary.json). Target all sufficiently visible bodies,
+but do not claim that coverage has been achieved. Four methods considered; select
+image-derived strip plus learned hue/S/V interiors and reflection/dark surrounds.
+No manual locations/HSV boxes/known palette/ID renders enter detection decisions.
 SciPy/skimage/numpy installed; cv2/sklearn absent. No agent delegation authorized.
 
-Live save keeps advancing while user labels. Fixed new evaluation snapshot is
-manual-labels-r167.json revision340, 66 points/33 series (use exact completed links
-from snapshot); do not reread live data as fitter/detector input or overwrite it.
-The prior revision296 40-point graph report and portable export remain immutable.
+`auto_label_beads.py` output/r167/automatic has908 proposals (642 chromatic,
+266 dark-reflection) and1330 tentative ordered pairs in labeler schema2. New
+observation numbers are not maker numbers/bead_index. Axis is approximate image
+strip, not a physical centerline/closure. Core/reflection points are not measured
+outward minor-circle anchors. No full bead boundaries used. Rejected297 near-band-
+edge features are not a bead inventory. Preserve unknown slots and uncertainties.
+`--replace-proposals` only permits unchanged revision0 generated files with
+matching report hash; maker live path explicitly refused. Labeler now preserves
+automatic origin/uncertainty after saves instead of declaring all marks confirmed.
 
-Prior audit/export/explanation code, docs, snapshot and curated images below are
-complete but pending checkpoint publication. Record/verify them, then continue
-automatic pipeline. Methods should be tested on manual evidence and independent
-source-macro synthetic appearance/ID examples before any inverse/helicity claim.
+Fixed evaluator snapshot manual-labels-r167.json revision340,66 points/33series/
+96 links;50 nearby one-to-one associations,54 associated links,34 forward matches.
+Proximity gate20.39px is provisional identity, not known coverage. Initial forced
+Hungarian matching displaced local matches; dummy unmatched slots fix/test this.
+Unreflected dark-patch additions did not improve manual coverage and added wrong
+synthetic links; excluded. Local pair-symmetric angle estimates preserve reciprocal
+classification. Full graph45 components/largest192,20 isolates,66 ambiguities,
+207 possible skipped steps. No accepted helicity,N,closure,repeat or full indices.
+
+Independent POV source-macro/trig fixtures N312/q6.5 both hands, plus changed
+palette/background/displacement. Evaluator-only two-channel ID render scores
+130/168,130/168,132/169 eligible bodies located;0onpaper,3–4duplicates;
+273/281,268/274,276/285 true unsigned1/6/7 links. Eligibility area diagnostic
+explicit, not physical-exposure guarantee; names/signs not certified by that rate.
+Initial displaced fixture clipped margins and failed; widened camera72 corrected.
+Blind/evaluator full-photo runs have identical points/IDs/learned params/graph.
+Actual LabelStore load/save and3regressions pass without browser/server testing.
+Reproduce auto_label_beads.py, check_auto_labels.py, review_auto_labels.py and
+test_auto_labels.py as documented. Routine outputs ignored; curated figures and
+summary tracked. Source photo/beads.pov/snapshots/old geometry untouched.
+
+Live save keeps advancing; do not write it or treat its hash as fixed. Revision296
+audit/portable export immutable and checkpoint92700e4 published/remote verified.
+Current code/docs/images form the next scoped delivery. No agent delegation.
+**Stopping point:** first automatic pass plus independent checks and review.
+R168 answers Q167.1: “Yes, three different beads.” Only distinct identities of
+448/449/450are confirmed; no complete inventory, neighbors/indices or hand.
+**Next bounded task:** missed/merged/split central bodies and neighbors.
+Do not request physical necklace or hidden
+body labels; keep old22/23/24/25 evaluator-only for later geometry fits. Recommend
+gpt-6.1-sol / High; stay here, no /new needed. No model/session switch assumed.
 
 ## Prior R161–R166 — Extended save and wider photo-only view
 

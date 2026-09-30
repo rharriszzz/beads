@@ -2415,3 +2415,102 @@ Actual immutable automatic-evaluation snapshot is revision 340,
 66 beads/33 series/96 completed links, SHA
 77bbb2c6a445763215e1a7cef24bc9acf22e721c46c698890b447ba410036abe. This supersedes
 the anticipated revision322/30-series description above; live editing continues.
+
+## R167 implementation outcome — Whole-photo automatic proposals, first pass
+
+Continue directly after audit/export checkpoint92700e4 (published, exact remote
+tip verified), as requested. Preflight daisy/WSL2, photo-2-reconstruction-v2,
+no stashes, clean except new automatic code; fetch confirms upstream0/0. No
+delegation or external messaging. User's live annotations never written.
+
+Four methods previously presented; implement image-derived necklace strip plus
+learned circular-H/S/V interiors and reflection/dark-surround evidence in
+auto_label_beads.py. Learn background/palette/scale/location from each input;
+no maker coordinates/HSV boxes/magenta rule. Only independent evaluator code
+reads saved labels, after detection/adjacency decisions. Approximate image strip
+is not physical centerline, source loop or closure. Interior/highlight locations
+are not verified outward minor-circle anchors. No full bead outlines produced.
+
+Frozen photo output908 observation proposals (642chromatic/266dark-reflection),
+1330tentative directional pairs,297rejected near-band-edge features (not bead
+count). New IDs/numbers separate from maker/full-string indices. Reciprocal
+choices use local pair-symmetric angular modes, preserve66ambiguous choices/
+207possible skipped steps. Graph45components,largest192,20isolates. Coverage
+not complete; helicity,N,closure,repeat/full indices unresolved. Keep unknown
+slots rather than compressing them. Program exports separate labeler JSON;
+overwrite guard refuses maker live path, edited/foreign or changed generated
+files. LabelStore now retains automatic origin/uncertainty on subsequent saves.
+
+Revision340 snapshot66points/33series/96links:50nearby one-to-one associations
+within20.39px,34forward-agree links out of54with associated endpoints. Proximity
+is not body identity proof. Initial forced Hungarian matching sent missing local
+marks to remote sections and displaced valid matches; unmatched dummy slots
+fix/regression-test this. Stronger unreflected dark-patch seeding added false
+links without improving manual coverage, so excluded. Neither missed marks nor
+edge-feature rejection proves a maker-labelled body is an edge sliver.
+
+Independent source-macro/trig known-render tests N312/q6.5, original literal
+radius/annular shape. Both hands plus changed palette/background/displacement.
+Two-channel emission IDs are evaluator-only, never detector inputs. Located
+eligible bodies130/168,130/168,132/169;0proposed points on paper;4/4/3duplicate
+points. True unsigned1/6/7 neighbors273/281,268/274,276/285 (97.2/97.8/96.8%).
+Eligibility threshold≥max(20pixels,.35median positive visible area) is diagnostic,
+not an exposure guarantee. Scores don't certify direction names/signs or the
+real photograph. Initial shifted fixture clipped substantial margins and failed;
+expanded camera framing72 retains them and passes. No automatic universality or
+helicity claim from these controlled examples.
+
+Actual full-photo LabelStore loads908points/1330series. Three regressions pass:
+missing-point matching, overwrite protection, export plus save provenance. No
+browser/server/launcher test requested or run. Two full-photo CLI runs with and
+without maker evaluation yield identical locations/IDs/parameters/adjacency.
+Original photo/beads.pov/snapshot hashes unchanged; old geometry/held-out fit
+constraints unchanged. User live save can continue advancing.
+
+Curate whole/raw/point/link/known-example figures and parameter/provenance summary
+under review/r167; routine artifacts ignored. AUTO_LABELS.md gives commands,
+limitations and stopping point. Q167.1 in AUTO_LABEL_REVIEW.md asks whether new
+automatic448yellow/449black/450yellow mark three different beads; raw supporting
+image retained. Answer pending, not an approval gate. Current numerical hashes:
+photo eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb;
+beads.pov b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0;
+snapshot77bbb2c6a445763215e1a7cef24bc9acf22e721c46c698890b447ba410036abe;
+detector99af3a42cfcc6673934cf207623f46094167d763f69f564494d2ac0fc7843da1.
+Other script/scene hashes and POV commands in summary; reproduce
+.venv/bin/python photo2/auto_label_beads.py --output photo2/output/r167/automatic --validation photo2/manual-labels-r167.json
+(use fresh directory, or --replace-proposals only for unchanged generated output),
+check_auto_labels.py, review_auto_labels.py, unittest discover -s photo2 -p
+test_auto_labels.py. Scoped code/docs/images ready for commit/push; final remote
+verification reported in chat after delivery, not invented here.
+
+Stopping point: first whole-photo proposal program with independent checks and
+illustrated review; all-sufficient-body coverage remains unfinished. Next bounded
+task: review three identities and improve missed/merged/split central bodies and
+their neighbors before any nonlocal hand witness. No physical necklace or hidden
+bead prerequisites. Recommend gpt-6.1-sol / High, stay in this conversation;
+no /new needed. User controls model/session switching.
+
+R167 final checks:10 tests pass (3automatic regressions plus7existing LabelStore
+tests), without sockets/browser/launcher. Local Markdown links and curated
+script hashes verified; curated figures visually inspected. Question image
+now gives448/449/450 separate arrow labels for clarity; same exact points/IDs.
+Record appearance/ID PNG and curated-image hashes alongside scene/source/script
+hashes. Python compilation and whitespace checks pass. New supporting image
+hashes do not assert an answer to Q167.1; it remains pending.
+
+## R168 — Maker confirms three automatic body identities
+
+Reply to Q167.1: “Yes, three different beads.” This confirms automatic448
+(chromatic interior),449(reflection/dark-surround),450(chromatic interior) mark
+three distinct bodies in the curated raw context. Preserve exact reply in
+AUTO_LABEL_REVIEW.md; their source coordinates/stable IDs and supporting image
+hash are in review/r167/summary.json. It does not confirm all proposals, colors
+as a separate question, adjacency unit steps/signs, complete boundaries, outward
+anchors or helicity. The numerical detector/graph/calibration outputs remain
+unchanged; no maker confirmation becomes a runtime prior.
+
+Update plan/handoff stopping point: first automatic proposal implementation
+and bounded identity review are complete; coverage/helicity remain unresolved.
+Next narrow task is improving missed/merged/split central bodies and their
+neighbors. No new numerical fit or repeated tests needed for saving this answer.
+Recommend gpt-6.1-sol / High, stay here; no /new needed. Continue scoped delivery.

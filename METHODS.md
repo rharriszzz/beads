@@ -644,6 +644,22 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R167 automatic whole-photo proposal pass:** [implementation and calibration](photo2/AUTO_LABELS.md)
+takes only RGB at runtime, learns perimeter background/palette/scale, traces an
+approximate necklace image strip, and places conservative chromatic-interior or
+reflection/dark-surround points. Infer local angle families, propose reciprocal
+nearest directional pairs, preserve ambiguous choices and possible gaps. Export
+separate schema2 labeler annotations; automatic provenance survives manual saves.
+No complete bead boundaries or verified outward anchors. Maker points are post-
+decision evaluation only; blind/evaluator runs match exactly. Independent original-
+macro two-hand/changed-appearance ID fixtures expose roughly78% eligible coverage,
+3–4 duplicate points and96.8–97.8% unsigned-neighbor precision. Those are diagnostic
+render metrics, not certified photo coverage/signs. The real908-point/1330-link
+graph remains fragmented; helicity/full indices are unresolved. Review raw photos
+beside points/links, correct central-body identity errors, then test nonlocal
+relations. Reproduction commands, hashes and [Q167.1](photo2/AUTO_LABEL_REVIEW.md)
+are linked from the experiment. Preserve the original live annotations.
+
 **R161–R166 extended manual evidence:** [40-body graph audit](photo2/LABEL_EXTENSION.md)
 checks saved-data deltas, cycles and triangle-basis rank. Both weighted maps are
 injective; local triangle closure alone cannot choose them.
