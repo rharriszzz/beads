@@ -5,6 +5,10 @@ a separate958-point proposal file and paired checks. The counts/figures below
 remain the frozen first pass; its annotation file is preserved. Coverage improves
 but some extra neighbor proposals are wrong. No helicity has been established.
 
+R171's [local-neighbor diagnosis](NEIGHBOR_ANGLES.md) shows why11→14 is
+rejected and compares shorter-pair angular estimates against known renders.
+Those estimates lose other correct links, so the production program is unchanged.
+
 The first implementation produces **908 observation proposals and 1,330
 tentative directional links around the photograph**, including 266 reflection/
 dark-surround proposals. It runs from the image alone. It is incomplete and does

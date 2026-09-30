@@ -2601,3 +2601,88 @@ d2 chain, which the program reproduces. It does not confirm all proposed links,
 unit string offsets/signs, bead extents, outward anchors or helicity. The
 supplied11→14 d3 link remains the concrete next adjacency issue. Complete this
 bounded delivery and stop; recommend gpt-6.1-sol / High here, no /new needed.
+
+## R171 — Continue; diagnose the missing11→14 d3 link
+
+User: “continue.” Resume the stated next bounded local-neighbor task, not a new
+whole-necklace geometry/helicity phase. Preflight daisy/WSL2,
+photo-2-reconstruction-v2 atf42b488dfb1bb07782ee2caeb8de4f385d97ab62,
+clean checkout/no stashes, fetch and upstream0/0. No delegation. Preserve all
+maker saves, old automatic outputs and source geometry. Use the fixed revision422
+76-point/41-series/129-link evaluator; no new live-file capture is required.
+
+Diagnosis:11 and14 have detected points inside maker-confirmed interiors.
+11→14 is the nearest other point to11 and inside the candidate radius. Its
+strip displacement(6.00,−10.77113) has angle119.11975°, versus pair-local modes
+d1=81°,d2=32.5°,d3=161°. Closest family is d1 with38.12° deviation; all
+families exceed22° and the pair is rejected before mutual-neighbor/gap rules.
+Program instead proposes11→17 d3 (175.68°,18.42analysis pixels). Existing
+14→proposed16 d3 (167.44°,14.24pixels) is reproduced, but16's automatic point
+was only associated by proximity, not independently owned yet.
+
+Present four methods: shorter-pair direction estimates, distance-first ranking,
+small-triangle consistency, projected bead geometry. Select a bounded test of
+the first. probe_neighbor_angles.py replays the pinned R169 source, asserts
+its SHA, then changes only histogram weights in six explicit diagnostic variants:
+inverse-distance powers1/2/4 and caps1.25/1.5/1.75×median nearest spacing.
+For each photograph/render, complete detection and all seven graphs before maker
+or ID evaluation. No coordinates, source-loop indices or saved palette ranges
+enter any detector or adjacency decision. Test results are diagnostics, not an
+image-derived automatic model-selection rule.
+
+All variants share958 points and63/76proximity associations. Baseline1462links/
+49forward maker matches, inverse-square1385/54, inverse-fourth1302/48,
+cap1.5 gives1415/52. These three recover11→14 but lose14→proposed16 and
+lose true unsigned neighbors in all three independent appearance/ID fixtures:
+baseline280/292,271/279,279/291; inverse-square270/285,268/278,276/288;
+inverse-fourth242/262,254/271,250/272; cap1.5 gives278/292,269/277,276/289.
+The other variants do not recover11→14. Full failures/gains retained in
+review/r171/summary.json. No variant adopted; production code/outputs unchanged.
+
+The two successive supplied d3 links between proposed points differ48.32332°;
+one shared22° gate cannot admit both. A nearby point can have correct body
+ownership without being a consistent physical center or outward minor-circle
+anchor. Geometry/camera/lighting cause remains unmeasured, and proposed16's
+ownership must stay provisional. Do not infer hand, full indices,N,closure or
+repeat from these measurements. No physical necklace needed.
+
+Curate raw/current/experimental connections and local angular-support plots.
+Q171.1 in NEIGHBOR_ANGLES.md asks only whether cyanS=(1319.29349,269.52565)
+lies inside maker16's yellow bead; point ID0c32bde9-f6e9-522e-9d45-9129f55bccfd,
+maker ID1c5d48fe-0694-41c9-9e33-726b40ff6a44. No repeated question for11/14/17.
+Answer pending, not a permission gate. The figure draws sparse interior-point
+connections, never bead boundaries. Source/code/core-confirmation/fixture/image
+hashes and all exact pair measurements saved in the summary. Photo/beads.pov/
+maker snapshot hashes remain the same as R169.
+
+Reproduce: .venv/bin/python photo2/probe_neighbor_angles.py
+using read-only R167 fixtures and R169 outputs; fresh-checkout commands in
+NEIGHBOR_ANGLES.md. Replay asserts the entire baseline graph and maker evaluation
+match R169, plus each fixture's baseline detection/adjacency counts. These checks
+pass. Curated figures visually inspected; compilation, provenance/hash/Markdown
+link and whitespace checks completed. No test/browser/server/launcher run for
+this reversible diagnostic; production code is unchanged.
+
+Stopping point: explain one missing adjacency and reject an angular-weight-only
+fix with controlled counterexamples. Next bounded task: test small triangle
+constraints with competing neighbors/noncollinear interior points, incorporating
+any Q171.1 answer first. Update method index/plan/handoff and commit/push scoped
+experiment/docs/evidence; publication verified before claiming delivery.
+Recommend gpt-6.1-sol / High, same conversation; no /new needed.
+
+## R172 — Maker confirms S belongs to bead16
+
+Reply to Q171.1: “Yes, S is inside bead 16.” Exact statement, S source coordinate,
+automatic/maker stable IDs, source/snapshot and supporting-image hashes saved in
+neighbor-confirmed-r172.json, linked from NEIGHBOR_ANGLES.md. Update plan/handoff
+and method index. All three selected points in supplied11→14→16 d3 now have
+established body identities; the48.32° change between their measured strip
+directions is not an ownership error at S. This does not make the points physical
+centers or exposed outward anchors, or measure why they are noncollinear.
+
+The numerical experiment remains frozen at R171, including its pre-answer
+provisional S metadata. This confirmation is diagnostic/evaluator evidence only,
+not a runtime coordinate prior. No recomputation changes or further question are
+needed to record ownership. Complete the bounded diagnosis delivery and stop;
+next task remains small triangle consistency with alternative neighbors.
+Recommend gpt-6.1-sol / High, stay here; no /new needed.

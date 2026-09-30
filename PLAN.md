@@ -11,7 +11,35 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R169: recover suppressed black reflections
+## Current task — R171: diagnose missing11→14 d3 adjacency
+
+[Raw review and Q171.1](photo2/NEIGHBOR_ANGLES.md) isolate an angle-gate failure:
+both11 and14 have confirmed interior ownership, but their119.12° connection
+is rejected by the local d1/d2/d3 estimates81°/32.5°/161°. The program instead
+proposes11→17 d3. This is not a detection failure or a gap filter rejection.
+
+Compare four approaches; test shorter-pair histograms first. Seven controlled
+variants share identical958 points. Inverse-squared weights restore11→14,
+increase maker forward matches49→54/129, but lose supplied14→proposed16 d3.
+Independent true render neighbors280→270,271→268,279→276 also decline.
+Other target-recovering variants have the same tradeoff; adopt no runtime change.
+Source detector, maker live save and prior proposal files remain unchanged.
+
+The two consecutive supplied d3 connections measure119.12° and167.44° using
+the proposed interior/reflection points, exceeding a shared22° angle gate.
+Those are not physical center/outward-anchor measurements. R172 answers Q171.1:
+“Yes, S is inside bead 16.” All three body identities in11→14→16 are established;
+the discrepancy is not an ownership error at S. Numerical results stay frozen.
+Curated raw/current/experimental and angular-support figures plus frozen metrics
+are tracked. The probe reproduces exact R169 baseline graph/evaluator counts and
+all three render baselines before any conclusion. No full indices,N or helicity.
+
+**Stopping point:** one local neighbor diagnosis and rejected simple fix.
+**Next bounded task:** test small triangle constraints with competing neighbors
+and supported body identities, retaining noncollinear interior-point uncertainty.
+Recommend gpt-6.1-sol / High; stay here, no /new. User controls model/session.
+
+## Prior R169: recover suppressed black reflections
 
 Standalone continue resumes central-body coverage. [Correction and Q169.1](photo2/REFLECTION_SUPPRESSION.md)
 move bead-scale reflection suppression after appearance-context checks. A colored

@@ -1,6 +1,49 @@
 # Beads session handoff — new branch
 
-## Current R169 — Black reflections restored before color competition
+## Current R171 — Missing11→14 diagnosed; angle reweighting not adopted
+
+User “continue” resumes the next bounded local-neighbor diagnosis. Read
+[NEIGHBOR_ANGLES.md and Q171.1](photo2/NEIGHBOR_ANGLES.md),
+[paired evidence](photo2/review/r171/summary.json). Preflight daisy/WSL2,
+photo-2-reconstruction-v2 atf42b488,clean,no stashes,fetch/upstream0/0. No agents.
+No production detector/app changes; preserve maker live file and every old output.
+
+Confirmed ownership:11/14/17 points inside R160-confirmed cores,10 confirmedR170.
+11→14 is nearest to11 and admitted as a candidate, but its119.12° strip angle
+has deviations38.12°/86.62°/41.88° from d1/d2/d3 modes81°/32.5°/161°; all
+exceed22°. Rejected before reciprocal/gap filters. Current11→17 d3 substitutes
+175.68° long connection; supplied14→16 d3 uses a proposed point at167.44°.
+R172 says “Yes, S is inside bead 16,” answering Q171.1. Exact reply/IDs/image
+hash in neighbor-confirmed-r172.json. All11/14/16 identities are established;
+do not ask about these again. Frozen experiment retains pre-answer metadata.
+
+Four approaches presented: shorter direction candidates, distance ranking,
+small-triangle consistency, projected geometry. Select only the first diagnostic.
+Seven variants, same958points/63maker proximity associations, inverse-distance
+powers1/2/4 and distance caps1.25/1.5/1.75×nearest spacing. Inverse-square
+restores11→14,49→54maker forward links/129, but loses14→proposed16; true
+render neighbors280→270/292→285links,271→268/279→278,279→276/291→288.
+Other recovering variants also lose true neighbors; no variant adopted. Two
+successive d3 connections differ48.32°, so a common22° gate cannot admit both.
+Interior/reflection points aren't physical centers/outward anchors; geometry
+cause remains unmeasured despite confirmed ownership of all three chain points.
+
+probe_neighbor_angles.py replays pinned f42b488 detector with SHAassertion;
+all appearance detection and seven graphs finish before maker or ID evaluation.
+Baseline graph/maker evaluation and all controlled render counts exactly reproduce
+R169. Preserves variants, exact coordinates/IDs/angle measurements, source/code/
+fixture/confirmation/image hashes. Raw/current/experimental and histogram figures
+inspected. No tests/browser/server/launcher run; frozen replay assertions validate
+this diagnostic, production code is unchanged. No physical necklace prerequisite.
+
+**Stopping point:** diagnose one missing link and reject a simple angular fix.
+**Next bounded task:** small lattice triangles with alternative neighbors, not
+forced straight chains; Q171.1 is answered and preserved. No full
+indices,N,closure,repeat or helicity inferred. Recommend gpt-6.1-sol / High,
+same conversation,no/new. Prior f42b488 exact remote tip verified; this scoped
+experiment/evidence/docs will be committed/pushed and verified before delivery.
+
+## Prior R169 — Black reflections restored before color competition
 
 User “continue” resumes central-bead coverage, one bounded aspect. Read
 [REFLECTION_SUPPRESSION.md](photo2/REFLECTION_SUPPRESSION.md) and

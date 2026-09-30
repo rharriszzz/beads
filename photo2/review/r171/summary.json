@@ -1,0 +1,2203 @@
+{
+  "request": "R171",
+  "baseline_commit": "f42b488dfb1bb07782ee2caeb8de4f385d97ab62",
+  "detector_sha256": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+  "probe_sha256": "ad12d1b6f1a462451973e90b992a6e089d9fd8577f6004af9ca4a02e3e195736",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "calibration_evaluator_sha256": "7747c0e5252b926024b6a61c752382929ba9ec2dfdf71ad8dcda298ed99a1b76",
+  "beads_pov_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+  "annotation_sha256": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+  "annotation_revision": 422,
+  "r169_report_sha256": "3d5f910b06f34601a80c2918835b664d1c18ead80cca1f435644ece8fa4a24a6",
+  "r169_automatic_annotation_sha256": "a2450954ce9a6115fc5298aa8685c20e774ecd0cd69438438ac6db4b8a4d00f3",
+  "confirmed_core_sha256": "09f11f82081155431875b9d52dbe5ac408f1ea1bdbde717b9ea52418e3191308",
+  "r160_confirmation_sha256": "553c44488eb396646980af3ea35ca3c81e072977a9ae22a37b5ad723c2e068b9",
+  "r170_confirmation_sha256": "2965d8cb1cd5769a1fb144ff13ad693944172ba54f23775a4f8b20597910107c",
+  "marker_S_maker_number": 16,
+  "targets": {
+    "10": {
+      "automatic_point": 937,
+      "source_xy": [
+        1265.5219263899764,
+        270.964375
+      ],
+      "kind": "dark-reflection",
+      "automatic_id": "3b2b508a-2e13-57d7-b18e-0b341747a35d",
+      "maker_id": "cc50367b-7545-421e-80a5-a2fa8b27bc4c",
+      "ownership": "R170 point ownership"
+    },
+    "11": {
+      "automatic_point": 938,
+      "source_xy": [
+        1285.648748356184,
+        303.64697633969314
+      ],
+      "kind": "chromatic",
+      "automatic_id": "15411382-cc29-5606-8025-478a38e07075",
+      "maker_id": "edd9c662-880d-42f1-ae5b-ef589744fd12",
+      "ownership": "inside R160-confirmed core"
+    },
+    "14": {
+      "automatic_point": 940,
+      "source_xy": [
+        1293.368441660141,
+        280.908125
+      ],
+      "kind": "dark-reflection",
+      "automatic_id": "3fc05c37-f6c6-5482-827d-fe559cf7b000",
+      "maker_id": "bce8fa1a-8a44-4dd0-9a6d-bee490044f13",
+      "ownership": "inside R160-confirmed core"
+    },
+    "16": {
+      "automatic_point": 943,
+      "source_xy": [
+        1319.2934906130138,
+        269.5256477047452
+      ],
+      "kind": "chromatic",
+      "automatic_id": "0c32bde9-f6e9-522e-9d45-9129f55bccfd",
+      "maker_id": "1c5d48fe-0694-41c9-9e33-726b40ff6a44",
+      "ownership": "proximity association; Q171.1 pending"
+    },
+    "17": {
+      "automatic_point": 942,
+      "source_xy": [
+        1321.2149569303053,
+        294.829375
+      ],
+      "kind": "dark-reflection",
+      "automatic_id": "413ab8c0-9326-53d9-be2b-c37a8e6ea24a",
+      "maker_id": "10dcf1a5-5ef1-4250-b784-19b3b482e249",
+      "ownership": "inside R160-confirmed core"
+    }
+  },
+  "photo": {
+    "baseline": {
+      "links": 1462,
+      "forward_links_agree": 49,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 81.0,
+            "d2": 32.5,
+            "d3": 161.0
+          },
+          "deviations": {
+            "d1": 38.119753260918486,
+            "d2": 86.61975326091849,
+            "d3": 41.880246739081514
+          },
+          "closest_family": "d1",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 80.5,
+            "d2": 31.5,
+            "d3": 160.0
+          },
+          "deviations": {
+            "d1": 86.94307334370473,
+            "d2": 44.056926656295275,
+            "d3": 7.443073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 940,
+              "end": 943,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 14.235241370990138,
+              "angle": 167.44307334370473,
+              "angle_deviation": 7.443073343704725,
+              "selection_score": 17.767039557310785,
+              "station_delta": 15.0,
+              "cross_delta": -3.341059231692096,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 80.5,
+            "d2": 31.0,
+            "d3": 160.0
+          },
+          "deviations": {
+            "d1": 84.82330899954007,
+            "d2": 35.323308999540075,
+            "d3": 15.676691000459925
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 938,
+              "end": 942,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 18.42260993700916,
+              "angle": 175.67669100045993,
+              "angle_deviation": 15.676691000459925,
+              "selection_score": 28.049462050492327,
+              "station_delta": 19.0,
+              "cross_delta": -1.4363906712338153,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        }
+      ]
+    },
+    "distance-weight-1": {
+      "links": 1441,
+      "forward_links_agree": 50,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 81.0,
+            "d2": 32.0,
+            "d3": 142.0
+          },
+          "deviations": {
+            "d1": 38.119753260918486,
+            "d2": 87.11975326091849,
+            "d3": 22.880246739081514
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 80.0,
+            "d2": 31.5,
+            "d3": 141.5
+          },
+          "deviations": {
+            "d1": 87.44307334370473,
+            "d2": 44.056926656295275,
+            "d3": 25.943073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 80.5,
+            "d2": 31.5,
+            "d3": 121.0
+          },
+          "deviations": {
+            "d1": 84.82330899954007,
+            "d2": 35.823308999540075,
+            "d3": 54.676691000459925
+          },
+          "closest_family": "d2",
+          "passes_angle_gate": false,
+          "proposed": []
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        }
+      ]
+    },
+    "distance-weight-2": {
+      "links": 1385,
+      "forward_links_agree": 54,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 81.0,
+            "d2": 32.0,
+            "d3": 124.5
+          },
+          "deviations": {
+            "d1": 38.119753260918486,
+            "d2": 87.11975326091849,
+            "d3": 5.380246739081514
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 938,
+              "end": 940,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 12.074498921517957,
+              "angle": 119.11975326091849,
+              "angle_deviation": 5.380246739081514,
+              "selection_score": 14.239958369802633,
+              "station_delta": 6.0,
+              "cross_delta": -10.771132078026021,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 80.0,
+            "d2": 31.5,
+            "d3": 125.5
+          },
+          "deviations": {
+            "d1": 87.44307334370473,
+            "d2": 44.056926656295275,
+            "d3": 41.943073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 80.0,
+            "d2": 31.5,
+            "d3": 124.5
+          },
+          "deviations": {
+            "d1": 84.32330899954007,
+            "d2": 35.823308999540075,
+            "d3": 51.176691000459925
+          },
+          "closest_family": "d2",
+          "passes_angle_gate": false,
+          "proposed": []
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        }
+      ]
+    },
+    "distance-weight-4": {
+      "links": 1302,
+      "forward_links_agree": 48,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 80.0,
+            "d2": 32.5,
+            "d3": 129.0
+          },
+          "deviations": {
+            "d1": 39.119753260918486,
+            "d2": 86.61975326091849,
+            "d3": 9.880246739081514
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 938,
+              "end": 940,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 12.074498921517957,
+              "angle": 119.11975326091849,
+              "angle_deviation": 9.880246739081514,
+              "selection_score": 16.051133208030326,
+              "station_delta": 6.0,
+              "cross_delta": -10.771132078026021,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 79.5,
+            "d2": 32.0,
+            "d3": 129.0
+          },
+          "deviations": {
+            "d1": 87.94307334370473,
+            "d2": 44.556926656295275,
+            "d3": 38.443073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 79.5,
+            "d2": 31.5,
+            "d3": 129.0
+          },
+          "deviations": {
+            "d1": 83.82330899954007,
+            "d2": 35.823308999540075,
+            "d3": 46.676691000459925
+          },
+          "closest_family": "d2",
+          "passes_angle_gate": false,
+          "proposed": []
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        }
+      ]
+    },
+    "short-mode-1.25": {
+      "links": 1358,
+      "forward_links_agree": 56,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 96.0,
+            "d2": 29.0,
+            "d3": 145.0
+          },
+          "deviations": {
+            "d1": 23.119753260918486,
+            "d2": 89.88024673908151,
+            "d3": 25.880246739081514
+          },
+          "closest_family": "d1",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 87.5,
+            "d2": 29.0,
+            "d3": 153.0
+          },
+          "deviations": {
+            "d1": 79.94307334370473,
+            "d2": 41.556926656295275,
+            "d3": 14.443073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 940,
+              "end": 943,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 14.235241370990138,
+              "angle": 167.44307334370473,
+              "angle_deviation": 14.443073343704725,
+              "selection_score": 21.088595877208483,
+              "station_delta": -15.0,
+              "cross_delta": 3.341059231692096,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 87.5,
+            "d2": 29.0,
+            "d3": 153.0
+          },
+          "deviations": {
+            "d1": 88.17669100045993,
+            "d2": 33.323308999540075,
+            "d3": 22.676691000459925
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": false,
+          "proposed": []
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        }
+      ]
+    },
+    "short-mode-1.5": {
+      "links": 1415,
+      "forward_links_agree": 52,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 80.0,
+            "d2": 32.5,
+            "d3": 125.0
+          },
+          "deviations": {
+            "d1": 39.119753260918486,
+            "d2": 86.61975326091849,
+            "d3": 5.880246739081514
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 938,
+              "end": 940,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 12.074498921517957,
+              "angle": 119.11975326091849,
+              "angle_deviation": 5.880246739081514,
+              "selection_score": 14.441200018494596,
+              "station_delta": 6.0,
+              "cross_delta": -10.771132078026021,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 79.5,
+            "d2": 32.5,
+            "d3": 125.5
+          },
+          "deviations": {
+            "d1": 87.94307334370473,
+            "d2": 45.056926656295275,
+            "d3": 41.943073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 79.5,
+            "d2": 32.0,
+            "d3": 125.5
+          },
+          "deviations": {
+            "d1": 83.82330899954007,
+            "d2": 36.323308999540075,
+            "d3": 50.176691000459925
+          },
+          "closest_family": "d2",
+          "passes_angle_gate": false,
+          "proposed": []
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        }
+      ]
+    },
+    "short-mode-1.75": {
+      "links": 1468,
+      "forward_links_agree": 54,
+      "pairs": {
+        "11-14": {
+          "start": 938,
+          "end": 940,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1293.368441660141,
+              280.908125
+            ]
+          ],
+          "distance_analysis_pixels": 12.074498921517957,
+          "station_delta": 6.0,
+          "cross_delta": -10.771132078026021,
+          "angle_degrees": 119.11975326091849,
+          "pair_modes": {
+            "d1": 81.0,
+            "d2": 31.5,
+            "d3": 163.0
+          },
+          "deviations": {
+            "d1": 38.119753260918486,
+            "d2": 87.61975326091849,
+            "d3": 43.880246739081514
+          },
+          "closest_family": "d1",
+          "passes_angle_gate": false,
+          "proposed": []
+        },
+        "14-16": {
+          "start": 940,
+          "end": 943,
+          "source_endpoints": [
+            [
+              1293.368441660141,
+              280.908125
+            ],
+            [
+              1319.2934906130138,
+              269.5256477047452
+            ]
+          ],
+          "distance_analysis_pixels": 14.235241370990138,
+          "station_delta": 15.0,
+          "cross_delta": -3.341059231692096,
+          "angle_degrees": 167.44307334370473,
+          "pair_modes": {
+            "d1": 80.5,
+            "d2": 31.5,
+            "d3": 163.0
+          },
+          "deviations": {
+            "d1": 86.94307334370473,
+            "d2": 44.056926656295275,
+            "d3": 4.443073343704725
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 940,
+              "end": 943,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 14.235241370990138,
+              "angle": 167.44307334370473,
+              "angle_deviation": 4.443073343704725,
+              "selection_score": 16.343515420211773,
+              "station_delta": 15.0,
+              "cross_delta": -3.341059231692096,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        },
+        "11-17": {
+          "start": 938,
+          "end": 942,
+          "source_endpoints": [
+            [
+              1285.648748356184,
+              303.64697633969314
+            ],
+            [
+              1321.2149569303053,
+              294.829375
+            ]
+          ],
+          "distance_analysis_pixels": 18.42260993700916,
+          "station_delta": 19.0,
+          "cross_delta": -1.4363906712338153,
+          "angle_degrees": 175.67669100045993,
+          "pair_modes": {
+            "d1": 80.5,
+            "d2": 31.0,
+            "d3": 163.0
+          },
+          "deviations": {
+            "d1": 84.82330899954007,
+            "d2": 35.323308999540075,
+            "d3": 12.676691000459925
+          },
+          "closest_family": "d3",
+          "passes_angle_gate": true,
+          "proposed": [
+            {
+              "start": 938,
+              "end": 942,
+              "direction": "d3",
+              "sign": 1,
+              "distance": 18.42260993700916,
+              "angle": 175.67669100045993,
+              "angle_deviation": 12.676691000459925,
+              "selection_score": 26.207201056791416,
+              "station_delta": 19.0,
+              "cross_delta": -1.4363906712338153,
+              "status": "tentative mutual-neighbor relation; unit count unverified"
+            }
+          ]
+        }
+      },
+      "supplied_relations": [
+        {
+          "start": 10,
+          "end": 14,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "direction": "d2",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": false,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "direction": "d3",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "direction": "d1",
+          "endpoints_associated": true,
+          "forward_agrees": true,
+          "reverse_only": false
+        }
+      ]
+    }
+  },
+  "calibration": [
+    {
+      "name": "hand+1-palette0-shift0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "id_sha256": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+      "variants": {
+        "baseline": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 292,
+          "true_unsigned_neighbors": 280,
+          "per_direction": {
+            "d1": {
+              "count": 75,
+              "true_neighbor": 71,
+              "deltas": {
+                "0": 3,
+                "1": 71,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 108,
+              "true_neighbor": 101,
+              "deltas": {
+                "0": 1,
+                "1": 2,
+                "6": 3,
+                "7": 96,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 109,
+              "true_neighbor": 108,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 106,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-1": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 294,
+          "true_unsigned_neighbors": 281,
+          "per_direction": {
+            "d1": {
+              "count": 75,
+              "true_neighbor": 70,
+              "deltas": {
+                "0": 3,
+                "1": 70,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 110,
+              "true_neighbor": 103,
+              "deltas": {
+                "0": 1,
+                "1": 3,
+                "6": 3,
+                "7": 97,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 109,
+              "true_neighbor": 108,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 106,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-2": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 285,
+          "true_unsigned_neighbors": 270,
+          "per_direction": {
+            "d1": {
+              "count": 73,
+              "true_neighbor": 65,
+              "deltas": {
+                "0": 4,
+                "1": 65,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 103,
+              "true_neighbor": 97,
+              "deltas": {
+                "0": 0,
+                "1": 5,
+                "6": 3,
+                "7": 89,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 109,
+              "true_neighbor": 108,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 106,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-4": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 262,
+          "true_unsigned_neighbors": 242,
+          "per_direction": {
+            "d1": {
+              "count": 70,
+              "true_neighbor": 63,
+              "deltas": {
+                "0": 3,
+                "1": 63,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 95,
+              "true_neighbor": 88,
+              "deltas": {
+                "0": 1,
+                "1": 8,
+                "6": 2,
+                "7": 78,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 97,
+              "true_neighbor": 91,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 90,
+                "7": 0,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.25": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 271,
+          "true_unsigned_neighbors": 254,
+          "per_direction": {
+            "d1": {
+              "count": 69,
+              "true_neighbor": 59,
+              "deltas": {
+                "0": 4,
+                "1": 58,
+                "6": 1,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 99,
+              "true_neighbor": 93,
+              "deltas": {
+                "0": 0,
+                "1": 8,
+                "6": 2,
+                "7": 83,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 103,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 100,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.5": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 292,
+          "true_unsigned_neighbors": 278,
+          "per_direction": {
+            "d1": {
+              "count": 76,
+              "true_neighbor": 70,
+              "deltas": {
+                "0": 3,
+                "1": 70,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 107,
+              "true_neighbor": 100,
+              "deltas": {
+                "0": 1,
+                "1": 4,
+                "6": 3,
+                "7": 93,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 109,
+              "true_neighbor": 108,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 106,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.75": {
+          "proposals": 141,
+          "eligible_visible": 168,
+          "eligible_located": 132,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 297,
+          "true_unsigned_neighbors": 284,
+          "per_direction": {
+            "d1": {
+              "count": 79,
+              "true_neighbor": 74,
+              "deltas": {
+                "0": 3,
+                "1": 74,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 109,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 1,
+                "1": 2,
+                "6": 3,
+                "7": 97,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 109,
+              "true_neighbor": 108,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 106,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "hand-1-palette0-shift0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "id_sha256": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+      "variants": {
+        "baseline": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 279,
+          "true_unsigned_neighbors": 271,
+          "per_direction": {
+            "d1": {
+              "count": 78,
+              "true_neighbor": 72,
+              "deltas": {
+                "0": 4,
+                "1": 71,
+                "6": 1,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 103,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 101,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 98,
+              "true_neighbor": 97,
+              "deltas": {
+                "0": 0,
+                "1": 3,
+                "6": 1,
+                "7": 93,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-1": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 279,
+          "true_unsigned_neighbors": 271,
+          "per_direction": {
+            "d1": {
+              "count": 78,
+              "true_neighbor": 72,
+              "deltas": {
+                "0": 4,
+                "1": 70,
+                "6": 1,
+                "7": 1,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 103,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 101,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 98,
+              "true_neighbor": 97,
+              "deltas": {
+                "0": 0,
+                "1": 3,
+                "6": 1,
+                "7": 93,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-2": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 278,
+          "true_unsigned_neighbors": 268,
+          "per_direction": {
+            "d1": {
+              "count": 76,
+              "true_neighbor": 68,
+              "deltas": {
+                "0": 4,
+                "1": 67,
+                "6": 1,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 103,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 101,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 99,
+              "true_neighbor": 98,
+              "deltas": {
+                "0": 0,
+                "1": 3,
+                "6": 1,
+                "7": 94,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-4": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 271,
+          "true_unsigned_neighbors": 254,
+          "per_direction": {
+            "d1": {
+              "count": 73,
+              "true_neighbor": 63,
+              "deltas": {
+                "0": 4,
+                "1": 62,
+                "6": 1,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 101,
+              "true_neighbor": 100,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 99,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 97,
+              "true_neighbor": 91,
+              "deltas": {
+                "0": 0,
+                "1": 4,
+                "6": 3,
+                "7": 84,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.25": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 271,
+          "true_unsigned_neighbors": 262,
+          "per_direction": {
+            "d1": {
+              "count": 72,
+              "true_neighbor": 64,
+              "deltas": {
+                "0": 4,
+                "1": 61,
+                "6": 3,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 102,
+              "true_neighbor": 101,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 100,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 97,
+              "true_neighbor": 97,
+              "deltas": {
+                "0": 0,
+                "1": 6,
+                "6": 3,
+                "7": 88,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.5": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 277,
+          "true_unsigned_neighbors": 269,
+          "per_direction": {
+            "d1": {
+              "count": 74,
+              "true_neighbor": 67,
+              "deltas": {
+                "0": 4,
+                "1": 65,
+                "6": 2,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 103,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 101,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 100,
+              "true_neighbor": 100,
+              "deltas": {
+                "0": 0,
+                "1": 2,
+                "6": 1,
+                "7": 97,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.75": {
+          "proposals": 139,
+          "eligible_visible": 168,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 4,
+          "adjacency_proposals": 285,
+          "true_unsigned_neighbors": 277,
+          "per_direction": {
+            "d1": {
+              "count": 80,
+              "true_neighbor": 75,
+              "deltas": {
+                "0": 4,
+                "1": 74,
+                "6": 1,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 103,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 101,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 102,
+              "true_neighbor": 100,
+              "deltas": {
+                "0": 0,
+                "1": 2,
+                "6": 1,
+                "7": 97,
+                "None": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "hand+1-palette1-shift2",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "id_sha256": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd",
+      "variants": {
+        "baseline": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 291,
+          "true_unsigned_neighbors": 279,
+          "per_direction": {
+            "d1": {
+              "count": 74,
+              "true_neighbor": 69,
+              "deltas": {
+                "0": 3,
+                "1": 69,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 107,
+              "true_neighbor": 101,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 2,
+                "7": 98,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 110,
+              "true_neighbor": 109,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 107,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-1": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 293,
+          "true_unsigned_neighbors": 281,
+          "per_direction": {
+            "d1": {
+              "count": 75,
+              "true_neighbor": 70,
+              "deltas": {
+                "0": 3,
+                "1": 70,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 108,
+              "true_neighbor": 102,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 2,
+                "7": 99,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 110,
+              "true_neighbor": 109,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 107,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-2": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 288,
+          "true_unsigned_neighbors": 276,
+          "per_direction": {
+            "d1": {
+              "count": 73,
+              "true_neighbor": 68,
+              "deltas": {
+                "0": 3,
+                "1": 68,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 105,
+              "true_neighbor": 99,
+              "deltas": {
+                "0": 0,
+                "1": 4,
+                "6": 2,
+                "7": 93,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 110,
+              "true_neighbor": 109,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 107,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "distance-weight-4": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 272,
+          "true_unsigned_neighbors": 250,
+          "per_direction": {
+            "d1": {
+              "count": 70,
+              "true_neighbor": 61,
+              "deltas": {
+                "0": 3,
+                "1": 61,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 102,
+              "true_neighbor": 96,
+              "deltas": {
+                "0": 0,
+                "1": 7,
+                "6": 2,
+                "7": 87,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 100,
+              "true_neighbor": 93,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 92,
+                "7": 0,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.25": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 278,
+          "true_unsigned_neighbors": 263,
+          "per_direction": {
+            "d1": {
+              "count": 68,
+              "true_neighbor": 60,
+              "deltas": {
+                "0": 3,
+                "1": 60,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 101,
+              "true_neighbor": 95,
+              "deltas": {
+                "0": 0,
+                "1": 6,
+                "6": 2,
+                "7": 87,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 109,
+              "true_neighbor": 108,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 106,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.5": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 289,
+          "true_unsigned_neighbors": 276,
+          "per_direction": {
+            "d1": {
+              "count": 74,
+              "true_neighbor": 68,
+              "deltas": {
+                "0": 3,
+                "1": 68,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 105,
+              "true_neighbor": 99,
+              "deltas": {
+                "0": 0,
+                "1": 2,
+                "6": 2,
+                "7": 95,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 110,
+              "true_neighbor": 109,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 107,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        },
+        "short-mode-1.75": {
+          "proposals": 141,
+          "eligible_visible": 169,
+          "eligible_located": 133,
+          "on_paper": 0,
+          "duplicate_points": 3,
+          "adjacency_proposals": 298,
+          "true_unsigned_neighbors": 287,
+          "per_direction": {
+            "d1": {
+              "count": 80,
+              "true_neighbor": 75,
+              "deltas": {
+                "0": 3,
+                "1": 75,
+                "6": 0,
+                "7": 0,
+                "None": 0
+              }
+            },
+            "d2": {
+              "count": 108,
+              "true_neighbor": 103,
+              "deltas": {
+                "0": 0,
+                "1": 1,
+                "6": 2,
+                "7": 100,
+                "None": 0
+              }
+            },
+            "d3": {
+              "count": 110,
+              "true_neighbor": 109,
+              "deltas": {
+                "0": 0,
+                "1": 0,
+                "6": 107,
+                "7": 2,
+                "None": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variant_histogram_weights": {
+    "baseline": null,
+    "distance-weight-1": "(spacing/v[2])**1",
+    "distance-weight-2": "(spacing/v[2])**2",
+    "distance-weight-4": "(spacing/v[2])**4",
+    "short-mode-1.25": "v[2]<=spacing*1.25",
+    "short-mode-1.5": "v[2]<=spacing*1.5",
+    "short-mode-1.75": "v[2]<=spacing*1.75"
+  },
+  "analysis_parameters": {
+    "angle_gate_degrees": 22,
+    "candidate_radius_spacing_factor": 2.3,
+    "local_window_strip_halfwidth_factor": 3,
+    "scale_xy": [
+      0.502755905511811,
+      0.502828409805154
+    ],
+    "nearest_spacing_analysis_pixels": 11.216191705198307
+  },
+  "conclusion": "No variant adopted: recovering11-14 via shorter-pair histograms loses known-render true neighbors. Keep topology alternatives and point roles explicit.",
+  "limitation": "S ownership pending; other associations and synthetic unsigned adjacency scores do not establish physical centers, exposed outward anchors, direction signs or helicity.",
+  "curated_image_sha256": {
+    "local-angle-support.png": "ebeea64e7f2b9048cd5cb827497b463b71750662a211ff594fa9c0d52aa93ecc",
+    "neighbor-comparison.png": "7a868294b20144804daaeca851cdad6374183d47a703ba230660e290f7f28054"
+  }
+}

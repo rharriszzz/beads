@@ -644,6 +644,19 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R171 local neighbor angle diagnosis:** [paired evidence and ownership question](photo2/NEIGHBOR_ANGLES.md)
+replay the fixed R169 body inventory and compare uniform direction histograms
+with shorter-pair weights/caps, without runtime maker coordinates or rendered IDs.
+Complete every graph before evaluating. Exact baseline replay and known-source
+counterexamples show that restoring11→14 by angular reweighting loses other true
+neighbors; retain this failure instead of optimizing only the maker patch score.
+Consecutive supplied d3 connections between selected interior/reflection points
+can be noncollinear. These points aren't physical centers or outward anchors;
+R172 confirms S belongs to16 after the Q171.1 review. Next candidate is small
+triangle consistency with competing edges and independent validation. No variant
+adopted or full indices/helicity inferred. Reproduce with
+`.venv/bin/python photo2/probe_neighbor_angles.py`.
+
 **R169 reflection competition correction:** [paired evidence](photo2/REFLECTION_SUPPRESSION.md)
 shows that a colored-highlight flank can suppress a real black-bead peak before
 appearance classification. Extract small local peaks, check color association/
