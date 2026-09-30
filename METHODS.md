@@ -656,6 +656,11 @@ R172 confirms S belongs to16 after the Q171.1 review. Next candidate is small
 triangle consistency with competing edges and independent validation. No variant
 adopted or full indices/helicity inferred. Reproduce with
 `.venv/bin/python photo2/probe_neighbor_angles.py`.
+R173 confirms the chain and identifies14's reflection point as displaced from
+its visible-area center. Ownership does not imply representative-point precision;
+carry positional uncertainty into triangle/neighbor inference. The48.32° bend
+is measured between selected anchors, not bead centers. No replacement coordinate
+or quantitative offset supplied. See [maker fact](photo2/anchor-position-note-r173.json).
 
 **R169 reflection competition correction:** [paired evidence](photo2/REFLECTION_SUPPRESSION.md)
 shows that a colored-highlight flank can suppress a real black-bead peak before

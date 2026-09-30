@@ -11,7 +11,23 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R171: diagnose missing11→14 d3 adjacency
+## Current clarification — R173: bead14 ownership versus position
+
+The maker confirms11→14→16 is correct and says the selected point on14 is not
+close to the center of its visible part, because black beads are hard to see.
+[Saved clarification](photo2/anchor-position-note-r173.json) retains the exact
+statement and reflection-point provenance. The measured48.32° bend is between
+selected anchors, not bead centers; its geometric cause is not fully quantified.
+Keep confirmed body identity separate from uncertain representative position.
+No replacement point/numeric error bound was supplied; do not move observations
+or equate visible-area centers with physical centers/outward minor-circle anchors.
+
+**Stopping point:** preserve this maker correction and qualify the diagnosis;
+no numerical/code changes. **Next bounded task:** test triangle/neighbor proposals
+with reflection-point positional uncertainty, retaining competing relations.
+Recommend gpt-6.1-sol / High, same session; no /new needed.
+
+## Prior R171: diagnose missing11→14 d3 adjacency
 
 [Raw review and Q171.1](photo2/NEIGHBOR_ANGLES.md) isolate an angle-gate failure:
 both11 and14 have confirmed interior ownership, but their119.12° connection

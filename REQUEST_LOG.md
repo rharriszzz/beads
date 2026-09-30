@@ -2686,3 +2686,34 @@ not a runtime coordinate prior. No recomputation changes or further question are
 needed to record ownership. Complete the bounded diagnosis delivery and stop;
 next task remains small triangle consistency with alternative neighbors.
 Recommend gpt-6.1-sol / High, stay here; no /new needed.
+
+## R173 — Correct chain, but black14's selected point is off-center
+
+User: “11 to 14 to 16 is correct, howeer the selected point inside 14 is not all
+that close to the center of the visible part of 14, since black beads are hard
+to see.” This confirms the chain and supplies a position-quality fact about the
+selected black14 reflection. It does not withdraw body ownership or give a new
+coordinate, numerical error bound, full bead outline or measured physical center.
+
+Preflight daisy, photo-2-reconstruction-v2 at6b220f1,clean/no stashes,fetch and
+upstream0/0. Preserve exact statement, existing14 automatic/maker IDs/source
+coordinate and source/snapshot/supporting-image hashes in
+anchor-position-note-r173.json. Update NEIGHBOR_ANGLES.md, method index,
+plan and handoff. No new phase, runtime changes, manual-point moves or fits.
+
+Qualify the48.32° result: it is a bend between selected interior/reflection
+anchors, not measured bead centers. The off-center14 reflection can contribute
+to this discrepancy, but its contribution is not quantified. Keep ownership
+separate from geometric position and carry reflection-point positional uncertainty
+into future neighbor/triangle reasoning. Visible-area center, physical center
+and outward minor-circle anchor are distinct; retain the maker's outward-anchor
+target rather than silently substituting a centroid. Confirmed interior loops
+are not full bead boundaries. Existing numerical measurements/curated images
+and user live annotations remain unchanged.
+
+Verify new maker-record provenance, local links, append-only log and whitespace;
+no repeated numerical tests needed for this factual correction. Commit/push
+scoped record/docs and verify remote tip before delivery. Stopping point: maker
+fact preserved and angular interpretation qualified. Next bounded task: local
+triangle/neighbor constraints with uncertain anchor positions and competing edges.
+Recommend gpt-6.1-sol / High, same conversation; no /new needed.

@@ -1,6 +1,31 @@
 # Beads session handoff — new branch
 
-## Current R171 — Missing11→14 diagnosed; angle reweighting not adopted
+## Current R173 — Confirmed chain; black14's reflection is off-center
+
+Maker correction:11→14→16 is correct, but the selected point on14 is not close
+to the center of its visible part; black beads are hard to see. Exact statement/
+coordinates/stable IDs/source/snapshot/figure hashes in
+[anchor-position-note-r173.json](photo2/anchor-position-note-r173.json), explained
+in [NEIGHBOR_ANGLES.md](photo2/NEIGHBOR_ANGLES.md). Preflight daisy,
+photo-2-reconstruction-v2 at6b220f1,clean/no stashes,fetch/upstream0/0. No agents.
+
+The48.32° bend is only between the selected interior/reflection anchors, not
+measured bead centers.14's ownership remains established; representative position
+is uncertain. No corrected coordinate/error bound supplied. Keep the reflection
+point as an observation anchor, separately model positional uncertainty during
+neighbor reasoning. Do not assume the confirmed interior core bounds the entire
+visible body. Visible-area center, physical center and minor-outward point differ;
+the maker's preferred outward anchor remains a separate target.
+
+Preserve R171 numerical measurements/figures, all proposal IDs, live maker saves
+and production code. No new fitting or numerical tests for this correction.
+**Stopping point:** save maker fact and qualify angular interpretation.
+**Next bounded task:** small triangle/neighbor constraints with uncertain anchor
+positions and competing relations. Do not treat correct ownership as positional
+precision, or infer helicity from this angular discrepancy. Recommend
+gpt-6.1-sol / High,stay here,no/new. Scoped record/docs delivery then stop.
+
+## Prior R171 — Missing11→14 diagnosed; angle reweighting not adopted
 
 User “continue” resumes the next bounded local-neighbor diagnosis. Read
 [NEIGHBOR_ANGLES.md and Q171.1](photo2/NEIGHBOR_ANGLES.md),

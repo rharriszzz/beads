@@ -6,6 +6,13 @@ its confirmed interior. The current graph misses their supplied d3 relationship
 at the angle gate. Shorter-pair direction estimates recover it, but lose other
 correct links. No experimental variant is adopted into the automatic labeler.
 
+**R173 maker clarification:**11→14→16 is correct, but the selected point on14
+is not close to the center of its visible part; black beads are hard to see.
+[Exact statement and point provenance](anchor-position-note-r173.json) are saved.
+The48.32° result measures connections between these selected points, not a bend
+between bead centers. Body ownership remains confirmed while geometric position
+is uncertain. No replacement point or numerical offset was supplied.
+
 ## Q171.1 — Ownership of point S on the proposed bead16
 
 In the **raw left panel**, does cyan **S** lie inside the same yellow bead as
@@ -74,6 +81,12 @@ inside the correct bodies without being consistent physical centers or outward
 minor-circle anchors. This is a limitation of the point/direction representation;
 it does not measure camera elevation or prove a geometric cause. R172 confirms
 S belongs to16, so this discrepancy is not an ownership error at S.
+R173 specifically identifies14's reflection point as displaced from its visible-
+area center. This is a plausible contributor to the measured angular discrepancy;
+its contribution has not been quantified. The visible-area center, physical
+center and outward minor-circle anchor are three different position concepts.
+Keep the reflection as an observation anchor, with separate positional uncertainty
+when assessing adjacency; the confirmed interior loop is not a full bead outline.
 
 ## Paired photo and independent render checks
 
@@ -125,6 +138,7 @@ image hashes, exact pair measurements and every variant's results.
 **Stopping point:** diagnose one missed adjacency and reject a simple angular
 reweighting fix with controlled counterexamples. **Next bounded task:** preserve
 competing neighbors and test small triangle consistency using supported body
-identities, allowing interior/reflection points to be noncollinear. Do not infer
+identities, representing reflection-point displacement as positional uncertainty
+instead of treating each point as a precise representative location. Do not infer
 full-string indices,N,closure,repeat or helicity from this experiment.
 Recommend **gpt-6.1-sol / High**, same conversation; no `/new` needed.
