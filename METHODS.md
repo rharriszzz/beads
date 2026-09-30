@@ -24,6 +24,37 @@ every section in document order. The next bounded task is the
 checkpoints. Background bridges and the two FFT explorations supply evidence
 where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
+## Forward minor-outward tangent circles on a planar spline — R175–R178
+
+**Inputs:** approximate planar centerline, a configurable count, literal current
+beads.pov rounded-annular dimensions, camera hypothesis, and three maker-confirmed
+colored interiors for diagnostic registration. **Output:** 3D outward points,
+tangent planes/circles, model exposure masks and cyan whole-photo overlays.
+[Implemented procedure / reproduction / spacing question](photo2/TANGENT_CIRCLES.md).
+
+Place beads uniformly in world arclength with minor-circle phase and integer-turn
+closure. At the minor-radial outer-wall midpoint P=C+(4+R)u, use plane
+u·(X−P)=0 and a small circle in basis T,u×T. Ray-test against the whole bead
+loop: require P itself exposed, not merely some visible bead area. Exclude
+unfinished and grazing rays explicitly. Match a few positive colored interiors
+by phase/station, preserve competing charts/hands, then vary one parameter at
+a time. R177 increases2698→2833 by5.004%, preserving other pose parameters;
+projected sizes also shrink because physical sizes and projected spline stay
+fixed. R178 preserves the complete source frame in the current overlay.
+
+**Validation:** exact circular limit for both hands, actual surface normals,
+tangent-plane coplanarity and hidden-point suppression; independent POV source-
+macro ID renders at identical pixel rays. Maker interior cores validate location
+ownership separately; centroid initialization is not measured outward geometry.
+Black/held group22–25 are excluded from fit/ranking. All96 candidate fits saved.
+Both opposing chart/hand combinations fit the seed patch; no helicity inference.
+
+**Limits:** historical spline and count are unverified diagnostic seeds, camera
+elevation guessed, global drift remains. Model visibility is conditional on that
+geometry. Core exteriors aren't full body silhouettes. Forward generator indices
+aren't recovered photo bead indices. No new automatic-runtime capability or
+generalization claim. Next refine an unfitted patch using the spacing review.
+
 ## Background pixels under varying illumination
 
 **Background means every visible part of the paper**, including cast shadows,

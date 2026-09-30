@@ -11,7 +11,34 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current clarification — R174: visible14 lies approximately midway
+## Current R175–R178: forward tangent circles and +5% count overlay
+
+The user diverts from triangle refinement to a planar-spline forward model:
+calculate minor-outward points and tangent planes, show cyan circles only where
+the point is visible, register a few colored beads, and allow small adjustments.
+Reuse the historical303-point spline diagnostically. Initial2698 is provisional;
+R177 increases it to2833 due to observed spacing drift, without changing phase,
+spline station, camera, hand or physical bead sizes. R178 requires the whole
+source image; [current full overlay](photo2/review/r177/bracelet-overlay.png)
+preserves2540×3182 pixels. [Experiment / Q177.1](photo2/TANGENT_CIRCLES.md).
+
+Python uses literal beads.pov rounded-annular geometry and all-neighbor
+occlusion; hidden-point beads never receive circles. Three colored positive
+cores8/11/20 fit phase/station, neither black nor held group22–25. Both charts
+fit, so helicity/N/camera elevation remain unresolved. All96 candidates saved.
+Four geometric tests and independent POV first-owner checks pass; unfinished
+rays remain excluded. Before/after images, portable parameters, provenance and
+reproduction commands tracked; generated geometry/scenes stay ignored.
+
+**Stopping point:** working adjustable prototype, initial colored registration,
+requested count change and whole-image view. Q177.1 spacing review pending.
+**Next bounded task:** use that review and an adjacent unfitted colored patch
+to refine phase/station/count/spline, preserving chart alternatives and explicit
+uncertainty. This supersedes the immediate R174 position-refinement task, whose
+maker relation remains preserved. Recommend gpt-6.1-sol / High; same session,
+no /new needed. User controls switching.
+
+## Prior clarification — R174: visible14 lies approximately midway
 
 Maker supplies `c14_visible ≈ (c11_visible+c16_visible)/2`, where each c is the
 center of the visible part of that bead. [Saved relation](photo2/visible-center-relation-r174.json)

@@ -2744,3 +2744,103 @@ visible-center estimates and this approximate relation, then neighbor/triangle
 alternatives. Retain separate visible-area center, physical center and outward
 minor-circle anchor roles. Recommend gpt-6.1-sol / High, same conversation;
 no /new needed.
+
+
+## R175 — Diversion: forward outward-point tangent circles and photo overlay
+
+User: “But I want to take a diversion: Do you have the centerline spline somewhere?  Do you have some guess of the total number of beads?  I want you to implement in python something that calculates the futherest point of each bead from the center, compute the plane that is tangent to the bead at that point, and draws a little circle at that point.  Do this only for the visible beads, do not try to match it up with the image at first, then try to match it up with a few adjacent red and/or yellow beads.  Then I hope that we can make small adjusttments so that it will match more and more beads.  draw these little circles in cyan, and overlay them on the bracelet.”
+
+Supersedes immediate R174 representative-position refinement. Read handoff,
+latest log, plan, prior quick shape model and relevant geometry experiments.
+Preflight daisy/WSL2, photo-2-reconstruction-v2 at36f39fd, clean/no stashes,
+fetch/upstream0/0. No agents. Preserve live annotations, detector, photo,
+beads.pov and prior artifacts. Present four methods: circular model, reuse
+saved planar spline (selected), new image-derived spline, local straight patch.
+
+Find historical303-point centerline in pinned2c4c116, source hash49c59cc6...;
+copy points/provenance to spline-seed-r175.json with explicit diagnostic status.
+Historical local analysis proposes2698, unverified by closure. Adopt only this
+starting count, not historical bead dimensions/color hypotheses. Python
+literal rounded-annular placement gives P=C+(4+R)u, R2.1109157489, tangent plane
+normal u and radius.18R circles. The maximum is minor-radial wall extent, not
+visible centroid/reflection/major-edge anchor. Plane/geometry conventions in MD.
+
+Generate model-only rendering first. Independently compare source-macro POV
+body-ID rays to Python first-hit rays; correct an initial camera look_at axis
+reversal before using any photo overlay. Final unmatched parity2698 rays,0
+mismatches. Model-only image then has1243 exposed-point circles. Fit only
+confirmed yellow cores8/11 and red20:96 candidates across both charts/hands,
+three guessed elevations and eight phase starts. Exclude black and whole held
+22–25 group from fitting/ranking. Both A/+1 and B/−1 fit all3 cores; selected
+B/−1 centroid proposal RMS1.13456 versus A/+1 1.20635 is not helicity evidence.
+Selected elevation89° is a guess; phase−21.9798574846, origin.8016461718.
+Registered model draws1246 exposed-point circles; visible elsewhere doesn't
+establish exposure of a particular anchor. Same-pixel POV check2694 finished
+rays,0 mismatches,4 unverified. Preserve separate finite-pixel rounding checks.
+
+Implement tangent_circles.py, four geometry/occlusion tests, independent checker
+and reproducible curator. Save all96 candidate fits, portable parameters and
+curated model-only, raw/local and whole-photo overlays. Routine NPZ/scenes/renders
+ignored. Geometry fields distinguish planar normal from tangent-plane radial
+normal and forward generator indices from recovered photo bead indices. Four
+tests pass: literal circular limit both hands, tangent circle plane/radius,
+actual rounded-annular surface normal, and hidden outward-point suppression.
+Adjustment CLI verifies a phase/station edit without changing saved parameters.
+Provenance/links/compile/whitespace checks; curated images inspected. No browser,
+server or launcher tests. No automatic detector/index/N/helicity claim.
+
+Stopping point: adjustable prototype and initial three-colored registration;
+subsequent R177/R178 complete its requested count and whole-image review.
+Next bounded task: spacing review and an adjacent unfitted colored patch for
+small parameter refinements. gpt-6.1-sol / High, same session, no/new. Update
+method/plan/handoff; scoped commit/push and exact remote/status verification
+before reporting delivery.
+
+## R176 — Require the minor-outward point itself to be visible
+
+User: “I think we do not need to show any beads for which its fartherest point
+from the bracelet centerline is not visible.” Agree and implement: all beads
+remain occluders, but draw a marker only for an exposed minor-outward point.
+Self-first ownership, depth tolerance.002 model units, finished ray and
+normal·eye>.12 grazing exclusion; march epsilon.00001/max600 iterations.
+Do not retain a circle just because another part of its bead is visible.
+Visibility is conditional on the provisional geometry/camera; no photo proof.
+
+## R177 — Increase total count five percent to address observed spacing drift
+
+User: “So I see some drift, where the circles seem to be less closly spaced
+than the beads in the image; can you increase the total number of beads in
+the model by 5%”
+
+Set N=round2698×1.05=2833 (+5.004%,436 turns), preserving spline, phase,
+origin, guessed camera, hand and physical bead dimensions. Do not refit in this
+comparison. Fixed projected spline means station spacing drops4.765% and
+projected model size drops4.817%; disclose the coupling. Current1307 exposed
+anchors,1526 hidden/grazing/unresolved omitted,12 point rays unfinished and
+excluded. Independent POV same-pixel check2828 verified,0 mismatches,5
+unverified. Whole-image drift remains provisional; count change alone doesn't
+establish helicity or recovered N.
+
+Save before/after and larger raw upper-arc context in review/r177. Primary
+parameters now2833, original2698 parameters/results preserved in review/r175.
+Q177.1 in TANGENT_CIRCLES.md asks whether the spacing looks closer after the
+increase; supporting spacing-comparison.png curated/tracked, question pending,
+not a permission gate. After selection only, check positive cores:11/20/17
+inside in both versions;8 leaves its conservative core after count increase;
+14 outside reflection core in both. Core exterior isn't a whole-body exclusion;
+14's off-center reflection was already explained by maker. No black/held-group
+fit or ownership/outward-anchor claims from these checks.
+
+Reproduce commands, exact parameters, source and image hashes and independent
+checker outputs in review/r175/summary.json. Stop at controlled count comparison;
+next bounded step incorporates review and refines an unfitted colored patch.
+
+## R178 — Show cyan circles over the entire original image
+
+User: “also I want to see the circles overlaid on the whole image.”
+
+Supply photo2/review/r177/bracelet-overlay.png with all2540×3182 EXIF-oriented
+source pixels,2833-bead model and1307 exposed-point cyan circles. Entire photo
+retained with original coordinate system; no cropping/rescaling. Link whole
+image in commentary and TANGENT_CIRCLES.md, retain separate local/wider reviews.
+This is the current count-adjusted overlay, not a claim of whole-photo matching.

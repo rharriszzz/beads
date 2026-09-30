@@ -1,6 +1,58 @@
 # Beads session handoff — new branch
 
-## Current R174 — Maker supplies a visible-center midpoint relation
+## Current R175–R178 — Tangent circles; count increased five percent
+
+User requests a diversion from neighbor/triangle refinement: reuse a centerline,
+build Python minor-outward bead points/tangent planes, first model-only, then
+register a few colored beads and overlay cyan circles. R176 requires the point
+itself visible. R177 requests +5% count due to observed spacing drift. R178
+requests the whole image. [Experiment / Q177.1](photo2/TANGENT_CIRCLES.md),
+[full current overlay](photo2/review/r177/bracelet-overlay.png),
+[raw / before / after](photo2/review/r177/spacing-comparison.png),
+[current parameters](photo2/review/r177/parameters.json),
+[frozen provenance](photo2/review/r175/summary.json).
+
+Preflight daisy/WSL2, photo-2-reconstruction-v2 at36f39fd, clean/no stashes,
+fetch/upstream0/0. No delegation. Original photo, beads.pov, live annotations,
+runtime detector and historical outputs unchanged. Reuse303 historical spline
+points from pinned2c4c116 with explicit provenance/approximate diagnostic status.
+Initial2698 count is an old unverified hypothesis, not closure or recovered N.
+Literal current bead dimensions/rounded annulus retained, not old fitted sizes.
+
+tangent_circles.py creates planar spline placement, P=C+(4+R)u outer-wall
+midpoint and tangent plane u·(X−P)=0, cyan radius.18R. Full-loop ray marching
+includes hidden occluders; draw only self-first/depth-matching, finished,
+non-grazing point rays (normal·eye>.12). Model-only render precedes assisted
+photo registration. Three positive colored cores8/11/20 fit phase/station;
+96 candidates retain both charts/hands. Black and group22–25 are excluded from
+fitting/ranking. Both A/+1 and B/−1 fit all3; selected B/−1, guessed elevation89°
+does not establish helicity or measured camera elevation. All candidates saved.
+
+Current count2833 (round2698×1.05, +5.004%), turns436. Phase−21.9798574846,
+origin.8016461718, camera/hand/spline/physical sizes unchanged; no refit.
+Spacing falls4.765%; projected scale falls4.817% with fixed physical sizes.
+Current1307 exposed-point circles versus1246 before; full overlay2540×3182.
+Unresolved/grazing/hidden anchors excluded. Point8 leaves its conservative
+core after count change; do not equate positive-core exterior with another bead.
+Unfitted17 is in its core;14 isn't in its reflection core, consistent with
+the maker's off-center-reflection caution, without confirming new ownership.
+
+Four geometry/occlusion tests pass. Independent source-macro POV ID checks:
+2698 model-only,2694 registered,2828 count-adjusted same pixel rays, zero
+mismatches; registered4 and adjusted5 rays unverified. Separate continuous
+anchor→rounded pixel differences preserved. Adjustment CLI verified separately.
+Curated images inspected, source hashes/links/compile/whitespace checked.
+No browser/server/launcher tests. Adjustable stages and reproduction in MD;
+geometry.npz plane normal is radial, planar left normal is normal.
+
+**Stopping point:** adjustable forward prototype, initial3-colored registration,
+requested count update and full image. Q177.1 asks if upper-arc spacing improved;
+pending, not an approval gate. **Next bounded task:** incorporate spacing review
+and an unfitted adjacent colored patch to adjust phase/station/count/spline,
+retaining both charts. No whole-photo matching/N/helicity claim. Recommend
+gpt-6.1-sol / High, same session, no/new. Scoped delivery verified in chat.
+
+## Prior R174 — Maker supplies a visible-center midpoint relation
 
 Maker says the true center of the visible part of14 is approximately midway
 between the visible-part centers of11 and16, and reiterates14 is black.

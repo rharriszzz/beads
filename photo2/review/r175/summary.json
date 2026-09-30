@@ -1,0 +1,998 @@
+{
+  "requests": [
+    "R175",
+    "R176",
+    "R177",
+    "R178"
+  ],
+  "curator_sha256": "d72bec761bc90fd5aef2dff24e75e00fcd88c4fefd64f1894c6895389ef05102",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/bead_placement.py": "9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534",
+    "photo2/curved_surface_fit.py": "9f881dde6ab6652367c89ff8568c221806f551a3eefcbdcb6359914d194b0915",
+    "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+    "photo2/check_placement.py": "af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/review/r157/report.json": "09f11f82081155431875b9d52dbe5ac408f1ea1bdbde717b9ea52418e3191308",
+    "photo2/review/r160/report.json": "4a657a80ce92dfcffb9871d52b0e941ef0199c8801fdc6e2dcd063f350a53ecb",
+    "photo2/manual-labels-r169.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff"
+  },
+  "historical_spline": {
+    "source_commit": "2c4c116bf7f7b9e8c773358a97740dcd77879a8a",
+    "source_path": "photo2/centerline.json",
+    "source_file_sha256": "49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36",
+    "original_provenance": {
+      "source": "fft-image-explorer/beads-photo-2_splines.json",
+      "source_sha256": "1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7",
+      "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+      "image_size": [
+        2540,
+        3182
+      ]
+    },
+    "points": "303 points preserved in tracked spline-seed-r175.json",
+    "status": "Historical photo centerline seed reused at explicit R175 request; approximate diagnostic framing, not a newly accepted physical centerline.",
+    "smoothing_rms_target_pixels": 2.0
+  },
+  "historical_count": {
+    "source": "Historical local photo2/output/analysis.json; preserved from prior branch work",
+    "source_sha256": "83a1b3aa5dbe98db65ea93c2f432b44661b3c89ba1738d616e7d56462e7db73e",
+    "source_status": "provisional; repeat and helicity unresolved",
+    "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "centerline_sha256": "49c59cc6049815e9cac9fd94e097e0aaf1d9f647d287d7920793aca2acfd9f36",
+    "initial_count_guess": 2698,
+    "turns": 415,
+    "original_estimation": {
+      "arc_length_pixels": 9235.586921672748,
+      "assumed_turn_pitch_pixels": 22.26
+    },
+    "status": "Provisional starting count, not established by necklace closure",
+    "adopted_old_dimensions": false,
+    "adopted_old_palette_or_hand": false
+  },
+  "model_only": {
+    "request": "R175",
+    "stage": "model",
+    "parameters": {
+      "nbeads": 2698,
+      "hand": 1,
+      "elevation": 80.0,
+      "roll": 0.0,
+      "phase": 0.0,
+      "origin_fraction": 0.0
+    },
+    "scale_pixels_per_unit": 7.782436869667033,
+    "nrows": 415,
+    "exact_beads_per_row": 6.501204819277109,
+    "model_arc_length": 1195.780998870231,
+    "source_image_arc_seed_status": "Historical approximate centerline; user-authorized diagnostic reuse",
+    "definition": "Outer-wall midpoint at maximum minor-radial extent; tangent plane normal is minor radial vector",
+    "circle_radius_model_units": 0.37996483480584586,
+    "facing_margin": 0.12,
+    "limits": "Diagnostic geometry/registration, not recovered photo N, camera elevation, helicity or full-string correspondences",
+    "source_sha256": {
+      "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+      "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+      "photo2/bead_placement.py": "9c462e0c69a1d22f23c6ceace53836ec911ea425118157b4b04f9ee78626e534",
+      "photo2/curved_surface_fit.py": "9f881dde6ab6652367c89ff8568c221806f551a3eefcbdcb6359914d194b0915",
+      "photo2/local_surface_fit.py": "45397f98f2f6cb63aee4cd7739c1301dc07cb1d59ae3e87ed02255956f4c8ca1",
+      "photo2/check_placement.py": "af155f4ff36a3bb3c12cb49d037d8909002341b2f2212add7d5cfff1e33b35dd",
+      "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+      "photo2/review/r157/report.json": "09f11f82081155431875b9d52dbe5ac408f1ea1bdbde717b9ea52418e3191308",
+      "photo2/review/r160/report.json": "4a657a80ce92dfcffb9871d52b0e941ef0199c8801fdc6e2dcd063f350a53ecb",
+      "photo2/manual-labels-r169.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff"
+    },
+    "model_check": {
+      "visible_anchors": 1243,
+      "unfinished_rays": 1,
+      "independent_same_ray_check": {
+        "verified_rays": 2698,
+        "mismatches": 0,
+        "unverified_rays": 0
+      },
+      "independent_pov_pixel_check": {
+        "agree": 1171,
+        "total": 1243,
+        "mismatch_indices": [
+          60,
+          73,
+          99,
+          112,
+          125,
+          174,
+          187,
+          213,
+          226,
+          265,
+          278,
+          291,
+          304,
+          330,
+          343,
+          408,
+          421,
+          434,
+          447,
+          486,
+          499,
+          512,
+          564,
+          577,
+          603,
+          684,
+          788,
+          857,
+          883,
+          909,
+          922,
+          935,
+          1026,
+          1126,
+          1139,
+          1204,
+          1256,
+          1308,
+          1347,
+          1386,
+          1425,
+          1464,
+          1490,
+          1516,
+          1542,
+          1568,
+          1754,
+          1767,
+          1793,
+          1806,
+          1845,
+          1926,
+          2069,
+          2095,
+          2173,
+          2186,
+          2225,
+          2238,
+          2251,
+          2290,
+          2303,
+          2407,
+          2446,
+          2485,
+          2537,
+          2550,
+          2563,
+          2576,
+          2602,
+          2615,
+          2641,
+          2680
+        ],
+        "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+      },
+      "appearance_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r175/model/unmatched.pov",
+        "+O/home/rharris/git/beads/photo2/output/r175/model/unmatched.png",
+        "+W1000",
+        "+H1253",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "id_command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/output/r175/model/unmatched-ids.pov",
+        "+O/home/rharris/git/beads/photo2/output/r175/model/unmatched-ids.png",
+        "+W1000",
+        "+H1253",
+        "+FN",
+        "-D",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ],
+      "appearance_scene_sha256": "14d181847ca1dfe304682a425c89ffce38efa697efb2c2e0aba07e76b6cb50b9",
+      "id_scene_sha256": "4a26b492bb0d24d71b8a872d58b8ba213cea190baae908d3b35f674185bf8f45"
+    }
+  },
+  "original_fit": {
+    "parameters": {
+      "nbeads": 2698,
+      "hand": -1,
+      "elevation": 89.0,
+      "roll": 0.0,
+      "phase": -21.979857484559343,
+      "origin_fraction": 0.8016461717772337
+    },
+    "selected": {
+      "family": "B",
+      "parameters": {
+        "nbeads": 2698,
+        "hand": -1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -21.979857484559343,
+        "origin_fraction": 0.8016461717772337
+      },
+      "training_numbers": [
+        8,
+        11,
+        20
+      ],
+      "relative_indices": [
+        -26,
+        -20,
+        0
+      ],
+      "outward_xy": [
+        [
+          1257.0327822128854,
+          287.2315820085814
+        ],
+        [
+          1281.7263611687245,
+          304.96305573091126
+        ],
+        [
+          1345.4616088879611,
+          271.00445456583384
+        ]
+      ],
+      "inside_confirmed_interiors": [
+        true,
+        true,
+        true
+      ],
+      "exposed": [
+        true,
+        true,
+        true
+      ],
+      "distance_to_confirmed_interiors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "score": 0.0,
+      "centroid_proposal_rms": 1.1345602069120866,
+      "converged": true
+    },
+    "best_by_chart_and_hand": {
+      "B/-1": {
+        "family": "B",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": -1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -21.979857484559343,
+          "origin_fraction": 0.8016461717772337
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -20,
+          0
+        ],
+        "outward_xy": [
+          [
+            1257.0327822128854,
+            287.2315820085814
+          ],
+          [
+            1281.7263611687245,
+            304.96305573091126
+          ],
+          [
+            1345.4616088879611,
+            271.00445456583384
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          true,
+          true,
+          true
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score": 0.0,
+        "centroid_proposal_rms": 1.1345602069120866,
+        "converged": true
+      },
+      "A/+1": {
+        "family": "A",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": 1,
+          "elevation": 89.0,
+          "roll": 0.0,
+          "phase": -22.297197099857737,
+          "origin_fraction": 0.8015246087559217
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -19,
+          0
+        ],
+        "outward_xy": [
+          [
+            1255.9592672128206,
+            287.6256041079764
+          ],
+          [
+            1283.9904187425307,
+            304.58057979230716
+          ],
+          [
+            1344.3013290000652,
+            270.94466842906036
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          true,
+          true,
+          true
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score": 0.0,
+        "centroid_proposal_rms": 1.2063471997175665,
+        "converged": true
+      },
+      "A/-1": {
+        "family": "A",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": -1,
+          "elevation": 80.0,
+          "roll": 0.0,
+          "phase": 10.000000000000002,
+          "origin_fraction": 0.8009698430853105
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -19,
+          0
+        ],
+        "outward_xy": [
+          [
+            1259.7223780167988,
+            305.64656015002015
+          ],
+          [
+            1278.759298612502,
+            279.21942303131823
+          ],
+          [
+            1347.4414400047453,
+            289.4437484785717
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          false,
+          false,
+          false
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          12.447902053936907,
+          16.599979876978832,
+          5.943748478571706
+        ],
+        "score": 155.27924781234412,
+        "centroid_proposal_rms": 14.671894775881738,
+        "converged": true
+      },
+      "B/+1": {
+        "family": "B",
+        "parameters": {
+          "nbeads": 2698,
+          "hand": 1,
+          "elevation": 80.0,
+          "roll": 0.0,
+          "phase": 10.000000000000002,
+          "origin_fraction": 0.8010933198221238
+        },
+        "training_numbers": [
+          8,
+          11,
+          20
+        ],
+        "relative_indices": [
+          -26,
+          -20,
+          0
+        ],
+        "outward_xy": [
+          [
+            1260.9332062938245,
+            305.84302837267023
+          ],
+          [
+            1276.5514916080715,
+            279.96246799928986
+          ],
+          [
+            1348.5693943657902,
+            289.2644632705369
+          ]
+        ],
+        "inside_confirmed_interiors": [
+          false,
+          false,
+          false
+        ],
+        "exposed": [
+          true,
+          true,
+          true
+        ],
+        "distance_to_confirmed_interiors": [
+          12.954553684258011,
+          16.46514938802582,
+          5.79251644289101
+        ],
+        "score": 157.49161742316423,
+        "centroid_proposal_rms": 14.696720612230177,
+        "converged": true
+      }
+    },
+    "candidate_count": 96,
+    "overlay": {
+      "visible_anchors": 1246,
+      "excluded_hidden_or_grazing": 1452,
+      "unfinished_rays": 12,
+      "local_checks": [
+        {
+          "maker_number": 8,
+          "model_index": 2672,
+          "relative_index": -26,
+          "outward_xy": [
+            1257.0327822128888,
+            287.2315820085928
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 11,
+          "model_index": 2678,
+          "relative_index": -20,
+          "outward_xy": [
+            1281.7263611687292,
+            304.96305573094037
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 14,
+          "model_index": 2685,
+          "relative_index": -13,
+          "outward_xy": [
+            1301.102024974505,
+            278.5607176730605
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 16,
+          "model_index": 2692,
+          "relative_index": -6,
+          "outward_xy": [
+            1321.8528687433297,
+            256.5338160500478
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 17,
+          "model_index": 2691,
+          "relative_index": -7,
+          "outward_xy": [
+            1325.3724305228548,
+            296.89094678435754
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 20,
+          "model_index": 0,
+          "relative_index": 0,
+          "outward_xy": [
+            1345.4616088879611,
+            271.00445456583384
+          ],
+          "exposed": true
+        }
+      ]
+    },
+    "candidate_file": "photo2/review/r175/fit-candidates.json"
+  },
+  "count_adjustment": {
+    "parameters": {
+      "nbeads": 2833,
+      "hand": -1,
+      "elevation": 89.0,
+      "roll": 0.0,
+      "phase": -21.979857484559343,
+      "origin_fraction": 0.8016461717772337
+    },
+    "nrows": 436,
+    "exact_beads_per_row": 6.497706422018348,
+    "count_percent": 5.0037064492216565,
+    "original_scale": 7.7240571220247825,
+    "revised_scale": 7.352026847798817,
+    "overlay": {
+      "visible_anchors": 1307,
+      "excluded_hidden_or_grazing": 1526,
+      "unfinished_rays": 12,
+      "local_checks": [
+        {
+          "maker_number": 8,
+          "model_index": 2807,
+          "relative_index": -26,
+          "outward_xy": [
+            1261.5096600041386,
+            287.78136636928184
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 11,
+          "model_index": 2813,
+          "relative_index": -20,
+          "outward_xy": [
+            1284.966615226275,
+            304.6092080168323
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 14,
+          "model_index": 2820,
+          "relative_index": -13,
+          "outward_xy": [
+            1303.415818477189,
+            279.3220970615753
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 16,
+          "model_index": 2827,
+          "relative_index": -6,
+          "outward_xy": [
+            1323.1475956243205,
+            258.1875728145642
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 17,
+          "model_index": 2826,
+          "relative_index": -7,
+          "outward_xy": [
+            1326.483908271457,
+            296.6762351441196
+          ],
+          "exposed": true
+        },
+        {
+          "maker_number": 20,
+          "model_index": 0,
+          "relative_index": 0,
+          "outward_xy": [
+            1345.5943166168802,
+            271.881614103876
+          ],
+          "exposed": true
+        }
+      ]
+    },
+    "refitted": false,
+    "unchanged": [
+      "spline",
+      "phase",
+      "origin_fraction",
+      "elevation",
+      "roll",
+      "hand",
+      "physical_bead_dimensions"
+    ],
+    "projected_scale_ratio": 0.951834862385321
+  },
+  "independent_checks": [
+    {
+      "parameters_sha256": "a5c5c4163c9aea83c5b2ef2a336432ec6cc2eb641eebc69b4f2fc19dd656f36f",
+      "checker_sha256": "ee226fadefb29e5043f2c909f9f51800342f9b34ba83f07fb17c29658d8138c3",
+      "kernel_sha256": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+      "source_scene_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "parameters": {
+        "nbeads": 2698,
+        "hand": -1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -21.979857484559343,
+        "origin_fraction": 0.8016461717772337
+      },
+      "check": {
+        "visible_anchors": 1246,
+        "unfinished_rays": 12,
+        "independent_same_ray_check": {
+          "verified_rays": 2694,
+          "mismatches": 0,
+          "unverified_rays": 4
+        },
+        "independent_pov_pixel_check": {
+          "agree": 1180,
+          "total": 1246,
+          "mismatch_indices": [
+            1,
+            144,
+            157,
+            196,
+            287,
+            313,
+            391,
+            456,
+            755,
+            976,
+            980,
+            1006,
+            1058,
+            1097,
+            1110,
+            1158,
+            1175,
+            1201,
+            1227,
+            1357,
+            1370,
+            1383,
+            1396,
+            1409,
+            1448,
+            1461,
+            1474,
+            1487,
+            1500,
+            1526,
+            1539,
+            1682,
+            1708,
+            1721,
+            1747,
+            1812,
+            1825,
+            1838,
+            1890,
+            1903,
+            1929,
+            1942,
+            1968,
+            1994,
+            2007,
+            2033,
+            2046,
+            2062,
+            2127,
+            2166,
+            2179,
+            2218,
+            2244,
+            2283,
+            2296,
+            2361,
+            2426,
+            2452,
+            2465,
+            2478,
+            2491,
+            2504,
+            2569,
+            2582,
+            2608,
+            2686
+          ],
+          "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+        },
+        "appearance_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r175/fit-check/registered.pov",
+          "+O/home/rharris/git/beads/photo2/output/r175/fit-check/registered.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "id_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r175/fit-check/registered-ids.pov",
+          "+O/home/rharris/git/beads/photo2/output/r175/fit-check/registered-ids.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "appearance_scene_sha256": "0ec49c7cb270dfe7af355147a44c7808f65f4b34346b2b6c9efa0da36dba8050",
+        "id_scene_sha256": "d01b74b0376a90e754fa16eefb67e708bec0d14b58aa46fc1d382613dd3d1790"
+      },
+      "meaning": "Independent forward model/point-visibility agreement only; not validation of photo bead identities or N/camera/helicity."
+    },
+    {
+      "parameters_sha256": "05935c84cbdc2590b9883b540c162fc49f16dfae5ac181011c00de1471790373",
+      "checker_sha256": "ee226fadefb29e5043f2c909f9f51800342f9b34ba83f07fb17c29658d8138c3",
+      "kernel_sha256": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+      "source_scene_sha256": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+      "parameters": {
+        "nbeads": 2833,
+        "hand": -1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -21.979857484559343,
+        "origin_fraction": 0.8016461717772337
+      },
+      "check": {
+        "visible_anchors": 1307,
+        "unfinished_rays": 12,
+        "independent_same_ray_check": {
+          "verified_rays": 2828,
+          "mismatches": 0,
+          "unverified_rays": 5
+        },
+        "independent_pov_pixel_check": {
+          "agree": 1235,
+          "total": 1307,
+          "mismatch_indices": [
+            1,
+            53,
+            79,
+            92,
+            118,
+            131,
+            144,
+            170,
+            271,
+            284,
+            297,
+            336,
+            349,
+            388,
+            401,
+            414,
+            427,
+            440,
+            453,
+            505,
+            518,
+            531,
+            557,
+            648,
+            752,
+            765,
+            804,
+            817,
+            843,
+            869,
+            973,
+            1012,
+            1047,
+            1086,
+            1164,
+            1216,
+            1242,
+            1281,
+            1320,
+            1372,
+            1385,
+            1411,
+            1450,
+            1463,
+            1476,
+            1528,
+            1541,
+            1554,
+            1593,
+            1606,
+            1619,
+            1720,
+            1746,
+            1811,
+            1837,
+            1863,
+            1902,
+            2058,
+            2188,
+            2305,
+            2331,
+            2344,
+            2448,
+            2509,
+            2535,
+            2626,
+            2639,
+            2665,
+            2704,
+            2756,
+            2808,
+            2821
+          ],
+          "interpretation": "Rounded preview pixels can differ at grazing boundaries; point ray exposure is tested in continuous model coordinates."
+        },
+        "appearance_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r177/count-check/registered.pov",
+          "+O/home/rharris/git/beads/photo2/output/r177/count-check/registered.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "id_command": [
+          "povray",
+          "+I/home/rharris/git/beads/photo2/output/r177/count-check/registered-ids.pov",
+          "+O/home/rharris/git/beads/photo2/output/r177/count-check/registered-ids.png",
+          "+W1000",
+          "+H1253",
+          "+FN",
+          "-D",
+          "-A",
+          "+WT2",
+          "File_Gamma=1"
+        ],
+        "appearance_scene_sha256": "5576194c5b96eed33cd0b54bd5e78440f5071014918ad72bb13df3d83c0956ef",
+        "id_scene_sha256": "1a1274d5f60fb2dbf36dbb6dd27dbfac153c3f5e55c02628ad5a3c0424794f3b"
+      },
+      "meaning": "Independent forward model/point-visibility agreement only; not validation of photo bead identities or N/camera/helicity."
+    }
+  ],
+  "positive_core_checks_after_selection": {
+    "initial_fit": [
+      {
+        "maker_number": 8,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": true
+      },
+      {
+        "maker_number": 11,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": true
+      },
+      {
+        "maker_number": 14,
+        "predicted_outward_inside_confirmed_core": false,
+        "used_for_initial_fit": false
+      },
+      {
+        "maker_number": 17,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": false
+      },
+      {
+        "maker_number": 20,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": true
+      }
+    ],
+    "count_adjustment": [
+      {
+        "maker_number": 8,
+        "predicted_outward_inside_confirmed_core": false,
+        "used_for_initial_fit": true
+      },
+      {
+        "maker_number": 11,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": true
+      },
+      {
+        "maker_number": 14,
+        "predicted_outward_inside_confirmed_core": false,
+        "used_for_initial_fit": false
+      },
+      {
+        "maker_number": 17,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": false
+      },
+      {
+        "maker_number": 20,
+        "predicted_outward_inside_confirmed_core": true,
+        "used_for_initial_fit": true
+      }
+    ]
+  },
+  "exposure": {
+    "first_owner_must_be_self": true,
+    "front_depth_tolerance_model_units": 0.002,
+    "sdf_march_tolerance_model_units": 1e-05,
+    "max_iterations": 600,
+    "facing_dot_margin": 0.12,
+    "unfinished_rays_excluded": true,
+    "all_beads_including_hidden_occluders": true
+  },
+  "meanings": {
+    "plane_normal": "geometry.npz radial; normal is the planar left normal",
+    "center": "Minor-radial outer-wall midpoint, not visible-area centroid or specular reflection",
+    "indices": "Forward generator indices/competing diagnostic chart; not recovered full-string photo labels",
+    "visibility": "Visibility in each provisional model, not established physical exposure in the photo"
+  },
+  "held_group_excluded_from_fit_and_ranking": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "question": {
+    "id": "Q177.1",
+    "status": "pending",
+    "file": "photo2/TANGENT_CIRCLES.md",
+    "text": "In the wider upper-arc comparison, does the spacing of the cyan circles look closer to the photographed bead spacing after increasing the count to 2,833?"
+  },
+  "reproduction_commands": [
+    ".venv/bin/python photo2/tangent_circles.py --stage model --output photo2/output/r175/model",
+    ".venv/bin/python photo2/tangent_circles.py --stage fit --output photo2/output/r175/fit",
+    ".venv/bin/python photo2/check_tangent_circles.py",
+    ".venv/bin/python photo2/tangent_circles.py --stage overlay --parameters photo2/output/r175/fit/parameters.json --nbeads 2833 --output photo2/output/r177/count-plus-5-percent",
+    ".venv/bin/python photo2/check_tangent_circles.py --parameters photo2/output/r177/count-plus-5-percent/parameters.json --output photo2/output/r177/count-check",
+    ".venv/bin/python photo2/review_tangent_circles.py"
+  ],
+  "artifact_sha256": {
+    "photo2/review/r175/model-only.png": "d5725cab13c1d6360b3775c143eb6995abcf37f84136ab80a222b925cdbd0c48",
+    "photo2/review/r175/bracelet-overlay.png": "ab627786ad9a5dae74a5cc6251cd60df6db6f112ec23b51b07ce3d7fab412ca3",
+    "photo2/review/r175/patch-overlay.png": "c17ee866656f9307e0627c9e4c7904802c32d0915cc29946fc6dbf7852a5768e",
+    "photo2/review/r177/bracelet-overlay.png": "c5de0528f87faed7dd7561a98fb1f54b6f8c9ef61723d6a5ad9a9b6e64954a56",
+    "photo2/review/r177/patch-overlay.png": "2b5e5c1ba90a03b0933be8715bd21c78c2c32582283b660760f94b5efa1082dc",
+    "photo2/review/r177/spacing-comparison.png": "2775c6f2b0edfba36aecfb44d555a58e1edaa673f47a033d11f87ffd2116b877",
+    "photo2/review/r175/parameters.json": "a5c5c4163c9aea83c5b2ef2a336432ec6cc2eb641eebc69b4f2fc19dd656f36f",
+    "photo2/review/r177/parameters.json": "05935c84cbdc2590b9883b540c162fc49f16dfae5ac181011c00de1471790373",
+    "photo2/review/r175/fit-candidates.json": "6360892ee72ece956d2f6c10d52f307ee6c72b0fe9ff1ff2c06ee4f7828d3281"
+  }
+}
