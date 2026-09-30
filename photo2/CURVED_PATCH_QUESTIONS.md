@@ -1,6 +1,10 @@
 # Curved 27-body comparison — maker review
 
-Q156.1 is **pending**. No outline, camera pose or helicity is accepted.
+Q156.1 is **closed by R157's rejection of the outlines**. The maker reports that
+all the lines cross into other beads and requests conservative interior loops
+instead. Do not ask the maker to choose among these rejected outlines again.
+No camera pose or helicity is accepted. Current review is
+[Q157.1](INTERIOR_LOOPS.md), using interior loops and raw HSV evidence.
 
 ![Raw bead 11 beside the three proposals](review/r156/q156-1.png)
 

@@ -11,7 +11,27 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current task — R156: curved 27-body comparison complete; outline review pending
+## Current task — R157–R158: replace rejected outlines with interior loops
+
+The maker rejects all prior full-body outlines because they cross into adjacent
+beads. Use conservative closed interior loops, hue for red/yellow appearance,
+S/V to avoid edges, and a black bead's reflection plus nearby dark surround.
+[Five central examples and Q157.1](photo2/INTERIOR_LOOPS.md) replace the outline
+selection question. Q156.1 is closed by this rejection; older unanswered outline
+questions do not gate this new interior-based method.
+
+The diagnostic loops use existing training marks only; group 22/23/24/25 stays
+excluded. No prior fitted boundary, old HSV box or specular boundary marker is
+used. Outside pixels remain unknown. Maker acceptance is pending; no new pose,
+helicity, full index or color order is accepted.
+
+**Stopping point:** five conservative interior loops and raw-image review.
+**Next task:** compare existing poses using reviewed loops as positive surface
+samples. No complete bead outline needs to be accepted first. Do not advance
+whole-necklace walking, closure or repeat inference. Recommend gpt-6.1-sol / High;
+same session, no /new needed.
+
+## Prior task — R156: curved 27-body comparison complete; outlines later rejected
 
 [Curved comparison](photo2/CURVED_PATCH_FIT.md) fits 23 ordinary maker surface
 locations and withholds the neighboring 22/23/24/25 group. Both A/+1 and B/−1

@@ -1,6 +1,40 @@
 # Beads session handoff — new branch
 
-## Current R156 — Curved 27-body comparison complete
+## Current R157–R158 — Conservative interiors replace rejected outlines
+
+R157 maker rejects all proposed complete outlines as crossing into other beads.
+Requests closed lines comfortably inside bodies, H for red/yellow color and S/V
+for interior confidence; black bodies use reflections with nearby black surround.
+R158 asks why work stopped and says continue. Session reported a deliberate turn
+interruption; the bounded step was unfinished, not an agent-selected stop.
+Resume preserved work; no restart or inferred maker acceptance.
+
+Preflight daisy/WSL2, photo-2-reconstruction-v2 at e1d1d3a, no stashes or unrelated
+changes. [Interior-loop experiment and Q157.1](photo2/INTERIOR_LOOPS.md) replaces
+Q156.1, which is closed by maker rejection. Historical numeric feasibility
+results stay intact; no rejected outline is accepted. Q149.1's specific outline
+is unanswered and superseded as a required step; do not repeat that question.
+
+interior_loops.py selects five central training bodies 8/11/14/17/20. Circular
+local H plus S/V support for yellow/red; reflection/dark-surround context for
+black candidates. Erode support, require closed loops, preserve unknown holes,
+exclude old held-out group 22/23/24/25 from all spatial guards. Hue is not used
+for black membership. No saved HSV boxes, fitted outlines or automatic-detection
+claim. Reflection falloff interpolation is explicit, not a boundary measurement.
+
+Raw/detail and wider images/report tracked under review/r157. Routes, stable
+IDs, source/annotation/code hashes, measured HSV and support margins recorded.
+Inspect images; support margin is not measured true-boundary clearance. All five
+loops remain maker-review proposals. Source/live save/prior results untouched.
+Reproduce .venv/bin/python photo2/interior_loops.py; no new dependency or tests
+that mirror the plotting implementation. Integrity evidence is in the experiment.
+
+**Stopping point:** five interior loops and illustrated review. **Next task:**
+use reviewed loops as positive surface samples for existing-pose comparison,
+keeping outside pixels unknown. No new fit/whole-necklace walk or accepted hand.
+Recommend gpt-6.1-sol / High; same session, no /new needed.
+
+## Prior R156 — Curved 27-body comparison complete
 
 User “continue” resumes the existing patch comparison. Preflight daisy/WSL2,
 photo-2-reconstruction-v2 at 81cbb8e, upstream 0/0, no stashes, clean tree.

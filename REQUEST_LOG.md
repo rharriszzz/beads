@@ -2056,3 +2056,76 @@ entire prior prefix. Syntax/whitespace and 143 local documentation links pass.
 Final integrity.json records environment and artifact hashes. Refreshed remote
 remains 0/0 before scoped commit/push. Questions remain pending; no acceptance
 or next-phase work is inferred.
+
+## R157 — Replace bead outlines with conservative interior loops (2026-09-29)
+
+User, verbatim: “Why are you trying to draw a line around each bead?  All of the lines you chose go into other beads as well.  I suggest you not even try to go all the way around the edges of a bead, but instead draw a line that is definitaly inside a bead, all the way around, in other words, dont get close to bead boundaries.  For black beads, the only easy thing to see is the specular reflection around which is black.  For red and yello beads, please use H as a way of determining the bead color, and use S and or V to keep inside the bead.”
+
+Maker rejects the prior projected outlines. Explain that these were competing
+model predictions, not measured bead extents, and retire outline selection.
+Q156.1 is closed by this rejection; no competing pose/helicity becomes accepted.
+Q149.1's specific historical outline remains unanswered; it does not gate the new
+interior method. Preserve old numeric/evidence files and clearly qualify the
+historical experiment's status.
+
+Preflight daisy/WSL2, photo-2-reconstruction-v2 at
+e1d1d3aec5e0008346b969d213b6921966dc3771, upstream 0/0, no stashes or unrelated
+changes. Read handoff/log/plan, shape model, curved experiment and hue-transition
+conventions before writes. Present three methods: shrink connected HSV support;
+shrink a traced HSV contour; or place/check a small interior loop. Select the first.
+
+Add diagnostic interior_loops.py using existing central marks 8/11/14/17/20.
+Estimate circular local H for chromatic red/yellow appearance, with local S/V
+support and a spatial growth guard. Black candidates use a bright reflection,
+nearby dark/neutral pixels and a declared small reflection-falloff interpolation.
+Do not use H to classify black. Source-image HSV units are H degrees and S/V 0–1;
+no white-balanced historical ranges are transferred. Manual coordinates and local
+thresholds remain explicit diagnostic assistance, not final runtime priors.
+
+Inset connected support; require a closed loop and useful interior area. Unknown
+holes stay excluded. Outside pixels remain unknown, including paper/shadow/gaps;
+no full-body silhouette or outward anchor is inferred. First thresholds left a
+one-pixel yellow core and fragmented black cores; discard that pass and inspect
+revised loops against raw crops. A loop's distance to rejected support is not
+measured distance to a true bead edge. Raw crops and wider context are curated.
+
+## R158 — Resume after interruption (2026-09-29)
+
+User, verbatim: “So I can't figure out why you stopped.  Do you know?  anyway please continue”
+
+Session metadata reports that the prior turn was interrupted; no specific
+underlying trigger is available. The bounded interior step was unfinished.
+Resume preserved code/artifacts rather than restarting or assuming acceptance.
+The final pre-interruption run had completed: saved code hash matched its report.
+Clarify black hue reliability, add contour-support clearance checks, and finish
+publication of the same bounded R157 step.
+
+Five inspected loops enclose 116/193/58/99/194 pixels for beads 8/11/14/17/20.
+Each contour has a 3.5-pixel margin to rejected local support; true-boundary
+clearance remains maker-reviewed, not measured. All closed loops, source/annotation/
+code hashes and stable UUIDs verified. Independent colorsys HSV agrees on 232
+route pixels within 1.2e-16. Moving all held-out 22/23/24/25 coordinates leaves every
+loop/result unchanged. No new test suite for reversible plotting; meaningful
+computation/holdout/preservation checks recorded in review/r157/integrity.json.
+
+Q157.1 in INTERIOR_LOOPS.md asks if all five loops remain comfortably inside
+the intended beads, or which side crosses out; pending, no answer assumed. Curated
+raw/detail and wider loop images/report tracked under review/r157. Update plan,
+methods/handoff and rejected-outline status. Source image/geometry, live maker
+save and prior numeric evidence preserved; no dependency, GUI, new geometry fit,
+whole-necklace walk, camera or color-order inference. Reproduce with
+.venv/bin/python photo2/interior_loops.py.
+
+Stopping point: completed five-loop interior review. Next use reviewed loops as
+positive surface samples for existing-pose comparison, retaining outside pixels
+as unknown. No complete bead outline needs acceptance first. Recommend
+gpt-6.1-sol / High; same session, no /new needed. Scoped verification/commit/push
+follow; this is the final step of the resumed bounded task.
+
+R157–R158 integrity outcome: computation/closure/support-margin and held-out
+isolation checks pass; 232 independent HSV samples agree within 1.2e-16.
+Source/live save and prior numeric/curated evidence are unchanged. Request
+history remains append-only. Syntax/whitespace and 154 local documentation
+links verified. Final report/image hashes recorded. Q157.1 remains pending; no
+maker acceptance or subsequent geometry work is assumed. Scoped publication
+follows on the existing branch.

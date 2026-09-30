@@ -644,6 +644,16 @@ before whole-necklace bead indexing or pattern recovery.
 
 ## Assign bead_index and color to clearly visible beads
 
+**R157–R158 conservative interiors:** [local HSV/reflection loops](photo2/INTERIOR_LOOPS.md)
+supersede full-body outline review after the maker rejects the projected contours.
+Use circular local H for chromatic appearance and S/V to retain strong interiors;
+use a reflection and its dark surround for black candidates. Inset connected
+support, reject unresolved enclosed holes, inspect against raw context, and keep
+outside pixels unknown. Manual training marks and local parameters are diagnostic
+assistance, not final automatic runtime priors. A reflection is not an edge or
+an outward marker; a support margin is not measured true-boundary clearance.
+Review interior loops before using them as positive geometric surface evidence.
+
 **R156 curved-patch diagnostic:** [27-body comparison](photo2/CURVED_PATCH_FIT.md)
 fits positive ordinary surface marks with source rounded beads, a local planar
 arc and free camera pose. Hold out a whole neighbor group, derive bounds/seeds/

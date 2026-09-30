@@ -9,10 +9,13 @@ use that scale. More marks of the same kind are not the immediate next task.
 
 ![Wider raw context and three competing poses](review/r156/wider-comparison.png)
 
-Read [Q156.1](CURVED_PATCH_QUESTIONS.md) for the small outline question. The older
-[Q149.1](MAKER_POINT_QUESTIONS.md) remains pending. Neither question has a supplied
-answer at publication. Do not propagate the proposed cyan outlines as accepted
-bead boundaries or use them to walk the whole necklace.
+At R156 publication, [Q156.1](CURVED_PATCH_QUESTIONS.md) and the older
+[Q149.1](MAKER_POINT_QUESTIONS.md) had no supplied answer. **R157 then rejects
+the projected outlines as crossing into other beads and replaces outline review
+with [conservative interior loops](INTERIOR_LOOPS.md).** Q156.1 is closed by that
+rejection. Do not propagate the cyan outlines as accepted bead boundaries or use
+them to walk the whole necklace. The numeric point-feasibility results below
+remain historical evidence, not validation of those rejected extents.
 
 ## Inputs and measurement path
 
