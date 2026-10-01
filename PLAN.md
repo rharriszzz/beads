@@ -11,7 +11,42 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R187: replace biased midpoint spline through bead evidence
+## Current R190–R191: candidate tube middle rejected at reviewed bend
+
+[Candidate fit and illustrated review](photo2/CENTERLINE_FIT_REVIEW.md) complete
+the first bead-derived curve trial. Three implementations were considered:
+local paired bodies, a whole-cloud tube fit, full lattice/camera/curve fit.
+Implement the tube initializer with opposite-side support and explicit limits.
+619 substantial colored proposals after explicit assisted exclusion of C587;
+182 stations, local 15/85% tails, shared periodic middle/nuisance span, robust
+residuals and five window/smoothing settings. Neither old spline, maker center
+coordinates nor held-group labels enter fitting. C587-included automatic
+alternative changes the curve by at most 1.13 pixels.
+
+Excessive initial smoothing distorted the real inward bend; rejected example
+preserved. Revised candidate differs from old by at most 10.95 pixels, settings
+spread up to 8.27 pixels. Saved-center reference RMS is 12.98 versus old 11.65;
+known-render axis RMS 6.18/5.97/6.99 pixels reveals persistent coverage bias.
+No improvement or physical-axis recovery claimed. Q190.1 answered R191:
+“Cyan existing curve.” Preserve exact answer/image; reject candidate at that
+bend. This is local preference, not global validation or numerical correction
+of the old spline. Original curve/viewer/scores/41 marks remain unchanged.
+
+Five geometric tests pass, including systematic-bias and invalid-route controls.
+Existing SplineRope accepts candidate format and produces finite geometry for
+both hands. Raw/old/candidate crops, full-photo context, settings alternatives,
+support records, failures, hashes and independent known-render checks saved.
+No GUI/server/launcher, new POV render, bead-count scan or live curve replacement.
+
+**Stopping point:** reviewed candidate and demonstrated limitations; no question
+pending. **Next bounded task:** diagnose the coverage bias using literal visible
+bead geometry and supported near-edge/diagonal observations, testing known
+synthetic examples before another proposed axis. Do not repeat the symmetric
+colored-tail assumption as a recovered physical centerline. Keep centers for
+evaluation, both hands/N/camera/phase unknown, and missing/black slots.
+gpt-6.1-sol / High; stay here, no `/new`.
+
+## Prior R187: replace biased midpoint spline through bead evidence
 
 Maker sees centerline defects and proposes colored edge bodies/diagonalseries,
 asks for automatic selection. [Old-method audit and bead review](photo2/CENTERLINE_BEAD_REVIEW.md):

@@ -1,6 +1,73 @@
 # Beads session handoff — new branch
 
-## Current R187 — Audit old centerline; colored edge/diagonal evidence pilot
+## Current R190–R191 — Bead-derived curve trial; old cyan favored at bend
+
+R190 asks for a reminder then continuation. Explained candidate middle fit,
+old/new raw and whole-photo comparisons, saved centers reserved for evaluation.
+Preflight daisy, bcac586, photo-2-reconstruction-v2, clean/no stashes;
+deliberate fetch/upstream 0/0. Read current records, R187 evidence, quick shape
+model (including historical detailed guide), HSV overlap and literal geometry.
+No agents, new dependencies, supplied usage/status or ownership transfer.
+
+[Method, comparisons and result](photo2/CENTERLINE_FIT_REVIEW.md),
+[full photo](photo2/review/r190/whole-context.png),
+[frozen checks and hashes](photo2/review/r190/summary.json).
+Three implementations: local opposite-side body pairing, whole-cloud tube fit,
+full joint lattice/camera/curve fit. Implement second as a provisional initializer;
+full 3D joint fit remains unfinished. Confirmed C573→C575→C577 topology retained
+for comparison, not silently promoted to an exact tangent or signed6/7 mapping.
+
+fit_bead_centerline.py calls unchanged input-only detector. No old spline,
+saved centers, hue boxes or held-group labels in fit. C587 explicitly excluded
+as assisted diagnostic (not a confirmed paper error); input-only alternative
+including it changes curve maximum 1.13 pixels/RMS 0.16. Substantial core checks
+admit 619 of 642 observations. 182 stations, windows +/-6 apparent diameters,
+12 local bodies/two per tail required, cross quantiles15/85. Shared closed
+Fourier middle and low-frequency colored half-span, robust side residuals,
+no old-curve attraction; interior sides are not physical edges or radius.
+Photo harmonics48/cutoff32, width4; five settings windows4/6/8 and cutoffs24/32/48.
+Require nondegenerate, nonintersecting closure. Missing sides remain unsupported;
+wider windows have provisional support at182/182, shorter at148/182 (~19% gaps).
+Overlapping supports correlated; blue alternatives are not error bounds.
+
+Initial harmonics24/cutoff12 excessively smoothed actual inward bend; retain
+over-smoothed fit/check as a failed control. Revised curve preserves bend,
+old-difference max10.95/RMS4.50 source px; normal settings span max8.27/median1.94.
+41 saved visible-center marks rev2 were never used for fit/setting selection:
+curve-distance RMS12.98 versus old11.65. All settings12.89–13.23. This is an axis
+reference check, not prior outward-bead SSE or proof old axis is correct.
+Pure image fits on three independent existing literal-POV appearance fixtures
+finish before source-model/camera truth is read; primary curve-to-axis RMS
+6.18/5.97/6.99 px for +hand/-hand/changed palette+placement. Systematic colored
+visibility/coverage bias remains; robust smoothing does not validate physical axis.
+
+Q190.1 asked which middle placement looks better at largest revised difference.
+R191 answers “Cyan existing curve.” Exact answer/photo/question-image hashes
+in centerline-review-answer-r191.json and summary. Candidate rejected at that
+bend; no global maker validation of old curve or numerical corrected points.
+Question answered; no pending permission. Preserve original question pixels.
+
+Five new tests pass: closed ellipse from sides, rigid motion, isolated outliers,
+missing sides/exclusion, systematic translation bias, exact segment distances,
+crossing and collinear-overlap rejection. Actual SplineRope accepts separate
+candidate seed and finite geometry for both hands. Curated images inspected;
+syntax, append-only log, source/live-file hashes and links checked. No GUI,
+server/launcher, new POV render, count scan or model exposure refit. Input-only
+calibration is approximate-axis evidence, not completeness or helicity inference.
+All live annotations, centers, scores, viewer choices and old model files retain
+their captured hashes. Existing score differs from older R186 snapshot, but
+this task never writes it. Generated run namespaces remain ignored.
+
+**Stopping point:** a reproducible rejected candidate and its failure/sensitivity
+review. **Next bounded task:** diagnose the visibility/coverage bias with literal
+3D bead geometry and supported near-edge/diagonal bodies, on known examples
+before proposing another physical axis. Do not just repeat colored-tail symmetry
+or equate interior/visible centers to outward points. Keep both hands, N/camera/
+phase/closure unknown, missing/black slots and old22–25 held-group label exclusion.
+gpt-6.1-sol / High; same conversation, no `/new`. Scoped commit/push and exact
+remote/final status verified before claiming delivery. Stop after this bounded step.
+
+## Prior R187 — Audit old centerline; colored edge/diagonal evidence pilot
 
 Maker sees centerline defects despite count-score minimum; requests another
 method based on red/yellow beads near edges and diagonal series, asks whether

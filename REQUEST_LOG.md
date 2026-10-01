@@ -3281,3 +3281,79 @@ and both questions are answered. Original detector/proposal coordinates,
 makersaves/scores and oldcurve unchanged. Bounded pilot stops after delivering
 supported/uncertain evidence; next fit must use reliable constraints allaround,
 not mistake the one confirmed three-body chain for a globally corrected spline.
+
+
+## R190 — Continue bead-derived centerline trial with a reminder
+
+User: “remind me what you will do in this step, then continue”
+
+Explained fitting a candidate from colored bodies, preserving uncertain C587,
+raw/whole-photo comparisons and saved centers for evaluation. Preflight daisy,
+bcac586, photo-2-reconstruction-v2, clean/no stashes; fetch/upstream 0/0.
+Read current handoff/log/plan, R187 evidence, quick/detailed planar shape model,
+HSV overlap and literal bead geometry. No agents or new dependencies.
+
+Three implementations presented: nearby opposite-side colored bodies, a smooth
+tube through the cloud, full joint lattice/camera/curve fitting. Choose tube
+initializer with paired support checks; full 3D joint fit remains unfinished.
+Confirmed C573→C575→C577 consecutive topology is preserved for comparison,
+not an exact tangent or signed6/7 assignment. No new indices, N or helicity.
+
+fit_bead_centerline.py uses unchanged input-only detector. 619 substantial
+colored observations after explicit assisted exclusion of unresolved C587;
+input-only alternative including it retained. 182 stations with windows +/-6
+apparent diameters, at least12 bodies and two per tail; cross15/85% interior
+quantiles, shared periodic middle/colored half-span, robust side residuals,
+no old-curve attraction or saved-coordinate/hue-box/held-group label inputs.
+Candidate sides/span are not physical edges/radius. Closures checked for
+nondegeneracy, crossings and collinear overlap. Unsupported sides retained.
+
+Initial harmonics24/cutoff12 oversmoothed the real inward bend; failed fit/check
+preserved. Revised photo harmonics48/cutoff32, width4, five windows/cutoffs.
+Old-curve difference max10.95/RMS4.50 pixels; settings normal span max8.27,
+median1.94. C587 inclusion shift max1.13/RMS0.16. Main182/182 provisional pairs;
+short window148/182, about19% route has weaker local support. Correlated local
+windows/settings alternatives aren't independent confidence/error bounds.
+
+41 maker visible-center marks revision2 reserved for evaluation; reference
+curve-distance RMS12.98 versus old11.65, other settings12.89–13.23. This isn't
+previous outward-bead SSE or proof of physical axis. No setting chosen by marks.
+All image-only fits on three reused independent literal-POV appearance fixtures
+finish before known source geometry/camera truth read; revised primary axis RMS
+6.18/5.97/6.99 pixels (+hand/-hand/changed palette+placement). Systematic colored
+visibility/coverage bias remains; this does not establish a corrected axis.
+
+Five new geometric tests pass: ellipse/rigid motion, isolated outlier rejection,
+missing sides/explicit exclusions, a systematic-bias counterexample, exact segment
+distance, crossing/collinear-overlap rejection. Separate seed loads in actual
+SplineRope with finite geometry for both hands. Syntax, image inspection, hashes,
+append-only log and local links checked. No GUI/server/launcher, new POV render,
+count scan or live curve adoption. Original photo/POV/detector/model seed and
+live maker annotations/centers/scores/viewer choices retain captured hashes;
+the current score is newer than the R186 historical snapshot and is preserved.
+
+CENTERLINE_FIT_REVIEW.md curates whole/raw comparisons, parameter alternatives,
+full support/failure records, evaluated marks and source/output hashes. Q190.1
+asks which curve places the middle better at the largest revised difference.
+Question pending when issued; outcome recorded separately below. Stopping point
+is candidate fit and review, not full joint 3D completion. Next: address colored
+visibility/coverage bias using literal bead geometry and supported edge/diagonal
+bodies on known examples before another proposed axis. gpt-6.1-sol / High,
+same session, no /new. Scoped commit/push and exact remote/clean final status
+before claiming delivery.
+
+
+## R191 — Existing cyan curve is better at the reviewed tight bend
+
+Maker answer to Q190.1: “Cyan existing curve.”
+
+Preserve exact answer, photo/question-image hashes and local interpretation in
+centerline-review-answer-r191.json; curator validates unchanged question pixels.
+Existing cyan places the rope middle better in this crop than the green
+candidate. Reject the new middle at this bend, retain original live curve and
+preserve the failed candidate/settings for comparison. This is a qualitative
+local preference, not global verification of the old curve, corrected numeric
+points, count, camera or helicity. Update review, summary, plan, method and
+handoff. Question answered; no pending approval or question. Complete delivery
+of this bounded trial; next literal-geometry fit must address the demonstrated
+visibility/coverage bias rather than adopt symmetric colored tails as truth.

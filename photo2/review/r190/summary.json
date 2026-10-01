@@ -1,0 +1,637 @@
+{
+  "request": "R190",
+  "fit_run": {
+    "request": "R190",
+    "variants": [
+      {
+        "name": "window6-cutoff32",
+        "file": "window6-cutoff32.json",
+        "sha256": "0da55d17ed964aaa8ebb4bbbcd6ea5b6c36a77bac2a78d35dfb220d206858277",
+        "supported": 182,
+        "total": 182,
+        "residual": 1.0236435967378392
+      },
+      {
+        "name": "window4-cutoff32",
+        "file": "window4-cutoff32.json",
+        "sha256": "d6888dc819580d00b03bf77bc8d41d70157b212b3ea7811bd19e14ac750a6621",
+        "supported": 148,
+        "total": 182,
+        "residual": 1.3963883887184207
+      },
+      {
+        "name": "window8-cutoff32",
+        "file": "window8-cutoff32.json",
+        "sha256": "fbf6e051bb2f866533442713cf8560592664095907d0ce2d33b434fc9c2374ca",
+        "supported": 182,
+        "total": 182,
+        "residual": 0.9667767686833864
+      },
+      {
+        "name": "window6-cutoff24",
+        "file": "window6-cutoff24.json",
+        "sha256": "746083405004f308ecc135d9e100cfefe1164c5e8e89c5960ef4946535185073",
+        "supported": 182,
+        "total": 182,
+        "residual": 1.1081413264191957
+      },
+      {
+        "name": "window6-cutoff48",
+        "file": "window6-cutoff48.json",
+        "sha256": "b1dbe93749e544401300acfb9448a6976ebef9658c5d8839777826ddfe558ab8",
+        "supported": 182,
+        "total": 182,
+        "residual": 0.9660277500274975
+      }
+    ],
+    "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "detector_parameters": {
+      "analysis_size": [
+        1277,
+        1600
+      ],
+      "scale_xy": [
+        0.502755905511811,
+        0.502828409805154
+      ],
+      "background_chromaticity": [
+        0.41883766651153564,
+        0.20576922595500946
+      ],
+      "background_mad": [
+        0.006991998758167028,
+        0.011370813474059105
+      ],
+      "background_value": 0.843137264251709,
+      "foreground_threshold": 20.025123596191406,
+      "border_fraction": 0.025,
+      "band_smoothing_sigma": 3.076923076923077,
+      "other_component_area": 0,
+      "apparent_internal_width": 8.495227600363814,
+      "apparent_diameter": 13.671342289621748,
+      "strip_halfwidth": 24.413111231467404,
+      "hue_modes_degrees": [
+        27,
+        353
+      ],
+      "saturation_floor": 0.5740740895271301,
+      "reflection_response_floor": 0.02981969714164734,
+      "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+      "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+    },
+    "source_sha256": {
+      "photo2/fit_bead_centerline.py": "3a8593a1b8911e76e0c51677ee396731eb7b9f57f3104bcf49c51d356040da9d",
+      "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+      "photo2/colored_centerline_evidence.py": "b5f6796fbb1f0e81c066c4bf3d480b97e2c04563ea14aba3e3279a44fc87c642"
+    },
+    "maker_input_role": "Only explicit excluded observations; no saved centers/old curve/held body labels used.",
+    "limitations": [
+      "Interior quantiles are not physical edges.",
+      "Colored/palette coverage may be asymmetric.",
+      "Camera/height/width and N/helicity remain unresolved.",
+      "Overlapping local windows do not supply independent statistical confidence."
+    ]
+  },
+  "inventory": {
+    "admitted": 619,
+    "rejected": 23,
+    "excluded": [
+      587
+    ]
+  },
+  "settings_spread": {
+    "maximum": 8.265449035445918,
+    "median": 1.9384639805691959,
+    "meaning": "Sensitivity to five settings; not a statistical confidence interval or total error bound"
+  },
+  "old_difference": {
+    "maximum": 10.948759439255282,
+    "rms": 4.504157274584921
+  },
+  "exclusion_sensitivity": {
+    "maximum": 1.1307823454786077,
+    "rms": 0.1585987470638112
+  },
+  "known_renders": [
+    {
+      "fixture": "hand+1-palette0-shift0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "checks": [
+        {
+          "cutoff": 32.0,
+          "rms_curve_to_truth": 6.184339049493481,
+          "max_curve_to_truth": 12.211966111721619,
+          "rms_truth_to_curve": 6.128273496090349,
+          "supported": 48,
+          "total": 48
+        },
+        {
+          "cutoff": 48.0,
+          "rms_curve_to_truth": 6.190338470482628,
+          "max_curve_to_truth": 12.248934360616296,
+          "rms_truth_to_curve": 6.134768366530521,
+          "supported": 48,
+          "total": 48
+        }
+      ],
+      "limitation": "Known circle with different palette/placement/hand; not photo accuracy or a noncircular/perspective guarantee."
+    },
+    {
+      "fixture": "hand-1-palette0-shift0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "checks": [
+        {
+          "cutoff": 32.0,
+          "rms_curve_to_truth": 5.974062965156483,
+          "max_curve_to_truth": 10.625013434486219,
+          "rms_truth_to_curve": 5.942946689223585,
+          "supported": 48,
+          "total": 48
+        },
+        {
+          "cutoff": 48.0,
+          "rms_curve_to_truth": 5.980069314948013,
+          "max_curve_to_truth": 10.665024573403581,
+          "rms_truth_to_curve": 5.950227115619626,
+          "supported": 48,
+          "total": 48
+        }
+      ],
+      "limitation": "Known circle with different palette/placement/hand; not photo accuracy or a noncircular/perspective guarantee."
+    },
+    {
+      "fixture": "hand+1-palette1-shift2",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "checks": [
+        {
+          "cutoff": 32.0,
+          "rms_curve_to_truth": 6.985100171168788,
+          "max_curve_to_truth": 14.014662996156078,
+          "rms_truth_to_curve": 6.938469521971863,
+          "supported": 48,
+          "total": 48
+        },
+        {
+          "cutoff": 48.0,
+          "rms_curve_to_truth": 6.991879573443906,
+          "max_curve_to_truth": 14.073204232536666,
+          "rms_truth_to_curve": 6.946702637574001,
+          "supported": 48,
+          "total": 48
+        }
+      ],
+      "limitation": "Known circle with different palette/placement/hand; not photo accuracy or a noncircular/perspective guarantee."
+    }
+  ],
+  "saved_centers": {
+    "count": 41,
+    "revision": 2,
+    "source_sha256": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "old": {
+      "rms": 11.649908745488322,
+      "mean": 9.42273470883727,
+      "maximum": 30.809875132389877,
+      "distances": [
+        15.473256013291616,
+        11.129492569980057,
+        6.744315244782127,
+        0.5683596858840713,
+        22.98132563117289,
+        11.396392015318265,
+        16.029616976645023,
+        30.809875132389877,
+        14.244132118090983,
+        19.070996612911312,
+        6.742656119442582,
+        19.973932195647414,
+        13.860863266582035,
+        3.9984889908150416,
+        23.07365958505226,
+        11.633555855807199,
+        6.311337015335909,
+        11.062444575823461,
+        16.16241479673469,
+        1.9122882215412635,
+        4.570853987584091,
+        3.1814410942980964,
+        7.161288086215399,
+        8.07162376160759,
+        7.688159362598067,
+        3.9260546294219796,
+        2.4770687742467477,
+        4.019549700454017,
+        10.023500327332629,
+        6.643636202368916,
+        6.658340139813595,
+        5.995922009541393,
+        11.125656959796848,
+        4.436703709988244,
+        0.9746651395463602,
+        1.2145742254983443,
+        5.404231583210016,
+        5.20644860416665,
+        16.18177815391229,
+        6.388008161107895,
+        1.803215826370751
+      ]
+    },
+    "candidate": {
+      "rms": 12.982512242996648,
+      "mean": 10.226177193393534,
+      "maximum": 34.501384131039124,
+      "distances": [
+        9.835019880249071,
+        5.95079408685665,
+        12.229278650775012,
+        6.30106202683995,
+        28.6349365852536,
+        6.526204678228006,
+        20.377587855775104,
+        34.501384131039124,
+        11.2788959485211,
+        16.438535474025276,
+        4.094446106297296,
+        22.595427374573973,
+        16.654830279283658,
+        1.0755834431662517,
+        20.26763891881687,
+        7.752568377138624,
+        9.628045579831054,
+        5.821890828735362,
+        20.61413895636426,
+        9.263229327337315,
+        2.193649493731992,
+        0.9341587155945769,
+        4.979785940808571,
+        0.5934605542424042,
+        12.173141751195109,
+        0.47473648720953393,
+        9.504841691798465,
+        3.486463756959827,
+        3.303635854072532,
+        11.106660603638513,
+        10.447519320813964,
+        13.039841169522445,
+        20.36650239958572,
+        10.2465613358494,
+        0.47470806816779904,
+        0.40227052377824046,
+        7.551910258256756,
+        4.754810105896918,
+        19.688220439221595,
+        10.897960529705378,
+        2.810927419977554
+      ]
+    },
+    "variants": [
+      {
+        "name": "window6-cutoff32",
+        "rms": 12.982512242996648,
+        "mean": 10.226177193393534,
+        "maximum": 34.501384131039124,
+        "distances": [
+          9.835019880249071,
+          5.95079408685665,
+          12.229278650775012,
+          6.30106202683995,
+          28.6349365852536,
+          6.526204678228006,
+          20.377587855775104,
+          34.501384131039124,
+          11.2788959485211,
+          16.438535474025276,
+          4.094446106297296,
+          22.595427374573973,
+          16.654830279283658,
+          1.0755834431662517,
+          20.26763891881687,
+          7.752568377138624,
+          9.628045579831054,
+          5.821890828735362,
+          20.61413895636426,
+          9.263229327337315,
+          2.193649493731992,
+          0.9341587155945769,
+          4.979785940808571,
+          0.5934605542424042,
+          12.173141751195109,
+          0.47473648720953393,
+          9.504841691798465,
+          3.486463756959827,
+          3.303635854072532,
+          11.106660603638513,
+          10.447519320813964,
+          13.039841169522445,
+          20.36650239958572,
+          10.2465613358494,
+          0.47470806816779904,
+          0.40227052377824046,
+          7.551910258256756,
+          4.754810105896918,
+          19.688220439221595,
+          10.897960529705378,
+          2.810927419977554
+        ]
+      },
+      {
+        "name": "window4-cutoff32",
+        "rms": 13.23356016976798,
+        "mean": 10.163835878359576,
+        "maximum": 36.168900510844146,
+        "distances": [
+          8.281663043427418,
+          4.759707004406346,
+          13.710947074836204,
+          7.820374894087879,
+          30.190177217784914,
+          5.0589629625497325,
+          21.9270440968186,
+          36.168900510844146,
+          9.611027833474113,
+          15.234092858189316,
+          3.439245984587618,
+          23.629059406271338,
+          16.69371402375177,
+          0.9886378733120568,
+          20.22824843920857,
+          7.054381826755707,
+          9.954538036288746,
+          4.463010119810073,
+          21.589508740058875,
+          7.219455565724284,
+          3.4833006394124837,
+          0.8087380926871712,
+          5.560896185368044,
+          1.1479215023194345,
+          12.036350607418925,
+          1.2208485392334496,
+          10.028109369930462,
+          3.5478031479353955,
+          3.7178338234965933,
+          7.931841986117524,
+          3.639583491806102,
+          13.103204720108215,
+          22.51563587392096,
+          11.831401288344358,
+          1.4522448191147221,
+          1.1113415403260754,
+          7.404250171400445,
+          5.113536192531663,
+          19.654990633220095,
+          12.60760434157427,
+          0.7771365342885678
+        ]
+      },
+      {
+        "name": "window8-cutoff32",
+        "rms": 12.927850715858362,
+        "mean": 10.305536283850829,
+        "maximum": 34.00711414445397,
+        "distances": [
+          9.296318315049357,
+          4.886119729075307,
+          13.012737641494219,
+          6.419917944987083,
+          29.12603923713945,
+          6.987609326829013,
+          19.857971020710355,
+          34.00711414445397,
+          11.590323879441977,
+          16.466621061290716,
+          3.9353639376843814,
+          22.629056867626254,
+          16.97693775193275,
+          0.7931336451297207,
+          19.944281915158534,
+          7.892042700225137,
+          9.762299480510508,
+          6.651698029380001,
+          20.21752906302193,
+          9.853936917552465,
+          2.6474050001430784,
+          0.7287462325394379,
+          5.06504926066676,
+          0.4852268099233921,
+          12.169708841363784,
+          0.18157052524920095,
+          8.427189920683633,
+          3.801545528483138,
+          3.255148175768305,
+          11.613877584429739,
+          11.004573503319804,
+          12.875714755276395,
+          19.704113520210445,
+          9.185161390086737,
+          1.4294758577693973,
+          2.7459002522113765,
+          8.185202226197934,
+          5.478496025025836,
+          19.098856660746836,
+          9.601576267292216,
+          4.5353966918033315
+        ]
+      },
+      {
+        "name": "window6-cutoff24",
+        "rms": 12.892536433367955,
+        "mean": 10.149950347999123,
+        "maximum": 34.97103811561163,
+        "distances": [
+          9.886780772550239,
+          5.805542258969835,
+          12.270230930224427,
+          6.132607905044544,
+          28.567315952277326,
+          6.479423607165292,
+          20.612916216839086,
+          34.97103811561163,
+          10.635074024293289,
+          15.98369177380688,
+          3.9675289582130504,
+          22.951523857709272,
+          16.195307931154122,
+          1.6980954188037405,
+          20.712796103525793,
+          8.576218978676978,
+          8.876362249738232,
+          6.619789970807484,
+          19.775801419629314,
+          9.050252608028252,
+          1.9326548304349829,
+          1.1534377717739603,
+          4.708033838839204,
+          1.0947731832078529,
+          11.556040453971466,
+          0.6550986917834546,
+          9.193106054606536,
+          2.9798132288014463,
+          3.884675873524244,
+          11.406597284719748,
+          9.863898992477967,
+          13.23023040359401,
+          20.107296450328384,
+          9.184160305321639,
+          0.12155740853633963,
+          0.869904172437209,
+          7.924633334567637,
+          5.031522037238456,
+          19.184620943084663,
+          9.341063873561557,
+          2.9565460820844924
+        ]
+      },
+      {
+        "name": "window6-cutoff48",
+        "rms": 13.062235421585196,
+        "mean": 10.284091992836782,
+        "maximum": 34.05937459822476,
+        "distances": [
+          9.82108167864448,
+          6.350282080745176,
+          11.997029631066708,
+          6.723329065108123,
+          28.691365666965403,
+          6.207357973014425,
+          20.371055512708086,
+          34.05937459822476,
+          12.053625553955744,
+          16.89340730268908,
+          4.093708429766286,
+          22.28400631309883,
+          17.059073343186796,
+          0.6769251869043866,
+          19.864191885296282,
+          7.385319531245227,
+          9.990783335971416,
+          5.433209140066861,
+          20.992990757558662,
+          9.362063265349374,
+          2.486104597424412,
+          0.5875714823348839,
+          5.215457899611375,
+          0.28314318877166617,
+          13.227499239025747,
+          0.25194726333076356,
+          9.698222995892857,
+          3.7825559776274025,
+          3.2536263906927485,
+          10.830593332958871,
+          10.903682655284975,
+          12.494483766414207,
+          21.10398599232918,
+          10.427229305268641,
+          0.7214268394661318,
+          0.15489332157276786,
+          6.995035876288791,
+          4.662022702887337,
+          19.724212568487978,
+          12.290646270936483,
+          2.243249788134719
+        ]
+      }
+    ],
+    "meaning": "Distances to axis proxy, not bead-prediction SSE. Marks not used to select/fill/rank curves; they need not lie exactly on a physical axis."
+  },
+  "maker_review": {
+    "request": "R191",
+    "question": "Q190.1",
+    "answer": "Cyan existing curve",
+    "supporting_image": "photo2/review/r190/bend-question.png",
+    "supporting_image_sha256": "88929901a5e0c28c502cab02de180cbf74d24f670fc027f310aa6e211c409efa",
+    "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "maker_fact": "At the illustrated tight bend, the existing cyan curve places the middle better than the green candidate.",
+    "outcome": "Reject candidate at this bend; retain existing live curve.",
+    "limits": "Qualitative local comparison only; not a corrected coordinate, global verification of the old spline, bead count, camera or helicity."
+  },
+  "confirmed_diagonal": {
+    "observations": [
+      {
+        "label": "A",
+        "observation_number": 573,
+        "source_xy": [
+          501.9439388454471,
+          590.6474268787714
+        ]
+      },
+      {
+        "label": "B",
+        "observation_number": 575,
+        "source_xy": [
+          529.9482096497524,
+          579.6653130152606
+        ]
+      },
+      {
+        "label": "C",
+        "observation_number": 577,
+        "source_xy": [
+          559.8102934304677,
+          575.5811301307311
+        ]
+      }
+    ],
+    "candidate_image_angles": [
+      20.810010385356108,
+      31.466611091447852
+    ],
+    "role": "Consecutive body topology preserved; no signed6/7, exact tangent, phase or helicity inferred"
+  },
+  "question": {
+    "id": "Q190.1",
+    "crop": [
+      1573.9197731172792,
+      1406.556510328808,
+      1953.9197731172792,
+      1786.556510328808
+    ],
+    "largest_difference_xy": [
+      1763.9197731172792,
+      1596.556510328808
+    ],
+    "text": "Which curve places the middle of the rope better here?"
+  },
+  "supported_fraction": 1.0,
+  "short_window_inferred_fraction": 0.18908382066276802,
+  "sources": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/fit_bead_centerline.py": "3a8593a1b8911e76e0c51677ee396731eb7b9f57f3104bcf49c51d356040da9d",
+    "photo2/review_bead_centerline.py": "08b9d193910a14d8333d19be2620341a7edebed265451c17e3dfeca14905f348",
+    "photo2/test_bead_centerline.py": "92c9a40e4e58be029539f5ce85b95d4d6ef927b79a372d142e88416ca1e3edb1",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/colored_centerline_evidence.py": "b5f6796fbb1f0e81c066c4bf3d480b97e2c04563ea14aba3e3279a44fc87c642",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/diagonal-confirmed-r189.json": "272c0ed82afb1679472f54ed8105a90a706f1bf4b78f1155c8e396ef30ac49f9",
+    "photo2/colored-review-answers-r188.json": "271241e5d72db72fcc76f2b6f861a699a8b622be0e2115baa096fbc2b6b235d1",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/centerline-review-answer-r191.json": "01b02d0e475056ecd7ad23d43e6d9f68b0532686532e0c30800abcfb76ce19da"
+  },
+  "preserved_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "curated_sha256": {
+    "bend-question.png": "88929901a5e0c28c502cab02de180cbf74d24f670fc027f310aa6e211c409efa",
+    "candidate-spline.json": "1e8f794abb8431ee4c8495afa4914f08b646a267416eba7fca044ac00b424d10",
+    "confirmed-diagonal.png": "e3d07a7b6dd0c0093dc2ab54230b761741a7dcbfb93444bf7e23f9e29a3715e3",
+    "diagnostics.png": "16782ad7a46c2298190d15d7fc8778d40b433136c036a72de8c429988ff9dc0c",
+    "fit.json": "0da55d17ed964aaa8ebb4bbbcd6ea5b6c36a77bac2a78d35dfb220d206858277",
+    "over-smoothed-check.json": "be4a9b72271ee24f65b65580ed271db367f5de341a9b9ac09d5dd195be815d21",
+    "over-smoothed-fit.json": "85b5d8b2bbdd70e955daf8dae6e48bab0d39f51e252f1dd9171293aadd76286a",
+    "saved-centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "whole-context.png": "412c51f73f5012b66dbc70e28090dc6c0322cbf9c98b742a4073676978916431",
+    "window4-cutoff32.json": "d6888dc819580d00b03bf77bc8d41d70157b212b3ea7811bd19e14ac750a6621",
+    "window6-cutoff24.json": "746083405004f308ecc135d9e100cfefe1164c5e8e89c5960ef4946535185073",
+    "window6-cutoff48.json": "b1dbe93749e544401300acfb9448a6976ebef9658c5d8839777826ddfe558ab8",
+    "window8-cutoff32.json": "fbf6e051bb2f866533442713cf8560592664095907d0ce2d33b434fc9c2374ca"
+  },
+  "status": "Candidate rejected at reviewed bend; viewer/score/model seed unchanged; full lattice/camera refinement still needed."
+}

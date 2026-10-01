@@ -1,0 +1,88 @@
+{
+  "request": "R190",
+  "parameters": {
+    "harmonics": 24,
+    "cutoff": 12,
+    "window_diameters": 6
+  },
+  "old_difference": {
+    "maximum": 34.90537579802296,
+    "rms": 10.55039636204766
+  },
+  "saved_center_rms": {
+    "old": 11.649908745488322,
+    "candidate": 13.899817398654823
+  },
+  "known_renders": [
+    {
+      "fixture": "hand+1-palette0-shift0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "checks": [
+        {
+          "cutoff": 12.0,
+          "rms_curve_to_truth": 6.074621972707848,
+          "rms_truth_to_curve": 6.013000845078883,
+          "supported": 48,
+          "total": 48,
+          "maximum_truth_to_curve": 11.76373978565522
+        },
+        {
+          "cutoff": 16.0,
+          "rms_curve_to_truth": 6.127403164978087,
+          "rms_truth_to_curve": 6.067731896273527,
+          "supported": 48,
+          "total": 48,
+          "maximum_truth_to_curve": 11.941916757920412
+        }
+      ],
+      "limitation": "Known circle with different palette/placement/hand; not photo accuracy or a noncircular/perspective guarantee."
+    },
+    {
+      "fixture": "hand-1-palette0-shift0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "checks": [
+        {
+          "cutoff": 12.0,
+          "rms_curve_to_truth": 5.890454065567991,
+          "rms_truth_to_curve": 5.848239049645636,
+          "supported": 48,
+          "total": 48,
+          "maximum_truth_to_curve": 10.38472289829091
+        },
+        {
+          "cutoff": 16.0,
+          "rms_curve_to_truth": 5.932194865723736,
+          "rms_truth_to_curve": 5.894168619254103,
+          "supported": 48,
+          "total": 48,
+          "maximum_truth_to_curve": 10.367698671178198
+        }
+      ],
+      "limitation": "Known circle with different palette/placement/hand; not photo accuracy or a noncircular/perspective guarantee."
+    },
+    {
+      "fixture": "hand+1-palette1-shift2",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "checks": [
+        {
+          "cutoff": 12.0,
+          "rms_curve_to_truth": 6.898177430664082,
+          "rms_truth_to_curve": 6.841912869760884,
+          "supported": 48,
+          "total": 48,
+          "maximum_truth_to_curve": 13.325085623288105
+        },
+        {
+          "cutoff": 16.0,
+          "rms_curve_to_truth": 6.9378109526254335,
+          "rms_truth_to_curve": 6.884061347470849,
+          "supported": 48,
+          "total": 48,
+          "maximum_truth_to_curve": 13.619002984851866
+        }
+      ],
+      "limitation": "Known circle with different palette/placement/hand; not photo accuracy or a noncircular/perspective guarantee."
+    }
+  ],
+  "outcome": "Rejected diagnostic: excessive smoothing pulls the real tight bend inward. Frozen local_pairs can reproduce this fit with fit_pairs(records, harmonics=24, cutoff=12)."
+}

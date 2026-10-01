@@ -32,7 +32,15 @@ interiors from learned circular hue/S/V; derive provisional local envelope sides
 and preserve existing diagonal alternatives with missing slots. Validate body
 ownership and unit steps before a joint curve/width/lattice fit. An interior
 location is not an edge anchor; local colored extrema can land on shaded paper.
-The old curve is display-only in this pilot, and no replacement is yet fitted.
+The old curve is display-only in that evidence pilot.
+
+**R190–R191 curve trial:** [Paired-interior tube fit and rejected candidate](photo2/CENTERLINE_FIT_REVIEW.md)
+implements a shared smooth periodic middle/nuisance span from local colored
+tails, with substantial-body checks, robust residuals and explicit short-window
+gaps. Old spline and saved centers are evaluator-only. Interior tails are not
+physical edges; visibility/palette asymmetry creates systematic axis bias on
+known renders. Maker favors old cyan at reviewed bend; new candidate not adopted.
+This is an initializer experiment, not completion of the full joint 3D fit.
 
 **Inputs:** approximate planar centerline, a configurable count, literal current
 beads.pov rounded-annular dimensions, camera hypothesis, and three maker-confirmed
