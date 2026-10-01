@@ -11,7 +11,39 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R186: saved graph restoration, zoom and pan
+## Current R187: replace biased midpoint spline through bead evidence
+
+Maker sees centerline defects and proposes colored edge bodies/diagonalseries,
+asks for automatic selection. [Old-method audit and bead review](photo2/CENTERLINE_BEAD_REVIEW.md):
+old HSV inner/outer controls→nearest-point midpoints→303seedpoints→periodic
+cubic2px smoothing. Original source/rounding/method verified; no new physical
+curve supplied. Score minimum doesn't repair that curve or establish N.
+
+Four methods considered: manual paired bodies, automatic colored envelope,
+diagonal lattice, joint curve/width/lattice(selected). First automatic evidence
+pilot642colored interiors,237 near-envelope candidate sides,117 tentative
+diagonal chains,618colored links. Image-derived strip axis onlyordering/support;
+no old spline/saved hue boxes/manual marks feed selection. Black/missing slots
+not compressed; indices are observation names. No new centerline fit yet.
+
+Q187.1 checks possiblepaper C587 atcolorededge; R188 answers “Cannot tell,” so
+retain uncertainty and exclude it as a verified side anchor. Q187.2 checks
+three consecutive yellow diagonalneighbors C573/C575/C577; R189 confirms
+consecutive diagonal neighbors without skip. Proposed d2/signed6/7 still unknown.
+Illustrated raw/proposal figures tracked; live userfiles unaffected.
+Known palette/hand fixtures show zero colored/rim proposals on paper/black,
+but duplicates/neighbor errors remain; photo yellow8/11cores hit, red20core
+hasno insidepoint. Falsepaper suspicion highlights why extrema need context.
+Three new/four existing auto tests pass; records/figures/provenance saved.
+No GUI/server/launcher or spline/phase/count fit; originaldetector unchanged.
+
+**Stopping point:** provenance and colorededge/chain review. **Next:** incorporate
+maker answers, constrain unreliable sidepoints and fit a new periodic curve
+using supported beadbody/width/lattice geometry, preserving unknowns/bothhands.
+Use saved41centers for validation/reference; old22–25group remains heldout.
+gpt-6.1-sol / High, same session, no/new.
+
+## Prior R186: saved graph restoration, zoom and pan
 
 Found41 saved centers and their existing hand−1 score scan. Latestcenterrev2
 and scorecenterrev1 have identical points; restore both without writes/rescan.

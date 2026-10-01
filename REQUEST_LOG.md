@@ -3172,3 +3172,112 @@ restored centers/score and zoomable graph. Next bounded task: review low-score
 counts and proposed matches before deciding scan extension or phase/centerline
 refinement. Recommend gpt-6.1-sol / High, same session, no/new. Scoped commit/push
 and exact remote tip/clean status verified before claiming delivery.
+
+
+## R187 — Centerline defects; alternative using colored edge beads and diagonals
+
+User: “Well, there is a minimum to the score versus number of beads.  However I can see that there are defects in the centerline.  Do you remmeber how it was calculated.  We have to do a different method of calculating the centerline.  I will select red and yellow beads that are close to the edge, as well as diagonal series of red and yellow beads, from the image, and hopefully you will be able to come up with a good centerline.  Do you think you are good at detecting the red and yellow beads, too? maybe you can do it instead of me.”
+
+Preflight daisy at96e23bf,photo-2-reconstruction-v2,clean/no stashes; deliberate
+fetch/upstream0/0, read current handoff/latestlog/plan/relevant experiments/prior
+shape and hue overlap. Sibling fft-image-explorer read-only at2caf070. No agents.
+Current instruction supersedes score-only review: prioritize alternative curve
+from bead evidence. Preserve qualitative maker defect report, not invented
+corrected coordinates, exact N or a validated count-score minimum.
+
+Audit source old centerline: fft-image-explorer beads-photo-2_splines.json hash
+1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7 matches
+original provenance. image_only_hsv trace outer152/inner142 controls; builder
+resamples closed controls, maps each inner sample to nearest outer-polyline
+point, uses midpoint, yielding303points. Seed equals original after4decimal
+rounding(max0.00005px). Current tangent_circles.py periodic cubic2px smoothing,
+table-plane inverseprojection and count-based scale do not repair projected
+path. Nearest pairing isn't guaranteed normal, so tracedshadow/boundary biases
+can propagate. spline-provenance-r187.json records files/settings/source audit.
+
+Four alternatives presented: maker-selected paired edge bodies, automatic
+colored envelope, diagonal geometry, joint smoothcurve/width/lattice fit. Choose
+jointfit, with automatic colored evidence as the first bounded pilot. Existing
+image-derived detector has useful clear interior checks; shaded edges and
+unit-step adjacency are less established. Do not promote conservative interiors
+to physical centers/edges or old midpoint curve to newtruth. Saved41centers
+remain reference/validation; oldheld22–25not automatically fittertraining.
+
+colored_centerline_evidence.py runs unchanged detector/adjacency before all
+manual/spline evaluation:642chromatic proposals,618existing colored links;
+retain original automatic observation names and no invented cross-black links.
+Image-learned hue27/353, S/V and interior-distance locate candidates; no saved
+color ranges, old303spline or makerlocations as inputs. Image-derived approximate
+stripaxis used only ordering/side discussion, not a replacement centerline.
+Localcross15/85percentile tails within4diameters,≥8samples/noncollapsed spread
+select237provisional near-envelope interiors(119outer/118inner). Zero colored
+features were rejected by current final bandclearance gate; don't claim recovery
+of edgecolored exclusions.117tentative diagonalchains≥3; preserve cycles/gaps/
+unknownunitsteps, no compressed string indices or inferred closure. Existing
+neighbor-angle method errors remain. All proposals unreviewed, no spline fitted.
+
+New separate output/r187/colored annotations642points/618series loads inactual
+LabelStore. Export/error protection preserves makerfiles/reviewedoutputs. No
+changes to original auto detector, modelkernel, viewer, savedcenters/score or
+oldmanualadjacencyseries. Curate wholeimage witholdcurve display-only, raw
+beside interior/diagonal questions and completeproposal/parameter/hash record.
+Q187.1 asks whether C587 besideyellow C583/C586 is paper orbead; visual inspection
+suspects shadedpaper, remains unresolved. Q187.2 asks whether C573→C575→C577
+are consecutive diagonalneighbors withoutskip; proposed d2unverified. Both
+asyncquestions pending, not permission. Track in CENTERLINE_BEAD_REVIEW.md.
+
+Evaluate only after selection: yellow confirmedcores8/11 each contain aproposal;
+red20core containsnone, notproof wholebodymissing. Three reused independent
+literal-POV fixtures, all detection/selection finished before ID reads: colored
+91/91/92, paper0/black0, duplicates3/4/3; rim36/34/35, paper0/black0. True unsigned
+neighbors133/136,129/133,133/136 coloredlinks. Newlayer not completecolorbody
+inventory or verifiededge exposure/signs; realphoto C587 possiblepaper error
+and duplicate links remain. Existing hue/shadowpaper overlap needs spatial/
+texture/geometry context, not fixedred thresholds or arbitrary correctives.
+
+Three new tests pass: filtering preserves missing blackslots/remaps onlyexisting
+links, periodic local side support without savedcurve, unresolvedcycles. Four
+existing automatic-detector tests pass. Actual LabelStore read642/618 verified,
+syntax/hashes/links/append-only-log/source/livefile integrity and curatedimage
+inspection checked. No GUI/launcher/server test or new POVrender/broadgeometry
+suite. Review script's duplicate keyword in marker record fixed before checks.
+No candidate spline adopted; makerfeedback still required for supported constraints.
+
+Update method/plan/handoff and append-only log. Stoppingpoint: source audit and
+automatic colored side/chain evidence with two small illustratedchecks. Next
+bounded task: incorporate answers, reject/represent suspectside points, then
+fit a periodic curve from supported body/width/lattice geometry rather than
+boundarymidpoints. Keep twohands, unknown N/camera/phase/closure, missing slots
+and distinction ofinterior/visiblecenter/outwardpoint. gpt-6.1-sol / High, same
+session, no/new. Scopedcommit/push and exactremote/finalstatus before delivery.
+
+
+## R188 — Doubtful colored edge proposal remains unresolved
+
+Maker answer to Q187.1: “Cannot tell.”
+
+C=C587 beside yellow A/B cannot be established as paper or bead. Preserve exact
+answer, observation coordinates/photo/question-image hashes in
+colored-review-answers-r188.json. Mark body/side constraint unresolved and not
+adopted as a verified anchor; this doesn't confirm a paper false positive or
+justify discarding an observed bead. Search farther for stronger side evidence
+and bridge unsupported intervals only with marked uncertainty. Update question,
+curated summary/plan/handoff; Q187.2 remains pending. No detector, makerpoints,
+scores, oldcurve or runtime selection change. Continue only the authorized
+bounded evidence review and delivery, not an unsupported replacement fit.
+
+
+## R189 — Confirm one consecutive colored diagonal series
+
+Maker answer to Q187.2: “Yes, consecutive diagonal neighbors.”
+
+C573→C575→C577 are supported consecutive bead identities along one diagonal
+family without a skipped bead. Preserve exact answer, local discussion0/1/2,
+source coordinates and photo/question-image hashes in diagonal-confirmed-r189.json.
+The program's d2 name and signed6/7 mapping remain unverified; no physical
+centers/outwardpoints, edge exposure, fullindices,N,helicity orclosure follows.
+Update illustratedquestion/summary/plan/handoff; Q187.1 remains Cannot tell,
+and both questions are answered. Original detector/proposal coordinates,
+makersaves/scores and oldcurve unchanged. Bounded pilot stops after delivering
+supported/uncertain evidence; next fit must use reliable constraints allaround,
+not mistake the one confirmed three-body chain for a globally corrected spline.

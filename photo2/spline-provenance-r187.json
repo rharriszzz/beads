@@ -1,0 +1,25 @@
+{
+  "request": "R187",
+  "source_repository": "/home/rharris/git/fft-image-explorer",
+  "audited_commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+  "source_file": "/home/rharris/git/fft-image-explorer/beads-photo-2_splines.json",
+  "source_sha256": "1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7",
+  "audited_builder_source_sha256": "a4f0795b01ff9871c9f67f4f7f39dc49cd75314784348b12625b49e8610f3ead",
+  "builder": "_build_centerline_spline(outer_control_xy, inner_control_xy); nearest outer-polyline point to each resampled inner point, then midpoint.",
+  "source_mode": "image_only_hsv",
+  "outer_control_points": 152,
+  "inner_control_points": 142,
+  "centerline_points": 303,
+  "seed": "photo2/spline-seed-r175.json",
+  "seed_sha256": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+  "matches_original_after_rounding_decimals": 4,
+  "maximum_rounding_difference_source_pixels": 5.000000010113581e-05,
+  "current_refinement": {
+    "source": "photo2/tangent_circles.py",
+    "sha256": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "spline": "periodic cubic",
+    "smoothing_budget_pixels": 2.0,
+    "physical_plane": "paper/table"
+  },
+  "limitation": "Audited producer method and matching source file; not a fresh boundary/centerline validation or measured corrected curve."
+}

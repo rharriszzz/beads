@@ -1,6 +1,74 @@
 # Beads session handoff — new branch
 
-## Current R186 — Restore saved centers/scores and zoom the graph
+## Current R187 — Audit old centerline; colored edge/diagonal evidence pilot
+
+Maker sees centerline defects despite count-score minimum; requests another
+method based on red/yellow beads near edges and diagonal series, asks whether
+we can do their selection. [Audit/methods/questions](photo2/CENTERLINE_BEAD_REVIEW.md),
+[producer provenance](photo2/spline-provenance-r187.json),
+[whole context](photo2/review/r187/whole-context.png),
+[frozen proposals/checks](photo2/review/r187/summary.json).
+Preflight daisy at96e23bf,photo-2-reconstruction-v2, clean/no stashes; deliberate
+fetch/upstream0/0. Read current records/relevant experiments/prior shape and HSV
+overlap. Sibling fft-image-explorer read-only at2caf070, no agents.
+
+Old source image_only_hsv: outer152/inner142 traced control points; resample,
+nearest outer point to each inner sample, midpoint→303 closed points. Current
+seed equals original after rounding4 decimals(max0.00005px); source SHA1e5f0d98
+matches stored provenance. Current periodic cubic2px smoothing retains geometric
+bias; count changes scale/spacing, not projected path. Nearest pairing isn't
+guaranteed normal, and shadow/edge errors propagate. Preserve maker qualitative
+defect report; no supplied new curve or inferred count from score minimum.
+
+Four methods presented: manual paired edge bodies, colored envelope, diagonal
+geometry, joint curve/width/lattice fit(selected). Bounded step is evidence pilot,
+not new curve fit. colored_centerline_evidence.py calls unchanged image-only
+detector/adjacency; no old303curve/manualmarks/hueboxes used. New colored subset
+642 points, retains old detector observation names (not stringindices), 618
+tentative existing links; no links invented across removed black bodies. Local
+cross tails15/85% within4diameters,≥8points/noncollapsed spread→237 side
+candidates119outer/118inner. Approximate learned strip axis onlyorders/discusses
+sides, not physical centerline. Zero colored candidates existed in final
+band-edge exclusions; don't claim they were recovered.117 diagonal chains≥3,
+cycles unresolved, unitsteps/directions unverified. Same known neighborhood
+estimator errors persist; don't fit unreviewed chains/colored extrema as truth.
+
+New editable proposals output/r187/colored/annotations.json separate from maker
+saves; actual LabelStore loads642points/618series without server. Current auto
+detector isn't modified; no viewer/centerline/scores/manualseries changed.
+Review has raw beside proposals, old curve onlywhole-display, source/check hashes.
+Q187.1 asks whether C=C587 beside two yellow interiors is paper or bead. R188
+answers “Cannot tell”; preserve in colored-review-answers-r188.json. Visual
+inspection suspects shaded paper; unresolved, not automatically removed/adopted
+as a verified side anchor. Search farther for reliable side evidence instead.
+Q187.2 asks whether C573→C575→C577 are consecutive yellow diagonal neighbors
+with no skip; R189 answers “Yes, consecutive diagonal neighbors.” Preserve in
+diagonal-confirmed-r189.json. Bead identities/one diagonal/unit adjacency
+supported, but proposed d2 name/signed6/7 mapping and representative geometry
+unverified. Both questions answered; no pending permission or question.
+
+Confirmed yellow cores8/11 each contain a proposal; red20 core contains none
+(doesn't prove entirebody missed). Three independent reused literal-POV fixtures
+finish image detection/selection before IDs read: colored91/91/92, paper0,
+black0, duplicates3/4/3; rim36/34/35paper0/black0. True unsigned neighbors
+133/136,129/133,133/136 colored links. Ownership ≠edge exposure/chain signs/
+centerline accuracy; palette changed test supports color learning, not photo
+completeness. C587 possiblefalsepaper exemplifies HSV shadow overlap context need.
+Three new tests/four existing auto tests pass; syntax, file integrity, hashes,
+links, append-only-log and curated images inspected. No GUI/launcher/server,
+new POV renders or broad geometry suites. Detector remains unchanged.
+
+**Stopping point:** old-curve audit and automatic colored/side/chain candidates
+with two small reviews. **Next bounded task:** incorporate answers, reject/
+represent suspect side candidates, then fit a periodic curve using supported
+body/side/diagonal geometry rather than boundary midpoints. Keep bead interiors
+distinct from visible centers/edges/outwardpoints, black/missing slots, both
+hands and N/camera/phase uncertainty; old held22–25 not fitter/ranker training.
+41 savedcenters remain diagnostic validation/reference, never runtime priors.
+gpt-6.1-sol / High, same session, no/new. Scoped commit/push and exactremote/
+final status before delivery; don't advance to an unsupported fit on continue.
+
+## Prior R186 — Restore saved centers/scores and zoom the graph
 
 Maker saved centers; wants existing graph, zoom into scores and assured restore.
 [Graph instructions / actual saved figure](photo2/SCORE_GRAPH.md),

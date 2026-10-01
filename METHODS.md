@@ -26,6 +26,14 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Forward minor-outward tangent circles on a planar spline — R175–R178
 
+**R187 centerline replacement:** [Producer audit and colored side/diagonal evidence](photo2/CENTERLINE_BEAD_REVIEW.md)
+supersede trusting the old boundary-midpoint spline. Select conservative colored
+interiors from learned circular hue/S/V; derive provisional local envelope sides
+and preserve existing diagonal alternatives with missing slots. Validate body
+ownership and unit steps before a joint curve/width/lattice fit. An interior
+location is not an edge anchor; local colored extrema can land on shaded paper.
+The old curve is display-only in this pilot, and no replacement is yet fitted.
+
 **Inputs:** approximate planar centerline, a configurable count, literal current
 beads.pov rounded-annular dimensions, camera hypothesis, and three maker-confirmed
 colored interiors for diagnostic registration. **Output:** 3D outward points,

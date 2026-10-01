@@ -1,0 +1,345 @@
+{
+  "request": "R187",
+  "inventory": {
+    "colored": 642,
+    "rim_candidates": 237,
+    "diagonal_chains": 117,
+    "tentative_links": 618
+  },
+  "parameters": {
+    "analysis_size": [
+      1277,
+      1600
+    ],
+    "scale_xy": [
+      0.502755905511811,
+      0.502828409805154
+    ],
+    "background_chromaticity": [
+      0.41883766651153564,
+      0.20576922595500946
+    ],
+    "background_mad": [
+      0.006991998758167028,
+      0.011370813474059105
+    ],
+    "background_value": 0.843137264251709,
+    "foreground_threshold": 20.025123596191406,
+    "border_fraction": 0.025,
+    "band_smoothing_sigma": 3.076923076923077,
+    "other_component_area": 0,
+    "apparent_internal_width": 8.495227600363814,
+    "apparent_diameter": 13.671342289621748,
+    "strip_halfwidth": 24.413111231467404,
+    "hue_modes_degrees": [
+      27,
+      353
+    ],
+    "saturation_floor": 0.5740740895271301,
+    "reflection_response_floor": 0.02981969714164734,
+    "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+    "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+  },
+  "interior_question": {
+    "crop": [
+      590.9693374683176,
+      512.7559650551391,
+      737.9617660782363,
+      629.1022202277236
+    ],
+    "markers": {
+      "A": {
+        "x": 324.51627714450456,
+        "y": 288.4263206676171,
+        "kind": "chromatic",
+        "appearance_mode": 1,
+        "support_area": 113.0,
+        "inset_support_radius": 3.346286045909746,
+        "band_clearance": 13.152946437965905,
+        "status": "automatic interior proposal; unreviewed",
+        "station": 4477,
+        "cross": 15.779924448415294,
+        "source_xy": [
+          645.9693374683176,
+          574.1022202277236
+        ],
+        "original_proposal_number": 865,
+        "observation_number": 583
+      },
+      "B": {
+        "x": 336.2516430402699,
+        "y": 285.23524327096874,
+        "kind": "chromatic",
+        "appearance_mode": 1,
+        "support_area": 33.0,
+        "inset_support_radius": 1.8666092115028032,
+        "band_clearance": 11.180339887498949,
+        "status": "automatic interior proposal; unreviewed",
+        "station": 4489,
+        "cross": 19.904194377717797,
+        "source_xy": [
+          669.3114121552745,
+          567.7559650551391
+        ],
+        "original_proposal_number": 869,
+        "observation_number": 586
+      },
+      "C": {
+        "x": 343.11443908736527,
+        "y": 285.8935667873415,
+        "kind": "chromatic",
+        "appearance_mode": 2,
+        "support_area": 115.0,
+        "inset_support_radius": 2.411020907088335,
+        "band_clearance": 6.324555320336759,
+        "status": "automatic interior proposal; unreviewed",
+        "station": 4494,
+        "cross": 24.488885156823944,
+        "source_xy": [
+          682.9617660782363,
+          569.0652059483255
+        ],
+        "original_proposal_number": 870,
+        "observation_number": 587
+      }
+    },
+    "chain": null
+  },
+  "diagonal_question": {
+    "crop": [
+      446.9439388454471,
+      520.5811301307311,
+      614.8102934304677,
+      645.6474268787714
+    ],
+    "markers": {
+      "A": {
+        "x": 252.10665744316378,
+        "y": 296.74572061786114,
+        "kind": "chromatic",
+        "appearance_mode": 1,
+        "support_area": 55.0,
+        "inset_support_radius": 2.3045788829787304,
+        "band_clearance": 6.324555320336759,
+        "status": "automatic interior proposal; unreviewed",
+        "station": 4410,
+        "cross": -21.90206587311417,
+        "source_xy": [
+          501.9439388454471,
+          590.6474268787714
+        ],
+        "original_proposal_number": 850,
+        "observation_number": 573
+      },
+      "B": {
+        "x": 266.18596996958024,
+        "y": 291.2236017675729,
+        "kind": "chromatic",
+        "appearance_mode": 1,
+        "support_area": 109.0,
+        "inset_support_radius": 2.9616592937177493,
+        "band_clearance": 13.0,
+        "status": "automatic interior proposal; unreviewed",
+        "station": 4425,
+        "cross": -17.26710893463303,
+        "source_xy": [
+          529.9482096497524,
+          579.6653130152606
+        ],
+        "original_proposal_number": 854,
+        "observation_number": 575
+      },
+      "C": {
+        "x": 281.19930894122336,
+        "y": 289.16995858239153,
+        "kind": "chromatic",
+        "appearance_mode": 1,
+        "support_area": 155.0,
+        "inset_support_radius": 3.9196880353868035,
+        "band_clearance": 20.615528128088304,
+        "status": "automatic interior proposal; unreviewed",
+        "station": 4439,
+        "cross": -9.97609296455699,
+        "source_xy": [
+          559.8102934304677,
+          575.5811301307311
+        ],
+        "original_proposal_number": 856,
+        "observation_number": 577
+      }
+    },
+    "chain": {
+      "direction": "d2",
+      "observation_numbers": [
+        573,
+        575,
+        577
+      ],
+      "source_xy": [
+        [
+          501.9439388454471,
+          590.6474268787714
+        ],
+        [
+          529.9482096497524,
+          579.6653130152606
+        ],
+        [
+          559.8102934304677,
+          575.5811301307311
+        ]
+      ],
+      "status": "Tentative direction and consecutive neighbors; skipped/missing beads unverified."
+    }
+  },
+  "confirmed_colored_core_proposals": {
+    "8": [
+      629
+    ],
+    "11": [
+      631
+    ],
+    "20": []
+  },
+  "checks": [
+    {
+      "fixture": "hand+1-palette0-shift0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "ids_sha256": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+      "colored_proposals": 91,
+      "on_paper": 0,
+      "on_black": 0,
+      "duplicates": 3,
+      "rim_proposals": 36,
+      "rim_on_paper": 0,
+      "rim_on_black": 0,
+      "colored_links": 136,
+      "true_unsigned_neighbors": 133,
+      "limit": "On-body ownership, not verified physical edge exposure, diagonal signs or centerline accuracy."
+    },
+    {
+      "fixture": "hand-1-palette0-shift0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "ids_sha256": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+      "colored_proposals": 91,
+      "on_paper": 0,
+      "on_black": 0,
+      "duplicates": 4,
+      "rim_proposals": 34,
+      "rim_on_paper": 0,
+      "rim_on_black": 0,
+      "colored_links": 133,
+      "true_unsigned_neighbors": 129,
+      "limit": "On-body ownership, not verified physical edge exposure, diagonal signs or centerline accuracy."
+    },
+    {
+      "fixture": "hand+1-palette1-shift2",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "ids_sha256": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd",
+      "colored_proposals": 92,
+      "on_paper": 0,
+      "on_black": 0,
+      "duplicates": 3,
+      "rim_proposals": 35,
+      "rim_on_paper": 0,
+      "rim_on_black": 0,
+      "colored_links": 136,
+      "true_unsigned_neighbors": 133,
+      "limit": "On-body ownership, not verified physical edge exposure, diagonal signs or centerline accuracy."
+    }
+  ],
+  "label_store_loaded": {
+    "points": 642,
+    "series": 618
+  },
+  "maker_review": {
+    "request": "R188",
+    "question": "Q187.1",
+    "answer": "Cannot tell",
+    "observation_number": 587,
+    "source_xy": [
+      682.9617660782363,
+      569.0652059483255
+    ],
+    "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "supporting_image": "photo2/review/r187/interior-question.png",
+    "supporting_image_sha256": "8c89b158c9adf3bec67cfabc2e4f2c8badaefd796e7e87be638f07c37b88ca0c",
+    "body_ownership": "Unresolved",
+    "constraint_role": "Not a verified edge/body anchor. Retain as unresolved proposal; seek stronger support along the bracelet."
+  },
+  "confirmed_diagonal": {
+    "request": "R189",
+    "question": "Q187.2",
+    "answer": "Yes, consecutive diagonal neighbors",
+    "observations": [
+      {
+        "label": "A",
+        "observation_number": 573,
+        "source_xy": [
+          501.9439388454471,
+          590.6474268787714
+        ]
+      },
+      {
+        "label": "B",
+        "observation_number": 575,
+        "source_xy": [
+          529.9482096497524,
+          579.6653130152606
+        ]
+      },
+      {
+        "label": "C",
+        "observation_number": 577,
+        "source_xy": [
+          559.8102934304677,
+          575.5811301307311
+        ]
+      }
+    ],
+    "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "supporting_image": "photo2/review/r187/diagonal-question.png",
+    "supporting_image_sha256": "b525f707858cc55949bd7a0e06305d10cfd648db760104b2b3beb4172f5415dd",
+    "confirmed": "Three consecutive bodies along one diagonal family; no skipped bead.",
+    "discussion_coordinate": [
+      0,
+      1,
+      2
+    ],
+    "model_direction_name": "d2 proposal, unverified",
+    "signed_string_step": "Unresolved: +/-6 or +/-7.",
+    "limitation": "No measured physical center/outward anchor, full bead boundary, edge exposure, global index, helicity, total N or closure follows."
+  },
+  "visual_concerns": [
+    {
+      "observation_number": 587,
+      "status": "Ownership unresolved; suspected shaded-paper proposal, not a verified anchor."
+    },
+    {
+      "maker_number": 20,
+      "status": "No proposal inside its confirmed red core; full body coverage unresolved."
+    }
+  ],
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/colored_centerline_evidence.py": "b5f6796fbb1f0e81c066c4bf3d480b97e2c04563ea14aba3e3279a44fc87c642",
+    "photo2/review_colored_centerline.py": "1a9950653e83edef66d897c5ebb73b5c3ff1a11e45a939982a6b335353cacebc",
+    "photo2/test_colored_centerline_evidence.py": "7882c80faa5bf11df153d96a837df3265540f18951b31a3d5ba2182eca0bd999",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/review/r157/report.json": "09f11f82081155431875b9d52dbe5ac408f1ea1bdbde717b9ea52418e3191308",
+    "photo2/colored-review-answers-r188.json": "271241e5d72db72fcc76f2b6f861a699a8b622be0e2115baa096fbc2b6b235d1",
+    "photo2/diagonal-confirmed-r189.json": "272c0ed82afb1679472f54ed8105a90a706f1bf4b78f1155c8e396ef30ac49f9"
+  },
+  "curated_sha256": {
+    "diagonal-question.png": "b525f707858cc55949bd7a0e06305d10cfd648db760104b2b3beb4172f5415dd",
+    "interior-question.png": "8c89b158c9adf3bec67cfabc2e4f2c8badaefd796e7e87be638f07c37b88ca0c",
+    "whole-context.png": "d39fcbe0cbaddd167173102ccbb67bfdc4ad6f38a8b52eea1d0eccfc7aad6add"
+  },
+  "evidence_sha256": "67e363a9f485ca9c71ea1db843d03d72d88cb59c8cfb3546a461e019fdb97da2",
+  "reproduction": [
+    ".venv/bin/python photo2/colored_centerline_evidence.py --output photo2/output/r187/colored",
+    ".venv/bin/python photo2/review_colored_centerline.py"
+  ],
+  "status": "Candidate evidence only. Neither old axis nor near-envelope colored interiors establish a replacement physical centerline."
+}
