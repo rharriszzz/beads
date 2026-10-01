@@ -1,5 +1,10 @@
 # Interactive count, helicity, zoom and pan — R181–R182
 
+**R184–R185:** [Center marking and count-error graph](CENTER_MARKS.md) add
+independent numbered visible-part centers, save/edit/undo tools, and a graph
+of squared position errors over an editable count range. Restart and reload
+to enable the new controls. Save centers is separate from Save choice.
+
 **R183:** [Width guides and +7% comparison](WIDTH_GUIDES.md) add the centerline,
 current maximum-radius edges and an adjustable width reference. Restart a
 running Python server and reload the page to enable the new controls.

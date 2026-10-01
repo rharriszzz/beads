@@ -3031,3 +3031,83 @@ comparison. Next bounded task: use maker review/saved guide choice to separate
 width and centerline bias before refining count drift. Recommend gpt-6.1-sol /
 High,same session,no/new. Commit/push scoped implementation/curated evidence/
 docs and verify exact remote tip/clean status before claiming delivery.
+
+
+## R184 — Width review and manually selected all-around bead centers
+
+User: “green is closer, but still too small.  the centerline is good, but not perfect.  I want to specify the center points of about 10 to 20 of the visible parts of beads close to the centerline, all around the bracelet, that way you can adjust the number of beads so that these beads are found close to where they are predicted.”
+
+Preflight daisy,photo-2-reconstruction-v2 at6085fba, clean/no stashes, fetch
+and upstream0/0. Read handoff/latest log/plan/viewer/width experiment and prior
+shape model. No agents. No saved viewer choice/center file existed. Preserve
+live old annotations, photo, POV/model kernel, frozen seeds and comparisons.
+Q183.1 answered qualitatively:107% closer but too small, approximate centerline
+good yet imperfect. Exact feedback/source image hashes in width-feedback-r184.json;
+no invented further width percentage, spline coordinates or physical change.
+
+Three methods presented: extend old labeller, mark in current viewer (selected),
+import coordinates. Viewer now marks original-photo visible-part centers with
+independent stable IDs and unique observation numbers. Orange crosses/yellow
+selection; click mark/select, move then click correction, renumber/delete/undo.
+Pan and pointer zoom work in mark mode; drag threshold prevents added marks.
+Count/hand changes don't move observations. Center tools can hide to enlarge
+photo. Old bead indices/direction series aren't imported or changed.
+
+Explicit Save centers writes centers.json beside choice.json, with previous
+backup, oriented-photo hash/coordinates, kind visible_part_center, revision,
+unspecified numeric uncertainty and current model/guide reference. Reloads on
+restart. --centers chooses another file. Own-document/source checks, distinct
+choice/label paths, revision conflicts and unrelated-backup protection. Download
+JSON preserves draft; exit warns for unsaved edits. Save choice stays separate.
+Full PNG export includes visible marks/proposed matches. CENTER_MARKS.md has
+step-by-step controls and distinguishes new observations from existing labels.
+
+## R185 — Prediction-quality sum-of-squares graph versus bead count
+
+User: “I will want you to make an estimate of the quality of a number of beads prediction, based on, say, a sum of the squares of the distances predicted and established by me, and show me a graph of this sum as the number of predicted beads is varied.”
+
+Incorporate steering into same center-capture/count-score step. Three scoring
+methods presented: fixed correspondences, nearest distinct predictions (selected),
+phase refit per count. Exact rectangular assignment of every manual center to
+a different exposed model outward point minimizes squared Euclidean photo-pixel
+distance. All marks contribute; none dropped/trimmed and no prediction reused.
+Return SSE in source pixels², RMS sqrt(SSE/m) in pixels, proposed match endpoints/
+distances and tentative generator indices, never established photo bead_index.
+
+Save & plot first saves centers, then scans selected hand over editable count
+range; default2000–3600 step1, maximum2001 samples. Background computation with
+progress/cancel; integer scan avoids missing narrow minima with coarse steps.
+Retain fixed R179 hand-specific phase/origin, shared camera/spline/physical sizes.
+N changes spacing/scale/closure; guide width changes no predictions or score.
+Graph reports best sampled count, selects it, and clicks select other tested
+counts. Pink dashed match lines permit visual review. Score JSON and graph PNG
+export; centers-score.json snapshots actual centers/revision/source/model/code
+hashes/parameters/all errors and best matches, with previous backup. Mark edits
+invalidate graph; in-flight scan preserves earlier snapshot and requires replot.
+
+Visible-part centers are distinct from outward surface points. Score is a
+fixed-model proxy fit, not confidence or guaranteed N. Reassignment/aliases,
+centerline/width/camera bias and partial visibility can confound the minimum.
+No phase/spline fit, old held-out22–25 ranking, recovered helicity/count/order,
+or automatic-runtime generality claim. Next use actual marks to review matches
+and residual directions before choosing further refinement.
+
+13 Python tests and seven named JS checks pass, plus syntax checks. Cover old
+four frozen variants/exposure/ellipses/guides; independent point persistence,
+backups/photo/revision/duplicate validation and unrelated-document preservation;
+exact optimal distinct squared matching vs exhaustive assignment; known-count
+synthetic recovery in both hands; background completion without a server; click
+coordinates and stable IDs/move/renumber/delete/undo; existing viewport/race checks.
+No browser/server/launcher interaction test or GUI launch. Curator generates
+review/r184/synthetic-score-check.png and validation.json: separate12-outward-
+point synthetic sets for hands±1, known2698, every integer2618–2778; best2698
+with zero error, others positive. Not photo marks/visible-area centroid evidence.
+Graph inspected; source/artifact hashes/reproduction commands retained. Relevant
+checks repeated after new persistence/job changes only; old POV suite not rerun.
+
+Update methods/viewer/width answer/plan/handoff and append-only log. Stopping
+point: runnable manual center capture and provisional count-error graph. Next
+bounded task: user marks10–20 and saves; read centers.json/centers-score.json,
+inspect matches/residuals all around before fitting phase/centerline or claiming
+N. Recommend gpt-6.1-sol / High, same session, no/new. Scoped commit/push and
+exact remote tip/clean final status verified before claiming delivery.

@@ -1,6 +1,64 @@
 # Beads session handoff — new branch
 
-## Current R183 — Model width guides, adjustable +7% comparison
+## Current R184–R185 — Manual visible-part centers and count-error graph
+
+Maker: green107% closer but still too small; centerline good but imperfect.
+Q183.1 answered qualitatively in [width feedback](photo2/width-feedback-r184.json).
+No extra percentage or corrected spline supplied. Maker requests10–20 visible-
+part centers near the centerline all around, then a sum-of-squares graph versus N.
+[Instructions/metric/limits](photo2/CENTER_MARKS.md),
+[synthetic validation](photo2/review/r184/validation.json),
+[known-N graph](photo2/review/r184/synthetic-score-check.png).
+Preflight daisy at6085fba, clean/no stashes; deliberate fetch/upstream0/0.
+Read current handoff/log/plan/viewer/width experiment/prior shape model. No agents.
+No user viewer choice/center file existed; don't invent maker observations.
+
+Three annotation methods: extend labeller, viewer marking (selected), coordinate
+import. Three scoring methods: fixed correspondences, nearest distinct predictions
+(selected), per-count phase refit. Extend tangent_viewer.py/browser assets with
+independent numbered orange crosses: mark mode, pan/zoom, select/move/renumber/
+delete/undo, explicit save/draft download, unsaved-exit warning. Stable IDs and
+source coordinates survive count/hand/view edits. User's old live labels and
+held group22–25 not automatically imported. centers.json separate from choice;
+own-schema/source/revision guards, atomic save and previous backup. --centers
+selects another file; old saved choices remain compatible.
+
+Save & plot captures current centers and selected hand. Default2000–3600 step1,
+up to2001 counts. Background thread with progress/cancel; no browser freeze.
+At each N exact full-model exposure supplies outward points; rectangular linear
+assignment minimizes SSE in source pixels² with distinct predictions. All marks
+count, no trimming/reused prediction. Display RMS, best sampled N, clickable
+graph and pink proposed-match lines. Generator indices tentative, not photo
+bead_index. Score JSON snapshots points/revision/model/parameters/code hashes,
+all sampled errors and best matches; centers-score.json plus prior backup.
+Editing marks invalidates displayed graph; in-flight scan retains its original
+snapshot. Graph PNG/JSON and full-source overlays export marks/matches.
+
+Phase/origin/camera/spline/bead sizes fixed per existing hand seed. Width guide
+doesn't affect scoring. N also changes scale/closure on fixed spline. Visible-
+area center != outward point; nearest reassignment, unmeasured centerline/width/
+camera bias and aliases remain. No fitted spline/phase or recovered N/helicity.
+Do not declare10–20 marks sufficient for guaranteed closure. Future actual marks
+need correspondence and residual-direction review before further fitting.
+
+13 Python / 7 JS checks pass: frozen4 variants, exposure/ellipse/guides, stable
+marks/persistence/conflicts/unrelated-file protection, optimal distinct squared
+matching, both-hand synthetic known-N recovery, background completion without a
+server, click coordinates/move/renumber/delete/undo and viewport behavior.
+Curator scans2618–2778 every integer on separate12-outward-point synthetic sets
+for each hand: best2698,SSE0, nearby errors positive. Curated graph inspected;
+not maker centers or photo evidence. Syntax/hashes/links/log/whitespace checked.
+No browser/server/launcher interaction test, no GUI launch, no geometry-kernel
+or POV source modification. Restart Python viewer and refresh its page.
+
+**Stopping point:** runnable center marking and provisional error graph.
+**Next bounded task:** maker marks10–20 visible-part centers and saves; then
+read centers.json/centers-score.json, inspect matches/residuals around all arcs,
+and choose correspondence/phase/centerline refinement before interpreting N.
+gpt-6.1-sol / High, same session, no/new. Scoped commit/push and exact remote/
+final-status verification before claiming delivery.
+
+## Prior R183 — Model width guides, adjustable +7% comparison
 
 Maker asks centerline±maximum-radius edges and suspects diameter may be about7%
 larger. [Width experiment / Q183.1](photo2/WIDTH_GUIDES.md),

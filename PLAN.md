@@ -11,7 +11,37 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R183: centerline ± maximum radius and +7% width guide
+## Current R184–R185: visible-part centers and sum-of-squares count profile
+
+Maker confirms107% closer but still too small, centerline good but imperfect;
+retain [qualitative feedback](photo2/width-feedback-r184.json), no invented
+extra percentage or corrected spline. User requests10–20 hand-picked centers
+all around and a graph of squared predicted/marked distances versus count.
+[Center tools and metric](photo2/CENTER_MARKS.md) extend the viewer with stable
+numbered source-pixel marks, independent save/edit/delete/undo/export, and
+background SSE scans with progress/cancel. Default every integer2000–3600;
+graph click selects a tested count and shows provisional distinct matches.
+
+Nearest distinct outward predictions minimize SSE; phase/origin/camera/spline
+fixed per hand. Snapshot all marks/settings/scores and best matches. These
+visible-part centers are proxy targets, and correspondence may change with N.
+No robust trimming or silent reuse/drop of marks; no automatic old-label import.
+Width guides don't change score. Preserve aliases, centerline/width/visibility
+bias and unknown closure. Minimum isn't recovered N or helicity.
+
+13 Python/seven JS checks pass, including unchanged frozen variants, stable
+center persistence/conflicts, optimal squared matching, both-hand synthetic
+known-N recovery and background completion without server interaction. Curated
+[synthetic graph](photo2/review/r184/synthetic-score-check.png) and full
+[hash/parameter/score record](photo2/review/r184/validation.json) saved. No actual
+maker center data or browser/server/launcher test yet. Restart viewer/refresh.
+
+**Stopping point:** manual center capture and reproducible provisional graph.
+**Next bounded task:** read maker's saved centers/score; inspect all-around
+correspondences/residuals and choose the next geometry refinement. gpt-6.1-sol /
+High, same session, no/new. Don't continue into a new fit without actual marks.
+
+## Prior R183: centerline ± maximum radius and +7% width guide
 
 User requests marked model edges and suggests photo diameter may be about7%
 larger. [Width review / Q183.1](photo2/WIDTH_GUIDES.md) supplies raw alongside

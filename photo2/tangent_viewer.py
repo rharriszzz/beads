@@ -12,12 +12,14 @@ import json
 from pathlib import Path
 import threading
 import time
+import uuid
 from urllib.parse import parse_qs, urlsplit
 
 import numpy as np
 from PIL import Image, ImageOps
 from tangent_circles import ROOT, load_model, visible_anchors, sha
 from label_beads import atomic_json, open_browser
+from center_marks import CenterStore, validate_marks, match_centers, score_counts
 
 ASSETS = Path(__file__).with_name('tangent_viewer')
 COUNT_LIMITS = (100, 10000)
@@ -81,7 +83,7 @@ def validate_view(value):
 
 
 class ViewerStore:
-    def __init__(self, save_path, min_count=2000, max_count=3600, count=None, hand=None):
+    def __init__(self, save_path, min_count=2000, max_count=3600, count=None, hand=None, centers_path=None):
         validate_selection(min_count, 1); validate_selection(max_count, 1)
         if min_count >= max_count:
             raise ValueError('Minimum count must be smaller than maximum count.')
@@ -106,6 +108,11 @@ class ViewerStore:
         self.maximum = max(max_count, self.initial_count)
         self.initial_view = saved.get('viewer_choice', {}).get('view') if saved else None
         self.initial_guides = validate_guides(saved.get('viewer_choice', {}).get('guides') if saved else None)
+        self.centers = CenterStore(centers_path or self.path.with_name('centers.json'), self.source,
+            forbidden=[self.path, self.path.with_name(self.path.stem+'.previous.json'),
+                       ROOT/'beads-photo-2.jpg', ROOT/'beads.pov', ROOT/'photo2/output/labeler/annotations.json'])
+        self.job_lock = threading.Lock()
+        self.job = None
 
     def read_choice(self):
         if not self.path.exists():
@@ -146,6 +153,7 @@ class ViewerStore:
             axes_a = np.column_stack((a @ right, a @ down)) * model.view.scale
             axes_b = np.column_stack((b @ right, b @ down)) * model.view.scale
             result = dict(count=count, hand=hand, circles=np.column_stack((center, axes_a, axes_b)).tolist(),
+                generator_indices=np.flatnonzero(keep).tolist(),
                 visible_anchors=int(keep.sum()), excluded_anchors=int((~keep).sum()),
                 unfinished_rays=int(np.sum(visibility['unfinished_pairs_per_ray'] > 0)),
                 parameters=config, nrows=model.source.nrows, scale_pixels_per_unit=model.view.scale,
@@ -161,6 +169,7 @@ class ViewerStore:
             initial_hand=self.initial_hand, initial_view=self.initial_view,
             initial_guides=self.initial_guides, width_range=WIDTH_LIMITS,
             min_count=self.minimum, max_count=self.maximum, allowed_range=COUNT_LIMITS,
+            centers=self.centers.read(), centers_path=str(self.centers.path),
             save_path=str(self.path), starting_patch=[1210, 210, 1450, 365])
 
     def save(self, payload):
@@ -176,6 +185,7 @@ class ViewerStore:
                 Path(__file__), ROOT/'beads.pov', ROOT/'photo2/tangent_circles.py',
                 ROOT/'photo2/bead_placement.py', ROOT/'photo2/curved_surface_fit.py',
                 ROOT/'photo2/local_surface_fit.py', ROOT/'photo2/spline-seed-r175.json',
+                ROOT/'photo2/center_marks.py', ASSETS/'marks.mjs',
                 ASSETS/'app.mjs', ASSETS/'viewport.mjs', ASSETS/'index.html', ASSETS/'style.css']},
             status='User-selected diagnostic model parameters; no recovered N or helicity is implied.')
         with self.lock:
@@ -184,6 +194,69 @@ class ViewerStore:
                 atomic_json(self.path.with_name(self.path.stem + '.previous.json'), previous)
             atomic_json(self.path, doc)
         return dict(path=str(self.path), document=doc)
+
+    def save_centers(self, payload):
+        count, hand = validate_selection(payload.get('count'), payload.get('hand'))
+        return self.centers.save(payload, self.configuration(count, hand), validate_guides(payload.get('guides')))
+
+    def matches(self, payload):
+        count, hand = validate_selection(payload.get('count'), payload.get('hand'))
+        points = validate_marks(payload.get('points'), self.source['oriented_size'])
+        return match_centers(points, self.frame(count, hand))
+
+    def start_score(self, payload):
+        low, high, step, hand = [payload.get(k) for k in ['low', 'high', 'step', 'hand']]
+        validate_selection(low, hand); validate_selection(high, hand)
+        if low >= high or type(step) is not int or step < 1:
+            raise ValueError('Choose From < To and a positive whole step.')
+        counts = list(range(low, high+1, step))
+        if counts[-1] != high:
+            counts.append(high)
+        if len(counts) > 2001:
+            raise ValueError('Use at most 2001 counts per scan; increase the step or narrow the range.')
+        with self.centers.lock:
+            document = self.centers.read()
+            if type(payload.get('revision')) is not int or payload['revision'] != document['revision']:
+                raise ValueError('Save the latest center marks before plotting.')
+            if len(document['points']) < 3:
+                raise ValueError('Mark at least three beads before plotting.')
+        with self.job_lock:
+            if self.job and self.job['state'] == 'running':
+                raise ValueError('A score scan is already running. Wait for it or cancel it first.')
+            identity = str(uuid.uuid4())
+            self.job = dict(id=identity, state='running', done=0, total=len(counts), cancel=False)
+
+        def progress(done, total):
+            with self.job_lock:
+                if self.job['cancel']:
+                    raise ValueError('Scan cancelled; no new score file saved.')
+                self.job.update(done=done, total=total)
+
+        def run():
+            try:
+                result = score_counts(document, counts, hand, self.frame, progress)
+                result['model_reference'] = self.configuration(low, hand)
+                result['source_sha256'] = {str(p.relative_to(ROOT)): sha(p) for p in [
+                    Path(__file__), ROOT/'photo2/center_marks.py', ROOT/'photo2/tangent_circles.py',
+                    ROOT/'photo2/spline-seed-r175.json', ROOT/'beads.pov',
+                    ROOT/'photo2/bead_placement.py', ROOT/'photo2/curved_surface_fit.py',
+                    ROOT/'photo2/local_surface_fit.py', ASSETS/'app.mjs', ASSETS/'marks.mjs']}
+                self.centers.save_score(result)
+                with self.job_lock:
+                    self.job.update(state='complete', result=result, path=str(self.centers.score_path))
+            except Exception as exc:
+                with self.job_lock:
+                    self.job.update(state='error', error=str(exc))
+        threading.Thread(target=run, daemon=True).start()
+        return dict(id=identity)
+
+    def score_status(self, identity, cancel=False):
+        with self.job_lock:
+            if not self.job or self.job['id'] != identity:
+                raise ValueError('This scan is no longer available.')
+            if cancel:
+                self.job['cancel'] = True
+            return deepcopy(self.job)
 
 
 def make_server(store, port=DEFAULT_PORT):
@@ -208,6 +281,7 @@ def make_server(store, port=DEFAULT_PORT):
             assets = {'/': ('index.html', 'text/html; charset=utf-8'),
                       '/app.mjs': ('app.mjs', 'text/javascript; charset=utf-8'),
                       '/viewport.mjs': ('viewport.mjs', 'text/javascript; charset=utf-8'),
+                      '/marks.mjs': ('marks.mjs', 'text/javascript; charset=utf-8'),
                       '/style.css': ('style.css', 'text/css; charset=utf-8')}
             try:
                 if url.path in assets:
@@ -222,6 +296,8 @@ def make_server(store, port=DEFAULT_PORT):
                     if set(query) != {'count', 'hand'} or any(len(v) != 1 for v in query.values()):
                         raise ValueError('Specify one count and one helicity.')
                     self.json_response(200, store.frame(int(query['count'][0]), int(query['hand'][0])))
+                elif url.path == '/api/score':
+                    self.json_response(200, store.score_status(parse_qs(url.query)['id'][0]))
                 else:
                     self.json_response(404, dict(error='Not found.'))
             except (ValueError, KeyError) as exc:
@@ -230,13 +306,21 @@ def make_server(store, port=DEFAULT_PORT):
                 self.json_response(500, dict(error=f'Could not calculate this view: {exc}'))
 
         def do_POST(self):
-            if urlsplit(self.path).path != '/api/choice':
+            path = urlsplit(self.path).path
+            if path not in ['/api/choice', '/api/centers', '/api/matches', '/api/score', '/api/cancel-score']:
                 self.json_response(404, dict(error='Not found.')); return
             try:
                 length = int(self.headers.get('Content-Length', '0'))
-                if not 0 < length <= 10000:
+                if not 0 < length <= 100000:
                     raise ValueError('Invalid choice size.')
-                result = store.save(json.loads(self.rfile.read(length)))
+                payload = json.loads(self.rfile.read(length))
+                if not isinstance(payload, dict):
+                    raise ValueError('Supply a JSON object.')
+                if path == '/api/choice': result = store.save(payload)
+                elif path == '/api/centers': result = store.save_centers(payload)
+                elif path == '/api/matches': result = store.matches(payload)
+                elif path == '/api/score': result = store.start_score(payload)
+                else: result = store.score_status(payload.get('id'), cancel=True)
                 self.json_response(200, result)
             except (ValueError, KeyError, TypeError) as exc:
                 self.json_response(400, dict(error=str(exc)))
@@ -256,13 +340,14 @@ def main():
     parser.add_argument('--min-count', type=int, default=2000)
     parser.add_argument('--max-count', type=int, default=3600)
     parser.add_argument('--save', type=Path, default=ROOT / 'photo2/output/tangent-viewer/choice.json')
+    parser.add_argument('--centers', type=Path, help='Separate center-mark JSON (default: centers.json beside --save)')
     parser.add_argument('--port', type=int, help='Default 8766, automatic fallback when busy; 0 selects a free port')
     parser.add_argument('--no-browser', action='store_true')
     args = parser.parse_args()
     if args.port is not None and not 0 <= args.port <= 65535:
         parser.error('--port must be between 0 and 65535.')
     try:
-        store = ViewerStore(args.save, args.min_count, args.max_count, args.count, args.hand)
+        store = ViewerStore(args.save, args.min_count, args.max_count, args.count, args.hand, args.centers)
         try:
             server = make_server(store, DEFAULT_PORT if args.port is None else args.port)
         except OSError as exc:
@@ -272,7 +357,7 @@ def main():
     except (ValueError, OSError, KeyError) as exc:
         parser.error(str(exc))
     url = f'http://127.0.0.1:{server.server_port}/'
-    print(f'Tangent-circle viewer: {url}\nSave choice: {store.path}\nCtrl+C stops the server.', flush=True)
+    print(f'Tangent-circle viewer: {url}\nSave choice: {store.path}\nCenter marks: {store.centers.path}\nCtrl+C stops the server.', flush=True)
     try:
         if not args.no_browser and not open_browser(url):
             print(f'Open this URL in your browser: {url}', flush=True)

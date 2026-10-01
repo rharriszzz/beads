@@ -36,7 +36,38 @@
     </div>
     <p class="help">Wheel to zoom at the pointer · drag to pan · change the count without losing your view. Width guides leave cyan circles fixed; they are smooth model references.</p>
   </header>
-  <main id="stage"><canvas id="canvas" aria-label="Bracelet photograph with adjustable cyan circles"></canvas></main>
+  <div class="controls marker-bar">
+    <label><input id="mark-mode" type="checkbox"> Mark bead centers</label>
+    <label><input id="show-marks" type="checkbox" checked> Show marks</label>
+    <label><input id="show-matches" type="checkbox"> Show proposed matches</label>
+    <button id="save-centers">Save centers</button><button id="tools">Hide center tools</button>
+    <span id="mark-status" role="status">No center marks yet</span>
+  </div>
+  <div id="workspace">
+    <main id="stage"><canvas id="canvas" aria-label="Bracelet photograph with adjustable cyan circles and numbered center marks"></canvas></main>
+    <aside id="center-tools">
+      <h2>Visible bead centers</h2>
+      <p>Enable Mark bead centers, then click 10–20 clear beads near the centerline, spread around the bracelet. Mark the center of each visible part. Drag to pan in either mode.</p>
+      <p>Click an orange mark to select it. To correct its position, select Move, then click the new center.</p>
+      <div id="mark-list" aria-label="Center marks"></div>
+      <div class="controls">
+        <label>Number <input id="mark-number" type="number" min="1" max="100000" step="1"></label>
+        <button id="move-mark">Move</button><button id="delete-mark">Delete</button><button id="undo-mark">Undo</button>
+      </div>
+      <button id="download-centers">Download centers JSON</button>
+      <h2>Count error graph</h2>
+      <div class="controls">
+        <label>From <input id="score-low" type="number" value="2000" step="1"></label>
+        <label>To <input id="score-high" type="number" value="3600" step="1"></label>
+        <label>Step <input id="score-step" type="number" min="1" value="1" step="1"></label>
+      </div>
+      <div class="controls"><button id="plot">Save &amp; plot error</button><button id="cancel-score" disabled>Cancel scan</button></div>
+      <p id="score-status" role="status">Mark at least three beads to plot; 10–20 is the intended sample.</p>
+      <canvas id="graph" aria-label="Sum of squared position errors versus bead count"></canvas>
+      <div class="controls"><button id="download-score" disabled>Score JSON</button><button id="download-graph" disabled>Graph PNG</button></div>
+      <p>Lower is better. Click the graph to view a tested count. Orange marks are your centers; cyan points are predicted outward surface points. Matches are provisional. Phase and centerline stay fixed during each scan.</p>
+    </aside>
+  </div>
   <footer><span id="status" role="status">Loading photograph…</span><span id="saved"></span></footer>
   <script type="module" src="/app.mjs"></script>
 </body>

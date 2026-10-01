@@ -62,7 +62,10 @@ registrations. No helicity or bead-count inference follows from these guides.
 
 **Q183.1:** In the raw/guide comparison, do the green107% lines bracket the
 visible bead bodies better than amber100%, ignoring cast shadow and small
-scallops? Pending. Both guides could still miss if the centerline is biased.
+scallops? **Answered R184:** “green is closer, but still too small.” The maker
+also says the centerline is good but imperfect. This is qualitative evidence;
+no additional percentage or corrected curve was supplied. [Preserved answer](width-feedback-r184.json).
+The next request is [center marking and a count-error graph](CENTER_MARKS.md).
 
 ## Validation and stopping point
 

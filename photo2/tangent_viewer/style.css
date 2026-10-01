@@ -20,6 +20,19 @@ details { position: relative; }
 summary { cursor: pointer; }
 .range-controls { position: absolute; right: 0; top: 28px; z-index: 3; display: grid; gap: 8px; padding: 12px; background: #21313e; border: 1px solid #61788b; border-radius: 4px; }
 main { flex: 1; min-height: 100px; position: relative; overflow: hidden; }
+main { min-width: 0; }
+#workspace { display:flex; flex:1; min-height:100px; }
+.marker-bar { padding:4px 16px; margin:0; background:#21313e; }
+aside { flex:0 0 330px; overflow:auto; padding:12px; background:#21313e; border-left:1px solid #61788b; }
+aside[hidden] { display:none; }
+aside h2 { font-size:16px; margin:8px 0; }
+aside p { font-size:13px; line-height:1.4; }
+aside input[type=number] { width:84px; }
+#mark-list { display:flex; flex-wrap:wrap; gap:5px; max-height:120px; overflow:auto; }
+#mark-list button.selected { border:2px solid #ffdf40; }
+#graph { height:220px; cursor:crosshair; background:#16212b; }
+#stage canvas.marking { cursor:crosshair; }
+@media(max-width:700px) { aside { flex-basis:260px; } header { padding:6px; } h1 { margin:0; } }
 canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 canvas.dragging { cursor: grabbing; }
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 8px 16px; min-height: 36px; background: #21313e; font-size: 13px; }

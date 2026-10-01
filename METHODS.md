@@ -51,6 +51,16 @@ bead anchors. Test circular-section normal support, closed curves and symmetric
 scaling; save guide settings separately from geometry. Show raw photo beside
 guides, exclude cast shadow from width judgments and preserve centerline bias
 as a competing explanation. These smooth curves are not detected silhouettes.
+R184–R185 add [maker-selected visible-part centers and count-error profiles](photo2/CENTER_MARKS.md).
+Keep stable observation IDs/source-pixel positions separate from model indices.
+At every count, minimize the sum of squared distances to distinct exposed
+outward predictions using exact linear assignment. Fix the hand's phase/origin/
+camera/spline; record every observation, match, sampled score and full settings.
+Scan integer counts by default because narrow minima and changing associations
+make coarse sampling unreliable. Visible-area centers remain proxy targets;
+review correspondence and residual bias before treating a minimum as evidence
+for N or fitting further geometry. Validate against independent known-count
+synthetic sets for both hands, not against invented photo labels.
 
 Place beads uniformly in world arclength with minor-circle phase and integer-turn
 closure. At the minor-radial outer-wall midpoint P=C+(4+R)u, use plane
