@@ -1,5 +1,6 @@
 import {toSource, toScreen, zoomAt, fitView, resizeView, guideEdges, RequestGate} from './viewport.mjs';
 import {Marks, hitMark, isClick} from './marks.mjs';
+import {scoreBounds, constrainScoreView, zoomScore, panScore, fitScoreY, nearestScore} from './score_view.mjs';
 
 const $ = id => document.getElementById(id);
 const canvas = $('canvas'), ctx = canvas.getContext('2d');
@@ -10,6 +11,7 @@ let requestedCount, requestedHand, saving = false;
 let widthPercent=107;
 let marks, centerDoc, selected=null, moving=false, savedVersion=0, savingCenters=null;
 let matches=null, matchRequest=0, score=null, scoreJob=null, plotting=false;
+let scoreView=null, graphDrag=null;
 const angles = Array.from({length: 49}, (_, i) => [Math.cos(i*Math.PI/24), Math.sin(i*Math.PI/24)]);
 function status(message, error=false) {
   $('status').textContent = message; $('status').classList.toggle('error', error);
@@ -199,6 +201,12 @@ async function start() {
     $('edges').checked=initial.show_edges;$('centerline').checked=initial.show_centerline;
     const loaded=new Image();loaded.src=config.image_url;await loaded.decode();image=loaded;
     for (const element of document.querySelectorAll('button,input,select')) element.disabled=false;
+    if(config.saved_score) {
+      score=config.saved_score;resetScoreView(true);
+      $('score-low').value=score.counts[0];$('score-high').value=score.counts.at(-1);
+      $('score-step').value=score.counts[1]-score.counts[0];
+      scoreSummary('Restored saved graph.');
+    }else $('score-status').textContent=config.score_restore_message || 'Save & plot to calculate the graph.';
     markControls();drawGraph();
     resize();schedule(config.initial_count,config.initial_hand);
   } catch(error) {status(error.message,true);}
@@ -238,6 +246,7 @@ function markControls() {
   $('plot').disabled=plotting || marks.points.length<3;
   $('cancel-score').disabled=!scoreJob;
   $('download-score').disabled=$('download-graph').disabled=!score;
+  for(const id of ['fit-graph','fit-scores','best-window','graph-in','graph-out','graph-low','graph-high','graph-range'])$(id).disabled=!score;
   $('move-mark').textContent=moving?'Click new center…':'Move';
   $('mark-status').textContent=`${marks.points.length} center marks · ${dirty()?'unsaved changes':centerDoc.revision?'saved':'not saved yet'}`;
   $('mark-list').replaceChildren();
@@ -249,7 +258,7 @@ function markControls() {
   canvas.classList.toggle('marking',$('mark-mode').checked || moving);
 }
 function marksChanged() {
-  matches=null;score=null;drawGraph();markControls();render();refreshMatches();
+  matches=null;score=null;scoreView=null;graphDrag=null;drawGraph();markControls();render();refreshMatches();
   $('score-status').textContent=scoreJob?'Centers changed during the scan; its result will belong to the earlier marks.':'Centers changed. Save & plot to update the graph.';
 }
 function markClick(screen) {
@@ -303,37 +312,109 @@ async function refreshMatches() {
     matches=result;render();
   }catch(error){if(request===matchRequest)status(`Could not match centers: ${error.message}`,true);}
 }
+function graphViewKey() {return `beads-score-view:${config.source.sha256}:${score.saved_at}`;}
+function resetScoreView(restore=false) {
+  if(!score)return;
+  scoreView=scoreBounds(score.rows);
+  if(restore)try {const saved=JSON.parse(localStorage.getItem(graphViewKey()));if(saved)scoreView=constrainScoreView(saved,scoreView);}catch{ /* use full view */ }
+}
+function setScoreView(next) {
+  if(!score)return;
+  scoreView=constrainScoreView(next,scoreBounds(score.rows));
+  try{localStorage.setItem(graphViewKey(),JSON.stringify(scoreView));}catch{ /* graph still works without storage */ }
+  drawGraph();
+}
+function scoreSummary(prefix='') {
+  $('score-status').textContent=`${prefix} ${score.centers.points.length} centers · hand ${score.hand>0?'+1':'−1'} · best sampled count ${score.best.count}: sum ${score.best.sse.toFixed(2)} px², RMS ${score.best.rms_pixels.toFixed(2)} px. This is a fixed-model proxy fit.`;
+}
 function drawGraph() {
-  const graph=$('graph'),context=graph.getContext('2d'),w=graph.clientWidth||306,h=220,dpr=window.devicePixelRatio||1;
+  const graph=$('graph'),context=graph.getContext('2d'),w=graph.clientWidth||306,h=graph.clientHeight||220,dpr=window.devicePixelRatio||1;
   graph.width=Math.round(w*dpr);graph.height=h*dpr;context.setTransform(dpr,0,0,dpr,0,0);
   context.fillStyle='#16212b';context.fillRect(0,0,w,h);context.font='11px system-ui';context.fillStyle='#eef4fa';
-  if(!score){context.fillText('No current error graph',45,100);return;}
-  const rows=score.rows,x0=rows[0].count,x1=rows.at(-1).count,y0=Math.min(...rows.map(r=>r.sse)),y1=Math.max(...rows.map(r=>r.sse));
-  const bottom=180,left=65,right=w-12,top=35,span=y1-y0||1;
+  if(!score){context.fillText('No current error graph',45,100);graph.plot=null;return;}
+  scoreView ||= scoreBounds(score.rows);
+  const rows=score.rows,{xMin:x0,xMax:x1,yMin:y0,yMax:y1}=scoreView;
+  const bottom=h-40,left=65,right=w-12,top=40,span=y1-y0;
   const xy=row=>[left+(right-left)*(row.count-x0)/(x1-x0),bottom-(bottom-top)*(row.sse-y0)/span];
   context.fillText(`Σ distance² (px²) · ${score.centers.points.length} marks · hand ${score.hand>0?'+1':'−1'}`,5,15);
   context.fillText(`Best sampled N=${score.best.count} · fixed phase / centerline`,5,29);
   context.strokeStyle='#61788b';context.beginPath();context.moveTo(left,top);context.lineTo(left,bottom);context.lineTo(right,bottom);context.stroke();
-  for(let i=0;i<=3;i++) {const v=y0+(y1-y0)*i/3;context.fillText(v.toPrecision(3),3,bottom-(bottom-top)*i/3+4);}
-  context.fillText(String(x0),left,bottom+17);context.textAlign='right';context.fillText(String(x1),right,bottom+17);context.textAlign='center';context.fillText('Total bead count',(left+right)/2,h-7);context.textAlign='left';
+  const decimals=Math.max(0,Math.min(7,Math.ceil(-Math.log10(span/4))+1));
+  for(let i=0;i<=4;i++) {const v=y0+(y1-y0)*i/4,y=bottom-(bottom-top)*i/4;
+    context.fillText(v.toFixed(decimals),3,y+4);
+    context.strokeStyle='#61788b55';context.beginPath();context.moveTo(left,y);context.lineTo(right,y);context.stroke();
+  }
+  for(let i=0;i<=4;i++) {const x=left+(right-left)*i/4,n=x0+(x1-x0)*i/4;context.textAlign=i===0?'left':i===4?'right':'center';context.fillText(n.toFixed(x1-x0<10?1:0),x,bottom+17);}
+  context.textAlign='center';context.fillText('Total bead count',(left+right)/2,h-7);context.textAlign='left';
+  context.save();context.beginPath();context.rect(left,top,right-left,bottom-top);context.clip();
   context.strokeStyle='#51e9f2';context.beginPath();rows.forEach((r,i)=>{const [x,y]=xy(r);if(i)context.lineTo(x,y);else context.moveTo(x,y);});context.stroke();
   const [x,y]=xy(score.best);context.fillStyle='#ffdf40';context.beginPath();context.arc(x,y,4,0,Math.PI*2);context.fill();
-  graph.plot={left,right,x0,x1};
+  if(x1-x0<100)for(const row of rows)if(row.count>=x0&&row.count<=x1){const [x,y]=xy(row);context.fillStyle='#51e9f2';context.beginPath();context.arc(x,y,2,0,Math.PI*2);context.fill();}
+  context.restore();
+  $('graph-low').value=Number(x0.toFixed(2));$('graph-high').value=Number(x1.toFixed(2));
+  graph.plot={left,right,top,bottom,x0,x1,y0,y1};
 }
 function graphRow(event) {
   if(!score)return null;
-  const graph=$('graph'),{left,right,x0,x1}=graph.plot,x=event.clientX-graph.getBoundingClientRect().left;
+  const graph=$('graph');if(!graph.plot)return null;
+  const {left,right,x0,x1}=graph.plot,x=event.clientX-graph.getBoundingClientRect().left;
   const count=x0+Math.max(0,Math.min(1,(x-left)/(right-left)))*(x1-x0);
-  return score.rows.reduce((a,b)=>Math.abs(a.count-count)<Math.abs(b.count-count)?a:b);
+  return nearestScore(score.rows,count);
 }
-$('graph').onclick=event=>{const row=graphRow(event);if(row){$('show-matches').checked=true;schedule(row.count,score.hand);}};
-$('graph').onpointermove=event=>{const row=graphRow(event);if(row)$('graph').title=`Count ${row.count} · sum ${row.sse.toFixed(2)} px² · RMS ${row.rms_pixels.toFixed(2)} px`;};
+function graphPivot(event) {
+  const graph=$('graph'),rect=graph.getBoundingClientRect(),p=graph.plot;
+  return {x:(event.clientX-rect.left-p.left)/(p.right-p.left),y:(p.bottom-event.clientY+rect.top)/(p.bottom-p.top)};
+}
+function zoomGraph(factor,pivot={x:.5,y:.5},axes='both') {
+  if(score)setScoreView(zoomScore(scoreView,scoreBounds(score.rows),pivot,factor,axes));
+}
+$('graph').addEventListener('wheel',event=>{
+  if(!score)return;event.preventDefault();
+  const delta=event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?$('graph').clientHeight:1);
+  zoomGraph(Math.exp(-Math.max(-600,Math.min(600,delta))*.0015),graphPivot(event),event.shiftKey?'y':event.ctrlKey?'x':'both');
+},{passive:false});
+$('graph').addEventListener('pointerdown',event=>{
+  if(!score||event.button!==0)return;
+  graphDrag={id:event.pointerId,x:event.clientX,y:event.clientY,view:{...scoreView},plot:{...$('graph').plot},travel:0};
+  $('graph').setPointerCapture(event.pointerId);
+});
+$('graph').addEventListener('pointermove',event=>{
+  if(graphDrag?.id===event.pointerId) {
+    const d=graphDrag,p=d.plot,dx=event.clientX-d.x,dy=event.clientY-d.y;
+    d.travel=Math.max(d.travel,Math.hypot(dx,dy));
+    if(!isClick(d.travel))setScoreView(panScore(d.view,scoreBounds(score.rows),-dx*(p.x1-p.x0)/(p.right-p.left),dy*(p.y1-p.y0)/(p.bottom-p.top)));
+  }
+  const row=graphRow(event);if(row)$('graph-readout').textContent=`Count ${row.count} · sum ${row.sse.toFixed(3)} px² · RMS ${row.rms_pixels.toFixed(3)} px`;
+});
+$('graph').addEventListener('pointerup',event=>{
+  if(graphDrag?.id!==event.pointerId)return;
+  if(isClick(Math.max(graphDrag.travel,Math.hypot(event.clientX-graphDrag.x,event.clientY-graphDrag.y)))){
+    const row=graphRow(event);if(row){$('show-matches').checked=true;schedule(row.count,score.hand);if($('score-dialog').open)$('score-dialog').close();}
+  }
+  graphDrag=null;
+});
+for(const name of ['pointercancel','lostpointercapture'])$('graph').addEventListener(name,()=>{graphDrag=null;});
+$('graph-in').onclick=()=>zoomGraph(2);$('graph-out').onclick=()=>zoomGraph(.5);
+$('fit-graph').onclick=()=>setScoreView(scoreBounds(score.rows));
+$('fit-scores').onclick=()=>setScoreView(fitScoreY(scoreView,scoreBounds(score.rows),score.rows));
+function viewScoreRange(low,high) {
+  if(!score)return;
+  const bounds=scoreBounds(score.rows);
+  if(!Number.isFinite(low)||!Number.isFinite(high)||low>=high||low<bounds.xMin||high>bounds.xMax){$('graph-readout').textContent=`Use a view range inside ${bounds.xMin}–${bounds.xMax}.`;return;}
+  setScoreView(fitScoreY(constrainScoreView({...scoreView,xMin:low,xMax:high},bounds),bounds,score.rows));
+}
+$('graph-range').onclick=()=>viewScoreRange(+$('graph-low').value,+$('graph-high').value);
+for(const id of ['graph-low','graph-high'])$(id).onkeydown=event=>{if(event.key==='Enter'){event.preventDefault();$('graph-range').click();}};
+$('best-window').onclick=()=>{const bounds=scoreBounds(score.rows);viewScoreRange(Math.max(bounds.xMin,score.best.count-30),Math.min(bounds.xMax,score.best.count+30));};
+$('expand-graph').onclick=()=>{$('score-dialog').append($('score-panel'));$('score-dialog').showModal();drawGraph();};
+$('close-graph').onclick=()=>$('score-dialog').close();
+$('score-dialog').addEventListener('close',()=>{$('score-home').append($('score-panel'));drawGraph();});
 new ResizeObserver(drawGraph).observe($('graph'));
 $('plot').onclick=async()=>{
-  if(plotting)return;plotting=true;score=null;drawGraph();markControls();
+  if(plotting)return;plotting=true;score=null;scoreView=null;graphDrag=null;drawGraph();markControls();
   const version=marks.version,hand=requestedHand;
   try {
-    await saveCenters();
+    if(dirty()||!centerDoc.revision)await saveCenters();
     if(marks.version!==version)throw new Error('Centers changed while saving. Plot again with the latest centers.');
     const job=await api('/api/score',{low:+$('score-low').value,high:+$('score-high').value,step:+$('score-step').value,hand,revision:centerDoc.revision});
     scoreJob=job.id;markControls();
@@ -342,8 +423,8 @@ $('plot').onclick=async()=>{
       if(state.state==='error')throw new Error(state.error);
       if(state.state==='complete') {
         if(marks.version!==version)throw new Error('Scan saved for the earlier marks. Plot again for your current centers.');
-        score=state.result;drawGraph();
-        $('score-status').textContent=`Best sampled count ${score.best.count}: sum ${score.best.sse.toFixed(2)} px², RMS ${score.best.rms_pixels.toFixed(2)} px. Saved → ${state.path}. Inspect other dips too; larger steps can miss narrow minima.`;
+        score=state.result;resetScoreView();drawGraph();
+        scoreSummary(`Saved → ${state.path}.`);
         $('show-matches').checked=true;schedule(score.best.count,score.hand);break;
       }
       $('score-status').textContent=`Scanning hand ${hand>0?'+1':'−1'}: ${state.done} / ${state.total} counts…`;

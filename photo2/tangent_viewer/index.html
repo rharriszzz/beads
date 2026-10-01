@@ -55,6 +55,7 @@
         <button id="move-mark">Move</button><button id="delete-mark">Delete</button><button id="undo-mark">Undo</button>
       </div>
       <button id="download-centers">Download centers JSON</button>
+      <div id="score-home"><section id="score-panel">
       <h2>Count error graph</h2>
       <div class="controls">
         <label>From <input id="score-low" type="number" value="2000" step="1"></label>
@@ -63,11 +64,25 @@
       </div>
       <div class="controls"><button id="plot">Save &amp; plot error</button><button id="cancel-score" disabled>Cancel scan</button></div>
       <p id="score-status" role="status">Mark at least three beads to plot; 10–20 is the intended sample.</p>
+      <div class="controls">
+        <button id="fit-graph">Fit graph</button><button id="fit-scores">Fit scores</button>
+        <button id="best-window">Best ±30</button><button id="expand-graph">Larger graph</button>
+        <button id="graph-in" aria-label="Zoom graph in">+</button><button id="graph-out" aria-label="Zoom graph out">−</button>
+      </div>
+      <div class="controls">
+        <label>View from <input id="graph-low" type="number" step="1"></label>
+        <label>to <input id="graph-high" type="number" step="1"></label>
+        <button id="graph-range">View range</button>
+      </div>
+      <p>Wheel: zoom both axes · Shift-wheel: scores only · Ctrl-wheel: counts only · drag: pan · click: view a count. Fit scores adjusts the vertical range to visible counts.</p>
       <canvas id="graph" aria-label="Sum of squared position errors versus bead count"></canvas>
+      <p id="graph-readout" role="status"></p>
       <div class="controls"><button id="download-score" disabled>Score JSON</button><button id="download-graph" disabled>Graph PNG</button></div>
       <p>Lower is better. Click the graph to view a tested count. Orange marks are your centers; cyan points are predicted outward surface points. Matches are provisional. Phase and centerline stay fixed during each scan.</p>
+      </section></div>
     </aside>
   </div>
+  <dialog id="score-dialog" aria-label="Expanded count error graph"><button id="close-graph">Return to photo</button></dialog>
   <footer><span id="status" role="status">Loading photograph…</span><span id="saved"></span></footer>
   <script type="module" src="/app.mjs"></script>
 </body>

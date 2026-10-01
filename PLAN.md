@@ -11,7 +11,28 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R184–R185: visible-part centers and sum-of-squares count profile
+## Current R186: saved graph restoration, zoom and pan
+
+Found41 saved centers and their existing hand−1 score scan. Latestcenterrev2
+and scorecenterrev1 have identical points; restore both without writes/rescan.
+[Graph controls / actual saved plot](photo2/SCORE_GRAPH.md) add pointer-anchored
+wheel zoom, Shift-score/Ctrl-count zoom, drag pan, larger dialog, full/visible-Y
+fit, Best±30 and explicit view range. Hover exact sampled scores, PNG current
+zoom, JSON all samples. Graph domain persists in browser for this saved scan.
+Restore marker model reference2646/−1/guides if no saved choice; preserve CLI
+precedence. Different-point old score flagged stale, not silently reused.
+
+Readonly live restore and all three saved JSON byte hashes checked.14 Python/
+10 JS checks pass; frozen actual centers/score and full/local score plot saved
+with source hashes. No new geometry fit, score scan or browser/server/launcher
+interaction test. Existing scan minimum3592 nearupperboundary is conditional,
+with nearest-density/phase/centerline/visible-center proxy bias; not inferred N.
+
+**Stopping point:** restored points/scores and zoomable graph. **Next task:**
+inspect low-score counts/matches before choosing scan extension or geometry
+refinement. gpt-6.1-sol / High, same session, no/new.
+
+## Prior R184–R185: visible-part centers and sum-of-squares count profile
 
 Maker confirms107% closer but still too small, centerline good but imperfect;
 retain [qualitative feedback](photo2/width-feedback-r184.json), no invented

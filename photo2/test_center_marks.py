@@ -115,5 +115,28 @@ class CenterTests(unittest.TestCase):
             self.assertEqual(viewer.centers.read_score()['centers'],saved)
             self.assertEqual(viewer.centers.read()['points'],points)
 
+    def test_restores_saved_points_and_matching_scores_without_writing_files(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path=Path(folder)/'choice.json'; viewer=ViewerStore(path)
+            points=[dict(id='one',number=1,x=100.,y=200.)]
+            first=viewer.save_centers(dict(count=2646,hand=-1,revision=0,points=points))['document']
+            result=dict(schema_version=1,kind='center_count_score',source=viewer.source,centers=first,hand=-1,
+                        counts=[2697,2698],rows=[dict(count=2697,sse=4,rms_pixels=2),dict(count=2698,sse=1,rms_pixels=1)],
+                        best=dict(count=2698,sse=1,rms_pixels=1))
+            viewer.centers.save_score(result)
+            # A new save of identical marks changes revision/reference, not the
+            # scored positions. It should still restore the same score curve.
+            second=viewer.save_centers(dict(count=2600,hand=-1,revision=1,points=points))['document']
+            before={p:p.read_bytes() for p in Path(folder).glob('*.json')}
+            reopened=ViewerStore(path); config=reopened.config()
+            self.assertEqual(config['centers'],second)
+            self.assertEqual(config['saved_score'],result)
+            self.assertEqual(config['initial_count'],2600)
+            self.assertEqual({p:p.read_bytes() for p in Path(folder).glob('*.json')},before)
+            changed=[dict(points[0],x=101.)]
+            reopened.save_centers(dict(count=2600,hand=-1,revision=2,points=changed))
+            self.assertIsNone(reopened.config()['saved_score'])
+            self.assertIn('different centers',reopened.config()['score_restore_message'])
+
 
 if __name__=='__main__': unittest.main()

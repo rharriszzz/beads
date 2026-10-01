@@ -1,6 +1,55 @@
 # Beads session handoff — new branch
 
-## Current R184–R185 — Manual visible-part centers and count-error graph
+## Current R186 — Restore saved centers/scores and zoom the graph
+
+Maker saved centers; wants existing graph, zoom into scores and assured restore.
+[Graph instructions / actual saved figure](photo2/SCORE_GRAPH.md),
+[frozen points](photo2/review/r186/centers.json),
+[frozen original score](photo2/review/r186/centers-score.json),
+[validation/provenance](photo2/review/r186/summary.json).
+Preflight daisy atf3bfa0d, branchphoto-2-reconstruction-v2, clean/no stashes;
+fetch/upstream0/0, read current docs/experiment/prior model, no agents.
+
+Found41 user centers revision2, score uses revision1 with exactly identical
+IDs/numbers/positions. Existing1601-count hand−1 scan2000–3600 every integer;
+lowest sampled3592,SSE3151.042777560831,RMS8.766681349959493px. Near upper
+boundary; growing prediction density/nearest reassignment and fixed phase/
+imperfect centerline/visible-center-to-outward proxy bias preclude inferred N.
+Do not auto-extend scan or interpret current minimum as recovered count/hand.
+
+Three methods presented: narrow rescan, zoom existing scores, larger view.
+Implement latter two. Config restores centers plus matching saved scores,
+does not reject identical points merely for newer revision, flags different
+points as stale. If no saved viewer choice, restore count/hand/guides from
+centers' model reference (2646,−1 here); explicit CLI/choice still overrides.
+No new save/scan needed to see graph. Unchanged saved marks aren't resaved
+when plotting. All three original live JSON files byte hashes unchanged.
+
+Graph wheel zoom both axes; Shift-wheel score-only, Ctrl-wheel count-only;
+drag pan vs click-select threshold. Larger graph modal/Escape/Return, clicking
+returns to selected model count on photo. Fit graph, Fit scores, Best±30,
+explicit view-range and±controls. Independent graph domain bounds/min spans,
+clipped drawing and nearest-sample readout; hover SSE/RMS3decimals. Fit scores
+uses visible count samples. Persist graph domain in browser localStorage per
+saved scan; resize/modal doesn't alter range. PNG exports current zoom; JSON
+keeps full rows. No scores/marks/model kernel altered by view operations.
+
+14 Python /10 named JS checks pass, including read-only restore across same-
+point revisions/different-point invalidation, reference count precedence,
+pointer/axis zoom, pan/limits/extreme zoom, visible-score fit and immutable
+scores, plus old frozen4variants and mark/viewport checks. Syntax passes.
+Live ViewerStore/config restore41centers/1601scores/count2646 without writes;
+original centers/previous/score hashes verified. Curated readonly saved-score
+plot inspected, frozen copies/hash/parameter record kept. Browser/server/
+launcher interaction not tested or launched. User Ctrl+C/restart/reload.
+
+**Stopping point:** saved points/graph restoration and interactive graph zoom.
+**Next bounded task:** inspect low-score hypotheses and matches; decide whether
+to extend count range or refine phase/centerline, rather than inferring N from
+the density-biased trend. gpt-6.1-sol / High, same session, no/new. Scoped commit/
+push and exact remote/status verification before delivery.
+
+## Prior R184–R185 — Manual visible-part centers and count-error graph
 
 Maker: green107% closer but still too small; centerline good but imperfect.
 Q183.1 answered qualitatively in [width feedback](photo2/width-feedback-r184.json).

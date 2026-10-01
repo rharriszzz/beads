@@ -93,6 +93,22 @@ class CenterStore:
             raise ValueError('The score path contains an unrelated file; use another --centers path.')
         return doc
 
+    def restored_score(self, centers):
+        if not self.score_path.exists():
+            return dict(score=None, message='No saved score yet. Save & plot to calculate it.')
+        doc = self.read_score()
+        if doc.get('centers', {}).get('points') != centers['points']:
+            return dict(score=None, message='The saved score uses different centers. Save & plot to update it.')
+        rows = doc.get('rows', [])
+        if len(rows) < 2 or doc.get('hand') not in [-1, 1] or any(
+            not isinstance(r, dict) or type(r.get('count')) is not int or
+            not isinstance(r.get('sse'), (int, float)) or not np.isfinite(r['sse']) or r['sse'] < 0
+            for r in rows) or any(a['count'] >= b['count'] for a, b in zip(rows, rows[1:])):
+            return dict(score=None, message='Saved score is incomplete. Save & plot to calculate it again.')
+        if not isinstance(doc.get('best'), dict) or doc['best'].get('count') not in [r['count'] for r in rows]:
+            return dict(score=None, message='Saved score is incomplete. Save & plot to calculate it again.')
+        return dict(score=doc, message=f'Restored saved score for these {len(centers["points"])} centers.')
+
     def save_score(self, doc):
         with self.lock:
             if self.score_path.exists():

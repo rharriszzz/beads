@@ -111,6 +111,15 @@ class ViewerStore:
         self.centers = CenterStore(centers_path or self.path.with_name('centers.json'), self.source,
             forbidden=[self.path, self.path.with_name(self.path.stem+'.previous.json'),
                        ROOT/'beads-photo-2.jpg', ROOT/'beads.pov', ROOT/'photo2/output/labeler/annotations.json'])
+        reference = self.centers.read().get('viewer_reference', {})
+        parameters = reference.get('configuration', {}).get('parameters', {})
+        if saved is None:
+            if count is None: self.initial_count = parameters.get('nbeads', self.initial_count)
+            if hand is None: self.initial_hand = parameters.get('hand', self.initial_hand)
+            validate_selection(self.initial_count, self.initial_hand)
+            self.initial_guides = validate_guides(reference.get('guides'))
+            self.minimum = min(self.minimum, self.initial_count)
+            self.maximum = max(self.maximum, self.initial_count)
         self.job_lock = threading.Lock()
         self.job = None
 
@@ -165,11 +174,14 @@ class ViewerStore:
             return result
 
     def config(self):
+        centers = self.centers.read()
+        restored = self.centers.restored_score(centers)
         return dict(source=self.source, image_url='/image.png', initial_count=self.initial_count,
             initial_hand=self.initial_hand, initial_view=self.initial_view,
             initial_guides=self.initial_guides, width_range=WIDTH_LIMITS,
             min_count=self.minimum, max_count=self.maximum, allowed_range=COUNT_LIMITS,
-            centers=self.centers.read(), centers_path=str(self.centers.path),
+            centers=centers, centers_path=str(self.centers.path),
+            saved_score=restored['score'], score_restore_message=restored['message'],
             save_path=str(self.path), starting_patch=[1210, 210, 1450, 365])
 
     def save(self, payload):
@@ -185,7 +197,7 @@ class ViewerStore:
                 Path(__file__), ROOT/'beads.pov', ROOT/'photo2/tangent_circles.py',
                 ROOT/'photo2/bead_placement.py', ROOT/'photo2/curved_surface_fit.py',
                 ROOT/'photo2/local_surface_fit.py', ROOT/'photo2/spline-seed-r175.json',
-                ROOT/'photo2/center_marks.py', ASSETS/'marks.mjs',
+                ROOT/'photo2/center_marks.py', ASSETS/'marks.mjs', ASSETS/'score_view.mjs',
                 ASSETS/'app.mjs', ASSETS/'viewport.mjs', ASSETS/'index.html', ASSETS/'style.css']},
             status='User-selected diagnostic model parameters; no recovered N or helicity is implied.')
         with self.lock:
@@ -240,7 +252,7 @@ class ViewerStore:
                     Path(__file__), ROOT/'photo2/center_marks.py', ROOT/'photo2/tangent_circles.py',
                     ROOT/'photo2/spline-seed-r175.json', ROOT/'beads.pov',
                     ROOT/'photo2/bead_placement.py', ROOT/'photo2/curved_surface_fit.py',
-                    ROOT/'photo2/local_surface_fit.py', ASSETS/'app.mjs', ASSETS/'marks.mjs']}
+                    ROOT/'photo2/local_surface_fit.py', ASSETS/'app.mjs', ASSETS/'marks.mjs', ASSETS/'score_view.mjs']}
                 self.centers.save_score(result)
                 with self.job_lock:
                     self.job.update(state='complete', result=result, path=str(self.centers.score_path))
@@ -282,6 +294,7 @@ def make_server(store, port=DEFAULT_PORT):
                       '/app.mjs': ('app.mjs', 'text/javascript; charset=utf-8'),
                       '/viewport.mjs': ('viewport.mjs', 'text/javascript; charset=utf-8'),
                       '/marks.mjs': ('marks.mjs', 'text/javascript; charset=utf-8'),
+                      '/score_view.mjs': ('score_view.mjs', 'text/javascript; charset=utf-8'),
                       '/style.css': ('style.css', 'text/css; charset=utf-8')}
             try:
                 if url.path in assets:

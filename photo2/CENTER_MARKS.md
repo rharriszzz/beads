@@ -1,5 +1,10 @@
 # Visible-part center marks and count-error graph — R184–R185
 
+**R186:** [Saved graph and zoom controls](SCORE_GRAPH.md) restore your41 centers
+and existing graph automatically. Wheel zoom, Shift-wheel for scores only,
+Ctrl-wheel for counts only, drag pan, Larger graph, Fit graph/Fit scores and
+Best±30 controls are now available. Restart and reload to use them.
+
 Restart the running viewer with Ctrl+C, run it again, and reload the browser:
 
 ```bash

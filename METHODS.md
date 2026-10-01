@@ -61,6 +61,13 @@ make coarse sampling unreliable. Visible-area centers remain proxy targets;
 review correspondence and residual bias before treating a minimum as evidence
 for N or fitting further geometry. Validate against independent known-count
 synthetic sets for both hands, not against invented photo labels.
+R186 adds [saved-score restoration and graph-domain zoom](photo2/SCORE_GRAPH.md).
+Match point identities/numbers/coordinates, not revision alone, before reusing
+a saved score. Preserve live files byte-for-byte during restoration; use a
+separate bounded domain view for graph pan/pointer zoom and expanded display.
+Score-axis fitting uses only samples in the visible interval; changing graph
+view never rescores or moves photo marks. Preserve snapshot provenance and
+the nearest-prediction-density bias when interpreting a broad count trend.
 
 Place beads uniformly in world arclength with minor-circle phase and integer-turn
 closure. At the minor-radial outer-wall midpoint P=C+(4+R)u, use plane

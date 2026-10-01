@@ -1,5 +1,9 @@
 # Interactive count, helicity, zoom and pan — R181–R182
 
+**R186:** [Saved scores and graph zoom](SCORE_GRAPH.md) restore both centers
+and matching saved scores on startup, with zoom/pan and a larger graph view.
+The center file supplies last count/hand/guides when no viewer choice exists.
+
 **R184–R185:** [Center marking and count-error graph](CENTER_MARKS.md) add
 independent numbered visible-part centers, save/edit/undo tools, and a graph
 of squared position errors over an editable count range. Restart and reload

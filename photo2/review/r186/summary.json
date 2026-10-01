@@ -1,0 +1,45 @@
+{
+  "request": "R186",
+  "inputs": {
+    "photo2/review/r186/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/review/r186/centers-score.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "maker_centers": 41,
+  "center_revision": 2,
+  "score_center_revision": 1,
+  "matching_points": true,
+  "hand": -1,
+  "samples": 1601,
+  "range": [
+    2000,
+    3600
+  ],
+  "best": {
+    "count": 3592,
+    "hand": -1,
+    "sse": 3151.042777560831,
+    "rms_pixels": 8.766681349959493
+  },
+  "limitation": "Lowest score is near the upper scan boundary; this fixed-phase, imperfect-centerline, visible-center/outward-point proxy does not establish N.",
+  "source_sha256": {
+    "photo2/center_marks.py": "53171561571469b1acf6ca97e14ac787cd122077af052eac37194d4a163a77fb",
+    "photo2/tangent_viewer.py": "0f55073369e8846cfc1719006520a94931856d1b047f3e21dc887a7cc5f13781",
+    "photo2/test_center_marks.py": "1ca303e10fad937dc98e772c3e79aad1ced097f37632d7776c8b78cce193a86c",
+    "photo2/tangent_viewer/app.mjs": "0d1f4b2b9ef2896caae0cd78c6bc6bdf13ed164f8c7639f3975ec3a638093b1c",
+    "photo2/tangent_viewer/index.html": "bccc6a5620cbe81338c89be5648df94114d8faed9d16f5b3a12f315dc7648e5f",
+    "photo2/tangent_viewer/style.css": "89194981bf754edfc87e13f188cbdfc4fa8c5fd7a8600ad1369d43f5092d0526",
+    "photo2/tangent_viewer/score_view.mjs": "cbdf085c09109df63d677b059e4d9d98598982e38b3b2294e8300d13d28f8047",
+    "photo2/tangent_viewer/score_view.test.mjs": "0e9e7531e86c2924e50157cefda967a68792f68fd6e1c11fc69370bb105f3c6d",
+    "photo2/review_saved_scores.py": "767a8da7cd981aab64f59dd9babd8ea355cdac4446bcfd6ecce00bb3f9d7346d"
+  },
+  "figure_sha256": "e4697a57ff4ac498b230e23cb910352b2c64c7b91f168a2be7e238319bffada5",
+  "checks": "14 Python / 10 named JS checks and syntax checks. No browser/server/launcher interaction test.",
+  "reproduction": [
+    ".venv/bin/python photo2/review_saved_scores.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_center_marks.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_tangent_viewer.py",
+    "node photo2/tangent_viewer/score_view.test.mjs",
+    "node photo2/tangent_viewer/marks.test.mjs",
+    "node photo2/tangent_viewer/viewport.test.mjs"
+  ]
+}

@@ -3111,3 +3111,64 @@ bounded task: user marks10–20 and saves; read centers.json/centers-score.json,
 inspect matches/residuals all around before fitting phase/centerline or claiming
 N. Recommend gpt-6.1-sol / High, same session, no/new. Scoped commit/push and
 exact remote tip/clean final status verified before claiming delivery.
+
+
+## R186 — Restore saved centers and show a zoomable score graph
+
+User: “I have saved the centers, but I want to see the graph, and let me zoom in on the scores.  Please make sure to restore the saved centers.”
+
+Preflight daisy,photo-2-reconstruction-v2 atf3bfa0d, clean/no stashes, fetch and
+upstream0/0. Read handoff/plan/latest log/CENTER_MARKS/relevant viewer and quick
+shape model. No agents. Found centers.json revision2 with41points, previous
+revision1 and existing score1601integer counts2000–3600,hand−1. Score's revision1
+points equal currentrev2 exactly. No viewer choice.json exists. Initial hashes:
+centers3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d;
+previous e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb;
+score80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76.
+Preserve these live files byte-for-byte; freeze current centers and original
+score into review/r186 for curated reproduction, including original code hashes.
+
+Three approaches presented: narrow rescan, zoom existing graph, larger graph
+view. Implement latter two. Config returns saved centers plus same-point saved
+score; revision changes alone don't invalidate identical observation positions.
+Different-point score retained on disk but flagged stale, not displayed as
+current. Centers' count/hand/guides provide initial reference if no viewer choice;
+currentreference2646/−1. CLI/choice overrides take precedence. Restore doesn't
+write or rescan; plotting already saved unchanged marks doesn't resave centers.
+
+New score-domain module keeps original score rows immutable. Pointer wheel zoom
+both axes, Shift-wheel scores only, Ctrl-wheel counts only. Drag pan doesn't
+select a count; click selects a tested count and returns from expanded dialog
+to photo. Fit graph, Fit scores for visible counts, Best±30, numeric view-range,
+zoom±, Larger graph/Escape/Return controls. Clip curve to plot bounds; constrain
+view to dataset and nondegenerate minimum spans, including extreme zoom. Hover
+reports exact nearest sample count/SSE/RMS to three decimals. Axis tick precision
+adapts to zoom. Persist graph view in localStorage per source/saved scan, retain
+range across resizing/modal changes. PNG exports current view, JSON all samples.
+Graph zoom doesn't rescore, move marks, change model or reset photograph view.
+
+Saved scan minimum3592,SSE3151.042777560831px²,RMS8.766681349959493px for41marks.
+Near upper boundary; growing candidate density/nearest reassignment, fixed
+phase/imperfect centerline and visible-center/outward-point bias limit meaning.
+Not recovered N or helicity; no new scan/phase/spline fit in this bounded step.
+review_saved_scores.py uses frozen data, produces full/near-minimum figure and
+summary hashes/parameters/capture revisions/reproduction. Inspect actual graph;
+preserve old synthetic reviews and all model/source/manual adjacency evidence.
+
+14 Python tests and10named JS checks pass; syntax checks pass. New checks cover
+same-point revision restore/no writes, stale different-point rejection, saved
+center reference count, graph pointer zoom/independent axes, pan domain limits,
+extreme zoom/minimum span, nearest lookup, visible-range fitting and original
+row preservation. Old frozen4circle/exposure variants, marking/viewport/guides
+also pass. Extreme-zoom check caught underflow to zero span; clamp zoom span
+before anchor construction and rerun graph checks successfully. Actual readonly
+ViewerStore/config restore41centers/1601scores/count2646 verified, all three
+saved-file hashes unchanged. No browser/server/launcher interaction test or GUI
+launch. No broad old POV/geometry suite rerun or geometry kernel modification.
+
+SCORE_GRAPH.md documents restored data, controls, limits and actual figure;
+link from center/viewer/methods, update plan/handoff, append log. Stopping point:
+restored centers/score and zoomable graph. Next bounded task: review low-score
+counts and proposed matches before deciding scan extension or phase/centerline
+refinement. Recommend gpt-6.1-sol / High, same session, no/new. Scoped commit/push
+and exact remote tip/clean status verified before claiming delivery.
