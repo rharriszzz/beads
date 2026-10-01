@@ -11,7 +11,55 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R190–R191: candidate tube middle rejected at reviewed bend
+## Current R192: trusted bead evidence before any simulated-position fit
+
+Maker steps back to the foundation: positive regions safely inside every
+distinguishable central red/yellow body; black-body identities and separate
+specular-reflection positions. Ignore ambiguous edge slivers, preserve scope
+and unknowns. This supersedes the proposed next geometry/centerline fit.
+[Evidence inventory and review](photo2/TRUSTED_BEAD_BASIS.md),
+[saved scope/stretch request](photo2/foundation-request-r192.json).
+
+Four methods presented: local hue/S/V interiors, seam/watershed separation,
+black reflection/dark context, raw tiled coverage audit. Implement conservative
+native regions plus contextual reflection evidence and an all-around atlas.
+No model/spline/manual-coordinate/hue-box inputs to automatic extraction.
+Existing confirmed facts stored separately; no proposal becomes trusted merely
+by threshold score. Input-only modes named red/yellow after selection using
+confirmed color facts, not hue-box priors. Seed counts do not establish bodies.
+
+First pass broad black cores crossed adjacent rendered bodies; frozen adverse
+examples preserved. Smaller footprints produce 512 colored-region proposals,
+236 black/reflection-region proposals,20 reflection-only,4 unresolved,221
+provisional edge exclusions. Native search adds35 colored seeds and47 dark
+areas needing audit; these aren't47 black beads. All statuses retained.
+Existing trusted ledger includes five confirmed regions and three confirmed
+black reflection locators, plus point/topology facts with their original limits.
+Two exact contained subsets inherit support from confirmed beads11/17; they
+do not add distinct bodies. Known fixture checks still have3–7 mixed regions,
+misses, duplicates, wrong appearance-kind counts1/2/0 and two false black
+reflection associations per fixture; some regions have only1px true clearance.
+Universal reliability/coverage is not established. Q192.1 colored loops and
+Q192.2 three black identities/reflection loops pending; these are evidence
+questions, not approval gates. Full raw/proposal atlas is generated separately.
+
+Five tests pass for hue/native pixel encoding, support inset/no hole filling,
+colored dark-seam separation, reflection/body distinction with reflection-only
+preservation, and unresolved competing/distant seeds. No actual-photo model
+fit, centerline/camera/count/phase change, stretch, GUI/server or live save edit.
+
+Future fitting allowance saved: small local stretch, roughly1% over45° major
+span, zero integrated arclength change over the whole loop. Suggestions remain
+unfitted; no new model implemented. Trusted observations must come first.
+
+**Stopping point:** first native-region inventory and trusted-fact separation.
+**Next bounded task:** incorporate small ownership reviews, diagnose remaining
+cross-body cores/reflection associations, and audit unassociated areas/misses/
+duplicates around the photo before promoting a larger trusted set. Continue
+this foundation; do not resume simulated fitting yet. gpt-6.1-sol / High;
+same conversation, no `/new`.
+
+## Prior R190–R191: candidate tube middle rejected at reviewed bend
 
 [Candidate fit and illustrated review](photo2/CENTERLINE_FIT_REVIEW.md) complete
 the first bead-derived curve trial. Three implementations were considered:

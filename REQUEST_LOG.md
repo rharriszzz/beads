@@ -3357,3 +3357,78 @@ points, count, camera or helicity. Update review, summary, plan, method and
 handoff. Question answered; no pending approval or question. Complete delivery
 of this bounded trial; next literal-geometry fit must address the demonstrated
 visibility/coverage bias rather than adopt symmetric colored tails as truth.
+
+
+## R192 — Trusted colored interiors and black bodies/reflections before fitting
+
+Maker request, verbatim:
+
+> lets step back a bit, to look at the foundation of this work. Can we reliably identify (a subset of) the visible region of every red bead, also every yellow bead.  Also can we reliably identify every black bead, as well as the position of its specular reflection.  Do not worry about beads which are close to the edge, and cannot be distinguished from the background.  We want to start with this trusted data, and only after we have it do we want to try to fit it with the simulated position data.  The simulated position data should have allowed for a small stretch averaging to 0, perhaps 1 percrnt over 45 degrees of the major axis; basicly just a bit so that we might be able to achieve a better fit.  over 360 degrees it has to integrate to 0, of course.  so the next step is to identify a region inside every yellow and red bead that does not get near to the interbead darker areas, and als identify the black beads, along with the positions of their specular reflections.  this will become the trusted basis for further steps.
+
+This overrides the next simulated-position/centerline fit. Preflight daisy,
+226c24c01bc9e970fa91b764d9ad15973091087d, photo-2-reconstruction-v2, clean/no
+stashes; deliberate fetch and upstream0/0. Read handoff/latest log/plan and
+R157/R167/R169/R170/R172 supporting evidence. No agents or dependencies.
+
+Presented four methods: local learned hue/S/V interiors, seam/watershed
+separation, reflection-plus-dark-context, tiled raw-photo coverage audit.
+Implemented conservative native regions and contextual reflections with a
+native missed-feature search and all-around raw/proposal atlas. No model/old
+spline/manual-coordinate/saved-hue-box input to extraction. Original detector
+unchanged. Learned color modes named yellow/red after selection using existing
+confirmed colors; naming is explicit assistance, not a runtime location prior.
+
+993 candidate observations retained:512 colored regions,236 black/reflection
+regions,20 reflection-only,4 unresolved,221 provisional edge exclusions.
+35 native colored seeds added;47 unassociated dark areas can be beads, seams
+or shadows, not a count of47 black beads. Pixel runs/closed routes/parameters/
+stable IDs and reflection brightness centroids/threshold sensitivity saved.
+Small native cores have >=3px margin to rejected support and >=12pixels,
+without unknown-hole filling. Support margin is not certified bead clearance.
+Failed black cores retain supported reflection-only evidence. Reflection is
+separate from body identity and is not the physical/visible/outward center.
+
+Trusted ledger preserves five exact R160 regions8/11/14/17/20 and confirmed
+black point ownership10/14/17, point16, distinct-body group448/449/450 and
+consecutive diagonal C573/C575/C577, each with its original limits. C587 remains
+unresolved. New patches939/943 have every recorded pixel and loop vertex inside
+previously confirmed bead11/17 regions; store as inherited subsets, not new
+distinct bodies. Partial overlaps on8/14/20 do not certify whole new patches.
+No other automatic proposal promoted by confidence alone; completeness false.
+
+Initial broad regions mixed adjacent bodies in9–11/95–97 proposals on reused
+known appearance renders. Frozen adverse pixel records preserved. Reduced
+footprints give97/98/95 regions,92/95/88 single-body,5/3/7 mixed/background,
+duplicates4/7/4, wrong appearance-kind1/2/0. Eligible bodies located87/141,
+87/141,84/142 under declared inset/search-band evaluator rule; eligibility is
+diagnostic, not exact supplied exposure. Black bodies with reflection locators
+37/47,36/45,37/47; two false black-reflection associations per fixture. Some
+single-body patches have only1px true boundary clearance. All three input-only
+inventories finish before rendered body-ID masks are read. These checks audit
+extraction, not fitting simulated positions to the real photo. Real-photo
+ownership/seam clearance/coverage and universal reliability remain unverified.
+
+TRUSTED_BEAD_BASIS.md records methods, raw/annotated question crops, whole-photo
+context, all-around atlas, counts/limits, adverse examples and reproduction.
+Q192.1 checks yellow959/red566/yellow565 loops comfortably inside respective
+bodies; Q192.2 checks black561/558/557 distinct identities and loop/reflection
+ownership. Both questions pending when issued; they are evidence questions,
+not approvals. Curated supporting images/ledgers/source/output hashes tracked.
+Routine atlas/calibration masks stay ignored. Five computational tests pass;
+syntax, curated/source/live hashes, native pixel/ID/tile accounting, append-only
+log, links and full/crop image inspection checked. No GUI/server/launcher,
+new POV render, actual-photo fit/count scan or live annotation/center/score edit.
+
+Future small stretch suggestion saved in foundation-request-r192.json: about1%
+over45 degrees of the major axis, zero total integrated base-arclength change
+over360 degrees. No stretch implemented or fitted; unweighted angular mean
+alone need not preserve length on a noncircular curve. Original photo, POV,
+detector, model/spline and live maker saves unchanged. Plan/method/handoff updated.
+
+Stopping point: first native evidence inventory, independent ownership failures
+and separate trusted ledger, not reliable identification of every eligible body.
+Next bounded task: incorporate small reviews, diagnose mixed/reflection
+associations and audit missed/duplicate/unassociated bodies all around before
+promoting more trusted regions. Continue this foundation; fitting deferred.
+gpt-6.1-sol / High, same session, no /new. Scoped commit/push and exact remote
+tip/clean final status verified before claiming delivery.

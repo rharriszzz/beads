@@ -1,6 +1,88 @@
 # Beads session handoff — new branch
 
-## Current R190–R191 — Bead-derived curve trial; old cyan favored at bend
+## Current R192 — Trusted image evidence is the foundation; fitting deferred
+
+Maker asks to establish safe visible interiors of every distinguishable central
+red/yellow bead, identify all distinguishable black bodies and separately locate
+their specular reflections, excluding ambiguous edge slivers. Only then fit
+simulated positions, eventually allowing small stretch (about1% over45° major
+span), zero integrated change over360°. [Scope](photo2/foundation-request-r192.json),
+[procedure/review](photo2/TRUSTED_BEAD_BASIS.md),
+[trusted existing facts](photo2/review/r192/trusted-facts.json),
+[all candidates](photo2/review/r192/candidates.json),
+[checks/hashes](photo2/review/r192/summary.json).
+This overrides R190–R191's next geometry fit. Do not fit before the trusted
+evidence foundation is established. Stretch suggestion saved, not implemented;
+closure later means zero arclength change, not merely unweighted angular mean.
+
+Preflight daisy,226c24c,photo-2-reconstruction-v2,clean/no stashes;
+fetch/upstream0/0. Read current records, R157 confirmed loops, R167/R169 detector
+and reflection failures, R170/R172/R168/R189 ownership facts. No agents,
+dependencies, supplied status/usage or machine transfer. Python3.12.
+Four methods: local hue/S/V regions, seam/watershed separation, reflection/dark
+context and raw tiled review. Implement native conservative interiors with
+reflection evidence and coverage audit. auto_label_beads.py remains unchanged;
+its points are only proposals. No old spline, manualcoords, hueboxes, simulated
+positions or full-string indices enter automatic extraction. Learned palette
+named red/yellow only in post-selection semantic evaluation using known colors.
+
+bead_evidence_inventory.py: image-only coarse seeds + independent native search;
+restricted guard by scale/nearest competing seeds, learned circular hue/local
+S/V with dark-value rejection, connected component, >=3px core-to-support margin,
+small footprint cap, >=12 native pixel centers. No unknown-hole filling.
+Black: native weighted bright-feature centroid, explicit dark-context evidence,
+threshold sensitivity and small positive region; failed small regions retain
+reflection-only proposals. Pixel margin is to support rejection, not certified
+true bead/seam boundary. Edgeguard .7 apparent diameter is a provisional search
+band criterion, not maker-supplied visibility or verified physical exposure.
+
+Initial broad black cores crossed adjacent bodies in9–11/95–97 known-render
+regions; preserve adverse example pixel runs/parameters. Footprint correction
+retains512 colored regions,236 black/reflection regions,20 reflection-only,
+4 unresolved,221 edgeexcluded observations;35 native added colored seeds and
+47 unassociated dark areas (possible bodies/seams/shadows, not bead counts).
+All records/IDs/statuses retained; no merging/compressed indices or completeness
+claim. Full raw/proposal atlas output/r192/atlas/index.html, tile coverage tracked.
+
+trusted-facts.json includes five exact R160 maker-confirmed regions8/11/14/17/20,
+R170/confirmed-core black locators10/14/17, R172 point16, R168 distinct bodies
+448/449/450 and R189 consecutive diagonal; distinguish region/point/topology
+trust. C587 remains unresolved. No unreviewed region auto-promoted. Unknown
+outside pixels and body extent/center/outward points stay unknown. Exact new
+subsets939/943 are wholly contained in confirmed bead11/17 interiors; retain
+their inherited support without adding distinct-body coverage. Partial overlap
+on8/14/20 does not confirm the new whole patches.
+
+Known three appearance-only inventories finish before IDs read. Final regions
+97/98/95; singlebody92/95/88, mixed5/3/7; duplicates4/7/4; eligible located
+87/141,87/141,84/142 under declared evaluator rule. Some1px true clearances,
+wrong appearance-kind counts1/2/0 and two false black-reflection associations
+per fixture. These don't establish universal precision/coverage,
+and fixtures only test extraction/ownership, not actual-photo simulated fitting.
+Eligible black bodies with reflection locators37/47,36/45,37/47, including some
+with rejected/mixed cores. Reflection-only coverage also recorded separately.
+
+Q192.1 asks whether A-yellow959/B-red566/C-yellow565 green loops are comfortably
+inside their respective bodies away from dark seams. Q192.2 asks whether
+A561/B558/C557 are distinct black bodies, with loop/reflection inside each.
+Raw paired images inspected; both questions pending, not permissions. Full-photo
+view shows small loops, cyan reflectionlocators, orange unresolved/edge/dark audit.
+Five tests pass including no hole filling, dark-seam refusal, retained reflection
+when core too small, circular hue and pixel encoding, ambiguous seed refusal.
+Syntax, source/live hashes, append-only log/links and image inspection checked.
+No GUI/server/launcher, actual-photo geometry/count scan, new render or live save
+write. Original detector/photo/POV/model/spline/annotations/centers/scores unchanged.
+No stretched model exists. Routine atlas/calibration outputs ignored; curated
+question images, trusted/candidate ledgers and checks tracked.
+
+**Stopping point:** first full-photo native evidence inventory, computational
+ownership audit and trusted-fact separation. **Next bounded task:** apply region/
+black-identity answers, diagnose remaining mixed cores, and audit native-added/
+unassociated dark/duplicate/missed bodies around all tiles. Do not resume fitting
+until supported trusted coverage. gpt-6.1-sol / High; same session, no `/new`.
+Scoped commit/push and exact remote/clean status verified before claiming delivery.
+
+## Prior R190–R191 — Bead-derived curve trial; old cyan favored at bend
 
 R190 asks for a reminder then continuation. Explained candidate middle fit,
 old/new raw and whole-photo comparisons, saved centers reserved for evaluation.

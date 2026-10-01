@@ -26,6 +26,16 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Forward minor-outward tangent circles on a planar spline — R175–R178
 
+**R192 supersedes the next fit:** [Trusted image evidence first](photo2/TRUSTED_BEAD_BASIS.md).
+Extract native positive interior pixels/loops with circular learned hue and S/V
+seam rejection; keep black bright-feature locations separate from contextual
+body evidence. Audit raw tiles for missed/duplicate bodies, retain excluded and
+unresolved observations, and separate maker-confirmed facts from proposals.
+Support margins and seed counts alone cannot certify ownership, seam clearance
+or completeness. Existing render audits still fail some regions, so this is
+an implemented evidence pilot, not a fully trusted automatic inventory.
+Defer simulated fitting; later small stretch must preserve full-loop arclength.
+
 **R187 centerline replacement:** [Producer audit and colored side/diagonal evidence](photo2/CENTERLINE_BEAD_REVIEW.md)
 supersede trusting the old boundary-midpoint spline. Select conservative colored
 interiors from learned circular hue/S/V; derive provisional local envelope sides
