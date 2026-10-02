@@ -1,5 +1,11 @@
 # Beads session handoff — new branch
 
+R206 setup question answered: bubblewrap/bwrap is Codex's Linux isolation tool.
+Daisy Ubuntu22.04.5 has no system bwrap; advise sudo apt update, sudo apt install
+bubblewrap, bwrap --version. No installation/security-setting change performed.
+Official sandboxing docs checked; bundled fallback explains why absence alone
+does not block commands. Photo evidence and next bounded task below unchanged.
+
 ## Current R201–R205 — 208 colored interiors; 1D practice answers recorded
 
 R201 maker requests a few hundred reliable positions spread around whole loop,

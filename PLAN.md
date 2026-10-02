@@ -3,6 +3,10 @@
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
+R206 operational note: explain/install system bubblewrap for Codex sandboxing;
+Ubuntu22.04.5 package absent here. Guidance supplied, no installation performed.
+This setup question leaves the photo-analysis next task below unchanged.
+
 **Current model recommendation — R134:** gpt-6.1-sol / High for the next bounded
 task. The [official model catalog](https://developers.openai.com/api/docs/models)
 describes near-Astra performance and lists input/output prices of $2/$10 per

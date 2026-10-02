@@ -3851,3 +3851,24 @@ versus visible-center/minor-outward semantics, no black active references;
 small zero-total-arclength stretch remains deferred. gpt-6.1-sol / High, same
 session; no /new. Scoped commit/push, exact remote and clean status verified
 before claiming delivery.
+
+
+## R206 — What bubblewrap is, why it is useful, and installation
+
+Maker: “what is bubblewrap?  why do I need it?  how should I install it?”
+Read-only setup investigation, no package installation or bead analysis. Daisy
+runs Ubuntu22.04.5; command lookup finds no bwrap, apt-cache reports bubblewrap
+not installed and available from existing Ubuntu repositories. No bubblewrap
+reference found in project labeler/config search. Official OpenAI sandboxing
+documentation checked2026-10-02: https://learn.chatgpt.com/docs/sandboxing.
+Bubblewrap provides Linux command isolation used by Codex to enforce access
+boundaries; install the distribution package for reliable support. Codex can
+fall back to its bundled helper when system bwrap is absent, subject to user
+namespace support; absence alone does not prove commands cannot run. Explain
+sudo apt update; sudo apt install bubblewrap; bwrap --version in normal terminal.
+This is a system tool, not a Python bead-analysis dependency. No sudo command,
+security setting or installed package changed. Used OpenAI Docs skill; no agents.
+Previous colored-interior/profile evidence frozen. Next operational task: maker
+installs package if wanted, then resume declared neighboring-path profile work;
+gpt-6.1-sol / High, same session, no /new. Scoped documentation commit/push and
+remote/clean verification before claiming delivery.
