@@ -1,0 +1,78 @@
+{
+  "requests": [
+    "R201",
+    "R202",
+    "R203",
+    "R204",
+    "R205"
+  ],
+  "curated_sources_sha256": {
+    "photo2/distributed-position-scope-r201-r203.json": "eab79323ab93a9bcf4bb4275efbf6a96a10d6f462ce8012cf3278453ba59b6ae",
+    "photo2/review/r201/summary.json": "f64a3cc89212becf5b758f9de76a7e8cb97e21120884762d1c6c03c25a98f775",
+    "photo2/review/r201/visual-review.json": "e05ed7664b352976063d5467a5bdc3d055a020f565e3216e353751864334df2d",
+    "photo2/review/r201/subset-attempts.json": "e3943bd6dc987e88330c2dae9a01e1da0b71e7accb0ec4fdd055c810e5073ac8",
+    "photo2/review/r203/summary.json": "17c265e01ffcc94c57dab40f9854c2f42d8c183c8b3c849c8634d9e45236924e",
+    "photo2/profile-questions-r203.json": "d00c51181217a2e268b3e980def2b9ce96d582ce40ae0fb43af2b44829e0620b",
+    "photo2/profile-answers-r204-r205.json": "e5af818507b9381da6877dae6f4723506c18a861d7a5cb1bd78463d05fc12b08",
+    "photo2/record_profile_answers.py": "450439f06655496bc19263caf97a5a71644b3f3579e80fe2387c209eb220a8b4",
+    "photo2/test_profile_answers.py": "a22d8d7f02478329ab22246a1973b3da06fa208d7831a2033010f5fc4e9068a7",
+    "photo2/review/r203/confirmed-profile-facts.json": "73981e9f9170b06ccb026495af9f505d7d0097d5349e6c996facfb6f9f3839f4"
+  },
+  "repeat_checks": {
+    "/r201": {
+      "artifacts": 18,
+      "byte_identical": true
+    },
+    "/r203": {
+      "artifacts": 5,
+      "byte_identical": true
+    }
+  },
+  "selected": 208,
+  "color_counts": {
+    "red": 115,
+    "yellow": 93
+  },
+  "minimum_selected_spacing_pixels": 34.16824405949546,
+  "maximum_fractional_route_gap": 0.012217916072717605,
+  "selected_per_bin": [
+    12,
+    11,
+    10,
+    9,
+    13,
+    11,
+    10,
+    12,
+    9,
+    11,
+    12,
+    9,
+    11,
+    11,
+    8,
+    9,
+    8,
+    9,
+    12,
+    11
+  ],
+  "tests_passed": 7,
+  "protected_inputs_unchanged": 10,
+  "pending_questions": [],
+  "original_question_artifacts_unchanged": true,
+  "fitted_centers": false,
+  "new_trusted_photo_regions": false,
+  "reproduction": [
+    ".venv/bin/python photo2/review_distributed_interiors.py --output photo2/output/r201/final-repeat",
+    ".venv/bin/python photo2/practice_centerline_profiles.py --output photo2/output/r203/final-repeat",
+    ".venv/bin/python photo2/record_profile_answers.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_colored_positions.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_profile_answers.py"
+  ],
+  "limits": [
+    "Visual screening does not prove all208 are distinct photo bodies or exact seam margins.",
+    "R204/R205 confirm only the reviewed point identities/reflection, not safe regions or centers.",
+    "Three existing fixtures measure selected-subset precision only; global inventory remains incomplete."
+  ]
+}

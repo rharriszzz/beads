@@ -1,6 +1,75 @@
 # Beads session handoff — new branch
 
-## Current R200 — 41 saved colored centers audited; matching next
+## Current R201–R205 — 208 colored interiors; 1D practice answers recorded
+
+R201 maker requests a few hundred reliable positions spread around whole loop,
+no black; R202 safe interiors accepted; R203 suggests reducing to1D by sampling
+H/S/V along center spline, noticing dark/bright/hue changes and nearby glints/
+black bodies. [Exact statements](photo2/distributed-position-scope-r201-r203.json).
+This replaces immediate matching from the41 saved marks; no fit in this step.
+
+[Distributed set/raw paired pages](photo2/DISTRIBUTED_COLORED_POSITIONS.md),
+[image-only proposals](photo2/review/r201/interiors.json),
+[visual screening](photo2/review/r201/visual-review.json),
+[known fixture checks](photo2/review/r201/calibration.json),
+[1D practice/questions](photo2/CENTERLINE_PROFILE_PRACTICE.md),
+[sealed questions as issued](photo2/profile-questions-r203.json),
+[exact answers](photo2/profile-answers-r204-r205.json),
+[bounded transition facts](photo2/review/r203/confirmed-profile-facts.json).
+[Final checks/curator seals](photo2/review/r201/curation-summary.json).
+208 selected:115 red/93 yellow; 8–13 per20 image-derived arc bins, maxgap1.22%.
+All11 native raw/loop pages and full native overlay inspected. These are interior
+references, not full visible centers/minor-outward points or a maker-confirmed
+new region ledger. Curator visual judgment, not exact photo ownership/margins.
+No asserted unique208 beads, merges or inferred string indices.
+
+New modules: colored_bead_centers.py strict centroid attempt863 regions/38
+stable, not adopted; distributed_colored_interiors.py reuses input-only inventory,
+local appearance perturbation, lower-fifth per-family V exclusion,1.25 apparentD
+minimum selected spacing, round-robin20 arc bins. No saved colorboxes/oldcurve/
+manual coords/model in extraction. Source UUIDs/native pixels and unselected/
+uncertain records retained; all black observation proposals excluded from set.
+Learned27/353deg names assigned yellow/red only in visual curator. Few-hundred
+centers not achieved; safe-interior fallback expressly authorized.
+
+Early505 supported/300 selected: known mixed1/0/1 and duplicate4/6/4 excess.
+Brightness-only403/300: mixed1/0/0, dup4/5/3. Sparse403/208: known27/25/20
+selected, all72 distinct colored bodies, no mixed/background/black/duplicate.
+Minimum true pixel margins4/5/2.83px; patch centroid offset up to15.86px from
+true visible centroid. These are selected precision diagnostics, not broader
+coverage claims; all extraction completes before truth/maker evaluations.
+
+practice_centerline_profiles.py assisted: old2px-smoothed periodic spline,
+one-pixel image arcs9236 samples, parallel offsets±5.438px; bilinear RGB then
+HSV (no linear hue interpolation). Full NPZ ignored output/r203/profiles.npz,
+tracked281-sample top/right/bend sections+rotated raw/path/RGB/S/V/H plots.
+Landmarks are feature hypotheses, not beads/seams/indices. H clipped display
+−90..60deg, full values saved. R204 answers Q203.1 “Two different yellow beads”;
+R205 answers Q203.2 “Yes” to R+109 being a black specular reflection. None pending.
+Only these point/body identities and reflection interpretation confirmed, no
+exact seams/regions/centers/adjacency. record_profile_answers.py seals immutable
+question image/report/point bindings. S/Q21 samples spanning20px: V minimum0.758
+at+11px,15.6% below lower endpoint, endpoint H32.7→44.1deg (+11.4deg).
+Complementary hue/V evidence, not a universal seam rule. R remains inactive,
+not an optical centroid/bead center/outward anchor.
+User's R203 statement answers the earlier free-text request for their method.
+Do not revise frozen question coordinates/images after maker review.
+
+Seven tests pass (uniform sampling/no deletion, cross-bin spacing/no aliasmerge,
+hue-wrap sampling, periodic normals/step, adverse ownership evaluator, bounded
+point promotion, changed points/replies rejected). Curated
+extraction/profile outputs repeat; source/native/pixel/spacing/coverage/question
+seals/protected hashes checked. Original ten protected inputs unchanged; prior
+ledgers frozen. No agents/dependencies, live edits, GUI/server/new render/count
+scan/camera/phase/spline/stretch/fit. Zero-net stretch suggestion deferred.
+
+**Next bounded task:** transfer supported1D yellow-transition/
+reflection cues to nearby paths and selected
+interiors before correspondence refinement. Keep nonblack active basis and
+explicit interior versus center/outward semantics. gpt-6.1-sol / High, same
+session; no `/new`.
+
+## Prior R200 — 41 saved colored centers audited; matching next
 
 Maker says “continue”; bounded saved-center quality/coverage audit completed.
 [Review/raw pairs/full photo](photo2/SAVED_CENTER_AUDIT.md),

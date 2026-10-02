@@ -24,6 +24,27 @@ every section in document order. The next bounded task is the
 checkpoints. Background bridges and the two FFT explorations supply evidence
 where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
+## Distributed colored interiors and one-dimensional practice — R201–R205
+
+[Distributed subset, raw paired crops and validation](photo2/DISTRIBUTED_COLORED_POSITIONS.md).
+Input-only conservative native colored patches, local appearance perturbation,
+learned per-mode brightness ranking and sparse balanced loop sampling yield208
+screened interior references. Preserve excluded/uncertain hypotheses and IDs;
+spacing is a selection preference, not alias merging or uniqueness proof.
+Strict full-visible-centroid attempt fails coverage; the maker accepts interiors.
+Known-render tests check true ownership/margins, including adverse earlier stages.
+Interior centroids can differ substantially from visible centers: use membership
+in future matching rather than promoting them to exact outward anchors.
+
+[Assisted spline/RGB/H/S/V practice](photo2/CENTERLINE_PROFILE_PRACTICE.md).
+Sample original encoded RGB at native-pixel arcs on the unchanged spline and
+nearby paths, then convert to HSV. Keep circular hue and low-S uncertainty;
+show raw context, path distance, RGB strip and traces together. Maker confirms
+two yellow bodies across a modest V dip/hue change, plus a low-S glint on black.
+Exact answers bind frozen image/report/points; no exact seam/center/adjacency
+follows. Manual coordinates/old spline are diagnostic inputs, not runtime priors.
+Reproduction and precision/coverage limitations are linked in the two experiments.
+
 ## Forward minor-outward tangent circles on a planar spline — R175–R178
 
 **R192 supersedes the next fit:** [Trusted image evidence first](photo2/TRUSTED_BEAD_BASIS.md).

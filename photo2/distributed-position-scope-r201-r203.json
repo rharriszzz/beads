@@ -1,0 +1,12 @@
+{
+  "requests": {
+    "R201": "Yes, it is enough to begin position matching.  But I want you to find a few hundred beads, uniformly across the whole necklace, that you can reliably calculate the centers for.  I suggest no black beads.  If you find this hard, I can tell you a way for you to gain more proficiency in this task.",
+    "R202": "safe interiors will also work.",
+    "R203": "Suppose you sample the pixels around the center spline, look for where it gets brighter and darker.  look at how the hue changes from red to yellow, and the subtle changes in hue as you get near the edge of a bead.  This changes the 2d problem into a possibly simpler 1 d problem.  Also try to notice where you are near black beads or ner specular reflections.  Practicing on the 1 d problem might give you better expertise for the 2d problem."
+  },
+  "active_scope": "A few hundred distributed reliable colored bead positions or safe interiors; no black beads in active positional subset. Practice 1D HSV along existing spline to improve 2D analysis.",
+  "prior_advice_question": "What method would you suggest for improving my identification of red/yellow beads and safe interiors?",
+  "advice_question_answered_by": "R203 exact statement",
+  "simulated_matching_performed": false,
+  "centerline_changed": false
+}

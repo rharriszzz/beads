@@ -3731,3 +3731,123 @@ balanced residuals, then small constrained planar centerline trial/raw overlays.
 Keep both hands/N unresolved, anchor semantics and rejected green bend evidence.
 gpt-6.1-sol / High, same session; no /new. Scoped commit/push and exact remote/
 clean status verified before claiming delivery.
+
+
+## R201 — A few hundred reliable colored positions around the whole necklace
+
+Maker: “Yes, it is enough to begin position matching.  But I want you to find a few hundred beads, uniformly across the whole necklace, that you can reliably calculate the centers for.  I suggest no black beads.  If you find this hard, I can tell you a way for you to gain more proficiency in this task.”
+
+Preflight daisy, f4e01a3, photo-2-reconstruction-v2, clean/no stashes; fetch and
+upstream0/0 checked. Read handoff/log/plan, saved-center audit, native evidence
+inventory, quick shape and hue-overlap constraints. No agents or dependencies.
+This overrides the previous immediate-matching plan: obtain a distributed
+colored-only positional basis first. Four methods presented: colored-support
+centroids, distance-based interiors, local H/S/V perturbation agreement and
+balanced loop sampling. New strict centroid experiment yields863 regions but
+only38 stable candidates, poorly spread. Failure retained in center-attempt.json;
+not adopted or described as a recovered visible-center set. Requested maker's
+suggested approach; R203 supplies it, so that advice question is answered.
+
+## R202 — Safe interiors are acceptable positional references
+
+Maker: “safe interiors will also work.”
+
+Exact R201–R203 scope saved in distributed-position-scope-r201-r203.json.
+New distributed_colored_interiors.py reuses image-only native positive patches,
+learned circular hue modes/local S/V, image-derived route and scale. No manual
+centers/old spline/model coordinates/fixed photo color boxes in extraction.
+Require12 positive pixel centers,3px rejected-support margin,95% survival under
+stricter appearance support. Initial505 supported proposals/300 selected had
+weak shaded photo fragments and known-fixture mixed/duplicate witnesses. Learned
+per-family lower20% brightness exclusion leaves403; brightness-only sampling
+still has mixed/duplicate witnesses. Preserve both adverse stages/commands in
+subset-attempts.json. Final1.25 apparent-diameter minimum selected spacing and
+round-robin20 image-arclength bins yield208 rather than padding toward300.
+Spacing skips nearby references without merging their identities.
+
+All208 selected small loops visually screened in11 paired raw/loop sheets and
+native2540×3182 full-photo overlay:115 red/93 yellow, no clearly identified
+black/paper/cross-body patch in this selection. Curator visual judgment, not new
+maker-confirmed region truth or guarantee of208 distinct bodies. Twenty bin
+counts8–13, largest image-derived-route gap1.22%; different approximate route
+from prior41-mark coverage audit, not measured major-angle or improved curve.
+All677 colored proposals/IDs/native pixels/exclusions retained, indices unknown;
+black proposals never selected. Small-patch centroids are interior references,
+not full visible centers or minor-outward points. Original41 marks separate.
+
+review_distributed_interiors.py completes all input-only photo/fixture extraction
+before loading rendered IDs or manual marks for evaluation. Three existing
+fixtures cover both hands and changed palette/placement. Final27/25/20 selected
+patches: all72 on single distinct colored bodies, zero mixed/background/black/
+duplicate selections. Minimum true pixel margins4/5/2.83px. Interior centroid
+can differ from true full visible centroid by15.86px; later matching must model
+membership/ownership instead of treating all interior points as centers. These
+are precision/regression examples, not complete coverage or independent proof
+of generality. Full failures/owners/source hashes preserved. Maker-nearest patch
+distances are evaluator diagnostics, not established correspondences or errors.
+[Experiment/raw review](photo2/DISTRIBUTED_COLORED_POSITIONS.md).
+
+## R203 — Practice H/S/V along the spline as a one-dimensional problem
+
+Maker: “Suppose you sample the pixels around the center spline, look for where it gets brighter and darker.  look at how the hue changes from red to yellow, and the subtle changes in hue as you get near the edge of a bead.  This changes the 2d problem into a possibly simpler 1 d problem.  Also try to notice where you are near black beads or ner specular reflections.  Practicing on the 1 d problem might give you better expertise for the 2d problem.”
+
+practice_centerline_profiles.py assisted diagnostic uses unchanged two-pixel-
+smoothed periodic spline and maker centers only to choose three display windows.
+One-native-pixel arclength9236 samples on each of three paths, offsets0/±5.438px.
+RGB bilinear sampling before HSV conversion avoids hue-wrap interpolation.
+Full routine NPZ retained ignored; curated281-sample top/right/inward-bend views
+show rotated raw/photo-path panels, distance ticks, RGB strip and V/S/H traces.
+Rotation changes no data; clipped hue plot preserves full saved values. V extrema
+are proposed landmarks, not bead counts/seams/centers. Black glints can be bright
+and low-S; hue alone is misleading there. No fit or revised centerline.
+[Illustrated practice](photo2/CENTERLINE_PROFILE_PRACTICE.md).
+
+Asked Q203.1: right-side S0/Q+20 two different yellow bodies? Q203.2: R+109
+specular reflection on black? Sealed exact photo/report/image/point bindings in
+profile-questions-r203.json. Supporting images remain unchanged after answers.
+
+## R204 — Two distinct yellow bodies in the practice trace
+
+Maker answers Q203.1: “Two different yellow beads”. Bind exact reply and S/Q
+coordinates to immutable R203 question/report/image in profile-answers-r204-r205.json.
+record_profile_answers.py checks sealed hashes and exact reviewed points/replies,
+records distinct yellow identities only. No exact safe-region extent, centers,
+adjacency or seam location inferred. S→Q21 samples span20px; Vminimum0.757956
+at+11px is15.6% below lower endpoint. Endpoint hue32.6918→44.0854deg (+11.3936deg).
+Confirmed modest-V-dip example supports considering complementary hue change,
+not a universal numeric seam rule. Vminimum remains diagnostic boundary candidate.
+
+## R205 — Confirmed black reflection; colored basis unchanged
+
+Maker answers Q203.2: “Yes”. R+109 is a specular reflection on black at the exact
+reviewed point, HSV H311.25deg/S0.079707/V0.787196. No exact optical centroid,
+bead center/outward anchor or alias inferred. Keep inactive in colored-only basis.
+Both questions answered; none pending. Bounded facts/measurements saved in
+review/r203/confirmed-profile-facts.json; original question artifacts unchanged.
+
+Seven tests pass: balanced sampling/no observation deletion, cross-bin spacing/
+no alias merging, RGB-before-HSV hue-wrap sampling, periodic one-pixel route/
+unit normals, adverse ownership witnesses, bounded answer promotion and changed
+points/replies rejected. Fresh complete repeats:18 R201 generator artifacts and
+five R203 generator artifacts byte-identical including summaries. Native RLE/
+centroids/UUIDs/pixel support/status/spacing/coverage/colors, exact-answer seals,
+curator image bindings/source hashes checked. Actual minimum selected spacing
+34.168px≥33.989px rule. Ten protected source/live hashes unchanged; earlier
+ledgers frozen. Curated curation-summary.json seals visual review, failed stages,
+answers, curator code/tests/facts and reproducibility. Syntax/local links/log
+append-only/diff checks. No live saved annotations/centers/scores, geometry,
+count/camera/phase/stretch/fit, GUI/server/launcher/new render change.
+
+Reproduce with .venv/bin/python photo2/review_distributed_interiors.py;
+.venv/bin/python photo2/practice_centerline_profiles.py;
+.venv/bin/python photo2/record_profile_answers.py; unittest discover -s photo2
+-p test_colored_positions.py and -p test_profile_answers.py. Routine outputs
+remain ignored; curated raw/question images tracked with their hashes.
+
+Stop bounded distributed-interior/1D-practice step. Next bounded task: transfer
+supported hue/V/S yellow-transition/glint evidence to neighboring paths and the
+distributed patches before correspondence refinement. Preserve safe-interior
+versus visible-center/minor-outward semantics, no black active references;
+small zero-total-arclength stretch remains deferred. gpt-6.1-sol / High, same
+session; no /new. Scoped commit/push, exact remote and clean status verified
+before claiming delivery.

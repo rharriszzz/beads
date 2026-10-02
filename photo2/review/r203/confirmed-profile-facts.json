@@ -1,0 +1,126 @@
+{
+  "requests": [
+    "R204",
+    "R205"
+  ],
+  "yellow_distinct_points": [
+    {
+      "label": "S",
+      "distance_pixels": 0,
+      "xy": [
+        2257.2405641304554,
+        1447.3213448516622
+      ],
+      "rgb": [
+        0.8984287205057807,
+        0.48952144891419974,
+        0.0
+      ],
+      "hsv": [
+        0.09081066342852034,
+        1.0,
+        0.8984287205057807
+      ]
+    },
+    {
+      "label": "Q",
+      "distance_pixels": 20,
+      "xy": [
+        2260.898197249895,
+        1466.9840044831212
+      ],
+      "rgb": [
+        0.9400479045261626,
+        0.7487671150428294,
+        0.21889497908039668
+      ],
+      "hsv": [
+        0.12245949443499406,
+        0.7671448678025274,
+        0.9400479045261626
+      ]
+    }
+  ],
+  "confirmed_black_reflection_point": {
+    "label": "R",
+    "distance_pixels": 109,
+    "xy": [
+      2275.3877797466316,
+      1554.79191883426
+    ],
+    "rgb": [
+      0.7871959256744923,
+      0.7244508276352766,
+      0.7754312197921394
+    ],
+    "hsv": [
+      0.8645833333333333,
+      0.07970709196119616,
+      0.7871959256744923
+    ]
+  },
+  "black_active_for_fitting": false,
+  "exact_regions_confirmed": false,
+  "exact_centers_measured": false,
+  "adjacency_inferred": false,
+  "transition": {
+    "route": "Existing cyan spline from S0 through Q+20; bilinear encoded RGB then HSV",
+    "sample_count": 21,
+    "path_length_pixels": 20,
+    "minimum_value": 0.7579559275037442,
+    "minimum_value_distance_pixels": 11,
+    "minimum_value_xy": [
+      2259.2687867896198,
+      1458.1327358750068
+    ],
+    "minimum_value_over_lower_endpoint": 0.8436461459925771,
+    "endpoint_hue_change_degrees": 11.393579162330525,
+    "endpoint_hue_degrees": [
+      32.69183883426732,
+      44.08541799659786
+    ],
+    "endpoint_saturation": [
+      1.0,
+      0.7671448678025274
+    ],
+    "endpoint_value": [
+      0.8984287205057807,
+      0.9400479045261626
+    ],
+    "interpretation": "Confirmed two yellow bodies despite shallow V dip; hue variation supplies complementary evidence",
+    "boundary_status": "V minimum is a diagnostic candidate; maker supplied distinct identities, not exact seam pixels"
+  },
+  "reflection": {
+    "point": {
+      "label": "R",
+      "distance_pixels": 109,
+      "xy": [
+        2275.3877797466316,
+        1554.79191883426
+      ],
+      "rgb": [
+        0.7871959256744923,
+        0.7244508276352766,
+        0.7754312197921394
+      ],
+      "hsv": [
+        0.8645833333333333,
+        0.07970709196119616,
+        0.7871959256744923
+      ]
+    },
+    "interpretation": "Maker-confirmed black reflection has high V/low S; hue does not imply a colored bead",
+    "locator_role": "Reviewed feature point, not an optical centroid, bead center or outward anchor"
+  },
+  "limits": [
+    "No numeric image-wide seam rule or color box adopted from this one confirmed example.",
+    "Other body aliases/global string indices unknown; old spline and manual references remain diagnostic only."
+  ],
+  "sources": {
+    "photo2/profile-questions-r203.json": "d00c51181217a2e268b3e980def2b9ce96d582ce40ae0fb43af2b44829e0620b",
+    "photo2/profile-answers-r204-r205.json": "e5af818507b9381da6877dae6f4723506c18a861d7a5cb1bd78463d05fc12b08",
+    "photo2/review/r203/report.json": "aecd581f7b6ec33259a9c9265a47bf67f0434f311096901720fed0375cc3594b",
+    "photo2/review/r203/right.png": "283162acdbe6e47b6eee02e50c345d81c9fbb7868eada972232148362f533e41",
+    "photo2/record_profile_answers.py": "450439f06655496bc19263caf97a5a71644b3f3579e80fe2387c209eb220a8b4"
+  }
+}

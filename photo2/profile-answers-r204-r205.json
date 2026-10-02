@@ -1,0 +1,82 @@
+{
+  "requests": [
+    "R204",
+    "R205"
+  ],
+  "question_manifest": "photo2/profile-questions-r203.json",
+  "question_manifest_sha256": "d00c51181217a2e268b3e980def2b9ce96d582ce40ae0fb43af2b44829e0620b",
+  "report": "photo2/review/r203/report.json",
+  "report_sha256": "aecd581f7b6ec33259a9c9265a47bf67f0434f311096901720fed0375cc3594b",
+  "supporting_image": "photo2/review/r203/right.png",
+  "supporting_image_sha256": "283162acdbe6e47b6eee02e50c345d81c9fbb7868eada972232148362f533e41",
+  "answers": {
+    "Q203.1": {
+      "request": "R204",
+      "answer": "Two different yellow beads",
+      "points": [
+        {
+          "label": "S",
+          "distance_pixels": 0,
+          "xy": [
+            2257.2405641304554,
+            1447.3213448516622
+          ],
+          "rgb": [
+            0.8984287205057807,
+            0.48952144891419974,
+            0.0
+          ],
+          "hsv": [
+            0.09081066342852034,
+            1.0,
+            0.8984287205057807
+          ]
+        },
+        {
+          "label": "Q",
+          "distance_pixels": 20,
+          "xy": [
+            2260.898197249895,
+            1466.9840044831212
+          ],
+          "rgb": [
+            0.9400479045261626,
+            0.7487671150428294,
+            0.21889497908039668
+          ],
+          "hsv": [
+            0.12245949443499406,
+            0.7671448678025274,
+            0.9400479045261626
+          ]
+        }
+      ],
+      "limits": "Distinct yellow point/body identities only; no exact seam location, centers, safe region extent, adjacency or indices supplied"
+    },
+    "Q203.2": {
+      "request": "R205",
+      "answer": "Yes",
+      "points": [
+        {
+          "label": "R",
+          "distance_pixels": 109,
+          "xy": [
+            2275.3877797466316,
+            1554.79191883426
+          ],
+          "rgb": [
+            0.7871959256744923,
+            0.7244508276352766,
+            0.7754312197921394
+          ],
+          "hsv": [
+            0.8645833333333333,
+            0.07970709196119616,
+            0.7871959256744923
+          ]
+        }
+      ],
+      "limits": "Displayed R is a reflection on a black bead; no exact peak/centroid or center/outward anchor measured. Inactive in colored-only basis."
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "request": "R201/R202",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/distributed_colored_interiors.py": "9cb3314030755c83b2c89f266947abb00786c586ff4889c7f32ec53c06b4d13a",
+    "photo2/colored_bead_centers.py": "a34de3c099d3f81d8592e58a4a524aeceab361ed6791e8e35c5b456540748701",
+    "photo2/review_distributed_interiors.py": "9d6c57c6b529bbec63941f61df632fa8c6c187d44fc2e64eaeab806b9d788e34",
+    "photo2/bead_evidence_inventory.py": "0bfea9cc305043264a961d91c1c461e2c4db393f1642cbe00e08958ed47d02c9",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/review/r200/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/test_colored_positions.py": "bf0e04c171e96a2180f85e3bc7c4d77f6ec32b061886c391322d1557824510f2"
+  },
+  "protected_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "selected": 208,
+  "supported": 403,
+  "selected_per_bin": [
+    12,
+    11,
+    10,
+    9,
+    13,
+    11,
+    10,
+    12,
+    9,
+    11,
+    12,
+    9,
+    11,
+    11,
+    8,
+    9,
+    8,
+    9,
+    12,
+    11
+  ],
+  "calibration": [
+    {
+      "fixture": "hand+1-palette0-shift0",
+      "selected": 27,
+      "single_body": 27,
+      "mixed_or_background": [],
+      "on_black": [],
+      "duplicate_bodies": {},
+      "minimum_true_pixel_margin": 4.0,
+      "patch_to_visible_centroid_offset_quantiles": [
+        3.640688603428565,
+        7.9855874152795865,
+        15.85649330251233
+      ],
+      "limitation": "Known synthetic ownership only; interior centroids are not visible centers. No photo identity certification."
+    },
+    {
+      "fixture": "hand-1-palette0-shift0",
+      "selected": 25,
+      "single_body": 25,
+      "mixed_or_background": [],
+      "on_black": [],
+      "duplicate_bodies": {},
+      "minimum_true_pixel_margin": 5.0,
+      "patch_to_visible_centroid_offset_quantiles": [
+        3.8343929761189677,
+        10.522455956401412,
+        12.23465247445572
+      ],
+      "limitation": "Known synthetic ownership only; interior centroids are not visible centers. No photo identity certification."
+    },
+    {
+      "fixture": "hand+1-palette1-shift2",
+      "selected": 20,
+      "single_body": 20,
+      "mixed_or_background": [],
+      "on_black": [],
+      "duplicate_bodies": {},
+      "minimum_true_pixel_margin": 2.8284271247461903,
+      "patch_to_visible_centroid_offset_quantiles": [
+        3.3618554877749816,
+        11.263184901319178,
+        15.32354337719465
+      ],
+      "limitation": "Known synthetic ownership only; interior centroids are not visible centers. No photo identity certification."
+    }
+  ],
+  "curated_sha256": {
+    "calibration.json": "77358bed2698ef7bd81f6f4f9c9a11882006da39911671d2110cd8090acd3c33",
+    "center-attempt.json": "4ea36be62649fbe8b603fd38acfa5da7dac7d280ec577eb47d642afafc2e69aa",
+    "interiors-01.png": "a6523a76e7a45f35786236e3d78dfbce7a89f2276178362c88348bbed8839713",
+    "interiors-02.png": "c2155d2db4d33ac57c16fa95145fb747103f8a8cc9f766aef528b0c72c806d20",
+    "interiors-03.png": "511441f24005dbd1d949074b91bc5395db50e0875aacc1b5c61490f68e852dee",
+    "interiors-04.png": "ae68098ed5eb21170ec6a3fbd454151f0212fba8e4e23e0b81c566ff4337de81",
+    "interiors-05.png": "64c37a531a0f09693b922c4e5349982ffacfca46ee54709e8c78db9ee14b62d4",
+    "interiors-06.png": "2e0927c0db99fbe18fec101e61a5c0ada6f68032838961304c55f8fb2fc640db",
+    "interiors-07.png": "d470fe29d8281ca74a7a6a98b1ca7cf98807ba3226108cef336606fb047eb935",
+    "interiors-08.png": "5059fe78f1392becb5402755fb273444820480af97678ab77b87979804f9da7e",
+    "interiors-09.png": "d946e8d2050335884b3bf917338f378c0067ef81de4741c83513f5a608da5704",
+    "interiors-10.png": "948eb9388cf39639debbb1ac2d3c737fb2de50cb4124c86370245c9fea375d19",
+    "interiors-11.png": "9762b9844c91d5fd84b0882811ea8bcb0d5e07b55cda9650799efc4dfe46b775",
+    "interiors.json": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+    "maker-reference-check.json": "55cf0de9560f962cebc84407ba88a67756942032b863b796686634af327eb9be",
+    "pages.json": "4b82a284fc625cb928b6775486adc05237ccd3a43222858fab4879a3c896545f",
+    "whole-photo.png": "e831887818f34e7a7de5524244ff7fed5af639d8bffd7c4cfcaebc6a06989690"
+  },
+  "new_trusted_maker_facts": false,
+  "fit_performed": false,
+  "black_beads_included": false,
+  "reproduction": ".venv/bin/python photo2/review_distributed_interiors.py"
+}

@@ -1,0 +1,101 @@
+{
+  "records": 863,
+  "stable": 38,
+  "bins": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    4,
+    0,
+    2,
+    5,
+    3,
+    6,
+    1,
+    4,
+    2,
+    0,
+    0,
+    1,
+    2,
+    4,
+    2
+  ],
+  "reasons": {
+    "colored area outside substantial single-body range": 393,
+    "thin or oversized colored region": 439,
+    "narrow: region identity unstable under perturbation": 192,
+    "broad: appearance perturbation changes center/area too much": 176,
+    "broad: alternative fails support-quality checks": 602,
+    "narrow: alternative fails support-quality checks": 501,
+    "broad: region identity unstable under perturbation": 168,
+    "centroid not safely inside its colored support": 98,
+    "full-support and interior centroids disagree": 159,
+    "narrow: appearance perturbation changes center/area too much": 134,
+    "near approximate search-band edge": 278
+  },
+  "parameters": {
+    "detector": {
+      "analysis_size": [
+        1277,
+        1600
+      ],
+      "scale_xy": [
+        0.502755905511811,
+        0.502828409805154
+      ],
+      "background_chromaticity": [
+        0.41883766651153564,
+        0.20576922595500946
+      ],
+      "background_mad": [
+        0.006991998758167028,
+        0.011370813474059105
+      ],
+      "background_value": 0.843137264251709,
+      "foreground_threshold": 20.025123596191406,
+      "border_fraction": 0.025,
+      "band_smoothing_sigma": 3.076923076923077,
+      "other_component_area": 0,
+      "apparent_internal_width": 8.495227600363814,
+      "apparent_diameter": 13.671342289621748,
+      "strip_halfwidth": 24.413111231467404,
+      "hue_modes_degrees": [
+        27,
+        353
+      ],
+      "saturation_floor": 0.5740740895271301,
+      "reflection_response_floor": 0.02981969714164734,
+      "reflection_suppression": "two-pixel peak extraction, then bead-scale suppression only among accepted dark-surround seeds",
+      "role": "Image-derived approximate strip/interiors; not a verified boundary, centerline, outward anchor or automatic completeness guarantee"
+    },
+    "native_diameter": 27.190842341872596,
+    "appearance_variants": [
+      {
+        "name": "reference",
+        "hue_width": 24,
+        "saturation_factor": 0.7,
+        "value_factor": 0.45
+      },
+      {
+        "name": "narrow",
+        "hue_width": 20,
+        "saturation_factor": 0.8,
+        "value_factor": 0.52
+      },
+      {
+        "name": "broad",
+        "hue_width": 28,
+        "saturation_factor": 0.6,
+        "value_factor": 0.38
+      }
+    ],
+    "bins": 20,
+    "target": 300,
+    "centroid_sensitivity_limit_diameters": 0.08,
+    "edge_guard_diameters": 0.7
+  },
+  "role": "Unadopted strict centroid attempt; touching regions/threshold sensitivity prevent a distributed few-hundred set"
+}

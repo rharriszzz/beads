@@ -11,7 +11,39 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R200: saved colored centers audited; correspondence next
+## Current R201–R205: distributed colored interiors and answered 1D practice
+
+Maker requests a few hundred uniformly distributed reliable centers, no black
+beads, then accepts safe interiors and proposes H/S/V sampling along the spline
+as practice. This supersedes moving straight to a fit from the41 marks.
+[Exact scope](photo2/distributed-position-scope-r201-r203.json),
+[distributed set/raw review](photo2/DISTRIBUTED_COLORED_POSITIONS.md),
+[practice/questions](photo2/CENTERLINE_PROFILE_PRACTICE.md).
+
+208 screened interior references:115 red/93 yellow, 8–13 per20 image-derived
+arc sections, maximum gap1.22%. Small-patch centroids, not exact visible centers.
+Input-only extraction/selection has no maker positions, old spline or simulated
+locations. Original hypotheses/IDs/exclusions retained, no alias merging. Bright
+subset preference and1.25D sparse spacing reduce weak fragments/duplicates;
+72 selected patches on three existing known fixtures all on distinct colored
+bodies, no mixed/background/black/duplicate selections. Bounded precision check,
+not certified photo uniqueness or complete coverage. Prior adverse stages saved.
+
+R203 practice explicitly assisted: unchanged old spline, three nearby paths,
+9236 one-pixel samples each; raw crops/RGB strip/H/S/V at top/right/inward bend.
+R204 confirms S/Q two different yellow bodies; R205 confirms R black reflection.
+[Exact answers](photo2/profile-answers-r204-r205.json) and unchanged pictured
+points bind the facts; no exact seam, centers or adjacency promoted. S/Q20px
+trace:15.6% V dip and11.4° endpoint hue change. Black remains inactive. No
+questions pending. Seven control tests, repeat artifacts and source/native/spacing/hash checks; live
+centers/annotations/scores and original geometry untouched. No fit/new render/GUI.
+
+**Next bounded task:** transfer supported1D yellow/glint
+cues to neighboring paths/distributed patches before
+correspondence refinement. Preserve interior/visible-center/outward semantics.
+gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R200: saved colored centers audited; correspondence next
 
 [Raw crops and whole-photo review](photo2/SAVED_CENTER_AUDIT.md),
 [assisted position basis](photo2/review/r200/position-basis.json).

@@ -1,0 +1,104 @@
+{
+  "role": "Historical diagnostics from this bounded step; source scenes/IDs unchanged; no truth is an extraction input",
+  "stages": [
+    {
+      "name": "strict visible-centroid attempt",
+      "photo_regions": 863,
+      "photo_stable_centers": 38,
+      "adopted": false,
+      "source": "photo2/review/r201/center-attempt.json"
+    },
+    {
+      "name": "initial interiors",
+      "brightness_quantile": 0,
+      "spacing_factor": 0,
+      "photo_supported": 505,
+      "photo_selected": 300,
+      "fixture_selected": [
+        57,
+        59,
+        55
+      ],
+      "fixture_single_body": [
+        56,
+        59,
+        54
+      ],
+      "fixture_mixed_or_background": [
+        [
+          5
+        ],
+        [],
+        [
+          4
+        ]
+      ],
+      "fixture_duplicate_excess": [
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "name": "brightness preference only",
+      "brightness_quantile": 0.2,
+      "spacing_factor": 0,
+      "photo_supported": 403,
+      "photo_selected": 300,
+      "fixture_selected": [
+        47,
+        48,
+        45
+      ],
+      "fixture_single_body": [
+        46,
+        48,
+        45
+      ],
+      "fixture_mixed_or_background": [
+        [
+          5
+        ],
+        [],
+        []
+      ],
+      "fixture_duplicate_excess": [
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "brightness and sparse spacing",
+      "brightness_quantile": 0.2,
+      "spacing_factor": 1.25,
+      "photo_supported": 403,
+      "photo_selected": 208,
+      "fixture_selected": [
+        27,
+        25,
+        20
+      ],
+      "fixture_single_body": [
+        27,
+        25,
+        20
+      ],
+      "fixture_mixed_or_background": [
+        [],
+        [],
+        []
+      ],
+      "fixture_duplicate_excess": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "reproductions": [
+    ".venv/bin/python photo2/review_distributed_interiors.py --brightness-quantile 0 --spacing-factor 0 --output photo2/output/r201/initial",
+    ".venv/bin/python photo2/review_distributed_interiors.py --brightness-quantile 0.2 --spacing-factor 0 --output photo2/output/r201/brightness-only",
+    ".venv/bin/python photo2/review_distributed_interiors.py"
+  ]
+}
