@@ -1,0 +1,148 @@
+{
+  "request": "R196",
+  "sources": {
+    "photo2/recover_local_reflections.py": "352a2deca00a70d81efe06e033a4e5892a9eb710292c6308c185bd5886c4300c",
+    "photo2/review/r192/candidates.json": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d",
+    "photo2/review/r193/trusted-facts.json": "492b56650e913fbec6da7e9e7c64f589099a5aad5172ecd0ba85d7d30c97913f",
+    "photo2/D-interior-answers-r197-r198.json": "013d8a4a6b97621ef0eee50d82213418d01529e82053e55b30de7fdb8313a2a3",
+    "photo2/position-basis-scope-r199.json": "c5253d3e3781c18cd18248200c037f811a812d9881325ba625d6afb8457913e0",
+    "photo2/ownership-answers-r194-r195.json": "5728de9da8ca644276130a8e9471ae8abba1535ab0cd823fe0487cd960fdca90",
+    "photo2/bead_evidence_inventory.py": "0bfea9cc305043264a961d91c1c461e2c4db393f1642cbe00e08958ed47d02c9",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/test_local_reflections.py": "2160f650d281ad8b3aeeba3dec989c6367e96a15e5109a2635405b1d3f90b91d",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb"
+  },
+  "preserved_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "curated_sha256": {
+    "native-peak-context.png": "ec7c6c504439862e32a378fa63d7c67cc33f5a85a40902d429959738eea5c01f",
+    "active-position-basis.json": "c5cf0e1f7f3d255d8a0eaf0fc14c3671fffbb8ec397e8fb3bc59c7026bfd8d08",
+    "D-reflection-question.png": "71a19489267393fd8c76efd7b9baca85c26cda843d0c58f699d08c33d8e177cb",
+    "trusted-facts.json": "2094fab7164a91fe941febf1f48812033b41eb66edf063896cecc0a7caece47a",
+    "report.json": "cec89738059c74fc63b837d6b298e4c41259cf021ead269e0b16aec5a107956e"
+  },
+  "selected_points": [
+    {
+      "label": "P1",
+      "xy": [
+        242.46343593101943,
+        1275.8402095612312
+      ],
+      "hypothesis_id": "aa9e0b38-2168-55db-9694-84feb650e8eb",
+      "response": 0.037792409239060784,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.04012620374591812
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.037792409239060784
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.03329906734645631
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.02548651948948165
+        }
+      ],
+      "coarse": {
+        "analysis_xy": [
+          121.41830708661418,
+          640.8576367064738
+        ],
+        "response": -0.02736993134021759,
+        "response_floor": 0.02981969714164734,
+        "in_search_band": true,
+        "nearest_extracted_peak_pixels": 10.465785755350307,
+        "nearby_rejections": []
+      }
+    },
+    {
+      "label": "P2",
+      "xy": [
+        236.13066666666668,
+        1256.31264
+      ],
+      "hypothesis_id": "a426fcfe-bc92-5b3f-9094-7ee85faf4cb4",
+      "response": 0.03664784973523469,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            237,
+            1257
+          ],
+          "response": 0.04172413075687509
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            237,
+            1257
+          ],
+          "response": 0.03664784973523469
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            237,
+            1257
+          ],
+          "response": 0.027077982675575096
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            237,
+            1258
+          ],
+          "response": 0.015576306155895031
+        }
+      ],
+      "coarse": {
+        "analysis_xy": [
+          118.90452755905513,
+          631.8067253299811
+        ],
+        "response": -0.08656997978687286,
+        "response_floor": 0.02981969714164734,
+        "in_search_band": true,
+        "nearest_extracted_peak_pixels": 12.595769830762805,
+        "nearby_rejections": []
+      }
+    }
+  ],
+  "trusted_update": "Exact assisted patch confirmed R198; P1/P2 excluded as D specular reflections R197",
+  "trusted_region_records": 12,
+  "trusted_black_locator_records": 6,
+  "fit_performed": false
+}

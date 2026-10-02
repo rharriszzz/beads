@@ -49,6 +49,23 @@ R195 confirms dark D belongs to a black bead distinct from R777; keep its own
 reflection/positive region and aliases to other observations unresolved. Point/
 identity confirmation does not automatically approve new loop pixels.
 
+**R196 local weak-reflection diagnostic:** [Raw D context, scale comparison and review](photo2/D_REFLECTION_REVIEW.md).
+Use an explicitly assisted window, preserve all local contrast maxima and
+compare native original-equivalent/narrow-only/broad-only/both kernels before
+attributing a miss to resolution or suppression. Record raw ring contrast,
+connected support, weighted bright-feature location and threshold alternatives;
+retain filtered maxima with nonpositive raw contrast as unresolved. If automatic
+dark inset fails, an illustrated tiny geometric sampling proposal remains a
+separate unreviewed object. Contrast persistence or dark context does not prove
+body ownership/specularity. No global automatic filter adopted from this crop.
+R197 rejects both spots as D reflections; R198 confirms only the tiny D interior.
+R199 retains that fact but excludes D from active positional fitting: target a
+sufficient distributed reliable subset, black bodies with obvious reflections,
+then predicted correspondence with small centerline adjustments. Global complete
+inventory is not a prerequisite. Audit saved visible-center marks before using
+them under this updated scope; interior/reflection points are not exact outward
+anchors, and assisted coordinates are not automatic detector priors.
+
 **R187 centerline replacement:** [Producer audit and colored side/diagonal evidence](photo2/CENTERLINE_BEAD_REVIEW.md)
 supersede trusting the old boundary-midpoint spline. Select conservative colored
 interiors from learned circular hue/S/V; derive provisional local envelope sides

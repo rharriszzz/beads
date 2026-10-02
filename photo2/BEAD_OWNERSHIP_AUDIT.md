@@ -131,3 +131,6 @@ image-derived region separation and evidence-based eligibility before promoting
 more bodies. Keep unknown aliases, missing bodies and uncertain
 reflections explicit. Fitting and the saved zero-net-stretch allowance remain
 deferred. Recommend **gpt-6.1-sol / High**, same session; no `/new`.
+
+**R196 continuation:** [D's local weak-feature and tiny sampling review](D_REFLECTION_REVIEW.md)
+examines its unresolved reflection/patch without changing this trusted ledger.

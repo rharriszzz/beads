@@ -1,5 +1,11 @@
 # Build the trusted image evidence first — R192
 
+**Current R199 scope:** sufficient reliable positions for matching and small
+centerline refinement, rather than a complete inventory. Black bodies need an
+obvious reflection to enter the active position basis. See the
+[current review and scope](D_REFLECTION_REVIEW.md). The R192 requirements below
+are historical where this newer instruction supersedes them.
+
 The maker redirects the work: establish positive interiors of every
 distinguishable central red/yellow bead and identify black bodies with their
 reflection positions **before fitting simulated positions**. Ambiguous edge

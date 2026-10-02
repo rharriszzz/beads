@@ -1,0 +1,23 @@
+{
+  "request": "R199",
+  "statement": "I think that black beads without obvious specular reflections are too hard to do reliably at this phase.  In this phase we want to reliably establish the bositions of enouth beads that we can begin to match up the predicted positions, while creating small adjustments to the overall path of the centerline that might be necessary to get good positional matches.",
+  "target": "Reliable sufficient subset with useful coverage, not complete inventory",
+  "black_active_requirement": "obvious specular reflection",
+  "D": {
+    "keep_confirmed_interior": true,
+    "active_position_basis": false,
+    "reason": "No obvious established specular reflection at this phase"
+  },
+  "matching": {
+    "allowed_after": "sufficient reliable positioned evidence",
+    "requires_every_visible_bead": false,
+    "small_centerline_adjustments_allowed": true
+  },
+  "minor_outward_anchor_interest_preserved": true,
+  "stretch": {
+    "source": "photo2/foundation-request-r192.json",
+    "small_local_zero_total_arclength_suggestion_preserved": true,
+    "implemented": false
+  },
+  "current_fit_performed": false
+}

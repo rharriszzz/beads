@@ -1,0 +1,157 @@
+{
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "report_source": "photo2/review/r196/report.json",
+  "report_sha256": "cec89738059c74fc63b837d6b298e4c41259cf021ead269e0b16aec5a107956e",
+  "supporting_image": "photo2/review/r196/D-reflection-question.png",
+  "supporting_image_sha256": "71a19489267393fd8c76efd7b9baca85c26cda843d0c58f699d08c33d8e177cb",
+  "target_observation_id": "b6b50871-6fbd-57c2-9ae1-995fd0f32a03",
+  "answers": {
+    "Q196.1": {
+      "request": "R197",
+      "answer": "Neither",
+      "points": [
+        {
+          "label": "P1",
+          "hypothesis_id": "aa9e0b38-2168-55db-9694-84feb650e8eb",
+          "xy": [
+            242.46343593101943,
+            1275.8402095612312
+          ]
+        },
+        {
+          "label": "P2",
+          "hypothesis_id": "a426fcfe-bc92-5b3f-9094-7ee85faf4cb4",
+          "xy": [
+            236.13066666666668,
+            1256.31264
+          ]
+        }
+      ],
+      "meaning": "Neither displayed P1 nor P2 is a specular reflection on D\u2019s bead; their other body/appearance interpretations remain unknown"
+    },
+    "Q196.2": {
+      "request": "R198",
+      "answer": "Yes",
+      "region": {
+        "pixel_runs": [
+          [
+            1270,
+            241,
+            241
+          ],
+          [
+            1271,
+            240,
+            242
+          ],
+          [
+            1272,
+            239,
+            243
+          ],
+          [
+            1273,
+            240,
+            242
+          ],
+          [
+            1274,
+            241,
+            241
+          ]
+        ],
+        "pixels": 13,
+        "loop_xy": [
+          [
+            241.0,
+            1274.5
+          ],
+          [
+            240.5,
+            1274.0
+          ],
+          [
+            240.0,
+            1273.5
+          ],
+          [
+            239.5,
+            1273.0
+          ],
+          [
+            239.0,
+            1272.5
+          ],
+          [
+            238.5,
+            1272.0
+          ],
+          [
+            239.0,
+            1271.5
+          ],
+          [
+            239.5,
+            1271.0
+          ],
+          [
+            240.0,
+            1270.5
+          ],
+          [
+            240.5,
+            1270.0
+          ],
+          [
+            241.0,
+            1269.5
+          ],
+          [
+            241.5,
+            1270.0
+          ],
+          [
+            242.0,
+            1270.5
+          ],
+          [
+            242.5,
+            1271.0
+          ],
+          [
+            243.0,
+            1271.5
+          ],
+          [
+            243.5,
+            1272.0
+          ],
+          [
+            243.0,
+            1272.5
+          ],
+          [
+            242.5,
+            1273.0
+          ],
+          [
+            242.0,
+            1273.5
+          ],
+          [
+            241.5,
+            1274.0
+          ],
+          [
+            241.0,
+            1274.5
+          ]
+        ],
+        "minimum_support_margin": 5.0990195135927845,
+        "margin_role": "Geometric guard only; no measured margin to bead boundary or rejected appearance"
+      },
+      "meaning": "Displayed tiny green loop/pixels at D safely inside its black bead away from interbead seams/background; not a boundary/center or measured numeric margin"
+    }
+  },
+  "role": "Maker review of exact plotted hypotheses/sampling patch; curator-only, not detector runtime input"
+}

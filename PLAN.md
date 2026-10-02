@@ -11,7 +11,61 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R193–R195: confirmed subsets and ownership/coverage diagnosis
+## Current R196–R199: D review finished; reliable subset for matching
+
+R197 answers “Neither”: P1/P2 are not D specular reflections. R198 answers
+“Yes”: tiny D loop/13 pixels safely inside black body. Updated ledger12 regions,
+six black locators; original ledgers frozen. R199 changes the phase target:
+enough reliable beads around the bracelet for predicted-position matching and
+small centerline adjustments, not every visible bead. Exclude black bodies
+without obvious reflections from the active position basis. Preserve D's facts
+but make it inactive. [Exact scope](photo2/position-basis-scope-r199.json),
+[active evidence](photo2/review/r196/active-position-basis.json):11 region records,
+six black locators, two colored point identities; aliases/evidence types prevent
+treating record counts as independent beads or exact outward positions.
+
+Four tests pass including precise maker-region promotion and negative reflection
+scope. Questions answered, none pending. No global filter change or actual
+reflection recovery claimed; no fit/live saves/geometry change. Stop bounded D
+diagnostic. **Next bounded task:** audit existing41 saved visible-center marks
+under reliable color/obvious-reflection scope, assess all-around distribution,
+then choose initial correspondence and limited centerline refinement. Complete
+global inventory is not a gate. gpt-6.1-sol / High, same session; no `/new`.
+
+## R196 diagnostic before maker answers
+
+Standalone continue resumes D's reflection/positive-patch/alias diagnosis only.
+[Raw context and illustrated questions](photo2/D_REFLECTION_REVIEW.md),
+[exact local data/failures](photo2/review/r196/report.json). Four methods
+compared: native V peaks, multiscale contrast, bright/dark context, frozen
+observation associations. Assisted maker-point window, not automatic runtime.
+Sixteen local maxima retained; P1/P2 near D persist at four narrow scales.
+Original coarse responses negative(-0.02737/-0.08657) below learned0.02982
+floor. Native equivalent original kernels also negative; broad-kernel reduction
+restores positive local response. This differs from R169 suppression failure;
+resolution alone is not the cause. No global filter/threshold change adopted.
+
+Automatic dark inset fails12-pixel minimum; preserve failure. Separate 2px
+radius/13-pixel geometric sampling disk at confirmed D is unreviewed, with no
+certified body/seam margin. P1/P2 remain bright-feature hypotheses; color,
+noise/JPEG and wrong-body explanations remain. Eleven nearby frozen seed
+observations retain statuses, no alias resolved except confirmed R777 distinction.
+Trusted ledger remains11 regions/6 black locators; no new body counts or indices.
+
+Q196.1 asks which P1/P2 are specular reflections on D's bead; Q196.2 checks
+the tiny green D loop inside its body away from seams/background. Both pending.
+Three feature tests pass including weak/strong-neighbor localization/native
+coordinates, flat-image refusal, and filtered peak without raw contrast kept
+unresolved. Earlier source/curated/live hashes preserved. No detector/spline/
+geometry/count/camera/phase/stretch/fit/live-save/GUI/server/new-render changes.
+
+**Stopping point:** assisted feature/region review and documented failure cause.
+**Next bounded task:** incorporate these two answers, keeping non-specular,
+wrong-body and unclear alternatives, before testing an input-only filter change
+on broader known examples. Foundation first; fitting deferred. gpt-6.1-sol /
+High, same session; no `/new`.
+
+## Prior R193–R195: confirmed subsets and ownership/coverage diagnosis
 
 Maker answers Q192.1 and Q192.2 yes, then asks to continue. Preserve exact
 reply/images/candidate hashes and promote only the six pictured regions,

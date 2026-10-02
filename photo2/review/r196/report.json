@@ -1,0 +1,2358 @@
+{
+  "request": "R196",
+  "role": "Assisted local diagnosis only; no automatic-runtime change",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "target": {
+    "observation_id": "b6b50871-6fbd-57c2-9ae1-995fd0f32a03",
+    "xy": [
+      241,
+      1272
+    ],
+    "appearance": "black",
+    "confirmation": "R195 / Q193.2: D inside a different black bead from R777",
+    "region_status": "not established",
+    "reflection_status": "unresolved",
+    "other_existing_body_aliases": "unresolved beyond the confirmed distinction from R777",
+    "limits": "Visible body retained in coverage; do not use R777 reflection or invent pixels/string index"
+  },
+  "crop": [
+    173,
+    1204,
+    309,
+    1340
+  ],
+  "native_diameter": 27.190842412550417,
+  "parameters": {
+    "narrow_sigmas": [
+      0.6,
+      0.8,
+      1.2,
+      1.8
+    ],
+    "broad_sigma": 5.438168482510084,
+    "response_floor": 0.003,
+    "peak_spacing": 3,
+    "search_radius_diameters": 1.2,
+    "alternative_support_fractions": [
+      0.5,
+      0.7
+    ]
+  },
+  "peaks": [
+    {
+      "peak_xy": [
+        242,
+        1275
+      ],
+      "xy": [
+        242.46343593101943,
+        1275.8402095612312
+      ],
+      "response": 0.037792409239060784,
+      "peak_value": 0.14901960784313725,
+      "surround_value": 0.09019607843137255,
+      "positive_peak_surround_contrast": 0.058823529411764705,
+      "peak_saturation": 0.5526315789473685,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1272,
+          241,
+          242
+        ],
+        [
+          1273,
+          241,
+          243
+        ],
+        [
+          1274,
+          241,
+          244
+        ],
+        [
+          1275,
+          241,
+          245
+        ],
+        [
+          1276,
+          240,
+          245
+        ],
+        [
+          1277,
+          241,
+          244
+        ],
+        [
+          1278,
+          241,
+          244
+        ],
+        [
+          1279,
+          242,
+          242
+        ]
+      ],
+      "pixels": 29,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.04012620374591812
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.037792409239060784
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.03329906734645631
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            242,
+            1275
+          ],
+          "response": 0.02548651948948165
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          242.4644298152474,
+          1275.8445529836483
+        ],
+        [
+          242.44619010212097,
+          1276.1861743912018
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.34639440265541144,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 0.5862068965517241,
+      "distance_from_D_pixels": 4.1096051146515356,
+      "nearby_observations": [
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 21.86546490639998
+        },
+        {
+          "observation_number": 772,
+          "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 29.643492536750845
+        },
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 32.31719407766593
+        }
+      ],
+      "hypothesis_id": "aa9e0b38-2168-55db-9694-84feb650e8eb",
+      "question_label": "P1",
+      "coarse_diagnostic": {
+        "analysis_xy": [
+          121.41830708661418,
+          640.8576367064738
+        ],
+        "response": -0.02736993134021759,
+        "response_floor": 0.02981969714164734,
+        "in_search_band": true,
+        "nearest_extracted_peak_pixels": 10.465785755350307,
+        "nearby_rejections": []
+      },
+      "kernel_comparison": {
+        "native_equivalent_original": {
+          "narrow_sigma": 2.175267393004033,
+          "broad_sigma": 10.876336965020167,
+          "response": -0.024840675763170228
+        },
+        "native_narrow_only": {
+          "narrow_sigma": 0.8,
+          "broad_sigma": 10.876336965020167,
+          "response": -0.007437677639536011
+        },
+        "native_broad_only": {
+          "narrow_sigma": 2.175267393004033,
+          "broad_sigma": 5.438168482510084,
+          "response": 0.020389411115426567
+        },
+        "native_both": {
+          "narrow_sigma": 0.8,
+          "broad_sigma": 5.438168482510084,
+          "response": 0.037792409239060784
+        }
+      }
+    },
+    {
+      "peak_xy": [
+        237,
+        1257
+      ],
+      "xy": [
+        236.13066666666668,
+        1256.31264
+      ],
+      "response": 0.03664784973523469,
+      "peak_value": 0.18823529411764706,
+      "surround_value": 0.08627450980392157,
+      "positive_peak_surround_contrast": 0.10196078431372549,
+      "peak_saturation": 0.6041666666666666,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1255,
+          234,
+          238
+        ],
+        [
+          1256,
+          234,
+          238
+        ],
+        [
+          1257,
+          234,
+          238
+        ],
+        [
+          1258,
+          236,
+          238
+        ],
+        [
+          1259,
+          237,
+          237
+        ]
+      ],
+      "pixels": 19,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            237,
+            1257
+          ],
+          "response": 0.04172413075687509
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            237,
+            1257
+          ],
+          "response": 0.03664784973523469
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            237,
+            1257
+          ],
+          "response": 0.027077982675575096
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            237,
+            1258
+          ],
+          "response": 0.015576306155895031
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          236.1015462126477,
+          1256.4964384989576
+        ],
+        [
+          236.04422967595224,
+          1256.164525298465
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.18609107732851404,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 0.8947368421052632,
+      "distance_from_D_pixels": 16.425701533898263,
+      "nearby_observations": [
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 19.21421073573916
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 29.025062105101203
+        },
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 32.38355955068629
+        }
+      ],
+      "hypothesis_id": "a426fcfe-bc92-5b3f-9094-7ee85faf4cb4",
+      "question_label": "P2",
+      "coarse_diagnostic": {
+        "analysis_xy": [
+          118.90452755905513,
+          631.8067253299811
+        ],
+        "response": -0.08656997978687286,
+        "response_floor": 0.02981969714164734,
+        "in_search_band": true,
+        "nearest_extracted_peak_pixels": 12.595769830762805,
+        "nearby_rejections": []
+      },
+      "kernel_comparison": {
+        "native_equivalent_original": {
+          "narrow_sigma": 2.175267393004033,
+          "broad_sigma": 10.876336965020167,
+          "response": -0.08922196576131813
+        },
+        "native_narrow_only": {
+          "narrow_sigma": 0.8,
+          "broad_sigma": 10.876336965020167,
+          "response": -0.05680952538250414
+        },
+        "native_broad_only": {
+          "narrow_sigma": 2.175267393004033,
+          "broad_sigma": 5.438168482510084,
+          "response": 0.004235409356420694
+        },
+        "native_both": {
+          "narrow_sigma": 0.8,
+          "broad_sigma": 5.438168482510084,
+          "response": 0.03664784973523469
+        }
+      }
+    },
+    {
+      "peak_xy": [
+        257,
+        1266
+      ],
+      "xy": [
+        258.540390590324,
+        1265.4536173990234
+      ],
+      "response": 0.02974662755457208,
+      "peak_value": 0.23529411764705882,
+      "surround_value": 0.20588235294117646,
+      "positive_peak_surround_contrast": 0.02941176470588236,
+      "peak_saturation": 0.7,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1262,
+          257,
+          257
+        ],
+        [
+          1263,
+          257,
+          259
+        ],
+        [
+          1264,
+          257,
+          260
+        ],
+        [
+          1265,
+          256,
+          260
+        ],
+        [
+          1266,
+          256,
+          261
+        ],
+        [
+          1267,
+          258,
+          260
+        ],
+        [
+          1268,
+          258,
+          260
+        ],
+        [
+          1269,
+          259,
+          259
+        ]
+      ],
+      "pixels": 26,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            257,
+            1266
+          ],
+          "response": 0.03263919550511435
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            257,
+            1266
+          ],
+          "response": 0.02974662755457208
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            257,
+            1265
+          ],
+          "response": 0.024635074751823638
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            257,
+            1265
+          ],
+          "response": 0.017960460209865414
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          258.540390590324,
+          1265.4536173990234
+        ],
+        [
+          258.764953886693,
+          1265.6524374176547
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.2999301150012117,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 18.722190769765607,
+      "nearby_observations": [
+        {
+          "observation_number": 772,
+          "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 39.31960941666161
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 40.47247509900635
+        },
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 40.7343724366333
+        }
+      ],
+      "hypothesis_id": "e48e0836-655c-5c70-83dc-ddb3865fc2f5"
+    },
+    {
+      "peak_xy": [
+        258,
+        1261
+      ],
+      "xy": [
+        258.44029850746267,
+        1260.05223880597
+      ],
+      "response": 0.02787732628991632,
+      "peak_value": 0.25098039215686274,
+      "surround_value": 0.23137254901960785,
+      "positive_peak_surround_contrast": 0.019607843137254888,
+      "peak_saturation": 0.75,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1258,
+          258,
+          258
+        ],
+        [
+          1259,
+          258,
+          259
+        ],
+        [
+          1260,
+          258,
+          259
+        ],
+        [
+          1261,
+          258,
+          259
+        ]
+      ],
+      "pixels": 7,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            258,
+            1261
+          ],
+          "response": 0.030571551890657023
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            258,
+            1261
+          ],
+          "response": 0.02787732628991632
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            258,
+            1261
+          ],
+          "response": 0.02270021771630973
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            257,
+            1260
+          ],
+          "response": 0.017681677683260566
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          258.44029850746267,
+          1260.05223880597
+        ],
+        [
+          258.4310344827586,
+          1260.2931034482758
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.24104273079016852,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 21.140317158902125,
+      "nearby_observations": [
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 35.51928393310968
+        },
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 41.714892602296864
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 42.7829926934736
+        }
+      ],
+      "hypothesis_id": "41af280b-3ac1-5392-80b9-224db5964db6"
+    },
+    {
+      "peak_xy": [
+        221,
+        1282
+      ],
+      "xy": [
+        221.72219912691367,
+        1280.9569027602006
+      ],
+      "response": 0.5007722185035473,
+      "peak_value": 0.8274509803921568,
+      "surround_value": 0.17058823529411765,
+      "positive_peak_surround_contrast": 0.6568627450980391,
+      "peak_saturation": 0.14218009478672977,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1278,
+          221,
+          221
+        ],
+        [
+          1279,
+          220,
+          223
+        ],
+        [
+          1280,
+          220,
+          224
+        ],
+        [
+          1281,
+          220,
+          224
+        ],
+        [
+          1282,
+          219,
+          224
+        ],
+        [
+          1283,
+          220,
+          224
+        ]
+      ],
+      "pixels": 26,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            221,
+            1282
+          ],
+          "response": 0.5225753267314943
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            221,
+            1282
+          ],
+          "response": 0.5007722185035473
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            222,
+            1281
+          ],
+          "response": 0.47711461923596843
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            222,
+            1281
+          ],
+          "response": 0.3901453902372105
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          221.61072587712022,
+          1280.9543813562796
+        ],
+        [
+          221.76993798324912,
+          1280.9386100979254
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.11150176185713633,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 0.0,
+      "distance_from_D_pixels": 21.25699210984605,
+      "nearby_observations": [
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 0.5321701348185914
+        },
+        {
+          "observation_number": 776,
+          "observation_id": "1cd05067-1076-5e4b-a04e-85d2b8829e1c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 17.54651587716971
+        },
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 25.37079615418793
+        }
+      ],
+      "hypothesis_id": "ec73919b-c535-5b89-a9d5-1dda01d57654"
+    },
+    {
+      "peak_xy": [
+        262,
+        1276
+      ],
+      "xy": [
+        262.1222865412446,
+        1276.1685962373372
+      ],
+      "response": 0.028654236740179334,
+      "peak_value": 0.26666666666666666,
+      "surround_value": 0.22941176470588237,
+      "positive_peak_surround_contrast": 0.03725490196078429,
+      "peak_saturation": 0.7205882352941176,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1275,
+          262,
+          262
+        ],
+        [
+          1276,
+          261,
+          263
+        ],
+        [
+          1277,
+          262,
+          263
+        ]
+      ],
+      "pixels": 6,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            262,
+            1276
+          ],
+          "response": 0.03248564620654801
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            262,
+            1276
+          ],
+          "response": 0.028654236740179334
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            262,
+            1276
+          ],
+          "response": 0.02160438335596218
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            262,
+            1276
+          ],
+          "response": 0.01322061949018366
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          262.8793949304988,
+          1276.5993458708094
+        ],
+        [
+          262.0,
+          1276.0731428571428
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.8710673681269288,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 21.52970467332016,
+      "nearby_observations": [
+        {
+          "observation_number": 772,
+          "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 29.942414276596054
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 41.15947551212065
+        },
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 49.480859657246334
+        }
+      ],
+      "hypothesis_id": "7f8e4f31-e42c-5164-8c90-4213876b3f8f"
+    },
+    {
+      "peak_xy": [
+        223,
+        1262
+      ],
+      "xy": [
+        221.7786968264686,
+        1260.6504051316679
+      ],
+      "response": 0.10586838695835665,
+      "peak_value": 0.4980392156862745,
+      "surround_value": 0.403921568627451,
+      "positive_peak_surround_contrast": 0.09411764705882353,
+      "peak_saturation": 0.8267716535433071,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1258,
+          223,
+          223
+        ],
+        [
+          1259,
+          221,
+          224
+        ],
+        [
+          1260,
+          220,
+          224
+        ],
+        [
+          1261,
+          220,
+          224
+        ],
+        [
+          1262,
+          219,
+          220
+        ],
+        [
+          1262,
+          222,
+          224
+        ],
+        [
+          1263,
+          220,
+          220
+        ],
+        [
+          1263,
+          223,
+          223
+        ],
+        [
+          1264,
+          220,
+          221
+        ]
+      ],
+      "pixels": 24,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            223,
+            1262
+          ],
+          "response": 0.11395563107389695
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            223,
+            1262
+          ],
+          "response": 0.10586838695835665
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            223,
+            1259
+          ],
+          "response": 0.07515891020156434
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          221.79525774864447,
+          1260.7313263737153
+        ],
+        [
+          221.72351723517235,
+          1260.560885608856
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.10515955619946482,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 22.322002584089073,
+      "nearby_observations": [
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 6.695707382727733
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 20.60506379264367
+        },
+        {
+          "observation_number": 776,
+          "observation_id": "1cd05067-1076-5e4b-a04e-85d2b8829e1c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 29.86116156682296
+        }
+      ],
+      "hypothesis_id": "7fc6885e-228c-5593-867e-c638ba13ffb6"
+    },
+    {
+      "peak_xy": [
+        223,
+        1258
+      ],
+      "xy": [
+        221.78129496402877,
+        1256.7640287769784
+      ],
+      "response": 0.11304582765145155,
+      "peak_value": 0.5411764705882353,
+      "surround_value": 0.43529411764705883,
+      "positive_peak_surround_contrast": 0.10588235294117643,
+      "peak_saturation": 0.7826086956521738,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1255,
+          221,
+          223
+        ],
+        [
+          1256,
+          220,
+          223
+        ],
+        [
+          1257,
+          220,
+          223
+        ],
+        [
+          1258,
+          221,
+          223
+        ],
+        [
+          1259,
+          222,
+          223
+        ]
+      ],
+      "pixels": 16,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            223,
+            1258
+          ],
+          "response": 0.12152906346332792
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            223,
+            1258
+          ],
+          "response": 0.11304582765145155
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            223,
+            1258
+          ],
+          "response": 0.0968640130241345
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            223,
+            1259
+          ],
+          "response": 0.07515891020156434
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          221.89246828039234,
+          1257.1346171150904
+        ],
+        [
+          221.78129496402877,
+          1256.7640287769784
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.3869046686405247,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 24.525363246410997,
+      "nearby_observations": [
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 4.915836923877693
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 24.49052642332249
+        },
+        {
+          "observation_number": 776,
+          "observation_id": "1cd05067-1076-5e4b-a04e-85d2b8829e1c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 33.123466074269544
+        }
+      ],
+      "hypothesis_id": "15233dec-11d1-51cd-a8f9-4865ccd519c0"
+    },
+    {
+      "peak_xy": [
+        245,
+        1296
+      ],
+      "xy": [
+        246.0067439978419,
+        1296.5714863771243
+      ],
+      "response": 0.09661783619567521,
+      "peak_value": 0.38823529411764707,
+      "surround_value": 0.2901960784313726,
+      "positive_peak_surround_contrast": 0.0980392156862745,
+      "peak_saturation": 0.7373737373737373,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1294,
+          244,
+          248
+        ],
+        [
+          1295,
+          244,
+          248
+        ],
+        [
+          1296,
+          244,
+          249
+        ],
+        [
+          1297,
+          244,
+          248
+        ],
+        [
+          1298,
+          244,
+          248
+        ],
+        [
+          1299,
+          245,
+          247
+        ],
+        [
+          1300,
+          245,
+          245
+        ]
+      ],
+      "pixels": 30,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            245,
+            1296
+          ],
+          "response": 0.09896323707870841
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            245,
+            1296
+          ],
+          "response": 0.09661783619567521
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            245,
+            1296
+          ],
+          "response": 0.08909125602105938
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            245,
+            1296
+          ],
+          "response": 0.07442990049200399
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          245.95099657229912,
+          1296.457661546274
+        ],
+        [
+          246.04663319347964,
+          1296.6226012793177
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.1267433137200533,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 25.076391850526086,
+      "nearby_observations": [
+        {
+          "observation_number": 772,
+          "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 9.255078379991131
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 29.091192378703226
+        },
+        {
+          "observation_number": 773,
+          "observation_id": "3db63785-3b4c-5d11-80e1-9b1cd15b3a6b",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 35.00125922806886
+        }
+      ],
+      "hypothesis_id": "16ba268f-2091-5778-a54e-649ea14f3df0"
+    },
+    {
+      "peak_xy": [
+        257,
+        1292
+      ],
+      "xy": [
+        257.00782835604525,
+        1293.1428916594182
+      ],
+      "response": 0.10320690865222515,
+      "peak_value": 0.4235294117647059,
+      "surround_value": 0.30196078431372547,
+      "positive_peak_surround_contrast": 0.1215686274509804,
+      "peak_saturation": 0.7407407407407407,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1290,
+          257,
+          257
+        ],
+        [
+          1291,
+          255,
+          259
+        ],
+        [
+          1292,
+          255,
+          259
+        ],
+        [
+          1293,
+          254,
+          259
+        ],
+        [
+          1294,
+          254,
+          260
+        ],
+        [
+          1295,
+          255,
+          259
+        ],
+        [
+          1296,
+          257,
+          257
+        ]
+      ],
+      "pixels": 30,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            257,
+            1292
+          ],
+          "response": 0.10670708181609334
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            257,
+            1292
+          ],
+          "response": 0.10320690865222515
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            257,
+            1292
+          ],
+          "response": 0.0930342691128298
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            257,
+            1293
+          ],
+          "response": 0.07624115245928331
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          256.9996801754466,
+          1293.0362772421986
+        ],
+        [
+          257.1159581571333,
+          1293.2291342087692
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.13831063300379212,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 26.51928423616485,
+      "nearby_observations": [
+        {
+          "observation_number": 772,
+          "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 12.334744437413594
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 37.65773079059267
+        },
+        {
+          "observation_number": 773,
+          "observation_id": "3db63785-3b4c-5d11-80e1-9b1cd15b3a6b",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 46.506657073541795
+        }
+      ],
+      "hypothesis_id": "aded9808-e587-5b36-a3b6-f305fc02cce1"
+    },
+    {
+      "peak_xy": [
+        215,
+        1267
+      ],
+      "xy": [
+        213.9766608284795,
+        1266.127428617979
+      ],
+      "response": 0.16397268805902532,
+      "peak_value": 0.6901960784313725,
+      "surround_value": 0.47843137254901963,
+      "positive_peak_surround_contrast": 0.2117647058823529,
+      "peak_saturation": 0.6534090909090908,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1263,
+          215,
+          215
+        ],
+        [
+          1264,
+          213,
+          215
+        ],
+        [
+          1265,
+          212,
+          216
+        ],
+        [
+          1266,
+          212,
+          217
+        ],
+        [
+          1267,
+          211,
+          217
+        ],
+        [
+          1268,
+          212,
+          214
+        ]
+      ],
+      "pixels": 25,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            215,
+            1267
+          ],
+          "response": 0.17788132378031585
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            215,
+            1267
+          ],
+          "response": 0.16397268805902532
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            215,
+            1267
+          ],
+          "response": 0.13407791210339592
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            215,
+            1266
+          ],
+          "response": 0.10124731294194822
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          214.03646720300665,
+          1266.1200109616927
+        ],
+        [
+          213.74245482172267,
+          1266.3028046488969
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.29259050876868853,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 27.65407663647381,
+      "nearby_observations": [
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 10.502740692020042
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 16.79217168958982
+        },
+        {
+          "observation_number": 776,
+          "observation_id": "1cd05067-1076-5e4b-a04e-85d2b8829e1c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 21.156030509302546
+        }
+      ],
+      "hypothesis_id": "93d85f1f-3769-5d34-a82e-3e1c7c8e2d95"
+    },
+    {
+      "peak_xy": [
+        235,
+        1246
+      ],
+      "xy": [
+        233.6701374000261,
+        1244.5930200041016
+      ],
+      "response": 0.09139602508478373,
+      "peak_value": 0.47843137254901963,
+      "surround_value": 0.3784313725490196,
+      "positive_peak_surround_contrast": 0.10000000000000003,
+      "peak_saturation": 0.7622950819672132,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1242,
+          235,
+          235
+        ],
+        [
+          1243,
+          233,
+          237
+        ],
+        [
+          1244,
+          232,
+          238
+        ],
+        [
+          1245,
+          232,
+          237
+        ],
+        [
+          1246,
+          231,
+          236
+        ],
+        [
+          1247,
+          232,
+          236
+        ]
+      ],
+      "pixels": 30,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            235,
+            1247
+          ],
+          "response": 0.10224989841608989
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            235,
+            1246
+          ],
+          "response": 0.09139602508478373
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            235,
+            1246
+          ],
+          "response": 0.07913855340140624
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          233.6701374000261,
+          1244.5930200041016
+        ],
+        [
+          233.5607844647482,
+          1244.5678608220128
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.1122098431389773,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 28.370220976052867,
+      "nearby_observations": [
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 20.292180120413054
+        },
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 23.295102266966452
+        },
+        {
+          "observation_number": 782,
+          "observation_id": "6a0e0203-3ec1-5d1c-b9e5-eeb033e72e5c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 33.22814896966142
+        }
+      ],
+      "hypothesis_id": "4fd297c8-f01d-5b4d-b52b-2c94b8a6128d"
+    },
+    {
+      "peak_xy": [
+        264,
+        1255
+      ],
+      "xy": [
+        264.0,
+        1255.0
+      ],
+      "response": 0.006657780566030114,
+      "peak_value": 0.2823529411764706,
+      "surround_value": 0.2549019607843137,
+      "positive_peak_surround_contrast": 0.027450980392156876,
+      "peak_saturation": 0.736111111111111,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1255,
+          264,
+          264
+        ]
+      ],
+      "pixels": 1,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            264,
+            1255
+          ],
+          "response": 0.010999437684710012
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            264,
+            1255
+          ],
+          "response": 0.006657780566030114
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          264.0,
+          1254.0103092783506
+        ],
+        [
+          264.0,
+          1255.0
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.9896907216493673,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 28.600699292150182,
+      "nearby_observations": [
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 33.05654311933245
+        },
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 47.09327774400186
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 50.142126285987324
+        }
+      ],
+      "hypothesis_id": "34bae538-9252-5948-8169-681b82bac732"
+    },
+    {
+      "peak_xy": [
+        256,
+        1247
+      ],
+      "xy": [
+        256.94852941176475,
+        1244.9191176470588
+      ],
+      "response": 0.007503055781652251,
+      "peak_value": 0.25098039215686274,
+      "surround_value": 0.24313725490196078,
+      "positive_peak_surround_contrast": 0.00784313725490196,
+      "peak_saturation": 0.828125,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1243,
+          256,
+          256
+        ],
+        [
+          1244,
+          254,
+          258
+        ],
+        [
+          1245,
+          256,
+          259
+        ],
+        [
+          1246,
+          256,
+          259
+        ],
+        [
+          1247,
+          256,
+          256
+        ],
+        [
+          1247,
+          258,
+          260
+        ]
+      ],
+      "pixels": 18,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            256,
+            1247
+          ],
+          "response": 0.009291599324573657
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            256,
+            1247
+          ],
+          "response": 0.007503055781652251
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            256,
+            1247
+          ],
+          "response": 0.005235455629921865
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          256.9347826086957,
+          1244.9347826086957
+        ],
+        [
+          256.94852941176475,
+          1244.9191176470588
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.020841439914437435,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 31.428168565981828,
+      "nearby_observations": [
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 20.854137571728725
+        },
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 41.54761441727183
+        },
+        {
+          "observation_number": 782,
+          "observation_id": "6a0e0203-3ec1-5d1c-b9e5-eeb033e72e5c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 50.107861876823506
+        }
+      ],
+      "hypothesis_id": "25607d9c-a60b-59d6-8eaf-f4c07066a147"
+    },
+    {
+      "peak_xy": [
+        235,
+        1303
+      ],
+      "xy": [
+        235.28059219758632,
+        1303.5823042380016
+      ],
+      "response": 0.05542486690970483,
+      "peak_value": 0.25098039215686274,
+      "surround_value": 0.18627450980392157,
+      "positive_peak_surround_contrast": 0.06470588235294117,
+      "peak_saturation": 0.78125,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1301,
+          234,
+          236
+        ],
+        [
+          1302,
+          234,
+          236
+        ],
+        [
+          1303,
+          234,
+          237
+        ],
+        [
+          1304,
+          234,
+          236
+        ],
+        [
+          1305,
+          234,
+          237
+        ],
+        [
+          1306,
+          235,
+          237
+        ]
+      ],
+      "pixels": 20,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            235,
+            1303
+          ],
+          "response": 0.05879620896510654
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            235,
+            1303
+          ],
+          "response": 0.05542486690970483
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            235,
+            1303
+          ],
+          "response": 0.04751855962441123
+        },
+        {
+          "sigma": 1.8,
+          "xy": [
+            235,
+            1303
+          ],
+          "response": 0.034613386647217276
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          235.3117227447762,
+          1303.6150495549523
+        ],
+        [
+          235.07001612492576,
+          1303.6295510481202
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.21581136078420388,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 32.09600546161475,
+      "nearby_observations": [
+        {
+          "observation_number": 772,
+          "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 16.098485418043893
+        },
+        {
+          "observation_number": 773,
+          "observation_id": "3db63785-3b4c-5d11-80e1-9b1cd15b3a6b",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 22.6397660956134
+        },
+        {
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+          "kind": "dark-reflection",
+          "status": "region-proposal",
+          "distance_pixels": 26.35988265463436
+        }
+      ],
+      "hypothesis_id": "0bd8799a-f738-594e-8686-b145ec4a66e3"
+    },
+    {
+      "peak_xy": [
+        227,
+        1244
+      ],
+      "xy": [
+        226.0759311677225,
+        1243.1882104506446
+      ],
+      "response": 0.14686035983551415,
+      "peak_value": 0.7254901960784313,
+      "surround_value": 0.5882352941176471,
+      "positive_peak_surround_contrast": 0.13725490196078427,
+      "peak_saturation": 0.6216216216216216,
+      "localization_status": "positive raw peak above ring median",
+      "pixel_runs": [
+        [
+          1241,
+          225,
+          228
+        ],
+        [
+          1242,
+          224,
+          228
+        ],
+        [
+          1243,
+          224,
+          229
+        ],
+        [
+          1244,
+          223,
+          228
+        ],
+        [
+          1245,
+          224,
+          228
+        ]
+      ],
+      "pixels": 26,
+      "scale_matches": [
+        {
+          "sigma": 0.6,
+          "xy": [
+            228,
+            1244
+          ],
+          "response": 0.15310221327476303
+        },
+        {
+          "sigma": 0.8,
+          "xy": [
+            227,
+            1244
+          ],
+          "response": 0.14686035983551415
+        },
+        {
+          "sigma": 1.2,
+          "xy": [
+            227,
+            1244
+          ],
+          "response": 0.13041437100705433
+        }
+      ],
+      "threshold_alternative_positions": [
+        [
+          226.1820437144446,
+          1243.1278497797168
+        ],
+        [
+          225.87958168341964,
+          1243.3202863234847
+        ]
+      ],
+      "threshold_sensitivity_pixels": 0.2366371825653084,
+      "role": "Bright feature hypothesis; not certified specular reflection or body identity",
+      "learned_color_fraction": 1.0,
+      "distance_from_D_pixels": 32.44760465037287,
+      "nearby_observations": [
+        {
+          "observation_number": 779,
+          "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 15.784814592112653
+        },
+        {
+          "observation_number": 781,
+          "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 27.683100637203857
+        },
+        {
+          "observation_number": 782,
+          "observation_id": "6a0e0203-3ec1-5d1c-b9e5-eeb033e72e5c",
+          "kind": "chromatic",
+          "status": "region-proposal",
+          "distance_pixels": 28.450645424337676
+        }
+      ],
+      "hypothesis_id": "652cbb75-e711-52cd-a02e-9e7a9c4d354f"
+    }
+  ],
+  "selected_hypotheses": [
+    "aa9e0b38-2168-55db-9694-84feb650e8eb",
+    "a426fcfe-bc92-5b3f-9094-7ee85faf4cb4"
+  ],
+  "dark_patch": {
+    "region": null,
+    "unresolved_reason": "Inset leaves fewer than 12 native pixels"
+  },
+  "assisted_sampling_patch": {
+    "region": {
+      "pixel_runs": [
+        [
+          1270,
+          241,
+          241
+        ],
+        [
+          1271,
+          240,
+          242
+        ],
+        [
+          1272,
+          239,
+          243
+        ],
+        [
+          1273,
+          240,
+          242
+        ],
+        [
+          1274,
+          241,
+          241
+        ]
+      ],
+      "pixels": 13,
+      "loop_xy": [
+        [
+          241.0,
+          1274.5
+        ],
+        [
+          240.5,
+          1274.0
+        ],
+        [
+          240.0,
+          1273.5
+        ],
+        [
+          239.5,
+          1273.0
+        ],
+        [
+          239.0,
+          1272.5
+        ],
+        [
+          238.5,
+          1272.0
+        ],
+        [
+          239.0,
+          1271.5
+        ],
+        [
+          239.5,
+          1271.0
+        ],
+        [
+          240.0,
+          1270.5
+        ],
+        [
+          240.5,
+          1270.0
+        ],
+        [
+          241.0,
+          1269.5
+        ],
+        [
+          241.5,
+          1270.0
+        ],
+        [
+          242.0,
+          1270.5
+        ],
+        [
+          242.5,
+          1271.0
+        ],
+        [
+          243.0,
+          1271.5
+        ],
+        [
+          243.5,
+          1272.0
+        ],
+        [
+          243.0,
+          1272.5
+        ],
+        [
+          242.5,
+          1273.0
+        ],
+        [
+          242.0,
+          1273.5
+        ],
+        [
+          241.5,
+          1274.0
+        ],
+        [
+          241.0,
+          1274.5
+        ]
+      ],
+      "minimum_support_margin": 5.0990195135927845,
+      "margin_role": "Geometric guard only; no measured margin to bead boundary or rejected appearance"
+    },
+    "radius_pixels": 2.0,
+    "status": "unreviewed assisted sampling proposal",
+    "role": "Tiny disk around maker-confirmed point; does not establish ownership of surrounding pixels"
+  },
+  "alias_candidates": [
+    {
+      "observation_number": 772,
+      "observation_id": "73808b99-0b4f-50bd-9573-8baaedd7a6f9",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        251.37029648050145,
+        1304.1139515302116
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 33.74683588098711,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 773,
+      "observation_id": "3db63785-3b4c-5d11-80e1-9b1cd15b3a6b",
+      "kind": "dark-reflection",
+      "status": "region-proposal",
+      "seed_xy": [
+        213.32145653876273,
+        1309.091875
+      ],
+      "reflection": {
+        "xy": [
+          213.27580778356315,
+          1309.5700079088065
+        ],
+        "peak_value": 0.8431372549019608,
+        "surround_value": 0.2235294117647059,
+        "pixel_runs": [
+          [
+            1308,
+            211,
+            215
+          ],
+          [
+            1309,
+            211,
+            216
+          ],
+          [
+            1310,
+            211,
+            216
+          ],
+          [
+            1311,
+            211,
+            215
+          ],
+          [
+            1312,
+            214,
+            214
+          ]
+        ],
+        "pixels": 23,
+        "threshold_alternative_positions": [
+          [
+            213.26343959183774,
+            1309.6117120272997
+          ],
+          [
+            213.18589770515675,
+            1309.5110289690706
+          ]
+        ],
+        "threshold_sensitivity_pixels": 0.1075283103718011,
+        "status": "Localized bright reflection candidate; body identity not certified",
+        "role": "Specular appearance position, not a body center or boundary"
+      },
+      "distance_from_D_pixels": 46.2807623008873,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 774,
+      "observation_id": "83e43b77-d743-5c2f-a39d-f339a44af817",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        194.72124354770975,
+        1310.3257615642772
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 60.08816271323514,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 775,
+      "observation_id": "9f3d9c23-e85c-5b08-9451-d641bbf0df4d",
+      "kind": "chromatic",
+      "status": "excluded-edge-uncertainty",
+      "seed_xy": [
+        178.03655903127984,
+        1292.1869431905109
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 66.12040210100376,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 776,
+      "observation_id": "1cd05067-1076-5e4b-a04e-85d2b8829e1c",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        204.67941649341466,
+        1285.131082863535
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 38.621368740994455,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 777,
+      "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178",
+      "kind": "dark-reflection",
+      "status": "region-proposal",
+      "seed_xy": [
+        221.2776037588097,
+        1281.249375
+      ],
+      "reflection": {
+        "xy": [
+          221.82754780893515,
+          1280.6830791742075
+        ],
+        "peak_value": 0.8392156862745098,
+        "surround_value": 0.1843137254901961,
+        "pixel_runs": [
+          [
+            1278,
+            220,
+            223
+          ],
+          [
+            1279,
+            220,
+            224
+          ],
+          [
+            1280,
+            220,
+            224
+          ],
+          [
+            1281,
+            220,
+            224
+          ],
+          [
+            1282,
+            220,
+            224
+          ],
+          [
+            1283,
+            220,
+            224
+          ]
+        ],
+        "pixels": 29,
+        "threshold_alternative_positions": [
+          [
+            221.88501911416608,
+            1280.688820428107
+          ],
+          [
+            221.81299113888699,
+            1280.6824992175436
+          ]
+        ],
+        "threshold_sensitivity_pixels": 0.057757362485535056,
+        "status": "Localized bright reflection candidate; body identity not certified",
+        "role": "Specular appearance position, not a body center or boundary"
+      },
+      "distance_from_D_pixels": 21.783568380436297,
+      "relation": "maker-confirmed distinct from D"
+    },
+    {
+      "observation_number": 778,
+      "observation_id": "607fa3da-ba87-5309-a15c-aa92150631fe",
+      "kind": "chromatic",
+      "status": "excluded-edge-uncertainty",
+      "seed_xy": [
+        184.08135244648273,
+        1267.5780056491474
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 57.090160915524585,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 779,
+      "observation_id": "8032c83c-e265-5fc0-9177-750724e805a5",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        216.91831923617463,
+        1256.0450574754227
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 28.887497977037782,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 780,
+      "observation_id": "1d838729-4786-5549-867c-c19993f8d246",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        193.58302015582288,
+        1238.186630494593
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 58.23842318308672,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 781,
+      "observation_id": "4596d9ce-af26-5d33-bbdb-084d929d4c13",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        247.88488962860995,
+        1226.13759780063
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 46.37630473307383,
+      "relation": "unresolved"
+    },
+    {
+      "observation_number": 782,
+      "observation_id": "6a0e0203-3ec1-5d1c-b9e5-eeb033e72e5c",
+      "kind": "chromatic",
+      "status": "region-proposal",
+      "seed_xy": [
+        215.48675963201327,
+        1216.7816076542092
+      ],
+      "reflection": null,
+      "distance_from_D_pixels": 60.8275947850016,
+      "relation": "unresolved"
+    }
+  ],
+  "trusted_update": false,
+  "limitations": "Scale persistence/contrast does not prove specularity. Dark patches can cross same-color neighbors or shadow. No existing alias except R777 resolved."
+}

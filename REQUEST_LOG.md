@@ -3549,3 +3549,135 @@ aliases, then test image-derived region separation/evidence-based eligibility
 before promoting more bodies. Continue the trusted foundation; fitting and
 zero-total-arclength stretch remain deferred. gpt-6.1-sol / High, same session,
 no /new. Scoped commit/push and exact remote/clean status before claiming delivery.
+
+
+## R196 — Continue D's local reflection/positive-patch/alias diagnosis
+
+Maker request, verbatim: “continue”. Resume the unfinished bounded foundation
+task on D; do not advance to simulated fitting or a global detector rewrite.
+Preflight daisy,e8c1e49f91baba877d2265329ba178e8b3ca1866,
+photo-2-reconstruction-v2,clean/no stashes; deliberate fetch/upstream0/0.
+Read handoff/latest log/plan/AGENTS, R193–R195 ownership evidence and R169/R171
+reflection failure/position limits. Python3.12, no agents/dependencies.
+
+Four approaches presented: native V peaks, contrast across scales, bright
+support/dark surroundings, frozen observation associations. Implement an
+explicitly assisted native diagnostic: maker-confirmed D(241,1272) selects
+window[173,1204,309,1340], image-derived apparent diameter27.19. This coordinate
+is not input to the unchanged automatic detector. No model/spline/hue boxes.
+Native reference contrast sigma0.8 minus5.438, hypothesis floor0.003, peak
+spacing3, search1.2D; four narrow scales0.6/0.8/1.2/1.8. Retain16 local peaks.
+Connected support in4px disk,4–8px ringmedian,60% rawcontrast threshold,
+weighted-square contrast centroid and50/70% alternatives. A filter maximum
+without positive raw peak-to-ring contrast initially caused localization error;
+fix retains unresolved support instead of inventing a reflection, regression
+counterexample passes. A scaffolding syntax typo was also corrected before run.
+
+Two near-D unmatched positive features selected for review only: P1=(242.46,
+1275.84), P2=(236.13,1256.31), responses0.03779/0.03665, all4 narrow-scale
+matches, threshold shifts~0.35/0.19px. Learned-color support fractions0.586/
+0.895 recorded after extraction; reflected color, texture/JPEG and foreign
+body ownership remain alternatives. Low diagnostic floor is not calibrated
+noise rejection; contrast stability is not proof of specular reflection.
+
+Replay unchanged coarse detector: spots insideapproxband but responses-0.02737/
+-0.08657 below learnedfloor0.02982; neither reachespeakcandidate stage, no
+nearby rejections. Native original-equivalent kernels2.175/10.876 also negative
+-0.02484/-0.08922; narrow-only reduction negative; broad-only0.02039/0.00424;
+both0.03779/0.03665. Original broad brightness average includes brighter nearby
+surfaces/reflection, hiding these local features. Native resolution alone does
+not resolve it. This is distinct from R169's later peak suppression problem;
+no global filter/noise threshold adopted, no known-necklace coverage gain claimed.
+
+Automatic dark-support inset fails minimum12pixels; exactfailure preserved.
+Separately propose tiny assisted geometric sampling disk at D, radius2px,
+13 nativepixel centers. Guard margin is not appearance/body/seam clearance;
+unreviewed surrounding pixels not promoted by previously confirmed point.
+Eleven existing seed observations within~68px preserve statuses/IDs; R777
+still maker-confirmed distinct, all other aliases unresolved. Trusted ledger
+stays11 regions/two inherited subsets/six black reflection locators. No newly
+unique-body count, full extents, physical/visible/outward centers or indices.
+
+D_REFLECTION_REVIEW.md shows raw/candidate/explicit clipped grayV0.04–0.25
+views and all native peaks/contrastfield with exact report/source/output hashes.
+Q196.1 asks which P1/P2 are specular reflections on D's bead (including both,
+neither or cannot tell); Q196.2 checks tiny green D loop wholly inside away
+from seams/background. Both pending when issued; evidence, not permissions.
+Curated supporting images inspected/tracked. Routine exploratory output ignored.
+
+Three mathematical feature tests pass: weak alongside stronger peak with native
+origin/scales/threshold checks, flat-image no-peaks, smoothed maximum lacking raw
+contrast kept unresolved. Syntax, source/curated/current preserved-input hashes,
+unchanged earlier ledgers/detector/model, native pixel/label accounting, append-only
+log and local links checked. No GUI/server/launcher, new render, fitting/count
+scan, camera/phase/centerline/stretch change or live annotation/center/score write.
+
+Stopping point: two weak-feature hypotheses, preserved automatic dark-inset
+failure, assisted sampling proposal and documented alias/filter limits. Next
+bounded task: incorporate these two answers while retaining wrong-body,
+non-specular and unclear alternatives; test any input-only filter change on
+broader known examples before adoption. Keep foundation first; fitting and
+zero-total-arclength stretch deferred. gpt-6.1-sol / High, same session, no /new.
+Scoped commit/push and exact remote/clean status before claiming delivery.
+
+
+## R197 — Neither weak feature is D's specular reflection
+
+Maker answer to Q196.1: “Neither”. Preserve exact answer, reviewed report/image
+hashes and P1/P2 stable hypotheses/coordinates in D-interior-answers-r197-r198.json.
+Record negative reflection facts scoped to D: neither marked spot is a specular
+reflection on its bead. Other body ownership/specularity/texture/background
+interpretations remain unknown. Do not promote locations or call positive
+native contrast successful D reflection recovery. The coarse filter comparison
+explains omitted local features, not an established missed true D reflection.
+
+
+## R198 — Tiny green D interior is safe
+
+Maker answer to Q196.2: “Yes”. Confirm precisely the displayed13 native pixel
+centers and closed loop as a black positive interior, safely away from interbead
+seams/background. Source question/report/hash sealed; curator refuses changed
+sampling pixels. Extend a separate review/r196/trusted-facts.json while leaving
+all earlier ledgers frozen. Total12 confirmed region records, two inherited
+subsets/six black locators. D's own reflection and other aliases unresolved.
+Guard margin on this geometric disk is not a measured numeric bead clearance,
+body extent, physical/visible center or outward anchor. Four tests now pass,
+including exact region promotion/no invented locator and negative fact scope.
+
+
+## R199 — Sufficient reliable position subset; exclude difficult black bodies
+
+Maker statement, verbatim:
+
+> I think that black beads without obvious specular reflections are too hard to do reliably at this phase.  In this phase we want to reliably establish the bositions of enouth beads that we can begin to match up the predicted positions, while creating small adjustments to the overall path of the centerline that might be necessary to get good positional matches.
+
+This supersedes a requirement to establish every visible bead before matching.
+Record exact scope in position-basis-scope-r199.json: enough reliable positions
+distributed around bracelet, red/yellow and black with obvious reflections;
+small centerline adjustments allowed once sufficient positional evidence is
+supported. Complete global inventory is not a gate. Existing minor-outward
+anchor interest and small local zero-total-arclength stretch suggestion retained;
+no fit/stretch implemented here. Do not keep pursuing D's difficult reflection.
+
+Keep its R198-confirmed patch as a factual interior but exclude D from active
+position evidence. Derived active-position-basis.json references11 other region
+records, six clear black locators and two colored point identities; evidence
+types/aliases mean these are not counts of independent beads or exact outward
+positions. Preserve all unselected/uncertain records. Snapshot unchanged41 saved
+visible-part centers' count/source hash as next distributed references to audit
+under new color/obvious-reflection scope; do not silently admit all41 or feed
+assisted coordinates to an automatic-runtime detector.
+
+All Q196 answers recorded, none pending. Current review/plan/method/handoff
+updated. Four tests pass; source/curated/current preserved-input hashes, frozen
+earlier ledgers and detector/model, exact answer bounds/pixels, active D
+exclusion, append-only log, syntax/links checked. Original photo/POV/curve/live
+maker annotations/centers/scores unchanged. No global filter, actual-photo
+position match, geometry/count/camera/phase/stretch change, GUI/server/newrender.
+
+Stop the bounded D diagnostic with trusted interior, rejected specular hypotheses
+and updated sufficient-subset scope. Next bounded task: audit saved41 visible
+centers for reliable colored bodies/black with obvious reflections, check
+all-around distribution, then begin supported correspondence/limited centerline
+refinement. gpt-6.1-sol / High, same session; no /new. Scoped commit/push and
+exact remote/clean final status before claiming delivery.
