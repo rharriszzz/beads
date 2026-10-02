@@ -1,6 +1,38 @@
 # Beads session handoff — new branch
 
-## Current R196–R199 — D patch trusted but inactive; enough reliable positions
+## Current R200 — 41 saved colored centers audited; matching next
+
+Maker says “continue”; bounded saved-center quality/coverage audit completed.
+[Review/raw pairs/full photo](photo2/SAVED_CENTER_AUDIT.md),
+[position basis](photo2/review/r200/position-basis.json),
+[source/preservation/output hashes](photo2/review/r200/summary.json).
+All 41 positions from unchanged revision2 saved centers inspected:18 red/23 yellow,
+no black position needed. Existing maker visible-center evidence preserved;
+color labels are curator readings, not new maker answers. No new confirmed
+regions, bead aliases or string indices. Script assisted, visual dispositions
+sealed to exact reviewed center hash; changed positions cannot inherit them.
+Frozen learned appearance modes are diagnostic; no automatic-runtime change.
+
+All 8 approximate image-arclength sectors supported; counts4/2/2/3/1/3/21/5.
+Largest gap33→34 across inward bend12.93% of image arclength; no physical major-angle
+claim. Nineteen marks in dense top cluster. All 41 reasonable starting proxies,
+not exact outward anchors/uncertainty bounds or count/helicity evidence alone.
+Nearest seed12 is dark/reflection but saved12 red; preserve separate identities.
+Original seed used only for coverage ranking, unchanged, no fitted-curve certification.
+
+All curated artifacts/summary repeat byte-identical. Ten protected source/live
+inputs equal R196 hashes; 41 IDs/coordinates/source, color/sector counts, unit-sum
+cyclic gaps, empty correspondences, syntax checked; all raw crop/whole-photo images
+inspected. No questions pending, no fit/centerline/count scan/phase/camera/stretch
+change, GUI/server/new render or live-save write. No agents/dependencies.
+
+**Next bounded task:** initial model correspondence with spatially balanced residuals,
+then small constrained planar centerline trial andraw overlays. Handle visible-center
+versus minor-outward offset before interpreting curve movements; bothhands/N
+unresolved. Full inventory is not a gate. Keep the prior rejected green bend and zero-net stretch
+suggestion intact. gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R196–R199 — D patch trusted but inactive; enough reliable positions
 
 R197 answers Q196.1 “Neither”; P1/P2 not specular reflections on D's bead, other
 ownership/appearance interpretations unknown. R198 answers Q196.2 “Yes”; tiny

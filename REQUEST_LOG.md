@@ -3681,3 +3681,53 @@ centers for reliable colored bodies/black with obvious reflections, check
 all-around distribution, then begin supported correspondence/limited centerline
 refinement. gpt-6.1-sol / High, same session; no /new. Scoped commit/push and
 exact remote/clean final status before claiming delivery.
+
+
+## R200 — Continue: audit saved visible-part centers under reliable subset scope
+
+Maker says “continue” after restating AGENTS workflow. Resume the declared
+bounded saved 41-center quality/coverage audit. Preflight daisy,15a75e7,
+photo-2-reconstruction-v2, clean/no stashes. Sandbox initially blocks FETCH_HEAD;
+approved git fetch succeeds, upstream0/0. Read current handoff/log/plan/AGENTS,
+R196–199 evidence, center capture/score methods, quick/historical shape model
+and HSV-overlap constraints. No agents/dependencies/model switch or GUI.
+
+Four methods presented: raw center crops, local hue/S/V, existing proposal
+context and loop coverage. New audit_saved_centers.py is assisted curator only:
+manual centers, frozen image-derived hue modes, unchanged seed for coverage.
+Visual dispositions sealed to exact reviewed centerSHA; changed saved marks
+cannot inherit them. No automatic runtime prior/change or completeness claim.
+
+All41 maker marks inspected on substantial colored parts:18 red/23 yellow, no
+black localization required for this set. Preserve IDs, numbers, coordinates and
+visible-center semantics; labels are visual audit readings, not new maker
+color answers. No new confirmed interior loops, bead aliases/string indices.
+Three-pixel native disks supply saturation-weighted circular hue plus S/V only;
+resultants0.9976–0.99995, medianS0.513–1, V0.571–0.937; no certified seam margins.
+Nearest frozen seeds3.3–20.2px away, no association promoted; saved red 12's nearest
+seed is edge-excluded dark/reflection, illustrates need to preserve manual marks.
+
+Unchanged periodic seed sampled at 8193 points with existing 2px smoothing; nearest stations
+normalized by image arclength only. Eight sector counts 4/2/2/3/1/3/21/5: all covered.
+Top 19 clustered, 22 wider references. Largest gap 33→34 across inward bend is 12.93% of
+image arclength; not physical angle or new centerline inference. This provides enough
+assisted starting coverage to try correspondences, not a guaranteed unique fit
+or recovered N/hand. Need spatial weighting and explicit visible-center versus
+minor-outward-point offset in future geometry work. Complete inventory is not a gate.
+
+SAVED_CENTER_AUDIT.md links 4 raw/marked native crop sheets, full photo and exact
+position basis, original centers snapshot, source/output/preservation summary. All
+images inspected; heading clipping fixed before delivery. Fresh repeat outputs
+including summary byte-identical; photo/source binding,41 unchanged unique IDs/xy,
+color/sectorcounts, unit-sum cyclic gaps, empty correspondences, syntax checked.
+Ten protected source/live hashes equal R196: original photo/POV/detector/tangent
+model/spline/annotations/centers/scores untouched. Append-onlylog/local links/
+diff checks. No questions needed to reconfirm previously chosen centers, none
+pending. No new render/GUI/server/launcher, count scan, phase/camera/stretch/fit or
+centerline change. Zero-total-arclength stretch suggestion remains deferred.
+
+Stop bounded center audit. Next bounded task: initial correspondences with spatially
+balanced residuals, then small constrained planar centerline trial/raw overlays.
+Keep both hands/N unresolved, anchor semantics and rejected green bend evidence.
+gpt-6.1-sol / High, same session; no /new. Scoped commit/push and exact remote/
+clean status verified before claiming delivery.

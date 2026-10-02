@@ -1375,6 +1375,16 @@ Save scene parameters, input hashes, renderer version/options and Python command
 Stop for an illustrated local review before fitting the full image. This catalog
 does not authorize jumping over the pending local indexing/color pilot.
 
+## Saved positional references — R200
+
+[Audit and raw context](photo2/SAVED_CENTER_AUDIT.md) validates the41 saved maker
+visible-part center marks as an assisted starting set:18 red/23 yellow, all8
+approximate image-arclength sectors supported, largest gap12.93%. Local circular
+hue/S/V and frozen nearest-seed diagnostics support raw inspection; neither
+promotes automatic aliases/regions. Preserve exact IDs/positions and anchor
+semantics. Balance spatial coverage in later fits; visible centers differ from
+minor-outward points. No fit or centerline change in this audit.
+
 ## Procedures for later aspects
 
 This index starts the broader collection without turning every idea into a new

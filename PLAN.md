@@ -11,7 +11,25 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R196–R199: D review finished; reliable subset for matching
+## Current R200: saved colored centers audited; correspondence next
+
+[Raw crops and whole-photo review](photo2/SAVED_CENTER_AUDIT.md),
+[assisted position basis](photo2/review/r200/position-basis.json).
+All41 saved marks inspected:18 red/23 yellow, no black localization needed in
+this set. Preserve exact maker IDs/coordinates; colors are visual audit readings,
+not newly supplied maker facts. All8 approximate image-arclength sectors supported;
+largest gap33→34 is12.93%, top19 clustered. Suitable starting references, not
+exact outward anchors or a certified unique/count/helicity solution. No new
+interior loops/automatic identities promoted, no fit or centerline change.
+Reproduction byte-identical; ten protected inputs unchanged; source/identity/
+coverage/syntax/image checks pass. No questions pending or GUI/server/new render.
+
+**Next bounded task:** initial correspondences with spatially balanced residuals,
+then small constrained planar centerline trial and raw overlays. Explicitly
+handle visible-center/outward-point mismatch, both hands and unresolved N. A
+complete inventory is not a gate. gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R196–R199: D review finished; reliable subset for matching
 
 R197 answers “Neither”: P1/P2 are not D specular reflections. R198 answers
 “Yes”: tiny D loop/13 pixels safely inside black body. Updated ledger12 regions,

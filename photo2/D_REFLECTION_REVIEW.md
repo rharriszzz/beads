@@ -1,5 +1,9 @@
 # D interior confirmed; reflection hypotheses rejected — R196–R199
 
+**R200 continuation:** [The saved-center audit](SAVED_CENTER_AUDIT.md) finds
+41 suitable colored starting references distributed around the loop. Initial
+correspondence is next; D remains inactive. No fit was performed in that audit.
+
 Resume the bounded task after R195: locate the confirmed black point D's own
 reflection/positive patch and check existing aliases. **R198 confirms D's tiny
 interior patch; R197 rejects both P1/P2 as specular reflections on D's bead.**
