@@ -5,6 +5,9 @@ Daisy Ubuntu22.04.5 has no system bwrap; advise sudo apt update, sudo apt instal
 bubblewrap, bwrap --version. No installation/security-setting change performed.
 Official sandboxing docs checked; bundled fallback explains why absence alone
 does not block commands. Photo evidence and next bounded task below unchanged.
+R207 clarifies bundled helper versus distribution package/security integration;
+technical explanation is inference, installer design rationale undocumented.
+System package is recommended for reliability, not proven mandatory here.
 
 ## Current R201–R205 — 208 colored interiors; 1D practice answers recorded
 

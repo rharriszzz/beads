@@ -6,6 +6,8 @@ Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 R206 operational note: explain/install system bubblewrap for Codex sandboxing;
 Ubuntu22.04.5 package absent here. Guidance supplied, no installation performed.
 This setup question leaves the photo-analysis next task below unchanged.
+R207 clarifies that a helper is already bundled; distro installation handles OS
+integration separately. Installer rationale is not established by the docs.
 
 **Current model recommendation — R134:** gpt-6.1-sol / High for the next bounded
 task. The [official model catalog](https://developers.openai.com/api/docs/models)

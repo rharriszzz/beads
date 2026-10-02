@@ -3872,3 +3872,21 @@ Previous colored-interior/profile evidence frozen. Next operational task: maker
 installs package if wanted, then resume declared neighboring-path profile work;
 gpt-6.1-sol / High, same session, no /new. Scoped documentation commit/push and
 remote/clean verification before claiming delivery.
+
+
+## R207 — Why Codex does not install the system sandbox package automatically
+
+Maker: “If codex uses its own tool, why does  not codex install it as part of the packsge?”
+Official OpenAI sandboxing page rechecked: Codex bundles a fallback helper,
+prefers PATH bwrap, and helper operation depends on unprivileged namespaces.
+Distribution package/security-profile integration differs from shipping a binary;
+OS installation/configuration can need administrator privileges and vary by
+Linux distribution. Explain this technical distinction as an inference from
+published prerequisites, not a documented OpenAI installer-design rationale.
+Clarify previous recommendation: separate installation is recommended for
+reliability, not proof the bundled helper cannot work here. Exact installer
+product rationale unknown. No installation/settings/photo evidence change;
+read-only preflight daisy/a7048f9, clean/no stashes/upstream0/0, bwrap still absent.
+Current OpenAI Docs skill reused. Next: system-package installation if desired,
+then unchanged neighboring-path profile task; gpt-6.1-sol / High, same session,
+no /new. Scoped log/handoff/plan commit/push and remote/clean verification.
