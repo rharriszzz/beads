@@ -1,0 +1,63 @@
+{
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "question_source": "photo2/review/r193/photo-audit.json",
+  "question_source_sha256": "1ca9393a5ad3fa171f14c488f2fa41fcdb16e74a894fd145928cf3f8de5bbe28",
+  "candidate_source": "photo2/review/r192/candidates.json",
+  "candidate_sha256": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d",
+  "role": "Maker body identity/point facts; not detector priors or new region/reflection measurements",
+  "answers": {
+    "Q193.1": {
+      "request": "R194",
+      "answer": "Two different yellow beads",
+      "supporting_image": "photo2/review/r193/close-colored-question.png",
+      "supporting_image_sha256": "d7095edf82ce06fab3ad55013f7ae5858e2ff527d2db20236cd3a5ed4578d370",
+      "points": [
+        {
+          "label": "A",
+          "xy": [
+            2203.2832493181522,
+            1122.2600392326274
+          ],
+          "observation_number": 119,
+          "observation_id": "4cee0221-2500-5f8d-bef3-5f7370a9c1a4"
+        },
+        {
+          "label": "B",
+          "xy": [
+            2218.0,
+            1115.0
+          ],
+          "observation_number": 960,
+          "observation_id": "9f3c3181-7ed3-5bfb-9c52-e6c8560faee4"
+        }
+      ],
+      "meaning": "Two distinct yellow body point identities; no automatic duplicate merge or certification of new loop seam clearance"
+    },
+    "Q193.2": {
+      "request": "R195",
+      "answer": "Different black bead",
+      "supporting_image": "photo2/review/r193/dark-area-question.png",
+      "supporting_image_sha256": "9e70dd6951a8d4b383a17e99b308e8051dca21e7e710c31b0f340d5a8eebecbf",
+      "points": [
+        {
+          "label": "D",
+          "xy": [
+            241,
+            1272
+          ],
+          "role": "Unassociated dark area"
+        },
+        {
+          "label": "R",
+          "xy": [
+            221.82754780893515,
+            1280.6830791742075
+          ],
+          "observation_number": 777,
+          "observation_id": "c9f2a196-cc0d-56cb-8a10-19828ba02178"
+        }
+      ],
+      "meaning": "D is inside a black bead distinct from the bead represented by R777; D reflection and region unresolved"
+    }
+  }
+}

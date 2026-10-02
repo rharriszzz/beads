@@ -1,6 +1,75 @@
 # Beads session handoff — new branch
 
-## Current R192 — Trusted image evidence is the foundation; fitting deferred
+## Current R193–R195 — Patches/body identities confirmed; coverage audit
+
+Maker: “The answer to both questions is yes.  Please continue”. Q192.1 accepts
+yellow959/red566/yellow565 pictured cores away from dark seams; Q192.2 accepts
+three distinct black bodies561/558/557 with their pictured loops and reflection
+crosses inside each. [Exact reply/hashes](photo2/interiors-confirmed-r193.json),
+[review/current questions](photo2/BEAD_OWNERSHIP_AUDIT.md),
+[trusted ledger](photo2/review/r193/trusted-facts.json),
+[audit/hashes](photo2/review/r193/summary.json). Eleven confirmed region records,
+two inherited subsets and six black locator records; preserve original limits,
+stable observation IDs and historical maker IDs. Surrounding unlabelled loops
+remain proposals. No global aliases, full boundaries, centers/outward anchors
+or string indices inferred. R192 candidate/output files remain frozen.
+R194 answers Q193.1 “Two different yellow beads”;119/960 remain distinct,
+despite bright same-hue short bridge. R195 answers Q193.2 “Different black
+bead”; D is a confirmed black-body point distinct from R777's body. Preserve
+[exact answers/hashes](photo2/ownership-answers-r194-r195.json). D's own region,
+reflection and aliases to other observations remain unknown; record a coverage
+gap, not a global newly unique body/string index. Identity answers do not certify
+new loops or reflection measurements.
+
+Preflight daisy,cc5f28a,photo-2-reconstruction-v2,clean/no stashes;
+fetch/upstream0/0. Read handoff/latest log/plan/relevant evidence, quick model,
+HSV overlap constraints. Python3.12, no agents/dependencies. Four comparisons:
+seed position, cross-body spill, colored feature mistaken for black reflection,
+exclusion/duplicate losses. audit_bead_evidence.py is curator/evaluator only:
+verifies original question/photo/candidate hashes before applying six answers;
+reads frozen image-only inventories before exact ownership auditing. No detector
+runtime consumes answers or rendered labels. No new filter or automatic merge.
+
+Same declared fixture eligibility/denominators preserved. Missing ownership
+54/54/58:35/35/37 excluded-seed-only,15/16/16 no accepted seed,3/3/4 mixed,
+1/0/1 unresolved. Eligibility's best native pixels can pass the approximate
+gate while the seed fails; this is not proof all excluded bodies meet maker
+central-visibility scope. Safe correct-kind >=3px pixel coverage84/141,81/141,
+80/142. Mixed regions5/3/7 total15;13 black,2 chromatic. Correct seeds can
+still produce cross-body cores on touching same-color beads. False black
+reflection points2/fixture already have colored-body seed ownership, not a
+native relocation error. False reflection support medianS0.951–0.985 and learned
+color fraction70.5–100%; correct black support neutral on these specific renders.
+Real-photo256 reflection supports max learned-color fraction11.4%; newly
+confirmed black supports fraction0. Diagnostic distributions, not a universal
+color/reflection rule or adopted rejection threshold. Photo completeness unknown.
+
+Q193.1 A119/B960: two yellow bodies or two patches of one? Closest same-mode
+pair16.41px, bridgeVratio0.925/huecoherence1; proximity/bright same hue alone
+does not establish alias. Q193.2 D(241,1272) versus R777 at(221.83,1280.68):
+same/different black body or gap/background? Preserve edge uncertainty if unclear.
+Both answered R194/R195 as above. Raw paired crops and known-failure image
+inspected/tracked; no
+region or body invented at D. Full audit retains each mixed/missing/duplicate
+witness and native appearance measurements. Nine tests pass, including exact
+six-answer scope/refusal of changed identity/target/appearance/answer and adverse
+ownership accounting and identity answers not inventing region/reflection
+support; source/live hashes, append-only log, syntax/links checked.
+
+No actual-photo model fit, detector change, new render, count scan, geometry/
+centerline/camera/phase/stretch change, GUI/server/launcher or live-save write.
+Saved zero-integral arclength stretch suggestion remains deferred. Original
+photo/POV/model/spline/annotations/centers/scores preserved. Curated outputs
+tracked; routine fixture inputs ignored. Scoped commit/push and exact remote/
+clean final status verified before claiming delivery.
+
+**Stopping point:** six pictured patches promoted; foundation failures diagnosed.
+**Next bounded task:** locate D's reflection/positive patch and check other
+aliases, then test image-derived separation/eligibility before promoting more.
+Keep ambiguous edge slivers, aliases and unknowns explicit; do not resume fitting.
+gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R192 — Trusted image evidence is the foundation; fitting deferred
 
 Maker asks to establish safe visible interiors of every distinguishable central
 red/yellow bead, identify all distinguishable black bodies and separately locate

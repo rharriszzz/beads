@@ -3432,3 +3432,120 @@ associations and audit missed/duplicate/unassociated bodies all around before
 promoting more trusted regions. Continue this foundation; fitting deferred.
 gpt-6.1-sol / High, same session, no /new. Scoped commit/push and exact remote
 tip/clean final status verified before claiming delivery.
+
+
+## R193 — Both interior/reflection questions confirmed; continue foundation audit
+
+Maker, verbatim: “The answer to both questions is yes.  Please continue”.
+
+Q192.1 confirms the pictured yellow959/red566/yellow565 loops comfortably inside
+their respective bodies, away from dark seams. Q192.2 confirms three distinct
+black bodies561/558/557, each with its displayed loop and cyan reflection cross
+inside its corresponding body. Save exact reply/photo/candidate/supporting-image
+hashes in interiors-confirmed-r193.json. Promote only those six regions and
+three reflection locator ownership facts in review/r193/trusted-facts.json;
+11 maker-confirmed region records, two inherited subsets, six black locator
+records. Keep historical maker names, stable observation IDs and source limits
+distinct from string indices/global aliases. Unlabelled surrounding loops stay
+unreviewed. Reflections aren't physical/visible/outward centers or boundaries.
+
+Preflight daisy,cc5f28ad0dcabd867518710dbb31f0a1660aa07f,
+photo-2-reconstruction-v2, clean/no stashes; fetch/upstream0/0. Read handoff,
+latest log/plan/relevant experiment, quick model and hue-overlap constraints.
+Python3.12, no agents/dependencies. Four comparisons presented: seed position,
+patch spill across neighbors, colored feature mistaken for black reflection,
+exclusion/duplicate losses. Continue only foundation evidence; fitting deferred.
+
+audit_bead_evidence.py validates exact reviewed hashes/IDs/question targets
+before curated promotion. Frozen R192 candidates and image-only calibration
+inventories preserved. No maker answers, body-ID masks or saved coordinates
+enter the unchanged runtime extractor. Known labels only evaluate ownership.
+Initial audit run hit a plotting None-reflection error; fixed before delivery,
+reran successfully. No candidate decisions or live files changed by this fix.
+
+Same diagnostic eligibility/denominators retained. Missing single-body ownership
+54/54/58:35/35/37 excluded-seed-only,15/16/16 no accepted seed,3/3/4 mixed
+region,1/0/1 unresolved. Missing colored42/42/45, black12/12/13. Best native
+body pixels can pass the approximate gate while detector seed fails. Largest
+miss category is gate exclusion, but the evaluator's visibility rule can admit
+weaker support than maker's requested scope; do not automatically accept these
+or silently lower the denominator. Correct appearance plus >=3px true recorded
+pixel-center clearance covers84/141,81/141,80/142; continuous loop clearance
+is not certified by this check. Mixed5/3/7 total15,13 black and2 chromatic.
+Correctly owned seeds can still produce patches spanning touching same-color
+bodies. Duplicate groups and every miss/mixed witness retained.
+
+Two false black reflection points per fixture are already seeded on colored
+bodies, not moved onto them during native refinement. Their reflection support
+medianS0.951–0.985 and learned-color fraction70.5–100%; true black reflection
+support is neutral in these particular renders. Real-photo256 reflection
+supports have max learned-color fraction11.4%; newly confirmed black supports
+fraction0. Diagnostic contrast only: no universal rule or new rejection
+threshold adopted. Real-photo completeness/precision still unverified.
+
+BEAD_OWNERSHIP_AUDIT.md presents exact promotions, raw known failures, limits,
+full miss/duplicate/ownership records, native photo appearance checks and two
+new small illustrated questions. Q193.1 A119/B960 are closest same-mode pair
+16.41px, bridgeVratio0.925/huecoherence1: two yellow beads or patches of one?
+No automatic merge or new seam-clearance claim. Q193.2 dark D(241,1272) versus
+reflection R777 at(221.83,1280.68): same/different black body or gap/background?
+No new body/region at D; exclude if edge/uncertainty prevents identification.
+Both questions pending when issued. Curated supporting images tracked.
+
+Eight tests pass: five extraction tests plus exact six-answer scope/no mutation,
+refusal of changed identity/target/appearance/answer, and adverse mixed/false/
+duplicate/excluded accounting. Syntax, answer/source/curated/fixture/current
+preserved-input hashes, unchanged R192 outputs, append-only log and local links
+checked; question/failure images inspected. No GUI/server/launcher, new render,
+actual-photo fit/count scan, geometry/spline/camera/phase/stretch change or live
+annotation/center/score write. Saved zero-total-arclength stretch remains deferred.
+
+Stopping point: six exact reviewed patches promoted and ownership/miss causes
+diagnosed; universal reliable inventory not achieved. Next bounded task: apply
+two new ownership answers and test image-derived region separation/evidence-based
+eligibility before promoting more bodies. Keep aliases, misses and edge slivers
+explicit; do not resume fitting. gpt-6.1-sol / High, same session, no /new.
+Scoped commit/push and exact remote/clean final status before claiming delivery.
+
+
+## R194 — Close yellow observations are two different beads
+
+Maker answer to Q193.1: “Two different yellow beads”.
+
+Preserve exact answer and question/candidate/photo hashes in
+ownership-answers-r194-r195.json. Observations119/960 are two distinct yellow
+bodies, not duplicate patches to merge. Their short16.41px, bright bridge
+(Vratio0.925, huecoherence1) is a maker-supported counterexample to proximity/
+same-hue/bright-bridge-only aliasing. Store point/body identities and distinct
+relation; this answer does not newly certify loop seam clearance or full extents.
+Original candidate numbers/IDs/pixels preserved. No runtime merge or detector fit.
+
+
+## R195 — Dark audit point belongs to a different black bead
+
+Maker answer to Q193.2: “Different black bead”.
+
+Preserve exact answer and unchanged supporting image/photo/audit hashes alongside
+R194. D(241,1272) is inside a black bead distinct from the bead represented by
+reflection R777. Add stable image-bound point identity and negative alias
+relation to the trusted ledger; retain a coverage gap for D's own unresolved
+positive region/reflection. This does not prove its absence from every other
+existing observation: other aliases remain unresolved, not a newly certified
+global unique-body count. Do not attach R777's reflection or invent loop pixels,
+body centers, exact optical peaks or string indices.
+
+Both Q193 questions answered, none pending. Current review/summary/plan/method/
+handoff updated; eleven confirmed positive regions and six confirmed black
+locator records unchanged by these identity-only answers. Nine tests pass,
+including identity answers not inventing regions/reflections and refusal of
+altered question point. Syntax, exact image/source/fixture/current preserved
+input hashes, frozen R192 outputs, append-only log and links checked. Original
+photo/POV/detector/model/spline and live maker saves preserved. No runtime
+detector/geometry/count/camera/phase/stretch change, fitting, GUI/server or new
+render. This finishes the bounded confirmation/ownership diagnosis step.
+
+Next bounded task: locate D's own reflection/positive patch and check other
+aliases, then test image-derived region separation/evidence-based eligibility
+before promoting more bodies. Continue the trusted foundation; fitting and
+zero-total-arclength stretch remain deferred. gpt-6.1-sol / High, same session,
+no /new. Scoped commit/push and exact remote/clean status before claiming delivery.

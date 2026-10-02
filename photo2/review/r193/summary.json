@@ -1,0 +1,127 @@
+{
+  "request": "R193",
+  "accepted_observations": [
+    959,
+    566,
+    565,
+    561,
+    558,
+    557
+  ],
+  "trusted_region_records": 11,
+  "inherited_subsets": 2,
+  "trusted_black_locator_records": 6,
+  "ownership_answer_requests": [
+    "R194",
+    "R195"
+  ],
+  "confirmed_coverage_gaps": [
+    {
+      "observation_id": "b6b50871-6fbd-57c2-9ae1-995fd0f32a03",
+      "xy": [
+        241,
+        1272
+      ],
+      "appearance": "black",
+      "confirmation": "R195 / Q193.2: D inside a different black bead from R777",
+      "region_status": "not established",
+      "reflection_status": "unresolved",
+      "other_existing_body_aliases": "unresolved beyond the confirmed distinction from R777",
+      "limits": "Visible body retained in coverage; do not use R777 reflection or invent pixels/string index"
+    }
+  ],
+  "calibration": [
+    {
+      "fixture": "hand+1-palette0-shift0",
+      "eligible": 141,
+      "located": 87,
+      "safe_typed": 84,
+      "miss_reasons": {
+        "no accepted seed on visible body": 15,
+        "only seed(s) excluded by provisional edge guard": 35,
+        "seed present; no single-body region": 3,
+        "seed present; region unresolved or reflection-only": 1
+      },
+      "missed_by_kind": {
+        "black": 12,
+        "chromatic": 42
+      }
+    },
+    {
+      "fixture": "hand-1-palette0-shift0",
+      "eligible": 141,
+      "located": 87,
+      "safe_typed": 81,
+      "miss_reasons": {
+        "only seed(s) excluded by provisional edge guard": 35,
+        "no accepted seed on visible body": 16,
+        "seed present; no single-body region": 3
+      },
+      "missed_by_kind": {
+        "chromatic": 42,
+        "black": 12
+      }
+    },
+    {
+      "fixture": "hand+1-palette1-shift2",
+      "eligible": 142,
+      "located": 84,
+      "safe_typed": 80,
+      "miss_reasons": {
+        "no accepted seed on visible body": 16,
+        "only seed(s) excluded by provisional edge guard": 37,
+        "seed present; no single-body region": 4,
+        "seed present; region unresolved or reflection-only": 1
+      },
+      "missed_by_kind": {
+        "black": 13,
+        "chromatic": 45
+      }
+    }
+  ],
+  "sources": {
+    "photo2/review/r192/candidates.json": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d",
+    "photo2/review/r192/trusted-facts.json": "425e118be2d37f84b4c4e26a7038582dc7ce54a689d22e03f8bad8defa175c4e",
+    "photo2/review/r192/summary.json": "5778b39c08a79a97908321c3db488ed22fe41557139de830a8506715af19b6e6",
+    "photo2/interiors-confirmed-r193.json": "5b632665e284e6df968514de14b0ff9e2e8a44e004859ab19e31f03fd763be0e",
+    "photo2/ownership-answers-r194-r195.json": "5728de9da8ca644276130a8e9471ae8abba1535ab0cd823fe0487cd960fdca90",
+    "photo2/audit_bead_evidence.py": "e744126575948340d0ac3d2b196fb0271764215d55a3713dca2a3b1670a2a172",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/test_bead_evidence_audit.py": "f805bdda939a11a37983235faf298fd9efc09d63e86e5720b97c6e857e09af42",
+    "photo2/review_bead_evidence.py": "2ff3c36ba76b8a9c37865e3b4d5aac3fa98937fec9160820436358ce89c1e21b",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb"
+  },
+  "fixture_sources": {
+    "photo2/output/r192/conservative/calibration/hand+1-palette0-shift0.json": "d858a75779e1c48ffb3c1d3005e16f174da9bbff8631dddc8ef266f7b7c909c4",
+    "photo2/output/r167/calibration/hand+1-palette0-shift0.png": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+    "photo2/output/r167/calibration/hand+1-palette0-shift0-ids.png": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+    "photo2/output/r192/conservative/calibration/hand-1-palette0-shift0.json": "dcb77ae735ee1e59fd60cd9c44fde5b07351cb9dc5692db5da2c5e65e3b129cf",
+    "photo2/output/r167/calibration/hand-1-palette0-shift0.png": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+    "photo2/output/r167/calibration/hand-1-palette0-shift0-ids.png": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+    "photo2/output/r192/conservative/calibration/hand+1-palette1-shift2.json": "ce979ed79d57650231135897a460826e6c7feebeaa90cf9d079cb5594b1d6382",
+    "photo2/output/r167/calibration/hand+1-palette1-shift2.png": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+    "photo2/output/r167/calibration/hand+1-palette1-shift2-ids.png": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd"
+  },
+  "preserved_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "curated_sha256": {
+    "known-failures.png": "45b669fb73aebf11189bc3e3f55d104cd7b7b06b23c02dea6ec11408885995a2",
+    "dark-area-question.png": "9e70dd6951a8d4b383a17e99b308e8051dca21e7e710c31b0f340d5a8eebecbf",
+    "photo-audit.json": "1ca9393a5ad3fa171f14c488f2fa41fcdb16e74a894fd145928cf3f8de5bbe28",
+    "trusted-facts.json": "492b56650e913fbec6da7e9e7c64f589099a5aad5172ecd0ba85d7d30c97913f",
+    "close-colored-question.png": "d7095edf82ce06fab3ad55013f7ae5858e2ff527d2db20236cd3a5ed4578d370",
+    "ownership-audit.json": "0c58f9b98c88ddd4bc90ed2fb94254b64c23aa627857c8ceabd0bfabb6e48f00"
+  },
+  "coverage_complete": false,
+  "fitting_performed": false
+}

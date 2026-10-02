@@ -36,6 +36,19 @@ or completeness. Existing render audits still fail some regions, so this is
 an implemented evidence pilot, not a fully trusted automatic inventory.
 Defer simulated fitting; later small stretch must preserve full-loop arclength.
 
+**R193 confirmations/ownership audit:** [Exact subset promotion and failure diagnosis](photo2/BEAD_OWNERSHIP_AUDIT.md).
+Bind answers to photo, supporting-image and candidate hashes; promote only
+pictured native pixels/loops and reflection locator ownership. Preserve the
+frozen automatic ledger. Split known-render misses by absent/excluded/failed
+seeds and test single-body ownership separately from correct appearance and
+true native-pixel clearance. Retain duplicate/false-reflection witnesses and
+review photo aliases before merging. Eligibility and coverage denominators are
+explicit diagnostic choices; improving a count alone does not certify visibility.
+R194 confirms119/960 are distinct despite a bright same-hue short bridge.
+R195 confirms dark D belongs to a black bead distinct from R777; keep its own
+reflection/positive region and aliases to other observations unresolved. Point/
+identity confirmation does not automatically approve new loop pixels.
+
 **R187 centerline replacement:** [Producer audit and colored side/diagonal evidence](photo2/CENTERLINE_BEAD_REVIEW.md)
 supersede trusting the old boundary-midpoint spline. Select conservative colored
 interiors from learned circular hue/S/V; derive provisional local envelope sides

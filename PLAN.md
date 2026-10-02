@@ -11,7 +11,42 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R192: trusted bead evidence before any simulated-position fit
+## Current R193–R195: confirmed subsets and ownership/coverage diagnosis
+
+Maker answers Q192.1 and Q192.2 yes, then asks to continue. Preserve exact
+reply/images/candidate hashes and promote only the six pictured regions,
+with three distinct black identities and their displayed reflection locators.
+[Current review and questions](photo2/BEAD_OWNERSHIP_AUDIT.md),
+[trusted ledger](photo2/review/r193/trusted-facts.json). Eleven confirmed region
+records plus two inherited subsets; six black-locator records, not string
+indices or global full-body coverage. Frozen R192 detector/output preserved.
+
+Audit four causes: seed position, cross-body patches, false black reflection
+identity, and exclusion/duplicate losses. Previous fixture eligibility and
+denominators retained. Of54/54/58 ownership misses,35/35/37 have only seeds
+excluded by the provisional edge guard;15/16/16 have no accepted seed;3/3/4
+have mixed regions;1/0/1 unresolved. Safe typed >=3px pixel coverage84/141,
+81/141,80/142. Thirteen of15 mixed regions are black proposals. All six false
+black-reflection points are already seeded on colored bodies. Their support
+is highly chromatic in these known examples; photo candidates differ. No new
+automatic filter/merge or threshold tuned to truth is adopted.
+
+Q193.1 answered R194:119/960 are two different yellow beads; do not merge by
+short bright same-hue bridge. Q193.2 answered R195: D is a different black bead
+from the bead at R777. Keep D as a confirmed body point with unresolved own
+reflection/region and aliases to other observations. No new safe loops confirmed
+by these identity answers; no global unique-body count or string index supplied.
+Nine tests pass; curated raw comparisons/known failures/full diagnostic
+witnesses/source hashes saved. No detector, geometry, spline, N/camera/phase,
+stretch, GUI/server or live maker-save changes. Fitting remains deferred.
+
+**Stopping point:** confirmations incorporated and failure causes diagnosed.
+**Next bounded task:** locate D's own reflection/positive patch and check other
+aliases, then test image-derived region separation/evidence-based eligibility
+before promoting more bodies. Do not shrink the denominator or admit edge
+slivers just to improve counts. gpt-6.1-sol / High, same session, no `/new`.
+
+## Prior R192: trusted bead evidence before any simulated-position fit
 
 Maker steps back to the foundation: positive regions safely inside every
 distinguishable central red/yellow body; black-body identities and separate

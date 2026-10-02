@@ -5,6 +5,11 @@ distinguishable central red/yellow bead and identify black bodies with their
 reflection positions **before fitting simulated positions**. Ambiguous edge
 slivers can be excluded. This supersedes the next centerline/geometry fit.
 
+**R193 update:** the maker answers both illustrated questions yes. The
+[current ledger and ownership audit](BEAD_OWNERSHIP_AUDIT.md) add the six exact
+pictured regions and three black-reflection locator ownership facts. The R192
+ledgers/pictures below remain frozen; their proposal totals are historical.
+
 **We cannot yet claim every eligible bead is reliably identified.** The old
 point inventory was a proposal set, and the new region audit still has ownership
 errors, misses and duplicates on known examples. We now preserve trusted facts
@@ -106,7 +111,8 @@ failures instead of promoting the whole proposal set.
 A is a new native-search yellow observation 959; B is red observation 566;
 C is yellow observation 565. **Do the green loops at A, B and C remain
 comfortably inside those three bead bodies, away from their dark interbead seams?**
-The question concerns the small loops, not full bead boundaries. Answer pending.
+The question concerns the small loops, not full bead boundaries. **Answered yes
+in R193**; [exact reply and reviewed hashes](interiors-confirmed-r193.json).
 
 ## Q192.2 — Three black bodies and their reflections
 
@@ -116,7 +122,8 @@ A=561, B=558, C=557. **Are these three distinct black beads, with each small
 green loop and cyan reflection cross inside its corresponding bead?** A dark
 connected area alone does not establish three bodies; this checks that important
 identity assumption. Other unlabeled loops in the crop remain candidates.
-Answer pending. Neither cross nor loop is a physical center or outward anchor.
+**Answered yes in R193**. Neither cross nor loop is a physical center or outward
+anchor. Unlabelled surrounding loops remain unreviewed.
 
 ## Later stretch requirement — saved, not implemented
 
@@ -150,7 +157,8 @@ do not replace the ownership, seam-clearance and coverage review.
 
 **Stopping point:** first full-photo native evidence inventory and a distinct
 trusted-fact ledger; universal reliability is not established. **Next bounded
-task:** incorporate these region/black-identity answers, diagnose remaining
+task at R192:** incorporate these region/black-identity answers, diagnose remaining
 mixed regions and unassociated dark areas, and audit misses/duplicates around
 the photo. Continue evidence work; do not resume simulated fitting until that
 foundation is supported. Recommend **gpt-6.1-sol / High**, same session; no `/new`.
+See the [current R193 audit and next task](BEAD_OWNERSHIP_AUDIT.md).

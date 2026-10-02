@@ -1,0 +1,64 @@
+{
+  "request": "R193",
+  "statement": "The answer to both questions is yes.  Please continue",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "candidate_source": "photo2/review/r192/candidates.json",
+  "candidate_sha256": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d",
+  "role": "Maker confirmation of pictured subsets/identities only; evaluator/curation data, not detector input",
+  "questions": {
+    "Q192.1": {
+      "answer": "yes",
+      "supporting_image": "photo2/review/r192/colored-question.png",
+      "supporting_image_sha256": "6ddc73dab3c3a48d55d143dc2ec2cfa9ef4f6287bb786d2a08240457a4b772bd",
+      "observations": [
+        {
+          "label": "A",
+          "observation_number": 959,
+          "observation_id": "ddbad885-13c1-5eb1-a571-42e76ac1c8d1",
+          "appearance": "yellow"
+        },
+        {
+          "label": "B",
+          "observation_number": 566,
+          "observation_id": "b9c826e8-e147-54dc-8421-4375c6bbcec1",
+          "appearance": "red"
+        },
+        {
+          "label": "C",
+          "observation_number": 565,
+          "observation_id": "4e1d37ce-a057-55ab-a3ca-3d7026e557e3",
+          "appearance": "yellow"
+        }
+      ],
+      "confirmed": "Displayed loops comfortably inside their respective colored bodies away from dark seams",
+      "limits": "No surrounding unlabelled loop, full boundary, bead center, outward anchor, string index or global coverage confirmed"
+    },
+    "Q192.2": {
+      "answer": "yes",
+      "supporting_image": "photo2/review/r192/black-question.png",
+      "supporting_image_sha256": "830b5b31285cf564fc7cb08413ffd362a0fbaa01a223230e2778a2c772b71faa",
+      "observations": [
+        {
+          "label": "A",
+          "observation_number": 561,
+          "observation_id": "6acc74a4-6085-52df-b1f2-3c27d77e50a8",
+          "appearance": "black"
+        },
+        {
+          "label": "B",
+          "observation_number": 558,
+          "observation_id": "ffdd0a59-a590-5c4d-9276-593192696b89",
+          "appearance": "black"
+        },
+        {
+          "label": "C",
+          "observation_number": 557,
+          "observation_id": "a2e2abb1-6c4e-51f5-b0ca-909e096222d1",
+          "appearance": "black"
+        }
+      ],
+      "confirmed": "Three distinct black bodies; each displayed loop and cyan reflection locator lies inside its corresponding body",
+      "limits": "No surrounding unlabelled loop, full boundary, bead center, outward anchor, string index or global coverage confirmed"
+    }
+  }
+}
