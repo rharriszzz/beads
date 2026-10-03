@@ -1,5 +1,8 @@
 # 1D practice along the existing spline — R203
 
+R208 follow-up: [Parallel-path measurements at all208 interior references](PARALLEL_PROFILE_CUES.md),
+with the unchanged S/Q/R example and known-owner counterexamples.
+
 Your suggestion is implemented as a diagnostic: sample original RGB along the
 current centerline, convert to H/S/V, and compare the graphs with raw context.
 The same spline is sampled at offsets ±5.44 pixels to reveal sensitivity to the

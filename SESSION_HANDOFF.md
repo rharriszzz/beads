@@ -9,7 +9,73 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R201–R205 — 208 colored interiors; 1D practice answers recorded
+## Current R208–R209 — five parallel paths; second yellow pair confirmed
+
+Maker says continue; resumes neighboring-path transfer, not bubblewrap install.
+Preflight daisy,13e4d61, clean/no stashes, fetched upstream0/0. Four methods
+presented: brightness trough, chroma-weighted circular hue change, neutral-bright
+appearance, parallel persistence. [Review/raw panels/question](photo2/PARALLEL_PROFILE_CUES.md),
+[feature annex](photo2/review/r208/reference-cues.json),
+[known owners/mixing/transition exposures](photo2/review/r208/calibration.json),
+[hashes](photo2/review/r208/summary.json),
+[sealed Q208.1 as issued](photo2/profile-transfer-question-r208.json),
+[exact answer](photo2/profile-transfer-answer-r209.json),
+[bounded point facts](photo2/review/r208/confirmed-transfer-facts.json).
+
+New bead_profile_cues.py: frozen image-only R201 patches + freshly image-derived
+axis tangent; five straight local strips0/±.2D/±.4D,109 one-pixel stations here.
+All208 IDs/positions and prior inventories unchanged. Bilinear encoded RGB then
+HSV; circular H side means weighted by S*V/chroma and resultant; low-chroma hue
+cannot supply strong evidence. V residual-noise rule retained; V*(1−S) feature
+on any body/background, never a black classifier. Same-kind mutual-nearest
+matches across≥3/5 paths within.15D=4.08px define persistence, not seam ownership.
+Photo base678V/721H/666neutral, persistent449/582/535; not body counts.
+Full1040 traces in ignored output/r208/photo-profiles.json, compact events tracked.
+
+review_profile_cues.py runs all photo/three fixture image-only measurements before
+truth IDs.72 known reference windows: all Vnear-body-transition201/in-body25;
+persistent147/6. Hue84/53→35/10; neutral81/72→35/6. Evaluation±.15D≈5.15px,
+overlapping windows repeated exposures; same/different known palette-slot
+transition coverage/misses and event bilinear ownership preserved. Existing
+fixtures only, not independent actual-photo accuracy/generalization proof.
+Neutral109/153 on colored slots;25/41 persistent on colored slots. One known
+colored-body trough F owner259 matches4 paths yet lies inside one body throughout
+evaluation neighborhood; pictured counterexample, cause unassigned.
+
+Separate assisted frozen S/Q/R diagnostic: old periodic spline/report samples
+and base RGB/HSV reproduced exactly, original maker bindings sealed. S/Qtrough
+at+11 matches4/5, weighted hue+14 matches3/5, extra hue+3 matches3/5. No automatic
+one-landmark/one-bead rule. Rneutral+108 matches3 near confirmed point+109;
+spatial association, not measured optical/bead/outward center. Shifted endpoints
+unconfirmed, H can reverse/valleys move/disappear when other surface pieces
+crossed. No old spline/manual positions used in image-only local profiles.
+
+Q208.1: raw A/B at(1594.4458,246.0258)/(1614.2291,248.9624),20px apart,
+different yellow beads? R209 answers “Two different yellow beads”. None pending.
+Automatic observation14
+and its UUID from R201, unrelated to maker black14/full-string index. Only point
+body distinction confirmed, no seam/region/centers/adjacency or reference-origin
+alias. record_transferred_profile_answer.py seals original image/report/inventory/
+points.21 straight samples: raw Vminimum0.401132 at+9,36.4314% below lower
+endpoint, H17.6714→37.7034deg (+20.0319deg). Smoothed Vtrough+10, weighted H
+event+15 matches5 paths; neither is a maker exact seam. Original question/image/
+points unchanged. All seven curated images inspected.
+
+Six controls pass: Hwrap, neutral/dark hue suppression, persistent in-body
+shade/glint, bilinear mixed/outside labels, bounded point promotion, changed
+points/replies/reference rejected. Complete fresh outputs identical;
+question/source/ID/pixels/route/aggregation/native-coordinate/preservation seals
+checked. Ten protected inputs and old ledgers/selected centers/annotations/scores
+unchanged; no fit/geometry/count/phase/camera/stretch, GUI/server/new render or
+installation. Existing zero-net stretch suggestion deferred.
+
+**Stop** cue transfer. **Next bounded task:** small model-correspondence pilot
+with41 maker centers and208 interior references.
+Use predicted visible bead membership for observed interior pixels; preserve
+visible-center/minor-outward semantics and both hands/N uncertainty. Black
+inactive. gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R201–R205 — 208 colored interiors; 1D practice answers recorded
 
 R201 maker requests a few hundred reliable positions spread around whole loop,
 no black; R202 safe interiors accepted; R203 suggests reducing to1D by sampling

@@ -1,0 +1,52 @@
+{
+  "request": "R208",
+  "status": "pending maker evidence question",
+  "source_photo": "beads-photo-2.jpg",
+  "source_photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "report": "photo2/review/r208/question-proposal.json",
+  "report_sha256": "349352537e11226d2f7b7fabb05b1d9d3db48a9dd3f89c88d81895a84d7da7ff",
+  "supporting_image": "photo2/review/r208/question-proposal.png",
+  "supporting_image_sha256": "a67b32e393e112587374c0fcee0183d12d4fefe02c767fa1070d9724c0cb3a24",
+  "inventory": "photo2/review/r201/interiors.json",
+  "inventory_sha256": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+  "questions": {
+    "Q208.1": {
+      "question": "Do points A and B lie inside two different yellow beads?",
+      "points": [
+        {
+          "label": "A",
+          "sample_index": 59,
+          "distance_pixels": 5,
+          "xy": [
+            1594.4458104389323,
+            246.02580500659153
+          ],
+          "hsv": [
+            0.04908735016366014,
+            0.9547360257402642,
+            0.6310224524783825
+          ]
+        },
+        {
+          "label": "B",
+          "sample_index": 79,
+          "distance_pixels": 25,
+          "xy": [
+            1614.2290521946618,
+            248.96235836629097
+          ],
+          "hsv": [
+            0.10473162709568355,
+            0.9520432456764555,
+            0.9231368730223788
+          ]
+        }
+      ],
+      "observation_number": 14,
+      "observation_id": "0e4066cc-0f87-5d29-92bd-30ae36087228",
+      "number_role": "Automatic observation14; unrelated to maker bead14 or full-string index",
+      "answer": null,
+      "limits": "Point/body distinction only; no exact seam, safe-region extent, centers or adjacency asked"
+    }
+  }
+}

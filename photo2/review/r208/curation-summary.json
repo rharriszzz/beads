@@ -1,0 +1,38 @@
+{
+  "request": "R208",
+  "generator_summary_sha256": "4031889f43c1e3f196cbbd0d16e460672a0e4b4e856f698aa54e56d84c9830b5",
+  "question_manifest_sha256": "9430a1ebae03377857fd862c1353455b58c7c2010571522ea5be2834ea3d88b2",
+  "reviewed_images_sha256": {
+    "adverse-trough.png": "7a43cc046bdfd2d7ac93cb501aabb3b8dbb215a6863aca75d613e74cd98b6c82",
+    "confirmed-parallels.png": "a1c5aed9d7b6e233c8eaee3ffd24c830ea5d65ae568a3fc8c71503d76134d73f",
+    "question-proposal.png": "a67b32e393e112587374c0fcee0183d12d4fefe02c767fa1070d9724c0cb3a24",
+    "sector-1-A118.png": "16913acfa1b232055c90bdb21d73c95a13db8fdf4397b6fc11e91036943d1230",
+    "sector-2-A293.png": "1536bd1faa8ba89f18cc64f5c8c58e7a5c4a2e6f937ca064f918747ac4c6a461",
+    "sector-3-A654.png": "cc99b22a78274700bf085f2641ea6c164083ae5ae79975058424eed7dcd2b38e",
+    "sector-4-A935.png": "121e69f5c16521dfdc130504c5eae4413e8dc6ce9bc9b6821856cea4b8e4f7c6"
+  },
+  "repeat_artifacts_byte_identical": 15,
+  "controls_passed": 6,
+  "protected_inputs_unchanged": 10,
+  "observation_ids_and_positions_unchanged": 208,
+  "pending_questions": [],
+  "previous_curator_and_answer_seals_unchanged": true,
+  "checks": [
+    "Source/photo/input bindings; all outputs including summary repeat byte-identically.",
+    "Existing208 unique observation IDs, positions, modes, route fractions and20-bin counts unchanged.",
+    "Unit tangents, mutual-match counts/offset uniqueness/tolerance, event totals and question coordinates verified.",
+    "Original R201 curator seal and R203 confirmed-point seal remain valid."
+  ],
+  "interpretation": "Evidence annex only; no new body labels, centers, ownership rule, model fit or geometry change",
+  "requests": [
+    "R208",
+    "R209"
+  ],
+  "answer_sources_sha256": {
+    "photo2/profile-transfer-answer-r209.json": "8b7821a3a7c1e1fcbeced9833b50250a0e625d31c7b7730a377ff14bb565c389",
+    "photo2/record_transferred_profile_answer.py": "478880eb4e5bc3b3dd9ac04887d549fb4f61fb38afe4978678fc2857d689d304",
+    "photo2/test_transferred_profile_answer.py": "35d25a40bef1457d1d2e60d60e962b15f1a0df97764472e611edfacc3e3aa1b2",
+    "photo2/review/r208/confirmed-transfer-facts.json": "d74d536e5bfa4788fcee1259df890c7bf1ec6da0861a3fc95bee363fbbdef743"
+  },
+  "question_image_and_points_unchanged_after_answer": true
+}

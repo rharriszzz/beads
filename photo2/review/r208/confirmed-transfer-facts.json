@@ -1,0 +1,131 @@
+{
+  "request": "R209",
+  "confirmed_distinct_yellow_points": [
+    {
+      "label": "A",
+      "sample_index": 59,
+      "distance_pixels": 5,
+      "xy": [
+        1594.4458104389323,
+        246.02580500659153
+      ],
+      "hsv": [
+        0.04908735016366014,
+        0.9547360257402642,
+        0.6310224524783825
+      ]
+    },
+    {
+      "label": "B",
+      "sample_index": 79,
+      "distance_pixels": 25,
+      "xy": [
+        1614.2290521946618,
+        248.96235836629097
+      ],
+      "hsv": [
+        0.10473162709568355,
+        0.9520432456764555,
+        0.9231368730223788
+      ]
+    }
+  ],
+  "safe_regions_confirmed": false,
+  "exact_centers_measured": false,
+  "adjacency_inferred": false,
+  "reference_origin_alias_confirmed": false,
+  "limits": "Point/body distinction only; original interior reference and new points remain distinct evidence objects",
+  "transition": {
+    "sample_count": 21,
+    "path_length_pixels": 20.00000000000001,
+    "minimum_value": 0.40113223867973946,
+    "minimum_value_distance_pixels": 9,
+    "minimum_value_xy": [
+      1598.4024587900783,
+      246.61311567853141
+    ],
+    "value_dip_fraction": 0.3643138416006182,
+    "endpoint_hue_change_degrees": 20.031939695528422,
+    "endpoint_hue_degrees": [
+      17.671446058917653,
+      37.70338575444608
+    ],
+    "proposed_hue_event": {
+      "kind": "hue change",
+      "sample_index": 69,
+      "value": 0.9015730053782427,
+      "saturation": 0.6605509724744426,
+      "signed_hue_change_degrees": 34.290436392729426,
+      "hue_score": 0.08931106538919906,
+      "neutral_score": 0.24220923126131697,
+      "shoulder_value": 0.7665372818857008,
+      "brightness_contrast": 0.06258002776390015,
+      "status": "Feature hypothesis; ownership unresolved",
+      "distance_pixels": 15,
+      "xy": [
+        1604.3374313167972,
+        247.49408168644123
+      ],
+      "parallel_matches": [
+        {
+          "offset_pixels": -10.876336965020167,
+          "sample_index": 70,
+          "distance_pixels": 16,
+          "xy": [
+            1606.9235405973761,
+            236.88244917463766
+          ]
+        },
+        {
+          "offset_pixels": -5.438168482510084,
+          "sample_index": 70,
+          "distance_pixels": 16,
+          "xy": [
+            1606.12506700098,
+            242.26167926453195
+          ]
+        },
+        {
+          "offset_pixels": 0.0,
+          "sample_index": 69,
+          "distance_pixels": 15,
+          "xy": [
+            1604.3374313167972,
+            247.49408168644123
+          ]
+        },
+        {
+          "offset_pixels": 5.438168482510084,
+          "sample_index": 68,
+          "distance_pixels": 14,
+          "xy": [
+            1602.5497956326142,
+            252.72648410835055
+          ]
+        },
+        {
+          "offset_pixels": 10.876336965020167,
+          "sample_index": 68,
+          "distance_pixels": 14,
+          "xy": [
+            1601.751322036218,
+            258.1057141982448
+          ]
+        }
+      ],
+      "matched_paths": 5,
+      "persistence_role": "Along-path proximity only; offset points may cross different bodies"
+    },
+    "seam_status": "Minimum V and weighted hue event are measured cues, not maker-confirmed seam pixels"
+  },
+  "sources": {
+    "photo2/profile-transfer-question-r208.json": "9430a1ebae03377857fd862c1353455b58c7c2010571522ea5be2834ea3d88b2",
+    "photo2/profile-transfer-answer-r209.json": "8b7821a3a7c1e1fcbeced9833b50250a0e625d31c7b7730a377ff14bb565c389",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/review/r208/question-proposal.json": "349352537e11226d2f7b7fabb05b1d9d3db48a9dd3f89c88d81895a84d7da7ff",
+    "photo2/review/r208/question-proposal.png": "a67b32e393e112587374c0fcee0183d12d4fefe02c767fa1070d9724c0cb3a24",
+    "photo2/review/r201/interiors.json": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+    "photo2/record_transferred_profile_answer.py": "478880eb4e5bc3b3dd9ac04887d549fb4f61fb38afe4978678fc2857d689d304",
+    "photo2/practice_centerline_profiles.py": "e196eb9f7842239b4f8a324b7c1600cc3c6040d3b2a43c43810424b21b17e97d"
+  }
+}

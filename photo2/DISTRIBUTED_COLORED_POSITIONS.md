@@ -1,5 +1,8 @@
 # 208 distributed colored interior references — R201–R203
 
+R208 adds [parallel-path cue measurements](PARALLEL_PROFILE_CUES.md) while
+preserving this selected set and every reference position.
+
 The selected set contains **115 red and 93 yellow interior patches**, spread
 around the entire necklace. No black bead is selected. These use your R202
 permission to accept safe interiors: their small positive-patch centroids are

@@ -17,7 +17,48 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R201–R205: distributed colored interiors and answered 1D practice
+## Current R208–R209: parallel-path cues and a second confirmed yellow pair
+
+Standalone continue resumes the declared cue-transfer step, not installation.
+[Raw context, measurements, counterexample and Q208.1](photo2/PARALLEL_PROFILE_CUES.md).
+Four methods compared: V troughs, chroma-weighted circular hue change, neutral
+bright appearance and parallel persistence. Five straight local paths through
+each of208 unchanged interior references; orientation from image-only detector,
+no old spline/manual/model coordinates in local measurements. Frozen S/Q/R
+used separately for assisted interpretation. No new body labels/centers/indices.
+
+Known72 reference windows, three existing fixtures: persistent V troughs147 near
+body transitions versus6 within one body, compared with201/25 before filtering.
+Persistent hue35/10; neutral35/6. Neighborhood tolerance0.15D≈5.15px; overlapping
+windows are exposures, not unique boundaries. Neutral features109/153 on colored
+slots, including25/41 persistent: cannot label black by this cue. Preserve all
+owner/mixing/missed-transition witnesses and the illustrated in-body trough F.
+Photo678/721/666 base V/hue/neutral events,449/582/535 persistent; not bead counts.
+
+Confirmed S/Q zero-offset samples exactly reproduced: trough+11 matches4 paths,
+hue+14 matches3; extra hue+3 also matches3, so one landmark is not one bead.
+Neutral peak+108 matches3 paths near confirmed R+109; spatial association only,
+not an optical centroid or center. Shifted endpoint ownership unresolved;
+large offsets can reverse H differences/cross other bodies. Black stays inactive.
+
+Six controls pass, all seven images inspected, fresh outputs repeat and input/
+ID/point/source/preservation seals checked. Existing208/41 positions, spline,
+camera/count/phase/stretch unchanged; no model fit/new render/GUI/server.
+R209 answers Q208.1 “Two different yellow beads”; no questions pending.
+Raw V minimum+9px,36.4% dip; smoothed trough+10, weighted hue+15 matches5 paths.
+Endpoint H17.7→37.7deg. Point identities only; exact seams/regions/centers/adjacency
+and reference-origin alias unresolved. [Exact answer](photo2/profile-transfer-answer-r209.json).
+Automatic observation14 is unrelated to maker's black14. Exact points/image
+bound in [question record](photo2/profile-transfer-question-r208.json).
+
+**Next bounded task:** begin a small model
+correspondence pilot with41 maker centers and distributed interiors. Interior
+pixels must belong to predicted visible bead surfaces; they are not exact
+visible centers/minor-outward anchors. Keep both hands/N unresolved, and defer
+small zero-net stretch until correspondence supports it. gpt-6.1-sol / High,
+same session; no `/new`.
+
+## Prior R201–R205: distributed colored interiors and answered 1D practice
 
 Maker requests a few hundred uniformly distributed reliable centers, no black
 beads, then accepts safe interiors and proposes H/S/V sampling along the spline

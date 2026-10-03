@@ -26,6 +26,18 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
+**R208 transfer:** [Parallel traces, evidence and owner counterexamples](photo2/PARALLEL_PROFILE_CUES.md).
+Measure five local strips per existing interior, oriented by an image-derived
+axis. Use encoded RGB-before-HSV, circular side means weighted by chroma and
+concentration, V troughs and neutral-brightness peaks; preserve separate cues.
+Same-kind mutual-nearest persistence reduces some in-body features but does not
+prove seams. Evaluate only afterward against known owner IDs, recording mixing,
+repeated transition exposures, misses and in-body witnesses. Bright neutral
+features also lie on colored bodies; do not assign black ownership. An assisted
+confirmed-point comparison is separate from image-only measurement. Preserve
+all reference positions/IDs; future matching uses visible-bead membership for
+interior pixels, without silently treating them as exact outward anchors.
+
 [Distributed subset, raw paired crops and validation](photo2/DISTRIBUTED_COLORED_POSITIONS.md).
 Input-only conservative native colored patches, local appearance perturbation,
 learned per-mode brightness ranking and sparse balanced loop sampling yield208

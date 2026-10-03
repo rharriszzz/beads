@@ -1,0 +1,350 @@
+{
+  "request": "R208",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/bead_profile_cues.py": "32780a4ce5f421934d369af1ba781d15a47594d9091c2fabe25a8b1e403bbeb1",
+    "photo2/review_profile_cues.py": "d164ffa9fd66584c2b7e1df696a20dfe1839fce8df0de223f910236ff911493c",
+    "photo2/practice_centerline_profiles.py": "e196eb9f7842239b4f8a324b7c1600cc3c6040d3b2a43c43810424b21b17e97d",
+    "photo2/distributed_colored_interiors.py": "9cb3314030755c83b2c89f266947abb00786c586ff4889c7f32ec53c06b4d13a",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/review/r201/interiors.json": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+    "photo2/review/r203/report.json": "aecd581f7b6ec33259a9c9265a47bf67f0434f311096901720fed0375cc3594b",
+    "photo2/profile-answers-r204-r205.json": "e5af818507b9381da6877dae6f4723506c18a861d7a5cb1bd78463d05fc12b08",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/review/r201/visual-review.json": "e05ed7664b352976063d5467a5bdc3d055a020f565e3216e353751864334df2d",
+    "photo2/test_profile_cues.py": "d5a25067804459c6b36e556bc36333bdefdcf445e9899d67959e2f51f80529b3"
+  },
+  "protected_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "curated_sha256": {
+    "adverse-trough.json": "ef81f2a22b45b80683e63c036a221b57a9a24d4546b8ae743b67974feaac9b39",
+    "adverse-trough.png": "7a43cc046bdfd2d7ac93cb501aabb3b8dbb215a6863aca75d613e74cd98b6c82",
+    "aggregate.json": "9775fc36af9129f75a4c0864c96cce16f55450c7dcbe0883bd44a04ea33980f5",
+    "calibration.json": "4f9d3475b080b0bce55265c5f93d15473e873ce77a61a471bbe034d5490d398b",
+    "confirmed-example.json": "eb4ccf268a112b6e6142a8a902068a3aac9ea68773b72df09a36b134a7a37ade",
+    "confirmed-parallels.png": "a1c5aed9d7b6e233c8eaee3ffd24c830ea5d65ae568a3fc8c71503d76134d73f",
+    "examples.json": "98e0115490675dc6aec96447c961363c804773275e60272dcc4c05a96542fc57",
+    "question-proposal.json": "349352537e11226d2f7b7fabb05b1d9d3db48a9dd3f89c88d81895a84d7da7ff",
+    "question-proposal.png": "a67b32e393e112587374c0fcee0183d12d4fefe02c767fa1070d9724c0cb3a24",
+    "reference-cues.json": "2db177cd3ecbc0f91ada800438eb09be2e1c234c8bb9857e5e6505d29fac4082",
+    "sector-1-A118.png": "16913acfa1b232055c90bdb21d73c95a13db8fdf4397b6fc11e91036943d1230",
+    "sector-2-A293.png": "1536bd1faa8ba89f18cc64f5c8c58e7a5c4a2e6f937ca064f918747ac4c6a461",
+    "sector-3-A654.png": "cc99b22a78274700bf085f2641ea6c164083ae5ae79975058424eed7dcd2b38e",
+    "sector-4-A935.png": "121e69f5c16521dfdc130504c5eae4413e8dc6ce9bc9b6821856cea4b8e4f7c6"
+  },
+  "profiles": 208,
+  "bins": [
+    {
+      "bin": 0,
+      "profiles": 12,
+      "base_events": 121,
+      "persistent_events": 97
+    },
+    {
+      "bin": 1,
+      "profiles": 11,
+      "base_events": 112,
+      "persistent_events": 87
+    },
+    {
+      "bin": 2,
+      "profiles": 10,
+      "base_events": 92,
+      "persistent_events": 62
+    },
+    {
+      "bin": 3,
+      "profiles": 9,
+      "base_events": 70,
+      "persistent_events": 47
+    },
+    {
+      "bin": 4,
+      "profiles": 13,
+      "base_events": 116,
+      "persistent_events": 85
+    },
+    {
+      "bin": 5,
+      "profiles": 11,
+      "base_events": 106,
+      "persistent_events": 80
+    },
+    {
+      "bin": 6,
+      "profiles": 10,
+      "base_events": 94,
+      "persistent_events": 74
+    },
+    {
+      "bin": 7,
+      "profiles": 12,
+      "base_events": 131,
+      "persistent_events": 113
+    },
+    {
+      "bin": 8,
+      "profiles": 9,
+      "base_events": 95,
+      "persistent_events": 65
+    },
+    {
+      "bin": 9,
+      "profiles": 11,
+      "base_events": 116,
+      "persistent_events": 79
+    },
+    {
+      "bin": 10,
+      "profiles": 12,
+      "base_events": 128,
+      "persistent_events": 112
+    },
+    {
+      "bin": 11,
+      "profiles": 9,
+      "base_events": 90,
+      "persistent_events": 66
+    },
+    {
+      "bin": 12,
+      "profiles": 11,
+      "base_events": 113,
+      "persistent_events": 86
+    },
+    {
+      "bin": 13,
+      "profiles": 11,
+      "base_events": 130,
+      "persistent_events": 92
+    },
+    {
+      "bin": 14,
+      "profiles": 8,
+      "base_events": 82,
+      "persistent_events": 65
+    },
+    {
+      "bin": 15,
+      "profiles": 9,
+      "base_events": 95,
+      "persistent_events": 77
+    },
+    {
+      "bin": 16,
+      "profiles": 8,
+      "base_events": 70,
+      "persistent_events": 45
+    },
+    {
+      "bin": 17,
+      "profiles": 9,
+      "base_events": 82,
+      "persistent_events": 70
+    },
+    {
+      "bin": 18,
+      "profiles": 12,
+      "base_events": 112,
+      "persistent_events": 83
+    },
+    {
+      "bin": 19,
+      "profiles": 11,
+      "base_events": 110,
+      "persistent_events": 81
+    }
+  ],
+  "calibration": [
+    {
+      "fixture": "hand+1-palette0-shift0",
+      "appearance_sha256": "2f8ca127967efb0111791ce42e8958192e78dbda690fbd08a9f7f9728e985267",
+      "ids_sha256": "f770cf89b6d1f5fac0d2ff01ccb27676a612cd6dad1ca814aae97ec1958a2afd",
+      "profiles": 27,
+      "event_counts": {
+        "V trough": {
+          "near body transition": 74,
+          "within one body": 8
+        },
+        "hue change": {
+          "near body transition": 32,
+          "within one body": 26
+        },
+        "neutral bright feature": {
+          "within one body": 26,
+          "near body transition": 32
+        }
+      },
+      "persistent_event_counts": {
+        "V trough": {
+          "near body transition": 55,
+          "within one body": 2
+        },
+        "hue change": {
+          "within one body": 4,
+          "near body transition": 6
+        },
+        "neutral bright feature": {
+          "near body transition": 13,
+          "within one body": 3
+        }
+      },
+      "transition_exposures": {
+        "same palette slot": 79,
+        "different palette slots": 88
+      },
+      "transition_exposures_with_event": {
+        "V trough": {
+          "same palette slot": 48,
+          "different palette slots": 39
+        },
+        "hue change": {
+          "different palette slots": 33,
+          "same palette slot": 5
+        },
+        "neutral bright feature": {
+          "different palette slots": 38,
+          "same palette slot": 2
+        }
+      },
+      "tolerance_pixels": 5.1569432806653985,
+      "limits": [
+        "Repeated local windows can expose the same physical transition; these are not unique global boundary counts.",
+        "Near-transition tolerance is0.15 apparent diameters, not exact edge agreement.",
+        "Neutral bright features can occur on colored bodies; this cue never assigns black ownership.",
+        "Palette-slot equality uses the known fixture construction owner%3 only after cue extraction."
+      ]
+    },
+    {
+      "fixture": "hand-1-palette0-shift0",
+      "appearance_sha256": "503faae5d9be2e0ef8844827a9a0cf116a3bdad44f01246a94413242d5175ba4",
+      "ids_sha256": "a8cd77006575a746424e17e5fd4dea32040a4f8044088287d8ebdc7637132b38",
+      "profiles": 25,
+      "event_counts": {
+        "V trough": {
+          "near body transition": 72,
+          "within one body": 11
+        },
+        "hue change": {
+          "within one body": 24,
+          "near body transition": 30
+        },
+        "neutral bright feature": {
+          "near body transition": 33,
+          "within one body": 26
+        }
+      },
+      "persistent_event_counts": {
+        "V trough": {
+          "near body transition": 52,
+          "within one body": 3
+        },
+        "hue change": {
+          "near body transition": 19,
+          "within one body": 6
+        },
+        "neutral bright feature": {
+          "near body transition": 15,
+          "within one body": 2
+        }
+      },
+      "transition_exposures": {
+        "different palette slots": 96,
+        "same palette slot": 72
+      },
+      "transition_exposures_with_event": {
+        "V trough": {
+          "same palette slot": 50,
+          "different palette slots": 41
+        },
+        "hue change": {
+          "different palette slots": 31,
+          "same palette slot": 10
+        },
+        "neutral bright feature": {
+          "different palette slots": 38,
+          "same palette slot": 3
+        }
+      },
+      "tolerance_pixels": 5.148727221362577,
+      "limits": [
+        "Repeated local windows can expose the same physical transition; these are not unique global boundary counts.",
+        "Near-transition tolerance is0.15 apparent diameters, not exact edge agreement.",
+        "Neutral bright features can occur on colored bodies; this cue never assigns black ownership.",
+        "Palette-slot equality uses the known fixture construction owner%3 only after cue extraction."
+      ]
+    },
+    {
+      "fixture": "hand+1-palette1-shift2",
+      "appearance_sha256": "01bed55de37c7851af87d3318a976b8ec7e92bc10f2c56282ecba54d97b06c01",
+      "ids_sha256": "222dd0d3c5bf703a168f6148d8983b5a0d3a2547d6c86d3935e820afbd6925cd",
+      "profiles": 20,
+      "event_counts": {
+        "V trough": {
+          "near body transition": 55,
+          "within one body": 6
+        },
+        "hue change": {
+          "near body transition": 22,
+          "within one body": 3
+        },
+        "neutral bright feature": {
+          "within one body": 20,
+          "near body transition": 16
+        }
+      },
+      "persistent_event_counts": {
+        "V trough": {
+          "near body transition": 40,
+          "within one body": 1
+        },
+        "hue change": {
+          "near body transition": 10
+        },
+        "neutral bright feature": {
+          "near body transition": 7,
+          "within one body": 1
+        }
+      },
+      "transition_exposures": {
+        "same palette slot": 56,
+        "different palette slots": 79
+      },
+      "transition_exposures_with_event": {
+        "V trough": {
+          "same palette slot": 34,
+          "different palette slots": 30
+        },
+        "hue change": {
+          "different palette slots": 27,
+          "same palette slot": 2
+        },
+        "neutral bright feature": {
+          "different palette slots": 22,
+          "same palette slot": 2
+        }
+      },
+      "tolerance_pixels": 5.1678777075314,
+      "limits": [
+        "Repeated local windows can expose the same physical transition; these are not unique global boundary counts.",
+        "Near-transition tolerance is0.15 apparent diameters, not exact edge agreement.",
+        "Neutral bright features can occur on colored bodies; this cue never assigns black ownership.",
+        "Palette-slot equality uses the known fixture construction owner%3 only after cue extraction."
+      ]
+    }
+  ],
+  "old_observations_unchanged": true,
+  "new_body_labels": false,
+  "fit_performed": false,
+  "reproduction": ".venv/bin/python photo2/review_profile_cues.py"
+}
