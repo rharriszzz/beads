@@ -9,7 +9,68 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R208–R209 — five parallel paths; second yellow pair confirmed
+## Current R210 — frozen visible-region correspondence pilot
+
+Maker says continue. Preflight daisy,eb5109b,photo-2-reconstruction-v2,clean,
+no stashes; fetch upstream0/0. Read handoff/latest log/plan/AGENTS, quick model
+and historical SHAPE_REASONING via git, source projection/centers/prior fixtures.
+No agents/skills/dependencies. Four methods presented: outward anchors,
+projected physical centers, visible-area centroids, positive-pixel membership.
+[Review/raw context/Q210.1](photo2/VISIBLE_CORRESPONDENCE_PILOT.md),
+[all proposals/memberships](photo2/review/r210/report.json),
+[known geometry](photo2/review/r210/calibration.json),
+[resolution](photo2/review/r210/resolution.json),
+[source/output/preservation](photo2/review/r210/summary.json).
+
+visible_correspondence.py uses frozen full SplineRope geometry with all hidden
+occluders. Raster complete conservative candidate bounds at2nativepx; centroid
+is mean verified visible-owned area samples, not physical/reflection/outward
+center and may lie outside an annular/crescent body. Unknown pairs excluded;
+possible additions within bodybound bound finite-grid centroid movement, not
+continuous raster or maker error. Initial probe excluded any uncertain bound,
+removed nearby candidates and inflated distances; abandoned in favor of
+explicit numerical bounds. Exposed outward/facing.12 plus12samples gates central
+candidate fitting. Independent nearest/second-nearest proposals, missing/duplicate
+states retained; no forced bijection or true photo index promotion.
+
+All41 maker centers and208 colored interiors, bothhands at2698/2833/3592,
+historical per-hand R179 phase/origin and89deg projection fixed. Count ties
+projected scale to literal row closure. Original2698/+5%2833 plusprior center
+proxy min3592 are hypotheses only. Main balancedRMS/centralpatch counts:
+minus2698 11.31/111;plus2698 11.64/120;minus2833 11.42/97;plus2833 9.33/93;
+minus3592 7.04/61;plus3592 7.50/65. Lower center distance disagrees with positive
+patch support; no N/hand inference. Every pixel of each positive patch traced,
+95% oneowner/no unfinished/exposed outward defines conditional coherence.
+41–48 uncertain patches percase can overlap splitcounts; no confident sameowner
+differentmode witnesses in sparse208, not proof of correctpose. All tentative
+model-loop indices separate from stable observation IDs; bead_index remainsnull.
+
+Two existing independentR179 POV-ID fixtures,8knowncentroids each:16/16 correct
+nearest associations,4761 verified ray agreements,28 unfinished; ≤.51px model
+versus rendered mean, outward offset≤10.59px. Knowncenters evaluatorassistance,
+not image-only reconstruction. Minus3592 raster1px:nearest41unchanged,maxmean
+shift.47px,balancedRMS7.043→7.049. Four adversecontrols passed: anchorsemantics/
+duplicates, missinghidden candidates, allpixels/unfinished, appearanceconflicts.
+Six raw-first review images inspected; wholephoto plusthreecontext6-modelpanels,
+positivepatch ownership counterexample automatic837 (34pixels:minus2698 owner
+2393 all34,minus3592 owner3190only3/nohit31),pointsemantics question.
+
+Q210.1 pending. Saved-center mark5 M(1265.347932,327.987966), Vvisiblecentroid
+(1267.189189,327.567568), Ominor-outward(1268.716018,335.584483) inminus3592
+tentativegenerator3558. V-M1.89px,V-O8.16px. Separate panels/no overlaps;
+question whetherV/O/both/neither inside sameyellowbodyasM. Not automaticobs5,
+makeroldbead5 or knownfullstring5. [Immutable question/source hashes](photo2/correspondence-question-r210.json).
+No new true photoalias/safe region/exactcenter/modelacceptance requested.
+Question/images/coords frozen after issue; prior answers unchanged.
+
+No fit/curve/camera/phase/origin/stretch/live saves/old ledgers/new POV render/
+GUI/server/launcher/security setting/install change. Ten protected inputs and
+frozen41/208 preserved. Stop at correspondencepilotreview. Nextboundedtask:
+incorporateQ210.1 andlimitedphase/originregistration withcenter+membership loss,
+held-outsections, bothhands/N retained, before adjustingcurve. Eventualzero-net
+stretch suggestion remains deferred. gpt-6.1-sol / High,samesession,no `/new`.
+
+## Prior R208–R209 — five parallel paths; second yellow pair confirmed
 
 Maker says continue; resumes neighboring-path transfer, not bubblewrap install.
 Preflight daisy,13e4d61, clean/no stashes, fetched upstream0/0. Four methods

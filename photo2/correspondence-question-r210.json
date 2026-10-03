@@ -1,0 +1,46 @@
+{
+  "request": "R210",
+  "question_id": "Q210.1",
+  "question": "Q210.1: In photo2/VISIBLE_CORRESPONDENCE_PILOT.md, the first comparison shows your saved center M (center-mark 5), cyan V and magenta O. Which model points lie inside the yellow bead containing M? V is the model visible-region centroid; O is its minor-outward point.",
+  "status": "pending as issued",
+  "points": {
+    "M": [
+      1265.3479324602706,
+      327.987965978947
+    ],
+    "V": [
+      1267.1891891891892,
+      327.56756756756755
+    ],
+    "O": [
+      1268.7160183651945,
+      335.5844826700197
+    ]
+  },
+  "center_number": 5,
+  "center_id": "0c72b77a-a912-45e4-8644-038ee8c3e611",
+  "configuration": {
+    "spline": "photo2/spline-seed-r175.json",
+    "cores": "photo2/review/r157/report.json",
+    "circle_radius": 0.37996483480584586,
+    "parameters": {
+      "nbeads": 3592,
+      "hand": -1,
+      "elevation": 89.0,
+      "roll": 0.0,
+      "phase": -21.979857484559343,
+      "origin_fraction": 0.8016461717772337
+    },
+    "family": "B"
+  },
+  "tentative_generator_index": 3558,
+  "fact_scope": "Point/body membership only; no measured center, boundary, index, model acceptance or new region",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/review/r200/position-basis.json": "e67c3995061841765e9701263e034c958db8edfe0ee4388a46265e34f9eb4b89",
+    "photo2/review/r201/interiors.json": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+    "photo2/review/r210/report.json": "9cd20e036844c0fe1e70fffee3074eacb34251d142bffc7bc98166058ac8d306",
+    "photo2/review/r210/question.png": "70eca2651916e23c628032867b3dbbfab2dcbdf4207ad9f0d5d4adaa08d18834",
+    "photo2/review/r210/question-proposal.json": "b55868d79bbf027dfec1d2d98aaa80eb06fff5d078448b802652bb9b76c11644"
+  }
+}

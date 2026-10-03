@@ -17,7 +17,40 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R208–R209: parallel-path cues and a second confirmed yellow pair
+## Current R210: frozen-model visible-region correspondence pilot
+
+[Raw comparisons and Q210.1](photo2/VISIBLE_CORRESPONDENCE_PILOT.md).
+Four methods compared: minor-outward points, projected physical centers,
+visible-region centroids, and all-pixel interior ownership. Main pilot uses the
+latter two, preserving their different meanings. All41 saved maker centers and
+208 colored references evaluated against both hands at2698/2833/3592; historical
+phase/origin/camera/spline fixed. No geometry fitting or accepted string indices.
+
+Visible-center balanced RMS is smallest for minus3592,7.04px, but its coherent
+central patch count61/208 is below minus2698's111/208 (plus2698:120/208).
+Center-only count preference conflicts with positive-pixel support; no count or
+hand selected. Complete conservative model-body bounds rasterized at2px; all
+bodies remain occluders. Numerical unresolved rays retained, finite-grid mean
+shift bounds recorded.41–48 patches have unfinished rays, overlapping some
+split categories. Nearby alternative matches6–11 percase, no centroid duplicates.
+
+Two existing POV-ID fixtures:16/16 expected center associations,4761 verified
+ray agreements,28 unverified. Centroid discrepancy≤0.51px versus rendered mask;
+outward offset≤10.59px. Minus3592 raster1px versus2px changes centroids≤0.47px,
+no nearest indices, balanced RMS7.043→7.049px. Four adverse controls pass.
+Unchanged41/208 positions/live saves/source model; no new render/GUI/server.
+
+Q210.1 pending: cyan V and magenta O inside same yellow bead as saved center M5?
+V means predicted visible centroid; O minor-outward point. [Frozen points/hashes](photo2/correspondence-question-r210.json).
+Only pictured membership asked, not model acceptance or exact centers.
+
+**Stop:** frozen correspondence pilot and illustrated review. **Next bounded
+task:** incorporate Q210.1; test limited phase/origin registration against both
+center and interior evidence, with held-out sections, before moving centerline.
+Both hands/count hypotheses retained; eventual zero-net stretch deferred.
+gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R208–R209: parallel-path cues and a second confirmed yellow pair
 
 Standalone continue resumes the declared cue-transfer step, not installation.
 [Raw context, measurements, counterexample and Q208.1](photo2/PARALLEL_PROFILE_CUES.md).

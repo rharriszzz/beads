@@ -1410,6 +1410,16 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R210 adds the [frozen-model correspondence pilot](photo2/VISIBLE_CORRESPONDENCE_PILOT.md):
+compare maker visible centers to predicted occlusion-aware visible-region means;
+trace every selected positive-patch pixel separately. Complete candidate bounds,
+all model occluders, unresolved-ray/finite-grid uncertainty, nearest alternatives,
+duplicates and occupied-sector balancing retained. Both hands at three counts,
+fixed historical registration. Best center score and best patch coherence disagree;
+do not select count/hand from nearest-center RMS alone. Known POV-ID and raster
+resolution checks test measurement semantics, not photo correspondence truth.
+Next: limited phase/origin registration with held-out sections before curve changes.
+
 [Audit and raw context](photo2/SAVED_CENTER_AUDIT.md) validates the41 saved maker
 visible-part center marks as an assisted starting set:18 red/23 yellow, all8
 approximate image-arclength sectors supported, largest gap12.93%. Local circular

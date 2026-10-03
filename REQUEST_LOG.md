@@ -3987,3 +3987,88 @@ visible bead surfaces with uncertainty; never silently treat patch centroids or
 profile peaks as exact visible centers/minor-outward anchors. Both hands/N
 unresolved; zero-net local stretch remains deferred. gpt-6.1-sol / High, same
 session; no /new. Scoped commit/push and exact remote/clean state before delivery.
+
+## R210 — Continue: initial visible-region correspondence pilot
+
+Maker says “continue”. Resume the declared small correspondence pilot using
+41 saved visible-part centers and 208 colored interior references. Preflight
+daisy, eb5109b, photo-2-reconstruction-v2, clean/no stashes; fetch/upstream0/0.
+Read handoff/latest log/plan/AGENTS, relevant R200/R201/R208 evidence, quick
+shape model and historical SHAPE_REASONING with git show, projection/source
+surface/model checks. Guessed explorer/report filenames were absent; located
+tangent_viewer and archived parameters/fixtures with rg. No agents/skills/install.
+
+Four methods presented: nearest exposed minor-outward points, projected physical
+centers, predicted visible-region centroids and all-pixel positive-interior
+membership. Main pilot uses the latter two; first two remain separate comparisons.
+New visible_correspondence.py/review_visible_correspondence.py use historical
+hand-specific R179 registration, both hands at 2698/2833/3592. The prior center
+score minimum3592 is a diagnostic hypothesis, not known N. No fit/curve/camera/
+phase/origin/stretch changes; literal physical size and row-closure scale retained.
+No new render/GUI/server/launcher/package/security setting/live-save change.
+
+Complete conservative bounding squares of nearby model bodies rasterized on a
+native2px grid, with all model bodies including hidden as occluders. First-hit
+verified pixels supply unweighted visible-area means, not physical/highlight/
+minor-outward points; means may lie outside annular/crescent regions. Initial
+probe discarded any uncertain bound, removed nearby candidates and inflated
+distances; abandoned in favor of explicit unresolved rays and conservative
+finite-grid centroid movement bounds for possible additions. These do not bound
+continuous quadrature or maker error. Existing exposed-outward/facing.12 central
+gate, ≥48px² sampled area at both1px/2px resolutions. Independent nearest/second
+alternatives, duplicate/missing states explicit; no forced bijection/true aliases.
+Final41 center proposals all cases, zero duplicate nearest visible centroids;
+6–11 second choices within2px. Source-loop indices remain tentative within each
+model; bead_index stays null.
+
+Every positive integer pixel of208 unchanged patches traced. Conditional central
+coherence requires95% one owner, no unfinished rays and exposed outward anchor;
+no requirement for an outward point to lie inside a small patch. Owner/background/
+unknown states retained, no photo-background relabeling. Balanced center RMS
+gives equal weight to8 occupied image-arc sectors, avoiding dense-top dominance.
+Six balanced RMS/coherent-patch counts: minus2698 11.31/111; plus2698 11.64/120;
+minus2833 11.42/97; plus2833 9.33/93; minus3592 7.04/61; plus3592 7.50/65.
+Center-only preference for3592 conflicts with patch support; phase/origin not
+optimized, N/hand unresolved.41–48 patches have unfinished pairs, overlapping
+some split categories. No different appearance modes share a coherent owner
+in this sparse basis; absence of contradiction does not validate poses.
+Black remains excluded from the observational position basis.
+
+Existing independent POV-ID R179 fixtures both hands2698: eight known rendered
+visible centers each;16/16 nearest-index matches,4761 verified ray agreements,
+28 unfinished. Model2px centroid versus rendered means≤.51nativepx; outward
+offset≤10.59px. Evaluator centers known to IDs, not image-only inverse proof.
+Minus3592 native1px versus2px:41 nearest indices unchanged, centroid shift≤.47px,
+balanced RMS7.043→7.049. Four adverse controls pass: anchor semantics/duplicates;
+missing/hidden/native-area gates; all patch pixels/unfinished rays; different
+appearance modes on one owner. Complete17 payloads plus summary repeat unchanged;
+question/source/ID/native-pixel/hash/protected-input bindings checked.
+
+VISIBLE_CORRESPONDENCE_PILOT.md shows raw-first six-model top/right/bend views,
+all41/208 unchanged points on the whole photo and an exact patch-ownership
+counterexample. Automatic837's34 positive pixels: minus2698 owner2393 all34;
+minus3592 owner3190 only3/no-hit31. Marks show model ownership, no whole-bead
+outline. Six curated images inspected. Report/six region banks/calibration/
+resolution/contrast/source hashes tracked; repeats under ignored output/r210.
+Prior inventories/answers frozen. Ten protected inputs and41/208 source positions
+unchanged; original detected geometry/annotations/centers/score files preserved.
+
+Q210.1 asks which V/O/both/neither/cannot-tell lie inside the yellow body containing
+M, maker's saved center-mark5 (not automatic observation5 or known string index).
+M(1265.347932,327.987966), V(1267.189189,327.567568), O(1268.716018,335.584483),
+tentative minus3592 generator3558; V–M1.89px, V–O8.16px. Separate panels avoid
+overlapping labels. correspondence-question-r210.json seals exact photo/points/
+center UUID/configuration/report/inventory/image hashes. Question issued
+asynchronously, pending; no maker reply supplied yet. Only point memberships
+asked, no region extent/center/adjacency/model acceptance/recovered index implied.
+Image/points frozen after issue; older questions remain answered.
+
+Reproduce: .venv/bin/python photo2/review_visible_correspondence.py;
+.venv/bin/python -m unittest discover -s photo2 -p test_visible_correspondence.py.
+Existing known-render files from output/r179 used with ID/parameters/report hashes.
+Stop the frozen correspondence pilot at illustrated review. Next bounded task:
+incorporate Q210.1 and test limited phase/origin registration against centers and
+positive patches, with held-out sections, both hands/counts retained, before
+moving the centerline. Eventual small zero-net stretch remains deferred.
+gpt-6.1-sol / High, same session; no /new. Scoped commit/push and exact remote/
+clean-state verification before delivery.
