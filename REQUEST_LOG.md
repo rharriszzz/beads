@@ -4072,3 +4072,69 @@ positive patches, with held-out sections, both hands/counts retained, before
 moving the centerline. Eventual small zero-net stretch remains deferred.
 gpt-6.1-sol / High, same session; no /new. Scoped commit/push and exact remote/
 clean-state verification before delivery.
+
+## R211 — V, M and O belong to one bead; brightness-method criticism
+
+Maker: “V M and O are all in the same bead.  But your question reveals that your
+method of using darker regions to indicate the part of the bead close to the edge
+and also to indicate the region between beads; this method either is not working
+well, or you don't trust it.” Exact message/reply in correspondence-answer-r211.json.
+Preflight daisy/5e0b2fb, clean/no stashes, fetch/upstream0/0; read current handoff/
+latest log/plan/AGENTS, exact question/proposal and relevant source code/HSV limits.
+No skills/agents/dependencies. Q210.1 answer sealed to original question hash,
+all six source hashes, exact M/V/O coordinates and saved center-mark5 UUID.
+Original question/image/proposal/model report remain unchanged. None pending.
+
+record_correspondence_answer.py promotes same-body memberships only. No safe
+region extent, exact center, physical outward geometry, model count/hand/index
+accepted; bead_index null. Acknowledge that the dark-region distinction was not
+reliably established. Code audit: V is mean model-visible owned pixels; O is
+model minor-outward point. No photo brightness input placed either point or
+caused the ownership query. Appearance supports previous conservative positive
+patches and transition proposals, not a complete photo boundary or edge distance.
+
+Incidental bilinear encoded RGB/HSV samples at confirmed points: M Vbrightness
+0.889949, Vpoint0.858815, Opoint0.786647; O8.4% darker than V on the same confirmed
+body. Short unsmoothed assisted V→O path8.161px/10 samples has no dip below its
+lower endpoint. Intermediate pixels not maker-confirmed; no boundary/edge-distance
+claim or new classifier phase. Bounded facts/source hashes in
+review/r211/confirmed-point-facts.json. Two adverse tests pass: confirmation does
+not certify geometry/regions; changed coordinates/reference/reply refused.
+
+## R212 — Useful positive patches suffice; do not require dark-gap discrimination
+
+Maker: “but you don't need to solve this problem: distinguish a dark part near a
+bead’s edge from a dark gap between beads.  You just need to have a good size of
+pixels definately inside a bead.” Exact instruction in positive-patch-scope-r212.json.
+Accept the correction: useful confident positive interiors are sufficient for
+matching. No full-boundary or dark-edge/gap-classification prerequisite, no
+expansion toward uncertain seams. No numeric patch-size bound supplied here.
+An initially considered next diagnostic comparing dark regions was superseded
+before any such phase ran. Existing supported41/208 positional inputs retained.
+
+## R213 — Prefer easier nearby evidence to difficult visual cases
+
+Maker: “Try do avoid solving the difficult visual problems in the cases where
+there are easier visual problem kind of adjacent to your questions, and these
+easier questions are sufficient to establist a majority of bead visual locations
+in the image.” Exact instruction in easy-evidence-priority-r213.json. Favor clear
+substantial colored interiors adjacent/nearby to ambiguous bodies, growing broad
+location coverage. Retain difficult bodies unresolved without making them blockers;
+prefer easy informative questions needed for useful coverage/matching. Sparse208
+references are not a certified majority of all visible beads. No new question.
+
+Current plan/handoff/methods/illustrated review now record both priority corrections
+and Q210.1's answer; issued question stays immutable as originally pending.
+Two answer-binding tests pass; fresh fact output identical; source seals, unchanged
+R210 artifacts/41+208 references/ten protected inputs, JSON/syntax/local links,
+append-only log and diff checks verified. No fit/detector/curve/camera/phase/origin/
+stretch/new POV render/GUI/server/security-setting/live-save change.
+
+Reproduce: .venv/bin/python photo2/record_correspondence_answer.py;
+.venv/bin/python -m unittest discover -s photo2 -p test_correspondence_answer.py.
+Stop answer/scope recording. Next bounded task: limited phase/origin registration
+against saved centers and useful positive patches, with held-out sections;
+use easier nearby colored evidence if more localization is needed. Keep both
+hands/counts, before moving centerline; eventual zero-net stretch retained.
+gpt-6.1-sol / High, same session; no /new. Scoped commit/push and remote/clean
+verification before delivery.

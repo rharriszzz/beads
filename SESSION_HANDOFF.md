@@ -9,7 +9,55 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R210 — frozen visible-region correspondence pilot
+## Current R211–R213 — confirmed points; positive patches and easier evidence
+
+Maker answers Q210.1: “V M and O are all in the same bead.” Also challenges
+reliability/trust of using darkness for within-bead edges and interbead gaps.
+Preflight daisy/5e0b2fb, clean/no stashes, fetch/upstream0/0. Read current
+handoff/latestlog/plan/AGENTS and exact question/proposal/source implementations.
+V/O were entirely from simulated geometry; no brightness threshold placed them.
+Appearance supplies conservative positive patches and diagnostic features,
+not validated complete photo boundaries. Acknowledge limitation clearly.
+
+R212 corrects scope: “but you don't need to solve this problem: distinguish a
+dark part near a bead’s edge from a dark gap between beads.  You just need to
+have a good size of pixels definately inside a bead.” Current instruction takes
+precedence. [Exact scope](photo2/positive-patch-scope-r212.json). Do NOT turn the
+critique into an edge/gap-classifier prerequisite, demand full boundaries or
+expand patches toward uncertain seams. Existing41 centers/208 positive interiors
+remain matching basis; preserve their centroid/interior semantics and uncertainty.
+
+R213: “Try do avoid solving the difficult visual problems in the cases where
+there are easier visual problem kind of adjacent to your questions, and these
+easier questions are sufficient to establist a majority of bead visual locations
+in the image.” [Exact priority](photo2/easy-evidence-priority-r213.json). Favor
+nearby substantial clear colored cores, use them to grow location coverage,
+retain difficult bodies unresolved without making them blockers. Ask only easy,
+informative questions that affect useful coverage/matching. Sparse208 references
+do not yet certify a majority of visible bodies. No difficult boundary phase.
+
+[Original illustrated review](photo2/VISIBLE_CORRESPONDENCE_PILOT.md),
+[exact answer including criticism](photo2/correspondence-answer-r211.json),
+[bounded facts/current scope/source hashes](photo2/review/r211/confirmed-point-facts.json).
+record_correspondence_answer.py verifies frozen question hash/all source seals,
+exact coordinates/centerUUID; promotes three pictured point/body memberships
+only. No region extent/exact center/physical outward geometry/count/hand/index.
+The original Q210.1 manifest/image/proposal/report remain unchanged. None pending.
+Incidental HSV at reviewed points: Vbrightness.8588,O.7866 (8.4% lower) on same
+confirmed body; short assisted V→O line has no dip below lower endpoint. No
+intermediate pixel ownership, edge distance or boundary claim; not a new phase.
+
+Two adverse answer-binding tests cover only-point promotion and refusal to inherit
+confirmation after changed coordinates/reference/reply. Original geometry,
+41/208 references, live saves/old ledgers preserved; no detector/fit/curve/camera/
+phase/origin/stretch/new render/GUI/server/install/agents/skills. Stop answer/scope
+recording. Next bounded task: limited phase/origin registration with center and
+positive-patch loss, held-out sections, both hands/count retained, before moving
+centerline. Dark-edge/gap discrimination is unnecessary. Favor easier adjacent/
+nearby colored evidence if further localization is needed. gpt-6.1-sol / High,
+same session, no `/new`.
+
+## Prior R210 — frozen visible-region correspondence pilot
 
 Maker says continue. Preflight daisy,eb5109b,photo-2-reconstruction-v2,clean,
 no stashes; fetch upstream0/0. Read handoff/latest log/plan/AGENTS, quick model

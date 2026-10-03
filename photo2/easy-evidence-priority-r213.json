@@ -1,0 +1,13 @@
+{
+  "request": "R213",
+  "verbatim_user_message": "Try do avoid solving the difficult visual problems in the cases where there are easier visual problem kind of adjacent to your questions, and these easier questions are sufficient to establist a majority of bead visual locations in the image.",
+  "priority": "Use nearby easier visual evidence that is sufficient to establish bead locations",
+  "implementation_policy": [
+    "Prefer substantial clear colored interiors in the current nonblack positional phase.",
+    "When a body is ambiguous, look at adjacent or nearby clearer bodies along the necklace.",
+    "Ask questions only when their answers change location coverage or matching; choose easy informative examples.",
+    "Retain difficult bodies as unresolved coverage records, without making them a prerequisite for useful matching."
+  ],
+  "coverage_goal": "Establish a majority of usable visible bead locations from easy evidence; do not claim this is already achieved by the sparse 208 references.",
+  "next_task": "Limited registration using reliable positive patches and saved centers; favor easy nearby evidence if any further localization is needed"
+}

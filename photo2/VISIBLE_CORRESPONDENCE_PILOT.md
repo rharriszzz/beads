@@ -1,4 +1,4 @@
-# Visible-region correspondence pilot — R210
+# Visible-region correspondence pilot — R210–R213
 
 The first comparison uses all **41 saved visible-part centers** and **208 colored
 interior references** against six frozen models. There is a useful disagreement:
@@ -20,8 +20,35 @@ This is a tentative association in the fixed minus-3,592 model. V is 1.89px
 from M; V and O differ by 8.16px. An answer would confirm only the pictured
 point/body memberships, not exact centers, safe-region extent, adjacency, the
 model's count/hand or a string index. [Exact points and source hashes](correspondence-question-r210.json).
-The question is pending. Earlier questions remain answered. Preserve this image
-and its coordinates after review.
+**R211 answer: “V M and O are all in the same bead.”** All three pictured
+point locations now belong to the same photo bead containing your center-mark5.
+This does not confirm their exact geometric meanings or the model's index/count.
+[Exact reply and criticism](correspondence-answer-r211.json) ·
+[Bounded point facts](review/r211/confirmed-point-facts.json).
+No questions remain pending. The original image and question coordinates are
+preserved; the issued question file retains its original status as a frozen record.
+
+You also questioned whether the darkness method works reliably or is trusted.
+V and O were calculated from model geometry; photo brightness did not place them
+or cause this question. Appearance measurements supplied the earlier small
+positive patches and diagnostic transition candidates. Those cues were never
+validated as complete photo boundaries or distances to a bead edge.
+
+**R212 clarifies the objective: a useful patch of pixels definitely inside each
+selected bead is sufficient.** Separating a dark bead edge from a dark gap is
+not a prerequisite. Use the saved positive patches for matching; uncertainty
+about surrounding borders does not invalidate a well-supported interior.
+[Exact scope correction](positive-patch-scope-r212.json).
+No automatic bead-region expansion or new edge/gap classifier is introduced.
+
+**R213 prioritizes easier nearby evidence.** When a body is visually difficult,
+look along the necklace for adjacent clear colored interiors and use them to
+establish locations. Difficult bodies stay unresolved in coverage accounting;
+they do not hold up matching supported observations. Further questions should
+favor easy, informative examples needed for coverage, rather than settling every
+ambiguous patch. The goal is broad coverage of usable visible bodies; the sparse
+208 references alone do not establish a majority of all visible beads.
+[Exact priority instruction](easy-evidence-priority-r213.json).
 
 ## Methods and measurement meanings
 
@@ -162,9 +189,20 @@ source geometry, live centers, score files and annotation saves remain unchanged
 Existing known-render files are used from `photo2/output/r179`; their exact hashes
 and original report/configuration hashes are recorded. No new POV render is made.
 
-Stop at this frozen-model pilot and the illustrated point-membership review.
-Next bounded task: incorporate Q210.1 and test limited phase/origin registration
+Q210.1 is answered; stop this answer/scope-recording step here.
+Next bounded task: test limited phase/origin registration
 using both center residuals and positive patch membership, with held-out sections,
-before moving the centerline. Preserve both hands/count alternatives and the
+before moving the centerline. A useful positive interior is sufficient; do not
+add an exact edge/gap distinction or full-boundary requirement.
+If more localization is needed, use nearby easier colored evidence and retain
+difficult cases as unresolved.
+Preserve both hands/count alternatives and the
 user's eventual small zero-net stretch constraint. Recommendation:
 gpt-6.1-sol / High; same session, no `/new`.
+
+Record the answer reproducibly with:
+
+```bash
+.venv/bin/python photo2/record_correspondence_answer.py
+.venv/bin/python -m unittest discover -s photo2 -p test_correspondence_answer.py
+```

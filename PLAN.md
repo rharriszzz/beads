@@ -17,7 +17,33 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R210: frozen-model visible-region correspondence pilot
+## Current R211–R213: same-bead answer; positive patches and easier evidence
+
+Maker confirms V/M/O all lie in the same photo bead containing saved center-mark5.
+[Reply](photo2/correspondence-answer-r211.json) bound to original points/image;
+[point facts](photo2/review/r211/confirmed-point-facts.json). No exact centers,
+boundaries, region extent, model index/count/hand accepted. Q210.1 answered;
+none pending. V/O placement was geometric, with no photo brightness input.
+
+R212 clarifies: a useful patch of pixels confidently inside each selected bead
+is sufficient. [Exact instruction](photo2/positive-patch-scope-r212.json).
+Do not require classifying dark edges versus gaps, full boundaries, or expanding
+patches toward uncertain seams. Existing supported positive patches remain the
+matching basis. The creator's critique of brightness reliability is preserved
+without turning it into an unnecessary boundary-analysis task.
+R213: favor easier adjacent/nearby colored interiors when a body is ambiguous;
+use them to establish broad bead-location coverage, keeping difficult bodies
+unresolved without blocking useful matching. [Exact priority](photo2/easy-evidence-priority-r213.json).
+Do not claim the sparse208 already establish a majority of all visible beads.
+
+Stop this answer/scope record. **Next bounded task:** limited phase/origin
+registration against saved centers and positive-patch membership, with held-out
+sections, before moving the centerline. Favor nearby easy evidence if more
+localization is needed; do not make difficult visual cases a prerequisite.
+Keep both hands/count hypotheses and
+eventual zero-net stretch constraint. gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R210: frozen-model visible-region correspondence pilot
 
 [Raw comparisons and Q210.1](photo2/VISIBLE_CORRESPONDENCE_PILOT.md).
 Four methods compared: minor-outward points, projected physical centers,

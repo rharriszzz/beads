@@ -1419,6 +1419,14 @@ fixed historical registration. Best center score and best patch coherence disagr
 do not select count/hand from nearest-center RMS alone. Known POV-ID and raster
 resolution checks test measurement semantics, not photo correspondence truth.
 Next: limited phase/origin registration with held-out sections before curve changes.
+R211 confirms V/M/O share one photo bead at the reviewed coordinates. R212
+clarifies that useful positive interior patches suffice: dark-edge versus gap
+classification and complete boundaries are not prerequisites to matching.
+[Exact active scope](photo2/positive-patch-scope-r212.json).
+R213 prioritizes easier nearby colored interiors over resolving every difficult
+visual body. Grow broad location coverage from those positive patches while
+retaining unresolved bodies; difficulty is not a matching gate.
+[Exact priority](photo2/easy-evidence-priority-r213.json).
 
 [Audit and raw context](photo2/SAVED_CENTER_AUDIT.md) validates the41 saved maker
 visible-part center marks as an assisted starting set:18 red/23 yellow, all8

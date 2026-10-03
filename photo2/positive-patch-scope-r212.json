@@ -1,0 +1,10 @@
+{
+  "request": "R212",
+  "verbatim_user_message": "but you don't need to solve this problem: distinguish a dark part near a bead\u2019s edge from a dark gap between beads.  You just need to have a good size of pixels definately inside a bead.",
+  "current_objective": "A useful patch of pixels confidently inside each selected bead",
+  "complete_bead_boundaries_required": false,
+  "dark_edge_versus_gap_classifier_required": false,
+  "good_size_numeric_threshold_supplied": false,
+  "matching_evidence": "Positive-patch pixels belonging to one bead; patch centroid is not an exact physical or visible center",
+  "next_task": "Limited phase/origin registration using saved centers and positive patch membership; do not add an edge/gap-discrimination prerequisite"
+}

@@ -1,0 +1,221 @@
+{
+  "request": "R211",
+  "question_id": "Q210.1",
+  "question_status": "answered",
+  "confirmed_same_bead_points": {
+    "M": [
+      1265.3479324602706,
+      327.987965978947
+    ],
+    "V": [
+      1267.1891891891892,
+      327.56756756756755
+    ],
+    "O": [
+      1268.7160183651945,
+      335.5844826700197
+    ]
+  },
+  "photo_reference": {
+    "center_id": "0c72b77a-a912-45e4-8644-038ee8c3e611",
+    "center_number": 5
+  },
+  "safe_regions_confirmed": false,
+  "exact_centers_measured": false,
+  "predicted_visible_region_accepted": false,
+  "outward_geometry_measured": false,
+  "model_count_or_hand_confirmed": false,
+  "predicted_generator_index_confirmed": false,
+  "bead_index": null,
+  "limits": "Point/body memberships only; original geometric model remains a hypothesis",
+  "appearance_at_confirmed_points": {
+    "M": {
+      "rgb_encoded_0_1": [
+        0.8899490209375887,
+        0.5182184065192906,
+        0.010372154041879765
+      ],
+      "hue_degrees": 34.642538128799565,
+      "saturation": 0.9883452267513566,
+      "value": 0.8899490209375887
+    },
+    "V": {
+      "rgb_encoded_0_1": [
+        0.858814935762472,
+        0.44450364513957596,
+        0.0
+      ],
+      "hue_degrees": 31.054674991994915,
+      "saturation": 1.0,
+      "value": 0.858814935762472
+    },
+    "O": {
+      "rgb_encoded_0_1": [
+        0.7866465442316244,
+        0.4283658842915974,
+        0.17024360485921694
+      ],
+      "hue_degrees": 25.12534541401004,
+      "saturation": 0.7835831020836601,
+      "value": 0.7866465442316244
+    }
+  },
+  "assisted_same_bead_endpoint_diagnostic": {
+    "start": "V",
+    "end": "O",
+    "path_length_pixels": 8.161013116802769,
+    "sample_count": 10,
+    "coordinates": [
+      [
+        1267.1891891891892,
+        327.56756756756755
+      ],
+      [
+        1267.358836875412,
+        328.45833591228444
+      ],
+      [
+        1267.5284845616347,
+        329.3491042570014
+      ],
+      [
+        1267.6981322478575,
+        330.2398726017183
+      ],
+      [
+        1267.8677799340803,
+        331.13064094643516
+      ],
+      [
+        1268.0374276203033,
+        332.0214092911521
+      ],
+      [
+        1268.2070753065261,
+        332.912177635869
+      ],
+      [
+        1268.376722992749,
+        333.8029459805859
+      ],
+      [
+        1268.5463706789717,
+        334.69371432530284
+      ],
+      [
+        1268.7160183651945,
+        335.5844826700197
+      ]
+    ],
+    "hsv": [
+      [
+        0.08626298608887477,
+        1.0,
+        0.858814935762472
+      ],
+      [
+        0.08588654263708022,
+        1.0,
+        0.8582687081724839
+      ],
+      [
+        0.08546457710674547,
+        0.9984921701103671,
+        0.8562262314838247
+      ],
+      [
+        0.08521778801809048,
+        0.9935648231829924,
+        0.8505719406107981
+      ],
+      [
+        0.08428182945653291,
+        0.9784437719479651,
+        0.8461681913803905
+      ],
+      [
+        0.08239270914257033,
+        0.9395788898990146,
+        0.8496594173226274
+      ],
+      [
+        0.08194543861423673,
+        0.9150957387465076,
+        0.843671851926529
+      ],
+      [
+        0.08067871747275555,
+        0.8971022652575946,
+        0.832163022192274
+      ],
+      [
+        0.07711409425483988,
+        0.8602531108124956,
+        0.8089058735489247
+      ],
+      [
+        0.06979262615002789,
+        0.7835831020836601,
+        0.7866465442316244
+      ]
+    ],
+    "outward_endpoint_darker_fraction": 0.08403252962383001,
+    "minimum_value": 0.7866465442316244,
+    "dip_below_lower_endpoint_fraction": 0.0,
+    "path_pixels_confirmed": false,
+    "interpretation": "Confirmed endpoints on one bead have different brightness; no bead boundary or distance to its edge follows from darkness",
+    "sampling": "Unsmoothed bilinear encoded RGB then HSV; native pixels, x right/y down; no fixed hue ranges"
+  },
+  "code_role_audit": {
+    "V_and_O_placement_uses_photo_brightness": false,
+    "V_definition": "Mean visible-owned model pixels after all occlusion",
+    "O_definition": "Model minor-outward surface point",
+    "positive_interior_selection_uses_local_appearance": true,
+    "dark_troughs_used_as_certified_photo_seams": false,
+    "reliability": "Conservative positive patches are the required evidence; complete photo boundaries have not been established",
+    "known_counterexample": "photo2/review/r208/adverse-trough.json: persistent trough inside a single known body",
+    "next_task": "Limited phase/origin registration using positive patch pixels and saved centers; no dark-edge/gap classification prerequisite"
+  },
+  "current_scope": {
+    "request": "R212",
+    "verbatim_user_message": "but you don't need to solve this problem: distinguish a dark part near a bead\u2019s edge from a dark gap between beads.  You just need to have a good size of pixels definately inside a bead.",
+    "current_objective": "A useful patch of pixels confidently inside each selected bead",
+    "complete_bead_boundaries_required": false,
+    "dark_edge_versus_gap_classifier_required": false,
+    "good_size_numeric_threshold_supplied": false,
+    "matching_evidence": "Positive-patch pixels belonging to one bead; patch centroid is not an exact physical or visible center",
+    "next_task": "Limited phase/origin registration using saved centers and positive patch membership; do not add an edge/gap-discrimination prerequisite"
+  },
+  "evidence_priority": {
+    "request": "R213",
+    "verbatim_user_message": "Try do avoid solving the difficult visual problems in the cases where there are easier visual problem kind of adjacent to your questions, and these easier questions are sufficient to establist a majority of bead visual locations in the image.",
+    "priority": "Use nearby easier visual evidence that is sufficient to establish bead locations",
+    "implementation_policy": [
+      "Prefer substantial clear colored interiors in the current nonblack positional phase.",
+      "When a body is ambiguous, look at adjacent or nearby clearer bodies along the necklace.",
+      "Ask questions only when their answers change location coverage or matching; choose easy informative examples.",
+      "Retain difficult bodies as unresolved coverage records, without making them a prerequisite for useful matching."
+    ],
+    "coverage_goal": "Establish a majority of usable visible bead locations from easy evidence; do not claim this is already achieved by the sparse 208 references.",
+    "next_task": "Limited registration using reliable positive patches and saved centers; favor easy nearby evidence if any further localization is needed"
+  },
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/review/r200/position-basis.json": "e67c3995061841765e9701263e034c958db8edfe0ee4388a46265e34f9eb4b89",
+    "photo2/review/r201/interiors.json": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+    "photo2/review/r210/report.json": "9cd20e036844c0fe1e70fffee3074eacb34251d142bffc7bc98166058ac8d306",
+    "photo2/review/r210/question.png": "70eca2651916e23c628032867b3dbbfab2dcbdf4207ad9f0d5d4adaa08d18834",
+    "photo2/review/r210/question-proposal.json": "b55868d79bbf027dfec1d2d98aaa80eb06fff5d078448b802652bb9b76c11644",
+    "photo2/correspondence-question-r210.json": "293a2ffb1109cf670035e6d67cab7bf088ec3340a7392da71f245a4938b7fb5b",
+    "photo2/correspondence-answer-r211.json": "4bb31ef26ad81674026fc187e0d100d8cde7337d0302e7576539cedf260a9b64",
+    "photo2/record_correspondence_answer.py": "3747c8d2ae06e8f32dd38be14d9ddf2a42c5bbe1bc1bea7ba1ac05f423af0529",
+    "photo2/test_correspondence_answer.py": "a7b4d56aa48c3c1e6d3deb4eaebef1133e86595d697a8bf886ea1e78dcca092a",
+    "photo2/practice_centerline_profiles.py": "e196eb9f7842239b4f8a324b7c1600cc3c6040d3b2a43c43810424b21b17e97d",
+    "photo2/visible_correspondence.py": "4ff7f0e745d7a1cfdae708b78275f54ba2676155ed8599bf3b9c0d4f0e4d559d",
+    "photo2/review_visible_correspondence.py": "ff375c77c590b512204752e914e2f90c0c5b440c0c7f6f2bdf2fc427a5770ddc",
+    "photo2/bead_profile_cues.py": "32780a4ce5f421934d369af1ba781d15a47594d9091c2fabe25a8b1e403bbeb1",
+    "photo2/review/r208/adverse-trough.json": "ef81f2a22b45b80683e63c036a221b57a9a24d4546b8ae743b67974feaac9b39",
+    "photo2/positive-patch-scope-r212.json": "2c3974794c26f26503d439489413cac1220f0950428007334743ecda9ab466c1",
+    "photo2/easy-evidence-priority-r213.json": "a1be2217815aec0c31cde56deae7b84e125bfaff7526aa8a37b780fae62a6812"
+  }
+}
