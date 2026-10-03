@@ -1,0 +1,4268 @@
+[
+  {
+    "fixture": "minus-2698",
+    "ids_sha256": "fe118621858c5f21701ed2c57a5259878af6e95be66ff3d8efc7d91982f63687",
+    "known_configuration": {
+      "spline": "photo2/spline-seed-r175.json",
+      "cores": "photo2/review/r157/report.json",
+      "circle_radius": 0.37996483480584586,
+      "parameters": {
+        "nbeads": 2698,
+        "hand": -1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -21.979857484559343,
+        "origin_fraction": 0.8016461717772337
+      },
+      "family": "B"
+    },
+    "perturbed_start": {
+      "spline": "photo2/spline-seed-r175.json",
+      "cores": "photo2/review/r157/report.json",
+      "circle_radius": 0.37996483480584586,
+      "parameters": {
+        "nbeads": 2698,
+        "hand": -1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": 18.020142515440657,
+        "origin_fraction": 0.8017697200846219
+      },
+      "family": "B"
+    },
+    "fitted_configuration": {
+      "spline": "photo2/spline-seed-r175.json",
+      "cores": "photo2/review/r157/report.json",
+      "circle_radius": 0.37996483480584586,
+      "parameters": {
+        "nbeads": 2698,
+        "hand": -1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -21.979857484559343,
+        "origin_fraction": 0.8016461717772337
+      },
+      "family": "B"
+    },
+    "assistance": "Known POV visible centroids, inset ID-mask pixels and one training same-body group; no automatic appearance detection or hand/count recovery claim",
+    "baseline": {
+      "training": {
+        "objective": 0.8085707627413896,
+        "balanced_center_rms_pixels": 13.236027644789706,
+        "center_mse_by_sector": {
+          "0": 78.29589814243609,
+          "2": 314.4080051064075,
+          "4": 88.40510501987693,
+          "6": 219.66070298582872
+        },
+        "balanced_patch_support": 0.35617816091954024,
+        "patch_support_by_sector": {
+          "0": 0.6833333333333333,
+          "2": 0.0,
+          "4": 0.7413793103448276,
+          "6": 0.0
+        },
+        "coherent_central_patches": 0,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 1,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "held_out": {
+        "objective": 0.31965680542774383,
+        "balanced_center_rms_pixels": 8.49628953460094,
+        "center_mse_by_sector": {
+          "1": 86.26624981831561,
+          "3": 74.83939672409508,
+          "5": 51.986908878659,
+          "7": 75.65518800200816
+        },
+        "balanced_patch_support": 0.74822695035461,
+        "patch_support_by_sector": {
+          "1": 0.75,
+          "3": 0.8,
+          "5": 0.6595744680851063,
+          "7": 0.7833333333333333
+        },
+        "coherent_central_patches": 0,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 1,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "all": {
+        "objective": 0.5641137840845667,
+        "balanced_center_rms_pixels": 11.121586300285736,
+        "center_mse_by_sector": {
+          "0": 78.29589814243609,
+          "1": 86.26624981831561,
+          "2": 314.4080051064075,
+          "3": 74.83939672409508,
+          "4": 88.40510501987693,
+          "5": 51.986908878659,
+          "6": 219.66070298582872,
+          "7": 75.65518800200816
+        },
+        "balanced_patch_support": 0.5522025556370751,
+        "patch_support_by_sector": {
+          "0": 0.6833333333333333,
+          "1": 0.75,
+          "2": 0.0,
+          "3": 0.8,
+          "4": 0.7413793103448276,
+          "5": 0.6595744680851063,
+          "6": 0.0,
+          "7": 0.7833333333333333
+        },
+        "coherent_central_patches": 0,
+        "total_patches": 8,
+        "total_centers": 8,
+        "missing_centers": 0,
+        "uncertain_patches": 2,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      }
+    },
+    "registered": {
+      "training": {
+        "objective": 5.527976067953303e-05,
+        "balanced_center_rms_pixels": 0.24245405370321632,
+        "center_mse_by_sector": {
+          "0": 0.03717647213093699,
+          "2": 0.002260131695017145,
+          "4": 0.1129325020975282,
+          "6": 0.08276676670500606
+        },
+        "balanced_patch_support": 1.0,
+        "patch_support_by_sector": {
+          "0": 1.0,
+          "2": 1.0,
+          "4": 1.0,
+          "6": 1.0
+        },
+        "coherent_central_patches": 4,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 0,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "held_out": {
+        "objective": 0.005409293633428657,
+        "balanced_center_rms_pixels": 0.3096110589989541,
+        "center_mse_by_sector": {
+          "1": 0.05569594400931276,
+          "3": 0.07498109718600744,
+          "5": 0.040153879075578824,
+          "7": 0.21260511114691627
+        },
+        "balanced_patch_support": 0.9946808510638298,
+        "patch_support_by_sector": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9787234042553191,
+          "7": 1.0
+        },
+        "coherent_central_patches": 3,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 1,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "all": {
+        "objective": 0.002732286697054039,
+        "balanced_center_rms_pixels": 0.27806741629645854,
+        "center_mse_by_sector": {
+          "0": 0.03717647213093699,
+          "1": 0.05569594400931276,
+          "2": 0.002260131695017145,
+          "3": 0.07498109718600744,
+          "4": 0.1129325020975282,
+          "5": 0.040153879075578824,
+          "6": 0.08276676670500606,
+          "7": 0.21260511114691627
+        },
+        "balanced_patch_support": 0.9973404255319149,
+        "patch_support_by_sector": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 0.9787234042553191,
+          "6": 1.0,
+          "7": 1.0
+        },
+        "coherent_central_patches": 7,
+        "total_patches": 8,
+        "total_centers": 8,
+        "missing_centers": 0,
+        "uncertain_patches": 1,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      }
+    },
+    "max_known_center_geometry_error_pixels": 0.0,
+    "expected_indices": [
+      0,
+      383,
+      768,
+      1156,
+      1540,
+      1925,
+      2309,
+      2697
+    ],
+    "tentative_fitted_indices": [
+      0,
+      383,
+      768,
+      1156,
+      1540,
+      1925,
+      2309,
+      2697
+    ],
+    "same_body_groups": [
+      {
+        "name": "known-training-body",
+        "points_xy": [
+          [
+            1337,
+            270
+          ],
+          [
+            1347,
+            267
+          ],
+          [
+            1355,
+            278
+          ]
+        ]
+      }
+    ],
+    "trials": [
+      {
+        "candidate": 0,
+        "stage": "baseline",
+        "phase_delta_degrees": 0.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.8085707627413896,
+          "balanced_center_rms_pixels": 13.236027644789706,
+          "center_mse_by_sector": {
+            "0": 78.29589814243609,
+            "2": 314.4080051064075,
+            "4": 88.40510501987693,
+            "6": 219.66070298582872
+          },
+          "balanced_patch_support": 0.35617816091954024,
+          "patch_support_by_sector": {
+            "0": 0.6833333333333333,
+            "2": 0.0,
+            "4": 0.7413793103448276,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 1,
+        "stage": "coarse",
+        "phase_delta_degrees": -160.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.5802498818628795,
+          "balanced_center_rms_pixels": 10.321011507651663,
+          "center_mse_by_sector": {
+            "0": 71.68613954984956,
+            "2": 55.28976384706049,
+            "4": 75.85993518976474,
+            "6": 223.25727557763742
+          },
+          "balanced_patch_support": 0.5199233716475096,
+          "patch_support_by_sector": {
+            "0": 0.6333333333333333,
+            "2": 0.7222222222222222,
+            "4": 0.7241379310344828,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2696,
+              4
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 2,
+        "stage": "coarse",
+        "phase_delta_degrees": -160.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.523835221394564,
+          "balanced_center_rms_pixels": 10.219508570365605,
+          "center_mse_by_sector": {
+            "0": 57.60802738454954,
+            "2": 37.37994720697758,
+            "4": 60.17811223567331,
+            "6": 262.58733485190373
+          },
+          "balanced_patch_support": 0.5743773946360153,
+          "patch_support_by_sector": {
+            "0": 0.7333333333333333,
+            "2": 0.8055555555555556,
+            "4": 0.7586206896551724,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 3,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2696,
+              4
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 3,
+        "stage": "coarse",
+        "phase_delta_degrees": -160.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.487166416244383,
+          "balanced_center_rms_pixels": 10.28496951892167,
+          "center_mse_by_sector": {
+            "0": 43.52157027852536,
+            "2": 27.376905897282388,
+            "4": 49.07028747428514,
+            "6": 303.1536283704985
+          },
+          "balanced_patch_support": 0.6123084291187739,
+          "patch_support_by_sector": {
+            "0": 0.8333333333333334,
+            "2": 0.8055555555555556,
+            "4": 0.8103448275862069,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2696,
+              4
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 4,
+        "stage": "coarse",
+        "phase_delta_degrees": -120.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.786760878873952,
+          "balanced_center_rms_pixels": 13.49907622090341,
+          "center_mse_by_sector": {
+            "0": 152.9919779862394,
+            "2": 217.67474097149105,
+            "4": 193.44792860948965,
+            "6": 164.78558770381932
+          },
+          "balanced_patch_support": 0.38460144927536233,
+          "patch_support_by_sector": {
+            "0": 0.5166666666666667,
+            "2": 0.0,
+            "4": 0.5,
+            "6": 0.5217391304347826
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              2697,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 5,
+        "stage": "coarse",
+        "phase_delta_degrees": -120.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.7401473156706526,
+          "balanced_center_rms_pixels": 13.361846290733842,
+          "center_mse_by_sector": {
+            "0": 155.35757883954366,
+            "2": 212.10917954682918,
+            "4": 196.21523113930655,
+            "6": 150.47375566311166
+          },
+          "balanced_patch_support": 0.42774862568715644,
+          "patch_support_by_sector": {
+            "0": 0.5333333333333333,
+            "2": 0.0,
+            "4": 0.5689655172413793,
+            "6": 0.6086956521739131
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              2697,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 6,
+        "stage": "coarse",
+        "phase_delta_degrees": -120.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.7074325578904956,
+          "balanced_center_rms_pixels": 12.91772268160487,
+          "center_mse_by_sector": {
+            "0": 145.38245682120154,
+            "2": 198.4289337174219,
+            "4": 180.15140661671086,
+            "6": 143.50743996006128
+          },
+          "balanced_patch_support": 0.44948775612193903,
+          "patch_support_by_sector": {
+            "0": 0.5333333333333333,
+            "2": 0.0,
+            "4": 0.5689655172413793,
+            "6": 0.6956521739130435
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              2697,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 7,
+        "stage": "coarse",
+        "phase_delta_degrees": -80.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.2146692386595852,
+          "balanced_center_rms_pixels": 7.995788935640586,
+          "center_mse_by_sector": {
+            "0": 86.09665746225562,
+            "2": 51.78737590591782,
+            "4": 83.35982005401294,
+            "6": 34.486709391063236
+          },
+          "balanced_patch_support": 0.8454522738630683,
+          "patch_support_by_sector": {
+            "0": 0.75,
+            "2": 0.9166666666666666,
+            "4": 0.7586206896551724,
+            "6": 0.9565217391304348
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 8,
+        "stage": "coarse",
+        "phase_delta_degrees": -80.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.18155823904121604,
+          "balanced_center_rms_pixels": 7.52863473104293,
+          "center_mse_by_sector": {
+            "0": 79.61596179695039,
+            "2": 44.44064411519845,
+            "4": 75.25277364287345,
+            "6": 27.411984098841092
+          },
+          "balanced_patch_support": 0.8717432950191571,
+          "patch_support_by_sector": {
+            "0": 0.7666666666666667,
+            "2": 0.9444444444444444,
+            "4": 0.7758620689655172,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              2697
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 9,
+        "stage": "coarse",
+        "phase_delta_degrees": -80.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.16703843045725725,
+          "balanced_center_rms_pixels": 7.078255602376555,
+          "center_mse_by_sector": {
+            "0": 72.71697495424436,
+            "2": 36.8380595550975,
+            "4": 68.72241195210819,
+            "6": 22.129363028850353
+          },
+          "balanced_patch_support": 0.8800766283524905,
+          "patch_support_by_sector": {
+            "0": 0.8,
+            "2": 0.9444444444444444,
+            "4": 0.7758620689655172,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              2697
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 10,
+        "stage": "coarse",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 5.527976067953303e-05,
+          "balanced_center_rms_pixels": 0.24245405370321632,
+          "center_mse_by_sector": {
+            "0": 0.03717647213093699,
+            "2": 0.002260131695017145,
+            "4": 0.1129325020975282,
+            "6": 0.08276676670500606
+          },
+          "balanced_patch_support": 1.0,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 4,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 11,
+        "stage": "coarse",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.0012204680357105402,
+          "balanced_center_rms_pixels": 1.1392251850193218,
+          "center_mse_by_sector": {
+            "0": 1.497487677404792,
+            "2": 1.708355563439689,
+            "4": 1.0083927644483741,
+            "6": 0.9771000834363771
+          },
+          "balanced_patch_support": 1.0,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 4,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 12,
+        "stage": "coarse",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.024592193841793623,
+          "balanced_center_rms_pixels": 2.2734325268650797,
+          "center_mse_by_sector": {
+            "0": 5.187955384226539,
+            "2": 5.592026250455386,
+            "4": 3.63984003451397,
+            "6": 6.254160147636673
+          },
+          "balanced_patch_support": 0.9802681992337164,
+          "patch_support_by_sector": {
+            "0": 0.9833333333333333,
+            "2": 0.9722222222222222,
+            "4": 0.9655172413793104,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 3,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 13,
+        "stage": "coarse",
+        "phase_delta_degrees": 0.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.7839250992935834,
+          "balanced_center_rms_pixels": 13.093662758643747,
+          "center_mse_by_sector": {
+            "0": 72.85977910517471,
+            "2": 319.38702890081584,
+            "4": 79.24739428521552,
+            "6": 214.2818154571706
+          },
+          "balanced_patch_support": 0.37729885057471263,
+          "patch_support_by_sector": {
+            "0": 0.7333333333333333,
+            "2": 0.0,
+            "4": 0.7758620689655172,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 14,
+        "stage": "coarse",
+        "phase_delta_degrees": 0.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.8424275319869257,
+          "balanced_center_rms_pixels": 13.570271680293876,
+          "center_mse_by_sector": {
+            "0": 91.92683735181087,
+            "2": 311.8955553689815,
+            "4": 102.86651354977471,
+            "6": 229.92018763737687
+          },
+          "balanced_patch_support": 0.3307471264367816,
+          "patch_support_by_sector": {
+            "0": 0.6333333333333333,
+            "2": 0.0,
+            "4": 0.6896551724137931,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 15,
+        "stage": "coarse",
+        "phase_delta_degrees": 40.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.46105436255452614,
+          "balanced_center_rms_pixels": 11.791015194584553,
+          "center_mse_by_sector": {
+            "0": 205.65485878698198,
+            "2": 106.83928160790697,
+            "4": 168.75778701657265,
+            "6": 74.86022986423347
+          },
+          "balanced_patch_support": 0.6696859903381642,
+          "patch_support_by_sector": {
+            "0": 0.5,
+            "2": 0.7222222222222222,
+            "4": 0.5,
+            "6": 0.9565217391304348
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 16,
+        "stage": "coarse",
+        "phase_delta_degrees": 40.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.5133142986376825,
+          "balanced_center_rms_pixels": 12.115501883729989,
+          "center_mse_by_sector": {
+            "0": 205.88199126803636,
+            "2": 121.01905185267067,
+            "4": 175.04994987879485,
+            "6": 85.19055057915783
+          },
+          "balanced_patch_support": 0.6247209728469099,
+          "patch_support_by_sector": {
+            "0": 0.5166666666666667,
+            "2": 0.6388888888888888,
+            "4": 0.5172413793103449,
+            "6": 0.8260869565217391
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 17,
+        "stage": "coarse",
+        "phase_delta_degrees": 40.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.6020925691584005,
+          "balanced_center_rms_pixels": 12.64368249135445,
+          "center_mse_by_sector": {
+            "0": 224.9799073532047,
+            "2": 132.59152186198415,
+            "4": 185.058176865869,
+            "6": 96.82122168767447
+          },
+          "balanced_patch_support": 0.5482404631017824,
+          "patch_support_by_sector": {
+            "0": 0.45,
+            "2": 0.5555555555555556,
+            "4": 0.4482758620689655,
+            "6": 0.7391304347826086
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 18,
+        "stage": "coarse",
+        "phase_delta_degrees": 80.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.33192408822494956,
+          "balanced_center_rms_pixels": 8.15475571187159,
+          "center_mse_by_sector": {
+            "0": 77.36418978160009,
+            "2": 60.81356373465562,
+            "4": 68.74930201446983,
+            "6": 59.07310735048381
+          },
+          "balanced_patch_support": 0.730611777444611,
+          "patch_support_by_sector": {
+            "0": 0.65,
+            "2": 0.7222222222222222,
+            "4": 0.7241379310344828,
+            "6": 0.8260869565217391
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 3,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2694,
+              2,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 19,
+        "stage": "coarse",
+        "phase_delta_degrees": 80.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.42642486355483744,
+          "balanced_center_rms_pixels": 9.02710821584073,
+          "center_mse_by_sector": {
+            "0": 90.96955792703383,
+            "2": 77.97430093506885,
+            "4": 85.59561772295041,
+            "6": 71.4152543769438
+          },
+          "balanced_patch_support": 0.6502061469265368,
+          "patch_support_by_sector": {
+            "0": 0.5833333333333334,
+            "2": 0.6666666666666666,
+            "4": 0.6551724137931034,
+            "6": 0.6956521739130435
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2694,
+              2,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 20,
+        "stage": "coarse",
+        "phase_delta_degrees": 80.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.5310248861159064,
+          "balanced_center_rms_pixels": 10.198335534680727,
+          "center_mse_by_sector": {
+            "0": 113.43490660427791,
+            "2": 95.61985289266754,
+            "4": 111.71805239121852,
+            "6": 95.25137882356256
+          },
+          "balanced_patch_support": 0.5667811927369649,
+          "patch_support_by_sector": {
+            "0": 0.5166666666666667,
+            "2": 0.5555555555555556,
+            "4": 0.5862068965517241,
+            "6": 0.6086956521739131
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2694,
+              2,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 21,
+        "stage": "coarse",
+        "phase_delta_degrees": 120.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.7607639540669809,
+          "balanced_center_rms_pixels": 12.277465993547194,
+          "center_mse_by_sector": {
+            "0": 116.52852214120213,
+            "2": 118.89444110821881,
+            "4": 110.31046700232173,
+            "6": 257.21125463908845
+          },
+          "balanced_patch_support": 0.38098659003831414,
+          "patch_support_by_sector": {
+            "0": 0.5,
+            "2": 0.4722222222222222,
+            "4": 0.5517241379310345,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              3,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 22,
+        "stage": "coarse",
+        "phase_delta_degrees": 120.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.8236729194658903,
+          "balanced_center_rms_pixels": 12.626222873761012,
+          "center_mse_by_sector": {
+            "0": 138.89438726661683,
+            "2": 143.33702441394618,
+            "4": 139.5068256427389,
+            "6": 215.94777890824128
+          },
+          "balanced_patch_support": 0.32624521072796936,
+          "patch_support_by_sector": {
+            "0": 0.43333333333333335,
+            "2": 0.3888888888888889,
+            "4": 0.4827586206896552,
+            "6": 0.0
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              3,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 23,
+        "stage": "coarse",
+        "phase_delta_degrees": 120.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.7668877946266008,
+          "balanced_center_rms_pixels": 13.251841685423775,
+          "center_mse_by_sector": {
+            "0": 167.89510000286512,
+            "2": 173.06613758811318,
+            "4": 168.9286412794753,
+            "6": 192.5553533516873
+          },
+          "balanced_patch_support": 0.3982550391470931,
+          "patch_support_by_sector": {
+            "0": 0.38333333333333336,
+            "2": 0.3611111111111111,
+            "4": 0.41379310344827586,
+            "6": 0.43478260869565216
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              3,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 24,
+        "stage": "coarse",
+        "phase_delta_degrees": 160.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.55809880109644,
+          "balanced_center_rms_pixels": 10.915563337701176,
+          "center_mse_by_sector": {
+            "0": 115.27883413353683,
+            "2": 118.85135948781061,
+            "4": 125.44632179439505,
+            "6": 117.02157650172167
+          },
+          "balanced_patch_support": 0.5539480259870064,
+          "patch_support_by_sector": {
+            "0": 0.55,
+            "2": 0.5833333333333334,
+            "4": 0.5172413793103449,
+            "6": 0.5652173913043478
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              2696,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 25,
+        "stage": "coarse",
+        "phase_delta_degrees": 160.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.505185823974392,
+          "balanced_center_rms_pixels": 9.872331540371187,
+          "center_mse_by_sector": {
+            "0": 94.52604057392229,
+            "2": 97.81661364562548,
+            "4": 102.72541033090896,
+            "6": 94.78365562157414
+          },
+          "balanced_patch_support": 0.5864671830751291,
+          "patch_support_by_sector": {
+            "0": 0.5833333333333334,
+            "2": 0.6111111111111112,
+            "4": 0.5862068965517241,
+            "6": 0.5652173913043478
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              2696,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 26,
+        "stage": "coarse",
+        "phase_delta_degrees": 160.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.4202611305945664,
+          "balanced_center_rms_pixels": 8.747298490846953,
+          "center_mse_by_sector": {
+            "0": 74.86063536439971,
+            "2": 78.61543855852672,
+            "4": 82.11267741066,
+            "6": 70.47217221830702
+          },
+          "balanced_patch_support": 0.651692903548226,
+          "patch_support_by_sector": {
+            "0": 0.65,
+            "2": 0.6666666666666666,
+            "4": 0.6379310344827587,
+            "6": 0.6521739130434783
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              2695,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 27,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": -0.5,
+        "metrics": {
+          "objective": 0.6810651387374136,
+          "balanced_center_rms_pixels": 12.82200229296079,
+          "center_mse_by_sector": {
+            "0": 97.45491405396581,
+            "2": 255.5076363428765,
+            "4": 121.40154469164412,
+            "6": 183.25087611428052
+          },
+          "balanced_patch_support": 0.4735382308845577,
+          "patch_support_by_sector": {
+            "0": 0.7,
+            "2": 0.0,
+            "4": 0.6724137931034483,
+            "6": 0.5217391304347826
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 28,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.6677250777637675,
+          "balanced_center_rms_pixels": 12.618733001059638,
+          "center_mse_by_sector": {
+            "0": 94.02560355179382,
+            "2": 250.75359664340286,
+            "4": 122.00475744679652,
+            "6": 170.14573256613312
+          },
+          "balanced_patch_support": 0.48201524237881066,
+          "patch_support_by_sector": {
+            "0": 0.7166666666666667,
+            "2": 0.0,
+            "4": 0.6896551724137931,
+            "6": 0.5217391304347826
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 29,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": -0.16666666666666666,
+        "metrics": {
+          "objective": 0.6744672303513086,
+          "balanced_center_rms_pixels": 12.545421085134814,
+          "center_mse_by_sector": {
+            "0": 100.40297529412179,
+            "2": 245.7063037213463,
+            "4": 117.56527005981015,
+            "6": 165.8758117381024
+          },
+          "balanced_patch_support": 0.4735382308845577,
+          "patch_support_by_sector": {
+            "0": 0.7,
+            "2": 0.0,
+            "4": 0.6724137931034483,
+            "6": 0.5217391304347826
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 30,
+        "stage": "refine",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": -0.5,
+        "metrics": {
+          "objective": 0.004889610617639917,
+          "balanced_center_rms_pixels": 0.784847561118352,
+          "center_mse_by_sector": {
+            "0": 0.5993515231217963,
+            "2": 0.3339098901169473,
+            "4": 1.0584115208547795,
+            "6": 0.47226984268017785
+          },
+          "balanced_patch_support": 0.9956896551724138,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 0.9827586206896551,
+            "6": 1.0
+          },
+          "coherent_central_patches": 3,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 31,
+        "stage": "refine",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": -0.16666666666666666,
+        "metrics": {
+          "objective": 0.00032711542689979937,
+          "balanced_center_rms_pixels": 0.5897892950572302,
+          "center_mse_by_sector": {
+            "0": 0.38700158696030673,
+            "2": 0.19361578355318126,
+            "4": 0.12885771631568232,
+            "6": 0.681930563427248
+          },
+          "balanced_patch_support": 1.0,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 4,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 32,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": -0.5,
+        "metrics": {
+          "objective": 0.28638946434174883,
+          "balanced_center_rms_pixels": 9.185816027256669,
+          "center_mse_by_sector": {
+            "0": 127.13386708855943,
+            "2": 62.504260155713865,
+            "4": 107.82026432140482,
+            "6": 40.0584727807439
+          },
+          "balanced_patch_support": 0.7929597701149425,
+          "patch_support_by_sector": {
+            "0": 0.6833333333333333,
+            "2": 0.8333333333333334,
+            "4": 0.6551724137931034,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              1,
+              1,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 33,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.2846770070708253,
+          "balanced_center_rms_pixels": 9.09455834020469,
+          "center_mse_by_sector": {
+            "0": 126.85680644649841,
+            "2": 63.69691123651038,
+            "4": 104.64479594262937,
+            "6": 35.645451987908565
+          },
+          "balanced_patch_support": 0.7931034482758621,
+          "patch_support_by_sector": {
+            "0": 0.6666666666666666,
+            "2": 0.8333333333333334,
+            "4": 0.6724137931034483,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              1,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 34,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": -0.16666666666666666,
+        "metrics": {
+          "objective": 0.2875082972406661,
+          "balanced_center_rms_pixels": 9.097686297552858,
+          "center_mse_by_sector": {
+            "0": 124.65046967429406,
+            "2": 62.86516695704453,
+            "4": 104.76964598103243,
+            "6": 38.786301262353135
+          },
+          "balanced_patch_support": 0.7903256704980843,
+          "patch_support_by_sector": {
+            "0": 0.6833333333333333,
+            "2": 0.8055555555555556,
+            "4": 0.6724137931034483,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              1,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 35,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.6783567851607855,
+          "balanced_center_rms_pixels": 12.527574630689715,
+          "center_mse_by_sector": {
+            "0": 99.0029573917137,
+            "2": 240.57990860605665,
+            "4": 119.30342690819487,
+            "6": 168.87421160403693
+          },
+          "balanced_patch_support": 0.4692278860569715,
+          "patch_support_by_sector": {
+            "0": 0.7,
+            "2": 0.0,
+            "4": 0.6551724137931034,
+            "6": 0.5217391304347826
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 36,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": 0.16666666666666666,
+        "metrics": {
+          "objective": 0.6667614553992729,
+          "balanced_center_rms_pixels": 12.502845317829177,
+          "center_mse_by_sector": {
+            "0": 107.57659603582674,
+            "2": 236.2741535343984,
+            "4": 116.64923814873264,
+            "6": 164.78457644729409
+          },
+          "balanced_patch_support": 0.4802411294352823,
+          "patch_support_by_sector": {
+            "0": 0.6833333333333333,
+            "2": 0.0,
+            "4": 0.6724137931034483,
+            "6": 0.5652173913043478
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 37,
+        "stage": "refine",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": 0.16666666666666666,
+        "metrics": {
+          "objective": 0.009574419657677934,
+          "balanced_center_rms_pixels": 1.6723308457244956,
+          "center_mse_by_sector": {
+            "0": 2.5175272221717044,
+            "2": 2.894346026123281,
+            "4": 1.6426204980964134,
+            "6": 4.132268083855028
+          },
+          "balanced_patch_support": 0.9930555555555556,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 0.9722222222222222,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 3,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 38,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.27646424398059166,
+          "balanced_center_rms_pixels": 9.109993997024551,
+          "center_mse_by_sector": {
+            "0": 124.82548874637605,
+            "2": 63.269241006943325,
+            "4": 105.79280227750337,
+            "6": 38.08043047247066
+          },
+          "balanced_patch_support": 0.8015804597701149,
+          "patch_support_by_sector": {
+            "0": 0.6833333333333333,
+            "2": 0.8333333333333334,
+            "4": 0.6896551724137931,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              1,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 39,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": 0.16666666666666666,
+        "metrics": {
+          "objective": 0.30271076075632797,
+          "balanced_center_rms_pixels": 9.333734565413373,
+          "center_mse_by_sector": {
+            "0": 128.22280053756353,
+            "2": 64.80291267723581,
+            "4": 113.11622075842702,
+            "6": 42.33246977714317
+          },
+          "balanced_patch_support": 0.7792145593869731,
+          "patch_support_by_sector": {
+            "0": 0.6666666666666666,
+            "2": 0.7777777777777778,
+            "4": 0.6724137931034483,
+            "6": 1.0
+          },
+          "coherent_central_patches": 1,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2692,
+              1,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      }
+    ]
+  },
+  {
+    "fixture": "plus-2698",
+    "ids_sha256": "d5d5d085c79c22f1304e376f991687cf6024a6eb89a6fc13da83d2a1ffc8463a",
+    "known_configuration": {
+      "spline": "photo2/spline-seed-r175.json",
+      "cores": "photo2/review/r157/report.json",
+      "circle_radius": 0.37996483480584586,
+      "parameters": {
+        "nbeads": 2698,
+        "hand": 1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -22.297197099857737,
+        "origin_fraction": 0.8015246087559217
+      },
+      "family": "A"
+    },
+    "perturbed_start": {
+      "spline": "photo2/spline-seed-r175.json",
+      "cores": "photo2/review/r157/report.json",
+      "circle_radius": 0.37996483480584586,
+      "parameters": {
+        "nbeads": 2698,
+        "hand": 1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": 17.702802900142263,
+        "origin_fraction": 0.8016481570633098
+      },
+      "family": "A"
+    },
+    "fitted_configuration": {
+      "spline": "photo2/spline-seed-r175.json",
+      "cores": "photo2/review/r157/report.json",
+      "circle_radius": 0.37996483480584586,
+      "parameters": {
+        "nbeads": 2698,
+        "hand": 1,
+        "elevation": 89.0,
+        "roll": 0.0,
+        "phase": -22.297197099857737,
+        "origin_fraction": 0.8014628346022276
+      },
+      "family": "A"
+    },
+    "assistance": "Known POV visible centroids, inset ID-mask pixels and one training same-body group; no automatic appearance detection or hand/count recovery claim",
+    "baseline": {
+      "training": {
+        "objective": 0.2866967881837079,
+        "balanced_center_rms_pixels": 7.778537650752052,
+        "center_mse_by_sector": {
+          "0": 72.24457854690785,
+          "2": 78.03303836904499,
+          "4": 29.897472109854654,
+          "6": 61.847502910861564
+        },
+        "balanced_patch_support": 0.7702020202020202,
+        "patch_support_by_sector": {
+          "0": 0.75,
+          "2": 0.8,
+          "4": 0.6944444444444444,
+          "6": 0.8363636363636363
+        },
+        "coherent_central_patches": 0,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 1,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "held_out": {
+        "objective": 0.5048001476590671,
+        "balanced_center_rms_pixels": 10.597882098214788,
+        "center_mse_by_sector": {
+          "1": 74.56012271477479,
+          "3": 59.49966736426579,
+          "5": 74.66755725131938,
+          "7": 240.53307254028593
+        },
+        "balanced_patch_support": 0.6008196721311476,
+        "patch_support_by_sector": {
+          "1": 0.7777777777777778,
+          "3": 0.8222222222222222,
+          "5": 0.8032786885245902,
+          "7": 0.0
+        },
+        "coherent_central_patches": 0,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 1,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "all": {
+        "objective": 0.39574846792138757,
+        "balanced_center_rms_pixels": 9.295718179673605,
+        "center_mse_by_sector": {
+          "0": 72.24457854690785,
+          "1": 74.56012271477479,
+          "2": 78.03303836904499,
+          "3": 59.49966736426579,
+          "4": 29.897472109854654,
+          "5": 74.66755725131938,
+          "6": 61.847502910861564,
+          "7": 240.53307254028593
+        },
+        "balanced_patch_support": 0.6855108461665839,
+        "patch_support_by_sector": {
+          "0": 0.75,
+          "1": 0.7777777777777778,
+          "2": 0.8,
+          "3": 0.8222222222222222,
+          "4": 0.6944444444444444,
+          "5": 0.8032786885245902,
+          "6": 0.8363636363636363,
+          "7": 0.0
+        },
+        "coherent_central_patches": 0,
+        "total_patches": 8,
+        "total_centers": 8,
+        "missing_centers": 0,
+        "uncertain_patches": 2,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      }
+    },
+    "registered": {
+      "training": {
+        "objective": 0.0004775214077143107,
+        "balanced_center_rms_pixels": 0.7125950408895767,
+        "center_mse_by_sector": {
+          "0": 0.4460701451155679,
+          "2": 0.7395588001225142,
+          "4": 0.4985419434874649,
+          "6": 0.3469958804761229
+        },
+        "balanced_patch_support": 1.0,
+        "patch_support_by_sector": {
+          "0": 1.0,
+          "2": 1.0,
+          "4": 1.0,
+          "6": 1.0
+        },
+        "coherent_central_patches": 4,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 0,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "held_out": {
+        "objective": 0.00048193224117928685,
+        "balanced_center_rms_pixels": 0.7158785723638399,
+        "center_mse_by_sector": {
+          "1": 0.904219981359765,
+          "3": 0.44844274865815875,
+          "5": 0.11224699208138912,
+          "7": 0.5850187993794458
+        },
+        "balanced_patch_support": 1.0,
+        "patch_support_by_sector": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "7": 1.0
+        },
+        "coherent_central_patches": 4,
+        "total_patches": 4,
+        "total_centers": 4,
+        "missing_centers": 0,
+        "uncertain_patches": 0,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      },
+      "all": {
+        "objective": 0.00047972682444679873,
+        "balanced_center_rms_pixels": 0.7142386935297286,
+        "center_mse_by_sector": {
+          "0": 0.4460701451155679,
+          "1": 0.904219981359765,
+          "2": 0.7395588001225142,
+          "3": 0.44844274865815875,
+          "4": 0.4985419434874649,
+          "5": 0.11224699208138912,
+          "6": 0.3469958804761229,
+          "7": 0.5850187993794458
+        },
+        "balanced_patch_support": 1.0,
+        "patch_support_by_sector": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 1.0,
+          "6": 1.0,
+          "7": 1.0
+        },
+        "coherent_central_patches": 8,
+        "total_patches": 8,
+        "total_centers": 8,
+        "missing_centers": 0,
+        "uncertain_patches": 0,
+        "patch_weight": 1.0,
+        "diameter_pixels": 32.60966764890071
+      }
+    },
+    "max_known_center_geometry_error_pixels": 0.5821286354656636,
+    "expected_indices": [
+      0,
+      384,
+      768,
+      1152,
+      1540,
+      1925,
+      2309,
+      2697
+    ],
+    "tentative_fitted_indices": [
+      0,
+      384,
+      768,
+      1152,
+      1540,
+      1925,
+      2309,
+      2697
+    ],
+    "same_body_groups": [
+      {
+        "name": "known-training-body",
+        "points_xy": [
+          [
+            1337,
+            267
+          ],
+          [
+            1344,
+            288
+          ],
+          [
+            1355,
+            285
+          ]
+        ]
+      }
+    ],
+    "trials": [
+      {
+        "candidate": 0,
+        "stage": "baseline",
+        "phase_delta_degrees": 0.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.2866967881837079,
+          "balanced_center_rms_pixels": 7.778537650752052,
+          "center_mse_by_sector": {
+            "0": 72.24457854690785,
+            "2": 78.03303836904499,
+            "4": 29.897472109854654,
+            "6": 61.847502910861564
+          },
+          "balanced_patch_support": 0.7702020202020202,
+          "patch_support_by_sector": {
+            "0": 0.75,
+            "2": 0.8,
+            "4": 0.6944444444444444,
+            "6": 0.8363636363636363
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 1,
+        "stage": "coarse",
+        "phase_delta_degrees": -160.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.3547835944122852,
+          "balanced_center_rms_pixels": 8.055690423332821,
+          "center_mse_by_sector": {
+            "0": 73.93561663864458,
+            "2": 70.30261422239153,
+            "4": 51.449564132102104,
+            "6": 63.88879779316639
+          },
+          "balanced_patch_support": 0.7062421085858587,
+          "patch_support_by_sector": {
+            "0": 0.640625,
+            "2": 0.7166666666666667,
+            "4": 0.7222222222222222,
+            "6": 0.7454545454545455
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2694,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 2,
+        "stage": "coarse",
+        "phase_delta_degrees": -160.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.42526344015873274,
+          "balanced_center_rms_pixels": 9.032545465580792,
+          "center_mse_by_sector": {
+            "0": 93.12041887224532,
+            "2": 83.21343329570223,
+            "4": 65.93055952807335,
+            "6": 84.08309865511563
+          },
+          "balanced_patch_support": 0.6514599116161616,
+          "patch_support_by_sector": {
+            "0": 0.609375,
+            "2": 0.6666666666666666,
+            "4": 0.6388888888888888,
+            "6": 0.6909090909090909
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2694,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 3,
+        "stage": "coarse",
+        "phase_delta_degrees": -160.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.5399211810652407,
+          "balanced_center_rms_pixels": 10.074496555004592,
+          "center_mse_by_sector": {
+            "0": 112.87115739384622,
+            "2": 108.30200439743521,
+            "4": 86.01770968345886,
+            "6": 98.7910518724572
+          },
+          "balanced_patch_support": 0.5555239898989899,
+          "patch_support_by_sector": {
+            "0": 0.5625,
+            "2": 0.55,
+            "4": 0.5277777777777778,
+            "6": 0.5818181818181818
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2694,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 4,
+        "stage": "coarse",
+        "phase_delta_degrees": -120.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.6592958941351905,
+          "balanced_center_rms_pixels": 13.849773591610882,
+          "center_mse_by_sector": {
+            "0": 171.73502518800595,
+            "2": 198.45355755611965,
+            "4": 215.50063423165926,
+            "6": 181.57569717974403
+          },
+          "balanced_patch_support": 0.5210858585858585,
+          "patch_support_by_sector": {
+            "0": 0.5,
+            "2": 0.5666666666666667,
+            "4": 0.4722222222222222,
+            "6": 0.5454545454545454
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              1,
+              2,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 5,
+        "stage": "coarse",
+        "phase_delta_degrees": -120.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.7147858807710268,
+          "balanced_center_rms_pixels": 14.278096928068353,
+          "center_mse_by_sector": {
+            "0": 178.05752233350128,
+            "2": 212.4066739423083,
+            "4": 235.12447912346965,
+            "6": 189.8675321499803
+          },
+          "balanced_patch_support": 0.47692550505050507,
+          "patch_support_by_sector": {
+            "0": 0.4375,
+            "2": 0.5166666666666667,
+            "4": 0.4444444444444444,
+            "6": 0.509090909090909
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 6,
+        "stage": "coarse",
+        "phase_delta_degrees": -120.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.8321710197486412,
+          "balanced_center_rms_pixels": 14.332664637629984,
+          "center_mse_by_sector": {
+            "0": 189.19761547798316,
+            "2": 213.81586594758062,
+            "4": 217.9058832846316,
+            "6": 200.7817377488807
+          },
+          "balanced_patch_support": 0.36100852272727274,
+          "patch_support_by_sector": {
+            "0": 0.453125,
+            "2": 0.5,
+            "4": 0.0,
+            "6": 0.4909090909090909
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2693,
+              2697,
+              2
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 7,
+        "stage": "coarse",
+        "phase_delta_degrees": -80.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.2628615052401143,
+          "balanced_center_rms_pixels": 8.10948822833733,
+          "center_mse_by_sector": {
+            "0": 81.43484456114473,
+            "2": 72.26176638548579,
+            "4": 44.688074873303506,
+            "6": 64.67051148223295
+          },
+          "balanced_patch_support": 0.7989820075757575,
+          "patch_support_by_sector": {
+            "0": 0.765625,
+            "2": 0.75,
+            "4": 0.9166666666666666,
+            "6": 0.7636363636363637
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 8,
+        "stage": "coarse",
+        "phase_delta_degrees": -80.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.32116412248517207,
+          "balanced_center_rms_pixels": 8.692879551121903,
+          "center_mse_by_sector": {
+            "0": 89.2618965006766,
+            "2": 83.45047541772271,
+            "4": 55.337671921837796,
+            "6": 74.21457572101626
+          },
+          "balanced_patch_support": 0.7498974116161616,
+          "patch_support_by_sector": {
+            "0": 0.703125,
+            "2": 0.7166666666666667,
+            "4": 0.8888888888888888,
+            "6": 0.6909090909090909
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 9,
+        "stage": "coarse",
+        "phase_delta_degrees": -80.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.3719016378642282,
+          "balanced_center_rms_pixels": 9.312041379716664,
+          "center_mse_by_sector": {
+            "0": 102.59262734040679,
+            "2": 93.44600201398913,
+            "4": 64.1862358412256,
+            "6": 86.63159343460018
+          },
+          "balanced_patch_support": 0.709643308080808,
+          "patch_support_by_sector": {
+            "0": 0.65625,
+            "2": 0.6666666666666666,
+            "4": 0.8611111111111112,
+            "6": 0.6545454545454545
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 10,
+        "stage": "coarse",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.00882585940491419,
+          "balanced_center_rms_pixels": 0.34777594091411734,
+          "center_mse_by_sector": {
+            "0": 0.10026395413267938,
+            "2": 0.09805322597148469,
+            "4": 0.03316330703960968,
+            "6": 0.2523119331710248
+          },
+          "balanced_patch_support": 0.9912878787878788,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 0.9833333333333333,
+            "4": 1.0,
+            "6": 0.9818181818181818
+          },
+          "coherent_central_patches": 2,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 11,
+        "stage": "coarse",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.005163111613738432,
+          "balanced_center_rms_pixels": 1.029373603183251,
+          "center_mse_by_sector": {
+            "0": 1.1841421316373992,
+            "2": 1.0572463930595013,
+            "4": 0.580193564577889,
+            "6": 1.416857970447086
+          },
+          "balanced_patch_support": 0.9958333333333333,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 0.9833333333333333,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 3,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 12,
+        "stage": "coarse",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.013773355983645756,
+          "balanced_center_rms_pixels": 2.2314276119625847,
+          "center_mse_by_sector": {
+            "0": 5.656091184615894,
+            "2": 4.250539258588909,
+            "4": 4.352972862629946,
+            "6": 5.657473443881425
+          },
+          "balanced_patch_support": 0.990909090909091,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 0.9636363636363636
+          },
+          "coherent_central_patches": 3,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 13,
+        "stage": "coarse",
+        "phase_delta_degrees": 0.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.2980741888800765,
+          "balanced_center_rms_pixels": 8.273475575127405,
+          "center_mse_by_sector": {
+            "0": 76.41459671115123,
+            "2": 88.40368421364973,
+            "4": 37.8010621200954,
+            "6": 71.18224932402264
+          },
+          "balanced_patch_support": 0.7662957702020202,
+          "patch_support_by_sector": {
+            "0": 0.734375,
+            "2": 0.8,
+            "4": 0.6944444444444444,
+            "6": 0.8363636363636363
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 14,
+        "stage": "coarse",
+        "phase_delta_degrees": 0.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.27342631726569755,
+          "balanced_center_rms_pixels": 7.603065568576525,
+          "center_mse_by_sector": {
+            "0": 66.48295081878578,
+            "2": 75.60883760510326,
+            "4": 26.67615743408172,
+            "6": 62.45847830232477
+          },
+          "balanced_patch_support": 0.7809343434343435,
+          "patch_support_by_sector": {
+            "0": 0.75,
+            "2": 0.8333333333333334,
+            "4": 0.7222222222222222,
+            "6": 0.8181818181818182
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 15,
+        "stage": "coarse",
+        "phase_delta_degrees": 40.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.6165124956363688,
+          "balanced_center_rms_pixels": 12.381204986906528,
+          "center_mse_by_sector": {
+            "0": 194.73865007398425,
+            "2": 161.17768485538724,
+            "4": 120.62436875892045,
+            "6": 136.63624402290446
+          },
+          "balanced_patch_support": 0.5276436237373737,
+          "patch_support_by_sector": {
+            "0": 0.515625,
+            "2": 0.48333333333333334,
+            "4": 0.6388888888888888,
+            "6": 0.4727272727272727
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2697,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 16,
+        "stage": "coarse",
+        "phase_delta_degrees": 40.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.5584287987521539,
+          "balanced_center_rms_pixels": 12.094450879005407,
+          "center_mse_by_sector": {
+            "0": 187.24970780733554,
+            "2": 155.45398050005514,
+            "4": 110.8521952894078,
+            "6": 131.54708466190024
+          },
+          "balanced_patch_support": 0.5791272095959595,
+          "patch_support_by_sector": {
+            "0": 0.578125,
+            "2": 0.5166666666666667,
+            "4": 0.6944444444444444,
+            "6": 0.5272727272727272
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2697,
+              2697
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 17,
+        "stage": "coarse",
+        "phase_delta_degrees": 40.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.5352484833515712,
+          "balanced_center_rms_pixels": 12.007613551899244,
+          "center_mse_by_sector": {
+            "0": 184.38653273076147,
+            "2": 151.0518670236075,
+            "4": 108.47746351508093,
+            "6": 132.81526957756756
+          },
+          "balanced_patch_support": 0.6003393308080809,
+          "patch_support_by_sector": {
+            "0": 0.578125,
+            "2": 0.5833333333333334,
+            "4": 0.6944444444444444,
+            "6": 0.5454545454545454
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2697,
+              2697
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 18,
+        "stage": "coarse",
+        "phase_delta_degrees": 80.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.37862374204528093,
+          "balanced_center_rms_pixels": 8.23445502059733,
+          "center_mse_by_sector": {
+            "0": 71.83621119539879,
+            "2": 73.54528005041573,
+            "4": 55.83718753795478,
+            "6": 70.00631916119302
+          },
+          "balanced_patch_support": 0.6851404671717172,
+          "patch_support_by_sector": {
+            "0": 0.671875,
+            "2": 0.6833333333333333,
+            "4": 0.6944444444444444,
+            "6": 0.6909090909090909
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2696,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 19,
+        "stage": "coarse",
+        "phase_delta_degrees": 80.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.27979779625002804,
+          "balanced_center_rms_pixels": 7.355895003284301,
+          "center_mse_by_sector": {
+            "0": 58.85139795030089,
+            "2": 56.80637993015832,
+            "4": 43.946901045682075,
+            "6": 56.832086271230544
+          },
+          "balanced_patch_support": 0.7710858585858585,
+          "patch_support_by_sector": {
+            "0": 0.75,
+            "2": 0.7833333333333333,
+            "4": 0.8055555555555556,
+            "6": 0.7454545454545455
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2696,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 20,
+        "stage": "coarse",
+        "phase_delta_degrees": 80.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.20252462328029278,
+          "balanced_center_rms_pixels": 6.448253839784886,
+          "center_mse_by_sector": {
+            "0": 46.16518601962323,
+            "2": 44.87071186803869,
+            "4": 33.50605438074154,
+            "6": 41.777958060798646
+          },
+          "balanced_patch_support": 0.8365767045454545,
+          "patch_support_by_sector": {
+            "0": 0.828125,
+            "2": 0.7833333333333333,
+            "4": 0.9166666666666666,
+            "6": 0.8181818181818182
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2696,
+              2696,
+              5
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 21,
+        "stage": "coarse",
+        "phase_delta_degrees": 120.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.5594328822505397,
+          "balanced_center_rms_pixels": 10.655209990638852,
+          "center_mse_by_sector": {
+            "0": 119.75031090283227,
+            "2": 120.0568856435662,
+            "4": 105.171197874997,
+            "6": 109.15560535704452
+          },
+          "balanced_patch_support": 0.547332702020202,
+          "patch_support_by_sector": {
+            "0": 0.53125,
+            "2": 0.5666666666666667,
+            "4": 0.5277777777777778,
+            "6": 0.5636363636363636
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              2695,
+              4
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 22,
+        "stage": "coarse",
+        "phase_delta_degrees": 120.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.4855463170764932,
+          "balanced_center_rms_pixels": 9.619686779907642,
+          "center_mse_by_sector": {
+            "0": 99.5280980937307,
+            "2": 97.15427559783204,
+            "4": 86.94971519833908,
+            "6": 86.52140608421759
+          },
+          "balanced_patch_support": 0.6014756944444445,
+          "patch_support_by_sector": {
+            "0": 0.578125,
+            "2": 0.6166666666666667,
+            "4": 0.6111111111111112,
+            "6": 0.6
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              2695,
+              4
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 23,
+        "stage": "coarse",
+        "phase_delta_degrees": 120.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.397933088288272,
+          "balanced_center_rms_pixels": 8.532682543971106,
+          "center_mse_by_sector": {
+            "0": 79.94565414163262,
+            "2": 77.71244112170437,
+            "4": 65.85026749059615,
+            "6": 67.71832283082382
+          },
+          "balanced_patch_support": 0.6705334595959596,
+          "patch_support_by_sector": {
+            "0": 0.59375,
+            "2": 0.6666666666666666,
+            "4": 0.6944444444444444,
+            "6": 0.7272727272727273
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2695,
+              2695,
+              4
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 24,
+        "stage": "coarse",
+        "phase_delta_degrees": 160.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.5402715865627272,
+          "balanced_center_rms_pixels": 10.440354629220415,
+          "center_mse_by_sector": {
+            "0": 116.61949400752408,
+            "2": 107.4078296989147,
+            "4": 100.68216819840363,
+            "6": 111.29452723069413
+          },
+          "balanced_patch_support": 0.5622316919191919,
+          "patch_support_by_sector": {
+            "0": 0.53125,
+            "2": 0.5333333333333333,
+            "4": 0.6388888888888888,
+            "6": 0.5454545454545454
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2694,
+              2695,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 25,
+        "stage": "coarse",
+        "phase_delta_degrees": 160.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.6414075387685858,
+          "balanced_center_rms_pixels": 11.547136638274003,
+          "center_mse_by_sector": {
+            "0": 140.65943438440607,
+            "2": 135.6252639965681,
+            "4": 122.8293175500682,
+            "6": 134.23144224083703
+          },
+          "balanced_patch_support": 0.4839804292929293,
+          "patch_support_by_sector": {
+            "0": 0.46875,
+            "2": 0.4666666666666667,
+            "4": 0.5277777777777778,
+            "6": 0.4727272727272727
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 3,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2694,
+              2695,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 26,
+        "stage": "coarse",
+        "phase_delta_degrees": 160.0,
+        "origin_shift_beads": 0.3333333333333333,
+        "metrics": {
+          "objective": 0.736501483801697,
+          "balanced_center_rms_pixels": 12.594894499565836,
+          "center_mse_by_sector": {
+            "0": 168.72796145422487,
+            "2": 159.42186383407105,
+            "4": 147.36468194854706,
+            "6": 159.01096258393198
+          },
+          "balanced_patch_support": 0.4126736111111111,
+          "patch_support_by_sector": {
+            "0": 0.40625,
+            "2": 0.4,
+            "4": 0.4444444444444444,
+            "6": 0.4
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2694,
+              2695,
+              3
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 27,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": -0.16666666666666666,
+        "metrics": {
+          "objective": 0.6171121590993762,
+          "balanced_center_rms_pixels": 12.3002818619536,
+          "center_mse_by_sector": {
+            "0": 109.37052700127353,
+            "2": 122.97482529787112,
+            "4": 264.4579673395797,
+            "6": 108.38441589529448
+          },
+          "balanced_patch_support": 0.5251657196969697,
+          "patch_support_by_sector": {
+            "0": 0.671875,
+            "2": 0.6833333333333333,
+            "4": 0.0,
+            "6": 0.7454545454545455
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 28,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.6158461586201203,
+          "balanced_center_rms_pixels": 12.240294370782097,
+          "center_mse_by_sector": {
+            "0": 109.18657523725825,
+            "2": 120.35848605233527,
+            "4": 261.22634314565846,
+            "6": 108.52782069834765
+          },
+          "balanced_patch_support": 0.5250473484848486,
+          "patch_support_by_sector": {
+            "0": 0.65625,
+            "2": 0.7166666666666667,
+            "4": 0.0,
+            "6": 0.7272727272727273
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 2,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 29,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": 0.16666666666666666,
+        "metrics": {
+          "objective": 0.6277150569681939,
+          "balanced_center_rms_pixels": 12.415246330353963,
+          "center_mse_by_sector": {
+            "0": 108.43991804888007,
+            "2": 126.91099155921738,
+            "4": 267.91971873430947,
+            "6": 113.28273743106334
+          },
+          "balanced_patch_support": 0.5172348484848486,
+          "patch_support_by_sector": {
+            "0": 0.625,
+            "2": 0.7166666666666667,
+            "4": 0.0,
+            "6": 0.7272727272727273
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 30,
+        "stage": "refine",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": -0.16666666666666666,
+        "metrics": {
+          "objective": 0.0042154993973976965,
+          "balanced_center_rms_pixels": 0.5734569276533311,
+          "center_mse_by_sector": {
+            "0": 0.3462248533845132,
+            "2": 0.1453277222471342,
+            "4": 0.3024519480969639,
+            "6": 0.5214068677657799
+          },
+          "balanced_patch_support": 0.99609375,
+          "patch_support_by_sector": {
+            "0": 0.984375,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 3,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 31,
+        "stage": "refine",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": 0.16666666666666666,
+        "metrics": {
+          "objective": 0.002330378097903797,
+          "balanced_center_rms_pixels": 1.5741987657251235,
+          "center_mse_by_sector": {
+            "0": 2.7963729200797256,
+            "2": 2.20263792421247,
+            "4": 2.216123768547558,
+            "6": 2.697272403202256
+          },
+          "balanced_patch_support": 1.0,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 4,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 32,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": -0.16666666666666666,
+        "metrics": {
+          "objective": 0.3734895740275428,
+          "balanced_center_rms_pixels": 9.682798467762101,
+          "center_mse_by_sector": {
+            "0": 114.93478670566898,
+            "2": 99.1712953426332,
+            "4": 66.64438039903379,
+            "6": 94.27588222184836
+          },
+          "balanced_patch_support": 0.7146780303030302,
+          "patch_support_by_sector": {
+            "0": 0.6875,
+            "2": 0.6833333333333333,
+            "4": 0.8333333333333334,
+            "6": 0.6545454545454545
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 33,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": 0.0,
+        "metrics": {
+          "objective": 0.39398695002663864,
+          "balanced_center_rms_pixels": 9.616020940881926,
+          "center_mse_by_sector": {
+            "0": 112.83718901026492,
+            "2": 100.65212405303753,
+            "4": 65.99274682450753,
+            "6": 90.3893750541089
+          },
+          "balanced_patch_support": 0.69296875,
+          "patch_support_by_sector": {
+            "0": 0.671875,
+            "2": 0.6666666666666666,
+            "4": 0.8333333333333334,
+            "6": 0.6
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 3,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 34,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": 0.16666666666666666,
+        "metrics": {
+          "objective": 0.3910271008835123,
+          "balanced_center_rms_pixels": 9.703297188936888,
+          "center_mse_by_sector": {
+            "0": 116.91460550827495,
+            "2": 102.20348152657945,
+            "4": 67.93841009306212,
+            "6": 89.55940821940554
+          },
+          "balanced_patch_support": 0.6975142045454545,
+          "patch_support_by_sector": {
+            "0": 0.671875,
+            "2": 0.6666666666666666,
+            "4": 0.8333333333333334,
+            "6": 0.6181818181818182
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 35,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": -0.5,
+        "metrics": {
+          "objective": 0.6043990013793977,
+          "balanced_center_rms_pixels": 12.109478542496882,
+          "center_mse_by_sector": {
+            "0": 103.79375024196409,
+            "2": 123.82255325217577,
+            "4": 249.4357610369839,
+            "6": 109.5058177536459
+          },
+          "balanced_patch_support": 0.5334990530303031,
+          "patch_support_by_sector": {
+            "0": 0.671875,
+            "2": 0.7166666666666667,
+            "4": 0.0,
+            "6": 0.7454545454545455
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 36,
+        "stage": "refine",
+        "phase_delta_degrees": -60.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.6102443949340146,
+          "balanced_center_rms_pixels": 12.194323977091406,
+          "center_mse_by_sector": {
+            "0": 109.00191848277318,
+            "2": 120.22883439081433,
+            "4": 254.0212457453193,
+            "6": 111.5541504141586
+          },
+          "balanced_patch_support": 0.5295928030303031,
+          "patch_support_by_sector": {
+            "0": 0.65625,
+            "2": 0.7166666666666667,
+            "4": 0.0,
+            "6": 0.7454545454545455
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 1,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              1,
+              1
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 37,
+        "stage": "refine",
+        "phase_delta_degrees": -40.0,
+        "origin_shift_beads": -0.5,
+        "metrics": {
+          "objective": 0.0004775214077143107,
+          "balanced_center_rms_pixels": 0.7125950408895767,
+          "center_mse_by_sector": {
+            "0": 0.4460701451155679,
+            "2": 0.7395588001225142,
+            "4": 0.4985419434874649,
+            "6": 0.3469958804761229
+          },
+          "balanced_patch_support": 1.0,
+          "patch_support_by_sector": {
+            "0": 1.0,
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0
+          },
+          "coherent_central_patches": 4,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              0,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": true
+          }
+        ],
+        "same_body_constraints_satisfied": true
+      },
+      {
+        "candidate": 38,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": -0.5,
+        "metrics": {
+          "objective": 0.37559164255020344,
+          "balanced_center_rms_pixels": 9.79754590217603,
+          "center_mse_by_sector": {
+            "0": 117.90527131662927,
+            "2": 102.75108998627901,
+            "4": 69.2411894594937,
+            "6": 94.07007205858324
+          },
+          "balanced_patch_support": 0.7146780303030302,
+          "patch_support_by_sector": {
+            "0": 0.6875,
+            "2": 0.6833333333333333,
+            "4": 0.8333333333333334,
+            "6": 0.6545454545454545
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      },
+      {
+        "candidate": 39,
+        "stage": "refine",
+        "phase_delta_degrees": -20.0,
+        "origin_shift_beads": -0.3333333333333333,
+        "metrics": {
+          "objective": 0.37407033975271353,
+          "balanced_center_rms_pixels": 9.71463673423406,
+          "center_mse_by_sector": {
+            "0": 115.14264088725206,
+            "2": 98.18336448776631,
+            "4": 68.5765062581597,
+            "6": 95.59415587934127
+          },
+          "balanced_patch_support": 0.7146780303030302,
+          "patch_support_by_sector": {
+            "0": 0.6875,
+            "2": 0.6833333333333333,
+            "4": 0.8333333333333334,
+            "6": 0.6545454545454545
+          },
+          "coherent_central_patches": 0,
+          "total_patches": 4,
+          "total_centers": 4,
+          "missing_centers": 0,
+          "uncertain_patches": 0,
+          "patch_weight": 1.0,
+          "diameter_pixels": 32.60966764890071
+        },
+        "same_body_memberships": [
+          {
+            "name": "known-training-body",
+            "owner": [
+              2697,
+              0,
+              0
+            ],
+            "unfinished": [
+              0,
+              0,
+              0
+            ],
+            "coherent": false
+          }
+        ],
+        "same_body_constraints_satisfied": false
+      }
+    ]
+  }
+]

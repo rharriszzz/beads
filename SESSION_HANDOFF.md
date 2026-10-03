@@ -9,7 +9,68 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R211–R213 — confirmed points; positive patches and easier evidence
+## Current R214 — phase/origin registration with positive patches
+
+Maker: “continue”. Resume only planned limited registration, not curve fitting.
+Preflight daisy/photo-2-reconstruction-v2/4a2ddaa, clean/no stashes, fetch/upstream0/0;
+read handoff/latestlog/plan/model/source experiment. Four methods presented;
+combined center/interior loss selected. No agents/skills/install/new POV render.
+[Review/results](photo2/POSITIVE_PATCH_REGISTRATION.md),
+[all configurations/memberships](photo2/review/r214/report.json),
+[split ledger](photo2/review/r214/splits.json),
+[known inverse checks](photo2/review/r214/calibration.json),
+[sources/outputs/protected inputs](photo2/review/r214/summary.json).
+
+New fit_positive_registration.py/review_positive_registration.py evaluate41 saved
+visible-center marks and208 unchanged selected colored interiors against both
+hands at2698/2833/3592. Only minor phase/origin change; fixed seed89deg projection,
+camera/spline/sizes/count/stretch. Native2px visible centroids with all occluders;
+patch allpixel verifiedownerfraction, hidden outward=zero, unknown denominators
+preserved. J=occupied-sector MSE/D² + occupied-sector patch deficit, D27.190842px,
+λ1. Missingcenter9D² penalty. Training sectors0/2/4/6:28centers/107patches;
+heldout1/3/5/7:13centers/101patches. Existing historical hypotheses involved heldout
+sections; current-only holdout, not prospective independence.
+
+27 coarse including baseline +13–16 distinct refinements=40–43 candidates/case. Canonical origin
+[-.5,.5) model beads/full minor phase is exact global index relabeling, tested
+bothhands. Source indices never inferred photo labels. Initial exploratory fits
+split R211 M/V/O in3/6; discarded. Final search prioritizes maker-confirmed point
+membership constraint in trainingsector6 then soft J; 12–25 feasible trials/case,
+all6 selected configurations sameverifiedowner for three original fractionalpoints.
+
+HeldoutRMS before→after / patchsupport before→after / coherentall208after:
+minus2698 11.408→10.164/.8631→.8463/100;
+plus2698 11.618→9.450/.8625→.8506/96;
+minus2833 12.581→8.506/.8367→.8004/93;
+plus2833 9.075→10.257/.8652→.8492/91;
+minus3592 7.476→7.762/.7245→.7299/76;
+plus3592 7.829→7.392/.7066→.7216/74.
+4/6 heldout jointJ improve, but center/patch count preference remains opposed;
+λ0.5/2 reranking changes pose4/6. No acceptedN/hand/photoindices/live model.
+Not proof centerline alone causes error; camera/surface/correspondence remain.
+No complete boundary/dark-gap classifier or208distinct/majority claim.
+
+Existing independent POV-ID fixtures, deliberately perturbed phase40deg/origin
+1/3bead, fourtraining/fourheldoutgroups +one training samebody group each:
+heldoutJ minus .319657→.005409,plus .504800→.000482; max physical bead-position
+error0/.582px. Known geometry only, not auto detection/hand/count recovery.
+Four unit controls pass: gauge bothhands, balanced sectors, penalties preserved,
+confirmed membership precedes lower softloss. Six curated PNGs inspect raw-first
+top/right/bend, both2698 wholeoutwardcircles, heldoutgraph; no new question needed.
+15 curated payloads plus summary; routine banks ignored output/r214. Tenprotected
+inputs, all oldsource/evidence/live41+208references remain unchanged.
+Selected configurations' full scores/memberships reproduce exactly; all six
+PNG images repeat byte-identically. Historical baseline training scores match
+R210 unchanged. JSON/syntax/review links/append-only log/whitespace verified.
+Full finite search was not rerun for the repeat; selected poses were reevaluated.
+
+Stop registration. Next bounded task: compare methods for small smooth centerline
+correction against clear positive interiors/centers and heldout sectors, both
+hands/counts retained. Keep camera/localstretch fixed in that first correction;
+future localstretch zero-net. Favor easy nearby bodies, don't reopen difficult
+dark-gap/boundary work. gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R211–R213 — confirmed points; positive patches and easier evidence
 
 Maker answers Q210.1: “V M and O are all in the same bead.” Also challenges
 reliability/trust of using darkness for within-bead edges and interbead gaps.

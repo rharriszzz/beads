@@ -4138,3 +4138,70 @@ use easier nearby colored evidence if more localization is needed. Keep both
 hands/counts, before moving centerline; eventual zero-net stretch retained.
 gpt-6.1-sol / High, same session; no /new. Scoped commit/push and remote/clean
 verification before delivery.
+
+## R214 — Continue: limited phase/origin registration from positive interiors
+
+Maker: “continue”. Resume the planned bounded registration before curve changes.
+Preflight daisy/photo-2-reconstruction-v2/4a2ddaa, clean/no stashes, fetch/upstream0/0;
+read handoff/latest log/plan/AGENTS, model and relevant source experiment. No
+agents/skills/install/new render. Four methods presented: center-only, patch-only,
+combined positive score, alternating assignment/alignment. Combined chosen.
+
+New fit_positive_registration.py and review_positive_registration.py preserve41
+maker-visible center marks/208 selected colored interiors, fit only minor phase
+and origin for both hands at2698/2833/3592. Fixed camera/spline/physical sizes/
+count/stretch, native2px visible-region raster, all occluders retained. Training
+sectors0/2/4/6 use28 centers/107patches; heldout1/3/5/7 use13centers/101patches.
+J=equal occupied-sector centerMSE/(27.190842px)² + sector patch deficit, λ1;
+unresolved pixels remain in original denominator; missing centers penalized9D².
+Positive patch means not exact center/outward measurements. No dark-gap classifier.
+
+Initial exploratory unconstrained winners split R211's confirmed M/V/O in3/6;
+not accepted. Final selection/refinement prioritizes that trainingsector6 same-body
+fact using exact fractionalpoint rays, then soft J. All6 winners satisfy it;
+12–25 feasible trials among40–43 distinct samples/case (27coarse includingbaseline,
+up to16refinement; cache removes duplicate pairs). One-model-bead origin/fullminor
+phase gauge is exact global relabeling, tested bothhands; no inferred photoindex.
+
+HeldoutRMS before→after, patchsupport before→after, coherentall208after:
+minus2698 11.408→10.164/.8631→.8463/100;
+plus2698 11.618→9.450/.8625→.8506/96;
+minus2833 12.581→8.506/.8367→.8004/93;
+plus2833 9.075→10.257/.8652→.8492/91;
+minus3592 7.476→7.762/.7245→.7299/76;
+plus3592 7.829→7.392/.7066→.7216/74.
+4/6 heldout joint objectives improve; center closeness still competes with patch
+ownership. λ0.5/2 sensitivity changes sampled pose4/6. Finite grid not certified
+minimum. No count/hand/photoindex/live model accepted. Current-only holdout,
+historical hypotheses already involved those sections. No208distinct/majority
+claim, no proof centerline alone explains remaining camera/surface/assignment error.
+
+Two existing independent POV-ID inverse fixtures: perturb phase40deg/origin1/3
+bead, train4/hold4center+patch groups and one training same-body group each.
+HeldoutJ minus .319657→.005409,plus .504800→.000482; maximum recovered physical
+position discrepancy0/.582px, both groups coherent. Four unit controls pass:
+bothhand gauge equivalence, sector balance, split/hidden/missing/unknown penalties,
+confirmed membership outranks better softloss. Known geometry only, not automatic
+detector/general helicity/count recovery. Six final selected poses reevaluated:
+full scores/memberships exact, original IDs/coordinates retained, candidate
+training rankings checked. Historical baseline training scores match R210.
+Six PNGs repeat byte-identically; full sampled search not rerun for that repeat.
+Validation initially assumed43 trials in every case; duplicate cache actually
+gives40–43. Corrected the verifier and documentation; search/result unchanged.
+
+photo2/POSITIVE_PATCH_REGISTRATION.md shows raw-first top/right/bend comparisons,
+both2698 whole-image cyan minor-outward circles/unchangedgreenpatches, heldoutgraph.
+All inspected. No new question required; Q210.1 remains answered. Fifteen curated
+payloads and summary in review/r214; routine banks ignored output/r214. Source/
+output hashes and exactfixture ID hashes sealed; ten protected inputs/all prior
+R210 sources+payloads unchanged. Photo/POV/detector/live labels/centers/scores/
+41+208references/old ledgers unchanged. JSON/syntax/review links/append-only log/
+whitespace checks pass. Plan/handoff/methods updated for bounded stopping point.
+
+Reproduce: .venv/bin/python photo2/review_positive_registration.py;
+.venv/bin/python -m unittest discover -s photo2 -p test_positive_registration.py.
+Stop limited registration. Next bounded task: compare methods for a small smooth
+centerline correction with positive evidence, heldout sectors, bothhands/counts;
+keep camera/localstretch fixed initially, eventual stretch zero-net. Prefer easy
+nearby colored bodies, difficult cases unresolved. gpt-6.1-sol / High, same session;
+no /new. Scoped commit/push and exact remote/clean verification before delivery.

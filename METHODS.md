@@ -1410,6 +1410,19 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R214 adds [limited positive-patch registration](photo2/POSITIVE_PATCH_REGISTRATION.md).
+For each fixed camera/centerline/count/hand hypothesis, search minor phase and
+origin using equal occupied-sector visible-center MSE plus verified interior
+ownership deficit. Keep unknown/missing pixels/centers in denominators, positive
+patches distinct from center/outward anchors, tentative model indices distinct
+from photo labels. Use maker-confirmed same-body point groups as training
+constraints, before soft-score ranking. Whole-model origin/phase gauge equivalence
+is tested for both hands. Withhold alternate spatial sectors from current search;
+disclose historical use of their sections. Check both known POV-ID inverse
+fixtures and sensitivity to score weights. Center proximity and ownership can
+disagree; do not select bead count/helicity from either alone. Stop before curve
+changes; next test small smooth centerline corrections with both hypotheses held.
+
 R210 adds the [frozen-model correspondence pilot](photo2/VISIBLE_CORRESPONDENCE_PILOT.md):
 compare maker visible centers to predicted occlusion-aware visible-region means;
 trace every selected positive-patch pixel separately. Complete candidate bounds,

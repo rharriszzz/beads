@@ -17,7 +17,32 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R211–R213: same-bead answer; positive patches and easier evidence
+## Current R214: phase/origin registration from positive evidence
+
+[Results, raw crops, whole-image overlays and held-out scores](photo2/POSITIVE_PATCH_REGISTRATION.md).
+41 maker visible-part centers and208 colored positive interiors preserved;
+fit only phase/origin for bothhands at2698/2833/3592. Camera/spline/sizes/count/
+stretch fixed. Training sectors0/2/4/6:28centers/107patches; heldout1/3/5/7:
+13centers/101patches. Equal occupied-sector losses, unresolved pixels retained.
+Maker-confirmed M/V/O same-body fact enters as a hard training constraint;
+all six selected configurations satisfy it. An earlier unconstrained pass split
+the points in three selected cases and was not accepted.
+
+Four of six heldout joint scores improve, but lower center errors still compete
+with patch support. Plus2698: heldoutRMS11.62→9.45px/support86.25→85.06%;
+plus3592:7.83→7.39px/support70.66→72.16%. No N/hand/photoindex accepted or live
+model replaced. Weight0.5/2 changes selected pose in4/6; finite40–43candidate searches
+are not certified optima. Heldout only from this fit, not historical hypothesis
+selection. Two existing POV-ID inverse controls pass, geometry error≤0.582px;
+four analytic/adverse unit controls pass. No boundary classifier or new detector.
+
+**Stop:** registration experiment. **Next bounded task:** compare methods for
+a small smooth centerline correction using positive interiors, saved centers,
+held-out sectors and both hands/counts. Keep camera and local stretch fixed at
+first; later stretch must integrate to zero. Prefer nearby clear colored evidence,
+retain difficult bodies unresolved. gpt-6.1-sol / High, same session; no `/new`.
+
+## Prior R211–R213: same-bead answer; positive patches and easier evidence
 
 Maker confirms V/M/O all lie in the same photo bead containing saved center-mark5.
 [Reply](photo2/correspondence-answer-r211.json) bound to original points/image;

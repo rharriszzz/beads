@@ -1,0 +1,2081 @@
+{
+  "winner": {
+    "candidate": 35,
+    "stage": "refine",
+    "phase_delta_degrees": 60.0,
+    "origin_shift_beads": -0.16666666666666666,
+    "metrics": {
+      "objective": 0.22045492145573908,
+      "balanced_center_rms_pixels": 8.5157348617184,
+      "center_mse_by_sector": {
+        "0": 47.91784140556236,
+        "2": 85.16721028302256,
+        "4": 84.36663993128927,
+        "6": 72.61926932047017
+      },
+      "balanced_patch_support": 0.8776292519773433,
+      "patch_support_by_sector": {
+        "0": 0.8115568297976045,
+        "2": 0.8287607762854667,
+        "4": 0.9721748305493364,
+        "6": 0.8980245712769656
+      },
+      "coherent_central_patches": 52,
+      "total_patches": 107,
+      "total_centers": 28,
+      "missing_centers": 0,
+      "uncertain_patches": 21,
+      "patch_weight": 1.0,
+      "diameter_pixels": 27.190842412550417
+    },
+    "same_body_memberships": [
+      {
+        "name": "R211 M V O same photo bead",
+        "owner": [
+          2807,
+          2807,
+          2807
+        ],
+        "unfinished": [
+          0,
+          0,
+          0
+        ],
+        "coherent": true
+      }
+    ],
+    "same_body_constraints_satisfied": true
+  },
+  "trials": [
+    {
+      "candidate": 0,
+      "stage": "baseline",
+      "phase_delta_degrees": 0.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.29192548124446527,
+        "balanced_center_rms_pixels": 9.58306586450298,
+        "center_mse_by_sector": {
+          "0": 58.82813396079476,
+          "2": 127.31388587589858,
+          "4": 94.45670049194024,
+          "6": 86.74188512497547
+        },
+        "balanced_patch_support": 0.8322865375578417,
+        "patch_support_by_sector": {
+          "0": 0.7045979716122277,
+          "2": 0.8047638629288036,
+          "4": 0.9622089510182396,
+          "6": 0.857575364672096
+        },
+        "coherent_central_patches": 46,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 22,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2808,
+            2808,
+            2809
+          ],
+          "unfinished": [
+            0,
+            1,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 1,
+      "stage": "coarse",
+      "phase_delta_degrees": -160.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.28499061267322956,
+        "balanced_center_rms_pixels": 9.921737084135898,
+        "center_mse_by_sector": {
+          "0": 132.95864650754203,
+          "2": 75.15526462715597,
+          "4": 72.29306548350156,
+          "6": 113.35649044867056
+        },
+        "balanced_patch_support": 0.848155994178401,
+        "patch_support_by_sector": {
+          "0": 0.8669185606821755,
+          "2": 0.917419181959726,
+          "4": 0.8688282134238794,
+          "6": 0.7394580206478234
+        },
+        "coherent_central_patches": 47,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 30,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2805,
+            2805,
+            2805
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 2,
+      "stage": "coarse",
+      "phase_delta_degrees": -160.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.299545317119586,
+        "balanced_center_rms_pixels": 10.10176641570747,
+        "center_mse_by_sector": {
+          "0": 128.5753522484371,
+          "2": 80.84882252838126,
+          "4": 85.29903297087685,
+          "6": 113.45953112236614
+        },
+        "balanced_patch_support": 0.8384770013570143,
+        "patch_support_by_sector": {
+          "0": 0.8725201401618303,
+          "2": 0.9284554583749312,
+          "4": 0.8319395060541996,
+          "6": 0.720992900837096
+        },
+        "coherent_central_patches": 46,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 23,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2805,
+            2805,
+            2805
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 3,
+      "stage": "coarse",
+      "phase_delta_degrees": -160.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.32169230629036205,
+        "balanced_center_rms_pixels": 10.48766855008677,
+        "center_mse_by_sector": {
+          "0": 127.40952005207028,
+          "2": 91.04732835522458,
+          "4": 106.28654100795686,
+          "6": 115.22137705066477
+        },
+        "balanced_patch_support": 0.8270767408372595,
+        "patch_support_by_sector": {
+          "0": 0.8700041563529568,
+          "2": 0.9279509057786989,
+          "4": 0.8020011744917696,
+          "6": 0.7083507267256122
+        },
+        "coherent_central_patches": 41,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 24,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2805,
+            2805,
+            2805
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 4,
+      "stage": "coarse",
+      "phase_delta_degrees": -120.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.32089347749573316,
+        "balanced_center_rms_pixels": 11.356449569431243,
+        "center_mse_by_sector": {
+          "0": 78.74716559266113,
+          "2": 142.80032190093266,
+          "4": 213.10944411656953,
+          "6": 81.21885568197706
+        },
+        "balanced_patch_support": 0.853544011960843,
+        "patch_support_by_sector": {
+          "0": 0.8309561033757235,
+          "2": 0.8289137422321124,
+          "4": 0.9183031869078381,
+          "6": 0.8360030153276979
+        },
+        "coherent_central_patches": 50,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 23,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2804,
+            2804,
+            2804
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 5,
+      "stage": "coarse",
+      "phase_delta_degrees": -120.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.3184272445084112,
+        "balanced_center_rms_pixels": 11.21353971153899,
+        "center_mse_by_sector": {
+          "0": 87.88183390911689,
+          "2": 122.46027047444593,
+          "4": 210.69551507124245,
+          "6": 81.93627199424252
+        },
+        "balanced_patch_support": 0.851647616626505,
+        "patch_support_by_sector": {
+          "0": 0.856183884631432,
+          "2": 0.805775860036876,
+          "4": 0.9049327400146641,
+          "6": 0.839697981823048
+        },
+        "coherent_central_patches": 50,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 26,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2804,
+            2804,
+            2804
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 6,
+      "stage": "coarse",
+      "phase_delta_degrees": -120.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.31434611949880253,
+        "balanced_center_rms_pixels": 11.035550401122418,
+        "center_mse_by_sector": {
+          "0": 95.09478985506311,
+          "2": 99.05985799201582,
+          "4": 211.6579217195032,
+          "6": 81.32092105627044
+        },
+        "balanced_patch_support": 0.8503724915073543,
+        "patch_support_by_sector": {
+          "0": 0.8556160422574012,
+          "2": 0.8165427231134742,
+          "4": 0.8889692378328742,
+          "6": 0.840361962825668
+        },
+        "coherent_central_patches": 53,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 22,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2804,
+            2804,
+            2804
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 7,
+      "stage": "coarse",
+      "phase_delta_degrees": -80.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.3008605769483429,
+        "balanced_center_rms_pixels": 9.944844633578422,
+        "center_mse_by_sector": {
+          "0": 118.70371133322226,
+          "2": 129.96179589012146,
+          "4": 52.18922927862407,
+          "6": 94.74500264208629
+        },
+        "balanced_patch_support": 0.8329069442764637,
+        "patch_support_by_sector": {
+          "0": 0.8348961383345148,
+          "2": 0.8627078770311006,
+          "4": 0.7846236035896837,
+          "6": 0.8494001581505555
+        },
+        "coherent_central_patches": 49,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 22,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2803,
+            2810,
+            2810
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 8,
+      "stage": "coarse",
+      "phase_delta_degrees": -80.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.2988733930264439,
+        "balanced_center_rms_pixels": 9.992855007335786,
+        "center_mse_by_sector": {
+          "0": 111.16653718181618,
+          "2": 146.91441962126936,
+          "4": 53.35730707742387,
+          "6": 87.9903409100342
+        },
+        "balanced_patch_support": 0.8361888152670193,
+        "patch_support_by_sector": {
+          "0": 0.825687319478957,
+          "2": 0.8696255744904068,
+          "4": 0.7960253901302123,
+          "6": 0.8534169769685008
+        },
+        "coherent_central_patches": 45,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 20,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2803,
+            2804,
+            2804
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 9,
+      "stage": "coarse",
+      "phase_delta_degrees": -80.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.3036835709152233,
+        "balanced_center_rms_pixels": 10.547182799191217,
+        "center_mse_by_sector": {
+          "0": 114.78222548047763,
+          "2": 173.80185143004357,
+          "4": 72.09880168392496,
+          "6": 84.28938140377416
+        },
+        "balanced_patch_support": 0.846778702802524,
+        "patch_support_by_sector": {
+          "0": 0.821363416868764,
+          "2": 0.8973018465268761,
+          "4": 0.8138582365858981,
+          "6": 0.8545913112285578
+        },
+        "coherent_central_patches": 51,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 21,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2803,
+            2803,
+            2804
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 10,
+      "stage": "coarse",
+      "phase_delta_degrees": -40.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.2935694473073268,
+        "balanced_center_rms_pixels": 8.556795866154765,
+        "center_mse_by_sector": {
+          "0": 127.97550495451108,
+          "2": 63.29826297943056,
+          "4": 1.5254005122301058,
+          "6": 100.0758535340013
+        },
+        "balanced_patch_support": 0.8054628872531429,
+        "patch_support_by_sector": {
+          "0": 0.717945731563025,
+          "2": 0.7788597495307655,
+          "4": 0.9070115874463702,
+          "6": 0.8180344804724105
+        },
+        "coherent_central_patches": 41,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 25,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2809,
+            2809,
+            2809
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 11,
+      "stage": "coarse",
+      "phase_delta_degrees": -40.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.290611148056491,
+        "balanced_center_rms_pixels": 8.995737406668864,
+        "center_mse_by_sector": {
+          "0": 145.91467098317906,
+          "2": 72.48634053052636,
+          "4": 1.6720687342195297,
+          "6": 103.62008571104091
+        },
+        "balanced_patch_support": 0.8188419889486718,
+        "patch_support_by_sector": {
+          "0": 0.7739364042127568,
+          "2": 0.7974776342798595,
+          "4": 0.8827966084018454,
+          "6": 0.8211573089002251
+        },
+        "coherent_central_patches": 41,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 28,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2809,
+            2809,
+            2809
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 12,
+      "stage": "coarse",
+      "phase_delta_degrees": -40.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.3007290260859615,
+        "balanced_center_rms_pixels": 9.50870310148636,
+        "center_mse_by_sector": {
+          "0": 159.02469177029516,
+          "2": 90.18813697465127,
+          "4": 4.541336786489643,
+          "6": 107.9075731574292
+        },
+        "balanced_patch_support": 0.8215627489565054,
+        "patch_support_by_sector": {
+          "0": 0.8076057347882671,
+          "2": 0.7990037315876589,
+          "4": 0.864295307514181,
+          "6": 0.8153462219359147
+        },
+        "coherent_central_patches": 43,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 27,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2809,
+            2809,
+            2809
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 13,
+      "stage": "coarse",
+      "phase_delta_degrees": 0.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.2797233407556189,
+        "balanced_center_rms_pixels": 9.625011053027867,
+        "center_mse_by_sector": {
+          "0": 57.40492959016723,
+          "2": 128.5014470488597,
+          "4": 99.16852762442494,
+          "6": 85.4884468201826
+        },
+        "balanced_patch_support": 0.8455784125733066,
+        "patch_support_by_sector": {
+          "0": 0.7598821392079804,
+          "2": 0.7981167354949833,
+          "4": 0.971722027972028,
+          "6": 0.8525927476182346
+        },
+        "coherent_central_patches": 46,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 18,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2808,
+            2808,
+            2809
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 14,
+      "stage": "coarse",
+      "phase_delta_degrees": 0.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.2964529722917796,
+        "balanced_center_rms_pixels": 9.494061959086373,
+        "center_mse_by_sector": {
+          "0": 60.26583943661383,
+          "2": 119.13126394316963,
+          "4": 91.03712419178102,
+          "6": 90.1146223603195
+        },
+        "balanced_patch_support": 0.8254624921627621,
+        "patch_support_by_sector": {
+          "0": 0.6732558038552431,
+          "2": 0.8189121919265456,
+          "4": 0.9427390896140896,
+          "6": 0.8669428832551701
+        },
+        "coherent_central_patches": 52,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 17,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2808,
+            2808,
+            2809
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 15,
+      "stage": "coarse",
+      "phase_delta_degrees": 40.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.33117079206489564,
+        "balanced_center_rms_pixels": 10.541784951701102,
+        "center_mse_by_sector": {
+          "0": 81.23315558597852,
+          "2": 123.61767247129995,
+          "4": 145.09890263759016,
+          "6": 94.56718917677861
+        },
+        "balanced_patch_support": 0.8191375136037886,
+        "patch_support_by_sector": {
+          "0": 0.9069602360257799,
+          "2": 0.8048005711666523,
+          "4": 0.7206829032485957,
+          "6": 0.8441063439741268
+        },
+        "coherent_central_patches": 47,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 19,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2808
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 16,
+      "stage": "coarse",
+      "phase_delta_degrees": 40.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.3332551571418748,
+        "balanced_center_rms_pixels": 10.454385797371533,
+        "center_mse_by_sector": {
+          "0": 71.13882117828922,
+          "2": 132.19087067097797,
+          "4": 140.19745089967913,
+          "6": 93.64958685218816
+        },
+        "balanced_patch_support": 0.8145711472496362,
+        "patch_support_by_sector": {
+          "0": 0.8786695770292308,
+          "2": 0.8198135497621205,
+          "4": 0.7272555466789469,
+          "6": 0.8325459155282469
+        },
+        "coherent_central_patches": 45,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 24,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2808
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 17,
+      "stage": "coarse",
+      "phase_delta_degrees": 40.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.33959756187004697,
+        "balanced_center_rms_pixels": 10.46863495118099,
+        "center_mse_by_sector": {
+          "0": 69.23374502074648,
+          "2": 139.9760401772862,
+          "4": 135.29110293275056,
+          "6": 93.8683828335696
+        },
+        "balanced_patch_support": 0.8086319867259747,
+        "patch_support_by_sector": {
+          "0": 0.8534180598849458,
+          "2": 0.7837012117561962,
+          "4": 0.7454672080942912,
+          "6": 0.8519414671684653
+        },
+        "coherent_central_patches": 53,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 14,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2808
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 18,
+      "stage": "coarse",
+      "phase_delta_degrees": 80.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.2567172237231333,
+        "balanced_center_rms_pixels": 8.905259971229887,
+        "center_mse_by_sector": {
+          "0": 124.06019107613253,
+          "2": 26.549080558497316,
+          "4": 61.958971656575116,
+          "6": 104.64637732955234
+        },
+        "balanced_patch_support": 0.8505452673708118,
+        "patch_support_by_sector": {
+          "0": 0.8722412547794375,
+          "2": 0.8623857783844728,
+          "4": 0.8719127559419063,
+          "6": 0.7956412803774306
+        },
+        "coherent_central_patches": 54,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 24,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 19,
+      "stage": "coarse",
+      "phase_delta_degrees": 80.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.24969285631622107,
+        "balanced_center_rms_pixels": 8.811660535466116,
+        "center_mse_by_sector": {
+          "0": 124.34210598222586,
+          "2": 26.769158355995835,
+          "4": 52.71746003180238,
+          "6": 106.75272119913986
+        },
+        "balanced_patch_support": 0.8553267025998068,
+        "patch_support_by_sector": {
+          "0": 0.8841733291398387,
+          "2": 0.8719216158151102,
+          "4": 0.8906678171282334,
+          "6": 0.774544048316045
+        },
+        "coherent_central_patches": 55,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 25,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 20,
+      "stage": "coarse",
+      "phase_delta_degrees": 80.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.2521144502589785,
+        "balanced_center_rms_pixels": 8.701431903478214,
+        "center_mse_by_sector": {
+          "0": 129.14871947329522,
+          "2": 26.60874696375081,
+          "4": 37.751867051689516,
+          "6": 109.35033519473849
+        },
+        "balanced_patch_support": 0.8502940782360369,
+        "patch_support_by_sector": {
+          "0": 0.8500024018949316,
+          "2": 0.8918618351005118,
+          "4": 0.9094606658712391,
+          "6": 0.7498514100774651
+        },
+        "coherent_central_patches": 49,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 22,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 21,
+      "stage": "coarse",
+      "phase_delta_degrees": 120.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.26861359458954404,
+        "balanced_center_rms_pixels": 9.186625429070272,
+        "center_mse_by_sector": {
+          "0": 69.56602938412236,
+          "2": 75.22404056586151,
+          "4": 122.06476366141635,
+          "6": 70.72151348476203
+        },
+        "balanced_patch_support": 0.8455339811214074,
+        "patch_support_by_sector": {
+          "0": 0.8566546984776453,
+          "2": 0.8021512228787,
+          "4": 0.8191396060915319,
+          "6": 0.9041903970377523
+        },
+        "coherent_central_patches": 55,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 19,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 22,
+      "stage": "coarse",
+      "phase_delta_degrees": 120.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.25166007268305096,
+        "balanced_center_rms_pixels": 8.848794914838077,
+        "center_mse_by_sector": {
+          "0": 68.41645205771755,
+          "2": 66.91337737031014,
+          "4": 106.79453262370465,
+          "6": 71.08032372772448
+        },
+        "balanced_patch_support": 0.8542465048676893,
+        "patch_support_by_sector": {
+          "0": 0.8342909117656973,
+          "2": 0.7831504728117734,
+          "4": 0.8900451999236488,
+          "6": 0.9094994349696373
+        },
+        "coherent_central_patches": 56,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 21,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 23,
+      "stage": "coarse",
+      "phase_delta_degrees": 120.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.23236109164063565,
+        "balanced_center_rms_pixels": 8.346429867554079,
+        "center_mse_by_sector": {
+          "0": 64.3400548975622,
+          "2": 59.75338094901636,
+          "4": 83.89916606394044,
+          "6": 70.65896422547621
+        },
+        "balanced_patch_support": 0.8618617442188419,
+        "patch_support_by_sector": {
+          "0": 0.8065981177847981,
+          "2": 0.7945228668826754,
+          "4": 0.9374464999014521,
+          "6": 0.9088794923064419
+        },
+        "coherent_central_patches": 51,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 24,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 24,
+      "stage": "coarse",
+      "phase_delta_degrees": 160.0,
+      "origin_shift_beads": -0.3333333333333333,
+      "metrics": {
+        "objective": 0.2690272661462608,
+        "balanced_center_rms_pixels": 10.25486783324596,
+        "center_mse_by_sector": {
+          "0": 83.56730274684018,
+          "2": 154.2759986238057,
+          "4": 92.88277387165827,
+          "6": 89.92318186706666
+        },
+        "balanced_patch_support": 0.8732104627013989,
+        "patch_support_by_sector": {
+          "0": 0.9608568946414567,
+          "2": 0.9281899503362236,
+          "4": 0.8056722559998232,
+          "6": 0.7981227498280922
+        },
+        "coherent_central_patches": 59,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 20,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2805,
+            2805,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 25,
+      "stage": "coarse",
+      "phase_delta_degrees": 160.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.2562693522969215,
+        "balanced_center_rms_pixels": 9.983377740947644,
+        "center_mse_by_sector": {
+          "0": 72.44445093558247,
+          "2": 140.2943848345609,
+          "4": 101.82272851588996,
+          "6": 84.1097601877622
+        },
+        "balanced_patch_support": 0.878536790330111,
+        "patch_support_by_sector": {
+          "0": 0.9629952111806951,
+          "2": 0.9119982925834421,
+          "4": 0.8097546181735636,
+          "6": 0.8293990393827432
+        },
+        "coherent_central_patches": 58,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 23,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2805,
+            2805,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 26,
+      "stage": "coarse",
+      "phase_delta_degrees": 160.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.26517349641413,
+        "balanced_center_rms_pixels": 10.122691338550885,
+        "center_mse_by_sector": {
+          "0": 62.845066909158945,
+          "2": 130.60963820243705,
+          "4": 135.6097922711435,
+          "6": 80.81102235955291
+        },
+        "balanced_patch_support": 0.8734212165280102,
+        "patch_support_by_sector": {
+          "0": 0.9634899177642661,
+          "2": 0.8661739825777366,
+          "4": 0.7905661141910622,
+          "6": 0.8734548515789762
+        },
+        "coherent_central_patches": 59,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 18,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2805,
+            2805,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 27,
+      "stage": "refine",
+      "phase_delta_degrees": 100.0,
+      "origin_shift_beads": 0.16666666666666666,
+      "metrics": {
+        "objective": 0.29063681458383894,
+        "balanced_center_rms_pixels": 10.913986442233048,
+        "center_mse_by_sector": {
+          "0": 77.07056970856902,
+          "2": 117.6087995331724,
+          "4": 194.7092071662316,
+          "6": 87.07182383701411
+        },
+        "balanced_patch_support": 0.8704728131435511,
+        "patch_support_by_sector": {
+          "0": 0.9497235430099881,
+          "2": 0.825992074247396,
+          "4": 0.8350781354959161,
+          "6": 0.8710974998209041
+        },
+        "coherent_central_patches": 54,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 20,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 28,
+      "stage": "refine",
+      "phase_delta_degrees": 100.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.29708197117315316,
+        "balanced_center_rms_pixels": 10.947463037943033,
+        "center_mse_by_sector": {
+          "0": 72.47731769104449,
+          "2": 115.75396440673549,
+          "4": 204.06174933385074,
+          "6": 87.09475643688488
+        },
+        "balanced_patch_support": 0.8650175191535168,
+        "patch_support_by_sector": {
+          "0": 0.949050423858608,
+          "2": 0.8061712913853135,
+          "4": 0.8370815978705131,
+          "6": 0.8677667634996322
+        },
+        "coherent_central_patches": 56,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 19,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 29,
+      "stage": "refine",
+      "phase_delta_degrees": 44.59583480409461,
+      "origin_shift_beads": -0.5,
+      "metrics": {
+        "objective": 0.29868053089828095,
+        "balanced_center_rms_pixels": 11.002422225522437,
+        "center_mse_by_sector": {
+          "0": 69.85012196217352,
+          "2": 118.18263059422716,
+          "4": 208.21642417508366,
+          "6": 87.96400258319609
+        },
+        "balanced_patch_support": 0.8650506102835929,
+        "patch_support_by_sector": {
+          "0": 0.9414202955739251,
+          "2": 0.7961995027471837,
+          "4": 0.856936505937465,
+          "6": 0.865646136875798
+        },
+        "coherent_central_patches": 55,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 26,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2808
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 30,
+      "stage": "refine",
+      "phase_delta_degrees": 120.0,
+      "origin_shift_beads": 0.16666666666666666,
+      "metrics": {
+        "objective": 0.238749406018385,
+        "balanced_center_rms_pixels": 8.549781637711865,
+        "center_mse_by_sector": {
+          "0": 65.86297878005557,
+          "2": 62.873816960224495,
+          "4": 93.06314320300652,
+          "6": 70.59512526693327
+        },
+        "balanced_patch_support": 0.8601206363188437,
+        "patch_support_by_sector": {
+          "0": 0.8273421696719242,
+          "2": 0.7956897365967764,
+          "4": 0.9115407855918445,
+          "6": 0.9059098534148299
+        },
+        "coherent_central_patches": 51,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 26,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 31,
+      "stage": "refine",
+      "phase_delta_degrees": 64.59583480409461,
+      "origin_shift_beads": -0.5,
+      "metrics": {
+        "objective": 0.23105525886664555,
+        "balanced_center_rms_pixels": 8.292338618373506,
+        "center_mse_by_sector": {
+          "0": 64.90976640979778,
+          "2": 58.32478423230051,
+          "4": 79.62533144122158,
+          "6": 72.19163696375463
+        },
+        "balanced_patch_support": 0.8619502622988955,
+        "patch_support_by_sector": {
+          "0": 0.7925360121845045,
+          "2": 0.8015157462296989,
+          "4": 0.9528861718476052,
+          "6": 0.9008631189337731
+        },
+        "coherent_central_patches": 55,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 23,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 32,
+      "stage": "refine",
+      "phase_delta_degrees": 140.0,
+      "origin_shift_beads": 0.16666666666666666,
+      "metrics": {
+        "objective": 0.3247869868414066,
+        "balanced_center_rms_pixels": 10.097952682456645,
+        "center_mse_by_sector": {
+          "0": 139.31397300399948,
+          "2": 45.8208206455923,
+          "4": 112.41803416127351,
+          "6": 110.32176569766804
+        },
+        "balanced_patch_support": 0.8131311358101971,
+        "patch_support_by_sector": {
+          "0": 0.8595887459709803,
+          "2": 0.8541585552535759,
+          "4": 0.7427618877467953,
+          "6": 0.796015354269437
+        },
+        "coherent_central_patches": 49,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 19,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 33,
+      "stage": "refine",
+      "phase_delta_degrees": 140.0,
+      "origin_shift_beads": 0.3333333333333333,
+      "metrics": {
+        "objective": 0.31394115849999443,
+        "balanced_center_rms_pixels": 9.942539830354628,
+        "center_mse_by_sector": {
+          "0": 138.41346073176828,
+          "2": 44.2418675447786,
+          "4": 101.80623931736255,
+          "6": 110.95482551884349
+        },
+        "balanced_patch_support": 0.8197643663640799,
+        "patch_support_by_sector": {
+          "0": 0.8634466922625129,
+          "2": 0.8569711642903298,
+          "4": 0.7589726190065214,
+          "6": 0.799666989896956
+        },
+        "coherent_central_patches": 52,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 25,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2806
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 34,
+      "stage": "refine",
+      "phase_delta_degrees": 84.59583480409458,
+      "origin_shift_beads": -0.5,
+      "metrics": {
+        "objective": 0.30674548670034407,
+        "balanced_center_rms_pixels": 9.813928702499783,
+        "center_mse_by_sector": {
+          "0": 139.08506388717478,
+          "2": 40.625934613568624,
+          "4": 93.7590619886854,
+          "6": 111.7827258215676
+        },
+        "balanced_patch_support": 0.8235233309214146,
+        "patch_support_by_sector": {
+          "0": 0.8639638502224612,
+          "2": 0.8589521311159914,
+          "4": 0.7718345024087537,
+          "6": 0.7993428399384518
+        },
+        "coherent_central_patches": 47,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 20,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 35,
+      "stage": "refine",
+      "phase_delta_degrees": 60.0,
+      "origin_shift_beads": -0.16666666666666666,
+      "metrics": {
+        "objective": 0.22045492145573908,
+        "balanced_center_rms_pixels": 8.5157348617184,
+        "center_mse_by_sector": {
+          "0": 47.91784140556236,
+          "2": 85.16721028302256,
+          "4": 84.36663993128927,
+          "6": 72.61926932047017
+        },
+        "balanced_patch_support": 0.8776292519773433,
+        "patch_support_by_sector": {
+          "0": 0.8115568297976045,
+          "2": 0.8287607762854667,
+          "4": 0.9721748305493364,
+          "6": 0.8980245712769656
+        },
+        "coherent_central_patches": 52,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 21,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 36,
+      "stage": "refine",
+      "phase_delta_degrees": 60.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.22845624312115284,
+        "balanced_center_rms_pixels": 8.495253677967023,
+        "center_mse_by_sector": {
+          "0": 49.852425844060264,
+          "2": 86.26782979733403,
+          "4": 79.50208582237859,
+          "6": 73.05499874827595
+        },
+        "balanced_patch_support": 0.8691566934229595,
+        "patch_support_by_sector": {
+          "0": 0.7882316760582199,
+          "2": 0.831136843540056,
+          "4": 0.9746743717964074,
+          "6": 0.8825838822971546
+        },
+        "coherent_central_patches": 51,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 23,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 37,
+      "stage": "refine",
+      "phase_delta_degrees": 60.0,
+      "origin_shift_beads": 0.16666666666666666,
+      "metrics": {
+        "objective": 0.23856418418781689,
+        "balanced_center_rms_pixels": 8.555611379129195,
+        "center_mse_by_sector": {
+          "0": 52.052327864991085,
+          "2": 85.72894844200579,
+          "4": 81.6338151811989,
+          "6": 73.3788527945441
+        },
+        "balanced_patch_support": 0.8604407348778,
+        "patch_support_by_sector": {
+          "0": 0.7625745880584033,
+          "2": 0.8377925016801823,
+          "4": 0.97638931117192,
+          "6": 0.8650065386006948
+        },
+        "coherent_central_patches": 57,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 13,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 38,
+      "stage": "refine",
+      "phase_delta_degrees": 80.0,
+      "origin_shift_beads": -0.16666666666666666,
+      "metrics": {
+        "objective": 0.25427519508788565,
+        "balanced_center_rms_pixels": 8.926562322692881,
+        "center_mse_by_sector": {
+          "0": 127.22759477369044,
+          "2": 27.21949229676425,
+          "4": 58.35508985489385,
+          "6": 105.93188267833196
+        },
+        "balanced_patch_support": 0.8535010768969108,
+        "patch_support_by_sector": {
+          "0": 0.8819990162074035,
+          "2": 0.8669654606200411,
+          "4": 0.8858111174069673,
+          "6": 0.7792287133532315
+        },
+        "coherent_central_patches": 51,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 22,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 39,
+      "stage": "refine",
+      "phase_delta_degrees": 80.0,
+      "origin_shift_beads": 0.16666666666666666,
+      "metrics": {
+        "objective": 0.247193151682702,
+        "balanced_center_rms_pixels": 8.753911828890551,
+        "center_mse_by_sector": {
+          "0": 127.56467889562727,
+          "2": 27.44037763425597,
+          "4": 43.211153371255634,
+          "6": 108.30767933082078
+        },
+        "balanced_patch_support": 0.8564543910266615,
+        "patch_support_by_sector": {
+          "0": 0.8633021244252214,
+          "2": 0.8850291463448244,
+          "4": 0.9029296461114644,
+          "6": 0.7745566472251364
+        },
+        "coherent_central_patches": 57,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 16,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2807,
+            2807,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": true
+        }
+      ],
+      "same_body_constraints_satisfied": true
+    },
+    {
+      "candidate": 40,
+      "stage": "refine",
+      "phase_delta_degrees": 100.0,
+      "origin_shift_beads": -0.16666666666666666,
+      "metrics": {
+        "objective": 0.2910850177971851,
+        "balanced_center_rms_pixels": 10.75960216908797,
+        "center_mse_by_sector": {
+          "0": 78.95731335067349,
+          "2": 125.05591776714888,
+          "4": 172.21029331965016,
+          "6": 86.85263091069758
+        },
+        "balanced_patch_support": 0.8654988808000827,
+        "patch_support_by_sector": {
+          "0": 0.9445692191861691,
+          "2": 0.8634823853424766,
+          "4": 0.7897340215441098,
+          "6": 0.8642098971275756
+        },
+        "coherent_central_patches": 45,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 26,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    },
+    {
+      "candidate": 41,
+      "stage": "refine",
+      "phase_delta_degrees": 100.0,
+      "origin_shift_beads": 0.0,
+      "metrics": {
+        "objective": 0.2864719047534496,
+        "balanced_center_rms_pixels": 10.830442824264933,
+        "center_mse_by_sector": {
+          "0": 75.07139339474207,
+          "2": 118.64219846588108,
+          "4": 188.23337930517695,
+          "6": 87.24699591288697
+        },
+        "balanced_patch_support": 0.8721806618168608,
+        "patch_support_by_sector": {
+          "0": 0.9501501626135526,
+          "2": 0.8566666983801609,
+          "4": 0.809641004248363,
+          "6": 0.8722647820253664
+        },
+        "coherent_central_patches": 56,
+        "total_patches": 107,
+        "total_centers": 28,
+        "missing_centers": 0,
+        "uncertain_patches": 21,
+        "patch_weight": 1.0,
+        "diameter_pixels": 27.190842412550417
+      },
+      "same_body_memberships": [
+        {
+          "name": "R211 M V O same photo bead",
+          "owner": [
+            2806,
+            2806,
+            2807
+          ],
+          "unfinished": [
+            0,
+            0,
+            0
+          ],
+          "coherent": false
+        }
+      ],
+      "same_body_constraints_satisfied": false
+    }
+  ],
+  "weight_sensitivity": [
+    {
+      "patch_weight": 0.5,
+      "candidate": 35,
+      "phase_delta_degrees": 60.0,
+      "origin_shift_beads": -0.16666666666666666
+    },
+    {
+      "patch_weight": 2.0,
+      "candidate": 35,
+      "phase_delta_degrees": 60.0,
+      "origin_shift_beads": -0.16666666666666666
+    }
+  ],
+  "configuration": {
+    "spline": "photo2/spline-seed-r175.json",
+    "cores": "photo2/review/r157/report.json",
+    "circle_radius": 0.37996483480584586,
+    "parameters": {
+      "nbeads": 2833,
+      "hand": 1,
+      "elevation": 89.0,
+      "roll": 0.0,
+      "phase": 37.70280290014226,
+      "origin_fraction": 0.8014657783052804
+    },
+    "family": "A"
+  },
+  "training_only": true,
+  "same_body_groups": [
+    {
+      "name": "R211 M V O same photo bead",
+      "points_xy": [
+        [
+          1265.3479324602706,
+          327.987965978947
+        ],
+        [
+          1267.1891891891892,
+          327.56756756756755
+        ],
+        [
+          1268.7160183651945,
+          335.5844826700197
+        ]
+      ],
+      "sector": 6,
+      "source": "photo2/review/r211/confirmed-point-facts.json"
+    }
+  ],
+  "feasible_trials": 25,
+  "fit_dimensions": [
+    "minor phase",
+    "origin"
+  ],
+  "geometry_scope": "Centerline, camera, physical sizes, count and stretch fixed"
+}
