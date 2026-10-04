@@ -1,0 +1,27 @@
+{
+  "requests": [
+    "R215",
+    "R216",
+    "R217"
+  ],
+  "checks": {
+    "r210_sealed_hashes_verified": 42,
+    "r214_sealed_hashes_verified": 44,
+    "r215_sealed_hashes_verified": 36,
+    "repeat_curated_payloads_byte_identical": 17,
+    "repeat_native_mask_archive_byte_identical": true,
+    "answer_bindings_and_confirmed_native_pixel_runs_verified": true,
+    "native_layer_relations_and_label_exports_verified": true,
+    "original_photo_manual_files_and_historical_evidence_unchanged": true,
+    "python_syntax_and_curated_json_valid": true,
+    "request_log_historical_prefix_preserved": true,
+    "introduced_local_document_links_verified": true
+  },
+  "unit_controls_passed": 2,
+  "synthetic_examples": 4,
+  "examples_role": "Development/regression; not independent generality certification",
+  "issued_question_evidence_unchanged": true,
+  "pending_questions": [],
+  "limitation": "This verifies preservation/repetition and layer bookkeeping; maker validation remains limited to illustrated A/B and R.",
+  "historical_fixture_formatting": "Copied scene bytes retain original trailing whitespace; excluded from formatting checks to preserve source hashes."
+}

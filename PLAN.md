@@ -17,7 +17,40 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R214: phase/origin registration from positive evidence
+## Current R215–R217: visible colored pixels and separate reflections
+
+[Current review and answered questions](photo2/VISIBLE_PIXEL_SEGMENTATION.md).
+The maker wants 70–90% of actual visible red/yellow pixels, with dark areas
+guiding boundaries and nearby bands, and reflections recorded separately.
+Work from the image without manual bead marks or adjacency series.
+[Exact scope](photo2/pixel-coverage-scope-r215.json) overrides the planned
+centerline correction and earlier tiny-patch-only aim.
+
+Automatic cores and dark-valley watershed produce 683 region proposals,
+422,487 retained pixels and 47,121 excluded rim pixels. There are 1,339
+reflection candidates, 724 tentatively associated with colored regions.
+Appearance and scale are learned per image; no closed spline, graph, manual
+location or photo placement model is required. Candidate retention is a
+preference, not actual photo recall or one-region-per-bead certification.
+
+Four known-ID examples retain 69.87–74.17% of all colored visible pixels,
+with 100% color precision and median eligible-body coverage 78.1–79.8%.
+Missing, under-covered and mixed regions remain explicit. The fourth framing
+example exposed a failure and became a development regression, not an
+independent holdout. A diffuse-only render gives zero spots versus 71 in the
+shiny image; 68/71 centroids and 77.1% of spot pixels show strong added RGB light.
+Two adverse reflection controls pass; repeated review payloads/masks are exact.
+
+R216 confirms illustrated A/B masks roughly 70–90% and inside; R217 confirms
+cyan R isolates the reflection. [Exact replies](photo2/segmentation-answers-r216-r217.json)
+and [confirmed pixels](photo2/review/r215/confirmed-pixel-facts.json) bind unchanged
+issued evidence. Both questions answered; no whole-photo certification.
+Saved evidence and live manual files are unchanged. **Stop:** pixel/reflection
+review. **Next:** improve weak or mixed masks from nearby easy evidence and
+establish the pixel basis before geometry, centerline or adjacency fitting.
+Recommend gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R214: phase/origin registration from positive evidence
 
 [Results, raw crops, whole-image overlays and held-out scores](photo2/POSITIVE_PATCH_REGISTRATION.md).
 41 maker visible-part centers and208 colored positive interiors preserved;

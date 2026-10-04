@@ -4205,3 +4205,91 @@ centerline correction with positive evidence, heldout sectors, bothhands/counts;
 keep camera/localstretch fixed initially, eventual stretch zero-net. Prefer easy
 nearby colored bodies, difficult cases unresolved. gpt-6.1-sol / High, same session;
 no /new. Scoped commit/push and exact remote/clean verification before delivery.
+
+## R215 — Broad visible colored pixels and separate specular masks
+
+Maker: “what I want to achieve is 70 to 90 percent of the visible pixels for the yellow and red beads, using the darker areas to determine the boundaries, and the regions near to the boundaries.  And separeately determine the specular reflection for those beads that have them.  This is the basis that I want to have before the next step, for now, I i don't want to work on the beads and adjacencies that I manually identified.”
+
+[Exact scope](photo2/pixel-coverage-scope-r215.json) supersedes tiny-positive-patch
+priority and the planned centerline correction. Preflight daisy, clean 40c919d,
+photo-2-reconstruction-v2, no stashes, fetched upstream 0/0; read handoff/plan/
+latest log/AGENTS and relevant appearance/hue experiments. Four methods presented:
+color growth, distance watershed, automatic cores/dark-valley watershed, local
+contours. Third selected, with color-distance comparator. No agents, skills,
+installation, GUI, saved manual marks/series/spline or photo placement fitting.
+
+New image-only segmentation learns paper appearance, circular hue families and
+scale, seeds broad color/dark-valley regions, and excludes weakest rim pixels.
+Compact reflection pixels/weighted positions/threshold sensitivity separate;
+median replacement only in boundary cost. Explicit unknowns, slivers, excluded
+seeds, multiple components and mixed-body risks. 90% candidate retention is a
+preference, not 90% actual photo recall. [Review/method/commands](photo2/VISIBLE_PIXEL_SEGMENTATION.md).
+Photo: 683 proposals, 469,608 candidate pixels, 422,487 retained, 47,121 excluded
+rim; 1,339 reflection candidates, 724 tentative colored associations. No distinct
+bead count, full-photo recall, exact center, boundary, index or adjacency claim.
+
+Four existing known-ID scenes: colored recall 71.87%, 69.87%, 74.17%, 73.52%;
+retained color precision 100%; median eligible-body coverage 78.74%, 78.11%,
+79.55%, 79.82%. Bodies in 70–90%: 79/112, 81/113, 88/113, 85/112. Missing bodies
+2/4/1/1; one-body purity weaker than color precision, preserved in full reports.
+Owner IDs read only after image extraction. These are development/regression
+examples. Fourth initially withheld frame exposed border contamination and was
+used for a fix, so it is NOT independent holdout or a generality certificate.
+
+Failures preserved: hue-background rule suppressed amber on brown; integer
+one-pixel insets discarded too much of small faces; unrefined candidates covered
+dark areas; closed-axis tracing was unnecessary. Fourth frame's bead-contaminated
+.999 border score 171.437 collapsed scale and recall to .092%; cap at existing
+Otsu score range 50 fixed that example without changing first three/photo masks.
+One new diffuse-only validation scene, two development render invocations, changes
+only three phong 1.4 finishes to 0: shiny 71 spots versus diffuse zero. Added RGB
+channel >.04 at 68/71 centroids and 77.1% of proposed pixels. Max V can be clipped
+while other channels brighten; use max added RGB channel. Uncertain spots/tails
+remain. Two adverse unit checks pass: compact neutral highlight localization and
+rejection of saturated diffuse blob. Original beads.pov unchanged.
+
+Curated raw whole-photo, four contexts, A/B masks and R reflection illustrations
+inspected. Q215.1/Q215.2 issued asynchronously with frozen manifest/image/pixel
+runs, replies below. Native TIFF/NPZ/overlays ignored; review ledgers/images and
+eight known fixture POV sources tracked. Repeat 17 curated payloads and native
+mask archive byte-identically; sealed R210/R214/R215 source/output/protected
+hashes, native layer/export consistency, syntax/JSON, exact confirmed runs and
+append-only historical log prefix verified. A formatting check initially flagged
+trailing spaces in the exact copied historical POV scenes; exclude those frozen
+copies rather than alter their source bytes. Original photo/detector/live labels/
+centers/scores/41+208 references/old ledgers unchanged. No curve/camera/phase/
+count/stretch/helicity/adjacency fitting. Plan/handoff/methods updated; scoped
+commit/push and exact remote/clean verification before delivery.
+
+Stop this pixel/reflection review. Next improve weak, under-covered or mixed
+masks using easy neighboring image evidence; establish this basis before fitting.
+Recommend gpt-6.1-sol / High, same conversation; no /new.
+
+## R216 — Q215.1 broad yellow/red masks confirmed
+
+Maker answer: “Yes, roughly 70–90% and inside”. Exact tool question:
+“Q215.1: In photo2/VISIBLE_PIXEL_SEGMENTATION.md, the first two review rows show yellow A and red B beside their green masks. Do the masks capture roughly 70–90% of each bead’s visible part while staying inside that bead? These are new automatic regions, unrelated to your manual bead numbers.”
+Tool item: ["request_user_input_async","call_hijQsFcPARYeqJoY3RbTnzTp",0].
+
+[Exact reply/bindings](photo2/segmentation-answers-r216-r217.json) and
+[confirmed native pixels](photo2/review/r215/confirmed-pixel-facts.json) preserve
+A=yellow automatic region829/UUID acbcd3bf-4e75-591f-812e-5fdfae81b71f (624 pixels),
+B=red region719/UUID fb01490e-b61f-5c8e-bd01-574fd66a0b46 (713 pixels).
+Qualitative local actual-visible coverage and interior containment confirmed;
+not all proposals, exact centers, full silhouettes, indices or adjacency.
+As-issued manifest, image and pixel extents unchanged. Q215.1 answered.
+
+## R217 — Q215.2 separate reflection mask confirmed
+
+Maker answer: “Yes”. Exact tool question:
+“Q215.2: In the bottom review row, does cyan R mark the specular reflection itself while keeping the surrounding dark bead out of cyan?”
+Tool item: ["request_user_input_async","call_hijQsFcPARYeqJoY3RbTnzTp",1].
+
+[Exact reply](photo2/segmentation-answers-r216-r217.json) confirms illustrated
+R=reflection28, 32 pixels, weighted position (975.4995986,2301.0175674), cyan
+isolating the reflection without surrounding dark body. This is a reflection
+position, not bead center/outline/index or black-body ownership confirmation.
+[Answer curation](photo2/review/r215/answer-curation-summary.json) binds frozen
+manifest SHA 5ea989dc… and figure SHA 225d6f36… to exact source/mask runs.
+Q215.2 answered; neither question remains pending. Runtime masks unchanged by
+answers. Next and stopping point remain R215 above.

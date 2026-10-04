@@ -1,0 +1,11 @@
+{
+  "request": "R215",
+  "verbatim_user_message": "what I want to achieve is 70 to 90 percent of the visible pixels for the yellow and red beads, using the darker areas to determine the boundaries, and the regions near to the boundaries.  And separeately determine the specular reflection for those beads that have them.  This is the basis that I want to have before the next step, for now, I i don't want to work on the beads and adjacencies that I manually identified.",
+  "current_objective": "Broad visible-pixel regions for red/yellow beads, guided by dark boundary evidence, with specular reflection masks and positions stored separately",
+  "target_visible_pixel_coverage": [0.7, 0.9],
+  "coverage_denominator": "Actual visible bead pixels, not a model-fit support score or the detector's own candidate area",
+  "manual_bead_locations_or_adjacency_used": false,
+  "geometry_fitting_deferred": true,
+  "supersedes": "R214's planned next centerline correction and earlier tiny-patch-only scope",
+  "uncertainty": "Photo visible-pixel coverage needs visual or independent truth validation; a fraction of a proposed region cannot certify it"
+}

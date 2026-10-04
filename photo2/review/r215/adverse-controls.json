@@ -1,0 +1,991 @@
+{
+  "initial_closed_axis_dependency": "Removed: pixel extraction does not require successful curve/graph tracing",
+  "shared_background_hue": "Rejected hue-nearest-background gate suppressed amber beads on brown paper; replaced with learned chromaticity score",
+  "integer_inset_ties": "One-pixel distance rings discarded 20\u201330% of small faces; brightness/valley ranking now resolves those ties",
+  "unrefined_dark_candidate_extent": "Diffuse/radius/connected-support guards precede defining the near-boundary band",
+  "pre_border_tail_cap_regression": {
+    "fixture": "hand+1-palette1-shift3",
+    "appearance_sha256": "8c28929a672b4f31c1c7b3d06bc5c269922cdb114f6fc9b999f81132b4b75098",
+    "ids_sha256": "e23fe71e00852692d383d441cc5fb3b3ada3d6be638ec56d2ab2bd143ed47f32",
+    "role": "Initially withheld placement check; exposed closed-axis dependency, now a regression example (not independent holdout)",
+    "result": {
+      "eligible_visible_area_threshold": 433.65,
+      "eligible_colored_bodies": 112,
+      "eligible_recall_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.034411562284927734
+      ],
+      "eligible_bodies_in_70_to_90_percent": 0,
+      "eligible_bodies_at_least_70_percent": 0,
+      "eligible_missed_bodies": [
+        1,
+        6,
+        7,
+        12,
+        13,
+        18,
+        19,
+        25,
+        34,
+        39,
+        40,
+        46,
+        51,
+        52,
+        54,
+        58,
+        60,
+        64,
+        66,
+        67,
+        72,
+        73,
+        78,
+        79,
+        84,
+        85,
+        90,
+        91,
+        93,
+        97,
+        99,
+        103,
+        105,
+        106,
+        111,
+        112,
+        117,
+        118,
+        123,
+        124,
+        129,
+        130,
+        135,
+        136,
+        138,
+        142,
+        144,
+        148,
+        150,
+        151,
+        156,
+        157,
+        162,
+        163,
+        168,
+        169,
+        174,
+        175,
+        180,
+        181,
+        183,
+        187,
+        189,
+        193,
+        195,
+        196,
+        201,
+        202,
+        207,
+        208,
+        213,
+        214,
+        219,
+        220,
+        222,
+        225,
+        226,
+        228,
+        232,
+        234,
+        235,
+        238,
+        240,
+        241,
+        246,
+        247,
+        252,
+        253,
+        258,
+        259,
+        261,
+        265,
+        267,
+        271,
+        273,
+        274,
+        279,
+        280,
+        285,
+        286,
+        291,
+        292,
+        297,
+        298,
+        300,
+        304,
+        306
+      ],
+      "all_colored_visible_pixels": 163064,
+      "retained_colored_pixels": 150,
+      "all_colored_pixel_recall": 0.0009198842172398568,
+      "retained_color_precision": 1.0,
+      "retained_background_pixels": 0,
+      "retained_black_pixels": 0,
+      "high_purity_colored_regions": 3,
+      "total_regions": 4,
+      "reflections_on_body": 0,
+      "total_reflections": 0,
+      "bodies": [
+        {
+          "known_body": 0,
+          "visible_pixels": 1741,
+          "retained_visible_fraction": 0.017805858701895463,
+          "best_single_region_recall": 0.017805858701895463,
+          "retained_regions": 1
+        },
+        {
+          "known_body": 1,
+          "visible_pixels": 1148,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 6,
+          "visible_pixels": 1692,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 7,
+          "visible_pixels": 1576,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 12,
+          "visible_pixels": 1247,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 13,
+          "visible_pixels": 1736,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 18,
+          "visible_pixels": 499,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 19,
+          "visible_pixels": 1599,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 21,
+          "visible_pixels": 877,
+          "retained_visible_fraction": 0.00798175598631699,
+          "best_single_region_recall": 0.00798175598631699,
+          "retained_regions": 1
+        },
+        {
+          "known_body": 25,
+          "visible_pixels": 1055,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 27,
+          "visible_pixels": 1428,
+          "retained_visible_fraction": 0.021708683473389355,
+          "best_single_region_recall": 0.021708683473389355,
+          "retained_regions": 1
+        },
+        {
+          "known_body": 33,
+          "visible_pixels": 1717,
+          "retained_visible_fraction": 0.0180547466511357,
+          "best_single_region_recall": 0.0180547466511357,
+          "retained_regions": 1
+        },
+        {
+          "known_body": 34,
+          "visible_pixels": 1063,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 39,
+          "visible_pixels": 1738,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 40,
+          "visible_pixels": 1551,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 45,
+          "visible_pixels": 1453,
+          "retained_visible_fraction": 0.034411562284927734,
+          "best_single_region_recall": 0.034411562284927734,
+          "retained_regions": 1
+        },
+        {
+          "known_body": 46,
+          "visible_pixels": 1777,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 51,
+          "visible_pixels": 866,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 52,
+          "visible_pixels": 1744,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 54,
+          "visible_pixels": 709,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 58,
+          "visible_pixels": 1422,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 60,
+          "visible_pixels": 1291,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 64,
+          "visible_pixels": 868,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 66,
+          "visible_pixels": 1692,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 67,
+          "visible_pixels": 793,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 72,
+          "visible_pixels": 1810,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 73,
+          "visible_pixels": 1338,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 78,
+          "visible_pixels": 1674,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 79,
+          "visible_pixels": 1703,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 84,
+          "visible_pixels": 1492,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 85,
+          "visible_pixels": 1791,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 90,
+          "visible_pixels": 920,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 91,
+          "visible_pixels": 1703,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 93,
+          "visible_pixels": 776,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 97,
+          "visible_pixels": 1522,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 99,
+          "visible_pixels": 1256,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 103,
+          "visible_pixels": 940,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 105,
+          "visible_pixels": 1608,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 106,
+          "visible_pixels": 663,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 111,
+          "visible_pixels": 1736,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 112,
+          "visible_pixels": 1155,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 117,
+          "visible_pixels": 1726,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 118,
+          "visible_pixels": 1497,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 123,
+          "visible_pixels": 1575,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 124,
+          "visible_pixels": 1678,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 129,
+          "visible_pixels": 1143,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 130,
+          "visible_pixels": 1728,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 135,
+          "visible_pixels": 490,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 136,
+          "visible_pixels": 1635,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 138,
+          "visible_pixels": 803,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 142,
+          "visible_pixels": 1317,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 144,
+          "visible_pixels": 1222,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 148,
+          "visible_pixels": 739,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 150,
+          "visible_pixels": 1519,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 151,
+          "visible_pixels": 586,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 156,
+          "visible_pixels": 1732,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 157,
+          "visible_pixels": 1062,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 162,
+          "visible_pixels": 1817,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 163,
+          "visible_pixels": 1445,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 168,
+          "visible_pixels": 1698,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 169,
+          "visible_pixels": 1748,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 174,
+          "visible_pixels": 1346,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 175,
+          "visible_pixels": 1918,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 180,
+          "visible_pixels": 728,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 181,
+          "visible_pixels": 1873,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 183,
+          "visible_pixels": 799,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 187,
+          "visible_pixels": 1597,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 189,
+          "visible_pixels": 1360,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 193,
+          "visible_pixels": 1013,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 195,
+          "visible_pixels": 1796,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 196,
+          "visible_pixels": 705,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 201,
+          "visible_pixels": 2087,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 202,
+          "visible_pixels": 1354,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 207,
+          "visible_pixels": 2109,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 208,
+          "visible_pixels": 1828,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 213,
+          "visible_pixels": 1902,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 214,
+          "visible_pixels": 2095,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 219,
+          "visible_pixels": 1344,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 220,
+          "visible_pixels": 2061,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 222,
+          "visible_pixels": 645,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 225,
+          "visible_pixels": 524,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 226,
+          "visible_pixels": 1812,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 228,
+          "visible_pixels": 1425,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 232,
+          "visible_pixels": 1326,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 234,
+          "visible_pixels": 1807,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 235,
+          "visible_pixels": 653,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 238,
+          "visible_pixels": 665,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 240,
+          "visible_pixels": 1986,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 241,
+          "visible_pixels": 1446,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 246,
+          "visible_pixels": 2017,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 247,
+          "visible_pixels": 1877,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 252,
+          "visible_pixels": 1809,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 253,
+          "visible_pixels": 2050,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 258,
+          "visible_pixels": 1280,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 259,
+          "visible_pixels": 2026,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 261,
+          "visible_pixels": 687,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 265,
+          "visible_pixels": 1708,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 267,
+          "visible_pixels": 1440,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 271,
+          "visible_pixels": 1054,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 273,
+          "visible_pixels": 1841,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 274,
+          "visible_pixels": 745,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 279,
+          "visible_pixels": 2008,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 280,
+          "visible_pixels": 1449,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 285,
+          "visible_pixels": 1848,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 286,
+          "visible_pixels": 1801,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 291,
+          "visible_pixels": 1292,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 292,
+          "visible_pixels": 1914,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 297,
+          "visible_pixels": 492,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 298,
+          "visible_pixels": 1657,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 300,
+          "visible_pixels": 991,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 304,
+          "visible_pixels": 1009,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        },
+        {
+          "known_body": 306,
+          "visible_pixels": 1509,
+          "retained_visible_fraction": 0.0,
+          "best_single_region_recall": 0.0,
+          "retained_regions": 0
+        }
+      ],
+      "regions": [
+        {
+          "region_number": 1,
+          "dominant_known_body": 45,
+          "purity": 1.0,
+          "dominant_is_colored": true,
+          "pixels": 50,
+          "owners": [
+            {
+              "body": 45,
+              "pixels": 50
+            }
+          ]
+        },
+        {
+          "region_number": 2,
+          "dominant_known_body": 33,
+          "purity": 1.0,
+          "dominant_is_colored": true,
+          "pixels": 31,
+          "owners": [
+            {
+              "body": 33,
+              "pixels": 31
+            }
+          ]
+        },
+        {
+          "region_number": 3,
+          "dominant_known_body": 27,
+          "purity": 0.8157894736842105,
+          "dominant_is_colored": true,
+          "pixels": 38,
+          "owners": [
+            {
+              "body": 21,
+              "pixels": 7
+            },
+            {
+              "body": 27,
+              "pixels": 31
+            }
+          ]
+        },
+        {
+          "region_number": 6,
+          "dominant_known_body": 0,
+          "purity": 1.0,
+          "dominant_is_colored": true,
+          "pixels": 31,
+          "owners": [
+            {
+              "body": 0,
+              "pixels": 31
+            }
+          ]
+        }
+      ],
+      "reflections": [],
+      "limitation": "Known synthetic pixel ownership; no photo recall, distinct-body completeness or true reflection-mask certification"
+    }
+  },
+  "regression_role": "Fourth camera/placement fixture clips beads at image border; old .999 border score contaminated threshold. Cap at existing 50-score Otsu range; evaluate final run separately."
+}

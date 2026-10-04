@@ -1,5 +1,9 @@
 # Positive-patch registration — R214
 
+**R215 supersedes the planned next geometry task:** establish broad visible
+colored pixels and separate reflections without using manual bead/adjacency
+labels. Follow [the current pixel review](VISIBLE_PIXEL_SEGMENTATION.md) first.
+
 This step fits only the model's minor-circle phase and starting position along
 the necklace. It uses the existing **41 maker center marks and 208 conservative
 red/yellow interior patches**, with the centerline, projection, physical bead

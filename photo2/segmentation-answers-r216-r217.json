@@ -1,0 +1,28 @@
+{
+  "question_manifest": "photo2/segmentation-questions-r215.json",
+  "question_manifest_sha256": "5ea989dcc7954eb6750a2edeeb77f2390a7592f0eee1b72559ea098fa5927ba0",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "review_image": "photo2/review/r215/questions.png",
+  "review_image_sha256": "225d6f361c0d5766bf98c44526f9edf29512d433f64d035953ad02a3bb0c5867",
+  "locations_file": "photo2/review/r215/review-locations.json",
+  "locations_sha256": "94c71138f3bee70c44dc77ef1ff1f4e3ac9c54b95fcf35590604c90d49d128d6",
+  "replies": [
+    {
+      "request": "R216",
+      "question_id": "Q215.1",
+      "answer": "Yes, roughly 70\u201390% and inside",
+      "question": "Q215.1: In photo2/VISIBLE_PIXEL_SEGMENTATION.md, the first two review rows show yellow A and red B beside their green masks. Do the masks capture roughly 70\u201390% of each bead\u2019s visible part while staying inside that bead? These are new automatic regions, unrelated to your manual bead numbers.",
+      "questionItemId": "[\"request_user_input_async\",\"call_hijQsFcPARYeqJoY3RbTnzTp\",0]",
+      "status": "answered"
+    },
+    {
+      "request": "R217",
+      "question_id": "Q215.2",
+      "answer": "Yes",
+      "question": "Q215.2: In the bottom review row, does cyan R mark the specular reflection itself while keeping the surrounding dark bead out of cyan?",
+      "questionItemId": "[\"request_user_input_async\",\"call_hijQsFcPARYeqJoY3RbTnzTp\",1]",
+      "status": "answered"
+    }
+  ],
+  "limits": "Only illustrated A/B retained masks and R reflection mask; not all-photo recall, other regions, full silhouettes, exact centers, string indices, adjacency or fitting acceptance."
+}

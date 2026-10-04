@@ -9,7 +9,90 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R214 — phase/origin registration with positive patches
+## Current R215–R217 — broad visible pixels and separate specular masks
+
+The maker wants 70–90% of the visible pixels of red/yellow beads, using dark
+areas to guide boundaries and nearby bands, with specular reflections separate.
+[Exact R215 instruction](photo2/pixel-coverage-scope-r215.json) overrides the
+planned curve correction and earlier tiny-patch-only goal. No manual bead marks,
+adjacency series, saved spline or simulated photo positions enter extraction.
+Preflight: daisy, photo-2-reconstruction-v2, clean 40c919d, no stashes, fetched
+upstream 0/0. Read handoff, plan, latest log, AGENTS and relevant appearance/hue
+experiments. Four methods presented; automatic cores and dark-valley watershed
+selected, with a color-distance comparator. No agents, skills or installation.
+
+[Current illustrated review](photo2/VISIBLE_PIXEL_SEGMENTATION.md) shows raw
+whole-photo and four surrounding contexts beside body/rim/reflection layers.
+[Region records](photo2/review/r215/regions.json),
+[known-owner calibration](photo2/review/r215/calibration.json),
+[specular control](photo2/review/r215/specular-control.json),
+[development failures](photo2/review/r215/adverse-controls.json),
+[source/output/protected hashes](photo2/review/r215/summary.json).
+
+New segment_colored_beads.py learns paper appearance, color families and scale
+from each input. Pixel extraction has no closed-curve/graph prerequisite.
+Dark/color watershed and seed-relative diffuse/radius/support guards establish
+candidate regions. Interior distance, diffuse brightness and valley ranking
+omit their weakest rim pixels, retaining approximately 90% of the candidate.
+That preference is NOT a measurement of actual visible coverage. Unknown pixels,
+excluded seeds, slivers, multiple components and mixed-body risk remain explicit.
+Compact reflections have separate pixel runs, weighted positions and threshold
+sensitivity. Highlight brightness is replaced by a local median only in the
+boundary cost. Reflection-to-region ownership stays tentative; no black body
+outline, physical center, outward anchor or string index is established.
+
+Photo: 683 region proposals; 469,608 candidate pixels, 422,487 retained pixels,
+47,121 excluded rim pixels. 1,339 reflection candidates, 724 tentatively associated
+with colored regions. These are not certified bead counts. Actual whole-photo
+recall is unknown. Native label TIFFs, NPZ, overlays and band PNG remain ignored
+under output/r215; curated review images/ledgers and eight control POV sources
+are tracked.
+
+R216/Q215.1: “Yes, roughly 70–90% and inside”, confirming illustrated yellow A
+(region829) and red B (region719). R217/Q215.2: “Yes”, confirming cyan R
+(reflection28) isolates the reflection and excludes surrounding dark body.
+[Exact replies](photo2/segmentation-answers-r216-r217.json),
+[confirmed pixels](photo2/review/r215/confirmed-pixel-facts.json) and
+[answer curation](photo2/review/r215/answer-curation-summary.json) preserve exact
+source/image/manifest/run bindings. Both questions answered; issued evidence
+unchanged. As-issued manifest retains its pending state; separate replies give
+current status. No all-photo, exact-center, silhouette, index or adjacency claim.
+
+Four known POV-ID examples retain 69.87–74.17% of all colored visible pixels,
+with 100% color precision and median eligible-body coverage 78.1–79.8%.
+Bodies in the 70–90% range: 79/112, 81/113, 88/113 and 85/112; missing bodies:
+2/4/1/1. Only 90/107, 87/105, 97/114 and 97/111 regions reach 98% one-body purity.
+All extraction finishes before IDs are read. Examples are development/regression
+controls, not independent generality certification. The initially withheld fourth
+frame exposed border-tail contamination and was used for a fix; retain that fact.
+
+Failures preserved: hue-background preference suppressed amber on brown paper;
+a uniform one-pixel inset lost too much of small faces; unrefined dark candidates
+were too broad; tracing a closed axis was unnecessary. Beads clipping the fourth
+frame contaminated the .999 border score (171.437), collapsing estimated scale
+and recall to .092%. Capping that score at the existing Otsu range of 50 fixed
+the extra example; the first three examples and photo masks stayed unchanged.
+
+One new diffuse-only validation scene changes only three phong 1.4 finishes to
+0. Shiny image: 71 spots; diffuse-only: zero. Added RGB channel >.04 at 68/71
+centroids and 77.1% of mask pixels. Saturated maximum V can conceal added light;
+use max added RGB channel. Two adverse unit checks pass: localize a neutral spot,
+reject a saturated diffuse blob. Uncertain spot tails/candidates remain explicit.
+
+[Verification](photo2/review/r215/verification.json): repeat 17 curated payloads
+and native mask archive byte-identically; verify native layer/export consistency,
+confirmed pixel runs, sealed source/protected/prior evidence hashes, syntax and
+JSON. Original photo, beads.pov, old detector, live labels/centers/scores and
+41/208 historical references remain unchanged. Reproduction commands are in the
+review. Existing output/r167 control PNGs reused; curated POV sources preserve
+those scenes for regeneration.
+
+Stop at the broad-pixel/reflection review. Next improve weak, under-covered or
+mixed regions using easy neighboring color/dark-boundary evidence. Establish
+this pixel basis before curve, pose or adjacency fitting. Recommend
+**gpt-6.1-sol / High**, same conversation; no `/new` needed.
+
+## Prior R214 — phase/origin registration with positive patches
 
 Maker: “continue”. Resume only planned limited registration, not curve fitting.
 Preflight daisy/photo-2-reconstruction-v2/4a2ddaa, clean/no stashes, fetch/upstream0/0;

@@ -1410,6 +1410,21 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R215 supersedes the next geometry step with
+[broad visible-pixel/reflection segmentation](photo2/VISIBLE_PIXEL_SEGMENTATION.md).
+Learn appearance and scale from each input; no manual beads/adjacency/old spline
+or simulated photo positions. Automatic cores seed dark-valley/color watershed;
+reflections are separate masks/positions, suppressed only in the boundary cost.
+Preserve candidate/retained/near-rim/diffuse/reflection layers and unresolved pixels.
+Validate actual visible-pixel recall using independent rendered owner masks;
+retention of a detector's candidate is a proxy, never actual photo recall.
+Color precision doesn't prove one-region-per-bead ownership. Test diffuse-only
+appearance controls for reflection specificity; saturated maximum V can conceal
+added RGB-channel specular light. Keep boundaries/identity and masked reflectance
+uncertainties distinct. Obtain small raw-first mask reviews before downstream fits.
+Preserve [maker mask confirmations](photo2/review/r215/confirmed-pixel-facts.json)
+against exact issued pixels; local coverage approval does not certify all regions.
+
 R214 adds [limited positive-patch registration](photo2/POSITIVE_PATCH_REGISTRATION.md).
 For each fixed camera/centerline/count/hand hypothesis, search minor phase and
 origin using equal occupied-sector visible-center MSE plus verified interior

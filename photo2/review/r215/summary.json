@@ -1,0 +1,63 @@
+{
+  "request": "R215",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/review_colored_segmentation.py": "dfd1a8afaad106b0a4c93d3c2dd11caca077fd9f552d3ee3c698c8feae7869d5",
+    "photo2/check_colored_segmentation.py": "bf32b3d34ae7bc6eeeceb33925eab50babc2d40c002936a1b3ed9b07ba86e3a8",
+    "photo2/check_specular_pixels.py": "4829aaca9a5323dccd5a862f9252babeaecff0eba5b6041fa6b0d423ce1d3d13",
+    "photo2/test_colored_segmentation.py": "4036b222222576faa541cc88fbfab1c85969695dfb02f23306aba04d4308d3bf",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/bead_evidence_inventory.py": "0bfea9cc305043264a961d91c1c461e2c4db393f1642cbe00e08958ed47d02c9",
+    "photo2/pixel-coverage-scope-r215.json": "87c7eca3784eebe46691966253df1c555a8c783959d916d0a080c150be90d089"
+  },
+  "curated_sha256": {
+    "regions.json": "2810338e21058f6f7c580e95cc261ba4ffffaff1fc960cdeb68d1e1c9c0720b3",
+    "comparison.json": "110cc4f36f32ae2d149c84b4640792f759ef2b65754c03b77df90062bcf3fe48",
+    "whole-review.png": "843fb89c9a067be29a7a03dc704e6d0db1df84deb7d7116817731a93fa2c9c8c",
+    "contexts.png": "f368e6c4c885967709a24a218f4a5da7c50eae50ab49993a0a64c377165b59bb",
+    "questions.png": "225d6f361c0d5766bf98c44526f9edf29512d433f64d035953ad02a3bb0c5867",
+    "review-locations.json": "94c71138f3bee70c44dc77ef1ff1f4e3ac9c54b95fcf35590604c90d49d128d6",
+    "calibration.json": "da143cea89e0f962afc07ab72368ee1554fc9b5d4c500dd9bc58367c8a579c6f",
+    "specular-control.json": "30fa5fdca376eec3a8520a1cce7a551bb4fda76e794cd4ecde3ac6c163249fde",
+    "adverse-controls.json": "b5ee5e1a2e97a0b1ad8222990f7981df22850713e59c5f1dd613fb042fc08cbe",
+    "fixtures/hand+1-palette0-shift0.pov": "ddb41ee3067af074d4c8906a797b164ec183be52b1c6525ea3a67f78801a5c7b",
+    "fixtures/hand+1-palette0-shift0-ids.pov": "5f81f8d65e0a71544257fdad0cb3601c05e3080e662e1997713848d50ad6f731",
+    "fixtures/hand-1-palette0-shift0.pov": "8eab3b2327cfa5d8abe6fdfd3f36959b58dd81fe4776d98505f8b330ddd9d84c",
+    "fixtures/hand-1-palette0-shift0-ids.pov": "f9ff3ea38c1643f0dd764f77a78f9c44be32a2e27fa4b44fd20ee713c9a7efb1",
+    "fixtures/hand+1-palette1-shift2.pov": "998737243b2178789363b079b708e492ccdf8a91407b181b77d66cbb840615b3",
+    "fixtures/hand+1-palette1-shift2-ids.pov": "038a5a587d2b2c4bf54caee1d97c0879bbe12fbda6f41751276ac791010e03ab",
+    "fixtures/hand+1-palette1-shift3.pov": "fae3eae97c20bee82c75d9c095c90c56e1c3d6ff68f97377665706b22a4087f2",
+    "fixtures/hand+1-palette1-shift3-ids.pov": "372f50dfb124b8394393d91513c8cd10e053af90c698b7a40610c4c6f2cf5388"
+  },
+  "protected_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "question_manifest_sha256": "5ea989dcc7954eb6750a2edeeb77f2390a7592f0eee1b72559ea098fa5927ba0",
+  "mask_archive_sha256": "e01aee04ec911007276bfa7be2c6f4344e6ee064bb56597d980b81056fc0600d",
+  "manual_labels_used": false,
+  "adjacency_computed": false,
+  "current_scope": "Image-only visible pixels and separate specular masks; all placement fitting deferred",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.11.2",
+    "scikit-image": "0.26.0"
+  },
+  "reproduction": [
+    ".venv/bin/python photo2/check_colored_segmentation.py",
+    ".venv/bin/python photo2/check_colored_segmentation.py --extra-fixture hand+1-palette1-shift3",
+    ".venv/bin/python photo2/check_specular_pixels.py",
+    ".venv/bin/python photo2/review_colored_segmentation.py"
+  ]
+}
