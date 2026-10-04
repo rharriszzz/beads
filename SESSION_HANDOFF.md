@@ -9,7 +9,73 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R215–R217 — broad visible pixels and separate specular masks
+## Current R218 — diffuse-core refinement review
+
+Maker: “continue”; resume weak/mixed-mask refinement before geometry fitting.
+Preflight daisy, photo-2-reconstruction-v2, clean 29eac8f, no stashes, fetched
+upstream 0/0. Read AGENTS, handoff/plan/latest log and R215/hue source experiments.
+Four approaches presented: add cores, reseed, merge clear fragments, grow from
+nearby reliable evidence. First two compared; diffuse reseeding selected. No
+agents, skills, installation, new render, manual marks/adjacency or photo fitting.
+
+[Current review/Q218.1/Q218.2](photo2/DIFFUSE_CORE_REFINEMENT.md),
+[region/seed/confidence records](photo2/review/r218/regions.json),
+[known-owner comparisons](photo2/review/r218/calibration.json),
+[development alternatives](photo2/review/r218/development-comparison.json),
+[prior confirmation audit](photo2/review/r218/prior-confirmation-check.json),
+[source/output/protected hashes](photo2/review/r218/summary.json).
+
+refine_colored_masks.py calls frozen image-only R215 extraction, median-suppresses
+compact reflection brightness, then finds prominent diffuse cores. Prominence
+.08 of family brightness Q90; seed spacing .35D; old seeds used only when no new
+core within .65D. Keep hue for support, remove absolute hue-error penalty from
+dark-valley boundary cost. Earlier .15 cost lowered recovery. Reflection pixels
+inherit their surrounding colored support so neutral hue doesn't reopen holes.
+Masks keep diffuse/radius/support/rim guards and explicit unknown/excluded regions.
+A 90% own-candidate preference is not actual visible-pixel recall.
+
+Photo: 1,287 proposals, 615,836 candidate pixels, 553,887 retained, 61,949 excluded
+rim, 236,619 unassigned color-domain pixels. Stronger central subset: 596 regions,
+350,159 pixels; requires prominent core, .55D seed clearance and .45 family bright
+reference. Confidence proposals only, not verified distinct beads or photo recall.
+All 1,339 reflection masks/positions unchanged; 868 new tentative associations.
+Separate native TIFF/NPZ/overlays stay ignored output/r218. Raw whole/fixed four
+contexts/two new face questions are curated. Automatic review selection follows
+full extraction; fixed earlier contexts and recent auto-mask facts are diagnostic
+only, never runtime priors. Saved manual labels/centers/series never opened as data.
+
+Four known scenes: colored recall 71.87→76.93%, 69.87→76.74%, 74.17→77.80%,
+73.52→77.77%; color precision 100%, no retained paper/black pixels in examples.
+Eligible bodies in 70–90%: 79→94/112,81→92/113,88→97/113,85→96/112.
+Single region ≥98% pure with 70–90% body coverage:63→77, 64→80, 68→82, 73→86.
+Missed eligible bodies2/4/1/1 → 0 each; some low-coverage/split/mixed bodies remain.
+All masks finish before IDs read; these are development/regression scenes, not
+independent generality proof. Extra-seed comparator fragments more faces.
+
+Earlier raw reflection hue reopened core-support holes: maker-confirmed R215
+A yellow829 split three ways, retaining 575/624 pixels. Support repair leaves
+TWO regions, retaining 604/624 (490+114); duplicate issue still unresolved.
+Old red region719 retains 707/713 in one new region. No old confirmation approves new
+extent; original confirmed masks/files unchanged. Reflection28's 32 pixels exact.
+Two adverse unit controls pass: dark-valley separate same-color cores; two neutral
+reflections on one body don't make two cores, with red/yellow/blue hue subcases.
+Existing reflection/physical controls unchanged; no new scene rendering.
+
+Q218.1 asks new red A (region75), Q218.2 yellow B (region136), roughly 70–90% and
+inside one body. Both issued asynchronously, pending; coordinates/pixel runs and
+image frozen in mask-refinement-questions-r218.json. Manifest SHA b29cf18d…,
+figure SHA 1ee60995…; new letters/numbers unrelated to manual or R215 A/B.
+
+[Verification](photo2/review/r218/verification.json): repeat eight curated payloads
+and the native mask archive byte-identically; check sealed prior/source/protected
+hashes, reflection preservation, layer exports, exact question pixels, syntax/JSON,
+local links and the unchanged historical request-log prefix.
+
+Stop this refinement review. Next preserve the two replies and address remaining
+duplicate or weak regions using clear nearby evidence, before curve/pose/adjacency
+fitting. Recommend gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R215–R217 — broad visible pixels and separate specular masks
 
 The maker wants 70–90% of the visible pixels of red/yellow beads, using dark
 areas to guide boundaries and nearby bands, with specular reflections separate.

@@ -1,0 +1,45 @@
+{
+  "previous_fact_sha256": "c785d026f2b6fc6e641c79fa7be2c4e67580762b0053370141e150842f448d37",
+  "colored_mask_overlaps": [
+    {
+      "old_letter": "A",
+      "old_automatic_region": 829,
+      "confirmed_pixels": 624,
+      "retained_in_new_union": 604,
+      "new_region_overlaps": [
+        {
+          "region_number": 0,
+          "pixels": 20
+        },
+        {
+          "region_number": 1332,
+          "pixels": 114
+        },
+        {
+          "region_number": 1342,
+          "pixels": 490
+        }
+      ],
+      "limitation": "Only overlap of old confirmed pixels; does not confirm expanded/new masks or centers"
+    },
+    {
+      "old_letter": "B",
+      "old_automatic_region": 719,
+      "confirmed_pixels": 713,
+      "retained_in_new_union": 707,
+      "new_region_overlaps": [
+        {
+          "region_number": 0,
+          "pixels": 6
+        },
+        {
+          "region_number": 1162,
+          "pixels": 707
+        }
+      ],
+      "limitation": "Only overlap of old confirmed pixels; does not confirm expanded/new masks or centers"
+    }
+  ],
+  "reflection28_pixels_unchanged": true,
+  "maker_confirmations_not_promoted_to_new_extents": true
+}

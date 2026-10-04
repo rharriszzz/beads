@@ -1,0 +1,32 @@
+{
+  "request": "R218",
+  "checks": {
+    "r210_sealed_hashes_verified": 42,
+    "r214_sealed_hashes_verified": 44,
+    "r215_sealed_hashes_verified": 36,
+    "r218_sealed_hashes_verified": 28,
+    "repeat_curated_payloads_byte_identical": 8,
+    "repeat_native_mask_archive_byte_identical": true,
+    "all_reflection_pixels_positions_and_sensitivity_unchanged": true,
+    "native_layer_relations_and_exports_verified": true,
+    "as_issued_questions_bind_exact_new_mask_pixels": true,
+    "calibration_comparison_consistency_verified": true,
+    "python_syntax_and_curated_json_valid": true,
+    "request_log_historical_prefix_preserved": true,
+    "introduced_local_links_verified": 25
+  },
+  "unit_controls_passed": 2,
+  "unit_reflection_hue_subcases": [
+    350,
+    27,
+    210
+  ],
+  "known_control_scenes": 4,
+  "known_control_role": "Development/regression, not independent generality proof",
+  "pending_questions": [
+    "Q218.1",
+    "Q218.2"
+  ],
+  "unresolved_confirmed_yellow_split": "Old confirmed mask still overlaps two new regions:490+114 of624 pixels; no new extents confirmed",
+  "no_manual_marks_adjacency_or_geometry_fit": true
+}

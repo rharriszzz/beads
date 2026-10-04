@@ -17,7 +17,33 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R215–R217: visible colored pixels and separate reflections
+## Current R218: refine diffuse cores before fitting
+
+[Current raw comparisons and Q218.1/Q218.2](photo2/DIFFUSE_CORE_REFINEMENT.md).
+Diffuse reseeding raises known colored-pixel recall to 76.74–77.80%. Bodies with
+one pure region in the requested 70–90% range increase from 63/64/68/73 to
+77/80/82/86 across four development scenes. No paper or black-body pixels are
+retained there; missing eligible bodies become zero. Extra seeds fragment more
+faces. Keep hue for color support, remove the absolute hue-mode boundary penalty,
+and restore neutral-reflection support while detecting cores.
+
+Photo: 1,287 proposals and 553,887 retained pixels. The stronger central subset
+has 596 regions and 350,159 pixels; it is not a verified unique-bead inventory
+or measured photo recall. All 1,339 reflection masks/positions are unchanged;
+868 associations are tentative. The old confirmed yellow mask still overlaps
+two new regions, retaining 604/624 pixels. Preserve that failure and avoid
+promoting prior confirmations to new extents. Two adverse controls and repeat
+checks pass. Manual marks, adjacency, saved spline and simulated photo positions
+are not extraction inputs; fitting remains deferred.
+
+Two newly recovered red/yellow mask questions have immutable pixels:
+Q218.1 (region75) and Q218.2 (region136), pending. **Stop:** refinement review.
+**Next:** preserve replies, then address remaining duplicate or weak regions
+using clear neighboring evidence, keeping difficult edges unresolved.
+Establish the pixel basis first. Recommend gpt-6.1-sol / High; stay in this
+conversation, no `/new`.
+
+## Prior R215–R217: visible colored pixels and separate reflections
 
 [Current review and answered questions](photo2/VISIBLE_PIXEL_SEGMENTATION.md).
 The maker wants 70–90% of actual visible red/yellow pixels, with dark areas

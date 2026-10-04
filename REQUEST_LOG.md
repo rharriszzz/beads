@@ -4293,3 +4293,76 @@ position, not bead center/outline/index or black-body ownership confirmation.
 manifest SHA 5ea989dc… and figure SHA 225d6f36… to exact source/mask runs.
 Q215.2 answered; neither question remains pending. Runtime masks unchanged by
 answers. Next and stopping point remain R215 above.
+
+## R218 — Continue: diffuse-core refinement before position fitting
+
+Maker: “continue”. Resume the bounded weak/mixed-mask refinement, retaining
+R215's70–90% actual-visible target and separate reflections. Preflight daisy,
+clean29eac8f/photo-2-reconstruction-v2/no stashes, fetch/upstream0/0; read current
+handoff/log/plan/AGENTS and R215/hue code/evidence. Four approaches presented:
+add diffuse cores, reseed, merge clearly connected fragments, grow from nearby
+reliable color. First two implemented/computed; reseeding selected. No agents,
+skills/install/new render/manual bead or adjacency inputs/placement fitting.
+
+[Current experiment/questions/reproduction](photo2/DIFFUSE_CORE_REFINEMENT.md).
+New refine_colored_masks.py reuses frozen image-derived R215, median-suppresses
+reflection brightness in diffuse-core scoring, prominence.08 family Q90 and
+spacing.35D. Old automatic fallback only outside.65D of new core. Dark-valley
+watershed retains color support but removes absolute hue-mode penalty. Earlier
+.15 penalty under-covered bodies; comparison retained. Existing diffuse/radius/
+support/rim safeguards stay. Own-candidate90% retention is not actual recall.
+Stronger central proposal subset uses independent core/.55D clearance/.45 learned
+bright reference, not a verified bead inventory or photo recall percentage.
+
+Four development/regression scenes, all image-only masks finished before owner
+truth read. Final recall old→new:71.87→76.93%,69.87→76.74%,74.17→77.80%,
+73.52→77.77%; color precision100%, no retained paper/black pixels in examples.
+Eligible bodies in70–90%:79→94/112,81→92/113,88→97/113,85→96/112.
+Single region≥98% pure with70–90% visible-body recall:63→77,64→80,68→82,73→86.
+Missed eligible2/4/1/1 become0 each. Minority mixed-owner pixels
+4010/3562/3230/3815→1794/1365/1354/1319. Extra seeds reduce minority pixels more
+in two examples but fragment faces:66/66/75/74 single pure eligible bodies.
+Some bodies remain low-coverage/split/mixed; no independent holdout/generality
+claim. All per-body/region owners and early alternatives curated.
+
+Photo:1287 proposals,615836 candidate pixels,553887 retained,61949 excludedrim,
+236619 unassigneddomain; stronger central596 regions/350159 pixels. Not unique
+bead count or measured photo recall. All1339 reflection masks/weighted positions
+unchanged;868 tentative new candidate associations, no confirmed owner indices.
+Routine native TIFF/NPZ/overlays ignored; raw whole/four fixed contexts/two new
+mask examples and ledgers curated. Fixed earlier automatic contexts and recent
+mask confirmations loaded only after extraction for diagnostics, not runtime
+priors. Old manual marks/series/centers/models never fed to extraction.
+
+A validation audit found earlier hue support reopened neutral highlight holes:
+R215 maker-confirmed yellow829 split3 ways,575/624 confirmed pixels retained.
+Repair support using surrounding chromatic domain; now TWO regions/604 pixels
+(490+114), still a duplicate failure. Red719707/713 remain in one region.
+Original facts/masks unchanged; no expanded extent inherits confirmation.
+Reflection28's32 pixels exact. Two adverse unit tests pass: two same-color cores
+with dark valley; one body/two neutral reflections, red/yellow/blue hue subcases.
+Only displayed diffuse-core support changes; raw photo/reflection extractor and
+previous physical reflection controls preserved. No complete center/boundary/
+index/helicity/count inference, no geometry fit.
+
+Q218.1 new redA/region75 andQ218.2 yellowB/region136 issued asynchronously;
+both pending. Each asks70–90% actual visible coverage and containment in one
+bead. Old R215 masks retained zero pixels at both newly recovered examples.
+Coordinates/pixel runs/image/manifest frozen: manifestSHA b29cf18d…,
+figureSHA1ee60995…. Letters/IDs unrelated to manual or prior A/B. Illustrations
+inspected with raw context; whole-image outputs available for zooming.
+
+Stop the refinement review. Next preserve replies, then handle remaining duplicate
+or weak masks using clear neighboring evidence, retaining unresolved edges before
+position/centerline/adjacency fitting. gpt-6.1-sol / High, same session; no /new.
+Scoped commit/push and exact remote/clean verification before delivery.
+
+R218 final verification: eight curated payloads and native mask archive repeat
+byte-identically. All sealed R210/R214/R215/R218 source/protected/payload hashes
+match; old R215 extraction/answer summaries unchanged. All reflection pixel runs,
+weighted positions and sensitivity alternatives exact. Native candidate/retained/
+central/diffuse/band relations and TIFF exports checked. Frozen new questions
+have exact source/mask bindings, with zero previous-mask pixels at both examples.
+Calibration comparison consistent, two final unit controls pass. Syntax/JSON,
+introduced local links and append-only historical log prefix verified. Both
+questions still pending; no response inferred from elapsed time.

@@ -1,5 +1,8 @@
 # Visible colored pixels and separate reflections — R215
 
+**Current refinement:** [R218 diffuse-core comparison and questions](DIFFUSE_CORE_REFINEMENT.md).
+This R215 review and its confirmed pixel extents remain preserved.
+
 The active goal is **70–90% of the actual visible pixels of red and yellow
 beads**, with darker regions guiding boundaries and their nearby bands, and
 specular reflections recorded separately. This replaces the tiny-patch-only

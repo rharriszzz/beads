@@ -1410,6 +1410,17 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R218 adds [diffuse-core refinement](photo2/DIFFUSE_CORE_REFINEMENT.md).
+Find prominent cores after suppressing compact reflection brightness; reuse
+surrounding colored support at neutral highlights so raw hue doesn't reopen
+holes and create false peaks. Compare extra seeds with reseeding, and compare
+absolute hue penalties with local dark-valley cost. Count bodies with one pure
+region at the requested coverage, separately from union pixel recall; fragments
+must not add together to pass that measure. Keep a stronger central candidate
+subset, explicit exclusions, unchanged reflection pixels and tentative ownership.
+Audit recent confirmed masks after extraction; preserve duplicate-region failures
+and never feed diagnostic coordinates into runtime extraction.
+
 R215 supersedes the next geometry step with
 [broad visible-pixel/reflection segmentation](photo2/VISIBLE_PIXEL_SEGMENTATION.md).
 Learn appearance and scale from each input; no manual beads/adjacency/old spline

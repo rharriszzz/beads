@@ -1,0 +1,64 @@
+{
+  "request": "R218",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+    "photo2/check_mask_refinement.py": "9786d9bc34dafd58a7d2969ea805b58ad3f0e338143d29ef946aae0cb9793b3f",
+    "photo2/review_mask_refinement.py": "9be34f3fbec3b8c204e1bc0b3c36dc2e8d20a52ec7f4269e727fff9773d22fc2",
+    "photo2/test_mask_refinement.py": "b2529ba9fb252fc2f7a55fd8282f027b3e9aa1c9ad75001d9a4bf9ea81fd6e04",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/bead_evidence_inventory.py": "0bfea9cc305043264a961d91c1c461e2c4db393f1642cbe00e08958ed47d02c9",
+    "photo2/check_colored_segmentation.py": "bf32b3d34ae7bc6eeeceb33925eab50babc2d40c002936a1b3ed9b07ba86e3a8",
+    "photo2/review_colored_segmentation.py": "dfd1a8afaad106b0a4c93d3c2dd11caca077fd9f552d3ee3c698c8feae7869d5"
+  },
+  "curated_sha256": {
+    "regions.json": "a9366bf4a990a3e8254c7562a205840822abf3aed27202f28df7f037614758f1",
+    "calibration.json": "a5940df44fb307a7f9c5ca67f06a1296e71437801fd2f45073c36b409f47f850",
+    "development-comparison.json": "892fd4eea0657f7216b003ff86f5a296418410dd194ccc4ecb896207412d6cf0",
+    "whole-review.png": "6ad144800412a35ec9806072655c6b0c3990258307485dbed5d9b28e6f3df12e",
+    "contexts.png": "ab0b4f73c4d247ea4eb0d2dbaab3310fe369e3c94561ac550421d15309e71791",
+    "questions.png": "1ee60995ce9a3c65443f9a794a71dbce3c3a5598b9ff74c799a162c2b2458aa7",
+    "review-locations.json": "e61951ece8c6375ee79c8b515b0dfc42a68fd367641bcc2ef79947c3d854ff9c",
+    "prior-confirmation-check.json": "dad8b8309367db55f52c6e32d4ac8fa2e69a3744120c5ace25bfb2b741e8f780"
+  },
+  "protected_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "previous_extraction_summary_sha256": "72847296a3b06ec8a1a93fd1de28bc07695b5d2760dbd549518d9f01c338a5a5",
+  "previous_answer_summary_sha256": "4911dcad3e4533f57c192cfff84883f6bd94f95c5feea86eacf83e5de8c60c8e",
+  "development_reproduction": [
+    ".venv/bin/python photo2/check_mask_refinement.py --hue-weight .15 --no-neutral-support --output photo2/output/r218/probe/hue-biased",
+    ".venv/bin/python photo2/check_mask_refinement.py --no-neutral-support --output photo2/output/r218/probe/neutral-holes"
+  ],
+  "question_manifest_sha256": "b29cf18da68c6a3e6702b5a80b1fd7cdcba31a8268982fcce7b5aa235a8b83b5",
+  "mask_archive_sha256": "b1edfcb6992dd5aba9b311ff53750fb90d69be17f3b72495e555c66e5d357199",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.11.2",
+    "scikit-image": "0.26.0"
+  },
+  "selected_method": "Diffuse reseeding, zero absolute hue-error boundary cost",
+  "manual_labels_used": false,
+  "adjacency_computed": false,
+  "placement_fit_performed": false,
+  "reflection_pixel_mask_unchanged": true,
+  "all_photo_masks_confirmed": false,
+  "reproduction": [
+    ".venv/bin/python photo2/check_mask_refinement.py --output photo2/output/r218/calibration-final",
+    ".venv/bin/python photo2/refine_colored_masks.py",
+    ".venv/bin/python photo2/review_mask_refinement.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_mask_refinement.py"
+  ]
+}
