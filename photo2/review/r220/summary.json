@@ -1,0 +1,64 @@
+{
+  "request": "R220",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/trim_colored_masks.py": "d284ed8eda55398e2219da95b91f1284bdf56c3f29e202f7dd4c1b4a8542069f",
+    "photo2/check_colored_trimming.py": "a60fb89e703ef28117ba2cd14a68ab4e311fae7b6e9804a26c4ede4ba7ad30c8",
+    "photo2/review_colored_trimming.py": "f8cfff3881f8ec915330b93f82e360596d4a8edb4a3f811aadef68360d3d2619",
+    "photo2/test_colored_trimming.py": "b83b2d61e10cb6fab04ac3c32437905300f31b175abf061f83bd36a8c708ccd5",
+    "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/check_mask_refinement.py": "9786d9bc34dafd58a7d2969ea805b58ad3f0e338143d29ef946aae0cb9793b3f",
+    "photo2/review_colored_segmentation.py": "dfd1a8afaad106b0a4c93d3c2dd11caca077fd9f552d3ee3c698c8feae7869d5"
+  },
+  "curated_sha256": {
+    "regions.json": "af999e48a274c931288435f3a0e7a2b2c90c10f64aea62a22b7d843fde3ff4cd",
+    "calibration.json": "1e0a3e7432f035cf4d474a077f85beb8714a2419c65c321ce1f40c3bd72d1d3f",
+    "development-comparison.json": "aee83a76a7464713ead684fb5d71183b5c975cefba4babc36d96708375bb38de",
+    "whole-review.png": "55952649a79308a6cdfd9852a15f9a4c76e92df33e22dcdfb474c28b8121b526",
+    "contexts.png": "a7f6ea7097869730321f01abd602acde3073f31793ed0d6b127d75af6bef9a3e",
+    "questions.png": "c6d8f3eadf5913ed41afe988111a4eeb5d2fc970862182f495518d0332d36cb1",
+    "review-locations.json": "3d5d39f9efb0294105075d014f214f75d03eb4215db97996cba40b944b3bf928",
+    "prior-fact-check.json": "fc6c050f0479634cc8e125f9d4ea4a8d29d55478dbfea1e7107c56e11b0ea93e",
+    "distribution.json": "d597e7e1831f51d05b08b2f5a9cd70cdd3db78ba257b39c0066db455eb0506b7"
+  },
+  "protected_inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/tangent_circles.py": "89a39e2fb91377b9daefbb56a81effd1a702fc328535126acfa5a25e6db8cc81",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+    "photo2/output/labeler/annotations.json": "1a99b514b07707176b18ec5f9d2790ddbdb33e060dbcfd9884599f49b17137ff",
+    "photo2/output/tangent-viewer/centers-score.json": "b6714347c98ce17db2616783a1bdafbb88ccdff0f8ef1897a9c9c9920c00b404",
+    "photo2/output/tangent-viewer/centers.previous.json": "e578fcaf8011ae8602841e7696785b44152d729438a987ed27066b276dfc3acb",
+    "photo2/output/tangent-viewer/centers.json": "3d210bea246d9942cdb38e66600d71485561821f80594a3dfbd447ac8256c55d",
+    "photo2/output/tangent-viewer/centers-score.previous.json": "80b947de39aadde6704d476bbd0de05d336709ef516f2e84d4f12dd19e608f76"
+  },
+  "prior_extraction_summary_sha256": "c49a5fb52df89b25d5f17d40da0ee2d10a9754326e24a201d1668658636a09dc",
+  "prior_reply_sha256": "d11794c70c3519e55ee1086e7e1af1007f735989a1bb5f15ce6a91d7250ea8f4",
+  "prior_rejected_facts_sha256": "77ce23f09f961cfc2ef9baf5b017e196eeb159934fa69ea132fa5b75287f43eb",
+  "question_manifest_sha256": "d5ac2b2cd56f6be0deff3d0fdb9c46c52ba946876ae9d927b6ff68be38c058e8",
+  "mask_archive_sha256": "00340992ab981a119e21d93c89e156e3c7eecf752ab6a55d037d67801b581bc6",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.11.2",
+    "scikit-image": "0.26.0"
+  },
+  "selected_method": "Brightness stability, raw diffuse floor, seed connectivity and weakest 15% candidate rim ranking",
+  "reflections_and_candidate_associations_unchanged": true,
+  "prior_photo_arrays_repeat_exactly": true,
+  "manual_labels_used": false,
+  "adjacency_computed": false,
+  "placement_fit_performed": false,
+  "all_photo_masks_confirmed": false,
+  "reproduction": [
+    ".venv/bin/python photo2/check_colored_trimming.py --stable-rim-rule inset --no-stable-raw-floor --output photo2/output/r220/calibration-initial",
+    ".venv/bin/python photo2/check_colored_trimming.py --no-stable-raw-floor --output photo2/output/r220/calibration-no-raw-floor",
+    ".venv/bin/python photo2/check_colored_trimming.py",
+    ".venv/bin/python photo2/trim_colored_masks.py",
+    ".venv/bin/python photo2/review_colored_trimming.py",
+    ".venv/bin/python -m unittest discover -s photo2 -p test_colored_trimming.py"
+  ]
+}

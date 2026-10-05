@@ -1410,6 +1410,17 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R220 adds [conservative colored-mask trimming](photo2/CONSERVATIVE_MASK_TRIMMING.md).
+Compare a fixed inset, a seed-relative diffuse cutoff, first-drop rays and
+multi-scale brightness stability. Fixed pixel shells can over-trim visible faces;
+first-drop rays can create gaps; brightness alone does not reject same-color
+spill. Prefer fractional weakest-rim ranking when it preserves useful coverage.
+Keep a raw diffuse floor so blurred brightness cannot certify a dark extension,
+and retain seed connectivity. Every new mask is a subset of its source mask;
+reflections remain separate and unchanged. Measure both actual visible-body
+coverage and single-body ownership, preserving their tradeoff and failures.
+Bind new questions to revised pixels/UUIDs; earlier confirmations do not transfer.
+
 R219 preserves [corrective mask reviews](photo2/review/r219/reviewed-mask-facts.json)
 against exact issued pixels. A maker estimate of 100%/95% target-bead coverage
 with spill into another body fails the 70–90%-and-inside criterion. A reported

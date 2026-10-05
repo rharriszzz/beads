@@ -9,7 +9,59 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R219 — two reviewed extents rejected
+## Current R220 — conservative trimming review
+
+Maker: “continue”; resume the bounded rim-trimming comparison before fitting.
+Preflight daisy, photo-2-reconstruction-v2, clean de4baa6, no stashes, fetch/
+upstream0/0; read AGENTS/handoff/latest log/plan and R218–R219/hue experiments.
+Four methods presented: fixed inset, diffuse brightness, outward first drop,
+multi-scale brightness stability. All four compared with known owner images.
+No agents, skills, install, new render, manual labels/centers/adjacency input
+or geometry fitting.
+
+[Current review and Q220.1/Q220.2](photo2/CONSERVATIVE_MASK_TRIMMING.md),
+[region records](photo2/review/r220/regions.json),
+[known-owner comparison](photo2/review/r220/calibration.json),
+[development failures](photo2/review/r220/development-comparison.json),
+[source/output/protected hashes](photo2/review/r220/summary.json),
+[verification](photo2/review/r220/verification.json).
+
+Selected for review: brightness stability at.025/.05/.075D, two seed-connected
+votes above.45 localQ90, raw diffuse floor.45Q90, weakest15% candidate-rim
+ranking, minimum inset max(.5px,.018D), intersect original retained mask. No new
+pixels/seeds; candidate/domain/family/valley and all reflections unchanged.
+Fixed inset over-trims small faces; diffuse-only leaves rejected B unchanged;
+radial first-drop creates gaps in A. Ranking is gentler than fixed shell erosion.
+An adverse test found blur-supported dark tails; a raw floor fixes that failure.
+Two adverse tests pass, including same-color neighbor/red-yellow-blue hue cases
+and neutral reflections. Candidate85% preference is not actual photo recall.
+
+Photo:1,287 proposals/491,629 pixels;596 stronger central proposals/314,143 pixels.
+All1,339 reflection masks/positions and868 tentative candidate associations exact.
+Fresh baseline repeats sealed R218 arrays. Revised A75=567 pixels(previous759),
+B136=549(previous581); changed extents have new UUIDs, no confirmation inherited.
+Questions use frozen earlier automatic crops only after extraction; the program
+never consumes diagnostic coordinates or manual bead marks/series/centers.
+
+Known scenes: recall76.93→71.24%,76.74→71.31%,77.80→71.93%,77.77→71.78%.
+Single pure region≥98% with70–90% body coverage77/80/82/86→64/67/72/74.
+Minority mixed-owner pixels1794/1365/1354/1319→1442/1136/993/870. Median eligible
+coverage73.89–74.83%; no fully missed eligible bodies, no paper/black retained
+in controls. These development scenes are not independent generality proof.
+Preserve remaining mixtures/under-coverage and the coverage/ownership tradeoff.
+Old confirmed yellow829 still overlaps two regions(449+101/624), red719638/713
+in one; overlap is not approval of new extents. No duplicate identity repair.
+
+Q220.1/Q220.2 issued asynchronously, pending; raw/original/revised figure and
+native runs/UUIDs/crops frozen by trimming-questions-r220.json. R219 original
+rejections and all earlier evidence remain unchanged. Native TIFF/NPZ/overlays
+ignored output/r220; curated reviews/measurements tracked.
+
+Stop illustrated trimming review. Next preserve replies and decide whether the
+revised extents are adequate or need a small rim adjustment, before fitting.
+Recommend gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R219 — two reviewed extents rejected
 
 Maker: “Question 1: it captures 100% of the bead but some of the nearby black bead.  Q2: 95 % of the bead, but 1% of an adjacent yellow bead.”
 

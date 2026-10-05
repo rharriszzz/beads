@@ -17,7 +17,39 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R219: reject the two overextended review masks
+## Current R220: conservative colored-mask trimming review
+
+[Raw/original/revised masks and Q220.1/Q220.2](photo2/CONSERVATIVE_MASK_TRIMMING.md).
+Compare fixed inset, diffuse cutoff, first outward drop and brightness stability.
+Fixed shells under-cover known faces; diffuse-only leaves rejected yellow B
+unchanged; the radial method removes too much red A. Select stability at three
+scales, a raw diffuse floor, seed connectivity and weakest15% candidate rim
+ranking for review. Candidate retention is not actual visible-bead recall.
+
+Red A75 now567/759 previous pixels; yellow B136549/581. Changed extents have
+new observation UUIDs and inherit no old confirmation. Photo:1,287 proposals,
+491,629 retained pixels;596 stronger central proposals/314,143 pixels. All1,339
+reflections, their positions and868 tentative candidate associations unchanged.
+No verified unique-bead count, uniform physical arc coverage or photo recall.
+
+Four development scenes: actual colored recall71.24–71.93%, median eligible-body
+coverage73.89–74.83%; mixed-owner minority pixels fall, while pure single-region
+70–90% counts fall77/80/82/86→64/67/72/74. No eligible body fully missed, no
+paper/black pixels retained in controls. Preserve both the tradeoff and remaining
+mixed/under-covered bodies. Two adverse tests pass after a blur-supported dark
+tail exposed the need for a raw floor. Old confirmed yellow still splits across
+two proposals; no identity repair in this step. No manual marks/adjacency input
+or geometry fitting.
+
+Q220.1/Q220.2 ask whether each revised mask is70–90% and inside one bead,
+excluding the previously reported neighboring bead. Immutable figure/runs/UUIDs
+in [question bindings](photo2/trimming-questions-r220.json); both pending.
+**Stop:** illustrated trimming review. **Next:** preserve the answers and decide
+whether these revised extents are adequate or need a small rim adjustment.
+Establish the pixel basis before position/centerline/adjacency fitting.
+Recommend gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R219: reject the two overextended review masks
 
 [Answered raw/mask review](photo2/DIFFUSE_CORE_REFINEMENT.md) and
 [exact replies](photo2/mask-refinement-answer-r219.json). Q218.1 red A covers

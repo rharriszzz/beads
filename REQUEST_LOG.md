@@ -4425,3 +4425,91 @@ Record checks: .venv/bin/python -m json.tool photo2/mask-refinement-answer-r219.
 .venv/bin/python -m json.tool photo2/review/r219/reviewed-mask-facts.json;
 git diff --check. Existing R218 extraction reproduction commands remain in the
 experiment; rerunning extraction is unnecessary for this answer curation.
+
+## R220 — Continue: conservative colored-mask rim comparison
+
+Maker: “continue”. Resume the next bounded rim-trimming task after R219 rejected
+both overextended examples. Target remains70–90% actual visible red/yellow area
+inside one body; separate reflections, no manual bead marks/adjacency/spline or
+simulated photo positions. Preflight daisy, clean de4baa6/photo-2-reconstruction-v2,
+no stashes, fetch/upstream0/0; read AGENTS/handoff/log/plan/R218–R219 and hue
+experiments. Four approaches presented before implementation: fixed inset,
+diffuse-brightness floor, first outward drop, multi-scale brightness stability.
+No agents, skills, installation, new render, GUI or geometry fitting.
+
+[Current raw review/methods/reproduction](photo2/CONSERVATIVE_MASK_TRIMMING.md).
+New trim_colored_masks.py reuses frozen R218 image-derived extraction. Compare
+all four methods on the whole photo and four existing known-ID scenes, with all
+image-only variants completed before owner truth read. Fixed inset.055D loses
+large pixel shells; brightness.45Q90 leaves rejected yellow B unchanged; radial
+first-drop(.5px/180 directions) produces gaps and retains only315/759 red-A
+source pixels. Stability with fixed.045D inset loses too much known coverage.
+Preserve these development outcomes rather than selecting by color precision.
+
+Select stability with weakest15% candidate-rim ranking for illustrated review:
+Gaussian sigmas.025/.05/.075D(min.5px), two seed-connected votes above each
+local brightnessQ90×.45; raw diffuse floor.45Q90; rim score distance+.25relative
+diffuse−.25existingvalley, minimum inset max(.5px,.018D). All retained pixels
+must belong to the original retained mask and its seed-connected part.85%
+candidate preference is not85% actual visible recall. No new pixels/seeds or
+candidate/domain/family/valley changes. Extents receive new UUIDs without
+inheriting earlier mask approval; source observation numbers remain distinct
+from bead indices. Zero-support proposals stay explicit in comparisons.
+
+Adverse circular-face test initially failed: smoothing borrowed brightness and
+kept a dark extension. Add the raw diffuse floor; the test now passes. Second
+control excludes a brighter same-color neighbor across a dark bridge, with
+red/yellow/blue hue variants. Neutral reflections inside the supported face
+remain included as body support while their masks are separately preserved.
+Two tests pass. Initial fixed-inset and no-raw-floor known-scene records are
+saved as development snapshots, not independent holdouts.
+
+Final known scenes, baseline→selected colored recall76.93→71.24%,76.74→71.31%,
+77.80→71.93%,77.77→71.78%; median eligible coverage73.89–74.83%. Single pure
+region≥98% covering70–90% of actual visible body77→64/112,80→67/113,82→72/113,
+86→74/112. Mixed-owner minority pixels1794/1365/1354/1319→1442/1136/993/870.
+No eligible body completely missed, no retained paper/black pixels in controls;
+mixtures/under-coverage/splits remain explicit. This coverage/ownership tradeoff
+does not improve every measure. IDs enter evaluation only after all variants
+finish; all reflected masks unchanged. [Full per-body/region calibration](photo2/review/r220/calibration.json).
+
+Photo:1,287 proposals,491,629 retained pixels,62,258 source pixels removed,
+124,207 omitted candidate-rim pixels.596 stronger central proposals/314,143
+pixels, not a verified unique-bead count or measured photo coverage. All1,339
+reflections/weighted positions and868 tentative candidate associations unchanged.
+New baseline exactly repeats frozen R218 arrays. Raw whole-photo and four fixed
+automatic contexts compared; coarse image-angle sectors do not measure physical
+arc-length uniformity. Automatic diagnostics read only after extraction; manual
+label/center/series files are hash-protected, never used as data.
+
+Revised A75=567 pixels from759; B136=549 from581. Q220.1/Q220.2 issued
+asynchronously, asking whether each revised mask covers70–90% and stays inside
+the target bead, excluding the previously reported neighbor. Both pending.
+[Question manifest](photo2/trimming-questions-r220.json) and
+[exact revised native runs/UUIDs/locations](photo2/review/r220/review-locations.json)
+freeze the raw/original/revised figure. No R219 percentage converted to pixel
+ground truth, no original rejection or old R215 confirmation overwritten.
+Earlier confirmed yellow829 still overlaps two regions,449+101/624 old pixels;
+red719638/713 in one. Duplicate identity remains unresolved; overlap does not
+certify new extents. Native masks/TIFFs/overlays ignored, curated reviews and
+measurement ledgers tracked. Plan/handoff/methods updated.
+
+Stop illustrated trimming review. Next preserve the two replies and decide
+whether these revised extents are adequate or need a small rim adjustment.
+Establish the pixel basis before position/centerline/adjacency fitting.
+gpt-6.1-sol / High, same conversation; no /new. Scoped commit/push and exact
+remote/clean verification before delivery.
+
+R220 verification: nine curated payloads and the extraction summary repeat
+byte-identically; the native mask archive matches the original sealed repeat
+hash.28 R218 source/protected/curated entries and R219 replies/rejected facts/
+verification are unchanged. Fresh baseline arrays repeat R218; candidates,
+domain/family/valley and all reflection pixels/positions/associations exact.
+Revised masks are source subsets with seed-connected support; native layer
+relations and TIFF/PNG exports checked. Both questions bind exact567/549 pixel
+runs, new/source UUIDs, native centroids and unchanged raw photo. Twenty final
+calibration rows match their source/ID hashes and expected coverage/ownership
+counts. Two adverse controls pass, including red/yellow/blue neighbor subcases.
+Syntax/JSON, introduced local links, whitespace and append-only historical log
+prefix checks pass. [Verification record](photo2/review/r220/verification.json).
+Both questions remain pending; no answer inferred or mask acceptance claimed.
