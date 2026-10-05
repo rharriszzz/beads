@@ -1420,6 +1420,16 @@ are chosen after extraction. Verify embedded raw photo, pixel coordinates and
 source seals; a seed is neither a safe interior patch nor a verified bead center.
 No extractor or grown-mask change is part of this presentation procedure.
 
+**R232 maker review/complementarity:** [M4 and possible M1/M3 supplements](photo2/SEED_METHOD_REVIEW.md).
+Preserve qualitative method preferences against exact reviewed figures; do not
+promote every seed or patch. M4 is provisionally favored, old/M2 rejected as direct
+trusted sources. Use frozen candidate/profile records to distinguish profile
+rejection from later spacing suppression. Compare M4 alone and M1/M3 supplements
+with raw crops and sensitivity to proximity. Point distance is not body identity;
+resolve a small easy same-body pair before unioning lists. No detector rerun,
+manual annotation input or production adoption in this diagnostic. M1 targets
+diffuse colored brightness, suppressing previously detected reflection pixels.
+
 **R231 diagnostic alternatives:** [Four seed methods with raw/evidence review](photo2/SEED_METHOD_COMPARISON.md).
 Use frozen image-derived appearance and original encoded RGB, without maker
 locations or geometry. Compare normalized supported brightness maxima, deeper

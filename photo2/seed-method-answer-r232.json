@@ -1,0 +1,38 @@
+{
+  "request": "R232",
+  "user_text": "old seeds is bad, M1 is ok, but since it says that it wants the specular reflections, its problem is that it misses some.  M2 is bad, it gets some right and some wrong.  M3 is not great, since it avoids the yellow beads, M4 is pretty good. In comparison b.  old seeds is veryt bad.  M1 is ok but misses some of the beads. M2 I dont like, 2 hits over some of the beads, 1 hit over nothing.  M3 pretty good but missing some of the beads.  M4 also pretty good but missing a differnt set of beads.",
+  "question": "Q231.1",
+  "status": "answered qualitatively for comparisons A and B",
+  "maker_assessments": {
+    "A": {
+      "old": "Bad",
+      "M1": "Okay; misses some. Maker associates it with finding specular reflections.",
+      "M2": "Bad; some right and some wrong",
+      "M3": "Not great; avoids yellow beads",
+      "M4": "Pretty good"
+    },
+    "B": {
+      "old": "Very bad",
+      "M1": "Okay; misses some beads",
+      "M2": "Disliked: 2 hits over some beads, 1 over nothing",
+      "M3": "Pretty good; misses some beads",
+      "M4": "Pretty good; misses a different set of beads"
+    }
+  },
+  "scope": "Qualitative maker review of methods in these two frozen crops, not individual point or patch ownership confirmation or a measured full-photo error rate",
+  "specific_wrong_point_ids_supplied": [],
+  "individual_seed_ownerships_resolved": false,
+  "Q231.2_exact_green_P_disk": "Still pending; no containment answer supplied",
+  "assistant_interpretation": "Use M4 as the provisional starting point; inspect M1/M3 complementary evidence before selecting a correction. Reject old and M2 as direct sources of trusted seeds.",
+  "source_clarification": "M1 seeks bright diffuse colored interiors. Previously detected reflection pixels are median-suppressed in brightness and excluded from seed eligibility; M1 does not seek specular reflections. Undetected highlights can still affect it.",
+  "production_detector_selected_or_changed": false,
+  "bound_artifacts": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/seed-method-questions-r231.json": "013a65a0fcd9fa98c6bec8bb5e93d4283e982af62eec072b4dbf630b09485ed2",
+    "photo2/review/r231/summary.json": "fc37467fc50ffb4804768874d019265a8c1e453330bac5ec51dc63cf0c36a53b",
+    "photo2/review/r231/points.json": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+    "photo2/review/r231/comparison-a.png": "6387fdf5bc7a3172e96846440eb6b6b62c108103e898dc942417a4548002aa2e",
+    "photo2/review/r231/comparison-b.png": "edac2382da2f5d56b3126753d4fa85e4459590c3c3e494b8ed0290de974f712e",
+    "photo2/compare_seed_methods.py": "a6fae59f4593e95f0ceaa69c41f37bb9b011eea6d36faf8ec2f61433ef730ddb"
+  }
+}

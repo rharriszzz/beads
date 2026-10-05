@@ -9,7 +9,54 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R231 — compare four seed repairs, awaiting visual review
+## Current R232 — maker favors M4; compare possible supplements
+
+Maker reviews the frozen A/B figures. Old seeds and M2 rejected. M1 okay but
+misses some; maker thought its target was specular reflections. M3 weak in A
+because it avoids yellow, pretty good but incomplete in B. M4 pretty good in
+both and misses a different set in B. [Exact wording and artifact bindings](photo2/seed-method-answer-r232.json)
+resolve Q231.1 qualitatively, not individual ownership or all-photo precision.
+Q231.2's exact69-pixel green P disk remains unanswered. M4 is the provisional
+starting point inferred from review; no production selection or change.
+
+[Start with new comparisons and explanation](photo2/SEED_METHOD_REVIEW.md),
+[self-contained static page](photo2/review/r232/index.html),
+[archived-profile/proximity measurements](photo2/review/r232/analysis.json),
+[input/output seals](photo2/review/r232/summary.json),
+[verification](photo2/review/r232/verification.json).
+Existing4001 server serves **/seed-review.html**. R231 /seed-methods.html and all
+earlier viewers/images/point lists remain unchanged. No JavaScript for new page;
+real-browser rendering not exercised. M1 seeks bright diffuse colored interiors;
+it median-suppresses previously detected reflections and excludes them as seed
+pixels. Undetected glints can affect it. Separate reflection evidence unchanged.
+
+Three options presented: M4 alone, M4 plus possible M1 supplements, M4 plus
+possible M3 supplements. New script reads only frozen R231 points/profiles and
+source photo, verifies input hashes, and does not rerun extraction. Cyan M4;
+amber/green proposals at least6.80px from same-family M4 across full photo are
+shown for readability. This is not an identity/alias/acceptance rule. A extras
+M1=1/M3=5; B extras2/3, but at13.60px B extras are0/0. Counts are coordinates,
+not missing beads. Do not blindly union lists.
+
+Exact M4 stage outcomes A/M1:3selected+7spacing+1profile-fail; A/M3:0+2+6;
+B/M1:6+5+0; B/M3:3+7+2. Every B M1 coordinate passes profiles; spacing alone
+removes five. Retain distinction between a shifted point and a dropped bead.
+No rerun of unchanged limited synthetic controls; old seeds still passed there,
+so no photo accuracy/completeness or generality claim.
+
+Q232.1 issued asynchronously: B P=M1:53(943,388),Q=M4:55/M3:45(946,377),
+11.40px apart, same yellow bead or different? [As-issued image/native bindings](photo2/review/r232/question.json)
+preserved; pending. Both pass profiles; Q score.1613>P.0790, so spacing removes P.
+Diagnostic crop/pair selection occurs after extraction, not runtime priors; do
+not resolve physical aliases until the maker answers. Original user Screenshot
+(18).png remains unchanged/untracked and excluded from staging.
+
+Stop at answer preservation and complementarity diagnosis. Next resolve this
+easy P/Q pair, then choose guarded M4 supplementation without duplicates.
+gpt-6.1-sol / High, same conversation; no `/new`. Commit/push scoped work and
+verify exact remote tip/status before claiming delivery.
+
+## Prior R231 — compare four seed repairs, awaiting visual review
 
 Maker requests possible solutions and detailed images to judge promising methods.
 Four approaches announced before implementation: stricter brightness peaks,

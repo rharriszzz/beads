@@ -1,0 +1,48 @@
+{
+  "request": "R232",
+  "question": "Q232.1: In photo2/SEED_METHOD_REVIEW.md, the B close-up marks P (M1 brightness point) and Q (M4/M3 point). Are P and Q inside the same yellow bead, or two different yellow beads?",
+  "async_prompt": "Q232.1: In photo2/SEED_METHOD_REVIEW.md (also http://127.0.0.1:4001/seed-review.html), the final B close-up marks amber P and cyan Q on yellow. Are P and Q inside the same yellow bead, or two different yellow beads?",
+  "status": "pending",
+  "review": "photo2/SEED_METHOD_REVIEW.md",
+  "image": "photo2/review/r232/pair-b.png",
+  "image_sha256": "f8e842927dec85c4323779a8ec21cfdfb04c2eb78214895395ff816dc8e42d97",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "points_sha256": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+  "box": [
+    845,
+    350,
+    1025,
+    490
+  ],
+  "pair": [
+    {
+      "letter": "P",
+      "xy": [
+        943,
+        388
+      ],
+      "mode": 1,
+      "score": 0.9428772926330566,
+      "support_inset": 8.062257766723633,
+      "id": "M1:53",
+      "method": "M1",
+      "status": "Unreviewed colored interior proposal; no bead identity or center claim"
+    },
+    {
+      "letter": "Q",
+      "xy": [
+        946,
+        377
+      ],
+      "mode": 1,
+      "score": 0.16129006445407867,
+      "profile_index": 266,
+      "id": "M4:55",
+      "method": "M4",
+      "status": "Unreviewed colored interior proposal; no bead identity or center claim"
+    }
+  ],
+  "other_method_at_Q": "M3:45",
+  "distance_pixels": 11.40175425099138,
+  "relation": "Unresolved same-body relationship; no seed/mask/center confirmation implied."
+}

@@ -17,7 +17,30 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R231: illustrated comparison of possible seed repairs
+## Current R232: preserve maker review and inspect M4 supplements
+
+The maker rejects old/M2 in A/B, finds M4 pretty good in both, M1 okay but
+incomplete, and M3 weaker in A because it misses yellow but pretty good in B.
+[Exact qualitative answer](photo2/seed-method-answer-r232.json) resolves Q231.1;
+the exact green P disk from Q231.2 remains unconfirmed. M4 is the provisional
+starting point, an interpretation rather than whole-method approval.
+
+[New comparisons and source diagnosis](photo2/SEED_METHOD_REVIEW.md),
+[static page](photo2/review/r232/index.html). Existing4001 server: **/seed-review.html**.
+Three options presented: M4 alone, M4 with M1 supplements, M4 with M3 supplements.
+No detector rerun/change or accepted union. M1 seeks bright diffuse colored
+interiors and suppresses previously detected reflections; it is not a reflection
+locator. Archived profiles separate rejection from subsequent spacing removal.
+Every M1 point in B passes profiles; five are removed by spacing. Display-only
+6.80px proximity does not establish bead identity or count missing bodies.
+
+Q232.1 asks if B's amber P(M1:53) and cyan Q(M4:55/M3:45),11.40px apart, are
+inside the same yellow bead or different beads. [Frozen illustration/bindings](photo2/review/r232/question.json);
+pending. **Stop:** qualitative answer plus complementarity diagnosis. **Next:**
+resolve this easy pair, then choose a guarded M4 supplement without duplicates.
+gpt-6.1-sol / High, same conversation; no `/new` needed.
+
+## Prior R231: illustrated comparison of possible seed repairs
 
 The maker requests solutions and detailed images for judging promise. Compare
 four approaches before choosing: M1 bright peaks with normalized color-supported

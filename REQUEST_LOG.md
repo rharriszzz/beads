@@ -4827,3 +4827,57 @@ links, append-only history and whitespace; no real-browser paint claim.
 Stop at illustrated comparison. Next preserve method preference and specific
 success/failure evidence, then choose a correction. gpt-6.1-sol / High, same
 conversation; no /new. Scoped commit/push and remote/status verification.
+
+## R232 — Maker reviews seed methods; inspect M4 complementarity
+
+Maker: “old seeds is bad, M1 is ok, but since it says that it wants the specular reflections, its problem is that it misses some.  M2 is bad, it gets some right and some wrong.  M3 is not great, since it avoids the yellow beads, M4 is pretty good. In comparison b.  old seeds is veryt bad.  M1 is ok but misses some of the beads. M2 I dont like, 2 hits over some of the beads, 1 hit over nothing.  M3 pretty good but missing some of the beads.  M4 also pretty good but missing a differnt set of beads.”
+
+Preflight daisy/photo-2-reconstruction-v2 at1fa2fc7, upstream0/0 after fetch,
+no stashes, tracked tree clean with original user screenshot untracked. Read
+AGENTS/current handoff/log/plan, R231 method implementation, exact questions,
+frozen comparisons/profile data and seed explanations. No agents, skills, new
+render, manual labels/series/centers, fit, detector rerun or production change.
+
+[Exact answer and reviewed-artifact hashes](photo2/seed-method-answer-r232.json)
+preserve qualitative A/B judgments. Q231.1 answered at method level; no individual
+point IDs or measured error rates supplied. Q231.2 exact green69px P disk still
+pending. Clarify M1 finds bright diffuse colored interiors, not specular locators:
+previously detected reflections are median-suppressed and excluded as seed pixels;
+undetected highlights remain possible. Separate reflection evidence unchanged.
+M4 is the inferred provisional starting point; not a user approval of all points.
+
+Three options announced before new presentation: M4 alone, with possible M1
+supplements, with possible M3 supplements. New review_seed_complementarity.py
+checks frozen input hashes and reads archived point/profile measurements.
+[Review and raw comparisons](photo2/SEED_METHOD_REVIEW.md),
+[measurements](photo2/review/r232/analysis.json),
+[source/output seals](photo2/review/r232/summary.json).
+Two new A/B four-panel images show raw/M4/M4+M1/M4+M3; one native pixel per point,
+guide rings separate. 6.80px nearest same-family M4 distance is display-only,
+searched over whole photo. A has1M1/5M3 extras; B2/3. At13.60px B has0/0.
+Whole-photo M3 extra coordinates change290→101 with that radius; neither is
+a missed-body count. Do not blindly union lists or resolve aliases by proximity.
+
+Exact archived M4 stage outcomes A/M1=3kept,7spacing-removed,1profile-rejected;
+A/M3=0,2,6; B/M1=6,5,0; B/M3=3,7,2. Every M1 point in B passes profiles;
+five were removed by same-family spacing. Source score comparisons and counts
+checked; a shift versus a missed bead still needs ownership evidence.
+
+Q232.1 issued asynchronously and in tracked question record: in B's raw/marked
+pair, P=M1:53(943,388),Q=M4:55/M3:45(946,377),11.40px apart: same yellow
+bead or different? [As-issued image/points](photo2/review/r232/question.json)
+preserved; pending. Both candidates pass profiles, Q.1613>P.0790; spacing removes
+P. Crop/pair is a diagnostic post-extraction choice, never a runtime location prior.
+Original user screenshot remains unchanged/untracked. Static self-contained
+canonical page plus byte-identical alias at4001/seed-review.html; existing server
+can remain. No real-browser rendering claim or new browser-control tests.
+
+Reproduce `.venv/bin/python photo2/review_seed_complementarity.py`; requires exact
+R231 ignored pool/profile archives. Verify frozen source/payload hashes, archived
+cut counts/profile acceptance, selected/removed classifications, native marker
+positions, embedded images/alias, question coordinates, answer bindings, links,
+syntax, append-only log and whitespace. No unchanged synthetic tests rerun;
+old controls' photo-failure limitation retained. Stop at answer preservation and
+complementarity diagnosis. Next resolve P/Q, then choose guarded supplementation
+without duplicates. gpt-6.1-sol / High, same conversation; no /new. Scoped
+commit/push followed by remote/status verification.

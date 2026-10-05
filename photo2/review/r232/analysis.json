@@ -1,0 +1,1351 @@
+{
+  "request": "R232",
+  "input_sha256": {
+    "photo2/review/r231/summary.json": "fc37467fc50ffb4804768874d019265a8c1e453330bac5ec51dc63cf0c36a53b",
+    "photo2/review/r231/points.json": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+    "photo2/seed-method-questions-r231.json": "013a65a0fcd9fa98c6bec8bb5e93d4283e982af62eec072b4dbf630b09485ed2",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/compare_seed_methods.py": "a6fae59f4593e95f0ceaa69c41f37bb9b011eea6d36faf8ec2f61433ef730ddb",
+    "photo2/seed_methods_viewer.html": "173e4ff8c78d422f13533a60f648d6dc8fa05189d97a24e080c1f11a3e60f239",
+    "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/review/r218/regions.json": "a9366bf4a990a3e8254c7562a205840822abf3aed27202f28df7f037614758f1",
+    "photo2/review/r229/seeds.json": "7431dfcaa264bdb7fd057b7731275659968b8dba8d9be939bee737bbf0ac241f",
+    "photo2/review/r229/review-locations.json": "707c46c89fe6308d2d038d8fb12925f0c19e4d9f506c24536b0e97a11d6c8272",
+    "photo2/review/r231/review-locations.json": "5e762b7c682ffb23393551c562c62cf313eac06493d5a0d67403fa5486f3e0c4",
+    "photo2/review/r231/index.html": "a47ec1cf17578893f1c6b885f0dc4dfd0e3115a3c07dc19b2dd17c1fcd9cb963",
+    "photo2/review/r231/comparison-a.png": "6387fdf5bc7a3172e96846440eb6b6b62c108103e898dc942417a4548002aa2e",
+    "photo2/review/r231/comparison-b.png": "edac2382da2f5d56b3126753d4fa85e4459590c3c3e494b8ed0290de974f712e",
+    "photo2/review/r231/comparison-bottom.png": "10446e4508c2f5ee22f56c0c927d2e6ac2dddc2842e23360a5850dbe3b429458",
+    "photo2/review/r231/comparison-left.png": "10275404957c6428065cfd29177486a174ad0be1658729cd15e8517ed345d3f4",
+    "photo2/review/r231/comparison-lower-left.png": "8eca6f052c0c8c704a788fd0a50bdbe7d50ad1d06ff2fa8bb0d90cdacf889116",
+    "photo2/review/r231/comparison-lower-right.png": "82592bb4f93a4d864b68fc0ff9232ce91cf23ea81e407a0545f5d0c46eb4c0a4",
+    "photo2/review/r231/comparison-right.png": "812b14a5fb38578833626d508274928e9ad9b7e761b00fe06eafc51da7e4e7c2",
+    "photo2/review/r231/evidence-a.png": "9a6605b5c337b289363d5c1237298cfe6e7c6135c87b929e0c56e10581883fb1",
+    "photo2/review/r231/evidence-b.png": "8d5ed7a370e4d20833b7c4db780bb688b51c4a178512ab79fa311fc28b2ad53c",
+    "photo2/review/r231/evidence-bottom.png": "6206134dd448701c867f2f60d143091e3c752f4fd05c5392bb1d6e5afe04b9d0",
+    "photo2/review/r231/evidence-left.png": "fb0447211ecbe18e71396d627c916e3343b6e4de2dbc261d84522ac693b72a50",
+    "photo2/review/r231/evidence-lower-left.png": "f2c0de90839301941405886ddc8fcaa0b981ae7ef9e7c46a4305aaa259c7d8b8",
+    "photo2/review/r231/evidence-lower-right.png": "29658814eaa74f8dcd3704d899a0daa334aa2901dcd11a87733877c5d5094210",
+    "photo2/review/r231/evidence-right.png": "419826b99d143761d80c3a9a8fc8fac97ecc847e1a610d99d11a27118a8ecb58",
+    "photo2/review/r231/profiles-a.png": "1c849a9d6b6772f23e5055829e4d77afd6302d90c89906f3ed3fb85cbb6ea5bb",
+    "photo2/review/r231/profiles-b.png": "46ef83a3f7b1047045a30ff84198e16e18a6081807b8be8ba65e0f0f81c5c5a0",
+    "/home/rharris/git/beads/photo2/output/r231/profile-pool.json": "57ee2f6995d3c48117e6c00e3fed56cc48931e3253c42e8d57826faa8af57085",
+    "/home/rharris/git/beads/photo2/output/r231/profiles.npz": "419f3f968e2048dbef491d9b9671b85851907de8590edcb3fd328b73da3128e0"
+  },
+  "native_diameter": 27.190842412550417,
+  "display_radius_pixels": 6.797710603137604,
+  "spacing_radius_pixels": 13.595421206275208,
+  "source_M4_directions_degrees": [
+    0,
+    45,
+    90,
+    135
+  ],
+  "display_rule": "Show other-method points at least 0.25D from all same-family M4 points; whole-photo nearest search. Display decluttering only.",
+  "cases": [
+    {
+      "name": "A",
+      "box": [
+        1581,
+        255,
+        1761,
+        395
+      ],
+      "M4_points_in_crop": 15,
+      "methods": {
+        "M1": [
+          {
+            "id": "M1:9",
+            "xy": [
+              1610,
+              257
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:10",
+              "xy": [
+                1610,
+                257
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 42,
+            "valid_cuts_per_direction": [
+              2,
+              3,
+              0,
+              2
+            ],
+            "profile_score": 0.0922258272767067,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:10",
+            "xy": [
+              1659,
+              263
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:12",
+              "xy": [
+                1659,
+                263
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 51,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.2939797341823578,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:14",
+            "xy": [
+              1582,
+              276
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:15",
+              "xy": [
+                1582,
+                272
+              ],
+              "distance_pixels": 4.0
+            },
+            "profile_index": 73,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              2,
+              3
+            ],
+            "profile_score": 0.16411201655864716,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:15",
+            "xy": [
+              1698,
+              277
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:20",
+              "xy": [
+                1698,
+                280
+              ],
+              "distance_pixels": 3.0
+            },
+            "profile_index": 75,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.22784622013568878,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:21",
+            "xy": [
+              1672,
+              295
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:26",
+              "xy": [
+                1669,
+                293
+              ],
+              "distance_pixels": 3.605551275463989
+            },
+            "profile_index": 112,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.23295962810516357,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:23",
+            "xy": [
+              1649,
+              309
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:31",
+              "xy": [
+                1649,
+                309
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 135,
+            "valid_cuts_per_direction": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "profile_score": 0.12996642291545868,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:29",
+            "xy": [
+              1585,
+              316
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:30",
+              "xy": [
+                1590,
+                309
+              ],
+              "distance_pixels": 8.602325267042627
+            },
+            "profile_index": 156,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              2,
+              2
+            ],
+            "profile_score": 0.09296629577875137,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M1:37",
+            "xy": [
+              1758,
+              336
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:43",
+              "xy": [
+                1757,
+                333
+              ],
+              "distance_pixels": 3.1622776601683795
+            },
+            "profile_index": 205,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              2,
+              3
+            ],
+            "profile_score": 0.17224299907684326,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:40",
+            "xy": [
+              1732,
+              339
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:44",
+              "xy": [
+                1730,
+                337
+              ],
+              "distance_pixels": 2.8284271247461903
+            },
+            "profile_index": 212,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.25007930397987366,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:42",
+            "xy": [
+              1683,
+              350
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:46",
+              "xy": [
+                1681,
+                347
+              ],
+              "distance_pixels": 3.605551275463989
+            },
+            "profile_index": 232,
+            "valid_cuts_per_direction": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:45",
+            "xy": [
+              1746,
+              363
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:51",
+              "xy": [
+                1744,
+                361
+              ],
+              "distance_pixels": 2.8284271247461903
+            },
+            "profile_index": 251,
+            "valid_cuts_per_direction": [
+              2,
+              3,
+              2,
+              2
+            ],
+            "profile_score": 0.1007831022143364,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          }
+        ],
+        "M3": [
+          {
+            "id": "M3:9",
+            "xy": [
+              1728,
+              275
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:20",
+              "xy": [
+                1698,
+                280
+              ],
+              "distance_pixels": 30.4138126514911
+            },
+            "profile_index": 71,
+            "valid_cuts_per_direction": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:10",
+            "xy": [
+              1592,
+              278
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:15",
+              "xy": [
+                1582,
+                272
+              ],
+              "distance_pixels": 11.661903789690601
+            },
+            "profile_index": 77,
+            "valid_cuts_per_direction": [
+              3,
+              0,
+              0,
+              3
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:11",
+            "xy": [
+              1702,
+              278
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:20",
+              "xy": [
+                1698,
+                280
+              ],
+              "distance_pixels": 4.47213595499958
+            },
+            "profile_index": 78,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.16887526214122772,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:17",
+            "xy": [
+              1674,
+              297
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:26",
+              "xy": [
+                1669,
+                293
+              ],
+              "distance_pixels": 6.4031242374328485
+            },
+            "profile_index": 113,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              1,
+              3
+            ],
+            "profile_score": 0.2296118289232254,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:19",
+            "xy": [
+              1655,
+              302
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:31",
+              "xy": [
+                1649,
+                309
+              ],
+              "distance_pixels": 9.219544457292887
+            },
+            "profile_index": 122,
+            "valid_cuts_per_direction": [
+              1,
+              3,
+              1,
+              0
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:27",
+            "xy": [
+              1676,
+              316
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:39",
+              "xy": [
+                1671,
+                325
+              ],
+              "distance_pixels": 10.295630140987
+            },
+            "profile_index": 157,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              0,
+              1
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:37",
+            "xy": [
+              1687,
+              344
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:46",
+              "xy": [
+                1681,
+                347
+              ],
+              "distance_pixels": 6.708203932499369
+            },
+            "profile_index": 223,
+            "valid_cuts_per_direction": [
+              3,
+              1,
+              1,
+              0
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:38",
+            "xy": [
+              1749,
+              347
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:51",
+              "xy": [
+                1744,
+                361
+              ],
+              "distance_pixels": 14.866068747318506
+            },
+            "profile_index": 225,
+            "valid_cuts_per_direction": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "B",
+      "box": [
+        845,
+        350,
+        1025,
+        490
+      ],
+      "M4_points_in_crop": 14,
+      "methods": {
+        "M1": [
+          {
+            "id": "M1:48",
+            "xy": [
+              983,
+              372
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:53",
+              "xy": [
+                986,
+                371
+              ],
+              "distance_pixels": 3.1622776601683795
+            },
+            "profile_index": 259,
+            "valid_cuts_per_direction": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "profile_score": 0.15199249982833862,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:53",
+            "xy": [
+              943,
+              388
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:55",
+              "xy": [
+                946,
+                377
+              ],
+              "distance_pixels": 11.40175425099138
+            },
+            "profile_index": 292,
+            "valid_cuts_per_direction": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "profile_score": 0.0790427178144455,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M1:56",
+            "xy": [
+              976,
+              394
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:64",
+              "xy": [
+                973,
+                394
+              ],
+              "distance_pixels": 3.0
+            },
+            "profile_index": 303,
+            "valid_cuts_per_direction": [
+              3,
+              2,
+              3,
+              2
+            ],
+            "profile_score": 0.31252917647361755,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:58",
+            "xy": [
+              874,
+              402
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:66",
+              "xy": [
+                874,
+                402
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 312,
+            "valid_cuts_per_direction": [
+              3,
+              2,
+              0,
+              3
+            ],
+            "profile_score": 0.24586133658885956,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:61",
+            "xy": [
+              856,
+              416
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:70",
+              "xy": [
+                856,
+                420
+              ],
+              "distance_pixels": 4.0
+            },
+            "profile_index": 331,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.18634937703609467,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:62",
+            "xy": [
+              935,
+              420
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:71",
+              "xy": [
+                935,
+                420
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 337,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              0,
+              3
+            ],
+            "profile_score": 0.17320100963115692,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:64",
+            "xy": [
+              964,
+              423
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:73",
+              "xy": [
+                964,
+                423
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 344,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.20069332420825958,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:66",
+            "xy": [
+              917,
+              434
+            ],
+            "mode": 1,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:76",
+              "xy": [
+                917,
+                434
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 362,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.22282201051712036,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:67",
+            "xy": [
+              883,
+              435
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:77",
+              "xy": [
+                883,
+                435
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 363,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.2022315114736557,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M1:77",
+            "xy": [
+              888,
+              468
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:88",
+              "xy": [
+                881,
+                467
+              ],
+              "distance_pixels": 7.0710678118654755
+            },
+            "profile_index": 411,
+            "valid_cuts_per_direction": [
+              2,
+              2,
+              3,
+              3
+            ],
+            "profile_score": 0.08115068823099136,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M1:81",
+            "xy": [
+              862,
+              480
+            ],
+            "mode": 2,
+            "method": "M1",
+            "nearest_M4": {
+              "id": "M4:93",
+              "xy": [
+                862,
+                480
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 432,
+            "valid_cuts_per_direction": [
+              2,
+              2,
+              2,
+              3
+            ],
+            "profile_score": 0.024172594770789146,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          }
+        ],
+        "M3": [
+          {
+            "id": "M3:39",
+            "xy": [
+              1003,
+              350
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:48",
+              "xy": [
+                999,
+                349
+              ],
+              "distance_pixels": 4.123105625617661
+            },
+            "profile_index": 231,
+            "valid_cuts_per_direction": [
+              3,
+              2,
+              1,
+              2
+            ],
+            "profile_score": 0.12653493881225586,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:42",
+            "xy": [
+              994,
+              363
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:53",
+              "xy": [
+                986,
+                371
+              ],
+              "distance_pixels": 11.313708498984761
+            },
+            "profile_index": 248,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              0,
+              1
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:44",
+            "xy": [
+              983,
+              373
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:53",
+              "xy": [
+                986,
+                371
+              ],
+              "distance_pixels": 3.605551275463989
+            },
+            "profile_index": 261,
+            "valid_cuts_per_direction": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "profile_score": 0.13220404088497162,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:45",
+            "xy": [
+              946,
+              377
+            ],
+            "mode": 1,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:55",
+              "xy": [
+                946,
+                377
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 266,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              0,
+              3
+            ],
+            "profile_score": 0.16129006445407867,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:52",
+            "xy": [
+              980,
+              394
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:64",
+              "xy": [
+                973,
+                394
+              ],
+              "distance_pixels": 7.0
+            },
+            "profile_index": 304,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.13891170918941498,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:55",
+            "xy": [
+              874,
+              402
+            ],
+            "mode": 1,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:66",
+              "xy": [
+                874,
+                402
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 312,
+            "valid_cuts_per_direction": [
+              3,
+              2,
+              0,
+              3
+            ],
+            "profile_score": 0.24586133658885956,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:60",
+            "xy": [
+              864,
+              424
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:70",
+              "xy": [
+                856,
+                420
+              ],
+              "distance_pixels": 8.94427190999916
+            },
+            "profile_index": 345,
+            "valid_cuts_per_direction": [
+              3,
+              0,
+              0,
+              3
+            ],
+            "profile_score": 0.0,
+            "M4_stage_outcome": "rejected_profile",
+            "shown_as_possible_extra": true
+          },
+          {
+            "id": "M3:61",
+            "xy": [
+              966,
+              424
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:73",
+              "xy": [
+                964,
+                423
+              ],
+              "distance_pixels": 2.23606797749979
+            },
+            "profile_index": 346,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "profile_score": 0.18433576822280884,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:62",
+            "xy": [
+              985,
+              428
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:75",
+              "xy": [
+                985,
+                428
+              ],
+              "distance_pixels": 0.0
+            },
+            "profile_index": 352,
+            "valid_cuts_per_direction": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "profile_score": 0.02873237617313862,
+            "M4_stage_outcome": "selected_exact_point",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:64",
+            "xy": [
+              889,
+              433
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:77",
+              "xy": [
+                883,
+                435
+              ],
+              "distance_pixels": 6.324555320336759
+            },
+            "profile_index": 359,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              2,
+              3
+            ],
+            "profile_score": 0.14138607680797577,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:67",
+            "xy": [
+              920,
+              440
+            ],
+            "mode": 1,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:76",
+              "xy": [
+                917,
+                434
+              ],
+              "distance_pixels": 6.708203932499369
+            },
+            "profile_index": 369,
+            "valid_cuts_per_direction": [
+              3,
+              3,
+              1,
+              3
+            ],
+            "profile_score": 0.22252066433429718,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          },
+          {
+            "id": "M3:73",
+            "xy": [
+              886,
+              464
+            ],
+            "mode": 2,
+            "method": "M3",
+            "nearest_M4": {
+              "id": "M4:88",
+              "xy": [
+                881,
+                467
+              ],
+              "distance_pixels": 5.830951894845301
+            },
+            "profile_index": 402,
+            "valid_cuts_per_direction": [
+              2,
+              2,
+              3,
+              3
+            ],
+            "profile_score": 0.07482761144638062,
+            "M4_stage_outcome": "suppressed_spacing",
+            "shown_as_possible_extra": false
+          }
+        ]
+      }
+    }
+  ],
+  "proximity_sensitivity": [
+    {
+      "context": "Whole photo",
+      "method": "M1",
+      "total": 537,
+      "farther_than": [
+        {
+          "diameter_fraction": 0.25,
+          "radius_pixels": 6.797710603137604,
+          "proposals": 112
+        },
+        {
+          "diameter_fraction": 0.35,
+          "radius_pixels": 9.516794844392646,
+          "proposals": 94
+        },
+        {
+          "diameter_fraction": 0.5,
+          "radius_pixels": 13.595421206275208,
+          "proposals": 81
+        }
+      ]
+    },
+    {
+      "context": "Whole photo",
+      "method": "M3",
+      "total": 431,
+      "farther_than": [
+        {
+          "diameter_fraction": 0.25,
+          "radius_pixels": 6.797710603137604,
+          "proposals": 290
+        },
+        {
+          "diameter_fraction": 0.35,
+          "radius_pixels": 9.516794844392646,
+          "proposals": 168
+        },
+        {
+          "diameter_fraction": 0.5,
+          "radius_pixels": 13.595421206275208,
+          "proposals": 101
+        }
+      ]
+    },
+    {
+      "context": "A",
+      "method": "M1",
+      "total": 11,
+      "farther_than": [
+        {
+          "diameter_fraction": 0.25,
+          "radius_pixels": 6.797710603137604,
+          "proposals": 1
+        },
+        {
+          "diameter_fraction": 0.35,
+          "radius_pixels": 9.516794844392646,
+          "proposals": 0
+        },
+        {
+          "diameter_fraction": 0.5,
+          "radius_pixels": 13.595421206275208,
+          "proposals": 0
+        }
+      ]
+    },
+    {
+      "context": "A",
+      "method": "M3",
+      "total": 8,
+      "farther_than": [
+        {
+          "diameter_fraction": 0.25,
+          "radius_pixels": 6.797710603137604,
+          "proposals": 5
+        },
+        {
+          "diameter_fraction": 0.35,
+          "radius_pixels": 9.516794844392646,
+          "proposals": 4
+        },
+        {
+          "diameter_fraction": 0.5,
+          "radius_pixels": 13.595421206275208,
+          "proposals": 2
+        }
+      ]
+    },
+    {
+      "context": "B",
+      "method": "M1",
+      "total": 11,
+      "farther_than": [
+        {
+          "diameter_fraction": 0.25,
+          "radius_pixels": 6.797710603137604,
+          "proposals": 2
+        },
+        {
+          "diameter_fraction": 0.35,
+          "radius_pixels": 9.516794844392646,
+          "proposals": 1
+        },
+        {
+          "diameter_fraction": 0.5,
+          "radius_pixels": 13.595421206275208,
+          "proposals": 0
+        }
+      ]
+    },
+    {
+      "context": "B",
+      "method": "M3",
+      "total": 12,
+      "farther_than": [
+        {
+          "diameter_fraction": 0.25,
+          "radius_pixels": 6.797710603137604,
+          "proposals": 3
+        },
+        {
+          "diameter_fraction": 0.35,
+          "radius_pixels": 9.516794844392646,
+          "proposals": 1
+        },
+        {
+          "diameter_fraction": 0.5,
+          "radius_pixels": 13.595421206275208,
+          "proposals": 0
+        }
+      ]
+    }
+  ],
+  "source_points_recomputed": false,
+  "physical_bead_aliases_resolved": false,
+  "profile_outcomes_verified": true
+}
