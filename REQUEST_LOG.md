@@ -4758,3 +4758,72 @@ Stop at explaining step2. Next inspect allowed support, raw/smoothed brightness
 and quality around one misplaced seed before selecting a correction.
 gpt-6.1-sol / High, same conversation; no /new. Commit/push only scoped records
 and explanation, then verify exact remote tip and final status.
+
+## R231 — Compare possible seed solutions with detailed images
+
+Maker: “Please think of one or more possible solutions, and try to come up with detailied images that can permit me to guess which methods are promising.”
+
+Preflight daisy/photo-2-reconstruction-v2 at391bcfb, upstream0/0 after fetch,
+no stashes, tracked tree clean with original user screenshot untracked. Read
+AGENTS/current handoff/log/plan, exact seed/parent-domain implementation, R230
+explanation, prior parallel-profile and hue-overlap experiments. Four methods
+announced before implementation: brightness peaks, deeper color support,
+substantial bright/color patch, nearby profile support. No subagents or skills,
+new render, manual bead/series/center input, geometry fit or production change.
+
+New compare_seed_methods.py runs all four across the photo using frozen learned
+appearance/domain/family/reflections. M1 normalizes blur by color support, removes
+the old distance multiplier and adds a learned brightness floor. M2 keeps depth
+preference uncapped with larger inset. M3 tightens hue/S/V and requires a small
+tested disk. M4 checks3parallel cuts per direction, requiring two cuts in each
+of two perpendicular directions to have compatible bright middles and darker
+flanks. New seed centers avoid inherited reflection pixels for M1–M3; attached
+reflections may support their color masks. M4 checks raw interpolated RGB→HSV
+and inherited diffuse brightness. No dark-bead identity or seam assertion.
+
+[Main raw/comparison/evidence review](photo2/SEED_METHOD_COMPARISON.md),
+[zoom/pan/click viewer](photo2/review/r231/index.html),
+[point lists/parameters](photo2/review/r231/points.json),
+[source/output hashes](photo2/review/r231/summary.json),
+[verification](photo2/review/r231/verification.json).
+New self-contained alias works at http://127.0.0.1:4001/seed-methods.html with the
+existing server; no restart. Static SVG photos/points before controls, no giant
+canvas. Seven raw/old/four-method comparisons, seven intermediate-evidence maps,
+two actual profile figures and one loose-patch counterexample tracked. A/B widen
+earlier automatic contexts; other views are post-extraction angular/median-radius
+choices from old proposals, independent of new-method success. All whole-photo
+points remain in viewer; no coordinate crops used as runtime priors.
+
+Photo counts old1566, M1=537, M2=926, strict M3=431, M4=599, all unreviewed.
+Each cyan/orange marker is one native pixel. Rings are guides; green M3 disks
+radius4.622443px each contain69 pixel centers that pass its tests. They are not
+bead outlines, established centers or requested70–90% visible masks. Strict M3
+brightness=max(Q65,.60Q90); loose=max(Q35,.45Q90) gives751 proposals. Preserve
+exact loose source/parameters/image hashes and separate reproduction; it does
+not overwrite the strict viewer alias or native fields. Strictness loses clear
+proposals, including all yellow proposals in A. Do not pick by count alone.
+
+New check_seed_methods.py evaluates four cached owner-known development scenes
+(both hands, changed palette/background/placement) after all candidate lists
+finish. Every new seed is on a colored body; all270 M3 disks are single-body.
+Eligible-body coverage M1=258/450, M2=416/450, M3=268/450, M4=427/450; duplicates
+remain. [Full controls/misses](photo2/review/r231/calibration.json). Old seeds also
+pass ownership in these scenes, so controls do not reproduce the maker's photo
+failure or establish a photo error rate. No new holdout or generality claim.
+
+Q231.1 issued asking promising methods in A/B plus obvious gap points/misses.
+Q231.2 asks whether exact green P stays comfortably inside one red bead:
+M3:27 at(1676,316),69pixels. [Immutable figures/points/native disk](photo2/seed-method-questions-r231.json)
+preserved; pending. No new proposal inherits maker confirmation. Earlier rejected
+seed basis and unresolved Q224/Q220 pixel ownership retained. Original user
+Screenshot(18).png remains unchanged/untracked and excluded from scoped staging.
+
+Reproduce `.venv/bin/python photo2/compare_seed_methods.py`,
+`.venv/bin/python photo2/check_seed_methods.py`, and the documented --patch-rule
+loose command. Routine native fields/profiles/caches remain ignored. Verify source
+and prior payload seals,4059 SVG native point positions, every431 M3 disk's pixel
+tests, M4 source RGB/profile identities, question coordinates, controls, syntax,
+links, append-only history and whitespace; no real-browser paint claim.
+Stop at illustrated comparison. Next preserve method preference and specific
+success/failure evidence, then choose a correction. gpt-6.1-sol / High, same
+conversation; no /new. Scoped commit/push and remote/status verification.

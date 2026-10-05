@@ -9,7 +9,55 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R230 — seed basis rejected; explain step 2
+## Current R231 — compare four seed repairs, awaiting visual review
+
+Maker requests possible solutions and detailed images to judge promising methods.
+Four approaches announced before implementation: stricter brightness peaks,
+deeper color-support points, substantial bright/color-compatible patches, nearby
+profile support. Implement all as diagnostic alternatives; no production winner.
+
+[Start with the comparison and questions](photo2/SEED_METHOD_COMPARISON.md),
+[self-contained zoom/pan viewer](photo2/review/r231/index.html),
+[all candidate points/parameters](photo2/review/r231/points.json),
+[source/payload seals](photo2/review/r231/summary.json),
+[verification](photo2/review/r231/verification.json).
+User's existing4001 server serves **/seed-methods.html**; no restart. Original
+/step2.html and r224 root viewer remain unchanged. Static SVG raw/M3 points
+are present before JS; no giant canvas. Seven raw/old/M1/M2/M3/M4 comparisons,
+seven intermediate-evidence images, two actual profile figures, one loose-patch
+counterexample. Earlier A/B widened; five other crops selected after extraction
+by old-proposal angular sectors/median radius, not new-method success.
+
+Photo proposals: old1566, M1 brightness537, M2 depth926, M3 strict patches431,
+M4 profiles599. Each marker is one native pixel; hollow rings are guides. Green
+M3 disks radius4.622px contain69 tested native pixel centers, not full bead masks.
+Stricter M3 uses Q65 or.60Q90; loose Q35/.45Q90 produces751 points and broader
+connected support. Both parameters/source/output hashes and loose reproduction
+preserved. M3 has no yellow proposals in A, so loss of clear bodies is visible.
+M4 samples3cuts in each of4directions, ±.10D offsets, ±.12D middle, .30–.65D
+flanks; two cuts in each of two perpendicular directions must pass color,
+brightness and bilateral-drop criteria. Candidate pool is old+M1+M2+M3; no
+manual locations, indices, saved spline or geometry. Points remain unreviewed.
+
+[Four known-owner development controls](photo2/review/r231/calibration.json):
+all new seeds on colored bodies,270/270 M3 disks within one body. Eligible coverage
+M1=258/450, M2=416/450, M3=268/450, M4=427/450. Old seeds also pass ownership in
+these controls, so they do NOT reproduce the maker's photo failure. No claimed
+photo error rate, completeness, unique bead inventory or generality. Every
+candidate list finished before owner images opened; no new render/fit/growth.
+
+Q231.1 asks which methods look promising in A/B, noting gap points/misses.
+Q231.2 asks whether A's exact green disk P stays inside one red bead: M3:27 at
+(1676,316),69pixels. [As-issued figures/point lists/native disk](photo2/seed-method-questions-r231.json)
+preserved; pending. No inherited mask/seed confirmation. R229/R230 rejection and
+unresolved individual seed ownership retained. Original Screenshot(18).png local,
+unchanged and untracked; exclude from scoped staging.
+
+Stop at illustrated comparison. Next preserve preferred methods and concrete
+success/failure evidence before choosing a seed correction. gpt-6.1-sol / High,
+same conversation; no `/new`. Commit/push scoped work and verify remote/status.
+
+## Prior R230 — seed basis rejected; explain step 2
 
 Maker: “I think the seed pixels have failed.  nHalf are between beads, half are
 in the beads.  So please explain step 2 to me in more detail.” Preserve this as

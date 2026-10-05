@@ -17,7 +17,35 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R230: explain the failed seed selection
+## Current R231: illustrated comparison of possible seed repairs
+
+The maker requests solutions and detailed images for judging promise. Compare
+four approaches before choosing: M1 bright peaks with normalized color-supported
+smoothing, M2 greater depth in color support, M3 a tested small bright/color disk,
+M4 neighboring profile agreement. All implemented as whole-photo diagnostics;
+none replaces the production extractor or becomes trusted by count alone.
+
+[Start with raw/old/new comparisons and evidence](photo2/SEED_METHOD_COMPARISON.md),
+[viewer](photo2/review/r231/index.html). Existing4001 server: **/seed-methods.html**.
+Seven contexts, intermediate maps, A/B RGB/HSV profile plots and a looser M3
+counterexample are preserved. One native pixel per seed; green M3 disks are
+69-pixel tested neighborhoods, not bead outlines or 70–90% visible masks.
+M1/M2/M3/M4 propose537/926/431/599 points versus old1566. Inspect missing clear
+beads as well as gap points; strict M3 loses the yellow proposals in A.
+
+Four existing owner-known controls find all new seeds colored and all270 M3
+disks single-body, with eligible coverage258/416/268/427 out of450. Old seeds
+also pass there; these controls do not reproduce the photo failure or establish
+generality. [Complete measurements](photo2/review/r231/calibration.json).
+Native masks, input appearance, manual data and geometry unchanged; no growth.
+
+Q231.1 asks which methods look promising in A/B; Q231.2 asks containment of
+exact69-pixel P. [Immutable image/native bindings](photo2/seed-method-questions-r231.json);
+pending. **Stop:** illustrated comparison. **Next:** preserve preferred methods
+and concrete failures/successes before selecting a correction. gpt-6.1-sol /
+High; same conversation, no `/new` needed.
+
+## Prior R230: explain the failed seed selection
 
 The maker reports roughly half the displayed seeds between beads and half inside,
 and asks for a more detailed step2 explanation. Reject this set as a trusted

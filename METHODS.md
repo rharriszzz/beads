@@ -1420,6 +1420,18 @@ are chosen after extraction. Verify embedded raw photo, pixel coordinates and
 source seals; a seed is neither a safe interior patch nor a verified bead center.
 No extractor or grown-mask change is part of this presentation procedure.
 
+**R231 diagnostic alternatives:** [Four seed methods with raw/evidence review](photo2/SEED_METHOD_COMPARISON.md).
+Use frozen image-derived appearance and original encoded RGB, without maker
+locations or geometry. Compare normalized supported brightness maxima, deeper
+color-support maxima, a small bright/hue/S disk, and bilateral profile hills
+across nearby perpendicular cuts. Keep one-pixel proposals separate from tested
+neighborhoods and enlarged display guides. Select review windows after extraction
+and expose clear-body misses, joined color areas and a loose/strict threshold
+tradeoff. No production selector chosen. Finish all input-only lists before
+known-owner evaluation; preserve missing/duplicate bodies and disk purity.
+Existing controls also accept the rejected old seeds, so require photo review
+instead of promoting those controls to evidence of improved photo ownership.
+
 **R230 negative review:** [Seed-selection explanation and missing interior check](photo2/STEP2_EXPLAINED.md).
 Maker estimates about half the displayed points between beads; reject the seed
 basis, preserving this as qualitative evidence rather than a measured photo-wide

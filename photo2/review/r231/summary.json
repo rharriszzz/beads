@@ -1,0 +1,125 @@
+{
+  "request": "R231",
+  "counts": {
+    "old": 1566,
+    "M1": 537,
+    "M2": 926,
+    "M3": 431,
+    "M4": 599
+  },
+  "parameters": {
+    "native_diameter": 27.190842412550417,
+    "hue_modes_degrees": [
+      27,
+      353
+    ],
+    "learned_family_parameters": {
+      "1": {
+        "learned_hue_degrees": 27,
+        "diffuse_q35": 0.6784313917160034,
+        "diffuse_q65": 0.8509804010391235,
+        "diffuse_q90": 0.9411764740943909,
+        "M1_brightness_floor": 0.8509804010391235,
+        "M3_pixel_brightness_floor": 0.8509804010391235
+      },
+      "2": {
+        "learned_hue_degrees": 353,
+        "diffuse_q35": 0.3019607961177826,
+        "diffuse_q65": 0.48627451062202454,
+        "diffuse_q90": 0.7529411911964417,
+        "M1_brightness_floor": 0.48627451062202454,
+        "M3_pixel_brightness_floor": 0.48627451062202454
+      }
+    },
+    "reflection_median_window": 5,
+    "masked_gaussian_sigma": 1.9033589688785293,
+    "same_family_spacing": 13.595421206275208,
+    "nonreflection_seed_shift_radius": 4,
+    "M1": {
+      "hue_tolerance": 18,
+      "minimum_inset": 1.631450544753025,
+      "prominence_fraction": 0.08
+    },
+    "M2": {
+      "minimum_color_support_inset": 4.894351634259075,
+      "minimum_diffuse_fraction": 0.45
+    },
+    "M3": {
+      "hue_tolerance": 12,
+      "saturation_fraction_of_learned_floor": 0.7,
+      "patch_radius": 4.6224432101335715,
+      "brightness_rule": "strict",
+      "brightness_quantile": 0.65,
+      "minimum_diffuse_fraction": 0.6
+    },
+    "M4": {
+      "angles_degrees": [
+        0,
+        45,
+        90,
+        135
+      ],
+      "offsets_pixels": [
+        -2.719084241255042,
+        0,
+        2.719084241255042
+      ],
+      "middle_halfwidth": 3.26290108950605,
+      "flank_distances": [
+        8.157252723765124,
+        17.67404756815777
+      ],
+      "minimum_color_fraction": 0.75,
+      "minimum_brightness_fraction": 0.5,
+      "minimum_drop_absolute": 0.04,
+      "minimum_drop_relative": 0.1,
+      "required_paths_per_direction": 2,
+      "required_perpendicular_directions": 2
+    }
+  },
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/compare_seed_methods.py": "a6fae59f4593e95f0ceaa69c41f37bb9b011eea6d36faf8ec2f61433ef730ddb",
+    "photo2/seed_methods_viewer.html": "173e4ff8c78d422f13533a60f648d6dc8fa05189d97a24e080c1f11a3e60f239",
+    "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/review/r218/regions.json": "a9366bf4a990a3e8254c7562a205840822abf3aed27202f28df7f037614758f1",
+    "photo2/review/r229/seeds.json": "7431dfcaa264bdb7fd057b7731275659968b8dba8d9be939bee737bbf0ac241f",
+    "photo2/review/r229/review-locations.json": "707c46c89fe6308d2d038d8fb12925f0c19e4d9f506c24536b0e97a11d6c8272"
+  },
+  "curated_sha256": {
+    "points.json": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+    "review-locations.json": "5e762b7c682ffb23393551c562c62cf313eac06493d5a0d67403fa5486f3e0c4",
+    "index.html": "a47ec1cf17578893f1c6b885f0dc4dfd0e3115a3c07dc19b2dd17c1fcd9cb963",
+    "comparison-a.png": "6387fdf5bc7a3172e96846440eb6b6b62c108103e898dc942417a4548002aa2e",
+    "comparison-b.png": "edac2382da2f5d56b3126753d4fa85e4459590c3c3e494b8ed0290de974f712e",
+    "comparison-bottom.png": "10446e4508c2f5ee22f56c0c927d2e6ac2dddc2842e23360a5850dbe3b429458",
+    "comparison-left.png": "10275404957c6428065cfd29177486a174ad0be1658729cd15e8517ed345d3f4",
+    "comparison-lower-left.png": "8eca6f052c0c8c704a788fd0a50bdbe7d50ad1d06ff2fa8bb0d90cdacf889116",
+    "comparison-lower-right.png": "82592bb4f93a4d864b68fc0ff9232ce91cf23ea81e407a0545f5d0c46eb4c0a4",
+    "comparison-right.png": "812b14a5fb38578833626d508274928e9ad9b7e761b00fe06eafc51da7e4e7c2",
+    "evidence-a.png": "9a6605b5c337b289363d5c1237298cfe6e7c6135c87b929e0c56e10581883fb1",
+    "evidence-b.png": "8d5ed7a370e4d20833b7c4db780bb688b51c4a178512ab79fa311fc28b2ad53c",
+    "evidence-bottom.png": "6206134dd448701c867f2f60d143091e3c752f4fd05c5392bb1d6e5afe04b9d0",
+    "evidence-left.png": "fb0447211ecbe18e71396d627c916e3343b6e4de2dbc261d84522ac693b72a50",
+    "evidence-lower-left.png": "f2c0de90839301941405886ddc8fcaa0b981ae7ef9e7c46a4305aaa259c7d8b8",
+    "evidence-lower-right.png": "29658814eaa74f8dcd3704d899a0daa334aa2901dcd11a87733877c5d5094210",
+    "evidence-right.png": "419826b99d143761d80c3a9a8fc8fac97ecc847e1a610d99d11a27118a8ecb58",
+    "profiles-a.png": "1c849a9d6b6772f23e5055829e4d77afd6302d90c89906f3ed3fb85cbb6ea5bb",
+    "profiles-b.png": "46ef83a3f7b1047045a30ff84198e16e18a6081807b8be8ba65e0f0f81c5c5a0"
+  },
+  "frozen_mask_archive_sha256": "b1edfcb6992dd5aba9b311ff53750fb90d69be17f3b72495e555c66e5d357199",
+  "routine_sha256": {
+    "fields.npz": "6aefa9b6ece0e226b0af8dab3cfdf06e07dd56730a6dfbdbb11775f6f8b2125c",
+    "profile-pool.json": "57ee2f6995d3c48117e6c00e3fed56cc48931e3253c42e8d57826faa8af57085",
+    "profiles.npz": "419f3f968e2048dbef491d9b9671b85851907de8590edcb3fd328b73da3128e0"
+  },
+  "existing_server_alias": "photo2/review/r224/seed-methods.html",
+  "alias_sha256": "a47ec1cf17578893f1c6b885f0dc4dfd0e3115a3c07dc19b2dd17c1fcd9cb963",
+  "production_extractor_changed": false,
+  "production_method_selected": false,
+  "region_growth_performed": false,
+  "manual_bead_data_read": false,
+  "geometry_fit_performed": false,
+  "reproduction": ".venv/bin/python photo2/compare_seed_methods.py"
+}
