@@ -1,5 +1,10 @@
 # Step 2 alone: single-pixel starting points — R229
 
+**R230 maker review:** the seed selection has failed; roughly half the displayed
+points are between beads and half inside. Treat this set as rejected for use as
+a trusted interior basis. See [the detailed step 2 explanation](STEP2_EXPLAINED.md)
+and [exact assessment](step2-seed-answer-r230.json). The display remains unchanged.
+
 Step 2 returns **one seed position per proposal**, before any region growth.
 My earlier description of its output as small interior patches was inaccurate:
 neighborhoods help choose the position, but the output is a single marked pixel.
@@ -39,7 +44,9 @@ than inside a red or yellow bead? If so, click near it in the point viewer and
 give its seed number or describe its position. “None obvious” is also useful.
 This asks about obvious seed mistakes in one crop, not confirmation of every
 seed or bead ownership elsewhere. [As-issued image and native points](step2-seed-questions-r229.json).
-The question is pending.
+R230 supplies a broader negative seed assessment without identifying individual
+points or specifying this crop. Exact A-point ownership remains unresolved;
+the overall failure is sufficient to stop trusting the displayed seed basis.
 
 ## Provenance and stopping point
 

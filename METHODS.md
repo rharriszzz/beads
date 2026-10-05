@@ -1420,6 +1420,15 @@ are chosen after extraction. Verify embedded raw photo, pixel coordinates and
 source seals; a seed is neither a safe interior patch nor a verified bead center.
 No extractor or grown-mask change is part of this presentation procedure.
 
+**R230 negative review:** [Seed-selection explanation and missing interior check](photo2/STEP2_EXPLAINED.md).
+Maker estimates about half the displayed points between beads; reject the seed
+basis, preserving this as qualitative evidence rather than a measured photo-wide
+error fraction. The quality score uses smoothedV and distance to broad color
+support, capped at0.10D; seed inset only0.06D (or1.5px). Neither establishes a
+bead-sized interior. Prominence, close-peak suppression and old fallback seeds
+also do not prove ownership/uniqueness. Preserve source and reviewed display
+unchanged; audit a misplaced point's intermediate evidence before a repair.
+
 R224 adds [stage-by-stage mask diagnosis](photo2/MASK_STAGE_DIAGNOSTICS.md).
 The R226 viewer repair keeps app variables inside a function scope and avoids
 browser global names such as `location`. Visible startup errors and static

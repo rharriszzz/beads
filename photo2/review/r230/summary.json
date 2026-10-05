@@ -1,0 +1,35 @@
+{
+  "request": "R230",
+  "scope": "Explain existing step 2 and preserve maker rejection; no extraction or repair",
+  "parameters": {
+    "native_diameter_px": 27.190842412550417,
+    "learned_hue_modes_degrees": [
+      27,
+      353
+    ],
+    "support_hue_tolerance_degrees": 18,
+    "median_window_px": 5,
+    "gaussian_sigma_px": 1.9033589688785293,
+    "quality_distance_saturation_px": 2.719084241255042,
+    "minimum_seed_support_inset_px": 1.631450544753025,
+    "peak_prominence_fraction_of_support_smoothed_V_q90": 0.08,
+    "minimum_same_family_spacing_px": 9.516794844392646,
+    "fallback_no_new_seed_radius_px": 17.67404756815777
+  },
+  "source_sha256": {
+    "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/review/r218/regions.json": "a9366bf4a990a3e8254c7562a205840822abf3aed27202f28df7f037614758f1",
+    "photo2/review/r229/summary.json": "9b72b11a72a09b0581148940cf5d3929acb76f1a9240866e80cab484118a6458",
+    "photo2/review/r229/seeds.json": "7431dfcaa264bdb7fd057b7731275659968b8dba8d9be939bee737bbf0ac241f"
+  },
+  "curated_sha256": {
+    "photo2/STEP2_EXPLAINED.md": "bc6ba486356665e622940d99a0bdb9954b2814635f0eea812345b021df7663fc",
+    "photo2/step2-seed-answer-r230.json": "f828bd8942cd077edff4a4854375f0e3d87ce21061bbee57151b0e8f9a14f943"
+  },
+  "evidence": "Source-code audit and maker visual assessment; no specific bad-seed diagnosis",
+  "extractor_changed": false,
+  "seed_or_mask_pixels_changed": false,
+  "fit_performed": false,
+  "new_question_issued": false
+}

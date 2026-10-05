@@ -4712,3 +4712,49 @@ Stop at showing step2. Next review obvious seed placement problems with the make
 then return to growth/guard diagnosis before choosing any repair.
 gpt-6.1-sol / High, same conversation; no /new. Scoped commit/push and exact
 remote/status verification before claiming delivery.
+
+## R230 — Maker rejects the seeds; explain step 2 in detail
+
+Maker: “I think the seed pixels have failed.  nHalf are between beads, half are in the beads.  So please explain step 2 to me in more detail.”
+
+Preflight daisy/photo-2-reconstruction-v2 at383bc74, tracked tree clean with only
+user Screenshot(18) untracked, no stashes; fetch/upstream0/0. Read AGENTS/current
+handoff/log/plan, exact diffuse_cores/refine and parent domain/fallback source,
+R218/R229 experiment records and installed h_maxima documentation. No agents,
+new extractor run, algorithm change, rendering, fitting, installation or GUI.
+
+Preserve the maker's assessment as rejection of the displayed seed basis for
+trusted interior use, superseding the earlier belief that step2 looked good.
+Approximately half is a visual estimate, not a measured full-photo error rate;
+no particular seed IDs, crop or pixel ownerships supplied. [Exact assessment and
+reviewed artifact hashes](photo2/step2-seed-answer-r230.json). Q229 receives related
+negative feedback without individual A-point assignments; Q224/Q220 mask extents
+remain unanswered. No new question issued during this requested explanation.
+
+[Detailed explanation](photo2/STEP2_EXPLAINED.md),
+[source/parameter seals](photo2/review/r230/summary.json). Explain learned color
+support, neutral-reflection attachment, median suppression, global Gaussian blur,
+capped support-inset score, h-maxima prominence, plateau point choice, same-family
+suppression and the older fallback branch. D27.190842px gives median5×5, sigma
+1.903359px, distance cap2.719084px, accepted inset≥1.631451px, spacing9.516795px
+and fallback radius17.674048px. The score stops rewarding distance beyond about
+3px; distance is from allowed-color mask edge, not an established bead boundary.
+Prominence8% of support-smoothedVQ90 is not a whole-patch interior/shape test.
+No extra patch raw-brightness/saturation requirement for new cores; original
+domain still has permissive color/brightness tests. Old51 fallback seeds do not
+need to pass the new prominence test. A flat maximum uses first highest pixel
+in array order, not its geometric center.
+
+These are source-established weaknesses, not an identified cause for a particular
+bad seed. Broad support, neighboring brightness, capped inset and fallback may
+contribute. Misplaced seeds can influence subsequent ownership growth; this
+does not establish that every later mask defect has the same cause. No correction
+chosen. R229 point ledger, viewer, native marker matrix and all extractor/mask
+payloads unchanged; original screenshot remains local/untracked. Source/hash,
+parameter consistency, local links and append-only history checked; no unchanged
+segmentation tests repeated for this documentation-only step.
+
+Stop at explaining step2. Next inspect allowed support, raw/smoothed brightness
+and quality around one misplaced seed before selecting a correction.
+gpt-6.1-sol / High, same conversation; no /new. Commit/push only scoped records
+and explanation, then verify exact remote tip and final status.

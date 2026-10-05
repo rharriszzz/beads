@@ -9,7 +9,41 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R229 — show step 2 before any region growth
+## Current R230 — seed basis rejected; explain step 2
+
+Maker: “I think the seed pixels have failed.  nHalf are between beads, half are
+in the beads.  So please explain step 2 to me in more detail.” Preserve this as
+a rejection of the displayed seeds for trusted interior use. Approximate half
+is a maker visual estimate, not a full-photo measured error rate. No specific
+seed IDs/crops or exact ownerships supplied; no repair requested in this turn.
+
+[Detailed source-based explanation](photo2/STEP2_EXPLAINED.md),
+[exact assessment and frozen display bindings](photo2/step2-seed-answer-r230.json),
+[parameter/source seals](photo2/review/r230/summary.json).
+Source audit identifies the key assumption: distance to the broad allowed color
+mask is treated as useful interior evidence, without verifying a bead boundary.
+For D27.19px: reflection median5×5, Gaussian sigma1.90px; quality=smoothV×
+min(d/2.72,1), seed inset≥1.63px. Thus the distance bonus saturates by3px.
+No whole-patch brightness/saturation/ownership test at the new seed stage.
+Prominence8% of support-smoothedVQ90 finds hills in quality, not bead-shaped
+interiors. Same-family suppression9.52px allows multiple peaks in one bead.
+Older fallback points need no new seed within17.67px and do not pass the new
+prominence test. Broad support, smoothing, capped inset and fallback are possible
+contributors; no individual failure cause or array/index bug established yet.
+
+This supersedes the earlier acceptance of steps1/2 and returning immediately
+to growth/guard repair. R229 seeds/viewer/images and all extraction sources/masks
+unchanged. Existing4001 /step2.html still shows exactly the rejected seed set.
+Q229's general concern receives negative feedback; A-specific individual points
+remain unresolved. Q224/Q220 exact mask questions still unanswered. No new
+question issued: explain the code and let the maker guide the discussion.
+Original Screenshot(18).png remains local/untracked; keep it out of staging.
+
+Stop at explanation. Next inspect allowed support, raw/smoothed brightness and
+quality around one misplaced seed before choosing a correction. gpt-6.1-sol /
+High; same conversation, no `/new`. Scoped commit/push and remote verification.
+
+## Prior R229 — show step 2 before any region growth
 
 Maker: “Please show me the results of step 2.  The images I see so far have far
 too many pixels.” This request narrows the current presentation to seeds alone;

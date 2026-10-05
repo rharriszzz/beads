@@ -17,7 +17,31 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R229: show step 2 alone
+## Current R230: explain the failed seed selection
+
+The maker reports roughly half the displayed seeds between beads and half inside,
+and asks for a more detailed step2 explanation. Reject this set as a trusted
+interior basis; do not resume later growth/guard repair or fitting yet. Approximate
+half is a visual assessment, not a measured whole-photo error rate. No specific
+seed ownerships or correction method supplied.
+
+[Exact code explanation](photo2/STEP2_EXPLAINED.md),
+[assessment/display binding](photo2/step2-seed-answer-r230.json),
+[parameters and source seals](photo2/review/r230/summary.json).
+Broad hue-compatible support can cross a gap; distance is from its edge, not an
+established bead edge. The brightness×inset score saturates at2.72px and accepts
+inset≥1.63px for an apparent27.19px bead. Smoothing can mix adjacent brightness;
+prominence is not a patch-interior test. Same-family spacing9.52px does not enforce
+one seed per bead;51 old fallback seeds bypass the new prominence criterion.
+These explain weaknesses without assigning the cause of an unidentified bad seed.
+
+No seed, mask, source extractor, reflection or geometry change. Frozen viewer stays
+at4001/step2.html; new explanation does not silently replace the reviewed points.
+No repeated seed question; exact IDs remain unresolved. **Stop:** detailed
+explanation. **Next:** inspect support/rawV/smoothedV/quality around one misplaced
+seed before selecting a repair. gpt-6.1-sol / High; no `/new` needed.
+
+## Prior R229: show step 2 alone
 
 [Raw-photo/one-pixel close-ups and explanation](photo2/STEP2_SEEDS.md),
 [point viewer](photo2/review/r229/index.html). The user says the displayed images
