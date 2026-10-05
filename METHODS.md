@@ -1410,6 +1410,16 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R219 preserves [corrective mask reviews](photo2/review/r219/reviewed-mask-facts.json)
+against exact issued pixels. A maker estimate of 100%/95% target-bead coverage
+with spill into another body fails the 70–90%-and-inside criterion. A reported
+percentage of an adjacent bead is not a measured fraction of retained mask
+pixels. Preserve whole masks as rejected extents without inventing contamination
+coordinates or a corrected safe submask. Same-color spill requires an ownership
+check beyond color purity. Candidate-relative retention and stronger-core gates
+do not establish actual visible coverage or containment; other proposals and
+different earlier confirmed masks keep their separate review status.
+
 R218 adds [diffuse-core refinement](photo2/DIFFUSE_CORE_REFINEMENT.md).
 Find prominent cores after suppressing compact reflection brightness; reuse
 surrounding colored support at neutral highlights so raw hue doesn't reopen

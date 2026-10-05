@@ -17,7 +17,30 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R218: refine diffuse cores before fitting
+## Current R219: reject the two overextended review masks
+
+[Answered raw/mask review](photo2/DIFFUSE_CORE_REFINEMENT.md) and
+[exact replies](photo2/mask-refinement-answer-r219.json). Q218.1 red A covers
+maker-estimated 100% of the target bead plus some nearby black bead. Q218.2
+yellow B covers 95% plus “1% of an adjacent yellow bead”. Both exceed the
+70–90% target and cross into another bead, so both exact extents are rejected
+as trusted single-bead masks. The adjacent-bead percentage is not a calibrated
+fraction of retained mask pixels. No corrected submask or contaminating-pixel
+coordinates were supplied; other proposals remain unreviewed by this reply.
+
+[Reviewed-mask facts](photo2/review/r219/reviewed-mask-facts.json) bind the
+759/581 pixels to unchanged R218 masks and images. Color alone cannot check
+same-color ownership; the stronger central gate admitted both failures.
+Earlier R215 A/B confirmations concern different extents and remain unchanged.
+Segmentation, reflections and geometry are unchanged. Both questions answered.
+
+**Stop:** answer curation. **Next:** compare more conservative rim exclusion on
+clear colored faces, targeting 70–90% inside one bead with same-color spill
+checked separately; present alternatives before selecting an implementation.
+Keep reflections separate and establish the pixel basis before fitting.
+Recommend gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R218: refine diffuse cores before fitting
 
 [Current raw comparisons and Q218.1/Q218.2](photo2/DIFFUSE_CORE_REFINEMENT.md).
 Diffuse reseeding raises known colored-pixel recall to 76.74–77.80%. Bodies with
@@ -37,9 +60,9 @@ checks pass. Manual marks, adjacency, saved spline and simulated photo positions
 are not extraction inputs; fitting remains deferred.
 
 Two newly recovered red/yellow mask questions have immutable pixels:
-Q218.1 (region75) and Q218.2 (region136), pending. **Stop:** refinement review.
-**Next:** preserve replies, then address remaining duplicate or weak regions
-using clear neighboring evidence, keeping difficult edges unresolved.
+Q218.1 (region75) and Q218.2 (region136), answered with failures in R219 above.
+**R218 stop:** refinement review, followed by preserving replies before further
+refinement, keeping difficult edges unresolved.
 Establish the pixel basis first. Recommend gpt-6.1-sol / High; stay in this
 conversation, no `/new`.
 

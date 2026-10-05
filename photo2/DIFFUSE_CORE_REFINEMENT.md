@@ -1,4 +1,4 @@
-# Diffuse-core mask refinement — R218
+# Diffuse-core mask refinement — R218–R219
 
 The current task is to improve the broad colored masks before position fitting.
 The target remains 70–90% of each selected red/yellow bead's actual visible part,
@@ -10,8 +10,11 @@ The new method raises colored-pixel recall on four known render examples from
 **69.87–74.17% to 76.74–77.80%**. It also improves the number of beads covered by
 one sufficiently pure region. The photo has **596 stronger central region
 proposals**; these are neither confirmed distinct beads nor a measured photo
-coverage percentage. The earlier confirmed yellow example still exposes an
-unresolved duplicate-region issue, described below. Fitting remains deferred.
+coverage percentage. **R219 rejects both newly reviewed masks as trusted
+single-bead extents:** red A includes nearby black pixels, and yellow B includes
+part of another yellow bead. Both also exceed the requested coverage. The earlier
+confirmed yellow example still exposes an unresolved duplicate-region issue,
+described below. Fitting remains deferred.
 
 ## Q218.1 and Q218.2 — Two newly recovered faces
 
@@ -28,10 +31,28 @@ while staying inside that one bead?
 
 ![Raw photo beside proposed red A and yellow B masks](review/r218/questions.png)
 
-Both questions are pending. [Exact pixels, locations and prior-mask overlap](review/r218/review-locations.json)
-and [the as-issued manifest](mask-refinement-questions-r218.json) freeze what is
-being reviewed. Answers concern these illustrated masks, not every proposal,
-exact centers, bead indices or adjacency.
+Both questions are answered in R219. The maker reports:
+
+| Question / exact mask | Target-bead visible coverage | Spill into another bead | Current acceptance |
+|---|---:|---|---|
+| Q218.1 / red A, region75, 759 pixels | 100% | Some of the nearby black bead | Rejected as a trusted single-bead mask |
+| Q218.2 / yellow B, region136, 581 pixels | 95% | “1% of an adjacent yellow bead” | Rejected as a trusted single-bead mask |
+
+These are visual estimates, not measured pixel ground truth. The reported 1%
+concerns the adjacent yellow bead; it does not establish a percentage of B's
+retained pixels. No exact contaminating pixels or corrected masks were supplied.
+Both masks need more conservative rim exclusion. Color alone cannot distinguish
+B's same-color spill from its target bead, and the stronger central filter did
+not prevent either failure. Other proposals remain unreviewed by these answers.
+
+[Exact replies](mask-refinement-answer-r219.json),
+[reviewed-mask facts and rejection status](review/r219/reviewed-mask-facts.json),
+and [answer curation](review/r219/answer-curation-summary.json) preserve the result.
+[Exact pixels, locations and prior-mask overlap](review/r218/review-locations.json)
+and [the as-issued manifest](mask-refinement-questions-r218.json) remain unchanged;
+their pending states describe issuance, not current answer status. Answers concern
+these two illustrated masks. Earlier R215 A/B confirmations concern different
+masks and remain unchanged.
 
 ## Whole image and fixed comparison contexts
 
@@ -99,6 +120,8 @@ that body's visible pixels; fragments cannot add together to pass this column.
 | + hand, changed framing at image border | 73.52 → 77.77% | 85 → 96 / 112 | 73 → 86 / 112 | 1 → 0 |
 
 No retained paper or black-body pixels occur in these four render examples.
+That result does not establish photo precision: R219 identifies black-bead
+contamination in photo A and same-color ownership contamination in photo B.
 Some bodies remain under-covered, over-covered, split or mixed. Minority-owner
 pixels in mixed regions fall from 4,010/3,562/3,230/3,815 to
 1,794/1,365/1,354/1,319. Adding seeds gives fewer minority pixels in two examples,
@@ -145,6 +168,9 @@ No unique-bead count or complete trusted photo inventory is claimed.
 [Verification](review/r218/verification.json) confirms eight curated payloads and
 the native mask archive repeat byte-identically, checks unchanged reflections
 and historical evidence, and binds the questions to exact retained pixels.
+The separate [R219 curation verification](review/r219/verification.json) checks
+the two answered bindings and preserves the original run; it changes review
+acceptance only, without altering segmentation or reflection pixels.
 Routine native masks, TIFFs and overlays stay ignored under `photo2/output/r218`;
 curated raw review images, parameters and measurement ledgers are tracked.
 
@@ -157,8 +183,10 @@ curated raw review images, parameters and measurement ledgers are tracked.
 .venv/bin/python -m unittest discover -s photo2 -p test_mask_refinement.py
 ```
 
-Stop at this refinement review. Next preserve the two visual answers and address
-remaining duplicate or weak regions using clear nearby color/diffuse evidence.
-Keep difficult edge regions unresolved. Establish the pixel basis before
-position, centerline or adjacency fitting. Recommend **gpt-6.1-sol / High**,
-same conversation; no `/new` needed.
+Stop at the R219 answer curation. The next bounded task is to compare more
+conservative rim exclusion on clear colored faces, targeting 70–90% of the
+visible part inside one bead and checking same-color spill separately. Present
+the alternatives before selecting the change. Keep reflections separate and
+difficult edge regions unresolved. Establish the pixel basis before position,
+centerline or adjacency fitting. Recommend **gpt-6.1-sol / High**, same
+conversation; no `/new` needed.

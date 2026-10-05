@@ -1,0 +1,41 @@
+{
+  "request": "R219",
+  "user_message_verbatim": "Question 1: it captures 100% of the bead but some of the nearby black bead.  Q2: 95 % of the bead, but 1% of an adjacent yellow bead.",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "question_manifest": "photo2/mask-refinement-questions-r218.json",
+  "question_manifest_sha256": "b29cf18da68c6a3e6702b5a80b1fd7cdcba31a8268982fcce7b5aa235a8b83b5",
+  "review_image": "photo2/review/r218/questions.png",
+  "review_image_sha256": "1ee60995ce9a3c65443f9a794a71dbce3c3a5598b9ff74c799a162c2b2458aa7",
+  "locations_file": "photo2/review/r218/review-locations.json",
+  "locations_sha256": "e61951ece8c6375ee79c8b515b0dfc42a68fd367641bcc2ef79947c3d854ff9c",
+  "extraction_summary": "photo2/review/r218/summary.json",
+  "extraction_summary_sha256": "c49a5fb52df89b25d5f17d40da0ee2d10a9754326e24a201d1668658636a09dc",
+  "native_mask_archive": "photo2/output/r218/pixel-masks.npz",
+  "native_mask_archive_sha256": "b1edfcb6992dd5aba9b311ff53750fb90d69be17f3b72495e555c66e5d357199",
+  "replies": [
+    {
+      "request": "R219",
+      "question_id": "Q218.1",
+      "question": "Q218.1: In photo2/DIFFUSE_CORE_REFINEMENT.md, the first raw/mask row marks red A (new automatic region75). Does its green mask capture roughly 70–90% of that bead’s visible part while staying inside that one bead?",
+      "as_issued_manifest_text": "Does green A cover roughly 70–90% of this red bead’s visible part and stay inside that one bead?",
+      "answer": "it captures 100% of the bead but some of the nearby black bead.",
+      "status": "answered",
+      "reply_source": "Plain user message; no tool questionItemId was supplied",
+      "automatic_region_number": 75,
+      "observation_id": "18ee62c9-eaa9-5b5c-8d95-a60abb76d783"
+    },
+    {
+      "request": "R219",
+      "question_id": "Q218.2",
+      "question": "Q218.2: In photo2/DIFFUSE_CORE_REFINEMENT.md, the second raw/mask row marks yellow B (new automatic region136). Does its green mask capture roughly 70–90% of that bead’s visible part while staying inside that one bead?",
+      "as_issued_manifest_text": "Does green B cover roughly 70–90% of this yellow bead’s visible part and stay inside that one bead?",
+      "answer": "95 % of the bead, but 1% of an adjacent yellow bead.",
+      "status": "answered",
+      "reply_source": "Plain user message; no tool questionItemId was supplied",
+      "automatic_region_number": 136,
+      "observation_id": "8ea9d231-453d-5d6e-9ee7-6f5ba96301f4"
+    }
+  ],
+  "pending_questions": [],
+  "limits": "Only the two exact illustrated R218 extents. No corrected pixels, precise contaminating-pixel counts, global photo recall/precision, centers, bead indices or adjacency are supplied. Earlier R215 confirmations concern different masks and remain unchanged."
+}

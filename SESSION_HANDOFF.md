@@ -9,7 +9,38 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R218 — diffuse-core refinement review
+## Current R219 — two reviewed extents rejected
+
+Maker: “Question 1: it captures 100% of the bead but some of the nearby black bead.  Q2: 95 % of the bead, but 1% of an adjacent yellow bead.”
+
+Preflight daisy, photo-2-reconstruction-v2, clean05b87ae/no stashes; fetch/upstream
+0/0. Read AGENTS, current handoff/plan/log and R218 experiment; inspect the
+unchanged raw/mask figure. Answers bind Q218.1 to red A75/759 pixels and Q218.2
+to yellow B136/581 pixels. Both cover more than the requested 70–90% and include
+another bead. Reject both exact extents as trusted single-bead masks. The reported
+1% concerns an adjacent bead, not a calibrated mask-contamination fraction; do
+not infer exact pixels, corrected masks or acceptance of other proposals.
+
+[Current illustrated result](photo2/DIFFUSE_CORE_REFINEMENT.md),
+[verbatim replies](photo2/mask-refinement-answer-r219.json),
+[reviewed-mask facts](photo2/review/r219/reviewed-mask-facts.json),
+[answer curation](photo2/review/r219/answer-curation-summary.json),
+[verification](photo2/review/r219/verification.json).
+
+The stronger central gate admitted both masks. Yellow spill cannot be checked
+by color purity alone; actual visible coverage and one-body containment both
+matter. Runtime segmentation/reflections/native arrays and as-issued manifest/
+locations/figure are unchanged. Original R215 A/B confirmations concern different
+masks and remain valid for those extents. No new implementation, fitting or tests
+of unchanged extraction code. Curate answers and verify bindings/preservation.
+
+Stop answer curation. Next bounded task: compare more conservative rim exclusion
+on clear colored faces, targeting 70–90% inside one bead with same-color spill
+checked separately. Present alternatives before implementation, preserve separate
+reflections, and defer fitting until the pixel basis is established.
+Recommend gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R218 — diffuse-core refinement review
 
 Maker: “continue”; resume weak/mixed-mask refinement before geometry fitting.
 Preflight daisy, photo-2-reconstruction-v2, clean 29eac8f, no stashes, fetched
@@ -62,8 +93,9 @@ reflections on one body don't make two cores, with red/yellow/blue hue subcases.
 Existing reflection/physical controls unchanged; no new scene rendering.
 
 Q218.1 asks new red A (region75), Q218.2 yellow B (region136), roughly 70–90% and
-inside one body. Both issued asynchronously, pending; coordinates/pixel runs and
-image frozen in mask-refinement-questions-r218.json. Manifest SHA b29cf18d…,
+inside one body. Both issued asynchronously at R218 and answered with failures
+in R219 above; coordinates/pixel runs and image frozen in
+mask-refinement-questions-r218.json. Manifest SHA b29cf18d…,
 figure SHA 1ee60995…; new letters/numbers unrelated to manual or R215 A/B.
 
 [Verification](photo2/review/r218/verification.json): repeat eight curated payloads

@@ -4366,3 +4366,62 @@ have exact source/mask bindings, with zero previous-mask pixels at both examples
 Calibration comparison consistent, two final unit controls pass. Syntax/JSON,
 introduced local links and append-only historical log prefix verified. Both
 questions still pending; no response inferred from elapsed time.
+
+## R219 — Q218.1/Q218.2 exceed coverage and include another bead
+
+Maker: “Question 1: it captures 100% of the bead but some of the nearby black bead.  Q2: 95 % of the bead, but 1% of an adjacent yellow bead.”
+
+Plain user reply, not a tool reply with a questionItemId. Question1 binds to
+Q218.1/new red A automatic75, UUID18ee62c9-eaa9-5b5c-8d95-a60abb76d783,
+759 retained pixels; Q2 binds to Q218.2/new yellow B automatic136,
+UUID8ea9d231-453d-5d6e-9ee7-6f5ba96301f4,581 pixels. These are distinct from
+manual labels and R215 A/B. Exact issued questions ask for roughly70–90% of
+the target bead's visible part while staying inside that single bead.
+[Verbatim message/replies and question bindings](photo2/mask-refinement-answer-r219.json).
+
+Maker-estimated target coverage: A100%, B95%. A also includes some nearby black
+bead; B includes “1% of an adjacent yellow bead”. That wording is preserved,
+without turning it into a calibrated retained-mask contamination fraction or
+an integer count of contaminated pixels. Both exceed90% and cross ownership,
+so both exact extents are rejected as trusted single-bead masks. No exact
+contaminating coordinates, corrected safe submask, physical center, whole-bead
+silhouette, string index or adjacency supplied. Other proposals remain unreviewed
+by this answer; earlier R215 confirmations concern different masks and remain
+unchanged. Stronger central gating admitted both failures; same-yellow spill
+also demonstrates that color purity is insufficient for one-body ownership.
+
+[Reviewed-mask facts and rejection status](photo2/review/r219/reviewed-mask-facts.json)
+preserve exact native runs/centroids/crops/UUIDs and both limits. As-issued
+manifest SHA b29cf18d…/figure1ee60995…/locations e61951ec… retain their original
+bytes and issuance-time pending status; separate replies now mark both answered.
+[Curation summary](photo2/review/r219/answer-curation-summary.json) binds source
+photo, native mask archive and unchanged extraction summary to the new facts.
+
+Preflight daisy, clean05b87ae/photo-2-reconstruction-v2/no stashes, fetch/upstream
+0/0; read AGENTS/current handoff/log/plan and relevant R218 experiment. Inspect
+the issued raw/mask figure. No agents, skills, installs, new image generation,
+renders, segmentation changes, manual mark/adjacency input or fitting. This
+bounded step curates the corrective answers; no new implementation method selected.
+Plan/handoff/methods/current experiment updated. Scoped commit/push and exact
+remote/clean verification before claiming delivery.
+
+Stop answer curation. Next compare more conservative rim exclusion on clear
+colored faces, targeting70–90% inside one bead and checking same-color spill
+separately; present alternatives before implementation. Preserve separate
+reflections and defer position/centerline/adjacency fitting until the pixel basis
+is established. gpt-6.1-sol / High, same conversation; no /new.
+
+R219 curation verification: 28 sealed R218 source/protected/curated entries match;
+original R215 replies/facts/manifest/figure/locations and summaries are unchanged.
+Both exact native retained masks and stronger-central masks equal the issued
+759/581-pixel runs, with identical UUIDs/crops/centroids. Verbatim user message,
+both answered statuses, rejected-extent status and uncalibrated adjacent-bead
+denominator verified. Native archive and as-issued R218 evidence unchanged.
+New JSON/hashes, introduced local links, append-only historical log prefix and
+whitespace checks pass. No extraction tests rerun for this answer-only change.
+[Verification record](photo2/review/r219/verification.json).
+
+Record checks: .venv/bin/python -m json.tool photo2/mask-refinement-answer-r219.json;
+.venv/bin/python -m json.tool photo2/review/r219/reviewed-mask-facts.json;
+git diff --check. Existing R218 extraction reproduction commands remain in the
+experiment; rerunning extraction is unnecessary for this answer curation.

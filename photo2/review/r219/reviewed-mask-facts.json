@@ -1,0 +1,554 @@
+{
+  "request": "R219",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "question_manifest": "photo2/mask-refinement-questions-r218.json",
+  "question_manifest_sha256": "b29cf18da68c6a3e6702b5a80b1fd7cdcba31a8268982fcce7b5aa235a8b83b5",
+  "review_image": "photo2/review/r218/questions.png",
+  "review_image_sha256": "1ee60995ce9a3c65443f9a794a71dbce3c3a5598b9ff74c799a162c2b2458aa7",
+  "locations_file": "photo2/review/r218/review-locations.json",
+  "locations_sha256": "e61951ece8c6375ee79c8b515b0dfc42a68fd367641bcc2ef79947c3d854ff9c",
+  "extraction_summary": "photo2/review/r218/summary.json",
+  "extraction_summary_sha256": "c49a5fb52df89b25d5f17d40da0ee2d10a9754326e24a201d1668658636a09dc",
+  "native_mask_archive": "photo2/output/r218/pixel-masks.npz",
+  "native_mask_archive_sha256": "b1edfcb6992dd5aba9b311ff53750fb90d69be17f3b72495e555c66e5d357199",
+  "coordinate_convention": "Native EXIF-oriented image pixels: x right, y down; runs [y, x_start, x_end] inclusive; region centroid is not a physical bead center",
+  "facts": [
+    {
+      "request": "R219",
+      "question_id": "Q218.1",
+      "letter": "A",
+      "automatic_region_number": 75,
+      "observation_id": "18ee62c9-eaa9-5b5c-8d95-a60abb76d783",
+      "display_color": "red",
+      "crop": [
+        1605,
+        269,
+        1745,
+        379
+      ],
+      "retained_pixels": 759,
+      "candidate_pixels": 844,
+      "retained_centroid_xy": [
+        1674.623188405797,
+        324.47167325428194
+      ],
+      "retained_pixel_runs": [
+        [
+          309,
+          1673,
+          1679
+        ],
+        [
+          310,
+          1672,
+          1687
+        ],
+        [
+          311,
+          1671,
+          1688
+        ],
+        [
+          312,
+          1667,
+          1689
+        ],
+        [
+          313,
+          1667,
+          1689
+        ],
+        [
+          314,
+          1667,
+          1690
+        ],
+        [
+          315,
+          1667,
+          1689
+        ],
+        [
+          316,
+          1666,
+          1690
+        ],
+        [
+          317,
+          1665,
+          1690
+        ],
+        [
+          318,
+          1665,
+          1691
+        ],
+        [
+          319,
+          1664,
+          1691
+        ],
+        [
+          320,
+          1663,
+          1691
+        ],
+        [
+          321,
+          1662,
+          1669
+        ],
+        [
+          321,
+          1671,
+          1691
+        ],
+        [
+          322,
+          1661,
+          1668
+        ],
+        [
+          322,
+          1670,
+          1693
+        ],
+        [
+          323,
+          1661,
+          1667
+        ],
+        [
+          323,
+          1669,
+          1673
+        ],
+        [
+          323,
+          1675,
+          1693
+        ],
+        [
+          324,
+          1660,
+          1667
+        ],
+        [
+          324,
+          1669,
+          1693
+        ],
+        [
+          325,
+          1660,
+          1667
+        ],
+        [
+          325,
+          1669,
+          1693
+        ],
+        [
+          326,
+          1660,
+          1665
+        ],
+        [
+          326,
+          1668,
+          1693
+        ],
+        [
+          327,
+          1660,
+          1664
+        ],
+        [
+          327,
+          1668,
+          1672
+        ],
+        [
+          327,
+          1674,
+          1693
+        ],
+        [
+          328,
+          1660,
+          1665
+        ],
+        [
+          328,
+          1667,
+          1671
+        ],
+        [
+          328,
+          1673,
+          1689
+        ],
+        [
+          328,
+          1691,
+          1692
+        ],
+        [
+          329,
+          1660,
+          1665
+        ],
+        [
+          329,
+          1667,
+          1686
+        ],
+        [
+          330,
+          1660,
+          1665
+        ],
+        [
+          330,
+          1667,
+          1669
+        ],
+        [
+          330,
+          1671,
+          1684
+        ],
+        [
+          331,
+          1660,
+          1665
+        ],
+        [
+          331,
+          1668,
+          1680
+        ],
+        [
+          332,
+          1661,
+          1663
+        ],
+        [
+          332,
+          1666,
+          1679
+        ],
+        [
+          333,
+          1661,
+          1678
+        ],
+        [
+          334,
+          1661,
+          1677
+        ],
+        [
+          335,
+          1661,
+          1676
+        ],
+        [
+          336,
+          1660,
+          1675
+        ],
+        [
+          337,
+          1658,
+          1674
+        ],
+        [
+          338,
+          1656,
+          1673
+        ],
+        [
+          339,
+          1655,
+          1672
+        ],
+        [
+          340,
+          1655,
+          1655
+        ],
+        [
+          340,
+          1658,
+          1671
+        ],
+        [
+          341,
+          1661,
+          1671
+        ],
+        [
+          342,
+          1665,
+          1670
+        ],
+        [
+          343,
+          1666,
+          1667
+        ],
+        [
+          343,
+          1669,
+          1669
+        ]
+      ],
+      "maker_answer": "it captures 100% of the bead but some of the nearby black bead.",
+      "target_bead_visible_coverage": {
+        "reported_percent": 100,
+        "basis": "Maker visual estimate for the target bead’s visible part; not pixel ground truth"
+      },
+      "other_bead_contamination": {
+        "present": true,
+        "reported_color": "black",
+        "reported_quantity": "some",
+        "basis": "Maker report; quantity is not a calibrated percentage of retained mask pixels",
+        "contaminated_pixel_coordinates": null,
+        "contaminated_pixel_count": null,
+        "retained_mask_contamination_fraction": null
+      },
+      "acceptance": {
+        "status": "rejected-as-trusted-single-bead-mask",
+        "within_requested_70_to_90_percent_coverage": false,
+        "entirely_inside_target_bead": false,
+        "corrected_mask_available": false,
+        "safe_submask_certified": false,
+        "reason": "Reported target coverage exceeds 90% and the illustrated mask includes another bead"
+      },
+      "exact_target_bead_extent": null,
+      "physical_center_xy": null,
+      "bead_index": null,
+      "adjacency_established": false,
+      "runtime_prior": false
+    },
+    {
+      "request": "R219",
+      "question_id": "Q218.2",
+      "letter": "B",
+      "automatic_region_number": 136,
+      "observation_id": "8ea9d231-453d-5d6e-9ee7-6f5ba96301f4",
+      "display_color": "yellow",
+      "crop": [
+        867,
+        361,
+        1007,
+        471
+      ],
+      "retained_pixels": 581,
+      "candidate_pixels": 646,
+      "retained_centroid_xy": [
+        937.328743545611,
+        415.8984509466437
+      ],
+      "retained_pixel_runs": [
+        [
+          401,
+          929,
+          935
+        ],
+        [
+          402,
+          926,
+          936
+        ],
+        [
+          403,
+          926,
+          937
+        ],
+        [
+          404,
+          926,
+          938
+        ],
+        [
+          405,
+          926,
+          939
+        ],
+        [
+          406,
+          926,
+          940
+        ],
+        [
+          407,
+          926,
+          941
+        ],
+        [
+          408,
+          926,
+          948
+        ],
+        [
+          409,
+          927,
+          950
+        ],
+        [
+          410,
+          927,
+          950
+        ],
+        [
+          411,
+          927,
+          950
+        ],
+        [
+          412,
+          927,
+          950
+        ],
+        [
+          413,
+          927,
+          950
+        ],
+        [
+          414,
+          927,
+          950
+        ],
+        [
+          415,
+          927,
+          950
+        ],
+        [
+          416,
+          927,
+          950
+        ],
+        [
+          417,
+          927,
+          950
+        ],
+        [
+          418,
+          927,
+          950
+        ],
+        [
+          419,
+          927,
+          950
+        ],
+        [
+          420,
+          928,
+          950
+        ],
+        [
+          421,
+          928,
+          949
+        ],
+        [
+          422,
+          928,
+          949
+        ],
+        [
+          423,
+          928,
+          949
+        ],
+        [
+          424,
+          926,
+          949
+        ],
+        [
+          425,
+          926,
+          949
+        ],
+        [
+          426,
+          926,
+          948
+        ],
+        [
+          427,
+          927,
+          947
+        ],
+        [
+          428,
+          928,
+          929
+        ],
+        [
+          428,
+          935,
+          945
+        ],
+        [
+          429,
+          929,
+          929
+        ],
+        [
+          429,
+          936,
+          943
+        ],
+        [
+          430,
+          939,
+          941
+        ]
+      ],
+      "maker_answer": "95 % of the bead, but 1% of an adjacent yellow bead.",
+      "target_bead_visible_coverage": {
+        "reported_percent": 95,
+        "basis": "Maker visual estimate for the target bead’s visible part; not pixel ground truth"
+      },
+      "other_bead_contamination": {
+        "present": true,
+        "reported_color": "yellow",
+        "reported_quantity": "1% of an adjacent yellow bead",
+        "basis": "Maker report; quantity is not a calibrated percentage of retained mask pixels",
+        "contaminated_pixel_coordinates": null,
+        "contaminated_pixel_count": null,
+        "retained_mask_contamination_fraction": null
+      },
+      "acceptance": {
+        "status": "rejected-as-trusted-single-bead-mask",
+        "within_requested_70_to_90_percent_coverage": false,
+        "entirely_inside_target_bead": false,
+        "corrected_mask_available": false,
+        "safe_submask_certified": false,
+        "reason": "Reported target coverage exceeds 90% and the illustrated mask includes another bead"
+      },
+      "exact_target_bead_extent": null,
+      "physical_center_xy": null,
+      "bead_index": null,
+      "adjacency_established": false,
+      "runtime_prior": false
+    }
+  ],
+  "reviewed_rejected_automatic_regions": [
+    75,
+    136
+  ],
+  "other_r218_proposals": "Unreviewed by this reply; no acceptance or rejection inferred",
+  "all_photo_masks_confirmed": false,
+  "runtime_segmentation_changed": false,
+  "reflection_masks_and_positions_changed": false,
+  "scope": "Post-extraction validation evidence only; original masks, question figure and as-issued records are immutable"
+}

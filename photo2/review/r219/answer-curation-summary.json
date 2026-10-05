@@ -1,0 +1,33 @@
+{
+  "request": "R219",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "question_manifest": "photo2/mask-refinement-questions-r218.json",
+  "question_manifest_sha256": "b29cf18da68c6a3e6702b5a80b1fd7cdcba31a8268982fcce7b5aa235a8b83b5",
+  "review_image": "photo2/review/r218/questions.png",
+  "review_image_sha256": "1ee60995ce9a3c65443f9a794a71dbce3c3a5598b9ff74c799a162c2b2458aa7",
+  "locations_file": "photo2/review/r218/review-locations.json",
+  "locations_sha256": "e61951ece8c6375ee79c8b515b0dfc42a68fd367641bcc2ef79947c3d854ff9c",
+  "extraction_summary": "photo2/review/r218/summary.json",
+  "extraction_summary_sha256": "c49a5fb52df89b25d5f17d40da0ee2d10a9754326e24a201d1668658636a09dc",
+  "native_mask_archive": "photo2/output/r218/pixel-masks.npz",
+  "native_mask_archive_sha256": "b1edfcb6992dd5aba9b311ff53750fb90d69be17f3b72495e555c66e5d357199",
+  "answer_file": "photo2/mask-refinement-answer-r219.json",
+  "answer_sha256": "d11794c70c3519e55ee1086e7e1af1007f735989a1bb5f15ce6a91d7250ea8f4",
+  "reviewed_facts_file": "photo2/review/r219/reviewed-mask-facts.json",
+  "reviewed_facts_sha256": "77ce23f09f961cfc2ef9baf5b017e196eeb159934fa69ea132fa5b75287f43eb",
+  "answered_questions": [
+    "Q218.1",
+    "Q218.2"
+  ],
+  "pending_questions": [],
+  "rejected_as_trusted_single_bead_mask": [
+    75,
+    136
+  ],
+  "issued_evidence_unchanged": true,
+  "runtime_segmentation_changed": false,
+  "photo_global_recall_or_precision_measured": false,
+  "next_task": "Compare more conservative rim exclusion on clear colored faces to retain 70–90% inside one bead; keep reflections separate and defer fitting.",
+  "verification_file": "photo2/review/r219/verification.json",
+  "verification_sha256": "9e2c06cac04ef8cdb4ab06a44c9b4a035deef74862638a1933683a634f35ec72"
+}
