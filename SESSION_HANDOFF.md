@@ -9,7 +9,48 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R224 — stage explanations and maker-assisted pixel diagnosis
+## Current R229 — show step 2 before any region growth
+
+Maker: “Please show me the results of step 2.  The images I see so far have far
+too many pixels.” This request narrows the current presentation to seeds alone;
+it is not a seed/mask confirmation or an instruction to repair the extractor.
+
+[Start with raw/one-pixel close-ups](photo2/STEP2_SEEDS.md),
+[canonical point viewer](photo2/review/r229/index.html),
+[all pre-growth coordinates](photo2/review/r229/seeds.json),
+[source/payload seals](photo2/review/r229/summary.json),
+[verification](photo2/review/r229/verification.json).
+The user's existing server rooted at r224 serves the byte-identical new page at
+http://127.0.0.1:4001/step2.html; no server restart. Existing r224 index and its
+sealed payloads unchanged. New page has static SVG photographs/one-pixel marks
+before controls start; no grown masks or large canvas allocations.
+
+Correct earlier wording: step2 chooses one coordinate, not an interior patch.
+Recover all1566 points from frozen R218 records plus279 later exclusions; check
+every integer marker against the saved pre-watershed matrix. New diffuse-core
+seeds1515/cyan; old fallback51/orange. Each actual marker is one native photo
+pixel. A/B/C close-ups contain15/25/12 markers; white focus rings and optional
+whole-photo hollow circles are guides only. Seed numbers are proposal IDs, not
+manual beads/string indices or verified visible centers. No extraction, masks,
+reflection positions, manual annotation inputs, geometry or fitting change.
+
+Three formats announced: whole raw/point overview, matched A/B/C raw/point
+close-ups, zoom/scroll/click point viewer. Source/photo/previous-payload hashes,
+native TIFF/marker equality, all SVG positions, photo embedding, crop counts,
+question bindings, JS/Python syntax pass. Real-browser paint/control interaction
+not exercised; prior unchanged segmentation tests not repeated. Original user
+Screenshot(18).png unchanged/untracked, exclude from scoped staging.
+
+Q229.1 asks whether any cyan seed in A is clearly on paper/black rather than
+inside red/yellow; click returns proposal number. [As-issued image/native points](photo2/step2-seed-questions-r229.json)
+preserved; pending. Does not approve all seeds or inherited masks. Q224.1 and
+earlier Q220 ownership/containment questions remain unanswered.
+
+Stop at the step2 presentation. Next review obvious seed mistakes with the maker,
+then return to stage-growth/guard diagnosis. gpt-6.1-sol / High, same conversation;
+no `/new`. Commit/push scoped work and verify remote/status before delivery.
+
+## Prior R224 — stage explanations and maker-assisted pixel diagnosis
 
 R225–R228 viewer repair: user started the provided server on4001; GET/200,
 favicon404 harmless, but image windows blank. Supplied Screenshot(18).png in

@@ -4659,3 +4659,56 @@ protected inputs, JavaScript/harness, local links, append-only log and whitespac
 [Verification](photo2/review/r224/verification.json). No supplied wrong bead pixel
 yet: stop at the working review tool and await the maker's concrete ownership help,
 before choosing a segmentation repair. gpt-6.1-sol / High, same session; no /new.
+
+## R229 — Show step 2 alone, with fewer marked pixels
+
+Maker: “Please show me the results of step 2.  The images I see so far have far too many pixels.”
+
+Preflight daisy/photo-2-reconstruction-v2 at259ca6b; upstream0/0 after fetch,
+no stashes, tracked tree clean apart from the local untracked Screenshot(18).
+Read AGENTS, current handoff/log/plan and the relevant stage/refinement sources.
+No new extraction, fitting, installation, GUI automation or agents.
+
+Corrected earlier wording: step2 returns one seed coordinate, not a small safe
+interior patch. Three presentation methods announced: whole-photo raw/point
+overview, matched raw/seed A/B/C close-ups, zoomable/pannable point viewer.
+New review_step2_seeds.py recovers all1566 pre-growth points from frozen R218
+records plus279 later exclusions, sorts in source order and checks every point
+against the sealed captured pre-watershed marker matrix.1515 new diffuse-core
+seeds/cyan and51 older fallback seeds/orange; each occupies one native pixel.
+Seed counts/IDs are proposals, not unique beads or measured visible centers.
+Diagnostic crops are selected after extraction; no manual bead labels, series,
+saved centers or position model is used.
+
+[Explanation and raw/point images](photo2/STEP2_SEEDS.md),
+[point viewer](photo2/review/r229/index.html),
+[complete point ledger](photo2/review/r229/seeds.json),
+[source/payload hashes](photo2/review/r229/summary.json),
+[verification](photo2/review/r229/verification.json).
+New byte-identical alias at photo2/review/r224/step2.html works with the user's
+existing4001 server: http://127.0.0.1:4001/step2.html. Original root viewer still
+shows later stages. Static SVG raw/photo markers are present before JS controls
+load; no large canvas allocation. A/B/C crops contain15/25/12 actual pixels;
+white focus rings/letters and enlarged whole-photo hollow circles are guides,
+not extra selected pixels. Nearest-neighbor enlarged crops preserve aspect ratio.
+
+Verified original photo embedding/orientation/dimensions, all1566 SVG rectangles
+and coordinates, integer marker/native TIFF equality, new/fallback counts,
+crop contexts, image/native-point question binding, byte-identical server alias,
+Python/JS syntax and prior sealed source/payload hashes. No real-browser painting
+or control interaction claimed; unchanged segmentation tests not repeated.
+Original user screenshot remains unchanged and untracked, not included in commit.
+All extractor files, grown masks and reflections unchanged; no fit performed.
+
+Q229.1 issued asynchronously: ask whether any cyan seed in the A crop is clearly
+on paper/black rather than inside red/yellow, optionally using clicked seed ID.
+[Immutable question image/points](photo2/step2-seed-questions-r229.json) preserved;
+pending, no whole-inventory approval inferred. Q224.1 and earlier Q220 questions
+remain unanswered; this request is not an ownership confirmation.
+
+Reproduce: `.venv/bin/python photo2/review_step2_seeds.py`. Routine native label
+TIFF under photo2/output/r229 stays ignored; curated display images/ledger tracked.
+Stop at showing step2. Next review obvious seed placement problems with the maker,
+then return to growth/guard diagnosis before choosing any repair.
+gpt-6.1-sol / High, same conversation; no /new. Scoped commit/push and exact
+remote/status verification before claiming delivery.

@@ -1,0 +1,25 @@
+{
+  "request": "R229",
+  "checks": {
+    "source_and_curated_hashes": "pass",
+    "existing_server_alias_byte_identical": "pass",
+    "previous_r224_sources_and_payloads_unchanged": "pass",
+    "frozen_markers_equal_native_tiff": "pass",
+    "all_1566_seed_coordinates_and_one_pixel_svg_rectangles": "pass",
+    "counts_1515_new_51_fallback": "pass",
+    "embedded_source_jpeg_and_native_dimensions": "pass",
+    "closeup_extents_and_counts_15_25_12": "pass",
+    "question_image_and_all_native_points": "pass",
+    "javascript_syntax": "pass",
+    "python_syntax": "pass",
+    "original_user_screenshot_unchanged": "pass",
+    "new_local_document_links": "pass",
+    "request_log_append_only": "pass"
+  },
+  "source_summary_sha256": "9b72b11a72a09b0581148940cf5d3929acb76f1a9240866e80cab484118a6458",
+  "question_manifest_sha256": "644bd74f9ed20dfaf662e4a3ec933ceabe1d3a43422a15fedbbc140bc0827a45",
+  "real_browser_painting_or_control_interactions_exercised": false,
+  "prior_segmentation_tests_rerun": false,
+  "segmentation_changed": false,
+  "reproduction": ".venv/bin/python photo2/review_step2_seeds.py"
+}

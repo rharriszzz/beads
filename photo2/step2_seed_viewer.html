@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Step 2: seed points before growth</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f5f6;color:#17202b;font:16px/1.5 system-ui,sans-serif}main{max-width:1250px;margin:auto;padding:20px}h1{font-size:25px;margin:0 0 8px}p{margin:8px 0 12px}.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:15px 0}select,input,button{font:inherit}button,select{padding:6px 9px;background:white;border:1px solid #bbc3cc;border-radius:5px}.views{display:grid;grid-template-columns:1fr 1fr;gap:12px}figure{margin:0;padding:10px;background:white;border:1px solid #dce0e5;border-radius:7px}figcaption{font-weight:650;margin-bottom:7px}.viewport{height:480px;overflow:auto;background:#e0e3e7}.viewport svg{display:block;cursor:crosshair}#info{padding:12px;background:white;border:1px solid #dce0e5;border-radius:7px}.note{font-size:14px;color:#445367}@media(max-width:700px){.views{grid-template-columns:1fr}main{padding:10px}}
+</style>
+<main><h1>Step 2: seed points before region growth</h1>
+<p>Each colored square is <strong>one original photo pixel</strong>. Cyan marks 1,515 new diffuse-core seeds; orange marks 51 older fallback seeds. These are proposed starting locations, not confirmed bead centers.</p>
+<p id="status" role="status">Static example A is visible. Loading the point controls…</p>
+<div class="controls"><label>Context <select id="context"><option>Whole necklace</option><option selected>A</option><option>B</option><option>C</option></select></label><label>Zoom <input id="zoom" type="range" min="1" max="12" step=".25" value="1"> <span id="zoomValue">1×</span></label><label><input id="guides" type="checkbox"> Enlarge location guides</label><label><input id="points" type="checkbox" checked> Show seed pixels</label><button id="reset">Reset view</button></div>
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><defs><image id="sourcePhoto" width="2540" height="3182" href="data:image/jpeg;base64,__PHOTO__"/></defs></svg>
+<div class="views">
+<figure><figcaption>Raw photo</figcaption><div class="viewport"><svg id="rawView" xmlns="http://www.w3.org/2000/svg" viewBox="__VIEWBOX__" width="560" height="440"><use href="#sourcePhoto"/></svg></div></figure>
+<figure><figcaption id="seedCaption">Step 2 seed pixels</figcaption><div class="viewport"><svg id="seedView" xmlns="http://www.w3.org/2000/svg" viewBox="__VIEWBOX__" width="560" height="440"><use href="#sourcePhoto"/><g id="seedPixels">__SEEDS__</g><g id="seedGuides" fill="none" stroke-width="1"/><g id="chosen" fill="none" stroke="white"/></svg></div></figure>
+</div><p class="note">Zoom and scroll either photo to pan. Click near a point to see its number and native coordinate. At whole-photo scale the one-pixel squares are faint; enable the hollow location guides to find them. Guides add no selected pixels.</p>
+<div id="info">No grown regions are displayed.</div></main>
+<script id="seed-data" type="application/json">__DATA__</script>
+<script>(()=>{
+  const report=event=>{document.getElementById('status').textContent='Viewer error: '+(event.message||event.reason?.message||String(event.reason));};
+  window.addEventListener('error',report);window.addEventListener('unhandledrejection',report);
+})();</script>
+<script>(()=>{
+'use strict';
+const data=JSON.parse(document.getElementById('seed-data').textContent),$=id=>document.getElementById(id);
+const ns='http://www.w3.org/2000/svg';let scale=1,selectedContext=data.contexts[1];
+function update(){
+  selectedContext=data.contexts[$('context').selectedIndex];
+  const [x0,y0,x1,y1]=selectedContext.box,w=x1-x0,h=y1-y0;
+  scale=Math.min(($('rawView').parentElement.clientWidth-4)/w,476/h)*Number($('zoom').value);
+  $('zoomValue').textContent=$('zoom').value+'×';
+  for(const id of ['rawView','seedView']){
+    const svg=$(id);svg.setAttribute('viewBox',`${x0} ${y0} ${w} ${h}`);svg.setAttribute('width',w*scale);svg.setAttribute('height',h*scale);
+  }
+  $('seedPixels').style.display=$('points').checked?'':'none';
+  $('seedGuides').replaceChildren();
+  const visible=data.seeds.filter(p=>p.marker_xy[0]>=x0&&p.marker_xy[0]<x1&&p.marker_xy[1]>=y0&&p.marker_xy[1]<y1);
+  if($('guides').checked)for(const p of visible){
+    const circle=document.createElementNS(ns,'circle');circle.setAttribute('cx',p.marker_xy[0]+.5);circle.setAttribute('cy',p.marker_xy[1]+.5);
+    circle.setAttribute('r',2.5/scale);circle.setAttribute('stroke-width',1/scale);circle.setAttribute('stroke',`rgb(${p.display_rgb.join(',')})`);$('seedGuides').appendChild(circle);
+  }
+  $('chosen').replaceChildren();$('seedCaption').textContent=`Step 2 only: ${visible.length} seed pixels in this context`;
+  $('status').textContent=`Loaded: ${data.native_seed_pixels} single-pixel proposals. No step 3, 4 or 5 region masks.`;
+}
+function pick(event){
+  const rect=event.currentTarget.getBoundingClientRect(),[x0,y0,x1,y1]=selectedContext.box;
+  const x=x0+(event.clientX-rect.left)*(x1-x0)/rect.width,y=y0+(event.clientY-rect.top)*(y1-y0)/rect.height;
+  let nearest=null,distance=Infinity;
+  for(const p of data.seeds){const d=Math.hypot(x-(p.marker_xy[0]+.5),y-(p.marker_xy[1]+.5));if(d<distance){distance=d;nearest=p;}}
+  if(distance*scale>14){$('info').textContent=`Native coordinate (${Math.floor(x)}, ${Math.floor(y)}): no seed within the click distance.`;return;}
+  const p=nearest;$('info').textContent=`Seed ${p.seed_number} at native pixel (${p.marker_xy.join(', ')}). ${p.source}. The code supplies one position, not a bead region.`;
+  $('chosen').replaceChildren();const circle=document.createElementNS(ns,'circle');circle.setAttribute('cx',p.marker_xy[0]+.5);circle.setAttribute('cy',p.marker_xy[1]+.5);circle.setAttribute('r',6/scale);circle.setAttribute('stroke-width',1/scale);$('chosen').appendChild(circle);
+}
+for(const id of ['rawView','seedView'])$(id).addEventListener('click',pick);
+$('context').addEventListener('change',()=>{$('zoom').value=1;$('guides').checked=$('context').selectedIndex===0;update();});
+for(const id of ['zoom','guides','points'])$(id).addEventListener('input',update);
+$('reset').addEventListener('click',()=>{$('zoom').value=1;update();});window.addEventListener('resize',update);update();
+})();</script></html>

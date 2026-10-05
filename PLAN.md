@@ -17,7 +17,30 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R224: explain and inspect steps 3, 4 and 5
+## Current R229: show step 2 alone
+
+[Raw-photo/one-pixel close-ups and explanation](photo2/STEP2_SEEDS.md),
+[point viewer](photo2/review/r229/index.html). The user says the displayed images
+have far too many pixels and requests step2 results. Show actual pre-growth
+positions, correcting the earlier description of step2 as small interior patches.
+There are1566 one-pixel seeds:1515 new/cyan and51 fallback/orange. Include all279
+later-excluded seeds, rather than silently filtering this earlier-stage display.
+Seed proposals do not establish unique beads, ownership or visible centers.
+
+Three display forms: whole-photo overview, raw/seed A/B/C close-ups, zoomable
+point viewer. The existing4001 server serves the new page at **/step2.html**;
+no restart. White/hollow circles are location guides, separate from actual pixels.
+Every position agrees with the frozen pre-watershed matrix; no segmentation or
+geometry change. [Verification and limits](photo2/review/r229/verification.json).
+
+Q229.1 asks about obvious cyan seeds on paper/black in A; as-issued figure and
+native points [preserved](photo2/step2-seed-questions-r229.json). Pending; no
+whole-seed-set or later-mask approval inferred. Earlier Q224/Q220 remain pending.
+**Stop:** show step2. **Next:** review seed placement with the maker, then return
+to tracing growth/guard mistakes before choosing a repair. gpt-6.1-sol / High,
+same conversation; no `/new`.
+
+## Prior R224: explain and inspect steps 3, 4 and 5
 
 [Stage diagrams, individual test maps and ownership question](photo2/MASK_STAGE_DIAGNOSTICS.md),
 [interactive native-pixel inspector](photo2/review/r224/index.html).

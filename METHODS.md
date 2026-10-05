@@ -1410,6 +1410,16 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R229 adds [actual pre-growth seed presentation](photo2/STEP2_SEEDS.md).
+Inputs are the frozen automatic seed records, later exclusions and saved
+pre-watershed marker matrix. Recover every seed and check its integer position
+against the matrix; do not drop seeds rejected by later region filters. Output
+one native marked pixel per proposal, beside raw crops and in a zoomable SVG
+viewer. Distinguish enlarged hollow guides from selected pixels. Display crops
+are chosen after extraction. Verify embedded raw photo, pixel coordinates and
+source seals; a seed is neither a safe interior patch nor a verified bead center.
+No extractor or grown-mask change is part of this presentation procedure.
+
 R224 adds [stage-by-stage mask diagnosis](photo2/MASK_STAGE_DIAGNOSTICS.md).
 The R226 viewer repair keeps app variables inside a function scope and avoids
 browser global names such as `location`. Visible startup errors and static
