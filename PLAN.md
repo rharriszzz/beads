@@ -17,7 +17,46 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R220: conservative colored-mask trimming review
+## Current R224: explain and inspect steps 3, 4 and 5
+
+[Stage diagrams, individual test maps and ownership question](photo2/MASK_STAGE_DIAGNOSTICS.md),
+[interactive native-pixel inspector](photo2/review/r224/index.html).
+The maker accepts steps 1 and 2 for this discussion and suspects flaws in the
+later steps: round visible faces should not acquire intrusive/non-round pixels.
+Their offer to help with visual ownership is preserved. Current task is diagnosis
+and explanation, superseding further automatic trimming or fitting.
+
+R225–R228: the local HTTP server delivered the page, but picture windows were
+blank. Maker-supplied screenshot confirms empty menu/missing stage buttons.
+Fix the viewer's top-level `location` name conflict by renaming and scoping it;
+add static fallback images and visible startup errors. Node harness checks startup
+with a non-configurable global location, three cases and native zoom/pan click
+coordinates. Ask for Ctrl+Shift+R in the existing tab; no server restart.
+Real-browser refresh confirmation pending. This fixes the review tool, not the
+segmentation rules. Original screenshot stays local/untracked; curated viewer-only
+crop [preserved](photo2/review/r226/blank-viewer.png). Q224.1 still pending.
+
+Three presentation methods: stage filmstrips, independent pass/fail maps, pixel
+inspection with numerical terms. Observe the unchanged whole-photo watershed;
+verify each reconstructed guard and both rims against sealed R218/R220 masks.
+Show prior rejected red A75, yellow B136 and a neighboring automatic C45 region.
+B: 646 watershed pixels survive every step 4 guard; all 581 earlier retained
+pixels survive later brightness tests; current rim/connection leaves 549.
+A: 1019→879→844→844→759→607→567. No roundness rule is in the code. Candidate
+edge distance dominates the rim score; it can reward an already thick extension.
+These measurements do not identify a particular wrong pixel without ownership
+evidence and do not prove an array/indexing bug.
+
+Q224.1 asks for one clearly wrong retained pixel/extension, with a case and
+location (native coordinate if convenient). Issued image/crop/extent bindings in
+[as-issued manifest](photo2/stage-diagnostic-questions-r224.json); pending.
+Earlier Q220.1/Q220.2 remain pending and are not answered by this criticism.
+**Stop:** explanation and ownership discussion. **Next:** bind the supplied wrong
+pixel to its exact stage trace and identify the admitting/non-rejecting rule,
+before choosing a repair. No segmentation, reflections, centerline, bead count,
+adjacency or pose change. gpt-6.1-sol / High, same conversation; no `/new`.
+
+## Prior R220: conservative colored-mask trimming review
 
 [Raw/original/revised masks and Q220.1/Q220.2](photo2/CONSERVATIVE_MASK_TRIMMING.md).
 Compare fixed inset, diffuse cutoff, first outward drop and brightness stability.

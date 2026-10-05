@@ -1410,6 +1410,24 @@ does not authorize jumping over the pending local indexing/color pilot.
 
 ## Saved positional references — R200
 
+R224 adds [stage-by-stage mask diagnosis](photo2/MASK_STAGE_DIAGNOSTICS.md).
+The R226 viewer repair keeps app variables inside a function scope and avoids
+browser global names such as `location`. Visible startup errors and static
+fallback images help distinguish HTTP delivery from successful script execution.
+A non-configurable-global regression harness verifies startup and native click
+coordinates without claiming actual browser rendering.
+Observe the unchanged whole-photo watershed, then reconstruct the actual guards
+and rims against sealed masks before explaining them. Pair raw crops with stage
+filmstrips, individual pass/fail maps and a native-pixel inspector. Record score
+terms, candidate-relative thresholds and whether each test has any effect. Keep
+the explanatory ordering of combined factors explicit. A non-round shape is a
+diagnostic warning, not automatically wrong ownership; obtain one clear wrong
+pixel from the maker and bind it to the exact trace before choosing a repair.
+An inset from a wrong candidate boundary can protect a thick intrusion. Do not
+mistake passing brightness/connection tests or a candidate percentile for bead
+ownership or actual visible coverage. Question crops/points remain post-extraction
+diagnostics, not final-runtime priors; do not add a circular outline silently.
+
 R220 adds [conservative colored-mask trimming](photo2/CONSERVATIVE_MASK_TRIMMING.md).
 Compare a fixed inset, a seed-relative diffuse cutoff, first-drop rays and
 multi-scale brightness stability. Fixed pixel shells can over-trim visible faces;

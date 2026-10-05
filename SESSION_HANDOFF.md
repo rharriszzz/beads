@@ -9,7 +9,71 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R220 — conservative trimming review
+## Current R224 — stage explanations and maker-assisted pixel diagnosis
+
+R225–R228 viewer repair: user started the provided server on4001; GET/200,
+favicon404 harmless, but image windows blank. Supplied Screenshot(18).png in
+photo2; inspected Chrome screenshot, empty Example menu and no stage buttons/
+error text. Classic-script top-level let location conflicts with browser's
+non-configurable Window.location. Reproduce on the actual Node global, then
+rename inspectionPixel and wrap code in an IIFE. Add static raw/final-A images
+until successful drawing and prominent startup/runtime errors. Node harness
+passes restricted-global startup, all3cases and zoom/pan native-pixel clicks;
+doesn't exercise real-browser paint. User instructed Ctrl+Shift+R; existing
+server can remain. Browser refresh confirmation and Q224.1 remain pending.
+[Curated viewer-only screenshot/diagnosis](photo2/review/r226/viewer-startup-fix.json),
+[verification](photo2/review/r224/verification.json). Original user Screenshot(18)
+is unchanged and untracked; preserve it and avoid adding it to the scoped commit.
+Upload guidance supplied after checking official image-input FAQ; user instead
+provided a local PNG. No image upload/ownership confirmation inferred.
+
+Current maker scope: steps 1 and 2 sound good; step 3 is mysterious; inspect
+suspected flaws in steps 4/5. A round visible face should not have obvious
+intrusive/non-round support. Maker also says “Let me help.” Preserve that visual
+ownership help separately from program decisions. R222–R223 discussion stopped
+further mask changes; R224 requests explanations and illustrations, not a repair.
+
+[Start with stage diagrams and Q224.1](photo2/MASK_STAGE_DIAGNOSTICS.md),
+[self-contained pixel inspector](photo2/review/r224/index.html),
+[counts, native points and exact thresholds](photo2/review/r224/trace.json),
+[source/payload seals](photo2/review/r224/summary.json).
+New trace_colored_stages.py wraps only the R218 watershed call, returns its exact
+result unchanged, and checks a fresh whole-photo R218 baseline against all sealed
+arrays. Reconstruct early brightness/radius/connection, earlier rim and later
+brightness/rim/connection for three examples; each equals the original masks and
+the real production trim function. Frozen extractor files, masks and reflections
+are unchanged. No manual label/center/adjacency data opened, no fit or new render.
+
+Three presentations announced before implementation: stage filmstrips, separate
+pass/fail maps, interactive native-pixel measurements. A75 and B136 are the older
+rejected examples; revised extents remain unreviewed. C45 selected after extraction
+for non-convex support in an earlier automatic context; widen context to show its
+whole share. Automatic numbers and letters are not manual beads or string indices.
+P is farthest retained point from seed with at least2px candidate inset, chosen
+for inspection only; none of the P ownerships has been confirmed.
+
+B counts: step3=646; every early brightness/radius/connection guard leaves646;
+earlier rim581; later brightness581; current result549.549/646 step3 pixels have
+zero dark-valley score; flat surface/competition/allowed shape influence partition.
+A:1019→879→844→844→759→607→567. C:1047→1024→999→998→898→852→808.
+No roundness test in existing code. Candidate-edge distance dominates its rim
+score and can reward a thick extension. A P(1684,310): inset2px, diffuse.4118>
+latefloor.3882,3votes,score2.0701>cutoff1.2323; passing tests is not ownership.
+Stage explanations explicitly separate the conceptual factor display from the
+original combined-expression order. No code/index bug or exact wrong pixel claimed.
+
+Q224.1 issued asynchronously: identify one retained pixel/green extension clearly
+outside the intended bead, using case and position/native coordinate if convenient.
+[As-issued native extents, coordinates and images](photo2/stage-diagnostic-questions-r224.json)
+preserved; pending. Old Q220 questions remain pending; broad criticism is not an
+answer to their specific coverage/containment questions. Maker may instead give
+a visual rule; incorporate it into discussion before implementing any repair.
+
+Stop at illustrated explanation. Next preserve exact ownership help, trace the
+chosen wrong pixel and identify the failing rule, then present repair alternatives.
+Recommend gpt-6.1-sol / High, same conversation; no `/new` needed.
+
+## Prior R220 — conservative trimming review
 
 Maker: “continue”; resume the bounded rim-trimming comparison before fitting.
 Preflight daisy, photo-2-reconstruction-v2, clean de4baa6, no stashes, fetch/

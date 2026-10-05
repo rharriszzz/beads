@@ -1,0 +1,398 @@
+{
+  "request": "R224",
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "pixel_coordinates": "EXIF-oriented native image; x right, y down; zero based",
+  "method": "Unchanged R215 appearance / R218 refinement / R220 stable trimming",
+  "capture": {
+    "source_sha256": {
+      "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+      "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+      "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+      "photo2/trim_colored_masks.py": "d284ed8eda55398e2219da95b91f1284bdf56c3f29e202f7dd4c1b4a8542069f"
+    },
+    "watershed_archive_sha256": "df01238198a325d5bfd86932c1ffcc6a1ff698ec34e39247642f47152ec17476",
+    "fresh_baseline_arrays_repeat": true,
+    "wrapper_returns_original_result_unchanged": true
+  },
+  "stages": [
+    [
+      "raw",
+      "Raw photo",
+      "No proposed body pixels."
+    ],
+    [
+      "watershed",
+      "3: watershed",
+      "The seed's share of the allowed color pixels; not a bead outline."
+    ],
+    [
+      "early_floor",
+      "4a: brightness",
+      "Keep diffuse brightness at least 32% of this share's Q90."
+    ],
+    [
+      "radius",
+      "4b: seed radius",
+      "Also keep pixels within 0.85 estimated diameters of the seed."
+    ],
+    [
+      "connected",
+      "4c: connection",
+      "Keep only the component containing the seed; this is the stored candidate."
+    ],
+    [
+      "old_rim",
+      "5a: earlier rim",
+      "Inset and remove the lowest 10% rim scores: the R218 reviewed mask."
+    ],
+    [
+      "extra_brightness",
+      "Later brightness tests",
+      "Show the R220 raw floor and two-of-three votes on the earlier mask, before its rim test."
+    ],
+    [
+      "final",
+      "5b: current result",
+      "Combine all R220 tests and keep the seed-connected component: the stored R220 mask."
+    ]
+  ],
+  "flag_names": [
+    "watershed",
+    "early_floor",
+    "radius_test",
+    "connected",
+    "old_rim",
+    "late_floor",
+    "vote_0",
+    "vote_1",
+    "vote_2",
+    "votes_test",
+    "late_inset",
+    "late_rank",
+    "final"
+  ],
+  "cases": [
+    {
+      "letter": "A",
+      "region_number": 75,
+      "seed_xy": [
+        1671,
+        325
+      ],
+      "source_observation_id": "18ee62c9-eaa9-5b5c-8d95-a60abb76d783",
+      "crop": [
+        1605,
+        269,
+        1745,
+        379
+      ],
+      "seed_crop_xy": [
+        66,
+        56
+      ],
+      "point_xy": [
+        1684,
+        310
+      ],
+      "point_crop_xy": [
+        79,
+        41
+      ],
+      "point_ownership": "unreviewed",
+      "point_selection": "Farthest retained pixel from the seed with >=2px candidate inset; diagnostic only",
+      "counts": {
+        "raw": 0,
+        "watershed": 1019,
+        "early_floor": 879,
+        "radius": 844,
+        "connected": 844,
+        "old_rim": 759,
+        "extra_brightness": 607,
+        "final": 567
+      },
+      "parameters": {
+        "diameter": 27.190842412550417,
+        "seed_radius_limit": 23.112216050667854,
+        "early_reference": 0.843137264251709,
+        "early_floor": 0.26980392456054686,
+        "late_reference": 0.8627451062202454,
+        "late_floor": 0.3882352977991104,
+        "smoothing_references": [
+          0.85337233543396,
+          0.8492932319641113,
+          0.8383932709693909
+        ],
+        "smoothing_floors": [
+          0.384017550945282,
+          0.3821819543838501,
+          0.3772769719362259
+        ],
+        "minimum_inset": 0.5,
+        "early_rim_threshold": 1.1109747976064683,
+        "late_rim_threshold": 1.232329547405243
+      },
+      "witness": [
+        5819,
+        8191,
+        0.4117647111415863,
+        0.1968424916267395,
+        2.0,
+        2.0701075568795204,
+        19.849433241279208,
+        3,
+        0.4096812605857849,
+        0.4128270447254181,
+        0.42160317301750183
+      ],
+      "flags": [
+        "watershed",
+        "early_floor",
+        "radius_test",
+        "connected",
+        "old_rim",
+        "late_floor",
+        "vote_0",
+        "vote_1",
+        "vote_2",
+        "votes_test",
+        "late_inset",
+        "late_rank",
+        "final"
+      ],
+      "data_fields": [
+        "crop_index",
+        "flags",
+        "diffuse_V",
+        "valley",
+        "candidate_inset_pixels",
+        "late_score",
+        "seed_distance_pixels",
+        "votes",
+        "smooth_V_0",
+        "smooth_V_1",
+        "smooth_V_2"
+      ],
+      "trace_matches_stored_candidate_and_both_retained_masks": true,
+      "watershed_darkness": {
+        "zero_pixels": 434,
+        "maximum": 0.6559790372848511,
+        "percentile_95": 0.5523527264595032
+      }
+    },
+    {
+      "letter": "B",
+      "region_number": 136,
+      "seed_xy": [
+        935,
+        420
+      ],
+      "source_observation_id": "8ea9d231-453d-5d6e-9ee7-6f5ba96301f4",
+      "crop": [
+        867,
+        361,
+        1007,
+        471
+      ],
+      "seed_crop_xy": [
+        68,
+        59
+      ],
+      "point_xy": [
+        927,
+        402
+      ],
+      "point_crop_xy": [
+        60,
+        41
+      ],
+      "point_ownership": "unreviewed",
+      "point_selection": "Farthest retained pixel from the seed with >=2px candidate inset; diagnostic only",
+      "counts": {
+        "raw": 0,
+        "watershed": 646,
+        "early_floor": 646,
+        "radius": 646,
+        "connected": 646,
+        "old_rim": 581,
+        "extra_brightness": 581,
+        "final": 549
+      },
+      "parameters": {
+        "diameter": 27.190842412550417,
+        "seed_radius_limit": 23.112216050667854,
+        "early_reference": 0.9490196108818054,
+        "early_floor": 0.30368627548217775,
+        "late_reference": 0.9490196108818054,
+        "late_floor": 0.42705882489681246,
+        "smoothing_references": [
+          0.9445140957832336,
+          0.9377784729003906,
+          0.9302465915679932
+        ],
+        "smoothing_floors": [
+          0.42503134310245516,
+          0.4220003128051758,
+          0.41861096620559696
+        ],
+        "minimum_inset": 0.5,
+        "early_rim_threshold": 1.1798361390829086,
+        "late_rim_threshold": 1.5442494880296522
+      },
+      "witness": [
+        5800,
+        8191,
+        0.5803921818733215,
+        0.0,
+        2.0,
+        2.1528925746679306,
+        19.697715603592208,
+        3,
+        0.5821640491485596,
+        0.581117570400238,
+        0.577396810054779
+      ],
+      "flags": [
+        "watershed",
+        "early_floor",
+        "radius_test",
+        "connected",
+        "old_rim",
+        "late_floor",
+        "vote_0",
+        "vote_1",
+        "vote_2",
+        "votes_test",
+        "late_inset",
+        "late_rank",
+        "final"
+      ],
+      "data_fields": [
+        "crop_index",
+        "flags",
+        "diffuse_V",
+        "valley",
+        "candidate_inset_pixels",
+        "late_score",
+        "seed_distance_pixels",
+        "votes",
+        "smooth_V_0",
+        "smooth_V_1",
+        "smooth_V_2"
+      ],
+      "trace_matches_stored_candidate_and_both_retained_masks": true,
+      "watershed_darkness": {
+        "zero_pixels": 549,
+        "maximum": 0.36690157651901245,
+        "percentile_95": 0.15214566886425018
+      }
+    },
+    {
+      "letter": "C",
+      "region_number": 45,
+      "seed_xy": [
+        1669,
+        293
+      ],
+      "source_observation_id": "83130981-c2cf-5d47-95d3-08a1faacf7c0",
+      "crop": [
+        1637,
+        224,
+        1795,
+        334
+      ],
+      "seed_crop_xy": [
+        32,
+        69
+      ],
+      "point_xy": [
+        1675,
+        272
+      ],
+      "point_crop_xy": [
+        38,
+        48
+      ],
+      "point_ownership": "unreviewed",
+      "point_selection": "Farthest retained pixel from the seed with >=2px candidate inset; diagnostic only",
+      "counts": {
+        "raw": 0,
+        "watershed": 1047,
+        "early_floor": 1024,
+        "radius": 999,
+        "connected": 998,
+        "old_rim": 898,
+        "extra_brightness": 852,
+        "final": 808
+      },
+      "parameters": {
+        "diameter": 27.190842412550417,
+        "seed_radius_limit": 23.112216050667854,
+        "early_reference": 0.8666666746139526,
+        "early_floor": 0.27733333587646486,
+        "late_reference": 0.8705882430076599,
+        "late_floor": 0.391764709353447,
+        "smoothing_references": [
+          0.8624390363693237,
+          0.8579086065292358,
+          0.8536885976791382
+        ],
+        "smoothing_floors": [
+          0.3880975663661957,
+          0.38605887293815616,
+          0.3841598689556122
+        ],
+        "minimum_inset": 0.5,
+        "early_rim_threshold": 1.121133777499199,
+        "late_rim_threshold": 1.4616485442854696
+      },
+      "witness": [
+        7622,
+        8191,
+        0.4156862795352936,
+        0.3186376094818115,
+        2.0,
+        2.039709970355034,
+        21.840329667841555,
+        3,
+        0.4178794324398041,
+        0.42461857199668884,
+        0.4425596296787262
+      ],
+      "flags": [
+        "watershed",
+        "early_floor",
+        "radius_test",
+        "connected",
+        "old_rim",
+        "late_floor",
+        "vote_0",
+        "vote_1",
+        "vote_2",
+        "votes_test",
+        "late_inset",
+        "late_rank",
+        "final"
+      ],
+      "data_fields": [
+        "crop_index",
+        "flags",
+        "diffuse_V",
+        "valley",
+        "candidate_inset_pixels",
+        "late_score",
+        "seed_distance_pixels",
+        "votes",
+        "smooth_V_0",
+        "smooth_V_1",
+        "smooth_V_2"
+      ],
+      "trace_matches_stored_candidate_and_both_retained_masks": true,
+      "watershed_darkness": {
+        "zero_pixels": 564,
+        "maximum": 0.5708105564117432,
+        "percentile_95": 0.41392144560813904
+      }
+    }
+  ],
+  "limitation": "Neither P nor the current masks have maker ownership confirmation; no roundness rule is applied"
+}

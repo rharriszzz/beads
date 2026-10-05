@@ -1,0 +1,58 @@
+{
+  "request": "R224\u2013R228",
+  "source_and_curated_hashes_match": true,
+  "prior_protected_entries_checked": 28,
+  "native_case_checks": [
+    {
+      "letter": "A",
+      "region_number": 75,
+      "pixels": 567,
+      "exact_native_layers": true,
+      "inspector_records": 1019,
+      "point_xy": [
+        1684,
+        310
+      ]
+    },
+    {
+      "letter": "B",
+      "region_number": 136,
+      "pixels": 549,
+      "exact_native_layers": true,
+      "inspector_records": 646,
+      "point_xy": [
+        927,
+        402
+      ]
+    },
+    {
+      "letter": "C",
+      "region_number": 45,
+      "pixels": 808,
+      "exact_native_layers": true,
+      "inspector_records": 1047,
+      "point_xy": [
+        1675,
+        272
+      ]
+    }
+  ],
+  "original_question_images_and_extents_preserved": true,
+  "ownership_question_pending": true,
+  "supplied_screenshot_unchanged_and_curated_crop_exact": true,
+  "viewer_repair_record_sha256": "eec4df0b5f49d8bced908720fd1a293c33c9f8583164713b6280299349ee89fa",
+  "javascript_syntax": true,
+  "viewer_harness": "PASS: restricted-global startup, all three cases, zoom/pan pixel coordinates and visible error reporting. Browser paint is not exercised.",
+  "browser_paint_exercised": false,
+  "append_only_log_prefix": true,
+  "local_review_links_checked": 12,
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0",
+    "scikit-image": "0.26.0"
+  },
+  "verifier_sha256": "9e53e071d108e97407f6a0f9c490730ff7ec4fb44e334af444f9b35c3d06ec2f",
+  "viewer_test_sha256": "94100728c3c47772441112812aa9b22988920665a1cc5f459492618c485cf8ef",
+  "reproduction": ".venv/bin/python photo2/check_stage_diagnostics.py"
+}

@@ -1,0 +1,35 @@
+{
+  "request": "R225\u2013R228",
+  "source_filename": "photo2/Screenshot (18).png",
+  "source_sha256": "ca6936a79e3bcbedc87acde91a5a2d9e34bf5c8e004f802351c39d6feda5d51d",
+  "curated_screenshot": "photo2/review/r226/blank-viewer.png",
+  "curated_sha256": "307442f9a4fd4aa02f9619ef6db5ca7aba1b4f8bb2704fb76c268ec6a3a5e46f",
+  "crop": [
+    344,
+    126,
+    1584,
+    941
+  ],
+  "crop_policy": "Only the local viewer; browser tabs, profile and bookmarks omitted. Original supplied image remains unchanged and untracked.",
+  "user_reports": [
+    "The picture windows were blank",
+    "how do i upload a screenshot",
+    "It is \"Screenshot (18)\" in photo2"
+  ],
+  "observed": {
+    "example_menu_empty": true,
+    "stage_buttons_missing": true,
+    "picture_windows_blank": true,
+    "visible_error_message": false
+  },
+  "diagnosis": "Classic script declared top-level let location, conflicting with a browser Window non-configurable location property. Reproduced with the same restriction on the actual Node global.",
+  "repair": [
+    "Rename selection variable to inspectionPixel",
+    "Enclose viewer code in a function scope",
+    "Show loading/runtime errors at the top",
+    "Keep static raw/current-mask images visible until interactive drawing succeeds"
+  ],
+  "tests": "Restricted-global startup, all three cases, native pixel click coordinates after zoom/pan, visible error reporting pass in Node harness; not a real-browser painting test.",
+  "browser_refresh_confirmation": "pending",
+  "bead_ownership_question_answered": false
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bead masks: follow a pixel through the steps</title>
+<style>
+  * { box-sizing:border-box } body { margin:0; background:#f4f5f6; color:#17202b; font:16px/1.5 system-ui,sans-serif }
+  main { max-width:1250px; margin:auto; padding:20px } h1 { font-size:25px; margin:0 0 8px }
+  p { margin:8px 0 16px } button,select,input { font:inherit } button,select { padding:7px 11px; border:1px solid #bcc4cd; border-radius:5px; background:white }
+  button { cursor:pointer } button.active { background:#174b73; color:white; border-color:#174b73 }
+  .controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:12px 0 }
+  #steps { display:flex; flex-wrap:wrap; gap:6px } .views { display:grid; grid-template-columns:1fr 1fr; gap:12px }
+  figure { margin:0; padding:10px; background:white; border-radius:7px; border:1px solid #dce0e5 }
+  figcaption { font-weight:650; margin-bottom:6px } .viewport { overflow:auto; height:440px; background:#e0e3e7 }
+  canvas { display:none; image-rendering:pixelated; cursor:crosshair } .fallback { display:block; width:560px; max-width:none; image-rendering:pixelated } #inspector { margin-top:16px; padding:16px; background:white; border:1px solid #dce0e5; border-radius:7px }
+  table { width:100%; border-collapse:collapse; font-size:15px } td,th { text-align:left; padding:5px 9px; border-bottom:1px solid #e5e8ec }
+  .pass { color:#167335; font-weight:650 } .fail { color:#a53b1e; font-weight:650 } .note { font-size:14px; color:#445367 }
+  @media(max-width:700px) { .views { grid-template-columns:1fr } .viewport { height:330px } main { padding:10px } }
+</style>
+<main>
+  <h1>Follow a bead mask through steps 3, 4 and 5</h1>
+  <p>The raw crop stays beside the selected stage. Click a pixel in either view to see why the code keeps or removes it. P is a suggested inspection point; its bead ownership has not been confirmed.</p>
+  <p id="status" role="status">Loading the interactive viewer. Static example A remains visible until it is ready.</p>
+  <div class="controls">
+    <label>Example <select id="example"></select></label>
+    <label>Zoom <input id="zoom" type="range" min="2" max="10" value="4"> <span id="zoomvalue">4×</span></label>
+    <label><input id="paint" type="checkbox" checked> Show green mask</label>
+    <label><input id="marks" type="checkbox" checked> Show seed and P</label>
+    <button id="point">Inspect P</button>
+  </div>
+  <div id="steps"></div>
+  <p id="description"></p>
+  <div class="views">
+    <figure><figcaption>Raw photograph</figcaption><div class="viewport"><img id="rawfallback" class="fallback" src="raw-a.png" alt="Raw photograph of example A"><canvas id="raw"></canvas></div></figure>
+    <figure><figcaption id="stagecaption">Current mask: example A</figcaption><div class="viewport"><img id="stagefallback" class="fallback" src="final-a.png" alt="Current mask over the raw photograph of example A"><canvas id="stage"></canvas></div></figure>
+  </div>
+  <p class="note">Green shows actual selected pixels. The pink X is the automatic seed, not a measured bead center. At high zoom, scroll each view to pan. The extra brightness panel displays one factor of the final rule; all final factors must pass together.</p>
+  <div id="inspector"></div>
+</main>
+<script id="trace-data" type="application/json">__TRACE_DATA__</script>
+<script>
+(() => {
+  const report = message => {
+    document.getElementById('status').textContent = 'Viewer error: ' + message + '. Static example A is available below.';
+  };
+  window.addEventListener('error', event => report(event.message));
+  window.addEventListener('unhandledrejection', event => report(event.reason?.message || String(event.reason)));
+})();
+</script>
+<script>
+(() => {
+"use strict";
+const data = JSON.parse(document.getElementById('trace-data').textContent);
+const $ = id => document.getElementById(id);
+let current, image, pixels, fields, layers, selected = 7, inspectionPixel = null, loading = 0;
+const number = v => Number(v).toFixed(4);
+const bytes = value => Uint8Array.from(atob(value), c => c.charCodeAt(0));
+const tests = [
+  [1,'Step 4: early brightness', (r,p) => `${number(r[2])} ≥ ${number(p.early_floor)}`],
+  [2,'Step 4: distance from seed', (r,p) => `${number(r[6])} px ≤ ${number(p.seed_radius_limit)} px`],
+  [3,'Step 4: seed-connected component', () => 'After early brightness and radius tests'],
+  [4,'Step 5: earlier rim mask', () => 'Minimum inset and earlier 10% rim-score cutoff'],
+  [5,'Later: unsmoothed diffuse brightness', (r,p) => `${number(r[2])} ≥ ${number(p.late_floor)}`],
+  [6,'Later: first smoothing-scale vote', (r,p) => `${number(r[8])} ≥ ${number(p.smoothing_floors[0])}, plus seed connection`],
+  [7,'Later: second smoothing-scale vote', (r,p) => `${number(r[9])} ≥ ${number(p.smoothing_floors[1])}, plus seed connection`],
+  [8,'Later: third smoothing-scale vote', (r,p) => `${number(r[10])} ≥ ${number(p.smoothing_floors[2])}, plus seed connection`],
+  [9,'Later: two-of-three vote rule', r => `${r[7]} votes ≥ 2`],
+  [10,'Step 5: candidate inset', (r,p) => `${number(r[4])} px ≥ ${number(p.minimum_inset)} px`],
+  [11,'Step 5: current rim score', (r,p) => `${number(r[5])} ≥ ${number(p.late_rim_threshold)}`],
+  [12,'Current final mask', () => 'All final factors, earlier mask, then seed connection']
+];
+for (const c of data.cases) {
+  const option = document.createElement('option'); option.textContent = `${c.letter}: automatic region ${c.region_number}`;
+  $('example').appendChild(option);
+}
+for (const [i, stage] of data.stages.entries()) {
+  const button = document.createElement('button'); button.textContent = stage[1];
+  button.addEventListener('click', () => { selected=i; render(); }); $('steps').appendChild(button);
+}
+async function choose() {
+  const request = ++loading;
+  current = data.cases[$('example').selectedIndex];
+  const img = new Image(); img.src = 'data:image/png;base64,' + current.raw_png;
+  await img.decode(); if (request !== loading) return;
+  image = img;
+  const original = document.createElement('canvas'); original.width=image.width; original.height=image.height;
+  const context = original.getContext('2d'); context.drawImage(image,0,0);
+  pixels = context.getImageData(0,0,image.width,image.height);
+  fields = new Map(current.pixels.map(r => [r[0],r]));
+  layers = Object.fromEntries(Object.entries(current.layers).map(([key,v]) => [key,bytes(v)]));
+  inspectionPixel = current.point_crop_xy.slice(); render(); inspect();
+  $('status').textContent = `Example ${current.letter} loaded. Select a stage or click a pixel to inspect its tests.`;
+}
+function render() {
+  if (!image) return;
+  const zoom = Number($('zoom').value); $('zoomvalue').textContent=zoom+'×';
+  [...$('steps').children].forEach((button,i) => button.classList.toggle('active',i===selected));
+  const [key,title,description] = data.stages[selected];
+  $('description').textContent=description; $('stagecaption').textContent=title + (key==='raw'?'':` — ${current.counts[key]} pixels`);
+  for (const id of ['raw','stage']) {
+    const canvas=$(id); canvas.width=image.width*zoom; canvas.height=image.height*zoom;
+    const ctx=canvas.getContext('2d'); ctx.imageSmoothingEnabled=false;
+    if (id==='stage' && $('paint').checked && key!=='raw') {
+      const painted=new ImageData(new Uint8ClampedArray(pixels.data),image.width,image.height);
+      for(let i=0;i<layers[key].length;i++) if(layers[key][i]) {
+        for(let j=0;j<3;j++) painted.data[i*4+j]=.72*painted.data[i*4+j]+.28*[35,255,90][j];
+      }
+      const temp=document.createElement('canvas'); temp.width=image.width;temp.height=image.height;
+      temp.getContext('2d').putImageData(painted,0,0); ctx.drawImage(temp,0,0,canvas.width,canvas.height);
+    } else ctx.drawImage(image,0,0,canvas.width,canvas.height);
+    if($('marks').checked) {
+      const [x,y]=current.seed_crop_xy.map(v=>(v+.5)*zoom);
+      ctx.strokeStyle='#ff46eb';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x-5,y-5);ctx.lineTo(x+5,y+5);ctx.moveTo(x-5,y+5);ctx.lineTo(x+5,y-5);ctx.stroke();
+      const [px,py]=current.point_crop_xy.map(v=>(v+.5)*zoom);
+      ctx.strokeStyle='#00e6ff';ctx.beginPath();ctx.arc(px,py,4,0,2*Math.PI);ctx.stroke();
+      ctx.font='bold 17px system-ui';ctx.lineWidth=3;ctx.strokeStyle='black';ctx.strokeText('P',px+9,py-8);ctx.fillStyle='#00e6ff';ctx.fillText('P',px+9,py-8);
+    }
+    if(inspectionPixel) {
+      const [x,y]=inspectionPixel;ctx.strokeStyle='white';ctx.lineWidth=1;ctx.strokeRect(x*zoom,y*zoom,zoom,zoom);
+    }
+    canvas.style.display = 'block'; $(id+'fallback').style.display = 'none';
+  }
+}
+function inspect() {
+  if (!inspectionPixel) return;
+  const [x,y]=inspectionPixel, index=y*image.width+x, row=fields.get(index), p=current.parameters;
+  const rgb=Array.from(pixels.data.slice(index*4,index*4+3));
+  const heading=`Native pixel (${current.crop[0]+x}, ${current.crop[1]+y}); RGB (${rgb.join(', ')})`;
+  if (!row) {
+    $('inspector').innerHTML=`<strong>${heading}</strong><p>Outside this seed's step 3 watershed region. No later test can add this pixel to the final mask.</p>`;return;
+  }
+  const scoreTerms=`${number(row[4])} + ${number(.25*row[2]/Math.max(p.late_reference,.02))} − ${number(.25*row[3])} = ${number(row[5])}`;
+  $('inspector').innerHTML=`<strong>${heading}</strong><p>Diffuse V: ${number(row[2])}. Relative darkness: ${number(row[3])}. Rim score: ${scoreTerms}. The first term is distance from the <em>program's candidate edge</em>, in pixels.</p><table><thead><tr><th>Test</th><th>Measurement</th><th>Result</th></tr></thead><tbody>${tests.map(([bit,title,measure])=>{const pass=!!(row[1] & (1<<bit));return `<tr><td>${title}</td><td>${measure(row,p)}</td><td class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</td></tr>`}).join('')}</tbody></table><p class="note">Passing these tests is the program's decision. It does not confirm that the pixel belongs to the bead. Q90 is the brightness exceeded by the brightest 10% of the candidate's pixels.</p>`;
+}
+for(const id of ['raw','stage']) $(id).addEventListener('click',event=>{
+  const rectangle=$(id).getBoundingClientRect(),zoom=Number($('zoom').value);
+  const x=Math.floor((event.clientX-rectangle.left)/zoom),y=Math.floor((event.clientY-rectangle.top)/zoom);
+  if(x>=0&&x<image.width&&y>=0&&y<image.height){inspectionPixel=[x,y];render();inspect();}
+});
+$('example').addEventListener('change',choose);
+for(const id of ['zoom','paint','marks']) $(id).addEventListener('input',render);
+$('point').addEventListener('click',()=>{inspectionPixel=current.point_crop_xy.slice();render();inspect();});
+choose().catch(error=>{
+  $('status').textContent='Viewer error: '+error.message;
+  $('inspector').textContent=error.message;
+});
+})();
+</script>
+</html>

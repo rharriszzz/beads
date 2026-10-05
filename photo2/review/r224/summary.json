@@ -1,0 +1,42 @@
+{
+  "request": "R224",
+  "source_sha256": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/segment_colored_beads.py": "6025fc57c336a854e9ed1e98173d5a6279a5637ee5c8b5672c8e720fc40546a5",
+    "photo2/refine_colored_masks.py": "92acf7f41196b15d4d2cd696cc2070d5fd891d3a5d395631eb5fb65cc4be1a7c",
+    "photo2/trim_colored_masks.py": "d284ed8eda55398e2219da95b91f1284bdf56c3f29e202f7dd4c1b4a8542069f",
+    "photo2/trace_colored_stages.py": "b619d7c44dc7407cba4008779748212b2279d0e7a07bef109ad7c6f653c3ae57",
+    "photo2/mask_stage_viewer.html": "745ed374c47ce71ab21020fc9c69fde0fbb503d17f5acf02b5ac7354e318506a"
+  },
+  "curated_sha256": {
+    "trace.json": "b2728bbe96538bea6fdaf968e03992353d04d04be42038664ec7a5936868593d",
+    "index.html": "4f34824b760c5344b1ceadfc7a63c5d50f6fccd0eb92d813b7497da3f7b5c820",
+    "partition-b.png": "037e34714e483f7141a9d633ae2e239931e9d933ed1c90d9478a265bbd3110c1",
+    "sequence-a.png": "975c1199c7f7e3e3d76419bd762e780a11f7fb1da273b72717389af867e3ca85",
+    "sequence-b.png": "cf5dadd5b5e6a6e8d77a32cd97359feef5acdfdb08dc3b4ec591cd9252217b57",
+    "sequence-c.png": "d45cf40ceb87d41092373edae8050063696d72688226e5f240d333ac3416d8d5",
+    "tests-a.png": "862e1642c8c86d47ff89cf93cf74b002e68eb9cf78eaa99247bbd0ab154240fa",
+    "tests-b.png": "52bc31e1f16dac24d05682ee63679855ffc4c1c633cb36f1a55190cb4c0338ad",
+    "tests-c.png": "d5742f00469adedccae9f43da520b731214328e4880edaed8b70989d281fb576",
+    "raw-a.png": "e7a9c725f4d1f44943b12085c1386baba73a6f889a2eebb541160377a8bead72",
+    "raw-b.png": "37153e7436571218a1be6b8192be81662235d701d0ba43cfc16b0e01f36bfd37",
+    "raw-c.png": "f1d8963d3bf74f0bec400d890cac7133bbe069e2be1f06000ef81a3a182b514d",
+    "final-a.png": "d87cf6648935bd7bc40966ade2a3f00b9a22992f24759469bf9a1b1dd97d831d",
+    "final-b.png": "2e8ec439634760f95f7ceb57ab4afa201066eccc1bcddca63e7a4861645696c6",
+    "final-c.png": "ec1ba5c9c1516552069573e9b496ff571aed03c277270a31bdf9303ddd46001b"
+  },
+  "prior_review_summary_sha256": "13cf4f917082495f6f6cabb5ba4526cf30ac338e64f72e7d665cce3ce6d1ef45",
+  "baseline_mask_archive_sha256": "b1edfcb6992dd5aba9b311ff53750fb90d69be17f3b72495e555c66e5d357199",
+  "final_mask_archive_sha256": "00340992ab981a119e21d93c89e156e3c7eecf752ab6a55d037d67801b581bc6",
+  "protected_inputs_unchanged": true,
+  "baseline_repeats": true,
+  "selected_case_trace_matches": true,
+  "segmentation_changed": false,
+  "roundness_rule_added": false,
+  "manual_labels_read": false,
+  "reconstruction_fit_performed": false,
+  "reproduction": [
+    ".venv/bin/python photo2/trace_colored_stages.py",
+    ".venv/bin/python photo2/trace_colored_stages.py --reuse-trace"
+  ]
+}

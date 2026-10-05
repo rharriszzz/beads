@@ -4513,3 +4513,149 @@ counts. Two adverse controls pass, including red/yellow/blue neighbor subcases.
 Syntax/JSON, introduced local links, whitespace and append-only historical log
 prefix checks pass. [Verification record](photo2/review/r220/verification.json).
 Both questions remain pending; no answer inferred or mask acceptance claimed.
+
+## R221 — Codex availability answer, before the method discussion
+
+Maker: “is a new version of codex available now?” In the preceding operational
+turn, read the openai-docs skill and checked local installation and official
+release notes. Local codex-cli0.160.0; official changelog listed0.160.1 released
+2026-10-05, with Windows remote MCP environment handling as the patch change.
+Answered in commentary with the official release link. No upgrade, installation,
+configuration change or photo-analysis change was performed. The maker then
+steered to the segmentation-method discussion, which remained the active task.
+This is the delayed record of that actual answer, not a fresh version check.
+
+## R222 — Discuss the foundations of bead regions
+
+Maker: “I am unhappy about your method of  finding thwe region of a bead.  It shows failures that show that the method you are using is missing some of its foundations, almost like a two legged chair.  So let us have a conversation about the method you are using, and I will try to understand and give suggestions.”
+
+Paused further segmentation iterations and explained the five existing steps:
+learn appearance/search support, interior seeds, dark-valley watershed, brightness/
+radius/connection guards, weak-rim trimming. Discussed seed multiplicity, uncertain
+ownership and candidate-relative percentage limits. No code or masks changed;
+existing R220 questions remain pending, with no answer inferred from the criticism.
+
+## R223 — About one hundred words for each step
+
+Maker: “The method sounds sort of good.  But maybe there are flaws in at least three of these steps.  can you write about a hundred words of explanation for each step.  I will carefully read it, I want to figure out which steps go wrong.”
+
+Read actual frozen R215/R218/R220 implementation and supplied five approximately
+100-word explanations, including H/S/V definitions, median reflection suppression,
+fallback seeds, watershed competition, candidate-relative guards and 15% latest
+rim ranking. Explained assumptions and possible failures separately from measured
+outcomes. No new algorithm, experiment, question answer, mask change or fit.
+
+## R224 — Explain and illustrate later stages; maker offers visual help
+
+Maker: “steps 1 and 2 are obviously good.  Step 3 is mysterious.  There must be a bug in either step 4 or 5.  So please devise some presentations of the steps, especially the later ones.  Please try to explain and illustrate what it is doing and how.  Most of it might ben good, but there are some flaws.  I would say that beads with round visible pixels, should not have obviously non round or intrusive pixels.  This is the problem, but I want to identify which step is not right.”
+
+Steering during work: “You are pretty good at coding, but you don't have eyes.  Let me help.”
+
+The active bounded task is explanation and pixel diagnosis, superseding the old
+next-step rim adjustment. Preflight daisy, clean ca933bb/photo-2-reconstruction-v2,
+no stashes; fetched origin/upstream0/0 and read AGENTS/current handoff/log/plan,
+R218–R220 source experiments and hue conventions. No subagents, installs, GUI,
+new render, extraction changes, geometry/adjacency fit or manual annotation input.
+
+Three presentation methods announced before implementation: same-crop stage
+filmstrips, separate pass/fail maps, an interactive native-pixel inspector. New
+trace_colored_stages.py observes the frozen R218 watershed with a wrapper returning
+the original result unchanged. Fresh whole-photo refinement exactly repeats every
+sealed R218 array. Reconstruct the early floor, radius, connected candidate, old
+rim, later brightness/rim/connection factors on three examples; exact equality
+to sealed R218/R220 masks and direct real production trimming function checked.
+Report raw versus diffuse brightness, candidate inset, relative darkness, votes,
+score contributions and all thresholds. No circular boundary or roundness rule
+is added. Original extractor sources and saved pixel/reflection masks unchanged.
+
+[Illustrated explanations/Q224.1](photo2/MASK_STAGE_DIAGNOSTICS.md),
+[interactive viewer](photo2/review/r224/index.html),
+[native stage measurements](photo2/review/r224/trace.json),
+[source/output seals](photo2/review/r224/summary.json).
+The HTML is self-contained; optional local HTTP-server instructions supplied.
+Raw context stays beside overlays; zoom/scroll/click expose individual decisions.
+Curated sequence/test/partition figures tracked; routine watershed capture ignored.
+
+Red A75 and yellow B136 are the earlier rejected examples, with current extents
+still unreviewed. Additional C45 is selected only after extraction for non-convex
+support in a previous automatic context, widened to include the whole share.
+Markers P are retained diagnostic points, not asserted contamination pixels;
+automatic region numbers/letters remain distinct from manual beads/string indices.
+
+B trace646→646→646→646→581→581→549: none of the early guards or later brightness
+factors changes its predecessor.549/646 step3 pixels have zero dark-valley cost;
+flat areas/seed competition/allowed support influence the partition. A trace
+1019→879→844→844→759→607→567; C1047→1024→999→998→898→852→808. Distance from
+the program's own candidate edge dominates the rim score; thick intrusive support
+can pass. A P(1684,310) passes all tests: inset2px, diffuseV.4118 versus latefloor
+.3882,3votes,score2.0701 versus cutoff1.2323. These observations neither assign
+P to a bead nor prove a code/indexing bug. The diagram's extra brightness panel
+shows combined factors in explanatory order; the final result is exactly original.
+
+Q224.1 issued asynchronously asking for one clearly wrong retained pixel/extension
+and case/location, native coordinate if convenient. [As-issued manifest](photo2/stage-diagnostic-questions-r224.json)
+binds the curated images, exact current native extents, observation IDs/crops and
+optional P points. Pending; no broad approval or new answer to Q220 inferred.
+Maker assistance establishes ownership independently of numerical test success.
+
+Stop at the illustrated explanation/ownership discussion. Next preserve the chosen
+wrong pixel or supplied visual rule, trace which rule admits/fails to reject it,
+then present repair alternatives before implementation. gpt-6.1-sol / High,
+same conversation; no /new. Scoped commit/push and exact remote/status verification
+before claiming delivery.
+
+## R225 — User starts the diagnostic HTTP server
+
+Maker supplies terminal output from changing into ~/git/beads and running
+“.venv/bin/python -m http.server 4001 --bind 127.0.0.1 --directory photo2/review/r224”.
+GET / returns200; GET /favicon.ico returns404. Explained that the optional tab
+icon is absent, while the HTML was delivered. No server change or launcher action.
+HTTP success alone is not confirmation that viewer JavaScript ran.
+
+## R226 — Blank picture windows; repair the review tool
+
+Maker: “The picture windows were blank”. Asked whether Example listed A/B/C and
+whether an error appeared, while debugging independently. PNG payloads, dimensions
+and JavaScript syntax were valid. Found top-level let location in the classic
+script: the browser Window's non-configurable location property conflicts with
+that lexical declaration before any startup code executes. Reproduced SyntaxError
+on the actual Node global with the same property restriction; plain syntax check
+and a contextified VM alone do not test that host-global restriction.
+
+Rename inspectionPixel and wrap viewer logic in an IIFE. Add visible top-level
+loading/error messages, and static native raw/current-mask images remaining until
+interactive drawing succeeds. Regenerate the HTML from the sealed diagnostic
+capture; source extraction, all masks and original question images/runs unchanged.
+New test_mask_stage_viewer.cjs runs the actual viewer scripts with the restricted
+global: startup, three cases, native click coordinates after zoom/pan, and error
+reporting pass. This harness does not claim real browser painting. No dependency
+installation, GUI automation or camera/centerline/adjacency fit.
+
+## R227 — How to supply a screenshot
+
+Maker: “how do i upload a screenshot”. Applied the already-read openai-docs skill;
+checked official image-input help. For ChatGPT, described +/Add photos & files,
+drag into the message box or paste Ctrl+V, linking the official FAQ. Also supplied
+the local-file option: save a PNG under photo2 and give the filename. This uses
+ordinary image reading; no upload or outbound communication tool was invoked.
+[Official instructions](https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq).
+
+## R228 — Supplied Screenshot (18); inspect and preserve relevant evidence
+
+Maker: “It is "Screenshot (18)" in photo2”. Locate and inspect
+photo2/Screenshot (18).png. It shows Chrome at127.0.0.1:4001, empty Example menu,
+missing stage buttons, two blank windows and no displayed error. This is consistent
+with the startup failure. Supplied Ctrl+Shift+R refresh instruction; no server
+restart needed. Do not infer browser refresh success or bead ownership from this
+old screenshot. Optional clarification question is answered by the visible empty
+menu/absence of error; Q224.1 ownership and both earlier Q220 reviews remain pending.
+
+[Viewer-only screenshot](photo2/review/r226/blank-viewer.png) excludes unrelated
+browser tabs, bookmarks and profile. [Original source hash/crop/repair/test limits](photo2/review/r226/viewer-startup-fix.json)
+preserved. User's original screenshot is unchanged and remains untracked/local;
+exclude it from scoped staging. New check_stage_diagnostics.py checks source and
+curated hashes, exact native layer/pixel/PNG bindings, prior frozen extents/images,
+protected inputs, JavaScript/harness, local links, append-only log and whitespace.
+[Verification](photo2/review/r224/verification.json). No supplied wrong bead pixel
+yet: stop at the working review tool and await the maker's concrete ownership help,
+before choosing a segmentation repair. gpt-6.1-sol / High, same session; no /new.
