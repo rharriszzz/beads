@@ -1,0 +1,429 @@
+{
+  "arms": {
+    "baseline": {
+      "total": {
+        "eligible": 109,
+        "correctly_detected": 76,
+        "missed": 33,
+        "duplicate_proposals": 0,
+        "false_positives": 0,
+        "incorrect_colors": 0,
+        "unresolved_candidates": 7,
+        "outside_scope_candidates": 0,
+        "reference_uncertain": 13,
+        "deferred_no_reflection": 6,
+        "new_recoveries_by_color": {},
+        "recovered_ids": [],
+        "baseline_retained": 76
+      },
+      "sections": {
+        "D3": {
+          "split": "development",
+          "eligible": 22,
+          "eligible_by_color": {
+            "yellow": 10,
+            "red": 7,
+            "black": 5
+          },
+          "correctly_detected": 19,
+          "missed": 3,
+          "misses_by_color": {
+            "yellow": 1,
+            "red": 1,
+            "black": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 0,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 0,
+          "outside_scope_candidates": 0,
+          "candidate_count": 19,
+          "reference_uncertain": 3,
+          "deferred_no_reflection": 2,
+          "assisted_additions": 3,
+          "automatic_local_gate_passed": false
+        },
+        "D4": {
+          "split": "development",
+          "eligible": 32,
+          "eligible_by_color": {
+            "black": 11,
+            "yellow": 14,
+            "red": 7
+          },
+          "correctly_detected": 16,
+          "missed": 16,
+          "misses_by_color": {
+            "yellow": 6,
+            "black": 7,
+            "red": 3
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 0,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 1,
+          "outside_scope_candidates": 0,
+          "candidate_count": 17,
+          "reference_uncertain": 1,
+          "deferred_no_reflection": 0,
+          "assisted_additions": 16,
+          "automatic_local_gate_passed": false
+        },
+        "H1": {
+          "split": "reserved",
+          "eligible": 27,
+          "eligible_by_color": {
+            "yellow": 12,
+            "red": 6,
+            "black": 9
+          },
+          "correctly_detected": 20,
+          "missed": 7,
+          "misses_by_color": {
+            "yellow": 3,
+            "black": 4
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 0,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 3,
+          "outside_scope_candidates": 0,
+          "candidate_count": 23,
+          "reference_uncertain": 4,
+          "deferred_no_reflection": 3,
+          "assisted_additions": 7,
+          "automatic_local_gate_passed": false
+        },
+        "H4": {
+          "split": "reserved",
+          "eligible": 28,
+          "eligible_by_color": {
+            "yellow": 10,
+            "red": 9,
+            "black": 9
+          },
+          "correctly_detected": 21,
+          "missed": 7,
+          "misses_by_color": {
+            "yellow": 1,
+            "black": 5,
+            "red": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 0,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 3,
+          "outside_scope_candidates": 0,
+          "candidate_count": 24,
+          "reference_uncertain": 5,
+          "deferred_no_reflection": 1,
+          "assisted_additions": 7,
+          "automatic_local_gate_passed": false
+        }
+      }
+    },
+    "rejected": {
+      "total": {
+        "eligible": 109,
+        "correctly_detected": 96,
+        "missed": 13,
+        "duplicate_proposals": 3,
+        "false_positives": 8,
+        "incorrect_colors": 0,
+        "unresolved_candidates": 9,
+        "outside_scope_candidates": 7,
+        "reference_uncertain": 13,
+        "deferred_no_reflection": 6,
+        "new_recoveries_by_color": {
+          "yellow": 8,
+          "red": 4,
+          "black": 8
+        },
+        "recovered_ids": [
+          "D3-B07",
+          "D3-B16",
+          "D4-B02",
+          "D4-B03",
+          "D4-B05",
+          "D4-B08",
+          "D4-B18",
+          "D4-B25",
+          "D4-B26",
+          "D4-B28",
+          "D4-B30",
+          "D4-B33",
+          "H1-B01",
+          "H1-B12",
+          "H1-B27",
+          "H4-B13",
+          "H4-B23",
+          "H4-B25",
+          "H4-B31",
+          "H4-B34"
+        ],
+        "baseline_retained": 76
+      },
+      "sections": {
+        "D3": {
+          "split": "development",
+          "eligible": 22,
+          "eligible_by_color": {
+            "yellow": 10,
+            "red": 7,
+            "black": 5
+          },
+          "correctly_detected": 21,
+          "missed": 1,
+          "misses_by_color": {
+            "black": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 1,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 0,
+          "outside_scope_candidates": 2,
+          "candidate_count": 24,
+          "reference_uncertain": 3,
+          "deferred_no_reflection": 2,
+          "assisted_additions": 1,
+          "automatic_local_gate_passed": false
+        },
+        "D4": {
+          "split": "development",
+          "eligible": 32,
+          "eligible_by_color": {
+            "black": 11,
+            "yellow": 14,
+            "red": 7
+          },
+          "correctly_detected": 26,
+          "missed": 6,
+          "misses_by_color": {
+            "black": 4,
+            "yellow": 1,
+            "red": 1
+          },
+          "duplicate_proposals": 3,
+          "false_positives": 2,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 3,
+          "outside_scope_candidates": 0,
+          "candidate_count": 34,
+          "reference_uncertain": 1,
+          "deferred_no_reflection": 0,
+          "assisted_additions": 6,
+          "automatic_local_gate_passed": false
+        },
+        "H1": {
+          "split": "reserved",
+          "eligible": 27,
+          "eligible_by_color": {
+            "yellow": 12,
+            "red": 6,
+            "black": 9
+          },
+          "correctly_detected": 23,
+          "missed": 4,
+          "misses_by_color": {
+            "black": 3,
+            "yellow": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 2,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 3,
+          "outside_scope_candidates": 1,
+          "candidate_count": 29,
+          "reference_uncertain": 4,
+          "deferred_no_reflection": 3,
+          "assisted_additions": 4,
+          "automatic_local_gate_passed": false
+        },
+        "H4": {
+          "split": "reserved",
+          "eligible": 28,
+          "eligible_by_color": {
+            "yellow": 10,
+            "red": 9,
+            "black": 9
+          },
+          "correctly_detected": 26,
+          "missed": 2,
+          "misses_by_color": {
+            "yellow": 1,
+            "black": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 3,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 3,
+          "outside_scope_candidates": 4,
+          "candidate_count": 36,
+          "reference_uncertain": 5,
+          "deferred_no_reflection": 1,
+          "assisted_additions": 2,
+          "automatic_local_gate_passed": false
+        }
+      }
+    },
+    "native": {
+      "total": {
+        "eligible": 109,
+        "correctly_detected": 103,
+        "missed": 6,
+        "duplicate_proposals": 3,
+        "false_positives": 9,
+        "incorrect_colors": 1,
+        "unresolved_candidates": 14,
+        "outside_scope_candidates": 8,
+        "reference_uncertain": 13,
+        "deferred_no_reflection": 6,
+        "new_recoveries_by_color": {
+          "yellow": 8,
+          "red": 4,
+          "black": 15
+        },
+        "recovered_ids": [
+          "D3-B07",
+          "D3-B16",
+          "D3-B22",
+          "D4-B02",
+          "D4-B03",
+          "D4-B05",
+          "D4-B07",
+          "D4-B08",
+          "D4-B18",
+          "D4-B21",
+          "D4-B25",
+          "D4-B26",
+          "D4-B28",
+          "D4-B29",
+          "D4-B30",
+          "D4-B33",
+          "H1-B01",
+          "H1-B08",
+          "H1-B12",
+          "H1-B17",
+          "H1-B27",
+          "H1-B28",
+          "H4-B13",
+          "H4-B23",
+          "H4-B25",
+          "H4-B31",
+          "H4-B34"
+        ],
+        "baseline_retained": 76
+      },
+      "sections": {
+        "D3": {
+          "split": "development",
+          "eligible": 22,
+          "eligible_by_color": {
+            "yellow": 10,
+            "red": 7,
+            "black": 5
+          },
+          "correctly_detected": 22,
+          "missed": 0,
+          "misses_by_color": {},
+          "duplicate_proposals": 0,
+          "false_positives": 1,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 1,
+          "outside_scope_candidates": 2,
+          "candidate_count": 26,
+          "reference_uncertain": 3,
+          "deferred_no_reflection": 2,
+          "assisted_additions": 0,
+          "automatic_local_gate_passed": false
+        },
+        "D4": {
+          "split": "development",
+          "eligible": 32,
+          "eligible_by_color": {
+            "black": 11,
+            "yellow": 14,
+            "red": 7
+          },
+          "correctly_detected": 29,
+          "missed": 3,
+          "misses_by_color": {
+            "yellow": 1,
+            "black": 1,
+            "red": 1
+          },
+          "duplicate_proposals": 3,
+          "false_positives": 2,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 3,
+          "outside_scope_candidates": 0,
+          "candidate_count": 37,
+          "reference_uncertain": 1,
+          "deferred_no_reflection": 0,
+          "assisted_additions": 3,
+          "automatic_local_gate_passed": false
+        },
+        "H1": {
+          "split": "reserved",
+          "eligible": 27,
+          "eligible_by_color": {
+            "yellow": 12,
+            "red": 6,
+            "black": 9
+          },
+          "correctly_detected": 26,
+          "missed": 1,
+          "misses_by_color": {
+            "yellow": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 2,
+          "incorrect_colors": 0,
+          "unresolved_candidates": 4,
+          "outside_scope_candidates": 2,
+          "candidate_count": 34,
+          "reference_uncertain": 4,
+          "deferred_no_reflection": 3,
+          "assisted_additions": 1,
+          "automatic_local_gate_passed": false
+        },
+        "H4": {
+          "split": "reserved",
+          "eligible": 28,
+          "eligible_by_color": {
+            "yellow": 10,
+            "red": 9,
+            "black": 9
+          },
+          "correctly_detected": 26,
+          "missed": 2,
+          "misses_by_color": {
+            "yellow": 1,
+            "black": 1
+          },
+          "duplicate_proposals": 0,
+          "false_positives": 4,
+          "incorrect_colors": 1,
+          "unresolved_candidates": 6,
+          "outside_scope_candidates": 4,
+          "candidate_count": 41,
+          "reference_uncertain": 5,
+          "deferred_no_reflection": 1,
+          "assisted_additions": 2,
+          "automatic_local_gate_passed": false
+        }
+      }
+    }
+  },
+  "criteria": {
+    "colored": true,
+    "black": true,
+    "retention": true,
+    "zero_confirmed_errors": false
+  },
+  "passed": false,
+  "reference_sha256": "8273bb8d2031cee3e111818b2c5ad8a03d7b6d682dadde666521a406d6fda0f0",
+  "reference_status": "Unchanged R235 provisional agent judgments, not independent ground truth.",
+  "decision_sha256": "19ec1400e0886b731a111ebd244948247b4d2009ec77db284661b1ee52653df7",
+  "detector_sha256": "8a2526e9301f51a26b97fa0acbb5d2b64ca492e22064aadf9b36a02b11ff52f4"
+}

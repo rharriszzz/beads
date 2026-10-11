@@ -1,0 +1,160 @@
+[
+  {
+    "section": "D3",
+    "trace": {
+      "xy": [
+        1336,
+        249
+      ],
+      "mode": 1,
+      "source_id": "pool:21",
+      "old_reason": "profile",
+      "old_valid_cuts": 0,
+      "old_color_cuts": 12,
+      "color": "yellow",
+      "arm": "rejected",
+      "support_pixels": 232,
+      "inset": 7.810249675906654,
+      "value": 0.729411780834198,
+      "score": 3.966664157304088,
+      "basin": 11,
+      "decision": "accepted",
+      "candidate_id": "D3-A02"
+    },
+    "sampling_radii_native_px": [
+      8.701069572016134
+    ],
+    "crop": [
+      1308,
+      225,
+      1365,
+      274
+    ]
+  },
+  {
+    "section": "D4",
+    "trace": {
+      "xy": [
+        1756,
+        1689
+      ],
+      "color": "black",
+      "source_id": "reflection_rejections:324",
+      "old_reason": "surround insufficiently dark",
+      "arm": "rejected",
+      "original_xy": [
+        1754.824980422866,
+        1688.943125
+      ],
+      "response": 0.49764639139175415,
+      "value": 0.9450980424880981,
+      "saturation": 0.2033194899559021,
+      "dark_fraction": 0.5441176470588235,
+      "max_dark_sector": 0.8823529411764706,
+      "decision": "accepted",
+      "candidate_id": "D4-A14"
+    },
+    "sampling_radii_native_px": [
+      8.701069572016134,
+      3.26290108950605
+    ],
+    "crop": [
+      1728,
+      1665,
+      1785,
+      1714
+    ]
+  },
+  {
+    "section": "H1",
+    "trace": {
+      "xy": [
+        182,
+        1099
+      ],
+      "color": "black",
+      "source_id": "native:182:1099",
+      "old_reason": "new native search",
+      "arm": "native",
+      "response": 0.26404905319213867,
+      "value": 0.8588235378265381,
+      "saturation": 0.2785387933254242,
+      "dark_fraction": 0.7401960784313726,
+      "max_dark_sector": 0.9803921568627451,
+      "decision": "accepted",
+      "candidate_id": "H1-A07"
+    },
+    "sampling_radii_native_px": [
+      8.701069572016134,
+      3.26290108950605
+    ],
+    "crop": [
+      154,
+      1075,
+      211,
+      1124
+    ]
+  },
+  {
+    "section": "D4",
+    "trace": {
+      "xy": [
+        1799,
+        1678
+      ],
+      "mode": 2,
+      "source_id": "pool:1934",
+      "old_reason": "profile",
+      "old_valid_cuts": 6,
+      "old_color_cuts": 12,
+      "color": "red",
+      "arm": "rejected",
+      "support_pixels": 237,
+      "inset": 8.0,
+      "value": 0.7254902124404907,
+      "score": 3.9453380076634215,
+      "basin": 7,
+      "merged_into": "M4:370",
+      "decision": "same colored brightness basin; identity not proven"
+    },
+    "sampling_radii_native_px": [
+      8.701069572016134
+    ],
+    "crop": [
+      1771,
+      1654,
+      1828,
+      1703
+    ]
+  },
+  {
+    "section": "H4",
+    "trace": {
+      "xy": [
+        1559,
+        3056
+      ],
+      "color": "black",
+      "source_id": "native:1559:3056",
+      "old_reason": "new native search",
+      "arm": "native",
+      "response": 0.04661431908607483,
+      "value": 0.5411764979362488,
+      "saturation": 0.36231884360313416,
+      "dark_fraction": 0.7990196078431373,
+      "max_dark_sector": 1.0,
+      "merged_into": "excluded:130",
+      "decision": "near existing reflection; identity not proven"
+    },
+    "sampling_radii_native_px": [
+      8.701069572016134,
+      3.26290108950605
+    ],
+    "crop": [
+      1531,
+      3032,
+      1588,
+      3081
+    ]
+  }
+]

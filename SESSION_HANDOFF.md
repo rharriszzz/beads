@@ -1,6 +1,41 @@
 # Beads session handoff — new branch
 
-## Current R237 — recommendations saved, no implementation
+## Current R238 — authorized detection recovery delivered; stop
+
+Read [STAGE1_RECOVERY.md](photo2/STAGE1_RECOVERY.md) and its linked raw comparisons,
+audit images and failure-path measurement cards. Branch photo-2-strategy-v3;
+step began at d6cb6ac on daisy, clean checkout, no stashes, fetched upstream agreed.
+User explicitly authorized the bounded experiment, tests, records, commit/push.
+User again reports GPT-6 Astra / High; historical recommendations are not status.
+
+Three arms: baseline76/109; rejected-candidate supplement96/109; plus native
+reflections103/109. Final recovers12 colored and15 black, retains all76 baseline
+correct detections, but adds3 known duplicates,9 false positives,1 wrong color,
+7 new unresolved proposals. Success gate FAILS on errors; no manual output cleanup.
+Unchanged R235 eligibility/reference, five baseline boundary credits and H4-B34
+amendment retained. Additional halo ownership credits and duplicate are explicit.
+13 uncertain references,6 deferred no-reflection black hypotheses remain.
+D3/D4 development only. Freeze predates H1/H4 execution; no detector change after
+transfer. Simple synthetic controls and all12 tests pass. Byte-identical generated
+artifact reproduction is sealed in photo2/review/r238/verification.json.
+
+Code: photo2/stage1_recovery.py, evaluate_stage1_recovery.py, test_stage1_recovery.py.
+Portable frozen automatic inputs and all candidate/rejection traces in
+photo2/review/r238. Original detection code/data/reference and photograph untouched.
+No physical-center, full mask, geometry, helicity, global-index or pattern claims.
+No screenshot or unrelated file was changed/staged; current preflight had no
+untracked screenshot (historical handoffs describing one are not current status).
+
+Concrete failure: native H4-B27 reflection passes evidence but gets suppressed by
+a brighter paper-notch proposal; colored brightness basins also merge different
+beads (D4-B13/B14 and B24/B32). Native search recovers7 extra black bodies but
+ownership is the next bottleneck. Recommend a separately approved small ownership
+experiment on reflection/paper and same/different-body pairs, using new reserved
+transfer sections. Stop here after delivery, even though accuracy target failed.
+Retain Astra/High for scientific review/design; /new advisable before another
+implementation phase. User controls model/session switching.
+
+## Prior R237 — recommendations saved, no implementation
 
 User reviewed R235 and requested a concise failure diagnosis (R236), then explicitly
 authorized adding, committing and pushing the recommendations (R237). Read

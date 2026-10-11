@@ -1,6 +1,27 @@
 # Photo-2 reconstruction plan
 
-## Current R237 — diagnosis saved; recovery experiment awaits decision
+## Current R238 — detection recovery completed; accuracy gate failed
+
+The authorized [bounded recovery experiment](photo2/STAGE1_RECOVERY.md) is complete.
+Frozen baseline → old-candidate recovery → plus native reflections covers
+76 → 96 → 103 of109 provisional eligible bodies. Recoveries:12 colored,15 black;
+all76 baseline detections retained. The final automatic additions include3
+confirmed duplicates,9 false positives,1 wrong color and7 new unresolved cases.
+Recall/retention targets pass; the zero-error requirement fails. No output was
+manually cleaned before scoring. All13 uncertain references and6 deferred black
+hypotheses remain. D3/D4 development only; code/inputs sealed before H1/H4 transfer;
+no transfer-driven detector tuning. Twelve tests pass; reproduction verified.
+
+Stop after scoped commit/push and remote verification. No global indexing,
+helicity fitting, geometry changes or repeating-pattern recovery was started.
+Next recommended scientific task, separately authorized: a small body-ownership
+experiment for true reflections versus paper rims and separate bodies versus
+multiple features, with new transfer sections reserved before development.
+Existing vetted D3 observations remain available for a later local geometry test.
+User-reported current model: GPT-6 Astra / High. Retain for review/design;
+recommend /new before the next implementation phase, not required for review.
+
+## Prior R237 — diagnosis saved; recovery experiment awaited decision
 
 Read [R236 diagnosis and recommendation](photo2/STAGE1_FAILURE_DIAGNOSIS.md).
 Several recognizable beads were proposed then rejected by profile, reflection

@@ -1,5 +1,9 @@
 # R236 — Stage 1 failure diagnosis and proposed recovery experiment
 
+Subsequent status: the user authorized this experiment in R238; see the
+[completed comparison and failed accuracy gate](STAGE1_RECOVERY.md). The proposal
+and authorization status below are preserved as the historical R237 record.
+
 Saved under R237. **Proposal only; implementation is not authorized.** Session
 status reported by the user: **GPT-6 Astra, reasoning High**. Older Sol/High
 recommendations do not identify the active model. The user will report changes.

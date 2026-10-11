@@ -5157,3 +5157,59 @@ and model-status instruction; retained historical records. No code, annotations,
 images, pilot metrics or geometry changed. Check append-only log, links and scoped
 diff; commit/push documentation and verify remote tip. Stop for the user's decision
 before implementation. Retain user-reported Astra/High; no /new needed for discussion.
+
+## R238 — Execute the authorized bounded Stage 1 detection-recovery experiment
+
+User continues photo-2-strategy-v3 at pushed d6cb6ac and reports /status as GPT-6
+Astra, High reasoning; will report changes. Explicitly authorizes the experiment
+in STAGE1_FAILURE_DIAGNOSIS.md: diagnose rejected promising candidates, compare
+old-candidate recovery with native-resolution reflections; D3/D4 development,
+frozen H1/H4 transfer, no tuning after results. Preserve existing correct detections,
+eligibility, uncertainty, provenance, errors and unknowns. No global geometric
+indexing, helicity fitting or repeating-pattern recovery. Deliver implementation,
+tests, raw/annotated comparisons, measurable summaries, records, scoped commit/push,
+local/remote verification and remaining changes; execute then stop, not proposal only.
+
+Preflight: daisy, requested branch at d6cb6ac, clean worktree and no stashes;
+fetched origin agreed. Initial sandbox fetch could not write .git/FETCH_HEAD;
+rerun through approved git-fetch escalation succeeded. Python3.12.14. Read current
+handoff/plan/log, R235 pilot/R236 diagnosis and actual implementations. No unrelated
+files were present or changed; historical screenshot status was not assumed current.
+
+Implemented separate supplement/evaluator/tests, preserving old source and outputs.
+Archived automatic pools and learned parameters; reran unchanged black detector
+for early rejection traces. Four development rule families tested only on D3/D4;
+brightness-basin baseline-glint assignment corrected before final freeze. Detector,
+rules, automatic inputs and development output sealed before H1/H4. Transfer ran
+once for assessment; later identical reruns only check reproduction. No post-transfer
+detector changes. All additions visually audited against original RGB and unchanged
+R235 provisional references; ownership judgments are agent interpretations, not
+new maker facts. Raw/annotated section comparisons and five measured failure-path
+cards are curated in photo2/review/r238; every reject/merge reason survives.
+
+Outcome: baseline76/109; rejected-candidate recovery96/109 (+12 colored,+8 black);
+plus native103/109 (+12 colored,+15 black). All76 original correct detections kept.
+Final additions include3 confirmed duplicates,9 false positives,1 wrong-color and
+7 unresolved cases; eight halo-context proposals excluded explicitly, no in-box
+proposal dropped. Three out-of-box accepted samples credited to existing in-box
+bodies, including the duplicate on D4-B33. Original13 uncertain references and6
+no-reflection black hypotheses unchanged. Targets for >=8 colored,>=9 black and
+retention pass; zero-error gate FAILS. All errors remain in measured output.
+Six eligible misses remain: D4-B13/B20/B24,H1-B31,H4-B12/B27. Evidence shows harmful
+same-basin merges, residual inset/context rejection, absent colored candidate,
+and a paper-notch proposal suppressing H4-B27's actual native reflection.
+
+Twelve tests pass: five pilot accounting plus seven new synthetic/evidence,
+immutability, frozen-reproduction and complete-accounting tests. Final detector
+and evaluator outputs reproduce byte-identically; verification seals and commands
+are in STAGE1_RECOVERY.md/review/r238/verification.json. Controls do not establish
+photo completeness, independent truth or general palette/background robustness.
+Photo and historical R235/R231/R192 artifacts remain unchanged. Update current
+plan/handoff, method index and diagnosis completion notice. Commit/push only the
+R238 work and these records; verify exact remote/local IDs and status at delivery.
+
+Stop at failed decision gate, with no geometry/index/helicity/pattern work.
+Recommend separately authorized small body-ownership experiment (reflection versus
+paper rim; one body versus neighboring bodies), with new transfer sections reserved
+before development. Keep user-reported Astra/High for scientific review/design;
+/new advisable before the next implementation phase, unnecessary for review.

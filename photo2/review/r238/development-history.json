@@ -1,0 +1,156 @@
+[
+  {
+    "version": 1,
+    "rules": {
+      "color_radius_d": 0.32,
+      "color_min_area_d2": 0.08,
+      "color_inset_d": 0.06,
+      "color_value_q90": 0.36,
+      "color_hue_tolerance": 18.0,
+      "color_sat_fraction": 0.6,
+      "merge_distance_d": 0.62,
+      "bridge_fraction": 0.78,
+      "bridge_value_ratio": 0.65,
+      "reflection_small_sigma": 0.7,
+      "reflection_large_sigma_d": 0.3,
+      "reflection_response": 0.045,
+      "reflection_peak_value": 0.28,
+      "reflection_peak_sat": 0.6,
+      "dark_value": 0.28,
+      "dark_fraction": 0.28,
+      "dark_sector_fraction": 0.65,
+      "ring_inner_d": 0.12,
+      "ring_outer_d": 0.32,
+      "reflection_merge_d": 0.32,
+      "old_snap_d": 0.14
+    },
+    "archive_sha256": "92300f7c28af87f89576f6aaf6335fef74396e94369f1bdfdce4b17da46d676e",
+    "detector_sha256": "a447933f3058f365c4782dc4099b52bb866ec1a52af6fce6569e556a80f901ea",
+    "candidate_counts": {
+      "D3": {
+        "rejected": 18,
+        "native": 3
+      },
+      "D4": {
+        "rejected": 32
+      }
+    },
+    "status": "Development trial, not fully visually adjudicated; no accuracy claim."
+  },
+  {
+    "version": 2,
+    "rules": {
+      "color_radius_d": 0.32,
+      "color_min_area_d2": 0.1,
+      "color_inset_d": 0.09,
+      "color_value_q90": 0.5,
+      "color_hue_tolerance": 18.0,
+      "color_sat_fraction": 1.0,
+      "merge_distance_d": 0.95,
+      "bridge_fraction": 0.78,
+      "bridge_value_ratio": 0.65,
+      "reflection_small_sigma": 0.7,
+      "reflection_large_sigma_d": 0.3,
+      "reflection_response": 0.045,
+      "reflection_peak_value": 0.28,
+      "reflection_peak_sat": 0.6,
+      "dark_value": 0.28,
+      "dark_fraction": 0.28,
+      "dark_sector_fraction": 0.65,
+      "ring_inner_d": 0.12,
+      "ring_outer_d": 0.32,
+      "reflection_merge_d": 0.32,
+      "old_snap_d": 0.14
+    },
+    "archive_sha256": "8b5a0aabc4d27d0a4b20bd0980c938d570bb9ed57458da2a2649601a32d2e5af",
+    "detector_sha256": "6437390f276f007687c06d643f0980813fb2de85deb8f6fc6ddd59dd6b2cd9f2",
+    "candidate_counts": {
+      "D3": {
+        "rejected": 8,
+        "native": 3
+      },
+      "D4": {
+        "rejected": 16
+      }
+    },
+    "status": "Development trial, not fully visually adjudicated; no accuracy claim."
+  },
+  {
+    "version": 3,
+    "rules": {
+      "color_radius_d": 0.32,
+      "color_min_area_d2": 0.1,
+      "color_inset_d": 0.09,
+      "color_value_q90": 0.5,
+      "color_hue_tolerance": 18.0,
+      "color_sat_fraction": 1.0,
+      "merge_distance_d": 0.95,
+      "bridge_fraction": 0.78,
+      "bridge_value_ratio": 0.65,
+      "reflection_small_sigma": 0.7,
+      "reflection_large_sigma_d": 0.3,
+      "reflection_response": 0.045,
+      "reflection_peak_value": 0.28,
+      "reflection_peak_sat": 0.48,
+      "dark_value": 0.4,
+      "dark_fraction": 0.18,
+      "dark_sector_fraction": 0.55,
+      "ring_inner_d": 0.12,
+      "ring_outer_d": 0.32,
+      "reflection_merge_d": 0.32,
+      "old_snap_d": 0.14
+    },
+    "archive_sha256": "623a88e453abf409a9949dc327d61d71f5ff6284135acba1f54d0f40132fa525",
+    "detector_sha256": "b9d5fb6bee492526635b6a8dfefd9596d2dfa60fd795b6a30ff69de529833fe4",
+    "candidate_counts": {
+      "D3": {
+        "rejected": 11,
+        "native": 2
+      },
+      "D4": {
+        "rejected": 16,
+        "native": 3
+      }
+    },
+    "status": "Development trial, not fully visually adjudicated; no accuracy claim."
+  },
+  {
+    "version": 4,
+    "rules": {
+      "color_radius_d": 0.32,
+      "color_min_area_d2": 0.1,
+      "color_inset_d": 0.09,
+      "color_value_q90": 0.5,
+      "color_hue_tolerance": 18.0,
+      "color_sat_fraction": 1.0,
+      "reflection_small_sigma": 0.7,
+      "reflection_large_sigma_d": 0.3,
+      "reflection_response": 0.045,
+      "reflection_peak_value": 0.28,
+      "reflection_peak_sat": 0.48,
+      "dark_value": 0.4,
+      "dark_fraction": 0.18,
+      "dark_sector_fraction": 0.55,
+      "ring_inner_d": 0.12,
+      "ring_outer_d": 0.32,
+      "reflection_merge_d": 0.32,
+      "old_snap_d": 0.14,
+      "basin_sigma_d": 0.1,
+      "basin_peak_spacing_d": 0.45,
+      "color_close_pixels": 2
+    },
+    "archive_sha256": "ae21fb0549a894bc1471b99c05ee48750fdccfe0eff20dc8800ba33c2ebfcb1b",
+    "detector_sha256": "8a2526e9301f51a26b97fa0acbb5d2b64ca492e22064aadf9b36a02b11ff52f4",
+    "candidate_counts": {
+      "D3": {
+        "rejected": 5,
+        "native": 2
+      },
+      "D4": {
+        "rejected": 17,
+        "native": 3
+      }
+    },
+    "status": "Final brightness-basin trial includes correction mapping baseline glints to nearest color support within old_snap_d. This same frozen detector used for transfer."
+  }
+]

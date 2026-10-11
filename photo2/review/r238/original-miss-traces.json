@@ -1,0 +1,2381 @@
+[
+  {
+    "observation_id": "D3-B07",
+    "color": "yellow",
+    "reference_xy": [
+      1342,
+      251
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1336,
+          249
+        ],
+        "mode": 1,
+        "source_id": "pool:21",
+        "old_reason": "profile",
+        "old_valid_cuts": 0,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 232,
+        "inset": 7.810249675906654,
+        "value": 0.729411780834198,
+        "score": 3.966664157304088,
+        "basin": 11,
+        "decision": "accepted",
+        "candidate_id": "D3-A02",
+        "distance_to_reference_px": 6.324555320336759
+      },
+      {
+        "xy": [
+          1332,
+          245
+        ],
+        "mode": 1,
+        "source_id": "pool:16",
+        "old_reason": "profile",
+        "old_valid_cuts": 1,
+        "old_color_cuts": 10,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 165,
+        "inset": 2.23606797749979,
+        "value": 0.800000011920929,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 11.661903789690601
+      },
+      {
+        "xy": [
+          1320,
+          255
+        ],
+        "mode": 1,
+        "source_id": "pool:38",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 241,
+        "inset": 10.0,
+        "value": 0.8392156958580017,
+        "score": 4.563796347242753,
+        "basin": 6,
+        "merged_into": "M4:8",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 22.360679774997898
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D3-B16",
+    "color": "red",
+    "reference_xy": [
+      1366,
+      298
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1364,
+          299
+        ],
+        "mode": 2,
+        "source_id": "pool:118",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 4,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 112,
+        "inset": 0.0,
+        "value": 0.9607843160629272,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 2.23606797749979
+      },
+      {
+        "xy": [
+          1373,
+          304
+        ],
+        "mode": 2,
+        "source_id": "pool:124",
+        "old_reason": "profile",
+        "old_valid_cuts": 7,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 212,
+        "inset": 6.324555320336759,
+        "value": 0.7686274647712708,
+        "score": 4.179925653710754,
+        "basin": 6,
+        "decision": "accepted",
+        "candidate_id": "D3-A01",
+        "distance_to_reference_px": 9.219544457292887
+      },
+      {
+        "xy": [
+          1359,
+          309
+        ],
+        "mode": 2,
+        "source_id": "pool:132",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 45,
+        "inset": 1.0,
+        "value": 0.42352941632270813,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 13.038404810405298
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D3-B22",
+    "color": "black",
+    "reference_xy": [
+      1284,
+      333
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1284,
+          331
+        ],
+        "color": "black",
+        "source_id": "native:1284:331",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.21759960055351257,
+        "value": 0.6392157077789307,
+        "saturation": 0.3128834664821625,
+        "dark_fraction": 0.8774509803921569,
+        "max_dark_sector": 0.9803921568627451,
+        "decision": "accepted",
+        "candidate_id": "D3-A06",
+        "distance_to_reference_px": 2.0
+      },
+      {
+        "xy": [
+          1286,
+          349
+        ],
+        "color": "black",
+        "source_id": "native:1286:349",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.047004759311676025,
+        "value": 0.5568627715110779,
+        "saturation": 0.5915493369102478,
+        "dark_fraction": 0.15196078431372548,
+        "max_dark_sector": 0.4117647058823529,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 16.1245154965971
+      },
+      {
+        "xy": [
+          1293,
+          348
+        ],
+        "color": "black",
+        "source_id": "native:1293:348",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.05799061059951782,
+        "value": 0.5686274766921997,
+        "saturation": 0.5724138617515564,
+        "dark_fraction": 0.19117647058823528,
+        "max_dark_sector": 0.5434782608695652,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 17.4928556845359
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B02",
+    "color": "yellow",
+    "reference_xy": [
+      1671,
+      1564
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1670,
+          1560
+        ],
+        "mode": 1,
+        "source_id": "pool:1617",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 5,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 217,
+        "inset": 0.0,
+        "value": 0.9411764740943909,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 4.123105625617661
+      },
+      {
+        "xy": [
+          1681,
+          1556
+        ],
+        "mode": 1,
+        "source_id": "pool:1601",
+        "old_reason": "profile",
+        "old_valid_cuts": 3,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 236,
+        "inset": 8.06225774829855,
+        "value": 0.8117647171020508,
+        "score": 4.414513299758087,
+        "basin": 9,
+        "decision": "accepted",
+        "candidate_id": "D4-A05",
+        "distance_to_reference_px": 12.806248474865697
+      },
+      {
+        "xy": [
+          1655,
+          1559
+        ],
+        "mode": 1,
+        "source_id": "pool:1611",
+        "old_reason": "profile",
+        "old_valid_cuts": 3,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 145,
+        "inset": 2.23606797749979,
+        "value": 0.9882352948188782,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 16.76305461424021
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B03",
+    "color": "yellow",
+    "reference_xy": [
+      1698,
+      1565
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1689,
+          1566
+        ],
+        "mode": 1,
+        "source_id": "pool:1645",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 8,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 175,
+        "inset": 2.8284271247461903,
+        "value": 0.9647058844566345,
+        "score": 2.728600290999409,
+        "basin": 11,
+        "merged_into": "pool:1596",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 9.055385138137417
+      },
+      {
+        "xy": [
+          1705,
+          1554
+        ],
+        "mode": 1,
+        "source_id": "pool:1596",
+        "old_reason": "profile",
+        "old_valid_cuts": 5,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 234,
+        "inset": 8.0,
+        "value": 0.8235294222831726,
+        "score": 4.478491748680087,
+        "basin": 11,
+        "decision": "accepted",
+        "candidate_id": "D4-A03",
+        "distance_to_reference_px": 13.038404810405298
+      },
+      {
+        "xy": [
+          1681,
+          1556
+        ],
+        "mode": 1,
+        "source_id": "pool:1601",
+        "old_reason": "profile",
+        "old_valid_cuts": 3,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 236,
+        "inset": 8.06225774829855,
+        "value": 0.8117647171020508,
+        "score": 4.414513299758087,
+        "basin": 9,
+        "decision": "accepted",
+        "candidate_id": "D4-A05",
+        "distance_to_reference_px": 19.235384061671343
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B05",
+    "color": "yellow",
+    "reference_xy": [
+      1727,
+      1565
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1725,
+          1567
+        ],
+        "mode": 1,
+        "source_id": "pool:1650",
+        "old_reason": "profile",
+        "old_valid_cuts": 6,
+        "old_color_cuts": 6,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 209,
+        "inset": 2.0,
+        "value": 0.9215686321258545,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 2.8284271247461903
+      },
+      {
+        "xy": [
+          1733,
+          1562
+        ],
+        "mode": 1,
+        "source_id": "pool:1628",
+        "old_reason": "profile",
+        "old_valid_cuts": 7,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 231,
+        "inset": 7.615773105863909,
+        "value": 0.8156862854957581,
+        "score": 4.435839449398753,
+        "basin": 12,
+        "decision": "accepted",
+        "candidate_id": "D4-A04",
+        "distance_to_reference_px": 6.708203932499369
+      },
+      {
+        "xy": [
+          1720,
+          1569
+        ],
+        "mode": 1,
+        "source_id": "pool:1656",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 4,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 206,
+        "inset": 0.0,
+        "value": 0.929411768913269,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 8.06225774829855
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B07",
+    "color": "black",
+    "reference_xy": [
+      1681,
+      1579
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1680,
+          1577
+        ],
+        "color": "black",
+        "source_id": "native:1680:1577",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.1276819109916687,
+        "value": 0.7843137383460999,
+        "saturation": 0.3349999785423279,
+        "dark_fraction": 0.4852941176470588,
+        "max_dark_sector": 1.0,
+        "decision": "accepted",
+        "candidate_id": "D4-A19",
+        "distance_to_reference_px": 2.23606797749979
+      },
+      {
+        "xy": [
+          1672,
+          1570
+        ],
+        "color": "black",
+        "source_id": "native:1672:1570",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.20043164491653442,
+        "value": 0.9725490212440491,
+        "saturation": 0.5685484409332275,
+        "dark_fraction": 0.024509803921568627,
+        "max_dark_sector": 0.09803921568627451,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 12.727922061357855
+      },
+      {
+        "xy": [
+          1689,
+          1569
+        ],
+        "color": "black",
+        "source_id": "native:1689:1569",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.26653510332107544,
+        "value": 0.9921568632125854,
+        "saturation": 0.5691699385643005,
+        "dark_fraction": 0.15196078431372548,
+        "max_dark_sector": 0.5490196078431373,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 12.806248474865697
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B08",
+    "color": "black",
+    "reference_xy": [
+      1697,
+      1586
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1696,
+          1587
+        ],
+        "color": "black",
+        "source_id": "points:584",
+        "old_reason": "passed detector; downstream R192 or baseline",
+        "arm": "rejected",
+        "original_xy": [
+          1697.1429130775255,
+          1587.516875
+        ],
+        "response": 0.3151469826698303,
+        "value": 0.8470588326454163,
+        "saturation": 0.28240737318992615,
+        "dark_fraction": 0.6078431372549019,
+        "max_dark_sector": 1.0,
+        "decision": "accepted",
+        "candidate_id": "D4-A15",
+        "distance_to_reference_px": 1.4142135623730951
+      },
+      {
+        "xy": [
+          1696,
+          1587
+        ],
+        "color": "black",
+        "source_id": "native:1696:1587",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.3151469826698303,
+        "value": 0.8470588326454163,
+        "saturation": 0.28240737318992615,
+        "dark_fraction": 0.6078431372549019,
+        "max_dark_sector": 1.0,
+        "merged_into": "points:584",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 1.4142135623730951
+      },
+      {
+        "xy": [
+          1688,
+          1592
+        ],
+        "color": "black",
+        "source_id": "excluded:41",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1687.1977290524667,
+          1593.483125
+        ],
+        "response": 0.2910711169242859,
+        "value": 1.0,
+        "saturation": 0.3490195870399475,
+        "dark_fraction": 0.20098039215686275,
+        "max_dark_sector": 0.45652173913043476,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 10.816653826391969
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B13",
+    "color": "yellow",
+    "reference_xy": [
+      1711,
+      1606
+    ],
+    "recovered_in": [],
+    "nearby_traces": [
+      {
+        "xy": [
+          1713,
+          1610
+        ],
+        "mode": 1,
+        "source_id": "pool:1795",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 186,
+        "inset": 5.0990195135927845,
+        "value": 0.9215686321258545,
+        "score": 4.699096438324743,
+        "basin": 1,
+        "merged_into": "M4:346",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 4.47213595499958
+      },
+      {
+        "xy": [
+          1717,
+          1620
+        ],
+        "mode": 1,
+        "source_id": "pool:1830",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 10,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 149,
+        "inset": 1.4142135623730951,
+        "value": 1.0,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 15.231546211727817
+      },
+      {
+        "xy": [
+          1722,
+          1576
+        ],
+        "mode": 1,
+        "source_id": "pool:1689",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 125,
+        "inset": 2.23606797749979,
+        "value": 0.843137264251709,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 31.953090617340916
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B18",
+    "color": "red",
+    "reference_xy": [
+      1729,
+      1636
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1728,
+          1633
+        ],
+        "mode": 2,
+        "source_id": "pool:1866",
+        "old_reason": "profile",
+        "old_valid_cuts": 1,
+        "old_color_cuts": 11,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 166,
+        "inset": 0.0,
+        "value": 0.9647058844566345,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 3.1622776601683795
+      },
+      {
+        "xy": [
+          1728,
+          1632
+        ],
+        "mode": 2,
+        "source_id": "pool:1863",
+        "old_reason": "profile",
+        "old_valid_cuts": 1,
+        "old_color_cuts": 9,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 157,
+        "inset": 0.0,
+        "value": 0.9803921580314636,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 4.123105625617661
+      },
+      {
+        "xy": [
+          1736,
+          1639
+        ],
+        "mode": 2,
+        "source_id": "pool:1880",
+        "old_reason": "profile",
+        "old_valid_cuts": 0,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 240,
+        "inset": 8.602325267042627,
+        "value": 0.729411780834198,
+        "score": 3.966664157304088,
+        "basin": 1,
+        "decision": "accepted",
+        "candidate_id": "D4-A07",
+        "distance_to_reference_px": 7.615773105863909
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B20",
+    "color": "black",
+    "reference_xy": [
+      1731,
+      1653
+    ],
+    "recovered_in": [],
+    "nearby_traces": [
+      {
+        "xy": [
+          1733,
+          1652
+        ],
+        "color": "black",
+        "source_id": "native:1733:1652",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.17097371816635132,
+        "value": 0.9176470637321472,
+        "saturation": 0.470085471868515,
+        "dark_fraction": 0.10784313725490197,
+        "max_dark_sector": 0.23529411764705882,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 2.23606797749979
+      },
+      {
+        "xy": [
+          1741,
+          1650
+        ],
+        "color": "black",
+        "source_id": "reflection_rejections:557",
+        "old_reason": "associated colored interior",
+        "arm": "rejected",
+        "original_xy": [
+          1742.8907595927956,
+          1651.1568750000001
+        ],
+        "response": 0.24395900964736938,
+        "value": 1.0,
+        "saturation": 0.4431372284889221,
+        "dark_fraction": 0.0,
+        "max_dark_sector": 0.0,
+        "decision": "reflection enclosed by colored support",
+        "distance_to_reference_px": 10.44030650891055
+      },
+      {
+        "xy": [
+          1741,
+          1650
+        ],
+        "color": "black",
+        "source_id": "native:1741:1650",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.24395900964736938,
+        "value": 1.0,
+        "saturation": 0.4431372284889221,
+        "dark_fraction": 0.0,
+        "max_dark_sector": 0.0,
+        "decision": "reflection enclosed by colored support",
+        "distance_to_reference_px": 10.44030650891055
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B21",
+    "color": "black",
+    "reference_xy": [
+      1742,
+      1669
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1742,
+          1670
+        ],
+        "color": "black",
+        "source_id": "native:1742:1670",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.18327701091766357,
+        "value": 0.729411780834198,
+        "saturation": 0.3978494703769684,
+        "dark_fraction": 0.6078431372549019,
+        "max_dark_sector": 0.8823529411764706,
+        "decision": "accepted",
+        "candidate_id": "D4-A18",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          1743,
+          1657
+        ],
+        "color": "black",
+        "source_id": "native:1743:1657",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.21857386827468872,
+        "value": 0.8941176533699036,
+        "saturation": 0.5745614171028137,
+        "dark_fraction": 0.24019607843137256,
+        "max_dark_sector": 0.803921568627451,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 12.041594578792296
+      },
+      {
+        "xy": [
+          1730,
+          1666
+        ],
+        "color": "black",
+        "source_id": "excluded:264",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1730.9565387627251,
+          1667.066875
+        ],
+        "response": 0.18895715475082397,
+        "value": 0.9372549057006836,
+        "saturation": 0.4644351303577423,
+        "dark_fraction": 0.1715686274509804,
+        "max_dark_sector": 0.6078431372549019,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 12.36931687685298
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B24",
+    "color": "red",
+    "reference_xy": [
+      1795,
+      1685
+    ],
+    "recovered_in": [],
+    "nearby_traces": [
+      {
+        "xy": [
+          1799,
+          1678
+        ],
+        "mode": 2,
+        "source_id": "pool:1934",
+        "old_reason": "profile",
+        "old_valid_cuts": 6,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 237,
+        "inset": 8.0,
+        "value": 0.7254902124404907,
+        "score": 3.9453380076634215,
+        "basin": 7,
+        "merged_into": "M4:370",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 8.06225774829855
+      },
+      {
+        "xy": [
+          1788,
+          1680
+        ],
+        "mode": 2,
+        "source_id": "pool:1936",
+        "old_reason": "profile",
+        "old_valid_cuts": 6,
+        "old_color_cuts": 6,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 155,
+        "inset": 0.0,
+        "value": 0.9882352948188782,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 8.602325267042627
+      },
+      {
+        "xy": [
+          1781,
+          1689
+        ],
+        "mode": 2,
+        "source_id": "pool:1942",
+        "old_reason": "profile",
+        "old_valid_cuts": 1,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 93,
+        "inset": 0.0,
+        "value": 0.3607843220233917,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 14.560219778561036
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B25",
+    "color": "red",
+    "reference_xy": [
+      1739,
+      1688
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1741,
+          1695
+        ],
+        "mode": 2,
+        "source_id": "pool:1946",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 9,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 120,
+        "inset": 2.8284271247461903,
+        "value": 0.8392156958580017,
+        "score": 2.373660437677521,
+        "basin": 2,
+        "merged_into": "pool:1943",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 7.280109889280518
+      },
+      {
+        "xy": [
+          1747,
+          1693
+        ],
+        "mode": 2,
+        "source_id": "pool:1943",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 168,
+        "inset": 5.0,
+        "value": 0.729411780834198,
+        "score": 3.64705890417099,
+        "basin": 2,
+        "decision": "accepted",
+        "candidate_id": "D4-A10",
+        "distance_to_reference_px": 9.433981132056603
+      },
+      {
+        "xy": [
+          1745,
+          1696
+        ],
+        "mode": 2,
+        "source_id": "pool:1948",
+        "old_reason": "profile",
+        "old_valid_cuts": 3,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 149,
+        "inset": 4.123105625617661,
+        "value": 0.7019608020782471,
+        "score": 2.894258532011906,
+        "basin": 2,
+        "merged_into": "pool:1943",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 10.0
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B26",
+    "color": "black",
+    "reference_xy": [
+      1757,
+      1689
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1756,
+          1689
+        ],
+        "color": "black",
+        "source_id": "reflection_rejections:324",
+        "old_reason": "surround insufficiently dark",
+        "arm": "rejected",
+        "original_xy": [
+          1754.824980422866,
+          1688.943125
+        ],
+        "response": 0.49764639139175415,
+        "value": 0.9450980424880981,
+        "saturation": 0.2033194899559021,
+        "dark_fraction": 0.5441176470588235,
+        "max_dark_sector": 0.8823529411764706,
+        "decision": "accepted",
+        "candidate_id": "D4-A14",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          1756,
+          1689
+        ],
+        "color": "black",
+        "source_id": "native:1756:1689",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.49764639139175415,
+        "value": 0.9450980424880981,
+        "saturation": 0.2033194899559021,
+        "dark_fraction": 0.5441176470588235,
+        "max_dark_sector": 0.8823529411764706,
+        "merged_into": "reflection_rejections:324",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          1748,
+          1687
+        ],
+        "color": "black",
+        "source_id": "native:1748:1687",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.19506704807281494,
+        "value": 0.7960784435272217,
+        "saturation": 0.6009852290153503,
+        "dark_fraction": 0.1568627450980392,
+        "max_dark_sector": 0.49019607843137253,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 9.219544457292887
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B28",
+    "color": "black",
+    "reference_xy": [
+      1746,
+      1707
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1747,
+          1708
+        ],
+        "color": "black",
+        "source_id": "excluded:378",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1744.8797963978072,
+          1706.841875
+        ],
+        "response": 0.2712574005126953,
+        "value": 0.8039215803146362,
+        "saturation": 0.30243900418281555,
+        "dark_fraction": 0.6617647058823529,
+        "max_dark_sector": 0.9803921568627451,
+        "decision": "accepted",
+        "candidate_id": "D4-A16",
+        "distance_to_reference_px": 1.4142135623730951
+      },
+      {
+        "xy": [
+          1747,
+          1708
+        ],
+        "color": "black",
+        "source_id": "native:1747:1708",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.2712574005126953,
+        "value": 0.8039215803146362,
+        "saturation": 0.30243900418281555,
+        "dark_fraction": 0.6617647058823529,
+        "max_dark_sector": 0.9803921568627451,
+        "merged_into": "excluded:378",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 1.4142135623730951
+      },
+      {
+        "xy": [
+          1736,
+          1702
+        ],
+        "color": "black",
+        "source_id": "native:1736:1702",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.16211605072021484,
+        "value": 0.9607843160629272,
+        "saturation": 0.518367350101471,
+        "dark_fraction": 0.029411764705882353,
+        "max_dark_sector": 0.09803921568627451,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 11.180339887498949
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B29",
+    "color": "black",
+    "reference_xy": [
+      1740,
+      1726
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1741,
+          1727
+        ],
+        "color": "black",
+        "source_id": "native:1741:1727",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.1191590428352356,
+        "value": 0.8078431487083435,
+        "saturation": 0.40291261672973633,
+        "dark_fraction": 0.3872549019607843,
+        "max_dark_sector": 0.7843137254901961,
+        "decision": "accepted",
+        "candidate_id": "D4-A20",
+        "distance_to_reference_px": 1.4142135623730951
+      },
+      {
+        "xy": [
+          1732,
+          1731
+        ],
+        "color": "black",
+        "source_id": "native:1732:1731",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.16707628965377808,
+        "value": 0.9843137264251709,
+        "saturation": 0.4820716977119446,
+        "dark_fraction": 0.029411764705882353,
+        "max_dark_sector": 0.058823529411764705,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 9.433981132056603
+      },
+      {
+        "xy": [
+          1741,
+          1737
+        ],
+        "color": "black",
+        "source_id": "native:1741:1737",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.1775476336479187,
+        "value": 0.9843137264251709,
+        "saturation": 0.6175299286842346,
+        "dark_fraction": 0.08333333333333333,
+        "max_dark_sector": 0.21568627450980393,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 11.045361017187261
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B30",
+    "color": "yellow",
+    "reference_xy": [
+      1764,
+      1728
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1757,
+          1727
+        ],
+        "mode": 1,
+        "source_id": "pool:1968",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 4,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 189,
+        "inset": 0.0,
+        "value": 0.9176470637321472,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 7.0710678118654755
+      },
+      {
+        "xy": [
+          1774,
+          1728
+        ],
+        "mode": 1,
+        "source_id": "pool:1969",
+        "old_reason": "profile",
+        "old_valid_cuts": 5,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 240,
+        "inset": 8.602325267042627,
+        "value": 0.8470588326454163,
+        "score": 4.606448646524086,
+        "basin": 10,
+        "decision": "accepted",
+        "candidate_id": "D4-A02",
+        "distance_to_reference_px": 10.0
+      },
+      {
+        "xy": [
+          1756,
+          1740
+        ],
+        "mode": 1,
+        "source_id": "pool:1980",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 241,
+        "inset": 10.0,
+        "value": 0.8980392217636108,
+        "score": 4.883688591852752,
+        "basin": 4,
+        "decision": "accepted",
+        "candidate_id": "D4-A01",
+        "distance_to_reference_px": 14.422205101855956
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "D4-B33",
+    "color": "yellow",
+    "reference_xy": [
+      1744,
+      1738
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1756,
+          1740
+        ],
+        "mode": 1,
+        "source_id": "pool:1980",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 241,
+        "inset": 10.0,
+        "value": 0.8980392217636108,
+        "score": 4.883688591852752,
+        "basin": 4,
+        "decision": "accepted",
+        "candidate_id": "D4-A01",
+        "distance_to_reference_px": 12.165525060596439
+      },
+      {
+        "xy": [
+          1757,
+          1727
+        ],
+        "mode": 1,
+        "source_id": "pool:1968",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 4,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 189,
+        "inset": 0.0,
+        "value": 0.9176470637321472,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 17.029386365926403
+      },
+      {
+        "xy": [
+          1743,
+          1756
+        ],
+        "mode": 1,
+        "source_id": "pool:1992",
+        "old_reason": "profile",
+        "old_valid_cuts": 3,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 238,
+        "inset": 8.48528137423857,
+        "value": 0.7960784435272217,
+        "score": 4.32920870119542,
+        "basin": 7,
+        "decision": "accepted",
+        "candidate_id": "D4-A06",
+        "distance_to_reference_px": 18.027756377319946
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B01",
+    "color": "yellow",
+    "reference_xy": [
+      200,
+      1047
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          204,
+          1050
+        ],
+        "mode": 1,
+        "source_id": "pool:904",
+        "old_reason": "profile",
+        "old_valid_cuts": 1,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 231,
+        "inset": 7.0,
+        "value": 0.8666666746139526,
+        "score": 4.713079394727419,
+        "basin": 1,
+        "decision": "accepted",
+        "candidate_id": "H1-A01",
+        "distance_to_reference_px": 5.0
+      },
+      {
+        "xy": [
+          197,
+          1042
+        ],
+        "mode": 1,
+        "source_id": "pool:899",
+        "old_reason": "profile",
+        "old_valid_cuts": 0,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 129,
+        "inset": 2.0,
+        "value": 0.9686274528503418,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 5.830951894845301
+      },
+      {
+        "xy": [
+          187,
+          1071
+        ],
+        "mode": 1,
+        "source_id": "pool:919",
+        "old_reason": "spacing",
+        "old_valid_cuts": 6,
+        "old_color_cuts": 8,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 110,
+        "inset": 1.0,
+        "value": 0.9411764740943909,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 27.294688127912362
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B08",
+    "color": "black",
+    "reference_xy": [
+      181,
+      1099
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          182,
+          1099
+        ],
+        "color": "black",
+        "source_id": "native:182:1099",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.26404905319213867,
+        "value": 0.8588235378265381,
+        "saturation": 0.2785387933254242,
+        "dark_fraction": 0.7401960784313726,
+        "max_dark_sector": 0.9803921568627451,
+        "decision": "accepted",
+        "candidate_id": "H1-A07",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          178,
+          1110
+        ],
+        "color": "black",
+        "source_id": "excluded:226",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          179.50783085356304,
+          1110.216875
+        ],
+        "response": 0.3365217447280884,
+        "value": 0.9764705896377563,
+        "saturation": 0.3132529854774475,
+        "dark_fraction": 0.36764705882352944,
+        "max_dark_sector": 0.7647058823529411,
+        "decision": "accepted",
+        "candidate_id": "H1-A04",
+        "distance_to_reference_px": 11.40175425099138
+      },
+      {
+        "xy": [
+          178,
+          1110
+        ],
+        "color": "black",
+        "source_id": "native:178:1110",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.3365217447280884,
+        "value": 0.9764705896377563,
+        "saturation": 0.3132529854774475,
+        "dark_fraction": 0.36764705882352944,
+        "max_dark_sector": 0.7647058823529411,
+        "merged_into": "excluded:226",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 11.40175425099138
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B12",
+    "color": "black",
+    "reference_xy": [
+      184,
+      1123
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          184,
+          1122
+        ],
+        "color": "black",
+        "source_id": "excluded:282",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          183.48590446358654,
+          1122.149375
+        ],
+        "response": 0.31883504986763,
+        "value": 0.8156862854957581,
+        "saturation": 0.22115382552146912,
+        "dark_fraction": 0.6519607843137255,
+        "max_dark_sector": 1.0,
+        "decision": "accepted",
+        "candidate_id": "H1-A05",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          184,
+          1122
+        ],
+        "color": "black",
+        "source_id": "native:184:1122",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.31883504986763,
+        "value": 0.8156862854957581,
+        "saturation": 0.22115382552146912,
+        "dark_fraction": 0.6519607843137255,
+        "max_dark_sector": 1.0,
+        "merged_into": "excluded:282",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          174,
+          1125
+        ],
+        "color": "black",
+        "source_id": "excluded:31",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          173.54072043852779,
+          1128.1156250000001
+        ],
+        "response": 0.28201526403427124,
+        "value": 0.9921568632125854,
+        "saturation": 0.3320157825946808,
+        "dark_fraction": 0.049019607843137254,
+        "max_dark_sector": 0.17647058823529413,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 10.198039027185569
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B17",
+    "color": "black",
+    "reference_xy": [
+      169,
+      1148
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          170,
+          1146
+        ],
+        "color": "black",
+        "source_id": "native:170:1146",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.20672857761383057,
+        "value": 0.8039215803146362,
+        "saturation": 0.25853657722473145,
+        "dark_fraction": 0.6911764705882353,
+        "max_dark_sector": 0.9411764705882353,
+        "decision": "accepted",
+        "candidate_id": "H1-A11",
+        "distance_to_reference_px": 2.23606797749979
+      },
+      {
+        "xy": [
+          161,
+          1152
+        ],
+        "color": "black",
+        "source_id": "native:161:1152",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.1766102910041809,
+        "value": 0.9333333373069763,
+        "saturation": 0.45378148555755615,
+        "dark_fraction": 0.10784313725490197,
+        "max_dark_sector": 0.3333333333333333,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 8.94427190999916
+      },
+      {
+        "xy": [
+          167,
+          1157
+        ],
+        "color": "black",
+        "source_id": "excluded:163",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          165.5845732184808,
+          1157.946875
+        ],
+        "response": 0.2575554847717285,
+        "value": 0.9921568632125854,
+        "saturation": 0.3913043141365051,
+        "dark_fraction": 0.2107843137254902,
+        "max_dark_sector": 0.7450980392156863,
+        "decision": "accepted",
+        "candidate_id": "H1-A06",
+        "distance_to_reference_px": 9.219544457292887
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B27",
+    "color": "yellow",
+    "reference_xy": [
+      168,
+      1196
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          166,
+          1194
+        ],
+        "mode": 1,
+        "source_id": "pool:1031",
+        "old_reason": "profile",
+        "old_valid_cuts": 3,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 161,
+        "inset": 2.8284271247461903,
+        "value": 0.9333333373069763,
+        "score": 2.6398653276689372,
+        "basin": 8,
+        "merged_into": "pool:1030",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 2.8284271247461903
+      },
+      {
+        "xy": [
+          171,
+          1193
+        ],
+        "mode": 1,
+        "source_id": "pool:1030",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 226,
+        "inset": 7.0710678118654755,
+        "value": 0.8156862854957581,
+        "score": 4.435839449398753,
+        "basin": 8,
+        "decision": "accepted",
+        "candidate_id": "H1-A02",
+        "distance_to_reference_px": 4.242640687119285
+      },
+      {
+        "xy": [
+          163,
+          1218
+        ],
+        "mode": 1,
+        "source_id": "pool:1048",
+        "old_reason": "profile",
+        "old_valid_cuts": 0,
+        "old_color_cuts": 8,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 31,
+        "inset": 1.0,
+        "value": 0.5686274766921997,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 22.561028345356956
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B28",
+    "color": "black",
+    "reference_xy": [
+      168,
+      1217
+    ],
+    "recovered_in": [
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          168,
+          1217
+        ],
+        "color": "black",
+        "source_id": "native:168:1217",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.22229677438735962,
+        "value": 0.8117647171020508,
+        "saturation": 0.3333333134651184,
+        "dark_fraction": 0.5735294117647058,
+        "max_dark_sector": 0.9215686274509803,
+        "decision": "accepted",
+        "candidate_id": "H1-A10",
+        "distance_to_reference_px": 0.0
+      },
+      {
+        "xy": [
+          162,
+          1225
+        ],
+        "color": "black",
+        "source_id": "excluded:50",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          163.59553641346906,
+          1227.5531250000001
+        ],
+        "response": 0.2433149814605713,
+        "value": 0.9882352948188782,
+        "saturation": 0.4523809254169464,
+        "dark_fraction": 0.08333333333333333,
+        "max_dark_sector": 0.3333333333333333,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 10.0
+      },
+      {
+        "xy": [
+          162,
+          1225
+        ],
+        "color": "black",
+        "source_id": "native:162:1225",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.2433149814605713,
+        "value": 0.9882352948188782,
+        "saturation": 0.4523809254169464,
+        "dark_fraction": 0.08333333333333333,
+        "max_dark_sector": 0.3333333333333333,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 10.0
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H1-B31",
+    "color": "yellow",
+    "reference_xy": [
+      164,
+      1229
+    ],
+    "recovered_in": [],
+    "nearby_traces": [
+      {
+        "xy": [
+          165,
+          1229
+        ],
+        "mode": 1,
+        "source_id": "pool:1064",
+        "old_reason": "profile",
+        "old_valid_cuts": 5,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 89,
+        "inset": 1.0,
+        "value": 0.8784313797950745,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          168,
+          1227
+        ],
+        "mode": 1,
+        "source_id": "pool:1061",
+        "old_reason": "profile",
+        "old_valid_cuts": 4,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 108,
+        "inset": 1.0,
+        "value": 0.8352941274642944,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 4.47213595499958
+      },
+      {
+        "xy": [
+          163,
+          1218
+        ],
+        "mode": 1,
+        "source_id": "pool:1048",
+        "old_reason": "profile",
+        "old_valid_cuts": 0,
+        "old_color_cuts": 8,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 31,
+        "inset": 1.0,
+        "value": 0.5686274766921997,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 11.045361017187261
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B12",
+    "color": "yellow",
+    "reference_xy": [
+      1539,
+      2974
+    ],
+    "recovered_in": [],
+    "nearby_traces": [
+      {
+        "xy": [
+          1523,
+          2986
+        ],
+        "mode": 1,
+        "source_id": "pool:3270",
+        "old_reason": "profile",
+        "old_valid_cuts": 7,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 241,
+        "inset": 10.0,
+        "value": 0.7647058963775635,
+        "score": 4.158599504070088,
+        "basin": 4,
+        "merged_into": "M4:568",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 20.0
+      },
+      {
+        "xy": [
+          1517,
+          2983
+        ],
+        "mode": 1,
+        "source_id": "pool:3257",
+        "old_reason": "spacing",
+        "old_valid_cuts": 8,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 230,
+        "inset": 7.211102550927978,
+        "value": 0.8588235378265381,
+        "score": 4.670427095446086,
+        "basin": 4,
+        "merged_into": "M4:568",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 23.769728648009426
+      },
+      {
+        "xy": [
+          1507,
+          2994
+        ],
+        "mode": 1,
+        "source_id": "pool:3287",
+        "old_reason": "spacing",
+        "old_valid_cuts": 12,
+        "old_color_cuts": 12,
+        "color": "yellow",
+        "arm": "rejected",
+        "support_pixels": 207,
+        "inset": 3.605551275463989,
+        "value": 0.9529411792755127,
+        "score": 3.435878284378983,
+        "basin": 4,
+        "merged_into": "M4:568",
+        "decision": "same colored brightness basin; identity not proven",
+        "distance_to_reference_px": 37.73592452822641
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B13",
+    "color": "black",
+    "reference_xy": [
+      1556,
+      2981
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1556,
+          2982
+        ],
+        "color": "black",
+        "source_id": "points:332",
+        "old_reason": "passed detector; downstream R192 or baseline",
+        "arm": "rejected",
+        "original_xy": [
+          1555.9212999216913,
+          2981.6306250000002
+        ],
+        "response": 0.3876959979534149,
+        "value": 0.7058823704719543,
+        "saturation": 0.18888887763023376,
+        "dark_fraction": 0.9068627450980392,
+        "max_dark_sector": 1.0,
+        "decision": "accepted",
+        "candidate_id": "H4-A09",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          1556,
+          2982
+        ],
+        "color": "black",
+        "source_id": "native:1556:2982",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.3876959979534149,
+        "value": 0.7058823704719543,
+        "saturation": 0.18888887763023376,
+        "dark_fraction": 0.9068627450980392,
+        "max_dark_sector": 1.0,
+        "merged_into": "points:332",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 1.0
+      },
+      {
+        "xy": [
+          1549,
+          2971
+        ],
+        "color": "black",
+        "source_id": "native:1549:2971",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.05140763521194458,
+        "value": 0.6000000238418579,
+        "saturation": 0.5490195751190186,
+        "dark_fraction": 0.2107843137254902,
+        "max_dark_sector": 0.6666666666666666,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 12.206555615733702
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B23",
+    "color": "black",
+    "reference_xy": [
+      1443,
+      3061
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1444,
+          3059
+        ],
+        "color": "black",
+        "source_id": "excluded:75",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1442.546202036022,
+          3059.191875
+        ],
+        "response": 0.4438881576061249,
+        "value": 0.8196078538894653,
+        "saturation": 0.1100478395819664,
+        "dark_fraction": 0.8872549019607843,
+        "max_dark_sector": 1.0,
+        "decision": "accepted",
+        "candidate_id": "H4-A07",
+        "distance_to_reference_px": 2.23606797749979
+      },
+      {
+        "xy": [
+          1444,
+          3059
+        ],
+        "color": "black",
+        "source_id": "native:1444:3059",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.4438881576061249,
+        "value": 0.8196078538894653,
+        "saturation": 0.1100478395819664,
+        "dark_fraction": 0.8872549019607843,
+        "max_dark_sector": 1.0,
+        "merged_into": "excluded:75",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 2.23606797749979
+      },
+      {
+        "xy": [
+          1434,
+          3069
+        ],
+        "color": "black",
+        "source_id": "excluded:306",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1432.6010180109631,
+          3067.146875
+        ],
+        "response": 0.376640260219574,
+        "value": 0.9490196108818054,
+        "saturation": 0.3223140239715576,
+        "dark_fraction": 0.46568627450980393,
+        "max_dark_sector": 0.8627450980392157,
+        "decision": "accepted",
+        "candidate_id": "H4-A10",
+        "distance_to_reference_px": 12.041594578792296
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B25",
+    "color": "black",
+    "reference_xy": [
+      1525,
+      3051
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1530,
+          3049
+        ],
+        "color": "black",
+        "source_id": "points:335",
+        "old_reason": "passed detector; downstream R192 or baseline",
+        "arm": "rejected",
+        "original_xy": [
+          1530.0638214565388,
+          3051.236875
+        ],
+        "response": 0.4853633642196655,
+        "value": 0.8392156958580017,
+        "saturation": 0.1355140060186386,
+        "dark_fraction": 0.8627450980392157,
+        "max_dark_sector": 1.0,
+        "decision": "accepted",
+        "candidate_id": "H4-A06",
+        "distance_to_reference_px": 5.385164807134504
+      },
+      {
+        "xy": [
+          1530,
+          3049
+        ],
+        "color": "black",
+        "source_id": "native:1530:3049",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.4853633642196655,
+        "value": 0.8392156958580017,
+        "saturation": 0.1355140060186386,
+        "dark_fraction": 0.8627450980392157,
+        "max_dark_sector": 1.0,
+        "merged_into": "points:335",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 5.385164807134504
+      },
+      {
+        "xy": [
+          1530,
+          3065
+        ],
+        "color": "black",
+        "source_id": "excluded:24",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1532.0528582615505,
+          3067.146875
+        ],
+        "response": 0.29811131954193115,
+        "value": 0.9490196108818054,
+        "saturation": 0.43801650404930115,
+        "dark_fraction": 0.14705882352941177,
+        "max_dark_sector": 0.5098039215686274,
+        "decision": "insufficient directional dark support",
+        "distance_to_reference_px": 14.866068747318506
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B27",
+    "color": "black",
+    "reference_xy": [
+      1561,
+      3056
+    ],
+    "recovered_in": [],
+    "nearby_traces": [
+      {
+        "xy": [
+          1559,
+          3056
+        ],
+        "color": "black",
+        "source_id": "native:1559:3056",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.04661431908607483,
+        "value": 0.5411764979362488,
+        "saturation": 0.36231884360313416,
+        "dark_fraction": 0.7990196078431373,
+        "max_dark_sector": 1.0,
+        "merged_into": "excluded:130",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 2.0
+      },
+      {
+        "xy": [
+          1552,
+          3059
+        ],
+        "color": "black",
+        "source_id": "excluded:130",
+        "old_reason": "near approximate band edge",
+        "arm": "rejected",
+        "original_xy": [
+          1551.943226311668,
+          3061.180625
+        ],
+        "response": 0.3033672869205475,
+        "value": 0.8352941274642944,
+        "saturation": 0.3380281329154968,
+        "dark_fraction": 0.5343137254901961,
+        "max_dark_sector": 0.9130434782608695,
+        "decision": "accepted",
+        "candidate_id": "H4-A11",
+        "distance_to_reference_px": 9.486832980505138
+      },
+      {
+        "xy": [
+          1552,
+          3059
+        ],
+        "color": "black",
+        "source_id": "native:1552:3059",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.3033672869205475,
+        "value": 0.8352941274642944,
+        "saturation": 0.3380281329154968,
+        "dark_fraction": 0.5343137254901961,
+        "max_dark_sector": 0.9130434782608695,
+        "merged_into": "excluded:130",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 9.486832980505138
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B31",
+    "color": "red",
+    "reference_xy": [
+      1476,
+      3074
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1469,
+          3073
+        ],
+        "mode": 2,
+        "source_id": "pool:3387",
+        "old_reason": "profile",
+        "old_valid_cuts": 2,
+        "old_color_cuts": 7,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 116,
+        "inset": 2.23606797749979,
+        "value": 0.8196078538894653,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 7.0710678118654755
+      },
+      {
+        "xy": [
+          1472,
+          3067
+        ],
+        "mode": 2,
+        "source_id": "pool:3385",
+        "old_reason": "profile",
+        "old_valid_cuts": 7,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 215,
+        "inset": 2.0,
+        "value": 0.7647058963775635,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 8.06225774829855
+      },
+      {
+        "xy": [
+          1469,
+          3069
+        ],
+        "mode": 2,
+        "source_id": "pool:3386",
+        "old_reason": "profile",
+        "old_valid_cuts": 5,
+        "old_color_cuts": 12,
+        "color": "red",
+        "arm": "rejected",
+        "support_pixels": 167,
+        "inset": 0.0,
+        "value": 0.9215686321258545,
+        "decision": "insufficient coherent colored patch",
+        "distance_to_reference_px": 8.602325267042627
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  },
+  {
+    "observation_id": "H4-B34",
+    "color": "black",
+    "reference_xy": [
+      1507,
+      3033
+    ],
+    "recovered_in": [
+      "rejected",
+      "native"
+    ],
+    "nearby_traces": [
+      {
+        "xy": [
+          1508,
+          3036
+        ],
+        "color": "black",
+        "source_id": "reflection_rejections:258",
+        "old_reason": "associated colored interior",
+        "arm": "rejected",
+        "original_xy": [
+          1508.1844166014096,
+          3037.315625
+        ],
+        "response": 0.4937340021133423,
+        "value": 0.8117647171020508,
+        "saturation": 0.12560385465621948,
+        "dark_fraction": 0.7549019607843137,
+        "max_dark_sector": 0.9411764705882353,
+        "decision": "accepted",
+        "candidate_id": "H4-A05",
+        "distance_to_reference_px": 3.1622776601683795
+      },
+      {
+        "xy": [
+          1508,
+          3036
+        ],
+        "color": "black",
+        "source_id": "native:1508:3036",
+        "old_reason": "new native search",
+        "arm": "native",
+        "response": 0.4937340021133423,
+        "value": 0.8117647171020508,
+        "saturation": 0.12560385465621948,
+        "dark_fraction": 0.7549019607843137,
+        "max_dark_sector": 0.9411764705882353,
+        "merged_into": "reflection_rejections:258",
+        "decision": "near existing reflection; identity not proven",
+        "distance_to_reference_px": 3.1622776601683795
+      },
+      {
+        "xy": [
+          1497,
+          3038
+        ],
+        "color": "black",
+        "source_id": "reflection_rejections:831",
+        "old_reason": "associated colored interior",
+        "arm": "rejected",
+        "original_xy": [
+          1498.2392325763508,
+          3037.315625
+        ],
+        "response": 0.1369324028491974,
+        "value": 0.47843137383461,
+        "saturation": 0.49180328845977783,
+        "dark_fraction": 0.75,
+        "max_dark_sector": 1.0,
+        "decision": "not a compact bright low-chroma reflection",
+        "distance_to_reference_px": 11.180339887498949
+      }
+    ],
+    "caution": "Distance locates evidence for review; not an ownership rule or automatic cause assignment."
+  }
+]

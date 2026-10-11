@@ -1,0 +1,104 @@
+{
+  "tests": {
+    "command": ".venv/bin/python -m unittest photo2.test_stage1_pilot photo2.test_stage1_recovery",
+    "passed": 12
+  },
+  "byte_identical_generated_files": 19,
+  "reproduction": [
+    {
+      "path": "photo2/review/r238/development/D3-comparison.png",
+      "sha256": "910078fa0a7597f256b7645fa44a50625d6b0032e4d110d7a24887aeff1c9a99"
+    },
+    {
+      "path": "photo2/review/r238/development/D4-comparison.png",
+      "sha256": "c6396624e5687a64200b752a7fe2683b39b0cc7bba209d04903afaacba04c424"
+    },
+    {
+      "path": "photo2/review/r238/development/candidates.json",
+      "sha256": "ae21fb0549a894bc1471b99c05ee48750fdccfe0eff20dc8800ba33c2ebfcb1b"
+    },
+    {
+      "path": "photo2/review/r238/transfer/H1-comparison.png",
+      "sha256": "4b5e44ff696bed64429c5af7b7c2ba1d3f75d820337a054bcc11c534e8ecb9a5"
+    },
+    {
+      "path": "photo2/review/r238/transfer/H4-comparison.png",
+      "sha256": "73aab549565d8c53bd1b10c78b76516f4c752b48fdb0ca83a98d3673d7aa0414"
+    },
+    {
+      "path": "photo2/review/r238/transfer/candidates.json",
+      "sha256": "ad03b3433bfec7215d9748ebdb7a66994b7555559a5e93be8185c9807fca3154"
+    },
+    {
+      "path": "photo2/review/r238/D3-audit.md",
+      "sha256": "8720e676b7706c2ad93cb253364ac783c26f50fffd2efbcedc5122abc0e825b2"
+    },
+    {
+      "path": "photo2/review/r238/D3-audit.png",
+      "sha256": "d8849ac9df229356e9d9bd799f7d9bf383a59b94fafd212280de8848d810d2f4"
+    },
+    {
+      "path": "photo2/review/r238/D4-audit.md",
+      "sha256": "81f97eb3bf966e6533402491175e99ee58041627925ee283df17721356963c44"
+    },
+    {
+      "path": "photo2/review/r238/D4-audit.png",
+      "sha256": "0b91f61f99040cd7392c9362177335ad7a7d199f1b9f2109423e1f45f14bd1c5"
+    },
+    {
+      "path": "photo2/review/r238/H1-audit.md",
+      "sha256": "672091340864c2b03d892e8c02053d80f27101cdc6e163efed3d0f4f84684606"
+    },
+    {
+      "path": "photo2/review/r238/H1-audit.png",
+      "sha256": "1ba6da75d6321bea06f44b15f24163d58087712f4bcf6e1c86330ee79f653a09"
+    },
+    {
+      "path": "photo2/review/r238/H4-audit.md",
+      "sha256": "e3bd631ccbef040568fa72be0ebdf0359157e563df6e5892e6eeec9db949d135"
+    },
+    {
+      "path": "photo2/review/r238/H4-audit.png",
+      "sha256": "e7b2ee15d91f8a58836ce8c1874fe7bf286d22100bd17fcd7d4912bb7653bd5f"
+    },
+    {
+      "path": "photo2/review/r238/failure-paths.json",
+      "sha256": "7b9a0cf6f6e5b220ca60cf8444ae0eb15d52d47f8d239b15edc69c8863a357aa"
+    },
+    {
+      "path": "photo2/review/r238/failure-paths.png",
+      "sha256": "e4743c734dbcb889be108f0967180869cfb881cb74583c0de3b0f5faf0519f95"
+    },
+    {
+      "path": "photo2/review/r238/original-miss-traces.json",
+      "sha256": "4cc902b745d488fcc7641a217154496ad923b34676bb522a17e94e8a17c73678"
+    },
+    {
+      "path": "photo2/review/r238/report.json",
+      "sha256": "995319ce4733d0ac4695edec2c9ca26321d3bea6804c3a6ca35eda0ce17ca577"
+    },
+    {
+      "path": "photo2/review/r238/summary.json",
+      "sha256": "b2ba17325eb1476ed751788e4473e3e8788827dd55c4e130156b8d22dba74170"
+    }
+  ],
+  "unchanged_historical_tracked_files": 68,
+  "unchanged_input_sources": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/output/r231/profile-pool.json": "57ee2f6995d3c48117e6c00e3fed56cc48931e3253c42e8d57826faa8af57085",
+    "photo2/output/r231/profiles.npz": "419f3f968e2048dbef491d9b9671b85851907de8590edcb3fd328b73da3128e0",
+    "photo2/auto_label_beads.py": "57855ac1c9c382a2fe03ef4c49e1eb5c181df4aa9cbdd62299116954c01dbbcd",
+    "photo2/output/r238/old-detector.json": "e8430022db5a630c83f4724e9da9389de8e8b3dc7d75600f40c34f0da3ae6755",
+    "photo2/review/r231/points.json": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+    "photo2/review/r192/candidates.json": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d"
+  },
+  "request_log_append_only": true,
+  "detector_freeze_matches": true,
+  "transfer_rules_unchanged": true,
+  "source_files": {
+    "photo2/stage1_recovery.py": "8a2526e9301f51a26b97fa0acbb5d2b64ca492e22064aadf9b36a02b11ff52f4",
+    "photo2/evaluate_stage1_recovery.py": "769cb641a4c95eda0a2201170160a930b21819f4f4cb9c8b8c830219354870d7",
+    "photo2/test_stage1_recovery.py": "0a8b1f8f72d7c451b9db503e03a7b5ef559f403e0d3d522a15a5f6a0ee4bdd50"
+  },
+  "limitations": "Synthetic tests and reproduction verify implementation/accounting, not visual ownership ground truth or generality."
+}
