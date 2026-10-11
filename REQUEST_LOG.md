@@ -4971,3 +4971,63 @@ approval as requested in the supplied prompt. Suggested authorization:
 Recommend GPT-6.1 Sol / High, same branch, /new for a clean implementation session
 after approval; user controls switching. No recovered count, hand, indices,
 pattern or generalization claim.
+
+## R234 — Clarify complete visible-body map and full-string indexing
+
+User clarifies that recent strategy discussion has become unnecessarily complex.
+Two stages must succeed before repeating-pattern recovery: (1) identify every
+fully/clearly/sufficiently visible bead on the actual photograph with location and
+red/yellow/black color; (2) assign its correct full-string bead_index. Multiple
+detection passes are allowed, especially separate colored and black/reflection/
+dark-context methods. Reflection, brightness maximum, visible centroid and physical
+center need not coincide. Use neighbors/geometry to resolve ambiguity without
+inventing bodies or treating two reflections as two beads. Small edge slivers and
+substantially hidden beads may remain unresolved. Observations and predicted slots
+must stay separate.
+
+Stage 2 must reuse/adapt beads.pov to the actual smooth planar necklace spline,
+approximately6.5 beads/turn and ±1/±6/±7 neighbors, with 3D shape, perspective and
+occlusion as needed. Investigate possible1–2% local longitudinal spacing changes,
+preserving total bead count and global closure; neither necessity nor sufficiency
+is established. Compare both helicities and experimentally determine which/how
+many reliable observations distinguish them. Preserve alternative counts, origins,
+phases and correspondences. Completion means every eligible bead has reliable color
+and unambiguous correct relative index apart from arbitrary origin/direction. If
+ambiguity survives, specify alternatives and evidence that would distinguish them.
+Repeating-color-sequence inference is separate and must wait.
+
+Requested outcome now: high-level explanation of actual Stage1/Stage2 progress,
+reusable implementations, sequential versus feedback workflow, shortest credible
+route, revised bounded next experiment with success criteria, and a critical
+dead-end assessment. User explicitly requests discussion/proposed plan only,
+stopping before code changes. This is not approval to implement E233.
+
+Read-only reassessment: current handoff/log/plan/review; R175–R179 spline/hand
+model, R184 center-count score, R190 curve failure, R160 inverse ambiguity,
+R192/R193 colored and black evidence/ownership audit; inspected SplineRope and
+local curved/camera/neighbor/registration code and searched stretch implementation.
+Existing longitudinal stretch remains unimplemented; surface-shape axial stretch
+and q variation are different quantities. Confirmed real-photo correspondence,
+N and helicity remain unresolved despite reusable forward geometry.
+
+Recommendation: staged outputs with controlled geometry feedback; a body needs
+useful image support, not a perfect silhouette or exact physical center. Simplify
+the broad E233 architecture comparison to complete inventories in four selected
+real-photo sections using existing color and black-context methods, two sections
+reserved from tuning. Predeclare eligible bodies from raw evidence; score every
+clear eligible body, color, duplicate/false body and unresolved case. Require
+complete correct local inventories and no known false/duplicate bodies; distinguish
+automatic output from assisted correction, and do not treat ambiguous reference
+labels as ground truth. Whole-photo Stage1 completion remains a later coverage
+audit. Stage2 should test increasing spatially informative observation subsets,
+both hands and fixed-N zero-net stretch alternatives, then overlapping patch
+correspondence and global closure. No repeat inference in this phase.
+
+Preflight daisy/photo-2-strategy-v3 at407ab928d75e705460e3c9cb4d8525daf215efa6;
+origin matched after fetch, no stashes/tracked edits, original screenshot untracked.
+Only documentation was updated to preserve the clarified objective and prevent
+execution of the superseded E233 proposal. No code changes, algorithm runs, new
+labels, numerical fits, renderings or measured detection performance. Verify
+append-only log, links, scoped changes and remote tip after documentation commit.
+Stop for discussion. No /new needed now; retain prior Sol/High recommendation for
+approved implementation, with model/session switching controlled by the user.

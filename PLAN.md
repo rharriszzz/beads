@@ -1,6 +1,47 @@
 # Photo-2 reconstruction plan
 
-## Current R233 — strategy decision, not incremental R232 continuation
+## Current R234 — two-stage objective clarified; discuss before implementation
+
+Stage 1: identify every clearly/sufficiently visible red, yellow and black body,
+with stable observation ID, color, useful image location and supporting image
+evidence. Small edge slivers/substantially hidden bodies may remain unresolved.
+Keep reflections, interior locations, visible centroids and physical centers
+distinct; a model-predicted slot is not a detected body.
+
+Stage 2: associate these bodies with correct full-string indices using the
+existing planar-spline/3D geometry, both helicities, candidate counts/phase/origin
+and uncertain correspondence. Reuse the existing approximate spline and tested
+forward kernels; camera and photo associations remain unverified. Test smooth
+local spacing variation at 0/1/2% only when needed, preserving N and closure.
+Longitudinal stretch is not yet implemented; changing q or bead axial shape is
+not that correction. Determine observation requirements for helicity using
+increasing subsets, multiple section orientations and held-out predictions.
+
+Completion requires every eligible body to have reliable color and an unambiguous
+relative index modulo global origin/direction. If alternatives survive, report
+their actual differing assignments and discriminating evidence. No repeating
+pattern inference before both stages succeed.
+
+Recommendation for discussion: simplify E233 to complete local inventories in
+four representative sections (two development, two reserved from tuning), using
+existing colored and separate black-context methods. Freeze eligibility/reference
+judgments from raw images before scoring; no full silhouettes required. Pass only
+if every clearly eligible body is represented once with correct color and useful
+interior evidence, no known false/duplicate bodies, and unresolved cases explicitly
+listed. Ambiguous eligibility cannot be used to remove a detection failure.
+Separate automatic output from any agent-assisted corrections; report correction
+burden. Reference ambiguity that prevents scoring makes the outcome inconclusive.
+Geometry may direct searches but may not certify unsupported bodies. No FFT
+comparison, new general detector architecture or full geometry fit in this pilot.
+
+After successful transfer, expand the coverage audit around the whole photo and
+fit progressively larger overlapping indexed patches, retaining global alternatives
+and checking loop closure. Do not wait for perfect segmentation to test geometry
+on reliable subsets. **No experiment is authorized by this clarification.** Stop
+for discussion. Existing GPT-6.1 Sol / High implementation recommendation remains;
+stay in this discussion, no /new needed now.
+
+## Prior R233 — strategy decision, not incremental R232 continuation
 
 Branch **photo-2-strategy-v3**, review starting at `d65c78f` over R232 `b28b99e`.
 [STRATEGY_REVIEW.md](STRATEGY_REVIEW.md) is the current decision document.

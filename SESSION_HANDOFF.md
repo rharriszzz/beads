@@ -1,6 +1,31 @@
 # Beads session handoff — new branch
 
-## Current R233 — independent strategy review delivered; implementation awaits approval
+## Current R234 — clarified objective; explanation and proposed plan only
+
+User specifies two stages: complete sufficiently visible red/yellow/black body
+observations, then correct globally consistent bead_index assignments. Origin
+and string-direction conventions are free. Repeating-pattern inference must
+wait for both stages. Geometry can guide detection, but predicted slots remain
+separate from observed bodies. No perfect-mask prerequisite or automatic black
+exclusion. Fit both helicities; investigate which observations distinguish them.
+Test possible 1–2% longitudinal stretch with zero net length change and fixed N;
+it is currently a saved requirement, not an implemented fitting capability.
+
+Read [current PLAN.md](PLAN.md). The existing spline forward model, local
+perspective/surface fitting, visibility and neighbor helpers are reusable;
+their real-photo inverse correspondence is unverified. Current detectors supply
+colored/black proposals and some confirmed facts, not a complete reliable map.
+
+Proposed next experiment narrows E233 to complete inventories in four real-photo
+sections using existing methods, with two sections reserved from tuning. Require
+all clearly eligible bodies accounted for, correct colors, zero known false or
+duplicate bodies, and explicit uncertainty/assistance. The old broad architecture
+comparison and 60% coverage gate are superseded as the proposed next task.
+No reconstruction code, data or experiment changed. Documentation records only.
+**Stop for discussion; implementation is not authorized.** No /new needed now;
+prior Sol / High recommendation remains for later approved implementation.
+
+## Prior R233 — independent strategy review delivered; implementation awaits approval
 
 Working branch is **photo-2-strategy-v3**, starting this review at `d65c78f`,
 based on preserved `photo-2-reconstruction-v2` R232 `b28b99e`. Fetched both

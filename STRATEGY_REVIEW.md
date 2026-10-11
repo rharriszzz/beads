@@ -1,5 +1,17 @@
 # Photo 2: strategy decision — R233
 
+**R234 clarification supersedes the proposed E233 execution plan below.**
+The current objective is (1) a complete reliable map of sufficiently visible
+red/yellow/black bodies, then (2) correct globally consistent full-string indices,
+with geometry allowed to feed back into observation review. Repeating-pattern
+inference waits until both succeed. The broad E233 architecture comparison and
+its 60% coverage gate are not the recommended next milestone. Proposed next:
+complete inventories in four representative sections, two reserved from tuning,
+using existing colored and black-evidence methods; account for every clear body,
+with zero known false/duplicate bodies or wrong colors. This is a local pilot,
+not whole-photo completion. See current [plan](PLAN.md) and [R234](REQUEST_LOG.md).
+Discussion only: neither the original nor revised experiment is authorized yet.
+
 2026-10-10. Documentation review, **not an executed reconstruction experiment**.
 Reviewed `photo-2-strategy-v3` at `d65c78f`, based on R232
 `b28b99e8ae224d0a597b69049160f43563b29540`; fetched remote tips agree.
