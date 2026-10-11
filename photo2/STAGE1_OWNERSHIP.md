@@ -1,5 +1,7 @@
 # R239 — bounded Stage 1 body ownership
 
+R252 now [consolidates these overlapping observations and audits trusted coverage](COLORED_OBSERVATION_CONSOLIDATION.md). Historical evidence and original statuses below remain unchanged.
+
 **The filter removes all confirmed errors in this six-section audit, but loses
 18 previously covered bodies and retains nine unresolved proposals.** It is a
 useful conservative observation subset, not a completed automatic identity map.

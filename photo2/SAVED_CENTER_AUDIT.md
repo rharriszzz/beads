@@ -1,5 +1,7 @@
 # Saved centers provide an initial position basis — R200
 
+R252 now [consolidates these overlapping observations and audits trusted coverage](COLORED_OBSERVATION_CONSOLIDATION.md). Historical evidence and original statuses below remain unchanged.
+
 Your 41 saved visible-part center marks lie on **18 red and 23 yellow beads**.
 Raw-image inspection supports keeping all 41 as assisted starting references.
 They cover the whole loop sufficiently to begin a correspondence trial without

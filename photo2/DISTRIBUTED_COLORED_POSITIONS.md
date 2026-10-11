@@ -1,5 +1,7 @@
 # 208 distributed colored interior references — R201–R203
 
+R252 now [consolidates these overlapping observations and audits trusted coverage](COLORED_OBSERVATION_CONSOLIDATION.md). Historical evidence and original statuses below remain unchanged.
+
 R208 adds [parallel-path cue measurements](PARALLEL_PROFILE_CUES.md) while
 preserving this selected set and every reference position.
 

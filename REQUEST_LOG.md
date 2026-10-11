@@ -5951,3 +5951,94 @@ Before predicting locations for all visible beads or doing whole-necklace corres
 **What remains before global prediction:** produce a single provenance-preserving, deduplicated *reviewed colored observation basis* at original image coordinates, with stable source IDs, color, one safe interior point/patch per distinguishable red/yellow bead, evidence/ownership status, ambiguity, and image-arc sector. Cross-associate inventories using raw photo and local body evidence, **not merely nearest distance**; separate user-marked/explicitly confirmed, curator-reviewed, automatically proposed, duplicate/conflicted, and unresolved statuses. Quantify trusted coverage by arc sector and both colors, inspect the gaps and ambiguous same-color touching faces, and add only clear missing interiors. Prioritize accuracy and geographic spread over maximizing counts; do not discard genuinely separate bodies due to oversized merged masks, and do not assume all 208 are unique. Preserve useful 10%-visible colored slivers when safely identifiable, without requiring precise centers or full segmentation. Keep black without clear reflection deferred.
 
 This is a recorded direction and proposed next bounded audit, **not an authorization to launch correspondence fitting, color-repeat recovery or a new FFT/synthetic-render campaign**. Read original evidence/CSV/JSON before drafting the scoped audit implementation; preserve preexisting ledgers, source hashes and the current photo-2 branch.
+
+
+### R252 execution request — consolidate and audit now
+
+User explicitly authorizes the bounded consolidation in photo-2-strategy-v3, asks
+for safe fast-forward synchronization to decision commit 5aee223, and directs
+independent practical decisions without repeated minor approvals. Read actual
+R200/R201/R235/R238/R239 coordinates, masks, candidates and adjudications plus
+maker positive/identity history. Target a reliable distributed red/yellow basis,
+not an arbitrary 150–200 count. Safe visible-colored interiors with roughly 10%
+body eligibility suffice; neither exact centers nor complete masks are required.
+A connected hue mask cannot decide one-bead identity. Use raw context, reliable
+interiors, intervening Value valleys and parallel profiles where useful; minima
+alone do not prove two bodies. Leave dark pixels unassigned. Preserve source IDs,
+uncertainty, rejected/duplicate proposals and strength of evidence; proximity alone
+cannot determine identity. Audit 20–40 spline sectors, add only clear existing
+proposals in gaps, preserve black evidence separately, and deliver machine data,
+CSV, native whole-photo maps, difficult same-color examples, source accounting and
+fitting-readiness report. No helicity fit, global prediction, indices, color-repeat
+recovery, new FFT or substantial rendering. h+1 remains favored but both hands
+must later receive equivalent flexibility and objective evaluation. Update records,
+commit/push, verify exact remote tip and clean state, then stop.
+
+### R252 outcome — consolidated colored observations and coverage delivered
+
+Preflight daisy, correct branch/upstream, clean worktree, no stashes. Safe
+`git pull --ff-only --no-rebase --no-autostash` advanced dc9521f to 5aee223.
+Read current instructions/records and historical reports and actual data. Considered
+raw-crop review, support overlap, and parallel brightness profiles; combined them
+without detector tuning. No delegation or new model/session/usage status supplied.
+
+Final **310 trusted distinct photographic observations: 151 red, 159 yellow**.
+Strongest evidence categories: 21 bounded explicit maker confirmations, 34
+maker-marked/reviewed, 255 curator-reviewed. Every accepted point retains exact
+native coordinate provenance; derived positive-mask points select actual positive
+pixels. Neither those points nor patch centroids become inferred physical centers.
+All 41 maker marks retained. Of R201’s original 208 selected patches, 202 retained,
+six ownership-uncertain samples withheld. The cross-source union adds 26 maker-mark
+bodies, 50 R235 bodies, 16 R239 bodies, seven earlier maker-fact bodies, eight clear
+existing gap proposals and one T2 halo yellow. Counts are overlapping source sets;
+these incremental additions describe one explicit accounting order only.
+
+454 local identity comparisons (84 same, 369 distinct, one unresolved), all eleven
+R201 raw/interior pages, maker positions, six local reference regions and 32 raw
+coverage crops reviewed. Namespace protects R235:D3-P04/R238:D3-P04’s different
+source identities. Retain R114/R115/R147 alias/distinctness limitations and R188’s
+“Cannot tell”; those facts do not automatically certify safe color interiors.
+Three previously eligible pale rims also withheld. Maker confirmation never
+propagates silently to new aliases, pixel extents or semantic color facts.
+
+Both colors in all 32 sectors, counts 5–20; weakest sector19 has five. Largest
+remaining trusted gap87.2px/0.944% of unchanged9235.59px spline. The whole loop has
+unrepresented colored faces, especially sparse rows/bends and small rear faces;
+no all-visible denominator or complete recall claim. Sector balancing is required
+for a later fit so dense top/Stage1 patches cannot compensate for weak sectors.
+
+D4 A02/P14 (B30/B27) remain two yellow observations despite R239’s oversized
+shared mask. Five native parallel routes show20.0–27.9% Value dips. Separate red
+faces show22.8–48.6%; confirmed close yellow points can have only4.1–12.1% dips.
+T2A01/A06’s nearly clipped Value route fails the simple smaller-endpoint valley
+metric despite credible distinct raw faces. One-body shading and M/O same-bead
+controls remain aliases. No dark pixels assigned and no full-mask revision.
+
+Inventory retains1347 source records,1183 colored/color-uncertain:310 representatives,
+305 accepted aliases,45 ambiguous,519 provisional,4 rejected records (two repeated
+historical proposals). The45 ambiguous records form29 unresolved cases; their
+number of distinct physical beads remains unknown. Nine principal withheld
+hypotheses are included, not added again. Preserve74 older black evidence records
+plus black proposal history and1144 R238 detector traces separately. Accepted
+color subset excludes black; no-reflection black remains deferred.
+
+Eleven tests pass: identity namespaces, original preservation/hashes, maker same/
+different constraints, contradictory transitive links, real yellow mask-loss and
+red duplicate regressions, one-body dark-valley counterexample, native RGB-before-
+Value interpolation, positive-mask point selection, trust levels and coverage.
+All86 generated numerical/image artifacts reproduce byte-for-byte in an ignored
+output directory. Source hashes, environment, reproduction commands, data and
+curated images accompany COLORED_OBSERVATION_CONSOLIDATION.md. These checks do
+not independently measure photographic precision, confidence or completeness.
+No source photo, scene, old detector/mask/spline, helicity fitting, prediction,
+index, pattern, rendering or FFT changes. Final docs/whitespace/link checks and
+exact commit/push/remote/clean verification complete delivery in the session.
+
+No further broad segmentation is needed before a bounded fitting trial. Next:
+freeze a sector-balanced fit/holdout split; check an interior-aware likelihood on
+existing known examples; compare both hands with equivalent flexibility and honest
+held-out scores, withholding unresolved cases. Validate local predictions at
+multiple orientations before global prediction/indexing. h+1 stays a strong
+working expectation, not proven. Stop here after delivery. Recommend Astra/High
+and /new before the separately authorized fitting implementation; user controls
+switching. No new active-model identity or usage is asserted.

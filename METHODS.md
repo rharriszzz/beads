@@ -1,5 +1,7 @@
 # Methods collection — bead-rope reconstruction
 
+- **R252 assisted colored-observation consolidation:** [method, evidence and reproduction](photo2/COLORED_OBSERVATION_CONSOLIDATION.md). Source-qualified identity, raw ownership review, parallel Value diagnostics without assigning dark pixels, and sector-balanced coverage. Native interiors remain distinct from centers.
+
 This is the reusable method index. The task and maker's construction facts live
 in [INITIAL_QUESTION.md](INITIAL_QUESTION.md); current execution priorities live
 in [PLAN.md](PLAN.md). Start each future entry with its inputs, output, assumptions,

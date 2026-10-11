@@ -1,6 +1,55 @@
 # Beads session handoff — new branch
 
-## Current R252 — working helicity; consolidate red/yellow positions next
+## Current R252 — trusted colored-observation consolidation completed
+
+**310 distinct reviewed observations: 151 red, 159 yellow.**
+[Scientific report](photo2/COLORED_OBSERVATION_CONSOLIDATION.md),
+[accepted native coordinates](photo2/review/r252/accepted.csv),
+[complete provenance inventory](photo2/review/r252/inventory.json),
+[all evidence](photo2/review/r252/INDEX.md).
+Both colors occur in all 32 equal image-arc sectors; density 5–20 per sector.
+Largest remaining trusted gap 87.2px / 0.944% of the unchanged approximate spline.
+Uneven density and unrepresented visible bodies remain explicit; no completeness
+or independently validated precision is claimed. 21 observations have bounded
+maker confirmation, 34 are maker-marked/reviewed, 255 curator-reviewed.
+
+Resolved cross-source identity through raw context and explicit adjudications,
+with 454 nearby comparisons. Source-qualified IDs prevent reused Stage 1 labels
+from silently aliasing different points. Preserve all 41 maker marks; retain
+202/208 original R201 selected bodies, withholding six uncertain samples.
+Eight reviewed existing gap proposals and one clear T2 halo yellow were added.
+Small distinct colored faces remain eligible under the approximate 10% guideline.
+The D4 B27/B30 pair is retained despite R239’s oversized shared mask; five native
+Value profiles show 20–28% dips. Weak/clipped-profile failures are also preserved.
+Dark pixels are never assigned. Interior points are not visible/physical centers.
+
+1347 source records include 1183 colored/color-uncertain records: 310 representatives,
+305 accepted aliases, 45 ambiguous, 519 provisional and four rejected records
+(two repeated historical proposals). The ambiguous records form 29 unresolved
+cases, not 29 established distinct beads. Historical R114/R115/R147 identities and
+R188 uncertainty survive; black reflection/body evidence is preserved separately.
+No unreviewed automatic proposal is silently promoted to maker truth.
+
+Eleven tests pass; 86 generated artifacts replay byte-for-byte. Sealed source
+hashes, curated raw/marked pairs, whole-photo maps, 32 sectors, profile arrays,
+coverage/source accounting and unresolved alternatives are tracked. No detector,
+photo, scene, spline, fitting, prediction, indexing, repeat search, rendering or FFT
+was changed/run beyond this consolidation. See verification.json for exact checks.
+
+**Next concrete task after review:** freeze a spatially balanced fit/holdout split
+and check an interior-aware surface-membership likelihood, then perform a bounded
+comparison of both helicities with equal fitting flexibility and held-out scoring.
+No further broad segmentation campaign is prerequisite. Keep h=+1 strongly favored
+as a working expectation, never proven or hard-coded; test h=-1 equally. Validate
+local predictions in multiple orientations before global prediction/indexing.
+Unresolved cases may remain withheld unless consequential to the fit.
+
+Stop after scoped commit/push and exact remote/clean verification; do not start the
+next aspect automatically. Recommend GPT-6 Astra / High and **/new before fitting**,
+using this report and handoff. Recommendation only; user controls model/session
+switching, and no new active-model status or usage was supplied.
+
+## Prior R252 decision — working helicity; consolidate red/yellow positions next
 
 The maker accepts **source h=+1 as the strongly favored working helicity**, based especially on the persistent direction-1-associated near-zero reciprocal FFT angle: R250 fitted +6.14 deg on V and +5.63 deg on Y, versus the nominal overhead h+1 prediction +4.29 deg and h-1 prediction -4.29 deg. This is a working scientific expectation, **not a demonstrated unique result**: the source centerline, camera projection, spatial-row ownership, and systematic angle calibration are uncertain. **Run both h=+1 and h=-1 with equivalent flexibility and honest comparison** in subsequent photo-to-model fitting; never hard-code away the alternative.
 

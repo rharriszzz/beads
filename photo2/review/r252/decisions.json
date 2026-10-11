@@ -1,0 +1,4703 @@
+{
+  "observation_overrides": {
+    "F168-1": {
+      "status": "black_preserved",
+      "color": "black",
+      "reason": "R168 confirmed distinct identities without color labels; raw review shows a black reflection. Preserve outside colored basis, not a no-reflection detector miss."
+    },
+    "A32": {
+      "status": "ambiguous",
+      "reason": "R252 conservative re-review: shaded shoulder or seam-adjacent sample; reliable separate owner not sufficiently clear. Do not promote from safe-hue patch to trusted body."
+    },
+    "A50": {
+      "status": "ambiguous",
+      "reason": "R252 conservative re-review: shaded shoulder or seam-adjacent sample; reliable separate owner not sufficiently clear. Do not promote from safe-hue patch to trusted body."
+    },
+    "A895": {
+      "status": "ambiguous",
+      "reason": "R252 conservative re-review: shaded shoulder or seam-adjacent sample; reliable separate owner not sufficiently clear. Do not promote from safe-hue patch to trusted body."
+    },
+    "A920": {
+      "status": "ambiguous",
+      "reason": "R252 conservative re-review: shaded shoulder or seam-adjacent sample; reliable separate owner not sufficiently clear. Do not promote from safe-hue patch to trusted body."
+    },
+    "A954": {
+      "status": "ambiguous",
+      "reason": "R252 conservative re-review: shaded shoulder or seam-adjacent sample; reliable separate owner not sufficiently clear. Do not promote from safe-hue patch to trusted body."
+    },
+    "A958": {
+      "status": "ambiguous",
+      "reason": "R252 conservative re-review: shaded shoulder or seam-adjacent sample; reliable separate owner not sufficiently clear. Do not promote from safe-hue patch to trusted body."
+    },
+    "H1-B31": {
+      "status": "ambiguous",
+      "reason": "R252 re-review: pale outer rim close to paper; distinct colored-body support/eligibility not sufficiently convincing. Prior eligible judgment preserved, current acceptance withheld."
+    },
+    "T1-B16": {
+      "status": "ambiguous",
+      "reason": "R252 re-review: pale outer rim close to paper; distinct colored-body support/eligibility not sufficiently convincing. Prior eligible judgment preserved, current acceptance withheld."
+    },
+    "T2-B23": {
+      "status": "ambiguous",
+      "reason": "R252 re-review: pale outer rim close to paper; distinct colored-body support/eligibility not sufficiently convincing. Prior eligible judgment preserved, current acceptance withheld."
+    },
+    "F189-0": {
+      "color": "yellow",
+      "reason": "Photographic review of R189 illustrated A/B/C: yellow; original identity answer did not name colors."
+    },
+    "F189-1": {
+      "color": "yellow",
+      "reason": "Photographic review of R189 illustrated A/B/C: yellow; original identity answer did not name colors."
+    },
+    "F189-2": {
+      "color": "yellow",
+      "reason": "Photographic review of R189 illustrated A/B/C: yellow; original identity answer did not name colors."
+    },
+    "A267": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A33": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A286": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A828": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A698": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A904": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A714": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A440": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 targeted largest-gap raw-photo review: clear colored face and safe interior; existing automatic proposal, independently reviewed now.",
+      "evidence": "gap-proposals.png"
+    },
+    "A75": {
+      "status": "ambiguous",
+      "reason": "Gap proposal falls on dark red saddle; distinct body and safe interior not reliable enough."
+    },
+    "R239:T2-A01": {
+      "evidence_level": "curator_reviewed",
+      "reason": "R252 raw/profile review: credible upper yellow interior belongs to a separate visible face from T2-B02. Previous outside_scope was a crop bookkeeping status, not physical exclusion.",
+      "evidence": "halo-yellow-review.png"
+    }
+  },
+  "pairs": [
+    {
+      "keys": [
+        "A4",
+        "M10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 0,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A4",
+        "M11"
+      ],
+      "decision": "same",
+      "evidence": "pairs-01.png",
+      "pair_number": 1,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A4",
+        "M12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 2,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A10",
+        "M13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 3,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A14",
+        "F209-A"
+      ],
+      "decision": "same",
+      "evidence": "pairs-01.png",
+      "pair_number": 4,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A14",
+        "F209-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 5,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A16",
+        "M17"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 6,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A20",
+        "M16"
+      ],
+      "decision": "same",
+      "evidence": "pairs-01.png",
+      "pair_number": 7,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A20",
+        "M17"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 8,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A20",
+        "F209-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 9,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A22",
+        "A23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 10,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A22",
+        "A25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 11,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A22",
+        "M18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-01.png",
+      "pair_number": 12,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A22",
+        "M19"
+      ],
+      "decision": "same",
+      "evidence": "pairs-01.png",
+      "pair_number": 13,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A23",
+        "M18"
+      ],
+      "decision": "same",
+      "evidence": "pairs-01.png",
+      "pair_number": 14,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A23",
+        "M19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 15,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A25",
+        "M18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 16,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A25",
+        "M19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 17,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A32",
+        "A36"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 18,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A48",
+        "A50"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 19,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A57",
+        "M20"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 20,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A78",
+        "M21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 21,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A83",
+        "A85"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 22,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A85",
+        "T1-B03"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 23,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A90",
+        "A91"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 24,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A90",
+        "M22"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 25,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A90",
+        "T1-B02"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 26,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A90",
+        "T1-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 27,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A90",
+        "T1-B06"
+      ],
+      "decision": "same",
+      "evidence": "pairs-02.png",
+      "pair_number": 28,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A90",
+        "T1-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-02.png",
+      "pair_number": 29,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A91",
+        "M22"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 30,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A91",
+        "T1-B05"
+      ],
+      "decision": "same",
+      "evidence": "pairs-03.png",
+      "pair_number": 31,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A91",
+        "T1-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 32,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A91",
+        "T1-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 33,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A91",
+        "T1-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 34,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A95",
+        "T1-B14"
+      ],
+      "decision": "same",
+      "evidence": "pairs-03.png",
+      "pair_number": 35,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A95",
+        "T1-B15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 36,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A95",
+        "T1-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 37,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A99",
+        "T1-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 38,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A99",
+        "T1-B21"
+      ],
+      "decision": "same",
+      "evidence": "pairs-03.png",
+      "pair_number": 39,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A105",
+        "M23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 40,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A112",
+        "A115"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 41,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A118",
+        "M24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 42,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A118",
+        "F196p-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 43,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A118",
+        "F196p-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-03.png",
+      "pair_number": 44,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A121",
+        "M24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 45,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A121",
+        "F196p-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 46,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A121",
+        "F196p-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 47,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A133",
+        "A135"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 48,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A150",
+        "M25"
+      ],
+      "decision": "same",
+      "evidence": "pairs-04.png",
+      "pair_number": 49,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A150",
+        "F204-S"
+      ],
+      "decision": "same",
+      "evidence": "pairs-04.png",
+      "pair_number": 50,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A150",
+        "F204-Q"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 51,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A178",
+        "M27"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 52,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A208",
+        "T2-B01"
+      ],
+      "decision": "same",
+      "evidence": "pairs-04.png",
+      "pair_number": 53,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A208",
+        "T2-B03"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 54,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A210",
+        "T2-B03"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 55,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A210",
+        "T2-B08"
+      ],
+      "decision": "same",
+      "evidence": "pairs-04.png",
+      "pair_number": 56,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A210",
+        "T2-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 57,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A211",
+        "M26"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 58,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A211",
+        "T2-B02"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-04.png",
+      "pair_number": 59,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A211",
+        "T2-B07"
+      ],
+      "decision": "same",
+      "evidence": "pairs-05.png",
+      "pair_number": 60,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A211",
+        "T2-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 61,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A211",
+        "T2-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 62,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A213",
+        "M26"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 63,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A213",
+        "T2-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 64,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A213",
+        "T2-B14"
+      ],
+      "decision": "same",
+      "evidence": "pairs-05.png",
+      "pair_number": 65,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A213",
+        "T2-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 66,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A217",
+        "T2-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 67,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A217",
+        "T2-B16"
+      ],
+      "decision": "same",
+      "evidence": "pairs-05.png",
+      "pair_number": 68,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A217",
+        "T2-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 69,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A221",
+        "A223"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 70,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A221",
+        "T2-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 71,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A221",
+        "T2-B25"
+      ],
+      "decision": "same",
+      "evidence": "pairs-05.png",
+      "pair_number": 72,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A221",
+        "F216-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 73,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A223",
+        "T2-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-05.png",
+      "pair_number": 74,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A223",
+        "F216-B"
+      ],
+      "decision": "same",
+      "evidence": "pairs-06.png",
+      "pair_number": 75,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A228",
+        "M28"
+      ],
+      "decision": "same",
+      "evidence": "pairs-06.png",
+      "pair_number": 76,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A257",
+        "M29"
+      ],
+      "decision": "same",
+      "evidence": "pairs-06.png",
+      "pair_number": 77,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A275",
+        "A278"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 78,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A316",
+        "A319"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 79,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A316",
+        "M30"
+      ],
+      "decision": "same",
+      "evidence": "pairs-06.png",
+      "pair_number": 80,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A326",
+        "A961"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 81,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A326",
+        "M31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 82,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A326",
+        "H4-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 83,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A338",
+        "H4-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 84,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A338",
+        "H4-B32"
+      ],
+      "decision": "same",
+      "evidence": "pairs-06.png",
+      "pair_number": 85,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A338",
+        "H4-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 86,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A341",
+        "A343"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 87,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A341",
+        "H4-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-06.png",
+      "pair_number": 88,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A341",
+        "H4-B08"
+      ],
+      "decision": "same",
+      "evidence": "pairs-06.png",
+      "pair_number": 89,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A341",
+        "H4-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 90,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A343",
+        "H4-B08"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 91,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A343",
+        "H4-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 92,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A343",
+        "H4-B29"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 93,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A343",
+        "H4-B30"
+      ],
+      "decision": "same",
+      "evidence": "pairs-07.png",
+      "pair_number": 94,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A348",
+        "H4-B28"
+      ],
+      "decision": "same",
+      "evidence": "pairs-07.png",
+      "pair_number": 95,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A348",
+        "H4-B29"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 96,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A348",
+        "H4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 97,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A352",
+        "H4-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 98,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A354",
+        "A358"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 99,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A397",
+        "M32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 100,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A403",
+        "M32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 101,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A410",
+        "F216-A"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 102,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A423",
+        "A427"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-07.png",
+      "pair_number": 103,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A438",
+        "M33"
+      ],
+      "decision": "same",
+      "evidence": "pairs-07.png",
+      "pair_number": 104,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A449",
+        "A455"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 105,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A455",
+        "A457"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 106,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A473",
+        "A967"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 107,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A473",
+        "F168-0"
+      ],
+      "decision": "same",
+      "evidence": "pairs-08.png",
+      "pair_number": 108,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A473",
+        "F168-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 109,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A473",
+        "F168-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 110,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A560",
+        "M34"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 111,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A560",
+        "D4-B27"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 112,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A560",
+        "D4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 113,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A560",
+        "D4-B33"
+      ],
+      "decision": "same",
+      "evidence": "pairs-08.png",
+      "pair_number": 114,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A563",
+        "D4-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 115,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A563",
+        "F196-7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 116,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A567",
+        "D4-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 117,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A567",
+        "D4-B22"
+      ],
+      "decision": "same",
+      "evidence": "pairs-08.png",
+      "pair_number": 118,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A567",
+        "D4-B23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-08.png",
+      "pair_number": 119,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A567",
+        "D4-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 120,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A567",
+        "F196-6"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 121,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A573",
+        "D4-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 122,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A573",
+        "D4-B15"
+      ],
+      "decision": "same",
+      "evidence": "pairs-09.png",
+      "pair_number": 123,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A573",
+        "D4-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 124,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A573",
+        "D4-B17"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 125,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A586",
+        "D4-B02"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 126,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A586",
+        "D4-B03"
+      ],
+      "decision": "same",
+      "evidence": "pairs-09.png",
+      "pair_number": 127,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A586",
+        "D4-B04"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 128,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A586",
+        "D4-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 129,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A596",
+        "A599"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 130,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A605",
+        "A611"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 131,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A640",
+        "M35"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 132,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A647",
+        "M36"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 133,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A779",
+        "H1-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-09.png",
+      "pair_number": 134,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A779",
+        "H1-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 135,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A782",
+        "M38"
+      ],
+      "decision": "same",
+      "evidence": "pairs-10.png",
+      "pair_number": 136,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A782",
+        "H1-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 137,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A782",
+        "H1-B29"
+      ],
+      "decision": "same",
+      "evidence": "pairs-10.png",
+      "pair_number": 138,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A782",
+        "H1-B32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 139,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A794",
+        "H1-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 140,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A794",
+        "H1-B09"
+      ],
+      "decision": "same",
+      "evidence": "pairs-10.png",
+      "pair_number": 141,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A794",
+        "H1-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 142,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A799",
+        "H1-B02"
+      ],
+      "decision": "same",
+      "evidence": "pairs-10.png",
+      "pair_number": 143,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A799",
+        "H1-B06"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 144,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A816",
+        "M39"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 145,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A830",
+        "M40"
+      ],
+      "decision": "same",
+      "evidence": "pairs-10.png",
+      "pair_number": 146,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A837",
+        "A841"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 147,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A849",
+        "F189-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 148,
+      "reason": "Different-color faces: A849 red, F189-0 yellow; raw review corrects imported semantic label, no identity change."
+    },
+    {
+      "keys": [
+        "A881",
+        "A884"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-10.png",
+      "pair_number": 149,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A901",
+        "M41"
+      ],
+      "decision": "same",
+      "evidence": "pairs-11.png",
+      "pair_number": 150,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A930",
+        "M2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 151,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A930",
+        "D3-B20"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 152,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A934",
+        "M1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 153,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A934",
+        "D3-B09"
+      ],
+      "decision": "same",
+      "evidence": "pairs-11.png",
+      "pair_number": 154,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A934",
+        "D3-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 155,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A934",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 156,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A935",
+        "M5"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 157,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A935",
+        "D3-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 158,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A935",
+        "D3-B24"
+      ],
+      "decision": "same",
+      "evidence": "pairs-11.png",
+      "pair_number": 159,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A935",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 160,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A935",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 161,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A935",
+        "F211-O"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 162,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A942",
+        "A944"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 163,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A942",
+        "M4"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-11.png",
+      "pair_number": 164,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A942",
+        "D3-B13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 165,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A942",
+        "D3-B18"
+      ],
+      "decision": "same",
+      "evidence": "pairs-12.png",
+      "pair_number": 166,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A942",
+        "D3-B23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 167,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A942",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 168,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A942",
+        "F196p-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 169,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A944",
+        "D3-B04"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 170,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A944",
+        "D3-B06"
+      ],
+      "decision": "same",
+      "evidence": "pairs-12.png",
+      "pair_number": 171,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A944",
+        "D3-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 172,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A944",
+        "F196p-0"
+      ],
+      "decision": "same",
+      "evidence": "pairs-12.png",
+      "pair_number": 173,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A948",
+        "M6"
+      ],
+      "decision": "same",
+      "evidence": "pairs-12.png",
+      "pair_number": 174,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A948",
+        "M7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 175,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A948",
+        "D3-B08"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 176,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A948",
+        "D3-B15"
+      ],
+      "decision": "same",
+      "evidence": "pairs-12.png",
+      "pair_number": 177,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A948",
+        "D3-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-12.png",
+      "pair_number": 178,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A948",
+        "F196-4"
+      ],
+      "decision": "same",
+      "evidence": "pairs-12.png",
+      "pair_number": 179,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A954",
+        "M7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 180,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A954",
+        "M8"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 181,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A958",
+        "M12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 182,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A959",
+        "M34"
+      ],
+      "decision": "same",
+      "evidence": "pairs-13.png",
+      "pair_number": 183,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A959",
+        "D4-B27"
+      ],
+      "decision": "same",
+      "evidence": "pairs-13.png",
+      "pair_number": 184,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A959",
+        "D4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 185,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A959",
+        "D4-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 186,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A959",
+        "F196-5"
+      ],
+      "decision": "same",
+      "evidence": "pairs-13.png",
+      "pair_number": 187,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A959",
+        "F196-7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 188,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A961",
+        "M31"
+      ],
+      "decision": "same",
+      "evidence": "pairs-13.png",
+      "pair_number": 189,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A967",
+        "F168-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 190,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A967",
+        "F168-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 191,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A967",
+        "F168-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 192,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A968",
+        "H4-B10"
+      ],
+      "decision": "same",
+      "evidence": "pairs-13.png",
+      "pair_number": 193,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A968",
+        "H4-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-13.png",
+      "pair_number": 194,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "A968",
+        "H4-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 195,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "M4"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 196,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "M5"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 197,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "D3-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 198,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "D3-B12"
+      ],
+      "decision": "same",
+      "evidence": "pairs-14.png",
+      "pair_number": 199,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M1",
+        "D3-B13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 200,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "D3-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 201,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "F196-0"
+      ],
+      "decision": "same",
+      "evidence": "pairs-14.png",
+      "pair_number": 202,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M1",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 203,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 204,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M1",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 205,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M2",
+        "M3"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 206,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M2",
+        "D3-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 207,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M2",
+        "D3-B20"
+      ],
+      "decision": "same",
+      "evidence": "pairs-14.png",
+      "pair_number": 208,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M2",
+        "D3-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-14.png",
+      "pair_number": 209,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M3",
+        "D3-B19"
+      ],
+      "decision": "same",
+      "evidence": "pairs-15.png",
+      "pair_number": 210,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M3",
+        "D3-B20"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 211,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M3",
+        "D3-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 212,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M3",
+        "D3-B26"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 213,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "M5"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 214,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "D3-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 215,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "D3-B13"
+      ],
+      "decision": "same",
+      "evidence": "pairs-15.png",
+      "pair_number": 216,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M4",
+        "D3-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 217,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "D3-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 218,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 219,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "F196-1"
+      ],
+      "decision": "same",
+      "evidence": "pairs-15.png",
+      "pair_number": 220,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M4",
+        "F196p-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 221,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 222,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 223,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M4",
+        "F211-O"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-15.png",
+      "pair_number": 224,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "D3-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 225,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "D3-B13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 226,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "D3-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 227,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "D3-B21"
+      ],
+      "decision": "same",
+      "evidence": "pairs-16.png",
+      "pair_number": 228,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M5",
+        "D3-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 229,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 230,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 231,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M5",
+        "F211-M"
+      ],
+      "decision": "same",
+      "evidence": "pairs-16.png",
+      "pair_number": 232,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M5",
+        "F211-V"
+      ],
+      "decision": "same",
+      "evidence": "pairs-16.png",
+      "pair_number": 233,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M5",
+        "F211-O"
+      ],
+      "decision": "same",
+      "evidence": "pairs-16.png",
+      "pair_number": 234,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M6",
+        "M7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 235,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M6",
+        "D3-B08"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 236,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M6",
+        "D3-B15"
+      ],
+      "decision": "same",
+      "evidence": "pairs-16.png",
+      "pair_number": 237,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M6",
+        "D3-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-16.png",
+      "pair_number": 238,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M6",
+        "F196-4"
+      ],
+      "decision": "same",
+      "evidence": "pairs-16.png",
+      "pair_number": 239,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M7",
+        "M8"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 240,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M7",
+        "D3-B15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 241,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M7",
+        "D3-B16"
+      ],
+      "decision": "same",
+      "evidence": "pairs-17.png",
+      "pair_number": 242,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M7",
+        "F196-4"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 243,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M8",
+        "D3-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 244,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M9",
+        "M10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 245,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M10",
+        "M11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 246,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M10",
+        "M12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 247,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M11",
+        "M12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 248,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M13",
+        "M14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 249,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M13",
+        "M15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 250,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M14",
+        "M15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 251,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M16",
+        "M17"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 252,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M16",
+        "F209-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 253,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M17",
+        "F209-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-17.png",
+      "pair_number": 254,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M18",
+        "M19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 255,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M22",
+        "T1-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 256,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M22",
+        "T1-B06"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 257,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M22",
+        "T1-B09"
+      ],
+      "decision": "same",
+      "evidence": "pairs-18.png",
+      "pair_number": 258,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M22",
+        "T1-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 259,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M24",
+        "F196p-1"
+      ],
+      "decision": "same",
+      "evidence": "pairs-18.png",
+      "pair_number": 260,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M24",
+        "F196p-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 261,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M25",
+        "F204-S"
+      ],
+      "decision": "same",
+      "evidence": "pairs-18.png",
+      "pair_number": 262,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M25",
+        "F204-Q"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 263,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M26",
+        "T2-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 264,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M26",
+        "T2-B10"
+      ],
+      "decision": "same",
+      "evidence": "pairs-18.png",
+      "pair_number": 265,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M26",
+        "T2-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 266,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M34",
+        "D4-B27"
+      ],
+      "decision": "same",
+      "evidence": "pairs-18.png",
+      "pair_number": 267,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M34",
+        "D4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 268,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M34",
+        "D4-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-18.png",
+      "pair_number": 269,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M34",
+        "D4-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 270,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M34",
+        "F196-5"
+      ],
+      "decision": "same",
+      "evidence": "pairs-19.png",
+      "pair_number": 271,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M34",
+        "F196-7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 272,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M38",
+        "H1-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 273,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "M38",
+        "H1-B29"
+      ],
+      "decision": "same",
+      "evidence": "pairs-19.png",
+      "pair_number": 274,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "M38",
+        "H1-B32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 275,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B04",
+        "D3-B06"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 276,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B04",
+        "D3-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 277,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B04",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 278,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B04",
+        "F196p-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 279,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B06",
+        "D3-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 280,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B06",
+        "F196p-0"
+      ],
+      "decision": "same",
+      "evidence": "pairs-19.png",
+      "pair_number": 281,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B07",
+        "F196p-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 282,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B08",
+        "D3-B15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 283,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B08",
+        "D3-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-19.png",
+      "pair_number": 284,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B08",
+        "F196-4"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 285,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B09",
+        "D3-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 286,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B09",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 287,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B12",
+        "D3-B13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 288,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B12",
+        "D3-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 289,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B12",
+        "F196-0"
+      ],
+      "decision": "same",
+      "evidence": "pairs-20.png",
+      "pair_number": 290,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B12",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 291,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B12",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 292,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B12",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 293,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "D3-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 294,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "D3-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 295,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 296,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "F196-1"
+      ],
+      "decision": "same",
+      "evidence": "pairs-20.png",
+      "pair_number": 297,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 298,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-20.png",
+      "pair_number": 299,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B13",
+        "F211-O"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 300,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B15",
+        "D3-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 301,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B15",
+        "F196-4"
+      ],
+      "decision": "same",
+      "evidence": "pairs-21.png",
+      "pair_number": 302,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B16",
+        "F196-4"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 303,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B18",
+        "D3-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 304,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B18",
+        "D3-B23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 305,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B18",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 306,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B18",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 307,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B18",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 308,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B18",
+        "F211-O"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 309,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B19",
+        "D3-B20"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 310,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B19",
+        "D3-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 311,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B19",
+        "D3-B26"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 312,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B20",
+        "D3-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 313,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B21",
+        "D3-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-21.png",
+      "pair_number": 314,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B21",
+        "F196-0"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 315,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B21",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 316,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B21",
+        "F211-M"
+      ],
+      "decision": "same",
+      "evidence": "pairs-22.png",
+      "pair_number": 317,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B21",
+        "F211-V"
+      ],
+      "decision": "same",
+      "evidence": "pairs-22.png",
+      "pair_number": 318,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B21",
+        "F211-O"
+      ],
+      "decision": "same",
+      "evidence": "pairs-22.png",
+      "pair_number": 319,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D3-B24",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 320,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B24",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 321,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B24",
+        "F211-O"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 322,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D3-B25",
+        "D3-B26"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 323,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B02",
+        "D4-B03"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 324,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B03",
+        "D4-B04"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 325,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B03",
+        "D4-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 326,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B03",
+        "D4-B13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 327,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B04",
+        "D4-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 328,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B05",
+        "D4-B13"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-22.png",
+      "pair_number": 329,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B12",
+        "D4-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 330,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B13",
+        "D4-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 331,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B14",
+        "D4-B15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 332,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B15",
+        "D4-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 333,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B15",
+        "D4-B17"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 334,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B16",
+        "D4-B17"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 335,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B18",
+        "D4-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 336,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B19",
+        "D4-B22"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 337,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B19",
+        "D4-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 338,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B22",
+        "D4-B23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 339,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B22",
+        "D4-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 340,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B22",
+        "D4-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 341,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B23",
+        "D4-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 342,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B23",
+        "F196-6"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 343,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B24",
+        "D4-B32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-23.png",
+      "pair_number": 344,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B24",
+        "F196-6"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 345,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B27",
+        "D4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 346,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B27",
+        "D4-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 347,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B27",
+        "D4-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 348,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B27",
+        "F196-5"
+      ],
+      "decision": "same",
+      "evidence": "pairs-24.png",
+      "pair_number": 349,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D4-B27",
+        "F196-7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 350,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B30",
+        "D4-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 351,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B30",
+        "D4-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 352,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B30",
+        "F196-5"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 353,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B30",
+        "F196-7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 354,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B31",
+        "F196-5"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 355,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "D4-B31",
+        "F196-7"
+      ],
+      "decision": "same",
+      "evidence": "pairs-24.png",
+      "pair_number": 356,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "D4-B32",
+        "F196-6"
+      ],
+      "decision": "same",
+      "evidence": "pairs-24.png",
+      "pair_number": 357,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "H1-B01",
+        "H1-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 358,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B02",
+        "H1-B06"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-24.png",
+      "pair_number": 359,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B06",
+        "H1-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 360,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B06",
+        "H1-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 361,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B07",
+        "H1-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 362,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B09",
+        "H1-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 363,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B10",
+        "H1-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 364,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B14",
+        "H1-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 365,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B18",
+        "H1-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 366,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B21",
+        "H1-B27"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 367,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B23",
+        "H1-B24"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 368,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B24",
+        "H1-B29"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 369,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B27",
+        "H1-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 370,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B29",
+        "H1-B31"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 371,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B29",
+        "H1-B32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 372,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B30",
+        "H1-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 373,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H1-B31",
+        "H1-B32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-25.png",
+      "pair_number": 374,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B03",
+        "H4-B04"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 375,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B04",
+        "H4-B05"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 376,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B07",
+        "H4-B08"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 377,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B08",
+        "H4-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 378,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B09",
+        "H4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 379,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B10",
+        "H4-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 380,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B10",
+        "H4-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 381,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B10",
+        "H4-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 382,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B11",
+        "H4-B12"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 383,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B11",
+        "H4-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 384,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B12",
+        "H4-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 385,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B18",
+        "H4-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 386,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B19",
+        "H4-B20"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 387,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B28",
+        "H4-B29"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 388,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B29",
+        "H4-B30"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-26.png",
+      "pair_number": 389,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B31",
+        "H4-B32"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 390,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B31",
+        "H4-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 391,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "H4-B32",
+        "H4-B33"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 392,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B01",
+        "T1-B02"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 393,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B02",
+        "T1-B06"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 394,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B03",
+        "T1-B04"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 395,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B05",
+        "T1-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 396,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B05",
+        "T1-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 397,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B05",
+        "T1-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 398,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B06",
+        "T1-B09"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 399,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B09",
+        "T1-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 400,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B10",
+        "T1-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 401,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B13",
+        "T1-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 402,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B14",
+        "T1-B15"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 403,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B14",
+        "T1-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-27.png",
+      "pair_number": 404,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T1-B18",
+        "T1-B21"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 405,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B01",
+        "T2-B03"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 406,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B01",
+        "T2-B08"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 407,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B02",
+        "T2-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 408,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B03",
+        "T2-B08"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 409,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B07",
+        "T2-B10"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 410,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B08",
+        "T2-B11"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 411,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B10",
+        "T2-B14"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 412,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B12",
+        "T2-B16"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 413,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B12",
+        "T2-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 414,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B14",
+        "T2-B18"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 415,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B16",
+        "T2-B19"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 416,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B16",
+        "T2-B23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 417,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B19",
+        "T2-B23"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 418,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B21",
+        "T2-B25"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-28.png",
+      "pair_number": 419,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "T2-B25",
+        "F216-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 420,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-0",
+        "F196-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 421,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-0",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 422,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-0",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 423,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-1",
+        "F211-M"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 424,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-1",
+        "F211-V"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 425,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-1",
+        "F211-O"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 426,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196-5",
+        "F196-7"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 427,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F196p-1",
+        "F196p-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 428,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F168-0",
+        "F168-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 429,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F168-0",
+        "F168-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 430,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F168-1",
+        "F168-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 431,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F189-0",
+        "F189-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 432,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F189-1",
+        "F189-2"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 433,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F204-S",
+        "F204-Q"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-29.png",
+      "pair_number": 434,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F209-A",
+        "F209-B"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-30.png",
+      "pair_number": 435,
+      "reason": "Curator raw-photo review: separate colored faces in surrounding body context."
+    },
+    {
+      "keys": [
+        "F211-M",
+        "F211-V"
+      ],
+      "decision": "same",
+      "evidence": "pairs-30.png",
+      "pair_number": 436,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "F211-M",
+        "F211-O"
+      ],
+      "decision": "same",
+      "evidence": "pairs-30.png",
+      "pair_number": 437,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "F211-V",
+        "F211-O"
+      ],
+      "decision": "same",
+      "evidence": "pairs-30.png",
+      "pair_number": 438,
+      "reason": "Curator raw-photo review: points on one visible face."
+    },
+    {
+      "keys": [
+        "A856",
+        "F189-1"
+      ],
+      "decision": "distinct",
+      "evidence": "pairs-31.png",
+      "pair_number": 439,
+      "reason": "Separate yellow faces with shaded gap."
+    },
+    {
+      "keys": [
+        "A856",
+        "F189-2"
+      ],
+      "decision": "same",
+      "evidence": "pairs-31.png",
+      "pair_number": 440,
+      "reason": "Same yellow visible face; raw photograph and original R189 figure reviewed."
+    },
+    {
+      "keys": [
+        "A267",
+        "A263"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 441,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A33",
+        "A32"
+      ],
+      "decision": "ambiguous",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 442,
+      "reason": "A32 is on a dark saddle with unresolved owner; A33 is safely inside upper red face."
+    },
+    {
+      "keys": [
+        "A286",
+        "A288"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 443,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A828",
+        "A830"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 444,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A828",
+        "M40"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 445,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A698",
+        "A701"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 446,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A904",
+        "A901"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 447,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A904",
+        "M41"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 448,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A714",
+        "A716"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 449,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A440",
+        "A438"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 450,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "A440",
+        "M33"
+      ],
+      "decision": "distinct",
+      "evidence": "gap-neighbors.png",
+      "pair_number": 451,
+      "reason": "Raw photograph shows separate colored faces, local shaded separation and distinct surrounding body context."
+    },
+    {
+      "keys": [
+        "R239:T2-A01",
+        "T2-B02"
+      ],
+      "decision": "distinct",
+      "evidence": "halo-yellow-review.png",
+      "pair_number": 452,
+      "reason": "Raw photo shows two separate yellow faces and local spacing; low-contrast/clipped Value route alone is insufficient."
+    },
+    {
+      "keys": [
+        "R239:T2-A01",
+        "T2-B07"
+      ],
+      "decision": "distinct",
+      "evidence": "halo-yellow-review.png",
+      "pair_number": 453,
+      "reason": "Raw photo shows two separate yellow faces and local spacing; low-contrast/clipped Value route alone is insufficient."
+    }
+  ],
+  "source_hashes": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/colored-review-answers-r188.json": "271241e5d72db72fcc76f2b6f861a699a8b622be0e2115baa096fbc2b6b235d1",
+    "photo2/correspondence-answer-r211.json": "4bb31ef26ad81674026fc187e0d100d8cde7337d0302e7576539cedf260a9b64",
+    "photo2/diagonal-confirmed-r189.json": "272c0ed82afb1679472f54ed8105a90a706f1bf4b78f1155c8e396ef30ac49f9",
+    "photo2/interior-confirmed-r160.json": "553c44488eb396646980af3ea35ca3c81e072977a9ae22a37b5ad723c2e068b9",
+    "photo2/interiors-confirmed-r193.json": "5b632665e284e6df968514de14b0ff9e2e8a44e004859ab19e31f03fd763be0e",
+    "photo2/label-series-answers-r144.json": "4f706c5a79d684f0dd3e4558891b15e9700ab0086485ca10bca3507444140c1c",
+    "photo2/local-pilot-r114.json": "a3272f19f8a79573d7c95e6c88c5b7b6f900b8f653383f7b9400d0ba94cdabea",
+    "photo2/local-pilot-review-r115.json": "1d6f95d523965664f13daa09fb16cf5bb198626ceaaea6f29fd3e73bb6b904b5",
+    "photo2/ownership-answers-r194-r195.json": "5728de9da8ca644276130a8e9471ae8abba1535ab0cd823fe0487cd960fdca90",
+    "photo2/profile-answers-r204-r205.json": "e5af818507b9381da6877dae6f4723506c18a861d7a5cb1bd78463d05fc12b08",
+    "photo2/profile-transfer-answer-r209.json": "8b7821a3a7c1e1fcbeced9833b50250a0e625d31c7b7730a377ff14bb565c389",
+    "photo2/review/r114/observations.csv": "14b435390a284efd75d0bbc1e5977e051cb73762d9365f2e048b0714cc9b0efc",
+    "photo2/review/r196/trusted-facts.json": "2094fab7164a91fe941febf1f48812033b41eb66edf063896cecc0a7caece47a",
+    "photo2/review/r200/position-basis.json": "e67c3995061841765e9701263e034c958db8edfe0ee4388a46265e34f9eb4b89",
+    "photo2/review/r201/interiors.json": "b9495949ad5b23241393ba1ac9475d9fa2de09c85509827ade38a00a085a49d3",
+    "photo2/review/r201/visual-review.json": "e05ed7664b352976063d5467a5bdc3d055a020f565e3216e353751864334df2d",
+    "photo2/review/r215/confirmed-pixel-facts.json": "c785d026f2b6fc6e641c79fa7be2c4e67580762b0053370141e150842f448d37",
+    "photo2/review/r235/adjudication.json": "03df4dd10c5ecfbf0b83e202db4af07bf4f218cb4578d90c6ed011f28590db1a",
+    "photo2/review/r235/automatic.json": "bcdb1735842a4e590a9bf62511ae416095c6eb8a4bf41b37390891b163259643",
+    "photo2/review/r235/evaluation-amendments.json": "11aaef1b34b182f139c89d8eed993047c2cbf33ff3d11c90c49d8dd4ae7a9594",
+    "photo2/review/r235/halo-audit.json": "60f586ee1d2dfd329eb4e363943d8049212402c195e38a057159a0e81b5fbad5",
+    "photo2/review/r235/references.json": "a2e6f393d2c8ed5110a51e0c61b610dd6c251e7b7f235587fe1243bf68031e49",
+    "photo2/review/r238/adjudication.json": "19ec1400e0886b731a111ebd244948247b4d2009ec77db284661b1ee52653df7",
+    "photo2/review/r238/development/candidates.json": "ae21fb0549a894bc1471b99c05ee48750fdccfe0eff20dc8800ba33c2ebfcb1b",
+    "photo2/review/r238/transfer/candidates.json": "ad03b3433bfec7215d9748ebdb7a66994b7555559a5e93be8185c9807fca3154",
+    "photo2/review/r239/development/ownership.json": "e5d41914c90708452097238a6a014c4b9c06f988f9cd95f8a3aabf04d7d676db",
+    "photo2/review/r239/lost-correct.json": "d8ac2bfb586451ac5ad0ec919701fe2d76253f38743fe1c465ada5661ed7fe9a",
+    "photo2/review/r239/references.json": "bcf9a60447c03574dc079fd72dd51b34037e13ed8f394c5286feefcc7f0990ae",
+    "photo2/review/r239/transfer-adjudication.json": "995fca9f706e99dc7500511dbda28006e5aaec071f993498073e55f25a7230e6",
+    "photo2/review/r239/transfer/ownership.json": "126b51646d6a9b8d5bd7c2813aa9585c4229ea98a97a7a18f8eb3ebe644398d3",
+    "photo2/seed-method-answer-r232.json": "43e17b58d553aaa924a472d05b946877d8f0b38379fc9e60d0ef77b6a371d172",
+    "photo2/spline-seed-r175.json": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f"
+  },
+  "method": "Assisted photographic curation, not an automatic detector or independent maker review.",
+  "additional_primary": [
+    "A267",
+    "A33",
+    "A286",
+    "A828",
+    "A698",
+    "A904",
+    "A714",
+    "A440",
+    "R239:T2-A01"
+  ],
+  "reviewed_artifacts": [
+    "All eleven R201 interior pages",
+    "All 41 maker marks via pair pages and isolated.png",
+    "All 32 native sector crops",
+    "R239 color-evidence.png",
+    "R189 diagonal-question.png"
+  ],
+  "historical_followup": "R114/R115/R147 and R188 read explicitly; preserve twelve old pilot observations and unresolved R188 sample. Only C inherits its explicit maker20 alias; D remains distinct from B with color/interior uncertainty, not a trusted red point."
+}
