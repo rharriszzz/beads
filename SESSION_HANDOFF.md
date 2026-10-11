@@ -1,6 +1,24 @@
 # Beads session handoff — new branch
 
-## Current R250 — dense FFT tracking and four angle fits completed
+## Current R251 — preserve synthetic-test limitation, then wait
+
+User notes that changing bead appearance in beads.pov is easy, but differences
+in background material, lighting, and circular geometry versus the photograph's
+spline-shaped necklace may make the proposed controlled test less meaningful.
+Exact comment preserved in REQUEST_LOG.md and the
+[R250 report](photo2/FFT_DENSE_TRACKING.md#r251--makers-caution-about-the-proposed-synthetic-test).
+This is a caveat about transfer to the photograph, not confirmation or rejection
+of a specific test design. No revised design or implementation was authorized.
+
+User explicitly requests committing the comment, then waiting. Documentation-only
+update; no experiment, render, scene or analysis changes. After commit/push and
+remote/clean verification, wait for the user's next instruction. Do not start
+R250's recommended calibration automatically. If later authorized, its design
+must address or explicitly bound these realism differences. No /new needed;
+Astra/High remains a recommendation for future scientific design, not a claim
+about the active model.
+
+## Prior R250 — dense FFT tracking and four angle fits completed
 
 User supersedes R249's individual-window review proposal with an authorized dense
 full-loop experiment. [Scientific report](photo2/FFT_DENSE_TRACKING.md),

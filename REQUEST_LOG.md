@@ -5915,3 +5915,24 @@ bias. User did not authorize automatic next-experiment execution. Stop after
 commit/push and exact remote/clean verification. Recommend Astra/High without
 asserting active model; no /new for review, fresh session reasonable before
 separately authorized implementation.
+
+
+## R251 — Preserve maker caution about synthetic-test realism; then wait
+
+Maker comment, verbatim:
+
+> "A controlled comparison with identical geometry and changing bead appearance" is easy to do by modifying beads.pov, however the background material and the lighting and the absolute circles instead of splines may make this test a bit less meaningful
+
+User then requests: “please commit this comment somehow, then wait.”
+
+Preflight: daisy, clean photo-2-strategy-v3 and matching upstream, no stashes;
+local/remote tip77e48a4ff18bfe3f9fb3dda63acf11df5363b6dd. Preserved the exact
+comment here and in the scientific report, with current plan/handoff pointers.
+Background material, lighting and circular-versus-spline geometry limit how
+directly a synthetic appearance comparison transfers to the photograph. This
+is a supplied methodological caution, not a measured result or approval of
+a revised experiment. No code, scene, rendering, numerical data or analysis
+changed; documentation whitespace/diff reviewed. Commit/push scoped records,
+verify exact remote and clean worktree, then wait for the next user instruction.
+No automatic calibration or older task resumes. No /new needed; Astra/High
+remains a future-design recommendation, not supplied active-model status.

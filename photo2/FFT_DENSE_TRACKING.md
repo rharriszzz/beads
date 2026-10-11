@@ -329,3 +329,17 @@ Stop after delivery and review; no next experiment starts automatically.
 Recommend Astra/High for that calibration without asserting the active model.
 No `/new` needed for reviewing the figures; a fresh session is reasonable before
 separately authorized implementation. User controls model/session switching.
+
+
+## R251 — Maker’s caution about the proposed synthetic test
+
+> "A controlled comparison with identical geometry and changing bead appearance" is easy to do by modifying beads.pov, however the background material and the lighting and the absolute circles instead of splines may make this test a bit less meaningful
+
+This cautions that changing bead appearance within beads.pov is straightforward,
+but background material, lighting and circular rather than spline-shaped geometry
+may limit the test’s relevance to the actual photograph. It does not establish
+how large those effects are or authorize a new test design. Preserve these
+limitations when considering the calibration proposed above.
+
+The user requests committing this comment, then waiting. No new experiment or
+scene modification accompanies this documentation update. Await further instruction.
