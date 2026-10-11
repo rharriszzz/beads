@@ -1,6 +1,28 @@
 # Photo-2 reconstruction plan
 
-## Current R239 — ownership experiment complete; recommend small Stage 2 test
+## Current R240 — interior observations, not full-surface segmentation
+
+User clarifies that darker, approximately same-hue pixels may separate neighboring
+red/yellow interiors; assigning those pixels to beads is unnecessary. Seek one
+reliable interior observation per sufficiently visible bead. Review only; no new
+segmentation experiment or Stage 2 implementation authorized in this step.
+
+Existing R239 A02/P14 evidence confirms a harmful shared shape lobe followed by
+area rejection of both candidates (1239px versus about1220px). The current pair
+test uses mask inset depth, not direct brightness/hue profiles, and runs only
+after area/shape rejection and same-lobe suppression. The raw dark saddle supports
+reconsidering two observations without requiring a disconnected color mask; its
+parallel-path consistency has not been measured. See R240 in REQUEST_LOG.md.
+
+Recommendation strengthened: next discuss a small D3 Stage 2 correspondence test
+using the vetted nine-body core, both helicities and held-out local predictions.
+Use brightness/circular-hue profiles between reliable interiors, with nearby
+parallel paths and spacing/visibility checks, only as targeted separation evidence
+when geometry needs it. Neither a minimum nor a predicted slot proves a bead.
+Stop for discussion. Retain user-reported Astra/High; no /new needed for discussion,
+recommend /new before the next authorized implementation.
+
+## Prior R239 — ownership experiment complete; recommend small Stage 2 test
 
 [Report, comparison images and measured losses](photo2/STAGE1_OWNERSHIP.md).
 One authorized bounded experiment at7359bbd: radial reflection enclosure plus

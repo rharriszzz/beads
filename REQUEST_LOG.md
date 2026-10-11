@@ -5280,3 +5280,40 @@ method index, preserving history. Commit/push scoped R239 work; verify exact
 local/remote tip and clean status at delivery. Retain user-reported Astra/High;
 /new recommended before next implementation, unnecessary for review. User controls
 switching and authorization.
+
+## R240 — Use dark seams to separate interiors; reconsider A02/P14 without an experiment
+
+User corrects the interpretation of photo2/review/r239/color-evidence.png,
+especially final A02/P14: darker pixels of approximately the same red/yellow hue
+are generally near boundaries and spatially related to inter-bead gaps. No need
+to recover or assign these pixels to individual beads. Bright color-consistent
+interiors are observations; intervening minima may separate two observations even
+inside a connected color mask. Consider connecting brightness/hue profiles and
+nearby parallel paths, with shadows/highlights/curvature as alternative causes and
+spacing/geometry as supporting evidence. Objective: one reliable interior sample
+per sufficiently visible colored bead, not exact surface segmentation. Requests
+concise recommendation from existing evidence, prefers Stage 2, explicitly says
+not to implement another extensive segmentation experiment; stop for discussion.
+
+Preflight: daisy, photo-2-strategy-v3 clean, no stashes, HEAD/upstream6cf1ab67557845220aabafd4eaf1f90d080cf7ac;
+fetch origin succeeded and divergence remained0/0. Read current workflow records,
+R239 report, raw/annotated colored evidence and ownership/illustration code.
+Existing record/source confirms D4-A02/P14 (B27/B30) share one1239px lobe and both
+fail its roughly1220px area ceiling. Brightness seam cuts already precede shape
+watershed, but fail here. Area rejection occurs before pair analysis; same-lobe
+suppression would still discard one if the ceiling alone were raised. Colored pair
+analysis samples mask inset depth, not direct brightness/hue. Thus this is a
+shape-based ownership failure despite useful interior candidates, not evidence
+that dark pixels must be assigned. Raw image shows a darker saddle; no new profile
+measurements or parallel-path consistency claim made.
+
+Recommendation: clarification strengthens the already proposed small Stage 2
+test on vetted D3 observations, comparing both helicities/local correspondences
+and held-out predictions. Treat targeted brightness/circular-hue profiles through
+reliable interiors and neighboring parallel paths as separation evidence alongside
+spacing/visible-surface geometry, not a new full-mask gate. Minima alone do not
+prove two beads; geometric predictions are not detections, samples are not centers.
+No detector/code/reference/image/result changed; no new experiment run. Update
+plan/handoff, commit/push scoped documentation, verify remote/status, then stop
+for discussion. Retain user-reported Astra/High. No /new for discussion; recommend
+/new before the next authorized implementation.

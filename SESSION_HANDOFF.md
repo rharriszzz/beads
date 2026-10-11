@@ -1,6 +1,28 @@
 # Beads session handoff — new branch
 
-## Current R239 — ownership experiment complete; recommend small Stage 2 test
+## Current R240 — user corrects the segmentation objective; discussion stop
+
+One reliable interior observation per sufficiently visible red/yellow bead is the
+objective. Dark, approximately same-hue pixels provide separation evidence; they
+need not be assigned to individual beads or yield complete masks. User requests
+concise reconsideration of R239 A02/P14 and favors Stage 2 over further extensive
+segmentation work. No experiment implemented or authorized by this request.
+
+Read current PLAN and latest REQUEST_LOG entry. Existing code/evidence confirms
+A02/P14 share a 1239px shape lobe and both fail its roughly1220px area ceiling.
+Brightness cuts already exist but failed to separate this support. Pair testing
+uses mask depth only after rejection/suppression, so it cannot rescue this pair.
+The raw dark saddle is useful evidence, not measured proof of separation across
+parallel paths. Raising the area limit alone would still leave same-lobe suppression.
+
+Recommend the existing small D3 Stage 2 test, with both helicities and held-out
+predictions; use targeted brightness/circular-hue profiles and parallel paths when
+needed to compare one/two-body interpretations with local spacing and visibility.
+Do not make perfect segmentation a prerequisite or treat samples as centers.
+Stop for discussion after documentation delivery. Retain user-reported Astra/High;
+no /new needed now, recommended before the next authorized implementation.
+
+## Prior R239 — ownership experiment complete; recommend small Stage 2 test
 
 [Report, comparison images and measured losses](photo2/STAGE1_OWNERSHIP.md).
 One authorized bounded experiment at7359bbd: radial reflection enclosure plus
