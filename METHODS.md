@@ -1673,3 +1673,16 @@ expensive joint fitting. Keep deterministic camera geometry, conditional distrib
 identities, exact positive-surface ownership, heldout color abstentions and template
 complexity separate. A color-consistent fragment of an inconsistent template is not
 a recovered pattern. See the implementation's mathematical and ray controls.
+
+## R255 — sequential image-to-pattern visual audit
+
+[Audit report](photo2/AUDIT_R255.md), [figures/data](photo2/review/r255/INDEX.md),
+[generator](photo2/audit_r255.py). Assemble raw/marked photo pairs and native overlays
+from frozen source evidence. Preserve boundary-source provenance, active versus
+unadopted centerlines, model registration, observed interiors versus projected
+centers, maker-local charts versus algebraic global addresses, and separate geometry
+and pattern nominees. Display every residue's unknown/conflicted state and exact
+supporting observations; join photographic conflicts to k and k mod P. Recount saved
+periods without new search. Validate joins, weighted triple sums, source hashes,
+raw-panel pixel identity and deterministic replay; this validates the audit display,
+not the physical reconstruction.

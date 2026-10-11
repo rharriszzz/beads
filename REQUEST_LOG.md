@@ -6302,3 +6302,69 @@ Next: review two P382 conflicts plus maker point7/distributed stars, then invest
 row/index slips with independently supported neighbor walks before expanding camera
 flexibility. Recommend GPT-6 Astra/High and /new before new implementation after
 visual review; no new active-model identity, usage or user switch was asserted.
+
+## R255 — Build a visual audit package from image to pattern
+
+User requests a bounded, sequential visual package before further inference:
+original photograph → centerline/edges → trusted visible beads → starting bead →
+local triples → bead_index → nearly matching pattern. Read current plan/handoff
+and R252/R253/R254 results. Create photo2/AUDIT_R255.md and review/r255/INDEX.md;
+show native whole-photo overlays and enlarged straight/curved crops, spline
+algorithms/versions/tangents/cross-sections, accepted red/yellow observations and
+withheld candidates, origin identity/color/convention, three neighbor directions
+with helicity/diagonal ambiguity, preferred geometry's conditional indices, and
+a complete observation/color/coordinate/triple/index/model table. Show candidate
+period boxes, forced/unknown/conflicting colors and exact residue membership,
+with photographic conflict examples. Preserve uncertainty and sequential dependency;
+no substantially new model or broad search. Explain solid/doubtful results and the
+next unresolved question. Update documentation, commit/push photo-2-strategy-v3,
+verify remote equality and clean worktree, then stop. No delegation or new active
+model status supplied.
+
+### R255 outcome — bounded visual and provenance package
+
+Preflight: daisy, photo-2-strategy-v3 at d468145, correct origin/upstream, clean
+worktree, no stashes; fetch verified0/0 divergence. Read current records, source
+geometry guidance, R252/R253/R254 reports/ledgers and spline provenance. Four
+presentation methods stated and combined: raw/marked pairs, common conventions,
+source-linked tables and residue diagrams/witnesses. No agents, new fitting,
+segmentation, appearance rendering or broad repeat search.
+
+Archived exact historical spline source from the read-only neighboring repository;
+hash matches R175/R187. Show active R175 periodic cubic, two unvalidated historical
+Catmull–Rom edge curves, five tangents/normal sections, unadopted R190 comparison,
+and primary model's separate (-4.074,+0.691)px registration. The inherited geometry
+is explicitly not declared solved; widths measure old curves, not verified silhouettes.
+
+All310 trusted R252 interiors remain unchanged,151 red/159 yellow. Show29 unresolved
+cases and two rejected colored proposals without adding aliases to the body count.
+Origin C252-A948=maker20=C remains red at(1346,273), primary k0/generator2162;
+measured interior and model center are separately drawn. Primary N2696_h+1_f0 is
+R254's training-geometry nominee; N2674_h+1_f0 is separately named pattern diagnostic,
+and N2681_h-1_f0 retained as alternative.930-row table preserves all310 under all
+three models plus source provenance, supports, assignment uncertainty and centers.
+
+27 maker nodes show short-path triples under both A/B charts. Whole-necklace triples
+are explicitly canonical algebraic addresses of tentative indices, not fabricated
+observed neighbor walks. Five crop regions make dense triples/indices readable in
+keyed gutters. Native whole-photo views retain2540x3182 resolution. An initial
+annotation spill outside crop bounds was corrected before final replay; raw panels
+are exactly preserved nearest-neighbor photo crops.
+
+Fully labeled P382/N2674 strip reproduces105 red-only,108 yellow-only,144 unknown,
+25 contradictions; P337/N2696 shows84 red-only,90 yellow-only,118 unknown,45 conflicts.
+Both remain rejected diagnostics. All719 residues list exact supporting observation
+IDs/k values, with six paired photographic conflict examples and support/ownership
+limitations. No black inferred; no observed color changed or dropped. Three focused
+illustrated review questions are tracked with answers pending, not treated as a
+permission gate or new maker evidence.
+
+Checks cover all930 source/color/coordinate/index/triple joins, one-to-one assignments,
+27 maker A/B weighted sums,719 independently reconstructed residue memberships,
+conflict arithmetic, original raw-panel pixels and native dimensions. Independent
+byte-for-byte artifact replay and documentation links checked; sources sealed by
+SHA-256. Updated audit/index, methods, plan and handoff; scoped commit/push and
+exact remote/clean verification complete delivery. Stop after this package.
+Next: review bend, P382 residue7 and primary maker failure before separately
+authorized local neighbor-walk investigation. Retain GPT-6 Astra/High recommendation,
+not a new active-model claim; no /new needed for review, /new before implementation.

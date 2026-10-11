@@ -1,6 +1,42 @@
 # Beads session handoff — new branch
 
-## Current R254 — bounded joint pattern/geometry audit completed
+## Current R255 — sequential visual audit completed
+
+[Main audit](photo2/AUDIT_R255.md) · [Visual evidence index](photo2/review/r255/INDEX.md).
+Audit/explanation only: no detector, geometry fit, broad search or recoloring.
+All310 R252 observations and R253/R254 sources remain unchanged. Native whole-photo
+splines/edges, trusted observations, triples and indices; five raw/marked crop sets;
+origin locator/detail; 27-node maker A/B triple chart; two fully labeled rejected
+templates; six photographic conflict pairs; complete930-row three-model ledger.
+
+Primary audit convention is R254 N2696_h+1_f0, the favored-hand training-geometry
+nominee, with C252-A948=maker20=C at k0 (generator2162). It owns292/310
+representatives, with243 conditional-unique assignments; global correctness remains
+unproved. N2674_h+1_f0/P382 is a separate post-hoc pattern diagnostic:105 red-only,
+108 yellow-only,144 unknown,25 conflicts. Primary N2696/P337 has45 conflicts.
+Neither is a recovered pattern; no black inferred. N2681_h-1 remains separately
+available in the table and prior overlay, not silently collapsed into the primary.
+
+The active R175 spline is still the inherited boundary-midpoint periodic cubic;
+R190 remains unadopted. Exact historical edge source is archived/hash-verified.
+Edges are unvalidated, including possible shadow bias. Five normal cross-sections
+and a separate registered-model translation overlay expose the distinction.
+Maker graph triples retain local topology and A/B ambiguity; global canonical
+triples are explicitly algebraic addresses derived from tentative indices, not
+verified whole-necklace neighbor walks. Preliminary geometry is not claimed solved.
+
+Source/coordinate/color/index/triple identities and all719 residue memberships are
+checked. Byte-identical replay, original-pixel raw panels, native dimensions and
+links are verified. Three small illustrated review questions are saved, unanswered.
+Scoped commit/push and exact remote/clean checks finish delivery; stop afterward.
+
+**Next concrete task:** visually review the bend edges, P382 residue7 pair and
+primary maker-chart failure, then separately authorize a bounded local neighbor-walk
+check for row/index slips. No automatic new inference. Retain GPT-6 Astra / High
+as recommendation only; no new active-model status supplied. No /new needed for
+review; /new recommended before a separately authorized implementation round.
+
+## Prior R254 — bounded joint pattern/geometry audit completed
 
 [Scientific report](photo2/PATTERN_GEOMETRY_R254.md) ·
 [Stage-by-stage visual review and reproduction](photo2/review/r254/INDEX.md).
