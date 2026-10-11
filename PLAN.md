@@ -1,6 +1,22 @@
 # Photo-2 reconstruction plan
 
-## Current R240 — interior observations, not full-surface segmentation
+## Current R241 — propose local Value FFT for helicity; discussion stop
+
+User selects local 2D FFT helicity evidence as the next bounded experiment,
+superseding the proposed immediate D3 correspondence fit. Read the
+[bounded protocol](photo2/FFT_EXPLORER_NOTES.md#r241--proposed-bounded-value-channel-helicity-experiment).
+Eight preselected centerline windows, Gaussian FWHM equal to local rope width,
+Value-only bead-scale band-pass, candidate conjugate pairs, tangent-relative
+comparison and known-hand calibration. Two development/six reserved spectral
+evaluations; fixed small perturbation budget. No per-color normalization initially.
+Require consistent, stable preference across at least five reserved windows and
+known-hand controls; preserve projection/assignment ambiguity and weak windows.
+
+Plan only: no FFT, render, detector change or fit run. Stop for discussion before
+implementation. No indexing/repeating-pattern work. Retain user-reported
+Astra/High; no /new now, recommend /new before authorized implementation.
+
+## Prior R240 — interior observations, not full-surface segmentation
 
 User clarifies that darker, approximately same-hue pixels may separate neighboring
 red/yellow interiors; assigning those pixels to beads is unnecessary. Seek one

@@ -1,5 +1,116 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R241 — proposed bounded Value-channel helicity experiment
+
+**Proposal only; stop for discussion before implementation.** This supersedes
+R240's proposed D3 correspondence fit as the next experiment. The user's working
+association is the three 1/6/7 direction families; the immediate problem is their
+visibility in mixed-color, shadowed and highlighted windows, not inventing new
+direction families. No full-necklace indexing or repeat recovery.
+
+Three approaches considered: (1) Gaussian-windowed raw HSV Value with band-pass;
+(2) Value with illumination detrending; (3) separately normalized color channels.
+Select (1). Preserve raw spectra. A Gaussian-weighted mean subtraction is a limited
+DC-leakage control, not per-color normalization; defer (2)/(3) unless this bounded
+experiment fails and the user agrees to another step.
+
+### Windows and finite parameter budget
+
+- Select eight centers before viewing their FFTs, initially equally spaced by
+  image arc length along the existing approximate centerline. Use raw views to
+  ensure varied section orientations and bright/dark/color mixtures. Any move
+  from equal spacing needs a recorded raw-image reason, never spectral quality.
+  Keep a shadow-heavy and a more curved window as stress cases. Record center,
+  tangent, local rope width W, bead-scale estimate d, curvature and source hashes.
+  Respect R191's rejection of the candidate bend correction; no curve refitting.
+- Mark two dispersed windows for inspection/development and six for a frozen
+  evaluation, all chosen before spectra. These are reserved spectral evaluations,
+  not previously unseen photographs. Report every selected window, including
+  failures. Nearby shifts and overlapping windows are not independent votes.
+- Primary isotropic Gaussian: FWHM=W, sigma=W/2.355, cropped at +/-3 sigma in x/y.
+  FFT in native image coordinates without a hard necklace mask or geometric
+  straightening. Rotate frequency vectors for comparison; tangent-aligned image
+  displays are illustrative. Check FWHM=0.75W and1.25W one at a time. Record
+  tangent variation over the effective window; severe curvature limits evidence.
+- Use V=max(R,G,B)/255 from original JPEG RGB, with no white balance or color
+  equalization. Primary FFT is FFT(G*V). Retain complex coefficients and power.
+  Also inspect FFT(G*(V-weighted_mean(V))) as the single DC-leakage control.
+- Start with radial frequencies 1/(3d) <= f <= 2/d cycles/native pixel, wavelengths
+  0.5d to3d, with short cosine transitions rather than abrupt radial edges. Here d
+  is an image-derived approximate projected bead diameter, not a spectral neighbor
+  label. Freeze its estimator before reserved evaluation; preserve uncertainty.
+  These are proposed broad limits, not recovered spacings or old explorer percent
+  settings. Verify coverage on known-geometry controls before photo evaluation.
+- Sensitivity only: shift each cutoff by +/-20% separately; keep the other fixed.
+  Also shift the center by +/-0.25d along the tangent. Together with two alternate
+  widths and mean-subtraction this is nine variants plus the primary per window;
+  no Cartesian parameter sweep or reserved-window retuning. Clip to Nyquist and
+  report unresolvable bands. Zero padding cannot improve intrinsic resolution.
+
+### Candidate peaks, conventions and helicity comparison
+
+Detect noncentral local power maxima, pair k with -k, and consolidate the same
+broadened peak/harmonic family. Keep up to six candidate pairs with prominence
+relative to their local spectral background, radius, angular width and stability.
+Do not force three pairs when fewer are supported. Conjugate symmetry is automatic
+for real input and is not itself supporting evidence. Display inverse transforms
+of selected pairs beside the raw image to show which structures contribute.
+
+Source coordinates are x right/y down; convert vectors to x right/y up for angles.
+Use increasing stored centerline arc length for the tangent; compare unoriented
+lines modulo180 degrees. Record signed relative angles in [-90,90). Tangent
+reversal must leave them unchanged. A Fourier vector is a reciprocal-space
+direction, not automatically a bead-connection vector or simply the same labeled
+family after a90-degree rotation. Labels1/6/7 are index offsets, not radial ratios.
+
+Calibrate family associations and hand signs with beads.pov-consistent known
+opposite-helicity POV-Ray images: two hands, three section orientations, and two
+appearance conditions (uniform pigment; mixed red/yellow/black with shadows and
+highlights), at most12 matched renders, reusing suitable existing controls. Keep
+camera/light fixed within comparisons; record phase/view and truth separately
+from image-only estimates. Check image rotation/reflection and tangent-reversal
+conventions. This is limited calibration, not an inverse-rendering project. If
+plausible photo view/phase ambiguity changes the inferred hand, report ambiguity.
+
+Only after candidate extraction, compare their tangent-relative angles and
+dimensionless radii f*d across windows and fit/match the expected three-family
+pattern for each hand. Retain alternate family assignments and penalize missing
+or unexplained peaks equally for both hands. Use the same nuisance-parameter
+freedom for each hand. Tangent compensation need not make angles identical:
+projection and visibility vary with section orientation. Compare against the
+calibrated orientation-dependent predictions; do not invent local out-of-plane
+centerline tilts. If small controls do not bound this effect, stop as inconclusive
+rather than expanding into camera/geometry fitting without discussion.
+
+### Decision gate and deliverable
+
+Freeze extraction rules and confidence thresholds using the controls and two
+development windows before opening the six reserved spectra. Thresholds must
+reflect peak width, local background and empirical perturbation stability, not
+an arbitrary promise of angular accuracy or formal statistical significance.
+Convincing evidence requires correct hand recovery in informative known-hand
+controls, then the same hand supported by at least five of six reserved windows
+across at least three distinct section orientations, with no comparably strong
+contradictory window. Family assignment and hand preference must survive the
+predeclared perturbations; the opposite hand must fit worse than the empirical
+measurement uncertainty, not just have a slightly lower score. Report primary
+and sensitivity outcomes separately, along with all excluded/weak cases. If
+power spectra cannot distinguish hands under the allowed label/view alternatives,
+the result is explicitly inconclusive. Do not count nine perturbations as votes.
+
+Deliver one location overview and compact per-window cards: raw/tangent-aligned
+context, Gaussian support, Value image, spectrum with physical frequency axes and
+band mask, candidate pairs, pair reconstruction and both-hand comparison. Include
+cross-window angle/score table, exact parameters, source hashes and reproduction
+commands. Stop at this gate, even on failure; no automatic color-normalization
+extension, segmentation revision, bead indexing or pattern inference. Preserve
+R240's interior-observation objective for later geometry work.
+
+Retain user-reported GPT-6 Astra / High for design and interpretation. No /new
+needed for discussion; recommend /new before an authorized implementation.
+
+## Historical R110 source inspection
+
 The maker reports that Gaussian-window 2D FFT worked well both for background,
 including shadows, and for bead directions. Preserve this as **prior practical
 experience**, not just an untried suggestion. This review inspected code; it did

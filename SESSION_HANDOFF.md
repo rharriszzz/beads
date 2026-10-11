@@ -1,6 +1,23 @@
 # Beads session handoff — new branch
 
-## Current R240 — user corrects the segmentation objective; discussion stop
+## Current R241 — local Value FFT helicity experiment proposed, not implemented
+
+The user chooses multi-window Gaussian 2D FFT of HSV Value, bead-scale band-pass
+and tangent-compensated comparison of candidate1/6/7 peak families as the next
+bounded experiment. This replaces immediate D3 correspondence fitting as the next
+task. Read current PLAN and the R241 protocol in photo2/FFT_EXPLORER_NOTES.md.
+Eight windows fixed from raw views/centerline before FFT inspection; two development
+and six reserved. Width/band/sensitivity definitions, conjugate/frequency/angle
+conventions, known-hand POV-Ray controls and a consistency decision gate are saved.
+Per-color normalization deferred; no full indexing or repeat recovery. R240's
+interior-observation objective still applies to later bead observation work.
+
+No implementation authorized in this turn: the user explicitly requests the plan
+then discussion. No spectra, synthetic renders, new direction/helicity results or
+code changes. Documentation only, commit/push/verify, then stop. Retain supplied
+Astra/High status; no /new needed for discussion, recommended before implementation.
+
+## Prior R240 — user corrects the segmentation objective; discussion stop
 
 One reliable interior observation per sufficiently visible red/yellow bead is the
 objective. Dark, approximately same-hue pixels provide separation evidence; they

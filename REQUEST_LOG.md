@@ -5317,3 +5317,42 @@ No detector/code/reference/image/result changed; no new experiment run. Update
 plan/handoff, commit/push scoped documentation, verify remote/status, then stop
 for discussion. Retain user-reported Astra/High. No /new for discussion; recommend
 /new before the next authorized implementation.
+
+## R241 — Design a bounded multi-window Value FFT helicity experiment
+
+User requests a concise plan before implementation, then discussion. Their working
+interpretation is that the three meaningful directions are the geometric1/6/7
+families; mixed red/yellow/black, shadows and highlights obscure the signal. Use
+Gaussian-windowed 2D FFT on HSV Value at several centerline points, suppress both
+low/high frequencies at bead scales, extract candidate opposite pairs, compensate
+for centerline angle and compare consistency/relative helicity support. Expected
+pattern fitting is appropriate after candidate peaks exist. Separate red/yellow
+normalization is deferred unless simple Value fails. Read earlier notes and retain
+conventions. No full-necklace indexing or repeat recovery. This replaces the
+immediate D3 correspondence experiment as the next proposed task.
+
+Read current plan/handoff/log, FFT_EXPLORER_NOTES, METHODS B1-B3, PRIOR_WORK R098,
+and the historical SHAPE_REASONING quick model from local git2c4c116. Also checked
+R187 spline provenance and R191 bend rejection. Preflight: daisy, clean
+photo-2-strategy-v3 at15729e61bab215eb6ee8b5792a2cbb8f6e81a4f9, no stashes.
+Fetch required approved escalation after sandbox denied FETCH_HEAD; upstream
+then matched0/0. No subagents, external research or experiment execution.
+
+Saved proposed protocol in photo2/FFT_EXPLORER_NOTES.md: three approaches considered
+(raw Value, detrended Value, per-color normalization), select raw Value band-pass.
+Eight preselected locations, two development/six reserved; FWHM=W, sigma=W/2.355;
+primary frequencies1/(3d) to2/d cycles/native pixel with tapered edges. Fixed width,
+cutoff, small center-shift and weighted-mean-removal sensitivity checks, no sweep.
+Retain candidate ambiguity, inverse-pair visualizations and actual frequency units.
+Calibrate known opposite hands at varied orientations/appearances in at most12
+matched POV-Ray controls; do not equate reciprocal vectors with neighbor vectors.
+Compare modulo180 tangent-relative directions allowing calibrated view effects.
+Proposed convincing gate: informative synthetic controls correct and stable same
+hand in at least5/6 reserved windows over three orientations, no strong contrary
+window, separation beyond empirical uncertainty and stability under perturbations.
+If power spectra/label/view alternatives leave hands indistinguishable, inconclusive.
+
+No windows sampled, FFTs/renders run, code modified or helicity result claimed.
+Plan/handoff updated; documentation checks only. Commit/push scoped records and
+verify exact remote tip and clean status, then stop for discussion. Retain the
+user-reported Astra/High; no /new for discussion, recommended before implementation.
