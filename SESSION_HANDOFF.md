@@ -1,5 +1,68 @@
 # Beads session handoff — new branch
 
+## Current R257 — native surface debugger delivered; lighting remains unvalidated
+
+[Launch / overlay controls](photo2/bead_debugger/README.md) ·
+[Scientific report](photo2/SURFACE_LIGHTING_R257.md) ·
+[Clean bead2 comparison](photo2/review/r257/bead-2-clean.png) ·
+[All native crops / tables / hashes](photo2/review/r257/README.md).
+
+Run `.venv/bin/python -m photo2.bead_debugger.server` → http://localhost:8767.
+Restart an old server after updating. Begin with Inspect → **Selected footprint
+only**, then **Selected locations**. E2 layers independently expose physical center,
+audited outward extremum/visibility, native/adaptive visible-area centroid, predicted
+highlight point/region, photographic reflection candidates, owned pixels and shadows.
+Selected-only native overlays default on; neighbors can be added explicitly. The
+user rejected the first cluttered bead2 question image; answer and original image
+are preserved. This was presentation feedback, not a geometry confirmation.
+
+Exact source-annulus camera rays and analytic curved/flat/hole normals, all-scene
+self/neighbor shadow rays, 4/2/1px convergence and boundary2×2 supersampling,
+9×9 final extended-light integration, background jobs/cache keys, light switches,
+new review actions and detailed ZIPs are implemented. R256 geometric adapter,
+model versions, generator indices, origins, reviews and backups remain intact.
+Old history is labeled R256 coarse; new records include light parameters/cache ID.
+
+Frozen N2696_h+1_f0 beads0–7, six index-neighbor directions and distant straight
+(k370) / strongly curved(k1695) sections are recorded. Bead2 physical center is
+(1353.655,320.046), outward point(1356.319,336.319), adaptive visible centroid
+(1355.819,328.462),311.75px² visible. Its4px centroid differs by0.82px;1px by0.18px.
+The model footprint crosses a dark/reddish partly exposed region below a prominent
+red body; no reliable black-surround reflection is assigned there and default
+illumination predicts no supported highlight. True photographed center/index remain
+unknown. Do not declare the body absent or an index replacement established.
+Beads3/4 have null visible centroids. Small bead9 exposure demonstrates an8.74px
+coarse-grid centroid error; native median error across inspected visible indices
+falls from0.576px(4px) to0.078px(1px). Full2×2 check differs≤0.0058px from adaptive.
+
+119 independent photographic bright-on-dark candidates retained;86 pass conditional
+model ownership/reliability,49 train/37 geographically held out. One directional
+and two rectangular angular-source/roughness alternatives fitted; weak photo-derived
+paper deficits included, no per-bead lighting parameters. Directional heldout RMS
+9.85px; sharp rectangle9.97px; smooth rectangle9.24px (only1/37 within3px).
+Paper-shadow improvement is small. **No source is accepted as recovered lighting.**
+Directional is the simplest diagnostic default, not photographic truth. A finite
+lamp distance, calibrated albedos and reliable photo-internal-shadow labels remain
+unidentified. Alternative frozen geometries use matched directional fitting rules;
+none resolves the failure or establishes count/hand. No global model was changed.
+
+Validation:22 Python tests, JavaScript contracts,58 real-Chromium checks, including
+clean presets, precise ownership/normal/half-vector/synthetic-light contracts,
+old review/backup preservation, native controls, lighting switches, asynchronous
+navigation and complete exports. Exact source/parameter hashes and reproduction
+commands are tracked. Local-only Sites workflow; OpenAI Docs used solely for the
+next-session model recommendation. No subagents, hosting or other-account writes.
+
+**Next concrete task / stopping point:** inspect the clean bead2 footprint, then
+perform a bounded silhouette/neighbor-correspondence check of0–7, especially the
+red body above bead2, under explicit camera/phase alternatives. Improve geometry
+before adding more lights. Stop after this implementation/diagnostic delivery;
+no automatic indexing, pattern optimization or broad segmentation. Recommend
+GPT-6 Astra / High for that scientific ambiguity; recommendation only, no new
+active-model status supplied. No /new needed to use the debugger; use /new before
+the next substantial inference round. Commit/push and exact remote/clean verification
+finish this bounded delivery.
+
 ## Current R256 — working interactive debugger delivered
 
 [Launch/controls/engineering README](photo2/bead_debugger/README.md) ·

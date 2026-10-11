@@ -6,7 +6,8 @@ import json, math, os, threading, uuid
 from pathlib import Path
 
 ACTIONS=['looks-correct','location-incorrect','index-neighbor-incorrect','color-incorrect-or-uncertain',
-         'duplicate-or-merged','detector-missed','cannot-determine']
+         'duplicate-or-merged','detector-missed','cannot-determine','visible-centroid-incorrect',
+         'predicted-reflection-incorrect','observed-reflection-incorrect-or-missing','lighting-mismatch']
 class Conflict(ValueError): pass
 
 def atomic(path,doc):

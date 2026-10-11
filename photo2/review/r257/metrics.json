@@ -1,0 +1,167 @@
+[
+  {
+    "light": "directional",
+    "direction": [
+      -0.24943213155878427,
+      -0.07380375969792105,
+      0.9655757954715377
+    ],
+    "extent": [
+      0.0,
+      0.0
+    ],
+    "roughness_deg": 5.6760018758671125,
+    "train": {
+      "n": 49,
+      "predicted": 49,
+      "median_px": 6.693813505006658,
+      "rms_px": 8.146553116570404,
+      "p90_px": 12.355857668633698,
+      "within_3px": 5
+    },
+    "test": {
+      "n": 37,
+      "predicted": 37,
+      "median_px": 9.219017243247084,
+      "rms_px": 9.854792403800937,
+      "p90_px": 12.462671914151048,
+      "within_3px": 0
+    },
+    "paper": {
+      "train": {
+        "n": 893,
+        "rmse": 0.07724269997972369,
+        "null_rmse": 0.07799491094887659
+      },
+      "test": {
+        "n": 767,
+        "rmse": 0.09937485699396334,
+        "null_rmse": 0.10066204263136802
+      }
+    },
+    "photometry": {
+      "train": {
+        "n": 49,
+        "log_intensity_rmse": 0.509811780785369,
+        "median_size_error_px": 0.9469542428999101,
+        "median_orientation_error_deg": 54.00068305496457
+      },
+      "test": {
+        "n": 37,
+        "log_intensity_rmse": 0.7829971414317513,
+        "median_size_error_px": 1.2504162909228789,
+        "median_orientation_error_deg": 33.42982413355183
+      }
+    }
+  },
+  {
+    "light": "rectangle-sharp",
+    "direction": [
+      -0.45517726694534716,
+      -0.025598901708613966,
+      0.8900327813555391
+    ],
+    "extent": [
+      29.922983125179243,
+      37.53178357722212
+    ],
+    "roughness_deg": 3.368402923662663,
+    "train": {
+      "n": 49,
+      "predicted": 49,
+      "median_px": 7.35234787079017,
+      "rms_px": 8.580249981818513,
+      "p90_px": 13.373042772244352,
+      "within_3px": 6
+    },
+    "test": {
+      "n": 37,
+      "predicted": 37,
+      "median_px": 9.104552926883981,
+      "rms_px": 9.969188990678079,
+      "p90_px": 13.37180638963105,
+      "within_3px": 0
+    },
+    "paper": {
+      "train": {
+        "n": 893,
+        "rmse": 0.07514397179718002,
+        "null_rmse": 0.07799491094887659
+      },
+      "test": {
+        "n": 767,
+        "rmse": 0.09438548258973727,
+        "null_rmse": 0.10066204263136802
+      }
+    },
+    "photometry": {
+      "train": {
+        "n": 49,
+        "log_intensity_rmse": 0.4994114051243682,
+        "median_size_error_px": 0.612178884453261,
+        "median_orientation_error_deg": 54.21655429569637
+      },
+      "test": {
+        "n": 37,
+        "log_intensity_rmse": 0.9023540704092783,
+        "median_size_error_px": 0.6339150554977541,
+        "median_orientation_error_deg": 66.17701522060406
+      }
+    }
+  },
+  {
+    "light": "rectangle-smooth",
+    "direction": [
+      -0.18361938680745002,
+      0.08426179146338728,
+      0.9793793296204677
+    ],
+    "extent": [
+      40.946115798047195,
+      53.58472115604328
+    ],
+    "roughness_deg": 10.871997373269242,
+    "train": {
+      "n": 49,
+      "predicted": 49,
+      "median_px": 7.005585223842607,
+      "rms_px": 8.112882344328757,
+      "p90_px": 12.418206099263589,
+      "within_3px": 6
+    },
+    "test": {
+      "n": 37,
+      "predicted": 37,
+      "median_px": 8.71726120659951,
+      "rms_px": 9.239277673494003,
+      "p90_px": 11.29696809693934,
+      "within_3px": 1
+    },
+    "paper": {
+      "train": {
+        "n": 893,
+        "rmse": 0.07730955611798335,
+        "null_rmse": 0.07799491094887659
+      },
+      "test": {
+        "n": 767,
+        "rmse": 0.0985600218638621,
+        "null_rmse": 0.10066204263136802
+      }
+    },
+    "photometry": {
+      "train": {
+        "n": 49,
+        "log_intensity_rmse": 0.2671936795884779,
+        "median_size_error_px": 1.0838312988207004,
+        "median_orientation_error_deg": 70.26949617148637
+      },
+      "test": {
+        "n": 37,
+        "log_intensity_rmse": 0.34727669973016156,
+        "median_size_error_px": 1.2297281366597137,
+        "median_orientation_error_deg": 77.35061535693035
+      }
+    }
+  }
+]

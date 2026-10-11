@@ -9,6 +9,7 @@ import numpy as np
 from .generate import ROOT,generate,sha
 from . import models
 from .store import ReviewStore, Conflict
+from .detail import DetailService
 
 STATIC=Path(__file__).parent/'static'
 class App:
@@ -23,6 +24,7 @@ class App:
             print('Regenerating photo-only splines and interior candidates…',flush=True);generate(ROOT/'beads-photo-2.jpg',self.generated)
         self.manifest=json.loads(path.read_text());self.inventory=json.loads((self.generated/'observations.json').read_text());self.splines=json.loads((self.generated/'splines.json').read_text())
         self.obs={r['id']:r for r in self.inventory['observations']};self.cache={};self.fft=None
+        self.details=DetailService(self.work)
         self.reviews=ReviewStore(self.work/'reviews',self.manifest['image_sha256'])
         self.photo=ImageOps.exif_transpose(Image.open(ROOT/'beads-photo-2.jpg')).convert('RGB');b=io.BytesIO();self.photo.save(b,format='PNG',icc_profile=None);self.png=b.getvalue()
     def model(self,mid):
@@ -44,7 +46,8 @@ class App:
     def debug_zip(self,record):
         self.validate_record(record);m=self.model(record['model_id']);b=m['beads'][record['generator_index']];oid=record.get('observation_id')
         x,y=record['source_position'];r=100;box=[max(0,int(x)-r),max(0,int(y)-r),min(self.photo.width,int(x)+r),min(self.photo.height,int(y)+r)]
-        doc=dict(**record,image_sha256=self.manifest['image_sha256'],native_image_size=list(self.photo.size),crop_box=box,
+        detail=self.details.result(record['model_id'],record['generator_index'],record.get('lighting_id',self.details.lighting()['selected']))
+        doc=dict(**record,surface_diagnostics=detail,image_sha256=self.manifest['image_sha256'],native_image_size=list(self.photo.size),crop_box=box,
                  detector_provenance=self.manifest,model_provenance={k:v for k,v in m.items() if k not in ['beads','correspondences','patterns','centerline']},
                  bead=b,observation=self.obs.get(oid),correspondence=m['correspondences'].get(oid),
                  split_evidence=[self.inventory['split_pairs'][i] for i in self.obs.get(oid,{}).get('split_evidence',[])],
@@ -67,6 +70,10 @@ def make_server(app,host='127.0.0.1',port=8767):
             try:
                 parsed=urlsplit(self.path);path=parsed.path;q=parse_qs(parsed.query)
                 if path=='/api/bootstrap':return self.send(dict(manifest=app.manifest,inventory=app.inventory,splines=app.splines,model_ids=models.IDS,reviews=app.reviews.read()))
+                if path=='/api/lighting':return self.send(app.details.lighting())
+                if path=='/api/surface':
+                    key,future=app.details.submit(q['id'][0],int(q['gi'][0]),q['light'][0])
+                    return self.send(dict(status='ready',result=future.result()) if future.done() else dict(status='working',key=key))
                 if path=='/api/model':return self.send(app.model(q.get('id',[models.IDS[0]])[0]))
                 if path=='/api/reviews':return self.send(app.reviews.read())
                 if path=='/api/backup':return self.send(app.reviews.read(),filename='bead-reviews-backup.json')

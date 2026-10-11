@@ -1,5 +1,10 @@
 # Methods collection — bead-rope reconstruction
 
+## R257 native surface and lighting diagnostics
+
+[Scientific method, source-compatible ray/normal mathematics, conditional lighting inversion, spatial holdout, convergence and reproduction](photo2/SURFACE_LIGHTING_R257.md) · [working debugger](photo2/bead_debugger/README.md). Distinguish physical center, radial surface extremum, projected visible-area centroid and predicted reflection. Geometry is frozen during shared-light fitting; failed heldout predictions remain explicit. No accepted lamp, bead mapping or pattern follows from this experiment.
+
+
 - **R252 assisted colored-observation consolidation:** [method, evidence and reproduction](photo2/COLORED_OBSERVATION_CONSOLIDATION.md). Source-qualified identity, raw ownership review, parallel Value diagnostics without assigning dark pixels, and sector-balanced coverage. Native interiors remain distinct from centers.
 
 This is the reusable method index. The task and maker's construction facts live

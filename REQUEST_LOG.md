@@ -6504,3 +6504,110 @@ scientific ambiguity or the staged independent fit. Official model comparison
 supports Sol's lower API cost; this is not a statement of account usage or an
 active model switch. No /new needed to use/review the app; use /new before a new
 substantial inference/implementation round. User controls switching.
+
+## R257 — Native bead surfaces, photographic lighting inversion and debugger
+
+User reports predicted bead-location trouble by index2 in the R256 debugger.
+Explicitly requests implementation now, before global indexing or repeating-color
+optimization, on photo-2-strategy-v3. Read R256/current records; make routine
+scientific/engineering choices independently; no manual lighting coordinates needed.
+
+Keep physical center, actual minor-radial surface extremum, projected visible-area
+centroid and predicted specular reflection distinct. Audit the rounded-annulus
+outward definition; report its visibility. Use native1px selected/neighborhood
+first-hit ownership including holes/curvature/occlusion; compare4/2/1px and adaptive
+supersampling with undefined centroids when unsupported. Infer shared effective
+illumination from independent photo highlights, internal shadows and paper shadows;
+compare directional/extended and only justified multiple sources, reserve separated
+validation regions, separate geometry and illumination errors, expose ambiguities.
+No spheres as replacement geometry, no per-bead fitted lights/material freedom.
+
+Inspect N2696_h+1_f0 beads0–7, especially2, with ±1/6/7 neighbors and two distant
+straight/curved sections. Provide native raw/footprint/marker crops, ownership,
+reflection discrepancy and centroid convergence tables; explain plausible failure
+causes without pretending marker changes fix geometry. Retain coarse navigation,
+cache detailed calculations by full provenance and perform them asynchronously.
+
+Extend existing debugger with independent physical-center/outward/visible-centroid/
+predicted-highlight-point/region/observed-reflection/footprint/shadow overlays,
+global-light switching, numerical details/uncertainty, new review findings/notes/
+clicked corrections and complete debugging ZIP provenance. Preserve existing
+reviews/backups/origins and never reinterpret old judgments under changed caches.
+Test source-compatible geometry, normals, ownership, projection, convergence,
+hidden beads, light movement/extent/occlusion/shadows, heldout prediction and review
+persistence. Deliver working app, scientific report, tests, reproduction/user docs,
+updated plan/handoff/log; commit/push and verify exact remote and clean worktree.
+If inversion remains underdetermined, finish justified implementation and disclose
+uncertainty. No broad red/yellow campaign or new color-pattern optimization.
+
+### R257 visual response — clutter is not geometry evidence
+
+Optional Q1 used bead-2-comparison.png to ask whether the exposed patch below
+the red body was the user's concern. User answers: **“The image was cluttered
+with markers that I don't understand.”** This is presentation feedback, not
+confirmation of an index, body, centroid, light or the proposed mismatch.
+Replace the question image with bead-2-clean.png (raw versus only the selected
+footprint boundary), separate one-marker location panels, and add debugger
+Selected footprint only / Selected locations presets plus selected-only native
+layers. Preserve the answer and original question linkage in r257/questions.json.
+Do not repeat a visual question as a gate before completing implementation.
+
+### R257 outcome — working native debugger, negative precise-lighting result
+
+Preflight verified daisy, photo-2-strategy-v3, clean worktree/no stashes and0/0
+upstream divergence. Read R256 app/docs, current records, source annulus and prior
+shape guidance. Four numerical methods compared; reused the conservative exact-
+implicit annulus marcher with analytic normals rather than replacing beads by
+spheres/meshes. Directional and two shared rectangular-angular-source alternatives
+were fitted on frozen geometry; no per-bead lighting/material freedom or model edit.
+
+Implemented native1px selected±1/6/7 ownership, boundary2×2 area integration,
+4/2/1/adaptive tables, outward-surface proof and explicit visibility, peak/centroid/
+covariance/highlight-region predictions, independent observed reflection evidence,
+all-scene self/neighbor/light visibility and paper-shadow diagnostics. Camera and
+light ray acceleration include all potentially relevant geometry. Global4px cache
+remains for navigation; separate source/geometry/light/numerics-hashed local caches
+run behind an asynchronous API and selection-race protection. Original model/indices/
+origins unchanged. New findings, source-coordinate corrections, light snapshots,
+R256-versus-R257 history labels and full numerical/debug ZIP records preserve old
+reviews and backups. Browser uses selected-only native overlays and two clean
+presets after the user's clutter feedback. No production reviews were synthesized.
+
+Curated original/native marked crops and measurements cover0–7 and distant straight
+k370 / bendk1695. Bead2: center(1353.655,320.046), outward(1356.319,336.319), visible
+centroid(1355.819,328.462),311.75px². Coarse4px centroid differs0.82px, native1px0.18px;
+physical center differs8.69px. The footprint is conditional over a dark/reddish
+partial region below a red body, not proof of absent material or a wrong index.
+No reliable reflection candidate or default predicted highlight for2;3/4 have no
+sampled visible surface. Median inspected centroid error drops0.576→0.078px from
+4→1px; small bead9 exposure moves8.74px. Full2×2 audit agrees≤0.0058px.
+
+119 photo-only bright-on-dark proposals retained;86 conditionally eligible,49train/
+37test in separately held-out image sectors. Connected half-contrast patches supply
+positions/shapes/intensities without historical bead labels. Paper chromaticity is
+learned from image border;893train/767test deficits remain weak ambiguous shadow
+features. Internal dark gaps/material are not forced into photographic ownership.
+Directional default fits elevated source(−0.24943,−0.07380,+0.96558), roughness5.68°;
+rectangles show extent/roughness ambiguity. All fail precise heldout localization:
+RMS9.85/9.97/9.24px, best1/37 within3px. Background-shadow improvement is marginal.
+No recovered lamp/window, finite distance, albedos or certified light model claimed.
+Final9×9 source quadrature replaces fitting3×3; sampled centroid sensitivity≤0.54px.
+Alternative fixed geometries receive matched directional fitting rules but have
+changed eligible sample counts, so do not establish a winner. Two lights unjustified.
+
+22 Python tests pass (source support/normals/projection/occlusion/convergence,
+light movement/spread/shadows, synthetic heldout recovery, indices/reviews), JS
+contracts pass,58 actual Chromium checks pass with no JS errors. Final browser
+checks include clean presets, lighting switches, stale-result rejection and export
+of new findings while retaining R256 records. Local socket tests required sandbox
+escalation; no hosted site or external messages. Curated hashes, evidence ledgers,
+full measurements, README/engineering/scientific report and reproduction commands
+are tracked; generated caches/environments remain ignored. Sites skill local-only
+workflow and official OpenAI Docs for recommendation only; no subagents.
+
+Next: bounded silhouette/neighbor correspondence audit of0–7 under explicit camera/
+phase alternatives before increasing lighting complexity. Stop at this delivery;
+no automatic global indexing or pattern campaign. Recommend GPT-6 Astra/High for
+scientific ambiguity, not a claim of new active-model status; /new before the next
+substantial inference round, unnecessary just to use the app. Scoped commit/push,
+exact remote tip and final clean-worktree checks finish the delivery.

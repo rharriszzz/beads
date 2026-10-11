@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "model_id": "N2696_h+1_f0",
+  "model_version": "e8b96c73fa99e1a115b4540401ae88665e81d487afa91236450724f39e54e6a3",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "selected": "directional",
+  "lights": [
+    {
+      "id": "directional",
+      "direction": [
+        -0.24943213155878427,
+        -0.07380375969792105,
+        0.9655757954715377
+      ],
+      "azimuth_deg": -163.5171920293672,
+      "elevation_deg": 74.92270686230381,
+      "roughness_deg": 5.6760018758671125,
+      "width_deg": 0.0,
+      "height_deg": 0.0,
+      "rotation_deg": 0.0,
+      "ambient": 0.2,
+      "specular_strength": 1.0,
+      "diffuse_reflectance": {
+        "black": 0.025,
+        "red": 0.2,
+        "yellow": 0.5,
+        "paper": 0.6
+      },
+      "material_status": "Shared relative lobe; ambient/diffuse values are display nuisance assumptions, not recovered albedos",
+      "source_model": "distant rectangular uniform-radiance source (angular dimensions); distance/physical size unidentifiable",
+      "fit_proxy_mse": 0.3216316290813509,
+      "free_parameters": 3,
+      "fit_quadrature_order": 3,
+      "validation_quadrature_order": 9,
+      "optimizer_nfev_limit": 32,
+      "metrics": {
+        "train": {
+          "n": 49,
+          "predicted": 49,
+          "median_px": 6.693813505006658,
+          "rms_px": 8.146553116570404,
+          "p90_px": 12.355857668633698,
+          "within_3px": 5
+        },
+        "test": {
+          "n": 37,
+          "predicted": 37,
+          "median_px": 9.219017243247084,
+          "rms_px": 9.854792403800937,
+          "p90_px": 12.462671914151048,
+          "within_3px": 0
+        }
+      },
+      "shadow_metrics": {
+        "train": {
+          "n": 893,
+          "rmse": 0.07724269997972369,
+          "null_rmse": 0.07799491094887659
+        },
+        "test": {
+          "n": 767,
+          "rmse": 0.09937485699396334,
+          "null_rmse": 0.10066204263136802
+        }
+      },
+      "status": "FAILED precise heldout localization; diagnostic configuration only",
+      "brightness_validation": {
+        "shared_training_gain": 1.7995213454977528,
+        "metrics": {
+          "train": {
+            "n": 49,
+            "log_intensity_rmse": 0.509811780785369,
+            "median_size_error_px": 0.9469542428999101,
+            "median_orientation_error_deg": 54.00068305496457
+          },
+          "test": {
+            "n": 37,
+            "log_intensity_rmse": 0.7829971414317513,
+            "median_size_error_px": 1.2504162909228789,
+            "median_orientation_error_deg": 33.42982413355183
+          }
+        }
+      },
+      "uncertainty": "No calibrated lamp position or size. Poor geometry-conditioned predictions; parameters at bounds and local optimizer budgets are not confidence intervals."
+    },
+    {
+      "id": "rectangle-sharp",
+      "direction": [
+        -0.45517726694534716,
+        -0.025598901708613966,
+        0.8900327813555391
+      ],
+      "azimuth_deg": -176.7811098553896,
+      "elevation_deg": 62.87736646112746,
+      "roughness_deg": 3.368402923662663,
+      "width_deg": 29.922983125179243,
+      "height_deg": 37.53178357722212,
+      "rotation_deg": 40.538256432454006,
+      "ambient": 0.2,
+      "specular_strength": 1.0,
+      "diffuse_reflectance": {
+        "black": 0.025,
+        "red": 0.2,
+        "yellow": 0.5,
+        "paper": 0.6
+      },
+      "material_status": "Shared relative lobe; ambient/diffuse values are display nuisance assumptions, not recovered albedos",
+      "source_model": "distant rectangular uniform-radiance source (angular dimensions); distance/physical size unidentifiable",
+      "fit_proxy_mse": 0.3463934356592299,
+      "free_parameters": 6,
+      "fit_quadrature_order": 3,
+      "validation_quadrature_order": 9,
+      "optimizer_nfev_limit": 16,
+      "metrics": {
+        "train": {
+          "n": 49,
+          "predicted": 49,
+          "median_px": 7.35234787079017,
+          "rms_px": 8.580249981818513,
+          "p90_px": 13.373042772244352,
+          "within_3px": 6
+        },
+        "test": {
+          "n": 37,
+          "predicted": 37,
+          "median_px": 9.104552926883981,
+          "rms_px": 9.969188990678079,
+          "p90_px": 13.37180638963105,
+          "within_3px": 0
+        }
+      },
+      "shadow_metrics": {
+        "train": {
+          "n": 893,
+          "rmse": 0.07514397179718002,
+          "null_rmse": 0.07799491094887659
+        },
+        "test": {
+          "n": 767,
+          "rmse": 0.09438548258973727,
+          "null_rmse": 0.10066204263136802
+        }
+      },
+      "status": "FAILED precise heldout localization; diagnostic configuration only",
+      "brightness_validation": {
+        "shared_training_gain": 4.976445210748762,
+        "metrics": {
+          "train": {
+            "n": 49,
+            "log_intensity_rmse": 0.4994114051243682,
+            "median_size_error_px": 0.612178884453261,
+            "median_orientation_error_deg": 54.21655429569637
+          },
+          "test": {
+            "n": 37,
+            "log_intensity_rmse": 0.9023540704092783,
+            "median_size_error_px": 0.6339150554977541,
+            "median_orientation_error_deg": 66.17701522060406
+          }
+        }
+      },
+      "uncertainty": "No calibrated lamp position or size. Poor geometry-conditioned predictions; parameters at bounds and local optimizer budgets are not confidence intervals."
+    },
+    {
+      "id": "rectangle-smooth",
+      "direction": [
+        -0.18361938680745002,
+        0.08426179146338728,
+        0.9793793296204677
+      ],
+      "azimuth_deg": 155.3499049461963,
+      "elevation_deg": 78.34430580050268,
+      "roughness_deg": 10.871997373269242,
+      "width_deg": 40.946115798047195,
+      "height_deg": 53.58472115604328,
+      "rotation_deg": -144.44249384727325,
+      "ambient": 0.2,
+      "specular_strength": 1.0,
+      "diffuse_reflectance": {
+        "black": 0.025,
+        "red": 0.2,
+        "yellow": 0.5,
+        "paper": 0.6
+      },
+      "material_status": "Shared relative lobe; ambient/diffuse values are display nuisance assumptions, not recovered albedos",
+      "source_model": "distant rectangular uniform-radiance source (angular dimensions); distance/physical size unidentifiable",
+      "fit_proxy_mse": 0.31995903214738824,
+      "free_parameters": 6,
+      "fit_quadrature_order": 3,
+      "validation_quadrature_order": 9,
+      "optimizer_nfev_limit": 16,
+      "metrics": {
+        "train": {
+          "n": 49,
+          "predicted": 49,
+          "median_px": 7.005585223842607,
+          "rms_px": 8.112882344328757,
+          "p90_px": 12.418206099263589,
+          "within_3px": 6
+        },
+        "test": {
+          "n": 37,
+          "predicted": 37,
+          "median_px": 8.71726120659951,
+          "rms_px": 9.239277673494003,
+          "p90_px": 11.29696809693934,
+          "within_3px": 1
+        }
+      },
+      "shadow_metrics": {
+        "train": {
+          "n": 893,
+          "rmse": 0.07730955611798335,
+          "null_rmse": 0.07799491094887659
+        },
+        "test": {
+          "n": 767,
+          "rmse": 0.0985600218638621,
+          "null_rmse": 0.10066204263136802
+        }
+      },
+      "status": "FAILED precise heldout localization; diagnostic configuration only",
+      "brightness_validation": {
+        "shared_training_gain": 0.48677043855321994,
+        "metrics": {
+          "train": {
+            "n": 49,
+            "log_intensity_rmse": 0.2671936795884779,
+            "median_size_error_px": 1.0838312988207004,
+            "median_orientation_error_deg": 70.26949617148637
+          },
+          "test": {
+            "n": 37,
+            "log_intensity_rmse": 0.34727669973016156,
+            "median_size_error_px": 1.2297281366597137,
+            "median_orientation_error_deg": 77.35061535693035
+          }
+        }
+      },
+      "uncertainty": "No calibrated lamp position or size. Poor geometry-conditioned predictions; parameters at bounds and local optimizer budgets are not confidence intervals."
+    }
+  ],
+  "geometry_frozen": true,
+  "plane_z": -6.110915748921366,
+  "split": "Entire image-angle sectors 1,4,6 of 8 withheld before fitting",
+  "limitations": [
+    "Geometry-conditioned matches, not verified bead indices",
+    "Source angular extent and roughness coupled",
+    "No radiometric camera calibration",
+    "Paper shadows are weak ambiguous evidence",
+    "No per-bead lights or material fitting"
+  ],
+  "hashes": {
+    "photo2/bead_debugger/lighting.py": "5de0b6d983ad87ba4c0186f32d9e2b41107ef0b7f12b45df24cb6f9e9976d68b",
+    "photo2/bead_debugger/surface.py": "a8ee5b9eb7698d399225ae5fa37d92a1f11821f65ff5d5d54872bb58add21677",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/output/debugger/generated/observations.json": "3b73ce046eac683b6d024dedcea12674955b04d4010c4103b4a16f3b83c1d566"
+  }
+}

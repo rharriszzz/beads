@@ -19,9 +19,17 @@ const specs=[
  ['legacy','D · R200 / R252 & maker marks','#e69cff',false,'LEGACY-ASSISTED comparison, disabled by default.'],
  ['legacyWithheld','D · Historical withheld proposals','#b087bd',false,'R252 ambiguous/provisional/rejected records; disabled by default.'],
  ['centers','E · Computed bead centers','#82b6ff',true,'All string indices, including hidden geometry.'],
- ['outward','E · Minor-outward points','#ffa769',false,'Geometric points, not photographed highlights.'],
+ ['outward','E · Coarse minor-outward points','#ffa769',false,'Geometric points, not photographed highlights.'],
  ['surfaces','E · Visible surface footprints','#75b2d8',false,'Exact rounded-annulus ray ownership on a 4px grid.'],
- ['centroids','E · Visible-surface centroids','#a9c6f2',false,'Geometric visible-area centroid, not colored interior.'],
+ ['centroids','E · Coarse 4px centroids','#a9c6f2',false,'Geometric visible-area centroid, not colored interior.'],
+ ['nativeCenter','E2 · Selected physical center','#82b6ff',false,'Blue ring: projected physical 3D center, including hidden beads.'],
+ ['nativeSurface','E2 · Native owned pixels','#73b9df',false,'Selected ±1/6/7 neighborhood, first hit at 1px. Each owner has a distinct tint.'],
+ ['nativeOutward','E2 · Audited radial extremum','#ffa769',false,'Orange × visible; gray × occluded. Representative of the outer cylindrical band.'],
+ ['nativeCentroid','E2 · Native visible area centroid','#68ff95',false,'Green dot: boundary-adaptive projected area centroid; absent without reliable pixels.'],
+ ['highlightPoint','E2 · Predicted highlight location','#ff72e3',false,'Pink cross: intensity centroid, conditional global illumination; never an observed reflection.'],
+ ['highlightRegion','E2 · Predicted highlight region','#ec5ae4',false,'Relative specular intensity at 1px on owned surfaces; global model and roughness.'],
+ ['observedReflection','E2 · Observed photo reflections','#ffffff',false,'White rings: independent bright-on-dark photo candidates; larger ring for reliable candidates.'],
+ ['shadowDiagnostic','E2 · Shadow diagnostics','#aa73ef',false,'Purple = modeled cast shadow; orange = observed paper darkness (ambiguous). Back-facing pixels are yellow.'],
  ['neighbors','F · ±1 / ±6 / ±7 vectors','#ffffff',true,'1 white, 6 cyan, 7 orange; conditional on selected model/hand.'],
  ['triples','G · Algebraic coordinate triples','#bbc8ff',false,'(n1,n6,n7), k ≡ n1+6n6+7n7 mod N; NOT observed walks.'],
  ['indices','H · Conditional string indices','#e4f2ff',true,'Dense labels only when zoomed; collision culled.'],
@@ -34,6 +42,7 @@ const specs=[
 const defaults=Object.fromEntries(specs.map(s=>[s[0],s[3]]));
 let layers={...defaults},opacity=.85,boot,model,inventory,obsMap,reviews,legacy=[],fft=null,archived=null;
 let view={x:0,y:0,scale:1},size={width:1,height:1},gi=0,oid=null,originId='legacy',clicked=null,ready=false,pendingFrame=false,renderStats={},modelGate=new RequestGate();
+let detail=null,lightingDoc=null,lightID=null,detailToken=0,detailTimer;
 let saveChain=Promise.resolve(),sessionTimer,photo=new Image(),drawCount=0;
 const modelCache=new Map(),drafts=new Map();
 const status=(s,error=false)=>{$('status').textContent=s;$('status').classList.toggle('error',error);};
@@ -47,7 +56,7 @@ function draftKey(){return `${boot.manifest.generation_id}:${model.version}:${gi
 function currentDraft(){return {updated_at:Date.now(),note:$('note').value,action:$('action').value,alternative:$('alternative').value,clicked};}
 function stashDraft(){if(!ready)return;drafts.set(draftKey(),currentDraft());try{localStorage.setItem('bead-debugger-drafts',JSON.stringify([...drafts]));}catch{status('Browser draft storage unavailable; use Save review.',true);}}
 function restoreDraft(){const r=drafts.get(draftKey());$('note').value=r?.note||'';$('action').value=r?.action||'looks-correct';$('alternative').value=r?.alternative||'';clicked=r?.clicked||null;updateClick();}
-function session(){return {updated_at:Date.now(),model_id:model.id,model_version:model.version,generation_id:boot.manifest.generation_id,gi,oid,origin_id:originId,view:{...view},layers:{...layers},opacity,autocenter:$('autocenter').checked,drafts:[...drafts]};}
+function session(){return {updated_at:Date.now(),model_id:model.id,model_version:model.version,generation_id:boot.manifest.generation_id,gi,oid,origin_id:originId,view:{...view},layers:{...layers},opacity,autocenter:$('autocenter').checked,lighting_id:lightID,selected_only:$('selectedOnly').checked,drafts:[...drafts]};}
 function mutation(kind,payload){const work=async()=>{const result=await api('/api/'+kind,{revision:reviews.revision,payload});reviews=result;$('saveStatus').textContent=`Saved · revision ${reviews.revision}`;updateProgress();return result;};const task=saveChain.then(work);saveChain=task.catch(e=>{status(e.message,true);$('saveStatus').textContent='SAVE FAILED — local draft retained';});return task;}
 function scheduleSession(){if(!ready)return;clearTimeout(sessionTimer);$('saveStatus').textContent='Saving place…';sessionTimer=setTimeout(()=>mutation('session',session()).catch(()=>{}),450);}
 function updateProgress(){if(!model)return;const done=reviewedSet(reviews.reviews,model,boot.manifest.generation_id);$('progress').textContent=`${done.size} / ${model.n} indexes reviewed`;$('saveStatus').title=`Reviews are separate files in photo2/output/debugger/reviews; ${reviews.reviews.length} historical review records retained.`;}
@@ -58,7 +67,7 @@ function btn(text,fn){const b=document.createElement('button');b.textContent=tex
 function selectGI(i,{observation=null,center=$('autocenter').checked,save=true}={}){
  stashDraft();gi=wrap(i,model.n);oid=observation;
  if(!oid){const ids=selected().observations;oid=ids.find(id=>obsMap.get(id)?.evidence_class==='interior')||ids.find(id=>!['rejected','ambiguous-split'].includes(obsMap.get(id)?.evidence_class))||null;}
- restoreDraft();renderPanel();if(center)centerSelection();requestDraw();if(save)scheduleSession();
+ restoreDraft();renderPanel();loadDetail();if(center)centerSelection();requestDraw();if(save)scheduleSession();
 }
 function centerSelection(zoom=false){const p=selectedPoint();if(zoom)view.scale=Math.max(view.scale,2.5);view.x=size.width/2-p[0]*view.scale;view.y=size.height/2-p[1]*view.scale;requestDraw();}
 function step(d){selectGI(gi+d);}
@@ -71,32 +80,57 @@ async function switchModel(mid,initial=false){
  if(!modelGate.accepts(token))return;model=modelCache.get(mid);$('model').value=mid;fillOrigins();
  if(initial){const s=reviews.session;if(s.model_version===model.version&&s.generation_id===boot.manifest.generation_id){gi=wrap(s.gi||0,model.n);oid=obsMap.has(s.oid)?s.oid:null;originId=s.origin_id||'legacy';fillOrigins();}else{gi=model.origin;oid=null;}}
  else{originId='legacy';fillOrigins();gi=nearest(model.beads,prior,b=>b.center,1)[0].row.generator_index;if(oldOID&&obsMap.has(oldOID)){const c=model.correspondences[oldOID];gi=c.owner_generator_index??c.alternatives[0].generator_index;oid=oldOID;}else oid=null;}
- ready=true;restoreDraft();renderPanel();renderDiagnostics();requestDraw();$('loading').style.display='none';updateProgress();if(!initial)scheduleSession();
+ ready=true;restoreDraft();renderPanel();loadDetail();renderDiagnostics();requestDraw();$('loading').style.display='none';updateProgress();if(!initial)scheduleSession();
 }
 function patternRow(){const b=selected();return model.patterns.find(r=>Number(r.residue)===b.legacy_k%Number(r.P));}
 function renderPanel(){
  const b=selected(),o=obsMap.get(oid),c=oid?model.correspondences[oid]:null,k=kOf(gi),t=triple(k,model.n),done=reviewedSet(reviews.reviews,model,boot.manifest.generation_id);
  $('selectedTitle').textContent=`Bead ${k} / ${model.n-1}`;$('selectionBadge').textContent=`${model.id} · k ${k} · h${model.h>0?'+1':'−1'} · ${b.area_px2?'visible geometry':'occluded / below sample grid'}${done.has(gi)?' · reviewed':''}`;
  const associated=b.observations.filter(id=>obsMap.get(id).evidence_class!=='rejected');
- dl($('details'),[['Model',model.id],['String index',`${k} (conditional; ${originId==='legacy'?'legacy':'confirmed review'} origin)`],['Generator',gi],['Triple',`(${t.join(', ')}) — algebraic, not observed topology`],['Helicity',model.h],['Modeled neighbors',[-1,1,-6,6,-7,7].map(d=>`${d>0?'+':''}${d}: k${kOf(wrap(gi+d,model.n))}`).join('; ')],['Predicted center',pointText(b.center)],['Minor-outward',pointText(b.outward)],['Visible centroid',pointText(b.visible_centroid)],['Geometry',`${b.visibility}; sampled area ${b.area_px2} px²`],['Photographic links',`${associated.length} candidate interiors/reflections owned conditionally; ${associated.length>1?'multiple candidates compete for this index':'identity unresolved'}`],['Selected observation',o?`${o.id} (${o.color})`:'none'],['Interior / reflection',o?pointText([o.x,o.y]):'none'],['Proposed template',`${patternRow()?.status??'?'} — rejected legacy hypothesis; not observed color`]]);
+ dl($('details'),[['Model',model.id],['String index',`${k} (conditional; ${originId==='legacy'?'legacy':'confirmed review'} origin)`],['Generator',gi],['Triple',`(${t.join(', ')}) — algebraic, not observed topology`],['Helicity',model.h],['Modeled neighbors',[-1,1,-6,6,-7,7].map(d=>`${d>0?'+':''}${d}: k${kOf(wrap(gi+d,model.n))}`).join('; ')],['Predicted center',pointText(b.center)],['Minor-outward',pointText(b.outward)],['Visible centroid (coarse 4px)',pointText(b.visible_centroid)],['Geometry (coarse 4px)',`${b.visibility}; sampled area ${b.area_px2} px²`],['Photographic links',`${associated.length} candidate interiors/reflections owned conditionally; ${associated.length>1?'multiple candidates compete for this index':'identity unresolved'}`],['Selected observation',o?`${o.id} (${o.color})`:'none'],['Interior / reflection',o?pointText([o.x,o.y]):'none'],['Proposed template',`${patternRow()?.status??'?'} — rejected legacy hypothesis; not observed color`]]);
  $('observationDetails').replaceChildren();if(o){dl($('observationDetails'),[['Evidence',o.evidence_class],['Color',o.color],['Positive patch',`${o.patch_area} px; radius ${o.interior_radius_px?.toFixed(2)??'n/a'} px`],['Point ownership',c?.status],['Center residual',c?.center_residual_px==null?'no hit':`${c.center_residual_px.toFixed(2)} px (not center truth)`],['Patch ownership',c?.patch_support==null?'unavailable':`${(100*c.patch_support).toFixed(1)}% of ${c.patch_samples} sampled positive pixels`]]);paragraph($('observationDetails'),o.reason);}
  else paragraph($('observationDetails'),'No photographic observation selected. A modeled location is not a detected bead.');
  const p=selectedPoint();$('nearBeads').replaceChildren(...nearest(model.beads,p,b=>b.center).map(({row,distance})=>btn(`k${kOf(row.generator_index)} · ${distance.toFixed(0)}px`,()=>selectGI(row.generator_index))));
  $('nearObs').replaceChildren(...nearest(inventory.observations,p).map(({row,distance})=>btn(`${row.id} · ${row.evidence_class} · ${distance.toFixed(1)}px`,()=>chooseObservation(row.id))));
  $('fullEvidence').textContent=JSON.stringify({bead:{...b,footprint:`${b.footprint.length} ownership samples`},observation:o,correspondence:c},null,2);
  $('reviewContext').textContent=`${model.id}, k ${k}, generator ${gi}; model ${model.version.slice(0,10)}; ${oid||'no selected observation'}`;
- $('reviewHistory').replaceChildren();for(const r of reviews.reviews.filter(r=>r.model_version===model.version&&r.generator_index===gi).slice(-6).reverse())paragraph($('reviewHistory'),`${r.saved_at}: ${r.action} — ${r.note||'(no note)'}${r.generation_id!==boot.manifest.generation_id?' [older detector version]':''}`);
+ $('reviewHistory').replaceChildren();for(const r of reviews.reviews.filter(r=>r.model_version===model.version&&r.generator_index===gi).slice(-6).reverse())paragraph($('reviewHistory'),`${r.saved_at} [${r.surface_schema?'R257 '+r.lighting_id:'R256 coarse measurements'}]: ${r.action} — ${r.note||'(no note)'}${r.generation_id!==boot.manifest.generation_id?' [older detector version]':''}`);
  $('confirmOrigin').disabled=!o||o.kind!=='colored-interior'||o.evidence_class==='rejected';
  renderCrops();renderProfile();renderPattern();renderFFT();updateProgress();
 }
+function loadDetail(){
+ const token=++detailToken;detail=null;clearTimeout(detailTimer);$('surfaceStatus').textContent='Tracing native pixels in background…';$('surfaceDetails').replaceChildren();$('surfaceJSON').textContent='';requestDraw();
+ const path=`/api/surface?id=${encodeURIComponent(model.id)}&gi=${gi}&light=${encodeURIComponent(lightID)}`;
+ const poll=async()=>{try{const data=await api(path);if(token!==detailToken)return;if(data.status!=='ready'){detailTimer=setTimeout(poll,600);return;}detail=data.result;renderSurface();renderCrops();requestDraw();}catch(e){if(token===detailToken)$('surfaceStatus').textContent='Surface calculation failed: '+e.message;}};
+ detailTimer=setTimeout(poll,180);
+}
+function renderSurface(){
+ if(!detail)return;const b=detail.beads.find(x=>x.generator_index===gi),h=b.highlight;
+ $('surfaceStatus').textContent=`1px + boundary 2×2 · ${detail.native_rays} native rays · ${detail.unfinished_camera_pairs} unfinished pairs excluded · ${lightID}`;
+ dl($('surfaceDetails'),[['Model / index',`${model.id} · k${kOf(gi)} · generator ${gi} · ${originId} origin`],['Physical center xy',pointText(b.center_xy)],['Outermost surface xy',pointText(b.outward.xy)],['Outward visibility',`${b.outward.visible?'visible':'occluded'}; first owner g${b.outward.first_owner}`],['Visible area centroid',pointText(b.centroid)],['Centroid 4 / 2 / 1 px',Object.entries(b.convergence).map(([k,v])=>`${k}: (${pointText(v.centroid)}); Δadaptive ${v.distance_to_adaptive_px?.toFixed(3)??'undefined'}px`).join('; ')],['Predicted highlight centroid',pointText(h?.centroid)],['Predicted highlight peak',pointText(h?.peak_xy)],['Highlight shape',h?`${h.area_px2}px² above 50% peak; σ ${h.sigma_major.toFixed(2)} × ${h.sigma_minor.toFixed(2)}px; ${h.orientation_deg.toFixed(1)}°`:'undefined / negligible'],['Observed candidates',b.observed_reflections.map(o=>`${o.id}: ${pointText(o.xy)}`).join('; ')||'none'],['Reflection discrepancy',b.reflection_error_px==null?'undefined: no unique reliable match':`${b.reflection_error_px.toFixed(2)}px (conditional owner)`],['Primary geometry heldout lighting test',JSON.stringify(detail.lighting.metrics?.test||{})],['Uncertainty',detail.uncertainty.lighting],['Geometry',b.visibility]]);
+ $('surfaceJSON').textContent=JSON.stringify({...detail,footprint:`${detail.footprint.length} owned pixels (full data in ZIP)`,background_shadows:`${detail.background_shadows.length} plane samples`},null,2);
+}
+function drawDetail(c,project,scale){
+ if(!detail)return;const pixel=(p,color,alpha,size=1)=>{const q=project([p[0]-.5,p[1]-.5]);c.globalAlpha=alpha*opacity;c.fillStyle=color;c.fillRect(q[0],q[1],size*scale,size*scale);};
+ for(const p of detail.footprint){if($('selectedOnly').checked&&p[2]!==gi)continue;if(layers.nativeSurface)pixel(p,`hsl(${(p[2]*137.5)%360} 80% 65%)`,.35);if(layers.highlightRegion&&p[3]>.0001)pixel(p,'#ff68e0',Math.min(.85,p[3]));if(layers.shadowDiagnostic){if(p[4]>.01)pixel(p,'#a15aff',p[4]*.6);if(p[5]>.5)pixel(p,'#e7c650',.3);}}
+ if(layers.shadowDiagnostic){for(const p of detail.background_shadows)if(p[2]>.01)pixel(p,'#9662ef',p[2]*.55,3);for(const p of detail.observed_background_deficit)pixel(p,'#ff8b36',p[2],8);}
+ c.globalAlpha=opacity;const mark=(p,color,kind,r=4)=>{if(!p)return;const [x,y]=project(p);c.strokeStyle=color;c.fillStyle=color;c.lineWidth=1.5;c.beginPath();if(kind==='cross'){c.moveTo(x-r,y-r);c.lineTo(x+r,y+r);c.moveTo(x+r,y-r);c.lineTo(x-r,y+r);c.stroke();}else{c.arc(x,y,r,0,2*Math.PI);kind==='dot'?c.fill():c.stroke();}};
+ for(const b of detail.beads){if($('selectedOnly').checked&&b.generator_index!==gi)continue;if(layers.nativeCenter)mark(b.center_xy,'#82b6ff','ring',5);if(layers.nativeOutward)mark(b.outward.xy,b.outward.visible?'#ffa769':'#777b86','cross');if(layers.nativeCentroid)mark(b.centroid,'#68ff95','dot',3);if(layers.highlightPoint&&b.highlight)mark(b.highlight.centroid,'#ff72e3','cross',5);}
+ if(layers.observedReflection)for(const o of detail.observed_reflections)if(!$('selectedOnly').checked||o.local_owner===gi)mark(o.xy,'#ffffff','ring',o.reliable_candidate?6:3);
+ c.globalAlpha=1;
+}
+$('selectedOnly').onchange=()=>{renderCrops();requestDraw();scheduleSession();};
+function cleanPreset(points=false){layers=Object.fromEntries(specs.map(s=>[s[0],s[0]==='photo']));$('selectedOnly').checked=true;if(points){layers.nativeCenter=true;layers.nativeOutward=true;layers.nativeCentroid=true;layers.highlightPoint=true;}else layers.nativeSurface=true;syncLayerControls();renderCrops();requestDraw();scheduleSession();}
+$('cleanFootprint').onclick=()=>cleanPreset(false);$('comparePoints').onclick=()=>cleanPreset(true);
+$('lighting').onchange=()=>{lightID=$('lighting').value;loadDetail();scheduleSession();};
 function renderCrops(){
  const p=selectedPoint(),half=65;
  for(const id of ['rawCrop','markedCrop']){const can=$(id),c=can.getContext('2d'),scale=can.height/(2*half);c.fillStyle='#0b1119';c.fillRect(0,0,can.width,can.height);c.save();c.translate(can.width/2-p[0]*scale,can.height/2-p[1]*scale);c.scale(scale,scale);c.imageSmoothingEnabled=false;c.drawImage(photo,-.5,-.5);
  if(id==='markedCrop'){
- const o=obsMap.get(oid);if(o){c.fillStyle=colors[o.color];c.globalAlpha=.5;for(const [x,y] of o.patch)c.fillRect(x-.5,y-.5,1,1);c.globalAlpha=1;c.strokeStyle=colors[o.color];c.lineWidth=1/scale;c.beginPath();c.arc(o.x,o.y,5/scale,0,2*Math.PI);c.stroke();}
- c.strokeStyle='#6acfff';c.lineWidth=1/scale;for(const b of nearest(model.beads,p,b=>b.center,12).map(z=>z.row)){c.beginPath();c.arc(...b.center,2/scale,0,2*Math.PI);c.stroke();}const b=selected();c.strokeStyle='white';c.beginPath();c.arc(...b.center,6/scale,0,2*Math.PI);c.stroke();
- if(o?.split_evidence.length){c.strokeStyle='#ffac65';for(const j of o.split_evidence.slice(0,5)){const ends=inventory.split_pairs[j].endpoints;c.beginPath();c.moveTo(...ends[0]);c.lineTo(...ends[1]);c.stroke();}}
- }c.restore();}
+ const o=obsMap.get(oid);if(o&&(layers.patches||layers.interiors||layers.ambiguous)){c.fillStyle=colors[o.color];c.globalAlpha=.5;for(const [x,y] of o.patch)c.fillRect(x-.5,y-.5,1,1);c.globalAlpha=1;c.strokeStyle=colors[o.color];c.lineWidth=1/scale;c.beginPath();c.arc(o.x,o.y,5/scale,0,2*Math.PI);c.stroke();}
+ if(layers.centers){c.strokeStyle='#6acfff';c.lineWidth=1/scale;for(const b of nearest(model.beads,p,b=>b.center,12).map(z=>z.row)){c.beginPath();c.arc(...b.center,2/scale,0,2*Math.PI);c.stroke();}const b=selected();c.strokeStyle='white';c.beginPath();c.arc(...b.center,6/scale,0,2*Math.PI);c.stroke();}
+ if(layers.ambiguous&&o?.split_evidence.length){c.strokeStyle='#ffac65';for(const j of o.split_evidence.slice(0,5)){const ends=inventory.split_pairs[j].endpoints;c.beginPath();c.moveTo(...ends[0]);c.lineTo(...ends[1]);c.stroke();}}
+ }c.restore();if(id==='markedCrop')drawDetail(c,q=>[(q[0]-p[0])*scale+can.width/2,(q[1]-p[1])*scale+can.height/2],scale);}
 }
 function renderProfile(){const c=$('profile').getContext('2d');c.fillStyle='#0b1119';c.fillRect(0,0,340,100);const o=obsMap.get(oid),pairs=(o?.split_evidence||[]).map(j=>inventory.split_pairs[j]);$('profileDetails').replaceChildren();if(!pairs.length){c.fillStyle='#aab8c8';c.fillText('No within-component split profile for this point',10,48);return;}
  const p=pairs[0];for(const [name,color] of [['value','#f1f6fb'],['chroma','#78ddea']]){c.strokeStyle=color;c.beginPath();p[name].forEach((v,i)=>{const x=8+324*i/(p[name].length-1),y=90-v*80;i?c.lineTo(x,y):c.moveTo(x,y);});c.stroke();}paragraph($('profileDetails'),`First orange crop route: V (white), chroma (cyan); valley ${(p.valley_fraction*100).toFixed(1)}%. ${p.credible_split_evidence?'Two positive interiors plus valley support a split hypothesis.':'Insufficient split evidence; retained as ambiguous.'} ${pairs.length} profiles available in export.`);}
@@ -141,8 +175,9 @@ function draw(){const start=performance.now();const dpr=window.devicePixelRatio|
  if(layers.legacy||layers.legacyWithheld)for(const o of legacy)if((o.withheld?layers.legacyWithheld:layers.legacy)&&onScreen([o.x,o.y])){marker([o.x,o.y],'#e69cff',5,'cross');if(view.scale>=2)textLabel([o.x,o.y],`legacy ${o.observation_id}`,'#e69cff',occupied);}
  if(layers.fft&&fft){const stride=view.scale<1?80:view.scale<2?20:5;for(const r of fft.candidates){if(r.channel!=='Y'||r.index%stride||r.candidate!=='1'||!onScreen([r.x,r.y]))continue;const a=r.angle*Math.PI/180,L=25;line([[r.x-Math.cos(a)*L,r.y-Math.sin(a)*L],[r.x+Math.cos(a)*L,r.y+Math.sin(a)*L]],'#d294ff',1.2);}}
 
+ drawDetail(ctx,screen,view.scale);
  // Selection is an explicit UI locator, independent of overlay choices.
- ctx.globalAlpha=1;if(Object.entries(layers).some(([key,on])=>key!=='photo'&&on)){marker(b.center,'#ffffff',8);textLabel(b.center,`SELECTED k${kOf(gi)}`,'#ffffff',occupied,true);
+ ctx.globalAlpha=1;if(Object.entries(layers).some(([key,on])=>!['photo','nativeCenter','nativeSurface','nativeOutward','nativeCentroid','highlightPoint','highlightRegion','observedReflection','shadowDiagnostic'].includes(key)&&on)){marker(b.center,'#ffffff',8);textLabel(b.center,`SELECTED k${kOf(gi)}`,'#ffffff',occupied,true);
  if(oid){const o=obsMap.get(oid);marker([o.x,o.y],colors[o.color],9);}
  }
  if(clicked){marker(clicked,'#fa71ec',9,'cross');textLabel(clicked,'Review correction','#fa71ec',occupied,true);}
@@ -150,7 +185,7 @@ function draw(){const start=performance.now();const dpr=window.devicePixelRatio|
 }
 function resize(){const rect=$('viewport').getBoundingClientRect(),next={width:rect.width,height:rect.height};view=resizeView(view,size,next);size=next;const d=window.devicePixelRatio||1;$('photoCanvas').width=Math.round(size.width*d);$('photoCanvas').height=Math.round(size.height*d);requestDraw();}
 function updateClick(){$('clicked').textContent=clicked?`Correction position: ${pointText(clicked)} in original pixels.`:'Shift-click the photograph to attach a correction position.';}
-function reviewRecord(){return {model_id:model.id,model_version:model.version,generation_id:boot.manifest.generation_id,generator_index:gi,bead_index:kOf(gi),origin_id:originId,origin_generator_index:origin(),observation_id:oid,source_position:selectedPoint(),clicked_position:clicked,action:$('action').value,note:$('note').value,alternative:$('alternative').value,enabled_layers:Object.entries(layers).filter(([,v])=>v).map(([k])=>k),overlay_opacity:opacity,view:{...view}};}
+function reviewRecord(){return {model_id:model.id,model_version:model.version,generation_id:boot.manifest.generation_id,generator_index:gi,bead_index:kOf(gi),origin_id:originId,origin_generator_index:origin(),lighting_id:lightID,lighting_parameters:lightingDoc.lights.find(l=>l.id===lightID),surface_cache_key:detail?.cache_key??null,surface_schema:1,selected_only:$('selectedOnly').checked,observation_id:oid,source_position:selectedPoint(),clicked_position:clicked,action:$('action').value,note:$('note').value,alternative:$('alternative').value,enabled_layers:Object.entries(layers).filter(([,v])=>v).map(([k])=>k),overlay_opacity:opacity,view:{...view}};}
 async function saveReview(next=false){stashDraft();const rec=reviewRecord();await mutation('review',rec);status(`Saved ${rec.action} for k${rec.bead_index}. Geometry and detections were not changed.`);if(next&&gi===rec.generator_index&&model.version===rec.model_version)step(1);else renderPanel();scheduleSession();}
 async function exportDebug(){stashDraft();const blob=await api('/api/debug-export',reviewRecord());download(blob,`${model.id}-k${kOf(gi)}-debug.zip`);status('Debugging ZIP downloaded with original crop and numerical provenance.');}
 function download(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
@@ -179,7 +214,7 @@ backupLink.addEventListener('click',e=>{e.preventDefault();guard(async()=>{stash
 $('import').onchange=guard(async()=>{const file=$('import').files[0];if(!file)return;const doc=JSON.parse(await file.text());await mutation('import',doc);status('Backup merged; review histories retained. Restoring saved session.');await restoreSession();});
 $('reloadState').onclick=guard(async()=>{stashDraft();await saveChain;reviews=await api('/api/reviews');await restoreSession();status('Reloaded saved server state. Local drafts remain available.');});
 $('loadFFT').onclick=guard(loadFFT);
-async function restoreSession(){const s=reviews.session;for(const [k,v] of s.drafts||[])if(!drafts.has(k)||(v.updated_at||0)>(drafts.get(k).updated_at||0))drafts.set(k,v);if(s.view)view=s.view;layers={...defaults,...s.layers};opacity=s.opacity??.85;$('autocenter').checked=s.autocenter??true;syncLayerControls();await switchModel(boot.model_ids.includes(s.model_id)?s.model_id:boot.model_ids[0],true);if((layers.legacy||layers.legacyWithheld)&&!legacy.length)legacy=await api('/api/legacy');if(layers.archived&&!archived)archived=await api('/api/legacy-splines');if(layers.fft)await loadFFT();requestDraw();}
+async function restoreSession(){const s=reviews.session;lightID=lightingDoc.lights.some(l=>l.id===s.lighting_id)?s.lighting_id:lightingDoc.selected;$('lighting').value=lightID;$('selectedOnly').checked=s.selected_only??true;for(const [k,v] of s.drafts||[])if(!drafts.has(k)||(v.updated_at||0)>(drafts.get(k).updated_at||0))drafts.set(k,v);if(s.view)view=s.view;layers={...defaults,...s.layers};opacity=s.opacity??.85;$('autocenter').checked=s.autocenter??true;syncLayerControls();await switchModel(boot.model_ids.includes(s.model_id)?s.model_id:boot.model_ids[0],true);if((layers.legacy||layers.legacyWithheld)&&!legacy.length)legacy=await api('/api/legacy');if(layers.archived&&!archived)archived=await api('/api/legacy-splines');if(layers.fft)await loadFFT();requestDraw();}
 let drag=null;
 const canvas=$('photoCanvas');const eventPoint=e=>{const r=canvas.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top};};
 canvas.addEventListener('wheel',e=>{e.preventDefault();if(!ready)return;const delta=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?size.height:1);view=zoomAt(view,eventPoint(e),Math.exp(-delta*.0015));requestDraw();scheduleSession();},{passive:false});
@@ -193,6 +228,7 @@ document.addEventListener('keydown',e=>{if(!ready||e.ctrlKey||e.metaKey||e.altKe
 window.addEventListener('beforeunload',()=>{if(!ready)return;stashDraft();try{localStorage.setItem('bead-debugger-session',JSON.stringify(session()));}catch{}});
 new ResizeObserver(resize).observe($('viewport'));
 async function start(){
+ lightingDoc=await api('/api/lighting');for(const l of lightingDoc.lights)$('lighting').add(new Option(l.id,l.id));lightID=lightingDoc.selected;
  boot=await api('/api/bootstrap');inventory=boot.inventory;obsMap=new Map(inventory.observations.map(r=>[r.id,r]));reviews=boot.reviews;
  try{for(const [k,v] of JSON.parse(localStorage.getItem('bead-debugger-drafts')||'[]'))drafts.set(k,v);}catch{}
  for(const mid of boot.model_ids)$('model').add(new Option(mid,mid));
@@ -200,6 +236,6 @@ async function start(){
  // An interrupted page close can precede server debounce; recover same-version local position.
  try{const s=JSON.parse(localStorage.getItem('bead-debugger-session')||'null');if(s&&(s.updated_at||0)>(reviews.session.updated_at||0)&&s.model_version===model.version&&s.generation_id===boot.manifest.generation_id){view=s.view;originId=s.origin_id;fillOrigins();selectGI(s.gi,{observation:obsMap.has(s.oid)?s.oid:null,center:false,save:false});}}catch{}
  status('Ready. Geometry is a diagnostic hypothesis; fresh observations are independent candidates.');$('saveStatus').textContent=`Saved · revision ${reviews.revision}`;
- window.debuggerTest={get state(){return {ready,model:model.id,version:model.version,n:model.n,h:model.h,gi,k:kOf(gi),oid,view:{...view},layers:{...layers},origin:origin(),stats:renderStats,size,revision:reviews.revision};},toSource:p=>toSource(p,view),toScreen:p=>toScreen(p,view),selectGI,chooseObservation,switchModel,jumpK,draw,inventory,models:modelCache,selectedPoint,session,flush:async()=>{clearTimeout(sessionTimer);await mutation('session',session());await saveChain;}};
+ window.debuggerTest={get state(){return {ready,model:model.id,version:model.version,n:model.n,h:model.h,gi,k:kOf(gi),oid,view:{...view},layers:{...layers},origin:origin(),stats:renderStats,size,revision:reviews.revision,detailReady:!!detail,lightID};},get detail(){return detail;},toSource:p=>toSource(p,view),toScreen:p=>toScreen(p,view),selectGI,chooseObservation,switchModel,jumpK,draw,inventory,models:modelCache,selectedPoint,session,flush:async()=>{clearTimeout(sessionTimer);await mutation('session',session());await saveChain;}};
 }
 start().catch(e=>{$('loading').textContent='Startup failed: '+e.message;status(e.message,true);console.error(e);});

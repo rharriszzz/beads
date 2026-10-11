@@ -1,4 +1,4 @@
-# Bead reconstruction debugger (R256)
+# Bead reconstruction debugger (R257)
 
 A local application for inspecting the real photograph, fresh interior proposals,
 and competing **legacy-assisted** geometric hypotheses. Reviews do not change the
@@ -34,6 +34,62 @@ Use `--port 8768` if needed, then open the corresponding address.
 
 Keys are inactive while typing into fields or operating buttons. Click the
 photograph to return keyboard focus. The side panel scrolls independently.
+
+
+## R257: native surfaces and lighting
+
+Restart the same local server after updating. Begin at bead0, then use **Inspect →
+Selected footprint only** for a clean view with one modeled bead's pixels. **Selected
+locations** adds just the physical center and three calculated locations. Native
+layers default to the selected bead; clear **Show native overlays for selected bead
+only** to include its ±1/6/7 neighbors. Pan/zoom stays responsive while the server
+calculates; stale results from earlier selections are discarded.
+
+**Layers → E2** controls each item separately:
+
+| Overlay | Meaning |
+| --- | --- |
+| Selected physical center | Blue ring, projected 3D annulus center |
+| Audited radial extremum | Orange × if visible; gray × if occluded |
+| Native visible area centroid | Green dot, first-hit pixel area after boundary supersampling |
+| Predicted highlight location | Pink ×, intensity-weighted centroid; undefined means no marker |
+| Predicted highlight region | Pink intensity pixels on visible source-compatible surface |
+| Observed photo reflections | White rings, independently detected candidates; no forced match |
+| Native owned pixels | Owner-colored native1px footprint; selected-only by default |
+| Shadow diagnostics | Purple modeled cast shadow, yellow back-facing surface, orange observed paper darkness |
+
+The older **E** group remains explicitly coarse4px for comparison; do not confuse
+it with E2. Select **Inspect → Global illumination** to switch directional,
+rectangle-sharp or rectangle-smooth configurations. **All are diagnostic fits with
+poor held-out accuracy**, not recovered room lighting. Model switching keeps the
+same illumination so geometry errors stay exposed; the displayed heldout score
+belongs to the primary geometry unless stated otherwise.
+
+Inspect lists original-image coordinates, 4/2/1px and adaptive centroid differences,
+outward first owner, highlight peak/centroid/shape, observed candidates and a
+reflection discrepancy only for a unique reliable conditional match. The expandable
+surface record includes3D points, camera-ray failures, self/neighbor blockers and
+uncertainties. The clean [bead2 comparison](../review/r257/bead-2-clean.png) and
+[one-marker panels](../review/r257/bead-2-locations.png) avoid the rejected cluttered
+question image. [Scientific findings and limitations](../SURFACE_LIGHTING_R257.md).
+
+New Review findings cover visible-centroid errors, predicted-reflection errors,
+incorrect/missing photographic reflections, and likely lighting mismatch. Notes,
+Shift-click correction positions and old findings still work. R256 history is
+labeled as coarse measurements; it is not rewritten. New records also preserve
+selected lighting parameters and the numerical cache identity. Geometry hashes,
+indices, saved origins and the review/backup storage format remain unchanged.
+
+Debug ZIP now includes full native ownership/highlight pixels, all selected-neighbor
+3D/projected points, convergence/visibility/shadow diagnostics, lighting parameters,
+observed candidates, uncertainty and saved findings, alongside its exact original
+crop. Detail JSON uses both original generator IDs and explicitly named legacy k;
+the top-level review record preserves your chosen origin separately.
+
+Missing local detail caches are computed on demand under
+`photo2/output/debugger/surface-r257/`. Keys include the source photo, geometry/camera,
+source code, photographic observations, light parameters and numerical resolution.
+They never modify `reviews/`. The global4px navigation cache remains unchanged.
 
 ## Inspect and toggle evidence
 
@@ -132,8 +188,9 @@ saved reviews for that model bead. Send that ZIP back for a focused investigatio
   The spline algorithm retains its historical hand-calibrated HSV background box.
 - All three global geometric fits remain **legacy-assisted**. Independent fitting
   is staged, and no new observed adjacency graph or valid color pattern is claimed.
-- Candidate over-splitting and missed beads remain likely. Surface footprints use
-  a 4px ray grid; hidden versus extremely small exposure can be unresolved.
+- Candidate over-splitting and missed beads remain likely. Whole-photo footprints retain
+  a4px grid; E2 selected/neighbor tracing uses1px plus boundary2×2. Extremely small
+  subpixel exposure can still be unresolved.
 - Actual Chromium interaction tests pass. Windows browser/WSL forwarding was not
   exercised from this environment. No known blocking viewer defect remains.
 

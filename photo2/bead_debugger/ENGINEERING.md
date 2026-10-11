@@ -1,3 +1,32 @@
+# R257 engineering extension
+
+`surface.py`: analytic source-annulus normals; existing camera SDF marcher;
+all-scene shadow rays accelerated in the light-perpendicular plane; distant
+rectangular source quadrature, half-vector lobe and highlight moments.
+`lighting.py`: photo-derived reflection/paper evidence, geographic holdout and
+bounded shared-light fits. `detail.py`: native/adaptive ownership, convergence,
+local light/shadow measurements, full-provenance cache and one-worker job service.
+`audit_r257.py` and `report_r257.py`: native crops, clean explanation panels,
+matched geometry checks, quadrature/centroid tables and immutable evidence hashes.
+
+The R256 `models.py` adapter and all geometric inputs are untouched: old model
+versions, generator indices and origins stay valid. R257 numerical results use a
+separate cache namespace and schema; new review records include lighting snapshots
+and cache identity, and history distinguishes earlier R256 numerical measurements.
+No migration overwrites findings or backups. Optional new store actions are additive.
+
+`/api/lighting` supplies versioned curated configurations. `/api/surface?id=...&gi=...&light=...`
+returns `working` or `ready` with a result. Polling does not block the browser; a
+selection token discards stale results. Worker results are cached on disk, scene
+geometry separately in memory; obsolete queued calculations are cancelled. Native
+patches consider all camera occluders; shadow acceleration considers the entire
+scene, including geometry distant in the camera image.
+
+[Full scientific protocol, tolerances, assumptions, results and reproduction](../SURFACE_LIGHTING_R257.md).
+Run both `test_debugger` and `test_surface`; the expanded `browser_smoke` uses
+only temporary review directories and covers new controls/exports/races too.
+The original R256 implementation record follows and describes coarse caches only.
+
 # R256 generation, provenance, model boundaries and tests
 
 [Launch and controls](README.md).
