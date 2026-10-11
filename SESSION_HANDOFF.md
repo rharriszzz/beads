@@ -1,6 +1,20 @@
 # Beads session handoff — new branch
 
-## Current R248 — photographic FFT development delivered; review before freeze
+## Current R249 — provisional procedure frozen; six-site transfer authorized
+
+User explicitly authorizes moving beyond R248 review, selecting a provisional
+procedure using D1–D3 only, then testing the six reserved sites without retuning.
+[Protocol and results](photo2/FFT_TRANSFER.md). Numeric decisions are Codex's;
+remaining R248 review questions are not maker-confirmed. Primary circular sigma30,
+central radius2/(2*pi*sigma), no upper cut, paired V/Y, brightest4 with extras
+retained. Fixed sigma20/40 and central1.5/2.5 diagnostics cannot replace primary.
+Frozen classification, axial frequency-vector matching, ambiguity and stability
+rules in review/r249/freeze.json; hashes checked before transfer. No hand-based
+selection, indexing or repeat recovery. Complete six-site evidence/report, update
+records, commit/push/verify remote and clean status, then stop. Recommend Astra/High;
+no /new needed for this bounded task. Actual model status not newly supplied.
+
+## Prior R248 — photographic FFT development delivered; review before freeze
 
 User approved R247 with “ok, please proceed.” Implemented only its first
 milestone: three raw/geometry-selected locations, circular Gaussian sigma20/30/

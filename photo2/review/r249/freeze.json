@@ -1,0 +1,583 @@
+{
+  "request": "R249",
+  "status": "PROVISIONAL, frozen before six-site extraction; no maker confirmation of numeric choices",
+  "created_utc": "2026-10-11T05:51:29.946609+00:00",
+  "base_commit": "175b190059a63915e212a43d7b020348fb9bbe43",
+  "variants": [
+    {
+      "name": "primary",
+      "sigma": 30,
+      "central": 2.0
+    },
+    {
+      "name": "width20",
+      "sigma": 20,
+      "central": 2.0
+    },
+    {
+      "name": "width40",
+      "sigma": 40,
+      "central": 2.0
+    },
+    {
+      "name": "central15",
+      "sigma": 30,
+      "central": 1.5
+    },
+    {
+      "name": "central25",
+      "sigma": 30,
+      "central": 2.5
+    }
+  ],
+  "rules": {
+    "shortlist": 4,
+    "alternatives": 8,
+    "min_angle_separation": 25.0,
+    "weak_peak_ratio": 0.1,
+    "closure_resolution_multiplier": 1.7320508075688772,
+    "match_resolution_limit": 2.0,
+    "stability_required": 3,
+    "stability_total": 4,
+    "uncertainty": "Window blur scales, not statistical confidence intervals; camera/tangent/assignment uncertainty additional."
+  },
+  "image": "beads-photo-2.jpg",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "sites": [
+    {
+      "source": "T188",
+      "s": 4680.027807045435,
+      "xy": [
+        1127.255161240682,
+        1532.1590742243106
+      ],
+      "tangent": [
+        -0.9684091360815539,
+        0.24936668813973245
+      ],
+      "tangent_deg": -165.55996077226678,
+      "radius": 43.87437928866253,
+      "diameter": 32.107816711590296,
+      "turn_rms_deg": 0.215822291654902,
+      "turn_range_deg": 1.2756172872534948,
+      "jacobian_min_visible": 0.9859972040470351,
+      "max_abs_curvature": 0.0003191565597050695,
+      "long_metric": {
+        "turn_rms_deg": 0.9071330273162878,
+        "turn_range_deg": 6.814350091024023,
+        "jacobian_min_visible": 0.9470075369525679,
+        "max_abs_curvature": 0.0012078225129700175
+      },
+      "id": "T1",
+      "group": "straight",
+      "split": "reserved; do not compute",
+      "source_site": "S2"
+    },
+    {
+      "source": "T132",
+      "s": 3285.9769709042416,
+      "xy": [
+        1360.9288937155327,
+        2073.844078015895
+      ],
+      "tangent": [
+        0.9614264062807297,
+        -0.27506229350116507
+      ],
+      "tangent_deg": 15.965726481966788,
+      "radius": 47.25766227068825,
+      "diameter": 32.0,
+      "turn_rms_deg": 0.8146698470483751,
+      "turn_range_deg": 4.957840188776285,
+      "jacobian_min_visible": 0.9449771771327168,
+      "max_abs_curvature": 0.0011643153770941256,
+      "long_metric": {
+        "turn_rms_deg": 3.2634796651640254,
+        "turn_range_deg": 18.970683784773613,
+        "jacobian_min_visible": 0.8975721930315174,
+        "max_abs_curvature": 0.002167432793898777
+      },
+      "id": "T2",
+      "group": "straight",
+      "split": "reserved; do not compute",
+      "source_site": "S3"
+    },
+    {
+      "source": "T254",
+      "s": 6323.016292497556,
+      "xy": [
+        409.1266244925626,
+        763.3796987473168
+      ],
+      "tangent": [
+        0.5904213780125706,
+        -0.8070951594364429
+      ],
+      "tangent_deg": 53.81308383367188,
+      "radius": 55.01464856544704,
+      "diameter": 34.0,
+      "turn_rms_deg": 1.7292569216627283,
+      "turn_range_deg": 14.950755691765167,
+      "jacobian_min_visible": 0.9054340523793957,
+      "max_abs_curvature": 0.0017189230520686847,
+      "long_metric": {
+        "turn_rms_deg": 5.044756939185673,
+        "turn_range_deg": 38.928882253274644,
+        "jacobian_min_visible": 0.8946425054874998,
+        "max_abs_curvature": 0.0019150807513959457
+      },
+      "id": "T3",
+      "group": "straight",
+      "split": "reserved; do not compute",
+      "source_site": "S6"
+    },
+    {
+      "source": "T160",
+      "s": 3983.002388974838,
+      "xy": [
+        1763.3852903290228,
+        1618.9293297742915
+      ],
+      "tangent": [
+        -0.42785362514883934,
+        -0.9038480378066861
+      ],
+      "tangent_deg": 115.33142272836277,
+      "radius": 44.42306803498574,
+      "diameter": 32.0,
+      "turn_rms_deg": 11.552198439524425,
+      "turn_range_deg": 66.05256782040803,
+      "jacobian_min_visible": 0.7790813932077507,
+      "max_abs_curvature": 0.004973060541839727,
+      "long_metric": {
+        "turn_rms_deg": 21.718732297193334,
+        "turn_range_deg": 115.73453868703831,
+        "jacobian_min_visible": 0.7793396086427009,
+        "max_abs_curvature": 0.004967247898851026
+      },
+      "id": "T4",
+      "group": "curved",
+      "split": "reserved; do not compute",
+      "source_site": "C1"
+    },
+    {
+      "source": "T107",
+      "s": 2663.632847626923,
+      "xy": [
+        936.0760952703696,
+        2462.757203581963
+      ],
+      "tangent": [
+        0.0008904168384690624,
+        -0.9999996035788483
+      ],
+      "tangent_deg": 89.94898286640692,
+      "radius": 53.495368383827085,
+      "diameter": 32.0,
+      "turn_rms_deg": 8.367514871457692,
+      "turn_range_deg": 44.40677947679808,
+      "jacobian_min_visible": 0.7973272969675764,
+      "max_abs_curvature": 0.0037886028109621597,
+      "long_metric": {
+        "turn_rms_deg": 15.771956832476732,
+        "turn_range_deg": 89.02351765423666,
+        "jacobian_min_visible": 0.7977110286513782,
+        "max_abs_curvature": 0.0037814296351266646
+      },
+      "id": "T5",
+      "group": "curved",
+      "split": "reserved; do not compute",
+      "source_site": "C2"
+    },
+    {
+      "source": "T316",
+      "s": 7866.429718225306,
+      "xy": [
+        1790.727981874043,
+        363.5289103137109
+      ],
+      "tangent": [
+        0.8210713934153874,
+        0.5708255135458767
+      ],
+      "tangent_deg": -34.80781140533114,
+      "radius": 54.068133507420335,
+      "diameter": 34.0,
+      "turn_rms_deg": 4.646239103965423,
+      "turn_range_deg": 30.889688076170227,
+      "jacobian_min_visible": 0.8546541503450915,
+      "max_abs_curvature": 0.002688198023979526,
+      "long_metric": {
+        "turn_rms_deg": 10.223654943657733,
+        "turn_range_deg": 61.67858437272804,
+        "jacobian_min_visible": 0.8482406927333556,
+        "max_abs_curvature": 0.002806816093361479
+      },
+      "id": "T6",
+      "group": "curved",
+      "split": "reserved; do not compute",
+      "source_site": "C5"
+    }
+  ],
+  "references": [
+    {
+      "window": "D1",
+      "channel": "V",
+      "candidates": [
+        1,
+        2,
+        3
+      ],
+      "peaks": [
+        {
+          "candidate": 1,
+          "offset": [
+            -5,
+            -6
+          ],
+          "frequency": 0.025947673341882572,
+          "wavelength": 38.53910085980169,
+          "radius_bins": 7.810249675906654,
+          "angle": 50.19442890773479,
+          "relative_angle": -53.44850006836137,
+          "row_angle_relative": 36.55149993163866,
+          "angle_uncertainty": 11.55522657449516,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 78.35235783024368,
+          "pair_power": 1862886.3750400068,
+          "band_fraction": 0.1203239002757997,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 2001.8732751332477,
+          "peak_bin_power": 122422.76612260962,
+          "relative_brightness": 1.0,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 2,
+          "offset": [
+            -9,
+            6
+          ],
+          "frequency": 0.035935726997979964,
+          "wavelength": 27.82745984396566,
+          "radius_bins": 10.816653826391969,
+          "angle": -33.69006752597977,
+          "relative_angle": 42.66700349792407,
+          "row_angle_relative": -47.33299650207593,
+          "angle_uncertainty": 8.397875210695867,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 22.1705909508555,
+          "pair_power": 629224.0053393834,
+          "band_fraction": 0.040641601916257125,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1986.5210573545821,
+          "peak_bin_power": 44560.03945590858,
+          "relative_brightness": 0.36398490956559937,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 3,
+          "offset": [
+            -4,
+            13
+          ],
+          "frequency": 0.0451876096635729,
+          "wavelength": 22.12996012502361,
+          "radius_bins": 13.601470508735444,
+          "angle": -72.89727103094765,
+          "relative_angle": 3.4597999929561922,
+          "row_angle_relative": -86.54020000704381,
+          "angle_uncertainty": 6.69604857166325,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 23.00710957762565,
+          "pair_power": 416961.9942078039,
+          "band_fraction": 0.026931590719686767,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 2132.841840014614,
+          "peak_bin_power": 32439.49023509463,
+          "relative_brightness": 0.2649792294564364,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        }
+      ]
+    },
+    {
+      "window": "D2",
+      "channel": "Y",
+      "candidates": [
+        1,
+        2,
+        3
+      ],
+      "peaks": [
+        {
+          "candidate": 1,
+          "offset": [
+            -8,
+            5
+          ],
+          "frequency": 0.03134213000683257,
+          "wavelength": 31.905936188191433,
+          "radius_bins": 9.433981132056603,
+          "angle": -32.00538320808349,
+          "relative_angle": -45.80132050470877,
+          "row_angle_relative": 44.19867949529123,
+          "angle_uncertainty": 9.607180365098586,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 24.930148690598816,
+          "pair_power": 578359.9125008006,
+          "band_fraction": 0.09433508977872161,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1785.0043471799627,
+          "peak_bin_power": 44880.84956645243,
+          "relative_brightness": 1.0,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 2,
+          "offset": [
+            -12,
+            -5
+          ],
+          "frequency": 0.04318936877076412,
+          "wavelength": 23.153846153846153,
+          "radius_bins": 13.0,
+          "angle": 22.61986494804043,
+          "relative_angle": 8.823927651415147,
+          "row_angle_relative": -81.17607234858485,
+          "angle_uncertainty": 7.002845252658063,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 26.025549782522017,
+          "pair_power": 391100.86649197876,
+          "band_fraction": 0.06379165387436074,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1937.9784289276718,
+          "peak_bin_power": 32944.08878284838,
+          "relative_brightness": 0.7340344289621793,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 3,
+          "offset": [
+            4,
+            10
+          ],
+          "frequency": 0.0357818259610266,
+          "wavelength": 27.94714839564631,
+          "radius_bins": 10.770329614269007,
+          "angle": 68.19859051364818,
+          "relative_angle": 54.4026532170229,
+          "row_angle_relative": -35.5973467829771,
+          "angle_uncertainty": 8.433476908314873,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 27.25111095007536,
+          "pair_power": 322583.35734220746,
+          "band_fraction": 0.05261590459203283,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1930.9365139943861,
+          "peak_bin_power": 25702.848947712464,
+          "relative_brightness": 0.5726907845105688,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        }
+      ]
+    },
+    {
+      "window": "D3",
+      "channel": "V",
+      "candidates": [
+        1,
+        2,
+        3
+      ],
+      "peaks": [
+        {
+          "candidate": 1,
+          "offset": [
+            7,
+            2
+          ],
+          "frequency": 0.02418641159229408,
+          "wavelength": 41.3455297485554,
+          "radius_bins": 7.280109889280518,
+          "angle": 15.945395900922847,
+          "relative_angle": -48.22669668425817,
+          "row_angle_relative": 41.77330331574183,
+          "angle_uncertainty": 12.371609092070925,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 93.46840243752555,
+          "pair_power": 3977284.6290102648,
+          "band_fraction": 0.23058909711528816,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1789.2505929548079,
+          "peak_bin_power": 293159.18748386204,
+          "relative_brightness": 1.0,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 2,
+          "offset": [
+            -3,
+            -13
+          ],
+          "frequency": 0.04432446532932337,
+          "wavelength": 22.56090383877543,
+          "radius_bins": 13.341664064126334,
+          "angle": 77.00538320808352,
+          "relative_angle": 12.833290622902496,
+          "row_angle_relative": -77.1667093770975,
+          "angle_uncertainty": 6.825224366565229,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 32.187731662727145,
+          "pair_power": 572230.7357804737,
+          "band_fraction": 0.03317594314040125,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 2079.893252103222,
+          "peak_bin_power": 43628.62897313131,
+          "relative_brightness": 0.14882231509641156,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 3,
+          "offset": [
+            -4,
+            9
+          ],
+          "frequency": 0.032720457813276094,
+          "wavelength": 30.561919570521933,
+          "radius_bins": 9.848857801796104,
+          "angle": -66.0375110254218,
+          "relative_angle": 49.79039638939719,
+          "row_angle_relative": -40.20960361060281,
+          "angle_uncertainty": 9.209567022153232,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 24.407647550315602,
+          "pair_power": 439910.10370879644,
+          "band_fraction": 0.025504454191237202,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1924.8496976740855,
+          "peak_bin_power": 31339.276846814497,
+          "relative_brightness": 0.10690190921797282,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        }
+      ]
+    },
+    {
+      "window": "D3",
+      "channel": "Y",
+      "candidates": [
+        1,
+        2,
+        3
+      ],
+      "peaks": [
+        {
+          "candidate": 1,
+          "offset": [
+            7,
+            2
+          ],
+          "frequency": 0.02418641159229408,
+          "wavelength": 41.3455297485554,
+          "radius_bins": 7.280109889280518,
+          "angle": 15.945395900922847,
+          "relative_angle": -48.22669668425817,
+          "row_angle_relative": 41.77330331574183,
+          "angle_uncertainty": 12.371609092070925,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 109.15798769703908,
+          "pair_power": 2538227.0400627432,
+          "band_fraction": 0.20111316597930431,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1662.4552971901912,
+          "peak_bin_power": 180768.46002904512,
+          "relative_brightness": 1.0,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 2,
+          "offset": [
+            4,
+            12
+          ],
+          "frequency": 0.04202362339094192,
+          "wavelength": 23.796139392767053,
+          "radius_bins": 12.649110640673518,
+          "angle": 71.56505117707798,
+          "relative_angle": 7.3929585918969565,
+          "row_angle_relative": -82.60704140810304,
+          "angle_uncertainty": 7.195097008263685,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 49.2771013667894,
+          "pair_power": 710005.724473302,
+          "band_fraction": 0.05625639348193441,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 2047.759766159022,
+          "peak_bin_power": 54003.21069687838,
+          "relative_brightness": 0.29874243929611044,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        },
+        {
+          "candidate": 3,
+          "offset": [
+            4,
+            -9
+          ],
+          "frequency": 0.032720457813276094,
+          "wavelength": 30.561919570521933,
+          "radius_bins": 9.848857801796104,
+          "angle": -66.03751102542182,
+          "relative_angle": 49.79039638939716,
+          "row_angle_relative": -40.20960361060284,
+          "angle_uncertainty": 9.209567022153232,
+          "frequency_resolution": 0.005305164769729845,
+          "prominence": 28.001754835535337,
+          "pair_power": 468438.9141264291,
+          "band_fraction": 0.0371161569083059,
+          "boundary_clipped": false,
+          "legacy_log_power_sum": 1868.5669289332477,
+          "peak_bin_power": 32392.589185793477,
+          "relative_brightness": 0.17919381058282385,
+          "weak": false,
+          "shortlisted": true,
+          "physical_assignment": "unassigned"
+        }
+      ]
+    }
+  ],
+  "parameters": "Circular native Gaussian support5sigma; V/Y matched; no mean removal, normalization, upper rejection or local retuning. Lower=central/(2*pi*sigma).",
+  "width_reason": "Sigma30 balances the broad merged sigma20 features and added sigma40/55 substructure in D1\u2013D3. Sigma20/40 are checks, never replacement winners.",
+  "central_reason": "Two Gaussian Fourier amplitude-width scales remove DC core conservatively, near development .010\u2013.015 at sigma30. Keep bright side lobes; residual central skirts remain possible. No new automatic central-component segmentation.",
+  "decision": "Spectral support needs a distinct, nonweak, unclipped closure-compatible trio in brightest4. Retain all competing trios and ranks5\u20138, but do not rescue shortlist failures. Similarity to primary development trios is a separate descriptive test, never an extraction filter.",
+  "stability": "For each primary supported trio require matching supported trios in at least3/4 fixed sensitivity settings for stable spectral support. Channels remain separate. Many-to-many matches retained.",
+  "visual": "After extraction, inspect raw/weighted crops and every shortlisted pair inverse; state reflection/color/outline confounds separately. Numerical closure alone never establishes physical1/6/7.",
+  "limitation": "Prior photograph and sites studied historically. Reserved for this frozen procedure, not untouched blind data. Tangent correction removes image roll, not camera projection.",
+  "source_hashes": {
+    "photo2/fft_transfer.py": "c471f6e8c9c2ad8f2acc815a5d4ba3380a6b67613f5de2cb8ad1fece0a245f9f",
+    "photo2/fft_spectrum_led.py": "83a7d773fb511f1ba96bbf28655c03eb70d35e2fbf98e4bdd090191ec86e6140",
+    "photo2/fft_explorer_core.py": "0d21148d837c59de881f393ed75d8cc233755e577e4048ea148895aa1117733b",
+    "photo2/fft_helicity.py": "d8fe31e3ee9daf1276ac3894139e64b68644ad8feba895c8ecf6951ea56dd781",
+    "photo2/review/r248/sampling.json": "ceb63b721dacaa294b465ec58fb923e61d27950cc9c98141e72053b3b4814ef2",
+    "photo2/review/r249/development.json": "4800bea8fb3979b1b67adc5ba984df227e7ab75e24261c49989d224b4980951c"
+  }
+}

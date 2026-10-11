@@ -5725,3 +5725,35 @@ no segmentation, inventory, indexing, pattern or global optimization. Scoped
 commit/push and exact remote/clean verification at this bounded stop. Recommend
 Astra/High without claiming active model; no /new needed for review. User controls
 model/session switching. Delivery verification is reported after commit/push.
+
+## R249 — Authorize provisional freeze and unchanged six-site FFT transfer
+
+User asks to continue on photo-2-strategy-v3, reading current plan/handoff/R248
+report. Select/freeze provisional Gaussian width, central removal, brightest3/4
+pair and ambiguity rules from three development locations and prior advice only.
+Unanswered review questions must not be treated as maker-confirmed. Apply to six
+reserved sites without retuning; compare tangent-relative directions/frequencies,
+V/Y, missing/weak/extra/ambiguous evidence and raw/FFT/inverse images. No unsupported
+unique hand, indexing or repeat recovery. Make routine decisions, preserve
+provenance, update docs, commit/push/verify and stop with next-step recommendation.
+
+Preflight daisy, clean branch/upstream photo-2-strategy-v3, no stashes, exact remote
+175b190059a63915e212a43d7b020348fb9bbe43. Read required current and geometry/source
+records, no older task resumed or delegation. Three procedure options considered:
+single width, fixed primary plus diagnostic panel (selected), local visual
+adaptation. Primary sigma30, circular5sigma support, raw native V/Y, central
+exclusion2/(2*pi*sigma), no upper filter. Brightest4 qualified pairs plus up to8
+alternatives; same R248 peak qualification. Fixed sigma20/40 and central1.5/2.5
+checks; no diagnostic result can replace the primary.
+
+Development-only replay30 cases gives primary plausible trios at D1 V, D2 Y,
+D3 V/Y; D1 Y/D2 V unresolved. Freeze spectral criteria: signed closure<=sqrt3*delta,
+minimum25deg separation, no central-clipped member, >=10% peak brightness; all
+compatible trios retained. Axial one-to-one vector matching within2 combined
+resolution scales, stable support needs3/4 diagnostics. These are provisional
+screens, not maker answers or confidence intervals. First development save failed
+because output directory did not yet exist; fixed before freeze, no transfer
+image was computed. Fifteen source/phase/geometry/missing-pair tests pass.
+Freeze SHA25677eca4c58e36bbd7bf3d3a7c591094469ce31456b73b176255a191c347c768c9
+saved before any R249 transfer extraction. Commit this checkpoint, then execute
+the authorized six-site comparison; report outcome at the bounded stop below.
