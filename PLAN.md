@@ -1,6 +1,20 @@
 # Photo-2 reconstruction plan
 
-## Current R251 — preserve synthetic-test limitation, then wait
+## Current R252 — working helicity and trusted red/yellow basis
+
+The maker accepts **source h=+1 as the strongly favored working helicity**, based especially on the persistent direction-1-associated near-zero reciprocal FFT angle: R250 fitted +6.14 deg on V and +5.63 deg on Y, versus the nominal overhead h+1 prediction +4.29 deg and h-1 prediction -4.29 deg. This is a working scientific expectation, **not a demonstrated unique result**: the source centerline, camera projection, spatial-row ownership, and systematic angle calibration are uncertain. **Run both h=+1 and h=-1 with equivalent flexibility and honest comparison** in subsequent photo-to-model fitting; never hard-code away the alternative.
+
+Before predicting locations for all visible beads or doing whole-necklace correspondence, the maker prioritizes a **large, reliable red/yellow observation set distributed around the entire necklace**. Audit and reconcile existing work before generating more positions:
+
+- R200 `photo2/SAVED_CENTER_AUDIT.md`: **41 user-marked visible colored points** (18 red, 23 yellow), retained as assisted references. They are visible-surface marks, not 3D bead centers.
+- R201 `photo2/DISTRIBUTED_COLORED_POSITIONS.md`: **208 screened image-derived colored interior patches** (115 red, 93 yellow), spread through 20 approximate arc-length sections, 8-13 per section, with largest positional gap ~1.22% of the approximate loop. Visually curated and validated on old controls but **not 208 independently confirmed unique photographic beads**. Their small positive-patch centroids are not visible-body or physical centers.
+- R235/R238/R239 stage-one audits: numbered local body references, detection proposals, confirmed errors and losses, including harmful same-color merges. These are **partly overlapping sources**, not counts to add. R240 clarifies that a local darkness minimum may separate neighboring colored interiors; no need to assign dark pixels to an individual bead or derive whole bead masks.
+- Earlier maker-confirmed positive colored patches/body distinctions and R201's reviewed loops are valuable evidence but do not automatically certify their aliases across inventories.
+
+**What remains before global prediction:** produce a single provenance-preserving, deduplicated *reviewed colored observation basis* at original image coordinates, with stable source IDs, color, one safe interior point/patch per distinguishable red/yellow bead, evidence/ownership status, ambiguity, and image-arc sector. Cross-associate inventories using raw photo and local body evidence, **not merely nearest distance**; separate user-marked/explicitly confirmed, curator-reviewed, automatically proposed, duplicate/conflicted, and unresolved statuses. Quantify trusted coverage by arc sector and both colors, inspect the gaps and ambiguous same-color touching faces, and add only clear missing interiors. Prioritize accuracy and geographic spread over maximizing counts; do not discard genuinely separate bodies due to oversized merged masks, and do not assume all 208 are unique. Preserve useful 10%-visible colored slivers when safely identifiable, without requiring precise centers or full segmentation. Keep black without clear reflection deferred.
+
+This is a recorded direction and proposed next bounded audit, **not an authorization to launch correspondence fitting, color-repeat recovery or a new FFT/synthetic-render campaign**. Read original evidence/CSV/JSON before drafting the scoped audit implementation; preserve preexisting ledgers, source hashes and the current photo-2 branch.
+## Prior R251 — synthetic-test realism caution
 
 User notes that changing bead appearance in beads.pov is easy, but differences
 in background material, lighting, and circular geometry versus the photograph's
