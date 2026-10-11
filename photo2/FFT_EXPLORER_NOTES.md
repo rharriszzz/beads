@@ -1,5 +1,162 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R242 — paired V/Y local FFT helicity plan; awaiting review
+
+This proposal supersedes R241's Value-only/eight-window implementation plan.
+No FFT experiment, render, tracking implementation or helicity inference has run.
+The current request requires repository implementation inspection, a concise plan,
+then a review stop. No segmentation, complete inventory, global optimization,
+full-string indexing, repeat recovery or exact 6/7 closure prerequisite.
+
+### Actual source inspection
+
+Read the six requested files in the clean sibling checkout, whose HEAD and remote
+HEAD both equal `2caf0707c2b63a0d7540e2cac447d2f1b883d8c1`. Rechecked R187 spline
+provenance, R191's rejection of the bend correction, DIRECTION_ANGLES and the
+historical SHAPE_REASONING quick model. The source is unchanged since the earlier
+audit. Implemented machinery is available; it has not yet been validated as a
+photo helicity estimator.
+
+- `fft_image_explorer.py`: reuse/adapt `rgb_to_hsv_np`, `make_channel_bank`,
+  `make_mask`, `compute_fft_products`, `find_top_fft_peaks`, and complex-pair
+  synthesis in `FFTExplorer.open_popup_peaks`. V=max(R,G,B);
+  Y=0.299R+0.587G+0.114B on the same decoded JPEG RGB, without linearization.
+  Disable the loader's default 1200-pixel downsampling for native-scale analysis.
+- The peak finder always inserts DC, then groups opposite offsets. Its fallback
+  relaxes minimum separation to fill top-k; do not retain that behavior as evidence
+  of resolved peaks. Its fixed 6-bin separation and 8-bin support neighborhood
+  need explicit scale-aware adaptation. `log_power_sum` is summed log magnitude,
+  not integrated physical power or a confidence interval. Score raw coefficients,
+  not percentile/gamma-normalized display pixels.
+- The popup copies complex coefficients at individual bins, preserving phase.
+  Retain that baseline, with optional symmetric lobe masks clearly marked as an
+  extension. Validate integer bin mapping: the popup uses half-size-minus-0.5
+  rounding whereas peak offsets use floor(size/2). Test odd/even grids, conjugates,
+  sinusoid reconstruction, angle signs and tangent reversal before interpretation.
+- `map_from_fft.py` confirms Y, Gaussian sigma=softness*size/2, and
+  hp_removed=100*low-frequency retained power/total power. Saved metadata is
+  128x128, stride8, cutoff8%, shape3182x2540. These background settings do not
+  define the directional experiment's frequency band.
+- `find_splines.py` has separate map and image-only paths. Saved JSON explicitly
+  says `image_only_hsv`, with 303 closed centerline points and no saved radius
+  array. The builder takes inner-to-nearest-outer polyline midpoints; it does not
+  establish a measured physical centerline. `notes.md` describes proposed tracking,
+  anisotropy/confidence/export work; these are not an existing tested tracker.
+
+The earlier table below retains the first three file hashes. Additional audited
+SHA-256 values:
+
+| File | SHA-256 |
+| --- | --- |
+| notes.md | 67ec3f9609ade9f0c37b41f6821445e2ff7afe2656b5df8169afa13970303c1e |
+| find_splines.py | a4f0795b01ff9871c9f67f4f7f39dc49cd75314784348b12625b49e8610f3ead |
+| beads-photo-2_splines.json | 1e5f0d985be2dfb44b9fa3eac6ad54a0f1345c2ae9a6ed0a8bc3ca510b07dac7 |
+
+Reproduce inspection with `git -C ../fft-image-explorer show 2caf070:<filename>`
+for each of the six requested files; compare saved JSON with the actual builder
+and the R187 provenance record. Do not launch the GUI or regenerate the map.
+
+### Three approaches and selected implementation
+
+1. Matched raw V/Y Gaussian band-pass FFTs: primary comparison.
+2. Matched Gaussian-weighted mean removal: limited illumination/DC leakage control.
+3. V/Y evidence fusion or per-color normalization: possible later experiment only.
+
+Select (1), with (2) as one sensitivity variant. Reuse the numerical source in a
+small headless adapter with pinned attribution and equivalence checks; no sibling
+repository edits. New tracking, uncertainty and model comparison remain explicitly
+new work. Python3.12 `.venv/bin/python`; POV-Ray for rendered appearance.
+
+### Sampling, width and frequency choices
+
+- Use the existing R187-provenance periodic image spline as an approximate guide,
+  preserving R191's preferred existing bend. First show raw whole-photo overlay,
+  local tangents and support; retain uncertain stretches instead of refitting
+  the necklace or importing HSV bounds as a runtime detector.
+- Freeze eight dispersed review locations from near-equal image arc length before
+  spectra, covering tangent orientations and red/yellow/black, shadow and curvature
+  conditions. Record any raw-image-based displacement. Two sectors for development,
+  six for evaluation; keep the effective Gaussian supports separated from the
+  development data. Fill the necklace with uniformly spaced tracking windows at
+  step <= half the median projected rope radius. These overlapping windows provide
+  continuity, not independent votes. Final count follows measured image scale.
+- Estimate projected rope radius R and approximate bead diameter d from raw crops
+  and existing boundary guides, with illustrated endpoints and uncertainty; freeze
+  before spectra. No full bead inventory. Record pixel coordinates, image arc
+  length, tangent, local radius, curvature and original-image/curve hashes.
+- Primary Gaussian sigma=R (FWHM=2.355R), cropped at +/-3sigma on a square native
+  pixel grid. This states explicitly what characteristic width means and replaces
+  R241's FWHM=2R convention. No geometric straightening, hard rope mask, artificial
+  square-edge tiling or optional zero padding; rotate vectors for comparison.
+- Initial broad band 1/(3d) to 2/d cycles/native pixel, restricted below isotropic
+  Nyquist. Adapt the explorer's hard radial masks first, preserving its baseline;
+  percentages convert through the actual FFT dimensions. Verify band coverage on
+  known-geometry controls. These limits are proposals, not recovered spacings.
+- At the eight review locations, fixed one-at-a-time sensitivity: sigma=0.75R/1.25R;
+  each cutoff +/-20%; center +/-0.25d along tangent and normal; weighted mean removal;
+  one 10%-edge cosine-tapered band variant. Same variants for V/Y, no factorial
+  search or tuning on reserved sections. Carry tangent/scale uncertainty separately.
+
+### Candidates, channel comparison and helicity
+
+- Extract up to six supported noncentral conjugate pairs; fewer is valid. Preserve
+  competing peaks, harmonics and family assignments. Record radius (bins and
+  cycles/pixel), absolute and tangent-relative angles modulo180, raw integrated
+  pair power, fraction of band power, local prominence and peak breadth. Estimate
+  stability from perturbations; breadth is resolution evidence, not a formal CI.
+- Track by uncertainty-scaled changes in tangent-relative angle and normalized
+  radius f*d, allowing unmatched peaks, disappearance, reappearance and ambiguous
+  links. Strength is secondary to geometry. Inspect unsmoothed candidates beside
+  tracks; continuity may not manufacture missing families or force one hand.
+- V/Y get identical source pixels, centers, masks, band, extraction rules, parameter
+  budgets and common display scales. Compare supported-family coverage, ambiguity,
+  continuity, perturbation stability and both-model residuals by sector, including
+  weak/failure windows. Do not choose a channel because it favors a preferred hand,
+  or count correlated channels as independent evidence. Highlight V-better and
+  Y-better examples if they exist; complementary evidence can motivate later fusion.
+- In image x-right/y-up coordinates, compare reciprocal vectors, not raw FFT angles
+  directly to the unwrapped +/-85.7, -/+48.0, +/-43.6 degree model directions.
+  For a locally projected direct-lattice basis A, the reciprocal basis in cycles
+  is A^(-T); map all plausible family/harmonic assignments and verify them with
+  phase-preserving reconstructions and source-consistent renders. Projection over
+  a curved visible tube is only locally affine, so validate the approximation.
+- Calibrate both hands with matched uniform and mixed-color POV-Ray controls,
+  several section orientations and a bounded set of camera/phase conditions.
+  Use at most12 matched full-rope render pairs, extracting multiple orientations
+  from each; include orthographic and perspective cases and changing reflections.
+  Inspect available EXIF without treating unknown crop/distance as calibration.
+  Use the same nuisance ranges for both hands, one shared planar-camera geometry
+  within a hypothesis, and no independent local tilts or full-necklace optimization.
+  Freeze ranges/thresholds on controls and two development sectors, then evaluate
+  reserved sectors. Stop as view-limited if the bounded controls cannot resolve it.
+- Use identical robust, uncertainty-scaled angle/radius residual scores for both
+  hands, with symmetric unmatched penalties, alternate assignments and explicit
+  per-sector contributions. Report score differences and their sensitivity range,
+  not an uncalibrated posterior probability. A single informative window can favor
+  a hand; convincing photograph-wide evidence requires correct recovery in
+  informative known-hand controls and stable agreement in at least five of six
+  separated reserved sectors spanning three orientations, with no strong contrary
+  sector. The advantage must exceed empirical measurement/projection uncertainty
+  and survive assignment, appearance and camera alternatives. Otherwise report
+  both hands plausible or the FFT evidence insufficient. The 5/6 gate is a proposed
+  practical replication criterion, not a statistical significance claim.
+
+### Deliverable and stop
+
+After authorization: raw location overview and representative crops; matched
+Gaussian-windowed V/Y; marked band-pass spectra; single-pair and candidate-triplet
+inverse reconstructions; full per-window candidate/assignment CSV and JSON;
+tangent-relative direction-versus-image-arc-length plots with uncertainty and
+unassigned peaks; paired channel and both-helicity support plots, sensitivity and
+failure panels. Save parameters, hashes, source adaptations and reproduction
+commands; track curated evidence and keep routine outputs ignored.
+
+Now: documentation only, stop for review. No experiment implementation. Carry
+forward the recorded Astra/High recommendation without identifying this new
+session's active model; no /new needed for plan review. Next concrete task is
+review of this protocol, followed only after authorization by the headless adapter
+and source-equivalence/known-geometry controls.
+
 ## R241 — proposed bounded Value-channel helicity experiment
 
 **Proposal only; stop for discussion before implementation.** This supersedes

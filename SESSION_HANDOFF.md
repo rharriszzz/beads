@@ -1,6 +1,30 @@
 # Beads session handoff — new branch
 
-## Current R241 — local Value FFT helicity experiment proposed, not implemented
+## Current R242 — repository inspected; paired V/Y FFT plan awaiting review
+
+Read current PLAN and the R242 section in photo2/FFT_EXPLORER_NOTES.md. New user
+instructions supersede R241: compare raw HSV Value and source Y luminance equally,
+dense centerline sampling with nearby peak tracking and widely separated checks,
+camera/reciprocal-space-aware comparison of both helicities. No older task resumed.
+All six requested fft-image-explorer files inspected, including numerical FFT,
+peak/popup and spline builder paths; sibling clean at remote-confirmed2caf070.
+Saved spline is image_only_hsv, not FFT-derived. Source peak finder forces DC and
+can relax separation; log_power_sum is not physical power. Tracking is new work.
+
+Plan selects matched raw V/Y, weighted-mean removal as sensitivity, fusion deferred.
+Eight review locations plus dense tracking, two development/six reserved sectors;
+sigma=projected rope radius, broad bead-scale band, finite matched perturbations,
+known-hand render controls and explicit ambiguity/failure reporting. No photo
+spectra or synthetic renders produced; no code/geometry/detector/reference changed.
+Record request and proposal, commit/push scoped docs under standing workflow,
+verify remote/status, then stop. User must authorize experiment implementation.
+
+Next: review protocol, then authorized adapter equivalence and known-hand controls.
+No global indexing/optimization/pattern work. Carry forward recorded Astra/High
+recommendation, not a claim about this new session's active model. No /new needed
+for review; user controls model/session switching.
+
+## Prior R241 — local Value FFT helicity experiment proposed, not implemented
 
 The user chooses multi-window Gaussian 2D FFT of HSV Value, bead-scale band-pass
 and tangent-compensated comparison of candidate1/6/7 peak families as the next

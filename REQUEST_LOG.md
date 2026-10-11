@@ -5356,3 +5356,68 @@ No windows sampled, FFTs/renders run, code modified or helicity result claimed.
 Plan/handoff updated; documentation checks only. Commit/push scoped records and
 verify exact remote tip and clean status, then stop for discussion. Retain the
 user-reported Astra/High; no /new for discussion, recommended before implementation.
+
+## R242 — Inspect FFT explorer implementation; propose matched V/Y helicity experiment
+
+User starts a new Codex session on photo-2-strategy-v3, reports previous work
+committed/pushed, and explicitly directs this task instead of older unfinished
+work. Read AGENTS/current plan/handoff/recent log and actual implementations in
+https://github.com/rharriszzz/fft-image-explorer, starting with fft_image_explorer.py,
+map_from_fft.py, notes.md, find_splines.py, beads-photo-2_map_metadata.json and
+beads-photo-2_splines.json; also local FFT_EXPLORER_NOTES and DIRECTION_ANGLES.
+
+Requested bounded design: local Gaussian V and Y FFTs at numerous actual-centerline
+locations, matched windows and bead-scale band limits, noncentral conjugate peak
+candidates with competing assignments, phase-preserving inverse evidence,
+tangent compensation, neighboring-window tracking and comparison across the rope.
+V may reduce red/yellow brightness contrast relative to Y, but this is a hypothesis
+to test. Objective is helicity, not background segmentation; saved hp_removed is
+low-frequency retained fraction and scanner uses Y. Saved splines came from
+image-only HSV. Do not assume strongest three peaks are 1/6/7, conflate reciprocal
+and direct directions, or ignore camera projection. Compare both hands and preserve
+ambiguity. Exact seven-of-6/six-of-7 closure is not a prerequisite. No complete
+inventory, full indexing, global optimization or repeating-pattern recovery.
+
+User requests raw/windowed crops, marked spectra, selected-pair reconstructions,
+peak/assignment tables, direction-versus-distance graphs, fair V/Y comparisons,
+width/band sensitivity and quantitative/visual both-hand uncertainty/failures.
+First deliver concise six-part implementation plan, then stop for review. Only
+after subsequent implementation authorization perform the experiment, preserve
+reproducibility/evidence and commit/push completed work with remote/status checks.
+
+Outcome in this turn: source inspection and proposal only. Preflight on daisy:
+clean photo-2-strategy-v3, no stashes, HEAD/upstream/remote all
+19161b96539a8c9c6de15c5c6918d0b0a471c3f5. Clean sibling main at
+2caf0707c2b63a0d7540e2cac447d2f1b883d8c1, matching remote HEAD. Web URL retrieval
+returned cache miss; actual source was available locally. Git remote checks
+succeeded after escalation for sandbox DNS failure. No branch switch or fetch/
+merge needed. Read historical SHAPE_REASONING quick model and R187/R191 provenance.
+
+Verified implemented channel/Gaussian/radial-filter/pair/synthesis functions;
+origin insertion, fallback separation relaxation, display normalization and
+log-magnitude-versus-power semantics. Identified popup bin-index convention as
+an adapter validation concern; no executed bug test or runtime failure claim.
+Scanner metadata matches128/8/8%, saved spline explicitly image_only_hsv with303
+points and no saved radius field. Actual midpoint builder matches R187 provenance;
+notes describe tracking/anisotropy/export proposals, not a tested helicity pipeline.
+All six source hashes preserved or reverified in FFT_EXPLORER_NOTES.
+
+Three methods presented: matched raw V/Y (primary); weighted-mean removal
+(sensitivity); fusion/color normalization (later only). Updated R242 protocol:
+dense image-arc-length tracking plus eight dispersed review locations, two
+development/six reserved sectors; sigma=projected radius; proposed band1/(3d)..2/d;
+fixed identical perturbations; supported noncentral candidates, uncertain links
+and phase-preserving inverses; paired channel coverage/stability; reciprocal-basis
+and bounded camera/appearance calibration with both hands. Proposed convincing
+gate is known-hand control recovery plus stable preference in5/6 separated
+reserved sectors across3 orientations beyond uncertainty, no strong contrary
+sector; preserve inconclusive outcomes. Overlapping windows and V/Y are correlated.
+
+No locations finalized, photo FFTs/renders executed, experiment code implemented,
+or helicity result claimed. Only proposal/workflow documentation changed under
+standing AGENTS instructions; no source photograph, detector, labels, spline or
+sibling repository changes. Documentation diff/link checks; no analysis tests
+needed for this prose-only step. Commit/push scoped docs, verify exact remote tip
+and clean status, then stop. Next is user review before authorized adapter/control
+implementation. Retain recorded Astra/High recommendation without claiming this
+new session's active model; no /new needed for review. User controls switching.

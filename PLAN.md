@@ -1,6 +1,24 @@
 # Photo-2 reconstruction plan
 
-## Current R241 — propose local Value FFT for helicity; discussion stop
+## Current R242 — paired V/Y FFT helicity plan; review stop
+
+New-session request supersedes the older Value-only plan. Actual implementations
+and saved data in fft-image-explorer inspected at remote-confirmed2caf070; see
+[R242 protocol](photo2/FFT_EXPLORER_NOTES.md#r242--paired-vy-local-fft-helicity-plan-awaiting-review).
+Reuse Gaussian/filter/pair/reconstruction machinery in a small headless adapter;
+compare V and Y on identical native-image windows. Dense arc-length sampling for
+tracking, eight raw-selected review locations, two development/six reserved
+sectors. Explicit sigma=projected rope radius, proposed bead-scale frequency band,
+fixed sensitivity checks, reciprocal-space projection and matched both-hand
+controls. Preserve weak windows, competing assignments and channel disagreement.
+
+Proposal only: no FFT/render/experiment code run or changed. No segmentation,
+global optimization/indexing or pattern recovery. Stop for user review before
+implementation. Next authorized task would be adapter equivalence and known-hand
+controls. Carry forward Astra/High recommendation; actual new-session status was
+not supplied. No /new needed for this review. Scoped documentation delivery only.
+
+## Prior R241 — propose local Value FFT for helicity; discussion stop
 
 User selects local 2D FFT helicity evidence as the next bounded experiment,
 superseding the proposed immediate D3 correspondence fit. Read the
