@@ -1,5 +1,37 @@
 # Beads session handoff — new branch
 
+## Current R233 — independent strategy review delivered; implementation awaits approval
+
+Working branch is **photo-2-strategy-v3**, starting this review at `d65c78f`,
+based on preserved `photo-2-reconstruction-v2` R232 `b28b99e`. Fetched both
+remote tips; no newer R232 work. User explicitly replaces incremental seed
+tuning with scientific strategy review and reserves experiment implementation
+for later approval. Read [the session prompt](beads_astra_initial_prompt.md) and
+[STRATEGY_REVIEW.md](STRATEGY_REVIEW.md); the independent handoff is advisory.
+
+Recommendation: test body-level image/geometry/visibility inference against
+frozen M4 and a shared appearance-only control on eight specified real-photo
+crops, with an optional FFT initialization ablation. R171's anchor displacement,
+R132/R160's ambiguous positive-only fits and R210's density bias are central
+evidence. The 208 colored references are agent-screened, not 208 maker-confirmed
+identities. No algorithm, rendering source, image, historical payload or live
+annotation changed. Original untracked `photo2/Screenshot (18).png` preserved.
+
+E233 is a **proposal**, with exact inputs/splits, finite budgets, body-level
+metrics, adverse tests and a predeclared gate in the review. No new detector,
+fit, benchmark labels or accuracy estimates were produced. Only raw crops in
+`/tmp/beads-strategy-review` were made for inspection; stored baseline totals
+and hashes were checked. Documentation preflight and local links checked.
+
+**Stop here.** Suggested authorization: “Proceed with E233 in
+STRATEGY_REVIEW.md and stop at its decision gate.” Historical Q232.1 is preserved
+but is not the next task or a blocker. After approval: GPT-6.1 Sol / High,
+same branch, recommend `/new` with the review as the implementation task.
+User controls model/session switching. Commit/push only the review and these
+workflow records; verify remote tip and final status before claiming delivery.
+
+## Historical operational notes
+
 R206 setup question answered: bubblewrap/bwrap is Codex's Linux isolation tool.
 Daisy Ubuntu22.04.5 has no system bwrap; advise sudo apt update, sudo apt install
 bubblewrap, bwrap --version. No installation/security-setting change performed.
@@ -9,7 +41,7 @@ R207 clarifies bundled helper versus distribution package/security integration;
 technical explanation is inference, installer design rationale undocumented.
 System package is recommended for reliability, not proven mandatory here.
 
-## Current R232 — maker favors M4; compare possible supplements
+## Prior R232 — maker favors M4; compare possible supplements
 
 Maker reviews the frozen A/B figures. Old seeds and M2 rejected. M1 okay but
 misses some; maker thought its target was specular reflections. M3 weak in A

@@ -1,5 +1,25 @@
 # Photo-2 reconstruction plan
 
+## Current R233 — strategy decision, not incremental R232 continuation
+
+Branch **photo-2-strategy-v3**, review starting at `d65c78f` over R232 `b28b99e`.
+[STRATEGY_REVIEW.md](STRATEGY_REVIEW.md) is the current decision document.
+The user's [session instructions](beads_astra_initial_prompt.md) supersede the
+frequent small-question workflow and old low-level next steps below.
+
+- Completed: independent source/history/photo review; five architectural families;
+  evidence/provenance and dependency audit; one bounded real-photo experiment.
+- Recommended next task **after approval**: E233, compare frozen M4, appearance-only
+  supports, and local geometry/visibility inference on four development plus four
+  held-out crops. FFT is an initialization ablation, not a required gate.
+- Evaluate body ownership, coverage, duplication, uncertain/contradictory edges
+  and adverse controls against the review's predeclared thresholds. Stop after
+  the decision report; no global reconstruction, count or pattern claim.
+- No implementation authorized in this first phase. Q232.1 remains historical.
+  Recommend GPT-6.1 Sol / High and `/new` for implementation once authorized.
+
+## Historical branch setup and recommendations
+
 Start: origin/master 020303ec16c81cb62802b6ae718adda9bbc2fdfa, the default branch.
 Working branch: photo-2-reconstruction-v2. Python 3.12 and POV-Ray.
 
@@ -17,7 +37,7 @@ Astra recommendations below. Project-specific quality remains to be evaluated
 using the existing synthetic, holdout and illustrated checks. User controls
 model selection; stay in this session, no /new required.
 
-## Current R232: preserve maker review and inspect M4 supplements
+## Prior R232: preserve maker review and inspect M4 supplements
 
 The maker rejects old/M2 in A/B, finds M4 pretty good in both, M1 okay but
 incomplete, and M3 weaker in A because it misses yellow but pretty good in B.

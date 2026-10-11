@@ -4881,3 +4881,93 @@ old controls' photo-failure limitation retained. Stop at answer preservation and
 complementarity diagnosis. Next resolve P/Q, then choose guarded supplementation
 without duplicates. gpt-6.1-sol / High, same conversation; no /new. Scoped
 commit/push followed by remote/status verification.
+
+## R233 — Independent scientific strategy review (2026-10-10)
+
+User request, verbatim:
+
+> You are taking over the scientific direction of my bead-rope reconstruction project.
+>
+> The current repository is `rharriszzz/beads`, and I have already created and switched to the `photo-2-strategy-v3` branch, based on `photo-2-reconstruction-v2`.
+>
+> **First, read these two files completely:**
+>
+> - `beads_astra_initial_prompt.md`
+> - `beads_reconstruction_strategy_handoff.md`
+>
+> The first file contains your detailed instructions for this session. Treat it as my instructions. The second is an independent assessment of the previous work; evaluate it critically rather than accepting all its conclusions.
+>
+> Read the project's other relevant Markdown files, inspect the implementations and experiment results, and examine the actual photograph, `beads-photo-2.jpg`. Consult previous branches and related repositories where useful.
+>
+> **I want an independent review of the overall scientific strategy, not another incremental continuation of the current R232 experiment.**
+>
+> Pay particular attention to whether our reliance on image-derived seed pixels has become an obstacle, and whether the known physical geometry, helical neighbor relationships, Fourier methods, or hybrid inference methods offer a better route.
+>
+> The real photograph is the primary problem. Synthetic POV-Ray images are valuable validation tools, but success on them does not establish success on the photographed necklace.
+>
+> Take responsibility for the technical evaluation. Do not repeatedly ask me low-level image-processing questions when you can design experiments to answer them yourself.
+>
+> For this first phase, produce `STRATEGY_REVIEW.md` with a clear recommendation, evidence from previous experiments, competing approaches, and one carefully designed next experiment with measurable success criteria.
+>
+> Do not modify the reconstruction algorithm yet. Preserve existing work and identify unsupported assumptions before proceeding.
+>
+> Commit and push the completed strategy review to the current branch if the working-tree checks permit it.
+>
+> At the end, give me a concise explanation of your recommendation, what we would learn from the proposed experiment, and what should happen next. Stop before implementing it.
+
+The detailed session instructions are preserved in [the supplied prompt](beads_astra_initial_prompt.md),
+committed before this review at d65c78f; advisory assessment in
+[the supplied handoff](beads_reconstruction_strategy_handoff.md). No low-level
+question issued, no delegation, no algorithm/scene/photo/annotation changes.
+
+Preflight: daisy Linux/WSL2; photo-2-strategy-v3 at d65c78ffa50fa10b2a815f7005a0028271b77770;
+origin git@github.com:rharriszzz/beads.git, matching upstream, no stashes or
+tracked edits. Only original user Screenshot (18).png untracked. Initial fetch
+could not write sandboxed .git/FETCH_HEAD; repeated via approved git-fetch
+escalation. Fetched v2 remains b28b99e8ae224d0a597b69049160f43563b29540,
+also the merge base of current HEAD with v2. No branch change, pull, stash or rebase.
+
+Read both briefings, maker facts, current handoff/plan/log, method catalog's
+relevant sections, prior-work lessons, R230–R232 descriptions and implementations,
+R126/R132/R135/R160/R171/R201/R210/R214 evidence and relevant forward/fit kernels.
+Read historical pattern/image-to-pattern/image-to-pattern-2 plans and old
+photo-2-reconstruction methods via git show. Read sibling bead_map at46e17d6 and
+hsv_tools at3e70fe3 without changes; used the pinned FFT source audit. Consulted
+primary part-model/inverse-graphics research linked in the review. No new claim
+of model capability/pricing or independently verified photo-4 pattern pairing.
+
+Inspected the full source photo and eight native RGB crops, with nearest-neighbor
+enlargements saved only under /tmp/beads-strategy-review. Final half-open boxes
+are in STRATEGY_REVIEW.md; H2 was shifted left during raw-only crop selection to
+include the rope instead of mostly paper. This is benchmark selection before
+new detector results, not a runtime coordinate prior. Raw holdouts are therefore
+seen for selection, but reserved from future algorithm tuning. No crop identities
+were newly annotated and no accuracy measured. Source photo SHA-256 is
+eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb;
+untracked screenshot SHA-256 is
+ca6936a79e3bcbedc87acde91a5a2d9e34bf5c8e004f802351c39d6feda5d51d.
+
+Outcome: [STRATEGY_REVIEW.md](STRATEGY_REVIEW.md) recommends body-level hybrid
+inference as a falsifiable candidate, preserving frozen M4 and adding a shared
+appearance-only control. Key distinctions: correct interior ownership is not
+geometric location; positive-only constraints can admit wrong graph/hand;
+208 screened patches are not 208 maker-confirmed distinct identities. Re-summed
+stored R231 fixture records: old449/450 and M4 427/450 eligible colored bodies
+covered, both zero background/black seed hits. These are cached synthetic
+measurements, not newly run controls or real-photo scores. Frozen M4 has599 points.
+
+E233 specifies eight crops, labels with provenance/unknowns, four development
+and four tuning-held-out regions, frozen baseline hashes, appearance/hybrid/FFT
+arms, finite budgets, body/edge metrics, adverse checks and advance/inconclusive/
+stop criteria. Current runnable preflight is distinguished from a proposed future
+CLI. Neither the benchmark nor its algorithm was implemented. Updated current
+plan/handoff to prevent accidental R232 resumption. Local links, protected hashes,
+append-only log and documentation whitespace checked; no unrelated test suite run.
+
+Stop after delivering this review and scoped documentation commit/push, verifying
+the remote tip and final status. Implementation requires the user's explicit
+approval as requested in the supplied prompt. Suggested authorization:
+“Proceed with E233 in STRATEGY_REVIEW.md and stop at its decision gate.”
+Recommend GPT-6.1 Sol / High, same branch, /new for a clean implementation session
+after approval; user controls switching. No recovered count, hand, indices,
+pattern or generalization claim.
