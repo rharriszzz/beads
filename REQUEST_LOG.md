@@ -5122,3 +5122,38 @@ Updated plan/handoff/current review notice/maker brief/method index/AGENTS to
 preserve eligibility and stop. Scoped commit/push authorized; verify remote tip
 before claiming delivery. Existing Sol/High recommendation for next approved
 implementation; no /new needed for review. User controls switching.
+
+## R236 — Diagnose R235 failures; correct model status; proposal only
+
+User reports /status: GPT-6 Astra, reasoning High, superseding use of older Sol
+recommendations as active-model identification. User will supply future changes.
+Requested concise photo-based diagnosis separating generation, color, reflection,
+search exclusion and duplicate suppression; small repairs versus methodological
+limitations; separate colored/black methods; one bounded next experiment and
+existing observations useful for geometry. Explicitly no implementation or long
+historical documentation session.
+
+Read-only review inspected all four annotated sections, D4/H4 originals, saved
+M4 candidate/profile traces and reran unchanged auto_label_beads.detect. Source
+hash matched R192. Several correct-color candidates fail profile acceptance;
+D4-B26/H4-B34 reflections are generated then context-rejected; D4-B08/H4-B13/B25
+are later edge-excluded. H4-B12 has color support without a nearby candidate.
+Duplicate suppression remains a risk, not a proven cause of examined misses.
+No exhaustive causal count or new recovery performance was claimed. Recommended
+bounded recovery of rejected candidates followed by native-resolution reflection
+search, with development/transfer separation and explicit accuracy criteria.
+D3-B09–B14/B18/B19/B21 could support a subsequent local geometry test. No repository
+files were changed during the diagnosis response; temporary trace under /tmp only.
+
+## R237 — Save, commit and push the recommendations
+
+User: “Please add commit and push your recommendations.” Authorization covers
+documentation, not implementation of the proposed experiment. Preflight daisy,
+photo-2-strategy-v3 at086bdea; fetched origin agrees, no stashes/tracked edits,
+only original Screenshot (18).png untracked. Saved the concise diagnosis, evidence,
+one proposed experiment, inputs/targets/stopping point and possible geometry subset
+in photo2/STAGE1_FAILURE_DIAGNOSIS.md. Updated current plan/handoff/strategy notice
+and model-status instruction; retained historical records. No code, annotations,
+images, pilot metrics or geometry changed. Check append-only log, links and scoped
+diff; commit/push documentation and verify remote tip. Stop for the user's decision
+before implementation. Retain user-reported Astra/High; no /new needed for discussion.

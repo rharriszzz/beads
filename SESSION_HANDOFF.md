@@ -1,6 +1,28 @@
 # Beads session handoff — new branch
 
-## Current R235 — Stage 1 pilot delivered; stop before global indexing
+## Current R237 — recommendations saved, no implementation
+
+User reviewed R235 and requested a concise failure diagnosis (R236), then explicitly
+authorized adding, committing and pushing the recommendations (R237). Read
+[STAGE1_FAILURE_DIAGNOSIS.md](photo2/STAGE1_FAILURE_DIAGNOSIS.md) and current PLAN.
+The proposed bounded recovery comparison is not yet authorized for implementation.
+No detector, reference labels, pilot results or geometry changed in this step.
+
+Diagnosis uses actual R235 images and intermediate traces: colored candidates
+can be lost at profile acceptance, black reflections at context or edge gates;
+some candidates are absent. Distance suppression is a risk, not a proven cause
+of these examined misses. Proposed experiment separates recovery of existing
+rejections from native-resolution reflection search, with D3/D4 development and
+one H1/H4 transfer evaluation. Exact targets and stopping point are in the proposal.
+Nine listed D3 observations could support a later local geometry test without
+claiming complete Stage1 or uniquely identifiable helicity.
+
+**Model-status correction:** user reports /status as GPT-6 Astra, reasoning High.
+Use that supplied status, not old Sol/High recommendations. User will tell us when
+model/reasoning changes or supply /status. Retain Astra/High for discussion; no
+/new needed. Stop for the user's decision on the proposed task, before implementation.
+
+## Prior R235 — Stage 1 pilot delivered; stop before global indexing
 
 User explicitly authorized the four-section pilot and commit/push, superseding
 R234's discussion-only stop. Revised eligibility: distinct convincing red/yellow

@@ -1,5 +1,10 @@
 # Photo 2: strategy decision — R233
 
+**R236/R237 update:** [failure diagnosis and bounded recovery proposal](photo2/STAGE1_FAILURE_DIAGNOSIS.md)
+are saved after inspection of R235 images and detector traces. Test recovery of
+rejected candidates with separate colored/reflection evidence before replacing
+the detector. Documentation commit/push is authorized; implementation is not.
+
 **R235 update:** the user authorized the narrowed four-section Stage 1 pilot with
 approximately10% red/yellow visibility and reflection-supported black eligibility.
 It is completed in [STAGE1_PILOT.md](photo2/STAGE1_PILOT.md): 76/109 provisional

@@ -14,6 +14,10 @@ centers distinct. See photo2/STAGE1_PILOT.md for the completed four-section pilo
 Stop for review before global indexing. Make routine technical decisions;
 ask visual questions only when their answers materially affect conclusions.
 
+R236: user reports actual session status as GPT-6 Astra, reasoning High and will
+report changes. Do not identify the active model from older recommendations;
+distinguish user-supplied status from recommendations for future work.
+
 - Work on one aspect at a time. Present 3–6 methods before selecting a new phase's
   implementation. Ask frequent, small illustrated questions; preserve answers.
   Put questions in tracked files and commit their curated supporting images.

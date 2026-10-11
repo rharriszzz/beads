@@ -1,6 +1,26 @@
 # Photo-2 reconstruction plan
 
-## Current R235 — authorized four-section Stage 1 pilot completed; review stop
+## Current R237 — diagnosis saved; recovery experiment awaits decision
+
+Read [R236 diagnosis and recommendation](photo2/STAGE1_FAILURE_DIAGNOSIS.md).
+Several recognizable beads were proposed then rejected by profile, reflection
+context or search-band gates; candidate generation also has gaps. Duplicate
+suppression is a risk, not an established cause of the examined misses.
+
+Proposed next task: compare the frozen baseline with local-evidence recovery of
+existing rejected candidates, then add native-resolution reflection search.
+Develop D3/D4, freeze, evaluate H1/H4 once as transfer checks. Target at least
+8 colored and9 black recoveries while retaining76 correct detections, with zero
+confirmed new false/duplicate/wrong-color accepted observations. Preserve uncertain
+cases; manual additions do not count as automatic recovery. Stop at the comparison,
+even on failure, before global indexing. Implementation remains unapproved.
+
+User authorized saving/committing/pushing these recommendations only. Actual
+session status supplied by the user is **GPT-6 Astra, reasoning High**; older
+Sol recommendations are not session status. Retain Astra/High for this discussion;
+no /new needed. The user will report model/reasoning changes.
+
+## Prior R235 — authorized four-section Stage 1 pilot completed; review stop
 
 The user authorized execution and refined eligibility: red/yellow at approximately
 >=10% projected area with distinct convincing color; black with obvious reflection
