@@ -1,0 +1,29 @@
+{
+  "request": "R235",
+  "source_image": "beads-photo-2.jpg",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "sections": [
+    {"id":"D3","split":"development","box":[1210,225,1370,365],"full_footprint_dimensions_px":[28,34],"dimension_examples_local":[[48,66],[74,80],[107,36]]},
+    {"id":"D4","split":"development","box":[1660,1540,1860,1740],"full_footprint_dimensions_px":[32,30],"dimension_examples_local":[[94,86],[124,101],[116,169]]},
+    {"id":"H1","split":"reserved","box":[135,1040,335,1240],"full_footprint_dimensions_px":[32,29],"dimension_examples_local":[[72,64],[88,90],[73,180]]},
+    {"id":"H4","split":"reserved","box":[1390,2910,1590,3110],"full_footprint_dimensions_px":[29,33],"dimension_examples_local":[[65,98],[140,109],[167,126]]}
+  ],
+  "selection": "D3/D4 and H1/H4 are unchanged boxes from the R233 eight-section proposal. R234 did not name a four-box subset; this subset was declared before R235 candidate evaluation. Raw pixels were previously inspected. Reserved means no parameter tuning, not unseen image.",
+  "method": "Frozen R231 M4 colored proposals plus all R192 dark-reflection records with successful native reflection and dark-surround evidence (including reflection-only records). No new thresholds, duplicate suppression, edge recovery or fitting. Evaluate before assisted corrections.",
+  "sources": {
+    "photo2/review/r231/points.json":"422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+    "photo2/review/r192/candidates.json":"655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d"
+  },
+  "eligibility": {
+    "colored":"Distinct red/yellow body with convincing color and approximately >=10% of its unobstructed projected footprint visible; exact center or mask not required.",
+    "black":"Obvious recognizable specular reflection plus surrounding dark-body evidence; location is not physical center.",
+    "deferred":"Black without recognizable reflection remains unresolved, excluded from Stage 1 miss denominator.",
+    "section_boundary":"Reference representative lies in the half-open box; use 30px halo to judge actual visibility, not crop-truncated area. Border-intersecting bodies with a representative inside are retained. Halo-only proposals are context, not scored. Unassigned in-box proposals are never silently excluded.",
+    "area_estimate":"Agent-estimated visible width/height. Visible area bracket = [0.50,0.85]*w*h; unobstructed area bracket = [0.65,1.05]*local_full_width*local_full_height from nearby broad bodies and local orientation. Ratio range clipped to [0,1]. Heuristic area proxy, not a measured silhouette or confidence interval. Null when identity/color/extent is too ambiguous. Threshold-straddling small patches explicitly unresolved; black eligibility does not use area."
+  },
+  "reference_policy":"Agent provisional visual interpretation from raw crops/halos before candidate overlay inspection. Not maker confirmation or independent ground truth. Freeze file/hash before adjudication; subsequent discoveries must be append-only amendments. No observations read by candidate assembly.",
+  "success":"Every clearly eligible reference body correctly covered exactly once, zero known false positives/duplicates/wrong colors in both reserved sections; reference uncertainty is separate and blocks a complete-map claim. Assisted completion is not automatic detector success.",
+  "tuning":"None. Existing frozen methods replayed identically in all four sections. No held-out-specific repair.",
+  "geometry":"No model-predicted bodies, physical centers, bead_index, count, helicity, spline fit, stretch or pattern inference in this pilot.",
+  "manual_row_columns":["local_x","local_y","color","visible_extent_width","visible_extent_height","status","reflection_local_x","reflection_local_y","note"]
+}

@@ -1,0 +1,15 @@
+{
+  "reason": "Explicit evaluation corrections after first overlay inspection; original reference/protocol/automatic files remain frozen. No section replacement, detector tuning, deletion of difficult references, or geometry.",
+  "boundary_policy": "Report original point-in-box score separately. For the primary bead-coverage score, also credit a frozen full-photo proposal in the 30px halo when visual review establishes ownership by an already eligible in-box reference. Audit all halo proposals; unassociated halo bodies remain context. This corrects coordinate-role boundary artifacts, not the detector.",
+  "halo_associations": [
+    {"candidate_id":"D3-Q01","source_id":"M4:28","observation_id":"D3-B20","reason":"Red body crossing left box boundary; proposal and reference are different interior points on the same body."},
+    {"candidate_id":"D3-Q02","source_id":"M4:50","observation_id":"D3-B26","reason":"Lower-left red face extends across box boundary; enlarged halo identifies the same exposed face."},
+    {"candidate_id":"D4-Q01","source_id":"R192:592","observation_id":"D4-B01","reason":"Top-left black reflection sits 0.1px above box; same dark face and reflection as reference."},
+    {"candidate_id":"D4-Q02","source_id":"M4:294","observation_id":"D4-B04","reason":"Top yellow body: automatic interior point is 5px above section; halo shows same bead."},
+    {"candidate_id":"H4-Q01","source_id":"R192:330","observation_id":"H4-B17","reason":"Right-edge black body: automatic reflection is 3.2px right of box while representative is inside; same obvious glint."}
+  ],
+  "reference_additions": [
+    {"section":"H4","row":[118,128,"black",null,null,"eligible",117,123,"Post-freeze reference correction: obvious reflection on a distinct dark body between B21/B18/B32 was omitted from the initial manual inventory. Assisted discovery during overlay/raw reinspection; no automatic proposal."],"discovery":"After candidate overlay inspection; not an independent pre-output reference label."}
+  ],
+  "reference_ambiguities_retained": "All original uncertain/deferred references retained. H1-P08 may duplicate B11 or name a separate shaded rear body. D4-P03 names a shaded red-region hypothesis absent from the initial reference; neither is forced into a bead count."
+}

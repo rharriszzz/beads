@@ -1,6 +1,38 @@
 # Beads session handoff — new branch
 
-## Current R234 — clarified objective; explanation and proposed plan only
+## Current R235 — Stage 1 pilot delivered; stop before global indexing
+
+User explicitly authorized the four-section pilot and commit/push, superseding
+R234's discussion-only stop. Revised eligibility: distinct convincing red/yellow
+patches at roughly >=10% unobstructed projected area; black with obvious reflection
+plus dark support. No-reflection black is deferred, not a detector miss. Reflection,
+interior/representative, centroid and physical center remain distinct.
+
+Read [photo2/STAGE1_PILOT.md](photo2/STAGE1_PILOT.md). D3/D4 development, H1/H4
+reserved; no box changes or tuning. Frozen M4/R192 replay yields 76/109 provisional
+eligible bodies covered, 33 assisted additions; reserved 41/55. Thirteen uncertain
+reference cases, six deferred black hypotheses, seven unresolved proposals remain.
+No confirmed false/duplicate/wrong-color error does not mean unresolved proposals
+are correct. Coverage gate fails. Reference labels are agent judgments, not maker
+truth. One omitted H4 black reflection was added openly after output inspection;
+five halo detections credited by same-body ownership. Both original/amended scores
+are saved; no denominator manipulation or model-predicted bodies.
+
+Curated bundle: photo2/review/r235; code: photo2/stage1_pilot.py and its accounting
+tests. Five tests pass; 26 generated files reproduce identically. Existing detector
+code, source photo and baseline payloads unchanged. User Screenshot (18).png remains
+untracked and unchanged. Branch photo-2-strategy-v3; bounded step began at1861140.
+Current plan/log/maker facts/method index updated. Commit/push only scoped pilot
+and workflow records; verify remote tip before claiming delivery.
+
+**Stop for review before global indexing.** Next review the numbered observations
+and uncertainties, then select vetted observations for a separately approved local
+correspondence test. No index, count, camera, helicity, stretch or pattern solution
+was produced. Routine technical decisions remain autonomous; do not restart tiny
+pixel questions. Existing Sol / High recommendation for subsequent implementation;
+no /new needed for review. User controls model/session changes.
+
+## Prior R234 — clarified objective; explanation and proposed plan only
 
 User specifies two stages: complete sufficiently visible red/yellow/black body
 observations, then correct globally consistent bead_index assignments. Origin

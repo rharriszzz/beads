@@ -1,5 +1,13 @@
 # Photo 2: strategy decision — R233
 
+**R235 update:** the user authorized the narrowed four-section Stage 1 pilot with
+approximately10% red/yellow visibility and reflection-supported black eligibility.
+It is completed in [STAGE1_PILOT.md](photo2/STAGE1_PILOT.md): 76/109 provisional
+eligible bodies automatically covered, 33 assisted additions, unresolved references
+and proposals retained. The automatic completeness gate fails; this does not make
+useful image observations a dead end. Stop for review before global indexing.
+No new geometry or production detector implementation was made.
+
 **R234 clarification supersedes the proposed E233 execution plan below.**
 The current objective is (1) a complete reliable map of sufficiently visible
 red/yellow/black bodies, then (2) correct globally consistent full-string indices,
@@ -10,7 +18,8 @@ complete inventories in four representative sections, two reserved from tuning,
 using existing colored and black-evidence methods; account for every clear body,
 with zero known false/duplicate bodies or wrong colors. This is a local pilot,
 not whole-photo completion. See current [plan](PLAN.md) and [R234](REQUEST_LOG.md).
-Discussion only: neither the original nor revised experiment is authorized yet.
+R234 was discussion only; R235 subsequently authorized and executed the narrowed
+pilot above. The original broad architecture comparison remains historical.
 
 2026-10-10. Documentation review, **not an executed reconstruction experiment**.
 Reviewed `photo-2-strategy-v3` at `d65c78f`, based on R232

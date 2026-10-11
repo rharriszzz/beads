@@ -1,6 +1,31 @@
 # Photo-2 reconstruction plan
 
-## Current R234 — two-stage objective clarified; discuss before implementation
+## Current R235 — authorized four-section Stage 1 pilot completed; review stop
+
+The user authorized execution and refined eligibility: red/yellow at approximately
+>=10% projected area with distinct convincing color; black with obvious reflection
+and dark support. Black without recognizable reflection is deferred, not missed.
+No exact masks/physical centers required. [Results and all images/tables](photo2/STAGE1_PILOT.md).
+
+D3/D4 development and H1/H4 reserved boxes stayed fixed. Frozen M4 colored plus
+R192 reflection-evidence outputs were evaluated without tuning. Provisional agent
+reference: 109 eligible, 76 automatically covered, 33 assisted additions; reserved
+41/55. Thirteen uncertain references, six deferred black hypotheses and seven
+unresolved proposals remain. No confirmed duplicate/false/wrong-color error among
+resolved proposals; unresolved proposals prevent a clean-precision claim. Coverage
+gate fails. Five crop-boundary associations and one added H4 black reference are
+explicit amendments; initial score and frozen inputs preserved.
+
+Completed: numbered originals, separate automatic/reviewed overlays, native-coordinate
+tables, visible-area estimates, uncertainty/provenance, scoring and reproduction.
+No production detector or geometry changes. No global indexing or repeat inference.
+Next task: review the inventory and ambiguous identities, then decide whether the
+vetted subset supports a bounded local both-helicity correspondence test. Improving
+automatic coverage is useful but perfect segmentation is not a prerequisite.
+**Stop here as requested.** Recommend existing Sol / High for the next approved
+implementation step; no /new needed for this review. User controls switching.
+
+## Prior R234 — two-stage objective clarified; discussion-only at that time
 
 Stage 1: identify every clearly/sufficiently visible red, yellow and black body,
 with stable observation ID, color, useful image location and supporting image

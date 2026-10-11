@@ -5031,3 +5031,94 @@ labels, numerical fits, renderings or measured detection performance. Verify
 append-only log, links, scoped changes and remote tip after documentation commit.
 Stop for discussion. No /new needed now; retain prior Sol/High recommendation for
 approved implementation, with model/session switching controlled by the user.
+
+## R235 — Authorize four-section Stage 1 pilot; clarify small colored/black eligibility
+
+User explicitly requests proceeding with the authorized bounded four-section
+pilot, commit/push results, then stop for review before global geometric indexing.
+Red/yellow qualifies at approximately10% or more of unobstructed projected image
+area, estimated from nearby bead dimensions/local geometry. This is a guideline,
+not exact segmentation or a precise-center requirement. Visible pixels must
+convincingly show a distinct bead and its color; small patches may qualify.
+Keep observed colored pixels/interior, representative location, visible centroid,
+reflection and physical center distinct; record positional uncertainty.
+
+Black Stage1 eligibility requires an obvious specular reflection and surrounding
+dark-body support; reflection can be substantially displaced from physical center.
+Black without recognizable reflections is deferred for later geometry-assisted
+photographic recovery, not counted as a detector failure. All four sections,
+including two reserved from tuning, require numbered original enlargements,
+color-distinguished detection overlays, observation ID/color/native coordinates/
+visible fraction where feasible/confidence/automatic-or-assisted tables, and
+counts of correct/missed/duplicate/false/wrong-color/unresolved observations.
+Do not exclude difficult eligible bodies or replace reserved sections. Uncertain
+references are not invented ground truth. After sufficient reliable observations,
+compare spline/beads.pov geometry, both helicities, counts/phases and possible
+small stretch; keep predictions distinct from photographic confirmations.
+Repeating-pattern inference waits. Routine decisions autonomous; ask visual
+feedback only when materially consequential.
+
+Preflight: daisy, photo-2-strategy-v3 at18611409942d1488d89c8364851b1989234b8d70;
+upstream matched after fetch, no stashes or tracked edits; original user
+Screenshot (18).png untracked. Read current handoff/plan/log, relevant maker
+facts, trusted-basis/seed-method/prior-work evidence, and R192 implementation.
+Compared frozen color/reflection passes, reopening old edge exclusions, and
+geometry-assisted search; selected baseline replay plus explicit assisted
+inventory to measure shortcomings before another detector/fitter change.
+
+D3/D4 development and H1/H4 reserved were declared before R235 candidate-overlay
+evaluation; all are unchanged boxes from R233. R234 had not fixed a four-box
+subset. Raw sections were previously seen; reserved means no parameter tuning.
+No tuning performed on either split. Reviewed raw native RGB at enlarged scale
+with30px context; created127 provisional raw references before overlay inspection.
+Reference/protocol hashes frozen. These are agent interpretations, not maker
+confirmation or independent ground truth.
+
+New isolated photo2/stage1_pilot.py replays hashed R231 M4 (599 full-photo colored
+points) and R192 successful dark-reflection evidence (256 full-photo points),
+without reading reference labels into candidate assembly.78 in-box proposals
+explicitly adjudicated. Original score71/108 eligible with37 apparent misses.
+Disclosed post-overlay amendments credit five frozen halo proposals on existing
+border-crossing reference bodies and add one omitted obvious black reflection,
+H4-B34, as an assisted reference correction. Original frozen inputs/score remain
+available; no section or detector parameter changed. All halo candidates retained
+in audit. Five credited proposals bring reviewed automatic total to83, of which
+76 have supported correct-body/color associations and7 remain unresolved.
+
+Outcome: photo2/STAGE1_PILOT.md and photo2/review/r235 contain numbered originals,
+automatic and assisted overlays, per-section tables, full CSV/JSON, uncertainty
+and score records. Provisional eligible109; automatic76; assisted additions33.
+D3:19/22, D4:16/32, H1:20/27, H4:21/28. Reserved41/55. By color: red24/29,
+yellow35/46, reflection-supported black17/34.13 uncertain reference entries,
+6 deferred no-reflection body hypotheses,7 unresolved proposals; these categories
+overlap and are not independent bead counts. No confirmed duplicates/false/wrong
+colors among resolved proposals; H1-P08 is a possible duplicate and shaded-color
+proposals remain unresolved. Zero confirmed errors is not a precision guarantee.
+Automatic completeness gate fails in all four sections. Assisted109-row eligible
+map is not independently validated completeness. Positional roles remain separate;
+visible fractions are broad uncalibrated footprint estimates. No physical centers,
+indices, geometric predictions, global fit, count/phase/hand/stretch/pattern result.
+
+Concrete evidence includes missed broad yellow/red faces and obvious reflections.
+R192 record585 atD4-B08 shows an old search-band exclusion; cause of all other
+misses is not assumed. Recommend retain useful automatic proposals and assisted
+evidence; do not require a trusted seed/perfect mask at every bead before testing
+geometry on a vetted subset. Stop now for inventory review, particularly ambiguous
+identities/colors; any subsequent local correspondence test is a separate step.
+Do not treat H1/H4 as fresh holdouts after their failures inform later tuning.
+
+Validation: five accounting tests pass with Python3.12; reproduction to ignored
+photo2/output/r235/reproduction yields26 byte-identical files. Visually inspected
+raw/numbered/automatic/reviewed views; local artifact links and whitespace checked.
+Reproduce: .venv/bin/python -m unittest photo2.test_stage1_pilot ; then
+.venv/bin/python photo2/stage1_pilot.py evaluate --output photo2/output/r235/reproduction
+Protocol/summary preserve source, script, decision and output hashes. Source photo
+SHA256 eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb;
+M4 payload422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd;
+R192 payload655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d.
+User screenshot remains untracked/unchanged at
+ca6936a79e3bcbedc87acde91a5a2d9e34bf5c8e004f802351c39d6feda5d51d.
+Updated plan/handoff/current review notice/maker brief/method index/AGENTS to
+preserve eligibility and stop. Scoped commit/push authorized; verify remote tip
+before claiming delivery. Existing Sol/High recommendation for next approved
+implementation; no /new needed for review. User controls switching.

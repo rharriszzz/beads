@@ -7,6 +7,28 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current Stage 1 eligibility — R235
+
+The maker accepts distinct red/yellow observations with approximately 10% or more
+of the unobstructed projected bead area visible, estimated from nearby dimensions
+and local geometry. This is a guideline, not exact segmentation or a center
+requirement. Visible evidence must convincingly establish separate identity/color.
+Keep observed interior patches, representative locations, visible centroids,
+reflections and inferred physical centers distinct, with positional uncertainty.
+For Stage 1, black requires an obvious specular reflection supported by surrounding
+dark body evidence. Black without a recognizable reflection is deferred and does
+not count as a detector failure; fitted geometry may guide later photographic
+recovery. Predictions are not confirmed observations.
+
+The maker authorized the four-section pilot, including two reserved from tuning,
+with numbered originals, separate detection overlays, per-observation records,
+automatic/assisted provenance and explicit miss/duplicate/false/color/uncertainty
+accounting. Commit/push, then stop before global indexing. Routine decisions are
+the agent's responsibility; request visual feedback only when it materially changes
+conclusions. Later compare both helicities, counts/phases and small spacing changes
+using the planar-spline beads.pov geometry. Repeating-pattern recovery waits.
+Results are experiment evidence, not maker facts: [R235 report](photo2/STAGE1_PILOT.md).
+
 ## Opening request
 
 > We are going to work in the "beads" directory, in a new branch off of the main branch.

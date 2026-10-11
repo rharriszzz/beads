@@ -1,0 +1,144 @@
+{
+  "inputs": {
+    "protocol": "205ff6313de9fb278ec3e678a833d8132a22bbcb008ee5ccc864b4c2b369a669",
+    "reference": "6bd0a8103a89f78829d9b9dcbe77e68067e7ab4ce6528014f32c574fcc43bee9",
+    "image": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "sources": {
+      "photo2/review/r231/points.json": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+      "photo2/review/r192/candidates.json": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d"
+    }
+  },
+  "adjudication_sha256": "03df4dd10c5ecfbf0b83e202db4af07bf4f218cb4578d90c6ed011f28590db1a",
+  "evaluation_amendments_sha256": "11aaef1b34b182f139c89d8eed993047c2cbf33ff3d11c90c49d8dd4ae7a9594",
+  "script_sha256": "85df537bf87586cb484be8e609c9fe68b943332c5fb2b34c9c7aa56d075a765b",
+  "summary": {
+    "D3": {
+      "split": "development",
+      "eligible": 22,
+      "eligible_by_color": {
+        "yellow": 10,
+        "red": 7,
+        "black": 5
+      },
+      "correctly_detected": 19,
+      "missed": 3,
+      "misses_by_color": {
+        "yellow": 1,
+        "red": 1,
+        "black": 1
+      },
+      "duplicate_proposals": 0,
+      "false_positives": 0,
+      "incorrect_colors": 0,
+      "unresolved_candidates": 0,
+      "outside_scope_candidates": 0,
+      "candidate_count": 19,
+      "reference_uncertain": 3,
+      "deferred_no_reflection": 2,
+      "assisted_additions": 3,
+      "automatic_local_gate_passed": false
+    },
+    "D4": {
+      "split": "development",
+      "eligible": 32,
+      "eligible_by_color": {
+        "black": 11,
+        "yellow": 14,
+        "red": 7
+      },
+      "correctly_detected": 16,
+      "missed": 16,
+      "misses_by_color": {
+        "yellow": 6,
+        "black": 7,
+        "red": 3
+      },
+      "duplicate_proposals": 0,
+      "false_positives": 0,
+      "incorrect_colors": 0,
+      "unresolved_candidates": 1,
+      "outside_scope_candidates": 0,
+      "candidate_count": 17,
+      "reference_uncertain": 1,
+      "deferred_no_reflection": 0,
+      "assisted_additions": 16,
+      "automatic_local_gate_passed": false
+    },
+    "H1": {
+      "split": "reserved",
+      "eligible": 27,
+      "eligible_by_color": {
+        "yellow": 12,
+        "red": 6,
+        "black": 9
+      },
+      "correctly_detected": 20,
+      "missed": 7,
+      "misses_by_color": {
+        "yellow": 3,
+        "black": 4
+      },
+      "duplicate_proposals": 0,
+      "false_positives": 0,
+      "incorrect_colors": 0,
+      "unresolved_candidates": 3,
+      "outside_scope_candidates": 0,
+      "candidate_count": 23,
+      "reference_uncertain": 4,
+      "deferred_no_reflection": 3,
+      "assisted_additions": 7,
+      "automatic_local_gate_passed": false
+    },
+    "H4": {
+      "split": "reserved",
+      "eligible": 28,
+      "eligible_by_color": {
+        "yellow": 10,
+        "red": 9,
+        "black": 9
+      },
+      "correctly_detected": 21,
+      "missed": 7,
+      "misses_by_color": {
+        "yellow": 1,
+        "black": 5,
+        "red": 1
+      },
+      "duplicate_proposals": 0,
+      "false_positives": 0,
+      "incorrect_colors": 0,
+      "unresolved_candidates": 3,
+      "outside_scope_candidates": 0,
+      "candidate_count": 24,
+      "reference_uncertain": 5,
+      "deferred_no_reflection": 1,
+      "assisted_additions": 7,
+      "automatic_local_gate_passed": false
+    }
+  },
+  "image_processing": "Frozen detector replay; native crop/nearest-neighbor review only",
+  "reproduction": ".venv/bin/python photo2/stage1_pilot.py evaluate",
+  "outputs_sha256": {
+    "D3-automatic.png": "04b3782d25cba03c2d6896aa7f34580bb84433ff5ed91f037d1848a561a5c96f",
+    "D3-numbered.png": "1105f5b8633be8a7ed426aa2e3fa20b830b544ea8624525612d9db9d625d5ef1",
+    "D3-observations.md": "252393b898f1755f6181f2594bf793627dd70161c74414bc34afeed07221c1b7",
+    "D3-raw.png": "8ac532ff55416abcfad7b3cf1b5a7812ba1ad1c9139e512c6922bccabdd9f85c",
+    "D3-reviewed.png": "ffbe4302b96393310668a35c5b40317026e6fb66103d205e6d4b4d0b134971d1",
+    "D4-automatic.png": "74e2c34aeb3cdf802ec9d0ca933f890bfd1f53afc253832231be86a5eda5be39",
+    "D4-numbered.png": "b3846669f0f110c27eee0a934c6ffea8aa19e45ffc3b347688cb0d1fafed2095",
+    "D4-observations.md": "fa9c38574828e3a42d0b82e3957947ba5a89eed207935c7281e854a445b3df6b",
+    "D4-raw.png": "ca0a12ac2b6bcfa010655a5b2f3de9082561547a14e504f3e43b2ef45b85ab07",
+    "D4-reviewed.png": "87600d8bf20b43292a188a6dbb77b4477e73a476562438d35b94612d5db732fb",
+    "H1-automatic.png": "e5c8a8cbe4d0e2e27d5ccbac951a3d4729822cb2ccebdf50a0ad709869826108",
+    "H1-numbered.png": "32ba7b5034e592ba613efe615fc942a1cf0bb7eb680710c0d65cec2ac21d59ec",
+    "H1-observations.md": "aa3769d77b127e41b656320e9ad601beda8c4c49c4016a5fe8b35efaaba4445d",
+    "H1-raw.png": "748efe87d9b1f30de1a1ed05cc5eef5c3736657257748398595a64f2109f8ed4",
+    "H1-reviewed.png": "577943068b4c6f8d45eb03fe214aa539b8901a75d427c83802f92e7a51a7b140",
+    "H4-automatic.png": "d170fe897b2731301f3c707ebb93160f68d0337677602e643a3c0ce2eb139652",
+    "H4-numbered.png": "0fd63f9e7fa5bfafe395c668df2a22ad2ed6278e84ec2602b51f573d08a93cb3",
+    "H4-observations.md": "0e13d43ca6e177afa95ebf45416a729eee3c5d9f8a1fe6232b04f70408a477b5",
+    "H4-raw.png": "d4a4e80c1e8a98396e100dfc2db37d43e298a1a28117f6889ccd7a6fb7e35c05",
+    "H4-reviewed.png": "03b5bf7b5ad8e841d2d350ac392346945f7c119afef0519b04e44a8ea956e2c6",
+    "observations.csv": "88fd4b526ab02071d2f50925f3c8da9542b2374a8ab7657a8c594e01b10f211c"
+  }
+}

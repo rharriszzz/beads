@@ -5,6 +5,15 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R235 Stage 1 overrides older central-body/sliver exclusions: distinct red/yellow
+patches with roughly >=10% of unobstructed projected bead area and convincing
+color qualify. Black eligibility requires an obvious reflection plus dark-body
+evidence; no-reflection black remains deferred, not a Stage 1 detector miss.
+Keep observed patches, representatives, centroids, reflections and inferred
+centers distinct. See photo2/STAGE1_PILOT.md for the completed four-section pilot.
+Stop for review before global indexing. Make routine technical decisions;
+ask visual questions only when their answers materially affect conclusions.
+
 - Work on one aspect at a time. Present 3–6 methods before selecting a new phase's
   implementation. Ask frequent, small illustrated questions; preserve answers.
   Put questions in tracked files and commit their curated supporting images.

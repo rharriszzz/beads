@@ -1563,6 +1563,7 @@ results are not automatically present or validated on this branch.
 
 | Aspect | Reusable procedure / next idea | Evidence and limitation |
 | --- | --- | --- |
+| Stage 1 photographic inventory | Replay frozen color/reflection passes; number raw references, preserve distinct location roles, score every proposal, disclose assisted additions and reference amendments | [R235 four-section pilot](photo2/STAGE1_PILOT.md): provisional76/109 coverage,33 assisted additions;13 uncertain references,7 unresolved proposals; black without reflections deferred; no indexing |
 | Local measurements | Show raw context, interior endpoints, path, color strip and traces separately; retain rejected endpoints | [Hue paths](photo2/HUE_TRANSITIONS.md), [parallel paths](photo2/PARALLEL_PATHS.md); hue changes are supporting cues, not boundaries by themselves |
 | Lighting and material | Fit paper illumination and bead highlights/shadows jointly with POV-Ray pigment/finish/normal/interior; compare alternative lights | Proposed future fitting; iPhone does not determine flash/light geometry; no physical-composition inference |
 | Exposed bead shapes | Use 3D geometry, planar section direction/global camera and neighbor occlusion; distinguish visible centroid from physical center | [Shape quick model](photo2/PRIOR_WORK.md); historical R084/R085 atlas is synthetic evidence, not a universal oval detector |
