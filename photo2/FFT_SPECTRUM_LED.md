@@ -1,5 +1,9 @@
 # Spectrum-led photographic FFT development — R248
 
+**Subsequent R249:** the user authorized a provisional freeze and six-site
+transfer, now [completed and reported](FFT_TRANSFER.md). This R248 report retains
+its development-stage evidence and historical stopping point.
+
 **First implementation milestone completed; stop for illustrated development
 review before freezing or transfer.** Circular Gaussian width and the meaning of
 the central spike materially affect the result. There are plausible reciprocal

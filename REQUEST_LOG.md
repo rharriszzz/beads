@@ -5757,3 +5757,47 @@ image was computed. Fifteen source/phase/geometry/missing-pair tests pass.
 Freeze SHA25677eca4c58e36bbd7bf3d3a7c591094469ce31456b73b176255a191c347c768c9
 saved before any R249 transfer extraction. Commit this checkpoint, then execute
 the authorized six-site comparison; report outcome at the bounded stop below.
+
+
+### R249 outcome — frozen transfer completed; review stop
+
+Freeze checkpoint ffc9f56 was committed before the six-site extraction. Source
+hashes and the frozen procedure remained unchanged. Executed all 60 cases:
+six original reserved sites, two channels and five predetermined settings. All
+have complete image support. Saved 480 qualified pair alternatives, including
+240 brightest-four shortlist entries. No local shift, channel fusion, frequency
+scaling, camera fitting or successful-diagnostic substitution was performed.
+
+Stable candidate trios occur at T1/T2 in V and Y, and T3/T6 in Y: V 2/6 and Y 4/6.
+V at T3/T4/T6 is fragile; T4 Y and both T5 channels have no supported primary trio.
+T3 retains two compatible primary trios in each channel, with different stability.
+T1/T2/T3/T6 share a development-compatible tangent-relative branch; T4 V differs.
+Those are provisional spectral-screen outcomes, not extraction accuracy or
+physical-family confirmation. T6 shows the clearest Y advantage: V emphasizes a
+broad central-adjacent competitor while Y retains the common directional trio.
+Curvature is a possible confound at T4/T5, not an established sole cause.
+
+Curated six-site raw/location images, paired Gaussian/FFT/combined inverses,
+individual inverses for all eight candidates per channel/site, all fixed
+sensitivity panels, frequency/angle plots, tangent-frame comparison, 480-row CSV,
+full JSON alternatives and qualitative assessments are in photo2/review/r249.
+FFT_TRANSFER.md explains support/failure and links the evidence. No physical
+1/6/7 assignments or photo helicity scores; both hands remain unexcluded without
+probability estimates. No bead indexing, pattern recovery or new segmentation.
+
+Fifteen source/phase/geometry/abstention tests pass. All 60 measurements and their
+assessments replay exactly; representative T1 V and T5 Y inverse cards reproduce
+byte-for-byte. Freeze/dependencies/photo verified by hashes; scene/photo and old
+measurements unchanged. Verification records hashes and commands. Updated current
+plan/handoff, method index and explorer notes; R248 report links the subsequent
+step while preserving historical evidence and unanswered maker review questions.
+
+Next recommended bounded task after review: spatial validation of the already
+selected inverses at T1/T3 and T4/T5 against visible row alignments and matched
+known-helicity synthetic examples. Keep both T3 alternatives and failed cases;
+validate geometry before hand inference. These six sites are now inspected, not
+fresh reserved evaluation for revisions. Stop after scoped commit/push and exact
+remote/clean verification; no next experiment automatically. Recommend Astra/High
+without asserting active model. No /new needed for review; fresh session reasonable
+before separately authorized implementation. Final delivery verification follows
+commit/push in the session response.

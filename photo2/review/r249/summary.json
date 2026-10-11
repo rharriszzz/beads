@@ -1,0 +1,46 @@
+{
+  "cases": 60,
+  "sites": 6,
+  "channels": [
+    "V",
+    "Y"
+  ],
+  "variants": 5,
+  "failures": 0,
+  "alternative_pairs": 480,
+  "shortlisted_pairs": 240,
+  "primary_stable": {
+    "V": [
+      "T1",
+      "T2"
+    ],
+    "Y": [
+      "T1",
+      "T2",
+      "T3",
+      "T6"
+    ]
+  },
+  "primary_fragile": {
+    "V": [
+      "T3",
+      "T4",
+      "T6"
+    ],
+    "Y": []
+  },
+  "primary_missing": {
+    "V": [
+      "T5"
+    ],
+    "Y": [
+      "T4",
+      "T5"
+    ]
+  },
+  "freeze_sha256": "77eca4c58e36bbd7bf3d3a7c591094469ce31456b73b176255a191c347c768c9",
+  "freeze_commit": "ffc9f56",
+  "retuning": false,
+  "physical_families_assigned": false,
+  "photographic_helicity_evaluated": false
+}

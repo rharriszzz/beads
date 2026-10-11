@@ -1,5 +1,19 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R249 — provisional freeze and six-site transfer completed
+
+[Report and reproduction](FFT_TRANSFER.md), [visual evidence](review/r249/INDEX.md).
+The user authorized routine provisional choices from D1–D3 and the recorded
+side-lobe/brightest-pair advice. Numeric choices are not maker confirmations.
+Circular sigma 30, conservative central radius 2/(2*pi*sigma), no upper cut;
+paired V/Y, brightest four and extra alternatives; fixed sensitivity checks.
+Freeze committed before all 60 transfer cases, unchanged thereafter. Stable
+candidate trios at T1/T2 in both channels, T3/T6 in Y; T4/T5 remain unsupported
+or unstable. T3 has competing trios. Common tangent-relative spectral directions
+are useful evidence, but physical 1/6/7 and helicity remain unresolved. No further
+experiment starts automatically; review spatial-validation proposal in report.
+Historical review stops below describe their respective stages, not current work.
+
 ## R248 — development replay and latest maker clarifications
 
 [Photographic development report](FFT_SPECTRUM_LED.md) and

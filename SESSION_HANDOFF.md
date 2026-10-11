@@ -1,18 +1,37 @@
 # Beads session handoff — new branch
 
-## Current R249 — provisional procedure frozen; six-site transfer authorized
+## Current R249 — six-site FFT transfer completed; stop for review
 
-User explicitly authorizes moving beyond R248 review, selecting a provisional
-procedure using D1–D3 only, then testing the six reserved sites without retuning.
-[Protocol and results](photo2/FFT_TRANSFER.md). Numeric decisions are Codex's;
-remaining R248 review questions are not maker-confirmed. Primary circular sigma30,
-central radius2/(2*pi*sigma), no upper cut, paired V/Y, brightest4 with extras
-retained. Fixed sigma20/40 and central1.5/2.5 diagnostics cannot replace primary.
-Frozen classification, axial frequency-vector matching, ambiguity and stability
-rules in review/r249/freeze.json; hashes checked before transfer. No hand-based
-selection, indexing or repeat recovery. Complete six-site evidence/report, update
-records, commit/push/verify remote and clean status, then stop. Recommend Astra/High;
-no /new needed for this bounded task. Actual model status not newly supplied.
+[Results and reproduction](photo2/FFT_TRANSFER.md) ·
+[all photographic/FFT/inverse evidence](photo2/review/r249/INDEX.md).
+Provisional procedure committed as ffc9f56 BEFORE transfer: circular sigma 30,
+central radius 2/(2*pi*sigma), no upper cut, matched V/Y and brightest four
+qualified pairs. Extra candidates and all compatible trios retained. Fixed
+sigma 20/40 and central 1.5/2.5 diagnostics never replace the primary. Unanswered
+R248 review questions remain unanswered; numeric choices are not maker facts.
+
+Completed all 60 cases at the six reserved sites without changing frozen code,
+parameters or locations. Stable spectral trios: T1/T2 in both channels, T3/T6
+in Y. V is fragile at T3/T4/T6; T4 Y and both T5 channels have no supported
+primary trio. T3 retains two competing trios in each channel. Stable counts
+V 2/6, Y 4/6 are provisional screening outcomes, not extraction accuracy.
+Tangent-relative directions/frequencies share a branch at T1/T2/T3/T6; T4/T5
+are failures or deviations. Physical 1/6/7 assignments and both helicities remain
+unresolved. No photographic hand score, indexing or repeat recovery was run.
+
+Fifteen tests, exact 60-case numerical replay and two byte-identical inverse-card
+reproductions validate implementation/reproducibility, not physical assignments.
+Sources, freeze, data and figure hashes are preserved. Commit/push this completed
+step and verify exact remote tip/clean status before reporting delivery.
+
+Next concrete task, only after review: spatial validation at T1/T3 and T4/T5,
+comparing already selected inverses with visible bead-row alignments and matched
+known-helicity synthetic examples. Preserve both T3 alternatives and failures;
+validate geometric interpretation before helicity. These six sites are now
+inspected, not fresh reserved evidence for a revised method. No automatic next
+experiment. Recommend Astra/High without asserting actual model status. No /new
+needed for review; a fresh session is reasonable before separately authorized
+implementation. User controls session/model switching.
 
 ## Prior R248 — photographic FFT development delivered; review before freeze
 

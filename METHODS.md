@@ -26,6 +26,18 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
+Implemented [R249 frozen six-site FFT transfer](photo2/FFT_TRANSFER.md):
+native RGB and predeclared image-derived centerline sites; output conjugate
+candidates, tangent-relative vectors, phase-preserving inverse cards and retained
+ambiguities. Development-only provisional sigma 30, central exclusion 2/(2*pi*sigma),
+no upper cut, matched V/Y and brightest four; fixed sensitivity settings cannot
+replace primary failures. Stable spectral trios at T1/T2 in both channels and
+T3/T6 in Y; T4/T5 unsupported or fragile. T3 keeps competing trios. Frequency/
+angle matching and signed closure do not establish physical 1/6/7 or helicity.
+Source hashes, pre-transfer freeze commit, exact replay and 15 tests support
+reproducibility. This photograph is not untouched blind data; no generality or
+index recovery claim. Next proposed step is spatial validation, pending review.
+
 Implemented [R248 photographic FFT development](photo2/FFT_SPECTRUM_LED.md):
 three locations, circular sigma20/30/40/55, paired V/Y, recorded spectrum-led
 cutoff sweeps, peak tables, phase-preserving inverse cards and reciprocal
@@ -33,7 +45,8 @@ alternatives. Maker clarified **keep the side lobes**, then **brightest3/4
 noncentral pairs; upper rejection optional**. Current no-upper comparison
 preserves both updates and earlier annulus evidence. Source masks/FFT/pairs are
 tested functionality; peak qualifications/manual choices remain experimental.
-No transfer freeze, physical1/6/7 recovery or photographic helicity validation.
+At the R248 stop there was no transfer freeze, physical 1/6/7 recovery or
+photographic helicity validation; R249 subsequently tested transfer above.
 See [review stop](photo2/FFT_SPECTRUM_LED_REVIEW.md) and
 [original proposal](photo2/FFT_SPECTRUM_LED_PLAN.md).
 
