@@ -133,6 +133,44 @@ def main():
                 page.evaluate('()=>{window.debuggerTest.selectGI(2163);window.debuggerTest.selectGI(2164);window.debuggerTest.selectGI(2165)}')
                 page.wait_for_function('window.debuggerTest.state.detailReady && window.debuggerTest.detail.selected_generator_index===2165',timeout=60000)
                 check(state()['gi']==2165,'Rapid navigation discards stale asynchronous surface results')
+                # R258 additions run in this same temporary review workspace.
+                before_reviews=app.reviews.read()['reviews'];old_versions={mid:app.model(mid)['version'] for mid in ['N2696_h+1_f0','N2674_h+1_f0','N2681_h-1_f0']}
+                page.evaluate('async()=>{await window.debuggerTest.switchModel("N2696_h+1_f0");window.debuggerTest.jumpK(2)}')
+                old_view=state()['view']
+                page.evaluate('async()=>{await window.debuggerTest.switchModel("R258_origin_C")}')
+                check(state()['view']==old_view and state()['k']==2,'R258 model switch preserves exact viewport and explicit review address')
+                page.wait_for_function('window.debuggerTest.state.detailReady',timeout=90000)
+                check(page.evaluate('window.debuggerTest.models.get("R258_origin_C").ownership_evidence.some(p=>p[4]===1)'),'R258 photographic ownership evidence available')
+                page.click('[data-tab="layers"]');page.check('#layer-ownershipFailure');page.check('#layer-unsupported');page.check('#layer-registered')
+                check(state()['layers']['registered'] and state()['layers']['ownershipFailure'],'R258 physical curve and ownership-failure layers operate')
+                page.click('[data-tab="review"]');page.click('#regionDraw')
+                points=[[1344,338],[1351,338],[1351,341],[1344,341]]
+                rect=page.locator('#photoCanvas').bounding_box()
+                for x,y in points:
+                    p=page.evaluate('(p)=>window.debuggerTest.toScreen(p)',dict(x=x,y=y));page.mouse.click(rect['x']+p['x'],rect['y']+p['y'])
+                page.click('#regionDraw');page.select_option('#regionColor','yellow');page.select_option('#action','location-incorrect');page.fill('#note','R258 browser test polygon, not maker evidence')
+                with page.expect_response('**/api/review'):page.click('#saveReview')
+                rec=app.reviews.read()['reviews'][-1]
+                check(np.allclose(rec['region_polygon'],points,atol=.3),'Native-coordinate region polygon saved in review')
+                check(rec['region_color']=='yellow' and rec['index_namespace']=='R258 conditional material address','Region color and index namespace preserved')
+                check(app.reviews.read()['reviews'][:-1]==before_reviews,'R258 region save leaves all earlier reviews byte-equivalent')
+                with page.expect_download() as info:page.click('#export')
+                with zipfile.ZipFile(info.value.path()) as z:
+                    exported=json.loads(z.read('debug-record.json'));check(exported['region_polygon']==rec['region_polygon'],'Debug ZIP contains the marked region')
+                    check(exported['model_id']=='R258_origin_C' and exported['surface_diagnostics']['model_id']=='R258_origin_C','New model ZIP owns matching native surface diagnostics')
+                page.evaluate('async()=>{await window.debuggerTest.flush()}');page.reload();page.wait_for_function('window.debuggerTest?.state.ready',timeout=90000)
+                check(state()['model']=='R258_origin_C' and state()['k']==2,'R258 model and address survive reload')
+                page.click('[data-tab="review"]');check(page.locator('#note').input_value()=='R258 browser test polygon, not maker evidence','Region review draft survives reload')
+                check(all(app.model(mid)['version']==v for mid,v in old_versions.items()),'Historical model versions remain immutable')
+                page.screenshot(path=str(a.output/'r258-region.png'))
+                page.click('[data-tab="inspect"]');view_before=state()['view'];page.click('#bead2Compare')
+                page.wait_for_function('window.debuggerTest.state.model==="R258_origin_C2" && window.debuggerTest.state.detailReady',timeout=120000)
+                check(state()['view']==view_before and state()['k']==2,'One-click bead2 comparison selects compact C2 without moving the image')
+                pixel=page.evaluate('window.debuggerTest.detail.footprint.find(p=>p[2]===window.debuggerTest.state.gi)');p=page.evaluate('(p)=>window.debuggerTest.toScreen(p)',dict(x=pixel[0],y=pixel[1]));rect=page.locator('#photoCanvas').bounding_box();page.mouse.move(rect['x']+p['x'],rect['y']+p['y'])
+                check('native owner k2' in page.locator('#cursor').inner_text(),'Pointer reports the selected native pixel owner')
+                page.click('#bead2Compare');page.wait_for_function('window.debuggerTest.state.model==="N2696_h+1_f0"',timeout=120000)
+                check(state()['view']==view_before and state()['k']==2,'Comparison returns to old model without changing view or address')
+
                 check(not errors,'No browser JavaScript errors')
                 summary=dict(checks=checks,draw_median_ms=perf[15],draw_p95_ms=perf[28],browser_errors=errors,photo_size=list(app.photo.size),models=list(app.cache),review_revisions=len(list((work/'reviews').glob('revision-*.json'))))
                 (a.output/'verification.json').write_text(json.dumps(summary,indent=2)+'\n');browser.close()

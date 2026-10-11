@@ -1713,3 +1713,17 @@ Review records are append-only, model/generation/origin linked, revisioned and
 atomically saved. They are separate from generation/model caches and never cause
 a refit. Full numerical/isolation tests and actual Chromium interaction tests are
 in the package; [curated results](photo2/review/r256/README.md) record the evidence.
+
+
+## R258: bead-driven geometric fitting without historical curve targets
+
+Implemented [method and limits](photo2/BEAD_DRIVEN_R258.md): source-annulus first-hit
+footprints, robust positive-interior surface loss, uncertain identity matching,
+absolute periodic physical curve and camera/phase/spacing alternatives. No old
+curve/edge attraction or relative displacement bound. Use maker-confirmed pixels
+separately from detector labels; hold entire ambiguity groups and distant regions
+out. Compare A/B/C/D and lower-flexibility controls, report exact ownership plus
+residual distributions, preserve uncertain/hidden spans. Synthetic inverse tests
+start with a deliberately wrong curve. Source code, model parameters, native
+comparisons, sensitivity and index/occlusion ledgers are linked in the report.
+R258's local positive-pixel improvement does not establish a global reconstruction.

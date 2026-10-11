@@ -1,0 +1,978 @@
+[
+  {
+    "variant": "C",
+    "removed": "full",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7885107884432233,
+        "wrong_owner_mean": 0.13038125701132222,
+        "mean_residual": 2.510793083913105,
+        "rms_residual": 5.9696510641878255,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.6809168373488774,
+        "wrong_owner_mean": 0.2362012558255538,
+        "mean_residual": 3.8526827775338317,
+        "rms_residual": 8.557250542084438,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7543956332181868,
+        "wrong_owner_mean": 0.1639339395621761,
+        "mean_residual": 2.9362703038416287,
+        "rms_residual": 6.896046103116262,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 351,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 344,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no displacement",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 4,
+        "ownership_mean": 0.7151786884085614,
+        "wrong_owner_mean": 0.19652336707580792,
+        "mean_residual": 2.84031718264848,
+        "rms_residual": 6.14783992233467,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 0,
+        "ownership_mean": 0.6616975381372551,
+        "wrong_owner_mean": 0.26137938493966806,
+        "mean_residual": 3.9940162818239124,
+        "rms_residual": 8.655618222635544,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 4,
+        "ownership_mean": 0.6982212505176593,
+        "wrong_owner_mean": 0.2170874703009343,
+        "mean_residual": 3.206124214094349,
+        "rms_residual": 7.040375974762479,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 36.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 0.0,
+      "unowned_fraction": 1.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 6.059116093070156,
+      "residual_rms": 6.0592314458424275,
+      "residual_median": 6.082762530298219,
+      "residual_p90": 6.082762530298219,
+      "residual_worst": 6.082762530298219,
+      "footprint_area_px2": 342,
+      "positive_area_not_owned": 7,
+      "unsupported_predicted_area_upper_bound_px2": 342,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no tangent",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 4,
+        "ownership_mean": 0.7410663354403452,
+        "wrong_owner_mean": 0.11683273064453568,
+        "mean_residual": 3.791319997472009,
+        "rms_residual": 8.354475439387597,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.8305431323254024,
+        "wrong_owner_mean": 0.12766753076125587,
+        "mean_residual": 1.5707636725885172,
+        "rms_residual": 2.0529056240690386,
+        "worst_residual": 9.055385138137417
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.7694370271356072,
+        "wrong_owner_mean": 0.12026815507178841,
+        "mean_residual": 3.0872411627528535,
+        "rms_residual": 7.0001929517006225,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 3.285714285714284,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 0.7142857142857143,
+      "unowned_fraction": 0.2857142857142857,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 1.5946110943097687,
+      "residual_rms": 1.927248223318863,
+      "residual_median": 1.0,
+      "residual_p90": 3.064911064067352,
+      "residual_worst": 3.1622776601683795,
+      "footprint_area_px2": 360,
+      "positive_area_not_owned": 2,
+      "unsupported_predicted_area_upper_bound_px2": 355,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no curvature",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7805429138944086,
+        "wrong_owner_mean": 0.12273409318941675,
+        "mean_residual": 2.566882351430207,
+        "rms_residual": 5.996014789755166,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 0,
+        "ownership_mean": 0.7211163821137963,
+        "wrong_owner_mean": 0.24246660740556572,
+        "mean_residual": 3.7560526794174454,
+        "rms_residual": 8.534128898989712,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7617003550371412,
+        "wrong_owner_mean": 0.16069806111161034,
+        "mean_residual": 2.943936357865185,
+        "rms_residual": 6.902578243812999,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 333,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 326,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no phase",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7885107884432233,
+        "wrong_owner_mean": 0.13038125701132222,
+        "mean_residual": 2.510793083913105,
+        "rms_residual": 5.9696510641878255,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.6809168373488774,
+        "wrong_owner_mean": 0.2362012558255538,
+        "mean_residual": 3.8526827775338317,
+        "rms_residual": 8.557250542084438,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7543956332181868,
+        "wrong_owner_mean": 0.1639339395621761,
+        "mean_residual": 2.9362703038416287,
+        "rms_residual": 6.896046103116262,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 351,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 344,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no winding",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7885107884432233,
+        "wrong_owner_mean": 0.13038125701132222,
+        "mean_residual": 2.510793083913105,
+        "rms_residual": 5.9696510641878255,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.6809168373488774,
+        "wrong_owner_mean": 0.2362012558255538,
+        "mean_residual": 3.8526827775338317,
+        "rms_residual": 8.557250542084438,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7543956332181868,
+        "wrong_owner_mean": 0.1639339395621761,
+        "mean_residual": 2.9362703038416287,
+        "rms_residual": 6.896046103116262,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 351,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 344,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no camera",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7885107884432233,
+        "wrong_owner_mean": 0.13038125701132222,
+        "mean_residual": 2.510793083913105,
+        "rms_residual": 5.9696510641878255,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.6809168373488774,
+        "wrong_owner_mean": 0.2362012558255538,
+        "mean_residual": 3.8526827775338317,
+        "rms_residual": 8.557250542084438,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7543956332181868,
+        "wrong_owner_mean": 0.1639339395621761,
+        "mean_residual": 2.9362703038416287,
+        "rms_residual": 6.896046103116262,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 351,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 344,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "C",
+    "removed": "no spacing",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7885107884432233,
+        "wrong_owner_mean": 0.13038125701132222,
+        "mean_residual": 2.510793083913105,
+        "rms_residual": 5.9696510641878255,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.6809168373488774,
+        "wrong_owner_mean": 0.2362012558255538,
+        "mean_residual": 3.8526827775338317,
+        "rms_residual": 8.557250542084438,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7543956332181868,
+        "wrong_owner_mean": 0.1639339395621761,
+        "mean_residual": 2.9362703038416287,
+        "rms_residual": 6.896046103116262,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 351,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 344,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "full",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.8110503083520383,
+        "wrong_owner_mean": 0.09509624914560935,
+        "mean_residual": 2.447039318794423,
+        "rms_residual": 5.940044416492925,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.7608053866453471,
+        "wrong_owner_mean": 0.1984090286147277,
+        "mean_residual": 3.7893345829050813,
+        "rms_residual": 8.58344649823651,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7951189917133314,
+        "wrong_owner_mean": 0.12785395970898836,
+        "mean_residual": 2.8726451342441437,
+        "rms_residual": 6.888905492029349,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 315,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 308,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no displacement",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.7790956749205475,
+        "wrong_owner_mean": 0.1124021208263597,
+        "mean_residual": 2.562740917728909,
+        "rms_residual": 5.976256588973621,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.7673045989549301,
+        "wrong_owner_mean": 0.19436656838442506,
+        "mean_residual": 3.643467104451249,
+        "rms_residual": 8.50959044321932,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7753570410777907,
+        "wrong_owner_mean": 0.13839084810086824,
+        "mean_residual": 2.9054101964457484,
+        "rms_residual": 6.881237627144326,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 9.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 0.0,
+      "unowned_fraction": 1.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 3.1159126144059854,
+      "residual_rms": 3.116774889895918,
+      "residual_median": 3.1622776601683795,
+      "residual_p90": 3.1622776601683795,
+      "residual_worst": 3.1622776601683795,
+      "footprint_area_px2": 297,
+      "positive_area_not_owned": 7,
+      "unsupported_predicted_area_upper_bound_px2": 297,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no tangent",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.701384103179237,
+        "wrong_owner_mean": 0.14201896507595918,
+        "mean_residual": 4.6500425790138395,
+        "rms_residual": 10.02351771522493,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 2,
+        "ownership_mean": 0.7968944096793265,
+        "wrong_owner_mean": 0.15860769436074446,
+        "mean_residual": 1.6971756674988727,
+        "rms_residual": 2.326962569263529,
+        "worst_residual": 15.033296378372908
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7316678588987775,
+        "wrong_owner_mean": 0.14727880606869595,
+        "mean_residual": 3.713767704631045,
+        "rms_residual": 8.386367013706232,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.14285714285714488,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 0.8571428571428571,
+      "unowned_fraction": 0.14285714285714285,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 288,
+      "positive_area_not_owned": 1,
+      "unsupported_predicted_area_upper_bound_px2": 282,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no curvature",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.8122868231845668,
+        "wrong_owner_mean": 0.09658566796065172,
+        "mean_residual": 2.4590791737986217,
+        "rms_residual": 5.949223958096443,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 0,
+        "ownership_mean": 0.7348482615328944,
+        "wrong_owner_mean": 0.22419820077967217,
+        "mean_residual": 3.786825919177687,
+        "rms_residual": 8.58025758722118,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.787733132904768,
+        "wrong_owner_mean": 0.13704817836668262,
+        "mean_residual": 2.880072044284667,
+        "rms_residual": 6.893054303941157,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 315,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 308,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no phase",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7903303885672877,
+        "wrong_owner_mean": 0.11435784933117742,
+        "mean_residual": 2.509827481924083,
+        "rms_residual": 5.970454686225513,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.7572498799744718,
+        "wrong_owner_mean": 0.20288717686037655,
+        "mean_residual": 3.679968410500766,
+        "rms_residual": 8.526128632178928,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 7,
+        "ownership_mean": 0.7798414468183461,
+        "wrong_owner_mean": 0.1424281239136064,
+        "mean_residual": 2.8808477763508358,
+        "rms_residual": 6.884288438299053,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 369,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 362,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no winding",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.7904277389747435,
+        "wrong_owner_mean": 0.11557026869940065,
+        "mean_residual": 2.5288978509951763,
+        "rms_residual": 5.979954106688607,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 0,
+        "ownership_mean": 0.7653013127476128,
+        "wrong_owner_mean": 0.1950980649511806,
+        "mean_residual": 1.858330354856425,
+        "rms_residual": 2.713988379824813,
+        "worst_residual": 14.422205101855956
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.7824608233417507,
+        "wrong_owner_mean": 0.14078639921825772,
+        "mean_residual": 2.3162788888048405,
+        "rms_residual": 5.172701231730434,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 315,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 308,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no camera",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 4,
+        "ownership_mean": 0.7304529562823275,
+        "wrong_owner_mean": 0.15116395061516966,
+        "mean_residual": 2.664938811977627,
+        "rms_residual": 6.031169952305622,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 2,
+        "ownership_mean": 0.7180727797427754,
+        "wrong_owner_mean": 0.22168367011524406,
+        "mean_residual": 3.7952414843395923,
+        "rms_residual": 8.555985245933481,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7265275344527135,
+        "wrong_owner_mean": 0.17352386167616884,
+        "mean_residual": 3.023327464189958,
+        "rms_residual": 6.932010924394383,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 9.0,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 0.0,
+      "unowned_fraction": 1.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 3.1159126144059854,
+      "residual_rms": 3.116774889895918,
+      "residual_median": 3.1622776601683795,
+      "residual_p90": 3.1622776601683795,
+      "residual_worst": 3.1622776601683795,
+      "footprint_area_px2": 288,
+      "positive_area_not_owned": 7,
+      "unsupported_predicted_area_upper_bound_px2": 288,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  },
+  {
+    "variant": "D",
+    "removed": "no spacing",
+    "metrics": {
+      "train": {
+        "count": 28,
+        "distinct_candidates": 6,
+        "explained_distinct_candidates": 5,
+        "ownership_mean": 0.8001980067725036,
+        "wrong_owner_mean": 0.10496161152797756,
+        "mean_residual": 2.4990107830216632,
+        "rms_residual": 5.975625001835237,
+        "worst_residual": 30.0
+      },
+      "holdout-body": {
+        "count": 13,
+        "distinct_candidates": 4,
+        "explained_distinct_candidates": 1,
+        "ownership_mean": 0.7466472000599451,
+        "wrong_owner_mean": 0.21744249903003096,
+        "mean_residual": 3.8498178075424496,
+        "rms_residual": 8.612381944645525,
+        "worst_residual": 30.0
+      },
+      "all": {
+        "count": 41,
+        "distinct_candidates": 10,
+        "explained_distinct_candidates": 6,
+        "ownership_mean": 0.7832184826929119,
+        "wrong_owner_mean": 0.14062628317497008,
+        "mean_residual": 2.927315449333132,
+        "rms_residual": 6.921294874687804,
+        "worst_residual": 30.0
+      }
+    },
+    "bead2": {
+      "id": "R258-bead2-reviewed-B",
+      "owner": 2164,
+      "k": 2,
+      "cost": 0.14285714285714488,
+      "split": "train",
+      "distinct": true,
+      "color": "yellow (maker R258)",
+      "identity": 2,
+      "positive_pixels": 7,
+      "owned_fraction": 1.0,
+      "unowned_fraction": 0.0,
+      "wrong_owner_fraction": 0.0,
+      "residual_mean": 0.7142857142857143,
+      "residual_rms": 0.8451542547285166,
+      "residual_median": 1.0,
+      "residual_p90": 1.0,
+      "residual_worst": 1.0,
+      "footprint_area_px2": 315,
+      "positive_area_not_owned": 0,
+      "unsupported_predicted_area_upper_bound_px2": 308,
+      "boundary_iou": null,
+      "boundary_iou_reason": "Positive interiors are not verified full body masks",
+      "support_reason": "R258-Q2 B only; exclude A. Positive pixels only, no full boundary or exact one-third area."
+    }
+  }
+]

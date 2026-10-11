@@ -38,6 +38,7 @@ class ReviewStore:
         for r in doc['reviews']:
             if r.get('action') not in ACTIONS or not all(isinstance(r.get(k),str) and r[k] for k in ['id','model_id','model_version','generation_id']): raise ValueError('Invalid review identity/action')
             if type(r.get('generator_index')) is not int or r['generator_index']<0 or not finite_point(r.get('source_position')): raise ValueError('Invalid review position/index')
+            if 'region_polygon' in r and (not isinstance(r['region_polygon'],list) or len(r['region_polygon'])>2000 or 0<len(r['region_polygon'])<3 or any(not finite_point(p) for p in r['region_polygon'])):raise ValueError('Invalid review region')
             if not isinstance(r.get('note',''),str) or len(r.get('note',''))>20000: raise ValueError('Invalid review note')
         for r in doc['origins']:
             if not all(isinstance(r.get(k),str) and r[k] for k in ['id','model_id','model_version','generation_id','observation_id']): raise ValueError('Invalid origin identity')

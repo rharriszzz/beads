@@ -1,3 +1,39 @@
+# R258 — bead-driven fits and marked regions
+
+[Scientific report](../BEAD_DRIVEN_R258.md) · [Numerical/evidence index](../review/r258/README.md).
+Restart `.venv/bin/python -m photo2.bead_debugger.server`, then open http://localhost:8767.
+
+The original three models remain selectable, with unchanged model hashes and
+review histories. Additional `R258_` models contain the four local A/B/C/D fits,
+compact C2/C4 controls, origin count/hand alternatives and partial global candidates.
+They are **conditional photographic fits**, not adopted indexing or color patterns.
+
+Use **Bead 2: old / fitted C2** for the simpler displacement-only comparison. Select `R258_origin_C` for the primary six-parameter curve experiment. Switching keeps the
+same zoom, pan and displayed material address; each model's address/observations
+remain explicitly conditional and reviews remain bound to their original model.
+Use **Selected footprint only**, then add positive evidence or neighbors as needed.
+The historical centerline/edges are references. **Selected model physical centerline**
+shows the new curve. **R258 positive ownership failures** uses green for its assigned
+owner and pink for missing/wrong ownership. **Predicted area without positive support**
+is orange: it is unverified area, not a certified false positive. Hover gives the
+native pixel owner within the calculated selected/neighbor neighborhood.
+
+Review → **Draw bead region** → click vertices → **Finish region**. Choose positive
+interior, visible-body boundary or uncertain region, plus color, then **Save review**.
+Undo/clear, drafts, reload, backup/import and ZIP preserve original coordinates,
+region semantics, color and the exact model/index namespace. Drag still pans.
+A drawn region does not silently refit geometry or overwrite earlier findings.
+The fitter's current bead2 mask is the seven B pixels explicitly confirmed in R258;
+the rejected49-pixel union is excluded. No full yellow boundary is yet known.
+
+All native centroid, annulus/occlusion, optional lighting and R256/R257 export
+controls still work. Default lighting is an approximate shared diagnostic and never
+enters the R258 geometry objective. The new curve may depart from the old one;
+there is no old-curve/edge attraction term or displacement bound.
+
+The historical documentation below describes earlier versions. Its statements that
+independent fitting is entirely staged are superseded for the bounded R258 fits.
+
 # Bead reconstruction debugger (R257)
 
 A local application for inspecting the real photograph, fresh interior proposals,

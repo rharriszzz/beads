@@ -78,7 +78,7 @@ def calculate(scene,gi,light,observations,geometry=None):
                 uncertainty=dict(lighting='Competing globally fitted configurations; conditional on inherited geometry. See heldout metrics.',
                                  numerical='4/2/1px versus boundary-adaptive 2x2 estimates; not an error bound. Highlights evaluated at 1px; extended source uses 9x9 angular quadrature.',
                                  shadows='Back-facing surfaces are separate from ray-blocked surfaces. Self and neighbor shadow blockers are recorded separately; gaps remain unassigned.',
-                                 geometry='Frozen legacy-assisted model; uncertainty dominates precision. No new index certification.'))
+                                 geometry=('R258 bead-driven partial fit; unobserved spans and correspondences remain conditional.' if scene.mid.startswith('R258') else 'Frozen legacy-assisted model; uncertainty dominates precision. No new index certification.')))
     return meta
 
 

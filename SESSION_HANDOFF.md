@@ -1,6 +1,63 @@
 # Beads session handoff — new branch
 
-## Current R257 — native surface debugger delivered; lighting remains unvalidated
+## Current R258 — bead-driven fitting delivered; neighborhood/global solution unresolved
+
+[Scientific report](photo2/BEAD_DRIVEN_R258.md) ·
+[Clean bead2 raw/old/C2 comparison](photo2/review/r258/bead-2-compact-comparison.png) ·
+[Numerical results and reproduction](photo2/review/r258/README.md) ·
+[Debugger](photo2/bead_debugger/README.md).
+
+Implemented exact source-annulus first-hit fitting with absolute periodic spline
+knots, physical spacing/curvature/winding/closure regularization and no historical
+curve/edge penalty or historical observation/adjacency constraints. A/B deliberately
+freeze geometry/curve for diagnostics; C/D are bead-driven. The original model is a
+warm start, not an acceptance target. Planar specialization follows the maker's
+table-plane construction. Orthographic camera has free joint scale; finite-focal
+sensitivity is uncalibrated. Packing remains a separation surrogate, not a contact
+solver. No major lighting fit or global indexing was performed.
+
+Maker responses: the first49-pixel proposal contains neighbor/background; **“B only;
+exclude A.”** Only7 positive pixels at(1344..1350,340) now support yellow bead2.
+The upper hooked group is excluded, not assigned another body. Questions, images
+and answers are preserved. This is not a full boundary or measured one-third area.
+
+Ran16 A/B/C/D fits in origin0–7, straight/black, bend and opposite sections;32 matched
+count/hand/section fits; two post-hoc compact controls; a partial assembled curve;
+and an11-parameter unanchored global trial including scale. C/D and C2 own7/7
+confirmed pixels; old A and phase-only B own0/7. C2 shifts the curve2.625px left,
+4.5px down (5.21px material displacement,4.05px normal component), with no camera or
+phase change. But nearby held-out agreement drops.826→.809 for C2 (.681 for C),
+and fixed fresh-correspondence checks expose neighbor regressions. No neighborhood
+solution is accepted. Distant C holdouts improve .780→.822, .819→.900 and .731→.941.
+The partial assembled curve moves2.03px RMS/11.29px max relative to the old registered
+physical curve; unobserved spans remain initialization/interpolation. The fifth
+geographic holdout is unchanged. The unanchored global trial finds no improvement.
+Both hands and N2674/2681/2696/2700 remain viable; untested2670–2700 are not excluded.
+
+Restart `.venv/bin/python -m photo2.bead_debugger.server` → http://localhost:8767.
+Use **Bead 2: old / fitted C2**, then the model selector (28 new plus3 historical).
+Viewport and explicit index namespaces survive switching. Native footprints,
+centroids, neighbors, reference/fitted curves, ownership failures and unsupported
+surface samples are available. Review → Draw bead region saves native-coordinate
+positive/boundary/uncertain polygons with exact model/version/index and exports.
+Historical model versions, observations and production reviews remain unchanged.
+
+Validation:29 Python tests,4 JavaScript contracts,74 real-Chromium checks passed.
+Wrong-initial-curve synthetic recovery reduces RMS8.315→.310px; same-kernel inverse
+limitations are explicit. Independent analytic annulus/normal contracts pass.
+Heldout component grouping cannot guarantee physical-body independence where the
+detector fragments a body. Boundary IoU and full visible-body coverage are unknown.
+Local Sites workflow only; OpenAI Docs solely for recommendation. No subagents.
+
+**Next task / stopping point:** use region drawing to mark the full visible yellow
+bead2 body plus reliable support for beads0/1 and diagonal neighbors. Resolve
+conditional identity/occlusion versus local curve displacement before any further
+global geometry or indexing. Stop at this delivery. Recommend GPT-6 Astra / High
+for that scientific ambiguity (recommendation, not new active-model status).
+No `/new` needed for debugger review; use `/new` before another substantial inference
+round. Scoped commit/push, exact remote-tip equality and clean status finish delivery.
+
+## Prior R257 — native surface debugger delivered; lighting remains unvalidated
 
 [Launch / overlay controls](photo2/bead_debugger/README.md) ·
 [Scientific report](photo2/SURFACE_LIGHTING_R257.md) ·

@@ -1,0 +1,214 @@
+{
+  "python_tests": 29,
+  "python_status": "pass",
+  "javascript_tests": 4,
+  "javascript_status": "pass",
+  "chromium_checks": 74,
+  "chromium_errors": [],
+  "commands": [
+    ".venv/bin/python -m unittest photo2.bead_debugger.test_debugger photo2.bead_debugger.test_surface photo2.bead_debugger.test_refit",
+    "node photo2/bead_debugger/static/logic.test.mjs",
+    "PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2.bead_debugger.browser_smoke --output photo2/output/debugger/smoke-r258"
+  ],
+  "limitations": "Linux headless Chromium, temporary reviews; Windows forwarding not exercised. Synthetic inverse uses the same ray kernel; independent analytic shape/normal contracts also pass. No full visible-body segmentation or physical contact solver.",
+  "synthetic_curve": {
+    "before_loss": 9.347664740049971,
+    "after_loss": 0.06246489919286257,
+    "wrong_curve_rms_px": 8.314918345047161,
+    "recovered_curve_rms_px": 0.3095658726709379,
+    "fit": {
+      "variant": "C",
+      "parameters": [
+        -6.75,
+        5.25,
+        0.0,
+        0.0,
+        -1.5,
+        -3.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evaluations": 145,
+      "objective": 0.06246489919286257,
+      "trace": [
+        {
+          "evaluations": 13,
+          "cost": 1.7818848239203464,
+          "steps": [
+            3.0,
+            3.0,
+            8.0,
+            8.0,
+            12.0,
+            12.0
+          ]
+        },
+        {
+          "evaluations": 25,
+          "cost": 0.34679520297838035,
+          "steps": [
+            3.0,
+            3.0,
+            8.0,
+            8.0,
+            12.0,
+            12.0
+          ]
+        },
+        {
+          "evaluations": 37,
+          "cost": 0.34679520297838035,
+          "steps": [
+            3.0,
+            3.0,
+            8.0,
+            8.0,
+            12.0,
+            12.0
+          ]
+        },
+        {
+          "evaluations": 49,
+          "cost": 0.295062142694722,
+          "steps": [
+            1.5,
+            1.5,
+            4.0,
+            4.0,
+            6.0,
+            6.0
+          ]
+        },
+        {
+          "evaluations": 61,
+          "cost": 0.295062142694722,
+          "steps": [
+            1.5,
+            1.5,
+            4.0,
+            4.0,
+            6.0,
+            6.0
+          ]
+        },
+        {
+          "evaluations": 73,
+          "cost": 0.13926172812539875,
+          "steps": [
+            0.75,
+            0.75,
+            2.0,
+            2.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "evaluations": 85,
+          "cost": 0.09999493197985526,
+          "steps": [
+            0.75,
+            0.75,
+            2.0,
+            2.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "evaluations": 97,
+          "cost": 0.08279152447367208,
+          "steps": [
+            0.75,
+            0.75,
+            2.0,
+            2.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "evaluations": 109,
+          "cost": 0.063403723424081,
+          "steps": [
+            0.75,
+            0.75,
+            2.0,
+            2.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "evaluations": 121,
+          "cost": 0.063403723424081,
+          "steps": [
+            0.75,
+            0.75,
+            2.0,
+            2.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "evaluations": 133,
+          "cost": 0.06246489919286257,
+          "steps": [
+            0.375,
+            0.375,
+            1.0,
+            1.0,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "evaluations": 145,
+          "cost": 0.06246489919286257,
+          "steps": [
+            0.375,
+            0.375,
+            1.0,
+            1.0,
+            1.5,
+            1.5
+          ]
+        }
+      ],
+      "budget": 400,
+      "active": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_hits": []
+    },
+    "heldout_before": 7.152809466766736,
+    "heldout_after": 0.13714184014810785
+  },
+  "synthetic_phase": [
+    {
+      "h": -1,
+      "before": 3.1141130481533694,
+      "after": 0.0,
+      "phase_correction": -0.28
+    },
+    {
+      "h": 1,
+      "before": 3.110842151667168,
+      "after": 0.0,
+      "phase_correction": -0.28
+    }
+  ],
+  "historical_integrity": "All hashes in immutable-inputs.json and old model versions checked by tests; no production review writes"
+}

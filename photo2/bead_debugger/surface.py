@@ -9,7 +9,7 @@ import hashlib, json
 from pathlib import Path
 import numpy as np
 from scipy.spatial import cKDTree
-from .models import load, model_version, RADIUS, ROOT, rays
+from .registry import load, model_version, RADIUS, ROOT, rays
 from .generate import sha
 from curved_surface_fit import sdf
 

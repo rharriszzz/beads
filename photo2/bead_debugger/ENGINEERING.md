@@ -1,3 +1,32 @@
+# R258 extension
+
+`refit.py`: absolute periodic planar cubic, compact curve/phase modes, exact-ray
+positive-footprint objective, unknown-identity matching, body/group holdout and
+physical regularization. The confirmed R258 B pixels are separate input evidence.
+`raycast.py`: dimension-parametric exact source annulus for sensitivity, regression
+checked against the existing tracer at source dimensions. `alternatives_r258.py`:
+matched counts/hands and phase starts. `compact_r258.py`: explicit post-hoc controls.
+`global_r258.py`: ten unanchored whole-curve modes fitted to distributed training.
+`audit_r258.py`, `report_r258.py`, `package_r258.py`: native neighbors, ablations,
+physical/index/occlusion sensitivity, curve assembly, clean plots and numerical tables.
+`test_refit.py`: inverse recovery, historical-input independence and additive reviews.
+
+`registry.py` dispatches new models while leaving `models.py` byte-unchanged. Old
+model version hashes therefore stay valid. The server and native Scene use the
+registry; old reviews/origins and generated detector observations are untouched.
+New models load on demand rather than tracing all alternatives at startup. Source
+hashes include new parameters and geometry code; native caches remain separate
+from the review store. No review migration or automatic fitting from user records.
+
+R258 polygon fields are optional additions to review records. Old backup schema1
+remains valid; imports retain all original fields and IDs. Polygon vertices are
+validated as finite native image coordinates. The browser stashes polygons with
+model-specific drafts and exports them together with geometry and native owners.
+Model switching retains the displayed address and viewport, never relabels history.
+
+[Full method, physical assumptions and unresolved limits](../BEAD_DRIVEN_R258.md).
+Earlier engineering records follow for provenance.
+
 # R257 engineering extension
 
 `surface.py`: analytic source-annulus normals; existing camera SDF marcher;

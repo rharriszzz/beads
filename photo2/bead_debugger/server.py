@@ -7,7 +7,7 @@ from urllib.parse import urlsplit,parse_qs
 from PIL import Image,ImageOps
 import numpy as np
 from .generate import ROOT,generate,sha
-from . import models
+from . import registry as models
 from .store import ReviewStore, Conflict
 from .detail import DetailService
 
@@ -23,6 +23,8 @@ class App:
         if regenerate or stale:
             print('Regenerating photo-only splines and interior candidates…',flush=True);generate(ROOT/'beads-photo-2.jpg',self.generated)
         self.manifest=json.loads(path.read_text());self.inventory=json.loads((self.generated/'observations.json').read_text());self.splines=json.loads((self.generated/'splines.json').read_text())
+        annotation=ROOT/'photo2/review/r258/bead2-reviewed-support.json'
+        self.reviewed_evidence=json.loads(annotation.read_text()) if annotation.exists() else None
         self.obs={r['id']:r for r in self.inventory['observations']};self.cache={};self.fft=None
         self.details=DetailService(self.work)
         self.reviews=ReviewStore(self.work/'reviews',self.manifest['image_sha256'])
@@ -40,6 +42,10 @@ class App:
         oid=record.get('observation_id')
         if oid is not None and oid not in self.obs: raise ValueError('Unknown fresh observation ID')
         if origin and not oid: raise ValueError('Select a fresh photographic observation for the new origin')
+        polygon=record.get('region_polygon',[])
+        if not isinstance(polygon,list) or len(polygon)>2000 or 0<len(polygon)<3:raise ValueError('Invalid region polygon')
+        for p in polygon:
+            if not isinstance(p,list) or len(p)!=2 or not all(type(x) in [int,float] and np.isfinite(x) for x in p) or not 0<=p[0]<self.photo.width or not 0<=p[1]<self.photo.height:raise ValueError('Invalid region vertex')
         for name in ['source_position','clicked_position']:
             p=record.get(name)
             if p is not None and (not isinstance(p,list) or len(p)!=2 or any(type(x) not in [int,float] for x in p) or not 0<=p[0]<self.photo.width or not 0<=p[1]<self.photo.height): raise ValueError('Image position outside original photograph')
@@ -69,7 +75,7 @@ def make_server(app,host='127.0.0.1',port=8767):
         def do_GET(self):
             try:
                 parsed=urlsplit(self.path);path=parsed.path;q=parse_qs(parsed.query)
-                if path=='/api/bootstrap':return self.send(dict(manifest=app.manifest,inventory=app.inventory,splines=app.splines,model_ids=models.IDS,reviews=app.reviews.read()))
+                if path=='/api/bootstrap':return self.send(dict(manifest=app.manifest,inventory=app.inventory,splines=app.splines,model_ids=models.IDS,reviewed_evidence=app.reviewed_evidence,reviews=app.reviews.read()))
                 if path=='/api/lighting':return self.send(app.details.lighting())
                 if path=='/api/surface':
                     key,future=app.details.submit(q['id'][0],int(q['gi'][0]),q['light'][0])
@@ -122,7 +128,7 @@ def make_server(app,host='127.0.0.1',port=8767):
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--port',type=int,default=8767);ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/debugger');ap.add_argument('--regenerate',action='store_true');ap.add_argument('--prepare-only',action='store_true')
     a=ap.parse_args();app=App(a.work,a.regenerate)
-    for mid in models.IDS:app.model(mid)
+    for mid in models.legacy_models.IDS:app.model(mid) # New fits load lazily; reviews untouched.
     if a.prepare_only:return
     server=make_server(app,port=a.port);print(f'Bead debugger: http://localhost:{server.server_port}\nReviews: {app.work / "reviews"}\nCtrl+C stops the server; saved reviews remain.',flush=True)
     try:server.serve_forever()

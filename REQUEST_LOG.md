@@ -6611,3 +6611,74 @@ no automatic global indexing or pattern campaign. Recommend GPT-6 Astra/High for
 scientific ambiguity, not a claim of new active-model status; /new before the next
 substantial inference round, unnecessary just to use the app. Scoped commit/push,
 exact remote tip and final clean-worktree checks finish the delivery.
+
+
+## R258 — user request: implemented bead-driven geometry (2026-10-11)
+
+User rejects historical centerline/edge splines as constraints, regularization
+targets or acceptance evidence. They may initialize/locate/display only. Implement
+source-annulus surface ownership fitting with coherent periodic physical geometry,
+starting k0–7 and ±1/6/7 neighbors; compare frozen A, phase B, curve C and joint D.
+Use fresh R256 pixels and independent reflection-on-dark evidence, preserve ambiguous
+splits/misses, keep physical-body and geographic holdouts, no R200/R252/maker-graph
+constraints. Maker explicitly identifies old review bead2 as yellow: roughly one-third
+of its visible area extends lower-left of the old cyan footprint; this is qualitative,
+not a segmentation. R257 dark/red interpretation is superseded as a color claim.
+
+Run distributed straight/bend/opposite/black cases, retain count2670–2700 and both
+helicities, physical regularization only, quantify alternatives and uncertainty.
+Update debugger additively with model switching preserving viewport, old/new indices,
+reference/new curves, ownership, region corrections and all reviews/exports. Keep
+lighting secondary. Validate exact source shape, occlusion, synthetic recovery from
+wrong initialization, closure/spacing and immutable historical artifacts. Deliver
+code, actual photographic fits, scientific report, clean images, numerical tables,
+parameters, tests and updated plan/handoff/log; commit/push this branch and verify
+remote tip and clean worktree. Do not substitute a proposal or unsupported global
+claim. No new active model/reasoning status supplied.
+
+### R258 Q1 maker response — mixed provisional mask rejected
+
+“Some marked pixels include a neighbor or background.” Applies to
+review/r258/bead2-support-question.png, the 49-pixel union, not the yellow color
+identification or the qualitative one-third statement. Withdraw the union as a
+bead2 fitting constraint and exclude its scores from improvement claims. Preserve
+the rejected illustration and ask a small A/B-group clarification; continue
+independent implementation/validation without using the rejected union.
+
+### R258 Q2 maker response — B only; exclude A
+
+“B only; exclude A.” Applies to review/r258/bead2-two-groups.png. Seven positive
+pixels in fresh proposal I256-eb7c9edb-R-1345-0340 now identify old review bead2,
+yellow per opening R258 evidence. Upper hooked group is excluded from bead2;
+its other identity/color is not established. This is a positive-pixel annotation,
+not a full visible boundary, exact one-third fraction or center. Save source ID,
+pixels and answer; rerun all primary fits with only B as the bead2 constraint.
+
+### R258 actual outcome — implementation and corrected-evidence experiments
+
+Delivered source-annulus first-hit surface fitter, absolute periodic physical curve,
+16 primary A/B/C/D regional fits,32 equal-budget count/hand/region alternatives,
+post-hoc C2/C4 controls, assembled curve and unanchored global/scale trial. No old
+curve/edge penalties, curve-relative parameter bounds or historical correspondence
+constraints. All final primary fits use only maker-confirmed B; rejected49-pixel
+union results are withdrawn. Seven confirmed yellow pixels go0/7→7/7 under C/C2/D,
+not B. C2 moves2.625px left/4.5px down; nearby heldout and fixed-neighbor regressions
+prevent adopting it. Distributed sections improve, but a fifth holdout is unchanged;
+global free modes find no improvement. Both hands/count hypotheses remain viable.
+
+Added28 debugger models, same-view switching, explicit index namespaces, original
+reference/fitted curves, ownership diagnostics, seven-pixel maker correction and
+review polygons/exports. Historical observations/models/production reviews are
+unchanged. Scientific report, raw/marked0–7 images, distributed comparisons, whole
+curves, residual/assignment/physical ledgers, reproducible parameters and hashes
+are tracked.29 Python tests,4 JavaScript contracts and74 Chromium checks pass.
+Wrong-initial-curve synthetic RMS8.315→.310px; full-body masks, hard contacts and
+independent body-level holdout remain limitations. No recovered global geometry,
+lighting, indexing or repeat pattern is claimed.
+
+Next: mark full yellow bead2 extent and reliable0/1/diagonal-neighbor support in
+the debugger; distinguish conditional correspondence/occlusion from deformation.
+Stop after scoped commit/push and exact remote/clean verification. Recommend
+GPT-6 Astra/High; no new active-model status supplied. `/new` before substantial
+further inference, unnecessary for debugger review. Local-only Sites skill and
+OpenAI Docs used; no subagents, hosting or messages to other accounts.

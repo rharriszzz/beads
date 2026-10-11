@@ -1,0 +1,27 @@
+{
+  "request": "R258",
+  "maker_evidence": {
+    "bead_index": 2,
+    "namespace": "old N2696_h+1_f0 review origin2162",
+    "color": "yellow",
+    "outside_fraction": "roughly one-third, lower-left; not a mask"
+  },
+  "questions": [
+    {
+      "id": "R258-Q1",
+      "image": "bead2-support-question.png",
+      "question": "Do the yellow-marked positive pixels belong to your bead2? A: all, B: some include a neighboring bead, C: wrong body. Please draw the visible body region in the debugger if its extent matters.",
+      "status": "answered",
+      "answer": "Some marked pixels include a neighbor or background",
+      "outcome": "Combined provisional support withdrawn from fitting and fit claims"
+    },
+    {
+      "id": "R258-Q2",
+      "image": "bead2-two-groups.png",
+      "question": "Which group is bead2: A upper hooked pixels, B lower horizontal pixels, both with contamination, or neither?",
+      "status": "answered",
+      "answer": "B only; exclude A",
+      "outcome": "Seven pixels from I256-eb7c9edb-R-1345-0340 confirmed positive bead2 support, color yellow per R258. Upper hooked group excluded from bead2."
+    }
+  ]
+}
