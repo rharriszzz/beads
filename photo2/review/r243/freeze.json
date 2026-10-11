@@ -1,0 +1,47 @@
+{
+  "time": "2026-10-11T04:19:24.712101+00:00",
+  "stage": "after controls and W1/W5 development; before reserved spectra and dense tracking",
+  "sources": {
+    "photo2/fft_explorer_core.py": "0d21148d837c59de881f393ed75d8cc233755e577e4048ea148895aa1117733b",
+    "photo2/fft_helicity.py": "6d45dbd63e3d5aa82578b7f58ed7fd643f13119640b97ffbab25ad83e1ce60aa",
+    "photo2/fft_helicity_controls.py": "2c6037c4f55a97a0ed1a602618ef99f404ccd83c22a4650b2d4f6d457b1f455f",
+    "photo2/test_fft_helicity.py": "ce30b496ef31e84512a04d0f22ec80454b46d9ca4675ba1840174e1a517583a8",
+    "photo2/review/r243/sampling.json": "b842703aadf10ce3a75f0d10131f50c88a965804a63c911ff665855432a4c41c",
+    "photo2/review/r243/controls-results.json": "a5bd852c209a7a8ce5757981e5971cffc79f0d60c6cbd02577638b6391095bcc",
+    "photo2/output/r243/development-windows.json": "3283802b55bbb402b1b79ef6940b716f3bf25ee103953ec9f3186001d0f15e00"
+  },
+  "parameters": {
+    "max_pairs": 6,
+    "prominence_min": 3.0,
+    "separation_resolution": 1.5,
+    "lobe_resolution": 1.25,
+    "angle_floor_deg": 3.0,
+    "radius_floor_fraction": 0.08,
+    "matching_cap": 4.0,
+    "unmatched": 4.0,
+    "track_gate": 3.0,
+    "track_gap": 2,
+    "sigma_radius": 1.0,
+    "low_d": 0.3333333333333333,
+    "high_d": 2.0,
+    "d_uncertainty_fraction": 0.2,
+    "tangent_uncertainty_deg": 5.0
+  },
+  "threshold_margin": 0.5,
+  "threshold_note": "Practical margin in uncertainty-scaled residual units, not probability. Control errors remain even above this margin; no automatic unique-hand claim.",
+  "parameter_tuning": "No spectral extraction parameter changes from the initial implementation. Camera parity corrected analytically before using controls. JSON serialization fix; no reserved spectra inspected.",
+  "controls_counts": 384,
+  "development_windows": [
+    "W1",
+    "W5"
+  ],
+  "reserved_windows": [
+    "W2",
+    "W3",
+    "W4",
+    "W6",
+    "W7",
+    "W8"
+  ],
+  "controls_failed_strict_gate": true
+}

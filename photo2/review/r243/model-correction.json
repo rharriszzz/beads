@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-11T04:22:51.798848+00:00",
+  "stage": "post-reserved audit, model-only correction",
+  "problem": "Changing world camera azimuth while recovering world tangent from image tangent is a gauge, not a change of image foreshortening axis.",
+  "correction": "Replace the four redundant world azimuth values with the same four image-roll values (0,45,90,135). Same elevation/rho/phase grids. Add explicit image-roll equivariance and nongauge regression test.",
+  "no_retuning": "All extracted peaks, raw spectra, samples, scales, channel settings, nuisance-grid sizes and score thresholds retained exactly; only geometric predictions/rescores changed. This is disclosed after inspection, not a fresh blind evaluation.",
+  "source_sha256": "e8f290712626046cc29f10164d03a23155d0f4432bf85ac40ffac8db2b974ddc"
+}

@@ -1,6 +1,36 @@
 # Beads session handoff — new branch
 
-## Current R242 — repository inspected; paired V/Y FFT plan awaiting review
+## Current R243 — authorized FFT experiment complete; review stop
+
+Read photo2/FFT_HELICITY.md and review/r243/summary.json. User authorized the R242
+plan after confirming add/commit/push; plan was already delivered as22aab8d.
+One bounded experiment: original V/Y channels, source Gaussian/radial/FFT machinery,
+8 fixed review sites x13 variants x2 channels,371 dense centers,12 matched render
+pairs with known hands. Actual extraction and phase checks reuse pinned source;
+tracking/model scores are new experimental code, not established capabilities.
+
+Persistent near0/+50/-45 degree reciprocal direction bands are visible. Both
+channels' primary scores favor source h+1 in5/6 reserved sites, but0/6 support a
+hand stably above the required margin. Known-camera mixed controls favor truth
+70/96(V),83/96(Y), with wrong strong preferences in both. No unique photo helicity.
+W3 Y opposes the majority; W8 V's strong primary advantage is unstable. Curvature,
+approximate scale/centerline, appearance and reciprocal assignments remain limits.
+
+Audit correction after reserved inspection: world azimuth was a gauge; replace
+with the same image-roll grid. All208 measured records/extraction functions stayed
+unchanged. Do not call final model evaluation untouched blind validation. Saved
+model-correction/extraction-audit records explain this. Yellow scale bars are rough
+diameter rulers, not exact single-bead endpoint measurements; original d preserved.
+Seven tests pass. Reproduction, source hashes and links are in report/verification.
+
+Stop after scoped commit/push and remote/clean-status verification. No segmentation
+extension, fusion, global optimization, indices or repeat inferred. Next review
+W3/W8 and V/Y control exemplars, then decide whether to validate reciprocal-family
+assignments in another small task. Carry forward recorded Astra/High recommendation
+without claiming this session's actual model; no /new needed for review. User
+controls model/session changes. No older unfinished task was resumed.
+
+## Prior R242 — repository inspected; paired V/Y FFT plan awaiting review
 
 Read current PLAN and the R242 section in photo2/FFT_EXPLORER_NOTES.md. New user
 instructions supersede R241: compare raw HSV Value and source Y luminance equally,

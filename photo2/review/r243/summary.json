@@ -1,0 +1,2252 @@
+{
+  "verdict": "Inconclusive: no unique photographic helicity established",
+  "parameters": {
+    "max_pairs": 6,
+    "prominence_min": 3.0,
+    "separation_resolution": 1.5,
+    "lobe_resolution": 1.25,
+    "angle_floor_deg": 3.0,
+    "radius_floor_fraction": 0.08,
+    "matching_cap": 4.0,
+    "unmatched": 4.0,
+    "track_gate": 3.0,
+    "track_gap": 2,
+    "sigma_radius": 1.0,
+    "low_d": 0.3333333333333333,
+    "high_d": 2.0,
+    "d_uncertainty_fraction": 0.2,
+    "tangent_uncertainty_deg": 5.0
+  },
+  "camera_choices_from_development": {
+    "V/-1": [
+      65,
+      135
+    ],
+    "V/1": [
+      85,
+      45
+    ],
+    "Y/-1": [
+      65,
+      45
+    ],
+    "Y/1": [
+      85,
+      0
+    ]
+  },
+  "camera_scores_from_development": {
+    "V/-1": [
+      {
+        "camera": [
+          45,
+          0
+        ],
+        "score": 1.0266169861884324
+      },
+      {
+        "camera": [
+          45,
+          45
+        ],
+        "score": 0.9654794162520437
+      },
+      {
+        "camera": [
+          45,
+          90
+        ],
+        "score": 1.3165406736061833
+      },
+      {
+        "camera": [
+          45,
+          135
+        ],
+        "score": 1.1792981356636145
+      },
+      {
+        "camera": [
+          65,
+          0
+        ],
+        "score": 0.7911542198118671
+      },
+      {
+        "camera": [
+          65,
+          45
+        ],
+        "score": 0.6335128604061724
+      },
+      {
+        "camera": [
+          65,
+          90
+        ],
+        "score": 0.8628922444371864
+      },
+      {
+        "camera": [
+          65,
+          135
+        ],
+        "score": 0.596440660720444
+      },
+      {
+        "camera": [
+          85,
+          0
+        ],
+        "score": 1.1297700914922248
+      },
+      {
+        "camera": [
+          85,
+          45
+        ],
+        "score": 1.1212921303091816
+      },
+      {
+        "camera": [
+          85,
+          90
+        ],
+        "score": 1.141539808813519
+      },
+      {
+        "camera": [
+          85,
+          135
+        ],
+        "score": 1.1012337113680215
+      }
+    ],
+    "V/1": [
+      {
+        "camera": [
+          45,
+          0
+        ],
+        "score": 0.9189892716016937
+      },
+      {
+        "camera": [
+          45,
+          45
+        ],
+        "score": 1.0352184937686328
+      },
+      {
+        "camera": [
+          45,
+          90
+        ],
+        "score": 0.912891873941178
+      },
+      {
+        "camera": [
+          45,
+          135
+        ],
+        "score": 1.1678354208365118
+      },
+      {
+        "camera": [
+          65,
+          0
+        ],
+        "score": 0.614653764933214
+      },
+      {
+        "camera": [
+          65,
+          45
+        ],
+        "score": 0.5877163011561646
+      },
+      {
+        "camera": [
+          65,
+          90
+        ],
+        "score": 0.6534764357426239
+      },
+      {
+        "camera": [
+          65,
+          135
+        ],
+        "score": 0.641107797815339
+      },
+      {
+        "camera": [
+          85,
+          0
+        ],
+        "score": 0.38553181811100334
+      },
+      {
+        "camera": [
+          85,
+          45
+        ],
+        "score": 0.37690787320119357
+      },
+      {
+        "camera": [
+          85,
+          90
+        ],
+        "score": 0.40602527918065545
+      },
+      {
+        "camera": [
+          85,
+          135
+        ],
+        "score": 0.38033350890477247
+      }
+    ],
+    "Y/-1": [
+      {
+        "camera": [
+          45,
+          0
+        ],
+        "score": 0.9644867975040452
+      },
+      {
+        "camera": [
+          45,
+          45
+        ],
+        "score": 0.9601306897320516
+      },
+      {
+        "camera": [
+          45,
+          90
+        ],
+        "score": 1.3064168760328725
+      },
+      {
+        "camera": [
+          45,
+          135
+        ],
+        "score": 1.1019640446123784
+      },
+      {
+        "camera": [
+          65,
+          0
+        ],
+        "score": 0.7806410242172426
+      },
+      {
+        "camera": [
+          65,
+          45
+        ],
+        "score": 0.6801369322989406
+      },
+      {
+        "camera": [
+          65,
+          90
+        ],
+        "score": 1.0085814593821325
+      },
+      {
+        "camera": [
+          65,
+          135
+        ],
+        "score": 0.7142119779644246
+      },
+      {
+        "camera": [
+          85,
+          0
+        ],
+        "score": 1.1566757925533693
+      },
+      {
+        "camera": [
+          85,
+          45
+        ],
+        "score": 1.1517097143475603
+      },
+      {
+        "camera": [
+          85,
+          90
+        ],
+        "score": 1.1797247178374364
+      },
+      {
+        "camera": [
+          85,
+          135
+        ],
+        "score": 1.1362944988585701
+      }
+    ],
+    "Y/1": [
+      {
+        "camera": [
+          45,
+          0
+        ],
+        "score": 1.0022653986048358
+      },
+      {
+        "camera": [
+          45,
+          45
+        ],
+        "score": 0.9386744903554898
+      },
+      {
+        "camera": [
+          45,
+          90
+        ],
+        "score": 0.825971964446879
+      },
+      {
+        "camera": [
+          45,
+          135
+        ],
+        "score": 1.0086782965592125
+      },
+      {
+        "camera": [
+          65,
+          0
+        ],
+        "score": 0.6823441021309191
+      },
+      {
+        "camera": [
+          65,
+          45
+        ],
+        "score": 0.6629288262027786
+      },
+      {
+        "camera": [
+          65,
+          90
+        ],
+        "score": 0.6923112968592355
+      },
+      {
+        "camera": [
+          65,
+          135
+        ],
+        "score": 0.6398535477563043
+      },
+      {
+        "camera": [
+          85,
+          0
+        ],
+        "score": 0.4969500179118581
+      },
+      {
+        "camera": [
+          85,
+          45
+        ],
+        "score": 0.5063203073823727
+      },
+      {
+        "camera": [
+          85,
+          90
+        ],
+        "score": 0.5679066978262882
+      },
+      {
+        "camera": [
+          85,
+          135
+        ],
+        "score": 0.5278588926577826
+      }
+    ]
+  },
+  "windows": [
+    {
+      "window": "W1",
+      "channel": "V",
+      "split": "development",
+      "s": 0.0,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.7225986217185888,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 1.3234822936903552
+            },
+            {
+              "family": 6,
+              "candidate": 4,
+              "residual": 0.5108264163719096
+            },
+            {
+              "family": 7,
+              "candidate": 3,
+              "residual": 0.3334871550935019
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.5249457869013008,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 0.7449824138153064
+            },
+            {
+              "family": 6,
+              "candidate": 3,
+              "residual": 0.5591961923081229
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 0.27065875458047295
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.19765283481728801,
+      "sensitivity_gap_range": [
+        0.1433773568450698,
+        0.28742129231061087
+      ],
+      "shared_camera_gap_range": [
+        -0.3014538569080192,
+        0.7226436225402982
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 0.8333333333333334
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.5
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W1",
+      "channel": "Y",
+      "split": "development",
+      "s": 0.0,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.7730507872839681,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 1.0680055214359983
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.8802352962072182
+            },
+            {
+              "family": 7,
+              "candidate": 1,
+              "residual": 0.370911544208688
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.6006834458061423,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 0.6773660324739845
+            },
+            {
+              "family": 6,
+              "candidate": 1,
+              "residual": 0.5775988792355129
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.5470854257089295
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.17236734147782584,
+      "sensitivity_gap_range": [
+        0.08385491616426954,
+        0.25389848018929023
+      ],
+      "shared_camera_gap_range": [
+        -0.15050292439849078,
+        0.7792534832279759
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 4,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.8333333333333334
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W2",
+      "channel": "V",
+      "split": "reserved",
+      "s": 1154.4483486794259,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.7798255940681368,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.7591120618807926
+            },
+            {
+              "family": 6,
+              "candidate": 6,
+              "residual": 1.1830479152116893
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.39731680511192874
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.5277729227590783,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.29298596530056614
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.1736742449955421
+            },
+            {
+              "family": 7,
+              "candidate": 6,
+              "residual": 1.1166585579811268
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.2520526713090585,
+      "sensitivity_gap_range": [
+        -0.008779908355064148,
+        0.37272408989076844
+      ],
+      "shared_camera_gap_range": [
+        -0.12043329471762321,
+        0.5447420886371872
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.8333333333333334
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.75
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W2",
+      "channel": "Y",
+      "split": "reserved",
+      "s": 1154.4483486794259,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 1.0057942641525845,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 1.3668199465094573
+            },
+            {
+              "family": 6,
+              "candidate": 5,
+              "residual": 1.5012135900289858
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.14934925591931078
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 4.0,
+          "phase": 0,
+          "score": 0.5173952981918438,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.35986230559072024
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.7094904949219398
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 0.48283309406287167
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.4883989659607407,
+      "sensitivity_gap_range": [
+        0.19362146451588547,
+        0.5555629588867537
+      ],
+      "shared_camera_gap_range": [
+        0.04825518222145608,
+        0.4946983328326787
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.9166666666666666
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W3",
+      "channel": "V",
+      "split": "reserved",
+      "s": 2308.8966973588517,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": 0,
+          "score": 0.8477319270236734,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 6,
+              "residual": 1.6324348390256227
+            },
+            {
+              "family": 6,
+              "candidate": 5,
+              "residual": 0.7135852078486319
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 0.1971757341967655
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.7770273599612573,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 6,
+              "residual": 0.9967588229496133
+            },
+            {
+              "family": 6,
+              "candidate": 4,
+              "residual": 0.14004101268137237
+            },
+            {
+              "family": 7,
+              "candidate": 5,
+              "residual": 1.194282244252786
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.07070456706241612,
+      "sensitivity_gap_range": [
+        -0.49508809642611035,
+        0.3611640755407949
+      ],
+      "shared_camera_gap_range": [
+        -0.03456070985925719,
+        0.10804269623052898
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.9166666666666666
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W3",
+      "channel": "Y",
+      "split": "reserved",
+      "s": 2308.8966973588517,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 0,
+          "score": 0.47096335134453504,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 6,
+              "residual": 0.5396223241082887
+            },
+            {
+              "family": 6,
+              "candidate": 5,
+              "residual": 0.39589208463135384
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 0.4773756452939627
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.9260361969370571,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 6,
+              "residual": 1.4308388455654069
+            },
+            {
+              "family": 6,
+              "candidate": 4,
+              "residual": 0.11197514521887914
+            },
+            {
+              "family": 7,
+              "candidate": 5,
+              "residual": 1.235294600026885
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": -0.45507284559252204,
+      "sensitivity_gap_range": [
+        -0.5948991208452263,
+        -0.027481696217529716
+      ],
+      "shared_camera_gap_range": [
+        -0.6649487933756144,
+        0.01373524807824178
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.8333333333333334
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W4",
+      "channel": "V",
+      "split": "reserved",
+      "s": 3463.3450460382774,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 4.0,
+          "phase": 25,
+          "score": 1.054228636638319,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 4,
+              "residual": 0.5532473433613696
+            },
+            {
+              "family": 6,
+              "candidate": 6,
+              "residual": 1.1676690688914422
+            },
+            {
+              "family": 7,
+              "candidate": 3,
+              "residual": 1.4417694976621445
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 4.0,
+          "phase": 0,
+          "score": 0.6516751278216724,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 4,
+              "residual": 0.06280674004585907
+            },
+            {
+              "family": 6,
+              "candidate": 3,
+              "residual": 0.9930847945125835
+            },
+            {
+              "family": 7,
+              "candidate": 6,
+              "residual": 0.8991338489065747
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.40255350881664653,
+      "sensitivity_gap_range": [
+        0.22043278215176676,
+        0.40255350881664687
+      ],
+      "shared_camera_gap_range": [
+        0.048863344428390576,
+        0.6617163036884645
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.5
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W4",
+      "channel": "Y",
+      "split": "reserved",
+      "s": 3463.3450460382774,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 1.1513998215781531,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.9473216381295392
+            },
+            {
+              "family": 6,
+              "candidate": 1,
+              "residual": 2.176151785501836
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.33072604110308423
+            }
+          ],
+          "resolved": 2
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.9653927216520591,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.11969308735700322
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.5701091716902551
+            },
+            {
+              "family": 7,
+              "candidate": 1,
+              "residual": 2.2063759059089194
+            }
+          ],
+          "resolved": 2
+        }
+      },
+      "gap": 0.186007099926094,
+      "sensitivity_gap_range": [
+        -0.014552434079328602,
+        0.186007099926094
+      ],
+      "shared_camera_gap_range": [
+        -0.1183986969252877,
+        0.347960388448166
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.75
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.6666666666666666
+        }
+      ],
+      "all_three_under_both_hands": false,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W5",
+      "channel": "V",
+      "split": "development",
+      "s": 4617.793394717703,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.4702826997222993,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.447576721686031
+            },
+            {
+              "family": 6,
+              "candidate": 4,
+              "residual": 0.5902019836358436
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.37306939384502324
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.22886995950108635,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.12455293049575769
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.14875947962330316
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 0.4132974683841983
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.24141274022121295,
+      "sensitivity_gap_range": [
+        0.15571454926735262,
+        0.25751279367637997
+      ],
+      "shared_camera_gap_range": [
+        -0.2422685912885435,
+        0.8750177995386563
+      ],
+      "stable_peak_count": 4,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.6666666666666666
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.6666666666666666
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W5",
+      "channel": "Y",
+      "split": "development",
+      "s": 4617.793394717703,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.5872230773139131,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.6585750989610837
+            },
+            {
+              "family": 6,
+              "candidate": 4,
+              "residual": 0.763023020238355
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.3400711127423007
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.393216590017574,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.14172216260325915
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.5827496704156808
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 0.455177937033782
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.19400648729633913,
+      "sensitivity_gap_range": [
+        0.1445597662231724,
+        0.259419388002438
+      ],
+      "shared_camera_gap_range": [
+        -0.17228189335833877,
+        0.6135275106555804
+      ],
+      "stable_peak_count": 4,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.5
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.25
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W6",
+      "channel": "V",
+      "split": "reserved",
+      "s": 5772.2417433971295,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 1.1762591599192185,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 6,
+              "residual": 0.36597295936120183
+            },
+            {
+              "family": 6,
+              "candidate": 1,
+              "residual": 2.8952174603961596
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.2675870600002944
+            }
+          ],
+          "resolved": 2
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 1.2084160295797746,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 6,
+              "residual": 0.2469809520251682
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.5013258464920575
+            },
+            {
+              "family": 7,
+              "candidate": 1,
+              "residual": 2.876941290222098
+            }
+          ],
+          "resolved": 2
+        }
+      },
+      "gap": -0.03215686966055609,
+      "sensitivity_gap_range": [
+        -0.3121398120270138,
+        0.02621778283050402
+      ],
+      "shared_camera_gap_range": [
+        -0.14135018301824043,
+        0.384600856432997
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 0.8333333333333334
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.8333333333333334
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.8333333333333334
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.75
+        }
+      ],
+      "all_three_under_both_hands": false,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W6",
+      "channel": "Y",
+      "split": "reserved",
+      "s": 5772.2417433971295,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 1.3547312025029585,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 0.5477443328423808
+            },
+            {
+              "family": 6,
+              "candidate": 1,
+              "residual": 3.19668920689768
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.31976006776881516
+            }
+          ],
+          "resolved": 2
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 1.2321997637439135,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 0.175109778814518
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.4183040000490775
+            },
+            {
+              "family": 7,
+              "candidate": 1,
+              "residual": 3.103185512368145
+            }
+          ],
+          "resolved": 2
+        }
+      },
+      "gap": 0.12253143875904504,
+      "sensitivity_gap_range": [
+        -0.2032663668469643,
+        0.22654694518934915
+      ],
+      "shared_camera_gap_range": [
+        -0.1870971546082394,
+        0.2687300621834008
+      ],
+      "stable_peak_count": 6,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.75
+        }
+      ],
+      "all_three_under_both_hands": false,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W7",
+      "channel": "V",
+      "split": "reserved",
+      "s": 6926.690092076555,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.5685656966581036,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 0.5304417083428447
+            },
+            {
+              "family": 6,
+              "candidate": 6,
+              "residual": 0.6400530948296158
+            },
+            {
+              "family": 7,
+              "candidate": 2,
+              "residual": 0.5352022868018504
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.22071771608992444,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 5,
+              "residual": 0.16071568049769283
+            },
+            {
+              "family": 6,
+              "candidate": 2,
+              "residual": 0.18199620562744187
+            },
+            {
+              "family": 7,
+              "candidate": 6,
+              "residual": 0.3194412621446386
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.3478479805681792,
+      "sensitivity_gap_range": [
+        0.15089485849935186,
+        0.35898598613279276
+      ],
+      "shared_camera_gap_range": [
+        -0.2561876154325811,
+        0.745759549609321
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.4166666666666667
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 1.0
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W7",
+      "channel": "Y",
+      "split": "reserved",
+      "s": 6926.690092076555,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.5652547050455067,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.7795978135112439
+            },
+            {
+              "family": 6,
+              "candidate": 5,
+              "residual": 0.7145057453153718
+            },
+            {
+              "family": 7,
+              "candidate": 1,
+              "residual": 0.20166055630990437
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 0.21742352751104446,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 3,
+              "residual": 0.15383523183377779
+            },
+            {
+              "family": 6,
+              "candidate": 1,
+              "residual": 0.1756281787430735
+            },
+            {
+              "family": 7,
+              "candidate": 5,
+              "residual": 0.32280717195628217
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 0.34783117753446224,
+      "sensitivity_gap_range": [
+        0.3055012341643703,
+        0.4631980150866103
+      ],
+      "shared_camera_gap_range": [
+        -0.2561876154325811,
+        0.745759549609321
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.9166666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.6666666666666666
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W8",
+      "channel": "V",
+      "split": "reserved",
+      "s": 8081.138440755981,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 135,
+          "rho": 6.1109157489,
+          "phase": -25,
+          "score": 1.5489233550770043,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 2,
+              "residual": 1.9957286875446274
+            },
+            {
+              "family": 6,
+              "candidate": 3,
+              "residual": 1.2166351095510144
+            },
+            {
+              "family": 7,
+              "candidate": 4,
+              "residual": 1.434406268135371
+            }
+          ],
+          "resolved": 3
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 0.49865680513242827,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 2,
+              "residual": 0.3663538732145318
+            },
+            {
+              "family": 6,
+              "candidate": 4,
+              "residual": 0.6911647847005822
+            },
+            {
+              "family": 7,
+              "candidate": 3,
+              "residual": 0.4384517574821709
+            }
+          ],
+          "resolved": 3
+        }
+      },
+      "gap": 1.050266549944576,
+      "sensitivity_gap_range": [
+        -0.13541100005080242,
+        1.050266549944576
+      ],
+      "shared_camera_gap_range": [
+        -0.4153083368014264,
+        0.9550595361312919
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.6666666666666666
+        },
+        {
+          "candidate": 5,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.9166666666666666
+        }
+      ],
+      "all_three_under_both_hands": true,
+      "support": "ambiguous"
+    },
+    {
+      "window": "W8",
+      "channel": "Y",
+      "split": "reserved",
+      "s": 8081.138440755981,
+      "candidate_count": 6,
+      "fits": {
+        "-1": {
+          "hand": -1,
+          "elevation": 65,
+          "roll": 45,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 1.6511269339348125,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 2,
+              "residual": 0.3996717772093692
+            },
+            {
+              "family": 6,
+              "candidate": 3,
+              "residual": 0.5537090245950678
+            }
+          ],
+          "resolved": 2
+        },
+        "1": {
+          "hand": 1,
+          "elevation": 85,
+          "roll": 0,
+          "rho": 6.1109157489,
+          "phase": 25,
+          "score": 1.6365404086133089,
+          "matches": [
+            {
+              "family": 1,
+              "candidate": 2,
+              "residual": 0.4393703591861849
+            },
+            {
+              "family": 7,
+              "candidate": 3,
+              "residual": 0.47025086665374155
+            }
+          ],
+          "resolved": 2
+        }
+      },
+      "gap": 0.014586525321503618,
+      "sensitivity_gap_range": [
+        -0.17229125070653506,
+        0.12769055707352983
+      ],
+      "shared_camera_gap_range": [
+        -0.12381286744523479,
+        0.7169555278914095
+      ],
+      "stable_peak_count": 5,
+      "peak_stability": [
+        {
+          "candidate": 1,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 2,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 3,
+          "fraction": 1.0
+        },
+        {
+          "candidate": 4,
+          "fraction": 0.75
+        },
+        {
+          "candidate": 5,
+          "fraction": 0.8333333333333334
+        },
+        {
+          "candidate": 6,
+          "fraction": 0.5833333333333334
+        }
+      ],
+      "all_three_under_both_hands": false,
+      "support": "ambiguous"
+    }
+  ],
+  "reserved": {
+    "V": {
+      "reserved_primary_plus": 5,
+      "reserved_primary_minus": 1,
+      "robust_plus": 0,
+      "robust_minus": 0,
+      "shared_camera_mean_gaps": [
+        {
+          "camera": [
+            45,
+            0
+          ],
+          "gap": 0.01719179910245915
+        },
+        {
+          "camera": [
+            45,
+            45
+          ],
+          "gap": 0.11152810433051656
+        },
+        {
+          "camera": [
+            45,
+            90
+          ],
+          "gap": 0.03524404499417594
+        },
+        {
+          "camera": [
+            45,
+            135
+          ],
+          "gap": 0.2374715241951185
+        },
+        {
+          "camera": [
+            65,
+            0
+          ],
+          "gap": 0.12784414727684498
+        },
+        {
+          "camera": [
+            65,
+            45
+          ],
+          "gap": 0.1321960190107835
+        },
+        {
+          "camera": [
+            65,
+            90
+          ],
+          "gap": 0.1363816881572133
+        },
+        {
+          "camera": [
+            65,
+            135
+          ],
+          "gap": 0.14791064628956616
+        },
+        {
+          "camera": [
+            85,
+            0
+          ],
+          "gap": 0.5414843244904515
+        },
+        {
+          "camera": [
+            85,
+            45
+          ],
+          "gap": 0.5342318639473976
+        },
+        {
+          "camera": [
+            85,
+            90
+          ],
+          "gap": 0.5086068766855599
+        },
+        {
+          "camera": [
+            85,
+            135
+          ],
+          "gap": 0.4956245398106933
+        }
+      ]
+    },
+    "Y": {
+      "reserved_primary_plus": 5,
+      "reserved_primary_minus": 1,
+      "robust_plus": 0,
+      "robust_minus": 0,
+      "shared_camera_mean_gaps": [
+        {
+          "camera": [
+            45,
+            0
+          ],
+          "gap": -0.041910794490158935
+        },
+        {
+          "camera": [
+            45,
+            45
+          ],
+          "gap": 0.07359999565239737
+        },
+        {
+          "camera": [
+            45,
+            90
+          ],
+          "gap": -0.022640234561270473
+        },
+        {
+          "camera": [
+            45,
+            135
+          ],
+          "gap": -0.0025783170269698306
+        },
+        {
+          "camera": [
+            65,
+            0
+          ],
+          "gap": 0.07647561419732819
+        },
+        {
+          "camera": [
+            65,
+            45
+          ],
+          "gap": 0.05485862022628455
+        },
+        {
+          "camera": [
+            65,
+            90
+          ],
+          "gap": 0.06837821453465207
+        },
+        {
+          "camera": [
+            65,
+            135
+          ],
+          "gap": -0.03651423426343059
+        },
+        {
+          "camera": [
+            85,
+            0
+          ],
+          "gap": 0.3142707867391719
+        },
+        {
+          "camera": [
+            85,
+            45
+          ],
+          "gap": 0.32232554578628475
+        },
+        {
+          "camera": [
+            85,
+            90
+          ],
+          "gap": 0.23752104261581816
+        },
+        {
+          "camera": [
+            85,
+            135
+          ],
+          "gap": 0.21819199397604505
+        }
+      ]
+    }
+  },
+  "controls": [
+    {
+      "appearance": "uniform",
+      "perspective": false,
+      "channel": "V",
+      "count": 48,
+      "correct": 44,
+      "confident_count": 0,
+      "confident_wrong": 0,
+      "median_absolute_gap": 0.4289950380858141
+    },
+    {
+      "appearance": "uniform",
+      "perspective": false,
+      "channel": "Y",
+      "count": 48,
+      "correct": 44,
+      "confident_count": 1,
+      "confident_wrong": 0,
+      "median_absolute_gap": 0.4271759914542075
+    },
+    {
+      "appearance": "uniform",
+      "perspective": true,
+      "channel": "V",
+      "count": 48,
+      "correct": 43,
+      "confident_count": 2,
+      "confident_wrong": 0,
+      "median_absolute_gap": 0.42744832811902134
+    },
+    {
+      "appearance": "uniform",
+      "perspective": true,
+      "channel": "Y",
+      "count": 48,
+      "correct": 42,
+      "confident_count": 1,
+      "confident_wrong": 0,
+      "median_absolute_gap": 0.42920094122338237
+    },
+    {
+      "appearance": "mixed",
+      "perspective": false,
+      "channel": "V",
+      "count": 48,
+      "correct": 38,
+      "confident_count": 6,
+      "confident_wrong": 0,
+      "median_absolute_gap": 0.197631127813928
+    },
+    {
+      "appearance": "mixed",
+      "perspective": false,
+      "channel": "Y",
+      "count": 48,
+      "correct": 42,
+      "confident_count": 3,
+      "confident_wrong": 0,
+      "median_absolute_gap": 0.2783163147430028
+    },
+    {
+      "appearance": "mixed",
+      "perspective": true,
+      "channel": "V",
+      "count": 48,
+      "correct": 32,
+      "confident_count": 4,
+      "confident_wrong": 1,
+      "median_absolute_gap": 0.17625432901523408
+    },
+    {
+      "appearance": "mixed",
+      "perspective": true,
+      "channel": "Y",
+      "count": 48,
+      "correct": 41,
+      "confident_count": 3,
+      "confident_wrong": 1,
+      "median_absolute_gap": 0.2572979523238569
+    }
+  ],
+  "tracking": {
+    "V": {
+      "windows": 371,
+      "failed": 0,
+      "candidates": 2224,
+      "tracks": 201,
+      "tracks_length_at_least5": 97,
+      "ambiguous_links": 1252,
+      "median_track_length": 4.0,
+      "max_track_length": 116
+    },
+    "Y": {
+      "windows": 371,
+      "failed": 0,
+      "candidates": 2224,
+      "tracks": 183,
+      "tracks_length_at_least5": 90,
+      "ambiguous_links": 1255,
+      "median_track_length": 4.0,
+      "max_track_length": 115
+    }
+  },
+  "gate": "Fail: known-camera controls include wrong strong preferences; photograph support is sensitive to candidate/projection alternatives.",
+  "claims": "No bead centers, full indices, camera calibration, recovered sequence or general automatic reconstruction."
+}

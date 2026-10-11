@@ -5421,3 +5421,79 @@ needed for this prose-only step. Commit/push scoped docs, verify exact remote ti
 and clean status, then stop. Next is user review before authorized adapter/control
 implementation. Retain recorded Astra/High recommendation without claiming this
 new session's active model; no /new needed for review. User controls switching.
+
+## R243 — Authorize and deliver bounded paired V/Y FFT helicity experiment
+
+User asks to add/commit/push first if not already done, then perform the proposed
+experiment. Confirmed R242 plan already delivered at22aab8d149efadd4a87a06fda450879ea3c05bbc;
+local/upstream/remote matched. Preflight daisy, photo-2-strategy-v3, clean, no stashes.
+Implementation and final scoped commit/push are now authorized. No older unfinished
+segmentation/indexing task resumed. No subagents used.
+
+Reused twelve unchanged numerical definitions from fft-image-explorer2caf070 in
+fft_explorer_core.py with source attribution and AST equality test. Added headless
+experiment, matched POV-Ray controls, reporting and seven tests. DC exclusion and
+candidate qualification prevent source top-k fallback from manufacturing resolved
+families; physical pair power is distinct from legacy summed log magnitude.
+Inverse coefficients preserve phase and correct integer-grid coordinates. Source
+beads.pov macro/placement/parameters supply synthetic geometry for both hands.
+
+Eight sites fixed from equal image arc length before FFTs; W1/W5 development and
+six reserved. Raw crop/whole-photo evidence saved. Radius43.1–57.1px from existing
+boundary guides; approximate bead scale32/34px with20% uncertainty. Yellow scale
+rulers are explicitly not exact single-bead boundary endpoints; annotation review
+found some cross neighboring surfaces, and original d values remain unchanged.
+No spline or broad segmentation refinement. Original RGB, V=maxRGB, source Y,
+sigma=radius, band1/(3d)..2/d,13 predefined configurations produce208 channel records.
+Dense24.89px spacing produces371 centers/742 channel-windows. Up to6 qualified pairs,
+short-gap direction/frequency tracking with ambiguous links; no loop/index closure.
+
+Twelve matched known-hand render pairs (24 images) span elevations45/65/85,
+orthographic/perspective, uniform/mixed pigments and two phase/light conditions,
+with8 orientations per image and both channels (384 channel-windows). Raw source
+camera-axis parity checked before interpreting controls. Known-camera correct-hand
+preferences: uniform87/96(V),86/96(Y); mixed70/96(V),83/96(Y). Correlated windows,
+not independent photo accuracy. Mixed perspective includes one wrong preference
+above practical0.5 margin per channel. Saved examples favor either channel; no
+fusion or color normalization extension. Renders are diagnostic appearance,
+not recovered material/camera/phase of the photograph.
+
+Initial extraction froze after controls and two development windows, before
+reserved/dense spectra. Post-reserved audit found world-camera azimuth was a gauge
+instead of changing image foreshortening; corrected the same4 values to image roll,
+added regression test and rescored. Explicit model-correction/extraction-audit
+records preserve timing and limits. All208 measured records and sample/analyze/
+inverse/score/track/variant functions remain unchanged. Final comparison is not
+claimed untouched blind validation. Routine serialization/cache/reporting fixes
+are separate from spectral tuning; no extraction parameter tuning occurred.
+
+Final outcome: persistent near0,+50,-45 degree reciprocal direction bands, but
+ambiguous physical-family labels and no unique photo helicity. Both channels favor
+source h+1 in5/6 primary reserved comparisons;0/6 retain required margin under all
+perturbations. W3 Y opposes the majority; W8 V's strong primary score is unstable.
+V201/Y183 tracks, median length4,1252/1255 ambiguous associations; continuity alone
+is not truth. Camera alternatives and W3/W6 curvature13.5/17.3deg within sigma add
+uncertainty. Neither strong-three selection nor rendered model matches resolve
+all reciprocal/harmonic/visibility ambiguity. No bead centers, full indices, count,
+pattern, calibrated camera, global optimization or general reconstruction claimed.
+
+Nested EXIF identifies iPhone11 Pro back triple4.25mm f/1.8, zoom1.96875 and51mm
+reported equivalent. Unknown crop/distance prevents treating these as intrinsics.
+Retain metadata subset, source hashes, all candidate frequencies/angles/strengths,
+conditional assignments, alternative tracks, direct-angle branches, raw/windowed
+V/Y, marked spectra, each pair's inverse and sensitivity/both-hand plots. Curated
+bundle photo2/review/r243; routine model-bank JSON and render outputs stay ignored.
+Report photo2/FFT_HELICITY.md contains commands and all evidence links.
+
+Seven numerical/source/geometry/tracking tests pass. Full photo analysis and
+report rerun:31 regenerated artifacts byte-identical,6 retained overview/control
+figures unchanged;37 artifacts compared in total. All208 measurement records
+match before/after the model-only correction. Photograph, beads.pov, spline seed,
+provenance and prior maker bend answer hash-identical to22aab8d. Relative report
+links and whitespace checked. Verification records final code hashes and environment.
+Plan/handoff/method index/FFT notes updated. Commit/push scoped experiment and docs,
+verify remote tip and clean status, then stop for review as requested. Next concrete
+task: review W3/W8 and opposite-channel control examples, then decide whether a
+small reciprocal-family validation is worthwhile. Carry forward recorded
+Astra/High recommendation without identifying this session's active model;
+no /new needed for review, consider /new before another implementation.

@@ -26,6 +26,17 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
+See also the implemented [R243 paired V/Y Gaussian FFT experiment](photo2/FFT_HELICITY.md):
+input native RGB plus an approximate image-derived centerline and assisted scale
+guides; output noncentral conjugate candidates, phase-preserving reconstructions,
+short-gap tracks and conditional both-hand reciprocal-model comparisons. Reuses
+pinned explorer numerical functions. Fixed raw locations and matched channel/
+sensitivity settings; source parity and known-hand POV-Ray controls. Persistent
+directions do not establish1/6/7 labels or helicity: photo sensitivity gate fails,
+mixed-color controls have errors, and projection/assignment alternatives remain.
+The report documents a post-reserved model-coordinate correction and reproduction.
+No automatic centerline/scale, photo bead indices or generality claim.
+
 **R208 transfer:** [Parallel traces, evidence and owner counterexamples](photo2/PARALLEL_PROFILE_CUES.md).
 Measure five local strips per existing interior, oriented by an image-derived
 axis. Use encoded RGB-before-HSV, circular side means weighted by chroma and

@@ -1,5 +1,17 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R243 — authorized experiment completed
+
+[Implementation, quantitative results, figures and reproduction](FFT_HELICITY.md).
+R242 was authorized and run: matched raw V/Y at8 review sites and371 dense centers,
+13 fixed configurations,24 known-hand renders. Persistent reciprocal directions
+are visible, but no unique photo helicity survives sensitivity/projection checks.
+Both channels favor h+1 in5/6 primary reserved comparisons;0/6 robust sections.
+Mixed known-camera controls favor truth70/96(V),83/96(Y), with individual advantages
+for either channel. No fusion or scope expansion. A disclosed post-reserved model
+correction replaces redundant world azimuth with image roll; all measurements and
+extraction functions remain unchanged. Stop for review of W3/W8 and control examples.
+
 ## R242 — paired V/Y local FFT helicity plan; awaiting review
 
 This proposal supersedes R241's Value-only/eight-window implementation plan.

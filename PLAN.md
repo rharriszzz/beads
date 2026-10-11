@@ -1,6 +1,27 @@
 # Photo-2 reconstruction plan
 
-## Current R242 — paired V/Y FFT helicity plan; review stop
+## Current R243 — bounded V/Y FFT experiment completed; helicity unresolved
+
+User authorized implementation and commit/push after the R242 plan was already
+delivered at22aab8d. [Results and all evidence](photo2/FFT_HELICITY.md).
+Reused pinned explorer numerical code;8 fixed review sites,208 paired-channel/
+configuration measurements,371 dense centers,24 matched known-hand POV-Ray images.
+Both channels favor source h=+1 in5/6 reserved primary comparisons, but0/6 retain
+the required margin across perturbations. Opposite hand remains plausible.
+Mixed-control correct preferences: V70/96, Y83/96 (known camera, correlated windows).
+Persistent directions are useful; peak/family and camera ambiguity prevent a hand
+claim. No channel fusion, segmentation, global optimization/indexing or pattern work.
+
+Post-reserved audit corrected redundant world azimuth to image roll in the model
+comparison; same grid sizes, all208 measured records/extraction functions unchanged.
+Correction and raw-scale ruler limitations are explicit. Seven tests pass; preserve
+reproduction/source checks and all failure evidence. Commit/push scoped experiment
+and workflow records, verify exact remote tip/clean status, then stop for review.
+Next: review W3/W8 and the opposite-channel control examples before deciding on
+a small reciprocal-family validation task. Carry forward recorded Astra/High
+recommendation; actual session model not identified. No /new needed for review.
+
+## Prior R242 — paired V/Y FFT helicity plan; review stop
 
 New-session request supersedes the older Value-only plan. Actual implementations
 and saved data in fft-image-explorer inspected at remote-confirmed2caf070; see
