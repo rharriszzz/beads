@@ -6181,3 +6181,124 @@ consider constrained centerline changes. No repeat recovery or automatic next
 aspect. Recommend GPT-6 Astra / High and /new before that implementation; no
 new active-model status supplied. Commit/push scoped work and verify exact
 remote/clean state before claiming delivery.
+
+## R254 — Joint repeating-pattern and geometric-index investigation
+
+User authorizes a substantial bounded implementation beginning at R253 commit
+1529674 on photo-2-strategy-v3. Begin pattern recovery now alongside constrained
+camera/identity refinement, overriding R253's instruction to defer repetition.
+Preserve all 310 trusted R252 red/yellow observations, their source IDs and physical
+identities. Model-calculated positions are deterministic for a fixed hypothesis;
+uncertainty belongs to hypotheses, correspondence, visibility and color evidence.
+
+Exhaustively diagnose P=1..399 for the six selected R253 mappings, extend to useful
+count/helicity alternatives, reproduce order-independent minimal contradictory
+assignments (13 at P309 for N2671_h+1_both; 11 at P310 for N2679_h-1_twist), preserve
+all admissible alternatives and unknown template slots, and never infer black from
+missing colored evidence. Keep origin/direction/reversal explicit. Use one-to-one
+bounded alternative assignments, exact positive-interior ownership or calibrated
+surface likelihood, maker graph and local charts, independently tested anchor
+identity, modest camera/twist/stretch adjustments, matched helicity budgets, and
+spatially held-out color/geometry checks. Do not distort geometry to force a pattern.
+Keep color conflicts, correspondence changes and geometry cost separate. Validate
+exact mathematics and known-pattern controls. Produce numerical ledgers, conflict
+curves/crops, residue constraints, native overlays, honest prediction maps and
+limitations; update plan/handoff/report, commit/push, verify remote and clean state,
+then stop with the seven requested scientific answers. Minor decisions authorized;
+no new active-model status or delegation requested.
+
+### R254 clarification during implementation — exact divisibility is required
+
+User: **"If the pattern length does not divide the total bead count, that excludes
+pattern length / bead count combination."**
+
+This explicitly supersedes the opening R254 instruction allowing an incomplete
+final repetition at the join. Active hypothesis rule is now 1 <= P < 400,
+P divides N, and P is not divisible by 13. Full nondivisor period scans remain
+labeled diagnostics, never surviving candidates. An initial exhaustive seam-cut
+sensitivity was already implemented under the opening instruction; it is preserved
+as a superseded relaxation, not used to rank admissible candidates. For P dividing N,
+changing the seam does not change color feasibility.
+
+### R254 clarification during implementation — visual audit every stage
+
+User: **"There may be errors at any stage, so lets provide graphs or images that
+can help me determine whether each stage if doing the right thing, please."**
+
+Provide raw-versus-marked photographic evidence for conflicting observations and
+maker identities; exhaustive period and divisibility graphs; explicitly rejected
+residue strips; geometry/color comparisons; complete native index overlays;
+heldout correct/wrong/abstain maps; and a prediction-status map without invented
+colors. Keep observed interiors, exact calculated centers, surface ownership,
+unsupported correspondences and unknown/conflicted residues visually distinct.
+
+### R254 outcome — bounded joint audit and stage-by-stage visual evidence
+
+Preflight on daisy: photo-2-strategy-v3 clean at1529674, correct upstream, no
+stashes; fetch verified0/0 divergence. Read current workflow, R252/R253 evidence,
+verification, source geometry and maker charts. Four complementary methods stated
+before implementation. No agents or new segmentation/appearance rendering used.
+
+Implemented exhaustive exact modulo scans for46 original mappings and399 periods,
+all310/conditional-unique/training-unique subsets; independent code reproduces
+13 atP309 forN2671,+1,both and11 atP310 forN2679,-1,twist. No exact P in even the
+wider nondivisor scan. Active divisibility rule makes these two example combinations
+inadmissible and excludes N2671/N2833 outright (only P1 below400). Initial seam-cut
+exhaustion is retained as a superseded relaxation; it found no exact solution and
+cannot alter feasibility when P divides N. No color evidence or index definitions
+were silently changed to obtain a solution.
+
+114 new matched geometry hypotheses,57 per hand:42 orthographic/nominal pinhole
+fits over seven original counts,72 additional count/turn fits,44 count totals
+arithmetically screened including every integer2670–2700 and older wider basins;
+11 totals permit onlyP1. Preserved unchanged projected centerline, literal surfaces,
+complete occluders, anchor reference, bounded phase/origin/camera/stretch/twist,
+A/B maker charts and global reversal convention. Reserved up to three distributed
+conditional identities per training sector. Fixed an intermediate implementation
+that could collide free assignments with reserved stars; reran all affected fits.
+Every delivered reserved identity is retained one-to-one, while photographic
+ownership failures remain explicit. Five maker target identities are held out;
+existing point evidence may overlap, so this is relational rather than fully
+independent photographic holdout. No claimed confirmed global origin from a failing
+anchor, no per-bead arbitrary positional uncertainty and no centerline shape edit.
+
+Exact bounded alternative propagation rejects all702 original and2640 new
+admissible model/P/cost-envelope combinations (delta0.15/0.5/1.0). All refined
+rejections have replayable two-observation witnesses. Integer optimization is
+implemented/tested but unnecessary for these photo cases; no photographic solver
+timeouts or surviving candidates. These proofs cover saved nearby alternatives,
+not all continuous geometries, unknown neighbor charts or unsampled count basins.
+
+Best new all310 color diagnostic is N2674,+1,P382 with25 contradictory assignments;
+its246 conditional-unique observations retain17. The rejected strip has105 red-only,
+108 yellow-only,25 contradictory and144 unobserved residues, not a recovered
+213-color sequence. N2695,-1,P385 retains28 all-point contradictions; N2688,-1
+has31 atP336 (unique-subset preference P384). Both helicities remain possibilities
+outside these rejected hypotheses. No consistent partial template or black inference.
+
+Train-only period nomination and unchanged56 spatial holdouts produce13 correct,
+6 wrong,37 abstaining forN2674/P382, which already has12 training contradictions.
+Geometry-selected N2696,+1 andN2681,-1 yield0/0/56 and7/14/35 respectively. Scores
+are diagnostics, not validation of recovered sequences; historical whole-photo and
+many-model selection limits are documented. Complexity and coverage remain explicit.
+No successful StageC color-constrained continuous fit was claimed after all bounded
+candidate combinations failed.
+
+Tracked stage-by-stage review includes exhaustive conflict/divisibility graphs,
+raw versus exact maker/distributed ownership, full-native2540x3182 index overlays,
+raw conflicting color pairs and alternative supports, rejected residue strips,
+exact source-ID residue tables, k-mod13 coverage, separate geometry/color/heldout
+costs, deterministic deformation profiles, before/after indices, honest all-unknown
+template prediction map, and known P7/N35 partial-template control. Report:
+photo2/PATTERN_GEOMETRY_R254.md; complete review/reproduction:
+photo2/review/r254/INDEX.md. No observation was recolored or dropped.
+
+19 relevant tests pass. Independent399-period counts for all six original nominees,
+three exact camera/assignment/patch replays, all discrete proof witnesses, and155
+original source files pass verification. Model outputs preserve parameters,
+provenance, alternatives, unknowns and rejection reasons. Final scoped commit/push,
+exact remote equality and clean-tree checks complete delivery; stop afterward.
+Next: review two P382 conflicts plus maker point7/distributed stars, then investigate
+row/index slips with independently supported neighbor walks before expanding camera
+flexibility. Recommend GPT-6 Astra/High and /new before new implementation after
+visual review; no new active-model identity, usage or user switch was asserted.

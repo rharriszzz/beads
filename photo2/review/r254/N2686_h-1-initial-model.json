@@ -1,0 +1,1334 @@
+{
+  "n": 2686,
+  "h": -1,
+  "p": [
+    3.854123267684745,
+    0.4268070441954728,
+    -1.9232351531982148,
+    1.1688671719499506,
+    85.49004538000378,
+    10.29108242682177,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "train_score": 0.07489615585151896,
+  "kind": "r254_initial",
+  "model_id": "N2686_h-1_r254_initial",
+  "turns": 413,
+  "q": 6.50363196125908,
+  "origin_generator_index": 2157,
+  "anchor": "C252-A948",
+  "stretch_max": 0.0,
+  "stretch_rms": 0.0,
+  "longitudinal_displacement_max_px": 0.0,
+  "twist_max_deg": 0.0,
+  "twist_rms_deg": 0.0,
+  "turn_rate_relative_max": 0.0,
+  "physical_scale_px_per_unit": 7.773291669414335,
+  "visible_surface_distance_censored": 0,
+  "unfinished_rays": 0,
+  "train": {
+    "center": {
+      "count": 254,
+      "mean": 9.426834392964826,
+      "sse": 26502.48675397433,
+      "rms": 10.214719723584933,
+      "median": 9.40562294696726,
+      "p90": 14.35373809058499,
+      "max": 22.563223567023567
+    },
+    "surface": {
+      "count": 254,
+      "mean": 0.27427026801479015,
+      "sse": 428.0,
+      "rms": 1.2980906632738485,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 14.0
+    },
+    "ownership": 0.9291338582677166,
+    "patch_support": 0.9088224479848763,
+    "conditional_unique": 189,
+    "balanced_center_rms": 10.042232428047745,
+    "balanced_surface_rms": 1.0894899284039148,
+    "balanced_patch_support": 0.9080244348538171
+  },
+  "test": {
+    "center": {
+      "count": 56,
+      "mean": 8.29741659535274,
+      "sse": 4545.840930368934,
+      "rms": 9.009757538327282,
+      "median": 8.262889188937546,
+      "p90": 12.840615613612632,
+      "max": 15.874498427892975
+    },
+    "surface": {
+      "count": 56,
+      "mean": 0.07142857142857142,
+      "sse": 8.0,
+      "rms": 0.3779644730092272,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 2.0
+    },
+    "ownership": 0.9642857142857143,
+    "patch_support": 0.8857157857724971,
+    "conditional_unique": 35,
+    "balanced_center_rms": 8.968516929704043,
+    "balanced_surface_rms": 0.3779644730092272,
+    "balanced_patch_support": 0.8881774844286677
+  },
+  "all": {
+    "center": {
+      "count": 310,
+      "mean": 9.22281053275103,
+      "sse": 31048.327684343276,
+      "rms": 10.007791752227163,
+      "median": 9.197695163419189,
+      "p90": 14.267250838920749,
+      "max": 22.563223567023567
+    },
+    "surface": {
+      "count": 310,
+      "mean": 0.23762789701857,
+      "sse": 436.0,
+      "rms": 1.185939126980481,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 14.0
+    },
+    "ownership": 0.9354838709677419,
+    "patch_support": 0.9046483412626403,
+    "conditional_unique": 224,
+    "balanced_center_rms": 9.784855547415981,
+    "balanced_surface_rms": 0.9622658228288382,
+    "balanced_patch_support": 0.9030626972475296
+  },
+  "by_color": {
+    "red": {
+      "center": {
+        "count": 151,
+        "mean": 8.93901263700498,
+        "sse": 14291.532947202524,
+        "rms": 9.728613136394756,
+        "median": 8.99953855622746,
+        "p90": 14.264374467552432,
+        "max": 19.57050765388784
+      },
+      "surface": {
+        "count": 151,
+        "mean": 0.3000037290049389,
+        "sse": 304.0,
+        "rms": 1.4188886612812799,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 14.0
+      },
+      "ownership": 0.9205298013245033
+    },
+    "yellow": {
+      "center": {
+        "count": 159,
+        "mean": 9.492329289088477,
+        "sse": 16756.794737140754,
+        "rms": 10.265897240160712,
+        "median": 9.526344112349067,
+        "p90": 14.269778171463646,
+        "max": 22.563223567023567
+      },
+      "surface": {
+        "count": 159,
+        "mean": 0.17839047167302471,
+        "sse": 132.0,
+        "rms": 0.9111469032188405,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 7.211102550927978
+      },
+      "ownership": 0.949685534591195
+    }
+  },
+  "by_sector": {
+    "1": {
+      "center": {
+        "count": 8,
+        "mean": 6.657274169370167,
+        "sse": 595.2712063213274,
+        "rms": 8.626059401033936,
+        "median": 3.6674041188896225,
+        "p90": 15.10344957070001,
+        "max": 17.400822900384508
+      },
+      "surface": {
+        "count": 8,
+        "mean": 0.25,
+        "sse": 4.0,
+        "rms": 0.7071067811865476,
+        "median": 0.0,
+        "p90": 0.5999999999999996,
+        "max": 2.0
+      },
+      "ownership": 0.875
+    },
+    "2": {
+      "center": {
+        "count": 16,
+        "mean": 9.300831259164713,
+        "sse": 1524.67927588665,
+        "rms": 9.76178542803086,
+        "median": 9.061561166775423,
+        "p90": 13.47512230206764,
+        "max": 15.952482551968831
+      },
+      "surface": {
+        "count": 16,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "3": {
+      "center": {
+        "count": 8,
+        "mean": 10.028559774019161,
+        "sse": 999.4431508859265,
+        "rms": 11.177226572846271,
+        "median": 8.729920797008536,
+        "p90": 16.513301192656723,
+        "max": 17.69269772937486
+      },
+      "surface": {
+        "count": 8,
+        "mean": 0.25,
+        "sse": 4.0,
+        "rms": 0.7071067811865476,
+        "median": 0.0,
+        "p90": 0.5999999999999996,
+        "max": 2.0
+      },
+      "ownership": 0.875
+    },
+    "4": {
+      "center": {
+        "count": 7,
+        "mean": 11.022293407781774,
+        "sse": 911.8142944456124,
+        "rms": 11.41311460210585,
+        "median": 10.450062632870624,
+        "p90": 15.062943931485062,
+        "max": 15.745200659355051
+      },
+      "surface": {
+        "count": 7,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "5": {
+      "center": {
+        "count": 7,
+        "mean": 10.033361494107524,
+        "sse": 794.9173105009597,
+        "rms": 10.65643541649136,
+        "median": 9.959977595647686,
+        "p90": 13.752592325727882,
+        "max": 15.442751486428127
+      },
+      "surface": {
+        "count": 7,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "6": {
+      "center": {
+        "count": 10,
+        "mean": 8.547568319694964,
+        "sse": 840.9762146995582,
+        "rms": 9.170475531288213,
+        "median": 8.465874176462123,
+        "p90": 12.52165352638022,
+        "max": 13.196603024833049
+      },
+      "surface": {
+        "count": 10,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "7": {
+      "center": {
+        "count": 19,
+        "mean": 10.000028862996478,
+        "sse": 2199.3549916640277,
+        "rms": 10.758974201895553,
+        "median": 10.283421854170625,
+        "p90": 14.209003198610302,
+        "max": 19.57050765388784
+      },
+      "surface": {
+        "count": 19,
+        "mean": 0.21052631578947367,
+        "sse": 16.0,
+        "rms": 0.9176629354822471,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 4.0
+      },
+      "ownership": 0.9473684210526315
+    },
+    "8": {
+      "center": {
+        "count": 6,
+        "mean": 5.732794716777543,
+        "sse": 240.4133678345092,
+        "rms": 6.329999576546974,
+        "median": 5.567871355945915,
+        "p90": 8.840614903087905,
+        "max": 9.76130768851284
+      },
+      "surface": {
+        "count": 6,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "9": {
+      "center": {
+        "count": 9,
+        "mean": 9.97162682317287,
+        "sse": 1033.1789283405458,
+        "rms": 10.71436692971195,
+        "median": 10.021525773209778,
+        "p90": 13.952125318803034,
+        "max": 15.541926886674796
+      },
+      "surface": {
+        "count": 9,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "10": {
+      "center": {
+        "count": 8,
+        "mean": 12.849720526935542,
+        "sse": 1443.252506927155,
+        "rms": 13.431551040959283,
+        "median": 11.484828087960185,
+        "p90": 16.639539206483406,
+        "max": 22.18159026398902
+      },
+      "surface": {
+        "count": 8,
+        "mean": 1.1513878188659974,
+        "sse": 55.99999999999999,
+        "rms": 2.6457513110645903,
+        "median": 0.0,
+        "p90": 3.5633307652783923,
+        "max": 7.211102550927978
+      },
+      "ownership": 0.75
+    },
+    "11": {
+      "center": {
+        "count": 7,
+        "mean": 8.719669694376025,
+        "sse": 573.9980932792012,
+        "rms": 9.05537009797581,
+        "median": 9.291635758353513,
+        "p90": 11.559174061454039,
+        "max": 12.760617178652462
+      },
+      "surface": {
+        "count": 7,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "12": {
+      "center": {
+        "count": 8,
+        "mean": 5.6392565962285275,
+        "sse": 302.4264588237568,
+        "rms": 6.148439424192906,
+        "median": 5.284607034236824,
+        "p90": 8.943578683453598,
+        "max": 9.098244448238285
+      },
+      "surface": {
+        "count": 8,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "13": {
+      "center": {
+        "count": 6,
+        "mean": 8.165197852439723,
+        "sse": 494.5367989780444,
+        "rms": 9.078700338136183,
+        "median": 7.962720490252526,
+        "p90": 12.69942634748149,
+        "max": 14.26265438391295
+      },
+      "surface": {
+        "count": 6,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "14": {
+      "center": {
+        "count": 19,
+        "mean": 9.685551585835613,
+        "sse": 2011.0874651993745,
+        "rms": 10.288182963706658,
+        "median": 9.785170071497811,
+        "p90": 14.830809181594155,
+        "max": 15.164289451510175
+      },
+      "surface": {
+        "count": 19,
+        "mean": 0.5263157894736842,
+        "sse": 52.0,
+        "rms": 1.6543403837370223,
+        "median": 0.0,
+        "p90": 0.7999999999999972,
+        "max": 6.0
+      },
+      "ownership": 0.8947368421052632
+    },
+    "15": {
+      "center": {
+        "count": 10,
+        "mean": 9.020248211546159,
+        "sse": 946.5067170115291,
+        "rms": 9.728857677094105,
+        "median": 8.770877344431804,
+        "p90": 12.98236901156299,
+        "max": 14.185196186103282
+      },
+      "surface": {
+        "count": 10,
+        "mean": 0.2,
+        "sse": 4.0,
+        "rms": 0.6324555320336759,
+        "median": 0.0,
+        "p90": 0.1999999999999993,
+        "max": 2.0
+      },
+      "ownership": 0.9
+    },
+    "16": {
+      "center": {
+        "count": 9,
+        "mean": 9.306337619258546,
+        "sse": 853.4469869954552,
+        "rms": 9.737938334139061,
+        "median": 9.222444879193583,
+        "p90": 12.724216132591897,
+        "max": 13.888357374993596
+      },
+      "surface": {
+        "count": 9,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "17": {
+      "center": {
+        "count": 6,
+        "mean": 7.322480523740134,
+        "sse": 356.2033590417991,
+        "rms": 7.705013076365706,
+        "median": 7.760495989294812,
+        "p90": 9.799146083656614,
+        "max": 9.938648590101538
+      },
+      "surface": {
+        "count": 6,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "18": {
+      "center": {
+        "count": 8,
+        "mean": 8.92352377013014,
+        "sse": 690.1958054663687,
+        "rms": 9.288405443524528,
+        "median": 8.660428110126393,
+        "p90": 11.806824765528496,
+        "max": 13.238655259617396
+      },
+      "surface": {
+        "count": 8,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "19": {
+      "center": {
+        "count": 5,
+        "mean": 9.925752641718775,
+        "sse": 495.7626903625743,
+        "rms": 9.95753674723397,
+        "median": 10.143416475853922,
+        "p90": 10.636003555896163,
+        "max": 10.83305312381845
+      },
+      "surface": {
+        "count": 5,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "20": {
+      "center": {
+        "count": 6,
+        "mean": 7.877078142166098,
+        "sse": 388.5039040946889,
+        "rms": 8.04677890105402,
+        "median": 7.956563574835545,
+        "p90": 9.573227993944302,
+        "max": 10.364353112518906
+      },
+      "surface": {
+        "count": 6,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "21": {
+      "center": {
+        "count": 19,
+        "mean": 9.724076507738198,
+        "sse": 2166.3181503372552,
+        "rms": 10.677862368217356,
+        "median": 9.526344112349067,
+        "p90": 13.175853772563409,
+        "max": 22.563223567023567
+      },
+      "surface": {
+        "count": 19,
+        "mean": 1.2802397537019348,
+        "sse": 244.0,
+        "rms": 3.583588322220885,
+        "median": 0.0,
+        "p90": 2.864911064067349,
+        "max": 14.0
+      },
+      "ownership": 0.7894736842105263
+    },
+    "22": {
+      "center": {
+        "count": 7,
+        "mean": 6.990941176376822,
+        "sse": 444.78442921366815,
+        "rms": 7.971237842694805,
+        "median": 5.232915125975933,
+        "p90": 12.502802240492773,
+        "max": 14.027836419509546
+      },
+      "surface": {
+        "count": 7,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "23": {
+      "center": {
+        "count": 9,
+        "mean": 10.970893329762694,
+        "sse": 1185.3977781224532,
+        "rms": 11.476535375967266,
+        "median": 11.136985271638798,
+        "p90": 14.805016540170744,
+        "max": 16.85252997591139
+      },
+      "surface": {
+        "count": 9,
+        "mean": 0.5364919027495767,
+        "sse": 12.000000000000002,
+        "rms": 1.1547005383792517,
+        "median": 0.0,
+        "p90": 2.1656854249492383,
+        "max": 2.8284271247461903
+      },
+      "ownership": 0.7777777777777778
+    },
+    "24": {
+      "center": {
+        "count": 6,
+        "mean": 8.091376935138664,
+        "sse": 486.70973454733263,
+        "rms": 9.006569218699322,
+        "median": 8.328426858345146,
+        "p90": 12.38870922771542,
+        "max": 13.248050405233792
+      },
+      "surface": {
+        "count": 6,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "25": {
+      "center": {
+        "count": 6,
+        "mean": 9.48511840719782,
+        "sse": 586.2484046084785,
+        "rms": 9.88473911819358,
+        "median": 9.22541364688402,
+        "p90": 12.665615619577823,
+        "max": 14.366984134369218
+      },
+      "surface": {
+        "count": 6,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "26": {
+      "center": {
+        "count": 20,
+        "mean": 11.486762033404737,
+        "sse": 2987.796231706137,
+        "rms": 12.222512490699565,
+        "median": 11.0168024594855,
+        "p90": 16.286957453081257,
+        "max": 17.10834995875086
+      },
+      "surface": {
+        "count": 20,
+        "mean": 0.1,
+        "sse": 4.0,
+        "rms": 0.4472135954999579,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 2.0
+      },
+      "ownership": 0.95
+    },
+    "27": {
+      "center": {
+        "count": 15,
+        "mean": 8.572295956390183,
+        "sse": 1392.0472947738272,
+        "rms": 9.633439312359933,
+        "median": 7.224838540171828,
+        "p90": 13.933919150881097,
+        "max": 18.156171386570126
+      },
+      "surface": {
+        "count": 15,
+        "mean": 0.620037538649718,
+        "sse": 32.00000000000001,
+        "rms": 1.460593486680443,
+        "median": 0.0,
+        "p90": 2.497056274847714,
+        "max": 4.47213595499958
+      },
+      "ownership": 0.8
+    },
+    "28": {
+      "center": {
+        "count": 7,
+        "mean": 8.77166152584772,
+        "sse": 652.0556634270399,
+        "rms": 9.651466679267235,
+        "median": 8.656213637407044,
+        "p90": 13.193249970479755,
+        "max": 15.874498427892975
+      },
+      "surface": {
+        "count": 7,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "29": {
+      "center": {
+        "count": 9,
+        "mean": 7.548200365302648,
+        "sse": 637.8531080398226,
+        "rms": 8.418584653015035,
+        "median": 7.233321229139385,
+        "p90": 12.138875096669567,
+        "max": 13.768268464877137
+      },
+      "surface": {
+        "count": 9,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "30": {
+      "center": {
+        "count": 14,
+        "mean": 8.72769794184421,
+        "sse": 1167.292046396008,
+        "rms": 9.131155639567238,
+        "median": 8.061162548932955,
+        "p90": 12.427631044194646,
+        "max": 13.592078180760108
+      },
+      "surface": {
+        "count": 14,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "31": {
+      "center": {
+        "count": 9,
+        "mean": 9.652341769861202,
+        "sse": 935.3847962116505,
+        "rms": 10.194687048826792,
+        "median": 8.99953855622746,
+        "p90": 14.074453043452177,
+        "max": 14.545758051545684
+      },
+      "surface": {
+        "count": 9,
+        "mean": 0.0,
+        "sse": 0.0,
+        "rms": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0
+      },
+      "ownership": 1.0
+    },
+    "32": {
+      "center": {
+        "count": 7,
+        "mean": 9.574150670956854,
+        "sse": 710.4705202005397,
+        "rms": 10.074511829368065,
+        "median": 11.14503136783117,
+        "p90": 12.777636403523628,
+        "max": 14.163617720326645
+      },
+      "surface": {
+        "count": 7,
+        "mean": 0.5714285714285714,
+        "sse": 8.0,
+        "rms": 1.0690449676496976,
+        "median": 0.0,
+        "p90": 2.0,
+        "max": 2.0
+      },
+      "ownership": 0.7142857142857143
+    }
+  },
+  "worst": [
+    {
+      "observation_id": "C252-H1-B30",
+      "x": 241.0,
+      "y": 1223.0,
+      "color": "red",
+      "evidence_level": "curator_reviewed",
+      "sector": 21,
+      "arc_fraction": 0.6298411070698593,
+      "representative_source": "H1-B30",
+      "source_keys": "H1-B30;R235:H1-P21;R239:H1-P21;R238:H1-P23",
+      "split": "train",
+      "generator_index": 1693,
+      "k": 2222,
+      "screening_generator_index": 1693,
+      "projected_center": [
+        244.30103386208577,
+        1219.2599843805974
+      ],
+      "center_distance_px": 4.988440777639062,
+      "surface_distance_px": 14.0,
+      "surface_distance_censored": false,
+      "first_owner": 1688,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": 1688,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1688,
+          "k": 2217,
+          "exact_audit_cost": 0.2009480881679341
+        },
+        {
+          "generator_index": 1693,
+          "k": 2222,
+          "exact_audit_cost": 1.0221930845652059
+        },
+        {
+          "generator_index": 1694,
+          "k": 2223,
+          "exact_audit_cost": 1.0984577958811093
+        },
+        {
+          "generator_index": 1687,
+          "k": 2216,
+          "exact_audit_cost": 1.2401511947988024
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-A438",
+      "x": 926.3475217323306,
+      "y": 2431.8451364571424,
+      "color": "yellow",
+      "evidence_level": "maker_marked_reviewed",
+      "sector": 10,
+      "arc_fraction": 0.2917045533959431,
+      "representative_source": "M33",
+      "source_keys": "A438;M33",
+      "split": "train",
+      "generator_index": 784,
+      "k": 1313,
+      "screening_generator_index": 785,
+      "projected_center": [
+        948.4943903961187,
+        2430.604509588009
+      ],
+      "center_distance_px": 22.18159026398902,
+      "surface_distance_px": 7.211102550927978,
+      "surface_distance_censored": false,
+      "first_owner": 785,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.7111111111111111,
+      "patch_dominant": 784,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 784,
+          "k": 1313,
+          "exact_audit_cost": 0.569875232180593
+        },
+        {
+          "generator_index": 785,
+          "k": 1314,
+          "exact_audit_cost": 0.7913676208734989
+        },
+        {
+          "generator_index": 786,
+          "k": 1315,
+          "exact_audit_cost": 1.3466975564033352
+        },
+        {
+          "generator_index": 778,
+          "k": 1307,
+          "exact_audit_cost": 1.373196084099398
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-H1-B27",
+      "x": 168.0,
+      "y": 1196.0,
+      "color": "yellow",
+      "evidence_level": "curator_reviewed",
+      "sector": 21,
+      "arc_fraction": 0.6323833823424073,
+      "representative_source": "H1-B27",
+      "source_keys": "H1-B27;R239:H1-A02;R238:H1-A02",
+      "split": "train",
+      "generator_index": 1696,
+      "k": 2225,
+      "screening_generator_index": 1696,
+      "projected_center": [
+        188.664110941349,
+        1205.0605505759368
+      ],
+      "center_distance_px": 22.563223567023567,
+      "surface_distance_px": 6.324555320336759,
+      "surface_distance_censored": false,
+      "first_owner": -1,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": -1,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1696,
+          "k": 2225,
+          "exact_audit_cost": 1.321088737080193
+        },
+        {
+          "generator_index": 1703,
+          "k": 2232,
+          "exact_audit_cost": 1.4894466600361533
+        },
+        {
+          "generator_index": 1702,
+          "k": 2231,
+          "exact_audit_cost": 1.8271409400254832
+        },
+        {
+          "generator_index": 1690,
+          "k": 2219,
+          "exact_audit_cost": 2.2979628268550054
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-D4-B32",
+      "x": 1811.0,
+      "y": 1696.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 14,
+      "arc_fraction": 0.4223491432711029,
+      "representative_source": "F196-6",
+      "source_keys": "D4-B32;F196-6;R235:D4-P13;R239:D4-P13;R238:D4-P22",
+      "split": "train",
+      "generator_index": 1134,
+      "k": 1663,
+      "screening_generator_index": 1134,
+      "projected_center": [
+        1812.5093599290285,
+        1699.1279394343276
+      ],
+      "center_distance_px": 3.473063849136441,
+      "surface_distance_px": 6.0,
+      "surface_distance_censored": false,
+      "first_owner": 1135,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": 1135,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1135,
+          "k": 1664,
+          "exact_audit_cost": 0.08420187099502896
+        },
+        {
+          "generator_index": 1134,
+          "k": 1663,
+          "exact_audit_cost": 1.0126099568112523
+        },
+        {
+          "generator_index": 1141,
+          "k": 1670,
+          "exact_audit_cost": 1.7019360767983343
+        },
+        {
+          "generator_index": 1128,
+          "k": 1657,
+          "exact_audit_cost": 1.7127266998526731
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-A22",
+      "x": 1649.0784351239697,
+      "y": 308.7211624979244,
+      "color": "red",
+      "evidence_level": "maker_marked_reviewed",
+      "sector": 27,
+      "arc_fraction": 0.835065714752573,
+      "representative_source": "M19",
+      "source_keys": "A22;M19",
+      "split": "train",
+      "generator_index": 2247,
+      "k": 90,
+      "screening_generator_index": 2241,
+      "projected_center": [
+        1660.635751040626,
+        316.99844922407283
+      ],
+      "center_distance_px": 14.21566131927284,
+      "surface_distance_px": 4.47213595499958,
+      "surface_distance_censored": false,
+      "first_owner": 2241,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2247,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2247,
+          "k": 90,
+          "exact_audit_cost": 0.249766212003754
+        },
+        {
+          "generator_index": 2241,
+          "k": 84,
+          "exact_audit_cost": 1.0677927721640765
+        },
+        {
+          "generator_index": 2240,
+          "k": 83,
+          "exact_audit_cost": 1.1979381522043904
+        },
+        {
+          "generator_index": 2246,
+          "k": 89,
+          "exact_audit_cost": 1.2814128475090891
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-H4-B31",
+      "x": 1476.0,
+      "y": 3074.0,
+      "color": "red",
+      "evidence_level": "curator_reviewed",
+      "sector": 7,
+      "arc_fraction": 0.19544791898195496,
+      "representative_source": "H4-B31",
+      "source_keys": "H4-B31;R239:H4-A03;R238:H4-A03",
+      "split": "train",
+      "generator_index": 526,
+      "k": 1055,
+      "screening_generator_index": 526,
+      "projected_center": [
+        1469.772262612631,
+        3055.4468316219345
+      ],
+      "center_distance_px": 19.57050765388784,
+      "surface_distance_px": 4.0,
+      "surface_distance_censored": false,
+      "first_owner": -1,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": -1,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 526,
+          "k": 1055,
+          "exact_audit_cost": 1.238067594759845
+        },
+        {
+          "generator_index": 525,
+          "k": 1054,
+          "exact_audit_cost": 1.5609794741542833
+        },
+        {
+          "generator_index": 519,
+          "k": 1048,
+          "exact_audit_cost": 1.7497620584215214
+        },
+        {
+          "generator_index": 532,
+          "k": 1061,
+          "exact_audit_cost": 2.2372442107144934
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-D4-B31",
+      "x": 1798.0,
+      "y": 1722.0,
+      "color": "yellow",
+      "evidence_level": "maker_confirmed",
+      "sector": 14,
+      "arc_fraction": 0.41985467661743886,
+      "representative_source": "F196-7",
+      "source_keys": "D4-B31;F196-7;R235:D4-P15;R239:D4-P15;R238:D4-P24",
+      "split": "train",
+      "generator_index": 1128,
+      "k": 1657,
+      "screening_generator_index": 1128,
+      "projected_center": [
+        1809.344519544075,
+        1721.0704017303074
+      ],
+      "center_distance_px": 11.382542625833395,
+      "surface_distance_px": 4.0,
+      "surface_distance_censored": false,
+      "first_owner": 1129,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": 1129,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1129,
+          "k": 1658,
+          "exact_audit_cost": 0.12787909323548294
+        },
+        {
+          "generator_index": 1128,
+          "k": 1657,
+          "exact_audit_cost": 1.0730779488419295
+        },
+        {
+          "generator_index": 1122,
+          "k": 1651,
+          "exact_audit_cost": 1.4429517400145457
+        },
+        {
+          "generator_index": 1123,
+          "k": 1652,
+          "exact_audit_cost": 1.683931550747364
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-A849",
+      "x": 497.8095238095238,
+      "y": 612.1428571428571,
+      "color": "red",
+      "evidence_level": "curator_reviewed",
+      "sector": 23,
+      "arc_fraction": 0.7030922540087063,
+      "representative_source": "A849",
+      "source_keys": "A849",
+      "split": "train",
+      "generator_index": 1885,
+      "k": 2414,
+      "screening_generator_index": 1885,
+      "projected_center": [
+        485.7702686790193,
+        619.2520357332085
+      ],
+      "center_distance_px": 13.981562299217098,
+      "surface_distance_px": 2.8284271247461903,
+      "surface_distance_censored": false,
+      "first_owner": 1891,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.11627906976744186,
+      "patch_dominant": 1891,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1891,
+          "k": 2420,
+          "exact_audit_cost": 0.20970698784373856
+        },
+        {
+          "generator_index": 1885,
+          "k": 2414,
+          "exact_audit_cost": 1.0973054670315139
+        },
+        {
+          "generator_index": 1884,
+          "k": 2413,
+          "exact_audit_cost": 1.360200038400358
+        },
+        {
+          "generator_index": 1890,
+          "k": 2419,
+          "exact_audit_cost": 1.4572448192845597
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-A20",
+      "x": 1641.0506003402104,
+      "y": 277.41260684126274,
+      "color": "yellow",
+      "evidence_level": "maker_marked_reviewed",
+      "sector": 27,
+      "arc_fraction": 0.8332641118960781,
+      "representative_source": "M16",
+      "source_keys": "A20;M16",
+      "split": "train",
+      "generator_index": 2236,
+      "k": 79,
+      "screening_generator_index": 2235,
+      "projected_center": [
+        1638.4080377844825,
+        259.44977236121554
+      ],
+      "center_distance_px": 18.156171386570126,
+      "surface_distance_px": 2.8284271247461903,
+      "surface_distance_censored": false,
+      "first_owner": 2235,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.3333333333333333,
+      "patch_dominant": 2242,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2236,
+          "k": 79,
+          "exact_audit_cost": 0.8784848721028473
+        },
+        {
+          "generator_index": 2242,
+          "k": 85,
+          "exact_audit_cost": 0.887038915845276
+        },
+        {
+          "generator_index": 2235,
+          "k": 78,
+          "exact_audit_cost": 0.9040732225999016
+        },
+        {
+          "generator_index": 2241,
+          "k": 84,
+          "exact_audit_cost": 1.3057580834785085
+        }
+      ]
+    },
+    {
+      "observation_id": "C252-A177",
+      "x": 2323.814814814815,
+      "y": 1767.6666666666667,
+      "color": "red",
+      "evidence_level": "curator_reviewed",
+      "sector": 1,
+      "arc_fraction": 0.017949806272292486,
+      "representative_source": "A177",
+      "source_keys": "A177",
+      "split": "train",
+      "generator_index": 50,
+      "k": 579,
+      "screening_generator_index": 51,
+      "projected_center": [
+        2308.070532118838,
+        1775.07653846041
+      ],
+      "center_distance_px": 17.400822900384508,
+      "surface_distance_px": 2.0,
+      "surface_distance_censored": false,
+      "first_owner": 51,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.35714285714285715,
+      "patch_dominant": 50,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 50,
+          "k": 579,
+          "exact_audit_cost": 0.838622920769828
+        },
+        {
+          "generator_index": 51,
+          "k": 580,
+          "exact_audit_cost": 0.8823820614187889
+        },
+        {
+          "generator_index": 44,
+          "k": 573,
+          "exact_audit_cost": 0.9622370345938722
+        },
+        {
+          "generator_index": 43,
+          "k": 572,
+          "exact_audit_cost": 1.8681405270590752
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,48 @@
 # Beads session handoff — new branch
 
-## Current R253 — bounded global geometry comparison completed
+## Current R254 — bounded joint pattern/geometry audit completed
+
+[Scientific report](photo2/PATTERN_GEOMETRY_R254.md) ·
+[Stage-by-stage visual review and reproduction](photo2/review/r254/INDEX.md).
+**No exact repeating template recovered.** Latest maker clarification requires
+P divides N, P<400, and shortest P not divisible by13; this supersedes the opening
+R254 permission for an incomplete final repetition. N2671 and N2833 are therefore
+excluded regardless of correspondence: only P1 is admissible below400.
+
+All310 trusted R252 red/yellow observations and original sources remain unchanged.
+Exhausted P1..399 for46 original models, reproducing13 contradictions at P309 for
+N2671,+1,both and11 at P310 for N2679,-1,twist (both combinations now nondivisors).
+No exact period in the broader scan either.114 matched new camera/count/turn
+hypotheses (57 per hand), with all integers2670–2700 and wider R253 basins screened,
+three fixed camera families on the original count set and matched T±1 trials.
+No centerline shape edit. Reserved distributed identities are one-to-one; maker
+chart and anchor ownership failures remain explicit. Both hands remain possible
+outside the tested hypotheses, but neither has a surviving tested mapping/period.
+
+702 original and2640 refined admissible model/P/cost-domain combinations are
+exactly rejected by propagation; every refined rejection has a replayable two-body
+witness. Domain expansion up to1.0 normalized cost is optimistic, not a calibrated
+photographic likelihood. Continuous camera/correspondence search remains local.
+Best new all310 diagnostic N2674,+1,P382 still has25 contradictions (17 on246
+conditional-unique observations),213 uncontradicted residues,25 conflicted and144
+unknown. These are NOT recovered template colors. Training-only diagnostic predicts
+13 heldout colors correctly,6 wrongly and abstains on37, with12 training conflicts.
+No black inferred from missing observations; no pattern-derived color is certified.
+
+User requested visual checks at every stage: raw/marked conflicts, exact ownership,
+period/divisibility graphs, rejected residue strips, mod13 coverage, geometric
+corrections, native index overlays, heldout maps and known-pattern control are
+tracked.19 relevant tests pass; independent period arithmetic, three camera refits,
+all discrete witnesses and155 source hashes pass. No new active-model status given.
+
+**Next concrete task:** review the P382 conflict pairs and maker-point7/distributed
+star overlays, then investigate row/index slips with independently supported local
+neighbor walks before expanding camera flexibility. Stop after scoped commit/push
+and exact remote/clean verification. Recommend GPT-6 Astra / High, and /new before
+a new implementation round after visual review; recommendation only. User controls
+switching. No automatic next aspect.
+
+## Prior R253 — bounded global geometry comparison completed
 
 [Scientific report](photo2/GLOBAL_GEOMETRY_R253.md) ·
 [All evidence, predictions and commands](photo2/review/r253/INDEX.md).

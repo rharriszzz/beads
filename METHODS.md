@@ -1659,3 +1659,17 @@ uncertainty from unknown photographic identifiability. Pinhole inverse-plane
 sensitivity exposes arc-parameter/camera confounding before centerline deformation.
 Implementation:global_fit_r253.py,r253_diagnostics.py,r253_verify.py; known-count,
 closure,translation,index,front/back-ownership controls and exact numerical replay.
+
+## R254 — exact repeat feasibility coupled to bounded geometric hypotheses
+
+[Scientific report](photo2/PATTERN_GEOMETRY_R254.md),
+[visual audit and replay](photo2/review/r254/INDEX.md).
+Count contradictions per modulo residue using total minus the largest color count;
+retain source IDs, unknown colors and conflicts separately. Under the maker's latest
+rule test only divisors P of N as admissible (1<=P<400, P not divisible by13), while
+retaining broader scans as diagnostics. Use sound one-to-one/residue propagation
+and replayable witnesses to reject bounded nearby correspondence domains before
+expensive joint fitting. Keep deterministic camera geometry, conditional distributed
+identities, exact positive-surface ownership, heldout color abstentions and template
+complexity separate. A color-consistent fragment of an inconsistent template is not
+a recovered pattern. See the implementation's mathematical and ray controls.
