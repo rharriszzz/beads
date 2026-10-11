@@ -1,0 +1,114 @@
+{
+  "request": "R256",
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "Pillow": "12.3.0",
+      "matplotlib": "3.11.2",
+      "playwright": "1.63.0"
+    }
+  },
+  "generation": {
+    "schema": 1,
+    "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "image_size": [
+      2540,
+      3182
+    ],
+    "detector_version": "r256-interiors-v1",
+    "sources": {
+      "photo2/bead_debugger/generate.py": "c31601e78a678d42eef0a4fb47f2604d5374508f439418f50e8437143e8b3364",
+      "photo2/bead_debugger/vendor/historical_splines.py": "f58aaf83182aff84818e10dd98e3b801935d818968065e1ae5be390dec2ac691",
+      "photo2/bead_debugger/vendor/PROVENANCE.json": "b14435e2be5755139e877e35c5a8fe901d5a1abcd0b9f30b01fb9178d0370c07"
+    },
+    "artifacts": {
+      "observations.json": "3b73ce046eac683b6d024dedcea12674955b04d4010c4103b4a16f3b83c1d566",
+      "positive-patches.npz": "791b72e3d8d3dd9ba7b2ed3c527d852f2d2bcb239a4733c4dabc39e8d81384e5",
+      "splines.json": "47f1a4b97462b98a21282e66e26edf22f21616a235b6e755cb2524d5d3f00bcd"
+    },
+    "generation_id": "752a3a433581c27368d059488bfc9afb380151470005bab68c9072624c794c9e"
+  },
+  "counts": {
+    "ambiguous-split": 1450,
+    "interior": 214,
+    "rejected": 865,
+    "small-patch": 102,
+    "black-candidate": 119
+  },
+  "palette": [
+    {
+      "color": "red",
+      "hue_deg": 355,
+      "radius_deg": 6,
+      "peak_pixels": 9858.374146132279
+    },
+    {
+      "color": "yellow",
+      "hue_deg": 28,
+      "radius_deg": 8,
+      "peak_pixels": 9756.470328436268
+    }
+  ],
+  "spline_regression": {
+    "inner_spline": {
+      "shape": [
+        847,
+        2
+      ],
+      "maximum_absolute_coordinate_difference_px": 0.0
+    },
+    "outer_spline": {
+      "shape": [
+        907,
+        2
+      ],
+      "maximum_absolute_coordinate_difference_px": 0.0
+    },
+    "inner_spline_control": {
+      "shape": [
+        142,
+        2
+      ],
+      "maximum_absolute_coordinate_difference_px": 0.0
+    },
+    "outer_spline_control": {
+      "shape": [
+        152,
+        2
+      ],
+      "maximum_absolute_coordinate_difference_px": 0.0
+    },
+    "centerline_spline": {
+      "shape": [
+        303,
+        2
+      ],
+      "maximum_absolute_coordinate_difference_px": 0.0
+    },
+    "periodic_centerline": {
+      "maximum_absolute_coordinate_difference_px": 7.857631044316804e-05,
+      "rms_euclidean_difference_px": 5.875095873946192e-05,
+      "tolerance_px": 0.001
+    }
+  },
+  "legacy_models": {
+    "N2696_h+1_f0": {
+      "version": "e8b96c73fa99e1a115b4540401ae88665e81d487afa91236450724f39e54e6a3"
+    },
+    "N2674_h+1_f0": {
+      "version": "10c79095f18c4f92dd93cad34356fdf9404848c3112d0a41d3e1ef4d2acfa9e4"
+    },
+    "N2681_h-1_f0": {
+      "version": "1435b7af9e4ed21042afa51d6a95b5700a09ccf45b72700e8f76908c76ae5b5a"
+    }
+  },
+  "independent_fit": "staged, not performed",
+  "precision_recall": "not established; counts are proposals, not physical beads",
+  "tests": {
+    "python": "10 tests",
+    "javascript": "coordinate/navigation/triple/collision contracts",
+    "browser": "see browser-verification.json"
+  }
+}

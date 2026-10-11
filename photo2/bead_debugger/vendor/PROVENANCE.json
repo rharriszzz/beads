@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/rharriszzz/fft-image-explorer",
+  "commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+  "file": "find_splines.py",
+  "sha256": "a4f0795b01ff9871c9f67f4f7f39dc49cd75314784348b12625b49e8610f3ead",
+  "functions": [
+    "_anchor_closed_spline_points",
+    "_bridge_small_background_gaps",
+    "_build_centerline_spline",
+    "_build_step_grid",
+    "_catmull_rom_closed_interpolating",
+    "_circular_runs",
+    "_coerce_spline_xy",
+    "_collect_ring_transitions",
+    "_cross2d",
+    "_ensure_closed_curve",
+    "_find_centerline_start",
+    "_find_initial_point_from_center_line",
+    "_find_inner_start_from_outer_point0",
+    "_hsv_background_predicate_mask",
+    "_hsv_preset_union_mask",
+    "_nearest_point_on_closed_polyline",
+    "_normalize_closed_spline_xy",
+    "_plot_trace_failure_debug",
+    "_resample_closed_curve",
+    "_run_image_only_hsv_mode",
+    "_sample_ring_states",
+    "_segments_intersect",
+    "_smooth_closed_curve",
+    "_spline_intersects",
+    "_trace_outer_spline_step_cells"
+  ],
+  "changes": [
+    "Only transitively needed numerical functions retained.",
+    "Runner plotting/printing/file writes removed.",
+    "Interactive trace failure plot replaced by explicit exception."
+  ],
+  "parameters": {
+    "ring_radius_px": 64,
+    "ring_samples": 720,
+    "max_bg_gap": 14,
+    "spline_style": "catmull-rom",
+    "use_preset_union_mask": false
+  },
+  "dependencies": [
+    "numpy",
+    "matplotlib.colors"
+  ]
+}

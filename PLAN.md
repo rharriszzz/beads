@@ -1,5 +1,64 @@
 # Photo-2 reconstruction plan
 
+## Current R256 — working interactive debugger delivered
+
+[Launch/controls/engineering README](photo2/bead_debugger/README.md) ·
+[Curated verification and review examples](photo2/review/r256/README.md).
+User supersedes the R255 static-audit direction and disputes inherited confidence
+in the310 observations. The principal next working tool is now the local app:
+`.venv/bin/python -m photo2.bead_debugger.server` → http://localhost:8767.
+No further pattern optimization or independent global fitting was performed.
+
+Native photograph wheel/pan, click/ID/index selection,0/±1/±6/±7, hidden-index
+navigation, following toggle, all A–L overlay/diagnostic categories, three named
+models, raw/marked crops, split profiles, conditional ownership/alternatives,
+explicit fresh-observation origin and versioned review/resume/backup/debug ZIP
+are implemented. Legacy observations/withheld sources default off. The existing
+tangent_viewer transforms are reused; no framework/build chain or cloud dependency.
+Reviews are separate, immutable-history JSON snapshots and never refit geometry.
+
+**Independent regeneration:** local numerical port of fft-image-explorer at
+2caf0707 produces exact0px edge/control/midpoint differences from the archive.
+Periodic cubic differs by at most0.0000786px from the rounded R175 seed, below
+the documented0.001px tolerance. Historical HSV calibration remains explicitly
+hand-calibrated; no bead positions/adjacency enter spline generation. Fresh
+photo-only detection uses learned color modes, not old HSV boxes/locations/labels:
+2750 proposals =214 interior-class,1450 ambiguous splits,102 small patches,
+865 rejected tiny proposals and119 black-reflection candidates. These are NOT
+physical-bead counts or certified identities. Oversplits/misses remain inspectable.
+An isolated-code/photo replay without ANY historical files is byte-identical.
+
+**Still assisted:** N2696 h+1 orthographic, N2674 h+1 and N2681 h−1 retain old
+fitting constraints and inherited spline geometry. Fresh surface ownership is
+recomputed at candidate points, but all correspondences/indices remain conditional.
+Footprints/visibility use exact annulus rays sampled on a4px grid; no sampled
+surface means occluded OR too small for that grid. Legacy P337/P382 templates
+remain rejected; algebraic triples are not observed neighbor walks. Independent
+count/camera/phase fitting and image-derived adjacency are explicitly staged.
+No Windows browser launch is claimed; real Chromium on Linux was tested.
+
+Validation:10 Python numerical/isolation/persistence tests, JavaScript coordinate/
+wrap/triple/collision contracts,46 real-browser checks with no JS errors. Browser
+checks include native RGB/pointer mapping, clicks/keys, both hands, toggles, origins,
+model switching, correction notes, backups/import, exact export crops and restart.
+The browser's implicit Apple ICC conversion and a backup/autosave timing race
+were caught and fixed. Original JPEG remains untouched; the display PNG preserves
+decoded RGB numerically. Selected/neighbor labels have priority over dense labels.
+
+**Maker answer:** R256 Q1 A/B are two separate yellow beads. Exact fresh IDs,
+crop and scope are recorded in review/r256/answers.json, without automatically
+changing detector/fit. Q2 remains unanswered. Test review records are ephemeral;
+no synthetic finding was entered into the user's production review history.
+
+**Next concrete task / stopping point:** open the viewer, start at bead0 (or
+explicitly confirm a fresh observed origin), and export the first concrete bad
+bead/index ZIP. Stop here; do not automatically tune or fit from reviews. Use
+GPT-6.1 Sol / Medium for routine UI fixes and well-scoped exported bug records;
+retain Astra / High for ambiguous scientific inference or the staged independent
+fit. Recommendation only, not an assertion of a user model switch. No /new needed
+for using the app; use /new before a substantial new implementation/inference round.
+Scoped commit/push and exact remote/clean verification complete this delivery.
+
 ## Current R255 — sequential visual audit completed
 
 [Main audit](photo2/AUDIT_R255.md) · [Visual evidence index](photo2/review/r255/INDEX.md).

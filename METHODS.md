@@ -1686,3 +1686,25 @@ supporting observations; join photographic conflicts to k and k mod P. Recount s
 periods without new search. Validate joins, weighted triple sums, source hashes,
 raw-panel pixel identity and deterministic replay; this validates the audit display,
 not the physical reconstruction.
+
+## R256 — interactive reconstruction debugger and independent replay
+
+[Launch and controls](photo2/bead_debugger/README.md). Run
+`.venv/bin/python -m photo2.bead_debugger.server`; open http://localhost:8767.
+Buildless canvas UI reuses tangent_viewer's coordinate/zoom transforms, with
+index0/±1/±6/±7 navigation, hidden beads, named competing models, all A–L evidence
+layers, crop/profile inspection, correction notes and source-linked debugging ZIPs.
+
+Photo-only generation is a separate module with no annotation/model imports.
+Vendored historical HSV ring tracing exactly reproduces edge/midpoint coordinates;
+periodic cubic agrees with the rounded old seed within0.001px. The detector learns
+color modes from the image and retains split/merge ambiguity and positive
+reflection evidence. Runtime outputs are hashed and ignored; the archived spline
+is regression-only. Three saved R254 models remain explicitly legacy-assisted;
+fresh ray ownership never upgrades a candidate to photographic truth. Independent
+fitting is staged in the README, not claimed performed.
+
+Review records are append-only, model/generation/origin linked, revisioned and
+atomically saved. They are separate from generation/model caches and never cause
+a refit. Full numerical/isolation tests and actual Chromium interaction tests are
+in the package; [curated results](photo2/review/r256/README.md) record the evidence.

@@ -6368,3 +6368,139 @@ exact remote/clean verification complete delivery. Stop after this package.
 Next: review bend, P382 residue7 and primary maker failure before separately
 authorized local neighbor-walk investigation. Retain GPT-6 Astra/High recommendation,
 not a new active-model claim; no /new needed for review, /new before implementation.
+
+## R256 — Implement an independent browser reconstruction debugger
+
+User reviewed R255/02-trusted-whole.png: reasonably pleased with the splines but
+less confident than prior analyses in the 310 supposedly trusted red/yellow
+observations. Explicitly changes direction from static audits to a working local
+browser program, beginning at index0 and stepping through every string index.
+Build now; make routine choices independently; no new broad color-pattern campaign.
+
+Required: port the needed fft-image-explorer/find_splines.py implementation into
+beads, preserve parameters/provenance, regenerate both boundaries and centerline
+from the original photograph, compare numerically against archived regression
+curves without runtime coordinate substitution. Build a fresh image-derived
+red/yellow interior and positive black-reflection inventory with reproducible
+measurements/stable IDs, independent of manually marked positions, adjacencies,
+and R252 approval. Preserve dark seams, genuine same-color splits, small positive
+patches and ambiguity; brightness valleys alone cannot establish distinct beads.
+
+Implement native-resolution pointer zoom/pan, click selection, keyboard and direct
+index/ID navigation, 0/±1/±6/±7, hidden-index navigation, next unchecked and reviewed
+counts; clean scrollable side panel, crop/measurement evidence, optional following,
+legible labels and independently switchable A–L overlays. Keep original pixels,
+image-derived splines/evidence, geometric guides/predictions, historical references,
+triples/indices, conditional ownership/alternatives, FFT, pattern contradictions,
+and count/camera/stretch/twist distinct. Legacy marks must start disabled. Keep
+N2696 h+1, N2674 h+1, N2681 h−1 as named assisted hypotheses, preserving image
+region during switching. Explicitly stage independent fitting if not implemented.
+Allow a fresh observed origin to be explicitly confirmed without old identity import;
+index0 is arbitrary, not a manufacturing seam.
+
+Review actions: correct, wrong location, wrong index/neighbors, wrong/uncertain
+color, duplicate/merge, detector miss, cannot determine; free note, correction
+pixel/alternative candidate, model/version/source-coordinate/stable-ID linkage.
+Revisioned reliable JSON, backup/import/export and resume; never automatically
+refit from reviews. Export selected-bead bug record with provenance, calculations,
+layers, note and original crop. Use existing Python/JS viewport infrastructure;
+no large framework/build chain; work from WSL in ordinary Windows browser. Test
+coordinate mapping, navigation/wrap, hands/models/triples, generation isolation,
+persistence/backups/exports, real nonempty overlays and large-overlay usability.
+Update plan/handoff/log/README, commit/push photo-2-strategy-v3 and verify exact
+remote tip/clean tree. Final reply must give command/address/controls/review-resume,
+independent vs assisted results and omissions. User intends to give this to
+GPT-6 Astra after /new and asks when a cheaper model becomes suitable; this is not
+new evidence of a model switch or measured session usage.
+
+### R256 visual clarification — Q1
+
+Asked an optional question using a newly generated raw/marked crop selected from
+independent detector split measurements (no historical site coordinates). User
+answers **“Two separate beads”** for the two marked yellow bodies A/B. Preserve
+exact IDs, generation, crop coordinates and scope in
+photo2/review/r256/answers.json; supporting image question-1.png is tracked.
+This confirms distinct photographic bodies only, not global indices, direction,
+centers or model correctness. It does not automatically change detector or fit.
+Q2's weak-valley example remains unanswered, and its candidates remain ambiguous.
+
+### R256 outcome — working app, independent generation, explicit assisted models
+
+Preflight: daisy, photo-2-strategy-v3 at60c7b7e, correct origin/upstream, clean
+worktree, no stashes; fetch confirmed0/0 divergence. Read current handoff/plan,
+latest requests, R255 experiment/provenance, geometry guidance, HSV-overlap rules
+and Stage1 eligibility. Four methods stated: existing viewport reuse, exact
+spline-code port, fresh positive-interior detection with split evidence, and
+separate diagnostic model adapters. No subagents. Sites local-only workflow used;
+no hosted site or external account writes. OpenAI Docs checked only for the
+requested cheaper-model recommendation, not for reconstruction evidence.
+
+Implemented photo2/bead_debugger as a standard-library Python HTTP server and
+buildless JavaScript/canvas app, reusing tangent_viewer/viewport.mjs. Original
+native pixels, wheel/pan/fit/reset, click/direct/keyboard navigation,0/±1/±6/±7,
+wraparound, hidden indices, nearby candidates, model-preserving viewport,
+conditional triples/indices, selectable A–L evidence categories, real model surface
+footprints, conditional correspondence alternatives, FFT/pattern/stretch/twist
+views and raw/annotated crops are functional. Dense labels are zoom-gated and
+collision-culled; selected neighbors receive priority. Historical marks and
+withheld records are disabled by default. All three requested models remain
+explicitly legacy-assisted; independent fitting is staged, not relabeled as done.
+
+Vendored only the25 transitively needed historical spline functions from
+fft-image-explorer/find_splines.py at2caf0707 with exact source hash, parameters
+and modifications recorded. Regenerated original-photo edges/control points and
+boundary-midpoint centerline match the archived reference exactly0px. Periodic
+cubic max coordinate difference0.0000785764px versus rounded R175 seed, below
+0.001px tolerance. Historical HSV calibration is retained and labeled; no bead
+labels/adjacencies enter. The archive is comparison/regression-only. No other
+working repository is needed at runtime or for generation.
+
+New detector learns photograph color modes (355°±6° red,28°±8° yellow); no manual
+coordinates, adjacency, R252 acceptance or old HSV ranges generate/approve its
+observations.2750 proposals:214 interior-class,1450 ambiguous splits,102 small
+patches,865 rejected tiny proposals,119 reflection/dark-body candidates. These
+are proposals, NOT verified bead counts. Full positive patches, centroids,
+unestimated physical centers, HSV/radii, component context and5170 intensity/
+chroma routes remain reproducible. Weak same-component splits stay ambiguous.
+Bright reflection plus dark low-chroma surround is required for black proposals.
+No dark gap is converted to a bead merely to complete a modeled index or pattern.
+
+Reviews and fresh origins are separately persisted with immutable revision
+snapshots, atomic fsync/replace, exact model/detector/image IDs, native correction
+positions, notes and alternatives. Stale concurrent writes fail visibly. Browser
+backup flushes current position/draft before download; import merges without
+silent replacement. Debug ZIP contains exact original crop and linked numerical
+record. Restart resumes position/drafts/counts; review never triggers fitting.
+Original JPEG is preserved byte-for-byte. Display PNG omits its Apple ICC tag
+so browser color conversion cannot alter decoded RGB measurements; the original
+profile-tagged JPEG remains downloadable.
+
+Validation:10 Python tests passed, including exact spline regression, positive
+support/identity checks, a byte-identical isolated generator/photo replay with NO
+historical files, both hands/closure/triples and atomic review failure/backup tests.
+JavaScript coordinate/navigation/triple/collision contracts passed.46 actual
+Chromium checks passed with zero JS errors: native pixel/pointer mapping, wheel/
+pan, clicks/keys, hidden/wrapped indices, both hands/three models, all overlays,
+fresh origin, correction review/counts, backup/import, exact debug crop export,
+page/store restart and every diagnostic link. Latest measured all-layer draw
+median2.4ms,95th-percentile5.1ms in the tested zoomed viewport; hardware-specific,
+not a universal performance guarantee. Linux Chromium was exercised; Windows
+browser forwarding was not. Temporary browser reviews never entered production.
+The initial pixel-profile mismatch and backup/autosave timing issue were fixed.
+
+Known scientific limits: heuristic oversplits/misses, unconfirmed black candidates,
+no fresh adjacency graph or independent global fit, uncalibrated camera/count,
+4px sampled visibility with subgrid/occlusion ambiguity, rejected legacy templates.
+No known blocking viewer defect after smoke tests. This completes the requested
+working-program round, not the reconstruction. Curated screenshots, regression
+hashes and Q1 maker answer are tracked; routine caches/reviews remain ignored.
+Plan/handoff/methods and beginner/engineering READMEs updated. Scoped commit/push
+and exact remote/clean verification finish delivery, then stop.
+
+Next concrete task: user starts at0 or confirms a fresh origin, records the first
+specific bad index/bead and exports its ZIP. Recommend GPT-6.1 Sol/Medium for
+routine viewer fixes and bounded bug investigations; retain Astra/High for
+scientific ambiguity or the staged independent fit. Official model comparison
+supports Sol's lower API cost; this is not a statement of account usage or an
+active model switch. No /new needed to use/review the app; use /new before a new
+substantial inference/implementation round. User controls switching.
