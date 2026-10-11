@@ -26,6 +26,17 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
+Implemented [R250 dense FFT tracking](photo2/FFT_DENSE_TRACKING.md): closed
+centerline, native RGB and frozen R249 extraction → all original axial candidates,
+frequency-vector association graph, measured fragments and separate tentative gaps.
+Brightest-four/extra candidates are tracked without using rank in association.
+Density convergence, seam tests, measured changing-intensity controls and exact
+source parity; 2000 points remain strongly overlapping. Exploratory four-range
+least-squares fits expose stable angular concentrations and multiple frequencies
+near -19deg. Conditional signed-angle model favors source h+ but does not calibrate
+physical assignments/projection. Dark-image proxies do not prove black-bead causes.
+No inferred index/pattern. Reproduction and curated evidence linked in the report.
+
 Implemented [R249 frozen six-site FFT transfer](photo2/FFT_TRANSFER.md):
 native RGB and predeclared image-derived centerline sites; output conjugate
 candidates, tangent-relative vectors, phase-preserving inverse cards and retained

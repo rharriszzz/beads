@@ -1,5 +1,18 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R250 — dense full-loop tracking and four angle fits
+
+[Report](FFT_DENSE_TRACKING.md), [curated evidence/data](review/r250/INDEX.md).
+Reuse exact R249 primary at 2000 equal-arc centers, paired V/Y, no retuning.
+Graph associations use axial frequency vectors rather than brightness rank;
+ambiguous links and tentative reappearances remain explicit. Four empirical
+angle means near -46, -19, +6, +53deg; near-zero is most persistent, -19deg mixed.
+Maker's near-zero/diagonal helicity cues and intrinsic 6/7 asymmetry are preserved.
+Conditional projected reciprocal comparison favors source h+ without unique
+calibrated hand identification. Black-bead discontinuity hypothesis needs a
+controlled appearance comparison; simple dark-area proxy is not confirmation.
+Review stop; next recommended work is known-hand appearance/projection calibration.
+
 ## R249 — provisional freeze and six-site transfer completed
 
 [Report and reproduction](FFT_TRANSFER.md), [visual evidence](review/r249/INDEX.md).

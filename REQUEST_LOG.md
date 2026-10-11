@@ -5801,3 +5801,117 @@ remote/clean verification; no next experiment automatically. Recommend Astra/Hig
 without asserting active model. No /new needed for review; fresh session reasonable
 before separately authorized implementation. Final delivery verification follows
 commit/push in the session response.
+
+## R250 — Dense FFT tracking around the entire closed centerline
+
+User redirects the next step from R249 individual-window spatial review to a
+full-loop continuity experiment, explicitly authorizing implementation without
+another planning stop. Start around 200 equal-arc locations and increase density
+empirically; include curved portions, position/tangent/curvature, both V and Y,
+and unchanged R249 primary extraction. Retain brightest three/four plus extra
+candidates, axial angles, bin/native frequencies, multiple power measures and
+quality flags. Track by angle/frequency continuity, allowing rank/intensity
+changes, competing associations, gaps and closed-loop seam checks. Investigate
+trends, sudden changes, appearances/reappearances, curvature/color/channel
+correlations and possible identity swaps without treating every change as noise.
+Produce raw observations, inferred associations, full-loop photo overview,
+angle/frequency/intensity/event/curvature plots and selected transition examples.
+Validate changing strengths/ranks, disappearances and axial wrap with controlled
+examples. No forced helicity or repeating-pattern reconstruction. Update records,
+tests, commit/push, verify remote/clean worktree, report and stop.
+
+Preflight: daisy, correct clean branch/upstream, no stashes; exact remote and local
+6c768105ebab2872861c78ebdd73ffe0e8840704. Read current records, R249 implementation
+and geometry/source conventions. Considered nearest-neighbor matching, an explicit
+competing-link graph, and predictive motion models; selected conservative graph.
+Provisional association gate and ambiguity margin are recorded before dense
+extraction. Keep tentative gap proposals separate from measured fragments; no
+brightness term, forced three-family clustering or smooth trajectory fitting.
+Fast numerical adapter reuses source masks/channels and R248 extraction/R249
+qualification, omitting unused GUI products; exact candidate parity tested.
+Initial 200-site scan took 9.54 seconds; proceeding to 1000 sites with cache reuse.
+
+### R250 steering during execution — four angle ranges and helicity cues
+
+User asks: “So explain which angles relative to the centerline are most prevalent,
+what are the angles, use a graph to display them, or categorize them, then do a
+least squares fitting, since I expect a small number of relatively fixed angles.”
+Clarifies: “least squares fitting for each of the four most prevalent angle ranges.”
+Added exploratory four-range categorization and separate V/Y constant least-squares
+fits using original measurements. Range discovery/fit is downstream analysis,
+not a change to extraction or track associations. Preserve other modes and tails.
+
+Maker says: “yes the 19 one is complicated, I am not exactly sure what it is.
+The one closest to 0 basically tells you the helicity.” Also: “also the difference
+of the other two from plus or minus 45 tells you the helicity.” Then: “I guess
+assymetry is guaranteed, since 6 beads in one diagonal equals 7 beads in the other.”
+Preserve these as maker geometric interpretation, with the minus19 range unresolved.
+Use all three principal signed offsets, exact reciprocal predictions and camera
+projection in a conditional hand comparison. The construction itself has unequal
+6/7 diagonal angles; +/-45 is a reference, not a symmetry requirement. Existing
+model overhead predictions are near-zero +4.292, diagonals -42.004/+46.414 for
+source h+1, with signs/family ordering reversed for h-1. No exact photo-angle
+calibration or maker-confirmed individual peak assignment is implied.
+
+### R250 additional steering — black beads and actual outcomes
+
+Maker says: “The black beads are so different from the others in whatever measure
+you are using, that I would think it could explain most of the discontinuities
+you see.” Preserved as a hypothesis, not a measured attribution. Added descriptive
+60/120/240px-bin checks of fragment endpoints versus weighted dark fraction and
+its gradient, with curvature adjustment; no segmentation or bead inventory.
+At120px, dark-fraction/endpoint rho is +.06 V/-.01 Y, curvature +.25/+.33. Simple
+proxy does not establish that black beads explain most breaks; bright black
+reflections and dark red/shadow contamination prevent ruling that explanation out.
+Within-fragment power decreases with the dark proxy, especially in Y.
+
+Completed 200→1000→2000 native paired scans, with500 as a nested evaluation subset.
+Final spacing4.618px on existing9235.587px closed spline; all4000 channel cases
+have full support, preserving32000 original candidates. R249 FFT/extraction code
+unchanged, no local retuning. Fresh full scan exactly reproduces every case.
+Final measurement cache is input/geometry/scanner-fingerprinted; old exploratory
+cache preserved ignored. Hash-exact initial protocol source is preserved alongside
+final source hashes. Clarified ambiguity flags and retained same-fragment gap
+proposals; audited three-identity trio continuity before final reporting.
+
+N1000→2000 preserves98.64% V/98.96% Y coarse accepted endpoints through measured
+intermediates; a few identity differences and breaks remain. Accepted links
+14698 V/14951 Y, with rank changes28.4%/23.1%; longest fragments1695/4627px.
+All eight links cross the spline seam in each channel, no full-loop closed track.
+Weak observations and ranks5–8 can maintain identities. Tentative reappearance
+proposals611/437 are not merged or interpolated. Strong overlap is explicitly
+not independent evidence. Association gate/margin/frame diagnostics barely
+change accepted edges; continuously drifting maxima can still change meaning.
+
+Four prevalent-range least-squares means V/Y: -45.68/-46.66, -19.43/-18.55,
++6.14/+5.63, +53.46/+53.40 degrees, with RMS3.6–6.6deg. Simple once-around trends
+do not improve the three main categories under spatially blocked/embargoed checks.
+The -19deg category has multiple frequency bands. Three reciprocal-family-like
+concentrations recur widely but full supported-trio prevalence is36.6% V/69.3% Y;
+same supported trios continue at most125/614px. Curvature-associated degradation,
+quantization, rank changes, appearance variation and branch migration retained.
+
+Maker's near-zero and diagonal helicity cues are tested using exact reciprocal
+geometry, including intrinsic6/7 asymmetry; no assumption of symmetric±45 angles.
+Conditional shared-projection finite-bank comparison favors source h+1 in both
+channels: three-angle RMS6.06 vs9.81deg V,5.23 vs9.11deg Y. A common±5deg bias
+narrows the margin. This is not unique calibrated hand identification or a
+probability; unknown projection/tangent/appearance and family assignment remain.
+No index, repeat reconstruction, new segmentation or global bead optimization.
+
+Produced full-loop raw overview, V/Y angle/frequency/intensity/fragment/curvature
+plots, events and contextual proxies, four-range histogram/least-squares/frequency
+plots, conditional signed-offset comparison, darkness scatter and six photographic
+FFT/inverse transition cards. Original observations and association/model results
+are separate traceable CSV/JSON. Twenty-five tests pass, including measured
+changing-intensity/rank/disappearance controls, ambiguity, axial wrap, seam origin,
+R249 parity, least-squares and reciprocal hand-sign/asymmetry. Exact4000-case replay
+and final integrity/hash checks recorded. Updated report/plan/handoff/methods/notes.
+
+Next recommended bounded task is a same-geometry known-hand appearance/projection
+calibration: uniform versus red/yellow/black and controlled reflection changes,
+using this dense tracker/angle fit to isolate discontinuity causes and helicity
+bias. User did not authorize automatic next-experiment execution. Stop after
+commit/push and exact remote/clean verification. Recommend Astra/High without
+asserting active model; no /new for review, fresh session reasonable before
+separately authorized implementation.

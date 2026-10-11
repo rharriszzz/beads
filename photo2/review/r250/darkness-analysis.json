@@ -1,0 +1,86 @@
+{
+  "hypothesis": "Maker proposes black-bead appearance differences explain most discontinuities.",
+  "proxy": "Gaussian-weighted HSV V<0.2 fraction over full native crop. Black reflections may be bright; red shadows/background can be dark. This proxy cannot identify black-bead-specific causality.",
+  "outcome": "Number of top-four measured candidates without accepted incoming or outgoing neighbor link; normalize by arc span. Tentative gaps do not suppress endpoints.",
+  "statistics": "Descriptive Spearman and in-sample linear R2 on fixed arc bins. Partial Spearman computed on linear residuals after curvature. No independent-sample p-values; adjacent windows overlap.",
+  "results": [
+    {
+      "channel": "V",
+      "width": 60,
+      "bins": 154,
+      "dark_endpoint_rho": 0.04179361377415777,
+      "dark_change_endpoint_rho": 0.016200298115191494,
+      "curvature_endpoint_rho": 0.14718938205529697,
+      "dark_endpoint_partial_after_curvature": 0.02231531908951264,
+      "dark_change_endpoint_partial_after_curvature": 0.03165676827915917,
+      "dark_unsupported_trio_rho": 0.23677565929074781,
+      "curvature_only_in_sample_R2": 0.060943308561344556,
+      "curvature_plus_dark_and_change_in_sample_R2": 0.06124939564739673
+    },
+    {
+      "channel": "V",
+      "width": 120,
+      "bins": 77,
+      "dark_endpoint_rho": 0.06338396586443151,
+      "dark_change_endpoint_rho": -0.05424968506943199,
+      "curvature_endpoint_rho": 0.25279453052363915,
+      "dark_endpoint_partial_after_curvature": 0.04850412745149587,
+      "dark_change_endpoint_partial_after_curvature": -0.056128082443871914,
+      "dark_unsupported_trio_rho": 0.2818988765048415,
+      "curvature_only_in_sample_R2": 0.13900418075602927,
+      "curvature_plus_dark_and_change_in_sample_R2": 0.1486810014066987
+    },
+    {
+      "channel": "V",
+      "width": 240,
+      "bins": 39,
+      "dark_endpoint_rho": -0.02833077507392552,
+      "dark_change_endpoint_rho": -0.17658501022780101,
+      "curvature_endpoint_rho": 0.42079832224497266,
+      "dark_endpoint_partial_after_curvature": -0.16234817813765184,
+      "dark_change_endpoint_partial_after_curvature": -0.12287449392712552,
+      "dark_unsupported_trio_rho": -0.07996358414922723,
+      "curvature_only_in_sample_R2": 0.22176388149358173,
+      "curvature_plus_dark_and_change_in_sample_R2": 0.24296952824094087
+    },
+    {
+      "channel": "Y",
+      "width": 60,
+      "bins": 154,
+      "dark_endpoint_rho": -0.14550322225045115,
+      "dark_change_endpoint_rho": -0.033867446148974675,
+      "curvature_endpoint_rho": 0.21334670153600388,
+      "dark_endpoint_partial_after_curvature": -0.1733819627557768,
+      "dark_change_endpoint_partial_after_curvature": -0.020659290109005482,
+      "dark_unsupported_trio_rho": -0.1321426955932856,
+      "curvature_only_in_sample_R2": 0.054975257001857014,
+      "curvature_plus_dark_and_change_in_sample_R2": 0.07734857426164266
+    },
+    {
+      "channel": "Y",
+      "width": 120,
+      "bins": 77,
+      "dark_endpoint_rho": -0.01207528249173263,
+      "dark_change_endpoint_rho": -0.09269204222248768,
+      "curvature_endpoint_rho": 0.33203713108441535,
+      "dark_endpoint_partial_after_curvature": -0.030390661969609333,
+      "dark_change_endpoint_partial_after_curvature": -0.101976970398023,
+      "dark_unsupported_trio_rho": -0.137606233964717,
+      "curvature_only_in_sample_R2": 0.13210011382988984,
+      "curvature_plus_dark_and_change_in_sample_R2": 0.17198676107275013
+    },
+    {
+      "channel": "Y",
+      "width": 240,
+      "bins": 39,
+      "dark_endpoint_rho": -0.0587965296892869,
+      "dark_change_endpoint_rho": -0.3845804315850575,
+      "curvature_endpoint_rho": 0.6147560634643353,
+      "dark_endpoint_partial_after_curvature": -0.11983805668016195,
+      "dark_change_endpoint_partial_after_curvature": -0.36234817813765186,
+      "dark_unsupported_trio_rho": -0.041932553839388695,
+      "curvature_only_in_sample_R2": 0.24180884767654987,
+      "curvature_plus_dark_and_change_in_sample_R2": 0.32891693319503457
+    }
+  ]
+}

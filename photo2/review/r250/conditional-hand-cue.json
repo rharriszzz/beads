@@ -1,0 +1,296 @@
+{
+  "interpretation": "Conditional on maker-proposed mapping: near-zero reciprocal peak normal to family1; diagonal normals sorted by sign. Four angular categories are empirical; minus19 remains excluded/unresolved. No per-window selection or nuisance tuning.",
+  "model": "Existing fft_helicity.predicted, visible-front unrolled local tube, shared camera/phase/radius per hand/channel. Orthographic finite bank, not calibrated photo pose or exhaustive camera uncertainty.",
+  "sample": "200 equal-arc original windows, every tenth of the 2000-point master; original unsmoothed peaks and equal total category/window weights.",
+  "systematic_sensitivity": "Common angle bias limited to +/-5deg is a diagnostic, not a measured correction; retained separately.",
+  "top_down": {
+    "-1": [
+      {
+        "family": 1,
+        "relative_angle": -4.291674136016752,
+        "fd": 1.4693214153618186
+      },
+      {
+        "family": 6,
+        "relative_angle": 42.00401465698667,
+        "fd": 0.9858737251044416
+      },
+      {
+        "family": 7,
+        "relative_angle": -46.41405567908495,
+        "fd": 1.062599711091483
+      }
+    ],
+    "1": [
+      {
+        "family": 1,
+        "relative_angle": 4.291674136016752,
+        "fd": 1.4693214153618186
+      },
+      {
+        "family": 6,
+        "relative_angle": -42.004014656986676,
+        "fd": 0.9858737251044416
+      },
+      {
+        "family": 7,
+        "relative_angle": 46.41405567908495,
+        "fd": 1.062599711091483
+      }
+    ]
+  },
+  "best": [
+    {
+      "metric": "rms",
+      "channel": "V",
+      "hand": -1,
+      "elevation": 85,
+      "roll": 90,
+      "rho": 6.1109157489,
+      "phase": 25,
+      "rms": 9.807396159629759,
+      "near_zero_rms": 11.596759445449079,
+      "bias_within5": 5.0,
+      "rms_with_bias": 6.903753057020852,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 7.226273584127609
+    },
+    {
+      "metric": "near_zero_rms",
+      "channel": "V",
+      "hand": -1,
+      "elevation": 45,
+      "roll": 135,
+      "rho": 6.1109157489,
+      "phase": 0,
+      "rms": 12.771044849525401,
+      "near_zero_rms": 10.57574422729415,
+      "bias_within5": 5.0,
+      "rms_with_bias": 11.339198453814426,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 6.334807673082911
+    },
+    {
+      "metric": "rms_with_bias",
+      "channel": "V",
+      "hand": -1,
+      "elevation": 90,
+      "roll": 0,
+      "rho": 6.1109157489,
+      "phase": -25,
+      "rms": 9.807542372821377,
+      "near_zero_rms": 11.705974623590317,
+      "bias_within5": 5.0,
+      "rms_with_bias": 6.844840010355922,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 7.286030960800748
+    },
+    {
+      "metric": "near_zero_rms_with_bias",
+      "channel": "V",
+      "hand": -1,
+      "elevation": 45,
+      "roll": 135,
+      "rho": 6.1109157489,
+      "phase": 0,
+      "rms": 12.771044849525401,
+      "near_zero_rms": 10.57574422729415,
+      "bias_within5": 5.0,
+      "rms_with_bias": 11.339198453814426,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 6.334807673082911
+    },
+    {
+      "metric": "rms",
+      "channel": "V",
+      "hand": 1,
+      "elevation": 90,
+      "roll": 135,
+      "rho": 6.1109157489,
+      "phase": -25,
+      "rms": 6.064934299846483,
+      "near_zero_rms": 4.514488472091894,
+      "bias_within5": 1.3482155362340604,
+      "rms_with_bias": 5.913183823399325,
+      "near_zero_bias": 1.4275267407641234,
+      "near_zero_rms_with_bias": 4.282846433045896
+    },
+    {
+      "metric": "near_zero_rms",
+      "channel": "V",
+      "hand": 1,
+      "elevation": 65,
+      "roll": 90,
+      "rho": 4.0,
+      "phase": 0,
+      "rms": 7.282964746250254,
+      "near_zero_rms": 4.258967621904517,
+      "bias_within5": 1.6258303912591598,
+      "rms_with_bias": 7.09917255981161,
+      "near_zero_bias": -0.054815598332931696,
+      "near_zero_rms_with_bias": 4.258614851640193
+    },
+    {
+      "metric": "rms_with_bias",
+      "channel": "V",
+      "hand": 1,
+      "elevation": 90,
+      "roll": 0,
+      "rho": 6.1109157489,
+      "phase": -25,
+      "rms": 6.064934299846484,
+      "near_zero_rms": 4.5144884720918945,
+      "bias_within5": 1.3482155362340629,
+      "rms_with_bias": 5.913183823399325,
+      "near_zero_bias": 1.427526740764125,
+      "near_zero_rms_with_bias": 4.282846433045897
+    },
+    {
+      "metric": "near_zero_rms_with_bias",
+      "channel": "V",
+      "hand": 1,
+      "elevation": 45,
+      "roll": 90,
+      "rho": 4.0,
+      "phase": 0,
+      "rms": 6.510457419328923,
+      "near_zero_rms": 4.305940227184696,
+      "bias_within5": 1.415375528633123,
+      "rms_with_bias": 6.3547437337662585,
+      "near_zero_bias": 0.7191445523629363,
+      "near_zero_rms_with_bias": 4.245462560533787
+    },
+    {
+      "metric": "rms",
+      "channel": "Y",
+      "hand": -1,
+      "elevation": 90,
+      "roll": 45,
+      "rho": 6.1109157489,
+      "phase": 25,
+      "rms": 9.114334981857569,
+      "near_zero_rms": 10.91661200663102,
+      "bias_within5": 5.0,
+      "rms_with_bias": 6.067119483652899,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 6.405965528156796
+    },
+    {
+      "metric": "near_zero_rms",
+      "channel": "Y",
+      "hand": -1,
+      "elevation": 45,
+      "roll": 135,
+      "rho": 6.1109157489,
+      "phase": 0,
+      "rms": 12.428523655290403,
+      "near_zero_rms": 9.748910311965062,
+      "bias_within5": 5.0,
+      "rms_with_bias": 10.95019201009912,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 5.40223760824281
+    },
+    {
+      "metric": "rms_with_bias",
+      "channel": "Y",
+      "hand": -1,
+      "elevation": 90,
+      "roll": 135,
+      "rho": 6.1109157489,
+      "phase": 25,
+      "rms": 9.114334981857569,
+      "near_zero_rms": 10.916612006631018,
+      "bias_within5": 5.0,
+      "rms_with_bias": 6.067119483652897,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 6.405965528156797
+    },
+    {
+      "metric": "near_zero_rms_with_bias",
+      "channel": "Y",
+      "hand": -1,
+      "elevation": 45,
+      "roll": 135,
+      "rho": 6.1109157489,
+      "phase": 0,
+      "rms": 12.428523655290403,
+      "near_zero_rms": 9.748910311965062,
+      "bias_within5": 5.0,
+      "rms_with_bias": 10.95019201009912,
+      "near_zero_bias": 5.0,
+      "near_zero_rms_with_bias": 5.40223760824281
+    },
+    {
+      "metric": "rms",
+      "channel": "Y",
+      "hand": 1,
+      "elevation": 90,
+      "roll": 45,
+      "rho": 6.1109157489,
+      "phase": 25,
+      "rms": 5.234177686260835,
+      "near_zero_rms": 3.6768251698141667,
+      "bias_within5": 0.9026841634777918,
+      "rms_with_bias": 5.155751870712673,
+      "near_zero_bias": 0.8467696036635197,
+      "near_zero_rms_with_bias": 3.5779916947486763
+    },
+    {
+      "metric": "near_zero_rms",
+      "channel": "Y",
+      "hand": 1,
+      "elevation": 45,
+      "roll": 45,
+      "rho": 4.0,
+      "phase": 0,
+      "rms": 5.428869136467662,
+      "near_zero_rms": 3.508537950357722,
+      "bias_within5": 1.0508456174889118,
+      "rms_with_bias": 5.326194099832965,
+      "near_zero_bias": 0.015533047686115034,
+      "near_zero_rms_with_bias": 3.50850356612758
+    },
+    {
+      "metric": "rms_with_bias",
+      "channel": "Y",
+      "hand": 1,
+      "elevation": 90,
+      "roll": 0,
+      "rho": 6.1109157489,
+      "phase": -25,
+      "rms": 5.2341776862608365,
+      "near_zero_rms": 3.6768251698141676,
+      "bias_within5": 0.9026841634777939,
+      "rms_with_bias": 5.155751870712673,
+      "near_zero_bias": 0.846769603663521,
+      "near_zero_rms_with_bias": 3.5779916947486763
+    },
+    {
+      "metric": "near_zero_rms_with_bias",
+      "channel": "Y",
+      "hand": 1,
+      "elevation": 45,
+      "roll": 45,
+      "rho": 4.0,
+      "phase": 0,
+      "rms": 5.428869136467662,
+      "near_zero_rms": 3.508537950357722,
+      "bias_within5": 1.0508456174889118,
+      "rms_with_bias": 5.326194099832965,
+      "near_zero_bias": 0.015533047686115034,
+      "near_zero_rms_with_bias": 3.50850356612758
+    }
+  ],
+  "angle_offsets": {
+    "V": {
+      "negative_minus_minus45": -0.676232185283844,
+      "near_zero": 6.140334365786154,
+      "positive_minus_plus45": 8.459555834086188
+    },
+    "Y": {
+      "negative_minus_minus45": -1.6600800633123427,
+      "near_zero": 5.6279860264442005,
+      "positive_minus_plus45": 8.395822030965931
+    }
+  }
+}

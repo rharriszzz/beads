@@ -1,0 +1,21 @@
+{
+  "request": "R250",
+  "base_commit": "6c768105ebab2872861c78ebdd73ffe0e8840704",
+  "r249_freeze_sha256": "77eca4c58e36bbd7bf3d3a7c591094469ce31456b73b176255a191c347c768c9",
+  "image": "beads-photo-2.jpg",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "seed_sha256": "c40831bee1d8d34987f9341954bf9045a7cfee03a27af5762ecfead92445082f",
+  "extraction": "Exact R249 primary; circular sigma30 support5sigma, low2/(2pi sigma), no upper cut; eight qualified candidates and brightest-four shortlist; fast source FFT path parity tested.",
+  "tracking": {
+    "gate": 1.0,
+    "margin": 0.25,
+    "gap_pixels": 60.0,
+    "frame": "tangent-relative axial frequency vector",
+    "brightness_used": false
+  },
+  "density": "Nested 200/500/1000/2000 on a 2000-point equal-arc master grid. Start200; increase based on speed and association stability. Do not retune extraction.",
+  "ambiguity": "All eligible links retained; mutual nearest plus margin required. Tentative gaps never merge identities or supply interpolated measurements.",
+  "broadness": "Largest local quadratic log-power amplitude width >2 Gaussian resolution widths, or nonconcave quadratic. Diagnostic only.",
+  "appearance": "Gaussian-weighted red/yellow/dark/neutral-highlight HSV proxies are descriptive, include paper, and never select or track peaks.",
+  "source_sha256": "2b8d98b1d2491033f837dae32bd70baa300573d802ab0a17f0c5e4ef2e98e541"
+}

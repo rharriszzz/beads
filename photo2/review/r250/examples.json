@@ -1,0 +1,63 @@
+[
+  {
+    "index": 903,
+    "reason": "V0012: accepted branch traverses substantially different angles",
+    "s": 4169.8674354300865
+  },
+  {
+    "index": 1650,
+    "reason": "Y0002: inspect frequency/angle migration near the branch start",
+    "s": 7619.359101284211
+  },
+  {
+    "index": 392,
+    "indices": [
+      391,
+      392,
+      393
+    ],
+    "reason": "Y brightness rank changes while angle/frequency association persists",
+    "association": {
+      "source": "Y:0392:1",
+      "target": "Y:0393:3",
+      "cost": 0.0668918261841138,
+      "margin": 2.2601666595492027,
+      "accepted": true,
+      "kind": "adjacent",
+      "wrap": false,
+      "arc_gap": 4.617793394717864
+    },
+    "s": 1810.1750107293396
+  },
+  {
+    "index": 104,
+    "reason": "V competing adjacent association: identity left unresolved",
+    "s": 480.2505130506412
+  },
+  {
+    "index": 1984,
+    "reason": "Y tentative reappearance after a measured gap",
+    "gap": {
+      "source": "Y:1984:3",
+      "target": "Y:1990:2",
+      "cost": 0.026479069154311773,
+      "margin": null,
+      "accepted": false,
+      "kind": "tentative_gap",
+      "wrap": false,
+      "arc_gap": 27.706760368306277,
+      "unique_gap": true
+    },
+    "indices": [
+      1984,
+      1987,
+      1990
+    ],
+    "s": 9161.702095119923
+  },
+  {
+    "index": 857,
+    "reason": "Largest absolute centerline curvature",
+    "s": 3957.448939273072
+  }
+]

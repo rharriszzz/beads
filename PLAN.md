@@ -1,6 +1,45 @@
 # Photo-2 reconstruction plan
 
-## Current R249 — six-site FFT transfer completed; stop for review
+## Current R250 — dense FFT tracking and four angle fits completed
+
+User supersedes R249's individual-window review proposal with an authorized dense
+full-loop experiment. [Scientific report](photo2/FFT_DENSE_TRACKING.md),
+[all evidence/data](photo2/review/r250/INDEX.md). Started at 200 centers, compared
+500/1000/2000; final 2000 equal-arc points at 4.62px spacing, paired V/Y and exact
+R249 primary extraction. No local FFT retuning. Saved 32,000 original candidates,
+qualified alternatives, accepted/ambiguous graph links and separate tentative gaps.
+All eight candidates continue across the indexing seam in both channels; no
+single track closes uninterrupted around the entire necklace.
+
+User additionally requests least-squares fits to the four most prevalent angle
+ranges. Fitted V/Y means: -45.68/-46.66, -19.43/-18.55, +6.14/+5.63,
++53.46/+53.40 degrees relative to tangent. RMS spreads 3.6–6.6deg, not errors of
+the means. Near-zero feature is strongest/persistent (longest Y 4627px, V 1695px);
+three-peak primary reciprocal support occurs at 36.6% V / 69.3% Y windows, but the
+same supported trio continues at most 125/614px. Rank changes, weak continuations,
+quantization, gaps and large branch migrations are preserved; no forced smooth
+three-family track. The -19deg range contains multiple frequency bands.
+
+Maker identifies near-zero and diagonal signed offsets as helicity cues, with
+intrinsic 6/7 asymmetry. Exact reciprocal model respects unequal diagonals.
+Conditional shared-projection comparison favors source h+1 in V/Y, including a
++/-5deg bias diagnostic, but family/projection/tangent/appearance bias prevents a
+unique calibrated hand claim. Maker's black-bead explanation is preserved; a
+coarse darkness proxy does not establish that it causes most breaks. Power/color
+associations and curvature-associated loss of trio support remain descriptive.
+No indexing, repeat recovery, new segmentation or bead inventory.
+
+Twenty-five tests pass; all 4000 channel measurements exactly replay from the
+photo. Curated plots, numerical CSV/JSON, source/input/parameter hashes and
+verification preserve provenance. Commit/push scoped work and verify exact remote
+and clean state before reporting delivery. Stop for review, no automatic next step.
+Next recommended bounded task: controlled same-geometry appearance/projection
+calibration for both known hands, comparing uniform versus red/yellow/black beads
+and reflection changes; test discontinuity causes and signed-angle systematic bias.
+Recommend Astra/High without asserting active model. No /new needed for review;
+fresh session reasonable before separately authorized implementation.
+
+## Prior R249 — six-site FFT transfer completed; stop for review
 
 [Results and reproduction](photo2/FFT_TRANSFER.md) ·
 [all photographic/FFT/inverse evidence](photo2/review/r249/INDEX.md).
