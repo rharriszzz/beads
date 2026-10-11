@@ -1,0 +1,222 @@
+{
+  "author": "Codex visual review, not maker settings or approved procedure",
+  "stage": "Saved before upper sweep; provisional development choices",
+  "rows": [
+    {
+      "window": "D1",
+      "sigma": 20,
+      "channel": "V",
+      "low": 0.03,
+      "reason": "Bright diagonal central feature remains at .025; .030 removes its brightest remainder, but merges DC and low-frequency structure. Ambiguous; smaller .015 retained in trace.",
+      "ambiguous": true,
+      "evidence": "D1-s20-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 20,
+      "channel": "Y",
+      "low": 0.03,
+      "reason": "Bright diagonal central feature remains at .025; .030 removes its brightest remainder, but merges DC and low-frequency structure. Ambiguous; smaller .015 retained in trace.",
+      "ambiguous": true,
+      "evidence": "D1-s20-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 30,
+      "channel": "V",
+      "low": 0.015,
+      "reason": "Central white core gone at .015; adjacent diagonal orange lobes remain. Separating their tails from DC is uncertain.",
+      "ambiguous": true,
+      "evidence": "D1-s30-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 30,
+      "channel": "Y",
+      "low": 0.015,
+      "reason": "Central white core gone at .015; adjacent diagonal orange lobes remain. Separating their tails from DC is uncertain.",
+      "ambiguous": true,
+      "evidence": "D1-s30-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 40,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Small white core removed by .010; .005 leaves a bright annular remnant.",
+      "ambiguous": false,
+      "evidence": "D1-s40-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 40,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Small white core removed by .010; .005 leaves a bright annular remnant.",
+      "ambiguous": false,
+      "evidence": "D1-s40-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 55,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Narrow core removed by .010; .005 leaves core skirt.",
+      "ambiguous": false,
+      "evidence": "D1-s55-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 55,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Narrow core removed by .010; .005 leaves core skirt.",
+      "ambiguous": false,
+      "evidence": "D1-s55-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 20,
+      "channel": "V",
+      "low": 0.025,
+      "reason": "V has a broad bright center: .025 removes bright core; Y central core disappears at .015. V broader feature may include real structure. Cross-apply both.",
+      "ambiguous": true,
+      "evidence": "D2-s20-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 20,
+      "channel": "Y",
+      "low": 0.015,
+      "reason": "V has a broad bright center: .025 removes bright core; Y central core disappears at .015. V broader feature may include real structure. Cross-apply both.",
+      "ambiguous": true,
+      "evidence": "D2-s20-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 30,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Central bright core disappears at .010; resolved surrounding orange features remain.",
+      "ambiguous": false,
+      "evidence": "D2-s30-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 30,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Central bright core disappears at .010; resolved surrounding orange features remain.",
+      "ambiguous": false,
+      "evidence": "D2-s30-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 40,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Core disappears at .010; .005 leaves a bright rim.",
+      "ambiguous": false,
+      "evidence": "D2-s40-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 40,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Core disappears at .010; .005 leaves a bright rim.",
+      "ambiguous": false,
+      "evidence": "D2-s40-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 55,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "V .005 leaves bright rim, .010 removes it; Y .005 suffices visually. Cross-apply both.",
+      "ambiguous": false,
+      "evidence": "D2-s55-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 55,
+      "channel": "Y",
+      "low": 0.005,
+      "reason": "V .005 leaves bright rim, .010 removes it; Y .005 suffices visually. Cross-apply both.",
+      "ambiguous": false,
+      "evidence": "D2-s55-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 20,
+      "channel": "V",
+      "low": 0.04,
+      "reason": "Bright elongated center remains beyond .030; .040 removes it but may remove a genuine low-frequency pair. No clean DC/side-lobe separation; low .020 alternative explicitly pending maker interpretation.",
+      "ambiguous": true,
+      "evidence": "D3-s20-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 20,
+      "channel": "Y",
+      "low": 0.04,
+      "reason": "Bright elongated center remains beyond .030; .040 removes it but may remove a genuine low-frequency pair. No clean DC/side-lobe separation; low .020 alternative explicitly pending maker interpretation.",
+      "ambiguous": true,
+      "evidence": "D3-s20-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 30,
+      "channel": "V",
+      "low": 0.03,
+      "reason": "Bright merged center still touches .025; .030 removes it, possibly deleting real periodic structure. Ambiguous; .010 alternative in saved sweep.",
+      "ambiguous": true,
+      "evidence": "D3-s30-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 30,
+      "channel": "Y",
+      "low": 0.03,
+      "reason": "Bright merged center still touches .025; .030 removes it, possibly deleting real periodic structure. Ambiguous; .010 alternative in saved sweep.",
+      "ambiguous": true,
+      "evidence": "D3-s30-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 40,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Distinct bright central core removed at .010; adjacent separated lobes retained.",
+      "ambiguous": false,
+      "evidence": "D3-s40-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 40,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Distinct bright central core removed at .010; adjacent separated lobes retained.",
+      "ambiguous": false,
+      "evidence": "D3-s40-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 55,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Narrow core removed at .010; .005 leaves a bright skirt.",
+      "ambiguous": false,
+      "evidence": "D3-s55-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 55,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Narrow core removed at .010; .005 leaves a bright skirt.",
+      "ambiguous": false,
+      "evidence": "D3-s55-lower.png"
+    }
+  ]
+}

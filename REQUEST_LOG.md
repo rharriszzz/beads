@@ -5642,3 +5642,86 @@ stop for proposal approval. First authorized implementation milestone would be
 the three-location review packet, not automatic transfer/helicity work. Recommend
 Astra/High without asserting current model identity; no /new for review, consider
 /new before implementation. User controls session/model changes.
+
+## R248 — Authorized three-location FFT development, side-lobe and bright-pair clarifications
+
+User: “ok, please proceed.” Applied this to R247's approved first implementation
+milestone only: three photographic development locations and illustrated review
+before any transfer freeze or helicity work. Preflight daisy, branch/upstream
+photo-2-strategy-v3, clean/no stashes, local/remote
+1a42697c8b9b2a72ce320168ad9125d780a4a872. Initial network DNS failure retried with
+approved escalation; exact remote matched. Read current AGENTS/plan/handoff/log,
+R247 proposal, relevant source/method/geometry records. No older task or subagents.
+
+Declared D1=S1, D2=S4, D3=C6 using raw context/geometry before new spectra: two
+straight sections with differing appearance and one gently curved section.
+Predeclared six transfer sites but never evaluated them. Native circular Gaussian
+sigma20/30/40/55, support5sigma with negligible edge weight, no rotation,
+resampling, normalization, mean removal or fusion. Paired original V and source
+Y, same physical axes/display rules. Source explorer masks/channels/FFT/peak
+finder and phase-preserving inverse reused. New code fft_spectrum_led.py and
+fft_spectrum_led_evidence.py; new tests test_fft_spectrum_led.py.
+
+Saved lower grid and visual decisions before upper sweep. Fixed dB scales,
+explicit cycles/pixel and explorer percent conversion, lower/upper traces,
+radial-profile diagnostic, native raw/Gaussian images, marked candidate FFTs,
+individual real inverses and phase-crest overlays. Up to8 qualified alternatives;
+forced origin excluded, local prominence/separation rechecked, cutoff-created
+maxima rejected against unfiltered neighborhoods. Window-resolution scales are
+NOT confidence intervals. Preserve clipping and extra/missing/ambiguous peaks.
+No physical1/6/7 labels or photographic hand fitting influences selection.
+
+First-pass central removal was too aggressive in several small windows. Asked
+with D3 sigma20 lower-sweep image whether to keep side lobes (.015–.020), remove
+the full merged bright feature (.040), or mark ambiguous. Maker answered:
+**“Keep the side lobes.”** Saved exact answer and interpretation. Refined seven
+small-window channel cases; original decisions, measurements and search traces
+remain in review/r248/first-pass. Exact numeric cutoffs remain Codex choices,
+not supplied maker settings. For D3 sigma20 .040→.020, V retains3 candidates
+with1 clipped versus3 all clipped; Y retains4 with2 clipped versus3 all clipped.
+Upper bounds held fixed for controlled comparison and complete sweeps replayed.
+
+Maker then clarified: “The idea is to identify 3 or four pairs of peaks and
+exclude the central peak.  We may not have to filter out the peaks farther away
+from the center, since we are looking for the brightest 3 or four pairs of peaks.”
+Saved verbatim. Current development comparison uses only the same central
+exclusion, no upper rejection, highlighting brightest3 plus a fourth alternative.
+Brightness is peak-bin squared magnitude; integrated pair power remains separate.
+Same widths, sites, lower choices and qualification rules; no further tuning.
+A numeric preview was inspected before saving the comparison protocol, disclosed
+as development, not frozen/blind evidence. Optional outer annulus remains saved.
+
+No-upper preserves brightest3 identities in23/24 cases and brightest4 in19/24.
+This is setting agreement, not an accuracy claim. D1 sigma20 Y is the top3
+exception. Individual inverse coefficients are identical where pairs survive;
+verified every reused panel mapping exactly and added cards for newly selected
+pairs. Full tables retain153 annulus and192 no-upper alternatives across24cases;
+no-upper all hit the8-alternative review cap, not a claim all eight are physical.
+Ten central-cut cases retain ambiguity. No channel or width is universally best.
+
+Plausible local reciprocal trios: D1 sigma30 V and D2 sigma20 Y. Their signed
+closure residuals are one FFT bin and zero at bin precision respectively; direct
+basis inversion, sign/permutation alternatives and raw spatial crests are shown.
+Possible row structure competes with reflections, appearance, harmonics and
+cutoff effects. No established1/6/7 mapping or helicity. Existing known-hand
+renders remain available; added three-wave/mirror mathematics tests, no render
+sweep or new photo hand score. Direction plot has three development distances
+only, no invented tracks or global consistency claim.
+
+Created FFT_SPECTRUM_LED.md, FFT_SPECTRUM_LED_REVIEW.md, curated r248 evidence and
+index; updated plan/handoff/methods/FFT notes and marked R247 as historical approved
+proposal. Preserved maker clarifications and superseded numeric attempts. Twelve
+source/mask/phase/geometry/artifact tests pass. Exact numerical replay of24annulus
+and24no-upper cases, every reused individual inverse exact, two representative
+full cards byte-identical. Input/code/artifact hashes in verification.json;
+local links and whitespace checked. Routine scratch output ignored, curated
+review evidence tracked. Existing scene/photo/source/prior measurements untouched.
+
+Next concrete task: review preserved side lobes and the D1 V/D2 Y examples using
+brightest3/4 with upper rejection optional, then decide whether extraction rules
+can be frozen. Two small follow-up review questions are recorded; no answer or
+freeze inferred. Stop before six-site transfer or photographic helicity tests;
+no segmentation, inventory, indexing, pattern or global optimization. Scoped
+commit/push and exact remote/clean verification at this bounded stop. Recommend
+Astra/High without claiming active model; no /new needed for review. User controls
+model/session switching. Delivery verification is reported after commit/push.

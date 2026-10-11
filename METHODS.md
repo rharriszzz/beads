@@ -26,12 +26,16 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
-Proposed next: [R247 spectrum-led width/band calibration](photo2/FFT_SPECTRUM_LED_PLAN.md).
-Primary maker procedure clears the central spike, narrows the outer band until
-opposite direction pairs are distinguishable, then inspects inverse spatial
-patterns. Compare circular Gaussian widths including sigma20 on the photograph,
-preserving V/Y. Freeze selection before transfer or hand scoring. This is a
-proposal awaiting approval, not implemented functionality or a validated estimator.
+Implemented [R248 photographic FFT development](photo2/FFT_SPECTRUM_LED.md):
+three locations, circular sigma20/30/40/55, paired V/Y, recorded spectrum-led
+cutoff sweeps, peak tables, phase-preserving inverse cards and reciprocal
+alternatives. Maker clarified **keep the side lobes**, then **brightest3/4
+noncentral pairs; upper rejection optional**. Current no-upper comparison
+preserves both updates and earlier annulus evidence. Source masks/FFT/pairs are
+tested functionality; peak qualifications/manual choices remain experimental.
+No transfer freeze, physical1/6/7 recovery or photographic helicity validation.
+See [review stop](photo2/FFT_SPECTRUM_LED_REVIEW.md) and
+[original proposal](photo2/FFT_SPECTRUM_LED_PLAN.md).
 
 Implemented [R244–R246 three-way FFT comparison](photo2/FFT_CURVATURE.md):
 geometry-based straight/curved sampling, circular Gaussian baseline, elliptical
@@ -40,7 +44,7 @@ frequency uncertainty, inverse-phase evidence, known-hand controls and guarded
 resampling. Includes circular/elliptical rotation explanation, finite-tail checks
 and band-pass provenance. Increased repeatability does not validate lattice
 families or helicity. Maker's spectrum-led cutoff selection remains a distinct,
-not-yet-reproduced next test; saved Gaussian startup defaults are not run settings.
+procedure investigated in R248; saved Gaussian startup defaults are not run settings.
 
 See also the implemented [R243 paired V/Y Gaussian FFT experiment](photo2/FFT_HELICITY.md):
 input native RGB plus an approximate image-derived centerline and assisted scale

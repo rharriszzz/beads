@@ -1,0 +1,8 @@
+{
+  "request": "R248",
+  "question": "D3 sigma20: keep side lobes around .015\u2013.020 cycles/pixel, remove whole merged bright feature around .040, or ambiguous?",
+  "answer": "Keep the side lobes",
+  "interpretation": "Exclude DC-centered spike while preserving adjacent bright directional lobes. Brightness alone does not make a noncentral feature removable background.",
+  "numeric_status": "User chose interpretation, not an exact numeric cutoff.",
+  "scope": "Apply consistently to ambiguous small-window development choices; preserve first pass. No transfer or helicity authorized at this checkpoint."
+}

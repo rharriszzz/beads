@@ -1,5 +1,10 @@
 # Spectrum-led FFT direction experiment — R247 proposal
 
+Historical proposal: approved in R248; the first milestone and subsequent maker
+clarifications are in [the development report](FFT_SPECTRUM_LED.md). Current
+instruction preserves side lobes and prioritizes brightest3/4 noncentral pairs;
+upper rejection is optional. No transfer procedure has been frozen.
+
 **Proposal only; stop for user approval before implementation.** The photograph
 is the primary problem. First establish reproducible directional structure;
 helicity comparison must not influence location, width, band or peak selection.

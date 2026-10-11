@@ -1,0 +1,230 @@
+{
+  "author": "Codex visual review, not maker settings or approved procedure",
+  "stage": "Updated after maker clarification; first-pass JSON immutable in first-pass/",
+  "rows": [
+    {
+      "window": "D1",
+      "sigma": 20,
+      "channel": "V",
+      "low": 0.015,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D1-s20-lower.png",
+      "first_pass_low": 0.03
+    },
+    {
+      "window": "D1",
+      "sigma": 20,
+      "channel": "Y",
+      "low": 0.015,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D1-s20-lower.png",
+      "first_pass_low": 0.03
+    },
+    {
+      "window": "D1",
+      "sigma": 30,
+      "channel": "V",
+      "low": 0.015,
+      "reason": "Central white core gone at .015; adjacent diagonal orange lobes remain. Separating their tails from DC is uncertain.",
+      "ambiguous": true,
+      "evidence": "D1-s30-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 30,
+      "channel": "Y",
+      "low": 0.015,
+      "reason": "Central white core gone at .015; adjacent diagonal orange lobes remain. Separating their tails from DC is uncertain.",
+      "ambiguous": true,
+      "evidence": "D1-s30-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 40,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Small white core removed by .010; .005 leaves a bright annular remnant.",
+      "ambiguous": false,
+      "evidence": "D1-s40-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 40,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Small white core removed by .010; .005 leaves a bright annular remnant.",
+      "ambiguous": false,
+      "evidence": "D1-s40-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 55,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Narrow core removed by .010; .005 leaves core skirt.",
+      "ambiguous": false,
+      "evidence": "D1-s55-lower.png"
+    },
+    {
+      "window": "D1",
+      "sigma": 55,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Narrow core removed by .010; .005 leaves core skirt.",
+      "ambiguous": false,
+      "evidence": "D1-s55-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 20,
+      "channel": "V",
+      "low": 0.015,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D2-s20-lower.png",
+      "first_pass_low": 0.025
+    },
+    {
+      "window": "D2",
+      "sigma": 20,
+      "channel": "Y",
+      "low": 0.015,
+      "reason": "V has a broad bright center: .025 removes bright core; Y central core disappears at .015. V broader feature may include real structure. Cross-apply both.",
+      "ambiguous": true,
+      "evidence": "D2-s20-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 30,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Central bright core disappears at .010; resolved surrounding orange features remain.",
+      "ambiguous": false,
+      "evidence": "D2-s30-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 30,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Central bright core disappears at .010; resolved surrounding orange features remain.",
+      "ambiguous": false,
+      "evidence": "D2-s30-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 40,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Core disappears at .010; .005 leaves a bright rim.",
+      "ambiguous": false,
+      "evidence": "D2-s40-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 40,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Core disappears at .010; .005 leaves a bright rim.",
+      "ambiguous": false,
+      "evidence": "D2-s40-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 55,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "V .005 leaves bright rim, .010 removes it; Y .005 suffices visually. Cross-apply both.",
+      "ambiguous": false,
+      "evidence": "D2-s55-lower.png"
+    },
+    {
+      "window": "D2",
+      "sigma": 55,
+      "channel": "Y",
+      "low": 0.005,
+      "reason": "V .005 leaves bright rim, .010 removes it; Y .005 suffices visually. Cross-apply both.",
+      "ambiguous": false,
+      "evidence": "D2-s55-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 20,
+      "channel": "V",
+      "low": 0.02,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D3-s20-lower.png",
+      "first_pass_low": 0.04
+    },
+    {
+      "window": "D3",
+      "sigma": 20,
+      "channel": "Y",
+      "low": 0.02,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D3-s20-lower.png",
+      "first_pass_low": 0.04
+    },
+    {
+      "window": "D3",
+      "sigma": 30,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D3-s30-lower.png",
+      "first_pass_low": 0.03
+    },
+    {
+      "window": "D3",
+      "sigma": 30,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Maker says keep side lobes. Use the lower alternative visible in the saved sweep to preserve noncentral bright structure; DC/side overlap remains ambiguous. One explicit refinement, no exact maker numeric setting.",
+      "ambiguous": true,
+      "evidence": "D3-s30-lower.png",
+      "first_pass_low": 0.03
+    },
+    {
+      "window": "D3",
+      "sigma": 40,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Distinct bright central core removed at .010; adjacent separated lobes retained.",
+      "ambiguous": false,
+      "evidence": "D3-s40-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 40,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Distinct bright central core removed at .010; adjacent separated lobes retained.",
+      "ambiguous": false,
+      "evidence": "D3-s40-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 55,
+      "channel": "V",
+      "low": 0.01,
+      "reason": "Narrow core removed at .010; .005 leaves a bright skirt.",
+      "ambiguous": false,
+      "evidence": "D3-s55-lower.png"
+    },
+    {
+      "window": "D3",
+      "sigma": 55,
+      "channel": "Y",
+      "low": 0.01,
+      "reason": "Narrow core removed at .010; .005 leaves a bright skirt.",
+      "ambiguous": false,
+      "evidence": "D3-s55-lower.png"
+    }
+  ],
+  "maker_clarification_sha256": "3905be6d524f31da4a75a3ba092ffa5ad911bfc2dfcfb168e74ecea65e4034ff"
+}

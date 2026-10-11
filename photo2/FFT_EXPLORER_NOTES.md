@@ -1,5 +1,16 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R248 — development replay and latest maker clarifications
+
+[Photographic development report](FFT_SPECTRUM_LED.md) and
+[illustrated review](FFT_SPECTRUM_LED_REVIEW.md). R247 approved; first milestone
+implemented at three locations with circular sigma20/30/40/55 and paired V/Y.
+Maker says **keep side lobes** when removing DC, then clarifies **identify three
+or four brightest noncentral pairs; distant-peak filtering may be unnecessary**.
+Both updates are recorded verbatim; current no-upper comparison holds widths and
+lower cuts fixed. Prior annulus sweeps remain as optional evidence. No unique
+physical-family mapping, no freeze, no transfer sites or hand comparison yet.
+
 ## R247 — maker method primary; next experiment proposed only
 
 [Current spectrum-led/width proposal](FFT_SPECTRUM_LED_PLAN.md) is the active

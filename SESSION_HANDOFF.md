@@ -1,6 +1,43 @@
 # Beads session handoff — new branch
 
-## Current R247 — spectrum-led directions/width proposal; approval required
+## Current R248 — photographic FFT development delivered; review before freeze
+
+User approved R247 with “ok, please proceed.” Implemented only its first
+milestone: three raw/geometry-selected locations, circular Gaussian sigma20/30/
+40/55 native pixels, full5sigma support, matched original V/Y. Explorer channel,
+Gaussian, FFT and conjugate machinery reused; native pixels and inverse phases
+preserved. [Report](photo2/FFT_SPECTRUM_LED.md), [illustrated review](photo2/FFT_SPECTRUM_LED_REVIEW.md),
+[all evidence](photo2/review/r248/INDEX.md). Six transfer sites were predeclared
+but NOT computed; no photographic helicity scores or assignments ran.
+
+Two maker clarifications during development override the earlier numeric replay:
+(1) **“Keep the side lobes”**: remove the DC-centered spike without erasing nearby
+bright noncentral structure. Seven small-window choices were refined; first-pass
+choices/measurements remain in review/r248/first-pass. Maker chose interpretation,
+not exact cutoffs. (2) Aim for **three or four brightest noncentral pairs**;
+filtering farther peaks may be unnecessary. Current comparison has no upper
+rejection, highlights brightest3 plus fourth alternative, and keeps extra
+candidates in data. Outer annulus is optional, not a required selection step.
+Removing the upper cut keeps the same brightest3 in23/24 cases and brightest4
+in19/24; method agreement, not extraction accuracy. Current no-upper figures
+and inverse-panel mapping are linked from review/r248/INDEX.md.
+Read both maker-clarification.json and bright-pairs-clarification.json.
+
+Plausible reciprocal trios: D1 sigma30 V and D2 sigma20 Y; extra, weak, clipped,
+harmonic and appearance-driven alternatives remain. Signed reciprocal closure
+and phase-preserving inverses support discussion, not physical1/6/7 labels or a
+validated three-direction extractor. Resolution bars are window blur scales,
+not confidence intervals. No universal width/channel winner or unique hand.
+
+Next concrete task: review retained side lobes and D1 V/D2 Y examples using the
+latest brightest3/4 interpretation; freeze width/selection/display/ambiguity
+rules only when understandable and agreed. Stop before six-site transfer or
+helicity comparisons. No older segmentation/index/pattern task resumes. Twelve
+source/numerical/geometry tests and scoped reproduction checks; commit/push and
+verify exact remote/clean state at this bounded stop. Recommend Astra/High
+without asserting active model; no /new needed for review. User controls switching.
+
+## Prior R247 — spectrum-led directions/width proposal; approval required
 
 User reviewed R244–R246 and makes the original interactive procedure primary:
 raise lower cutoff until the bright central spike disappears, lower upper cutoff
