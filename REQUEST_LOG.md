@@ -6042,3 +6042,142 @@ multiple orientations before global prediction/indexing. h+1 stays a strong
 working expectation, not proven. Stop here after delivery. Recommend Astra/High
 and /new before the separately authorized fitting implementation; user controls
 switching. No new active-model identity or usage is asserted.
+
+## R253 — Predict and fit visible bead locations across the necklace
+
+User authorizes a bounded but substantial end-to-end global experiment on
+photo-2-strategy-v3, beginning from R252 commit90c8325 and unchanged310 reviewed
+observations (151red/159yellow). Preserve all historical evidence and provenance.
+Estimate total physical count, meaningful surface visibility, and distinguishable
+visible-body count separately, including modeled exposed but hard-to-observe black
+bodies. Investigate the direction1 near-zero FFT using local tangent-frequency
+components integrated over9236px arc, starting around2700 without fixing that N.
+Search broad2000–3600 integer counts, refine minima, require integer minor turns
+and exact closed-loop indexing with ratio near6.5.
+
+Choose a clear trusted maker-supported seed as relative k=0; retain observation
+IDs and +/-1,+/-6,+/-7 neighbors, conditional families A(+1,+7,+6) and
+B(-1,+6,+7), their local lattice charts and global reversal. Fit both source
+helicities equally despite working expectation favoringh+1. Use source rounded
+geometry, noncircular planar spline and constrained camera; distinguish physical
+centers, outward points, visible surfaces and photographed interiors. Fit one-to-one
+observed identities with sector balancing, whole-section holdouts, interior/surface
+membership and retained correspondence alternatives; do not reward dense predictions
+or require every modeled bead to have a color observation.
+
+Compare rigid, small smooth zero-net longitudinal stretch, periodic winding-phase
+correction and both with regularization and closure. Quantify mismatch before any
+centerline correction. Report full residual distributions/SSE/RMS, ownership,
+visibility conflicts, color/sector breakdowns, heldout scores and deformation sizes.
+Produce full-loop exposed predictions without invented colors or photo confirmations,
+matched full-resolution both-hand overlays, readable local/index crops and count,
+hand,residual,stretch,twist graphs. Use sparse approximations broadly and exact
+surface checks selectively. If full task exceeds one round, prioritize reproducible
+global both-hand/count/heldout comparison rather than estimator-only work.
+
+Run geometry/index/closure/visibility/fitting tests, preserve source hashes and
+commands, document limits, commit/push and verify exact remote/clean state. Stop
+with results, remaining ambiguity and next scientific recommendation. Minor tuning
+decisions are authorized; no repeated approvals or unrequested delegation.
+
+Preflight: daisy, correct branch/upstream, clean at90c8325, no stashes. Fetch
+verified0/0 divergence. Read current records, R252 inventory/report, prior count,
+placement/registration reports, local neighbor graph, source beads.pov, rounded
+surface and camera code. Four methods presented; selected sparse normalized
+support fitting plus exact-surface audits and independent FFT count integration.
+Protocol and frozen whole-sector split saved underphoto2/review/r253.
+
+### R253 outcome — initial end-to-end global comparison
+
+Implemented the Python 3.12 global geometry experiment, diagnostics, numerical
+replay and verification. [Scientific report](photo2/GLOBAL_GEOMETRY_R253.md) and
+[evidence index](photo2/review/r253/INDEX.md) contain the complete results,
+parameters, assumptions, figures and reproduction commands. All source geometry,
+spline, photo, R252 observations and older experiments remain unchanged. No
+agents, new segmentation, palette-sequence prior or synthetic appearance used.
+
+Screened every integer N=2000–3600 for both hands, with 16 phase/origin starts:
+3,202 count/hand cases and 51,232 registrations. Refined 44 rigid candidates and
+two additional high-density controls. The 46 final models each received 17 exact
+surface registration trials and full positive-patch/ray audits. Compared rigid,
+stretch, twist and both with equal hand budgets and common count sets. Fitted
+254 observations in 24 equally weighted sectors; withheld 56 in eight complete
+sectors, with a 33-point core at least 60px from training-sector boundaries.
+Historical whole-photo information limits prospective independence. Retained
+all minima, source IDs, one-to-one assignments and correspondence alternatives.
+
+Independent FFT tangent-component integrals give N=2674.75 (V) / 2679.22 (Y).
+The narrower angle selection gives 2664.94 / 2679.00. Y covers 96.3% of 2,000
+windows, with maximum interpolation gap 41.6px. Overlap is not independent
+replication; a coherent half-bin frequency shift changes N by about 100 beads.
+Best-supported working count is approximately 2670–2700, not established N=2671.
+Leading tested photo model: N=2671, T=411, h=+1. This source-compatible search
+uses T=nearest(N/6.5). Competing 2670/2679/2698, old 2833, lower 2312/2529 and
+dense 3592 controls remain in the record. Model closure is not observed closure.
+
+Best sampled training scores are 0.1194 (+1, both) and 0.1319 (−1, twist), a
+9.5% advantage for +1. Full-patch heldout scores are 0.1702 versus 0.1864; the
+−1 rigid score of 0.1741 is close, and rigid hand ranking reverses on holdout.
+Thus h=+1 remains favored, not proven. N=3592 still obtains 9.70px center RMS,
+but much worse full-patch training score 0.2831. This illustrates why center
+proximity alone is inadequate. No nominee is selected using heldout scores.
+Leading +1 maximum/RMS stretch is 0.0873% / 0.0496%; added winding phase is
+2.247° / 1.326°. Maximum longitudinal shift is 0.91px. Physical stretch of
+1–2% is not established as necessary; actual physical stretch is not measured.
+
+Leading +1 all-point center distances: mean 8.715px, SSE 28781.77px²,
+RMS 9.636px, median 8.363px, p90 14.632px. Visible-surface distances: mean
+0.174px, SSE 472px², RMS 1.234px, median/p90 zero. Exact membership zero does
+not mean zero center error. Ownership succeeds for 298/310 representatives
+and 55/56 heldout points; full heldout patch support is 89.24%. All statistics,
+worst residuals, colors and 32-sector breakdowns are retained for every model.
+Worst leading surface residual: C252-H4-B09, red, (1455,3008), 18.44px.
+
+Six complete prediction CSVs and native photo overlays preserve every physical
+index, including hidden beads, both coordinate charts, centers, outward points,
+visible centroids, area/occlusion criteria and conditional associations. All
+predicted colors remain unknown. Meaningful visibility (at least 10% of own
+unobstructed projected area and 24px²) gives 1648–1652 bodies on 2px grids.
+The stricter geometric distinguishability proxy (25% and 80px²) gives 1494–1532.
+Two contrasting 1px checks give 1648/1653 meaningful and 1533/1494 stricter
+counts; unfinished-ray bounds are saved. Report about 1,650 visible and 1,500
+geometrically distinguishable near N=2670, not 1,500 confirmed photographed
+identities. Actual all-color identifiability remains unmeasured; black beads
+and colors are never invented from predicted exposure.
+
+Origin is C252-A948 = maker 20 = C. The complete six-neighbor star and 27-node
+maker chart retain families A (+1,+7,+6), B (−1,+6,+7), global reversal and
+coordinate-cut transitions. Leading rigid +1 owns 23/27 maker points under A;
+−1 owns 24/27 under B. Corrected +1 owns 22/27. The −1 twist nominee owns only
+11/27 and fails seed ownership, explicitly retained as unresolved. Leading +1
+has 242 within-model unique assignments and 68 unresolved; none is certified as
+a unique global photo index across models. All 46 candidate correspondence sets
+are preserved per observed body. Raw-photo illustrations cover the seed, varied
+orientations and the bottom failure. Minor tuning needed no questions, and
+previous maker identity facts were not re-asked.
+
+Camera sensitivity inverse-projects the same image spline before physical-arc
+reparameterization. Nominal EXIF-derived focal length 4799px (and twice that)
+is not calibrated given unknown crop/distance. Same-index centers move 26–97px
+RMS at nominal focal, 13–49px at twice it. This is an unrefitted sensitivity,
+not a successful perspective fit. Sector residual vectors are saved; no spline
+correction or indiscriminate smoothing was performed. Independent T±1 trials
+at fixed N, fitted perspective and stronger graph constraints remain outside
+this bounded round, explicitly limiting exact-count/global-index claims.
+
+Thirty relevant geometry, closure, index, visibility, assignment and inventory
+tests pass. Twenty-two coarse minima and the complete leading 310-point and
+full-patch audit replay exactly. Six prediction ledgers have complete unique
+0..N−1 sets, consistent charts and unknown predicted colors. Source integrity
+is checked byte-for-byte against 90c8325. The manifest seals 149 evidence
+artifacts and 20 source hashes; links and whitespace pass review. First-run
+serialization errors (circular trial reference and EXIF Rational) were fixed
+before replay; no delivered result depends on an interrupted save.
+
+Next bounded task: fit constrained pinhole/near-orthographic models with maker
+neighbor relations and distributed local stars; require seed ownership, retain
+both hands/count basins, and evaluate heldout identity stability. Only then
+consider constrained centerline changes. No repeat recovery or automatic next
+aspect. Recommend GPT-6 Astra / High and /new before that implementation; no
+new active-model status supplied. Commit/push scoped work and verify exact
+remote/clean state before claiming delivery.

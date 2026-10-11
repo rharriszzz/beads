@@ -1,0 +1,44 @@
+{
+  "request": "R253",
+  "base_commit": "90c8325",
+  "scope": "Initial end-to-end global comparison, explicitly permitted bounded priority; no recovered color sequence or accepted global indices",
+  "methods_considered": [
+    "FFT tangent-frequency arc-length integral",
+    "Sparse normalized projected-support assignment",
+    "Exact rounded-annulus first-visible ownership",
+    "Regularized periodic longitudinal redistribution and winding-phase correction"
+  ],
+  "observations": "Unchanged R252 accepted.csv, with inventory provenance and existing positive R201 patch aliases",
+  "anchor": "C252-A948 = historical C = maker 20",
+  "split": "Sectors 4,8,12,16,20,24,28,32 entirely held out; fit remaining sectors equally weighted; source spline/FFT/review historically used whole photograph, so not independent prospective validation",
+  "scan": {
+    "N_min": 2000,
+    "N_max": 3600,
+    "N_step": 1,
+    "helicities": [
+      1,
+      -1
+    ],
+    "minor_phases": 8,
+    "origin_offsets_beads": [
+      -0.25,
+      0.25
+    ],
+    "camera_elevation": 89
+  },
+  "closure": "T=floor(N/6.5+0.5), integral; exact q=N/T; periodic corrections; no omitted hidden indices",
+  "rigid": "Common union of 3 separated minima per hand, 2698,2700,2833 and integrated FFT count. Equal 3 camera starts; 4 assignment/least-squares rounds, <=45 nfev each. Neighboring integers +/-3 around each hand's leading rigid count, equal 2 starts.",
+  "approximation": "Ellipsoidal screen support with axial/radial ratio .7; include minor radial dot eye > -.35, 12 nearest candidates, one-to-one minimum-cost assignment; exact shell holes and occlusion audited subsequently",
+  "objective": "Equal-sector mean[max(sqrt(q)-.85,0)^2 + .15*q], q=dimensionless projected ellipse Mahalanobis squared distance, plus squared regularizers. No color prior, FFT prior, free density bonus, or heldout selection.",
+  "camera": "Constrained orthographic source projection; elevation 70..89.9deg, roll -180..180, translation +/-15px. No calibrated elevation or perspective claim.",
+  "centerline": "Frozen existing periodic spline; camera inverse maps to planar coordinates. Source physical row pitch determines global scale for each integral T. No flexible centerline correction.",
+  "deformations": "Two periodic harmonics (4 coefficients each). Longitudinal derivative coefficients +/-0.005, total derivative <=2%; integral exactly zero. Additional winding phase coefficients +/-3deg, total <=12deg, exact periodic closure. Corrections applied independently in material-index coordinate.",
+  "regularization": ".15 times [dx/30,dy/30,stretch_coeff/.015,twist_coeff/(20deg)] residual vector; added squared norm. Engineering choices, not calibrated priors.",
+  "ablations": "Rigid, stretch, twist, both for common union of best rigid count each hand and historical2698/2833. Corrections start at zero; same 4 rounds <=70nfev per hand/model.",
+  "audit": "One-to-one exact patch-ownership reranking, training identities reserved before holdout matching. Audit all310 representatives and full existing small R201 positive patches. Preserve sparse-screen and final assignments separately. Surface-distance raster2px only for failed exact representative rays, within +/-40px. No minor-outward exposure gate.",
+  "visibility": "Complete conservative projected bounds on2px global grid. Meaningful visible area >=10% unobstructed same-body projected area and>=24px2. Geometric distinguishability proxy >=25% and>=80px2, independent of color; not established photo identifiability. Include5/10/20/25/40% threshold sensitivity.",
+  "limitations": "Finite search and local minima, uncertain spline/camera/source dimensions, approximate screening loss and limited surface fitting, integer T nearest nominal6.5 only, no independent observed all-visible denominator. All indices and black-region positions remain predictions.",
+  "surface_polish": "After proxy fitting, rerank one-to-one candidates by exact first-hit patch fraction plus.15 normalized center quadratic; optimize phase/origin/dx/dy with two deterministic coordinate sweeps, steps8/4deg,.15/.075beads,1.5/.75px,17 trials per model. Use <=9 deterministic real positive points per patch for optimization; audit all pixels. Holdout never used in tuning. Preserve pre-polish parameters/scores.",
+  "controls": "Also retain2312,2529,3592 rigid controls for both signs;3592 uses equal3 camera starts. Refined initial common count set includes2679.46 final surface-audited models.",
+  "selection": "Nominate best training-score rigid and corrected model per hand, plus matched2679 rigid pair. Conditional likelihood is not globally calibrated; anchor ownership conflicts explicitly invalidate confident origin claims. Actual photographed identifiability and exact global indices remain unresolved."
+}

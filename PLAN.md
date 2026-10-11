@@ -1,5 +1,46 @@
 # Photo-2 reconstruction plan
 
+## Current R253 — bounded global geometry comparison completed
+
+[Scientific report](photo2/GLOBAL_GEOMETRY_R253.md) ·
+[All evidence, predictions and commands](photo2/review/r253/INDEX.md).
+Unchanged310 trusted colored observations;254 fit,56 held out in eight entire
+sectors,33 additional holdout-core diagnostics. Both hands receive equal count,
+registration and correction budgets. Every integer2000–3600 screened;46 final
+models receive exact rounded-annulus ownership audits, with one-to-one assignments.
+
+Best-supported working total approximately2670–2700, not exactN. FFT tangent
+frequency integral gives2674.75(V)/2679.22(Y). Leading tested photo model2671,
+411integral turns,h+1. Systematic count uncertainty is of order100beads or more;
+no calibrated interval. Lower-count alternatives and historical2698/2833 preserved.
+Best sampled training scores0.1194(+1) versus0.1319(-1); heldout full-patch scores
+0.1702(+1 corrected) versus0.1864(-1 corrected) or0.1741(-1 rigid). Rigid hand
+ranking reverses on holdout. h+1 remains favored, not uniquely established.
+
+Near2670 models predict~1650 meaningful visible surfaces(>=10% unobstructed area,
+>=24px2),~1500 stricter geometric distinguishability proxies(>=25%,>=80px2).
+Actual photographed identifiability, especially black, remains unmeasured; no
+invented color or photo confirmation.1px/2px and unfinished-ray sensitivity saved.
+Leading +1 correction max/RMS stretch0.0873%/0.0496%,twist2.247/1.326degrees.
+1–2% physical stretch is not established as necessary. All-source loop closure exact.
+
+Origin C252-A948=maker20=C,relativek0; all27 maker graph nodes retain both A/B
+charts and reversal. Leading +1 model has242 conditional unique assignments,
+68unresolved; none certified globally across models. Seed ownership even fails
+for the -1 twist nominee, retained as a failure. Six all-N predictionCSV/overlays,
+46models of alternatives, worst residuals/color/sector metrics and local crops saved.
+Perspective sensitivity preserving the same projected seed moves same-index centers
+by tens of pixels; camera/phase/correspondence remain confounded. No centerline edit.
+
+**Next concrete task:** constrained pinhole/near-orthographic comparison using the
+maker neighbor graph and distributed local stars as explicit identity constraints;
+require seed ownership, retain both hands/count basins, evaluate heldout stability.
+Only then consider constrained centerline correction. Do not start repeat search.
+Stop after scoped commit/push and exact remote/clean verification. Recommend
+GPT-6 Astra / High and /new before that separate implementation; recommendation
+only, no new active-model status supplied. No automatic next aspect.
+
+
 ## Current R252 — trusted colored-observation consolidation completed
 
 **310 distinct reviewed observations: 151 red, 159 yellow.**

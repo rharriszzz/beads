@@ -1641,3 +1641,21 @@ Reproduce the current local background evidence with Python 3.12:
 The linked reports preserve inputs, parameters and hashes. Outputs belong in
 ignored directories; curated question illustrations remain tracked. This methods
 catalog replaces neither those experiment records nor their documented failures.
+
+
+## R253 — closed-loop count, correspondence and exposure comparison
+
+[Global geometry report](photo2/GLOBAL_GEOMETRY_R253.md) and
+[evidence/reproduction](photo2/review/r253/INDEX.md). Integrate measured reciprocal
+frequency tangent components over spline arclength; screen integerN and both hands
+with scale-normalized sparse one-to-one interior support; refine constrained
+registration, separate periodic zero-integral longitudinal redistribution and
+periodic winding phase. Audit rounded-annular first-visible ownership against
+positive patches, keep whole sectors held out and all candidate identities.
+Count substantial visible surface using a per-body unobstructed-area denominator,
+not minor-outward exposure. Preserve all physical indices, covering-chart cuts,
+conditional familyA/B mappings and reversal. Distinguish numerical ray/raster
+uncertainty from unknown photographic identifiability. Pinhole inverse-plane
+sensitivity exposes arc-parameter/camera confounding before centerline deformation.
+Implementation:global_fit_r253.py,r253_diagnostics.py,r253_verify.py; known-count,
+closure,translation,index,front/back-ownership controls and exact numerical replay.

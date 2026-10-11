@@ -1,0 +1,3176 @@
+[
+  {
+    "model_id": "N2670_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2139,
+      "k": 0,
+      "screening_generator_index": 2139,
+      "projected_center": [
+        1346.2232205438247,
+        289.6150019570739
+      ],
+      "center_distance_px": 16.616501359936,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2139,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.45714285714285713,
+      "patch_dominant": 2145,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2139,
+          "k": 0,
+          "exact_audit_cost": 0.6982912080272724
+        },
+        {
+          "generator_index": 2145,
+          "k": 6,
+          "exact_audit_cost": 0.9111733097108718
+        },
+        {
+          "generator_index": 2138,
+          "k": 2669,
+          "exact_audit_cost": 1.0846815444368325
+        },
+        {
+          "generator_index": 2144,
+          "k": 5,
+          "exact_audit_cost": 1.3919145137191324
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1262579135727439,
+      "balanced_patch_support": 0.9395532401171579
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.17750340542179638,
+      "balanced_patch_support": 0.8982777681211348
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.17002328742335635,
+      "balanced_patch_support": 0.9015962746378172
+    },
+    "penalty": 7.506186078306264e-06
+  },
+  {
+    "model_id": "N2670_h+1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2139,
+      "k": 0,
+      "screening_generator_index": 2139,
+      "projected_center": [
+        1347.2584465706423,
+        289.53260496900884
+      ],
+      "center_distance_px": 16.580431684140713,
+      "surface_distance_px": 2.0,
+      "surface_distance_censored": false,
+      "first_owner": 2138,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.6285714285714286,
+      "patch_dominant": 2139,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2139,
+          "k": 0,
+          "exact_audit_cost": 0.5235256342553327
+        },
+        {
+          "generator_index": 2138,
+          "k": 2669,
+          "exact_audit_cost": 1.0129351752148834
+        },
+        {
+          "generator_index": 2145,
+          "k": 6,
+          "exact_audit_cost": 1.1575302489960222
+        },
+        {
+          "generator_index": 2144,
+          "k": 5,
+          "exact_audit_cost": 1.4295390785770077
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1295828093616058,
+      "balanced_patch_support": 0.9370564222271656
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.23517824026403628,
+      "balanced_patch_support": 0.8474589866367213
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.20940237293061592,
+      "balanced_patch_support": 0.8651749205861926
+    },
+    "penalty": 0.000130218727187762
+  },
+  {
+    "model_id": "N2670_h+1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2139,
+      "k": 0,
+      "screening_generator_index": 2139,
+      "projected_center": [
+        1347.037379464998,
+        289.2468205810385
+      ],
+      "center_distance_px": 16.27990587033154,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2139,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.6571428571428571,
+      "patch_dominant": 2139,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2139,
+          "k": 0,
+          "exact_audit_cost": 0.4903031730254199
+        },
+        {
+          "generator_index": 2138,
+          "k": 2669,
+          "exact_audit_cost": 1.0737468240165222
+        },
+        {
+          "generator_index": 2145,
+          "k": 6,
+          "exact_audit_cost": 1.1484053155065337
+        },
+        {
+          "generator_index": 2144,
+          "k": 5,
+          "exact_audit_cost": 1.417057603362361
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.13654502286779438,
+      "balanced_patch_support": 0.9300495079417156
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.21985133081139993,
+      "balanced_patch_support": 0.8597197246510745
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.19009410734563936,
+      "balanced_patch_support": 0.8803026581121072
+    },
+    "penalty": 0.0003535889179578998
+  },
+  {
+    "model_id": "N2670_h+1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2145,
+      "k": 0,
+      "screening_generator_index": 2139,
+      "projected_center": [
+        1364.113224970284,
+        272.0477023945318
+      ],
+      "center_distance_px": 18.138241082130783,
+      "surface_distance_px": 7.211102550927978,
+      "surface_distance_censored": false,
+      "first_owner": 2139,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.6571428571428571,
+      "patch_dominant": 2145,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2145,
+          "k": 0,
+          "exact_audit_cost": 0.7104055406903491
+        },
+        {
+          "generator_index": 2139,
+          "k": 2664,
+          "exact_audit_cost": 0.8119787095126406
+        },
+        {
+          "generator_index": 2138,
+          "k": 2663,
+          "exact_audit_cost": 1.095404325451289
+        },
+        {
+          "generator_index": 2144,
+          "k": 2669,
+          "exact_audit_cost": 1.3712046492511325
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.12804869519243633,
+      "balanced_patch_support": 0.9395239844168476
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.2082374958217644,
+      "balanced_patch_support": 0.8661282276350541
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.18279374467421916,
+      "balanced_patch_support": 0.8849824087838503
+    },
+    "penalty": 0.0004603572114961696
+  },
+  {
+    "model_id": "N2670_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2143,
+      "k": 0,
+      "screening_generator_index": 2143,
+      "projected_center": [
+        1354.1519310855333,
+        282.8554143344227
+      ],
+      "center_distance_px": 12.789963726548569,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2143,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2143,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2143,
+          "k": 0,
+          "exact_audit_cost": 0.11351995066958072
+        },
+        {
+          "generator_index": 2144,
+          "k": 1,
+          "exact_audit_cost": 1.1818054436199406
+        },
+        {
+          "generator_index": 2137,
+          "k": 2664,
+          "exact_audit_cost": 1.248292489582307
+        },
+        {
+          "generator_index": 2138,
+          "k": 2665,
+          "exact_audit_cost": 1.3688097820385423
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.16274112020720854,
+      "balanced_patch_support": 0.9093133322251101
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.15550341565214257,
+      "balanced_patch_support": 0.9125170142408621
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.15782314680104975,
+      "balanced_patch_support": 0.9050557736329115
+    },
+    "penalty": 0.0003898495126716094
+  },
+  {
+    "model_id": "N2670_h-1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2143,
+      "k": 0,
+      "screening_generator_index": 2143,
+      "projected_center": [
+        1354.8098120668037,
+        282.07237812042786
+      ],
+      "center_distance_px": 12.645980919344234,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2143,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2143,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2143,
+          "k": 0,
+          "exact_audit_cost": 0.11717517217916386
+        },
+        {
+          "generator_index": 2144,
+          "k": 1,
+          "exact_audit_cost": 1.2016847329047626
+        },
+        {
+          "generator_index": 2137,
+          "k": 2664,
+          "exact_audit_cost": 1.2262605377771187
+        },
+        {
+          "generator_index": 2138,
+          "k": 2665,
+          "exact_audit_cost": 1.3633747904710465
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1591049081445119,
+      "balanced_patch_support": 0.9144679260165142
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.15552444786049902,
+      "balanced_patch_support": 0.9070571669931774
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.153557443402205,
+      "balanced_patch_support": 0.9038171998236615
+    },
+    "penalty": 0.0005811045978421097
+  },
+  {
+    "model_id": "N2670_h-1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2143,
+      "k": 0,
+      "screening_generator_index": 2143,
+      "projected_center": [
+        1354.9340465744228,
+        281.2019825815494
+      ],
+      "center_distance_px": 12.128054520903001,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2143,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2143,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2143,
+          "k": 0,
+          "exact_audit_cost": 0.11254774583436906
+        },
+        {
+          "generator_index": 2137,
+          "k": 2664,
+          "exact_audit_cost": 1.2214568759743136
+        },
+        {
+          "generator_index": 2144,
+          "k": 1,
+          "exact_audit_cost": 1.2276394529191508
+        },
+        {
+          "generator_index": 2138,
+          "k": 2665,
+          "exact_audit_cost": 1.374053268125664
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1528595986056145,
+      "balanced_patch_support": 0.9177846505991858
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.1627630111368093,
+      "balanced_patch_support": 0.9026992633138917
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.15494029026723144,
+      "balanced_patch_support": 0.9020961251070578
+    },
+    "penalty": 0.0010968472129578412
+  },
+  {
+    "model_id": "N2670_h-1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2143,
+      "k": 0,
+      "screening_generator_index": 2143,
+      "projected_center": [
+        1354.5389693381053,
+        281.32812780577524
+      ],
+      "center_distance_px": 11.927770542160383,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2143,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2143,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2143,
+          "k": 0,
+          "exact_audit_cost": 0.10635666269936618
+        },
+        {
+          "generator_index": 2144,
+          "k": 1,
+          "exact_audit_cost": 1.2124164803279869
+        },
+        {
+          "generator_index": 2137,
+          "k": 2664,
+          "exact_audit_cost": 1.2341173605481601
+        },
+        {
+          "generator_index": 2138,
+          "k": 2665,
+          "exact_audit_cost": 1.3833871456531497
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.15395826209621205,
+      "balanced_patch_support": 0.9175874710967946
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.17999538514948873,
+      "balanced_patch_support": 0.8867519884662335
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.17535620750746206,
+      "balanced_patch_support": 0.8837827381408334
+    },
+    "penalty": 0.0012248293164433654
+  },
+  {
+    "model_id": "N2671_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1344.1539852113588,
+        282.4590438303742
+      ],
+      "center_distance_px": 9.637493490779752,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.8571428571428571,
+      "patch_dominant": 2141,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.19999872085608644
+        },
+        {
+          "generator_index": 2140,
+          "k": 2670,
+          "exact_audit_cost": 1.1644042010703248
+        },
+        {
+          "generator_index": 2147,
+          "k": 6,
+          "exact_audit_cost": 1.1864565113232315
+        },
+        {
+          "generator_index": 2146,
+          "k": 5,
+          "exact_audit_cost": 1.2269860438288402
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.12373621082887998,
+      "balanced_patch_support": 0.9423076725260018
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.20156754817634945,
+      "balanced_patch_support": 0.871715635951088
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.18891107789635284,
+      "balanced_patch_support": 0.8817587363547287
+    },
+    "penalty": 0.0004704507898768569
+  },
+  {
+    "model_id": "N2671_h+1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1343.4724607109035,
+        281.1589085488663
+      ],
+      "center_distance_px": 8.541442709910882,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.8,
+      "patch_dominant": 2141,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.2479904750656871
+        },
+        {
+          "generator_index": 2147,
+          "k": 6,
+          "exact_audit_cost": 1.1058177459793237
+        },
+        {
+          "generator_index": 2140,
+          "k": 2670,
+          "exact_audit_cost": 1.1810292366765331
+        },
+        {
+          "generator_index": 2146,
+          "k": 5,
+          "exact_audit_cost": 1.1825530582735233
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.12773129965216717,
+      "balanced_patch_support": 0.9420067769526518
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.17992954761110383,
+      "balanced_patch_support": 0.8928951468082358
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1829300014833903,
+      "balanced_patch_support": 0.8861346809700607
+    },
+    "penalty": 0.0008490117916109674
+  },
+  {
+    "model_id": "N2671_h+1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1346.4546834181729,
+        284.532642492376
+      ],
+      "center_distance_px": 11.54160213608656,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2141,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.074226557598268
+        },
+        {
+          "generator_index": 2140,
+          "k": 2670,
+          "exact_audit_cost": 1.1142371793885202
+        },
+        {
+          "generator_index": 2146,
+          "k": 5,
+          "exact_audit_cost": 1.2910015178304797
+        },
+        {
+          "generator_index": 2147,
+          "k": 6,
+          "exact_audit_cost": 1.4075106069293903
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1325633031361337,
+      "balanced_patch_support": 0.9336331639997245
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.17301542189201397,
+      "balanced_patch_support": 0.8966734894471351
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.16813209821967362,
+      "balanced_patch_support": 0.8982169967095823
+    },
+    "penalty": 0.00040609870445917635
+  },
+  {
+    "model_id": "N2671_h+1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1345.4000097292908,
+        285.44541497879754
+      ],
+      "center_distance_px": 12.459869273769447,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.9428571428571428,
+      "patch_dominant": 2141,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.1461345913268215
+        },
+        {
+          "generator_index": 2140,
+          "k": 2670,
+          "exact_audit_cost": 1.1215973207659358
+        },
+        {
+          "generator_index": 2146,
+          "k": 5,
+          "exact_audit_cost": 1.2471454086608682
+        },
+        {
+          "generator_index": 2147,
+          "k": 6,
+          "exact_audit_cost": 1.3012730294544375
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.12664023742132105,
+      "balanced_patch_support": 0.9382249362676237
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.17022338066380174,
+      "balanced_patch_support": 0.8994447729409024
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1510420299086392,
+      "balanced_patch_support": 0.9143101144953553
+    },
+    "penalty": 0.000679251152611286
+  },
+  {
+    "model_id": "N2671_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1345.8756677040953,
+        281.5640595059631
+      ],
+      "center_distance_px": 8.564961981321437,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2141,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.04156698516446717
+        },
+        {
+          "generator_index": 2142,
+          "k": 1,
+          "exact_audit_cost": 1.0963888596211708
+        },
+        {
+          "generator_index": 2148,
+          "k": 7,
+          "exact_audit_cost": 1.5804848669668647
+        },
+        {
+          "generator_index": 2135,
+          "k": 2665,
+          "exact_audit_cost": 1.6028682158241825
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14117609420486008,
+      "balanced_patch_support": 0.93088864779094
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.1741408214838321,
+      "balanced_patch_support": 0.8938579351356057
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.18687799742516106,
+      "balanced_patch_support": 0.8813938378224412
+    },
+    "penalty": 0.0002664823893122183
+  },
+  {
+    "model_id": "N2671_h-1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1347.3933377385993,
+        280.2733184189942
+      ],
+      "center_distance_px": 7.405575661478688,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2141,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.03005479080517096
+        },
+        {
+          "generator_index": 2142,
+          "k": 1,
+          "exact_audit_cost": 1.1019831512376326
+        },
+        {
+          "generator_index": 2135,
+          "k": 2665,
+          "exact_audit_cost": 1.5329074080730916
+        },
+        {
+          "generator_index": 2136,
+          "k": 2666,
+          "exact_audit_cost": 1.6295348127216767
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14491358847588448,
+      "balanced_patch_support": 0.9260438367046903
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.19465421668937868,
+      "balanced_patch_support": 0.88331355821053
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2197286234201437,
+      "balanced_patch_support": 0.8606749605978802
+    },
+    "penalty": 0.0005121950630157597
+  },
+  {
+    "model_id": "N2671_h-1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1346.7709999472359,
+        281.7293155963537
+      ],
+      "center_distance_px": 8.763297992159183,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2141,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.07083763658028736
+        },
+        {
+          "generator_index": 2142,
+          "k": 1,
+          "exact_audit_cost": 1.0893895130259361
+        },
+        {
+          "generator_index": 2135,
+          "k": 2665,
+          "exact_audit_cost": 1.564577646154958
+        },
+        {
+          "generator_index": 2148,
+          "k": 7,
+          "exact_audit_cost": 1.598809173717183
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14394820602570368,
+      "balanced_patch_support": 0.9285694848233168
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.18793770072718818,
+      "balanced_patch_support": 0.8844394158413412
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.20428015093211904,
+      "balanced_patch_support": 0.8676140008464095
+    },
+    "penalty": 0.0006467137962132921
+  },
+  {
+    "model_id": "N2671_h-1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2141,
+      "k": 0,
+      "screening_generator_index": 2141,
+      "projected_center": [
+        1346.8670178430395,
+        281.61531661843105
+      ],
+      "center_distance_px": 8.658833661409787,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2141,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2141,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2141,
+          "k": 0,
+          "exact_audit_cost": 0.0412045153564426
+        },
+        {
+          "generator_index": 2142,
+          "k": 1,
+          "exact_audit_cost": 1.0918843388157358
+        },
+        {
+          "generator_index": 2135,
+          "k": 2665,
+          "exact_audit_cost": 1.558701700640122
+        },
+        {
+          "generator_index": 2148,
+          "k": 7,
+          "exact_audit_cost": 1.60494532948651
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.13877642518526626,
+      "balanced_patch_support": 0.9326119746343406
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.18812775316117752,
+      "balanced_patch_support": 0.8859485135471398
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.20188574606279228,
+      "balanced_patch_support": 0.8724099958763191
+    },
+    "penalty": 0.0007394178735134653
+  },
+  {
+    "model_id": "N2698_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2162,
+      "k": 0,
+      "screening_generator_index": 2162,
+      "projected_center": [
+        1344.3261070635867,
+        274.5298619801529
+      ],
+      "center_distance_px": 2.2676849959576617,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2162,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2162,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2162,
+          "k": 0,
+          "exact_audit_cost": 0.004843034405531973
+        },
+        {
+          "generator_index": 2161,
+          "k": 2697,
+          "exact_audit_cost": 1.258274235867069
+        },
+        {
+          "generator_index": 2167,
+          "k": 5,
+          "exact_audit_cost": 1.2655095180180134
+        },
+        {
+          "generator_index": 2168,
+          "k": 6,
+          "exact_audit_cost": 1.3995670220171186
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14006041023296292,
+      "balanced_patch_support": 0.9297772257156264
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.2025056091694699,
+      "balanced_patch_support": 0.881919272013684
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.23601987770014285,
+      "balanced_patch_support": 0.8478380126067422
+    },
+    "penalty": 0.0003379066755448503
+  },
+  {
+    "model_id": "N2698_h+1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2162,
+      "k": 0,
+      "screening_generator_index": 2162,
+      "projected_center": [
+        1343.2166393320015,
+        273.837885490846
+      ],
+      "center_distance_px": 2.906741939686331,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2162,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2162,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2162,
+          "k": 0,
+          "exact_audit_cost": 0.00911059720800574
+        },
+        {
+          "generator_index": 2161,
+          "k": 2697,
+          "exact_audit_cost": 1.2559063045273176
+        },
+        {
+          "generator_index": 2168,
+          "k": 6,
+          "exact_audit_cost": 1.3252264565197054
+        },
+        {
+          "generator_index": 2163,
+          "k": 1,
+          "exact_audit_cost": 1.4772945754064075
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1283675580713463,
+      "balanced_patch_support": 0.9359453030455234
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.21221689618368803,
+      "balanced_patch_support": 0.8688589680878811
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.25819078881146035,
+      "balanced_patch_support": 0.8225666345905622
+    },
+    "penalty": 0.0013784317861084386
+  },
+  {
+    "model_id": "N2698_h+1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2162,
+      "k": 0,
+      "screening_generator_index": 2162,
+      "projected_center": [
+        1341.3764884665384,
+        271.41569154153126
+      ],
+      "center_distance_px": 4.887421834835648,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2162,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.7428571428571429,
+      "patch_dominant": 2162,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2162,
+          "k": 0,
+          "exact_audit_cost": 0.2806010969729841
+        },
+        {
+          "generator_index": 2169,
+          "k": 7,
+          "exact_audit_cost": 1.281514695138212
+        },
+        {
+          "generator_index": 2161,
+          "k": 2697,
+          "exact_audit_cost": 1.3255694704343453
+        },
+        {
+          "generator_index": 2168,
+          "k": 6,
+          "exact_audit_cost": 1.3286032839966775
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14298407715058745,
+      "balanced_patch_support": 0.9271068193625256
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.20632720966717638,
+      "balanced_patch_support": 0.877511804906376
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2204281609807391,
+      "balanced_patch_support": 0.8555118905081306
+    },
+    "penalty": 0.0007853314140522638
+  },
+  {
+    "model_id": "N2698_h+1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2162,
+      "k": 0,
+      "screening_generator_index": 2162,
+      "projected_center": [
+        1343.2819855529954,
+        275.115757671698
+      ],
+      "center_distance_px": 3.444420569482614,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2162,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2162,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2162,
+          "k": 0,
+          "exact_audit_cost": 0.011455175584287705
+        },
+        {
+          "generator_index": 2167,
+          "k": 5,
+          "exact_audit_cost": 1.2210039330649325
+        },
+        {
+          "generator_index": 2161,
+          "k": 2697,
+          "exact_audit_cost": 1.2903198476481283
+        },
+        {
+          "generator_index": 2168,
+          "k": 6,
+          "exact_audit_cost": 1.3358347750927089
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1319433624087526,
+      "balanced_patch_support": 0.9327711415499039
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.16954432372858969,
+      "balanced_patch_support": 0.9047619828327389
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2126177210538007,
+      "balanced_patch_support": 0.8622439547096546
+    },
+    "penalty": 0.0015982479759116394
+  },
+  {
+    "model_id": "N2698_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2163,
+      "k": 0,
+      "screening_generator_index": 2163,
+      "projected_center": [
+        1340.6553676220412,
+        268.2811030233797
+      ],
+      "center_distance_px": 7.129732388489841,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2163,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.45714285714285713,
+      "patch_dominant": 2169,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2163,
+          "k": 0,
+          "exact_audit_cost": 0.5817577712107329
+        },
+        {
+          "generator_index": 2169,
+          "k": 6,
+          "exact_audit_cost": 0.8158120933506452
+        },
+        {
+          "generator_index": 2164,
+          "k": 1,
+          "exact_audit_cost": 1.1986908611335427
+        },
+        {
+          "generator_index": 2162,
+          "k": 2697,
+          "exact_audit_cost": 1.3385182745049726
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1442302064480021,
+      "balanced_patch_support": 0.928100745818426
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.21700966958746434,
+      "balanced_patch_support": 0.8606609927603477
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.22045291059777342,
+      "balanced_patch_support": 0.8481988509240156
+    },
+    "penalty": 0.00029477050995902664
+  },
+  {
+    "model_id": "N2698_h-1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2169,
+      "k": 0,
+      "screening_generator_index": 2163,
+      "projected_center": [
+        1363.2027409351049,
+        278.37702825188035
+      ],
+      "center_distance_px": 18.023504889500618,
+      "surface_distance_px": 8.0,
+      "surface_distance_censored": false,
+      "first_owner": 2163,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.7714285714285715,
+      "patch_dominant": 2169,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2169,
+          "k": 0,
+          "exact_audit_cost": 0.5469974655779755
+        },
+        {
+          "generator_index": 2163,
+          "k": 2692,
+          "exact_audit_cost": 0.8226763139518452
+        },
+        {
+          "generator_index": 2164,
+          "k": 2693,
+          "exact_audit_cost": 1.2061921885992004
+        },
+        {
+          "generator_index": 2162,
+          "k": 2691,
+          "exact_audit_cost": 1.3533402068514613
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14374326357928624,
+      "balanced_patch_support": 0.9289234235766102
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.22332053893104414,
+      "balanced_patch_support": 0.8590490981045888
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.22380179229852182,
+      "balanced_patch_support": 0.8544918456438948
+    },
+    "penalty": 0.0003617443475676742
+  },
+  {
+    "model_id": "N2698_h-1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2169,
+      "k": 0,
+      "screening_generator_index": 2163,
+      "projected_center": [
+        1362.3086106188568,
+        282.0164603838348
+      ],
+      "center_distance_px": 18.635110361110083,
+      "surface_distance_px": 6.0,
+      "surface_distance_censored": false,
+      "first_owner": 2163,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9428571428571428,
+      "patch_dominant": 2169,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2169,
+          "k": 0,
+          "exact_audit_cost": 0.3633199060230078
+        },
+        {
+          "generator_index": 2163,
+          "k": 2692,
+          "exact_audit_cost": 0.9985152667165375
+        },
+        {
+          "generator_index": 2164,
+          "k": 2693,
+          "exact_audit_cost": 1.2054647774538123
+        },
+        {
+          "generator_index": 2170,
+          "k": 1,
+          "exact_audit_cost": 1.3061283485121142
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.15015322523324906,
+      "balanced_patch_support": 0.9223411726170045
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.1969837233529201,
+      "balanced_patch_support": 0.8727189186960772
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.18346615044942674,
+      "balanced_patch_support": 0.8767636087321089
+    },
+    "penalty": 0.0005195597413548489
+  },
+  {
+    "model_id": "N2698_h-1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2163,
+      "k": 0,
+      "screening_generator_index": 2163,
+      "projected_center": [
+        1342.5117399099497,
+        273.55863994020274
+      ],
+      "center_distance_px": 3.5327095887756426,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2163,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.8571428571428571,
+      "patch_dominant": 2163,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2163,
+          "k": 0,
+          "exact_audit_cost": 0.15629808119821453
+        },
+        {
+          "generator_index": 2164,
+          "k": 1,
+          "exact_audit_cost": 1.1439496386080046
+        },
+        {
+          "generator_index": 2169,
+          "k": 6,
+          "exact_audit_cost": 1.3165178647244382
+        },
+        {
+          "generator_index": 2170,
+          "k": 7,
+          "exact_audit_cost": 1.418308210484346
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14790820426181686,
+      "balanced_patch_support": 0.9226204134128029
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.16784503287129796,
+      "balanced_patch_support": 0.9051824574368802
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1463577646390847,
+      "balanced_patch_support": 0.9229387036627519
+    },
+    "penalty": 0.0005413362934050787
+  },
+  {
+    "model_id": "N2833_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2268,
+      "projected_center": [
+        1360.897105748154,
+        287.1868162310259
+      ],
+      "center_distance_px": 20.571570539085783,
+      "surface_distance_px": 4.47213595499958,
+      "surface_distance_censored": false,
+      "first_owner": 2268,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.38724106733233465
+        },
+        {
+          "generator_index": 2268,
+          "k": 2826,
+          "exact_audit_cost": 1.1191978214523794
+        },
+        {
+          "generator_index": 2274,
+          "k": 2832,
+          "exact_audit_cost": 1.1253037131102468
+        },
+        {
+          "generator_index": 2267,
+          "k": 2825,
+          "exact_audit_cost": 1.4067735305542308
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.15738474799588575,
+      "balanced_patch_support": 0.9173802961696452
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.19834670595999007,
+      "balanced_patch_support": 0.8787921059458874
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1967758076202851,
+      "balanced_patch_support": 0.8718005051226605
+    },
+    "penalty": 0.00048539811044852793
+  },
+  {
+    "model_id": "N2833_h+1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2268,
+      "projected_center": [
+        1361.6428317965747,
+        286.43032269082164
+      ],
+      "center_distance_px": 20.61726834950563,
+      "surface_distance_px": 5.656854249492381,
+      "surface_distance_censored": false,
+      "first_owner": 2268,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.4031493546100599
+        },
+        {
+          "generator_index": 2268,
+          "k": 2826,
+          "exact_audit_cost": 1.095697857151116
+        },
+        {
+          "generator_index": 2274,
+          "k": 2832,
+          "exact_audit_cost": 1.1512525441268586
+        },
+        {
+          "generator_index": 2267,
+          "k": 2825,
+          "exact_audit_cost": 1.3714566664824819
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14712457736414455,
+      "balanced_patch_support": 0.9267137296290957
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.2049618968670828,
+      "balanced_patch_support": 0.8759969727323804
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2025321055954933,
+      "balanced_patch_support": 0.8737233488451872
+    },
+    "penalty": 0.0004141932251499177
+  },
+  {
+    "model_id": "N2833_h+1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2268,
+      "projected_center": [
+        1361.7217538444233,
+        286.11828108944974
+      ],
+      "center_distance_px": 20.475908836641537,
+      "surface_distance_px": 4.47213595499958,
+      "surface_distance_censored": false,
+      "first_owner": 2268,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.39989734456236986
+        },
+        {
+          "generator_index": 2268,
+          "k": 2826,
+          "exact_audit_cost": 1.0938514916224986
+        },
+        {
+          "generator_index": 2274,
+          "k": 2832,
+          "exact_audit_cost": 1.1481644462568859
+        },
+        {
+          "generator_index": 2267,
+          "k": 2825,
+          "exact_audit_cost": 1.3758716259626107
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1554495538512518,
+      "balanced_patch_support": 0.9184588448462438
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.19012599723384596,
+      "balanced_patch_support": 0.8869150636186639
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1794882995351054,
+      "balanced_patch_support": 0.8905312665878692
+    },
+    "penalty": 0.0004550808526778725
+  },
+  {
+    "model_id": "N2833_h+1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2268,
+      "projected_center": [
+        1361.6284382841043,
+        286.23575857253377
+      ],
+      "center_distance_px": 20.480072953738652,
+      "surface_distance_px": 4.47213595499958,
+      "surface_distance_censored": false,
+      "first_owner": 2268,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.3998795893013899
+        },
+        {
+          "generator_index": 2268,
+          "k": 2826,
+          "exact_audit_cost": 1.0951345346483845
+        },
+        {
+          "generator_index": 2274,
+          "k": 2832,
+          "exact_audit_cost": 1.1525468922464455
+        },
+        {
+          "generator_index": 2267,
+          "k": 2825,
+          "exact_audit_cost": 1.3727065117937651
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14869796747144098,
+      "balanced_patch_support": 0.9258570802055568
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.20663320686040376,
+      "balanced_patch_support": 0.8745416410421325
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.19782272952324778,
+      "balanced_patch_support": 0.8782488449019622
+    },
+    "penalty": 0.0004972587477464037
+  },
+  {
+    "model_id": "N2833_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2269,
+      "projected_center": [
+        1358.01099894809,
+        285.7376703099105
+      ],
+      "center_distance_px": 17.50749384278044,
+      "surface_distance_px": 2.0,
+      "surface_distance_censored": false,
+      "first_owner": 2269,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.28188659282614154
+        },
+        {
+          "generator_index": 2269,
+          "k": 2827,
+          "exact_audit_cost": 1.0999725633531878
+        },
+        {
+          "generator_index": 2270,
+          "k": 2828,
+          "exact_audit_cost": 1.2167711898478455
+        },
+        {
+          "generator_index": 2276,
+          "k": 1,
+          "exact_audit_cost": 1.2406182107166723
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.15280351625615396,
+      "balanced_patch_support": 0.9257595250863271
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.23798912423606675,
+      "balanced_patch_support": 0.8497053616934899
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.266028377380349,
+      "balanced_patch_support": 0.824147595644227
+    },
+    "penalty": 0.00048632008833944155
+  },
+  {
+    "model_id": "N2833_h-1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2269,
+      "projected_center": [
+        1358.6568467519553,
+        286.14021809811675
+      ],
+      "center_distance_px": 18.24448139489189,
+      "surface_distance_px": 4.0,
+      "surface_distance_censored": false,
+      "first_owner": 2269,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.3036685528810491
+        },
+        {
+          "generator_index": 2269,
+          "k": 2827,
+          "exact_audit_cost": 1.0883866758073868
+        },
+        {
+          "generator_index": 2270,
+          "k": 2828,
+          "exact_audit_cost": 1.2116797564306363
+        },
+        {
+          "generator_index": 2276,
+          "k": 1,
+          "exact_audit_cost": 1.2321512861547208
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1487530025648565,
+      "balanced_patch_support": 0.9275507130828777
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.23958598594312497,
+      "balanced_patch_support": 0.8506813740285089
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2724688029362221,
+      "balanced_patch_support": 0.8245773067705522
+    },
+    "penalty": 0.0007258674798947744
+  },
+  {
+    "model_id": "N2833_h-1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2275,
+      "k": 0,
+      "screening_generator_index": 2269,
+      "projected_center": [
+        1359.020782688855,
+        288.020718757185
+      ],
+      "center_distance_px": 19.87870151224258,
+      "surface_distance_px": 4.47213595499958,
+      "surface_distance_censored": false,
+      "first_owner": 2269,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9142857142857143,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 0,
+          "exact_audit_cost": 0.4026486686053479
+        },
+        {
+          "generator_index": 2269,
+          "k": 2827,
+          "exact_audit_cost": 1.087997063456767
+        },
+        {
+          "generator_index": 2270,
+          "k": 2828,
+          "exact_audit_cost": 1.1829640107524653
+        },
+        {
+          "generator_index": 2276,
+          "k": 1,
+          "exact_audit_cost": 1.189474803695174
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.15838419356220437,
+      "balanced_patch_support": 0.9168687082610923
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.21077133431340953,
+      "balanced_patch_support": 0.8738815384990406
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.23496372648080302,
+      "balanced_patch_support": 0.8507359239113055
+    },
+    "penalty": 0.000723862900002912
+  },
+  {
+    "model_id": "N2833_h-1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2269,
+      "k": 0,
+      "screening_generator_index": 2269,
+      "projected_center": [
+        1338.9222635246658,
+        278.78907373182574
+      ],
+      "center_distance_px": 9.14372617081191,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2269,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.02857142857142857,
+      "patch_dominant": 2275,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2275,
+          "k": 6,
+          "exact_audit_cost": 0.7636302115679172
+        },
+        {
+          "generator_index": 2276,
+          "k": 7,
+          "exact_audit_cost": 0.935598629182938
+        },
+        {
+          "generator_index": 2269,
+          "k": 0,
+          "exact_audit_cost": 1.062365314716925
+        },
+        {
+          "generator_index": 2270,
+          "k": 1,
+          "exact_audit_cost": 1.161916608441226
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14695853080944235,
+      "balanced_patch_support": 0.9293042876164749
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.22988480313405418,
+      "balanced_patch_support": 0.8611694237005328
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2657529080421702,
+      "balanced_patch_support": 0.830896958231587
+    },
+    "penalty": 0.0007655923534514217
+  },
+  {
+    "model_id": "N2679_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2149,
+      "k": 0,
+      "screening_generator_index": 2149,
+      "projected_center": [
+        1348.8680591024001,
+        287.3621547243649
+      ],
+      "center_distance_px": 14.645724677920793,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2149,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2149,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2149,
+          "k": 0,
+          "exact_audit_cost": 0.11797477493889319
+        },
+        {
+          "generator_index": 2148,
+          "k": 2678,
+          "exact_audit_cost": 1.0913435229222324
+        },
+        {
+          "generator_index": 2154,
+          "k": 5,
+          "exact_audit_cost": 1.3317280520788888
+        },
+        {
+          "generator_index": 2155,
+          "k": 6,
+          "exact_audit_cost": 1.4697235644606796
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1552022404984829,
+      "balanced_patch_support": 0.9206244814792507
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.1896507990223492,
+      "balanced_patch_support": 0.890158015679337
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.17756886037700736,
+      "balanced_patch_support": 0.9001599432277045
+    },
+    "penalty": 0.00012082705242273316
+  },
+  {
+    "model_id": "N2679_h+1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2149,
+      "k": 0,
+      "screening_generator_index": 2149,
+      "projected_center": [
+        1349.8738896940265,
+        284.54772828120485
+      ],
+      "center_distance_px": 12.180190877733532,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2149,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2149,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2149,
+          "k": 0,
+          "exact_audit_cost": 0.08303167727833706
+        },
+        {
+          "generator_index": 2148,
+          "k": 2678,
+          "exact_audit_cost": 1.1037004542435662
+        },
+        {
+          "generator_index": 2154,
+          "k": 5,
+          "exact_audit_cost": 1.3357075022169527
+        },
+        {
+          "generator_index": 2155,
+          "k": 6,
+          "exact_audit_cost": 1.5122018353140394
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14212907502063407,
+      "balanced_patch_support": 0.9287313585132012
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.21464088651017954,
+      "balanced_patch_support": 0.8635384501051111
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.21475565294943988,
+      "balanced_patch_support": 0.85783168832754
+    },
+    "penalty": 0.001342402690743091
+  },
+  {
+    "model_id": "N2679_h+1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2149,
+      "k": 0,
+      "screening_generator_index": 2149,
+      "projected_center": [
+        1348.8890411715568,
+        287.9254855093661
+      ],
+      "center_distance_px": 15.202522046727912,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2149,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2149,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2149,
+          "k": 0,
+          "exact_audit_cost": 0.12706080268202852
+        },
+        {
+          "generator_index": 2148,
+          "k": 2678,
+          "exact_audit_cost": 1.0836683485352885
+        },
+        {
+          "generator_index": 2154,
+          "k": 5,
+          "exact_audit_cost": 1.3151091797184276
+        },
+        {
+          "generator_index": 2155,
+          "k": 6,
+          "exact_audit_cost": 1.4668314030462382
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.15629188089146864,
+      "balanced_patch_support": 0.9168892934688383
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.20709721076928037,
+      "balanced_patch_support": 0.8750112571541739
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.20028413148099233,
+      "balanced_patch_support": 0.8831870267028684
+    },
+    "penalty": 0.00030100160654255545
+  },
+  {
+    "model_id": "N2679_h+1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2149,
+      "k": 0,
+      "screening_generator_index": 2149,
+      "projected_center": [
+        1351.3023435585405,
+        286.84074125734674
+      ],
+      "center_distance_px": 14.821638430538524,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2149,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2149,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2149,
+          "k": 0,
+          "exact_audit_cost": 0.12475850110775388
+        },
+        {
+          "generator_index": 2148,
+          "k": 2678,
+          "exact_audit_cost": 1.0738537305159508
+        },
+        {
+          "generator_index": 2154,
+          "k": 5,
+          "exact_audit_cost": 1.369317200358182
+        },
+        {
+          "generator_index": 2142,
+          "k": 2672,
+          "exact_audit_cost": 1.5147391960711865
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14961570059648546,
+      "balanced_patch_support": 0.9213557111728221
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.18922669048140292,
+      "balanced_patch_support": 0.8931698029300421
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.18303266543987423,
+      "balanced_patch_support": 0.8917000714284046
+    },
+    "penalty": 0.0015316669541666575
+  },
+  {
+    "model_id": "N2679_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2151,
+      "k": 0,
+      "screening_generator_index": 2145,
+      "projected_center": [
+        1359.1030086901058,
+        277.24599747683806
+      ],
+      "center_distance_px": 13.773791464455313,
+      "surface_distance_px": 2.0,
+      "surface_distance_censored": false,
+      "first_owner": 2145,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2151,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2151,
+          "k": 0,
+          "exact_audit_cost": 0.21842184416868196
+        },
+        {
+          "generator_index": 2145,
+          "k": 2673,
+          "exact_audit_cost": 1.0876046305294593
+        },
+        {
+          "generator_index": 2146,
+          "k": 2674,
+          "exact_audit_cost": 1.165240423140134
+        },
+        {
+          "generator_index": 2152,
+          "k": 1,
+          "exact_audit_cost": 1.3332502151709789
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14536151701733416,
+      "balanced_patch_support": 0.9299891867090472
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.1782076092517291,
+      "balanced_patch_support": 0.8957124010650618
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.15476353932254797,
+      "balanced_patch_support": 0.9125798523631822
+    },
+    "penalty": 6.96224717387469e-05
+  },
+  {
+    "model_id": "N2679_h-1_stretch",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2151,
+      "k": 0,
+      "screening_generator_index": 2151,
+      "projected_center": [
+        1357.6263191609278,
+        276.7482066905095
+      ],
+      "center_distance_px": 12.215578194524262,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2151,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2151,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2151,
+          "k": 0,
+          "exact_audit_cost": 0.14836810617558838
+        },
+        {
+          "generator_index": 2145,
+          "k": 2673,
+          "exact_audit_cost": 1.1553198076774565
+        },
+        {
+          "generator_index": 2146,
+          "k": 2674,
+          "exact_audit_cost": 1.2109772131225955
+        },
+        {
+          "generator_index": 2152,
+          "k": 1,
+          "exact_audit_cost": 1.284636087148351
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.13750060203849332,
+      "balanced_patch_support": 0.9360556614090364
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.157829698598488,
+      "balanced_patch_support": 0.9164910489328133
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.13765053994221713,
+      "balanced_patch_support": 0.9289379581293324
+    },
+    "penalty": 0.00022576647798749758
+  },
+  {
+    "model_id": "N2679_h-1_twist",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2151,
+      "k": 0,
+      "screening_generator_index": 2145,
+      "projected_center": [
+        1358.1077119757022,
+        278.3592922741707
+      ],
+      "center_distance_px": 13.240796915841097,
+      "surface_distance_px": 2.0,
+      "surface_distance_censored": false,
+      "first_owner": 2145,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.9714285714285714,
+      "patch_dominant": 2151,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2151,
+          "k": 0,
+          "exact_audit_cost": 0.1941310366627321
+        },
+        {
+          "generator_index": 2145,
+          "k": 2673,
+          "exact_audit_cost": 1.111571545676665
+        },
+        {
+          "generator_index": 2146,
+          "k": 2674,
+          "exact_audit_cost": 1.2128322404202623
+        },
+        {
+          "generator_index": 2152,
+          "k": 1,
+          "exact_audit_cost": 1.2800394743833305
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.13662047559255747,
+      "balanced_patch_support": 0.9377410326939244
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.18644378844216417,
+      "balanced_patch_support": 0.8929677732019178
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.15796688838079895,
+      "balanced_patch_support": 0.9120187821711947
+    },
+    "penalty": 0.00032339494064316824
+  },
+  {
+    "model_id": "N2679_h-1_both",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2151,
+      "k": 0,
+      "screening_generator_index": 2151,
+      "projected_center": [
+        1356.2212607584074,
+        274.6496254168135
+      ],
+      "center_distance_px": 10.35352285491062,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2151,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2151,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2151,
+          "k": 0,
+          "exact_audit_cost": 0.11307332325706314
+        },
+        {
+          "generator_index": 2145,
+          "k": 2673,
+          "exact_audit_cost": 1.2002525918653892
+        },
+        {
+          "generator_index": 2146,
+          "k": 2674,
+          "exact_audit_cost": 1.2543023466533516
+        },
+        {
+          "generator_index": 2152,
+          "k": 1,
+          "exact_audit_cost": 1.27880904538293
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14141123703949426,
+      "balanced_patch_support": 0.9324048390070061
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.19786261192497281,
+      "balanced_patch_support": 0.8834623684563512
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1495796599585475,
+      "balanced_patch_support": 0.9204836946999497
+    },
+    "penalty": 0.00046338490893848015
+  },
+  {
+    "model_id": "N2312_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 1854,
+      "k": 0,
+      "screening_generator_index": 1855,
+      "projected_center": [
+        1339.7132700992934,
+        255.37571495521502
+      ],
+      "center_distance_px": 18.711985361908297,
+      "surface_distance_px": 19.79898987322333,
+      "surface_distance_censored": false,
+      "first_owner": 1855,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": 1856,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1856,
+          "k": 2,
+          "exact_audit_cost": 0.5101274158402209
+        },
+        {
+          "generator_index": 1855,
+          "k": 1,
+          "exact_audit_cost": 0.7963172105826875
+        },
+        {
+          "generator_index": 1854,
+          "k": 0,
+          "exact_audit_cost": 1.149350708717444
+        },
+        {
+          "generator_index": 1849,
+          "k": 2307,
+          "exact_audit_cost": 1.326100445291507
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.1796544898356926,
+      "balanced_patch_support": 0.8980177876407259
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.16745340261298283,
+      "balanced_patch_support": 0.9121505490375624
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2098484238285262,
+      "balanced_patch_support": 0.8783880758817076
+    },
+    "penalty": 0.0002602954434683036
+  },
+  {
+    "model_id": "N2312_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 1857,
+      "k": 0,
+      "screening_generator_index": 1855,
+      "projected_center": [
+        1349.9984083753186,
+        255.2800179336657
+      ],
+      "center_distance_px": 18.16549019341419,
+      "surface_distance_px": 26.68332812825267,
+      "surface_distance_censored": false,
+      "first_owner": 1856,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.0,
+      "patch_dominant": 1855,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 1855,
+          "k": 2310,
+          "exact_audit_cost": 0.5256998776874772
+        },
+        {
+          "generator_index": 1856,
+          "k": 2311,
+          "exact_audit_cost": 0.8161185440868309
+        },
+        {
+          "generator_index": 1857,
+          "k": 0,
+          "exact_audit_cost": 1.1512741505817985
+        },
+        {
+          "generator_index": 1849,
+          "k": 2304,
+          "exact_audit_cost": 1.2411670934870722
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14633636936958022,
+      "balanced_patch_support": 0.9229951181744256
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.22806752787006848,
+      "balanced_patch_support": 0.8575770217751967
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1790343818850563,
+      "balanced_patch_support": 0.895972613540494
+    },
+    "penalty": 0.00017544173092907885
+  },
+  {
+    "model_id": "N2529_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2025,
+      "k": 0,
+      "screening_generator_index": 2025,
+      "projected_center": [
+        1342.6322831942184,
+        276.65599934466695
+      ],
+      "center_distance_px": 4.970698913849932,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2025,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.8857142857142857,
+      "patch_dominant": 2025,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2025,
+          "k": 0,
+          "exact_audit_cost": 0.13367520472073843
+        },
+        {
+          "generator_index": 2024,
+          "k": 2528,
+          "exact_audit_cost": 1.2213728648087385
+        },
+        {
+          "generator_index": 2031,
+          "k": 6,
+          "exact_audit_cost": 1.2390325110575668
+        },
+        {
+          "generator_index": 2030,
+          "k": 5,
+          "exact_audit_cost": 1.2585171312617889
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.14475713401316412,
+      "balanced_patch_support": 0.9243158663552465
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.1796168526189437,
+      "balanced_patch_support": 0.8985610561581687
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.19886952351676138,
+      "balanced_patch_support": 0.8798149829659715
+    },
+    "penalty": 0.0010017935379307344
+  },
+  {
+    "model_id": "N2529_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2029,
+      "k": 0,
+      "screening_generator_index": 2030,
+      "projected_center": [
+        1353.646762662441,
+        294.62491924087476
+      ],
+      "center_distance_px": 22.937090299121582,
+      "surface_distance_px": 6.0,
+      "surface_distance_censored": false,
+      "first_owner": 2030,
+      "ownership": false,
+      "unfinished": 0,
+      "patch_support": 0.2571428571428571,
+      "patch_dominant": 2030,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2030,
+          "k": 1,
+          "exact_audit_cost": 0.33824518546944626
+        },
+        {
+          "generator_index": 2029,
+          "k": 0,
+          "exact_audit_cost": 1.0122350822269455
+        },
+        {
+          "generator_index": 2031,
+          "k": 2,
+          "exact_audit_cost": 1.2415472797991796
+        },
+        {
+          "generator_index": 2023,
+          "k": 2523,
+          "exact_audit_cost": 1.3432453329268623
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.16609243864765522,
+      "balanced_patch_support": 0.9160271050783645
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.18653874646979035,
+      "balanced_patch_support": 0.8905627513516958
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.1635383446909935,
+      "balanced_patch_support": 0.9025280887204248
+    },
+    "penalty": 6.912538032309226e-05
+  },
+  {
+    "model_id": "N3592_h+1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2883,
+      "k": 0,
+      "screening_generator_index": 2883,
+      "projected_center": [
+        1348.8240973187187,
+        269.2466726097582
+      ],
+      "center_distance_px": 4.697125947207877,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2883,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 0.6,
+      "patch_dominant": 2883,
+      "conditional_unique": false,
+      "alternatives": [
+        {
+          "generator_index": 2883,
+          "k": 0,
+          "exact_audit_cost": 0.4328886960693715
+        },
+        {
+          "generator_index": 2884,
+          "k": 1,
+          "exact_audit_cost": 0.9879961895267386
+        },
+        {
+          "generator_index": 2882,
+          "k": 3591,
+          "exact_audit_cost": 1.0853105714676
+        },
+        {
+          "generator_index": 2877,
+          "k": 3586,
+          "exact_audit_cost": 1.276357449493629
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.30760827338891406,
+      "balanced_patch_support": 0.8030236534706284
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.2619376736704949,
+      "balanced_patch_support": 0.8293805952094857
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.19918273263355152,
+      "balanced_patch_support": 0.8799848763806452
+    },
+    "penalty": 0.0002617642345248594
+  },
+  {
+    "model_id": "N3592_h-1_rigid",
+    "anchor": {
+      "observation_id": "C252-A948",
+      "x": 1346.0,
+      "y": 273.0,
+      "color": "red",
+      "evidence_level": "maker_confirmed",
+      "sector": 26,
+      "arc_fraction": 0.8016522015262966,
+      "representative_source": "F196-4",
+      "source_keys": "A948;D3-B15;F196-4;M6;R235:D3-P05;R239:D3-P05;R238:D3-P07;R114:C",
+      "split": "train",
+      "generator_index": 2881,
+      "k": 0,
+      "screening_generator_index": 2881,
+      "projected_center": [
+        1349.7392538416948,
+        283.8772436051686
+      ],
+      "center_distance_px": 11.502019289620852,
+      "surface_distance_px": 0.0,
+      "surface_distance_censored": false,
+      "first_owner": 2881,
+      "ownership": true,
+      "unfinished": 0,
+      "patch_support": 1.0,
+      "patch_dominant": 2881,
+      "conditional_unique": true,
+      "alternatives": [
+        {
+          "generator_index": 2881,
+          "k": 0,
+          "exact_audit_cost": 0.13437280085875042
+        },
+        {
+          "generator_index": 2882,
+          "k": 1,
+          "exact_audit_cost": 1.0446370395430622
+        },
+        {
+          "generator_index": 2875,
+          "k": 3586,
+          "exact_audit_cost": 1.3974082536353574
+        },
+        {
+          "generator_index": 2876,
+          "k": 3587,
+          "exact_audit_cost": 1.505455157309437
+        }
+      ]
+    },
+    "train": {
+      "n": 254,
+      "balanced_full_patch_score": 0.28306144908517006,
+      "balanced_patch_support": 0.8270530567194438
+    },
+    "test": {
+      "n": 56,
+      "balanced_full_patch_score": 0.2564838046692052,
+      "balanced_patch_support": 0.8320360486834847
+    },
+    "test_core": {
+      "n": 33,
+      "balanced_full_patch_score": 0.2213762195097463,
+      "balanced_patch_support": 0.861251108718616
+    },
+    "penalty": 9.178609520579472e-05
+  }
+]

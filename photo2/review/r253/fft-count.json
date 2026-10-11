@@ -1,0 +1,58 @@
+{
+  "length_pixels": 9235.585755525459,
+  "formula": "turns=integral f(s)*cos(alpha(s)) ds; N=(N/T)*turns; conditional reciprocal-family identification",
+  "estimates": [
+    {
+      "channel": "V",
+      "angle_filter": "R250_range3",
+      "observed_windows": 1350,
+      "coverage": 0.675,
+      "turns": 411.5006210231079,
+      "n_at_6_5": 2674.754036650201,
+      "largest_interpolation_gap_px": 212.41849615701472,
+      "block_equivalent_n_p10_p90": [
+        2552.4875913531746,
+        2767.926571823508
+      ]
+    },
+    {
+      "channel": "V",
+      "angle_filter": "within8deg_of6",
+      "observed_windows": 1266,
+      "coverage": 0.633,
+      "turns": 409.99073360393214,
+      "n_at_6_5": 2664.939768425559,
+      "largest_interpolation_gap_px": 281.6853970777797,
+      "block_equivalent_n_p10_p90": [
+        2557.7371795859544,
+        2773.495183501101
+      ]
+    },
+    {
+      "channel": "Y",
+      "angle_filter": "R250_range3",
+      "observed_windows": 1926,
+      "coverage": 0.963,
+      "turns": 412.18763089687076,
+      "n_at_6_5": 2679.21960082966,
+      "largest_interpolation_gap_px": 41.560140552459416,
+      "block_equivalent_n_p10_p90": [
+        2591.185186759185,
+        2760.191559066333
+      ]
+    },
+    {
+      "channel": "Y",
+      "angle_filter": "within8deg_of6",
+      "observed_windows": 1868,
+      "coverage": 0.934,
+      "turns": 412.15405459611827,
+      "n_at_6_5": 2679.001354874769,
+      "largest_interpolation_gap_px": 69.26690092076524,
+      "block_equivalent_n_p10_p90": [
+        2584.1940766816815,
+        2764.5894834064575
+      ]
+    }
+  ]
+}
