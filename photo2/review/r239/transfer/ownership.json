@@ -1,0 +1,3449 @@
+{
+  "script_sha256": "3cc9527057f1cd2d142609838f982ffcd6b0f177ea65e34691d072d6923faeff",
+  "rules": {
+    "rays": 16,
+    "ray_start_d": 0.09,
+    "ray_end_d": 0.48,
+    "ray_samples": 24,
+    "dark_value": 0.4,
+    "dark_peak_fraction": 0.82,
+    "dark_run": 3,
+    "minimum_dark_rays": 12,
+    "maximum_color_first_rays": 4,
+    "shape_close": 1,
+    "shape_prominence_d": 0.04,
+    "minimum_depth_d": 0.13,
+    "minimum_area_d2": 0.1,
+    "maximum_area_d2": 1.65,
+    "maximum_depth_d": 0.55,
+    "seam_diffuse_fraction": 0.68,
+    "seam_window_d": 0.85,
+    "snap_d": 0.14,
+    "pair_range_d": 0.95,
+    "neck_ratio": 0.6,
+    "black_pair_range_d": 0.7
+  },
+  "results": [
+    {
+      "section": "T1",
+      "box": [
+        1990,
+        740,
+        2150,
+        890
+      ],
+      "halo": [
+        1960,
+        710,
+        2180,
+        920
+      ],
+      "proposals": [
+        {
+          "source_id": "R192:84",
+          "xy": [
+            2078.2000033667446,
+            711.7988257541041
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2078.2000033667446,
+            711.7988257541041
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.09859561847952697,
+          "candidate_id": "T1-P01",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 15,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              4,
+              4,
+              3,
+              3,
+              4,
+              5,
+              9,
+              8,
+              4,
+              2,
+              4,
+              12,
+              24,
+              18,
+              8,
+              5
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:138",
+          "xy": [
+            2106,
+            723
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P02",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 2,
+            "mode": 2,
+            "area_px": 264,
+            "maximum_inset_px": 6.708203932499369,
+            "support_anchor_local": [
+              146,
+              13
+            ]
+          }
+        },
+        {
+          "source_id": "M4:139",
+          "xy": [
+            2051,
+            729
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P03",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 3,
+            "mode": 2,
+            "area_px": 485,
+            "maximum_inset_px": 11.0,
+            "support_anchor_local": [
+              91,
+              19
+            ]
+          }
+        },
+        {
+          "source_id": "M4:141",
+          "xy": [
+            2077,
+            741
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P04",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 5,
+            "mode": 2,
+            "area_px": 547,
+            "maximum_inset_px": 11.180339887498949,
+            "support_anchor_local": [
+              117,
+              31
+            ]
+          }
+        },
+        {
+          "source_id": "M4:143",
+          "xy": [
+            2098,
+            756
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P05",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 8,
+            "mode": 2,
+            "area_px": 502,
+            "maximum_inset_px": 9.848857801796104,
+            "support_anchor_local": [
+              138,
+              46
+            ]
+          }
+        },
+        {
+          "source_id": "M4:145",
+          "xy": [
+            2074,
+            765
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P06",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 5,
+            "mode": 1,
+            "area_px": 634,
+            "maximum_inset_px": 11.180339887498949,
+            "support_anchor_local": [
+              114,
+              55
+            ]
+          }
+        },
+        {
+          "source_id": "M4:146",
+          "xy": [
+            2120,
+            769
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P07",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 4,
+            "mode": 1,
+            "area_px": 350,
+            "maximum_inset_px": 9.433981132056603,
+            "support_anchor_local": [
+              160,
+              59
+            ]
+          }
+        },
+        {
+          "source_id": "M4:147",
+          "xy": [
+            2096,
+            777
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P08",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 6,
+            "mode": 1,
+            "area_px": 587,
+            "maximum_inset_px": 12.0,
+            "support_anchor_local": [
+              136,
+              67
+            ]
+          }
+        },
+        {
+          "source_id": "M4:150",
+          "xy": [
+            2111,
+            802
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P09",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 7,
+            "mode": 1,
+            "area_px": 713,
+            "maximum_inset_px": 12.165525060596439,
+            "support_anchor_local": [
+              151,
+              92
+            ]
+          }
+        },
+        {
+          "source_id": "M4:154",
+          "xy": [
+            2107,
+            823
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P10",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 13,
+            "mode": 2,
+            "area_px": 309,
+            "maximum_inset_px": 6.324555320336759,
+            "support_anchor_local": [
+              148,
+              113
+            ]
+          }
+        },
+        {
+          "source_id": "M4:155",
+          "xy": [
+            2127,
+            835
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P11",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 15,
+            "mode": 2,
+            "area_px": 265,
+            "maximum_inset_px": 6.4031242374328485,
+            "support_anchor_local": [
+              170,
+              127
+            ]
+          }
+        },
+        {
+          "source_id": "M4:156",
+          "xy": [
+            2152,
+            848
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P12",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 18,
+            "mode": 2,
+            "area_px": 285,
+            "maximum_inset_px": 8.0,
+            "support_anchor_local": [
+              192,
+              138
+            ]
+          }
+        },
+        {
+          "source_id": "M4:158",
+          "xy": [
+            2094,
+            852
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P13",
+          "ownership_decision": "abstain",
+          "ownership_reason": "no associated colored shape support",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 0,
+            "mode": 2,
+            "area_px": 0,
+            "maximum_inset_px": 0.0,
+            "support_anchor_local": [
+              134,
+              142
+            ]
+          }
+        },
+        {
+          "source_id": "R192:98",
+          "xy": [
+            2120.564615411205,
+            862.6611548897844
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2120.564615411205,
+            862.6611548897844
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.12073478540392533,
+          "candidate_id": "T1-P14",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              6,
+              5,
+              3,
+              4,
+              5,
+              7,
+              10,
+              8,
+              6,
+              4,
+              4,
+              5,
+              7,
+              8,
+              8,
+              7
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:161",
+          "xy": [
+            2080,
+            879
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P15",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 19,
+            "mode": 2,
+            "area_px": 488,
+            "maximum_inset_px": 10.63014581273465,
+            "support_anchor_local": [
+              120,
+              169
+            ]
+          }
+        },
+        {
+          "source_id": "R192:100",
+          "xy": [
+            2139.6876218834536,
+            879.6883175673761
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2139.6876218834536,
+            879.6883175673761
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.19279229496962622,
+          "candidate_id": "T1-P16",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              5,
+              5,
+              4,
+              3,
+              4,
+              4,
+              8,
+              7,
+              4,
+              3,
+              2,
+              3,
+              4,
+              5,
+              6,
+              6
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "R192:101",
+          "xy": [
+            2105.7212681582023,
+            892.1920305375886
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2105.7212681582023,
+            892.1920305375886
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.13692096722965427,
+          "candidate_id": "T1-P17",
+          "ownership_decision": "abstain",
+          "ownership_reason": "pair has insufficient separating seam; one versus two bodies unresolved",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 15,
+            "color_first_rays": 1,
+            "first_dark_samples": [
+              6,
+              5,
+              4,
+              4,
+              4,
+              6,
+              24,
+              14,
+              6,
+              3,
+              4,
+              5,
+              5,
+              6,
+              8,
+              7
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              18,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:166",
+          "xy": [
+            2131,
+            907
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P18",
+          "ownership_decision": "abstain",
+          "ownership_reason": "no associated colored shape support",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 0,
+            "mode": 2,
+            "area_px": 0,
+            "maximum_inset_px": 0.0,
+            "support_anchor_local": [
+              171,
+              197
+            ]
+          }
+        },
+        {
+          "xy": [
+            2038,
+            744
+          ],
+          "mode": 1,
+          "source_id": "pool:681",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 240,
+          "inset": 8.54400374531753,
+          "value": 0.9490196108818054,
+          "score": 5.160928537181418,
+          "basin": 1,
+          "decision": "accepted",
+          "candidate_id": "T1-A01",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 2,
+            "mode": 1,
+            "area_px": 597,
+            "maximum_inset_px": 9.219544457292887,
+            "support_anchor_local": [
+              78,
+              34
+            ]
+          }
+        },
+        {
+          "xy": [
+            2056,
+            760
+          ],
+          "mode": 1,
+          "source_id": "pool:697",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 241,
+          "inset": 8.94427190999916,
+          "value": 0.929411768913269,
+          "score": 5.054297788978085,
+          "basin": 4,
+          "decision": "accepted",
+          "candidate_id": "T1-A02",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 3,
+            "mode": 1,
+            "area_px": 447,
+            "maximum_inset_px": 9.219544457292887,
+            "support_anchor_local": [
+              96,
+              50
+            ]
+          }
+        },
+        {
+          "xy": [
+            2069,
+            822
+          ],
+          "mode": 1,
+          "source_id": "pool:755",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 234,
+          "inset": 8.06225774829855,
+          "value": 0.8627451062202454,
+          "score": 4.691753245086753,
+          "basin": 2,
+          "decision": "accepted",
+          "candidate_id": "T1-A03",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 9,
+            "mode": 1,
+            "area_px": 462,
+            "maximum_inset_px": 7.0710678118654755,
+            "support_anchor_local": [
+              109,
+              112
+            ]
+          }
+        },
+        {
+          "xy": [
+            2141,
+            904
+          ],
+          "mode": 2,
+          "source_id": "pool:818",
+          "old_reason": "spacing",
+          "old_valid_cuts": 8,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 223,
+          "inset": 6.0,
+          "value": 0.800000011920929,
+          "score": 4.350534850836087,
+          "basin": 9,
+          "decision": "accepted",
+          "candidate_id": "T1-A04",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 21,
+            "mode": 2,
+            "area_px": 330,
+            "maximum_inset_px": 7.0,
+            "support_anchor_local": [
+              181,
+              194
+            ]
+          }
+        },
+        {
+          "xy": [
+            2105,
+            847
+          ],
+          "mode": 2,
+          "source_id": "pool:775",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 229,
+          "inset": 6.324555320336759,
+          "value": 0.7411764860153198,
+          "score": 4.030642606226088,
+          "basin": 6,
+          "decision": "accepted",
+          "candidate_id": "T1-A05",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 17,
+            "mode": 2,
+            "area_px": 371,
+            "maximum_inset_px": 6.324555320336759,
+            "support_anchor_local": [
+              145,
+              137
+            ]
+          }
+        },
+        {
+          "xy": [
+            2036,
+            712
+          ],
+          "mode": 2,
+          "source_id": "pool:650",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 147,
+          "inset": 5.0990195135927845,
+          "value": 0.7843137383460999,
+          "score": 3.9992310566056686,
+          "basin": 1,
+          "decision": "accepted",
+          "candidate_id": "T1-A06",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 1,
+            "mode": 2,
+            "area_px": 373,
+            "maximum_inset_px": 8.0,
+            "support_anchor_local": [
+              76,
+              2
+            ]
+          }
+        },
+        {
+          "xy": [
+            2093,
+            904
+          ],
+          "mode": 2,
+          "source_id": "pool:817",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 227,
+          "inset": 6.0,
+          "value": 0.7333333492279053,
+          "score": 3.987990306944755,
+          "basin": 4,
+          "decision": "accepted",
+          "candidate_id": "T1-A07",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 20,
+            "mode": 2,
+            "area_px": 385,
+            "maximum_inset_px": 6.0,
+            "support_anchor_local": [
+              133,
+              194
+            ]
+          }
+        },
+        {
+          "xy": [
+            2089,
+            877
+          ],
+          "mode": 2,
+          "source_id": "pool:797",
+          "old_reason": "profile",
+          "old_valid_cuts": 7,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 212,
+          "inset": 5.0,
+          "value": 0.7529411911964417,
+          "score": 3.7647059559822083,
+          "basin": 7,
+          "decision": "accepted",
+          "candidate_id": "T1-A08",
+          "ownership_decision": "abstain",
+          "ownership_reason": "same colored shape lobe; no evidence for an additional body",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 19,
+            "mode": 2,
+            "area_px": 488,
+            "maximum_inset_px": 10.63014581273465,
+            "support_anchor_local": [
+              129,
+              167
+            ]
+          },
+          "competing_candidate": "T1-P15"
+        },
+        {
+          "xy": [
+            2170,
+            918
+          ],
+          "mode": 2,
+          "source_id": "pool:829",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 92,
+          "inset": 3.605551275463989,
+          "value": 0.5176470875740051,
+          "score": 1.8664031168426736,
+          "basin": 14,
+          "decision": "accepted",
+          "candidate_id": "T1-A09",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 22,
+            "mode": 2,
+            "area_px": 131,
+            "maximum_inset_px": 5.0,
+            "support_anchor_local": [
+              210,
+              208
+            ]
+          }
+        },
+        {
+          "xy": [
+            2078,
+            811
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:300",
+          "old_reason": "associated colored interior",
+          "arm": "rejected",
+          "original_xy": [
+            2079.0379796397806,
+            809.915625
+          ],
+          "response": 0.45406150817871094,
+          "value": 0.95686274766922,
+          "saturation": 0.24590162932872772,
+          "dark_fraction": 0.4019607843137255,
+          "max_dark_sector": 0.7450980392156863,
+          "decision": "accepted",
+          "candidate_id": "T1-A10",
+          "ownership_decision": "abstain",
+          "ownership_reason": "reflection lacks surrounding dark enclosure; paper rim or occlusion ambiguous",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 11,
+            "color_first_rays": 4,
+            "first_dark_samples": [
+              11,
+              7,
+              5,
+              6,
+              6,
+              24,
+              24,
+              24,
+              24,
+              24,
+              4,
+              6,
+              6,
+              11,
+              13,
+              12
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              9,
+              6,
+              6,
+              7,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2060,
+            796
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:645",
+          "old_reason": "surround insufficiently dark",
+          "arm": "rejected",
+          "original_xy": [
+            2059.147611589663,
+            795.994375
+          ],
+          "response": 0.4101908802986145,
+          "value": 0.9725490212440491,
+          "saturation": 0.24596773087978363,
+          "dark_fraction": 0.5490196078431373,
+          "max_dark_sector": 0.8431372549019608,
+          "decision": "accepted",
+          "candidate_id": "T1-A11",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 13,
+            "color_first_rays": 3,
+            "first_dark_samples": [
+              5,
+              4,
+              3,
+              4,
+              5,
+              7,
+              24,
+              24,
+              24,
+              7,
+              6,
+              6,
+              6,
+              7,
+              8,
+              6
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              17,
+              16,
+              15,
+              6,
+              6,
+              7,
+              10,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2076,
+            839
+          ],
+          "color": "black",
+          "source_id": "excluded:184",
+          "old_reason": "near approximate band edge",
+          "arm": "rejected",
+          "original_xy": [
+            2075.0599060297573,
+            837.7581250000001
+          ],
+          "response": 0.3387536406517029,
+          "value": 0.9137254953384399,
+          "saturation": 0.29613733291625977,
+          "dark_fraction": 0.43137254901960786,
+          "max_dark_sector": 0.9803921568627451,
+          "decision": "accepted",
+          "candidate_id": "T1-A12",
+          "ownership_decision": "abstain",
+          "ownership_reason": "reflection lacks surrounding dark enclosure; paper rim or occlusion ambiguous",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 9,
+            "color_first_rays": 3,
+            "first_dark_samples": [
+              3,
+              3,
+              2,
+              3,
+              15,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              13,
+              11,
+              6,
+              4
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              10,
+              15,
+              21,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2048,
+            781
+          ],
+          "color": "black",
+          "source_id": "excluded:445",
+          "old_reason": "near approximate band edge",
+          "arm": "rejected",
+          "original_xy": [
+            2047.2133907595928,
+            780.084375
+          ],
+          "response": 0.21704399585723877,
+          "value": 0.8039215803146362,
+          "saturation": 0.2682926654815674,
+          "dark_fraction": 0.5098039215686274,
+          "max_dark_sector": 0.9215686274509803,
+          "decision": "accepted",
+          "candidate_id": "T1-A13",
+          "ownership_decision": "abstain",
+          "ownership_reason": "reflection lacks surrounding dark enclosure; paper rim or occlusion ambiguous",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 10,
+            "color_first_rays": 3,
+            "first_dark_samples": [
+              7,
+              4,
+              4,
+              4,
+              4,
+              6,
+              24,
+              24,
+              24,
+              7,
+              9,
+              8,
+              14,
+              24,
+              7,
+              8
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              17,
+              11,
+              24,
+              24,
+              24,
+              24,
+              24,
+              6,
+              24,
+              7,
+              8,
+              18,
+              15
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2070,
+            860
+          ],
+          "color": "black",
+          "source_id": "native:2070:860",
+          "old_reason": "new native search",
+          "arm": "native",
+          "response": 0.17826306819915771,
+          "value": 0.800000011920929,
+          "saturation": 0.31372547149658203,
+          "dark_fraction": 0.5441176470588235,
+          "max_dark_sector": 0.9411764705882353,
+          "decision": "accepted",
+          "candidate_id": "T1-A14",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 12,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              3,
+              3,
+              6,
+              7,
+              7,
+              24,
+              24,
+              24,
+              24,
+              3,
+              1,
+              1,
+              1,
+              2,
+              2,
+              3
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              21,
+              20,
+              18,
+              24,
+              24,
+              24,
+              24,
+              8,
+              6,
+              24,
+              9,
+              17,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2158,
+            894
+          ],
+          "color": "black",
+          "source_id": "native:2158:894",
+          "old_reason": "new native search",
+          "arm": "native",
+          "response": 0.13440468907356262,
+          "value": 0.364705890417099,
+          "saturation": 0.3225806653499603,
+          "dark_fraction": 1.0,
+          "max_dark_sector": 1.0,
+          "decision": "accepted",
+          "candidate_id": "T1-A15",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2116,
+            904
+          ],
+          "color": "black",
+          "source_id": "native:2116:904",
+          "old_reason": "new native search",
+          "arm": "native",
+          "response": 0.05942428112030029,
+          "value": 0.3764705955982208,
+          "saturation": 0.46875,
+          "dark_fraction": 0.8823529411764706,
+          "max_dark_sector": 1.0,
+          "decision": "accepted",
+          "candidate_id": "T1-A16",
+          "ownership_decision": "abstain",
+          "ownership_reason": "pair has insufficient separating seam; one versus two bodies unresolved",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 13,
+            "color_first_rays": 1,
+            "first_dark_samples": [
+              24,
+              24,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              1,
+              24
+            ],
+            "first_color_samples": [
+              16,
+              24,
+              21,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "candidates": [
+            "T1-P03",
+            "T1-A06"
+          ],
+          "distance_px": 22.67156809750927,
+          "neck_ratio": 0.3521265280016157,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P04",
+            "T1-P05"
+          ],
+          "distance_px": 25.80697580112788,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P06",
+            "T1-P08"
+          ],
+          "distance_px": 25.059928172283335,
+          "neck_ratio": 0.4162587236982171,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P06",
+            "T1-A02"
+          ],
+          "distance_px": 18.681541692269406,
+          "neck_ratio": 0.5595424309959895,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P07",
+            "T1-P08"
+          ],
+          "distance_px": 25.298221281347036,
+          "neck_ratio": 0.07447709686101046,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P10",
+            "T1-P11"
+          ],
+          "distance_px": 23.323807579381203,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P10",
+            "T1-A05"
+          ],
+          "distance_px": 24.08318915758459,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P11",
+            "T1-A05"
+          ],
+          "distance_px": 25.059928172283335,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T1-P17",
+            "T1-A16"
+          ],
+          "distance_px": 15.655046186480131,
+          "neck_ratio": null,
+          "separate_support": false
+        },
+        {
+          "candidates": [
+            "T1-A01",
+            "T1-A02"
+          ],
+          "distance_px": 24.08318915758459,
+          "neck_ratio": 0.003384115141971031,
+          "separate_support": true
+        }
+      ]
+    },
+    {
+      "section": "T2",
+      "box": [
+        2180,
+        2070,
+        2340,
+        2220
+      ],
+      "halo": [
+        2150,
+        2040,
+        2370,
+        2250
+      ],
+      "proposals": [
+        {
+          "source_id": "M4:416",
+          "xy": [
+            2319,
+            2047
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P01",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 1,
+            "mode": 2,
+            "area_px": 273,
+            "maximum_inset_px": 8.0,
+            "support_anchor_local": [
+              169,
+              7
+            ]
+          }
+        },
+        {
+          "source_id": "R192:205",
+          "xy": [
+            2284.8576360040856,
+            2049.1703342483916
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2284.8576360040856,
+            2049.1703342483916
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.048669363711067795,
+          "candidate_id": "T2-P02",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              6,
+              6,
+              5,
+              5,
+              4,
+              3,
+              4,
+              4,
+              7,
+              8,
+              5,
+              4,
+              3,
+              4,
+              5,
+              5
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:420",
+          "xy": [
+            2262,
+            2064
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P03",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 2,
+            "mode": 2,
+            "area_px": 349,
+            "maximum_inset_px": 7.810249675906654,
+            "support_anchor_local": [
+              112,
+              24
+            ]
+          }
+        },
+        {
+          "source_id": "R192:207",
+          "xy": [
+            2296.887242410702,
+            2070.4785468052014
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2296.887242410702,
+            2070.4785468052014
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.19067295032241535,
+          "candidate_id": "T2-P04",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              5,
+              5,
+              5,
+              6,
+              5,
+              4,
+              4,
+              5,
+              7,
+              7,
+              5,
+              4,
+              4,
+              4,
+              6,
+              6
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:427",
+          "xy": [
+            2276,
+            2090
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P05",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 6,
+            "mode": 2,
+            "area_px": 458,
+            "maximum_inset_px": 10.0,
+            "support_anchor_local": [
+              126,
+              50
+            ]
+          }
+        },
+        {
+          "source_id": "M4:433",
+          "xy": [
+            2288,
+            2112
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P06",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 8,
+            "mode": 2,
+            "area_px": 379,
+            "maximum_inset_px": 8.94427190999916,
+            "support_anchor_local": [
+              138,
+              72
+            ]
+          }
+        },
+        {
+          "source_id": "M4:438",
+          "xy": [
+            2300,
+            2134
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P07",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 10,
+            "mode": 2,
+            "area_px": 255,
+            "maximum_inset_px": 8.246211251235321,
+            "support_anchor_local": [
+              150,
+              94
+            ]
+          }
+        },
+        {
+          "source_id": "R192:214",
+          "xy": [
+            2247.1418834932474,
+            2153.038133545621
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2247.1418834932474,
+            2153.038133545621
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.0,
+          "candidate_id": "T2-P08",
+          "ownership_decision": "abstain",
+          "ownership_reason": "competing colored surface reaches reflection before dark enclosure",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 10,
+            "color_first_rays": 6,
+            "first_dark_samples": [
+              6,
+              7,
+              6,
+              7,
+              4,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              9,
+              9,
+              6,
+              5,
+              7
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              20,
+              16,
+              18,
+              12,
+              6,
+              18,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:443",
+          "xy": [
+            2284,
+            2158
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P09",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 4,
+            "mode": 1,
+            "area_px": 515,
+            "maximum_inset_px": 10.770329614269007,
+            "support_anchor_local": [
+              134,
+              118
+            ]
+          }
+        },
+        {
+          "source_id": "R192:218",
+          "xy": [
+            2259.505768573668,
+            2176.2734813107586
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2259.505768573668,
+            2176.2734813107586
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.20689490851176068,
+          "candidate_id": "T2-P10",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              5,
+              5,
+              6,
+              5,
+              4,
+              4,
+              4,
+              5,
+              8,
+              9,
+              13,
+              7,
+              5,
+              4,
+              4,
+              6
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "source_id": "M4:446",
+          "xy": [
+            2291,
+            2177
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P11",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 7,
+            "mode": 1,
+            "area_px": 401,
+            "maximum_inset_px": 9.848857801796104,
+            "support_anchor_local": [
+              141,
+              137
+            ]
+          }
+        },
+        {
+          "source_id": "M4:450",
+          "xy": [
+            2269,
+            2200
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P12",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 12,
+            "mode": 2,
+            "area_px": 402,
+            "maximum_inset_px": 7.0710678118654755,
+            "support_anchor_local": [
+              116,
+              162
+            ]
+          }
+        },
+        {
+          "source_id": "M4:454",
+          "xy": [
+            2247,
+            2217
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P13",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 14,
+            "mode": 2,
+            "area_px": 440,
+            "maximum_inset_px": 10.0,
+            "support_anchor_local": [
+              97,
+              177
+            ]
+          }
+        },
+        {
+          "source_id": "M4:455",
+          "xy": [
+            2284,
+            2218
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P14",
+          "ownership_decision": "abstain",
+          "ownership_reason": "colored shape extent too small or diffuse for certification",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 13,
+            "mode": 2,
+            "area_px": 10031,
+            "maximum_inset_px": 29.154759474226502,
+            "support_anchor_local": [
+              134,
+              178
+            ]
+          }
+        },
+        {
+          "source_id": "M4:458",
+          "xy": [
+            2228,
+            2231
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P15",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 15,
+            "mode": 2,
+            "area_px": 555,
+            "maximum_inset_px": 11.661903789690601,
+            "support_anchor_local": [
+              78,
+              191
+            ]
+          }
+        },
+        {
+          "source_id": "R192:222",
+          "xy": [
+            2262.779449356982,
+            2239.139237030057
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2262.779449356982,
+            2239.139237030057
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.10609533687552798,
+          "candidate_id": "T2-P16",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 16,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              6,
+              7,
+              6,
+              5,
+              4,
+              5,
+              3,
+              4,
+              5,
+              7,
+              6,
+              4,
+              3,
+              4,
+              5,
+              5
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2246,
+            2066
+          ],
+          "mode": 1,
+          "source_id": "pool:2308",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 229,
+          "inset": 6.324555320336759,
+          "value": 0.9647058844566345,
+          "score": 5.246233135744085,
+          "basin": 2,
+          "decision": "accepted",
+          "candidate_id": "T2-A01",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 1,
+            "mode": 1,
+            "area_px": 1056,
+            "maximum_inset_px": 11.180339887498949,
+            "support_anchor_local": [
+              96,
+              26
+            ]
+          }
+        },
+        {
+          "xy": [
+            2226,
+            2163
+          ],
+          "mode": 1,
+          "source_id": "pool:2455",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 217,
+          "inset": 6.0,
+          "value": 0.9647058844566345,
+          "score": 5.246233135744085,
+          "basin": 4,
+          "decision": "accepted",
+          "candidate_id": "T2-A02",
+          "ownership_decision": "abstain",
+          "ownership_reason": "colored shape extent too small or diffuse for certification",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 6,
+            "mode": 1,
+            "area_px": 1446,
+            "maximum_inset_px": 13.341664064126334,
+            "support_anchor_local": [
+              76,
+              123
+            ]
+          }
+        },
+        {
+          "xy": [
+            2264,
+            2116
+          ],
+          "mode": 1,
+          "source_id": "pool:2388",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 236,
+          "inset": 7.0710678118654755,
+          "value": 0.9372549057006836,
+          "score": 5.096950088259418,
+          "basin": 8,
+          "decision": "accepted",
+          "candidate_id": "T2-A03",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 2,
+            "mode": 1,
+            "area_px": 583,
+            "maximum_inset_px": 10.63014581273465,
+            "support_anchor_local": [
+              114,
+              76
+            ]
+          }
+        },
+        {
+          "xy": [
+            2221,
+            2183
+          ],
+          "mode": 1,
+          "source_id": "pool:2477",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 241,
+          "inset": 10.44030650891055,
+          "value": 0.9215686321258545,
+          "score": 5.011645489696751,
+          "basin": 1,
+          "decision": "accepted",
+          "candidate_id": "T2-A04",
+          "ownership_decision": "abstain",
+          "ownership_reason": "colored shape extent too small or diffuse for certification",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 6,
+            "mode": 1,
+            "area_px": 1446,
+            "maximum_inset_px": 13.341664064126334,
+            "support_anchor_local": [
+              71,
+              143
+            ]
+          }
+        },
+        {
+          "xy": [
+            2281,
+            2134
+          ],
+          "mode": 1,
+          "source_id": "pool:2410",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 241,
+          "inset": 9.219544457292887,
+          "value": 0.9058823585510254,
+          "score": 4.926340891134085,
+          "basin": 9,
+          "decision": "accepted",
+          "candidate_id": "T2-A05",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 3,
+            "mode": 1,
+            "area_px": 623,
+            "maximum_inset_px": 11.661903789690601,
+            "support_anchor_local": [
+              131,
+              94
+            ]
+          }
+        },
+        {
+          "xy": [
+            2252,
+            2095
+          ],
+          "mode": 1,
+          "source_id": "pool:2354",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 240,
+          "inset": 8.54400374531753,
+          "value": 0.7450980544090271,
+          "score": 4.0519687558667545,
+          "basin": 7,
+          "decision": "accepted",
+          "candidate_id": "T2-A06",
+          "ownership_decision": "abstain",
+          "ownership_reason": "same colored shape lobe; no evidence for an additional body",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 1,
+            "mode": 1,
+            "area_px": 1056,
+            "maximum_inset_px": 11.180339887498949,
+            "support_anchor_local": [
+              102,
+              55
+            ]
+          },
+          "competing_candidate": "T2-A01"
+        },
+        {
+          "xy": [
+            2297,
+            2114
+          ],
+          "mode": 2,
+          "source_id": "pool:2383",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12,
+          "color": "red",
+          "arm": "rejected",
+          "support_pixels": 219,
+          "inset": 5.0990195135927845,
+          "value": 0.7882353067398071,
+          "score": 4.0192272103690705,
+          "basin": 7,
+          "decision": "accepted",
+          "candidate_id": "T2-A07",
+          "ownership_decision": "abstain",
+          "ownership_reason": "same colored shape lobe; no evidence for an additional body",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 8,
+            "mode": 2,
+            "area_px": 379,
+            "maximum_inset_px": 8.94427190999916,
+            "support_anchor_local": [
+              147,
+              74
+            ]
+          },
+          "competing_candidate": "T2-P06"
+        },
+        {
+          "xy": [
+            2231,
+            2149
+          ],
+          "mode": 1,
+          "source_id": "pool:2431",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 208,
+          "inset": 4.242640687119285,
+          "value": 0.9098039269447327,
+          "score": 3.859971157756624,
+          "basin": 5,
+          "decision": "accepted",
+          "candidate_id": "T2-A08",
+          "ownership_decision": "abstain",
+          "ownership_reason": "colored shape extent too small or diffuse for certification",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 6,
+            "mode": 1,
+            "area_px": 1446,
+            "maximum_inset_px": 13.341664064126334,
+            "support_anchor_local": [
+              81,
+              109
+            ]
+          }
+        },
+        {
+          "xy": [
+            2257,
+            2069
+          ],
+          "mode": 1,
+          "source_id": "pool:2315",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12,
+          "color": "yellow",
+          "arm": "rejected",
+          "support_pixels": 199,
+          "inset": 3.605551275463989,
+          "value": 0.9137254953384399,
+          "score": 3.2944841251414774,
+          "basin": 3,
+          "decision": "accepted",
+          "candidate_id": "T2-A09",
+          "ownership_decision": "abstain",
+          "ownership_reason": "same colored shape lobe; no evidence for an additional body",
+          "point_role": "observed colored surface sample",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "shape_label": 1,
+            "mode": 1,
+            "area_px": 1056,
+            "maximum_inset_px": 11.180339887498949,
+            "support_anchor_local": [
+              107,
+              29
+            ]
+          },
+          "competing_candidate": "T2-A01"
+        },
+        {
+          "xy": [
+            2237,
+            2195
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:561",
+          "old_reason": "associated colored interior",
+          "arm": "rejected",
+          "original_xy": [
+            2236.1718872357087,
+            2194.085625
+          ],
+          "response": 0.4259442985057831,
+          "value": 0.8627451062202454,
+          "saturation": 0.1818181723356247,
+          "dark_fraction": 0.7058823529411765,
+          "max_dark_sector": 0.9607843137254902,
+          "decision": "accepted",
+          "candidate_id": "T2-A10",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 13,
+            "color_first_rays": 1,
+            "first_dark_samples": [
+              5,
+              6,
+              5,
+              2,
+              2,
+              2,
+              3,
+              4,
+              24,
+              24,
+              24,
+              8,
+              7,
+              6,
+              7,
+              6
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              15,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2237,
+            2128
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:766",
+          "old_reason": "surround insufficiently dark",
+          "arm": "rejected",
+          "original_xy": [
+            2236.1718872357087,
+            2126.468125
+          ],
+          "response": 0.3098648190498352,
+          "value": 0.8627451062202454,
+          "saturation": 0.27272725105285645,
+          "dark_fraction": 0.5,
+          "max_dark_sector": 0.8627450980392157,
+          "decision": "accepted",
+          "candidate_id": "T2-A11",
+          "ownership_decision": "abstain",
+          "ownership_reason": "competing colored surface reaches reflection before dark enclosure",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 10,
+            "color_first_rays": 6,
+            "first_dark_samples": [
+              2,
+              3,
+              5,
+              5,
+              5,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              9,
+              7,
+              5,
+              5,
+              3
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              14,
+              10,
+              12,
+              3,
+              11,
+              8,
+              12,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2220,
+            2211
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:840",
+          "old_reason": "surround insufficiently dark",
+          "arm": "rejected",
+          "original_xy": [
+            2218.270555990603,
+            2209.995625
+          ],
+          "response": 0.2278827428817749,
+          "value": 0.772549033164978,
+          "saturation": 0.3604061007499695,
+          "dark_fraction": 0.4411764705882353,
+          "max_dark_sector": 0.8823529411764706,
+          "decision": "accepted",
+          "candidate_id": "T2-A12",
+          "ownership_decision": "abstain",
+          "ownership_reason": "competing colored surface reaches reflection before dark enclosure",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 9,
+            "color_first_rays": 6,
+            "first_dark_samples": [
+              2,
+              2,
+              5,
+              24,
+              4,
+              6,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              7,
+              5,
+              4,
+              3
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              13,
+              18,
+              24,
+              24,
+              8,
+              3,
+              4,
+              15,
+              20,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2233,
+            2105
+          ],
+          "color": "black",
+          "source_id": "native:2233:2105",
+          "old_reason": "new native search",
+          "arm": "native",
+          "response": 0.20588111877441406,
+          "value": 0.8392156958580017,
+          "saturation": 0.29906541109085083,
+          "dark_fraction": 0.45098039215686275,
+          "max_dark_sector": 0.8235294117647058,
+          "decision": "accepted",
+          "candidate_id": "T2-A13",
+          "ownership_decision": "abstain",
+          "ownership_reason": "reflection lacks surrounding dark enclosure; paper rim or occlusion ambiguous",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 8,
+            "color_first_rays": 4,
+            "first_dark_samples": [
+              7,
+              6,
+              6,
+              5,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              8,
+              7,
+              6,
+              5,
+              5
+            ],
+            "first_color_samples": [
+              18,
+              24,
+              3,
+              24,
+              18,
+              3,
+              3,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2204,
+            2227
+          ],
+          "color": "black",
+          "source_id": "native:2204:2227",
+          "old_reason": "new native search",
+          "arm": "native",
+          "response": 0.1711617112159729,
+          "value": 0.7960784435272217,
+          "saturation": 0.3596058785915375,
+          "dark_fraction": 0.5196078431372549,
+          "max_dark_sector": 0.8431372549019608,
+          "decision": "accepted",
+          "candidate_id": "T2-A14",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 12,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              3,
+              3,
+              5,
+              6,
+              4,
+              5,
+              24,
+              24,
+              24,
+              24,
+              6,
+              3,
+              1,
+              1,
+              1,
+              2
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              10,
+              9,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        },
+        {
+          "xy": [
+            2307,
+            2092
+          ],
+          "color": "black",
+          "source_id": "native:2307:2092",
+          "old_reason": "new native search",
+          "arm": "native",
+          "response": 0.05036759376525879,
+          "value": 0.30980393290519714,
+          "saturation": 0.4556961953639984,
+          "dark_fraction": 1.0,
+          "max_dark_sector": 1.0,
+          "decision": "accepted",
+          "candidate_id": "T2-A15",
+          "ownership_decision": "retain",
+          "ownership_reason": "local support certified provisionally",
+          "point_role": "specular reflection",
+          "physical_center_xyz": null,
+          "visible_centroid_xy": null,
+          "ownership_evidence": {
+            "dark_rays": 15,
+            "color_first_rays": 0,
+            "first_dark_samples": [
+              0,
+              0,
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              24,
+              5,
+              4,
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            "first_color_samples": [
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24,
+              24
+            ],
+            "radii_px": [
+              2.4471758171295375,
+              2.9082379276032184,
+              3.3693000380768994,
+              3.8303621485505808,
+              4.291424259024262,
+              4.752486369497943,
+              5.213548479971624,
+              5.674610590445305,
+              6.1356727009189855,
+              6.5967348113926665,
+              7.057796921866348,
+              7.518859032340028,
+              7.97992114281371,
+              8.44098325328739,
+              8.902045363761072,
+              9.363107474234752,
+              9.824169584708434,
+              10.285231695182114,
+              10.746293805655796,
+              11.207355916129476,
+              11.668418026603158,
+              12.129480137076838,
+              12.59054224755052,
+              13.0516043580242
+            ]
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "candidates": [
+            "T2-P05",
+            "T2-P06"
+          ],
+          "distance_px": 25.059928172283335,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T2-P06",
+            "T2-P07"
+          ],
+          "distance_px": 25.059928172283335,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T2-P09",
+            "T2-P11"
+          ],
+          "distance_px": 20.248456731316587,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T2-P09",
+            "T2-A05"
+          ],
+          "distance_px": 24.186773244895647,
+          "neck_ratio": 0.4511730097678055,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T2-P13",
+            "T2-P15"
+          ],
+          "distance_px": 23.600847442411894,
+          "neck_ratio": 0.0,
+          "separate_support": true
+        },
+        {
+          "candidates": [
+            "T2-A03",
+            "T2-A05"
+          ],
+          "distance_px": 24.758836806279895,
+          "neck_ratio": 0.4229433930264168,
+          "separate_support": true
+        }
+      ]
+    }
+  ]
+}

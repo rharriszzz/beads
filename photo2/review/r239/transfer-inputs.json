@@ -1,0 +1,2750 @@
+{
+  "parameters": {
+    "native_diameter": 27.190842412550417,
+    "hue_modes_degrees": [
+      27,
+      353
+    ],
+    "learned_family_parameters": {
+      "1": {
+        "learned_hue_degrees": 27,
+        "diffuse_q35": 0.6784313917160034,
+        "diffuse_q65": 0.8509804010391235,
+        "diffuse_q90": 0.9411764740943909,
+        "M1_brightness_floor": 0.8509804010391235,
+        "M3_pixel_brightness_floor": 0.8509804010391235
+      },
+      "2": {
+        "learned_hue_degrees": 353,
+        "diffuse_q35": 0.3019607961177826,
+        "diffuse_q65": 0.48627451062202454,
+        "diffuse_q90": 0.7529411911964417,
+        "M1_brightness_floor": 0.48627451062202454,
+        "M3_pixel_brightness_floor": 0.48627451062202454
+      }
+    },
+    "reflection_median_window": 5,
+    "masked_gaussian_sigma": 1.9033589688785293,
+    "same_family_spacing": 13.595421206275208,
+    "nonreflection_seed_shift_radius": 4,
+    "M1": {
+      "hue_tolerance": 18,
+      "minimum_inset": 1.631450544753025,
+      "prominence_fraction": 0.08
+    },
+    "M2": {
+      "minimum_color_support_inset": 4.894351634259075,
+      "minimum_diffuse_fraction": 0.45
+    },
+    "M3": {
+      "hue_tolerance": 12,
+      "saturation_fraction_of_learned_floor": 0.7,
+      "patch_radius": 4.6224432101335715,
+      "brightness_rule": "strict",
+      "brightness_quantile": 0.65,
+      "minimum_diffuse_fraction": 0.6
+    },
+    "M4": {
+      "angles_degrees": [
+        0,
+        45,
+        90,
+        135
+      ],
+      "offsets_pixels": [
+        -2.719084241255042,
+        0,
+        2.719084241255042
+      ],
+      "middle_halfwidth": 3.26290108950605,
+      "flank_distances": [
+        8.157252723765124,
+        17.67404756815777
+      ],
+      "minimum_color_fraction": 0.75,
+      "minimum_brightness_fraction": 0.5,
+      "minimum_drop_absolute": 0.04,
+      "minimum_drop_relative": 0.1,
+      "required_paths_per_direction": 2,
+      "required_perpendicular_directions": 2
+    },
+    "saturation_floor": 0.5740740895271301
+  },
+  "sections": [
+    {
+      "id": "T1",
+      "box": [
+        1990,
+        740,
+        2150,
+        890
+      ],
+      "halo": [
+        1960,
+        710,
+        2180,
+        920
+      ],
+      "baseline": [
+        {
+          "source_id": "R192:84",
+          "xy": [
+            2078.2000033667446,
+            711.7988257541041
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2078.2000033667446,
+            711.7988257541041
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.09859561847952697,
+          "candidate_id": "T1-P01"
+        },
+        {
+          "source_id": "M4:138",
+          "xy": [
+            2106,
+            723
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P02"
+        },
+        {
+          "source_id": "M4:139",
+          "xy": [
+            2051,
+            729
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P03"
+        },
+        {
+          "source_id": "M4:141",
+          "xy": [
+            2077,
+            741
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P04"
+        },
+        {
+          "source_id": "M4:143",
+          "xy": [
+            2098,
+            756
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P05"
+        },
+        {
+          "source_id": "M4:145",
+          "xy": [
+            2074,
+            765
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P06"
+        },
+        {
+          "source_id": "M4:146",
+          "xy": [
+            2120,
+            769
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P07"
+        },
+        {
+          "source_id": "M4:147",
+          "xy": [
+            2096,
+            777
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P08"
+        },
+        {
+          "source_id": "M4:150",
+          "xy": [
+            2111,
+            802
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P09"
+        },
+        {
+          "source_id": "M4:154",
+          "xy": [
+            2107,
+            823
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P10"
+        },
+        {
+          "source_id": "M4:155",
+          "xy": [
+            2127,
+            835
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P11"
+        },
+        {
+          "source_id": "M4:156",
+          "xy": [
+            2152,
+            848
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P12"
+        },
+        {
+          "source_id": "M4:158",
+          "xy": [
+            2094,
+            852
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P13"
+        },
+        {
+          "source_id": "R192:98",
+          "xy": [
+            2120.564615411205,
+            862.6611548897844
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2120.564615411205,
+            862.6611548897844
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.12073478540392533,
+          "candidate_id": "T1-P14"
+        },
+        {
+          "source_id": "M4:161",
+          "xy": [
+            2080,
+            879
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P15"
+        },
+        {
+          "source_id": "R192:100",
+          "xy": [
+            2139.6876218834536,
+            879.6883175673761
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2139.6876218834536,
+            879.6883175673761
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.19279229496962622,
+          "candidate_id": "T1-P16"
+        },
+        {
+          "source_id": "R192:101",
+          "xy": [
+            2105.7212681582023,
+            892.1920305375886
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2105.7212681582023,
+            892.1920305375886
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.13692096722965427,
+          "candidate_id": "T1-P17"
+        },
+        {
+          "source_id": "M4:166",
+          "xy": [
+            2131,
+            907
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T1-P18"
+        }
+      ],
+      "colored_pool": [
+        {
+          "xy": [
+            2036,
+            712
+          ],
+          "mode": 2,
+          "source_id": "pool:650",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2026,
+            716
+          ],
+          "mode": 2,
+          "source_id": "pool:651",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 8
+        },
+        {
+          "xy": [
+            2029,
+            716
+          ],
+          "mode": 2,
+          "source_id": "pool:652",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2024,
+            720
+          ],
+          "mode": 1,
+          "source_id": "pool:655",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 10
+        },
+        {
+          "xy": [
+            2109,
+            720
+          ],
+          "mode": 2,
+          "source_id": "pool:656",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2059,
+            725
+          ],
+          "mode": 2,
+          "source_id": "pool:659",
+          "old_reason": "spacing",
+          "old_valid_cuts": 8,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2061,
+            725
+          ],
+          "mode": 2,
+          "source_id": "pool:660",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2100,
+            725
+          ],
+          "mode": 2,
+          "source_id": "pool:661",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2023,
+            728
+          ],
+          "mode": 2,
+          "source_id": "pool:662",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 6
+        },
+        {
+          "xy": [
+            2100,
+            728
+          ],
+          "mode": 2,
+          "source_id": "pool:663",
+          "old_reason": "spacing",
+          "old_valid_cuts": 10,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2053,
+            731
+          ],
+          "mode": 2,
+          "source_id": "pool:668",
+          "old_reason": "spacing",
+          "old_valid_cuts": 10,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2096,
+            736
+          ],
+          "mode": 2,
+          "source_id": "pool:671",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2030,
+            738
+          ],
+          "mode": 1,
+          "source_id": "pool:673",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2084,
+            739
+          ],
+          "mode": 2,
+          "source_id": "pool:674",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2034,
+            740
+          ],
+          "mode": 1,
+          "source_id": "pool:676",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2038,
+            744
+          ],
+          "mode": 1,
+          "source_id": "pool:681",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2077,
+            745
+          ],
+          "mode": 2,
+          "source_id": "pool:682",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2135,
+            746
+          ],
+          "mode": 2,
+          "source_id": "pool:683",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2109,
+            752
+          ],
+          "mode": 2,
+          "source_id": "pool:688",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2031,
+            756
+          ],
+          "mode": 2,
+          "source_id": "pool:691",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2055,
+            757
+          ],
+          "mode": 1,
+          "source_id": "pool:693",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2101,
+            758
+          ],
+          "mode": 2,
+          "source_id": "pool:694",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2143,
+            759
+          ],
+          "mode": 2,
+          "source_id": "pool:696",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2056,
+            760
+          ],
+          "mode": 1,
+          "source_id": "pool:697",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2047,
+            761
+          ],
+          "mode": 1,
+          "source_id": "pool:698",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2038,
+            768
+          ],
+          "mode": 2,
+          "source_id": "pool:701",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2125,
+            769
+          ],
+          "mode": 1,
+          "source_id": "pool:703",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2079,
+            773
+          ],
+          "mode": 1,
+          "source_id": "pool:706",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2066,
+            778
+          ],
+          "mode": 1,
+          "source_id": "pool:709",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2091,
+            778
+          ],
+          "mode": 1,
+          "source_id": "pool:710",
+          "old_reason": "spacing",
+          "old_valid_cuts": 10,
+          "old_color_cuts": 10
+        },
+        {
+          "xy": [
+            2101,
+            780
+          ],
+          "mode": 1,
+          "source_id": "pool:712",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2130,
+            780
+          ],
+          "mode": 2,
+          "source_id": "pool:713",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 1
+        },
+        {
+          "xy": [
+            2115,
+            782
+          ],
+          "mode": 2,
+          "source_id": "pool:716",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 1
+        },
+        {
+          "xy": [
+            2073,
+            785
+          ],
+          "mode": 2,
+          "source_id": "pool:719",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 2
+        },
+        {
+          "xy": [
+            2085,
+            790
+          ],
+          "mode": 1,
+          "source_id": "pool:723",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2126,
+            793
+          ],
+          "mode": 1,
+          "source_id": "pool:724",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2099,
+            796
+          ],
+          "mode": 2,
+          "source_id": "pool:728",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 4
+        },
+        {
+          "xy": [
+            2053,
+            797
+          ],
+          "mode": 2,
+          "source_id": "pool:729",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 11
+        },
+        {
+          "xy": [
+            2112,
+            797
+          ],
+          "mode": 1,
+          "source_id": "pool:730",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 5
+        },
+        {
+          "xy": [
+            2062,
+            801
+          ],
+          "mode": 2,
+          "source_id": "pool:733",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2077,
+            804
+          ],
+          "mode": 2,
+          "source_id": "pool:736",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 8
+        },
+        {
+          "xy": [
+            2138,
+            806
+          ],
+          "mode": 1,
+          "source_id": "pool:737",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2137,
+            807
+          ],
+          "mode": 1,
+          "source_id": "pool:740",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2156,
+            810
+          ],
+          "mode": 2,
+          "source_id": "pool:744",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2101,
+            813
+          ],
+          "mode": 2,
+          "source_id": "pool:745",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2061,
+            818
+          ],
+          "mode": 1,
+          "source_id": "pool:748",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2064,
+            818
+          ],
+          "mode": 1,
+          "source_id": "pool:749",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2114,
+            821
+          ],
+          "mode": 2,
+          "source_id": "pool:754",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2069,
+            822
+          ],
+          "mode": 1,
+          "source_id": "pool:755",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2082,
+            822
+          ],
+          "mode": 2,
+          "source_id": "pool:756",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2118,
+            822
+          ],
+          "mode": 2,
+          "source_id": "pool:757",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2103,
+            824
+          ],
+          "mode": 2,
+          "source_id": "pool:761",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2161,
+            826
+          ],
+          "mode": 2,
+          "source_id": "pool:763",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2138,
+            831
+          ],
+          "mode": 2,
+          "source_id": "pool:765",
+          "old_reason": "spacing",
+          "old_valid_cuts": 8,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2125,
+            832
+          ],
+          "mode": 2,
+          "source_id": "pool:767",
+          "old_reason": "spacing",
+          "old_valid_cuts": 10,
+          "old_color_cuts": 11
+        },
+        {
+          "xy": [
+            2107,
+            838
+          ],
+          "mode": 2,
+          "source_id": "pool:771",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2150,
+            841
+          ],
+          "mode": 2,
+          "source_id": "pool:772",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2076,
+            847
+          ],
+          "mode": 2,
+          "source_id": "pool:774",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 10
+        },
+        {
+          "xy": [
+            2105,
+            847
+          ],
+          "mode": 2,
+          "source_id": "pool:775",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2067,
+            856
+          ],
+          "mode": 2,
+          "source_id": "pool:781",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2163,
+            861
+          ],
+          "mode": 2,
+          "source_id": "pool:786",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2095,
+            875
+          ],
+          "mode": 2,
+          "source_id": "pool:796",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2089,
+            877
+          ],
+          "mode": 2,
+          "source_id": "pool:797",
+          "old_reason": "profile",
+          "old_valid_cuts": 7,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2083,
+            881
+          ],
+          "mode": 2,
+          "source_id": "pool:800",
+          "old_reason": "spacing",
+          "old_valid_cuts": 9,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2093,
+            904
+          ],
+          "mode": 2,
+          "source_id": "pool:817",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2141,
+            904
+          ],
+          "mode": 2,
+          "source_id": "pool:818",
+          "old_reason": "spacing",
+          "old_valid_cuts": 8,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2146,
+            906
+          ],
+          "mode": 2,
+          "source_id": "pool:820",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2097,
+            908
+          ],
+          "mode": 2,
+          "source_id": "pool:822",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2131,
+            911
+          ],
+          "mode": 2,
+          "source_id": "pool:824",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2085,
+            913
+          ],
+          "mode": 2,
+          "source_id": "pool:827",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2170,
+            918
+          ],
+          "mode": 2,
+          "source_id": "pool:829",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        }
+      ],
+      "black_pool": [
+        {
+          "xy": [
+            2079.0379796397806,
+            710.478125
+          ],
+          "color": "black",
+          "source_id": "points:83",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2120.807752545027,
+            863.611875
+          ],
+          "color": "black",
+          "source_id": "points:97",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2140.6981205951447,
+            879.521875
+          ],
+          "color": "black",
+          "source_id": "points:99",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2106.8844949099453,
+            891.454375
+          ],
+          "color": "black",
+          "source_id": "points:100",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2085.005090054816,
+            907.364375
+          ],
+          "color": "black",
+          "source_id": "excluded:77",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2067.10375880971,
+            847.701875
+          ],
+          "color": "black",
+          "source_id": "excluded:95",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2051.1914643696164,
+            805.938125
+          ],
+          "color": "black",
+          "source_id": "excluded:159",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2075.0599060297573,
+            837.7581250000001
+          ],
+          "color": "black",
+          "source_id": "excluded:184",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2049.2024275646045,
+            797.983125
+          ],
+          "color": "black",
+          "source_id": "excluded:205",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2077.0489428347687,
+            899.4093750000001
+          ],
+          "color": "black",
+          "source_id": "excluded:293",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2019.3668754894284,
+            714.455625
+          ],
+          "color": "black",
+          "source_id": "excluded:318",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2027.3230227094753,
+            748.264375
+          ],
+          "color": "black",
+          "source_id": "excluded:323",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2085.005090054816,
+            919.296875
+          ],
+          "color": "black",
+          "source_id": "excluded:345",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2067.10375880971,
+            875.5443750000001
+          ],
+          "color": "black",
+          "source_id": "excluded:361",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2047.2133907595928,
+            780.084375
+          ],
+          "color": "black",
+          "source_id": "excluded:445",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2166.5555990602975,
+            869.578125
+          ],
+          "color": "black",
+          "source_id": "excluded:472",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2178.489819890368,
+            893.443125
+          ],
+          "color": "black",
+          "source_id": "excluded:503",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2130.752936570086,
+            907.364375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:16",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2126.7748629600624,
+            835.7693750000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:133",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2092.961237274863,
+            851.679375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:139",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2102.9064212999215,
+            823.8368750000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:150",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2079.0379796397806,
+            809.915625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:300",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2086.9941268598277,
+            788.0393750000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:367",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2077.0489428347687,
+            740.309375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:431",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2098.928347689898,
+            756.219375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:442",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2081.0270164447925,
+            877.533125
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:455",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2110.8625685199686,
+            797.983125
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:456",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2065.1147220046983,
+            776.1068750000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:501",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2053.180501174628,
+            726.3881250000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:565",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2100.91738449491,
+            724.3993750000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:580",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2120.807752545027,
+            768.151875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:583",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2059.147611589663,
+            795.994375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:645",
+          "old_reason": "surround insufficiently dark"
+        },
+        {
+          "xy": [
+            2067.10375880971,
+            815.881875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:646",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2047.2133907595928,
+            760.196875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:720",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2029.312059514487,
+            714.455625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:721",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2138.7090837901333,
+            807.926875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:754",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2150.6433046202037,
+            851.679375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:767",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2035.2791699295221,
+            738.3206250000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:826",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2124.785826155051,
+            738.3206250000001
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:843",
+          "old_reason": "chromatic surround"
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "box": [
+        2180,
+        2070,
+        2340,
+        2220
+      ],
+      "halo": [
+        2150,
+        2040,
+        2370,
+        2250
+      ],
+      "baseline": [
+        {
+          "source_id": "M4:416",
+          "xy": [
+            2319,
+            2047
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P01"
+        },
+        {
+          "source_id": "R192:205",
+          "xy": [
+            2284.8576360040856,
+            2049.1703342483916
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2284.8576360040856,
+            2049.1703342483916
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.048669363711067795,
+          "candidate_id": "T2-P02"
+        },
+        {
+          "source_id": "M4:420",
+          "xy": [
+            2262,
+            2064
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P03"
+        },
+        {
+          "source_id": "R192:207",
+          "xy": [
+            2296.887242410702,
+            2070.4785468052014
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2296.887242410702,
+            2070.4785468052014
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.19067295032241535,
+          "candidate_id": "T2-P04"
+        },
+        {
+          "source_id": "M4:427",
+          "xy": [
+            2276,
+            2090
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P05"
+        },
+        {
+          "source_id": "M4:433",
+          "xy": [
+            2288,
+            2112
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P06"
+        },
+        {
+          "source_id": "M4:438",
+          "xy": [
+            2300,
+            2134
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P07"
+        },
+        {
+          "source_id": "R192:214",
+          "xy": [
+            2247.1418834932474,
+            2153.038133545621
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2247.1418834932474,
+            2153.038133545621
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.0,
+          "candidate_id": "T2-P08"
+        },
+        {
+          "source_id": "M4:443",
+          "xy": [
+            2284,
+            2158
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P09"
+        },
+        {
+          "source_id": "R192:218",
+          "xy": [
+            2259.505768573668,
+            2176.2734813107586
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2259.505768573668,
+            2176.2734813107586
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.20689490851176068,
+          "candidate_id": "T2-P10"
+        },
+        {
+          "source_id": "M4:446",
+          "xy": [
+            2291,
+            2177
+          ],
+          "color": "yellow",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P11"
+        },
+        {
+          "source_id": "M4:450",
+          "xy": [
+            2269,
+            2200
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P12"
+        },
+        {
+          "source_id": "M4:454",
+          "xy": [
+            2247,
+            2217
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P13"
+        },
+        {
+          "source_id": "M4:455",
+          "xy": [
+            2284,
+            2218
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P14"
+        },
+        {
+          "source_id": "M4:458",
+          "xy": [
+            2228,
+            2231
+          ],
+          "color": "red",
+          "role": "colored interior proposal",
+          "reflection_xy": null,
+          "candidate_id": "T2-P15"
+        },
+        {
+          "source_id": "R192:222",
+          "xy": [
+            2262.779449356982,
+            2239.139237030057
+          ],
+          "color": "black",
+          "role": "reflection with native dark-surround support",
+          "reflection_xy": [
+            2262.779449356982,
+            2239.139237030057
+          ],
+          "inherited_status": "region-proposal",
+          "localization_sensitivity_px": 0.10609533687552798,
+          "candidate_id": "T2-P16"
+        }
+      ],
+      "colored_pool": [
+        {
+          "xy": [
+            2252,
+            2046
+          ],
+          "mode": 2,
+          "source_id": "pool:2279",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 10
+        },
+        {
+          "xy": [
+            2253,
+            2046
+          ],
+          "mode": 2,
+          "source_id": "pool:2280",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2260,
+            2046
+          ],
+          "mode": 2,
+          "source_id": "pool:2281",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2264,
+            2049
+          ],
+          "mode": 2,
+          "source_id": "pool:2288",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2248,
+            2063
+          ],
+          "mode": 1,
+          "source_id": "pool:2301",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2263,
+            2064
+          ],
+          "mode": 2,
+          "source_id": "pool:2305",
+          "old_reason": "spacing",
+          "old_valid_cuts": 8,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2246,
+            2066
+          ],
+          "mode": 1,
+          "source_id": "pool:2308",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2276,
+            2066
+          ],
+          "mode": 2,
+          "source_id": "pool:2309",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2257,
+            2069
+          ],
+          "mode": 1,
+          "source_id": "pool:2315",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2274,
+            2069
+          ],
+          "mode": 2,
+          "source_id": "pool:2316",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2249,
+            2070
+          ],
+          "mode": 1,
+          "source_id": "pool:2319",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2235,
+            2075
+          ],
+          "mode": 2,
+          "source_id": "pool:2326",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2234,
+            2088
+          ],
+          "mode": 2,
+          "source_id": "pool:2343",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 7
+        },
+        {
+          "xy": [
+            2274,
+            2092
+          ],
+          "mode": 2,
+          "source_id": "pool:2351",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2286,
+            2093
+          ],
+          "mode": 2,
+          "source_id": "pool:2352",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2252,
+            2095
+          ],
+          "mode": 1,
+          "source_id": "pool:2354",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2290,
+            2096
+          ],
+          "mode": 2,
+          "source_id": "pool:2356",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2253,
+            2110
+          ],
+          "mode": 1,
+          "source_id": "pool:2375",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 3
+        },
+        {
+          "xy": [
+            2247,
+            2111
+          ],
+          "mode": 1,
+          "source_id": "pool:2378",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2255,
+            2112
+          ],
+          "mode": 1,
+          "source_id": "pool:2380",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 6
+        },
+        {
+          "xy": [
+            2297,
+            2114
+          ],
+          "mode": 2,
+          "source_id": "pool:2383",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2286,
+            2115
+          ],
+          "mode": 2,
+          "source_id": "pool:2385",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2264,
+            2116
+          ],
+          "mode": 1,
+          "source_id": "pool:2388",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2306,
+            2116
+          ],
+          "mode": 2,
+          "source_id": "pool:2389",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2310,
+            2119
+          ],
+          "mode": 2,
+          "source_id": "pool:2398",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2231,
+            2123
+          ],
+          "mode": 2,
+          "source_id": "pool:2402",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2251,
+            2124
+          ],
+          "mode": 2,
+          "source_id": "pool:2404",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 8
+        },
+        {
+          "xy": [
+            2248,
+            2130
+          ],
+          "mode": 1,
+          "source_id": "pool:2408",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 1
+        },
+        {
+          "xy": [
+            2307,
+            2132
+          ],
+          "mode": 2,
+          "source_id": "pool:2409",
+          "old_reason": "spacing",
+          "old_valid_cuts": 11,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2281,
+            2134
+          ],
+          "mode": 1,
+          "source_id": "pool:2410",
+          "old_reason": "profile",
+          "old_valid_cuts": 6,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2303,
+            2135
+          ],
+          "mode": 2,
+          "source_id": "pool:2412",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2260,
+            2136
+          ],
+          "mode": 1,
+          "source_id": "pool:2413",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2268,
+            2136
+          ],
+          "mode": 1,
+          "source_id": "pool:2414",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 3
+        },
+        {
+          "xy": [
+            2249,
+            2145
+          ],
+          "mode": 2,
+          "source_id": "pool:2427",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2266,
+            2147
+          ],
+          "mode": 2,
+          "source_id": "pool:2429",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 7
+        },
+        {
+          "xy": [
+            2231,
+            2149
+          ],
+          "mode": 1,
+          "source_id": "pool:2431",
+          "old_reason": "profile",
+          "old_valid_cuts": 2,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2226,
+            2150
+          ],
+          "mode": 1,
+          "source_id": "pool:2433",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2282,
+            2155
+          ],
+          "mode": 1,
+          "source_id": "pool:2437",
+          "old_reason": "spacing",
+          "old_valid_cuts": 8,
+          "old_color_cuts": 8
+        },
+        {
+          "xy": [
+            2288,
+            2158
+          ],
+          "mode": 1,
+          "source_id": "pool:2446",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2217,
+            2159
+          ],
+          "mode": 2,
+          "source_id": "pool:2449",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2233,
+            2159
+          ],
+          "mode": 1,
+          "source_id": "pool:2450",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2226,
+            2163
+          ],
+          "mode": 1,
+          "source_id": "pool:2455",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2302,
+            2164
+          ],
+          "mode": 2,
+          "source_id": "pool:2456",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 1
+        },
+        {
+          "xy": [
+            2273,
+            2166
+          ],
+          "mode": 2,
+          "source_id": "pool:2458",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 8
+        },
+        {
+          "xy": [
+            2294,
+            2176
+          ],
+          "mode": 1,
+          "source_id": "pool:2468",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2292,
+            2179
+          ],
+          "mode": 1,
+          "source_id": "pool:2474",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2251,
+            2180
+          ],
+          "mode": 2,
+          "source_id": "pool:2475",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2221,
+            2183
+          ],
+          "mode": 1,
+          "source_id": "pool:2477",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2216,
+            2185
+          ],
+          "mode": 1,
+          "source_id": "pool:2480",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2237,
+            2188
+          ],
+          "mode": 2,
+          "source_id": "pool:2483",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 2
+        },
+        {
+          "xy": [
+            2313,
+            2189
+          ],
+          "mode": 2,
+          "source_id": "pool:2486",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2300,
+            2196
+          ],
+          "mode": 1,
+          "source_id": "pool:2492",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2231,
+            2198
+          ],
+          "mode": 2,
+          "source_id": "pool:2494",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 11
+        },
+        {
+          "xy": [
+            2298,
+            2198
+          ],
+          "mode": 1,
+          "source_id": "pool:2495",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2273,
+            2200
+          ],
+          "mode": 2,
+          "source_id": "pool:2497",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2277,
+            2200
+          ],
+          "mode": 2,
+          "source_id": "pool:2498",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2221,
+            2204
+          ],
+          "mode": 2,
+          "source_id": "pool:2502",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 7
+        },
+        {
+          "xy": [
+            2214,
+            2213
+          ],
+          "mode": 1,
+          "source_id": "pool:2510",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2257,
+            2216
+          ],
+          "mode": 2,
+          "source_id": "pool:2513",
+          "old_reason": "spacing",
+          "old_valid_cuts": 9,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2278,
+            2216
+          ],
+          "mode": 2,
+          "source_id": "pool:2514",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2289,
+            2217
+          ],
+          "mode": 2,
+          "source_id": "pool:2516",
+          "old_reason": "spacing",
+          "old_valid_cuts": 10,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2213,
+            2218
+          ],
+          "mode": 2,
+          "source_id": "pool:2517",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 9
+        },
+        {
+          "xy": [
+            2203,
+            2220
+          ],
+          "mode": 2,
+          "source_id": "pool:2521",
+          "old_reason": "profile",
+          "old_valid_cuts": 0,
+          "old_color_cuts": 10
+        },
+        {
+          "xy": [
+            2246,
+            2220
+          ],
+          "mode": 2,
+          "source_id": "pool:2522",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2242,
+            2228
+          ],
+          "mode": 2,
+          "source_id": "pool:2527",
+          "old_reason": "profile",
+          "old_valid_cuts": 4,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2236,
+            2230
+          ],
+          "mode": 2,
+          "source_id": "pool:2529",
+          "old_reason": "profile",
+          "old_valid_cuts": 5,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2225,
+            2233
+          ],
+          "mode": 2,
+          "source_id": "pool:2532",
+          "old_reason": "spacing",
+          "old_valid_cuts": 12,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2217,
+            2245
+          ],
+          "mode": 2,
+          "source_id": "pool:2539",
+          "old_reason": "profile",
+          "old_valid_cuts": 3,
+          "old_color_cuts": 12
+        },
+        {
+          "xy": [
+            2225,
+            2248
+          ],
+          "mode": 2,
+          "source_id": "pool:2542",
+          "old_reason": "profile",
+          "old_valid_cuts": 1,
+          "old_color_cuts": 12
+        }
+      ],
+      "black_pool": [
+        {
+          "xy": [
+            2285.8978073610024,
+            2048.906875
+          ],
+          "color": "black",
+          "source_id": "points:204",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2297.832028191073,
+            2070.783125
+          ],
+          "color": "black",
+          "source_id": "points:206",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2248.106108065779,
+            2152.321875
+          ],
+          "color": "black",
+          "source_id": "points:213",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2260.0403288958496,
+            2176.186875
+          ],
+          "color": "black",
+          "source_id": "points:217",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2264.018402505873,
+            2239.826875
+          ],
+          "color": "black",
+          "source_id": "points:221",
+          "old_reason": "passed detector; downstream R192 or baseline"
+        },
+        {
+          "xy": [
+            2208.325371965544,
+            2209.995625
+          ],
+          "color": "black",
+          "source_id": "excluded:39",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2230.2047768206735,
+            2114.535625
+          ],
+          "color": "black",
+          "source_id": "excluded:324",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2198.3801879404855,
+            2235.8493750000002
+          ],
+          "color": "black",
+          "source_id": "excluded:372",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2228.2157400156616,
+            2090.670625
+          ],
+          "color": "black",
+          "source_id": "excluded:377",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2293.853954581049,
+            2245.793125
+          ],
+          "color": "black",
+          "source_id": "excluded:451",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2238.16092404072,
+            2052.884375
+          ],
+          "color": "black",
+          "source_id": "excluded:469",
+          "old_reason": "near approximate band edge"
+        },
+        {
+          "xy": [
+            2267.9964761158967,
+            2198.063125
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:58",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2246.1170712607673,
+            2215.961875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:86",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2277.9416601409553,
+            2156.299375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:232",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2264.018402505873,
+            2134.4231250000003
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:310",
+          "old_reason": "surround insufficiently dark"
+        },
+        {
+          "xy": [
+            2226.2267032106497,
+            2233.8606250000003
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:335",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2289.8758809710257,
+            2178.175625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:382",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2287.886844166014,
+            2112.546875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:397",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2277.9416601409553,
+            2090.670625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:433",
+          "old_reason": "chromatic surround"
+        },
+        {
+          "xy": [
+            2250.095144870791,
+            2108.569375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:448",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2236.1718872357087,
+            2194.085625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:561",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2238.16092404072,
+            2172.209375
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:577",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2262.0293657008615,
+            2066.805625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:665",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2283.9087705559905,
+            2217.950625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:678",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2234.182850430697,
+            2144.366875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:680",
+          "old_reason": "chromatic surround"
+        },
+        {
+          "xy": [
+            2301.810101801096,
+            2134.4231250000003
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:684",
+          "old_reason": "chromatic surround"
+        },
+        {
+          "xy": [
+            2317.7223962411904,
+            2050.895625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:709",
+          "old_reason": "chromatic surround"
+        },
+        {
+          "xy": [
+            2244.128034455756,
+            2088.681875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:734",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2218.270555990603,
+            2192.096875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:737",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2236.1718872357087,
+            2126.468125
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:766",
+          "old_reason": "surround insufficiently dark"
+        },
+        {
+          "xy": [
+            2250.095144870791,
+            2044.9293750000002
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:771",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2258.0512920908377,
+            2044.9293750000002
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:808",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2218.270555990603,
+            2209.995625
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:840",
+          "old_reason": "surround insufficiently dark"
+        },
+        {
+          "xy": [
+            2313.7443226311666,
+            2158.288125
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:851",
+          "old_reason": "associated colored interior"
+        },
+        {
+          "xy": [
+            2303.799138606108,
+            2200.051875
+          ],
+          "color": "black",
+          "source_id": "reflection_rejections:862",
+          "old_reason": "associated colored interior"
+        }
+      ]
+    }
+  ],
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "sources": {
+    "photo2/output/r231/profile-pool.json": "57ee2f6995d3c48117e6c00e3fed56cc48931e3253c42e8d57826faa8af57085",
+    "photo2/output/r231/profiles.npz": "419f3f968e2048dbef491d9b9671b85851907de8590edcb3fd328b73da3128e0",
+    "photo2/output/r238/old-detector.json": "e8430022db5a630c83f4724e9da9389de8e8b3dc7d75600f40c34f0da3ae6755",
+    "photo2/review/r231/points.json": "422858d7f4365cc415014b39c3001f091ca2d6099946bbbfc620c9062f517bfd",
+    "photo2/review/r192/candidates.json": "655c0ff09ffa4b8015266fcc9926382671b6fd1144099a351e6d30c29013029d"
+  }
+}

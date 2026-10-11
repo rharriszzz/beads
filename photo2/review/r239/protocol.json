@@ -1,0 +1,55 @@
+{
+  "request": "R239",
+  "base_commit": "7359bbddfc8d2a2f6a888b443d9c79332949a715",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "transfer": [
+    {
+      "id": "T1",
+      "box": [
+        1990,
+        740,
+        2150,
+        890
+      ],
+      "halo": [
+        1960,
+        710,
+        2180,
+        920
+      ]
+    },
+    {
+      "id": "T2",
+      "box": [
+        2180,
+        2070,
+        2340,
+        2220
+      ],
+      "halo": [
+        2150,
+        2040,
+        2370,
+        2250
+      ]
+    }
+  ],
+  "development": [
+    "D3",
+    "D4",
+    "H1",
+    "H4"
+  ],
+  "selection": "Subsections of previously proposed R233 H2/H3, unused for R235/R238 detection development or transfer. Fixed before ownership code or tuning; historical full-photo inspection is not unseen imagery.",
+  "methods": [
+    "radial dark enclosure and competing color support",
+    "distance-transform colored shape regions",
+    "pairwise neck/seam and ambiguous-group abstention",
+    "projected bead templates (deferred Stage 2)"
+  ],
+  "chosen": "Conservative enclosure + shape ownership filter of unchanged R238 accepted proposals, no new proposals.",
+  "eligibility": "Unchanged R235: convincing red/yellow roughly >=10% visible footprint; black obvious reflection plus dark body; no-reflection black deferred.",
+  "criterion": "Reduce confirmed false/duplicate/wrong-color observations; report every loss, unresolved retained and abstention. No recall target; do not claim identity from proximity alone.",
+  "reference_policy": "Raw-only agent reference before automatic transfer overlay, not independent maker truth.",
+  "stop": "One bounded experiment, then Stage 2 readiness recommendation; no geometry fitting/indexing/pattern work."
+}

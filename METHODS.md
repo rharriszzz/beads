@@ -1563,6 +1563,7 @@ results are not automatically present or validated on this branch.
 
 | Aspect | Reusable procedure / next idea | Evidence and limitation |
 | --- | --- | --- |
+| Stage 1 ownership filter | Angular dark enclosure and competing color; diffuse-seam cuts plus shape lobes; explicit pair abstention; frozen fresh transfer and loss accounting | [R239 ownership](photo2/STAGE1_OWNERSHIP.md): zero confirmed retained errors in six sections, but18 lost bodies and9 unresolved accepted; D3 supports a small geometry experiment, not a global identity map |
 | Stage 1 recovery audit | Preserve rejected candidates, compare local evidence and native reflections, freeze before transfer, audit every addition without deleting errors | [R238 recovery](photo2/STAGE1_RECOVERY.md):103/109 conditional coverage but3 duplicates/9 false/1 wrong color; accuracy gate fails; body ownership remains unresolved |
 | Stage 1 photographic inventory | Replay frozen color/reflection passes; number raw references, preserve distinct location roles, score every proposal, disclose assisted additions and reference amendments | [R235 four-section pilot](photo2/STAGE1_PILOT.md): provisional76/109 coverage,33 assisted additions;13 uncertain references,7 unresolved proposals; black without reflections deferred; no indexing |
 | Local measurements | Show raw context, interior endpoints, path, color strip and traces separately; retain rejected endpoints | [Hue paths](photo2/HUE_TRANSITIONS.md), [parallel paths](photo2/PARALLEL_PATHS.md); hue changes are supporting cues, not boundaries by themselves |

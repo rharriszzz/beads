@@ -1,0 +1,179 @@
+"""R239 conservative ownership filter; no reference labels or physical centers.
+
+R238 supplies proposals. Shape supports are provisional image regions, not bead
+silhouettes. Unresolved pair ownership causes abstention, never a forced split.
+"""
+from __future__ import annotations
+import argparse
+import copy
+from pathlib import Path
+import numpy as np
+from PIL import Image
+from scipy import ndimage as ndi
+from skimage.morphology import h_maxima
+from skimage.segmentation import watershed
+from photo2.stage1_pilot import ROOT, read, save, sha, contains, assemble_candidates
+from photo2.stage1_recovery import local_fields, RULES as R238_RULES, detect_section
+
+BUNDLE=ROOT/'photo2/review/r239'
+RULES=dict(rays=16, ray_start_d=.09, ray_end_d=.48, ray_samples=24,
+           dark_value=.40, dark_peak_fraction=.82, dark_run=3,
+           minimum_dark_rays=12, maximum_color_first_rays=4,
+           shape_close=1, shape_prominence_d=.04, minimum_depth_d=.13,
+           minimum_area_d2=.10, maximum_area_d2=1.65, maximum_depth_d=.55,
+           seam_diffuse_fraction=.68, seam_window_d=.85, snap_d=.14, pair_range_d=.95, neck_ratio=.60,
+           black_pair_range_d=.70)
+
+
+def shape_regions(mask,d,rules=RULES):
+    support=ndi.binary_fill_holes(ndi.binary_closing(mask,iterations=rules['shape_close']))
+    depth=ndi.distance_transform_edt(support)
+    smooth=ndi.gaussian_filter(depth,.7)
+    markers,n=ndi.label(h_maxima(smooth,rules['shape_prominence_d']*d))
+    labels=watershed(-smooth,markers,mask=support) if n else np.zeros(mask.shape,int)
+    return support,depth,labels
+
+
+def ray_evidence(v,colored,xy,d,rules=RULES):
+    angles=np.arange(rules['rays'])*2*np.pi/rules['rays']
+    radii=np.linspace(rules['ray_start_d']*d,rules['ray_end_d']*d,rules['ray_samples'])
+    x,y=xy; xx=x+np.cos(angles)[:,None]*radii;yy=y+np.sin(angles)[:,None]*radii
+    values=ndi.map_coordinates(v,[yy,xx],order=1,mode='nearest')
+    colors=ndi.map_coordinates(colored.astype(float),[yy,xx],order=0,mode='nearest')>.5
+    peak=float(ndi.map_coordinates(v,[[y],[x]],order=1)[0])
+    dark=(values<min(rules['dark_value'],peak*rules['dark_peak_fraction']))&~colors
+    first_dark=[];first_color=[]
+    k=rules['dark_run']
+    for darkrow,colorrow in zip(dark,colors):
+        runs=np.convolve(darkrow.astype(int),np.ones(k,int),'valid')==k
+        first_dark.append(int(np.flatnonzero(runs)[0]) if runs.any() else len(radii))
+        runs=np.convolve(colorrow.astype(int),np.ones(k,int),'valid')==k
+        first_color.append(int(np.flatnonzero(runs)[0]) if runs.any() else len(radii))
+    enclosed=sum(a<len(radii) and a<b for a,b in zip(first_dark,first_color))
+    competing=sum(b<len(radii) and b<=a for a,b in zip(first_dark,first_color))
+    return dict(dark_rays=enclosed,color_first_rays=competing,first_dark_samples=first_dark,
+                first_color_samples=first_color,radii_px=radii.tolist())
+
+
+def filter_section(rgb,section,params,rules=RULES):
+    """All proposals treated alike; baseline preferred only within same support lobe."""
+    box=section['halo'];offset=np.array(box[:2]);patch=rgb[box[1]:box[3],box[0]:box[2]]
+    hsv,masks,_,_=local_fields(patch,params,R238_RULES);v=hsv[...,2];d=params['native_diameter']
+    # Local diffuse-value saddles cut connecting dark necks before shape analysis.
+    # Normalize within each learned color mask so paper does not bleed into it.
+    shapes={}
+    for mode,mask in masks.items():
+        weight=ndi.gaussian_filter(mask.astype(float),1.)
+        diffuse=ndi.gaussian_filter(v*mask,1.)/np.maximum(weight,1e-6)
+        maximum=ndi.maximum_filter(diffuse,size=max(3,round(rules['seam_window_d']*d)))
+        seam_mask=mask&(diffuse>=rules['seam_diffuse_fraction']*maximum)
+        shapes[mode]=shape_regions(seam_mask,d,rules)
+    colored=np.logical_or.reduce([a[0] for a in shapes.values()])
+    names={min({'red':0,'yellow':45},key=lambda n:abs((h-{'red':0,'yellow':45}[n]+180)%360-180)):i for i,h in enumerate(params['hue_modes_degrees'],1)}
+    proposals=[]
+    for orig in section['baseline']+section['additions']:
+        p=copy.deepcopy(orig);p['ownership_decision']='retain';p['ownership_reason']='local support certified provisionally'
+        p['point_role']='specular reflection' if p['color']=='black' else 'observed colored surface sample'
+        p['physical_center_xyz']=None;p['visible_centroid_xy']=None
+        xy=np.array(p['xy'])-offset;x,y=np.rint(xy).astype(int)
+        def abstain(reason):p.update(ownership_decision='abstain',ownership_reason=reason)
+        if p['color']=='black':
+            p['ownership_evidence']=ray_evidence(v,colored,xy,d,rules)
+            e=p['ownership_evidence']
+            if e['color_first_rays']>rules['maximum_color_first_rays']:abstain('competing colored surface reaches reflection before dark enclosure')
+            elif e['dark_rays']<rules['minimum_dark_rays']:abstain('reflection lacks surrounding dark enclosure; paper rim or occlusion ambiguous')
+        else:
+            mode=names[p['color']];support,depth,labels=shapes[mode]
+            label=int(labels[y,x]);anchor=[int(x),int(y)]
+            if not label:
+                yy,xx=np.indices(v.shape);dist=(xx-x)**2+(yy-y)**2
+                dist=np.where((labels>0)&(dist<=(rules['snap_d']*d)**2),dist,np.inf)
+                if np.isfinite(dist).any():
+                    iy,ix=np.unravel_index(dist.argmin(),dist.shape);label=int(labels[iy,ix]);anchor=[int(ix),int(iy)]
+            region=labels==label if label else np.zeros(v.shape,bool)
+            area=int(region.sum());core=float(depth[region].max()) if area else 0.
+            p['ownership_evidence']=dict(shape_label=label,mode=mode,area_px=area,maximum_inset_px=core,support_anchor_local=anchor)
+            if not label:abstain('no associated colored shape support')
+            elif not rules['minimum_area_d2']*d*d<=area<=rules['maximum_area_d2']*d*d:abstain('colored shape extent too small or diffuse for certification')
+            elif not rules['minimum_depth_d']*d<=core<=rules['maximum_depth_d']*d:abstain('colored support has no compact bead-scale core')
+        proposals.append(p)
+    # Same lobe: choose one sample, recording the relation rather than deleting traces.
+    groups={}
+    for p in proposals:
+        if p['color']=='black' or p['ownership_decision']!='retain':continue
+        e=p['ownership_evidence'];groups.setdefault((p['color'],e['shape_label']),[]).append(p)
+    for group in groups.values():
+        group.sort(key=lambda p:('arm' in p,p['source_id']))
+        for p in group[1:]:
+            p.update(ownership_decision='abstain',ownership_reason='same colored shape lobe; no evidence for an additional body',competing_candidate=group[0]['candidate_id'])
+    # Different shape labels alone are insufficient: require a narrow neck/seam.
+    pairs=[];active=[p for p in proposals if p['ownership_decision']=='retain']
+    for i,p in enumerate(active):
+        for q in active[i+1:]:
+            if p['color']!=q['color']:continue
+            distance=float(np.linalg.norm(np.array(p['xy'])-q['xy']))
+            limit=rules['black_pair_range_d'] if p['color']=='black' else rules['pair_range_d']
+            if distance>=limit*d:continue
+            a=np.array(p['xy'])-offset;b=np.array(q['xy'])-offset
+            t=np.linspace(.15,.85,31);path=a[:,None]*(1-t)+b[:,None]*t
+            if p['color']=='black':
+                # Close maxima with a colored separating surface have distinct support;
+                # otherwise dark continuity cannot establish one or two black bodies.
+                seam=ndi.map_coordinates(colored.astype(float),[path[1],path[0]],order=0)
+                separate=bool((seam>.5).sum()>=3);ratio=None
+            else:
+                e=p['ownership_evidence'];f=q['ownership_evidence'];depth=shapes[e['mode']][1]
+                neck=float(ndi.map_coordinates(depth,[path[1],path[0]],order=1).min())
+                ratio=neck/min(e['maximum_inset_px'],f['maximum_inset_px']);separate=ratio<=rules['neck_ratio']
+            pairs.append(dict(candidates=[p['candidate_id'],q['candidate_id']],distance_px=distance,neck_ratio=ratio,separate_support=separate))
+            if not separate:
+                for u in (p,q):u.update(ownership_decision='abstain',ownership_reason='pair has insufficient separating seam; one versus two bodies unresolved')
+    return dict(section=section['section'],box=section['box'],halo=box,proposals=proposals,pairs=pairs)
+
+
+def prepare_transfer():
+    """Archive identical R238 candidate inputs for new fixed sections, no truth."""
+    protocol=read(BUNDLE/'protocol.json');p235=read(ROOT/'photo2/review/r235/protocol.json')
+    params=read(ROOT/'photo2/review/r238/inputs.json')['parameters']
+    expanded=dict(p235,sections=[dict(s,box=s['halo']) for s in protocol['transfer']])
+    baseline=assemble_candidates(expanded)
+    pool=read(ROOT/'photo2/output/r231/profile-pool.json');profiles=np.load(ROOT/'photo2/output/r231/profiles.npz')
+    old=read(ROOT/'photo2/output/r238/old-detector.json');sections=[]
+    for s in protocol['transfer']:
+        selected={tuple(p['xy']) for p in baseline['sections'][s['id']] if p['color']!='black'}
+        colors=[];black=[]
+        for i,p in enumerate(pool):
+            if contains(s['halo'],p['xy']) and tuple(p['xy']) not in selected:
+                colors.append(dict(p,source_id=f'pool:{i}',old_reason='spacing' if profiles['accepted'][i] else 'profile',old_valid_cuts=int(profiles['valid'][i].sum()),old_color_cuts=int((profiles['color_fraction'][i]>=.75).sum())))
+        for stage in ['points','excluded','reflection_rejections']:
+            for i,p in enumerate(old[stage]):
+                if stage!='reflection_rejections' and p['kind']!='dark-reflection':continue
+                if contains(s['halo'],p['source_xy']):black.append(dict(xy=p['source_xy'],color='black',source_id=f'{stage}:{i}',old_reason=p.get('reason','passed detector; downstream R192 or baseline')))
+        sections.append(dict(s,baseline=baseline['sections'][s['id']],colored_pool=colors,black_pool=black))
+    save(BUNDLE/'transfer-inputs.json',dict(parameters=params,sections=sections,image_sha256=protocol['image_sha256'],sources={str(p):sha(ROOT/p) for p in ['photo2/output/r231/profile-pool.json','photo2/output/r231/profiles.npz','photo2/output/r238/old-detector.json','photo2/review/r231/points.json','photo2/review/r192/candidates.json']}))
+
+
+def run(split,output):
+    params=read(ROOT/'photo2/review/r238/inputs.json')['parameters'];rgb=np.asarray(Image.open(ROOT/'beads-photo-2.jpg').convert('RGB'))
+    if sha(ROOT/'beads-photo-2.jpg')!=read(BUNDLE/'protocol.json')['image_sha256']:raise ValueError('Changed photo')
+    if split=='development':
+        results=sum([read(ROOT/f'photo2/review/r238/{s}/candidates.json')['results'] for s in ['development','transfer']],[])
+        # Use established scoring baseline, including disclosed boundary credits.
+        baseline=read(ROOT/'photo2/review/r235/evaluation-automatic.json')['sections']
+        for r in results:r['baseline']=baseline[r['section']]
+    else:
+        freeze=read(BUNDLE/'freeze.json')
+        if freeze['script_sha256']!=sha(Path(__file__)) or freeze['rules']!=RULES:raise ValueError('Detector changed after freeze')
+        inp=read(BUNDLE/'transfer-inputs.json')
+        if freeze['transfer_inputs_sha256']!=sha(BUNDLE/'transfer-inputs.json'):raise ValueError('Transfer inputs changed')
+        results=[detect_section(rgb,s,inp['parameters']) for s in inp['sections']]
+    out=Path(output);out.mkdir(parents=True,exist_ok=True)
+    save(out/'r238.json',results)
+    filtered=[filter_section(rgb,r,params) for r in results]
+    save(out/'ownership.json',dict(script_sha256=sha(Path(__file__)),rules=RULES,results=filtered))
+    print([(r['section'],len(r['proposals']),sum(p['ownership_decision']=='retain' for p in r['proposals'])) for r in filtered])
+
+if __name__=='__main__':
+    ap=argparse.ArgumentParser();ap.add_argument('command',choices=['prepare','development','transfer']);ap.add_argument('--output');args=ap.parse_args()
+    if args.command=='prepare':prepare_transfer()
+    else:run(args.command,args.output or BUNDLE/args.command)

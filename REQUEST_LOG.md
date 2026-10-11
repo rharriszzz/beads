@@ -5213,3 +5213,70 @@ Recommend separately authorized small body-ownership experiment (reflection vers
 paper rim; one body versus neighboring bodies), with new transfer sections reserved
 before development. Keep user-reported Astra/High for scientific review/design;
 /new advisable before the next implementation phase, unnecessary for review.
+
+## R239 — Execute one bounded Stage 1 body-ownership experiment
+
+User continues photo-2-strategy-v3 from pushed7359bbd; explicitly reports active
+GPT-6 Astra, High reasoning effort, and will report changes. Authorizes one
+experiment prioritizing accurate body identity over detection count: distinguish
+black reflections from paper rims/notches/colored-neighbor features, and adjacent
+beads from multiple same-body maxima. Use photo, shape, color and appropriate
+geometry; permit abstention, avoid threshold/distance-only repairs. Compare R238
+with improved ownership; reserve fresh transfer before tuning (H1/H4 no longer
+independent); report coverage/errors/duplicates/colors/uncertainty and lost correct
+detections. Preserve observed samples/reflections/centers and R235 eligibility.
+No global indexing/pattern work. Assess whether enough evidence exists for small
+Stage2 using beads.pov geometry despite incomplete segmentation. Update records,
+commit/push/verify and stop. Routine engineering decisions authorized.
+
+Preflight: daisy Linux/WSL2, requested branch clean at7359bbd, no stashes; fetched
+origin matches exact local7359bbddfc8d2a2f6a888b443d9c79332949a715. Fetch needed
+approved escalation after sandbox denied .git/FETCH_HEAD. Python3.12.14. Read
+AGENTS/current plan/handoff/latest log, R238 report/candidate audits/images and
+implementations, quick shape model, existing Stage2-ready subset and beads.pov.
+No unrelated work present. No subagents or external services used.
+
+Presented four methods: angular dark enclosure, colored shape lobes, pairwise
+seams, and projected templates. Selected first three as one conservative filter
+of unchanged R238 proposals; deferred templates to possible Stage2. Fixed new
+T1/T2 boxes within previously proposed H2/H3 before tuning; raw-only references
+frozen before ownership code or transfer execution. All D3/D4/H1/H4 development.
+Two configurations: shape-only57/109 retained; seam-cut shape method96/109 retained.
+First source/result and final rules/source/inputs/development freeze preserved.
+No transfer-driven detector tuning. Fresh references44 eligible,3 uncertain,1
+no-obvious-reflection deferred; no reference additions or deletions after freeze.
+One explicit halo ownership credit T2-P03→B01; two border/rear proposals remain
+unresolved rather than silently excluded. Every accepted R238 proposal accounted.
+
+Results familiar:103→96/109, false9→0, duplicates3→0, wrong color1→0, accepted
+unresolved14→7. Fresh:41→30/44, duplicates3→0, false/wrong0→0, unresolved3→2.
+Eighteen previously covered bodies lost:7 familiar and11 fresh, all named with
+candidate/reason evidence; no new bodies recovered. Original R23576 retention74,
+losing D4-B27/H4-B16. No eligibility denominator reduction.42 scored proposals
+abstained;9 accepted unresolved remain. Zero confirmed retained errors is not
+100% precision. Fresh sections lack confirmed R238 false positives and therefore
+do not independently validate paper-rim rejection. Shape grouping still merges
+yellow neighbors; enclosure loses true occluded glints and can pass weak diffuse
+features. All conclusions conditional on provisional agent photographic ownership,
+not maker-confirmed independent truth. No general palette/background claim.
+
+User interrupted execution accidentally, then said “please go on, my cat stepped
+on the keyboard.” Resumed the same bounded task after checking status; no scope
+change or permission question. Added raw/three-way comparisons, measured black
+and colored success/failure cards, full candidate and lost-body tables.17 tests
+pass (12 existing+5 owner-known/frozen/accounting checks);28 generated files
+reproduce byte-identically;62 historical files including source photo, prior
+references/detectors and beads.pov remain hash-identical. Verification/source
+seals and commands are in photo2/STAGE1_OWNERSHIP.md and review/r239.
+
+Readiness: yes for a small separately authorized local geometric-correspondence
+test. D3 retains22/22 with no confirmed errors or accepted unresolved proposals;
+nine-body D3-B09–B14/B18/B19/B21 core survives. Recommend both helicities/local
+correspondence alternatives with beads.pov-consistent geometry, visible-surface
+membership (not sample-as-center), synthetic checks and held-out local predictions.
+Stop broad segmentation perfection as a prerequisite. No Stage2, global index,
+geometry fitting or repeating-pattern recovery started. Updated plan/handoff and
+method index, preserving history. Commit/push scoped R239 work; verify exact
+local/remote tip and clean status at delivery. Retain user-reported Astra/High;
+/new recommended before next implementation, unnecessary for review. User controls
+switching and authorization.

@@ -1,6 +1,32 @@
 # Beads session handoff — new branch
 
-## Current R238 — authorized detection recovery delivered; stop
+## Current R239 — ownership experiment complete; recommend small Stage 2 test
+
+[Report, comparison images and measured losses](photo2/STAGE1_OWNERSHIP.md).
+One authorized bounded experiment at7359bbd: radial reflection enclosure plus
+color-shape lobes, local seams and ambiguous-pair abstention, filtering unchanged
+R238 proposals. Familiar D3/D4/H1/H4:103→96/109 covered, false9→0, duplicates3→0,
+wrong color1→0, accepted unresolved14→7. Fresh T1/T2 fixed before tuning:41→30/44,
+duplicates3→0, false/wrong0→0, unresolved3→2. Eighteen previously correct bodies
+lost; all remain eligible. Original R235 retention74/76; no new bodies recovered.
+Two development configurations, freeze before transfer, no transfer-driven tuning.
+All17 tests pass; complete accounting and reproducible evidence preserved.
+
+Not a completed automatic identity map. Shape lobes still merge yellow neighbors;
+enclosure loses occluded true reflections and accepts some weak unresolved ones.
+Do not keep broad segmentation tuning as a gate. **Enough evidence exists for a
+small Stage 2 test:** D3 retains22/22 with no accepted unresolved proposals; the
+nine-body D3-B09–B14/B18/B19/B21 core survives. Next, separately authorized: compare
+both helicities and local correspondences using existing beads.pov-consistent
+geometry, visible-surface evidence and held-out local predictions. No physical
+center assumptions for image samples/reflections; no global indexing or pattern.
+
+Stop after scoped commit/push and local/remote/status verification. Stage2 not
+started. User-reported GPT-6 Astra / High remains active; retain for next work.
+Recommend /new before the next implementation, unnecessary merely for review.
+User controls session switching. Keyboard interruption only; user asked to resume.
+
+## Prior R238 — authorized detection recovery delivered; stop
 
 Read [STAGE1_RECOVERY.md](photo2/STAGE1_RECOVERY.md) and its linked raw comparisons,
 audit images and failure-path measurement cards. Branch photo-2-strategy-v3;

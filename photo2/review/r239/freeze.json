@@ -1,0 +1,32 @@
+{
+  "script_sha256": "3cc9527057f1cd2d142609838f982ffcd6b0f177ea65e34691d072d6923faeff",
+  "rules": {
+    "rays": 16,
+    "ray_start_d": 0.09,
+    "ray_end_d": 0.48,
+    "ray_samples": 24,
+    "dark_value": 0.4,
+    "dark_peak_fraction": 0.82,
+    "dark_run": 3,
+    "minimum_dark_rays": 12,
+    "maximum_color_first_rays": 4,
+    "shape_close": 1,
+    "shape_prominence_d": 0.04,
+    "minimum_depth_d": 0.13,
+    "minimum_area_d2": 0.1,
+    "maximum_area_d2": 1.65,
+    "maximum_depth_d": 0.55,
+    "seam_diffuse_fraction": 0.68,
+    "seam_window_d": 0.85,
+    "snap_d": 0.14,
+    "pair_range_d": 0.95,
+    "neck_ratio": 0.6,
+    "black_pair_range_d": 0.7
+  },
+  "transfer_inputs_sha256": "4c4f2657a0e98be8d6c303f20d56a17958622535f7316d2ab5f9de82ddf9cb6d",
+  "protocol_sha256": "5af1eaa19de0e819f33a31e3a0f16fa32aeb350ba10c3be6e95c682f388d1c1b",
+  "references_sha256": "bcf9a60447c03574dc079fd72dd51b34037e13ed8f394c5286feefcc7f0990ae",
+  "development_sha256": "e5d41914c90708452097238a6a014c4b9c06f988f9cd95f8a3aabf04d7d676db",
+  "r238_script_sha256": "8a2526e9301f51a26b97fa0acbb5d2b64ca492e22064aadf9b36a02b11ff52f4",
+  "stage": "Final development selection before transfer execution; no subsequent detector tuning."
+}
