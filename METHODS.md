@@ -26,6 +26,15 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
+Implemented [R244–R246 three-way FFT comparison](photo2/FFT_CURVATURE.md):
+geometry-based straight/curved sampling, circular Gaussian baseline, elliptical
+tangent window, and arc-normal image straightening. Paired V/Y, anisotropic
+frequency uncertainty, inverse-phase evidence, known-hand controls and guarded
+resampling. Includes circular/elliptical rotation explanation, finite-tail checks
+and band-pass provenance. Increased repeatability does not validate lattice
+families or helicity. Maker's spectrum-led cutoff selection remains a distinct,
+not-yet-reproduced next test; saved Gaussian startup defaults are not run settings.
+
 See also the implemented [R243 paired V/Y Gaussian FFT experiment](photo2/FFT_HELICITY.md):
 input native RGB plus an approximate image-derived centerline and assisted scale
 guides; output noncentral conjugate candidates, phase-preserving reconstructions,
@@ -1580,7 +1589,7 @@ results are not automatically present or validated on this branch.
 | Local measurements | Show raw context, interior endpoints, path, color strip and traces separately; retain rejected endpoints | [Hue paths](photo2/HUE_TRANSITIONS.md), [parallel paths](photo2/PARALLEL_PATHS.md); hue changes are supporting cues, not boundaries by themselves |
 | Lighting and material | Fit paper illumination and bead highlights/shadows jointly with POV-Ray pigment/finish/normal/interior; compare alternative lights | Proposed future fitting; iPhone does not determine flash/light geometry; no physical-composition inference |
 | Exposed bead shapes | Use 3D geometry, planar section direction/global camera and neighbor occlusion; distinguish visible centroid from physical center | [Shape quick model](photo2/PRIOR_WORK.md); historical R084/R085 atlas is synthetic evidence, not a universal oval detector |
-| Helicity and spacings | Band-pass local FFT; compare direction-1 angle with local tangent; calibrate coordinate signs on both synthetic helicities | [Maker's method and display plan](photo2/PRIOR_WORK.md#r098--makers-directional-fft-method); not yet an implemented direction estimator |
+| Helicity and spacings | Band-pass local FFT; compare direction-1 angle with local tangent; calibrate coordinate signs on both synthetic helicities | [Implemented FFT comparisons](photo2/FFT_CURVATURE.md); candidate directions implemented, physical-family labels and helicity unresolved |
 | Index assignment | Label neighboring beads with ±1/±6/±7 differences; propagate integer indices and detect inconsistent cycles, keeping alternatives | [Historical method/graph discussion](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/METHODS.md); finding the correct image neighbors is still unresolved |
 | Repeat recovery | For each candidate L, compare known colors at indices congruent modulo L; preserve empty slots and contradictions; validate withheld repeats | [Historical sequence tests](https://github.com/rharriszzz/beads/blob/2c4c116bf7f7b9e8c773358a97740dcd77879a8a/photo2/SEQUENCES.md); works conditionally on usable indices, not an image-only recovery claim |
 

@@ -5497,3 +5497,97 @@ task: review W3/W8 and opposite-channel control examples, then decide whether a
 small reciprocal-family validation is worthwhile. Carry forward recorded
 Astra/High recommendation without identifying this session's active model;
 no /new needed for review, consider /new before another implementation.
+
+## R244 — Straight sections, elongated Gaussians and image straightening
+
+User: “I think the best results may be found where the centerline is relatively
+straight”; then authorizes the experiment and says “we want to get good at all
+three approaches, as they have more uses.” Presented straight-site selection,
+long tangent Gaussian and curve straightening; implemented all three. Earlier
+R243 work already delivered at963a1b081e98f026af57ecba1d9a4dd87637a3a6. Preflight
+daisy, correct photo-2-strategy-v3/upstream, clean/no stashes, exact remote match.
+Current request supersedes older unfinished tasks; no subagents used.
+
+Geometry-only selection from371 arc candidates fixes six low-turn and six high-turn
+remaining sites with separation guards. Interpolated prior approximate R/d,
+shared RGB sampling then source V/Y, circular sigmaR baseline A, elliptical
+sigma_u2R/sigma_vR B, same Gaussian after arc-normal straightening C. No intensity
+Jacobian correction; phase preserved. Gaussian frequency uncertainty is anisotropic.
+Protocol amended before new spectra to strengthen fold guard to3sigma and include
+width±20% tests. Nine configurations per method/channel/site give648 photo records;
+22 failures near image edges remain, including C4 B primary. No location/cutoff
+retuning after spectra. Curved group is relative after separation, not a universal
+curvature threshold. Photo/appearance/orientation confounds remain.
+
+Reused eight e65 R243 POV-Ray images, both hands/cameras/appearance, eight sites:
+384 method/channel controls plus128 native adapter baselines. Correct preferences
+of64 per channel: native V50/Y56, A56/57, B41/48, C57/56. B has one wrong >0.5
+preference in each channel, A/C zero in this subset. C improves score signs over
+B but does not improve three-family compatibility; this is not known-truth peak
+labeling. Control windows/channels are correlated and reused, not new validation.
+On photo, more repeated candidates often survive B/C, but no unique camera-robust
+helicity. Sole >0.5 extraction-stable case S6 A Y reverses under a camera alternative.
+No fusion, segmentation, complete inventory, global fitting/indexing or pattern.
+
+Saved raw location/crop evidence, matched Gaussian V/Y, marked spectra, inverses,
+S1/C1 every-pair contributions, warp map, analytic phase test, all candidate CSV,
+conditional both-hand/direct-basis alternatives, uncertainty/failure graphs and
+selected control gains AND deterioration. Main controls/photo/report/evidence
+rerun compared36 artifacts byte-identically (includes retained selection/freeze
+records), with routine bulk output ignored. Source/protected-input hashes and
+precise reproduced-versus-retained accounting in verification. Report and workflow
+records updated. Subsequent R245 clarifications extend this same bounded delivery.
+
+## R245 — Gaussian shape, finite support, angle interpretation and band-pass audit
+
+User prefers a circle-based Gaussian and asks why a rectangle with Gaussian edges
+would be preferable; then clarifies large-enough square storage should be fine
+because the Gaussian decays rapidly. Explained that A has circular contours and
+no flat rectangular interior; B/C deliberately elliptical weights. Initial3sigma
+crop has1.11% axial edge weight; source circle additionally clips radially.
+Replaced the proposed circular-cutoff check with the user's sufficient-support
+question: A support4sigma, SAME Gaussian width, locations/channels/band. Added24
+photo/128 control evaluations, separate from the frozen baseline.22 photo cases
+accepted; C4 V/Y reject missing image support. Common-grid complex-band change
+median1.49%, maximum1.97%. Full pipeline also changes frequency grid and flips
+three weak preferences. Control correct V56→51/64, Y57→57/64; larger support not
+consistently better. No favorable baseline substitution. Default extent remains3.
+
+User asks how angles work for an elliptical Gaussian. Explained square pixel
+coordinates remain unscaled, atan2 still applies, and jointly rotating image and
+ellipse rotates FFT; anisotropic convolution changes peak blur and overlapping
+maxima. C is separately a nonlinear warp. Added exact rotation-covariance test and
+known-three-wave illustration at0/35deg, exact input frequencies marked. User asks
+how band-pass works and boundaries were tuned: hard isotropic frequency annulus,
+phase retained inside, zero outside; initial wavelength0.5d..3d from rough bead
+scale, not optimized. Each cutoff independently±20%, same both channels; no
+winning cutoff chosen. Added annulus/sensitivity figure and ringing limitations.
+
+User asks whether fft-image-explorer preserves actual original boundaries.
+Read-only audit main2caf070 and available radial-sum a23d1de/settings history:
+no numeric direction-band pair found. Saved metadata8% is background scan only;
+GUI0/100 startup defaults unchanged from063acb6, no settings persistence, blank
+notes settings template. Circle startup200px/softness.20 implies sigma20 and
+support5sigma, edge0.00037%; startup defaults do NOT prove interactive run values.
+Preserved source hashes/audit; sibling untouched. Fifteen numerical/source/geometry
+and matching tests pass after added explanations/support check. Final scoped
+commit/push includes report, evidence and reproducibility, with remote/clean check.
+
+## R246 — Maker explains original spectrum-led band selection
+
+User: “basically set the lower bound so the bright interior spike was removed,
+then decreased the upper bound so that the three pairs of peaks were clearly
+visible.” This is maker evidence about the original interactive procedure, not
+numeric cutoffs. Saved verbatim in review/r244/maker-bandpass-method.json.
+
+Explicitly acknowledged that R243/R244's bead-scale bounds plus perturbations did
+NOT reproduce this visual selection procedure. Their inconclusive outcomes must
+not be represented as a decisive test of the maker's best-tuned FFT directions.
+No retrospective relabeling or post-hoc spectrum retuning performed. Next concrete
+task: review Gaussian-angle/band-pass illustrations and S1/C1, then design a small
+spectrum-led band-selection calibration, freeze development choices before
+transfer, retain ambiguity rather than force strongest-three or desired helicity.
+Finish this bounded comparison's scoped commit/push and verify exact remote/clean
+status, then stop for review. Recommend Astra/High without claiming current model;
+no /new needed for review, consider /new before another implementation. User
+controls model/session switching.

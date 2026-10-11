@@ -1,6 +1,46 @@
 # Beads session handoff — new branch
 
-## Current R243 — authorized FFT experiment complete; review stop
+## Current R244–R246 — delivered method comparison; review stop
+
+User authorized the straight-section experiment and explicitly asked to develop
+all three approaches: select straight sites, elongate the tangent Gaussian, and
+straighten along the centerline. [Report, evidence and reproduction](photo2/FFT_CURVATURE.md).
+Twelve geometry-selected sites, paired V/Y, three methods, nine configurations:
+648 photo records including22 image-edge failures. Existing e65 known-hand renders
+supply384 method/channel evaluations plus128 native-baseline evaluations. Compact
+correct preferences V56/Y57 of64; elongated41/48; straightened57/56. Straightening
+recovers hand-score signs but does not validate three-family assignments.
+No unique photographic helicity; the sole extraction-stable >0.5 preference
+(S6 A Y) changes sign under a camera alternative.
+
+R245 clarified circular Gaussian versus finite square storage and ellipse angle
+interpretation. Added weight/angle/band-pass figures, a4σ support check (24 photo,
+128 control cases), and source-settings history audit. Tail contribution modest;
+no consistent accuracy improvement. Circle default in explorer is200px diameter,
+softness.20 => sigma20, support5sigma. No saved numeric direction band found;
+8% metadata is background-only and GUI0/100 are startup defaults.
+
+R246 supplies the original visual procedure: remove the bright central spike
+with the lower cutoff, then reduce the upper cutoff until three opposite pairs
+are clear. Current fixed bead-scale bounds did NOT reproduce that selection
+procedure. Preserve this distinction; no post-hoc retuning or claim of failure
+of the maker's best-tuned method. Next: review S1/C1 and the explanations, then
+calibrate a small spectrum-led band-selection test with frozen transfer settings.
+Stop after scoped commit/push and exact remote/clean verification. No fusion,
+segmentation, indexing, global optimization or pattern work. Fifteen tests and
+reproduction checks. Recommend Astra/High without identifying active model;
+no /new needed for review, consider it before another implementation.
+
+Implementation: fft_curvature.py, fft_curvature_report.py,
+fft_curvature_evidence.py and fft_gaussian_support.py; tests in
+test_fft_curvature.py plus existing test_fft_helicity.py. Read the report and
+review/r244/{protocol,freeze,summary,verification}.json before reproduction.
+Default three-sigma extraction remains the frozen R244 baseline; later extent4
+is an explicit R245 sensitivity branch. R243 source and outcomes stay unchanged.
+Maker clarification is in review/r244/maker-bandpass-method.json. Saved guides
+remain diagnostic; no runtime generality or calibrated photographic camera.
+
+## Prior R243 — authorized FFT experiment complete; review stop
 
 Read photo2/FFT_HELICITY.md and review/r243/summary.json. User authorized the R242
 plan after confirming add/commit/push; plan was already delivered as22aab8d.

@@ -1,0 +1,15 @@
+{
+  "request": "R245 in-session steering: circular Gaussian preference, then acceptance of sufficiently large square support",
+  "timing": "After R244 baseline results, before support sensitivity",
+  "design": "Keep circular Gaussian sigma=R fixed, compare square support +/-3sigma with +/-4sigma. All twelve fixed photo sites V/Y and all eight e65 render images/eight sites V/Y. No cutoff-circle experiment: user clarification prioritizes sufficiently small boundary weights.",
+  "counts": {
+    "photo": 24,
+    "controls": 128
+  },
+  "code_change": "mapped_patch extent defaults to original3; new variant extent4. All baseline measurements retained; rerun comparison checks unchanged default outputs.",
+  "tail_check": "Report common-grid complex band change as well as candidate/score changes; FFT grids differ in pipeline.",
+  "source_hashes": {
+    "photo2/fft_curvature.py": "69ae0998233aa3167ab2881662bc9b2d584af930705a20ae7ec5b9dee49f1226",
+    "photo2/fft_gaussian_support.py": "f0f783ad24734f3f733987e29b427cb4ba61b02baf3c6e15f4aa3c5798a8e9b3"
+  }
+}

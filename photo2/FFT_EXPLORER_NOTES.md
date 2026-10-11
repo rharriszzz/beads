@@ -1,5 +1,23 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R244–R246 — three methods and maker cutoff clarification
+
+[Completed comparison and illustrated explanations](FFT_CURVATURE.md). User wants
+practice with all three methods: naturally straight selection, elongated Gaussian,
+and curve straightening. They are implemented/tested, with controls, failures,
+paired V/Y and no unique photo helicity. Circular Gaussian weights do not imply
+circular array storage; an ellipse changes spectral blur, not pixel-coordinate
+angle scale. Straightening is a separate nonlinear transform. Source Gaussian
+startup circle200/softness.20 has sigma20/support5sigma; no saved numeric direction
+band found in inspected main/radial-sum history, only background8% metadata.
+
+R246 maker method: raise lower cutoff until the bright central spike is removed;
+lower upper cutoff until three opposite pairs are clear. Current bead-scale
+bounds plus±20% perturbations do not reproduce that spectrum-led procedure.
+Preserve this as maker evidence, not a retrospective description of R243/R244.
+Next review/calibration should use it explicitly with frozen transfer settings.
+No automatic next-phase implementation at this review stop.
+
 ## R243 — authorized experiment completed
 
 [Implementation, quantitative results, figures and reproduction](FFT_HELICITY.md).

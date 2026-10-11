@@ -1,0 +1,32 @@
+{
+  "main_commit": "2caf0707c2b63a0d7540e2cac447d2f1b883d8c1",
+  "radial_sum_commit": "a23d1de9e65ba89fdba5f5378d18ad29f164af20",
+  "scope": "Read-only current files, available main/radial-sum history, saved metadata and notes; no external session histories searched",
+  "findings": {
+    "direction_band": "No numeric lower/upper direction-analysis pair found",
+    "background_scan": {
+      "highpass_percent": 8,
+      "window": 128,
+      "stride": 8,
+      "metric": "hp_removed = low-frequency retained power fraction"
+    },
+    "gui_defaults": {
+      "highpass_percent": 0,
+      "lowpass_percent": 100,
+      "mask": "Ellipse/circle",
+      "width": 200,
+      "height": 200,
+      "softness": 0.2,
+      "sigma_pixels": 20,
+      "support_sigmas": 5
+    },
+    "persistence": "Interactive app has no preset/settings writer; README lists preset saving as future improvement; notes settings template blank",
+    "history": "Numeric 0/100 defaults introduced at063acb6 and no changed numeric defaults found in available history. Startup defaults are not evidence of user interactive settings."
+  },
+  "source_hashes": {
+    "fft_image_explorer.py": "73ced947b1825e55ca0d1337fc508bbd4917e574cbea150ae660b61ee8013c24",
+    "notes.md": "67ec3f9609ade9f0c37b41f6821445e2ff7afe2656b5df8169afa13970303c1e",
+    "README.md": "feaf139f71854ebc1e76a01d4095bb3e2f32a664cb0afb550898d3dc816d24af",
+    "beads-photo-2_map_metadata.json": "a5e1d5fd6081dd517ad96a4abf411385e88bddf93ab2c70e4ee8af65741ccc54"
+  }
+}

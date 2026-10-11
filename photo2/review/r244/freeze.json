@@ -1,0 +1,30 @@
+{
+  "stage": "After synthetic tests and e65 known-hand controls, before R244 photo FFTs",
+  "parameters": "No changes selected from render score results; same protocol for all arms and channels",
+  "source_hashes": {
+    "photo2/fft_curvature.py": "54a7b312bdf4c88dbc3d0901b5baf47cdc31b89bebf85677c4f44dc5d2d39888",
+    "photo2/test_fft_curvature.py": "fe71075f0ef375fc0d2a019badfc3d0606c5f8898d3d5536aac9def7f0e6dc6b",
+    "photo2/review/r244/protocol.json": "1e2b4fa757d8c3ffbaa80fd58b103c73c367fce71a75d5685af077030043f9a7",
+    "photo2/fft_helicity.py": "d8fe31e3ee9daf1276ac3894139e64b68644ad8feba895c8ecf6951ea56dd781",
+    "photo2/fft_explorer_core.py": "0d21148d837c59de881f393ed75d8cc233755e577e4048ea148895aa1117733b"
+  },
+  "tests": "12 tests pass (5 new transform/rejection tests plus 7 existing R243)",
+  "camera_choices": {
+    "V/-1": [
+      65,
+      135
+    ],
+    "V/1": [
+      85,
+      45
+    ],
+    "Y/-1": [
+      65,
+      45
+    ],
+    "Y/1": [
+      85,
+      0
+    ]
+  }
+}
