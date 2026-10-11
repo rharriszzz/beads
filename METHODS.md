@@ -26,6 +26,13 @@ where useful; neither a perfect mask nor adopting FFTs is a prerequisite.
 
 ## Distributed colored interiors and one-dimensional practice — R201–R205
 
+Proposed next: [R247 spectrum-led width/band calibration](photo2/FFT_SPECTRUM_LED_PLAN.md).
+Primary maker procedure clears the central spike, narrows the outer band until
+opposite direction pairs are distinguishable, then inspects inverse spatial
+patterns. Compare circular Gaussian widths including sigma20 on the photograph,
+preserving V/Y. Freeze selection before transfer or hand scoring. This is a
+proposal awaiting approval, not implemented functionality or a validated estimator.
+
 Implemented [R244–R246 three-way FFT comparison](photo2/FFT_CURVATURE.md):
 geometry-based straight/curved sampling, circular Gaussian baseline, elliptical
 tangent window, and arc-normal image straightening. Paired V/Y, anisotropic

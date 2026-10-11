@@ -1,5 +1,18 @@
 # Reusing the maker's Gaussian FFT experiments — R110
 
+## R247 — maker method primary; next experiment proposed only
+
+[Current spectrum-led/width proposal](FFT_SPECTRUM_LED_PLAN.md) is the active
+next-step reference. Maker reaffirms lower cutoff clears bright central spike,
+upper cutoff reveals three pairs, then peak/reconstruction inspection. Sigma20
+and recent43–57 are candidates, not known correct user settings. Photograph-first
+circular-width comparison with both V/Y; helicity-independent candidate selection,
+explicit reciprocal/spatial explanations and a procedure freeze before transfer.
+Manual replay recommended, profile assistance diagnostic, automation later.
+User approval is required before implementation; this update preserves the
+methodological clarification only. Prior fixed-band experiments are not a test
+of the original interactive selection procedure.
+
 ## R244–R246 — three methods and maker cutoff clarification
 
 [Completed comparison and illustrated explanations](FFT_CURVATURE.md). User wants

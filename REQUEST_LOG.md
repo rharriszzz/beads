@@ -5591,3 +5591,54 @@ Finish this bounded comparison's scoped commit/push and verify exact remote/clea
 status, then stop for review. Recommend Astra/High without claiming current model;
 no /new needed for review, consider /new before another implementation. User
 controls model/session switching.
+
+## R247 — Preserve photograph-first spectrum-led FFT method and propose width study
+
+User reviewed R244–R246 and reaffirms the original interactive method as primary:
+(1) increase lower spatial-frequency cutoff until bright central spike disappears;
+(2) decrease upper cutoff until three opposite peak pairs associated with bead
+directions become distinguishable; (3) inspect peaks and reconstructed spatial
+patterns. Earlier bead-diameter-derived bands were reasonable guesses but did
+not reproduce this procedure. Investigate Gaussian width: startup sigma~20 native
+pixels versus recent~43–57, with actual user settings unsaved and neither assumed
+correct. Preserve both HSV Value and Y luminance, actual photo primary, synthetic
+known-hand examples only to check mathematics. Underlying directional consistency
+comes before helicity and must not be selected to favor a hand.
+
+User requests a concise proposal before implementation and explicitly requires
+approval before running it. Requests methodological preservation in project
+records and authorized documentation commit/push/remote verification. Treated the
+preservation request as authorization for documentation only, not new experiment
+code, spectra, renders, measurements or a freeze. Preflight daisy, branch/upstream
+photo-2-strategy-v3, clean/no stashes, local/remote c4f1ad3ecdcf1f00237bb6f8db1a02b58c83e8b2.
+Read AGENTS/current plan/handoff/latest log, R244–R246 report, prior shape and
+angle conventions. No subagents or older unfinished task resumed.
+
+Proposed three methods: manual replay (primary recommendation), radial-profile
+assistance (diagnostic), automation (later). Three raw-selected development sites,
+two straight with differing bead mixtures and one gently curved; circular Gaussian
+sigma20/30/40/55 and5sigma support; paired original V/Y. Replay lower-then-upper
+selection with fixed display scales and recorded decision sequences, preserving
+ambiguous bands/peaks and cross-applying channel-selected bands for fairness.
+Show raw/Gaussian images, unfiltered/filtered marked spectra, every retained
+pair's phase-preserving inverse, strengths/angles/frequencies and uncertainty.
+
+Explain reciprocal normals, direct-basis inversion, signed sum/difference tests,
+harmonic/permutation alternatives and visible row agreement. Do not force1/6/7
+labels or equate the strongest three with the three physical directions. Freeze
+width choices and the reproducible local-selection/abstention rubric only after
+an illustrated development review, before six predeclared transfer locations or
+hand comparisons. Reserved for this procedure is not untouched blind evidence
+on the previously studied photo. Report directional coverage/stability/failures;
+no hand-dependent tuning, full inventory, segmentation, indexing/global fit or
+closure prerequisite. Existing ellipse/straightening tools remain available;
+this bounded step isolates circular Gaussian width and spectrum-led selection.
+
+Created photo2/FFT_SPECTRUM_LED_PLAN.md and updated plan/handoff/method index/FFT
+notes. Historical reports, source and evidence unchanged. Documentation link and
+whitespace checks; analysis tests unnecessary because no executable changes.
+Scoped documentation commit/push, verify exact remote commit/clean status, then
+stop for proposal approval. First authorized implementation milestone would be
+the three-location review packet, not automatic transfer/helicity work. Recommend
+Astra/High without asserting current model identity; no /new for review, consider
+/new before implementation. User controls session/model changes.

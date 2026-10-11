@@ -1,6 +1,31 @@
 # Photo-2 reconstruction plan
 
-## Current R244–R246 — three FFT approaches complete; band-selection review stop
+## Current R247 — spectrum-led directions/width proposal; approval required
+
+User reviewed R244–R246 and makes the original interactive procedure primary:
+raise lower cutoff until the bright central spike disappears, lower upper cutoff
+until three opposite pairs become distinguishable, then inspect peaks and their
+spatial reconstructions. Fixed bead-scale bands did not reproduce this method.
+Sigma20 is an explorer startup default, not a saved user setting; recent43–57px
+is also unvalidated. [Bounded proposal](photo2/FFT_SPECTRUM_LED_PLAN.md).
+
+Recommend manual replay with radial-profile assistance; automation deferred.
+Three raw-selected development sites, circular sigma20/30/40/55, paired V/Y,
+recorded cutoff sequences and cross-applied channel bands. Explain candidate
+row-normal/direct-basis geometry and retain extra/missing/ambiguous pairs before
+assigning1/6/7. Photograph primary; existing synthetic examples check mathematics.
+Helicity scores cannot influence selection. Freeze width/selection/display/
+uncertainty rules after development review, BEFORE six predeclared transfer sites
+or any hand comparison. Previously studied photo is not untouched blind data.
+
+Documentation-only step authorized by the preservation request. No implementation,
+new FFTs/renders/locations/measurements or procedure freeze now. Stop for explicit
+proposal approval. First future milestone: three-location replay and illustrated
+review before transfer freeze; do not resume older tasks. Commit/push scoped
+records, verify exact remote and clean status. Recommend Astra/High without
+identifying current model; no /new for review, consider /new before implementation.
+
+## Prior R244–R246 — three FFT approaches complete; band-selection review stop
 
 User authorized the straight-section experiment and explicitly asked to develop
 all three approaches: select straight sites, elongate the tangent Gaussian, and
