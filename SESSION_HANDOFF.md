@@ -1,5 +1,43 @@
 # Beads session handoff — new branch
 
+## Current R264 — six fixed hue settings reviewed
+
+[Report](photo2/HUE_COMPARISON_R264.md) · [evidence](photo2/review/r264/README.md) ·
+[optional rim-coordinate question](photo2/HUE_REVIEW_QUESTIONS_R264.md).
+All six requested settings5°,8°,10°,12°,15°,20° are saved with identical parameters
+otherwise. Strict native growth,870-pixel pre-retreat cap and no ownership partition
+remain unchanged. Historical detector default remains10°; recommend saved8°
+provisionally, with10°/12° alternatives for some yellow interiors. Do not choose
+from expected count. Viewer → Compare six hue settings, or /hue-comparison;
+/?hue=8 opens the recommended saved run with full pixel/stop replay.
+
+Measured retained supports:1551,1556,1552,1540,1524,1496; size-limit rejections:
+0,1,5,18,36,64. These are not bead counts. In six selected review crops,12 likely
+same-body pairs persist at every hue (24 regions,12 apparent extras). Four stronger
+plausible misses plus one tentative shadowed-red miss persist;10°–20° additionally
+lose red P013502. This local visual tally is not exhaustive or extrapolated.
+R00956's rim coordinate is counted as weak but detected pending optional Q264.1.
+Near each persistent missing landmark, the nearest four raw maxima fail prominence35.
+
+Bright/darker interior HSV paths show19.25° of within-yellow hue change; red/yellow
+appearance converges in this sample. Hue stops are not bead boundaries. Paper-window
+contamination and three coordinate stress cases remain explicit. No masks/identities
+were merged. The leaf-retreat sensitivity control changes684 coordinates at8°
+(max7px), including a7px snap with only0.61px centroid movement. This is not a
+validated repair or measured coordinate error; production retreat stays frozen.
+
+45 Python tests, six complete native audits (2,565,649 acceptances/3,079,032 stops),
+isolated8° replay with1,595 byte-identical traces, and60 new +41 existing browser
+checks pass. Nine original/six-way crops, raw HSV, coordinates, all maxima/rejections
+and traces are curated. Sites local-only viewer workflow; no subagents.
+
+**Stopping point:** scoped commit/push and exact remote/clean verification. Next
+proposed bounded task is explicit retreat-repair comparison for coordinate stability;
+seed/duplicate association needs a separate subsequent aspect. No geometry,indexing,
+pattern work or automatic extra search. Recommend GPT-6 Astra/High (recommendation
+only; no new supplied model status). No `/new` for reviewing these artifacts; use
+`/new` before another substantial algorithm experiment.
+
 ## Current R263 — bounded native growth and parameter exploration
 
 [Report](photo2/PARAMETER_SEARCH_R263.md) · [evidence](photo2/review/r263/README.md) ·

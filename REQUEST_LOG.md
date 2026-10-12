@@ -7080,3 +7080,72 @@ from brighter ones, coordinate stability, overgrowth, overlaps and lost supports
 alongside count. Similar hue alone cannot identify a bead. Stop after delivery;
 keep current model/reasoning choice, no/new needed for review; use/new before a
 substantial new experiment session. No subagents or new skill workflow used here.
+
+## R264 — controlled hue comparison requested (2026-10-12)
+
+User requests 5°, 8°, 10°, 12°, 15° and 20° with all other parameters fixed.
+Prioritize credible stable coordinates, low background contamination and few
+same-bead duplicates; expected bead count is not the primary objective. Compare
+bright and shadowed red/yellow surfaces without interpreting every within-bead
+hue change as a boundary. Examine R00956, R01284 and P032240/P032353. Quantify
+apparent duplicates and plausible missed locations, separating measurements from
+uncertain visual judgments. Investigate predecessor-tree leaf retreat and its
+effect on the chosen coordinate. Save identical original-photo crops with six
+results, supported coordinates and compact HSV diagnostics in the simple viewer.
+Preserve native growth, strict brightness descent, 870-pixel ceiling, no watershed
+and no replacement ownership partition. Recommend a hue from photographic evidence,
+preserve ambiguous alternatives, document failures, commit/push. Geometry, indexing
+and pattern work are excluded. Existing branch clean and synchronized on daisy;
+no stashes. This is a fixed six-setting experiment, not resumption of R263's search.
+
+## R264 — comparison completed (2026-10-12)
+
+All six requested hue settings were run with the unchanged bounded R263 detector;
+strict descent, prominence35, minimum peak0, all retreat/color gates and870 cap are
+fixed. No watershed, ownership replacement, geometry, indexing or pattern work.
+Recommend saved8° provisionally from photographic evidence; preserve10°/12°
+alternatives. Historical10° detector default remains unchanged.8° retains red
+P013502 lost to the ceiling at10°+, avoids the reviewed paper-window encroachment,
+and is less restricted than5°;12° improves some yellow interior coordinates.
+
+Retained supports5/8/10/12/15/20°:1551/1556/1552/1540/1524/1496. Size-limit flags:
+0/1/5/18/36/64. Exact high-IoU support group excesses:102/162/187/200/224/236;
+these are overlap diagnostics, not measured duplicate bead counts. In six main
+review crops,12 likely same-body pairs persist at all hues:24 participating regions,
+12 apparent extras if the visual identities are correct. Four stronger plausible
+missing locations plus one tentative shadowed-red location persist;10°+ loses
+one additional red location. No whole-photo missing count or extrapolation claimed.
+Nearest four maxima at each persistent missing landmark fail prominence35.
+
+R00956's left-rim P091744 remains weak but counted as detected. Optional Q264.1,
+with curated image, asks whether that coordinate is usable; no maker answer received.
+Calling it unusable adds one miss everywhere without changing relative hue ranking.
+R01284 retains duplicate yellow supports and a shadowed-yellow miss. P032240/
+P032353 remain duplicate proposals across every hue; tightening merely separates
+or shrinks their supports. Nine matched source/six-way crops include the named
+failures, bright/shadowed transitions and three coordinate/background stress cases.
+Native HSV shading routes show19.25° within one yellow body, with red/yellow hue
+separation decreasing51.59°→30.80° between selected brighter/darker interiors.
+These local appearance measurements do not establish physical boundaries.
+
+Leaf retreat removes bright terminal nodes because their propagated floor equals
+their own value. A conservative diagnostic restoring only bright terminal leaves
+above a surviving parent's original threshold changes684 coordinates at8°
+(max7px),634 at10° (max5.66px). P019077 snaps7px despite0.61px centroid movement;
+P032353 changes while P091744 and both named R01284 yellow supports stay fixed
+under the control. This is sensitivity, not a validated repair or measured error.
+Production masks, traces and retreat remain unchanged.
+
+Full data/maxima/rejections and1,595 traces per hue are archived. Six native audits
+check2,565,649 accepted pixels and3,079,032 stopped edges.43 preserved +2 targeted
+Python tests pass. Isolated8° source/photo replay reproduces all1,595 traces byte
+for byte and exact arrays.60 new browser checks plus41 preserved viewer checks pass.
+Simple viewer adds seven identical crop panels, native HSV hover, supported-coordinate
+comparison and per-run replay/download links. Sites skill used locally only, with
+no hosted deployment or subagents. Full report:photo2/HUE_COMPARISON_R264.md.
+
+Plan/handoff/methods and evidence are updated for scoped commit/push. Stop after
+remote-tip and clean-status verification. Next proposed bounded task: explicit
+retreat repairs assessed for coordinate stability; seed/duplicate association stays
+separate. Recommend GPT-6 Astra/High without inferring active status. No/new for
+review; use/new before another substantial algorithm experiment.

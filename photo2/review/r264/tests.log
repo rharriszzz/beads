@@ -1,0 +1,53 @@
+/home/rharris/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-svyxxr9f because there was an issue with the default path (/home/rharris/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+test_all_eight_frontier_approaches_are_recorded_on_overflow (photo2.bead_detection.test_bounded.BoundTests.test_all_eight_frontier_approaches_are_recorded_on_overflow) ... ok
+test_ceiling_cannot_be_silently_raised (photo2.bead_detection.test_bounded.BoundTests.test_ceiling_cannot_be_silently_raised) ... ok
+test_exact_limit_and_overflow (photo2.bead_detection.test_bounded.BoundTests.test_exact_limit_and_overflow) ... ok
+test_ten_degree_default_uses_path_anchor_and_circular_hue (photo2.bead_detection.test_bounded.BoundTests.test_ten_degree_default_uses_path_anchor_and_circular_hue) ... ok
+test_uncapped_trace_is_identical (photo2.bead_detection.test_bounded.BoundTests.test_uncapped_trace_is_identical) ... ok
+test_destination_cannot_be_reopened_by_detour (photo2.bead_detection.test_tuning.TuningTests.test_destination_cannot_be_reopened_by_detour) ... ok
+test_noise_budget_never_accumulates_uphill (photo2.bead_detection.test_tuning.TuningTests.test_noise_budget_never_accumulates_uphill) ... ok
+test_six_scenes_all_tested_budgets_and_peak_filter (photo2.bead_detection.test_tuning.TuningTests.test_six_scenes_all_tested_budgets_and_peak_filter) ... /home/rharris/git/beads/.venv/lib/python3.12/site-packages/skimage/morphology/grayreconstruct.py:216: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  rec_img.shape = np.array(seed.shape) + (np.array(footprint.shape) - 1)
+ok
+test_zero_budget_preserves_baseline (photo2.bead_detection.test_tuning.TuningTests.test_zero_budget_preserves_baseline) ... ok
+test_245_241_245_peaks_can_overlap_without_crossing_the_rise (photo2.bead_detection.test_no_watershed.NoPartitionTests.test_245_241_245_peaks_can_overlap_without_crossing_the_rise) ... ok
+test_bright_leaf_retreat_is_unchanged_not_fixed_in_this_step (photo2.bead_detection.test_no_watershed.NoPartitionTests.test_bright_leaf_retreat_is_unchanged_not_fixed_in_this_step) ... ok
+test_exact_equivalence_to_old_growth_without_ownership_veto (photo2.bead_detection.test_no_watershed.NoPartitionTests.test_exact_equivalence_to_old_growth_without_ownership_veto) ... ok
+test_six_scenes_keep_pixel_contracts (photo2.bead_detection.test_no_watershed.NoPartitionTests.test_six_scenes_keep_pixel_contracts) ... ok
+test_alternate_route_cannot_reopen_rise (photo2.bead_detection.test_pixels.PixelTests.test_alternate_route_cannot_reopen_rise) ... ok
+test_color_guard_symmetric_and_circular (photo2.bead_detection.test_pixels.PixelTests.test_color_guard_symmetric_and_circular) ... ok
+test_equal_plateau_individual_acceptances (photo2.bead_detection.test_pixels.PixelTests.test_equal_plateau_individual_acceptances) ... ok
+test_every_blocked_approach_has_a_stop (photo2.bead_detection.test_pixels.PixelTests.test_every_blocked_approach_has_a_stop) ... ok
+test_noise_maxima_not_erased_or_merged (photo2.bead_detection.test_pixels.PixelTests.test_noise_maxima_not_erased_or_merged) ... ok
+test_retreat_removes_dark_on_bead_pixels (photo2.bead_detection.test_pixels.PixelTests.test_retreat_removes_dark_on_bead_pixels) ... ok
+test_rotation_palette_and_repeatability (photo2.bead_detection.test_pixels.PixelTests.test_rotation_palette_and_repeatability) ... ok
+test_single_dn_rise_and_no_tolerance_accumulation (photo2.bead_detection.test_pixels.PixelTests.test_single_dn_rise_and_no_tolerance_accumulation) ... ok
+test_six_requested_cases (photo2.bead_detection.test_pixels.PixelTests.test_six_requested_cases) ... ok
+test_black_growth_stops_at_first_dark_perimeter (photo2.bead_detection.test_detection.DetectionTests.test_black_growth_stops_at_first_dark_perimeter) ... ok
+test_hue_wrap (photo2.bead_detection.test_detection.DetectionTests.test_hue_wrap) ... ok
+test_known_bodies_palette_and_translation (photo2.bead_detection.test_detection.DetectionTests.test_known_bodies_palette_and_translation) ... ok
+test_less_blur_preserves_narrow_dark_separator (photo2.bead_detection.test_detection.DetectionTests.test_less_blur_preserves_narrow_dark_separator) ... ok
+test_location_does_not_fall_into_a_concave_gap (photo2.bead_detection.test_detection.DetectionTests.test_location_does_not_fall_into_a_concave_gap) ... ok
+test_masks_statistics_closure_and_exclusivity (photo2.bead_detection.test_detection.DetectionTests.test_masks_statistics_closure_and_exclusivity) ... ok
+test_noise_and_double_peak_neighbor_separation (photo2.bead_detection.test_detection.DetectionTests.test_noise_and_double_peak_neighbor_separation) ... ok
+test_shallow_neighbor_valley_stops_growth_despite_small_noise (photo2.bead_detection.test_detection.DetectionTests.test_shallow_neighbor_valley_stops_growth_despite_small_noise) ... ok
+test_uniform_image_and_determinism (photo2.bead_detection.test_detection.DetectionTests.test_uniform_image_and_determinism) ... ok
+test_dark_color_loss_and_achromatic_reflection (photo2.bead_detection.test_strict.StrictMonotonicTests.test_dark_color_loss_and_achromatic_reflection) ... ok
+test_dark_pixels_with_too_little_peak_contrast_are_not_a_clue (photo2.bead_detection.test_strict.StrictMonotonicTests.test_dark_pixels_with_too_little_peak_contrast_are_not_a_clue) ... ok
+test_equal_value_stops (photo2.bead_detection.test_strict.StrictMonotonicTests.test_equal_value_stops) ... ok
+test_first_increase_retains_seed_only (photo2.bead_detection.test_strict.StrictMonotonicTests.test_first_increase_retains_seed_only) ... ok
+test_low_saturation_hue_is_ignored (photo2.bead_detection.test_strict.StrictMonotonicTests.test_low_saturation_hue_is_ignored) ... ok
+test_one_sample_hue_noise_is_not_a_transition (photo2.bead_detection.test_strict.StrictMonotonicTests.test_one_sample_hue_noise_is_not_a_transition) ... ok
+test_red_hue_wrap_is_not_a_boundary (photo2.bead_detection.test_strict.StrictMonotonicTests.test_red_hue_wrap_is_not_a_boundary) ... ok
+test_red_yellow_transition_both_directions_and_palette_rotation (photo2.bead_detection.test_strict.StrictMonotonicTests.test_red_yellow_transition_both_directions_and_palette_rotation) ... ok
+test_retreat_excludes_dark_tail (photo2.bead_detection.test_strict.StrictMonotonicTests.test_retreat_excludes_dark_tail) ... ok
+test_retreat_removes_off_ray_dark_pixels_and_disconnected_island (photo2.bead_detection.test_strict.StrictMonotonicTests.test_retreat_removes_off_ray_dark_pixels_and_disconnected_island) ... ok
+test_shrinking_rays_never_add_pixels_even_with_zero_length_rays (photo2.bead_detection.test_strict.StrictMonotonicTests.test_shrinking_rays_never_add_pixels_even_with_zero_length_rays) ... ok
+test_tiny_rise_stops_without_tolerance (photo2.bead_detection.test_strict.StrictMonotonicTests.test_tiny_rise_stops_without_tolerance) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 33.319s
+
+OK

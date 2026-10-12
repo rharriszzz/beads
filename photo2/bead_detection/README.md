@@ -1,5 +1,12 @@
 # Native-pixel bead supports — R263
 
+R264 adds **Compare six hue settings** at `/hue-comparison`: nine identical-photo
+crops, supported-coordinate crosses, hover HSV and run-specific growth replay.
+The provisional recommendation is the saved8° run at `/?hue=8`;10°/12° alternatives
+remain useful. The historical detector default stays10°. Restart an older server.
+[Photographic findings, duplicates/misses and leaf retreat](../HUE_COMPARISON_R264.md).
+
+
 R263 uses independent native-pixel growth without watershed ownership.
 Its goal is a reliable supported coordinate per visible bead. These results remain
 candidate supports, with duplicate highlights and misses unresolved.

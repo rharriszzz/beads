@@ -5,6 +5,15 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R264 hue comparison is delivered: see photo2/HUE_COMPARISON_R264.md.
+Recommend saved8° provisionally; preserve10°/12° alternatives and the unchanged10°
+detector baseline. Six main review crops show12 apparent duplicate extras and
+4 stronger +1 tentative misses at5°/8°; >=10° loses one additional red location.
+These are scoped visual judgments, not a whole-photo census. Leaf sensitivity
+changes coordinates; no retreat repair was applied. Optional Q264.1 remains pending.
+Next proposed bounded task: explicit retreat-repair comparison, not another hue
+search, ownership partition, geometry, indexing or pattern work.
+
 R263 size limit: user accepts the estimated30×29 native-pixel bead rectangle
 (870px bounding-box area) as the basis for a HARD do-not-exceed region limit of
 870 distinct native pixels. See photo2/BEAD_SIZE_REFERENCE.md. This is an operational
@@ -13,7 +22,7 @@ arbitrary tunable criteria. The guard is implemented before retreat; an eligible
 871st pixel flags/rejects the proposal and preserves stops. Current R263 default
 has no watershed, strict brightness descent, prominence35, minimum peak0, hue10°.
 See photo2/PARAMETER_SEARCH_R263.md.1,552 supports are not a verified bead count.
-Next requested careful hue sweep:5°,8°,10°,12°,15°,20°, all else fixed. User observes
+Completed R264 hue sweep:5°,8°,10°,12°,15°,20°, all else fixed. User observes
 red/yellow look more similar in shadows; assess those transitions separately.
 The prior15-minute search is finished; do not restart it automatically.
 

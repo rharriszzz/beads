@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R264 hue comparison</title>
+<style>
+body{font:15px system-ui;margin:18px;background:#102027;color:#eef5f5}a{color:#70eeee}select,button{font:inherit;padding:6px}header{display:flex;gap:16px;align-items:center;flex-wrap:wrap}h1{font-size:21px}#panels{display:grid;grid-template-columns:repeat(4,minmax(210px,1fr));gap:12px}article{background:#183039;padding:10px;min-width:0}h2{font-size:17px;margin:0 0 8px}canvas{width:100%;image-rendering:pixelated;cursor:crosshair}#readout{min-height:42px}table{border-collapse:collapse;font-size:13px;width:100%}td,th{text-align:left;padding:6px;border-bottom:1px solid #456}#table{overflow:auto}p{max-width:1000px;line-height:1.5}.muted{color:#b3cbcb}@media(max-width:1000px){#panels{grid-template-columns:repeat(2,minmax(180px,1fr))}}@media(max-width:460px){#panels{grid-template-columns:1fr}}button:focus,select:focus,canvas:focus{outline:2px solid cyan}
+</style></head><body>
+<header><h1>R264 · same photograph, six hue limits</h1><label>Crop <select id="crop"></select></label><button id="previous">←</button><button id="next">→</button><a href="/">Full photograph / growth replay</a></header>
+<p>White crosses mark supported coordinates; cyan lines show supports. All panels use identical original pixels and scale. Hover for raw HSV; click a support to highlight its coordinate in every setting. Click an ID below for its full growth replay.</p>
+<p id="readout" role="status">Loading…</p><div id="panels"></div>
+<p id="note" class="muted">Provisional recommendation: <a href="/?hue=8">8°</a>. Keep 10° / 12° alternatives for yellow interiors. Identity remains uncertain; a hue change can occur inside one bead. <a href="/r264-hsv.png">Native HSV paths</a> · <a href="/r264-review.png">Duplicate / missing review</a> · <a href="/r264-leaf.png">Leaf-retreat coordinate control</a></p>
+<div id="table"></div><script type="module" src="/hue.js"></script></body></html>

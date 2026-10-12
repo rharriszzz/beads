@@ -1777,3 +1777,13 @@ residual distributions, preserve uncertain/hidden spans. Synthetic inverse tests
 start with a deliberately wrong curve. Source code, model parameters, native
 comparisons, sensitivity and index/occlusion ledgers are linked in the report.
 R258's local positive-pixel improvement does not establish a global reconstruction.
+
+## R264 — controlled hue and coordinate sensitivity review
+
+[Experiment](photo2/HUE_COMPARISON_R264.md): hold the native detector fixed and
+compare six hue limits using identical crops, supported-coordinate movement,
+explicit overlap measurements, scoped visual duplicate/miss judgments, and native
+HSV shading routes. Keep same-body identity separate from mask overlap; retain
+alternatives where a hue limit trims an interior. An isolated bright-leaf control
+shows how predecessor-tree retreat can change the chosen discrete coordinate.
+No repaired detector or ownership partition is established by this sensitivity test.

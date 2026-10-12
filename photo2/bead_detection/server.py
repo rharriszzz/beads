@@ -47,12 +47,35 @@ def make_server(work, host='127.0.0.1', port=8767):
     class Handler(SimpleHTTPRequestHandler):
         def do_GET(self):
             path=urlsplit(self.path).path
+            import re
+            import gzip
+            review=ROOT/'photo2/review/r264'
+            if path=='/hue-comparison':path='/hue.html'
             files={'/':STATIC/'index.html','/app.js':STATIC/'app.js','/style.css':STATIC/'style.css',
+                   '/hue.html':STATIC/'hue.html','/hue.js':STATIC/'hue.js',
+                   '/hue-comparison.json':review/'comparison.json',
+                   '/r264-hsv.png':review/'hsv-routes.png',
+                   '/r264-review.png':review/'visual-review.png',
+                   '/r264-leaf.png':review/'leaf-coordinate-control.png',
                    '/regions.json':work/'regions.json','/photo.png':work/'photo.png',
                    '/size-distribution.png':work/'size-distribution.png','/rank-size.csv':work/'rank-size.csv',
                    '/coordinates.csv':work/'coordinates.csv'}
             file=files.get(path)
-            import re
+            match=re.fullmatch(r'/hue-data/(5|8|10|12|15|20)/(regions.json|coordinates.csv|traces/P[0-9]{6}\.json)',path)
+            if match:
+                hue,name=match.groups()
+                if not (review/hue/'regions.json.gz').is_file():self.send_error(404);return
+                if name=='regions.json':
+                    with gzip.open(review/hue/'regions.json.gz','rb') as f:body=f.read()
+                elif name=='coordinates.csv':body=(review/hue/name).read_bytes()
+                else:
+                    import tarfile
+                    with tarfile.open(review/hue/'traces.tar') as tar:
+                        try:
+                            with tar.extractfile(name+'.gz') as f:body=gzip.decompress(f.read())
+                        except KeyError:self.send_error(404);return
+                self.send_response(200);self.send_header('Content-Type','text/csv' if name.endswith('.csv') else 'application/json')
+                self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body);return
             if re.fullmatch(r'/traces/P[0-9]{6}\.json',path):
                 import gzip
                 packed=work/'traces'/(Path(path).name+'.gz')
