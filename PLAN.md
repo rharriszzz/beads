@@ -1,5 +1,25 @@
 # Photo-2 reconstruction plan
 
+## R263 review pause — bead-size reference accepted
+
+The user accepts the estimated30×29 native-pixel rectangle (870px bounding-box
+area), then explicitly clarifies that it supplies a hard do-not-exceed region
+limit:870 distinct native pixels. The minimum can be chosen independently. Recorded in
+[photo2/BEAD_SIZE_REFERENCE.md](photo2/BEAD_SIZE_REFERENCE.md) and AGENTS.md.
+The R235 D4-B15 face appears broadly rounded; no orientation angle or exact mask
+was measured. The hard limit is recorded but has not yet been implemented.
+
+Broader R262/R263 detector/search changes and evidence remain uncommitted in the
+workspace. The user asked to stop after the native-axis image; this turn only
+records acceptance of the size reference. Do not restart searches automatically.
+Pending on explicit resumption: implement the870-pixel overgrowth guard, finish
+the requested HSV line illustration and
+parameter explanation, reconcile the full search documentation/log (including the
+successful reduction of large one-level expansions with hue20→10), and deliver
+scoped code/evidence. The earlier15-minute detector-testing window is complete;
+new detector runs require a new runtime allowance. No /new needed for this review;
+keep the existing model/reasoning choice.
+
 ## Current R261 — native-pixel replacement delivered
 
 [Algorithm and native comparisons](photo2/PIXEL_DETECTION_R261.md) ·

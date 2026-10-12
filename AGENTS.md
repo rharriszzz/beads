@@ -5,6 +5,12 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R263 size limit: user accepts the estimated30×29 native-pixel bead rectangle
+(870px bounding-box area) as the basis for a HARD do-not-exceed region limit of
+870 distinct native pixels. See photo2/BEAD_SIZE_REFERENCE.md. This is an operational
+ceiling, not a measured global maximum. Minimum size is separate and may use more
+arbitrary tunable criteria. The guard remains to be implemented when work resumes.
+
 R235 Stage 1 overrides older central-body/sliver exclusions: distinct red/yellow
 patches with roughly >=10% of unobstructed projected bead area and convincing
 color qualify. Black eligibility requires an obvious reflection plus dark-body

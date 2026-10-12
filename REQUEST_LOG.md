@@ -6957,3 +6957,36 @@ and missed visible locations using these crops/replays,before evidence-based
 same-bead consolidation. Recommend GPT-6 Astra/High for visual inference,not an
 assertion of changed user-supplied session status. No /new needed for viewer
 inspection;use /new before another substantial algorithm round.
+
+
+## R263 later review steering — accepted size reminder (2026-10-12)
+
+After the bounded parameter search, the user requested an illustration of the
+largest failure, parameter countermeasures and an HSV line through the problem.
+They then asked for a saved-file bead-size audit and a reminder, offered to measure
+from a native-axis crop, and explicitly asked the assistant to stop after producing
+that image. The image was displayed and work stopped. The latest user says:
+“Since you already have an estimated bead rectangle, that is good enough,
+especially if that bead was not on a diagonal.”
+
+This bounded follow-up inspected the archived D4 raw crop and recorded the accepted
+30×29px /870px bounding-box reference from R235 D4-B15. Its visible face appears
+broadly rounded; orientation was not quantitatively measured. This remains an
+approximate reference, not a verified global maximum or a hard detector threshold.
+No new detector run or broader implementation was undertaken. Earlier R262/R263
+work remains pending in the workspace; the full outcomes still require log and
+handoff reconciliation when the user resumes. The15-minute experiment window has
+already ended. Updated size reminder, agent guidance, plan and handoff only.
+
+
+### R263 size-limit clarification
+
+User clarifies that the purpose is a do-not-exceed maximum pixel count; for the
+minimum, more arbitrary methods may be used.
+
+This supersedes the earlier reference-only interpretation: record870 distinct
+native pixels as the hard operational maximum for a region, based on the accepted
+30×29 rectangle. Minimum size remains independent and not yet selected. The limit
+is a user-accepted operating rule, not a measured global maximum bead area. Updated
+size reminder, AGENTS, plan and handoff accordingly. No detector implementation or
+new parameter search in this paused review step.
