@@ -1,5 +1,7 @@
 """Real Chromium checks for R261 pixel replay; never writes user review records."""
+import argparse
 import json
+from pathlib import Path
 import threading
 import numpy as np
 from playwright.sync_api import sync_playwright
@@ -8,7 +10,8 @@ from .server import make_server
 
 
 def main():
-    work=ROOT/'photo2/output/detection-r261';out=ROOT/'photo2/review/r261';server=make_server(work,port=0)
+    ap=argparse.ArgumentParser();ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/detection-r261');ap.add_argument('--output',type=Path,default=ROOT/'photo2/review/r261');args=ap.parse_args()
+    work=args.work;out=args.output;out.mkdir(parents=True,exist_ok=True);server=make_server(work,port=0)
     threading.Thread(target=server.serve_forever,daemon=True).start();checks=[]
     def check(ok,msg):
         assert ok,msg

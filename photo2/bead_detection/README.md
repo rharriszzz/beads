@@ -1,6 +1,6 @@
-# Native-pixel bead supports — R261
+# Native-pixel bead supports — R263
 
-R261 replaces the default radial detector with an independent native-pixel detector.
+R263 uses independent native-pixel growth without watershed ownership.
 Its goal is a reliable supported coordinate per visible bead. These results remain
 candidate supports, with duplicate highlights and misses unresolved.
 
@@ -9,7 +9,7 @@ candidate supports, with duplicate highlights and misses unresolved.
 ```
 
 Open **http://localhost:8767**. Restart an older server first, or add `--port 8768`.
-The first launch generates missing data in `photo2/output/detection-r261/` from the
+The first launch generates missing data in `photo2/output/detection-r263-bounded/` from the
 original photograph. It does not read historical bead labels, curves or models.
 The familiar `photo2.bead_debugger.server` launcher also opens this viewer.
 
@@ -36,27 +36,46 @@ its predecessor edge white. Brightness is max(R,G,B) in 0–255; H is degrees, S
 are 0–1. Traces are loaded on selection; Download full growth trace exports them.
 
 All candidate maxima, coordinates, size ranks and histogram are downloadable.
-147,218 below-prominence maxima have preserved plateau pixels and rejection
-reasons but no expansion trace because no growth was attempted. All 7,543 grown
-candidates, including rejected ones, have complete traces. Full compressed copies
-are committed in [../review/r261](../review/r261/README.md).
+153,166 below-prominence maxima have preserved plateau pixels and rejection
+reasons but no expansion trace because no growth was attempted. All1,595 grown
+candidates, including rejected ones, have complete traces.1,552 retained supports
+remain identity-ambiguous;695 overlap another support. These are not confirmed
+distinct bead counts. Full compressed copies are committed in
+[../review/r263](../review/r263/README.md).
+
+The default uses prominence35, minimum peak0, zero brightness-rise allowance and
+a10° circular hue limit relative to the first reliable chromatic pixel on each
+path. Hue stopping applies at or above10°, with S≥0.35,V≥0.20,S×V≥0.08.
+Equal brightness is accepted; heap ties are deterministic. Rejected destinations
+stay locked against other paths. Different maxima grow independently and can
+overlap; overlap never establishes one shared bead identity.
+
+Growth accepts at most870 distinct native pixels **before retreat**. If it needs
+an871st eligible pixel, the candidate is flagged/rejected and all pending edges
+receive `maximum-region-pixels` stop records. Five such candidates remain
+inspectable by ID; smaller final masks are not automatically valid beads.
+The original photograph, cyan contours, IDs, centroids, pan/zoom, selection,
+histogram and pixel/stop replay remain the viewer's working tools.
 
 Reproduce in Python 3.12 with the existing [requirements](requirements.txt):
 
 ```bash
-.venv/bin/python -m unittest photo2.bead_detection.test_pixels -v
-.venv/bin/python -m photo2.bead_detection.curate_r261 synthetic
-.venv/bin/python -m photo2.bead_detection.pixel_detect
-.venv/bin/python -m photo2.bead_detection.validate_pixels --isolation
-.venv/bin/python -m photo2.bead_detection.curate_r261 compare
-.venv/bin/python -m photo2.bead_detection.curate_r261 valley
-PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2.bead_detection.browser_pixels
-.venv/bin/python -m photo2.bead_detection.curate_r261 archive
+.venv/bin/python -m unittest photo2.bead_detection.test_bounded photo2.bead_detection.test_tuning photo2.bead_detection.test_no_watershed -v
+.venv/bin/python -m photo2.bead_detection.bounded_detect
+.venv/bin/python -m photo2.bead_detection.validate_bounded --isolation
+PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2.bead_detection.browser_pixels --work photo2/output/detection-r263-bounded --output photo2/review/r263/bounded
+.venv/bin/python -m photo2.bead_detection.curate_bounded
 ```
 
-Retreat is configurable via `pixel_detect --retreat-fraction .30 --retreat-dn 2`;
-other parameters are explicit in `pixel_detect.Parameters`. Save experiments to
-different `--output` directories. Changing display contours never changes masks.
+Every parameter is configurable through `bounded_detect --help`, including
+one-level integer brightness thresholds, `--minimum-peak-dn`, `--hue-stop-deg`,
+`--retreat-fraction` and `--retreat-dn`. `--max-region-pixels` can be lowered but
+cannot exceed870. Save experiments to different `--output` directories and open
+them with `server --work PATH`. The viewer preserves the selected run's parameters
+and chooses the matching archived generator if regeneration is needed. Unknown
+versions raise an error. Historical `pixel_detect` (R261), `monotone_detect` (R262)
+and `tunable_detect` (uncapped search) remain frozen for reproduction.
+Changing display contours never changes masks.
 Playwright/Chromium is optional and needed only for browser tests.
 
 **Preserved R260:** `python -m photo2.bead_detection.server_r260 --port 8768`
@@ -65,4 +84,6 @@ viewer assets. `detect.py`, R259/R260 results, strict comparisons and reviews re
 preserved. The old `browser_smoke` tests explicitly target this archived viewer.
 The geometry debugger remains at `photo2.bead_debugger.server --legacy`.
 
-[Algorithm, safeguards, evidence and limitations](../PIXEL_DETECTION_R261.md).
+[Current algorithm, parameter search and limitations](../PARAMETER_SEARCH_R263.md).
+[Watershed removal and pair diagnosis](../NO_WATERSHED_R262.md).
+[Historical R261](../PIXEL_DETECTION_R261.md).

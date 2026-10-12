@@ -6,7 +6,7 @@ import json
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
-from .pixel_detect import ROOT, generate, sha
+from .bounded_detect import ROOT, generate, sha
 
 STATIC=Path(__file__).parent/'static'
 
@@ -14,11 +14,32 @@ STATIC=Path(__file__).parent/'static'
 def prepare(work, image, regenerate=False):
     path=work/'regions.json'
     stale=not path.exists()
+    generator=generate;parameters=None
     if not stale:
         data=json.loads(path.read_text())
-        stale=data.get('image_sha256')!=sha(image) or data.get('detector_sha256')!=sha(Path(__file__).parent/'pixel_detect.py')
+        detector=Path(__file__).parent/'bounded_detect.py'
+        if data.get('version','').startswith('r263-tunable'):
+            from .tunable_detect import generate as tuned_generate, Parameters
+            detector=Path(__file__).parent/'tunable_detect.py'
+            generator=tuned_generate;parameters=Parameters(**data['parameters'])
+        elif data.get('version','').startswith('r262-'):
+            from .monotone_detect import generate as old_generate, Parameters
+            detector=Path(__file__).parent/'monotone_detect.py'
+            generator=old_generate;parameters=Parameters(**data['parameters'])
+        elif data.get('version','').startswith('r261-'):
+            from .pixel_detect import generate as pixel_generate, Parameters
+            detector=Path(__file__).parent/'pixel_detect.py'
+            generator=pixel_generate;parameters=Parameters(**data['parameters'])
+        elif data.get('version','').startswith('r263-bounded'):
+            from .bounded_detect import Parameters
+            parameters=Parameters(**data['parameters'])
+        else:
+            raise ValueError('Unknown detector version; use its archived viewer instead of regenerating it here')
+        stale=data.get('image_sha256')!=sha(image) or data.get('detector_sha256')!=sha(detector)
         stale |= not (work/'photo.png').exists()
-    if stale or regenerate:generate(image,work)
+    if stale or regenerate:
+        if parameters is None:generator(image,work)
+        else:generator(image,work,parameters)
 
 
 def make_server(work, host='127.0.0.1', port=8767):
@@ -55,7 +76,7 @@ def make_server(work, host='127.0.0.1', port=8767):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--port',type=int,default=8767)
-    ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/detection-r261')
+    ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/detection-r263-bounded')
     ap.add_argument('--image',type=Path,default=ROOT/'beads-photo-2.jpg')
     ap.add_argument('--regenerate',action='store_true')
     args=ap.parse_args();prepare(args.work,args.image,args.regenerate)

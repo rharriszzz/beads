@@ -1,26 +1,50 @@
 # Photo-2 reconstruction plan
 
-## R263 review pause — bead-size reference accepted
+## Current R263 — bounded native growth and parameter exploration
 
-The user accepts the estimated30×29 native-pixel rectangle (870px bounding-box
-area), then explicitly clarifies that it supplies a hard do-not-exceed region
-limit:870 distinct native pixels. The minimum can be chosen independently. Recorded in
-[photo2/BEAD_SIZE_REFERENCE.md](photo2/BEAD_SIZE_REFERENCE.md) and AGENTS.md.
-The R235 D4-B15 face appears broadly rounded; no orientation angle or exact mask
-was measured. The hard limit is recorded but has not yet been implemented.
+[Report](photo2/PARAMETER_SEARCH_R263.md) · [evidence](photo2/review/r263/README.md) ·
+[viewer](photo2/bead_detection/README.md) · [size reminder](photo2/BEAD_SIZE_REFERENCE.md).
+The user resumed delivery after the size-reference pause, requested20°→10° hue
+stopping, and asked that the next careful search test several hue limits.
+They also observe that red and yellow can look more similar in shadows.
 
-Broader R262/R263 detector/search changes and evidence remain uncommitted in the
-workspace. The user asked to stop after the native-axis image; this turn only
-records acceptance of the size reference. Do not restart searches automatically.
-Pending on explicit resumption: implement the870-pixel overgrowth guard, finish
-the requested HSV line illustration and
-parameter explanation, reconcile the full search documentation/log (including the
-successful reduction of large one-level expansions with hue20→10), and deliver
-scoped code/evidence. The earlier15-minute detector-testing window is complete;
-new detector runs require a new runtime allowance. No /new needed for this review;
-keep the existing model/reasoning choice.
+Watershed removal is frozen separately as R262; independent supports may overlap.
+Current `bounded_detect` defaults: prominence35, minimum peak0, brightness-rise
+budget0, circular hue10°, maximum870 pre-retreat accepted pixels. The user-accepted
+30×29 rectangle supplies an operational cap, not a measured global maximum.
+An eligible871st pixel flags/rejects the proposal and preserves all pending stops.
+Minimum size remains independent. No manual positions, geometry or spline inputs.
 
-## Current R261 — native-pixel replacement delivered
+Generation `90b4284f50a29ced`:154,761 raw maxima,1,595 meaningful/grown,
+1,552 retained identity-ambiguous regions,153,209 rejected candidates;5 size-limited,
+134 dark enclosures,695 overlapping supports. Retained areas6–334,median68.
+These are supports, not a verified count of distinct visible beads or completeness.
+All centroids, coordinates, maxima, traces, histogram and native R260 comparisons
+are curated. The earlier20° bounded run/source remains separately preserved.
+
+The15-minute local search completed28 settings ×256 minimum-peak cutoffs =7,168
+combinations in about13m35s, including a cached baseline. One additional trial
+exited signal9 and is excluded. Later fixed production changes/audits were separate
+from that search. Adaptive selection chose prominence35 with strict growth;
+nonzero brightness budgets produced paper/shadow spills. The largest example
+is186→17,095 pixels with a775.96px centroid shift. A301-pixel native HSV line and
+source/contour illustrations are saved. Hue20→10 eliminated the huge one-level
+spill, but smaller regressions remained; it did not establish bead accuracy.
+43 Python tests across preserved/new suites pass. Final full audit checks408,393
+accepted pixels and503,340 stopped edges; isolated replay reproduces all1,595
+traces byte-for-byte.41 real Chromium checks pass.
+
+**Next bounded task:** a controlled hue sweep5°,8°,10°,12°,15°,20°, keeping other
+parameters and870 ceiling fixed. Assess shadowed red/yellow transitions separately
+from brighter ones, coordinate stability, loss, overgrowth and overlap alongside
+count. Similar hue alone cannot establish common bead identity. Do not launch
+another search automatically after delivery. Duplicate identities and the known
+predecessor-tree leaf-retreat issue remain separate unresolved aspects.
+Stop after scoped commit/push and remote/clean verification. Keep the existing
+model/reasoning choice (no inferred status change). No `/new` needed for review;
+use `/new` before another substantial experiment session.
+
+## Historical R261 — native-pixel replacement delivered
 
 [Algorithm and native comparisons](photo2/PIXEL_DETECTION_R261.md) ·
 [Complete evidence and traces](photo2/review/r261/README.md) ·

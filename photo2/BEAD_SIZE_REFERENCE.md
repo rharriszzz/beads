@@ -16,15 +16,19 @@ The user subsequently clarified that the purpose is a **hard do-not-exceed limit
 for the number of pixels in a region. Adopt **870 distinct native pixels** as the
 working maximum. This is an operational ceiling accepted by the user, not a claim
 that870 is the photograph's measured largest bead area. Regions of6,155 or17,095
-pixels exceed it. When implementing the guard, stop and flag overgrowth rather
-than silently truncate an oversized candidate and certify its coordinate.
+pixels exceed it. The R263 bounded detector now implements the guard: before an
+otherwise eligible871st acceptance it stops, flags and rejects the proposal,
+preserving pending stop edges and the complete trace. The870 ceiling applies to
+pre-retreat growth, not just retained pixels. It does not silently truncate an
+oversized candidate and certify its coordinate.
 The minimum is independent and may use more arbitrary, tunable criteria; no new
-minimum has been selected. This note records the decision; the guard is not yet
-implemented in the paused detector work. Do not use the reference as a complete
+minimum has been selected. See [the delivered result](PARAMETER_SEARCH_R263.md).
+Do not use the reference as a complete
 bead mask or a bead-position prior.
 Do not use the historical1,501-pixel R259 maximum as a verified bead: it is
 R01284, a documented detector failure. R260's1,053-pixel maximum is the same ID.
 
 The user accepted this approximation after being shown a top-of-necklace crop
 with native coordinate axes. No new manual bead marking or further measurement
-is required for this provisional reference. Broader detector work remains paused.
+is required for this provisional reference. The original15-minute search is
+complete; subsequent explicit requests authorized the fixed production changes.

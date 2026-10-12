@@ -6990,3 +6990,93 @@ native pixels as the hard operational maximum for a region, based on the accepte
 is a user-accepted operating rule, not a measured global maximum bead area. Updated
 size reminder, AGENTS, plan and handoff accordingly. No detector implementation or
 new parameter search in this paused review step.
+
+
+## R262/R263 completed work and later delivery steering (2026-10-12)
+
+This entry reconciles the earlier work preserved in the workspace and supersedes
+the paused status above. The user requested detailed diagnosis of32240/32353,
+then removal of watershed alone, adjustable one-level thresholds and minimum
+local-maximum brightness, automatic exploration toward the previous visible-bead
+prediction, and at most15 minutes on the local PC. Subsequent steering requested
+automatic next-setting choices, scrutiny of unusually large regions as possible
+background/shadow, hue clues, the biggest-failure illustration and an HSV line.
+The size-audit/native-axis pause and accepted870-pixel ceiling are recorded above.
+The user then resumed final delivery: “ok I will wait for committed and pushed
+results”, requested an explanation and decrease of the20° hue limit, and requested
+several hue values in the next careful search. Latest photographic observation:
+red and yellow can look more similar in shadows. Preserve that observation for
+shadowed-versus-brighter boundary evaluation; no new manual labeling requested.
+
+R262 removes watershed ownership only. P032240/P032353 have245-level maxima joined
+by a241 saddle; h_maxima10 retained both equal-height maxima. Previously ownership
+blocked equal/downhill native edges. Without it, supports76/48 pixels become261/
+261 pixels with259 shared pixels and the same supported coordinate(485,669).
+They remain separate ambiguous proposals. Separate maximum-prominence semantics,
+multi-highlight association and predecessor-tree leaf-retreat problems are not
+silently fixed. Full no-watershed data, pair evidence, audit and exact isolated
+replay are preserved under review/r262.
+
+The local search window was21:35:28–21:50:28 UTC; the last completed trial finished
+21:48:33.123 and experiment/test processes were confirmed complete at21:49:02.935.
+28 completed growth settings including the cached baseline ×256 exact
+minimum-peak cutoffs =7,168 combinations. One budget4 trial exited signal9, cause
+unestablished, and is excluded. Conditional R253 predictions (~1,500 distinguishable
+and~1,650 meaningfully visible surfaces) guide aggregate search order only; no old
+positions, splines, manual bead identities or geometry enter detection. Raising
+minimum peak to238 can match count but discard92/97 dark-enclosure supports.
+Count matching is not a coverage/accuracy measurement.
+
+Adaptive selection interpolated the strict-growth count bracket to prominence35,
+then tested hue20→10 and reliable saturation0.35→0.25 against observed one-level
+growth failures. The largest two-level spill, P126974, grows186→17,095 pixels and
+shifts its centroid775.96px into paper. Curated source/contour figures and a301-pixel
+native HSV line explain the failure and parameter countermeasures. A saved-file
+size audit examined8,721 JSON/CSV files; old maxima1,501 and1,053 belong to known
+R01284 failures, not verified bead sizes. The accepted30×29 estimate supplies the
+operational870 ceiling. No further user measurement is necessary.
+
+Correction to earlier progress wording: tighter10° hue removed the huge one-level
+spill (maximum6,155→432 pixels), but two smaller area/coordinate regressions
+remained. Lowering the saturation gate did not remove them. Production therefore
+keeps zero brightness-rise allowance. Current hue is circular displacement from
+the first reliable chromatic pixel along each path, stopping at or above10°;
+it is not a globally fixed red/yellow classifier. Reliability requires S≥0.35,
+V≥0.20,S×V≥0.08. Equal brightness passes deterministically; stopped destinations
+stay locked across alternative approaches. Competing maxima grow independently,
+may overlap and remain identity-ambiguous.
+
+The bounded production detector accepts at most870 native pixels before retreat.
+An eligible871st pixel flags/rejects the candidate and records every pending stop
+edge; final small masks do not override this flag. Defaults: prominence35, minimum
+peak0, rise budget0, hue10°. Fixed20° then10° production runs and their audits were
+separate from the completed15-minute parameter search, following explicit later
+delivery/threshold requests. The20° source and full result are preserved.
+
+Final generation90b4284f50a29ced:154,761 raw maxima,1,595 meaningful/grown,
+1,552 retained regions, all identity-ambiguous;153,209 rejected candidates
+(153,166 below prominence plus43 grown). Five overgrowth flags;134 dark enclosures;
+695 overlapping supports,24,210 overlap pixels. Retained sizes6–334,median68.
+The20° bounded run retained1,496 and flagged64 oversized proposals. Native20→10
+comparison records59 added/3 lost IDs and exact area/coordinate changes. Smaller
+regions do not establish complete or accurate one-coordinate-per-bead coverage.
+R00956's yellow interior remains poorly represented; R260 failure comparisons
+R01307/R00956/R01284 preserve exact pixels and ambiguous correspondence.
+
+43 Python tests across the preserved and new suites pass, including the six
+synthetic scenes, equal/noisy values, nonaccumulating rise allowance, alternate
+route locks, ceiling behavior and circular path-anchored hue. Final full-photo
+audit checks408,393 accepted pixels,503,340 stop edges, all8 neighbors, source
+HSV, centroids, retreat, masks, overlaps and all maxima. Isolated source/photo
+replay reproduces1,595 traces byte-for-byte.41 real Chromium checks pass for the
+delivered viewer, including individual-pixel and exact stopping-event replay.
+All production regions, maxima, centroids, histograms and traces are archived.
+R259/R260/R261 results/reviews remain preserved. Updated scoped code/docs/evidence
+are prepared for commit/push; final delivery requires exact remote-tip verification.
+
+Next careful hue sweep is recorded, not launched:5°,8°,10°,12°,15°,20° with other
+parameters and870 ceiling fixed. Assess shadowed red/yellow boundaries separately
+from brighter ones, coordinate stability, overgrowth, overlaps and lost supports
+alongside count. Similar hue alone cannot identify a bead. Stop after delivery;
+keep current model/reasoning choice, no/new needed for review; use/new before a
+substantial new experiment session. No subagents or new skill workflow used here.

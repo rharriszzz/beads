@@ -1,7 +1,22 @@
 # Methods collection — bead-rope reconstruction
 
 
-## R261 native-pixel support detector (current default)
+## R263 bounded native growth and local parameter search (current default)
+
+[Report and reproduction](photo2/PARAMETER_SEARCH_R263.md). R262 removes watershed
+ownership while preserving native8-neighbor brightest-first growth and permanent
+locks; independent maxima may produce overlapping supports. R263 exposes every
+parameter, including integer brightness tolerances and minimum peak brightness.
+An absolute deadline limits search children; count-guided adaptive choices are
+screened using area/coordinate regressions, not treated as bead-accuracy scores.
+Current defaults use strict descent, prominence35, hue10° and a hard870-pixel
+pre-retreat ceiling; overflow proposals retain diagnostic traces and are rejected.
+All raw maxima, supported coordinates, centroids and ambiguous identities remain
+separate. Final native comparisons, HSV failure line, histogram and full archives
+are in [R263 evidence](photo2/review/r263/README.md). Next controlled hue sweep
+must include shadowed red/yellow evidence; hue similarity is not shared identity.
+
+## R261 native-pixel support detector (historical)
 
 [Algorithm, invariants, comparisons and limits](photo2/PIXEL_DETECTION_R261.md).
 Input: original RGB only. Output: preserved raw maxima, exact compact support

@@ -9,7 +9,13 @@ R263 size limit: user accepts the estimated30×29 native-pixel bead rectangle
 (870px bounding-box area) as the basis for a HARD do-not-exceed region limit of
 870 distinct native pixels. See photo2/BEAD_SIZE_REFERENCE.md. This is an operational
 ceiling, not a measured global maximum. Minimum size is separate and may use more
-arbitrary tunable criteria. The guard remains to be implemented when work resumes.
+arbitrary tunable criteria. The guard is implemented before retreat; an eligible
+871st pixel flags/rejects the proposal and preserves stops. Current R263 default
+has no watershed, strict brightness descent, prominence35, minimum peak0, hue10°.
+See photo2/PARAMETER_SEARCH_R263.md.1,552 supports are not a verified bead count.
+Next requested careful hue sweep:5°,8°,10°,12°,15°,20°, all else fixed. User observes
+red/yellow look more similar in shadows; assess those transitions separately.
+The prior15-minute search is finished; do not restart it automatically.
 
 R235 Stage 1 overrides older central-body/sliver exclusions: distinct red/yellow
 patches with roughly >=10% of unobstructed projected bead area and convincing
