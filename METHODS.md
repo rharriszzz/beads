@@ -1,5 +1,14 @@
 # Methods collection — bead-rope reconstruction
 
+## R259 independent photographic regions and first-dark-perimeter support
+
+[Method, inputs, thresholds, limitations and validation](photo2/AUTOMATIC_DETECTION_R259.md) ·
+[launch/reproduction](photo2/bead_detection/README.md). Original RGB → Value maxima,
+bright patches, radial colored-region growth with valley retreat and learned-paper
+stopping, first complete dark perimeter for reflection support, exclusive native
+masks/statistics and a simple size-driven viewer. No historical geometry or labels.
+Black support area is not full bead area; no complete-inventory claim follows.
+
 ## R257 native surface and lighting diagnostics
 
 [Scientific method, source-compatible ray/normal mathematics, conditional lighting inversion, spatial holdout, convergence and reproduction](photo2/SURFACE_LIGHTING_R257.md) · [working debugger](photo2/bead_debugger/README.md). Distinguish physical center, radial surface extremum, projected visible-area centroid and predicted reflection. Geometry is frozen during shared-light fitting; failed heldout predictions remain explicit. No accepted lamp, bead mapping or pattern follows from this experiment.

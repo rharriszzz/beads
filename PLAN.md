@@ -1,5 +1,42 @@
 # Photo-2 reconstruction plan
 
+## Current R259 — automatic photo regions; detection review only
+
+[Report](photo2/AUTOMATIC_DETECTION_R259.md) · [simple viewer](photo2/bead_detection/README.md) ·
+[complete data, plots and examples](photo2/review/r259/README.md).
+
+R259 supersedes the prior next-step geometry/annotation plan. Work is exclusively
+photographic detection. Final v2 learns from the original photo without historical
+labels, splines, adjacencies or simulated positions. Maker clarified: stop black
+region growth at the first fully dark perimeter around a reflection; do not seek
+full black-bead extent. Black centroid/area measure that support only.
+
+Entire-photo result: 1,498 maxima → 1,494 groups; 1,040 retained regions (917 bright
+interiors,123 dark-perimeter supports),454 rejected candidates saved. Pixel counts
+37–1,501, median579.5. Generation `40eaf236aa363f0c`. Complete compressed JSON,
+native label raster, contours/pixel runs/HSV/confidence, histogram/rank-size plot
+and raw/outlined examples are committed. Counts are proposals, not certified beads;
+photographic precision/recall and completeness remain unknown.
+
+Launch `.venv/bin/python -m photo2.bead_detection.server` → http://localhost:8767.
+The old debugger command now opens this same simple interface. Add `--legacy`
+for preserved old functionality/reviews. New UI is read-only: region IDs, cyan
+outlines, pan/zoom, click/ID details, size browsing, clickable histogram and optional
+maxima/growth/rejections. No geometry/index/model/lighting/pattern controls.
+
+Validation:6 detector tests,full-photo pixel/centroid/nonoverlap/closed-contour and
+123-dark-perimeter audit,byte-identical isolated code/photo replay,28 Chromium
+checks. Legacy Python regressions28/29: old immutable-review snapshot differs
+from the user's locally saved October11 review; preserved unchanged. Prior tracked
+reviews/experiments remain intact. See report for limitations and exact reproduction.
+
+**Next task / stopping point:** inspect size outliers and a few missed/rejected
+reflections by automatic region ID, then improve detection from review. Stop at
+this delivery; no geometry, indexing or pattern inference. Recommend GPT-6 Astra /
+High for ambiguity review (recommendation only; no new active-model status supplied).
+No `/new` needed for viewer inspection; use `/new` before another substantial
+implementation round. Scoped commit/push and exact remote/clean checks finish delivery.
+
 ## Current R258 — bead-driven fitting delivered; neighborhood/global solution unresolved
 
 [Scientific report](photo2/BEAD_DRIVEN_R258.md) ·

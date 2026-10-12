@@ -1,3 +1,16 @@
+# R259 — simplified detection is now the default
+
+Run `.venv/bin/python -m photo2.bead_detection.server` and open
+http://localhost:8767. The former launch command below now opens the same simple
+viewer. [Controls, complete automatic regions and tests](../bead_detection/README.md).
+
+To access the preserved R256–R258 debugger described below, explicitly add
+`--legacy`: `.venv/bin/python -m photo2.bead_debugger.server --legacy`.
+Historical models, observations, reviews and exports remain unchanged. New detection
+does not read or modify them. Restart an older running server to see the new UI.
+
+---
+
 # R258 — bead-driven fits and marked regions
 
 [Scientific report](../BEAD_DRIVEN_R258.md) · [Numerical/evidence index](../review/r258/README.md).

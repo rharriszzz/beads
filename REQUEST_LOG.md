@@ -6682,3 +6682,69 @@ Stop after scoped commit/push and exact remote/clean verification. Recommend
 GPT-6 Astra/High; no new active-model status supplied. `/new` before substantial
 further inference, unnecessary for debugger review. Local-only Sites skill and
 OpenAI Docs used; no subagents, hosting or messages to other accounts.
+
+
+## R259 — automatic photographic detection and simplified viewer (2026-10-12)
+
+User requests full-photograph detection exclusively: HSV Value maxima, bright-patch
+centroids, outward decreasing-brightness growth with noise-tolerant valley retreat,
+reflection-supported black regions, closed cyan contours, unique region IDs, native
+pixel counts/areas/centroids/HSV statistics and confidence/ambiguity. Detector must
+be independent of all historical labels, centerlines, splines, adjacencies and
+simulated positions. No geometry fitting, indexing or pattern recovery this round.
+
+Simplify the interface to photograph/outlines, pan/zoom, region click and ID jump,
+largest/smallest/median/previous/next size browsing, clickable size histogram and
+optional maxima/growth/rejection evidence. Preserve old debugger code and reviews.
+Run the entire photograph, save complete retained/rejected data, histogram and
+rank-size plot, examples, Markdown report and simple launch command. Test, commit
+and push. Do not require prior maker identification; inspect automatic results first.
+
+### R259 clarification — stop black growth at a dark perimeter
+
+User: “you are not required to find the full extent of the black beads, it will
+fail. Instead stop growing the region once the perimiter gets fully black.”
+
+This supersedes this round's initial full-dark-body growth attempt. Final black
+regions are a reflection plus the first complete dark pixel perimeter. Their
+centroids and areas are support measurements, not full black-body extents or
+physical centers. Implemented a connected reflection growth followed by one dark
+pixel shell, and validate the complete saved perimeter after overlap competition.
+Intermediate body-growth results are superseded by the final v2 artifact.
+
+### R259 outcome — complete automatic run and simplified local viewer
+
+Preflight: daisy, photo-2-strategy-v3, clean/no stashes, fetched and0/0 divergence
+from origin. Read handoff/current plan/recent requests and relevant R258/debugger
+records. Compared four implementation families; selected brightness-seeded radial
+colored growth and, after maker clarification, first-dark-perimeter black support.
+
+Final v2:1,498 maxima,4 shallow-saddle merges,1,494 candidate groups;1,040 retained
+(917 bright-interior,123 reflection/dark-perimeter),454 rejected. Native pixels
+37/579.5/1,501 min/median/max,538,160 disjoint pixels. Full JSON/label masks/contours,
+bright-patch centroids and pixel runs, HSV/circular hue/confidence/reasons, histogram,
+rank-size CSV/plot and raw/outlined examples saved. Runtime detection reads only
+original RGB; no historical geometry/labels/adjacency/simulated positions. No claim
+of complete physical inventory; missed/rejected/partial/merged regions remain.
+
+New simple viewer has photograph/cyan numbered outlines, pan/zoom, ID/click details,
+size extremes/median/next/previous, clickable histogram, optional maxima/growth/
+rejections and downloads. Labels avoid overlap at whole-photo scale; zoom exposes
+more IDs. No model/index/neighbor/lighting/pattern UI. Direct launch is
+`.venv/bin/python -m photo2.bead_detection.server`; old debugger launch routes to
+it by default;`--legacy` preserves the old app. Production reviews are untouched.
+
+Validation:6 detector tests,all full-photo masks/centroids/nonoverlap/closed contours,
+all123 final black perimeters,isolated standalone-code/photo replay with byte-equal
+JSON and label arrays,28 Chromium checks and legacy JS contracts passed. Legacy
+Python suite28/29: the immutable-input snapshot expects an older hash for the local
+review latest.json,whose timestamp predates this round. Preserved the user's review
+instead of overwriting it to satisfy the stale fixture. Report includes this limit.
+
+Report/reproduction/curated outputs,plan/handoff/method index updated. Sites local
+workflow only;OpenAI Docs only for model recommendation;no subagents,hosting or
+external messages. No visual identification requested as a prerequisite. Stop after
+scoped commit/push and exact remote/clean verification. Next:review automatic region
+size outliers and missed/rejected reflections,then bounded detection refinement.
+Recommend GPT-6 Astra/High;recommendation only,no new active-model status supplied.
+No `/new` needed for inspection;use `/new` before another substantial coding round.

@@ -126,6 +126,12 @@ def make_server(app,host='127.0.0.1',port=8767):
     return ThreadingHTTPServer((host,port),Handler)
 
 def main():
+    # R259: the familiar launch command now opens only photographic detection.
+    # Keep the complete historical application available explicitly, unchanged.
+    if '--legacy' not in sys.argv and '--prepare-only' not in sys.argv:
+        from photo2.bead_detection.server import main as detection_main
+        return detection_main()
+    if '--legacy' in sys.argv:sys.argv.remove('--legacy')
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--port',type=int,default=8767);ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/debugger');ap.add_argument('--regenerate',action='store_true');ap.add_argument('--prepare-only',action='store_true')
     a=ap.parse_args();app=App(a.work,a.regenerate)
     for mid in models.legacy_models.IDS:app.model(mid) # New fits load lazily; reviews untouched.
