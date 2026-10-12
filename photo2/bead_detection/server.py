@@ -6,7 +6,7 @@ import json
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
-from .bounded_detect import ROOT, generate, sha
+from .repaired_detect import ROOT, generate, sha
 
 STATIC=Path(__file__).parent/'static'
 
@@ -17,7 +17,7 @@ def prepare(work, image, regenerate=False):
     generator=generate;parameters=None
     if not stale:
         data=json.loads(path.read_text())
-        detector=Path(__file__).parent/'bounded_detect.py'
+        detector=Path(__file__).parent/'repaired_detect.py'
         if data.get('version','').startswith('r263-tunable'):
             from .tunable_detect import generate as tuned_generate, Parameters
             detector=Path(__file__).parent/'tunable_detect.py'
@@ -30,8 +30,17 @@ def prepare(work, image, regenerate=False):
             from .pixel_detect import generate as pixel_generate, Parameters
             detector=Path(__file__).parent/'pixel_detect.py'
             generator=pixel_generate;parameters=Parameters(**data['parameters'])
+        elif data.get('version')=='r265-straight-native-v1':
+            from .straight_detect_r265 import Parameters, generate as straight_generate
+            detector=Path(__file__).parent/'straight_detect_r265.py'
+            generator=straight_generate;parameters=Parameters(**data['parameters'])
+        elif data.get('version','').startswith('r265-'):
+            from .repaired_detect import Parameters
+            parameters=Parameters(**data['parameters'])
         elif data.get('version','').startswith('r263-bounded'):
-            from .bounded_detect import Parameters
+            from .bounded_detect import Parameters, generate as bounded_generate
+            detector=Path(__file__).parent/'bounded_detect.py'
+            generator=bounded_generate
             parameters=Parameters(**data['parameters'])
         else:
             raise ValueError('Unknown detector version; use its archived viewer instead of regenerating it here')
@@ -99,7 +108,7 @@ def make_server(work, host='127.0.0.1', port=8767):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--port',type=int,default=8767)
-    ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/detection-r263-bounded')
+    ap.add_argument('--work',type=Path,default=ROOT/'photo2/output/r265-first-dark/joint')
     ap.add_argument('--image',type=Path,default=ROOT/'beads-photo-2.jpg')
     ap.add_argument('--regenerate',action='store_true')
     args=ap.parse_args();prepare(args.work,args.image,args.regenerate)

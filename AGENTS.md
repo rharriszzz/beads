@@ -5,7 +5,21 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
-R264 hue comparison is delivered: see photo2/HUE_COMPARISON_R264.md.
+R265 supersedes the R264 next-step/default instructions below. Read
+photo2/DETECTION_REPAIR_R265.md and photo2/FIRST_DARK_R265.md. User requires
+straight native seed-to-pixel paths and stopping at black without seeking the
+next bright region. Black-bead shading progresses through gray; not HSV zero.
+Use repaired_detect: local connected retreat, learned HSV seed gate,870 cap,
+strict descent,hue10°. Neutral-black means V≤min(81 DN,.5×seed peak) with low
+saturation/channel spread; preserve dim gray reflection seeds. Trace full straight
+histories and gray fractions; do not classify every dim colored pixel as black.
+The v1 comparison remains in straight_detect_r265 and review/r265; final added
+step is review/r265-first-dark.64 tests pass. Residual paper contamination,
+M1–M5 misses and12 reviewed duplicate pairs remain; no whole-photo success claim.
+Next review those residual seed/identity failures; do not launch another phase
+without the user's instruction. Final viewer work is output/r265-first-dark/joint.
+
+Historical R264: R264 hue comparison is delivered: see photo2/HUE_COMPARISON_R264.md.
 Recommend saved8° provisionally; preserve10°/12° alternatives and the unchanged10°
 detector baseline. Six main review crops show12 apparent duplicate extras and
 4 stronger +1 tentative misses at5°/8°; >=10° loses one additional red location.

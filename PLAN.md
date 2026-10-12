@@ -1,5 +1,38 @@
 # Photo-2 reconstruction plan
 
+## Current R265 — straight growth, local retreat, first neutral-black stop
+
+[Repair/ablations](photo2/DETECTION_REPAIR_R265.md) ·
+[additional black/gray step](photo2/FIRST_DARK_R265.md) ·
+[evidence](photo2/review/r265/README.md).
+User explicitly requires straight paths and stopping at black without searching
+for a subsequent bright region. Their supplied observation is that black-bead
+shading progresses through gray; black need not equal HSV zero.
+
+Final `repaired_detect` uses fixed integer straight seed-to-pixel histories,
+independent brightness/color history, native valley/corner stops, local darkness
+retreat and connected support, conservative learned HSV seed rejection and the
+870-pixel pre-retreat cap. Hue10°, prominence35, strict descent unchanged.
+Neutral-black stop uses V≤min(81 DN, .5×seed peak), S≤.25 or channel spread≤12 DN.
+A dim gray reflection remains eligible: the draft absolute81 seed rejection lost
+visible P050477 and was corrected. Gray-path fractions are evidence, not material
+labels. Frozen `straight_detect_r265` preserves the first comparison; old bounded
+and R264 results remain unchanged. Default viewer work: `photo2/output/r265-first-dark/joint`.
+
+64 Python tests pass; native audits, synthetic truth, full ablations, controlled
+deadline/checkpoint termination and straight-path browser checks are saved. The
+v1 joint comparison reduces hole pixels26744→249 but all12 reviewed duplicate
+pairs and M1–M5 misses persist; M6 regains a nearby support. The paper window
+regresses1→7 pixels. Its clipped-red seeds differ from the learned paper H/V,
+explaining the conservative background gate's failure. No one-coordinate-per-bead,
+whole-photo accuracy, physical-center, geometry, indexing or pattern claim.
+
+Stop after scoped commit/push and exact remote/clean verification. Next bounded
+task: review residual paper-edge seeds, missing-seed evidence and same-body peak
+association before selecting a new implementation. Keep current model/reasoning;
+no `/new` for artifact review, use `/new` before a substantial algorithm phase.
+
+
 ## Current R264 — six fixed hue settings reviewed
 
 [Report](photo2/HUE_COMPARISON_R264.md) · [evidence](photo2/review/r264/README.md) ·

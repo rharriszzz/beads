@@ -7149,3 +7149,92 @@ remote-tip and clean-status verification. Next proposed bounded task: explicit
 retreat repairs assessed for coordinate stability; seed/duplicate association stays
 separate. Recommend GPT-6 Astra/High without inferring active status. No/new for
 review; use/new before another substantial algorithm experiment.
+
+## R265 — repair and automated verification requested (2026-10-12)
+
+User requests removal of the region-wide brightness ceiling, independent native
+8-neighbor path histories, prevention of dark-valley circumvention without
+watershed/ownership partition, local connected retreat that preserves bright
+leaves, and conservative learned HSV background rejection before growth. Preserve
+the870-native-pixel ceiling and simplified viewer. Build a reproducible synthetic,
+randomized and photographic harness: fast invariants first, named R00956/R01284/
+R01307 and automatically selected R264 failures next, full photo only after basic
+checks pass. Separate/joint ablations, coordinates, holes, contamination, duplicates
+and photographic missing-evidence diagnostics are required. Evaluation annotations
+must never become runtime priors. Approximately30-minute configurable hard compute
+deadline with checkpoints and clean termination; ordinary Python runs, not repeated
+model consultation. Preserve earlier results, report failures/uncertainties and
+native before/after images, update viewer if needed, commit and push. Reliable
+one-coordinate-per-visible-bead remains the objective, not count matching.
+
+Checked daisy, photo-2-strategy-v3, upstream origin/photo-2-strategy-v3, clean worktree
+and no stashes. Explicit fetch reports0 ahead/0 behind. Read current AGENTS/plan/
+handoff/R264 report and latest log. No subagents. Methods considered: path-local
+descent, native local valley fences, local raw-darkness connected retreat and
+conservative margin-learned HSV seed gating. Preserve bounded_detect as the old
+implementation; use repaired_detect for the corrected implementation and ablations.
+
+R265 steering: user asks “\"wind around\"? please only go in straight paths.”
+This supersedes the intermediate shortest-graph-path idea and the older no-rays
+restriction where it conflicts. Final growth checks each straight seed-to-target
+segment using integer Bresenham native-pixel samples, without interpolated image
+values or angular smoothing. Every sampled prefix must already be supported;
+brightness/color/dark stops along that fixed segment block the endpoint. Separate
+complete straight histories are saved. The eight-neighbor acceptance predecessor
+records connectivity, not a claim that the shared predecessor tree is itself a
+straight line. No obstacle-dependent path search remains in corrected growth.
+
+## R265 — additional first-black stop step requested
+
+During delivery the user requests one more bounded step: stop immediately on black,
+without looking for a subsequent bright region; investigate current problems. They
+clarify that photographic black need not equal pure HSV black and supply the maker
+fact that black-bead shading runs from brighter to darker shades of gray. The added
+step uses that neutral progression as evidence: low saturation or low absolute
+channel spread, with the existing81-DN dark limit. It does not classify every dim
+colored sample as black. Preserve the completed straight-growth/retreat comparison
+as v1; add the first-neutral-dark stop and gray-path diagnostics as v2. Keep the
+original compute deadline for this extra pass. No additional hue sweep, watershed,
+geometry, indexing, manual bead-marking or subagents.
+
+## R265 — completed repair and additional gray/black step
+
+The straight-path/retreat harness completed within the original30-minute window
+(16m57s including development reruns).58 tests, four exact full-photo audits of
+492,360 accepted samples/988,800 stopped edges, old R264 mask/coordinate replay and
+44 Chromium checks passed.24 compact synthetic bodies have0 misses/contamination
+but6 duplicate extras; hole pixels59→0. Full-photo v1 has1556 supports,0 oversized
+proposals,249 enclosed hole pixels (245 stopped/4 retreated,0 unvisited), compared
+with1552 supports/5 oversized/26744 holes before. These are not bead counts.
+All12 reviewed duplicate pairs persist; M1–M5 remain beyond10px, M6 has a support3px
+away.1406 common coordinates move, maximum17px; paper-window contamination1→7.
+The first-black follow-up preserves v1 source/data and is documented separately.
+
+The maker's gray-shading clarification led to a neutral/brightness distinction.
+An initial absolute81-DN neutral seed rejection removed the visible60-DN gray
+reflection P050477; its raw crop exposed that regression. The final stop instead
+uses V≤min(81,.5×seed peak) plus S≤.25 or channel spread≤12 DN, independently of the
+legacy36-DN relative-dark condition. This accepts imperfect/nonzero gray and keeps
+dim chromatic samples distinct. A dark stop does not search for a subsequent bright
+region on the straight path.64 tests pass, including gray hue variation, low-contrast
+black stops, later-bright exclusion and preservation of dim gray reflections.
+
+Residual paper-edge seeds have clipped R=255, hue/saturation/value unlike the narrow
+learned paper H/V intervals; their S largely matches. Conservative HSV gating thus
+preserves them. The additional black stop cannot resolve this colored paper-edge
+problem. Nearby raw maxima at persistent misses still fail prominence35. Neither
+issue is hidden by support counts or synthetic success. Main/follow-up reports,
+curated native images, all final records/traces, parameters and source hashes are
+saved. Sites skill used only for local viewer compatibility/replay; no deployment,
+external messages, subagents, geometry or indexing. Prepare scoped commit/push,
+verify exact remote tip and clean status, then stop; next review residual paper
+seeds/missing seeds/duplicate identities. Retain current model/reasoning choice;
+no/new for review, use/new before another substantial algorithm phase.
+
+Final added-step generation229b8bfda5ad9b3d retains1556 supports/1595 grown.
+107,269 acceptances and226,364 stops pass the full-photo first-neutral-black audit.
+Eight fewer pre-retreat dark samples are accepted than v1; final masks, coordinates
+and retained IDs are unchanged. The dim P050477 reflection survives.64 Python and
+44 final Chromium checks pass; both v1/v2 viewer preparations preserve their saved
+runs without regeneration. The added comparisons and final browser QA finished
+inside the original30-minute computation window. No further experiment follows.

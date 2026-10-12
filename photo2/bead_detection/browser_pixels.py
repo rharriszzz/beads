@@ -57,6 +57,17 @@ def main():
                 check(page.request.get(url+endpoint).status==200,'Serves '+endpoint)
             check(page.request.get(url+'/traces/../../REQUEST_LOG.md').status==404,'Trace endpoint cannot traverse workspace')
             page.set_viewport_size({'width':430,'height':900});page.click('#fit');check(page.locator('#photo').bounding_box()['width']<=430,'Narrow viewport fits')
+            if data['version'].startswith('r265-'):
+                page.fill('#jump',target['id']);page.locator('#jump').press('Enter');page.wait_for_function('regionTest.state.replay!==null')
+                trace=page.evaluate('regionTest.state.replay')
+                page.click('#step');check('Straight path:' in page.inner_text('#pixelInfo'),'Straight native path is explained during replay')
+                from .repaired_detect import straight_pixels
+                seed=tuple(trace['accepted'][0][:2])
+                check(all([trace['accepted'][j][:2] for j in ids]==[list(xy) for xy in straight_pixels(seed,tuple(trace['accepted'][i][:2]))] for i,ids in enumerate(trace['straight_path_indices'])),'Every displayed path is a straight native segment')
+                index=next(i for i,d in enumerate(trace['stop_details']) if d and d.get('blocker'))
+                page.locator('#stopIndex').fill(str(index+1));page.locator('#stopIndex').dispatch_event('change')
+                check('Straight path blocked at' in page.inner_text('#stopInfo'),'Exact straight-path blocker is explained')
+                page.screenshot(path=str(out/'browser-straight.png'))
             check(not errors,'No JavaScript runtime errors');browser.close()
     finally:server.shutdown();server.server_close()
     save(out/'browser-checks.json',dict(checks=checks,count=len(checks)))

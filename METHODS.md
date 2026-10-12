@@ -1787,3 +1787,22 @@ HSV shading routes. Keep same-body identity separate from mask overlap; retain
 alternatives where a hue limit trims an interior. An isolated bright-leaf control
 shows how predecessor-tree retreat can change the chosen discrete coordinate.
 No repaired detector or ownership partition is established by this sensitivity test.
+
+## R265 — straight native growth and automated detector repair
+
+[Report](photo2/DETECTION_REPAIR_R265.md),
+[evidence](photo2/review/r265/README.md),
+[implementation](photo2/bead_detection/repaired_detect.py),
+[harness](photo2/bead_detection/experiment_r265.py).
+Fixed seed-to-target integer straight paths, per-path raw brightness/color history,
+local valley/corner stops, local darkness retreat plus seed connectivity, conservative
+margin-learned HSV seed rejection,870 accepted-pixel ceiling. Synthetic labels and
+R264 photo judgments enter evaluation only. Separate/joint ablations, randomized
+native invariants, deadline/checkpoint/resume, mask-hole reasons, coordinate and
+coverage proxies, native before/after figures. No curved path or ownership partition;
+no claim of one support per bead from count or synthetic success.
+
+R265 additional user-directed step: [first neutral-black stop](photo2/FIRST_DARK_R265.md)
+uses gray evidence and a peak-scaled dark cutoff, preserving dim reflections.
+[first_dark_r265.py](photo2/bead_detection/first_dark_r265.py) provides a bounded
+follow-up, exact audits and residual HSV diagnostics; v1 results remain frozen.
