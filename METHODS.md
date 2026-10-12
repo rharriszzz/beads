@@ -1,5 +1,17 @@
 # Methods collection — bead-rope reconstruction
 
+## R260 coordinate-focused detection review
+
+[Review, sensitivity comparisons and reproduction](photo2/DETECTION_REVIEW_R260.md).
+Value rise.045→.015 globally, conservative less-blurred retry for failed dark
+perimeters, explicit ambiguous bright patches and supported locations distinct
+from centroids. Review actual bead locations; area completeness is not the objective.
+Frozen before/after evidence and source-only replay preserve independence.
+Separate full-photo strict-monotonic Value tests compare native/smoothed signals,
+14%/30% intensity-drop retreat and persistent circular-hue/dark-chroma stopping
+clues. Six saved variants preserve all automatic candidates and per-ray reasons;
+small area is not itself a failed coordinate. Defaults are unchanged by these tests.
+
 ## R259 independent photographic regions and first-dark-perimeter support
 
 [Method, inputs, thresholds, limitations and validation](photo2/AUTOMATIC_DETECTION_R259.md) ·

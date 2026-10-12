@@ -28,7 +28,8 @@ def make_server(work, host='127.0.0.1', port=8767):
             path=urlsplit(self.path).path
             files={'/':STATIC/'index.html','/app.js':STATIC/'app.js','/style.css':STATIC/'style.css',
                    '/regions.json':work/'regions.json','/photo.png':work/'photo.png',
-                   '/size-distribution.png':work/'size-distribution.png','/rank-size.csv':work/'rank-size.csv'}
+                   '/size-distribution.png':work/'size-distribution.png','/rank-size.csv':work/'rank-size.csv',
+                   '/coordinates.csv':work/'coordinates.csv'}
             file=files.get(path)
             if file is None or not file.is_file():self.send_error(404);return
             self.send_response(200)

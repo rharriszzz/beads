@@ -14,6 +14,16 @@ centers distinct. See photo2/STAGE1_PILOT.md for the completed four-section pilo
 Stop for review before global indexing. Make routine technical decisions;
 ask visual questions only when their answers materially affect conclusions.
 
+R260: prioritize good per-bead image coordinates, not pixel-complete masks. Compact
+support is sufficient when its location reliably identifies one bead. Black growth
+stops at the first fully dark perimeter surrounding a reflection, not the full body.
+Keep supported locations, area centroids, bright patches and physical centers distinct.
+The user explicitly authorizes greater stopping sensitivity across the photograph.
+The requested strict-darkening/retreat and relative-hue/dark-clue comparisons are
+saved separately from the default detector; do not conflate their sampled signals
+or interpret possible dark material as a confirmed black bead.
+See photo2/DETECTION_REVIEW_R260.md; review coordinate comparisons and missed/duplicate locations next.
+
 R236: user reports actual session status as GPT-6 Astra, reasoning High and will
 report changes. Do not identify the active model from older recommendations;
 distinguish user-supplied status from recommendations for future work.

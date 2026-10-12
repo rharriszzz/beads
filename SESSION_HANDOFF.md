@@ -1,5 +1,55 @@
 # Beads session handoff — new branch
 
+## Current R260 — reviewed locations and more sensitive growth
+
+[Review report](photo2/DETECTION_REVIEW_R260.md) · [coordinates and evidence](photo2/review/r260/README.md) · [viewer](photo2/bead_detection/README.md).
+
+User asks assistant review, easy fixes, revised documents and push. Subsequent
+steering explicitly requests greater stopping sensitivity across the photograph
+and clarifies the primary goal: good coordinates for each bead, not all its pixels.
+Keep black growth at its first complete dark perimeter; no full-black-body extent.
+
+Reviewed size extremes, geographic samples, rejected reflections, all17 new regions
+and the12 largest centroid shifts. Lowered persistent Value-rise threshold.045→.015
+globally after three-way comparison; several clear neighbor spills shrink and their
+centroids move back onto plausible intended beads. Retry failed dark growth with
+sigma.55 instead of1.15, retaining V≤.32 and contrast≥.14. This adds13 compact dark
+supports; four bright candidates also become retainable. Uncertain tiny highlights
+are now explicitly ambiguous instead of certified-looking colored interiors.
+
+Final generation `219a6fe6c2b98f00`:1,057 retained (751 bright-interior proposals,
+136 closed-dark-perimeter supports,170 ambiguous bright patches),437 rejected.
+All1,040 old retained IDs remain. Median centroid movement.52px,p90 3.00,max12.48;
+these are changes,not measured coordinate errors. No exhaustive inventory claim.
+Every region now includes a supported interior `location`,distinct from its area
+centroid; two centroids otherwise lie in concave gaps. Viewer shows both fields
+and downloads coordinates.csv. Launch remains `.venv/bin/python -m
+photo2.bead_detection.server` → http://localhost:8767; restart existing servers.
+
+Nine detector tests,full-photo mask/centroid/nonoverlap/contour/136-dark-perimeter/
+1,057-supported-location audit,byte-identical isolated replay and29 Chromium checks
+pass. R259 artifacts and historical reviews remain unchanged; prior legacy review
+snapshot mismatch remains documented. No geometry,indexing,pattern work or subagents.
+
+
+Later R260 steering requested a strict-monotonic-darkening test with retreat from
+the darkest region, plus local hue-change and possible-black-material clues.
+Six full-photo comparisons are saved under `photo2/review/r260/strict-*`: native
+and sigma1.15 Value,14%/30% intensity retreat,and30% with hue/dark guards. Equality
+or any rise immediately stops each of64 sampled rays; raster pixels below the
+retreat threshold are removed too. Relative hue drift is circular and reliability
+gated; dark/chroma loss remains a clue,not a material label. No historical hue
+boxes or geometry are used. Twelve additional strict/color tests and all export
+contracts pass. Strict growth removes reviewed extensions,but hue changes also
+occur on-bead and can bias coordinates toward bright rims. These tests remain
+separate from the default viewer; inspect their coordinate comparisons next.
+
+**Next task / stopping point:** review strict/color comparisons and missed/duplicate locations and remaining
+compound-support ambiguities,not pixel-complete outlines. Stop after scoped
+commit/push and exact remote/clean verification. Recommend GPT-6 Astra/High for
+visual ambiguity; no new active-model status supplied. No `/new` needed for viewer
+inspection; use `/new` before another substantial algorithm round.
+
 ## Current R259 — automatic photo regions; detection review only
 
 [Report](photo2/AUTOMATIC_DETECTION_R259.md) · [simple viewer](photo2/bead_detection/README.md) ·

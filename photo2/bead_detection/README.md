@@ -1,4 +1,11 @@
-# Automatic photographic regions — R259
+# Photographic bead locations — R260
+
+The goal is a reliable image location for each sufficiently visible bead, not a
+pixel-complete mask. The current review increases stopping sensitivity globally
+and preserves the previous run in `photo2/review/r259`. Select a region to see both
+its supported **Location** and its exact **Centroid**. Download **Coordinates**
+for the complete location CSV. Neither coordinate is a fitted physical center.
+Small unresolved highlights remain explicitly ambiguous.
 
 From the repository root:
 
@@ -34,7 +41,7 @@ matters when comparing sizes to colored-body proposals.
 Download links provide full JSON (including exact pixel runs, rejected candidates,
 initial bright patches and provenance), histogram/rank plots and size-rank CSV.
 The saved run is under `photo2/output/detection-r259/`; a compressed complete copy
-and example figures are committed under [../review/r259](../review/r259/README.md).
+and example figures are committed under [../review/r260](../review/r260/README.md).
 IDs are stable within this detector/source/parameter run, not historical bead IDs
 or identities guaranteed to persist across algorithm revisions.
 
@@ -49,5 +56,13 @@ PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2
 
 The last command uses the existing optional Playwright/Chromium test installation
 documented by the old debugger. No browser package is needed just to launch the
-viewer. See the [scientific report](../AUTOMATIC_DETECTION_R259.md) for assumptions,
+viewer. See the [scientific report](../DETECTION_REVIEW_R260.md) for assumptions,
 actual results, limitations and the stopping point.
+
+
+A separate [strict-darkening/color comparison](../DETECTION_REVIEW_R260.md#requested-strict-darkening-and-color-clue-comparison)
+tests native and smoothed Value with no tolerated increase, intensity retreat,
+and optional persistent hue/darkness clues. Its six full-photo outputs and coordinate
+CSVs are saved under `photo2/review/r260/strict-*`; the default viewer continues
+to show the reviewed R260 run. Reproduce using `python -m photo2.bead_detection.strict_r260`
+with the same `.venv/bin/python` interpreter.

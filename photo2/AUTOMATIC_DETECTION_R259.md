@@ -1,5 +1,8 @@
 # R259 — automatic regions from the original photograph
 
+Historical R259 result, preserved below. The current coordinate-focused review and
+revised detector are in [R260](DETECTION_REVIEW_R260.md).
+
 The full 2540 × 3182 photograph produces **1,040 retained region proposals** and
 **454 rejected candidates** from **1,498 brightness maxima**. Four shallow-saddle
 peak pairs are grouped. There are 917 bright-interior proposals and 123

@@ -66,6 +66,12 @@ class DetectionTests(unittest.TestCase):
         hsv=np.array([[[.999,1.,.8],[.001,1.,.8]]]);m=measurements(np.ones((1,2),bool),hsv,0,0)
         self.assertLess(min(m['hsv']['hue_circular_mean_deg'],360-m['hsv']['hue_circular_mean_deg']),1)
 
+    def test_location_does_not_fall_into_a_concave_gap(self):
+        mask=np.zeros((15,15),bool);mask[2:13,2:5]=True;mask[2:5,2:13]=True;mask[10:13,2:13]=True
+        r=measurements(mask,np.full((15,15,3),.5),10,20)
+        self.assertFalse(r['centroid_inside_region'])
+        x,y=r['location'];self.assertTrue(mask[y-20,x-10])
+
     def test_uniform_image_and_determinism(self):
         data,labels=detect(np.full((100,100,3),150,np.uint8))
         self.assertFalse(data['regions']);self.assertFalse(labels.any())
@@ -102,6 +108,30 @@ class DetectionTests(unittest.TestCase):
         rim=core&~ndi.binary_erosion(core,structure=np.ones((3,3)))
         x0,y0=origin
         self.assertGreater(v[y0:y0+mask.shape[0],x0:x0+mask.shape[1]][rim].max(),Parameters().dark_value)
+
+    def test_shallow_neighbor_valley_stops_growth_despite_small_noise(self):
+        from dataclasses import replace
+        y,x=np.indices((121,121));radius=np.hypot(x-60,y-60)
+        value=np.interp(radius,[0,10,13,20,30,45],[1,.5,.5,.535,.1,.7])
+        value+=.003*np.sin(radius*3)
+        sensitive=radial_boundary(value,[60,60],Parameters())[-1]
+        previous=radial_boundary(value,[60,60],replace(Parameters(),rise=.045))[-1]
+        self.assertLess(sensitive.mean(),17)
+        self.assertGreater(previous.mean(),20)
+        self.assertGreater(sensitive.min(),7)  # Tiny ripples do not stop immediately.
+
+    def test_less_blur_preserves_narrow_dark_separator(self):
+        from .detect import dark_perimeter_region
+        y,x=np.indices((101,121));raw=np.full(x.shape,.08)
+        raw[(x-40)**2+(y-50)**2<=6**2]=.8
+        raw[(x>=48)&(y>=35)&(y<=65)]=.8
+        coarse=ndi.gaussian_filter(raw,Parameters().blur_sigma)
+        detail=ndi.gaussian_filter(raw,Parameters().dark_detail_sigma)
+        a=dark_perimeter_region(coarse,[40,50],Parameters())
+        b=dark_perimeter_region(detail,[40,50],Parameters())
+        self.assertFalse(a[2]);self.assertTrue(b[2])
+        self.assertLess(b[0].sum(),200)
+        self.assertLessEqual(b[3],Parameters().dark_value)
 
 
 if __name__=='__main__':unittest.main()

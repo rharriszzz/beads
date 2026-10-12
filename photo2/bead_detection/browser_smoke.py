@@ -34,7 +34,7 @@ def main():
             page.click('#previous');check(state()['selected']==ordered[len(ordered)//2]['id'],'Previous larger region')
             r=ordered[len(ordered)//3];page.fill('#jump',str(int(r['id'][1:])));page.locator('#jump').press('Enter')
             check(state()['selected']==r['id'],'Jump by numeric ID')
-            check(str(r['pixel_count']) in page.inner_text('#details') and 'Hue mean' in page.inner_text('#details'),'Details include area and circular HSV statistics')
+            check(str(r['pixel_count']) in page.inner_text('#details') and 'Hue mean' in page.inner_text('#details') and 'Location (x, y)' in page.inner_text('#details') and ', '.join(map(str,r['location'])) in page.inner_text('#details'),'Details include supported location, centroid, area and circular HSV statistics')
             old=state();page.fill('#jump','R99999');page.locator('#jump').press('Enter');check(state()['selected']==old['selected'] and 'not found' in page.inner_text('#message'),'Invalid ID is explained without changing selection')
             rect=page.locator('#photo').bounding_box();pivot={'x':300,'y':350};before=page.evaluate('(p)=>window.regionTest.toSource(p)',pivot)
             page.mouse.move(rect['x']+pivot['x'],rect['y']+pivot['y']);page.mouse.wheel(0,-230);page.wait_for_timeout(100)
@@ -54,7 +54,7 @@ def main():
             page.click('#clear');check(len(state()['visible'])==len(ordered),'Clear histogram filter restores all regions')
             page.locator('#histogram rect').nth(2).focus();page.keyboard.press('Enter');check(state()['filter'] is not None,'Histogram bins support keyboard inspection')
             page.click('#clear');rejected=data['rejected'][0];page.fill('#jump',rejected['id']);page.locator('#jump').press('Enter');check(state()['selected']==rejected['id'] and 'rejected' in page.inner_text('#details'),'Rejected candidate ID can be inspected')
-            for endpoint in ['/regions.json','/photo.png','/rank-size.csv','/size-distribution.png']:check(page.request.get(url+endpoint).status==200,'Serves '+endpoint)
+            for endpoint in ['/regions.json','/photo.png','/rank-size.csv','/size-distribution.png','/coordinates.csv']:check(page.request.get(url+endpoint).status==200,'Serves '+endpoint)
             check(page.request.get(url+'/../REQUEST_LOG.md').status==404,'Server exposes only viewer artifacts')
             # Verify browser decoding matches source; no implicit ICC transform.
             expected=list(Image.open(work/'photo.png').getpixel((100,100)))

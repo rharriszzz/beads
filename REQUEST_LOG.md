@@ -6748,3 +6748,116 @@ scoped commit/push and exact remote/clean verification. Next:review automatic re
 size outliers and missed/rejected reflections,then bounded detection refinement.
 Recommend GPT-6 Astra/High;recommendation only,no new active-model status supplied.
 No `/new` needed for inspection;use `/new` before another substantial coding round.
+
+
+## R260 — assistant review, straightforward fixes and delivery
+
+User: “please do the review of these results. If you find problems which you can
+solve easily, please do it. then revise documents, push etc. thanks”
+
+Preflight confirmed daisy/photo-2-strategy-v3,clean worktree,no stashes and0/0
+upstream divergence after fetch. Read current plan/handoff/request entries and
+R259 report/code/frozen output. No new model/reasoning status supplied.
+
+### R260 steering — sensitivity and coordinates
+
+User asks: “if it spills into a neighbor, does that mean your monotonically
+increasing darkness testing is too insensitive?” Explained the sustained-rise
+threshold,radial smoothing and angular-filter expansion separately. Compared
+rise thresholds.045/.025/.015 on six problematic raw crops and ablated angular
+smoothing diagnostically. User then instructs: “increase the sensitivity in those
+cases, and maybe in cases where it isn't required.” Applied.015 globally with
+noise tolerance retained; no selected photo coordinates enter runtime detection.
+
+User: “the goal is to get good coordinates for each bead, not to include all the
+pixels beonging to each bead.” This supersedes any full-area optimization objective.
+Judge compact support by whether its coordinate identifies the intended bead;
+neighbor spill matters because it can bias that coordinate. Keep black support
+limited to the first fully dark perimeter,not the entire black bead.
+
+### R260 actual outcome
+
+Reviewed12 largest,12 smallest,15 geographic samples and12 contrasted rejected
+reflections; then all17 additions and12 largest centroid shifts (overlapping samples,
+assistant visual assessments,not maker annotations or a precision/recall audit).
+Sensitivity reduces several clear neighbor spills. Some smaller regions stop on
+internal shading but still locate the intended bead; no coverage-only expansion.
+
+Dark growth retries a failed sigma1.15 result at sigma.55 while keeping V≤.32 and
+contrast≥.14. Adds13 compact dark supports,without dropping any previous retained
+black candidate. Small weakly chromatic highlights explicitly become ambiguous
+patches,not claimed colored interiors. Added an interior representative location
+nearest the centroid; guarantees support membership,not physical bead correctness.
+Two concave-mask centroids lie outside their supports; saved separately unchanged.
+Viewer exposes both fields and downloads the full coordinates.csv.
+
+Final generation219a6fe6c2b98f00:1,057 retained (751 bright-interior proposals,
+136 dark-perimeter supports,170 ambiguous patches),437 rejected. All1,040 old
+retained IDs preserved;17 additions. Common centroid movement median.52px,p90 3.00,
+max12.48,not accuracy estimates. Full data and raw/before/after evidence are tracked
+under r260; frozen r259 and historical production reviews are unchanged.
+
+Nine Python detector tests pass,new shallow-valley/noise,narrow-dark-gap and
+concave-location regressions included. Full-photo contracts and all136 dark
+perimeters/1,057 supported locations pass; isolated code/photo replay is byte-identical.
+29 actual Chromium checks pass. Prior legacy review-snapshot mismatch is left
+untouched. No geometry fitting,indexing,pattern work,hosting or subagents.
+
+Documents and agent guidance now prioritize coordinates. Stop after commit/push
+and remote-tip/clean verification. Next:missed/duplicate locations and remaining
+compound supports. Recommend GPT-6 Astra/High for visual ambiguity,not a supplied
+active-model change. No `/new` needed for inspection;use `/new` before a substantial
+algorithm round. Existing local Sites workflow; retained official model guidance.
+
+
+### R260 later steering — strict darkness, retreat and color clues
+
+User: “I also want a test where you strictly adhere to requiring strict motone
+increasing darkness, followed by retreating enough to exclude the darkest regions,
+which can sometimes be on ther bead.”
+
+User: “Also, while you head towards increasing darkness, try to be aware of changes
+in hue, and clues about whether you are now over black. changes from reddish to
+yellowish or the other way.”
+
+Implemented separate full-photo comparison tests, not a silent default replacement.
+All1,494 automatic candidate groups are tested: native/sigma1.15 Value,14%/30%
+intensity-drop retreat,and30% with hue/dark stopping. Every next ray sample must
+be strictly darker; equality or any rise stops,without skipped fluctuations,
+minimum radius or angular smoothing. Every retained raster pixel except the
+seed-only fallback must exceed its interpolated retreat threshold. Save masks,
+contours,coordinates,HSV,stop/retreat radii and all hue/dark event evidence.
+
+Considered abrupt hue jumps,accumulated hue drift,and darkness/chroma loss. Chose
+two-sample persistent relative circular hue drift (>=20 degrees,only reliable
+chromatic samples) and a separate dark/drop/chroma-loss clue. Both shorten strict
+growth and retreat before the transition. No absolute red/yellow boxes or old
+white-balanced profiles are used; read their known overlap limitations first.
+Low-chroma hue is ignored. Possible black material remains ambiguous with shadow,
+gap and dark colored-bead shading; no full black extent is claimed.
+
+Twelve strict/color tests pass,including both hue directions,palette rotation,
+wraparound,achromatic pixels and off-ray retreat exclusion. Six full-photo runs
+assert573,696 ray contracts; independent export audits check8,964 masks and enforce
+that hue/dark guards never enlarge the unguarded mask. This caught degenerate
+polygon-fill behavior in two native candidates with zero-length rays. A shared
+raster origin alone did not fix it; pointwise angular interpolation of radial
+limits does,with a randomized nesting regression and full-photo subset audit.
+
+Reviewed eight raw/current/strict examples plus four largest hue-guard coordinate
+shifts and four dark-clue shifts. Strict growth removes selected neighbor tails;
+native runs often remain near a highlight. Hue/dark guards can also respond to
+on-bead shading and move toward a bright rim. Compactness alone is not failure,
+but no reference-coordinate accuracy gain is claimed. Default remains the reviewed
+R260 detector; strict/color results and coordinate CSVs are committed separately.
+Next inspect these coordinate comparisons and missing/duplicate locations. No
+geometry,indexing,pattern recovery,subagents or additional user labeling required.
+
+
+Final strict/color export audit passes after the radial-raster correction: all six
+variants,8,964 candidate masks and573,696 sampled-ray contracts. Combined Python
+suite21/21 passes. Among the1,057 current retained IDs,native30 has median46px and
+63 seed-only supports;smoothed30 has median226px and no seed-only supports;the
+smoothed hue/dark variant has median171px and no seed-only supports. Median
+coordinate changes from default are5.00,2.00,and2.24px respectively,not accuracy
+errors. Default generation219a6fe6c2b98f00 and29 passing browser checks are unchanged.

@@ -17,17 +17,20 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--isolation',action='store_true');args=ap.parse_args()
     work=ROOT/'photo2/output/detection-r259';data=json.loads((work/'regions.json').read_text())
     labels=np.load(work/'labels.npz')['labels'];occupied=np.zeros(labels.shape,bool)
-    value=ndi.gaussian_filter(np.asarray(Image.open(work/'photo.png')).max(axis=2).astype(np.float32)/255,data['parameters']['blur_sigma'])
+    raw_value=np.asarray(Image.open(work/'photo.png')).max(axis=2).astype(np.float32)/255
+    signals={sigma:ndi.gaussian_filter(raw_value,sigma) for sigma in [data['parameters']['blur_sigma'],data['parameters']['dark_detail_sigma']]}
     checks=[];black=0
     for r in data['regions']:
         x0,y0,x1,y1=r['bbox'];mask=np.zeros((y1-y0,x1-x0),bool)
         for y,a,b in r['pixel_runs']:mask[y-y0,a-x0:b-x0+1]=True
         assert mask.sum()==r['pixel_count']==r['area_px2']
         yy,xx=np.where(mask);np.testing.assert_allclose([xx.mean()+x0,yy.mean()+y0],r['centroid'])
+        lx,ly=r['location'];assert mask[ly-y0,lx-x0]
         assert not (occupied[y0:y1,x0:x1]&mask).any()
         occupied[y0:y1,x0:x1]|=mask
         assert all(c[0]==c[-1] for c in r['contours'])
         if r['kind']=='reflection-on-dark':
+            value=signals[r['evidence']['dark_blur_sigma']]
             rim=mask&~ndi.binary_erosion(mask,structure=np.ones((3,3)))
             assert np.all(value[y0:y1,x0:x1][rim]<=data['parameters']['dark_value'])
             assert r['extent']=='reflection-and-dark-perimeter'
@@ -38,7 +41,7 @@ def main():
     assert len({i for r in rows for i in r['maxima_ids']})==len(data['maxima'])
     checks.extend(['all-native-pixel-counts-and-centroids','exclusive-masks-match-label-raster',
                    'all-contours-closed','all-retained-dark-perimeters-fully-below-threshold',
-                   'unique-region-ids-and-complete-maxima-accounting'])
+                   'unique-region-ids-and-complete-maxima-accounting','all-representative-locations-inside-own-support'])
     if args.isolation:
         with tempfile.TemporaryDirectory(prefix='r259-isolation-') as temp:
             root=Path(temp);code=root/'package'/'detector';code.mkdir(parents=True)

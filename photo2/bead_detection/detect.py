@@ -23,7 +23,7 @@ from skimage.morphology import h_maxima
 from skimage.draw import polygon
 
 ROOT = Path(__file__).resolve().parents[2]
-VERSION = 'r259-dark-perimeter-v2'
+VERSION = 'r260-dark-detail-v3'
 
 
 @dataclass(frozen=True)
@@ -34,13 +34,14 @@ class Parameters:
     rays: int = 64
     max_radius: int = 42
     min_radius: int = 3
-    rise: float = .045
+    rise: float = .015
     retreat: float = .14
     min_pixels: int = 18
     border_fraction: float = .035
     merge_saddle_drop: float = .085
     dark_value: float = .32
     reflection_contrast: float = .14
+    dark_detail_sigma: float = .55
 
 
 def sha(path):
@@ -70,12 +71,20 @@ def contours(mask, x0=0, y0=0):
 
 def measurements(mask, hsv, x0, y0):
     yy, xx = np.where(mask)
+    cx,cy=float(xx.mean()),float(yy.mean())
+    distance=ndi.distance_transform_edt(np.pad(mask,1))[1:-1,1:-1]
+    interior=distance>=min(2.,float(distance.max()))
+    iy,ix=np.where(interior)
+    nearest=int(np.argmin((ix-cx)**2+(iy-cy)**2))
+    location=[int(ix[nearest]+x0),int(iy[nearest]+y0)]
+    centroid_inside=bool(mask[int(round(cy)),int(round(cx))])
     vals = hsv[mask]
     angles = vals[:, 0]*2*np.pi
     # Saturation weighting avoids arbitrary achromatic hue dominating the mean.
     z = np.sum(vals[:, 1]*np.exp(1j*angles))/max(float(vals[:, 1].sum()), 1e-12)
     resultant = float(np.clip(abs(z), 0, 1))
-    return dict(centroid=[float(xx.mean()+x0), float(yy.mean()+y0)],
+    return dict(centroid=[cx+x0, cy+y0],location=location,
+                location_method='interior-pixel-nearest-region-centroid',centroid_inside_region=centroid_inside,
                 pixel_count=int(len(xx)), area_px2=int(len(xx)),
                 bbox=[int(xx.min()+x0), int(yy.min()+y0), int(xx.max()+x0+1), int(yy.max()+y0+1)],
                 hsv=dict(hue_circular_mean_deg=float(np.angle(z) % (2*np.pi)*180/np.pi) if resultant > 1e-6 else None,
@@ -158,6 +167,7 @@ def dark_perimeter_region(value, center, p):
 def detect(rgb, p=Parameters()):
     hsv = rgb_to_hsv(rgb.astype(np.float32)/255)
     v = ndi.gaussian_filter(hsv[:,:,2], p.blur_sigma)
+    dark_detail = ndi.gaussian_filter(hsv[:,:,2], p.dark_detail_sigma)
     height, width = v.shape
     # Generic framed-paper prior; learned chromaticity, no fixed palette or ROI.
     m = max(1, round(min(height, width)*p.border_fraction))
@@ -184,6 +194,7 @@ def detect(rgb, p=Parameters()):
         centroid = [float(sx.mean()+left), float(sy.mean()+lo)]
         maxima.append(dict(id=f'M{i:05d}', peak=[x,y], patch_centroid=centroid,
                            patch_pixel_count=int(patch.sum()), patch_runs=runs(patch,left,lo),
+                           patch_saturation_mean=float(hsv[lo:hi,left:right,1][patch].mean()),
                            value=float(v[y,x])))
     # Merge only close, shallow-saddle peaks of compatible chromaticity. Deep
     # inter-body valleys remain split. Save membership and merge evidence.
@@ -216,8 +227,17 @@ def detect(rgb, p=Parameters()):
         seed_ring=ndi.map_coordinates(v,[center[1]+np.sin(angles)*8,center[0]+np.cos(angles)*8],order=1,mode='nearest')
         dark = float(np.median(seed_ring)) < p.dark_value
         dark_closed=False;perimeter_max=None;perimeter_fraction=None
+        dark_signal=v;dark_sigma=p.blur_sigma
         if dark:
             mask,(x0,y0),dark_closed,perimeter_max,perimeter_fraction=dark_perimeter_region(v,center,p)
+            # Heavy smoothing can bridge a narrow real dark gap to a neighbor.
+            # Retain the established result when closed; only retry failures on
+            # a less blurred signal, with the SAME darkness/contrast contracts.
+            if not dark_closed:
+                detail_mask,detail_origin,detail_closed,detail_max,detail_fraction=dark_perimeter_region(dark_detail,center,p)
+                if detail_closed:
+                    mask,(x0,y0),dark_closed,perimeter_max,perimeter_fraction=detail_mask,detail_origin,detail_closed,detail_max,detail_fraction
+                    dark_signal=dark_detail;dark_sigma=p.dark_detail_sigma
             y1,x1=y0+mask.shape[0],x0+mask.shape[1]
             dark_contours=contours(mask,x0,y0)
             edge=np.array(max(dark_contours,key=len))
@@ -225,7 +245,7 @@ def detect(rgb, p=Parameters()):
             closure=float(dark_closed)
             radii=np.linalg.norm(edge-center,axis=1)
             rim=mask&~ndi.binary_erosion(mask,structure=np.ones((3,3)))
-            dark_ring=v[y0:y1,x0:x1][rim]
+            dark_ring=dark_signal[y0:y1,x0:x1][rim]
         else:
             edge, outer, closure, profiles, radii = radial_boundary(v, center, p, paper_like)
             x0,y0 = np.maximum(np.floor(edge.min(axis=0)).astype(int)-2, 0)
@@ -240,6 +260,7 @@ def detect(rgb, p=Parameters()):
         paper_fraction = float(paper_like[y0:y1,x0:x1][mask].mean())
         dark_support = float(np.mean(dark_ring < p.dark_value))
         contrast = float(maxima[main]['value']-np.median(dark_ring))
+        if dark:contrast=float(dark_signal[center[1],center[0]]-np.median(dark_ring))
         kind = 'reflection-on-dark' if dark else 'bright-interior'
         reasons = []
         if mask.sum() < p.min_pixels: reasons.append('too-small')
@@ -266,7 +287,8 @@ def detect(rgb, p=Parameters()):
                               growth_boundary=outer.round(2).tolist(), proposed_boundary=edge.round(2).tolist(),
                               _mask=mask, _origin=(int(x0),int(y0))))
         proposals[-1]['evidence'].update(dark_perimeter_max_value=perimeter_max,
-                                        dark_perimeter_fraction=perimeter_fraction)
+                                        dark_perimeter_fraction=perimeter_fraction,
+                                        dark_blur_sigma=dark_sigma if dark else None)
     # Candidate confidence then distance to its bright seed arbitrate overlaps.
     # Keep rejected candidates separately; they never take accepted pixels.
     labels = np.zeros(v.shape,np.int32)
@@ -302,13 +324,21 @@ def detect(rgb, p=Parameters()):
                 labels[y0:y0+hh,x0:x0+ww][(labels[y0:y0+hh,x0:x0+ww] == i)&~final] = 0
                 mask = final
                 if r['kind']=='reflection-on-dark':
+                    dark_signal=dark_detail if r['evidence']['dark_blur_sigma']==p.dark_detail_sigma else v
                     rim=mask&~ndi.binary_erosion(mask,structure=np.ones((3,3)))
-                    r['evidence']['dark_perimeter_max_value']=float(v[y0:y0+hh,x0:x0+ww][rim].max())
-                    r['evidence']['dark_perimeter_fraction']=float(np.mean(v[y0:y0+hh,x0:x0+ww][rim]<=p.dark_value))
+                    r['evidence']['dark_perimeter_max_value']=float(dark_signal[y0:y0+hh,x0:x0+ww][rim].max())
+                    r['evidence']['dark_perimeter_fraction']=float(np.mean(dark_signal[y0:y0+hh,x0:x0+ww][rim]<=p.dark_value))
                     if r['evidence']['dark_perimeter_fraction']<1:
                         r['rejected_reasons'].append('dark-perimeter-broken-by-competition')
                         labels[labels==i]=0
         r.update(measurements(mask,hsv[y0:y0+hh,x0:x0+ww],x0,y0))
+        peak_ids=set(r['maxima_ids'])
+        peak_saturation=min(m['patch_saturation_mean'] for m in maxima if m['id'] in peak_ids)
+        if r['kind']=='bright-interior' and r['pixel_count']<np.pi*8**2 and peak_saturation<.6:
+            r['kind']='bright-patch-ambiguous'
+            r['extent']='bright-patch-only-unresolved-material'
+            r['ambiguity'].append('reflection-versus-colored-interior-unresolved')
+            r['confidence']=min(r['confidence'],.5)
         r['contours'] = contours(mask,x0,y0)
         r['pixel_runs'] = runs(mask,x0,y0)
         r['status'] = 'rejected' if r['rejected_reasons'] else 'retained'
@@ -370,11 +400,13 @@ def generate(image_path, output, p=Parameters()):
     hist,edges=np.histogram(sizes,bins=30)
     summary=dict(generation_id=data['generation_id'],image_sha256=data['image_sha256'],detector_sha256=data['detector_sha256'],
                  maxima=len(data['maxima']),merged_peak_pairs=len(data['merge_edges']),retained=len(sizes),rejected=len(data['rejected']),
-                 kinds={k:sum(r['kind']==k for r in data['regions']) for k in ['bright-interior','reflection-on-dark']},
+                 kinds={k:sum(r['kind']==k for r in data['regions']) for k in ['bright-interior','reflection-on-dark','bright-patch-ambiguous']},
                  pixel_count=dict(min=int(sizes.min()),median=float(np.median(sizes)),max=int(sizes.max()),total=int(sizes.sum())) if len(sizes) else None,
                  histogram=dict(counts=hist.tolist(),edges=edges.tolist()),parameters=asdict(p))
     save(output/'summary.json',summary)
     (output/'rank-size.csv').write_text('rank,region_id,pixel_count\n'+''.join(f'{i},{r["id"]},{r["pixel_count"]}\n' for i,r in enumerate(sorted(data['regions'],key=lambda r:-r['pixel_count']),1)))
+    (output/'coordinates.csv').write_text('region_id,x,y,centroid_x,centroid_y,pixel_count,kind,confidence\n'+''.join(
+        f'{r["id"]},{r["location"][0]},{r["location"][1]},{r["centroid"][0]:.6f},{r["centroid"][1]:.6f},{r["pixel_count"]},{r["kind"]},{r["confidence"]:.6f}\n' for r in data['regions']))
     print(json.dumps(summary,indent=2),flush=True)
     return data
 

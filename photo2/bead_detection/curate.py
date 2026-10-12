@@ -1,5 +1,6 @@
 """Copy the complete frozen run and compact review evidence into tracked files."""
 import gzip
+import argparse
 import json
 import shutil
 from pathlib import Path
@@ -7,8 +8,9 @@ from .detect import ROOT,sha
 
 
 def main():
-    source=ROOT/'photo2/output/detection-r259';out=ROOT/'photo2/review/r259';out.mkdir(exist_ok=True)
-    for name in ['summary.json','validation.json','labels.npz','rank-size.csv','size-distribution.png',
+    ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,default=ROOT/'photo2/review/r260');args=ap.parse_args()
+    source=ROOT/'photo2/output/detection-r259';out=args.output;out.mkdir(exist_ok=True)
+    for name in ['summary.json','validation.json','labels.npz','rank-size.csv','coordinates.csv','size-distribution.png',
                  'whole-regions.jpg','example-1.png','example-2.png','example-3.png']:
         shutil.copy2(source/name,out/name)
     (out/'regions.json.gz').write_bytes(gzip.compress((source/'regions.json').read_bytes(),mtime=0))
