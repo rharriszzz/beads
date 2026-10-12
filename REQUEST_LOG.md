@@ -6861,3 +6861,99 @@ suite21/21 passes. Among the1,057 current retained IDs,native30 has median46px a
 smoothed hue/dark variant has median171px and no seed-only supports. Median
 coordinate changes from default are5.00,2.00,and2.24px respectively,not accuracy
 errors. Default generation219a6fe6c2b98f00 and29 passing browser checks are unchanged.
+
+## R261 — replace the bead detector (2026-10-12)
+
+User requests continuing `rharriszzz/beads`, branch `photo-2-strategy-v3`, replacing
+the R259/R260 radial algorithm rather than tuning its thresholds. Required:
+native resolution without skipped pixels/interpolation/angular detection smoothing;
+every meaningful maximum preserved; connected bright patch and centroid; one
+8-neighbor pixel at a time via brightest-first priority queue; path brightness
+history and no alternate-route escape around a detected valley; configurable
+retreat including on-bead darkness; relative hue/saturation stopping; stop black
+reflection support at the first continuous dark perimeter; keep competing maxima
+separate across valleys and associate only with photographic evidence; cyan closed
+contours smoothed solely for display, without changing pixels,centroids or area.
+
+Critical safeguards: explain equality,noise and competing maxima; retain ambiguity;
+never use old centerline,splines,modeled positions or manual bead IDs; save each
+pixel's acceptance order,predecessor,brightness and stopping reason. Simplify the
+viewer to photograph,cyan contours,IDs,centroids,pan/zoom,selection and histogram;
+add individual-pixel growth replay and exact stopped pixel/brightness/HSV,with easy
+largest/smallest/median inspection. Test adjacent beads/dark valley,multiple
+highlights,black-surrounded reflection,dark shadow,uneven illumination,and
+noise/equality **before** the whole image. Demonstrate no skips/valley crossing,
+then save full-image regions,centroids,histogram and counts of maxima,regions,
+ambiguous/rejected candidates. Compare exact native pixels with R260 and failures
+R01307,R00956,R01284. Preserve old results/reviews,update documentation,commit,push.
+
+User priority,verbatim: **“My priority is finding one reliable coordinate for every
+sufficiently visible bead. I would rather have small, trustworthy bright regions
+than large outlines extending into adjacent beads. Do not ask me to mark beads
+manually.”** No manual marking was requested.
+
+### R261 actual outcome
+
+Inspected daisy,branch,upstream,status,stashes and remote before writes; clean
+photo-2-strategy-v3 at cba581d,fetch showed0/0 divergence. Read active handoff,plan,
+latest log,R260 experiment and original/white-balanced hue evidence. Considered
+monotone growth alone,watershed alone,and native catchments plus monotone growth;
+implemented the third independently in pixel_detect.py. New default server uses
+it. Historical detect.py and strict_r260.py remain unchanged; copied the R260
+server/static assets for explicit archived viewing and retargeted its browser test.
+
+All native maxima/plateaus have saved runs and centroids. Meaningful peaks use
+10-DN prominence; rejected raw catchments remain reserved. Every accepted native
+pixel has an earlier adjacent predecessor and unaltered Value/HSV. Heap growth
+allows equality but no positive rise; locks are per destination,not per path.
+All8 neighbors are examined,competing catchments never merge,and queue acceptance
+never rises. Relative circular hue/saturation and dark-frontier stops only shorten
+growth. The recorded tree supports configurable30%/2-DN retreat. Peak plateaus
+remain a compact fallback. Continuous dark shell evidence is verified separately;
+neither shell nor bright support certifies black material or a full bead body.
+Cyan contour smoothing occurs only after all exact measurements and masks.
+
+Final generation5e12fe3816473053:154,761 raw maxima preserved;7,543 meaningful/grown;
+3,204 retained supports,all identity-ambiguous;151,557 rejected candidates =147,218
+low-prominence unexpanded plus4,339 paper-compatible grown proposals.97 retained
+supports have verified dark-enclosure evidence. Sizes2–241px,median28. No count is
+a confirmed bead inventory,no completeness or measured coordinate accuracy claim.
+Noise catchments deliberately fragment some bodies; multiple highlights remain
+unmerged. R260 had1,057 retained proposals and a different smoothed-maximum input.
+
+Six synthetic scenes passed before full detection. Nine new tests pass,plus21
+historical detector/strict tests. A single-catchment detour grid demonstrates that
+V60 island pixels cannot become reachable from V55/V50 by another route. The full
+photo audit checks669,505 accepted pixels,890,096 stop edges,all native HSV values,
+adjacency,monotonicity,locks,eight-neighbor frontier accounting,tree retreat,
+connectivity,exact centroids,nonoverlap and97 independent dark-enclosure floods.
+The audit found an initial omitted stop entry for queued approaches later vetoed
+by another path; all such approaches now get explicit records,without mask changes.
+Source-only isolated replay reproduces full JSON,label/catchment maps and all7,543
+compressed traces byte-for-byte without access to any prior geometry or bead labels.
+
+41 real Chromium checks pass. Viewer provides exact pixel step/play/slider replay,
+every stop event with time/predecessor/brightness/HSV,area/bright-patch centroids,
+size extrema/median,histogram filtering,pan/zoom,native hit testing and downloads.
+Trace navigation restores the exact acceptance count when that stop occurred.
+The sandbox blocked the browser server socket; escalated local test execution
+completed successfully. Owned test servers shut down after checks.
+
+Exact native comparison crops,RGB/HSV membership CSVs and coordinate/overlap tables
+for R01307,R00956,R01284 are curated. Large old extensions are replaced by compact
+supports,but multiple peaks on apparent single bodies and tiny false paper/edge
+candidates remain visible. R00956 has five supports intersecting its old mask;
+R01284 has two. No forced one-to-one correspondence or inferred bead identity.
+Full data,traces,histogram,coordinates,source/parameter/artifact hashes and
+reproduction commands are tracked under photo2/review/r261;routine outputs ignored.
+R259/R260 results and user production reviews remain untouched.
+
+Updated current plan,handoff,method index,agent guidance and viewer documentation.
+Sites skill used for the existing local viewer only;OpenAI Docs used solely for
+the requested handoff recommendation,with official Astra documentation checked.
+No subagents,hosting,geometry,indexing or pattern recovery. Stop after scoped
+commit/push and exact remote/clean verification. Next review duplicate supports
+and missed visible locations using these crops/replays,before evidence-based
+same-bead consolidation. Recommend GPT-6 Astra/High for visual inference,not an
+assertion of changed user-supplied session status. No /new needed for viewer
+inspection;use /new before another substantial algorithm round.

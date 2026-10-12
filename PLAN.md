@@ -1,5 +1,49 @@
 # Photo-2 reconstruction plan
 
+## Current R261 — native-pixel replacement delivered
+
+[Algorithm and native comparisons](photo2/PIXEL_DETECTION_R261.md) ·
+[Complete evidence and traces](photo2/review/r261/README.md) ·
+[Viewer / reproduction](photo2/bead_detection/README.md).
+
+R261 supersedes the radial default and the prior strict-ray next step. The user
+explicitly requires native pixels, eight-neighbor brightest-first queue growth,
+path brightness history, irreversible valley stops, retreat, relative color clues,
+first-dark-perimeter reflection support, and per-pixel replay. No manual bead
+marking, old geometry, splines or modeled bead positions are permitted inputs.
+
+Implemented an independent raw-maximum catchment + monotone pixel queue detector.
+Every raw maximum remains cataloged; rejected/noise catchments cannot be absorbed.
+Equality is allowed, any positive rise stops, no blur/interpolation/angular growth.
+Retreat removes dark tails along predecessor trees. Only display contours smooth.
+All supports remain identity-ambiguous; multiple highlights are not silently merged.
+
+Final generation `5e12fe3816473053`:154,761 raw maxima,7,543 meaningful/grown,
+3,204 retained ambiguous supports,151,557 rejected candidates (147,218 low prominence
+plus4,339 paper-compatible grown patches). Median28px,range2–241;97 verified dark
+enclosures. Counts are supports,not bead counts or completeness. R01307,R00956 and
+R01284 have exact raw/old/new crops and per-native-pixel membership/HSV exports.
+Large extensions are replaced by compact supports; duplicate peaks and false
+edge/paper candidates remain. No measured coordinate accuracy is claimed.
+
+Six synthetic scenes ran before the photo. Nine new Python tests plus21 preserved
+legacy tests pass. Full audit checks669,505 accepted pixels,890,096 stopped edges,
+all8 neighbors,irreversible locks,monotonicity,retreat,centroids,nonoverlap and97 dark
+shells. Standalone detector+photo replay is byte-identical,including7,543 traces.
+41 Chromium checks cover the simplified viewer and exact pixel/stop-time replay.
+R259/R260 detector/results/reviews remain preserved; archived viewer uses
+`python -m photo2.bead_detection.server_r260`. New default remains
+`.venv/bin/python -m photo2.bead_detection.server` → http://localhost:8767.
+Restart an existing server. No geometry,indexing,pattern work,manual labeling or
+subagents. Sites local-only viewer workflow; OpenAI Docs only for recommendation.
+
+**Next task / stopping point:** stop after this scoped delivery and remote/clean
+verification. Next inspect duplicate supports and missed visible locations using
+native crops/replay,before any same-bead consolidation. Recommend GPT-6 Astra/High
+for that visual inference (not a new user-supplied model status). No `/new` needed
+for viewer inspection;use `/new` before another substantial algorithm round.
+
+
 ## Current R260 — reviewed locations and more sensitive growth
 
 [Review report](photo2/DETECTION_REVIEW_R260.md) · [coordinates and evidence](photo2/review/r260/README.md) · [viewer](photo2/bead_detection/README.md).

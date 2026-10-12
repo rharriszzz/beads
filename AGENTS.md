@@ -14,6 +14,14 @@ centers distinct. See photo2/STAGE1_PILOT.md for the completed four-section pilo
 Stop for review before global indexing. Make routine technical decisions;
 ask visual questions only when their answers materially affect conclusions.
 
+R261 supersedes radial growth as the default. Use the native-pixel detector and
+replay in photo2/PIXEL_DETECTION_R261.md. No detection blur, rays, interpolation,
+or angular smoothing; display smoothing never changes masks. Preserve all maxima,
+noise rejections, adjacent-pixel predecessors and irreversible stop reasons.
+Multiple supports remain ambiguous; do not treat 3,204 supports as a bead count.
+No manual bead-marking request. Next review duplicates/missed visible locations,
+not full outlines, geometry or global indexing. R259/R260 remain historical.
+
 R260: prioritize good per-bead image coordinates, not pixel-complete masks. Compact
 support is sufficient when its location reliably identifies one bead. Black growth
 stops at the first fully dark perimeter surrounding a reflection, not the full body.

@@ -1,68 +1,68 @@
-# Photographic bead locations — R260
+# Native-pixel bead supports — R261
 
-The goal is a reliable image location for each sufficiently visible bead, not a
-pixel-complete mask. The current review increases stopping sensitivity globally
-and preserves the previous run in `photo2/review/r259`. Select a region to see both
-its supported **Location** and its exact **Centroid**. Download **Coordinates**
-for the complete location CSV. Neither coordinate is a fitted physical center.
-Small unresolved highlights remain explicitly ambiguous.
-
-From the repository root:
+R261 replaces the default radial detector with an independent native-pixel detector.
+Its goal is a reliable supported coordinate per visible bead. These results remain
+candidate supports, with duplicate highlights and misses unresolved.
 
 ```bash
 .venv/bin/python -m photo2.bead_detection.server
 ```
 
-Open **http://localhost:8767**. Keep the terminal running; Ctrl+C stops it.
-Restart an older server first, or use `--port 8768`. The first launch computes
-missing/stale detection data; later launches reuse the saved run. Python 3.12
-dependencies are in [requirements.txt](requirements.txt).
+Open **http://localhost:8767**. Restart an older server first, or add `--port 8768`.
+The first launch generates missing data in `photo2/output/detection-r261/` from the
+original photograph. It does not read historical bead labels, curves or models.
+The familiar `photo2.bead_debugger.server` launcher also opens this viewer.
 
-The familiar `.venv/bin/python -m photo2.bead_debugger.server` command also opens
-this simplified interface. The previous debugger remains available explicitly:
-`.venv/bin/python -m photo2.bead_debugger.server --legacy`. Its reviews, historical
-models and old controls remain intact and are not loaded by the direct detection
-launcher above. The new viewer is read-only.
+Drag to pan; scroll to zoom. Cyan contours are smoothed for display only. Their
+exact integer pixel runs determine area, area centroid and supported coordinate.
+The bright-patch centroid is a separate measurement. No coordinate is called the
+physical bead center. Pixel centers use integer x right / y down after EXIF orientation;
+at high zoom the photograph uses nearest-neighbor display.
 
-Drag to pan, scroll to zoom, and click a cyan region. Enter `42` or `R00042` to
-jump to a region. Largest/smallest/median and previous/next browse in descending
-pixel-count order. The median button chooses the middle ranked region (the lower
-of two middle regions for even counts); it need not equal the numeric median.
-Click a histogram bar to restrict browsing to that size range; **Clear size filter**
-restores all retained regions. Arrow keys browse when the photograph has focus;
-F fits the photograph. Optional maxima, selected growth boundary and rejected
-regions start hidden. Rejected IDs can also be entered directly.
+Click a region or enter its `P` ID (numeric input is accepted). **Largest, Smallest,
+Median** and previous/next browse retained area. The median button selects the
+middle ranked region, choosing the lower area for an even-sized inventory. Click
+histogram bars to filter. Region IDs belong to this run, not the R260 `R` namespace
+or a resolved bead index. Rejected grown supports can be selected by ID too.
 
-Black-region growth stops at the **first complete dark perimeter surrounding the
-reflection**, following the maker's R259 clarification. Its centroid and pixel
-count describe that support region, not the full black bead. This difference
-matters when comparing sizes to colored-body proposals.
+**Growth replay:** Reset begins before the seed. `+1 pixel` accepts exactly one
+recorded native pixel; Play advances at one pixel per 60 ms. The slider can inspect
+any acceptance. Cyan fill shows pre-retreat growth; the contour remains the final
+support. Pixel details identify acceptance order, predecessor, raw brightness,
+HSV, and whether retreat later removed the pixel. **Final** hides the replay fill.
+**Stop → / ← Stop**, or an exact stop event number, visits every stopped edge,
+restores its exact acceptance time, and marks the destination pixel orange and
+its predecessor edge white. Brightness is max(R,G,B) in 0–255; H is degrees, S/V
+are 0–1. Traces are loaded on selection; Download full growth trace exports them.
 
-Download links provide full JSON (including exact pixel runs, rejected candidates,
-initial bright patches and provenance), histogram/rank plots and size-rank CSV.
-The saved run is under `photo2/output/detection-r259/`; a compressed complete copy
-and example figures are committed under [../review/r260](../review/r260/README.md).
-IDs are stable within this detector/source/parameter run, not historical bead IDs
-or identities guaranteed to persist across algorithm revisions.
+All candidate maxima, coordinates, size ranks and histogram are downloadable.
+147,218 below-prominence maxima have preserved plateau pixels and rejection
+reasons but no expansion trace because no growth was attempted. All 7,543 grown
+candidates, including rejected ones, have complete traces. Full compressed copies
+are committed in [../review/r261](../review/r261/README.md).
 
-Reproduce and validate:
+Reproduce in Python 3.12 with the existing [requirements](requirements.txt):
 
 ```bash
-.venv/bin/python -m photo2.bead_detection.detect
-.venv/bin/python -m unittest photo2.bead_detection.test_detection -v
-.venv/bin/python -m photo2.bead_detection.validate --isolation
-PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2.bead_detection.browser_smoke
+.venv/bin/python -m unittest photo2.bead_detection.test_pixels -v
+.venv/bin/python -m photo2.bead_detection.curate_r261 synthetic
+.venv/bin/python -m photo2.bead_detection.pixel_detect
+.venv/bin/python -m photo2.bead_detection.validate_pixels --isolation
+.venv/bin/python -m photo2.bead_detection.curate_r261 compare
+.venv/bin/python -m photo2.bead_detection.curate_r261 valley
+PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2.bead_detection.browser_pixels
+.venv/bin/python -m photo2.bead_detection.curate_r261 archive
 ```
 
-The last command uses the existing optional Playwright/Chromium test installation
-documented by the old debugger. No browser package is needed just to launch the
-viewer. See the [scientific report](../DETECTION_REVIEW_R260.md) for assumptions,
-actual results, limitations and the stopping point.
+Retreat is configurable via `pixel_detect --retreat-fraction .30 --retreat-dn 2`;
+other parameters are explicit in `pixel_detect.Parameters`. Save experiments to
+different `--output` directories. Changing display contours never changes masks.
+Playwright/Chromium is optional and needed only for browser tests.
 
+**Preserved R260:** `python -m photo2.bead_detection.server_r260 --port 8768`
+(with `.venv/bin/python`) uses the unchanged historical radial detector and copied
+viewer assets. `detect.py`, R259/R260 results, strict comparisons and reviews remain
+preserved. The old `browser_smoke` tests explicitly target this archived viewer.
+The geometry debugger remains at `photo2.bead_debugger.server --legacy`.
 
-A separate [strict-darkening/color comparison](../DETECTION_REVIEW_R260.md#requested-strict-darkening-and-color-clue-comparison)
-tests native and smoothed Value with no tolerated increase, intensity retreat,
-and optional persistent hue/darkness clues. Its six full-photo outputs and coordinate
-CSVs are saved under `photo2/review/r260/strict-*`; the default viewer continues
-to show the reviewed R260 run. Reproduce using `python -m photo2.bead_detection.strict_r260`
-with the same `.venv/bin/python` interpreter.
+[Algorithm, safeguards, evidence and limitations](../PIXEL_DETECTION_R261.md).

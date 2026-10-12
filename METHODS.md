@@ -1,5 +1,19 @@
 # Methods collection — bead-rope reconstruction
 
+
+## R261 native-pixel support detector (current default)
+
+[Algorithm, invariants, comparisons and limits](photo2/PIXEL_DETECTION_R261.md).
+Input: original RGB only. Output: preserved raw maxima, exact compact support
+pixels, supported coordinates, distinct centroids, per-pixel path/stop traces and
+display-only smoothed contours. Raw catchment ownership plus brightest-first
+8-neighbor monotone growth and irreversible locks replaces radial growth. Equality
+is accepted without uphill tolerance; tree retreat and relative color/dark stops
+favor trustworthy small supports. Multiple peaks remain ambiguous, never merged
+without evidence. Six synthetic scenes, native full-photo audit and isolated replay
+verify the implementation; photographic completeness and one-coordinate-per-bead
+consolidation remain unestablished. [Reproduce](photo2/bead_detection/README.md).
+
 ## R260 coordinate-focused detection review
 
 [Review, sensitivity comparisons and reproduction](photo2/DETECTION_REVIEW_R260.md).

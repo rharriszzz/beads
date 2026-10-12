@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 from playwright.sync_api import sync_playwright
-from .server import make_server
+from .server_r260 import make_server
 from .detect import ROOT
 
 
