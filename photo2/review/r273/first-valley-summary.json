@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "method": "first-valley",
+    "radius": 26,
+    "hue_degrees": 22.0,
+    "step_hue_degrees": 12.0,
+    "floor_fraction": 0.05,
+    "valley_fraction": 0.08,
+    "opening_radius": 2,
+    "retreat": 1,
+    "minimum_area": 45,
+    "minimum_solidity": 0.88,
+    "maximum_area": 870,
+    "black_radius": 12.0,
+    "black_rule": "margin",
+    "secondary_peak_ratio": 0.75,
+    "secondary_contrast_ratio": 0.85
+  },
+  "accepted": 627,
+  "colors": {
+    "yellow": 264,
+    "red": 162,
+    "black": 201
+  },
+  "reasons": {
+    "interior-irregular": 219,
+    "interior-open": 6,
+    "interior-small": 24,
+    "interior-peak-lost": 18,
+    "interior-overlap": 10,
+    "black-secondary": 6,
+    "interior-holes": 6
+  },
+  "colored_area_median": 378.5,
+  "paired_area_ratio_median": 2.4906337535014007,
+  "colored_larger": 419,
+  "colored_count": 426,
+  "paired_boundary_metric_median": 0.7595226368526895
+}

@@ -7688,3 +7688,42 @@ through final evidence. Production detectors, old viewers, reviews, geometry/ind
 unchanged. Report photo2/COVERAGE_R272.md; scoped commit/push then stop. Next only on
 request: independently adjudicate reflection identities/pale-color failures and run
 saved browser check when authorized. Keep current model/reasoning; no /new needed.
+
+## R273 — black ownership and broader colored interiors; red remedies implemented
+
+User requests strongest-main-reflection competition, conservative ambiguity exclusion,
+larger smooth photographic red/yellow interiors, complete native inventory, viewer,
+comparisons, tests, report, commit and push; preserveR272. Goal is a widespread trusted
+subset, not completeness. Additional steering: “the photographic support appears to
+be there to me, the method is deficient”; “It is stopping well before the beads darker
+edges, seemingly for no reason”; “If you are not sure the best way, try several.”
+User then asks why few red beads, requests several remedies, and finally explicitly
+asks to choose and implement one or more **in this step**. These supersede the
+intermediate proposal-only stopping point.
+
+Implemented and compared15colored construction/parameter controls plus9black ownership
+controls. Found premature global cutoff retries from one escaping direction; replaced
+with native directional first-trough stopping, trough-relative recovery and inward
+cleanup. Final selected uniform solidity0.84 remedy raises red79→116. Background-only
+81and combined120red controls are preserved; optional texture/color-supported uncertain-
+background continuation is not selected because its few rescued photo examples remain
+ambiguous. All5173red background-triggered failed-ray stops were uncertainty, not
+confident paper. Red pre-remedy114shape-only failures and159open/size failures are
+preserved with geographically distributed photographs and remaining remedy proposals.
+
+Final524proposals:201black/116red/207yellow;6weaker black reflections suppressed.
+All323colored masks exceed pairedR272area, median3.66×; native median516pixels.
+Black cores unchanged; IDs, ICC peaks/RGB/HSV, bright patches, exact masks/counts/
+centroids and closed display outlines saved.15/16posthocfull-frame geographiccells.
+No hand-assigned runtime identities, watershed, old splines, geometry or stringindexing.
+Every869R272decision survives in each control; prior raw maxima remain unchanged.
+
+36Python tests and31actualJS Node checks pass. Exact fullphoto validation/regeneration
+and148preservedR272hashes pass.52new-style and112historical synthetic scenes have
+zero selected false/duplicate locations and zero background/other-body mask pixels.
+Large synthetic yellow bodies frequently exceed870precleanupcap: low recall explicitly
+reported, not hidden or converted into a whole-photo count claim. Real-browser rendering
+remains deferred after the knownR272sandbox failure, in keeping with the user's skip-
+new-approval instruction. Saved test can run later. Reports photo2/INTERIORS_R273.md
+and photo2/RED_LOSSES_R273.md. Scoped commit/push, then stop for photo review; no
+new phase without request. Keep current model/reasoning; no /new needed.

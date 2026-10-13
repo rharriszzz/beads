@@ -1,0 +1,478 @@
+{
+  "lower-floor": {
+    "parameters": {
+      "method": "star-valley",
+      "radius": 26,
+      "hue_degrees": 22.0,
+      "step_hue_degrees": 12.0,
+      "floor_fraction": 0.05,
+      "valley_fraction": 0.08,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 556,
+    "colors": {
+      "yellow": 208,
+      "red": 148,
+      "black": 200
+    },
+    "reasons": {
+      "interior-irregular": 245,
+      "interior-open": 7,
+      "interior-small": 24,
+      "interior-peak-lost": 18,
+      "interior-overlap": 59,
+      "interior-holes": 2,
+      "black-secondary": 6
+    },
+    "colored_area_median": 336.0,
+    "paired_area_ratio_median": 2.4906337535014007,
+    "colored_larger": 350,
+    "colored_count": 356,
+    "paired_boundary_metric_median": 0.7741530998629967,
+    "seconds": 30.742197513580322
+  },
+  "wider-color": {
+    "parameters": {
+      "method": "star-valley",
+      "radius": 26,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.05,
+      "valley_fraction": 0.08,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 559,
+    "colors": {
+      "yellow": 207,
+      "red": 152,
+      "black": 200
+    },
+    "reasons": {
+      "interior-irregular": 240,
+      "interior-open": 8,
+      "interior-small": 24,
+      "interior-peak-lost": 18,
+      "interior-holes": 4,
+      "interior-overlap": 58,
+      "black-secondary": 6
+    },
+    "colored_area_median": 307.0,
+    "paired_area_ratio_median": 2.311320754716981,
+    "colored_larger": 348,
+    "colored_count": 359,
+    "paired_boundary_metric_median": 0.7758083610667748,
+    "seconds": 38.26352620124817
+  },
+  "shallow-valleys": {
+    "parameters": {
+      "method": "star-valley",
+      "radius": 26,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.05,
+      "valley_fraction": 0.18,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 620,
+    "colors": {
+      "yellow": 252,
+      "red": 167,
+      "black": 201
+    },
+    "reasons": {
+      "interior-irregular": 219,
+      "interior-open": 16,
+      "interior-overlap": 14,
+      "interior-small": 9,
+      "black-secondary": 6,
+      "interior-peak-lost": 1
+    },
+    "colored_area_median": 288.0,
+    "paired_area_ratio_median": 2.1597222222222223,
+    "colored_larger": 399,
+    "colored_count": 419,
+    "paired_boundary_metric_median": 0.7690821661223349,
+    "seconds": 39.20533728599548
+  },
+  "dark-envelope": {
+    "parameters": {
+      "method": "star-color",
+      "radius": 26,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.05,
+      "valley_fraction": 0.08,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 645,
+    "colors": {
+      "yellow": 275,
+      "red": 169,
+      "black": 201
+    },
+    "reasons": {
+      "interior-irregular": 183,
+      "interior-open": 31,
+      "interior-small": 30,
+      "interior-overlap": 2,
+      "interior-rival": 2,
+      "black-secondary": 6,
+      "interior-peak-lost": 1
+    },
+    "colored_area_median": 257.0,
+    "paired_area_ratio_median": 2.0570420464569246,
+    "colored_larger": 402,
+    "colored_count": 444,
+    "paired_boundary_metric_median": 0.7603446162676367,
+    "seconds": 41.45458173751831
+  },
+  "relative-valley": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.25,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 423,
+    "colors": {
+      "black": 201,
+      "yellow": 144,
+      "red": 78
+    },
+    "reasons": {
+      "interior-open": 244,
+      "interior-irregular": 291,
+      "interior-overlap": 91,
+      "black-secondary": 6
+    },
+    "colored_area_median": 616.5,
+    "paired_area_ratio_median": 4.298973580042345,
+    "colored_larger": 222,
+    "colored_count": 222,
+    "paired_boundary_metric_median": 0.7577379278920164,
+    "seconds": 13.728618144989014
+  },
+  "relative-valley-wide": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.5,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 386,
+    "colors": {
+      "black": 201,
+      "yellow": 131,
+      "red": 54
+    },
+    "reasons": {
+      "interior-open": 355,
+      "interior-irregular": 371,
+      "interior-overlap": 48,
+      "black-secondary": 6,
+      "interior-holes": 4
+    },
+    "colored_area_median": 621.0,
+    "paired_area_ratio_median": 4.119496855345912,
+    "colored_larger": 185,
+    "colored_count": 185,
+    "paired_boundary_metric_median": 0.7498475916902687,
+    "seconds": 14.945192575454712
+  },
+  "first-valley": {
+    "parameters": {
+      "method": "first-valley",
+      "radius": 26,
+      "hue_degrees": 22.0,
+      "step_hue_degrees": 12.0,
+      "floor_fraction": 0.05,
+      "valley_fraction": 0.08,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 627,
+    "colors": {
+      "yellow": 264,
+      "red": 162,
+      "black": 201
+    },
+    "reasons": {
+      "interior-irregular": 219,
+      "interior-open": 6,
+      "interior-small": 24,
+      "interior-peak-lost": 18,
+      "interior-overlap": 10,
+      "black-secondary": 6,
+      "interior-holes": 6
+    },
+    "colored_area_median": 378.5,
+    "paired_area_ratio_median": 2.4906337535014007,
+    "colored_larger": 419,
+    "colored_count": 426,
+    "paired_boundary_metric_median": 0.7595226368526895,
+    "seconds": 15.025729894638062
+  },
+  "relative-valley-inset": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.25,
+      "valley_retreat": 1,
+      "opening_radius": 2,
+      "retreat": 1,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 470,
+    "colors": {
+      "black": 201,
+      "yellow": 181,
+      "red": 88
+    },
+    "reasons": {
+      "interior-open": 222,
+      "interior-irregular": 313,
+      "interior-overlap": 39,
+      "black-secondary": 6,
+      "interior-holes": 1
+    },
+    "colored_area_median": 597.0,
+    "paired_area_ratio_median": 4.042944785276074,
+    "colored_larger": 269,
+    "colored_count": 269,
+    "paired_boundary_metric_median": 0.7558756302701682,
+    "seconds": 15.651873350143433
+  },
+  "relative-valley-safe": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.25,
+      "valley_retreat": 1,
+      "opening_radius": 2,
+      "retreat": 2,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 469,
+    "colors": {
+      "black": 201,
+      "yellow": 189,
+      "red": 79
+    },
+    "reasons": {
+      "interior-open": 222,
+      "interior-irregular": 348,
+      "interior-small": 9,
+      "interior-peak-lost": 4,
+      "black-secondary": 6,
+      "interior-overlap": 6
+    },
+    "colored_area_median": 526.0,
+    "paired_area_ratio_median": 3.491578733766234,
+    "colored_larger": 268,
+    "colored_count": 268,
+    "paired_boundary_metric_median": 0.7507110920531399,
+    "seconds": 15.659047603607178
+  },
+  "remedy-shape": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.25,
+      "valley_retreat": 1,
+      "opening_radius": 2,
+      "retreat": 2,
+      "uncertain_bridge": false,
+      "minimum_area": 45,
+      "minimum_solidity": 0.84,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 524,
+    "colors": {
+      "black": 201,
+      "yellow": 207,
+      "red": 116
+    },
+    "reasons": {
+      "interior-open": 222,
+      "interior-irregular": 253,
+      "interior-overlap": 21,
+      "interior-small": 9,
+      "interior-peak-lost": 4,
+      "black-secondary": 6
+    },
+    "colored_area_median": 516.0,
+    "paired_area_ratio_median": 3.6597222222222223,
+    "colored_larger": 323,
+    "colored_count": 323,
+    "paired_boundary_metric_median": 0.774610514218731,
+    "seconds": 15.322993993759155
+  },
+  "remedy-background": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.25,
+      "valley_retreat": 1,
+      "opening_radius": 2,
+      "retreat": 2,
+      "uncertain_bridge": true,
+      "minimum_area": 45,
+      "minimum_solidity": 0.88,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 471,
+    "colors": {
+      "black": 201,
+      "yellow": 189,
+      "red": 81
+    },
+    "reasons": {
+      "interior-open": 222,
+      "interior-irregular": 347,
+      "interior-small": 6,
+      "black-secondary": 6,
+      "interior-overlap": 6,
+      "interior-peak-lost": 1
+    },
+    "colored_area_median": 525.5,
+    "paired_area_ratio_median": 3.491578733766234,
+    "colored_larger": 270,
+    "colored_count": 270,
+    "paired_boundary_metric_median": 0.7515543339263193,
+    "seconds": 15.13721513748169
+  },
+  "remedy-combined": {
+    "parameters": {
+      "method": "relative-valley",
+      "radius": 32,
+      "hue_degrees": 32,
+      "step_hue_degrees": 18,
+      "floor_fraction": 0.035,
+      "valley_fraction": 0.25,
+      "valley_retreat": 1,
+      "opening_radius": 2,
+      "retreat": 2,
+      "uncertain_bridge": true,
+      "minimum_area": 45,
+      "minimum_solidity": 0.84,
+      "maximum_area": 870,
+      "black_radius": 12.0,
+      "black_rule": "margin",
+      "secondary_peak_ratio": 0.75,
+      "secondary_contrast_ratio": 0.85
+    },
+    "accepted": 528,
+    "colors": {
+      "black": 201,
+      "yellow": 207,
+      "red": 120
+    },
+    "reasons": {
+      "interior-open": 222,
+      "interior-irregular": 250,
+      "interior-overlap": 21,
+      "interior-small": 6,
+      "black-secondary": 6,
+      "interior-peak-lost": 1
+    },
+    "colored_area_median": 516.0,
+    "paired_area_ratio_median": 3.6601307189542482,
+    "colored_larger": 327,
+    "colored_count": 327,
+    "paired_boundary_metric_median": 0.7747324811814409,
+    "seconds": 18.031452178955078
+  }
+}

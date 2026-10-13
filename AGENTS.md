@@ -1,5 +1,16 @@
 # Beads photo-2 workflow
 
+R273 supersedes R272 coverage/count targets: widespread trusted subset, not completeness.
+See photo2/INTERIORS_R273.md and photo2/RED_LOSSES_R273.md. Old masks do not delimit
+photographic support. Selected native directional trough rule removes global cutoff
+retries; uniform solidity0.84 remedy yields524proposals (201black/116red/207yellow).
+All323colored regions larger than pairedR272, median3.66×;6weak reflections suppressed.
+Optional uncertain-background continuation remains diagnostic, not selected. Preserve
+R272 and every R273 control.36Python/31Node checks plus native audit pass; browser
+rendering deferred. Stop after delivery; review remaining red growth failures only on
+request. No geometry/string indexing. Keep current model/reasoning; no /new needed.
+
+
 R272 coverage supersedes prior conservative-subset/stop restrictions for this
 completed experiment. See photo2/COVERAGE_R272.md and review/r272-coverage.
 869 proposed interiors (207 black/363 red/299 yellow), not a verified bead count.

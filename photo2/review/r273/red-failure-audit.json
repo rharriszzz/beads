@@ -1,0 +1,180 @@
+{
+  "selected": "relative-valley-safe",
+  "summary": {
+    "red": {
+      "input": 363,
+      "accepted": 79,
+      "excluded": 284,
+      "reasons": {
+        "interior-irregular": 261,
+        "interior-open": 159,
+        "interior-small": 9,
+        "interior-peak-lost": 4,
+        "interior-overlap": 3
+      },
+      "sole_reasons": {
+        "interior-irregular": 114,
+        "interior-open": 19,
+        "interior-overlap": 3,
+        "interior-small": 1
+      },
+      "context_and_cap": {
+        "bounded": 204,
+        "open-only": 93,
+        "open-and-cap": 53,
+        "cap-only": 13
+      },
+      "shape_only_solidity_quantiles": [
+        0.5734597156398105,
+        0.7505391590816465,
+        0.8202110748034973,
+        0.8558528958578809,
+        0.8788546255506607
+      ],
+      "shape_only_above_084": 46,
+      "shape_only_above_080": 67,
+      "stops": {
+        "first-valley": 43868,
+        "background": 5173,
+        "color-boundary": 912,
+        "brightness-floor": 21301,
+        "context-limit": 1450
+      },
+      "background_stop_types": {
+        "uncertain-paper-context": 5173
+      }
+    },
+    "yellow": {
+      "input": 299,
+      "accepted": 189,
+      "excluded": 110,
+      "reasons": {
+        "interior-open": 63,
+        "interior-irregular": 87,
+        "interior-overlap": 3
+      },
+      "sole_reasons": {
+        "interior-irregular": 44,
+        "interior-open": 20,
+        "interior-overlap": 3
+      },
+      "context_and_cap": {
+        "open-and-cap": 16,
+        "bounded": 236,
+        "open-only": 38,
+        "cap-only": 9
+      },
+      "shape_only_solidity_quantiles": [
+        0.6656580937972768,
+        0.8091854191340966,
+        0.847027758970887,
+        0.8659833869684878,
+        0.8783783783783784
+      ],
+      "shape_only_above_084": 24,
+      "shape_only_above_080": 34,
+      "stops": {
+        "first-valley": 10373,
+        "color-boundary": 11923,
+        "brightness-floor": 5452,
+        "context-limit": 358,
+        "background": 52,
+        "hue-boundary": 2
+      },
+      "background_stop_types": {
+        "uncertain-paper-context": 52
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "C-0294-0912",
+      "category": "shape-only",
+      "image": "red-excluded-shape-only-1.png",
+      "area": 435,
+      "supported_area": 614,
+      "solidity": 0.8752515090543259,
+      "supported_solidity": 0.850415512465374,
+      "context_open": false,
+      "stops": {
+        "first-valley": 169,
+        "brightness-floor": 87
+      }
+    },
+    {
+      "id": "C-0904-2375",
+      "category": "shape-only",
+      "image": "red-excluded-shape-only-2.png",
+      "area": 545,
+      "supported_area": 784,
+      "solidity": 0.8002936857562408,
+      "supported_solidity": 0.795131845841785,
+      "context_open": false,
+      "stops": {
+        "background": 59,
+        "first-valley": 134,
+        "brightness-floor": 63
+      }
+    },
+    {
+      "id": "C-2038-0658",
+      "category": "open-and-shape",
+      "image": "red-excluded-open-and-shape-1.png",
+      "area": 575,
+      "supported_area": 808,
+      "solidity": 0.8249641319942611,
+      "supported_solidity": 0.7882926829268293,
+      "context_open": true,
+      "stops": {
+        "first-valley": 132,
+        "brightness-floor": 123,
+        "context-limit": 1
+      }
+    },
+    {
+      "id": "C-2270-1983",
+      "category": "open-and-shape",
+      "image": "red-excluded-open-and-shape-2.png",
+      "area": 666,
+      "supported_area": 908,
+      "solidity": 0.8649350649350649,
+      "supported_solidity": 0.7579298831385642,
+      "context_open": false,
+      "stops": {
+        "first-valley": 104,
+        "brightness-floor": 152
+      }
+    },
+    {
+      "id": "C-2042-0601",
+      "category": "open-only",
+      "image": "red-excluded-open-only-1.png",
+      "area": 536,
+      "supported_area": 832,
+      "solidity": 0.8859504132231405,
+      "supported_solidity": 0.6731391585760518,
+      "context_open": true,
+      "stops": {
+        "brightness-floor": 154,
+        "first-valley": 92,
+        "context-limit": 5,
+        "color-boundary": 5
+      }
+    },
+    {
+      "id": "C-2225-2233",
+      "category": "open-only",
+      "image": "red-excluded-open-only-2.png",
+      "area": 697,
+      "supported_area": 916,
+      "solidity": 0.9268617021276596,
+      "supported_solidity": 0.8841698841698842,
+      "context_open": false,
+      "stops": {
+        "brightness-floor": 123,
+        "first-valley": 133
+      }
+    }
+  ],
+  "note": "Post-detection diagnosis. Shape threshold counts are upper bounds before renewed ownership/overlap checks; no acceptance changes."
+}

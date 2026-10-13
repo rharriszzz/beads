@@ -1,0 +1,184 @@
+{
+  "variants": {
+    "connected": {
+      "parameters": {
+        "method": "connected",
+        "radius": 26,
+        "hue_degrees": 22.0,
+        "step_hue_degrees": 12.0,
+        "floor_fraction": 0.15,
+        "valley_fraction": 0.08,
+        "opening_radius": 2,
+        "retreat": 1,
+        "minimum_area": 45,
+        "minimum_solidity": 0.88,
+        "maximum_area": 870,
+        "black_radius": 12.0,
+        "black_rule": "margin",
+        "secondary_peak_ratio": 0.75,
+        "secondary_contrast_ratio": 0.85
+      },
+      "accepted": 681,
+      "colors": {
+        "yellow": 278,
+        "red": 202,
+        "black": 201
+      },
+      "reasons": {
+        "interior-irregular": 121,
+        "interior-open": 51,
+        "interior-holes": 14,
+        "interior-small": 51,
+        "interior-rival": 1,
+        "black-secondary": 6,
+        "interior-peak-lost": 1
+      },
+      "colored_area_median": 303.0,
+      "paired_area_ratio_median": 2.3386093393180567,
+      "colored_larger": 437,
+      "colored_count": 480,
+      "paired_boundary_metric_median": 0.763506895570708,
+      "seconds": 9.890442132949829
+    },
+    "star-color": {
+      "parameters": {
+        "method": "star-color",
+        "radius": 26,
+        "hue_degrees": 22.0,
+        "step_hue_degrees": 12.0,
+        "floor_fraction": 0.15,
+        "valley_fraction": 0.08,
+        "opening_radius": 2,
+        "retreat": 1,
+        "minimum_area": 45,
+        "minimum_solidity": 0.88,
+        "maximum_area": 870,
+        "black_radius": 12.0,
+        "black_rule": "margin",
+        "secondary_peak_ratio": 0.75,
+        "secondary_contrast_ratio": 0.85
+      },
+      "accepted": 690,
+      "colors": {
+        "yellow": 280,
+        "red": 209,
+        "black": 201
+      },
+      "reasons": {
+        "interior-irregular": 144,
+        "interior-open": 24,
+        "interior-small": 23,
+        "interior-rival": 2,
+        "interior-overlap": 2,
+        "black-secondary": 6,
+        "interior-peak-lost": 1
+      },
+      "colored_area_median": 311.0,
+      "paired_area_ratio_median": 2.4832214765100673,
+      "colored_larger": 450,
+      "colored_count": 489,
+      "paired_boundary_metric_median": 0.7606191021182851,
+      "seconds": 25.230154752731323
+    },
+    "star-valley": {
+      "parameters": {
+        "method": "star-valley",
+        "radius": 26,
+        "hue_degrees": 22.0,
+        "step_hue_degrees": 12.0,
+        "floor_fraction": 0.15,
+        "valley_fraction": 0.08,
+        "opening_radius": 2,
+        "retreat": 1,
+        "minimum_area": 45,
+        "minimum_solidity": 0.88,
+        "maximum_area": 870,
+        "black_radius": 12.0,
+        "black_rule": "margin",
+        "secondary_peak_ratio": 0.75,
+        "secondary_contrast_ratio": 0.85
+      },
+      "accepted": 618,
+      "colors": {
+        "yellow": 210,
+        "red": 207,
+        "black": 201
+      },
+      "reasons": {
+        "interior-irregular": 167,
+        "interior-open": 7,
+        "interior-overlap": 67,
+        "interior-small": 27,
+        "interior-holes": 2,
+        "interior-peak-lost": 16,
+        "black-secondary": 6
+      },
+      "colored_area_median": 363.0,
+      "paired_area_ratio_median": 3.2,
+      "colored_larger": 411,
+      "colored_count": 417,
+      "paired_boundary_metric_median": 0.7802542750287036,
+      "seconds": 21.55357074737549
+    }
+  },
+  "black_controls": {
+    "winner-8": {
+      "accepted": 204,
+      "reasons": {
+        "black-secondary": 3
+      }
+    },
+    "margin-8": {
+      "accepted": 204,
+      "reasons": {
+        "black-secondary": 3
+      }
+    },
+    "defer-8": {
+      "accepted": 201,
+      "reasons": {
+        "black-ambiguous": 6
+      }
+    },
+    "winner-12": {
+      "accepted": 201,
+      "reasons": {
+        "black-secondary": 6
+      }
+    },
+    "margin-12": {
+      "accepted": 201,
+      "reasons": {
+        "black-secondary": 6
+      }
+    },
+    "defer-12": {
+      "accepted": 195,
+      "reasons": {
+        "black-ambiguous": 12
+      }
+    },
+    "winner-16": {
+      "accepted": 197,
+      "reasons": {
+        "black-secondary": 10
+      }
+    },
+    "margin-16": {
+      "accepted": 195,
+      "reasons": {
+        "black-secondary": 6,
+        "black-ambiguous": 6
+      }
+    },
+    "defer-16": {
+      "accepted": 189,
+      "reasons": {
+        "black-ambiguous": 18
+      }
+    }
+  },
+  "baseline_exact": true,
+  "baseline_count": 869,
+  "elapsed_seconds": 122.22217845916748
+}

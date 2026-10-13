@@ -1897,3 +1897,11 @@ R265 additional user-directed step: [first neutral-black stop](photo2/FIRST_DARK
 uses gray evidence and a peak-scaled dark cutoff, preserving dim reflections.
 [first_dark_r265.py](photo2/bead_detection/first_dark_r265.py) provides a bounded
 follow-up, exact audits and residual HSV diagnostics; v1 results remain frozen.
+
+## R273 — directional interior support and reflection ownership
+
+[Report](photo2/INTERIORS_R273.md), [red remedies](photo2/RED_LOSSES_R273.md),
+[reproduction](photo2/review/r273/README.md). Uniform image-only native growth to dark
+troughs; no global brightening fallback. Removal-only cleanup, shape/ownership tests,
+peak/contrast black competition, exact mask measurements and minimal viewer. All
+controls and exclusions preserved; no watershed, geometry or string indexing.

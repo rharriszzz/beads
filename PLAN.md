@@ -1,5 +1,33 @@
 # Photo-2 reconstruction plan
 
+## Current R273 — broader interiors, reflection ownership and implemented red remedy
+
+[Report](photo2/INTERIORS_R273.md) · [red diagnosis/remedies](photo2/RED_LOSSES_R273.md) ·
+[viewer](photo2/interior_inventory_r273/index.html). User returns to a widespread
+trusted subset; completeness/80% is no longer this phase's target. User corrected
+premature-growth claims: old masks are not the extent of photographic support.
+Several methods tested; directional dark-trough stopping removes the global brighter-
+cutoff retry that prematurely shrank safe directions. Selected uniform solidity0.84
+remedy raises red79→116; background-continuation remedy is tested but not selected
+because its few rescued photographic examples remain ambiguous. No manual overrides.
+
+524proposals:201black/116red/207yellow;323colored interiors all exceed pairedR272area,
+median3.66×, median516pixels. Six weaker close black reflections suppressed with
+peak/contrast margins; ambiguous groups deferred. Black masks unchanged. Native masks,
+centroids/areas/ICC peaks and display contours remain distinct. Historical870precleanup
+cap, paper/valley/color barriers and overlap/other-peak exclusions remain.164synthetic
+scenes show zero selected false locations/duplicate extras/foreign pixels; low yellow
+recall on large synthetic bodies is explicit. No physical-bead census claim.
+
+36Python tests,31Node viewer checks and exact image-only regeneration pass;148R272
+hashes preserved. Rendered browser check remains deferred after the known sandbox
+failure, following the user's skip-new-approval preference. See saved browser test.
+Preserve all alternatives/exclusions. Commit/push then stop for photographic review.
+Next only on request: remaining red directional growth/notches and boundary-evidence
+acceptance, using delivered controls; no geometry, string indexing or automatic phase.
+Keep current model/reasoning; no /new needed for this focused review.
+
+
 ## Current R272 coverage — restores black reflections; 80% not demonstrated
 
 [Report](photo2/COVERAGE_R272.md) · [viewer](photo2/coverage_inventory_r272/index.html) ·

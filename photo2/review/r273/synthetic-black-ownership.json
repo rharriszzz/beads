@@ -1,0 +1,7903 @@
+[
+  {
+    "scene": "weak",
+    "rule": "winner",
+    "metrics": {
+      "black": {
+        "visible": 1,
+        "detected": 1,
+        "accepted": 1,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.04691404869402082,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability.",
+          "Nearby weaker reflections suppressed by an image-only ownership heuristic; a distinct close bead can also be lost."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": true,
+          "rule": "winner",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0066-0055",
+        "anchor": [
+          66,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            66,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-secondary"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.27889426347681034,
+          "mean5_y": 0.0566912095772549,
+          "mean7_y": 0.030833410205602242,
+          "mean9_y": 0.01974650591658194,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.40980392156862744,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 5,
+          "runs": [
+            [
+              53,
+              65,
+              67
+            ],
+            [
+              54,
+              64,
+              65
+            ],
+            [
+              54,
+              67,
+              68
+            ],
+            [
+              55,
+              64,
+              64
+            ],
+            [
+              55,
+              68,
+              68
+            ],
+            [
+              56,
+              64,
+              65
+            ],
+            [
+              56,
+              67,
+              68
+            ],
+            [
+              57,
+              65,
+              67
+            ]
+          ],
+          "maximum_value": 0.3058823529411765,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 5,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            65,
+            54,
+            68,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              66,
+              66
+            ],
+            [
+              55,
+              65,
+              67
+            ],
+            [
+              56,
+              66,
+              66
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            55,
+            67,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              66,
+              66
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.5,
+              56.0
+            ],
+            [
+              65.0,
+              55.5
+            ],
+            [
+              64.5,
+              55.0
+            ],
+            [
+              65.0,
+              54.5
+            ],
+            [
+              65.5,
+              54.0
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              66.5,
+              54.0
+            ],
+            [
+              67.0,
+              54.5
+            ],
+            [
+              67.5,
+              55.0
+            ],
+            [
+              67.0,
+              55.5
+            ],
+            [
+              66.5,
+              56.0
+            ],
+            [
+              66.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              66.0,
+              56.125
+            ],
+            [
+              65.5,
+              55.9375
+            ],
+            [
+              65.0625,
+              55.5
+            ],
+            [
+              64.875,
+              55.0
+            ],
+            [
+              65.0625,
+              54.5
+            ],
+            [
+              65.5,
+              54.0625
+            ],
+            [
+              66.0,
+              53.875
+            ],
+            [
+              66.5,
+              54.0625
+            ],
+            [
+              66.9375,
+              54.5
+            ],
+            [
+              67.125,
+              55.0
+            ],
+            [
+              66.9375,
+              55.5
+            ],
+            [
+              66.5,
+              55.9375
+            ],
+            [
+              66.0,
+              56.125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.375,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 66,
+          "y": 55,
+          "luminance": 0.27889426347681034,
+          "rgb_native": [
+            144,
+            144,
+            144
+          ],
+          "rgb_srgb": [
+            144,
+            144,
+            144
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.5647058823529412
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.5647058823529412
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "A stronger nearby reflection wins the peak/contrast comparison; this weaker reflection is retained only for diagnosis."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": true,
+          "rule": "winner",
+          "peak_ratio_to_strongest": 0.35948218147408384,
+          "contrast_ratio_to_strongest": 0.5870786516853933
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0066-0055",
+        "distance": 9.0,
+        "dark_bridge": true,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "weak",
+    "rule": "margin",
+    "metrics": {
+      "black": {
+        "visible": 1,
+        "detected": 1,
+        "accepted": 1,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.04691404869402082,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability.",
+          "Nearby weaker reflections suppressed by an image-only ownership heuristic; a distinct close bead can also be lost."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": true,
+          "rule": "margin",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0066-0055",
+        "anchor": [
+          66,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            66,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-secondary"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.27889426347681034,
+          "mean5_y": 0.0566912095772549,
+          "mean7_y": 0.030833410205602242,
+          "mean9_y": 0.01974650591658194,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.40980392156862744,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 5,
+          "runs": [
+            [
+              53,
+              65,
+              67
+            ],
+            [
+              54,
+              64,
+              65
+            ],
+            [
+              54,
+              67,
+              68
+            ],
+            [
+              55,
+              64,
+              64
+            ],
+            [
+              55,
+              68,
+              68
+            ],
+            [
+              56,
+              64,
+              65
+            ],
+            [
+              56,
+              67,
+              68
+            ],
+            [
+              57,
+              65,
+              67
+            ]
+          ],
+          "maximum_value": 0.3058823529411765,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 5,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            65,
+            54,
+            68,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              66,
+              66
+            ],
+            [
+              55,
+              65,
+              67
+            ],
+            [
+              56,
+              66,
+              66
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            55,
+            67,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              66,
+              66
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.5,
+              56.0
+            ],
+            [
+              65.0,
+              55.5
+            ],
+            [
+              64.5,
+              55.0
+            ],
+            [
+              65.0,
+              54.5
+            ],
+            [
+              65.5,
+              54.0
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              66.5,
+              54.0
+            ],
+            [
+              67.0,
+              54.5
+            ],
+            [
+              67.5,
+              55.0
+            ],
+            [
+              67.0,
+              55.5
+            ],
+            [
+              66.5,
+              56.0
+            ],
+            [
+              66.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              66.0,
+              56.125
+            ],
+            [
+              65.5,
+              55.9375
+            ],
+            [
+              65.0625,
+              55.5
+            ],
+            [
+              64.875,
+              55.0
+            ],
+            [
+              65.0625,
+              54.5
+            ],
+            [
+              65.5,
+              54.0625
+            ],
+            [
+              66.0,
+              53.875
+            ],
+            [
+              66.5,
+              54.0625
+            ],
+            [
+              66.9375,
+              54.5
+            ],
+            [
+              67.125,
+              55.0
+            ],
+            [
+              66.9375,
+              55.5
+            ],
+            [
+              66.5,
+              55.9375
+            ],
+            [
+              66.0,
+              56.125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.375,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 66,
+          "y": 55,
+          "luminance": 0.27889426347681034,
+          "rgb_native": [
+            144,
+            144,
+            144
+          ],
+          "rgb_srgb": [
+            144,
+            144,
+            144
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.5647058823529412
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.5647058823529412
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "A stronger nearby reflection wins the peak/contrast comparison; this weaker reflection is retained only for diagnosis."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": true,
+          "rule": "margin",
+          "peak_ratio_to_strongest": 0.35948218147408384,
+          "contrast_ratio_to_strongest": 0.5870786516853933
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0066-0055",
+        "distance": 9.0,
+        "dark_bridge": true,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "weak",
+    "rule": "defer",
+    "metrics": {
+      "black": {
+        "visible": 1,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.04691404869402082,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": null,
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": true,
+          "rule": "defer",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0066-0055",
+        "anchor": [
+          66,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            66,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.27889426347681034,
+          "mean5_y": 0.0566912095772549,
+          "mean7_y": 0.030833410205602242,
+          "mean9_y": 0.01974650591658194,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.40980392156862744,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 5,
+          "runs": [
+            [
+              53,
+              65,
+              67
+            ],
+            [
+              54,
+              64,
+              65
+            ],
+            [
+              54,
+              67,
+              68
+            ],
+            [
+              55,
+              64,
+              64
+            ],
+            [
+              55,
+              68,
+              68
+            ],
+            [
+              56,
+              64,
+              65
+            ],
+            [
+              56,
+              67,
+              68
+            ],
+            [
+              57,
+              65,
+              67
+            ]
+          ],
+          "maximum_value": 0.3058823529411765,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 5,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            65,
+            54,
+            68,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              66,
+              66
+            ],
+            [
+              55,
+              65,
+              67
+            ],
+            [
+              56,
+              66,
+              66
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            55,
+            67,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              66,
+              66
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.5,
+              56.0
+            ],
+            [
+              65.0,
+              55.5
+            ],
+            [
+              64.5,
+              55.0
+            ],
+            [
+              65.0,
+              54.5
+            ],
+            [
+              65.5,
+              54.0
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              66.5,
+              54.0
+            ],
+            [
+              67.0,
+              54.5
+            ],
+            [
+              67.5,
+              55.0
+            ],
+            [
+              67.0,
+              55.5
+            ],
+            [
+              66.5,
+              56.0
+            ],
+            [
+              66.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              66.0,
+              56.125
+            ],
+            [
+              65.5,
+              55.9375
+            ],
+            [
+              65.0625,
+              55.5
+            ],
+            [
+              64.875,
+              55.0
+            ],
+            [
+              65.0625,
+              54.5
+            ],
+            [
+              65.5,
+              54.0625
+            ],
+            [
+              66.0,
+              53.875
+            ],
+            [
+              66.5,
+              54.0625
+            ],
+            [
+              66.9375,
+              54.5
+            ],
+            [
+              67.125,
+              55.0
+            ],
+            [
+              66.9375,
+              55.5
+            ],
+            [
+              66.5,
+              55.9375
+            ],
+            [
+              66.0,
+              56.125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.375,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 66,
+          "y": 55,
+          "luminance": 0.27889426347681034,
+          "rgb_native": [
+            144,
+            144,
+            144
+          ],
+          "rgb_srgb": [
+            144,
+            144,
+            144
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.5647058823529412
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.5647058823529412
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": null,
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": true,
+          "rule": "defer",
+          "peak_ratio_to_strongest": 0.35948218147408384,
+          "contrast_ratio_to_strongest": 0.5870786516853933
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0066-0055",
+        "distance": 9.0,
+        "dark_bridge": true,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "equal",
+    "rule": "winner",
+    "metrics": {
+      "black": {
+        "visible": 1,
+        "detected": 1,
+        "accepted": 1,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.04691404869402082,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability.",
+          "Nearby weaker reflections suppressed by an image-only ownership heuristic; a distinct close bead can also be lost."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": false,
+          "rule": "winner",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0066-0055",
+        "anchor": [
+          66,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            66,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-secondary"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.04467834293183249,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              64,
+              68
+            ],
+            [
+              54,
+              64,
+              64
+            ],
+            [
+              54,
+              68,
+              68
+            ],
+            [
+              55,
+              64,
+              64
+            ],
+            [
+              55,
+              68,
+              68
+            ],
+            [
+              56,
+              64,
+              64
+            ],
+            [
+              56,
+              68,
+              68
+            ],
+            [
+              57,
+              64,
+              68
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            65,
+            54,
+            68,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              65,
+              67
+            ],
+            [
+              55,
+              65,
+              67
+            ],
+            [
+              56,
+              65,
+              67
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            55,
+            67,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              66,
+              66
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              67.0,
+              56.5
+            ],
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.0,
+              56.5
+            ],
+            [
+              64.5,
+              56.0
+            ],
+            [
+              64.5,
+              55.0
+            ],
+            [
+              64.5,
+              54.0
+            ],
+            [
+              65.0,
+              53.5
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              67.0,
+              53.5
+            ],
+            [
+              67.5,
+              54.0
+            ],
+            [
+              67.5,
+              55.0
+            ],
+            [
+              67.5,
+              56.0
+            ],
+            [
+              67.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              66.78125,
+              56.28125
+            ],
+            [
+              66.0,
+              56.4375
+            ],
+            [
+              65.21875,
+              56.28125
+            ],
+            [
+              64.71875,
+              55.78125
+            ],
+            [
+              64.5625,
+              55.0
+            ],
+            [
+              64.71875,
+              54.21875
+            ],
+            [
+              65.21875,
+              53.71875
+            ],
+            [
+              66.0,
+              53.5625
+            ],
+            [
+              66.78125,
+              53.71875
+            ],
+            [
+              67.28125,
+              54.21875
+            ],
+            [
+              67.4375,
+              55.0
+            ],
+            [
+              67.28125,
+              55.78125
+            ],
+            [
+              66.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 66,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "A stronger nearby reflection wins the peak/contrast comparison; this weaker reflection is retained only for diagnosis."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": false,
+          "rule": "winner",
+          "peak_ratio_to_strongest": 0.9511333799811579,
+          "contrast_ratio_to_strongest": 0.9775280898876405
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0066-0055",
+        "distance": 9.0,
+        "dark_bridge": true,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "equal",
+    "rule": "margin",
+    "metrics": {
+      "black": {
+        "visible": 1,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.04691404869402082,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": null,
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": false,
+          "rule": "margin",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0066-0055",
+        "anchor": [
+          66,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            66,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.04467834293183249,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              64,
+              68
+            ],
+            [
+              54,
+              64,
+              64
+            ],
+            [
+              54,
+              68,
+              68
+            ],
+            [
+              55,
+              64,
+              64
+            ],
+            [
+              55,
+              68,
+              68
+            ],
+            [
+              56,
+              64,
+              64
+            ],
+            [
+              56,
+              68,
+              68
+            ],
+            [
+              57,
+              64,
+              68
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            65,
+            54,
+            68,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              65,
+              67
+            ],
+            [
+              55,
+              65,
+              67
+            ],
+            [
+              56,
+              65,
+              67
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            55,
+            67,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              66,
+              66
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              67.0,
+              56.5
+            ],
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.0,
+              56.5
+            ],
+            [
+              64.5,
+              56.0
+            ],
+            [
+              64.5,
+              55.0
+            ],
+            [
+              64.5,
+              54.0
+            ],
+            [
+              65.0,
+              53.5
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              67.0,
+              53.5
+            ],
+            [
+              67.5,
+              54.0
+            ],
+            [
+              67.5,
+              55.0
+            ],
+            [
+              67.5,
+              56.0
+            ],
+            [
+              67.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              66.78125,
+              56.28125
+            ],
+            [
+              66.0,
+              56.4375
+            ],
+            [
+              65.21875,
+              56.28125
+            ],
+            [
+              64.71875,
+              55.78125
+            ],
+            [
+              64.5625,
+              55.0
+            ],
+            [
+              64.71875,
+              54.21875
+            ],
+            [
+              65.21875,
+              53.71875
+            ],
+            [
+              66.0,
+              53.5625
+            ],
+            [
+              66.78125,
+              53.71875
+            ],
+            [
+              67.28125,
+              54.21875
+            ],
+            [
+              67.4375,
+              55.0
+            ],
+            [
+              67.28125,
+              55.78125
+            ],
+            [
+              66.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 66,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": null,
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": false,
+          "rule": "margin",
+          "peak_ratio_to_strongest": 0.9511333799811579,
+          "contrast_ratio_to_strongest": 0.9775280898876405
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0066-0055",
+        "distance": 9.0,
+        "dark_bridge": true,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "equal",
+    "rule": "defer",
+    "metrics": {
+      "black": {
+        "visible": 1,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.04691404869402082,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": null,
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": false,
+          "rule": "defer",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0066-0055",
+        "anchor": [
+          66,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            66,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.04467834293183249,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              64,
+              68
+            ],
+            [
+              54,
+              64,
+              64
+            ],
+            [
+              54,
+              68,
+              68
+            ],
+            [
+              55,
+              64,
+              64
+            ],
+            [
+              55,
+              68,
+              68
+            ],
+            [
+              56,
+              64,
+              64
+            ],
+            [
+              56,
+              68,
+              68
+            ],
+            [
+              57,
+              64,
+              68
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            65,
+            54,
+            68,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              65,
+              67
+            ],
+            [
+              55,
+              65,
+              67
+            ],
+            [
+              56,
+              65,
+              67
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            66.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            55,
+            67,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              66,
+              66
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              67.0,
+              56.5
+            ],
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.0,
+              56.5
+            ],
+            [
+              64.5,
+              56.0
+            ],
+            [
+              64.5,
+              55.0
+            ],
+            [
+              64.5,
+              54.0
+            ],
+            [
+              65.0,
+              53.5
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              67.0,
+              53.5
+            ],
+            [
+              67.5,
+              54.0
+            ],
+            [
+              67.5,
+              55.0
+            ],
+            [
+              67.5,
+              56.0
+            ],
+            [
+              67.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              66.78125,
+              56.28125
+            ],
+            [
+              66.0,
+              56.4375
+            ],
+            [
+              65.21875,
+              56.28125
+            ],
+            [
+              64.71875,
+              55.78125
+            ],
+            [
+              64.5625,
+              55.0
+            ],
+            [
+              64.71875,
+              54.21875
+            ],
+            [
+              65.21875,
+              53.71875
+            ],
+            [
+              66.0,
+              53.5625
+            ],
+            [
+              66.78125,
+              53.71875
+            ],
+            [
+              67.28125,
+              54.21875
+            ],
+            [
+              67.4375,
+              55.0
+            ],
+            [
+              67.28125,
+              55.78125
+            ],
+            [
+              66.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 66,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0066-0055"
+          ],
+          "winner": null,
+          "diameter": 9.0,
+          "dark_bridge": true,
+          "dominant": false,
+          "rule": "defer",
+          "peak_ratio_to_strongest": 0.9511333799811579,
+          "contrast_ratio_to_strongest": 0.9775280898876405
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0066-0055",
+        "distance": 9.0,
+        "dark_bridge": true,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "close",
+    "rule": "winner",
+    "metrics": {
+      "black": {
+        "visible": 2,
+        "detected": 1,
+        "accepted": 1,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.07479687003238925,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability.",
+          "Nearby weaker reflections suppressed by an image-only ownership heuristic; a distinct close bead can also be lost."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0067-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 10.0,
+          "dark_bridge": false,
+          "dominant": false,
+          "rule": "winner",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0067-0055",
+        "anchor": [
+          67,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            67,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-secondary"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.07256116427020091,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              65,
+              69
+            ],
+            [
+              54,
+              65,
+              65
+            ],
+            [
+              54,
+              69,
+              69
+            ],
+            [
+              55,
+              65,
+              65
+            ],
+            [
+              55,
+              69,
+              69
+            ],
+            [
+              56,
+              65,
+              65
+            ],
+            [
+              56,
+              69,
+              69
+            ],
+            [
+              57,
+              65,
+              69
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            67.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            54,
+            69,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              66,
+              68
+            ],
+            [
+              55,
+              66,
+              68
+            ],
+            [
+              56,
+              66,
+              68
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            67.0,
+            55.0
+          ],
+          "bbox": [
+            67,
+            55,
+            68,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              67,
+              67
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              68.0,
+              56.5
+            ],
+            [
+              67.0,
+              56.5
+            ],
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.5,
+              56.0
+            ],
+            [
+              65.5,
+              55.0
+            ],
+            [
+              65.5,
+              54.0
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              67.0,
+              53.5
+            ],
+            [
+              68.0,
+              53.5
+            ],
+            [
+              68.5,
+              54.0
+            ],
+            [
+              68.5,
+              55.0
+            ],
+            [
+              68.5,
+              56.0
+            ],
+            [
+              68.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              67.78125,
+              56.28125
+            ],
+            [
+              67.0,
+              56.4375
+            ],
+            [
+              66.21875,
+              56.28125
+            ],
+            [
+              65.71875,
+              55.78125
+            ],
+            [
+              65.5625,
+              55.0
+            ],
+            [
+              65.71875,
+              54.21875
+            ],
+            [
+              66.21875,
+              53.71875
+            ],
+            [
+              67.0,
+              53.5625
+            ],
+            [
+              67.78125,
+              53.71875
+            ],
+            [
+              68.28125,
+              54.21875
+            ],
+            [
+              68.4375,
+              55.0
+            ],
+            [
+              68.28125,
+              55.78125
+            ],
+            [
+              67.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 67,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "A stronger nearby reflection wins the peak/contrast comparison; this weaker reflection is retained only for diagnosis."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0067-0055"
+          ],
+          "winner": "K-0057-0055",
+          "diameter": 10.0,
+          "dark_bridge": false,
+          "dominant": false,
+          "rule": "winner",
+          "peak_ratio_to_strongest": 0.9511333799811579,
+          "contrast_ratio_to_strongest": 0.9775280898876405
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0067-0055",
+        "distance": 10.0,
+        "dark_bridge": false,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ],
+          [
+            67,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "close",
+    "rule": "margin",
+    "metrics": {
+      "black": {
+        "visible": 2,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.07479687003238925,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0067-0055"
+          ],
+          "winner": null,
+          "diameter": 10.0,
+          "dark_bridge": false,
+          "dominant": false,
+          "rule": "margin",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0067-0055",
+        "anchor": [
+          67,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            67,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.07256116427020091,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              65,
+              69
+            ],
+            [
+              54,
+              65,
+              65
+            ],
+            [
+              54,
+              69,
+              69
+            ],
+            [
+              55,
+              65,
+              65
+            ],
+            [
+              55,
+              69,
+              69
+            ],
+            [
+              56,
+              65,
+              65
+            ],
+            [
+              56,
+              69,
+              69
+            ],
+            [
+              57,
+              65,
+              69
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            67.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            54,
+            69,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              66,
+              68
+            ],
+            [
+              55,
+              66,
+              68
+            ],
+            [
+              56,
+              66,
+              68
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            67.0,
+            55.0
+          ],
+          "bbox": [
+            67,
+            55,
+            68,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              67,
+              67
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              68.0,
+              56.5
+            ],
+            [
+              67.0,
+              56.5
+            ],
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.5,
+              56.0
+            ],
+            [
+              65.5,
+              55.0
+            ],
+            [
+              65.5,
+              54.0
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              67.0,
+              53.5
+            ],
+            [
+              68.0,
+              53.5
+            ],
+            [
+              68.5,
+              54.0
+            ],
+            [
+              68.5,
+              55.0
+            ],
+            [
+              68.5,
+              56.0
+            ],
+            [
+              68.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              67.78125,
+              56.28125
+            ],
+            [
+              67.0,
+              56.4375
+            ],
+            [
+              66.21875,
+              56.28125
+            ],
+            [
+              65.71875,
+              55.78125
+            ],
+            [
+              65.5625,
+              55.0
+            ],
+            [
+              65.71875,
+              54.21875
+            ],
+            [
+              66.21875,
+              53.71875
+            ],
+            [
+              67.0,
+              53.5625
+            ],
+            [
+              67.78125,
+              53.71875
+            ],
+            [
+              68.28125,
+              54.21875
+            ],
+            [
+              68.4375,
+              55.0
+            ],
+            [
+              68.28125,
+              55.78125
+            ],
+            [
+              67.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 67,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0067-0055"
+          ],
+          "winner": null,
+          "diameter": 10.0,
+          "dark_bridge": false,
+          "dominant": false,
+          "rule": "margin",
+          "peak_ratio_to_strongest": 0.9511333799811579,
+          "contrast_ratio_to_strongest": 0.9775280898876405
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0067-0055",
+        "distance": 10.0,
+        "dark_bridge": false,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ],
+          [
+            67,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "close",
+    "rule": "defer",
+    "metrics": {
+      "black": {
+        "visible": 2,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.07479687003238925,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0067-0055"
+          ],
+          "winner": null,
+          "diameter": 10.0,
+          "dark_bridge": false,
+          "dominant": false,
+          "rule": "defer",
+          "peak_ratio_to_strongest": 1.0,
+          "contrast_ratio_to_strongest": 1.0
+        }
+      },
+      {
+        "id": "K-0067-0055",
+        "anchor": [
+          67,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            67,
+            55
+          ]
+        ],
+        "reasons": [
+          "black-ambiguous"
+        ],
+        "accepted": false,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.07256116427020091,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              65,
+              69
+            ],
+            [
+              54,
+              65,
+              65
+            ],
+            [
+              54,
+              69,
+              69
+            ],
+            [
+              55,
+              65,
+              65
+            ],
+            [
+              55,
+              69,
+              69
+            ],
+            [
+              56,
+              65,
+              65
+            ],
+            [
+              56,
+              69,
+              69
+            ],
+            [
+              57,
+              65,
+              69
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            67.0,
+            55.0
+          ],
+          "bbox": [
+            66,
+            54,
+            69,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              66,
+              68
+            ],
+            [
+              55,
+              66,
+              68
+            ],
+            [
+              56,
+              66,
+              68
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            67.0,
+            55.0
+          ],
+          "bbox": [
+            67,
+            55,
+            68,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              67,
+              67
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              68.0,
+              56.5
+            ],
+            [
+              67.0,
+              56.5
+            ],
+            [
+              66.0,
+              56.5
+            ],
+            [
+              65.5,
+              56.0
+            ],
+            [
+              65.5,
+              55.0
+            ],
+            [
+              65.5,
+              54.0
+            ],
+            [
+              66.0,
+              53.5
+            ],
+            [
+              67.0,
+              53.5
+            ],
+            [
+              68.0,
+              53.5
+            ],
+            [
+              68.5,
+              54.0
+            ],
+            [
+              68.5,
+              55.0
+            ],
+            [
+              68.5,
+              56.0
+            ],
+            [
+              68.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              67.78125,
+              56.28125
+            ],
+            [
+              67.0,
+              56.4375
+            ],
+            [
+              66.21875,
+              56.28125
+            ],
+            [
+              65.71875,
+              55.78125
+            ],
+            [
+              65.5625,
+              55.0
+            ],
+            [
+              65.71875,
+              54.21875
+            ],
+            [
+              66.21875,
+              53.71875
+            ],
+            [
+              67.0,
+              53.5625
+            ],
+            [
+              67.78125,
+              53.71875
+            ],
+            [
+              68.28125,
+              54.21875
+            ],
+            [
+              68.4375,
+              55.0
+            ],
+            [
+              68.28125,
+              55.78125
+            ],
+            [
+              67.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 67,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [
+          "Nearby reflections have similar strength or uncertain ownership; the entire close group is withheld."
+        ],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-derived peak and color/background evidence.",
+          "Connected native interior and distinct retained support.",
+          "Complete dark perimeter around a compact reflection."
+        ],
+        "black_ownership": {
+          "group": [
+            "K-0057-0055",
+            "K-0067-0055"
+          ],
+          "winner": null,
+          "diameter": 10.0,
+          "dark_bridge": false,
+          "dominant": false,
+          "rule": "defer",
+          "peak_ratio_to_strongest": 0.9511333799811579,
+          "contrast_ratio_to_strongest": 0.9775280898876405
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "a": "K-0057-0055",
+        "b": "K-0067-0055",
+        "distance": 10.0,
+        "dark_bridge": false,
+        "path": [
+          [
+            57,
+            55
+          ],
+          [
+            58,
+            55
+          ],
+          [
+            59,
+            55
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            61,
+            55
+          ],
+          [
+            62,
+            55
+          ],
+          [
+            63,
+            55
+          ],
+          [
+            64,
+            55
+          ],
+          [
+            65,
+            55
+          ],
+          [
+            66,
+            55
+          ],
+          [
+            67,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "scene": "separate",
+    "rule": "winner",
+    "metrics": {
+      "black": {
+        "visible": 2,
+        "detected": 2,
+        "accepted": 2,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.07479687003238925,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ]
+      },
+      {
+        "id": "K-0083-0055",
+        "anchor": [
+          83,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            83,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.07256116427020091,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              81,
+              85
+            ],
+            [
+              54,
+              81,
+              81
+            ],
+            [
+              54,
+              85,
+              85
+            ],
+            [
+              55,
+              81,
+              81
+            ],
+            [
+              55,
+              85,
+              85
+            ],
+            [
+              56,
+              81,
+              81
+            ],
+            [
+              56,
+              85,
+              85
+            ],
+            [
+              57,
+              81,
+              85
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            83.0,
+            55.0
+          ],
+          "bbox": [
+            82,
+            54,
+            85,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              82,
+              84
+            ],
+            [
+              55,
+              82,
+              84
+            ],
+            [
+              56,
+              82,
+              84
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            83.0,
+            55.0
+          ],
+          "bbox": [
+            83,
+            55,
+            84,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              83,
+              83
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              84.0,
+              56.5
+            ],
+            [
+              83.0,
+              56.5
+            ],
+            [
+              82.0,
+              56.5
+            ],
+            [
+              81.5,
+              56.0
+            ],
+            [
+              81.5,
+              55.0
+            ],
+            [
+              81.5,
+              54.0
+            ],
+            [
+              82.0,
+              53.5
+            ],
+            [
+              83.0,
+              53.5
+            ],
+            [
+              84.0,
+              53.5
+            ],
+            [
+              84.5,
+              54.0
+            ],
+            [
+              84.5,
+              55.0
+            ],
+            [
+              84.5,
+              56.0
+            ],
+            [
+              84.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              83.78125,
+              56.28125
+            ],
+            [
+              83.0,
+              56.4375
+            ],
+            [
+              82.21875,
+              56.28125
+            ],
+            [
+              81.71875,
+              55.78125
+            ],
+            [
+              81.5625,
+              55.0
+            ],
+            [
+              81.71875,
+              54.21875
+            ],
+            [
+              82.21875,
+              53.71875
+            ],
+            [
+              83.0,
+              53.5625
+            ],
+            [
+              83.78125,
+              53.71875
+            ],
+            [
+              84.28125,
+              54.21875
+            ],
+            [
+              84.4375,
+              55.0
+            ],
+            [
+              84.28125,
+              55.78125
+            ],
+            [
+              83.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 83,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ]
+      }
+    ],
+    "pairs": []
+  },
+  {
+    "scene": "separate",
+    "rule": "margin",
+    "metrics": {
+      "black": {
+        "visible": 2,
+        "detected": 2,
+        "accepted": 2,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.07479687003238925,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ]
+      },
+      {
+        "id": "K-0083-0055",
+        "anchor": [
+          83,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            83,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.07256116427020091,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              81,
+              85
+            ],
+            [
+              54,
+              81,
+              81
+            ],
+            [
+              54,
+              85,
+              85
+            ],
+            [
+              55,
+              81,
+              81
+            ],
+            [
+              55,
+              85,
+              85
+            ],
+            [
+              56,
+              81,
+              81
+            ],
+            [
+              56,
+              85,
+              85
+            ],
+            [
+              57,
+              81,
+              85
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            83.0,
+            55.0
+          ],
+          "bbox": [
+            82,
+            54,
+            85,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              82,
+              84
+            ],
+            [
+              55,
+              82,
+              84
+            ],
+            [
+              56,
+              82,
+              84
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            83.0,
+            55.0
+          ],
+          "bbox": [
+            83,
+            55,
+            84,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              83,
+              83
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              84.0,
+              56.5
+            ],
+            [
+              83.0,
+              56.5
+            ],
+            [
+              82.0,
+              56.5
+            ],
+            [
+              81.5,
+              56.0
+            ],
+            [
+              81.5,
+              55.0
+            ],
+            [
+              81.5,
+              54.0
+            ],
+            [
+              82.0,
+              53.5
+            ],
+            [
+              83.0,
+              53.5
+            ],
+            [
+              84.0,
+              53.5
+            ],
+            [
+              84.5,
+              54.0
+            ],
+            [
+              84.5,
+              55.0
+            ],
+            [
+              84.5,
+              56.0
+            ],
+            [
+              84.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              83.78125,
+              56.28125
+            ],
+            [
+              83.0,
+              56.4375
+            ],
+            [
+              82.21875,
+              56.28125
+            ],
+            [
+              81.71875,
+              55.78125
+            ],
+            [
+              81.5625,
+              55.0
+            ],
+            [
+              81.71875,
+              54.21875
+            ],
+            [
+              82.21875,
+              53.71875
+            ],
+            [
+              83.0,
+              53.5625
+            ],
+            [
+              83.78125,
+              53.71875
+            ],
+            [
+              84.28125,
+              54.21875
+            ],
+            [
+              84.4375,
+              55.0
+            ],
+            [
+              84.28125,
+              55.78125
+            ],
+            [
+              83.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 83,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ]
+      }
+    ],
+    "pairs": []
+  },
+  {
+    "scene": "separate",
+    "rule": "defer",
+    "metrics": {
+      "black": {
+        "visible": 2,
+        "detected": 2,
+        "accepted": 2,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "red": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      },
+      "yellow": {
+        "visible": 0,
+        "detected": 0,
+        "accepted": 0,
+        "false_positive": 0,
+        "duplicate_extras": 0,
+        "wrong_color": 0,
+        "background_pixels": 0,
+        "other_body_pixels": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "K-0057-0055",
+        "anchor": [
+          57,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            57,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7758222183174236,
+          "mean5_y": 0.14383264181694116,
+          "mean7_y": 0.07569346630964385,
+          "mean9_y": 0.07479687003238925,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6980392156862745,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              55,
+              59
+            ],
+            [
+              54,
+              55,
+              55
+            ],
+            [
+              54,
+              59,
+              59
+            ],
+            [
+              55,
+              55,
+              55
+            ],
+            [
+              55,
+              59,
+              59
+            ],
+            [
+              56,
+              55,
+              55
+            ],
+            [
+              56,
+              59,
+              59
+            ],
+            [
+              57,
+              55,
+              59
+            ]
+          ],
+          "maximum_value": 0.2627450980392157,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            56,
+            54,
+            59,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              56,
+              58
+            ],
+            [
+              55,
+              56,
+              58
+            ],
+            [
+              56,
+              56,
+              58
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            57.0,
+            55.0
+          ],
+          "bbox": [
+            57,
+            55,
+            58,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              57,
+              57
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              58.0,
+              56.5
+            ],
+            [
+              57.0,
+              56.5
+            ],
+            [
+              56.0,
+              56.5
+            ],
+            [
+              55.5,
+              56.0
+            ],
+            [
+              55.5,
+              55.0
+            ],
+            [
+              55.5,
+              54.0
+            ],
+            [
+              56.0,
+              53.5
+            ],
+            [
+              57.0,
+              53.5
+            ],
+            [
+              58.0,
+              53.5
+            ],
+            [
+              58.5,
+              54.0
+            ],
+            [
+              58.5,
+              55.0
+            ],
+            [
+              58.5,
+              56.0
+            ],
+            [
+              58.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              57.78125,
+              56.28125
+            ],
+            [
+              57.0,
+              56.4375
+            ],
+            [
+              56.21875,
+              56.28125
+            ],
+            [
+              55.71875,
+              55.78125
+            ],
+            [
+              55.5625,
+              55.0
+            ],
+            [
+              55.71875,
+              54.21875
+            ],
+            [
+              56.21875,
+              53.71875
+            ],
+            [
+              57.0,
+              53.5625
+            ],
+            [
+              57.78125,
+              53.71875
+            ],
+            [
+              58.28125,
+              54.21875
+            ],
+            [
+              58.4375,
+              55.0
+            ],
+            [
+              58.28125,
+              55.78125
+            ],
+            [
+              57.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 57,
+          "y": 55,
+          "luminance": 0.7758222183174236,
+          "rgb_native": [
+            228,
+            228,
+            228
+          ],
+          "rgb_srgb": [
+            228,
+            228,
+            228
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8941176470588236
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [],
+        "inventory_number": 1,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ]
+      },
+      {
+        "id": "K-0083-0055",
+        "anchor": [
+          83,
+          55
+        ],
+        "plateau_pixels": [
+          [
+            83,
+            55
+          ]
+        ],
+        "reasons": [],
+        "accepted": true,
+        "pathway": "black",
+        "confidence": {
+          "raw_y": 0.7379104087727308,
+          "mean5_y": 0.13658895514745098,
+          "mean7_y": 0.07199770780480193,
+          "mean9_y": 0.07256116427020091,
+          "dark_neutral_shell_fraction": 1.0,
+          "peak_shell_value_contrast": 0.6823529411764706,
+          "paper_fraction": 0.0,
+          "chromatic_core_fraction": 0.0
+        },
+        "color": "black",
+        "dark_threshold_v": 0.32,
+        "dark_perimeter": {
+          "closed": true,
+          "core_pixels": 9,
+          "runs": [
+            [
+              53,
+              81,
+              85
+            ],
+            [
+              54,
+              81,
+              81
+            ],
+            [
+              54,
+              85,
+              85
+            ],
+            [
+              55,
+              81,
+              81
+            ],
+            [
+              55,
+              85,
+              85
+            ],
+            [
+              56,
+              81,
+              81
+            ],
+            [
+              56,
+              85,
+              85
+            ],
+            [
+              57,
+              81,
+              85
+            ]
+          ],
+          "maximum_value": 0.2549019607843137,
+          "signal": "icc-gray",
+          "sigma": 0.0,
+          "threshold": 0.32,
+          "linear_luminance_threshold": 0.0835351274258047
+        },
+        "region": {
+          "pixel_count": 9,
+          "centroid": [
+            83.0,
+            55.0
+          ],
+          "bbox": [
+            82,
+            54,
+            85,
+            57
+          ],
+          "runs": [
+            [
+              54,
+              82,
+              84
+            ],
+            [
+              55,
+              82,
+              84
+            ],
+            [
+              56,
+              82,
+              84
+            ]
+          ]
+        },
+        "bright_patch": {
+          "pixel_count": 1,
+          "centroid": [
+            83.0,
+            55.0
+          ],
+          "bbox": [
+            83,
+            55,
+            84,
+            56
+          ],
+          "runs": [
+            [
+              55,
+              83,
+              83
+            ]
+          ]
+        },
+        "outline": {
+          "raw": [
+            [
+              84.0,
+              56.5
+            ],
+            [
+              83.0,
+              56.5
+            ],
+            [
+              82.0,
+              56.5
+            ],
+            [
+              81.5,
+              56.0
+            ],
+            [
+              81.5,
+              55.0
+            ],
+            [
+              81.5,
+              54.0
+            ],
+            [
+              82.0,
+              53.5
+            ],
+            [
+              83.0,
+              53.5
+            ],
+            [
+              84.0,
+              53.5
+            ],
+            [
+              84.5,
+              54.0
+            ],
+            [
+              84.5,
+              55.0
+            ],
+            [
+              84.5,
+              56.0
+            ],
+            [
+              84.0,
+              56.5
+            ]
+          ],
+          "smooth": [
+            [
+              83.78125,
+              56.28125
+            ],
+            [
+              83.0,
+              56.4375
+            ],
+            [
+              82.21875,
+              56.28125
+            ],
+            [
+              81.71875,
+              55.78125
+            ],
+            [
+              81.5625,
+              55.0
+            ],
+            [
+              81.71875,
+              54.21875
+            ],
+            [
+              82.21875,
+              53.71875
+            ],
+            [
+              83.0,
+              53.5625
+            ],
+            [
+              83.78125,
+              53.71875
+            ],
+            [
+              84.28125,
+              54.21875
+            ],
+            [
+              84.4375,
+              55.0
+            ],
+            [
+              84.28125,
+              55.78125
+            ],
+            [
+              83.78125,
+              56.28125
+            ]
+          ],
+          "maximum_vertex_displacement": 0.30935921676911454,
+          "method": "two cyclic 1:2:1 vertex averages; display only, no splines or mask alteration"
+        },
+        "brightest": {
+          "x": 83,
+          "y": 55,
+          "luminance": 0.7379104087727308,
+          "rgb_native": [
+            223,
+            223,
+            223
+          ],
+          "rgb_srgb": [
+            223,
+            223,
+            223
+          ],
+          "hsv_srgb": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "hsv_native": {
+            "h": 0.0,
+            "s": 0.0,
+            "v": 0.8745098039215686
+          },
+          "scope": "absolute maximum ICC luminance of the accepted measured native interior; y,x ties",
+          "ties": 1
+        },
+        "warnings": [
+          "Reflection support only; not the whole black bead.",
+          "Dark material evidence is photographic, not a calibrated material probability."
+        ],
+        "explanations": [],
+        "inventory_number": 2,
+        "acceptance_reasons": [
+          "Image-only R272 location/color/ICC brightness evidence.",
+          "Native closed reflection support survives conservative close-reflection competition."
+        ]
+      }
+    ],
+    "pairs": []
+  }
+]
