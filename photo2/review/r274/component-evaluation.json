@@ -1,0 +1,516 @@
+{
+  "scope": "Region component only: locations and core colors automatically detected from the equal-Y input, then held fixed while only illumination/highlights change. Not end-to-end recall.",
+  "results": [
+    {
+      "condition": "equal-Y",
+      "results": {
+        "r273": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 577,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 598,
+              "reasons": []
+            }
+          ]
+        },
+        "r274": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 577,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 598,
+              "reasons": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "condition": "soft-boundary",
+      "results": {
+        "r273": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": false,
+              "area": 1018,
+              "reasons": [
+                "interior-open"
+              ]
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": false,
+              "area": 1198,
+              "reasons": [
+                "interior-open"
+              ]
+            }
+          ]
+        },
+        "r274": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 577,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 577,
+              "reasons": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "condition": "shading",
+      "results": {
+        "r273": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 500,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 529,
+              "reasons": []
+            }
+          ]
+        },
+        "r274": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 500,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 529,
+              "reasons": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "condition": "neutral-highlight",
+      "results": {
+        "r273": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 476,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": false,
+              "area": 5,
+              "reasons": [
+                "interior-small"
+              ]
+            }
+          ]
+        },
+        "r274": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 476,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 490,
+              "reasons": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "condition": "dim",
+      "results": {
+        "r273": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 433,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 446,
+              "reasons": []
+            }
+          ]
+        },
+        "r274": {
+          "metrics": {
+            "black": {
+              "visible": 0,
+              "detected": 0,
+              "accepted": 0,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "red": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            },
+            "yellow": {
+              "visible": 1,
+              "detected": 1,
+              "accepted": 1,
+              "false_positive": 0,
+              "duplicate_extras": 0,
+              "wrong_color": 0,
+              "background_pixels": 0,
+              "other_body_pixels": 0
+            }
+          },
+          "regions": [
+            {
+              "id": "C-0054-0061",
+              "accepted": true,
+              "area": 433,
+              "reasons": []
+            },
+            {
+              "id": "C-0078-0061",
+              "accepted": true,
+              "area": 446,
+              "reasons": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

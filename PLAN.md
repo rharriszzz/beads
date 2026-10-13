@@ -1,5 +1,36 @@
 # Photo-2 reconstruction plan
 
+## Current R274 — hue-aware interiors and separate trusted locations
+
+[Report](photo2/HUE_INTERIORS_R274.md) · [viewer](photo2/hue_inventory_r274/index.html).
+User asks stronger red/yellow hue boundaries, shading/highlight tolerance, and retention
+of good locations when larger interiors fail. R273 fully preserved; black ownership
+accepted and unchanged. Compare8rules, including narrower hue, global palette, local
+seed palette, spatial contrast and highlight continuation. Select local core-versus-
+opposite learned hue with2°margin; native S≥0.35/chroma≥0.055 makes hue reliable.
+Bounded color-supported highlight continuation avoids a false ring around neutral
+specular peaks. Stronger global/spatial controls over-trim or fragment some interiors.
+
+570accepted interiors:201black/116red/253yellow.574trusted location proposals include
+all524R273locations with identical coordinates;4retain location but no accepted larger
+interior (3red/1yellow). Stable IDs; separate point/interior measurements.13retained red
+masks and206retained yellow masks change;100red and201black masks unchanged. New3red/
+47yellow interiors; median paired yellow area83.54%ofR273, red unchanged. No count or
+whole-photo recall claim. Larger red-labeled color-conflict example remains ambiguous,
+not presented as a solved outline. Cyan points persist without uncertain outlines;
+size ordering only uses accepted exact masks.49actualJS Node checks pass.
+
+45Python tests;570native masks/574locations/201unchanged black regions,162old hashes
+and exact end-to-end image-only regeneration pass.199end-to-end synthetic scenes have
+zero selected false/duplicate locations or foreign pixels; old location gates still
+miss many new contact fixtures. Fixed automatically found-location component tests
+show equal-Y gradual hue separation and repaired neutral-highlight support; distinct
+from end-to-end recall. No geometry/watershed/old splines/manual runtime IDs/indexing.
+Rendered browser test remains deferred under prior skip-new-approval preference.
+Commit/push then stop for review of contact crops and4location-only cases. Keep current
+model/reasoning; no /new needed. No automatic next phase.
+
+
 ## Current R273 — broader interiors, reflection ownership and implemented red remedy
 
 [Report](photo2/INTERIORS_R273.md) · [red diagnosis/remedies](photo2/RED_LOSSES_R273.md) ·

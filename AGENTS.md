@@ -1,5 +1,15 @@
 # Beads photo-2 workflow
 
+R274 supersedes colored-interior boundary rules; see photo2/HUE_INTERIORS_R274.md.
+Local core-versus-opposite learned hue with2°margin, reliable chroma and bounded neutral
+highlight continuation selected after8controls.570interiors (201black/116red/253yellow),
+574trusted locations; preserve all524R273coordinates even when4larger interiors fail.
+Black masks/ownership unchanged. Exact masks separate from smooth display contours;
+location-only points have no invented area or size rank.45Python/49Node checks and
+native/regeneration/hash audit pass. Prior results preserved. Rendered browser remains
+deferred. Stop for photo review after push; no geometry/indexing/automatic next phase.
+
+
 R273 supersedes R272 coverage/count targets: widespread trusted subset, not completeness.
 See photo2/INTERIORS_R273.md and photo2/RED_LOSSES_R273.md. Old masks do not delimit
 photographic support. Selected native directional trough rule removes global cutoff

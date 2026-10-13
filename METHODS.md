@@ -1905,3 +1905,11 @@ follow-up, exact audits and residual HSV diagnostics; v1 results remain frozen.
 troughs; no global brightening fallback. Removal-only cleanup, shape/ownership tests,
 peak/contrast black competition, exact mask measurements and minimal viewer. All
 controls and exclusions preserved; no watershed, geometry or string indexing.
+
+## R274 — hue-aware interiors, location/interior separation
+
+[Report](photo2/HUE_INTERIORS_R274.md), [reproduction](photo2/review/r274/README.md).
+Saturation-aware native circular hue competes against a learned rival color using the
+local core as reference.8color/contrast/highlight controls; exact native path evidence.
+Trusted point survives uncertain expansion; viewer size ordering excludes unknown
+areas. Black ownership/masks unchanged. All previous results and exclusions preserved.

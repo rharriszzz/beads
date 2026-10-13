@@ -7727,3 +7727,42 @@ remains deferred after the knownR272sandbox failure, in keeping with the user's 
 new-approval instruction. Saved test can run later. Reports photo2/INTERIORS_R273.md
 and photo2/RED_LOSSES_R273.md. Scoped commit/push, then stop for photo review; no
 new phase without request. Keep current model/reasoning; no /new needed.
+
+## R274 — stronger hue boundaries for yellow/red; retain trusted locations
+
+User reports R273 enlarged interiors mostly better and accepts black-reflection
+ownership. Requests image-only hue/color stopping where brightness changes little,
+retaining same-bead shading, cautious highlights, connected smooth broad interiors,
+photographic yellow→red/red→yellow comparisons and explicit stopping evidence.
+Good locations must survive failed large interiors. Update inventory/viewer/report,
+preserveR273, commit and push. No geometry or physical-string indexing requested.
+
+Compared8rules on identical automatically regenerated inputs: R273, seed-hue18,
+global palette, global contrast, local seed palette, local contrast, path contrast,
+and local palette with highlight continuation. Global palette over-trims shaded
+orange/yellow interiors; explicit spatial contrast can fragment them. Selected2°
+local-core/rival hue margin with S≥0.35and chroma≥0.055; radius8highlight continuation
+requires nearby≤6pxchromatic support and sufficient brightness, never background.
+Image-learned red352.4144°/yellow35.3446° are outputs, not frozen detector inputs.
+At5reviewed color-stop pixels, R273brightness floor passes and valley trigger is false.
+Large red-labeled color conflict remains uncertain; do not claim its outline fixed.
+
+Final570interiors (201black/116red/253yellow),574trusted location proposals. All524R273
+points retained exactly;3red/1yellow have uncertain interiors.13common red/206common
+yellow masks change;100red/201black unchanged.3red/47yellow newly accepted interiors.
+Median paired yellow area83.54%ofR273; red unchanged.4location-only IDs remain clickable
+and searchable, with no invented area or position in native-size ordering. All869
+candidate decisions, exact masks, native HSV/RGB/ICC Y, bright patches, contours,
+old/new records, numerical ray traces and rejected alternatives saved separately.
+
+45Python tests and49actualJS Node checks pass. Exact570mask/574point/201black audit,
+162preservedR273hashes and image-only regeneration pass.199end-to-end synthetic scenes
+show zero selected false/duplicate locations/background or other-body pixels; inherited
+location gates cause many misses. Fixed automatic-location component tests isolate
+boundary behavior: gradual nearly equal-Y interface gives2separate577pxsupports where
+R273gave oversized1018/1198px; neutral highlight recovers490pxfromold5px. Same-color
+shading/dimming masks unchanged. These component tests are not end-to-end recall.
+Known sandbox browser launch limitation remains deferred; no new approval requested.
+Routine git synchronization used existing approved permission after the sandbox denied
+writing FETCH_HEAD. Report photo2/HUE_INTERIORS_R274.md; scoped commit/push then stop
+for photo review. Keep current model/reasoning; no /new needed.
