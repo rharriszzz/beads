@@ -174,6 +174,45 @@ happens to retain P129034 because a different brighter candidate wins first;
 that ordering accident does not establish safe neighbor separation. No beads or
 masks were actually merged in this audit.
 
+## Added steering — hue alone and discard small ambiguous regions
+
+The user also states that hue alone can distinguish background in this photograph
+and instructs us to discard small ambiguous regions. **The revised candidate
+views exclude supports below 12 distinct native pixels**, using the existing
+R266 recovery cutoff as the operational minimum. This is a size decision for
+ambiguous supports, not a claim about physical bead size. All rejected maxima
+remain in the complete rankings and exclusion ledger.
+
+[Fixed background + size filter: R00956](review/r267/R00956-fixed-background-size12-square7.png) ·
+[R01284](review/r267/R01284-fixed-background-size12-square7.png).
+These are the recommended final candidate-review views. At mean7, the filter
+excludes 10/16 small candidate supports before association in the two crops;
+29/51 candidates survive subsequent competition. These are not verified beads.
+The key P090766/P091694/P092706/P128672 candidates survive with supports of
+14/20/51/49 native pixels. The brighter R01284 reflection P127837 has only
+10 pixels and is now discarded from these candidate views, as requested.
+
+[Hue alone + same size filter: R00956](review/r267/R00956-hue-only-size12-square7.png) ·
+[R01284](review/r267/R01284-hue-only-size12-square7.png).
+This separate control uses only circular hue distance from the **already learned**
+paper center 312.21°, with the existing 30° uncertainty half-band. It does not
+introduce an FFT, standard-deviation classifier, learned palette box or new hue
+search. It yields 23/34 mean7 candidates after the same size cutoff and association.
+
+That literal broad-band control also removes visible left-side reflection maxima
+in R01284: P127837 has H339.2°, and P129209 has H332.4° (the latter has a 25-pixel
+support). This is a limitation of transferring this particular uncertainty band
+into a hard hue-only gate; it does **not** establish that a carefully chosen
+photo-specific hue treatment cannot separate background. Keep the established
+background version alongside it and do not silently adopt the literal band.
+Background separation remains outside the next requested seed-selection aspect.
+
+The exclusion ledger records hue, circular paper-hue distance, support size and
+reason for every tested candidate. The additional support-size check reuses
+preserved masks where available and otherwise replays the same frozen growth
+(509 seed replays including the context halos and six-scale plateau alternatives).
+No growth threshold, outline rule or production selection method was changed.
+
 ## Do the starting points explain the irregular support?
 
 Only **after saving the initial rankings**, replay unchanged strict straight
@@ -218,6 +257,7 @@ MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m photo2.bead_detection.audit
 MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m photo2.bead_detection.compare_r267
 MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m photo2.bead_detection.document_r267
 MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m photo2.bead_detection.background_control_r267
+MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m photo2.bead_detection.hue_size_control_r267
 MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m unittest photo2.bead_detection.test_audit_r267 > photo2/review/r267/tests.log 2>&1
 MPLCONFIGDIR=/tmp/beads-r267-mpl .venv/bin/python -m photo2.bead_detection.validate_r267
 ```

@@ -7383,3 +7383,25 @@ artifact hashes/reproduction commands preserved. Prepare scoped commit/push and
 verify exact remote tip/clean state, then stop. Next only when requested: retain
 low-prominence foreground candidates before growth and test adjacent-bead
 separation; keep background fixed. Keep current model/reasoning; no/new for review.
+
+
+R267 additional steering after the first audit push: user says hue alone can solve
+background at least for this photo; asks to discard small ambiguous regions.
+Added fixed-background+support>=12 and hue-only+support>=12 candidate views across
+all six averages; the12-native-pixel minimum reuses the previous recovery cutoff.
+Keep every excluded maximum/reason in the audit. Fixed-background mean7 excludes
+10/16 small candidate supports before association, leaving30/51 candidates;
+key low-prominence yellow alternatives survive. The literal learned312.21°±30°
+hue-only control leaves23/34 but also removes tinted R01284 reflections; record
+this band-transfer limitation without reopening background optimization. No new
+hue search, FFT, outline tuning or production detector change.682 frozen seed
+replays supply missing support sizes; old masks reused where available. Final
+review recommendation is fixed-background+size, with hue-only alongside.
+Prepare follow-up commit/push, verify exact remote/clean state, then stop.
+
+Final hue/size control reuses the exact saved full eligible halo pool before
+association (rather than reconstructing halo eligibility). This corrects the
+provisional added-step counts above: fixed-background mean7 has29/51 candidates;
+509 new frozen size replays, not682. In-crop small exclusions remain10/16 and
+hue-only mean7 remains23/34.811 final selected-support checks and336 hue-only
+checks pass, alongside all original R267 numerical/source-preservation checks.

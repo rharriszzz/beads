@@ -22,7 +22,22 @@ def main():
         assert all(v['overlapping_labels']==v['labels_covering_maximum_markers']==0 for v in s['label_checks'].values())
     tests=(OUT/'tests.log').read_text();assert 'Ran 4 tests' in tests and tests.rstrip().endswith('OK')
     control=json.loads((OUT/'control-summary.json').read_text());table=json.loads((OUT/'table-validation.json').read_text())
-    save(OUT/'validation.json',dict(status='pass',source_input_hashes=len(manifest['inputs']),native_originals_exact=2,maximum_pixels=pixel_count,independent_rank_checks=rank_checks,numeric_tests=4,old_mask_exact_checks=control['old_mask_exact_checks'],prominence_gate_checks=table['prominence_gate_checks'],selected_score_checks=table['selected_score_checks'],detector_changed=False,visual_review='Both all-maxima mean7 maps, fixed-background mean7 maps and frozen-growth photographs inspected. No verified bead identities/center error asserted.'))
+    size_checks=0;hue_checks=0
+    hue_summary=json.loads((OUT/'hue-size-summary.json').read_text())
+    for crop in manifest['summaries']:
+        choices=json.loads((OUT/f'{crop}-hue-size-selection.json').read_text())
+        for mode,metrics in choices.items():
+            for metric,results in metrics.items():
+                for r in results['selected']:
+                    assert r['support_pixels']>=hue_summary['minimum_pixels']
+                    size_checks+=1
+                    if mode=='hue-only-size12':
+                        x,y=r['bright_patch']['peak']
+                        from matplotlib.colors import rgb_to_hsv
+                        h=float(rgb_to_hsv(rgb[y,x]/255.)[0]*360)
+                        assert abs((h-hue_summary['paper_hue_center_deg']+180)%360-180)>hue_summary['paper_hue_half_band_deg']
+                        hue_checks+=1
+    save(OUT/'validation.json',dict(status='pass',minimum_support_checks=size_checks,hue_only_checks=hue_checks,source_input_hashes=len(manifest['inputs']),native_originals_exact=2,maximum_pixels=pixel_count,independent_rank_checks=rank_checks,numeric_tests=4,old_mask_exact_checks=control['old_mask_exact_checks'],prominence_gate_checks=table['prominence_gate_checks'],selected_score_checks=table['selected_score_checks'],detector_changed=False,visual_review='Both all-maxima mean7 maps, fixed-background mean7 maps and frozen-growth photographs inspected. No verified bead identities/center error asserted.'))
     files=sorted(p for p in OUT.rglob('*') if p.is_file() and p.name!='artifact-hashes.json')
     files+=sorted((ROOT/'photo2/bead_detection').glob('*r267.py'))
     files+=[ROOT/'photo2/LOCAL_MAXIMA_R267.md']

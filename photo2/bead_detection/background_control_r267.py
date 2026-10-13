@@ -50,7 +50,7 @@ def main():
                 candidates.append(dict(id=pid,bright_patch=dict(peak=[x,y]),audit_average=averages(v,x,y)[key]))
             with patch.object(ref,'quality',lambda r,v,h:dict(score=r['audit_average'])):
                 kept,suppressed,pairs=ref.associate(copy.deepcopy(candidates),v,hsv)
-            kept=[r for r in kept if inside(*r['bright_patch']['peak'],box)];selections[key]=dict(selected=kept,suppressed=suppressed,associations=pairs,domain=domain)
+            kept=[r for r in kept if inside(*r['bright_patch']['peak'],box)];selections[key]=dict(selected=kept,suppressed=suppressed,associations=pairs,domain=domain,eligible_candidates=candidates)
             pts={(r['id'],*r['bright_patch']['peak']) for r in kept};display=[r for r in rows if (r['plateau_id'],r['x'],r['y']) in pts]
             map_image(rgb,box,display,key,OUT/f'{name}-fixed-background-{key}.png',f'{name} | fixed R266 background + {key} candidates',rank_population=len(rows))
         save(OUT/f'{name}-fixed-background-selection.json',selections)

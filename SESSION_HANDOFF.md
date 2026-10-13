@@ -30,6 +30,14 @@ requested: pre-growth retention of low-prominence interior alternatives with
 explicit adjacent-bead separation and fixed background. Do not resume outlines.
 Keep the user's current model/reasoning; no `/new` needed for evidence review.
 
+R267 later steering: user says hue alone suffices for background in this photo and
+asks to discard small ambiguous regions. Final review candidates exclude frozen
+supports below12 native pixels (existing recovery cutoff); all evidence survives.
+Both fixed-background+size and literal existing-paper-hue-band+size controls are
+saved at all six averaging scales. Recommend the fixed-background+size review;
+the broad hue-only band also removes some tinted reflections, so it is not silently
+adopted. No production detector or outline rule changed; background remains fixed.
+
 ## Current R266 — strict annular comparison and automatic peak selection
 
 [Report](photo2/DETECTION_R266.md) · [evidence](photo2/review/r266/README.md).

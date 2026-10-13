@@ -15,6 +15,14 @@ Background is established per user steering; keep it fixed, no new FFT/backgroun
 or outline optimization. Next only when requested: pre-growth candidate retention
 and adjacent-bead separation. Stop after delivery; preserve all previous results.
 
+R267 later steering: user says hue alone suffices for background in this photo and
+asks to discard small ambiguous regions. Final review candidates exclude frozen
+supports below12 native pixels (existing recovery cutoff); all evidence survives.
+Both fixed-background+size and literal existing-paper-hue-band+size controls are
+saved at all six averaging scales. Recommend the fixed-background+size review;
+the broad hue-only band also removes some tinted reflections, so it is not silently
+adopted. No production detector or outline rule changed; background remains fixed.
+
 R266 supersedes the R265 next-step restriction: see photo2/DETECTION_R266.md.
 Strict light-to-dark0 DN is primary;1–3 DN are diagnostic only. Annular comparison
 uses one-native-pixel fixed-parent shells, irreversible stopped sectors and optional

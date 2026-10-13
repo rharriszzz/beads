@@ -14,6 +14,17 @@ Start with the originals and numbered tables:
   straight/annular × 12/6/3-DN saved variants and exact weighted score terms.
 - [Neighbor-failure photograph](R01284-neighbor-failure.png).
 
+Latest user steering: discard small ambiguous regions. Final candidate-review
+views use the established background plus **support ≥12 native pixels**:
+[R00956](R00956-fixed-background-size12-square7.png),
+[R01284](R01284-fixed-background-size12-square7.png).
+The parallel `hue-only-size12-*.png` views test the existing learned paper hue
+alone; its broad band also removes some tinted reflections, so it is not adopted
+as a production background replacement. All six means have both views.
+`hue-size-candidate-decisions.csv`, `hue-size-growth-sizes.json` and
+`hue-size-summary.json` preserve every exclusion and the exact fixed parameters.
+`*-hue-size-selection.json` keeps both candidate and suppression inventories.
+
 For each crop, six `all-{square5,square7,square9,disk2,disk3,disk4}.png` maps show
 **every** native maximum pixel with nonoverlapping labels and ranking colors.
 The matching `rank-*.csv` files are independently ordered by that measurement.
