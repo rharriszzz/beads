@@ -7405,3 +7405,50 @@ provisional added-step counts above: fixed-background mean7 has29/51 candidates;
 509 new frozen size replays, not682. In-crop small exclusions remain10/16 and
 hue-only mean7 remains23/34.811 final selected-support checks and336 hue-only
 checks pass, alongside all original R267 numerical/source-preservation checks.
+
+## R268 — climb neighborhood-average brightness surfaces (2026-10-12)
+
+User requests a focused R00956/R01284 experiment starting from every existing
+candidate maximum and supported coordinate. Construct native5/7/9 square-average
+V surfaces; deterministic strictly improving eight-neighbor climbs with explicit
+equal-plateau handling. Preserve every step/score/endpoint/stop and prevent crossing
+substantial raw valleys, confident background and clear color boundaries. Compare
+raw maxima/selected points and convergence without assuming common bead identity.
+Save clear photographic paths/tables and test known synthetic multiple highlights,
+adjacency, uneven shading/background. The new synthetic request supersedes R267's
+no-simulated-positions restriction for this validation only; truth never enters
+photo climbing. No watershed/old geometry or production change before evidence.
+Python automation, concise report, scoped commit/push; preserve all prior results.
+
+Preflight: daisy, photo-2-strategy-v3, clean/no stashes, fetch0/0 at db89397.
+Read current AGENTS/handoff/plan/latest log and R267 experiment/source. Methods:
+strict mean-surface climbing, explicit stationary equal-plateau diagnosis, guarded
+climbing and fixed guard-sensitivity controls. No background or outline optimization.
+
+R268 outcome: completed native 5/7/9 mean-V climbing from 451 unique coordinates
+(3,163 source records), six fixed controls, 8,118 photographic trajectories and
+39 per-start card pages. Every original raw maximum/support role, exact score,
+strict step, rejected higher neighbor, plateau diagnosis, endpoint and convergence
+membership is saved. All old R267 evidence and production sources hash-identical.
+No new region growth, outline optimization, background fit or bead identities.
+
+Central R01284 old seed and R267 interior candidate converge at all three scales;
+R00956 has competing optima and within-body shading stops. Unguarded 9x9 sends
+the shadowed neighbor onto the central yellow; guarded12 stops that named crossing.
+This is useful coordinate refinement evidence, not a reliable one-point-per-bead
+selector, so production is unchanged. Long weak-start paths remain explicit.
+
+Synthetic validation: 96 existing stress scenes plus four unobservable-interface
+controls, 243,450 full traces. Initial color guard missed dark-to-bright saturation
+transitions. The evidence-supported experimental repair checks saturation when
+either pixel is bright; original both-bright guard retained as legacy-color12 with
+exact old photo trace hashes and failure images. Final guarded12 yields 0 cross-body
+endpoints among 500 body starts at each size in the regular scenes, with one
+background exit at 9x9. Four no-visible-interface scenes still cross for 13/42 body
+starts at mean7. No synthetic identity/center enters climbing or photo decisions.
+13 numerical tests pass; all 360,078 native moves checked for strict ascent and
+applicable barriers, photo scores checked against original pixels, 396 deterministic
+current-point replays. Report: photo2/CLIMBING_MAXIMA_R268.md; full evidence and
+reproduction: photo2/review/r268/README.md. Prepare scoped commit/push, verify
+remote tip and clean state, then stop. Next only on request: endpoint/weak-start
+review before selection. Keep current model/reasoning; no /new needed.

@@ -1,5 +1,34 @@
 # Beads session handoff — new branch
 
+## Current R268 — climb neighborhood-average brightness
+
+[Report](photo2/CLIMBING_MAXIMA_R268.md) · [photographs and traces](photo2/review/r268/README.md).
+451 unique starts preserve every raw maximum pixel and existing seed/support
+coordinate in R00956/R01284. Exact native 5/7/9 square-V means, deterministic
+strict eight-neighbor ascent, stationary equal-plateau diagnostics and six guard
+controls produce 8,118 photographic traces. Every step, blocked move, convergence
+membership and original source remains available, including 39 start-card pages.
+
+R01284's central-yellow old seed and R267 interior candidate converge at all three
+scales. R00956 retains competing local optima; the raw-valley guard sometimes stops
+within apparent bead shading. Unguarded 9x9 crosses from a shadowed neighbor to the
+central yellow; guarded12 prevents that named crossing. Endpoint agreement does
+not assign bead identity. No production detector or outline changes; old R267 and
+production source hashes are unchanged. Background evidence remains fixed.
+
+100 synthetic scenes preserve 243,450 traces. A dark-to-colored transition exposed
+an experimental saturation-guard gap; the original guard survives as legacy-color12
+with exact old photographic trace hashes. Final guarded12 has zero cross-body
+endpoints in the 96 regular scenes at all sizes, but one background exit at 9x9;
+13 of 42 body starts cross in four scenes with no visible internal boundary.
+13 tests and checks of all 360,078 native moves pass. This supports continued
+coordinate review, not adoption as a reliable per-bead selector.
+
+Stop after scoped commit/push and exact remote/clean verification. Next only when
+requested: review converged versus competing foreground endpoints and weak-start
+failure witnesses before selecting a rule. No outline, background, geometry or
+indexing phase. Keep the user's current model/reasoning; no `/new` needed.
+
 ## Current R267 — audit all maxima before region growth
 
 [Report](photo2/LOCAL_MAXIMA_R267.md) · [photographs/tables](photo2/review/r267/README.md).

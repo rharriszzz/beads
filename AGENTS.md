@@ -5,6 +5,17 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R268 supersedes the R267 next-step restriction: see photo2/CLIMBING_MAXIMA_R268.md.
+Native 5/7/9 mean-V climbing improves some coordinates but does not establish one
+endpoint per bead. Preserve all 451 starts, 8,118 photographic traces and six guard
+controls. Equal-score plateaus are diagnosed without equal moves. Unguarded 9x9
+can cross adjacent yellows; guarded12 prevents the named crossing but weak starts
+and invisible boundaries remain limitations. 13 tests and 360,078 checked moves
+pass; production and old evidence remain unchanged. Background remains fixed.
+Next only when requested: review competing/converged foreground endpoints and
+weak-start failures before adopting a selector. No outline optimization; stop after
+delivery. Synthetic truth is evaluation-only and never a photographic runtime input.
+
 R267 audits all native maxima before growth; see photo2/LOCAL_MAXIMA_R267.md.
 241 plateaus/298 maximum pixels in R00956/R01284, all six neighborhood means,
 exact prominence, photographic maps and original selection reasons are saved.

@@ -1,5 +1,17 @@
 # Methods collection — bead-rope reconstruction
 
+## R268 — strict ascent on neighborhood-average brightness
+
+[Report](photo2/CLIMBING_MAXIMA_R268.md), [photographic and numerical evidence](photo2/review/r268/README.md).
+Use exact native integer square sums for 5/7/9 mean-V surfaces. Start from every
+image-derived maximum and supported coordinate, preserving source roles. Choose
+the greatest admissible strictly higher eight-neighbor score with y/x tie breaking;
+inspect equal plateaus without traversing them. Record running raw-peak valley,
+reliable circular hue, saturation and fixed background barriers, including both
+diagonal corner routes. Compare ungated, guard-sensitivity and preserved initial
+color-guard controls. Keep coordinate convergence separate from identity; use
+synthetic truth only for validation. Save every path, stop and per-start photo card.
+
 ## R267 — audit native maxima before growth
 
 [Photographic findings](photo2/LOCAL_MAXIMA_R267.md),
