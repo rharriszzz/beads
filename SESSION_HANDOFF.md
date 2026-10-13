@@ -1,5 +1,30 @@
 # Beads session handoff — new branch
 
+## Current R271 — conservative trusted subset, simple photographic review
+
+[Report](photo2/TRUSTED_LOCATIONS_R271.md) · [cyan-dot photographs and exclusions](photo2/review/r271/README.md).
+User clarifies the goal: a geographically widespread, highly reliable subset from
+one consistent automatic algorithm, not every visible bead or maximum count.
+R01284's shadowed neighbor is real/separate but its detected location is not trusted.
+It is automatically excluded by the global luminance floor (0.149 < 0.25), without
+review coordinates as inputs. Three R00956 yellow locations and the pale central
+R01284 location pass. Originals sit beside cyan-dot-only trusted proposals;
+uncertain candidates have separate orange-dot images with plain-English reasons.
+
+Image-only mean7 luminance maxima face AND gates for sufficient broad brightness,
+patch size, local contrast, fixed background clearance, flat-top ambiguity,
+5/7/9-window and 10/16-radius stability, competing highlights and close conflicts.
+All 40,483 candidate plateaus survive in the audit; 493 receive full path checks,
+453 pass. Coverage reaches 15/16 full-frame grid cells without quotas or geometry.
+Nine tests and 112 synthetic scenes support conservative review; 61 synthetic
+locations have no background endpoints, duplicate known bodies or cross-body
+accepted routes. Many real dark/shadowed locations are intentionally deferred.
+Do not claim calibrated confidence, full-photo accuracy or a bead count.
+
+R270 and production remain preserved. Stop after scoped commit/push. Next only
+when requested: review false trusted dots and coverage gaps; do not maximize count
+or resume geometry/indexing. Keep current model/reasoning; no /new needed.
+
 ## Current R270 — compare brightness measures, awaiting photographic review
 
 [Report](photo2/BRIGHTNESS_COMPARISON_R270.md) · [photographs and exact evidence](photo2/review/r270/README.md).

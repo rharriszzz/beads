@@ -5,6 +5,19 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R271 clarifies the active objective: a widespread highly reliable subset from one
+automatic algorithm, not all visible beads or maximum count. See
+photo2/TRUSTED_LOCATIONS_R271.md. Use original-plus-cyan-dot photographs; uncertain
+candidates separately with plain reasons. R01284's shadowed neighbor is real but
+its location is untrusted; global brightness criteria exclude it automatically.
+No reviewed coordinates or manual identities enter selection. Isolated mean7 Y
+experiment requires brightness, broad illumination support, size, contrast,
+background clearance, multi-window/search stability and unambiguous maxima.
+453 proposals across 15/16 image areas await review; all 40,483 candidates/reasons
+survive. No quotas, count optimization, geometry or indexing. Production unchanged.
+Next only when requested: review false trusted dots and geographic gaps. Stop after
+delivery; keep current model/reasoning, no /new needed.
+
 R270 compares brightness measures; see photo2/BRIGHTNESS_COMPARISON_R270.md.
 Recommend ICC-managed sRGB luminance/7×7 for photographic review only. Preserve
 native V baseline, all independent maxima, original starts and full competing paths.

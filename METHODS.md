@@ -1,5 +1,17 @@
 # Methods collection — bead-rope reconstruction
 
+## R271 — conservative image-only location acceptance
+
+[Report](photo2/TRUSTED_LOCATIONS_R271.md), [simple cyan-dot photographs](photo2/review/r271/README.md).
+Use independent mean-luminance maxima, fixed background evidence and explicit AND
+gates for brightness, broad support, local contrast, neighborhood/path stability
+and competing peaks. Defer hard cases and retain every exclusion with its reasons.
+Measure geographic spread after acceptance without quotas. Keep reviewed locations
+and synthetic identities evaluation-only. Display one cyan dot per accepted
+proposal beside the original; uncertain locations belong in separate diagnostic
+images with plain explanations. Brightness is an illumination proxy, not a
+reflectance-independent illumination estimate or calibrated trust probability.
+
 ## R270 — color-managed brightness comparison
 
 [Report](photo2/BRIGHTNESS_COMPARISON_R270.md), [photographic comparisons and exact traces](photo2/review/r270/README.md).

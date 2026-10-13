@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "minimum_mean_y": 0.25,
+    "minimum_lit_fraction": 0.85,
+    "lit_fraction_of_peak": 0.5,
+    "minimum_core_pixels": 25,
+    "core_fraction_of_peak": 0.8,
+    "minimum_window_ratio": 0.65,
+    "minimum_local_contrast": 0.15,
+    "maximum_plateau_diameter": 2.0,
+    "maximum_endpoint_spread": 3.0,
+    "rival_min_distance": 4.0,
+    "rival_score_ratio": 0.9,
+    "separating_valley_fraction": 0.25,
+    "final_conflict_distance": 6.0
+  },
+  "input": "photograph and fixed parameters only; no previous detections or reviewed coordinates",
+  "proposal": "all native-resolution mean7 luminance regional maxima; retain all plateau pixels",
+  "guards": "unchanged R270 native-HSV/background/color and diagonal-corner guards; neutral-gray-equivalent raw12/24 mean2/6",
+  "search_windows": [
+    5,
+    7,
+    9
+  ],
+  "search_radii": [
+    10,
+    16
+  ],
+  "acceptance": "AND of all criteria; no quotas, no count optimization, no forced locations",
+  "brightness": "ICC-managed linear sRGB relative luminance",
+  "illumination": "measured image brightness proxy; cannot separate material reflectance from illumination"
+}

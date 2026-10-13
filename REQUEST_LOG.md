@@ -7537,3 +7537,46 @@ Final user steering: finish the current step and push; do not start further work
 Deliver scoped commit/push and verify remote tip/clean status. Stop for photographs;
 next only when requested, review Y coordinates and remaining weak/background
 failures. Keep current model/reasoning; no /new needed.
+
+## R271 — conservative trusted locations after R270 review (2026-10-13)
+
+User requests drastically simpler photographs: original plus one cyan dot per
+trusted proposed location; uncertain candidates separately with plain explanations.
+R01284's shadowed neighbor is real and separate but its location is not trusted.
+Goal is a geographically widespread, highly reliable subset from one consistent
+automatic algorithm, not every visible bead or maximum detection count. Develop
+measurable brightness/illumination/stability/competition/background acceptance
+criteria; retain every exclusion/reason. No reviewed coordinates as runtime inputs,
+no geometry or indexing. Existing workflow authorizes scoped commit/push.
+Preflight: daisy, clean photo-2-strategy-v3 at bc410a7, no stashes; fetched origin
+and verified zero divergence. Read R270 report, sources and current handoff/plan.
+Methods considered: brightness floor, cross-window/path stability, competing-peak
+separation, fixed background evidence. Combine conservative AND gates, measure
+coverage afterward without regional quotas. New experiment only; preserve R270.
+
+R271 outcome: the isolated image-only rule inventories all 40,483 native mean7
+luminance maximum plateaus (40,644 pixels), sends 493 through stability/competition
+checks and proposes 453 locations in 15/16 full-frame areas. No quota or count
+optimization. Global floor Y>=0.25 automatically rejects the reviewed shadowed
+neighbor (Y=0.14855); the three R00956 yellows and central pale R01284 pass.
+No review coordinates enter detection. Broad illumination support, patch size,
+contrast, window ratios, unchanged background evidence, plateau ambiguity,
+18-setting path stability and rival/close-conflict checks are mandatory AND gates.
+Cyan-dot-only photographs now sit beside originals. Exclusions have separate
+orange-dot photographs and plain-English captions. All candidate pixels, metrics,
+reasons and evaluated paths survive in compressed numerical records.
+Nine tests pass. Validation checked every maximum pixel and native score, 8,874
+photo stability routes/5,691 moves and all saved endpoints. Across 112 preserved
+synthetic scenes, 61 accepted locations have zero background locations, duplicate
+known bodies or cross-body/background accepted routes (1,098 checked routes).
+70 scenes have no accepted locations; invisible-interface controls retain only
+their clear bright peak, not a recovered hidden boundary. No calibrated precision
+or full-photo accuracy claim; dark/red/shadowed locations are intentionally biased
+against. 299 old source/evidence hashes are unchanged; no production/growth/viewer/
+geometry/indexing changes. Full-photo computation took 16.03 seconds; synthetic
+selection 2.12 seconds. Final validation took 12.77 seconds after correcting an
+inefficient repeated compressed-array read in the validator; selection unchanged.
+Report photo2/TRUSTED_LOCATIONS_R271.md; review photo2/review/r271/README.md.
+Prepare scoped commit/push and verify exact remote tip/clean tree. Stop for review;
+next only when requested: false trusted dots and geographic gaps, not count
+optimization or geometry. Current model/reasoning remains suitable; no /new needed.

@@ -1,0 +1,90 @@
+{
+  "candidates": 40483,
+  "trusted": 453,
+  "searched": 493,
+  "exclusions": {
+    "incomplete-context": 1525,
+    "background-nearby": 36519,
+    "weak-local-contrast": 36991,
+    "flat-maximum": 1,
+    "insufficient-light": 4052,
+    "uneven-light": 743,
+    "unstable-location": 33,
+    "better-nearby-peak": 10,
+    "window-dilution": 529,
+    "competing-highlights": 20,
+    "small-bright-patch": 3
+  },
+  "conflicts": [],
+  "criteria": {
+    "minimum_mean_y": 0.25,
+    "minimum_lit_fraction": 0.85,
+    "lit_fraction_of_peak": 0.5,
+    "minimum_core_pixels": 25,
+    "core_fraction_of_peak": 0.8,
+    "minimum_window_ratio": 0.65,
+    "minimum_local_contrast": 0.15,
+    "maximum_plateau_diameter": 2.0,
+    "maximum_endpoint_spread": 3.0,
+    "rival_min_distance": 4.0,
+    "rival_score_ratio": 0.9,
+    "separating_valley_fraction": 0.25,
+    "final_conflict_distance": 6.0
+  },
+  "background_model": {
+    "center": [
+      0.8672515156487837,
+      0.5088495575221239,
+      0.8431372549019608
+    ],
+    "tolerance": [
+      0.008565477815268618,
+      0.05195300579798601,
+      0.08235294117647063
+    ],
+    "enabled": true,
+    "sample_count": 986832,
+    "source": "generic border HSV; conservative 95-percent intervals",
+    "texture_limit_dn": 18.0,
+    "uncertainty_hue_deg": 30.0,
+    "stop_map": {
+      "confident_pixels": 6302629,
+      "context_uncertain_pixels": 444225,
+      "context_half_window": 12,
+      "smooth_factor": 1.5,
+      "nearby_fraction": 0.08
+    }
+  },
+  "elapsed_seconds": 16.02939539599174,
+  "image_shape": [
+    3182,
+    2540
+  ],
+  "coverage_grid4x4": [
+    [
+      17,
+      15,
+      24,
+      21
+    ],
+    [
+      45,
+      16,
+      27,
+      49
+    ],
+    [
+      7,
+      33,
+      47,
+      53
+    ],
+    [
+      0,
+      35,
+      33,
+      31
+    ]
+  ],
+  "occupied_full_frame_cells": 15
+}
