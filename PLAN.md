@@ -1,5 +1,47 @@
 # Photo-2 reconstruction plan
 
+## Current R266 — strict annular comparison and automatic peak selection
+
+[Report](photo2/DETECTION_R266.md) · [evidence](photo2/review/r266/README.md).
+User prioritizes one reliable coordinate per sufficiently visible bead and then
+emphasizes strict light-to-dark progression; splitting is allowed with supporting
+evidence. R266 keeps0-DN strict comparisons primary and1–3 DN as diagnostics.
+One-native-pixel annuli use fixed inward parents and irreversible local sectors,
+with local connected retreat,870 cap, native HSV/paper stops and optional evidenced
+split proposals. R265 remains intact and its strict baseline reproduces exactly.
+
+Recommend `straight-0-selected12` for the conservative R266 comparison, alongside
+`annular-0-selected12`; do not automatically replace straight growth. Annular strict
+reduces mean perimeter/area slightly but increases thin and hole pixels. Improved
+maxima selection uses neighborhood/region quality, broad bright bridges and gradual
+shading; proximity/overlap alone do not merge. All original maxima and suppression
+reasons remain. Learned paper uncertainty triggers deferral near smooth paper-like
+context. No historical geometry/palette/location priors enter runtime detection.
+
+The conservative straight inventory has1602 selected,789 suppressed,232 deferred
+proposals, not verified bead counts. All12 reviewed original duplicate pairs no
+longer retain both original IDs; reviewed paper-window pixels7→0. Replacement/other
+duplicates remain possible.6-DN recovery improves R00956 M1 proximity12.21→2.24px
+and chooses better yellow maxima, but adds questionable dark-region candidates;
+retain6/3-DN variants as sensitivity, not an accuracy claim. M2–M4 remain uncertain
+photographic interpretations despite nearer candidates. No whole-photo success.
+
+80 Python tests;44 preserved +59 new browser checks. Known192-body stress set has
+0 misses/duplicate extras/background coordinates/cross-body suppressions after
+selection, but7 neighbor support pixels; this does not validate photographic truth.
+Full native audits, exact unchanged selection masks, source hashes, timing and all
+inventories/replay are in the report/evidence. The configurable1800-second window
+includes follow-ups; no expected-count optimization or manual marking request.
+
+Viewer: existing server, `/?run=straight-0-selected12`; switch to annular or6-DN
+sensitivity and inspect suppressed/deferred maxima. Existing R265 default preserved.
+Stop after scoped commit/push and exact remote/clean verification. Next only when
+requested: residual duplicate alternatives/weak recovered candidates, especially
+R00956's paper-facing extra and dark-region noise. Revisit annular later; no geometry,
+indexing, lighting inversion or patterns. Keep current model/reasoning; no `/new`
+needed for artifact review. Sites skill local-only; no subagents or deployment.
+
+
 ## Current R265 — straight growth, local retreat, first neutral-black stop
 
 [Repair/ablations](photo2/DETECTION_REPAIR_R265.md) ·

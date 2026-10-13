@@ -7238,3 +7238,90 @@ and retained IDs are unchanged. The dim P050477 reflection survives.64 Python an
 44 final Chromium checks pass; both v1/v2 viewer preparations preserve their saved
 runs without regeneration. The added comparisons and final browser QA finished
 inside the original30-minute computation window. No further experiment follows.
+
+## R266 — automatic coordinate detection comparison requested (2026-10-12)
+
+User requests better automatic maxima selection, one-native-pixel annular fronts,
+comparison with corrected R265 straight paths at running-minimum tolerances0/1/2/3 DN,
+learned pre-growth H/S/V background rejection and local paper stops/deferral,
+and investigation of R00956/R01284/R01307 plus distributed photographic failures.
+Objective is one reliable coordinate per sufficiently visible bead, not complete
+outlines or an expected count. Preserve all maxima, uncertain alternatives,
+suppression reasons, prior detectors/results/reviews. No watershed, unrestricted
+flood fill, region-wide brightness ceiling, geometry, indexing, lighting inversion
+or pattern analysis. Approximately30-minute Python computation with deadline,
+checkpoints, separate ablations, known synthetic truth, exact native invariants,
+ranked improvements/regressions, concise report/inventories/images and simple
+comparison/maxima controls in the viewer. Commit and push completed scoped work.
+No manual bead identification requested from the user.
+
+Preflight: daisy, photo-2-strategy-v3, clean worktree/no stashes, explicit fetch0/0.
+Read AGENTS, current PLAN/SESSION_HANDOFF, latest requests and both R265 reports.
+Four methods presented: running-minimum tolerance controls, fixed-parent annular
+sectors, evidence-based peak selection and margin-learned paper deferral. Sites
+skill applies only to the existing local viewer. No subagents.
+
+R266 steering: user permits splitting an annular region into two at any time.
+Require native valley evidence and independently seeded supported pieces; preserve
+parent/child evidence rather than use a nearest-peak ownership partition. User then
+emphasizes strict light-to-dark sequence as the key invariant and says the approach
+can be revisited later. Strict0-DN variants are therefore the main delivered
+comparison;1–3 DN remain the explicitly requested diagnostic controls. Splitting
+must not relax descent or invent support. Stop after this bounded comparison.
+
+## R266 — bounded comparison completed (2026-10-12)
+
+Delivered separate annular_detect and selection refinement; repaired_detect/R265
+remain unchanged. Tested native one-pixel fixed-parent annular sectors against
+straight histories at0/1/2/3 DN running-minimum allowances. User's later strict
+light-to-dark emphasis governs final0-DN comparisons. Local stops cannot reopen
+via a lateral detour;870 pre-retreat cap, neutral-black/HSV stops and connected
+local retreat remain. Native-valley split primitive passes two-piece/one-seed/
+shallow-valley tests; no photographic split was forced. Independent maxima survive.
+
+Separate peak/background/recovery controls precede combination. Final peak ranking
+uses brightness, prominence tier, neighborhood brightness and region quality;
+suppression requires broad bright bridge evidence with gradual compatible shading.
+An initially too-narrow color association left yellow duplicates; refinement allows
+gradual shading and handles neutral-reflection hue uncertainty. Smooth nearby
+learned paper uncertainty now defers clipped paper seeds missed by the narrow
+model. All154,761 raw maxima, selected/suppressed/deferred inventories, original
+coordinates/masks and exact replay are saved. No runtime review coordinates,
+historical geometry, palette boxes or expected-count objective.
+
+Recommend conservative straight-0-selected12, with annular-0-selected12 alongside;
+annular is not automatically adopted. Growth-only annular0 reduces mean perimeter/
+area.611→.603 but increases hole pixels249→382 and thin pixels6445→6951. Greater
+rise allowances increase reviewed paper contamination. Final conservative straight
+has1602 selected,789 suppressed,232 deferred proposals, not bead counts. Both IDs
+no longer remain selected in any of the12 reviewed original duplicate pairs;
+reviewed paper pixels7→0. Replacement/other duplicates and uncertain dark candidates
+remain.6-DN recovery chooses better R00956 yellow maxima and reduces M1 proximity
+to2.24px, but admits extra questionable candidates;12-DN stays12.21px away. M2–M4
+have nearer proposals, without verified physical-center or whole-photo recall claims.
+3-DN recovers some closer landmarks while substantially increasing weak candidates.
+
+80 Python tests,44 preserved +59 new Chromium checks pass. Main full audits verify
+3,101,506 accepted samples/5,821,748 stops; additional low-prominence audits verify
+2,538,020 acceptances/5,466,642 stops.68,538 selection-only records preserve exact
+masks/coordinates. R265 baseline reproduces exactly.192 known synthetic bodies
+under touching neighbors, illumination, neutral reflections and noise have0 misses,
+0 duplicate extras,0 background coordinates and0 cross-body suppressions after
+refinement (median center error1px), but7 neighboring support pixels. R265's deeper
+multi-highlight ambiguity and photographic residuals remain explicit. Palette,
+placement/noise stability, automatically ranked improvements/regressions, global
+3/6/12/20/35 prominence diagnostics, manifests and clean raw/outline crops are saved.
+
+Main supervisor completes in734 seconds. All follow-up computation and final audits
+finish within the original1800-second deadline, about22m06s at final manifest.
+A50-ms forced deadline verifies clean incomplete-stage termination. Initial source-
+change checkpoint reflects strict-descent steering; no deadline reset. Reproduction
+commands and scope are in photo2/DETECTION_R266.md. Sites skill local-only; the
+simple viewer adds method/maxima selectors and related-ID navigation, with native
+replay and preserved viewport. No subagents, deployment, external messages,
+geometry, indexing, lighting inversion or pattern analysis.
+
+Prepare scoped commit/push and exact remote-tip/clean verification, then stop.
+Next only when requested: review remaining duplicate alternatives and weak recovered
+candidates (R00956 paper-facing extra/dark-region noise); revisit annular later.
+Keep current model/reasoning; no/new needed for artifact review.

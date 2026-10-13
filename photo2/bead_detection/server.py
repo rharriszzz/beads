@@ -34,6 +34,15 @@ def prepare(work, image, regenerate=False):
             from .straight_detect_r265 import Parameters, generate as straight_generate
             detector=Path(__file__).parent/'straight_detect_r265.py'
             generator=straight_generate;parameters=Parameters(**data['parameters'])
+        elif data.get('version')=='r266-refined-v1':
+            from . import refine_r266, annular_detect
+            if regenerate or data.get('image_sha256')!=sha(image) or data.get('association_sha256')!=sha(refine_r266.__file__) or data.get('detector_sha256')!=sha(annular_detect.__file__):
+                raise ValueError('Saved refinement changed; rerun refine_r266 against its documented parent inventory')
+            return
+        elif data.get('version','').startswith('r266-'):
+            from .annular_detect import Parameters, generate as annular_generate
+            detector=Path(__file__).parent/'annular_detect.py'
+            generator=annular_generate;parameters=Parameters(**data['parameters'])
         elif data.get('version','').startswith('r265-'):
             from .repaired_detect import Parameters
             parameters=Parameters(**data['parameters'])
@@ -69,6 +78,32 @@ def make_server(work, host='127.0.0.1', port=8767):
                    '/regions.json':work/'regions.json','/photo.png':work/'photo.png',
                    '/size-distribution.png':work/'size-distribution.png','/rank-size.csv':work/'rank-size.csv',
                    '/coordinates.csv':work/'coordinates.csv'}
+            if path=='/r266-runs.json':
+                variants=[]
+                for dest in sorted((ROOT/'photo2/output/r266').glob('*')):
+                    if (dest/'complete.json').is_file() and (dest/'regions.json').is_file():variants.append(dest.name)
+                if not variants:variants=[p.parent.name for p in (ROOT/'photo2/review/r266').glob('*/regions.json.gz')]
+                body=json.dumps(variants).encode();self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body);return
+            match=re.fullmatch(r'/r266-data/((?:straight|annular)-[0-3](?:-(?:joint(?:3|6)?|selected(?:3|6|12)|peaks|background|recovery))?)/(regions.json|coordinates.csv|traces/P[0-9]{6}\.json)',path)
+            if match:
+                run,name=match.groups();dest=ROOT/'photo2/output/r266'/run;archive=ROOT/'photo2/review/r266'/run
+                try:
+                    if name.startswith('traces/'):
+                        packed=dest/(name+'.gz')
+                        if packed.exists():body=gzip.decompress(packed.read_bytes())
+                        else:
+                            import tarfile
+                            if (archive/'trace-source.json').exists():
+                                parent=json.loads((archive/'trace-source.json').read_text())['parent_run']
+                                if not re.fullmatch(r'(straight|annular)-0-joint[36]?',parent):self.send_error(404);return
+                                archive=archive.parent/parent
+                            with tarfile.open(archive/('traces.tar.gz' if (archive/'traces.tar.gz').exists() else 'traces.tar')) as tar:
+                                with tar.extractfile(name+'.gz') as f:body=gzip.decompress(f.read())
+                    elif (dest/name).exists():body=(dest/name).read_bytes()
+                    elif name=='regions.json':body=gzip.decompress((archive/'regions.json.gz').read_bytes())
+                    else:body=(archive/name).read_bytes()
+                except (OSError,KeyError):self.send_error(404);return
+                self.send_response(200);self.send_header('Content-Type','text/csv' if name.endswith('.csv') else 'application/json');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body);return
             file=files.get(path)
             match=re.fullmatch(r'/hue-data/(5|8|10|12|15|20)/(regions.json|coordinates.csv|traces/P[0-9]{6}\.json)',path)
             if match:

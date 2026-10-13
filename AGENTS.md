@@ -5,6 +5,18 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R266 supersedes the R265 next-step restriction: see photo2/DETECTION_R266.md.
+Strict light-to-dark0 DN is primary;1–3 DN are diagnostic only. Annular comparison
+uses one-native-pixel fixed-parent shells, irreversible stopped sectors and optional
+native-valley split proposals. Preserve R265; do not automatically adopt annular.
+Recommend saved straight-0-selected12 conservatively; annular-0-selected12 and6/3-DN
+recovery alternatives remain available. All maxima/suppression/deferral evidence
+survives. Runtime inputs are the photograph and parameters, never review coordinates.
+80 Python tests and44 preserved +59 new browser checks pass. Named failures improve,
+but residual duplicates, weak recovered candidates and paper-facing artifacts remain;
+no whole-photo bead count or complete recovery claim. Stop after delivery; revisit
+annular only when requested. No geometry, indexing, lighting inversion or patterns.
+
 R265 supersedes the R264 next-step/default instructions below. Read
 photo2/DETECTION_REPAIR_R265.md and photo2/FIRST_DARK_R265.md. User requires
 straight native seed-to-pixel paths and stopping at black without seeking the

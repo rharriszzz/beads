@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "total_elapsed_computation_window_seconds": 1326.115122795105,
+  "deadline_epoch": 1791852082.630879,
+  "within_original_deadline": true,
+  "main_full_audits": {
+    "accepted": 3101506,
+    "stops": 5821748
+  },
+  "additional_low_prominence_audits": {
+    "strict_accepted": 2538020,
+    "strict_stops": 5466642,
+    "unchanged_masks_coordinates": 68538
+  },
+  "photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "source_sha256": {
+    "photo2/bead_detection/stress_r266.py": "93d26ab090396c9cece2015f1f04b67e2371cc4793113d3015b88af622ff8757",
+    "photo2/bead_detection/pack_r266.py": "939bf581569773d3184897732493b4727eeb995d273687c0e8c882c13b4cc6bf",
+    "photo2/bead_detection/refine_r266.py": "b8770eb8eff7435adafcfa470b6788e87e17dcaf726ec3c34a90cc86c9fd7820",
+    "photo2/bead_detection/browser_r266.py": "18b5ac417dab9bcea7128385aeff4ecf5508d7efc057eee0613f60ffb8a68614",
+    "photo2/bead_detection/recovery_r266.py": "db498506181e2ff3631488d6c8b49fc8504d43e47898c0f0cbe536149932bbc8",
+    "photo2/bead_detection/experiment_r266.py": "d982e847add52bfe392cf9b7bf0064ec6698f0a202d90c961bd596d66ed690e3",
+    "photo2/bead_detection/evaluate_refined_r266.py": "8bad08efcadc46568081bec594cff943a90713d01ab05cd17f141a6787ef3e67",
+    "photo2/bead_detection/test_refine_r266.py": "dbf6837b5bc5e462717dac3814e14b94092ce6b59eaf7e155400610d3cba62da",
+    "photo2/bead_detection/validate_archive_r266.py": "c0f7382bec7089cf40d6abb16a697c8b37ac11f8150106647d89b28ca7345f6e",
+    "photo2/bead_detection/annular_detect.py": "cc2abc1b5932a66fbd7e2ae79bb283255ba4d427462f0001e9a455a2897533e2",
+    "photo2/bead_detection/test_annular.py": "c6a1ae2a467cb691a77fd6f60e78b0455db2864c94a109c896d53d7b1855e38f",
+    "photo2/bead_detection/server.py": "df4911278ae3a15a4481a0c0510b1ccf1f0b80e0ebd7cd9c25e1e3e110479bca",
+    "photo2/bead_detection/static/hue.js": "fec9d845afea6c788e3c3dd33f4aa724797b86d70ffb322bb06f09b802f7eca4",
+    "photo2/bead_detection/static/hue.html": "9edb257d0d45b27705b5fc255a1433d5bdb7e4ef3b210f21a00426a89e496f13",
+    "photo2/bead_detection/static/style.css": "b712b4022a8f27c97a52c703469acc3b50bc1b1ed251401d36a594aaab565305",
+    "photo2/bead_detection/static/index.html": "4986d8f6df302e2f49d0a88a46451beef53ed958a29dc31d0e78ece912e2b4a5",
+    "photo2/bead_detection/static/app.js": "feda104484e9bca40357f27be2668af6bac3d65da7a4c1bed2e4162315396e38"
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "skimage": "0.26.0",
+    "PIL": "12.3.0"
+  },
+  "python_tests": 80,
+  "preserved_browser_checks": 44,
+  "new_browser_checks": 59,
+  "archive_handler_checks": 27
+}

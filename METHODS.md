@@ -1,5 +1,19 @@
 # Methods collection — bead-rope reconstruction
 
+## R266 — strict annular/straight comparison and automatic peak selection
+
+[Report](photo2/DETECTION_R266.md), [exact evidence](photo2/review/r266/README.md).
+Compare native one-pixel fixed-parent annular fronts with complete R265 straight
+histories at running-minimum allowances0/1/2/3 DN; strict0 is primary. Assess
+maxima using neighborhood brightness/prominence/HSV/region quality and native
+bridge evidence; preserve ambiguous alternatives and every original maximum.
+Learn paper from image margins, stop local sectors and defer uncertain boundary
+candidates. Separate/joint ablations, known synthetic truth, native invariants,
+deadline/checkpoint control, geographic photo crops and exact replay are reusable.
+The final refinement alters selection/status only and preserves native masks.
+No whole-photo accuracy or count target; geometry/indexing/patterns excluded.
+
+
 
 ## R263 bounded native growth and local parameter search (current default)
 
