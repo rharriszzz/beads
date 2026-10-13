@@ -1,0 +1,9 @@
+{
+  "reference": "photo2/review/r255/spline-samples.csv",
+  "sha256": "9c6bdffad4f5e6032e04d0e10f94d401a336fe3f00709ace5282cd01077d8431",
+  "band_half_width": 12.0,
+  "point_reach": 26.0,
+  "scan_reach": 40.0,
+  "maximum_distance_approximation_error": 0.125,
+  "rule": "Point within 26px (12px band plus 14px visible-body reach), OR native interior intersects the 12px band. Scan all maxima within 40px, retain final members by same rule. No model registration, bead indices or predicted sites."
+}

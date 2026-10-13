@@ -1,0 +1,149 @@
+{
+  "methods": {
+    "fallback": {
+      "interiors": 635,
+      "locations": 638,
+      "colors": {
+        "yellow": 257,
+        "black": 201,
+        "red": 177
+      },
+      "statuses": {
+        "still unresolved": 60,
+        "recovered missing candidate": 64,
+        "corrected interior": 1
+      },
+      "new_colors": {
+        "yellow": 4,
+        "red": 61
+      },
+      "reasons": {
+        "fallback-irregular": 56,
+        "ownership-conflict": 4
+      }
+    },
+    "multi-window": {
+      "interiors": 641,
+      "locations": 644,
+      "colors": {
+        "yellow": 260,
+        "black": 201,
+        "red": 180
+      },
+      "statuses": {
+        "duplicate removed": 953,
+        "still unresolved": 2892,
+        "outside target": 462,
+        "recovered missing candidate": 70,
+        "corrected interior": 1
+      },
+      "new_colors": {
+        "yellow": 7,
+        "red": 64
+      },
+      "reasons": {
+        "same-peak-or-contained-highlight": 953,
+        "fallback-irregular": 336,
+        "region-holes": 56,
+        "ownership-conflict": 16,
+        "region-small": 43,
+        "color-uncertain": 2422,
+        "peak-lost": 24,
+        "contrast": 17,
+        "background": 2
+      }
+    },
+    "expanded-color-black": {
+      "interiors": 657,
+      "locations": 660,
+      "colors": {
+        "yellow": 260,
+        "black": 202,
+        "red": 195
+      },
+      "statuses": {
+        "duplicate removed": 1409,
+        "still unresolved": 15080,
+        "outside target": 622,
+        "recovered missing candidate": 86,
+        "corrected interior": 1
+      },
+      "new_colors": {
+        "yellow": 7,
+        "red": 79,
+        "black": 1
+      },
+      "reasons": {
+        "same-peak-or-contained-highlight": 1409,
+        "black-material": 736,
+        "fallback-irregular": 418,
+        "black-size": 404,
+        "region-holes": 57,
+        "region-small": 87,
+        "ownership-conflict": 32,
+        "background": 19,
+        "fallback-holes": 3,
+        "region-open": 3,
+        "black-contrast": 4954,
+        "color-uncertain": 2019,
+        "peak-lost": 45,
+        "contrast": 62,
+        "dim": 71,
+        "black-open": 1197,
+        "black-color": 9837
+      }
+    },
+    "layered-fallback": {
+      "interiors": 728,
+      "locations": 731,
+      "colors": {
+        "yellow": 287,
+        "black": 202,
+        "red": 239
+      },
+      "statuses": {
+        "duplicate removed": 1566,
+        "still unresolved": 14724,
+        "recovered missing candidate": 157,
+        "outside target": 750,
+        "corrected interior": 1
+      },
+      "new_colors": {
+        "yellow": 34,
+        "red": 123,
+        "black": 1
+      },
+      "reasons": {
+        "same-peak-or-contained-highlight": 1566,
+        "black-material": 736,
+        "fallback-irregular": 148,
+        "black-size": 404,
+        "ownership-conflict": 32,
+        "background": 19,
+        "fallback-small": 24,
+        "black-contrast": 4954,
+        "color-uncertain": 2019,
+        "region-small": 45,
+        "peak-lost": 45,
+        "contrast": 62,
+        "dim": 71,
+        "black-open": 1197,
+        "black-color": 9837
+      }
+    }
+  },
+  "elapsed_seconds": 178.66608881950378,
+  "profile": {
+    "input_profile": "Apple Wide Color Sharing Profile",
+    "profile_sha256": "6a7672a5ac782c76ce96e31bd0551718c68818d7ccfd3ce50d23dfa453fb62ff",
+    "intent": "relative-colorimetric",
+    "output": "8-bit sRGB RGB via Pillow ImageCms/LCMS",
+    "lcms_version": "2.19",
+    "pillow_version": "12.3.0"
+  },
+  "selected": "layered-fallback",
+  "palette": {
+    "red": 352.4144254461657,
+    "yellow": 35.3446304053803
+  }
+}

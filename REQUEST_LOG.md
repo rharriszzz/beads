@@ -7766,3 +7766,58 @@ Known sandbox browser launch limitation remains deferred; no new approval reques
 Routine git synchronization used existing approved permission after the sandbox denied
 writing FETCH_HEAD. Report photo2/HUE_INTERIORS_R274.md; scoped commit/push then stop
 for photo review. Keep current model/reasoning; no /new needed.
+
+## R275 — complete centerline-near audit and automatic recovery (in progress)
+
+User requests 100% reliable capture of all fully/almost fully visible centerline-near
+beads, preserving every existing success outside and inside the subset. Requires a
+reproducible reference band, photographic bead-by-bead audit of misses/duplicates/
+colors/interiors/locations, uniform automatic recovery, exact measurements and masks,
+updated viewer, report, commit and push. Geometry is authorized only as the existing
+image-derived centerline reference, not modeled sites or physical-string indices.
+
+Additional steering: measure each crossing bead's angular progress around the necklace,
+check uniformity and investigate/fix gaps. User expects two nearby beads alternating
+with one crossing, transitioning to single-crossing stretches and back. Treat this as
+maker-supplied expected appearance, not a count target or fabricated missing positions.
+User says keep going until success and record every problem that still causes doubt;
+then confirms the proposed continuation. Individual nearest-neighbor angular intervals
+must not be forced equal across single/double arrangements.
+
+Initial diagnosis: prior R274 cannot recover points rejected upstream by R272; broad
+mask failures also hide usable smaller interiors. Compared fallback, multi-window scan,
+expanded color/black tests, hue-supported brightness layers, dark-perimeter controls,
+colored enclosure around pale highlights, and naturally disjoint ownership retries.
+The raw photograph and parameters remain the detection inputs; saved upstream artifacts
+are outputs of the preserved image-only pipeline. All original 574 locations and 570
+accepted interiors are frozen. Use the unregistered R255 image-traced reference, not
+its model-translated variant. Results and validation will be recorded below.
+
+### R275 outcome — recovery delivered; photographic certification still open
+
+Completed multiple automatic alternatives across the fixed reference band and repeated
+full-curve residual/gap reviews. User's single/double expectation remains diagnostic,
+never a target count or a generated bead location. Target422→658(246black/218red/194yellow),
+whole810locations/807masks.235new active candidates,one repaired interior,3color/point
+corrections. Five weak black reflections suppressed,including2priorR274; all574prior
+locations/570masks archived or active.152prior points outside band unchanged;429protected
+files unchanged. Final black exception handles strong tinted reflections with explicit
+hue boundary/dark surround evidence. Failed alternatives and native traces preserved.
+
+Normalized curve progress closes360degrees;433groups(225double/208single),median0.8521°,
+CV0.191,zero long-group-gap flags under3pair tolerances.12short intervals,63residual
+peak groups and24small colored supports remain explicit doubts. A dim-color stability
+control also tried lowerbrightness/smaller supported cores:12valid proposals outside
+fixedfinalband and1unsupportedcore;no new target point. The native peak's band membership
+is a proxy for body membership,with marginal cases saved. Do not claim100%photo capture
+or zero unresolved physical identities. This is a documented remaining verification
+obstacle after several remedies,not a count-based success declaration.
+
+61Python tests,50Node actual-JS checks and native measurements/preservation/replay pass.
+87end-to-end synthetic scenes:148/156bodies,zero false/duplicate/wrong-color/background/
+foreign pixels;70illuminated/reflection scenes122/122. Four no-reflection black and4dim
+red bodies missed. Real-browser rendering remains deferred under prior skip-approval
+instruction. Report,full numbered atlas,masks/measurements,allcontrols,maxima,angular
+increments,viewer and remaining doubts saved underR275. Scoped commit/push authorized;
+next inspect residual photos and12short intervals before certification. Keep current
+model/reasoning;no /new needed;no automatic geometry or physical-string indexing.

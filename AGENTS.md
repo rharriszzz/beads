@@ -1,5 +1,19 @@
 # Beads photo-2 workflow
 
+
+R275 supersedes the R274 next-step restriction: see photo2/CENTERLINE_INVENTORY_R275.md.
+Existing unregistered image-derived centerline selects a fixed12px band/26px point reach;
+scan40px.810locations/807masks,658target points. Prior574points/570masks preserved including
+explicit suppressed/superseded archives;152outside-target points unchanged. Five weak
+black secondaries suppressed,3color/point corrections. Hue-aware interiors retained.
+433diagnostic single/double groups have zero long-gap flags but12short intervals;
+63residual peak groups and24small colored supports remain doubts. Do not infer100%
+photographic completeness from spacing or candidate counts.61Python/50Node checks,
+87synthetic scenes and exact native/hash/replay checks pass. Rendered browser deferred.
+Next review residual photographic ownership and band-edge membership before certification;
+no geometry/indexing/predicted positions. User asks preserving doubts, commit and push.
+
+
 R274 supersedes colored-interior boundary rules; see photo2/HUE_INTERIORS_R274.md.
 Local core-versus-opposite learned hue with2°margin, reliable chroma and bounded neutral
 highlight continuation selected after8controls.570interiors (201black/116red/253yellow),

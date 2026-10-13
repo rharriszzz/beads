@@ -1,0 +1,122 @@
+{
+  "full_chain_before_dim": {
+    "measurement_sha256": "8eeb726b2cb39c2c739c8af39c0c8a8e13cc7321b9eb550bf36b9aa2338d515b",
+    "locations": 810,
+    "interiors": 807,
+    "actual_sha256": "8eeb726b2cb39c2c739c8af39c0c8a8e13cc7321b9eb550bf36b9aa2338d515b",
+    "identical": true
+  },
+  "run": {
+    "resumed_from": null,
+    "steps": [
+      {
+        "module": "centerline",
+        "seconds": 0.7278192043304443
+      },
+      {
+        "module": "recover",
+        "seconds": 179.7630970478058
+      },
+      {
+        "module": "black",
+        "seconds": 26.9144868850708
+      },
+      {
+        "module": "pale",
+        "seconds": 46.827786922454834
+      },
+      {
+        "module": "ownership",
+        "seconds": 9.882709503173828
+      },
+      {
+        "module": "material",
+        "seconds": 40.197484493255615
+      },
+      {
+        "module": "connected",
+        "seconds": 9.493011951446533
+      },
+      {
+        "module": "core",
+        "seconds": 9.859577417373657
+      },
+      {
+        "module": "dominance",
+        "seconds": 5.894946098327637
+      },
+      {
+        "module": "reclassify",
+        "seconds": 3.697481632232666
+      },
+      {
+        "module": "homogeneous",
+        "seconds": 15.664671421051025
+      },
+      {
+        "module": "reflection",
+        "seconds": 67.31034255027771
+      },
+      {
+        "module": "finalownership",
+        "seconds": 5.653674840927124
+      },
+      {
+        "module": "spacing",
+        "seconds": 1.4884397983551025
+      },
+      {
+        "module": "groups",
+        "seconds": 1.6898610591888428
+      },
+      {
+        "module": "residual",
+        "seconds": 7.493735313415527
+      },
+      {
+        "module": "audit",
+        "seconds": 88.1061692237854
+      },
+      {
+        "module": "review",
+        "seconds": 2.8774161338806152
+      }
+    ],
+    "seconds": 523.5434274673462,
+    "commands": "python -m photo2.bead_detection.run_r275"
+  },
+  "final_measurement_sha256": "8eeb726b2cb39c2c739c8af39c0c8a8e13cc7321b9eb550bf36b9aa2338d515b",
+  "final_matches": true,
+  "dim_control": "13 proposals; none adds a target location. Exact final measurements match full replay before this additional control.",
+  "dim_run": {
+    "resumed_from": "dim",
+    "steps": [
+      {
+        "module": "dim",
+        "seconds": 7.71307373046875
+      },
+      {
+        "module": "spacing",
+        "seconds": 1.5607688426971436
+      },
+      {
+        "module": "groups",
+        "seconds": 1.799025535583496
+      },
+      {
+        "module": "residual",
+        "seconds": 9.014517545700073
+      },
+      {
+        "module": "audit",
+        "seconds": 12.127110719680786
+      },
+      {
+        "module": "review",
+        "seconds": 2.820934534072876
+      }
+    ],
+    "seconds": 35.035701274871826,
+    "commands": "python -m photo2.bead_detection.run_r275"
+  }
+}

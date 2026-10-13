@@ -1913,3 +1913,14 @@ Saturation-aware native circular hue competes against a learned rival color usin
 local core as reference.8color/contrast/highlight controls; exact native path evidence.
 Trusted point survives uncertain expansion; viewer size ordering excludes unknown
 areas. Black ownership/masks unchanged. All previous results and exclusions preserved.
+
+## R275 — reference-band recovery and circular coverage audit
+
+[Report](photo2/CENTERLINE_INVENTORY_R275.md), [reproduction](photo2/review/r275/README.md).
+An existing unregistered image-derived curve defines a fixed band only. Exhaustive raw
+and mean5/7/9maxima, hue-supported fallback/layers, enclosed dark-reflection controls,
+photographic dominance and alias prevention recover locations without expected counts.
+Normalized arclength and opposite-side single/double grouping expose gaps; they never
+insert positions. Exact native masks, archival preservation, synthetic identities,
+measurement replay and a minimal viewer support review. Zero flagged long gaps is not
+proof of100%physical-bead recall. Keep residual/marginal membership evidence explicit.

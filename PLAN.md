@@ -1,5 +1,39 @@
 # Photo-2 reconstruction plan
 
+## Current R275 — centerline recovery and angular audit; 100% remains unverified
+
+[Report](photo2/CENTERLINE_INVENTORY_R275.md) · [viewer](photo2/centerline_inventory_r275/index.html) · [full audit](photo2/review/r275/centerline-audit.csv).
+R275 authorizes the existing unregistered image-traced centerline as a reference only.
+Fixed band:12px half-width, accepted-point reach26px, exhaustive maximum scan40px.
+No curve registration, bead predictions, string indexing or forced pair/single pattern.
+User asks persistence, gap repair, preservation and explicit doubts; several automatic
+recovery, ownership, hue/brightness and dim-core alternatives were tested, not one pass.
+
+Target422→658locations:246black/218red/194yellow. Whole810locations/807native masks;
+235new active locations,3color/point corrections (one priorR274),one repaired interior.
+Five weak black secondaries suppressed (two priorR274); complete former measurements
+archived. All152outside-target prior points unchanged. All574prior points/570masks
+preserved in active/suppressed/superseded records;429protected old files hash-checked.
+
+Angular progress is360s/L on the saved image-derived curve.433diagnostic groups:
+225pairs/208singles.48old large individual-gap flags; zero final long group-gap flags
+at three pairing tolerances,12short intervals retained for review. No predicted beads.
+63unassigned peak groups remain (not63confirmed missing beads);24small colored supports
+carry extent warnings. Zero accepted same-color pairs within16px after ownership checks.
+The fixed band's edge cases, shadows, tiny supports and physical ownership still prevent
+an honest100%photographic completeness/reliability certification. Do not report a census
+from spacing or candidate count. Three prior location-only records still lack interiors.
+
+61Python tests,50actualJS Node checks,exact native/preservation audit and measurement-
+identical replay pass.87synthetic scenes:148/156bodies,zero false/duplicate/wrong-color/
+foreign/background pixels;70illuminated/reflection scenes122/122. Dim red and no-reflection
+black failures explicit. A stricter hue/stability dim-core control adds no target point;
+supported edge cases are preserved. Rendered browser validation remains deferred under
+the user's skip-new-approval preference. Commit/push scoped work, then review the residual
+photographs and12short intervals before certification. Keep current model/reasoning;
+no /new needed. No automatic geometry, physical-string indexing or next phase.
+
+
 ## Current R274 — hue-aware interiors and separate trusted locations
 
 [Report](photo2/HUE_INTERIORS_R274.md) · [viewer](photo2/hue_inventory_r274/index.html).
