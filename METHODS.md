@@ -1,5 +1,7 @@
 # Methods collection — bead-rope reconstruction
 
+- [R272 coverage: first-dark ICC reflection interiors, targeted colored gate controls, complete inventory and minimal viewer](photo2/COVERAGE_R272.md). Photo sample77.4%;80% whole-photo goal not demonstrated.
+
 ## R272 — measured interiors and requirement-failure audit
 
 [Report](photo2/TRUSTED_INVENTORY_R272.md), [minimal viewer](photo2/trusted_inventory_r272/index.html).

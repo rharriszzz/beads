@@ -1,0 +1,527 @@
+{
+  "selection": "Eight fixed geographically distributed contexts selected from unmarked overview, before new detection. Deliberate geographic sample, not random census. Count body centers in central 60x60 with 20px context.",
+  "samples": [
+    {
+      "id": "S1",
+      "box": [
+        1300,
+        220,
+        1400,
+        320
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S1-body-1",
+          "center": [
+            36,
+            25
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            15,
+            13
+          ]
+        },
+        {
+          "id": "S1-body-2",
+          "center": [
+            62,
+            31
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "S1-body-3",
+          "center": [
+            46,
+            54
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            16,
+            18
+          ]
+        },
+        {
+          "id": "S1-body-4",
+          "center": [
+            71,
+            77
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            17,
+            20
+          ]
+        },
+        {
+          "id": "S1-body-5",
+          "center": [
+            28,
+            76
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            12,
+            17
+          ]
+        }
+      ],
+      "ambiguity_notes": "Yellow top and lower red near counting boundary; black reflection center differs from body center."
+    },
+    {
+      "id": "S2",
+      "box": [
+        430,
+        500,
+        530,
+        600
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [],
+      "ambiguity_notes": "No center inside core; boundary yellow/black bodies belong outside. Background control."
+    },
+    {
+      "id": "S3",
+      "box": [
+        150,
+        1100,
+        250,
+        1200
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S3-body-1",
+          "center": [
+            70,
+            28
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            17,
+            17
+          ]
+        },
+        {
+          "id": "S3-body-2",
+          "center": [
+            48,
+            46
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            19,
+            13
+          ]
+        },
+        {
+          "id": "S3-body-3",
+          "center": [
+            28,
+            69
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            18,
+            14
+          ]
+        },
+        {
+          "id": "S3-body-4",
+          "center": [
+            34,
+            24
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            12,
+            12
+          ]
+        },
+        {
+          "id": "S3-body-5",
+          "center": [
+            62,
+            74
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            13,
+            15
+          ]
+        }
+      ],
+      "ambiguity_notes": "One dark left-edge body has center outside core."
+    },
+    {
+      "id": "S4",
+      "box": [
+        1250,
+        1420,
+        1350,
+        1520
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S4-body-1",
+          "center": [
+            44,
+            36
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            13,
+            19
+          ]
+        },
+        {
+          "id": "S4-body-2",
+          "center": [
+            28,
+            54
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            12,
+            17
+          ]
+        },
+        {
+          "id": "S4-body-3",
+          "center": [
+            73,
+            39
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            13,
+            19
+          ]
+        },
+        {
+          "id": "S4-body-4",
+          "center": [
+            51,
+            68
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            14,
+            19
+          ]
+        }
+      ],
+      "ambiguity_notes": "Right dark reflection belongs to body outside core."
+    },
+    {
+      "id": "S5",
+      "box": [
+        2120,
+        1000,
+        2220,
+        1100
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S5-body-1",
+          "center": [
+            43,
+            43
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            17,
+            14
+          ]
+        },
+        {
+          "id": "S5-body-2",
+          "center": [
+            69,
+            56
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            13,
+            18
+          ]
+        },
+        {
+          "id": "S5-body-3",
+          "center": [
+            42,
+            70
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            19,
+            14
+          ]
+        }
+      ],
+      "ambiguity_notes": "Left glint body straddles x=20; omitted uncertain center; possible extra black denominator +1."
+    },
+    {
+      "id": "S6",
+      "box": [
+        2210,
+        1850,
+        2310,
+        1950
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S6-body-1",
+          "center": [
+            77,
+            27
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            20,
+            13
+          ]
+        },
+        {
+          "id": "S6-body-2",
+          "center": [
+            66,
+            50
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            19,
+            14
+          ]
+        },
+        {
+          "id": "S6-body-3",
+          "center": [
+            54,
+            72
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            18,
+            16
+          ]
+        },
+        {
+          "id": "S6-body-4",
+          "center": [
+            53,
+            27
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            10,
+            13
+          ]
+        },
+        {
+          "id": "S6-body-5",
+          "center": [
+            43,
+            48
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            7,
+            10
+          ]
+        }
+      ],
+      "ambiguity_notes": "Very small dark left reflection counted; upper yellow near x=80; uncertain counting boundary."
+    },
+    {
+      "id": "S7",
+      "box": [
+        930,
+        2550,
+        1030,
+        2650
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S7-body-1",
+          "center": [
+            23,
+            31
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            17,
+            16
+          ]
+        },
+        {
+          "id": "S7-body-2",
+          "center": [
+            41,
+            48
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            17,
+            15
+          ]
+        },
+        {
+          "id": "S7-body-3",
+          "center": [
+            34,
+            73
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            18,
+            17
+          ]
+        }
+      ],
+      "ambiguity_notes": "Upper dim yellow center outside core; bottom red outside."
+    },
+    {
+      "id": "S8",
+      "box": [
+        1400,
+        2970,
+        1500,
+        3070
+      ],
+      "core": [
+        20,
+        20,
+        80,
+        80
+      ],
+      "bodies": [
+        {
+          "id": "S8-body-1",
+          "center": [
+            28,
+            33
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            10,
+            17
+          ]
+        },
+        {
+          "id": "S8-body-2",
+          "center": [
+            44,
+            21
+          ],
+          "color": "yellow",
+          "matching_ellipse_radii": [
+            13,
+            15
+          ]
+        },
+        {
+          "id": "S8-body-3",
+          "center": [
+            61,
+            39
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            13,
+            17
+          ]
+        },
+        {
+          "id": "S8-body-4",
+          "center": [
+            44,
+            61
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            12,
+            18
+          ]
+        },
+        {
+          "id": "S8-body-5",
+          "center": [
+            21,
+            70
+          ],
+          "color": "red",
+          "matching_ellipse_radii": [
+            13,
+            17
+          ]
+        },
+        {
+          "id": "S8-body-6",
+          "center": [
+            66,
+            75
+          ],
+          "color": "black",
+          "matching_ellipse_radii": [
+            17,
+            14
+          ]
+        }
+      ],
+      "ambiguity_notes": "Lower black has multiple glints; count one apparent body, possible unresolved second body +1."
+    }
+  ],
+  "review_method": "Single assistant visual review of unmarked native photo crops enlarged 6x, before new detector results. Approximate ellipses are evaluation association envelopes, NOT pixel segmentation truth, detector inputs, or physical geometry. Independence from detections, not independent human reviewers. Border/identity uncertainty explicitly retained.",
+  "possible_additional_bodies": {
+    "black": 2,
+    "yellow": 0,
+    "red": 0
+  },
+  "annotation_frozen_before_detection": true
+}

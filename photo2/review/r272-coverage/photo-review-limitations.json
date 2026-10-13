@@ -1,0 +1,28 @@
+{
+  "frozen_sample_bodies": 31,
+  "possible_additional_black_bodies": 2,
+  "annotations": "photo-samples.json",
+  "unmatched_boundary_cases": [
+    {
+      "id": "K-1377-0268",
+      "sample": "S1",
+      "reason": "Visible black bead center lies beyond right counting boundary; its reflection enters the core."
+    },
+    {
+      "id": "K-0227-1153",
+      "sample": "S3",
+      "reason": "Visible black bead center lies beyond right counting boundary; its reflection enters the core."
+    },
+    {
+      "id": "K-1325-1490",
+      "sample": "S4",
+      "reason": "Visible black bead center lies beyond right counting boundary; its reflection enters the core."
+    }
+  ],
+  "other_flags": [
+    "S8: two reflection supports associate with one frozen apparent body. One duplicate unless the ambiguous body is actually two; retain 0\u20131 duplicate uncertainty.",
+    "S1: detector calls a frozen yellow/brown upper body red. Color disagreement remains unresolved.",
+    "S3: red proposal adjacent to a black reflection overlaps its approximate matching envelope; true color/ownership needs review."
+  ],
+  "interpretation": "The automated false_positive field is a conservative mismatch flag, not confirmed photographic false discovery. After excluding three explicitly documented boundary crossings: black 0\u20131 possible duplicate /7 in-sample predictions; red 0\u20132 unresolved color/ownership errors /9; yellow 0 flagged /11. Small exploratory sample, no human adjudication or whole-photo inference."
+}

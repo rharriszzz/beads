@@ -1,0 +1,695 @@
+{
+  "metrics": {
+    "black": {
+      "visible": 9,
+      "detected": 6,
+      "accepted": 10,
+      "false_positive": 4,
+      "duplicate_extras": 1,
+      "wrong_color": 0,
+      "unmatched": 3,
+      "recall": 0.6666666666666666,
+      "false_discovery_fraction": 0.4
+    },
+    "red": {
+      "visible": 8,
+      "detected": 7,
+      "accepted": 9,
+      "false_positive": 2,
+      "duplicate_extras": 0,
+      "wrong_color": 2,
+      "unmatched": 0,
+      "recall": 0.875,
+      "false_discovery_fraction": 0.2222222222222222
+    },
+    "yellow": {
+      "visible": 14,
+      "detected": 11,
+      "accepted": 11,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "unmatched": 0,
+      "recall": 0.7857142857142857,
+      "false_discovery_fraction": 0.0
+    }
+  },
+  "results": [
+    {
+      "sample": "S1",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 2,
+          "false_positive": 1,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 1
+        },
+        "red": {
+          "visible": 3,
+          "detected": 2,
+          "accepted": 3,
+          "false_positive": 1,
+          "duplicate_extras": 0,
+          "wrong_color": 1,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-1329-0241",
+          "color": "red",
+          "local_peak": [
+            30,
+            23
+          ],
+          "body": "S1-body-1",
+          "possible_bodies": [
+            "S1-body-1"
+          ]
+        },
+        {
+          "id": "C-1355-0255",
+          "color": "red",
+          "local_peak": [
+            55,
+            36
+          ],
+          "body": "S1-body-2",
+          "possible_bodies": [
+            "S1-body-2"
+          ]
+        },
+        {
+          "id": "K-1377-0268",
+          "color": "black",
+          "local_peak": [
+            77,
+            50
+          ],
+          "body": null,
+          "possible_bodies": []
+        },
+        {
+          "id": "C-1339-0277",
+          "color": "red",
+          "local_peak": [
+            39,
+            58
+          ],
+          "body": "S1-body-3",
+          "possible_bodies": [
+            "S1-body-3"
+          ]
+        },
+        {
+          "id": "K-1319-0295",
+          "color": "black",
+          "local_peak": [
+            19,
+            75
+          ],
+          "body": "S1-body-5",
+          "possible_bodies": [
+            "S1-body-5"
+          ]
+        }
+      ],
+      "missed": [
+        "S1-body-1",
+        "S1-body-4"
+      ]
+    },
+    {
+      "sample": "S2",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [],
+      "missed": []
+    },
+    {
+      "sample": "S3",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 1,
+          "accepted": 2,
+          "false_positive": 1,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 1
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 1,
+          "false_positive": 1,
+          "duplicate_extras": 0,
+          "wrong_color": 1,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 3,
+          "detected": 3,
+          "accepted": 3,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0171-1123",
+          "color": "red",
+          "local_peak": [
+            24,
+            25
+          ],
+          "body": "S3-body-4",
+          "possible_bodies": [
+            "S3-body-4"
+          ]
+        },
+        {
+          "id": "C-0215-1127",
+          "color": "yellow",
+          "local_peak": [
+            66,
+            26
+          ],
+          "body": "S3-body-1",
+          "possible_bodies": [
+            "S3-body-1"
+          ]
+        },
+        {
+          "id": "C-0191-1146",
+          "color": "yellow",
+          "local_peak": [
+            41,
+            45
+          ],
+          "body": "S3-body-2",
+          "possible_bodies": [
+            "S3-body-2"
+          ]
+        },
+        {
+          "id": "K-0227-1153",
+          "color": "black",
+          "local_peak": [
+            77,
+            53
+          ],
+          "body": null,
+          "possible_bodies": []
+        },
+        {
+          "id": "C-0172-1170",
+          "color": "yellow",
+          "local_peak": [
+            19,
+            70
+          ],
+          "body": "S3-body-3",
+          "possible_bodies": [
+            "S3-body-3"
+          ]
+        },
+        {
+          "id": "K-0203-1173",
+          "color": "black",
+          "local_peak": [
+            56,
+            73
+          ],
+          "body": "S3-body-5",
+          "possible_bodies": [
+            "S3-body-5"
+          ]
+        }
+      ],
+      "missed": [
+        "S3-body-4"
+      ]
+    },
+    {
+      "sample": "S4",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 2,
+          "false_positive": 1,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 1
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 3,
+          "detected": 3,
+          "accepted": 3,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-1291-1456",
+          "color": "yellow",
+          "local_peak": [
+            40,
+            36
+          ],
+          "body": "S4-body-1",
+          "possible_bodies": [
+            "S4-body-1"
+          ]
+        },
+        {
+          "id": "C-1318-1463",
+          "color": "yellow",
+          "local_peak": [
+            69,
+            45
+          ],
+          "body": "S4-body-3",
+          "possible_bodies": [
+            "S4-body-3"
+          ]
+        },
+        {
+          "id": "C-1275-1474",
+          "color": "yellow",
+          "local_peak": [
+            25,
+            53
+          ],
+          "body": "S4-body-2",
+          "possible_bodies": [
+            "S4-body-2"
+          ]
+        },
+        {
+          "id": "K-1325-1490",
+          "color": "black",
+          "local_peak": [
+            75,
+            73
+          ],
+          "body": null,
+          "possible_bodies": []
+        },
+        {
+          "id": "K-1296-1491",
+          "color": "black",
+          "local_peak": [
+            48,
+            64
+          ],
+          "body": "S4-body-4",
+          "possible_bodies": [
+            "S4-body-4"
+          ]
+        }
+      ],
+      "missed": []
+    },
+    {
+      "sample": "S5",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-2161-1039",
+          "color": "black",
+          "local_peak": [
+            45,
+            35
+          ],
+          "body": "S5-body-1",
+          "possible_bodies": [
+            "S5-body-1"
+          ]
+        },
+        {
+          "id": "K-2183-1053",
+          "color": "black",
+          "local_peak": [
+            63,
+            53
+          ],
+          "body": "S5-body-2",
+          "possible_bodies": [
+            "S5-body-2"
+          ]
+        },
+        {
+          "id": "C-2157-1066",
+          "color": "red",
+          "local_peak": [
+            37,
+            67
+          ],
+          "body": "S5-body-3",
+          "possible_bodies": [
+            "S5-body-3"
+          ]
+        }
+      ],
+      "missed": []
+    },
+    {
+      "sample": "S6",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 3,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-2284-1877",
+          "color": "yellow",
+          "local_peak": [
+            74,
+            29
+          ],
+          "body": "S6-body-1",
+          "possible_bodies": [
+            "S6-body-1"
+          ]
+        },
+        {
+          "id": "C-2267-1898",
+          "color": "yellow",
+          "local_peak": [
+            58,
+            47
+          ],
+          "body": "S6-body-2",
+          "possible_bodies": [
+            "S6-body-2"
+          ]
+        }
+      ],
+      "missed": [
+        "S6-body-3",
+        "S6-body-4",
+        "S6-body-5"
+      ]
+    },
+    {
+      "sample": "S7",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0942-2583",
+          "color": "yellow",
+          "local_peak": [
+            11,
+            32
+          ],
+          "body": "S7-body-1",
+          "possible_bodies": [
+            "S7-body-1"
+          ]
+        },
+        {
+          "id": "C-0963-2596",
+          "color": "yellow",
+          "local_peak": [
+            31,
+            45
+          ],
+          "body": "S7-body-2",
+          "possible_bodies": [
+            "S7-body-1",
+            "S7-body-2"
+          ]
+        },
+        {
+          "id": "C-0956-2624",
+          "color": "red",
+          "local_peak": [
+            25,
+            74
+          ],
+          "body": "S7-body-3",
+          "possible_bodies": [
+            "S7-body-3"
+          ]
+        }
+      ],
+      "missed": []
+    },
+    {
+      "sample": "S8",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 2,
+          "false_positive": 1,
+          "duplicate_extras": 1,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "red": {
+          "visible": 3,
+          "detected": 3,
+          "accepted": 3,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "unmatched": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-1423-3004",
+          "color": "yellow",
+          "local_peak": [
+            21,
+            38
+          ],
+          "body": "S8-body-1",
+          "possible_bodies": [
+            "S8-body-1"
+          ]
+        },
+        {
+          "id": "C-1456-3009",
+          "color": "red",
+          "local_peak": [
+            56,
+            38
+          ],
+          "body": "S8-body-3",
+          "possible_bodies": [
+            "S8-body-3"
+          ]
+        },
+        {
+          "id": "C-1440-3032",
+          "color": "red",
+          "local_peak": [
+            39,
+            61
+          ],
+          "body": "S8-body-4",
+          "possible_bodies": [
+            "S8-body-4"
+          ]
+        },
+        {
+          "id": "C-1413-3039",
+          "color": "red",
+          "local_peak": [
+            14,
+            69
+          ],
+          "body": "S8-body-5",
+          "possible_bodies": [
+            "S8-body-5"
+          ]
+        },
+        {
+          "id": "K-1456-3042",
+          "color": "black",
+          "local_peak": [
+            59,
+            74
+          ],
+          "body": "S8-body-6",
+          "possible_bodies": [
+            "S8-body-6"
+          ]
+        },
+        {
+          "id": "K-1467-3046",
+          "color": "black",
+          "local_peak": [
+            67,
+            78
+          ],
+          "body": "S8-body-6",
+          "possible_bodies": [
+            "S8-body-6"
+          ]
+        }
+      ],
+      "missed": [
+        "S8-body-2"
+      ]
+    }
+  ],
+  "possible_additional_bodies": {
+    "black": 2,
+    "yellow": 0,
+    "red": 0
+  },
+  "limitations": [
+    "Small deliberate geographic sample, no random sampling error guarantee or whole-image extrapolation.",
+    "Single assistant annotations frozen before detection; no independent human adjudication.",
+    "Ellipses associate peaks with visible bodies; not segmentation ground truth.",
+    "Unmatched predictions require visual review; not automatically established false beads."
+  ]
+}

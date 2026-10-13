@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "region_pixels": 94977,
+    "bright_patch_pixels": 16521,
+    "beads": 869,
+    "complete_native_dark_perimeters": 207,
+    "preserved_files": 309,
+    "mean7_maximum_pixels": 40644,
+    "raw_maximum_pixels": 303102,
+    "mean7_plateaus": 40483,
+    "raw_plateaus": 163066
+  },
+  "source_image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "profile": {
+    "input_profile": "Apple Wide Color Sharing Profile",
+    "profile_sha256": "6a7672a5ac782c76ce96e31bd0551718c68818d7ccfd3ce50d23dfa453fb62ff",
+    "intent": "relative-colorimetric",
+    "output": "8-bit sRGB RGB via Pillow ImageCms/LCMS",
+    "lcms_version": "2.19",
+    "pillow_version": "12.3.0"
+  },
+  "scope": "Exact pixels, connected masks, measured centroids, maximum luminance, native RGB/HSV, enclosed dark signal, no accepted overlap, IDs, contours, every maximum retained, old evidence hashes. Not physical-bead ground truth."
+}

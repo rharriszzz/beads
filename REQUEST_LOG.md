@@ -7638,3 +7638,53 @@ complete inventory and evidence photo2/review/r272. Prepare scoped commit/push,
 verify exact remote tip/clean status, then stop. Next only on request: review
 interiors and single-gate exclusions before changing criteria. Keep current model/
 reasoning; no /new needed.
+
+
+## R272 — revised coverage objective and approval-skip instruction (2026-10-13)
+
+User supersedes the earlier trusted-subset objective: aim for >=80% visible-bead
+recall including black/red/yellow. Restore a dedicated first-dark-perimeter black
+reflection path and bypass R271 broad brightness, patch size and uniform illumination
+there. Keep ICC luminance/R270 peak search for colored beads; test rejection rules
+individually instead of indiscriminately disabling them. Complete stable IDs and
+inventory numbers, brightest native samples, bright patches, exact connected masks,
+centroids/counts, classification, confidence and separate smooth contours. Minimal
+viewer with ID/size/Nth/previous/next, zoom/pan and optional exclusions. Evaluate
+geographic independently reviewed photos and known synthetic identities, separate
+class recall/false positives, expose multiple highlights and uncertain denominators.
+No expected-count optimization, geometry, watershed, historical splines or modeled
+string indexing. Preserve previous work, <=30 minutes automated experiments, report,
+commit/push. If any action requires new approval, skip it and record for later.
+
+Outcome: new isolated review/r272-coverage and coverage_inventory_r272 preserve the
+old R272.869 measured proposals:207black,363red,299yellow. Raw native ICC-luminance
+maxima feed first dark enclosed reflection components; native-V controls50, smoothed
+V44, ICC gray138, V/material relaxation94, combinedICC/material207. No detection blur
+adopted. Colored mean7 guarded radius16 search, reliable core color, native path stops,
+retreat and bounded interior floor retries preserve870cap. Exact brightest-point
+agreement is necessary for overlap duplicate suppression; other overlaps exclude.
+All163066raw/40483mean7 maximum plateaus and all rejection/trace evidence retained.
+Common downstream old-cheap-gate baseline399colored; individual brightness474,
+illumination500, background427, contrast400, patch/window399; combined662. This
+isolates cheap gates without claiming to reproduce oldR27118-way stability rules.
+375/453old locations have new anchors within6px;119/136old R260reflection seeds have
+newblack peaks within6px. Neither comparison establishes physical identity.
+
+Frozen single-assistant pre-detection photo annotations cover31apparent bodies plus
+2possibleblack. Correct-class matches24/31=77.4%, or24/33=72.7%; bycolor6/9black,
+7/8red,11/14yellow. Three unmatched black peaks belong to real bodies beyond the
+counting boundary; possible duplicate and two color/ownership disagreements remain
+unresolved. No silently corrected labels, independent human review or whole-photo
+80% claim.52new synthetic scenes detect28/32black,28/32red,32/32yellow;112unchanged
+R270scenes32/32black,15/24red,29/45yellow. Zero synthetic false locations/duplicate
+extras/foreign region pixels; pale highlights and invisible boundaries remain misses.
+
+23Python tests pass; exact869masks/207dark shells/measurements and309preserved-file
+hashes pass;31actual viewer-JavaScript Node logic checks pass. Chromium launch fails
+sandbox permissions; no new approval requested, saved real-browser checks skipped
+and documented. UI rendered layout remains unverified. Native region sizes7/82/641
+minimum/median/maximum,94977totalpixels;15/16posthocgeographiccells. Budget23.4minutes
+through final evidence. Production detectors, old viewers, reviews, geometry/indexing
+unchanged. Report photo2/COVERAGE_R272.md; scoped commit/push then stop. Next only on
+request: independently adjudicate reflection identities/pale-color failures and run
+saved browser check when authorized. Keep current model/reasoning; no /new needed.

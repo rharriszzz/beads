@@ -1,5 +1,40 @@
 # Beads session handoff — new branch
 
+## Current R272 coverage — restores black reflections; 80% not demonstrated
+
+[Report](photo2/COVERAGE_R272.md) · [viewer](photo2/coverage_inventory_r272/index.html) ·
+[evidence](photo2/review/r272-coverage/README.md). User reuses R272 and supersedes
+previous conservative-subset restrictions: seek >=80% visible-bead recall, including
+black reflections, without optimizing to an expected count. Skip any action needing
+new approval; record it and finish scoped commit/push. Old R272 remains intact.
+
+Final image-only experiment retains869 measured proposals:207black/363red/299yellow.
+Dedicated raw ICC-Y maxima and first closed dark enclosing perimeter bypass R271
+broad-brightness/patch-size/uniformity gates. ICC neutral-gray darkness outperforms
+native V; five controls survive. Colored mean7/radius16 R270 search and targeted
+cheap-gate relaxations preserve photographic background/color/valley evidence.
+Native connected masks, centroids/counts, brightest Y/RGB/HSV, bright patches,
+confidence and separate display contours are complete. Distinct overlapping peaks
+are withheld; only identical brightest pixels permit duplicate suppression.
+No geometry, string indexing, watershed, historical splines or manual runtime IDs.
+
+Frozen assistant photo samples recover24/31 apparent bodies (77.4%), or24/33 if
+including two uncertain black bodies. Black6/9, red7/8, yellow11/14. Three sample-edge
+association flags are real outside-frame beads; possible duplicate/color disagreements
+remain explicit. No independently human-reviewed whole-photo denominator or80%
+success claim. New52-scene synthetic recall black28/32, red28/32, yellow32/32;
+unchanged112-scene R270 recall32/32,15/24,29/45 respectively. No synthetic false
+locations, duplicate extras or foreign mask pixels. Pale highlights/ambiguous
+interfaces still fail. R271453 and all old results preserved;375old locations have
+new anchors within6px (correspondence only).119/136R260 reflection seeds match
+new black peaks within6px. Exact869mask/207dark-shell audit and309old hashes pass.
+23Python tests and31Node viewer logic checks pass. Real Chromium launch fails in
+sandbox; skipped rather than requesting new approval. Saved browser test remains
+for later. Experiment window23.4minutes. Stop after commit/push. Next only on
+request: independent reflection identity/pale-color review and authorized browser
+check. Keep current model/reasoning; no /new needed for photographic review.
+
+
 ## Current R272 — measured trusted interiors and minimal viewer
 
 [Report](photo2/TRUSTED_INVENTORY_R272.md) · [viewer](photo2/trusted_inventory_r272/index.html) · [inventory/evidence](photo2/review/r272/README.md).

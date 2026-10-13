@@ -1,0 +1,5803 @@
+{
+  "scenes": 52,
+  "metrics": {
+    "black": {
+      "visible": 32,
+      "detected": 28,
+      "accepted": 28,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "background_pixels": 0,
+      "other_body_pixels": 0,
+      "recall": 0.875,
+      "false_discovery_fraction": 0.0
+    },
+    "red": {
+      "visible": 32,
+      "detected": 8,
+      "accepted": 8,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "background_pixels": 0,
+      "other_body_pixels": 0,
+      "recall": 0.25,
+      "false_discovery_fraction": 0.0
+    },
+    "yellow": {
+      "visible": 32,
+      "detected": 8,
+      "accepted": 8,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "background_pixels": 0,
+      "other_body_pixels": 0,
+      "recall": 0.25,
+      "false_discovery_fraction": 0.0
+    }
+  },
+  "results": [
+    {
+      "scene": "black-black-clear",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "clear",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "background": 2,
+          "color": 2
+        }
+      }
+    },
+    {
+      "scene": "black-black-dim",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "dim",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "background": 2,
+          "color": 2
+        }
+      }
+    },
+    {
+      "scene": "black-black-uneven",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "uneven",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "background": 2,
+          "color": 2
+        }
+      }
+    },
+    {
+      "scene": "black-black-touching",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "touching",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0076-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 13007,
+            "context_uncertain_pixels": 504,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "background": 1,
+          "color": 2,
+          "black-open": 1
+        }
+      }
+    },
+    {
+      "scene": "black-black-multiple-highlights",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "multiple-highlights",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 5,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "background": 2,
+          "color": 2,
+          "duplicate-support": 2
+        }
+      }
+    },
+    {
+      "scene": "black-black-colored-highlight",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "colored-highlight",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "background": 2,
+          "color": 2
+        }
+      }
+    },
+    {
+      "scene": "black-black-cast-shadow",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "cast-shadow",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8299871020164067,
+            0.41968911917098445,
+            0.7725490196078432
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.03921568627450989
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 9023,
+            "context_uncertain_pixels": 4246,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 6,
+        "mean7_maxima": 6,
+        "accepted": 2,
+        "colors": {
+          "black": 2
+        },
+        "reasons": {
+          "context": 8,
+          "color": 2
+        }
+      }
+    },
+    {
+      "scene": "black-black-no-black-reflection",
+      "colors": {
+        "1": "black",
+        "2": "black"
+      },
+      "condition": "no-black-reflection",
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 1,
+        "mean7_maxima": 1,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-clear",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "clear",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-dim",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "dim",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 2,
+          "color": 2,
+          "black-open": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-uneven",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "uneven",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0057-0055",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0095-0055",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 5,
+        "mean7_maxima": 5,
+        "accepted": 2,
+        "colors": {
+          "red": 2
+        },
+        "reasons": {
+          "background": 2,
+          "better-peak": 2,
+          "black-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-touching",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "touching",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 13007,
+            "context_uncertain_pixels": 504,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 1,
+          "region-open": 2,
+          "black-open": 1,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-multiple-highlights",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "multiple-highlights",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 5,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 2,
+          "region-open": 2,
+          "black-color": 4
+        }
+      }
+    },
+    {
+      "scene": "red-red-colored-highlight",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "colored-highlight",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 2.3704317660619547,
+            "name": "red",
+            "semantic_distances": {
+              "red": 2.370431766061955,
+              "yellow": 57.629568233938045
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "red": 2
+        },
+        "reasons": {
+          "background": 2,
+          "black-open": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-cast-shadow",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "cast-shadow",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8299871020164067,
+            0.41968911917098445,
+            0.7725490196078432
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.03921568627450989
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 9023,
+            "context_uncertain_pixels": 4246,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 6,
+        "mean7_maxima": 6,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 8,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-red-no-black-reflection",
+      "colors": {
+        "1": "red",
+        "2": "red"
+      },
+      "condition": "no-black-reflection",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-clear",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "clear",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-dim",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "dim",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0047-0052",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0085-0052",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "yellow": 2
+        },
+        "reasons": {
+          "background": 2,
+          "black-open": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-uneven",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "uneven",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0057-0055",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0095-0055",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "yellow": 2
+        },
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-touching",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "touching",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 13007,
+            "context_uncertain_pixels": 504,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 1,
+          "region-open": 2,
+          "black-open": 1,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-multiple-highlights",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "multiple-highlights",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-colored-highlight",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "colored-highlight",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.880109732041035,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 59.880109732041035,
+              "yellow": 0.11989026795896507
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-cast-shadow",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "cast-shadow",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8299871020164067,
+            0.41968911917098445,
+            0.7725490196078432
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.03921568627450989
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 9023,
+            "context_uncertain_pixels": 4246,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 6,
+        "mean7_maxima": 6,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 8,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "yellow-yellow-no-black-reflection",
+      "colors": {
+        "1": "yellow",
+        "2": "yellow"
+      },
+      "condition": "no-black-reflection",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "black-red-clear",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "clear",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-dim",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "dim",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 2,
+          "black-open": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-uneven",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "uneven",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0095-0055",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 4,
+        "mean7_maxima": 4,
+        "accepted": 2,
+        "colors": {
+          "black": 1,
+          "red": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "better-peak": 1,
+          "black-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-touching",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "touching",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 13007,
+            "context_uncertain_pixels": 504,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "background": 1,
+          "color": 1,
+          "region-open": 1,
+          "black-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-multiple-highlights",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "multiple-highlights",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 5,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "region-open": 1,
+          "black-color": 2,
+          "duplicate-support": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-colored-highlight",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "colored-highlight",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 2.3704317660619547,
+            "name": "red",
+            "semantic_distances": {
+              "red": 2.370431766061955,
+              "yellow": 57.629568233938045
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 1,
+          "red": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "black-open": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-cast-shadow",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "cast-shadow",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8299871020164067,
+            0.41968911917098445,
+            0.7725490196078432
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.03921568627450989
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 9023,
+            "context_uncertain_pixels": 4246,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 6,
+        "mean7_maxima": 6,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "context": 8,
+          "color": 1,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-red-no-black-reflection",
+      "colors": {
+        "1": "black",
+        "2": "red"
+      },
+      "condition": "no-black-reflection",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 2,
+        "mean7_maxima": 2,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "background": 2,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-clear",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "clear",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "color": 1,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-dim",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "dim",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0085-0052",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 1,
+          "yellow": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "black-open": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-uneven",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "uneven",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0095-0055",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 2,
+        "colors": {
+          "black": 1,
+          "yellow": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-touching",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "touching",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 13007,
+            "context_uncertain_pixels": 504,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "contrast": 1,
+          "background": 1,
+          "color": 1,
+          "region-open": 1,
+          "black-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-multiple-highlights",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "multiple-highlights",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 4,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "color": 1,
+          "region-open": 1,
+          "duplicate-support": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-colored-highlight",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "colored-highlight",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.880109732041035,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 59.880109732041035,
+              "yellow": 0.11989026795896507
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "color": 1,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-cast-shadow",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "cast-shadow",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8299871020164067,
+            0.41968911917098445,
+            0.7725490196078432
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.03921568627450989
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 9023,
+            "context_uncertain_pixels": 4246,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 6,
+        "mean7_maxima": 6,
+        "accepted": 1,
+        "colors": {
+          "black": 1
+        },
+        "reasons": {
+          "context": 8,
+          "color": 1,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "black-yellow-no-black-reflection",
+      "colors": {
+        "1": "black",
+        "2": "yellow"
+      },
+      "condition": "no-black-reflection",
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 2,
+        "mean7_maxima": 2,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-clear",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "clear",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          },
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-dim",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "dim",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0085-0052",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "yellow": 1
+        },
+        "reasons": {
+          "background": 2,
+          "color": 1,
+          "black-open": 2
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-uneven",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "uneven",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0057-0055",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "C-0095-0055",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          },
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 4,
+        "mean7_maxima": 4,
+        "accepted": 2,
+        "colors": {
+          "red": 1,
+          "yellow": 1
+        },
+        "reasons": {
+          "background": 2,
+          "better-peak": 1,
+          "black-open": 1,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-touching",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "touching",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          },
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 13007,
+            "context_uncertain_pixels": 504,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 1,
+          "region-open": 2,
+          "black-open": 1,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-multiple-highlights",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "multiple-highlights",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          },
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 4,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 3
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-colored-highlight",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "colored-highlight",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "C-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 2.3704317660619547,
+            "name": "red",
+            "semantic_distances": {
+              "red": 2.370431766061955,
+              "yellow": 57.629568233938045
+            }
+          },
+          {
+            "hue": 59.880109732041035,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 59.880109732041035,
+              "yellow": 0.11989026795896507
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 1,
+        "colors": {
+          "red": 1
+        },
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 1,
+          "black-open": 1,
+          "black-color": 1
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-cast-shadow",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "cast-shadow",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          },
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8299871020164067,
+            0.41968911917098445,
+            0.7725490196078432
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.03921568627450989
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 9023,
+            "context_uncertain_pixels": 4246,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 6,
+        "mean7_maxima": 6,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 8,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "red-yellow-no-black-reflection",
+      "colors": {
+        "1": "red",
+        "2": "yellow"
+      },
+      "condition": "no-black-reflection",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [
+          {
+            "hue": 0.0,
+            "name": "red",
+            "semantic_distances": {
+              "red": 0.0,
+              "yellow": 60.0
+            }
+          },
+          {
+            "hue": 59.99999999999999,
+            "name": "yellow",
+            "semantic_distances": {
+              "red": 60.0,
+              "yellow": 0.0
+            }
+          }
+        ],
+        "background_model": {
+          "center": [
+            0.8293650793650793,
+            0.4221105527638191,
+            0.7803921568627451
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12890,
+            "context_uncertain_pixels": 608,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 3,
+        "mean7_maxima": 3,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "contrast": 1,
+          "background": 2,
+          "region-open": 2,
+          "black-color": 2
+        }
+      }
+    },
+    {
+      "scene": "background-0.0",
+      "colors": {},
+      "condition": "background",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.0,
+            0.39790575916230364,
+            0.7490196078431373
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12356,
+            "context_uncertain_pixels": 3044,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 1,
+        "mean7_maxima": 2,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 3
+        }
+      }
+    },
+    {
+      "scene": "background-0.16",
+      "colors": {},
+      "condition": "background",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.16008926394209178,
+            0.39790575916230364,
+            0.7490196078431373
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12356,
+            "context_uncertain_pixels": 3044,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 1,
+        "mean7_maxima": 2,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 3
+        }
+      }
+    },
+    {
+      "scene": "background-0.5",
+      "colors": {},
+      "condition": "background",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.5,
+            0.39790575916230364,
+            0.7490196078431373
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12356,
+            "context_uncertain_pixels": 3044,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 1,
+        "mean7_maxima": 2,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 3
+        }
+      }
+    },
+    {
+      "scene": "background-0.83",
+      "colors": {},
+      "condition": "background",
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "summary": {
+        "parameters": {
+          "minimum_mean_y": 0.04,
+          "minimum_lit_fraction": 0.45,
+          "minimum_core_pixels": 6,
+          "minimum_window_ratio": 0.35,
+          "minimum_contrast": 0.12,
+          "background_clearance": 1,
+          "hue_tolerance": 18.0,
+          "minimum_region_pixels": 12,
+          "minimum_black_pixels": 3,
+          "maximum_pixels": 870,
+          "context_radius": 20,
+          "black_maximum_value": 0.32,
+          "black_peak_value": 0.22,
+          "black_contrast": 0.12,
+          "black_surround_fraction": 0.65,
+          "colored_floor": 0.32,
+          "raw_rise_allowance": 0.02,
+          "black_enabled": true
+        },
+        "palette": [],
+        "background_model": {
+          "center": [
+            0.830892183424116,
+            0.39790575916230364,
+            0.7490196078431373
+          ],
+          "tolerance": [
+            0.005555555555555556,
+            0.025,
+            0.025
+          ],
+          "enabled": true,
+          "sample_count": 1936,
+          "source": "generic border HSV; conservative 95-percent intervals",
+          "texture_limit_dn": 8.0,
+          "uncertainty_hue_deg": 30.0,
+          "stop_map": {
+            "confident_pixels": 12356,
+            "context_uncertain_pixels": 3044,
+            "context_half_window": 12,
+            "smooth_factor": 1.5,
+            "nearby_fraction": 0.08
+          }
+        },
+        "raw_maxima": 2,
+        "mean7_maxima": 2,
+        "accepted": 0,
+        "colors": {},
+        "reasons": {
+          "context": 4
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 22.14163747501152,
+  "note": "Known visible body denominator includes black with no visible reflection. No truth supplied to detector."
+}

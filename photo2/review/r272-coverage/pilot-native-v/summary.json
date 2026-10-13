@@ -1,0 +1,93 @@
+{
+  "parameters": {
+    "minimum_mean_y": 0.04,
+    "minimum_lit_fraction": 0.45,
+    "minimum_core_pixels": 6,
+    "minimum_window_ratio": 0.35,
+    "minimum_contrast": 0.12,
+    "background_clearance": 1,
+    "hue_tolerance": 18.0,
+    "minimum_region_pixels": 12,
+    "minimum_black_pixels": 3,
+    "maximum_pixels": 870,
+    "context_radius": 20,
+    "black_maximum_value": 0.32,
+    "black_peak_value": 0.22,
+    "black_contrast": 0.12,
+    "black_surround_fraction": 0.65,
+    "colored_floor": 0.32,
+    "raw_rise_allowance": 0.02,
+    "black_enabled": true
+  },
+  "palette": [
+    {
+      "hue": 35.34463040538029,
+      "name": "yellow",
+      "semantic_distances": {
+        "red": 35.344630405380286,
+        "yellow": 24.655369594619714
+      }
+    },
+    {
+      "hue": 352.4144254461657,
+      "name": "red",
+      "semantic_distances": {
+        "red": 7.585574553834249,
+        "yellow": 67.5855745538343
+      }
+    }
+  ],
+  "background_model": {
+    "center": [
+      0.8672515156487837,
+      0.5088495575221239,
+      0.8431372549019608
+    ],
+    "tolerance": [
+      0.008565477815268618,
+      0.05195300579798601,
+      0.08235294117647063
+    ],
+    "enabled": true,
+    "sample_count": 986832,
+    "source": "generic border HSV; conservative 95-percent intervals",
+    "texture_limit_dn": 18.0,
+    "uncertainty_hue_deg": 30.0,
+    "stop_map": {
+      "confident_pixels": 6302629,
+      "context_uncertain_pixels": 444225,
+      "context_half_window": 12,
+      "smooth_factor": 1.5,
+      "nearby_fraction": 0.08
+    }
+  },
+  "raw_maxima": 163066,
+  "mean7_maxima": 40483,
+  "accepted": 743,
+  "colors": {
+    "yellow": 309,
+    "red": 384,
+    "black": 50
+  },
+  "reasons": {
+    "context": 6558,
+    "contrast": 35957,
+    "background": 169933,
+    "color": 478,
+    "better-peak": 37,
+    "region-open": 26,
+    "dim": 325,
+    "region-small": 62,
+    "region-holes": 24,
+    "peak-lost": 24,
+    "duplicate-support": 62,
+    "ownership-conflict": 2,
+    "illumination": 26,
+    "black-color": 25788,
+    "black-open": 3464,
+    "black-contrast": 4113,
+    "black-material": 225,
+    "black-size": 8
+  },
+  "elapsed_seconds": 27.385333414000343
+}

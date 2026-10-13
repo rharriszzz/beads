@@ -1,5 +1,17 @@
 # Beads photo-2 workflow
 
+R272 coverage supersedes prior conservative-subset/stop restrictions for this
+completed experiment. See photo2/COVERAGE_R272.md and review/r272-coverage.
+869 proposed interiors (207 black/363 red/299 yellow), not a verified bead count.
+Frozen sample recall24/31 (77.4%);80% whole-photo recall is NOT established.
+Black uses raw ICC-Y maxima and first native dark enclosure; colored uses guarded
+R270 search and individually audited gate relaxations. Exact masks stay separate
+from smoothed outlines. All previous results and R271453 remain preserved.
+23Python tests,31Node viewer checks,869mask/207shell audit pass. Chromium sandbox
+launch blocked; user said skip actions needing new approval, so real browser test
+is saved for later. Stop after commit/push; no automatic next phase or indexing.
+
+
 Read SESSION_HANDOFF.md, the latest REQUEST_LOG.md entries, PLAN.md and the
 relevant experiment before continuing. Current user instructions override old plans.
 This branch starts at origin/master 020303e (the remote has no main branch).
