@@ -1,0 +1,379 @@
+{
+  "elapsed_seconds": 11.411383628845215,
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "inputs": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "photo2/review/r264/comparison.json": "fab13252455d144c294ebe8a6baeed5a4e8bd8c2d8ef240fe69b9c9a8933df38",
+    "photo2/review/r266/straight-0-selected12/regions.json.gz": "551a5027f4bd3b71170dfaac4e2359a53acd751f4eff61a9ad41f9dc36ab694a",
+    "photo2/review/r266/straight-0-selected6/regions.json.gz": "0c111c17f8ebdec9d900433561b83bd449f86bbf428e436f1b8b40bca4b2d327",
+    "photo2/review/r266/straight-0-selected3/regions.json.gz": "4463d07cb3379bac395fd47fc6c6b60c3fa541e678fcb93aed27d38691a724b5",
+    "photo2/review/r266/annular-0-selected12/regions.json.gz": "df583dbd44aca70e2d9a0e904d2541da794019d70666342ffd92033d92b182c6",
+    "photo2/review/r266/annular-0-selected6/regions.json.gz": "47e7700c5bb91799a3a92d5f30789a63b622b0de9ff59d52776440c0f09287dc",
+    "photo2/review/r266/annular-0-selected3/regions.json.gz": "929b6190ecfef7047e8d2c1acc2f080cffc08f1792b5701c8abfe23f36e25949",
+    "photo2/bead_detection/audit_r267.py": "7f42380c75ab29ee9fb6e196864f626090373ea428ce463245726b10f996ba2c",
+    "photo2/bead_detection/refine_r266.py": "b8770eb8eff7435adafcfa470b6788e87e17dcaf726ec3c34a90cc86c9fd7820",
+    "photo2/bead_detection/annular_detect.py": "cc2abc1b5932a66fbd7e2ae79bb283255ba4d427462f0001e9a455a2897533e2",
+    "photo2/bead_detection/repaired_detect.py": "a1f98efdc1406dfa5a7b3044fb28075c334c8c97c7e3f8577b8fb64e661aabc8"
+  },
+  "metrics": [
+    "square5",
+    "square7",
+    "square9",
+    "disk2",
+    "disk3",
+    "disk4"
+  ],
+  "disk_pixel_counts": [
+    13,
+    29,
+    49
+  ],
+  "summaries": {
+    "R00956": {
+      "box": [
+        2233,
+        1863,
+        2314,
+        1944
+      ],
+      "plateaus": 127,
+      "pixels": 160,
+      "maxima_mask_exact": true,
+      "label_checks": {
+        "square5": {
+          "labels": 160,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "square7": {
+          "labels": 160,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "square9": {
+          "labels": 160,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "disk2": {
+          "labels": 160,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "disk3": {
+          "labels": 160,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "disk4": {
+          "labels": 160,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        }
+      },
+      "selected_counts": {
+        "square5": 42,
+        "square7": 41,
+        "square9": 40,
+        "disk2": 40,
+        "disk3": 41,
+        "disk4": 41
+      },
+      "top_square7": [
+        {
+          "number": 16,
+          "plateau_id": "P090273",
+          "x": 2247,
+          "y": 1871,
+          "square7": 244.3265306122449,
+          "prominence_dn": 11,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 147,
+          "plateau_id": "P093726",
+          "x": 2236,
+          "y": 1940,
+          "square7": 243.53061224489795,
+          "prominence_dn": 3,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 155,
+          "plateau_id": "P093807",
+          "x": 2240,
+          "y": 1942,
+          "square7": 243.18367346938774,
+          "prominence_dn": 12,
+          "old12_status": "deferred",
+          "old12_reason": "smooth-context-and-learned-HSV-paper-uncertainty"
+        },
+        {
+          "number": 143,
+          "plateau_id": "P093682",
+          "x": 2245,
+          "y": 1939,
+          "square7": 243.0,
+          "prominence_dn": 6,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 112,
+          "plateau_id": "P092706",
+          "x": 2252,
+          "y": 1919,
+          "square7": 242.89795918367346,
+          "prominence_dn": 10,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 17,
+          "plateau_id": "P090274",
+          "x": 2249,
+          "y": 1871,
+          "square7": 242.51020408163265,
+          "prominence_dn": 1,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 140,
+          "plateau_id": "P093487",
+          "x": 2243,
+          "y": 1935,
+          "square7": 242.08163265306123,
+          "prominence_dn": 3,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 139,
+          "plateau_id": "P093486",
+          "x": 2239,
+          "y": 1935,
+          "square7": 241.83673469387756,
+          "prominence_dn": 3,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 156,
+          "plateau_id": "P093808",
+          "x": 2244,
+          "y": 1942,
+          "square7": 241.6122448979592,
+          "prominence_dn": 3,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 122,
+          "plateau_id": "P092909",
+          "x": 2248,
+          "y": 1923,
+          "square7": 241.57142857142858,
+          "prominence_dn": 10,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 25,
+          "plateau_id": "P090609",
+          "x": 2248,
+          "y": 1878,
+          "square7": 241.48979591836735,
+          "prominence_dn": 3,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 2,
+          "plateau_id": "P089873",
+          "x": 2246,
+          "y": 1863,
+          "square7": 241.08163265306123,
+          "prominence_dn": 7,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        }
+      ]
+    },
+    "R01284": {
+      "box": [
+        944,
+        2628,
+        1025,
+        2709
+      ],
+      "plateaus": 114,
+      "pixels": 138,
+      "maxima_mask_exact": true,
+      "label_checks": {
+        "square5": {
+          "labels": 138,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "square7": {
+          "labels": 138,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "square9": {
+          "labels": 138,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "disk2": {
+          "labels": 138,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "disk3": {
+          "labels": 138,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        },
+        "disk4": {
+          "labels": 138,
+          "overlapping_labels": 0,
+          "labels_covering_maximum_markers": 0
+        }
+      },
+      "selected_counts": {
+        "square5": 62,
+        "square7": 62,
+        "square9": 60,
+        "disk2": 61,
+        "disk3": 62,
+        "disk4": 63
+      },
+      "top_square7": [
+        {
+          "number": 73,
+          "plateau_id": "P128672",
+          "x": 981,
+          "y": 2671,
+          "square7": 240.12244897959184,
+          "prominence_dn": 2,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 122,
+          "plateau_id": "P130055",
+          "x": 972,
+          "y": 2698,
+          "square7": 235.75510204081633,
+          "prominence_dn": 17,
+          "old12_status": "retained",
+          "old12_reason": "ambiguous-candidate"
+        },
+        {
+          "number": 118,
+          "plateau_id": "P130028",
+          "x": 975,
+          "y": 2697,
+          "square7": 235.71428571428572,
+          "prominence_dn": 4,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 110,
+          "plateau_id": "P129826",
+          "x": 972,
+          "y": 2694,
+          "square7": 235.6326530612245,
+          "prominence_dn": 5,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 109,
+          "plateau_id": "P129783",
+          "x": 969,
+          "y": 2694,
+          "square7": 234.87755102040816,
+          "prominence_dn": 2,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 111,
+          "plateau_id": "P129827",
+          "x": 975,
+          "y": 2694,
+          "square7": 234.83673469387756,
+          "prominence_dn": 1,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 67,
+          "plateau_id": "P128549",
+          "x": 983,
+          "y": 2668,
+          "square7": 234.48979591836735,
+          "prominence_dn": 5,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 121,
+          "plateau_id": "P130054",
+          "x": 969,
+          "y": 2698,
+          "square7": 234.42857142857142,
+          "prominence_dn": 1,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 107,
+          "plateau_id": "P129783",
+          "x": 969,
+          "y": 2693,
+          "square7": 234.18367346938774,
+          "prominence_dn": 2,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 128,
+          "plateau_id": "P130260",
+          "x": 971,
+          "y": 2703,
+          "square7": 233.28571428571428,
+          "prominence_dn": 13,
+          "old12_status": "suppressed",
+          "old12_reason": "inferior neighborhood/region quality; broad bright bridge and gradual compatible shading"
+        },
+        {
+          "number": 66,
+          "plateau_id": "P128548",
+          "x": 976,
+          "y": 2668,
+          "square7": 233.26530612244898,
+          "prominence_dn": 5,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        },
+        {
+          "number": 108,
+          "plateau_id": "P129784",
+          "x": 977,
+          "y": 2693,
+          "square7": 231.44897959183675,
+          "prominence_dn": 3,
+          "old12_status": "rejected",
+          "old12_reason": "below-prominence"
+        }
+      ]
+    }
+  }
+}

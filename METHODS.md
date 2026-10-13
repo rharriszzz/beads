@@ -1,5 +1,18 @@
 # Methods collection — bead-rope reconstruction
 
+## R267 — audit native maxima before growth
+
+[Photographic findings](photo2/LOCAL_MAXIMA_R267.md),
+[all rankings and selection explanations](photo2/review/r267/README.md).
+Compute whole-image eight-connected regional maxima, preserve every plateau pixel,
+and rank original V by square5/7/9 and disk2/3/4 arithmetic means. Certify exact
+prominence using connected superlevel saddles with expanding context. Compare
+against each original eligibility gate, mixed score and suppressor; distinguish
+seed, supported display coordinate and physical center. Hold established background
+evidence fixed. Test neighbor associations explicitly: brighter neighborhoods do
+not establish common bead identity. Freeze growth for a seed-only causal control;
+no new selection or outline method is adopted from this two-crop audit.
+
 ## R266 — strict annular/straight comparison and automatic peak selection
 
 [Report](photo2/DETECTION_R266.md), [exact evidence](photo2/review/r266/README.md).

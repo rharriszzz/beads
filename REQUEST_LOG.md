@@ -7325,3 +7325,61 @@ Prepare scoped commit/push and exact remote-tip/clean verification, then stop.
 Next only when requested: review remaining duplicate alternatives and weak recovered
 candidates (R00956 paper-facing extra/dark-region noise); revisit annular later.
 Keep current model/reasoning; no/new needed for artifact review.
+
+
+## R267 — audit native maxima before further growth changes (2026-10-12)
+
+User rejects the R266 photographic results: R00956 yellow seeds appear too near
+edges; R01284 outlines remain irregular. Requests every native local maximum,
+including prominence/suppression rejects; square 5/7/9 and circular radius 2/3/4
+Value averages and independent rankings; raw V, prominence, H/S, exact selection
+status/reasons; legible numbered photographic maps/tables; comparison of stronger
+apparent-bead candidates with old choices and an explanation of the choices.
+Test averaging as a coordinate selector without merging neighbors. Preserve old
+detectors/results; no outline optimization, watershed, splines, simulated bead
+positions or manually assigned bead identities. Python-led focused experiment;
+commit/push numerical evidence, images and findings.
+
+Preflight: daisy, photo-2-strategy-v3, clean worktree/no stashes; fetch confirms
+0/0 with upstream at 5599dd7. Read current handoff/plan/log and R266 report/source.
+Methods: raw peak/prominence control, square averages, disk averages, and fixed
+local competition as a diagnostic. No detector revision selected in advance.
+
+R267 steering: user notes averaging cannot exclude background but FFT over a large
+enough area, standard deviation or other measures can, and considers background
+separation generally solved by previous work. Treat background as established;
+do not reopen it or make ungated paper rankings an argument against averaging.
+Added a control holding R266 background tests/recorded paper deferrals fixed;
+retain unfiltered rankings for completeness. No FFT/background optimization.
+
+## R267 — focused audit completed (2026-10-12)
+
+Saved 127/114 intersecting regional maxima, containing160/138 native maximum
+pixels. Full-photo native local_maxima exactly matches the preserved inventory;
+R01284 includes a previously easy-to-omit crop-crossing plateau. All six native
+square/disk means/ranks, exact prominence, H/S, raw V, saved statuses/suppressors,
+numbered maps, native originals and complete CSV/Markdown tables are tracked.
+Exact prominence is certified through connected superlevel saddles, not watershed.
+
+R266 excludes useful1/2-DN interior candidates before its mixed median7/p25/support
+score. All213 selected records across straight/annular12/6/3 variants have score
+and suppression explanations. Stale retained-maxima suppression reasons are
+flagged against authoritative final membership; old code/data remain unchanged.
+Background treatment is fixed per steering; a separate reuse control accompanies
+the unfiltered maxima, without a new background method or threshold search.
+
+Means reveal better interior candidates on the upper R00956 and central R01284
+yellows, but can still prefer edge patches. Existing bridge rules permit the
+shadowed R01284 candidate to relocate to an adjacent bright yellow; six direct
+mean controls reproduce this unsafe association. No revised selector adopted.
+Frozen strict growth from43 seeds, with132 metric comparisons and25 exact old-mask
+replays, still produces irregular support. No outline tuning; starting points are
+not the sole explanation. 4 numeric tests,1446 prominence gate checks,213 exact
+score checks and automatic no-overlapping-label checks pass. No simulated bead
+positions, manual bead identities, watershed, splines, geometry or indexing.
+
+Report: photo2/LOCAL_MAXIMA_R267.md; evidence: photo2/review/r267. Source and
+artifact hashes/reproduction commands preserved. Prepare scoped commit/push and
+verify exact remote tip/clean state, then stop. Next only when requested: retain
+low-prominence foreground candidates before growth and test adjacent-bead
+separation; keep background fixed. Keep current model/reasoning; no/new for review.

@@ -1,0 +1,8 @@
+.../home/rharris/git/beads/.venv/lib/python3.12/site-packages/skimage/morphology/grayreconstruct.py:216: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  rec_img.shape = np.array(seed.shape) + (np.array(footprint.shape) - 1)
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK

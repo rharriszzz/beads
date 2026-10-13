@@ -1,5 +1,35 @@
 # Beads session handoff — new branch
 
+## Current R267 — audit all maxima before region growth
+
+[Report](photo2/LOCAL_MAXIMA_R267.md) · [photographs/tables](photo2/review/r267/README.md).
+R267 audits both requested crops without changing production detection: 241 native
+maximum plateaus / 298 pixels, including a crop-crossing plateau. All square5/7/9
+and disk2/3/4 means/ranks, exact prominence, H/S, old selections/suppressions and
+nonoverlapping numbered photographic maps are saved. 213 selected records across
+six R266 variants have exact score/decision explanations. Some saved retained
+maxima have stale suppression-reason strings; the audit flags, preserves and
+resolves these against final status/membership without changing the old detector.
+
+Low-prominence interior maxima were excluded before R266's mixed median/quartile/
+support score. Averaging exposes useful alternatives, but small neighborhoods can
+still prefer edges and the existing bridge admits an apparent adjacent-yellow
+relocation in R01284. No replacement selector is adopted. Frozen strict growth
+from 43 seeds reproduces 25 original masks exactly and leaves irregular support;
+poor seeds are not the sole explanation. No outline optimization was performed.
+
+User steering treats background separation as generally solved. Hold established
+background evidence fixed when evaluating averages; no new FFT/background work.
+The all-raw rankings and separate fixed-R266-background control both survive.
+Four numerical tests, 1,446 prominence gate checks, 213 score checks and label/
+source-hash checks pass. No manual bead identities, simulated positions, watershed,
+splines, geometry/indexing, subagents or viewer/site changes.
+
+Stop after commit/push and exact remote/clean verification. Next only when
+requested: pre-growth retention of low-prominence interior alternatives with
+explicit adjacent-bead separation and fixed background. Do not resume outlines.
+Keep the user's current model/reasoning; no `/new` needed for evidence review.
+
 ## Current R266 — strict annular comparison and automatic peak selection
 
 [Report](photo2/DETECTION_R266.md) · [evidence](photo2/review/r266/README.md).

@@ -5,6 +5,16 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R267 audits all native maxima before growth; see photo2/LOCAL_MAXIMA_R267.md.
+241 plateaus/298 maximum pixels in R00956/R01284, all six neighborhood means,
+exact prominence, photographic maps and original selection reasons are saved.
+Low-prominence interior candidates were excluded before the mixed R266 score.
+Averaging gives useful alternatives but the old bridge can cross adjacent yellow
+areas; no revised detector adopted. Frozen growth retains irregular support.
+Background is established per user steering; keep it fixed, no new FFT/background
+or outline optimization. Next only when requested: pre-growth candidate retention
+and adjacent-bead separation. Stop after delivery; preserve all previous results.
+
 R266 supersedes the R265 next-step restriction: see photo2/DETECTION_R266.md.
 Strict light-to-dark0 DN is primary;1–3 DN are diagnostic only. Annular comparison
 uses one-native-pixel fixed-parent shells, irreversible stopped sectors and optional

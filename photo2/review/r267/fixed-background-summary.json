@@ -1,0 +1,46 @@
+{
+  "summaries": {
+    "R00956": {
+      "eligible_maximum_pixels": 117,
+      "all_maximum_pixels": 160,
+      "selected_counts": {
+        "square5": 38,
+        "square7": 38,
+        "square9": 38,
+        "disk2": 38,
+        "disk3": 38,
+        "disk4": 38
+      }
+    },
+    "R01284": {
+      "eligible_maximum_pixels": 138,
+      "all_maximum_pixels": 138,
+      "selected_counts": {
+        "square5": 62,
+        "square7": 63,
+        "square9": 61,
+        "disk2": 61,
+        "disk3": 62,
+        "disk4": 63
+      }
+    }
+  },
+  "background_model": {
+    "center": [
+      0.8672515156487837,
+      0.5088495575221239,
+      0.8431372549019608
+    ],
+    "tolerance": [
+      0.008565477815268618,
+      0.05195300579798601,
+      0.08235294117647063
+    ],
+    "enabled": true,
+    "sample_count": 986832,
+    "source": "generic border HSV; conservative 95-percent intervals",
+    "texture_limit_dn": 18.0,
+    "uncertainty_hue_deg": 30.0
+  },
+  "scope": "Existing R266 seed/context tests plus preserved paper deferrals; not new background work. Region-fraction test is reused only when already recorded, not invented before growth. Passing means background-eligible, not verified bead."
+}
