@@ -7452,3 +7452,51 @@ current-point replays. Report: photo2/CLIMBING_MAXIMA_R268.md; full evidence and
 reproduction: photo2/review/r268/README.md. Prepare scoped commit/push, verify
 remote tip and clean state, then stop. Next only on request: endpoint/weak-start
 review before selection. Keep current model/reasoning; no /new needed.
+
+## R269 — search farther for the best brightness peak (2026-10-12)
+
+User reports R00956 climbs stop too early, asks for the apparently brighter peak
+about five pixels from the central R01284 result, and confirms the green/blue
+shadowed-neighbor starts belong to separate beads. Preserve this as evaluation
+evidence, never runtime manual identity. Compare search radii beyond five pixels,
+independent of 5/7/9 brightness windows, allowing shallow within-body fluctuations
+but blocking substantial valleys/color/background. Explicit alternative paths,
+all competing peaks/measurements/reasons, native photographs and synthetic neighbor
+validation required. No watershed, old geometry, manual identities or production
+changes. Automate in Python, concise Markdown report, commit/push.
+Preflight: daisy; clean photo-2-strategy-v3, no stashes, fetched origin at 43bdfbb.
+Read current instructions/handoff/plan/log and R268 report/code. Compare strict
+climb, unrestricted bounded-best control, guarded multi-path search and fixed
+valley sensitivities, with radii 3/6/10/16 native pixels.
+
+R269 outcome: complete, production unchanged. All451 original R268 starts tested
+with separate5/7/9 windows and radii3/6/10/16 across four path controls;21,648 photo
+searches preserve original maxima, competing means, reachable trees/frontiers and
+523 focused alternative-route records. Exact middle/lower R00956 mean7 proposals
+(2263,1898)/(2251,1920) improve scores. Middle requires raw saddle235 below old
+floor238; lower succeeds through alternative paths without relaxing raw12.
+Upper mean5/7 and central R01284 remain the best mean V even unrestricted at r16.
+
+The pale R01284 raw peak (976,2668) is exactly5px from mean9 endpoint (980,2671).
+Raw V248>244, but mean5/7/9 are236.80/233.27/229.16. Its raw prominence5 and RGB
+[248,219,125] contrast with orange mean7 endpoint RGB[245,174,66]. HSV Value ignores
+the stronger green/blue channels. All eight mean9 neighbors fall; the best first
+step drops0.024691 DN. A secondary mean7 peak5.83px away requires2.244898 DN dip,
+but still ranks1.938776 DN below old mean7 endpoint. Photographs and full routes
+explain both candidates; no assumption that the old point is best photographically.
+
+User-confirmed central/shadowed origins remain separate review observations with
+no runtime labels. Raw24/mean2 gives distinct endpoints; mean6 permits a wrong
+crossing and is explicitly rejected for that photographic case. Fixed graph floors
+are not a universal later peak-relative valley guarantee. No production adoption.
+100 preserved synthetic scenes produce27,216 searches from567 image-background-
+eligible starts; all13,525 raw starts remain inventoried, including542 body starts.
+At r16/raw24/mean2, regular500 body starts have0 cross-body endpoints per window
+but1/2/1 background exits at5/7/9; four invisible-boundary scenes cross13/42.
+13 tests pass;97,998 selected moves,2,361,512 reachable nodes,740,446 frontier edges
+and1,569 optimal-path bottleneck certificates checked. Original source and prior
+R267/R268 artifacts hash-identical. Report photo2/BROADER_PEAK_SEARCH_R269.md;
+images/tables/traces/reproduction photo2/review/r269/README.md. Prepare scoped
+commit/push, verify exact remote tip/clean state, stop. Next only on request:
+brightness definition comparison preserving neighbor separation; current model/
+reasoning, no /new needed.

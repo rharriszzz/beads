@@ -1,5 +1,18 @@
 # Methods collection — bead-rope reconstruction
 
+## R269 — bounded best-peak search beyond strict ascent
+
+[Report](photo2/BROADER_PEAK_SEARCH_R269.md), [photographs and path certificates](photo2/review/r269/README.md).
+Separate neighborhood measurement size from search radius. Anchor to preserved
+prior endpoints; enumerate native paths within a fixed Euclidean disk, allowing
+score equality/descent above explicit raw/mean floors and fixed color/background
+barriers. Preserve every reachable predecessor and blocked frontier. Compare direct,
+shortest admissible and greatest-bottleneck routes; independently verify no route
+can exceed each reported bottleneck. Keep raw prominence, HSV/RGB evidence and
+mean score separate. A visibly pale highlight may score below an orange patch in
+max-channel HSV Value; broader search alone cannot repair that score mismatch.
+Use known neighboring-body truth for evaluation only and preserve failed controls.
+
 ## R268 — strict ascent on neighborhood-average brightness
 
 [Report](photo2/CLIMBING_MAXIMA_R268.md), [photographic and numerical evidence](photo2/review/r268/README.md).

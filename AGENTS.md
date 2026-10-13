@@ -5,6 +5,18 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R269 extends R268 peak-location review: see photo2/BROADER_PEAK_SEARCH_R269.md.
+Broader radius3/6/10/16 search improves middle/lower R00956 coordinates; all original
+maxima/paths survive. Pale R01284 peak (976,2668) is exactly5 pixels from mean9
+endpoint: raw248>244 but mean9 229.16<238.47. HSV Value ignores stronger G/B channels
+there; do not equate highest mean V with the best photographic coordinate.
+User confirms central/shadowed origins are separate beads. Raw24/mean2 keeps the
+named proposals separate, mean6 crosses incorrectly. This fact is review evidence,
+not runtime manual identity. No production detector or outline change.13 tests and
+all97,998 selected moves pass; old evidence hashes match. Stop after delivery.
+Next only if requested: brightness-score comparison sensitive to pale highlights,
+with preserved competing peaks and separate-neighbor checks. No geometry/indexing.
+
 R268 supersedes the R267 next-step restriction: see photo2/CLIMBING_MAXIMA_R268.md.
 Native 5/7/9 mean-V climbing improves some coordinates but does not establish one
 endpoint per bead. Preserve all 451 starts, 8,118 photographic traces and six guard

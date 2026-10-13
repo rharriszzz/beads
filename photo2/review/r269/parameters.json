@@ -1,0 +1,66 @@
+{
+  "windows": [
+    5,
+    7,
+    9
+  ],
+  "search_radii": [
+    3,
+    6,
+    10,
+    16
+  ],
+  "policies": {
+    "radius-only": {
+      "raw_drop": 256,
+      "mean_drop": 256,
+      "color": false
+    },
+    "raw12-mean2": {
+      "raw_drop": 12,
+      "mean_drop": 2,
+      "color": true
+    },
+    "raw24-mean2": {
+      "raw_drop": 24,
+      "mean_drop": 2,
+      "color": true
+    },
+    "raw24-mean6": {
+      "raw_drop": 24,
+      "mean_drop": 6,
+      "color": true
+    }
+  },
+  "primary_review": "raw24-mean2; diagnostic only",
+  "anchor": "each original start preserves its R268 guarded12 endpoint for each window",
+  "raw_reference": "maximum raw V actually visited on that R268 prefix; does not reset at endpoint",
+  "mean_reference": "mean V at the R268 endpoint",
+  "background": {
+    "center": [
+      0.8672515156487837,
+      0.5088495575221239,
+      0.8431372549019608
+    ],
+    "tolerance": [
+      0.008565477815268618,
+      0.05195300579798601,
+      0.08235294117647063
+    ],
+    "enabled": true,
+    "sample_count": 986832,
+    "source": "generic border HSV; conservative 95-percent intervals",
+    "texture_limit_dn": 18.0,
+    "uncertainty_hue_deg": 30.0,
+    "stop_map": {
+      "confident_pixels": 6302629,
+      "context_uncertain_pixels": 444225,
+      "context_half_window": 12,
+      "smooth_factor": 1.5,
+      "nearby_fraction": 0.08
+    }
+  },
+  "path": "all 8-neighbor paths inside closed Euclidean disk; equality/descent allowed above floors; diagonal corners also inside disk and pass barriers",
+  "ranking": "greatest exact mean sum, then least displacement from anchor, then y/x; prominence and H/S reported independently, no mixed weights or prominence gate",
+  "identity": "coordinate proposals only; original provenance never merged; supplied separate-bead observation used only in review"
+}

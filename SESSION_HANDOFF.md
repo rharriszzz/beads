@@ -1,5 +1,38 @@
 # Beads session handoff — new branch
 
+## Current R269 — broader search and the missed-looking pale peak
+
+[Report](photo2/BROADER_PEAK_SEARCH_R269.md) · [photographs and traces](photo2/review/r269/README.md).
+All 451 R268 starts retain their original endpoint anchors. Independent 5/7/9
+mean-V windows and 3/6/10/16-pixel search radii produce 21,648 searches. Exhaustive
+native graph paths allow equality/descent above fixed raw/mean floors, with existing
+background/color barriers and diagonal corner checks. All raw maxima, competing
+mean peaks, reachable trees, blocked frontiers and alternative routes survive.
+
+R00956 middle/lower yellow mean7 proposals move to (2263,1898)/(2251,1920).
+The middle's best raw saddle235 fails the old floor238; the lower has an alternative
+route within the original12-DN raw allowance. Upper mean5/7 already maximize V in
+radius16. R01284 pale raw peak (976,2668) is exactly5 pixels from mean9 endpoint
+(980,2671): raw248>244, but mean9 229.16<238.47. The first mean9 step falls only
+0.024691 DN and strict climbing stops. Even unrestricted search keeps the orange
+patch under mean V; stronger G/B in the pale patch exposes a brightness-score
+mismatch. Do not confuse best mean V with best photographic bead coordinate.
+
+User confirms the shadowed/central origins are separate beads; preserve as review
+evidence only, never a runtime manual identity. Raw24/mean2 keeps the named
+proposals separate; mean6 crosses incorrectly and is rejected for this example.
+No identity merging, production, outline, background, geometry or indexing change.
+
+100 synthetic scenes / 27,216 searches retain failures: guarded radius16 has zero
+cross-body endpoints among500 regular-scene body starts per window, but1/2/1
+background exits at5/7/9, and13/42 cross-body endpoints with an invisible boundary.
+13 tests pass;97,998 selected moves,2,361,512 reachable nodes,740,446 frontier edges
+and1,569 optimal-bottleneck certificates checked. Old source/evidence hashes match.
+Stop after commit/push and exact remote/clean verification. Next only if requested:
+compare brightness measures sensitive to the pale patch's green/blue channels,
+using these paths and separate-neighbor checks. Keep current model/reasoning;
+no `/new` needed for review.
+
 ## Current R268 — climb neighborhood-average brightness
 
 [Report](photo2/CLIMBING_MAXIMA_R268.md) · [photographs and traces](photo2/review/r268/README.md).
