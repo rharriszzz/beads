@@ -5,6 +5,21 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R272 authorizes measured interiors and a minimal standalone viewer; see
+photo2/TRUSTED_INVENTORY_R272.md and photo2/trusted_inventory_r272/index.html.
+Uniform image-only gates yield 255 measured proposals from preserved R271's 453;
+181 yellow/74 red, no fabricated black category. Black reflection-only logic is
+tested synthetically. Native masks/counts/centroids/ICC peaks remain separate from
+smoothed display contours. IDs are source-image location IDs, not string indices.
+Strict paths, color/brightness, retreat, stability and ownership gates may withhold
+a region even for a trusted location. Preserve all exclusions. User prioritizes
+counting failures of each requirement despite otherwise reliable evidence, especially
+background/illumination; never optimize detection count. Diagnostic single-gate
+omission finds 1 background/23 brightness/45 uneven-light otherwise-passing cases;
+none is promoted. 12 tests/32 browser checks and native/synthetic validation pass.
+Stop after delivery. Next only requested review of interiors and failure examples;
+no geometry/indexing. Historical results/viewers remain unchanged. No /new needed.
+
 R271 clarifies the active objective: a widespread highly reliable subset from one
 automatic algorithm, not all visible beads or maximum count. See
 photo2/TRUSTED_LOCATIONS_R271.md. Use original-plus-cyan-dot photographs; uncertain

@@ -1,5 +1,19 @@
 # Methods collection — bead-rope reconstruction
 
+## R272 — measured interiors and requirement-failure audit
+
+[Report](photo2/TRUSTED_INVENTORY_R272.md), [minimal viewer](photo2/trusted_inventory_r272/index.html).
+Apply image-only location gates uniformly; learn local color evidence and defer
+ambiguous labels. Require the absolute local native brightest pixel rather than
+substituting a dimmer hue-compatible sample. Use native descending straight paths,
+brightness/color stops, connected inward retreat and threshold agreement to define
+a conservative interior; reject overlaps instead of partitioning ownership.
+Preserve exact mask runs and unweighted centroids, with display-only closed contour
+smoothing. Stable image-scoped IDs are distinct from sequential inventory numbers.
+Audit single-gate failures against remaining detailed checks without promoting them;
+report unmeasured later stages honestly. Viewer size order uses exact counts and
+ascending ID ties, with direct-file browser tests and no historical debugger UI.
+
 ## R271 — conservative image-only location acceptance
 
 [Report](photo2/TRUSTED_LOCATIONS_R271.md), [simple cyan-dot photographs](photo2/review/r271/README.md).

@@ -1,0 +1,138 @@
+{
+  "palette": [
+    {
+      "hue": 0.6818323326861004,
+      "name": "red",
+      "semantic_distances": {
+        "red": 0.6818323326860991,
+        "yellow": 59.3181676673139
+      }
+    },
+    {
+      "hue": 37.75869734376362,
+      "name": "yellow",
+      "semantic_distances": {
+        "red": 37.75869734376363,
+        "yellow": 22.24130265623637
+      }
+    }
+  ],
+  "parameters": {
+    "context_radius": 20,
+    "hue_tolerance": 10.0,
+    "strict_hue_tolerance": 8.0,
+    "colored_floor_fraction": 0.4,
+    "black_floor_fraction": 0.55,
+    "minimum_luminance": 0.08,
+    "minimum_region_pixels": 20,
+    "minimum_black_pixels": 9,
+    "maximum_pixels": 870,
+    "minimum_patch_pixels": 5,
+    "maximum_patch_distance": 4.0,
+    "minimum_strict_retention": 0.6,
+    "maximum_centroid_shift": 1.5
+  },
+  "proposals": 453,
+  "accepted": 255,
+  "colors": {
+    "yellow": 181,
+    "red": 74
+  },
+  "exclusions": {
+    "interior-unstable": 65,
+    "color-outside-palette": 32,
+    "color-uncertain": 54,
+    "interior-too-small": 45,
+    "brightest-patch-too-small": 8,
+    "brightest-patch-displaced": 1,
+    "brightest-color-uncertain": 5,
+    "peak-not-interior": 5
+  },
+  "location_summary": {
+    "candidates": 40483,
+    "trusted": 453,
+    "searched": 493,
+    "exclusions": {
+      "incomplete-context": 1525,
+      "background-nearby": 36519,
+      "weak-local-contrast": 36991,
+      "flat-maximum": 1,
+      "insufficient-light": 4052,
+      "uneven-light": 743,
+      "unstable-location": 33,
+      "better-nearby-peak": 10,
+      "window-dilution": 529,
+      "competing-highlights": 20,
+      "small-bright-patch": 3
+    },
+    "conflicts": [],
+    "criteria": {
+      "minimum_mean_y": 0.25,
+      "minimum_lit_fraction": 0.85,
+      "lit_fraction_of_peak": 0.5,
+      "minimum_core_pixels": 25,
+      "core_fraction_of_peak": 0.8,
+      "minimum_window_ratio": 0.65,
+      "minimum_local_contrast": 0.15,
+      "maximum_plateau_diameter": 2.0,
+      "maximum_endpoint_spread": 3.0,
+      "rival_min_distance": 4.0,
+      "rival_score_ratio": 0.9,
+      "separating_valley_fraction": 0.25,
+      "final_conflict_distance": 6.0
+    },
+    "background_model": {
+      "center": [
+        0.8672515156487837,
+        0.5088495575221239,
+        0.8431372549019608
+      ],
+      "tolerance": [
+        0.008565477815268618,
+        0.05195300579798601,
+        0.08235294117647063
+      ],
+      "enabled": true,
+      "sample_count": 986832,
+      "source": "generic border HSV; conservative 95-percent intervals",
+      "texture_limit_dn": 18.0,
+      "uncertainty_hue_deg": 30.0,
+      "stop_map": {
+        "confident_pixels": 6302629,
+        "context_uncertain_pixels": 444225,
+        "context_half_window": 12,
+        "smooth_factor": 1.5,
+        "nearby_fraction": 0.08
+      }
+    }
+  },
+  "source_image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "old_proposals_exact": true,
+  "elapsed_seconds": 21.950216721990728,
+  "coverage_grid4x4": [
+    [
+      10,
+      6,
+      20,
+      11
+    ],
+    [
+      21,
+      10,
+      17,
+      35
+    ],
+    [
+      3,
+      15,
+      23,
+      38
+    ],
+    [
+      0,
+      15,
+      12,
+      19
+    ]
+  ]
+}

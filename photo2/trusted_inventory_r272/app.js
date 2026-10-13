@@ -1,0 +1,30 @@
+'use strict';
+(()=>{
+ const data=window.BEAD_INVENTORY, beads=data.beads, byId=new Map(beads.map(b=>[b.id,b]));
+ const el=id=>document.getElementById(id), canvas=el('photo'),ctx=canvas.getContext('2d'),image=new Image();
+ const state={ready:false,selected:null,order:'ascending',scale:1,tx:0,ty:0,width:1,height:1};
+ const compareId=(a,b)=>a.id<b.id?-1:a.id>b.id?1:0;
+ const ordered=()=>beads.slice().sort((a,b)=>(state.order==='ascending'?1:-1)*(a.region.pixel_count-b.region.pixel_count)||compareId(a,b));
+ function message(text=''){el('message').textContent=text;}
+ function controls(){let rows=ordered(),index=rows.findIndex(b=>b.id===state.selected);el('previous').disabled=index<=0;el('next').disabled=index<0||index===rows.length-1;el('ordering').textContent=`${beads.length} accepted · ${state.order==='ascending'?'Smallest to largest':'Largest to smallest'}${index>=0?' · '+(index+1)+' of '+beads.length:''}`;}
+ function draw(){if(!state.ready)return;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ctx.clearRect(0,0,state.width,state.height);ctx.save();ctx.translate(state.tx,state.ty);ctx.scale(state.scale,state.scale);ctx.imageSmoothingEnabled=false;ctx.drawImage(image,0,0);
+  if(el('overlays').checked){ctx.strokeStyle='#00ffff';ctx.fillStyle='#00ffff';for(const b of beads){const points=b.outline.smooth;ctx.lineWidth=(b.id===state.selected?2.2:1)/state.scale;ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(p[0]+.5,p[1]+.5):ctx.moveTo(p[0]+.5,p[1]+.5));ctx.closePath();ctx.stroke();ctx.beginPath();ctx.arc(b.brightest.x+.5,b.brightest.y+.5,Math.max(.35,1.8/state.scale),0,Math.PI*2);ctx.fill();}}
+  ctx.restore();
+ }
+ function resize(){const rect=canvas.getBoundingClientRect();const old=[state.width,state.height];state.width=rect.width;state.height=rect.height;canvas.width=Math.round(rect.width*devicePixelRatio);canvas.height=Math.round(rect.height*devicePixelRatio);state.tx+=(state.width-old[0])/2;state.ty+=(state.height-old[1])/2;draw();}
+ function fit(){state.scale=Math.min(state.width/data.image.width,state.height/data.image.height)*.96;state.tx=(state.width-data.image.width*state.scale)/2;state.ty=(state.height-data.image.height*state.scale)/2;draw();}
+ const coord=a=>a.map(v=>Number.isInteger(v)?v:v.toFixed(3)).join(', ');
+ function select(id){const b=byId.get(id);if(!b){message('No accepted bead has that ID.');return false;}state.selected=id;el('jump').value=id;const box=b.region.bbox,cx=(box[0]+box[2])/2,cy=(box[1]+box[3])/2;state.scale=Math.min(24,state.width/(box[2]-box[0]+24),state.height/(box[3]-box[1]+24));state.tx=state.width/2-cx*state.scale;state.ty=state.height/2-cy*state.scale;
+ const fields=[['Inventory number',b.inventory_number],['Color',b.color],['Brightest pixel (x, y)',coord([b.brightest.x,b.brightest.y])],['Relative luminance',b.brightest.luminance.toFixed(6)],['RGB (sRGB)',b.brightest.rgb_srgb.join(', ')],['HSV (sRGB)',`${b.brightest.hsv_srgb.h.toFixed(2)}°, ${b.brightest.hsv_srgb.s.toFixed(3)}, ${b.brightest.hsv_srgb.v.toFixed(3)}`],['Bright patch centroid (x, y)',coord(b.bright_patch.centroid)],['Bright patch pixels',b.bright_patch.pixel_count],['Interior centroid (x, y)',coord(b.region.centroid)],['Interior pixels',b.region.pixel_count]];
+ el('details').replaceChildren();const heading=document.createElement('h2');heading.textContent=b.id;el('details').append(heading);const dl=document.createElement('dl');for(const [key,value] of fields){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=key;dd.textContent=value;dl.append(dt,dd);}el('details').append(dl);message();controls();draw();return true;}
+ function rank(n,order){if(!Number.isInteger(n)||n<1||n>beads.length){message(`Enter N from 1 to ${beads.length}.`);return;}state.order=order;select(ordered()[n-1].id);}
+ function step(delta){const rows=ordered(),i=rows.findIndex(b=>b.id===state.selected);if(i>=0&&rows[i+delta])select(rows[i+delta].id);}
+ function zoom(factor,x=state.width/2,y=state.height/2){const next=Math.min(40,Math.max(.04,state.scale*factor)),ratio=next/state.scale;state.tx=x-(x-state.tx)*ratio;state.ty=y-(y-state.ty)*ratio;state.scale=next;draw();}
+ function hit(x,y){const px=Math.floor(x),py=Math.floor(y);return beads.find(b=>b.region.runs.some(r=>r[0]===py&&r[1]<=px&&px<=r[2]));}
+ el('jumpForm').addEventListener('submit',e=>{e.preventDefault();select(el('jump').value.trim());});el('smallest').onclick=()=>rank(1,'ascending');el('largest').onclick=()=>rank(1,'descending');el('nthSmallest').onclick=()=>rank(Number(el('nth').value),'ascending');el('nthLargest').onclick=()=>rank(Number(el('nth').value),'descending');el('previous').onclick=()=>step(-1);el('next').onclick=()=>step(1);el('zoomIn').onclick=()=>zoom(1.4);el('zoomOut').onclick=()=>zoom(1/1.4);el('fit').onclick=fit;el('overlays').onchange=draw;
+ canvas.addEventListener('wheel',e=>{e.preventDefault();const r=canvas.getBoundingClientRect();zoom(Math.exp(-e.deltaY*.0015),e.clientX-r.left,e.clientY-r.top);},{passive:false});
+ let drag=null;canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag={x:e.clientX,y:e.clientY,tx:state.tx,ty:state.ty};canvas.setPointerCapture(e.pointerId);});canvas.addEventListener('pointermove',e=>{if(!drag)return;state.tx=drag.tx+e.clientX-drag.x;state.ty=drag.ty+e.clientY-drag.y;draw();});canvas.addEventListener('pointerup',e=>{if(!drag)return;const distance=Math.hypot(e.clientX-drag.x,e.clientY-drag.y);drag=null;if(distance<4){const r=canvas.getBoundingClientRect(),b=hit((e.clientX-r.left-state.tx)/state.scale,(e.clientY-r.top-state.ty)/state.scale);if(b)select(b.id);}});canvas.addEventListener('pointercancel',()=>{drag=null;});
+ new ResizeObserver(resize).observe(el('stage'));image.onload=()=>{state.ready=true;resize();fit();controls();message();};image.onerror=()=>message('Could not load the photograph. Keep the viewer beside its review/r272 files.');image.src='../review/r272/'+data.image.file;el('nth').max=beads.length;
+ // Read-only-by-convention browser-test hook, no diagnostic controls in the UI.
+ window.beadViewer={state,data,ordered,select,hit,fit};
+})();

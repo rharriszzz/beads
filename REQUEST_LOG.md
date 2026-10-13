@@ -7580,3 +7580,61 @@ Report photo2/TRUSTED_LOCATIONS_R271.md; review photo2/review/r271/README.md.
 Prepare scoped commit/push and verify exact remote tip/clean tree. Stop for review;
 next only when requested: false trusted dots and geographic gaps, not count
 optimization or geometry. Current model/reasoning remains suitable; no /new needed.
+
+## R272 — complete trusted inventory and minimal viewer (2026-10-13)
+
+User requests image-only trusted inventory: stable IDs/sequential inventory numbers,
+ICC-corrected brightest native sample plus RGB/HSV, reliable bright-patch centroid,
+black/yellow/red classification, conservative connected interior mask, exact area
+and centroid, separate moderately smooth closed display outline, confidence/reasons.
+Black regions stay around reflections. Exclude uncertain color/ownership/location;
+no fabricated regions, count maximization, geometry or modeled string indexing.
+Preserve R270/R271 and compare the 453 proposals without assuming qualification.
+Minimal original-photo viewer: cyan outlines/peak points, click/ID jump, exact-mask
+size order with ID ties, smallest/largest/Nth/prev/next, automatic selection zoom,
+zoom/pan and overlay toggle only. Tests, machine inventory, report, size examples,
+commit/push requested. Preflight daisy, clean branch at 8139182, no stashes, fetched
+origin and zero divergence; read instructions, reports and relevant source.
+Methods compared: straight native paths, connected brightness/color evidence,
+threshold agreement. Select maximal connected interior under declared conservative
+gates, with strict native light-to-dark path certificates and separate display
+smoothing. No historical splines or watershed.
+User steering: audit how many candidates fail each requirement despite otherwise
+strong evidence, especially background and illumination; do not maximize count.
+Keep this diagnostic only, without relaxing inventory acceptance.
+
+R272 outcome: 255 complete measured interiors from the exact 453 recomputed R271
+proposals: 181 yellow/74 red, no black confidently accepted. Uniform image-only
+runtime, no reviewed coordinates, quotas or target count. Stable B-x-y IDs plus
+sequential row-major inventory numbers; native ICC luminance brightest sample,
+original/sRGB RGB/HSV, connected >=85%-peak patch with count/centroid, exact native
+mask runs/count/centroid, color/prototype and confidence evidence, separate closed
+raw/smoothed contours. The local9 absolute brightest sample is mandatory; five
+uncertain-color cases are excluded rather than substituting a dimmer point.
+Strict native descending paths, color/brightness floors, connected one-pixel
+retreat, strict-threshold agreement, cap870 and overlap/competitor rejection define
+maximal interior under declared gates, not full-body boundaries. Source/profile
+conventions and measured-mask scope are explicit. R01284 central pale location is
+withheld because the stricter interior hue check fails; shadowed neighbor remains
+excluded. Known synthetic black fixture retains only reflection interior.
+Simple standalone viewer works directly from HTML: cyan contours/peak markers,
+click/ID, smallest/largest, one-based Nth, current-order previous/next, auto-center/
+zoom, pan, fit and overlay toggle. Exact native pixel counts and ascending ID ties
+in both sort directions; no geometric model or historical debugger controls.
+User-directed audit retains all 40,483 locations and 453 region decisions, counts
+all requirement failures and investigates 878 sole-cheap-gate failures. Remaining
+checks pass for 1 background case, 23 brightness cases (17 red/6 yellow), and 45
+uneven-light cases (all red). All stay excluded; no criterion relaxed. Cases with
+unknown color have unmeasured later stages, not assumed passes. Photographic
+examples accompany these diagnostics and smallest/median/largest regions20/49/143.
+12 unit tests pass; 32 Chromium checks pass after required sandbox escalation.
+Final native validation recomputes every accepted mask, pixel/centroid/peak/RGB/HSV
+measurement and contour; prior source/evidence hashes remain unchanged. 112 saved
+synthetic scenes yield 11 accepted regions with zero background/other-body pixels
+or duplicate bodies. No whole-photo precision claim. R270/R271 and historical
+production detection/viewers are unchanged; no geometry/string indexing resumed.
+Report photo2/TRUSTED_INVENTORY_R272.md; viewer photo2/trusted_inventory_r272;
+complete inventory and evidence photo2/review/r272. Prepare scoped commit/push,
+verify exact remote tip/clean status, then stop. Next only on request: review
+interiors and single-gate exclusions before changing criteria. Keep current model/
+reasoning; no /new needed.

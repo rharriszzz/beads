@@ -1,5 +1,37 @@
 # Beads session handoff — new branch
 
+## Current R272 — measured trusted interiors and minimal viewer
+
+[Report](photo2/TRUSTED_INVENTORY_R272.md) · [viewer](photo2/trusted_inventory_r272/index.html) · [inventory/evidence](photo2/review/r272/README.md).
+The image-only pipeline exactly reproduces R271's 453 proposals, then accepts
+255 measured interiors (181 yellow, 74 red, no black). No category is fabricated;
+black reflection-only behavior passes a nonempty synthetic test. Stable source-
+image-scoped B-x-y IDs and sequential inventory numbers are not string indices.
+Save brightest native ICC-luminance pixel, native/sRGB RGB/HSV, connected bright
+patch and centroid, exact mask runs/count/centroid, color/confidence/reasons, and
+separate raw/smoothed closed contours. Brightest matches both accepted-mask and
+local9 maximum; uncertain peak color excludes rather than choosing a dimmer point.
+
+Strict native descending straight paths, relative color/brightness gates, one-pixel
+retreat, threshold stability, 870 cap and ownership rejection keep supports inside.
+Display smoothing moves vertices at most 0.4375 native pixels and never changes
+measurements. R01284 central pale location has unstable interior and is withheld;
+its shadowed neighbor remains excluded. No geometry or modeled string indexing.
+Viewer opens directly from HTML and offers only ID/size/Nth/prev/next, zoom/pan,
+fit and overlay toggle. Exact counts with ascending ID tie-break in both orders.
+
+User steering prioritizes requirement-failure audit, not increasing detections.
+All 40,483 location candidates and 453 region decisions survive. Among 878 cases
+failing only one cheap gate, 1 background, 23 brightness and 45 uneven-illumination
+cases pass remaining detailed checks. They stay excluded. Most are red; brightness
+is not a reflectance-independent illumination estimate. Later unmeasured region
+checks are never assumed passed after unknown color. Geographic coverage: 15/16
+full-frame cells without quotas. 12 unit tests, 32 browser checks, all native masks
+and 112 preserved synthetic scenes pass; 11 synthetic regions have zero background/
+other-body pixels or duplicate bodies. Old R270/R271 and historical detector/viewers
+are preserved. Stop after commit/push. Next only on request: review interiors and
+single-gate exclusions before revising criteria. Current model/reasoning; no /new.
+
 ## Current R271 — conservative trusted subset, simple photographic review
 
 [Report](photo2/TRUSTED_LOCATIONS_R271.md) · [cyan-dot photographs and exclusions](photo2/review/r271/README.md).

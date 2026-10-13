@@ -1,0 +1,48 @@
+{
+  "total_location_candidates": 40483,
+  "location_failures": {
+    "incomplete-context": 1525,
+    "background-nearby": 36519,
+    "weak-local-contrast": 36991,
+    "flat-maximum": 1,
+    "insufficient-light": 4052,
+    "uneven-light": 743,
+    "unstable-location": 33,
+    "better-nearby-peak": 10,
+    "window-dilution": 529,
+    "competing-highlights": 20,
+    "small-bright-patch": 3
+  },
+  "sole_cheap_failures": {
+    "background-nearby": 510,
+    "insufficient-light": 252,
+    "uneven-light": 115,
+    "weak-local-contrast": 1
+  },
+  "passes_remaining_detailed_checks": {
+    "insufficient-light": 23,
+    "uneven-light": 46,
+    "background-nearby": 1
+  },
+  "audited_single_failure_candidates": 878,
+  "region_failures": {
+    "interior-unstable": 65,
+    "color-outside-palette": 32,
+    "color-uncertain": 54,
+    "interior-too-small": 45,
+    "brightest-patch-too-small": 8,
+    "brightest-patch-displaced": 1,
+    "brightest-color-uncertain": 5,
+    "peak-not-interior": 5
+  },
+  "sole_recorded_region_failures": {
+    "interior-unstable": 59,
+    "color-outside-palette": 32,
+    "color-uncertain": 54,
+    "interior-too-small": 30,
+    "brightest-patch-too-small": 2,
+    "brightest-patch-displaced": 1,
+    "brightest-color-uncertain": 5
+  },
+  "caveat": "Counts overlap. Image-edge cases lack other measurements. Sole cheap failures receive detailed path/color/region/overlap checks, with the failed screening gate omitted only for diagnosis. All remain excluded. Later region checks require a known color; unmeasurable later checks are not assumed passed."
+}
