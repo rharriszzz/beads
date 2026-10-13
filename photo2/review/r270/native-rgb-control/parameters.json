@@ -1,0 +1,64 @@
+{
+  "measures": [
+    "V",
+    "Y",
+    "OKL",
+    "VS"
+  ],
+  "score_scale": "V DN; 255*linear sRGB Y; 255*OKLab L; VS=(maxRGB+minRGB)/2=V(1-S/2)",
+  "srgb_assumption": "Treat decoded JPEG RGB samples as sRGB, matching prior analysis; no scene-linear exposure or recovered illumination claim",
+  "quantization_scale": 1000000000,
+  "max_raw_rounding_error": 5e-10,
+  "averaging": "Transform each native pixel FIRST, then arithmetic mean; do not transform mean RGB",
+  "windows": [
+    5,
+    7,
+    9
+  ],
+  "radii": [
+    3,
+    6,
+    10,
+    16
+  ],
+  "policies": [
+    "radius-only",
+    "raw12-mean2",
+    "raw24-mean2",
+    "raw24-mean6"
+  ],
+  "climbing": "R268 deterministic strict 8-neighbor ascent; no equal steps; converted running raw-score 12-DN-equivalent guard",
+  "thresholds": "For score m: floor_m(ref,d)=g_m(max(0,g_m_inverse(ref)-d)); g_m is response to neutral sRGB gray. Raw budgets12/24, mean budgets2/6. Neutral equivalence does not prove equal colored-image barriers.",
+  "background": {
+    "center": [
+      0.8672515156487837,
+      0.5088495575221239,
+      0.8431372549019608
+    ],
+    "tolerance": [
+      0.008565477815268618,
+      0.05195300579798601,
+      0.08235294117647063
+    ],
+    "enabled": true,
+    "sample_count": 986832,
+    "source": "generic border HSV; conservative 95-percent intervals",
+    "texture_limit_dn": 18.0,
+    "uncertainty_hue_deg": 30.0,
+    "stop_map": {
+      "confident_pixels": 6302629,
+      "context_uncertain_pixels": 444225,
+      "context_half_window": 12,
+      "smooth_factor": 1.5,
+      "nearby_fraction": 0.08
+    }
+  },
+  "color": "Identical original HSV hue/saturation and background rules; HSV V in reliability tests is fixed color evidence, not the optimized brightness score",
+  "common_guard_control": "Original V climb anchor and original V running-peak raw24 floor, converted mean2 floor; all radii. Separates score ranking from changed anchors/raw guards.",
+  "max_source": "All regional plateau pixels intersecting each original crop, with 192-pixel context; independent raw and mean maxima for every score; no prominence gate",
+  "baseline": "V legacy starts must exactly reproduce R268 guarded/unguarded paths and all R269 broad endpoints",
+  "sources": [
+    "https://www.w3.org/TR/WCAG21/relative-luminance.html",
+    "https://bottosson.github.io/posts/oklab/"
+  ]
+}

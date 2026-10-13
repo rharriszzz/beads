@@ -1,5 +1,29 @@
 # Photo-2 reconstruction plan
 
+## Current R270 — compare brightness measures, awaiting photographic review
+
+[Report](photo2/BRIGHTNESS_COMPARISON_R270.md) · [photographs and exact evidence](photo2/review/r270/README.md).
+Recommend ICC-managed sRGB relative luminance averaged over 7×7 for review only;
+OKLab L closely agrees. The JPEG embeds Apple Wide Color Sharing Profile, so Y/L
+use explicit ICC conversion before linearization; historical V remains exact.
+Y/OKLab reach the pale R01284 patch at (978,2667), improve all three R00956 yellow
+locations, and keep the named neighboring origins separate under raw24/mean2.
+Permissive mean6 still crosses at 9×9 with every measure; no identity merging.
+
+Preserve all independent raw/5/7/9 maxima, original starts, radii 3/6/10/16,
+neutral-gray threshold conversions and common-V-guard controls. The initial
+native-as-sRGB experiment survives separately. 112 synthetic scenes retain weak
+background exits and invisible-boundary failures; no general accuracy claim.
+18 tests pass; 150,000 photo and 321,360 synthetic broad searches, 47,136 climb
+traces and 1,195,833 selected moves checked. Original V reproduces 2,706 R268
+paths, 21,648 R269 photo searches and 4,800 paired synthetic groups exactly.
+Prior evidence/source hashes match. Computation plus validation took 22.90 minutes.
+No production detector, growth, viewer, geometry or indexing changes.
+
+Stop after this step is committed and pushed. Next only when requested: review the
+luminance photographs and remaining weak-start/background failures before any
+production selection change. Keep current model/reasoning; no /new needed.
+
 ## Current R269 — broader search and the missed-looking pale peak
 
 [Report](photo2/BROADER_PEAK_SEARCH_R269.md) · [photographs and traces](photo2/review/r269/README.md).

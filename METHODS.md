@@ -1,5 +1,16 @@
 # Methods collection — bead-rope reconstruction
 
+## R270 — color-managed brightness comparison
+
+[Report](photo2/BRIGHTNESS_COMPARISON_R270.md), [photographic comparisons and exact traces](photo2/review/r270/README.md).
+Inspect the source ICC profile before applying standard sRGB luminance or OKLab.
+Preserve historical native V separately. Transform pixels before spatial averaging;
+retain float64 scores and exact quantized sums for reproducible plateau handling.
+Inventory independent raw and neighborhood maxima without a V-prominence gate.
+Convert valley allowances through neutral-gray response functions and retain a
+common-V-anchor/raw-guard control. Evaluate identical synthetic starts across
+scores; keep known identities evaluation-only and preserve unsafe crossings.
+
 ## R269 — bounded best-peak search beyond strict ascent
 
 [Report](photo2/BROADER_PEAK_SEARCH_R269.md), [photographs and path certificates](photo2/review/r269/README.md).

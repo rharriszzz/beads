@@ -7500,3 +7500,40 @@ images/tables/traces/reproduction photo2/review/r269/README.md. Prepare scoped
 commit/push, verify exact remote tip/clean state, stop. Next only on request:
 brightness definition comparison preserving neighbor separation; current model/
 reasoning, no /new needed.
+
+## R270 — improve brightness measurement and repeat R269 (2026-10-13)
+
+User requests unchanged HSV Value, correctly linearized sRGB relative luminance,
+perceptual lightness and experimental V/S brightness; independent native maxima
+and square5/7/9 averages without old prominence rejection. Repeat strict climbing
+and broader searches with comparable radius/stops/background, documented scale
+conversion, photographic explanation on all five named examples and separation
+of the two user-confirmed neighboring origins. Known synthetic highlights/shadows/
+touching/background, exact numbers/traces/tests, concise scientific report and
+recommendation required. Approximate30-minute computation bound. No production
+detector, growth, viewer, geometry or indexing changes. Commit/push; preserve R269.
+Preflight: daisy, clean photo-2-strategy-v3 at df04f9a, no stashes, fetched origin.
+Read current instructions/handoff/plan/log and R269 report/code. Four score methods
+are V, linear sRGB Y, OKLab L, and experimental V(1-S/2); compare score-consistent
+neutral-gray-converted guards plus a common-V-guard control. No subagents.
+
+R270 outcome: four brightness measures completed with independent raw/5/7/9
+maxima, exact measurements, all original starts, local climbs and radii 3/6/10/16.
+Source ICC inspection found Apple Wide Color Sharing Profile; standard Y/OKLab
+use LCMS conversion to sRGB before linearization. Native V baseline is exact;
+the initial native-as-sRGB control is preserved. Recommend Y/7×7 for review only:
+pale R01284 endpoint (978,2667), improved R00956 yellow coordinates, separate
+confirmed neighboring origins under main raw24/mean2 guards. All measures still
+cross under permissive mean6/9×9 and invisible-boundary synthetic controls.
+112 synthetic scenes show fewer Y background exits, not universal separation.
+18 tests pass; 150,000 photo / 321,360 synthetic searches and 47,136 climb traces;
+1,195,833 selected moves, 1,200 graphs and 7,376 bottleneck certificates verified.
+V exactly replays 2,706 R268 paths, 21,648 R269 photo searches and 4,800 synthetic
+groups. Previous source/evidence hashes match. Shared computation and validation
+finished in 22.90 minutes (1,373.809 seconds), below the 30-minute limit.
+Report photo2/BRIGHTNESS_COMPARISON_R270.md; images/tables/traces/reproduction in
+photo2/review/r270. No production/growth/viewer/geometry/indexing changes.
+Final user steering: finish the current step and push; do not start further work.
+Deliver scoped commit/push and verify remote tip/clean status. Stop for photographs;
+next only when requested, review Y coordinates and remaining weak/background
+failures. Keep current model/reasoning; no /new needed.

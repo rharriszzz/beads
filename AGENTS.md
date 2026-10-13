@@ -5,6 +5,16 @@ relevant experiment before continuing. Current user instructions override old pl
 This branch starts at origin/master 020303e (the remote has no main branch).
 Historical work remains on photo-2-reconstruction; see photo2/PRIOR_WORK.md.
 
+R270 compares brightness measures; see photo2/BRIGHTNESS_COMPARISON_R270.md.
+Recommend ICC-managed sRGB luminance/7×7 for photographic review only. Preserve
+native V baseline, all independent maxima, original starts and full competing paths.
+Y/OKLab reach the pale R01284 patch and improve R00956 yellow coordinates; main
+raw24/mean2 guards preserve the named neighbors. Mean6/9×9 still crosses with all
+scores. Synthetic background/invisible-interface failures remain explicit. 18 tests,
+1,195,833 checked moves and exact old V replay pass; prior evidence is unchanged.
+No production adoption or growth/viewer/geometry/indexing changes. Stop after
+commit/push; next review photographs only when requested. No /new needed.
+
 R269 extends R268 peak-location review: see photo2/BROADER_PEAK_SEARCH_R269.md.
 Broader radius3/6/10/16 search improves middle/lower R00956 coordinates; all original
 maxima/paths survive. Pale R01284 peak (976,2668) is exactly5 pixels from mean9
