@@ -1,5 +1,18 @@
 # Photo-2 reconstruction plan
 
+## R283 — persistent local visual review permission
+
+Installed `/home/rharris/.local/bin/beads-chromium-review`; invoke directly with one
+`photo2.rNNN.browser_check` module. Persistent browser cache ~/.cache/beads-playwright.
+Single launcher allow rule appended to ~/.codex/rules/default.rules, all old rules
+preserved.5 restriction tests,4 policy checks,5 direct rejection checks and22 R282
+browser panels pass. Restart Codex once to reliably load the manually edited rule;
+future sessions with the same config use it. See [setup/limits](photo2/CHROMIUM_REVIEW.md).
+No broad Python/Bash permission added. Stop after configuration delivery; next actual
+photo work remains the bounded Phase1 ownership/gap audit from R282. Keep current
+model/reasoning; no /new needed (restart the client for rules, not a new task).
+
+
 ## Current R282 — complete integrated three-phase framework
 
 [Specification](photo2/R282_SPECIFICATION.md), [checklist](photo2/R282_CHECKLIST.md),

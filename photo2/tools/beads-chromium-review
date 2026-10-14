@@ -1,0 +1,47 @@
+#!/usr/bin/python3 -I
+"""Run only a beads photo2.rNNN.browser_check from the fixed trusted checkout."""
+import os
+from pathlib import Path
+import re
+import sys
+
+PROJECT = Path('/home/rharris/git/beads')
+PYTHON = PROJECT / '.venv/bin/python'
+BROWSERS = Path('/home/rharris/.cache/beads-playwright')
+BOOTSTRAP = (
+    "import runpy, sys; "
+    "sys.path.insert(0, '/home/rharris/git/beads'); "
+    "runpy.run_module(sys.argv[1], run_name='__main__', alter_sys=True)"
+)
+
+
+def invocation(args):
+    if len(args) != 1 or re.fullmatch(r'photo2\.r[0-9]{3,}\.browser_check', args[0]) is None:
+        raise ValueError('Usage: beads-chromium-review photo2.rNNN.browser_check (one module, no extra arguments)')
+    module = args[0]
+    target = PROJECT.joinpath(*module.split('.')).with_suffix('.py')
+    if not target.is_file() or target.resolve() != target:
+        raise ValueError('Review module must be an existing non-symlink file in /home/rharris/git/beads/photo2/rNNN/')
+    if not PYTHON.is_file() or not os.access(PYTHON, os.X_OK):
+        raise ValueError('Missing executable beads .venv/bin/python')
+    if not BROWSERS.is_dir():
+        raise ValueError('Missing persistent Playwright cache: /home/rharris/.cache/beads-playwright')
+    # No caller-controlled Python/module/output/browser overrides reach the check.
+    environment = {key: os.environ[key] for key in ('HOME', 'USER', 'LOGNAME', 'LANG', 'LC_ALL', 'TZ') if key in os.environ}
+    environment.update(PATH='/usr/bin:/bin', PLAYWRIGHT_BROWSERS_PATH=str(BROWSERS),
+                       MPLCONFIGDIR='/tmp/beads-chromium-review-mpl', OPENBLAS_NUM_THREADS='1')
+    return [str(PYTHON), '-I', '-c', BOOTSTRAP, module], environment
+
+
+def main():
+    try:
+        command, environment = invocation(sys.argv[1:])
+    except ValueError as error:
+        print(str(error), file=sys.stderr)
+        return 2
+    os.chdir(PROJECT)
+    os.execve(PYTHON, command, environment)
+
+
+if __name__ == '__main__':
+    sys.exit(main())

@@ -1,0 +1,92 @@
+{
+  "codex_version": "0.162.1",
+  "policy_checks": [
+    {
+      "command": [
+        "/home/rharris/.local/bin/beads-chromium-review",
+        "photo2.r282.browser_check"
+      ],
+      "result": {
+        "matchedRules": [
+          {
+            "prefixRuleMatch": {
+              "matchedPrefix": [
+                "/home/rharris/.local/bin/beads-chromium-review"
+              ],
+              "decision": "allow",
+              "justification": "Fixed beads checkout/interpreter; launcher accepts only one photo2.rNNN.browser_check module"
+            }
+          }
+        ],
+        "decision": "allow"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-c",
+        "pass"
+      ],
+      "result": {
+        "matchedRules": []
+      }
+    },
+    {
+      "command": [
+        "bash",
+        "-c",
+        "true"
+      ],
+      "result": {
+        "matchedRules": []
+      }
+    },
+    {
+      "command": [
+        "/home/rharris/git/beads/.venv/bin/python",
+        "-c",
+        "pass"
+      ],
+      "result": {
+        "matchedRules": []
+      }
+    }
+  ],
+  "launcher_rejections": [
+    {
+      "arguments": [],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "os"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "photo2.r282.phase2"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "photo2.r282.browser_check",
+        "--help"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "photo2.r282.browser_check;id"
+      ],
+      "exit_code": 2
+    }
+  ],
+  "contract_tests": 5,
+  "original_rules_preserved": true,
+  "launcher_sha256": "fcd6f2862e554bc9c6bd324e5d0d3e3069d341732e6c6d74d9a1d6e1d0cb2ff3",
+  "persistent_browser_cache": "/home/rharris/.cache/beads-playwright",
+  "browser_module": "photo2.r282.browser_check",
+  "browser_cases": 22
+}

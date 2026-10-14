@@ -1,5 +1,14 @@
 # Beads photo-2 workflow
 
+R283 persistent Chromium review permission: use the direct absolute command
+`/home/rharris/.local/bin/beads-chromium-review photo2.rNNN.browser_check` for local
+visual review checks, including future rounds. Exactly one existing browser_check
+module; no extra args, env prefixes or shell wrapper. Launcher fixes checkout/venv
+and persistent ~/.cache/beads-playwright. ~/.codex/rules/default.rules allows only
+this launcher prefix; do not request broad Python/Bash permissions. Restart Codex
+once after manual rule installation; managed restrictions can override local allow.
+See photo2/CHROMIUM_REVIEW.md. Scientific R282 stopping point remains unchanged.
+
 R282 supersedes the prior stop; full three-phase framework delivered. See
 photo2/R282_SPECIFICATION.md, photo2/R282_CHECKLIST.md, photo2/R282_INTEGRATED.md.
 1092 photo candidates:692high/31medium/352unresolved/17rejected;140high black.

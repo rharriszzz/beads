@@ -13,14 +13,14 @@ R282_OUTPUT=/tmp/beads-r282-replay OPENBLAS_NUM_THREADS=1 .venv/bin/python -m ph
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m photo2.r282.audit
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m photo2.r282.pov
 OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/tmp/beads-r282-mpl .venv/bin/python -m photo2.r282.review
-PLAYWRIGHT_BROWSERS_PATH=/tmp/beads-debugger-browsers .venv/bin/python -m photo2.r282.browser_check
+/home/rharris/.local/bin/beads-chromium-review photo2.r282.browser_check
 ```
 
 The run target must be fresh: completed runs are deliberately never overwritten.
 The audit compares the independent `/tmp/beads-r282-replay` against `results`, and
 8916 historical files against base `e6a6d4c`. Rendering/review commands target the
-saved delivery results unless `R282_OUTPUT` is set. Browser launch may require the
-local sandbox permission. `results/browser-check.json` records actual execution.
+saved delivery results unless `R282_OUTPUT` is set. Local browser launch uses the restricted persistent launcher described in
+[Chromium review setup](../CHROMIUM_REVIEW.md). `results/browser-check.json` records actual execution.
 
 `first-pass/` preserves the first full three-phase run and its algorithm source,
 before any answer-improving repair. `second-pass/` preserves the complete run after

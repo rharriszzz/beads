@@ -8189,3 +8189,21 @@ full requirement checklist and reproduction saved; plan/handoff/methods/AGENTS u
 Scoped commit/push and remote verification follow. Next only requested easy-central
 Phase1 ownership/duplicate/gap audit before local Phase2 camera/light correspondence.
 Keep current model/reasoning; no/new. Stop after R282 delivery.
+
+## R283 — persistent Chromium/Playwright permission, request and outcome
+
+User explicitly requests a stable narrow launcher at ~/.local/bin/beads-chromium-review,
+only intended photo2.rNNN.browser_check modules, persistent allow prefix in
+~/.codex/rules/default.rules while preserving existing rules; verify execpolicy and
+actual browser test, explain restart/limits, no broad Python/Bash/arbitrary command allow.
+Implemented fixed checkout/interpreter, exact one-argument module grammar, existing
+non-symlink target validation, isolated Python startup and sanitized child environment.
+Copied current browser installation to persistent ~/.cache/beads-playwright. Installed
+standalone0755 launcher; appended one allow rule with inline examples, original rules
+backed up and preserved byte-for-byte. Codex0.162.1 execpolicy returns allow; generic
+Python/Bash/project Python do not match. Five contract tests, five real argument rejection
+checks and all22 R282 browser panels pass. No scientific artifacts changed. Tracked
+launcher source, setup/limits and validation; future-use instruction added to AGENTS.
+Official rules docs require restart after manual edits; future same-config sessions
+load rule, managed restrictions can override. Scoped commit/push and verification follow.
+Stop after configuration; no scientific phase resumed. Keep model/reasoning; no/new.
