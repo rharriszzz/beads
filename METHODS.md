@@ -1,5 +1,18 @@
 # Methods collection — bead-rope reconstruction
 
+## R286 — contextual markers and protected dark-boundary comparisons
+
+[Report](photo2/R286_REPORT.md), [reproduction](photo2/R286_REPRODUCE.md),
+[permanent Phase1 contract](photo2/PHASE1_MEASUREMENTS.md).
+Diagnose cue/material/marker loss before changing saddle thresholds. Preserve the
+original intensity maximum and supported marker projection separately. Compare
+spatial dark ridges, watershed cannot-links and direct valley histories; include
+shallow shading and bright-detour counterexamples. Freeze independent central-heavy
+photo selection before new results. M marker repair is recommended for review;
+protected B can false-split shading; A/C central leakage and poor synthetic transfer
+remain explicit. No production adoption. Black remains reflection-only.
+
+
 - **R282 integrated photograph → physical inventory → weighted repeat framework:**
   [specification](photo2/R282_SPECIFICATION.md), [traceability](photo2/R282_CHECKLIST.md),
   [report](photo2/R282_INTEGRATED.md), [reproduction](photo2/r282/README.md).

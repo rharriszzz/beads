@@ -8371,3 +8371,50 @@ Recommendations are review choices, not adopted production methods. Clear-yellow
 
 ## R285 delivery verification
 Scientific commit785969a875656af4f88c958629e2eacb4e22b250 pushed to origin/photo-2-strategy-v3; git ls-remote matched exactly. Final receipt also records the presentation audit: expanded detailed panels show the complete97px computation window; central choice panels remain zoomed. No algorithm, inventory, or later-phase changes. Stop for user selection.
+
+## R286 request — dark separation reliability and central recovery
+
+# Active R286 — dark seams without sacrificing diffuse red
+
+Read photo2/R286_SPECIFICATION.md, R286_CHECKLIST.md and r286/checkpoints after
+compaction. User judgments: P1 J>S acceptable; P2 S good/J poor; P3 J>S slightly;
+P4 S acceptable/J bad, lower-priority edge; P5 J acceptable/S serious merge;
+P6 R1/R2/R4 equally acceptable. Diagnose exact P5 merge BEFORE new algorithms.
+Compare at least3 distinct dark-boundary methods, preserve P2 diffuse red, then
+frozen independent centerline-heavy confirmation and fewer edge controls. Central
+coverage aims every crossing body and both nearby sides, no count quota; unclear
+edge beads may remain unresolved. No physical identity inputs, manual labels,
+production replacement, Phase2/3 work or automatic R287. Commit/push/verify and
+STOP for user review. Keep current model/reasoning; no /new needed.
+Preflight daisy, clean8448689 on requested branch, no stashes; origin fetched.
+
+
+Full requirements saved before candidate implementation. Permanent Phase1 contract updated with centerline/edge distinction and six review judgments.
+
+## R286 outcome — dark-boundary comparison
+
+# R286 completed experiment — STOP for user assessment
+
+See photo2/R286_REPORT.md, photo2/review/r286/index.html and R286_REPRODUCE.md.
+P5 root cause: two bright maxima failed a single-pixel hue gate despite strongly
+supported pigment neighborhoods; all three yellows shared one watershed basin.
+Bright detours bypassed native dark valleys. M context-supported marker repair
+reduces1817→664px; preserves P2 exactly495px and original right yellow614px.
+M/B preserve all10 independent anchors, but M matches S across all52 confirmation
+cues: no second missing-marker recovery established there. A/C leak in central
+C03/C05; B false-splits shallow shading and is not recommended as global default.
+Prefer M for user review; retain J advantage on P1/P3 and all failed alternatives.
+52 frozen cues/10 regions (8 central,2 edge); M9/B8 flagged; no calibrated precision.
+29 unflagged central-near proposals form25 overlap groups/3 flanking pairs, not
+verified bead counts/completeness. Eight fresh cues unresolved (three area-flagged). Four fresh
+POV scenes: M16/22pure,13/74recovered; poor transfer preserved. Black144 reflection
+masks/contours/peaks exactly unchanged; R2 retained, R1/R4 available, no bodies.
+91tests/10293oldblobs/31nativecrops/twoexactreplays pass; browser/delivery receipts
+in photo2/r286/results. Permanent Phase1 brightness/seam and central-over-edge
+requirements apply. No production inventory, Phase2/3 or historical result changes.
+Full spec/checklist and six checkpoints survive compaction. Commit/push verification
+recorded in delivery.json. STOP: wait for user assessment; no automatic R287 or
+manual-label request. Keep current model/reasoning; no /new needed.
+
+
+Scientific conclusions and failed alternatives are frozen; subsequent delivery receipt records remote verification.

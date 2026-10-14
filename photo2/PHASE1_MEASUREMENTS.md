@@ -1,4 +1,4 @@
-# Permanent photographic measurement contract — R285 clarification
+# Permanent photographic measurement contract — R286 clarification
 
 This contract supersedes earlier black-support descriptions in historical R282,
 R283 and R284A specifications. Historical experiments remain unchanged evidence.
@@ -60,3 +60,22 @@ consistently good results on clearly visible material. Preserve their unresolved
 evidence and provenance; do not use that exclusion to hide clear-interior failures.
 See R285_REPORT.md for the J/S comparison and the explicit yellow confirmation
 failure. No new method is adopted into the production inventory by this round.
+
+## R286 permanent centerline versus edge priority and review decisions
+
+Attempt every visible body crossing the image-derived centerline and relevant
+nearby observations; both sides count when the line passes between beads. Seek
+two or three where photographic evidence supports them, never a fixed quota.
+Prioritize completeness with high precision and explicit uncertainty. At necklace
+edges only clear obvious beads are required; difficult/shadowed/partial/ambiguous
+edge beads may remain unresolved. Do not sacrifice central quality to an edge test.
+A bright route around an established dark seam must not automatically erase its
+separation evidence. Preserve dim diffuse pigment beside strong specular peaks.
+
+R286 user judgments supersede earlier preferences: P1/e01 J better, S acceptable;
+P2/e02 J poor, S good; P3/e04 J better, S slightly worse; P4/e07 J bad, S acceptable
+(lower-priority edge separation test); P5/v04 J acceptable, S seriously fails dark
+separation; P6 R1/R2/R4 approximately equally acceptable. These judgments guide
+review, not hardcoded inference. R286 must solve P5 without breaking P2. Black
+remains reflection-only, with little effort on further smoothness optimization.
+See R286_SPECIFICATION.md. No production adoption during this experimental round.
