@@ -1,5 +1,22 @@
 # Methods collection — bead-rope reconstruction
 
+## R281 — counterfactual bead presence with independent follow-up
+
+[Report](photo2/R281_PRESENCE.md), [review](photo2/review/r281/index.html),
+[protocol](photo2/r281/PROTOCOL.md). Compare target-present first surfaces with
+surfaces exposed by removing only the target. Give both explanations equal pose
+search budgets; spatially cross-validate material continuity and retain missing
+independent material context as uncertainty. Separate differential contours from
+shared edges, and keep material/boundary ablations beside the combined result.
+Freeze on development, then pair present/absent renders, perturbations and incorrect
+ownership controls. Use scene-cluster comparisons; zero observed errors are not
+proof of zero population risk. A fresh frozen follow-up exposed absent failures
+and only a modest, uncertain material-only recall gain. No production adoption.
+Fit real shared pose from four automatic photographic anchors; freeze neighboring
+predictions before target evidence. Audit full anchor masks, not only fit samples.
+Retain index-reversal gauges and wrong-owner alternatives. Conditional surface
+support never establishes a physical identity or authorizes chain growth.
+
 - [R272 coverage: first-dark ICC reflection interiors, targeted colored gate controls, complete inventory and minimal viewer](photo2/COVERAGE_R272.md). Photo sample77.4%;80% whole-photo goal not demonstrated.
 
 ## R272 — measured interiors and requirement-failure audit

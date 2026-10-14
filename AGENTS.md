@@ -1,5 +1,21 @@
 # Beads photo-2 workflow
 
+R281 supersedes the next task; see photo2/R281_PRESENCE.md and review/r281.
+Recovered after reboot; frozen H1/H0 detector and all prior evidence preserved.
+Original held-out combined38/59present,0/59absent; material42/59,0/59. Additional
+pre-frozen24scene confirmation: material34/48present,1/48absent; combined32/48,2/48.
+Both wrong-neighbor28/48false; no reliable ownership or growth. One220x180realcrop,
+four automatic Phase1 anchors, bothhands/sharedpose;1713/1718full anchor pixels
+contained. One existing yellow surface supported, identity/hand unresolved;
+other target ambiguous; displaced controls0/8accepted. No new real bead or indices.
+25tests/1950queryreplays/7832nativechecks/6844oldhashes/28browsercases pass.
+Original268rasters/134arrays and realfreeze/measurements replay exactly; fresh
+replay uses saved pixels. All failures retained, no production adoption. Next
+anchored correspondence and incorrect-neighbor/phase ownership with camera/material
+uncertainty before one-neighbor growth. Stop after scoped commit/push and remote
+verification; no automatic next phase. Keep current model/reasoning; no /new needed.
+
+
 R280 supersedes the next task; see photo2/R280_PHASE2.md and photo2/r280/index.html.
 Geometry-assisted A/B/C; easy-first, physically certified16primaryscenes,2stress,
 8absencecontrols. FrozenPhase1unchanged. Heldout easy20/26correctstrong,zero wrong;

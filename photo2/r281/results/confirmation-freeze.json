@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-14T13:39:35.805108+00:00",
+  "seed": 281403,
+  "scenes": 24,
+  "rules": {
+    "margin": 0.1,
+    "minimum_pixels": 40,
+    "coverage": 0.25,
+    "coherence": 0.65,
+    "edge": 0.3,
+    "loss": 0.45
+  },
+  "source_hashes": {
+    "confirmation.py": "1c8fd68157fb03874f97b1a66bb12977ea690f4de56b7e1cf313fe8fdeb99d8f",
+    "detector.py": "9a42590fda3e5a2a9c934431a00cda0a80361375abc63a97aa6fcb1efb0db1de",
+    "geometry.py": "330d0796363bbdb20752862d820cc9bc69fcf9468cfd5c76f584d49fc52344df",
+    "run.py": "47e002e0c0513370c4ff24fc6b9c6205e6a0d53a13064aad98a123afd2ffdc0f",
+    "synthetic.py": "22a657cb17df39bd51ccfbe2ef2ebd150690670aaa3380aae49bd727204e0ce0",
+    "evaluate.py": "ffc0f9762a39c440c1985cd667d36009088f97f5ca970eec3b6de8da352fd4c1",
+    "analyze.py": "66643cfb624032f705a92e113d6d836910cc438efcf8b9570cb8185747290e6d"
+  },
+  "motivation": "Material-only recovered 17/23 development and 42/59 original held-out targets; combined recovered 16/23 and 38/59. Both had zero exact-position absent confirmations. Original held-out outcomes were seen before this follow-up; these new scenes are independent.",
+  "decision": "Keep all old results. Compare the two fixed methods at 0/.05/.10D and 5/10deg roll, plus every negative. Report paired disagreements, recall and false confirmations. No threshold search or automatic production adoption. Wrong-neighbor/identity failures block growth."
+}

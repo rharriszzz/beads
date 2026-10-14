@@ -1,0 +1,627 @@
+{
+  "base_commit": "f180991af5843362ebd948bcf9af4d2f6bf7219a",
+  "historical_files_unchanged": 6844,
+  "source_hashes": {
+    "beads-photo-2.jpg": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+    "beads.pov": "b131ec6744904aeefb8b946f426fcdfa33870a6eabb9b9692d636a8b828ad7c0",
+    "photo2/review/r278/phase1-inventory.json.gz": "b8cf6747778c759757581943345cf2cc97e893cc52585f60f2fe5343bd77fd33",
+    "photo2/review/r278/phase1-positions.csv": "79fa8dcd3173a22d4e6e435e899bd1457e9cd754fa56139130829759e54bcfc6",
+    "photo2/r279/geometry.py": "7f3091f0a0c492ef74a5f9409b2612cde50e559acb01ae5bcb57fb3a969c2a16",
+    "photo2/bead_placement.py": "508c78098272ebe252783248f633e48e5b9ebb815ea3fdabfde193f1bd09f5dc",
+    "photo2/r280/detector.py": "4982a2f8a60f7a78ab41517256627888c76ddcefca0c3d8d5fbe90c2ca663fd7",
+    "photo2/r280/contact.py": "4221d5ffb92a01b70f733314cd355b0ac67fce87af5305ece52733c59fe24b7c",
+    "photo2/r280/geometry.py": "82bab8712095d62be1c766d37e148319eabfd5c333100bf3accaa50a6af440e3",
+    "photo2/r280/synthetic.py": "69ba0889af3e7c739e47c9c50fdc5aeecb563a2851753791c73b2ee595fc5621",
+    "photo2/r280/evaluate.py": "3f9b8dbf9e8852270bc7f9378b8a9af4cc2f57dae74206b1c13c661e05ac8a42"
+  },
+  "r281_source_hashes": {
+    "photo2/r281/evaluate.py": "ffc0f9762a39c440c1985cd667d36009088f97f5ca970eec3b6de8da352fd4c1",
+    "photo2/r281/real_evaluate.py": "4673cb5a3d44f2339190a12249f54dab8f8bc2b81cd658e905a301aa34d9143d",
+    "photo2/r281/audit.py": "97bfe85b70df2ac5a67009a6193af7696768e8655707866e0b2ecda9bfd413e2",
+    "photo2/r281/real_select.py": "bfb2533e78bd7cae5de9352f5c106b115415423bcac80c0bf6e750600953bda9",
+    "photo2/r281/freeze.py": "236d740b9fb047b9dcc8cb01951cc65a691af5934c096a6cab7bca9de2e23ccb",
+    "photo2/r281/synthetic.py": "22a657cb17df39bd51ccfbe2ef2ebd150690670aaa3380aae49bd727204e0ce0",
+    "photo2/r281/legacy.py": "01fb708ab2c085b4973de971b3993ec5d4f62c3abc16de90a8c73b16ab4ef461",
+    "photo2/r281/__init__.py": "e9cc2fadc76d3ab65d77bde33ce9d6731f8310dc113b0ed93bf0857b26b4e0c0",
+    "photo2/r281/geometry.py": "330d0796363bbdb20752862d820cc9bc69fcf9468cfd5c76f584d49fc52344df",
+    "photo2/r281/common.py": "a05f126d10464dcadf9b0101004a290cb7d2ddcb79588fc09cb8a504afefafdb",
+    "photo2/r281/confirmation_summary.py": "9c00fddc01812314536b78c4a91cf97dac2fab10ebdc315db6c9232c0d5ad63a",
+    "photo2/r281/confirmation.py": "1c8fd68157fb03874f97b1a66bb12977ea690f4de56b7e1cf313fe8fdeb99d8f",
+    "photo2/r281/run.py": "47e002e0c0513370c4ff24fc6b9c6205e6a0d53a13064aad98a123afd2ffdc0f",
+    "photo2/r281/confirmation_replay.py": "3aff65e94eedb0e73af000d76f52db0e6e2f9e93c7e8d6491547b2345bfd3c7b",
+    "photo2/r281/detector.py": "9a42590fda3e5a2a9c934431a00cda0a80361375abc63a97aa6fcb1efb0db1de",
+    "photo2/r281/real_fit.py": "aa504a85986e2b9af5ddb90a49c33a35f4c1fba50262f4e0813af944f09efc8b",
+    "photo2/r281/browser_check.py": "91e3b59631feea84d42f3d73b7d0e11ae88a06f198c75b4ca6b723eafacf2a6e",
+    "photo2/r281/analyze.py": "66643cfb624032f705a92e113d6d836910cc438efcf8b9570cb8185747290e6d",
+    "photo2/r281/reproduce.py": "d97ef7693c472a4c7472a173a8a9bb4f72c6b3f710d30f1dcdbbbcb6abcde0ab",
+    "photo2/r281/review.py": "98855df2803255861f4ad0791a576e57f5e2fce0da6df2a765b3feccbd6e3847",
+    "photo2/r281/recovery_audit.py": "b690261a162bfd08249d9dc0195f3be42c97aa2e991a7d0203a7e6363720b032",
+    "photo2/r281/tests.py": "4cf8afe84aa171d1efe1ad281bc855ddf7220e8089acea395ae7a5211c68699c"
+  },
+  "scene_audits": [
+    {
+      "split": "dev",
+      "scene": "scene-00",
+      "targets": 3,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71676,
+        "unknown": 4
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-01",
+      "targets": 2,
+      "minimum_gap": 0.019986814183256207,
+      "projection": {
+        "resolved": 71678,
+        "unknown": 2
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-02",
+      "targets": 3,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-03",
+      "targets": 3,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-04",
+      "targets": 4,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-05",
+      "targets": 1,
+      "minimum_gap": 0.019986814183255763,
+      "projection": {
+        "resolved": 71669,
+        "unknown": 11
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-06",
+      "targets": 2,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71677,
+        "unknown": 3
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-07",
+      "targets": 0,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71672,
+        "unknown": 8
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-08",
+      "targets": 2,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-09",
+      "targets": 3,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71672,
+        "unknown": 8
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-10",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71633,
+        "unknown": 47
+      }
+    },
+    {
+      "split": "dev",
+      "scene": "scene-11",
+      "targets": 0,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71664,
+        "unknown": 16
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-00",
+      "targets": 3,
+      "minimum_gap": 0.019986814183256207,
+      "projection": {
+        "resolved": 71676,
+        "unknown": 4
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-01",
+      "targets": 2,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71670,
+        "unknown": 10
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-02",
+      "targets": 3,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71678,
+        "unknown": 2
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-03",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71669,
+        "unknown": 11
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-04",
+      "targets": 3,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71677,
+        "unknown": 3
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-05",
+      "targets": 0,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71554,
+        "unknown": 126
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-06",
+      "targets": 0,
+      "minimum_gap": 0.1487114150539912,
+      "projection": {
+        "resolved": 71673,
+        "unknown": 7
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-07",
+      "targets": 0,
+      "minimum_gap": 0.1487114150539912,
+      "projection": {
+        "resolved": 71674,
+        "unknown": 6
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-08",
+      "targets": 4,
+      "minimum_gap": 0.019986814183256207,
+      "projection": {
+        "resolved": 71678,
+        "unknown": 2
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-09",
+      "targets": 1,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71672,
+        "unknown": 8
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-10",
+      "targets": 2,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71673,
+        "unknown": 7
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-11",
+      "targets": 4,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71676,
+        "unknown": 4
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-12",
+      "targets": 2,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71673,
+        "unknown": 7
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-13",
+      "targets": 0,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71671,
+        "unknown": 9
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-14",
+      "targets": 3,
+      "minimum_gap": 0.1487114150539912,
+      "projection": {
+        "resolved": 71673,
+        "unknown": 7
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-15",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71670,
+        "unknown": 10
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-16",
+      "targets": 4,
+      "minimum_gap": 0.019986814183256207,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-17",
+      "targets": 2,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71677,
+        "unknown": 3
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-18",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71612,
+        "unknown": 68
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-19",
+      "targets": 4,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71676,
+        "unknown": 4
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-20",
+      "targets": 1,
+      "minimum_gap": 0.019986814183256207,
+      "projection": {
+        "resolved": 71678,
+        "unknown": 2
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-21",
+      "targets": 0,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71667,
+        "unknown": 13,
+        "boundary_disagreements": 1,
+        "pixels": [
+          [
+            84,
+            192
+          ]
+        ]
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-22",
+      "targets": 3,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71677,
+        "unknown": 3,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-23",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71671,
+        "unknown": 9,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-24",
+      "targets": 1,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-25",
+      "targets": 0,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71671,
+        "unknown": 9,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-26",
+      "targets": 0,
+      "minimum_gap": 0.1487114150539912,
+      "projection": {
+        "resolved": 71668,
+        "unknown": 12,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-27",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71668,
+        "unknown": 12,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-28",
+      "targets": 4,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71677,
+        "unknown": 3,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-29",
+      "targets": 0,
+      "minimum_gap": 0.019986814183257096,
+      "projection": {
+        "resolved": 71670,
+        "unknown": 10,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-30",
+      "targets": 1,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71678,
+        "unknown": 2,
+        "boundary_disagreements": 1,
+        "pixels": [
+          [
+            103,
+            173
+          ]
+        ]
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-31",
+      "targets": 3,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71668,
+        "unknown": 12,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-32",
+      "targets": 1,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71677,
+        "unknown": 3,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-33",
+      "targets": 4,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71673,
+        "unknown": 7,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-34",
+      "targets": 2,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71673,
+        "unknown": 7,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-35",
+      "targets": 0,
+      "minimum_gap": 0.14871141505399077,
+      "projection": {
+        "resolved": 71611,
+        "unknown": 69,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-36",
+      "targets": 2,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71675,
+        "unknown": 5,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-37",
+      "targets": 0,
+      "minimum_gap": 0.01998681418325665,
+      "projection": {
+        "resolved": 71671,
+        "unknown": 9,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-38",
+      "targets": 0,
+      "minimum_gap": 0.148711415053997,
+      "projection": {
+        "resolved": 71672,
+        "unknown": 8,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    },
+    {
+      "split": "heldout",
+      "scene": "scene-39",
+      "targets": 0,
+      "minimum_gap": 0.1487114150539912,
+      "projection": {
+        "resolved": 71669,
+        "unknown": 11,
+        "boundary_disagreements": 0,
+        "pixels": []
+      }
+    }
+  ],
+  "python": "3.12.14",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "phase1_anchor_provenance": {
+    "C-0585-1605": "image-only R273",
+    "C-0541-1602": "image-only R273",
+    "C-0565-1588": "image-only R273",
+    "E5-0562-1620": "R275 automatic band recovery"
+  },
+  "excluded_inputs": [
+    "manual neighbor answers",
+    "numbered construction charts",
+    "maker-confirmed physical identities",
+    "historical poses",
+    "global centerline fits",
+    "color patterns"
+  ]
+}

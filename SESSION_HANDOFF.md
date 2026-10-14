@@ -1,5 +1,40 @@
 # Beads session handoff — new branch
 
+## Current R281 — presence verification, fresh confirmation and real pilot
+
+[Report](photo2/R281_PRESENCE.md) · [layered review](photo2/review/r281/index.html) ·
+[reproduction](photo2/r281/README.md). Recovered unfinished work after reboot and
+preserved the frozen detector, fits, predictions and all historical evidence.
+H1/H0 retraces newly exposed surfaces. Original held-out combined: 38/59 present,
+0/59 absent; unchanged R280: 59/59 present, 32/59 absent. Original material ablation:
+42/59 present, 0/59 absent. Both hands and analytically certified test dimensions.
+
+User authorized additional current-task work. Separate pre-frozen 24-scene
+confirmation (seed281403, same rules) finds material 34/48 present, 1/48 absent;
+combined 32/48 present, 2/48 absent. Material net recall gain 4.2 percentage points,
+paired scene-bootstrap interval −3.6 to +11.6: no established superiority or
+production promotion. Both falsely confirm 28/48 wrong-neighbor placements.
+The two nominal-paper-shift confirmations actually land on other bodies; retain
+the failed controls and category limitation. No reliable physical ownership.
+
+One automatic 220×180 real crop, four image-only Phase1 anchors, both hands and
+shared pose only. Four certified models include index-reversal equivalents, not
+four independent confirmations. Full masks: 1,713/1,718 anchor pixels assigned as
+predicted. One existing yellow surface is supported under positive-hand alternatives;
+other target remains ambiguous. Eight displaced controls have zero accepted results.
+No newly recovered real bead, unique hand, string identity or global reconstruction.
+
+25 scientific tests, 1,950 exact synthetic-query replays, 7,832 native measurements,
+6,844 historical Git hashes and 28 rendered browser cases/seven layers pass.
+Original benchmark independently rerenders 268 rasters/134 array files; real
+prediction freeze and measurements replay exactly. Fresh replay reuses saved pixels.
+Source photo, source geometry, Phase1 and R280 unchanged. Every failure survives.
+Scoped commit/push, verify remote tip, then stop. Next only when requested: anchored
+correspondence and wrong-neighbor/wrong-phase ownership with camera/material
+uncertainty before one-neighbor growth. No indexing, pattern or automatic next phase.
+Keep current model/reasoning; no `/new` needed.
+
+
 ## Current R280 — geometry-assisted detector, easy-first gate
 
 [Report](photo2/R280_PHASE2.md) · [viewer](photo2/r280/index.html) ·

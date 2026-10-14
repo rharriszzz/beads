@@ -8079,3 +8079,75 @@ report photo2/R280_PHASE2.md. Next easy target-present/absent surface ownership,
 newly exposed occluders, small registration/camera uncertainty before single-neighbor
 growth; no globalfit/indexing/pattern orautomaticnextphase. Keep current model/reasoning,
 no/new. Scopedcommit/push andremoteverification follow.
+
+## R281 — bead presence verification and one real-photo pilot (request)
+
+User requests H1 target-present versus H0 neighboring/background ownership,
+including newly exposed surfaces, easy valid both-hand synthetic controls,
+positions0/.05/.10diameter, frozen development/held-out comparison against unchanged
+R280, enough removed beads, and one180–240px real crop. Fit3–5automatic Phase1
+anchors using shared parameters, bothhands/signed1/6/7, freeze1–2held-out predictions
+before their evidence, include incorrect control and distinct observed/model layers.
+No manualneighboranswers/oldfittedposes/globalfit/indexing/pattern. Routine choices
+authorized; optionalsecondregion only if useful. Preflight daisy, clean f180991,
+photo-2-strategy-v3, no stashes, fetched0/0. Three methods: material continuity,
+differential boundaries, combined H1/H0. Protocol photo2/r281/PROTOCOL.md.
+
+### R281 recovery request and additional authorization
+
+User reports an overnight reboot and asks whether work completed and was pushed.
+Read-only inspection/fresh remote fetch found R280 f180991 committed and pushed,
+but REQUEST_LOG.md and both R281 directories uncommitted; final report and handoff
+were missing. User then requests completing R281 as best possible, permitting redo.
+Preflight daisy, photo-2-strategy-v3, f180991, no stashes, fetched upstream0/0.
+Preserve all frozen inference/fit sources and previous results; independent replay,
+full-mask/native/hash audits, report and browser validation resumed. Browser files
+were lost from /tmp; approved download/launch escalation restores the test runner.
+
+During recovery user additionally permits more work for better current-task results.
+Original development/held-out material ablation recovered17/23 and42/59 versus
+combined16/23 and38/59, with zero exact-position absent confirmations for both.
+Pre-freeze this comparison on24 fresh same-family scenes, seed281403, unchanged
+rules and all negative controls. The original held-out outcomes were already seen;
+this is a separately labeled follow-up, not a retroactive held-out method selection.
+No global fit, indexing, pattern search, chain growth or new production adoption.
+
+### R281 outcome — improved conditional presence; ownership still blocks growth
+
+Finished the interrupted H1/H0 experiment and one real-photo pilot, preserving all
+original frozen sources, predictions, development failures and competing methods.
+12development/40held-out certified scenes provide23/59easy targets; empty scenes
+and unavailable slots retained. Original held-out combined38/59present,0/59absent;
+R28059/59present,32/59absent. Material42/59present,0/59absent. Combined .1D gives
+34correct+2impure positives,0absent; unanchored identity40/59false and wrong-neighbor
+27/59false. No general presence/ownership or growth readiness claim.
+
+Additional user-authorized follow-up froze unchanged rules before24new scenes,
+seed281403.48targets in19populated scenes: material34/48present,1/48absent;
+combined32/48present,2/48absent. Material gains3targets/loses1; recall difference
+4.2points, scene-bootstrap95% interval−3.6to+11.6points. No established superiority.
+Both wrong-neighbor28/48false. Nominal paper-shift2/48false actually overlaps other
+bodies; category limitation explicit. Combined scene10false absent is boundary-led;
+scene17fails both methods. All failures shown; no post-confirmation retuning.
+
+Automatic220x180crop with four frozen image-only Phase1 anchors.924connected
+assignments,48candidates,12refinements,4certifiedmodels/bothhands; shared pose only.
+Full anchor audit1713/1718pixels (sampled fit score had100%); five discrepant pixels
+retained. Two supported records are one existing yellow surface under index reversal;
+physical identity and hand unresolved. Other target ambiguous; no additional real
+bead recovered. All8displaced controls unaccepted; material turns four combined
+contradictions into abstentions. No globalfit/indexing/pattern/chain growth.
+
+25scientific tests pass. Independent original replay:268decodedrasters/134arrayfiles,
+1230syntheticqueries (development decisions normalized to frozen rules), both
+summary tables, realpredictionfreeze and realmeasurements exact. Fresh720query
+inference replay exact from saved pixels/geometry.7832native mask/count/centroid
+checks and6844historical Git blob hashes pass.76certified scenes plus130removed
+renders:14,764,608resolvedrays/1472unknown/9retained silhouette discrepancies.
+28rendered browsercases/seven independent layers pass; original panels unchanged.
+Report R281_PRESENCE.md, viewer review/r281/index.html; source hashes, failed controls,
+freezes, complete numerical results and reproduction commands saved. Updated
+plan/handoff/methods/AGENTS. Scoped commit/push and remote verification follow.
+Next only when requested: anchored correspondence and incorrect-neighbor/phase
+ownership, with camera/material uncertainty, before any one-neighbor growth.
+Keep current model/reasoning; no /new needed. Stop after R281 delivery.
