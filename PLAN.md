@@ -1,4 +1,40 @@
+# R285 completed comparison — stop for review
+
+R285 comparison delivered for user review; see photo2/R285_REPORT.md and
+photo2/review/r285/index.html. Brightness/color and contextual dark seams govern
+colored supports; T thickness pruning is NOT approved. J remains primary. New S
+restores diffuse red/separates several yellow neighbors but fails clear-yellow
+confirmation v04; no blanket adoption. D leakage/G truncation retained. R2 default
+candidate for black specular reflections only; R1/R4 alternatives. No dark bodies.
+203 fixed colored cues;1421 old masks exact;16 balanced examples;8 colored+2 black
+frozen confirmation anchors;4 fresh POV scenes. Edge/shadow disagreements retained
+but deprioritized per latest user steering. No real completeness/precision claim.
+74 tests,10036 historical blobs,30 native crops,2 exact rerun files and Chromium
+128images/25tables/30sections pass. Production/R283/R284A/R284B unchanged apart from
+requested permanent PHASE1_MEASUREMENTS.md contract. Scoped push verification is
+recorded in photo2/r285/results/delivery.json when complete. STOP for method choice;
+no Phase2/3, no manual labeling. Keep current model/reasoning; no /new needed.
+
+R285 latest steering: edge/shadow disagreements may be disregarded; preserve them as peripheral controls, focus on consistently good clearly visible interiors.
+
 # Photo-2 reconstruction plan
+
+## Active R285 — brightness governs colored supports; J primary
+
+Full requirements: [R285 specification](photo2/R285_SPECIFICATION.md).
+Pre-algorithm diagnosis: [R285 diagnosis](photo2/R285_DIAGNOSIS.md).
+User rejects T thickness pruning as preferred: it can remove legitimate material.
+J is the only satisfactory picture3 method and the primary colored candidate.
+Follow local brightness/color; meaningful dark seams/saddles stop growth, normal
+shading and narrow bright continuation do not automatically stop. Shape assists,
+never replaces evidence. Black remains reflection-only; smoother R2/R4 acceptable,
+R1 reference. No physical identity/black-body outline from Phase1.
+Next: freeze10–16 balanced automatic J regression/improvement examples; compare
+several targeted improvements, then frozen-method fresh photo validation and
+specific synthetic controls. Preserve J and all R284A/B evidence; no production
+adoption or Phase2/3 work. Commit/push/verify then stop for review; no manual labels.
+After compaction reread specification, diagnosis and photo2/r285/checkpoints.
+Preflight daisy/e130718, clean requested branch, no stashes, fetched origin0/0.
 
 ## R284B completed experiment — STOP for method selection
 

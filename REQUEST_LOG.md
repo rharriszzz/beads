@@ -8333,3 +8333,38 @@ Phase2/3 tuning. Prepare scoped commit/push, verify remote, stop for method choi
 No manual labeling request. Current model/reasoning unchanged; no /new needed.
 
 R284B delivery receipt: Scientific package fd2387e40cbe0a6bbc248fedcae43ce69211412b was pushed to origin/photo-2-strategy-v3 and verified with git ls-remote. Working tree was clean after that push. Stopped for user method selection; no production adoption.
+
+
+## R285 request — restore brightness/darkness stopping; review J regressions
+
+Full requirements saved before new algorithms in photo2/R285_SPECIFICATION.md.
+User rejects T as preferred: narrow material may be legitimate. J is the only
+satisfactory picture3 method and primary candidate. Black alternatives accepted,
+smoother R2/R4 candidates, R1 reference; reflections only. Diagnose drift first,
+freeze10–16 varied regression/improvement cases, develop several targeted J rules,
+validate on fresh photo regions and mechanism-specific synthetic evidence.
+Maintain schema/centerline uncertainty/provenance; no manual labels, physical
+inputs, global adoption or Phase2/3. Commit/push/verify and stop for user review.
+Preflight clean e130718 on daisy/requested branch, no stashes, fetched origin0/0.
+
+## R285 later steering — edge/shadow disagreements
+User permits disregarding edge/shadow areas to obtain consistently good results on the rest. Retain selected edge/shadow examples as peripheral evidence; prioritize clearly visible interiors, meaningful seams and centerline coverage. No production adoption.
+
+## R285 outcome — comparison complete, delivery verification pending
+
+R285 comparison delivered for user review; see photo2/R285_REPORT.md and
+photo2/review/r285/index.html. Brightness/color and contextual dark seams govern
+colored supports; T thickness pruning is NOT approved. J remains primary. New S
+restores diffuse red/separates several yellow neighbors but fails clear-yellow
+confirmation v04; no blanket adoption. D leakage/G truncation retained. R2 default
+candidate for black specular reflections only; R1/R4 alternatives. No dark bodies.
+203 fixed colored cues;1421 old masks exact;16 balanced examples;8 colored+2 black
+frozen confirmation anchors;4 fresh POV scenes. Edge/shadow disagreements retained
+but deprioritized per latest user steering. No real completeness/precision claim.
+74 tests,10036 historical blobs,30 native crops,2 exact rerun files and Chromium
+128images/25tables/30sections pass. Production/R283/R284A/R284B unchanged apart from
+requested permanent PHASE1_MEASUREMENTS.md contract. Scoped push verification is
+recorded in photo2/r285/results/delivery.json when complete. STOP for method choice;
+no Phase2/3, no manual labeling. Keep current model/reasoning; no /new needed.
+
+Recommendations are review choices, not adopted production methods. Clear-yellow v04 failure remains prominent; user edge/shadow exception does not excuse it.

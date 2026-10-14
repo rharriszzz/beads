@@ -1,4 +1,28 @@
+R285 supersedes earlier stopping points for this delivered comparison.
+R285 comparison delivered for user review; see photo2/R285_REPORT.md and
+photo2/review/r285/index.html. Brightness/color and contextual dark seams govern
+colored supports; T thickness pruning is NOT approved. J remains primary. New S
+restores diffuse red/separates several yellow neighbors but fails clear-yellow
+confirmation v04; no blanket adoption. D leakage/G truncation retained. R2 default
+candidate for black specular reflections only; R1/R4 alternatives. No dark bodies.
+203 fixed colored cues;1421 old masks exact;16 balanced examples;8 colored+2 black
+frozen confirmation anchors;4 fresh POV scenes. Edge/shadow disagreements retained
+but deprioritized per latest user steering. No real completeness/precision claim.
+74 tests,10036 historical blobs,30 native crops,2 exact rerun files and Chromium
+128images/25tables/30sections pass. Production/R283/R284A/R284B unchanged apart from
+requested permanent PHASE1_MEASUREMENTS.md contract. Scoped push verification is
+recorded in photo2/r285/results/delivery.json when complete. STOP for method choice;
+no Phase2/3, no manual labeling. Keep current model/reasoning; no /new needed.
+
 # Beads photo-2 workflow
+
+R285 supersedes R284B preferences: T is NOT approved. J is primary colored
+candidate; brightness/color and meaningful local dark seams govern support, not
+compactness/roundness. Normal shading/narrow bright continuation can be valid.
+Read photo2/R285_SPECIFICATION.md, R285_DIAGNOSIS.md and r285/checkpoints.
+Black: reflection only, smoother R2/R4 candidates with R1 reference. Freeze10–16
+balanced J cases before improvements, then new-region validation. Preserve old
+results; no production adoption/Phase2/3. Commit/push/verify, stop for user review.
 
 R284B completed comparison supersedes R284A's black recommendation. See
 photo2/R284B_REPORT.md, photo2/R284B_SPECIFICATION.md and photo2/r284b/checkpoints.
