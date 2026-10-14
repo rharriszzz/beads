@@ -24,8 +24,8 @@ Full requirements: [specification](R284B_SPECIFICATION.md). Permanent contract:
 - [x] CP6: recommendations justified by pixels, explicit failures and limitations;
   small clear main review with additional cases and full measurements accessible.
 - [x] Reproduction, updated permanent/project docs/log/plan/handoff/checklist.
-- [ ] Delivery transaction: scoped commit/push and remote-tip verification.
-  Scientific work is complete; this final transaction is recorded in the delivery reply.
+- [x] Scientific package committed/pushed and remote tip verified: `fd2387e40cbe0a6bbc248fedcae43ce69211412b`.
+  This completion receipt is a documentation-only follow-up.
 - [x] Stop at method choice; no production adoption or automatic next round.
 
 Verification:59 tests;15 exact replay files;9916 unchanged historical blobs;

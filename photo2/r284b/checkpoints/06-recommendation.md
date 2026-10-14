@@ -29,3 +29,7 @@ clean status. Stop for the user's selection. Next only after selection: test
 chosen rules with explicit clipping/ownership/merge uncertainty on a new automatic
 case set, including lost crossing evidence and missing cues. Keep current
 model/reasoning; no /new needed, including for context management.
+
+## Delivery receipt
+
+Scientific package fd2387e40cbe0a6bbc248fedcae43ce69211412b was pushed to origin/photo-2-strategy-v3 and verified with git ls-remote. Working tree was clean after that push. Stopped for user method selection; no production adoption.

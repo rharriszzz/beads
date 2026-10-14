@@ -2,6 +2,8 @@
 
 ## R284B completed experiment — STOP for method selection
 
+Scientific package `fd2387e` pushed and remote-verified. Await user method choice.
+
 [Report](photo2/R284B_REPORT.md), [visual comparison](photo2/review/r284b/index.html),
 [complete requirements](photo2/R284B_SPECIFICATION.md), [checkpoints](photo2/r284b/checkpoints),
 [reproduction](photo2/r284b/README.md). Permanent black contract:
