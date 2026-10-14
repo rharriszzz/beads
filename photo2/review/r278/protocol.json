@@ -1,0 +1,57 @@
+{
+  "phase1": {
+    "methods": [
+      "multiscale LoG 2/3/4px",
+      "image-learned chromatic cores",
+      "native hue enclosure",
+      "dark reflection enclosure"
+    ],
+    "frozen_inventory": "phase1-inventory.json.gz",
+    "not_inputs": [
+      "physical bead coordinates",
+      "nominal spacing",
+      "string indices",
+      "model colors",
+      "manual reviewed coordinates"
+    ]
+  },
+  "phase2": {
+    "radius_conventions": [
+      "legacy",
+      "intended"
+    ],
+    "shape": {
+      "roundedness": 0.8,
+      "height_ratio": 0.7,
+      "hole_ratio": 0.14
+    },
+    "helicities": [
+      -1,
+      1
+    ],
+    "major_traversal": "fixed",
+    "phase_starts": 24,
+    "objective_evaluations": 136,
+    "budget": 145,
+    "fit_pixels_per_interior": 12,
+    "comparison_pixels_per_interior": 48,
+    "export_pixels_per_interior": "all",
+    "visibility_grid": 2,
+    "unknown_rays": "retained; never called visible"
+  },
+  "shared_light": {
+    "direction_trials": 20,
+    "roughness_degrees": 6,
+    "training": "yellow only",
+    "geometry": "frozen",
+    "correspondence": "split-specific positive ownership"
+  },
+  "limitations": [
+    "No unique count or hand",
+    "No recovered physical string identities",
+    "Geographic holdouts include historical warm-start exposure",
+    "Pitch multipliers30-45percent are structural alternatives, not measured strain",
+    "No full photographic silhouette reference",
+    "No repeating pattern inference"
+  ]
+}

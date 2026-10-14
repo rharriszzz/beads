@@ -1,5 +1,17 @@
 # Beads photo-2 workflow
 
+R278 authorizes both phases and conditional indexing; see photo2/RECONSTRUCTION_R278.md.
+Intended radius1.78453698 is explicit; legacy2.11091575 remains default.900image-only
+locations/897masks (all810/807R275unchanged),90new outside band;target658and doubts remain.
+14equal-budget count/hand/camera/pitch/tilt candidates have analytic separating-plane
+witnesses for all possible collision pairs, but only~60–68%positive ownership; no unique
+count/hand/physical indexing. Global pitch1.30–1.45 is exploratory, not small strain.
+Four complete conditional per-bead exports and shared-light/POV comparisons survive.
+No repeating-pattern search. Next resolve physical dimensions/orientation and connected
+photographic ownership; preserve failed alternatives. Commit/push scoped R278 results.
+Keep current model/reasoning; no /new needed for review.
+
+
 R276 explicitly authorizes integrated3D reconstruction and shared lighting, superseding
 R275's geometry stop. See photo2/RECONSTRUCTION_R276.md.26saved models; literal source
 rounded annuli, one distant light, all-neighbor occlusion, fixed loop length and separate

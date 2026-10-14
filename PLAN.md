@@ -1,5 +1,33 @@
 # Photo-2 reconstruction plan
 
+## Current R278 — corrected construction and full conditional correspondence
+
+[Report](photo2/RECONSTRUCTION_R278.md) · [evidence/reproduction](photo2/review/r278/README.md).
+User authorizes both phases, both helicities, physical fitting and conditional indexing;
+repeating-pattern inference remains excluded. Explicit intended radius1.78453698 versus
+legacy2.11091575 propagates through physical spacing, placement and exact surfaces.
+All810R275locations/807masks unchanged;90new outside-target image-only proposals give
+900locations/897masks. Target remains658;63residual groups/12short intervals and other
+doubts remain. Failed wide/enclosure controls retained. No model information enters Phase1.
+Fourteen equal-budget closed-loop candidates compare count/hand/pitch/camera and shared
+8-degree hole-axis tilt. Corrected source eliminates sampled±1overlap but retains±6.
+All14have positive analytic separating-plane witnesses for every bounding-sphere pair;
+exported models also pass16,384surface samples/bead in both directions. This certifies
+separation for the idealized shapes numerically, not photographic identity or exact N.
+Pitch1.30–1.45is an exploratory global structural correction, not small local strain.
+N2080/h−1andN2696/h+1/tilt−8give similar training ownership~68%; neither uniquely wins
+withheld evidence. Full per-bead/observation ledgers, raw-pixel colors, unknowns, worst
+crops, overlays and POV renders saved for four models. High-count tilted candidate:
+287strong conditional matches/600ambiguous/58geometry-assisted candidates/13unexplained
+independent observations including3location-only. No recovered physical string sequence.
+50scientific/18regression checks,87synthetic scenes and byte-exact Phase1/model replay pass;
+98/156synthetic bodies,zero selected false/duplicate/color/background/foreign errors;
+low yellow recall remains explicit. Original photo and4,721prior files unchanged;
+only shared-code change is optional radius_convention with legacy default preserved.
+Next resolve pitch/aspect-ratio/orientation versus connected photographic ownership;
+stop after scoped commit/push. Keep current model/reasoning; no /new needed for review.
+
+
 ## Current R276 — integrated reconstruction; physical/photo conflict remains open
 
 [Report](photo2/RECONSTRUCTION_R276.md) · [evidence and reproduction](photo2/review/r276/README.md).

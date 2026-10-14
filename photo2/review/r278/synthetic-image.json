@@ -1,0 +1,4625 @@
+{
+  "scenes": 87,
+  "metrics": {
+    "black": {
+      "visible": 32,
+      "detected": 28,
+      "accepted": 28,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "background_pixels": 0,
+      "other_body_pixels": 0,
+      "recall": 0.875,
+      "false_discovery_fraction": 0.0
+    },
+    "red": {
+      "visible": 62,
+      "detected": 45,
+      "accepted": 45,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "background_pixels": 0,
+      "other_body_pixels": 0,
+      "recall": 0.7258064516129032,
+      "false_discovery_fraction": 0.0
+    },
+    "yellow": {
+      "visible": 62,
+      "detected": 25,
+      "accepted": 25,
+      "false_positive": 0,
+      "duplicate_extras": 0,
+      "wrong_color": 0,
+      "background_pixels": 0,
+      "other_body_pixels": 0,
+      "recall": 0.4032258064516129,
+      "false_discovery_fraction": 0.0
+    }
+  },
+  "records": [
+    {
+      "scene": "h18-h42-equal-Y",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h42-shading",
+      "features": 5,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0065-0065",
+          "reasons": [
+            "region-small",
+            "peak-lost"
+          ]
+        },
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h42-neutral-highlight",
+      "features": 7,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0059-0072",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0060-0054",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0061-0055",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0063-0061",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0083-0072",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h42-soft-boundary",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0083-0064",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h42-dim",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h42-gap",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0088-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0091-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0057-0064",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h0-h60-equal-Y",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h0-h60-shading",
+      "features": 5,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-K-0065-0065",
+          "reasons": [
+            "black-color"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h0-h60-neutral-highlight",
+      "features": 7,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0047-0059",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0058-0072",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0060-0071",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0062-0056",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0084-0072",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h0-h60-soft-boundary",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0083-0062",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h0-h60-dim",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h0-h60-gap",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0088-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0091-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0057-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h358-h55-equal-Y",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h358-h55-shading",
+      "features": 5,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-K-0065-0065",
+          "reasons": [
+            "black-color"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h358-h55-neutral-highlight",
+      "features": 7,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0047-0059",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0058-0072",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0060-0071",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0062-0056",
+          "reasons": [
+            "contrast"
+          ]
+        },
+        {
+          "id": "R278-0084-0072",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h358-h55-soft-boundary",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0083-0064",
+          "reasons": [
+            "contrast"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h358-h55-dim",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0082-0063",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0055-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h358-h55-gap",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0088-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0057-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0091-0064",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h18-equal-Y",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h18-shading",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0065-0065",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h18-neutral-highlight",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h18-soft-boundary",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h18-dim",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h18-h18-gap",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0088-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "h42-h42-equal-Y",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h42-h42-shading",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0078-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0065-0065",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h42-h42-neutral-highlight",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h42-h42-soft-boundary",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h42-h42-dim",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0054-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0078-0061",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "h42-h42-gap",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0054-0061",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0088-0061",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "background-0",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-18",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-42",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-60",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-300",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "black-black-clear",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-dim",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-uneven",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-touching",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0076-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-multiple-highlights",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-colored-highlight",
+      "features": 2,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-cast-shadow",
+      "features": 3,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-black-no-black-reflection",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "red-red-clear",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "red-red-dim",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-K-0046-0051",
+          "reasons": [
+            "black-material"
+          ]
+        },
+        {
+          "id": "R278-K-0084-0051",
+          "reasons": [
+            "black-material"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-red-uneven",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "red-red-touching",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0076-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "red-red-multiple-highlights",
+      "features": 6,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "red-red-colored-highlight",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "red-red-cast-shadow",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0046-0051",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0084-0051",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-red-no-black-reflection",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "yellow-yellow-clear",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "yellow-yellow-dim",
+      "features": 4,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 2,
+          "accepted": 2,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "yellow-yellow-uneven",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0058-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0096-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "yellow-yellow-touching",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "yellow-yellow-multiple-highlights",
+      "features": 6,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0051-0046",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0089-0046",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "yellow-yellow-colored-highlight",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "yellow-yellow-cast-shadow",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "yellow-yellow-no-black-reflection",
+      "features": 4,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 2,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "black-red-clear",
+      "features": 3,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-red-dim",
+      "features": 2,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-K-0084-0051",
+          "reasons": [
+            "black-material"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "black-red-uneven",
+      "features": 3,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-red-touching",
+      "features": 3,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0076-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-red-multiple-highlights",
+      "features": 5,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-red-colored-highlight",
+      "features": 3,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-red-cast-shadow",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0084-0051",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "black-red-no-black-reflection",
+      "features": 2,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-yellow-clear",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-yellow-dim",
+      "features": 3,
+      "accepted": 2,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        },
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-yellow-uneven",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0096-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "black-yellow-touching",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0069-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "black-yellow-multiple-highlights",
+      "features": 5,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0089-0046",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "black-yellow-colored-highlight",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-yellow-cast-shadow",
+      "features": 2,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-K-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "scene": "black-yellow-no-black-reflection",
+      "features": 2,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "red-yellow-clear",
+      "features": 6,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0087-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0049-0055",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-dim",
+      "features": 3,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0084-0051",
+          "body": 2,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-K-0046-0051",
+          "reasons": [
+            "black-material"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-uneven",
+      "features": 6,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0096-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0087-0054",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0051-0054",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-touching",
+      "features": 6,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0079-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0048-0054",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-multiple-highlights",
+      "features": 8,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0087-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0089-0046",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        },
+        {
+          "id": "R278-0049-0055",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-colored-highlight",
+      "features": 6,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0087-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0049-0055",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-cast-shadow",
+      "features": 5,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": [
+        {
+          "id": "R278-0087-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0046-0051",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0049-0055",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "red-yellow-no-black-reflection",
+      "features": 6,
+      "accepted": 1,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 1,
+          "detected": 1,
+          "accepted": 1,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 1,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [
+        {
+          "id": "R278-0046-0051",
+          "body": 1,
+          "correct_color": true
+        }
+      ],
+      "failures": [
+        {
+          "id": "R278-0087-0055",
+          "reasons": [
+            "broad-enclosure-unverified"
+          ]
+        },
+        {
+          "id": "R278-0049-0055",
+          "reasons": [
+            "same-peak-or-contained-highlight"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "background-0.0",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-0.16",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-0.5",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    },
+    {
+      "scene": "background-0.83",
+      "features": 0,
+      "accepted": 0,
+      "metrics": {
+        "black": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "red": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        },
+        "yellow": {
+          "visible": 0,
+          "detected": 0,
+          "accepted": 0,
+          "false_positive": 0,
+          "duplicate_extras": 0,
+          "wrong_color": 0,
+          "background_pixels": 0,
+          "other_body_pixels": 0
+        }
+      },
+      "associations": [],
+      "failures": []
+    }
+  ],
+  "protocol": "New recovery from empty trusted inventory. Palette learned from automatic original detector. Truth evaluates only; not a photographic completeness claim."
+}

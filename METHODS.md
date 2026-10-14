@@ -1935,3 +1935,16 @@ compare diffuse contamination, frozen correspondences, geographic holdouts and a
 neighbor interpenetration. Do not optimize a favorable photometric score while hiding
 physical collisions, incomplete silhouettes or rematching. A contact-consistent lower-
 count alternative remains alongside more accurate but interpenetrating high-count fits.
+
+
+## R278 — explicit radius conventions and certified outer-envelope separation
+
+[Implementation and evidence](photo2/RECONSTRUCTION_R278.md) adds an image-only full-photo
+feature/enclosure search, a frozen inventory, explicit source/intended radius alternatives,
+equal-budget count/helicity/pitch/camera/tilt fits to native positive interior ownership,
+and full conditional visibility/correspondence ledgers. No pattern priors.
+The rounded annulus's filled convex outer envelope has analytic support: a cylinder of
+radius .656r and axial half-height .14r plus an ellipsoid (.344r radial, .56r axial).
+A positive separating-plane gap is a sufficient nonintersection witness for two actual
+annuli; negative search results are inconclusive, not proof of overlap. Bounding spheres
+safely exclude all noncandidate pairs. The witness code is photo2/contact_r278.py.

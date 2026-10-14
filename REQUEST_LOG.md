@@ -7892,3 +7892,88 @@ tested. No claimed photographic improvement depends on that invalid diagnostic.
 Scoped commit/push authorized. Stop after delivery with all alternatives/doubts retained.
 Next address physical scale/contact and supported visible surfaces jointly before global
 indexing; keep current model/reasoning, no /new needed for evidence review.
+
+
+## R278 — two-phase reconstruction; maker corrects radius and requires both hands
+
+User authorizes independent photographic recovery followed by full physical construction,
+fit, visibility, conditional physical indexing and image-pixel color classification.
+Use photo-2-strategy-v3; preserve R275/R276/R277, original photograph and failed alternatives.
+Maker corrects intended radius to .96*chain_minor*sin(pi/6.5), versus literal POV-Ray
+sin(180/6.5); preserve legacy as an explicit comparison and propagate physical dimensions.
+Keep major traversal fixed when changing minor winding sign. No repeating-color-pattern
+search. Match positive interiors to occluded rounded hole-bearing surfaces, allow missing
+and competing assignments, require noninterpenetration for a plausible candidate, and
+compare count/hand/camera hypotheses with comparable budgets and geographic holdouts.
+Deliver full-photo overlays, enlarged raw/prediction crops, contact audit, model comparison,
+worst discrepancies, reproducible per-bead ledger, tests, docs, scoped commit and push.
+Significant progress with honest uncertainties is preferred to premature success claims.
+
+Initial checkout clean at de06118. Fetch revealed remote R277 commits fed4faf and 2c88cea;
+fast-forward pull synchronized the branch. User asked about their origin: Git records
+arrival by fetch, not creation in this checkout. Available GitHub connector tools could
+have created them remotely within a session, but available local logs do not establish
+that provenance. No second checkout/process is inferred. User then requested resumption.
+
+Compared photographic multiscale LoG, chromatic component cores, dark enclosure and
+secondary-highlight continuity; geometry compares literal/intended radius, coherent pitch
+changes, both helicities, camera hypotheses and a shared small hole-axis tilt control.
+The first wide photographic control admitted shadowed paper and local fragments; preserve
+it as failed. Do not fit that inventory. An interrupted preliminary fit against that
+control is archived separately and excluded from all final comparisons. Cache reuse now
+requires the frozen Phase 1 input hash. Outcomes and validation follow below.
+
+### R278 outcome — physical separation achieved; photographic indexing remains conditional
+
+Preserved all810R275locations/807masks; selected90new outside-target proposals (63black/
+23yellow/4red), giving900locations/897interiors. Target remains658; no newly certified
+centerline target.4,200features/2,191attempts and all failed decisions retained. Selected
+full-photo broad-enclosure/strong-neutral-reflection checks exclude failed inset-core
+rescues and preserve hard870native-pixel cap. Failed425-addition and117-addition controls
+remain separate; no modeled coordinate, spacing or color enters photographic selection.
+87known synthetic scenes:98/156bodies (28black/45red/25yellow),zero selected false,
+duplicate,wrong-color,background or foreign-mask errors. Low yellow recall remains.
+Three frozen Phase1files regenerate byte-exactly, including all candidate decisions.
+
+Optional Rope radius_convention='intended' implements maker's1.784536980648071 radius;
+legacy2.110915748921366 remains default and replays exactly. Corrected source packing
+eliminates all sampled±1overlaps but retains2,671±6pairs atN2696/source pitch in the
+final12x12profile screen. Physical row pitch is recomputed with radius; no image shrink.
+14matched-budget fits (24phase starts/136evaluations each) compare1950/2080/2300/2600/
+2696counts, both hands, orthographic/perspective and a shared−8degree hole-axis tilt.
+Global pitch1.30–1.45is a structural alternative, explicitly NOT measured small strain.
+All14idealized constructions have analytic separating-plane witnesses for every possible
+bounding-sphere pair; exported models also pass16,384surface points/bead in both directions.
+No exact count, unique helicity or photographic identity follows from physical clearance.
+
+N2080/h−1 andN2696/h+1/tilt−8 have similar~68%training positive-interior ownership;
+withheld evidence and shared-light transfer do not select one universal winner. Four
+full ledgers contain every generated bead, visibility support,±1/6/7neighbors, one-to-one
+conditional owner/alternatives, actual-pixel colors and unknowns. High-count tilted model:
+287strong conditional/600ambiguous matches,58geometry-assisted candidates,1,747predicted
+unconfirmed,4without sampled surface;10unexplained interiors plus3location-only points.
+Shared-light heldout yellow/red/black RMS12.95/8.93/9.84px there. Low-count negative-hand
+candidate's yellow16.97px shows clear photographic regression despite good contact.
+No repeating-pattern inference, no retroactive geometry-assisted Phase1promotion.
+
+48scientific and18R275/local-surface regression checks pass. Native90newmask measurements,
+allfour ledgers' one-to-one/modulo indexing, closure and physical unit/frame tests pass.
+32saved-model files replay byte-exactly. Original photo and4,721prior tracked files unchanged;
+only shared-code edit is the backward-compatible optional radius convention. Existing
+historical stale ignored-review hash issue is untouched. Shared-light source-macro POV
+renders, photo overlays, enlarged black/crowded/worst crops, comparison/contact tables,
+failed controls and reproduction scripts are saved in review/r278. Report RECONSTRUCTION_R278.md.
+Significant two-phase progress delivered, not successful global physical indexing.
+Next resolve pitch/aspect ratio/orientation against connected photographic ownership;
+no repeating pattern yet. Keep current model/reasoning; no /new needed. Commit/push scoped
+work and verify remote branch; stop after delivery.
+
+Final validation adds two focused geometry-assisted color tests: shadow-paper hue stays
+unknown, and black requires both neutral reflection and dark-body pixels. Final combined
+suite is68checks (50scientific plus18detector/local-surface regressions), all passing.
+All fit/export/light cache entry points reject a mismatched frozen Phase1hash. Native
+measurement audit and four-ledger one-to-one/neighbor checks pass. Final commit/push follows.
+
+Replay accounting clarification:31files are regenerated by the model export; the separate
+POV-render PNG is unchanged by that command and excluded from the final replay count.
+CSV line endings are normalized to LF in the writer and outputs; final replay rechecked.

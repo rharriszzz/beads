@@ -1,0 +1,350 @@
+[
+  {
+    "metrics": {
+      "train": {
+        "observations": 651,
+        "mean_support": 0.7780273449949252,
+        "unmatched": 8,
+        "supported_80": 343,
+        "unfinished_rays": 23,
+        "colors": {
+          "red": {
+            "count": 177,
+            "mean_support": 0.7408631970256878
+          },
+          "yellow": {
+            "count": 230,
+            "mean_support": 0.7306461352657005
+          },
+          "black": {
+            "count": 244,
+            "mean_support": 0.849649199209174
+          }
+        },
+        "sectors": {
+          "0": 0.7681975760675592,
+          "2": 0.7771097418782026,
+          "3": 0.7413458588365799,
+          "4": 0.7720924210585273,
+          "7": 0.8722122902364606,
+          "8": 0.7502452029579443,
+          "10": 0.7922528861904135,
+          "11": 0.7388284476766953,
+          "12": 0.69096628679962,
+          "14": 0.9054887449892076,
+          "15": 0.8064571150097466
+        }
+      },
+      "holdout": {
+        "observations": 184,
+        "mean_support": 0.7491136902690865,
+        "unmatched": 1,
+        "supported_80": 77,
+        "unfinished_rays": 7,
+        "colors": {
+          "red": {
+            "count": 61,
+            "mean_support": 0.7455164101917167
+          },
+          "yellow": {
+            "count": 55,
+            "mean_support": 0.6791666666666666
+          },
+          "black": {
+            "count": 68,
+            "mean_support": 0.808915460605155
+          }
+        },
+        "sectors": {
+          "1": 0.7839192308816224,
+          "5": 0.7399903641679956,
+          "9": 0.781144206727367,
+          "13": 0.6898483806450596
+        }
+      },
+      "buffer": {
+        "observations": 62,
+        "mean_support": 0.7681451612903227,
+        "unmatched": 0,
+        "supported_80": 29,
+        "unfinished_rays": 2,
+        "colors": {
+          "red": {
+            "count": 17,
+            "mean_support": 0.6850490196078431
+          },
+          "yellow": {
+            "count": 24,
+            "mean_support": 0.6822916666666666
+          },
+          "black": {
+            "count": 21,
+            "mean_support": 0.9335317460317459
+          }
+        },
+        "sectors": {
+          "0": 0.9305555555555557,
+          "2": 0.70625,
+          "4": 0.7966269841269842,
+          "8": 0.5416666666666666,
+          "10": 0.9041666666666668,
+          "12": 0.7886904761904763,
+          "14": 0.736111111111111
+        }
+      }
+    },
+    "contact": {
+      "samples_per_bead": 2048,
+      "both_directions": true,
+      "all_bounding_pairs": true,
+      "pair_count": 8113,
+      "penetrating_pairs": 5708,
+      "minimum_sdf_units": -0.48437006824302165,
+      "families": {
+        "1": {
+          "pairs": 2696,
+          "penetrations": 2696
+        },
+        "6": {
+          "pairs": 2696,
+          "penetrations": 2694
+        },
+        "7": {
+          "pairs": 2696,
+          "penetrations": 318
+        },
+        "13": {
+          "pairs": 25,
+          "penetrations": 0
+        }
+      },
+      "limitation": "Negative samples establish overlap. Zero detected penetrations is sampled evidence, not exact nonintersection certification."
+    },
+    "physical": {
+      "length_units": 1195.8495611169233,
+      "reference_length_units": 1195.8495611169233,
+      "length_error_units": 0.0,
+      "length_normalization": 1.0002315076132486,
+      "strain_integral_units": -8.685345498360419e-10,
+      "strain_min": -0.0020425179356654043,
+      "strain_max": 0.001923460405748895,
+      "material_jacobian_min": 0.9979574820643345,
+      "closure_position_units": 0.0,
+      "closure_tangent_units": 0.0,
+      "helical_turns": 415,
+      "beads_per_turn": 6.4963855421686745,
+      "phase_closure_error_rad": 3.469446951953614e-17,
+      "curvature_max_inverse_units": 0.03859696735060944,
+      "hole_axis": "local centerline tangent",
+      "strain_measure": "increment relative to inherited material placement; integrated against physical reference arclength",
+      "neighbor_families": {
+        "1": {
+          "n": 2696,
+          "mean": 3.746066067886092,
+          "rms": 3.746066584819191,
+          "maximum": 3.752999109267864,
+          "median": 3.745857079438097,
+          "p90": 3.748625482292458,
+          "p95": 3.7495820803256
+        },
+        "6": {
+          "n": 2696,
+          "mean": 3.2714772381238566,
+          "rms": 3.2724816870204934,
+          "maximum": 3.6011724053078713,
+          "median": 3.2730090859914265,
+          "p90": 3.3685891143700917,
+          "p95": 3.4168034803646616
+        },
+        "7": {
+          "n": 2696,
+          "mean": 3.6556567462356475,
+          "rms": 3.656988752307218,
+          "maximum": 4.048020213616317,
+          "median": 3.654610105645191,
+          "p90": 3.775418269979445,
+          "p95": 3.835373413277233
+        }
+      },
+      "total_material_speed_relative_to_uniform": {
+        "min": 0.9979572949396485,
+        "max": 1.002259423953121
+      },
+      "hole_tilt_deg": 0
+    },
+    "name": "R276-mixed_joint",
+    "comparison": "frozen historical fit, audited on identical Phase 1 evidence; different historical optimization budget"
+  },
+  {
+    "metrics": {
+      "train": {
+        "observations": 651,
+        "mean_support": 0.6600766975737151,
+        "unmatched": 40,
+        "supported_80": 248,
+        "unfinished_rays": 13,
+        "colors": {
+          "red": {
+            "count": 177,
+            "mean_support": 0.6191538848207001
+          },
+          "yellow": {
+            "count": 230,
+            "mean_support": 0.5526268115942029
+          },
+          "black": {
+            "count": 244,
+            "mean_support": 0.7910472370514673
+          }
+        },
+        "sectors": {
+          "0": 0.6847216352024044,
+          "2": 0.6962554780189805,
+          "3": 0.6574626762126762,
+          "4": 0.625811179387078,
+          "7": 0.6580583979017652,
+          "8": 0.6381513241304765,
+          "10": 0.6380814268385957,
+          "11": 0.6890211822285355,
+          "12": 0.6750387092778397,
+          "14": 0.6432971014492754,
+          "15": 0.6791929930777472
+        }
+      },
+      "holdout": {
+        "observations": 184,
+        "mean_support": 0.6897716194610403,
+        "unmatched": 4,
+        "supported_80": 80,
+        "unfinished_rays": 4,
+        "colors": {
+          "red": {
+            "count": 61,
+            "mean_support": 0.6746053011024602
+          },
+          "yellow": {
+            "count": 55,
+            "mean_support": 0.5912878787878787
+          },
+          "black": {
+            "count": 68,
+            "mean_support": 0.7830326658860001
+          }
+        },
+        "sectors": {
+          "1": 0.6979279612856989,
+          "5": 0.6388888888888888,
+          "9": 0.688022476068013,
+          "13": 0.6930587192186307
+        }
+      },
+      "buffer": {
+        "observations": 62,
+        "mean_support": 0.5928550202421095,
+        "unmatched": 4,
+        "supported_80": 15,
+        "unfinished_rays": 0,
+        "colors": {
+          "red": {
+            "count": 17,
+            "mean_support": 0.588235294117647
+          },
+          "yellow": {
+            "count": 24,
+            "mean_support": 0.48871527777777785
+          },
+          "black": {
+            "count": 21,
+            "mean_support": 0.7156116470640059
+          }
+        },
+        "sectors": {
+          "0": 0.4976359338061465,
+          "2": 0.6125,
+          "4": 0.5750172532781228,
+          "8": 0.6875,
+          "10": 0.7583333333333333,
+          "12": 0.5547619047619047,
+          "14": 0.5138888888888888
+        }
+      }
+    },
+    "contact": {
+      "samples_per_bead": 2048,
+      "both_directions": true,
+      "all_bounding_pairs": true,
+      "pair_count": 5795,
+      "penetrating_pairs": 0,
+      "minimum_sdf_units": 0.008243213882561662,
+      "families": {
+        "1": {
+          "pairs": 1950,
+          "penetrations": 0
+        },
+        "6": {
+          "pairs": 1950,
+          "penetrations": 0
+        },
+        "7": {
+          "pairs": 1895,
+          "penetrations": 0
+        }
+      },
+      "limitation": "Negative samples establish overlap. Zero detected penetrations is sampled evidence, not exact nonintersection certification."
+    },
+    "physical": {
+      "length_units": 1195.8495611169233,
+      "reference_length_units": 1195.8495611169233,
+      "length_error_units": 0.0,
+      "length_normalization": 0.9997998773252013,
+      "strain_integral_units": 2.5989488339206446e-11,
+      "strain_min": -0.0004999999997739576,
+      "strain_max": 0.0005,
+      "material_jacobian_min": 0.9995000000002261,
+      "closure_position_units": 0.0,
+      "closure_tangent_units": 0.0,
+      "helical_turns": -300,
+      "beads_per_turn": 6.5,
+      "phase_closure_error_rad": -5.204170427930421e-18,
+      "curvature_max_inverse_units": 0.03810438189579581,
+      "hole_axis": "local centerline tangent",
+      "strain_measure": "increment relative to inherited material placement; integrated against physical reference arclength",
+      "neighbor_families": {
+        "1": {
+          "n": 1950,
+          "mean": 4.273262288830269,
+          "rms": 4.27326366067802,
+          "maximum": 4.2875328795468315,
+          "median": 4.273269656707926,
+          "p90": 4.277496459434523,
+          "p95": 4.279405739921281
+        },
+        "6": {
+          "n": 1950,
+          "mean": 4.27594874105616,
+          "rms": 4.27806149661472,
+          "maximum": 4.803696404971084,
+          "median": 4.271607891966035,
+          "p90": 4.433346885459398,
+          "p95": 4.509737552432221
+        },
+        "7": {
+          "n": 1950,
+          "mean": 4.813558234973908,
+          "rms": 4.816295753223929,
+          "maximum": 5.459228409032235,
+          "median": 4.808095281973701,
+          "p90": 5.005243727704157,
+          "p95": 5.098544859436963
+        }
+      },
+      "total_material_speed_relative_to_uniform": {
+        "min": 0.9989999568929487,
+        "max": 1.0011244304526608
+      },
+      "hole_tilt_deg": 0
+    },
+    "name": "R276-contact_joint",
+    "comparison": "frozen historical fit, audited on identical Phase 1 evidence; different historical optimization budget"
+  }
+]

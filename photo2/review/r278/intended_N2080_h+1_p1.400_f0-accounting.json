@@ -1,0 +1,50 @@
+{
+  "model": "intended_N2080_h+1_p1.400_f0",
+  "beads": 2080,
+  "categories": {
+    "predicted but unconfirmed": 1162,
+    "ambiguous correspondence": 569,
+    "geometry-assisted image-supported candidate": 54,
+    "confident conditional match": 291,
+    "no sampled visible surface": 4
+  },
+  "observations": {
+    "ambiguous correspondence": 569,
+    "confident conditional match": 291,
+    "independent observation unexplained": 37,
+    "independent location without measured interior": 3
+  },
+  "colors": {
+    "unknown": 1478,
+    "red": 327,
+    "black": 165,
+    "yellow": 106
+  },
+  "native_mean_support": 0.657451419995954,
+  "native_pixel_weighted_support": 0.5764498139666773,
+  "grazing_rays": 96,
+  "contact": {
+    "samples_per_bead": 16384,
+    "both_directions": true,
+    "all_bounding_pairs": true,
+    "pair_count": 6112,
+    "penetrating_pairs": 0,
+    "minimum_sdf_units": 0.031006989062417178,
+    "families": {
+      "1": {
+        "pairs": 2080,
+        "penetrations": 0
+      },
+      "6": {
+        "pairs": 2080,
+        "penetrations": 0
+      },
+      "7": {
+        "pairs": 1952,
+        "penetrations": 0
+      }
+    },
+    "limitation": "Negative samples establish overlap. Zero detected penetrations is sampled evidence, not exact nonintersection certification."
+  },
+  "phase1_sha256": "b8cf6747778c759757581943345cf2cc97e893cc52585f60f2fe5343bd77fd33"
+}

@@ -1,0 +1,15 @@
+{
+  "python_checks": 68,
+  "result": "pass",
+  "command": "OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/tmp/r278-mpl PYTHONPATH=photo2 .venv/bin/python -m unittest photo2.test_reconstruct_r278 photo2.test_reconstruct_r276 photo2.bead_debugger.test_surface photo2.bead_detection.test_r275 photo2.test_local_surface_fit",
+  "synthetic_scenes": 87,
+  "synthetic_bodies_detected": 98,
+  "synthetic_bodies": 156,
+  "synthetic_false_or_duplicate": 0,
+  "phase1_byte_exact_replay": true,
+  "saved_model_byte_exact_files": 31,
+  "native_new_masks_audited": 90,
+  "conditional_ledgers_audited": 4,
+  "separating_plane_models": 14,
+  "povray_renders": 2
+}

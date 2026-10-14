@@ -30,12 +30,15 @@ class Rope:
     chain_minor: float = 4.0
     rclock: float = 0.0
     helicity: int = 1
+    radius_convention: str = 'legacy'
 
     def __post_init__(self):
         if self.nbeads < 1 or self.beads_per_row <= 0 or self.chain_minor <= 0:
             raise ValueError('Positive bead count, row size and minor radius required')
         if self.helicity not in (-1, 1) or self.nrows < 1:
             raise ValueError('Helicity must be +/-1 and at least one row is required')
+        if self.radius_convention not in ('legacy', 'intended'):
+            raise ValueError('Radius convention must be legacy or intended')
 
     @property
     def nrows(self):
@@ -49,7 +52,8 @@ class Rope:
     def bead_radius(self):
         # Literal legacy expression: POV-Ray sin() takes radians. Do not quietly
         # replace 180 with pi while calling this an exact port of beads.pov.
-        return self.chain_minor*.96*np.sin(180/self.beads_per_row)
+        angle = 180 if self.radius_convention == 'legacy' else np.pi
+        return self.chain_minor*.96*np.sin(angle/self.beads_per_row)
 
     @property
     def chain_major(self):
