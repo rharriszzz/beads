@@ -7821,3 +7821,74 @@ instruction. Report,full numbered atlas,masks/measurements,allcontrols,maxima,an
 increments,viewer and remaining doubts saved underR275. Scoped commit/push authorized;
 next inspect residual photos and12short intervals before certification. Keep current
 model/reasoning;no /new needed;no automatic geometry or physical-string indexing.
+
+## R276 — integrated 3D reconstruction, shared lighting and physical fitting
+
+User explicitly begins the next major phase on photo-2-strategy-v3, superseding
+R275's geometry stop. Preserve R259–R275 and older successful evidence. Reuse actual
+rounded hole-bearing beads.pov geometry, existing spline, exact surface/normal/
+occlusion machinery. Fit one shared distant light, calibrating yellow bright
+pixels/patches against visible geometry and geographically held-out yellow bodies;
+transfer to red/black without independent lamps. Keep maxima, patch/interior/visible
+centroids and physical centers distinct. Conservative interiors are positive support,
+not full silhouettes. No fabricated identities or measurement edits to improve scores.
+
+Separate smooth bending, arclength-weighted zero-net longitudinal strain and small
+periodic twist; fixed length, material ordering and integer winding closure. Maker's
+1% over45-degree span is a suggestion, not a measured limit. Compare count/hand/camera
+hypotheses fairly; preserve alternatives, uncertainties and untrimmed failures. Implement,
+fit, diagnose and iterate wherever feasible; deliver code/tests/numerical evidence/native
+crops/Markdown report; commit/push. Skip operations needing new interactive approval.
+
+Initial inspection: correct branch, clean worktree, no stashes; remote synchronized
+using existing git-fetch approval. Existing R258 model preserves exact source surfaces
+but carries about -11.3%/+10.4% inherited material-speed variation. Four approaches
+announced before implementation: frozen geometry/shared light; interior-only geometry;
+joint geometry/light; normalized local-frame empirical control. New work isolated in
+photo2/reconstruct_r276.py and review/r276. All preexisting tracked photo2 files and
+source assets hashed before experiments. Outcomes follow after validation.
+
+### R276 outcome — implemented26reconstructions; no single accepted solution
+
+Completed full-photo exact-surface predictions, yellow-calibrated shared directional
+light, red/black transfer, interior-only/joint/finer-grid fits, arclength correction,
+matched count/hand/perspective screens, diffuse-mixture and local-frame controls,
+metric/rope-radius/low-count contact screens, and a contact-constrained follow-up.
+All parameters, source measurements, individual errors/alternatives, shape/brightness,
+native ownership, worst photo crops, source normals, closure and contact diagnostics
+are saved under review/r276. Working code, native tests and dependency-ordered rerun
+are provided. POV-Ray renders literal source macro geometry; no standalone browser needed.
+
+Shared-light calibration improves held-out yellow RMS13.435→11.694px and black
+10.445→9.505px. Mixed joint yellow9.862px but black11.102px; geometry/lighting not
+validated as one universal explanation. Frozen-owner controls expose rematching gains.
+Uniform arclength removes inherited−11.3%/+10.4% material-speed variation; separate
+new strain stays about±0.22%, with numerical length/net-strain/winding closure.
+
+Source high-count placement has extensive true rounded-surface interpenetration.
+A15%projected-size metric control reduces this to235sampled±6pairs but loses yellow
+interior support. N1950/h−1 is retained as a separate contact-consistent alternative:
+5infeasible trials rejected in a91-evaluation follow-up; yellow held-out RMS11.947→
+11.252px, black11.493px, native ownership65.7% versus74.3%inherited. Zero sampled
+penetrations at16,384points/bead including flat faces, positive minimum0.00457units;
+all bounding-sphere candidates belong to±1/6/7 families. This does not prove exact
+nonintersection or identify the true count. Additional fitting budget is disclosed.
+
+All810original coordinates/brightness records and807exact masks match;4,166prior
+tracked files hash-match.295uncertain candidates and maker-confirmed B pixels preserved;
+no photographic detection corrections or physical string labels introduced. No full
+silhouette metric is fabricated. Training/held-out populations fixed by photograph,
+with37held-out yellow candidates; later correction evaluations explicitly exploratory.
+
+38scientific tests pass (32new/reused-surface tests plus6R258inverse tests in temporary
+output). Existing R258 immutable-review check fails only because its saved hash expects
+an older ignored reviews/latest.json; user review remains untouched. Saved mixed-model
+numerical JSON, arrays and prediction image reproduce exactly. Native grazing failures
+(180/220,131positive pixels in mixed_joint) remain unknown, with exact locations saved.
+A new diagnostic bug equated frozen generator indices across differing counts; its
+invalid output is archived, corrected to a same-count/hand reference, and regression-
+tested. No claimed photographic improvement depends on that invalid diagnostic.
+
+Scoped commit/push authorized. Stop after delivery with all alternatives/doubts retained.
+Next address physical scale/contact and supported visible surfaces jointly before global
+indexing; keep current model/reasoning, no /new needed for evidence review.

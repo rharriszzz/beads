@@ -1,0 +1,38 @@
+{
+  "preserved_files": 4166,
+  "preservation_failures": [],
+  "locations_exact": 810,
+  "native_masks_exact": 807,
+  "native_positive_pixels": 220131,
+  "saved_model_replay": "mixed_joint",
+  "numerical_audit_exact": true,
+  "surface_arrays_exact": [
+    "xy",
+    "owner",
+    "normal",
+    "specular",
+    "diffuse"
+  ],
+  "render_hash_exact": true,
+  "passed_tests": {
+    "r276_and_r257": 32,
+    "reused_r258_inverse_in_temporary_output": 6,
+    "total": 38
+  },
+  "historical_fixture_failures": [
+    {
+      "path": "photo2/output/debugger/reviews/latest.json",
+      "expected": "43bab31a55994cc3eeec4fa1194b3221780edab1bd1e4e984a04d93d9bead04f",
+      "actual": "8c156b93f16a04d2a5fc5cfa2115ceac602e8f4380f3d3ae4acf59ef8c7c05ee"
+    }
+  ],
+  "historical_fixture_note": "One existing R258 immutable-review check expects an older ignored debugger/reviews/latest.json. Current user review untouched; all tracked prior evidence hashes match. Scientific kernel rerun excludes only that stale fixture and writes to a temporary directory.",
+  "browser": "Not required for static photographic/POV evidence; no browser validation claimed",
+  "uncertainties": [
+    "No photographic identity certification",
+    "No verified full silhouettes",
+    "Interpenetration remains in high-count fits",
+    "Contact-consistent lower-count alternative retains photographic residuals and lower support; count remains open",
+    "Later holdouts exploratory after prior diagnostic inspection"
+  ]
+}

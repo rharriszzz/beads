@@ -1,5 +1,48 @@
 # Beads session handoff — new branch
 
+## Current R276 — integrated reconstruction; physical/photo conflict remains open
+
+[Report](photo2/RECONSTRUCTION_R276.md) · [evidence and reproduction](photo2/review/r276/README.md).
+R276 explicitly authorizes geometry/lighting and supersedes R275's geometry stop.
+Preserve every prior inventory, source photograph, confirmed observation and model.
+26 saved reconstructions use literal rounded hole-bearing beads, all-neighbor camera/
+light occlusion, one distant shared light, and independent bend/strain/twist fields.
+Each hypothesis fixes centerline length, physical-arclength-zero-net strain, material
+ordering and integer winding. No independent bead translations or recovered indices.
+
+R275810locations/807masks unchanged;295uncertain candidates remain separate. Photo-only
+specular candidates:175train/37held-out yellow,54/20red,160/39black.16geographic sectors,
+4held out plus buffers; withheld from R276 optimization, not historical warm starts.
+A neutral-only gate fails on yellow; relative desaturation admits colored highlights.
+Conservative interiors constrain positive ownership, never complete silhouettes.
+
+Initial yellow held-out RMS13.44px→shared-light11.69→mixed joint9.86; black10.44→9.51
+at light-only, then11.10in mixed joint. Original R258 material speed±11% is removed;
+uniform correction stays about±0.22%. Fixed correspondence controls reduce apparent
+gains. Later holdouts are exploratory. All valid maximum errors and missing cases
+survive; no unique light direction/count/hand or photographic completeness claim.
+
+Critical new physical audit: inherited2696 placement interpenetrates extensively.
+15% projected-size calibration retains235sampled±6penetrations and loses mask support.
+N1950/h−1, rope radius4.55, is a separate contact-consistent alternative: bounded joint
+fit yellow held-out RMS11.95→11.25px, black11.49px, native ownership65.7% versus74.3%
+inherited. No penetrations in16,384samples/bead including flats; all possible bounding-
+sphere pairs are±1/6/7. This is sampled evidence, not exact nonintersection certification.
+All count/hand/camera screens and failed controls remain available. No solution adopted.
+
+38scientific tests, exact810point/807mask preservation,4,166old-file hashes and exact
+saved mixed-model numerical/array/render replay pass. One old immutable-review fixture
+expects a stale hash of ignored user reviews/latest.json; current user review untouched.
+Unfinished grazing rays remain unknown (180/220,131native positive pixels in mixed fit).
+POV-Ray renders succeed. Cross-count frozen-index diagnostic was caught, archived as
+invalid and corrected to same-count/hand references with a regression test.
+
+Deliver scoped commit/push and stop. Next: constrain absolute bead/rope scale, contact
+geometry and reliable exposed surfaces together before extending deformation or global
+string indexing. Inspect the contact-consistent alternative beside the better-scoring
+interpenetrating models. Keep current model/reasoning; no /new needed for evidence review.
+
+
 ## Current R275 — centerline recovery and angular audit; 100% remains unverified
 
 [Report](photo2/CENTERLINE_INVENTORY_R275.md) · [viewer](photo2/centerline_inventory_r275/index.html) · [full audit](photo2/review/r275/centerline-audit.csv).

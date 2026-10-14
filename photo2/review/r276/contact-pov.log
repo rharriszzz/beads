@@ -1,0 +1,112 @@
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.10.unofficial (g++ 11 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ Richard Harris
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka
+
+With Assistance From: (Alphabetically)
+  Ton van den Broek   Nicolas Calimet     Jerome Grimbert     James Holsenback
+  Christoph Hormann   Nathan Kopp         Juha Nieminen
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini
+  Timothy Wegner      Drew Wells          Chris Young
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.37, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.3.0, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.74, http://www.boost.org/
+  OpenEXR 2.5.7 and IlmBase 2.5.7, Copyright (c) 2002-2011 Industrial Light &
+ Magic.
+
+Parser Options
+  Input file: photo2/review/r276/contact_joint.pov
+  Remove bounds........On
+  Split unions.........Off
+  Library paths:
+    /usr/local/share/povray-3.7
+    /usr/local/share/povray-3.7/ini
+    /usr/local/share/povray-3.7/include
+  Clock value:    0.000  (Animation off)
+Image Output Options
+  Image resolution.....1016 by 1273 (rows 1 to 1273, columns 1 to 1016).
+  Output file..........photo2/review/r276/contact_joint-pov.png, 24 bpp PNG
+  Dithering............Off
+  Graphic display......Off
+  Mosaic preview.......Off
+  Continued trace......Off
+Information Output Options
+  All Streams to console..........On
+  Debug Stream to console.........On
+  Fatal Stream to console.........On
+  Render Stream to console........On
+  Statistics Stream to console....On
+  Warning Stream to console.......On
+==== [Parsing...] ==========================================================
+File 'photo2/review/r276/contact_joint.pov' line 45: Parse Warning: Camera
+ vectors are not perpendicular. Making look_at the last statement may help.
+----------------------------------------------------------------------------
+Parser Statistics
+----------------------------------------------------------------------------
+Finite Objects:         1950
+Infinite Objects:          0
+Light Sources:             1
+Total:                  1951
+----------------------------------------------------------------------------
+Parser Time
+  Parse Time:       0 hours  0 minutes  0 seconds (0.016 seconds)
+              using 1 thread(s) with 0.014 CPU-seconds total
+  Bounding Time:    0 hours  0 minutes  0 seconds (0.001 seconds)
+              using 1 thread(s) with 0.000 CPU-seconds total
+----------------------------------------------------------------------------
+Render Options
+  Quality:  9
+  Bounding boxes.......On   Bounding threshold: 3
+  Antialiasing.........On  (Method 1, Threshold 0.200, Depth 3, Jitter 1.00,
+ Gamma 2.50)
+==== [Rendering...] ========================================================
+----------------------------------------------------------------------------
+Render Statistics
+Image Resolution 1016 x 1273
+----------------------------------------------------------------------------
+Pixels:          1374744   Samples:         1141722   Smpls/Pxl: 0.83
+Rays:            2516466   Saved:                 0   Max Level: 1/5
+----------------------------------------------------------------------------
+Ray->Shape Intersection          Tests       Succeeded  Percentage
+----------------------------------------------------------------------------
+Cone/Cylinder                 16856316         2098755     12.45
+CSG Intersection               8428158         1249460     14.82
+CSG Merge                      4214079         1196901     28.40
+Torus                         16856316         4734145     28.09
+Torus Bound                   16856316         5675954     33.67
+Bounding Box                  80969891        21900484     27.05
+----------------------------------------------------------------------------
+Roots tested:               5675954   eliminated:              1000990
+Shadow Ray Tests:           1130482   Succeeded:                 62036
+Shadow Cache Hits:            55937
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Render Time:
+  Photon Time:      No photons
+  Radiosity Time:   No radiosity
+  Trace Time:       0 hours  0 minutes  1 seconds (1.127 seconds)
+              using 2 thread(s) with 2.167 CPU-seconds total
+POV-Ray finished

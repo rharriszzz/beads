@@ -1924,3 +1924,14 @@ Normalized arclength and opposite-side single/double grouping expose gaps; they 
 insert positions. Exact native masks, archival preservation, synthetic identities,
 measurement replay and a minimal viewer support review. Zero flagged long gaps is not
 proof of100%physical-bead recall. Keep residual/marginal membership evidence explicit.
+
+## R276 — integrated physical/photographic reconstruction
+
+[Report](photo2/RECONSTRUCTION_R276.md) · [reproduction and26saved alternatives](photo2/review/r276/README.md).
+Reuse exact source surfaces, shared directional illumination and native ownership.
+Separate normal bending, physical-arclength-zero-integral strain and periodic twist;
+retain fixed length/material order/closure. Fit yellow then transfer to red/black;
+compare diffuse contamination, frozen correspondences, geographic holdouts and actual
+neighbor interpenetration. Do not optimize a favorable photometric score while hiding
+physical collisions, incomplete silhouettes or rematching. A contact-consistent lower-
+count alternative remains alongside more accurate but interpenetrating high-count fits.

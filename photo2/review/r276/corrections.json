@@ -1,0 +1,34 @@
+[
+  {
+    "problem": "No yellow calibration under absolute neutral-peak criterion",
+    "remedy": "Photo-only yellow desaturation relative to own interior",
+    "evidence": "neutral-only-observations-control.json",
+    "result": "175 train/37 heldout yellow; not proof of specularity"
+  },
+  {
+    "problem": "Inherited local material-speed variation about +/-11%",
+    "remedy": "Uniform physical arclength plus separately zero-integral strain",
+    "before": "initial.json",
+    "after": "uniform_refined.json"
+  },
+  {
+    "problem": "Pure specular fit improves yellow but worsens black",
+    "remedy": "One shared yellow diffuse mixture and half-weight black training reflections; same lamp",
+    "before": "uniform_refined.json",
+    "after": "mixed_joint.json"
+  },
+  {
+    "problem": "Literal high-count source placement interpenetrates",
+    "remedy": "Separate rope-radius/count/metric controls and contact-constrained follow-up",
+    "before": "initial-collisions.json",
+    "after": "contact_joint-full-profile-collisions.json",
+    "limitation": "Contact alternative loses photographic ownership; no accepted count"
+  },
+  {
+    "problem": "Frozen diagnostic erroneously equated generator indices across counts",
+    "remedy": "Same-count/hand reference with regression test",
+    "invalid": "contact_joint-fixed-correspondence.invalid-cross-count.json",
+    "corrected": "contact_joint-fixed-correspondence.json",
+    "impact": "Only diagnostic ledger; no optimization/photographic records affected"
+  }
+]

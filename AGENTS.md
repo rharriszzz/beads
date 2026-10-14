@@ -1,5 +1,21 @@
 # Beads photo-2 workflow
 
+R276 explicitly authorizes integrated3D reconstruction and shared lighting, superseding
+R275's geometry stop. See photo2/RECONSTRUCTION_R276.md.26saved models; literal source
+rounded annuli, one distant light, all-neighbor occlusion, fixed loop length and separate
+arclength-zero-net strain/normal bending/periodic twist. All810R275locations/807masks and
+4,166prior files unchanged. Yellow held-out RMS13.44→9.86px, but high-count fits still
+interpenetrate and black transfer regresses. N1950/h−1 contact-constrained alternative
+has zero sampled penetrations at16,384surface points/bead, yellow RMS11.25px and lower
+native support65.7%; not a certified count or full physical solution. Preserve both.
+38scientific tests and exact replay pass; stale ignored-user-review hash fixture remains
+separately reported, grazing rays remain unknown. Full silhouettes unavailable; interiors
+are positive evidence only. Heldouts exclude R276 updates, not historical warm starts;
+later corrections exploratory. No recovered string identities, no detection edits.
+Next resolve physical scale/contact versus photographic ownership; no automatic indexing.
+Keep current model/reasoning; no /new needed for review. Commit/push scoped R276 results.
+
+
 
 R275 supersedes the R274 next-step restriction: see photo2/CENTERLINE_INVENTORY_R275.md.
 Existing unregistered image-derived centerline selects a fixed12px band/26px point reach;

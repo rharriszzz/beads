@@ -1,0 +1,26 @@
+.../home/rharris/git/beads/photo2/test_reconstruct_r276.py:73: ResourceWarning: unclosed file <_io.TextIOWrapper name='photo2/review/r276/observations.json' mode='r' encoding='UTF-8'>
+  allrows=json.load(open('photo2/review/r276/observations.json'))['observations']
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..../home/rharris/git/beads/photo2/test_reconstruct_r276.py:76: ResourceWarning: unclosed file <_io.TextIOWrapper name='photo2/review/r275/inventory.json' mode='r' encoding='UTF-8'>
+  source=json.load(open('photo2/review/r275/inventory.json'));loc={r['id']:r for r in source['locations']};bead={r['id']:r for r in source['beads']}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/rharris/git/beads/photo2/test_reconstruct_r276.py:77: ResourceWarning: unclosed file <_io.TextIOWrapper name='photo2/review/r276/observations.json' mode='r' encoding='UTF-8'>
+  rows=json.load(open('photo2/review/r276/observations.json'))['observations'];self.assertEqual(len(rows),810)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.....................F....
+======================================================================
+FAIL: test_immutable_legacy_models_and_reviews (photo2.bead_debugger.test_refit.RefitTests.test_immutable_legacy_models_and_reviews)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/rharris/git/beads/photo2/bead_debugger/test_refit.py", line 60, in test_immutable_legacy_models_and_reviews
+    for p,h in d['files'].items():self.assertEqual(sha(ROOT/p),h,p)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '8c156b93f16a04d2a5fc5cfa2115ceac602e8f4380f3d3ae4acf59ef8c7c05ee' != '43bab31a55994cc3eeec4fa1194b3221780edab1bd1e4e984a04d93d9bead04f'
+- 8c156b93f16a04d2a5fc5cfa2115ceac602e8f4380f3d3ae4acf59ef8c7c05ee
++ 43bab31a55994cc3eeec4fa1194b3221780edab1bd1e4e984a04d93d9bead04f
+ : photo2/output/debugger/reviews/latest.json
+
+----------------------------------------------------------------------
+Ran 33 tests in 11.204s
+
+FAILED (failures=1)
