@@ -25,7 +25,7 @@
 - [x] Preserve previous R282/R283/R284A/R284B implementations/results; deliberate permanent-contract edit listed.
 - [x] Reproduction,74 tests, exact replay, native-crop/preservation audit and local Chromium review.
 - [x] Report recommendations and clear-material S failure; update plan/log/handoff/checkpoints.
-- [ ] Scoped commit/push and verified remote tip: complete only when delivery receipt records success.
+- [x] Scientific commit785969a pushed and remote verified; receipt in r285/results/delivery.json. Final receipt/presentation commit is verified at delivery.
 - [x] Stop for user review; no production adoption, Phase2 fitting or Phase3 search.
 
 Real-photo distinct-body precision/recall and full centerline completeness are not

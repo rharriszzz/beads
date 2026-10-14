@@ -29,8 +29,8 @@ def panel(o,name,caption=''):
         met=r['metrics'];info=r['method_evidence'];ax.set_title(f"{m}: {met['area']}px / shift {met['centroid_shift'] or 0:.1f}px\n"+('domain-sensitive' if info.get('domain_sensitive') else ''))
     for ax,m in zip(axs[1,1:],methods):
         r=o['variants'][m];mask=local_mask(r['measured_support'],origin,lum.shape);ax.imshow(im,interpolation='nearest');rgba=np.zeros((*mask.shape,4));rgba[mask]=[0,1,1,.5];ax.imshow(rgba,interpolation='nearest');ax.set_title('Exact native support')
-    for ax in axs.flat:ax.set_xlim(12,84);ax.set_ylim(84,12)
-    fig.suptitle(name+' / '+o['color']+' — '+caption);fig.tight_layout();fig.savefig(REVIEW/(name+'-methods.png'),dpi=120);plt.close(fig)
+    for ax in axs.flat:ax.set_xlim(-.5,96.5);ax.set_ylim(96.5,-.5)
+    fig.suptitle(name+' / '+o['color']+' — '+caption);fig.tight_layout();fig.subplots_adjust(hspace=.25,top=.84,bottom=.03);fig.savefig(REVIEW/(name+'-methods.png'),dpi=120);plt.close(fig)
     fig,axs=plt.subplots(1,3,figsize=(12,3.5))
     axs[0].imshow(im,interpolation='nearest');axs[0].axhline(48,color='white');axs[0].axvline(48,color='yellow');axs[0].set_title('Native horizontal / vertical routes')
     for ax,signal,label in [(axs[1],lum[48,:],'Horizontal'),(axs[2],lum[:,48],'Vertical')]:

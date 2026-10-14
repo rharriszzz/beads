@@ -8368,3 +8368,6 @@ recorded in photo2/r285/results/delivery.json when complete. STOP for method cho
 no Phase2/3, no manual labeling. Keep current model/reasoning; no /new needed.
 
 Recommendations are review choices, not adopted production methods. Clear-yellow v04 failure remains prominent; user edge/shadow exception does not excuse it.
+
+## R285 delivery verification
+Scientific commit785969a875656af4f88c958629e2eacb4e22b250 pushed to origin/photo-2-strategy-v3; git ls-remote matched exactly. Final receipt also records the presentation audit: expanded detailed panels show the complete97px computation window; central choice panels remain zoomed. No algorithm, inventory, or later-phase changes. Stop for user selection.

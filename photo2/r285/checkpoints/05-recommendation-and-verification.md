@@ -19,3 +19,8 @@ permanent-contract exception. All failed experiments and confirmation data remai
 Next: scoped commit/push, verify remote, then stop for user choice. Only after the
 user chooses may a new bounded integration/validation task begin. Keep current
 model/reasoning; no /new needed. Delivery receipt will record actual commit/remote.
+
+Final presentation audit: expanded all-method panels now show the entire97px
+computation window, including leaking/window-contact pixels. The small J/S choice
+panels intentionally zoom the central73px; unmodified97px native crops are linked.
+This changes presentation only, not measured supports or numerical results.
