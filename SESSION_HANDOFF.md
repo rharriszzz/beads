@@ -1,5 +1,29 @@
 # Beads session handoff — new branch
 
+## Current R283 — photographic ownership, two-sided coverage and local failure tests
+
+[Report](photo2/R283_REPORT.md), [checklist](photo2/R283_CHECKLIST.md),
+[review](photo2/review/r283/index.html), [reproduce](photo2/r283/README.md).
+All1092 native C measurements retained:561high/30medium/484unresolved/17rejected,
+137high black. Symmetric shared-material and dark-envelope alternatives; no blind
+merge. Fresh16 certified synthetic scenes:148/151 distinct pure supports,148/389
+recall versus165/184 and165/389 baseline; duplicates2→0, mixed supports17→3.
+Real precision uncalibrated.323 high support-near observations counted once,
+169crossing/80negative/74positive,24flanking pairs. Eight old sector maxima all
+retain unresolved evidence; no missing-bead or curve-defect diagnosis.
+Frozen Phase1 → two automatic local regions, both hands/shared pose and light.
+Development best3/4 withheld,34° yellow light disagreement; fixed-method second
+region2/4,61°. Excess predicted paper and failed alternatives retained; no identity
+or hand accepted. Three failed passes preserved, final finite-bank guard explicit.
+Full three-phase regression:10 certified global alternatives,8280 conditional
+records,2085 unchanged links; identity uncertainty propagated, no accepted pattern.
+28 review panels include original pixels and detailed bottom captions/symbol keys.
+Next only on request: training-only exterior/material support constraints for the
+unsupported fourth bead and excess paper prediction, then another held-out patch.
+Stop after scoped commit/push and remote verification. Keep current model/reasoning;
+no /new needed. Persistent narrow Chromium launcher permission remains unchanged.
+
+
 ## R283 — persistent local visual review permission
 
 Installed `/home/rharris/.local/bin/beads-chromium-review`; invoke directly with one

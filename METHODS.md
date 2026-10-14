@@ -2000,3 +2000,14 @@ target-absent control: previously occluded bodies can falsely support the missin
 target. Preserve Phase1 independently. R280 adds three easy held-out recoveries
 but fails2/8removed-body negatives; no growth readiness.
 [Methods, thresholds, quantitative results and limits](photo2/R280_PHASE2.md).
+
+## R283 — symmetric photographic ownership and two-sided support accounting
+
+See [report](photo2/R283_REPORT.md), [code/reproduction](photo2/r283/README.md) and
+[requirements](photo2/R283_CHECKLIST.md). Symmetric native overlap graph, black
+reflection/dark-envelope alternatives and fresh certified POV evaluation; signed
+support extent/local interior scale with each observation counted once. Frozen
+photo-only anchors precede cold shared-pose, exact ownership, common-light and
+withheld-support tests. Separate fixed-method photographic confirmation region.
+Global three-phase regression retains unknowns and explicit identity weight limits.
+All failed runs, exact masks and original-photo review captions remain available.

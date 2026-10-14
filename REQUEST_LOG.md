@@ -8207,3 +8207,48 @@ launcher source, setup/limits and validation; future-use instruction added to AG
 Official rules docs require restart after manual edits; future same-config sessions
 load rule, managed restrictions can override. Scoped commit/push and verification follow.
 Stop after configuration; no scientific phase resumed. Keep model/reasoning; no/new.
+
+## R283 — scientific ownership, two-sided coverage and local correspondence request
+
+User authorizes isolated R283 development on photo-2-strategy-v3: audit distinct
+photographic ownership with independent valid synthetic truth, replace station
+proximity by support-aware two-sided centerline accounting, explain eight R282
+panels automatically, freeze Phase1, fit/predict local physical configurations and
+common light, then exercise uncertainty-aware integrated three-phase regression.
+Preserve all alternatives/failures/R282, exact repeat rule and maker period rule.
+No more manual identification or visual-review questions. User prefers C for
+black K-0603-1624 and red C-0565-1588; yellow C-0603-1587 B/C both good, slight C
+preference. These are qualitative preferences, not identity truth. Add substantial
+bottom captions explaining all image overlay symbols and the scientific problem.
+Preflight: daisy, clean synchronized branch, no stashes; fetch completed. Checklist
+written before implementation in photo2/R283_CHECKLIST.md. Current request
+supersedes the earlier scientific stopping point; launcher permission unchanged.
+
+### R283 scientific actual outcome
+
+Preserved1092 native C IDs/supports/centroids/colors; revised561high/30medium/
+484unresolved/17rejected,137high black. All Phase1 importance high. Symmetric
+ownership conflicts and black broad-dark alternatives retain uncertainty rather
+than merging by color/proximity. User C preferences and yellow B control recorded.
+Fresh16 certified POV scenes:151high,148distinct-pure,3mixed supports,0duplicates;
+baseline184high,165distinct-pure,17mixed,2duplicates. Recall148/389 versus165/389;
+real precision remains uncalibrated. Inspected first16 scenes clearly development.
+323high support-near observations counted once:169crossing/80negative/74positive,
+24candidate flanking pairs. Eight old sector maxima retain unresolved evidence;
+nearest support16.0–23.2px, not proof of missing beads or curve defects.
+Frozen Phase1 feeds two automatic local regions, both hands/shared pose/one light.
+Development positivehand3/4 withheld compatible,34.2° yellow error; fixed-method
+second region2/4,60.7°. No solved correspondence; excess paper prediction retained.
+Three failed passes retained. Final129-bead bank matches161-bank native crop rays;
+fixing finite model ends leaves withheld scores unchanged. Eight POV identity maps
+match492626resolved rays;174unknown,0resolved disagreements. Global regression
+10certified fits/8280records/2085exact Phase1 links; uncertainty cap and uncapped
+control, full-repeat divisors, unknown strict evidence, no accepted pattern.
+16new+17old tests,217exact replay outputs,9087unchanged pre-round files and28browser
+panels pass. PNG render timestamps differ; container hashes checked within each
+run and native rasters compared exactly. Detailed bottom captions explain symbols,
+measured interiors versus predicted boundaries, problem and limitations. No more
+user visual judgments requested. Report/checklist/plan/handoff/methods updated.
+Next only on request: training-only support/exterior constraints for the failed
+fourth bead and excess paper, then another independent automatic patch. Commit/push
+scoped R283 and verify remote, then stop. Keep model/reasoning; no /new needed.

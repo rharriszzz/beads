@@ -1,5 +1,16 @@
 # Beads photo-2 workflow
 
+R283 scientific round supersedes the R282 stopping point; see photo2/R283_REPORT.md
+and photo2/R283_CHECKLIST.md. Preserve1092 native C records:561high/30medium/
+484unresolved/17rejected,137high black. Fresh synthetic148/151distinct-pure,
+148/389recall; real precision uncalibrated.323high support-near IDs counted once,
+169crossing/80negative/74positive,24flanking pairs; eight old gap regions unresolved.
+Two local regions:3/4 then2/4 withheld compatible,34° then61° yellow light mismatch;
+no accepted identity/hand. Ten global fits/8280records, uncertain Phase3, no pattern.
+Three failed passes retained. No further manual review requested. Next only when
+requested: training-only exterior/material constraints for failed local prediction,
+then another automatic patch. Stop after R283delivery; keep model/reasoning, no/new.
+
 R283 persistent Chromium review permission: use the direct absolute command
 `/home/rharris/.local/bin/beads-chromium-review photo2.rNNN.browser_check` for local
 visual review checks, including future rounds. Exactly one existing browser_check
