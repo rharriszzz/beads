@@ -8297,3 +8297,37 @@ black components for user choice, not a tested/adopted hybrid. No manual-label r
 Next only after choice: freeze selected rule and test additional automatically chosen
 crossing/two-sided crops plus same-body cue controls before full adoption. Scoped
 commit/push and remote verification conclude this step. Keep model/reasoning; no/new.
+
+## R284B request — accurate photographic supports and reflection-only black measurements
+
+Complete user requirements preserved before algorithm edits in photo2/R284B_SPECIFICATION.md.
+Permanent contract photo2/PHASE1_MEASUREMENTS.md supersedes old black dark-collar/body
+measurement designs without modifying old results. User prefers A in two-sided case
+but lower-left tails remain on1yellow/2red; retain3rightyellow. Black R283/A preferred,
+not C: upper reflection good, lower secondary preserved, ownership unknown; compare
+right red. Bad magenta: B smoothest, all brightness following poor; no approval of
+B's splitting. Explain old algorithm in300–500words before replacements. Compare
+≥2 new tail methods,≥3 reflection contours,≥3 genuinely different brightness-aware
+methods and additional automatically selected red/yellow/black/samecolor/crossing/
+flanking/strongweak cases. Native pixels and subpixel contours separate; no speculative
+dark material. Preserve schema/reliabilities/provenance/uncertainty and all prior work.
+Six scientific checkpoints required; no context-driven simplification or /new.
+Commit/push scoped package, verify remote, stop for choice; no manual bead labels.
+Preflight clean73021c2 on requested branch/daisy; no stashes, fetched origin,0/0.
+
+
+### R284B outcome — isolated photographic measurement comparison
+
+Completed full preserved specification, permanent reflection-only contract,
+452-word pre-replacement explanation, six checkpoints and ten real-photo cases.
+249 unique frozen image cues; A/T/E/W/L/I/J colored and R283/A/R1–R4 reflection
+alternatives, exact native masks/intensities, separate subpixel curves and review
+profiles. T removes reviewed tails45/46px with0.74/0.52px shifts. R1 improves
+isolated reflections but merges auto-weak with a brighter neighbor; R4 separates
+the features, keeping reviewed upper/lower41/25px. J improves picture3 but fails
+red interiors/oversized leakage. All failures and original algorithms preserved.
+59tests,15exact replayfiles,9916oldblobs,10native crops,36browserimages/16tables
+pass. First replay caught pair-list ordering only; canonical sorting repaired it.
+Recommend T and R4 direction with R1 reference; no production adoption or
+Phase2/3 tuning. Prepare scoped commit/push, verify remote, stop for method choice.
+No manual labeling request. Current model/reasoning unchanged; no /new needed.

@@ -1,0 +1,181 @@
+"""R284B experimental photographic measurements, never physical bead outlines.
+
+Inputs: native image-derived features, an image-only cue, and preserved Method A
+support. No review locations, physical identities, or pattern inputs. Black output
+is a specular-reflection region; smooth subpixel curves are separate measurements.
+"""
+import heapq
+import numpy as np
+from scipy import ndimage as ndi
+from scipy.spatial import cKDTree
+from skimage.morphology import disk, h_maxima
+from skimage.segmentation import watershed, morphological_geodesic_active_contour, active_contour
+from skimage.filters import threshold_otsu
+from skimage.measure import find_contours
+from skimage.draw import polygon2mask
+from photo2.r282.phase1 import component
+
+PARAMETERS = dict(window=49, gaussian_sigma=.65, tail_opening_fraction=.70,
+    barrier_rise_fraction=.07, color_floor_fraction=.10, watershed_prominence=.09,
+    levelset_iterations=28, levelset_smoothing=1, reflection_fraction=.16,
+    reflection_native_floor=.08, snake_alpha=.025, snake_beta=.25,
+    snake_max_iterations=180, snake_max_departure=2.5,
+    reflection_basin_prominence_fraction=.10, reflection_basin_prominence_floor=.003,
+    colored_domain_radius=18, wide_isophote_control_radius=24,
+    semantics='Experimental photographic features, uncalibrated ownership; no adoption')
+COLOR_METHODS=('A','T','E','W','L','I','J')
+BLACK_METHODS=('R283','A','R1','R2','R3','R4')
+
+def connected(mask,seed):
+    return component(mask,seed)
+
+def contour(mask):
+    curves=find_contours(np.pad(mask.astype(float),1),.5)
+    return max(curves,key=len)[:,::-1]-1 if curves else np.empty((0,2))
+
+def isocontour(field,level,seed):
+    region=connected(field>=level,seed)
+    curves=find_contours(np.pad(field,1,constant_values=0),level)
+    curves=[c[:,::-1]-1 for c in curves if len(c)>4]
+    if not region.any():return np.empty((0,2))
+    target=contour(region)
+    return min(curves,key=lambda c:cKDTree(c).query(target)[0].mean()) if curves else target
+
+def nearest_peak(lum,seed,radius=4):
+    yy,xx=np.indices(lum.shape);m=(xx-seed[0])**2+(yy-seed[1])**2<=radius**2
+    j=np.argmax(np.where(m,lum,-np.inf));y,x=np.unravel_index(j,lum.shape)
+    return [int(x),int(y)]
+
+def grow_barrier(field,domain,seed,allowance):
+    """Connected flood carries the highest surviving path minimum.
+
+    A renewed brightness rise larger than allowance stops a path. Alternative
+    connected routes can survive; unlike radial stopping, rays do not cut wedges.
+    """
+    seed=np.asarray(seed,int);x,y=seed
+    if not domain[y,x]:return np.zeros_like(domain)
+    best=np.full(field.shape,-np.inf);best[y,x]=field[y,x];queue=[(-best[y,x],y,x)]
+    while queue:
+        neg,y,x=heapq.heappop(queue);low=-neg
+        if low<best[y,x]:continue
+        for dy,dx in ((0,1),(0,-1),(1,0),(-1,0)):
+            ny,nx=y+dy,x+dx
+            if not(0<=ny<field.shape[0] and 0<=nx<field.shape[1]) or not domain[ny,nx]:continue
+            value=field[ny,nx]
+            if value>low+allowance:continue
+            new=min(low,value)
+            if new>best[ny,nx]:best[ny,nx]=new;heapq.heappush(queue,(-new,ny,nx))
+    return np.isfinite(best)
+
+def colored(lum,domain,initial,seed=(24,24),variant='E'):
+    smooth=ndi.gaussian_filter(lum,PARAMETERS['gaussian_sigma']);peak=nearest_peak(smooth,seed)
+    p=float(smooth[peak[1],peak[0]]);meta=dict(peak=peak,peak_Y=float(lum[peak[1],peak[0]]))
+    # Pass 2 uses the full photographic material domain: pass 1's two-pixel
+    # A expansion inherited a clipped lower edge. Search-edge contacts remain
+    # explicit uncertainty, not evidence of a full bead silhouette.
+    envelope=domain.copy()
+    if variant=='A':m=initial.copy()
+    elif variant=='T':
+        radius=max(1,int(round(ndi.distance_transform_edt(initial).max()*.70)))
+        m=connected(ndi.binary_opening(initial,structure=disk(radius)),seed);meta['opening_radius']=radius
+    elif variant=='E':
+        allowed=envelope&(smooth>=max(.012,.10*p))
+        m=grow_barrier(smooth,allowed,peak,.07*p)
+        m=connected(ndi.binary_opening(m,structure=disk(1)),peak)
+    elif variant=='W':
+        markers,n=ndi.label(h_maxima(smooth,max(.008,.09*p))&envelope)
+        if not markers[peak[1],peak[0]]:n+=1;markers[peak[1],peak[0]]=n
+        target=int(markers[peak[1],peak[0]])
+        labels=watershed(-smooth,markers,mask=envelope,watershed_line=True)
+        m=connected(labels==target,peak)
+        meta['competing_feature_markers']=int(n)
+        meta['possible_false_partition']=bool(n>1)
+    elif variant=='L':
+        gy,gx=np.gradient(smooth);g=1/(1+80*np.hypot(gx,gy)/max(p,.02))
+        g[~envelope]=0
+        init=ndi.binary_erosion(initial,iterations=1)
+        m=morphological_geodesic_active_contour(g,28,init_level_set=init,smoothing=1,threshold=.22,balloon=1)>0
+        m=connected(m&envelope,seed)
+    elif variant in ('I','J'):
+        ring=ndi.binary_dilation(initial,iterations=3)&~initial
+        bg=float(np.quantile(smooth[ring],.20)) if ring.any() else 0.
+        level=max(.012,bg+.18*max(0,p-bg));meta['level']=level
+        m=connected(envelope&(smooth>=level),peak)
+    else:raise ValueError(variant)
+    yy,xx=np.indices(m.shape)
+    meta['search_radius_contact_pixels']=int((m&(np.hypot(xx-24,yy-24)>=(23.5 if variant=='J' else 17.5))).sum())
+    meta['envelope_contact_pixels']=int((m&~ndi.binary_erosion(envelope)).sum())
+    return m,contour(m),meta
+
+def reflection(lum,eligible,initial,seed=(24,24),variant='R1',sigma=.65,level_delta=0.):
+    """Native intensity support + independent subpixel boundary. No dark dilation.
+
+    eligible excludes learned paper/strong pigment. Search envelope constrains
+    feature locality, not a physical body. R1/R2 retain native threshold pixels;
+    R3 rasterizes a gradient-driven contour then requires native positive contrast.
+    """
+    peak=nearest_peak(lum,seed);x,y=peak;p=float(lum[y,x]);yy,xx=np.indices(lum.shape)
+    vicinity=((xx-x)**2+(yy-y)**2<=11**2)&eligible
+    ring=((xx-x)**2+(yy-y)**2>=7**2)&vicinity
+    bg=float(np.quantile(lum[ring],.25)) if ring.any() else 0.
+    smooth=ndi.gaussian_filter(lum,sigma);sp=float(smooth[y,x])
+    level=bg+(.16+level_delta)*max(0,sp-bg)
+    if variant=='R2':
+        values=smooth[vicinity&ndi.binary_dilation(initial,iterations=2)]
+        level=max(level,float(threshold_otsu(values))) if len(values)>1 else level
+    basin=vicinity.copy();competition={}
+    if variant=='R4':
+        markers,n=ndi.label(h_maxima(smooth,max(.003,.10*sp))&vicinity)
+        positions=np.argwhere(markers>0)
+        if len(positions):
+            near=positions[np.argmin(np.sum((positions-[y,x])**2,axis=1))]
+            target=int(markers[tuple(near)]) if np.linalg.norm(near-[y,x])<=3 else 0
+        else:target=0
+        if not target:n+=1;markers[y,x]=n;target=n
+        labels=watershed(-smooth,markers,mask=vicinity,watershed_line=True)
+        basin=labels==target
+        competition=dict(reflection_markers=int(n),competing_highlights=bool(n>1),
+            interpretation='Intensity basins separate photographic features, never physical bead identities.')
+    curve=isocontour(np.where(basin,smooth,0),level,peak)
+    native_level=bg+(.16+level_delta)*max(0,p-bg) if variant in ('R1','R4') else level
+    mask=connected(basin&(lum>=native_level),peak)
+    meta=dict(peak=peak,peak_Y=p,peak_material_eligible=bool(eligible[y,x]),background_Y=bg,level=level,native_level=native_level,sigma=sigma,**competition)
+    meta['brighter_neighbor_in_support']=bool(mask.any() and lum[mask].max()>1.5*p)
+    meta['basin_boundary_contact']=int((mask&~ndi.binary_erosion(basin)).sum()) if variant=='R4' else None
+    if variant=='R3' and len(curve)>=8:
+        # Even arc-length sampling makes the regularizer independent of the
+        # marching-squares point density. Initialization is an image isophote.
+        dist=np.r_[0,np.cumsum(np.linalg.norm(np.diff(curve,axis=0),axis=1))]
+        t=np.linspace(0,dist[-1],64,endpoint=False)
+        start=np.c_[np.interp(t,dist,curve[:,0]),np.interp(t,dist,curve[:,1])]
+        snake=active_contour(smooth/max(sp,.001),start[:,::-1],alpha=.025,beta=.25,
+            w_line=0,w_edge=1,gamma=.03,max_px_move=.25,max_num_iter=180,convergence=.02)[:,::-1]
+        displacement=float(cKDTree(start).query(snake)[0].max());meta['snake_max_departure']=displacement
+        meta['snake_guard_rejected']=displacement>2.5
+        if displacement<=2.5:curve=snake
+        mask=connected(polygon2mask(lum.shape,curve[:,::-1])&vicinity&(lum>=bg+.08*(p-bg)),peak)
+        meta['native_level']=bg+.08*(p-bg)
+    meta['brighter_neighbor_in_support']=bool(mask.any() and lum[mask].max()>1.5*p)
+    return mask,curve,meta
+
+def metrics(mask,curve,lum,initial,seed):
+    y,x=np.where(mask);yy,xx=np.where(initial);edge=mask&~ndi.binary_erosion(mask)
+    s=ndi.gaussian_filter(lum,.65);gy,gx=np.gradient(s);grad=np.hypot(gx,gy)
+    perimeter=float(np.linalg.norm(np.diff(np.vstack([curve,curve[:1]]),axis=0),axis=1).sum()) if len(curve) else 0.
+    centroid=[float(x.mean()),float(y.mean())] if len(x) else None
+    old=[float(xx.mean()),float(yy.mean())] if len(xx) else None
+    if len(curve)>5:
+        d=np.r_[0,np.cumsum(np.linalg.norm(np.diff(np.vstack([curve,curve[:1]]),axis=0),axis=1))]
+        c=np.vstack([curve,curve[:1]]);t=np.linspace(0,d[-1],100,endpoint=False)
+        c=np.c_[np.interp(t,d,c[:,0]),np.interp(t,d,c[:,1])]
+        v=np.roll(c,-1,axis=0)-c;ang=np.arctan2(v[:,1],v[:,0]);turn=np.angle(np.exp(1j*(np.roll(ang,-1)-ang)))
+        rough=float(np.mean(turn**2))
+    else:rough=None
+    return dict(area=int(mask.sum()),removed=int((initial&~mask).sum()),added=int((mask&~initial).sum()),
+        retained_fraction=float((mask&initial).sum()/max(1,initial.sum())),centroid=centroid,
+        centroid_shift=float(np.linalg.norm(np.array(centroid)-old)) if centroid and old else None,
+        components=int(ndi.label(mask)[1]),thin_fraction=float((mask&~ndi.binary_opening(mask,structure=disk(2))).sum()/max(1,mask.sum())),
+        perimeter=perimeter,compactness=float(4*np.pi*mask.sum()/max(1,perimeter**2)),turn_energy=rough,
+        boundary_gradient=float(grad[edge].mean()) if edge.any() else None,
+        Y_quantiles=np.quantile(lum[mask],[.1,.5,.9]).tolist() if mask.any() else [],
+        intensity_integral=float(lum[mask].sum()),seed_preserved=bool(mask[int(seed[1]),int(seed[0])]))

@@ -1,5 +1,15 @@
 # Beads photo-2 workflow
 
+R284B completed comparison supersedes R284A's black recommendation. See
+photo2/R284B_REPORT.md, photo2/R284B_SPECIFICATION.md and photo2/r284b/checkpoints.
+Permanent Phase1 black support is specular-reflection region only: no dark-body
+collar/silhouette or physical center. Phase2 owns correspondence/light; Phase3
+owns pattern. Ten crops/249 frozen cues, all experimental/unrated. T tail repair
+preferred; R4 reflection competition with R1 reference; J local yellow improvement
+but red failures.59tests/15exact replayfiles/9916oldblobs/36browserimages pass.
+R283/R284A and production unchanged. Stop after scoped push/remote verification
+for user method choice; no global adoption, manual labels, Phase2/3 tuning or/new.
+
 R284A supersedes R283's next task; see photo2/R284A_REPORT.md and checklist.
 Phase1 method comparison only, eight real crops; no full inventory adoption.
 A thickness pruning repairs named colored outlines; C black reflection/collar links

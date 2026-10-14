@@ -2024,3 +2024,18 @@ Compare original-cue controls so increased candidate count is not mislabeled rec
 Exclusive pixels do not prove distinct bodies; compact masks do not prove ownership.
 Prefer A colored repairs and C black component for further choice; C colored paths
 and B's over-segmentation failures remain visible. No method globally adopted.
+
+
+## R284B — photographic boundary and specular-feature measurement
+
+[Permanent contract](photo2/PHASE1_MEASUREMENTS.md), [report](photo2/R284B_REPORT.md),
+[code/reproduction](photo2/r284b/README.md), [review](photo2/review/r284b/index.html).
+Native thickness opening, path-minimum brightness growth, prominence watershed,
+gradient level set and local isophote comparisons; separate domain ablation.
+Black: smoothed/adaptive isophotes, gradient snake, competing reflection basins,
+with independent native intensity masks and subpixel contours. Preserve secondary
+features, physical ownership uncertainty, peak eligibility, native profiles and
+perturbation stability. Wider contours can leak; smoother contours can truncate.
+Never infer a dark body from a highlight or equate support crossing with complete
+centerline recovery. Fourteen new scientific contracts plus historical regression;
+all failed comparisons preserved. No production adoption before user selection.

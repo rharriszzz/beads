@@ -1,5 +1,30 @@
 # Photo-2 reconstruction plan
 
+## R284B completed experiment — STOP for method selection
+
+[Report](photo2/R284B_REPORT.md), [visual comparison](photo2/review/r284b/index.html),
+[complete requirements](photo2/R284B_SPECIFICATION.md), [checkpoints](photo2/r284b/checkpoints),
+[reproduction](photo2/r284b/README.md). Permanent black contract:
+**Phase1 measures specular reflections only, never dark collars or full bodies**;
+see [PHASE1_MEASUREMENTS.md](photo2/PHASE1_MEASUREMENTS.md). Phase2 owns physical
+correspondence/common light; Phase3 owns pattern. Neither alters independent P1.
+
+Ten crops/249 unique frozen cues (130red/73yellow/46black), all unrated and high
+importance. A plus T/E/W/L/I/J colored alternatives; R283/A plus R1–R4 reflection
+alternatives. T removes reviewed tails45/46px, shifts0.74/0.52px, retains all three.
+R1 gives faithful isolated reflection contours but merges a weak/bright pair;
+R4 separates that pair and keeps reviewed upper/lower masks41/25px. R4 has basin
+clipping/sensitivity and one empty output. J improves wandering yellow support
+355→405px but truncates red material and gives23 oversized red proposals.
+Recommend T and the R4 reflection direction with R1 reference; J is a local clue,
+not a general replacement. No method adopted. No certified crossing completeness,
+physical identities or black-body crossing. R283/R284A and Phase2/3 unchanged.
+59tests/15exact replays/9916old blobs/10native crops/36browser images/16tables pass.
+Failed first domain pass, selector control, snake failures and weak mergers retained.
+Next ONLY after user choice: explicit ownership/clipping/merge uncertainty and new
+automatic crossing/missing-cue validation. Commit/push scoped delivery and verify
+remote; then stop. Keep current model/reasoning; no /new or manual labels.
+
 ## R284A — Phase 1 method choice; stop before adoption
 
 [Report](photo2/R284A_REPORT.md), [comparison viewer](photo2/review/r284a/index.html),
