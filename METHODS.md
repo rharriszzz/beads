@@ -1,5 +1,13 @@
 # Methods collection — bead-rope reconstruction
 
+- **R282 integrated photograph → physical inventory → weighted repeat framework:**
+  [specification](photo2/R282_SPECIFICATION.md), [traceability](photo2/R282_CHECKLIST.md),
+  [report](photo2/R282_INTEGRATED.md), [reproduction](photo2/r282/README.md).
+  Separate compact colored interiors and dark-collar black measurements; cold equal-budget
+  count/hand fits with exact visibility and measured-support color intersections;
+  divisor-constrained uncertainty-preserving pattern candidates. Complete first pass
+  precedes repairs; all failures retained. Physical/pattern conclusions remain unresolved.
+
 ## R281 — counterfactual bead presence with independent follow-up
 
 [Report](photo2/R281_PRESENCE.md), [review](photo2/review/r281/index.html),

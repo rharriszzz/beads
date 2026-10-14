@@ -8151,3 +8151,41 @@ plan/handoff/methods/AGENTS. Scoped commit/push and remote verification follow.
 Next only when requested: anchored correspondence and incorrect-neighbor/phase
 ownership, with camera/material uncertainty, before any one-neighbor growth.
 Keep current model/reasoning; no /new needed. Stop after R281 delivery.
+
+## R282 — integrated three-phase pipeline (request and pre-implementation specification)
+
+User authorizes the full photograph-only identification -> anchored physical model
+(count/hand/visibility/image-derived colors) -> weighted repeating-pattern pipeline.
+All three phases must exist and be tested before iterative answer-improving repairs.
+Highest priority: real-photo Phase1 quality, centerline coverage, compact supports,
+several retained yellow/black/red repair alternatives, separate black-body logic,
+and explicit high/medium/unresolved/rejected reliability. Shared per-bead schema
+must retain measurement/origin/identity/color/visibility provenance across phases.
+Phase2 fits reliable observations and retains count/hand/pose alternatives; Phase3
+weights uncertainty and obeys supplied >3complete repeats/no partial repeat rule.
+No manual bead-label request; do not center absent/wrong-identity synthetic worlds.
+Deliver all inventories, tests, static pictures/review, report, traceability checklist,
+scoped commit/push. This supersedes R281's geometry/indexing/pattern stop for R282.
+Preflight daisy, clean e6a6d4c on photo-2-strategy-v3, no stashes; fetched upstream.
+Complete requirements saved BEFORE implementation in photo2/R282_SPECIFICATION.md;
+requirement checklist photo2/R282_CHECKLIST.md. Keep current model/reasoning, no/new.
+
+### R282 actual outcome — all phases implemented and tested
+
+Completed initial full pipeline before tuning; archived first/second outputs and source.
+Repaired photograph-only palette/colored support and distinct black dark-collar logic.
+1092starts:692high/31medium/352unresolved/17rejected,140high black.96.39% station
+proximity is not completeness/precision. Six A/B/C real-photo comparisons include
+recent yellow/black review areas and red. Ten count/hand fits, nine physical certificates,
+four complete8500-record inventories;2519 measured links unchanged. Improved actual-RGB
+sampling within measured/predicted intersections, no pattern-colored Phase2 records.
+Poor physical/support/light agreement retained; no count/hand/identity accepted.
+Weighted Phase3 leaders150/115/75/115, strict evidence changes rankings; unknowns,
+conflicts and all alternatives remain, >3whole-repeat rule enforced, no accepted pattern.
+17scientific tests,37-file independent exact replay,112period audit cases,22rendered
+browser panels, two independent POV/Python native crops and8916historical hashes pass.
+One resolved boundary mismatch/163unknown rays remain explicit. Static review/report,
+full requirement checklist and reproduction saved; plan/handoff/methods/AGENTS updated.
+Scoped commit/push and remote verification follow. Next only requested easy-central
+Phase1 ownership/duplicate/gap audit before local Phase2 camera/light correspondence.
+Keep current model/reasoning; no/new. Stop after R282 delivery.

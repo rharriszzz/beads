@@ -1,5 +1,25 @@
 # Beads session handoff — new branch
 
+## Current R282 — complete integrated three-phase framework
+
+[Specification](photo2/R282_SPECIFICATION.md), [checklist](photo2/R282_CHECKLIST.md),
+[report](photo2/R282_INTEGRATED.md), [review](photo2/review/r282/index.html).
+All three phases ran before quality repairs. First/second failed runs preserved.
+Photo-only Phase1:1092 candidates,692 high/31 medium/352 unresolved/17 rejected;
+140 high black. Named yellow bridge repaired with compact374px interior; black100px
+reflection+dark collar replaces wandering support.96.39% centerline-station proximity
+is not completeness or verified precision. Six real-photo A/B/C comparisons.
+Ten cold count/hand physical fits; nine collision certificates, four full inventories
+(8500 conditional records). Fits/light remain weak; no unique count/hand/identity.
+Image-derived color remeasurement preserves2519 Phase1 links. Weighted complete-repeat
+search enforces N%L=0,N/L>=4; leaders150/115/75/115 unstable under strict evidence,
+no accepted pattern. No upstream contamination.17 tests,37-file exact full replay,
+112 period audits,22 browser panels, two POV/Python crops and8916 old hashes pass;
+one numerical boundary mismatch and163 unknown rays explicitly retained.
+Next only when requested: easy-central Phase1 ownership/duplicates and retained gaps,
+then local Phase2 correspondence/camera/light; no score-driven pattern expansion.
+Keep current model/reasoning; no /new needed. Stop after scoped R282 commit/push.
+
 ## Current R281 — presence verification, fresh confirmation and real pilot
 
 [Report](photo2/R281_PRESENCE.md) · [layered review](photo2/review/r281/index.html) ·

@@ -1,5 +1,18 @@
 # Beads photo-2 workflow
 
+R282 supersedes the prior stop; full three-phase framework delivered. See
+photo2/R282_SPECIFICATION.md, photo2/R282_CHECKLIST.md, photo2/R282_INTEGRATED.md.
+1092 photo candidates:692high/31medium/352unresolved/17rejected;140high black.
+Compact colored interiors and separate reflection+dark-collar black logic; six A/B/C
+photo comparisons.96.39% centerline proximity is not completeness/verified precision.
+Ten cold count/hand fits, nine collision certificates, four8500-record alternatives.
+Poor physical/light agreement; no resolved count/hand/identity. Pattern divisors obey
+>3full repeats/no partial; leading150/115/75/115 unstable, no accepted pattern.
+First/second full runs and failures retained.17tests/37exact replayfiles/22browserpanels/
+8916oldhashes pass. Next easy-central Phase1 ownership/duplicates/gaps, then local
+Phase2 correspondence/camera/light. Stop after R282; no automatic phase or tuning.
+Keep current model/reasoning; no /new needed.
+
 R281 supersedes the next task; see photo2/R281_PRESENCE.md and review/r281.
 Recovered after reboot; frozen H1/H0 detector and all prior evidence preserved.
 Original held-out combined38/59present,0/59absent; material42/59,0/59. Additional
