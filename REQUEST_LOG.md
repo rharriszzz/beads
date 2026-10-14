@@ -8024,3 +8024,58 @@ beads.pov, all prior observations/results and shared code unchanged. No globalfi
 patternsearch or20–50beadgrowth. Next isolate distinct-body/representative failures
 and establish compatible construction dimensions before renewed blind prediction.
 Keep current model/reasoning, no /new. Scoped commit/push and remote verification follow.
+
+## R280 — geometry-assisted Phase 2 detector (request)
+
+User authorizes an isolated photo2/r280 implementation, physically nonintersecting
+literal-annulus POV benchmarks, independent frozen Phase1, three competing
+photographic methods, A1–A5 including adversarial predictions, development/held-out
+threshold discipline, quantitative ownership/precision/recall/localization,
+review viewer, source preservation, tests, documentation, scoped commit/push.
+No manual neighbor/pose/chart inputs, global fitting, indexing, pattern or growth.
+Routine investigation authorized; no necklace-labeling questions. Preflight: daisy,
+clean f340f08 on photo-2-strategy-v3, no stashes, fetched upstream 0/0. Methods:
+local features; visible-surface boundary/interior matching; joint ownership.
+Protocol: photo2/r280/PROTOCOL.md. Pure R279 geometry and R278 analytic separating
+planes reusable; all historical fitted geometry excluded. Straight pitch1.12 has
+positive minimum separating margin .0199868 units; source pitch fails.
+
+### R280 steering — easy cases first
+
+User prioritizes central, substantially exposed, well-lit, clearly separated
+beads, nearly exact initial geometry, and separate difficulty-level results.
+Avoid edge/shadow/tiny-fragment/ambiguous-reflection cases until easy cases work.
+Protocol updated before detector evaluation with independent evaluation tiers
+and explicit development easy-A1 gate; difficult scenes remain separate controls.
+
+### R280 outcome — easy surface recovery, presence/ownership still blocks growth
+
+Implemented isolated A appearance/B annular surface/C joint ownership and full
+frozen Phase1 baseline, physically certified eight development/eight held-out POV
+scenes, two separately failed-packing stress scenes, and eight post-freeze absent
+bead controls. Literal source geometry/intended radius; pitch1.12/1.20 testing
+geometry has analytic positive margins. Independent Python/POV resolved-ray
+agreement; truth never enters inference. Easy-first steering followed: amended an
+empty initial stratum (projected silhouettes touch despite 3D separation), retained
+original design/result; final strata/thresholds frozen before held-out rendering.
+Development A1 easy33/36 correct strong. Held-out easy20/26, all20correct; Phase1
+whole-image21/26, Phase2 adds3 and misses4 Phase1found, union24/26. Same-aperture
+Phase1query17/21correctstrong, localappearance5/15; no blanket recall dominance.
+Easy uncertainty .1diameter16/20correctstrong; camera+15degrees6/21. Contextual
+falsealternatives0/182strong but near-total ambiguous ownership, not discrimination.
+Unanchored wrongidentity18/26false; removed easybead2/8false forB/C (A5/8).
+No growth readiness. All169sufficient bodies115correctstrong; difficulty/color/
+uncertainty/scenecluster results separate; no realaccuracypercentages.
+Sixphoto regions,12fresh localmodels/bothhands from frozen image-only anchors;
+originalcrops and independentlayers, sixqualitative reviews preserve ambiguous
+outputs even when algorithm says strong. All manualneighbors/charts/oldposes
+excluded. Found import-time unused oldseed/modelindex via contactutility; isolated
+identicalmath, recorded post-freeze repair; all18certificates and25A5files exact.
+Frozen detector/rules unchanged. Original .80/8px failedcontrol and everyprediction
+survive. 11focusedtests,2,088predictionexactreplays, native support/centroid audits,
+5,990priorfilehashes unchanged,32case renderedbrowser/layerchecks pass. Browser
+sandboxlaunch initially blocked; approved rerun succeeded. Viewer photo2/r280/index.html;
+report photo2/R280_PHASE2.md. Next easy target-present/absent surface ownership,
+newly exposed occluders, small registration/camera uncertainty before single-neighbor
+growth; no globalfit/indexing/pattern orautomaticnextphase. Keep current model/reasoning,
+no/new. Scopedcommit/push andremoteverification follow.

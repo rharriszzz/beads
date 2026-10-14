@@ -1963,3 +1963,15 @@ Python surfaces checked against independent POV; ±6 contact failure remains at 
 pitch. Outcome is negative: unreliable neighbor identities, underestimated uncertainty,
 no validated improvement in held-out geometry, no accepted physical model. Preserve
 all controls; no incremental growth until these prerequisites improve.
+
+
+## R280: geometry-assisted photographic confirmation
+
+Compare local appearance, predicted annular visible-surface matching, and symmetric
+joint ownership. Geometry conditions pixel evidence; it cannot establish its own
+physical identity. Benchmark exact geometry on easy central bodies first, then
+separate position/scale/camera errors and contextual rivals. Include a rendered
+target-absent control: previously occluded bodies can falsely support the missing
+target. Preserve Phase1 independently. R280 adds three easy held-out recoveries
+but fails2/8removed-body negatives; no growth readiness.
+[Methods, thresholds, quantitative results and limits](photo2/R280_PHASE2.md).

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>R280 Phase 2 photographic review</title>
+<style>body{font:16px system-ui;margin:24px;background:#f7f5f0;color:#24302b}h1{font-size:25px}label{margin:0 12px 0 0}select{font:inherit;max-width:95%;padding:6px}canvas{image-rendering:pixelated;max-width:48%;height:auto;border:1px solid #aab2a8;background:white}#panels{display:flex;gap:10px;margin-top:15px}pre{white-space:pre-wrap;font-size:13px;background:white;padding:12px}a{color:#176b76}.key{padding:10px;background:white}.graphs img{width:95%;max-width:1000px}</style>
+<h1>R280 · Geometry-assisted photographic evidence</h1>
+<p>Left: original pixels. Right: independently switchable evidence and model layers. Actual-photo results are conditional support judgments, with no verified identity accuracy.</p>
+<p><select id="scene" aria-label="Review case"></select> <select id="bead" aria-label="Prediction"></select></p>
+<div class="key"><label><input type="checkbox" id="phase1" checked>Phase 1 · cyan points</label><label><input type="checkbox" id="prediction" checked>Model · orange boundary</label><label><input type="checkbox" id="evidence" checked>Measured support · green</label><label><input type="checkbox" id="uncertainty" checked>Location radius · violet</label><label><input type="checkbox" id="neighbors">Other predictions · gray</label></div>
+<div id="panels"><canvas id="raw"></canvas><canvas id="overlay"></canvas></div><pre id="details"></pre>
+<p>Photographic locations are interior centroids. Orange boundaries and model centers are hypotheses. The violet radius is an engineering uncertainty estimate, not a calibrated confidence interval. A strong result does not certify a construction identity.</p>
+<div class="graphs"><img src="results/accuracy-sensitivity.png" alt="Precision recall and position sensitivity"><img src="results/scale-orientation.png" alt="Scale and orientation sensitivity"><img src="results/false-confirmations.png" alt="False confirmation controls"></div>
+<script src="results/viewer-data.js"></script><script src="viewer.js"></script></html>

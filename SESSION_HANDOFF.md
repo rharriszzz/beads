@@ -1,5 +1,30 @@
 # Beads session handoff — new branch
 
+## Current R280 — geometry-assisted detector, easy-first gate
+
+[Report](photo2/R280_PHASE2.md) · [viewer](photo2/r280/index.html) ·
+[reproduction](photo2/r280/README.md). Isolated local appearance, literal annular
+surface matching and joint ownership; frozen Phase1 unchanged. Eight development,
+eight held-out physically certified scenes (test pitch1.12/1.20), two invalid-packing
+stress controls, eight removed-bead negatives. Both hands; no manual adjacency,
+charts, historical fitted poses or color pattern. Held-out easy A1:20/26correct,
+zero wrongstrong; three new bodies beyond Phase1, union24/26. Phase1alone21/26;
+Phase2misses four existing bodies. .1diameter position precision80%; camera+15°
+6/21correctstrong. Contextual false0/182 mostly because both owners abstain;
+unanchored identity permutation18/26false, removed easybead2/8false. Presence and
+ownership NOT reliable; no automatic growth. All sufficiently visible115/169correct
+strong under exact geometry; tiers kept separate, no real accuracy claim.
+Sixphoto crops/12fresh localmodels retain bothhands and all alternatives; some
+algorithmic strong outputs remain visually ambiguous. Frozen detector unchanged;
+import-only contact isolation removes unused historical data I/O, all25A5files and
+18certificates replay exactly. 11scientifictests,2,088prediction replays,nativeaudits,
+5,990oldhashes,32case renderedbrowser checks pass. Every failedcontrol preserved.
+Next bounded task: easy target-present versus absent interpretation including newly
+exposed occluders; small registration/camera errors; only then consider one adjacent
+bead from >=3 reliable anchors. No globalfit/indexing/pattern orautomaticnextphase.
+Stop after scopedcommit/push. Keep current model/reasoning, no `/new` needed.
+
+
 ## Current R279 — independent elementary neighbor experiments
 
 [Report](photo2/NEIGHBORS_R279.md) · [evidence/reproduction](photo2/review/r279/README.md).

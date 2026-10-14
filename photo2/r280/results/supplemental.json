@@ -1,0 +1,135 @@
+{
+  "all_strong_measurements": {
+    "A1": {
+      "easy": {
+        "strong": 20,
+        "impure": 0,
+        "median_error_diameter": 0.011075774992265537,
+        "p90_error_diameter": 0.08931237832359666,
+        "mean_intended_purity": 1.0
+      },
+      "moderate": {
+        "strong": 57,
+        "impure": 0,
+        "median_error_diameter": 0.020712170230061763,
+        "p90_error_diameter": 0.08464367836224992,
+        "mean_intended_purity": 1.0
+      },
+      "hard": {
+        "strong": 38,
+        "impure": 0,
+        "median_error_diameter": 0.01561572248253399,
+        "p90_error_diameter": 0.03107961835488757,
+        "mean_intended_purity": 1.0
+      }
+    },
+    "A2": {
+      "easy": {
+        "strong": 44,
+        "impure": 8,
+        "median_error_diameter": 0.07328324574993822,
+        "p90_error_diameter": 0.1603636533620256,
+        "mean_intended_purity": 0.9354763123987024
+      },
+      "moderate": {
+        "strong": 83,
+        "impure": 10,
+        "median_error_diameter": 0.032302678150156645,
+        "p90_error_diameter": 0.15095960477455117,
+        "mean_intended_purity": 0.9661372714997172
+      },
+      "hard": {
+        "strong": 73,
+        "impure": 7,
+        "median_error_diameter": 0.01519930274769442,
+        "p90_error_diameter": 0.1012716490537464,
+        "mean_intended_purity": 0.9212613382619472
+      }
+    },
+    "A3": {
+      "easy": {
+        "strong": 105,
+        "impure": 17,
+        "median_error_diameter": 0.025065064722005488,
+        "p90_error_diameter": 0.2203783862417629,
+        "mean_intended_purity": 0.939589410396905
+      },
+      "moderate": {
+        "strong": 248,
+        "impure": 50,
+        "median_error_diameter": 0.04051788947316085,
+        "p90_error_diameter": 0.16972955541901238,
+        "mean_intended_purity": 0.9385882915493885
+      },
+      "hard": {
+        "strong": 176,
+        "impure": 29,
+        "median_error_diameter": 0.024115733624168446,
+        "p90_error_diameter": 0.1375609856050278,
+        "mean_intended_purity": 0.9323978543030292
+      }
+    },
+    "A4": {
+      "easy": {
+        "strong": 36,
+        "impure": 18,
+        "median_error_diameter": 0.4328675124552187,
+        "p90_error_diameter": 1.107576418071458,
+        "mean_intended_purity": 0.5
+      },
+      "moderate": {
+        "strong": 86,
+        "impure": 35,
+        "median_error_diameter": 0.0846513203506708,
+        "p90_error_diameter": 1.0132602376074489,
+        "mean_intended_purity": 0.5930232558139535
+      },
+      "hard": {
+        "strong": 97,
+        "impure": 62,
+        "median_error_diameter": 0.6519656916756511,
+        "p90_error_diameter": 1.199746782036439,
+        "mean_intended_purity": 0.36082474226804123
+      }
+    }
+  },
+  "reported_colors": {
+    "yellow": {
+      "yellow": 40,
+      "unknown": 6
+    },
+    "red": {
+      "red": 35
+    },
+    "black": {
+      "black": 34
+    }
+  },
+  "central_segment_easy_posthoc": {
+    "predictions": 11,
+    "eligible": 11,
+    "strong": 9,
+    "correct": 9,
+    "precision": 1.0,
+    "recall": 0.8181818181818182,
+    "wrong_owners": 0,
+    "false_predictions": 0,
+    "false_confirmations": 0,
+    "false_confirmation_rate": null,
+    "ambiguity": 0.0,
+    "abstention": 0.18181818181818182,
+    "median_error_diameter": 0.024760839231219224,
+    "uncertainty_coverage": 1.0,
+    "mean_support_iou": 0.75331399684593,
+    "mean_support_purity": 1.0,
+    "statuses": {
+      "strong": 9,
+      "partial": 2
+    }
+  },
+  "phase1_standalone": {
+    "accepted": 93,
+    "false_or_impure": 7
+  },
+  "note": "Central-segment subset is an explicit post-hoc edge sensitivity, never a threshold selection. Color is measured from pixels, no truth input."
+}

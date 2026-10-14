@@ -1,0 +1,5 @@
+# Preserve verbatim renderer logs and the extracted, unchanged beads.pov macro.
+results/**/*.log -whitespace
+results/**/*.pov -whitespace
+# Frozen R278 function copy retains its original terminal blank line.
+recovery_adapter.py whitespace=-blank-at-eof

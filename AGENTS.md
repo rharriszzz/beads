@@ -1,5 +1,19 @@
 # Beads photo-2 workflow
 
+R280 supersedes the next task; see photo2/R280_PHASE2.md and photo2/r280/index.html.
+Geometry-assisted A/B/C; easy-first, physically certified16primaryscenes,2stress,
+8absencecontrols. FrozenPhase1unchanged. Heldout easy20/26correctstrong,zero wrong;
+3newbeyondPhase1,union24/26,Phase1alone21/26. Position.1Dprecision80%;camera+15°6/21.
+Contextualfalse0/182mostlyabstention;unanchoredwrongidentity18/26false;absentbead2/8false.
+Not reliable presence/ownership; no growth. Sixphotoareas/12freshbothhandmodels;
+no oldmanualneighbors/charts/fittedposes; real strong proposals can remain ambiguous.
+Allfailures retained.11tests/2088replays/32browsercases/5990oldhashes pass;import-only
+contactisolation removes unusedhistoricalI/O,25A5files/18certificates exact. Next easy
+present/absent ownership with newlyexposedoccluders and smallregistration/camera
+uncertainty beforeone-neighborgrowth. No globalfit/indexing/pattern/automaticphase.
+StopafterR280delivery;keep currentmodel/reasoning,no/newneeded.
+
+
 
 R279 supersedes the next task; see photo2/NEIGHBORS_R279.md. Independent elementary
 experiments exclude all historical observations/manual ownership/neighbor charts/fitted
