@@ -16,7 +16,7 @@
 - [x] Shared provenance/importance/reliability/visibility/phase/physical unknowns.
 - [x] Preserve historical/production and Phase2/3; no adoption.
 - [x] Six technical checkpoints; report/recommendation/reproduction/tests/review.
-- [ ] Scoped commit/push, remote verification, clean final status (delivery receipt pending).
+- [x] Scoped scientific commit/push, remote verification and clean status; see [delivery receipt](r286/results/delivery.json).
 - [x] Stop for user assessment; no automatic R287 or manual labels.
 
 Evidence links: [diagnosis](R286_P5_DIAGNOSIS.md), [report](R286_REPORT.md),

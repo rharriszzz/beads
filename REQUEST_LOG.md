@@ -8418,3 +8418,11 @@ manual-label request. Keep current model/reasoning; no /new needed.
 
 
 Scientific conclusions and failed alternatives are frozen; subsequent delivery receipt records remote verification.
+
+## R286 remote delivery verification
+
+Scientific commit `ae3ae7d53558de39e24cfa752b28e1a70339ae6a` pushed to `origin/photo-2-strategy-v3`;
+`git ls-remote` matched exactly and working tree was clean before this receipt.
+91 tests,10293 historical blobs,31 native crops,two exact replay files,144 black
+reflection replays and Chromium52images/17tables/24sections/88links pass.
+Stop for user assessment; no production adoption or automatic R287.

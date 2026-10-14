@@ -1,5 +1,7 @@
 # R286 completed experiment — STOP for user assessment
 
+Scientific commit `ae3ae7d53558de39e24cfa752b28e1a70339ae6a` pushed and remote-verified.
+
 See photo2/R286_REPORT.md, photo2/review/r286/index.html and R286_REPRODUCE.md.
 P5 root cause: two bright maxima failed a single-pixel hue gate despite strongly
 supported pigment neighborhoods; all three yellows shared one watershed basin.
