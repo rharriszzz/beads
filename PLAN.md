@@ -1,5 +1,32 @@
 # Photo-2 reconstruction plan
 
+## Current R279 — independent elementary neighbor experiments
+
+[Report](photo2/NEIGHBORS_R279.md) · [evidence/reproduction](photo2/review/r279/README.md).
+No historical observations, manual neighbors/ownership, centerline or fitted pose is
+an input. Fresh image-only detector, 21 frozen photo anchors (7/class), three methods;
+all real identities remain proposals. 1,714 observations are not a bead count.
+B/C each abstain on20/21 real cases.12new POV scenes, seed279014, expose293eligible
+bodies;139detected distinct,17extra same-body observations,3false/low-purity.
+Only59/72synthetic anchors eligible. A/B/C top-correct15/15/17; C single-answer1/12
+correct; uncertainty coverage36.5%. No reliable neighbor-discovery capability.
+Source radius1.784536980648071 and both hands checked. Python/POV ownership agrees
+on96,236resolved rays;64unknown. Source through+10%pitch has actual±6overlap;
+all local constructions rejected, including synthetic-source packing stress scenes.
+Sixreal/11automatic-synthetic/12oraclepairs,360ABstarts/hand.29Cfreezes/24Dfreezes;
+no C coordinates enter AB parameter search, no D evidence enters ABC refit.
+Centroid-proxy geometry does not demonstrate held-out improvement; one correct
+synthetic C/D chain still fails packing. Both hands/non-neighbor alternatives survive.
+Two-point coordinate Jacobian rank4/7 throughout; no unique geometry or physical IDs.
+Failed camera/whole-hole-fill controls and old seed evaluation/source preserved.
+14focused tests, full-photo replay, byte-exact synthetic C/D replay and freeze audits
+pass. No historical file/shared implementation edits beyond requested workflow docs.
+Next: independently improve distinct-body separation/localization uncertainty and
+establish physically compatible dimensions before another withheld local prediction.
+No global fit, repeating pattern or20–50-beadgrowth. Stop after scoped commit/push;
+keep current model/reasoning, no /new needed. R279 supersedes R278's next-task scope.
+
+
 ## Current R278 — corrected construction and full conditional correspondence
 
 [Report](photo2/RECONSTRUCTION_R278.md) · [evidence/reproduction](photo2/review/r278/README.md).

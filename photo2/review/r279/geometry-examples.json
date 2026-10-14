@@ -1,0 +1,104 @@
+[
+  {
+    "A": "oracle-1",
+    "AB_actual_delta": 7,
+    "AB_correct_family": true,
+    "AB_loss": 0.1337690238954927,
+    "B": "oracle-8",
+    "C_conditional_match": true,
+    "C_error_px": 7.321497997673729,
+    "C_match_correct": true,
+    "C_truth_member": 2,
+    "C_visible_truth": true,
+    "baseline_best_of_three_error_px": 23.314162863524604,
+    "delta": -7,
+    "hand": -1,
+    "image": "geometry-example-1.jpg",
+    "label": "correct image match, rejected packing",
+    "mode": "oracle",
+    "parameters": {
+      "hand": -1,
+      "inclination": 20.0,
+      "phase": 0.5235987755982987,
+      "pitch": 1.0,
+      "roll": -208.63122514059452,
+      "scale": 13.487943990994452,
+      "translation": [
+        125.1887815433217,
+        136.755793290797
+      ]
+    },
+    "physical_valid": false,
+    "rank": 0,
+    "scene": "scene-00",
+    "truth_visible_area": 1215
+  },
+  {
+    "A": "O0061-0218",
+    "AB_actual_delta": 0,
+    "AB_correct_family": false,
+    "AB_loss": 0.22421443468327698,
+    "B": "O0073-0209",
+    "C_conditional_match": true,
+    "C_error_px": null,
+    "C_match_correct": false,
+    "C_truth_member": null,
+    "C_visible_truth": false,
+    "baseline_best_of_three_error_px": null,
+    "delta": -7,
+    "hand": 1,
+    "image": "geometry-example-2.jpg",
+    "label": "incorrect image match, rejected packing",
+    "mode": "end-to-end",
+    "parameters": {
+      "hand": 1,
+      "inclination": -40.0,
+      "phase": 1.0471975511965974,
+      "pitch": 1.0,
+      "roll": 256.6388815324837,
+      "scale": 9.16535460939054,
+      "translation": [
+        192.02762382300187,
+        79.39835918344959
+      ]
+    },
+    "physical_valid": false,
+    "rank": 1,
+    "scene": "scene-00",
+    "truth_visible_area": null
+  },
+  {
+    "A": "O0061-0218",
+    "AB_actual_delta": 0,
+    "AB_correct_family": false,
+    "AB_loss": 0.19863071252211298,
+    "B": "O0073-0209",
+    "C_conditional_match": false,
+    "C_error_px": null,
+    "C_match_correct": false,
+    "C_truth_member": null,
+    "C_visible_truth": false,
+    "baseline_best_of_three_error_px": null,
+    "delta": -7,
+    "hand": -1,
+    "image": "geometry-example-3.jpg",
+    "label": "unmatched alternative",
+    "mode": "end-to-end",
+    "parameters": {
+      "hand": -1,
+      "inclination": 20.0,
+      "phase": 0.5235987755982987,
+      "pitch": 1.0,
+      "roll": -19.12509307754688,
+      "scale": 6.525971621630695,
+      "translation": [
+        223.22405436148603,
+        45.73279002521025
+      ]
+    },
+    "physical_valid": false,
+    "rank": 0,
+    "scene": "scene-00",
+    "truth_visible_area": null
+  }
+]

@@ -1,5 +1,21 @@
 # Beads photo-2 workflow
 
+
+R279 supersedes the next task; see photo2/NEIGHBORS_R279.md. Independent elementary
+experiments exclude all historical observations/manual ownership/neighbor charts/fitted
+poses. Fresh21photoanchors, three image-only methods; no verified real accuracy.
+Seed279014 POVtest: C top17/59correct, single1/12correct;13/72anchor slots unavailable.
+Uncertaintycoverage36.5%; distinct-body ownership remains unreliable. AB-only geometric
+screen bothhands360starts/hand, signed1/6/7 and non-neighbor retained.29C/24Dfreezes
+hashverified; no held-out observation coordinates enter their prediction parameter fit.
+Source radius correct;±6interpenetrates through+10%pitch. No physically accepted model,
+including synthetic-source stress scenes; these are not compatible positive controls.
+No demonstrated geometric prediction benefit; centroid-proxy fits remain a limitation.
+Both failedcontrols and every prediction survive.14focusedchecks/exactreplays pass.
+Next improve independent body separation/uncertainty and establish compatible dimensions
+before renewed withheld local prediction. No globalfit/pattern/20–50beadgrowth. Stop
+after R279delivery; keep current model/reasoning, no /new needed. No automatic nextphase.
+
 R278 authorizes both phases and conditional indexing; see photo2/RECONSTRUCTION_R278.md.
 Intended radius1.78453698 is explicit; legacy2.11091575 remains default.900image-only
 locations/897masks (all810/807R275unchanged),90new outside band;target658and doubts remain.

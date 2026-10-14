@@ -1948,3 +1948,18 @@ radius .656r and axial half-height .14r plus an ellipsoid (.344r radial, .56r ax
 A positive separating-plane gap is a sufficient nonintersection witness for two actual
 annuli; negative search results are inconclusive, not proof of overlap. Bounding spheres
 safely exclude all noncandidate pairs. The witness code is photo2/contact_r278.py.
+
+
+## R279 — independent photographic neighbor and blind local prediction tests
+
+[Report](photo2/NEIGHBORS_R279.md), [isolated protocol/code](photo2/r279/PROTOCOL.md).
+Three image-only methods compare peak distance, interior/identity evidence, and native
+separation plus multiscale cues. Fresh input pixels avoid all historical manual graph,
+ownership and fitted-pose dependencies. Freeze sample before prediction; record C
+before C scoring and D after ABC refit but before D scoring. A separate evaluator
+opens synthetic identities only after predictions. Membership-only oracle distinguishes
+body-selection errors from geometric inference limitations. Exact rounded annular
+Python surfaces checked against independent POV; ±6 contact failure remains at limited
+pitch. Outcome is negative: unreliable neighbor identities, underestimated uncertainty,
+no validated improvement in held-out geometry, no accepted physical model. Preserve
+all controls; no incremental growth until these prerequisites improve.
