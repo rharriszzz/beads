@@ -8252,3 +8252,48 @@ user visual judgments requested. Report/checklist/plan/handoff/methods updated.
 Next only on request: training-only support/exterior constraints for the failed
 fourth bead and excess paper, then another independent automatic patch. Commit/push
 scoped R283 and verify remote, then stop. Keep model/reasoning; no /new needed.
+
+## R284A — Phase 1 centerline recovery and ownership redesign request
+
+User requests an isolated method-comparison round on photo-2-strategy-v3. Identify
+all centerline-crossing beads and supported neighbors on both sides, often two or
+three per station without quotas. Diagnose actual support leakage; implement at
+least three meaningfully different alternatives, compare native real-photo masks
+and measurements, recommend one or two and STOP for user choice before adoption.
+Reviewed two-sided.png: bottom cyan spike crosses into another bead; include red
+left crossing the curve and yellow right. duplicate.png: upper black reflection
+is good, lower is secondary; include red right of upper black as comparison.
+abstention.png: magenta outline very wrong; redesign. These are evaluation evidence,
+never hardcoded runtime identities. No more manual bead labels. Five additional
+centerline-critical cases must be chosen reproducibly. Preserve all old inventories,
+Phase 2/3 and failures; no global count/helicity/pattern focus. Commit/push package.
+Preflight: daisy, requested branch clean, no stashes, origin fetched, 0/0 divergence.
+Three proposed designs recorded in photo2/R284A_CHECKLIST.md before implementation.
+
+### R284A actual outcome — three Phase 1 alternatives; stop for choice
+
+Implemented A thickness-core pruning, B competing native geodesic owners, and C
+irreversible colored paths with separate black reflection/collar/secondary evidence.
+Eight disjoint crops include all three user-reviewed regions and five reproducible
+red/yellow/black/opposite-side/three-candidate cases. Three focused panels explicitly
+include left red/right yellow, upper/lower black and right red, and bad magenta.
+Nineteen visual panels, eight native crops/4x enlargements,630measurement rows,
+exact masks/seed dispositions/signed extents/stations and concise per-case captions.
+Named colored repairs favor A; C correctly tags lower reviewed reflection secondary
+and retains upper. Left red/right yellow were already high R283 but omitted from
+old pair picture, not newly discovered beads. A loses high on red-right duplicate
+neighbor; B splits apparent bodies; C colored paths cut severe notches/crescents.
+Near high baseline45/A45/B71/C42; crossing23/19/32/20. No complete crossing recovery.
+Four C secondary hypotheses, only named one has supplied evidence; no real precision.
+Retrospective16 POV controls: distinct pure124/138,173/225,157/167; recall124/389,
+173/389,157/389; duplicate excess3/30/3. Not fresh heldout validation. Original-cue
+control near53/64/48; broader cues do not uniformly help. First failure retained.
+45tests,19exact real replay files,9793old Git blobs,8native crops and Chromium
+27images/19panels/25tables pass. Screenshot positioning corrected after inspection;
+a combined-shell browser retry hit sandbox restrictions, then the authorized direct
+absolute launcher completed outside sandbox. No broad permission requested.
+All1092 original R283 records and Phase2/3 unchanged. Recommend A colored and C
+black components for user choice, not a tested/adopted hybrid. No manual-label request.
+Next only after choice: freeze selected rule and test additional automatically chosen
+crossing/two-sided crops plus same-body cue controls before full adoption. Scoped
+commit/push and remote verification conclude this step. Keep model/reasoning; no/new.

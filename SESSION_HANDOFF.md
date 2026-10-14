@@ -1,5 +1,28 @@
 # Beads session handoff — new branch
 
+## R284A — Phase 1 method choice; stop before adoption
+
+[Report](photo2/R284A_REPORT.md), [comparison viewer](photo2/review/r284a/index.html),
+[checklist](photo2/R284A_CHECKLIST.md), [reproduction](photo2/r284/README.md).
+Eight bounded real crops; A thickness-core pruning, B geodesic ownership competition,
+C native straight paths plus separate black reflection/collar/secondary hypotheses.
+Named cyan/magenta repairs favor A; C links the reviewed lower secondary to the good
+upper black reflection. Left red and right yellow were already R283 candidates but
+omitted from its pair picture. All relevant neighbors now shown. Recommend A for
+colored supports and C's black component as directions, not an adopted/tested hybrid.
+Near high observations: baseline45 / A45 / B71 / C42; crossing23 / 19 / 32 / 20.
+B splits apparent real bodies; C colored rule cuts severe yellow notches. No complete
+crossing-bead recovery. Retrospective POV distinct pure124/138,173/225,157/167;
+recall124/389,173/389,157/389; duplicates3/30/3. No real precision calibration.
+First failed pass, all alternatives and original-cue control retained.45tests,
+19exact real replay files,9793old Git blobs and8native crops pass.19visual panels,
+27images/25tables reviewed in Chromium.630 per-method measurement records.
+All1092 R283 records and Phase2/3 unchanged. Next ONLY after user method choice:
+freeze selected components and test more automatically chosen crossing/two-sided
+regions and same-body cues, before any full Phase1 adoption. No manual labels asked.
+Stop after scoped commit/push and remote verification. Keep current model/reasoning;
+no /new needed. R284A supersedes R283's proposed Phase2 next step.
+
 ## Current R283 — photographic ownership, two-sided coverage and local failure tests
 
 [Report](photo2/R283_REPORT.md), [checklist](photo2/R283_CHECKLIST.md),

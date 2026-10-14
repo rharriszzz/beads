@@ -2011,3 +2011,16 @@ photo-only anchors precede cold shared-pose, exact ownership, common-light and
 withheld-support tests. Separate fixed-method photographic confirmation region.
 Global three-phase regression retains unknowns and explicit identity weight limits.
 All failed runs, exact masks and original-photo review captions remain available.
+
+## R284A — Phase 1 native support and reflection method comparison
+
+See [report](photo2/R284A_REPORT.md), [reproduction](photo2/r284/README.md), and
+[review](photo2/review/r284a/index.html). Three designs share an image-only cue bank:
+thickness-core pruning/bounded reconstruction; geodesic competition with ownership
+margin; irreversible native straight paths plus separate reflection/dark-collar and
+secondary-feature hypotheses. Case selection is isolated from inference. Save every
+cue disposition, native run mask, centroid, signed support extent and station interval.
+Compare original-cue controls so increased candidate count is not mislabeled recovery.
+Exclusive pixels do not prove distinct bodies; compact masks do not prove ownership.
+Prefer A colored repairs and C black component for further choice; C colored paths
+and B's over-segmentation failures remain visible. No method globally adopted.

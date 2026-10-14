@@ -1,5 +1,18 @@
 # Beads photo-2 workflow
 
+R284A supersedes R283's next task; see photo2/R284A_REPORT.md and checklist.
+Phase1 method comparison only, eight real crops; no full inventory adoption.
+A thickness pruning repairs named colored outlines; C black reflection/collar links
+reviewed lower secondary to good upper. B ownership competition over-splits; C
+colored rays cut severe yellow notches. Recommend A colored + C black directions,
+not a tested/adopted hybrid. Near high baseline45/A45/B71/C42; crossing23/19/32/20.
+No complete centerline recovery. Retrospective POV distinct124/138,173/225,157/167;
+recall124/389,173/389,157/389; duplicates3/30/3. All1092 R283/Phase2/3 unchanged.
+45tests/19exact replayfiles/9793oldhashes/27browserimages pass; first failure retained.
+STOP for user method choice. Next only after choice: bounded selected-method test
+on more automatic crossing/two-sided crops, before global adoption. No manual labels.
+Keep current model/reasoning; no /new needed. Chromium narrow launcher unchanged.
+
 R283 scientific round supersedes the R282 stopping point; see photo2/R283_REPORT.md
 and photo2/R283_CHECKLIST.md. Preserve1092 native C records:561high/30medium/
 484unresolved/17rejected,137high black. Fresh synthetic148/151distinct-pure,

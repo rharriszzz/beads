@@ -1,0 +1,42 @@
+{
+  "two-sided": {
+    "A": "The lower yellow's side spur is reduced without trimming the red left or yellow right out of the comparison; all three remain high. Some peripheral red supports still conflict.",
+    "B": "The red left and yellow right are represented and the lower yellow is separated. Added supports at lower/outer edges need review; exclusive pixels do not prove separate beads.",
+    "C": "The lower yellow spur is removed but a notch replaces it. Left red remains high; right yellow becomes a partial, unresolved support. Strict paths lose useful shaded material."
+  },
+  "duplicate": {
+    "A": "Upper black reflection passes; lower stays unresolved rather than becoming high. The red to the right loses high status because another cue overlaps it.",
+    "B": "Upper black and the red right pass; lower reflection stays unresolved. Competition separates masks but supplies no primary/secondary interpretation.",
+    "C": "Upper black has a 40-pixel reflection/collar support. Lower is an 8-pixel secondary hypothesis linked to it; red right passes. The second secondary link in this crop is unverified."
+  },
+  "abstention": {
+    "A": "The reviewed yellow becomes one compact 355-pixel high support; the old excursion toward the upper-left patch is cut. Adjacent yellows still have unresolved shared material.",
+    "B": "The reviewed yellow becomes a bounded 399-pixel high support. Neighboring seeds have separate owners, but some partitions elsewhere in the crop can split one body.",
+    "C": "The reviewed yellow is trimmed to 236 pixels and remains unresolved. Native brightness stopping cuts irregular crescents; this is an informative failure, not a recommended yellow outline."
+  },
+  "auto-red": {
+    "A": "The central crossing red remains compact. The yellow at its left has multiple conflicting cues and is withheld, reducing accepted two-sided coverage.",
+    "B": "Central red is retained, but the left yellow is visibly split into several high supports (1/4/10). The extra near count includes over-segmentation.",
+    "C": "Central red stays high with small native notches. Left yellow conflicts remain unresolved; brightness paths do not settle multiple cue ownership."
+  },
+  "auto-yellow": {
+    "A": "The central crossing yellow is retained; multiple cues on yellows to the right are questioned. Good shape alone does not settle identity.",
+    "B": "More near supports pass, but the right yellow is divided into high pieces (2/12), with another split below. These cannot be counted as extra recovered bodies.",
+    "C": "The selected central yellow survives; right-side yellow fragments can still pass separately. Ray stopping is not a complete duplicate solution."
+  },
+  "auto-black": {
+    "A": "The selected near-line black reflection stays compact. Neighboring yellow conflicts reduce coverage; no full black silhouette is inferred.",
+    "B": "The selected black passes, but the left yellow/highlight is divided among cues. Wider accepted coverage needs a distinct-body check.",
+    "C": "The selected black is represented by compact reflection plus collar; colored paths make notches and leave nearby yellow alternatives unresolved."
+  },
+  "auto-opposite": {
+    "A": "The opposing central yellow/red supports remain represented without forcing their centroids onto the line. Lower-right same-color cues remain ambiguous.",
+    "B": "Central flanking supports survive and more neighbors pass. Upper/lower edge partitions remain possible duplicate or background features.",
+    "C": "The crossing pair is retained, but adjacent yellow paths cut deep notches and one lower red is withheld. High two-sided coverage is weaker."
+  },
+  "auto-three": {
+    "A": "The center crossing yellow and nearby black reflections survive. Left yellow alternatives remain unresolved; three visible candidates are not certified as three owned bodies.",
+    "B": "Several neighbors on both sides pass, including left yellows. Some apparent gains reflect resolving overlaps by partition, which still needs identity evidence.",
+    "C": "The central yellow breaks into a partial unresolved support, losing an important crossing candidate. Compact black reflections remain, but the whole colored rule is unsuitable here."
+  }
+}
