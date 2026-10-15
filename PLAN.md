@@ -1,3 +1,37 @@
+# R288 completed experiment — STOP for user review
+
+Read photo2/J_AND_M_EXPLAINED.md (approximately2700 words, completed/hash-recorded
+before segmentation), R288_REPORT.md, R288_DIAGNOSIS.md, R288_REPRODUCE.md,
+R288_SPECIFICATION.md/R288_CHECKLIST.md and photo2/review/r288/index.html.
+Six checkpoints and all failed versions preserve chronology after compaction.
+
+Causal finding: original M merges a dark interface with fewer than3 pairs. N07
+background-low introduces2pairs at ratio.1665 (515→1325px); N11 background-high
+reduces3→2pairs at.2417 (694→2018px). N06 nominal2pairs at.1974 merge yellows.
+W requires affirmative bright merging and persistent supported separations; final
+corridor rule requires a dark central route plus nearby routes. First W split
+shallow/narrow bright material; source/data preserved before correction/freeze.
+E ensemble fails under correlated instability; H local-color gate loses entire
+N07/N11 supports. W keeps N07 515/N11 694/P2 495/P5 664/C05 527 and separates
+N06 1148→576. N11 upper extension remains unchanged/ownership unresolved.
+
+Frozen15 new regions/69 cues: W instability20→6 versus M, detected seam conflicts
+6→0 (proxy, not precision), near45→45/crossings26→24/flanking1→2. Q06 and nearby
+Q01/Q04/Q09 show new merger corrections. Marker ledgers identical M/W; merged
+marker groups13→4. Five-way interpreter62 retained/45near/24crossing versus
+R28758/44/23; zero new distinct beads certified. Q14 still falls back to J123
+when W515 is unstable despite392 supported extra pixels. Weak tinted reflections
+still receive dubious colored preferences. DO NOT adopt the interpreter wholesale.
+Recommend W’s positive-merge repair for user review; production unchanged.
+
+128 tests (20new+108historical),10672 old blobs,45 native crops,two exact reruns;
+Chromium79images/25tables/27sections/129links pass. Black R2/R1/R4 unchanged and
+reflection-only; prior144 replays cited, not newly executed. No Phase2/3 work.
+Scoped commit/push/remote receipt in photo2/r288/results/delivery.json. Next ONLY
+after review: adequacy and cue-quality evidence independent of fuller-mask validity,
+with W seam repair fixed and fresh confirmation. No automatic R289, no manual labels.
+Keep current model/reasoning; no /new needed.
+
 # R287 completed experiment — STOP for user assessment
 
 Scientific commit `9d6551c485c7d5610fd6c95634f65a3ff2776db6` pushed and remote-verified.

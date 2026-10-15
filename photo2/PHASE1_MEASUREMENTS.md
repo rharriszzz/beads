@@ -1,4 +1,4 @@
-# Permanent photographic measurement contract — R287 clarification
+# Permanent photographic measurement contract — R288 clarification
 
 This contract supersedes earlier black-support descriptions in historical R282,
 R283 and R284A specifications. Historical experiments remain unchanged evidence.
@@ -99,3 +99,15 @@ boundary, diffuse, neighboring-marker and stability evidence, never color alone.
 Centerline completeness and both nearby sides remain priorities; difficult edges
 may stay unresolved. R2 reflection-only default and R1/R4 alternatives remain.
 R287 is isolated research; no production inventory replacement or Phase2/3 work.
+
+## R288 instability, adequacy and new measured interiors
+
+An unstable M result does not establish that J is adequate. Record excluded diffuse
+material as an independent defect of J. Diagnose changing pixels, markers, material
+thresholds and basin unions before dismissing a complete candidate. A short or
+missing interface is uncertainty, not affirmative evidence that two basins should
+merge. Stable pixels also require photographic material/separation evidence.
+New native interiors are permitted when independently justified, never merely a
+J/M union or intersection. Preserve both alternatives or abstain when ownership
+remains unresolved. The mathematical/implementation explanation is in
+J_AND_M_EXPLAINED.md; isolated R288 does not replace production or use Phase2/3.

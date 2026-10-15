@@ -2067,3 +2067,18 @@ alternative supports, never a union. Neither stability nor smoothness establishe
 ownership. The sole-survivor fallback can choose a truncated J when M is unstable;
 this measured failure prevents adopting the frozen selector unchanged. No new
 physical identity, production inventory, reconstruction or pattern is certified.
+
+
+## R288 — explain J/M and repair short-dark-interface merging
+
+[Explanation](photo2/J_AND_M_EXPLAINED.md), [diagnosis](photo2/R288_DIAGNOSIS.md),
+[report](photo2/R288_REPORT.md), [review](photo2/review/r288/index.html),
+[reproduction](photo2/R288_REPRODUCE.md). Replay thresholds, marker ledgers,
+interface pixel pairs and basin unions before altering a segmentation. Insufficient
+interface length is not affirmative continuity: a minimum-three-pair separation
+rule caused abrupt merges through two very dark pairs. Compare ensemble-supported
+native interiors, affirmative-evidence watershed and local chromaticity restriction.
+Preserve failures: correlated ensembles, color-gate peak loss, lateral-corridor
+false splits and undersized-J fallback. Stable material and good-looking basins
+still do not establish physical ownership. Freeze new photographic regions and
+methods before confirmation, report all alternatives, and stop before adoption.
