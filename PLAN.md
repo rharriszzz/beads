@@ -1,5 +1,7 @@
 # R289 completed experiment — STOP for user review
 
+Scientific commit `0ba852814c823e4d5df4125fd6d6f3063d063ef4` pushed and remote-verified.
+
 Read photo2/R289_REPORT.md, R289_REPRODUCE.md, R289_SPECIFICATION.md,
 R289_CHECKLIST.md and photo2/review/r289/index.html. Six checkpoints preserve work.
 R289 explicitly supersedes R288's proposed next task for this independent-landmark

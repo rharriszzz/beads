@@ -29,7 +29,7 @@
 - [x] 48tests(16new+32historical),10875historical blobs unchanged,13native crops,
   five byte-exact data replays/four exact raster arrays; failures/source preserved.
 - [x] Chromium:24images/6tables/22expandable comparisons/20local links, desktop/narrow.
-- [ ] Scoped scientific commit, push and remote verification; receipt in
-  `r289/results/delivery.json` (completed in delivery receipt commit).
+- [x] Scientific commit `0ba852814c823e4d5df4125fd6d6f3063d063ef4` pushed and independently
+  remote-verified; receipt in `r289/results/delivery.json`.
 - [x] Production and all historical scientific artifacts unchanged.
 - [x] Stop for user review; no automatic R290 or production adoption.

@@ -8603,3 +8603,10 @@ initial sources retained. Scoped scientific commit/push/remote receipt in
 photo2/r289/results/delivery.json. Next only after review: assess independent-feature
 ownership/specularity evidence, not contour optimization or automatic R290.
 Keep current model/reasoning; no /new needed.
+
+## R289 remote delivery verification
+
+Scientific commit `0ba852814c823e4d5df4125fd6d6f3063d063ef4` pushed to origin/photo-2-strategy-v3.
+Independent ls-remote matches; worktree clean after scientific push.48tests,10875
+oldblobs,13nativecrops,5data/4rasterreplays and24-image Chromium review pass.
+Separate receipt commit contains metadata/checklist/handoff only. Stop for review.
