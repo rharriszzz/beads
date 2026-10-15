@@ -8637,3 +8637,18 @@ receipt recorded separately. Stop for the user's batch review; no automatic R291
 
 R290 scientific commit `eff180c4f989058698413bc7d1595d98a73607ea` pushed; independent ls-remote matches.
 Remote receipt in photo2/r290/results/delivery.json. Stop for batch review.
+
+## R291 authorized improvement and completed review delivery
+
+User requested implementation without questions: complementary single-bead boundary
+evidence, preservation of R290, new holdouts, lower review burden and a short Start
+Here set. Real photograph only; no synthetic/POV/Phase2/3 work. Implemented one binary
+target graph with dark profiles, multiscale edges, material/continuity and junction
+context. Ten cases frozen before development; inference frozen before their outputs.
+Old R290 reserved is retrospective. All68 primary proposals remain partial; clear
+mergers and truncations persist despite several useful named improvements.
+14-case automatic Start Here; six assessments, optional diagnostics, canonical pair
+ownership reuse, separate durable feedback. No prior judgment becomes a runtime rule.
+16 tests,68 native crops/replay PNGs,3 exact result replays,11430 historical files and
+Chromium full review/feedback checks pass. Commit/push/remote receipt in r291/results.
+Stop for user review; no R292 or automatic holdout repair.

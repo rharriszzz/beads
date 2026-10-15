@@ -1,3 +1,25 @@
+# R291 delivered — STOP for user batch review
+
+See photo2/R291_REPORT.md, R291_REPRODUCE.md, R291_COVERAGE.md,
+R291_DIAGNOSIS.md/R291_SPECIFICATION.md/R291_CHECKLIST.md and review/r291.
+One target binary graph combines coherent dark separators, multiscale edges,
+material color and bright continuity; junction/termination context retained.
+P2/P5/N06/Q14 proposals improve visibly, but mergers/truncations remain. All68
+primary cases remain partial/unresolved; no complete-boundary accuracy established.
+41 development,17 old reserved RETROSPECTIVE,10 new pre-frozen holdouts; no inference
+changes after04:46:14Z freeze. Source/checkpoint failures and large stable fresh-
+unknown-02 false region remain. No synthetic scenes, renderer, Phase2/3 or adoption.
+68 cases/13 alternatives, default14-case Start Here with saved ranking criteria.
+Six one-click assessments credit partial progress or wrong results in clear photos;
+optional diagnostics and deduplicated ownership. User judgments never runtime rules.
+Launch photo2/review/r291/launch.sh then http://127.0.0.1:8291/.
+Separate feedback in photo2/r291/feedback; R290 evidence/feedback unchanged.
+16 tests,68 exact native crops/PNG replays,3 byte-exact result replays,11430 old
+files unchanged; Chromium68 cases,14-case default, six choices, save/undo/reopen/
+export, ownership reuse, zoom/pan and desktop/narrow pass. Delivery receipt in
+photo2/r291/results/delivery.json. Next ONLY user review; no R292 or holdout repairs.
+Keep current model/reasoning; no /new needed.
+
 # R290 delivered — STOP for batch review
 
 Scientific commit `eff180c4f989058698413bc7d1595d98a73607ea` pushed and independently remote-verified.
