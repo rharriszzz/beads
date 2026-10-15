@@ -1,7 +1,9 @@
-# R295 complete — pending final verification/delivery
+# R295 delivered — STOP for user review
 
 See photo2/R295_REPORT.md for accumulated progress, frozen evaluation and failures.
-Finish checks, scoped commit/push/remote receipt; then stop for review. No R296.
+All checks passed; scientific commit a569c572254995bfd34662ef2a75815afc4fd3c8
+pushed and independently remote-verified. Receipt:r295/results/delivery.json.
+Next only user review, then separately authorized local33/65 Phase2 work. No R296.
 
 # R294 completed experiment — review next
 

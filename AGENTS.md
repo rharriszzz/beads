@@ -1,5 +1,7 @@
-# R295 implemented — STOP for review after delivery
+# R295 delivered — STOP for review
 
+Scientific commit `a569c572254995bfd34662ef2a75815afc4fd3c8` pushed and independently
+remote-verified. Receipt:photo2/r295/results/delivery.json.
 R295 completes the approved substantial real-photo Phase2 effort. Read
 photo2/R295_REPORT.md, R295_REPRODUCE.md and review/r295/index.html.
 80 controlled starts;6local/4global/3geometry/2joint refinements,746 proposals,

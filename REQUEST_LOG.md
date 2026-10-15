@@ -8776,3 +8776,8 @@ regions0/7→1/7. Index195 improves54.1→96.7%;33/65failures remain. All varian
 failedsearches and technical repairs retained. No source observation/priorresult/
 Phase1/beads.pov changes, syntheticphotos, Phase3 or R296. Reports, fullpositions,
 nativephoto review and reproducibility receipts delivered; scopedpush/verify next.
+
+R295 scientific delivery `a569c572254995bfd34662ef2a75815afc4fd3c8` pushed and independently
+verified via git ls-remote.10contracts,full candidate/trial search replay,35data/
+25PNG exact replays,Chromium11images/50links pass.12886prior science/69feedback
+unchanged. Receipt inphoto2/r295/results/delivery.json. Stop for user review.
