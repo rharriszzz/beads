@@ -8781,3 +8781,31 @@ R295 scientific delivery `a569c572254995bfd34662ef2a75815afc4fd3c8` pushed and i
 verified via git ls-remote.10contracts,full candidate/trial search replay,35data/
 25PNG exact replays,Chromium11images/50links pass.12886prior science/69feedback
 unchanged. Receipt inphoto2/r295/results/delivery.json. Stop for user review.
+
+# R296 approved: self-running whole-necklace Phase 2 optimizer
+
+User authorizes substantial Python software/scientific development, profiling,
+smoke and bounded pilot, full-image-derived-centerline count/topology hypotheses,
+hierarchical geometry/ownership search, physical feasibility, fresh geographic
+withholding, checkpoint/resume and final review. One-command repository-environment
+launcher, deterministic/time/compute budgets, autonomous bounded rules. Preserve
+all observations/old experiments; no Phase1/3, beads.pov or production changes.
+Commit/push scoped source/tests/docs/pilot to photo-2-strategy-v3, verify and stop.
+User-supplied model context: GPT-6 Astra High. No agent delegation requested.
+Specification: photo2/R296_SPECIFICATION.md. R295 profile saved before full search
+implementation; no separate R295 feedback ledger found in the checkout.
+
+R296 reusable optimizer completed and validated. One-command repository-environment
+launcher; whole-necklace count/hand/topology search, A/B/C/D refinement, physical
+certificates/volume fallback, discrete ownership, budgets, seed, transactional
+resume, signal handling, single-writer lock, sealed reserved evaluation and native
+browser review. No AI iteration supervisor.192-proposal pilot184.5s; native reserved
+large regions3/21→6/21 and62.14→64.80%mean; validation5/21→8/21. Primary2337
+conditional sites,1574 unsupported; alternative2438/2709counts and both hands/seams
+retained. R295 local window regresses explicitly, including65 and195→182.
+19tests; real daemon restart after102 and independent64→192 sequence reproduce all
+192 candidates;17native exports exact across provenance-only repair;30557independent
+pair witnesses,16000ray/100support replays; Chromium11images/28links pass.
+13047old scientific files and69feedback unchanged. No Phase1/3/beads.pov changes,
+synthetic photographs or production adoption. Scoped commit/push/verification next;
+then STOP. User can run independently; later scientific changes require a request.

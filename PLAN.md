@@ -1,3 +1,24 @@
+# R296 implemented — reusable optimizer; stop after scoped delivery
+
+R296 is complete. Entry: python3 photo2/phase2_autofit.py (auto repository .venv).
+Read photo2/R296_REPORT.md, R296_REPRODUCE.md and r296/results/pilot/review/index.html.
+Autonomous full-necklace A/B/C/D search, counts/both hands/open+closed families,
+contact gating, ownership beam, shared local fields, budgets/seeds/checkpoints,
+safe interruption, writer lock, source/photo/cue integrity and native final review.
+Reserved data only after explicit --seal; sealed runs cannot resume. Later uses of
+these cases are retrospective. No AI supervision or virtualenv activation required.
+Pilot192 proposals/184.5s: native reserved regions3/21→6/21, mean62.14→64.80%;
+validation5/21→8/21. Primary2337 sites/hand−/360 turns remains conditional;
+1574 unsupported,602 low visibility. Four feasible families;30557 pair witnesses.
+R295 local means regress;33 improves,65/195 regress and195→182. No adoption.
+19tests, actual102-proposal crash and64→192 resume equivalence,17byte-exact native
+exports,16000ray/100support replays, Chromium11images/28links pass.13047oldscience/
+69feedback unchanged. Guard-only final repair preserves all scientific algorithms,
+first sealed models/results and archived source. Reports and receipts in r296/results.
+No Phase1/3, beads.pov, old experiment edits or synthetic photos. No automaticR297.
+Next: user's chosen unattended run/review. Stop after scoped push/remote verification.
+User-supplied GPT-6 Astra High context; no /new needed to run this standalone program.
+
 # R295 delivered — STOP for user review
 
 See photo2/R295_REPORT.md for accumulated progress, frozen evaluation and failures.

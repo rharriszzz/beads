@@ -1,0 +1,36 @@
+         2187631 function calls (2187543 primitive calls) in 4.094 seconds
+
+   Ordered by: cumulative time
+   List reduced from 212 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        4    0.315    0.079    3.180    0.795 /home/rharris/git/beads/photo2/r296/objective.py:88(assess)
+     92/4    1.050    0.011    2.057    0.514 /home/rharris/git/beads/photo2/r295/geometry.py:70(trace)
+        4    0.000    0.000    0.897    0.224 /home/rharris/git/beads/photo2/r296/geometry.py:135(contact)
+        4    0.129    0.032    0.897    0.224 /home/rharris/git/beads/photo2/r295/geometry.py:104(certify)
+    37928    0.129    0.000    0.743    0.000 /home/rharris/git/beads/photo2/r295/geometry.py:65(local_sdf)
+        4    0.574    0.144    0.680    0.170 /home/rharris/git/beads/photo2/r296/objective.py:8(beam_assign)
+     1048    0.075    0.000    0.653    0.001 /home/rharris/git/beads/photo2/r295/geometry.py:98(support)
+    37928    0.553    0.000    0.584    0.000 /home/rharris/git/beads/photo2/r279/geometry.py:26(sdf)
+    17080    0.556    0.000    0.556    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     1048    0.158    0.000    0.442    0.000 /home/rharris/git/beads/photo2/r280/contact.py:16(support)
+     4452    0.003    0.000    0.384    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2342(sum)
+     4468    0.004    0.000    0.380    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:66(_wrapreduction)
+    37956    0.028    0.000    0.156    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:675(flatnonzero)
+     1328    0.019    0.000    0.133    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2598(norm)
+    44364    0.010    0.000    0.098    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2031(nonzero)
+    44516    0.013    0.000    0.095    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:48(_wrapfunc)
+    44364    0.068    0.000    0.068    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+     6408    0.004    0.000    0.066    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/lib/_arraysetops_impl.py:145(unique)
+     6408    0.028    0.000    0.060    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/lib/_arraysetops_impl.py:350(_unique1d)
+      724    0.000    0.000    0.059    0.000 {method 'sum' of 'numpy.ndarray' objects}
+      724    0.000    0.000    0.059    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:47(_sum)
+   307892    0.057    0.000    0.057    0.000 {built-in method numpy.asarray}
+    10196    0.007    0.000    0.045    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3737(mean)
+   174940    0.042    0.000    0.042    0.000 {built-in method builtins.min}
+      280    0.011    0.000    0.041    0.000 /home/rharris/git/beads/photo2/r282/geometry.py:14(unit)
+    10212    0.014    0.000    0.039    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:115(_mean)
+    37956    0.017    0.000    0.031    0.000 /home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:1917(ravel)
+    76944    0.031    0.000    0.031    0.000 {built-in method builtins.abs}
+    27952    0.023    0.000    0.030    0.000 {built-in method builtins.sorted}
+   404788    0.022    0.000    0.022    0.000 {built-in method builtins.len}
