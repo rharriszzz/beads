@@ -40,7 +40,7 @@ def export(name,scene,result,xy,owner,d,sensitivity):
     assert len(rows)==221 and [r['index'] for r in rows]==list(range(-20,201))
     save(OUT/(name+'-positions.json.gz'),dict(model=name,records=rows,parameters=params,photo_sha256=read(EVIDENCE/'inputs.json.gz')['photo']['photo_sha256']))
     with (OUT/(name+'-positions.csv')).open('w') as f:
-        writer=csv.writer(f);writer.writerow(['index','x','y','visible_pixels','visibility_fraction','compatible_support','sensitivity_px','physical_feasibility','conditional'])
+        writer=csv.writer(f,lineterminator='\n');writer.writerow(['index','x','y','visible_pixels','visibility_fraction','compatible_support','sensitivity_px','physical_feasibility','conditional'])
         for r in rows:writer.writerow([r['index'],*r['projected_geometric_center'],r['visible_surface']['pixel_count'],r['visible_fraction'],r['meaningful_photographic_support'],r['uncertainty']['radius_px'],r['physical_feasibility'],True])
     result['run_summary']=dict(positions=221,supported_positions=sum(r['meaningful_photographic_support'] for r in rows),unsupported_positions=sum(not r['meaningful_photographic_support'] for r in rows),visibility_below_point_one=sum(r['visible_fraction']<.1 for r in rows))
 
