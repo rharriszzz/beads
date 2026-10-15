@@ -8482,3 +8482,12 @@ model/reasoning; no /new needed. No manual bead-label request.
 
 
 Scientific results are frozen. Commit and remote verification will be recorded separately.
+
+## R287 remote delivery verification
+
+Scientific commit `9d6551c485c7d5610fd6c95634f65a3ff2776db6` pushed to `origin/photo-2-strategy-v3`.
+Independent `git ls-remote` matched exactly; worktree was clean after push.
+108 tests, 10480 historical blobs, 45 native crops, two exact reruns and rendered
+82-image/26-table/28-section/133-link review pass. No production adoption or R288.
+The separate receipt commit contains only delivery metadata, checklist and handoff.
+Stop for user assessment; retain current model/reasoning, no /new needed.

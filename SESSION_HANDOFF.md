@@ -1,5 +1,7 @@
 # R287 completed experiment — STOP for user assessment
 
+Scientific commit `9d6551c485c7d5610fd6c95634f65a3ff2776db6` pushed and remote-verified.
+
 Read photo2/R287_REPORT.md, R287_SPECIFICATION.md, R287_CHECKLIST.md,
 R287_REPRODUCE.md and photo2/review/r287/index.html; six saved checkpoints preserve
 requirements, first failure, frozen rules, confirmation and recommendations.

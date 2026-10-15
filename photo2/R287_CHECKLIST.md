@@ -16,5 +16,5 @@
 - [x] Shared records/provenance and three phases preserved; no production adoption.
 - [x] Scientific tests, exact replay, native/historical audit and browser review.
 - [x] Report/reproduction/checkpoints/permanent contract/handoff/log updated.
-- [ ] Scoped commit/push, verified remote, clean worktree (final delivery step).
+- [x] Scoped scientific commit/push, remote matched, clean worktree; delivery.json records verification.
 - [x] Stop for user assessment before adoption or R288.
