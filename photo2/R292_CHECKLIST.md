@@ -13,5 +13,5 @@
 - [x] Separate11-case review with raw photo, separator-only view and durable feedback provenance.
 - [x] 13 focused real-photo tests; two byte-exact replay files/77 PNGs; preserved11698 historical/29 feedback files.
 - [x] Chromium77 cases,11-case default, feedback/undo/export/reopen, ownership reuse, desktop/narrow.
-- [ ] Scientific commit pushed and independent remote head verified (receipt recorded after push).
-- [ ] Stop for user evaluation; no R293.
+- [x] Scientific commit 0de589597f2be1d0cdd04040b348445c5d4a4e97 pushed; independent remote head matches; delivery.json records receipt.
+- [x] Stop for user evaluation; no R293.

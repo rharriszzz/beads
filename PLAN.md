@@ -1,5 +1,7 @@
 # R292 delivered — STOP for user evaluation
 
+Scientific commit `0de589597f2be1d0cdd04040b348445c5d4a4e97` pushed and independently remote-verified.
+
 R292 was explicitly approved and implemented as a bounded real-photo experiment.
 Read photo2/R292_REPORT.md, R292_REPRODUCE.md, R292_COVERAGE.md and R292_DIAGNOSIS.md.
 One-target R291 graph now traces measured dark/illumination/material separator arcs,
@@ -20,7 +22,7 @@ raw photo beside boundary, separate observed-separator overlay, historic judgmen
 read-only; separate durable R292 feedback.13 tests,77 exact native crops and replay
 PNGs,2 byte-exact data replays,11698 old science files/29 feedback files unchanged;
 Chromium77-case review and desktop/narrow feedback checks pass. Scientific push and
-independent remote receipt recorded in photo2/r292/results/delivery.json when done.
+independent remote receipt recorded in photo2/r292/results/delivery.json.
 STOP for evaluation; no production adoption, holdout repair or automatic R293.
 
 # R291 completed review analyzed — STOP for R292 approval

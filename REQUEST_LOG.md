@@ -8689,3 +8689,7 @@ R292 feedback.13 focused tests, two byte-exact result replays/77 PNGs and native
 crops,11698 old files/29 feedback files preserved; Chromium77-case responsive/durable
 review passes. Commit/push/independent receipt requested; then stop for evaluation.
 No R293 or automatic repair against new holdouts.
+
+R292 scientific commit `0de589597f2be1d0cdd04040b348445c5d4a4e97` pushed to origin/photo-2-strategy-v3;
+independent git ls-remote matches. Receipt in photo2/r292/results/delivery.json.
+Stop for user evaluation; no automatic R293 or holdout repairs.
