@@ -1,0 +1,1 @@
+Initial valley-only tracing enforces measured dark centers but leaves some regions connected around unresolved ends. Local continuation could also accept replacements without any affirmative supported-edge gain. Full exposed-case outcomes retained before revision; no new holdout opened.

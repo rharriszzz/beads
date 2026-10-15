@@ -1,0 +1,1 @@
+Development extension tests coherent illumination/material transitions beyond dark valleys. Probe retains remaining end-around mergers and shows that a pure illumination track could start without a valid local valley anchor. Final revision requires affirmative dark anchor and records bright-core contradictions before enforcement. No holdout opened.

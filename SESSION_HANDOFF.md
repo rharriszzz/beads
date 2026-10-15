@@ -1,3 +1,28 @@
+# R292 delivered — STOP for user evaluation
+
+R292 was explicitly approved and implemented as a bounded real-photo experiment.
+Read photo2/R292_REPORT.md, R292_REPRODUCE.md, R292_COVERAGE.md and R292_DIAGNOSIS.md.
+One-target R291 graph now traces measured dark/illumination/material separator arcs,
+constrains observed valley/peer-bank pixels, retains internal/core contradictions,
+and relaxes dark interruptions only with local replacement-edge evidence. No chords,
+unsupported closure, geometric plausibility rejection, synthetic work or Phase2/3.
+68 exposed cases +9 new pre-frozen targets; second unknown slot unfilled. Sources
+frozen2026-10-15T14:59:23Z before holdouts; no later inference changes. First full
+failed development and second probe/sources retained. B-factor ablation reproduces
+accepted Q14/development-yellow-03 B using darkness-only, while global softness
+merges red-worst. Final preserves8 accepted masks exactly and5 immaterially; no
+repeat questions. Exposed direct crossing samples165→0, both-bank inclusions171→31;
+new holdouts33→0/35→14. These are diagnostics, not accuracy. End-around mergers,
+development-red-06 expansion and paper/reflection failures remain explicit. All77
+primary proposals partial/unresolved; no method failure asserts photo insufficiency.
+Launch photo2/review/r292/launch.sh at http://127.0.0.1:8292/:11-case Start Here,
+raw photo beside boundary, separate observed-separator overlay, historic judgments
+read-only; separate durable R292 feedback.13 tests,77 exact native crops and replay
+PNGs,2 byte-exact data replays,11698 old science files/29 feedback files unchanged;
+Chromium77-case review and desktop/narrow feedback checks pass. Scientific push and
+independent remote receipt recorded in photo2/r292/results/delivery.json when done.
+STOP for evaluation; no production adoption, holdout repair or automatic R293.
+
 # R291 completed review analyzed — STOP for R292 approval
 
 Read photo2/R291_REVIEW_ANALYSIS.md and

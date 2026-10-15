@@ -8672,3 +8672,20 @@ Archived the full ledger byte-exact in r291/evidence/completed-review-2026-10-15
 and recorded final answers/coordinates/hashes/metrics in completed-review-analysis.json.
 Live feedback and all R290/R291 inference/results/viewers are unchanged. Delivery is
 analysis/evidence/handoff only; no new detector implementation or synthetic evaluation.
+
+## R292 explicitly approved and implemented
+
+User approved photographic separator enforcement while preserving accepted R291
+behavior, original photograph only, fresh frozen holdouts and separate short review.
+Implemented actual observed arc tracking, conditional valley/peer-bank constraints,
+local continuity alternatives and crossing/end-around diagnostics in one target graph.
+2x2 B ablation saved; failed approaches preserved; nine new targets frozen before
+development, inference frozen before holdouts.13 accepted references:8 exact/5
+immaterial changes. Principal yellow failure corrected for review; remaining mergers,
+internal-darkness ambiguity, development-red-06 expansion and paper/reflection
+failures retained. No synthetic/Phase2/3/production or coordinate-specific rules.
+77 automatic results, case comparisons/coverage and11-case Start Here with separate
+R292 feedback.13 focused tests, two byte-exact result replays/77 PNGs and native
+crops,11698 old files/29 feedback files preserved; Chromium77-case responsive/durable
+review passes. Commit/push/independent receipt requested; then stop for evaluation.
+No R293 or automatic repair against new holdouts.
