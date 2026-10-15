@@ -14,5 +14,5 @@
 - [x] Native whole-photo overview,125 automatic cases,385 raw window crops,8 new central questions;24 old cases read-only.
 - [x]12 focused real-photo tests;48 exact native new crops/two data replays/all48 PNGs;12002 old/52 feedback files unchanged.
 - [x] Chromium overview/windows/125 cases/eight questions, revisions/undo/export/reopen and responsive fit checked.
-- [ ] Scientific commit pushed and independent remote head verified (receipt after push).
-- [ ] Stop for user review; no automatic R294.
+- [x] Scientific commit 5e9e06c2c610d02ef5643aba381e3b5212fd52e3 pushed; independent remote matches; delivery.json records receipt.
+- [x] Stop for user review; no automatic R294.

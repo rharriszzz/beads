@@ -1,5 +1,7 @@
 # R293 delivered — STOP for user review
 
+Scientific commit `5e9e06c2c610d02ef5643aba381e3b5212fd52e3` pushed and independently remote-verified.
+
 Read photo2/R293_REPORT.md, R293_R292_REVIEW_ANALYSIS.md, R293_PRIORITY_POLICY.md,
 R293_COVERAGE.md and R293_REPRODUCE.md. R293 explicitly refocuses Phase1 on clear
 centerline/nearby independent observations; defer difficult peripheral silhouettes.
@@ -24,7 +26,7 @@ Launch photo2/review/r293/launch.sh at http://127.0.0.1:8293/:native coverage ov
 8 new central questions,125 cases,24 historical cases read-only; separate durable
 feedback.12 photo tests,2 exact data/48PNG replays,125 native case/385 window crops,
 12002 old files/52 feedback files preserved; Chromium desktop/narrow overview and
-review pass. Delivery receipt photo2/r293/results/delivery.json after verified push.
+review pass. Verified delivery receipt photo2/r293/results/delivery.json.
 STOP for user review; no automatic R294 or further peripheral detector tuning.
 
 # R292 delivered — STOP for user evaluation

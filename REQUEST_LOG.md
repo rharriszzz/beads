@@ -8714,3 +8714,7 @@ separate feedback.12 tests,2 exact data/48PNG replays, native125case/385window/f
 checks,12002 old/52feedback preserved; Chromium responsive overview/review passes.
 Recommend a later bounded conditional Phase2 subset experiment; no complete inventory
 claim, no production/Phase2/3 work. Commit/push/verify then stop; no automatic R294.
+
+R293 scientific commit `5e9e06c2c610d02ef5643aba381e3b5212fd52e3` pushed to origin/photo-2-strategy-v3;
+independent git ls-remote matches. Delivery receipt in photo2/r293/results/delivery.json.
+Stop for review; no automatic Phase2/3, R294 or peripheral-silhouette tuning.
