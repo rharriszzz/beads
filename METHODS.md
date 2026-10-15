@@ -2082,3 +2082,12 @@ Preserve failures: correlated ensembles, color-gate peak loss, lateral-corridor
 false splits and undersized-J fallback. Stable material and good-looking basins
 still do not establish physical ownership. Freeze new photographic regions and
 methods before confirmation, report all alternatives, and stop before adoption.
+# R294 bounded real-photo Phase2 chain
+
+See [R294_REPORT.md](photo2/R294_REPORT.md) and
+[reproduction](photo2/R294_REPRODUCE.md): top crossing anchor,221conditional indices,
+literal annular curved helix, geographic withheld independent observations,
+exact first-hit support, common-light diagnostic and analytic contact certificates.
+Initial versus slow axis/spacing revision; all prior Phase1 observations preserved.
+High containment can prefer an interpenetrating/wrong-index model. Require physical
+feasibility and retain mismatches; no production or Phase3 adoption. Review only.

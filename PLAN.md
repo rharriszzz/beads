@@ -1,3 +1,17 @@
+# R294 completed experiment — review next
+
+Read photo2/R294_REPORT.md and photo2/review/r294/index.html. Bounded221conditional
+positions−20…200 from clear top red crossing, original photograph/Phase1 preserved.
+Initial and revised literal annular helices compared; primary both contact-certified.
+Revision has no demonstrated heldout improvement on requested indices; central
+yellow/red surface failures and common-light disagreement remain. Higher-scoring
+hand+ alternative physically interpenetrates and is archived. All observations,
+unknown ownership, index alternatives, failed fits and provenance retained.
+9contracts/full numerical and27PNG replays/Chromium pass;12766 oldscience and69
+livefeedback unchanged. Scoped commit/push/independent receipt, then STOP for review.
+Next only when requested: local clear crossing-group joint index/shape/light fitting
+with contact constraints throughout. No Phase1 campaign, Phase3, adoption or R295.
+
 # R293 completed feedback archived — R294 next session only
 
 Read photo2/R293_REVIEW_ANALYSIS.md and

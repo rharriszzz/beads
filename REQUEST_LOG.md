@@ -8735,3 +8735,22 @@ AGENTS.md and PLAN.md record next-session conditional Phase2 decision. No infere
 scientific result, production or viewer changes; no Phase2/3, synthetic imagery or
 R294 implementation. Deterministic archive/analysis replay from tracked evidence;
 commit/push/independent remote verification, then stop.
+
+# R294 approved — bounded real-photo Phase2 chain
+
+User authorizes an initial and diagnostically revised geometric chain anchored at
+the highest defensible centerline-crossing bead 0, about −20…200 indices, using
+only the native photograph and existing independent Phase1 observations. Preserve
+all observations, judgments, uncertainties and prior science. Deliver overlays,
+matched/mismatch crops, conditional positions/correspondences, comparison tables,
+Phase1 lessons and next Phase2 recommendation. Commit/push/verify existing branch,
+then stop for review; no synthetic imagery, detector campaign, Phase3 or R295.
+Implemented the221-position real-photo experiment; photo2/R294_REPORT.md records
+method, anchor, comparisons, failures, uncertainty and recommendations. Both primary
+fits pass contact certificates; revised heldout oldinterior support worsens slightly,
+requestedcompatible heldpatches22/31 unchanged. Better unconstrained fit physically
+interpenetrates (93sampled pairs), preserved in full.9contracts, full scientific
+candidate/history/10export and27PNG replays,9nativecrops, Chromium14images/26links
+desktop/narrow pass.12766 prior science and69 live feedback files unchanged. No new
+Phase1 detector, synthetic images, renderer, Phase3 or production adoption. Commit/
+push/verify then stop for review; no automatic R295. Keep model/reasoning, no /new.

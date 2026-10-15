@@ -1,3 +1,34 @@
+# R294 implemented — STOP for review
+
+R294 explicitly authorizes a bounded Phase2 run, superseding the prior stop and
+earlier indexing restrictions only for this experiment. Read photo2/R294_REPORT.md,
+R294_SPECIFICATION.md, R294_REPRODUCE.md and review/r294/index.html.
+Anchor red C-1497-0271 at visible-interior(1499.36,271.20), crosses image reference;
+independent patch(1496.95,271.15), .30px threshold sensitivity, not physical accuracy.
+Conditional indices−20…200 follow right/down the actual helix; all221 retained.
+Original real photo only; no synthetic scenes/renderer/Phase1 detector changes.
+R279 shape/R280 contact/R282 first-hit/R293 image reference reused, no old fitted pose.
+Frozen123 patches92train/31geographic-withheld;29/7 old automatic colored interiors.
+Initial/revised certified hand−, scale8.3,pitch1.26,elevation60°,phase.53; revised slow
+axis/spacing correction. Held patch containment87.5→88.3%, oldinteriors54.6→53.1%,
+0/7 compatible both; includes end context. Requested-only heldcompatible22/31 both.
+No demonstrated held-out improvement on requested run; clear central yellows/reds
+still fail. Unconstrained hand+ revision improves containment but fails95 contact
+witnesses;93 actual sampled penetrating pairs. Preserve failed alternative/data/images.
+Primary874/874contact certificates pass, not photographic ownership certificates.
+118/123 feature assignments stable including unmatched; unknown identities remain.
+Common-light neutral heldmedian~50°; reflections never physical black-body centers.
+90/221 sites have compatible patch links, not90 certified beads;131 unsupported,
+66 modeledvisibility<.1. Position uncertainty is conditional sensitivity, not CI.
+Three native whole overlays,9 raw/initial/revised crops,221positions/uncertainty and
+correspondence ledgers.9 contracts; full search/candidate/history,10data/visibility
+and27PNG exact replays;12766 oldscience/69livefeedback unchanged. Chromium14images/
+26links desktop/narrow pass. Delivery receipt:photo2/r294/results/delivery.json.
+Next only after review: small clear crossing group, joint integer-neighbor/geometry/
+shared-light fit with contact constraints throughout, withholding adjacent supports.
+No Phase3, production adoption or automatic R295. Keep current model/reasoning;
+no /new needed. STOP after scoped commit/push/independent remote verification.
+
 # R293 completed feedback archived — R294 next session only
 
 Read photo2/R293_REVIEW_ANALYSIS.md and

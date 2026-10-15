@@ -1,3 +1,30 @@
+# R294 implemented — STOP for review
+
+R294 supersedes the prior stop only for the approved bounded real-photo Phase2
+experiment. Read photo2/R294_REPORT.md, R294_REPRODUCE.md and review/r294/index.html.
+221 conditional indices−20…200, anchored at top red crossing C-1497-0271 near
+(1499.36,271.20). Positive direction goes right, then down the actual necklace bend.
+Original independent Phase1 pixels/positions/colors/uncertainty unchanged. No new
+detector, synthetic image/renderer, old fitted pose, Phase3 or production adoption.
+Frozen123patches92train/31held;29/7 oldautomaticcoloredinteriors. Constant helix
+compared with slow in-plane axis/logspacing revision, same camera/shape/pitch.
+Primary hand− models both noninterpenetration-certified; clear central failures
+remain. Held patch containment87.5→88.3%; old interiors54.6→53.1%,0/7 compatible.
+Four heldpatches/oneinterior map to end context; requested-compatible patches22/31
+both. No demonstrated requested-run heldout improvement. Better unconstrained hand+
+alternative fails contact and has93 actual sampled penetrating pairs; all retained.
+118/123 feature assignments unchanged including unmatched, not verified indices.
+90/221 modeledsites with compatiblepatches;131 without,66visibility<.1; not beadcounts.
+Reflections remain reflections; common mirror-light neutralheldmedian~50° disagrees.
+Three whole-photo overlays,9matched/mismatch/reflectioncrop comparisons,221position
+records permodel, conditional uncertainty and correspondence CSV/JSON delivered.
+9tests; complete fit/candidate/history replay,10byteexactdata/visibility and27PNG
+replays;12766 oldscience/69livefeedback unchanged; Chromium14images/26links responsive
+pass. Receipt:photo2/r294/results/delivery.json after scoped push/remote verification.
+Next only after review: local crossing-group integer-neighbor/shape/light experiment,
+contact-constrained throughout, withheld adjacent material. STOP; no automatic R295.
+Keep current model/reasoning, no /new needed.
+
 # R293 completed feedback archived — R294 next session only
 
 Read photo2/R293_REVIEW_ANALYSIS.md and
