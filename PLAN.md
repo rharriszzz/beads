@@ -1,3 +1,20 @@
+# R291 completed review analyzed — STOP for R292 approval
+
+Read photo2/R291_REVIEW_ANALYSIS.md and
+photo2/r291/evidence/completed-review-analysis.json. The completed human ledger is
+archived byte-exact in completed-review-2026-10-15.jsonl.gz in that evidence folder;
+15 events/14 final cases:11 A,2 B,1 wrong-clear; Q14 revised A to B. No optional
+diagnostics/ownership answers. All14 immutable candidates/crops verified against
+tracked package and native original pixels. Selected Start Here sample, not full
+accuracy;54 cases remain unreviewed. Black acceptances concern reflection regions.
+Main defect: protected highlight exclusion does not enforce the measured seam;
+reserved-yellow-05 includes3/5 saved separator trough samples despite zero bypass
+flags. Internal shading versus separation and material versus ownership remain.
+Proposed R292: actual separator arcs plus local continuation/context, preserving
+accepted behavior; new frozen holdouts, no synthetic data or coordinate rules.
+Analysis/evidence only; detector/viewer/scientific outputs and live feedback unchanged.
+R292 is NOT implemented or approved. Wait for explicit approval before development.
+
 # R291 delivered — STOP for user batch review
 
 Scientific commit `ac1c46157e7451c05ff1b10260eeacd6268e4fa6` pushed and independently remote-verified.

@@ -1,0 +1,586 @@
+{
+  "schema": "R291-completed-review-analysis-v1",
+  "scope": "Human review analysis only; no R292 implementation or detector changes.",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "algorithm": "R291-complementary-v3",
+  "archive": "photo2/r291/evidence/completed-review-2026-10-15.jsonl.gz",
+  "archive_sha256": "17497a6456dbca4e45f4a637315b0a584af144a66a51205ac97808a04119a081",
+  "uncompressed_ledger_sha256": "0634abdece7e50809ce677de2ff564d3251172d2fc5646bcb1eb89fd6712f4b9",
+  "event_count": 15,
+  "reviewed_cases": 14,
+  "unreviewed_cases": 54,
+  "final_answers": {
+    "B": 2,
+    "A": 11,
+    "wrong-clear": 1
+  },
+  "revisions": [
+    {
+      "case_id": "Q14",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:21:19.402562+00:00"
+    },
+    {
+      "case_id": "P3",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:21:42.991437+00:00"
+    },
+    {
+      "case_id": "reserved-yellow-01",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:22:00.396185+00:00"
+    },
+    {
+      "case_id": "fresh-yellow-02",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:22:23.912936+00:00"
+    },
+    {
+      "case_id": "reserved-yellow-04",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:22:37.083626+00:00"
+    },
+    {
+      "case_id": "red-worst",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:22:48.158540+00:00"
+    },
+    {
+      "case_id": "reserved-yellow-05",
+      "revision": 1,
+      "answer": "wrong-clear",
+      "utc": "2026-10-15T14:23:24.745703+00:00"
+    },
+    {
+      "case_id": "Q14",
+      "revision": 2,
+      "answer": "B",
+      "utc": "2026-10-15T14:23:52.660605+00:00"
+    },
+    {
+      "case_id": "P2",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:25:20.812908+00:00"
+    },
+    {
+      "case_id": "N06",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:25:36.515675+00:00"
+    },
+    {
+      "case_id": "yellow-multiple-2",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:26:01.190845+00:00"
+    },
+    {
+      "case_id": "development-yellow-03",
+      "revision": 1,
+      "answer": "B",
+      "utc": "2026-10-15T14:26:15.329134+00:00"
+    },
+    {
+      "case_id": "development-yellow-05",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:26:27.209353+00:00"
+    },
+    {
+      "case_id": "fresh-unknown-01",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:26:42.143538+00:00"
+    },
+    {
+      "case_id": "diagnostic-02",
+      "revision": 1,
+      "answer": "A",
+      "utc": "2026-10-15T14:26:56.586466+00:00"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "Q14",
+      "feature_id": "H-0449-0731",
+      "original_point": [
+        449,
+        731
+      ],
+      "split": "development",
+      "revision": 2,
+      "answer": "B",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "bfd49faf194a420d64142cac20fd4ff261cd5ffe3302a43a12621d30a7bc1c31",
+      "crop_sha256": "485f2fa8b979d83d898e2d50600d706f77a99e2ffc5481dea64eb1f61559355f",
+      "candidate_path": "photo2/review/r291/data/Q14.json",
+      "crop_path": "photo2/review/r291/crops/Q14.png",
+      "R290": {
+        "pixels": 191,
+        "supported_fraction": 0.71875,
+        "minimum_perturbation_IoU": 0.9227053140096618
+      },
+      "A": {
+        "pixels": 295,
+        "supported_fraction": 0.8333333333333334,
+        "minimum_perturbation_IoU": 0.9833333333333333
+      },
+      "B": {
+        "pixels": 314,
+        "supported_fraction": 0.9404761904761905,
+        "minimum_perturbation_IoU": 0.9247648902821317
+      },
+      "selected": {
+        "pixels": 314,
+        "supported_fraction": 0.9404761904761905,
+        "minimum_perturbation_IoU": 0.9247648902821317
+      }
+    },
+    {
+      "case_id": "P3",
+      "feature_id": "H-1362-2969",
+      "original_point": [
+        1362,
+        2969
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "729e1dd3d8e6b03bd1897ccb5fdf031354482b283a50c8ef4dc0653fc8b5943c",
+      "crop_sha256": "cdeb10a4e8719f4880951c6e967710a9f758f7d5166094ef3e86bbb11b1e6406",
+      "candidate_path": "photo2/review/r291/data/P3.json",
+      "crop_path": "photo2/review/r291/crops/P3.png",
+      "R290": {
+        "pixels": 479,
+        "supported_fraction": 0.8085106382978723,
+        "minimum_perturbation_IoU": 0.9229287090558767
+      },
+      "A": {
+        "pixels": 444,
+        "supported_fraction": 0.9565217391304348,
+        "minimum_perturbation_IoU": 0.9977477477477478
+      },
+      "B": null,
+      "selected": {
+        "pixels": 444,
+        "supported_fraction": 0.9565217391304348,
+        "minimum_perturbation_IoU": 0.9977477477477478
+      }
+    },
+    {
+      "case_id": "reserved-yellow-01",
+      "feature_id": "H-1879-2795",
+      "original_point": [
+        1879,
+        2795
+      ],
+      "split": "retrospective",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "11238a639055347485ee36820783bea354a088823b95ff0964ad5eee12bd0eb9",
+      "crop_sha256": "77f7014af76f3b63f8af8c6c8806aed4f52213ed46464795dbffb8e9e1c2e7c3",
+      "candidate_path": "photo2/review/r291/data/reserved-yellow-01.json",
+      "crop_path": "photo2/review/r291/crops/reserved-yellow-01.png",
+      "R290": {
+        "pixels": 1542,
+        "supported_fraction": 0.7941176470588235,
+        "minimum_perturbation_IoU": 0.6856380613606047
+      },
+      "A": {
+        "pixels": 469,
+        "supported_fraction": 0.9183673469387755,
+        "minimum_perturbation_IoU": 0.997867803837953
+      },
+      "B": null,
+      "selected": {
+        "pixels": 469,
+        "supported_fraction": 0.9183673469387755,
+        "minimum_perturbation_IoU": 0.997867803837953
+      }
+    },
+    {
+      "case_id": "fresh-yellow-02",
+      "feature_id": "H-1408-1447",
+      "original_point": [
+        1408,
+        1447
+      ],
+      "split": "reserved",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "af1655ae46e08fc8160ff0e244281d2560cbafeace9fa9590c4523800e5d0b59",
+      "crop_sha256": "76c9276ce6fd40dbabfeef503e18874f5a6d7823b39b99fd3f0f3190055d47fa",
+      "candidate_path": "photo2/review/r291/data/fresh-yellow-02.json",
+      "crop_path": "photo2/review/r291/crops/fresh-yellow-02.png",
+      "R290": null,
+      "A": {
+        "pixels": 415,
+        "supported_fraction": 0.9,
+        "minimum_perturbation_IoU": 0.9904534606205251
+      },
+      "B": null,
+      "selected": {
+        "pixels": 415,
+        "supported_fraction": 0.9,
+        "minimum_perturbation_IoU": 0.9904534606205251
+      }
+    },
+    {
+      "case_id": "reserved-yellow-04",
+      "feature_id": "H-2154-2545",
+      "original_point": [
+        2154,
+        2545
+      ],
+      "split": "retrospective",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "182ad13d0c849d34277f8459aa02154f08446b4498ddfcec89afaaa311b9caf2",
+      "crop_sha256": "668193c4e5434199807b82fd86afe82b09a8381121c7322fdf60460b1f41582a",
+      "candidate_path": "photo2/review/r291/data/reserved-yellow-04.json",
+      "crop_path": "photo2/review/r291/crops/reserved-yellow-04.png",
+      "R290": {
+        "pixels": 715,
+        "supported_fraction": 0.9513888888888888,
+        "minimum_perturbation_IoU": 0.9636118598382749
+      },
+      "A": {
+        "pixels": 417,
+        "supported_fraction": 0.925531914893617,
+        "minimum_perturbation_IoU": 0.9808612440191388
+      },
+      "B": null,
+      "selected": {
+        "pixels": 417,
+        "supported_fraction": 0.925531914893617,
+        "minimum_perturbation_IoU": 0.9808612440191388
+      }
+    },
+    {
+      "case_id": "red-worst",
+      "feature_id": "H-1288-2129",
+      "original_point": [
+        1288,
+        2129
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "5df2b9d4e30003f36925afbb82c58ced91c3534dbbb815386c77377ebec1427f",
+      "crop_sha256": "f819334641b733008acd6868a70ae3ae34d3a2022dece7c2b8de72bf5558ac99",
+      "candidate_path": "photo2/review/r291/data/red-worst.json",
+      "crop_path": "photo2/review/r291/crops/red-worst.png",
+      "R290": {
+        "pixels": 481,
+        "supported_fraction": 0.3559322033898305,
+        "minimum_perturbation_IoU": 0.66991643454039
+      },
+      "A": {
+        "pixels": 390,
+        "supported_fraction": 0.4444444444444444,
+        "minimum_perturbation_IoU": 0.9798994974874372
+      },
+      "B": {
+        "pixels": 642,
+        "supported_fraction": 0.4934210526315789,
+        "minimum_perturbation_IoU": 0.6049382716049383
+      },
+      "selected": {
+        "pixels": 390,
+        "supported_fraction": 0.4444444444444444,
+        "minimum_perturbation_IoU": 0.9798994974874372
+      }
+    },
+    {
+      "case_id": "reserved-yellow-05",
+      "feature_id": "H-1759-1886",
+      "original_point": [
+        1759,
+        1886
+      ],
+      "split": "retrospective",
+      "revision": 1,
+      "answer": "wrong-clear",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "e1c0efa964ae79663a33b952130053144c716c51c438e8d3115adc24cf296c61",
+      "crop_sha256": "f08476c230692b8f43db420953539224c6686806f0b4ce4f639eb9e9c2604afd",
+      "candidate_path": "photo2/review/r291/data/reserved-yellow-05.json",
+      "crop_path": "photo2/review/r291/crops/reserved-yellow-05.png",
+      "R290": {
+        "pixels": 1726,
+        "supported_fraction": 0.9320388349514563,
+        "minimum_perturbation_IoU": 0.9756924816280385
+      },
+      "A": {
+        "pixels": 781,
+        "supported_fraction": 0.6238938053097345,
+        "minimum_perturbation_IoU": 0.9684741488020177
+      },
+      "B": {
+        "pixels": 1019,
+        "supported_fraction": 0.8050847457627118,
+        "minimum_perturbation_IoU": 0.7482993197278912
+      },
+      "selected": null
+    },
+    {
+      "case_id": "P2",
+      "feature_id": "H-1235-0312",
+      "original_point": [
+        1235,
+        312
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "d41fb65aaba1196a01f86e5f9ee4226fb5a10629c98a245efb7eb932ca3ae8c2",
+      "crop_sha256": "2ff8b1b886a7a25cdbd2f550a12bd11b4e33043568a62dd20a26dac4cdd976d1",
+      "candidate_path": "photo2/review/r291/data/P2.json",
+      "crop_path": "photo2/review/r291/crops/P2.png",
+      "R290": {
+        "pixels": 764,
+        "supported_fraction": 0.2088607594936709,
+        "minimum_perturbation_IoU": 0.29463941380640185
+      },
+      "A": {
+        "pixels": 495,
+        "supported_fraction": 0.28,
+        "minimum_perturbation_IoU": 0.9878787878787879
+      },
+      "B": null,
+      "selected": {
+        "pixels": 495,
+        "supported_fraction": 0.28,
+        "minimum_perturbation_IoU": 0.9878787878787879
+      }
+    },
+    {
+      "case_id": "N06",
+      "feature_id": "H-1452-2043",
+      "original_point": [
+        1452,
+        2043
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "5f54b48cc460b8aea4968af53f46c22262944b45d2f8b2f10de13078f050cb0d",
+      "crop_sha256": "7f402b4759285b232d7f9777bccea3450b433a18b1d9b19611e3d9e7208eef90",
+      "candidate_path": "photo2/review/r291/data/N06.json",
+      "crop_path": "photo2/review/r291/crops/N06.png",
+      "R290": {
+        "pixels": 3458,
+        "supported_fraction": 0.9857954545454546,
+        "minimum_perturbation_IoU": 0.9893032668401271
+      },
+      "A": {
+        "pixels": 388,
+        "supported_fraction": 0.8409090909090909,
+        "minimum_perturbation_IoU": 0.9666666666666667
+      },
+      "B": null,
+      "selected": {
+        "pixels": 388,
+        "supported_fraction": 0.8409090909090909,
+        "minimum_perturbation_IoU": 0.9666666666666667
+      }
+    },
+    {
+      "case_id": "yellow-multiple-2",
+      "feature_id": "H-1032-2748",
+      "original_point": [
+        1032,
+        2748
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "1eaa7549982dc6dbf199e65305151757eff05fdc9117da1015a21b48816b0841",
+      "crop_sha256": "a82104917e1fd01ed7d25f6711412c31b2ecee3e0a872a697ff8fb7fcb507a63",
+      "candidate_path": "photo2/review/r291/data/yellow-multiple-2.json",
+      "crop_path": "photo2/review/r291/crops/yellow-multiple-2.png",
+      "R290": {
+        "pixels": 2856,
+        "supported_fraction": 0.706060606060606,
+        "minimum_perturbation_IoU": 0.7365311087938825
+      },
+      "A": {
+        "pixels": 415,
+        "supported_fraction": 0.8555555555555555,
+        "minimum_perturbation_IoU": 0.9787735849056604
+      },
+      "B": null,
+      "selected": {
+        "pixels": 415,
+        "supported_fraction": 0.8555555555555555,
+        "minimum_perturbation_IoU": 0.9787735849056604
+      }
+    },
+    {
+      "case_id": "development-yellow-03",
+      "feature_id": "H-0349-0860",
+      "original_point": [
+        349,
+        860
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "B",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "b8bef9422cf1055db0ff241228fd66be50e12a5075b26fd2c542b83b9a9acae2",
+      "crop_sha256": "693547766244627a07f3590734e36f91a271307fabc969ee3c4af54de284afec",
+      "candidate_path": "photo2/review/r291/data/development-yellow-03.json",
+      "crop_path": "photo2/review/r291/crops/development-yellow-03.png",
+      "R290": {
+        "pixels": 654,
+        "supported_fraction": 0.8362068965517241,
+        "minimum_perturbation_IoU": 0.9263456090651558
+      },
+      "A": {
+        "pixels": 394,
+        "supported_fraction": 0.7840909090909091,
+        "minimum_perturbation_IoU": 0.9679802955665024
+      },
+      "B": {
+        "pixels": 408,
+        "supported_fraction": 0.8,
+        "minimum_perturbation_IoU": 0.9656862745098039
+      },
+      "selected": {
+        "pixels": 408,
+        "supported_fraction": 0.8,
+        "minimum_perturbation_IoU": 0.9656862745098039
+      }
+    },
+    {
+      "case_id": "development-yellow-05",
+      "feature_id": "H-0906-2545",
+      "original_point": [
+        906,
+        2545
+      ],
+      "split": "development",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "1c7a22d381dd27496f426e3372332181a55ed49731f862672275697bd101a5cd",
+      "crop_sha256": "163f40d9a7b08c55fad166ef075e3152a1fd380e5f30d81ec2ca588e2294a77d",
+      "candidate_path": "photo2/review/r291/data/development-yellow-05.json",
+      "crop_path": "photo2/review/r291/crops/development-yellow-05.png",
+      "R290": {
+        "pixels": 618,
+        "supported_fraction": 0.6953125,
+        "minimum_perturbation_IoU": 0.519327731092437
+      },
+      "A": {
+        "pixels": 373,
+        "supported_fraction": 0.926829268292683,
+        "minimum_perturbation_IoU": 0.9920212765957447
+      },
+      "B": null,
+      "selected": {
+        "pixels": 373,
+        "supported_fraction": 0.926829268292683,
+        "minimum_perturbation_IoU": 0.9920212765957447
+      }
+    },
+    {
+      "case_id": "fresh-unknown-01",
+      "feature_id": "H-2140-0878",
+      "original_point": [
+        2140,
+        878
+      ],
+      "split": "reserved",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "bf3b6c540485e44628d6002dbb7e5ac0c0e52c70329cc37f9e6e058890b57307",
+      "crop_sha256": "ca5830a84f61ffbdb9d3953c8f21c1fb5db7ab395705ce924520090ac0d04104",
+      "candidate_path": "photo2/review/r291/data/fresh-unknown-01.json",
+      "crop_path": "photo2/review/r291/crops/fresh-unknown-01.png",
+      "R290": null,
+      "A": {
+        "pixels": 88,
+        "supported_fraction": 1.0,
+        "minimum_perturbation_IoU": 1.0
+      },
+      "B": null,
+      "selected": {
+        "pixels": 88,
+        "supported_fraction": 1.0,
+        "minimum_perturbation_IoU": 1.0
+      }
+    },
+    {
+      "case_id": "diagnostic-02",
+      "feature_id": "H-1018-0393",
+      "original_point": [
+        1018,
+        393
+      ],
+      "split": "retrospective",
+      "revision": 1,
+      "answer": "A",
+      "diagnostics": [],
+      "ownership": {},
+      "candidate_digest": "0cba7dde247ad2bc602a5ce319ca08b123ef6afe874524df450cccbfd214f716",
+      "crop_sha256": "1487e7c91495c23ef5d2b875140d71d0060b695111e352fd224ae2915d01eb09",
+      "candidate_path": "photo2/review/r291/data/diagnostic-02.json",
+      "crop_path": "photo2/review/r291/crops/diagnostic-02.png",
+      "R290": {
+        "pixels": 54,
+        "supported_fraction": 1.0,
+        "minimum_perturbation_IoU": 0.9152542372881356
+      },
+      "A": {
+        "pixels": 40,
+        "supported_fraction": 1.0,
+        "minimum_perturbation_IoU": 0.45454545454545453
+      },
+      "B": null,
+      "selected": {
+        "pixels": 40,
+        "supported_fraction": 1.0,
+        "minimum_perturbation_IoU": 0.45454545454545453
+      }
+    }
+  ],
+  "verification": {
+    "immutable_candidate_digests": 14,
+    "crop_hashes": 14,
+    "original_native_pixel_array_matches": 14,
+    "packaged_candidate_byte_matches": 14,
+    "packaged_crop_byte_matches": 14,
+    "full_ledger_preserved_byte_exact_after_decompression": true
+  },
+  "interpretation": "Selected Start Here review; not an unbiased accuracy sample. Optional diagnostics and pair ownership are empty. Selected black-reflection boundaries do not establish dark-body silhouettes. Existing R290/R291 outcomes are exposed evidence for future experiments."
+}

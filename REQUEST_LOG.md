@@ -8655,3 +8655,20 @@ Stop for user review; no R292 or automatic holdout repair.
 
 R291 scientific commit `ac1c46157e7451c05ff1b10260eeacd6268e4fa6` pushed; independent ls-remote matches.
 Delivery receipt in photo2/r291/results/delivery.json. Stop for user batch review.
+
+## R291 completed feedback analysis and requested archival delivery
+
+User requested analysis of completed R291 feedback, saved photographic evidence,
+R290 improvements/regressions and a focused R292 recommendation, explicitly without
+implementing R292. Analyzed15 ledger events/14 final cases:11 A,2 B,1 wrong-clear;
+Q14 revision preserved; no optional diagnostics or pair ownership. Verified all14
+snapshots/crops against hashes, tracked package and exact original pixels. Report
+photo2/R291_REVIEW_ANALYSIS.md separates human verdicts from causal hypotheses,
+groups failures and recommends actual separator-arc constraints plus contextual
+continuation. R292 remains proposed only, awaiting approval.
+
+After the conversational findings, user explicitly requested add/commit/push.
+Archived the full ledger byte-exact in r291/evidence/completed-review-2026-10-15.jsonl.gz
+and recorded final answers/coordinates/hashes/metrics in completed-review-analysis.json.
+Live feedback and all R290/R291 inference/results/viewers are unchanged. Delivery is
+analysis/evidence/handoff only; no new detector implementation or synthetic evaluation.
