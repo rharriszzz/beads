@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r295/audit.py", line 54, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r295/audit.py", line 35, in main
+    with (BASE/'checkpoints'/('replay-'+stage+'.log')).open('w') as log:subprocess.run([sys.executable,'-c',code,str(source),stage],env=env,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/rharris/git/beads/.venv/bin/python', '-c', "import runpy,sys;sys.argv=['fit',sys.argv[2]];runpy.run_path(sys.argv[1],run_name='photo2.r295.fit_replay')['main']()", '/home/rharris/git/beads/photo2/r295/checkpoints/iteration-1/fit.py', 'screen']' returned non-zero exit status 1.

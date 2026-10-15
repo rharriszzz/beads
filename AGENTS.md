@@ -1,3 +1,38 @@
+# R295 implemented — STOP for review after delivery
+
+R295 completes the approved substantial real-photo Phase2 effort. Read
+photo2/R295_REPORT.md, R295_REPRODUCE.md and review/r295/index.html.
+80 controlled starts;6local/4global/3geometry/2joint refinements,746 proposals,
+paired radius/thickness/spacing/camera controls and shared-light alternative.
+No source Phase1 data/detectors, beads.pov, prior results, synthetic photos or Phase3.
+Original bead0 and conditional−20…200 retained; full221 exports for principal models.
+New geographic split:74/9/19/21 patches and21/5/5/5 large automatic regions
+(train/development/reserved/buffer),15px buffer; no accepted colored contours in run.
+Reserved regions compatible0/5→2/5, mean69.3→68.6%; patches17/19 both.
+Historical requested patches22/31→23/31; exact old one-to-one regions0/7→1/7,
+mean53.1→60.0%. All123 requested patch compatibility105 both, large regions12→15.
+Index195 region54.1→96.7%;33 still50.5%,65 regresses63.8→61.9%.
+Reserved163/169 improve99.7/97.2%;117/123 and oldstrong130 regress explicitly.
+Primary hand− intendedradius/axial shape,scale8.3,pitch1.26,elevation60,turn6.485,
+slowphase/spacing/axis corrections. Physically feasible thin hand+ alternative
+(axial~.83,pitch1.12) helps local material but loses requested-run coverage/indexing.
+All principal models have independent874pair certificates and no dense penetration;
+primary minimumgap.003456.34failed screen candidates have demonstrated collisions;
+annular-volume fallback catches one shallow32/38 overlap missed by surface samples.
+114/123patch assignments stable including unmatched, not physical identities.
+88/221supported sites,133unsupported,62visibility<.1; sensitivity.9–14.5px not CI.
+Common-light training improves but two reservedreflections worsen14.7→27.9degrees.
+No reliable light/ownership inference. Finalfreeze precedes reservedevaluation;
+no post-evaluation fit. Opposite export naming failure retained; actual alternative
+explicitly hand-plus. Audit numerical/replay-launch failures retained with repairs.
+Nativephoto browser has fullrun/side-by-side,8 raw comparisons, both hands, support
+status, observed-edge evidence and all exports. 10contracts,6searchstage/allcandidate/trial replay,35byteexact dataexports,25PNG
+replays,12886oldscience/69feedback unchanged; Chromium11images/50links desktop/narrow
+pass. Verification/delivery receipts in photo2/r295/results. Next only after user review:local visible-surface/occlusion
+ownership near33/65 with independent adjacent material and both feasible families.
+No automaticR296, Phase1 edits, productionadoption or Phase3. Requested model setting
+GPT-6.1-Sol High; no/new needed. Stop after scopedpush/remoteverification.
+
 # R294 implemented — STOP for review
 
 Scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed and independently

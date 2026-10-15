@@ -1,0 +1,14 @@
+evaluate R294
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r295/finalize.py", line 76, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r295/finalize.py", line 62, in main
+    print('evaluate',name,flush=True);scene=Chain(p,data['r294']);r=evaluate(p,data);r['physical_audit']=audit(p,data['r294']);r['mirror_train']=mirror(scene,data,'train');held=mirror(scene,data,'reserved')
+                                                                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r295/physical_audit.py", line 23, in audit
+    assert abs(gap-row['gap_units'])<1e-10
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

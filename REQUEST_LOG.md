@@ -8759,3 +8759,20 @@ R294 scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed to
 origin/photo-2-strategy-v3; independent git ls-remote matches. Receipt in
 photo2/r294/results/delivery.json. Separate metadata commit then final remote check.
 Stop for user review; no automatic R295.
+
+# R295 approved substantial Phase 2 development
+
+User requests multiple bounded geometry/correspondence improvements, contact during
+optimization, new frozen geographic evaluation, original-photo only evidence, full
+221-position exports, browser comparison, scoped commit/push/verify then stop.
+No Phase1 edits, beads.pov changes, synthetic photographs, Phase3 or R296.
+See photo2/R295_SPECIFICATION.md for staged implementation and evaluation contract.
+
+R295 implemented multiple contact-aware geometric/correspondence iterations and
+paired shape/spacing controls. Primary hand− retains221positions; thin hand+ now
+physically feasible but loses requested coverage. Reservedregions0/5→2/5compatible
+with mean69.3→68.6%; historicalrequestedpatches22/31→23/31, originalrule large
+regions0/7→1/7. Index195 improves54.1→96.7%;33/65failures remain. All variants,
+failedsearches and technical repairs retained. No source observation/priorresult/
+Phase1/beads.pov changes, syntheticphotos, Phase3 or R296. Reports, fullpositions,
+nativephoto review and reproducibility receipts delivered; scopedpush/verify next.

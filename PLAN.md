@@ -1,3 +1,8 @@
+# R295 complete — pending final verification/delivery
+
+See photo2/R295_REPORT.md for accumulated progress, frozen evaluation and failures.
+Finish checks, scoped commit/push/remote receipt; then stop for review. No R296.
+
 # R294 completed experiment — review next
 
 Scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed and independently
