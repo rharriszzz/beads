@@ -8610,3 +8610,27 @@ Scientific commit `0ba852814c823e4d5df4125fd6d6f3063d063ef4` pushed to origin/ph
 Independent ls-remote matches; worktree clean after scientific push.48tests,10875
 oldblobs,13nativecrops,5data/4rasterreplays and24-image Chromium review pass.
 Separate receipt commit contains metadata/checklist/handoff only. Stop for review.
+
+## R290 partial request and evidence preservation
+
+Received automatic single-bead boundary objective and section2 constraints. Request
+ends mid-sentence in section3; remainder requested before detector/test-suite design.
+Saved received requirements in photo2/R290_RECEIVED_REQUIREMENTS.md and new
+red-worst same-bead confirmation in photo2/r290/evidence/user-judgments.json, with
+original pixel coordinates, hashed photographic images, and historical R215/R284–
+R288 judgment links. These are evaluation-only evidence, not runtime rules.
+No new detector, synthetic work, scientific evaluation or production changes.
+
+## R290 complete request and delivery
+
+The user supplied the full automatic single-bead boundary/evidence-tests/batch-review
+request, superseding earlier partial preparation. Implemented only real-photograph
+edge measurements, one graph-resistance detector and durable review; no synthetic
+work or production changes. Collection was frozen before code; detector frozen
+before 17 reserved cases. All 58 primary proposals remain partial/unresolved; no
+complete-boundary accuracy established. 23 alternatives retained. All T1–T8 run
+on every candidate. Three failed versions, coverage gaps and provenance corrections
+preserved. 14 tests, 58 native crops and replay PNGs, two exact result replays,
+11197 historical hashes, Chromium full batch/durable feedback checks pass.
+See photo2/R290_REPORT.md and launch photo2/review/r290/launch.sh. Commit/push/remote
+receipt recorded separately. Stop for the user's batch review; no automatic R291.

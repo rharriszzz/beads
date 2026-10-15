@@ -1,0 +1,312 @@
+{
+  "schema": "photographic-user-evidence-v1",
+  "status": "Preserved evaluation evidence; full R290 request received; no runtime access",
+  "scientific_image_source": {
+    "path": "beads-photo-2.jpg",
+    "sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb"
+  },
+  "inference_access": "None: this file is for evaluation and provenance only.",
+  "records": [
+    {
+      "id": "R290-user-red-worst-same-bead",
+      "source": "User R290 section2.C",
+      "statement": "In R289\u2019s red-worst.png, all displayed marks belong to the same physical bead.",
+      "observation_id": "C-1291-2128",
+      "landmark_id": "H-1288-2129",
+      "photo_crop_xyxy": [
+        1253,
+        2094,
+        1324,
+        2165
+      ],
+      "pixel_convention": "Original EXIF-oriented native pixel centers; x right, y down; crop x1/y1 exclusive",
+      "displayed_marks": {
+        "old_maximum_white_square": [
+          1288,
+          2129
+        ],
+        "independent_maximum_cyan_plus": [
+          1288,
+          2129
+        ],
+        "independent_patch_magenta_circle": [
+          1288.3076923076924,
+          2127.923076923077
+        ],
+        "predicted_R275_proxy_green_plus": [
+          1293.2423289951523,
+          2127.6192904928557
+        ],
+        "R275_interior_centroid_orange_cross": [
+          1293.5105042016808,
+          2120.544117647059
+        ]
+      },
+      "source_files": [
+        {
+          "path": "beads-photo-2.jpg",
+          "sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb"
+        },
+        {
+          "path": "photo2/review/r289/red-worst.png",
+          "sha256": "fb75586a05f4d512dc200f77ea998760fff757a50afbd3257ed0b14df4346980"
+        },
+        {
+          "path": "photo2/review/r289/red-worst-native.png",
+          "sha256": "2c9786232ef6d023716a5159c55cea4c2857934dfba44fb126c7954d57dd418f"
+        },
+        {
+          "path": "photo2/r289/results/review-manifest.json",
+          "sha256": "d8ea6106b6f14582082a5f57ebae2d171dad1a9f2dfb8209793aa48e55a5cfe0"
+        },
+        {
+          "path": "photo2/r289/results/associations.json.gz",
+          "sha256": "9e6a9ddefa37dd69aba2c89d90d8ffb3a7dc94445b5bf978845fbccb76bc5905"
+        },
+        {
+          "path": "photo2/r289/results/calibration-frozen.json",
+          "sha256": "8d3c3ba7c10c736541dfc44587f557680003de2688121f0bca3ce178716b27bf"
+        }
+      ],
+      "evaluation_only": true,
+      "runtime_rule": false,
+      "confirmed_scope": "All displayed marks refer to one physical bead.",
+      "not_confirmed": [
+        "exact boundary pixels",
+        "completeness or accuracy of either historical interior or centroid",
+        "a physical 3D center",
+        "all pixels along paths between marks",
+        "ownership of neighboring highlights"
+      ]
+    },
+    {
+      "id": "R215-reviewed-photographic-regions",
+      "answer_requests": [
+        "R216",
+        "R217"
+      ],
+      "answers_source": {
+        "path": "photo2/segmentation-answers-r216-r217.json",
+        "sha256": "5566afd0174bf6715fc8f847752ac5eb78a74a3c2d516da44dc6d30483f22bec"
+      },
+      "questions_source": {
+        "path": "photo2/segmentation-questions-r215.json",
+        "sha256": "5ea989dcc7954eb6750a2edeeb77f2390a7592f0eee1b72559ea098fa5927ba0"
+      },
+      "facts_source": {
+        "path": "photo2/review/r215/confirmed-pixel-facts.json",
+        "sha256": "c785d026f2b6fc6e641c79fa7be2c4e67580762b0053370141e150842f448d37"
+      },
+      "review_image": {
+        "path": "photo2/review/r215/questions.png",
+        "sha256": "225d6f361c0d5766bf98c44526f9edf29512d433f64d035953ad02a3bb0c5867"
+      },
+      "coordinate_source": {
+        "path": "photo2/review/r215/review-locations.json",
+        "sha256": "94c71138f3bee70c44dc77ef1ff1f4e3ac9c54b95fcf35590604c90d49d128d6"
+      },
+      "colored": [
+        {
+          "letter": "A",
+          "region_number": 829,
+          "observation_id": "acbcd3bf-4e75-591f-812e-5fdfae81b71f",
+          "retained_centroid_xy": [
+            964.1875,
+            2722.4983974358975
+          ],
+          "crop": [
+            894,
+            2667,
+            1034,
+            2777
+          ],
+          "confirmation": "Maker confirms roughly 70\u201390% of visible bead pixels and entirely inside the bead; qualitative local assessment.",
+          "question_id": "Q215.1"
+        },
+        {
+          "letter": "B",
+          "region_number": 719,
+          "observation_id": "fb01490e-b61f-5c8e-bd01-574fd66a0b46",
+          "retained_centroid_xy": [
+            2230.758765778401,
+            2234.328190743338
+          ],
+          "crop": [
+            2161,
+            2179,
+            2301,
+            2289
+          ],
+          "confirmation": "Maker confirms roughly 70\u201390% of visible bead pixels and entirely inside the bead; qualitative local assessment.",
+          "question_id": "Q215.1"
+        }
+      ],
+      "reflection": {
+        "reflection_number": 28,
+        "xy": [
+          975.4995986335416,
+          2301.017567364936
+        ],
+        "crop": [
+          905,
+          2246,
+          1045,
+          2356
+        ],
+        "confirmation": "Maker confirms cyan marks the reflection itself and excludes surrounding dark body.",
+        "question_id": "Q215.2"
+      },
+      "limits": "Qualitative 70\u201390% inside-bead colored supports and reflection-only support, not complete boundaries, all-photo recall or physical centers.",
+      "evaluation_only": true,
+      "runtime_rule": false
+    },
+    {
+      "id": "R284-through-R288-original-judgments",
+      "sources": [
+        {
+          "path": "photo2/R284A_REPORT.md",
+          "sha256": "c259a9f167a49fb77e3d6faf06602b0836e7c3df02e260b714f8eca05c4d512b"
+        },
+        {
+          "path": "photo2/R284B_SPECIFICATION.md",
+          "sha256": "05d610cf05cae46179a6913a49b777c959ee6775c18ee453f09ab766475cdd32"
+        },
+        {
+          "path": "photo2/R284B_REPORT.md",
+          "sha256": "05cb2b18366b8edbf7f28f7558d7d43bcb2b20c7e36cfab0477a7a4eda473c12"
+        },
+        {
+          "path": "photo2/R285_SPECIFICATION.md",
+          "sha256": "f823ad4d00681095ae76daff5fc525d82dba57efda74433f5791b94762492469"
+        },
+        {
+          "path": "photo2/R286_SPECIFICATION.md",
+          "sha256": "eeb5956157d473f843f44b145c24fb32f39010a69311481ecf7fb1cc6ec7c1e8"
+        },
+        {
+          "path": "photo2/R287_SPECIFICATION.md",
+          "sha256": "c68d705bf658e4bacd2f815a186c614f07fb185d5dd7efd79fdad2ce4f317ab9"
+        },
+        {
+          "path": "photo2/R288_SPECIFICATION.md",
+          "sha256": "38a5c1b58dfa2a441bee85cf507c0862812f49bbfff901274038f65412edebaf"
+        },
+        {
+          "path": "photo2/r285/results/review-manifest.json",
+          "sha256": "43ecfaf3b4a364808c66ff6aa30e38c3e87338efa89eb3d8a7a3b2bef1b4fea6"
+        },
+        {
+          "path": "photo2/r286/results/selection.json",
+          "sha256": "8548ce72811f29d001269e5deebd9c7e084e57350128c85731ea8e4fd391fda9"
+        },
+        {
+          "path": "photo2/r287/results/development-review-manifest.json",
+          "sha256": "d3f8123314846d0fd28efd55165c93cce168eabf11b9a977fe3345d72ea21e39"
+        },
+        {
+          "path": "photo2/r288/results/development-review-manifest.json",
+          "sha256": "197c044b952fc0a2fb5f0d96284b3a2bf870ccb24be7dccda3914e73d16adefe"
+        },
+        {
+          "path": "photo2/r288/results/confirmation-review-manifest.json",
+          "sha256": "73cd8cedec7a710fa7679de4029e6fb387dae69f76d4fd46f4c07ae715f4326b"
+        }
+      ],
+      "evaluation_only": true,
+      "runtime_rule": false,
+      "chronology": "R285 rejects T; R286 provides P1\u2013P6 judgments; R287/R288 preserve later P2/P5/C05/C02 assessments. Original images/coordinates are retained in their manifests/results; do not reinterpret algorithm diagnoses as user confirmations.",
+      "coordinate_anchors": {
+        "N07": {
+          "id": "C-2188-2437",
+          "seed": [
+            2189,
+            2436
+          ],
+          "case_source": {
+            "path": "photo2/r288/results/development.json.gz",
+            "sha256": "b7138f1489c32453a0aac054f44c4986c0a1b127b5b314ab4df91186300ae6ec"
+          },
+          "review_image": {
+            "path": "photo2/review/r288/N07-choice.png",
+            "sha256": "4c5fa97de65b84710c54fe4fcc13d0eba7bd9e2c4bc17499d5f2d1495469a0bf"
+          }
+        },
+        "N11": {
+          "id": "C-0514-0609",
+          "seed": [
+            514,
+            611
+          ],
+          "case_source": {
+            "path": "photo2/r288/results/development.json.gz",
+            "sha256": "b7138f1489c32453a0aac054f44c4986c0a1b127b5b314ab4df91186300ae6ec"
+          },
+          "review_image": {
+            "path": "photo2/review/r288/N11-choice.png",
+            "sha256": "b0ece14f77d5d2b2795de0ece3720c60d578b471b1465595837b2b3cef626a6f"
+          }
+        },
+        "N06": {
+          "id": "C-1452-2044",
+          "seed": [
+            1452,
+            2043
+          ],
+          "case_source": {
+            "path": "photo2/r288/results/development.json.gz",
+            "sha256": "b7138f1489c32453a0aac054f44c4986c0a1b127b5b314ab4df91186300ae6ec"
+          },
+          "review_image": {
+            "path": "photo2/review/r288/N06-choice.png",
+            "sha256": "b4bc942a34fe59897132d2592137f2f3b7e68ad50cc37401469f1b675e3743e3"
+          }
+        },
+        "P2": {
+          "id": "two-sided:Q-0088-0116",
+          "seed": [
+            1235,
+            312
+          ],
+          "case_source": {
+            "path": "photo2/r288/results/development.json.gz",
+            "sha256": "b7138f1489c32453a0aac054f44c4986c0a1b127b5b314ab4df91186300ae6ec"
+          },
+          "review_image": {
+            "path": "photo2/review/r288/P2-choice.png",
+            "sha256": "3242736d68328f77d0c9e3568d25fb43298709410365d48f98181bc8004711cd"
+          }
+        },
+        "P5": {
+          "id": "E5-1641-2976",
+          "seed": [
+            1642,
+            2980
+          ],
+          "case_source": {
+            "path": "photo2/r288/results/development.json.gz",
+            "sha256": "b7138f1489c32453a0aac054f44c4986c0a1b127b5b314ab4df91186300ae6ec"
+          },
+          "review_image": {
+            "path": "photo2/review/r288/P5-choice.png",
+            "sha256": "a9b7c4401c344eb2da88519b70a45a00b6b305ae4a5aaa071e067f46013bf3f7"
+          }
+        },
+        "C05": {
+          "id": "C-1477-0290",
+          "seed": [
+            1476,
+            288
+          ],
+          "case_source": {
+            "path": "photo2/r288/results/development.json.gz",
+            "sha256": "b7138f1489c32453a0aac054f44c4986c0a1b127b5b314ab4df91186300ae6ec"
+          },
+          "review_image": {
+            "path": "photo2/review/r288/C05-choice.png",
+            "sha256": "120077f385073dfca0178677bb86e588027226c9abeea3481a1346ec367dc95c"
+          }
+        }
+      }
+    }
+  ]
+}

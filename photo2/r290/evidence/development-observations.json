@@ -1,0 +1,17 @@
+{
+  "source": "Development-contact.png visual inspection before detector implementation; evaluator observations, not user boundary labels",
+  "collection_version": "R290-collection-v1",
+  "additional_category_cases": {
+    "separated-red": ["development-red-08", "development-red-07"],
+    "separated-yellow": ["development-yellow-01", "development-yellow-03"],
+    "paper-adjacency": ["P3", "P4", "yellow-worst", "development-yellow-04"],
+    "occlusion": ["P1", "P3", "Q14", "development-yellow-07"]
+  },
+  "limitations": [
+    "Clearly differentiated local photographic surfaces are visible in the separated examples; touching/overlap elsewhere around them remains possible.",
+    "Internal dark areas are covered, but no physical hole has independently verified ownership or exact pixels.",
+    "P4 selects a yellow R289 feature near the archived black anchor; R284B-lower-black selects a red R289 feature. Keep these mismatches explicit and show original anchors. They do not establish old-target ownership.",
+    "R215-R has a red R289 context classification despite its historical reflection interpretation; context classification is not physical identity.",
+    "One reserved yellow stratum is unfilled rather than relaxed."
+  ]
+}

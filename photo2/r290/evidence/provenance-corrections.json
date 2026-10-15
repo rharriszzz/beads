@@ -1,0 +1,15 @@
+{
+ "scope":"Postfreeze documentation/category corrections only; no detector, parameter, source pixels, case positions or inference changes",
+ "P4":{
+   "remove_categories":["black-reflection"],
+   "add_categories":["touching-same-color","historical-missing-boundary"],
+   "explanation":"R286_SPECIFICATION.md explicitly describes P4/e07 as two yellow beads near the edge. The old crop name auto-black was misleading; selection correctly chose the yellow feature. The prefreeze development-observations comment calling this a black anchor was erroneous. Original frozen records remain intact.",
+   "source":"photo2/R286_SPECIFICATION.md, User decisions table"
+ },
+ "R265-R00956":{
+   "remove_categories":[],"add_categories":[],
+   "display_alias":"R265/R267 R01284 neighborhood",
+   "explanation":"The frozen stable ID incorrectly says R00956. Coordinates (976,2668), selected feature (977,2665), are in R01284. Preserve the stable case ID and explicitly correct the historical name. R00956 at about (2275,1903) is not separately covered by this case.",
+   "source":"photo2/LOCAL_MAXIMA_R267.md"
+ }
+}

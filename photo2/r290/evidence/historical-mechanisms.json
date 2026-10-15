@@ -1,0 +1,29 @@
+{
+ "scope":"Evaluation documentation only; never detector inputs or verified pixel truth",
+ "sources":["photo2/R286_SPECIFICATION.md","photo2/R288_REPORT.md","photo2/R289_REPORT.md","photo2/LOCAL_MAXIMA_R267.md","photo2/r290/evidence/user-judgments.json"],
+ "cases":{
+  "P1":"User prefers J; fuller supports and geometric tail removal can misjudge valid illuminated continuation.",
+  "P2":"J truncates diffuse red material; small specular feature does not delimit the visible surface.",
+  "P3":"User prefers J in a yellow brightness-profile case; peripheral material/shadow ambiguity persists.",
+  "P4":"Two yellow beads near the edge; J separation/boundary poor, S acceptable per user. Old auto-black crop name is not target identity.",
+  "P5":"Single-pixel hue gating lost two maxima; shared watershed basin and bright detours crossed a meaningful dark seam.",
+  "N06":"M merges adjacent yellows with fewer than three dark-seam pairs; W positive-merge rule previously separated them.",
+  "N07":"M instability under background-low caused fallback to truncated J; coherent dark interface was omitted by pair-count logic.",
+  "N11":"Background-high perturbation merged supports; dark interface and upper-extension ownership remained unresolved.",
+  "C05":"Diffuse support restoration versus central leakage; user found S/M/B acceptable but imperfect.",
+  "Q06":"W previously corrected a new merger through affirmative seam evidence; no certified real bead identity.",
+  "Q14":"Instability forced J123 despite392 supported added pixels in W515; adequacy and stability conflicted.",
+  "red-worst":"User confirms all displayed old/new/reference marks belong to one physical bead; centroid disagreement is not distinct ownership.",
+  "yellow-worst":"Fixed landmark displacement points the wrong way; small bright patch and full visible-region centroid differ.",
+  "red-multiple-1":"Two R289 highlights lie in one historical interior; ownership cannot be certified from mask inclusion.",
+  "red-multiple-2":"Second invocation on the other independently detected feature in the same historical multiple example.",
+  "yellow-multiple-1":"Multiple bright features in one old support; shared material versus separate neighboring surfaces unresolved.",
+  "yellow-multiple-2":"Second invocation retains the competing highlight instead of selecting the best old-mask match.",
+  "R215-A":"User judged old colored support roughly70–90% visible material and inside the bead; no full boundary truth.",
+  "R215-B":"Qualitative conservative interior confirmation, not exact contour or centroid truth.",
+  "R215-R":"User confirmed reflection-only support; neither dark-body silhouette nor physical center was established.",
+  "R265-R00956":"Stable ID actually points to R01284: neighboring maxima, shadowed bead and paper-facing growth can cross real material interfaces.",
+  "R284B-upper-black":"Reflection/collar competition; upper reflection useful, dark-body ownership unknown.",
+  "R284B-lower-black":"Historically weaker lower secondary; current nearest independent feature has red context and cannot be assumed to recover that black target."
+ }
+}

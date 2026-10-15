@@ -1,0 +1,15 @@
+{
+  "schema": "R290-photographic-evidence-tests-v1",
+  "combination": "Independent continuous measurements; contradictions retained; no eight-gate decision tree. Local support and global completeness are separate claims.",
+  "tests": {
+    "T1": {"name": "Coherent darkness", "measurement": "Normal-side brightness versus central strip, persistence over five adjacent tangent samples; raw and sustained dark contrast retained.", "limits": "A coherent internal shadow can resemble an external edge."},
+    "T2": {"name": "Brightness continuity", "measurement": "Normal brightness drop and recovery, continuous bright-material cut penalty, with short profiles saved per segment.", "limits": "Diffuse illumination gradients can imitate edges; a bright detour does not erase a dark seam."},
+    "T3": {"name": "Color continuity", "measurement": "Brightness-normalized RGB side differences weighted by available illumination, coherent along tangent.", "limits": "Neutral highlights and dark pixels have weak material-color evidence."},
+    "T4": {"name": "Competing highlights", "measurement": "Inclusion of other independently detected features under primary, alternative and perturbed contours; pair separation profile.", "limits": "Sharing a region does not establish common physical ownership."},
+    "T5": {"name": "Internal darkness", "measurement": "Enclosed dark components, dark valleys inside the candidate and competing contour disagreement; retained as internal-versus-external ambiguity.", "limits": "No automatic physical hole or shadow identity claim."},
+    "T6": {"name": "Occlusion boundaries", "measurement": "Coherent side color transition or sustained one-sided brightness step without recovery, including edges without a deep valley.", "limits": "An edge alone does not identify the occluding physical bead."},
+    "T7": {"name": "Boundary completeness", "measurement": "Supported edge length, connected supported arcs, unresolved gaps, border contact and stability of each segment.", "limits": "The optimizer's mathematical closure is never photographic closure."},
+    "T8": {"name": "Measurement reliability", "measurement": "Illuminated core pixels, local contrast, resolution, parameter perturbation IoU and centroid spread, search expansion.", "limits": "Parameter sensitivity is not calibrated physical or ownership confidence."}
+  },
+  "extension_rule": "New mechanisms become permanent categories; improve general measurements, run all regressions and fresh reserved cases in a later round. No coordinate exceptions."
+}

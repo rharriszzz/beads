@@ -1,3 +1,40 @@
+# R290 delivered — STOP for batch review
+
+R290_REPORT.md, R290_REPRODUCE.md, R290_COVERAGE.md, R290_CHECKLIST.md and
+photo2/review/r290/index.html document the completed real-photo-only experiment.
+58 cases (41 development / 17 reserved), all primary and alternative contours
+partial/unresolved; complete bead-boundary reliability is NOT established.
+One edge-first harmonic graph-resistance detector; T1–T8 measurements, supported
+arcs and explicit unresolved closure. No geometric plausibility gates. Three
+failed development versions retained; no detector changes after reserved freeze.
+23 alternatives, 14 tests, 58 exact native crops / replay PNGs, two byte-exact result
+replays, 11197 historical blobs unchanged. Chromium 58-case desktop/narrow review
+and durable answer/revision/undo/ownership/export/reopen checks pass.
+Launch: photo2/review/r290/launch.sh then http://127.0.0.1:8290/.
+Feedback: photo2/r290/feedback/judgments.jsonl and immutable snapshots (Git-ignored).
+User red-worst same-bead statement and R215/R284–R288 judgments preserved as
+EVALUATION ONLY. Provenance corrections: P4 is yellow; frozen R265-R00956 ID actually
+refers to R01284; lower-black nearest feature is not certified old-target recovery.
+Production and all historical science unchanged. No synthetic scenes or renderer,
+Phase2/3, indexing or pattern work. Delivery receipt in r290/results/delivery.json.
+Next step ONLY user's batch review; no automatic R291 or reserved-case repair.
+Keep current model/reasoning; no /new needed.
+
+# R290 preparation — request remainder pending
+
+The user has started R290: automatic single-target bead boundaries from original
+photo evidence only; no synthetic/generated imagery or POV-Ray; coherent darkness
+primary; no rejection for shape/size/geometric implausibility. User confirms all
+marks in R289 red-worst.png belong to the same bead. This overrides the previous
+R289 stop for authorized R290 preparation.
+
+The message ends mid-sentence in section3 after “present in the original”. The
+missing remainder has been requested. Read photo2/R290_RECEIVED_REQUIREMENTS.md
+and photo2/r290/evidence/user-judgments.json. New ownership confirmation and hashed
+R215/R284–R288 photographic judgment sources are preserved; no detector or evidence-
+test collection has been implemented/frozen and no new scientific evaluation run.
+Continue after remaining requirements arrive; do not invent the omitted scope.
+
 # R289 completed experiment — STOP for user review
 
 Scientific commit `0ba852814c823e4d5df4125fd6d6f3063d063ef4` pushed and remote-verified.
