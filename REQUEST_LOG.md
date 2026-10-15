@@ -8693,3 +8693,24 @@ No R293 or automatic repair against new holdouts.
 R292 scientific commit `0de589597f2be1d0cdd04040b348445c5d4a4e97` pushed to origin/photo-2-strategy-v3;
 independent git ls-remote matches. Receipt in photo2/r292/results/delivery.json.
 Stop for user evaluation; no automatic R293 or holdout repairs.
+
+## R293 approved: clear centerline observations and conditional Phase2 readiness
+
+User approved analysis of completed R292 feedback and centerline-centered Phase1
+assessment, explicitly avoiding another peripheral-silhouette round and any Phase2/3
+implementation. Full feedback available/archived:4 A/3 partial/4 wrong-clear. Preserve
+red-multiple-1 acceptance despite machine bank warnings. No previous judgment repeated.
+Priority drift traced to historical failure reuse, spatially excluded holdouts and
+conflict/instability ranking.48 new well-observed targets frozen24/24; R292 detector
+unchanged, all77 old proposals exact; no holdout repair.1545 independent features,
+784near26/1204near40;385 photographic windows have features,358both-side/303with
+separator-supported context. These are not unique beads or completeness.28 historical
+location mismatches and271 close-feature ambiguities remain explicit. Corrected a
+false empty arc bin using actual photographic footprints; initial source/result saved.
+Experimental linked Phase1 export preserves pixels/positions/RGB,17 accepted exact
+historical regions and48 separate new hypotheses, unknown physical identity/centers.
+Eight-question new central review plus native overview, old24judgments read-only,
+separate feedback.12 tests,2 exact data/48PNG replays, native125case/385window/fullphoto
+checks,12002 old/52feedback preserved; Chromium responsive overview/review passes.
+Recommend a later bounded conditional Phase2 subset experiment; no complete inventory
+claim, no production/Phase2/3 work. Commit/push/verify then stop; no automatic R294.

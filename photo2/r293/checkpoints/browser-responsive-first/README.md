@@ -1,0 +1,1 @@
+First browser checks passed but visual inspection exposed a narrow-screen map retaining its desktop transform, leaving the photo mostly offscreen. Final UI refits maps/crops on resize, checks actual non-background image coverage, and collapses the historical judgment list. No photographic inference changed.

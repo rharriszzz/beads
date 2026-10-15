@@ -1,0 +1,1 @@
+Initial ±18px arc-window metric reported S083 empty despite an independent feature19.50px from the station (arc separation18.68px). This was a binning artifact, not a missing photographic observation. Final coverage uses actual26px Euclidean station footprints with local arc guard. No detector/inference change; original diagnostic preserved.

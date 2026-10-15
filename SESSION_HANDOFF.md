@@ -1,3 +1,32 @@
+# R293 delivered — STOP for user review
+
+Read photo2/R293_REPORT.md, R293_R292_REVIEW_ANALYSIS.md, R293_PRIORITY_POLICY.md,
+R293_COVERAGE.md and R293_REPRODUCE.md. R293 explicitly refocuses Phase1 on clear
+centerline/nearby independent observations; defer difficult peripheral silhouettes.
+Photo border versus arrangement exterior are distinct; neither certifies quality.
+Full R292 feedback archived/verified:11 events,4 A/3 partial/4 wrong-clear. User A
+for red-multiple-1 overrides analyst merger warning; counters remain diagnostics.
+All prior judgments preserved; no repeated questions or runtime coordinate rules.
+R292 inference UNCHANGED;77 old A/B/arc records exact.48 new well-observed targets
+frozen24development/24reserved before outcomes; decision freeze20:08:03Z preceded
+reserved evaluation, no tuning. All1545 source features retained,784 within26px,
+1204 within40px.385 inspection windows all contain illuminated features;358 have
+both-side observations,303 separator-supported context. These are NOT bead counts
+or complete coverage.271 nearby ambiguity pairs and28 old location discrepancies
+(22black/6red) remain, not28 verified missing beads. Arc-bin false gap preserved
+and corrected to actual photographic footprints. Central clear failures explicit.
+Experimental Phase1 export preserves original peaks, unweighted patch representative
+plus weighted alternative/RGB/uncertainty;17 exact accepted historical visible regions
+and separate48 new hypotheses. Physical centers/colors/identities remain unknown.
+Readiness YES for future bounded conditional Phase2 on selected observations, NOT
+verified full inventory. No Phase2/3, production adoption or inferred bead indexing.
+Launch photo2/review/r293/launch.sh at http://127.0.0.1:8293/:native coverage overview,
+8 new central questions,125 cases,24 historical cases read-only; separate durable
+feedback.12 photo tests,2 exact data/48PNG replays,125 native case/385 window crops,
+12002 old files/52 feedback files preserved; Chromium desktop/narrow overview and
+review pass. Delivery receipt photo2/r293/results/delivery.json after verified push.
+STOP for user review; no automatic R294 or further peripheral detector tuning.
+
 # R292 delivered — STOP for user evaluation
 
 Scientific commit `0de589597f2be1d0cdd04040b348445c5d4a4e97` pushed and independently remote-verified.
