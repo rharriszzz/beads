@@ -1,5 +1,7 @@
 # R291 delivered — STOP for user batch review
 
+Scientific commit `ac1c46157e7451c05ff1b10260eeacd6268e4fa6` pushed and independently remote-verified.
+
 See photo2/R291_REPORT.md, R291_REPRODUCE.md, R291_COVERAGE.md,
 R291_DIAGNOSIS.md/R291_SPECIFICATION.md/R291_CHECKLIST.md and review/r291.
 One target binary graph combines coherent dark separators, multiscale edges,

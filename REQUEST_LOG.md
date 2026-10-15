@@ -8652,3 +8652,6 @@ ownership reuse, separate durable feedback. No prior judgment becomes a runtime 
 16 tests,68 native crops/replay PNGs,3 exact result replays,11430 historical files and
 Chromium full review/feedback checks pass. Commit/push/remote receipt in r291/results.
 Stop for user review; no R292 or automatic holdout repair.
+
+R291 scientific commit `ac1c46157e7451c05ff1b10260eeacd6268e4fa6` pushed; independent ls-remote matches.
+Delivery receipt in photo2/r291/results/delivery.json. Stop for user batch review.

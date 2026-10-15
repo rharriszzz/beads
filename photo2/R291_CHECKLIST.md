@@ -28,5 +28,5 @@
 - [x] Chromium68 cases,14-case default, six answers, optional diagnostics, actual
   zoom/pan, ownership reuse, undo/reopen/export and desktop/narrow layouts pass.
 - [x] All primary cases remain partial; no complete-boundary accuracy/adoption claim.
-- [ ] Scoped scientific commit, push and independent remote verification.
-- [ ] Final delivery receipt and stop for user review; no automatic R292.
+- [x] Scientific commit `ac1c46157e7451c05ff1b10260eeacd6268e4fa6` pushed and independently remote-verified.
+- [x] Final delivery receipt saved; stop for user review; no automatic R292.
