@@ -1,3 +1,32 @@
+# R293 completed feedback archived — R294 next session only
+
+Read photo2/R293_REVIEW_ANALYSIS.md and
+photo2/r293/evidence/completed-r293-review-analysis.json. Complete local feedback:
+8 events/8 Start Here cases, all revision1;6 A/2 wrong-clear, no optional diagnoses,
+ownership answers or insufficient-photo judgments. Accepted A:central-2246-1448,
+central-2264-1469,central-2266-2199,central-0241-1177,central-1088-2841,
+central-0266-1021. Rejected clear-photo mergers:central-0408-0762 and
+central-2140-2471. Both have zero saved separator crossings/bank inclusions and
+min perturbation IoU>.99: stability/enforcement of measured arcs does not certify
+ownership or separator completeness. Keep their independent patches; rejected masks
+and region centroids are not trusted target material. Reflection acceptance concerns
+only the reflection, never a physical black-body center. No new ownership labels.
+All17 live feedback files archived byte-exact in completed-r293-review.tar.gz;
+standalone JSONL archive and per-file/snapshot/image provenance retained.8 snapshot
+versions/crops match the tracked package and native original photograph. Deterministic
+archive/analysis replay passes; live feedback and prior science/judgments unchanged.
+Six new qualitative acceptances supplement17 earlier accepted case versions, NOT
+23 certified distinct beads or calibrated pixel truth.40 new R293 cases unreviewed.
+Decision:PROCEED NEXT SESSION to R294, a bounded conditional Phase2 experiment on
+selected clear independent/reviewed observations. Preserve original Phase1 pixels,
+positions/colors, unknown ownership and uncertainty; allow unmatched/alternative
+correspondences. Phase2 must not manufacture/move/recolor/replace its observations.
+Coverage is feature availability, not a complete inventory; central clear failures
+remain explicit and difficult peripheral silhouettes may be deferred. No Phase3,
+global indexing or production adoption. This supersedes the old R293 review wait
+only for the next-session decision. STOP NOW:do not begin R294 in this session.
+Recheck archive:.venv/bin/python -m photo2.r293.completed_review --check
+
 # R293 delivered — STOP for user review
 
 Scientific commit `5e9e06c2c610d02ef5643aba381e3b5212fd52e3` pushed and independently remote-verified.
