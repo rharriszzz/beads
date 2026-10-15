@@ -15,8 +15,9 @@ if str(ROOT) not in sys.path:sys.path.insert(0,str(ROOT))
 
 def main():
     import argparse
-    from photo2.r296.common import read
+    from photo2.r297.common import read
     parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--objective',choices=['balanced','legacy','no-patches','no-boundaries','no-preservation'],default=None,help='Frozen run objective; validation is development, old reserved cases retrospective')
     parser.add_argument('--preset',choices=['smoke','medium','long'],default='medium')
     parser.add_argument('--output',type=Path,default=ROOT/'photo2/output/phase2-autofit')
     parser.add_argument('--resume',action='store_true')
@@ -33,35 +34,35 @@ def main():
     parser.add_argument('--review-only',action='store_true',help='Regenerate review from existing checkpoint; no optimization')
     parser.add_argument('--no-review',action='store_true',help='Skip export/review (useful for deterministic tests)')
     parser.add_argument('--serve',action='store_true',help='Serve output/review after generating it, on localhost')
-    parser.add_argument('--port',type=int,default=8296)
+    parser.add_argument('--port',type=int,default=8297)
     args=parser.parse_args()
     if args.hours is not None and args.seconds is not None:parser.error('Use --hours or --seconds, not both')
     if args.population is not None and args.population<4:parser.error('Population must be at least four to preserve hand/topology families')
     presets={'smoke':(120,8),'medium':(1800,600),'long':(14400,100000)}
     seconds,evaluations=presets[args.preset]
-    settings=dict(seed=args.seed,population=args.population,patience=args.patience,min_delta=args.min_delta,
+    settings=dict(objective=args.objective,seed=args.seed,population=args.population,patience=args.patience,min_delta=args.min_delta,
         count_min=args.count_min,count_max=args.count_max,
         seconds=args.seconds if args.seconds is not None else args.hours*3600 if args.hours is not None else seconds,
         max_evaluations=args.max_evaluations if args.max_evaluations is not None else evaluations)
     if not args.resume:
-        defaults=dict(seed=296,population=8,patience=256,min_delta=.0005)
+        defaults=dict(objective='balanced',seed=297,population=12,patience=256,min_delta=.0005)
         for k,v in defaults.items():
             if settings[k] is None:settings[k]=v
     for k in ('seconds','max_evaluations','patience','min_delta'):
         if settings[k] is not None and settings[k]<=0:parser.error(k+' must be positive')
     if args.seal and args.no_review:parser.error('--seal requires review/export')
     if args.resume and (args.count_min is not None or args.count_max is not None):parser.error('Count bounds are frozen at run creation')
-    from photo2.r296.common import run_lock
+    from photo2.r297.common import run_lock
     with run_lock(args.output):
         if not args.review_only:
-            from photo2.r296.search import Runner
+            from photo2.r297.search import Runner
             runner=Runner(args.output,settings,resume=args.resume);state=runner.run()
             print(f"Stopped: {state['stop_reason']}; {state['next_id']} proposals; {state['elapsed_seconds']:.1f}s cumulative search",flush=True)
             if state['stop_reason']=='signal':
                 print('Interrupted safely; checkpoint saved. Resume later or use --review-only.',flush=True)
                 return
         if not args.no_review:
-            from photo2.r296.review import finalize
+            from photo2.r297.review import finalize
             finalize(args.output,seal=args.seal)
             print('Review: '+str(args.output.resolve()/'review/index.html'),flush=True)
         elif args.seal:parser.error('--seal requires review/export')

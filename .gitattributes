@@ -1,3 +1,6 @@
 # Preserve exact frozen scientific Python sources, including their final blank line.
 photo2/r292/graph.py whitespace=-blank-at-eof
 photo2/r292/checkpoints/*/graph.py whitespace=-blank-at-eof
+
+# Python's standard CSV dialect uses CRLF; preserve frozen R297 export bytes.
+photo2/r297/results/*/exports/regions.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
