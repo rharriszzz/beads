@@ -1,5 +1,7 @@
 # R290 delivered — STOP for batch review
 
+Scientific commit `eff180c4f989058698413bc7d1595d98a73607ea` pushed and independently remote-verified.
+
 R290_REPORT.md, R290_REPRODUCE.md, R290_COVERAGE.md, R290_CHECKLIST.md and
 photo2/review/r290/index.html document the completed real-photo-only experiment.
 58 cases (41 development / 17 reserved), all primary and alternative contours

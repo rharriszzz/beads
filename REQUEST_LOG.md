@@ -8634,3 +8634,6 @@ preserved. 14 tests, 58 native crops and replay PNGs, two exact result replays,
 11197 historical hashes, Chromium full batch/durable feedback checks pass.
 See photo2/R290_REPORT.md and launch photo2/review/r290/launch.sh. Commit/push/remote
 receipt recorded separately. Stop for the user's batch review; no automatic R291.
+
+R290 scientific commit `eff180c4f989058698413bc7d1595d98a73607ea` pushed; independent ls-remote matches.
+Remote receipt in photo2/r290/results/delivery.json. Stop for batch review.

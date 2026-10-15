@@ -26,5 +26,5 @@
   alternative/ownership/revision/undo/export/reopen verified.
 - [x] Production and historical scientific results unchanged; no synthetic work,
   physical fitting, indexing, patterns or automatic next round.
-- [ ] Scoped commit, push and independent remote verification (delivery receipt).
-- [ ] Stop for user's batch review.
+- [x] Scientific commit `eff180c4f989058698413bc7d1595d98a73607ea` pushed and independently remote-verified; delivery receipt saved.
+- [x] Stop for user's batch review.
