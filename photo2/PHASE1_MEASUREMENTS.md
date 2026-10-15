@@ -1,4 +1,4 @@
-# Permanent photographic measurement contract — R286 clarification
+# Permanent photographic measurement contract — R287 clarification
 
 This contract supersedes earlier black-support descriptions in historical R282,
 R283 and R284A specifications. Historical experiments remain unchanged evidence.
@@ -79,3 +79,23 @@ separation; P6 R1/R2/R4 approximately equally acceptable. These judgments guide
 review, not hardcoded inference. R286 must solve P5 without breaking P2. Black
 remains reflection-only, with little effort on further smoothness optimization.
 See R286_SPECIFICATION.md. No production adoption during this experimental round.
+
+## R287 evidence-based choice and latest review
+
+Photographic brightness, color, and meaningful dark separations govern bead
+interior measurements. Geometric compactness, smoothness and morphological pruning
+are secondary aids. Internal darkness is not automatically a boundary. A spatially
+coherent dark seam between separately illuminated surfaces should generally prevent
+common ownership; uncertain shading/separation remains uncertain. Do not solve
+merging by removing narrow material or truncation by accepting any bright detour.
+
+Latest user judgments: P5 J good/S bad/B good; P2 J too small/S good/B equally good
+(not better); C05 S/M/B acceptable but not great, other methods very bad; C02 all
+bad and too near the edge for substantial extra effort. M and B match the five
+original colored examples but differ elsewhere. B false-splits internal shading;
+M is the preferred fuller candidate for J-versus-M investigation. These are review
+evidence, never hardcoded answers. Compare prefer J/prefer M/both/abstain from
+boundary, diffuse, neighboring-marker and stability evidence, never color alone.
+Centerline completeness and both nearby sides remain priorities; difficult edges
+may stay unresolved. R2 reflection-only default and R1/R4 alternatives remain.
+R287 is isolated research; no production inventory replacement or Phase2/3 work.

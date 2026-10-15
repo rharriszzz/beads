@@ -2052,3 +2052,18 @@ perturbation stability. Wider contours can leak; smoother contours can truncate.
 Never infer a dark body from a highlight or equate support crossing with complete
 centerline recovery. Fourteen new scientific contracts plus historical regression;
 all failed comparisons preserved. No production adoption before user selection.
+
+
+## R287 — evidence-based J/M photographic selection
+
+[Report](photo2/R287_REPORT.md), [review](photo2/review/r287/index.html),
+[reproduction](photo2/R287_REPRODUCE.md), [specification](photo2/R287_SPECIFICATION.md).
+Compare unchanged J/M/B with four-way decisions from direct diffuse-pigment routes,
+five-path dark-seam persistence and six perturbation families. Save native masks,
+centroids, profiles and every decision reason. Monotone darkening is allowed;
+renewed brightness beyond a coherent valley requires separation evidence. Preserve
+first-policy failure and freeze rules before new central confirmation. Both means
+alternative supports, never a union. Neither stability nor smoothness establishes
+ownership. The sole-survivor fallback can choose a truncated J when M is unstable;
+this measured failure prevents adopting the frozen selector unchanged. No new
+physical identity, production inventory, reconstruction or pattern is certified.

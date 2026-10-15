@@ -8426,3 +8426,59 @@ Scientific commit `ae3ae7d53558de39e24cfa752b28e1a70339ae6a` pushed to `origin/p
 91 tests,10293 historical blobs,31 native crops,two exact replay files,144 black
 reflection replays and Chromium52images/17tables/24sections/88links pass.
 Stop for user assessment; no production adoption or automatic R287.
+
+## R287 request — evidence-based J/M choice
+
+# Active R287 — photograph-based J versus M selection
+
+Read photo2/R287_SPECIFICATION.md, R287_CHECKLIST.md and r287/checkpoints after
+compaction. Latest user review: P5 J/B good, S bad; P2 J too small, S/B equally good;
+C05 S/M/B acceptable but imperfect; C02 all bad, peripheral edge, no rescue effort.
+M/B match five original colored masks but differ elsewhere; B shading false split
+makes M the fuller candidate. Compare unchanged J/M/B and interpretable four-way
+selector using native boundaries, coherent seams, diffuse retention, supported
+markers and all requested perturbations. Freeze new central confirmation before
+outputs/rules before evaluation; preserve failed choices and ambiguity. No color-only
+rule, physical identity inputs, manual labels, production adoption or Phase2/3 work.
+Commit/push/verify/clean then STOP for assessment, no automatic R288. Keep current
+model/reasoning; no /new needed. Preflight daisy, clean f676c85, correct branch,
+no stashes; remote fetched. Full scientific requirements saved before code changes.
+
+
+Complete user requirements preserved in photo2/R287_SPECIFICATION.md.
+
+## R287 completed scientific outcome
+
+# R287 completed experiment — STOP for user assessment
+
+Read photo2/R287_REPORT.md, R287_SPECIFICATION.md, R287_CHECKLIST.md,
+R287_REPRODUCE.md and photo2/review/r287/index.html; six saved checkpoints preserve
+requirements, first failure, frozen rules, confirmation and recommendations.
+Latest reviews: P5 J/B good, S bad; P2 J too small, S/B equally good; C05 S/M/B
+acceptable but imperfect; C02 all bad, peripheral, no rescue. M/B match the five
+original colored masks but differ elsewhere; B shading false split keeps M the
+preferred fuller candidate. Brightness/color/contextual seams govern, not shape.
+
+V1 outside/inside brightness ratio failed P2 and is preserved. V2 direct diffuse
+routes plus multi-path seam/stability vetoes selects M495px for P2 (295 supported
+added pixels), J511px for P5 because nominally good M664px merges under perturbation.
+Frozen independent 16 regions/63 cues: 29 M,18 J,6 both,10 abstain. Useful diffuse
+restoration and merger avoidance transfer, but N07/N11 select visibly truncated J
+when M is unstable; N12 retains a questionable M appendage. DO NOT adopt v2 unchanged.
+All failures and alternatives survive; no confirmation retuning or hybrid union.
+Near observations J39/M44/B42/selector36; crossings25/30/29/24; flanking1/2/2/1.
+Overlap groups are not bead counts; zero new distinct bodies certified. Conditional
+14 perturbations per candidate hold HSV/paper/palette/initial A fixed. Real precision
+and complete crossing-bead recovery remain unknown. Black R2/R1/R4 unchanged and
+reflection-only, with unknown physical owners; previous144 replays are not new tests.
+
+108 tests,10480 preserved historical blobs,45 exact native crops,two exact reruns;
+Chromium82 images/26 tables/28 sections/133 links, desktop/narrow checks pass.
+Production and Phase2/3 unchanged. Scoped delivery verification goes in
+photo2/r287/results/delivery.json. Next ONLY after user assessment: distinguish
+J adequacy from M instability, retaining uncertainty when those claims conflict,
+then newly frozen central confirmation. No automatic R288. Keep current
+model/reasoning; no /new needed. No manual bead-label request.
+
+
+Scientific results are frozen. Commit and remote verification will be recorded separately.
