@@ -14,6 +14,6 @@
 - [x] Independent contact/position/ray/support audits and before/after native comparison.
 - [x] Chromium desktop/narrow and download checks; visual inspection.
 - [x] Final report, root handoff/log, preservation receipt.
-- [ ] Scoped commit, push, independent remote-tip verification.
+- [x] Scoped commit, push, independent remote-tip verification.
 
 No automatic next round after delivery.

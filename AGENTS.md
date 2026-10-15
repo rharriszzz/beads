@@ -1,5 +1,7 @@
-# R296 implemented — reusable optimizer; stop after scoped delivery
+# R296 delivered — reusable optimizer; STOP
 
+Scientific commit `ee3b682e86e3450d298c4afde15208d2dea7dc4d` pushed and independently remote-verified.
+Receipt: photo2/r296/results/delivery.json.
 R296 is complete. Entry: python3 photo2/phase2_autofit.py (auto repository .venv).
 Read photo2/R296_REPORT.md, R296_REPRODUCE.md and r296/results/pilot/review/index.html.
 Autonomous full-necklace A/B/C/D search, counts/both hands/open+closed families,
@@ -16,7 +18,7 @@ exports,16000ray/100support replays, Chromium11images/28links pass.13047oldscien
 69feedback unchanged. Guard-only final repair preserves all scientific algorithms,
 first sealed models/results and archived source. Reports and receipts in r296/results.
 No Phase1/3, beads.pov, old experiment edits or synthetic photos. No automaticR297.
-Next: user's chosen unattended run/review. Stop after scoped push/remote verification.
+Next: user's chosen unattended run/review. No further automatic development.
 User-supplied GPT-6 Astra High context; no /new needed to run this standalone program.
 
 # R295 delivered — STOP for review

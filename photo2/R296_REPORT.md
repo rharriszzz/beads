@@ -228,3 +228,6 @@ pilot takes about three minutes of cumulative search. Native evaluation/export
 adds separate overhead and is not included in the search budget. Candidate records
 and final exports consume disk space incrementally; long runs retain completed
 scientific results rather than discarding failed alternatives.
+
+Scientific delivery: `ee3b682e86e3450d298c4afde15208d2dea7dc4d` pushed to `origin/photo-2-strategy-v3`
+and independently verified with `git ls-remote`. [Delivery receipt](r296/results/delivery.json).

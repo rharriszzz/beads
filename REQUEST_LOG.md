@@ -8809,3 +8809,7 @@ pair witnesses,16000ray/100support replays; Chromium11images/28links pass.
 13047old scientific files and69feedback unchanged. No Phase1/3/beads.pov changes,
 synthetic photographs or production adoption. Scoped commit/push/verification next;
 then STOP. User can run independently; later scientific changes require a request.
+
+R296 scientific delivery `ee3b682e86e3450d298c4afde15208d2dea7dc4d` pushed to origin/photo-2-strategy-v3;
+independent git ls-remote matches. Receipt: photo2/r296/results/delivery.json.
+All verification complete; metadata receipt commit follows. STOP: no automaticR297.
