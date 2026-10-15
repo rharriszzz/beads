@@ -15,5 +15,5 @@
 - [x] Shared records, important unresolved observations, black reflection-only and Phase2/3 intact.
 - [x] Tests, exact replays, native/history audit and rendered review.
 - [x] Six checkpoints, report, reproduction, permanent contract, handoff/log updated.
-- [ ] Scoped commit/push/remote verification and clean worktree (final delivery step).
+- [x] Scoped scientific commit pushed; remote matched and worktree clean. See delivery.json.
 - [x] STOP for user review; no adoption or R289.

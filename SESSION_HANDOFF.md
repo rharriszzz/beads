@@ -1,5 +1,7 @@
 # R288 completed experiment — STOP for user review
 
+Scientific commit `6ee7baa11d49c0cc61de772a02aad18410676255` pushed and remote-verified.
+
 Read photo2/J_AND_M_EXPLAINED.md (approximately2700 words, completed/hash-recorded
 before segmentation), R288_REPORT.md, R288_DIAGNOSIS.md, R288_REPRODUCE.md,
 R288_SPECIFICATION.md/R288_CHECKLIST.md and photo2/review/r288/index.html.

@@ -8548,3 +8548,13 @@ Keep current model/reasoning; no /new needed.
 
 
 Scientific findings are frozen; scoped remote verification is the final delivery step.
+
+## R288 remote delivery verification
+
+Scientific commit `6ee7baa11d49c0cc61de772a02aad18410676255` pushed to `origin/photo-2-strategy-v3`.
+Independent `git ls-remote` matches; worktree clean after scientific push.
+2694-word explanation,15 confirmation regions/69 cues,128 tests,10672 historical
+blobs,45 native crops,two exact reruns and79-image/25-table/27-section/129-link
+Chromium review verified. Preserve W recommendation and N11/Q14/weak-cue failures.
+No adoption, Phase2/3 work or R289. Separate receipt commit contains delivery metadata,
+checklist and handoff only. Stop for review; current model/reasoning, no /new needed.
