@@ -1,5 +1,8 @@
 # R294 implemented — STOP for review
 
+Scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed and independently
+remote-verified. Delivery receipt in photo2/r294/results/delivery.json.
+
 R294 explicitly authorizes a bounded Phase2 run, superseding the prior stop and
 earlier indexing restrictions only for this experiment. Read photo2/R294_REPORT.md,
 R294_SPECIFICATION.md, R294_REPRODUCE.md and review/r294/index.html.

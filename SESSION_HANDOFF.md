@@ -1,5 +1,9 @@
 # R294 implemented — STOP for review
 
+Scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed and independently
+remote-verified. Receipt:photo2/r294/results/delivery.json. Worktree clean after
+scientific push; separate delivery-metadata commit follows, with final remote check.
+
 R294 supersedes the prior stop only for the approved bounded real-photo Phase2
 experiment. Read photo2/R294_REPORT.md, R294_REPRODUCE.md and review/r294/index.html.
 221 conditional indices−20…200, anchored at top red crossing C-1497-0271 near

@@ -19,5 +19,6 @@
   data/visibility outputs,27exact PNGs and14image/26link Chromium checks pass.
 - [x] 12766prior scientific and69live feedback files unchanged; original R293
   completed review archive check passes. No synthetic images or renderer used.
-- [ ] Scoped scientific commit/push and independent remote verification; record
-  receipt, push metadata, verify final branch state, stop for user review.
+- [x] Scientific commit cfcd872 pushed and independently remote-verified; delivery
+  receipt records exact validation and artifact hashes. Separate metadata push and
+  final branch verification follow; stop for user review.

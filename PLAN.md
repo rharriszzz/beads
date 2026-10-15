@@ -1,5 +1,8 @@
 # R294 completed experiment — review next
 
+Scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed and independently
+remote-verified; receipt in photo2/r294/results/delivery.json.
+
 Read photo2/R294_REPORT.md and photo2/review/r294/index.html. Bounded221conditional
 positions−20…200 from clear top red crossing, original photograph/Phase1 preserved.
 Initial and revised literal annular helices compared; primary both contact-certified.

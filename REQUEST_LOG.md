@@ -8754,3 +8754,8 @@ candidate/history/10export and27PNG replays,9nativecrops, Chromium14images/26lin
 desktop/narrow pass.12766 prior science and69 live feedback files unchanged. No new
 Phase1 detector, synthetic images, renderer, Phase3 or production adoption. Commit/
 push/verify then stop for review; no automatic R295. Keep model/reasoning, no /new.
+
+R294 scientific commit `cfcd872361686518c539af393eb963383a7de1b8` pushed to
+origin/photo-2-strategy-v3; independent git ls-remote matches. Receipt in
+photo2/r294/results/delivery.json. Separate metadata commit then final remote check.
+Stop for user review; no automatic R295.
