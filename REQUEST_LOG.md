@@ -8558,3 +8558,48 @@ blobs,45 native crops,two exact reruns and79-image/25-table/27-section/129-link
 Chromium review verified. Preserve W recommendation and N11/Q14/weak-cue failures.
 No adoption, Phase2/3 work or R289. Separate receipt commit contains delivery metadata,
 checklist and handoff only. Stop for review; current model/reasoning, no /new needed.
+
+
+## R289 user request and delivered outcome
+
+User authorized independent photographic landmarks, historical calibration replay,
+geographic evaluation, one coherent-darkness test and fresh physical/synthetic
+comparison; commit/push/verify then stop. Full requirements in
+photo2/R289_SPECIFICATION.md; evidence in photo2/R289_REPORT.md.
+
+# R289 completed experiment — STOP for user review
+
+Read photo2/R289_REPORT.md, R289_REPRODUCE.md, R289_SPECIFICATION.md,
+R289_CHECKLIST.md and photo2/review/r289/index.html. Six checkpoints preserve work.
+R289 explicitly supersedes R288's proposed next task for this independent-landmark
+experiment. No production adoption, real global camera/light refit or pattern work.
+
+810/807historical observations/displacements replay exactly. Whole-photo independent
+maxima/85%small patches use no old masks or positions.432unique R275matches retain
+identical native maxima; old/new patch shift median0/RMS.434px. New geographic
+holdouts:44red/119yellow scored,207training,100pxbuffer. Color-specific constant
+patch RMS2.89/3.18px versus paired old masked2.86/3.15. Pooled(+4.935,-.304) gives
+3.01/3.17px. Weighting adds negligible value; geographic/patch-axis fits fail10%gain;
+darkness(twoaxes/fivetracks) gains6%red but regressesyellow, not recommended.
+
+Recommend unweighted small bright-patch centroid plus peak/width/axis/brightness,
+threshold sensitivity and explicit alternatives. Optional R275-interior proxy is
+NOT a visible-surface or physical center. Training90%radius4.575px covers81.8%red/
+93.3%yellowheldout: not universal confidence. J/W targets disagree; Q14 remains.
+1545features/147268thresholdedmaxima are not beads. HeldoutR27595red/123yellow:
+36red/4yellowmultiple,3redmissing; only44/119eligibleunique scored. Ownership unknown.
+
+12fresh same-dimension rounded-annular scenes, paired specularon/off/pure/ID;
+exact resolved Python/POV ownership. Constant physical offset fails changed-light
+transfer7.89/9.80/7.92RMS(red/yellow/black); knowngeometry/light/identity2.16/2.08/.23
+pairedRMS, but diffuse red13.27/yellow9.81pxfailures remain. Eligible151heldout:
+101unique,2multiple,48missing. All117retainedfeatures include11backgroundfalse,
+106purepatches(one<40pxexposure). No synthetic background-rule repair. Specular-off
+retains13uniqueeligibleyellow,no red/black. No recovered real identities.
+
+48tests,10875oldblobs,13nativecrops,5byte-exactdata/4exactrasterreplays; Chromium
+24images/6tables/22expandable/20links desktop/narrowpass. Technical failures and
+initial sources retained. Scoped scientific commit/push/remote receipt in
+photo2/r289/results/delivery.json. Next only after review: assess independent-feature
+ownership/specularity evidence, not contour optimization or automatic R290.
+Keep current model/reasoning; no /new needed.
