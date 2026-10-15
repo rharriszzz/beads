@@ -226,3 +226,5 @@ search is launched here. Stop for user review; no automatic R298.
 [native/preservation verification](r297/results/verification.json),
 [browser verification](r297/results/browser-check.json),
 [delivery receipt](r297/results/delivery.json).
+
+Scientific delivery: `2de63deaba2d366837a1faba3775cde45283155b`, pushed to `origin/photo-2-strategy-v3` and independently verified with `git ls-remote`.

@@ -1,3 +1,36 @@
+# R297 delivered — inspectable full-loop optimizer; STOP
+
+Scientific commit `2de63deaba2d366837a1faba3775cde45283155b` pushed and independently remote-verified.
+Receipt: photo2/r297/results/delivery.json. R297 is complete; no automatic R298.
+Read photo2/R297_REPORT.md, R297_DIAGNOSIS.md and R297_REPRODUCE.md.
+Review: photo2/r297/results/pilot/review/debug.html (offline or localhost).
+Entry: python3 photo2/phase2_autofit.py; auto repository .venv, no AI supervisor.
+R296 station normalization caused most local regression. Compact local metric/phase
+restoration, contact-gated phase transport, section-balanced material scoring,
+soft prior-fit preservation, broader initialization and seam alternatives delivered.
+768-proposal final pilot / 720.8s: native train large regions63.25→67.21%;
+validation74.54→74.11%; retrospective reserved64.80→61.67% (no fresh holdouts).
+R295 local large mean71.51(original)/63.11(R296)→73.46%; patches93.17%.
+Near65 improves41.37→65.46%;195 returns182→195 at99.34%;33 regresses77.55→49.07%.
+19/32 sections improve >1pp,7 regress >1pp; clear failures remain, no adoption.
+Primary2337/hand−/closed360 turns; four feasible families, alternative counts/open
+cuts/cameras/shapes retained. Periodic image reference does not prove a physical join.
+795 supported sites on common R296 observations (763 prior);850 with buffer evidence;
+1487 unsupported,533 visibility<.1. Minimum plane margin.008825 source units.
+Clickable whole-photo32-section debugger: raw pixels, R295/R296/alternatives,
+measured supports vs predictions, ownership beam, color/paper/cuts/occlusion,
+index changes, contact and per-family seam evidence. All positions retained.
+Four128-trial objective ablations,128-trial preservation control,512-trial medium,
+failed transfers/collisions and source histories preserved. Larger optimization is
+not yet recommended before reviewing failures; late gains small, reserved regresses.
+28 contracts pass including real SIGTERM and35→42 restart/crash equivalence;
+10193 positions/30369 contact witnesses/16000 rays/100 supports replay; native photo
+exact,13993 prior files unchanged. Chromium32 sections/6 views/43 links desktop,
+narrow and offline pass. R294–R296, Phase1 observations, feedback and beads.pov intact.
+Final pilot sealed before retrospective evaluation; cannot resume. Future studies
+use a new output and treat all exposed cases as retrospective. No Phase1/3, pattern,
+production adoption or automatic further development. STOP for user review.
+
 # R296 delivered — reusable optimizer; STOP
 
 Scientific commit `ee3b682e86e3450d298c4afde15208d2dea7dc4d` pushed and independently remote-verified.
