@@ -1,0 +1,16 @@
+../home/rharris/git/beads/photo2/r305/tests.py:34: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/rharris/git/beads/photo2/r305/results/primary-errors.csv' mode='r' encoding='UTF-8'>
+  rows=list(csv.DictReader((BASE/f'results/{n}-errors.csv').open()));self.assertEqual(len(rows),len(c['records']))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+F....
+======================================================================
+FAIL: test_group_counts_and_exports (photo2.r305.tests.Contracts.test_group_counts_and_exports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/rharris/git/beads/photo2/r305/tests.py", line 33, in test_group_counts_and_exports
+    self.assertEqual(sum(g['unmatched_observations'] for g in gs),sum(r['index'] is None for r in c['records']))
+AssertionError: 1 != 33
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.867s
+
+FAILED (failures=1)

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r305/diagnose.py", line 86, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r305/diagnose.py", line 29, in main
+    if obs['color'] not in ['red','yellow'] or not obs.get('measured_support',{}).get('runs'):continue
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

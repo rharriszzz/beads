@@ -1,3 +1,37 @@
+# R305 completed — 1,041-position inspection; STOP
+
+Scientific commit / independently verified push: photo2/r305/results/delivery.json.
+Read photo2/R305_REPORT.md and R305_REPRODUCE.md.
+Launch photo2/review/r305/launch.sh; three models, indices−40…1000,64guards/end.
+Real recentering/Follow toggle,±1/10/50,index box/slider,native owner picking,
+vectors-only/boundaries-only/combined presets,selectable visible boundaries,
+interactive magnitude/signed plots,21groups/model and17raw/annotated examples.
+Closed R293 trace unwrapped at storage seam nearprimary574; no new registration.
+R304 centers,phase,core owners/intensities exact; same parameters/light and twist.
+Starting red interiors96.6–99.7% assigned, not full contours. B15 uncertain outer
+polygon92.6%;±3px controls76.0–99.7%;7.2% misses unobstructed shape. No unique
+shape/orientation/camera cause identified. Crossing103 only37.4% assigned;
+R294zero remains a landmark, never phase reset. Hand− inherited owner differs.
+Primary splice curvaturepeak.06266/radius at31;4→24 diagnostic lowerspeak.03841
+and earlypenetrating9→7 but worsens30–79strongRMS13.61→15.04. No adoption.
+316candidates/105strong; primary40confident conditional/267ambiguous/9unmatched,
+65gap-sensitive;106old primary assignments unchanged. StrongRMS10.39 overall;
+errors fluctuate/jump/recover.760–809RMS6.11 with41.2%colored omission;
+810–859RMS15.23 then860–909recovers6.89. No demonstrated physical index drift.
+All3493spatialpairs/model: primary39uncertified/37penetrating inclguards,
+29/27touchrequested; calibrated9/8inclguards,6/5touchrequested. Extra failures
+beyond1000 only; none new330…1000. Hand− allseparated,minmargin.121301radius.
+64→96guards zero requested owner/intensity/unknown changes; extra guard-only
+pixels explicit. Halfpixel centroid median/max .089/2.097px primary;
+7/5/8marginal lobe presence changes acrossfamilies. Allbodies retained.
+43.49sforward+guards,16.22sanalysis,~4sdiagnosis,92.45sverification;
+peakRSS613MiBforward/587MiBverify.17057original tracked files verified;
+additive handoff preserves prior text. Output-routing failure caught/restored
+byte-exact, initial support/count failures retained.7contracts and36browser
+model/locations inclsteps,slider,category,graphclick,offline,rawpixel/launcher
+pass. Windowsdispatch mocked. No optimization,FFT,colorpattern orPhase3.
+Stop for maker review; recorded questions are deferred, no automaticR306.
+
 # R304 completed — 350-position forward review; STOP
 
 Scientific commit `b76590fbf15f094936fdbb095d2c52e4efe002e0` pushed and independently remote-verified.
