@@ -1,3 +1,36 @@
+# R303 completed — height-coupled pitch and cross-region test; STOP
+
+Scientific delivery receipt: photo2/r303/results/delivery.json.
+Read photo2/R303_REPORT.md and R303_REPRODUCE.md.
+Launch photo2/review/r303/launch.sh; reused viewer,80 models including6 guard audits.
+One bounded campaign574.99s including83.60s sensitivities; no additional fitting.
+Source verified: D=2R, usual H=.70D; row advance=.65*1.05D=.975H;
+per-address advance=row/turn. Neither bead-center travel nor string length.
+Independent pitch, fixedc=.975 and shared fittedc; both hands, identical S1 evidence.
+Local smooth±2% advance is an exploration scale, not pointwise mechanics/string strain.
+No15–30 density gate: stable33-position S2 control and54-position source S1 retained.
+S1 then frozen-shape/camera/light S2/S3 local transfer, then13s/family shared refinement.
+Best shared training incumbent independenthand+ impliedc1.10680; calibratedhand+
+c1.12163 (15.0% above source) but worse transfer. These are not identified constants:
+freec is algebraically freepitch; these hand+ incumbents kept shared parameters in joint.
+Source starts uncertified; found feasible source alternatives retain geometry failures.
+Sourcehand+ S1extent5.05px/paper35.9%; cannot accept coverage/reflection gains alone.
+Primary S1 train/held RMS2.01/3.16; S2 7.51/4.99; S3 8.74/7.79.
+Primary versus R301 sharedhand+: extent5.90→.21; edges6.32→2.27/11.34→3.07;
+colored omission improves but pooled train/held reflection5.98/5.20→6.75/5.64.
+S2 paper and S3 valley/comparison reflections regress. No adoption or physical truth.
+Primary face31.35px/axial.673/elevation79.71 remain conditional; ambiguity persists.
+Final valid sensitivities4–5 scale directions, not rank/CI. Source complete-column
+matrices unavailable due contact-invalid perturbations, not zero photographic info.
+36 selected153-position models and36 extended217-position geometries certify.
+Six dense sourcehand− fits are truncation-sensitive (144–163 photographic addresses);
+extra lobes/common errors up to11.67px.6 separate217-position native audits retained;
+failures persist, no refit. This is not a clean falsification of c=.975.
+6contracts,36exact selected replays/5508positions/19650witnesses;16856prior files
+unchanged. Viewer raw/desktop/narrow/offline/launcher checked; Windows dispatch mocked.
+No new synthetic campaign, whole-loop optimization, Phase3, indexing or adoption.
+Commit/push/independent remote verification recorded in delivery receipt. STOP for review.
+
 # R302 completed — sensitivity-guided local fitting; STOP
 
 Scientific commit `91811939b427c2fe46f7b6ab1e7a50819c4313fe` pushed and independently remote-verified.
