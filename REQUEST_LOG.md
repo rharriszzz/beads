@@ -8896,3 +8896,52 @@ test deserves a new authorization; none is started. Stop after verified delivery
 
 R302 scientific delivery `91811939b427c2fe46f7b6ab1e7a50819c4313fe` pushed and independently remote-verified.
 Receipt:photo2/r302/results/delivery.json. STOP; no second section begun.
+
+
+## R306 — automatic full-circuit reconstruction (authorized)
+
+Maker requests implementation AND execution on photo-2-strategy-v3, with a bounded
+60–90 minute fitting campaign if resources permit. Preserve R293 photographic
+reference and every historical result; fit one separate smooth periodic planar
+geometric axis in true arclength, no R304/R305 splice. Retain physical open/closed
+alternatives, counts around 2000–2700+, both hands, bounded twist and smooth stitch
+corrections, hard full-body nonintersection including nonlocal and seam contacts.
+Reuse positive interiors, uncertain dimensions/contours/envelopes, material/paper,
+reflections, separator and saved FFT evidence. No Phase1 rerun, synthetic campaign,
+pattern or Phase3. Automatically diagnose and refine; common-evidence historical
+comparison, native first-hit verification, resumable Python workflow, interactive
+review, tests, commit/push/independent remote verification; then STOP. No routine
+maker classification or intermediate selection approval requested.
+
+Implementation plan: integrate R298 axis/camera and R297 physical kernel; periodic
+true-arclength inversion; R302 grouped sensitivity hierarchy; atomic R297-style
+transactions and source/evidence guards. Use a 3600-second initial cumulative
+search budget, continue up to 5400 seconds if progress supports it. All historical
+comparison is retrospective. Details and outcomes: photo2/R306_REPORT.md.
+
+R306 execution update: exploratory global stage completed428 proposals in588.92s.
+A uniform4px envelope weight was corrected to each saved max(4,uncertainty) edge
+scale; original source, outcomes and rejection records retained. Main seed306
+starts from its physically feasible population. Independent seed307 receives900s
+from cold historical starts. Main budget3600s plus180s final native refinement;
+planned aggregate fitting about88minutes. Periodic native training audits retain
+earlier incumbents for final ranking; no comparison feedback enters fitting.
+R306 qualification:8geometry/evidence contracts, real interruption/restart and
+post-write recovery,9native models,81browser locations including narrow/offline;
+initial wrapper-argument404 and responsive selector overflow failures retained.
+All316R305 observation coordinates are unchanged within811preserved candidates.
+
+
+### R306 delivered outcome
+
+Executed 87.78 aggregate fitting minutes: 428 exploratory, 2942 main and 684
+independent proposals, then 12 native trials (8 distinct). Native training froze
+candidate2840, N2405/hand−/open on a separate closed geometric axis. All7166 close
+pairs certify; three other count/hand/topology families retained. Common photographic
+comparison is mixed: improved dimensions/boundaries but material, paper, separator
+and some comparison-reflection regressions. No established overall improvement.
+All original observations, prior science and failures retained; no Phase3/pattern.
+Automated native diagnosis, fixed-owner/gap controls, full-body independent audits,
+restart/crash contracts and9-model/81-location Chromium review delivered.
+See photo2/R306_REPORT.md, R306_REPRODUCE.md and r306/results/delivery.json.
+Stop after commit/push/independent verification; no automatic R307.

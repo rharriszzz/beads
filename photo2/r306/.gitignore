@@ -1,0 +1,8 @@
+# Proposal bytes are retained locally and transported losslessly in JSONL chunks.
+/results/*/candidates/
+/results/*/.writer.lock
+# Qualification graphics/rasters are reproducible test output, not final models.
+/results/qualification/review/
+/results/qualification/exports/*-raster.npz
+/results/qualification/browser-*.png
+__pycache__/

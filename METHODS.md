@@ -1,3 +1,13 @@
+# R306 — periodic global geometry and native verification
+
+See [report](photo2/R306_REPORT.md) and [reproduction](photo2/R306_REPRODUCE.md).
+Use one periodic geometric axis distinct from the unchanged photographic prior,
+true arclength, bounded smooth fields, full-body hard contact gates and native
+final ranking. Preserve competing counts/hands/topologies and fixed-owner controls.
+Grouped silhouette/material consistency takes precedence over specular score.
+R306 shows that rematching gains can coexist with material and comparison regressions;
+physical feasibility and lower objective do not establish recovered geometry.
+
 # Methods collection — bead-rope reconstruction
 
 ## R286 — contextual markers and protected dark-boundary comparisons

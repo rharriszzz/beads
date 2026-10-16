@@ -1,3 +1,30 @@
+# R306 completed — whole-circuit fitting; STOP
+
+Scientific commit and independently verified push: photo2/r306/results/delivery.json.
+Read photo2/R306_REPORT.md and R306_REPRODUCE.md. Launch photo2/review/r306/launch.sh.
+Entry: python3 photo2/phase2_global_fit.py; restart, native ranking, diagnosis,
+independent verification and offline review. No AI supervisor required.
+One periodic planar geometric axis, separate from unchanged R293 photographic
+reference; true arclength, continuous phase/frame, no R304/R305 splice or reset.
+87.78 aggregate fitting minutes (overlapping main/cold runs), 4054 search proposals
+plus12 native trials/8 distinct settings; all failures and earlier sources retained.
+Primary2405/hand−/open, closed geometric axis;7166 spatial pairs certify,
+minimum support margin.277876units/.1557radii. Four feasible hand/topology families.
+269strong reflections all matched; RMS9.08px,185ambiguous,49gap-sensitive.
+Fixed-initial owners worsen10.07→10.93px/11missing lobes; rematched9.08 is not
+physical identity recovery. All811 observations and all physical bodies retained.
+Comparison versus R297: width12.23→6.92px, boundary5.83→5.51; paper3.45→7.80%,
+all447-region containment65.60→60.27%. R298 comparison RMS8.80→10.02 and width
+5.12→6.92 regress. No established overall photographic improvement or adoption.
+Starting reds old−1/0 assigned12.0/52.1%; crossing103 improves37.4→80.2%.
+Regional jumps/recoveries persist; no demonstrated physical index drift or unique cause.
+Eight contracts, real SIGTERM/restart/post-write crash;9 native model audits,
+21975positions/62487witnesses,81browser locations,raw/narrow/offline/launcher pass.
+Halfpixel median/max.108/2.906px,2marginal lobes; original science byte-preserved.
+Comparison evidence retrospective, prior qualification exposure explicit.
+Another unchanged campaign is not justified before structural/ownership controls.
+STOP after delivery. No automatic R307, Phase3, pattern inference or beads.pov edits.
+
 # R302 completed — sensitivity-guided local fitting; STOP
 
 Scientific commit `91811939b427c2fe46f7b6ab1e7a50819c4313fe` pushed and independently remote-verified.
