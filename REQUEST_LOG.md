@@ -8846,3 +8846,6 @@ Protocol: photo2/R299_SPECIFICATION.md.
 R299 completed: strict targets failed, no adoption. See photo2/R299_REPORT.md.
 Maker asked to finish without further picky investigation; close out layout,
 commit/push/independent verification and STOP. No additional optimization.
+
+R299 scientific delivery `bee32d3972efd6915056a9e663f57759ab908d01` pushed and independently remote-verified.
+Receipt photo2/r299/results/delivery.json. STOP; no further optimization or R300.

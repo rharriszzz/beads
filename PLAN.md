@@ -1,5 +1,8 @@
 # R299 completed — strict reflection test failed; STOP
 
+Scientific commit `bee32d3972efd6915056a9e663f57759ab908d01` pushed and independently remote-verified.
+Receipt: photo2/r299/results/delivery.json.
+
 R299 completed the authorized bounded common-light experiment without requiring
 R298 review. Read photo2/R299_REPORT.md and R299_REPRODUCE.md.
 Launch photo2/review/r299/launch.sh; original R298 review remains an intact tab.
