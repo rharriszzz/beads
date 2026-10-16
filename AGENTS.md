@@ -1,5 +1,8 @@
 # R300 completed — approximate reflections retained; STOP for review
 
+Scientific commit `1515a886a3d359f233ae861a3f865a263f433873` pushed and independently remote-verified.
+Receipt: photo2/r300/results/delivery.json.
+
 R300 supersedes R299's strict 3px/5px goal: no pixel-perfect reflection target.
 Read photo2/R300_REPORT.md and R300_REPRODUCE.md.
 Launch photo2/review/r300/launch.sh; original R299/R298 and R297 debuggers intact.

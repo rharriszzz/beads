@@ -8866,3 +8866,6 @@ Magnitudes roughly stable; signed regional bias and sparse ownership prevent a
 physical cumulative-index/closure conclusion. Retain approximate light. Current
 R297 optimizer needs structural integration before another whole-necklace run.
 See photo2/R300_REPORT.md and photo2/r300/results/delivery.json. STOP for review.
+
+R300 scientific delivery `1515a886a3d359f233ae861a3f865a263f433873` pushed and independently
+remote-verified on photo-2-strategy-v3. Receipt:photo2/r300/results/delivery.json.
