@@ -1,3 +1,31 @@
+# R298 delivered — structural calibration; STOP for maker review
+
+R298 performs the approved bounded geometry calibration; no automatic R299.
+Read photo2/R298_REPORT.md, R298_SPECIFICATION.md and R298_REPRODUCE.md.
+Launch photo2/review/r298/launch.sh: automatic .venv, localhost and WSL browser.
+Sixteen uncertain analyst visible contours,193 native transverse profiles,96 eligible
+(70development/26comparison); all retrospective.32 preserved-pair dark profiles.
+Global paper/shadow failures retained; local-side comparisons and pre-fit visual
+screen frozen. No highlights as centers, masks as verified bodies or exact gaps.
+Camera image rotation was missing; old yaw is a gauge. Axial/face ratio .700→.582;
+transverse/face3.241→3.422; reference face29.62→30.99px, rope96.02→106.06px.
+Planar16-node axis recalibrated with ±45px freedom; fitted nodes−5.15…+4.56px.
+Comparison native width MAE12.23→5.12px; axial3.99→2.34; common-edge4.15→2.13.
+75/96 width errors improve>1px,15 regress. Principal no-worse-contradictions gate
+NOT met: comparison separator3.05→5.34px; paper3.45→8.35%; all large supports
+65.60→59.75%. Near33/65/195 primary regresses, especially19599.34→45.05%.
+Sixteen fits/3602calls/454.9s plus81physical trials/239.8s; failed fits retained.
+Primary49 hand−/open/N2438 conditional; hand−closed2337 and hand+open/closed2709
+retained. All four full-chain certified; primary minimum plane margin.262455.
+FFT saved R249 peaks modestly favor hand+ alternatives; no hand/count identification.
+Nine contracts,81trial physical/dimensional replay, deterministic camera-control
+replay,40000rays/270supports/fiveFFT replays;16192 protected old files unchanged.
+Native five-model exports5361979rays/3875unknowns preserve all positions.
+Chromium51locations/fourfamilies/raw-invariance/links/desktop/narrow/offline pass;
+actual launch.sh HTTP tested, Windows browser dispatch mocked. No adoption,
+Phase1/3, pattern, beads.pov edits or further optimization. Delivery receipt:
+photo2/r298/results/delivery.json. STOP for maker review.
+
 # R296 delivered — reusable optimizer; STOP
 
 Scientific commit `ee3b682e86e3450d298c4afde15208d2dea7dc4d` pushed and independently remote-verified.

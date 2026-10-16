@@ -2091,3 +2091,20 @@ exact first-hit support, common-light diagnostic and analytic contact certificat
 Initial versus slow axis/spacing revision; all prior Phase1 observations preserved.
 High containment can prefer an interpenetrating/wrong-index model. Require physical
 feasibility and retain mismatches; no production or Phase3 adoption. Review only.
+
+
+## R298 — photographic structural calibration
+
+Separate physical axial/face ratio, projected outline, center displacement, visible
+dark seam and empty gap. Freeze uncertain exposed-contour landmarks and locally
+referenced transverse paper/material profiles before model fitting. Use actual
+annular support/visibility to infer a planar axis from both edges; never equate an
+image-edge midpoint with the physical axis. Fix a world-unit gauge and constrain
+image scale by bead diameters as well as rope width. World yaw is a gauge for a
+freely deprojected plane; camera image rotation changes foreshortening and must be
+tested separately. Contact penalties guide search, but exact full-chain certificates
+gate every selected model. Keep reciprocal FFT basis/alias ambiguity independent.
+
+[R298](photo2/R298_REPORT.md) reduces dimensional errors with thinner beads and a
+wider minor radius, but regresses native material/neighbor alignment. This is a
+calibration alternative, not an adopted reconstruction. Stop for maker review.

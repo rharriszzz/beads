@@ -8813,3 +8813,19 @@ then STOP. User can run independently; later scientific changes require a reques
 R296 scientific delivery `ee3b682e86e3450d298c4afde15208d2dea7dc4d` pushed to origin/photo-2-strategy-v3;
 independent git ls-remote matches. Receipt: photo2/r296/results/delivery.json.
 All verification complete; metadata receipt commit follows. STOP: no automaticR297.
+
+
+## R298 — calibrate structure before further whole-necklace optimization
+
+User reports excessive modeled bead axial width, incorrect physical-axis reference
+and insufficient rope transverse width. Authorizes independent photographic
+measurements, controlled sensitivities, bounded physical joint calibration, both
+hands/topologies, FFT checks, native graphical review with WSL launch.sh, preservation,
+tests, scoped commit/push/remote verification, then stop. No arbitrary percentages,
+long R297 search, Phase3, pattern inference or production adoption.
+
+Delivered calibration details and limits: [R298 report](photo2/R298_REPORT.md).
+Dimensional errors improve, but native separators/material/local correspondence
+regress. The no-worse-contradictions success criterion is not met; all alternatives
+and failures remain. No automatic R299. Delivery receipt is in
+photo2/r298/results/delivery.json.
