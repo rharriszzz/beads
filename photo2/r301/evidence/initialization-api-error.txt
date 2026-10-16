@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r301/experiment.py", line 114, in <module>
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['synthetic','independent','refine','joint']);a=p.parse_args();globals()[a.stage]()
+                                                                                                                              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r301/experiment.py", line 52, in independent
+    st=run(BASE/'results'/name,s,hand,seed,1536,'de',start=historical_start(s,hand));b=best(st)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r301/experiment.py", line 18, in historical_start
+    p[12:14]=line[k]-s['center'];t=line[k+1]-line[k-1];t/=np.linalg.norm(t);u=np.array(s['tangent']);p[14]=np.degrees(np.arctan2(np.cross(u,t),u@t));p[16]=(old.phase[k]+np.pi)%(2*np.pi)-np.pi
+                                                                                                                                 ^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py", line 1680, in cross
+    raise ValueError(
+ValueError: Both input arrays must be (arrays of) 3-dimensional vectors, but they are 2 and 2 dimensional instead.

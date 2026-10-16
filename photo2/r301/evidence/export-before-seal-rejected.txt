@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r301/export.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r301/export.py", line 56, in main
+    seal=read(BASE/'results/fit-freeze.json');sections=read(BASE/'evidence/frozen.json.gz')['sections'];manifest=[];t0=time.monotonic()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r282/common.py", line 28, in read
+    path = Path(path); raw = path.read_bytes()
+                             ^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/rharris/git/beads/photo2/r301/results/fit-freeze.json'
