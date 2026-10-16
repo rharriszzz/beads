@@ -1,3 +1,31 @@
+# R300 completed — approximate reflections retained; STOP for review
+
+R300 supersedes R299's strict 3px/5px goal: no pixel-perfect reflection target.
+Read photo2/R300_REPORT.md and R300_REPRODUCE.md.
+Launch photo2/review/r300/launch.sh; original R299/R298 and R297 debuggers intact.
+All19 saved native exports/52 observations/frozen owners retained;45 stronger.
+Common full photographic circuit, signed tangent/normal errors, local diameters,
+16 geographic bins, actual index seams, sparse coverage and ownership sensitivity.
+Magnitudes show no convincing progressive growth; signed regional bias remains.
+R297/R298-primary/R299 parallel slopes−3.18/−6.76/−9.66px per circuit.
+R297 and hand+ open have least combined trend among fully predicted directional
+families; no unique family/count/hand inference.35/45 primary owners ambiguous.
+Index-equivalent residuals are not physical integer errors; local matching can hide
+whole-turn slips.637px longest observation gap; ~480px unobserved after primary
+seam at49.16% circuit. Stable physical indexing/closure NOT established.
+Exactly2 crossed fixed-light controls: phase, not roughness, strengthens signed
+bias. No optimization/new geometric correction. Both7262-pair chains recertified.
+Retain approximate optics. Address axial/+1 phase-rate compatibility, centerline/
+camera roll and transverse width jointly with material/separator preservation.
+R298 dimensional gains and independent photographic regressions remain explicit.
+Saved FFT modestly favors hand+; no hand/count proof. Current R297 optimizer lacks
+R298 calibration controls/objective; NOT ready for another whole-necklace run.
+8 contracts; exact analysis replay;104 native control replays;52 exhaustive frame
+checks;16599 historical files unchanged. Chromium19 models/8 plot modes, original
+observation navigation, raw invariance, nested debuggers, desktop/narrow/offline and
+actual launcher pass. No Phase3, pattern, adoption or automatic R301. STOP.
+Delivery receipt:photo2/r300/results/delivery.json.
+
 # R299 completed — strict reflection test failed; STOP
 
 Scientific commit `bee32d3972efd6915056a9e663f57759ab908d01` pushed and independently remote-verified.

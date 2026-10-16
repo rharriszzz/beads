@@ -8849,3 +8849,20 @@ commit/push/independent verification and STOP. No additional optimization.
 
 R299 scientific delivery `bee32d3972efd6915056a9e663f57759ab908d01` pushed and independently remote-verified.
 Receipt photo2/r299/results/delivery.json. STOP; no further optimization or R300.
+
+
+## R300 — bounded reflection errors and structural diagnosis
+
+Maker explicitly supersedes R299's strict specular accuracy target. Approximately
+10px errors may be acceptable if stable; no optimization merely to reach3px.
+Authorize frozen-residual full-circuit drift analysis, structural diagnosis of axial
+width/+1 neighbors, centerline and transverse width, saved FFT, and only justified
+bounded controls. Preserve observations/owners/failures and graphical debugger;
+commit, push and independently verify on photo-2-strategy-v3, then stop for review.
+No Phase3, repeating pattern or adoption as physical truth.
+
+Completed frozen19-model analysis and exactly2 crossed phase/roughness controls.
+Magnitudes roughly stable; signed regional bias and sparse ownership prevent a
+physical cumulative-index/closure conclusion. Retain approximate light. Current
+R297 optimizer needs structural integration before another whole-necklace run.
+See photo2/R300_REPORT.md and photo2/r300/results/delivery.json. STOP for review.
