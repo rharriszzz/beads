@@ -1,0 +1,241 @@
+{
+  "acceptance": {
+    "baseline_preserved": true,
+    "component_checks": [
+      {
+        "after": 3.7080825406307807,
+        "before": 3.570184878141362,
+        "delta": 0.1378976624894186,
+        "metric": "visible_boundary_mae",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.3
+      },
+      {
+        "after": 6.071428571428571,
+        "before": 6.114285714285714,
+        "delta": -0.042857142857142705,
+        "metric": "envelope_width_mae",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.5
+      },
+      {
+        "after": 0.05844155844155844,
+        "before": 0.05988455988455989,
+        "delta": -0.0014430014430014473,
+        "metric": "paper_occupied",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.01
+      },
+      {
+        "after": 0.31313868613138685,
+        "before": 0.3133819951338199,
+        "delta": -0.00024330900243307862,
+        "metric": "colored_missing",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.02
+      },
+      {
+        "after": 3.033096889150293,
+        "before": 3.435619834208405,
+        "delta": -0.40252294505811204,
+        "metric": "separator_error_px",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.5
+      },
+      {
+        "after": 8.66363754016148,
+        "before": 8.738019532794414,
+        "delta": -0.07438199263293477,
+        "metric": "reflection_rms",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.3
+      },
+      {
+        "after": 0.6144717868571908,
+        "before": 0.6110690419596644,
+        "delta": 0.003402744897526455,
+        "metric": "dense_coherent_ownership",
+        "passed": true,
+        "split": "development",
+        "tolerance": -0.01
+      },
+      {
+        "after": 5.645747360090801,
+        "before": 5.5136745833991885,
+        "delta": 0.13207277669161233,
+        "metric": "visible_boundary_mae",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.3
+      },
+      {
+        "after": 6.8076923076923075,
+        "before": 6.923076923076923,
+        "delta": -0.11538461538461586,
+        "metric": "envelope_width_mae",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.5
+      },
+      {
+        "after": 0.0779510022271715,
+        "before": 0.0779510022271715,
+        "delta": 0.0,
+        "metric": "paper_occupied",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.01
+      },
+      {
+        "after": 0.29863603732950467,
+        "before": 0.29576453697056715,
+        "delta": 0.0028715003589375176,
+        "metric": "colored_missing",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.02
+      },
+      {
+        "after": 5.588693532508738,
+        "before": 5.548098127534665,
+        "delta": 0.04059540497407266,
+        "metric": "separator_error_px",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.5
+      },
+      {
+        "after": 10.103350899389904,
+        "before": 10.021113672295659,
+        "delta": 0.08223722709424486,
+        "metric": "reflection_rms",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.3
+      },
+      {
+        "after": 0.5656118602939314,
+        "before": 0.5662112747794792,
+        "delta": -0.000599414485547789,
+        "metric": "dense_coherent_ownership",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": -0.01
+      },
+      {
+        "after": 2,
+        "before": 0,
+        "delta": 2,
+        "interpretation": "Conditional mathematical owners; loss of original lobes cannot count as geometric improvement through rematching.",
+        "metric": "R306_fixed_owner_missing_lobes",
+        "passed": false,
+        "split": "all original R306 owners",
+        "tolerance": 0
+      }
+    ],
+    "demonstrably_better": false,
+    "physically_certified": true,
+    "policy": "Report gate: >=5% comparison legacy boundary improvement and >=2 percentage-point dense coherence improvement, no substantial common-metric/regional regression, no added unmatched strong observations. Descriptive engineering thresholds, not significance tests. All comparison evidence is historically exposed.",
+    "regional_regressions": [],
+    "substantial_photographic_improvement": false,
+    "utc": "2026-10-16T22:54:20.464508+00:00"
+  },
+  "artifact_sha256": {
+    "photo2/R307_REPORT.md": "6cae3f1d7be43e81ca444fad81897a57db3860482a8466d1d82130002b1de882",
+    "photo2/R307_REPRODUCE.md": "431266a00ab1de45e482db4fcf56a5eba2047e5dcbf972cc3fa8f979803ae008",
+    "photo2/r307/evidence/native-correction.json": "7f67a1bbb6ed138fa9ece7adab8b8765f53c368507478b9069dec3e1aed9828f",
+    "photo2/r307/results/campaign/acceptance.json": "e7aadcc25747cd2a00321b79db75fcace539b49cfd9ceb72278413d0f37430e3",
+    "photo2/r307/results/campaign/browser-check.json": "a1ef64fd8460525eb2cad11b4f58c2c15d68b87f9ac697ed1de9274c710eb339",
+    "photo2/r307/results/campaign/comparison.json": "6df7cfa241c7dea9968a051c1467315071bb06f749b328d6caa076ee8f1d08df",
+    "photo2/r307/results/campaign/computation.json": "68b7c69001bb1c603bccd3690708afa52303a9c2286cd88080191d5883cde5b4",
+    "photo2/r307/results/campaign/export-manifest.json": "1fc5e68566a33042e86f1213177795c11c3c2ab2cbba230b93a211d1679327bd",
+    "photo2/r307/results/campaign/preservation-final.json": "088f2f12b427e0393f62503688845ec829d46b9f44bd6a8d4e87e8e7f002f8a9",
+    "photo2/r307/results/campaign/selection.json": "f9ce9866b140026eab1f8e9aa2a2a169704bd0acc7b2297133c2eacaa5094019",
+    "photo2/r307/results/campaign/verification.json": "3452d4c2e00612d4f05f91dced8356a84c96412a116a558e1721aa49262f57a2",
+    "photo2/r307/results/kernel-family-check.json": "a8e02d0c51ebbd01fc52d32ded38ffe07c7e5fa66c59401b37c75ec6b826fc2f",
+    "photo2/r307/results/transaction-tests.json": "8b1b359205ae6b869caf5404b452d04c41320729f1213d86c4c750943c92dca8"
+  },
+  "branch": "photo-2-strategy-v3",
+  "checks": {
+    "boundary_segments_exact": 138480,
+    "browser_locations": 80,
+    "browser_passed": true,
+    "contact_witnesses": 53438,
+    "contracts": 6,
+    "native_models": 8,
+    "native_verification_passed": true,
+    "original_kernel_dense_evidence_rays": 361900,
+    "positions": 18962,
+    "preservation": {
+      "additive_handoffs": [
+        "AGENTS.md",
+        "METHODS.md",
+        "PLAN.md",
+        "REQUEST_LOG.md"
+      ],
+      "byte_identical": 17566,
+      "modified_historical_science": [],
+      "protected": 17570,
+      "utc": "2026-10-16T23:05:50.209687+00:00"
+    },
+    "staged_whitespace_check_passed": true,
+    "transaction_tests": {
+      "actual_SIGTERM": true,
+      "committed_trials_preserved": 3,
+      "output": "/tmp/beads-r307-transactions/1792191875853636969",
+      "passed": true,
+      "policy": "Resume restarts an interrupted numerical block from the committed incumbent; it preserves published committed trials and charges actual additional work. Wall-time paths are not claimed bitwise identical to uninterrupted runs.",
+      "post_publication_fixture_recomputed": true,
+      "resume_added_trials": 3
+    },
+    "windows_browser_opened": false,
+    "windows_dispatch_mocked": true
+  },
+  "entry": "photo2/phase2_guided_fit.py",
+  "fitting": {
+    "R306_aggregate_fit_seconds": 5266.84,
+    "cycles": 37,
+    "fitting_plus_profile_estimate_seconds": 1228.724591316997,
+    "fitting_seconds": 1200.0190287169971,
+    "peak_finalize_rss_mib": 2822.5,
+    "peak_fitting_rss_mib": 389.90625,
+    "profile_timing_method": "Original benchmark.log filesystem creation 2026-10-16T22:30:59.236842924Z to final stdout write 22:31:27.942405524Z; metadata estimate, not a stored monotonic measurement.",
+    "trials": 1052
+  },
+  "independent_remote_verification": {
+    "command": "git ls-remote origin refs/heads/photo-2-strategy-v3",
+    "matched": true,
+    "remote_sha": "82e0c3433cb563b7ecf5a62257e57f005f71ccf3"
+  },
+  "launcher": "photo2/review/r307/launch.sh",
+  "metadata_note": "Receipt committed after independently verified scientific push; receipt commit is pushed and independently checked separately.",
+  "native_accepted_improvements": 13,
+  "numerical_limitation": "Most fitting used an inadequate coarse-ranking gate and geographically misaligned coefficient blocks. Corrected native/geographically aligned final 2.87 minutes did not improve primary; not a full-budget test of corrected method. Original sources, states and failures preserved.",
+  "outcome": "Physically feasible and materially faster; demonstrably better whole-necklace photographic reconstruction NOT established. Comparison boundaries, coherent ownership and reflection RMS slightly regress. Two original fixed-owner lobes disappear. R306 baseline preserved; no adoption.",
+  "pattern_inference": false,
+  "phase3": false,
+  "primary": {
+    "all_spatial_pairs_certified": 7166,
+    "count": 2405,
+    "geometric_axis_closed": true,
+    "hand": -1,
+    "minimum_separating_margin_units": 0.2606915598410078,
+    "string_topology": "open"
+  },
+  "recommendation": "Review delivered artifacts; no automatic R308 or additional fitting.",
+  "recorded_utc": "2026-10-16T23:10:05.864030+00:00",
+  "report": "photo2/R307_REPORT.md",
+  "repository": "rharriszzz/beads",
+  "reproduce": "photo2/R307_REPRODUCE.md",
+  "schema": 307,
+  "scientific_commit": "82e0c3433cb563b7ecf5a62257e57f005f71ccf3",
+  "smallest_remaining_scientific_test": "A native coupled fixed-owner step that improves visible interiors and independent boundary/background evidence near (1110,336), while preserving the rest of the circuit. No proof that new maker labels are required.",
+  "status": "delivered",
+  "stop": true
+}
