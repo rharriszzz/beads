@@ -1,3 +1,37 @@
+# R301 completed — bounded local inverse search; STOP for new plan
+
+Scientific commit `10105ca16b77b41411af2bb56db1bf7220733303` pushed and independently remote-verified.
+Receipt: photo2/r301/results/delivery.json.
+
+Read photo2/R301_REPORT.md and R301_REPRODUCE.md.
+Launch photo2/review/r301/launch.sh; 30 native comparisons, both hands, earlier
+R297/R298/R299 baselines, raw photo, actual visible surfaces, observations,
+alternative assignments and errors. Original debuggers remain intact.
+Maker's final minimum-count preference is 2000, superseding interim6000/2698.
+Beads per minor turn are near6.5 and essentially constant; closure twist only.
+Search range6.465–6.535, shared/constant; no count/index/pattern inferred.
+Three photo-only frozen windows,30 retained reflections,21train/9withheld;
+all810 prior observations preserved.25central+32guards per side; dense candidates
+can exceed30positions in the fixed window. Joint hand+ has32/36/32.
+27648coarse evaluations,5760accurate independent/ablation evaluations,
+1536joint evaluations (4608section calls). Broad Sobol/DE wins3/6 equal-budget
+comparisons against coordinate adjustment, loses3/6. Full histories/seeds saved.
+Shared hand+ improves pooled native train RMS8.72→5.98px and withheld7.93→5.20
+versusR299, all30matched; R298 withheld5.86. BUT dimensions/material regress:
+S1extent1.20→5.90px; S2/S3edges1.80→6.32/5.62→11.34; ~32–33%colored omission.
+Independent axial ratios.10–.66, camera/light incompatibility; synthetic recovery
+fails despite exact targets at truth. Low reflection error is not recovered geometry.
+Extended153position checks certify18/21newexports;3rejected alternatives retained,
+including30demonstrated penetrating pairs across2models and1unresolved model.
+Shared hand+ certifies all3extended sections; no complete-necklace certificate.
+9contracts incl actual kill/restart,21native replays,1869positions/6500witnesses,
+16595protected historical files unchanged; Chromium30models/raw invariance/
+desktop/narrow/offline/actual launcher pass. Windows dispatch mocked.
+Standalone:python3 photo2/local_inverse.py --output NEW --section S1 ...
+No adoption, Phase3, pattern, whole-necklace extension or automatic R302.
+Maker has a new plan and explicitly requested finishing this step and recording
+why. Reasons are recorded in report/provenance/delivery. STOP; new plan not begun.
+
 # R300 completed — approximate reflections retained; STOP for review
 
 Scientific commit `1515a886a3d359f233ae861a3f865a263f433873` pushed and independently remote-verified.

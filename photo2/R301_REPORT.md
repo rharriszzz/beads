@@ -149,3 +149,5 @@ All original R297–R300 scientific files, live feedback and `beads.pov` are pro
 Nine contracts pass, including exact legacy-shape equivalence, analytic normal/support checks, bounded correspondence ownership, deterministic resume and actual process-kill recovery. Native replay covers all 21 new exports, 1,869 positions, 2,372 original and 4,128 extended contact witnesses. All 16,595 protected historical files are unchanged. Chromium checks all 30 models, raw-image invariance, localhost launch, offline operation and desktop/narrow layouts; Windows browser dispatch is mocked, not claimed physically opened. The metrics-table overflow was repaired without changing science.
 
 [Scientific verification](r301/results/verification.json) · [Browser checks](r301/results/browser-check.json) · [Full analysis](r301/results/analysis.json.gz).
+
+Scientific delivery: `10105ca16b77b41411af2bb56db1bf7220733303`, pushed to `origin/photo-2-strategy-v3` and independently verified with `git ls-remote`. [Delivery receipt](r301/results/delivery.json).
