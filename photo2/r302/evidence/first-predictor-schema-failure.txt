@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r302/experiment.py", line 213, in <module>
+    globals()[args.stage]()
+  File "/home/rharris/git/beads/photo2/r302/experiment.py", line 67, in diagnose
+    t=time.perf_counter();p,_=old_predict(sc,s,0) if mode=='coarse' else native(sc,s,2. if mode=='two-pixel' else 1.)
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r302/core.py", line 74, in native
+    sub={k:v[keep] for k,v in tr.items()}
+           ~^^^^^^
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 153 but size of corresponding boolean axis is 7446

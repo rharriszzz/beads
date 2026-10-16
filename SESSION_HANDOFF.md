@@ -1,3 +1,35 @@
+# R302 completed — sensitivity-guided local fitting; STOP
+
+One bounded S1 experiment; numerical audit/sensitivity/fitting580.73s, no expansion.
+Read photo2/R302_REPORT.md and R302_REPRODUCE.md.
+Launch photo2/review/r302/launch.sh; reused R301 debugger,18 models, old viewers intact.
+Primary hierarchy-historical-plus; conditional geometry, NOT recovered physical truth.
+Exact native predictor replaces coarse screening:36 feasible variants; coarse top9
+recall5/9, native costs.152s. Four-start native/full-body predictions identical.
+Four starts ×18 two-sided sensitivities;144 feasible individual/12 paired controls.
+Only4–5 directions above declared measurement scales; not statistical rank/CI.
+Elevation/phase/light, pitch/projection, axial/tilt coupled; contour owner switches.
+Ten original reflections(7train/3comparison,6black); one uncertain B15 contour,
+194 correlated cue samples;4 dark valleys comparison-only. No verified neighbors.
+Construction: abs(N*(6.5/turn-1))<=6.5; at conditionalN2000 turn6.47894–6.52119.
+Constant twist, circular arclength axis, bounded±2% local effective advance; shared
+pitch free, no zero-net-pitch constraint or claim of elastic thread reconstruction.
+Four equal-time hierarchy/accurate-DE pairs; hierarchy wins4/4 training (also when
+charged ALL37.37s diagnostic overhead), only2/4 comparison-reflection wins.
+Primary versus R301 shared hand+: train RMS3.85→2.22px, comparison4.01→3.78,
+B15extent5.90→.12px, colored omission train33.3→2.6%/held31.6→15.8%;32→29positions.
+Paper train regresses5.1→7.7%; held11.8→5.9%; valley2.55→1.72px, worse thanR2991.51.
+Primary face31.14px, axialratio.669, elevation79.51deg remain conditional; acceptable
+alternatives span axial.257–.669/elevation35–79.51. Both hands viable; no identities.
+Eight153-position models certified; primary445pairs/minmargin.0740bead radii.
+Six contracts,8 exact native replays/1224positions/2465witnesses;16783prior files
+unchanged. Chromium18models/raw invariance/desktop/narrow/offline/launcher pass.
+Windows dispatch mocked. All histories/alternatives and preflight failure retained.
+Recommend ONLY separately authorized bounded second-section shared-geometry transfer
+and falsification test. No automatic second section, whole loop, Phase3 or adoption.
+Commit/push/independent remote verification recorded in photo2/r302/results/delivery.json.
+Keep current model/reasoning; no /new needed for review. STOP after R302 delivery.
+
 # R301 completed — bounded local inverse search; STOP for new plan
 
 Scientific commit `10105ca16b77b41411af2bb56db1bf7220733303` pushed and independently remote-verified.

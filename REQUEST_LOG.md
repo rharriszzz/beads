@@ -8869,3 +8869,27 @@ See photo2/R300_REPORT.md and photo2/r300/results/delivery.json. STOP for review
 
 R300 scientific delivery `1515a886a3d359f233ae861a3f865a263f433873` pushed and independently
 remote-verified on photo-2-strategy-v3. Receipt:photo2/r300/results/delivery.json.
+
+
+## R302 — sensitivity-guided physical geometry, one bounded region
+
+Maker authorizes one real-photo experiment on photo-2-strategy-v3: audit coarse
+versus accurate predictions before search, determine coupled/identifiable parameter
+combinations, fit dimensions/projection then helix then local shape and joint
+refinement. Reflections are primary, including black, with independent material,
+boundary, spacing and physical contradictions. Crochet reconfiguration differs
+from string elasticity; about2% extra extension, cumulative twist at most one turn
+(±6.5 bead-equivalents), count-dependent. No zero-total-pitch-change assumption.
+Approximately10-minute numerical budget, no automatic expansion, no synthetic
+campaign/new graphical system/whole-necklace/Phase3. Reuse R301 review, compare
+same evidence and computation, retain alternatives, commit/push/verify, STOP R302.
+Protocol: photo2/r302/evidence/protocol.json. Results: photo2/R302_REPORT.md.
+
+R302 completed within580.73s numerical audit/fitting. Native predictor equivalence
+and sensitivities lead to4/4 equal-time training wins but2/4 comparison-reflection
+wins. Primary improves bead extents/material and reflections together; paper
+regression, broad physical/camera ambiguity and uncertain neighbors remain.
+No recovered count/hand/index/crochet thread path. Six contracts/native8models/
+1224positions/2465witnesses and16783preserved files pass; reused18-model browser
+and actual launcher pass. See R302_REPORT.md. A bounded second-section transfer
+test deserves a new authorization; none is started. Stop after verified delivery.
