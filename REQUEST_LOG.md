@@ -8831,3 +8831,18 @@ and failures remain. No automatic R299. Delivery receipt is in
 photo2/r298/results/delivery.json.
 
 R298 scientific delivery `bdf0cebecb1c886e1bb86171b424b718ce91a994` pushed and independently remote-verified. Metadata receipt records the completed delivery. STOP for maker review.
+
+
+## R299 — strict shared-light specular calibration
+
+Maker authorizes completed bounded R299 without intermediate R298 review: recover
+R257/R276 machinery, freeze geographically distributed reflection measurements,
+fit directional/finite/extended common sources, compare R297/R298 and bounded joint
+geometry with fixed ownership controls and strict 3px median/5px p90 targets.
+Preserve all old science and failures; extend graphical review, test, commit/push
+and independently verify. No Phase3, pattern, extra lamps or automatic R300.
+Protocol: photo2/R299_SPECIFICATION.md.
+
+R299 completed: strict targets failed, no adoption. See photo2/R299_REPORT.md.
+Maker asked to finish without further picky investigation; close out layout,
+commit/push/independent verification and STOP. No additional optimization.

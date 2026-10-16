@@ -1,3 +1,26 @@
+# R299 completed — strict reflection test failed; STOP
+
+R299 completed the authorized bounded common-light experiment without requiring
+R298 review. Read photo2/R299_REPORT.md and R299_REPRODUCE.md.
+Launch photo2/review/r299/launch.sh; original R298 review remains an intact tab.
+52 frozen reflections across15 sectors:22yellow/15red/15black;45 stronger,
+7 ambiguous yellow mixtures. All denominators and frozen owners retained.
+R257/R276 observations, residual context and maker judgments preserved.
+Five geometry families × three shared sources;300 light evaluations/37.6s.
+33 shared geometry trials/231 light evaluations/67.5s; all full-chain certified.
+No per-bead corrections or additional lights. Selected diagnostic phase .69→.54rad.
+Trusted centroid median12.07→10.50px; p9016.44→17.10px;4/45 within3px.
+Trusted comparison0/11 within3px. Strict3px median/5px p90 targets NOT met.
+Native width MAE5.12→5.42px; separator5.34→4.45px; R298 regressions relative
+R297 remain. Candidate minimum plane margin.251223; no adoption or count proof.
+19 native model/source exports, both hands/topologies, all positions, peak/centroid
+CSV/JSON, competing owners, exact visible samples, whole-photo vectors and plots.
+20 tests;988 native highlight replays,33 trial physical replays and full22-trial
+light-fit replay. Protected historical files unchanged; numerical lobe ambiguity
+and extent censoring explicit. Delivery receipt:photo2/r299/results/delivery.json.
+Maker asked to finish; no further investigation, R300, Phase3, pattern or optimization.
+STOP after scoped delivery. Keep current model/reasoning; no /new needed to review.
+
 # R298 delivered — structural calibration; STOP for maker review
 
 Scientific commit `bdf0cebecb1c886e1bb86171b424b718ce91a994` pushed and independently remote-verified.
