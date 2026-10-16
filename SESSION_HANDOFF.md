@@ -1,5 +1,8 @@
 # R302 completed — sensitivity-guided local fitting; STOP
 
+Scientific commit `91811939b427c2fe46f7b6ab1e7a50819c4313fe` pushed and independently remote-verified.
+Receipt: photo2/r302/results/delivery.json.
+
 One bounded S1 experiment; numerical audit/sensitivity/fitting580.73s, no expansion.
 Read photo2/R302_REPORT.md and R302_REPRODUCE.md.
 Launch photo2/review/r302/launch.sh; reused R301 debugger,18 models, old viewers intact.

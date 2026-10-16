@@ -177,3 +177,7 @@ Six contracts pass. Eight native selected-vector replays cover1,224 positions an
 Chromium checks the reused18-model debugger, raw invariance, original links,
 desktop/narrow/offline operation and actual launcher. Windows dispatch is mocked.
 [Verification](r302/results/verification.json) · [Delivery](r302/results/delivery.json).
+
+Scientific delivery: `91811939b427c2fe46f7b6ab1e7a50819c4313fe`, pushed to `origin/photo-2-strategy-v3`
+and independently matched by `git ls-remote`. Receipt records the verified science
+commit; the following metadata commit records this delivery. **STOP after R302.**
