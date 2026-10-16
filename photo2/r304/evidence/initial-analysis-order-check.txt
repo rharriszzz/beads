@@ -1,0 +1,14 @@
+primary {'n': 41, 'rms': 10.190985480862405, 'median': 7.79289960911536, 'tangent_mean': 0.696395914144893, 'normal_mean': 0.313099278049328} {'error_px-per-index': 0.01826552811782931, 'error_px-per-photo_arc': 0.005178002288196779, 'tangent_px-per-index': 0.017998680305886697, 'tangent_px-per-photo_arc': 0.004767804500652561, 'normal_px-per-index': 0.012629152957533293, 'normal_px-per-photo_arc': 0.0033866106740966105}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r304/analyze.py", line 130, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r304/analyze.py", line 106, in main
+    m=read(BASE/f'results/{name}.json.gz');scene=Extended(name);corr=correspondences(m,obs);mat=material(scene,m);rows=[];rr=corr['records'];core=[b for b in m['positions'] if b['displayed']]
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r304/analyze.py", line 54, in correspondences
+    assert all(b[2]>a[2] for a,b in zip(pinned,pinned[1:])),pinned
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [(-52.5718283548149, 'K-1073-0343', -12), (-48.31358195415487, 'K-1087-0372', -13), (-33.64166690574166, 'E9-1088-0322', -10), (-28.61669377106864, 'K-1101-0353', -6), (-8.948984643265248, 'C-1116-0328', -3), (-4.732396279633576, 'C-1130-0364', 0), (12.911582688918315, 'K-1133-0303', 3), (16.72480644685038, 'C-1145-0338', 7), (37.72552433087367, 'K-1160-0319', 10), (40.32873695134458, 'K-1172-0348', 13)]
