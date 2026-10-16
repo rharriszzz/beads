@@ -8829,3 +8829,5 @@ Dimensional errors improve, but native separators/material/local correspondence
 regress. The no-worse-contradictions success criterion is not met; all alternatives
 and failures remain. No automatic R299. Delivery receipt is in
 photo2/r298/results/delivery.json.
+
+R298 scientific delivery `bdf0cebecb1c886e1bb86171b424b718ce91a994` pushed and independently remote-verified. Metadata receipt records the completed delivery. STOP for maker review.

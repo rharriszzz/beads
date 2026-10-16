@@ -318,3 +318,5 @@ must precede any attempt to recover the lost local alignments.
 
 [Specification](R298_SPECIFICATION.md) · [Verification](r298/results/verification.json) ·
 [Browser receipt](r298/results/browser-check.json) · [Delivery](r298/results/delivery.json)
+
+Scientific delivery: `bdf0cebecb1c886e1bb86171b424b718ce91a994`, pushed to `origin/photo-2-strategy-v3` and independently verified with `git ls-remote`.

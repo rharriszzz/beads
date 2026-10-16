@@ -1,5 +1,8 @@
 # R298 delivered — structural calibration; STOP for maker review
 
+Scientific commit `bdf0cebecb1c886e1bb86171b424b718ce91a994` pushed and independently remote-verified.
+Receipt: photo2/r298/results/delivery.json.
+
 R298 performs the approved bounded geometry calibration; no automatic R299.
 Read photo2/R298_REPORT.md, R298_SPECIFICATION.md and R298_REPRODUCE.md.
 Launch photo2/review/r298/launch.sh: automatic .venv, localhost and WSL browser.
