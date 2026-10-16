@@ -1,3 +1,38 @@
+# R304 completed — 350-position forward review; STOP
+
+Scientific commit `b76590fbf15f094936fdbb095d2c52e4efe002e0` pushed and independently remote-verified.
+Receipt: photo2/r304/results/delivery.json.
+Read photo2/R304_REPORT.md and R304_REPRODUCE.md.
+Launch photo2/review/r304/launch.sh; three models, ten35-position panels each.
+Primary R303 shared independent hand+ extended over addresses−20…329, plus64
+context beads per end. R294 red crossing is a landmark, never a phase reset.
+R293 photographic curve deprojected with original camera; one S1 origin/phase.
+Preserve circle within4 radii, fixed quintic splice by12, true arclength transport.
+Same shape/pitch/twist/light and bounded smooth stitch advance; no fitting or FFT.
+Primary S1 centers/reflections unchanged to5e−9px; later centers use photographic
+curve, not extrapolated local circle. Actual visible owner boundaries include
+holes/occlusion; every hidden position and missing/marginal lobe retained.
+106 photographic candidates/41strong/39black;19 R257 cross-references. Original
+coordinates retained. Global ordered pairing with S1 anchors, explicit gaps and
+12/24/48 gap-cost controls;19 confident CONDITIONAL primary pairs,86ambiguous,
+1unmatched;23 assignment-sensitive. No-gap ordinal control exposes skip reliance.
+Primary strong RMS first50=3.11px; next13.84; recovers3.66 at180–229; last100~14.
+Uneven deterioration, not monotonic accumulation or identified pitch/index drift.
+Final colored omission30.5/36.3%; axis follows chosen trace after splice, trace
+not calibrated truth. Envelope/profile uncertainty and sparse evidence explicit.
+Primary29uncertified/27demonstrated penetrating pairs; calibrated6/5. Failures
+include deterministic splice and top/bend. Feasible hand−1420/1420 pairs,
+minmargin.121301radii, but worse photographic RMS12.53 versus primary10.19.
+All bodies retained; no collision repair/adoption.96guard extension changes zero
+owner pixels/intensities for all3 models. Halfpixel centroid median/max primary
+.084/1.580px,2marginal lobe presence changes; all numerical ambiguities saved.
+16.20s forward+guards,~6s analysis,43.75s verification;~11.09s interrupted audit
+cache bug retained.5contracts;1434positions/4260witnesses/1773046nativepixels/
+59644boundarysegments replayed.17011historical files unchanged.30browser panels,
+raw/desktop/narrow/offline/launcher pass; Windows dispatch mocked.
+No whole-necklace optimization, color-pattern inference, Phase3 or automaticR305.
+STOP for maker's graphical review. Keep all prior experiments and feedback intact.
+
 # R303 completed — height-coupled pitch and cross-region test; STOP
 
 Scientific commit `91116f19f45415f0ce8cc5fdee06b1e83ecc05b4` pushed and independently remote-verified.
