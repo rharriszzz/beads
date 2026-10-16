@@ -1,0 +1,99 @@
+{
+  "artifact_sha256": {
+    "photo2/R306_REPORT.md": "c07e395bb42f4a57f6add86117fb1d3cc867f24ce2907470b6c8dc3aaf7453df",
+    "photo2/R306_REPRODUCE.md": "b410f5e86e56179f74fb6f6be6aa018be9f0626d39ebeb225a6375796514f020",
+    "photo2/r306/results/campaign/browser-check.json": "68690214226c70b212162372d5a7217b20eef131fc936149f07294e99385d511",
+    "photo2/r306/results/campaign/preservation-final.json": "c6ca488145240f1ef6e9304aacec2aa0388010fef799b5899b93a02dc3cd6508",
+    "photo2/r306/results/campaign/selection.json": "6f3c112b098b432c105424176232504212831b796470390470ff0baf8adb1f87",
+    "photo2/r306/results/campaign/verification.json": "67221c9f1254b44c80cf3cfd40e8003e3c9acea7e0bc77809e0cd90163d27bd2",
+    "photo2/r306/results/final-implementation-sha256.json": "b2a92e5f12facef3c385797eeeb5e887dc5cac856fce6a9ed3eb86358f5f4965"
+  },
+  "branch": "photo-2-strategy-v3",
+  "checks": {
+    "archive_roundtrip": {
+      "passed": true,
+      "runs": [
+        {
+          "byte_exact": true,
+          "idempotent": true,
+          "restored": 2942,
+          "run": "campaign"
+        },
+        {
+          "byte_exact": true,
+          "idempotent": true,
+          "restored": 684,
+          "run": "independent"
+        }
+      ],
+      "seconds": 84.84637978000683,
+      "temporary_output": "/tmp/r306-final-archives-ah21tj1k"
+    },
+    "browser_locations": 81,
+    "browser_passed": true,
+    "contact_witnesses": 62487,
+    "contracts": 8,
+    "gallery_images": 16,
+    "gallery_raw_pixels_exact": true,
+    "native_models": 9,
+    "native_verification_passed": true,
+    "positions": 21975,
+    "preservation": {
+      "additive_handoffs": [
+        "AGENTS.md",
+        "METHODS.md",
+        "PLAN.md",
+        "REQUEST_LOG.md"
+      ],
+      "base_commit": "82dc537339e95e8ed7a8f2a833df179f515b2692",
+      "byte_exact_files": 17188,
+      "modified_historical_science": [],
+      "passed": true,
+      "preexisting_files": 17192
+    },
+    "real_sigterm_restart_and_post_write_crash": true,
+    "staged_whitespace_check_passed": true,
+    "windows_browser_opened": false,
+    "windows_dispatch_mocked": true
+  },
+  "entry": "photo2/phase2_global_fit.py",
+  "fitting": {
+    "aggregate_seconds": 5266.841979303994,
+    "distinct_native_trial_parameters": 8,
+    "native_trials": 12,
+    "search_proposals": 4054,
+    "timing": "Aggregate elapsed fitting time; main and independent runs overlap. Native ranking/export/verification excluded."
+  },
+  "independent_remote_verification": {
+    "command": "git ls-remote origin refs/heads/photo-2-strategy-v3",
+    "matched": true,
+    "remote_sha": "96edab435b69a7cd94685bc4d0452ed95d2ce21a"
+  },
+  "launcher": "photo2/review/r306/launch.sh",
+  "metadata_note": "This receipt is committed after the independently verified scientific push. Final receipt-commit push is independently checked separately.",
+  "outcome": "Physically feasible full-circuit hypotheses delivered. Overall photographic improvement is not established: dimensional/boundary gains coexist with material/background/separator and comparison-reflection regressions; free rematching gains do not establish physical identity recovery.",
+  "pattern_inference": false,
+  "phase3": false,
+  "primary": {
+    "all_spatial_pairs_certified": 7166,
+    "candidate": 2840,
+    "count": 2405,
+    "geometric_axis_closed": true,
+    "hand": -1,
+    "minimum_separating_margin_units": 0.2778758328659241,
+    "string_topology": "open",
+    "strong_ambiguous": 185,
+    "strong_matched": 269,
+    "strong_reflection_rms_px": 9.084437589247965,
+    "strong_unmatched": 0
+  },
+  "recommendation": "Do not repeat the unchanged campaign before controlled structural/ownership corrections; no automatic R307.",
+  "recorded_utc": "2026-10-16T21:52:21.263766+00:00",
+  "report": "photo2/R306_REPORT.md",
+  "repository": "rharriszzz/beads",
+  "reproduce": "photo2/R306_REPRODUCE.md",
+  "schema": 306,
+  "scientific_commit": "96edab435b69a7cd94685bc4d0452ed95d2ce21a",
+  "status": "delivered",
+  "stop": true
+}
