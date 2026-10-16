@@ -241,3 +241,7 @@ Windows browser dispatch is mocked; an actual Windows browser opening is not cla
 A post-seal CSV line-ending repair changes formatting only; parsed values are
 identical and the sealed exporter source is archived. Fitting sources are unchanged.
 [Format provenance](r303/results/post-seal-format-repair.json).
+
+Scientific delivery: `91116f19f45415f0ce8cc5fdee06b1e83ecc05b4`, pushed to `origin/photo-2-strategy-v3`
+and independently matched by `git ls-remote`. [Delivery receipt](r303/results/delivery.json).
+The following metadata commit records the verified delivery. **STOP for review.**

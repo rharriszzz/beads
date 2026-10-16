@@ -1,6 +1,7 @@
 # R303 completed — height-coupled pitch and cross-region test; STOP
 
-Scientific delivery receipt: photo2/r303/results/delivery.json.
+Scientific commit `91116f19f45415f0ce8cc5fdee06b1e83ecc05b4` pushed and independently remote-verified.
+Receipt: photo2/r303/results/delivery.json.
 Read photo2/R303_REPORT.md and R303_REPRODUCE.md.
 Launch photo2/review/r303/launch.sh; reused viewer,80 models including6 guard audits.
 One bounded campaign574.99s including83.60s sensitivities; no additional fitting.
