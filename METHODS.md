@@ -1,3 +1,17 @@
+# R307 — native sensitivity and ownership limitations
+
+[Report](photo2/R307_REPORT.md) · [Reproduce](photo2/R307_REPRODUCE.md).
+Evaluate positive interiors, actual first-hit visible bodies, uncertain external
+contours, paper and reflections separately. More samples and coherent ownership
+penalties improve the objective's information but do not by themselves recover
+photographic geometry. Native fixed-owner controls must retain missing lobes.
+Require local ranking recall and lobe-presence checks, not only global correlation,
+before using a coarse derivative predictor. Group spline coefficients by actual
+photographic geography: axis and phase/spacing arrays have different origins.
+Preserve source-stage transitions; do not reinterpret earlier trials under repairs.
+R307 used20.00 fitting minutes but did not improve the full photographic result.
+No automatic continuation or adoption follows from faster computation.
+
 # R306 — periodic global geometry and native verification
 
 See [report](photo2/R306_REPORT.md) and [reproduction](photo2/R306_REPRODUCE.md).

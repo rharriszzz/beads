@@ -1,3 +1,37 @@
+# R307 completed — faster guided fitting, no photographic improvement; STOP
+
+Scientific delivery and independent remote verification: photo2/r307/results/delivery.json.
+Read photo2/R307_REPORT.md and R307_REPRODUCE.md. Launch photo2/review/r307/launch.sh.
+Entry: python3 photo2/phase2_guided_fit.py; standalone restart, native selection,
+whole-circuit diagnosis, original-kernel verification and offline overlap viewer.
+20.00 fitting minutes (20.48 incl estimated benchmark),1052 trials,37 complete
+blocks,13 native accepted improvements. Four R306 families retained; no new count sweep.
+Primary2405/hand−/open;7166 pairs certify,min support margin.260692 source units.
+Required R306−101 at(1110.23,336.04): viewer matches native ownership exactly;
+591 isolated pixels,169 visible,422 occluded. Jagged outline is not display error.
+Local native region coverage58.27→57.57%; strong RMS10.62→10.68px. Failure persists.
+Comparison boundary5.51→5.65px; dense coherent ownership56.62→56.56%; RMS10.02→10.10.
+Paper7.80% unchanged;width6.92→6.81. No substantial whole-photo improvement/adoption.
+269 strong observations freely matched; original fixed owners lose2 lobes,
+24px-missing-penalized RMS9.08→9.25. New initial fixed-owner train8.757→8.732,none lost.
+First17.13min used an inadequate coarse gate (best-quartile recall.5) and block
+numbers with different axis/phase origins. Corrected native/geographic blocks used
+remaining2.87min; primary unchanged. Old source/state/Jacobians archived; no evidence
+or objective reweighting. Not a full-budget falsification of the corrected method.
+Up to256 support samples/region, all pixels final; uncertain merger weights,
+bidirectional contour bands, reverse color/separator contradictions, full contacts.
+All811 observations/bodies retained; one periodic geometric axis,true arclength,
+bounded smooth fields,original photographic reference unchanged. No per-bead shifts.
+Six contracts, real SIGTERM/resume/publication fixture;8 native models,18962 positions,
+53438 witnesses,361900 dense evidence rays,138480 primary boundary segments;80 browser
+locations,overlap/competing owners,geographic switching,raw/narrow/offline/launcher pass.
+Halfpixel median/max.109/5.646px,3 additional marginal lobes.17570 original files protected.
+390MiB fitting peak;2823MiB finalization. Comparison evidence historically exposed.
+Smallest unresolved test: native coupled ownership/body placement at the required
+location with whole-circuit preservation. No proof that new maker labels are needed.
+Keep R306 baseline and all failures. STOP after delivery; no R308,Phase3,pattern or
+beads.pov edits. Review can remain in this session; no automatic model/session change.
+
 # R306 completed — whole-circuit fitting; STOP
 
 Scientific commit and independently verified push: photo2/r306/results/delivery.json.

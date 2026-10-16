@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/rharris/git/beads/photo2/phase2_guided_fit.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/phase2_guided_fit.py", line 21, in main
+    state=Runner(a.output,a.seconds,a.resume,a.max_evaluations).run()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r307/search.py", line 104, in run
+    for r in initial():
+             ^^^^^^^
+UnboundLocalError: cannot access local variable 'initial' where it is not associated with a value

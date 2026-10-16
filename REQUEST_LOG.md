@@ -8945,3 +8945,43 @@ Automated native diagnosis, fixed-owner/gap controls, full-body independent audi
 restart/crash contracts and9-model/81-location Chromium review delivered.
 See photo2/R306_REPORT.md, R306_REPRODUCE.md and r306/results/delivery.json.
 Stop after commit/push/independent verification; no automatic R307.
+
+### R307 authorized request and implementation protocol
+
+The maker explicitly requested an executed, approximately 20-minute full-necklace
+sensitivity-guided reconstruction, superseding R306's STOP only for R307. Required
+location: R306 conditional index −101, projected center (1110.23,336.04). Its selected
+yellow boundary is a selection mark, not photographed color. Native ownership,
+isolated projection, positive interiors, uncertain external contours and reflections
+must remain distinct. Replace sparse ownership/boundary scoring, include local
+spline/phase/spacing sensitivities, retain full-chain nonintersection and all bodies,
+automatically diagnose regional failures, compare historical models on common
+photographic evidence, deliver a restartable workflow and viewer, commit/push and
+verify. No Phase3, pattern inference, beads.pov edits or additional large campaign.
+
+Implementation choice: compiled literal native ray marching, exact original-kernel
+checks; up to256 spatial support pixels versus24, region-balanced uncertain coherence,
+reverse incompatible-color and separator-bank penalties, dense bidirectional contour
+uncertainty bands, background and envelope contradictions, signed fixed-owner optical
+residuals. Damped block Gauss–Newton includes all32 axis,32 phase and32 spacing nodes;
+native acceptance, bounded steps, conservative full-chain support rejection. Four
+R306 families initialize the bounded run. Historical masks remain fallible; no new
+bead identities or exact silhouettes are invented. Current comparison remains
+historically exposed, never a fresh holdout. Implementation failure before the first
+fitting trial and all later failed proposals are retained. See R307_REPRODUCE.md.
+
+### R307 delivered outcome
+
+Executed20.00 fitting minutes,1052 trials/37 completed blocks/13 native accepted
+improvements. R306 primary remains preserved. New N2405 hand− open hypothesis
+certifies7166 close pairs, but comparison boundary5.51→5.65px, coherent ownership
+56.62→56.56%, and reflections10.02→10.10px do not improve the photograph. Required
+(1110.23,336.04) coverage58.27→57.57%; original fixed owners lose2 lobes. No adoption.
+Initial coarse-ranking and geographic-blocking defects were corrected before
+comparison exposure; first source/state/Jacobians retained. Remaining2.87minutes
+of native corrected search did not improve primary; not a full-budget test of
+the corrected method. Six contracts, interruption/resume/publication recovery,
+8-model original-kernel physical/native verification and80-location browser review
+pass. Positive-interior competing-owner overlay and geographic model switching
+added. All historical science preserved. See R307_REPORT.md and delivery receipt.
+Stop after verified push; no R308,Phase3,pattern or beads.pov changes.

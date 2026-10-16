@@ -1,0 +1,38 @@
+Preflight failures retained:
+- search-before-preflight-repair.py: Python local name `initial` shadowed the
+  initialization function; repaired to `initial_result` before the first fitting
+  trial. The traceback is preflight-search-failure.log.
+- A one-model UI smoke fixture initially supplied R306's nine-model diagnosis
+  file, causing StopIteration while building the fixture. The fixture was
+  corrected to filter diagnosis rows to its one model; production inputs already
+  use matching model manifests. No scientific or fitting algorithm changed.
+
+Native kernel development:
+- Initial camera-only compilation left reflection grouping and Python shadow
+  marching dominant. The final fast.py uses one union of conservative body boxes,
+  owner-sorted reflection grouping, and the same compiled literal shadow marcher.
+- The first profile included lattice cache construction; reported warm compiled
+  timings and baseline equivalence are in campaign/benchmark.json.
+- An additional duplicate benchmark used /tmp/r307-bench-check; it selected no
+  model and used only the unchanged R306 baseline/declared perturbations.
+- Five contracts and four-family original/compiled owner, unknown and shadow
+  comparisons passed before final export.
+
+Native correction before comparison exposure:
+- The initial correlation-only approximation gate accepted Spearman .893 even
+  though best-quartile recall was .5. The stricter gate requires correlation .9,
+  quartile recall .8, and no added missing assigned lobes. The saved benchmark
+  decision was corrected to native; original bytes are archived.
+- Axis knot numbering uses the photographic reference origin, whereas phase and
+  spacing knots use conditional k/N. Grouping equal numbers did not group the
+  same geographic region. The corrected scheduler projects the actual phase/
+  spacing knot stations and groups them with the matching photographic-axis
+  quarter. All original derivatives were individually valid; their joint block
+  selection was inefficient. The complete initial source/state/Jacobians remain
+  in evidence/before-native-correction, with a source transition in checkpoint.
+- The first correction script used `step` twice in the sensitivity-record dict,
+  causing SyntaxError before any new-stage trial. The metadata key was repaired
+  to `predictor_step`; the corrected script is switch-native-stage.py. No trial
+  ran under the syntactically invalid source.
+- Earlier stagnation is not carried across the switch to a different predictor
+  resolution; the cumulative fitting cap remains1200 seconds.
