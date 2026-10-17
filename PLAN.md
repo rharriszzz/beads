@@ -1,3 +1,41 @@
+# R309 completed — competing whole-necklace objectives; no adoption; STOP
+
+Scientific delivery and independently verified push: photo2/r309/results/delivery.json.
+Read photo2/R309_REPORT.md, R309_SPECIFICATION.md and R309_REPRODUCE.md.
+Entry: python3 photo2/phase2_competing_fit.py; launch photo2/review/r309/launch.sh.
+Standalone CPU schedule:19.79 fitting minutes/454 native trials,45.2s preflight;
+69.6s native ranking of existing settings (20.95min fit+ranking), no new proposals.
+Four equal remaining allowances222.3–226.3s: reflection/boundary/ownership/balanced.
+One periodic geometric centerline, true arclength/phase; all inherited local fields
+frozen. Only globally acting shape/phase/camera and small image-height/light laws.
+D=36.878px from independent B14 contour at(550.375,602.75),±6px conservative length
+uncertainty; fixed reference, NOT a trustworthy maximum over all photographed beads.
+All distances report RMS/max/P95 px and /D, all811 observations/missingness retained.
+Native/current centroids and finite-light shadows independently match originals.
+Threshold and halfpixel controls alter baseline RMS only~.02px, not the~9px mismatch.
+Smooth specular overlap still has visibility discontinuities;0 coupled GN proposals
+pass the all-column gate. Bounded global brackets execute; matrices/failures saved.
+R309 balanced selects retained2733/hand−/closed family:8199pairs certify,minimum
+support margin.188827units. Reliable reflection RMS/max/P95=.243/.614/.382D;
+R306 primary=.247/.486/.383D. Boundary RMS/max=.166/.444D versus.135/.353D.
+Ownership59.98→61.95%;mean regional paper6.84→4.54%,foreground omitted29.94→30.84%.
+Most gains reflect family selection: R3062733 already hasRMS.240D andownership61.18%.
+Boundary-focused branch least disruptive;none passes all photographic gates.
+Ownership branch fixed R306 owners:25.08px RMS,48.74px maximum(1.322D),38missing;
+rematching is not identity recovery. Physical indices/unwrapped drift remain unknown.
+Linear/quadratic height orientation,minor radius,perspective and one finite shared
+light tested globally. Height-zero controls do not establish a material gain.
+Required(1110,336) improves ownership52.81→69.09%,reflection.288→.180D, but lower
+boundaries still extend into paper; geographic regressions prevent global adoption.
+Supported final external boundaries exclude unannotated internal holes; native
+holes remain in viewer. All16 uncertain contours and fitting ROI scores retained.
+Six contracts, actual SIGTERM/resume/publication recovery;13-model independent audit:
+33032positions/97839witnesses,195000native rays+32400required+67493optical rays;
+1818398 exact boundary segments. Chromium130locations,raw/narrow/offline/launcher,
+normalized error readout, both axes, overlaps and50-body same-coordinate atlas pass.
+All19776 prior files preserved except additive handoffs; no old science overwritten.
+No adoption, Phase3, pattern, beads.pov edits or automatic R310. Stop after delivery.
+
 # R308 completed — global basins and small corrections; no substantial gain; STOP
 
 Scientific delivery and independent remote check: photo2/r308/results/delivery.json.

@@ -1,3 +1,23 @@
+# R309 — independent units and competing whole-photo outcomes
+
+Use one independent linear photographic reference for all model displacements:
+D=36.878px from uncertain B14; never normalize pixel areas by a length or claim
+this sparse-contour reference proves the photograph's maximum bead size. Preserve
+absolute/reliable maxima, IDs, locations, missingness and correspondence ambiguity.
+Compare independently measured external contours to complete native visible outer
+silhouettes; internal holes without observed annotations remain unmeasured, while
+the viewer retains every native hole and occlusion. Keep fitting ROI scores separate.
+An unthresholded specular-intensity positional surrogate need not have smooth
+geometric derivatives when visibility changes. Test derivatives, sampling and
+thresholds; retain exact centroid distances and frozen-owner controls. A low RMS
+with a large maximum or many lost fixed lobes is incomplete, not identity recovery.
+Four equal-budget global objectives show conflicting gains. R306's2733 family
+already explains most R309 balanced mean improvements; height-zero controls do not
+support the fitted height corrections. Small weighted-loss gains do not justify
+adoption. No verified identities support unwrapping phase across the circuit.
+Standalone Python schedules all probes, fitting, diagnosis and verification; no AI
+optimization supervisor or maker correspondence decisions are required.
+
 ## R308: distinguish unresolved native rays from observed gaps
 
 [R308](photo2/R308_REPORT.md) executes native global sweeps, scaled Jacobian/QR/SVD,

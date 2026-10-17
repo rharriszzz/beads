@@ -1,0 +1,14 @@
+.....E
+======================================================================
+ERROR: test_zero_height_exact_historical (photo2.r309.tests.Contracts.test_zero_height_exact_historical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/rharris/git/beads/photo2/r309/tests.py", line 21, in test_zero_height_exact_historical
+    a=Chain(self.p,self.data);b=Original(self.p,self.data);np.testing.assert_array_equal(a.centers,b.centers);np.testing.assert_allclose(a.g['axis'],b.g['axis'],atol=1e-14)
+                                                                                                                                         ~~~^^^^^^^^
+KeyError: 'axis'
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.761s
+
+FAILED (errors=1)

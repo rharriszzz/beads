@@ -9011,3 +9011,26 @@ Report and analysis-summary.json record same-metric comparisons, new/total corre
 effects, periodic/half-pixel controls, uncertainty limits and explicit negative outcome.
 All historical science preserved; scoped verification/commit/push/remote receipt follows.
 Stop here: no Phase3, pattern, adoption or automatic R309.
+
+
+# R309 — maker-authorized competing-measure whole-necklace experiment
+
+User requested one photographic D; separate reflection position, supported visible
+boundary, coherent interior and foreground/background measurements; four controlled
+global objectives; phase/count/registration, smooth optical measurement, whole-photo
+height and finite shared-light controls;~20min CPU fitting, autonomous reproducible
+workflow, raw/normalized maxima and full residuals,50-body atlas/viewer, independent
+checks, preservation, commit/push/remote verification. No Phase3 or color inference.
+Executed19.79min/454 native trials plus69.6s existing-candidate ranking after45.2s
+preflight. No objective or physical source changed during fitting. Native unknown
+rays receive the corrected R308 treatment from the beginning. Six contracts and
+real interruption/restart pass. Thirteen complete models/33032positions/97839
+contact witnesses verify;130 browser locations and1818398native boundary segments.
+D=36.878px±6px is an uncertain independent reference, not a proven maximum bead.
+No convincing whole-photo improvement. Balanced2733 improves mean ownership and
+paper relative2405, but worsens supported boundaries and maximum reflection error;
+its earlier R3062733 alternative already explains most gains. The required location
+improves markedly, without regional fitting. Height terms do not materially help.
+All four objectives and every failed trial retained. Historical baselines preserved;
+no adoption, Phase3, pattern or automatic R310. Delivery receipt in
+photo2/r309/results/delivery.json.
