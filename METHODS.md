@@ -2205,3 +2205,15 @@ support-plane stopping, conservative light angular trees, camera/contact caching
 and vectorized correspondence. Static overlays/top20/signed/outward/regional plots,
 performance ledgers, original-kernel replay and preserved source epochs accompany
 the partial results. No reconstruction adoption or Phase 3 follows automatically.
+
+# R314 — geometry gates and connected peak minimax (2026-10-17)
+
+See [report](photo2/R314_REPORT.md), [protocol](photo2/R314_SPECIFICATION.md),
+[reproduce](photo2/R314_REPRODUCE.md), and [review](photo2/r314/results/index.html).
+Independent neighbor persistence, material-to-paper boundary brackets, conjunctive
+acceptance, shared rounded exterior with independent bore, full-chain actual-solid
+contact and isolated/full surfaces. Six-basin broad/population search produces no
+accepted reconstruction. `photo2.r314.correspondence.evaluate_fixed` is the strict
+fixed-map/cohort peak-to-peak maximum API; connected lobes and faint maxima remain
+separate, missing predictions make maximum infinite. No eligible physical cohort or
+highlight optimization. Old science and both failed preflights remain preserved.

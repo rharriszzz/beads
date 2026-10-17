@@ -310,3 +310,14 @@ git show 2c4c116:REQUEST_LOG.md
 git show 2c4c116:photo2/SHAPE_REASONING.md
 git log --reverse --oneline refs/heads/photo-2-reconstruction ^refs/heads/image-to-pattern-2 --
 ```
+
+## R314 completed — geometry before maximum bright-spot displacement
+
+R314 keeps identical rigid glass, a common supporting paper plane, full-necklace
+occlusion/contact and physical−100…99. New noncompensating geometric gates reject
+coverage expansion, and an independent thread bore no longer changes the exterior.
+Six-basin fitting still fails geometric acceptance. Connected peak-to-peak minimax
+is implemented with frozen maps/cohorts and missingness, but no valid geometric fit
+or reliable corresponded cohort exists; no highlight optimization or adoption.
+See [R314 report](photo2/R314_REPORT.md) and [review](photo2/r314/results/index.html).
+Stop for scientific review; no automatic R315. Current session/model may be kept.

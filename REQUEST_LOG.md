@@ -9091,3 +9091,29 @@ stages.26-model independent replay passes;21872 historical tracked files preserv
 except additive handoffs. Source epochs, actual SIGTERM/resume/orphan recovery and
 all failures retained. Delivery receipt:photo2/r312/results/delivery.json. STOP for
 maker review;no Phase3,pattern inference,beads.pov edits or automaticR313.
+
+# R314 — geometry of physical -100..99, then maximum bright-spot displacement (2026-10-17)
+
+Maker requests a new 30-minute total active-wall-clock experiment, including delivery
+and >=6 minutes reserved for it. Diagnose R310–R313 failures; repair coverage-biased
+acceptance and false transition persistence; test shared rigid exterior independently
+of bore, coherent orientation/spacing/camera and full-necklace actual-solid contact.
+Retain R306, R312 and R313 focused-1/3 basins. Only after convincing geometry, minimize
+maximum peak-to-peak bright-feature displacement with connected lobes, frozen epoch
+assignments, explicit ambiguity/missingness and geometry constraints. No optical
+optimization if geometry fails. Full request operationalized in R314_SPECIFICATION.md.
+
+R314 outcome: no convincing geometric reconstruction and no valid principal bright-
+spot Emax. Repaired self-witnessing persistence and added414 material/paper brackets,
+211color seams and noncompensating acceptance;3px expansion and all required
+corruptions fail.1382valid proposals/540.41s across6basins;925certified,218actual
+penetration,8unresolved,231bounds;0accepted.120initial ranking-bug trials and sources
+preserved. Shared exterior/bore decoupled; bore-only controls unchanged for3parents.
+Exactly200 target bodies retained with full-necklace occlusion/contact.12exports,
+994098target rays,29236positions/86379independentcontacts/83952Pythonrays verified.
+16contracts and static Chromiumdesktop/narrow/offline pass.811old observations plus
+118localR289 records retained;connected components,peaks,ties,faint maxima,threshold
+and halfpixel diagnostics. Fixed-map/cohort peak-minimax API marks missing infinite
+and empty eligible cohort unavailable. No optical optimization because geometry fails.
+No adoption,Phase3,pattern,beads.pov edits,orautomaticR315. Report and delivery receipt
+record limitations,scientific push and elapsed wall time. STOP for scientific review.

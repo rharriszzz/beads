@@ -1,0 +1,22 @@
+VERIFY R306-2405
+VERIFY R309-2733
+VERIFY R312-best
+VERIFY R312-local
+VERIFY R313-focused-1
+VERIFY R313-focused-3
+VERIFY R314-basin-1
+VERIFY R314-basin-2
+VERIFY R314-basin-3
+VERIFY R314-basin-4
+VERIFY R314-basin-5
+VERIFY R314-basin-6
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r314/verify.py", line 67, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r314/verify.py", line 63, in main
+    assert (OUT/ref).resolve().exists(),ref;links.append(ref)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: verification.json

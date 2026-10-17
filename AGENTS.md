@@ -1,3 +1,33 @@
+# R314 completed — conjunctive geometry gates, independent bore, connected peaks; no adoption; STOP
+
+Read photo2/R314_REPORT.md, R314_SPECIFICATION.md and R314_REPRODUCE.md.
+Static review: photo2/r314/results/index.html; receipt: results/delivery.json.
+No convincing reconstruction or valid principal bright-spot Emax established.
+Original R313 science unchanged. Fixed material/paper/40 correlated cores retained;
+false self-witnessing persistence replaced:1429→1137 transitions,211color seams,
+414 material-to-paper brackets. Three-sample preflight preserved, rejected prefit.
+Conjunctive paper/exterior/seam/worst/per-core gates reject3px coverage expansion,
+merging, displacement,phase,scale. No black silhouettes or complete contours inferred.
+Exactly physical−100…99 retained; full-necklace occlusion/contact,all200 native grids.
+1382valid proposals/540.41s,925certified/218actualpenetration/8unresolved/231bounds;
+120interrupted ranking-bug trials preserved. Named-scale JSON-roundtrip fix tested.
+Six basins, broad+population refinement, legacy annulus+independent-bore exterior;
+no candidate passes development acceptance. Paper/ownership/local tradeoffs remain.
+Bore-only.08→.25 changes no development metrics in3parents;external shape unchanged.
+Higher-budget3contact followups:2unresolved,1actualpenetration;no equilibriumclaim.
+811inherited observations retained(67local/27strong),118localR289feature records.
+Connected peaks/patch centroids/ties/faint lobes,40/50/60%thresholds andhalfpx controls.
+R3067/200multilobe;tracked peak shifts≤3.54px with unresolved tracking retained.
+Public peak-minimax API correspondence.evaluate_fixed binds map/cohort/measurements;
+missing predictions→infinite max;empty reliable cohort unavailable,notzero.
+No illumination fit without geometric readiness. No valid physical index chain.
+16contracts;12models/29236positions/86379contacts/83952Pythonrays verify;
+994098full-target rays;raw/staticlinks/Chromiumdesktop,narrow,offline pass.
+Failed preflights/postprocessing sources retained. No speedupclaim,newglobalturn fit,
+mechanical solver,2Dregistration,Phase3,pattern,beads.pov edits,orautomaticR315.
+Stop for scientific review of brackets and isolated-versus-visible early neighbors.
+Keep user-supplied GPT-6 Astra High/current session;no /new needed.
+
 # R313 completed — fixed photographic surfaces, structural diagnosis; no adoption; STOP
 
 Read photo2/R313_REPORT.md, R313_SPECIFICATION.md and R313_REPRODUCE.md.

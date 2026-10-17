@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r314/diagnostics.py", line 102, in <module>
+    else:optical()
+         ^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r314/diagnostics.py", line 94, in optical
+    pts=pixels({'runs':o['original']['bright_patch_runs']});tr=s.trace(pts);ix=tr['owner'];ids,n=np.unique(ix[(ix>=0)&~tr['unknown']],return_counts=True)
+                       ~^^^^^^^^^^^^
+IndexError: invalid index to scalar variable.
