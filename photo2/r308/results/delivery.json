@@ -1,0 +1,432 @@
+{
+  "R306_aggregate_fit_seconds": 5266.8419793,
+  "acceptance": {
+    "baseline_preserved": true,
+    "checks": [
+      {
+        "after": 3.6287175343283358,
+        "baseline": "R306-primary",
+        "before": 3.570184878141362,
+        "metric": "visible_boundary_mae",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.3
+      },
+      {
+        "after": 6.085714285714285,
+        "baseline": "R306-primary",
+        "before": 6.114285714285714,
+        "metric": "envelope_width_mae",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.5
+      },
+      {
+        "after": 0.0588023088023088,
+        "baseline": "R306-primary",
+        "before": 0.05988455988455989,
+        "metric": "paper_occupied",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.01
+      },
+      {
+        "after": 0.31289537712895377,
+        "baseline": "R306-primary",
+        "before": 0.3133819951338199,
+        "metric": "colored_missing",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.02
+      },
+      {
+        "after": 3.221449171133608,
+        "baseline": "R306-primary",
+        "before": 3.435619834208405,
+        "metric": "separator_error_px",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.5
+      },
+      {
+        "after": 8.64034627685729,
+        "baseline": "R306-primary",
+        "before": 8.738019532794414,
+        "metric": "reflection_rms",
+        "passed": true,
+        "split": "development"
+      },
+      {
+        "after": 5.572967308493233,
+        "baseline": "R306-primary",
+        "before": 5.5136745833991885,
+        "metric": "visible_boundary_mae",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.3
+      },
+      {
+        "after": 6.8076923076923075,
+        "baseline": "R306-primary",
+        "before": 6.923076923076923,
+        "metric": "envelope_width_mae",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.5
+      },
+      {
+        "after": 0.0779510022271715,
+        "baseline": "R306-primary",
+        "before": 0.0779510022271715,
+        "metric": "paper_occupied",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.01
+      },
+      {
+        "after": 0.2979181622397703,
+        "baseline": "R306-primary",
+        "before": 0.29576453697056715,
+        "metric": "colored_missing",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.02
+      },
+      {
+        "after": 5.577200010701963,
+        "baseline": "R306-primary",
+        "before": 5.548098127534665,
+        "metric": "separator_error_px",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.5
+      },
+      {
+        "after": 10.037599440345245,
+        "baseline": "R306-primary",
+        "before": 10.021113672295659,
+        "metric": "reflection_rms",
+        "passed": true,
+        "split": "comparison"
+      },
+      {
+        "baseline": "R306-primary",
+        "metric": "substantial_boundary_and_coherence_improvement",
+        "passed": false
+      },
+      {
+        "baseline": "R306-primary",
+        "metric": "no_added_original_owner_missing_lobes",
+        "passed": false
+      },
+      {
+        "after": 3.6287175343283358,
+        "baseline": "R307-primary",
+        "before": 3.7080825406307807,
+        "metric": "visible_boundary_mae",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.3
+      },
+      {
+        "after": 6.085714285714285,
+        "baseline": "R307-primary",
+        "before": 6.071428571428571,
+        "metric": "envelope_width_mae",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.5
+      },
+      {
+        "after": 0.0588023088023088,
+        "baseline": "R307-primary",
+        "before": 0.05844155844155844,
+        "metric": "paper_occupied",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.01
+      },
+      {
+        "after": 0.31289537712895377,
+        "baseline": "R307-primary",
+        "before": 0.31313868613138685,
+        "metric": "colored_missing",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.02
+      },
+      {
+        "after": 3.221449171133608,
+        "baseline": "R307-primary",
+        "before": 3.033096889150293,
+        "metric": "separator_error_px",
+        "passed": true,
+        "split": "development",
+        "tolerance": 0.5
+      },
+      {
+        "after": 8.64034627685729,
+        "baseline": "R307-primary",
+        "before": 8.66363754016148,
+        "metric": "reflection_rms",
+        "passed": true,
+        "split": "development"
+      },
+      {
+        "after": 5.572967308493233,
+        "baseline": "R307-primary",
+        "before": 5.645747360090801,
+        "metric": "visible_boundary_mae",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.3
+      },
+      {
+        "after": 6.8076923076923075,
+        "baseline": "R307-primary",
+        "before": 6.8076923076923075,
+        "metric": "envelope_width_mae",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.5
+      },
+      {
+        "after": 0.0779510022271715,
+        "baseline": "R307-primary",
+        "before": 0.0779510022271715,
+        "metric": "paper_occupied",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.01
+      },
+      {
+        "after": 0.2979181622397703,
+        "baseline": "R307-primary",
+        "before": 0.29863603732950467,
+        "metric": "colored_missing",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.02
+      },
+      {
+        "after": 5.577200010701963,
+        "baseline": "R307-primary",
+        "before": 5.588693532508738,
+        "metric": "separator_error_px",
+        "passed": true,
+        "split": "comparison",
+        "tolerance": 0.5
+      },
+      {
+        "after": 10.037599440345245,
+        "baseline": "R307-primary",
+        "before": 10.103350899389904,
+        "metric": "reflection_rms",
+        "passed": true,
+        "split": "comparison"
+      },
+      {
+        "baseline": "R307-primary",
+        "metric": "substantial_boundary_and_coherence_improvement",
+        "passed": false
+      },
+      {
+        "baseline": "R307-primary",
+        "metric": "no_added_original_owner_missing_lobes",
+        "passed": true
+      }
+    ],
+    "demonstrably_better": false,
+    "large_regressions": [],
+    "physically_certified": true,
+    "policy": "Same R307 native common metrics; >=5% comparison boundary and >=2pp dense coherent ownership improvement against each baseline, no substantial component/regional regressions or extra missing original-owner lobes. Historical comparison evidence exposed; no new validation claim.",
+    "recommended_reference": "R306-primary; candidate not adopted unless all tests pass"
+  },
+  "artifact_sha256": {
+    "photo2/R308_REPORT.md": "934cc471fb551c664848d64ee13f2c86158ba3224657f9baacea9a7ffcf497ca",
+    "photo2/R308_REPRODUCE.md": "1dbc158ee41163ea814201c06aa878abcb9919b66bbf9e91294f519dd31b1d0b",
+    "photo2/R308_SPECIFICATION.md": "dd952f564cd0ca3272b11970b0f32e0140b6e20b945cfd1dcada433b0f5793a9",
+    "photo2/r308/evidence/final-source-manifest.json": "8a604f2c49d661c9be0f1de30e6160169ba98b67e3e047a95c3fa32d22894ebf",
+    "photo2/r308/evidence/unknown-ray-repair.json": "da2c600590f6bad1e2aa4470dbbb633b76466ddd2969448f1159a83d47fbdf10",
+    "photo2/r308/results/campaign/acceptance.json": "ff51731130dc65cd984d4e5efae37c4eadf037190bdf52b06991914f4f993757",
+    "photo2/r308/results/campaign/all-candidate-audit-verification.json": "ee408ec1a6926d48d251a6d2e70c3964e974abf8a748e46515af26a4d294b380",
+    "photo2/r308/results/campaign/all-candidate-corrected-ranking.json": "c46b10e7805d139daf8bde982b826c2dac627625fc60b22d111fc57bb2cd3225",
+    "photo2/r308/results/campaign/analysis-summary.json": "468963a95f4e1feca487c920c8e31c9dad97f2be3bfa15e0a1657629a7bd3e1e",
+    "photo2/r308/results/campaign/browser-check.json": "071176484401c1bd58d680f17dd68ea79a21c7f36f062d21e69690b384e975e4",
+    "photo2/r308/results/campaign/comparison.json": "e87bca90a3063ecce283457dbff379c50293d7409688098cb73f2d14bec663b8",
+    "photo2/r308/results/campaign/computation.json": "748686aee1fc48b179ac31cb091d28e79a47f767e66d5edd5567ea5b6a1e0909",
+    "photo2/r308/results/campaign/corrected-comparison.json": "4e5dfd8727f2fed61a0e73d7d4a046b2c55da55d8b84f9d6b85a8acf547afad1",
+    "photo2/r308/results/campaign/export-manifest.json": "5b9e32211c11d11beb4896bd5ab63d66a705b24a1a5cf399d60f585961f61312",
+    "photo2/r308/results/campaign/preservation-final.json": "322141d425e4bdf6fe1c2ab0dc41aff8f88c5f4d27f83bcecf8b7981bdb952f6",
+    "photo2/r308/results/campaign/selection.json": "a9356c7274e547e2a005931e67ae6ef6888d5b4778057c12dcbccbecc47075e9",
+    "photo2/r308/results/campaign/verification.json": "ead3ef67a7bf36e974e347d62eaaf259641b122f00252cef8997ea25a27a4be6",
+    "photo2/r308/results/transaction-tests.json": "aab595259ed445723f51553f68b175402139949eca2eefab3bacb5e03f298a7b"
+  },
+  "branch": "photo-2-strategy-v3",
+  "checks": {
+    "all_candidate_audit": {
+      "best_admissible_no_added_missing": 500,
+      "feasible_trials_audited": 500,
+      "independent_original_kernel_checks": [
+        {
+          "missing": 1,
+          "original_python_native_loss": 22.582410188008076,
+          "replayed_loss": 22.582410188008076,
+          "trial": 133
+        },
+        {
+          "missing": 0,
+          "original_python_native_loss": 22.61029835550972,
+          "replayed_loss": 22.610298355509713,
+          "trial": 500
+        }
+      ],
+      "passed": true,
+      "raw_best": 133,
+      "raw_best_rejected_for_added_missing_lobe": true,
+      "seconds": 8.210158038986265,
+      "selection_changed": false,
+      "utc": "2026-10-17T00:08:58.201131+00:00"
+    },
+    "boundary_segments_exact": 137996,
+    "browser_locations": 120,
+    "browser_passed": true,
+    "contact_witnesses": 82072,
+    "contracts": 6,
+    "native_models": 12,
+    "native_verification_passed": true,
+    "original_kernel_dense_evidence_rays": 361900,
+    "positions": 28582,
+    "preservation": {
+      "additive_handoffs": [
+        "AGENTS.md",
+        "METHODS.md",
+        "PLAN.md",
+        "REQUEST_LOG.md"
+      ],
+      "byte_identical": 18900,
+      "modified_historical_science": [],
+      "protected": 18904,
+      "utc": "2026-10-17T00:13:11.654240+00:00"
+    },
+    "staged_whitespace_check_passed": true,
+    "transaction_tests": {
+      "actual_SIGTERM": true,
+      "committed_trials_byte_preserved": 2,
+      "output": "/tmp/beads-r308-transactions/1792194892713781741",
+      "passed": true,
+      "policy": "Cached committed trials replay without recomputation; interrupted deterministic stage repeats its decisions from committed records. Actual restart time charged. No claim of bitwise equality for budget-cutoff timing.",
+      "published_uncommitted_fixture_recomputed": true,
+      "resume_added_trials": 2
+    },
+    "windows_browser_opened": false,
+    "windows_dispatch_mocked": true
+  },
+  "corrections": {
+    "axis_nodes": {
+      "limit": 2.0,
+      "maximum": 0.019773839563797416,
+      "rate_max_per_circuit": 0.24849229500064526,
+      "rms": 0.013978826709296857,
+      "roughness": 2.1063035830410434e-06
+    },
+    "displacement_limit_px": 3.1121708786558266,
+    "local_phase": {
+      "limit": 0.06,
+      "maximum": 0.00022500000000000298,
+      "rate_max_per_circuit": 0.001413704966692239,
+      "rms": 0.00015902106624672568,
+      "roughness": 5.992909040429674e-09
+    },
+    "local_spacing": {
+      "limit": 0.002,
+      "maximum": 1.5838402265752263e-05,
+      "rate_max_per_circuit": 9.951479087804212e-05,
+      "rms": 1.1193953848642169e-05,
+      "roughness": 4.218582405528392e-10
+    },
+    "projected_center_displacement_max_px": 0.10460465895482633,
+    "projected_center_displacement_rms_px": 0.051926801876305634,
+    "within_bounds": true
+  },
+  "entry": "photo2/phase2_hierarchical_fit.py",
+  "fitting": {
+    "finalization_seconds": 497.2565644760034,
+    "fitting_seconds": 1197.493931777979,
+    "optimization_plus_repair_audit_seconds_estimate": 1303.2700977779791,
+    "peak_finalize_rss_mib": 3300.29296875,
+    "peak_fitting_rss_mib": 397.78515625,
+    "postfit_all_candidate_repair_audit_seconds_estimate": 105.776166,
+    "postfit_all_candidate_timing_method": {
+      "end_log_final_write": "2026-10-16 20:08:11.826464710 -0400",
+      "method": "Filesystem elapsed estimate, not a stored monotonic measurement; no new candidates.",
+      "start_log_birth": "2026-10-16 20:06:26.050298668 -0400"
+    },
+    "trials": 503
+  },
+  "independent_remote_verification": {
+    "command": "git ls-remote origin refs/heads/photo-2-strategy-v3",
+    "matched": true,
+    "remote_sha": "c7e504f8553ebdbd460caf836eef7028cd4ae945"
+  },
+  "launcher": "photo2/review/r308/launch.sh",
+  "metadata_note": "Receipt committed after independently verified scientific push; receipt commit pushed and checked separately.",
+  "numerical_limitation": "Unknown native rays generated false separator/contour edges and empty-paper credit. Repaired at 1033.904 fitting seconds; only remaining 2.73 minutes use corrected treatment. All 500 feasible retained trials rescored afterwards; original Python checks confirm best admissible trial500. No complete-budget test of repaired hierarchy.",
+  "outcome": "Physically feasible and faster than R306, but no substantial whole-necklace photographic improvement over both R306 and R307. Historical baseline retained; no adoption.",
+  "pattern_inference": false,
+  "periodic_result": "Seven sampled phase minima; no better alternative after corrected same-candidate rescoring. One basin qualified for local refinement.",
+  "phase3": false,
+  "primary": {
+    "all_spatial_pairs_certified": 7166,
+    "comparison": {
+      "bead_axial_mae": 2.7558201569708274,
+      "bead_extent_mae": 2.0496845202150507,
+      "bead_face_mae": 1.343548883459274,
+      "color_conflict": 0.08421414808698047,
+      "colored_missing": 0.2979181622397703,
+      "envelope_common_mae": 3.2115384615384617,
+      "envelope_edge_mae": 4.365384615384615,
+      "envelope_width_mae": 6.8076923076923075,
+      "loss": 10.715284344867797,
+      "paper_occupied": 0.0779510022271715,
+      "reflection": {
+        "ambiguous": 47,
+        "loss": 1.5742719144502997,
+        "matched": 69,
+        "median": 9.780578991196261,
+        "p90": 14.17397208853266,
+        "rms": 10.037599440345245,
+        "unmatched": 0
+      },
+      "region_containment": 0.5729166666666666,
+      "separator_error_px": 5.577200010701963,
+      "visible_boundary_mae": 5.572967308493233
+    },
+    "count": 2405,
+    "geometric_axis_closed": true,
+    "hand": -1,
+    "minimum_separating_margin_units": 0.2617759162213005,
+    "string_topology": "open"
+  },
+  "recommendation": "Review delivered artifacts; no automatic R309 or additional fitting.",
+  "recorded_utc": "2026-10-17T00:14:11.489171+00:00",
+  "report": "photo2/R308_REPORT.md",
+  "repository": "rharriszzz/beads",
+  "reproduce": "photo2/R308_REPRODUCE.md",
+  "schema": 308,
+  "scientific_commit": "c7e504f8553ebdbd460caf836eef7028cd4ae945",
+  "selected_global_parameters": [
+    "elevation",
+    "phase",
+    "turn",
+    "roll",
+    "minor",
+    "axial",
+    "tilt",
+    "scale"
+  ],
+  "stage_result": "Global-only and distributed-only retain R307 unchanged. Joint and completed perturbation yield small gains, failing substantial improvement checks.",
+  "status": "delivered",
+  "stop": true,
+  "summary": "photo2/r308/results/campaign/analysis-summary.json"
+}
