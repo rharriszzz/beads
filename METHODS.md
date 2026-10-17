@@ -1,3 +1,17 @@
+# R310: first discrepancy requires a photographic origin and an identity distinction
+
+Start from an observed bead, not a historical index. The R294 red reference maps
+conditionally to R3060 and R3092. Inspect both signed sequences without refitting.
+Positive-interior overlap and isolated/visible decomposition can prove a support
+inconsistency without establishing physical bead-center displacement. A reflection
+is not a center. Keep early ambiguous splits, sparse/hidden bodies and threshold
+sensitivity rather than declaring all predecessors correct. Reassignment cannot
+repair a visible-body coverage ceiling. Curvature already contributes the inner/
+outer factor1-rho*kappa*sin(phi); verify that identity before adding packing laws.
+R310's first failures occur at both mild and tighter bends, with no consistent
+curvature/error relationship. No curvature correction or fitted geometry was changed.
+Read photo2/R310_REPORT.md; stop for maker and independent AI review.
+
 # R309 — independent units and competing whole-photo outcomes
 
 Use one independent linear photographic reference for all model displacements:

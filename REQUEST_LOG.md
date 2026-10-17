@@ -9034,3 +9034,20 @@ improves markedly, without regional fitting. Height terms do not materially help
 All four objectives and every failed trial retained. Historical baselines preserved;
 no adoption, Phase3, pattern or automatic R310. Delivery receipt in
 photo2/r309/results/delivery.json.
+
+# R310 — diagnostic first failure and curvature, delivered
+
+User requested first major positioning discrepancy outward both ways from R294's
+C-1497-0271 before investigating tight-bend crochet packing. Explicitly no fitting.
+Compared unchanged whole R3062405, R3092733, and stronger-anchor R2972337; saved
+all10/20/40/80/160/320 prefixes, uncertain owner alternatives, material/optical
+discrepancies, isolated occlusion controls, neighbor proxies and threshold tests.
+No verified physical identity chain supports a unique first positioning-error index.
+Earliest R306 negative material mismatch is only19.8px from reference; R309
+failures include wrong predicted occlusion despite complete isolated coverage.
+Part A completed before curvature: analytic/numerical pure-bend/frame checks pass;
+no consistent curvature explanation or basis for an implemented correction.
+Original geometry/photo/history preserved; report, autonomous diagnostic workflow,
+interactive viewer/ordered atlas, full numerical/browser verification delivered.
+Commit/push/remote receipt: photo2/r310/results/delivery.json. Stop for review;
+no Phase3, color-pattern inference, automatic R311 or optimization campaign.

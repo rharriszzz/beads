@@ -1,3 +1,37 @@
+# R310 completed — first positioning inconsistency, then curvature; STOP
+
+Delivery and independently verified scientific push: photo2/r310/results/delivery.json.
+Read photo2/R310_REPORT.md and R310_REPRODUCE.md.
+Entry: python3 photo2/phase2_position_diagnosis.py; launch photo2/review/r310/launch.sh.
+Diagnostic only: no fitted parameter changes, no optimization proposals or fitting.
+C-1497-0271 is the maker's photographic reference, interior centroid1499.361,271.204;
+separate weak reflection1496.926,271.015. Neither is a physical center.
+Dominant native owners R3060/R3092/R2970 cover80.2/92.6/94.7%; identities conditional.
+No independently verified physical +1/+6/+7 chain or bead-center coordinates exist.
+Hence no uniquely established first physical positioning error or last verified chain.
+Unchanged whole models2405/2733/2337; both directions10/20/40/80/160/320 inspected.
+Earliest R306 negative material split C-1477-0290 at−19.8photo px, modal−7 covers31.7%;
+best isolated owner−9 only46.5%. Next red−42.3px also fails; occlusion alone insufficient.
+Positive fragmentation begins+37–41px; strict major-distance rule first+172.9px/index46.
+R309 strict first negative−133.0px/index−31, positive+108.6px/index35(relative+33).
+At positive C-1608-0253, isolated30 covers100% but visible29.7%; modal35 only35.7%.
+Relabeling cannot restore missing surface. Phase/pose/depth versus shape/camera unresolved.
+First-event thresholds are sensitive: erosion0–3px, distance0.10/0.15/0.20D retained.
+D=36.878px fixed R309 reference,±6px conservative uncertainty, not exact largest bead.
+Positive-interior, center, visible/isolated shape, reflection and conditional indices separate.
+Part A completion precedes curvature. Full derivative and9 analytic-circle controls pass;
+no missing pure-bend factor, frame flip or phase reset. Inner/outer spacing already changes.
+First R306 negative radius8.67rope widths; R309 negative11.24, positive3.90.
+Curvature/ownership-error Spearman−.146/+.055: no consistent causal curvature evidence.
+Prescribed orientations/spacing are not a mechanical crochet relaxation solution.
+7475saved positions/params exact,55457original rays,105730native boundary segments;
+1923inspected addresses,28raw atlas crops exact; Chromium30locations,alllinks/images,
+raw invariance,clickrecenter,geographic switching,narrow/offline/actual launcher pass.
+Initial isolated-copy binding and unchanged-input recenter defects caught/fixed, logs retained.
+No historical science changed; additive handoffs only. No Phase3, pattern or geometry edits.
+Next only after review: image-only rim/occlusion/neighbor evidence across reference and two
+negative red neighbors, compared with unchanged families. No automatic R311 or fitting.
+
 # R309 completed — competing whole-necklace objectives; no adoption; STOP
 
 Scientific delivery and independently verified push: photo2/r309/results/delivery.json.
