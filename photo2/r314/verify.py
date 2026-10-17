@@ -25,7 +25,7 @@ def main():
     # Old evidence and all old tracked sources/results must be byte-unchanged.
     old=np.load(ROOT/'photo2/r313/evidence/maps.npz')
     for k in ['material','paper','core','color','xy','native','roi','split','arc']:np.testing.assert_array_equal(old[k],eng.m[k])
-    diff=subprocess.check_output(['git','diff','--name-only',read(OUT/'start.json')['head']],text=True).splitlines()
+    diff=subprocess.check_output(['git','diff','--name-only','--diff-filter=MDRCT',read(OUT/'start.json')['head']],text=True).splitlines()
     allowed={'REQUEST_LOG.md','AGENTS.md','INITIAL_QUESTION.md','METHODS.md'}
     assert set(diff)<=allowed,diff
     for p in diff:
