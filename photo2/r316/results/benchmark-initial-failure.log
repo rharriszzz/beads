@@ -1,0 +1,23 @@
+R306 rays 84369 refined 0.303 hybrid 0.307 layer 0.46 warm 0.003 bad 0 0 0
+focused3 rays 85395 refined 0.322 hybrid 0.323 layer 0.497 warm 0.003 bad 0 0 0
+narrow rays 84416 refined 0.326 hybrid 0.33 layer 0.544 warm 0.003 bad 0 0 0
+opposite rays 87807 refined 0.296 hybrid 0.301 layer 0.439 warm 0.003 bad 0 0 0
+convex-ortho rays 84367 refined 0.336 hybrid 1.081 layer 0.485 warm 0.003 bad 0 0 0
+legacy-ortho rays 84367 refined 0.326 hybrid 1.272 layer 0.507 warm 0.003 bad 0 0 0
+convex-finite rays 91340 refined 0.357 hybrid 0.366 layer 0.557 warm 0.004 bad 0 0 0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r316/benchmark.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r316/benchmark.py", line 35, in main
+    hy=Hybrid();r=hy.trace(s,xy);hw=hy.trace(s,xy)
+                  ^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r316/renderer.py", line 80, in trace
+    z=sandwich(s,j,self.tolerance);bounds.append(z['bound']);p=Path(z['outer']).contains_points(xy[ix],radius=2*guard);ix=ix[p]
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r316/renderer.py", line 43, in sandwich
+    if bound>tolerance:raise ValueError('Unresolved silhouette tolerance')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unresolved silhouette tolerance

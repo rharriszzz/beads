@@ -1,3 +1,5 @@
+R316 delivered: see photo2/R316_REPORT.md and photo2/r316/results/delivery.json. Joint local gains, no reconstruction adoption; STOP for scientific review, no automatic R317.
+
 # R311 completed — missed basins, partial gains; no adoption; STOP
 
 Delivery and remote verification: photo2/r311/results/delivery.json.

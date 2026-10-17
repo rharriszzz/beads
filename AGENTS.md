@@ -1,3 +1,26 @@
+# R316 completed — layered prototype, joint local recovery; no adoption; STOP
+
+Read photo2/R316_REPORT.md, R316_SPECIFICATION.md and R316_REPRODUCE.md.
+Static review: photo2/r316/results/index.html; delivery: results/delivery.json.
+Conservative orthographic support sandwich <=.025px, bore/legacy/perspective/grazing
+fallback; separating-plane pair orders, no center-depth sorting or global DAG.
+686428 target-grid rays agree exactly; 16744 independent Python sampled rays.
+Regional cycle fixture defeats center sorting at18pixels; exact layering agrees.
+Cold polygons slower; partial isolated-layer reuse237/272 gives measured local
+full-evaluation2.24–2.80x, not10x or default renderer adoption. All bodies retained.
+183 initial+45 positive+27 negative controlled evaluations; shared rigid shape,
+coherent orientation/phase/station, no free per-bead transforms or optical fitting.
+First negative visible28.6→85.1%, next negative57.3→71.9%, +8 78.2→77.7%;
+six-core mean59.3→77.4%. Next-negative isolated−15 reaches98.6% but visible3.1%;
+71.9% belongs to−14, never combine these as one recovered identity.
+Comparison material/paper/seams improve, worstcore9.85→10.77px; dev paper regresses;
+all414brackets finite, max57→62px. No acceptable200-bead reconstruction or Emax.
+Exactly physical−100…99; all2405 bodies in contact/visibility. All prior science
+unchanged. 36 photo cards; failed crop-bound/serialization and refinement retained.
+38contracts; independent positions/support/rays/metrics/raw crops and browser checks.
+No mechanical equilibrium, physical chain, color pattern, Phase3, beads.pov edits,
+or automaticR317. STOP for review of +12 isolated shape and −14/−15 separation.
+
 # R314 completed — conjunctive geometry gates, independent bore, connected peaks; no adoption; STOP
 
 Read photo2/R314_REPORT.md, R314_SPECIFICATION.md and R314_REPRODUCE.md.

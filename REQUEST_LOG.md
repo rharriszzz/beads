@@ -1,3 +1,5 @@
+R316 delivered: see photo2/R316_REPORT.md and photo2/r316/results/delivery.json. Joint local gains, no reconstruction adoption; STOP for scientific review, no automatic R317.
+
 # Beads requests — photo-2-reconstruction-v2
 
 Append-only. Earlier R001–R091 history is preserved at

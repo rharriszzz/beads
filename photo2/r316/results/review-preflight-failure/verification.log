@@ -1,0 +1,29 @@
+verified R306
+verified focused3
+verified joint-best
+verified joint-recovery
+verified narrow
+verified negative-repair
+verified positive-followup
+verified positive-recovery
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r316/verify.py", line 62, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r316/verify.py", line 43, in main
+    x,y=np.rint(item['point']).astype(int)-e.m['origin'];raw=e.m['native'][y-60:y+61,x-60:x+61];im=np.array(Image.open(OUT/item['image']));np.testing.assert_array_equal(im[38:401:3,0:363:3],raw)
+                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "/home/rharris/git/beads/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 847, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError:
+Arrays are not equal
+
+(shapes (121, 121, 3), (0, 121, 3) mismatch)
+ ACTUAL: array([[[225, 108, 199],
+        [224, 107, 198],
+        [221, 104, 195],...
+ DESIRED: array([], shape=(0, 121, 3), dtype=uint8)
