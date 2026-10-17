@@ -1,3 +1,17 @@
+## R308: distinguish unresolved native rays from observed gaps
+
+[R308](photo2/R308_REPORT.md) executes native global sweeps, scaled Jacobian/QR/SVD,
+small Fourier increments and joint trust steps within19.96 minutes. It does not
+establish a better whole-necklace reconstruction. A known numerical marcher output
+(owner−1 with unknown=true) is not verified paper or a separator. Exclude transitions
+that touch unresolved samples; preserve conservative paper contradictions and all
+missing lobes. Renderer equivalence alone does not validate the observation score.
+Inspect two-sided curvature and missing-lobe events before interpreting sensitivity
+norms; source-preserved smaller-step tests belong inside the original budget.
+Distinguish new small corrections from inherited field amplitudes and accumulated
+motion. Preserve fixed-owner controls, historical common metrics, corrected metrics,
+all geographic failures, original sources and before/after images. No automatic R309.
+
 # R307 — native sensitivity and ownership limitations
 
 [Report](photo2/R307_REPORT.md) · [Reproduce](photo2/R307_REPRODUCE.md).

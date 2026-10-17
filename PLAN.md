@@ -1,3 +1,38 @@
+# R308 completed — global basins and small corrections; no substantial gain; STOP
+
+Scientific delivery and independent remote check: photo2/r308/results/delivery.json.
+Read photo2/R308_REPORT.md, R308_SPECIFICATION.md and R308_REPRODUCE.md.
+Entry: python3 photo2/phase2_hierarchical_fit.py; launch photo2/review/r308/launch.sh.
+19.96 fitting minutes,503 native trials; final candidate repair-score audit adds1.76min
+(21.72min inclusive, no new proposals); all three stages and bounded adaptive joint
+refinement executed. Four1D curves, two coupled grids, eight QR-selected globals:
+elevation,phase,turn,roll,minor,axial,tilt,scale. Registration strongly coupled.
+Initial sensitivities include dropout/unknown-ray effects, not identified constants.
+No better sampled periodic basin, also under corrected same-candidate scoring.
+Global/distributed-only stages retain R307; joint gains small. Comparison boundary
+R306/R307/R308=5.51/5.65/5.57px; dense coherent ownership56.621/56.561/56.615%;
+strong RMS10.02/10.10/10.04px. Paper7.80% unchanged. No substantial improvement.
+All269 strong free matches; fixed R306 owners still lose2 lobes (24px-penalized
+RMS9.245); R307 owners lose0. Full811 observations/all physical bodies retained.
+At(1110,336), nonreflection-interior ownership52.81/52.19/52.33%; failure persists.
+These denominators exclude reflection regions, unlike the older R307 local headline.
+Verified inherited objective defect: S25 unknown ray became a false separator;
+0.06deg tilt changes apparent gap error5.31→9.62px. Repair at1033.904 fit seconds:
+exclude uncertain separator/contour edges; unknown paper rays cannot earn empty-paper
+credit. Original sources/state/trials archived, remaining original budget used.
+Stale signal-on-resume flag fixed. Not a full-budget test of the corrected objective.
+Primary2405/hand−/open, periodic axis;7166 pairs certify,minmargin.261776 source units.
+New axis/phase/spacing increments max.01977px/.000225rad/.001584%; joint center effect
+max.1046px. Inherited total fields can shift centers23.91px versus zero fields;
+phase/spacing rate departures.664%/.417%, not measured strain or physical identity.
+397.8MiB fitting peak;3300.3MiB finalization. Historical comparison evidence exposed.
+Six contracts, actual SIGTERM/resume/publication recovery; independent12-model audit:
+28582 positions/82072 witnesses/361900 dense rays/137996 primary boundary segments.
+Original photo/science preserved; review has overlap/competing owners, geographic
+switching, full diagnostics and representative good/typical/poor/regression atlas.
+No adoption, Phase3, pattern, beads.pov edits or automatic R309. STOP after delivery.
+Current session/model may be kept for review; no /new needed.
+
 # R307 completed — faster guided fitting, no photographic improvement; STOP
 
 Scientific delivery and independent remote verification: photo2/r307/results/delivery.json.

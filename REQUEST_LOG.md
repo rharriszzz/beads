@@ -8985,3 +8985,29 @@ the corrected method. Six contracts, interruption/resume/publication recovery,
 pass. Positive-interior competing-owner overlay and geographic model switching
 added. All historical science preserved. See R307_REPORT.md and delivery receipt.
 Stop after verified push; no R308,Phase3,pattern or beads.pov changes.
+
+
+## R308 — authorized global basins and small distributed corrections
+
+Maker requests an executed approximately20-minute full-necklace optimization on
+photo-2-strategy-v3: select3–8 influential global parameters from measured native
+residual sensitivities; explore periodic phase/registration minima and coupled
+responses; refine small bounded distributed corrections, then jointly refine.
+Use the full real-photo evidence, fixed-owner controls, geographic balancing and
+hard full-chain contact checks. Preserve R306/R307 and all historical science.
+Deliver common component/regional metrics, field magnitudes/effects, complete
+search history, plots, representative atlas, overlap viewer, JSON analysis summary,
+verification, commit/push/independent remote check. No Phase3, pattern or follow-on
+large speculative experiment. R308_SPECIFICATION.md records pre-run choices;
+R308_REPORT.md will record the executed outcome, including failure if applicable.
+
+R308 outcome:503 native trials in1197.494 fitting seconds. No substantially better
+reconstruction. Global and distributed-only stages retain R307; joint changes give
+small gains versus R307, still failing acceptance against R306. Primary2405/hand−/open
+certifies7166 pairs. S25 unresolved-ray false-separator reward was discovered, fixed
+at1033.904 seconds and tested within the remaining budget; all source transitions
+and failures survive. Strong free RMS9.019 overall does not recover physical owners.
+Report and analysis-summary.json record same-metric comparisons, new/total correction
+effects, periodic/half-pixel controls, uncertainty limits and explicit negative outcome.
+All historical science preserved; scoped verification/commit/push/remote receipt follows.
+Stop here: no Phase3, pattern, adoption or automatic R309.
