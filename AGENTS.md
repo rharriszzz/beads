@@ -1,3 +1,46 @@
+# R311 completed — missed basins, partial gains; no adoption; STOP
+
+Delivery and remote verification: photo2/r311/results/delivery.json.
+Read photo2/R311_REPORT.md, R311_DETAILS.md and R311_REPRODUCE.md.
+Entry: python3 photo2/phase2_basin_search.py; review photo2/review/r311/launch.sh.
+Audit6075 original R306–R309 trials: R30958 shared trials,41/41 coupled derivative
+blocks gated out; unchanged R297 was not a principal start. Numerical bounds are
+not measured physical ranges; actual joint coverage/ranges/rejections plotted.
+911 unique vectors/50.10 search min:562 certified,332 witnessed penetration,
+15 unresolved separation,2 bounds. Initial40min+contingent10min; no new proposals
+in dense export/verification. 639/849 broad slots;155/160 basin4D samples, gaps shown.
+Principal unchanged R2972337, R3062405 and2733; counts/hands/topology/fields fixed.
+Five broad pairs, scrambled4D samples, adaptive subdivision, direct joint jumps;
+no derivative or missing-highlight basin veto. All native/full-chain contacts.
+Pure phase/registration trial163 repairs first negative31.7→81.0%, positive79.0→98.8%,
+reference80.2→97.7%, but whole development score worsens7.9%; no patch-only adoption.
+Promising distant2733 trial663 repairs first errors85.9/81.4%, reference89.8%.
+Reflection RMS.240→.231D, ownership61.18→61.92%, paper4.52→4.41%, but boundary
+RMS6.04→6.76px; section13 ownership loses18.9points. Fixed labels5.602D/66missing
+are conditional, not verified identities. A missed useful basin exists, no global cure.
+R306 global trial796 gains ownership59.98→64.63% but loses reference80.2→39.7%;
+boundary.135→.202D. No finalist passes all material/photographic checks, even
+without raw fixed-index gate. Do not infer geometry inadequacy from bounded failure.
+D=36.878px fixed R309 B14, ±6px conservative uncertainty, not exact largest bead.
+All811 observations retained; first-error constraints intentionally expose old
+comparison geography. Dense comparison is retrospective, not fresh validation.
+15 models: 36566 positions/102635 independent contact witnesses,
+560584 original native+338795 optical rays,
+2040274 complete boundary segments; raw/viewer owners/frames pass.
+Five contracts incl actual SIGTERM/resume/orphan recovery; Chromium120locations,
+raw invariance/native picking/geographic switching/narrow/offline/actual launcher pass.
+Initial illustration crop-cut edges fixed; old PNG retained. R297 whole-interior
+85.7/96.6% differs from97.9% negative eroded core; wording corrected, results unchanged.
+Restart binding expanded after seal, AST proves only hashing function changed;
+original fitting source/checkpoint retained and five contracts rerun. Old science exact.
+No new bead-shape law, arbitrary local corrections, Phase3 or beads.pov edits.
+STOP for maker review of the partial basin/global tradeoff. No automatic R312;
+keep current model/session for review, no /new needed.
+
+# R311 in progress — authorized broad global basin test
+
+See photo2/R311_SPECIFICATION.md. Existing global parameters only; preserve original R297 as a distinct principal start alongside R306-primary and2733. Native pair maps, Sobol combinations and adaptive basin subdivision use a2400-second cumulative search allowance. All inherited fields, counts, hands and topologies remain fixed within each family. No new geometry, local correction or Phase3. Commit/push verified evidence and STOP for review.
+
 # R310 completed — first positioning inconsistency, then curvature; STOP
 
 Delivery and independently verified scientific push: photo2/r310/results/delivery.json.

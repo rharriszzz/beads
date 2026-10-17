@@ -2180,3 +2180,13 @@ gate every selected model. Keep reciprocal FFT basis/alias ambiguity independent
 [R298](photo2/R298_REPORT.md) reduces dimensional errors with thinner beads and a
 wider minor radius, but regresses native material/neighbor alignment. This is a
 calibration alternative, not an adopted reconstruction. Stop for maker review.
+
+
+# R311 in progress — authorized broad global basin test
+
+See photo2/R311_SPECIFICATION.md. Existing global parameters only; preserve original R297 as a distinct principal start alongside R306-primary and2733. Native pair maps, Sobol combinations and adaptive basin subdivision use a2400-second cumulative search allowance. All inherited fields, counts, hands and topologies remain fixed within each family. No new geometry, local correction or Phase3. Commit/push verified evidence and STOP for review.
+
+
+## R311 — broad existing-global basin evidence
+
+[Report](photo2/R311_REPORT.md), [details](photo2/R311_DETAILS.md), [reproduce](photo2/R311_REPRODUCE.md), [review](photo2/review/r311/index.html). Actual R306–R309 coverage audit, five native joint maps, scrambled four-variable sampling and bounded basin refinement; original R297 preserved as a principal hypothesis. Restartable entry: `python3 photo2/phase2_basin_search.py`. 911 vectors in50.10 search minutes; partial first-error/global gains, no adoption. Every historical artifact preserved; no new shape law, local field fitting or Phase3. Stop for maker review; no automatic R312.

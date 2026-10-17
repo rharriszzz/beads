@@ -9051,3 +9051,14 @@ Original geometry/photo/history preserved; report, autonomous diagnostic workflo
 interactive viewer/ordered atlas, full numerical/browser verification delivered.
 Commit/push/remote receipt: photo2/r310/results/delivery.json. Stop for review;
 no Phase3, color-pattern inference, automatic R311 or optimization campaign.
+
+
+## R311 — Find the missing global parameter basin
+
+Maker authorizes a broad audit and autonomous restartable whole-necklace search over existing global parameters, principal starts R297/R306-primary/2733 alternative, coupled response maps and multivariate sampling. Prioritize original first errors near (1480,291) and (1613,253), with isolated/visible/occluded ownership and adjacent-body controls; never optimize a patch independently. Compare normalized reflections, supported boundaries, interiors, background, missingness, fixed-owner controls and full physical feasibility. Preserve previous artifacts, commit/push/verify and stop for review. No new bead geometry, arbitrary local corrections or Phase 3. Full protocol: photo2/R311_SPECIFICATION.md. Initial aggregate search budget 2400 seconds; finalization separately measured.
+
+R311 threshold clarification before finalist selection/comparison: replace impossible unconditional+15pp coverage demand on R297 (already~98% at the negative target) with explicit repair/preservation thresholds. Original specification and timestamp preserved in r311/evidence. Search objective, budget, geometry and proposal generation unchanged.
+
+R311 documentation correction: R297 whole-interior negative/positive overlap is85.7/96.6%;97.9% is the negative eroded core. The initial threshold-clarification wording conflated these. Programmed thresholds, selection and numerical results always used whole-interior fractions and are unchanged; old wording retained in evidence.
+
+R311 completed: audited6075 archived trials and evaluated911 unique vectors (562 certified feasible,332 witnessed penetration,15 unresolved,2 bounds) in50.10 search minutes. Pure phase/registration repairs the first errors locally; distant2733 trial663 also yields modest global gains but boundary/regional regressions remain. No finalist meets the combined criteria, including without raw fixed-index gate. Fifteen dense whole models, original-kernel/contacts/boundary replay and120 browser locations pass. Restart hashing expanded with exact fitting-source retention and AST equivalence proof; five contracts rerun. Native science unchanged by two documented visualization/wording corrections. Original artifacts preserved. Scientific commit/push and remote verification are recorded in photo2/r311/results/delivery.json. STOP for review; no geometry adoption, new shape law, arbitrary local correction, Phase3 or automatic R312.
