@@ -9117,3 +9117,32 @@ and halfpixel diagnostics. Fixed-map/cohort peak-minimax API marks missing infin
 and empty eligible cohort unavailable. No optical optimization because geometry fails.
 No adoption,Phase3,pattern,beads.pov edits,orautomaticR315. Report and delivery receipt
 record limitations,scientific push and elapsed wall time. STOP for scientific review.
+
+# R315 — diagnose and repair geometric reconstruction failure (2026-10-17)
+
+User requests a fresh30-minute total active-wall-clock causal investigation on
+photo-2-strategy-v3, including documentation/verification/commit/push and at least
+six minutes reserved for delivery; supplied model GPT-6 Astra High. Read R314 and
+relevant R310/R312/R313 evidence and implementation. Identify actual early occluders
+and isolated-versus-visible alternatives, depths and invalid removal counterfactuals;
+examine local phase/spacing representation, independent2D registration, rigid packing
+and actual-solid clearances, paper contact, indexing, camera conventions, unknown
+rays, censored boundary penalties and brittle acceptance. Build a compact static
+ledger, preserve all observations/black reflections and historical evidence, then
+run the smallest justified repair with full200/native/full-necklace constraints.
+No repeated larger R314 search, uncontrolled global fit, optical chasing before
+geometry readiness, adoption of incorrect geometry, Phase3, pattern, or R316.
+User requested a progress report without stopping; progress was reported and work
+continued. No model switch or new session was performed.
+
+Outcome: actual early occluders and exact counterfactuals recorded; first negative
+best isolated48.1%, so occlusionalone fails. Repaired raydepth relevance/continuation
+and boundary-censoring measurements; all70 R306 unknowns independently root-verified.
+Independent translation and bounded compact/narrow phase/spacing controls expose
+real local gains and geographic regressions, not a solved reconstruction.380 total
+settings/375 certified/5 rate-bound exclusions across separate controlled epochs.
+Narrow firstnegative28.6→52.2%,+12 58.2→69.5%,nextnegative57.3→41.0%;dev material
+andpaper regress despite lower seam conflicts. Noadoption.24 causal ledgerrows,
+614neighborpairs/60 refinedsolidbounds,4complete200 exports,26contracts and
+independent numerical/static/browser review. Commit/push and exact walltime in
+photo2/r315/results/delivery.json. STOP for scientific review.

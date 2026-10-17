@@ -5242,3 +5242,17 @@ preservation checks pass. Scientific delivery and remote receipt are recorded in
 photo2/r312/results/delivery.json. Next task is maker scientific review only.
 Keep this session and current model/reasoning;no /new or model change needed.
 No Phase3,pattern inference,automaticR313 or reconstruction adoption.
+
+# R315 completed — causal diagnosis and local corrective controls; STOP
+
+See photo2/R315_REPORT.md and photo2/r315/results/index.html. Actual early occluders
+and counterfactuals established, but firstnegative isolatedcoverageonly48.1% means
+occlusion alone cannot explain failure. Unknown-ray and boundary-sentinel defects
+repaired in new R315 code, historical sources untouched. Independent translation and
+compact/narrow smooth fields tested with complete necklace contact/visibility.
+Narrow correction improves several cores/seams but worsens others/material: no
+convincing200-bead reconstruction or adoption.375/380 settings certified,5 rate-bound
+exclusions; no optical fit.26 contracts, complete exported contact/state verification,
+70 independent grazing roots, raw/static/browser review recorded. Read delivery.json
+for scientific commit, independent remote check and elapsed wall time. No R316,
+Phase3, color pattern or beads.pov edit. Stop for scientific review in this session.

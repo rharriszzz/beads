@@ -1423,3 +1423,28 @@ distinguish user-supplied status from recommendations for future work.
   supplied status or usage. No computer ownership transfer is implied by checkout.
 - A standalone "continue" resumes the unfinished bounded step, then follows this
   routine and stops. Do not automatically advance to the next aspect.
+
+# R315 completed — causal occluders, measurement repairs, bounded local fields; STOP
+
+Read photo2/R315_REPORT.md, R315_SPECIFICATION.md and R315_REPRODUCE.md.
+Static ledger: photo2/r315/results/index.html; receipt: results/delivery.json.
+No convincing200-bead reconstruction or adoption. Historical sources/evidence intact.
+Firstnegative C1477bestisolated−9only48.1%; modal−7visible28.6%; occlusionalonefails.
+At+8isolated93.9→visible78.2%; actualoccluders+7/+14; individualremovals88.6/83.6%.
+24fixed-core/model ledgerrows, exact depths/owners, isolated/full/removal crops;
+external/occlusion/bore layers distinct. Removals diagnosticonly,never candidates.
+70R306unknown raysresolve;29alreadyirrelevantbydepth;70independentrootchecks pass.
+Original20missingbrackets:2rayrefinement+18fartherscans;finite13–57px,not50sentinel.
+All414endpointsretained;comparisonfinitep9515.6px;notgeometryimprovement.
+Independent2Dtranslation preservespacking;partiallocalgainswithmajorregressions.
+32nodes≈75addresses;phasecos/globalphaseandtilt/trajectorydirectionsnearredundant.
+Pitchkeyinactive;meanadvancefromextent/count. Cameraorientation/nearfar/rayspass.
+239controls/146.78s +141narrowcontrols/82.04s;375certified,5ratebounds;noopticalfit.
+Narrowphasehalfwidth18,selectedaddedrate2.55%,spacing.314%;sharedrigidglass.
+Firstnegative28.6→52.2%,+12 58.2→69.5%;nextnegative57.3→41.0%.Noacceptedfit.
+Devseam44.72→29.27%,material90.08→88.98%;paper.148→.314%;alltradeoffsretained.
+614targetneighborpairs;60actualsolidupper/supportlowerrefinements,48tight<1e−4.
+Localpapercontact11/200;somefloatingturns;notmechanicalequilibriumorverifiedchain.
+4full200nativeexports337435rays;9620positions/28654contacts/39155Pythonraysverify.
+26contracts;staticraw/links/Chromiumdesktop,narrow,offline.811brightobservationskept.
+NoPhase3,pattern,beads.pov,newglobalcampaign,orautomaticR316. STOPforscientificreview.
