@@ -1,3 +1,29 @@
+# R317 completed — joint local gains, wider regressions; no adoption; STOP
+
+Read photo2/R317_REPORT.md, R317_SPECIFICATION.md and R317_REPRODUCE.md.
+Static review: photo2/r317/results/index.html; delivery: results/delivery.json.
+1797 serialized search settings plus14 separate causal reversions; all failures kept.
+Shared rigid shape, compact phase/station/tilt and newly tested radial cant;
+zero cant exact R316, cant-only centers unchanged, <=12deg and combined3deg/address.
+Original5% phase/2% station exploration bounds retained, not measured crochet strain.
+1013 initial+465 cant+319 Jacobian/trust settings;12 feasible local matrices retained.
+All six R316 core coverages preserved in trial1569: firstnegative85.1→87.9%,
+nextnegative71.9→76.9%,+8 77.7→83.8%,+12 63.3→69.9%,reference87.9→98.9%,
+C1559 78.6→78.9%;six correlated mean77.4→82.7%. No complete reconstruction.
+Nextnegative -14 isolated82.4/visible76.9%; -15 isolated98.6/visible0%, never combine.
+Forced-15 branch visible46.1% loses firstnegative54.3%; correspondence unresolved.
++12 physical12 isolated/visible69.9%;bestisolated+4 alias70.4% is fully hidden.
+Minimax trial1771 and tradeoff1047 retained separately; no scalar-only adoption.
+All40 cores retained,31 original-support overlap groups;414 finite brackets.
+FixedR316-owner mean63.4→63.3%,4modal owners change; wider gain not established.
+Dev/comparison seam conflicts regress; comparison bracket14.3→15.3px;
+buffer worstcore12→16px. Comparison exposed, no fresh holdout or valid Emax.
+Exactly physical-100…99;all2405 bodies in contact/visibility. Eight native exports,
+48photo ledgercards, all-core propagation and worst failure cards.45contracts.
+Independent support/cant/positions/rays/metrics/raw photos and browser checks.
+All historical science preserved. No equilibrium, physical chain, color inference,
+Phase3, beads.pov edits or automaticR318. STOP for scientific review.
+
 # R316 completed — layered prototype, joint local recovery; no adoption; STOP
 
 Read photo2/R316_REPORT.md, R316_SPECIFICATION.md and R316_REPRODUCE.md.

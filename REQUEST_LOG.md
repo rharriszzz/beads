@@ -9148,3 +9148,6 @@ andpaper regress despite lower seam conflicts. Noadoption.24 causal ledgerrows,
 614neighborpairs/60 refinedsolidbounds,4complete200 exports,26contracts and
 independent numerical/static/browser review. Commit/push and exact walltime in
 photo2/r315/results/delivery.json. STOP for scientific review.
+
+
+R317 authorized: joint rigid-glass reconstruction of physical -100..99, 30-minute wall budget including delivery. Completed 1797 search settings and 14 causal reversions, preserved all six local gains but no acceptable 200-bead reconstruction. Report/review/independent verification and delivery receipt in photo2/r317; no adoption or automatic R318.

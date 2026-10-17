@@ -1,3 +1,5 @@
+R317 delivered: see photo2/R317_REPORT.md and photo2/r317/results/delivery.json. All six early cores improve, but fixed-owner wider mean and several boundaries regress. No adoption; STOP for review, no automatic R318.
+
 R316 delivered: see photo2/R316_REPORT.md and photo2/r316/results/delivery.json. Joint local gains, no reconstruction adoption; STOP for scientific review, no automatic R317.
 
 # R311 completed — missed basins, partial gains; no adoption; STOP
