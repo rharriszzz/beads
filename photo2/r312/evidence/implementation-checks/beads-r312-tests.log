@@ -1,0 +1,19 @@
+tests (unittest.loader._FailedTest.tests) ... ERROR
+
+======================================================================
+ERROR: tests (unittest.loader._FailedTest.tests)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests
+Traceback (most recent call last):
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r312/tests.py", line 8, in <module>
+    from .model import seeds,scene,geometry_key,proposal
+ImportError: cannot import name 'proposal' from 'photo2.r312.model' (/home/rharris/git/beads/photo2/r312/model.py)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

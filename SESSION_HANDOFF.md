@@ -5219,3 +5219,26 @@ Recommend **gpt-6-astra / High**, carrying forward the earlier workflow's model
 recommendation, and **stay in this conversation** for this focused follow-up.
 No automatic model or session change. Delivery verification is reported in chat;
 the pre-delivery log records completed checks without inventing a future push.
+# R312 active (2026-10-17)
+
+Continue existing uncommitted R312 code and completed profiling. Maker resumed
+after a clarification pause; experiment remains authorized through both stages,
+independent verification and commit/push. Entry photo2/phase2_minimax.py; protocol
+photo2/R312_SPECIFICATION.md. Historical science/source photographs remain fixed.
+Stage 1 must seal its checkpoint before Stage 2. Stop for scientific review after
+delivery; no Phase 3, pattern inference or automatic next campaign.
+
+R312 completion:read photo2/R312_REPORT.md and R312_REPRODUCE.md. Static index
+photo2/r312/results/campaign/index.html opens without an interactive viewer.
+6242 proposal vectors,exact physical200 then full chain;sealed checkpoints and
+distinct basins retained. Primary max13.796px(Stage1) and17.626px(Stage2),0missing;
+full-chain gain only.665%,RMS/P95 slightly worse. No substantial overall improvement
+or adoption. Computational speedups are real and separately verified. Original
+Stage1 hole-edge guard and Stage2 inherited-window map artifacts are disclosed;
+all original fits/maps preserved,correspondence-only changes excluded from gains.
+Twenty largest errors,locations/vectors/indices,first outward errors and regional
+changes are in static plots/JSON/CSV. Independent26-model/native/contact/21872-file
+preservation checks pass. Scientific delivery and remote receipt are recorded in
+photo2/r312/results/delivery.json. Next task is maker scientific review only.
+Keep this session and current model/reasoning;no /new or model change needed.
+No Phase3,pattern inference,automaticR313 or reconstruction adoption.

@@ -9062,3 +9062,32 @@ R311 threshold clarification before finalist selection/comparison: replace impos
 R311 documentation correction: R297 whole-interior negative/positive overlap is85.7/96.6%;97.9% is the negative eroded core. The initial threshold-clarification wording conflated these. Programmed thresholds, selection and numerical results always used whole-interior fractions and are unchanged; old wording retained in evidence.
 
 R311 completed: audited6075 archived trials and evaluated911 unique vectors (562 certified feasible,332 witnessed penetration,15 unresolved,2 bounds) in50.10 search minutes. Pure phase/registration repairs the first errors locally; distant2733 trial663 also yields modest global gains but boundary/regional regressions remain. No finalist meets the combined criteria, including without raw fixed-index gate. Fifteen dense whole models, original-kernel/contacts/boundary replay and120 browser locations pass. Restart hashing expanded with exact fitting-source retention and AST equivalence proof; five contracts rerun. Native science unchanged by two documented visualization/wording corrections. Original artifacts preserved. Scientific commit/push and remote verification are recorded in photo2/r311/results/delivery.json. STOP for review; no geometry adoption, new shape law, arbitrary local correction, Phase3 or automatic R312.
+# R312 — two-stage geometry minimax and performance (2026-10-17)
+
+Maker authorizes implementation, profiling, broad optimization of 200 consecutive
+physical beads (−100…99) followed by full necklace, independent verification,
+documentation, commit/push and stop for scientific review. Optimize maximum
+Euclidean reflection error; keep ambiguous/missing evidence, physical constraints
+and photographic safeguards. Explore geometry/camera/phase/spacing/shared light,
+counts/hands/topologies and existing smooth fields. Save static overlays, top-20
+errors, signed components, first large errors, distinct basins and performance
+ledger. No Phase 3 or pattern inference. The temporary pause did not cancel R312;
+resume existing uncommitted code and completed benchmarks. No prior benchmark
+process remains. Exact protocol: photo2/R312_SPECIFICATION.md. Outcomes pending.
+
+R312 outcome:6242 unique proposal vectors,30-minute physical200 Stage1 then
+30-minute full-necklace Stage2 and595.81s contingent native refinement. Complete
+necklace occlusion/contact and all811 observations preserved;27/269strong enter
+the respective fixed-map minimax objectives. Stage1 max15.796→13.796px in a new
+2265 hand+closed basin, with material regressions againstR306. Stage2 same-map
+max17.744→17.626px,0missing;RMS/P95 slightly worsen. No substantial overall
+reconstruction improvement or adoption. Same-lattice finite-light whole timing
+7.4565→1.2740s;native caching/matching/contact improvements separately measured.
+Stage1 internal-hole guard defect and Stage2 inherited-window assignment artifact
+are documented with original records retained. Eighteen unchanged-geometry full
+assignment controls never count as geometry gains;maps freeze within the new local
+epoch. Top20/static overlays/signed/outward/regional plots and ledgers saved for both
+stages.26-model independent replay passes;21872 historical tracked files preserved
+except additive handoffs. Source epochs, actual SIGTERM/resume/orphan recovery and
+all failures retained. Delivery receipt:photo2/r312/results/delivery.json. STOP for
+maker review;no Phase3,pattern inference,beads.pov edits or automaticR313.

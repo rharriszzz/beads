@@ -3704,3 +3704,18 @@ before whole-necklace contour adoption,
 centerline/scene fitting or bead assignments. Diagnostic crops remain validation
 fixtures, not runtime priors. The earlier proposed whole-image search is deferred
 to follow the maker's more specific guidance.
+# R312 active — two-stage minimax and performance
+
+The maker explicitly authorizes R312 after R311 review and asks that the paused
+benchmark work be retained. Profile and check exact accelerations first, run the
+physical 200-bead native minimax stage, seal its diagnostics, seed full-necklace
+minimax from distinct basins, independently verify, commit/push, and stop. See
+photo2/R312_SPECIFICATION.md. Do not proceed to Phase 3 or pattern inference.
+
+R312 completed both stages and the contingent native refinement:6242 proposal
+vectors plus18 correspondence controls. Maxima13.796px for the physical200 cohort
+and17.626px full-necklace remain conditional; secondary/material/regional tradeoffs
+prevent substantial overall improvement or adoption. Seven contracts and independent
+26-model native/contact/arithmetic/preservation audits pass. Results and static
+review are in photo2/R312_REPORT.md and photo2/r312/results/campaign/index.html.
+Stop for scientific review after verified delivery; no Phase3 or automaticR313.

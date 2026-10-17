@@ -2190,3 +2190,18 @@ See photo2/R311_SPECIFICATION.md. Existing global parameters only; preserve orig
 ## R311 — broad existing-global basin evidence
 
 [Report](photo2/R311_REPORT.md), [details](photo2/R311_DETAILS.md), [reproduce](photo2/R311_REPRODUCE.md), [review](photo2/review/r311/index.html). Actual R306–R309 coverage audit, five native joint maps, scrambled four-variable sampling and bounded basin refinement; original R297 preserved as a principal hypothesis. Restartable entry: `python3 photo2/phase2_basin_search.py`. 911 vectors in50.10 search minutes; partial first-error/global gains, no adoption. Every historical artifact preserved; no new shape law, local field fitting or Phase3. Stop for maker review; no automatic R312.
+# R312 — physical-chain minimax and performance (2026-10-17)
+
+See [R312 report](photo2/R312_REPORT.md), [protocol](photo2/R312_SPECIFICATION.md)
+and [reproduction](photo2/R312_REPRODUCE.md). `phase2_minimax.py` implements
+source/evidence/environment-bound checkpoints, exactly 200 physical addresses
+then full-necklace fitting, frozen conditional bottleneck correspondences and a
+maximum-pixel-distance objective with explicit missing-lobe penalties. Sobol,
+coupled fields/discrete hypotheses, multistart/DE and contingent native simplex
+retain multiple basins. Full-chain before/after correspondence controls distinguish
+label changes from fitting gains. The all-body optical control proves target-only
+rendering preserves fitted positions. Sampling and exclusive timers guide exact
+support-plane stopping, conservative light angular trees, camera/contact caching
+and vectorized correspondence. Static overlays/top20/signed/outward/regional plots,
+performance ledgers, original-kernel replay and preserved source epochs accompany
+the partial results. No reconstruction adoption or Phase 3 follows automatically.

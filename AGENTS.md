@@ -1,3 +1,40 @@
+# R312 completed — faster computation, partial minimax gains; no adoption; STOP
+
+Read photo2/R312_REPORT.md, R312_SPECIFICATION.md and R312_REPRODUCE.md.
+Static review: photo2/r312/results/campaign/index.html; entry phase2_minimax.py.
+Delivery/independent remote receipt: photo2/r312/results/delivery.json.
+Reused paused benchmark; no old benchmark process remained. Warm same-2px-lattice
+finite-light whole evaluation7.4565→1.2740s(5.85x); native1px camera caching,
+vectorized matching and unchanged-contact reuse have separate exact timing audits.
+6242 proposal vectors:4396 Stage1/1800.36s,1273 initial Stage2/1801.71s,
+573 contingent native simplex/595.81s;18 separate full-chain correspondence controls.
+Stage1 exactly200 consecutive physical addresses−100…99, all hidden bodies and
+complete-necklace occlusion/contact retained;27 fixed strong observations, not200
+visible beads. Own-map max15.796→13.796px;RMS9.137/P9513.437,0missing.
+New2265 hand+closed basin loses material alignment against commonR306;no adoption.
+Stage2 all269strong/all811catalog retained;max17.744→17.626px(.665%),0missing;
+RMS9.084→9.132/P9514.056→14.267. Dense ownership59.98→60.42%,boundary
+RMS4.925→4.832px,paper6.66→6.90%;not a substantial reconstruction improvement.
+Stage1 originally scored unannotated native hole edges: original fitting preserved;
+exterior-only saved-ray diagnostic recorded. Stage2 scores exterior boundaries.
+Inherited Stage1 photographic cohort can lie beyond physical200 under other counts;
+initial Stage2 maps impose a scope artifact. Original campaign remains sealed.
+Identical-geometry full-chain assignment controls and a separate frozen-map epoch
+avoid calling relabeling a fitting gain;2733 65.257→22.242px is assignment-only.
+Final best retains originalR306 owners. All-body optical pool exactly matches target
+rendering;free rematching changes18owners, reported only as a secondary control.
+Broad Sobol/coupled fields/counts2000…3200/both hands/topologies,multistart/DE and
+three-basin simplex;finite bounds are numerical,not measured physical ranges.
+26 exports:64548positions/184050independent support witnesses,5723815 original
+compiled optical rays,728000 Python camera/guard+667811 Python top20 optical rays.
+Native centroid agreement1e−9px,top20/max/RMS/P95/frozen maps pass;21872prior
+tracked files preserved except additive handoffs. Seven contracts and actual
+SIGTERM/resume/orphan recovery pass;static PNG/link checks,source archives retained.
+Best full-chain minimum separating-plane margin.000366source units is conditional,
+not measured physical clearance. Both stage checkpoints and local epoch sealed.
+STOP for maker review. No Phase3,pattern inference,beads.pov edits,adoption or
+automaticR313. Keep current session/model; no /new or model switch needed.
+
 # R311 completed — missed basins, partial gains; no adoption; STOP
 
 Delivery and remote verification: photo2/r311/results/delivery.json.
