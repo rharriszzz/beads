@@ -1,0 +1,15 @@
+verified R297-2337 8415 Python rays 6818 contacts
+verified R306-2405 8415 Python rays 7166 contacts
+verified R309-2733 8415 Python rays 8199 contacts
+verified R312-best 8415 Python rays 7166 contacts
+verified R312-local 8415 Python rays 6445 contacts
+Traceback (most recent call last):
+  File "/home/rharris/git/beads/photo2/phase2_surface_fit.py", line 11, in <module>
+    main()
+  File "/home/rharris/git/beads/photo2/r313/run.py", line 40, in main
+    run(out);return
+    ^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r313/verify.py", line 57, in run
+    assert (out/link).exists(),link;links.append(link)
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: ../../R313_REPORT.md

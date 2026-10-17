@@ -1,3 +1,30 @@
+# R313 completed — fixed photographic surfaces, structural diagnosis; no adoption; STOP
+
+Read photo2/R313_REPORT.md, R313_SPECIFICATION.md and R313_REPRODUCE.md.
+Static review: photo2/r313/continuation/index.html; receipt: continuation/delivery.json.
+16 annotated contours retired from optimization/acceptance; old science unchanged.
+Frozen31679colored/38540paper/1441transition pixels,40correlated interior cores;
+no complete contour or black silhouette inferred. Exactly200 physical−100…99,
+all necklace bodies retained for occlusion/contact; geography independent of model.
+Original426trials byte-preserved;76structural probes;808new proposals/420.18s sealed.
+Shared identical rigid glass shape, dimensions not constrained to beads.pov values.
+Trajectory-related orientation/sharedhole/rounding/thickness tested; no83deg assumption.
+Gross corruption controls reject merged/deleted/eroded surfaces;3px dilation still
+scores better. Added worst-core/exterior terms do not solve coverage bias. No adoption.
+Numericalwinner R306dev material90.02→97.18%,paper.15→2.16%,onebody69.77→68.36%;
+comparison worstcorep959.85→17px. Referencecore84.75→99.65%,firstnegative28.57→75.47%
+withsameowners:localgainonly.17/40modalownerschange;fixed-parentaudit preserved.
+EarliestR306negative C1477at(1480.38,291.20),arc−19.81,conditional−7;no verified chain.
+34/76structuralcertified,42actualpenetration.12selectedoldR312unresolved allpenetrate;
+notall1301audited. Hollow-ringfixture separates despite convex-envelope failure.
+Three promising new higher-budget checks remain unresolved, never called collision.
+Common horizontal support plane possible but floating turns remain;no equilibriumclaim.
+12contracts;12exports/29172positions/86615independentcontacts/106908Pythonrays pass.
+Staticphoto/evidence/borevsouter/worst20/first40plots and missingreportlink repaired.
+Medianfeasibleevaluation.532s;no further speedupclaimed. Both fittingepochs/source
+archives/failedcontrols preserved. Fresh30min continuation from20:17:01UTC Oct17.
+Stop for scientific review;no whole-necklace fit,Phase3,pattern,adoption,automaticR314.
+
 # R312 completed — faster computation, partial minimax gains; no adoption; STOP
 
 Read photo2/R312_REPORT.md, R312_SPECIFICATION.md and R312_REPRODUCE.md.
