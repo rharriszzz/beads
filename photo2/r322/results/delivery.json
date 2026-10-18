@@ -1,0 +1,44 @@
+{
+  "status": "scientific delivery committed, pushed and independently read back from origin",
+  "utc": "2026-10-18T08:20:30.681699+00:00",
+  "branch": "photo-2-strategy-v3",
+  "scientific_commit": "c2e70fbb4e814fc69b877801d094362207bfe9ae",
+  "remote_scientific_commit": "c2e70fbb4e814fc69b877801d094362207bfe9ae",
+  "baseline_commit": "6213c29f763d2aa8a302a5e5b889b7da236a64e1",
+  "deadline": "2026-10-18T08:26:22+00:00",
+  "result": "partial recovery; failed interior expansion gate; no adoption",
+  "interior": {
+    "beads_recovered": 24,
+    "beads": 25,
+    "links_recovered": 38,
+    "links": 45,
+    "wrong_automatic_links": 3
+  },
+  "all_r161": {
+    "beads_recovered": 29,
+    "beads": 40,
+    "recorded_links_recovered": 50,
+    "recorded_links": 86
+  },
+  "preservation": {
+    "modified_existing_files": [
+      "AGENTS.md"
+    ],
+    "agents_change": "additive prefix; previous bytes exact",
+    "all_prior_scientific_files_unchanged": true,
+    "original_photo_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb"
+  },
+  "checks": {
+    "independent_pixel_graph_replay": true,
+    "browser": true,
+    "relative_report_links": true,
+    "clean_worktree_after_scientific_commit": true
+  },
+  "deferred": [
+    "outward expansion",
+    "R319/R321 photographic topology comparison",
+    "color-pattern inference"
+  ],
+  "receipt_publication": "This receipt is committed and pushed separately after the verified scientific commit; final remote HEAD is verified in the session.",
+  "stop": "Scientific review; no automatic R323"
+}
