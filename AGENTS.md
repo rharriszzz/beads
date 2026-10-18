@@ -1,3 +1,32 @@
+# R320 completed — derived closed staircase and measured cost; no adoption; STOP
+
+Read photo2/R320_REPORT.md, R320_SPECIFICATION.md and R320_REPRODUCE.md.
+Compact photo review: photo2/r320/results/index.html; machine performance.csv,
+performance.json and optimization-plan.json; delivery receipt results/delivery.json.
+Independent count/radius/axial; exact legacy H=1.4ra. W=round(N/6.5), T=N/W;
+R0=r/sin(pi/T), hole axis normal to radial/helical staircase including curvature.
+Closed only, fixed half-chain seam, gap0; no independent minor/turn/tilt/cant.
+Deterministic full-scene contact construction; all successful coarse models useR0.
+288 joint physical inputs: counts2000…3200, radii1.35…2.25, axial.65…1.25,
+both hands;169 certified/45 demonstrated penetration/74 unresolved, one near-rise.
+140 optical+110 coupled trials, frozen per-count/hand maps, same22 photo observations.
+Inherited totals removed: axis8.357px, phase24.42deg, station3.189px, rate2.015%.
+User-authorized two-harmonic centerline budget3.3468px; local phase/spacing zero.
+Bestnear-rise N2800: Emax13.156px, diameter22.68px, omission31.1%, L/(WH)1.11984;
+no centerline correction. N2600 hand+:2.742px correction, Emax15.834, ratio1.13767.
+R31911.824 uses different map; no assignment gain called geometric improvement.
+Straight exact-one-H controls intersect; all tested1.05H controls separate.
+All bodies in contacts/camera/shadows. 54 final timing records, 100/200/all native
+geometry-changing medians.397/.600/7.021s; light-cache timings separate. Camera
+rays dominate. Measured-cost future serial plan1.13/3.29/11.30h low/expected/high;
+verification10x allowance explicitly unmeasured. No convergence/runtime guarantee.
+4contracts;24600 independent support witnesses, analytic normals,300 original
+Python camera/shadow samples, all selected +1/+6/+7 including seam, original RGB
+centroids, all250 optical cohort/max checks and desktop/narrow/offline pass.
+Degenerate annular support-point gap defect caught/repaired; failed artifacts kept.
+Photo/beads.pov/prior science preserved. Scientific proposals sealed04:30UTC Oct18,
+original delivery deadline04:40:01UTC. No adoption, pattern or automaticR321. STOP.
+
 # R318 completed — conditional reflection minimax; no expansion; STOP
 
 Read photo2/R318_REPORT.md, R318_SPECIFICATION.md and R318_REPRODUCE.md.
