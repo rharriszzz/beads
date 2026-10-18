@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r321/deliver.py", line 66, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r321/deliver.py", line 60, in main
+    old_draw.draw(label,o,cache['xy'],cache['boundary']);verification.append(verify(p,data,label))
+                                                                             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r321/verify.py", line 39, in verify
+    neighbors=neighbor_gaps(s)
+              ^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r321/gaps.py", line 26, in neighbor_gaps
+    residual=float(np.max(res));assert residual<1e-8,residual
+                                       ^^^^^^^^^^^^^
+AssertionError: 0.5957075077882747

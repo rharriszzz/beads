@@ -1,3 +1,33 @@
+# R321 completed — algebraic contact root and curvature spacing; no adoption; STOP
+
+Read photo2/R321_REPORT.md, R321_SPECIFICATION.md and R321_REPRODUCE.md.
+Compact review: photo2/r321/results/index.html; delivery: results/delivery.json.
+Actual rounded annular support; explicit quadratic in R² for straight +1 plane.
+Two straight contact branches;30 independently checked actual-glass +1/+6 contacts,
++7 positive gaps, no universal six-contact or globally densest-packing theorem.
+Closed N/W, fixed seam, rigid shapes, zero fitted tilt/cant/local-phase/gap fields.
+Curvature metric1-R*kappa*sin(phi); derived rho=1-R|kappa| density, not mechanics.
+N2800/r1.95/a.85 photo-sized R320 +7 collision repaired for both hands without
+shrinking beads or moving centerline:33.767px diameter, full-chain certificates.
+R4.17521, mean P/H1.14173; local advance maxdeparture10.565%, accumulated station
+72.785px versus uniform. Derived changes, not measured crochet strain.
+Small spline centerline alone does not cure original uniform-spacing collision.
+220 saved trials:166certified/54demonstrated penetration; all22 photo observations,
+frozen maps, missing predictions infinite.439 internal fixed-plane solver probes
+remain explicitly unverified before final full-chain audits; no per-probe timer.
+Counts2200/2400/2600/2800/2801/3000/3200, r1.815–2.05, a.65–.95,bothhands.
+PrimaryN3000 hand+,D31.603,Emax16.076,omission9.36%,separatorconflicts28.95%;
+centerline1.333px, no adoption. Reflectiontradeoff14.788 retainsworse separators.
+Photo-sizedrescueEmax20.613,omission4.93%,separatorconflicts50%;not reconstruction.
+All +1 pairs nearcontact upper<=.02r; +6/+7 retain real positive gaps, no forces.
+Matched construction+certification mean.3713→.1175s,6→15/24feasible; native100/
+200/all medians.448/.690/8.762s. Larger ray workload; no camera speedup claim.
+Six contracts;26400 independent support witnesses, doubled density integral,
+analytic normals,540 original Python camera+shadow samples,54 actualpenetrations,
+all rawcentroids/maps/maxima/seams/endpoints and desktop/narrow/offline verified.
+Source/failure archives retained; original photo, beads.pov and R312–R320 preserved.
+No reconstruction adoption, color pattern, equilibrium claim or automaticR322. STOP.
+
 # R320 completed — derived closed staircase and measured cost; no adoption; STOP
 
 Read photo2/R320_REPORT.md, R320_SPECIFICATION.md and R320_REPRODUCE.md.

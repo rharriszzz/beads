@@ -1,0 +1,38 @@
+TRIAL 132 joint-radius-thickness 2800 -1 1.915 0.825 certified-separation 20.237275928677157 1.348
+TRIAL 133 joint-radius-thickness 2800 -1 1.915 0.85 certified-separation 20.269138662262996 1.218
+TRIAL 134 joint-radius-thickness 2800 -1 1.915 0.875 certified-separation 20.39496096712108 1.222
+TRIAL 135 joint-radius-thickness 2800 -1 1.95 0.825 certified-separation 20.56506712141489 1.278
+TRIAL 136 joint-radius-thickness 2800 -1 1.95 0.875 certified-separation 20.69052163746366 1.363
+TRIAL 137 joint-radius-thickness 2800 -1 1.985 0.825 certified-separation 20.873338386085944 1.329
+TRIAL 138 joint-radius-thickness 2800 -1 1.985 0.85 certified-separation 20.83650346921062 1.271
+TRIAL 139 joint-radius-thickness 2800 -1 1.985 0.875 certified-separation 20.881323509123355 1.314
+TRIAL 140 registration 2800 -1 1.985 0.875 certified-separation 20.063437843161562 1.255
+TRIAL 141 registration 2800 -1 1.985 0.875 certified-separation 18.533133327970656 1.367
+TRIAL 142 registration 2800 -1 1.985 0.875 certified-separation 18.806413723468445 1.283
+TRIAL 143 registration 2800 -1 1.985 0.875 certified-separation 20.210105284617605 1.245
+TRIAL 144 registration 2800 -1 1.985 0.875 certified-separation 22.030765449143168 1.343
+TRIAL 145 registration 2800 -1 1.985 0.875 certified-separation 23.222929201074514 1.247
+TRIAL 146 registration 2800 -1 1.985 0.875 certified-separation 24.1078713587303 1.328
+TRIAL 147 registration 2800 -1 1.985 0.875 certified-separation 25.24802781972558 1.286
+TRIAL 148 photo-centerline 2800 -1 1.985 0.875 certified-separation 24.10916432796784 1.405
+TRIAL 149 photo-centerline 2800 -1 1.985 0.875 certified-separation 24.106604915274353 1.24
+TRIAL 150 photo-centerline 2800 -1 1.985 0.875 certified-separation 24.07602789274279 1.303
+TRIAL 151 photo-centerline 2800 -1 1.985 0.875 certified-separation 24.147821067906516 1.338
+TRIAL 152 joint-radius-thickness 2800 1 1.915 0.825 certified-separation None 1.166
+TRIAL 153 joint-radius-thickness 2800 1 1.915 0.85 certified-separation None 1.25
+TRIAL 154 joint-radius-thickness 2800 1 1.915 0.875 certified-separation None 1.238
+TRIAL 155 joint-radius-thickness 2800 1 1.95 0.825 certified-separation None 1.284
+TRIAL 156 joint-radius-thickness 2800 1 1.95 0.875 certified-separation None 1.215
+TRIAL 157 joint-radius-thickness 2800 1 1.985 0.825 certified-separation None 1.23
+TRIAL 158 joint-radius-thickness 2800 1 1.985 0.85 certified-separation None 1.336
+TRIAL 159 joint-radius-thickness 2800 1 1.985 0.875 certified-separation None 1.25
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r321/refine.py", line 44, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r321/refine.py", line 24, in main
+    best=min(good,key=key)
+         ^^^^^^^^^^^^^^^^^
+ValueError: min() iterable argument is empty
