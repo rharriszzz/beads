@@ -1,0 +1,5 @@
+/home/rharris/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-zo3m4rp2 because there was an issue with the default path (/home/rharris/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+/home/rharris/git/beads/photo2/r325/batched_fit.py:15: RuntimeWarning: invalid value encountered in divide
+  return (det*d0>0)&np.all((stretch>.62)&(stretch<1.5),axis=1)&(abs(det/d0)>.55)&(abs(det/d0)<1.65)&np.all(np.sum(B*B0,axis=1)/(norm*n0)>.68,axis=1)
+{'times': [{'mode': 'reference', 'seconds': 6.853413112985436}, {'mode': 'batched', 'seconds': 0.7535395970044192}], 'profiled_reference': True, 'assignments_compared': 14340, 'maximum_prediction_delta_px': 2.2453150450019166e-12, 'topology_mismatches': []}

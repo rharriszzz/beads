@@ -9233,3 +9233,21 @@ Independent full graph/pixel/transform replay,102trial records/386400support
 witnesses/840Python camera+shadow samples checked.2311 old files unchanged.
 Report and review in photo2/r324. Scientific proposals sealed; finish verified
 scoped delivery before16:16:06UTC, then STOP for scientific review; noR325.
+
+## R325 — 2026-10-18: cyclic global photographic reconstruction
+
+User requests one globally coordinated whole-circuit lattice, colored-first black
+recovery, a short 100–200-observation practice comparison, measured performance,
+historical R161 validation, compact original-photo review and graph-conditioned
+3D interface. Approximately 40 active minutes with at least eight reserved for
+verification/delivery. Preserve previous science. Commit/push and stop; no R326.
+See photo2/R325_SPECIFICATION.md; outcome will be in photo2/R325_REPORT.md.
+
+R325 outcome: global cyclic candidate covers895/937supports with1826links in one
+component. A63-context stress test contests174links; conservative model interface
+has1652links,867indexed and23components. Therefore not one established physical
+reconstruction. Colored-only fits corroborate156black supports (one newly indexed);
+three faint records at two unique sites remain unconfirmed. R16125/25and45/45,
+33/40and65/86all unchanged. Full15.067s pre-serialization/15.565s total,
+1000.2MiB; matched146support engineering control9.134→4.982s exact science.
+No winding closure/N, pattern or3Dfit adopted. See R325 report and delivery receipt.

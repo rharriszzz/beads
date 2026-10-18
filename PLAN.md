@@ -3774,3 +3774,17 @@ prevent substantial overall improvement or adoption. Seven contracts and indepen
 26-model native/contact/arithmetic/preservation audits pass. Results and static
 review are in photo2/R312_REPORT.md and photo2/r312/results/campaign/index.html.
 Stop for scientific review after verified delivery; no Phase3 or automaticR313.
+
+## R325 active, 2026-10-18
+
+Diagnose R324 artificial fragmentation; practice exact cyclic candidate selection
+on a lower-bend subset; optimize measured candidate-generation work; full-circuit
+solve and colored-first neighborhood evidence; freeze then independent arithmetic,
+R161 historical checks, original-photo review, documentation and scoped delivery.
+Science cutoff 19:42:35 UTC; delivery target 19:50:35 UTC. No automatic R326.
+
+R325 scientific work sealed 19:31:55 UTC. Exact cyclic candidate inference yields
+one 895-support component, but changed-size photo contexts contest 174 links;
+conservative model use retains 23 components. No certified winding/count/pattern.
+Final detector 15.067 s before serialization, 15.565 s total. R161 unchanged.
+Independent numerical and guarded-replay checks passed; finish publication and STOP.

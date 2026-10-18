@@ -1,3 +1,32 @@
+# R325 completed — cyclic global candidate, context disagreements; STOP
+
+Read photo2/R325_REPORT.md, R325_SPECIFICATION.md and R325_REPRODUCE.md.
+Original-photo review: photo2/r325/results/index.html; delivery: results/delivery.json.
+One cyclic second-order DP over187windows/1603hypotheses/26731assignments;
+exact max marginals, triple translation factors and simultaneous free-holonomy
+integer audit. No geographic chart gate, maker/model runtime inputs or forced N.
+937supports/895conditional indexed/1826links/45unresolved/one candidate component.
+IMPORTANT:63 changed-size contexts contest174accepted links; conservative model
+interface has1652links/867indexed/70unresolved/23components. Not one certified
+physical lattice.207checked links remain ambiguous,1313untested. No adoption.
+R16125/25interior associations,45/45links,zero wrong;33/40and65/86all unchanged.
+156black supports predicted by colored-only fits in multiple windows;one newly
+indexed.Three faint-detection records/two sites/40unique pixels stay unconfirmed.
+56R324 chart-only rejections,53now accepted conditionally;all19oldcuts crossed.
+Four lower-bend unresolved edges prevent winding closure;conditional A counts
+2697/2704/2710 andB2685/2691/2698,none adopted. Both6/7/reversals preserved.
+Start shifts37/93/151 exact;wrap-factor ablation changes no winning choices.
+146support practice129/235links/6components→134/261/2;no independent accuracy.
+Fresh practice9.134→4.982s identical R324 graph;global5.629s. Full15.067s before
+serialization/15.565s total/1000.2MiB,2.36x versus reportedR324 detector time.
+All1115oldhypotheses/18746assignments topologies preserved;2.51e-12px maxdelta.
+187spectra exact;native pixels exact;source-read-guarded replay passes.
+FrozenN3000/N2800 single-origin support4.60/7.82%;no fitting or causal curvature
+claim. All conditional periods1..500 conflict;no pattern adoption. Originalphoto,
+R161/prior science/beads.pov preserved. Science sealed19:31:55UTC Oct18;
+delivery target19:50:35UTC. Stop for review of contested upper/inward/lower-bend
+rows. No automaticR326. Keep user-preferredAstra/High/current session;no/new.
+
 # R324 completed — full photographic circuit, conditional charts and coupled diagnosis; STOP
 
 Read photo2/R324_REPORT.md, R324_SPECIFICATION.md and R324_REPRODUCE.md.

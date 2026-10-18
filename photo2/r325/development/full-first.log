@@ -1,0 +1,11 @@
+window 0 / 187 observations 17 elapsed 4.13
+window 25 / 187 observations 19 elapsed 5.72
+window 50 / 187 observations 17 elapsed 7.4
+/home/rharris/git/beads/photo2/r325/batched_fit.py:15: RuntimeWarning: invalid value encountered in divide
+  return (det*d0>0)&np.all((stretch>.62)&(stretch<1.5),axis=1)&(abs(det/d0)>.55)&(abs(det/d0)<1.65)&np.all(np.sum(B*B0,axis=1)/(norm*n0)>.68,axis=1)
+window 75 / 187 observations 15 elapsed 9.27
+window 100 / 187 observations 19 elapsed 10.91
+window 125 / 187 observations 18 elapsed 12.59
+window 150 / 187 observations 20 elapsed 14.31
+window 175 / 187 observations 16 elapsed 15.86
+{"observations": 937, "windows": 187, "successful_windows": 187, "indexed": 895, "status": {"probable bead": 125, "confident bead": 770, "ambiguous or unresolved": 42}, "accepted_links": 1826, "unresolved_links": 45, "components": [895], "fragments": 418, "ambiguous_transitions": 14, "full_loop_closure": false, "black_colored_supported": 156}

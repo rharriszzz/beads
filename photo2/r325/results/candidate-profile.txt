@@ -1,0 +1,31 @@
+         12903639 function calls in 6.847 seconds
+
+   Ordered by: cumulative time
+   List reduced from 74 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      188    2.323    0.012    6.847    0.036 tracker.py:31(fit_hypotheses)
+    29449    0.322    0.000    1.403    0.000 tracker.py:89(valid_basis)
+   405492    0.301    0.000    1.005    0.000 numeric.py:675(flatnonzero)
+   443631    0.165    0.000    0.837    0.000 fromnumeric.py:2586(all)
+   443631    0.260    0.000    0.672    0.000 fromnumeric.py:86(_wrapreduction_any_all)
+    23625    0.327    0.000    0.586    0.000 _linalg.py:2417(lstsq)
+   656342    0.564    0.000    0.564    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+   151955    0.300    0.000    0.512    0.000 _linalg.py:2598(norm)
+   116598    0.209    0.000    0.482    0.000 _linalg.py:2355(det)
+   405492    0.090    0.000    0.338    0.000 fromnumeric.py:2031(nonzero)
+   405492    0.173    0.000    0.313    0.000 fromnumeric.py:1917(ravel)
+   411222    0.114    0.000    0.261    0.000 fromnumeric.py:48(_wrapfunc)
+   164105    0.120    0.000    0.238    0.000 _linalg.py:201(_commonType)
+    23882    0.099    0.000    0.210    0.000 _linalg.py:547(inv)
+   405492    0.101    0.000    0.101    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+    47507    0.072    0.000    0.099    0.000 _ufunc_config.py:472(__enter__)
+    25938    0.069    0.000    0.092    0.000 _shape_base_impl.py:607(column_stack)
+    31829    0.025    0.000    0.082    0.000 fromnumeric.py:2342(sum)
+   351835    0.053    0.000    0.077    0.000 _linalg.py:168(isComplexType)
+   405492    0.070    0.000    0.070    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+   116598    0.067    0.000    0.067    0.000 {method 'astype' of 'numpy.generic' objects}
+   211355    0.043    0.000    0.064    0.000 _linalg.py:182(_realType)
+    28927    0.011    0.000    0.061    0.000 {method 'sum' of 'numpy.ndarray' objects}
+   542757    0.060    0.000    0.060    0.000 {method 'items' of 'dict' objects}
+   589276    0.058    0.000    0.058    0.000 {built-in method builtins.isinstance}
