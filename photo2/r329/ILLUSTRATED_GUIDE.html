@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R329: A photographic explanation, one problem at a time</title>
+<style>
+body{font:17px/1.65 system-ui,Arial,sans-serif;max-width:1080px;margin:0 auto;padding:26px 22px 80px;color:#24282c;background:#faf9f5}
+h1{font-size:2rem;line-height:1.18}h2{font-size:1.55rem;margin:48px 0 12px}h3{font-size:1.15rem;margin:28px 0 8px}
+p,li{max-width:89ch}a{color:#155c92}nav{padding:16px 20px;background:#f0f2f1;border:1px solid #c9d0cf;border-radius:10px}nav a{margin-right:18px}
+figure{margin:20px 0;padding:12px;background:#fff;border:1px solid #c8cdca;border-radius:9px}figcaption{font-size:14px;color:#49525a;margin-top:9px}
+figure svg,figure img{width:100%;height:auto;display:block}svg text{fill:white;stroke:#171717;stroke-width:3;paint-order:stroke;font:700 13px Arial}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.row figure{margin:0}.photo{max-width:760px}
+.step{border-left:4px solid #2d718d;background:#eff5f7;margin:17px 0;padding:12px 18px}
+.note{border-left:4px solid #ad7b38;background:#f9f4eb;padding:12px 18px;margin:16px 0}
+.good{border-left:4px solid #458467;background:#eff6f1;padding:12px 18px;margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{padding:9px 10px;text-align:left;border-bottom:1px solid #cdd3d0;vertical-align:top}th{background:#f0f1ee}
+small{font-size:13px}code{font-family:ui-monospace,monospace;background:#edf0ee;padding:2px 4px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}.legend span:before{content:"● ";font-weight:bold}.red:before{color:#f1544b}.cyan:before{color:#15aaca}.amber:before{color:#f0ab38}.green:before{color:#35a674}
+@media(max-width:740px){.row{grid-template-columns:1fr}body{padding:18px 12px}}
+</style></head><body>
+<h1>R329: What actually went wrong—or might have gone wrong?</h1>
+<p><strong>An illustrated guide to the four most important problems.</strong> This is a slower explanation of the pictures in R329, using the same original photographic pixels. No code, measurements, or scientific conclusions were changed.</p>
+<div class="note"><strong>What this guide can and cannot tell you:</strong> The orange, cyan, yellow, and green outlines are annotations—not new measurements. A numbered circle identifies the measured <em>bright photographic feature</em> at that location, not necessarily the center of the glass bead. Where two reconstructions differ, the guide explains <em>what each claims</em>; it does not secretly decide that one is correct.</div>
+<nav><strong>Jump to a picture:</strong><p><a href="#terms">The words we use</a><a href="#inward">1. One-index disagreement</a><a href="#model">2. The 3D model's first error</a><a href="#early">3. A small error accumulating to 175</a><a href="#lower">4. Lower-bend alternative</a><a href="#whatnext">What to examine next</a></p></nav>
+
+<h2 id="terms">A few ordinary words for the mathematical ideas</h2>
+<p><strong>A bead index</strong> means the position of a glass bead in the original single crochet/bead string, counting along the string. Beads neighboring each other in the finished rope can be far apart in the original string; the candidate index separations include 1, 6, and 7.</p>
+<p><strong>A diagonal</strong> is a chain of beads touching or neighboring along one of two slanting directions across the crocheted rope. We try to identify two families of these chains. They may appear curved because the bracelet bends.</p>
+<p><strong>A lattice</strong> is simply a grid-like numbering system that tells us which beads are neighbors, even when the physical rows curve. It does not imply the photographed beads form a perfectly flat grid.</p>
+<p><strong>A working reconstruction</strong> is the computer's current best full set of choices about these rows. It can be revised. <strong>An alternative</strong> is another complete set of choices that also makes some sense. We keep both if the photograph has not settled the question.</p>
+<p><strong>A bright support</strong> means the original pixels belonging to an identifiable red/yellow patch or a bright reflection from a black bead. It is usually not the whole bead. A label such as <code>C-1721-1566</code> is an observation identifier based on photographic coordinates. It is <strong>not</strong> the crochet bead index.</p>
+<p><strong>The reference bead</strong> is the observed yellow patch <code>C-1302-0316</code> near image position (1302,316). It is assigned string index zero solely so we can compare different solutions with the same numbering.</p>
+<p><strong>Winding</strong> refers to the total two-coordinate change as the reconstructed bead lattice goes once around the photographed bracelet and returns near the start. For example, <code>H=(214,201)</code> means one family’s lattice coordinate has advanced by 214 units and the other by 201. Depending on which family means +6 or +7 in the original string, this gives two different conditional total bead counts. The return being arithmetically consistent does not prove the rows were traced correctly.</p>
+
+<h2 id="inward">1. A choice at the inward bend changes every later index by one</h2>
+<p><strong>This is the most useful picture to inspect yourself.</strong> The computer can follow the bracelet around the entire photograph in two ways. Both return to the starting bead locations. But in the inward bend, near original image position (1721,1566), they disagree about which diagonal contains a particular bead.</p>
+<div class="row">
+<figure><svg viewBox="0 0 230 170" role="img" aria-label="Original inward bend with three marked bright features">
+<image href="results/closest-first-native.png" width="230" height="170"/>
+<circle cx="121.08" cy="66.08" r="9" stroke="#f0bd43" stroke-width="2.7" fill="none"/>
+<path d="M122 56 L152 29" stroke="#f0bd43" stroke-width="2"/><text x="150" y="25">1</text>
+<circle cx="140" cy="75.25" r="9" stroke="#15c5d5" stroke-width="2.7" fill="none"/>
+<path d="M147 83 L175 101" stroke="#15c5d5" stroke-width="2"/><text x="182" y="109">2</text>
+<circle cx="120.63" cy="93" r="9" stroke="#61cd78" stroke-width="2.7" fill="none"/>
+<path d="M112 102 L91 133" stroke="#61cd78" stroke-width="2"/><text x="87" y="146">3</text>
+</svg><figcaption>Original photograph with three observed bright-feature positions. <strong>1</strong> = C-1721-1566, <strong>2</strong> = black-bead feature K-1740-1575, <strong>3</strong> = MAT25-K-1719-1592. The colored circles locate observations, not measured glass-bead centers.</figcaption></figure>
+<figure><img src="results/closest-comparison.png" alt="Original photograph, R328 primary diagonal lines, and nearest complete alternative in three panels"/><figcaption>The original R329 comparison. Both candidate grids look fairly plausible; the distinguishing fact is the <em>assignment of diagonal direction between the same observed beads</em>.</figcaption></figure>
+</div>
+<h3>Follow the sequence of events</h3>
+<div class="step"><strong>Step 1 — Start where both solutions agree.</strong> Going forward from the yellow reference bead, both solutions reach black feature 3 with the same family-B relative index, 1733. We are not yet seeing an indexing disagreement. That is our <em>last agreement</em> before the local problem.</div>
+<div class="step"><strong>Step 2 — Examine the next few beads.</strong> Both solutions recognize the photographed red/yellow/black material. They differ in the diagonal relationship through feature 1 and black feature 2. One says they are neighbors in one primitive direction; the other uses the neighboring direction. Because those two directions correspond to different steps along the original string, the index assigned to feature 1 changes.</div>
+<div class="step"><strong>Step 3 — Observe the first differing index.</strong> Under family B, the primary assigns observation 1 index <strong>1739</strong>; the nearest alternative assigns it <strong>1738</strong>. Their difference is only <strong>one bead address</strong>. The first observed disagreement is between the previously agreeing index 1733 and the newly different index 1739.</div>
+<div class="step"><strong>Step 4 — Follow the difference much farther around the bracelet.</strong> The reconstructions keep making mutually consistent later decisions, so the one-address difference remains. A distant bead can look incorrectly numbered even when the decision that caused it occurred hundreds of beads earlier.</div>
+<div class="step"><strong>Step 5 — Test causation rather than merely guessing.</strong> Codex replaced only the first different processing window. The original next window would no longer connect. It then replaced a short group of three neighboring windows (124–126), and the rest of the original path connected all the way back to the beginning. This experimentally shows that this small group of decisions explains the persistent later offset.</div>
+<div class="good"><strong>What we learned:</strong> The disagreement comes from a local choice between the two diagonal directions, not from a missing physical bead suddenly appearing near the end of the necklace.</div>
+<div class="note"><strong>What we do not yet know:</strong> Which diagonal choice is physically correct. The current R328 choice predicts the measured positions of three nearby features more closely than the alternative, especially the two black ones, but these predictions are based on related photographic measurements. Your direct inspection of the beads in the first image is unusually valuable.</div>
+<figure><img src="results/index-errors.png" alt="Three separate graphs showing first index change, opposite traversal, and an unusual accumulating index error"/><figcaption><strong>Read the top graph only for now:</strong> It stays at zero while both reconstructions agree. At the dotted vertical line it jumps to +1 for family A or −1 for family B. It then stays flat—not because there is no problem, but because the same indexing difference persists. The second graph repeats the comparison using different traversal conventions; the bottom graph belongs to Problem 3.</figcaption></figure>
+
+<h2 id="model">2. The 3D bead-position model first disagrees near index 31</h2>
+<p>This is a <strong>different kind of problem</strong>. In Problem 1 we compared two ways of assigning photographic bead indices. Here, we keep a photographed row/index hypothesis fixed and ask whether an independently constructed three-dimensional physical model puts the corresponding glass beads over the correct photograph pixels.</p>
+<figure class="photo"><svg viewBox="0 0 275 140" role="img" aria-label="Original upper section with index reference and first model mismatch">
+<image href="results/frozen-first-native.png" width="275" height="140"/>
+<circle cx="41.85" cy="100.58" r="10" stroke="#36c28b" stroke-width="2.8" fill="none"/><path d="M40 110 L15 128" stroke="#36c28b" stroke-width="2"/><text x="8" y="137">0</text>
+<circle cx="130.43" cy="96.57" r="10" stroke="#18c5db" stroke-width="2.8" fill="none"/><path d="M130 106 L153 125" stroke="#18c5db" stroke-width="2"/><text x="161" y="132">26</text>
+<circle cx="140.67" cy="33.33" r="10" stroke="#ffb437" stroke-width="2.8" fill="none"/><path d="M148 28 L179 12" stroke="#ffb437" stroke-width="2"/><text x="187" y="16">31</text>
+</svg><figcaption>Original upper bracelet crop. Green <strong>0</strong> is the arbitrary yellow reference. Cyan <strong>26</strong> marks the last local observed support whose assigned physical-model owner agreed. Amber <strong>31</strong> marks the first observed disagreement for the frozen N=3000 model. The circles locate measured photo supports, not bead centers.</figcaption></figure>
+<h3>What does “owner” mean?</h3>
+<p>Imagine that the program renders an invisible label on every modeled glass bead. It then looks through the virtual camera at every pixel in a measured photographic patch and asks: <em>Which modeled glass bead would appear at this pixel?</em> That modeled bead is the pixel's <strong>owner</strong>. If most of the patch belongs to the expected bead, this is good correspondence. If the patch belongs to a different modeled bead, something disagrees.</p>
+<div class="step"><strong>Step 1 — Index 26 agrees.</strong> The photographed feature near (1390,312) is assigned a physical-model address that owns about <strong>92.86%</strong> of its original support pixels. This is a strong local match under the model's own projection.</div>
+<div class="step"><strong>Step 2 — Index 31 does not.</strong> The feature is a black reflection region near (1401,248). The photographic index map expects model bead address <strong>−33</strong>. The virtual camera instead says <strong>−27</strong> owns all of that patch. That is a difference of six addresses—exactly one of the crochet neighbor step sizes.</div>
+<div class="step"><strong>Step 3 — A tempting explanation.</strong> Perhaps the photograph was assigned to the wrong +6 diagonal. If so, would shifting this bead and every subsequent correspondence by six solve the physical model disagreement?</div>
+<div class="step"><strong>Step 4 — Actually test the shift.</strong> The six-address shift makes correspondence better over the next 200 index units: average observed-pixel ownership rises from <strong>2.63%</strong> to <strong>28.85%</strong>. But three photographic neighbor links cease to agree. Over the whole remaining circuit, ownership is still very poor. So a simple one-time index shift helps locally but is not the complete explanation.</div>
+<div class="step"><strong>Step 5 — Test geometry separately.</strong> Codex varied the physical model's starting phase and longitudinal placement by modest amounts without changing the photographic indices. Some local supports improved, but the subsequent divergence remained. Uniformly spacing all beads made glass beads interpenetrate in a tested physical construction, so it was not accepted as a valid fix.</div>
+<div class="note"><strong>Crucial caution:</strong> These are <em>model versus photographed assignment</em> disagreements, not proof that either the photograph-derived indexing or the 3D formula is wrong. The N=3000 physical model also has a different total count than the primary photographic winding. This is a diagnostic extrapolation, not a fully compatible reconstruction.</div>
+<figure><img src="results/frozen-errors.png" alt="Physical-model discrepancies versus relative index: modal bead owners, projected support distances, visible region distances, and reflection errors"/><figcaption>Four diagnostic plots. In the upper plot, look for the **first small step away from zero**, not the very large mismatch far to the right. The next plot shows a growing position mismatch measured in pixels. The lower plots track the visible-region and reflection errors separately; they should not be combined casually because they measure different things.</figcaption></figure>
+<p>The other frozen model, N=2800, first differs earlier—between indices 14 and 20—but its mismatch is <strong>one</strong> physical index rather than six. Trying to propagate that one-index correction makes the next 200-index region much worse. This suggests we may have different failure mechanisms in the two physical models.</p>
+
+<h2 id="early">3. A much larger wrong total can begin with a small early choice</h2>
+<p>This example is useful because it answers your request to trace an error backward. A lower-ranked reconstruction completes the geographical circuit and returns successfully, yet produces a radically different total winding.</p>
+<figure class="photo"><svg viewBox="0 0 300 205" role="img" aria-label="Upper bracelet area annotated with previous agreement and earliest alternative row departure">
+<image href="results/upper-first-native.png" width="300" height="205"/>
+<circle cx="97.61" cy="38.59" r="10" stroke="#32bf80" stroke-width="2.8" fill="none"/>
+<path d="M91 30 L66 14" stroke="#32bf80" stroke-width="2"/><text x="32" y="15">92</text>
+<circle cx="110.26" cy="101.83" r="10" stroke="#ffb338" stroke-width="2.8" fill="none"/>
+<path d="M122 102 L159 109" stroke="#ffb338" stroke-width="2"/><text x="170" y="113">97</text>
+</svg><figcaption>Original photo near the upper/right section. Green circle: the last feature with an agreeing family-B assignment, approximately index 92. Amber circle: black feature NEW-1621-315, the first observed different assignment near index 97. Both marks are measured bright supports, not bead centers.</figcaption></figure>
+<div class="step"><strong>Step 1 — Up to index 92, the two reconstructions agree.</strong> We have a shared local history and the same relative numbering.</div>
+<div class="step"><strong>Step 2 — Near index 97, the alternative changes one row.</strong> That first observed difference corresponds to <strong>−7</strong> in family B. A single seven-address difference is still small compared with the thousands of beads around the bracelet.</div>
+<div class="step"><strong>Step 3 — The alternative keeps choosing different rows over several neighboring processing windows.</strong> These row-sized differences accumulate through windows 10–34. By the time that region ends, the alternative's indexing is off by <strong>175 addresses</strong> in family B compared with the primary reconstruction.</div>
+<div class="step"><strong>Step 4 — The program then preserves the accumulated offset while continuing all the way around the bracelet.</strong> This is how a completed, connected, apparently consistent reconstruction can still produce a seriously wrong total bead count.</div>
+<div class="step"><strong>Step 5 — Codex tested the proposed cause.</strong> Changing only the first window fails to attach the next part of the bracelet. Replacing the entire affected group of windows makes the rest of the primary growth history attach successfully. This demonstrates the <em>cumulative row-choice mechanism</em> of the later difference.</div>
+<div class="note"><strong>Why not adopt this alternative?</strong> It has worse shared-bead-shape penalties, and its tested count-specific physical models explain only around 2.6–3% of the original photographic support. Those tests weaken the alternative, but cannot prove that every underlying early row choice was wrong.</div>
+<p>Its winding is H=(214,176), giving conditional counts 2,554 or 2,516 rather than 2,704 or 2,691. The important insight is that <strong>even a difference of around 175 in the final count may have an identifiable early beginning</strong>.</p>
+
+<h2 id="lower">4. The lower bend: another small, local row ambiguity</h2>
+<p>There is also a lower-bend alternative, H=(213,201). Its first family-B index difference appears between relative indices 1187 and 1188. This is distinct from the inward-bend choice above.</p>
+<figure class="photo"><svg viewBox="0 0 240 210" role="img" aria-label="Lower bend annotated with last common support and first changed index">
+<image href="results/lower-first-native.png" width="240" height="210"/>
+<circle cx="99.8" cy="70.4" r="10" fill="none" stroke="#31bf80" stroke-width="2.8"/>
+<path d="M98 59 L79 31" stroke="#31bf80" stroke-width="2"/><text x="46" y="29">1187</text>
+<circle cx="82.46" cy="106.25" r="10" fill="none" stroke="#ffb437" stroke-width="2.8"/>
+<path d="M76 116 L52 142" stroke="#ffb437" stroke-width="2"/><text x="13" y="151">1188</text>
+</svg><figcaption>Original lower-bend crop. Green circle: E5-1151-2893, last agreeing family-B observation around index 1187. Amber circle: NEW-1132-2925, first different assignment around 1188. The computer's precise marker positions may be displaced within a glass bead.</figcaption></figure>
+<div class="step"><strong>Step 1 — The two histories enter the lower bend agreeing.</strong> Both can explain much of the visible red/yellow/black pattern.</div>
+<div class="step"><strong>Step 2 — One local direction assignment differs.</strong> That alters the index of the next photographed feature by one primitive lattice step. From then on, all later assigned indices reflect the changed history.</div>
+<div class="step"><strong>Step 3 — Replacing windows 79–82 makes the alternative reach the return.</strong> So the computer has localized the responsible segment. It has <em>not</em> thereby shown which set of photographed diagonals is correct.</div>
+<p>What would help is to enlarge this photo enough to inspect the black beads and colored rows immediately surrounding the two marked observations, then compare each proposed diagonal against several neighboring beads. Do not judge by the shortest line between two reflections alone.</p>
+
+<h2 id="whatnext">What I would inspect and what Codex should explain better</h2>
+<table><thead><tr><th>Question</th><th>Most useful next evidence</th></tr></thead><tbody>
+<tr><td>Which inward-bend winding is correct?</td><td>Show both candidate diagonals passing through the three marked features, enlarged 4–8× with several neighboring rows. Explain which real beads each line passes through.</td></tr>
+<tr><td>Why does the physical model disagree at index 31?</td><td>Show the photographed black support, the model's predicted bead −33, and the bead −27 that actually owns the support. Use distinct outline colors on the same original photograph, then move forward 10, 30 and 100 addresses.</td></tr>
+<tr><td>Could a wrong total begin early?</td><td>Show the sequence of changed diagonals over windows 10–34. Present a short animation or numbered photo panels showing how the first −7 becomes −175.</td></tr>
+<tr><td>Are the lower-bend rows obvious?</td><td>Show both proposed local bead-to-bead routes, colored differently, along with the nearest black beads and the original pixel crop.</td></tr>
+</tbody></table>
+<div class="good"><strong>The one thing we should not overlook:</strong> R329 made genuine progress by identifying where alternative explanations begin and by testing the effect of changing earlier decisions. What remains unresolved is <em>photographic truth</em>: which local diagonal sequence actually follows the glass beads. Better pictures and explanations can help you judge that without requiring you to learn the project's internal programming terminology.</div>
+<h2>Original evidence</h2>
+<p><a href="R329_REPORT.md">Full technical R329 report</a> · <a href="results/index.html">Original technical visual review</a> · <a href="results/closest-comparison.png">Original inward-bend comparison</a> · <a href="results/frozen-errors.png">Frozen-model discrepancy plots</a>.</p>
+<p><small>Created as an explanatory companion. Annotated circles use recorded image coordinates and are not additional manual labels, updated scientific evidence or reclassified bead centers. All linked photographs and measurements are unchanged.</small></p>
+</body></html>
