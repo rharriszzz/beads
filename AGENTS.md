@@ -1,3 +1,27 @@
+# R322 completed — photographic diagonal bands, interior row-switch failure; STOP
+
+Read photo2/R322_REPORT.md, R322_SPECIFICATION.md and R322_REPRODUCE.md.
+Static original-photo review: photo2/r322/results/index.html; graph.json/validation.json.
+Image-only curved bands:11 F0/9 F1 fragments;34 crossings,25 confident/5 probable,
+1 ambiguous/3 unsupported (never absence).37 appearance observations,33 reused
+R275 bright supports+4 fresh; no maker graph/3D positions enter detector runtime.
+Held-out R161:29/40 beads,50/86 recorded links recovered; clear interior24/25,
+38/45 links.56 automatic links:51 chart-agree/3 wrong/2 unresolved endpoints.
+Wrong2→3 and4→5 calledd2 insteadofd1; implied4→3 also wrong, all interior.
+27/29 associated coordinates agree;2/4 displaced one row,−6 A/−7 B.
+27 automatic cycles close by construction despite wrong photographic links.
+R17111→14→16 recovered without point-angle gate; reflection14 never moved.
+Maker10 reflection detected but no supported crossing; absence not inferred.
+Both6/7 assignments, reversal and global origin retained;42 identity handled
+without forced planar merging. Bandwidth28/42 stability fails to flag wrong rows.
+No expansion, frozen3D comparison, pattern inference or physical-model defect claim.
+37 observations/795 native pixels, original RGB, all edges/indices, guarded exact
+replay and desktop/narrow/offline verified. Inclusive pixel-run export repaired;
+frozen-v1 preserves original source/output/evaluation; scientific decisions exact.
+Detector stages.841s; guarded replay1.116s incl serialization; no equal-task3D
+speedup claim. Prior photo/annotations/science unchanged except additive handoff.
+Stop for scientific review. No automatic R323, adoption or final pattern.
+
 # R321 completed — algebraic contact root and curvature spacing; no adoption; STOP
 
 Read photo2/R321_REPORT.md, R321_SPECIFICATION.md and R321_REPRODUCE.md.

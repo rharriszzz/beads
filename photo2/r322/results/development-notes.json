@@ -1,0 +1,29 @@
+{
+  "failures": [
+    {
+      "stage": "initial phase probe",
+      "issue": "Axis-wise unwrapping outside material caused artificial contour discontinuities",
+      "resolution": "Masked quality-guided unwrap before final detector; no maker evaluation used"
+    },
+    {
+      "stage": "fresh pigment mask prototype",
+      "issue": "Shaded yellow boundaries yielded red fragments",
+      "resolution": "Use preserved image-only bright supports, original prototype kept"
+    },
+    {
+      "stage": "support export audit",
+      "issue": "Inclusive run endpoints initially decoded as exclusive",
+      "resolution": "Corrected counts/pixels; all scientific decisions exact, frozen-v1 retained"
+    },
+    {
+      "stage": "verification harness",
+      "issue": "Tuple/list JSON representation caused configuration equality failure",
+      "resolution": "JSON-normalize replay before comparison; no detector changes"
+    },
+    {
+      "stage": "Chromium check",
+      "issue": "Sandbox blocked process startup",
+      "resolution": "Existing approved launcher outside sandbox passed desktop/narrow/offline"
+    }
+  ]
+}

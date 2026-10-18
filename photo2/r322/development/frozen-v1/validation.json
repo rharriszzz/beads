@@ -1,0 +1,2578 @@
+{
+  "created_utc": "2026-10-18T08:08:55.082204+00:00",
+  "freeze_sha256": "2fea025eb18c5fa67a6f83e5acb1fc7b107136d2db5959fd3fb65425e8e6acaf",
+  "maker_sha256": "a525aaf05a7be8da79db93fc54f91c21205a08766912420ccc13566eed7a75e2",
+  "summary": {
+    "beads": 40,
+    "recorded_links": 86,
+    "proximity_associated_beads": 29,
+    "ambiguous_beads": 0,
+    "unresolved_beads": 11,
+    "recovered_recorded_links": 50,
+    "recorded_link_status": {
+      "unresolved": 32,
+      "abstained link": 2,
+      "recovered": 50,
+      "wrong family or orientation": 2
+    },
+    "automatic_link_status": {
+      "disagrees with maker chart": 3,
+      "agrees with maker chart": 51,
+      "unresolved endpoint identity": 2
+    },
+    "interior_beads": 25,
+    "interior_associated_beads": 24,
+    "interior_recorded_links": 45,
+    "interior_recovered_links": 38,
+    "interior_wrong_automatic_links": 3,
+    "automatic_cycle_rank": 27,
+    "automatic_cycle_conflicts": 0,
+    "maker_cycle_rank": 47
+  },
+  "success_gate": false,
+  "associations": [
+    {
+      "maker": 1,
+      "xy": [
+        1201.0737386804658,
+        270.2587322121604
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 2,
+      "xy": [
+        1211.1642949547218,
+        304.0620957309185
+      ],
+      "candidates": [
+        {
+          "node": "X002",
+          "distance": 6.05456578425021
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X002",
+      "distance": 6.05456578425021,
+      "association_margin": 18.35644133699809,
+      "priority": "interior"
+    },
+    {
+      "maker": 3,
+      "xy": [
+        1224.282018111255,
+        337.3609314359638
+      ],
+      "candidates": [
+        {
+          "node": "X003",
+          "distance": 6.98511236748751
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X003",
+      "distance": 6.98511236748751,
+      "association_margin": 14.34973337212854,
+      "priority": "interior"
+    },
+    {
+      "maker": 4,
+      "xy": [
+        1227.8137128072444,
+        280.3492884864165
+      ],
+      "candidates": [
+        {
+          "node": "X005",
+          "distance": 6.635758419832582
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X005",
+      "distance": 6.635758419832582,
+      "association_margin": 16.74142033737244,
+      "priority": "interior"
+    },
+    {
+      "maker": 5,
+      "xy": [
+        1239.9223803363518,
+        310.1164294954722
+      ],
+      "candidates": [
+        {
+          "node": "X006",
+          "distance": 5.4602542478844205
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X006",
+      "distance": 5.4602542478844205,
+      "association_margin": 16.984952314037134,
+      "priority": "interior"
+    },
+    {
+      "maker": 6,
+      "xy": [
+        1249.0038809831824,
+        347.9560155239327
+      ],
+      "candidates": [
+        {
+          "node": "X004",
+          "distance": 6.666864940574869
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X004",
+      "distance": 6.666864940574869,
+      "association_margin": 14.667980799041182,
+      "priority": "edge"
+    },
+    {
+      "maker": 7,
+      "xy": [
+        1240.9314359637774,
+        258.6545924967659
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 8,
+      "xy": [
+        1256.5717981888745,
+        286.4036222509702
+      ],
+      "candidates": [
+        {
+          "node": "X008",
+          "distance": 6.9598221835666045
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X008",
+      "distance": 6.9598221835666045,
+      "association_margin": 15.48538437835495,
+      "priority": "interior"
+    },
+    {
+      "maker": 9,
+      "xy": [
+        1266.6623544631307,
+        324.7477360931436
+      ],
+      "candidates": [
+        {
+          "node": "X007",
+          "distance": 8.379064708412294
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X007",
+      "distance": 8.379064708412294,
+      "association_margin": 14.579956201770045,
+      "priority": "interior"
+    },
+    {
+      "maker": 10,
+      "xy": [
+        1274.7347994825357,
+        273.79042690815004
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "interior"
+    },
+    {
+      "maker": 11,
+      "xy": [
+        1283.816300129366,
+        304.0620957309185
+      ],
+      "candidates": [
+        {
+          "node": "X009",
+          "distance": 7.242624951475687
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X009",
+      "distance": 7.242624951475687,
+      "association_margin": 14.16139459234168,
+      "priority": "interior"
+    },
+    {
+      "maker": 12,
+      "xy": [
+        1287.8525226390686,
+        336.3518758085381
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 13,
+      "xy": [
+        1287.8525226390686,
+        253.10478654592498
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 14,
+      "xy": [
+        1300.4657179818887,
+        283.3764553686934
+      ],
+      "candidates": [
+        {
+          "node": "X012",
+          "distance": 6.741818362277752
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X012",
+      "distance": 6.741818362277752,
+      "association_margin": 14.112806730066072,
+      "priority": "interior"
+    },
+    {
+      "maker": 15,
+      "xy": [
+        1309.5472186287193,
+        314.65717981888747
+      ],
+      "candidates": [
+        {
+          "node": "X010",
+          "distance": 7.749348114933362
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X010",
+      "distance": 7.749348114933362,
+      "association_margin": 13.61435078756319,
+      "priority": "interior"
+    },
+    {
+      "maker": 16,
+      "xy": [
+        1316.1060802069858,
+        258.1500646830531
+      ],
+      "candidates": [
+        {
+          "node": "X015",
+          "distance": 5.838004974538854
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X015",
+      "distance": 5.838004974538854,
+      "association_margin": 18.736946739411774,
+      "priority": "interior"
+    },
+    {
+      "maker": 17,
+      "xy": [
+        1324.1785252263908,
+        292.9624838292367
+      ],
+      "candidates": [
+        {
+          "node": "X013",
+          "distance": 5.548737631101435
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X013",
+      "distance": 5.548737631101435,
+      "association_margin": 15.656573782497933,
+      "priority": "interior"
+    },
+    {
+      "maker": 18,
+      "xy": [
+        1331.24191461837,
+        331.3065976714101
+      ],
+      "candidates": [
+        {
+          "node": "X011",
+          "distance": 7.339483069720131
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X011",
+      "distance": 7.339483069720131,
+      "association_margin": 14.651978889483797,
+      "priority": "edge"
+    },
+    {
+      "maker": 19,
+      "xy": [
+        1336.2871927554982,
+        245.03234152652004
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 20,
+      "xy": [
+        1345.8732212160414,
+        273.79042690815004
+      ],
+      "candidates": [
+        {
+          "node": "X016",
+          "distance": 7.9944090393453235
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X016",
+      "distance": 7.9944090393453235,
+      "association_margin": 13.112605731029952,
+      "priority": "interior"
+    },
+    {
+      "maker": 21,
+      "xy": [
+        1346.882276843467,
+        308.6028460543338
+      ],
+      "candidates": [
+        {
+          "node": "X014",
+          "distance": 5.668015319762737
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X014",
+      "distance": 5.668015319762737,
+      "association_margin": 14.235301362920435,
+      "priority": "interior"
+    },
+    {
+      "maker": 22,
+      "xy": [
+        1363.0271668822768,
+        254.61836998706337
+      ],
+      "candidates": [
+        {
+          "node": "X019",
+          "distance": 7.750603019457286
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X019",
+      "distance": 7.750603019457286,
+      "association_margin": 12.313446936881075,
+      "priority": "interior"
+    },
+    {
+      "maker": 23,
+      "xy": [
+        1371.0996119016818,
+        298.0077619663648
+      ],
+      "candidates": [
+        {
+          "node": "X017",
+          "distance": 6.856003431299884
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X017",
+      "distance": 6.856003431299884,
+      "association_margin": 13.047313251383288,
+      "priority": "interior"
+    },
+    {
+      "maker": 24,
+      "xy": [
+        1385.7309184993533,
+        271.26778783958605
+      ],
+      "candidates": [
+        {
+          "node": "X020",
+          "distance": 9.26837502063455
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X020",
+      "distance": 9.26837502063455,
+      "association_margin": 10.795674935703811,
+      "priority": "interior"
+    },
+    {
+      "maker": 25,
+      "xy": [
+        1394.8124191461836,
+        313.6481241914618
+      ],
+      "candidates": [
+        {
+          "node": "X018",
+          "distance": 4.850854101030033
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X018",
+      "distance": 4.850854101030033,
+      "association_margin": 18.762314431919034,
+      "priority": "interior"
+    },
+    {
+      "maker": 26,
+      "xy": [
+        1409.948253557568,
+        286.908150064683
+      ],
+      "candidates": [
+        {
+          "node": "X021",
+          "distance": 7.963842586086668
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X021",
+      "distance": 7.963842586086668,
+      "association_margin": 13.208734543337833,
+      "priority": "interior"
+    },
+    {
+      "maker": 27,
+      "xy": [
+        1440.2199223803364,
+        301.03492884864164
+      ],
+      "candidates": [
+        {
+          "node": "X022",
+          "distance": 10.416036528260035
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X022",
+      "distance": 10.416036528260035,
+      "association_margin": 13.07321976571964,
+      "priority": "interior"
+    },
+    {
+      "maker": 28,
+      "xy": [
+        1417.51617076326,
+        322.22509702457955
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 29,
+      "xy": [
+        1462.9236739974126,
+        312.13454075032337
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 30,
+      "xy": [
+        1381.190168175938,
+        245.03234152652004
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 31,
+      "xy": [
+        1401.3712807244501,
+        253.10478654592498
+      ],
+      "candidates": [
+        {
+          "node": "X024",
+          "distance": 4.823198806847693
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X024",
+      "distance": 4.823198806847693,
+      "association_margin": 14.931054921603014,
+      "priority": "edge"
+    },
+    {
+      "maker": 32,
+      "xy": [
+        1427.1021992238034,
+        261.17723156532986
+      ],
+      "candidates": [
+        {
+          "node": "X025",
+          "distance": 5.979936150301008
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X025",
+      "distance": 5.979936150301008,
+      "association_margin": 14.293083772053556,
+      "priority": "interior"
+    },
+    {
+      "maker": 33,
+      "xy": [
+        1457.3738680465717,
+        279.34023285899093
+      ],
+      "candidates": [
+        {
+          "node": "X026",
+          "distance": 7.949346789539196
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X026",
+      "distance": 7.949346789539196,
+      "association_margin": 13.850094766245753,
+      "priority": "interior"
+    },
+    {
+      "maker": 34,
+      "xy": [
+        1479.5730918499353,
+        294.98059508408795
+      ],
+      "candidates": [
+        {
+          "node": "X027",
+          "distance": 6.023492254781671
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X027",
+      "distance": 6.023492254781671,
+      "association_margin": 15.775949301003276,
+      "priority": "interior"
+    },
+    {
+      "maker": 35,
+      "xy": [
+        1501.267787839586,
+        309.6119016817594
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 36,
+      "xy": [
+        1422.0569210866752,
+        236.95989650711513
+      ],
+      "candidates": [],
+      "status": "unresolved",
+      "node": null,
+      "priority": "edge"
+    },
+    {
+      "maker": 37,
+      "xy": [
+        1450.8150064683052,
+        244.52781371280724
+      ],
+      "candidates": [
+        {
+          "node": "X028",
+          "distance": 9.610551100865669
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X028",
+      "distance": 9.610551100865669,
+      "association_margin": 10.662468821488895,
+      "priority": "edge"
+    },
+    {
+      "maker": 38,
+      "xy": [
+        1477.0504527813712,
+        256.1319534282018
+      ],
+      "candidates": [
+        {
+          "node": "X029",
+          "distance": 10.448357608717945
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X029",
+      "distance": 10.448357608717945,
+      "association_margin": 10.396847373633403,
+      "priority": "interior"
+    },
+    {
+      "maker": 39,
+      "xy": [
+        1502.7813712807244,
+        267.23156532988355
+      ],
+      "candidates": [
+        {
+          "node": "X030",
+          "distance": 7.025597574415127
+        },
+        {
+          "node": "X033",
+          "distance": 17.09794023439857
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X030",
+      "distance": 7.025597574415127,
+      "association_margin": 10.072342659983445,
+      "priority": "interior"
+    },
+    {
+      "maker": 40,
+      "xy": [
+        1525.4851228978007,
+        288.42173350582146
+      ],
+      "candidates": [
+        {
+          "node": "X031",
+          "distance": 9.102689011001813
+        }
+      ],
+      "status": "unambiguous proximity association",
+      "node": "X031",
+      "distance": 9.102689011001813,
+      "association_margin": 15.477260052442885,
+      "priority": "edge"
+    }
+  ],
+  "recorded_links": [
+    {
+      "source": 1,
+      "target": 4,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X005",
+      "priority": "edge"
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "direction": "d2",
+      "status": "abstained link",
+      "automatic_source": "X005",
+      "automatic_target": "X008",
+      "priority": "interior"
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X008",
+      "automatic_target": "X009",
+      "priority": "interior"
+    },
+    {
+      "source": 11,
+      "target": 15,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X009",
+      "automatic_target": "X010",
+      "priority": "interior"
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X010",
+      "automatic_target": "X011",
+      "priority": "edge"
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 10,
+      "target": 14,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X012",
+      "priority": "interior"
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X012",
+      "automatic_target": "X013",
+      "priority": "interior"
+    },
+    {
+      "source": 17,
+      "target": 21,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X013",
+      "automatic_target": "X014",
+      "priority": "interior"
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X002",
+      "automatic_target": "X005",
+      "priority": "interior"
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": "X005",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X003",
+      "automatic_target": "X006",
+      "priority": "interior"
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X006",
+      "automatic_target": "X008",
+      "priority": "interior"
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": "X008",
+      "automatic_target": null,
+      "priority": "interior"
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X004",
+      "automatic_target": "X007",
+      "priority": "edge"
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X007",
+      "automatic_target": "X009",
+      "priority": "interior"
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X009",
+      "automatic_target": "X012",
+      "priority": "interior"
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X012",
+      "automatic_target": "X015",
+      "priority": "interior"
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": "X015",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X002",
+      "priority": "edge"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "direction": "d1",
+      "status": "wrong family or orientation",
+      "automatic_source": "X002",
+      "automatic_target": "X003",
+      "priority": "interior"
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "direction": "d1",
+      "status": "wrong family or orientation",
+      "automatic_source": "X005",
+      "automatic_target": "X006",
+      "priority": "interior"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X006",
+      "automatic_target": "X004",
+      "priority": "edge"
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X008",
+      "priority": "edge"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X008",
+      "automatic_target": "X007",
+      "priority": "interior"
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X012",
+      "priority": "edge"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X012",
+      "automatic_target": "X010",
+      "priority": "interior"
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X015",
+      "automatic_target": "X013",
+      "priority": "interior"
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X013",
+      "automatic_target": "X011",
+      "priority": "edge"
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X016",
+      "priority": "edge"
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X016",
+      "automatic_target": "X014",
+      "priority": "interior"
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X019",
+      "automatic_target": "X017",
+      "priority": "interior"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X009",
+      "priority": "interior"
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": "X009",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "direction": "d2",
+      "status": "abstained link",
+      "automatic_source": "X002",
+      "automatic_target": "X006",
+      "priority": "interior"
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X006",
+      "automatic_target": "X007",
+      "priority": "interior"
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": "X007",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X024",
+      "priority": "edge"
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X024",
+      "automatic_target": "X025",
+      "priority": "edge"
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X025",
+      "automatic_target": "X026",
+      "priority": "interior"
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X026",
+      "automatic_target": "X027",
+      "priority": "interior"
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": "X027",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X028",
+      "priority": "edge"
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X028",
+      "automatic_target": "X029",
+      "priority": "edge"
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X029",
+      "automatic_target": "X030",
+      "priority": "interior"
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X030",
+      "automatic_target": "X031",
+      "priority": "edge"
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X015",
+      "priority": "edge"
+    },
+    {
+      "source": 16,
+      "target": 20,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X015",
+      "automatic_target": "X016",
+      "priority": "interior"
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X016",
+      "automatic_target": "X017",
+      "priority": "interior"
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X017",
+      "automatic_target": "X018",
+      "priority": "interior"
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": "X018",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X019",
+      "priority": "edge"
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X019",
+      "automatic_target": "X020",
+      "priority": "interior"
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X020",
+      "automatic_target": "X021",
+      "priority": "interior"
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "direction": "d2",
+      "status": "recovered",
+      "automatic_source": "X021",
+      "automatic_target": "X022",
+      "priority": "interior"
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "direction": "d2",
+      "status": "unresolved",
+      "automatic_source": "X022",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X010",
+      "priority": "edge"
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X010",
+      "automatic_target": "X013",
+      "priority": "interior"
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X013",
+      "automatic_target": "X016",
+      "priority": "interior"
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X016",
+      "automatic_target": "X019",
+      "priority": "interior"
+    },
+    {
+      "source": 22,
+      "target": 30,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": "X019",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X011",
+      "automatic_target": "X014",
+      "priority": "edge"
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X014",
+      "automatic_target": "X017",
+      "priority": "interior"
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X017",
+      "automatic_target": "X020",
+      "priority": "interior"
+    },
+    {
+      "source": 24,
+      "target": 31,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X020",
+      "automatic_target": "X024",
+      "priority": "edge"
+    },
+    {
+      "source": 31,
+      "target": 36,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": "X024",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X018",
+      "automatic_target": "X021",
+      "priority": "interior"
+    },
+    {
+      "source": 26,
+      "target": 32,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X021",
+      "automatic_target": "X025",
+      "priority": "interior"
+    },
+    {
+      "source": 32,
+      "target": 37,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X025",
+      "automatic_target": "X028",
+      "priority": "edge"
+    },
+    {
+      "source": 28,
+      "target": 27,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X022",
+      "priority": "edge"
+    },
+    {
+      "source": 27,
+      "target": 33,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X022",
+      "automatic_target": "X026",
+      "priority": "interior"
+    },
+    {
+      "source": 33,
+      "target": 38,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X026",
+      "automatic_target": "X029",
+      "priority": "interior"
+    },
+    {
+      "source": 29,
+      "target": 34,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X027",
+      "priority": "edge"
+    },
+    {
+      "source": 34,
+      "target": 39,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X027",
+      "automatic_target": "X030",
+      "priority": "interior"
+    },
+    {
+      "source": 35,
+      "target": 40,
+      "direction": "d3",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X031",
+      "priority": "edge"
+    },
+    {
+      "source": 30,
+      "target": 24,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X020",
+      "priority": "edge"
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X020",
+      "automatic_target": "X018",
+      "priority": "interior"
+    },
+    {
+      "source": 31,
+      "target": 26,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X024",
+      "automatic_target": "X021",
+      "priority": "edge"
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": "X021",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 36,
+      "target": 32,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": null,
+      "automatic_target": "X025",
+      "priority": "edge"
+    },
+    {
+      "source": 32,
+      "target": 27,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X025",
+      "automatic_target": "X022",
+      "priority": "interior"
+    },
+    {
+      "source": 37,
+      "target": 33,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X028",
+      "automatic_target": "X026",
+      "priority": "edge"
+    },
+    {
+      "source": 33,
+      "target": 29,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": "X026",
+      "automatic_target": null,
+      "priority": "edge"
+    },
+    {
+      "source": 38,
+      "target": 34,
+      "direction": "d1",
+      "status": "recovered",
+      "automatic_source": "X029",
+      "automatic_target": "X027",
+      "priority": "interior"
+    },
+    {
+      "source": 39,
+      "target": 35,
+      "direction": "d1",
+      "status": "unresolved",
+      "automatic_source": "X030",
+      "automatic_target": null,
+      "priority": "edge"
+    }
+  ],
+  "automatic_links": [
+    {
+      "source": "X002",
+      "target": "X003",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 2,
+      "maker_target": 3,
+      "validation": "disagrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X002",
+      "target": "X005",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 2,
+      "maker_target": 4,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X003",
+      "target": "X004",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 3,
+      "maker_target": 6,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X003",
+      "target": "X006",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 3,
+      "maker_target": 5,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X004",
+      "target": "X007",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 6,
+      "maker_target": 9,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X005",
+      "target": "X006",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 4,
+      "maker_target": 5,
+      "validation": "disagrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X005",
+      "target": "X003",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X006",
+        "X002"
+      ],
+      "priority": "interior",
+      "maker_source": 4,
+      "maker_target": 3,
+      "validation": "disagrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X006",
+      "target": "X007",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 5,
+      "maker_target": 9,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X006",
+      "target": "X008",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 5,
+      "maker_target": 8,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X006",
+      "target": "X004",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X007",
+        "X003"
+      ],
+      "priority": "edge",
+      "maker_source": 5,
+      "maker_target": 6,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X007",
+      "target": "X009",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 9,
+      "maker_target": 11,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X008",
+      "target": "X009",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 8,
+      "maker_target": 11,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X008",
+      "target": "X007",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X009",
+        "X006"
+      ],
+      "priority": "interior",
+      "maker_source": 8,
+      "maker_target": 9,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X009",
+      "target": "X010",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 11,
+      "maker_target": 15,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X009",
+      "target": "X012",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 11,
+      "maker_target": 14,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X010",
+      "target": "X011",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 15,
+      "maker_target": 18,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X010",
+      "target": "X013",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 15,
+      "maker_target": 17,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X011",
+      "target": "X014",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 18,
+      "maker_target": 21,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X012",
+      "target": "X013",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 14,
+      "maker_target": 17,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X012",
+      "target": "X015",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 14,
+      "maker_target": 16,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X012",
+      "target": "X010",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X013",
+        "X009"
+      ],
+      "priority": "interior",
+      "maker_source": 14,
+      "maker_target": 15,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X013",
+      "target": "X014",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 17,
+      "maker_target": 21,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X013",
+      "target": "X016",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 17,
+      "maker_target": 20,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X013",
+      "target": "X011",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X014",
+        "X010"
+      ],
+      "priority": "edge",
+      "maker_source": 17,
+      "maker_target": 18,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X014",
+      "target": "X017",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 21,
+      "maker_target": 23,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X015",
+      "target": "X016",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 16,
+      "maker_target": 20,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X015",
+      "target": "X013",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X016",
+        "X012"
+      ],
+      "priority": "interior",
+      "maker_source": 16,
+      "maker_target": 17,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X016",
+      "target": "X017",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 20,
+      "maker_target": 23,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X016",
+      "target": "X019",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 20,
+      "maker_target": 22,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X016",
+      "target": "X014",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X017",
+        "X013"
+      ],
+      "priority": "interior",
+      "maker_source": 20,
+      "maker_target": 21,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X017",
+      "target": "X018",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 23,
+      "maker_target": 25,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X017",
+      "target": "X020",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 23,
+      "maker_target": 24,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X018",
+      "target": "X021",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 25,
+      "maker_target": 26,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X019",
+      "target": "X020",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 22,
+      "maker_target": 24,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X019",
+      "target": "X017",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X020",
+        "X016"
+      ],
+      "priority": "interior",
+      "maker_source": 22,
+      "maker_target": 23,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X020",
+      "target": "X021",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 24,
+      "maker_target": 26,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X020",
+      "target": "X024",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 24,
+      "maker_target": 31,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X020",
+      "target": "X018",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X021",
+        "X017"
+      ],
+      "priority": "interior",
+      "maker_source": 24,
+      "maker_target": 25,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X021",
+      "target": "X022",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 26,
+      "maker_target": 27,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X021",
+      "target": "X025",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 26,
+      "maker_target": 32,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X022",
+      "target": "X026",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 27,
+      "maker_target": 33,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X024",
+      "target": "X025",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 31,
+      "maker_target": 32,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X024",
+      "target": "X021",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X025",
+        "X020"
+      ],
+      "priority": "edge",
+      "maker_source": 31,
+      "maker_target": 26,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X025",
+      "target": "X026",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 32,
+      "maker_target": 33,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X025",
+      "target": "X028",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 32,
+      "maker_target": 37,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X025",
+      "target": "X022",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X026",
+        "X021"
+      ],
+      "priority": "interior",
+      "maker_source": 32,
+      "maker_target": 27,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X026",
+      "target": "X027",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 33,
+      "maker_target": 34,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X026",
+      "target": "X029",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 33,
+      "maker_target": 38,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X027",
+      "target": "X030",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 34,
+      "maker_target": 39,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X028",
+      "target": "X029",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 37,
+      "maker_target": 38,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X028",
+      "target": "X026",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X029",
+        "X025"
+      ],
+      "priority": "edge",
+      "maker_source": 37,
+      "maker_target": 33,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X029",
+      "target": "X030",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 38,
+      "maker_target": 39,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X029",
+      "target": "X027",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X030",
+        "X026"
+      ],
+      "priority": "interior",
+      "maker_source": 38,
+      "maker_target": 34,
+      "validation": "agrees with maker chart",
+      "maker_priority": "interior"
+    },
+    {
+      "source": "X030",
+      "target": "X031",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "edge",
+      "maker_source": 39,
+      "maker_target": 40,
+      "validation": "agrees with maker chart",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X030",
+      "target": "X033",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "status": "accepted conditional",
+      "kind": "traced common band",
+      "triangle_witnesses": [],
+      "priority": "interior",
+      "maker_source": 39,
+      "maker_target": null,
+      "validation": "unresolved endpoint identity",
+      "maker_priority": "edge-or-unmatched"
+    },
+    {
+      "source": "X033",
+      "target": "X031",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "status": "accepted conditional",
+      "kind": "implied triangular relation",
+      "triangle_witnesses": [
+        "X030"
+      ],
+      "priority": "edge",
+      "maker_source": null,
+      "maker_target": 40,
+      "validation": "unresolved endpoint identity",
+      "maker_priority": "edge-or-unmatched"
+    }
+  ],
+  "sensitivity": [
+    {
+      "radius": 10,
+      "margin": 0,
+      "associated_beads": 27,
+      "recovered_links": 43,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 10,
+      "margin": 3,
+      "associated_beads": 27,
+      "recovered_links": 43,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 10,
+      "margin": 5,
+      "associated_beads": 27,
+      "recovered_links": 43,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 14,
+      "margin": 0,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 14,
+      "margin": 3,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 14,
+      "margin": 5,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 18,
+      "margin": 0,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 18,
+      "margin": 3,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 18,
+      "margin": 5,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 22,
+      "margin": 0,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 22,
+      "margin": 3,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    },
+    {
+      "radius": 22,
+      "margin": 5,
+      "associated_beads": 29,
+      "recovered_links": 50,
+      "automatic_disagreements": 3
+    }
+  ],
+  "first_disagreement": {
+    "source": "X002",
+    "target": "X003",
+    "family": "F0",
+    "delta_ab": [
+      1,
+      0
+    ],
+    "status": "accepted conditional",
+    "kind": "traced common band",
+    "triangle_witnesses": [],
+    "priority": "interior",
+    "maker_source": 2,
+    "maker_target": 3,
+    "validation": "disagrees with maker chart",
+    "maker_priority": "interior"
+  },
+  "r171_chain": [
+    {
+      "source": 11,
+      "target": 14,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X009",
+      "automatic_target": "X012",
+      "priority": "interior"
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "direction": "d3",
+      "status": "recovered",
+      "automatic_source": "X012",
+      "automatic_target": "X015",
+      "priority": "interior"
+    }
+  ],
+  "seconds": 0.042888886004220694,
+  "limitation": "Proximity to arbitrary maker surface picks is a provisional identity association. Inspect all marked raw-photo cases; ambiguous associations abstain. No maker geometry entered the frozen tracker."
+}

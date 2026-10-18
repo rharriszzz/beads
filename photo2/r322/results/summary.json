@@ -1,0 +1,53 @@
+{
+  "result": "partial image-only recovery; failed interior expansion gate",
+  "automatic": {
+    "tracks_F0": 11,
+    "tracks_F1": 9,
+    "crossings": 34,
+    "supported": 30,
+    "confident": 25,
+    "probable": 5,
+    "ambiguous": 1,
+    "unsupported": 3
+  },
+  "heldout": {
+    "beads": 40,
+    "recorded_links": 86,
+    "proximity_associated_beads": 29,
+    "ambiguous_beads": 0,
+    "unresolved_beads": 11,
+    "recovered_recorded_links": 50,
+    "recorded_link_status": {
+      "unresolved": 32,
+      "abstained link": 2,
+      "recovered": 50,
+      "wrong family or orientation": 2
+    },
+    "automatic_link_status": {
+      "disagrees with maker chart": 3,
+      "agrees with maker chart": 51,
+      "unresolved endpoint identity": 2
+    },
+    "interior_beads": 25,
+    "interior_associated_beads": 24,
+    "interior_recorded_links": 45,
+    "interior_recovered_links": 38,
+    "interior_wrong_automatic_links": 3,
+    "automatic_cycle_rank": 27,
+    "automatic_cycle_conflicts": 0,
+    "maker_cycle_rank": 47
+  },
+  "index_consistent_after_origin_alignment": 27,
+  "expansion": false,
+  "frozen_3d_comparison": false,
+  "pattern_search": false,
+  "timings_seconds": {
+    "image_preprocessing": 0.08328729000641033,
+    "local_direction_analysis": 0.05721955499029718,
+    "diagonal_tracing_including_bandwidth_controls": 0.2998028679867275,
+    "intersection_identification_and_photographic_support": 0.39997950798715465,
+    "graph_consistency": 0.0008580520225223154,
+    "pattern_search": null,
+    "frozen_3d_comparison": null
+  }
+}
