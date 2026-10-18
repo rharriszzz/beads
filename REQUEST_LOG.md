@@ -9251,3 +9251,25 @@ three faint records at two unique sites remain unconfirmed. R16125/25and45/45,
 33/40and65/86all unchanged. Full15.067s pre-serialization/15.565s total,
 1000.2MiB; matched146support engineering control9.134→4.982s exact science.
 No winding closure/N, pattern or3Dfit adopted. See R325 report and delivery receipt.
+
+## R329 — 2026-10-18: wide counts and first-divergence diagnosis
+
+User requests a 40-minute continuation from R328: a stable photographic relative
+origin, saved-path backward fault localization, closest winding counterfactuals,
+N2000..3600 arithmetic and selected physical evaluations, multiple starting points,
+reverse growth, weak-link/return sensitivity and post-freeze color periods.
+P252 is untrusted memory, never a selection prior. Preserve all prior science;
+reserve eight minutes for verification/documentation/commit/push and stop.
+Specification: photo2/R329_SPECIFICATION.md; actual outcome: R329_REPORT.md.
+
+R329 outcome: localized closest-winding difference to windows124–126 and B k1739;
+actual counterfactual bundle completes while one-patch splice fails. Frozen N3000
+first+6 at k31 and N2800 first−1 at k20 investigated with suffix and geometry
+controls; no valid correction adopted. New complete H214,176 gives N2554/2516,
+first−7 at k97 then−175;10–34 replay confirms the cause of the alternative history.
+Screened1601counts;191physicaltrials/66counts,158certified/13penetrating/20unresolved;
+12counts full native support,7local native reflections. Six upper/lower/outer-bend
+traversals recover primary; inward beam/start failures and reverse H213,202 retained.
+P252 only tested postfreeze, no adopted period.47589prior files unchanged;
+independent verification and desktop/narrow/offline browser pass. Science sealed
+22:22:27UTC; commit/push delivery receipt follows. STOP for review; noR330.

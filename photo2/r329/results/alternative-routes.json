@@ -1,0 +1,277 @@
+[
+  {
+    "source": "C-1302-0316",
+    "target": "K-1341-0309",
+    "first": [
+      {
+        "source": "C-1302-0316",
+        "target": "C-1324-0332",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 4
+      },
+      {
+        "source": "C-1324-0332",
+        "target": "K-1341-0309",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 5
+      }
+    ],
+    "edge_disjoint_second": [
+      {
+        "source": "C-1302-0316",
+        "target": "K-1319-0295",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 4
+      },
+      {
+        "source": "K-1319-0295",
+        "target": "K-1341-0309",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 5
+      }
+    ],
+    "first_delta": [
+      1,
+      1
+    ],
+    "second_delta": [
+      1,
+      1
+    ],
+    "policy": "Each link has selected photographic-patch evidence; alternate routes reuse observations and may share parent fits. This is robustness, not independent truth."
+  },
+  {
+    "source": "C-1775-1637",
+    "target": "C-1669-1561",
+    "first": [
+      {
+        "source": "C-1775-1637",
+        "target": "C-1777-1612",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 121
+      },
+      {
+        "source": "C-1777-1612",
+        "target": "K-1750-1601",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 121
+      },
+      {
+        "source": "K-1750-1601",
+        "target": "K-1740-1575",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 124
+      },
+      {
+        "source": "K-1740-1575",
+        "target": "C-1721-1566",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 124
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "E5-1694-1563",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 124
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "C-1669-1561",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 124
+      }
+    ],
+    "edge_disjoint_second": [
+      {
+        "source": "C-1775-1637",
+        "target": "C-1749-1623",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 121
+      },
+      {
+        "source": "C-1749-1623",
+        "target": "K-1750-1601",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 121
+      },
+      {
+        "source": "K-1750-1601",
+        "target": "MAT25-K-1719-1592",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 124
+      },
+      {
+        "source": "MAT25-K-1719-1592",
+        "target": "C-1721-1566",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 124
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "C-1717-1540",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 124
+      },
+      {
+        "source": "C-1717-1540",
+        "target": "K-1683-1538",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 124
+      },
+      {
+        "source": "K-1683-1538",
+        "target": "C-1669-1561",
+        "delta": [
+          -1,
+          1
+        ],
+        "window": 124
+      }
+    ],
+    "first_delta": [
+      2,
+      4
+    ],
+    "second_delta": [
+      2,
+      4
+    ],
+    "policy": "Each link has selected photographic-patch evidence; alternate routes reuse observations and may share parent fits. This is robustness, not independent truth."
+  },
+  {
+    "source": "C-1721-1566",
+    "target": "K-1740-1575",
+    "first": [
+      {
+        "source": "C-1721-1566",
+        "target": "K-1740-1575",
+        "delta": [
+          0,
+          -1
+        ],
+        "window": 124
+      }
+    ],
+    "edge_disjoint_second": [
+      {
+        "source": "C-1721-1566",
+        "target": "MAT25-K-1719-1592",
+        "delta": [
+          -1,
+          0
+        ],
+        "window": 124
+      },
+      {
+        "source": "MAT25-K-1719-1592",
+        "target": "K-1740-1575",
+        "delta": [
+          1,
+          -1
+        ],
+        "window": 124
+      }
+    ],
+    "first_delta": [
+      0,
+      -1
+    ],
+    "second_delta": [
+      0,
+      -1
+    ],
+    "policy": "Each link has selected photographic-patch evidence; alternate routes reuse observations and may share parent fits. This is robustness, not independent truth."
+  },
+  {
+    "source": "C-1440-3032",
+    "target": "E5-1413-3039",
+    "first": [
+      {
+        "source": "C-1440-3032",
+        "target": "E5-1413-3039",
+        "delta": [
+          0,
+          1
+        ],
+        "window": 74
+      }
+    ],
+    "edge_disjoint_second": [
+      {
+        "source": "C-1440-3032",
+        "target": "C-1423-3004",
+        "delta": [
+          1,
+          0
+        ],
+        "window": 74
+      },
+      {
+        "source": "C-1423-3004",
+        "target": "E5-1413-3039",
+        "delta": [
+          -1,
+          1
+        ],
+        "window": 74
+      }
+    ],
+    "first_delta": [
+      0,
+      1
+    ],
+    "second_delta": [
+      0,
+      1
+    ],
+    "policy": "Each link has selected photographic-patch evidence; alternate routes reuse observations and may share parent fits. This is robustness, not independent truth."
+  }
+]

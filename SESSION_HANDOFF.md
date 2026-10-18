@@ -1,3 +1,30 @@
+# R329 completed — broad counts and first divergences; STOP
+
+Read photo2/R329_REPORT.md, R329_SPECIFICATION.md and R329_REPRODUCE.md.
+Review photo2/r329/results/index.html. R328 primary900/1862/one component remains.
+Reference C-1302-0316=(1301.854,315.585), relative lattice/index zero; A/B and reversals.
+Closest H215,200 first B difference C-1721-1566 k1739, preceding agreement1733.
+Window124 alone fails125;124–126 bundle replays to17 returns in.012s. Ambiguous truth.
+Frozen N3000 first +6 owner mismatch K-1398-0248 k31 after C1391 k26; suffix+6
+helps locally but breaks3 photo links and leaves whole-photo failure. N2800 local
+−1 at P5-1364 k20; propagating it harms30 supports. No tracker/geometry adoption.
+New H214,176:900supports, ownN2554/2516. First B−7 NEW-1621-315 k97 after92;
+windows10–34 replay from original seed, then−175 persists. Tested physical fits poor.
+AllN2000..3600 algebraic;191count-model trials/66counts,158certified/13penetrating/
+20unresolved.56sparse-native counts,12full-support counts,7local native reflections.
+OwnH/N/W models separate from incompatible diagnostic extrapolations; both hands.
+Upper/lower/outer-bend starts recover primary both directions. Inward forward fails
+at32/128; reverse128 completes H213,202. Forced primary replays both ways:
+beam pruning/start sensitivity remains.12searches208.770s; cached R327/R328 only.
+Soft diagonal continuity leaves primary unchanged; weak K1740 direction removal
+selects closest alternative. Four edge-disjoint route pairs;85return-subset checks.
+P252 untrusted; frozen maps conflict but no actual period/count excluded globally.
+All47589prior scientific files preserved. Independent448925equations/1985native
+pairs/2288native affine rows/1290317support witnesses/480Pythonrays pass.
+Science sealed22:22:27UTC; original delivery deadline22:48:24UTC Oct18.
+Stop for photographic review; no automaticR330, finalN/pattern or model/session switch.
+Keep user-preferred Astra/High/current session; no/new needed.
+
 # R324 completed — full photographic circuit, conditional charts and coupled diagnosis; STOP
 
 Read photo2/R324_REPORT.md, R324_SPECIFICATION.md and R324_REPRODUCE.md.
