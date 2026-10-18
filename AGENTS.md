@@ -1,3 +1,64 @@
+# R328 completed — one seed grown through the full circuit; STOP
+
+Read photo2/R328_REPORT.md, R328_SPECIFICATION.md and R328_REPRODUCE.md.
+Review photo2/r328/results/index.html: single-seed growth playback and native crops.
+900 indexed observed supports/1862 working links/ONE component/38 unindexed.
+Single seed C-0986-0371;187 windows plus return;17 same-support return matches;
+conditional H214,201. No skipped windows; every chosen patch has all3 directions.
+Both diagonal families grown together; bounded alternative histories provide
+lookahead.11 leading-history revisions, including windows122-126 at step127;
+five-window emergency rollback tested, not needed in actual full-photo run.
+No cyclicDP/max-marginal/MILP/graph-sync solver. Cached R327 photo bank retained.
+14 connected subpatches omit disconnected parent assignments; wider parent photo
+contexts remain conditional score evidence, not asserted whole-window topology.
+26 added links/one old direction replaced/seven more supports vs R327.
+Lower bridges now supported in windows74and75. Inward K1740 direction corrected;
+target-excluded photo errors/native response favor new assignment. Faint black3links.
+Single-window working links12; foreground/intervening-observation gates retained.
+Widths32/128/256 and stricter-return replay yield identical primary;16 other
+completed windings preserved. Closest scoregap1.359; no uniqueN/pattern/3D adoption.
+256.694s cumulative search within600s; preparation2.723s; cached-bank timing only.
+Every attachment connected;5964 local equations/1862 native edge checks/3232
+native prediction rows exact;17 return matches; raw crops/browser controls pass.
+R16125/25 interior associations45/45 links zero wrong;33/40,65/86 all unchanged.
+Historical independent subset remains separate; no global accuracy certification.
+Originalphoto/R161/R319-R327/beads.pov preserved. Browser launcher-only postseal
+source correction archived; scientific sources/graph exact. Local delivery receipt.
+Stop for photographic review; no automatic next round or model/session switch.
+
+# R327 completed — reversible working choices, shared native geometry; STOP
+
+Read photo2/R327_REPORT.md, R327_SPECIFICATION.md and R327_REPRODUCE.md.
+Review photo2/r327/results/index.html and shared-shape-review.html.
+893 indexed/1837 working links/2 components;10 added/6 withdrawn vs R326.
+Upper bridge retained; inward K-1740-1575 continuations restored; weak black site
+keeps22 pixels/3 provisional links.310 indexed black incl provisional; no new truth.
+Alternative fits are model disagreement, never automatic image contradictions.
+Target-excluded affine/curved predictions, native response, supported sequences,
+shared colored-region geometry; working graph and independent subset separate.
+5945 hypotheses retain all3352 old;938 observations/21203 support pixels unchanged.
+348 new contexts+778 old;30 initial passes. Minimal cycle cuts remove shared-prefix
+solver weakness. First1945-link/H214,123 working result exposed sheared-neighbor
+preference; preserved. Shared primitive-direction metric corrects it. Broad pigment
+mask included paper/adjacent material; failed masks preserved. Final613 color-specific
+regions/371616 pixels/187 metrics leave corrected choice unchanged. Partial pigment
+proxies, not complete contours. All original gates retained; no forced connectivity.
+Final compatible179-window witness/eight abstentions, H214,201 conditional;
+A2704/B2691, neither adopted. Eight lower-bend alternatives explicitly pursued,
+compatible, final fixed scores below primary; cyclic gaps retain generation scope.
+Final no-shape control adds543/removes438 links; complete native-response ablation
+removes4. Earlier controls kept under their own epochs. No accuracy gain claimed.
+R16125/25 interior associations/45/45 links/zero wrong;33/40 and65/86 unchanged.
+45 independently recorded interior links separate from20 peripheral reference links.
+Original600s refinement allowance used595.921s; separate120s correction allowance
+used37.338+37.408s; total670.667s. Diagnostics separately timed.587 contexts remain;
+no convergence claim.Verification:95659 cross-prediction rows/16299 runs,
+51 independent affine/native convolutions,maxdelta2.45e-11px; all edges, primitive
+penalties, pigment covariances, native crops and desktop/narrow/offline checks pass.
+All prior science/photo/R161/R319–R326/beads.pov preserved; failures archived.
+No physical fit, count/pattern adoption, automatic next round or model/session switch.
+STOP for review of the selected reversible working reconstruction.
+
 # R326 completed — iterative feedback, compatible hypotheses; no accuracy gain; STOP
 
 Read photo2/R326_REPORT.md, R326_SPECIFICATION.md and R326_REPRODUCE.md.

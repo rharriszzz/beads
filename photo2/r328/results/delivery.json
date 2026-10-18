@@ -1,0 +1,54 @@
+{
+  "status": "completed locally",
+  "summary": {
+    "seed": "C-0986-0371",
+    "indexed": 900,
+    "unindexed": 38,
+    "links": 1862,
+    "components": 1,
+    "selected_patches": 188,
+    "skipped_windows": [],
+    "return_observations": 17,
+    "H": [
+      214,
+      201
+    ],
+    "score": 3873.104944089152,
+    "added_links": 26,
+    "withdrawn_links": 1,
+    "single_window_links": 12,
+    "minimum_patch_direction_families": 3,
+    "provisional_black_links": 3
+  },
+  "graph_sha256": "071f1aa4b12ed8743fc9b73550aa4ca7d37a2202d6c7e759fd268e11d99e6fe6",
+  "bank_sha256": "8c8f74bc2ef0780464dc1e012ddbc3e3b9388771ec5775574a5c5e810d72aeb2",
+  "image_sha256": "eb7c9edb62f5580ef56632872da48da92556d62b758295137068cc2404dc8fbb",
+  "prior_AGENTS_sha256": "2eea5599ef165dca5070e53d813f5b8141e688035e313574cea6d411191b069c",
+  "old_AGENTS_preserved_as_suffix": true,
+  "postseal_source_changes": [
+    {
+      "path": "photo2/r328/browser_check.py",
+      "sealed_hash": "08652a5a2702328543b30c183ac3f7159be7e56ec37c57858856fe31cefa455b",
+      "current_hash": "876f15372a9ed145e8299077076f86e4267b53070b447407d40f5e65d537b9f2",
+      "reason": "Browser launcher argument handling only; original source archived"
+    }
+  ],
+  "scientific_sources_exact": true,
+  "checks": {
+    "verification": true,
+    "browser": true,
+    "reference": {
+      "indexed_associations": 33,
+      "interior_indexed_associations": 25,
+      "recorded_links": 86,
+      "recovered": 65,
+      "interior_recovered": 45,
+      "missing_endpoint_links": 21,
+      "wrong_automatic_edges": 0,
+      "wrong_interior_edges": 0
+    }
+  },
+  "search_seconds": 256.6938505510043,
+  "new_independently_established_links": 0,
+  "published": false
+}
