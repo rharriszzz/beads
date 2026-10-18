@@ -1,0 +1,247 @@
+[
+  {
+    "center": [
+      1012.4459336919926,
+      383.1030766864452
+    ],
+    "edge": {
+      "source": "NEW-1000-406",
+      "target": "K-1023-0354",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "supporting_windows": 1,
+      "competing_windows": 2,
+      "consensus": 0.33333333333333337,
+      "alternatives": [
+        {
+          "delta_ab": [
+            0,
+            -1
+          ],
+          "window_states": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            -2
+          ],
+          "window_states": [
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            0,
+            -2
+          ],
+          "window_states": [
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      ],
+      "intervening_observations": [],
+      "foreground_fraction": 1.0,
+      "separator_brightness_ratio": 0.1395522642835853,
+      "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+      "priority": "interior",
+      "status": "unresolved continuation",
+      "reasons": [
+        "fewer than two overlapping observation-supported windows",
+        "competing row assignment across joint hypotheses"
+      ]
+    }
+  },
+  {
+    "center": [
+      1337.3074402983268,
+      275.281464254889
+    ],
+    "edge": {
+      "source": "K-1319-0295",
+      "target": "NEW-1355-256",
+      "family": "F1",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "supporting_windows": 1,
+      "competing_windows": 1,
+      "consensus": 0.5,
+      "alternatives": [
+        {
+          "delta_ab": [
+            0,
+            1
+          ],
+          "window_states": [
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            0,
+            2
+          ],
+          "window_states": [
+            [
+              7,
+              0
+            ]
+          ]
+        }
+      ],
+      "intervening_observations": [
+        "C-1339-0277"
+      ],
+      "foreground_fraction": 1.0,
+      "separator_brightness_ratio": 0.21603813898940843,
+      "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+      "priority": "interior",
+      "status": "unresolved continuation",
+      "reasons": [
+        "fewer than two overlapping observation-supported windows",
+        "competing row assignment across joint hypotheses",
+        "potential intervening observed bead; skip unresolved"
+      ]
+    }
+  },
+  {
+    "center": [
+      1501.1608717202625,
+      265.61560147666705
+    ],
+    "edge": {
+      "source": "NEW-1485-242",
+      "target": "K-1510-0292",
+      "family": "difference",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "supporting_windows": 1,
+      "competing_windows": 1,
+      "consensus": 0.5,
+      "alternatives": [
+        {
+          "delta_ab": [
+            -1,
+            1
+          ],
+          "window_states": [
+            [
+              8,
+              0
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            -2,
+            1
+          ],
+          "window_states": [
+            [
+              10,
+              0
+            ]
+          ]
+        }
+      ],
+      "intervening_observations": [
+        "C-1497-0271"
+      ],
+      "foreground_fraction": 1.0,
+      "separator_brightness_ratio": 0.5950204184201584,
+      "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+      "priority": "edge",
+      "status": "unresolved continuation",
+      "reasons": [
+        "fewer than two overlapping observation-supported windows",
+        "competing row assignment across joint hypotheses",
+        "potential intervening observed bead; skip unresolved"
+      ]
+    }
+  },
+  {
+    "center": [
+      1220.0658263305322,
+      308.7002801120448
+    ],
+    "edge": {
+      "source": "C-1205-0305",
+      "target": "C-1235-0312",
+      "family": "F0",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "supporting_windows": 2,
+      "competing_windows": 1,
+      "consensus": 0.6666666666666667,
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            2,
+            0
+          ],
+          "window_states": [
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        }
+      ],
+      "intervening_observations": [],
+      "foreground_fraction": 1.0,
+      "separator_brightness_ratio": 0.4527692466898402,
+      "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+      "priority": "interior",
+      "status": "unresolved continuation",
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ]
+    }
+  }
+]

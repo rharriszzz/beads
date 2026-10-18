@@ -1,3 +1,31 @@
+# R323 completed — joint photographic rows, larger conditional lattice; STOP
+
+Read photo2/R323_REPORT.md, R323_SPECIFICATION.md and R323_REPRODUCE.md.
+Review photo2/r323/results/index.html; graph/validation/diagnosis/verification.json.
+Image-only23 overlapping windows,10 spectral basis alternatives,6 joint local
+hypotheses,48-path beam; original RGB +89 R275 supports +15 fresh observations.
+No maker graph, R322 graph, fitted positions or3D renderer in detector runtime.
+Frozen before one R161 score:25/25 interior beads,45/45 recorded interior links,
+zero wrong interior links;33/40 beads,65/86 links overall,21 unresolved links.
+2→3 and4→5 now d1; false4→3 neighbor removed. Maker10 recovered;11→14→16 retained.
+All33 matched relative coordinates agree after one origin; reflection14 unchanged.
+Crop900..1900/0..700:104 observations,98 conditional indexed/82 interior/16 edge,
+6 unresolved;44 red/19 yellow/35 black indexed,25 F0/23 F1 fragments,192 links.
+20/22 overlap transitions fully agree;11 row-ambiguous links and6 sparse-end
+abstentions retained. Difficult bridge aroundx1559..1729; no98-bead accuracy claim.
+Joint selection changes9 local winners/7 topologies; local-only107links/15components
+versus192/one. Same candidate ablation, not controlled crop-size accuracy evidence.
+A0..280/183 gaps;B0..279/182 gaps; both reversals, originC-0932-0412, no merging.
+95 cycles close but do not certify photo topology. Larger independent labels absent.
+Pattern/frozenR319/R321 comparison deferred; no physical-model defect inference.
+8.113s detector stages; guarded exact replay9.214s incl serialization, no3Dspeed claim.
+104 supports/2360 nativepixels,138 hypotheses/2418 assignments/48beam paths,
+all192edges/33heldoutcoordinates independently checked; desktop/narrow/offline pass.
+Original photo/R161/R322/frozenmodels preserved;1565 protected files unchanged.
+Scientific seal15:32:40UTC Oct18, cutoff15:44:54, delivery deadline15:50:54.
+Stop for review of uncertain bridge. No automaticR324, pattern adoption or3Dfit.
+Keep user-preferred Astra/High/current session for review; no /new needed.
+
 # R322 completed — photographic diagonal bands, interior row-switch failure; STOP
 
 Read photo2/R322_REPORT.md, R322_SPECIFICATION.md and R322_REPRODUCE.md.

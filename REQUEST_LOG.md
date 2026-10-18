@@ -9189,3 +9189,22 @@ principal-lobe error. Photo-localization, sampling, optical/model and identity
 uncertainty remain explicit. Report and delivery evidence in photo2/r318.
 Scientific search ended01:59:25UTC Oct18, before02:02:55 cutoff; original delivery
 deadline02:08:55UTC. Preserve every historical result; STOP for scientific review.
+
+
+R323 requested 2026-10-18: detect incorrect diagonal row continuations using image-only multi-bead and cross-family evidence, preserve alternatives, expand approximately x900..1900/y0..700 despite local unresolved regions, prioritize interior beads, retain both 6/7 interpretations and reversal, and validate once against R161. Preserve original photo and R322; no 3D reconstruction. Received prompt truncates in section7; remainder requested asynchronously. Initial protocol: photo2/R323_SPECIFICATION.md.
+
+
+R323 full request received 2026-10-18, including sections7–12 and the30-minute
+active-work limit with at least6minutes for final validation/documentation/delivery.
+The earlier truncation note is superseded; no clarification remains pending.
+Implemented overlapping two-family image-supported hypotheses and a joint beam,
+with unresolved local alternatives preserved across the larger900..1900/0..700 crop.
+Frozen detector before one R161 evaluation:25/25 interior beads,45/45 interior
+links,zero wrong interior links;33/40 beads,65/86 links overall. Corrected2→3/4→5,
+removed false4→3, recovered10 and preserved11→14→16 without moving reflections.
+98 conditional indexed observations (82 interior),192 links;11 row-ambiguous
+connections remain, so no larger-region accuracy, pattern or3D defect claim.
+Guarded replay and independent pixel/hypothesis/graph/R161 arithmetic pass;
+original photo and all historical evidence preserved. Report/review in photo2/r323.
+Scientific work sealed15:32:40UTC; original deadline15:50:54UTC. Commit/push scoped
+verified work, then STOP for scientific review. No automaticR324.

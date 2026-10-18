@@ -1,0 +1,4207 @@
+{
+  "created_utc": "2026-10-18T15:30:18.635203+00:00",
+  "specific_cases": [
+    {
+      "maker_pair": [
+        2,
+        3
+      ],
+      "observations": [
+        "C-1205-0305",
+        "C-1220-0333"
+      ],
+      "original_support_xy": [
+        [
+          1205.1904761904761,
+          305.04761904761904
+        ],
+        [
+          1218.7142857142858,
+          333.14285714285717
+        ]
+      ],
+      "R322_edge": {
+        "source": "X002",
+        "target": "X003",
+        "family": "F0",
+        "delta_ab": [
+          1,
+          0
+        ],
+        "status": "accepted conditional",
+        "kind": "traced common band",
+        "triangle_witnesses": [],
+        "priority": "interior",
+        "maker_source": 2,
+        "maker_target": 3,
+        "validation": "disagrees with maker chart",
+        "maker_priority": "interior"
+      },
+      "R323_edge": {
+        "source": "C-1205-0305",
+        "target": "C-1220-0333",
+        "family": "difference",
+        "delta_ab": [
+          1,
+          -1
+        ],
+        "supporting_windows": 5,
+        "competing_windows": 0,
+        "consensus": 1.0,
+        "alternatives": [
+          {
+            "delta_ab": [
+              1,
+              -1
+            ],
+            "window_states": [
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                8,
+                0
+              ]
+            ]
+          }
+        ],
+        "intervening_observations": [],
+        "foreground_fraction": 1.0,
+        "separator_brightness_ratio": 0.34087235991798126,
+        "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+        "priority": "interior",
+        "status": "accepted conditional",
+        "reasons": []
+      },
+      "propagated_delta": [
+        1,
+        -1
+      ],
+      "local_window_evidence": [
+        {
+          "window": 4,
+          "crop": [
+            1030,
+            240,
+            1230,
+            440
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 19.393493478594777,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                2.1442770034418874,
+                1.535609886670315
+              ],
+              "observations": 20,
+              "triangles": 9
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 18.587196656893127,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                2.791429980366287,
+                5.7901273420354
+              ],
+              "observations": 20,
+              "triangles": 12
+            },
+            {
+              "hypothesis": 2,
+              "selected": true,
+              "score": 17.6826594247123,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                6.284247825413784,
+                4.2701713466232984
+              ],
+              "observations": 19,
+              "triangles": 8
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 16.688692053788802,
+              "delta_ab": [
+                2,
+                -1
+              ],
+              "residuals_px": [
+                1.7768070272427547,
+                4.409859330514128
+              ],
+              "observations": 20,
+              "triangles": 2
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 16.524787111269656,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                8.189647012225317,
+                1.1971016538007386
+              ],
+              "observations": 20,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 16.39034294667755,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                8.390492765343367,
+                1.88815298209611
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        },
+        {
+          "window": 5,
+          "crop": [
+            1070,
+            223,
+            1270,
+            423
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 19.35039259494066,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                1.3210649013456799,
+                3.7990022295414776
+              ],
+              "observations": 19,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 18.99044258142908,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.3227594332411967,
+                3.7922187456168013
+              ],
+              "observations": 19,
+              "triangles": 9
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.997666492706276,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                5.7057833375929725,
+                3.035283630805196
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.837757808352528,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                3.2872482816598496,
+                2.2214048459434466
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.224109522829181,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                6.610439011407061,
+                8.503654276447707
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 14.983253467982827,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                7.298940511444969,
+                0.8746652820303638
+              ],
+              "observations": 18,
+              "triangles": 2
+            }
+          ]
+        },
+        {
+          "window": 6,
+          "crop": [
+            1110,
+            215,
+            1310,
+            415
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 20.09437920406087,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                0.7429632153250576,
+                4.599501225956657
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 19.37264334742869,
+              "delta_ab": [
+                1,
+                0
+              ],
+              "residuals_px": [
+                0.7427099810241707,
+                4.6285790666864575
+              ],
+              "observations": 21,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.145993405265253,
+              "delta_ab": [
+                1,
+                0
+              ],
+              "residuals_px": [
+                9.749529952619646,
+                4.621527885039304
+              ],
+              "observations": 18,
+              "triangles": 7
+            }
+          ]
+        },
+        {
+          "window": 7,
+          "crop": [
+            1150,
+            205,
+            1350,
+            405
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 21.237065883580083,
+              "delta_ab": [
+                2,
+                -1
+              ],
+              "residuals_px": [
+                1.880800743180225,
+                3.7151448593404495
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 21.2225973271188,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.7279865028859707,
+                3.7700563687599757
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 19.94430167469078,
+              "delta_ab": [
+                2,
+                -1
+              ],
+              "residuals_px": [
+                1.570281880974737,
+                3.1853843315009343
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 19.665850251673564,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.42788587552181,
+                2.6749079827209084
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 18.76888110914791,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                4.375002860949514,
+                1.2016607856043018
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 18.437315993842795,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                6.495000352626949,
+                2.5656951326772073
+              ],
+              "observations": 23,
+              "triangles": 11
+            }
+          ]
+        },
+        {
+          "window": 8,
+          "crop": [
+            1190,
+            191,
+            1390,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 17.32598893906299,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                7.0095339630146585,
+                3.7655829981197506
+              ],
+              "observations": 20,
+              "triangles": 10
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.870258361597957,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                3.0140149824341185,
+                1.8582647860392987
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.852506369253325,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                5.888030360142849,
+                6.147364458969227
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.544490900737323,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.7879040257197254,
+                1.9196474679895106
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.525651108542363,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.4507979282378998,
+                3.1204196930626007
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.45649233632047,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                4.8287067238036006,
+                5.389533978151359
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "maker_pair": [
+        4,
+        5
+      ],
+      "observations": [
+        "C-1221-0282",
+        "C-1235-0312"
+      ],
+      "original_support_xy": [
+        [
+          1221.357142857143,
+          281.8809523809524
+        ],
+        [
+          1234.9411764705883,
+          312.3529411764706
+        ]
+      ],
+      "R322_edge": {
+        "source": "X005",
+        "target": "X006",
+        "family": "F0",
+        "delta_ab": [
+          1,
+          0
+        ],
+        "status": "accepted conditional",
+        "kind": "traced common band",
+        "triangle_witnesses": [],
+        "priority": "interior",
+        "maker_source": 4,
+        "maker_target": 5,
+        "validation": "disagrees with maker chart",
+        "maker_priority": "interior"
+      },
+      "R323_edge": {
+        "source": "C-1221-0282",
+        "target": "C-1235-0312",
+        "family": "difference",
+        "delta_ab": [
+          1,
+          -1
+        ],
+        "supporting_windows": 4,
+        "competing_windows": 0,
+        "consensus": 1.0,
+        "alternatives": [
+          {
+            "delta_ab": [
+              1,
+              -1
+            ],
+            "window_states": [
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                8,
+                0
+              ]
+            ]
+          }
+        ],
+        "intervening_observations": [],
+        "foreground_fraction": 1.0,
+        "separator_brightness_ratio": 0.5613921740625629,
+        "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+        "priority": "interior",
+        "status": "accepted conditional",
+        "reasons": []
+      },
+      "propagated_delta": [
+        1,
+        -1
+      ],
+      "local_window_evidence": [
+        {
+          "window": 5,
+          "crop": [
+            1070,
+            223,
+            1270,
+            423
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 19.35039259494066,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                1.0192361769979177,
+                2.1868994191523417
+              ],
+              "observations": 19,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 18.99044258142908,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.0185429166128108,
+                2.182928516591494
+              ],
+              "observations": 19,
+              "triangles": 9
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.997666492706276,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                0.2206830530392424,
+                0.9486775646368137
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.837757808352528,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                2.7187257739684147,
+                2.029783802599757
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.224109522829181,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                0.4149586527359033,
+                3.483082502587218
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 14.983253467982827,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                3.41021496308164,
+                8.090120930645316
+              ],
+              "observations": 18,
+              "triangles": 2
+            }
+          ]
+        },
+        {
+          "window": 6,
+          "crop": [
+            1110,
+            215,
+            1310,
+            415
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 20.09437920406087,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                0.5609931536598881,
+                3.2740098526766093
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 19.37264334742869,
+              "delta_ab": [
+                1,
+                0
+              ],
+              "residuals_px": [
+                0.5659130860786247,
+                3.27941598453963
+              ],
+              "observations": 21,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.573061345898104,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                5.74009112110883,
+                3.1571746580082136
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.571810623849105,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                6.73607182135558,
+                3.1255648101477034
+              ],
+              "observations": 18,
+              "triangles": 7
+            }
+          ]
+        },
+        {
+          "window": 7,
+          "crop": [
+            1150,
+            205,
+            1350,
+            405
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 21.237065883580083,
+              "delta_ab": [
+                2,
+                -1
+              ],
+              "residuals_px": [
+                1.342072565930313,
+                3.122646563255964
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 21.2225973271188,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.2737362337501457,
+                3.179522876975611
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 19.94430167469078,
+              "delta_ab": [
+                2,
+                -1
+              ],
+              "residuals_px": [
+                1.1220375945973478,
+                2.7132141287302174
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 19.665850251673564,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.1702609275576676,
+                2.3642897510284917
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 18.76888110914791,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                1.9392739661989098,
+                1.2053759066356828
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 18.437315993842795,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                3.2603035820824,
+                1.1175848139138151
+              ],
+              "observations": 23,
+              "triangles": 11
+            }
+          ]
+        },
+        {
+          "window": 8,
+          "crop": [
+            1190,
+            191,
+            1390,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 17.32598893906299,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                3.338008937106327,
+                2.3692910367258317
+              ],
+              "observations": 20,
+              "triangles": 10
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.870258361597957,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                3.3208202775763906,
+                7.089464762014037
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.852506369253325,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                5.689727270649065,
+                4.103120899027301
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.544490900737323,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                4.55878112749204,
+                8.753977301946795
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.525651108542363,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                4.8295983270184735,
+                7.429188225888363
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.45649233632047,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                7.969405000399192,
+                1.1138564709911236
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "maker_pair": [
+        4,
+        3
+      ],
+      "observations": [
+        "C-1221-0282",
+        "C-1220-0333"
+      ],
+      "original_support_xy": [
+        [
+          1221.357142857143,
+          281.8809523809524
+        ],
+        [
+          1218.7142857142858,
+          333.14285714285717
+        ]
+      ],
+      "R322_edge": {
+        "source": "X005",
+        "target": "X003",
+        "family": "difference",
+        "delta_ab": [
+          1,
+          -1
+        ],
+        "status": "accepted conditional",
+        "kind": "implied triangular relation",
+        "triangle_witnesses": [
+          "X006",
+          "X002"
+        ],
+        "priority": "interior",
+        "maker_source": 4,
+        "maker_target": 3,
+        "validation": "disagrees with maker chart",
+        "maker_priority": "interior"
+      },
+      "R323_edge": null,
+      "propagated_delta": [
+        1,
+        -2
+      ],
+      "local_window_evidence": [
+        {
+          "window": 4,
+          "crop": [
+            1030,
+            240,
+            1230,
+            440
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 19.393493478594777,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                2.0575644191484077,
+                1.535609886670315
+              ],
+              "observations": 20,
+              "triangles": 9
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 18.587196656893127,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                3.758347509950265,
+                5.7901273420354
+              ],
+              "observations": 20,
+              "triangles": 12
+            },
+            {
+              "hypothesis": 2,
+              "selected": true,
+              "score": 17.6826594247123,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                8.104712982325376,
+                4.2701713466232984
+              ],
+              "observations": 19,
+              "triangles": 8
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 16.688692053788802,
+              "delta_ab": [
+                2,
+                -2
+              ],
+              "residuals_px": [
+                1.338719433782714,
+                4.409859330514128
+              ],
+              "observations": 20,
+              "triangles": 2
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 16.524787111269656,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                2.900104563889544,
+                1.1971016538007386
+              ],
+              "observations": 20,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 16.39034294667755,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                2.0007490060813344,
+                1.88815298209611
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        },
+        {
+          "window": 5,
+          "crop": [
+            1070,
+            223,
+            1270,
+            423
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 19.35039259494066,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                1.0192361769979177,
+                3.7990022295414776
+              ],
+              "observations": 19,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 18.99044258142908,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                1.0185429166128108,
+                3.7922187456168013
+              ],
+              "observations": 19,
+              "triangles": 9
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.997666492706276,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                0.2206830530392424,
+                3.035283630805196
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.837757808352528,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                2.7187257739684147,
+                2.2214048459434466
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.224109522829181,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                0.4149586527359033,
+                8.503654276447707
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 14.983253467982827,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                3.41021496308164,
+                0.8746652820303638
+              ],
+              "observations": 18,
+              "triangles": 2
+            }
+          ]
+        },
+        {
+          "window": 6,
+          "crop": [
+            1110,
+            215,
+            1310,
+            415
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 20.09437920406087,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                0.5609931536598881,
+                4.599501225956657
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 19.37264334742869,
+              "delta_ab": [
+                1,
+                -1
+              ],
+              "residuals_px": [
+                0.5659130860786247,
+                4.6285790666864575
+              ],
+              "observations": 21,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.573061345898104,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                5.74009112110883,
+                5.8271002573868405
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.571810623849105,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                6.73607182135558,
+                5.358464787643905
+              ],
+              "observations": 18,
+              "triangles": 7
+            }
+          ]
+        },
+        {
+          "window": 7,
+          "crop": [
+            1150,
+            205,
+            1350,
+            405
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 21.237065883580083,
+              "delta_ab": [
+                3,
+                -2
+              ],
+              "residuals_px": [
+                1.342072565930313,
+                3.7151448593404495
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 21.2225973271188,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                1.2737362337501457,
+                3.7700563687599757
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 19.94430167469078,
+              "delta_ab": [
+                3,
+                -2
+              ],
+              "residuals_px": [
+                1.1220375945973478,
+                3.1853843315009343
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 19.665850251673564,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                1.1702609275576676,
+                2.6749079827209084
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 18.76888110914791,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                1.9392739661989098,
+                1.2016607856043018
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 18.437315993842795,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                3.2603035820824,
+                2.5656951326772073
+              ],
+              "observations": 23,
+              "triangles": 11
+            }
+          ]
+        },
+        {
+          "window": 8,
+          "crop": [
+            1190,
+            191,
+            1390,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 17.32598893906299,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                3.338008937106327,
+                3.7655829981197506
+              ],
+              "observations": 20,
+              "triangles": 10
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.870258361597957,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                3.3208202775763906,
+                1.8582647860392987
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.852506369253325,
+              "delta_ab": [
+                1,
+                -2
+              ],
+              "residuals_px": [
+                5.689727270649065,
+                6.147364458969227
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.544490900737323,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                4.55878112749204,
+                1.9196474679895106
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.525651108542363,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                4.8295983270184735,
+                3.1204196930626007
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.45649233632047,
+              "delta_ab": [
+                1,
+                -3
+              ],
+              "residuals_px": [
+                7.969405000399192,
+                5.389533978151359
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "maker_pair": [
+        11,
+        14
+      ],
+      "observations": [
+        "C-1277-0302",
+        "K-1293-0279"
+      ],
+      "original_support_xy": [
+        [
+          1276.9411764705883,
+          301.7843137254902
+        ],
+        [
+          1293.8333333333333,
+          282.1666666666667
+        ]
+      ],
+      "R322_edge": {
+        "source": "X009",
+        "target": "X012",
+        "family": "F1",
+        "delta_ab": [
+          0,
+          1
+        ],
+        "status": "accepted conditional",
+        "kind": "traced common band",
+        "triangle_witnesses": [],
+        "priority": "interior",
+        "maker_source": 11,
+        "maker_target": 14,
+        "validation": "agrees with maker chart",
+        "maker_priority": "interior"
+      },
+      "R323_edge": {
+        "source": "C-1277-0302",
+        "target": "K-1293-0279",
+        "family": "F1",
+        "delta_ab": [
+          0,
+          1
+        ],
+        "supporting_windows": 4,
+        "competing_windows": 0,
+        "consensus": 1.0,
+        "alternatives": [
+          {
+            "delta_ab": [
+              0,
+              1
+            ],
+            "window_states": [
+              [
+                6,
+                0
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                9,
+                0
+              ]
+            ]
+          }
+        ],
+        "intervening_observations": [],
+        "foreground_fraction": 1.0,
+        "separator_brightness_ratio": 0.4661686775428679,
+        "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+        "priority": "interior",
+        "status": "accepted conditional",
+        "reasons": []
+      },
+      "propagated_delta": [
+        0,
+        1
+      ],
+      "local_window_evidence": [
+        {
+          "window": 6,
+          "crop": [
+            1110,
+            215,
+            1310,
+            415
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 20.09437920406087,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                1.0073257018649493,
+                2.445840281822524
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 19.37264334742869,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                0.9995794300720512,
+                2.467554639369782
+              ],
+              "observations": 21,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.573061345898104,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.179115134852895,
+                4.837282556321744
+              ],
+              "observations": 19,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.571810623849105,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.3548256705439554,
+                4.613217061720332
+              ],
+              "observations": 18,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.387255165946236,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.920017701136204,
+                3.429530725001421
+              ],
+              "observations": 18,
+              "triangles": 7
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.145993405265253,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                1.601813004611042,
+                2.1533343060321735
+              ],
+              "observations": 18,
+              "triangles": 7
+            }
+          ]
+        },
+        {
+          "window": 7,
+          "crop": [
+            1150,
+            205,
+            1350,
+            405
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 21.237065883580083,
+              "delta_ab": [
+                -1,
+                1
+              ],
+              "residuals_px": [
+                2.7184742785815574,
+                1.5583821665803606
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 21.2225973271188,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.6725555764276114,
+                1.5166384255929466
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 19.94430167469078,
+              "delta_ab": [
+                -1,
+                1
+              ],
+              "residuals_px": [
+                1.5491227320972312,
+                1.1056249145942019
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 19.665850251673564,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                1.0118008600978659,
+                0.6219724401155519
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 18.76888110914791,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.1707103795103686,
+                2.517910620351402
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 18.437315993842795,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                1.88199072825917,
+                2.909252737210214
+              ],
+              "observations": 23,
+              "triangles": 11
+            }
+          ]
+        },
+        {
+          "window": 8,
+          "crop": [
+            1190,
+            191,
+            1390,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 17.32598893906299,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                0.926560183334595,
+                1.1450923495047136
+              ],
+              "observations": 20,
+              "triangles": 10
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.870258361597957,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                5.086835970735973,
+                3.2682835143451796
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.852506369253325,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                1.4841526476670381,
+                6.766555888156637
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.544490900737323,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                4.255088470193276,
+                3.8424530527506984
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.525651108542363,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                3.2841882870698376,
+                4.1329875294647485
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.45649233632047,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                4.387974788921567,
+                6.0114105912848705
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        },
+        {
+          "window": 9,
+          "crop": [
+            1230,
+            191,
+            1430,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 16.300955207148576,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                0.48965504357184714,
+                0.5829470595018019
+              ],
+              "observations": 20,
+              "triangles": 8
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.987683519910433,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                0.8666511025689926,
+                6.516322938910827
+              ],
+              "observations": 21,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.938378087288807,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                1.5056150808658644,
+                6.713040509194213
+              ],
+              "observations": 20,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.442977354495211,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                4.255946433220609,
+                4.087067203744646
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.2958688584358,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                0.925915403759358,
+                6.341046452353631
+              ],
+              "observations": 21,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.18027974143756,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.849464564232213,
+                7.2191189783107435
+              ],
+              "observations": 20,
+              "triangles": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "maker_pair": [
+        14,
+        16
+      ],
+      "observations": [
+        "K-1293-0279",
+        "C-1311-0261"
+      ],
+      "original_support_xy": [
+        [
+          1293.8333333333333,
+          282.1666666666667
+        ],
+        [
+          1311.159090909091,
+          261.25
+        ]
+      ],
+      "R322_edge": {
+        "source": "X012",
+        "target": "X015",
+        "family": "F1",
+        "delta_ab": [
+          0,
+          1
+        ],
+        "status": "accepted conditional",
+        "kind": "traced common band",
+        "triangle_witnesses": [],
+        "priority": "interior",
+        "maker_source": 14,
+        "maker_target": 16,
+        "validation": "agrees with maker chart",
+        "maker_priority": "interior"
+      },
+      "R323_edge": {
+        "source": "K-1293-0279",
+        "target": "C-1311-0261",
+        "family": "F1",
+        "delta_ab": [
+          0,
+          1
+        ],
+        "supporting_windows": 4,
+        "competing_windows": 0,
+        "consensus": 1.0,
+        "alternatives": [
+          {
+            "delta_ab": [
+              0,
+              -1
+            ],
+            "window_states": [
+              [
+                7,
+                1
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                9,
+                0
+              ],
+              [
+                10,
+                0
+              ],
+              [
+                10,
+                1
+              ]
+            ]
+          }
+        ],
+        "intervening_observations": [],
+        "foreground_fraction": 1.0,
+        "separator_brightness_ratio": 0.12143583015588996,
+        "location_warning": "Bright supports are not bead centers; separator is descriptive, not an acceptance gate.",
+        "priority": "interior",
+        "status": "accepted conditional",
+        "reasons": []
+      },
+      "propagated_delta": [
+        0,
+        1
+      ],
+      "local_window_evidence": [
+        {
+          "window": 7,
+          "crop": [
+            1150,
+            205,
+            1350,
+            405
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": false,
+              "score": 21.237065883580083,
+              "delta_ab": [
+                -1,
+                1
+              ],
+              "residuals_px": [
+                1.5583821665803606,
+                1.9126201868581214
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 21.2225973271188,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                1.5166384255929466,
+                1.8929769480198761
+              ],
+              "observations": 23,
+              "triangles": 13
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 19.94430167469078,
+              "delta_ab": [
+                -1,
+                1
+              ],
+              "residuals_px": [
+                1.1056249145942019,
+                1.9551466319108683
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 19.665850251673564,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                0.6219724401155519,
+                1.422780158439945
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 18.76888110914791,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.517910620351402,
+                4.257621112507859
+              ],
+              "observations": 21,
+              "triangles": 11
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 18.437315993842795,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                2.909252737210214,
+                5.32464153330947
+              ],
+              "observations": 23,
+              "triangles": 11
+            }
+          ]
+        },
+        {
+          "window": 8,
+          "crop": [
+            1190,
+            191,
+            1390,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 17.32598893906299,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                1.1450923495047136,
+                3.215531758882705
+              ],
+              "observations": 20,
+              "triangles": 10
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.870258361597957,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                3.2682835143451796,
+                6.959795037942839
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.852506369253325,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                6.766555888156637,
+                3.674279418575063
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.544490900737323,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                3.8424530527506984,
+                6.512704008685957
+              ],
+              "observations": 21,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.525651108542363,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                4.1329875294647485,
+                6.57988695600314
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.45649233632047,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                6.0114105912848705,
+                2.048283304889362
+              ],
+              "observations": 20,
+              "triangles": 3
+            }
+          ]
+        },
+        {
+          "window": 9,
+          "crop": [
+            1230,
+            191,
+            1430,
+            391
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 16.300955207148576,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                0.5829470595018019,
+                2.814975528737962
+              ],
+              "observations": 20,
+              "triangles": 8
+            },
+            {
+              "hypothesis": 1,
+              "selected": false,
+              "score": 15.987683519910433,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                6.516322938910827,
+                4.848786261224158
+              ],
+              "observations": 21,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 15.938378087288807,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                6.713040509194213,
+                4.841963050023771
+              ],
+              "observations": 20,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 15.442977354495211,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                4.087067203744646,
+                5.982693117441046
+              ],
+              "observations": 21,
+              "triangles": 4
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 15.2958688584358,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                6.341046452353631,
+                4.282286318829879
+              ],
+              "observations": 21,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 15.18027974143756,
+              "delta_ab": [
+                0,
+                2
+              ],
+              "residuals_px": [
+                7.2191189783107435,
+                2.8248023983581785
+              ],
+              "observations": 20,
+              "triangles": 2
+            }
+          ]
+        },
+        {
+          "window": 10,
+          "crop": [
+            1270,
+            185,
+            1470,
+            385
+          ],
+          "alternatives": [
+            {
+              "hypothesis": 0,
+              "selected": true,
+              "score": 16.579032876408945,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                0.9281570008805683,
+                0.5033687612075763
+              ],
+              "observations": 19,
+              "triangles": 8
+            },
+            {
+              "hypothesis": 1,
+              "selected": true,
+              "score": 15.438901708011633,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                3.9459143027599484,
+                6.2542149476997135
+              ],
+              "observations": 18,
+              "triangles": 8
+            },
+            {
+              "hypothesis": 2,
+              "selected": false,
+              "score": 14.818092251644671,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                7.814404458407356,
+                0.6020826119812132
+              ],
+              "observations": 19,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 3,
+              "selected": false,
+              "score": 14.571715984049579,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                5.52438893794513,
+                3.001691122127206
+              ],
+              "observations": 19,
+              "triangles": 3
+            },
+            {
+              "hypothesis": 4,
+              "selected": false,
+              "score": 14.401595363155952,
+              "delta_ab": [
+                0,
+                1
+              ],
+              "residuals_px": [
+                4.523284567571587,
+                3.297124413990145
+              ],
+              "observations": 18,
+              "triangles": 5
+            },
+            {
+              "hypothesis": 5,
+              "selected": false,
+              "score": 14.268269414134991,
+              "delta_ab": [
+                -1,
+                2
+              ],
+              "residuals_px": [
+                11.723795352611853,
+                2.369803601783922
+              ],
+              "observations": 18,
+              "triangles": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bead10": {
+    "maker": 10,
+    "xy": [
+      1274.7347994825357,
+      273.79042690815004
+    ],
+    "candidates": [
+      {
+        "node": "NEW-1265-270",
+        "distance": 10.601846923903615
+      }
+    ],
+    "status": "unambiguous proximity association",
+    "node": "NEW-1265-270",
+    "distance": 10.601846923903615,
+    "association_margin": 7.975417556230408,
+    "priority": "interior"
+  },
+  "index_ranges": {
+    "A": {
+      "minimum": 0,
+      "maximum": 280,
+      "distinct_indices": 98,
+      "missing_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        30,
+        34,
+        35,
+        36,
+        37,
+        40,
+        41,
+        42,
+        43,
+        47,
+        48,
+        49,
+        50,
+        53,
+        54,
+        55,
+        56,
+        57,
+        60,
+        61,
+        62,
+        63,
+        66,
+        67,
+        68,
+        69,
+        70,
+        73,
+        74,
+        75,
+        76,
+        79,
+        80,
+        81,
+        82,
+        86,
+        87,
+        88,
+        89,
+        93,
+        94,
+        95,
+        96,
+        99,
+        100,
+        101,
+        102,
+        106,
+        107,
+        108,
+        112,
+        113,
+        114,
+        115,
+        119,
+        120,
+        121,
+        122,
+        125,
+        126,
+        127,
+        128,
+        131,
+        132,
+        133,
+        134,
+        135,
+        138,
+        139,
+        140,
+        141,
+        144,
+        145,
+        146,
+        147,
+        148,
+        151,
+        152,
+        153,
+        154,
+        157,
+        158,
+        159,
+        160,
+        161,
+        164,
+        165,
+        166,
+        167,
+        170,
+        171,
+        172,
+        173,
+        174,
+        177,
+        178,
+        179,
+        180,
+        184,
+        185,
+        186,
+        187,
+        190,
+        191,
+        192,
+        193,
+        197,
+        198,
+        199,
+        200,
+        204,
+        205,
+        206,
+        207,
+        210,
+        211,
+        212,
+        213,
+        217,
+        218,
+        219,
+        220,
+        223,
+        224,
+        225,
+        226,
+        227,
+        230,
+        231,
+        232,
+        233,
+        236,
+        237,
+        238,
+        239,
+        240,
+        243,
+        244,
+        245,
+        246,
+        250,
+        251,
+        252,
+        253,
+        256,
+        257,
+        258,
+        259,
+        262,
+        263,
+        264,
+        265,
+        266,
+        269,
+        270,
+        271,
+        272,
+        276,
+        277,
+        278,
+        279
+      ],
+      "same_index_distinct_observations": []
+    },
+    "B": {
+      "minimum": 0,
+      "maximum": 279,
+      "distinct_indices": 98,
+      "missing_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30,
+        31,
+        35,
+        36,
+        37,
+        38,
+        41,
+        42,
+        43,
+        44,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        60,
+        61,
+        62,
+        63,
+        64,
+        67,
+        68,
+        69,
+        70,
+        73,
+        74,
+        75,
+        76,
+        77,
+        80,
+        81,
+        82,
+        83,
+        87,
+        88,
+        89,
+        93,
+        94,
+        95,
+        96,
+        99,
+        100,
+        101,
+        102,
+        106,
+        107,
+        108,
+        109,
+        113,
+        114,
+        115,
+        119,
+        120,
+        121,
+        122,
+        125,
+        126,
+        127,
+        128,
+        129,
+        132,
+        133,
+        134,
+        135,
+        138,
+        139,
+        140,
+        141,
+        142,
+        145,
+        146,
+        147,
+        148,
+        151,
+        152,
+        153,
+        154,
+        155,
+        158,
+        159,
+        160,
+        161,
+        164,
+        165,
+        166,
+        167,
+        168,
+        171,
+        172,
+        173,
+        174,
+        177,
+        178,
+        179,
+        180,
+        184,
+        185,
+        186,
+        187,
+        190,
+        191,
+        192,
+        193,
+        197,
+        198,
+        199,
+        203,
+        204,
+        205,
+        206,
+        209,
+        210,
+        211,
+        212,
+        216,
+        217,
+        218,
+        219,
+        222,
+        223,
+        224,
+        225,
+        228,
+        229,
+        230,
+        231,
+        232,
+        235,
+        236,
+        237,
+        238,
+        241,
+        242,
+        243,
+        244,
+        248,
+        249,
+        250,
+        251,
+        254,
+        255,
+        256,
+        257,
+        258,
+        261,
+        262,
+        263,
+        264,
+        267,
+        268,
+        269,
+        270,
+        274,
+        275,
+        276,
+        277,
+        278
+      ],
+      "same_index_distinct_observations": []
+    }
+  },
+  "overlap_transitions": [
+    {
+      "windows": [
+        0,
+        1
+      ],
+      "common": 14,
+      "agree": 14,
+      "disagree": 0,
+      "translation": [
+        0,
+        0
+      ],
+      "score": 4.8999999999999995
+    },
+    {
+      "windows": [
+        1,
+        2
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        2,
+        -1
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        2,
+        3
+      ],
+      "common": 16,
+      "agree": 16,
+      "disagree": 0,
+      "translation": [
+        1,
+        1
+      ],
+      "score": 5.6
+    },
+    {
+      "windows": [
+        3,
+        4
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        -1,
+        0
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        4,
+        5
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        2,
+        3
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        5,
+        6
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        2,
+        1
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        6,
+        7
+      ],
+      "common": 18,
+      "agree": 18,
+      "disagree": 0,
+      "translation": [
+        -2,
+        -2
+      ],
+      "score": 6.3
+    },
+    {
+      "windows": [
+        7,
+        8
+      ],
+      "common": 18,
+      "agree": 18,
+      "disagree": 0,
+      "translation": [
+        2,
+        3
+      ],
+      "score": 6.3
+    },
+    {
+      "windows": [
+        8,
+        9
+      ],
+      "common": 16,
+      "agree": 16,
+      "disagree": 0,
+      "translation": [
+        0,
+        0
+      ],
+      "score": 5.6
+    },
+    {
+      "windows": [
+        9,
+        10
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        2,
+        1
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        10,
+        11
+      ],
+      "common": 14,
+      "agree": 14,
+      "disagree": 0,
+      "translation": [
+        0,
+        0
+      ],
+      "score": 4.8999999999999995
+    },
+    {
+      "windows": [
+        11,
+        12
+      ],
+      "common": 13,
+      "agree": 13,
+      "disagree": 0,
+      "translation": [
+        5,
+        3
+      ],
+      "score": 4.55
+    },
+    {
+      "windows": [
+        12,
+        13
+      ],
+      "common": 14,
+      "agree": 14,
+      "disagree": 0,
+      "translation": [
+        -3,
+        -1
+      ],
+      "score": 4.8999999999999995
+    },
+    {
+      "windows": [
+        13,
+        14
+      ],
+      "common": 14,
+      "agree": 14,
+      "disagree": 0,
+      "translation": [
+        6,
+        2
+      ],
+      "score": 4.8999999999999995
+    },
+    {
+      "windows": [
+        14,
+        15
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        -1,
+        0
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        15,
+        16
+      ],
+      "common": 13,
+      "agree": 13,
+      "disagree": 0,
+      "translation": [
+        1,
+        1
+      ],
+      "score": 4.55
+    },
+    {
+      "windows": [
+        16,
+        17
+      ],
+      "common": 12,
+      "agree": 10,
+      "disagree": 2,
+      "translation": [
+        1,
+        0
+      ],
+      "score": -1.5
+    },
+    {
+      "windows": [
+        17,
+        18
+      ],
+      "common": 10,
+      "agree": 6,
+      "disagree": 4,
+      "translation": [
+        1,
+        2
+      ],
+      "score": -7.9
+    },
+    {
+      "windows": [
+        18,
+        19
+      ],
+      "common": 12,
+      "agree": 12,
+      "disagree": 0,
+      "translation": [
+        0,
+        1
+      ],
+      "score": 4.199999999999999
+    },
+    {
+      "windows": [
+        19,
+        20
+      ],
+      "common": 14,
+      "agree": 14,
+      "disagree": 0,
+      "translation": [
+        -2,
+        -1
+      ],
+      "score": 4.8999999999999995
+    },
+    {
+      "windows": [
+        20,
+        21
+      ],
+      "common": 15,
+      "agree": 15,
+      "disagree": 0,
+      "translation": [
+        3,
+        1
+      ],
+      "score": 5.25
+    },
+    {
+      "windows": [
+        21,
+        22
+      ],
+      "common": 12,
+      "agree": 12,
+      "disagree": 0,
+      "translation": [
+        1,
+        2
+      ],
+      "score": 4.199999999999999
+    }
+  ],
+  "changed_local_winners": [
+    {
+      "window": 5,
+      "crop": [
+        1070,
+        223,
+        1270,
+        423
+      ],
+      "local_rank": 1,
+      "local_best_score": 19.35039259494066,
+      "selected_score": 18.99044258142908,
+      "overlap_with_local_winner": {
+        "common": 19,
+        "agree": 5,
+        "disagree": 14,
+        "translation": [
+          -1,
+          1
+        ],
+        "score": -33.25
+      },
+      "selected_observations": 19
+    },
+    {
+      "window": 7,
+      "crop": [
+        1150,
+        205,
+        1350,
+        405
+      ],
+      "local_rank": 1,
+      "local_best_score": 21.237065883580083,
+      "selected_score": 21.2225973271188,
+      "overlap_with_local_winner": {
+        "common": 23,
+        "agree": 6,
+        "disagree": 17,
+        "translation": [
+          -4,
+          0
+        ],
+        "score": -40.4
+      },
+      "selected_observations": 23
+    },
+    {
+      "window": 11,
+      "crop": [
+        1310,
+        182,
+        1510,
+        382
+      ],
+      "local_rank": 2,
+      "local_best_score": 16.589618610957416,
+      "selected_score": 16.273718981264214,
+      "overlap_with_local_winner": {
+        "common": 18,
+        "agree": 5,
+        "disagree": 13,
+        "translation": [
+          0,
+          -1
+        ],
+        "score": -30.75
+      },
+      "selected_observations": 18
+    },
+    {
+      "window": 13,
+      "crop": [
+        1390,
+        176,
+        1590,
+        376
+      ],
+      "local_rank": 1,
+      "local_best_score": 16.78394948458254,
+      "selected_score": 16.422529060756165,
+      "overlap_with_local_winner": {
+        "common": 18,
+        "agree": 4,
+        "disagree": 14,
+        "translation": [
+          -3,
+          1
+        ],
+        "score": -33.6
+      },
+      "selected_observations": 18
+    },
+    {
+      "window": 15,
+      "crop": [
+        1470,
+        176,
+        1670,
+        376
+      ],
+      "local_rank": 1,
+      "local_best_score": 14.82677399165596,
+      "selected_score": 14.755286725723783,
+      "overlap_with_local_winner": {
+        "common": 17,
+        "agree": 16,
+        "disagree": 1,
+        "translation": [
+          1,
+          0
+        ],
+        "score": 3.0999999999999996
+      },
+      "selected_observations": 17
+    },
+    {
+      "window": 17,
+      "crop": [
+        1550,
+        190,
+        1750,
+        390
+      ],
+      "local_rank": 3,
+      "local_best_score": 15.163449123107553,
+      "selected_score": 11.608483314736045,
+      "overlap_with_local_winner": {
+        "common": 15,
+        "agree": 3,
+        "disagree": 12,
+        "translation": [
+          1,
+          -2
+        ],
+        "score": -28.95
+      },
+      "selected_observations": 15
+    },
+    {
+      "window": 18,
+      "crop": [
+        1590,
+        200,
+        1790,
+        400
+      ],
+      "local_rank": 2,
+      "local_best_score": 12.927614490294136,
+      "selected_score": 12.567535478323656,
+      "overlap_with_local_winner": {
+        "common": 15,
+        "agree": 7,
+        "disagree": 8,
+        "translation": [
+          1,
+          1
+        ],
+        "score": -17.55
+      },
+      "selected_observations": 17
+    },
+    {
+      "window": 19,
+      "crop": [
+        1630,
+        217,
+        1830,
+        417
+      ],
+      "local_rank": 1,
+      "local_best_score": 13.803635705286018,
+      "selected_score": 13.695990737134911,
+      "overlap_with_local_winner": {
+        "common": 15,
+        "agree": 15,
+        "disagree": 0,
+        "translation": [
+          1,
+          1
+        ],
+        "score": 5.25
+      },
+      "selected_observations": 16
+    },
+    {
+      "window": 20,
+      "crop": [
+        1670,
+        246,
+        1870,
+        446
+      ],
+      "local_rank": 1,
+      "local_best_score": 15.457532009282547,
+      "selected_score": 15.363390451043033,
+      "overlap_with_local_winner": {
+        "common": 17,
+        "agree": 17,
+        "disagree": 0,
+        "translation": [
+          -1,
+          1
+        ],
+        "score": 5.949999999999999
+      },
+      "selected_observations": 18
+    }
+  ],
+  "suspected_row_switches": [
+    {
+      "source": "C-1559-0252",
+      "target": "C-1582-0272",
+      "xy": [
+        1570.3125,
+        262.63690476190476
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              0
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              17,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "C-1559-0252",
+      "target": "E5-1561-0289",
+      "xy": [
+        1559.7115384615386,
+        271.03113553113553
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              0
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            -2
+          ],
+          "window_states": [
+            [
+              17,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "C-1582-0235",
+      "target": "C-1582-0272",
+      "xy": [
+        1581.8718220338983,
+        254.92584745762713
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              14,
+              0
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              4
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            -2
+          ],
+          "window_states": [
+            [
+              17,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "C-1659-0261",
+      "target": "C-1669-0293",
+      "xy": [
+        1663.8045977011493,
+        276.59482758620686
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              4
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              19,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E5-1633-0278",
+      "target": "C-1669-0293",
+      "xy": [
+        1651.3216045038705,
+        285.1509500351865
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            -1,
+            0
+          ],
+          "window_states": [
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            -1,
+            -1
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "K-1721-0308",
+      "target": "C-1729-0337",
+      "xy": [
+        1726.3958333333335,
+        320.64583333333337
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            -1,
+            1
+          ],
+          "window_states": [
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            -1,
+            0
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              21,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "C-1877-0445",
+      "target": "C-1882-0479",
+      "xy": [
+        1879.996794871795,
+        461.81089743589746
+      ],
+      "reasons": [
+        "fewer than two overlapping observation-supported windows"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              22,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E5-1851-0439",
+      "target": "C-1877-0445",
+      "xy": [
+        1863.638888888889,
+        442.41666666666663
+      ],
+      "reasons": [
+        "fewer than two overlapping observation-supported windows"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            0,
+            -1
+          ],
+          "window_states": [
+            [
+              22,
+              0
+            ],
+            [
+              22,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "K-1873-0409",
+      "target": "C-1877-0445",
+      "xy": [
+        1874.943181818182,
+        427.7840909090909
+      ],
+      "reasons": [
+        "fewer than two overlapping observation-supported windows"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            -1,
+            0
+          ],
+          "window_states": [
+            [
+              22,
+              0
+            ],
+            [
+              22,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E5-1607-0290",
+      "target": "NEW-1621-315",
+      "xy": [
+        1613.3880228105927,
+        303.4641246820574
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              14,
+              0
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E5-1607-0290",
+      "target": "P5-1645-0309",
+      "xy": [
+        1625.4941927990708,
+        299.8821138211382
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            1
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E5-1633-0278",
+      "target": "P5-1645-0309",
+      "xy": [
+        1638.921768707483,
+        293.6394557823129
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "K-1845-0412",
+      "target": "E5-1851-0439",
+      "xy": [
+        1847.513888888889,
+        425.5
+      ],
+      "reasons": [
+        "fewer than two overlapping observation-supported windows"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            -1,
+            0
+          ],
+          "window_states": [
+            [
+              22,
+              0
+            ],
+            [
+              22,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "K-1873-0409",
+      "target": "E5-1851-0439",
+      "xy": [
+        1861.3320707070707,
+        425.45075757575756
+      ],
+      "reasons": [
+        "fewer than two overlapping observation-supported windows"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            -1,
+            1
+          ],
+          "window_states": [
+            [
+              22,
+              0
+            ],
+            [
+              22,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "NEW-1826-438",
+      "target": "E5-1851-0439",
+      "xy": [
+        1837.6932373914751,
+        439.5703711120973
+      ],
+      "reasons": [
+        "fewer than two overlapping observation-supported windows"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            0,
+            -1
+          ],
+          "window_states": [
+            [
+              22,
+              0
+            ],
+            [
+              22,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "K-1695-0317",
+      "target": "NEW-1706-342",
+      "xy": [
+        1700.720419233391,
+        330.00224167932987
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            0
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              20,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "source": "K-1721-0308",
+      "target": "NEW-1706-342",
+      "xy": [
+        1713.9189486451558,
+        324.06106520874164
+      ],
+      "reasons": [
+        "competing row assignment across joint hypotheses"
+      ],
+      "alternatives": [
+        {
+          "delta_ab": [
+            1,
+            -2
+          ],
+          "window_states": [
+            [
+              17,
+              3
+            ]
+          ]
+        },
+        {
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "window_states": [
+            [
+              18,
+              2
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              20,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "representative_spread_px": {
+    "median": 3.694404655471014,
+    "maximum": 13.576256424597814
+  },
+  "counts": {
+    "consistent_overlap_transitions": 20,
+    "all_overlap_transitions": 22,
+    "accepted_tracks_supported_in_multiple_windows": 48,
+    "joint_changed_local_winners": 9,
+    "joint_changed_topology": 7,
+    "unresolved_row_assignment_edges": 11,
+    "confirmed_row_switch_errors_R161": 0,
+    "accepted_edge_photographic_checks": 192,
+    "rejected_edge_photographic_checks": 17
+  },
+  "causal_statement": "R322 shared phase-contour identity and constructed cycles did not independently certify physical adjacency. R323 competing lattice states are ranked by multiple observed supports and their two-family relative coordinates across overlaps. This recovers the known failures without chart runtime input; a unique optical cause remains unestablished.",
+  "pattern": "Deferred: only the 33 associated local identities have held-out validation; 11 row-ambiguous edges remain outside that patch. No repeat scan or color-based tracker repair.",
+  "frozen_models": "Deferred: whole expanded-chain identity is not independently established. The improved local image graph is useful future correspondence evidence, not a demonstrated defect in R319/R321.",
+  "seconds": 0.020104480005102232
+}
