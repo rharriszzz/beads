@@ -1,0 +1,59 @@
+{
+  "schema": "r325-delivery-v1",
+  "created_utc": "2026-10-18T19:41:41.324418+00:00",
+  "repository": "rharriszzz/beads",
+  "branch": "photo-2-strategy-v3",
+  "scientific_commit": "72ff1c477492c4a91ce1230912944ba3efab1dea",
+  "independent_remote_verification": {
+    "command": "git ls-remote origin refs/heads/photo-2-strategy-v3",
+    "observed_sha": "72ff1c477492c4a91ce1230912944ba3efab1dea",
+    "verified_utc": "2026-10-18T19:41:14+00:00",
+    "matches": true
+  },
+  "initial_commit": "35a71570523c85e722ea5ec015ca649623b579c1",
+  "science_seal_utc": "2026-10-18T19:31:55.828703+00:00",
+  "requested_delivery_target_utc": "2026-10-18T19:50:35+00:00",
+  "review": "photo2/r325/results/index.html",
+  "report": "photo2/R325_REPORT.md",
+  "result": {
+    "observations": 937,
+    "conditional_indexed": 895,
+    "conditional_edges": 1826,
+    "unresolved_edges": 45,
+    "global_candidate_components": 1,
+    "context_contested_links": 174,
+    "conservative_model_components": 23,
+    "conservative_model_indexed": 867,
+    "conservative_model_links": 1652,
+    "certified_global_reconstruction": false,
+    "established_N": null,
+    "pattern_adopted": false,
+    "fit_run": false
+  },
+  "performance": {
+    "detector_seconds": 15.066890493006213,
+    "including_serialization_seconds": 15.564918468007818,
+    "peak_rss_mb": 1000.22265625,
+    "R324_reported_detector_seconds": 35.57
+  },
+  "verification": {
+    "independent_numeric": true,
+    "guarded_exact_replay": true,
+    "context_and_model_audit": true,
+    "exhaustive_cyclic_contracts": true,
+    "browser_desktop_narrow_offline": true,
+    "historical_R161_interior_beads": "25/25",
+    "historical_R161_interior_links": "45/45",
+    "protected_files_byte_preserved": 2500
+  },
+  "checksums": {
+    "graph.json": "fda44f0ed0450cb7d2f7d2e2db8117d1effd6dd1df79cee680daecb7592995cd",
+    "model-input.json": "bc1a7af81f39008e7725659a4725323b1b511e338a1dc2c701742ef9c806fdbb",
+    "freeze.json": "398cf6569423a3a7ad8a0ede6422b5967123f96a411f56ceaf8c069f307dfef8",
+    "verification.json": "681ed984c471d532c232a81e59ef8fa2cef323338967bcd3a90cca17ca801ce5",
+    "supplement-verification.json": "1a72d6b6216d30410a0d1915895b870f1732ef6142a3792d9d2a35c5d2c7383d",
+    "browser-check.json": "8e71d33046c3a3b20e23f38e3b0f1adbd4f862b029109c6e8d9752c0dfaf05dc",
+    "preservation.json": "0d5aff17c3209cae401da314c596d1baa598a114654e1b88bc515a8217940ab1"
+  },
+  "stop": "Review contested upper/inward/lower-bend photographic rows. No automatic R326, pattern adoption or 3D fitting. Keep user-preferred Astra/High/current session; no /new needed."
+}
