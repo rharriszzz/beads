@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r319/review.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r319/review.py", line 52, in main
+    r=read(OUT/'trials'/f'{tid:05}.json.gz');parent=read(OUT/'trials'/f'{r["meta"]["parent"]:05}.json.gz');p=np.array([z['error_px'] for z in parent['rows']]);pred=np.array(r['meta']['predicted_errors']);actual=np.array([z['error_px'] for z in r['rows']]);axes[1].scatter(p-pred,p-actual,label=f'trial{tid}'+(' accepted' if r['acceptance']['passed'] else ' rejected'),s=20)
+                                                                         ~~~~~~~~~^^^^^^^^^^
+KeyError: 'parent'

@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r319/experiment.py", line 119, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r319/experiment.py", line 88, in main
+    run=Run();run.deadline=__import__('datetime').datetime(2026,10,18,2,59,7,tzinfo=__import__('datetime').timezone.utc).timestamp()
+        ^^^^^
+  File "/home/rharris/git/beads/photo2/r319/experiment.py", line 22, in __init__
+    self.e=optics.Engine(self.epoch);self.ev=Evidence(self.epoch);self.rows=[];self.deadline=time.time()+900
+                                             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/git/beads/photo2/r319/evidence.py", line 24, in __init__
+    save(OUT/'evidence-policy.json',dict(origin=lo.tolist(),shape=list(self.shape),cores=self.cores,brackets=self.brackets,source_sha256=sha(ROOT/'photo2/r314/evidence/maps.npz'),policy='Frozen positive pigment interiors, red/yellow chromatic seams and material-to-paper uncertainty brackets only. No complete outlines or dark-valley separators. Distinct-color cores support distinct beads; same-color pairs remain unresolved. 20 pixels and 25% of each core for substantial dual ownership; core crossing uses 2px eroded interiors. Thresholds are conservative engineering diagnostics, not calibrated confidence intervals.'))
+  File "/home/rharris/git/beads/photo2/r297/common.py", line 24, in save
+    raw = (json.dumps(value, sort_keys=True, separators=(',', ':'), allow_nan=False) + '\n').encode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
