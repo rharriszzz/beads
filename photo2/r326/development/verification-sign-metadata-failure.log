@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r326/verify.py", line 117, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r326/verify.py", line 110, in main
+    actual=clean(read(FULL/name));repeat=clean(read(dest/name));assert actual==repeat,name
+                                                                       ^^^^^^^^^^^^^^
+AssertionError: graph.json

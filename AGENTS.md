@@ -1,3 +1,36 @@
+# R326 completed — iterative feedback, compatible hypotheses; no accuracy gain; STOP
+
+Read photo2/R326_REPORT.md, R326_SPECIFICATION.md and R326_REPRODUCE.md.
+Compact native-photo review: photo2/r326/results/index.html; delivery.json.
+Three refinements,187 original windows/778 changed contexts; all old candidates
+preserved.3352 hypotheses/55289 assignments;937 original supports+one provisional.
+892 indexed including provisional/1833 candidate links/3 components; no adoption.
+R3251826-link union provably lacks whole-hypothesis witness on its full1603-bank,
+even one supporting window/link. All edges individually had selected-path support;
+no actual marginal-only old links. New hard all-overlap/cycle-compatible179-window
+witness,8 abstentions; cyclic max-marginal-regret surrogate, not exact photo MAP.
+All174 historical disagreements remain ambiguous. Broader contexts:17 consistent,
+1441 ambiguous,375 contested. Strict model17links/30indexed/13components; same
+screen on R325 gives same result. No demonstrated global photographic accuracy gain.
+R16145/45 interior links,25/25 interior beads,zero wrong;65/86 and33/40 unchanged.
+All65 associated recorded links in bank and selected;21 missing endpoint associations.
+Existing indexed black308 unchanged;22-pixel faint site at290,1410 provisionally
+adds3links after colored-only changed-context fits;zero independently confirmed new.
+Context unary ablation changes no accepted edges; new candidates do change choices.
+Four old lower-gap links conditionally accepted but all context-contested; gaps
+elsewhere prevent accepted winding. Whole-hypothesis H213,201→214,201 unstable;
+8 compatible counterfactual witnesses retain different winding;no N adopted.
+Practice146: R325134/261/2components→initial135/269/2→final133/264/2; no accuracy.
+Core106.356s/1201.1MiB; extra witnesses34.736s; guarded replay108.044s exact.
+All21203 native pixels,3117 shared-assignment equations,529 overlapping pairs,
+4441 context fits/74874 assignments,8 alternative paths,desktop/narrow/offline pass.
+Diagnostic holonomy sign corrected without changing candidates/choices/edges/indices;
+failed sources/results retained losslessly. Original photo/R161/R319–R325/beads.pov
+preserved. No material reliable-index gain, so no new R321 comparison or3D fit.
+Strict pattern scan too sparse:492/500 periods untested per map; no pattern adoption.
+Science sealed20:07:49UTC Oct18; sign correction20:12:03; target20:35:31.
+STOP for scientific review; no automaticR327 or model/session switch.
+
 # R325 completed — cyclic global candidate, context disagreements; STOP
 
 Read photo2/R325_REPORT.md, R325_SPECIFICATION.md and R325_REPRODUCE.md.

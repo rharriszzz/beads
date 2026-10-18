@@ -1,0 +1,28 @@
+{
+  "candidates": 1603,
+  "constraints": 35174,
+  "accepted_links": 1826,
+  "missing_single_link_candidates": [],
+  "runs": [
+    {
+      "required_supporting_windows": 1,
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "feasible_incumbent": false,
+      "proved_infeasible": true,
+      "seconds": 0.09592888198676519,
+      "selected_states": []
+    },
+    {
+      "required_supporting_windows": 2,
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "feasible_incumbent": false,
+      "proved_infeasible": true,
+      "seconds": 0.07814298701123334,
+      "selected_states": []
+    }
+  ],
+  "seconds": 0.6418711070145946,
+  "policy": "No candidate pruning or score cutoff. Whole-window abstention allowed. Pairwise translation compatibility is necessary for full coexistence; infeasibility here suffices to disprove a whole-hypothesis witness for the complete1826-link union on the R325 bank. This is a representation result, not proof any photographed connection is wrong."
+}

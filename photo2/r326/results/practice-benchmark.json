@@ -1,0 +1,73 @@
+{
+  "R325_same_bank": {
+    "observations": 146,
+    "indexed": 134,
+    "links": 261,
+    "unresolved": 33,
+    "components": 2,
+    "cached_global_solve_seconds": 0.04258066602051258,
+    "graph_seconds": 0.20075169802294113
+  },
+  "R326_runs": [
+    {
+      "run": 0,
+      "performance": {
+        "stages": {
+          "baseline_load": 0.10831605800194666,
+          "refinement_preprocess": 1.6059889949974604,
+          "alternative_witnesses": 0.17613002200960182,
+          "refinement_iterations": 13.31890996202128,
+          "total_before_serialization": 16.157789441989735
+        },
+        "total_including_serialization": 16.428418633993715,
+        "peak_rss_mb": 818.30078125,
+        "cached_baseline": true,
+        "stop_reason": "bounded refinement iteration budget"
+      },
+      "summary": {
+        "observations": 146,
+        "provisional_observations": 0,
+        "hypotheses": 553,
+        "indexed": 133,
+        "indexed_black": 44,
+        "accepted_links": 264,
+        "unresolved_links": 29,
+        "components": 2,
+        "compatible_windows": 27,
+        "abstained_windows": 2,
+        "closure_identified": false
+      }
+    },
+    {
+      "run": 1,
+      "performance": {
+        "stages": {
+          "baseline_load": 0.08347416602191515,
+          "refinement_preprocess": 1.5372072010068223,
+          "alternative_witnesses": 0.12280009698588401,
+          "refinement_iterations": 13.40858903201297,
+          "total_before_serialization": 16.13547758801724
+        },
+        "total_including_serialization": 16.43885223302641,
+        "peak_rss_mb": 910.28515625,
+        "cached_baseline": true,
+        "stop_reason": "bounded refinement iteration budget"
+      },
+      "summary": {
+        "observations": 146,
+        "provisional_observations": 0,
+        "hypotheses": 553,
+        "indexed": 133,
+        "indexed_black": 44,
+        "accepted_links": 264,
+        "unresolved_links": 29,
+        "components": 2,
+        "compatible_windows": 27,
+        "abstained_windows": 2,
+        "closure_identified": false
+      }
+    }
+  ],
+  "scientific_outputs_exact": true,
+  "policy": "146 original observations, windows65\u201393; cached R325 native measurements and candidates. New context measurements and fits are fresh. No cold-detector speedup or independent photographic accuracy claim."
+}
