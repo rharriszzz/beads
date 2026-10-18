@@ -1,0 +1,50 @@
+{
+  "exact_scientific_parity": true,
+  "original": {
+    "stages": {
+      "decode_preprocess": 1.6385759949916974,
+      "observations": 9.268262062018039,
+      "spectral": 8.900442917016335,
+      "joint_candidates": 21.641653882019455,
+      "beam_transport": 1.5874919109919574,
+      "joint_candidate_pair_votes": 0.07847549999132752,
+      "row_switch_skip_and_photographic_checks": 13.039919953007484,
+      "graph_validation_and_coordinate_propagation": 0.012695265002548695,
+      "supported_intersections_association_indexing_and_fragments": 0.05932777200359851,
+      "graph_total": 13.191999923001276,
+      "total_before_serialization": 56.44613662798656
+    },
+    "peak_rss_mb": 1148.72265625,
+    "seconds_per_window": 0.3018509980106233,
+    "seconds_per_observation": 0.06024134111844884,
+    "image_decodes": 1,
+    "global_preprocesses": 1,
+    "spatial_index": true
+  },
+  "optimized": {
+    "stages": {
+      "decode_preprocess": 1.60045116400579,
+      "observations": 2.041507834015647,
+      "spectral": 8.436359244107734,
+      "joint_candidates": 21.241731870133663,
+      "beam_transport": 1.7768169250048231,
+      "joint_candidate_pair_votes": 0.05365812499076128,
+      "row_switch_skip_and_photographic_checks": 0.10288465200574137,
+      "graph_validation_and_coordinate_propagation": 0.012456777010811493,
+      "supported_intersections_association_indexing_and_fragments": 0.0670477090170607,
+      "graph_total": 0.26091522799106315,
+      "total_before_serialization": 35.57032906700624
+    },
+    "peak_rss_mb": 1148.33984375,
+    "seconds_per_window": 0.19021566345992644,
+    "seconds_per_observation": 0.03796193070118062,
+    "image_decodes": 1,
+    "global_preprocesses": 1,
+    "spatial_index": true
+  },
+  "changes": [
+    "cache catalog SHA once per extraction",
+    "cache float foreground once per graph inference"
+  ],
+  "remaining_bottleneck": "joint local candidate generation; no hypothesis pruned for this speedup"
+}

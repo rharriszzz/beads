@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r324/verify_physical.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r324/verify_physical.py", line 40, in main
+    assert len(r['native']['target_addresses'])==r['scope'];assert np.array_equal(np.diff(r['native']['target_addresses']),np.ones(r['scope']-1));counts['optical_cohorts_checked']+=1
+                                                 ~^^^^^^^^^
+KeyError: 'scope'

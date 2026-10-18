@@ -1,3 +1,37 @@
+# R324 completed — full photographic circuit, conditional charts and coupled diagnosis; STOP
+
+Read photo2/R324_REPORT.md, R324_SPECIFICATION.md and R324_REPRODUCE.md.
+Compact original-photo review: photo2/r324/results/index.html; delivery receipt
+results/delivery.json. Entire circuit processed:187 adaptive rotating windows,
+186 with joint hypotheses,937 supports/886 conditional indexed/763 interior/
+123 edge/51 unresolved;208 F0/218 F1 fragments,1722 links,140 unresolved links,
+25 components and19 chart breaks. No whole-loop closure or recovered N.
+R161 remains25/25 interior beads,45/45 interior links,zero wrong;33/40 and65/86
+all. No outside-reference accuracy claim.14/14 local return overlap agrees;
+861 algebraic cycles are not photographic certification. Both6/7 and reversals.
+Both requested upper bridge pairs remain ambiguous in21 additional160/240/280px
+contexts. Primary first-pair acceptance is contested; no fitting correspondence
+beyondx1510. Initial bridge-conditional51-trial epoch preserved separately.
+FrozenR319/N3000/N2800 seed-support35.7/74.8/92.3%; concrete ownership/index
+contradictions retained. No fitted model certifies photo labels. Full-circuit
+curvature/error rho+.140/-.020/+.005, no shared causal curvature conclusion.
+Strict fixed-map37+14 trials:100-address Emax20.059→20.008px;200-address
+28.558→28.543px. Small permitted surface/separator regressions reported;
+larger gains fail gates. All2800 bodies in contact/visibility/shadows.
+Counts2799/2801/2700/2900 controls; uniform spacing penetration retained.
+No reconstruction or pattern adoption. Local78 color compatibility has only
+four pairs and conflicts with prior maker nonmultiple-of13 constraint.
+Exact photo cache control56.446→35.570s; full native owner grouping13.279→8.441s,
+1722 visible-lobe predictions exact. Serial workload scenarios.65/4.30/24.71h,
+not convergence estimates; no multi-hour search or parallel-speedup claim.
+Independent937supports/21181nativepixels/1115hypotheses/18746assignments,
+1722edges/204symmetries/guarded full replay.102archived+strict trial records,
+386400support witnesses/47uniquegeometries/840originalPythonrays/739centroids.
+2311 protected files unchanged; original photo/R161/R319–R323/beads.pov preserved.
+Science sealed before16:10:06UTC cutoff; delivery deadline16:16:06UTC Oct18.
+Stop for review of contested bridge, inward bend and frozen ownership failures.
+No automaticR325. Keep preferredAstra/High/current session; no /new needed.
+
 # R318 completed — Stage 1 conditional reflection minimax; STOP
 
 22 automatic interior observations, two fixed one-to-one correspondence epochs.

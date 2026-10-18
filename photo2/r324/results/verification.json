@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "observations": 937,
+  "native_support_pixels": 21181,
+  "hypotheses": 1115,
+  "assignments": 18746,
+  "accepted_links": 1722,
+  "triangular_transform_alternatives": 204,
+  "reference_edges_independently_checked": 66,
+  "guarded_replay_seconds": 37.5933200760046,
+  "replay_directory": "/tmp/r324-guarded-pgcfabi3",
+  "seconds": 38.11633233199245,
+  "checks": [
+    "native RGB support centroids",
+    "every hypothesis and score",
+    "all accepted integer relations",
+    "all saved overlap translations and triangular symmetries",
+    "all intervening-support corridors",
+    "both index weights and reversals",
+    "42 equality without planar merge",
+    "raw R161 arithmetic",
+    "guarded exact full-circuit replay"
+  ],
+  "limitation": "Independent formulas and original kernels in this session; no independent human labels outside R161."
+}

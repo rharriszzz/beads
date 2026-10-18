@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rharris/git/beads/photo2/r324/analyze.py", line 51, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rharris/git/beads/photo2/r324/analyze.py", line 49, in main
+    save(OUT/'analysis.json',dict(coverage_exclusive=coverage,chart_breaks=breaks,guide_length_px=length,guide_max_distance_to_processed_window_px=float(guide_dist.max()),guide_min_clearance_px=float(min(guide['centerline_clearance_px'])),guide_paper_fraction=float(np.mean(np.array(guide['centerline_clearance_px'])==0)),models=models,feedback=feedback,colors=dict(Counter(n['color'] for n in ns.values())),family_fragments=dict(Counter(t['family'] for t in g['tracks'])),seam=g['transitions'][0],limitations=['Original R250 spline length re-evaluated, not an independently calibrated centerline.','Modal predicted surface index is not physical truth.','Global family choice can differ by disconnected component; no whole-circuit orientation certified.','Main beam first-bridge acceptance is contested by additional context; no fitting correspondence beyond x1510.']))
+  File "/home/rharris/git/beads/photo2/r297/common.py", line 24, in save
+    raw = (json.dumps(value, sort_keys=True, separators=(',', ':'), allow_nan=False) + '\n').encode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rharris/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant: np.float64(nan)

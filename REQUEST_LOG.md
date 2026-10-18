@@ -9208,3 +9208,28 @@ Guarded replay and independent pixel/hypothesis/graph/R161 arithmetic pass;
 original photo and all historical evidence preserved. Report/review in photo2/r323.
 Scientific work sealed15:32:40UTC; original deadline15:50:54UTC. Commit/push scoped
 verified work, then STOP for scientific review. No automaticR324.
+
+
+## R324 — Full-circuit diagonal reconstruction and coupled 3D diagnosis (2026-10-18)
+
+User authorizes30 active minutes, final6 reserved, branch photo-2-strategy-v3,
+preferred Astra High. Mandatory full-circuit overlapping joint image lattices;
+inspect R323 upper bridge early without stopping other regions; preserve family,
+reversal, skipped/hidden beads, unknown N and original pixels. Frozen R319 and
+R321 N3000/N2800 comparisons precede bounded graph-conditioned physical fitting.
+All bodies remain in contact/visibility; independent image evidence and model
+hypotheses stay separate. Profile major costs, estimate future serial runtimes,
+provide compact full-photo review, verify, commit/push and STOP. Pattern secondary.
+
+Delivered187-window entire-circuit pass,937 supports,886 conditional indices,
+1722 links,25 components/19 chart breaks; full closure/N unknown. Fixed R161
+25/25 interior,45/45 links,zero wrong preserved. Additional bridge context leaves
+both requested pairs ambiguous and contests one primary acceptance. Fit inputs
+stop atx1510; initial conditional-bridge epoch archived. All3 frozen models
+compared; strict37+14 trials yield only small100/200-address gains and no adoption.
+Exact photo cache speedup56.45→35.57s; native grouping13.28→8.44s; future budget
+scenarios.65/4.30/24.71h explicitly not convergence predictions. Pattern unsolved.
+Independent full graph/pixel/transform replay,102trial records/386400support
+witnesses/840Python camera+shadow samples checked.2311 old files unchanged.
+Report and review in photo2/r324. Scientific proposals sealed; finish verified
+scoped delivery before16:16:06UTC, then STOP for scientific review; noR325.
