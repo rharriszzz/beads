@@ -1,3 +1,13 @@
+# R318 completed — Stage 1 conditional reflection minimax; STOP
+
+22 automatic interior observations, two fixed one-to-one correspondence epochs.
+Exact Emax17.992→13.505px and16.376→11.995px, all2405 bodies retained. The map
+change itself improves17.992→16.376 at fixed geometry and is separately labeled.
+No excellent agreement, so no Stage2/3 expansion. Scientific search sealed;
+verify all trials/selected models, deliver compact photo vectors/report, commit,
+push and verify remote. Next task is scientific review of the worst reflection
+and its competing physical owner, not an automatic new search. See R318_REPORT.md.
+
 # R317 supplement — archive audit; experimental extension pending
 
 Read the appended supplement in photo2/R317_REPORT.md and its reproduction note.

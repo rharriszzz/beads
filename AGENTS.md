@@ -1,3 +1,27 @@
+# R318 completed — conditional reflection minimax; no expansion; STOP
+
+Read photo2/R318_REPORT.md, R318_SPECIFICATION.md and R318_REPRODUCE.md.
+Compact original-photo vectors/plots: photo2/r318/results/index.html.
+22 automatic interior reflections: pigment cues 7 black/11 red/4 yellow.
+Connected principal half-maximum weighted centroids, same rule observed/predicted;
+ties, 40/50/60% controls and every detected exclusion retained. No manual labels.
+Two frozen provisional one-to-one maps, all22 observations in every feasible trial.
+Epoch1 Emax17.9916→13.5051px; epoch2 16.3760→11.9952px. Six map changes alone
+produce17.9916→16.3760 at identical geometry: never count as geometric gain.
+9666 serialized evaluations plus144 separate shared finite/extended light controls.
+Identical rigid shapes, all2405 bodies in visibility/shadows/full-chain separation.
+Bestconditional11.995px=.358photoD/.372fittedD; not excellent, no100/hundreds expansion.
+Worstauto0063 conditional58; observed point currently owned52. Camera isolation
+does not repair its principal-lobe displacement; geometry/light/identity coupled.
+Epoch2 halfpixel maxshift.179px; epoch1 principal-lobe switch9.557px retained.
+No missing final predictions, no established physical chain or optical calibration.
+12contracts;4model audit/28805support witnesses/8068originalPythoncamera rays,
+sampled original shadows, alltrial cohort/max checks and desktop/narrow/offline.
+Photo and prior science preserved. Scientific search sealed01:59:25UTC Oct18;
+original delivery deadline02:08:55UTC. Receipt in r318/results/delivery.json.
+No adoption, automaticR319, pattern, mechanics campaign or beads.pov edit.
+Stop for scientific review; keep current session/model, no /new needed.
+
 # R317 radial-angle supplement — archive audit; new experiments pending
 
 Read the supplement appended to photo2/R317_REPORT.md and R317_REPRODUCE.md.

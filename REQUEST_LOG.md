@@ -9165,3 +9165,27 @@ it. Archive audit finds beta = −historical cant, twelve clean shared controls
 around three parents, no shared all-six improvement, and joint-preserved beta
 0…+3.94135 degrees. Report append distinguishes existing results from missing
 larger-angle/isolated-ledger/fixed-paper/field comparisons. No adoption or R318.
+
+R318 requested: return to brightest-reflection maximum Euclidean displacement,
+starting with15–25 automatically selected interior beads from original photo,
+all colors allowed; robust consistent connected-lobe localization; physical
+shared lighting, shape and camera; usable provisional one-to-one frozen maps,
+explicit assignment-only controls; complete-chain nonintersection and visibility;
+expand to~100 then hundreds only after convincing small-patch success. Half a
+projected diameter or greater is failure. Provide per-bead points/vectors/errors,
+diameter normalization/confidences/exclusions, compact plots and exact maximum
+summary. Thirty-minute active-work budget with at least six minutes for delivery.
+No radial/mechanics diversion; preserve history, independently verify, commit,
+push and stop. Model/session preference remains GPT-6 Astra High/current session.
+
+Outcome:22 photo-only interior candidates retained across two provisional maps.
+Epoch1 maximum17.9916→13.5051px; epoch2 16.3760→11.9952px. Six assignment changes
+alone give17.9916→16.3760 at unchanged geometry and are never credited as fit gain.
+9666 serialized settings plus144 fixed-geometry finite/extended light controls,
+all2405 bodies present, final no missing predictions. Best conditional maximum
+.358 photoD/.372 fittedD remains unconvincing; no Stage2/3 expansion. Worst
+auto0063/conditional58 is on current visible owner52; isolation does not repair
+principal-lobe error. Photo-localization, sampling, optical/model and identity
+uncertainty remain explicit. Report and delivery evidence in photo2/r318.
+Scientific search ended01:59:25UTC Oct18, before02:02:55 cutoff; original delivery
+deadline02:08:55UTC. Preserve every historical result; STOP for scientific review.

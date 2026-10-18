@@ -1,3 +1,12 @@
+R318 completed: read photo2/R318_REPORT.md and r318/results/delivery.json.
+22 automatically selected original-photo interior reflections; exact maximum
+optimized with frozen provisional maps and all2405-body contacts/visibility.
+Two maps:17.992→13.505px and16.376→11.995px; assignment-only control separated.
+9666 search records plus144 shared-light controls; no convincing Stage1 success,
+no expansion to100/hundreds, no adoption. Compact vectors/plots/CSV in results.
+Stop for review of conditional58/observed-owner52 and other active maxima.
+Keep current session/model; no /new or automaticR319. Historical work preserved.
+
 R317 supplement archive audit: appended to photo2/R317_REPORT.md. Outward beta
 is minus historical radial_cant; original model/source/results unchanged.
 Twelve existing shared controls audited, no shared all-six gain; joint-preserved
