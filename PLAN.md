@@ -1,3 +1,14 @@
+# R317 supplement — archive audit; experimental extension pending
+
+Read the appended supplement in photo2/R317_REPORT.md and its reproduction note.
+Preserve original R317 science. Audit saved shared controls and alpha/beta sign;
+report physical chord alternatives and missing measurements. Verify and deliver
+the archive audit. Do not launch new experiments after the original deadline
+without a renewed allowance. Next scientific work, if authorized: fixed-center
+shared beta controls including ±20/±30, frozen-paper and isolated/occluder checks,
+then conditionally compare small smooth/phase/curvature fields before joint search.
+No adoption, broad search or automatic R318. Stop for scientific review.
+
 # R311 completed — missed basins, partial gains; no adoption; STOP
 
 Delivery and remote verification: photo2/r311/results/delivery.json.

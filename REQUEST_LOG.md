@@ -9151,3 +9151,17 @@ photo2/r315/results/delivery.json. STOP for scientific review.
 
 
 R317 authorized: joint rigid-glass reconstruction of physical -100..99, 30-minute wall budget including delivery. Completed 1797 search settings and 14 causal reversions, preserved all six local gains but no acceptable 200-bead reconstruction. Report/review/independent verification and delivery receipt in photo2/r317; no adoption or automatic R318.
+
+R317 radial hole-axis supplement requested: define outward-positive beta separately
+from alpha; distinguish discrete outgoing/incoming chords and their symmetric
+direction from major-rope bending; run fixed-center shared 0/±5/±10/±20/±30-degree
+controls, isolated/visible occluders and −14/−15/+12/reference/+8 comparisons,
+full-chain and fixed-paper clearances, all 200-address evidence; compare smooth,
+phase and curvature fields conditionally before further joint search. Preserve
+existing science, remain within the original deadline/reserve, verify, commit,
+push and stop. The request arrived after the recorded 23:51:22 UTC deadline.
+A bounded renewal was requested; no new experiments were launched while awaiting
+it. Archive audit finds beta = −historical cant, twelve clean shared controls
+around three parents, no shared all-six improvement, and joint-preserved beta
+0…+3.94135 degrees. Report append distinguishes existing results from missing
+larger-angle/isolated-ledger/fixed-paper/field comparisons. No adoption or R318.

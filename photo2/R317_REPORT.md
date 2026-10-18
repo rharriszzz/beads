@@ -146,3 +146,183 @@ R314's connected components, peaks, faint lobes, ties and fixed peak-minimax API
 Verification replays selected centers and independently checks the cant formula, all full-chain support witnesses, original Python sampled rays, all native target-grid layered/reference owners, exact metrics/brackets and raw-photo crops. Static desktop/narrow/offline review and 45 contracts are recorded. Historical tracked science and the native photograph are preserved. Verification certifies numerical and nonintersection claims; it does not certify photographic truth.
 
 Work began **23:21:22 UTC on 2026-10-17**, with hard deadline **23:51:22 UTC**. The scientific cutoff and final commit/push/independent remote check are recorded in the delivery receipt. **Stop for scientific review. No adoption, automatic R318, whole-necklace fit, color-pattern inference or beads.pov edit.**
+
+## Supplement: outward-positive radial hole-axis angle — archive audit
+
+This supplement preserves the report above and all 1797 trial files. It was
+requested after the recorded deadline had elapsed. The following is an audit of
+existing evidence and an analytic derivation, **not completion of the requested
+larger-angle experiment**. New evaluations require a renewed time allowance;
+none were launched for this audit. The missing radial-orientation controls take
+priority over the previous proposed packing-law change or another broad search.
+
+### Alpha and beta are different rotations
+
+Let **t** be the local major-centerline unit tangent, **r** the physical outward
+minor-helix radial unit vector, and **c** the circumferential unit vector with
+the repository convention **r** × **t** = **c**. They are orthonormal. The R316
+hole axis is
+
+\[
+ a_0=\cos\alpha\,t+\sin\alpha\,c,
+ \qquad \alpha=\text{global tilt}+\text{compact tilt field}.
+\]
+
+Its transverse body vector is \(u=r\times a_0\); its third body vector is
+\(a_0\times u=r\). R316's compact tilt rotates the body around **r**, so it
+changes alpha while preserving \(a_0\cdot r=0\). For the user's outward-positive
+beta, rotate the entire body frame around **−u** by beta:
+
+\[
+ R(v)=\cos\beta\,v+\sin\beta\,((-u)\times v)
+ +(1-\cos\beta)((-u)\cdot v)(-u).
+\]
+
+This gives \(a=\cos\beta\,a_0+\sin\beta\,r\), leaves **u** unchanged, and
+changes the third body vector to \(\cos\beta\,r-\sin\beta\,a_0\). Thus
+\(a\cdot r=\sin\beta\): beta is independent of alpha. The physical placement
+vector **r** is retained separately; rotating the third body vector must not
+move the center. A global shift of alpha cannot reproduce this radial component.
+The model has an unoriented symmetry axis; the sign convention uses the
+representative axis continuously connected to the R316 axis near beta = 0.
+
+**Historical sign conversion:** the delivered implementation rotates around
+**+u**, so its `radial_cant` and `compact_cant` coefficients are inward-positive.
+Consequently
+
+\[
+ \beta(k)=-\mathrm{radial\_cant}
+          -\sum_j \mathrm{compact\_cant}_j B_j(k).
+\]
+
+Historical parameter names, files and signs have not been rewritten. Earlier
+wording that said “toward the radial direction” omitted this sign distinction.
+The delivered tests and independent verifier already explicitly check the
+negative sine for positive historical cant. Zero cant bypasses the rotation and
+is bit-identical to R316; cant-only changes preserve every center and the
+physical radial vector. [Implementation](r317/model.py),
+[existing sign/zero/cache contracts](r317/tests.py), and
+[independent verification](r317/verify.py) retain their original bytes.
+
+### Discrete threading does not prescribe the hole axis
+
+For a straight major axis, consider equal center advances **h** and minor radius
+**R**, with successive minor phases separated by delta. In the local frame at
+one bead, the forward outgoing chord and forward incoming chord are
+
+\[
+ d_+=h t+R\sin\delta\,c-R(1-\cos\delta)r,\qquad
+ d_-=h t+R\sin\delta\,c+R(1-\cos\delta)r.
+\]
+
+Both have length \(L=\sqrt{h^2+4R^2\sin^2(\delta/2)}\). Their radial angles
+are respectively \(-\arcsin[R(1-\cos\delta)/L]\) and its positive opposite.
+At 6.5 beads per minor revolution, delta = 55.38°. The radial magnitude can
+approach 27.69° as h tends to zero; nonzero h reduces it. This is a geometric
+scale for an idealized chord, **not a measured bead orientation or allowable
+packing range**. Handedness reverses the circumferential component without
+changing the opposing radial chord components.
+
+The symmetric sum \(d_++d_-=2h t+2R\sin\delta\,c\) has exactly zero radial
+component. Here the equal chord lengths also make the sum of unit directions
+radially cancel. Unequal advances or phases, actual thread exit points on the
+bores, and neighboring contacts can break that symmetry. Neither the outgoing
+chord nor the symmetric direction is assumed to be the hole axis. No threading,
+force-balance or contact-orientation law has been inferred from this derivation.
+
+These radial chord terms occur with a straight major centerline, so they are
+distinct from major-rope bending. Bending changes the local frames and chord
+geometry and can introduce phase-dependent corrections. A constant-radius
+continuous tube around a planar major curve still has no instantaneous radial
+tangent component under the inherited untwisted normal frame; finite chords
+and asymmetric thread routing are different objects. The photograph and the
+fact that the rope lies on paper do not alone select a beta. Paper supplies a
+one-sided solid-clearance condition, not a zero-beta equation.
+
+### Existing orientation-only evidence
+
+The archive contains twelve shared-cant controls: beta = ±5° and ±10° around
+each of three fixed parents (trials 3/R316, 993 and 875). The audit verifies exact
+equality of every other serialized parameter within each family. All twelve
+saved controls certify complete-chain nonintersection. The clean R316 family
+is shown below; percentages are visible single-body coverage on fixed cores,
+not full contour agreement or established bead identity.
+
+| Outward beta | Trial | First negative | Next negative (−14) | +8 | +12 | Reference | C-1559 | Next −15 separately |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| −10° | 1171 | 77.95% | 69.83% | 77.72% | 60.54% | 87.94% | 84.01% | 5.76% |
+| −5° | 1170 | 83.23% | 70.85% | 77.72% | 61.38% | 87.94% | 80.95% | 5.08% |
+| 0° | 3 | 85.09% | 71.86% | 77.72% | 63.26% | 87.94% | 78.57% | 3.05% |
+| +5° | 1169 | 86.65% | 72.20% | 77.45% | 65.14% | 87.94% | 76.87% | 2.37% |
+| +10° | 1168 | 86.02% | 70.85% | 76.39% | 67.01% | 87.94% | 75.17% | 2.37% |
+
+There is no single best shared beta across the requested evidence. +5° gives
+the best first-negative and next-negative coverage in this five-point family;
++10° gives the best +12 coverage, and −10° gives the best C-1559 coverage.
+No nonzero shared control preserves all six R316 fractions. +5° also raises
+development paper occupation 0.228→0.238% and seam conflicts 33.333→34.146%,
+while leaving development/comparison bracket p95 at 9/14.3px. +10° increases
+comparison seam conflicts 26.866→31.343% and buffer worst-core p95 12→16px.
+The reference core remains unchanged at this measurement resolution; that
+does not establish an unchanged outline. −15 remains poorly visible in these
+controls, and cannot be credited with its separate high isolated baseline
+overlap. [All geography tables](r317/results/supplement-audit/tables.md) and
+[complete archived control metrics](r317/results/supplement-audit/audit.json)
+retain all 40 core records and all three parent families.
+
+The saved shared controls contain visible-owner fractions and whole-chain
+separation results, but lack the requested per-control isolated outline rasters,
+actual occluder ledgers, tight neighbor-distance brackets and fixed-paper-plane
+clearance comparisons. Those quantities cannot be inferred from the coverage
+table. Existing selected joint-model cards are not substitutes for these
+orientation-only controls.
+
+The delivered paper diagnostic places a supporting plane at each candidate's
+own lowest support point. It establishes that a common plane can be placed
+below that model; it does **not** show clearance from one fixed baseline paper
+plane under an orientation-only intervention. A renewed controlled experiment
+must freeze the baseline plane and report any crossing before separately
+reporting the vertical shift that would restore support. Likewise, separating
+plane margins are lower bounds on glass clearance, not exact neighbor gaps.
+
+### Shared, smooth, phase-dependent and compensating explanations
+
+1. **Beta approximately zero:** remains viable. The small-angle controls do not
+   demonstrate that R316's restriction is sufficient, but do not establish a
+   common nonzero improvement across the measured neighborhood either.
+2. **Shared nonzero beta:** modest gains and opposing losses are established
+   for ±5°/±10°. Shared beta alone is not a demonstrated reconstruction repair.
+3. **Smooth position-dependent beta:** the retained joint-preserved model has
+   outward beta coefficients +1/+3/+3/0/0° at −13/0/+13/−26/+26. Over the
+   sampled physical bodies beta ranges from 0 to **+3.94135°**, with maximum
+   radial component **0.0687354**. Overlapping basis functions mean the
+   coefficients are not the actual bead angles. Its saved cant-only reversion
+   changes +12 from 69.9% to 69.1%, a modest conditional effect. It does not
+   isolate the benefit of smooth variation versus a best shared beta with all
+   other parameters fixed. The existing compact basis and combined 3°/address
+   derivative limit are numerical regularization, not measured thread mechanics.
+4. **Minor-phase or curvature dependence:** not tested as explicit hypotheses
+   in R317. A small harmonic field such as beta = b0 + bs sin(phi) + bc cos(phi)
+   would represent repeated phase dependence; a separately normalized
+   curvature term could test bending. These are hypotheses for controlled
+   comparison, not newly adopted models. A 3°/address cap combined with a
+   55.4° phase advance can itself suppress large phase-locked amplitudes; any
+   such restriction must be declared as an exploration limit, not used to
+   dismiss the hypothesis physically.
+5. **Compensation for shape/correspondence/packing:** remains unresolved.
+   The joint model also changes alpha, shared thickness, camera elevation,
+   phase and station. Its small fitted beta is not an independently identifiable
+   physical orientation. The existing local Jacobians are not an uncertainty
+   analysis, and no profile-likelihood or equivalent identifiability result
+   establishes a unique beta. Wider fixed-owner mean and boundary regressions
+   remain as reported above.
+
+**Present conclusion:** the retained joint example uses a small outward radial
+component and its isolated reversion has a modest effect. The photograph has
+not established that either a small or a substantial radial component is
+required. ±20° and ±30° were never tested; the inherited 12° exploration cap
+cannot exclude them. Preserve beta as an experimental geometric freedom, but
+do not adopt its fitted value or claim a successful 200-bead reconstruction.
+The requested larger-angle, outline/occluder, fixed-paper and controlled field
+comparisons remain pending a renewed time allowance. No further joint search
+is justified before analyzing those controls. Stop for scientific review.

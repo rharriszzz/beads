@@ -1,3 +1,11 @@
+R317 supplement archive audit: appended to photo2/R317_REPORT.md. Outward beta
+is minus historical radial_cant; original model/source/results unchanged.
+Twelve existing shared controls audited, no shared all-six gain; joint-preserved
+beta 0…+3.94135 degrees. Original deadline already elapsed when supplement arrived;
+new ±20/±30, isolated ledgers, fixed-paper and phase/curvature field experiments
+await a renewed allowance. Do not call this a completed experimental supplement.
+No adoption or automatic R318. Keep this session/model for review; no /new needed.
+
 R317 delivered: see photo2/R317_REPORT.md and photo2/r317/results/delivery.json. All six early cores improve, but fixed-owner wider mean and several boundaries regress. No adoption; STOP for review, no automatic R318.
 
 R316 delivered: see photo2/R316_REPORT.md and photo2/r316/results/delivery.json. Joint local gains, no reconstruction adoption; STOP for scientific review, no automatic R317.

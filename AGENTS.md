@@ -1,3 +1,18 @@
+# R317 radial-angle supplement — archive audit; new experiments pending
+
+Read the supplement appended to photo2/R317_REPORT.md and R317_REPRODUCE.md.
+Outward-positive beta = minus historical radial_cant/compact_cant; alpha remains
+the tangent–circumferential rotation. Twelve archived shared controls around
+three parents preserve every other parameter; no shared all-six improvement.
+Joint-preserved beta 0…+3.94135deg, radial component at most .0687354; small
+conditional gain, no identifiability or substantial-angle conclusion. Original
+12deg cap is not physical evidence. ±20/±30 controls, isolated occluder ledgers,
+fixed-paper clearance and controlled phase/curvature fields are still missing.
+Original deadline had elapsed when supplement arrived; renewal requested, no
+new experiments launched. Preserve all R317 sources/results and old receipt.
+Archive audit entry: python -m photo2.r317.supplement_audit. No adoption/R318.
+Keep current session/model for review; no /new needed.
+
 # R317 completed — joint local gains, wider regressions; no adoption; STOP
 
 Read photo2/R317_REPORT.md, R317_SPECIFICATION.md and R317_REPRODUCE.md.

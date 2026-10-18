@@ -1,0 +1,5 @@
+Initial archive audit stopped before writing output:
+  supplement_audit.py, main: assert p.get('trajectory_mix', 0.) == 0
+AssertionError
+Diagnosis: historical focused3 export has trajectory_mix=0.03947908660187228.
+It is outside the R316 alpha/beta family. Revised audit explicitly records that exclusion; no historical source or result changed.

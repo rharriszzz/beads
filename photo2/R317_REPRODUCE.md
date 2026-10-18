@@ -65,3 +65,32 @@ sealed A/B/C minimax selections. `review-selection.json` records its explicit
 constraints and tie-break. The final review has eight models and 48 early-core cards,
 plus the separate physical-index alternatives and remote/worst-region comparisons.
 Run `summary` and `report` after `attribution` to reproduce the numerical report.
+
+## Post-deadline radial-angle archive audit
+
+The supplement appended to `R317_REPORT.md` is a separate documentary audit;
+the original report generator does not reproduce it. Do not regenerate the
+delivered report in place. Reproduce the archive-only audit with:
+
+```bash
+.venv/bin/python -m photo2.r317.supplement_audit
+```
+
+This reads all 1797 sealed trials, proves that the twelve shared-cant controls
+change only `radial_cant` relative to their saved parents, reports the outward
+sign convention beta = −historical cant, and checks saved frame consistency.
+It writes only `r317/results/supplement-audit/audit.json` and `tables.md`.
+It performs no placement, ray tracing, contact search or optimization.
+The historical focused3 export has nonzero `trajectory_mix` and is explicitly
+excluded from the R316 alpha/beta frame audit; it is not modified or discarded.
+An initial overbroad zero-trajectory assertion caught this distinction before
+any output was written. The revised audit records the exclusion.
+
+The existing R317 seven-contract suite checks bit-identical zero cant, unchanged
+centers, rigid frames, the inward-positive historical sign and layered/reference
+ray agreement. The original verification receipt remains the historical record;
+do not overwrite it by rerunning the full historical verifier after supplement
+edits, because its original preservation policy predates this report append.
+The supplement delivery receipt separately records its limited verification.
+The original deadline has not been silently extended. Larger-angle and new
+field experiments require a renewed allowance and separately preserved outputs.
