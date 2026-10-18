@@ -19,7 +19,12 @@
   "new_scientific_trials": 0,
   "no_automatic_R318": true,
   "original_deadline_utc": "2026-10-17T23:51:22Z",
+  "receipt_note": "This receipt follows the audit commit. Final receipt HEAD will be checked remotely after push; no self-referential hash is embedded.",
   "recorded_utc": "2026-10-18T00:08:34.912735+00:00",
+  "remote_ref": "refs/heads/photo-2-strategy-v3",
+  "remote_verification": "Separate git ls-remote exactly matched local HEAD after push.",
+  "remote_verified_commit": "18e9b1f0410d3a2d435f31701f35a4d2136db98b",
+  "scientific_audit_commit": "18e9b1f0410d3a2d435f31701f35a4d2136db98b",
   "scope": "Existing evidence and analytic interpretation only; requested experimental supplement remains incomplete.",
   "sealed_trial_count": 1797,
   "shared_controls": 12,
@@ -30,6 +35,7 @@
     "photo2/r317/results/supplement-audit/tables.md": "46bc36cf4364e265c975f5cdffa71e41e53469654260e815cbe31cd759f8766c",
     "photo2/r317/supplement_audit.py": "ceddde56e5b9e66006980cebd6ca8e697d94995d101ea7bdcb780a73bfda79c3"
   },
-  "status": "archive_audit_verified_pending_push",
+  "status": "archive_audit_pushed_and_independently_remote_verified",
+  "verified_utc": "2026-10-18T00:09:15.666579+00:00",
   "whitespace_check_passed": true
 }
