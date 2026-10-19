@@ -9537,3 +9537,53 @@ Independent216template scores/404period fits/541320partition pairs/19appearance
 controls and native provenance pass. Fresh replay checks equality with timings/RSS.
 All old R332 graph/photo/evidence retained; failures and nonselected approaches
 preserved. Stop for review, no automaticR334 or model/session switch.
+
+
+## R334 — Maker review, black-first intensity classification and renewed pattern search (2026-10-19)
+
+User authorizes R334 from R333 acd51b0 on photo-2-strategy-v3. Local feature
+numbers belong to the named photograph's own color/adjacency diagram and key.
+Direct red->black corrections: E5-1616-2970,NEW-1706-342,NEW-2207-1350.
+MAT25-K-2237-2196 comparison25 is NEW-2237-2128; duplicate mention counts once.
+K-1904-2820 comparison36/7/33 are NEW-1942-2725/C-1893-2771/NEW-1828-2833.
+Both appearances have identical keys. R332-R-0025-0023 instead sits over a yellow
+body and must move to the neighboring black body; preserve the separate yellow,
+old coordinate/provenance, duplicate/occupancy/link checks and raw history.
+
+Implement highlight-excluding body classification across the entire inventory,
+all R330/R331/R333 hypotheses, R332 additions and65provisional black groups.
+Do not classify pigment from highlight hue. Follow-up explicitly directs:
+“The classifier first needs to check if the bead is black, by checking if the
+area just outside the reflection is very dark (do not use hue at all). Then if
+the bead is not black it should resume the normal calculation.”
+This supersedes the earlier RGB-body black classifier within R334; preserve
+superseded experiments. Black-first must be independent of motif color; normal
+red/yellow follows only a not-black decision; insufficient material abstains.
+Show actual used/excluded pixels, local lighting and geographically separated
+controls without claiming independent accuracy on exposed design examples.
+
+Rerun spirals on the identical geometry/cohort with color-only then separate
+location association; test maker-compatible200–399/non13 periods, A/B/saved maps,
+coherent row alternatives and exact closure. Keep extra auto corrections provisional,
+retain unknown motif slots, no arbitrary individual index changes. Deliver compact
+before/after photo/lattice/pixel review with exact stable-ID keys, independent
+numerics, reproducible code/results, logs/handoff, scoped commit/push/verify, stop.
+
+Outcome: seven fixed-color maker corrections plus relocation to native material
+(2076,845),14.89px fromold(2069.407,831.655);171native pixels, three preserved links.
+Separate yellow C-2058-0820 remains yellow/unindexed.1041AB/2285edges/H214,201 exact;
+indexed371R/316Y/354B.1600support scan/65provisionalblack;605black/647notblack/348unknown
+firststage,446total abstentions. Hue-free annulus/local-reference tests precede RGB;
+6/8exposed maker cases automatically black,2abstain, all8maker labels authoritative.
+105strict additional red->black hypotheses(46recorded/38provisional/21othernative)
+remain provisional.343held-geographic controls retain uncertainty; no fresh accuracy.
+19->15->14relearned breaks;5ordinary plus1association original breaks resolved.
+Repeated support17/201->22/255, no longer original selected regular traces.
+A208hier.8327/170known38unknown;non13actual pattern still unidentified.18compatible
+saved-map divisor fits negative.16whole-stripe207 transforms predictwell but break
+85–113equations/create34–48duplicates;rejected.54indexed automatic labels harm
+987unchanged-target predictions by.0121nats;not adopted. Native viewer includes
+8exact before/after cases,14pixel panels,22literal crops,all1600IDs and stage controls.
+Independent4800annular/399lighting/1624period checks, R161regressions/history preserved.
+Fresh main pipeline exact~104s/2.71GiB, supplemental feedback verified. Stop for
+review, no automatic R335 or model/session switch. Delivery receipt records push.

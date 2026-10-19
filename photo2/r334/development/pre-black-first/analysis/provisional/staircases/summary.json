@@ -1,0 +1,45 @@
+{
+  "selected_models": [
+    {
+      "palette": "BR",
+      "cone": 0,
+      "runs": [
+        3,
+        3
+      ],
+      "score": 1.1104707012487993,
+      "maximum": 16,
+      "starts_at_least8": 187,
+      "starts_at_least12": 57
+    },
+    {
+      "palette": "BY",
+      "cone": 0,
+      "runs": [
+        2,
+        2
+      ],
+      "score": 0.8097982708933718,
+      "maximum": 15,
+      "starts_at_least8": 139,
+      "starts_at_least12": 41
+    }
+  ],
+  "greedy_runlength_histogram": {
+    "4": 23,
+    "3": 89,
+    "2": 60,
+    "1": 17,
+    "5": 3
+  },
+  "coverage": {
+    "repeated_supported_segments": 26,
+    "repeated_supported_observations": 282,
+    "indexed": 1041,
+    "fraction": 0.27089337175792505,
+    "all_regular_traces": 60,
+    "all_regular_observations": 598
+  },
+  "seconds": 3.630256494972855,
+  "policy": "Regular staircase family learned exhaustively. Measured paths are descriptive; only repeat-supported subset has >=2 distant color/edge counterparts. No inferred links or colors accepted."
+}

@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "fresh_output": "/tmp/r334-replay-01",
+  "stages": [
+    {
+      "stage": "corrections",
+      "wall_seconds": 2.4743117530015297,
+      "process_seconds": 2.47,
+      "peak_rss_MiB": 1126.79296875,
+      "parsed_scientific_equality": [
+        "corrections/ledger.json"
+      ]
+    },
+    {
+      "stage": "classify",
+      "wall_seconds": 42.44756288797362,
+      "process_seconds": 26.07,
+      "peak_rss_MiB": 2774.84765625,
+      "parsed_scientific_equality": [
+        "classification/summary.json",
+        "classification/audit.json.gz"
+      ]
+    },
+    {
+      "stage": "export",
+      "wall_seconds": 6.29538088402478,
+      "process_seconds": 6.08,
+      "peak_rss_MiB": 1695.05078125,
+      "parsed_scientific_equality": [
+        "overlay/graph.json.gz",
+        "overlay/ranked-suspects.json.gz",
+        "overlay/summary.json"
+      ]
+    },
+    {
+      "stage": "analyze",
+      "wall_seconds": 52.26935040199896,
+      "process_seconds": 50.93,
+      "peak_rss_MiB": 1775.58203125,
+      "parsed_scientific_equality": [
+        "analysis/analysis.json.gz",
+        "analysis/summary.json",
+        "analysis/provisional/spirals/summary.json",
+        "analysis/provisional/spirals/spirals.json.gz",
+        "analysis/provisional/staircases/summary.json",
+        "analysis/provisional/staircases/staircases.json.gz",
+        "analysis/relocated/spirals/summary.json",
+        "analysis/relocated/spirals/spirals.json.gz",
+        "analysis/relocated/staircases/summary.json",
+        "analysis/relocated/staircases/staircases.json.gz",
+        "analysis/raw/spirals/summary.json",
+        "analysis/raw/spirals/spirals.json.gz",
+        "analysis/raw/staircases/summary.json",
+        "analysis/raw/staircases/staircases.json.gz",
+        "analysis/color/spirals/summary.json",
+        "analysis/color/spirals/spirals.json.gz",
+        "analysis/color/staircases/summary.json",
+        "analysis/color/staircases/staircases.json.gz"
+      ]
+    }
+  ],
+  "total_wall_seconds": 103.49247499299236,
+  "policy": "All scientific data compare exactly, excluding measured time fields only. No model, detector or physical renderer."
+}

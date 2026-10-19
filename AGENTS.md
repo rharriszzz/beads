@@ -1,3 +1,47 @@
+# R334 completed — maker overlay and intensity-first black test; STOP
+
+Read photo2/R334_REPORT.md, R334_SPECIFICATION.md and R334_REPRODUCE.md.
+Review photo2/r334/review/index.html: exact R333 before panels and local keys,
+authoritative maker after layers, separate moved black/yellow bodies, body pixels,
+excluded reflections and annular intensity samples, synchronized native/lattice.
+Start acd51b0. Seven ordinary red->black maker corrections keep XY/AB:
+E5-1616-2970,NEW-1706-342,NEW-2207-1350,NEW-2237-2128(MAT25-K-2237-2196 feature25,
+count once),NEW-1942-2725/C-1893-2771/NEW-1828-2833(K-1904-2820 features36/7/33).
+K named comparison occurs twice with identical keys;11exact panel references.
+R332-R-0025-0023 is wrong-body location, not ordinary recoloring: old2069.407,
+831.655yellow -> actual black material2076,845;171native pixels,14.89px movement.
+Yellow C-2058-0820 remains separate, yellow/unindexed; no fabricated lattice site.
+All1041AB/2285links/H214,201 exact; three moved native corridors pass. Inventory
+1064;indexed371red/316yellow/354black. HistoricalR330-R333/photo remain untouched.
+Maker follow-up governs classifier: FIRST hue-free intensity immediately outside
+reflection, same geometry for all colors. Bright colored/white lobes and shoulders
+excluded. Black on>=2radii9/12/15/no clear-negative scale; strict all-channel/gray
+and local-reference darkness,25pixels/4sectors. Unknown ABSTAINS. Only not-black
+runs normal red/yellow. No hue/chromatic paper mask enters black or its lighting.
+1600support scan=1064records+263provisional+273othernative;65provisionalblack scanned.
+605black/647notblack/348unknown first decisions;446total abstentions. Maker8:
+6intensity detections/2abstentions; all8 authoritative regardless classifier.
+105strict red->black hypotheses across46recorded/38provisional/21othernative;
+all extra corrections PROVISIONAL. C-1284-0332 still authoritative red(unconfirmed).
+Eight body+graph+old-spatial priorities;343held-geographic historical controls.
+No new blind accuracy. Raw33reference controls23agree/2disagree/8abstain;unadopted.
+Matched raw/color-only/relocated:19->15->14breaks;5then6original19resolved,one new
+REC266-P076585 flag. Regular59traces/592nodes unchanged, no selected trace longer;
+repeat-supported17/201->20/231->22/255. BR3/3,BY2/2 remain. Spatial698->703/748.
+A208hier .8073->.8327; guarded .7279; motif166/42->170known/38unknown. A306/B305
+.126,44known;B207/B299 negative. All18 maker-compatible saved-map divisors negative.
+No shortest repeat recovered. Whole-stripe207 gain .533-.563 fails85-113 measured
+boundary equations and34-48 duplicate sites;16cuts rejected, no reindexing.
+Automatic54indexed-black experiment worsens987unchanged-target prediction .0121nats;
+extra auto labels not adopted. 40saved map scans/176G fits/other-family diagnostics.
+Independent4800annular tests/399hue-free lighting masks/1624period fits/419paths,
+4496path-link incidences/22literal crops/346sealed oldinputs. R16133/40,65/86,
+25/25interior,45/45interior,0wrong;extended36/40/74links exact. Fresh replay exact,
+mainpipeline~104s/2.71GiBpeak;controls verified separately. Browser offline/narrow.
+Earlier classifier/source/failure epochs preserved. Receipt r334/delivery.json.
+Stop for review; no automaticR335, other correction/count/winding/pattern adoption,
+model/session switch or /new.
+
 # R333 completed — repeated staircase spirals and interruption atlas; STOP
 
 Read photo2/R333_REPORT.md, R333_SPECIFICATION.md and R333_REPRODUCE.md.

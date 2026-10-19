@@ -7,6 +7,21 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pigment-classification instruction — R334
+
+The maker's governing sequence is **black first**: inspect the visible area just
+outside the reflection for very dark material using intensity only, with no hue
+input. If not black, resume normal red/yellow pigment calculation. A colored
+reflection is not pigment truth. Exclude bright lobes/shoulders, use common bead
+geometry and neighboring lighting evidence, and abstain when the first test or
+visible body support is insufficient. Unknown black status is not not-black.
+
+R334 accepts seven maker-reviewed red-to-black color corrections at unchanged
+locations and one separate wrong-body relocation. The yellow and black bodies at
+R332-R-0025-0023 remain distinct; yellow C-2058-0820 is preserved unindexed. All
+additional automatic corrections remain provisional. See the exact mappings and
+native evidence in [R334](photo2/R334_REPORT.md); old raw labels/results stay intact.
+
 ## Current maker pattern information — R333
 
 The maker explicitly confirms spirals involving black and red beads, and spirals
