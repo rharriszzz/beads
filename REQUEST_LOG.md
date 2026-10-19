@@ -9277,3 +9277,26 @@ independent verification and desktop/narrow/offline browser pass. Science sealed
 R329 delivery: scientific commit 1a44df2c49a2021817afef6b39c296f54310bad2 pushed to origin/photo-2-strategy-v3
 and remote tip verified. Delivery receipt: photo2/r329/results/delivery.json.
 Completed within the40-minute bound; stop for scientific review.
+
+## R329 explanatory guide — 2026-10-19
+
+User requests a GitHub-readable illustrated lesson with enough labeled observed
+features to teach both primitive directions, the derived direction, and the
+inward disputed edge. Every major diagnostic must include local directional
+context, exact observation labels, plain-language explanations and unchanged
+scientific results. Create/expand ILLUSTRATED_GUIDE.md and link the new material.
+This is explanatory work only, not R330 or renewed inference.
+
+R329 explanatory-guide outcome: added `photo2/r329/ILLUSTRATED_GUIDE.md` and
+`photo2/r329/guide/READING_THE_PHOTOGRAPH.md`. Fourteen annotated PNGs teach the
+primitive rows, derived direction, disputed inward edge and all four requested
+major diagnostics. Five exact raw crops remain available separately. Full visible
+IDs, fixed paired labels, explicit index conventions and model-address distinctions
+are included. The model overlay distinguishes incomplete archived raster samples
+from the separate exact-support ownership test. No inference or model fitting ran.
+Independent audit passed: 98 label occurrences, 79 actual selected links, both
+three-feature primitive sequences in every diagnostic, 41 Markdown links, all
+292 protected pre-existing R328/R329/photo/beads.pov files unchanged. Reading-size
+figures were visually inspected; an offline Markdown preview adapter passed desktop,
+narrow-width and offline checks. This is not a live GitHub renderer test. Stop for
+human review of the explanatory page; no R330 or scientific adoption.

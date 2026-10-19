@@ -5338,3 +5338,20 @@ exclusions; no optical fit.26 contracts, complete exported contact/state verific
 70 independent grazing roots, raw/static/browser review recorded. Read delivery.json
 for scientific commit, independent remote check and elapsed wall time. No R316,
 Phase3, color pattern or beads.pov edit. Stop for scientific review in this session.
+
+# R329 explanatory guide — 2026-10-19; STOP for human review
+
+Start at `photo2/r329/ILLUSTRATED_GUIDE.md` and its linked Markdown lesson.
+14 annotated PNGs, 5 exact original crops; two primitive directions shown as
+three-or-more-observation sequences in every diagnostic. Inward teaching uses
+C-1721-1566, four cyan observations, five green observations and eight-feature
+combined map. K-to-C arrow is +[0,1] working versus +[1,0] alternative; no reversed
+sign hidden. Derived [1,-1] is explicitly not a third primitive. Early/lower paired
+panels retain identical label numbers and photo positions. Frozen model overlay
+separates incomplete raster samples, model centers and exact-support ownership.
+Guide verification:98 labels/79 selected edges/41 links/292 protected files unchanged.
+Offline Markdown preview passes desktop/narrow/offline; PNGs visually reviewed at
+880px reading width. Scientific report, source photo, saved reconstruction/model
+results and previous HTML untouched. Scripts/receipts in photo2/r329/guide.
+Next task is user review of the new illustrated explanation, not R330. Keep current
+session and user-preferred model/reasoning; no /new needed or automatic model switch.

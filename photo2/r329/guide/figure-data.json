@@ -1,0 +1,1793 @@
+[
+  {
+    "figure": "a-primitive-10.png",
+    "title": "A. Follow the cyan row: [1,0]",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1721-1566",
+        "xy": [
+          1721.076923076923,
+          1566.076923076923
+        ],
+        "relative_index": 1739
+      },
+      {
+        "number": 2,
+        "id": "MAT25-K-1719-1592",
+        "xy": [
+          1720.625,
+          1593.0
+        ],
+        "relative_index": 1733
+      },
+      {
+        "number": 3,
+        "id": "C-1717-1540",
+        "xy": [
+          1716.1836734693877,
+          1540.2857142857142
+        ],
+        "relative_index": 1745
+      },
+      {
+        "number": 4,
+        "id": "C-1705-1514",
+        "xy": [
+          1701.4166666666667,
+          1516.1666666666667
+        ],
+        "relative_index": 1751
+      }
+    ],
+    "edges": [
+      {
+        "source": "MAT25-K-1719-1592",
+        "target": "C-1721-1566",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "C-1717-1540",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1717-1540",
+        "target": "C-1705-1514",
+        "delta": [
+          1,
+          0
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "8170fd52bba6fa0bb6061ccc6d9048e4a622355af6eaaf42e35bfe4bab45f32c"
+  },
+  {
+    "figure": "b-primitive-01.png",
+    "title": "B. Follow the green row: [0,1]",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1721-1566",
+        "xy": [
+          1721.076923076923,
+          1566.076923076923
+        ],
+        "relative_index": 1739
+      },
+      {
+        "number": 2,
+        "id": "C-1770-1577",
+        "xy": [
+          1769.1818181818182,
+          1577.5454545454545
+        ],
+        "relative_index": 1725
+      },
+      {
+        "number": 3,
+        "id": "K-1740-1575",
+        "xy": [
+          1740.0,
+          1575.25
+        ],
+        "relative_index": 1732
+      },
+      {
+        "number": 4,
+        "id": "E5-1694-1563",
+        "xy": [
+          1694.078947368421,
+          1562.5526315789473
+        ],
+        "relative_index": 1746
+      },
+      {
+        "number": 5,
+        "id": "C-1669-1561",
+        "xy": [
+          1668.509090909091,
+          1561.0545454545454
+        ],
+        "relative_index": 1753
+      }
+    ],
+    "edges": [
+      {
+        "source": "C-1770-1577",
+        "target": "K-1740-1575",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1740-1575",
+        "target": "C-1721-1566",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "E5-1694-1563",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "C-1669-1561",
+        "delta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "8170fd52bba6fa0bb6061ccc6d9048e4a622355af6eaaf42e35bfe4bab45f32c"
+  },
+  {
+    "figure": "c-both-primitives.png",
+    "title": "C. Two directions through one observed feature",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1721-1566",
+        "xy": [
+          1721.076923076923,
+          1566.076923076923
+        ],
+        "relative_index": 1739
+      },
+      {
+        "number": 2,
+        "id": "MAT25-K-1719-1592",
+        "xy": [
+          1720.625,
+          1593.0
+        ],
+        "relative_index": 1733
+      },
+      {
+        "number": 3,
+        "id": "C-1717-1540",
+        "xy": [
+          1716.1836734693877,
+          1540.2857142857142
+        ],
+        "relative_index": 1745
+      },
+      {
+        "number": 4,
+        "id": "C-1705-1514",
+        "xy": [
+          1701.4166666666667,
+          1516.1666666666667
+        ],
+        "relative_index": 1751
+      },
+      {
+        "number": 5,
+        "id": "C-1770-1577",
+        "xy": [
+          1769.1818181818182,
+          1577.5454545454545
+        ],
+        "relative_index": 1725
+      },
+      {
+        "number": 6,
+        "id": "K-1740-1575",
+        "xy": [
+          1740.0,
+          1575.25
+        ],
+        "relative_index": 1732
+      },
+      {
+        "number": 7,
+        "id": "E5-1694-1563",
+        "xy": [
+          1694.078947368421,
+          1562.5526315789473
+        ],
+        "relative_index": 1746
+      },
+      {
+        "number": 8,
+        "id": "C-1669-1561",
+        "xy": [
+          1668.509090909091,
+          1561.0545454545454
+        ],
+        "relative_index": 1753
+      }
+    ],
+    "edges": [
+      {
+        "source": "MAT25-K-1719-1592",
+        "target": "C-1721-1566",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "C-1717-1540",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1717-1540",
+        "target": "C-1705-1514",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1770-1577",
+        "target": "K-1740-1575",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1740-1575",
+        "target": "C-1721-1566",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "E5-1694-1563",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "C-1669-1561",
+        "delta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "8170fd52bba6fa0bb6061ccc6d9048e4a622355af6eaaf42e35bfe4bab45f32c"
+  },
+  {
+    "figure": "d-derived.png",
+    "title": "D. Orange combines the two primitive steps",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1721-1566",
+        "xy": [
+          1721.076923076923,
+          1566.076923076923
+        ],
+        "relative_index": 1739
+      },
+      {
+        "number": 2,
+        "id": "MAT25-K-1719-1592",
+        "xy": [
+          1720.625,
+          1593.0
+        ],
+        "relative_index": 1733
+      },
+      {
+        "number": 3,
+        "id": "C-1717-1540",
+        "xy": [
+          1716.1836734693877,
+          1540.2857142857142
+        ],
+        "relative_index": 1745
+      },
+      {
+        "number": 4,
+        "id": "K-1740-1575",
+        "xy": [
+          1740.0,
+          1575.25
+        ],
+        "relative_index": 1732
+      },
+      {
+        "number": 5,
+        "id": "E5-1694-1563",
+        "xy": [
+          1694.078947368421,
+          1562.5526315789473
+        ],
+        "relative_index": 1746
+      },
+      {
+        "number": 6,
+        "id": "C-1669-1561",
+        "xy": [
+          1668.509090909091,
+          1561.0545454545454
+        ],
+        "relative_index": 1753
+      },
+      {
+        "number": 7,
+        "id": "K-1683-1538",
+        "xy": [
+          1684.1666666666667,
+          1537.6666666666667
+        ],
+        "relative_index": 1752
+      },
+      {
+        "number": 8,
+        "id": "C-1705-1514",
+        "xy": [
+          1701.4166666666667,
+          1516.1666666666667
+        ],
+        "relative_index": 1751
+      }
+    ],
+    "edges": [
+      {
+        "source": "MAT25-K-1719-1592",
+        "target": "C-1721-1566",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "C-1717-1540",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "K-1740-1575",
+        "target": "C-1721-1566",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "E5-1694-1563",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "C-1669-1561",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "K-1683-1538",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1669-1561",
+        "target": "K-1683-1538",
+        "delta": [
+          1,
+          -1
+        ]
+      },
+      {
+        "source": "K-1683-1538",
+        "target": "C-1705-1514",
+        "delta": [
+          1,
+          -1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "8170fd52bba6fa0bb6061ccc6d9048e4a622355af6eaaf42e35bfe4bab45f32c"
+  },
+  {
+    "figure": "e-working.png",
+    "title": "E1. Working interpretation: K \u2192 C is [0,1]",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1721-1566",
+        "xy": [
+          1721.076923076923,
+          1566.076923076923
+        ],
+        "relative_index": 1739
+      },
+      {
+        "number": 2,
+        "id": "MAT25-K-1719-1592",
+        "xy": [
+          1720.625,
+          1593.0
+        ],
+        "relative_index": 1733
+      },
+      {
+        "number": 3,
+        "id": "C-1717-1540",
+        "xy": [
+          1716.1836734693877,
+          1540.2857142857142
+        ],
+        "relative_index": 1745
+      },
+      {
+        "number": 4,
+        "id": "C-1705-1514",
+        "xy": [
+          1701.4166666666667,
+          1516.1666666666667
+        ],
+        "relative_index": 1751
+      },
+      {
+        "number": 5,
+        "id": "C-1770-1577",
+        "xy": [
+          1769.1818181818182,
+          1577.5454545454545
+        ],
+        "relative_index": 1725
+      },
+      {
+        "number": 6,
+        "id": "K-1740-1575",
+        "xy": [
+          1740.0,
+          1575.25
+        ],
+        "relative_index": 1732
+      },
+      {
+        "number": 7,
+        "id": "E5-1694-1563",
+        "xy": [
+          1694.078947368421,
+          1562.5526315789473
+        ],
+        "relative_index": 1746
+      },
+      {
+        "number": 8,
+        "id": "C-1669-1561",
+        "xy": [
+          1668.509090909091,
+          1561.0545454545454
+        ],
+        "relative_index": 1753
+      }
+    ],
+    "edges": [
+      {
+        "source": "MAT25-K-1719-1592",
+        "target": "C-1721-1566",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "C-1717-1540",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1717-1540",
+        "target": "C-1705-1514",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1770-1577",
+        "target": "K-1740-1575",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1740-1575",
+        "target": "C-1721-1566",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "E5-1694-1563",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "C-1669-1561",
+        "delta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "8170fd52bba6fa0bb6061ccc6d9048e4a622355af6eaaf42e35bfe4bab45f32c"
+  },
+  {
+    "figure": "e-alternative.png",
+    "title": "E2. Alternative interpretation: K \u2192 C is [1,0]",
+    "state": "closest",
+    "family": "B",
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1721-1566",
+        "xy": [
+          1721.076923076923,
+          1566.076923076923
+        ],
+        "relative_index": 1738
+      },
+      {
+        "number": 2,
+        "id": "MAT25-K-1719-1592",
+        "xy": [
+          1720.625,
+          1593.0
+        ],
+        "relative_index": 1733
+      },
+      {
+        "number": 3,
+        "id": "K-1740-1575",
+        "xy": [
+          1740.0,
+          1575.25
+        ],
+        "relative_index": 1732
+      },
+      {
+        "number": 4,
+        "id": "C-1717-1540",
+        "xy": [
+          1716.1836734693877,
+          1540.2857142857142
+        ],
+        "relative_index": 1744
+      },
+      {
+        "number": 5,
+        "id": "C-1705-1514",
+        "xy": [
+          1701.4166666666667,
+          1516.1666666666667
+        ],
+        "relative_index": 1750
+      },
+      {
+        "number": 6,
+        "id": "E5-1694-1563",
+        "xy": [
+          1694.078947368421,
+          1562.5526315789473
+        ],
+        "relative_index": 1745
+      },
+      {
+        "number": 7,
+        "id": "C-1669-1561",
+        "xy": [
+          1668.509090909091,
+          1561.0545454545454
+        ],
+        "relative_index": 1752
+      },
+      {
+        "number": 8,
+        "id": "C-1770-1577",
+        "xy": [
+          1769.1818181818182,
+          1577.5454545454545
+        ],
+        "relative_index": 1725
+      }
+    ],
+    "edges": [
+      {
+        "source": "K-1740-1575",
+        "target": "C-1721-1566",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "C-1717-1540",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1717-1540",
+        "target": "C-1705-1514",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1721-1566",
+        "target": "E5-1694-1563",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "E5-1694-1563",
+        "target": "C-1669-1561",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1770-1577",
+        "target": "K-1740-1575",
+        "delta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "8170fd52bba6fa0bb6061ccc6d9048e4a622355af6eaaf42e35bfe4bab45f32c"
+  },
+  {
+    "figure": "e-disputed-pair.png",
+    "sources": [
+      "e-working.png",
+      "e-alternative.png"
+    ],
+    "label_ids": [
+      "C-1721-1566",
+      "K-1740-1575",
+      "MAT25-K-1719-1592",
+      "C-1717-1540",
+      "C-1705-1514",
+      "E5-1694-1563",
+      "C-1669-1561",
+      "C-1770-1577"
+    ],
+    "crop_xyxy": [
+      1638,
+      1484,
+      1800,
+      1624
+    ]
+  },
+  {
+    "figure": "f-reference.png",
+    "title": "F1. The shared photographic zero",
+    "state": "working",
+    "family": "A",
+    "crop_xyxy": [
+      1200,
+      242,
+      1360,
+      355
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "C-1302-0316",
+        "xy": [
+          1301.8536585365853,
+          315.5853658536585
+        ],
+        "relative_index": 0
+      },
+      {
+        "number": 2,
+        "id": "C-1251-0290",
+        "xy": [
+          1251.0277777777778,
+          290.6111111111111
+        ],
+        "relative_index": -14
+      },
+      {
+        "number": 3,
+        "id": "C-1277-0302",
+        "xy": [
+          1276.9411764705883,
+          301.7843137254902
+        ],
+        "relative_index": -7
+      },
+      {
+        "number": 4,
+        "id": "C-1324-0332",
+        "xy": [
+          1323.9024390243903,
+          331.3170731707317
+        ],
+        "relative_index": 7
+      },
+      {
+        "number": 5,
+        "id": "C-1284-0332",
+        "xy": [
+          1284.25,
+          331.0
+        ],
+        "relative_index": -6
+      },
+      {
+        "number": 6,
+        "id": "K-1319-0295",
+        "xy": [
+          1319.3333333333333,
+          295.6666666666667
+        ],
+        "relative_index": 6
+      },
+      {
+        "number": 7,
+        "id": "C-1339-0277",
+        "xy": [
+          1338.9,
+          277.7
+        ],
+        "relative_index": 12
+      }
+    ],
+    "edges": [
+      {
+        "source": "C-1251-0290",
+        "target": "C-1277-0302",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1277-0302",
+        "target": "C-1302-0316",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1302-0316",
+        "target": "C-1324-0332",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1284-0332",
+        "target": "C-1302-0316",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1302-0316",
+        "target": "K-1319-0295",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1319-0295",
+        "target": "C-1339-0277",
+        "delta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "17a3bcae1e198e3b4955971f5a990d16191a689ce1f9c10b57a89368a60a75e8"
+  },
+  {
+    "figure": "f-local-frame.png",
+    "title": "F2. Last agreement 26; first mismatch 31",
+    "state": "working",
+    "family": "A",
+    "crop_xyxy": [
+      1318,
+      224,
+      1468,
+      338
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "K-1398-0248",
+        "xy": [
+          1400.6666666666667,
+          248.33333333333334
+        ],
+        "relative_index": 31
+      },
+      {
+        "number": 2,
+        "id": "C-1391-0312",
+        "xy": [
+          1390.4285714285713,
+          311.57142857142856
+        ],
+        "relative_index": 26
+      },
+      {
+        "number": 3,
+        "id": "C-1422-0264",
+        "xy": [
+          1421.8666666666666,
+          264.06666666666666
+        ],
+        "relative_index": 38
+      },
+      {
+        "number": 4,
+        "id": "K-1443-0285",
+        "xy": [
+          1449.4444444444443,
+          278.77777777777777
+        ],
+        "relative_index": 45
+      },
+      {
+        "number": 5,
+        "id": "P5-1364-0299",
+        "xy": [
+          1364.3157894736842,
+          299.0
+        ],
+        "relative_index": 19
+      },
+      {
+        "number": 6,
+        "id": "K-1377-0268",
+        "xy": [
+          1376.6666666666667,
+          269.3333333333333
+        ],
+        "relative_index": 25
+      },
+      {
+        "number": 7,
+        "id": "C-1339-0277",
+        "xy": [
+          1338.9,
+          277.7
+        ],
+        "relative_index": 12
+      }
+    ],
+    "edges": [
+      {
+        "source": "K-1398-0248",
+        "target": "C-1422-0264",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1422-0264",
+        "target": "K-1443-0285",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "P5-1364-0299",
+        "target": "K-1377-0268",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1377-0268",
+        "target": "K-1398-0248",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1339-0277",
+        "target": "P5-1364-0299",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "P5-1364-0299",
+        "target": "C-1391-0312",
+        "delta": [
+          1,
+          0
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "834a1c2ae895b62621a593991cea1c78fb0ea5eeb29ee40dd46c2b9b5247367e"
+  },
+  {
+    "figure": "f-model-ownership.png",
+    "title": "F3. Which model bead covers the observed light?",
+    "state": "working",
+    "family": "A",
+    "crop_xyxy": [
+      1318,
+      224,
+      1468,
+      338
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "K-1398-0248",
+        "xy": [
+          1400.6666666666667,
+          248.33333333333334
+        ],
+        "relative_index": 31
+      },
+      {
+        "number": 2,
+        "id": "C-1391-0312",
+        "xy": [
+          1390.4285714285713,
+          311.57142857142856
+        ],
+        "relative_index": 26
+      },
+      {
+        "number": 3,
+        "id": "C-1422-0264",
+        "xy": [
+          1421.8666666666666,
+          264.06666666666666
+        ],
+        "relative_index": 38
+      },
+      {
+        "number": 4,
+        "id": "K-1443-0285",
+        "xy": [
+          1449.4444444444443,
+          278.77777777777777
+        ],
+        "relative_index": 45
+      },
+      {
+        "number": 5,
+        "id": "P5-1364-0299",
+        "xy": [
+          1364.3157894736842,
+          299.0
+        ],
+        "relative_index": 19
+      },
+      {
+        "number": 6,
+        "id": "K-1377-0268",
+        "xy": [
+          1376.6666666666667,
+          269.3333333333333
+        ],
+        "relative_index": 25
+      },
+      {
+        "number": 7,
+        "id": "C-1339-0277",
+        "xy": [
+          1338.9,
+          277.7
+        ],
+        "relative_index": 12
+      }
+    ],
+    "edges": [
+      {
+        "source": "K-1398-0248",
+        "target": "C-1422-0264",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1422-0264",
+        "target": "K-1443-0285",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "P5-1364-0299",
+        "target": "K-1377-0268",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1377-0268",
+        "target": "K-1398-0248",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1339-0277",
+        "target": "P5-1364-0299",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "P5-1364-0299",
+        "target": "C-1391-0312",
+        "delta": [
+          1,
+          0
+        ]
+      }
+    ],
+    "model": {
+      "expected_address": -33,
+      "owner_address": -27,
+      "support_pixels": [
+        [
+          1400,
+          248
+        ],
+        [
+          1401,
+          248
+        ],
+        [
+          1401,
+          249
+        ]
+      ],
+      "raster": "photo2/r324/results/R321-geometry-best-raster.npz",
+      "ownership_source": "photo2/r324/results/R321-geometry-best-frozen.json.gz#support",
+      "raster_scope": "Incomplete archived sampled visible pixels; support ownership is a separate saved ray test."
+    },
+    "raw_crop_rgb_sha256": "834a1c2ae895b62621a593991cea1c78fb0ea5eeb29ee40dd46c2b9b5247367e"
+  },
+  {
+    "figure": "g-early-working.png",
+    "title": "G1. Early row choice: working reconstruction",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1527,
+      225,
+      1698,
+      342
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "NEW-1621-315",
+        "xy": [
+          1620.263850499234,
+          316.830688388505
+        ],
+        "relative_index": 97
+      },
+      {
+        "number": 2,
+        "id": "C-1608-0253",
+        "xy": [
+          1607.6136363636363,
+          252.5909090909091
+        ],
+        "relative_index": 92
+      },
+      {
+        "number": 3,
+        "id": "C-1559-0252",
+        "xy": [
+          1559.0,
+          252.52380952380952
+        ],
+        "relative_index": 79
+      },
+      {
+        "number": 4,
+        "id": "C-1582-0272",
+        "xy": [
+          1581.625,
+          272.75
+        ],
+        "relative_index": 85
+      },
+      {
+        "number": 5,
+        "id": "E5-1607-0290",
+        "xy": [
+          1606.5121951219512,
+          290.0975609756098
+        ],
+        "relative_index": 91
+      },
+      {
+        "number": 6,
+        "id": "P5-1645-0309",
+        "xy": [
+          1644.4761904761904,
+          309.6666666666667
+        ],
+        "relative_index": 104
+      },
+      {
+        "number": 7,
+        "id": "C-1669-0293",
+        "xy": [
+          1669.2758620689656,
+          292.6896551724138
+        ],
+        "relative_index": 111
+      },
+      {
+        "number": 8,
+        "id": "C-1585-0307",
+        "xy": [
+          1584.875,
+          307.0
+        ],
+        "relative_index": 84
+      },
+      {
+        "number": 9,
+        "id": "E5-1561-0289",
+        "xy": [
+          1560.423076923077,
+          289.53846153846155
+        ],
+        "relative_index": 78
+      }
+    ],
+    "edges": [
+      {
+        "source": "C-1559-0252",
+        "target": "C-1582-0272",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1582-0272",
+        "target": "E5-1607-0290",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "E5-1607-0290",
+        "target": "NEW-1621-315",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "NEW-1621-315",
+        "target": "P5-1645-0309",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "P5-1645-0309",
+        "target": "C-1669-0293",
+        "delta": [
+          0,
+          1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "ddabe3c8cbf2bdda6ba807b5abe4bd822b971195f1d8e120fb996e85b2d4f5fe"
+  },
+  {
+    "figure": "g-early-alternative.png",
+    "title": "G2. Early row choice: alternative reconstruction",
+    "state": "early",
+    "family": "B",
+    "crop_xyxy": [
+      1527,
+      225,
+      1698,
+      342
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "NEW-1621-315",
+        "xy": [
+          1620.263850499234,
+          316.830688388505
+        ],
+        "relative_index": 90
+      },
+      {
+        "number": 2,
+        "id": "C-1608-0253",
+        "xy": [
+          1607.6136363636363,
+          252.5909090909091
+        ],
+        "relative_index": 92
+      },
+      {
+        "number": 3,
+        "id": "C-1559-0252",
+        "xy": [
+          1559.0,
+          252.52380952380952
+        ],
+        "relative_index": 79
+      },
+      {
+        "number": 4,
+        "id": "C-1582-0272",
+        "xy": [
+          1581.625,
+          272.75
+        ],
+        "relative_index": 85
+      },
+      {
+        "number": 5,
+        "id": "E5-1607-0290",
+        "xy": [
+          1606.5121951219512,
+          290.0975609756098
+        ],
+        "relative_index": 91
+      },
+      {
+        "number": 6,
+        "id": "P5-1645-0309",
+        "xy": [
+          1644.4761904761904,
+          309.6666666666667
+        ],
+        "relative_index": 97
+      },
+      {
+        "number": 7,
+        "id": "C-1669-0293",
+        "xy": [
+          1669.2758620689656,
+          292.6896551724138
+        ],
+        "relative_index": 104
+      },
+      {
+        "number": 8,
+        "id": "C-1585-0307",
+        "xy": [
+          1584.875,
+          307.0
+        ],
+        "relative_index": 84
+      },
+      {
+        "number": 9,
+        "id": "E5-1561-0289",
+        "xy": [
+          1560.423076923077,
+          289.53846153846155
+        ],
+        "relative_index": 78
+      }
+    ],
+    "edges": [
+      {
+        "source": "E5-1561-0289",
+        "target": "C-1585-0307",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1585-0307",
+        "target": "NEW-1621-315",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "NEW-1621-315",
+        "target": "P5-1645-0309",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "P5-1645-0309",
+        "target": "C-1669-0293",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "C-1608-0253",
+        "target": "E5-1607-0290",
+        "delta": [
+          1,
+          -1
+        ]
+      },
+      {
+        "source": "E5-1607-0290",
+        "target": "NEW-1621-315",
+        "delta": [
+          1,
+          -1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "ddabe3c8cbf2bdda6ba807b5abe4bd822b971195f1d8e120fb996e85b2d4f5fe"
+  },
+  {
+    "figure": "h-lower-working.png",
+    "title": "H1. Lower bend: working reconstruction",
+    "state": "working",
+    "family": "B",
+    "crop_xyxy": [
+      1090,
+      2855,
+      1220,
+      2970
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "NEW-1132-2925",
+        "xy": [
+          1132.458310243107,
+          2926.2537726199143
+        ],
+        "relative_index": 1188
+      },
+      {
+        "number": 2,
+        "id": "E5-1151-2893",
+        "xy": [
+          1149.8,
+          2890.4
+        ],
+        "relative_index": 1187
+      },
+      {
+        "number": 3,
+        "id": "C-1125-2900",
+        "xy": [
+          1124.8666666666666,
+          2899.3333333333335
+        ],
+        "relative_index": 1194
+      },
+      {
+        "number": 4,
+        "id": "C-1119-2879",
+        "xy": [
+          1119.578947368421,
+          2878.1052631578946
+        ],
+        "relative_index": 1200
+      },
+      {
+        "number": 5,
+        "id": "C-1189-2919",
+        "xy": [
+          1188.3478260869565,
+          2918.5652173913045
+        ],
+        "relative_index": 1174
+      },
+      {
+        "number": 6,
+        "id": "K-1159-2920",
+        "xy": [
+          1160.3333333333333,
+          2916.6666666666665
+        ],
+        "relative_index": 1181
+      },
+      {
+        "number": 7,
+        "id": "RF70T-K-1163-2935",
+        "xy": [
+          1164.25,
+          2938.25
+        ],
+        "relative_index": 1175
+      },
+      {
+        "number": 8,
+        "id": "C-1198-2943",
+        "xy": [
+          1197.1875,
+          2942.75
+        ],
+        "relative_index": 1168
+      },
+      {
+        "number": 9,
+        "id": "E5-1178-2887",
+        "xy": [
+          1183.0,
+          2878.846153846154
+        ],
+        "relative_index": 1180
+      }
+    ],
+    "edges": [
+      {
+        "source": "NEW-1132-2925",
+        "target": "C-1125-2900",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1125-2900",
+        "target": "C-1119-2879",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1189-2919",
+        "target": "K-1159-2920",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "K-1159-2920",
+        "target": "NEW-1132-2925",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "RF70T-K-1163-2935",
+        "target": "K-1159-2920",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "K-1159-2920",
+        "target": "E5-1151-2893",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "NEW-1132-2925",
+        "target": "E5-1151-2893",
+        "delta": [
+          1,
+          -1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "1453cb45bf917876552b8ed348d4a9f4e5d68d8e0d4d3d432b135cc1cd45845a"
+  },
+  {
+    "figure": "h-lower-alternative.png",
+    "title": "H2. Lower bend: alternative reconstruction",
+    "state": "lower",
+    "family": "B",
+    "crop_xyxy": [
+      1090,
+      2855,
+      1220,
+      2970
+    ],
+    "labels": [
+      {
+        "number": 1,
+        "id": "NEW-1132-2925",
+        "xy": [
+          1132.458310243107,
+          2926.2537726199143
+        ],
+        "relative_index": 1182
+      },
+      {
+        "number": 2,
+        "id": "E5-1151-2893",
+        "xy": [
+          1149.8,
+          2890.4
+        ],
+        "relative_index": 1187
+      },
+      {
+        "number": 3,
+        "id": "C-1125-2900",
+        "xy": [
+          1124.8666666666666,
+          2899.3333333333335
+        ],
+        "relative_index": 1188
+      },
+      {
+        "number": 4,
+        "id": "C-1119-2879",
+        "xy": [
+          1119.578947368421,
+          2878.1052631578946
+        ],
+        "relative_index": 1194
+      },
+      {
+        "number": 5,
+        "id": "C-1189-2919",
+        "xy": [
+          1188.3478260869565,
+          2918.5652173913045
+        ],
+        "relative_index": 1174
+      },
+      {
+        "number": 6,
+        "id": "K-1159-2920",
+        "xy": [
+          1160.3333333333333,
+          2916.6666666666665
+        ],
+        "relative_index": 1181
+      },
+      {
+        "number": 7,
+        "id": "RF70T-K-1163-2935",
+        "xy": [
+          1164.25,
+          2938.25
+        ],
+        "relative_index": 1175
+      },
+      {
+        "number": 8,
+        "id": "C-1198-2943",
+        "xy": [
+          1197.1875,
+          2942.75
+        ],
+        "relative_index": 1168
+      },
+      {
+        "number": 9,
+        "id": "E5-1178-2887",
+        "xy": [
+          1183.0,
+          2878.846153846154
+        ],
+        "relative_index": 1180
+      }
+    ],
+    "edges": [
+      {
+        "source": "NEW-1132-2925",
+        "target": "C-1125-2900",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1125-2900",
+        "target": "C-1119-2879",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "C-1198-2943",
+        "target": "RF70T-K-1163-2935",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "RF70T-K-1163-2935",
+        "target": "NEW-1132-2925",
+        "delta": [
+          0,
+          1
+        ]
+      },
+      {
+        "source": "RF70T-K-1163-2935",
+        "target": "K-1159-2920",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "K-1159-2920",
+        "target": "E5-1151-2893",
+        "delta": [
+          1,
+          0
+        ]
+      },
+      {
+        "source": "NEW-1132-2925",
+        "target": "K-1159-2920",
+        "delta": [
+          1,
+          -1
+        ]
+      },
+      {
+        "source": "K-1159-2920",
+        "target": "E5-1178-2887",
+        "delta": [
+          1,
+          -1
+        ]
+      }
+    ],
+    "model": null,
+    "raw_crop_rgb_sha256": "1453cb45bf917876552b8ed348d4a9f4e5d68d8e0d4d3d432b135cc1cd45845a"
+  }
+]

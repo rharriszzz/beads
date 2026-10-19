@@ -3815,3 +3815,13 @@ one 895-support component, but changed-size photo contexts contest 174 links;
 conservative model use retains 23 components. No certified winding/count/pattern.
 Final detector 15.067 s before serialization, 15.565 s total. R161 unchanged.
 Independent numerical and guarded-replay checks passed; finish publication and STOP.
+
+## R329 explanatory guide completed — 2026-10-19
+
+Presentation-only expansion is in `photo2/r329/ILLUSTRATED_GUIDE.md`, linking the
+full Markdown lesson. Teach two primitive directions with four/five-observation
+sequences; show the derived row; carry labeled local frames into inward, model,
+early-row and lower-bend comparisons. Fourteen annotated figures and five raw
+crops generated from frozen data. Data/preservation and offline preview checks pass.
+Next task: human review of whether the directions and differing row memberships
+are understandable directly from these pictures. No new scientific round authorized.
