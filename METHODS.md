@@ -2217,3 +2217,20 @@ accepted reconstruction. `photo2.r314.correspondence.evaluate_fixed` is the stri
 fixed-map/cohort peak-to-peak maximum API; connected lobes and faint maxima remain
 separate, missing predictions make maximum infinite. No eligible physical cohort or
 highlight optimization. Old science and both failed preflights remain preserved.
+
+## R337 — spatial quotient, string kernel and coherent closure
+
+[Report](photo2/R337_REPORT.md), [reproduce](photo2/R337_REPRODUCE.md),
+[offline review](photo2/r337/review/index.html). Direct2D translations and all
+1969 area1–399 subgroups containing(16,16), learned measured palette paths,
+signed cycle subgroup and all12 neighbor-index maps. A connects spatial repeat
+to the string via kernel(6,-7), H=13(16,16)+(6,-7). Multiples13 allowed after
+maker update; no eligibility or likelihood penalty. Strict176/32 partial208
+sequence rejects all proper divisors conditional on accepted evidence.
+
+145cached plus25 newly recombined complete paths receive actual suffix/return
+replay and full R336 extension; all468 own-count exact divisors share871 targets.
+Reviewed equations, distinct identities and later-body boundary evidence are
+separate gates from color prediction. Geographic guards and complete occurrence
+holdouts separate descriptive fit from extrapolation; no fresh blind accuracy
+claim. Current graph preserved; no color-driven coordinate compression/adoption.

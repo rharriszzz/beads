@@ -1,0 +1,44 @@
+"""Consequences of exact repeat composition, identity and maker-link constraints."""
+import argparse
+from .common import *
+
+def run(out,results,search):
+    out=Path(out);g,obs,co,ids,ab,c,b,core=data();paths=read(Path(search)/'replays.json.gz');candidates=read(Path(search)/'candidates.json.gz');arithmetic=[]
+    for fam,w in [('A',[7,6]),('B',[6,7])]:
+        k=ab@w
+        arithmetic.append(dict(family=fam,conditional_N=int(np.dot(g['H'],w)),gcds_with_208=sorted({math.gcd(L,208) for L in range(200,400) if L%13}),forced_period16_conflicts=conflicts(k%16,c,ids),explanation='If exact 208 spatial equality extended to the complete string and the maker hope were true and L were also an exact non13 repeat, the complete string would have period gcd(208,L), a divisor of16. This implication is conditional: the measured 16,16 relation already has exceptions, so it cannot itself be imposed as exact.'))
+    identity=[];signatures={};valid=[]
+    for name,r in paths.items():
+        coords=r['extension_coordinates'];H=r['H'];families=[]
+        for fam,w in [('A',[7,6]),('B',[6,7])]:
+            N=abs(int(np.dot(H,w)));groups=defaultdict(list)
+            for o,v in coords.items():groups[int(np.dot(v,w))%N].append(o)
+            collisions=[dict(index=k,ids=v) for k,v in groups.items() if len(v)>1];families.append(dict(family=fam,N=N,collisions=collisions))
+        identity.append(dict(map=name,checks=families))
+        sig=(tuple(H),tuple((o,*quotient(v,H)) for o,v in sorted(coords.items())))
+        signatures.setdefault(sig,[]).append(name)
+        if not r['extension']['maker_violations'] and not r['extension']['duplicate_sites']:valid.append(name)
+    eligible=[r for r in candidates if r['map']=='R336' or r['map'] in valid];eligible_changed=[r for r in eligible if r['H']!=g['H']]
+    # Complete changed-link graphs, built from retained equations plus the actual
+    # substituted cached path. Discarded old relationships stay explicit.
+    graphchecks=[]
+    for name,r in paths.items():
+        coord=r['extension_coordinates'];H=r['H'];bad={(e['source'],e['target']) for e in r['extension']['violated_edges']};retained=[e for e in g['edges'] if (e['source'],e['target']) not in bad];candidate_edges=retained+r['proposed_changed_links'];adj=defaultdict(set);equation_errors=[]
+        for e in candidate_edges:
+            a,z=e['source'],e['target'];res=np.array(coord[z])-coord[a]-e['delta_ab']
+            if quotient(res,H)!=(0,0):equation_errors.append(e)
+            adj[a].add(z);adj[z].add(a)
+        unseen=set(coord);sizes=[]
+        while unseen:
+            todo=[next(iter(unseen))];seen=set()
+            while todo:
+                a=todo.pop()
+                if a in seen:continue
+                seen.add(a);todo.extend(adj[a]-seen)
+            unseen-=seen;sizes.append(len(seen))
+        graphchecks.append(dict(map=name,retained_old_links=len(retained),cached_changed_links=len(r['proposed_changed_links']),component_sizes=sorted(sizes,reverse=True),equation_errors=equation_errors,new_boundary_relationships_without_replacement_evidence=r['extension']['new_support_boundary_violations'],adopted=False))
+    def compact(r):return {k:v for k,v in r.items() if k not in ['motif','witnesses','current208_common','candidate_spatial']}
+    save(out/'consequences.json.gz',dict(exact_repeat_composition=arithmetic,identity_checks=identity,distinct_extended_maps=len(signatures),map_equivalence_groups=list(signatures.values()),maker_preserving_maps=valid,maker_compatible_changed_winding_best=[compact(r) for r in eligible_changed[:8]],constructed_graph_checks=graphchecks,current208_common=candidates[0]['current208_common'],all_candidates_increment_current208_range=[min(r['increment_over_current208'] for r in candidates),max(r['increment_over_current208'] for r in candidates)],conclusion='Multiples of13 are allowed; non13 is only the maker hope. Current A208 is a leading closure-compatible partial pattern with remaining recorded conflicts. Current B has many more explicit color contradictions. Saved alternatives either repeat the current map, contradict reviewed relationships, lack new boundary evidence, or still fail exact colors. This finite bank does not rule out a different unmeasured coherent continuation.'))
+    print('CONSEQUENCES',len(signatures),'distinct maps',len(valid),'maker preserving paths','changed maker candidates',len(eligible_changed),'identity collisions',sum(len(f['collisions']) for z in identity for f in z['checks']))
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--results',default='photo2/r337/results');p.add_argument('--search',default='photo2/r337/search-results');a=p.parse_args();run(a.output,a.results,a.search)

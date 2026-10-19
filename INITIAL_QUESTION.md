@@ -7,6 +7,19 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pattern authority — R337
+
+The maker now says **“let's not exclude multiples of13; instead just say I hope
+it isn't.”** This supersedes all historical hard non13 exclusions below. Do not
+filter or penalize candidate lengths for divisibility by13. The approximate
+200–399 range and integer complete repeats remain construction information.
+The current labels/adjacencies in both R336 regions C-1423-3004 and C-0481-1576
+are maker-reviewed support; their large gaps require no repairs. Retain all
+previous corrections and phantom exclusions. Concentrate on spatial design and
+its mapping to string order. R337's leading partial208/A interpretation satisfies
+H=13(16,16)+(6,−7), with176 uncontradicted supported colors and32 unknowns; exact
+completion and global truth remain conditional. See [R337](photo2/R337_REPORT.md).
+
 ## Current bead-identity instruction — R336
 
 All beads have the same outside size/shape regardless of color and share the local

@@ -1,0 +1,108 @@
+{
+  "trials": [
+    {
+      "corridor": "upper-left return approach",
+      "begin": 177,
+      "end": 181,
+      "width": 32,
+      "trace": [
+        {
+          "window": 177,
+          "attempted": 22,
+          "retained": 6,
+          "complete_returns": 6
+        },
+        {
+          "window": 178,
+          "attempted": 101,
+          "retained": 19,
+          "complete_returns": 13
+        },
+        {
+          "window": 179,
+          "attempted": 276,
+          "retained": 32,
+          "complete_returns": 19
+        },
+        {
+          "window": 180,
+          "attempted": 478,
+          "retained": 32,
+          "complete_returns": 20
+        },
+        {
+          "window": 181,
+          "attempted": 316,
+          "retained": 32,
+          "complete_returns": 32
+        }
+      ],
+      "failures": {
+        "shared-coordinate disagreement": 1705,
+        "insufficient frontier overlap": 826,
+        "suffix shared-coordinate disagreement": 30,
+        "suffix insufficient frontier overlap": 1,
+        "two observed supports assigned one lattice site": 5
+      },
+      "complete_paths": 90,
+      "distinct_maps": 10,
+      "eligible_maker_preserving": 8
+    },
+    {
+      "corridor": "lower bend",
+      "begin": 78,
+      "end": 83,
+      "width": 32,
+      "trace": [
+        {
+          "window": 78,
+          "attempted": 17,
+          "retained": 10,
+          "complete_returns": 7
+        },
+        {
+          "window": 79,
+          "attempted": 126,
+          "retained": 32,
+          "complete_returns": 16
+        },
+        {
+          "window": 80,
+          "attempted": 330,
+          "retained": 32,
+          "complete_returns": 29
+        },
+        {
+          "window": 81,
+          "attempted": 321,
+          "retained": 32,
+          "complete_returns": 25
+        },
+        {
+          "window": 82,
+          "attempted": 464,
+          "retained": 32,
+          "complete_returns": 32
+        },
+        {
+          "window": 83,
+          "attempted": 518,
+          "retained": 32,
+          "complete_returns": 31
+        }
+      ],
+      "failures": {
+        "shared-coordinate disagreement": 3111,
+        "insufficient frontier overlap": 860,
+        "suffix shared-coordinate disagreement": 30,
+        "two observed supports assigned one lattice site": 4,
+        "maker-reviewed equation changed": 10
+      },
+      "complete_paths": 140,
+      "distinct_maps": 16,
+      "eligible_maker_preserving": 16
+    }
+  ],
+  "distinct_complete_maps": 25,
+  "seconds": 9.81826073594857
+}

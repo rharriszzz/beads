@@ -1,0 +1,7461 @@
+[
+  {
+    "map": "R328-0",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [],
+    "first_replaced": 0,
+    "last_replaced": 0,
+    "full_replay": {
+      "seconds": 0.019872500968631357,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 188
+    },
+    "single_patch_replay": {
+      "seconds": 0.019567030016332865,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 188
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3873.104944089152,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-1",
+    "H": [
+      215,
+      200
+    ],
+    "changed_windows": [
+      124,
+      125,
+      126
+    ],
+    "first_replaced": 124,
+    "last_replaced": 126,
+    "full_replay": {
+      "seconds": 0.010502410994376987,
+      "completed": true,
+      "H": [
+        215,
+        200
+      ],
+      "returns": 17,
+      "steps": 64
+    },
+    "single_patch_replay": {
+      "failed_step": 125,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00015110702952370048
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2690,
+        "L": 269,
+        "gain": -0.07038415536776364
+      }
+    ],
+    "source_score": 3871.7462124390013,
+    "changed_current_coordinates": 289,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 3,
+    "core_violations": 2,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-2",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      122,
+      123,
+      124,
+      125
+    ],
+    "first_replaced": 122,
+    "last_replaced": 125,
+    "full_replay": {
+      "seconds": 0.010860675014555454,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 66
+    },
+    "single_patch_replay": {
+      "failed_step": 124,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00025375501718372107
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3869.094740904892,
+    "changed_current_coordinates": 292,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 6,
+    "core_violations": 2,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-3",
+    "H": [
+      214,
+      202
+    ],
+    "changed_windows": [
+      11,
+      12,
+      13,
+      14,
+      16
+    ],
+    "first_replaced": 11,
+    "last_replaced": 16,
+    "full_replay": {
+      "seconds": 0.02111133496509865,
+      "completed": true,
+      "H": [
+        214,
+        202
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "single_patch_replay": {
+      "seconds": 0.019932808994781226,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2710,
+        "L": 271,
+        "gain": -0.09777041679756178
+      }
+    ],
+    "source_score": 3866.843929267934,
+    "changed_current_coordinates": 828,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 6,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-4",
+    "H": [
+      215,
+      201
+    ],
+    "changed_windows": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      124,
+      125,
+      126
+    ],
+    "first_replaced": 11,
+    "last_replaced": 126,
+    "full_replay": {
+      "seconds": 0.019484261982142925,
+      "completed": true,
+      "H": [
+        215,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "single_patch_replay": {
+      "seconds": 0.019476944988127798,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3865.4851976177833,
+    "changed_current_coordinates": 828,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 9,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-5",
+    "H": [
+      213,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01657605799846351,
+      "completed": true,
+      "H": [
+        213,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015262514003552496,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3864.924716444133,
+    "changed_current_coordinates": 470,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 6,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "R328-6",
+    "H": [
+      213,
+      203
+    ],
+    "changed_windows": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      122,
+      123,
+      124,
+      125
+    ],
+    "first_replaced": 11,
+    "last_replaced": 125,
+    "full_replay": {
+      "seconds": 0.01986309903440997,
+      "completed": true,
+      "H": [
+        213,
+        203
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "single_patch_replay": {
+      "seconds": 0.019237316970247775,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2709,
+        "L": 301,
+        "gain": -0.1958619382518089
+      },
+      {
+        "family": "A",
+        "N": 2709,
+        "L": 387,
+        "gain": -0.08347761005763323
+      }
+    ],
+    "source_score": 3862.8337260836743,
+    "changed_current_coordinates": 828,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-7",
+    "H": [
+      212,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82,
+      122,
+      123,
+      124,
+      125
+    ],
+    "first_replaced": 79,
+    "last_replaced": 125,
+    "full_replay": {
+      "seconds": 0.015295737946871668,
+      "completed": true,
+      "H": [
+        212,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01511880400357768,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2696,
+        "L": 337,
+        "gain": -0.06045766210794551
+      }
+    ],
+    "source_score": 3860.9145132598733,
+    "changed_current_coordinates": 470,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "R328-8",
+    "H": [
+      216,
+      200
+    ],
+    "changed_windows": [
+      124,
+      125,
+      126,
+      130,
+      131,
+      132
+    ],
+    "first_replaced": 124,
+    "last_replaced": 132,
+    "full_replay": {
+      "seconds": 0.011112639971543103,
+      "completed": true,
+      "H": [
+        216,
+        200
+      ],
+      "returns": 17,
+      "steps": 64
+    },
+    "single_patch_replay": {
+      "failed_step": 125,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00033642398193478584
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2712,
+        "L": 226,
+        "gain": -0.121673408686089
+      },
+      {
+        "family": "A",
+        "N": 2712,
+        "L": 339,
+        "gain": -0.14078715100326764
+      },
+      {
+        "family": "B",
+        "N": 2696,
+        "L": 337,
+        "gain": -0.14078715100326764
+      }
+    ],
+    "source_score": 3859.6315027259616,
+    "changed_current_coordinates": 289,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 8,
+    "core_violations": 4,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-9",
+    "H": [
+      216,
+      199
+    ],
+    "changed_windows": [
+      124,
+      125,
+      126,
+      168,
+      169,
+      170
+    ],
+    "first_replaced": 124,
+    "last_replaced": 170,
+    "full_replay": {
+      "seconds": 0.01098816399462521,
+      "completed": true,
+      "H": [
+        216,
+        199
+      ],
+      "returns": 17,
+      "steps": 64
+    },
+    "single_patch_replay": {
+      "failed_step": 125,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.0001369980163872242
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2706,
+        "L": 246,
+        "gain": -0.10086093419000637
+      }
+    ],
+    "source_score": 3855.390883548552,
+    "changed_current_coordinates": 289,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 8,
+    "core_violations": 4,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-10",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      178,
+      179,
+      180
+    ],
+    "first_replaced": 178,
+    "last_replaced": 180,
+    "full_replay": {
+      "seconds": 0.002108986023813486,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 10
+    },
+    "single_patch_replay": {
+      "failed_step": 179,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.0002579449792392552
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.021736388217016712
+      }
+    ],
+    "source_score": 3849.1888020731285,
+    "changed_current_coordinates": 43,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 6,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 3,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "R328-11",
+    "H": [
+      214,
+      203
+    ],
+    "changed_windows": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      178,
+      179,
+      180
+    ],
+    "first_replaced": 11,
+    "last_replaced": 180,
+    "full_replay": {
+      "seconds": 0.022809229034464806,
+      "completed": true,
+      "H": [
+        214,
+        203
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "single_patch_replay": {
+      "seconds": 0.020441568980459124,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2716,
+        "L": 388,
+        "gain": -0.06520465301759841
+      }
+    ],
+    "source_score": 3848.609912524259,
+    "changed_current_coordinates": 828,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 13,
+    "core_violations": 7,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-12",
+    "H": [
+      215,
+      199
+    ],
+    "changed_windows": [
+      124,
+      125,
+      126,
+      178,
+      179,
+      180
+    ],
+    "first_replaced": 124,
+    "last_replaced": 180,
+    "full_replay": {
+      "seconds": 0.011275682016275823,
+      "completed": true,
+      "H": [
+        215,
+        199
+      ],
+      "returns": 17,
+      "steps": 64
+    },
+    "single_patch_replay": {
+      "failed_step": 125,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00015407096361741424
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3847.8300704229778,
+    "changed_current_coordinates": 289,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 9,
+    "core_violations": 7,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "R328-13",
+    "H": [
+      215,
+      202
+    ],
+    "changed_windows": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      124,
+      125,
+      126,
+      178,
+      179,
+      180
+    ],
+    "first_replaced": 11,
+    "last_replaced": 180,
+    "full_replay": {
+      "seconds": 0.01976741704856977,
+      "completed": true,
+      "H": [
+        215,
+        202
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "single_patch_replay": {
+      "seconds": 0.019423252961132675,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2717,
+        "L": 209,
+        "gain": 0.035056160746418624
+      }
+    ],
+    "source_score": 3847.2511808741083,
+    "changed_current_coordinates": 828,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 16,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 5,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-14",
+    "H": [
+      213,
+      204
+    ],
+    "changed_windows": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      122,
+      123,
+      124,
+      125,
+      184,
+      185,
+      186
+    ],
+    "first_replaced": 11,
+    "last_replaced": 186,
+    "full_replay": {
+      "seconds": 0.019848657946567982,
+      "completed": true,
+      "H": [
+        213,
+        204
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "single_patch_replay": {
+      "seconds": 0.019897692021913826,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 177
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2706,
+        "L": 246,
+        "gain": -0.012208894525372242
+      }
+    ],
+    "source_score": 3834.1074354338784,
+    "changed_current_coordinates": 828,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 8,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R328-15",
+    "H": [
+      212,
+      203
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82,
+      122,
+      123,
+      124,
+      125,
+      184,
+      185,
+      186
+    ],
+    "first_replaced": 79,
+    "last_replaced": 186,
+    "full_replay": {
+      "seconds": 0.01609377597924322,
+      "completed": true,
+      "H": [
+        212,
+        203
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015472648025024682,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2702,
+        "L": 386,
+        "gain": -0.05649117844273641
+      }
+    ],
+    "source_score": 3832.1882226100774,
+    "changed_current_coordinates": 470,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 8,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "R328-16",
+    "H": [
+      216,
+      201
+    ],
+    "changed_windows": [
+      124,
+      125,
+      126,
+      130,
+      131,
+      132,
+      184,
+      185,
+      186
+    ],
+    "first_replaced": 124,
+    "last_replaced": 186,
+    "full_replay": {
+      "seconds": 0.010988593974616379,
+      "completed": true,
+      "H": [
+        216,
+        201
+      ],
+      "returns": 17,
+      "steps": 64
+    },
+    "single_patch_replay": {
+      "failed_step": 125,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00015326100401580334
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2718,
+        "L": 302,
+        "gain": -0.050746836352203575
+      }
+    ],
+    "source_score": 3830.9052120761658,
+    "changed_current_coordinates": 289,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 13,
+    "core_violations": 7,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "R329-0",
+    "H": [
+      212,
+      201
+    ],
+    "changed_windows": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129
+    ],
+    "first_replaced": 122,
+    "last_replaced": 129,
+    "full_replay": {
+      "failed_step": 127,
+      "reason": "insufficient frontier overlap",
+      "seconds": 0.0008918590028770268
+    },
+    "single_patch_replay": {
+      "failed_step": 124,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.0002493099891580641
+    },
+    "reproduces_saved_map": false,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2690,
+        "L": 269,
+        "gain": -0.12857502730657547
+      }
+    ],
+    "source_score": 3804.9612585658656,
+    "changed_current_coordinates": 289,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 24,
+    "core_violations": 14,
+    "maker_violations": 0,
+    "new_boundary_violations": 11,
+    "duplicate_sites": 6
+  },
+  {
+    "map": "R329-1",
+    "H": [
+      215,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.019995255977846682,
+      "completed": true,
+      "H": [
+        215,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 4.8615969717502594e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2676,
+        "L": 223,
+        "gain": -0.03343961423524162
+      }
+    ],
+    "source_score": 3862.607739931386,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "R329-2",
+    "H": [
+      214,
+      176
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "first_replaced": 10,
+    "last_replaced": 34,
+    "full_replay": {
+      "seconds": 0.021538784028962255,
+      "completed": true,
+      "H": [
+        214,
+        176
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 6.349501200020313e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3841.043338080627,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 152,
+    "core_violations": 80,
+    "maker_violations": 0,
+    "new_boundary_violations": 19,
+    "duplicate_sites": 10
+  },
+  {
+    "map": "G-0",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "first_replaced": 10,
+    "last_replaced": 14,
+    "full_replay": {
+      "seconds": 0.02198684203904122,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.434296326711774e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.006223514760816421
+      }
+    ],
+    "source_score": 3858.3457980744715,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 7,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-1",
+    "H": [
+      215,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.019573755038436502,
+      "completed": true,
+      "H": [
+        215,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.062401760369539e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2676,
+        "L": 223,
+        "gain": -0.03343961423524162
+      }
+    ],
+    "source_score": 3857.29341701245,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-2",
+    "H": [
+      214,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.019839193962980062,
+      "completed": true,
+      "H": [
+        214,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.1946029998362064e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3847.990965837813,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 6,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-3",
+    "H": [
+      214,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.021960648999083787,
+      "completed": true,
+      "H": [
+        214,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.187594797462225e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3840.410706200274,
+    "changed_current_coordinates": 831,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-4",
+    "H": [
+      215,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.020477166981436312,
+      "completed": true,
+      "H": [
+        215,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.0319009460508823e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3830.745933823785,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 13,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-5",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.01958123000804335,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.169899668544531e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.006223514760816421
+      }
+    ],
+    "source_score": 3828.510840595638,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 7,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-6",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "first_replaced": 10,
+    "last_replaced": 17,
+    "full_replay": {
+      "seconds": 0.019470576022285968,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.5935990530997515e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.005807255498729767
+      }
+    ],
+    "source_score": 3823.830916991401,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 13,
+    "core_violations": 7,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-7",
+    "H": [
+      215,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "first_replaced": 10,
+    "last_replaced": 18,
+    "full_replay": {
+      "seconds": 0.021381326019763947,
+      "completed": true,
+      "H": [
+        215,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.460099782794714e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2676,
+        "L": 223,
+        "gain": -0.03343961423524162
+      }
+    ],
+    "source_score": 3845.272275908168,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 19,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 9,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-8",
+    "H": [
+      214,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "first_replaced": 10,
+    "last_replaced": 18,
+    "full_replay": {
+      "seconds": 0.020599104987923056,
+      "completed": true,
+      "H": [
+        214,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 4.9715046770870686e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2670,
+        "L": 267,
+        "gain": -0.03744970484160042
+      }
+    ],
+    "source_score": 3843.6784457381173,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-9",
+    "H": [
+      214,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "first_replaced": 10,
+    "last_replaced": 19,
+    "full_replay": {
+      "seconds": 0.021180710988119245,
+      "completed": true,
+      "H": [
+        214,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.860201781615615e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3827.1832054725146,
+    "changed_current_coordinates": 831,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 6,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-10",
+    "H": [
+      215,
+      197
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "first_replaced": 10,
+    "last_replaced": 19,
+    "full_replay": {
+      "seconds": 0.020610437029972672,
+      "completed": true,
+      "H": [
+        215,
+        197
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.666399374604225e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3826.315880177207,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 21,
+    "core_violations": 12,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-11",
+    "H": [
+      214,
+      196
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "first_replaced": 10,
+    "last_replaced": 20,
+    "full_replay": {
+      "seconds": 0.020154099038336426,
+      "completed": true,
+      "H": [
+        214,
+        196
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.376699846237898e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2674,
+        "L": 382,
+        "gain": -0.04137785368898061
+      },
+      {
+        "family": "B",
+        "N": 2656,
+        "L": 332,
+        "gain": -0.08320162031570952
+      }
+    ],
+    "source_score": 3828.4402177180336,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 29,
+    "core_violations": 15,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-12",
+    "H": [
+      214,
+      194
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "first_replaced": 10,
+    "last_replaced": 21,
+    "full_replay": {
+      "seconds": 0.020490230002906173,
+      "completed": true,
+      "H": [
+        214,
+        194
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.8353994973003864e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2662,
+        "L": 242,
+        "gain": -0.006916478390034425
+      }
+    ],
+    "source_score": 3838.617839431892,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 42,
+    "core_violations": 21,
+    "maker_violations": 0,
+    "new_boundary_violations": 3,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-13",
+    "H": [
+      215,
+      193
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "first_replaced": 10,
+    "last_replaced": 21,
+    "full_replay": {
+      "seconds": 0.020395205006934702,
+      "completed": true,
+      "H": [
+        215,
+        193
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.4115953389555216e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3830.302548524386,
+    "changed_current_coordinates": 831,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 44,
+    "core_violations": 22,
+    "maker_violations": 0,
+    "new_boundary_violations": 7,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-14",
+    "H": [
+      215,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      20,
+      21,
+      22
+    ],
+    "first_replaced": 10,
+    "last_replaced": 22,
+    "full_replay": {
+      "seconds": 0.5669048189884052,
+      "completed": true,
+      "H": [
+        215,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 7.12790060788393e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2690,
+        "L": 269,
+        "gain": -0.07701997500267259
+      }
+    ],
+    "source_score": 3825.40867738779,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 14,
+    "core_violations": 8,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-15",
+    "H": [
+      216,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      21,
+      22
+    ],
+    "first_replaced": 10,
+    "last_replaced": 22,
+    "full_replay": {
+      "seconds": 0.020126502960920334,
+      "completed": true,
+      "H": [
+        216,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 6.981601472944021e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2700,
+        "L": 225,
+        "gain": -0.09261183420050154
+      },
+      {
+        "family": "A",
+        "N": 2700,
+        "L": 270,
+        "gain": -0.017791201782003576
+      },
+      {
+        "family": "A",
+        "N": 2700,
+        "L": 300,
+        "gain": -0.053935233971566666
+      },
+      {
+        "family": "B",
+        "N": 2682,
+        "L": 298,
+        "gain": -0.053935233971566666
+      }
+    ],
+    "source_score": 3824.356296325768,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 24,
+    "core_violations": 14,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-16",
+    "H": [
+      214,
+      194
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "first_replaced": 10,
+    "last_replaced": 22,
+    "full_replay": {
+      "seconds": 0.01978971395874396,
+      "completed": true,
+      "H": [
+        214,
+        194
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.235604476183653e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2662,
+        "L": 242,
+        "gain": -0.006916478390034425
+      }
+    ],
+    "source_score": 3823.2340166404956,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 42,
+    "core_violations": 21,
+    "maker_violations": 0,
+    "new_boundary_violations": 3,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-17",
+    "H": [
+      214,
+      191
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "first_replaced": 10,
+    "last_replaced": 23,
+    "full_replay": {
+      "seconds": 0.020051239989697933,
+      "completed": true,
+      "H": [
+        214,
+        191
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.541200516745448e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3842.2239212363866,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 60,
+    "core_violations": 30,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-18",
+    "H": [
+      214,
+      192
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "first_replaced": 10,
+    "last_replaced": 23,
+    "full_replay": {
+      "seconds": 0.020042713033035398,
+      "completed": true,
+      "H": [
+        214,
+        192
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 4.758499562740326e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2650,
+        "L": 265,
+        "gain": -0.03686833093320136
+      },
+      {
+        "family": "B",
+        "N": 2628,
+        "L": 219,
+        "gain": -0.11241692891065404
+      },
+      {
+        "family": "B",
+        "N": 2628,
+        "L": 292,
+        "gain": -0.13400265249774818
+      }
+    ],
+    "source_score": 3835.178503404538,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 61,
+    "core_violations": 32,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-19",
+    "H": [
+      215,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      21,
+      22,
+      23
+    ],
+    "first_replaced": 10,
+    "last_replaced": 23,
+    "full_replay": {
+      "seconds": 0.023771159001626074,
+      "completed": true,
+      "H": [
+        215,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 6.0954014770686626e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2690,
+        "L": 269,
+        "gain": -0.07511339923471053
+      }
+    ],
+    "source_score": 3822.741323207253,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 3,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-20",
+    "H": [
+      216,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      21,
+      22,
+      23
+    ],
+    "first_replaced": 10,
+    "last_replaced": 23,
+    "full_replay": {
+      "seconds": 0.020469511044211686,
+      "completed": true,
+      "H": [
+        216,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.02800103276968e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2700,
+        "L": 225,
+        "gain": -0.09216139583194806
+      },
+      {
+        "family": "A",
+        "N": 2700,
+        "L": 270,
+        "gain": -0.018923166266998966
+      },
+      {
+        "family": "A",
+        "N": 2700,
+        "L": 300,
+        "gain": -0.05376585073805961
+      },
+      {
+        "family": "B",
+        "N": 2682,
+        "L": 298,
+        "gain": -0.05376585073805961
+      }
+    ],
+    "source_score": 3821.6889421452315,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 22,
+    "core_violations": 11,
+    "maker_violations": 0,
+    "new_boundary_violations": 5,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-21",
+    "H": [
+      214,
+      191
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "first_replaced": 10,
+    "last_replaced": 24,
+    "full_replay": {
+      "seconds": 0.019815113046206534,
+      "completed": true,
+      "H": [
+        214,
+        191
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.51320263184607e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3826.6808511153567,
+    "changed_current_coordinates": 831,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 60,
+    "core_violations": 30,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-22",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      22,
+      23,
+      24
+    ],
+    "first_replaced": 10,
+    "last_replaced": 24,
+    "full_replay": {
+      "seconds": 0.020093092985916883,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.134794628247619e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.006223514760816421
+      }
+    ],
+    "source_score": 3825.658006149324,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 7,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-23",
+    "H": [
+      215,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      23,
+      24
+    ],
+    "first_replaced": 10,
+    "last_replaced": 24,
+    "full_replay": {
+      "seconds": 0.020143340982031077,
+      "completed": true,
+      "H": [
+        215,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.087599856778979e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2676,
+        "L": 223,
+        "gain": -0.03343961423524162
+      }
+    ],
+    "source_score": 3824.6056250873025,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-24",
+    "H": [
+      214,
+      192
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "first_replaced": 10,
+    "last_replaced": 24,
+    "full_replay": {
+      "seconds": 0.02029520901851356,
+      "completed": true,
+      "H": [
+        214,
+        192
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.78290200792253e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2650,
+        "L": 265,
+        "gain": -0.03686833093320136
+      },
+      {
+        "family": "B",
+        "N": 2628,
+        "L": 219,
+        "gain": -0.11241692891065404
+      },
+      {
+        "family": "B",
+        "N": 2628,
+        "L": 292,
+        "gain": -0.13400265249774818
+      }
+    ],
+    "source_score": 3823.125715567983,
+    "changed_current_coordinates": 829,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 63,
+    "core_violations": 33,
+    "maker_violations": 0,
+    "new_boundary_violations": 7,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-25",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      22,
+      23,
+      24
+    ],
+    "first_replaced": 10,
+    "last_replaced": 24,
+    "full_replay": {
+      "seconds": 0.019802279013674706,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.513301584869623e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.006223514760816421
+      }
+    ],
+    "source_score": 3822.581379135645,
+    "changed_current_coordinates": 829,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 7,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-26",
+    "H": [
+      215,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      22,
+      23,
+      24
+    ],
+    "first_replaced": 10,
+    "last_replaced": 24,
+    "full_replay": {
+      "seconds": 0.01994104596087709,
+      "completed": true,
+      "H": [
+        215,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.400500958785415e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3822.0958349282273,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-27",
+    "H": [
+      214,
+      189
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "first_replaced": 10,
+    "last_replaced": 25,
+    "full_replay": {
+      "seconds": 0.019875981961376965,
+      "completed": true,
+      "H": [
+        214,
+        189
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 8.593103848397732e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2632,
+        "L": 329,
+        "gain": -0.10685228925795213
+      },
+      {
+        "family": "A",
+        "N": 2632,
+        "L": 376,
+        "gain": 0.0012739267648092028
+      },
+      {
+        "family": "B",
+        "N": 2607,
+        "L": 237,
+        "gain": -0.1092946808628796
+      }
+    ],
+    "source_score": 3835.675933134239,
+    "changed_current_coordinates": 831,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 71,
+    "core_violations": 36,
+    "maker_violations": 0,
+    "new_boundary_violations": 5,
+    "duplicate_sites": 3
+  },
+  {
+    "map": "G-28",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      24,
+      25,
+      26
+    ],
+    "first_replaced": 10,
+    "last_replaced": 26,
+    "full_replay": {
+      "seconds": 0.021129105996806175,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.700503243133426e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.042677624531937616
+      }
+    ],
+    "source_score": 3829.6523958531416,
+    "changed_current_coordinates": 60,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 15,
+    "core_violations": 8,
+    "maker_violations": 0,
+    "new_boundary_violations": 5,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-29",
+    "H": [
+      214,
+      190
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "first_replaced": 10,
+    "last_replaced": 26,
+    "full_replay": {
+      "seconds": 0.021069102978799492,
+      "completed": true,
+      "H": [
+        214,
+        190
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 4.894798621535301e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3824.0394890219304,
+    "changed_current_coordinates": 831,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 79,
+    "core_violations": 41,
+    "maker_violations": 0,
+    "new_boundary_violations": 8,
+    "duplicate_sites": 3
+  },
+  {
+    "map": "G-30",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ],
+    "first_replaced": 10,
+    "last_replaced": 29,
+    "full_replay": {
+      "seconds": 0.020116806961596012,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 4.8881047405302525e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.03878228290740943
+      }
+    ],
+    "source_score": 3827.766342219428,
+    "changed_current_coordinates": 76,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 14,
+    "core_violations": 8,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-31",
+    "H": [
+      215,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      27,
+      28,
+      29
+    ],
+    "first_replaced": 10,
+    "last_replaced": 29,
+    "full_replay": {
+      "seconds": 0.01983557199127972,
+      "completed": true,
+      "H": [
+        215,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.22180343978107e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3826.7139611574075,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 24,
+    "core_violations": 14,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-32",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      30,
+      31,
+      32
+    ],
+    "first_replaced": 10,
+    "last_replaced": 32,
+    "full_replay": {
+      "seconds": 0.020575652015395463,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 6.977701559662819e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.0337808388158072
+      }
+    ],
+    "source_score": 3825.9645369627606,
+    "changed_current_coordinates": 91,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 13,
+    "core_violations": 8,
+    "maker_violations": 0,
+    "new_boundary_violations": 3,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-33",
+    "H": [
+      215,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      30,
+      31,
+      32
+    ],
+    "first_replaced": 10,
+    "last_replaced": 32,
+    "full_replay": {
+      "seconds": 0.02050255599897355,
+      "completed": true,
+      "H": [
+        215,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 4.874699516221881e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3824.912155900739,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 23,
+    "core_violations": 14,
+    "maker_violations": 0,
+    "new_boundary_violations": 5,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-34",
+    "H": [
+      214,
+      176
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "first_replaced": 10,
+    "last_replaced": 34,
+    "full_replay": {
+      "seconds": 0.020567826984915882,
+      "completed": true,
+      "H": [
+        214,
+        176
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.0147995352745056e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3835.7290151616908,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 152,
+    "core_violations": 80,
+    "maker_violations": 0,
+    "new_boundary_violations": 19,
+    "duplicate_sites": 10
+  },
+  {
+    "map": "G-35",
+    "H": [
+      214,
+      177
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "first_replaced": 10,
+    "last_replaced": 34,
+    "full_replay": {
+      "seconds": 0.020169840019661933,
+      "completed": true,
+      "H": [
+        214,
+        177
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.1104987505823374e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2560,
+        "L": 256,
+        "gain": -0.000522863210492091
+      },
+      {
+        "family": "A",
+        "N": 2560,
+        "L": 320,
+        "gain": 0.0030087680273398437
+      }
+    ],
+    "source_score": 3826.219952439901,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 147,
+    "core_violations": 79,
+    "maker_violations": 0,
+    "new_boundary_violations": 19,
+    "duplicate_sites": 10
+  },
+  {
+    "map": "G-36",
+    "H": [
+      213,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      32,
+      33,
+      34
+    ],
+    "first_replaced": 10,
+    "last_replaced": 34,
+    "full_replay": {
+      "seconds": 0.02116922999266535,
+      "completed": true,
+      "H": [
+        213,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.9023965150117874e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2691,
+        "L": 207,
+        "gain": -0.021312547871322116
+      },
+      {
+        "family": "B",
+        "N": 2678,
+        "L": 206,
+        "gain": -0.013146032011229672
+      }
+    ],
+    "source_score": 3818.628759875419,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 10,
+    "core_violations": 4,
+    "maker_violations": 0,
+    "new_boundary_violations": 5,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-37",
+    "H": [
+      214,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      32,
+      33,
+      34
+    ],
+    "first_replaced": 10,
+    "last_replaced": 34,
+    "full_replay": {
+      "seconds": 0.020728775998577476,
+      "completed": true,
+      "H": [
+        214,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.44880167581141e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2670,
+        "L": 267,
+        "gain": -0.05380642319849588
+      }
+    ],
+    "source_score": 3817.5763788133972,
+    "changed_current_coordinates": 830,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 20,
+    "core_violations": 10,
+    "maker_violations": 0,
+    "new_boundary_violations": 7,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-38",
+    "H": [
+      214,
+      200
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      35
+    ],
+    "first_replaced": 10,
+    "last_replaced": 35,
+    "full_replay": {
+      "seconds": 0.020295531023293734,
+      "completed": true,
+      "H": [
+        214,
+        200
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.37390005774796e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2684,
+        "L": 244,
+        "gain": -0.006223514760816421
+      }
+    ],
+    "source_score": 3839.146210990719,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 7,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-39",
+    "H": [
+      215,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      35
+    ],
+    "first_replaced": 10,
+    "last_replaced": 35,
+    "full_replay": {
+      "seconds": 0.02160975697916001,
+      "completed": true,
+      "H": [
+        215,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.878100637346506e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2676,
+        "L": 223,
+        "gain": -0.03343961423524162
+      }
+    ],
+    "source_score": 3838.0938299286972,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "G-40",
+    "H": [
+      214,
+      199
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      35
+    ],
+    "first_replaced": 10,
+    "last_replaced": 35,
+    "full_replay": {
+      "seconds": 0.02119455602951348,
+      "completed": true,
+      "H": [
+        214,
+        199
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.8835954405367374e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3828.79137875406,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 6,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-41",
+    "H": [
+      214,
+      198
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      35
+    ],
+    "first_replaced": 10,
+    "last_replaced": 35,
+    "full_replay": {
+      "seconds": 0.020458156999666244,
+      "completed": true,
+      "H": [
+        214,
+        198
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.73289580643177e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2670,
+        "L": 267,
+        "gain": -0.03744970484160042
+      }
+    ],
+    "source_score": 3824.4788586543655,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 17,
+    "core_violations": 9,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "G-42",
+    "H": [
+      214,
+      191
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      35
+    ],
+    "first_replaced": 10,
+    "last_replaced": 35,
+    "full_replay": {
+      "seconds": 0.020767431997228414,
+      "completed": true,
+      "H": [
+        214,
+        191
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 5.1131006330251694e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3823.0243341526348,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 60,
+    "core_violations": 30,
+    "maker_violations": 0,
+    "new_boundary_violations": 4,
+    "duplicate_sites": 2
+  },
+  {
+    "map": "G-43",
+    "H": [
+      214,
+      194
+    ],
+    "changed_windows": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      35
+    ],
+    "first_replaced": 10,
+    "last_replaced": 35,
+    "full_replay": {
+      "seconds": 0.020399358996655792,
+      "completed": true,
+      "H": [
+        214,
+        194
+      ],
+      "returns": 17,
+      "steps": 178
+    },
+    "single_patch_replay": {
+      "failed_step": 11,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 6.364897126331925e-05
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "A",
+        "N": 2662,
+        "L": 242,
+        "gain": -0.006916478390034425
+      }
+    ],
+    "source_score": 3819.4182523481404,
+    "changed_current_coordinates": 832,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 42,
+    "core_violations": 21,
+    "maker_violations": 0,
+    "new_boundary_violations": 3,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "H-0",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [],
+    "first_replaced": 0,
+    "last_replaced": 0,
+    "full_replay": {
+      "seconds": 0.02085745899239555,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 188
+    },
+    "single_patch_replay": {
+      "seconds": 0.02108670602319762,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 188
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3873.104944089152,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-1",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80
+    ],
+    "first_replaced": 79,
+    "last_replaced": 80,
+    "full_replay": {
+      "seconds": 0.01632178301224485,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015835101017728448,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3871.8608729122316,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-2",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015598293044604361,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.015624687017407268,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3871.0568828243513,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-3",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015951732988469303,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.015630765992682427,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3870.2999542453863,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-4",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01649999199435115,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015423255041241646,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3869.812811647431,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-5",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016861961979884654,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01633343199500814,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3869.055883068466,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-6",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81
+    ],
+    "first_replaced": 80,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.015330340014770627,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.016128219023812562,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3868.841849351237,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-7",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81
+    ],
+    "first_replaced": 79,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.016371218021959066,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01607929402962327,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3867.70654682187,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-8",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015503918984904885,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015920136007480323,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3866.7937880864356,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-9",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015393700974527746,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016225288971327245,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3865.658485557068,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-10",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016765600012149662,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.015582674997858703,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3862.0253905445843,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-11",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016236780968029052,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.015379516000393778,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3861.7706692935553,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-12",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01495524396887049,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.015707476006355137,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3861.579927361501,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-13",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015610235976055264,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.017320893006399274,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3861.5287049497,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-14",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015944686951115727,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015979936986695975,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3860.781319367664,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-15",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015933706948999316,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01567085098940879,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3860.526598116635,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-16",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01607800298370421,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015664858976379037,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3860.33585618458,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-17",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016866253048647195,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01604888297151774,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3860.2846337727797,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-18",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81
+    ],
+    "first_replaced": 79,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.015005192020907998,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "failed_step": 80,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00015152298146858811
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3859.7527227984983,
+    "changed_current_coordinates": 472,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 9,
+    "core_violations": 6,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-19",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      82
+    ],
+    "first_replaced": 82,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015014441043604165,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "single_patch_replay": {
+      "seconds": 0.015064276987686753,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 106
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3859.393629502072,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-20",
+    "H": [
+      213,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016091181023512036,
+      "completed": true,
+      "H": [
+        213,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015942378959152848,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3858.7341458246347,
+    "changed_current_coordinates": 472,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 10,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-21",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01568288600537926,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.0170149159966968,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3858.1495583251517,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-22",
+    "H": [
+      213,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01586604700423777,
+      "completed": true,
+      "H": [
+        213,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01603128801798448,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3858.0294537925265,
+    "changed_current_coordinates": 472,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 9,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "H-23",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01574762095697224,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.016147431975696236,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.9055904183615,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-24",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016148029011674225,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015808081021532416,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.7622958066686,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-25",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015319430967792869,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015840784995816648,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.6675310807404,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-26",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015307614987250417,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015601023042108864,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.645460917767,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-27",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015223577036522329,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.01578274101484567,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.390739666739,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-28",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01535572501597926,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015244687965605408,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.342187082879,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-29",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015891140035819262,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.01640992402099073,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.3168326235855,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-30",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015950280998367816,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.016318971989676356,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.2656102117853,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-31",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015198367007542402,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015626386972144246,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.230856364209,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-32",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016003612952772528,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.01589715201407671,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.199997734684,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-33",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015706431004218757,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015803661954123527,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3857.148775322884,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-34",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015365716011729091,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015454843000043184,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.97613511318,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-35",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015748234000056982,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015819086984265596,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.734170769325,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-36",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015954501985106617,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01606430095853284,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.661519241441,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-37",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015357951982878149,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015386057959403843,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.6365943992014,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-38",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01618302596034482,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015703438024502248,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.626993277301,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-39",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01603555300971493,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016075894003733993,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.42345990382,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-40",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01642254798207432,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01661850098753348,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.387143771607,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-41",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016539906966499984,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.01568432099884376,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.2219898456424,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-42",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016016882029362023,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016155554971192032,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.181530094218,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-43",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016094729013275355,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01573871204163879,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.132422520579,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-44",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01648547302465886,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01589569402858615,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.130307682418,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-45",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015530915989074856,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015898901037871838,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3856.0981159059584,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-46",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016038641973864287,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01832207600818947,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3855.941680588524,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-47",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016120856977067888,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01583689998369664,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3855.890458176723,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-48",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015986825979780406,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016301071038469672,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3855.3782772530412,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-49",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01597469102125615,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016120776999741793,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3854.276022363605,
+    "changed_current_coordinates": 473,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 11,
+    "core_violations": 7,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "H-50",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015631863032467663,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015596419980283827,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3854.2025183825826,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-51",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015615042007993907,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015623739047441632,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3854.1577853823237,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-52",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81
+    ],
+    "first_replaced": 79,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.01622238999698311,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01553659699857235,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3854.1467076551507,
+    "changed_current_coordinates": 472,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 8,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-53",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015408847015351057,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015593349002301693,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.930964839462,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-54",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016201195016037673,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01803783100331202,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.9172763078877,
+    "changed_current_coordinates": 1,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 5,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 2,
+    "duplicate_sites": 1
+  },
+  {
+    "map": "H-55",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016017862013541162,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015298518992494792,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.8070869251687,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-56",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81
+    ],
+    "first_replaced": 79,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.015055752999614924,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015962389996275306,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.7879615994343,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-57",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01585092197638005,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015181662980467081,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.524429633515,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-58",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01557255903026089,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01593982899794355,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3853.418464030681,
+    "changed_current_coordinates": 474,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 12,
+    "core_violations": 7,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-59",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015228534990455955,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01621153997257352,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.067215853215,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-60",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015706115984357893,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015133249049540609,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3853.059717974964,
+    "changed_current_coordinates": 2,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 6,
+    "core_violations": 3,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-61",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01581248501315713,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015327272994909436,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.9137142054033,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-62",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016021635034121573,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.01602977601578459,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.8978232885847,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-63",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015796922030858696,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015371426998171955,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.8107676022264,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-64",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015505259041674435,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015262141008861363,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.6868936625415,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-65",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015133180015254766,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015999899012967944,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.6717843958013,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-66",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.016835590009577572,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.016141921980306506,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.545594908457,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-67",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01602479297434911,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016297685040626675,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.3891271041475,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-68",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015472678001970053,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015595669974572957,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3852.192230604908,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-69",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015884649008512497,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.5866294389707036,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3852.09864639035,
+    "changed_current_coordinates": 473,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 8,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-70",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015549228002782911,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.01549598597921431,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3851.777626051349,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-71",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01642554602585733,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016216057003475726,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3851.6537521116643,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-72",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      81,
+      82
+    ],
+    "first_replaced": 81,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015512638026848435,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "single_patch_replay": {
+      "seconds": 0.015814320009667426,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 107
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3851.4597092714084,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-73",
+    "H": [
+      213,
+      202
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015999566006939858,
+      "completed": true,
+      "H": [
+        213,
+        202
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.016214284987654537,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [],
+    "source_score": 3851.341717811386,
+    "changed_current_coordinates": 474,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 8,
+    "core_violations": 5,
+    "maker_violations": 0,
+    "new_boundary_violations": 1,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-74",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015615330019500107,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015544290014076978,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3851.1090108142535,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-75",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.0161267890362069,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015550851996522397,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3850.933913458747,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-76",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81
+    ],
+    "first_replaced": 79,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.015318607038352638,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.01680117897922173,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3850.7963559066966,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-77",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 80,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01615901995683089,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "single_patch_replay": {
+      "seconds": 0.015768544981256127,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 108
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3850.227892803683,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-78",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.015267278999090195,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015333825023844838,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3850.215638094487,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-79",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "first_replaced": 79,
+    "last_replaced": 82,
+    "full_replay": {
+      "seconds": 0.01638735202141106,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "seconds": 0.015412553970236331,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04008281351122301
+      }
+    ],
+    "source_score": 3849.973708284886,
+    "changed_current_coordinates": 0,
+    "conclusion": "Retains R336 constraints; exact repeat still tested separately",
+    "violated_links": 0,
+    "core_violations": 0,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  },
+  {
+    "map": "H-80",
+    "H": [
+      214,
+      201
+    ],
+    "changed_windows": [
+      79,
+      80,
+      81
+    ],
+    "first_replaced": 79,
+    "last_replaced": 81,
+    "full_replay": {
+      "seconds": 0.016050637001171708,
+      "completed": true,
+      "H": [
+        214,
+        201
+      ],
+      "returns": 17,
+      "steps": 109
+    },
+    "single_patch_replay": {
+      "failed_step": 80,
+      "reason": "shared-coordinate disagreement",
+      "seconds": 0.00014700903557240963
+    },
+    "reproduces_saved_map": true,
+    "periods": [
+      {
+        "family": "B",
+        "N": 2691,
+        "L": 207,
+        "gain": 0.04034336608030871
+      }
+    ],
+    "source_score": 3849.8334835524292,
+    "changed_current_coordinates": 3,
+    "conclusion": "Rejected as unchanged-R336 reconstruction",
+    "violated_links": 8,
+    "core_violations": 6,
+    "maker_violations": 0,
+    "new_boundary_violations": 0,
+    "duplicate_sites": 0
+  }
+]

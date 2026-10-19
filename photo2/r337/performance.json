@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "output": "/tmp/r337-replay-final-01",
+  "stages": [
+    {
+      "module": "analyze",
+      "seconds": 7.922897265991196
+    },
+    {
+      "module": "bounded",
+      "seconds": 10.219391128979623
+    },
+    {
+      "module": "search",
+      "seconds": 26.72759553202195
+    },
+    {
+      "module": "consequences",
+      "seconds": 2.9103273630025797
+    },
+    {
+      "module": "pattern",
+      "seconds": 0.6478467239649035
+    },
+    {
+      "module": "review",
+      "seconds": 1.5289196000085212
+    },
+    {
+      "module": "verify",
+      "seconds": 4.399599866999779
+    }
+  ],
+  "exact_artifacts": [
+    "results/active-domains.json.gz",
+    "results/active-staircases.json.gz",
+    "results/active-translations.json",
+    "results/analysis.json.gz",
+    "results/consequences.json.gz",
+    "results/input-seal.json",
+    "results/interior-domains.json.gz",
+    "results/interior-staircases.json.gz",
+    "results/interior-translations.json",
+    "results/maker-review.json",
+    "results/pattern208.csv",
+    "results/pattern208.json",
+    "results/topology.json",
+    "bounded/states.json.gz",
+    "bounded/summary.json",
+    "search-results/candidates.json.gz",
+    "search-results/comparisons.json",
+    "search-results/replays.json.gz",
+    "search-results/scope.json",
+    "search-results/summary.json",
+    "review/G-28-native.png",
+    "review/J-4-native.png",
+    "review/R328-1-native.png",
+    "review/data.js",
+    "review/domain208.svg",
+    "review/generation.json",
+    "review/index.html",
+    "review/native-crops.json",
+    "review/style.css",
+    "review/unwrapped.svg",
+    "review/viewer.js"
+  ],
+  "seconds": 59.796901109977625,
+  "children_peak_rss_mib": 920.69140625,
+  "ignored_fields": [
+    "seconds",
+    "peak_rss_mib"
+  ]
+}

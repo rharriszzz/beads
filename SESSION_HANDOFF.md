@@ -1,3 +1,37 @@
+# R337 completed — primitive partial208 pattern, coherent closure; STOP
+
+Read photo2/R337_REPORT.md and R337_REPRODUCE.md. Start a6e16d54, branch
+photo-2-strategy-v3. Review photo2/r337/review/index.html. Maker approves current
+C-1423-3004 and C-0481-1576 labels/adjacencies; large gaps retained. No invented
+beads, links or row changes. Earlier maker-reviewed illustrations remain protected.
+LATEST maker update: nonmultiple-of13 is only a HOPE, not an exclusion or penalty.
+208/338/207/299 are all eligible;299=13x23 (old reports miscalled it non13).
+Current graph exact1057records/1039indexed/2284links/H214,201; all identities,
+colors/XY/AB/exclusions preserved. Main connection: H=13(16,16)+(6,-7), and
+A(6,-7)=0. Thus spatial recurrence can be13 actual208 repeats under A, N2704.
+Leading conditional partial208 block:176strong unanimous colors/32unknown;
+24conflicted residues+8insufficient. Every proper divisor of208 rejected by the
+strict subset;104 has13 different-color pair witnesses. Not complete exact truth.
+710core has9minority records/6residues despite zero significant R336 flags;
+full32/24. Spatial429/440 and713/746 remain. All-color geometry/maker decisions
+retained; no speculative recoloring. Common BR/BY domain supports learned local
+staircases, branches/unknowns preserved; no unique full spiral strands asserted.
+1969spatial domains/cohort;A208 beats B208. Signed graph1246cycles:1241zero/5H.
+170paths/62distinct extended maps/169seed replays/468exact own-count fits include
+multiples13. New width32 cached substitutions177-181 and78-83 give25states;
+J4/J9 windows178-180 H214,202 A271/N2710 preserve reviewed links but change7links,
+3new-body boundaries;poor held predictions, not adopted. CurrentA208 bestflat
+.479common871, hier.787; non13best.042. Strictblock176/32 and CSV sourcekeys;
+fulloccurrence208 gain.701flat/.929hier. Geographic455predictions448agree;
+not blind. Earlierhard13/export/protection epochs preserved as superseded.
+Independent1461oldhashes/2284equations/3938domains/388280extensionequations/
+468fits/motif/nativecrop checks, offline/narrow browser and fresh exact replay.
+No detector/classifier/renderer/physical fit, no original graph or bead edits.
+Next: independent evidence for exact208 conflicts/unknowns, original graph paper
+or independent totalcount if available; no re-questioning approved unusual gaps.
+STOP after scoped commit/push/remote verification. No automaticR338, new adoption,
+model/session switch or /new.
+
 # R336 completed — phantom evidence rejected, identities/roles cleaned, five repairs; STOP
 
 Read photo2/R336_REPORT.md and R336_REPRODUCE.md. Start8c8ecab. Current review

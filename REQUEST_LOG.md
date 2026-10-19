@@ -9645,3 +9645,22 @@ Two visible cachedrow questions C1423 and C0481;solvedcases onlycompletedappendi
 Independent native/numerical/R161/910oldhashes and actualbrowser checks. Fresh
 boundedreplay8.8s exactscience excepttime. Logs/handoff and remote receipt delivered;
 STOP for review, no automaticR337.
+
+## R337 — recover the actual stringing pattern from the reliable lattice
+
+User authorizes a substantive bounded spatial/topological experiment from R336
+a6e16d54, preserving reliable rows, identities, exclusions and maker corrections.
+Both remaining R336 gap regions are approved; do not repair their large gaps.
+Analyze the710 cohort and all1039 separately, learn spatial motif structure,
+reexamine A/B string maps and cyclic closure, replay coherent cached alternatives,
+validate held sections/occurrences, show graph-paper and incomplete string blocks.
+During work, user explicitly relaxed non13 to a hope: multiples13 are allowed
+without exclusion or penalty. Earlier hard-filter epochs are superseded.
+
+Delivered R337: H=13(16,16)+(6,-7), A kernel zero, N2704/13 repeats208. Strict
+176 known/32 unknown partial primitive208 block; no full exact adoption. Domains,
+cycles,170path/62map comparison and468 exact-divisor fits; two bounded patch
+searches, current208 leads. New A271 closure preserves maker links but fails
+colors and later boundaries. All original graph/maker decisions unchanged.
+Independent checks, offline review, reproducible fresh replay, scoped commit/push
+and remote confirmation, then STOP; no automaticR338.
