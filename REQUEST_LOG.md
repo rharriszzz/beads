@@ -9491,3 +9491,7 @@ zero wrong,3new associations+9links;not a new blind test. No period/model/growth
 winding search. INITIAL_QUESTION records updated black eligibility, old history
 preserved. Next only after review: concrete unresolved groups in expanded native
 contexts. No automatic R333 or model/session change. Receipt records actual delivery.
+
+R332 scientific delivery: `c0b5b4dc4d0cc95132570b8ba796a2888a94007f` pushed to origin/photo-2-strategy-v3,
+independently confirmed by git ls-remote. All105 curated manifest files checked;
+source/graph unchanged by delivery receipt. See photo2/r332/delivery.json.

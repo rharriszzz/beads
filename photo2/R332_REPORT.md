@@ -119,7 +119,7 @@ Each pass:
    link corridor. There is no two-window admission requirement or artificial
    geographic boundary. Geometry alone never establishes a new body or link.
 5. Search vacancies predicted by multiple neighbors for additional native body
-   evidence, then use accepted additions in the next pass. Provisional observations
+   evidence, then use accepted additions in the next pass. New provisional observations
    never become anchors or occupy an accepted site.
 
 The selected passes add127,13,1, then0 assignments. Growth stops there.
