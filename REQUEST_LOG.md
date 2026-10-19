@@ -9421,3 +9421,7 @@ analysis37s, no new growth/fit/render. Preserve initial R331 epochs and document
 corrections. Delivery commit/remote confirmation recorded separately under r331.
 Single most valuable next investigation, only on later authorization: bounded
 color-independent G body/diagonal correspondence, followed by implicated replay.
+
+R331 scientific delivery: `3da9986960c37883e0af8f42ca7804b8b0b1cb6f`, pushed to origin/photo-2-strategy-v3 and
+independently confirmed by git ls-remote. All68 manifest files checked unchanged;
+local status clean before receipt. Receipt: photo2/r331/delivery.json.
