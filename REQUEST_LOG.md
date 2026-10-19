@@ -9616,3 +9616,32 @@ native records accessible;657historical scientificfiles exact. Fixed208consensus
 180known/28unknown,6guarded rule disagreements;no full period/spiral search or
 recovered shortest pattern. Independent numerical/native/annotation checks and
 actual browser test. Scoped commit/push and independent remote receipt, then stop.
+
+
+## R336 — maker identities, false body evidence and blocked-link repairs
+
+User reviewed all ten R335 problems. Each number is local to its named photograph.
+Uniform outside bead size/shape and common alignment apply to black/red/yellow;
+reflections alone do not establish extra beads. Before other changes, investigate
+R332-B-0196-0183 and R332-B-0138-0130 exact native pixels/provenance and fix any
+shared defect, checking candidates globally. Apply E5-1499-3037 phantom/lighting
+only;E7-2235-1306,E5-0948-2669,E5-0986-2754 weak/inactive. R332-B-0098-0092 1=P
+one reflection-free bead, not feature2;C-1979-2669 1=P one edge yellow. REC266-
+P146299 yellow;NEW-1927-2829 red,preferexcludeedgepattern. Preserve all history.
+Recheck five blocked links using remaining native/geometry/equation gates, not
+exclusion alone. Compare consistent cohorts under existing16,16/208 diagnostics;
+no broad pattern/physical search. Show only important NEW visible questions,
+with native numbered photographs, current diagrams/fullkeys;commit,push,verify,stop.
+
+Completed causal audit before revision: actual pixels correct, but prediction-
+seeded component/centroid/resample loop counted neighbor/edge/shadow as body.
+32->208 and143->246 exactresponse pixels. New typed response/ownership gate blocks
+such automaticidentity;687records checked, no riskflag equated tophantom. Ten
+maker decisions ledgered;7recorded exclusions,2color corrections,2single1=P
+associations deferred;no otherphysicalmerge/XY/ABedit. Five links pass remaining
+checks and added,6old incidentedge links inactive. Active1057/1039/2284, retained
+1064/1041/2290. Fixedmatcheddiagnostics separatecolor/exclusion/link/cohorteffects.
+Two visible cachedrow questions C1423 and C0481;solvedcases onlycompletedappendices.
+Independent native/numerical/R161/910oldhashes and actualbrowser checks. Fresh
+boundedreplay8.8s exactscience excepttime. Logs/handoff and remote receipt delivered;
+STOP for review, no automaticR337.

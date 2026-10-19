@@ -7,6 +7,20 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current bead-identity instruction — R336
+
+All beads have the same outside size/shape regardless of color and share the local
+crochet alignment. A reflection, dark component or predicted site is not a new
+bead. Maker-reviewed phantoms/weak/edge observations carry explicit excluded roles;
+their pixels and IDs remain historical evidence. Distinguish separate body identity
+from pigment classification, reflection location and lattice prediction. R336's
+native response contract prevents darkness alone from establishing a visible body.
+Respect the exact maker colors yellow REC266-P146299 and red NEW-1927-2829; both
+are excluded edge records for active fitting/pattern work. See [R336](photo2/R336_REPORT.md)
+for the ten decisions, two accepted1=P associations, five repaired working links,
+active-role layer and the current remaining review. No new broad pattern/physical
+search or complicated edge-hue procedure is authorized this round.
+
 ## Current global application and review instruction — R335
 
 The maker confirmed R334's original fixes and accepted its eight named priority

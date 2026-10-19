@@ -1,3 +1,52 @@
+# R336 completed — phantom evidence rejected, identities/roles cleaned, five repairs; STOP
+
+Read photo2/R336_REPORT.md and R336_REPRODUCE.md. Start8c8ecab. Current review
+photo2/r336/review/index.html has TWO visible row-continuation questions only:
+C-1423-3004 and C-0481-1576, each4real visible bodies/current diagrams/fullkeys.
+Currenttwo-hop routes vs saved direct nonprimitive alternatives; no adoption.
+Cached contexts are correlated, current graph may be right; no invisible questions.
+AllTEN R335 maker decisions applied from exact own-panel local numbers. E5-1499-
+3037phantom retained as lighting only;E7-2235-1306/E5-0948-2669/E5-0986-2754 weak
+excluded from bead roles. Two rejected candidates R332-B-0196-0183 and B-0138-
+0130 were never indexed. Native coordinates correct, no crop/orientation/scalebug.
+Actual defect: prediction-seeded dark connected component -> centroid move ->
+resampling larger neighbor/edge/shadow response, mislabeled glass/body evidence.
+32->208pixels and143->246;exactpixels+R334/R335annuli in completed evidence.html.
+Filled foreground/shadow and dark masks do not establish separate bodies. New
+R336 typed response contract cannot create/propagate bead identity from darkness,
+reflection, prediction or centroid alone.687native records scanned:194black/
+60prediction-seeded black;158all-color relocations>=6px riskflags, NOTphantomcount.
+Seven old working body-only black contexts inspected, no new blind certification
+or automatic exclusion merely from riskflags. Historical code preserved.
+Maker R332-B-0098-0092 feature1=P one reflection-free body at98,92;deferactivefit/
+pattern, preserve REC266-P134549 cachealias;D40-K-1036-2780 remains DISTINCT.
+C-1979-2669 feature1=P one yellowbody at71,66, excludededge. REC266-P146299 maker
+YELLOW;NEW-1927-2829 maker RED; both excludedactivefit/pattern. No hue retuning.
+Allfive formerly withheld coordinate links pass remaining native corridor,
+interveners, common local spacing (.952-1.175ratio) and modulo-H checks;added as
+working repairs, not from excludedblocker alone. Filledfg1.0,raw .106-.844 retained
+and NOT glassproof. Common all-color geometry/supportspacing not physicalcenters.
+1064records/1041coordinates/2290links retained, originalXY/ABexact. Selectedactive
+1057records/1039indexed/2284links/onecomponent/H214,201;7recordedexclusions,
+6incidentoldlinks inactive,5new. No activecandidateadmissions or false merges.
+Explicit independent counting/indexing/obstruction/fitting/pattern roles; unknown
+unindexed supports do not establish blockers merely by existing as points.
+Fixed diagnostics only, no period/winding/renderer/classifier/template search.
+Same1041colors:6->4breaks,713->715/748 recurrence. Commonactive1039before/after:
+4flags/713of746exact. Frozen710support degree>=4 interiorPROXY:0flagsbefore/after,
+429/440;149known/59unknown208 vsbroader180/28. Cohortselection NOT accuracygain.
+FixedBR3/3,BY2/2;commonactive63regular traces cover623->627 after5links;max16/15.
+Strictcore30traces/280coverageunchanged. Actualshortestrepeat stillunidentified.
+Independent10mapping/4causalpixelsets/all8displayedsamples/687response records/
+5repairs/2284equations/1039quotients/6cohorts/3136pathincidences/51labels/11literal
+crops pass.910historical scientificfiles exact. R16133assoc/25interior/65links/
+45interior/0wrong unchanged. ActualR335tenDOMkeys and R336offline/narrow/zoom/
+navigation/pixelcontrols checked. Freshsciencereplay8.8s/1.62GiBpeak exactexcepttime;
+comparison-only receipt explicit. Completeddiagnosticsnotmakerquestions.
+Reproduction/ledgers/lighting RGB/nativeplots/receipts under r336;delivery.json.
+STOP for review. No automaticR337, new geometry/count/winding/repeat adoption,
+model/session switch or /new.
+
 # R335 completed — global pigment application and current-problem review; STOP
 
 Read photo2/R335_REPORT.md and R335_REPRODUCE.md. Current review:

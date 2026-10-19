@@ -1,0 +1,135 @@
+[
+  {
+    "id": "C-1423-3004",
+    "name": "problem-01",
+    "panel": "problem-01",
+    "category": "association",
+    "kind": "link",
+    "title": "Two visible diagonal routes versus a direct cached continuation",
+    "critical": [
+      "E5-1455-3009",
+      "C-1440-3032",
+      "REC266-P144445"
+    ],
+    "examples": [],
+    "belief": "The current working graph connects #1 to #2 through #3 or #4. Their raw lattice difference is (\u22121,\u22121), so #1\u2013#2 is not an accepted primitive link. Saved local alternatives from 5 overlapping windows instead propose a direct one-family continuation. Those are correlated hypotheses, not independent confirmations.",
+    "alternative": "The existing two-direction staircase may be correct; projection can make two-step neighbors look close. A true direct continuation would require a coherent row reassignment and boundary-link audit. Adding this line alone would contradict the current lattice.",
+    "look": "Follow the actual visible bead-body rows through #1, #2, #3 and #4, using the surrounding colored bodies as size/alignment references. Solid cyan/green lines show the current routes; dashed magenta shows the competing direct continuation. Do not infer separate bodies from glints.",
+    "question": "Do the two solid diagonal routes follow the visible row alignments, or does the dashed #1\u2013#2 segment continue one of those same rows? If the photograph cannot distinguish them, say so.",
+    "rationale": "A row-direction decision affects several existing neighbor equations; no isolated index edit or new link has been adopted.",
+    "cached_alternatives": [
+      {
+        "source": "C-1423-3004",
+        "target": "E5-1455-3009",
+        "delta_ab": [
+          -1,
+          0
+        ],
+        "supporting_windows": [
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "baseline_coordinate_compatible": false,
+        "classification": "competing local row/direction"
+      },
+      {
+        "source": "C-1423-3004",
+        "target": "E5-1455-3009",
+        "delta_ab": [
+          0,
+          -1
+        ],
+        "supporting_windows": [
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "baseline_coordinate_compatible": false,
+        "classification": "competing local row/direction"
+      },
+      {
+        "source": "C-1423-3004",
+        "target": "E5-1455-3009",
+        "delta_ab": [
+          -1,
+          1
+        ],
+        "supporting_windows": [
+          71
+        ],
+        "baseline_coordinate_compatible": false,
+        "classification": "competing local row/direction"
+      }
+    ]
+  },
+  {
+    "id": "C-0481-1576",
+    "name": "problem-02",
+    "panel": "problem-02",
+    "category": "association",
+    "kind": "link",
+    "title": "Two visible diagonal routes versus a direct cached continuation",
+    "critical": [
+      "K-0516-1582",
+      "C-0505-1557",
+      "K-0496-1602"
+    ],
+    "examples": [],
+    "belief": "The current working graph connects #1 to #2 through #3 or #4. Their raw lattice difference is (\u22121,\u22121), so #1\u2013#2 is not an accepted primitive link. Saved local alternatives from 4 overlapping windows instead propose a direct one-family continuation. Those are correlated hypotheses, not independent confirmations.",
+    "alternative": "The existing two-direction staircase may be correct; projection can make two-step neighbors look close. A true direct continuation would require a coherent row reassignment and boundary-link audit. Adding this line alone would contradict the current lattice.",
+    "look": "Follow the actual visible bead-body rows through #1, #2, #3 and #4, using the surrounding colored bodies as size/alignment references. Solid cyan/green lines show the current routes; dashed magenta shows the competing direct continuation. Do not infer separate bodies from glints.",
+    "question": "Do the two solid diagonal routes follow the visible row alignments, or does the dashed #1\u2013#2 segment continue one of those same rows? If the photograph cannot distinguish them, say so.",
+    "rationale": "A row-direction decision affects several existing neighbor equations; no isolated index edit or new link has been adopted.",
+    "cached_alternatives": [
+      {
+        "source": "C-0481-1576",
+        "target": "K-0516-1582",
+        "delta_ab": [
+          -1,
+          0
+        ],
+        "supporting_windows": [
+          149,
+          150,
+          151
+        ],
+        "baseline_coordinate_compatible": false,
+        "classification": "competing local row/direction"
+      },
+      {
+        "source": "C-0481-1576",
+        "target": "K-0516-1582",
+        "delta_ab": [
+          0,
+          -1
+        ],
+        "supporting_windows": [
+          149,
+          150,
+          151,
+          152
+        ],
+        "baseline_coordinate_compatible": false,
+        "classification": "competing local row/direction"
+      },
+      {
+        "source": "C-0481-1576",
+        "target": "K-0516-1582",
+        "delta_ab": [
+          1,
+          -1
+        ],
+        "supporting_windows": [
+          149
+        ],
+        "baseline_coordinate_compatible": false,
+        "classification": "competing local row/direction"
+      }
+    ]
+  }
+]
