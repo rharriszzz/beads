@@ -5360,3 +5360,26 @@ Remote integration retained incoming explanatory work through 9695f4f5. Previous
 Markdown is linked at ILLUSTRATED_GUIDE_PREVIOUS.md; incoming HTML/four SVGs are
 unchanged. guide/integration.json records byte-for-byte preservation. Delivery
 uses a merge, with the new directional lesson as the guide's first link.
+
+# R329 corrected photographic reasoning — STOP for review
+
+New entry: photo2/r329/photographic_diagnostics/README.md, linked first from
+ILLUSTRATED_GUIDE.md. Old lesson/guide byte-preserved in *_BEFORE_BODY_REVIEW.md.
+This supersedes the previous explanatory claim of first physical mismatch at31.
+Colored pigment proxies and separate local family fields replace black-reflection
+positioning. Estimate bridge diagonal first, compare within that family only.
+E closest fails green-family bridge and withheld colored target (24–33px vs0.6–9.1);
+K index remains1732, C1721 changes1739→1738. Six exact parent/patch provenance records
+explain old support-score compensation; zero old shape penalty. Reversible three-
+window screen keeps single-seed search and recovers exact primary900/17returns.
+F renders actual frozen N3000 geometry at.5px, all3000 bodies; zero unresolved rays,
+120 originalPython ray checks exact. Colored coverage at26/38 is39%/20%; atzero59%.
+Black positioning/identity uncertain; no first physical-error claim. G target test
+favors alternative locally, family uncertain. H weak working preference; alternative
+omits visible red C1144; no proven physical skip. Four saved paths replay17returns.
+14 inspected annotated PNGs,162 labels,4 exact crops;1089 baseline files preserved;
+black-coordinate and family-isolation controls pass; desktop/narrow/offline preview.
+Scripts and reproducible data in same directory, no historical sources/results changed.
+Next: human review of colored-row reasoning and actual-model overlays. No automatic
+R330/count/pattern/model adoption. Keep current session and user-preferred model;
+no /new needed and no automatic model switch.

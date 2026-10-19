@@ -9309,3 +9309,34 @@ incoming/preserved hashes are recorded in guide/integration.json. New lesson rem
 the recommended entry point; scientific reconstruction files remain unchanged.
 Final integrated check passes 43 Markdown links and byte-preservation of all six
 incoming explanatory files, in addition to the unchanged 292-file science baseline.
+
+## R329 photographic-diagnostic correction request
+
+User identifies Figure E as a possible photographic counterexample and rejects
+black-reflection ownership as physical positioning evidence. Investigate candidate
+provenance and parallel colored-bead row geometry; replace E/F/G/H explanations
+with explicitly visible photographic, lattice and model comparisons. Add a measured
+continuity diagnostic without changing R328 single-seed growth or historical science.
+Actual frozen-model body geometry may be generated for diagnosis; no fitted model
+or final reconstruction adoption requested. Preserve previous guide/results.
+
+Latest clarification: estimate which diagonal a colored sequence follows before
+comparing it with reference rows; colored rows occur in either family. Implemented
+separate measured family fields, robust bridge-family assessment over 27 variants,
+and explicit uncertainty rather than pooling diagonals.
+
+Outcome: corrected GitHub lesson in photo2/r329/photographic_diagnostics/README.md;
+14 annotated figures/162 colored-label occurrences/four exact unannotated crops.
+E closest alternative fails a held-out colored-body continuity test (24–33px versus
+0.6–9.1px working); exact candidate provenance explains compensating support rewards
+and zero old primitive-shape penalty. Isolated three-window screen preserves R328
+single-seed growth and reproduces primary900/17returns. No historical result edited.
+F replaces black-reflection positioning with actual frozen body footprints and
+colored-pigment coverage. Withdraws “first physical mismatch31”; black body placement
+remains uncertain and model already disagrees with colored material at reference0.
+G local target prediction favors alternative but family/curvature uncertain; H modest
+working preference and visible omitted red C1144, no proven skip or unique winding.
+All four old histories replay17returns. Negative controls exclude black positions
+and cross-family mixing;120 independent Python model rays agree.1089 baseline files
+preserved including two exact guide archives. Offline desktop/narrow preview passes.
+Stop for photographic review; no R330, final count/pattern or model adoption.

@@ -1,0 +1,90 @@
+{
+  "scope": "Primary agent separately inspected each generated PNG at 1000/1100px reading width and selected browser screenshots at 880px. This is visual review, not an independent human or second-agent scientific certification.",
+  "figures": [
+    {
+      "file": "e-colored-cyan.png",
+      "sha256": "4af6b9d922ff7133d7bef0a54420226f19d924ed45e570e09cfa7756a1515b4e",
+      "reviewed": true
+    },
+    {
+      "file": "e-colored-green.png",
+      "sha256": "2c8cadcdca9539d21689a8f9a20e679430f9044b9433b09bb48bb9617b1d3a3f",
+      "reviewed": true
+    },
+    {
+      "file": "d-derived-colored.png",
+      "sha256": "0fee3724a9c91fa7635527c47396f63a076d8f034cb7c538519941db5a84b4ca",
+      "reviewed": true
+    },
+    {
+      "file": "e-working.png",
+      "sha256": "1f0928bd1208b025a4895eef05e420282eabd0fc351b50870f95cc5495b82a3e",
+      "reviewed": true
+    },
+    {
+      "file": "e-alternative.png",
+      "sha256": "fa511b11c0f2f73f82228b7cd6525fae7c90bd611a03b04296ea688b5035876d",
+      "reviewed": true
+    },
+    {
+      "file": "f-photo.png",
+      "sha256": "6b765d5add70936acbe31bea45b8bab46e8cad9956dc1dfbe1ddfa998993e75e",
+      "reviewed": true
+    },
+    {
+      "file": "f-model.png",
+      "sha256": "de8895e75cafc176ad5f577e70e4ff074801d4858566de0e2ee2f66d7dc96073",
+      "reviewed": true
+    },
+    {
+      "file": "f-material.png",
+      "sha256": "f24107a91fdf9f3d1c47cc2b726268fed08e8558b5c83cf2251bdd6ea1bd576c",
+      "reviewed": true
+    },
+    {
+      "file": "g-photo.png",
+      "sha256": "351676fb8986abd52dc645f1ddf332beeb451a0898ab40599045bece5fb5ad44",
+      "reviewed": true
+    },
+    {
+      "file": "g-working.png",
+      "sha256": "3b591f0b4b5edc35cc93e34d89a3cbab48061c7212875b3a3cd2abb2409b82b5",
+      "reviewed": true
+    },
+    {
+      "file": "g-alternative.png",
+      "sha256": "88d0721d31df26742819e95ed79d039ee647f23aee09c07b81d0b7ca27797e93",
+      "reviewed": true
+    },
+    {
+      "file": "h-photo.png",
+      "sha256": "69ddddcf7c65a19c5f72fae8ccd0a96dcbf1251dd586799758b9ad94af82f2bb",
+      "reviewed": true
+    },
+    {
+      "file": "h-working.png",
+      "sha256": "6998e11996610308f5624aff296b1ce7336580c86d8f2d5fbb9bf14490c375c9",
+      "reviewed": true
+    },
+    {
+      "file": "h-alternative.png",
+      "sha256": "45a108a997eaefdd4f1a688fc06bdf6c659053dd53b7bf6e6c373040499ca852",
+      "reviewed": true
+    }
+  ],
+  "checks": [
+    "All labeled IDs in local keys have visible numbered colored regions.",
+    "E shows held-out colored target and separate same-diagonal reference rows; K index stays 1732 while C changes 1739 to 1738.",
+    "F shows actual native-model raster boundaries, model centers and measured colored pixels outside assigned visible bodies.",
+    "G/H retain direction uncertainty and do not claim their inferred blue boxes measure black centers.",
+    "G crop enlarged after initial review to contain broad slot uncertainty.",
+    "Cream pigment edges are explicitly partial measured regions, not inferred complete bead contours.",
+    "Unshown historical predecessor, downstream winding arithmetic and zero-reference model boundary are explicitly identified as not shown.",
+    "Four unannotated crops provide unobscured original pixels."
+  ],
+  "limitations": [
+    "At narrow phone width, open PNG at full resolution to read detailed keys.",
+    "Reference-chain topology is photo-reviewed conditional structure, not independently certified truth.",
+    "Blue slot boxes are sensitivity/control envelopes, not physical body outlines or statistical confidence intervals."
+  ]
+}

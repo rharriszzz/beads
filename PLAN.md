@@ -3825,3 +3825,14 @@ early-row and lower-bend comparisons. Fourteen annotated figures and five raw
 crops generated from frozen data. Data/preservation and offline preview checks pass.
 Next task: human review of whether the directions and differing row memberships
 are understandable directly from these pictures. No new scientific round authorized.
+
+# R329 photographic-diagnostic correction — completed; STOP
+
+Read photo2/r329/photographic_diagnostics/README.md and METHOD_REPORT.md.
+Separate same-diagonal colored-material fields; no black-light positioning input.
+E mixed-family candidate fails held-out colored bridge; isolated local screen still
+recovers primary900/17returns. F actual model footprints demonstrate colored-material
+disagreement, not a proved black-center error or first physical error31. G/H remain
+uncertain; H alternative omits visible red observation. Prior science preserved.
+Verification, browser and visual-review receipts are beside the new lesson.
+Next task: user photographic review of E/F/G/H. No automatic R330 or adoption.
