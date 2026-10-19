@@ -1,0 +1,35 @@
+{
+  "round": "R334",
+  "baseline_commit": "acd51b0bcd586e812e1979258de8b402094fb634",
+  "scientific_commit": "79ddad59f6be3f78da3b056a03ca637f05719c1e",
+  "branch": "photo-2-strategy-v3",
+  "remote": "origin",
+  "independent_ls_remote_commit": "79ddad59f6be3f78da3b056a03ca637f05719c1e",
+  "remote_confirmed_utc": "2026-10-19T21:16:04.590868+00:00",
+  "hashes": {
+    "manifest.json": "2faa27ab27039fef2730bf3a9f3feb035beee254cfe486f0bc5f835649013db8",
+    "input-seal.json": "815d9ed21c4b8129b386d3f1d6d22bf89db9dae09af6c789b4e37820954cadca",
+    "verification.json": "01e1171d13f798ddd606aa68713c274e5fb2984a20727a08dd5b3348b041edf0",
+    "controls-verification.json": "8e23504a5dd6caefcd038b379d333eac9801e1f780a61e238bc2fd6cc4865b8e",
+    "performance.json": "d4ee18e64fc517c0745553dc6027aa0f1bea02d63ea8140b363266e52941882b",
+    "review/browser-verification.json": "006a1b3e043ebbd6c5f11478e09641b67a8ea54b4e1927bf6a217427d26ec70f"
+  },
+  "accepted_changes": {
+    "maker_color_corrections": 7,
+    "different_body_reassociation": 1,
+    "lattice_coordinate_edits": 0,
+    "added_or_removed_links": 0,
+    "automatic_corrections": 0
+  },
+  "classifier": "Test intensity immediately outside reflection first, without hue; only not-black runs red/yellow inference; unknown abstains.",
+  "partial_result": {
+    "original_interruptions_resolved": 6,
+    "remaining_relearned_disagreements": 14,
+    "partial_208_known": 170,
+    "partial_208_unknown": 38,
+    "actual_shortest_repeat_recovered": false
+  },
+  "verification": "Numerical, native pixel, matched-cohort feedback, historical preservation, exact fresh replay and offline desktop/narrow browser checks passed.",
+  "receipt_policy": "This receipt follows the independently confirmed scientific commit. Its own commit is pushed and confirmed separately at delivery.",
+  "stop": "Stop for maker review. No automatic R335 or additional correction/count/winding adoption."
+}
