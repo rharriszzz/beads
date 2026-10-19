@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "fresh_output": "/tmp/r335-replay-01",
+  "stages": [
+    {
+      "stage": "application",
+      "wall_seconds": null,
+      "process_elapsed_seconds": 16.86,
+      "peak_RSS_MiB": 2430.453125
+    },
+    {
+      "stage": "review",
+      "wall_seconds": null,
+      "process_elapsed_seconds": 5.24,
+      "peak_RSS_MiB": 2050.9453125
+    },
+    {
+      "stage": "verify",
+      "wall_seconds": null,
+      "process_elapsed_seconds": 6.23,
+      "peak_RSS_MiB": 2121.703125
+    }
+  ],
+  "total_process_wall_seconds": 28.33,
+  "comparison_only": true,
+  "comparison_or_full_wall_seconds": 5.6493031900026836,
+  "parsed_scientific_equality": [
+    "results/application.json.gz",
+    "results/graph.json.gz",
+    "results/remaining.json.gz",
+    "results/summary.json",
+    "review/generation.json",
+    "review/ledger.json.gz",
+    "review/native-crops.json",
+    "review/panels.json.gz"
+  ],
+  "viewer_data_exact_excluding_seconds": true,
+  "native_crops_exact": 208,
+  "viewer_templates_exact": true,
+  "policy": "One fresh bounded replay; historical scientific files unchanged; no classifier training, new spiral search or period scan. Comparison-only mode checks already completed fresh stages without repeating them."
+}

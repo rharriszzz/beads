@@ -9587,3 +9587,32 @@ saved-map divisor fits negative.16whole-stripe207 transforms predictwell but bre
 Independent4800annular/399lighting/1624period checks, R161regressions/history preserved.
 Fresh main pipeline exact~104s/2.71GiB, supplemental feedback verified. Stop for
 review, no automatic R335 or model/session switch. Delivery receipt records push.
+
+
+## R335 — current problems, then global red/black application
+
+Start R334 delivery4e40da6 on photo-2-strategy-v3. The maker confirms R334's before/
+after fixes were correct; an earlier complaint confused original and corrected
+panels. Request a new current unresolved review with numbered original photographs,
+current color/adjacency diagrams, complete keys, useful visible gaps/associations,
+no repetition of solved targets. Initially presentation-only, no large search.
+The maker stopped twice. Those stops were obeyed; only an uncommitted selection
+contact sheet existed, no graph/classifier changes or delivery had occurred.
+
+Steering then accepted all eight R334 priority red-to-black candidates and asked
+for the most significant OTHER problems. Latest authorization broadens scope:
+"Solve them all using the new procedure. report them to me only if you are worried
+you got it wrong." Apply red/black processing globally, then show remaining issues;
+ordinary red/black cases should not dominate another maker review.
+
+Completed: all1600supports checked against saved R334 procedure plus an independent
+compact luminance-reflection mask audit. Caught actual broad-mask failure excluding
+red body and testing dark edge; no blind batch adoption. Original classifier/code
+unchanged. Eight accepted colors plus7further recorded corrections;12candidate-label
+updates without admission. No XY/AB/link/H edits. New current layer only. Ten primary
+review questions cover all5withheld links in4identity regions,3provisional body
+associations,1unindexed yellow,2remaining pattern/association conflicts.90secondary
+native records accessible;657historical scientificfiles exact. Fixed208consensus
+180known/28unknown,6guarded rule disagreements;no full period/spiral search or
+recovered shortest pattern. Independent numerical/native/annotation checks and
+actual browser test. Scoped commit/push and independent remote receipt, then stop.

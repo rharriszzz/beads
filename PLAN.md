@@ -1,3 +1,44 @@
+# R335 completed — global pigment application and current-problem review; STOP
+
+Read photo2/R335_REPORT.md and R335_REPRODUCE.md. Current review:
+photo2/r335/review/index.html. Start 4e40da6. Maker confirms all original R334
+fixes and accepts its eight priority red->black candidates. Those are no longer
+questions. Subsequent user instruction authorizes GLOBAL red/black application,
+then show the important remaining problems; do not request ordinary pigment votes.
+All1600 supports checked using frozen R334 evidence plus a compact luminance-lobe
+mask audit. Actual broad-mask failure caught: whole red body excluded, dark edge
+misread as black. No blind adoption of all old flags. No hue/pattern enters black.
+Eight newly maker-accepted recorded colors plus7 further recorded red->black;
+5of7 indexed,2remainunindexed.12candidate-label changes=6provisional+6othernative;
+none admitted/associated. No black->red flips; insufficient evidence keeps labels.
+R335 results/graph.json.gz selected:1064records/1041sites/2285links/onecomponent;
+indexed358R/316Y/367B. All XY/AB/links/H214,201 unchanged from R334. Original
+maker location correction and separate yellow body retained; old science intact.
+Only fixed (16,16) diagnostic/208 consensus refreshed, no search/training/render:
+14->6guarded disagreements;5red/black-only rule conflicts retained computationally,
+not another maker color queue.208consensus180known/28unknown vs170/38; fitted
+agreement, not shortest pattern or blind accuracy. Maker-compatible repeat unresolved.
+TEN primary questions:4identity/link regions cover all5withheld coordinate links;
+3provisional black-body identities;1visible unindexed yellow;2pattern/association
+conflicts. K1508,E5-1499;K2225,E7-2235;NEW946,E5-0948;NEW985,E5-0986 are key
+identity regions. REC266-P146299 red/yellow;NEW-1927-2829 association/rule case.
+No re-questioning solved maker targets. Every targetfeature1;comparisons own keys.
+Current numbered photo+immediately matched diagram;native body/context crops,
+zoom/pan,next/previous,complete IDkeys. Primitive cyan/green vs purple/orange
+pattern traces;photo links/pixel masks optional. P denotes inference only.
+104panels/2278numbered supports/208literal native crops.90lower-priority records
+in collapsed selector;all65original provisionalblack groups accessible.273groups,
+23unindexed,128inheritedgap records inledger;notbeadcensus/visibleerrors. Gap
+predictions datedR333;measured neighbor/example colors current. No forced questions.
+Independent4800mask checks/2285moduloH equations/current6flags/208consensus pass;
+657historicalscientificfiles exact. R16133assoc/25interior/65links/45interior/0wrong;
+C1284makercolor intentionally overrides oldred, geometryunchanged. Browser offline,
+desktop/narrow/currentlayers/navigation/nativeimages/pixelmasks checked. Reproduction
+and exact replay receipts under r335. Original classifier untouched, compact audit
+conservative and not calibrated pigment accuracy. Delivery r335/delivery.json.
+STOP for review. No automatic R336, new links/association/winding/count/pattern
+adoption, model/session switch or /new.
+
 # R334 completed — maker overlay and intensity-first black test; STOP
 
 Read photo2/R334_REPORT.md, R334_SPECIFICATION.md and R334_REPRODUCE.md.

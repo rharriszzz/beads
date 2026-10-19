@@ -7,6 +7,18 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current global application and review instruction — R335
+
+The maker confirmed R334's original fixes and accepted its eight named priority
+red-to-black candidates. A later instruction authorizes applying the black-first
+procedure globally, then presenting significant remaining problems rather than
+ordinary red/black questions. Use the additive R335 application layer and current
+review; historical observations/results remain intact. No hue or expected pattern
+color establishes black. A compact luminance-reflection audit guards against
+mistaking a dark edge for body evidence after excluding most of a red body.
+Insufficient evidence retains uncertainty; candidate color updates do not admit
+new beads, links or lattice sites. See [R335](photo2/R335_REPORT.md).
+
 ## Current pigment-classification instruction — R334
 
 The maker's governing sequence is **black first**: inspect the visible area just
