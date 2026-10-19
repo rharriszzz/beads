@@ -9367,3 +9367,57 @@ raw crops exact.367 prior files unchanged; two guide edits are additive status l
 Next automatic work identified, not launched: G existing-candidate colored-row audit,
 H shared-reference/omission audit, F geometry/correspondence. Stop for review of the
 short decision report; no human answer needed now, no R330 or reconstruction adoption.
+
+
+## R331 — True pattern length, 13-based aliasing, error-tolerant recovery and four Phase 2 problems (2026-10-19)
+
+User authorizes a focused continuation from R330 `422a85e` on
+`photo-2-strategy-v3`, with commit/push and confirmed remote delivery. Read
+AGENTS/INITIAL_QUESTION and R328–R330 reports, sources and actual latest evidence.
+Primary objective: determine whether 104/208 is actual sequence, geometric alias,
+or genuine structure mixed with indexing errors; recover a maker-compatible
+shortest repeating design if evidence permits. Maker length approximately200–399,
+not divisible by13, necklace an integer number of complete repeats. Independently
+check A2704 divisors208/338 and B2691 divisors207/299. Derive A208/B207 relationship
+from lattice; preserve predictive periods as diagnostics, never silently adopt
+conflicting design. Compare both conventions/lengths fairly with cached R330
+cohorts, complexity penalties, geographic holdouts explicitly exploratory,
+confidence/black/sparsity/correlation controls and stronger phase13-preserving
+nulls. Avoid circular mapping validation through a self-inferred motif.
+
+Retain distinct color/index±1±6±7/row/duplicate-misassociation/unobserved mechanisms.
+Compare robust consensus, hierarchical motifs and constrained latent errors;
+deterministic held-section perturbations must count false corrections and
+recoveries, address Viterbi isolated-error/color-burst failures, and never freely
+edit the physical graph. Reevaluate saved G alternatives independently against
+promising compatible lengths, especially B207, own maps and held-out predictions;
+no large new search without specific evidence. Preserve six R330 red-to-black
+hypotheses. Any proposed human correction needs exact original context, labeled
+neighbors/directions, IDs/indices/colors, matched working/alternative assignments
+and discriminating measurements. Never use black reflections as measured centers;
+compare visible dark bodies with nearby colored sequences in the same direction.
+Ask only evidence-supported concrete choices that matter.
+
+Deliver R331 report, compact review, machine-readable evidence, unknown motif
+entries, independent checks, reproducibility and independent/exploratory/uncertain
+assignment accounting. Preserve all previous science/failures. Update request
+log/plan/handoff/AGENTS, commit/push/confirm remote, stop; no automatic R332 or
+count/winding/exact-pattern adoption. Resource discipline: prioritize arithmetic
+and cached comparisons, no broad physical fitting/detection/growth campaign.
+Additional explicit request: prepare a presentation explaining the four worst
+Phase 2 problems as concrete requests for the user's help, so they can be resolved.
+
+Outcome: photo2/R331_REPORT.md and photo2/r331/review/. Ten-slide HTML/PDF presents
+G row continuation, black/color body association, inward-bend count sensitivity
+and frozen F material mismatch, with exact crops/labels/matched contexts. 104/208
+survives stronger nulls but is not an allowed shortest design. B207/299 predict
+poorly. A306/B305 share identical sparse observed partitions but fail own-count
+closure. No design-compatible exact pattern recovered; no adoption. 44G maps
+reassessed without 208-as-design veto. 416error records preserve failure cases;
+appearance helps color bursts, motif isolated indices remain ambiguous; graph
+integrity only repairs bookkeeping errors. Six color hypotheses stay provisional.
+Independent numerical/crop/provenance and browser/PDF checks pass. Main cached
+analysis37s, no new growth/fit/render. Preserve initial R331 epochs and documented
+corrections. Delivery commit/remote confirmation recorded separately under r331.
+Single most valuable next investigation, only on later authorization: bounded
+color-independent G body/diagonal correspondence, followed by implicated replay.

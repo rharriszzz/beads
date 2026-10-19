@@ -1,3 +1,30 @@
+# R331 completed — maker constraint, phase audit and four-problem review; STOP
+
+Read photo2/R331_REPORT.md, R331_SPECIFICATION.md and R331_REPRODUCE.md.
+Review photo2/r331/review/index.html and presentation.html/presentation.pdf.
+104/208 predictive structure survives two stronger phase13/local-correlation
+nulls, each19 full40-map selections; no maker-compatible exact design recovered.
+A2704 only208/338 violate maker non13; B2691 allows207/299, both predict poorly.
+A-B=a-b; A+B=13(a+b). All623 A+208 pairs have delta(16,16), hence B+208;
+585agree. B207 pairs delta(17,15),89/605agree. A208/B207 needs fractionalH/13.
+A306/B305 identical observed partitions,.1277nats;104/103unobserved residues;
+neither divides ownN. No compatible saved-map exact divisor scores positively.
+All40maps scan200–399plus104;419common-cohort fits;exploratory R330data reuse.
+Guarded A208hier .6767; B207flat .0458. Main .8260/-.0557. No new blind labels.
+All44cached G alternatives own-map checked; B207 does not resolve. Weak305/306
+less hostile to G;208 cannot veto it as design. No new G search or adoption.
+416error records: appearance reduces color-burst-as-shift failure;52/144isolated
+A-index flags,0unique motif restorations. Frozen graph restores138/144 bookkeeping
+errors, not coherent wrong topology. All6R330red->black hypotheses provisional.
+Four visual problems: G row;black/color body association;inward winding;F material.
+25literal native crops;10-slide PDF;desktop/narrow/offline/no clipping pass.
+Independent1361alias pairs/419period fits/274G fits/22hierarchy checks/104metadata
+trials;source preservation against422a85e. No detector/growth/physical fitting/render.
+Original source/results/failures retained;R328900/1862/H214,201 unchanged.
+Next only when authorized: bounded color-independent body/direction audit at G,
+then already-implicated-window replay if supported. Delivery receipt under r331.
+Stop for review; no automatic R332, count/winding/pattern or model/session switch.
+
 # R329 completed — broad counts and first divergences; STOP
 
 Read photo2/R329_REPORT.md, R329_SPECIFICATION.md and R329_REPRODUCE.md.
