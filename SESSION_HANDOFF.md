@@ -1,3 +1,38 @@
+# R333 completed — repeated staircase spirals and interruption atlas; STOP
+
+Read photo2/R333_REPORT.md, R333_SPECIFICATION.md and R333_REPRODUCE.md.
+Review photo2/r333/review/index.html: synchronized native photograph/unwrapped
+lattice, all recorded colors, working links, three families, spiral layers,
+unknown/provisional sites, hypothesis rings, saved maps, A/B/reverse and raw crops.
+R332 d726ef59 remains exact:1064 records/1041 indexed/2285 links/H214,201.
+No detector, growth bank, physical fit/render, original color/index/link edits.
+Two palettes recovered as repeated local staircases, not unique physical strands:
+flexible27BR/20BY paths,537 observations; regular37BR/22BY,592 observations.
+F0/F1 combined; BR3/3 and BY2/2 lead, nearby run alternatives remain plausible.
+Palette path length alone fails strong confirmation; regular-search null tails.10.
+17 regular traces/201 observations have>=2 distant measured counterparts.
+(16,16) recurrence698/748 colors agrees93.3%; best translation null<=56.1%.
+Guarded copies predict228 targets,209 agree/19 disagree;813 abstentions.
+Three red->black hypotheses pass separate appearance controls: C-1284-0332 new
+relative to old six, E5-1616-2970 and NEW-1706-342 re-supported. No relabeling.
+16 other observed breaks unresolved;128 unknown sites=44matching native candidates
++6known unindexed+30competing-color candidates+48no recorded body. Not absences.
+Four coherent patches/40 translations all violate boundary links; no index adoption.
+236 regular endpoint alternatives distinguish branches/design boundaries/unknowns.
+All40 saved map/convention scans200..399+104;185 maker-eligible lengths retained.
+A208 hierarchical.8073nats/91.3% label agreement; guarded.6957. Motif166known/42unknown
+vs154/54 before. Old motif predicts105new R332 sites:98agree/7disagree,not blind.
+A306/B305 same observed partition(all541320pairs),.1242nats;44known,262/261unknown.
+Neither divides ownN. All18 compatible saved-map exact-divisor fits score negative.
+No actual shortest sequence recovered. Hypothesis feedback tiny; no new evidence
+on second check, so stop. 16 detailed cases/48literal native crops/8SVG panels.
+Independent216template scores/404period fits/2285equations/1123path-link incidences/
+2891motif entries/19appearance audits/128gaps;111historical inputs sealed.
+Fresh exact replay, process time/memory, offline/desktop/narrow browser receipts
+under r333. Sources/failures/alternative explanations preserved. Scoped delivery
+receipt photo2/r333/delivery.json. Stop for photographic/pattern review; no automatic
+R334, pattern/count/winding adoption, model/session switch or /new.
+
 # R332 completed — additive native lattice completion; STOP for photographic review
 
 Read photo2/R332_REPORT.md, R332_SPECIFICATION.md and R332_REPRODUCE.md.

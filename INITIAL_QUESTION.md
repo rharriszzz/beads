@@ -7,6 +7,17 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current maker pattern information — R333
+
+The maker explicitly confirms spirals involving black and red beads, and spirals
+involving black and yellow beads. These are two palette relationships, not a
+statement of strict color alternation, identical widths/slopes or exclusive black
+membership. Discover their continuation and repeating design from the photograph.
+The shortest repeat remains approximately200–399, not divisible by13, with an
+integer number of complete repeats in the necklace. R333's repeated spatial tile
+and proposed corrections remain hypotheses; historical observations stay intact.
+See [R333 report](photo2/R333_REPORT.md) and the interactive unwrapped/photo review.
+
 ## Current photographic completion eligibility — R332
 
 R332 supersedes the historical reflection-only black admission rule below for

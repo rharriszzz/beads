@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "fresh_output": "/tmp/r333-replay-02",
+  "stages": [
+    {
+      "stage": "spirals",
+      "wall_seconds": 5.473480737011414,
+      "process_elapsed_seconds": 4.6,
+      "peak_rss_MiB": 290.7265625,
+      "scientific_files_equal": [
+        "spirals/summary.json",
+        "spirals/spirals.json.gz"
+      ]
+    },
+    {
+      "stage": "staircases",
+      "wall_seconds": 10.056326885009184,
+      "process_elapsed_seconds": 10.05,
+      "peak_rss_MiB": 290.62109375,
+      "scientific_files_equal": [
+        "staircases/summary.json",
+        "staircases/staircases.json.gz"
+      ]
+    },
+    {
+      "stage": "periods",
+      "wall_seconds": 38.81792848400073,
+      "process_elapsed_seconds": 37.86,
+      "peak_rss_MiB": 380.4140625,
+      "scientific_files_equal": [
+        "periods-selected/periods.json.gz",
+        "periods-selected/summary.json"
+      ]
+    },
+    {
+      "stage": "diagnose",
+      "wall_seconds": 1.922641045995988,
+      "process_elapsed_seconds": 1.84,
+      "peak_rss_MiB": 510.04296875,
+      "scientific_files_equal": [
+        "diagnosis/summary.json",
+        "diagnosis/diagnosis.json.gz"
+      ]
+    },
+    {
+      "stage": "followup",
+      "wall_seconds": 1.4590447269729339,
+      "process_elapsed_seconds": 1.45,
+      "peak_rss_MiB": 325.12890625,
+      "scientific_files_equal": [
+        "followup/followup.json.gz",
+        "followup/summary.json"
+      ]
+    }
+  ],
+  "total_wall_seconds": 57.7297184659983,
+  "policy": "Parsed scientific equality excludes measured seconds only; independent fresh pipeline, frozen seeds, full controls."
+}

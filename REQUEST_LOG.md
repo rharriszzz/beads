@@ -9495,3 +9495,45 @@ contexts. No automatic R333 or model/session change. Receipt records actual deli
 R332 scientific delivery: `c0b5b4dc4d0cc95132570b8ba796a2888a94007f` pushed to origin/photo-2-strategy-v3,
 independently confirmed by git ls-remote. All105 curated manifest files checked;
 source/graph unchanged by delivery receipt. See photo2/r332/delivery.json.
+
+
+## R333 — Discover black–red / black–yellow spirals and shortest pattern (2026-10-19)
+
+User authorizes substantive automatic pattern discovery from R332 delivery
+`d726ef59`, branch photo-2-strategy-v3. New maker information: spirals involving
+black/red and black/yellow. Do not impose strict alternation, fixed width/slope,
+or exclusive black membership. Use existing photographic triangular lattice,
+three primitive families and combined steps, repeated neighborhoods and bounded
+inference. Preserve R332 uncertainty and alternate maps; additions are not all
+independently reviewed. No expensive detector or physical-render campaign.
+
+Find coherent spirals, trace interruptions, compare color/association/missing
+inventory/visibility/link/row/winding/design explanations against native evidence.
+Test coherent patches, not arbitrary isolated index edits. Seek actual shortest
+200–399 repeat, non13, whole-repeat closure; retain104/208 diagnostics, both A/B,
+reversals and saved windings. Use geographic and distinct-occurrence predictive
+checks, simple baselines and local-correlation controls. Prevent motif corrections
+from becoming photographic truth. Deliver native interactive overlay, graph-paper
+unwrapping, detailed comparable problem illustrations, ranked reversible ledger,
+reproducible Python/results, independent verification and performance. Update
+logs/handoff, scoped commit/push/verify, stop for review.
+
+Outcome: R333_REPORT.md and r333 results/review. Flexible27BR/20BY measured paths
+cover537 observations. Regular staircase search selects BR3/3/BY2/2;59 traces
+cover592,17with>=2distant counterparts cover201. Exact run choice tentative;
+regular-search null tails.10, while spatial(16,16) recurrence agrees698/748(93.3%)
+against max56.1%translation controls. Guarded copy rule qualifies228,209agree,
+19disagree. Three appearance-supported red->black hypotheses remain reversible:
+C-1284-0332(new vsR330six), E5-1616-2970, NEW-1706-342.16other breaks unresolved.
+128unknown sites:44matching native candidates/6known unindexed/30competing native/
+48no recorded body; no confirmed physical absence.40translations of4coherent
+patches all fail boundary constraints.236regular endpoint alternatives retained.
+All40maps/201lengths scanned;185maker lengths eligible. A208hier.8073nats,
+91.3%label agreement,166known/42unknown(+12known). A306/B305 are identical observed
+partitions(.1242nats),44known,262/261unknown; neither closes.18maker-compatible
+saved-map divisor fits all negative. No actual shortest repeat adopted.
+16detailed cases/48native crops/8SVG panels, synchronized offline canvases/maps.
+Independent216template scores/404period fits/541320partition pairs/19appearance
+controls and native provenance pass. Fresh replay checks equality with timings/RSS.
+All old R332 graph/photo/evidence retained; failures and nonselected approaches
+preserved. Stop for review, no automaticR334 or model/session switch.

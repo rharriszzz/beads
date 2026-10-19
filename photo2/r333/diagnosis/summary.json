@@ -1,0 +1,89 @@
+{
+  "counts": {
+    "observed_significant_breaks": 19,
+    "likely_color_errors": 3,
+    "likely_index_errors": 0,
+    "unresolved_observed_breaks": 16,
+    "gap_classification": {
+      "native provisional candidate matches repeated feature": 44,
+      "known unindexed observation candidate": 6,
+      "no recorded native body; hidden or missed unresolved": 48,
+      "competing-color native candidate": 30
+    },
+    "confirmed_missing_visible_observations": 0,
+    "confirmed_physical_absences": 0
+  },
+  "color_hypotheses": {
+    "C-1284-0332": "black",
+    "E5-1616-2970": "black",
+    "NEW-1706-342": "black"
+  },
+  "feedback": [
+    {
+      "family": "A",
+      "period": 104,
+      "parent": null,
+      "unchanged_targets": 1038,
+      "gain_from_hypothesis_training": 0.002473549049684747,
+      "scope": "Exploratory re-use; hypothesis colors never used as validation truth."
+    },
+    {
+      "family": "A",
+      "period": 208,
+      "parent": null,
+      "unchanged_targets": 1038,
+      "gain_from_hypothesis_training": 0.002073073641411618,
+      "scope": "Exploratory re-use; hypothesis colors never used as validation truth."
+    },
+    {
+      "family": "A",
+      "period": 208,
+      "parent": 104,
+      "unchanged_targets": 1038,
+      "gain_from_hypothesis_training": 0.0011319178237081805,
+      "scope": "Exploratory re-use; hypothesis colors never used as validation truth."
+    },
+    {
+      "family": "A",
+      "period": 306,
+      "parent": null,
+      "unchanged_targets": 1038,
+      "gain_from_hypothesis_training": -4.5442423054891794e-05,
+      "scope": "Exploratory re-use; hypothesis colors never used as validation truth."
+    },
+    {
+      "family": "B",
+      "period": 207,
+      "parent": null,
+      "unchanged_targets": 1038,
+      "gain_from_hypothesis_training": 0.0007045852865489686,
+      "scope": "Exploratory re-use; hypothesis colors never used as validation truth."
+    },
+    {
+      "family": "B",
+      "period": 305,
+      "parent": null,
+      "unchanged_targets": 1038,
+      "gain_from_hypothesis_training": -4.5442423054891794e-05,
+      "scope": "Exploratory re-use; hypothesis colors never used as validation truth."
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 0,
+      "observed_breaks": 19,
+      "candidate_gaps": 128
+    },
+    {
+      "iteration": 1,
+      "reversible_color_hypotheses": 3,
+      "coherent_index_changes_admitted": 0
+    },
+    {
+      "iteration": 2,
+      "new_independently_supported_changes": 0,
+      "stop": "Frozen independent evidence unchanged; no self-confirming propagation."
+    }
+  ],
+  "seconds": 1.1617269460111856
+}

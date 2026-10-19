@@ -1,0 +1,26 @@
+{
+  "first_replay_stage_timings": [
+    {
+      "stage": "spirals",
+      "seconds": 5.47,
+      "peak_rss_MiB": 290.625
+    },
+    {
+      "stage": "staircases",
+      "seconds": 8.89,
+      "peak_rss_MiB": 290.8515625
+    },
+    {
+      "stage": "periods",
+      "seconds": 37.39,
+      "peak_rss_MiB": 380.3046875
+    },
+    {
+      "stage": "diagnose",
+      "seconds": 1.78,
+      "peak_rss_MiB": 510.2421875
+    }
+  ],
+  "first_three_scientific_stages_equal": true,
+  "diagnosis_failure": "set-order-only differences; source/output preserved; final full fresh replay passes"
+}
