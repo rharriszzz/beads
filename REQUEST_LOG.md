@@ -9425,3 +9425,69 @@ color-independent G body/diagonal correspondence, followed by implicated replay.
 R331 scientific delivery: `3da9986960c37883e0af8f42ca7804b8b0b1cb6f`, pushed to origin/photo-2-strategy-v3 and
 independently confirmed by git ls-remote. All68 manifest files checked unchanged;
 local status clean before receipt. Receipt: photo2/r331/delivery.json.
+
+
+## R332 — Complete visible photographic lattice, including black bodies (2026-10-19)
+
+User requests substantive completion from R3314b6c9a2 on photo-2-strategy-v3,
+with scoped commit/push, independent remote confirmation and stop for review.
+Positive feedback: “I could find nothing incorrect in the displayed bead labels
+or links.” Apply only to displayed assignments, not hidden/unreviewed topology.
+The user sees many omitted visible beads and links, especially black; do not
+spend this round on another period or new physical fit.
+
+First distinguish R331's selected-ID/two-direction display omissions from real
+unindexed observations, absent accepted links, coordinate-only neighbors and
+unrepresented bodies. Show all recorded observations, provisional/unindexed too,
+all actual working links and three directions. Quantify display-only omissions.
+Reuse R265–R328 caches and original RGB before another detector; begin in G,
+upper/inward/lower bends and black-rich contexts, then apply successful methods
+across the visible photograph. Seek missing colored and black bodies, continuations
+and multiply constrained unoccupied observation locations; reject duplicates and
+occlusion confounding, retain pure predictions without inventing absent beads.
+
+Black admission must use neighboring colored/black geometry, both diagonal
+families, same-direction colored sequence comparisons, native dark material,
+boundaries/texture and geometric consistency. Strong isolated specular reflection
+is explicitly NOT required. Keep pixel observations, geometric predictions and
+physical centers separate; provisional candidates must remain visible. Preserve
+all old observations/graph alternatives and baseline, avoid adjacent-row connections,
+use triangular closure/native link tests, and do not impose two-window/artificial
+geographic boundaries or speculative A208 motif agreement.
+
+Implement efficient iterative cached Python recovery until supported additions
+cease. Deliver offline native photo viewer with all IDs/colors/working links,
+new/provisional/unresolved/predicted layers, separate direction switches,
+zoom/pan/click/recenter and readable complete tiled labels. Before/after figures
+must distinguish previously known-but-undisplayed from genuinely recovered;
+black examples need same-direction colored neighbors and visible body evidence.
+Report exact baseline/final observation/index/color/link counts, cache recovery
+vs new detections, provisional/unresolved/duplicates/rejections and regional
+remaining candidates. No unjustified physical-bead recovery percentage. Check
+original pixels, graph/occupancy/directions/baseline consistency; preserve R161
+regression while labeling it already exposed. Independently verify additions.
+Preserve all failed experiments, update logs/handoffs, commit/push/verify, STOP.
+
+Outcome: photo2/R332_REPORT.md, results/graph.json.gz and full offline viewer under
+photo2/r332. Baseline938observations/900indexed/1862links ->1064/1041/2285.
+126new active records(57R/37Y/32B),15known records newly indexed(11Y/4B).
+423links added(43between old records,380involving new records);all original
+coordinates/links/observations remain exact. All four old unindexed black records
+now indexed.122new inventory records recover/overlap retained cache evidence;
+4fresh native extractions under strict point+support overlap accounting(2R/1Y/1B).
+Seven accepted dark-body recoveries do not require a highlight;65black groups
+remain provisional.23known records unindexed;273provisional groups(263additional,
+10known),273other native candidate groups and227pure predictions remain separate.
+Display audit proves substantial R331 illustration omissions;all three direction
+families now shown.2385cached absent local-edge alternatives preserved separately.
+11complete matched contexts/keys, native1:1/zoom/pan/recenter/status and direction
+switches pass offline desktop/narrow checks. Selected native-location-v4 stops
+127/13/1/0 additions in71.5s;all four preserved recovery epochs total200.2s.
+Earlier larger1067/2359 results are explicitly superseded, not mixed into counts.
+Independent checks:1041unique sites/one component,2285integer equations/native
+corridors,141new local regressions,38368material pixels,11literal crops, preservation.
+FrozenR16133/40/65links/zero wrong retained;post-freeze extension36/40,74/86,
+zero wrong,3new associations+9links;not a new blind test. No period/model/growth
+winding search. INITIAL_QUESTION records updated black eligibility, old history
+preserved. Next only after review: concrete unresolved groups in expanded native
+contexts. No automatic R333 or model/session change. Receipt records actual delivery.

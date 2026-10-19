@@ -1,3 +1,39 @@
+# R332 completed — additive native lattice completion; STOP for photographic review
+
+Read photo2/R332_REPORT.md, R332_SPECIFICATION.md and R332_REPRODUCE.md.
+Open photo2/r332/review/index.html: full native photo, all recorded observations,
+all working links, three direction switches, zoom/pan/click/recenter, status layers.
+User found no incorrect R331 displayed labels/links; scope stays those illustrations.
+Display audit G13/25labels17/48links;F8/29and5/58;inward10/18and12/34;
+black9/18and11/33. Baseline already has485 third-family links; no display recovery
+counted as new science. Six absent coordinate-neighbor pairs;one added,five unresolved.
+938->1064active records;900->1041indexed;1862->2285links. All baseline preserved.
+126new inventory observations:57red/37yellow/32black.15known newly indexed:
+11yellow/4black. All314original black records now indexed, incl old faint provisional.
+122cache-related recoveries;4strict fresh native extractions:2R/1Y/1B. Seven accepted
+black-body recoveries have no highlight gate;three dim cached black contexts maxV<.30.
+423new native-supported links:43between original records,380involving new records;
+F0+142/F1+140/difference+141. No motif, physical model, winding search or old edits.
+23original records remain unindexed.273provisional groups=263additional+10known;
+65black groups provisional.273other unassociated native groups;227pure predictions.
+None of these candidate/prediction counts is a physical-bead census. No forced gaps.
+2603cached candidates;robust local fits,two families,triangles,native material/link
+checks;provisional does not propagate. Selected passes127/13/1/0;71.5s,all epochs200.2s.
+Native-location-v4 is selected; earlier1067/2359 run is preserved but NOT final.
+11complete before/after contexts+IDkeys;optional cached2385local edge alternatives
+remain distinct from accepted links. Native pixel/prediction layers and same-family
+colored references aid black review. All938old observations/900coordinates/1862edges
+exact;1041unique sites/one component/2285native corridors/141target-excluded fits/
+38368material pixels/11literal crops independently checked. Browser offline/narrow pass.
+FixedR16133/40,65/86,25/25interior,45/45interior,0wrong retained. Post-freeze enlarged
+inventory36/40,74/86,0wrong:3new associations/9links;already exposed,not fresh blind.
+All failures/source snapshots/proposals preserved. INITIAL_QUESTION now records
+R332 superseding the old strong-reflection black gate, retaining historical rule.
+Delivery receipt photo2/r332/delivery.json. Stop for user photographic review;
+no automatic R333, pattern/count/winding adoption or model/session switch. Keep
+current session; no /new needed. Next only on authorization: resolve concrete
+provisional groups visible in the expanded viewer, especially dim/black contexts.
+
 # R331 completed — maker constraint, phase audit and four-problem review; STOP
 
 Read photo2/R331_REPORT.md, R331_SPECIFICATION.md and R331_REPRODUCE.md.

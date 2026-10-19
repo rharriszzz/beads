@@ -7,7 +7,20 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
-## Current Stage 1 eligibility — R235
+## Current photographic completion eligibility — R332
+
+R332 supersedes the historical reflection-only black admission rule below for
+photographic reconstruction. A strong isolated highlight is not required. Combine
+neighboring colored/black geometry, same-direction visible-body comparisons,
+native dark material, boundary/texture evidence and geometric consistency. Keep
+weakly supported black-body candidates explicitly provisional and visible. Pure
+lattice predictions are not observations or evidence of physically missing beads.
+The user reviewed R331's displayed assignments positively; that review does not
+certify hidden or unreviewed assignments. Preserve existing working choices while
+recovering additional visible observations and links. No pattern/physical fitting
+is part of R332. See photo2/R332_SPECIFICATION.md.
+
+## Historical Stage 1 pilot eligibility — R235
 
 The maker accepts distinct red/yellow observations with approximately 10% or more
 of the unobstructed projected bead area visible, estimated from nearby dimensions
