@@ -1,0 +1,35 @@
+{
+  "round": "R336",
+  "baseline_commit": "8c8ecab00f726c2010c2571e9ada953a60e878dc",
+  "scientific_commit": "df651510fb10c549c6a8396111c1741c135a44d2",
+  "branch": "photo-2-strategy-v3",
+  "remote": "origin",
+  "independent_ls_remote_commit": "df651510fb10c549c6a8396111c1741c135a44d2",
+  "remote_confirmed_utc": "2026-10-19T22:48:11.485804+00:00",
+  "hashes": {
+    "manifest.json": "3ca9b6a262db2a7f7ff2289a0326f88fc24197a52bdbccd7301d119324e5c060",
+    "input-seal.json": "8764dc8fb33440b9e77c75bfbabfc3d2531fefc6dcc6c2a76d8114e217dee9ca",
+    "verification.json": "5a270a75e59ebe6946298260b642301304b8ebd556abe6b5d12aef5dbd55e420",
+    "performance.json": "f36f7cd42e2dff240256bc8a73830becf1dadc0346dc6d3c170be5676a38b151",
+    "review/browser-verification.json": "8d77916b3a9b58853f84e720bdb8ddd0ba4d0e9451cd9ff851a8978d1bdcd203"
+  },
+  "result": {
+    "maker_decisions_applied": 10,
+    "rejected_visible_body_candidates": 2,
+    "recorded_exclusions": 7,
+    "maker_color_corrections": 2,
+    "confirmed_single_P_associations_deferred": 2,
+    "native_rechecked_links_added": 5,
+    "historical_incident_links_inactive": 6,
+    "active_records": 1057,
+    "active_indexed": 1039,
+    "active_links": 2284,
+    "coordinate_or_measured_location_edits": 0
+  },
+  "causal_finding": "Prediction-seeded threshold components, centroid relocation and resampling over neighboring glass/shadow were mistaken for independent visible-body evidence. No coordinate/crop/orientation error; corrected typed contract prevents identity admission from intensity alone.",
+  "diagnostics": "Fixed1041 color comparison6->4 flags and713->715/748 recurrence. Frozen710 interior proxy0 flags before/after,149known/59unknown208; no independent accuracy or shortest-repeat claim.",
+  "review": "Two remaining visible row questions; solved cases only in completed diagnostic/repair appendices.",
+  "verification": "Native/numerical/ownership-contract/graph/cohort/R161/historical-preservation checks passed;910 old scientific files exact; exact fresh scientific replay and actual browser tests passed.",
+  "receipt_policy": "This receipt follows the independently confirmed scientific commit. Its receipt commit is pushed and independently checked separately.",
+  "stop": "Stop for maker review. No automatic R337 or new count/winding/pattern/model adoption."
+}
