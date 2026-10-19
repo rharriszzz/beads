@@ -5355,3 +5355,8 @@ Offline Markdown preview passes desktop/narrow/offline; PNGs visually reviewed a
 results and previous HTML untouched. Scripts/receipts in photo2/r329/guide.
 Next task is user review of the new illustrated explanation, not R330. Keep current
 session and user-preferred model/reasoning; no /new needed or automatic model switch.
+
+Remote integration retained incoming explanatory work through 9695f4f5. Previous
+Markdown is linked at ILLUSTRATED_GUIDE_PREVIOUS.md; incoming HTML/four SVGs are
+unchanged. guide/integration.json records byte-for-byte preservation. Delivery
+uses a merge, with the new directional lesson as the guide's first link.

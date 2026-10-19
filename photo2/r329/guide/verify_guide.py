@@ -101,7 +101,11 @@ def main():
             links+=1
         mentioned=set(re.findall(r'\b(?:C|K|MAT25-K|E5|P5|RF70T-K|NEW)-\d{3,4}-\d{3,4}\b',s))
         assert mentioned<=visible,mentioned-visible
+    incoming=[]
+    if (HERE/'integration.json').exists():
+        incoming=read(HERE/'integration.json')['files']
+        assert all(digest(ROOT/r['preserved_path'])==r['sha256'] for r in incoming)
     source_names=['beads-photo-2.jpg','photo2/r328/results/graph.json.gz','photo2/r328/development/final256/search.json.gz','photo2/r328/development/final256/prepared.json.gz','photo2/r329/results/novel-windings.json.gz','photo2/r324/results/R321-geometry-best-frozen.json.gz','photo2/r324/results/R321-geometry-best-raster.npz','photo2/r324/results/observation-pixels.json','photo2/R329_REPORT.md']
-    result={'passed':True,'protected_files_unchanged':len(protected),'annotated_figures':len(figures),'label_occurrences_checked':labelcount,'selected_edges_checked':edgecount,'exact_raw_crops':len(raw),'markdown_links_checked':links,'every_diagnostic_has_both_three_feature_primitive_sequences':True,'paired_early_lower_labels_fixed':True,'model_three_pixels_owner_address':-27,'source_sha256':{p:digest(ROOT/p) for p in source_names},'assets_sha256':{p.name:digest(p) for p in sorted((HERE/'images').glob('*.png'))},'scope':'Presentation audit only; no scientific inference or reconstruction was run.'}
+    result={'passed':True,'protected_files_unchanged':len(protected),'incoming_explanatory_files_preserved':len(incoming),'annotated_figures':len(figures),'label_occurrences_checked':labelcount,'selected_edges_checked':edgecount,'exact_raw_crops':len(raw),'markdown_links_checked':links,'every_diagnostic_has_both_three_feature_primitive_sequences':True,'paired_early_lower_labels_fixed':True,'model_three_pixels_owner_address':-27,'source_sha256':{p:digest(ROOT/p) for p in source_names},'assets_sha256':{p.name:digest(p) for p in sorted((HERE/'images').glob('*.png'))},'scope':'Presentation audit only; no scientific inference or reconstruction was run.'}
     (HERE/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if not isinstance(v,dict)},indent=2))
 if __name__=='__main__':main()

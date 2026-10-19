@@ -9300,3 +9300,12 @@ three-feature primitive sequences in every diagnostic, 41 Markdown links, all
 figures were visually inspected; an offline Markdown preview adapter passed desktop,
 narrow-width and offline checks. This is not a live GitHub renderer test. Stop for
 human review of the explanatory page; no R330 or scientific adoption.
+
+Delivery integration: remote branch had seven additional explanatory commits at
+9695f4f5. Merged without rewriting history. Preserved its previous Markdown guide
+byte-for-byte as ILLUSTRATED_GUIDE_PREVIOUS.md and linked it from the new entry
+page. Incoming explanatory HTML and all four labeled SVGs are unchanged. Exact
+incoming/preserved hashes are recorded in guide/integration.json. New lesson remains
+the recommended entry point; scientific reconstruction files remain unchanged.
+Final integrated check passes 43 Markdown links and byte-preservation of all six
+incoming explanatory files, in addition to the unchanged 292-file science baseline.

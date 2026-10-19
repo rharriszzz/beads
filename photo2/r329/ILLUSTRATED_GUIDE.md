@@ -15,3 +15,5 @@ The lesson first teaches the two primitive directions around **C-1721-1566**, th
 This is explanatory material only. The [R329 scientific report](../R329_REPORT.md), saved reconstructions, original photograph and frozen physical models remain unchanged. No final count or color period is adopted.
 
 The [earlier technical HTML review](results/index.html) remains available alongside this new lesson. Its archived calculations are explained in the Markdown page rather than requiring the reader to infer the meaning of an overlay.
+
+The [previous illustrated Markdown walkthrough](ILLUSTRATED_GUIDE_PREVIOUS.md) and [earlier explanatory HTML](ILLUSTRATED_GUIDE.html) are retained. The new lesson above expands their directional teaching and labels; all four incoming annotated SVGs remain unchanged.
