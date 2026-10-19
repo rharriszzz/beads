@@ -22,7 +22,15 @@ Names such as **C-1721-1566** and **K-1740-1575** are IDs for measured photograp
 
 ## Problem 1 — An inward-bend choice changes all later indices by one
 
-### Look at the original pixels first
+### Look at the features, now explicitly labeled on the photograph
+
+**In the next figure, labels 1, 2 and 3 are drawn directly on the original photographs.** The **left panel** shows the observed positions, the **middle panel** shows R328's choice, and the **right panel** shows the closest alternative. Read the captions underneath each panel before studying the smaller nearby bead rows.
+
+![Annotated original photographs showing C-1721-1566 (1), K-1740-1575 (2), MAT25-K-1719-1592 (3), and the competing diagonal-family assignments](results/INWARD_BEND_LABELED.svg)
+
+**Crucial visual distinction:** **Both** reconstructions draw a connection between **1 (C-1721-1566)** and **2 (K-1740-1575)**. What changes is **which lattice direction that same connection represents**: **(0, −1)** in R328, versus **(−1, 0)** in the alternative. Also, the pink connection **3 → 1** is selected by R328 but **not selected** by the alternative (shown as a faint dashed line). This is why two similar-looking graphs assign different original-string indices.
+
+Here is the **unmarked original** again, in case the labels obscure a bead:
 
 ![Unmarked original inward-bend photo](results/closest-first-native.png)
 
@@ -84,7 +92,13 @@ Read the **top graph first**. The horizontal direction represents progression th
 
 This is a different comparison. Here we are not comparing two photo tracings. We are comparing **one proposed photographic index map** against a separately constructed **3D glass-bead model**.
 
-### Look at the actual photograph
+### Look at the actual photograph, with the three observations labeled
+
+![Original photographic support points at relative index 0, last agreement 26, and first N3000 model mismatch 31](results/MODEL_FIRST_ERROR_LABELED.svg)
+
+The label **31** marks a photographed black-bead reflection, not the bead's geometric center. The program's mismatch compares which **modeled glass bead covers the photographed pixels**.
+
+For an unobstructed view, here is the original image:
 
 ![Unmarked upper-section photograph used for physical model comparison](results/frozen-first-native.png)
 
@@ -136,7 +150,13 @@ This is not simply a highlight-position error: a bead can cover the right photog
 
 This illustrates why looking only at the largest error at the end of a bracelet reconstruction can be misleading.
 
-### Start where the solutions first disagree
+### Start where the solutions first disagree, with the bead-index positions marked
+
+![Original photograph with last agreeing feature at 92 and first differing feature at 97](results/UPPER_ROW_SWITCH_LABELED.svg)
+
+The circles show exactly which **observed bright patches** the report calls 92 and 97. They do not show the location of 175 missing beads: the 175-index difference accumulates only after subsequent wrong-row choices.
+
+Unmarked photograph:
 
 ![Original upper-right photograph, first unusual winding discrepancy](results/upper-first-native.png)
 
@@ -165,6 +185,10 @@ Why isn't it preferred? It gets much worse shared-bead-shape penalties and its t
 
 ## Problem 4 — Another local row choice at the lower bend
 
+![Lower bend annotated with last agreeing observed index 1187 and first differing index 1188](results/LOWER_BEND_LABELED.svg)
+
+These two circles let you find the exact photographed features mentioned in the text. Here is the same view without labels:
+
 ![Original lower-bend crop](results/lower-first-native.png)
 
 This picture covers about x=1050–1290 and y=2820–3030.
@@ -188,10 +212,10 @@ The alternative in this case is **H=(213,201)** rather than the leading **H=(214
 
 | Picture | Question |
 |---|---|
-| [Inward bend: side-by-side candidates](results/closest-comparison.png) | Which proposed line really follows the diagonal through the three marked photographic features? |
-| [First physical-model mismatch](results/frozen-first-native.png) | Are the observed bead relationships clear enough to trust the photograph's index assignment near 26–31? |
-| [Beginning of the large offset](results/upper-first-native.png) | Where does the alternative first switch rows near index 97? |
-| [Lower bend](results/lower-first-native.png) | Can you follow the neighboring colored and black bead rows across the first index difference? |
+| [Inward bend: **features 1, 2, 3 labeled**](results/INWARD_BEND_LABELED.svg) | Which proposed line really follows the diagonal through the three marked photographic features? |
+| [First physical-model mismatch: **indices 0, 26, 31 labeled**](results/MODEL_FIRST_ERROR_LABELED.svg) | Are the observed bead relationships clear enough to trust the photograph's index assignment near 26–31? |
+| [Beginning of the large offset: **indices 92, 97 labeled**](results/UPPER_ROW_SWITCH_LABELED.svg) | Where does the alternative first switch rows near index 97? |
+| [Lower bend: **indices 1187, 1188 labeled**](results/LOWER_BEND_LABELED.svg) | Can you follow the neighboring colored and black bead rows across the first index difference? |
 
 ### What would make a future Codex report easier to understand?
 
