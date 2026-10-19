@@ -5383,3 +5383,21 @@ Scripts and reproducible data in same directory, no historical sources/results c
 Next: human review of colored-row reasoning and actual-model overlays. No automatic
 R330/count/pattern/model adoption. Keep current session and user-preferred model;
 no /new needed and no automatic model switch.
+
+# R329 Human Decisions Required — completed; STOP
+
+Entry: photo2/r329/HUMAN_DECISIONS_REQUIRED.md, linked at top of both guide entries.
+First section Questions for Human Review: No human decisions required yet.
+E local failure already supported; F primarily geometry/correspondence work.
+Further G/H automatic investigation:135/189 row-removal settings,108 local fits;
+G alternative preferred on multiple withheld colored targets, H working preferred
+even excluding reference to alternative's omitted observation. H fixed-six-anchor
+curved design rank4/6; no claimed curved result. No black positioning evidence.
+Two side-by-side same-crop/same-scale pairs, identical numbered reference beads and
+one highlighted connection each; H explicit reverse green[0,-1] vs derived[1,-1].
+Supplement has all provenance/limitations; report366words.450 prediction checks,
+367 protected files unchanged, two exact raw crops and pixel-difference checks pass.
+No accepted reconstruction changes or new growth/optimization campaign. Next work
+would be bounded automatic G candidate scoring/H reference and omission audit/F
+geometry separation, only on continuation request. User need not answer a visual
+question now. Stop; keep current session/preferred model, no /new or model switch.

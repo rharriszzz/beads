@@ -1,5 +1,7 @@
 # Read the photographed rows before trusting the reconstruction
 
+**For the current decision list, read [Human Decisions Required](../HUMAN_DECISIONS_REQUIRED.md). The reassessment asks for no human decision yet. This longer page remains the diagnostic background.**
+
 **The colored bead bodies provide the visual reference. We first estimate which of the two diagonal directions a sequence follows, then compare it with nearby rows in that same direction.** A closed mathematical network can still connect the wrong photographed beads.
 
 This page replaces the earlier explanation of Figures E, F2, F3, G and H. It includes new photographic tests and actual frozen-model geometry. The old scientific results remain archived unchanged. The important corrections are:

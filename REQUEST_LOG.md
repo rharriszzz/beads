@@ -9340,3 +9340,30 @@ All four old histories replay17returns. Negative controls exclude black position
 and cross-family mixing;120 independent Python model rays agree.1089 baseline files
 preserved including two exact guide archives. Offline desktop/narrow preview passes.
 Stop for photographic review; no R330, final count/pattern or model adoption.
+
+## R329 Human Decisions Required report request
+
+Reassess E/F/G/H, investigate G/H automatically before seeking judgment, and produce
+a short report beginning with Questions for Human Review. Ask only visually
+answerable questions, with identical-scale paired crops, shared colored labels,
+both directions and one disputed assignment. Permit neither/cannot determine.
+Do not use black reflection positions or infer missing bodies from empty-looking
+slots. Separate technical evidence; preserve accepted reconstruction and avoid a
+large optimization campaign. If no defensible question exists, say so explicitly.
+
+Outcome: photo2/r329/HUMAN_DECISIONS_REQUIRED.md begins with Questions for Human
+Review and “No human decisions required yet.” Short 366-word report separates E's
+local failure from automatic F/G/H work; no ballot or new tutorial requested.
+Further G/H investigation:135/189 whole-row-removal settings,108 available/fixed
+cohort fits,450 prediction rows independently recomputed. G alternative remains
+locally favored across four withheld colored targets; H working remains favored
+after removing its asymmetric omitted-observation reference. H fixed shared-anchor
+quadratic rank4/6 exposes missing curved-reference coverage. No black positions,
+empty-site absence claims, growth search or accepted-result changes.
+Two matched photo pairs in supplementary evidence show one highlighted connection,
+identical shared numbered colors, both primitive directions and distinct observation
+IDs versus proposed indices. Pixel checks confine panel differences to that edge;
+raw crops exact.367 prior files unchanged; two guide edits are additive status links.
+Next automatic work identified, not launched: G existing-candidate colored-row audit,
+H shared-reference/omission audit, F geometry/correspondence. Stop for review of the
+short decision report; no human answer needed now, no R330 or reconstruction adoption.

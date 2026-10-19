@@ -1,5 +1,7 @@
 # R329 illustrated guide
 
+**Current review status: [Human Decisions Required](HUMAN_DECISIONS_REQUIRED.md). No human decisions required yet; further G/H checks and next automatic investigations are summarized there.**
+
 **Start with [Read the photographed rows before trusting the reconstruction](photographic_diagnostics/README.md).** This corrected GitHub-readable lesson includes 14 annotated original-photo figures.
 
 - [E: learn both diagonals, then compare the disputed inward-bend continuation](photographic_diagnostics/README.md#e--learn-the-directions-at-the-inward-bend).

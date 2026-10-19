@@ -1,0 +1,42 @@
+{
+  "preserved_baseline_files": 367,
+  "guide_changes_only_added_status_links": 2,
+  "prediction_rows_checked_with_pseudoinverse": 450,
+  "cases": {
+    "G": {
+      "whole_row_controls": 135,
+      "fits": 72,
+      "fixed_anchor_count": 12,
+      "quadratic_rank": 6
+    },
+    "H": {
+      "whole_row_controls": 189,
+      "fits": 36,
+      "fixed_anchor_count": 6,
+      "quadratic_rank": 4
+    }
+  },
+  "paired_images": [
+    {
+      "case": "G",
+      "identical_photo_and_scale": true,
+      "identical_labels": true,
+      "changed_photo_pixels": 2662,
+      "all_changes_within_highlight": true,
+      "sha256": "945f97bbf107086f388ba4cec23b5b50bff03bae05a92efeb377097029515827"
+    },
+    {
+      "case": "H",
+      "identical_photo_and_scale": true,
+      "identical_labels": true,
+      "changed_photo_pixels": 465,
+      "all_changes_within_highlight": true,
+      "sha256": "32cb669f8942258abd469b38f17c0e5cdd4fc4cd9dac56dc66b6d2e43a2c737b"
+    }
+  ],
+  "local_links": 47,
+  "report_words": 366,
+  "visual_review": "Both images separately inspected at reading size; one candidate connection changes, shared numbered references and raw pixels remain fixed. Not an independent human scientific certification.",
+  "passed": true,
+  "seconds": 0.24290709098568186
+}

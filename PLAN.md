@@ -3836,3 +3836,13 @@ disagreement, not a proved black-center error or first physical error31. G/H rem
 uncertain; H alternative omits visible red observation. Prior science preserved.
 Verification, browser and visual-review receipts are beside the new lesson.
 Next task: user photographic review of E/F/G/H. No automatic R330 or adoption.
+
+# R329 human-decision audit — completed; STOP
+
+Read photo2/r329/HUMAN_DECISIONS_REQUIRED.md first. No human decisions required yet.
+G/H were investigated further with shared colored references and whole-row removal.
+Local tests favor G alternative/H working; no global adoption. H curved comparison
+unavailable (fixed shared design rank4/6). No visual uncertainty converted to a vote.
+Matched pairs and technical controls are separate in r329/human_review/SUPPLEMENT.md.
+Next automatic investigations are identified in the report, not launched as a new
+campaign. Accepted reconstruction remains unchanged. No human response required now.
