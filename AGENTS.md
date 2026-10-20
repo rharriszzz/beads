@@ -1,3 +1,24 @@
+# R345 POV-Ray reconstruction completed; STOP
+
+User explicitly authorized R345 and changes to beads.pov, superseding earlier STOP
+instructions for this task. See photo2/R345_REPORT.md and R345_REPRODUCE.md.
+Primary image photo2/r345/output/render.png; comparison.jpg; geometry-overlay.jpg;
+helicity-detail.png; four enlarged comparison crops. Actual POV-Ray,2704 separate
+rounded bore-bearing beads, R344 provisional208 repeated13times, signed416turns.
+Source baseline d6c4cdb7. Primary helicity-1 with documented frame convention and
+native A-neighbor chirality check; both signs close. R282/R175 image-axis spline
+proxy preserved; no final physical centerline/camera previously accepted. Shared
+radius1.784537, thickness ratio.55; broad periodic station/phase approximations.
+8112 nearby pairs independently certified nonintersecting, minimum plane margin
+.00012883; exact glass height .03000068. Proxy error14.43pxRMS/6.58median, not
+physical-center accuracy. Glass/paper/camera approximate; render more regular and
+glossy than photo. All131 R344 files byte-preserved; no pattern/ledger changes.
+Original8 examples render for both radius conventions; example5undefined material
+fixed, radius sin(pi/6.5) default, LegacyRadius=1 available. Historical5case parity
+passes. Source/scene/provenance and independent/fresh-replay receipts under r345.
+Prior untracked R340 experiments untouched. Stop after scoped commit/push/remote
+verification; no automatic R346, new recognition, geometry or winding campaign.
+
 # R344 boundary visibility refinement; STOP
 
 The current graph paper now has thin SOLID charcoal lines on both sides of the

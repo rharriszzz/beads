@@ -1,3 +1,8 @@
+// R345 photographic reconstruction: declare R345=1 and add its output include path.
+// Without R345 the eight original examples remain selectable via bead_pattern.
+#ifdef (R345)
+#include "scene.inc"
+#else
 /* copyright 2003 Richard Harris */
 
 #include "colors.inc" 
@@ -16,7 +21,15 @@ plane { z, 0 pigment { White } finish { diffuse 0.90 }}
 /* begin settings */      
 #declare bclock = clock * 0.99999;
 #declare bead_pattern_count = 8;
+#ifndef (bead_pattern)
 #declare bead_pattern = 1+floor(bclock*bead_pattern_count);
+#end
+#ifndef (helicity)
+#declare helicity=1;
+#end
+#ifndef (LegacyRadius)
+#declare LegacyRadius=0;
+#end
 #declare rclock = bclock*bead_pattern_count - floor(bclock*bead_pattern_count);
 /* end settings */
 
@@ -148,10 +161,20 @@ plane { z, 0 pigment { White } finish { diffuse 0.90 }}
 #declare pattern_length = dimension_size(color_pattern, 1);
 #declare nbeads = ngroups * pattern_length;
 #declare nrows = floor(0.5 + (nbeads / beads_per_row));  
+// Historical Python helpers extract this parameter block in isolation. Retain
+// their literal radius unless the enclosing scene explicitly selected otherwise.
+#ifndef (LegacyRadius)
+#declare LegacyRadius=1;
+#end
 #declare exact_beads_per_row = nbeads / nrows;  
 
 #declare chain_minor = 4;
+// sin() uses radians. LegacyRadius=1 restores the 2003 expression.
+#if (LegacyRadius)
 #declare bead_radius = chain_minor * 0.96 * sin(180 / beads_per_row);
+#else
+#declare bead_radius = chain_minor * 0.96 * sin(pi / beads_per_row);
+#end
 #declare maximum_height_per_bead_size = 0.65;
 #declare bead_maximum_height = maximum_height_per_bead_size * (2 * bead_radius);
 #declare chain_major = bead_maximum_height * 1.05 * nrows / (2 * pi);
@@ -183,24 +206,24 @@ plane { z, 0 pigment { White } finish { diffuse 0.90 }}
 
 merge {
   // short wide
-  difference { cylinder { <0, -bead_extra_half_height, 0>, <0, bead_extra_half_height, 0>, 
+  difference { cylinder { <0, -bead_extra_half_height, 0>, <0, bead_extra_half_height, 0>,
                           bead_major+bead_total_half_width }
-               cylinder { <0, -bead_extra_half_height * 1.0001, 0>, <0, bead_extra_half_height * 1.0001, 0>, 
+               cylinder { <0, -bead_extra_half_height * 1.0001, 0>, <0, bead_extra_half_height * 1.0001, 0>,
                           bead_major-bead_total_half_width } }
   // tall narrow
-  difference { cylinder { <0, -bead_total_half_height, 0>, <0, bead_total_half_height, 0>, 
+  difference { cylinder { <0, -bead_total_half_height, 0>, <0, bead_total_half_height, 0>,
                           bead_major+bead_extra_half_width }
-               cylinder { <0, -bead_total_half_height * 1.0001, 0>, <0, bead_total_half_height * 1.0001, 0>, 
+               cylinder { <0, -bead_total_half_height * 1.0001, 0>, <0, bead_total_half_height * 1.0001, 0>,
                           bead_major-bead_extra_half_width } }
   // outer
-  torus {bead_major+bead_extra_half_width bead_round 
+  torus {bead_major+bead_extra_half_width bead_round
          scale <1.0, bead_height_scaling, 1.0> translate <0, bead_extra_half_height, 0>}
-  torus {bead_major+bead_extra_half_width bead_round 
+  torus {bead_major+bead_extra_half_width bead_round
          scale <1.0, bead_height_scaling, 1.0> translate <0, -bead_extra_half_height, 0>}
   // inner
-  torus {bead_major-bead_extra_half_width bead_round 
+  torus {bead_major-bead_extra_half_width bead_round
          scale <1.0, bead_height_scaling, 1.0> translate <0, bead_extra_half_height, 0>}
-  torus {bead_major-bead_extra_half_width bead_round 
+  torus {bead_major-bead_extra_half_width bead_round
          scale <1.0, bead_height_scaling, 1.0> translate <0, -bead_extra_half_height, 0>}
   material { bead_material } }
 #end
@@ -268,7 +291,9 @@ material{texture{pigment{bead_color filter 0.3}
 #declare beads[0] = bead(frosted_opaque(Black),  0.8, 0.7, 1.0);
 #declare beads[1] = bead(shiny_translucent(Dark_Purple), 0.8, 0.7, 1.0);
 #declare beads[2] = bead(shiny_translucent(Light_Purple),   0.8, 0.7, 1.0);
-#declare beads[3] = bead(shiny_translucent(White),  0.8, 0.7, 1.0); 
+#declare beads[3] = bead(shiny_translucent(White),  0.8, 0.7, 1.0);
+// Pattern5 contains color index4; the old source left this material undefined.
+#declare beads[4] = bead(shiny_translucent(Med_Purple), 0.8, 0.7, 1.0);
 #break  
 
 #case (6)              
@@ -304,6 +329,9 @@ material{texture{pigment{bead_color filter 0.3}
 #while ( bead_index < nbeads )   
   #declare chain_angle = 360*(bead_index/nbeads + rclock*0.1666);
   #declare row_angle = 360*(bead_index/exact_beads_per_row + rclock*1.00);
+  #ifdef (helicity)
+  #declare row_angle = helicity*row_angle;
+  #end
   #declare t1 = vaxis_rotate(<chain_major, 0, 0>, z, chain_angle);
   #declare t2 = vaxis_rotate(<0, 0, chain_minor>, vcross(-z, t1), row_angle); 
   object{ beads[color_pattern[mod(bead_index, pattern_length)]]
@@ -311,3 +339,4 @@ material{texture{pigment{bead_color filter 0.3}
           translate t1+t2+<0,0,chain_minor+2*bead_radius> }
   #declare bead_index = bead_index + 1;
 #end
+#end // R345 dispatch
