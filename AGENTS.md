@@ -1,3 +1,23 @@
+# Retrospective and R347 maker-answer assessment delivered; STOP
+
+User authorized the retrospective, then a proof/answer interface, and commit/push.
+Read photo2/RETROSPECTIVE.md, photo2/R347_PATTERN_CONFIRMATION.md and
+photo2/r347/answers/ASSESSMENT.md. Review photo2/r347/review/index.html.
+All three repositories were examined; branch/history evidence under retrospective/.
+Maker export is preserved byte-exact under r347/answers/maker-2026-10-20.json.
+Q1 R332-R-0037-0040 is WITHHELD from pigment evidence at explicit maker request:
+insufficient original-photo evidence; selected yellow relied on reconstruction.
+Q2 REC266-P035619 and Q3 R332-R-0197-0183 are maker PHOTO-based YELLOW.
+Separate assessment:201supported/0conflicting/7insufficient,1040/1040retained fit;
+all208residues observed. Q1 unnecessary:position83 has6Y in5regions without it.
+Maker reiterates:ignore unreadable dark edge beads lacking usable reflections;
+coverage does not justify forced pigment/identity decisions. No broad new purge.
+Only A/208 survives fixed lattice/closure, complete-repeat and period<400 premises;
+this is CONDITIONAL uniqueness, not physical/chart proof. Questions4..10 unanswered.
+Original necklace/chart available but not yet supplied. No need to repeat Q1..3.
+R344/R345/R346 inputs and prior untracked R340 work untouched. No new detector,
+geometry, lighting or renderer experiments. Stop after scoped delivery verification.
+
 # R346 whole-necklace cast shadow completed; STOP
 
 Explicit R346 authorization supersedes the previous STOP for this lighting task.

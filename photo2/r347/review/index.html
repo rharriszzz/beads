@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finish the necklace pattern</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<h1>Finish the necklace pattern</h1>
+<p class="lead">Start with three contradictory observations. Then check seven remaining pattern entries. Your answers are saved in this browser; export or copy them when finished.</p>
+<p>Judge the actual bead material, including glass in shadow, rather than the color of its highlight. <strong>“Cannot tell” is a useful answer.</strong> If mark 1 does not identify a separate bead, say so. A diagram shows the current proposed connections; it is not another photograph.</p>
+<p><a href="../../R347_PATTERN_CONFIRMATION.md">What these answers can settle</a> · <a href="../../r344/graph-paper-numbered.pdf">Current numbered graph paper</a> · <a href="../../../beads-photo-2.jpg">Original photograph</a></p>
+<section class="toolbar" aria-label="Review controls">
+<label>Questions <select id="stage"><option value="contradictions">First: the 3 contradictions</option><option value="completion">Next: the 7 color checks</option><option value="all">All 10 questions</option></select></label>
+<label>Context <select id="context"><option value="60">Local</option><option value="100">Wider</option></select></label>
+<label><input id="numbers" type="checkbox" checked> Local numbers</label>
+<button id="next-open">Next unanswered</button>
+<span id="progress" role="status"></span>
+</section>
+<div id="questions"></div>
+<section class="independent">
+<h2>Original chart or direct inspection</h2>
+<p>The necklace and original chart are available, but locating them may take days. You can answer from the current photograph and return later. An exact chart transcription can settle the design directly. Use R/Y/B or full color names. A different starting bead or reverse reading is fine. Transcribe one actual repeat, excluding side or continuation copies.</p>
+<label>Evidence available <select id="evidence"><option value="">Choose if known</option><option value="both_pending">Necklace and chart available; not yet located</option><option value="original_chart">Original chart or stringing sequence in hand</option><option value="necklace">Necklace in hand for direct inspection</option><option value="both">Necklace and original chart in hand</option><option value="additional_photos">Additional photographs</option><option value="current_photo">Only the current photograph is currently usable</option><option value="other">Other evidence</option></select></label>
+<label class="wide">Chart or stringing sequence <textarea id="chart" rows="5" placeholder="R Y B …"></textarea></label>
+<label><input id="chart-belongs" type="checkbox"> This is an independent original record for this necklace, not a transcription of the reconstruction.</label>
+<p id="chart-result" role="status"></p>
+<div class="facts"><label>Independently known total bead count <input id="total" type="number" min="1" placeholder="Leave blank if unknown"></label><label>Independently known repeats <input id="repeats" type="number" min="1" placeholder="Leave blank if unknown"></label></div>
+<label class="wide">Where those numbers or the chart come from <textarea id="evidence-note" rows="3" placeholder="Original chart, counted directly, memory, or other source"></textarea></label>
+</section>
+<section>
+<h2>Send the answers</h2>
+<p>Export JSON preserves every answer and its exact question. You can also copy the short summary and paste it into our conversation. Nothing here changes the bead data or promotes a hypothesis to a fact.</p>
+<div class="toolbar"><button id="export">Export answers</button><button id="copy">Copy short summary</button><label class="file">Import saved answers <input id="import" type="file" accept="application/json,.json"></label></div>
+<textarea id="summary" rows="9" readonly aria-label="Answer summary"></textarea>
+<p id="save-status" role="status"></p>
+</section>
+<details class="proof"><summary>What is proved already and what remains conditional</summary>
+<p>The displayed complete word has minimal cyclic period 208: every proper divisor is rejected by two supported colors. With the saved lattice and its two family conventions fixed, every possible exact period below 400 can also be checked by finite arithmetic.</p>
+<p><strong>Current labels have no compatible exact period.</strong> Three labels contradict 208. If independent inspection establishes all three as yellow, 208 under family A is the unique compatible period in that finite comparison, and all 208 colors are determined. This is a hypothetical calculation, not a new color judgment.</p>
+<p>Those calculations do not prove the physical lattice or count. An authentic original chart can verify the design directly. Independent count information or source evidence may settle further premises. The old requirement for three geographic blocks is a corroboration policy, not a theorem requiring a third picture of a bead whose pigment you can establish directly.</p>
+<p><a href="../conditional-proof.json">Full finite certificate and witnesses</a></p><div id="proof-table"></div>
+</details>
+<p class="foot">Scientific baseline: R344 pattern and R346 repository state. Ten new questions only; earlier explicit pigments and illustration approvals remain unchanged.</p>
+</main>
+<script src="data.js"></script>
+<script src="viewer.js"></script>
+</html>
