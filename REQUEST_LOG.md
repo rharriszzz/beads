@@ -9850,3 +9850,29 @@ results retained. Fresh14science+24exactartifactreplay,actualoffline/narrow/
 graph-string/zoom/drag/seam-copy browserchecks pass. Recommendation remains
 independent reobservation of3remaining83/189mismatchbodies; not begun.
 Stop after scoped remote delivery; no R345.
+
+## R344 refinement — seven beads on BOTH sides of EVERY row
+
+Maker requires exact7left/7right extensions of each alternating6/7basic row,
+including vertical context, for20/21symbols perrow. Extensions must follow ±1
+horizontal stringorder, preserve same-k seam identities/periodic colors and expose
+minor-circumference front/back spiral continuity; no arbitrary decorative copies.
+Keep thin START/ENDdistinct from lateral seams, strict/provisional linked string /
+native evidence, ellipses, zoom/pan and highresprint. General lasting Markdown
+specification and tests must handle arbitraryL with partial-row cuts. Retain maker
+P29/P127yellow corrections and all statistical comparisons; recommend one future
+scientific task, do not start it. Commit/push/verify then STOP.
+
+Delivered refinement followingff61d4e0: eachrow exact7+n+7,984symbols/view over48
+rows (312basic+672side),326distinctunwrappedindices. Seven-row extreme symbols
+normalize through TWO(13,-1)seams; allk/colors and208uniqueselected preserved.
+Default sideextensionsON, position/k/AB/XYlabels, same-ID linkedstrict/provisional,
+zoom/pan, native own-panelkeys/currentadjacency. Clean/numberedPNG4962x3507 at
+300dpi, SVG, twoA4PDFpages each. Sequence-only arbitrarylength API and illustrated
+standalonegeneral method. Prior40presentation files archived,25older retained;
+13scientific products byte-identical. Counts199/2/7, fitted1038/1041 andheldout
+1024/1041geog/1038/1041occ unchanged. Independent984sites/2952directions/192cases/
+77408clearances/174922horizontalsteps plus4makerstates/65archivechecks pass;
+fresh14science+24exactartifact replay and actualoffline/narrow/browser ±2seam /
+20/21everyrow controls pass. Recommended independent targeted reobservation of3
+83/189mismatchbodies remains FUTURE, not begun. No automatic R345.

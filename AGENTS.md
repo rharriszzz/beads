@@ -1,3 +1,49 @@
+# R344 exact seven-bead side extensions completed; STOP
+
+Current offline review: photo2/r344/review/index.html. Read photo2/R344_REPORT.md,
+R344_REPRODUCE.md and standalone photo2/GRAPH_PAPER_6_5_BEADS.md. This presentation
+extension follows ff61d4e0; scientific base remains R3436fa108f7. No R345 or new
+scientific investigation authorized. Prior R340 untracked experiments untouched.
+
+EVERY row now has exactly7left +6/7basic +7right =20/21 symbols, by actual horizontal
+k±1 steps. Default interactive and all print views include them. Previous optional
+whole-strip copies were insufficient on7-bead rows (only6 extra there). Preserve
+that prior epoch under r344/pre-seven-sides-ff61d4e0 (40verbatim files), alongside
+pre-graph-paper-37a23300 (25files). All13scientific products remain byte-identical.
+
+x=a-b,y=a+b,2k=x+13y; canonical -1<=x<12. Directions +1right,+6upleft,+7upright.
+Same-k seam(13,-1) moves a rightward copy DOWN one row. Seven-bead row y1 has
+k-1..5 left,6..12basic,13..19right; extreme k-1/k19 need TWO seam translations.
+Each extension carries canonical XY and exact unwrappedk; never independent beads.
+312basic symbols+672sides=984per view over48rows,326distinctk/658same-k aliases.
+Chosen0..207 appears208times once percentral panel; repeated copies excluded.
+Period208 gives32verticalrows; H214,201 maps13,415=13*(0,32)+(13,-1), conditional.
+General sequence-only pattern_layout handles arbitrary L/origins, stepped cuts,
+7bothsides and vertical context; no photographic inputs needed for geometry/colors.
+
+Prints: clean/numbered4962x3507PNG300dpi, vectorSVG and TWO A4PDFpages (strict /
+provisional). Identical18x14ellipse radii; gray?strict unknowns; dashedblue tentative.
+Interactive strict/provisional/both, zoom/pan, position/k/AB/XYlabels, optionalguides,
+linked string positions and actual native photo/current numbered adjacency. Dotted
+lateral seams distinct from thin START/END cuts. Seven side symbols on EVERY row,
+including vertical continuation rows; toggleoff is only a basic-strip diagnostic.
+
+Maker P29NEW1519/P127R332R0125118 YELLOW overlays preserved. Strict199supported/
+2conflicting/7insufficient;1059active/1041indexed/2290links/H214,201 allunchanged.
+Same1041correction states197/4/7,198/3/7eachalone,199/2/7both. Fitted1038/1041;
+geographic heldout1024/1041,wholeocc1038/1041. Allhistoricalcohorts/makerstrata,
+unknowns and explicit labels retained. No classifier, association or winding work.
+Recommendation remains independent reobservation of3remaining bodies at83/189;
+NOT begun. Seven sparse black positions still need independent geographic support.
+
+Checks:984sites/2952direction equations,192general length/origin/strip cases,
+77408ellipse-cut checks/174922horizontalsteps,65archive files/13science products,
+all4makerstates and generic17color API. Actual browser checks20/21everyrow,
+first/second seams, exactsame-k colors,208uniqueselected, nativekeys, graph/string
+highlighting, coordinate labels, zoom/pan, offline/narrow. Fresh replay verifies
+14decodedscientific products+24exact artifacts. Stop after scoped commit/push/
+remote verification; do not begin the recommended next task automatically.
+
 # R344 graph-paper extension completed — alternating6/7, verified seams; STOP
 
 Read photo2/R344_REPORT.md, R344_REPRODUCE.md and standalone

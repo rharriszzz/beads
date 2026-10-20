@@ -47,7 +47,9 @@ x0 <= x < x0+13
 ```
 
 Each row contains either six or seven valid lattice sites; consecutive rows
-alternate. For `x0=-1`, even rows contain six sites and odd rows seven:
+alternate. The width13 is measured in half-bead pitches, hence6.5 bead pitches
+per minor-axis revolution. Two rows contain13 beads. For `x0=-1`, even rows
+contain six sites and odd rows seven:
 
 ```text
 y=0: x =  0, 2, 4, 6, 8,10       k = 0..5
@@ -96,11 +98,62 @@ For example, with `x0=-1`, k5 is at `(10,0)`. Its +1 neighbor is geometrically a
 neighbor lies at `(-2,2)`, identifying with `(11,1)`, k12. These are real primitive
 steps in the unwrapped lattice despite their unusual canonical positions.
 
-Optional lateral context may show extra strips translated by integer multiples
-of `(13,-1)`. Every such copy keeps **exactly the same k, pattern position and
-color** as its canonical original. Mark these as display duplicates outside the
-chosen central interval; they are never additional observations. Hide them for
-the clean six/seven-bead-row presentation if desired.
+## Seven extra beads on each side of every row
+
+The standard presentation extends **every horizontal row by exactly seven beads
+to the left and seven to the right**. Each complete displayed row therefore has
+20 or21 symbols. Keep the basic six/seven-bead strip visually identifiable with
+fine dotted lateral seams. These seams differ from the START/END repeat cuts.
+
+Generate these extensions by actual horizontal index steps, not by pasting one
+neighboring strip at either side. For a row y, let:
+
+```python
+first_x = x0 + ((y-x0) % 2)
+basic_x = list(range(first_x, x0+13, 2))
+n = len(basic_x)                         # 6 or 7
+for j in range(-7, n+7):                # seven left, n basic, seven right
+    x = first_x + 2*j
+    k = (x + 13*y) // 2
+    position = (k-S) % L
+    color = sequence[position]
+```
+
+If the first basic index is K, the row reads `K-7..K-1`, `K..K+n-1`,
+`K+n..K+n+6`. Every move right is +1, including moves across either dotted seam.
+For any extended site, recover its canonical representative `(cx,cy)` using the
+formula above. Its exact seam multiplier is:
+
+```text
+m = (x-cx)/13
+(x,y) = (cx,cy) + m*(13,-1)
+```
+
+Thus every copy keeps **exactly the same k, pattern position and color** as its
+canonical original. This is the same string position shown on another side of
+the minor circumference, not a newly inferred physical bead. Its canonical
+representative can lie outside the currently displayed vertical range; its
+identity is still given by the formula.
+
+For example, row y=1 with `x0=-1` has:
+
+| Left seven | Basic seven | Right seven |
+|---|---|---|
+| k=−1..5 | k=6..12 | k=13..19 |
+| x=−15..−3, step2 | x=−1..11, step2 | x=13..25, step2 |
+
+The extreme left site `(−15,1)`, k=−1, is canonical `(11,−1)` minus **two**
+seam translations. The extreme right site `(25,1)`, k=19, is canonical `(−1,3)`
+plus **two** translations. One adjacent whole strip supplies only six symbols
+on these seven-bead rows and misses the required seventh extension. Normalize
+as many times as necessary; do not stop after one seam.
+
+These extended rows reveal diagonal color structures wrapping from the front
+to the back of the minor circumference. Highlighting any copy should highlight
+all copies of its pattern position. Keep extensions outside the selected
+fundamental interval even when their k falls inside that interval. They are
+never additional observations. A diagnostic toggle may hide all side extensions,
+but the normal view and printable illustration include them on every row.
 
 ## Repeat membership and its boundaries
 
@@ -206,20 +259,51 @@ This is consistent with thirteen displayed repeats plus the zero-index seam
 identification. It is an algebraic consistency check, not independent evidence
 for the physical total2704 or the actual shortest stringing repeat.
 
-R344 displays eight continuation rows at each end (52 indices before and52
-after), plus optional same-k lateral copies. It retains199 strict colors, two
-conflicting positions and seven insufficient positions; the graph-paper layout
-changes none of those scientific results.
+R344 displays eight continuation rows at each end (52 canonical indices before
+and52 after), with seven side beads on both sides of **all48 rows**. Each strict
+or provisional panel has984 symbols:312 basic-strip symbols plus672 side
+symbols. These represent326 distinct unwrapped k values and208 pattern
+positions; only208 symbols belong to the selected central block. Repeated
+symbols are not repeated photographic measurements. The example retains199
+strict colors, two conflicting positions and seven insufficient positions.
+
+![Illustrated 208-bead example: strict left, provisional right; seven side beads on every row](r344/graph-paper.png)
+
+White denotes the selected central occurrence; gray denotes side or vertical
+continuation. Thin teal/purple lines mark START/END; dotted vertical lines mark
+the lateral seams. Both panels use the same sequence and differ only at the
+nine explicitly unresolved entries. The [two-page A4 PDF](r344/graph-paper.pdf)
+places one panel per page; [the PNG](r344/graph-paper.png) is4962×3507pixels at
+300dpi. Clean and numbered vector/bitmap versions are provided.
 
 ## Reusable implementation and verification
 
-[graph_paper.py](r344/graph_paper.py) provides `representative`, `boundary` and
-`layout(length,start,x0,...)`. The renderer receives color from the same
-sequence-position table used by the one-dimensional view, never from visual
-placement. [verify_graph_paper.py](r344/verify_graph_paper.py) independently
-enumerates possible x representatives and checks directions, seam equations,
-unique chosen membership, copy colors and ellipse clearance.
+[graph_paper.py](r344/graph_paper.py) provides `representative`, `boundary`,
+`layout(length,start,x0,...,side_beads=7)` and the sequence-only entry point
+`pattern_layout(strict_colors, provisional_colors=None, **geometry)`. It accepts
+R/Y/B/? code strings or lists of full color names. No photographic reconstruction
+is required. For example, this arbitrary17-position toy sequence is sufficient:
+
+```python
+from photo2.r344.graph_paper import pattern_layout
+paper = pattern_layout('BRYBRYBRYBRYBRYB?', 'BRYBRYBRYBRYBRYBY',
+                       start=5, x0=-1, side_beads=7)
+```
+
+Every point contains x/y, a/b, unwrapped k, pattern position, canonical identity,
+row slot, left/basic/right membership and strict/provisional colors. The
+renderer receives color from this sequence-position table, never from visual
+placement. Arbitrary lengths use index-derived partial-row boundaries and enough
+continuation rows to display multiple copies when short.
+
+[verify_graph_paper.py](r344/verify_graph_paper.py) independently enumerates
+possible representatives and checks directions, repeated seam equations, exact
+seven-per-side rows, horizontal ±1 progression, unique chosen membership, copy
+colors and ellipse clearance.
 
 The current checks cover192 combinations of twelve lengths (including1,17,207,
 208,209,299 and338), four origins and four strip placements. They verify partial
-rows and continuation rather than assuming the208 example is universal.
+rows and continuation rather than assuming the208 example is universal. There
+are77,408 boundary/ellipse clearance checks and174,922 horizontal index-step
+checks across these cases and the current example. The toy17-position sequence
+also exercises the color API independently of photographic data.

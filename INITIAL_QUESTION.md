@@ -7,6 +7,22 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current exact-seven presentation requirement — R344
+
+Extend EVERY basic6/7row by seven string-index steps to the LEFT and seven to the
+RIGHT, including all vertical continuation rows:20/21bead symbols per row. Use
+actual horizontal ±1 indices and repeated(13,-1) seam identifications; the seventh
+side bead on a7-bead row needs TWO seams. Preserve canonicalk/color, no invented
+beads or extra evidence. Default interactive and printable views include all
+extensions, making minor-circumference spiral continuity visible. Selected0..207
+appears once in the central block. 984symbols/view,312basic+672sides; generic
+sequence-only API/standalone illustrated method support arbitrarylengths. Clean /
+numbered two-page A4PDFs,4962x3507PNG300dpi, SVG; zoom/pan and coordinate labels.
+Prior ff61d4e0presentation archived40files; prior37a23300archive25files retained;
+all13scientific products unchanged. Latestmaker-yellow decisions/199/2/7stats
+remain intact. See [method](photo2/GRAPH_PAPER_6_5_BEADS.md). Commit/push/verify,
+STOP; recommended targeted reobservation is futurework, not begun.
+
 ## Current graph-paper presentation instruction — R344 extension
 
 The maker requests the original alternating6/7 graph-paper form, not merely a

@@ -1,3 +1,22 @@
+# R344 exact seven-per-side presentation
+
+Generate every displayed row by basic slots j=0..n-1 (n=6/7), extended to j=-7..n+6.
+x=first_x+2j, k=(x+13y)/2 gives exactly20/21 symbols and ±1 horizontal indices.
+Normalize exactk using x=x0+((2k-x0)%13),y=(2k-x)/13; integer multiples of(13,-1)
+retain identity. Extreme side symbols on7-bead rows need ±2 seams. Never substitute
+one whole neighboring strip, which supplies only6symbols on such rows. Everyrow
+receives7bothsides including vertical continuation. Unique selected membership
+requires BASIC strip and S<=k<S+L; aliases never inflate evidence. General sequence
+API, partial-row cuts and toy17color test make method independent of208/photo.
+
+984symbols/view=312basic+672side,326distinctunwrappedk; 208selectedunique. Checks
+192general cases/77408ellipseclearances/174922horizontalsteps; actual browser
+20/21rows/±2seamcolors/linkednative controls. TwoA4PDFpages,4962x3507PNG300dpi,
+SVG, clean+numbered; default extensions on, strict? retained. All13scientific
+products unchanged,65oldpresentation files preserved. Strict199/2/7, fit1038/1041,
+heldout1024/1041geog and1038/1041occ unchanged. See general specification
+[GRAPH_PAPER_6_5_BEADS.md](photo2/GRAPH_PAPER_6_5_BEADS.md). STOP, no R345.
+
 # R344 graph-paper presentation — general13-unit strip with sequence-derived cuts
 
 Use x=a-b,y=a+b,2k=x+13y and x=x0+((2k-x0)%13),y=(2k-x)/13.

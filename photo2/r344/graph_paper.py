@@ -2,8 +2,6 @@
 
 This module is presentation geometry only; it never infers pigment or identity.
 """
-from common import *
-
 X0 = -1
 X_SCALE, Y_SCALE = 24, 32
 RX, RY = 18, 14
@@ -26,7 +24,7 @@ def boundary(k, x0=X0):
     return [[left,y+.5],[x-1,y+.5],[x-1,y-.5],[right,y-.5]]
 
 
-def layout(length, start=0, x0=X0, extension_rows=8, minimum_rows=40, lateral_copies=1):
+def layout(length, start=0, x0=X0, extension_rows=8, minimum_rows=40, side_beads=7):
     if length <= 0 or int(length) != length:
         raise ValueError('A repeat must contain a positive integer number of positions')
     lower = representative(start,x0)[1]-extension_rows
@@ -34,36 +32,56 @@ def layout(length, start=0, x0=X0, extension_rows=8, minimum_rows=40, lateral_co
     shortage=max(0,minimum_rows-(upper-lower+1))
     lower-=shortage//2;upper+=shortage-shortage//2
     points=[]
-    for copy_index in range(-lateral_copies,lateral_copies+1):
-        # K=(13,-1) moves one duplicate strip without changing k.
-        for source_y in range(lower-1,upper+2):
-            for source_x in range(x0,x0+13):
-                if (source_x+source_y)%2:
-                    continue
-                x,y=source_x+13*copy_index,source_y-copy_index
-                if not lower <= y <= upper:
-                    continue
-                k=(source_x+13*source_y)//2
-                points.append(dict(x=x,y=y,a=(x+y)//2,b=(y-x)//2,k=k,
-                                   position=(k-start)%length,repeat_copy=(k-start)//length,
-                                   lateral_copy=copy_index,canonical_xy=[source_x,source_y],
-                                   in_chosen_interval=copy_index==0 and start<=k<start+length))
+    for y in range(lower,upper+1):
+        basic_x=list(range(x0+(y-x0)%2,x0+13,2))
+        n=len(basic_x)
+        for slot in range(-side_beads,n+side_beads):
+            # Actual horizontal steps: x changes by2 and k changes by1.
+            # Do not approximate seven beads by one whole duplicate strip.
+            x=basic_x[0]+2*slot;k=(x+13*y)//2
+            cx,cy=representative(k,x0);seam=(x-cx)//13
+            side='left' if slot<0 else 'right' if slot>=n else 'basic'
+            points.append(dict(x=x,y=y,a=(x+y)//2,b=(y-x)//2,k=k,
+                               position=(k-start)%length,repeat_copy=(k-start)//length,
+                               row_slot=slot,basic_row_count=n,side=side,
+                               lateral_copy=seam,canonical_xy=[cx,cy],
+                               in_chosen_interval=side=='basic' and start<=k<start+length))
     return dict(length=length,start=start,x0=x0,strip=[x0,x0+13],rows=[lower,upper],
                 start_boundary=boundary(start,x0),end_boundary=boundary(start+length,x0),
-                points=points,display_units=dict(x_scale=X_SCALE,y_scale=Y_SCALE,ellipse_rx=RX,ellipse_ry=RY),
+                side_beads=side_beads,points=points,display_units=dict(x_scale=X_SCALE,y_scale=Y_SCALE,ellipse_rx=RX,ellipse_ry=RY),
                 membership='Exactly one canonical representative per k in [start,start+length). Lateral copies are never additional members or observations.',
                 axes='Physical display y increases upward; screen ordinate is inverted at rendering.')
 
 
+def pattern_layout(strict_colors, provisional_colors=None, **geometry):
+    """Make this presentation from color sequences without photographic inputs.
+
+    Accept a string of R/Y/B/? codes or a list of full color names. The two
+    interpretations must have the same length. Colors never depend on placement.
+    """
+    codes={'R':'red','Y':'yellow','B':'black','?':'?'}
+    def normalize(colors):
+        values=[c for c in colors if not c.isspace()] if isinstance(colors,str) else list(colors)
+        result=[codes.get(c,c) for c in values]
+        if not result or any(c not in ['red','yellow','black','?'] for c in result):
+            raise ValueError('Use R/Y/B/? or lists of red/yellow/black/? colors')
+        return result
+    strict=normalize(strict_colors)
+    provisional=normalize(provisional_colors) if provisional_colors is not None else strict
+    if len(strict)!=len(provisional):raise ValueError('Color sequences must have equal lengths')
+    paper=layout(len(strict),**geometry)
+    for point in paper['points']:
+        i=point['position'];point.update(strict_color=strict[i],provisional_color=provisional[i],tentative=strict[i]=='?' and provisional[i]!='?')
+    return paper
+
+
 def main():
+    from common import OUT, ROOT, read, save
     if OUT != ROOT/'photo2/r344':
         save(OUT/'presentation-input-seal.json',read(ROOT/'photo2/r344/presentation-input-seal.json'))
-    p=read(OUT/'pattern208.json');paper=layout(p['length'])
-    for point in paper['points']:
-        e=p['entries'][point['position']]
-        point.update(strict_color=e['strict_color'],provisional_color=e['provisional_color'],tentative=e['tentative'])
+    p=read(OUT/'pattern208.json');paper=pattern_layout(p['strict_sequence'],p['provisional_sequence'])
     save(OUT/'graph-paper-layout.json',paper)
-    print('GRAPH PAPER',len([r for r in paper['points'] if r['lateral_copy']==0]),'canonical display beads;',sum(r['in_chosen_interval'] for r in paper['points']),'in block;',paper['rows'])
+    print('GRAPH PAPER',len(paper['points']),'display symbols,',paper['side_beads'],'per side per row;',sum(r['in_chosen_interval'] for r in paper['points']),'in block;',paper['rows'])
 
 
 if __name__=='__main__':
