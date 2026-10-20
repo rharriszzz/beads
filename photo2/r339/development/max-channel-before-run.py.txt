@@ -1,0 +1,57 @@
+"""One geometric body aperture, one intensity trim, nearby reference comparison.
+
+No motif, winding/index prediction, hue, dark-component centroid, reflection
+requirement, special black shape, morphological lobe or annular mask is used.
+"""
+import argparse
+from .common import *
+from photo2.r334.classify import BodyAudit
+from photo2.r335.application import compact_test
+
+def body_sample(photo,point,radius,names,xy,tree,oid,trim=.8):
+ x,y=np.rint(point).astype(int);x0=max(0,int(x-radius-1));x1=min(photo.shape[1],int(x+radius+2));y0=max(0,int(y-radius-1));y1=min(photo.shape[0],int(y+radius+2));yy,xx=np.mgrid[y0:y1,x0:x1];d2=(xx-point[0])**2+(yy-point[1])**2;domain=d2<=radius**2
+ for j in tree.query_ball_point(point,2*radius+6):
+  if names[j]==oid:continue
+  q=xy[j];domain&=d2<(xx-q[0])**2+(yy-q[1])**2
+ gray=photo[y0:y1,x0:x1].max(2).astype(float)/255.;pixels=np.c_[xx[domain],yy[domain]]
+ if not len(pixels):return dict(domain_pixels=[],highlight_pixels=[],body_pixels=[],brightness=None,coverage=0,extent=0)
+ threshold=float(np.quantile(gray[domain],trim));highlight=domain&(gray>threshold);body=domain&~highlight;values=gray[body];points=np.c_[xx[body],yy[body]];coverage=len(set(((np.arctan2(points[:,1]-point[1],points[:,0]-point[0])+np.pi)/(2*np.pi)*8).astype(int).clip(0,7).tolist()));extent=float(domain.sum()/(math.pi*radius**2))
+ return dict(domain_pixels=pixels.tolist(),highlight_pixels=np.c_[xx[highlight],yy[highlight]].tolist(),body_pixels=points.tolist(),highlight_threshold=threshold,brightness=float(values.mean()),coverage=coverage,extent=extent,body_count=len(points))
+
+def decision(value,black,colored):
+ gap=colored-black
+ if gap<=0:return 'unknown',None
+ score=(value-black)/gap
+ return ('black' if score<=.25 else 'not-black' if score>=.75 else 'unknown'),float(score)
+
+def run(out):
+ started=time.perf_counter();out=Path(out);out.mkdir(parents=True,exist_ok=False);g=read(artifact('maker/graph.json.gz'));obs={r['id']:r for r in g['observations']};co={r['id']:r['ab'] for r in g['coordinates']};photo=photograph();clearance,_=rope_clearance(photo);names=sorted(co);xy=np.array([obs[o]['xy'] for o in names]);tree=cKDTree(xy);allnames=sorted(obs);samples={};edges=[(np.array(obs[e['source']]['xy'])+obs[e['target']]['xy'])/2 for e in g['edges']];mid=np.array(edges);lengths=np.array([np.linalg.norm(np.array(obs[e['source']]['xy'])-obs[e['target']]['xy']) for e in g['edges']]);stats={}
+ # Aperture variants are a declared robustness check, not a selected parameter
+ # sweep. The selected simple method always uses .40 of the common spacing.
+ for o in allnames:
+  point=np.array(obs[o]['xy']);local=np.linalg.norm(mid-point,axis=1)<100;spacing=float(np.median(lengths[local]));x,y=np.rint(point).astype(int);clear=float(clearance[y,x]);interior=clear>=max(18.,.65*spacing);ss=[body_sample(photo,point,factor*spacing,names,xy,tree,o) for factor in [.35,.40,.45]];samples[o]=ss;stats[o]=dict(id=o,xy=obs[o]['xy'],recorded_color=obs[o]['color'],indexed=o in co,spacing=spacing,clearance=clear,physical_interior=bool(interior),samples=ss,reflection_required=False,body_identity_established=False)
+ # References are independently recorded colors, not periodic predictions.
+ # Reference values are frozen before target decisions; no iterative label
+ # feedback. Exclude all seven current maker-review targets from references so
+ # their new labels cannot train their own evaluation or nearby applications.
+ excluded={r['id'] for r in read(artifact('maker/decisions.json'))['decisions']}
+ usable={o for o in names if stats[o]['physical_interior'] and all(s['body_count']>=50 and s['extent']>=.5 and s['coverage']>=6 for s in samples[o]) and o not in excluded}
+ references={}
+ for o in allnames:
+  dd,jj=tree.query(obs[o]['xy'],k=min(len(names),80));candidates=[names[int(j)] for d,j in zip(dd,jj) if d<=220 and names[int(j)]!=o and names[int(j)] in usable];groups=[[z for z in candidates if (obs[z]['color']=='black')==black][:5] for black in [True,False]];references[o]=groups
+ # Existing method is recomputed at every active support with the original
+ # three radii/two reflection extents, rather than comparing a cached subset.
+ oldaudit=BodyAudit(g,obs,co);historical={r['id']:r for r in read(ROOT/'photo2/r334/classification/audit.json.gz')['records']};lighting_names=[o for o in names if obs[o]['color'] in ['red','yellow'] and historical.get(o,{}).get('samples',[{},{}])[1].get('common_body_count',0)>=35 and historical[o]['samples'][1].get('common_median_intensity',0)>.18];lighting_tree=cKDTree([obs[o]['xy'] for o in lighting_names]);rows=[]
+ for o in allnames:
+  row=stats[o];groups=references[o];variants=[]
+  for j,s in enumerate(samples[o]):
+   valid=s['body_count']>=50 and s['extent']>=.5 and s['coverage']>=6 and all(len(v)>=3 for v in groups);b=float(np.median([samples[z][j]['brightness'] for z in groups[0]])) if groups[0] else None;c=float(np.median([samples[z][j]['brightness'] for z in groups[1]])) if groups[1] else None;dec,score=decision(s['brightness'],b,c) if valid else ('unknown',None);variants.append(dict(aperture_fraction=[.35,.4,.45][j],decision=dec,score=score,black_reference=b,colored_reference=c,valid=valid))
+  simple=variants[1]['decision'] if row['physical_interior'] and row['indexed'] else 'unknown';stable=all(v['decision']==simple for v in variants) and simple!='unknown'
+  dd,jj=lighting_tree.query(obs[o]['xy'],k=10);refs=[lighting_names[int(j)] for d,j in zip(dd,jj) if d<220 and lighting_names[int(j)]!=o];light=float(np.median([historical[z]['samples'][1]['common_median_intensity'] for z in refs]));broad=[];compact=[]
+  for radius in [9,12,15]:
+   test=dict(oldaudit.sample(obs[o]['xy'],radius,o).get('black_test',{}));ratio=test.get('median_intensity',1)/max(light,.1);test.update(positive=bool(test.get('raw_positive') and ratio<=.65),negative=bool(test.get('raw_negative')),relative_lighting=ratio);broad.append(test);compact.append(compact_test(oldaudit.rgb,obs[o]['xy'],radius,oldaudit.tree,oldaudit.names,obs,o,light))
+  def aggregate(ts):return 'black' if sum(t['positive'] for t in ts)>=2 and not any(t['negative'] for t in ts) else 'not-black' if sum(t['negative'] for t in ts)>=2 and not any(t['positive'] for t in ts) else 'unknown'
+  bd,cd=aggregate(broad),aggregate(compact);old=bd if bd==cd else 'unknown';row.update(simple_decision=simple,stable_across_apertures=stable,aperture_decisions=variants,reference_ids=dict(black=groups[0],colored=groups[1]),old=dict(decision=old,broad_decision=bd,compact_decision=cd,broad=broad,compact=compact,lighting=light,lighting_ids=refs));rows.append(row)
+ save(out/'classification.json.gz',dict(records=rows,policy=dict(aperture_fractions=[.35,.4,.45],selected_aperture=.4,highlight_upper_fraction_excluded=.2,body_brightness='mean of retained bottom80% maximum-channel brightness in common neighbor-clipped geometric aperture; highlight trimming does not prove body ownership',reference_count=5,minimum_references_per_class=3,black_score_max=.25,colored_score_min=.75,minimum_pixels=50,minimum_extent=.5,minimum_sectors=6,reference_max_distance_px=220,current_maker_targets_excluded_from_references=sorted(excluded),pattern_used=False,identity_created=False),seconds=time.perf_counter()-started));summary=dict(total=len(rows),indexed=len(co),physical_interior=sum(r['physical_interior'] for r in rows),simple=Counter(r['simple_decision'] for r in rows),old=Counter(r['old']['decision'] for r in rows),simple_red_to_black=[r['id'] for r in rows if r['recorded_color']=='red' and r['simple_decision']=='black'],simple_yellow_to_black=[r['id'] for r in rows if r['recorded_color']=='yellow' and r['simple_decision']=='black'],seconds=time.perf_counter()-started);save(out/'summary.json',summary);print('CLASSIFY',summary,flush=True)
+if __name__=='__main__':
+ p=argparse.ArgumentParser();p.add_argument('--output',required=True);run(p.parse_args().output)

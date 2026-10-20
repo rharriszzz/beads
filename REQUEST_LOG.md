@@ -9681,3 +9681,20 @@ Strict176supported/24conflict/8insufficient unchanged; no cohort-change gain.
 Five answerable native cases at27/92/112/157/196 with own feature1/fullkeys/current
 links/otherrepeatoccurrences; all32unknowns linked tooriginalpixels. Independent
 checks, offline/narrow browser, exact fresh replay and delivery receipt. No R339.
+
+## R339 — simplify black identification and resolve remaining pattern conflicts
+
+Maker authorizes exact R338 own-panel corrections NEW2185/NEW1221 and MAT25K2270
+feature12=NEW2259 toblack; confirms three black comparisons and completed R332B0098
+association. Reconsider simple body/highlight/brightness/localreference method,
+compare globally with existing procedure and maker cases, apply only strong
+photographic changes, retain uncertainty, no pattern-derived colors/identity edits.
+Update strict208 onmatched cohorts and showuseful unresolvednative cases; bounded
+experiment, preservehistory, logs/handoff, scopedcommit/push/remoteverify, STOP.
+
+Delivered: max-channel common-aperture rule after rejecting a luminance falsepositive;
+three additional stable native red->black corrections, no geometry/identity edits.
+176/24/8 ->179/21/8:maker27/34 andautomatic92 resolved. 112/196 remainconflicted.
+Five native cases196/190/86/112/157, all29unknowns sourcekeyed; maker targets not
+re-questioned. Global1058comparison, independentnative/integer/heldout checks,
+fresh exactreplay, offline/narrowbrowser anddeliveryreceipt. No automaticR340.

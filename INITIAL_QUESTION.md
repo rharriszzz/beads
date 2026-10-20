@@ -7,6 +7,19 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pigment and pattern instruction — R339
+
+The maker authorizes a substantially simpler body-brightness black test, global
+comparison/application with authoritative colors protected, then a frozen strict
+208 analysis and a limited native review. Reflection hue and pattern color cannot
+supply pigment or bead identity. Edge-near bodies may abstain. R339 applies three
+new exact maker corrections and three stable photographic red-to-black changes,
+with all XY/AB/IDs/links/exclusions unchanged. The selected maximum-channel body
+aperture rule replaces reflection-lobe/annular machinery for new interior edits;
+the old procedure remains a benchmark. The conditional block is now179 supported,
+21 conflicting and8 insufficient. See [R339](photo2/R339_REPORT.md). Stop after
+R339 delivery and maker review; no automatic R340 or physical/winding search.
+
 ## Current photographic-evidence instruction — R338
 
 The maker authorizes a bounded search for overlooked well-exposed physical-interior

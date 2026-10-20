@@ -1,3 +1,52 @@
+# R339 completed — simpler black evidence, six colors corrected; STOP
+
+Read photo2/R339_REPORT.md and R339_REPRODUCE.md. Startf6ed0475, branch
+photo-2-strategy-v3. Review photo2/r339/review/index.html: five native questions
+at196/190/86/112/157, own-photograph feature1/fullkeys/current diagrams and
+comparisons. 25panels/149literal crops; all29unknown positions retain source IDs.
+No re-questioning maker-confirmed bodies;92 is solved. Original keys preserved.
+
+Maker NEW2185-1265 and NEW1221-2081 feature1 ->BLACK; MAT25-K-2270-1942 own12
+is exactly NEW-2259-1961 ->BLACK. NEW1530-3049/D40K2081-2611/MAT25K2270-1942
+own1 BLACK confirmed. R332-B-0098-0092 completed association fully confirmed.
+Exact seven-decision ledger under r339/maker; no location/link/identity change.
+Protect107active earlier maker colors; excluded maker colors remain excluded.
+
+Global1058-support comparison: simple common neighbor-clipped aperture .4local
+spacing; upper20% MAX-channel brightness trim, remaining mean compared with5
+nearby black/5colored frozen references. No hue/pattern/reflection requirement,
+tracking/morphology/annuli/centroid recenter. Current7maker targets excluded from
+references. Shared coverage/physical-interior guards; no new identity from masks.
+Weighted-luminance trial mislabeled visibly red bodies incl C1899 and was rejected;
+failed epochs preserved. Selected scalar fixes this without per-bead exceptions.
+Automatic changes require stability at .35/.40/.45spacing, native ownership and
+physical-interior clearance. Old6extent procedure recomputed only for comparison,
+not stacked into acceptance. Whole-field superiority NOT established. Same51maker
+interior controls: old32agree/19abstain; stable simple31/20;zero disagreements.
+
+Three extra RED->BLACK: NEW-1247-2991, NEW-2156-1135, NEW-2235-1476. All native
+bodies/threeapertures supported, oldabstained. E5-2272-1815 keepsY and NEW-1702-
+1860 keepsR: largerapertureunknown. NEW910/E9-2263 edge-near, noauto correction.
+New overlay r339/results/graph.json.gz:1058records/1040indexed/2287links/H214,201;
+ALL originalXY/AB/links/IDs/exclusions unchanged. Sixcolor edits only;351R316Y373B.
+
+Strict208 fixed1040 andoriginal1039:176/24/8 ->maker178/22/8 ->final179/21/8.
+Maker resolves27/34; automatic resolves92. 112/196 reduced, unresolved. Frozen710
+149/6/53 ->151/4/53; physical45068/6/134 ->70/3/135. Physical112 merely becomes
+insufficient in thatsubset, NOT another full recovered position. No cohortgain.
+Complete remainingconflict IDs inreport+analysis+ledger; no majorityfilledunknowns.
+Corrected6targets predictedB byoldotheroccurrences, frequencybaselinealso6/6B;
+not distinctive/blind validation. 1034unchangedcolortarget scores separated.
+A2704/208/13repeats remains leading CONDITIONAL; multiples13 allowed (hope only).
+
+1919historicalhashes, all2287primitiveequations, 3174apertures/1313083pixel-samples,
+607971oldringpixel-samples, reflection-free patch/maxchannel permutation checks,
+107protectedcolors, 12cohort-layer pairs/48independent predictor checks, 509keys/
+149nativecrops pass. Actual offline/narrow/browsercontrols pass. Fresh replay
+54.209s/2590.39MiBpeakchild exactscience except runtime. Manual judgments explicit.
+STOP after scoped commit/push and remote delivery verification. No automaticR340,
+physical/count/winding campaign, further corrections or session/model switch.
+
 # R338 completed — bounded interior audit, one known body indexed; STOP
 
 Read photo2/R338_REPORT.md and R338_REPRODUCE.md. Start4ddb0c34, branch

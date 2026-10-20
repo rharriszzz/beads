@@ -1,0 +1,7 @@
+# R339 rejected and preliminary stages
+
+`luminance-classification/`, `luminance-comparison/` and `luminance-classify.py.txt` preserve the first simple trial: a common geometric aperture, upper20% weighted-luminance trim and local brightness references. It falsely proposed black on visibly red bodies, including stable C-1899-0420, and was rejected before application. Its apparent agreement against black-only explicit controls was not sufficient validation. The preliminary comparison predates adding all specifically maker-approved colored control observations; do not treat that earlier denominator as the final control set.
+
+The selected method changes only the scalar to maximum RGB channel, correcting the red-versus-yellow luminance imbalance with no per-bead rule. `max-channel-before-run.py.txt` records that selected change before its run. `max-channel-preliminary-comparison/` predates the explicit same-interior and aperture-stable columns; selected `../comparison/` includes them. `remaining-bodies.png` is a native inspection contact sheet, not a new observation or pattern-derived label.
+
+All5 final simple suspects were visually inspected at their fixed original supports. Only the3 stable, independently owned current bodies enter the color overlay. The two unstable suspects remain unchanged. No identity is created or merged from a threshold response. The selected source, rules, outputs and freeze are in the parent R339 directory; all historical scientific results remain unchanged.

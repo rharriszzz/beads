@@ -1,0 +1,27 @@
+"""Only fixed208 comparisons after immutable photographic freeze."""
+import argparse
+from photo2.r338.analyze import metrics
+from .common import *
+def run(out):
+ start=time.perf_counter();out=Path(out);out.mkdir(parents=True,exist_ok=False);old,oldobs,co=baseline();maker=read(artifact('maker/graph.json.gz'));final=read(artifact('results/graph.json.gz'));freeze=read(artifact('results/freeze.json'));assert freeze['pattern_used'] is False;layers={'R338_baseline':oldobs,'maker_only':{r['id']:r for r in maker['observations']},'photographic_final':{r['id']:r for r in final['observations']}};oldanalysis=read(ROOT/'photo2/r338/analysis/analysis.json.gz');blocks=oldanalysis['blocks'];core=set(read(ROOT/'photo2/r336/analysis/diagnostics.json.gz')['fixed_core_ids']);physical={r['id'] for r in oldanalysis['physical_interior_records'] if r['physical_interior']};original=set(r['id'] for r in read(ROOT/'photo2/r336/results/graph.json.gz')['coordinates']);cohorts={'unchanged_1040':set(co),'original_1039':original,'frozen_710':core,'physical_450':physical};results={}
+ for lname,obs in layers.items():results[lname]={name:metrics(obs,co,names,blocks) for name,names in cohorts.items()}
+ assert results['R338_baseline']['unchanged_1040']['entries']==oldanalysis['cohorts']['R338_expanded']['entries'];assert all(co=={r['id']:r['ab'] for r in g['coordinates']} and g['edges']==old['edges'] for g in [maker,final]);transitions=[]
+ for r in range(208):
+  entries=[results[name]['unchanged_1040']['entries'][r] for name in layers]
+  if entries[0]!=entries[-1]:transitions.append(dict(residue=r,R338=entries[0],maker=entries[1],final=entries[2]))
+ changed={o for o in co if oldobs[o]['color']!=layers['photographic_final'][o]['color']};names=sorted(co);k=np.array([(7*co[o][0]+6*co[o][1])%2704 for o in names]);bb=np.array([blocks[o] for o in names]);unchangedmask=np.array([o not in changed for o in names]);unchanged=[]
+ for lname,obs in layers.items():
+  cc=np.array([COLORS.index(obs[o]['color']) for o in names]);scores=[]
+  for kind,parent in [('flat',None),('hier104',k%104)]:
+   for holdout,occur in [('geographic',None),('whole_occurrence',k//208)]:
+    _,p,b=predict(k%208,cc,bb,parent=parent,occ=occur);ii=np.flatnonzero(unchangedmask);gain=np.log(p[ii,cc[ii]]/b[ii,cc[ii]]);scores.append(dict(model=kind,holdout=holdout,n=len(ii),gain_nats=float(gain.mean()),agreement=float((p[ii].argmax(1)==cc[ii]).mean())))
+  unchanged.append(dict(layer=lname,scores=scores))
+ # Post-freeze consistency of corrected colors against original other
+ # occurrences; no resulting vote feeds back into pigment application.
+ validations=[];cc=np.array([COLORS.index(oldobs[o]['color']) for o in names])
+ for o in sorted(changed):
+  index=(7*co[o][0]+6*co[o][1])%2704;mask=k//208!=index//208;prior=(np.bincount(cc[mask],minlength=3)+1)/(mask.sum()+3);examples=[names[j] for j in np.flatnonzero(mask&(k%208==index%208))];counts=np.bincount([COLORS.index(oldobs[z]['color']) for z in examples],minlength=3);prob=(counts+3*prior)/(counts.sum()+3);validations.append(dict(id=o,old_color=oldobs[o]['color'],new_color=layers['photographic_final'][o]['color'],residue=index%208,occurrence=index//208,source='maker' if o not in [r['id'] for r in freeze['automatic_changes']] else 'independent photographic automatic correction',training_ids=examples,prior=prior,probabilities=dict(zip(COLORS,prob.tolist())),prediction=COLORS[int(prob.argmax())],agrees=COLORS[int(prob.argmax())]==layers['photographic_final'][o]['color']))
+ final_entries=results['photographic_final']['unchanged_1040']['entries'];strict=results['photographic_final']['unchanged_1040']['strict_sequence'];save(out/'pattern208.json',dict(length=208,mapping='A = 7a + 6b',N_conditional=2704,repetitions_conditional=13,strict_sequence=strict,entries=final_entries,supported=strict.count('?')*-1+208,conflicting=sum(r['status']=='conflict' for r in final_entries),insufficient=sum(r['status'] in ['observed','unknown'] for r in final_entries),actual_shortest_complete_pattern_established=False));save(out/'analysis.json.gz',dict(results=results,transitions=transitions,unchanged_color_target_scores=unchanged,corrected_color_occurrence_checks=validations,remaining_conflicts=[r for r in final_entries if r['status']=='conflict'],freeze_sha256=content_sha(artifact('results/freeze.json')),seconds=time.perf_counter()-start,policy='Same1040 IDs/coordinates/links and same folds in every layer. Original1039/core710/physical450 separately fixed, no cohort selection gain. Full recorded-label scores are not blind accuracy; unchanged-color targets separate training changes from target relabeling. No length/count/winding search.'))
+ summary={ln:{cn:{k:v for k,v in d.items() if k not in ['entries','strict_sequence','scores']} for cn,d in cc.items()} for ln,cc in results.items()};save(out/'summary.json',dict(cohorts=summary,resolved_by_maker=[r['residue'] for r in transitions if r['R338']['status']=='conflict' and r['maker']['status']=='strong'],resolved_additionally=[r['residue'] for r in transitions if r['maker']['status']=='conflict' and r['final']['status']=='strong'],remaining_conflicting_residues=[r['residue'] for r in final_entries if r['status']=='conflict'],seconds=time.perf_counter()-start));print('PATTERN',summary,[r['residue'] for r in transitions])
+if __name__=='__main__':
+ p=argparse.ArgumentParser();p.add_argument('--output',required=True);run(p.parse_args().output)

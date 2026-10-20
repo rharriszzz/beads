@@ -2255,3 +2255,24 @@ Strict conflicts require independent resolution; adding majority votes cannot er
 them. Eight cohorts/32independent heldout score checks; new knownbody's1/1agreement
 also achieved byfrequencybaseline, not freshdiscovery validation. Five useful native
 questions expose exact targets, allstableIDs/currentlinks andsame-residue comparisons.
+
+## R339 — simple maximum-channel body aperture, protected pigment overlay
+
+[Report](photo2/R339_REPORT.md), [reproduce](photo2/R339_REPRODUCE.md),
+[review](photo2/r339/review/index.html). Same geometric aperture for every pigment,
+nearest-support clipping, upper20%maximum-channel tail exclusion, remaining mean
+relative to frozen nearby recorded black/colored references. No hue or pattern,
+reflection requirement, morphological lobe/annular selection, centroid propagation
+or new identity. Interior-only new edits require predeclared aperture robustness
+and native ownership. Rejected weighted-luminance trial exposed real red-body false
+positives; changing brightness scalar fixes them without per-example exceptions.
+Old two-extent method recomputed on1058active supports solely as benchmark. Protected
+107maker colors and same51interior controls separate coverage from reliable labels.
+
+Six pigment changes only, three maker/three photographic. Freeze precedes fixed208
+analysis onunchanged1040/original1039/frozen710/physical450. Strict179/21/8 includes
+maker27/34 andautomatic92 resolutions, no majorityfills;112/196 reduced only.
+Separate1034unchanged-color-target scores avoid mechanical target-relabel gains.
+Postfreeze otheroccurrence6/6alsofrequencybaseline6/6: consistency, not blindproof.
+Independentnativepixels, reflectionfree/maxchannelinvariance, exactprimitive
+geometry,48heldout scores, localkeys/crops, actualbrowser andfreshreplay recorded.
