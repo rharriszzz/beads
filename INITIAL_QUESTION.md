@@ -7,6 +7,20 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pattern presentation and accuracy instruction — R344
+
+Maker individually confirms NEW-1519-2976 and R332-R-0125-0118 YELLOW, own
+R343photograph feature1. Apply two reversible pigment edits, preserve all geometry/
+identities/provenance. Strict199supported/2conflicting/7insufficient on1041indexed;
+all208residues observed. Show entire numbered0..207 strict and separate provisional
+completion, links to photographed occurrences, exact source authority/confidence.
+Fitted1038/1041 versus geographic1024/1041 and occurrence1038/1041 heldout recorded
+labels, not independent physical truth. Fixed historical cohorts/explicit denominators
+and baselines retained. A7a+6b/N2704/208/13 remain conditional; strict properdivisor
+witnesses establish minimal208 only under that indexing. Recommend one future step:
+independent reobservation of3remaining discrepant bodies at83/189; not begun.
+See [R344](photo2/R344_REPORT.md). Commit/push/remote verify then STOP, no R345.
+
 ## Current pigment and pattern instruction — R343
 
 The maker explicitly corrects Q101 REC266-P100583 to YELLOW and confirms C62

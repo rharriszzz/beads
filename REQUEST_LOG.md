@@ -9793,3 +9793,31 @@ fresh20science products/26images/vector/CSV/offlineHTML-JS-CSS and actual offlin
 narrow/pixel-click browser checks pass. Failed initial old-label import preserved,
 current excluded controls use latest maker pigments. Report photo2/R343_REPORT.md.
 Stop for review after scoped delivery; no automatic R344.
+
+## R344 — two maker-yellow decisions, actual pattern and explicit accuracy denominators
+
+User directs individual P29 NEW1519/P127 R332R0125118 YELLOW overlays, preserving
+original evidence and geometry. Recompute strict support independently, show all
+208numbered string positions, strict? and separate best provisional completion with
+confidence/native provenance/alternatives; visualize13conditional repeats linked to
+photographic occurrences. Quantify inventory/positions/class/region/occurrence fit,
+whole-region/occurrence heldout accuracy, simple baselines/relevant alternatives,
+exact mismatches and unchanged historical cohorts. Recommend ONE next scientific
+step, do not start it. Deliver report/review/reproducible checks, commit/push/verify,
+STOP. No classifier or broad geometry search requested.
+
+Delivered: exactly2R->Y edits,1059identities/1041AB/2290links/H214,201 exact. Strict
+197/4/7 ->199/2/7 (P127 supplies third agreeing block7); historical1039IDs198/2/8.
+208residues observed; provisional9tentative=7B sparse and83/189Ypluralities, current
+1038/1041 fit, strict1011/1011+30abstentions. All208source provenance and separate
+colors in CSV/JSON/PNG/SVG/native-linked13x208review. All37explicit indexed pigments
+agree;83display approvals separate. Three actual software-red mismatches preserved.
+Heldoutflat geog1024/1041,occ1038/1041;38geogcold positions27blackfallbacksuccesses
+explicit. Unchanged1039targetcolors geog1020->1022/occ1034->1036; all historical IDs
+retained. Nine fixed baseline/alternative models; no exhaustive period/winding search.
+Every proper208divisor contradicts strict colors, so conditional minimal208 established
+without proving physical closure. Recommend independent targeted reobservation of3
+remaining contradictory bodies (future, not begun), possible201/0/7 if all yellow.
+Independent2703hashes/1456strict/18738heldoutvectors/20matched/9divisor/5nativecrop
+checks, fresh10science+17exactartifact replay, offline/mobile/native interactions pass.
+No automatic R345. Report photo2/R344_REPORT.md. Stop after scoped remote delivery.

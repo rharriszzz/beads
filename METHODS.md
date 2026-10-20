@@ -1,3 +1,28 @@
+# R344 — distinguish strict sequence, provisional completion and recorded-label accuracy
+
+Freeze only two explicit maker R->Y overlays, preserving all records/geometry.
+Recompute original1039/current1041/frozen710 cohorts without ID pruning. P127
+former red lies in the third geographic block, so removing its contradiction also
+supplies strict support. Current199/2/7 versus197/4/7; historical198/2/8.
+
+Export every0..207 position, strict? versus separate provisional colors, all native
+sourceIDs/XY/AB/authority, raw counts/blocks and uncalibrated shrinkage score. Best
+completion adds7black sparse entries and2yellow pluralities but no label edits.
+Link13x208conditional addresses to1041photographed occurrences and current native
+adjacency; missing indexed records are not automatically physically unseen beads.
+
+Separate fitted1038/1041 and strict1011/1011+30abstentions from guarded geographic
+1024/1041 and wholeocc1038/1041. Flatgeog38cold positions include27black fallback
+successes, not fresh motif evidence. Same1039unchanged-color targets improve2
+predictions per protocol; explicit37/37 distinct from83displayed-label approvals.
+Nine fixed predictors reuse earlier hyperparameters, same Aoccurrence partition
+for both conventions, per-region/class/occurrence denominators and logloss exported.
+Conditional strict divisor witnesses rule out every smaller208cyclic period but
+not alternative physical winding. Recommend independent native reobservation of
+three residual contradictory bodies; future work, not automatically executed.
+See [R344](photo2/R344_REPORT.md), [reproduction](photo2/R344_REPRODUCE.md),
+[review](photo2/r344/review/index.html). Stop after delivery; no automatic R345.
+
 # R343 — inspect glass ownership before interpreting joint HSV
 
 Keep black's fixed3×3 maximum-RGB minimax and73.5 unchanged. For a bounded

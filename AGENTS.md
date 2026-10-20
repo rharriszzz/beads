@@ -1,3 +1,66 @@
+# R344 completed — present strict/provisional208, quantified fit; STOP
+
+Read photo2/R344_REPORT.md and R344_REPRODUCE.md. Offline review:
+photo2/r344/review/index.html. Base R3436fa108f7. Current science ONLY r344;
+stopped untracked R340 experiments untouched. No automatic R345.
+
+Maker P29 NEW-1519-2976 feature1 YELLOW supersedes software red/general approval;
+P127 R332-R-0125-0118 feature1 YELLOW glass in shadow supersedes software red.
+Two reversible color overlays only. Prior observations/authority statements retained;
+1059identities/XY,1041AB,2290links,H214,201,roles/exclusions all unchanged. Black
+implementation/3x3/73.5 untouched; no classifier, geometry or winding search.
+
+Strict current197/4/7 ->199/2/7. P29 fiveY spans4blocks5/6/7/8; P127 threeY
+nowspans3blocks7/8/9 (former red in7 supplies third agreeing block). Original
+R3361039IDs196/4/8 ->198/2/8; frozen710155/0/53 unchanged. No cohort pruning,
+no support relaxation. 208residues all observed. Active1059:1041indexed18not;
+indexed392B330R319Y. Conditional N2704 leaves1663addresses without indexed
+observations, not proven physically unseen. A7a+6b/208/13 remain conditional.
+
+Full numbered0..207 strict and separate provisional sequence in report, CSV/JSON,
+PNG/SVG and interactive review. Strict62R60Y77B9?; provisional62R62Y84B. Tentative
+43/75/82/89/140/147/186=BLACK (2records each except89three/twoblocks),83/189=
+YELLOW plurality (5Y2R/7Y1R), no individual maker pigments among these9 entries.
+Every tentative entry includes rawcounts/blocks/nativeID/XY/AB/authority/confidence/
+alternatives; shrinkage scores explicitly NOT calibrated physical confidence.
+No predicted color overwrites an observation. Three retained red mismatches:
+R332-R-0037-0040 at2301.35,1430.23 AB37,40 k499 q2 r83 geo2;
+REC266-P035619 at2124.72,736.69 AB21,24 k291 q1 r83 geo1;
+R332-R-0197-0183 at599.64,624.45 AB197,183 k2477 q11 r189 geo11.
+
+Provisional fitted1038/1041; strict1011/1011+30abstentions (definition, not accuracy).
+Recorded class fit392/392B327/330R319/319Y. Explicit37/37, illustration83/83,
+software918/921 separate; ledger123includes3excluded, not all explicit pigments.
+Heldout flat208 guarded geog1024/1041 (remove block+both neighbors); wholeocc
+1038/1041. Parent104hier1029/1041 geog,1038occ. Same1039unchanged-color targets
+R343->R344: geog1020->1022,occ1034->1036, no target label changes. Original1039
+IDs full geog1015->1019,occ1032->1036. Current provisional vs frozenR336labels
+1006/1039 versus current1036/1039 separates label corrections from ID selection.
+CV reuses one already studied photo; not independent physical validation.
+
+Flat geog997/1003 when same-position support remains;38cold targets fall back
+frequency,27/38correct black. No claimed new evidence for every tentative black.
+Fixed9models frequency/phase13/A104/A208/hier104/A338/B207/B299/A306alias;
+same targets/folds. 10489.05% geog,33836.89%,B20743.04%,B29930.93%; logloss
+also shown,104beats flat208loggain but loses hardaccuracy, hierarchy handles
+sparsity. Strict witnesses contradict every proper divisor of208, hence ANY
+completion has minimal208 under fixed indexing; physical closure unproved.
+
+Review2x208grids+13x208matrix,1041real linked source addresses, all tentative
+provenance, own-photo feature1/current adjacency, five literal native crops.
+Only3remaining weak-edge mismatches highlighted, solved maker cases not askedagain.
+Recommend ONE future step: targeted independent reobservation of these3bodies/
+neighbors. If yellow ->201/0/7; if red atconfirmedassociation ->substantive
+counterexample. Not begun. Seven black support shortages still need extra sources.
+
+Independent2703 historical hashes,1456strict entries,18738heldout probability
+vectors,20matched summaries,2290primitive equations/1041unique sites+indices,
+9divisorwitnesses/5literalcrops pass. Fresh10science products+17exact artifacts
+including report; actual desktop/narrow/offline/matrix/native keys checked.
+Initial narrow table overflow fixed; no scientific result changed. All earlier
+results/maker decisions preserved. Stop after scoped push/remote verification;
+no automatic R345 or session/model change.
+
 # R343 completed — actual glass HSV, scoped authority, 197 supported; STOP
 
 Read photo2/R343_REPORT.md and R343_REPRODUCE.md. Review:
