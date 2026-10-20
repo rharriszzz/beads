@@ -1,0 +1,6299 @@
+{
+  "targets": [
+    {
+      "id": "C-0272-1512",
+      "color": "yellow",
+      "xy": [
+        272.3703703703704,
+        1512.2222222222222
+      ],
+      "ab": [
+        171,
+        164
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-0272-1512",
+          "target": "NEW-290-1494",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "C-0272-1512",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-0297-1523",
+          "target": "C-0272-1512",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "C-0272-1512",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-0272-1512",
+          "target": "K-0262-1484",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "allowed": true,
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "accepted working addition",
+          "admission": "original native foreground/intervening-observation gates; existing coordinate relation",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "NEW-290-1494",
+        "reference_ab": [
+          172,
+          163
+        ],
+        "native_affine_coefficients": [
+          [
+            -8.377159897573396,
+            -28.543057366749117
+          ],
+          [
+            -26.21057549679159,
+            -5.683193176307441
+          ],
+          [
+            291.5688590834986,
+            1493.0360478355492
+          ]
+        ],
+        "anchors": [
+          "C-0259-1459",
+          "C-0286-1466",
+          "C-0297-1523",
+          "C-0312-1471",
+          "C-0314-1551",
+          "K-0262-1484",
+          "K-0315-1496",
+          "NEW-290-1494",
+          "NEW-326-1528"
+        ],
+        "estimated_ab": [
+          171.12637959043423,
+          164.01168883442068
+        ],
+        "nearest_cell": [
+          171,
+          164
+        ],
+        "native_target_error": 3.9191097688931356,
+        "native_fit_rms": 3.497709013621841,
+        "nearest_cell_prediction": [
+          273.7354434842804,
+          1515.8959120259908
+        ]
+      }
+    },
+    {
+      "id": "C-0315-0867",
+      "color": "yellow",
+      "xy": [
+        314.4390243902439,
+        866.8780487804878
+      ],
+      "ab": [
+        187,
+        177
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-0315-0867",
+          "target": "C-0348-0860",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 171,
+          "witnesses": [
+            [
+              171,
+              1
+            ],
+            [
+              172,
+              0
+            ],
+            [
+              173,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0315-0867",
+          "target": "NEW-317-843",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 171,
+          "witnesses": [
+            [
+              171,
+              1
+            ],
+            [
+              172,
+              0
+            ],
+            [
+              173,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0315-0867",
+          "target": "C-0347-0884",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 171,
+          "witnesses": [
+            [
+              171,
+              1
+            ],
+            [
+              172,
+              0
+            ],
+            [
+              173,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0290-0887",
+          "target": "C-0315-0867",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 171,
+          "witnesses": [
+            [
+              171,
+              1
+            ],
+            [
+              172,
+              0
+            ],
+            [
+              173,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0320-0898",
+          "target": "C-0315-0867",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 171,
+          "witnesses": [
+            [
+              171,
+              1
+            ],
+            [
+              172,
+              0
+            ],
+            [
+              173,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "NEW-317-843",
+        "reference_ab": [
+          187,
+          178
+        ],
+        "native_affine_coefficients": [
+          [
+            27.217051166518186,
+            -12.772336762741608
+          ],
+          [
+            -2.751356054519192,
+            -27.642220082791823
+          ],
+          [
+            317.9868126551694,
+            844.017274315165
+          ]
+        ],
+        "anchors": [
+          "C-0290-0887",
+          "C-0294-0912",
+          "C-0317-0814",
+          "C-0320-0898",
+          "C-0347-0884",
+          "C-0348-0860",
+          "C-0376-0848",
+          "C-0384-0878",
+          "K-0329-0923",
+          "K-0343-0831",
+          "NEW-317-843",
+          "NEW-343-803",
+          "R332-Y-0185-0177"
+        ],
+        "estimated_ab": [
+          186.7955926790199,
+          177.26742442306212
+        ],
+        "nearest_cell": [
+          187,
+          177
+        ],
+        "native_target_error": 7.908314697203544,
+        "native_fit_rms": 3.614926235100851,
+        "nearest_cell_prediction": [
+          320.7381687096886,
+          871.6594943979568
+        ]
+      }
+    },
+    {
+      "id": "C-0870-0396",
+      "color": "yellow",
+      "xy": [
+        870.1333333333333,
+        396.76666666666665
+      ],
+      "ab": [
+        203,
+        193
+      ],
+      "degree": 4,
+      "incident_links": [
+        {
+          "source": "C-0839-0392",
+          "target": "C-0870-0396",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 183,
+          "witnesses": [
+            [
+              183,
+              1
+            ],
+            [
+              184,
+              2
+            ],
+            [
+              185,
+              3
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0870-0396",
+          "target": "C-0883-0431",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 183,
+          "witnesses": [
+            [
+              183,
+              1
+            ],
+            [
+              184,
+              2
+            ],
+            [
+              185,
+              3
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0856-0421",
+          "target": "C-0870-0396",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 183,
+          "witnesses": [
+            [
+              183,
+              1
+            ],
+            [
+              184,
+              2
+            ],
+            [
+              185,
+              3
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0870-0396",
+          "target": "E5-0895-0407",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 184,
+          "witnesses": [
+            [
+              184,
+              2
+            ],
+            [
+              185,
+              3
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "E5-0895-0407",
+        "reference_ab": [
+          204,
+          193
+        ],
+        "native_affine_coefficients": [
+          [
+            29.82777978452273,
+            5.224311120527036
+          ],
+          [
+            13.201639974972409,
+            -22.04998555967336
+          ],
+          [
+            898.8406335191339,
+            404.8525370769013
+          ]
+        ],
+        "anchors": [
+          "C-0826-0414",
+          "C-0839-0392",
+          "C-0856-0421",
+          "C-0883-0431",
+          "C-0903-0449",
+          "C-0932-0412",
+          "E5-0895-0407",
+          "K-0847-0449",
+          "K-0915-0382",
+          "NEW-914-431"
+        ],
+        "estimated_ab": [
+          202.98201289722502,
+          193.12551432567446
+        ],
+        "nearest_cell": [
+          203,
+          193
+        ],
+        "native_target_error": 3.0731085401697626,
+        "native_fit_rms": 4.263756193722718,
+        "nearest_cell_prediction": [
+          869.0128537346112,
+          399.62822595637425
+        ]
+      }
+    },
+    {
+      "id": "C-0900-1612",
+      "color": "yellow",
+      "xy": [
+        899.8636363636364,
+        1612.090909090909
+      ],
+      "ab": [
+        157,
+        150
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-0917-1589",
+          "target": "C-0900-1612",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 142,
+          "witnesses": [
+            [
+              142,
+              0
+            ],
+            [
+              143,
+              6
+            ],
+            [
+              144,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0900-1612",
+          "target": "K-0885-1626",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 142,
+          "witnesses": [
+            [
+              142,
+              0
+            ],
+            [
+              143,
+              6
+            ],
+            [
+              144,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0900-1612",
+          "target": "E5-0889-1583",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 142,
+          "witnesses": [
+            [
+              142,
+              0
+            ],
+            [
+              143,
+              6
+            ],
+            [
+              144,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0900-1612",
+          "target": "C-0870-1605",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 143,
+          "witnesses": [
+            [
+              143,
+              6
+            ],
+            [
+              144,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "REC266-P077524",
+          "target": "C-0900-1612",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P077524",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "K-0885-1626",
+        "reference_ab": [
+          157,
+          151
+        ],
+        "native_affine_coefficients": [
+          [
+            -26.83600941431371,
+            -7.215335755213191
+          ],
+          [
+            -16.70584191641842,
+            18.828651486772515
+          ],
+          [
+            881.6366597020093,
+            1629.392925122239
+          ]
+        ],
+        "anchors": [
+          "C-0835-1638",
+          "C-0846-1598",
+          "C-0870-1605",
+          "C-0905-1566",
+          "C-0917-1589",
+          "C-0929-1565",
+          "E5-0889-1583",
+          "K-0861-1575",
+          "K-0885-1626",
+          "K-0957-1583",
+          "K-0969-1609",
+          "MAT25-K-0941-1601",
+          "NEW-855-1626",
+          "REC266-P074700",
+          "REC266-P077524"
+        ],
+        "estimated_ab": [
+          156.91348264756252,
+          150.04792609335766
+        ],
+        "nearest_cell": [
+          157,
+          150
+        ],
+        "native_target_error": 2.155102486401851,
+        "native_fit_rms": 3.6482670049267516,
+        "nearest_cell_prediction": [
+          898.3425016184277,
+          1610.5642736354664
+        ]
+      }
+    },
+    {
+      "id": "C-0990-1588",
+      "color": "yellow",
+      "xy": [
+        989.8333333333334,
+        1587.6333333333334
+      ],
+      "ab": [
+        155,
+        148
+      ],
+      "degree": 4,
+      "incident_links": [
+        {
+          "source": "C-0999-1559",
+          "target": "C-0990-1588",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 141,
+          "witnesses": [
+            [
+              141,
+              0
+            ],
+            [
+              142,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0990-1588",
+          "target": "K-0957-1583",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 141,
+          "witnesses": [
+            [
+              141,
+              0
+            ],
+            [
+              142,
+              0
+            ],
+            [
+              143,
+              6
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0990-1588",
+          "target": "K-0969-1609",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 141,
+          "witnesses": [
+            [
+              141,
+              0
+            ],
+            [
+              142,
+              0
+            ],
+            [
+              143,
+              6
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-0990-1588",
+          "target": "K-0970-1557",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 141,
+          "witnesses": [
+            [
+              141,
+              0
+            ],
+            [
+              142,
+              0
+            ],
+            [
+              143,
+              6
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-0999-1559",
+        "reference_ab": [
+          155,
+          147
+        ],
+        "native_affine_coefficients": [
+          [
+            -28.15288529456499,
+            -10.448232396645206
+          ],
+          [
+            -16.339772362530994,
+            21.844107988978294
+          ],
+          [
+            1001.5377746597751,
+            1566.5158969228523
+          ]
+        ],
+        "anchors": [
+          "C-0929-1565",
+          "C-0947-1546",
+          "C-0999-1559",
+          "C-1026-1576",
+          "C-1059-1589",
+          "D40-K-1014-1544",
+          "K-0957-1583",
+          "K-0969-1609",
+          "K-0970-1557",
+          "K-1037-1557",
+          "MAT25-K-0941-1601",
+          "NEW-989-1538"
+        ],
+        "estimated_ab": [
+          154.88623974487703,
+          147.91232120064186
+        ],
+        "nearest_cell": [
+          155,
+          148
+        ],
+        "native_target_error": 4.691944735088854,
+        "native_fit_rms": 3.1282609828905756,
+        "nearest_cell_prediction": [
+          985.1980022972441,
+          1588.3600049118306
+        ]
+      }
+    },
+    {
+      "id": "C-1001-2678",
+      "color": "yellow",
+      "xy": [
+        999.5897435897435,
+        2677.6923076923076
+      ],
+      "ab": [
+        101,
+        95
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-0969-2696",
+          "target": "C-1001-2678",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 84,
+          "witnesses": [
+            [
+              84,
+              9
+            ],
+            [
+              85,
+              0
+            ],
+            [
+              86,
+              2
+            ],
+            [
+              87,
+              4
+            ],
+            [
+              88,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "K-0990-2705",
+          "target": "C-1001-2678",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 84,
+          "witnesses": [
+            [
+              84,
+              9
+            ],
+            [
+              85,
+              0
+            ],
+            [
+              86,
+              2
+            ],
+            [
+              87,
+              4
+            ],
+            [
+              88,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1001-2678",
+          "target": "C-0978-2667",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 85,
+          "witnesses": [
+            [
+              85,
+              0
+            ],
+            [
+              86,
+              2
+            ],
+            [
+              87,
+              4
+            ],
+            [
+              88,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-0978-2667",
+        "reference_ab": [
+          101,
+          96
+        ],
+        "native_affine_coefficients": [
+          [
+            6.6203043298306,
+            -29.540736934355653
+          ],
+          [
+            -22.53738462389572,
+            -10.65963757038412
+          ],
+          [
+            973.8122552035242,
+            2664.7237129406076
+          ]
+        ],
+        "anchors": [
+          "C-0957-2725",
+          "C-0969-2696",
+          "C-0978-2667",
+          "C-1007-2744",
+          "E5-0956-2624",
+          "E5-0978-2636",
+          "K-0951-2652",
+          "K-0990-2705",
+          "K-1010-2715",
+          "MAT25-K-0980-2735",
+          "NEW-946-2684"
+        ],
+        "estimated_ab": [
+          100.97623448321568,
+          94.84925319540451
+        ],
+        "nearest_cell": [
+          101,
+          95
+        ],
+        "native_target_error": 3.9786374119508947,
+        "native_fit_rms": 2.754611985909713,
+        "nearest_cell_prediction": [
+          996.3496398274199,
+          2675.3833505109915
+        ]
+      }
+    },
+    {
+      "id": "C-1032-1519",
+      "color": "yellow",
+      "xy": [
+        1031.896551724138,
+        1519.0344827586207
+      ],
+      "ab": [
+        155,
+        145
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-1032-1519",
+          "target": "D40-K-1014-1544",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 140,
+          "witnesses": [
+            [
+              140,
+              6
+            ],
+            [
+              141,
+              0
+            ],
+            [
+              142,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1060-1534",
+          "target": "C-1032-1519",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 140,
+          "witnesses": [
+            [
+              140,
+              6
+            ],
+            [
+              141,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "K-1037-1557",
+          "target": "C-1032-1519",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 140,
+          "witnesses": [
+            [
+              140,
+              6
+            ],
+            [
+              141,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "D40-K-1014-1544",
+        "reference_ab": [
+          155,
+          146
+        ],
+        "native_affine_coefficients": [
+          [
+            -27.579343658631327,
+            -9.712559635818915
+          ],
+          [
+            -15.431928326027446,
+            20.08660265416802
+          ],
+          [
+            1016.3622095281285,
+            1545.057040662286
+          ]
+        ],
+        "anchors": [
+          "C-0999-1559",
+          "C-1026-1576",
+          "C-1060-1534",
+          "C-1073-1515",
+          "C-1089-1544",
+          "D40-K-1014-1544",
+          "K-0970-1557",
+          "K-1037-1557",
+          "K-1069-1565",
+          "NEW-989-1538"
+        ],
+        "estimated_ab": [
+          155.1272216585763,
+          144.76599789498837
+        ],
+        "nearest_cell": [
+          155,
+          145
+        ],
+        "native_target_error": 5.936838664204969,
+        "native_fit_rms": 3.1683158659177697,
+        "nearest_cell_prediction": [
+          1031.794137854156,
+          1524.970438008118
+        ]
+      }
+    },
+    {
+      "id": "C-1067-2156",
+      "color": "yellow",
+      "xy": [
+        1066.8333333333333,
+        2156.0
+      ],
+      "ab": [
+        111,
+        110
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-1067-2156",
+          "target": "NEW-1092-2152",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "C-1067-2156",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-1067-2156",
+          "target": "D40-K-1077-2175",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "C-1067-2156",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-1049-2177",
+          "target": "C-1067-2156",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "C-1067-2156",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "D40-K-1077-2175",
+        "reference_ab": [
+          112,
+          109
+        ],
+        "native_affine_coefficients": [
+          [
+            27.340580071201284,
+            -5.575578840205841
+          ],
+          [
+            8.853153288857957,
+            -25.091092178741967
+          ],
+          [
+            1081.4269007666132,
+            2175.0545736017157
+          ]
+        ],
+        "anchors": [
+          "C-1045-2201",
+          "C-1049-2177",
+          "C-1093-2220",
+          "C-1100-2195",
+          "C-1109-2169",
+          "C-1120-2144",
+          "D40-K-1077-2175",
+          "K-1072-2198",
+          "NEW-1092-2152",
+          "R332-R-0110-0109"
+        ],
+        "estimated_ab": [
+          111.15987274559572,
+          109.94610346872683
+        ],
+        "nearest_cell": [
+          111,
+          110
+        ],
+        "native_target_error": 3.9210465530606124,
+        "native_fit_rms": 3.2352036691906223,
+        "nearest_cell_prediction": [
+          1062.9394739842699,
+          2155.5390602631796
+        ]
+      }
+    },
+    {
+      "id": "C-1226-1539",
+      "color": "yellow",
+      "xy": [
+        1225.3333333333333,
+        1537.6666666666667
+      ],
+      "ab": [
+        149,
+        143
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-1240-1518",
+          "target": "C-1226-1539",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 136,
+          "witnesses": [
+            [
+              136,
+              10
+            ],
+            [
+              137,
+              0
+            ],
+            [
+              138,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "NEW-1251-1537",
+          "target": "C-1226-1539",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 136,
+          "witnesses": [
+            [
+              136,
+              10
+            ],
+            [
+              137,
+              0
+            ],
+            [
+              138,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1226-1539",
+          "target": "C-1200-1527",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 137,
+          "witnesses": [
+            [
+              137,
+              0
+            ],
+            [
+              138,
+              0
+            ],
+            [
+              139,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1226-1539",
+          "target": "E5-1214-1506",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 137,
+          "witnesses": [
+            [
+              137,
+              0
+            ],
+            [
+              138,
+              0
+            ],
+            [
+              139,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1226-1539",
+          "target": "REC266-P074746",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P074746",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "REC266-P074746",
+        "reference_ab": [
+          149,
+          144
+        ],
+        "native_affine_coefficients": [
+          [
+            -26.271874659628487,
+            -8.817483030382519
+          ],
+          [
+            -16.264080169091358,
+            18.901709626837942
+          ],
+          [
+            1208.546698991087,
+            1552.8204063558928
+          ]
+        ],
+        "anchors": [
+          "C-1184-1547",
+          "C-1200-1527",
+          "C-1240-1518",
+          "E5-1214-1506",
+          "E5-1231-1486",
+          "E5-1258-1496",
+          "K-1171-1518",
+          "K-1184-1490",
+          "K-1208-1477",
+          "K-1268-1526",
+          "K-1284-1506",
+          "NEW-1251-1537",
+          "R332-R-0150-0145",
+          "REC266-P074746"
+        ],
+        "estimated_ab": [
+          148.8893197174669,
+          143.14665596283643
+        ],
+        "nearest_cell": [
+          149,
+          143
+        ],
+        "native_target_error": 3.784222709768115,
+        "native_fit_rms": 2.6759216743486762,
+        "nearest_cell_prediction": [
+          1224.8107791601783,
+          1533.9186967290548
+        ]
+      }
+    },
+    {
+      "id": "C-1243-0349",
+      "color": "yellow",
+      "xy": [
+        1242.375,
+        348.6666666666667
+      ],
+      "ab": [
+        -1,
+        -2
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-1243-0349",
+          "target": "C-1259-0324",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 3,
+          "witnesses": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1235-0312",
+          "target": "C-1243-0349",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 3,
+          "witnesses": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1220-0333",
+          "target": "C-1243-0349",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 3,
+          "witnesses": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1220-0333",
+        "reference_ab": [
+          -2,
+          -2
+        ],
+        "native_affine_coefficients": [
+          [
+            26.342832677075517,
+            9.237546266896354
+          ],
+          [
+            16.55994576959074,
+            -20.7894991396533
+          ],
+          [
+            1216.5494481012454,
+            334.80154940824787
+          ]
+        ],
+        "anchors": [
+          "C-1205-0305",
+          "C-1220-0333",
+          "C-1235-0312",
+          "C-1251-0290",
+          "C-1259-0324",
+          "C-1277-0302",
+          "C-1284-0332",
+          "C-1302-0316",
+          "K-1187-0329",
+          "R332-R-0212-0198"
+        ],
+        "estimated_ab": [
+          -0.9059724168806398,
+          -2.180811803922835
+        ],
+        "nearest_cell": [
+          -1,
+          -2
+        ],
+        "native_target_error": 4.656392668708309,
+        "native_fit_rms": 2.7783017004434667,
+        "nearest_cell_prediction": [
+          1242.8922807783208,
+          344.0390956751442
+        ]
+      }
+    },
+    {
+      "id": "C-1250-2138",
+      "color": "yellow",
+      "xy": [
+        1249.6296296296296,
+        2136.8888888888887
+      ],
+      "ab": [
+        117,
+        111
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-1231-2109",
+          "target": "C-1250-2138",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 103,
+          "witnesses": [
+            [
+              103,
+              0
+            ],
+            [
+              104,
+              0
+            ],
+            [
+              105,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "K-1219-2134",
+          "target": "C-1250-2138",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 103,
+          "witnesses": [
+            [
+              103,
+              0
+            ],
+            [
+              104,
+              0
+            ],
+            [
+              105,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1250-2138",
+          "target": "C-1263-2116",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 103,
+          "witnesses": [
+            [
+              103,
+              0
+            ],
+            [
+              104,
+              0
+            ],
+            [
+              105,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1241-2153",
+          "target": "C-1250-2138",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 103,
+          "witnesses": [
+            [
+              103,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 1,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1250-2138",
+          "target": "R332-R-0118-0111",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0118-0111",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1241-2153",
+        "reference_ab": [
+          117,
+          110
+        ],
+        "native_affine_coefficients": [
+          [
+            27.580952573925885,
+            5.5405229026435245
+          ],
+          [
+            14.02906706407066,
+            -20.682790586214878
+          ],
+          [
+            1234.3442752148544,
+            2157.355651978469
+          ]
+        ],
+        "anchors": [
+          "C-1205-2103",
+          "C-1231-2109",
+          "C-1241-2153",
+          "C-1263-2116",
+          "C-1291-2128",
+          "C-1306-2103",
+          "D40-K-1248-2087",
+          "K-1191-2129",
+          "K-1207-2155",
+          "K-1219-2134",
+          "K-1278-2097",
+          "NEW-1221-2081",
+          "NEW-1265-2070",
+          "R332-R-0118-0111",
+          "R332-R-0119-0112"
+        ],
+        "estimated_ab": [
+          117.04476259338621,
+          111.0015462457578
+        ],
+        "nearest_cell": [
+          117,
+          111
+        ],
+        "native_target_error": 1.2747257692705138,
+        "native_fit_rms": 3.8552750417598474,
+        "nearest_cell_prediction": [
+          1248.373342278925,
+          2136.672861392254
+        ]
+      }
+    },
+    {
+      "id": "C-1582-0235",
+      "color": "yellow",
+      "xy": [
+        1582.1186440677966,
+        237.10169491525423
+      ],
+      "ab": [
+        5,
+        8
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-1582-0235",
+          "target": "C-1608-0253",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 9,
+          "witnesses": [
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1582-0235",
+          "target": "C-1582-0272",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 9,
+          "witnesses": [
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1559-0252",
+          "target": "C-1582-0235",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 9,
+          "witnesses": [
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1559-0252",
+        "reference_ab": [
+          5,
+          7
+        ],
+        "native_affine_coefficients": [
+          [
+            23.81696468723425,
+            18.055328121881267
+          ],
+          [
+            23.223950950040262,
+            -16.356154766017085
+          ],
+          [
+            1560.153167718353,
+            254.3839963948285
+          ]
+        ],
+        "anchors": [
+          "C-1559-0252",
+          "C-1582-0272",
+          "C-1585-0307",
+          "C-1608-0253",
+          "D40-K-1514-0255",
+          "E5-1561-0289",
+          "E5-1607-0290",
+          "E5-1633-0278",
+          "K-1539-0268",
+          "NEW-1535-240"
+        ],
+        "estimated_ab": [
+          4.947961241738236,
+          7.999178893688257
+        ],
+        "nearest_cell": [
+          5,
+          8
+        ],
+        "native_target_error": 1.56253193739508,
+        "native_fit_rms": 2.5325121385146194,
+        "nearest_cell_prediction": [
+          1583.3771186683932,
+          238.02784162881142
+        ]
+      }
+    },
+    {
+      "id": "C-1592-1479",
+      "color": "yellow",
+      "xy": [
+        1591.7567567567567,
+        1478.6216216216217
+      ],
+      "ab": [
+        141,
+        134
+      ],
+      "degree": 6,
+      "incident_links": [
+        {
+          "source": "C-1621-1468",
+          "target": "C-1592-1479",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 127,
+          "witnesses": [
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1609-1499",
+          "target": "C-1592-1479",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 127,
+          "witnesses": [
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ],
+            [
+              131,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-1574-1503",
+          "target": "C-1592-1479",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 127,
+          "witnesses": [
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ],
+            [
+              130,
+              23
+            ],
+            [
+              131,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1592-1479",
+          "target": "K-1563-1489",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 128,
+          "witnesses": [
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ],
+            [
+              130,
+              23
+            ],
+            [
+              131,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1592-1479",
+          "target": "C-1569-1455",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 130,
+          "witnesses": [
+            [
+              130,
+              23
+            ],
+            [
+              131,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1592-1479",
+          "target": "REC266-P069702",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P069702",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1609-1499",
+        "reference_ab": [
+          140,
+          134
+        ],
+        "native_affine_coefficients": [
+          [
+            -19.068544209260605,
+            -19.859285890293418
+          ],
+          [
+            -26.83323360095733,
+            7.0152318968971485
+          ],
+          [
+            1608.5317326174966,
+            1500.2669334705547
+          ]
+        ],
+        "anchors": [
+          "C-1541-1501",
+          "C-1545-1443",
+          "C-1569-1455",
+          "C-1609-1499",
+          "C-1621-1468",
+          "C-1621-1521",
+          "C-1648-1459",
+          "E5-1574-1503",
+          "K-1543-1467",
+          "K-1563-1489",
+          "K-1635-1495",
+          "K-1660-1490",
+          "R332-R-0142-0132",
+          "REC266-P069702"
+        ],
+        "estimated_ab": [
+          141.0477529476717,
+          133.8805903310063
+        ],
+        "nearest_cell": [
+          141,
+          134
+        ],
+        "native_target_error": 2.906947624961686,
+        "native_fit_rms": 4.989712877277972,
+        "nearest_cell_prediction": [
+          1589.463188408236,
+          1480.4076475802613
+        ]
+      }
+    },
+    {
+      "id": "C-1677-1513",
+      "color": "yellow",
+      "xy": [
+        1676.1666666666667,
+        1513.25
+      ],
+      "ab": [
+        139,
+        132
+      ],
+      "degree": 6,
+      "incident_links": [
+        {
+          "source": "C-1677-1513",
+          "target": "K-1660-1490",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 125,
+          "witnesses": [
+            [
+              125,
+              0
+            ],
+            [
+              126,
+              2
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1677-1513",
+          "target": "D40-K-1648-1516",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 125,
+          "witnesses": [
+            [
+              125,
+              0
+            ],
+            [
+              126,
+              2
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1705-1514",
+          "target": "C-1677-1513",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 125,
+          "witnesses": [
+            [
+              125,
+              0
+            ],
+            [
+              126,
+              2
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "K-1683-1538",
+          "target": "C-1677-1513",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 125,
+          "witnesses": [
+            [
+              125,
+              0
+            ],
+            [
+              126,
+              2
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "MAT25-K-1660-1540",
+          "target": "C-1677-1513",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 125,
+          "witnesses": [
+            [
+              125,
+              0
+            ],
+            [
+              126,
+              2
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              128,
+              4
+            ],
+            [
+              129,
+              16
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1677-1513",
+          "target": "NEW-1681-1498",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 126,
+          "witnesses": [
+            [
+              126,
+              2
+            ],
+            [
+              127,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "NEW-1681-1498",
+        "reference_ab": [
+          140,
+          131
+        ],
+        "native_affine_coefficients": [
+          [
+            -12.148081945492264,
+            -22.818434865303775
+          ],
+          [
+            -25.535570829704966,
+            -0.09451878679692527
+          ],
+          [
+            1686.1861597327334,
+            1494.311367705212
+          ]
+        ],
+        "anchors": [
+          "C-1609-1499",
+          "C-1621-1521",
+          "C-1648-1459",
+          "C-1669-1561",
+          "C-1705-1514",
+          "C-1717-1540",
+          "C-1721-1566",
+          "D40-K-1648-1516",
+          "E5-1694-1563",
+          "K-1635-1495",
+          "K-1660-1490",
+          "K-1683-1538",
+          "MAT25-K-1660-1540",
+          "NEW-1681-1498",
+          "REC266-P074050"
+        ],
+        "estimated_ab": [
+          139.1667620433761,
+          131.7887717168162
+        ],
+        "nearest_cell": [
+          139,
+          132
+        ],
+        "native_target_error": 5.066731604726425,
+        "native_fit_rms": 3.6934214749087726,
+        "nearest_cell_prediction": [
+          1672.7986708485207,
+          1517.0352837837188
+        ]
+      }
+    },
+    {
+      "id": "C-1691-3004",
+      "color": "yellow",
+      "xy": [
+        1690.5294117647059,
+        3003.176470588235
+      ],
+      "ab": [
+        79,
+        78
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-1702-2987",
+          "target": "C-1691-3004",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 66,
+          "witnesses": [
+            [
+              66,
+              0
+            ],
+            [
+              67,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1691-3004",
+          "target": "K-1663-3006",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 66,
+          "witnesses": [
+            [
+              66,
+              0
+            ],
+            [
+              67,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1691-3004",
+          "target": "K-1667-2990",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 66,
+          "witnesses": [
+            [
+              66,
+              0
+            ],
+            [
+              67,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1702-2987",
+        "reference_ab": [
+          79,
+          77
+        ],
+        "native_affine_coefficients": [
+          [
+            -28.20200576148717,
+            -0.03758850551965709
+          ],
+          [
+            -10.354011454936881,
+            22.654288296611412
+          ],
+          [
+            1700.439753772048,
+            2981.0888752369283
+          ]
+        ],
+        "anchors": [
+          "C-1631-3003",
+          "C-1657-2954",
+          "C-1702-2987",
+          "C-1712-2959",
+          "C-1739-2960",
+          "E5-1641-2976",
+          "K-1663-3006",
+          "K-1667-2990",
+          "K-1683-2959",
+          "MAT25-K-1689-2933",
+          "R332-B-0080-0079",
+          "R332-R-0077-0077",
+          "REC266-P144101"
+        ],
+        "estimated_ab": [
+          78.99345602249903,
+          77.9749743220261
+        ],
+        "nearest_cell": [
+          79,
+          78
+        ],
+        "native_target_error": 0.7197106870033879,
+        "native_fit_rms": 4.286986001764471,
+        "nearest_cell_prediction": [
+          1690.0857423171112,
+          3003.7431635335397
+        ]
+      }
+    },
+    {
+      "id": "C-1882-0479",
+      "color": "yellow",
+      "xy": [
+        1882.7435897435898,
+        478.87179487179486
+      ],
+      "ab": [
+        15,
+        14
+      ],
+      "degree": 4,
+      "incident_links": [
+        {
+          "source": "C-1882-0479",
+          "target": "C-1910-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 19,
+          "witnesses": [
+            [
+              19,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1877-0445",
+          "target": "C-1882-0479",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 19,
+          "witnesses": [
+            [
+              19,
+              0
+            ],
+            [
+              20,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-1906-0446",
+          "target": "C-1882-0479",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 19,
+          "witnesses": [
+            [
+              19,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "REC266-P022848",
+          "target": "C-1882-0479",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P022848",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1910-0478",
+        "reference_ab": [
+          15,
+          15
+        ],
+        "native_affine_coefficients": [
+          [
+            5.108353865476112,
+            28.850708481007423
+          ],
+          [
+            26.352651695959594,
+            3.4719507134360583
+          ],
+          [
+            1908.9352488840887,
+            476.52629170072566
+          ]
+        ],
+        "anchors": [
+          "C-1877-0445",
+          "C-1899-0420",
+          "C-1910-0478",
+          "C-1932-0452",
+          "C-1936-0478",
+          "C-1940-0508",
+          "E5-1851-0439",
+          "E5-1906-0446",
+          "E9-1911-0508",
+          "K-1873-0409",
+          "NEW-1826-438",
+          "NEW-1920-531",
+          "REC266-P022848"
+        ],
+        "estimated_ab": [
+          15.205703313784808,
+          13.966234412653451
+        ],
+        "nearest_cell": [
+          15,
+          14
+        ],
+        "native_target_error": 5.819681116801768,
+        "native_fit_rms": 2.2917085603013536,
+        "nearest_cell_prediction": [
+          1882.582597188129,
+          473.0543409872896
+        ]
+      }
+    },
+    {
+      "id": "C-2168-2478",
+      "color": "yellow",
+      "xy": [
+        2167.64406779661,
+        2478.0677966101694
+      ],
+      "ab": [
+        63,
+        62
+      ],
+      "degree": 6,
+      "incident_links": [
+        {
+          "source": "C-2168-2478",
+          "target": "C-2175-2504",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 54,
+          "witnesses": [
+            [
+              54,
+              1
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              56,
+              12
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-2168-2478",
+          "target": "E5-2139-2470",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 54,
+          "witnesses": [
+            [
+              54,
+              1
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              56,
+              12
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2160-2451",
+          "target": "C-2168-2478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 54,
+          "witnesses": [
+            [
+              54,
+              1
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              56,
+              12
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-2197-2462",
+          "target": "C-2168-2478",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 54,
+          "witnesses": [
+            [
+              54,
+              1
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              56,
+              12
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-2168-2478",
+          "target": "MAT25-K-2142-2497",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 55,
+          "witnesses": [
+            [
+              55,
+              0
+            ],
+            [
+              56,
+              12
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "REC266-P119618",
+          "target": "C-2168-2478",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P119618",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-2175-2504",
+        "reference_ab": [
+          63,
+          63
+        ],
+        "native_affine_coefficients": [
+          [
+            -24.468684333494597,
+            17.553364722962073
+          ],
+          [
+            5.789004978465073,
+            25.695494264799663
+          ],
+          [
+            2174.2216027547024,
+            2503.7121888671404
+          ]
+        ],
+        "anchors": [
+          "C-2120-2509",
+          "C-2156-2547",
+          "C-2175-2504",
+          "C-2179-2530",
+          "C-2188-2437",
+          "C-2197-2462",
+          "D40-K-2146-2523",
+          "E5-2139-2470",
+          "E5-2160-2451",
+          "MAT25-K-2142-2497",
+          "NEW-2136-2445",
+          "R332-B-0061-0062",
+          "REC266-P116792",
+          "REC266-P119618"
+        ],
+        "estimated_ab": [
+          63.02814740388605,
+          61.98276041573582
+        ],
+        "nearest_cell": [
+          63,
+          62
+        ],
+        "native_target_error": 0.7901841203003582,
+        "native_fit_rms": 2.816038114239469,
+        "nearest_cell_prediction": [
+          2168.4325977762373,
+          2478.016694602341
+        ]
+      }
+    },
+    {
+      "id": "C-2288-1794",
+      "color": "yellow",
+      "xy": [
+        2288.3055555555557,
+        1794.138888888889
+      ],
+      "ab": [
+        47,
+        46
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-2273-1775",
+          "target": "C-2288-1794",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 42,
+          "witnesses": [
+            [
+              42,
+              0
+            ],
+            [
+              43,
+              0
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2304-1770",
+          "target": "C-2288-1794",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 42,
+          "witnesses": [
+            [
+              42,
+              0
+            ],
+            [
+              43,
+              0
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2320-1788",
+          "target": "C-2288-1794",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 42,
+          "witnesses": [
+            [
+              42,
+              0
+            ],
+            [
+              43,
+              0
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-2288-1794",
+          "target": "E5-2272-1815",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 43,
+          "witnesses": [
+            [
+              43,
+              0
+            ],
+            [
+              44,
+              1
+            ],
+            [
+              45,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-2288-1794",
+          "target": "E5-2304-1814",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 43,
+          "witnesses": [
+            [
+              43,
+              0
+            ],
+            [
+              44,
+              1
+            ],
+            [
+              45,
+              1
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-2273-1775",
+        "reference_ab": [
+          47,
+          45
+        ],
+        "native_affine_coefficients": [
+          [
+            -16.471790753106074,
+            22.65657893700831
+          ],
+          [
+            16.48949710437597,
+            19.033245747296235
+          ],
+          [
+            2270.6545876052505,
+            1773.88985629952
+          ]
+        ],
+        "anchors": [
+          "C-2273-1775",
+          "C-2288-1752",
+          "C-2304-1856",
+          "C-2321-1831",
+          "E5-2269-1733",
+          "E5-2272-1815",
+          "E5-2291-1846",
+          "E5-2304-1770",
+          "E5-2304-1814",
+          "E5-2320-1788",
+          "K-2303-1728",
+          "K-2317-1746",
+          "REC266-P084366",
+          "REC266-P088446",
+          "RF70T-K-2273-1856"
+        ],
+        "estimated_ab": [
+          46.99700360245842,
+          46.06744382836976
+        ],
+        "nearest_cell": [
+          47,
+          46
+        ],
+        "native_target_error": 1.6814137418555386,
+        "native_fit_rms": 1.879295500352252,
+        "nearest_cell_prediction": [
+          2287.1440847096264,
+          1792.9231020468162
+        ]
+      }
+    },
+    {
+      "id": "E5-0355-1525",
+      "color": "yellow",
+      "xy": [
+        355.2857142857143,
+        1524.1785714285713
+      ],
+      "ab": [
+        171,
+        161
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-0364-1554",
+          "target": "E5-0355-1525",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 153,
+          "witnesses": [
+            [
+              153,
+              1
+            ],
+            [
+              154,
+              1
+            ],
+            [
+              155,
+              6
+            ],
+            [
+              156,
+              14
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-0355-1525",
+          "target": "C-0346-1501",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 153,
+          "witnesses": [
+            [
+              153,
+              1
+            ],
+            [
+              154,
+              1
+            ],
+            [
+              155,
+              6
+            ],
+            [
+              156,
+              14
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-0355-1525",
+          "target": "NEW-326-1528",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 153,
+          "witnesses": [
+            [
+              153,
+              1
+            ],
+            [
+              154,
+              1
+            ],
+            [
+              155,
+              6
+            ],
+            [
+              156,
+              14
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-0387-1525",
+          "target": "E5-0355-1525",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 153,
+          "witnesses": [
+            [
+              153,
+              1
+            ],
+            [
+              154,
+              1
+            ],
+            [
+              155,
+              6
+            ],
+            [
+              156,
+              14
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "NEW-339-1556",
+          "target": "E5-0355-1525",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 153,
+          "witnesses": [
+            [
+              153,
+              1
+            ],
+            [
+              154,
+              1
+            ],
+            [
+              155,
+              6
+            ],
+            [
+              156,
+              14
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-0346-1501",
+        "reference_ab": [
+          172,
+          161
+        ],
+        "native_affine_coefficients": [
+          [
+            -10.063296601710965,
+            -26.402465983056832
+          ],
+          [
+            -28.076992840039964,
+            1.1963614337371382
+          ],
+          [
+            346.8176269457752,
+            1497.620333668916
+          ]
+        ],
+        "anchors": [
+          "C-0297-1523",
+          "C-0312-1471",
+          "C-0314-1551",
+          "C-0343-1474",
+          "C-0346-1501",
+          "C-0364-1554",
+          "C-0384-1579",
+          "C-0395-1544",
+          "E5-0387-1525",
+          "K-0315-1496",
+          "NEW-326-1528",
+          "NEW-339-1556",
+          "REC266-P073002"
+        ],
+        "estimated_ab": [
+          170.996727702859,
+          161.05798838101168
+        ],
+        "nearest_cell": [
+          171,
+          161
+        ],
+        "native_target_error": 1.602796754185502,
+        "native_fit_rms": 4.806437224444594,
+        "nearest_cell_prediction": [
+          356.8809235474862,
+          1524.0227996519727
+        ]
+      }
+    },
+    {
+      "id": "E5-1792-1727",
+      "color": "yellow",
+      "xy": [
+        1791.8,
+        1727.4285714285713
+      ],
+      "ab": [
+        133,
+        127
+      ],
+      "degree": 5,
+      "incident_links": [
+        {
+          "source": "C-1760-1726",
+          "target": "E5-1792-1727",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 118,
+          "witnesses": [
+            [
+              118,
+              2
+            ],
+            [
+              119,
+              0
+            ],
+            [
+              120,
+              9
+            ],
+            [
+              122,
+              23
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-1805-1752",
+          "target": "E5-1792-1727",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 118,
+          "witnesses": [
+            [
+              118,
+              2
+            ],
+            [
+              119,
+              0
+            ],
+            [
+              120,
+              9
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-1792-1727",
+          "target": "C-1775-1706",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 118,
+          "witnesses": [
+            [
+              118,
+              2
+            ],
+            [
+              119,
+              0
+            ],
+            [
+              120,
+              9
+            ],
+            [
+              121,
+              7
+            ],
+            [
+              122,
+              23
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "D40-K-1772-1751",
+          "target": "E5-1792-1727",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 118,
+          "witnesses": [
+            [
+              118,
+              2
+            ],
+            [
+              119,
+              0
+            ],
+            [
+              120,
+              9
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-1792-1727",
+          "target": "C-1806-1697",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 119,
+          "witnesses": [
+            [
+              119,
+              0
+            ],
+            [
+              120,
+              9
+            ],
+            [
+              121,
+              7
+            ],
+            [
+              122,
+              23
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-1805-1752",
+        "reference_ab": [
+          133,
+          126
+        ],
+        "native_affine_coefficients": [
+          [
+            16.459802808160568,
+            -22.20132018437902
+          ],
+          [
+            -15.613834169040501,
+            -21.081164095139684
+          ],
+          [
+            1802.384737078275,
+            1747.083008976682
+          ]
+        ],
+        "anchors": [
+          "C-1760-1726",
+          "C-1766-1663",
+          "C-1766-1792",
+          "C-1775-1706",
+          "C-1805-1752",
+          "C-1806-1697",
+          "D40-K-1753-1768",
+          "D40-K-1772-1751",
+          "E5-1787-1680",
+          "K-1783-1774",
+          "MAT25-K-1754-1687",
+          "REC266-P083772"
+        ],
+        "estimated_ab": [
+          133.12072920444282,
+          126.80517801332346
+        ],
+        "nearest_cell": [
+          133,
+          127
+        ],
+        "native_target_error": 5.227558339066335,
+        "native_fit_rms": 4.231333009735826,
+        "nearest_cell_prediction": [
+          1786.7709029092346,
+          1726.0018448815424
+        ]
+      }
+    },
+    {
+      "id": "E5-2165-1110",
+      "color": "yellow",
+      "xy": [
+        2164.225352112676,
+        1109.9014084507041
+      ],
+      "ab": [
+        31,
+        30
+      ],
+      "degree": 6,
+      "incident_links": [
+        {
+          "source": "C-2145-1092",
+          "target": "E5-2165-1110",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 31,
+          "witnesses": [
+            [
+              31,
+              1
+            ],
+            [
+              32,
+              2
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2165-1110",
+          "target": "NEW-2156-1135",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 31,
+          "witnesses": [
+            [
+              31,
+              1
+            ],
+            [
+              32,
+              2
+            ],
+            [
+              33,
+              2
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2165-1110",
+          "target": "C-2184-1127",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 31,
+          "witnesses": [
+            [
+              31,
+              1
+            ],
+            [
+              32,
+              2
+            ],
+            [
+              33,
+              2
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "C-2176-1083",
+          "target": "E5-2165-1110",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 31,
+          "witnesses": [
+            [
+              31,
+              1
+            ],
+            [
+              32,
+              2
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 2,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2198-1098",
+          "target": "E5-2165-1110",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 31,
+          "witnesses": [
+            [
+              31,
+              1
+            ],
+            [
+              32,
+              2
+            ],
+            [
+              33,
+              2
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 3,
+          "origin": "baseline"
+        },
+        {
+          "source": "E5-2165-1110",
+          "target": "REC266-P054537",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 1,
+          "photographic_evidence": "REC266-P054537",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "NEW-2156-1135",
+        "reference_ab": [
+          32,
+          30
+        ],
+        "native_affine_coefficients": [
+          [
+            -9.531000823972116,
+            27.348810644923113
+          ],
+          [
+            18.826777189095083,
+            16.601019152192748
+          ],
+          [
+            2156.571836419605,
+            1136.838494177153
+          ]
+        ],
+        "anchors": [
+          "C-2145-1092",
+          "C-2157-1066",
+          "C-2176-1083",
+          "C-2184-1127",
+          "C-2195-1168",
+          "C-2205-1144",
+          "E5-2198-1098",
+          "K-2183-1053",
+          "NEW-2138-1049",
+          "NEW-2156-1135",
+          "R332-Y-0031-0028",
+          "REC266-P054537",
+          "RF70T-K-2172-1154"
+        ],
+        "estimated_ab": [
+          31.057820225189193,
+          29.92954712834499
+        ],
+        "nearest_cell": [
+          31,
+          30
+        ],
+        "native_target_error": 1.9220998478871922,
+        "native_fit_rms": 2.6569571469827893,
+        "nearest_cell_prediction": [
+          2166.102837243577,
+          1109.48968353223
+        ]
+      }
+    },
+    {
+      "id": "NEW-1519-2976",
+      "color": "red",
+      "xy": [
+        1516.6804345172254,
+        2977.0292632657097
+      ],
+      "ab": [
+        85,
+        79
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "C-1526-3018",
+          "target": "NEW-1519-2976",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "first_growth_step": 69,
+          "witnesses": [
+            [
+              69,
+              10
+            ],
+            [
+              70,
+              0
+            ],
+            [
+              71,
+              2
+            ],
+            [
+              72,
+              5
+            ],
+            [
+              73,
+              31
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        },
+        {
+          "source": "MAT25-K-1538-2998",
+          "target": "NEW-1519-2976",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "first_growth_step": 69,
+          "witnesses": [
+            [
+              69,
+              10
+            ],
+            [
+              70,
+              0
+            ],
+            [
+              71,
+              2
+            ],
+            [
+              72,
+              5
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 4,
+          "origin": "baseline"
+        },
+        {
+          "source": "NEW-1519-2976",
+          "target": "E5-1503-2999",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "first_growth_step": 69,
+          "witnesses": [
+            [
+              69,
+              10
+            ],
+            [
+              70,
+              0
+            ],
+            [
+              71,
+              2
+            ],
+            [
+              72,
+              5
+            ],
+            [
+              73,
+              31
+            ]
+          ],
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "status": "provisional working link",
+          "independently_established": false,
+          "supporting_windows": 5,
+          "origin": "baseline"
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "E5-1503-2999",
+        "reference_ab": [
+          85,
+          80
+        ],
+        "native_affine_coefficients": [
+          [
+            -25.52279145771269,
+            -12.92468315610722
+          ],
+          [
+            -15.686614727183269,
+            20.27567709452842
+          ],
+          [
+            1499.1564479814388,
+            3002.506965337979
+          ]
+        ],
+        "anchors": [
+          "C-1478-2990",
+          "C-1526-3018",
+          "C-1552-3030",
+          "C-1580-2981",
+          "E5-1455-3009",
+          "E5-1503-2999",
+          "K-1473-3021",
+          "K-1508-3038",
+          "K-1565-3004",
+          "MAT25-K-1538-2998",
+          "NEW-1556-2981"
+        ],
+        "estimated_ab": [
+          85.06157451071718,
+          78.78268573149558
+        ],
+        "nearest_cell": [
+          85,
+          79
+        ],
+        "native_target_error": 5.516973720446069,
+        "native_fit_rms": 4.291069863723658,
+        "nearest_cell_prediction": [
+          1514.843062708622,
+          2982.2312882434508
+        ]
+      }
+    },
+    {
+      "id": "R332-R-0037-0040",
+      "color": "red",
+      "xy": [
+        2301.3455497382197,
+        1430.2251308900525
+      ],
+      "ab": [
+        37,
+        40
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "R332-R-0037-0040",
+          "target": "C-2300-1458",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0037-0040",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "R332-R-0037-0040",
+          "target": "E5-2279-1442",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0037-0040",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "REC266-P068073",
+          "target": "R332-R-0037-0040",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0037-0040",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "REC266-P068073",
+        "reference_ab": [
+          37,
+          39
+        ],
+        "native_affine_coefficients": [
+          [
+            -12.394336299230849,
+            28.937591101044397
+          ],
+          [
+            18.690100050172532,
+            17.804965406386827
+          ],
+          [
+            2289.5221729856016,
+            1411.9568959263079
+          ]
+        ],
+        "anchors": [
+          "C-2240-1406",
+          "C-2260-1425",
+          "C-2264-1469",
+          "C-2300-1458",
+          "E5-2245-1450",
+          "E5-2279-1442",
+          "E5-2283-1489",
+          "K-2266-1395",
+          "REC266-P068073"
+        ],
+        "estimated_ab": [
+          37.171918120341836,
+          39.746608510099314
+        ],
+        "nearest_cell": [
+          37,
+          40
+        ],
+        "native_target_error": 6.8823330003678125,
+        "native_fit_rms": 2.168928878666368,
+        "nearest_cell_prediction": [
+          2308.212273035774,
+          1429.7618613326947
+        ]
+      }
+    },
+    {
+      "id": "R332-R-0125-0118",
+      "color": "red",
+      "xy": [
+        1579.5635738831616,
+        2038.0309278350514
+      ],
+      "ab": [
+        125,
+        118
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "R332-R-0125-0118",
+          "target": "REC266-P097385",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0125-0118",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-1553-2042",
+          "target": "R332-R-0125-0118",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0125-0118",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "K-1567-2019",
+          "target": "R332-R-0125-0118",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "R332-R-0125-0118",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "K-1567-2019",
+        "reference_ab": [
+          124,
+          119
+        ],
+        "native_affine_coefficients": [
+          [
+            28.6500290344121,
+            2.4326658627941953
+          ],
+          [
+            12.844082129810545,
+            -23.123939203399914
+          ],
+          [
+            1565.1066588253925,
+            2017.0918683112172
+          ]
+        ],
+        "anchors": [
+          "C-1523-2038",
+          "C-1553-2042",
+          "C-1579-1993",
+          "C-1608-1998",
+          "C-1634-2000",
+          "D40-K-1589-1970",
+          "E5-1549-1991",
+          "K-1536-2014",
+          "K-1567-2019",
+          "REC266-P097385"
+        ],
+        "estimated_ab": [
+          124.86954454724476,
+          118.18596273662554
+        ],
+        "nearest_cell": [
+          125,
+          118
+        ],
+        "native_target_error": 4.810573121732651,
+        "native_fit_rms": 1.662242683669851,
+        "nearest_cell_prediction": [
+          1580.912605729994,
+          2042.6484733774114
+        ]
+      }
+    },
+    {
+      "id": "R332-R-0197-0183",
+      "color": "red",
+      "xy": [
+        599.6431924882629,
+        624.4507042253521
+      ],
+      "ab": [
+        197,
+        183
+      ],
+      "degree": 2,
+      "incident_links": [
+        {
+          "source": "R332-R-0197-0183",
+          "target": "R332-Y-0197-0184",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 1,
+          "photographic_evidence": "R332-R-0197-0183",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-0574-0602",
+          "target": "R332-R-0197-0183",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 1,
+          "photographic_evidence": "R332-R-0197-0183",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "R332-Y-0197-0184",
+        "reference_ab": [
+          197,
+          184
+        ],
+        "native_affine_coefficients": [
+          [
+            29.857821594669844,
+            -1.6778735906292939
+          ],
+          [
+            3.865448758989487,
+            -25.751962032887207
+          ],
+          [
+            606.8432780483197,
+            602.9589026447675
+          ]
+        ],
+        "anchors": [
+          "C-0544-0606",
+          "C-0574-0602",
+          "C-0581-0575",
+          "C-0615-0584",
+          "C-0639-0573",
+          "K-0548-0636",
+          "R332-Y-0197-0184",
+          "REC266-P031642"
+        ],
+        "estimated_ab": [
+          196.8657669274758,
+          183.17417649862765
+        ],
+        "nearest_cell": [
+          197,
+          183
+        ],
+        "native_target_error": 5.410061891919076,
+        "native_fit_rms": 4.72958205138576,
+        "nearest_cell_prediction": [
+          602.9778292893302,
+          628.7108646776546
+        ]
+      }
+    },
+    {
+      "id": "REC266-P035619",
+      "color": "red",
+      "xy": [
+        2124.722222222222,
+        736.6944444444445
+      ],
+      "ab": [
+        21,
+        24
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "REC266-P035619",
+          "target": "C-2120-0769",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P035619",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "REC266-P035619",
+          "target": "C-2098-0756",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P035619",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "C-2099-0725",
+          "target": "REC266-P035619",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P035619",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "C-2099-0725",
+        "reference_ab": [
+          21,
+          23
+        ],
+        "native_affine_coefficients": [
+          [
+            -5.752870614957407,
+            29.001443279682896
+          ],
+          [
+            23.021222362363915,
+            13.579843710419823
+          ],
+          [
+            2101.2267752023463,
+            725.7791017493897
+          ]
+        ],
+        "anchors": [
+          "C-2064-0771",
+          "C-2088-0783",
+          "C-2098-0756",
+          "C-2099-0725",
+          "C-2113-0796",
+          "C-2120-0769",
+          "E5-2077-0741",
+          "K-2077-0713",
+          "K-2080-0686"
+        ],
+        "estimated_ab": [
+          20.909114328441785,
+          23.99788765118765
+        ],
+        "nearest_cell": [
+          21,
+          24
+        ],
+        "native_target_error": 2.706372976268042,
+        "native_fit_rms": 2.407820967451337,
+        "nearest_cell_prediction": [
+          2124.24799756471,
+          739.3589454598095
+        ]
+      }
+    },
+    {
+      "id": "REC266-P100583",
+      "color": "red",
+      "xy": [
+        1496.0,
+        2074.0
+      ],
+      "ab": [
+        123,
+        116
+      ],
+      "degree": 3,
+      "incident_links": [
+        {
+          "source": "REC266-P100583",
+          "target": "MAT25-K-1506-2056",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "family": "F1",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P100583",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "NEW-1463-2072",
+          "target": "REC266-P100583",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "family": "F0",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P100583",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        },
+        {
+          "source": "K-1479-2054",
+          "target": "REC266-P100583",
+          "delta_ab": [
+            1,
+            -1
+          ],
+          "family": "difference",
+          "origin": "R332",
+          "status": "accepted working addition",
+          "foreground_fraction": 1.0,
+          "intervening_observations": [],
+          "iteration": 0,
+          "photographic_evidence": "REC266-P100583",
+          "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+          "final_native_check": {
+            "allowed": true,
+            "foreground_fraction": 1.0,
+            "intervening_observations": []
+          }
+        }
+      ],
+      "target_excluded_fit": {
+        "reference": "MAT25-K-1506-2056",
+        "reference_ab": [
+          123,
+          117
+        ],
+        "native_affine_coefficients": [
+          [
+            28.073559017724115,
+            6.209338852249936
+          ],
+          [
+            14.578108845300676,
+            -20.239016149943154
+          ],
+          [
+            1507.729435927726,
+            2055.9853694025674
+          ]
+        ],
+        "anchors": [
+          "C-1438-2066",
+          "C-1452-2044",
+          "C-1466-2022",
+          "C-1495-2031",
+          "C-1523-2038",
+          "C-1553-2042",
+          "K-1479-2054",
+          "K-1506-2006",
+          "MAT25-K-1506-2056",
+          "NEW-1463-2072",
+          "R332-Y-0122-0115"
+        ],
+        "estimated_ab": [
+          123.03829807193587,
+          116.12165567932288
+        ],
+        "nearest_cell": [
+          123,
+          116
+        ],
+        "native_target_error": 3.6142535159476865,
+        "native_fit_rms": 2.7264181067629996,
+        "nearest_cell_prediction": [
+          1493.1513270824253,
+          2076.2243855525103
+        ]
+      }
+    }
+  ],
+  "unindexed18": [
+    {
+      "reference": "NEW-193-1288",
+      "reference_ab": [
+        177,
+        168
+      ],
+      "native_affine_coefficients": [
+        [
+          10.790887592091954,
+          -27.75548740388496
+        ],
+        [
+          -20.27817355448299,
+          -20.438598736068002
+        ],
+        [
+          191.3359207690511,
+          1287.8438251825257
+        ]
+      ],
+      "anchors": [
+        "C-0172-1268",
+        "C-0180-1239",
+        "C-0181-1316",
+        "E5-0204-1260",
+        "K-0212-1305",
+        "K-0220-1280",
+        "NEW-193-1288",
+        "NEW-199-1335"
+      ],
+      "estimated_ab": [
+        176.21579287276728,
+        168.73928141648017
+      ],
+      "nearest_cell": [
+        176,
+        169
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 1.9737729513382534,
+      "nearest_cell_prediction": [
+        160.26685962247618,
+        1295.1607138503427
+      ],
+      "id": "C-0167-1295",
+      "color": "yellow",
+      "xy": [
+        167.88235294117646,
+        1294.5
+      ],
+      "hypothetical_residue": 166,
+      "nearest_native_distance": 25.186053117458993,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "NEW-343-803",
+      "reference_ab": [
+        188,
+        179
+      ],
+      "native_affine_coefficients": [
+        [
+          28.719402342578142,
+          -10.262868580882342
+        ],
+        [
+          -4.172629012911955,
+          -28.966384868425962
+        ],
+        [
+          342.8010006964827,
+          803.0812036698463
+        ]
+      ],
+      "anchors": [
+        "C-0317-0814",
+        "C-0368-0764",
+        "E5-0368-0792",
+        "E5-0380-0823",
+        "K-0343-0831",
+        "NEW-317-843",
+        "NEW-343-803"
+      ],
+      "estimated_ab": [
+        187.50117891592234,
+        179.51881258832498
+      ],
+      "nearest_cell": [
+        188,
+        180
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 2.636282787522855,
+      "nearest_cell_prediction": [
+        338.6283716835707,
+        774.1148188014204
+      ],
+      "id": "C-0326-0793",
+      "color": "yellow",
+      "xy": [
+        326.3103448275862,
+        793.1724137931035
+      ],
+      "hypothetical_residue": 108,
+      "nearest_native_distance": 19.724741011901376,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "NEW-903-2501",
+      "reference_ab": [
+        104,
+        101
+      ],
+      "native_affine_coefficients": [
+        [
+          15.41347636753106,
+          -24.87697860999755
+        ],
+        [
+          -16.61910208169047,
+          -20.847156946210816
+        ],
+        [
+          901.495747483337,
+          2498.369241381478
+        ]
+      ],
+      "anchors": [
+        "C-0899-2449",
+        "C-0905-2545",
+        "D40-K-0935-2451",
+        "E5-0915-2472",
+        "E5-0931-2495",
+        "E5-0950-2512",
+        "K-0935-2540",
+        "MAT25-K-0915-2520",
+        "NEW-903-2501"
+      ],
+      "estimated_ab": [
+        103.52784115294195,
+        101.69306621957493
+      ],
+      "nearest_cell": [
+        104,
+        102
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.033717649639029,
+      "nearest_cell_prediction": [
+        884.8766454016466,
+        2477.522084435267
+      ],
+      "id": "C-0882-2496",
+      "color": "yellow",
+      "xy": [
+        882.7,
+        2495.6666666666665
+      ],
+      "hypothetical_residue": 92,
+      "nearest_native_distance": 19.357251203296382,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "C-0905-2545",
+      "reference_ab": [
+        103,
+        100
+      ],
+      "native_affine_coefficients": [
+        [
+          13.758244330987004,
+          -26.49595898411928
+        ],
+        [
+          -17.025577227356052,
+          -20.17924967885574
+        ],
+        [
+          904.3267491967492,
+          2546.3283943200454
+        ]
+      ],
+      "anchors": [
+        "C-0905-2545",
+        "C-0920-2567",
+        "E5-0915-2472",
+        "E5-0931-2495",
+        "E5-0950-2512",
+        "K-0935-2540",
+        "MAT25-K-0915-2520",
+        "NEW-903-2501"
+      ],
+      "estimated_ab": [
+        103.18136135632056,
+        100.91990790327166
+      ],
+      "nearest_cell": [
+        103,
+        101
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 1.351107427602311,
+      "nearest_cell_prediction": [
+        887.3011719693932,
+        2526.1491446411897
+      ],
+      "id": "C-0891-2523",
+      "color": "yellow",
+      "xy": [
+        891.16,
+        2522.96
+      ],
+      "hypothetical_residue": 79,
+      "nearest_native_distance": 25.54166482727291,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "C-1032-1519",
+      "reference_ab": [
+        155,
+        145
+      ],
+      "native_affine_coefficients": [
+        [
+          -27.698729946412126,
+          -10.005136778533249
+        ],
+        [
+          -15.109463929305528,
+          20.74235134529175
+        ],
+        [
+          1031.6581882636895,
+          1523.644588866505
+        ]
+      ],
+      "anchors": [
+        "C-0947-1546",
+        "C-0999-1559",
+        "C-1026-1576",
+        "C-1032-1519",
+        "C-1060-1534",
+        "C-1073-1515",
+        "D40-K-1014-1544",
+        "K-0970-1557",
+        "K-1037-1557",
+        "NEW-989-1538"
+      ],
+      "estimated_ab": [
+        155.8744911852889,
+        145.01916359308277
+      ],
+      "nearest_cell": [
+        156,
+        145
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.42172041513913,
+      "nearest_cell_prediction": [
+        1003.9594583172774,
+        1513.639452087972
+      ],
+      "id": "C-1007-1515",
+      "color": "red",
+      "xy": [
+        1007.1463414634146,
+        1515.2926829268292
+      ],
+      "hypothetical_residue": 90,
+      "nearest_native_distance": 25.031459684389308,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "NEW-1036-2833",
+      "reference_ab": [
+        96,
+        93
+      ],
+      "native_affine_coefficients": [
+        [
+          -2.140400253068104,
+          -26.428623252686933
+        ],
+        [
+          -25.668343986302148,
+          -5.157458509613662
+        ],
+        [
+          1036.0829655761027,
+          2833.250943002233
+        ]
+      ],
+      "anchors": [
+        "C-1006-2799",
+        "C-1033-2810",
+        "C-1041-2858",
+        "C-1058-2815",
+        "C-1064-2868",
+        "D40-K-1036-2780",
+        "K-1085-2841",
+        "MAT25-K-1060-2836",
+        "NEW-1036-2833"
+      ],
+      "estimated_ab": [
+        95.3691904004071,
+        93.70930697820185
+      ],
+      "nearest_cell": [
+        95,
+        94
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.0179416267239696,
+      "nearest_cell_prediction": [
+        1012.5550218428687,
+        2854.522107745306
+      ],
+      "id": "C-1019-2846",
+      "color": "yellow",
+      "xy": [
+        1019.2264150943396,
+        2846.264150943396
+      ],
+      "hypothetical_residue": 189,
+      "nearest_native_distance": 20.886174306321138,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "NEW-1132-2925",
+      "reference_ab": [
+        93,
+        90
+      ],
+      "native_affine_coefficients": [
+        [
+          -7.836730134369752,
+          -22.972456649447768
+        ],
+        [
+          -25.4491081731818,
+          1.9737495190670415
+        ],
+        [
+          1133.3489981764515,
+          2920.4003369578404
+        ]
+      ],
+      "anchors": [
+        "C-1098-2901",
+        "C-1119-2879",
+        "C-1125-2900",
+        "C-1144-2947",
+        "E5-1151-2893",
+        "K-1159-2920",
+        "NEW-1074-2896",
+        "NEW-1132-2925",
+        "RF70T-K-1163-2935"
+      ],
+      "estimated_ab": [
+        92.18005806150292,
+        90.72463555168528
+      ],
+      "nearest_cell": [
+        92,
+        91
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 4.154375446979526,
+      "nearest_cell_prediction": [
+        1115.7366201376394,
+        2945.3465431263553
+      ],
+      "id": "C-1121-2942",
+      "color": "red",
+      "xy": [
+        1121.3333333333333,
+        2940.6666666666665
+      ],
+      "hypothetical_residue": 150,
+      "nearest_native_distance": 18.207048801107316,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "D40-K-1329-3022",
+      "reference_ab": [
+        88,
+        85
+      ],
+      "native_affine_coefficients": [
+        [
+          -18.61243834649061,
+          -22.202110464374325
+        ],
+        [
+          -25.23944432929145,
+          10.070667684219194
+        ],
+        [
+          1332.658889685564,
+          3018.7932332375703
+        ]
+      ],
+      "anchors": [
+        "C-1288-3010",
+        "C-1313-2998",
+        "C-1341-2982",
+        "C-1353-3045",
+        "C-1376-3030",
+        "C-1394-3051",
+        "D40-K-1329-3022",
+        "K-1354-3005",
+        "NEW-1264-3012"
+      ],
+      "estimated_ab": [
+        87.26251722312188,
+        85.83648890417835
+      ],
+      "nearest_cell": [
+        87,
+        86
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.0472785648174847,
+      "nearest_cell_prediction": [
+        1326.031883702763,
+        3051.066011386164
+      ],
+      "id": "C-1325-3045",
+      "color": "yellow",
+      "xy": [
+        1325.2727272727273,
+        3043.590909090909
+      ],
+      "hypothetical_residue": 85,
+      "nearest_native_distance": 22.6146756271012,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "C-1353-3045",
+      "reference_ab": [
+        87,
+        85
+      ],
+      "native_affine_coefficients": [
+        [
+          -17.664650264999974,
+          -20.30556936901533
+        ],
+        [
+          -22.567481297302493,
+          12.43232458723196
+        ],
+        [
+          1352.5184384907773,
+          3042.787205133851
+        ]
+      ],
+      "anchors": [
+        "C-1353-3045",
+        "C-1376-3030",
+        "C-1394-3051",
+        "C-1398-3017",
+        "D40-K-1329-3022",
+        "E5-1413-3039",
+        "K-1354-3005",
+        "K-1380-2998"
+      ],
+      "estimated_ab": [
+        86.19872476367487,
+        84.87471731309812
+      ],
+      "nearest_cell": [
+        86,
+        85
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 1.6750126701762877,
+      "nearest_cell_prediction": [
+        1370.1830887557771,
+        3063.092774502866
+      ],
+      "id": "C-1369-3058",
+      "color": "red",
+      "xy": [
+        1369.5,
+        3057.5
+      ],
+      "hypothetical_residue": 72,
+      "nearest_native_distance": 21.585628062277184,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "C-1856-2802",
+      "reference_ab": [
+        75,
+        70
+      ],
+      "native_affine_coefficients": [
+        [
+          -27.053417301202842,
+          3.672727494491447
+        ],
+        [
+          -5.027739108345713,
+          25.675952021143303
+        ],
+        [
+          1857.1055390580498,
+          2801.2754919592767
+        ]
+      ],
+      "anchors": [
+        "C-1822-2854",
+        "C-1847-2856",
+        "C-1856-2802",
+        "C-1879-2849",
+        "C-1881-2795",
+        "C-1893-2771",
+        "D40-K-1848-2825",
+        "D40-K-1874-2821",
+        "K-1904-2820",
+        "NEW-1792-2858",
+        "NEW-1828-2833"
+      ],
+      "estimated_ab": [
+        75.68616954059074,
+        70.28058917921254
+      ],
+      "nearest_cell": [
+        76,
+        70
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.2750939083880337,
+      "nearest_cell_prediction": [
+        1830.0521217568469,
+        2804.948219453768
+      ],
+      "id": "C-1837-2811",
+      "color": "yellow",
+      "xy": [
+        1837.1315789473683,
+        2811.0
+      ],
+      "hypothetical_residue": 120,
+      "nearest_native_distance": 21.24250867812087,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "C-1881-2795",
+      "reference_ab": [
+        74,
+        70
+      ],
+      "native_affine_coefficients": [
+        [
+          -27.45213051332982,
+          5.3798111179531585
+        ],
+        [
+          -4.057350378915818,
+          26.496660194625502
+        ],
+        [
+          1883.8210726911382,
+          2796.0796513942028
+        ]
+      ],
+      "anchors": [
+        "C-1856-2802",
+        "C-1879-2849",
+        "C-1881-2795",
+        "C-1893-2771",
+        "C-1910-2790",
+        "C-1916-2762",
+        "D40-K-1848-2825",
+        "D40-K-1874-2821",
+        "K-1904-2820",
+        "NEW-1828-2833",
+        "NEW-1906-2843"
+      ],
+      "estimated_ab": [
+        74.5914343701676,
+        69.48692439621273
+      ],
+      "nearest_cell": [
+        75,
+        69
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.4209373482255576,
+      "nearest_cell_prediction": [
+        1860.426292556724,
+        2774.9628023175305
+      ],
+      "id": "C-1868-2785",
+      "color": "red",
+      "xy": [
+        1869.6666666666667,
+        2785.6666666666665
+      ],
+      "hypothetical_residue": 107,
+      "nearest_native_distance": 14.69938313901067,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "E9-1911-0508",
+      "reference_ab": [
+        16,
+        15
+      ],
+      "native_affine_coefficients": [
+        [
+          4.16381257448595,
+          29.192742825134708
+        ],
+        [
+          25.922733380363237,
+          2.6529483359379467
+        ],
+        [
+          1913.2795921182874,
+          506.2820051921714
+        ]
+      ],
+      "anchors": [
+        "C-1882-0479",
+        "C-1910-0478",
+        "C-1936-0478",
+        "C-1940-0508",
+        "E5-1941-0539",
+        "E9-1911-0508",
+        "K-1965-0511",
+        "NEW-1920-531",
+        "REC266-P022848",
+        "REC266-P027449"
+      ],
+      "estimated_ab": [
+        16.628809857679617,
+        14.406632423645252
+      ],
+      "nearest_cell": [
+        17,
+        14
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 2.328074260018332,
+      "nearest_cell_prediction": [
+        1891.52067131241,
+        532.8217996813681
+      ],
+      "id": "C-1900-0523",
+      "color": "yellow",
+      "xy": [
+        1900.516129032258,
+        523.0645161290322
+      ],
+      "hypothetical_residue": 203,
+      "nearest_native_distance": 19.008608111411455,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "REC266-P027449",
+      "reference_ab": [
+        18,
+        16
+      ],
+      "native_affine_coefficients": [
+        [
+          -0.7709881323359845,
+          29.724193315082786
+        ],
+        [
+          24.40691373202776,
+          5.505441627322483
+        ],
+        [
+          1943.5341748094743,
+          567.8095964972592
+        ]
+      ],
+      "anchors": [
+        "C-1991-0608",
+        "C-1993-0580",
+        "D40-K-1967-0541",
+        "E5-1941-0539",
+        "NEW-1920-531",
+        "NEW-1990-639",
+        "P5-1994-0552",
+        "REC266-P027449",
+        "RF70T-K-1965-0575"
+      ],
+      "estimated_ab": [
+        18.497656201205455,
+        16.27855487312556
+      ],
+      "nearest_cell": [
+        18,
+        16
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 2.432176473232449,
+      "nearest_cell_prediction": [
+        1943.5341748094743,
+        567.8095964972592
+      ],
+      "id": "C-1949-0585",
+      "color": "yellow",
+      "xy": [
+        1949.949152542373,
+        584.1355932203389
+      ],
+      "hypothetical_residue": 14,
+      "nearest_native_distance": 15.260582484460052,
+      "occupied_by": [
+        "REC266-P027449"
+      ],
+      "adopted": false
+    },
+    {
+      "reference": "MAT25-K-2078-0812",
+      "reference_ab": [
+        24,
+        23
+      ],
+      "native_affine_coefficients": [
+        [
+          -9.02914680689475,
+          28.352208049010237
+        ],
+        [
+          22.262275565374768,
+          12.914596980874698
+        ],
+        [
+          2079.953974296329,
+          811.021428104758
+        ]
+      ],
+      "anchors": [
+        "C-2045-0755",
+        "C-2064-0771",
+        "C-2088-0783",
+        "C-2102-0824",
+        "C-2113-0796",
+        "C-2126-0835",
+        "E5-2094-0852",
+        "MAT25-K-2078-0812",
+        "NEW-2060-796",
+        "NEW-2080-878",
+        "R332-R-0025-0023"
+      ],
+      "estimated_ab": [
+        24.641864799255796,
+        22.276422450779286
+      ],
+      "nearest_cell": [
+        25,
+        22
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.246130141101991,
+      "nearest_cell_prediction": [
+        2048.6625519240592,
+        826.4590391728935
+      ],
+      "id": "C-2058-0820",
+      "color": "yellow",
+      "xy": [
+        2058.05,
+        819.875
+      ],
+      "hypothetical_residue": 99,
+      "nearest_native_distance": 23.59312002470195,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "NEW-2237-1522",
+      "reference_ab": [
+        41,
+        39
+      ],
+      "native_affine_coefficients": [
+        [
+          -13.025519876216839,
+          25.459398181439603
+        ],
+        [
+          17.561241559836617,
+          17.258865624175087
+        ],
+        [
+          2239.4571178910132,
+          1520.9788409051557
+        ]
+      ],
+      "anchors": [
+        "C-2254-1539",
+        "C-2264-1469",
+        "D40-K-2250-1499",
+        "E5-2290-1530",
+        "K-2273-1553",
+        "NEW-2235-1476",
+        "NEW-2237-1522",
+        "NEW-2245-1563",
+        "P5-2273-1513",
+        "R332-Y-0041-0038"
+      ],
+      "estimated_ab": [
+        41.530899558111976,
+        38.37326977586776
+      ],
+      "nearest_cell": [
+        42,
+        38
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 2.204046167616622,
+      "nearest_cell_prediction": [
+        2208.8703564549596,
+        1529.1793734624202
+      ],
+      "id": "C-2221-1524",
+      "color": "yellow",
+      "xy": [
+        2221.535714285714,
+        1523.6785714285713
+      ],
+      "hypothetical_residue": 106,
+      "nearest_native_distance": 15.28219112236407,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "C-1675-1967",
+      "reference_ab": [
+        127,
+        121
+      ],
+      "native_affine_coefficients": [
+        [
+          26.94256365188629,
+          -4.183372190605254
+        ],
+        [
+          5.397755398949585,
+          -23.777350509978533
+        ],
+        [
+          1670.2736410221028,
+          1967.990754971126
+        ]
+      ],
+      "anchors": [
+        "C-1634-2000",
+        "C-1650-1950",
+        "C-1654-1927",
+        "C-1675-1967",
+        "C-1676-1945",
+        "C-1678-1920",
+        "D40-K-1623-1947",
+        "D40-K-1703-1941",
+        "E5-1648-1985",
+        "K-1616-1972",
+        "K-1706-1916",
+        "R332-R-0127-0120",
+        "R332-Y-0128-0121"
+      ],
+      "estimated_ab": [
+        127.56505104373564,
+        120.38234481822685
+      ],
+      "nearest_cell": [
+        128,
+        120
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 3.435572957327268,
+      "nearest_cell_prediction": [
+        1691.8184492750395,
+        1987.5847332904993
+      ],
+      "id": "NEW-1684-1980",
+      "color": "red",
+      "xy": [
+        1682.1636131424098,
+        1980.3131398998146
+      ],
+      "hypothetical_residue": 160,
+      "nearest_native_distance": 15.268550510782358,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "NEW-2207-1350",
+      "reference_ab": [
+        37,
+        35
+      ],
+      "native_affine_coefficients": [
+        [
+          -10.132394614468023,
+          26.162653131510417
+        ],
+        [
+          19.852150361234028,
+          14.88260762950083
+        ],
+        [
+          2207.5152713866823,
+          1348.4508276582892
+        ]
+      ],
+      "anchors": [
+        "C-2216-1323",
+        "C-2238-1336",
+        "E5-2257-1351",
+        "K-2227-1364",
+        "K-2246-1381",
+        "NEW-2196-1305",
+        "NEW-2207-1350",
+        "NEW-2219-1390",
+        "R332-R-0038-0035",
+        "REC266-P068228"
+      ],
+      "estimated_ab": [
+        37.55976039408138,
+        34.39135801155123
+      ],
+      "nearest_cell": [
+        38,
+        34
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 2.4189875305305235,
+      "nearest_cell_prediction": [
+        2177.53072641098,
+        1359.7308731602989
+      ],
+      "id": "NEW-2191-1354",
+      "color": "red",
+      "xy": [
+        2189.7607059134543,
+        1354.0374647844758
+      ],
+      "hypothetical_residue": 54,
+      "nearest_native_distance": 18.144853858520424,
+      "occupied_by": [],
+      "adopted": false
+    },
+    {
+      "reference": "E5-0562-1620",
+      "reference_ab": [
+        165,
+        157
+      ],
+      "native_affine_coefficients": [
+        [
+          -21.368415526779067,
+          -17.556573498580985
+        ],
+        [
+          -21.713370167077926,
+          13.766644402134034
+        ],
+        [
+          561.378192332299,
+          1618.8713350739622
+        ]
+      ],
+      "anchors": [
+        "C-0518-1615",
+        "C-0538-1631",
+        "C-0541-1602",
+        "C-0565-1588",
+        "C-0584-1573",
+        "C-0585-1605",
+        "C-0603-1587",
+        "C-0623-1607",
+        "E5-0562-1620",
+        "K-0516-1582",
+        "K-0544-1573",
+        "K-0583-1636",
+        "K-0603-1624",
+        "NEW-631-1643"
+      ],
+      "estimated_ab": [
+        164.5006134375918,
+        157.3681710674347
+      ],
+      "nearest_cell": [
+        165,
+        157
+      ],
+      "native_target_error": null,
+      "native_fit_rms": 2.6920487199291636,
+      "nearest_cell_prediction": [
+        561.378192332299,
+        1618.8713350739622
+      ],
+      "id": "NEW-563-1633",
+      "color": "red",
+      "xy": [
+        564.0550572343096,
+        1632.707332125613
+      ],
+      "hypothetical_residue": 17,
+      "nearest_native_distance": 13.009498203502856,
+      "occupied_by": [
+        "E5-0562-1620"
+      ],
+      "adopted": false
+    }
+  ],
+  "repeat_pair_equations": [
+    {
+      "residue": 29,
+      "first": "C-1001-2678",
+      "other": "C-1226-1539",
+      "delta_ab": [
+        48,
+        48
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": 3,
+      "opposite_colors": false
+    },
+    {
+      "residue": 29,
+      "first": "C-1001-2678",
+      "other": "C-1250-2138",
+      "delta_ab": [
+        16,
+        16
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": 1,
+      "opposite_colors": false
+    },
+    {
+      "residue": 29,
+      "first": "C-1001-2678",
+      "other": "E5-1792-1727",
+      "delta_ab": [
+        32,
+        32
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": 2,
+      "opposite_colors": false
+    },
+    {
+      "residue": 29,
+      "first": "C-1001-2678",
+      "other": "NEW-1519-2976",
+      "delta_ab": [
+        -16,
+        -16
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -1,
+      "opposite_colors": true
+    },
+    {
+      "residue": 83,
+      "first": "C-0315-0867",
+      "other": "C-0870-0396",
+      "delta_ab": [
+        16,
+        16
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": 1,
+      "opposite_colors": false
+    },
+    {
+      "residue": 83,
+      "first": "C-0315-0867",
+      "other": "C-1032-1519",
+      "delta_ab": [
+        -32,
+        -32
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -2,
+      "opposite_colors": false
+    },
+    {
+      "residue": 83,
+      "first": "C-0315-0867",
+      "other": "C-1582-0235",
+      "delta_ab": [
+        -182,
+        -169
+      ],
+      "winding_multiples": -1,
+      "translation_16_copies": 2,
+      "opposite_colors": false
+    },
+    {
+      "residue": 83,
+      "first": "C-0315-0867",
+      "other": "E5-0355-1525",
+      "delta_ab": [
+        -16,
+        -16
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -1,
+      "opposite_colors": false
+    },
+    {
+      "residue": 83,
+      "first": "C-0315-0867",
+      "other": "R332-R-0037-0040",
+      "delta_ab": [
+        -150,
+        -137
+      ],
+      "winding_multiples": -1,
+      "translation_16_copies": 4,
+      "opposite_colors": true
+    },
+    {
+      "residue": 83,
+      "first": "C-0315-0867",
+      "other": "REC266-P035619",
+      "delta_ab": [
+        -166,
+        -153
+      ],
+      "winding_multiples": -1,
+      "translation_16_copies": 3,
+      "opposite_colors": true
+    },
+    {
+      "residue": 101,
+      "first": "C-0272-1512",
+      "other": "C-0990-1588",
+      "delta_ab": [
+        -16,
+        -16
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -1,
+      "opposite_colors": false
+    },
+    {
+      "residue": 101,
+      "first": "C-0272-1512",
+      "other": "C-1677-1513",
+      "delta_ab": [
+        -32,
+        -32
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -2,
+      "opposite_colors": false
+    },
+    {
+      "residue": 101,
+      "first": "C-0272-1512",
+      "other": "REC266-P100583",
+      "delta_ab": [
+        -48,
+        -48
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -3,
+      "opposite_colors": true
+    },
+    {
+      "residue": 127,
+      "first": "C-0900-1612",
+      "other": "C-1592-1479",
+      "delta_ab": [
+        -16,
+        -16
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -1,
+      "opposite_colors": false
+    },
+    {
+      "residue": 127,
+      "first": "C-0900-1612",
+      "other": "R332-R-0125-0118",
+      "delta_ab": [
+        -32,
+        -32
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -2,
+      "opposite_colors": true
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "C-1243-0349",
+      "delta_ab": [
+        -112,
+        -112
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -7,
+      "opposite_colors": false
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "C-1691-3004",
+      "delta_ab": [
+        -32,
+        -32
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -2,
+      "opposite_colors": false
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "C-1882-0479",
+      "delta_ab": [
+        -96,
+        -96
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -6,
+      "opposite_colors": false
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "C-2168-2478",
+      "delta_ab": [
+        -48,
+        -48
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -3,
+      "opposite_colors": false
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "C-2288-1794",
+      "delta_ab": [
+        -64,
+        -64
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -4,
+      "opposite_colors": false
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "E5-2165-1110",
+      "delta_ab": [
+        -80,
+        -80
+      ],
+      "winding_multiples": 0,
+      "translation_16_copies": -5,
+      "opposite_colors": false
+    },
+    {
+      "residue": 189,
+      "first": "C-1067-2156",
+      "other": "R332-R-0197-0183",
+      "delta_ab": [
+        86,
+        73
+      ],
+      "winding_multiples": 1,
+      "translation_16_copies": -8,
+      "opposite_colors": true
+    }
+  ],
+  "local_same_neighbor_tests": [
+    {
+      "id": "NEW-1519-2976",
+      "degree": 3,
+      "all_same_neighbor_primitive_cells": [
+        {
+          "cell": [
+            85,
+            79
+          ],
+          "native_prediction": [
+            1514.843062708622,
+            2982.2312882434508
+          ],
+          "native_error": 5.516973720446069,
+          "occupied_by": [],
+          "current": true
+        }
+      ]
+    },
+    {
+      "id": "R332-R-0037-0040",
+      "degree": 3,
+      "all_same_neighbor_primitive_cells": [
+        {
+          "cell": [
+            37,
+            40
+          ],
+          "native_prediction": [
+            2308.212273035774,
+            1429.7618613326947
+          ],
+          "native_error": 6.8823330003678125,
+          "occupied_by": [],
+          "current": true
+        }
+      ]
+    },
+    {
+      "id": "R332-R-0125-0118",
+      "degree": 3,
+      "all_same_neighbor_primitive_cells": [
+        {
+          "cell": [
+            125,
+            118
+          ],
+          "native_prediction": [
+            1580.912605729994,
+            2042.6484733774114
+          ],
+          "native_error": 4.810573121732651,
+          "occupied_by": [],
+          "current": true
+        }
+      ]
+    },
+    {
+      "id": "R332-R-0197-0183",
+      "degree": 2,
+      "all_same_neighbor_primitive_cells": [
+        {
+          "cell": [
+            196,
+            185
+          ],
+          "native_prediction": [
+            580.8509052126393,
+            578.8848142025096
+          ],
+          "native_error": 49.288947996719735,
+          "occupied_by": [
+            "C-0581-0575"
+          ],
+          "current": false
+        },
+        {
+          "cell": [
+            197,
+            183
+          ],
+          "native_prediction": [
+            602.9778292893302,
+            628.7108646776546
+          ],
+          "native_error": 5.410061891919076,
+          "occupied_by": [],
+          "current": true
+        }
+      ]
+    },
+    {
+      "id": "REC266-P035619",
+      "degree": 3,
+      "all_same_neighbor_primitive_cells": [
+        {
+          "cell": [
+            21,
+            24
+          ],
+          "native_prediction": [
+            2124.24799756471,
+            739.3589454598095
+          ],
+          "native_error": 2.706372976268042,
+          "occupied_by": [],
+          "current": true
+        }
+      ]
+    },
+    {
+      "id": "REC266-P100583",
+      "degree": 3,
+      "all_same_neighbor_primitive_cells": [
+        {
+          "cell": [
+            123,
+            116
+          ],
+          "native_prediction": [
+            1493.1513270824253,
+            2076.2243855525103
+          ],
+          "native_error": 3.6142535159476865,
+          "occupied_by": [],
+          "current": true
+        }
+      ]
+    }
+  ],
+  "local_patch_replays": [
+    {
+      "id": "R332-R-0197-0183",
+      "old_ab": [
+        197,
+        183
+      ],
+      "new_ab": [
+        196,
+        185
+      ],
+      "changed_links": [
+        {
+          "source": "R332-R-0197-0183",
+          "target": "R332-Y-0197-0184",
+          "old_delta_ab": [
+            0,
+            1
+          ],
+          "new_delta_ab": [
+            1,
+            -1
+          ]
+        },
+        {
+          "source": "C-0574-0602",
+          "target": "R332-R-0197-0183",
+          "old_delta_ab": [
+            1,
+            -1
+          ],
+          "new_delta_ab": [
+            0,
+            1
+          ]
+        }
+      ],
+      "native_error": 49.288947996719735,
+      "current_native_error": 5.410061891919076,
+      "all2287_equations": true,
+      "duplicate_occupancy": true,
+      "occupied_by": [
+        "C-0581-0575"
+      ],
+      "adopted": false,
+      "rejection": "Reject: native target-excluded continuation misses original source by 49.29px versus 5.41px for current site; primitive equations alone do not establish photographic realization."
+    }
+  ],
+  "policy": "All active coordinates and links retained. Color-blind neighbor intersections give a unique cell for five red minority sources; one degree2 source has an alternate primitive cell. Actual patch substitution replays equations but fails native geometry and is rejected. No alternate winding/row campaign or isolated periodicity edit."
+}

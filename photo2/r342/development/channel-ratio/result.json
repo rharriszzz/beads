@@ -1,0 +1,877 @@
+{
+  "feature": "Median of per-pixel green/red ratios in the same fixed9x9 core. Separate from blackness. No color application.",
+  "development_limits": {
+    "red_max": 0.4537037037037037,
+    "yellow_min": 0.43617021276595747
+  },
+  "development": {
+    "counts": {
+      "correct": 23,
+      "abstain": 3
+    },
+    "records": [
+      {
+        "id": "NEW-1442-248",
+        "color": "red",
+        "ratio": 0.23243243243243245,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-1519-2976",
+        "color": "red",
+        "ratio": 0.4537037037037037,
+        "prediction": "unknown",
+        "correct": false
+      },
+      {
+        "id": "C-0445-1614",
+        "color": "red",
+        "ratio": 0.15934065934065933,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1559-0252",
+        "color": "red",
+        "ratio": 0.288135593220339,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "P5-1364-0299",
+        "color": "red",
+        "ratio": 0.24870466321243523,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0505-1557",
+        "color": "red",
+        "ratio": 0.36428571428571427,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "R332-R-0167-0155",
+        "color": "red",
+        "ratio": 0.02586206896551724,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0518-1615",
+        "color": "red",
+        "ratio": 0.20967741935483872,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-1697-280",
+        "color": "red",
+        "ratio": 0.28735632183908044,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0412-1572",
+        "color": "red",
+        "ratio": 0.225130890052356,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1455-3009",
+        "color": "red",
+        "ratio": 0.2663316582914573,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1671-0325",
+        "color": "red",
+        "ratio": 0.255,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1777-1612",
+        "color": "yellow",
+        "ratio": 0.6051502145922747,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1364-2971",
+        "color": "yellow",
+        "ratio": 0.4708994708994709,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1353-3045",
+        "color": "yellow",
+        "ratio": 0.6133333333333333,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1251-0290",
+        "color": "yellow",
+        "ratio": 0.6106194690265486,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1398-3017",
+        "color": "yellow",
+        "ratio": 0.658008658008658,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1608-0253",
+        "color": "yellow",
+        "ratio": 0.6094420600858369,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1721-1566",
+        "color": "yellow",
+        "ratio": 0.6995708154506438,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1659-0261",
+        "color": "yellow",
+        "ratio": 0.5355450236966824,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1526-3018",
+        "color": "yellow",
+        "ratio": 0.5947136563876652,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1770-1577",
+        "color": "yellow",
+        "ratio": 0.5876777251184834,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-0585-1605",
+        "color": "yellow",
+        "ratio": 0.5688888888888889,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1633-0278",
+        "color": "yellow",
+        "ratio": 0.670995670995671,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "R332-R-0147-0142",
+        "color": "yellow",
+        "ratio": 0.44666666666666666,
+        "prediction": "unknown",
+        "correct": false
+      },
+      {
+        "id": "REC266-P074746",
+        "color": "yellow",
+        "ratio": 0.43617021276595747,
+        "prediction": "unknown",
+        "correct": false
+      }
+    ]
+  },
+  "heldout": {
+    "counts": {
+      "correct": 33,
+      "wrong": 1
+    },
+    "records": [
+      {
+        "id": "P5-1645-0309",
+        "color": "red",
+        "ratio": 0.28061224489795916,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1669-0293",
+        "color": "red",
+        "ratio": 0.24519230769230768,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1607-0290",
+        "color": "yellow",
+        "ratio": 0.620253164556962,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1582-0272",
+        "color": "red",
+        "ratio": 0.2682926829268293,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1729-0337",
+        "color": "red",
+        "ratio": 0.211340206185567,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1757-0332",
+        "color": "red",
+        "ratio": 0.27,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1717-1540",
+        "color": "yellow",
+        "ratio": 0.5825688073394495,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1694-1563",
+        "color": "yellow",
+        "ratio": 0.6956521739130435,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1705-1514",
+        "color": "yellow",
+        "ratio": 0.546448087431694,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1302-0316",
+        "color": "yellow",
+        "ratio": 0.5919282511210763,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1391-0312",
+        "color": "red",
+        "ratio": 0.26737967914438504,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1422-0264",
+        "color": "red",
+        "ratio": 0.22023809523809523,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1277-0302",
+        "color": "yellow",
+        "ratio": 0.6296296296296297,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1339-0277",
+        "color": "red",
+        "ratio": 0.2568306010928962,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1423-3004",
+        "color": "yellow",
+        "ratio": 0.5308056872037915,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1440-3032",
+        "color": "red",
+        "ratio": 0.27638190954773867,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "REC266-P144445",
+        "color": "yellow",
+        "ratio": 0.4263959390862944,
+        "prediction": "red",
+        "correct": false
+      },
+      {
+        "id": "C-1341-2982",
+        "color": "yellow",
+        "ratio": 0.5497630331753555,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1478-2990",
+        "color": "red",
+        "ratio": 0.25,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1503-2999",
+        "color": "yellow",
+        "ratio": 0.5779816513761468,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1376-3030",
+        "color": "yellow",
+        "ratio": 0.6176470588235294,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1413-3039",
+        "color": "red",
+        "ratio": 0.24271844660194175,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1394-3051",
+        "color": "red",
+        "ratio": 0.24378109452736318,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-1487-3054",
+        "color": "red",
+        "ratio": 0.2560386473429952,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0481-1576",
+        "color": "red",
+        "ratio": 0.2621951219512195,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-463-1549",
+        "color": "red",
+        "ratio": 0.21739130434782608,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0584-1573",
+        "color": "red",
+        "ratio": 0.175,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0565-1588",
+        "color": "red",
+        "ratio": 0.23076923076923078,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-428-1595",
+        "color": "red",
+        "ratio": 0.1952662721893491,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0403-1597",
+        "color": "yellow",
+        "ratio": 0.5394736842105263,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-0541-1602",
+        "color": "red",
+        "ratio": 0.2694300518134715,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-0562-1620",
+        "color": "yellow",
+        "ratio": 0.5581395348837209,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "NEW-493-1622",
+        "color": "red",
+        "ratio": 0.22580645161290322,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0538-1631",
+        "color": "yellow",
+        "ratio": 0.5545851528384279,
+        "prediction": "yellow",
+        "correct": true
+      }
+    ]
+  },
+  "all_confirmed_limits": {
+    "red_max": 0.4537037037037037,
+    "yellow_min": 0.4263959390862944
+  },
+  "all_confirmed_diagnostic": {
+    "counts": {
+      "correct": 56,
+      "abstain": 4
+    },
+    "records": [
+      {
+        "id": "P5-1645-0309",
+        "color": "red",
+        "ratio": 0.28061224489795916,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1669-0293",
+        "color": "red",
+        "ratio": 0.24519230769230768,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-1697-280",
+        "color": "red",
+        "ratio": 0.28735632183908044,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1671-0325",
+        "color": "red",
+        "ratio": 0.255,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1633-0278",
+        "color": "yellow",
+        "ratio": 0.670995670995671,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1607-0290",
+        "color": "yellow",
+        "ratio": 0.620253164556962,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1582-0272",
+        "color": "red",
+        "ratio": 0.2682926829268293,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1608-0253",
+        "color": "yellow",
+        "ratio": 0.6094420600858369,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1559-0252",
+        "color": "red",
+        "ratio": 0.288135593220339,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1659-0261",
+        "color": "yellow",
+        "ratio": 0.5355450236966824,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1729-0337",
+        "color": "red",
+        "ratio": 0.211340206185567,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1757-0332",
+        "color": "red",
+        "ratio": 0.27,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1721-1566",
+        "color": "yellow",
+        "ratio": 0.6995708154506438,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1717-1540",
+        "color": "yellow",
+        "ratio": 0.5825688073394495,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1694-1563",
+        "color": "yellow",
+        "ratio": 0.6956521739130435,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1770-1577",
+        "color": "yellow",
+        "ratio": 0.5876777251184834,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1777-1612",
+        "color": "yellow",
+        "ratio": 0.6051502145922747,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1705-1514",
+        "color": "yellow",
+        "ratio": 0.546448087431694,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1302-0316",
+        "color": "yellow",
+        "ratio": 0.5919282511210763,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1391-0312",
+        "color": "red",
+        "ratio": 0.26737967914438504,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1422-0264",
+        "color": "red",
+        "ratio": 0.22023809523809523,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1251-0290",
+        "color": "yellow",
+        "ratio": 0.6106194690265486,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1277-0302",
+        "color": "yellow",
+        "ratio": 0.6296296296296297,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1339-0277",
+        "color": "red",
+        "ratio": 0.2568306010928962,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "P5-1364-0299",
+        "color": "red",
+        "ratio": 0.24870466321243523,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-1442-248",
+        "color": "red",
+        "ratio": 0.23243243243243245,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1423-3004",
+        "color": "yellow",
+        "ratio": 0.5308056872037915,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1455-3009",
+        "color": "red",
+        "ratio": 0.2663316582914573,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1440-3032",
+        "color": "red",
+        "ratio": 0.27638190954773867,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "REC266-P144445",
+        "color": "yellow",
+        "ratio": 0.4263959390862944,
+        "prediction": "unknown",
+        "correct": false
+      },
+      {
+        "id": "C-1364-2971",
+        "color": "yellow",
+        "ratio": 0.4708994708994709,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "NEW-1519-2976",
+        "color": "red",
+        "ratio": 0.4537037037037037,
+        "prediction": "unknown",
+        "correct": false
+      },
+      {
+        "id": "C-1341-2982",
+        "color": "yellow",
+        "ratio": 0.5497630331753555,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1478-2990",
+        "color": "red",
+        "ratio": 0.25,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-1503-2999",
+        "color": "yellow",
+        "ratio": 0.5779816513761468,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1398-3017",
+        "color": "yellow",
+        "ratio": 0.658008658008658,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1526-3018",
+        "color": "yellow",
+        "ratio": 0.5947136563876652,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1376-3030",
+        "color": "yellow",
+        "ratio": 0.6176470588235294,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "E5-1413-3039",
+        "color": "red",
+        "ratio": 0.24271844660194175,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-1353-3045",
+        "color": "yellow",
+        "ratio": 0.6133333333333333,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-1394-3051",
+        "color": "red",
+        "ratio": 0.24378109452736318,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-1487-3054",
+        "color": "red",
+        "ratio": 0.2560386473429952,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0481-1576",
+        "color": "red",
+        "ratio": 0.2621951219512195,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0505-1557",
+        "color": "red",
+        "ratio": 0.36428571428571427,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-463-1549",
+        "color": "red",
+        "ratio": 0.21739130434782608,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "R332-R-0167-0155",
+        "color": "red",
+        "ratio": 0.02586206896551724,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0412-1572",
+        "color": "red",
+        "ratio": 0.225130890052356,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0584-1573",
+        "color": "red",
+        "ratio": 0.175,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0565-1588",
+        "color": "red",
+        "ratio": 0.23076923076923078,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "NEW-428-1595",
+        "color": "red",
+        "ratio": 0.1952662721893491,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0403-1597",
+        "color": "yellow",
+        "ratio": 0.5394736842105263,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-0541-1602",
+        "color": "red",
+        "ratio": 0.2694300518134715,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0585-1605",
+        "color": "yellow",
+        "ratio": 0.5688888888888889,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "C-0445-1614",
+        "color": "red",
+        "ratio": 0.15934065934065933,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0518-1615",
+        "color": "red",
+        "ratio": 0.20967741935483872,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "E5-0562-1620",
+        "color": "yellow",
+        "ratio": 0.5581395348837209,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "NEW-493-1622",
+        "color": "red",
+        "ratio": 0.22580645161290322,
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": "C-0538-1631",
+        "color": "yellow",
+        "ratio": 0.5545851528384279,
+        "prediction": "yellow",
+        "correct": true
+      },
+      {
+        "id": "R332-R-0147-0142",
+        "color": "yellow",
+        "ratio": 0.44666666666666666,
+        "prediction": "unknown",
+        "correct": false
+      },
+      {
+        "id": "REC266-P074746",
+        "color": "yellow",
+        "ratio": 0.43617021276595747,
+        "prediction": "unknown",
+        "correct": false
+      }
+    ]
+  },
+  "single_threshold_separates_confirmed": false,
+  "policy": "Overlap defeats a single complete R/Y threshold. No global red/yellow classifier adopted; shadowed examples in overlap abstain. All-maker limits are retrospective diagnostic, not heldout training."
+}

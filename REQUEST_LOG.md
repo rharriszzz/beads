@@ -9733,3 +9733,29 @@ no identity/geometry/link changes; full181/19/8 ->191/9/8. Four useful body/RY
 questions, all17unknown pattern positions source-linked. Maker116 accounted,
 3excluded stay excluded. Independent native/geometry/pattern/prediction checks,
 fresh replay, offline/mobile review and scoped delivery. No automaticR342.
+
+## R342 — maker overlay, fixed pixels, hue, remaining208 constraints
+
+User authorizes four R341 feature1 maker decisions (R332-R-0077-0077 and
+NEW-1681-1498 BLACK, R332-R-0147-0142 and REC266-P074746 YELLOW); preserve
+color authority separately from active-analysis eligibility. Investigate a small
+number of fixed-pixel glass regions, unchanged3×3/73.5, independent separate
+R/Y test, remaining conflicts/insufficient entries, reproducible offline delivery,
+scoped commit/push/remote verification and STOP. Mid-round maker steering:
+“green red channels? don't do that. Use hue. Change to use hue, please!”
+Channel-ratio experiment archived/abandoned; separate HUE diagnostic is current.
+
+Delivered experiment: fixed9×9 atsupport+(6,0), no diameter/spacing fit; clipping
+adds no control gain. All48original and64reserved controls raw correct. Same117
+maker raw56TP60TN0FP1FN, fixed edge policy24TP33TN60unknown; no extra automatic
+recoloring. Four maker edits only, all1058identities/1040coordinates/2287links
+preserved. Separate hue heldout33correct1unknown; shadow-Y/red overlap retained.
+Strict191/9/8 ->195/5/8; optional weak-black exclusions explicitly separated.
+Remaining29/83/101/127/189 preserved; eightinsufficient unchanged.36saved cues,
+16predictions,18unindexed fits,5candidate replays admit no beads and retain old
+phantom/duplicate vetoes. Complete same-neighbor primitive intersections plus
+actual2link patch reject alternate189 (occupied C0581 and49.29px native error).
+Two high-value native questions,16panels/ownlocalkeys/current adjacency.2504
+historical hashes/3174native scores/1058scalarhues/2496strict entries/8heldout
+metrics checked; fresh28products/31images/HTML exact, offline/narrow controls pass.
+Report photo2/R342_REPORT.md. Stop after scoped delivery; no automatic R343.

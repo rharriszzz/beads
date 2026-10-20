@@ -1,3 +1,22 @@
+# R342 — fixed pixels for blackness; hue only for red/yellow
+
+Use one fixed9×9 core at support+(6,0), darkest contiguous3×3 maximum RGB,
+threshold73.5. No size/spacing fit or pigment/period input. Test three fixed-size
+placements; offset wins over support-centered misses, clipping adds no control
+gain. Preserve raw results versus fixed18pixel photographic-outline eligibility
+versus explicit native ownership. All contradictions retain maker authority.
+Reserved64 correct;117maker raw56TP60TN0FP1FN; edge policy24TP33TN60unknown.
+
+Latest maker steering replaces channel relationships with separate circular HSV
+hue. Development hue envelope overlap17.58–20.35° abstains; heldout33correct/
+1unknown, no automatic R/Y relabeling. Black remains entirely hue-free.
+Freeze four maker colors; strict full191/9/8 ->195/5/8. Two reviews only; saved
+cue/duplicate audit admits no beads. Complete same-neighbor cell intersections
+and actual two-link patch substitution reject the only alternate for189 due to
+C0581 occupied-site duplication plus49.29px native error. Preserve all geometry.
+See [R342 report](photo2/R342_REPORT.md), [reproduction](photo2/R342_REPRODUCE.md)
+and [offline review](photo2/r342/review/index.html). Stop; no automatic R343.
+
 # R341 — geometry broadens the safe search; native ownership remains explicit
 
 Keep the fixed3×3 maximum-channel minimax/73.5. Compare a neighbor-clipped

@@ -1,3 +1,70 @@
+# R342 completed — fixed pixels, separate hue, four maker colors; STOP
+
+Read photo2/R342_REPORT.md and R342_REPRODUCE.md. Review:
+photo2/r342/review/index.html. Start ef3a8137. Current scientific files ONLY
+photo2/r342/; stopped untracked R340 experiments untouched and unused.
+
+Four own-R341-photograph feature1 maker corrections, original XY/AB/identities:
+R332-R-0077-0077 R->BLACK; NEW-1681-1498 R->BLACK (authoritative even when
+inactive/automatic unknown); R332-R-0147-0142 R->YELLOW; REC266-P074746 R->YELLOW.
+No other colors/admissions/links/geometry/winding changed.1058records/1040indexed/
+2287links/H214,201 retained; indexed333R315Y392B. All120maker labels accounted:
+117active+3excluded reference-only, no readmission. All historical data preserved.
+
+Black uses ONE fixed9x9 core centered6nativepixels right of original support;
+fixed3x3 minimax maximumRGB /73.5 unchanged. No spacing, diameter, affine fit,
+hue, means, reflection analysis, morphology or aperture voting. Three fixed-size
+alternatives compared: support core misses24development blacks; offset and
+neighbor-clipped tie; offset simplest. Initial false-positive-first selection
+archived/rejected; total development errors select offset.64reserved controls
+30TP34TN0errors;48original controls48/48. Same117maker raw56TP60TN0FP1FN vs
+R34157TP59TN1FP0FN. NEW1681 score99 is unsafe sample, preserveBLACK/abstain.
+Fixed original-outline clearance>=18pixels/indexing eligibility:148B328notB/
+582unknown; maker24TP33TN60abstain (33B18R9Y). Same eligibility R341 identical.
+Raw393B665notB; all3disagreements native-inspected: C1253Y48 boundary, NEW563
+unindexed71 rim/neighbor, NEW1681B99 wrong material. No automatic relabeling.
+Fixed core avoids C0505/C1264/E51178 old boundary false-black outcomes but does
+not certify all new pixels; only137patches identical to R341. No universal gain.
+
+Latest maker steering REQUIRES HUE for separate R/Y, not green/red ratios.
+Abandoned ratio experiment preserved development/channel-ratio, UNUSED. Separate
+median circular HSV hue in same fixed core:34held colored33correct1abstain;
+all60maker-colored57correct3abstain. ShadowY REC07474617.58deg overlaps makerR
+NEW151920.35deg; REC144445Y19.41deg also abstains. R332R0147142Y22.03deg.
+No automatic R/Y correction, hue never enters blackness or identity.
+
+Full1040/original1039 strict191/9/8 ->195/5/8, resolves9/35/102/169. Same710
+155/0/53 unchanged. OmitQ102:194/5/9; omitQ169:195/5/8; omitboth194/5/9.
+Colors independent of eligibility. Remaining conflicts29/83/101/127/189; no
+opposite maker/maker color pair. MakerR NEW1519 at29 protected vs visibleY.
+Sixred minority native/primitive checks:five unique same-neighbor cells. At189
+alternate[196,185] actual2link patch replays all2287equations but duplicates
+C-0581-0575 and misses native49.29px vs5.41; REJECTED, graph untouched. No isolated
+index/period adoption. Larger coherent alternatives not ruled out by local test.
+Eightinsufficient43/62/75/82/89/140/147/186: six2occ;62Y/89B3occ but2geoblocks.
+36saved cues+16pure predictions,18unindexed local fits,5native/geometry checks;
+no admissions. R338duplicate R332B0105098=K0935shoulder and R336B01380130 vetoes
+preserved despite black scores/plausible links. No motif-filled unknowns.
+
+TWO useful questions: Q101 REC266-P100583 visible brown/orange body pigment
+versus unsafe ownership (companion2 MAT25-K15062056); C62 provisional R332-Y-
+0104-0097 separate exposed amber body/pigment (companion2 MAT25-K09532555).
+No repeat questions on solved maker colors.16native panels with own keys,
+accepted vs dashed hypothetical links, full1058viewer,195strict/13unknown grid.
+Weak127/83/189 and hard29 are diagnostics, not forced photographic votes.
+
+Same1036unchanged targets flat geographic96.62->97.39%, wholeocc99.23unchanged;
+hier10497.59->98.17%,wholeocc99.42unchanged. Recorded-color prediction only.
+Proper208divisors all have supported-color witnesses, conditional primitivity
+only. A2704/208/13 remains leading CONDITIONAL; actual shortest still incomplete.
+Independent2504old hashes/3174native masks+scores/1058scalarhues/2287equations/
+1040unique sites/2496strict entries/8heldout metrics/16literal crops/rejectedpatch
+pass. Fresh28science/31images/HTML exact; actual offline/narrow/key controls pass.
+Native judgments are explicit inputs, not a second independent visual inspection.
+STOP after scoped commit/push/remote verification. No automatic R343, new winding,
+renderer/detector campaign or model/session change. Continue current session only
+when authorized; no /new needed.
+
 # R341 completed — full black/red native audit,12 corrections; STOP
 
 Read photo2/R341_REPORT.md and R341_REPRODUCE.md. Review:

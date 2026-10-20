@@ -7,6 +7,18 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pigment and pattern instruction — R342
+
+The maker confirms black R332-R-0077-0077 and NEW-1681-1498, yellow R332-R-0147-
+0142 and REC266-P074746. Preserve these independently of activity. Latest steering
+explicitly requests HUE for the separate red/yellow distinction, replacing channel
+ratios. Black remains fixed3×3 maximumRGB /73.5; selected core is fixed9×9 at
+support+(6,0), without bead size/spacing. No new automatic colors or identities.
+R342 yields195supported/5conflicting/8insufficient on unchanged1040sources.
+All120maker colors accounted, old geometry/links/exclusions preserved. Two useful
+questions in photo2/r342/review/index.html. See [R342](photo2/R342_REPORT.md).
+STOP after delivery; no automatic R343 or broader winding/render campaign.
+
 ## Current pigment and pattern instruction — R341
 
 The maker authorizes a modest geometry improvement with fixed3×3/73.5, complete

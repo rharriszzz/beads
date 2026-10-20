@@ -1,0 +1,102 @@
+{
+  "active_maker117": {
+    "raw": {
+      "TP": 56,
+      "TN": 60,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 0,
+      "n": 117
+    },
+    "automatic_decision": {
+      "TP": 24,
+      "TN": 33,
+      "FP": 0,
+      "FN": 0,
+      "abstain": 60,
+      "n": 117
+    },
+    "reviewed_decision": {
+      "TP": 24,
+      "TN": 33,
+      "FP": 0,
+      "FN": 0,
+      "abstain": 60,
+      "n": 117
+    }
+  },
+  "global_counts": {
+    "raw": {
+      "not-black": 665,
+      "black": 393
+    },
+    "automatic_decision": {
+      "unknown": 582,
+      "not-black": 328,
+      "black": 148
+    },
+    "reviewed_decision": {
+      "unknown": 582,
+      "not-black": 328,
+      "black": 148
+    }
+  },
+  "global_label_disagreements": [
+    "C-1253-2928",
+    "NEW-1681-1498",
+    "NEW-563-1633"
+  ],
+  "selected_patch_exactly_same_as_R341": 137,
+  "native_false_black_cases": [
+    "C-1253-2928",
+    "NEW-563-1633"
+  ],
+  "maker_raw_missed_black": [
+    "NEW-1681-1498"
+  ],
+  "additional_color_changes": 0,
+  "all120_maker": {
+    "active": 117,
+    "historically_excluded": 3,
+    "excluded_labels_preserved": true
+  },
+  "policy": "Automatic eligibility: indexed plus saved original-outline clearance>=18pixels. This is a fixed edge abstention, not bead size. Native reviewed vetoes are explicit inspection inputs, not classifier rules; matching stored color is not new ownership truth.",
+  "abstentions_by_maker_color": {
+    "automatic_decision": {
+      "yellow": 9,
+      "red": 18,
+      "black": 33
+    },
+    "reviewed_decision": {
+      "yellow": 9,
+      "red": 18,
+      "black": 33
+    }
+  },
+  "R341_raw_same117": {
+    "TP": 57,
+    "TN": 59,
+    "FP": 1,
+    "FN": 0,
+    "abstain": 0,
+    "n": 117
+  },
+  "same_fixed_eligibility476_comparison": {
+    "R341": {
+      "TP": 24,
+      "TN": 33,
+      "FP": 0,
+      "FN": 0,
+      "abstain": 60,
+      "n": 117
+    },
+    "R342": {
+      "TP": 24,
+      "TN": 33,
+      "FP": 0,
+      "FN": 0,
+      "abstain": 60,
+      "n": 117
+    }
+  }
+}
