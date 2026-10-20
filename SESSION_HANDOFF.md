@@ -1,3 +1,51 @@
+# R338 completed — bounded interior audit, one known body indexed; STOP
+
+Read photo2/R338_REPORT.md and R338_REPRODUCE.md. Start4ddb0c34, branch
+photo-2-strategy-v3. Review photo2/r338/review/index.html opens FIVE answerable
+native-body pigment questions at proposed208 residues27/92/112/157/196.
+Targets always own-photograph feature1, immediately matched current diagram;
+23panels/full local stable-ID keys/185literal crops. No invisible bead or unusual
+gap questions. All32 unresolved positions retain native source ledger.
+
+Bounded3993source-cue audit from R332 caches/provisionals/current18unindexed,
+268unseeded RGB components and old/current vacancies. OriginalcueXYfrozen;
+no prediction-seeded recenter/resample. Physical outline screen corrected after
+filled foreground included paper and largest-component mask missed upper rope;
+all failed epochs preserved. Physical clearance distinct from710graph proxy.
+11eligible cues/5vacancies;9physical association exceptions also inspected.
+No newly discovered body admitted. THREE same-body source cues across TWO bodies
+rejected, NOT phantom count;28inherited excluded/alias cues quarantined. Other
+uncertain dark/body/rim sources stay provisional, including black-positive
+REC266-P143676 and unknown nativeR338-N-1009-2826. No darkness creates identity.
+
+One previously maker-confirmed reflection-free body R332-B-0098-0092 newly indexed
+at98,92 with originalXY/black. AliasREC266-P134549 not a second body;D40K1036
+DISTINCT. Three working links toD40-K-1036-2780/C-1058-2815/C-1033-2810 pass
+triangles/target-excluded geometry/native corridors/commonspacing. New layer
+photo2/r338/results/graph.json.gz:1058records/1040indexed/2287links/onecomponent/
+H214,201. All1057old records/1039AB/2284links EXACT. Old18active unindexed unchanged.
+All approved colors/adjacencies/unusual gaps/phantom exclusions retained.
+
+166fixed-support broad+compact pigment rechecks:36black/44notblack/86unknown.
+No historical relabeling. Freeze before selected fixed208 analysis; full/common
+176supported/24conflict/8insufficient UNCHANGED;res198 3black->4black only.
+Frozen710149/6/53unchanged. Physical449->450:68/6/134unchanged; different cohort
+NOT accuracygain. New knownbody occurrence5 predictedB from originalocc6/7/8,
+p=.6768,1/1agree;frequencybaselinealsoB, makerlabelknownbeforehand, NOT fresh blind
+or distinctive208validation. No new-discovery heldout denominator.
+
+32independent predictor checks/eight cohorts;1099old scientific/photo/model hashes,
+2287equations/1040uniquequotients/independentlocalregression/threecorridors/
+81996nativecomponentpixels/93164ringpixels/478keyrows/185nativecrops pass.
+Actual browser offline/narrow/navigation/keys/zoom/pan passes. Fresh replay exact
+except timing, manual inspection inputs explicit. No count/winding/render campaign.
+A2704/208/13repeats remains leading CONDITIONAL interpretation. Multiples13allowed;
+maker non13isHOPEonly. Confirmedoppositecolors at a reviewed residue would require
+association/coherentindex investigation, not majoritycolor or isolatedindex edits.
+
+STOP after scoped commit/push and independent remote verification. No automatic
+R339, geometry/count/pattern completion, model/session switch or /new.
+
 # R337 completed — primitive partial208 pattern, coherent closure; STOP
 
 Read photo2/R337_REPORT.md and R337_REPRODUCE.md. Start a6e16d54, branch

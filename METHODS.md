@@ -2234,3 +2234,24 @@ Reviewed equations, distinct identities and later-body boundary evidence are
 separate gates from color prediction. Geographic guards and complete occurrence
 holdouts separate descriptive fit from extrapolation; no fresh blind accuracy
 claim. Current graph preserved; no color-driven coordinate compression/adoption.
+
+## R338 — fixed-source body audit, physical outline and frozen208 comparison
+
+[Report](photo2/R338_REPORT.md), [reproduce](photo2/R338_REPRODUCE.md),
+[review](photo2/r338/review/index.html). Bounded3993source-cue audit combines
+legacy caches/provisionals/unindexed with268unseeded RGB components and frozen
+current-neighbor vacancies. Sources never recentered on prediction-seeded darkness.
+Three-threshold paper-outline clearance/common all-color support scale identifies
+physical interior separately from the710graph proxy. Retain all sufficiently
+large outline components, not just the largest; filled foreground does not supply
+physical interior or separate-body proof. Neighbor angle is diagnostic only.
+
+Independent native ownership precedes fixed-site target-excluded regression,
+primitive equations, triangles, corridor/spacing and two-extent black-first pigment.
+Only one previously maker-confirmed body admitted to additive indexing; no new
+body or historical color correction from pattern agreement. Decisions frozen before
+fixed208 rerun. Common1039/expanded1040/frozen710/physical449->450 reported separately.
+Strict conflicts require independent resolution; adding majority votes cannot erase
+them. Eight cohorts/32independent heldout score checks; new knownbody's1/1agreement
+also achieved byfrequencybaseline, not freshdiscovery validation. Five useful native
+questions expose exact targets, allstableIDs/currentlinks andsame-residue comparisons.

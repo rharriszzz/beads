@@ -9664,3 +9664,20 @@ searches, current208 leads. New A271 closure preserves maker links but fails
 colors and later boundaries. All original graph/maker decisions unchanged.
 Independent checks, offline review, reproducible fresh replay, scoped commit/push
 and remote confirmation, then STOP; no automaticR338.
+
+## R338 — reliable physical-interior evidence before pattern completion
+
+User authorizes a bounded native/cache/provisional/unindexed search from R337
+4ddb0c34, additive independent photographic associations, frozen fixed208 analysis,
+common and expanded cohorts, useful own-panel native questions, reproducible code,
+independent verification, scoped commit/push/remote check, then STOP for review.
+No broad physical rendering or arbitrary winding search. Do not infer identities
+or colors from pattern predictions; keep authoritative colors and approved gaps.
+
+Delivered:3993cue rows/5eligible vacancies/9physical association exceptions; one
+previously maker-confirmed body newly indexed with3links, no new discovered body
+admitted. All old graph records/coordinates/links preserved; new1040/2287layer.
+Strict176supported/24conflict/8insufficient unchanged; no cohort-change gain.
+Five answerable native cases at27/92/112/157/196 with own feature1/fullkeys/current
+links/otherrepeatoccurrences; all32unknowns linked tooriginalpixels. Independent
+checks, offline/narrow browser, exact fresh replay and delivery receipt. No R339.

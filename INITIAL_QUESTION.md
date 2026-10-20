@@ -7,6 +7,20 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current photographic-evidence instruction — R338
+
+The maker authorizes a bounded search for overlooked well-exposed physical-interior
+beads before further pattern completion, including provisional/native caches and
+unindexed records. Unresolved208 positions prioritize locations only; predicted
+colors cannot establish bodies or pigment. Preserve all earlier maker decisions,
+exclusions and approved gaps. Admit only independent body/neighbor evidence.
+R338 adds one previously maker-established body and three links in a separate
+layer, with no newly discovered body admitted and no old label/coordinate/link
+edits. The strict176/24/8 pattern counts remain unchanged. Five answerable native
+photographic questions now require maker review; see [R338](photo2/R338_REPORT.md).
+The current2704/208/13 interpretation remains conditional. STOP after delivery;
+no automatic R339 or new period/winding campaign.
+
 ## Current pattern authority — R337
 
 The maker now says **“let's not exclude multiples of13; instead just say I hope

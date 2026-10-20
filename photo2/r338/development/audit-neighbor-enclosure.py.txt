@@ -1,0 +1,126 @@
+"""Systematic candidate audit; geometric priority never sees expected motif color."""
+import argparse,time,subprocess
+from scipy import ndimage as ndi
+from scipy.spatial import ConvexHull
+from PIL import ImageDraw,ImageFont
+from .common import *
+
+def fresh_components(photo):
+    rgb=photo.astype(np.float32)/255;r,g,b=rgb.transpose(2,0,1);v=rgb.max(2)
+    masks={'red-cue':(r>1.8*g)&(r>2.5*b)&(r>.16),'yellow-cue':(g>.35*r)&(g>1.8*b)&(r>.9*g)&(r>.16),'dark-cue':(v<.36)&(v-rgb.min(2)<.13)&(v>.012)}
+    result=[];stats={}
+    for cue,mask in masks.items():
+        labels,num=ndi.label(mask,np.ones((3,3)));slices=ndi.find_objects(labels);count=0
+        for label,box in enumerate(slices,1):
+            if box is None:continue
+            yy,xx=np.where(labels[box]==label);xx+=box[1].start;yy+=box[0].start;n=len(xx)
+            if not 25<=n<=900 or min(np.ptp(xx),np.ptp(yy))<4 or max(np.ptp(xx),np.ptp(yy))>48:continue
+            result.append(dict(id=f'F338-{cue}-{label:06d}',xy=[float(xx.mean()),float(yy.mean())],source='original RGB global connected component, unseeded',source_kind='unseeded-component',source_label=label,cue=cue,pixels_xy=np.c_[xx,yy].tolist(),visible_body_established=False));count+=1
+        stats[cue]=dict(raw_components=num,bounded_components=count)
+    return result,stats
+
+def sheet(rows,photo,out,number,start=0):
+    # Identical native pixel scale across targets. No inferred colors are drawn.
+    W,H=212,220;im=Image.new('RGB',(W*5,H*4),'#f5f5f5');draw=ImageDraw.Draw(im)
+    for j,r in enumerate(rows):
+        x,y=np.rint(r['xy']).astype(int);crop=Image.fromarray(photo).crop((x-48,y-48,x+49,y+49)).resize((194,194),Image.Resampling.NEAREST);ox=(j%5)*W+8;oy=(j//5)*H+22;im.paste(crop,(ox,oy));draw.text((ox,oy-19),f"{start+j+1} {r['id'][:27]}",fill='black');cx=ox+96;cy=oy+96;draw.ellipse((cx-4,cy-4,cx+4,cy+4),outline='#00ffff',width=1)
+    im.save(out/f'contact-{number:02d}.png')
+
+def run(out):
+    start=time.perf_counter();out=Path(out);out.mkdir(parents=True,exist_ok=False);g,obs,co=baseline();geo=geometry(g,obs,co);photo=photograph();raw=read(ROOT/'photo2/r332/results/graph.json.gz');H=g['H'];occupied={quotient(v,H):o for o,v in co.items()};edges={frozenset((e['source'],e['target'])) for e in g['edges']}
+    # Paper chromaticity is used only to estimate physical rope-outline distance,
+    # never as a black pigment test or an independent body-identity certificate.
+    rgb=photo.astype(np.float32)/255.;red,green,blue=rgb.transpose(2,0,1);value=rgb.max(2);distances=[]
+    for threshold in [.25,.35,.45]:
+        paper=(blue-green>threshold*(red-green))&(blue>1.1*green)&(red>1.2*green)&(value>.06)
+        fg=ndi.binary_closing(~paper,iterations=5);labels,_=ndi.label(fg);sizes=np.bincount(labels.ravel());keep=sizes>=60;keep[0]=False;fg=keep[labels];holes,_=ndi.label(~fg);sizes=np.bincount(holes.ravel());small=sizes<1000;small[0]=False;fg|=small[holes];distances.append(ndi.distance_transform_edt(fg).astype(np.float32))
+    distance=np.minimum.reduce(distances);Image.fromarray((distance>0).astype(np.uint8)*255).resize((635,796)).save(out/'outline.png')
+    retained=read(ROOT/'photo2/r336/results/retained-graph.json.gz');excluded_xy={r['id']:r['xy'] for r in retained['observations'] if r['id'] in EXCLUDED}
+    phantom_sites={(196,183),(138,130)}
+
+    source=[]
+    for key in ['provisional_observations','unrepresented_candidates']:
+        for r in raw[key]:source.append(dict(id=r['id'],xy=r['xy'],source=r.get('source','R332 cached native record'),source_kind=key,cached_color=r['color'],old_cell=r.get('cell'),old_reasons=r.get('reasons'),aliases=r.get('alternatives',[]),old_relocation=r.get('initial_prediction'),visible_body_established=False))
+    for o,r in obs.items():
+        if o not in co:source.append(dict(id=o,xy=r['xy'],source=r.get('source'),source_kind='known-unindexed',cached_color=r['color'],visible_body_established=False))
+    from photo2.r332.recover import Completion
+    for r in Completion.pool(geo):source.append(dict(r,visible_body_established=False))
+    for r in raw['predictions']:source.append(dict(id=r['id'],xy=r['prediction'],source='R332 purely geometric prediction',source_kind='prediction-only',old_cell=r['cell'],visible_body_established=False))
+    fresh,component_stats=fresh_components(photo);source+=fresh
+    # Every current multiply-neighbored vacancy is separately audited, including
+    # positions absent from the old caches. Prediction never creates observation.
+    cells={quotient(np.array(v)+d,H) for v in co.values() for d in DIRECTIONS}-set(occupied)
+    for cell in sorted(cells):
+        neighbors=[occupied[quotient(np.array(cell)+d,H)] for d in DIRECTIONS if quotient(np.array(cell)+d,H) in occupied]
+        if len(neighbors)<3:continue
+        center=np.mean([obs[o]['xy'] for o in neighbors],axis=0);model=geo.model(center)
+        if model is None:continue
+        lifted=np.array(cell)-round(float((np.array(cell)-model['root'])@geo.H/(geo.H@geo.H)))*geo.H;point=geo.predict(model,lifted)
+        if np.any(point<15) or point[0]>=photo.shape[1]-15 or point[1]>=photo.shape[0]-15:continue
+        source.append(dict(id=f'V338-{cell[0]:04d}-{cell[1]:04d}',xy=point.tolist(),old_cell=list(cell),source='current frozen graph multiply-neighbor vacancy',source_kind='prediction-only-current',visible_body_established=False))
+    names=sorted(co);xy=np.array([obs[o]['xy'] for o in names]);tree=cKDTree(xy);allnames=sorted(obs);alltree=cKDTree([obs[o]['xy'] for o in allnames]);rows=[];cache={}
+    # Expected motif colors are never read. Only the32 unresolved residue IDs
+    # are attached after image/geometric eligibility has been computed.
+    for j,r in enumerate(source):
+        point=np.array(r['xy']);x,y=np.rint(point).astype(int);row=dict(r,ordinal=j)
+        if not (0<=x<photo.shape[1] and 0<=y<photo.shape[0]):row.update(status='outside-image');rows.append(row);continue
+        dd,jj=tree.query(point,k=6);nearest=[dict(id=names[int(k)],distance=float(d)) for d,k in zip(dd,jj)];row.update(nearest=nearest,silhouette_clearance=float(distance[y,x]))
+        if r['id'] in EXCLUDED:row.update(status='maker-excluded');rows.append(row);continue
+        if any(np.linalg.norm(point-np.array(q))<12 for q in excluded_xy.values()) or (r.get('old_cell') and tuple(r['old_cell']) in phantom_sites):row.update(status='quarantined-excluded-identity-or-phantom-site-cue');rows.append(row);continue
+        if r['id'] in co:row.update(status='already-indexed');rows.append(row);continue
+        if nearest[0]['distance']<10 and r['source_kind']!='known-unindexed':row.update(status='near-existing-response; duplicate-or-same-body-cue');rows.append(row);continue
+        key=tuple(np.rint(point).astype(int))
+        if key not in cache:cache[key]=geo.infer(point,r['id'] if r['id'] in obs else None)
+        inf=cache[key]
+        if inf is None:row.update(status='insufficient-local-geometry');rows.append(row);continue
+        cell=quotient(inf['cell'],H);owner=occupied.get(cell);neighbor=[]
+        for d in DIRECTIONS:
+            o=occupied.get(quotient(np.array(cell)+d,H))
+            if o:neighbor.append(dict(id=o,delta=list(d),xy=obs[o]['xy']))
+        spacings=[]
+        for e in g['edges']:
+            if e['source'] in inf['model']['anchors'] and e['target'] in inf['model']['anchors']:spacings.append(float(np.linalg.norm(np.array(obs[e['source']]['xy'])-obs[e['target']]['xy'])))
+        spacing=float(np.median(spacings)) if spacings else 28.;angles=sorted(np.arctan2(np.array([n['xy'] for n in neighbor])[:,1]-point[1],np.array([n['xy'] for n in neighbor])[:,0]-point[0]).tolist()) if neighbor else [];maxgap=max(np.diff(angles+[angles[0]+2*np.pi])) if angles else 2*np.pi
+        families={tuple(d if tuple(d) in DIRECTIONS[:3] else -np.array(d)) for d in [n['delta'] for n in neighbor]};triangles=sum(frozenset((a['id'],z['id'])) in edges for i,a in enumerate(neighbor) for z in neighbor[i+1:]);blockers=[]
+        for e in g['edges']:
+            p=np.array(obs[e['source']]['xy']);q=np.array(obs[e['target']]['xy']);v=q-p;t=float((point-p)@v/(v@v))
+            if .2<t<.8 and np.linalg.norm(point-p-t*v)<7:blockers.append([e['source'],e['target']])
+        colored=geo.model(point,r['id'] if r['id'] in obs else None,colored=True);spread=float(np.linalg.norm(geo.predict(colored,inf['cell'])-inf['prediction'])) if colored else None
+        interior=distance[y,x]>=max(18.,.65*spacing) and maxgap<=math.radians(215)
+        reasons=[]
+        if cell in phantom_sites:reasons.append('maker-rejected-phantom-site; no new independent measurement')
+        if owner:reasons.append('occupied-lattice-site')
+        if not interior:reasons.append('not-clear-physical-interior-screen')
+        if inf['error']>9 or inf['margin']<4 or inf['model']['rms']>8:reasons.append('ambiguous-support-to-lattice-association')
+        if len(neighbor)<3 or len(families)<2 or triangles<1:reasons.append('insufficient-independent-neighbor-support')
+        if spread is not None and spread>8:reasons.append('colored-only-geometry-disagrees')
+        if blockers:reasons.append('intervenes-in-approved-working-corridor')
+        row.update(status='native-review-eligible' if not reasons else 'deferred',reasons=reasons,cell=list(cell),prediction=inf['prediction'].tolist(),error=inf['error'],margin=inf['margin'],rms=inf['model']['rms'],anchors=inf['model']['anchors'],colored_anchors=colored['anchors'] if colored else [],colored_prediction_spread=spread,owner=owner,neighbors=neighbor,spacing=spacing,max_neighbor_angle_gap=float(maxgap),physical_interior_screen=bool(interior),triangles=triangles,blocked_existing_links=blockers)
+        rows.append(row)
+    unresolved=set(read(ROOT/'photo2/r337/results/pattern208.json')['strict_unknown'])
+    for r in rows:
+        if 'cell' in r:r.update(residue=(7*r['cell'][0]+6*r['cell'][1])%208,unresolved_residue=((7*r['cell'][0]+6*r['cell'][1])%208 in unresolved))
+    # Group competing source cues at the same vacancy, preserving every alias.
+    grouped=defaultdict(list)
+    for r in rows:
+        if r.get('status')=='native-review-eligible':grouped[tuple(r['cell'])].append(r)
+    ranked=[]
+    for cell,rr in grouped.items():
+        rr.sort(key=lambda r:(r['source_kind'].startswith('prediction'),r['error'],r['id']));main=rr[0];ranked.append(dict(main,other_cues=[dict(id=r['id'],xy=r['xy'],source_kind=r['source_kind']) for r in rr[1:]]))
+    ranked.sort(key=lambda r:(not r['unresolved_residue'],-r['silhouette_clearance'],r['error'],r['id']))
+    for i,r in enumerate(ranked):r['review_number']=i+1
+    for i in range(0,len(ranked),20):sheet(ranked[i:i+20],photo,out,i//20+1,i)
+    exceptional=[r for r in rows if r.get('physical_interior_screen') and not r.get('owner') and r.get('cell') and r['status']!='native-review-eligible']
+    exceptional.sort(key=lambda r:(r.get('error',999),r['id']))
+    unique=[];seen=set()
+    for r in exceptional:
+        cell=tuple(r['cell'])
+        if cell in seen:continue
+        seen.add(cell);unique.append(r)
+    for i in range(0,min(len(unique),60),20):sheet(unique[i:i+20],photo,out,20+i//20,i)
+    save(out/'association-exceptions.json',unique)
+    save(out/'audit.json.gz',dict(rows=rows,ranked=ranked,global_component_stats=component_stats,policy='No identity admitted by this numerical audit. Native-review eligibility uses physical minimum rope-outline clearance across three paper-separation settings and surrounding current geometry, not graph degree or predicted pattern color. Original source coordinates frozen; no prediction-seeded recenter/resample. Every cue requires independent native body/ownership review.',seconds=time.perf_counter()-start))
+    save(out/'summary.json',dict(source_rows=len(rows),sources=dict(Counter(r['source_kind'] for r in rows)),statuses=dict(Counter(r['status'] for r in rows)),review_eligible_groups=len(ranked),unresolved_priority=sum(r['unresolved_residue'] for r in ranked),seconds=time.perf_counter()-start));print('AUDIT',len(rows),'sources',Counter(r['status'] for r in rows),'eligible',len(ranked),time.perf_counter()-start,flush=True)
+    sealpaths=subprocess.check_output(['git','ls-files','photo2/r332','photo2/r333','photo2/r334','photo2/r335','photo2/r336','photo2/r337','beads-photo-2.jpg','beads.pov'],cwd=ROOT,text=True).splitlines();save(out/'input-seal.json',{p:sha(ROOT/p) for p in sealpaths})
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--output',required=True);run(p.parse_args().output)
