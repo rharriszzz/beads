@@ -7,6 +7,17 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pigment and pattern instruction — R340
+
+The maker fixes3×3 darkest contiguous genuine-material measurement and threshold
+73.5, with automatic region selection from existing geometry. R340 tests one
+rectangle, shows explicit ownership failures and keeps edge abstentions/known
+colors. One maker plus four independently inspected interior changes produce
+181supported/19conflicting/8insufficient in conditional208, unchanged geometry.
+Active results only photo2/r340/autoregion/; earlier stopped untracked R340
+mean-based development is unused. See [R340](photo2/R340_REPORT.md). STOP for
+review after delivery; no automatic R341 or new classifier/period campaign.
+
 ## Current pigment and pattern instruction — R339
 
 The maker authorizes a substantially simpler body-brightness black test, global

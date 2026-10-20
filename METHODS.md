@@ -1,3 +1,16 @@
+# R340 — fixed material test; region ownership is the remaining limitation
+
+Use photo2/r340/autoregion/recognize.py: one normalized geometric rectangle,
+minimum complete3×3 maximum-RGB patch, fixed73.5. Four boundaries fitted only
+from24manual region annotations; no pigment or pattern fits. Preserve earlier
+disk trial; its inscribed region lost corner coverage. Single rectangle change.
+The pixel test supports the maker's material-darkness observation but ownership
+is not guaranteed by a geometry aperture: edge C1253 selects dark boundary and
+three black cases retain bright shoulders. Keep unchanged physical eligibility,
+protected labels and independent native audit for any new correction. Do not
+add a fallback classifier/voting/mean or per-case exception to conceal failure.
+R340179/21/8 ->181/19/8, same cohort; freeze precedes pattern. No R341 authorized.
+
 # R310: first discrepancy requires a photographic origin and an identity distinction
 
 Start from an observed bead, not a historical index. The R294 red reference maps

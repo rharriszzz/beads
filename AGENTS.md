@@ -1,3 +1,44 @@
+# R340 completed — fixed3×3 /73.5, automatic material regions; STOP
+
+Read photo2/R340_REPORT.md and R340_REPRODUCE.md. Active delivery ONLY under
+photo2/r340/autoregion/; review autoregion/review/index.html. Start df7c634c.
+Prior quick/material diagnostics exact; stopped pre-diagnostic untracked R340
+mean-based files remain preserved and UNUSED. No automatic R341.
+
+One geometry-only rectangle fitted on odd24 of48 manual material annotations;
+median boundaries relative to common neighboring link spacing. Fixed3×3 minimax
+of maximum RGB; threshold73.5 unchanged. No means/reflection tracking/voting.
+Preserved disk trial misses6 maker blacks/70no-patch cases; ONE refinement to
+rectangle, no sweep. Final48/48; additional65maker64/65; all113maker54/55black,
+58/58colored raw. Retrospective exposure, NOT fresh blind accuracy. Manual/auto
+patch inside old manual rectangle18/48; differences preserved/inspected.
+
+Actual ownership errors retained: maker K1740 score90 vs genuine-glass witness22;
+RF70TK2172 score101vs30; edge K2183 score139vs15. All remainBLACK. Edge Y C1253
+score58 is real raw shadow falsepositive vs glass162; unchanged eligibility
+abstains, labelY retained. No per-case classifier rule or witness substitution.
+Global1058 raw389black/669notblack; unchanged physical450/indexed eligibility:
+141black/309notblack/608unknown. Same113maker/same eligibility R33917TP18TN78abstain
+vs R34023TP32TN1FN57abstain; zeroFP. Seven old-abstained maker blacks recognized,
+but K1740 was correctly recognized by R339. No blanket superiority claim.
+
+Six distinct latest maker decisions preserved: E5-2272-1815 Y->B; NEW2156,
+MAT25K2142,K1663,NEW1247,NEW2235 B confirmations. Four native-supported interior
+edits: E5-2139-2470 Y->B46, NEW1036-2833 Y->B53, NEW1702-1860 R->B39,
+NEW903-2501 R->B49. Four automatic plus one maker actual color changes only.
+ALL1058XY/1040AB/2287links/H214,201/identity/exclusions/gaps unchanged.
+
+Strict full1040 and original1039:179/21/8 ->maker180/20/8 ->final181/19/8.
+Maker196 and automatic86 resolved;190 reduced but REC266-P054537 staysR/edge.
+Frozen710153/2/53; physical45073/0/135 is NOT removal of19full conflicts.
+ActualremainingIDs/27unknownpositions link to native pixels in review. A2704,
+208/13repeat remains conditional. No period/winding/count/renderer search.
+2272historical hashes/1058native score+neighbor spacing/2287equations/2496strict
+entries/113maker labels/nine literal crops checked. Fresh replay8products exact
+except runtime/UTC/dependenthashes; offline desktop/narrow/currentkeys/diagram/
+regiontoggle/search/208 review pass. Overlay/freeze preserve original records.
+STOP for review after scoped commit/push/remote verification; no next step.
+
 # R339 completed — simpler black evidence, six colors corrected; STOP
 
 Read photo2/R339_REPORT.md and R339_REPRODUCE.md. Startf6ed0475, branch

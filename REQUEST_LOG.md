@@ -9698,3 +9698,21 @@ three additional stable native red->black corrections, no geometry/identity edit
 Five native cases196/190/86/112/157, all29unknowns sourcekeyed; maker targets not
 re-questioned. Global1058comparison, independentnative/integer/heldout checks,
 fresh exactreplay, offline/narrowbrowser anddeliveryreceipt. No automaticR340.
+
+## R340 — fixed material darkness and automatic body-region selection
+
+After stopping broad R340 work, maker authorized a60-second diagnostic, then a
+ten-minute continuation. Both completed diagnostic deliveries are preserved.
+Current request continues from the48-body evidence: hold3×3/73.5 fixed, automate
+glass regions geometrically, test independent colored bodies and shadow failures,
+classify full inventory, protect maker labels, freeze conservative reversible
+changes before strict208 refresh, report/push and STOP.
+
+Delivered: median geometric rectangle after one preserved disk failure;48/48
+references and112/113maker labels raw. Explicit boundary-yellow falsepositive
+abstains; three black raw misses retained. All1058 scored,450eligible decisions.
+One maker plus4native interior edits yield181supported/19conflict/8insufficient,
+with original1040/1039cohorts unchanged. Current scientific files only under
+photo2/r340/autoregion; previous stopped untracked experiments remain unused.
+Native error comparisons/full inventory/remainingIDs offline, independent
+verification and fresh replay pass. No classifier complication or automatic R341.

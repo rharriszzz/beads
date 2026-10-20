@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "fresh_output": "/tmp/beads-r340-material-tn06c6i9",
+  "stages_seconds": {
+    "run": 3.1421977070276625,
+    "evaluate": 2.7054838620242663,
+    "freeze": 2.0892152939923108,
+    "pattern": 1.839885510969907
+  },
+  "exact_scientific_files": [
+    "rectangle-model.json",
+    "classification.json",
+    "evaluation.json",
+    "maker-graph.json.gz",
+    "graph.json.gz",
+    "freeze.json",
+    "pattern208.json",
+    "pattern-analysis.json"
+  ],
+  "excluded_fields": [
+    "seconds",
+    "utc",
+    "classification_sha256",
+    "freeze_sha256"
+  ],
+  "exclusion_reason": "Measured runtime/UTC and dependent exact-output hashes vary; fixed science compared in full. Delivery verifier checks current-output SHA256s separately.",
+  "total_seconds": 9.953320223023184
+}
