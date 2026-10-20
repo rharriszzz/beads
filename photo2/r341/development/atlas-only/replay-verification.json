@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "output": "/tmp/beads-r341-7tfrgruv",
+  "science_files": [
+    "geometry.json",
+    "selection.json",
+    "experiment.json",
+    "alternatives.json.gz",
+    "classification.json.gz",
+    "native-audit.json.gz",
+    "native-judgments.json",
+    "excluded-maker-controls.json",
+    "graph.json.gz",
+    "corrections.json",
+    "freeze.json",
+    "input-seal.json",
+    "pattern208.json",
+    "pattern-analysis.json",
+    "evaluation.json",
+    "review/panels.json",
+    "review/questions.json"
+  ],
+  "native_images": 46,
+  "offline_HTML_exact": true,
+  "stages_seconds": {
+    "experiment": 4.652815561974421,
+    "audit_panels": 2.209255457040854,
+    "native_audit": 1.5508810800383799,
+    "excluded_controls": 0.6456463710055687,
+    "freeze": 1.5905833819997497,
+    "pattern": 0.7835220379638486,
+    "evaluate": 0.6400836959946901,
+    "review": 0.7374989200034179,
+    "verify": 7.751850150991231
+  },
+  "total_seconds": 21.853529140993487,
+  "comparison_exclusions": "Measured seconds/UTC and dependent *_sha256 fields only. Fresh verify independently validates every current producer hash. Native judgments are frozen explicit inputs; replay is not a second independent human inspection."
+}

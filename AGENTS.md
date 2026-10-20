@@ -1,3 +1,53 @@
+# R341 completed — full black/red native audit,12 corrections; STOP
+
+Read photo2/R341_REPORT.md and R341_REPRODUCE.md. Review:
+photo2/r341/review/index.html. Start6484b9da. Current files ONLY photo2/r341/;
+prior R340 stopped untracked mean-based files preserved/unused. No R342.
+
+Fixed3×3 minimax maximumRGB/73.5 unchanged. Circle radius.25local spacing vs
+ellipse.30/.20 on local primitive(1,-1); both recover K1740/RF70TK2172/K2183.
+Ellipse no dev advantage, circle selected on48+4known failures; other64maker
+labels NOT used for R341selection,64/64raw correct. Historical exposure explicit.
+116maker colors accounted:113active+3excluded reference-only, no readmission.
+55/55makerblack raw; C0505makerR new rawfalseblack57 is abovebody boundary,
+blocked/preservedR. C1253Y44/C1264Y43/E51178R73 are boundary falsepositives,
+not threshold failures. No reflection/mean/voting/centroid/pattern classifier.
+
+ALL1058native contexts inspected:378black/356red/324yellow,23atlas sheets;
+all19disagreements expanded. Initial50ownership flags all expanded;6confirmed
+owned not-black,44remain. Atlas-only epoch preserved development/atlas-only.
+Native-audited389black/625notblack/44unknown vs autonomous143/307/608 with
+unchanged physical450/indexing guard. Native judgments are explicit visual
+inputs, NOT autonomous accuracy. Only weak PROV326-290-1410 black abstains;
+working identity/color retained. Red24/Y19 other ownership abstentions retained.
+
+12native-supported R->B ONLY: E9-2263-1691, NEW1251-1537, NEW2136-2445,
+NEW2199-2298, NEW2251-1608, NEW451-650, NEW910-2406, R332-R0196-0188,
+REC266-P054157/P054537/P076585/P106767. All were R340 raw suspects outside
+its auto eligibility; native audit supplies ownership evidence, not new detections.
+Allmaker colors incl E5-2272-1815B retained. ALL1058XY/1040AB/2287links/H214,201,
+IDs/roles/exclusions/approved unusual gaps unchanged; indexed337R313Y390B.
+
+Freeze precedes fixed208: full1040 and original1039 181/19/8 ->191/9/8.
+Resolved4,22,80,112,131,138,154,157,184,190. Remaining9,29,35,83,101,102,
+127,169,189; insufficient43,62,75,82,89,140,147,186. Frozen710155/0/53;
+physical45073/0/135 unchanged. Native-owned1002 195/2/11 is NOT full-cohort
+recovery. No contradictory maker pair; owned35/9R-Y still not pigment truth.
+A2704/208/13 remains conditional. No majority fill/count/winding/detector search.
+
+FOUR questions: Q169 R332-R0077-0077 body1 vs red C1739-2960 feature2;
+Q102 NEW1681-1498 source1 vs yellow C1677-1513 feature2; Q9 R332-R0147-0142
+red/yellow; Q35 REC266-P074746 red/yellow. Own-photograph numbers/keys and
+current native-coordinate adjacency; comparisons each own keys. NEW563-1633
+source near makerY E5-0562-1620 is diagnostic/unindexed, no identity/color change.
+
+Independent2367historical hashes/2116native scores+complete masks/1058localfits/
+2287equations/1040quotients/2080strict entries/eightheldout predictions/21literal
+crops pass. Fresh replay17science products/58nativeimages/offlineHTML exact;
+manual judgments explicit, timing/dependent hashes excluded. Actual offline/
+phone/key/regiontoggle/inventory/search browser checks pass. Logs/handoff updated.
+STOP after commit/push/remote verification; no automatic R342 or further edits.
+
 # R340 completed — fixed3×3 /73.5, automatic material regions; STOP
 
 Read photo2/R340_REPORT.md and R340_REPRODUCE.md. Active delivery ONLY under

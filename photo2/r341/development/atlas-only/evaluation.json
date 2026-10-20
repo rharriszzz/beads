@@ -1,0 +1,1071 @@
+{
+  "cohorts": {
+    "manual48": {
+      "raw": {
+        "n": 48,
+        "black": 24,
+        "colored": 24,
+        "TP": 24,
+        "TN": 23,
+        "FP": 1,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 0,
+        "black_recall_among_decided": 1.0
+      },
+      "automatic_decision": {
+        "n": 48,
+        "black": 24,
+        "colored": 24,
+        "TP": 9,
+        "TN": 14,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 15,
+        "abstain_colored": 10,
+        "black_recall_among_decided": 1.0
+      },
+      "audited_decision": {
+        "n": 48,
+        "black": 24,
+        "colored": 24,
+        "TP": 24,
+        "TN": 19,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 5,
+        "black_recall_among_decided": 1.0
+      }
+    },
+    "development52": {
+      "raw": {
+        "n": 52,
+        "black": 27,
+        "colored": 25,
+        "TP": 27,
+        "TN": 23,
+        "FP": 2,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 0,
+        "black_recall_among_decided": 1.0
+      },
+      "automatic_decision": {
+        "n": 52,
+        "black": 27,
+        "colored": 25,
+        "TP": 11,
+        "TN": 14,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 16,
+        "abstain_colored": 11,
+        "black_recall_among_decided": 1.0
+      },
+      "audited_decision": {
+        "n": 52,
+        "black": 27,
+        "colored": 25,
+        "TP": 27,
+        "TN": 19,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 6,
+        "black_recall_among_decided": 1.0
+      }
+    },
+    "heldout64": {
+      "raw": {
+        "n": 64,
+        "black": 30,
+        "colored": 34,
+        "TP": 30,
+        "TN": 34,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 0,
+        "black_recall_among_decided": 1.0
+      },
+      "automatic_decision": {
+        "n": 64,
+        "black": 30,
+        "colored": 34,
+        "TP": 14,
+        "TN": 18,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 16,
+        "abstain_colored": 16,
+        "black_recall_among_decided": 1.0
+      },
+      "audited_decision": {
+        "n": 64,
+        "black": 30,
+        "colored": 34,
+        "TP": 30,
+        "TN": 33,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 1,
+        "black_recall_among_decided": 1.0
+      }
+    },
+    "active_maker113": {
+      "raw": {
+        "n": 113,
+        "black": 55,
+        "colored": 58,
+        "TP": 55,
+        "TN": 57,
+        "FP": 1,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 0,
+        "black_recall_among_decided": 1.0
+      },
+      "automatic_decision": {
+        "n": 113,
+        "black": 55,
+        "colored": 58,
+        "TP": 24,
+        "TN": 32,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 31,
+        "abstain_colored": 26,
+        "black_recall_among_decided": 1.0
+      },
+      "audited_decision": {
+        "n": 113,
+        "black": 55,
+        "colored": 58,
+        "TP": 55,
+        "TN": 52,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 6,
+        "black_recall_among_decided": 1.0
+      }
+    },
+    "independent_label_controls121": {
+      "raw": {
+        "n": 121,
+        "black": 57,
+        "colored": 64,
+        "TP": 57,
+        "TN": 60,
+        "FP": 4,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 0,
+        "black_recall_among_decided": 1.0
+      },
+      "automatic_decision": {
+        "n": 121,
+        "black": 57,
+        "colored": 64,
+        "TP": 25,
+        "TN": 35,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 32,
+        "abstain_colored": 29,
+        "black_recall_among_decided": 1.0
+      },
+      "audited_decision": {
+        "n": 121,
+        "black": 57,
+        "colored": 64,
+        "TP": 57,
+        "TN": 55,
+        "FP": 0,
+        "FN": 0,
+        "abstain_black": 0,
+        "abstain_colored": 9,
+        "black_recall_among_decided": 1.0
+      }
+    }
+  },
+  "R340_R341_same_active_maker_comparison": {
+    "R340_raw": {
+      "n": 113,
+      "black": 55,
+      "colored": 58,
+      "TP": 54,
+      "TN": 58,
+      "FP": 0,
+      "FN": 1,
+      "abstain_black": 0,
+      "abstain_colored": 0,
+      "black_recall_among_decided": 0.9818181818181818
+    },
+    "R340_automatic": {
+      "n": 113,
+      "black": 55,
+      "colored": 58,
+      "TP": 23,
+      "TN": 32,
+      "FP": 0,
+      "FN": 1,
+      "abstain_black": 31,
+      "abstain_colored": 26,
+      "black_recall_among_decided": 0.9583333333333334
+    },
+    "R341_raw": {
+      "n": 113,
+      "black": 55,
+      "colored": 58,
+      "TP": 55,
+      "TN": 57,
+      "FP": 1,
+      "FN": 0,
+      "abstain_black": 0,
+      "abstain_colored": 0,
+      "black_recall_among_decided": 1.0
+    },
+    "R341_automatic": {
+      "n": 113,
+      "black": 55,
+      "colored": 58,
+      "TP": 24,
+      "TN": 32,
+      "FP": 0,
+      "FN": 0,
+      "abstain_black": 31,
+      "abstain_colored": 26,
+      "black_recall_among_decided": 1.0
+    },
+    "R341_native_audited": {
+      "n": 113,
+      "black": 55,
+      "colored": 58,
+      "TP": 55,
+      "TN": 52,
+      "FP": 0,
+      "FN": 0,
+      "abstain_black": 0,
+      "abstain_colored": 6,
+      "black_recall_among_decided": 1.0
+    }
+  },
+  "inventory_by_color": {
+    "red": {
+      "n": 356,
+      "automatic": {
+        "unknown": 222,
+        "not-black": 134
+      },
+      "native_audited": {
+        "not-black": 317,
+        "unknown": 27,
+        "black": 12
+      },
+      "native_uncertain_ids": [
+        "C-0257-1090",
+        "C-0451-0731",
+        "C-0505-1557",
+        "C-1004-2311",
+        "C-1189-2919",
+        "C-1478-2990",
+        "C-1796-1653",
+        "C-1868-2785",
+        "C-2099-0725",
+        "E5-1178-2887",
+        "NEW-1247-1469",
+        "NEW-1519-2976",
+        "NEW-1681-1498",
+        "NEW-1684-1980",
+        "NEW-1826-438",
+        "NEW-563-1633",
+        "R332-R-0037-0040",
+        "R332-R-0077-0077",
+        "R332-R-0111-0104",
+        "R332-R-0125-0118",
+        "R332-R-0142-0132",
+        "R332-R-0147-0142",
+        "R332-R-0167-0155",
+        "R332-R-0197-0183",
+        "REC266-P035619",
+        "REC266-P100583",
+        "REC266-P119618"
+      ]
+    },
+    "yellow": {
+      "n": 324,
+      "automatic": {
+        "unknown": 151,
+        "not-black": 173
+      },
+      "native_audited": {
+        "not-black": 302,
+        "unknown": 22
+      },
+      "native_uncertain_ids": [
+        "C-0234-1447",
+        "C-0326-0793",
+        "C-0384-0878",
+        "C-0666-1567",
+        "C-1001-2678",
+        "C-1119-2879",
+        "C-1151-2862",
+        "C-1241-2153",
+        "C-1253-2928",
+        "C-1264-2957",
+        "C-1364-2971",
+        "C-1659-0261",
+        "C-1837-2811",
+        "C-1977-2780",
+        "C-2145-1092",
+        "C-2221-1524",
+        "NEW-1169-2185",
+        "R332-Y-0128-0121",
+        "R332-Y-0145-0140",
+        "R332-Y-0197-0184",
+        "R332-Y-0197-0189",
+        "REC266-P074050"
+      ]
+    },
+    "black": {
+      "n": 378,
+      "automatic": {
+        "unknown": 235,
+        "black": 143
+      },
+      "native_audited": {
+        "black": 377,
+        "unknown": 1
+      },
+      "native_uncertain_ids": [
+        "PROV326-290-1410"
+      ]
+    }
+  },
+  "global_counts": {
+    "raw": {
+      "not-black": 661,
+      "black": 397
+    },
+    "automatic": {
+      "unknown": 608,
+      "not-black": 307,
+      "black": 143
+    },
+    "native_audited": {
+      "not-black": 619,
+      "unknown": 50,
+      "black": 389
+    }
+  },
+  "all116_maker": {
+    "active": 113,
+    "historically_excluded": 3,
+    "excluded_raw_agreements": 3,
+    "excluded_automatic_abstentions": 3,
+    "role_admissions": 0
+  },
+  "classification_errors": [
+    {
+      "id": "C-0505-1557",
+      "maker_color": "red",
+      "measurement": {
+        "score": 57,
+        "raw_decision": "black",
+        "center": [
+          510.73772101853774,
+          1554.4684154600227
+        ],
+        "axis": [
+          0.18350972736252022,
+          -0.9830178940199071
+        ],
+        "semiaxes": [
+          6.932426124108485,
+          6.932426124108485
+        ],
+        "region_pixels": [
+          [
+            509,
+            1548
+          ],
+          [
+            510,
+            1548
+          ],
+          [
+            511,
+            1548
+          ],
+          [
+            512,
+            1548
+          ],
+          [
+            513,
+            1548
+          ],
+          [
+            507,
+            1549
+          ],
+          [
+            508,
+            1549
+          ],
+          [
+            509,
+            1549
+          ],
+          [
+            510,
+            1549
+          ],
+          [
+            511,
+            1549
+          ],
+          [
+            512,
+            1549
+          ],
+          [
+            513,
+            1549
+          ],
+          [
+            514,
+            1549
+          ],
+          [
+            506,
+            1550
+          ],
+          [
+            507,
+            1550
+          ],
+          [
+            508,
+            1550
+          ],
+          [
+            509,
+            1550
+          ],
+          [
+            510,
+            1550
+          ],
+          [
+            511,
+            1550
+          ],
+          [
+            512,
+            1550
+          ],
+          [
+            513,
+            1550
+          ],
+          [
+            514,
+            1550
+          ],
+          [
+            515,
+            1550
+          ],
+          [
+            516,
+            1550
+          ],
+          [
+            505,
+            1551
+          ],
+          [
+            506,
+            1551
+          ],
+          [
+            507,
+            1551
+          ],
+          [
+            508,
+            1551
+          ],
+          [
+            509,
+            1551
+          ],
+          [
+            510,
+            1551
+          ],
+          [
+            511,
+            1551
+          ],
+          [
+            512,
+            1551
+          ],
+          [
+            513,
+            1551
+          ],
+          [
+            514,
+            1551
+          ],
+          [
+            515,
+            1551
+          ],
+          [
+            516,
+            1551
+          ],
+          [
+            505,
+            1552
+          ],
+          [
+            506,
+            1552
+          ],
+          [
+            507,
+            1552
+          ],
+          [
+            508,
+            1552
+          ],
+          [
+            509,
+            1552
+          ],
+          [
+            510,
+            1552
+          ],
+          [
+            511,
+            1552
+          ],
+          [
+            512,
+            1552
+          ],
+          [
+            513,
+            1552
+          ],
+          [
+            514,
+            1552
+          ],
+          [
+            515,
+            1552
+          ],
+          [
+            516,
+            1552
+          ],
+          [
+            517,
+            1552
+          ],
+          [
+            504,
+            1553
+          ],
+          [
+            505,
+            1553
+          ],
+          [
+            506,
+            1553
+          ],
+          [
+            507,
+            1553
+          ],
+          [
+            508,
+            1553
+          ],
+          [
+            509,
+            1553
+          ],
+          [
+            510,
+            1553
+          ],
+          [
+            511,
+            1553
+          ],
+          [
+            512,
+            1553
+          ],
+          [
+            513,
+            1553
+          ],
+          [
+            514,
+            1553
+          ],
+          [
+            515,
+            1553
+          ],
+          [
+            516,
+            1553
+          ],
+          [
+            517,
+            1553
+          ],
+          [
+            504,
+            1554
+          ],
+          [
+            505,
+            1554
+          ],
+          [
+            506,
+            1554
+          ],
+          [
+            507,
+            1554
+          ],
+          [
+            508,
+            1554
+          ],
+          [
+            509,
+            1554
+          ],
+          [
+            510,
+            1554
+          ],
+          [
+            511,
+            1554
+          ],
+          [
+            512,
+            1554
+          ],
+          [
+            513,
+            1554
+          ],
+          [
+            514,
+            1554
+          ],
+          [
+            515,
+            1554
+          ],
+          [
+            516,
+            1554
+          ],
+          [
+            517,
+            1554
+          ],
+          [
+            504,
+            1555
+          ],
+          [
+            505,
+            1555
+          ],
+          [
+            506,
+            1555
+          ],
+          [
+            507,
+            1555
+          ],
+          [
+            508,
+            1555
+          ],
+          [
+            509,
+            1555
+          ],
+          [
+            510,
+            1555
+          ],
+          [
+            511,
+            1555
+          ],
+          [
+            512,
+            1555
+          ],
+          [
+            513,
+            1555
+          ],
+          [
+            514,
+            1555
+          ],
+          [
+            515,
+            1555
+          ],
+          [
+            516,
+            1555
+          ],
+          [
+            517,
+            1555
+          ],
+          [
+            504,
+            1556
+          ],
+          [
+            505,
+            1556
+          ],
+          [
+            506,
+            1556
+          ],
+          [
+            507,
+            1556
+          ],
+          [
+            508,
+            1556
+          ],
+          [
+            509,
+            1556
+          ],
+          [
+            510,
+            1556
+          ],
+          [
+            511,
+            1556
+          ],
+          [
+            512,
+            1556
+          ],
+          [
+            513,
+            1556
+          ],
+          [
+            514,
+            1556
+          ],
+          [
+            515,
+            1556
+          ],
+          [
+            516,
+            1556
+          ],
+          [
+            517,
+            1556
+          ],
+          [
+            505,
+            1557
+          ],
+          [
+            506,
+            1557
+          ],
+          [
+            507,
+            1557
+          ],
+          [
+            508,
+            1557
+          ],
+          [
+            509,
+            1557
+          ],
+          [
+            510,
+            1557
+          ],
+          [
+            511,
+            1557
+          ],
+          [
+            512,
+            1557
+          ],
+          [
+            513,
+            1557
+          ],
+          [
+            514,
+            1557
+          ],
+          [
+            515,
+            1557
+          ],
+          [
+            516,
+            1557
+          ],
+          [
+            517,
+            1557
+          ],
+          [
+            505,
+            1558
+          ],
+          [
+            506,
+            1558
+          ],
+          [
+            507,
+            1558
+          ],
+          [
+            508,
+            1558
+          ],
+          [
+            509,
+            1558
+          ],
+          [
+            510,
+            1558
+          ],
+          [
+            511,
+            1558
+          ],
+          [
+            512,
+            1558
+          ],
+          [
+            513,
+            1558
+          ],
+          [
+            514,
+            1558
+          ],
+          [
+            515,
+            1558
+          ],
+          [
+            516,
+            1558
+          ],
+          [
+            506,
+            1559
+          ],
+          [
+            507,
+            1559
+          ],
+          [
+            508,
+            1559
+          ],
+          [
+            509,
+            1559
+          ],
+          [
+            510,
+            1559
+          ],
+          [
+            511,
+            1559
+          ],
+          [
+            512,
+            1559
+          ],
+          [
+            513,
+            1559
+          ],
+          [
+            514,
+            1559
+          ],
+          [
+            515,
+            1559
+          ],
+          [
+            507,
+            1560
+          ],
+          [
+            508,
+            1560
+          ],
+          [
+            509,
+            1560
+          ],
+          [
+            510,
+            1560
+          ],
+          [
+            511,
+            1560
+          ],
+          [
+            512,
+            1560
+          ],
+          [
+            513,
+            1560
+          ],
+          [
+            514,
+            1560
+          ],
+          [
+            509,
+            1561
+          ],
+          [
+            510,
+            1561
+          ],
+          [
+            511,
+            1561
+          ],
+          [
+            512,
+            1561
+          ],
+          [
+            513,
+            1561
+          ]
+        ],
+        "patch_box": [
+          511,
+          1548,
+          514,
+          1551
+        ],
+        "patch_RGB": [
+          [
+            [
+              56,
+              0,
+              11
+            ],
+            [
+              55,
+              0,
+              13
+            ],
+            [
+              56,
+              2,
+              16
+            ]
+          ],
+          [
+            [
+              57,
+              0,
+              9
+            ],
+            [
+              52,
+              0,
+              11
+            ],
+            [
+              52,
+              0,
+              13
+            ]
+          ],
+          [
+            [
+              57,
+              0,
+              7
+            ],
+            [
+              55,
+              2,
+              12
+            ],
+            [
+              51,
+              1,
+              12
+            ]
+          ]
+        ],
+        "candidate_patches": 101
+      },
+      "automatic": "unknown",
+      "audited": "unknown",
+      "reason": "Maker red. New circle selects darkness above the actual red body; raw false black. Preserve red."
+    }
+  ],
+  "limits": "64 maker holdout labels not used to choose R341 geometry; these references were historically exposed in R340. Ownership judgments are explicit human-style native inspection, not independently measured ground truth for all1058. Raw scores, automatic eligibility, native audited decisions and retained labels are separate."
+}

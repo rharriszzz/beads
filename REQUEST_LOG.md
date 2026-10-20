@@ -9716,3 +9716,20 @@ with original1040/1039cohorts unchanged. Current scientific files only under
 photo2/r340/autoregion; previous stopped untracked experiments remain unused.
 Native error comparisons/full inventory/remainingIDs offline, independent
 verification and fresh replay pass. No classifier complication or automatic R341.
+
+## R341 — modest glass-region geometry and audit every black/red record
+
+User authorizes comparison of a small number of simple neighbor-based regions,
+fixed3×3/73.5, then global native audit of every black/red record plus yellow
+controls. Inspect all disagreements/ambiguities, preserve maker labels/identities/
+XY/AB, freeze only strong reversible pigment changes, rerun strict208 onmatched
+cohorts, show useful own-key native questions, reproduce/check/push and STOP.
+
+Delivered: one neighbor-clipped circle selected over equally scoring oriented
+ellipse; all3R340black misses recovered,64/64heldout maker labels raw correct.
+All734black/red+324yellow contexts inspected,19disagreements expanded;50initial
+ownership flags expanded,6cleared,44retained. Twelve native R->B corrections,
+no identity/geometry/link changes; full181/19/8 ->191/9/8. Four useful body/RY
+questions, all17unknown pattern positions source-linked. Maker116 accounted,
+3excluded stay excluded. Independent native/geometry/pattern/prediction checks,
+fresh replay, offline/mobile review and scoped delivery. No automaticR342.

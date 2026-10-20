@@ -1,0 +1,1 @@
+Initial atlas-only ownership epoch:50 uncertain samples; later expanded native contexts establish six additional owned not-black patches. No pigment changes differ between epochs; full191/9/8 is unchanged. This preserves the initial annotation source, frozen graph/producer hashes and scientific results. Current delivery is the parent r341 directory.

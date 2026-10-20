@@ -1,3 +1,20 @@
+# R341 — geometry broadens the safe search; native ownership remains explicit
+
+Keep the fixed3×3 maximum-channel minimax/73.5. Compare a neighbor-clipped
+circle and primitive-neighbor-oriented ellipse on predeclared development data;
+select circle when ellipse gives no gain. Radius.25localspacing, unchanged R340
+geometric midpoint offset; inset neighboring support cells. No reflection or
+intensity-based recentering, means, segmentation, aperture voting or motif input.
+
+All1058native contexts were inspected. Distinguish raw397black/661notblack,
+autonomous143/307/608, and native-audited389/625/44. Six of50initial ownership
+flags clear on expanded context; preserve both epochs. Twelve R->B proposals
+are adopted only after native material ownership, before pattern computation.
+3oldblack misses resolve, but C0505/C1253/C1264/E51178 demonstrate boundary
+falsepositives. Dark patches do not establish beads. R/Y and association remain
+separate from not-black. Full191/9/8 does not establish exact physical208;
+keep authoritative colors and genuine residual contradictions. No R342 yet.
+
 # R340 — fixed material test; region ownership is the remaining limitation
 
 Use photo2/r340/autoregion/recognize.py: one normalized geometric rectangle,

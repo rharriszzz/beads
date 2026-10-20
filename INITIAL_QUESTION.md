@@ -7,6 +7,17 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pigment and pattern instruction — R341
+
+The maker authorizes a modest geometry improvement with fixed3×3/73.5, complete
+native audit of all black/red observations and yellow controls, then frozen strict
+208 analysis. R341 inspects all1058records, applies12native-supported red-to-black
+changes, preserves all maker decisions and all geometry/identities, and obtains
+191supported/9conflicting/8insufficient on the identical1040indexed cohort.
+Four targeted body/RY questions are in photo2/r341/review/index.html. Fiftyinitial
+ownership flags were expanded; six clear,44remain. See [R341](photo2/R341_REPORT.md).
+STOP for review after delivery; no automatic R342, winding or broader detector work.
+
 ## Current pigment and pattern instruction — R340
 
 The maker fixes3×3 darkest contiguous genuine-material measurement and threshold
