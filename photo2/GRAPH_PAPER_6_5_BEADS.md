@@ -103,7 +103,7 @@ steps in the unwrapped lattice despite their unusual canonical positions.
 The standard presentation extends **every horizontal row by exactly seven beads
 to the left and seven to the right**. Each complete displayed row therefore has
 20 or21 symbols. Keep the basic six/seven-bead strip visually identifiable with
-fine dotted lateral seams. These seams differ from the START/END repeat cuts.
+thin solid side lines. These lines differ from the START/END repeat cuts.
 
 Generate these extensions by actual horizontal index steps, not by pasting one
 neighboring strip at either side. For a row y, let:
@@ -120,7 +120,7 @@ for j in range(-7, n+7):                # seven left, n basic, seven right
 ```
 
 If the first basic index is K, the row reads `K-7..K-1`, `K..K+n-1`,
-`K+n..K+n+6`. Every move right is +1, including moves across either dotted seam.
+`K+n..K+n+6`. Every move right is +1, including moves across either side line.
 For any extended site, recover its canonical representative `(cx,cy)` using the
 formula above. Its exact seam multiplier is:
 
@@ -155,6 +155,36 @@ fundamental interval even when their k falls inside that interval. They are
 never additional observations. A diagnostic toggle may hide all side extensions,
 but the normal view and printable illustration include them on every row.
 
+## The two visible side lines
+
+Always show a **thin solid line on both sides** of the basic strip. They separate
+its six or seven beads from the seven extra display beads on each side. Keep them
+visible when graph-paper grid lines or diagonal guides are hidden, and when side
+extensions are hidden. Draw the lines above the other graphics so they remain
+clear at ordinary viewing and printing sizes.
+
+For each row y, determine the first and last basic bead centers `first_x` and
+`last_x`. Put the side lines halfway between those centers and their immediate
+horizontal extension neighbors:
+
+```text
+left_side(y)  = first_x - 1
+right_side(y) = last_x + 1
+```
+
+For each side, draw a vertical segment from `y-1/2` to `y+1/2`, then join it
+horizontally to the next row's segment. The small half-bead jog follows the row
+staggering. It keeps each line in the gap rather than through a bead or one of
+its display copies. With `x0=-1`, the left/right values are −1/11 on even rows
+and −2/12 on odd rows; exactly six/seven centers lie between them. This is a
+visual outline of the same basic-center set `x0<=x<x0+13`, not a new indexing
+or seam rule. The algebraic seam remains `(13,-1)`.
+
+The selected pattern has four visible boundaries: these left/right side lines,
+a START cut just before its first bead, and an END cut just after its last bead.
+The side lines continue into the surrounding rows so the strip remains visible
+there too. The two interval cuts may be horizontal or stepped as specified below.
+
 ## Repeat membership and its boundaries
 
 Let a chosen block have positive integer length L and start at string index S:
@@ -184,6 +214,13 @@ Indices less than T lie below this stepped profile; indices at least T lie above
 it. Apply the same rule at T=S and T=S+L. Shade only their intervening central
 region as the selected block. Lateral copies remain outside that region even
 when their k is in the chosen interval.
+
+For example, choose `S=5`, `L=17`, `x0=-1`. The START cut steps at x=9 from
+height y=+1/2 on its left to y=−1/2 on its right, placing k5 inside and k4 outside.
+The END cut before k22 steps at x=4 from y=3+1/2 on its left to y=3−1/2 on its
+right, placing k21 inside and k22 outside. Thus a stepped top and bottom can
+enclose exactly indices5–21 even though neither cut is a full horizontal row.
+Do not replace these cuts by a rectangular number of rows.
 
 For a short block whose cuts share a row, the resulting region can be a partial
 row. Derive membership from the actual index interval, never from an assumed
@@ -270,8 +307,8 @@ strict colors, two conflicting positions and seven insufficient positions.
 ![Illustrated 208-bead example: strict left, provisional right; seven side beads on every row](r344/graph-paper.png)
 
 White denotes the selected central occurrence; gray denotes side or vertical
-continuation. Thin teal/purple lines mark START/END; dotted vertical lines mark
-the lateral seams. Both panels use the same sequence and differ only at the
+continuation. Thin teal/purple lines mark START/END; thin solid charcoal side lines enclose
+the basic six/seven-bead rows. Both panels use the same sequence and differ only at the
 nine explicitly unresolved entries. The [two-page A4 PDF](r344/graph-paper.pdf)
 places one panel per page; [the PNG](r344/graph-paper.png) is4962×3507pixels at
 300dpi. Clean and numbered vector/bitmap versions are provided.

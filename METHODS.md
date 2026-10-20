@@ -1,3 +1,12 @@
+# R344 boundary outlines
+
+Draw thin solid side lines at first_x-1 and last_x+1 for each basic row, joining
+at y+1/2 to follow staggering without intersecting ellipses. Clip the selected
+interval's white background to that side polygon. Keep START/END as separate
+colored, index-derived horizontal/stepped profiles; S5/L17 demonstrates two steps.
+Render side/cut strokes over the beads, non-scaling in SVG, and in all printouts.
+No new pigment/index/association work. See photo2/GRAPH_PAPER_6_5_BEADS.md.
+
 # R344 exact seven-per-side presentation
 
 Generate every displayed row by basic slots j=0..n-1 (n=6/7), extended to j=-7..n+6.

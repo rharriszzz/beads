@@ -1,3 +1,18 @@
+# R344 boundary visibility refinement; STOP
+
+The current graph paper now has thin SOLID charcoal lines on both sides of the
+basic6/7 strip, plus teal START/purple END cuts. Side lines follow row staggering
+through bead gaps (midpoints first_x-1 / last_x+1, joins at half rows), separating
+all seven display extensions on each side. START/END remain index-derived and
+can step for partial rows; current aligned208 has horizontal cuts. Selected-white
+region clips to the side outlines. Non-scaling SVG strokes stay visible at fit /
+zoom; both print variants updated. General lasting specification updated with
+side-line equations and stepped S5/L17 example. No colors/geometry/scientific
+results changed; 13sealed products remain exact,199/2/7 and1038/1041unchanged.
+Current source math/browser/fresh-replay receipts include boundary checks.
+Latest baseline522504bc; no recommended scientific next task begun. Stop after
+scoped commit/push/remote verification; no automatic R345.
+
 # R344 exact seven-bead side extensions completed; STOP
 
 Current offline review: photo2/r344/review/index.html. Read photo2/R344_REPORT.md,

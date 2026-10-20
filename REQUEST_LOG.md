@@ -9876,3 +9876,15 @@ standalonegeneral method. Prior40presentation files archived,25older retained;
 fresh14science+24exactartifact replay and actualoffline/narrow/browser ±2seam /
 20/21everyrow controls pass. Recommended independent targeted reobservation of3
 83/189mismatchbodies remains FUTURE, not begun. No automatic R345.
+
+## R344 boundary refinement — visible sides and stepped start/stop cuts
+
+Maker asks for thin lines on BOTH sides delimiting the6/7basic beads, plus top /
+bottom START/STOP cuts which may step when a block starts or ends within a row.
+Also explicitly requests the standalone format Markdown be updated. Added solid
+charcoal side profiles at half-pitch bead gaps with half-row joins, retained
+index-derived teal/purple interval cuts and all7side extensions. Interactive
+strokes remain thin/visible while zooming; printouts and general specification
+updated, including S5/L17 stepped example. Scientific inputs, maker corrections,
+colors/indexing/links and199/2/7statistics unchanged. Bounded math/browser/replay
+checks retained. No next scientific investigation begun; STOP after scoped push.

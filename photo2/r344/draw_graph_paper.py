@@ -15,15 +15,18 @@ def draw_axis(ax,paper,kind,indices=False):
     points=paper['points'];lo,hi=paper['rows'];left,right=paper['x0']-1,paper['x0']+13
     xmin=min(r['x'] for r in points)-1;xmax=max(r['x'] for r in points)+1
     ax.add_patch(Rectangle((xmin*X_SCALE,(lo-.65)*Y_SCALE),(xmax-xmin)*X_SCALE,(hi-lo+1.3)*Y_SCALE,facecolor='#f2f4f6',edgecolor='none',zorder=0))
-    interval=np.array([[paper['x0']-.5 if x==left else paper['x0']+12.5 if x==right else x,y] for x,y in paper['start_boundary']+list(reversed(paper['end_boundary']))])*[X_SCALE,Y_SCALE]
-    ax.add_patch(Polygon(interval,facecolor='white',edgecolor='none',zorder=.5))
+    interval=np.array(paper['start_boundary']+list(reversed(paper['end_boundary'])))*[X_SCALE,Y_SCALE]
+    selected=Polygon(interval,facecolor='white',edgecolor='none',zorder=.5)
+    strip=Polygon(np.array(paper['side_boundaries']['left']+list(reversed(paper['side_boundaries']['right'])))*[X_SCALE,Y_SCALE],closed=True,transform=ax.transData)
+    selected.set_clip_path(strip);ax.add_patch(selected)
     for y in np.arange(lo-.5,hi+1,.5):ax.axhline(y*Y_SCALE,color='#e4e8ec',lw=.35,zorder=1)
     for x in range(xmin,xmax+1):ax.axvline(x*X_SCALE,color='#e4e8ec',lw=.35,zorder=1)
-    for x in [paper['x0']-.5,paper['x0']+12.5]:ax.axvline(x*X_SCALE,color='#929ca5',lw=.5,ls=(0,(3,3)),zorder=2)
     for r in points:
         color=r[kind+'_color'];ax.add_patch(Ellipse((r['x']*X_SCALE,r['y']*Y_SCALE),2*RX,2*RY,facecolor=PALETTE[color],edgecolor='#246aab' if kind=='provisional' and r['tentative'] else '#67727b',linewidth=.8 if kind=='provisional' and r['tentative'] else .35,linestyle='--' if kind=='provisional' and r['tentative'] else '-',zorder=3))
         if color=='?':ax.text(r['x']*X_SCALE,r['y']*Y_SCALE,'?',fontsize=6,ha='center',va='center',zorder=4)
         elif indices:ax.text(r['x']*X_SCALE,r['y']*Y_SCALE,str(r['position']),fontsize=3.4,color='white' if color in ['red','black'] else '#151515',ha='center',va='center',zorder=4)
+    for side in paper['side_boundaries'].values():
+        xy=np.array(side)*[X_SCALE,Y_SCALE];ax.plot(xy[:,0],xy[:,1],color='#36454f',lw=.8,zorder=5)
     for name,color,label in [('start_boundary','#006879',f"START · before {paper['start']}"),('end_boundary','#873c80',f"END · after {paper['start']+paper['length']-1}")]:
         xy=np.array(paper[name])*[X_SCALE,Y_SCALE];ax.plot(xy[:,0],xy[:,1],color=color,lw=.8,zorder=5)
         ax.text((xmax+.4)*X_SCALE,xy[-1,1],label,fontsize=5,color=color,ha='left',va='center',zorder=6)
@@ -52,7 +55,7 @@ def main():
             for kind in ['strict','provisional']:
                 page,ax=plt.subplots(figsize=(8.27,11.69));draw_axis(ax,paper,kind,indices)
                 page.suptitle(f"{kind.title()} · {paper['length']} positions · 7 extra beads on EACH side",fontsize=10,y=.985)
-                page.text(.5,.954,'Dotted seams mark the basic strip; colored cuts mark the chosen repeat.',ha='center',fontsize=7)
+                page.text(.5,.954,'Thin solid sides enclose 6/7 beads per row; colored cuts mark START and END.',ha='center',fontsize=7)
                 page.text(.5,.025,'Gray surroundings are display continuation, not additional observations.',ha='center',fontsize=7)
                 page.text(.5,.01,'Indices, when shown, are pattern positions. Identical positions always retain identical colors.',ha='center',fontsize=6.5)
                 page.subplots_adjust(top=.93,bottom=.05,left=.015,right=.99);pdf.savefig(page);plt.close(page)

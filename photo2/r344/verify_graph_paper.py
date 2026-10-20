@@ -74,6 +74,19 @@ def main():
             assert all(r['side']=='left' for r in left) and all(r['side']=='right' for r in right)
             checks+=len(row)-1
         return checks
+    def check_sides(trial):
+        # Midpoints between adjacent centers leave RX=18px inside a24px
+        # half-pitch. Horizontal joins at half rows leave RY=14px inside16px.
+        assert RX < X_SCALE and RY < Y_SCALE/2
+        lo,hi=trial['rows'];sides=trial['side_boundaries']
+        assert all(len(path)==2*(hi-lo+1) for path in sides.values())
+        for i,y in enumerate(range(lo,hi+1)):
+            row=sorted(r['x'] for r in trial['points'] if r['y']==y and r['side']=='basic')
+            for name,x in [('left',row[0]-1),('right',row[-1]+1)]:
+                assert sides[name][2*i:2*i+2]==[[x,y-.5],[x,y+.5]]
+            assert sum(row[0]-1<r['x']<row[-1]+1 for r in trial['points'] if r['y']==y)==len(row)
+        return hi-lo+1
+    side_row_checks=check_sides(paper)
     horizontal_checks+=check_rows(paper['points'],paper['x0'])
     for point in paper['points']:
         x,y,k=point['x'],point['y'],point['k'];a,b=point['a'],point['b']
@@ -103,6 +116,7 @@ def main():
         for origin in [-23,0,5,111]:
             for x0 in [-13,-1,0,7]:
                 trial=layout(length,origin,x0);rows=trial['points'];inside=[]
+                side_row_checks+=check_sides(trial)
                 horizontal_checks+=check_rows(rows,x0)
                 for r in rows:
                     cx,cy=independent_xy(r['k'],x0);s=(r['x']-cx)//13
@@ -141,6 +155,7 @@ def main():
                                                direction_equations=direction_checks,seam_transitions=seam_checks,general_cases=len(cases),boundary_ellipse_clearance_tests=cut_checks,
                                                side_beads_each_row=7,current_row_symbol_counts=[20,21]*24,horizontal_index_steps_checked=horizontal_checks,
                                                unique_unwrapped_display_indices=len(identities),same_index_display_aliases=point_checks-len(identities),sequence_only_17_color_example=True,
+                                               solid_side_boundaries=True,side_boundary_row_checks=side_row_checks,side_lines_clear_of_ellipses=True,
                                                second_seam_examples=[y1[0],y1[-1]],
                                                general_case_results=cases,strict_unknown_positions=[e['residue'] for e in pattern['entries'] if e['strict_color']=='?'],
                                                equations=dict(index='2k=x+13y',kernel_AB=[6,-7],kernel_XY=[13,-1],period208_AB=[16,16],period208_XY=[0,32],conditional_H_XY=[13,415]),

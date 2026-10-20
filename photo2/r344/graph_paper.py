@@ -24,6 +24,16 @@ def boundary(k, x0=X0):
     return [[left,y+.5],[x-1,y+.5],[x-1,y-.5],[right,y-.5]]
 
 
+def strip_sides(lower, upper, x0=X0):
+    """Lines halfway between each row's basic beads and its side copies."""
+    sides={'left':[], 'right':[]}
+    for y in range(lower,upper+1):
+        xs=list(range(x0+(y-x0)%2,x0+13,2))
+        for name,x in [('left',xs[0]-1),('right',xs[-1]+1)]:
+            sides[name].extend([[x,y-.5],[x,y+.5]])
+    return sides
+
+
 def layout(length, start=0, x0=X0, extension_rows=8, minimum_rows=40, side_beads=7):
     if length <= 0 or int(length) != length:
         raise ValueError('A repeat must contain a positive integer number of positions')
@@ -48,6 +58,7 @@ def layout(length, start=0, x0=X0, extension_rows=8, minimum_rows=40, side_beads
                                in_chosen_interval=side=='basic' and start<=k<start+length))
     return dict(length=length,start=start,x0=x0,strip=[x0,x0+13],rows=[lower,upper],
                 start_boundary=boundary(start,x0),end_boundary=boundary(start+length,x0),
+                side_boundaries=strip_sides(lower,upper,x0),
                 side_beads=side_beads,points=points,display_units=dict(x_scale=X_SCALE,y_scale=Y_SCALE,ellipse_rx=RX,ellipse_ry=RY),
                 membership='Exactly one canonical representative per k in [start,start+length). Lateral copies are never additional members or observations.',
                 axes='Physical display y increases upward; screen ordinate is inverted at rendering.')

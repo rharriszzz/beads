@@ -33,3 +33,11 @@ The report is regenerated from the numerical tables by `report.py`. Exact native
 The standalone method is [GRAPH_PAPER_6_5_BEADS.md](GRAPH_PAPER_6_5_BEADS.md). `graph_paper.py` implements a general thirteen-x-unit strip, index-derived stepped cuts and a sequence-only `pattern_layout` API. Every row receives exactly seven horizontal indices on each side; all unwrapped x/y positions are normalized through as many `(13,-1)` seams as necessary. There are984 symbols per view (312 basic+672 side),20/21 per row, and exactly208 unique chosen members. `verify_graph_paper.py` independently enumerates representatives, derives 1/6/7 directions and zero-index seam equations, checks every display-copy color, and tests192 length/origin/strip cases with77,408 ellipse/boundary clearance checks and174,922 horizontal index steps. A17-color toy sequence tests the generic API without photographic inputs. It also independently recounts the four none/P29/P127/both correction states on identical R343 IDs. No general renderer assumes a rectangular208-bead domain for other lengths.
 
 `presentation-input-seal.json` fixes the thirteen original statistical products. The two historical presentation manifests preserve25+40=65 files verbatim, including old reports, reviews, receipts and modified sources. Graph-paper copies are never additional observations. Fonts, vector IDs and PDF timestamps are deterministic for exact replay.
+
+The boundary refinement uses `strip_sides` to put solid side outlines halfway
+between the basic row and its horizontal copies, with half-row joins that avoid
+ellipses. The independent checker tests side membership and clearance for the
+current display and all192 general cases. The browser checks both sides and
+START/END cuts are solid, remain thin while zooming, and are present with side
+extensions either shown or hidden. Interval cuts retain their existing stepped
+index-derived construction; the general Markdown includes S=5,L=17 as an example.
