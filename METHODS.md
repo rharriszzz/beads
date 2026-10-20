@@ -1,3 +1,29 @@
+# R343 — inspect glass ownership before interpreting joint HSV
+
+Keep black's fixed3×3 maximum-RGB minimax and73.5 unchanged. For a bounded
+colored-material study, annotate conservative visible-glass cores, require2pixel
+clearance, export individual H/S/V source pixels and select a3×3 maximizing
+clearance. No darkness extremum for hue sampling. This is explicit annotation,
+not a claimed autonomous segmenter. Old14/23 versus new25/25 core containment
+is not an independent accuracy score. Unsafe/unannotated bodies abstain.
+
+Use true H–V scatter with S fill and evidence-type outlines; H–S/V complement.
+2377 pixels/25 cores:6 explicit maker materials,11 illustration approvals,8
+native/software labels. Exclude5 position29 bodies and127 probe from reference
+comparison. Shadow-yellow shifts depend on more than V; no imposed lighting law
+or automatic hue separator. Preserve an initial failed old-label import and
+superseded full-core epoch. Keep sourceRGB/native coordinates available.
+
+Refine only NEW1519 authority: general R336 approval retained, protected red
+unchanged, individual pigment confirmation false; measured calibration influence
+is not a pigment correction. Apply Q101 maker-yellow. Admit C62 only through a
+separate original-body/alias/native-neighbor witness, never pigment/site plausibility
+alone. Preserve old observations/geometry/links and all phantom vetoes.
+Strict195/5/8 ->196/4/8 common1040 ->197/4/7 expanded1041. Independent native,
+geometry, provenance, consensus and heldout checks; fresh replay/offline controls.
+See [R343](photo2/R343_REPORT.md), [reproduction](photo2/R343_REPRODUCE.md),
+[offline review](photo2/r343/review/index.html). Stop; no automatic R344.
+
 # R342 — fixed pixels for blackness; hue only for red/yellow
 
 Use one fixed9×9 core at support+(6,0), darkest contiguous3×3 maximum RGB,

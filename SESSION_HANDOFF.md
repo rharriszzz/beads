@@ -1,3 +1,62 @@
+# R343 completed — actual glass HSV, scoped authority, 197 supported; STOP
+
+Read photo2/R343_REPORT.md and R343_REPRODUCE.md. Review:
+photo2/r343/review/index.html. Base R342 4536b403. Current work ONLY r343;
+stopped untracked R340 experiments untouched. No automatic R344.
+
+Q101 REC266-P100583 feature1 maker YELLOW replaces red. C62 R332-Y-0104-0097
+feature1 maker YELLOW MATERIAL, not maker bead-identity/lattice confirmation.
+Separate native body/neighbor investigation admits that existing provisional cue
+at original XY and AB104,97: 3 primitive native-supported links, 2 triangles,
+2.78px target-excluded error, 20.60px next-site margin, unique empty site.
+Original REC266-P123596 cache source is on same glass body, not a second bead.
+Maker-only identity helper remains unchanged; independent R343 witness recorded
+separately. Existing phantom/duplicate exclusions and maker gaps preserved.
+1059 active records/1041 indexed/2290 links/one component/H214,201; indexed
+332R317Y392B. All old1058XY/1040AB/2287links exact; only Q101 color changed.
+122 ledger entries retain original source authority, not all explicit pigments.
+
+2377 individual source pixels from25 inspected glass cores, 2px inset; true H–V
+scatter with S fill, H–S with V fill, exact pixel-to-native interactive inspection.
+6 explicit maker materials (5Y/1R);11 illustration approvals;8 native/software.
+19 reference bodies (8R/11Y) exclude all5 position29 sources plus127 probe.
+Shadow Y can move toward orange H~5–26deg; no universal H(V) law/separator.
+Five coarse HSV neighborhoods overlap; no new automatic R/Y classifier or colors.
+Q101 old3x3 lies on boundary, 0/9 conservative-core pixels; whole old9x9 hue
+also unsafe. C62 old patch already genuine shadow-Y. New colored3x3 maximizes
+clearance in inspected core; 25/25 containment partly by construction, NOT
+independent automatic accuracy. Four unsafe sources deferred. Black fixed3x3
+minimax maximumRGB/73.5 implementation byte-unchanged; no new black edits.
+
+ONE authority edit: NEW-1519-2976 at29 stays protected RED. R336 problem-01
+feature6 general labels/adjacency approval is retained, explicit individual red
+confirmation false. R342 prohibited useful pigment review and inflated its hue
+reference: remove only that source from old calibration, unchanged old pixels,
+red maximum20.35->0.43deg. No proven automatic correction was suppressed.
+All5 occurrences retain unique neighbor cells/exact(16,16) translations; its own
+glass yellow-like versus outside references, pending individual judgment.
+No broad historical authority reclassification and no majority recoloring.
+
+Strict unchanged1040:195/5/8 ->196/4/8 from Q101; expanded1041 ->197/4/7 via
+C62 geographic support. Metadata-only195/5/8, frozen710155/0/53 unchanged.
+Conflicts29/83/127/189; insufficient43/75/82/89/140/147/186, all black support
+shortages (89 has3occ but2geoblocks). CSV keeps11unknown. Same1039 targets:
+flat geographic97.50->97.98%, wholeocc99.33% unchanged; hier98.27->98.46%,
+wholeocc99.52% unchanged. C62 heldocc Y.648, targeted/not fresh blind accuracy.
+A7a+6b/N2704/208/13 repeats CONDITIONAL, shortest physical repeat unrecovered.
+
+TWO questions: NEW-1519-2976 position29 and R332-R-0125-0118 position127.
+Each target1 with own-photo numbered companion/key/current adjacency, individual
+maker comparisons; all5 pos29 native contexts. No repeat questions on Q101/C62.
+Independent2599 historical hashes/2377RGB-HSV/25cores/98patches/2290equations/
+1041unique sites+indices/3new links/5pos29/1456strict entries/8heldout/11crops
+pass. Fresh20science products/26images/vector/CSV/HTML-JS-CSS exact; offline,
+pixel clicks, filters and narrow browser checked. Native annotations are explicit
+scientific inputs, not second independent human judgment. Failed legacy-label
+import and initial full-core epoch preserved in r343/development; current controls
+use latest excluded maker colors. Stop after scoped push/remote verification.
+No automatic next round, broader detector/winding/rendering or session change.
+
 # R342 completed — fixed pixels, separate hue, four maker colors; STOP
 
 Read photo2/R342_REPORT.md and R342_REPRODUCE.md. Review:

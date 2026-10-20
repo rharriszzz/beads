@@ -1,0 +1,497 @@
+{
+  "reference_beads": 19,
+  "reference_beads_by_color": {
+    "red": 8,
+    "yellow": 11
+  },
+  "probe_ids": [
+    "C-1001-2678",
+    "C-1226-1539",
+    "C-1250-2138",
+    "E5-1792-1727",
+    "NEW-1519-2976",
+    "R332-R-0125-0118"
+  ],
+  "explicit_individual_beads_by_color": {
+    "yellow": 5,
+    "red": 1
+  },
+  "source_pixels": 2377,
+  "brightness_strata": [
+    {
+      "V_interval": [
+        0.2,
+        0.4
+      ],
+      "colors": {
+        "red": {
+          "pixels": 6,
+          "beads": 2,
+          "ids": [
+            "C-0309-0966",
+            "C-0313-1445"
+          ],
+          "H_percentiles": [
+            -7.201597086018552,
+            -3.5582329317268773,
+            -0.8565891472868543
+          ],
+          "S_percentiles": [
+            0.8770586297760211,
+            0.924793956043956,
+            0.9620701878766394
+          ]
+        },
+        "yellow": {
+          "pixels": 0,
+          "beads": 0,
+          "ids": [],
+          "H_percentiles": null,
+          "S_percentiles": null
+        }
+      }
+    },
+    {
+      "V_interval": [
+        0.4,
+        0.6
+      ],
+      "colors": {
+        "red": {
+          "pixels": 122,
+          "beads": 3,
+          "ids": [
+            "C-0309-0966",
+            "C-0313-1445",
+            "NEW-1927-2829"
+          ],
+          "H_percentiles": [
+            -6.647286821705387,
+            -0.6382978723404449,
+            4.890684986866027
+          ],
+          "S_percentiles": [
+            0.5946661893681762,
+            0.696760710553814,
+            0.8532537381751601
+          ]
+        },
+        "yellow": {
+          "pixels": 144,
+          "beads": 3,
+          "ids": [
+            "R332-R-0147-0142",
+            "R332-Y-0104-0097",
+            "REC266-P146299"
+          ],
+          "H_percentiles": [
+            8.085714285714287,
+            21.176470588235304,
+            23.282358300253776
+          ],
+          "S_percentiles": [
+            0.7118945379594641,
+            0.9285714285714286,
+            0.992159375
+          ]
+        }
+      }
+    },
+    {
+      "V_interval": [
+        0.6,
+        0.8
+      ],
+      "colors": {
+        "red": {
+          "pixels": 359,
+          "beads": 8,
+          "ids": [
+            "C-0309-0966",
+            "C-0313-1445",
+            "C-0445-1614",
+            "C-1559-0252",
+            "C-1899-0420",
+            "E5-1455-3009",
+            "NEW-1442-248",
+            "NEW-1927-2829"
+          ],
+          "H_percentiles": [
+            -9.729729729729684,
+            -4.615384615384528,
+            1.413111809609314
+          ],
+          "S_percentiles": [
+            0.5681749622926093,
+            0.7339901477832512,
+            0.868871975019516
+          ]
+        },
+        "yellow": {
+          "pixels": 327,
+          "beads": 9,
+          "ids": [
+            "C-1364-2971",
+            "C-1526-3018",
+            "C-1721-1566",
+            "C-1777-1612",
+            "R332-R-0147-0142",
+            "REC266-P074746",
+            "REC266-P100583",
+            "REC266-P144445",
+            "REC266-P146299"
+          ],
+          "H_percentiles": [
+            9.190697674418598,
+            22.32558139534885,
+            29.338267949666907
+          ],
+          "S_percentiles": [
+            0.6158536585365854,
+            0.8939393939393939,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "V_interval": [
+        0.8,
+        1.00001
+      ],
+      "colors": {
+        "red": {
+          "pixels": 207,
+          "beads": 5,
+          "ids": [
+            "C-0445-1614",
+            "C-1559-0252",
+            "C-1899-0420",
+            "E5-1455-3009",
+            "NEW-1442-248"
+          ],
+          "H_percentiles": [
+            -3.8709677419354875,
+            -1.25,
+            3.7412790697674434
+          ],
+          "S_percentiles": [
+            0.37081982399258917,
+            0.5107296137339056,
+            0.681932275633436
+          ]
+        },
+        "yellow": {
+          "pixels": 601,
+          "beads": 7,
+          "ids": [
+            "C-1251-0290",
+            "C-1364-2971",
+            "C-1526-3018",
+            "C-1721-1566",
+            "C-1777-1612",
+            "REC266-P100583",
+            "REC266-P144445"
+          ],
+          "H_percentiles": [
+            18.992805755395693,
+            33.928571428571445,
+            46.56
+          ],
+          "S_percentiles": [
+            0.5672268907563025,
+            0.8502415458937198,
+            1.0
+          ]
+        }
+      }
+    }
+  ],
+  "shared_joint_bins": [
+    {
+      "bin_HSV": [
+        1,
+        6,
+        5
+      ],
+      "bin_widths": [
+        5,
+        0.1,
+        0.1
+      ],
+      "red_example": {
+        "id": "C-0313-1445",
+        "xy": [
+          315,
+          1446
+        ],
+        "RGB": [
+          149,
+          57,
+          46
+        ],
+        "H": 6.407766990291265,
+        "S": 0.6912751677852349,
+        "V": 0.5843137254901961,
+        "hue_interpretable": true,
+        "recorded_pigment": "red",
+        "authority": "software_native_label",
+        "active": true,
+        "individually_confirmed": false
+      },
+      "yellow_example": {
+        "id": "REC266-P146299",
+        "xy": [
+          1676,
+          3021
+        ],
+        "RGB": [
+          148,
+          70,
+          57
+        ],
+        "H": 8.571428571428584,
+        "S": 0.6148648648648649,
+        "V": 0.5803921568627451,
+        "hue_interpretable": true,
+        "recorded_pigment": "yellow",
+        "authority": "explicit_individual_pigment",
+        "active": false,
+        "individually_confirmed": true
+      },
+      "meaning": "Both labeled pigments enter this coarse joint HSV neighborhood; not identical pixels or a classification error."
+    },
+    {
+      "bin_HSV": [
+        1,
+        6,
+        6
+      ],
+      "bin_widths": [
+        5,
+        0.1,
+        0.1
+      ],
+      "red_example": {
+        "id": "C-0313-1445",
+        "xy": [
+          313,
+          1444
+        ],
+        "RGB": [
+          164,
+          74,
+          65
+        ],
+        "H": 5.4545454545454675,
+        "S": 0.603658536585366,
+        "V": 0.6431372549019608,
+        "hue_interpretable": true,
+        "recorded_pigment": "red",
+        "authority": "software_native_label",
+        "active": true,
+        "individually_confirmed": false
+      },
+      "yellow_example": {
+        "id": "REC266-P146299",
+        "xy": [
+          1678,
+          3021
+        ],
+        "RGB": [
+          159,
+          73,
+          58
+        ],
+        "H": 8.910891089108901,
+        "S": 0.6352201257861636,
+        "V": 0.6235294117647059,
+        "hue_interpretable": true,
+        "recorded_pigment": "yellow",
+        "authority": "explicit_individual_pigment",
+        "active": false,
+        "individually_confirmed": true
+      },
+      "meaning": "Both labeled pigments enter this coarse joint HSV neighborhood; not identical pixels or a classification error."
+    },
+    {
+      "bin_HSV": [
+        1,
+        5,
+        6
+      ],
+      "bin_widths": [
+        5,
+        0.1,
+        0.1
+      ],
+      "red_example": {
+        "id": "C-0313-1445",
+        "xy": [
+          312,
+          1445
+        ],
+        "RGB": [
+          166,
+          78,
+          68
+        ],
+        "H": 6.122448979591837,
+        "S": 0.5903614457831325,
+        "V": 0.6509803921568628,
+        "hue_interpretable": true,
+        "recorded_pigment": "red",
+        "authority": "software_native_label",
+        "active": true,
+        "individually_confirmed": false
+      },
+      "yellow_example": {
+        "id": "REC266-P146299",
+        "xy": [
+          1678,
+          3023
+        ],
+        "RGB": [
+          174,
+          87,
+          70
+        ],
+        "H": 9.80769230769232,
+        "S": 0.5977011494252873,
+        "V": 0.6823529411764706,
+        "hue_interpretable": true,
+        "recorded_pigment": "yellow",
+        "authority": "explicit_individual_pigment",
+        "active": false,
+        "individually_confirmed": true
+      },
+      "meaning": "Both labeled pigments enter this coarse joint HSV neighborhood; not identical pixels or a classification error."
+    },
+    {
+      "bin_HSV": [
+        0,
+        5,
+        6
+      ],
+      "bin_widths": [
+        5,
+        0.1,
+        0.1
+      ],
+      "red_example": {
+        "id": "C-0313-1445",
+        "xy": [
+          312,
+          1443
+        ],
+        "RGB": [
+          158,
+          69,
+          65
+        ],
+        "H": 2.5806451612903345,
+        "S": 0.5886075949367089,
+        "V": 0.6196078431372549,
+        "hue_interpretable": true,
+        "recorded_pigment": "red",
+        "authority": "software_native_label",
+        "active": true,
+        "individually_confirmed": false
+      },
+      "yellow_example": {
+        "id": "REC266-P146299",
+        "xy": [
+          1679,
+          3025
+        ],
+        "RGB": [
+          175,
+          82,
+          74
+        ],
+        "H": 4.752475247524757,
+        "S": 0.5771428571428571,
+        "V": 0.6862745098039216,
+        "hue_interpretable": true,
+        "recorded_pigment": "yellow",
+        "authority": "explicit_individual_pigment",
+        "active": false,
+        "individually_confirmed": true
+      },
+      "meaning": "Both labeled pigments enter this coarse joint HSV neighborhood; not identical pixels or a classification error."
+    },
+    {
+      "bin_HSV": [
+        1,
+        8,
+        4
+      ],
+      "bin_widths": [
+        5,
+        0.1,
+        0.1
+      ],
+      "red_example": {
+        "id": "C-0313-1445",
+        "xy": [
+          314,
+          1448
+        ],
+        "RGB": [
+          116,
+          26,
+          17
+        ],
+        "H": 5.4545454545454675,
+        "S": 0.853448275862069,
+        "V": 0.4549019607843137,
+        "hue_interpretable": true,
+        "recorded_pigment": "red",
+        "authority": "software_native_label",
+        "active": true,
+        "individually_confirmed": false
+      },
+      "yellow_example": {
+        "id": "R332-R-0147-0142",
+        "xy": [
+          1295,
+          1524
+        ],
+        "RGB": [
+          108,
+          34,
+          21
+        ],
+        "H": 8.965517241379303,
+        "S": 0.8055555555555556,
+        "V": 0.4235294117647059,
+        "hue_interpretable": true,
+        "recorded_pigment": "yellow",
+        "authority": "explicit_individual_pigment",
+        "active": true,
+        "individually_confirmed": true
+      },
+      "meaning": "Both labeled pigments enter this coarse joint HSV neighborhood; not identical pixels or a classification error."
+    }
+  ],
+  "reference_H_ranges": {
+    "red": [
+      -12.075471698113233,
+      7.428571428571445
+    ],
+    "yellow": [
+      4.752475247524757,
+      50.65573770491804
+    ]
+  },
+  "shadow_law_fitted": false,
+  "automatic_color_decisions": false,
+  "findings": [
+    "Confirmed shaded yellow spans orange and near-red hue, including REC266-P146299 at median8.57deg and C62 at21.43deg. Bright native/illustration-approved yellows lie nearer median32-37deg.",
+    "Value alone does not specify yellow hue: REC266-P146299 at medianV.65 has lower hue than darker C62 atV.51. Saturation and spatial illumination vary too.",
+    "The explicit shaded red control is near medianH-8.00deg. Visually supported red controls extend to+7.43deg, overlapping part of the yellow hue envelope. Some coarse jointHSV neighborhoods are shared.",
+    "There is only one individually pigment-confirmed red body in this selected sample. Other red controls retain illustration/native-software authority; do not inflate independent ground truth.",
+    "Within-bead brightness strata show nonmonotone hue changes. Spatial variation in one photograph cannot establish a universal relighting trajectory.",
+    "NEW1519 and R127 pixels are yellow-like relative to these curated controls; they remain recorded red pending independent pigment judgment. No motif color, neighbor majority, or new automatic correction is used."
+  ]
+}

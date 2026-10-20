@@ -1,0 +1,138 @@
+{
+  "records": [
+    {
+      "id": "NEW-1519-2976",
+      "color_before": "red",
+      "color_after": "red",
+      "prior_authority_record": {
+        "color": "red",
+        "source": "R337 maker accepted displayed R336 labels/adjacency"
+      },
+      "primary_authority_category": "general_illustration_approval",
+      "explicit_individual_pigment_confirmation": false,
+      "general_approval_support_retained": true,
+      "protected_from_automatic_recoloring": true,
+      "protection_changed": false,
+      "pigment_investigation_allowed": true,
+      "geometry_changed": false,
+      "source_xy": [
+        1516.6804345172254,
+        2977.0292632657097
+      ],
+      "ab": [
+        85,
+        79
+      ],
+      "evidence": [
+        {
+          "kind": "general_illustration_approval",
+          "statement": "R337 maker feedback: current bead labels and adjacency relationships in both C-1423-3004 and C-0481-1576 appear correct; unusual gaps accepted.",
+          "source": "R337 maker request / photo2/R337_REPORT.md; original R336 panel keys retained",
+          "observations_covered": "Specifically displayed labels/links; not an explicit individual pigment answer for every observation",
+          "evidence_retained": true,
+          "exact_R336_panel_key": {
+            "panel": "problem-01",
+            "key": {
+              "number": 6,
+              "id": "NEW-1519-2976",
+              "color": "red",
+              "xy": [
+                1516.6804345172254,
+                2977.0292632657097
+              ],
+              "ab": [
+                85,
+                79
+              ],
+              "status": "active indexed working"
+            }
+          }
+        },
+        {
+          "kind": "software_classification_native_support",
+          "color": "red",
+          "source_observation": {
+            "id": "NEW-1519-2976",
+            "kind": "fresh-bright-component",
+            "color": "red",
+            "xy": [
+              1516.6804345172254,
+              2977.0292632657097
+            ],
+            "allowance_px": 18,
+            "area": 30,
+            "source_pixel_count": 30,
+            "pixel_support": "NEW-1519-2976",
+            "source": "original RGB, linear minimum-channel half-maximum component",
+            "location_kind": "bright component; not bead center",
+            "band_clearance_px": 13.341664064126334,
+            "color_status": "automatic local pigment/darkness cue",
+            "r336_roles": {
+              "counting": true,
+              "indexing": true,
+              "geometry_fitting": true,
+              "link_obstruction": true,
+              "pattern_extraction": false
+            },
+            "r336_status": "working indexed observation"
+          },
+          "evidence_retained": true
+        },
+        {
+          "kind": "explicit_individual_pigment_confirmation",
+          "present": false,
+          "reason": "R343 maker explicitly clarifies that no individual red-pigment judgment was made for this bead."
+        },
+        {
+          "kind": "pattern_prediction",
+          "photographic_pigment_evidence": false,
+          "used_for_color_decision": false,
+          "conditional_prediction_color": "yellow",
+          "strict_pattern_entry": "?",
+          "source": "Conditional208 prediction is separate from native photographic color evidence"
+        }
+      ],
+      "authority_for_refinement": "Explicit R343 maker clarification; targeted metadata correction only"
+    }
+  ],
+  "scope": "Exactly NEW-1519-2976, plus new maker material judgments in maker-decisions. No broad historical authority rewriting, automatic unprotection, pigment change, or geometry change.",
+  "historical_authority_ledger_retained": "photo2/r342/corrections.json:all_authoritative_labels",
+  "impact": {
+    "native_pixels_were_computed": true,
+    "local_lattice_was_investigated": true,
+    "automatic_RY_recoloring_was_attempted": false,
+    "automatic_candidate_known_to_have_been_suppressed": false,
+    "legitimate_review_restricted": true,
+    "affected_artifacts": [
+      {
+        "path": "photo2/r339/common.py:authority",
+        "effect": "setdefault copies the current displayed R336 color into a protected authority ledger; the source statement records illustration approval, not a new individual pigment answer."
+      },
+      {
+        "path": "photo2/r342/native_review.py",
+        "literal": "Maker red remains authoritative. Hue20.35 overlaps confirmed shadow-yellow; no photographic recoloring permitted."
+      },
+      {
+        "path": "photo2/r342/review.py",
+        "literal": "The maker color is not a new question."
+      },
+      {
+        "path": "photo2/r342/hue_diagnostic.py",
+        "effect": "All authority ledger entries, including illustration approval, counted together as maker-colored calibration; NEW-1519-2976 supplied red_max20.350877 degrees."
+      },
+      {
+        "path": "photo2/r341/freeze.py",
+        "effect": "All authority-ledger IDs protected equally from automatic relabeling; no distinction between individual pigment and illustration approval."
+      }
+    ],
+    "conclusion": "Prior bookkeeping did not prevent measurement of all five occurrences or geometry testing, and no proven valid automatic R/Y correction was skipped. It did elevate general approval to explicit pigment truth in calibration and prohibit a useful review question. R343 corrects this interpretation, retains the approval/protection, and permits targeted native investigation.",
+    "targeted_calibration_counterfactual": {
+      "feature": "Historical R342 whole-window hue, unchanged source pixels and all other ledger entries",
+      "red_max_with_target": 20.350877192982466,
+      "red_max_without_only_NEW1519": 0.425531914893611,
+      "target_is_sole_max": true,
+      "label_changes": 0,
+      "policy": "Targeted causal calibration diagnostic only. Other illustration approvals remain mixed historical ledger entries, not newly certified individual pigments. No new classifier is adopted."
+    }
+  }
+}

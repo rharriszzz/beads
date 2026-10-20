@@ -9759,3 +9759,37 @@ Two high-value native questions,16panels/ownlocalkeys/current adjacency.2504
 historical hashes/3174native scores/1058scalarhues/2496strict entries/8heldout
 metrics checked; fresh28products/31images/HTML exact, offline/narrow controls pass.
 Report photo2/R342_REPORT.md. Stop after scoped delivery; no automatic R343.
+
+## R343 — shadow HSV, Q101/C62, targeted position29 provenance
+
+User requests a true joint H–V scatter with S encoding from actual visible-glass
+pixels, explicit versus illustration/software evidence, shadow-red/yellow controls,
+Q101 boundary-sampling diagnosis, modest sampling improvement, two maker-yellow
+judgments, independent C62 identity/admission check, and all5 position29 sources.
+Refine only NEW1519 provenance if justified without recoloring/unprotecting; keep
+black3×3/73.5, primitive geometry, maker statements and strict208 support. Deliver
+reproducible results, report, corrected overlay, independent verification, offline
+native questions, logs, scoped commit/push/remote verification, then STOP.
+
+Delivered:2377source pixels/25inspected glass cores, H–V(Sfill) and H–S(Vfill),
+6explicit maker materials distinct from11general approvals/8native labels. Shadow
+Y can shift orangeward without a universal H(V) law; no new R/Y classifier. Q101
+old boundary3×3 unsafe, old whole9×9 diagnostic distinct; C62 old square already
+on yellow glass. New3×3 maximum-clearance sample uses explicit cores, not claimed
+autonomous segmentation. Black implementation/threshold unchanged. Q101R->Y only
+old pigment edit; C62 independent original-body/native-neighbor/alias check adds
+one existing cue and3links, no recenter or duplicate. NEW1519 metadata-only stays
+protected red/general approval, individual confirmation false. Legacy calibration
+influence20.35->0.43deg measured without changing any source pixels or colors.
+
+All old1058XY/1040AB/2287links preserved; final1059/1041/2290/H214,201.
+Strict195/5/8 ->196/4/8 same1040 ->197/4/7 expanded1041. All11 unknowns retained.
+Same1039targets geographic97.50->97.98%, wholeocc99.33% unchanged; targeted C62
+heldoutY.648 is not fresh blind accuracy. Two useful native questions29/127,
+all5position29 bodies illustrated; solved maker examples not re-questioned.
+Independent2599 historical hashes/2377nativeRGB-HSV/25cores/98patches/2290
+primitive equations/1041unique sites/1456strict entries/8heldout/11native crops,
+fresh20science products/26images/vector/CSV/offlineHTML-JS-CSS and actual offline/
+narrow/pixel-click browser checks pass. Failed initial old-label import preserved,
+current excluded controls use latest maker pigments. Report photo2/R343_REPORT.md.
+Stop for review after scoped delivery; no automatic R344.

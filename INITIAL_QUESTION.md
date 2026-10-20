@@ -7,6 +7,21 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current pigment and pattern instruction — R343
+
+The maker explicitly corrects Q101 REC266-P100583 to YELLOW and confirms C62
+R332-Y-0104-0097 as yellow material in shadow. C62 identity/association must be
+independently checked. R343 admits that existing cue at unchanged XY with3links;
+only Q101 changes an existing pigment. Joint H–V/S source-pixel study uses25
+inspected glass cores/2377 pixels, distinguishes explicit pigment from general
+illustration approval and software labels, and adopts no universal shadow law.
+Black fixed3×3/73.5 remains unchanged. NEW-1519-2976 stays protected RED with
+one scoped metadata refinement: general approval retained, not explicit individual
+red confirmation. No broad authority rewrite. Strict208 becomes197supported/
+4conflicting/7insufficient; all11 unresolved entries remain unknown. Two useful
+native questions at29/127. See [R343](photo2/R343_REPORT.md). Scoped delivery,
+commit/push/remote verify then STOP; no automatic R344 or broader winding search.
+
 ## Current pigment and pattern instruction — R342
 
 The maker confirms black R332-R-0077-0077 and NEW-1681-1498, yellow R332-R-0147-
