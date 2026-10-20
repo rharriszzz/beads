@@ -1,3 +1,24 @@
+# R344 graph-paper presentation — general13-unit strip with sequence-derived cuts
+
+Use x=a-b,y=a+b,2k=x+13y and x=x0+((2k-x0)%13),y=(2k-x)/13.
+Fixed13-unit x strip gives alternate6/7 rows, half-pitch offsets; y increasesup.
+Primitive right/upleft/upright changes k by1/6/7. Same-k lateral copies shift
+(13,-1), not horizontal same-height wrap. PeriodL translates by
+(2L-13t,t); only13-divisibleL admits purevertical repeats. Derive selected
+membership from [S,S+L), with step cuts at gaps for partial first/lastrows.
+Clear ellipse bodies rather than drawing oblique index isolines through them.
+
+Keep strict unknowns/provisional colors distinct and all copies source-identical.
+Chosen208appears once percentral panel; before/after context and lateralseam
+copies are graphical, not measurements. General192case tests plus936display
+point checks validate directions, seams, membership, clearance and colors.
+Print elliptical beads in clean/numberedPDF/SVG/300dpiPNG; interactive viewlinks
+bidirectionally to string positions and native photographic evidence. All13
+previous scientific products exact,25presentation files archived. Four maker
+states independently counted:197/4/7,198/3/7,198/3/7,199/2/7. No newcolors.
+See [general method](photo2/GRAPH_PAPER_6_5_BEADS.md) and [R344](photo2/R344_REPORT.md).
+Recommendation unchanged and not begun; no automatic R345.
+
 # R344 — distinguish strict sequence, provisional completion and recorded-label accuracy
 
 Freeze only two explicit maker R->Y overlays, preserving all records/geometry.

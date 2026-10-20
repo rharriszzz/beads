@@ -1,12 +1,28 @@
-# R344 — the actual partial block, a provisional completion, and measured agreement
+# R344 — recovered graph-paper presentation, sequence and measured agreement
 
 [Offline pattern and photographic review](r344/review/index.html) · [Reproduce](R344_REPRODUCE.md) · [All numerical results](r344/evaluation.json) · [Independent checks](r344/verification.json)
 
 **199 of 208 positions now satisfy the unchanged strict support rule; two conflict and seven lack sufficient support.** Both new individual maker judgments are applied as yellow, with no identity, XY, lattice coordinate, link or winding changes. The provisional complete block matches **1,038/1,041 indexed photographic colors (99.71%)**. This is fitted agreement with recorded labels, not independently measured physical accuracy.
 
-## The recovered pattern
+## The graph-paper presentation
 
-![Every numbered string position, strict and provisional](r344/patterns.png)
+![Alternating six/seven-bead graph paper, strict and provisional](r344/graph-paper.png)
+
+The maker’s coordinate construction works exactly: x=a−b, y=a+b and 2k=x+13y. In the central strip −1≤x<12, even rows have six beads and odd rows seven. Moving right adds1, up-left adds6 and up-right adds7. The 208 chosen beads occupy sixteen row pairs, 0≤y<32, exactly once. Reading proceeds upward; the first row is indices0–5 and the next6–12.
+
+Thin START and END lines lie immediately below the first included row and above the last: y=−0.5 and31.5. White background is the chosen block; gray continuation contains eight extra rows (52 indices) at either end. All colored beads are identical ellipses; strict unknowns retain ?. A separate provisional panel marks inferred entries with dashed blue outlines. No pigment or photographic evidence changes for the display.
+
+The zero-index seam is (Δa,Δb)=(6,−7), hence (Δx,Δy)=(13,−1), not a same-height left/right wrap. Optional lateral strips in the interactive view repeat exactly the same k and color. The actual spatial recurrence (16,16) becomes (0,32) and adds208. Conditional H=(214,201) becomes (13,415)=13(0,32)+(13,−1), consistent with thirteen visual repeats plus the seam, without proving the physical winding.
+
+The [interactive graph paper](r344/review/index.html) supports zoom, drag, optional indices/diagonal guides, seam copies and bidirectional highlighting with the one-dimensional sequence. Its selected position links to the same photographic IDs and current adjacency already used in the statistics. [Print A4 PDF](r344/graph-paper.pdf), [vector SVG](r344/graph-paper.svg), [numbered PDF](r344/graph-paper-numbered.pdf); PNG exports are2481×3507pixels at300dpi.
+
+[The standalone general method](GRAPH_PAPER_6_5_BEADS.md) derives arbitrary-length intervals and stepped cuts. For L not divisible by13, the repeat need not be rectangular or purely vertical. An independent verifier checks936 current display sites,192 general length/origin/strip cases and24,544 boundary/ellipse tests. Selected-block membership remains208 unique indices; neither continuation nor lateral copies become new observations.
+
+The previous R344 sequence/statistics delivery at37a23300 is retained under [pre-graph-paper-37a23300](r344/pre-graph-paper-37a23300/README.md); all thirteen sealed scientific products remain byte-identical. Its original scientific base remains R3436fa108f7. This extension changes presentation and its mathematical verification, not reconstruction results.
+
+## The same block in string order
+
+[Numbered one-dimensional strict/provisional graphic](r344/patterns.png).
 
 These are string-order grids: left to right, then the next row; the 16-column layout is not a physical crochet-row claim. R=red, Y=yellow, B=black. Indices are **0–207**, with A=7a+6b, modulo2704. Index zero is the current reference C-1302-0316. Cyclic origin and positive direction are conventions, not a recovered original stringing start. The strict block has **62 red /60 yellow /77 black /9 unknown** entries; the best provisional block has **62 red /62 yellow /84 black**.
 
@@ -56,6 +72,17 @@ The reversible [correction ledger](r344/corrections.json) retains both original 
 - P127 R332-R-0125-0118, own photograph feature1: explicit **yellow glass in shadow**, superseding software red.
 
 P29 becomes five yellow observations in four blocks (5,6,7,8). P127 becomes three yellow observations in blocks**7,8,9**. Previously, its two yellow supporters spanned only8,9; the former red in7 now supplies the third *agreeing* block. Both conflicts therefore become strictly supported. Removing a disagreement alone would not have been sufficient if the third block were absent. No support threshold changes.
+
+An independent one-at-a-time recount keeps all1,041 R343 observation IDs fixed:
+
+| R343 cohort with applied judgments | Indexed n | Supported | Conflicting | Insufficient |
+|---|---|---|---|---|
+| None | 1041 | 197 | 4 | 7 |
+| NEW-1519-2976 | 1041 | 198 | 3 | 7 |
+| R332-R-0125-0118 | 1041 | 198 | 3 | 7 |
+| NEW-1519-2976 + R332-R-0125-0118 | 1041 | 199 | 2 | 7 |
+
+[Full correction effects, color counts and geographic supporters](r344/correction-effects.json).
 
 | Cohort / colors | Indexed n | Supported | Conflict | Insufficient |
 |---|---|---|---|---|
@@ -212,10 +239,10 @@ Any cyclic208-word with a smaller period has a proper divisor of208 as a period.
 
 **Obtain targeted independent photographic reobservations of the three mismatching bodies at83/189, with their known neighboring beads visible.** The original image leaves those thin/edge glass regions unsafe, so another general classifier or majority vote has little value. These are the only contradictory recorded colors left; the other seven gaps are geographic-support shortages, and conditional208 minimality already has strict witnesses.
 
-Cost: three localized closeups or equivalent direct maker inspection tied unambiguously to the native IDs/neighbors, followed by a bounded association/pigment check. No broad detector, rendering or winding campaign is needed. Success means independently established body identity and pigment for all three, preserving distinct physical beads. If they are yellow, strict support can reach201/0/7 without weakening the rule. If a red body is confirmed at its existing association, that is a substantive counterexample to the exact208 hypothesis and motivates a targeted indexing/design investigation. Either result is more informative than another high fitted score. Additional independent geographic support for seven black residues remains necessary afterward. **This next step has not begun.**
+Cost: three localized closeups or equivalent direct maker inspection tied unambiguously to the native IDs/neighbors, followed by a bounded association/pigment check. Computational work is small: three local source/association checks and the fixed1,041-record evaluation, taking seconds for the existing numerical pipeline rather than a global search. The main cost is obtaining and inspecting unambiguous material evidence. No broad detector, rendering or winding campaign is needed. Success means independently established body identity and pigment for all three, preserving distinct physical beads. If they are yellow, strict support can reach201/0/7 without weakening the rule. If a red body is confirmed at its existing association, that is a substantive counterexample to the exact208 hypothesis and motivates a targeted indexing/design investigation. Either result is more informative than another high fitted score. Additional independent geographic support for seven black residues remains necessary afterward. **This next step has not begun.**
 
 ## Verification and stopping
 
-The independent verifier preserves all1,059 original observation identities/XY,1,041 coordinates,2,290 links and H214,201; checks every primitive equation and distinct quotient/index; preserves maker pigments and old exclusions; rederives1,456 strict entries,18,738 held-out probability vectors and20 matched historical summaries without the producer prediction helpers; checks nine shortest-divisor witnesses and five literal native crops. Historical scientific hashes, the black implementation and all earlier results remain unchanged. Fresh replay and actual offline/narrow browser interactions are recorded under r344. Native labels/identities and the physical closure remain hypotheses, not conclusions supplied by arithmetic verification.
+The independent verifier preserves all1,059 original observation identities/XY,1,041 coordinates,2,290 links and H214,201; checks every primitive equation and distinct quotient/index; preserves maker pigments and old exclusions; rederives1,456 strict entries,18,738 held-out probability vectors and20 matched historical summaries without the producer prediction helpers; checks nine shortest-divisor witnesses and five literal native crops. Historical scientific hashes, the black implementation and all earlier results remain unchanged. Independent graph-paper math verifies directions, seam identity, nonrectangular cuts and copy colors without changing the scientific cohort. Fresh replay and actual offline/narrow browser interactions, including graph-to-string and string-to-graph highlighting, are recorded under r344. Native labels/identities and the physical closure remain hypotheses, not conclusions supplied by arithmetic verification.
 
 STOP after scoped commit, push and remote verification; no automatic R345.

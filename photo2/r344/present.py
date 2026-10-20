@@ -49,13 +49,19 @@ def main():
         k=index(co[o]) if o in co else None
         meta.append(dict(id=o,xy=r['xy'],color=r['color'],ab=co.get(o),k=k,position=k%208 if k is not None else None,occurrence=k//208 if k is not None else None,
                          region=blocks.get(o),authority=authority(o,ledger),authority_source=ledger.get(o,{}).get('source',r.get('source','Historical native label'))))
-    data=dict(observations=meta,edges=g['edges'],pattern=p,evaluation=ev,training=tr,panels=panels)
+    paper=read(OUT/'graph-paper-layout.json')
+    data=dict(observations=meta,edges=g['edges'],pattern=p,evaluation=ev,training=tr,panels=panels,paper=paper)
     (out/'data.js').write_text('const DATA='+json.dumps(data,separators=(',',':'))+';\n')
-    page='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R344 — recovered 208-bead sequence and accuracy</title><link rel="stylesheet" href="style.css">
-<h1>R344 — the recovered 208-position pattern</h1>
+    page='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R344 — graph-paper bead pattern and accuracy</title><link rel="stylesheet" href="style.css">
+<h1>R344 — the graph-paper bead pattern</h1>
 <p><b>199 supported / 2 conflicting / 7 insufficient.</b> Two explicit maker-yellow corrections resolve positions 29 and 127. Geometry and bead identities are unchanged. A=7a+6b, N=2704 and 13 repeats are conditional. The displayed cyclic origin and forward direction are conventions.</p>
 <p><a href="../../R344_REPORT.md">Report and recommendation</a> · <a href="../../R344_REPRODUCE.md">Reproduce</a> · <a href="../strict-pattern.csv">Strict CSV</a> · <a href="../provisional-pattern.csv">Provisional CSV</a> · <a href="../pattern208.json">Every position’s evidence/confidence</a> · <a href="../../../beads-photo-2.jpg">Original photograph</a></p>
-<h2>One repeating block, positions 0–207</h2>
+<h2>The original graph-paper arrangement</h2>
+<p>Rows contain alternately <b>6 and 7 identical ellipses</b>. Right is string +1, up-left +6, up-right +7. The thin teal START and purple END lines mark one block, positions0–207 exactly once in each central strip. Eight continuation rows appear before and after it; all copies retain their original pattern-position color and identity. Reading proceeds upward. White is the chosen interval; gray background is continuation. Strict unknowns stay gray ?. Provisional inferred colors have dashed blue outlines.</p>
+<div class="paper-controls"><label>Show <select id="paper-kind" onchange="paperDraw()"><option value="both">Strict and provisional</option><option value="strict">Strict only</option><option value="provisional">Provisional only</option></select></label><button onclick="paperZoom(1.5)">Zoom +</button><button onclick="paperZoom(1/1.5)">Zoom −</button><button onclick="paperFit()">Fit</button><button onclick="paperLocate()">Center selected position</button><label><input type="checkbox" id="paper-indices" onchange="paperDraw()"> Position numbers</label><label><input type="checkbox" id="paper-grid" checked onchange="paperDraw()"> Graph paper</label><label><input type="checkbox" id="paper-guides" onchange="paperDraw()"> Primitive diagonal guides</label><label><input type="checkbox" id="paper-seam" onchange="paperDraw()"> Lateral seam copies</label></div>
+<p>Drag to pan; use the wheel or buttons to zoom. Click an ellipse or a string-order bead below: every display of that position is highlighted, and its photographed sources appear below. Optional lateral copies have the <em>same k</em> as their central original; they are outside the selected central interval and add no observations.</p><div class="paper-frame"><svg id="graph-paper" role="img" aria-label="Alternating six and seven bead graph-paper pattern, zoomable"></svg></div><p id="paper-status"></p>
+<p><a href="../graph-paper.pdf">Print A4 PDF</a> · <a href="../graph-paper.png">High-resolution PNG</a> · <a href="../graph-paper.svg">Vector SVG</a> · <a href="../graph-paper-numbered.pdf">Print with indices</a> · <a href="../../GRAPH_PAPER_6_5_BEADS.md">General 6.5-bead presentation method</a> · <a href="../graph-paper-verification.json">Algebra, seam and general-boundary verification</a></p>
+<h2>The same block in one-dimensional string order, positions 0–207</h2>
 <p>Read left to right, then down. Each circle is one string position, not a physical crochet row. Red, yellow and black denote pigment. Gray <b>?</b> means unresolved under the unchanged strict rule. <b>Blue dashed</b> circles in the provisional block are predictions, never new photographic colors. Click any position.</p>
 <div class="two"><section><h3>Authoritative strict sequence</h3><div id="strict" class="block"></div></section><section><h3>Best provisional completion</h3><div id="provisional" class="block"></div></section></div>
 <p><a href="../patterns.png">Export graphic</a> · <a href="../patterns.svg">Vector graphic</a></p><pre id="sequence"></pre>
@@ -70,10 +76,10 @@ def main():
 <h2>Three surviving mismatches</h2><p>These edge/thin-body sources have no safely delimited material core in R343. No new pigment judgment is invented here. Click an ID to examine its native body, stable key and existing links. The report recommends targeted independent reobservation of these three bodies, rather than another classifier campaign.</p><div id="mismatches"></div>
 <details><summary>Literal native crops of the two solved corrections and three remaining mismatches</summary>NATIVE_CROPS</details>
 <h2>Conditional shortest-repeat test</h2><p>All proper divisors of 208 are contradicted by pairs of strict colors. Therefore every completion of this strict 208-block has minimal cyclic period 208 <em>under this indexing and closure</em>. This does not establish that the photographic indexing or physical total is correct. B207/B299/A338 fit the same recorded cohort poorly. No broad winding search ran.</p><div id="divisors"></div>
-<script src="data.js"></script><script src="viewer.js"></script></html>'''
+<script src="data.js"></script><script src="viewer.js"></script><script src="paper.js"></script></html>'''
     crops=''.join(f'<figure><figcaption>{html.escape(r["id"])} — original pixels, no resampling</figcaption><img src="{r["filename"]}" width="363" alt="Native crop {r["id"]}"></figure>' for r in panels)
     (out/'index.html').write_text(page.replace('NATIVE_CROPS',crops))
-    for name in ['viewer.js','style.css']:(out/name).write_text((ROOT/'photo2/r344'/name).read_text())
+    for name in ['viewer.js','style.css','paper.js']:(out/name).write_text((ROOT/'photo2/r344'/name).read_text())
     print('PRESENT',len(panels),'literal native crops and interactive 208 x13 review')
 
 

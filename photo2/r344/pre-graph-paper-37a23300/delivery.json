@@ -1,0 +1,114 @@
+{
+  "round": "R344",
+  "base_commit": "6fa108f7c378bdecf55fcaad8fc99387869f8188",
+  "branch": "photo-2-strategy-v3",
+  "utc": "2026-10-20T05:41:24.662303+00:00",
+  "report": "photo2/R344_REPORT.md",
+  "review": "photo2/r344/review/index.html",
+  "changes": [
+    "NEW-1519-2976 red->yellow explicit maker",
+    "R332-R-0125-0118 red->yellow explicit maker"
+  ],
+  "geometry_changed": false,
+  "pattern": {
+    "supported": 199,
+    "conflicting": [
+      83,
+      189
+    ],
+    "insufficient": [
+      43,
+      75,
+      82,
+      89,
+      140,
+      147,
+      186
+    ],
+    "strict_unknowns": 9,
+    "provisional_complete": true,
+    "physical_N20813_interpretation": "conditional"
+  },
+  "inventory": {
+    "active": 1059,
+    "indexed": 1041,
+    "unindexed": 18,
+    "links": 2290
+  },
+  "agreement": {
+    "provisional": [
+      1038,
+      1041
+    ],
+    "strict": [
+      1011,
+      1011
+    ],
+    "strict_abstained": 30,
+    "geographic_heldout": [
+      1024,
+      1041
+    ],
+    "occurrence_heldout": [
+      1038,
+      1041
+    ]
+  },
+  "checks": {
+    "independent": true,
+    "fresh_replay": true,
+    "offline_browser": true,
+    "historical_hashes": 2703,
+    "strict_entries": 1456,
+    "heldout_probability_vectors": 18738
+  },
+  "next_step": "Recommend targeted independent reobservation of the three surviving mismatch bodies with known neighbors. Not started.",
+  "stop": "No automatic R345.",
+  "artifact_sha256": {
+    "photo2/R344_REPORT.md": "cb88769ed36425354a47d19bf9ea4b70b004d8e3c36316e105634d4b63780f7f",
+    "photo2/R344_REPRODUCE.md": "8a3a85c83c49483dd0229b6447427ecae830c8be2b337f37d02ef176f7fff8c9",
+    "photo2/r344/__init__.py": "9ef43d09399d3ab2ab8c451fc32d6b20e64613130cc6bc183ed5b18ec79b55bc",
+    "photo2/r344/analyze.py": "914c60360e699f59cb7346130a113e67935f68ac781e90e744be3f820d0981df",
+    "photo2/r344/browser_check.py": "5ebbc2553f28e1c5a7843f4f8c02f479d6c0d5b7277edf4cf0df1b9164f36807",
+    "photo2/r344/common.py": "9ded90905bdb5068fca92c43ebf07b14c1c1baf88349d2499c210cf7d943e439",
+    "photo2/r344/corrections.json": "cff2662c8f2c3a282f19bb8d09b5a0c130c17d25e7c5ed16f381f3ade5fe4bd5",
+    "photo2/r344/evaluation.json": "9d9ccdb4187ea7fba2ad8d262c4366c13713ba7a23d9111a12258857ce9aaa38",
+    "photo2/r344/freeze.json": "32cee7ee0e3006daf9c1f7956c6a17117451c8c521cfd0e49b2edc4c1a7f5397",
+    "photo2/r344/freeze.py": "0cdd655d0d368e6f900dec32cd708dd4163463227cf3c5b6d2ea84c013857293",
+    "photo2/r344/geography.png": "c71c458d5807da237a7d193dceddb3d93e752e8e4f2822a289118680f1e59da2",
+    "photo2/r344/graph.json.gz": "f8ec341b72f0376f3c9dce2e6096f728c224e3069d5e159c6dbf1e7fbe015dbb",
+    "photo2/r344/heldout-predictions.json.gz": "a9e423f52c2e67be79d48feacac54730a835b463e7ece5807e41f910de8a57aa",
+    "photo2/r344/input-seal.json": "a3ba1098ba45efa17c46aa62396680d77fcb8a0f2d5298874d282890b6fb04e5",
+    "photo2/r344/pattern208.json": "1cec449725cc670128f62497b9339647dc7b4e1e12a65fadb303783417b26db8",
+    "photo2/r344/patterns.png": "65b44138106559b7b99f3030ca636fa1c523892e4f55086839a6d69f2d23dd4c",
+    "photo2/r344/patterns.svg": "78aed528c0ca30e39a509abd3f05de24d076470edbeb8f78c1170e383d7bddd0",
+    "photo2/r344/present.py": "96ba168f9e7fb8418ec2ab317ddc1837306b2e013e6d0aba13e229a165c83e8e",
+    "photo2/r344/provisional-pattern.csv": "ab8e8d5bbc9a4341f2a7c6f73cb5160e065c12762f957976d35379f9e81118e3",
+    "photo2/r344/provisional-sequence.txt": "6b2551cf27a92c44239ffd5567677de48f640f5192763307dc05b403ed91b83b",
+    "photo2/r344/replay-verification.json": "ba7a99ff8fd544644d0631e3afe38d534ac14b3206ffe3d59a55e9804f07b544",
+    "photo2/r344/replay.py": "bb14c47209c8e5f6e82b4f5f7b1c7cdc5311fdbbd73f77d1132d8d46c25078f3",
+    "photo2/r344/report.py": "081bffcd58a0a737a9eed38c19b97aa609b7593afd7cfe9c1134ab7db2cc0ee6",
+    "photo2/r344/review/NEW-1519-2976-native.png": "fbedcfaa924de80c11613e78291faf607b8bad7eab43925209eefa15811cbf64",
+    "photo2/r344/review/R332-R-0037-0040-native.png": "eddaf208d5fa9bc755340fbfc6a60677df3e4086f16aa6e74f61174c04b0e139",
+    "photo2/r344/review/R332-R-0125-0118-native.png": "446953cd9d089a6f630594920c3936cdcb610185d3a422fef3273a27d25672f6",
+    "photo2/r344/review/R332-R-0197-0183-native.png": "3631d2d1fc6956e63a00c7bd40df76f17ccd5ae98a7b572894fb7cea8725347e",
+    "photo2/r344/review/REC266-P035619-native.png": "665cdb92ce25218886f3e7ad1d2ca61fdf35663f68c5e72a3c3ab0fad0b0b23e",
+    "photo2/r344/review/browser-verification.json": "9eb03f5d302507b8ade2416d4659109e1b5333b0ce3e021d48c93af49aadc545",
+    "photo2/r344/review/data.js": "60c52204c8c33cc81ff0b47593cc63df612db994a016cee2814b2f76b37757d6",
+    "photo2/r344/review/desktop.png": "ba123285384979fc76b7ad045af6796b60700cd70aa4c6de8976853de4dabf19",
+    "photo2/r344/review/index.html": "37e1240ae495c2ac8a8913e7c3a1e13b0171ce825fb4f76171384e0172642e4f",
+    "photo2/r344/review/maker-yellow.png": "337a0ec31eb56141676dc95128f3b87f5f7c151322fe915fe6d7569194382837",
+    "photo2/r344/review/narrow.png": "cbd9c68b00f35db787759cdb2b5a8e9abb8658b3bbea6f9c633d002332323739",
+    "photo2/r344/review/panels.json": "e03c603d898518cb480ec9a7c4efac1b3d673bdb97d16b802a5d0d0b645504ed",
+    "photo2/r344/review/remaining-mismatch.png": "078045d498938f4a94863e1cbdd2005d378e3b6ce20fb470a06d762228a9548d",
+    "photo2/r344/review/style.css": "17797b19c633e9ec97840645d4be897d6afc6334b61da5a470e681b4e8b7ca41",
+    "photo2/r344/review/viewer.js": "15993ce8450b7d9eeb3cf1ca8644fe81f1d24315b6c8f9a0d66cae73ff4f5cfc",
+    "photo2/r344/strict-pattern.csv": "a3f594d541be32f435c4bad567950d7283d30ec280828cb52830c623300c4813",
+    "photo2/r344/strict-sequence.txt": "21aa307e218081ad174bbde22c9d48b9ad7136627d0ba1bb94d2a0d6ac47af20",
+    "photo2/r344/style.css": "17797b19c633e9ec97840645d4be897d6afc6334b61da5a470e681b4e8b7ca41",
+    "photo2/r344/training-agreement.json": "e150617de00ff01ca79564445a7661f151e7f9cf05fae070e4fb9a4c8643cff3",
+    "photo2/r344/verification.json": "a223df800505703b7cecdc396aa51a011abd455e83d3aba68ba80e29a0ce8c7e",
+    "photo2/r344/verify.py": "cb0ee8074c59917531e6c70d76fc8c1e40bee3385dfdfa29ba2a0a6c0179daa3",
+    "photo2/r344/viewer.js": "15993ce8450b7d9eeb3cf1ca8644fe81f1d24315b6c8f9a0d66cae73ff4f5cfc"
+  }
+}

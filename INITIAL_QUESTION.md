@@ -7,6 +7,20 @@ The original request is historical: its new branch already exists as
 Read the current handoff before resuming; this document does not restart work.
 Algorithm proposals and experiment results belong in [METHODS.md](METHODS.md).
 
+## Current graph-paper presentation instruction — R344 extension
+
+The maker requests the original alternating6/7 graph-paper form, not merely a
+16-column string-order grid. Right mustbe+1, up-left+6, up-right+7 underA.
+Use verifiedx=a-b,y=a+b and a13-unit strip; same-k seam shift(13,-1), period208
+vertical32rows. Mark actual chosen string interval, preserve every chosen bead
+once, show periodic context without treating copies as evidence. General method
+must derive partial-row cuts for arbitrary lengths. R344 provides interactive
+linked/zoomable ellipses and A4vector/300dpi prints; standalone
+[method](photo2/GRAPH_PAPER_6_5_BEADS.md), [report](photo2/R344_REPORT.md).
+Prior37a23300presentation archived; all13scientific products unchanged. Latest
+two maker-yellow judgments remain applied, strict199/2/7. No next scientific
+task begun. Stop after scoped commit/push/remote verify; no automatic R345.
+
 ## Current pattern presentation and accuracy instruction — R344
 
 Maker individually confirms NEW-1519-2976 and R332-R-0125-0118 YELLOW, own

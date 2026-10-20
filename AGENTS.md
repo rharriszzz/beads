@@ -1,3 +1,52 @@
+# R344 graph-paper extension completed — alternating6/7, verified seams; STOP
+
+Read photo2/R344_REPORT.md, R344_REPRODUCE.md and standalone
+photo2/GRAPH_PAPER_6_5_BEADS.md. Current offline review:
+photo2/r344/review/index.html. Science base remains R3436fa108f7; sequence/
+statistics delivery37a23300 preserved under r344/pre-graph-paper-37a23300
+(25verbatim files). ALL13scientific products byte-preserved via input seal.
+No new pigment/classifier/geometry/link/period/winding work. STOP, no R345.
+
+Maker asks for original graph-paper form: x=a-b,y=a+b,2k=x+13y. Chosen
+strip -1<=x<12 gives6even/7odd rows. Right(2,0)=+1, up-left(-1,1)=+6,
+up-right(1,1)=+7. Every integer k has unique representative
+x=x0+((2k-x0)%13),y=(2k-x)/13. Zero-indexAB(6,-7)->XY(13,-1): a
+rightward same-k copy moves one row DOWN; its inverse leftward goes UP.
+RepeatAB(16,16)->XY(0,32),+208; H214,201->XY13,415=13*(0,32)+(13,-1).
+Algebra/display consistency only, not physical proof of2704 or shortest208.
+
+General implementation derives cuts from S and S+L, including partial rows;
+non13 lengths need not be rectangles. Stair cuts go between ellipses. For208,
+32rows enclose0..207 once, starty-.5/end31.5. Eight continuation rows before/
+after=52indices each;312canonical display points and optional624same-k lateral
+copies. Selected208membership excludes all duplicates. Period copies share
+position kmodL; lateral copies share exactk. Unknowns retain?, no aesthetic fill.
+
+Identical ellipses18x14radii,24px/xunit,32px/row across colors. Highres300dpi
+2481x3507 PNGs, vectorSVG and A4PDF, clean and numbered variants. Interactive
+strict/provisional/both, wheel/buttonszoom, dragpan, optional indices/grid/
+diagonal guides/seamcopies, bidirectional string-position highlighting and
+same oldnativephotographic sources/currentadjacency. Dotted optional lateral
+seams differ from thin teal START/purple END repeat cuts. No copies counted
+as photographic observations. General method documented beyond208 example.
+
+Explicit P29NEW1519/P127R332R0125118 YELLOW overlays unchanged. Independent
+same1041one-at-a-time maker states: none197/4/7; eachalone198/3/7;
+both199/2/7. P29Y5in4blocks; P127Y3in3blocks7/8/9. Data still1059records/
+1041indexed/2290links/H214,201. Fitted1038/1041, strict1011/1011+30unknown;
+geogheldout1024/1041,wholeocc1038/1041; historical1039+maker/software strata
+and all alternative-model results exact. Two conflicts83/189;seveninsufficient
+43/75/82/89/140/147/186. Existing recommendation: independent reobservation of
+three discrepant bodies; not begun, no automatic classifier/winding campaign.
+
+Independent geometry936points/2808primitive direction equations,192general
+length-origin-strip cases/24544ellipse-cut tests, exact copy colors,208unique
+chosen centers,4makerstates,25historical archived files,13science products pass.
+Original statistical checks2703hashes/1456strict/18738heldoutvectors remain exact.
+Fresh14decodedscience+24exactartifacts inclPDF/PNG/SVG/report pass; real offline/
+narrow browser graph<->sequence/zoom/pan/seam-copy and native keys pass.
+Stop after scoped push/remote verification; no automatic next scientific step.
+
 # R344 completed — present strict/provisional208, quantified fit; STOP
 
 Read photo2/R344_REPORT.md and R344_REPRODUCE.md. Offline review:

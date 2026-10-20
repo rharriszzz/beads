@@ -9821,3 +9821,32 @@ remaining contradictory bodies (future, not begun), possible201/0/7 if all yello
 Independent2703hashes/1456strict/18738heldoutvectors/20matched/9divisor/5nativecrop
 checks, fresh10science+17exactartifact replay, offline/mobile/native interactions pass.
 No automatic R345. Report photo2/R344_REPORT.md. Stop after scoped remote delivery.
+
+## R344 extension — original graph-paper display and general method
+
+User repeats the same two explicit yellow judgments and asks to recover the
+original6.5bead graph-paper presentation: alternate6/7 horizontal rows, +1right,
++6upleft,+7upright, half-pitch offset, correct lateral identification, each chosen
+index once between thin start/end cuts, periodic context, slight ellipses, strict
+and provisional samecandidate, linked string/native evidence, zoomable and print
+exports. General standalone Markdown method must work beyond208 and derive actual
+index interval boundaries. Retain quantitative science/next-step recommendation;
+commit/push/verify and STOP, no automatic next investigation.
+
+Delivered extension of existing37a23300R344, science base6fa108f7: all13statistical
+products byte-identical,25oldpresentation files archived. General modular-strip
+layout, stepcutsforpartialrows, exact(13,-1)zeroindex seam;208->32rowrectangle,
+6/7alternating. 208chosenunique,312canonicalcontext plus optional624same-k lateral
+copies, allcopiesconsistentcolors/IDs, noobsinflation. Identicalellipses18x14,
+SVG/A4PDF/300dpi2481x3507 clean+numberedprints, linkedinteractive graph<->string/
+nativeviewer, zoom/pan,optionalindices/grid/diagonals/seams. Standalone
+photo2/GRAPH_PAPER_6_5_BEADS.md coversarbitraryL anddifferentorigins.
+
+Independent936point/2808direction/192generalcase/24544clearancechecks and4maker
+statespass. Eachmakerjudgmentalone198/3/7, both199/2/7 versus197/4/7 before.
+Alloldcolors/geometry/IDs/links preserved exceptauthorized two alreadyapplied
+pigments. Same1038/1041fitted,1024/1041geog,1038/1041wholeocc andhistorical
+results retained. Fresh14science+24exactartifactreplay,actualoffline/narrow/
+graph-string/zoom/drag/seam-copy browserchecks pass. Recommendation remains
+independent reobservation of3remaining83/189mismatchbodies; not begun.
+Stop after scoped remote delivery; no R345.
