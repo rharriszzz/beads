@@ -1,0 +1,90 @@
+{
+  "trials": [
+    {
+      "grid": 9,
+      "metrics": {
+        "alpha": 1.0,
+        "fit": {
+          "points": 19869,
+          "profiles": 107,
+          "rms": 0.06915209202216059,
+          "mae": 0.05226811283384815,
+          "robust_loss": 0.0016043679389435796
+        },
+        "validation": {
+          "points": 6507,
+          "profiles": 35,
+          "rms": 0.06426826666160361,
+          "mae": 0.04931078550870375,
+          "robust_loss": 0.0014573205468848636
+        },
+        "all": {
+          "points": 26376,
+          "profiles": 142,
+          "rms": 0.0679798549276113,
+          "mae": 0.05153853560816137,
+          "robust_loss": 0.0015680911198608502
+        }
+      }
+    },
+    {
+      "grid": 17,
+      "metrics": {
+        "alpha": 1.0,
+        "fit": {
+          "points": 19869,
+          "profiles": 107,
+          "rms": 0.06914392462285478,
+          "mae": 0.05235301828941172,
+          "robust_loss": 0.001606157935308062
+        },
+        "validation": {
+          "points": 6507,
+          "profiles": 35,
+          "rms": 0.06417558023111705,
+          "mae": 0.04910400316923784,
+          "robust_loss": 0.0014521638914043189
+        },
+        "all": {
+          "points": 26376,
+          "profiles": 142,
+          "rms": 0.06795198914594107,
+          "mae": 0.05155148123349075,
+          "robust_loss": 0.0015681673664696613
+        }
+      }
+    },
+    {
+      "grid": 33,
+      "metrics": {
+        "alpha": 1.0,
+        "fit": {
+          "points": 19869,
+          "profiles": 107,
+          "rms": 0.06910747574731228,
+          "mae": 0.05234355955409087,
+          "robust_loss": 0.0016046369759810577
+        },
+        "validation": {
+          "points": 6507,
+          "profiles": 35,
+          "rms": 0.06420284129252365,
+          "mae": 0.04910502211486888,
+          "robust_loss": 0.0014527450703271051
+        },
+        "all": {
+          "points": 26376,
+          "profiles": 142,
+          "rms": 0.06793040752027003,
+          "mae": 0.05154460735826825,
+          "robust_loss": 0.0015671650079005957
+        }
+      }
+    }
+  ],
+  "selected17_vs33_profile_rms": 0.0014602086964933608,
+  "selected17_vs33_profile_p95": 0.0035712138712970815,
+  "selected17_vs33_profile_max": 0.009927965191729338,
+  "comparison_pixels": 26439,
+  "policy": "Same whole2704-body occluder, camera, geometry, color, light position/diameter/fill. Only area-light sample count changes.635x796 images, distances sampled in native coordinates. No per-bead shadows isolated."
+}

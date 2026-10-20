@@ -1,0 +1,108 @@
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.10.unofficial (g++ 11 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ Richard Harris
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka
+
+With Assistance From: (Alphabetically)
+  Ton van den Broek   Nicolas Calimet     Jerome Grimbert     James Holsenback
+  Christoph Hormann   Nathan Kopp         Juha Nieminen
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini
+  Timothy Wegner      Drew Wells          Chris Young
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.37, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.3.0, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.74, http://www.boost.org/
+  OpenEXR 2.5.7 and IlmBase 2.5.7, Copyright (c) 2002-2011 Industrial Light &
+ Magic.
+
+Parser Options
+  Input file: /home/rharris/git/beads/photo2/r346/output/clear.pov
+  Remove bounds........On
+  Split unions.........Off
+  Library paths:
+    /usr/local/share/povray-3.7
+    /usr/local/share/povray-3.7/ini
+    /usr/local/share/povray-3.7/include
+    /home/rharris/git/beads/photo2/r345/output
+  Clock value:    0.000  (Animation off)
+Image Output Options
+  Image resolution.....2540 by 3182 (rows 1 to 3182, columns 1 to 2540).
+  Output file........../home/rharris/git/beads/photo2/r346/output/clear.png, 24
+ bpp PNG
+  Dithering............Off
+  Graphic display......Off
+  Mosaic preview.......Off
+  Continued trace......Off
+Information Output Options
+  All Streams to console..........On
+  Debug Stream to console.........On
+  Fatal Stream to console.........On
+  Render Stream to console........On
+  Statistics Stream to console....On
+  Warning Stream to console.......On
+==== [Parsing...] ==========================================================
+----------------------------------------------------------------------------
+Parser Statistics
+----------------------------------------------------------------------------
+Finite Objects:            1
+Infinite Objects:          0
+Light Sources:             2
+Total:                     3
+----------------------------------------------------------------------------
+Parser Time
+  Parse Time:       0 hours  0 minutes  0 seconds (0.001 seconds)
+              using 1 thread(s) with 0.000 CPU-seconds total
+  Bounding Time:    0 hours  0 minutes  0 seconds (0.000 seconds)
+              using 1 thread(s) with 0.000 CPU-seconds total
+----------------------------------------------------------------------------
+Render Options
+  Quality:  9
+  Bounding boxes.......On   Bounding threshold: 3
+  Antialiasing.........On  (Method 2, Threshold 0.150, Depth 2, Jitter Off,
+ Gamma 2.50)
+==== [Rendering...] ========================================================
+----------------------------------------------------------------------------
+Render Statistics
+Image Resolution 2540 x 3182
+----------------------------------------------------------------------------
+Pixels:          8598840   Samples:            1285   Smpls/Pxl: 0.00
+Rays:            8600125   Saved:                 0   Max Level: 1/12
+----------------------------------------------------------------------------
+Ray->Shape Intersection          Tests       Succeeded  Percentage
+----------------------------------------------------------------------------
+Prism                          8600125         8600125    100.00
+Prism Bound                   43000625        25800375     60.00
+Bounding Box                 232203375        17200250      7.41
+----------------------------------------------------------------------------
+Roots tested:              17200250   eliminated:                    0
+Shadow Ray Tests:         215003125   Succeeded:                     0
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Render Time:
+  Photon Time:      No photons
+  Radiosity Time:   No radiosity
+  Trace Time:       0 hours  0 minutes  3 seconds (3.905 seconds)
+              using 4 thread(s) with 14.455 CPU-seconds total
+POV-Ray finished

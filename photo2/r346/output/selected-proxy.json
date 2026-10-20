@@ -1,0 +1,40 @@
+{
+  "stage": "coarse grid only",
+  "accepted": false,
+  "superseded_by": "photo2/r346/config.json",
+  "result": {
+    "parameters": {
+      "id": "x-900_y-650_d350",
+      "position": [
+        -900,
+        -650,
+        850
+      ],
+      "diameter": 350
+    },
+    "metrics": {
+      "alpha": 1.1079590178983387,
+      "fit": {
+        "points": 19869,
+        "profiles": 107,
+        "rms": 0.13730193125752482,
+        "mae": 0.08535816655920794,
+        "robust_loss": 0.0035983506211733234
+      },
+      "validation": {
+        "points": 6507,
+        "profiles": 35,
+        "rms": 0.14452344035715167,
+        "mae": 0.08661180483609626,
+        "robust_loss": 0.0037219888331836083
+      },
+      "all": {
+        "points": 26376,
+        "profiles": 142,
+        "rms": 0.13911832525525455,
+        "mae": 0.08566744106132018,
+        "robust_loss": 0.003628852359327362
+      }
+    }
+  }
+}

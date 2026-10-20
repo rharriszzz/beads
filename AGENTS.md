@@ -1,3 +1,30 @@
+# R346 whole-necklace cast shadow completed; STOP
+
+Explicit R346 authorization supersedes the previous STOP for this lighting task.
+See photo2/R346_REPORT.md and R346_REPRODUCE.md. Primary scene/render under
+photo2/r346/output; comparison.jpg shows original/R345/R346; shadow-fields.png,
+shadow-profiles.png and eight enlarged crops cover the full loop and both sides.
+R345 camera, all2704 transforms, shape/materials, pattern/helicity and paper exact.
+One fixed tilted area source(-5500,-700,4000), diameter6000, grid17; shared warm
+room fill. No per-bead shadow targets, section lights, camera or geometry edits.
+96stations/192sides,142eligible contours; grayscale-only silhouette selection,
+conservative>=12px photo body band plus exact model-mask guards. Global quadratic
+log-RGB paper reference uses23312 points >260px from the entire traced necklace.
+Initial115..150px local reference was shadow-contaminated; archived/rejected in
+r346/development. Final profiles.json.gz and measurement freeze authoritative.
+Native render2540x3182 parses/renders. Paper-profile RMS20.4->6.8percentage points;
+held20.0->6.4; same-coordinate paper held19.8->8.1. Strong-photo medians:10%reach
+125.5px vsR346123.2;90..10falloff117.3 vs120.9. Contact under body remains hidden;
+near-paper12..20px quantified separately. Paper/background/edge uncertainty kept.
+162R344/R345 files sealed byte-exact. Independent PNG paper resampling, synthetic
+falloff/censoring, geometry/material/camera seals and both-side coverage pass.
+17vs33 area grid delta.146percentage-point RMS; embedded-ICC sensitivity retains
+improvement (R346 held6.7 vs6.4primary, no lighting refit). Original raw-RGB/sRGB-
+transfer convention retained/qualified. Camera alternatives rejected. No pigment
+selection, pattern-recognition, ledger edit or new scientific bead investigation.
+Prior untracked R340 work untouched. Stop after scoped commit/push/remote verify;
+no automatic R347 or further geometry/pattern/lighting campaign.
+
 # R345 POV-Ray reconstruction completed; STOP
 
 User explicitly authorized R345 and changes to beads.pov, superseding earlier STOP
