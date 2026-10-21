@@ -1,7 +1,14 @@
 # How a repeating bead pattern can reveal—or conceal—its hidden side
 
-*Draft 1 for discussion. The examples below are mathematical constructions;
-the proposed illustrations will be rendered in POV-Ray after the explanation
+A repeat divisible by thirteen can keep the same positions hidden in every copy,
+but it does not make the pattern impossible to recover. Recovery is possible
+when different views or occurrences reveal the needed positions and we can match
+those positions correctly. A repeat not divisible by thirteen helps by moving
+successive copies to different angular phases.
+
+*Draft 2 for discussion: short explanation first, then the full argument, a
+middle-sized example and the complete target candidate. The examples are
+mathematical constructions; the proposed illustrations will be rendered in POV-Ray after the explanation
 and examples have been reviewed. PDF production comes at the end of that process.*
 
 Knowing a pattern lets us predict hidden beads. Recovering an unknown pattern
@@ -58,8 +65,8 @@ simple measurement model, not an already verified simulation of glass optics.
 Number circumferential phases by `r=k mod 13`, where k is the string index. In the
 ideal helix their angles are `4πr/13`, measured from the front.
 
-- Reliably read phases: `0,1,6,7,12`, within 60° of the front.
-- Changed rear phases: `3,4,9,10`, more than 135° from the front.
+- Reliably read phases: `0, 1, 6, 7, 12`, within 60° of the front.
+- Changed rear phases: `3, 4, 9, 10`, more than 135° from the front.
 - All other phases keep red; their evidence is not needed.
 
 In each 13-bead group, the adversary changes only the four deep-rear phases.
@@ -141,7 +148,56 @@ occlusion and camera direction must actually expose the missing positions. The
 figures should demonstrate a specific mechanism rather than imply that every
 loop automatically reveals its entire circumference.
 
-## 4. Why the 208-bead candidate was recoverable here
+## 4. A middle-sized example: fifty-two beads, fully recoverable
+
+Consider this 52-bead pattern, shown as four groups of thirteen:
+
+```text
+RRRRYYYYBBBBR
+YYYYBBBBRRRRY
+BBBBRRRRYYYYB
+RYBRYBRYBRYBR
+```
+
+Its shortest period really is 52: it is not a 13- or 26-bead word written several
+times. It has enough longitudinal variation to distinguish the groups while
+remaining small enough to inspect every position.
+
+Hold the tube's orientation fixed and use the same clear-front rule as before.
+From the first viewing direction, we read 20 of its 52 positions. Because 52 is a
+multiple of 13, simply observing more identically facing repetitions never fills
+the gaps.
+
+Now examine it from three directions around the tube: 0°,120° and 240°. Keep a
+reference position and reading direction so the observations can be aligned.
+In our ideal color-reading model, the three views give:
+
+| View direction | Readable phase classes | Pattern positions read |
+|---:|---|---:|
+| 0° | 0, 1, 6, 7, 12 | 20 of 52 |
+| 120° | 2, 3, 8, 9 | 16 of 52 |
+| 240° | 4, 5, 10, 11 | 16 of 52 |
+| Combined | All thirteen classes | **52 of 52** |
+
+Each gap is filled by a direct reading in another view. We need no rule guessing
+the back's colors from the front. These could be three photographs of one part
+of a tube, or three correctly matched occurrences facing complementary directions
+in one photograph. Actual optical visibility will need checking in the POV-Ray
+version, as with the first example.
+
+This illustrates **many** decodable patterns rather than a lucky choice of colors.
+The coverage argument does not depend on any of the 52 color choices: changing
+them leaves every position observable in at least one view. The same construction
+works for any length 13m under this phase model, provided the views and position
+correspondences are available. Some words will have a shorter true period; the
+specific word above is checked to have shortest period 52.
+
+The example also identifies what is doing the work. With one fixed-facing view,
+the color word is underdetermined. Complementary observations establish it.
+Being divisible by thirteen has neither changed the color information in a
+measurement nor prevented different measurements from completing the pattern.
+
+## 5. The full 208-bead target of this branch
 
 The proposed length 208 is 16 times 13. It therefore has the alignment that could
 defeat the straight-tube example. Divisibility did not become mathematically
@@ -180,7 +236,55 @@ The best 13-bead word fits only 43.37% of the retained observations; the best 10
 word fits 91.73%; 208 fits all of them. This is compatibility with the retained
 labels, not independent proof of the physical pattern or indexing.
 
-## 5. Proposed POV-Ray figures
+### The complete candidate, with its uncertainty visible
+
+The table below contains all 208 positions of the branch's current candidate.
+`R` means red, `Y` yellow and `B` black. In the complete-candidate column,
+lowercase `b` marks the seven black assignments that lack strict corroboration.
+The strict-evidence column leaves those same positions as `?`; every other entry
+has the current R347 support status. The uppercase stored candidate remains
+unchanged.
+
+Positions are zero-based in the current A indexing, relative to C-1302-0316.
+The chosen origin and reading direction are conventions, not a recovered physical
+start of the necklace. The full working necklace realization uses thirteen copies
+of this block, giving 2704 beads under the conditional closure interpretation.
+Each line groups thirteen string positions for readability;
+it spans two turns, rather than a single row of thirteen beads. The eventual
+crochet chart will use alternating six/seven-bead rows.
+
+<!-- BEGIN_CURRENT_208_TABLE -->
+| String positions | Strict evidence | Complete candidate (`b` tentative) |
+|---|---|---|
+| 0–12 | `YBYYBYBYBYBYR` | `YBYYBYBYBYBYR` |
+| 13–25 | `BYBBYRRBYBYRB` | `BYBBYRRBYBYRB` |
+| 26–38 | `RBYYRBBRBYRBR` | `RBYYRBBRBYRBR` |
+| 39–51 | `BRBR?RBRBRRBR` | `BRBRbRBRBRRBR` |
+| 52–64 | `RBRYRBRBRYYRB` | `RBRYRBRBRYYRB` |
+| 65–77 | `BRYBYRBRYB?YR` | `BRYBYRBRYBbYR` |
+| 78–90 | `RYBY?YRYBYY?Y` | `RYBYbYRYBYYbY` |
+| 91–103 | `YBYBYBYBYBYBY` | `YBYBYBYBYBYBY` |
+| 104–116 | `RBYBBYRRBYBYR` | `RBYBBYRRBYBYR` |
+| 117–129 | `BRBYYRBBRBYRB` | `BRBYYRBBRBYRB` |
+| 130–142 | `RBRBRBRRBR?RB` | `RBRBRBRRBRbRB` |
+| 143–155 | `BRBR?RBRBRRBR` | `BRBRbRBRBRRBR` |
+| 156–168 | `RBRYRBRBRYYRB` | `RBRYRBRBRYYRB` |
+| 169–181 | `BRYBYRBRYBBYR` | `BRYBYRBRYBBYR` |
+| 182–194 | `RYBY?YRYBYYBY` | `RYBYbYRYBYYBY` |
+| 195–207 | `YBYBYBYBYBBYB` | `YBYBYBYBYBBYB` |
+<!-- END_CURRENT_208_TABLE -->
+
+The tentative black positions are 43, 75, 82, 89, 140, 147 and 186. They all have
+observations; the shortage is corroboration, not complete invisibility. In this
+presentation, the 201 supported positions contain 62 red,62 yellow and 77 black;
+the complete candidate contains 62 red,62 yellow and 84 black.
+
+The colors come from the saved [208-position candidate](r344/pattern208.json).
+The support distinction comes from the later [R347 assessment](r347/answers/assessment.json),
+not the older R344 strict table. The original pattern chart has not yet supplied
+independent confirmation that this is the exact intended word.
+
+## 6. Proposed POV-Ray figures
 
 These are illustration specifications, not completed figures. The example words,
 phase conventions, view and legend should remain consistent across panels.
@@ -208,7 +312,16 @@ the position clearly arriving at the front; the near-edge occurrence remains
 unread. Use the same camera, lighting, bead dimensions and readable labels.
 Perspective and reflections should support the explanation, not obscure it.
 
-### Figure C: the actual evidence covers the proposed repeat
+### Figure C: a 52-bead repeat assembled from complementary views
+
+Render the middle-sized pattern at the three specified viewing directions, with
+the same reference bead, index convention and clear-front rule. Under each view,
+show only the color readings that view genuinely supports. A combined indexed
+strip shows where all 52 entries come from; its cells should link visibly to
+their source view. The reader should be able to follow a hidden position into
+a readable view without trusting a complicated geometric argument.
+
+### Figure D: the full target and its actual observation coverage
 
 Use the saved photograph-to-index assignments to make an occurrence-by-position
 coverage diagram. Observed cells carry their recorded colors; unobserved cells
@@ -218,14 +331,22 @@ covering all 208 positions. Repeated display copies and the withheld Q1 do not
 add evidence. This diagram can use an orthographic POV-Ray scene for clear,
 consistent presentation without pretending it is a new physical reconstruction.
 
+Alongside the coverage, show the complete 208-bead candidate on alternating 6/7
+crochet graph paper, with row/string indices, repeat boundaries and the seven
+tentative blacks marked. If side extensions are included, identify them as
+same-index copies. Pair a whole-necklace overview with a readable repeat detail
+so the target is recognizable and every displayed color can be traced to the
+table above. The observed coverage and the candidate's completion must remain
+visually distinct.
+
 If we add a curved-tube explanatory rendering, label it an illustration of a
 possible exposure mechanism. The coverage diagram is the direct evidence for
 the saved mapping; an attractive render is not a substitute for it.
 
 ## Sources and limits for this draft
 
-The first two examples are deliberately constructed examples, not alternative
-fits to the necklace or claims about its physical bead count. Their arithmetic
+The 26/27 comparison and 52-bead example are deliberately constructed examples,
+not alternative fits to the necklace or claims about its physical bead count. Their arithmetic
 is checked in [visibility-example checks](retrospective/visibility-example-checks.json)
 by [a small independent-enumeration script](retrospective/visibility_examples.py).
 
