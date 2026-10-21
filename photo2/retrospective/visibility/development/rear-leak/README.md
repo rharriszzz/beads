@@ -1,0 +1,3 @@
+# Rejected initial illustration
+
+The four rear phase classes in Draft 2 are outside the selected reliable-reading mask, but their surfaces are not all optically hidden in this constructed geometry. Swapping positions 4 and 17 changed front-view pixels. This epoch is retained as a counterexample to inferring surface occlusion from bead-center phase. It also exposed reversed text and text-object cast shadows, corrected in the delivered figures. The delivered adversary changes only the two deepest rear phase classes (3 and 10); its changed bodies are separately checked for zero front surface pixels. No scientific necklace data were changed.
