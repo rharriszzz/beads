@@ -1,0 +1,4634 @@
+{
+  "passed": true,
+  "observation_model": "Ideal phase-only reliable color mask; not ray-traced visibility.",
+  "readable_phases": [
+    0,
+    1,
+    6,
+    7,
+    12
+  ],
+  "changed_rear_phases": [
+    3,
+    4,
+    9,
+    10
+  ],
+  "pattern_A": "RRRBBRRRRBBRRRRRYYRRRRYYRR",
+  "pattern_B": "RRRBYRRRRBBRRRRRYBRRRRYYRR",
+  "pattern_27": "RRRBBRRRRBBRRRRRYYRRRRYYRRR",
+  "shortest_periods": [
+    26,
+    26,
+    27
+  ],
+  "A_counts": {
+    "R": 18,
+    "B": 4,
+    "Y": 4
+  },
+  "B_counts": {
+    "R": 18,
+    "B": 4,
+    "Y": 4
+  },
+  "same_color_counts_A_B": true,
+  "distinct_up_to_rotation_and_reversal": true,
+  "same_visible_measurements_A_B": true,
+  "copies_examined": 13,
+  "positions_read_26": 10,
+  "positions_read_27": 27,
+  "clear_readings_per_27_position": 5,
+  "selected_position": 3,
+  "selected_position_phases": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "actual_necklace_input_sha256": {
+    "photo2/r344/graph.json.gz": "f8ec341b72f0376f3c9dce2e6096f728c224e3069d5e159c6dbf1e7fbe015dbb",
+    "photo2/r347/answers/assessment.json": "5fcc8f28dc253eb235775efb1769ba0043315248ee4a0f89525449bd0b4a1f32"
+  },
+  "actual_retained_observations": 1040,
+  "actual_observed_pattern_positions": 208,
+  "actual_coverage": {
+    "0": [
+      {
+        "id": "C-0639-0573",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1302-0316",
+        "occurrence": 0
+      },
+      {
+        "id": "C-1940-0508",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2156-2547",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2195-1168",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2304-1856",
+        "occurrence": 3
+      }
+    ],
+    "1": [
+      {
+        "id": "D40-K-2128-2535",
+        "occurrence": 4
+      },
+      {
+        "id": "K-1620-3025",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1136-2124",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1920-531",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-2167-1179",
+        "occurrence": 2
+      },
+      {
+        "id": "RF70T-K-2273-1856",
+        "occurrence": 3
+      }
+    ],
+    "2": [
+      {
+        "id": "C-1011-2772",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1149-2150",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1607-2991",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1744-1809",
+        "occurrence": 8
+      },
+      {
+        "id": "C-2100-2525",
+        "occurrence": 4
+      }
+    ],
+    "3": [
+      {
+        "id": "C-1034-2749",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1312-1521",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1774-1818",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1169-2185",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P143242",
+        "occurrence": 5
+      }
+    ],
+    "4": [
+      {
+        "id": "K-0603-1624",
+        "occurrence": 10
+      },
+      {
+        "id": "K-1296-1491",
+        "occurrence": 9
+      },
+      {
+        "id": "R332-R-0196-0188",
+        "occurrence": 12
+      },
+      {
+        "id": "REC266-P054157",
+        "occurrence": 11
+      }
+    ],
+    "5": [
+      {
+        "id": "C-0603-1587",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0625-0525",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1291-1456",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1311-0261",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-0215-1127",
+        "occurrence": 11
+      }
+    ],
+    "6": [
+      {
+        "id": "K-0646-0551",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1319-0295",
+        "occurrence": 0
+      },
+      {
+        "id": "K-1965-0511",
+        "occurrence": 1
+      },
+      {
+        "id": "MAT25-K-2215-1181",
+        "occurrence": 2
+      },
+      {
+        "id": "MAT25-K-2317-1873",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P054502",
+        "occurrence": 11
+      }
+    ],
+    "7": [
+      {
+        "id": "C-1150-2102",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1324-0332",
+        "occurrence": 0
+      },
+      {
+        "id": "C-1603-3043",
+        "occurrence": 5
+      },
+      {
+        "id": "C-2132-2559",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2186-1195",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2284-1877",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-1941-0539",
+        "occurrence": 1
+      }
+    ],
+    "8": [
+      {
+        "id": "D40-K-2099-2550",
+        "occurrence": 4
+      },
+      {
+        "id": "K-1161-2121",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1593-3018",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-985-2766",
+        "occurrence": 6
+      }
+    ],
+    "9": [
+      {
+        "id": "C-1007-2744",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1180-2153",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1580-2981",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1766-1792",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-R-0147-0142",
+        "occurrence": 9
+      }
+    ],
+    "10": [
+      {
+        "id": "K-0583-1636",
+        "occurrence": 10
+      },
+      {
+        "id": "K-1284-1506",
+        "occurrence": 9
+      },
+      {
+        "id": "REC266-P086547",
+        "occurrence": 8
+      }
+    ],
+    "11": [
+      {
+        "id": "C-0585-1605",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0632-0497",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1275-1474",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-196-1102",
+        "occurrence": 11
+      }
+    ],
+    "12": [
+      {
+        "id": "C-0234-1104",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0584-1573",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0657-0524",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1339-0277",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-1990-520",
+        "occurrence": 1
+      }
+    ],
+    "13": [
+      {
+        "id": "D40-K-1967-0541",
+        "occurrence": 1
+      },
+      {
+        "id": "K-1341-0309",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2207-1211",
+        "occurrence": 2
+      },
+      {
+        "id": "K-2299-1896",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-2135-2583",
+        "occurrence": 4
+      },
+      {
+        "id": "R332-B-0199-0186",
+        "occurrence": 12
+      }
+    ],
+    "14": [
+      {
+        "id": "C-0959-2751",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1175-2104",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1578-3044",
+        "occurrence": 5
+      },
+      {
+        "id": "C-2105-2574",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2179-1221",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2267-1898",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P027449",
+        "occurrence": 1
+      }
+    ],
+    "15": [
+      {
+        "id": "D40-K-1753-1768",
+        "occurrence": 8
+      },
+      {
+        "id": "K-1191-2129",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1565-3004",
+        "occurrence": 5
+      },
+      {
+        "id": "MAT25-K-0980-2735",
+        "occurrence": 6
+      }
+    ],
+    "16": [
+      {
+        "id": "K-1010-2715",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1207-2155",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1268-1526",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1783-1774",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1556-2981",
+        "occurrence": 5
+      }
+    ],
+    "17": [
+      {
+        "id": "C-0190-1076",
+        "occurrence": 11
+      },
+      {
+        "id": "E5-0562-1620",
+        "occurrence": 10
+      },
+      {
+        "id": "E5-1258-1496",
+        "occurrence": 9
+      },
+      {
+        "id": "R332-Y-0197-0189",
+        "occurrence": 12
+      }
+    ],
+    "18": [
+      {
+        "id": "C-0223-1081",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0565-1588",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0660-0499",
+        "occurrence": 12
+      },
+      {
+        "id": "NEW-1247-1469",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1355-256",
+        "occurrence": 0
+      }
+    ],
+    "19": [
+      {
+        "id": "C-0257-1090",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0680-0529",
+        "occurrence": 12
+      },
+      {
+        "id": "E5-2230-1226",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-2321-1915",
+        "occurrence": 3
+      },
+      {
+        "id": "P5-1364-0299",
+        "occurrence": 0
+      },
+      {
+        "id": "P5-1994-0552",
+        "occurrence": 1
+      },
+      {
+        "id": "R332-R-0167-0155",
+        "occurrence": 10
+      }
+    ],
+    "20": [
+      {
+        "id": "D40-K-2110-2601",
+        "occurrence": 4
+      },
+      {
+        "id": "K-2199-1236",
+        "occurrence": 2
+      },
+      {
+        "id": "K-2289-1917",
+        "occurrence": 3
+      },
+      {
+        "id": "RF70T-K-1965-0575",
+        "occurrence": 1
+      }
+    ],
+    "21": [
+      {
+        "id": "C-0957-2725",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1205-2103",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1552-3030",
+        "occurrence": 5
+      },
+      {
+        "id": "C-2078-2582",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2170-1243",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P083772",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P092706",
+        "occurrence": 3
+      }
+    ],
+    "22": [
+      {
+        "id": "D40-K-1772-1751",
+        "occurrence": 8
+      },
+      {
+        "id": "K-0990-2705",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1219-2134",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-1538-2998",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1251-1537",
+        "occurrence": 9
+      }
+    ],
+    "23": [
+      {
+        "id": "C-0538-1631",
+        "occurrence": 10
+      },
+      {
+        "id": "C-1240-1518",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1241-2153",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1805-1752",
+        "occurrence": 8
+      }
+    ],
+    "24": [
+      {
+        "id": "C-0541-1602",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0672-0478",
+        "occurrence": 12
+      },
+      {
+        "id": "E5-1231-1486",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-215-1056",
+        "occurrence": 11
+      }
+    ],
+    "25": [
+      {
+        "id": "K-0248-1065",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0544-1573",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0689-0504",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1377-0268",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-2019-559",
+        "occurrence": 1
+      }
+    ],
+    "26": [
+      {
+        "id": "C-0712-0528",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1391-0312",
+        "occurrence": 0
+      },
+      {
+        "id": "C-1993-0580",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2221-1252",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2306-1940",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-2108-2621",
+        "occurrence": 4
+      }
+    ],
+    "27": [
+      {
+        "id": "D40-K-2081-2611",
+        "occurrence": 4
+      },
+      {
+        "id": "MAT25-K-2270-1942",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1221-2081",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1530-3049",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-2185-1265",
+        "occurrence": 2
+      }
+    ],
+    "28": [
+      {
+        "id": "C-0969-2696",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1231-2109",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1526-3018",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1760-1726",
+        "occurrence": 8
+      },
+      {
+        "id": "C-2059-2590",
+        "occurrence": 4
+      }
+    ],
+    "29": [
+      {
+        "id": "C-1001-2678",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1226-1539",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1250-2138",
+        "occurrence": 7
+      },
+      {
+        "id": "E5-1792-1727",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1519-2976",
+        "occurrence": 5
+      }
+    ],
+    "30": [
+      {
+        "id": "C-0518-1615",
+        "occurrence": 10
+      },
+      {
+        "id": "E5-1214-1506",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-686-462",
+        "occurrence": 12
+      },
+      {
+        "id": "REC266-P049438",
+        "occurrence": 11
+      }
+    ],
+    "31": [
+      {
+        "id": "K-0238-1041",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0516-1582",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0701-0475",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1208-1477",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1398-0248",
+        "occurrence": 0
+      }
+    ],
+    "32": [
+      {
+        "id": "K-0723-0509",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1403-0284",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2018-0588",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2236-1268",
+        "occurrence": 2
+      },
+      {
+        "id": "NEW-2320-1961",
+        "occurrence": 3
+      },
+      {
+        "id": "R332-B-0168-0156",
+        "occurrence": 10
+      },
+      {
+        "id": "REC266-P050477",
+        "occurrence": 11
+      }
+    ],
+    "33": [
+      {
+        "id": "C-1991-0608",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2084-2635",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2207-1279",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2287-1960",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P015647",
+        "occurrence": 0
+      }
+    ],
+    "34": [
+      {
+        "id": "D40-K-1248-2087",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1508-3038",
+        "occurrence": 5
+      },
+      {
+        "id": "MAT25-K-2054-2616",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-2259-1961",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-946-2684",
+        "occurrence": 6
+      }
+    ],
+    "35": [
+      {
+        "id": "C-0978-2667",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1263-2116",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1775-1706",
+        "occurrence": 8
+      },
+      {
+        "id": "E5-1503-2999",
+        "occurrence": 5
+      },
+      {
+        "id": "REC266-P074746",
+        "occurrence": 9
+      }
+    ],
+    "36": [
+      {
+        "id": "C-1200-1527",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1806-1697",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-493-1622",
+        "occurrence": 10
+      },
+      {
+        "id": "R332-R-0118-0111",
+        "occurrence": 7
+      }
+    ],
+    "37": [
+      {
+        "id": "K-0496-1602",
+        "occurrence": 10
+      },
+      {
+        "id": "K-1184-1490",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-233-1012",
+        "occurrence": 11
+      },
+      {
+        "id": "NEW-713-455",
+        "occurrence": 12
+      }
+    ],
+    "38": [
+      {
+        "id": "C-0267-1020",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0505-1557",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0730-0480",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1422-0264",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-2041-601",
+        "occurrence": 1
+      }
+    ],
+    "39": [
+      {
+        "id": "D40-K-2299-1983",
+        "occurrence": 3
+      },
+      {
+        "id": "K-0750-0506",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1429-0302",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2012-0620",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2088-2661",
+        "occurrence": 4
+      },
+      {
+        "id": "K-2225-1294",
+        "occurrence": 2
+      }
+    ],
+    "40": [
+      {
+        "id": "E5-2053-2643",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-2271-1983",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1265-2070",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1487-3054",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1990-639",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-2196-1305",
+        "occurrence": 2
+      },
+      {
+        "id": "NEW-924-2665",
+        "occurrence": 6
+      }
+    ],
+    "41": [
+      {
+        "id": "K-0951-2652",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1278-2097",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1473-3021",
+        "occurrence": 5
+      },
+      {
+        "id": "MAT25-K-1754-1687",
+        "occurrence": 8
+      }
+    ],
+    "42": [
+      {
+        "id": "C-1184-1547",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1291-2128",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1478-2990",
+        "occurrence": 5
+      },
+      {
+        "id": "E5-0978-2636",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-1787-1680",
+        "occurrence": 8
+      }
+    ],
+    "43": [
+      {
+        "id": "K-0471-1609",
+        "occurrence": 10
+      },
+      {
+        "id": "K-1171-1518",
+        "occurrence": 9
+      }
+    ],
+    "44": [
+      {
+        "id": "C-0257-0994",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0481-1576",
+        "occurrence": 10
+      },
+      {
+        "id": "NEW-1160-1486",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1442-248",
+        "occurrence": 0
+      },
+      {
+        "id": "P5-0743-0454",
+        "occurrence": 12
+      }
+    ],
+    "45": [
+      {
+        "id": "E7-0290-1001",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0758-0486",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1443-0285",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2039-0628",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2244-1307",
+        "occurrence": 2
+      },
+      {
+        "id": "NEW-2316-2002",
+        "occurrence": 3
+      }
+    ],
+    "46": [
+      {
+        "id": "C-2061-2670",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2216-1323",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2286-2005",
+        "occurrence": 3
+      },
+      {
+        "id": "P5-2011-0649",
+        "occurrence": 1
+      },
+      {
+        "id": "R332-R-0004-0003",
+        "occurrence": 0
+      },
+      {
+        "id": "R332-R-0116-0115",
+        "occurrence": 7
+      }
+    ],
+    "47": [
+      {
+        "id": "C-2022-2657",
+        "occurrence": 4
+      },
+      {
+        "id": "K-1291-2071",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1467-3046",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-2257-2004",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-930-2640",
+        "occurrence": 6
+      }
+    ],
+    "48": [
+      {
+        "id": "C-1306-2103",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1766-1663",
+        "occurrence": 8
+      },
+      {
+        "id": "E5-0956-2624",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-1455-3009",
+        "occurrence": 5
+      },
+      {
+        "id": "R332-R-0150-0145",
+        "occurrence": 9
+      }
+    ],
+    "49": [
+      {
+        "id": "C-0445-1614",
+        "occurrence": 10
+      },
+      {
+        "id": "C-1154-1539",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1796-1653",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-R-0119-0112",
+        "occurrence": 7
+      }
+    ],
+    "50": [
+      {
+        "id": "K-0455-1587",
+        "occurrence": 10
+      },
+      {
+        "id": "K-1146-1511",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-252-967",
+        "occurrence": 11
+      },
+      {
+        "id": "REC266-P020901",
+        "occurrence": 12
+      }
+    ],
+    "51": [
+      {
+        "id": "C-0283-0977",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0770-0457",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1467-0258",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-2061-640",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-463-1549",
+        "occurrence": 10
+      }
+    ],
+    "52": [
+      {
+        "id": "C-1477-0290",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2038-0658",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2238-1336",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2303-2026",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-2053-2692",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-790-490",
+        "occurrence": 12
+      }
+    ],
+    "53": [
+      {
+        "id": "K-1309-2054",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1443-3062",
+        "occurrence": 5
+      },
+      {
+        "id": "K-2026-2688",
+        "occurrence": 4
+      },
+      {
+        "id": "MAT25-K-2268-2028",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-2207-1350",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P032517",
+        "occurrence": 1
+      }
+    ],
+    "54": [
+      {
+        "id": "C-0935-2612",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1321-2080",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1440-3032",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1745-1648",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1999-2655",
+        "occurrence": 4
+      }
+    ],
+    "55": [
+      {
+        "id": "C-1331-2113",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1775-1637",
+        "occurrence": 8
+      },
+      {
+        "id": "E5-0962-2596",
+        "occurrence": 6
+      },
+      {
+        "id": "REC266-P075318",
+        "occurrence": 9
+      },
+      {
+        "id": "REC266-P144445",
+        "occurrence": 5
+      }
+    ],
+    "56": [
+      {
+        "id": "C-1128-1530",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-428-1595",
+        "occurrence": 10
+      },
+      {
+        "id": "REC266-P045287",
+        "occurrence": 11
+      }
+    ],
+    "57": [
+      {
+        "id": "K-0276-0952",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0438-1566",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0782-0434",
+        "occurrence": 12
+      },
+      {
+        "id": "NEW-1119-1502",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1485-242",
+        "occurrence": 0
+      }
+    ],
+    "58": [
+      {
+        "id": "C-0309-0966",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0801-0466",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1497-0271",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2061-0672",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2257-1351",
+        "occurrence": 2
+      }
+    ],
+    "59": [
+      {
+        "id": "K-2025-2705",
+        "occurrence": 4
+      },
+      {
+        "id": "K-2227-1364",
+        "occurrence": 2
+      },
+      {
+        "id": "K-2287-2050",
+        "occurrence": 3
+      },
+      {
+        "id": "MAT25-K-2028-0689",
+        "occurrence": 1
+      },
+      {
+        "id": "REC266-P014934",
+        "occurrence": 0
+      }
+    ],
+    "60": [
+      {
+        "id": "C-0911-2593",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1339-2060",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1998-2685",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-1413-3039",
+        "occurrence": 5
+      },
+      {
+        "id": "R332-R-0038-0035",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P099088",
+        "occurrence": 3
+      }
+    ],
+    "61": [
+      {
+        "id": "C-1423-3004",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1749-1623",
+        "occurrence": 8
+      },
+      {
+        "id": "E5-0942-2582",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-1346-2094",
+        "occurrence": 7
+      }
+    ],
+    "62": [
+      {
+        "id": "C-0403-1597",
+        "occurrence": 10
+      },
+      {
+        "id": "C-1116-1554",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1777-1612",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-Y-0104-0097",
+        "occurrence": 6
+      }
+    ],
+    "63": [
+      {
+        "id": "C-0267-0926",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0412-1572",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0799-0410",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1106-1523",
+        "occurrence": 9
+      }
+    ],
+    "64": [
+      {
+        "id": "D40-K-1514-0255",
+        "occurrence": 0
+      },
+      {
+        "id": "K-0303-0940",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0423-1544",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0813-0441",
+        "occurrence": 12
+      },
+      {
+        "id": "K-2080-0686",
+        "occurrence": 1
+      },
+      {
+        "id": "REC266-P065989",
+        "occurrence": 2
+      }
+    ],
+    "65": [
+      {
+        "id": "K-0829-0471",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1510-0292",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2051-0701",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2246-1381",
+        "occurrence": 2
+      },
+      {
+        "id": "K-2295-2071",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-2022-2729",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P045647",
+        "occurrence": 11
+      }
+    ],
+    "66": [
+      {
+        "id": "C-1394-3051",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1997-2715",
+        "occurrence": 4
+      },
+      {
+        "id": "H5-2261-2067",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1357-2043",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-2219-1390",
+        "occurrence": 2
+      },
+      {
+        "id": "R332-R-0022-0020",
+        "occurrence": 1
+      }
+    ],
+    "67": [
+      {
+        "id": "C-0920-2567",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1363-2071",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1398-3017",
+        "occurrence": 5
+      },
+      {
+        "id": "R332-Y-0071-0067",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P077496",
+        "occurrence": 8
+      }
+    ],
+    "68": [
+      {
+        "id": "K-1098-1569",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1750-1601",
+        "occurrence": 8
+      },
+      {
+        "id": "MAT25-K-0953-2555",
+        "occurrence": 6
+      },
+      {
+        "id": "NEW-1375-2099",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P144400",
+        "occurrence": 5
+      }
+    ],
+    "69": [
+      {
+        "id": "C-0384-1579",
+        "occurrence": 10
+      },
+      {
+        "id": "C-1089-1544",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1770-1577",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-Y-0185-0177",
+        "occurrence": 11
+      }
+    ],
+    "70": [
+      {
+        "id": "C-0294-0912",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0395-1544",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0826-0414",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1073-1515",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1535-240",
+        "occurrence": 0
+      }
+    ],
+    "71": [
+      {
+        "id": "E5-2306-2092",
+        "occurrence": 3
+      },
+      {
+        "id": "K-0329-0923",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0847-0449",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1539-0268",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2077-0713",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2266-1395",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P073002",
+        "occurrence": 10
+      }
+    ],
+    "72": [
+      {
+        "id": "C-2001-2743",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2240-1406",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2276-2090",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-2052-0728",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-1538-305",
+        "occurrence": 0
+      },
+      {
+        "id": "R332-R-0118-0117",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P023190",
+        "occurrence": 12
+      }
+    ],
+    "73": [
+      {
+        "id": "C-0905-2545",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1376-3030",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1383-2050",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1964-2713",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2247-2085",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P068228",
+        "occurrence": 2
+      }
+    ],
+    "74": [
+      {
+        "id": "K-0935-2540",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1380-2998",
+        "occurrence": 5
+      },
+      {
+        "id": "K-1395-2077",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-1719-1592",
+        "occurrence": 8
+      }
+    ],
+    "75": [
+      {
+        "id": "K-1069-1565",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1740-1575",
+        "occurrence": 8
+      }
+    ],
+    "76": [
+      {
+        "id": "C-0290-0887",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0364-1554",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0839-0392",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1060-1534",
+        "occurrence": 9
+      }
+    ],
+    "77": [
+      {
+        "id": "C-0320-0898",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0856-0421",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1559-0252",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2099-0725",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-0387-1525",
+        "occurrence": 10
+      },
+      {
+        "id": "REC266-P068073",
+        "occurrence": 2
+      }
+    ],
+    "78": [
+      {
+        "id": "C-2260-1425",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-1561-0289",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2077-0741",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2288-2112",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1992-2765",
+        "occurrence": 4
+      }
+    ],
+    "79": [
+      {
+        "id": "C-1353-3045",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1973-2743",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2045-0755",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2224-1430",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2252-2109",
+        "occurrence": 3
+      },
+      {
+        "id": "R332-Y-0119-0117",
+        "occurrence": 7
+      }
+    ],
+    "80": [
+      {
+        "id": "K-1354-3005",
+        "occurrence": 5
+      },
+      {
+        "id": "K-1410-2057",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-0915-2520",
+        "occurrence": 6
+      },
+      {
+        "id": "NEW-1942-2725",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P076585",
+        "occurrence": 8
+      }
+    ],
+    "81": [
+      {
+        "id": "C-1059-1589",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1364-2971",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1421-2087",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1721-1566",
+        "occurrence": 8
+      },
+      {
+        "id": "E5-0950-2512",
+        "occurrence": 6
+      }
+    ],
+    "82": [
+      {
+        "id": "K-1037-1557",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-339-1556",
+        "occurrence": 10
+      }
+    ],
+    "83": [
+      {
+        "id": "C-0315-0867",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0870-0396",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1032-1519",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1582-0235",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-0355-1525",
+        "occurrence": 10
+      },
+      {
+        "id": "REC266-P035619",
+        "occurrence": 1
+      }
+    ],
+    "84": [
+      {
+        "id": "C-0347-0884",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0883-0431",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1582-0272",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2098-0756",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2279-1442",
+        "occurrence": 2
+      },
+      {
+        "id": "NEW-2301-2134",
+        "occurrence": 3
+      }
+    ],
+    "85": [
+      {
+        "id": "C-0903-0449",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1585-0307",
+        "occurrence": 0
+      },
+      {
+        "id": "C-1977-2780",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2064-0771",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2267-2133",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-2245-1450",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P097043",
+        "occurrence": 7
+      }
+    ],
+    "86": [
+      {
+        "id": "D40-K-1329-3022",
+        "occurrence": 5
+      },
+      {
+        "id": "D40-K-1424-2037",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1943-2759",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-2237-2128",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-903-2501",
+        "occurrence": 6
+      }
+    ],
+    "87": [
+      {
+        "id": "C-1341-2982",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1438-2066",
+        "occurrence": 7
+      },
+      {
+        "id": "E5-0931-2495",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-1694-1563",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-Y-0073-0068",
+        "occurrence": 4
+      }
+    ],
+    "88": [
+      {
+        "id": "C-0314-1551",
+        "occurrence": 10
+      },
+      {
+        "id": "C-1026-1576",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1717-1540",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-Y-0122-0115",
+        "occurrence": 7
+      }
+    ],
+    "89": [
+      {
+        "id": "D40-K-1014-1544",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-317-843",
+        "occurrence": 11
+      },
+      {
+        "id": "NEW-326-1528",
+        "occurrence": 10
+      }
+    ],
+    "90": [
+      {
+        "id": "C-0346-1501",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0348-0860",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1608-0253",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2120-0769",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2300-1458",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-0895-0407",
+        "occurrence": 12
+      }
+    ],
+    "91": [
+      {
+        "id": "C-0384-0878",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1965-2799",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2088-0783",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2264-1469",
+        "occurrence": 2
+      },
+      {
+        "id": "C-2279-2155",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-1607-0290",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-914-431",
+        "occurrence": 12
+      }
+    ],
+    "92": [
+      {
+        "id": "K-1937-2783",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-1440-2018",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-2060-796",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-2235-1476",
+        "occurrence": 2
+      },
+      {
+        "id": "RF70T-K-2247-2151",
+        "occurrence": 3
+      }
+    ],
+    "93": [
+      {
+        "id": "C-1313-2998",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1452-2044",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1669-1561",
+        "occurrence": 8
+      },
+      {
+        "id": "C-1916-2762",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-0915-2472",
+        "occurrence": 6
+      }
+    ],
+    "94": [
+      {
+        "id": "K-0949-2471",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1683-1538",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1463-2072",
+        "occurrence": 7
+      }
+    ],
+    "95": [
+      {
+        "id": "C-0297-1523",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0317-0814",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0999-1559",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1705-1514",
+        "occurrence": 8
+      }
+    ],
+    "96": [
+      {
+        "id": "K-0315-1496",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0343-0831",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0915-0382",
+        "occurrence": 12
+      },
+      {
+        "id": "NEW-989-1538",
+        "occurrence": 9
+      }
+    ],
+    "97": [
+      {
+        "id": "C-0343-1474",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0376-0848",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0932-0412",
+        "occurrence": 12
+      },
+      {
+        "id": "C-2113-0796",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2291-2178",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-1633-0278",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2283-1489",
+        "occurrence": 2
+      }
+    ],
+    "98": [
+      {
+        "id": "D40-K-2250-1499",
+        "occurrence": 2
+      },
+      {
+        "id": "K-1935-2809",
+        "occurrence": 4
+      },
+      {
+        "id": "K-2261-2177",
+        "occurrence": 3
+      },
+      {
+        "id": "MAT25-K-2078-0812",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-1621-315",
+        "occurrence": 0
+      }
+    ],
+    "99": [
+      {
+        "id": "C-0899-2449",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1288-3010",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1466-2022",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1910-2790",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-2226-2171",
+        "occurrence": 3
+      },
+      {
+        "id": "R332-Y-0041-0038",
+        "occurrence": 2
+      }
+    ],
+    "100": [
+      {
+        "id": "C-1893-2771",
+        "occurrence": 4
+      },
+      {
+        "id": "D40-K-0935-2451",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1479-2054",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-1660-1540",
+        "occurrence": 8
+      }
+    ],
+    "101": [
+      {
+        "id": "C-0272-1512",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0990-1588",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1677-1513",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P100583",
+        "occurrence": 7
+      }
+    ],
+    "102": [
+      {
+        "id": "K-0970-1557",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1681-1498",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-290-1494",
+        "occurrence": 10
+      },
+      {
+        "id": "NEW-343-803",
+        "occurrence": 11
+      }
+    ],
+    "103": [
+      {
+        "id": "C-0312-1471",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0941-0385",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1659-0261",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2137-0808",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2304-1502",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-0380-0823",
+        "occurrence": 11
+      }
+    ],
+    "104": [
+      {
+        "id": "C-2102-0824",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2269-2200",
+        "occurrence": 3
+      },
+      {
+        "id": "P5-1645-0309",
+        "occurrence": 0
+      },
+      {
+        "id": "P5-2273-1513",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P020356",
+        "occurrence": 12
+      }
+    ],
+    "105": [
+      {
+        "id": "K-1904-2820",
+        "occurrence": 4
+      },
+      {
+        "id": "MAT25-K-2237-2196",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1264-3012",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1483-2007",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-2237-1522",
+        "occurrence": 2
+      },
+      {
+        "id": "R332-R-0025-0023",
+        "occurrence": 1
+      }
+    ],
+    "106": [
+      {
+        "id": "C-0921-2428",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1274-2980",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1495-2031",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1881-2795",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P074050",
+        "occurrence": 8
+      }
+    ],
+    "107": [
+      {
+        "id": "D40-K-1648-1516",
+        "occurrence": 8
+      },
+      {
+        "id": "K-0969-1609",
+        "occurrence": 9
+      },
+      {
+        "id": "MAT25-K-1506-2056",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P116607",
+        "occurrence": 6
+      }
+    ],
+    "108": [
+      {
+        "id": "K-0262-1484",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0957-1583",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1660-1490",
+        "occurrence": 8
+      }
+    ],
+    "109": [
+      {
+        "id": "C-0286-1466",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0947-1546",
+        "occurrence": 9
+      },
+      {
+        "id": "C-0956-0362",
+        "occurrence": 12
+      },
+      {
+        "id": "E5-0368-0792",
+        "occurrence": 11
+      },
+      {
+        "id": "R332-Y-0007-0010",
+        "occurrence": 0
+      }
+    ],
+    "110": [
+      {
+        "id": "C-0313-1445",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0404-0808",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0973-0394",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1669-0293",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2126-0835",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2290-1530",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P106989",
+        "occurrence": 3
+      }
+    ],
+    "111": [
+      {
+        "id": "C-2247-2216",
+        "occurrence": 3
+      },
+      {
+        "id": "C-2254-1539",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-1671-0325",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2094-0852",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-1906-2843",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P020776",
+        "occurrence": 12
+      }
+    ],
+    "112": [
+      {
+        "id": "D40-K-1874-2821",
+        "occurrence": 4
+      },
+      {
+        "id": "K-1506-2006",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1247-2991",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-910-2406",
+        "occurrence": 6
+      },
+      {
+        "id": "REC266-P106767",
+        "occurrence": 3
+      }
+    ],
+    "113": [
+      {
+        "id": "C-1264-2957",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1523-2038",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1621-1521",
+        "occurrence": 8
+      },
+      {
+        "id": "C-1856-2802",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-0942-2408",
+        "occurrence": 6
+      }
+    ],
+    "114": [
+      {
+        "id": "K-1635-1495",
+        "occurrence": 8
+      },
+      {
+        "id": "MAT25-K-0941-1601",
+        "occurrence": 9
+      },
+      {
+        "id": "REC266-P115701",
+        "occurrence": 6
+      }
+    ],
+    "115": [
+      {
+        "id": "C-0259-1459",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0368-0764",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0929-1565",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1648-1459",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P016363",
+        "occurrence": 12
+      }
+    ],
+    "116": [
+      {
+        "id": "C-0291-1436",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0398-0782",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0986-0371",
+        "occurrence": 12
+      },
+      {
+        "id": "NEW-1697-280",
+        "occurrence": 0
+      },
+      {
+        "id": "R332-R-0158-0147",
+        "occurrence": 9
+      }
+    ],
+    "117": [
+      {
+        "id": "K-1695-0317",
+        "occurrence": 0
+      },
+      {
+        "id": "K-1894-2867",
+        "occurrence": 4
+      },
+      {
+        "id": "K-2118-0864",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2260-2239",
+        "occurrence": 3
+      },
+      {
+        "id": "K-2273-1553",
+        "occurrence": 2
+      },
+      {
+        "id": "NEW-1000-406",
+        "occurrence": 12
+      },
+      {
+        "id": "REC266-P038462",
+        "occurrence": 11
+      }
+    ],
+    "118": [
+      {
+        "id": "C-1522-1988",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1879-2849",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-2225-2233",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1223-2992",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-2080-878",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-2245-1563",
+        "occurrence": 2
+      },
+      {
+        "id": "R332-R-0106-0104",
+        "occurrence": 6
+      }
+    ],
+    "119": [
+      {
+        "id": "D40-K-1848-2825",
+        "occurrence": 4
+      },
+      {
+        "id": "K-0929-2384",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1234-2967",
+        "occurrence": 5
+      },
+      {
+        "id": "K-1536-2014",
+        "occurrence": 7
+      }
+    ],
+    "120": [
+      {
+        "id": "C-0968-2388",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1253-2928",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1553-2042",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1609-1499",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P077524",
+        "occurrence": 9
+      }
+    ],
+    "121": [
+      {
+        "id": "C-0234-1447",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0917-1589",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1621-1468",
+        "occurrence": 8
+      }
+    ],
+    "122": [
+      {
+        "id": "C-0259-1429",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0400-0751",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0905-1566",
+        "occurrence": 9
+      },
+      {
+        "id": "C-0999-0349",
+        "occurrence": 12
+      },
+      {
+        "id": "R332-R-0142-0132",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P013688",
+        "occurrence": 0
+      }
+    ],
+    "123": [
+      {
+        "id": "K-0429-0772",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1013-0389",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1721-0308",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2138-0880",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2268-2262",
+        "occurrence": 3
+      },
+      {
+        "id": "K-2289-1569",
+        "occurrence": 2
+      },
+      {
+        "id": "PROV326-290-1410",
+        "occurrence": 10
+      }
+    ],
+    "124": [
+      {
+        "id": "D40-K-2239-2263",
+        "occurrence": 3
+      },
+      {
+        "id": "D40-K-2261-1584",
+        "occurrence": 2
+      },
+      {
+        "id": "K-1868-2876",
+        "occurrence": 4
+      },
+      {
+        "id": "K-2104-0894",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-1706-342",
+        "occurrence": 0
+      }
+    ],
+    "125": [
+      {
+        "id": "C-1209-2970",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1847-2856",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-0934-2352",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-1549-1991",
+        "occurrence": 7
+      },
+      {
+        "id": "R332-R-0059-0056",
+        "occurrence": 3
+      }
+    ],
+    "126": [
+      {
+        "id": "E5-1574-1503",
+        "occurrence": 8
+      },
+      {
+        "id": "K-0957-2364",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1567-2019",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-1223-2943",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1828-2833",
+        "occurrence": 4
+      }
+    ],
+    "127": [
+      {
+        "id": "C-0900-1612",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1592-1479",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-R-0125-0118",
+        "occurrence": 7
+      }
+    ],
+    "128": [
+      {
+        "id": "E5-0889-1583",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1020-331",
+        "occurrence": 12
+      },
+      {
+        "id": "NEW-235-1418",
+        "occurrence": 10
+      },
+      {
+        "id": "NEW-396-724",
+        "occurrence": 11
+      },
+      {
+        "id": "REC266-P069702",
+        "occurrence": 8
+      }
+    ],
+    "129": [
+      {
+        "id": "D40-K-1746-0312",
+        "occurrence": 0
+      },
+      {
+        "id": "K-0264-1399",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0429-0746",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1023-0354",
+        "occurrence": 12
+      },
+      {
+        "id": "REC266-P042986",
+        "occurrence": 1
+      },
+      {
+        "id": "REC266-P074700",
+        "occurrence": 9
+      }
+    ],
+    "130": [
+      {
+        "id": "C-1048-0392",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1729-0337",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2282-1599",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-2131-0907",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2250-2285",
+        "occurrence": 3
+      }
+    ],
+    "131": [
+      {
+        "id": "D40-K-2217-2280",
+        "occurrence": 3
+      },
+      {
+        "id": "K-1841-2884",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-2100-921",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-2251-1608",
+        "occurrence": 2
+      }
+    ],
+    "132": [
+      {
+        "id": "C-0950-2338",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1198-2943",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1579-1993",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1822-2854",
+        "occurrence": 4
+      }
+    ],
+    "133": [
+      {
+        "id": "K-0885-1626",
+        "occurrence": 9
+      },
+      {
+        "id": "K-0981-2348",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1563-1489",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P097385",
+        "occurrence": 7
+      }
+    ],
+    "134": [
+      {
+        "id": "C-0870-1605",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1569-1455",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-R-0174-0166",
+        "occurrence": 10
+      }
+    ],
+    "135": [
+      {
+        "id": "D40-K-0421-0715",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0240-1389",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0861-1575",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1046-0339",
+        "occurrence": 12
+      }
+    ],
+    "136": [
+      {
+        "id": "C-0451-0731",
+        "occurrence": 11
+      },
+      {
+        "id": "E5-1059-0371",
+        "occurrence": 12
+      },
+      {
+        "id": "E5-1757-0332",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2301-1616",
+        "occurrence": 2
+      },
+      {
+        "id": "P5-2154-0921",
+        "occurrence": 1
+      }
+    ],
+    "137": [
+      {
+        "id": "C-2122-0936",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-1744-0360",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2228-2306",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-2271-1625",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P019399",
+        "occurrence": 12
+      },
+      {
+        "id": "REC266-P140422",
+        "occurrence": 4
+      }
+    ],
+    "138": [
+      {
+        "id": "D40-K-1589-1970",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1813-2878",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-2199-2298",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-948-2311",
+        "occurrence": 6
+      },
+      {
+        "id": "RF70T-K-1163-2935",
+        "occurrence": 5
+      }
+    ],
+    "139": [
+      {
+        "id": "C-0979-2326",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1189-2919",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1541-1501",
+        "occurrence": 8
+      },
+      {
+        "id": "C-1608-1998",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1792-2858",
+        "occurrence": 4
+      }
+    ],
+    "140": [
+      {
+        "id": "K-1543-1467",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-855-1626",
+        "occurrence": 9
+      }
+    ],
+    "141": [
+      {
+        "id": "C-0214-1380",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0422-0686",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0846-1598",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1545-1443",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1058-319",
+        "occurrence": 12
+      }
+    ],
+    "142": [
+      {
+        "id": "K-0249-1360",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0451-0707",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1073-0343",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1783-0330",
+        "occurrence": 0
+      },
+      {
+        "id": "REC266-P045234",
+        "occurrence": 1
+      }
+    ],
+    "143": [
+      {
+        "id": "D40-K-1772-0357",
+        "occurrence": 0
+      },
+      {
+        "id": "D40-K-2140-0953",
+        "occurrence": 1
+      },
+      {
+        "id": "K-1087-0372",
+        "occurrence": 12
+      },
+      {
+        "id": "K-2236-2331",
+        "occurrence": 3
+      },
+      {
+        "id": "K-2289-1643",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P034870",
+        "occurrence": 11
+      }
+    ],
+    "144": [
+      {
+        "id": "C-0950-2286",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1144-2947",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1600-1952",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1806-2907",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2201-2320",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1756-380",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-2113-963",
+        "occurrence": 1
+      },
+      {
+        "id": "NEW-2256-1649",
+        "occurrence": 2
+      }
+    ],
+    "145": [
+      {
+        "id": "K-0974-2300",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1159-2920",
+        "occurrence": 5
+      },
+      {
+        "id": "K-1616-1972",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-1786-2881",
+        "occurrence": 4
+      }
+    ],
+    "146": [
+      {
+        "id": "C-0835-1638",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1004-2311",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1521-1485",
+        "occurrence": 8
+      },
+      {
+        "id": "C-1634-2000",
+        "occurrence": 7
+      },
+      {
+        "id": "E5-1178-2887",
+        "occurrence": 5
+      },
+      {
+        "id": "R332-R-0078-0072",
+        "occurrence": 4
+      }
+    ],
+    "147": [
+      {
+        "id": "K-0824-1612",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1518-1455",
+        "occurrence": 8
+      }
+    ],
+    "148": [
+      {
+        "id": "C-0221-1351",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0451-0678",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0826-1579",
+        "occurrence": 9
+      },
+      {
+        "id": "E9-1088-0322",
+        "occurrence": 12
+      }
+    ],
+    "149": [
+      {
+        "id": "K-0481-0702",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1101-0353",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1797-0357",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2159-0969",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2308-1658",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P113465",
+        "occurrence": 3
+      }
+    ],
+    "150": [
+      {
+        "id": "C-2131-0981",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2277-1667",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-1785-0383",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2214-2349",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1799-2928",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P018675",
+        "occurrence": 12
+      }
+    ],
+    "151": [
+      {
+        "id": "D40-K-0971-2274",
+        "occurrence": 6
+      },
+      {
+        "id": "D40-K-1623-1947",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1780-2910",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-1132-2925",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-2186-2343",
+        "occurrence": 3
+      }
+    ],
+    "152": [
+      {
+        "id": "E5-1151-2893",
+        "occurrence": 5
+      },
+      {
+        "id": "E5-1648-1985",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1500-1502",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-1764-2887",
+        "occurrence": 4
+      },
+      {
+        "id": "P5-1004-2291",
+        "occurrence": 6
+      }
+    ],
+    "153": [
+      {
+        "id": "C-0809-1630",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1501-1472",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-R-0111-0104",
+        "occurrence": 6
+      },
+      {
+        "id": "R332-R-0127-0120",
+        "occurrence": 7
+      }
+    ],
+    "154": [
+      {
+        "id": "K-0802-1592",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1493-1439",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-199-1335",
+        "occurrence": 10
+      },
+      {
+        "id": "NEW-451-650",
+        "occurrence": 11
+      }
+    ],
+    "155": [
+      {
+        "id": "C-0234-1324",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0480-0670",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1116-0328",
+        "occurrence": 12
+      },
+      {
+        "id": "NEW-1829-357",
+        "occurrence": 0
+      }
+    ],
+    "156": [
+      {
+        "id": "C-1130-0364",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1813-0383",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2154-0993",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2297-1684",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-2227-2374",
+        "occurrence": 3
+      }
+    ],
+    "157": [
+      {
+        "id": "D40-K-2191-2368",
+        "occurrence": 3
+      },
+      {
+        "id": "E9-2263-1691",
+        "occurrence": 2
+      },
+      {
+        "id": "K-1774-2936",
+        "occurrence": 4
+      },
+      {
+        "id": "R332-B-0029-0027",
+        "occurrence": 1
+      },
+      {
+        "id": "R332-B-0109-0107",
+        "occurrence": 6
+      }
+    ],
+    "158": [
+      {
+        "id": "C-1125-2900",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1650-1950",
+        "occurrence": 7
+      },
+      {
+        "id": "CORE-1752-2910",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-1003-2267",
+        "occurrence": 6
+      }
+    ],
+    "159": [
+      {
+        "id": "C-1031-2280",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1151-2862",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1479-1495",
+        "occurrence": 8
+      },
+      {
+        "id": "C-1675-1967",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1740-2888",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P078811",
+        "occurrence": 9
+      }
+    ],
+    "160": [
+      {
+        "id": "C-0181-1316",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0782-1613",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1476-1456",
+        "occurrence": 8
+      }
+    ],
+    "161": [
+      {
+        "id": "D40-K-0479-0638",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0212-1305",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0776-1583",
+        "occurrence": 9
+      },
+      {
+        "id": "K-1133-0303",
+        "occurrence": 12
+      }
+    ],
+    "162": [
+      {
+        "id": "C-0509-0664",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1145-0338",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1839-0383",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2174-1008",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2316-1701",
+        "occurrence": 2
+      }
+    ],
+    "163": [
+      {
+        "id": "D40-K-2142-1024",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2205-2394",
+        "occurrence": 3
+      },
+      {
+        "id": "K-2284-1712",
+        "occurrence": 2
+      },
+      {
+        "id": "MAT25-K-1817-0415",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-1764-2958",
+        "occurrence": 4
+      }
+    ],
+    "164": [
+      {
+        "id": "C-1007-2241",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1098-2901",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1654-1927",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1747-2938",
+        "occurrence": 4
+      },
+      {
+        "id": "R332-R-0030-0027",
+        "occurrence": 1
+      },
+      {
+        "id": "R332-R-0046-0043",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P114563",
+        "occurrence": 3
+      }
+    ],
+    "165": [
+      {
+        "id": "C-1032-2257",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1119-2879",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1676-1945",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1726-2908",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P072541",
+        "occurrence": 8
+      }
+    ],
+    "166": [
+      {
+        "id": "C-0765-1632",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1455-1475",
+        "occurrence": 8
+      },
+      {
+        "id": "R332-Y-0128-0121",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P109437",
+        "occurrence": 6
+      }
+    ],
+    "167": [
+      {
+        "id": "C-0483-0612",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0759-1603",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1454-1442",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-193-1288",
+        "occurrence": 10
+      }
+    ],
+    "168": [
+      {
+        "id": "K-0220-1280",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0509-0633",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1160-0319",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1862-0388",
+        "occurrence": 0
+      },
+      {
+        "id": "REC266-P049220",
+        "occurrence": 1
+      },
+      {
+        "id": "REC266-P075564",
+        "occurrence": 9
+      }
+    ],
+    "169": [
+      {
+        "id": "K-1172-0348",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1845-0412",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2161-1039",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2209-2420",
+        "occurrence": 3
+      },
+      {
+        "id": "K-2303-1728",
+        "occurrence": 2
+      },
+      {
+        "id": "R332-R-0077-0077",
+        "occurrence": 4
+      },
+      {
+        "id": "REC266-P031642",
+        "occurrence": 11
+      }
+    ],
+    "170": [
+      {
+        "id": "C-1739-2960",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-2179-2407",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-2269-1733",
+        "occurrence": 2
+      },
+      {
+        "id": "NEW-1074-2896",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1826-438",
+        "occurrence": 0
+      },
+      {
+        "id": "NEW-2138-1049",
+        "occurrence": 1
+      },
+      {
+        "id": "R332-R-0126-0124",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P106702",
+        "occurrence": 6
+      }
+    ],
+    "171": [
+      {
+        "id": "C-1035-2229",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1095-2873",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1678-1920",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1718-2934",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2147-2401",
+        "occurrence": 3
+      }
+    ],
+    "172": [
+      {
+        "id": "D40-K-1703-1941",
+        "occurrence": 7
+      },
+      {
+        "id": "E5-1111-2848",
+        "occurrence": 5
+      },
+      {
+        "id": "K-1060-2248",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1433-1492",
+        "occurrence": 8
+      }
+    ],
+    "173": [
+      {
+        "id": "C-0172-1268",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0491-0590",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0737-1620",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1433-1460",
+        "occurrence": 8
+      }
+    ],
+    "174": [
+      {
+        "id": "C-0514-0609",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0736-1589",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1178-0292",
+        "occurrence": 12
+      },
+      {
+        "id": "E5-0204-1260",
+        "occurrence": 10
+      },
+      {
+        "id": "REC266-P069132",
+        "occurrence": 8
+      }
+    ],
+    "175": [
+      {
+        "id": "K-0548-0636",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1187-0329",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1873-0409",
+        "occurrence": 0
+      },
+      {
+        "id": "K-2183-1053",
+        "occurrence": 1
+      },
+      {
+        "id": "K-2317-1746",
+        "occurrence": 2
+      },
+      {
+        "id": "R332-B-0061-0062",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P060664",
+        "occurrence": 10
+      }
+    ],
+    "176": [
+      {
+        "id": "C-2157-1066",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2188-2437",
+        "occurrence": 3
+      },
+      {
+        "id": "C-2288-1752",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-1851-0439",
+        "occurrence": 0
+      },
+      {
+        "id": "R332-R-0110-0109",
+        "occurrence": 6
+      },
+      {
+        "id": "R332-R-0212-0198",
+        "occurrence": 12
+      },
+      {
+        "id": "REC266-P144101",
+        "occurrence": 4
+      }
+    ],
+    "177": [
+      {
+        "id": "C-1045-2201",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1064-2868",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1679-1896",
+        "occurrence": 7
+      },
+      {
+        "id": "C-1712-2959",
+        "occurrence": 4
+      },
+      {
+        "id": "R332-Y-0031-0028",
+        "occurrence": 1
+      },
+      {
+        "id": "REC266-P084366",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P116792",
+        "occurrence": 3
+      }
+    ],
+    "178": [
+      {
+        "id": "K-1063-2230",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1085-2841",
+        "occurrence": 5
+      },
+      {
+        "id": "K-1706-1916",
+        "occurrence": 7
+      },
+      {
+        "id": "MAT25-K-1689-2933",
+        "occurrence": 4
+      }
+    ],
+    "179": [
+      {
+        "id": "K-1416-1479",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-719-1638",
+        "occurrence": 9
+      },
+      {
+        "id": "REC266-P092948",
+        "occurrence": 7
+      }
+    ],
+    "180": [
+      {
+        "id": "C-0180-1239",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0519-0578",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0714-1605",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1196-0273",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1410-1447",
+        "occurrence": 8
+      }
+    ],
+    "181": [
+      {
+        "id": "C-0220-1238",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0544-0606",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1205-0305",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1899-0420",
+        "occurrence": 0
+      },
+      {
+        "id": "REC266-P075215",
+        "occurrence": 9
+      }
+    ],
+    "182": [
+      {
+        "id": "C-1220-0333",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1877-0445",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2176-1083",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2197-2462",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-2304-1770",
+        "occurrence": 2
+      }
+    ],
+    "183": [
+      {
+        "id": "C-1041-2858",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1049-2177",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1702-2987",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2145-1092",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2273-1775",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-2160-2451",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P022848",
+        "occurrence": 0
+      }
+    ],
+    "184": [
+      {
+        "id": "D40-K-1701-1890",
+        "occurrence": 7
+      },
+      {
+        "id": "K-1072-2198",
+        "occurrence": 6
+      },
+      {
+        "id": "K-1683-2959",
+        "occurrence": 4
+      },
+      {
+        "id": "MAT25-K-1060-2836",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-2136-2445",
+        "occurrence": 3
+      }
+    ],
+    "185": [
+      {
+        "id": "C-1085-2813",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1093-2220",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1392-1499",
+        "occurrence": 8
+      },
+      {
+        "id": "C-1733-1899",
+        "occurrence": 7
+      },
+      {
+        "id": "R332-Y-0081-0075",
+        "occurrence": 4
+      }
+    ],
+    "186": [
+      {
+        "id": "D40-K-1384-1467",
+        "occurrence": 8
+      },
+      {
+        "id": "K-0693-1626",
+        "occurrence": 9
+      }
+    ],
+    "187": [
+      {
+        "id": "C-0202-1217",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0548-0577",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0691-1589",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1221-0282",
+        "occurrence": 12
+      },
+      {
+        "id": "R332-Y-0147-0137",
+        "occurrence": 8
+      }
+    ],
+    "188": [
+      {
+        "id": "C-0574-0602",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1235-0312",
+        "occurrence": 12
+      },
+      {
+        "id": "E5-0240-1219",
+        "occurrence": 10
+      },
+      {
+        "id": "E5-1906-0446",
+        "occurrence": 0
+      },
+      {
+        "id": "E5-2198-1098",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2320-1788",
+        "occurrence": 2
+      },
+      {
+        "id": "REC266-P119618",
+        "occurrence": 3
+      }
+    ],
+    "189": [
+      {
+        "id": "C-1067-2156",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1243-0349",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1691-3004",
+        "occurrence": 4
+      },
+      {
+        "id": "C-1882-0479",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2168-2478",
+        "occurrence": 3
+      },
+      {
+        "id": "C-2288-1794",
+        "occurrence": 2
+      },
+      {
+        "id": "E5-2165-1110",
+        "occurrence": 1
+      },
+      {
+        "id": "R332-R-0197-0183",
+        "occurrence": 11
+      }
+    ],
+    "190": [
+      {
+        "id": "D40-K-1077-2175",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-2139-2470",
+        "occurrence": 3
+      },
+      {
+        "id": "K-1667-2990",
+        "occurrence": 4
+      },
+      {
+        "id": "NEW-1036-2833",
+        "occurrence": 5
+      },
+      {
+        "id": "NEW-1702-1860",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P054537",
+        "occurrence": 1
+      }
+    ],
+    "191": [
+      {
+        "id": "C-1058-2815",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1100-2195",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1657-2954",
+        "occurrence": 4
+      },
+      {
+        "id": "C-1729-1874",
+        "occurrence": 7
+      },
+      {
+        "id": "R332-Y-0145-0140",
+        "occurrence": 8
+      }
+    ],
+    "192": [
+      {
+        "id": "C-0672-1640",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1368-1484",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P091006",
+        "occurrence": 7
+      }
+    ],
+    "193": [
+      {
+        "id": "E5-1360-1455",
+        "occurrence": 8
+      },
+      {
+        "id": "K-0183-1195",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0667-1609",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-556-551",
+        "occurrence": 11
+      }
+    ],
+    "194": [
+      {
+        "id": "C-0222-1197",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0581-0575",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0666-1567",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1251-0290",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1932-0452",
+        "occurrence": 0
+      }
+    ],
+    "195": [
+      {
+        "id": "C-1259-0324",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1910-0478",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2175-2504",
+        "occurrence": 3
+      },
+      {
+        "id": "C-2184-1127",
+        "occurrence": 1
+      },
+      {
+        "id": "E5-2304-1814",
+        "occurrence": 2
+      },
+      {
+        "id": "R332-Y-0197-0184",
+        "occurrence": 11
+      }
+    ],
+    "196": [
+      {
+        "id": "E5-2272-1815",
+        "occurrence": 2
+      },
+      {
+        "id": "K-1663-3006",
+        "occurrence": 4
+      },
+      {
+        "id": "MAT25-K-2142-2497",
+        "occurrence": 3
+      },
+      {
+        "id": "NEW-1092-2152",
+        "occurrence": 6
+      },
+      {
+        "id": "NEW-2156-1135",
+        "occurrence": 1
+      }
+    ],
+    "197": [
+      {
+        "id": "C-1033-2810",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1109-2169",
+        "occurrence": 6
+      },
+      {
+        "id": "E5-1641-2976",
+        "occurrence": 4
+      },
+      {
+        "id": "E5-1725-1850",
+        "occurrence": 7
+      }
+    ],
+    "198": [
+      {
+        "id": "K-1349-1504",
+        "occurrence": 8
+      },
+      {
+        "id": "MAT25-K-1752-1860",
+        "occurrence": 7
+      },
+      {
+        "id": "NEW-1131-2196",
+        "occurrence": 6
+      },
+      {
+        "id": "R332-B-0098-0092",
+        "occurrence": 5
+      }
+    ],
+    "199": [
+      {
+        "id": "C-0172-1170",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0568-0529",
+        "occurrence": 11
+      },
+      {
+        "id": "C-0649-1623",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1341-1471",
+        "occurrence": 8
+      }
+    ],
+    "200": [
+      {
+        "id": "D40-K-0585-0548",
+        "occurrence": 11
+      },
+      {
+        "id": "K-0203-1173",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0639-1586",
+        "occurrence": 9
+      },
+      {
+        "id": "NEW-1265-270",
+        "occurrence": 12
+      }
+    ],
+    "201": [
+      {
+        "id": "C-0245-1178",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0615-0584",
+        "occurrence": 11
+      },
+      {
+        "id": "C-1277-0302",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1936-0478",
+        "occurrence": 0
+      },
+      {
+        "id": "C-2179-2530",
+        "occurrence": 3
+      },
+      {
+        "id": "C-2205-1144",
+        "occurrence": 1
+      },
+      {
+        "id": "C-2321-1831",
+        "occurrence": 2
+      }
+    ],
+    "202": [
+      {
+        "id": "C-1284-0332",
+        "occurrence": 12
+      },
+      {
+        "id": "D40-K-2146-2523",
+        "occurrence": 3
+      },
+      {
+        "id": "E5-2291-1846",
+        "occurrence": 2
+      },
+      {
+        "id": "E9-1911-0508",
+        "occurrence": 0
+      },
+      {
+        "id": "R332-B-0080-0079",
+        "occurrence": 4
+      },
+      {
+        "id": "RF70T-K-2172-1154",
+        "occurrence": 1
+      }
+    ],
+    "203": [
+      {
+        "id": "C-1006-2799",
+        "occurrence": 5
+      },
+      {
+        "id": "C-1120-2144",
+        "occurrence": 6
+      },
+      {
+        "id": "C-1631-3003",
+        "occurrence": 4
+      },
+      {
+        "id": "C-2120-2509",
+        "occurrence": 3
+      },
+      {
+        "id": "REC266-P087950",
+        "occurrence": 7
+      },
+      {
+        "id": "REC266-P088446",
+        "occurrence": 2
+      }
+    ],
+    "204": [
+      {
+        "id": "D40-K-1036-2780",
+        "occurrence": 5
+      },
+      {
+        "id": "D40-K-1752-1835",
+        "occurrence": 7
+      },
+      {
+        "id": "E5-1616-2970",
+        "occurrence": 4
+      },
+      {
+        "id": "K-1138-2176",
+        "occurrence": 6
+      },
+      {
+        "id": "R332-B-0146-0141",
+        "occurrence": 8
+      }
+    ],
+    "205": [
+      {
+        "id": "K-1325-1490",
+        "occurrence": 8
+      },
+      {
+        "id": "NEW-631-1643",
+        "occurrence": 9
+      },
+      {
+        "id": "REC266-P088887",
+        "occurrence": 7
+      }
+    ],
+    "206": [
+      {
+        "id": "C-0191-1146",
+        "occurrence": 10
+      },
+      {
+        "id": "C-0623-1607",
+        "occurrence": 9
+      },
+      {
+        "id": "C-1279-0252",
+        "occurrence": 12
+      },
+      {
+        "id": "C-1318-1463",
+        "occurrence": 8
+      },
+      {
+        "id": "REC266-P025360",
+        "occurrence": 11
+      }
+    ],
+    "207": [
+      {
+        "id": "K-0227-1153",
+        "occurrence": 10
+      },
+      {
+        "id": "K-0616-0554",
+        "occurrence": 11
+      },
+      {
+        "id": "K-1293-0279",
+        "occurrence": 12
+      },
+      {
+        "id": "K-1959-0485",
+        "occurrence": 0
+      },
+      {
+        "id": "REC266-P075461",
+        "occurrence": 9
+      }
+    ]
+  },
+  "scope": "Constructed-example arithmetic and saved-assignment coverage only. No new physical visibility, identity or pigment claim."
+}
