@@ -1,0 +1,8148 @@
+{
+  "baseline_commit": "5d6056634009310bd2d47744527f9db43f0809c9",
+  "target": "R332-R-0037-0040",
+  "target_observation": {
+    "id": "R332-R-0037-0040",
+    "xy": [
+      2301.3455497382197,
+      1430.2251308900525
+    ],
+    "color": "red",
+    "kind": "recovered native material support",
+    "location_kind": "native material support; geometric prediction is separate; no measured physical center",
+    "source": "original RGB, multiply predicted vacant cell",
+    "source_id": "R332-R-0037-0040",
+    "r332_status": "accepted",
+    "r332_iteration": 0,
+    "r336_roles": {
+      "counting": true,
+      "indexing": true,
+      "geometry_fitting": true,
+      "link_obstruction": true,
+      "pattern_extraction": false
+    },
+    "r336_status": "working indexed observation"
+  },
+  "incident_edges": [
+    {
+      "source": "R332-R-0037-0040",
+      "target": "C-2300-1458",
+      "delta_ab": [
+        1,
+        0
+      ],
+      "family": "F0",
+      "origin": "R332",
+      "status": "accepted working addition",
+      "foreground_fraction": 1.0,
+      "intervening_observations": [],
+      "iteration": 0,
+      "photographic_evidence": "R332-R-0037-0040",
+      "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+      "final_native_check": {
+        "allowed": true,
+        "foreground_fraction": 1.0,
+        "intervening_observations": []
+      }
+    },
+    {
+      "source": "R332-R-0037-0040",
+      "target": "E5-2279-1442",
+      "delta_ab": [
+        1,
+        -1
+      ],
+      "family": "difference",
+      "origin": "R332",
+      "status": "accepted working addition",
+      "foreground_fraction": 1.0,
+      "intervening_observations": [],
+      "iteration": 0,
+      "photographic_evidence": "R332-R-0037-0040",
+      "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+      "final_native_check": {
+        "allowed": true,
+        "foreground_fraction": 1.0,
+        "intervening_observations": []
+      }
+    },
+    {
+      "source": "REC266-P068073",
+      "target": "R332-R-0037-0040",
+      "delta_ab": [
+        0,
+        1
+      ],
+      "family": "F1",
+      "origin": "R332",
+      "status": "accepted working addition",
+      "foreground_fraction": 1.0,
+      "intervening_observations": [],
+      "iteration": 0,
+      "photographic_evidence": "R332-R-0037-0040",
+      "admission": "two image-supported families plus shared-neighbor triangle; no window-count gate",
+      "final_native_check": {
+        "allowed": true,
+        "foreground_fraction": 1.0,
+        "intervening_observations": []
+      }
+    }
+  ],
+  "graph_before": {
+    "nodes": 1041,
+    "edges": 2290,
+    "components": 1,
+    "independent_graph_cycles": 1250,
+    "nonzero_fundamental_cycle_residuals": 3,
+    "derived_cycle_subgroup_generator": [
+      214,
+      201
+    ],
+    "saved_coordinates_recovered_modulo_generator": true,
+    "cycle_witness": {
+      "delta_ab": [
+        214,
+        201
+      ],
+      "steps": [
+        {
+          "source": "C-1302-0316",
+          "target": "C-1324-0332",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 82
+        },
+        {
+          "source": "C-1324-0332",
+          "target": "K-1341-0309",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 95
+        },
+        {
+          "source": "K-1341-0309",
+          "target": "P5-1364-0299",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 105
+        },
+        {
+          "source": "P5-1364-0299",
+          "target": "C-1391-0312",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 107
+        },
+        {
+          "source": "C-1391-0312",
+          "target": "K-1403-0284",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 106
+        },
+        {
+          "source": "K-1403-0284",
+          "target": "K-1429-0302",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 103
+        },
+        {
+          "source": "K-1429-0302",
+          "target": "K-1443-0285",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 118
+        },
+        {
+          "source": "K-1443-0285",
+          "target": "C-1477-0290",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 116
+        },
+        {
+          "source": "C-1477-0290",
+          "target": "C-1497-0271",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 119
+        },
+        {
+          "source": "C-1497-0271",
+          "target": "K-1510-0292",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 126
+        },
+        {
+          "source": "K-1510-0292",
+          "target": "NEW-1538-305",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 124
+        },
+        {
+          "source": "NEW-1538-305",
+          "target": "E5-1561-0289",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 147
+        },
+        {
+          "source": "E5-1561-0289",
+          "target": "C-1585-0307",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 145
+        },
+        {
+          "source": "C-1585-0307",
+          "target": "E5-1607-0290",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 141
+        },
+        {
+          "source": "E5-1607-0290",
+          "target": "NEW-1621-315",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 151
+        },
+        {
+          "source": "NEW-1621-315",
+          "target": "P5-1645-0309",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 157
+        },
+        {
+          "source": "P5-1645-0309",
+          "target": "E5-1671-0325",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 155
+        },
+        {
+          "source": "E5-1671-0325",
+          "target": "K-1695-0317",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 158
+        },
+        {
+          "source": "K-1695-0317",
+          "target": "NEW-1706-342",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 165
+        },
+        {
+          "source": "NEW-1706-342",
+          "target": "C-1729-0337",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 182
+        },
+        {
+          "source": "C-1729-0337",
+          "target": "E5-1744-0360",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 172
+        },
+        {
+          "source": "E5-1744-0360",
+          "target": "NEW-1756-380",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 174
+        },
+        {
+          "source": "NEW-1756-380",
+          "target": "E5-1785-0383",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 187
+        },
+        {
+          "source": "E5-1785-0383",
+          "target": "C-1813-0383",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 191
+        },
+        {
+          "source": "C-1813-0383",
+          "target": "MAT25-K-1817-0415",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 192
+        },
+        {
+          "source": "MAT25-K-1817-0415",
+          "target": "NEW-1826-438",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 200
+        },
+        {
+          "source": "NEW-1826-438",
+          "target": "E5-1851-0439",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 210
+        },
+        {
+          "source": "E5-1851-0439",
+          "target": "C-1877-0445",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 209
+        },
+        {
+          "source": "C-1877-0445",
+          "target": "C-1882-0479",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 215
+        },
+        {
+          "source": "C-1882-0479",
+          "target": "C-1910-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 214
+        },
+        {
+          "source": "C-1910-0478",
+          "target": "C-1936-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 213
+        },
+        {
+          "source": "C-1936-0478",
+          "target": "C-1940-0508",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 222
+        },
+        {
+          "source": "C-1940-0508",
+          "target": "E5-1941-0539",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 227
+        },
+        {
+          "source": "E5-1941-0539",
+          "target": "D40-K-1967-0541",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 236
+        },
+        {
+          "source": "D40-K-1967-0541",
+          "target": "RF70T-K-1965-0575",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 237
+        },
+        {
+          "source": "RF70T-K-1965-0575",
+          "target": "C-1993-0580",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 242
+        },
+        {
+          "source": "C-1993-0580",
+          "target": "C-1991-0608",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 246
+        },
+        {
+          "source": "C-1991-0608",
+          "target": "NEW-1990-639",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 255
+        },
+        {
+          "source": "NEW-1990-639",
+          "target": "P5-2011-0649",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 257
+        },
+        {
+          "source": "P5-2011-0649",
+          "target": "C-2038-0658",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 266
+        },
+        {
+          "source": "C-2038-0658",
+          "target": "MAT25-K-2028-0689",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 264
+        },
+        {
+          "source": "MAT25-K-2028-0689",
+          "target": "K-2051-0701",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 282
+        },
+        {
+          "source": "K-2051-0701",
+          "target": "E5-2052-0728",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 273
+        },
+        {
+          "source": "E5-2052-0728",
+          "target": "C-2045-0755",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 279
+        },
+        {
+          "source": "C-2045-0755",
+          "target": "C-2064-0771",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 283
+        },
+        {
+          "source": "C-2064-0771",
+          "target": "NEW-2060-796",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 286
+        },
+        {
+          "source": "NEW-2060-796",
+          "target": "MAT25-K-2078-0812",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 298
+        },
+        {
+          "source": "MAT25-K-2078-0812",
+          "target": "C-2102-0824",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 306
+        },
+        {
+          "source": "C-2102-0824",
+          "target": "E5-2094-0852",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 303
+        },
+        {
+          "source": "E5-2094-0852",
+          "target": "NEW-2080-878",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 314
+        },
+        {
+          "source": "NEW-2080-878",
+          "target": "K-2104-0894",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 318
+        },
+        {
+          "source": "K-2104-0894",
+          "target": "NEW-2100-921",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 312
+        },
+        {
+          "source": "NEW-2100-921",
+          "target": "C-2122-0936",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 329
+        },
+        {
+          "source": "C-2122-0936",
+          "target": "NEW-2113-963",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 319
+        },
+        {
+          "source": "NEW-2113-963",
+          "target": "C-2131-0981",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 330
+        },
+        {
+          "source": "C-2131-0981",
+          "target": "C-2154-0993",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 333
+        },
+        {
+          "source": "C-2154-0993",
+          "target": "D40-K-2142-1024",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 334
+        },
+        {
+          "source": "D40-K-2142-1024",
+          "target": "NEW-2138-1049",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 345
+        },
+        {
+          "source": "NEW-2138-1049",
+          "target": "C-2157-1066",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 347
+        },
+        {
+          "source": "C-2157-1066",
+          "target": "C-2145-1092",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 343
+        },
+        {
+          "source": "C-2145-1092",
+          "target": "E5-2165-1110",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 348
+        },
+        {
+          "source": "E5-2165-1110",
+          "target": "NEW-2156-1135",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 353
+        },
+        {
+          "source": "NEW-2156-1135",
+          "target": "RF70T-K-2172-1154",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 359
+        },
+        {
+          "source": "RF70T-K-2172-1154",
+          "target": "NEW-2167-1179",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 365
+        },
+        {
+          "source": "NEW-2167-1179",
+          "target": "C-2186-1195",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 367
+        },
+        {
+          "source": "C-2186-1195",
+          "target": "C-2179-1221",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 368
+        },
+        {
+          "source": "C-2179-1221",
+          "target": "K-2199-1236",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 373
+        },
+        {
+          "source": "K-2199-1236",
+          "target": "NEW-2185-1265",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 374
+        },
+        {
+          "source": "NEW-2185-1265",
+          "target": "C-2207-1279",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 389
+        },
+        {
+          "source": "C-2207-1279",
+          "target": "NEW-2196-1305",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 384
+        },
+        {
+          "source": "NEW-2196-1305",
+          "target": "C-2216-1323",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 390
+        },
+        {
+          "source": "C-2216-1323",
+          "target": "NEW-2207-1350",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 395
+        },
+        {
+          "source": "NEW-2207-1350",
+          "target": "K-2227-1364",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 402
+        },
+        {
+          "source": "K-2227-1364",
+          "target": "NEW-2219-1390",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 392
+        },
+        {
+          "source": "NEW-2219-1390",
+          "target": "C-2240-1406",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 410
+        },
+        {
+          "source": "C-2240-1406",
+          "target": "C-2224-1430",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 407
+        },
+        {
+          "source": "C-2224-1430",
+          "target": "E5-2245-1450",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 411
+        },
+        {
+          "source": "E5-2245-1450",
+          "target": "NEW-2235-1476",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 417
+        },
+        {
+          "source": "NEW-2235-1476",
+          "target": "D40-K-2250-1499",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 425
+        },
+        {
+          "source": "D40-K-2250-1499",
+          "target": "NEW-2237-1522",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 435
+        },
+        {
+          "source": "NEW-2237-1522",
+          "target": "C-2254-1539",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 440
+        },
+        {
+          "source": "C-2254-1539",
+          "target": "NEW-2245-1563",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 429
+        },
+        {
+          "source": "NEW-2245-1563",
+          "target": "D40-K-2261-1584",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 449
+        },
+        {
+          "source": "D40-K-2261-1584",
+          "target": "NEW-2251-1608",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 447
+        },
+        {
+          "source": "NEW-2251-1608",
+          "target": "E5-2271-1625",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 460
+        },
+        {
+          "source": "E5-2271-1625",
+          "target": "NEW-2256-1649",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 455
+        },
+        {
+          "source": "NEW-2256-1649",
+          "target": "C-2277-1667",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 459
+        },
+        {
+          "source": "C-2277-1667",
+          "target": "E9-2263-1691",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 462
+        },
+        {
+          "source": "E9-2263-1691",
+          "target": "K-2284-1712",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 467
+        },
+        {
+          "source": "K-2284-1712",
+          "target": "E5-2269-1733",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 464
+        },
+        {
+          "source": "E5-2269-1733",
+          "target": "C-2288-1752",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 483
+        },
+        {
+          "source": "C-2288-1752",
+          "target": "C-2273-1775",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 478
+        },
+        {
+          "source": "C-2273-1775",
+          "target": "C-2288-1794",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 477
+        },
+        {
+          "source": "C-2288-1794",
+          "target": "E5-2272-1815",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 485
+        },
+        {
+          "source": "E5-2272-1815",
+          "target": "E5-2291-1846",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 493
+        },
+        {
+          "source": "E5-2291-1846",
+          "target": "RF70T-K-2273-1856",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 495
+        },
+        {
+          "source": "RF70T-K-2273-1856",
+          "target": "C-2284-1877",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 505
+        },
+        {
+          "source": "C-2284-1877",
+          "target": "C-2267-1898",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 499
+        },
+        {
+          "source": "C-2267-1898",
+          "target": "K-2289-1917",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 507
+        },
+        {
+          "source": "K-2289-1917",
+          "target": "MAT25-K-2270-1942",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 508
+        },
+        {
+          "source": "MAT25-K-2270-1942",
+          "target": "NEW-2259-1961",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 516
+        },
+        {
+          "source": "NEW-2259-1961",
+          "target": "E5-2271-1983",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 531
+        },
+        {
+          "source": "E5-2271-1983",
+          "target": "NEW-2257-2004",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 523
+        },
+        {
+          "source": "NEW-2257-2004",
+          "target": "MAT25-K-2268-2028",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 530
+        },
+        {
+          "source": "MAT25-K-2268-2028",
+          "target": "K-2287-2050",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 543
+        },
+        {
+          "source": "K-2287-2050",
+          "target": "H5-2261-2067",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 535
+        },
+        {
+          "source": "H5-2261-2067",
+          "target": "C-2247-2085",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 544
+        },
+        {
+          "source": "C-2247-2085",
+          "target": "C-2252-2109",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 546
+        },
+        {
+          "source": "C-2252-2109",
+          "target": "NEW-2237-2128",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 547
+        },
+        {
+          "source": "NEW-2237-2128",
+          "target": "RF70T-K-2247-2151",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 571
+        },
+        {
+          "source": "RF70T-K-2247-2151",
+          "target": "NEW-2226-2171",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 569
+        },
+        {
+          "source": "NEW-2226-2171",
+          "target": "MAT25-K-2237-2196",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 572
+        },
+        {
+          "source": "MAT25-K-2237-2196",
+          "target": "C-2247-2216",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 581
+        },
+        {
+          "source": "C-2247-2216",
+          "target": "E5-2225-2233",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 573
+        },
+        {
+          "source": "E5-2225-2233",
+          "target": "D40-K-2239-2263",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 579
+        },
+        {
+          "source": "D40-K-2239-2263",
+          "target": "D40-K-2217-2280",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 589
+        },
+        {
+          "source": "D40-K-2217-2280",
+          "target": "NEW-2199-2298",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 591
+        },
+        {
+          "source": "NEW-2199-2298",
+          "target": "C-2201-2320",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 593
+        },
+        {
+          "source": "C-2201-2320",
+          "target": "NEW-2186-2343",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 594
+        },
+        {
+          "source": "NEW-2186-2343",
+          "target": "D40-K-2191-2368",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 601
+        },
+        {
+          "source": "D40-K-2191-2368",
+          "target": "K-2205-2394",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 608
+        },
+        {
+          "source": "K-2205-2394",
+          "target": "E5-2179-2407",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 602
+        },
+        {
+          "source": "E5-2179-2407",
+          "target": "C-2188-2437",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 607
+        },
+        {
+          "source": "C-2188-2437",
+          "target": "E5-2160-2451",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 614
+        },
+        {
+          "source": "E5-2160-2451",
+          "target": "E5-2139-2470",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 611
+        },
+        {
+          "source": "E5-2139-2470",
+          "target": "MAT25-K-2142-2497",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 628
+        },
+        {
+          "source": "MAT25-K-2142-2497",
+          "target": "C-2120-2509",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 633
+        },
+        {
+          "source": "C-2120-2509",
+          "target": "C-2100-2525",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 623
+        },
+        {
+          "source": "C-2100-2525",
+          "target": "D40-K-2099-2550",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 635
+        },
+        {
+          "source": "D40-K-2099-2550",
+          "target": "C-2105-2574",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 642
+        },
+        {
+          "source": "C-2105-2574",
+          "target": "C-2078-2582",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 640
+        },
+        {
+          "source": "C-2078-2582",
+          "target": "C-2059-2590",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 648
+        },
+        {
+          "source": "C-2059-2590",
+          "target": "MAT25-K-2054-2616",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 650
+        },
+        {
+          "source": "MAT25-K-2054-2616",
+          "target": "E5-2053-2643",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 660
+        },
+        {
+          "source": "E5-2053-2643",
+          "target": "C-2022-2657",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 668
+        },
+        {
+          "source": "C-2022-2657",
+          "target": "NEW-1999-2655",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 670
+        },
+        {
+          "source": "NEW-1999-2655",
+          "target": "C-1998-2685",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 685
+        },
+        {
+          "source": "C-1998-2685",
+          "target": "C-1997-2715",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 673
+        },
+        {
+          "source": "C-1997-2715",
+          "target": "C-1964-2713",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 679
+        },
+        {
+          "source": "C-1964-2713",
+          "target": "NEW-1942-2725",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 686
+        },
+        {
+          "source": "NEW-1942-2725",
+          "target": "K-1943-2759",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 696
+        },
+        {
+          "source": "K-1943-2759",
+          "target": "C-1916-2762",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 693
+        },
+        {
+          "source": "C-1916-2762",
+          "target": "C-1893-2771",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 700
+        },
+        {
+          "source": "C-1893-2771",
+          "target": "C-1881-2795",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 702
+        },
+        {
+          "source": "C-1881-2795",
+          "target": "C-1856-2802",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 714
+        },
+        {
+          "source": "C-1856-2802",
+          "target": "D40-K-1848-2825",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 716
+        },
+        {
+          "source": "D40-K-1848-2825",
+          "target": "NEW-1828-2833",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 726
+        },
+        {
+          "source": "NEW-1828-2833",
+          "target": "C-1822-2854",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 745
+        },
+        {
+          "source": "C-1822-2854",
+          "target": "NEW-1792-2858",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 734
+        },
+        {
+          "source": "NEW-1792-2858",
+          "target": "MAT25-K-1786-2881",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 746
+        },
+        {
+          "source": "MAT25-K-1786-2881",
+          "target": "NEW-1764-2887",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 753
+        },
+        {
+          "source": "NEW-1764-2887",
+          "target": "C-1740-2888",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 758
+        },
+        {
+          "source": "C-1740-2888",
+          "target": "C-1726-2908",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 760
+        },
+        {
+          "source": "C-1726-2908",
+          "target": "C-1718-2934",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 761
+        },
+        {
+          "source": "C-1718-2934",
+          "target": "MAT25-K-1689-2933",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 762
+        },
+        {
+          "source": "MAT25-K-1689-2933",
+          "target": "K-1683-2959",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 790
+        },
+        {
+          "source": "K-1683-2959",
+          "target": "C-1657-2954",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 777
+        },
+        {
+          "source": "C-1657-2954",
+          "target": "E5-1641-2976",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 776
+        },
+        {
+          "source": "E5-1641-2976",
+          "target": "E5-1616-2970",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 798
+        },
+        {
+          "source": "E5-1616-2970",
+          "target": "C-1607-2991",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 800
+        },
+        {
+          "source": "C-1607-2991",
+          "target": "K-1593-3018",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 791
+        },
+        {
+          "source": "K-1593-3018",
+          "target": "K-1565-3004",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 807
+        },
+        {
+          "source": "K-1565-3004",
+          "target": "MAT25-K-1538-2998",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 804
+        },
+        {
+          "source": "MAT25-K-1538-2998",
+          "target": "C-1526-3018",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 817
+        },
+        {
+          "source": "C-1526-3018",
+          "target": "E5-1503-2999",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 819
+        },
+        {
+          "source": "E5-1503-2999",
+          "target": "C-1478-2990",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 833
+        },
+        {
+          "source": "C-1478-2990",
+          "target": "E5-1455-3009",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 828
+        },
+        {
+          "source": "E5-1455-3009",
+          "target": "C-1440-3032",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 838
+        },
+        {
+          "source": "C-1440-3032",
+          "target": "C-1423-3004",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 851
+        },
+        {
+          "source": "C-1423-3004",
+          "target": "C-1398-3017",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 842
+        },
+        {
+          "source": "C-1398-3017",
+          "target": "K-1380-2998",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 846
+        },
+        {
+          "source": "K-1380-2998",
+          "target": "C-1364-2971",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 840
+        },
+        {
+          "source": "C-1364-2971",
+          "target": "C-1341-2982",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 839
+        },
+        {
+          "source": "C-1341-2982",
+          "target": "C-1313-2998",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 861
+        },
+        {
+          "source": "C-1313-2998",
+          "target": "C-1288-3010",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 862
+        },
+        {
+          "source": "C-1288-3010",
+          "target": "C-1274-2980",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 865
+        },
+        {
+          "source": "C-1274-2980",
+          "target": "NEW-1247-2991",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 864
+        },
+        {
+          "source": "NEW-1247-2991",
+          "target": "K-1234-2967",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 870
+        },
+        {
+          "source": "K-1234-2967",
+          "target": "MAT25-K-1223-2943",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 875
+        },
+        {
+          "source": "MAT25-K-1223-2943",
+          "target": "C-1198-2943",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 881
+        },
+        {
+          "source": "C-1198-2943",
+          "target": "C-1189-2919",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 889
+        },
+        {
+          "source": "C-1189-2919",
+          "target": "E5-1178-2887",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 884
+        },
+        {
+          "source": "E5-1178-2887",
+          "target": "E5-1151-2893",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 893
+        },
+        {
+          "source": "E5-1151-2893",
+          "target": "C-1151-2862",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 908
+        },
+        {
+          "source": "C-1151-2862",
+          "target": "C-1119-2879",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 898
+        },
+        {
+          "source": "C-1119-2879",
+          "target": "E5-1111-2848",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 900
+        },
+        {
+          "source": "E5-1111-2848",
+          "target": "K-1085-2841",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 919
+        },
+        {
+          "source": "K-1085-2841",
+          "target": "C-1085-2813",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 913
+        },
+        {
+          "source": "C-1085-2813",
+          "target": "C-1058-2815",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 912
+        },
+        {
+          "source": "C-1058-2815",
+          "target": "C-1033-2810",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 926
+        },
+        {
+          "source": "C-1033-2810",
+          "target": "D40-K-1036-2780",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 924
+        },
+        {
+          "source": "D40-K-1036-2780",
+          "target": "C-1034-2749",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 940
+        },
+        {
+          "source": "C-1034-2749",
+          "target": "C-1007-2744",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 935
+        },
+        {
+          "source": "C-1007-2744",
+          "target": "K-1010-2715",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 933
+        },
+        {
+          "source": "K-1010-2715",
+          "target": "K-0990-2705",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 947
+        },
+        {
+          "source": "K-0990-2705",
+          "target": "C-1001-2678",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 945
+        },
+        {
+          "source": "C-1001-2678",
+          "target": "C-0978-2667",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 957
+        },
+        {
+          "source": "C-0978-2667",
+          "target": "E5-0978-2636",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 962
+        },
+        {
+          "source": "E5-0978-2636",
+          "target": "E5-0956-2624",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 964
+        },
+        {
+          "source": "E5-0956-2624",
+          "target": "E5-0962-2596",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 970
+        },
+        {
+          "source": "E5-0962-2596",
+          "target": "E5-0942-2582",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 980
+        },
+        {
+          "source": "E5-0942-2582",
+          "target": "MAT25-K-0953-2555",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 978
+        },
+        {
+          "source": "MAT25-K-0953-2555",
+          "target": "K-0935-2540",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 991
+        },
+        {
+          "source": "K-0935-2540",
+          "target": "E5-0950-2512",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 981
+        },
+        {
+          "source": "E5-0950-2512",
+          "target": "E5-0931-2495",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 987
+        },
+        {
+          "source": "E5-0931-2495",
+          "target": "E5-0915-2472",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 997
+        },
+        {
+          "source": "E5-0915-2472",
+          "target": "C-0899-2449",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 999
+        },
+        {
+          "source": "C-0899-2449",
+          "target": "C-0921-2428",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 993
+        },
+        {
+          "source": "C-0921-2428",
+          "target": "E5-0942-2408",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1004
+        },
+        {
+          "source": "E5-0942-2408",
+          "target": "K-0929-2384",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1007
+        },
+        {
+          "source": "K-0929-2384",
+          "target": "K-0957-2364",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1013
+        },
+        {
+          "source": "K-0957-2364",
+          "target": "C-0950-2338",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1012
+        },
+        {
+          "source": "C-0950-2338",
+          "target": "NEW-948-2311",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1020
+        },
+        {
+          "source": "NEW-948-2311",
+          "target": "C-0950-2286",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1029
+        },
+        {
+          "source": "C-0950-2286",
+          "target": "D40-K-0971-2274",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1023
+        },
+        {
+          "source": "D40-K-0971-2274",
+          "target": "E5-1003-2267",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1037
+        },
+        {
+          "source": "E5-1003-2267",
+          "target": "C-1007-2241",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1035
+        },
+        {
+          "source": "C-1007-2241",
+          "target": "C-1035-2229",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1042
+        },
+        {
+          "source": "C-1035-2229",
+          "target": "K-1063-2230",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1046
+        },
+        {
+          "source": "K-1063-2230",
+          "target": "K-1072-2198",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1048
+        },
+        {
+          "source": "K-1072-2198",
+          "target": "C-1100-2195",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1052
+        },
+        {
+          "source": "C-1100-2195",
+          "target": "C-1109-2169",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1065
+        },
+        {
+          "source": "C-1109-2169",
+          "target": "C-1120-2144",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1062
+        },
+        {
+          "source": "C-1120-2144",
+          "target": "C-1149-2150",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1071
+        },
+        {
+          "source": "C-1149-2150",
+          "target": "K-1161-2121",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1081
+        },
+        {
+          "source": "K-1161-2121",
+          "target": "C-1175-2104",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1077
+        },
+        {
+          "source": "C-1175-2104",
+          "target": "C-1205-2103",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1089
+        },
+        {
+          "source": "C-1205-2103",
+          "target": "C-1231-2109",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1095
+        },
+        {
+          "source": "C-1231-2109",
+          "target": "C-1263-2116",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1097
+        },
+        {
+          "source": "C-1263-2116",
+          "target": "K-1278-2097",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1112
+        },
+        {
+          "source": "K-1278-2097",
+          "target": "K-1291-2071",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1109
+        },
+        {
+          "source": "K-1291-2071",
+          "target": "K-1309-2054",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1124
+        },
+        {
+          "source": "K-1309-2054",
+          "target": "C-1339-2060",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1118
+        },
+        {
+          "source": "C-1339-2060",
+          "target": "C-1363-2071",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1120
+        },
+        {
+          "source": "C-1363-2071",
+          "target": "C-1383-2050",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1140
+        },
+        {
+          "source": "C-1383-2050",
+          "target": "K-1410-2057",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1135
+        },
+        {
+          "source": "K-1410-2057",
+          "target": "C-1438-2066",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1149
+        },
+        {
+          "source": "C-1438-2066",
+          "target": "C-1452-2044",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1151
+        },
+        {
+          "source": "C-1452-2044",
+          "target": "C-1466-2022",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1147
+        },
+        {
+          "source": "C-1466-2022",
+          "target": "C-1495-2031",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1164
+        },
+        {
+          "source": "C-1495-2031",
+          "target": "K-1506-2006",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1167
+        },
+        {
+          "source": "K-1506-2006",
+          "target": "K-1536-2014",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1160
+        },
+        {
+          "source": "K-1536-2014",
+          "target": "K-1567-2019",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1178
+        },
+        {
+          "source": "K-1567-2019",
+          "target": "C-1579-1993",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1180
+        },
+        {
+          "source": "C-1579-1993",
+          "target": "C-1608-1998",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1189
+        },
+        {
+          "source": "C-1608-1998",
+          "target": "K-1616-1972",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1191
+        },
+        {
+          "source": "K-1616-1972",
+          "target": "E5-1648-1985",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1186
+        },
+        {
+          "source": "E5-1648-1985",
+          "target": "C-1675-1967",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1202
+        },
+        {
+          "source": "C-1675-1967",
+          "target": "C-1676-1945",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1199
+        },
+        {
+          "source": "C-1676-1945",
+          "target": "C-1678-1920",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1201
+        },
+        {
+          "source": "C-1678-1920",
+          "target": "K-1706-1916",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1213
+        },
+        {
+          "source": "K-1706-1916",
+          "target": "C-1733-1899",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1217
+        },
+        {
+          "source": "C-1733-1899",
+          "target": "C-1729-1874",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1216
+        },
+        {
+          "source": "C-1729-1874",
+          "target": "E5-1725-1850",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1215
+        },
+        {
+          "source": "E5-1725-1850",
+          "target": "D40-K-1752-1835",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1225
+        },
+        {
+          "source": "D40-K-1752-1835",
+          "target": "C-1744-1809",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1228
+        },
+        {
+          "source": "C-1744-1809",
+          "target": "C-1766-1792",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1232
+        },
+        {
+          "source": "C-1766-1792",
+          "target": "K-1783-1774",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1230
+        },
+        {
+          "source": "K-1783-1774",
+          "target": "D40-K-1772-1751",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1235
+        },
+        {
+          "source": "D40-K-1772-1751",
+          "target": "C-1760-1726",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1236
+        },
+        {
+          "source": "C-1760-1726",
+          "target": "C-1775-1706",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1239
+        },
+        {
+          "source": "C-1775-1706",
+          "target": "E5-1787-1680",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1246
+        },
+        {
+          "source": "E5-1787-1680",
+          "target": "C-1766-1663",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1251
+        },
+        {
+          "source": "C-1766-1663",
+          "target": "C-1775-1637",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1259
+        },
+        {
+          "source": "C-1775-1637",
+          "target": "C-1777-1612",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1256
+        },
+        {
+          "source": "C-1777-1612",
+          "target": "C-1770-1577",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1276
+        },
+        {
+          "source": "C-1770-1577",
+          "target": "K-1740-1575",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1272
+        },
+        {
+          "source": "K-1740-1575",
+          "target": "C-1721-1566",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1271
+        },
+        {
+          "source": "C-1721-1566",
+          "target": "C-1717-1540",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1269
+        },
+        {
+          "source": "C-1717-1540",
+          "target": "C-1705-1514",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1287
+        },
+        {
+          "source": "C-1705-1514",
+          "target": "C-1677-1513",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1284
+        },
+        {
+          "source": "C-1677-1513",
+          "target": "K-1660-1490",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1282
+        },
+        {
+          "source": "K-1660-1490",
+          "target": "C-1648-1459",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1291
+        },
+        {
+          "source": "C-1648-1459",
+          "target": "C-1621-1468",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1302
+        },
+        {
+          "source": "C-1621-1468",
+          "target": "C-1592-1479",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1303
+        },
+        {
+          "source": "C-1592-1479",
+          "target": "C-1569-1455",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1319
+        },
+        {
+          "source": "C-1569-1455",
+          "target": "C-1545-1443",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1314
+        },
+        {
+          "source": "C-1545-1443",
+          "target": "K-1518-1455",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1311
+        },
+        {
+          "source": "K-1518-1455",
+          "target": "C-1501-1472",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1313
+        },
+        {
+          "source": "C-1501-1472",
+          "target": "C-1476-1456",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1337
+        },
+        {
+          "source": "C-1476-1456",
+          "target": "C-1454-1442",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1332
+        },
+        {
+          "source": "C-1454-1442",
+          "target": "C-1433-1460",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1339
+        },
+        {
+          "source": "C-1433-1460",
+          "target": "K-1416-1479",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1341
+        },
+        {
+          "source": "K-1416-1479",
+          "target": "C-1392-1499",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1349
+        },
+        {
+          "source": "C-1392-1499",
+          "target": "C-1368-1484",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1354
+        },
+        {
+          "source": "C-1368-1484",
+          "target": "C-1341-1471",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1351
+        },
+        {
+          "source": "C-1341-1471",
+          "target": "C-1318-1463",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1362
+        },
+        {
+          "source": "C-1318-1463",
+          "target": "K-1296-1491",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1361
+        },
+        {
+          "source": "K-1296-1491",
+          "target": "K-1284-1506",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1368
+        },
+        {
+          "source": "K-1284-1506",
+          "target": "K-1268-1526",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1377
+        },
+        {
+          "source": "K-1268-1526",
+          "target": "C-1240-1518",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1380
+        },
+        {
+          "source": "C-1240-1518",
+          "target": "E5-1214-1506",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1392
+        },
+        {
+          "source": "E5-1214-1506",
+          "target": "K-1184-1490",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1399
+        },
+        {
+          "source": "K-1184-1490",
+          "target": "K-1171-1518",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1390
+        },
+        {
+          "source": "K-1171-1518",
+          "target": "K-1146-1511",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1404
+        },
+        {
+          "source": "K-1146-1511",
+          "target": "C-1128-1530",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1403
+        },
+        {
+          "source": "C-1128-1530",
+          "target": "C-1106-1523",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1406
+        },
+        {
+          "source": "C-1106-1523",
+          "target": "C-1073-1515",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1416
+        },
+        {
+          "source": "C-1073-1515",
+          "target": "C-1060-1534",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1415
+        },
+        {
+          "source": "C-1060-1534",
+          "target": "K-1037-1557",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1418
+        },
+        {
+          "source": "K-1037-1557",
+          "target": "C-1026-1576",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1433
+        },
+        {
+          "source": "C-1026-1576",
+          "target": "C-0999-1559",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1436
+        },
+        {
+          "source": "C-0999-1559",
+          "target": "K-0970-1557",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1444
+        },
+        {
+          "source": "K-0970-1557",
+          "target": "C-0947-1546",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1442
+        },
+        {
+          "source": "C-0947-1546",
+          "target": "C-0929-1565",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1441
+        },
+        {
+          "source": "C-0929-1565",
+          "target": "C-0905-1566",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1456
+        },
+        {
+          "source": "C-0905-1566",
+          "target": "E5-0889-1583",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1458
+        },
+        {
+          "source": "E5-0889-1583",
+          "target": "K-0861-1575",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1474
+        },
+        {
+          "source": "K-0861-1575",
+          "target": "C-0846-1598",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1465
+        },
+        {
+          "source": "C-0846-1598",
+          "target": "C-0826-1579",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1483
+        },
+        {
+          "source": "C-0826-1579",
+          "target": "K-0802-1592",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1479
+        },
+        {
+          "source": "K-0802-1592",
+          "target": "K-0776-1583",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1481
+        },
+        {
+          "source": "K-0776-1583",
+          "target": "C-0759-1603",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1480
+        },
+        {
+          "source": "C-0759-1603",
+          "target": "C-0736-1589",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1495
+        },
+        {
+          "source": "C-0736-1589",
+          "target": "C-0714-1605",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1494
+        },
+        {
+          "source": "C-0714-1605",
+          "target": "C-0691-1589",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1497
+        },
+        {
+          "source": "C-0691-1589",
+          "target": "C-0666-1567",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1507
+        },
+        {
+          "source": "C-0666-1567",
+          "target": "K-0639-1586",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1506
+        },
+        {
+          "source": "K-0639-1586",
+          "target": "C-0623-1607",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1517
+        },
+        {
+          "source": "C-0623-1607",
+          "target": "C-0603-1587",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1521
+        },
+        {
+          "source": "C-0603-1587",
+          "target": "C-0584-1573",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1518
+        },
+        {
+          "source": "C-0584-1573",
+          "target": "C-0565-1588",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1530
+        },
+        {
+          "source": "C-0565-1588",
+          "target": "K-0544-1573",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1531
+        },
+        {
+          "source": "K-0544-1573",
+          "target": "K-0516-1582",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1529
+        },
+        {
+          "source": "K-0516-1582",
+          "target": "C-0505-1557",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1547
+        },
+        {
+          "source": "C-0505-1557",
+          "target": "C-0481-1576",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1544
+        },
+        {
+          "source": "C-0481-1576",
+          "target": "K-0455-1587",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1546
+        },
+        {
+          "source": "K-0455-1587",
+          "target": "K-0438-1566",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1559
+        },
+        {
+          "source": "K-0438-1566",
+          "target": "C-0412-1572",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1568
+        },
+        {
+          "source": "C-0412-1572",
+          "target": "C-0384-1579",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1570
+        },
+        {
+          "source": "C-0384-1579",
+          "target": "C-0364-1554",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1575
+        },
+        {
+          "source": "C-0364-1554",
+          "target": "E5-0355-1525",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1578
+        },
+        {
+          "source": "E5-0355-1525",
+          "target": "C-0346-1501",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1580
+        },
+        {
+          "source": "C-0346-1501",
+          "target": "C-0343-1474",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1597
+        },
+        {
+          "source": "C-0343-1474",
+          "target": "C-0312-1471",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1593
+        },
+        {
+          "source": "C-0312-1471",
+          "target": "C-0286-1466",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1592
+        },
+        {
+          "source": "C-0286-1466",
+          "target": "C-0291-1436",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1603
+        },
+        {
+          "source": "C-0291-1436",
+          "target": "C-0259-1429",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1606
+        },
+        {
+          "source": "C-0259-1429",
+          "target": "K-0264-1399",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1608
+        },
+        {
+          "source": "K-0264-1399",
+          "target": "K-0240-1389",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1616
+        },
+        {
+          "source": "K-0240-1389",
+          "target": "K-0249-1360",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1614
+        },
+        {
+          "source": "K-0249-1360",
+          "target": "C-0221-1351",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1619
+        },
+        {
+          "source": "C-0221-1351",
+          "target": "C-0234-1324",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1618
+        },
+        {
+          "source": "C-0234-1324",
+          "target": "K-0212-1305",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1621
+        },
+        {
+          "source": "K-0212-1305",
+          "target": "K-0220-1280",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1627
+        },
+        {
+          "source": "K-0220-1280",
+          "target": "E5-0204-1260",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1626
+        },
+        {
+          "source": "E5-0204-1260",
+          "target": "C-0220-1238",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1638
+        },
+        {
+          "source": "C-0220-1238",
+          "target": "C-0202-1217",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1644
+        },
+        {
+          "source": "C-0202-1217",
+          "target": "K-0183-1195",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1642
+        },
+        {
+          "source": "K-0183-1195",
+          "target": "C-0172-1170",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1652
+        },
+        {
+          "source": "C-0172-1170",
+          "target": "C-0191-1146",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1658
+        },
+        {
+          "source": "C-0191-1146",
+          "target": "E5-0215-1127",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1655
+        },
+        {
+          "source": "E5-0215-1127",
+          "target": "C-0234-1104",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1663
+        },
+        {
+          "source": "C-0234-1104",
+          "target": "C-0257-1090",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1661
+        },
+        {
+          "source": "C-0257-1090",
+          "target": "K-0248-1065",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1670
+        },
+        {
+          "source": "K-0248-1065",
+          "target": "K-0238-1041",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1676
+        },
+        {
+          "source": "K-0238-1041",
+          "target": "C-0267-1020",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1674
+        },
+        {
+          "source": "C-0267-1020",
+          "target": "C-0257-0994",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1683
+        },
+        {
+          "source": "C-0257-0994",
+          "target": "C-0283-0977",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1679
+        },
+        {
+          "source": "C-0283-0977",
+          "target": "K-0276-0952",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1697
+        },
+        {
+          "source": "K-0276-0952",
+          "target": "C-0267-0926",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1693
+        },
+        {
+          "source": "C-0267-0926",
+          "target": "C-0294-0912",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1688
+        },
+        {
+          "source": "C-0294-0912",
+          "target": "C-0290-0887",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1708
+        },
+        {
+          "source": "C-0290-0887",
+          "target": "C-0315-0867",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1703
+        },
+        {
+          "source": "C-0315-0867",
+          "target": "C-0348-0860",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1700
+        },
+        {
+          "source": "C-0348-0860",
+          "target": "K-0343-0831",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1718
+        },
+        {
+          "source": "K-0343-0831",
+          "target": "E5-0380-0823",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1713
+        },
+        {
+          "source": "E5-0380-0823",
+          "target": "E5-0368-0792",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1728
+        },
+        {
+          "source": "E5-0368-0792",
+          "target": "C-0398-0782",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1724
+        },
+        {
+          "source": "C-0398-0782",
+          "target": "K-0429-0772",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1729
+        },
+        {
+          "source": "K-0429-0772",
+          "target": "K-0429-0746",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1736
+        },
+        {
+          "source": "K-0429-0746",
+          "target": "D40-K-0421-0715",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1735
+        },
+        {
+          "source": "D40-K-0421-0715",
+          "target": "C-0422-0686",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1752
+        },
+        {
+          "source": "C-0422-0686",
+          "target": "C-0451-0678",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1745
+        },
+        {
+          "source": "C-0451-0678",
+          "target": "C-0480-0670",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1742
+        },
+        {
+          "source": "C-0480-0670",
+          "target": "D40-K-0479-0638",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1761
+        },
+        {
+          "source": "D40-K-0479-0638",
+          "target": "C-0483-0612",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1763
+        },
+        {
+          "source": "C-0483-0612",
+          "target": "C-0514-0609",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1755
+        },
+        {
+          "source": "C-0514-0609",
+          "target": "C-0519-0578",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1772
+        },
+        {
+          "source": "C-0519-0578",
+          "target": "C-0548-0577",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1767
+        },
+        {
+          "source": "C-0548-0577",
+          "target": "C-0581-0575",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1776
+        },
+        {
+          "source": "C-0581-0575",
+          "target": "D40-K-0585-0548",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1775
+        },
+        {
+          "source": "D40-K-0585-0548",
+          "target": "K-0616-0554",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1779
+        },
+        {
+          "source": "K-0616-0554",
+          "target": "C-0625-0525",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1791
+        },
+        {
+          "source": "C-0625-0525",
+          "target": "C-0632-0497",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1787
+        },
+        {
+          "source": "C-0632-0497",
+          "target": "C-0660-0499",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1782
+        },
+        {
+          "source": "C-0660-0499",
+          "target": "C-0672-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1809
+        },
+        {
+          "source": "C-0672-0478",
+          "target": "K-0701-0475",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1799
+        },
+        {
+          "source": "K-0701-0475",
+          "target": "C-0730-0480",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1812
+        },
+        {
+          "source": "C-0730-0480",
+          "target": "K-0758-0486",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1814
+        },
+        {
+          "source": "K-0758-0486",
+          "target": "C-0770-0457",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1818
+        },
+        {
+          "source": "C-0770-0457",
+          "target": "K-0782-0434",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1835
+        },
+        {
+          "source": "K-0782-0434",
+          "target": "C-0799-0410",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1830
+        },
+        {
+          "source": "C-0799-0410",
+          "target": "C-0826-0414",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1827
+        },
+        {
+          "source": "C-0826-0414",
+          "target": "C-0839-0392",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1848
+        },
+        {
+          "source": "C-0839-0392",
+          "target": "C-0870-0396",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1839
+        },
+        {
+          "source": "C-0870-0396",
+          "target": "E5-0895-0407",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1850
+        },
+        {
+          "source": "E5-0895-0407",
+          "target": "K-0915-0382",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1854
+        },
+        {
+          "source": "K-0915-0382",
+          "target": "C-0941-0385",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 7
+        },
+        {
+          "source": "C-0941-0385",
+          "target": "C-0956-0362",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 10
+        },
+        {
+          "source": "C-0956-0362",
+          "target": "C-0986-0371",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 15
+        },
+        {
+          "source": "C-0986-0371",
+          "target": "K-1013-0389",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 19
+        },
+        {
+          "source": "K-1013-0389",
+          "target": "K-1023-0354",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 12
+        },
+        {
+          "source": "K-1023-0354",
+          "target": "K-1046-0339",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 5
+        },
+        {
+          "source": "K-1046-0339",
+          "target": "K-1073-0343",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 0
+        },
+        {
+          "source": "K-1073-0343",
+          "target": "K-1101-0353",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 35
+        },
+        {
+          "source": "K-1101-0353",
+          "target": "C-1116-0328",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 38
+        },
+        {
+          "source": "C-1116-0328",
+          "target": "K-1133-0303",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 33
+        },
+        {
+          "source": "K-1133-0303",
+          "target": "K-1160-0319",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 45
+        },
+        {
+          "source": "K-1160-0319",
+          "target": "C-1178-0292",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 47
+        },
+        {
+          "source": "C-1178-0292",
+          "target": "C-1196-0273",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 58
+        },
+        {
+          "source": "C-1196-0273",
+          "target": "C-1221-0282",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 52
+        },
+        {
+          "source": "C-1221-0282",
+          "target": "C-1251-0290",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 54
+        },
+        {
+          "source": "C-1251-0290",
+          "target": "C-1277-0302",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 76
+        },
+        {
+          "source": "C-1277-0302",
+          "target": "C-1302-0316",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 79
+        }
+      ]
+    }
+  },
+  "hypothetical_graph_without_target": {
+    "nodes": 1040,
+    "edges": 2287,
+    "components": 1,
+    "independent_graph_cycles": 1248,
+    "nonzero_fundamental_cycle_residuals": 3,
+    "derived_cycle_subgroup_generator": [
+      214,
+      201
+    ],
+    "saved_coordinates_recovered_modulo_generator": true,
+    "cycle_witness": {
+      "delta_ab": [
+        214,
+        201
+      ],
+      "steps": [
+        {
+          "source": "C-1302-0316",
+          "target": "C-1324-0332",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 82
+        },
+        {
+          "source": "C-1324-0332",
+          "target": "K-1341-0309",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 95
+        },
+        {
+          "source": "K-1341-0309",
+          "target": "P5-1364-0299",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 105
+        },
+        {
+          "source": "P5-1364-0299",
+          "target": "C-1391-0312",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 107
+        },
+        {
+          "source": "C-1391-0312",
+          "target": "K-1403-0284",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 106
+        },
+        {
+          "source": "K-1403-0284",
+          "target": "K-1429-0302",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 103
+        },
+        {
+          "source": "K-1429-0302",
+          "target": "K-1443-0285",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 118
+        },
+        {
+          "source": "K-1443-0285",
+          "target": "C-1477-0290",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 116
+        },
+        {
+          "source": "C-1477-0290",
+          "target": "C-1497-0271",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 119
+        },
+        {
+          "source": "C-1497-0271",
+          "target": "K-1510-0292",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 126
+        },
+        {
+          "source": "K-1510-0292",
+          "target": "NEW-1538-305",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 124
+        },
+        {
+          "source": "NEW-1538-305",
+          "target": "E5-1561-0289",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 147
+        },
+        {
+          "source": "E5-1561-0289",
+          "target": "C-1585-0307",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 145
+        },
+        {
+          "source": "C-1585-0307",
+          "target": "E5-1607-0290",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 141
+        },
+        {
+          "source": "E5-1607-0290",
+          "target": "NEW-1621-315",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 151
+        },
+        {
+          "source": "NEW-1621-315",
+          "target": "P5-1645-0309",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 157
+        },
+        {
+          "source": "P5-1645-0309",
+          "target": "E5-1671-0325",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 155
+        },
+        {
+          "source": "E5-1671-0325",
+          "target": "K-1695-0317",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 158
+        },
+        {
+          "source": "K-1695-0317",
+          "target": "NEW-1706-342",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 165
+        },
+        {
+          "source": "NEW-1706-342",
+          "target": "C-1729-0337",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 182
+        },
+        {
+          "source": "C-1729-0337",
+          "target": "E5-1744-0360",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 172
+        },
+        {
+          "source": "E5-1744-0360",
+          "target": "NEW-1756-380",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 174
+        },
+        {
+          "source": "NEW-1756-380",
+          "target": "E5-1785-0383",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 187
+        },
+        {
+          "source": "E5-1785-0383",
+          "target": "C-1813-0383",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 191
+        },
+        {
+          "source": "C-1813-0383",
+          "target": "MAT25-K-1817-0415",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 192
+        },
+        {
+          "source": "MAT25-K-1817-0415",
+          "target": "NEW-1826-438",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 200
+        },
+        {
+          "source": "NEW-1826-438",
+          "target": "E5-1851-0439",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 210
+        },
+        {
+          "source": "E5-1851-0439",
+          "target": "C-1877-0445",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 209
+        },
+        {
+          "source": "C-1877-0445",
+          "target": "C-1882-0479",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 215
+        },
+        {
+          "source": "C-1882-0479",
+          "target": "C-1910-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 214
+        },
+        {
+          "source": "C-1910-0478",
+          "target": "C-1936-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 213
+        },
+        {
+          "source": "C-1936-0478",
+          "target": "C-1940-0508",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 222
+        },
+        {
+          "source": "C-1940-0508",
+          "target": "E5-1941-0539",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 227
+        },
+        {
+          "source": "E5-1941-0539",
+          "target": "D40-K-1967-0541",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 236
+        },
+        {
+          "source": "D40-K-1967-0541",
+          "target": "RF70T-K-1965-0575",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 237
+        },
+        {
+          "source": "RF70T-K-1965-0575",
+          "target": "C-1993-0580",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 242
+        },
+        {
+          "source": "C-1993-0580",
+          "target": "C-1991-0608",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 246
+        },
+        {
+          "source": "C-1991-0608",
+          "target": "NEW-1990-639",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 255
+        },
+        {
+          "source": "NEW-1990-639",
+          "target": "P5-2011-0649",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 257
+        },
+        {
+          "source": "P5-2011-0649",
+          "target": "C-2038-0658",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 266
+        },
+        {
+          "source": "C-2038-0658",
+          "target": "MAT25-K-2028-0689",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 264
+        },
+        {
+          "source": "MAT25-K-2028-0689",
+          "target": "K-2051-0701",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 282
+        },
+        {
+          "source": "K-2051-0701",
+          "target": "E5-2052-0728",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 273
+        },
+        {
+          "source": "E5-2052-0728",
+          "target": "C-2045-0755",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 279
+        },
+        {
+          "source": "C-2045-0755",
+          "target": "C-2064-0771",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 283
+        },
+        {
+          "source": "C-2064-0771",
+          "target": "NEW-2060-796",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 286
+        },
+        {
+          "source": "NEW-2060-796",
+          "target": "MAT25-K-2078-0812",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 298
+        },
+        {
+          "source": "MAT25-K-2078-0812",
+          "target": "C-2102-0824",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 306
+        },
+        {
+          "source": "C-2102-0824",
+          "target": "E5-2094-0852",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 303
+        },
+        {
+          "source": "E5-2094-0852",
+          "target": "NEW-2080-878",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 314
+        },
+        {
+          "source": "NEW-2080-878",
+          "target": "K-2104-0894",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 318
+        },
+        {
+          "source": "K-2104-0894",
+          "target": "NEW-2100-921",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 312
+        },
+        {
+          "source": "NEW-2100-921",
+          "target": "C-2122-0936",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 329
+        },
+        {
+          "source": "C-2122-0936",
+          "target": "NEW-2113-963",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 319
+        },
+        {
+          "source": "NEW-2113-963",
+          "target": "C-2131-0981",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 330
+        },
+        {
+          "source": "C-2131-0981",
+          "target": "C-2154-0993",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 333
+        },
+        {
+          "source": "C-2154-0993",
+          "target": "D40-K-2142-1024",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 334
+        },
+        {
+          "source": "D40-K-2142-1024",
+          "target": "NEW-2138-1049",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 345
+        },
+        {
+          "source": "NEW-2138-1049",
+          "target": "C-2157-1066",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 347
+        },
+        {
+          "source": "C-2157-1066",
+          "target": "C-2145-1092",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 343
+        },
+        {
+          "source": "C-2145-1092",
+          "target": "E5-2165-1110",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 348
+        },
+        {
+          "source": "E5-2165-1110",
+          "target": "NEW-2156-1135",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 353
+        },
+        {
+          "source": "NEW-2156-1135",
+          "target": "RF70T-K-2172-1154",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 359
+        },
+        {
+          "source": "RF70T-K-2172-1154",
+          "target": "NEW-2167-1179",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 365
+        },
+        {
+          "source": "NEW-2167-1179",
+          "target": "C-2186-1195",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 367
+        },
+        {
+          "source": "C-2186-1195",
+          "target": "C-2179-1221",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 368
+        },
+        {
+          "source": "C-2179-1221",
+          "target": "K-2199-1236",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 373
+        },
+        {
+          "source": "K-2199-1236",
+          "target": "NEW-2185-1265",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 374
+        },
+        {
+          "source": "NEW-2185-1265",
+          "target": "C-2207-1279",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 389
+        },
+        {
+          "source": "C-2207-1279",
+          "target": "NEW-2196-1305",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 384
+        },
+        {
+          "source": "NEW-2196-1305",
+          "target": "C-2216-1323",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 390
+        },
+        {
+          "source": "C-2216-1323",
+          "target": "NEW-2207-1350",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 395
+        },
+        {
+          "source": "NEW-2207-1350",
+          "target": "K-2227-1364",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 402
+        },
+        {
+          "source": "K-2227-1364",
+          "target": "NEW-2219-1390",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 392
+        },
+        {
+          "source": "NEW-2219-1390",
+          "target": "C-2240-1406",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 410
+        },
+        {
+          "source": "C-2240-1406",
+          "target": "C-2224-1430",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 407
+        },
+        {
+          "source": "C-2224-1430",
+          "target": "E5-2245-1450",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 411
+        },
+        {
+          "source": "E5-2245-1450",
+          "target": "NEW-2235-1476",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 417
+        },
+        {
+          "source": "NEW-2235-1476",
+          "target": "D40-K-2250-1499",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 425
+        },
+        {
+          "source": "D40-K-2250-1499",
+          "target": "NEW-2237-1522",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 435
+        },
+        {
+          "source": "NEW-2237-1522",
+          "target": "C-2254-1539",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 440
+        },
+        {
+          "source": "C-2254-1539",
+          "target": "NEW-2245-1563",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 429
+        },
+        {
+          "source": "NEW-2245-1563",
+          "target": "D40-K-2261-1584",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 449
+        },
+        {
+          "source": "D40-K-2261-1584",
+          "target": "NEW-2251-1608",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 447
+        },
+        {
+          "source": "NEW-2251-1608",
+          "target": "E5-2271-1625",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 460
+        },
+        {
+          "source": "E5-2271-1625",
+          "target": "NEW-2256-1649",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 455
+        },
+        {
+          "source": "NEW-2256-1649",
+          "target": "C-2277-1667",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 459
+        },
+        {
+          "source": "C-2277-1667",
+          "target": "E9-2263-1691",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 462
+        },
+        {
+          "source": "E9-2263-1691",
+          "target": "K-2284-1712",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 467
+        },
+        {
+          "source": "K-2284-1712",
+          "target": "E5-2269-1733",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 464
+        },
+        {
+          "source": "E5-2269-1733",
+          "target": "C-2288-1752",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 483
+        },
+        {
+          "source": "C-2288-1752",
+          "target": "C-2273-1775",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 478
+        },
+        {
+          "source": "C-2273-1775",
+          "target": "C-2288-1794",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 477
+        },
+        {
+          "source": "C-2288-1794",
+          "target": "E5-2272-1815",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 485
+        },
+        {
+          "source": "E5-2272-1815",
+          "target": "E5-2291-1846",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 493
+        },
+        {
+          "source": "E5-2291-1846",
+          "target": "RF70T-K-2273-1856",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 495
+        },
+        {
+          "source": "RF70T-K-2273-1856",
+          "target": "C-2284-1877",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 505
+        },
+        {
+          "source": "C-2284-1877",
+          "target": "C-2267-1898",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 499
+        },
+        {
+          "source": "C-2267-1898",
+          "target": "K-2289-1917",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 507
+        },
+        {
+          "source": "K-2289-1917",
+          "target": "MAT25-K-2270-1942",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 508
+        },
+        {
+          "source": "MAT25-K-2270-1942",
+          "target": "NEW-2259-1961",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 516
+        },
+        {
+          "source": "NEW-2259-1961",
+          "target": "E5-2271-1983",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 531
+        },
+        {
+          "source": "E5-2271-1983",
+          "target": "NEW-2257-2004",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 523
+        },
+        {
+          "source": "NEW-2257-2004",
+          "target": "MAT25-K-2268-2028",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 530
+        },
+        {
+          "source": "MAT25-K-2268-2028",
+          "target": "K-2287-2050",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 543
+        },
+        {
+          "source": "K-2287-2050",
+          "target": "H5-2261-2067",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 535
+        },
+        {
+          "source": "H5-2261-2067",
+          "target": "C-2247-2085",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 544
+        },
+        {
+          "source": "C-2247-2085",
+          "target": "C-2252-2109",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 546
+        },
+        {
+          "source": "C-2252-2109",
+          "target": "NEW-2237-2128",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 547
+        },
+        {
+          "source": "NEW-2237-2128",
+          "target": "RF70T-K-2247-2151",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 571
+        },
+        {
+          "source": "RF70T-K-2247-2151",
+          "target": "NEW-2226-2171",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 569
+        },
+        {
+          "source": "NEW-2226-2171",
+          "target": "MAT25-K-2237-2196",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 572
+        },
+        {
+          "source": "MAT25-K-2237-2196",
+          "target": "C-2247-2216",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 581
+        },
+        {
+          "source": "C-2247-2216",
+          "target": "E5-2225-2233",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 573
+        },
+        {
+          "source": "E5-2225-2233",
+          "target": "D40-K-2239-2263",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 579
+        },
+        {
+          "source": "D40-K-2239-2263",
+          "target": "D40-K-2217-2280",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 589
+        },
+        {
+          "source": "D40-K-2217-2280",
+          "target": "NEW-2199-2298",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 591
+        },
+        {
+          "source": "NEW-2199-2298",
+          "target": "C-2201-2320",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 593
+        },
+        {
+          "source": "C-2201-2320",
+          "target": "NEW-2186-2343",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 594
+        },
+        {
+          "source": "NEW-2186-2343",
+          "target": "D40-K-2191-2368",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 601
+        },
+        {
+          "source": "D40-K-2191-2368",
+          "target": "K-2205-2394",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 608
+        },
+        {
+          "source": "K-2205-2394",
+          "target": "E5-2179-2407",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 602
+        },
+        {
+          "source": "E5-2179-2407",
+          "target": "C-2188-2437",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 607
+        },
+        {
+          "source": "C-2188-2437",
+          "target": "E5-2160-2451",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 614
+        },
+        {
+          "source": "E5-2160-2451",
+          "target": "E5-2139-2470",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 611
+        },
+        {
+          "source": "E5-2139-2470",
+          "target": "MAT25-K-2142-2497",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 628
+        },
+        {
+          "source": "MAT25-K-2142-2497",
+          "target": "C-2120-2509",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 633
+        },
+        {
+          "source": "C-2120-2509",
+          "target": "C-2100-2525",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 623
+        },
+        {
+          "source": "C-2100-2525",
+          "target": "D40-K-2099-2550",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 635
+        },
+        {
+          "source": "D40-K-2099-2550",
+          "target": "C-2105-2574",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 642
+        },
+        {
+          "source": "C-2105-2574",
+          "target": "C-2078-2582",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 640
+        },
+        {
+          "source": "C-2078-2582",
+          "target": "C-2059-2590",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 648
+        },
+        {
+          "source": "C-2059-2590",
+          "target": "MAT25-K-2054-2616",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 650
+        },
+        {
+          "source": "MAT25-K-2054-2616",
+          "target": "E5-2053-2643",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 660
+        },
+        {
+          "source": "E5-2053-2643",
+          "target": "C-2022-2657",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 668
+        },
+        {
+          "source": "C-2022-2657",
+          "target": "NEW-1999-2655",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 670
+        },
+        {
+          "source": "NEW-1999-2655",
+          "target": "C-1998-2685",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 685
+        },
+        {
+          "source": "C-1998-2685",
+          "target": "C-1997-2715",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 673
+        },
+        {
+          "source": "C-1997-2715",
+          "target": "C-1964-2713",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 679
+        },
+        {
+          "source": "C-1964-2713",
+          "target": "NEW-1942-2725",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 686
+        },
+        {
+          "source": "NEW-1942-2725",
+          "target": "K-1943-2759",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 696
+        },
+        {
+          "source": "K-1943-2759",
+          "target": "C-1916-2762",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 693
+        },
+        {
+          "source": "C-1916-2762",
+          "target": "C-1893-2771",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 700
+        },
+        {
+          "source": "C-1893-2771",
+          "target": "C-1881-2795",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 702
+        },
+        {
+          "source": "C-1881-2795",
+          "target": "C-1856-2802",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 714
+        },
+        {
+          "source": "C-1856-2802",
+          "target": "D40-K-1848-2825",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 716
+        },
+        {
+          "source": "D40-K-1848-2825",
+          "target": "NEW-1828-2833",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 726
+        },
+        {
+          "source": "NEW-1828-2833",
+          "target": "C-1822-2854",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 745
+        },
+        {
+          "source": "C-1822-2854",
+          "target": "NEW-1792-2858",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 734
+        },
+        {
+          "source": "NEW-1792-2858",
+          "target": "MAT25-K-1786-2881",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 746
+        },
+        {
+          "source": "MAT25-K-1786-2881",
+          "target": "NEW-1764-2887",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 753
+        },
+        {
+          "source": "NEW-1764-2887",
+          "target": "C-1740-2888",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 758
+        },
+        {
+          "source": "C-1740-2888",
+          "target": "C-1726-2908",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 760
+        },
+        {
+          "source": "C-1726-2908",
+          "target": "C-1718-2934",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 761
+        },
+        {
+          "source": "C-1718-2934",
+          "target": "MAT25-K-1689-2933",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 762
+        },
+        {
+          "source": "MAT25-K-1689-2933",
+          "target": "K-1683-2959",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 790
+        },
+        {
+          "source": "K-1683-2959",
+          "target": "C-1657-2954",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 777
+        },
+        {
+          "source": "C-1657-2954",
+          "target": "E5-1641-2976",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 776
+        },
+        {
+          "source": "E5-1641-2976",
+          "target": "E5-1616-2970",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 798
+        },
+        {
+          "source": "E5-1616-2970",
+          "target": "C-1607-2991",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 800
+        },
+        {
+          "source": "C-1607-2991",
+          "target": "K-1593-3018",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 791
+        },
+        {
+          "source": "K-1593-3018",
+          "target": "K-1565-3004",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 807
+        },
+        {
+          "source": "K-1565-3004",
+          "target": "MAT25-K-1538-2998",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 804
+        },
+        {
+          "source": "MAT25-K-1538-2998",
+          "target": "C-1526-3018",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 817
+        },
+        {
+          "source": "C-1526-3018",
+          "target": "E5-1503-2999",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 819
+        },
+        {
+          "source": "E5-1503-2999",
+          "target": "C-1478-2990",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 833
+        },
+        {
+          "source": "C-1478-2990",
+          "target": "E5-1455-3009",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 828
+        },
+        {
+          "source": "E5-1455-3009",
+          "target": "C-1440-3032",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 838
+        },
+        {
+          "source": "C-1440-3032",
+          "target": "C-1423-3004",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 851
+        },
+        {
+          "source": "C-1423-3004",
+          "target": "C-1398-3017",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 842
+        },
+        {
+          "source": "C-1398-3017",
+          "target": "K-1380-2998",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 846
+        },
+        {
+          "source": "K-1380-2998",
+          "target": "C-1364-2971",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 840
+        },
+        {
+          "source": "C-1364-2971",
+          "target": "C-1341-2982",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 839
+        },
+        {
+          "source": "C-1341-2982",
+          "target": "C-1313-2998",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 861
+        },
+        {
+          "source": "C-1313-2998",
+          "target": "C-1288-3010",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 862
+        },
+        {
+          "source": "C-1288-3010",
+          "target": "C-1274-2980",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 865
+        },
+        {
+          "source": "C-1274-2980",
+          "target": "NEW-1247-2991",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 864
+        },
+        {
+          "source": "NEW-1247-2991",
+          "target": "K-1234-2967",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 870
+        },
+        {
+          "source": "K-1234-2967",
+          "target": "MAT25-K-1223-2943",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 875
+        },
+        {
+          "source": "MAT25-K-1223-2943",
+          "target": "C-1198-2943",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 881
+        },
+        {
+          "source": "C-1198-2943",
+          "target": "C-1189-2919",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 889
+        },
+        {
+          "source": "C-1189-2919",
+          "target": "E5-1178-2887",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 884
+        },
+        {
+          "source": "E5-1178-2887",
+          "target": "E5-1151-2893",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 893
+        },
+        {
+          "source": "E5-1151-2893",
+          "target": "C-1151-2862",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 908
+        },
+        {
+          "source": "C-1151-2862",
+          "target": "C-1119-2879",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 898
+        },
+        {
+          "source": "C-1119-2879",
+          "target": "E5-1111-2848",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 900
+        },
+        {
+          "source": "E5-1111-2848",
+          "target": "K-1085-2841",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 919
+        },
+        {
+          "source": "K-1085-2841",
+          "target": "C-1085-2813",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 913
+        },
+        {
+          "source": "C-1085-2813",
+          "target": "C-1058-2815",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 912
+        },
+        {
+          "source": "C-1058-2815",
+          "target": "C-1033-2810",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 926
+        },
+        {
+          "source": "C-1033-2810",
+          "target": "D40-K-1036-2780",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 924
+        },
+        {
+          "source": "D40-K-1036-2780",
+          "target": "C-1034-2749",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 940
+        },
+        {
+          "source": "C-1034-2749",
+          "target": "C-1007-2744",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 935
+        },
+        {
+          "source": "C-1007-2744",
+          "target": "K-1010-2715",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 933
+        },
+        {
+          "source": "K-1010-2715",
+          "target": "K-0990-2705",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 947
+        },
+        {
+          "source": "K-0990-2705",
+          "target": "C-1001-2678",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 945
+        },
+        {
+          "source": "C-1001-2678",
+          "target": "C-0978-2667",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 957
+        },
+        {
+          "source": "C-0978-2667",
+          "target": "E5-0978-2636",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 962
+        },
+        {
+          "source": "E5-0978-2636",
+          "target": "E5-0956-2624",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 964
+        },
+        {
+          "source": "E5-0956-2624",
+          "target": "E5-0962-2596",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 970
+        },
+        {
+          "source": "E5-0962-2596",
+          "target": "E5-0942-2582",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 980
+        },
+        {
+          "source": "E5-0942-2582",
+          "target": "MAT25-K-0953-2555",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 978
+        },
+        {
+          "source": "MAT25-K-0953-2555",
+          "target": "K-0935-2540",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 991
+        },
+        {
+          "source": "K-0935-2540",
+          "target": "E5-0950-2512",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 981
+        },
+        {
+          "source": "E5-0950-2512",
+          "target": "E5-0931-2495",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 987
+        },
+        {
+          "source": "E5-0931-2495",
+          "target": "E5-0915-2472",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 997
+        },
+        {
+          "source": "E5-0915-2472",
+          "target": "C-0899-2449",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 999
+        },
+        {
+          "source": "C-0899-2449",
+          "target": "C-0921-2428",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 993
+        },
+        {
+          "source": "C-0921-2428",
+          "target": "E5-0942-2408",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1004
+        },
+        {
+          "source": "E5-0942-2408",
+          "target": "K-0929-2384",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1007
+        },
+        {
+          "source": "K-0929-2384",
+          "target": "K-0957-2364",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1013
+        },
+        {
+          "source": "K-0957-2364",
+          "target": "C-0950-2338",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1012
+        },
+        {
+          "source": "C-0950-2338",
+          "target": "NEW-948-2311",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1020
+        },
+        {
+          "source": "NEW-948-2311",
+          "target": "C-0950-2286",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1029
+        },
+        {
+          "source": "C-0950-2286",
+          "target": "D40-K-0971-2274",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1023
+        },
+        {
+          "source": "D40-K-0971-2274",
+          "target": "E5-1003-2267",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1037
+        },
+        {
+          "source": "E5-1003-2267",
+          "target": "C-1007-2241",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1035
+        },
+        {
+          "source": "C-1007-2241",
+          "target": "C-1035-2229",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1042
+        },
+        {
+          "source": "C-1035-2229",
+          "target": "K-1063-2230",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1046
+        },
+        {
+          "source": "K-1063-2230",
+          "target": "K-1072-2198",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1048
+        },
+        {
+          "source": "K-1072-2198",
+          "target": "C-1100-2195",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1052
+        },
+        {
+          "source": "C-1100-2195",
+          "target": "C-1109-2169",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1065
+        },
+        {
+          "source": "C-1109-2169",
+          "target": "C-1120-2144",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1062
+        },
+        {
+          "source": "C-1120-2144",
+          "target": "C-1149-2150",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1071
+        },
+        {
+          "source": "C-1149-2150",
+          "target": "K-1161-2121",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1081
+        },
+        {
+          "source": "K-1161-2121",
+          "target": "C-1175-2104",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1077
+        },
+        {
+          "source": "C-1175-2104",
+          "target": "C-1205-2103",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1089
+        },
+        {
+          "source": "C-1205-2103",
+          "target": "C-1231-2109",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1095
+        },
+        {
+          "source": "C-1231-2109",
+          "target": "C-1263-2116",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1097
+        },
+        {
+          "source": "C-1263-2116",
+          "target": "K-1278-2097",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1112
+        },
+        {
+          "source": "K-1278-2097",
+          "target": "K-1291-2071",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1109
+        },
+        {
+          "source": "K-1291-2071",
+          "target": "K-1309-2054",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1124
+        },
+        {
+          "source": "K-1309-2054",
+          "target": "C-1339-2060",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1118
+        },
+        {
+          "source": "C-1339-2060",
+          "target": "C-1363-2071",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1120
+        },
+        {
+          "source": "C-1363-2071",
+          "target": "C-1383-2050",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1140
+        },
+        {
+          "source": "C-1383-2050",
+          "target": "K-1410-2057",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1135
+        },
+        {
+          "source": "K-1410-2057",
+          "target": "C-1438-2066",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1149
+        },
+        {
+          "source": "C-1438-2066",
+          "target": "C-1452-2044",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1151
+        },
+        {
+          "source": "C-1452-2044",
+          "target": "C-1466-2022",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1147
+        },
+        {
+          "source": "C-1466-2022",
+          "target": "C-1495-2031",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1164
+        },
+        {
+          "source": "C-1495-2031",
+          "target": "K-1506-2006",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1167
+        },
+        {
+          "source": "K-1506-2006",
+          "target": "K-1536-2014",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1160
+        },
+        {
+          "source": "K-1536-2014",
+          "target": "K-1567-2019",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1178
+        },
+        {
+          "source": "K-1567-2019",
+          "target": "C-1579-1993",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1180
+        },
+        {
+          "source": "C-1579-1993",
+          "target": "C-1608-1998",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1189
+        },
+        {
+          "source": "C-1608-1998",
+          "target": "K-1616-1972",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1191
+        },
+        {
+          "source": "K-1616-1972",
+          "target": "E5-1648-1985",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1186
+        },
+        {
+          "source": "E5-1648-1985",
+          "target": "C-1675-1967",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1202
+        },
+        {
+          "source": "C-1675-1967",
+          "target": "C-1676-1945",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1199
+        },
+        {
+          "source": "C-1676-1945",
+          "target": "C-1678-1920",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1201
+        },
+        {
+          "source": "C-1678-1920",
+          "target": "K-1706-1916",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1213
+        },
+        {
+          "source": "K-1706-1916",
+          "target": "C-1733-1899",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1217
+        },
+        {
+          "source": "C-1733-1899",
+          "target": "C-1729-1874",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1216
+        },
+        {
+          "source": "C-1729-1874",
+          "target": "E5-1725-1850",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1215
+        },
+        {
+          "source": "E5-1725-1850",
+          "target": "D40-K-1752-1835",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1225
+        },
+        {
+          "source": "D40-K-1752-1835",
+          "target": "C-1744-1809",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1228
+        },
+        {
+          "source": "C-1744-1809",
+          "target": "C-1766-1792",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1232
+        },
+        {
+          "source": "C-1766-1792",
+          "target": "K-1783-1774",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1230
+        },
+        {
+          "source": "K-1783-1774",
+          "target": "D40-K-1772-1751",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1235
+        },
+        {
+          "source": "D40-K-1772-1751",
+          "target": "C-1760-1726",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1236
+        },
+        {
+          "source": "C-1760-1726",
+          "target": "C-1775-1706",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1239
+        },
+        {
+          "source": "C-1775-1706",
+          "target": "E5-1787-1680",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1246
+        },
+        {
+          "source": "E5-1787-1680",
+          "target": "C-1766-1663",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1251
+        },
+        {
+          "source": "C-1766-1663",
+          "target": "C-1775-1637",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1259
+        },
+        {
+          "source": "C-1775-1637",
+          "target": "C-1777-1612",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1256
+        },
+        {
+          "source": "C-1777-1612",
+          "target": "C-1770-1577",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1276
+        },
+        {
+          "source": "C-1770-1577",
+          "target": "K-1740-1575",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1272
+        },
+        {
+          "source": "K-1740-1575",
+          "target": "C-1721-1566",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1271
+        },
+        {
+          "source": "C-1721-1566",
+          "target": "C-1717-1540",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1269
+        },
+        {
+          "source": "C-1717-1540",
+          "target": "C-1705-1514",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1287
+        },
+        {
+          "source": "C-1705-1514",
+          "target": "C-1677-1513",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1284
+        },
+        {
+          "source": "C-1677-1513",
+          "target": "K-1660-1490",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1282
+        },
+        {
+          "source": "K-1660-1490",
+          "target": "C-1648-1459",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1291
+        },
+        {
+          "source": "C-1648-1459",
+          "target": "C-1621-1468",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1302
+        },
+        {
+          "source": "C-1621-1468",
+          "target": "C-1592-1479",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1303
+        },
+        {
+          "source": "C-1592-1479",
+          "target": "C-1569-1455",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1319
+        },
+        {
+          "source": "C-1569-1455",
+          "target": "C-1545-1443",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1314
+        },
+        {
+          "source": "C-1545-1443",
+          "target": "K-1518-1455",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1311
+        },
+        {
+          "source": "K-1518-1455",
+          "target": "C-1501-1472",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1313
+        },
+        {
+          "source": "C-1501-1472",
+          "target": "C-1476-1456",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1337
+        },
+        {
+          "source": "C-1476-1456",
+          "target": "C-1454-1442",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1332
+        },
+        {
+          "source": "C-1454-1442",
+          "target": "C-1433-1460",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1339
+        },
+        {
+          "source": "C-1433-1460",
+          "target": "K-1416-1479",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1341
+        },
+        {
+          "source": "K-1416-1479",
+          "target": "C-1392-1499",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1349
+        },
+        {
+          "source": "C-1392-1499",
+          "target": "C-1368-1484",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1354
+        },
+        {
+          "source": "C-1368-1484",
+          "target": "C-1341-1471",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1351
+        },
+        {
+          "source": "C-1341-1471",
+          "target": "C-1318-1463",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1362
+        },
+        {
+          "source": "C-1318-1463",
+          "target": "K-1296-1491",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1361
+        },
+        {
+          "source": "K-1296-1491",
+          "target": "K-1284-1506",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1368
+        },
+        {
+          "source": "K-1284-1506",
+          "target": "K-1268-1526",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1377
+        },
+        {
+          "source": "K-1268-1526",
+          "target": "C-1240-1518",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1380
+        },
+        {
+          "source": "C-1240-1518",
+          "target": "E5-1214-1506",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1392
+        },
+        {
+          "source": "E5-1214-1506",
+          "target": "K-1184-1490",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1399
+        },
+        {
+          "source": "K-1184-1490",
+          "target": "K-1171-1518",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1390
+        },
+        {
+          "source": "K-1171-1518",
+          "target": "K-1146-1511",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1404
+        },
+        {
+          "source": "K-1146-1511",
+          "target": "C-1128-1530",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1403
+        },
+        {
+          "source": "C-1128-1530",
+          "target": "C-1106-1523",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1406
+        },
+        {
+          "source": "C-1106-1523",
+          "target": "C-1073-1515",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1416
+        },
+        {
+          "source": "C-1073-1515",
+          "target": "C-1060-1534",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1415
+        },
+        {
+          "source": "C-1060-1534",
+          "target": "K-1037-1557",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1418
+        },
+        {
+          "source": "K-1037-1557",
+          "target": "C-1026-1576",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1433
+        },
+        {
+          "source": "C-1026-1576",
+          "target": "C-0999-1559",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1436
+        },
+        {
+          "source": "C-0999-1559",
+          "target": "K-0970-1557",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1444
+        },
+        {
+          "source": "K-0970-1557",
+          "target": "C-0947-1546",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1442
+        },
+        {
+          "source": "C-0947-1546",
+          "target": "C-0929-1565",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1441
+        },
+        {
+          "source": "C-0929-1565",
+          "target": "C-0905-1566",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1456
+        },
+        {
+          "source": "C-0905-1566",
+          "target": "E5-0889-1583",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1458
+        },
+        {
+          "source": "E5-0889-1583",
+          "target": "K-0861-1575",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1474
+        },
+        {
+          "source": "K-0861-1575",
+          "target": "C-0846-1598",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1465
+        },
+        {
+          "source": "C-0846-1598",
+          "target": "C-0826-1579",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1483
+        },
+        {
+          "source": "C-0826-1579",
+          "target": "K-0802-1592",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1479
+        },
+        {
+          "source": "K-0802-1592",
+          "target": "K-0776-1583",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1481
+        },
+        {
+          "source": "K-0776-1583",
+          "target": "C-0759-1603",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1480
+        },
+        {
+          "source": "C-0759-1603",
+          "target": "C-0736-1589",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1495
+        },
+        {
+          "source": "C-0736-1589",
+          "target": "C-0714-1605",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1494
+        },
+        {
+          "source": "C-0714-1605",
+          "target": "C-0691-1589",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1497
+        },
+        {
+          "source": "C-0691-1589",
+          "target": "C-0666-1567",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1507
+        },
+        {
+          "source": "C-0666-1567",
+          "target": "K-0639-1586",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1506
+        },
+        {
+          "source": "K-0639-1586",
+          "target": "C-0623-1607",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1517
+        },
+        {
+          "source": "C-0623-1607",
+          "target": "C-0603-1587",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1521
+        },
+        {
+          "source": "C-0603-1587",
+          "target": "C-0584-1573",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1518
+        },
+        {
+          "source": "C-0584-1573",
+          "target": "C-0565-1588",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1530
+        },
+        {
+          "source": "C-0565-1588",
+          "target": "K-0544-1573",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1531
+        },
+        {
+          "source": "K-0544-1573",
+          "target": "K-0516-1582",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1529
+        },
+        {
+          "source": "K-0516-1582",
+          "target": "C-0505-1557",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1547
+        },
+        {
+          "source": "C-0505-1557",
+          "target": "C-0481-1576",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1544
+        },
+        {
+          "source": "C-0481-1576",
+          "target": "K-0455-1587",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1546
+        },
+        {
+          "source": "K-0455-1587",
+          "target": "K-0438-1566",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1559
+        },
+        {
+          "source": "K-0438-1566",
+          "target": "C-0412-1572",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1568
+        },
+        {
+          "source": "C-0412-1572",
+          "target": "C-0384-1579",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1570
+        },
+        {
+          "source": "C-0384-1579",
+          "target": "C-0364-1554",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1575
+        },
+        {
+          "source": "C-0364-1554",
+          "target": "E5-0355-1525",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1578
+        },
+        {
+          "source": "E5-0355-1525",
+          "target": "C-0346-1501",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1580
+        },
+        {
+          "source": "C-0346-1501",
+          "target": "C-0343-1474",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1597
+        },
+        {
+          "source": "C-0343-1474",
+          "target": "C-0312-1471",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1593
+        },
+        {
+          "source": "C-0312-1471",
+          "target": "C-0286-1466",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1592
+        },
+        {
+          "source": "C-0286-1466",
+          "target": "C-0291-1436",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1603
+        },
+        {
+          "source": "C-0291-1436",
+          "target": "C-0259-1429",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1606
+        },
+        {
+          "source": "C-0259-1429",
+          "target": "K-0264-1399",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1608
+        },
+        {
+          "source": "K-0264-1399",
+          "target": "K-0240-1389",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1616
+        },
+        {
+          "source": "K-0240-1389",
+          "target": "K-0249-1360",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1614
+        },
+        {
+          "source": "K-0249-1360",
+          "target": "C-0221-1351",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1619
+        },
+        {
+          "source": "C-0221-1351",
+          "target": "C-0234-1324",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1618
+        },
+        {
+          "source": "C-0234-1324",
+          "target": "K-0212-1305",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1621
+        },
+        {
+          "source": "K-0212-1305",
+          "target": "K-0220-1280",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1627
+        },
+        {
+          "source": "K-0220-1280",
+          "target": "E5-0204-1260",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1626
+        },
+        {
+          "source": "E5-0204-1260",
+          "target": "C-0220-1238",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1638
+        },
+        {
+          "source": "C-0220-1238",
+          "target": "C-0202-1217",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1644
+        },
+        {
+          "source": "C-0202-1217",
+          "target": "K-0183-1195",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1642
+        },
+        {
+          "source": "K-0183-1195",
+          "target": "C-0172-1170",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1652
+        },
+        {
+          "source": "C-0172-1170",
+          "target": "C-0191-1146",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1658
+        },
+        {
+          "source": "C-0191-1146",
+          "target": "E5-0215-1127",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1655
+        },
+        {
+          "source": "E5-0215-1127",
+          "target": "C-0234-1104",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1663
+        },
+        {
+          "source": "C-0234-1104",
+          "target": "C-0257-1090",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1661
+        },
+        {
+          "source": "C-0257-1090",
+          "target": "K-0248-1065",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1670
+        },
+        {
+          "source": "K-0248-1065",
+          "target": "K-0238-1041",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1676
+        },
+        {
+          "source": "K-0238-1041",
+          "target": "C-0267-1020",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1674
+        },
+        {
+          "source": "C-0267-1020",
+          "target": "C-0257-0994",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1683
+        },
+        {
+          "source": "C-0257-0994",
+          "target": "C-0283-0977",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1679
+        },
+        {
+          "source": "C-0283-0977",
+          "target": "K-0276-0952",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1697
+        },
+        {
+          "source": "K-0276-0952",
+          "target": "C-0267-0926",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1693
+        },
+        {
+          "source": "C-0267-0926",
+          "target": "C-0294-0912",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1688
+        },
+        {
+          "source": "C-0294-0912",
+          "target": "C-0290-0887",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1708
+        },
+        {
+          "source": "C-0290-0887",
+          "target": "C-0315-0867",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1703
+        },
+        {
+          "source": "C-0315-0867",
+          "target": "C-0348-0860",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1700
+        },
+        {
+          "source": "C-0348-0860",
+          "target": "K-0343-0831",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1718
+        },
+        {
+          "source": "K-0343-0831",
+          "target": "E5-0380-0823",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1713
+        },
+        {
+          "source": "E5-0380-0823",
+          "target": "E5-0368-0792",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1728
+        },
+        {
+          "source": "E5-0368-0792",
+          "target": "C-0398-0782",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1724
+        },
+        {
+          "source": "C-0398-0782",
+          "target": "K-0429-0772",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1729
+        },
+        {
+          "source": "K-0429-0772",
+          "target": "K-0429-0746",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1736
+        },
+        {
+          "source": "K-0429-0746",
+          "target": "D40-K-0421-0715",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1735
+        },
+        {
+          "source": "D40-K-0421-0715",
+          "target": "C-0422-0686",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1752
+        },
+        {
+          "source": "C-0422-0686",
+          "target": "C-0451-0678",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1745
+        },
+        {
+          "source": "C-0451-0678",
+          "target": "C-0480-0670",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1742
+        },
+        {
+          "source": "C-0480-0670",
+          "target": "D40-K-0479-0638",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1761
+        },
+        {
+          "source": "D40-K-0479-0638",
+          "target": "C-0483-0612",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1763
+        },
+        {
+          "source": "C-0483-0612",
+          "target": "C-0514-0609",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1755
+        },
+        {
+          "source": "C-0514-0609",
+          "target": "C-0519-0578",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1772
+        },
+        {
+          "source": "C-0519-0578",
+          "target": "C-0548-0577",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1767
+        },
+        {
+          "source": "C-0548-0577",
+          "target": "C-0581-0575",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1776
+        },
+        {
+          "source": "C-0581-0575",
+          "target": "D40-K-0585-0548",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1775
+        },
+        {
+          "source": "D40-K-0585-0548",
+          "target": "K-0616-0554",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1779
+        },
+        {
+          "source": "K-0616-0554",
+          "target": "C-0625-0525",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1791
+        },
+        {
+          "source": "C-0625-0525",
+          "target": "C-0632-0497",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1787
+        },
+        {
+          "source": "C-0632-0497",
+          "target": "C-0660-0499",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1782
+        },
+        {
+          "source": "C-0660-0499",
+          "target": "C-0672-0478",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1809
+        },
+        {
+          "source": "C-0672-0478",
+          "target": "K-0701-0475",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1799
+        },
+        {
+          "source": "K-0701-0475",
+          "target": "C-0730-0480",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1812
+        },
+        {
+          "source": "C-0730-0480",
+          "target": "K-0758-0486",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1814
+        },
+        {
+          "source": "K-0758-0486",
+          "target": "C-0770-0457",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1818
+        },
+        {
+          "source": "C-0770-0457",
+          "target": "K-0782-0434",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1835
+        },
+        {
+          "source": "K-0782-0434",
+          "target": "C-0799-0410",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1830
+        },
+        {
+          "source": "C-0799-0410",
+          "target": "C-0826-0414",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1827
+        },
+        {
+          "source": "C-0826-0414",
+          "target": "C-0839-0392",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1848
+        },
+        {
+          "source": "C-0839-0392",
+          "target": "C-0870-0396",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1839
+        },
+        {
+          "source": "C-0870-0396",
+          "target": "E5-0895-0407",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 1850
+        },
+        {
+          "source": "E5-0895-0407",
+          "target": "K-0915-0382",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 1854
+        },
+        {
+          "source": "K-0915-0382",
+          "target": "C-0941-0385",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 7
+        },
+        {
+          "source": "C-0941-0385",
+          "target": "C-0956-0362",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 10
+        },
+        {
+          "source": "C-0956-0362",
+          "target": "C-0986-0371",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 15
+        },
+        {
+          "source": "C-0986-0371",
+          "target": "K-1013-0389",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 19
+        },
+        {
+          "source": "K-1013-0389",
+          "target": "K-1023-0354",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 12
+        },
+        {
+          "source": "K-1023-0354",
+          "target": "K-1046-0339",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 5
+        },
+        {
+          "source": "K-1046-0339",
+          "target": "K-1073-0343",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 0
+        },
+        {
+          "source": "K-1073-0343",
+          "target": "K-1101-0353",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 35
+        },
+        {
+          "source": "K-1101-0353",
+          "target": "C-1116-0328",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 38
+        },
+        {
+          "source": "C-1116-0328",
+          "target": "K-1133-0303",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 33
+        },
+        {
+          "source": "K-1133-0303",
+          "target": "K-1160-0319",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 45
+        },
+        {
+          "source": "K-1160-0319",
+          "target": "C-1178-0292",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 47
+        },
+        {
+          "source": "C-1178-0292",
+          "target": "C-1196-0273",
+          "delta_ab": [
+            0,
+            1
+          ],
+          "edge_index": 58
+        },
+        {
+          "source": "C-1196-0273",
+          "target": "C-1221-0282",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 52
+        },
+        {
+          "source": "C-1221-0282",
+          "target": "C-1251-0290",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 54
+        },
+        {
+          "source": "C-1251-0290",
+          "target": "C-1277-0302",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 76
+        },
+        {
+          "source": "C-1277-0302",
+          "target": "C-1302-0316",
+          "delta_ab": [
+            1,
+            0
+          ],
+          "edge_index": 79
+        }
+      ]
+    }
+  },
+  "alternate_neighbor_paths": [
+    {
+      "endpoints": [
+        "C-2300-1458",
+        "E5-2279-1442"
+      ],
+      "steps": [
+        {
+          "source": "C-2300-1458",
+          "target": "E5-2279-1442",
+          "delta_ab": [
+            0,
+            -1
+          ],
+          "edge_index": 423
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "C-2300-1458",
+        "REC266-P068073"
+      ],
+      "steps": [
+        {
+          "source": "C-2300-1458",
+          "target": "E5-2279-1442",
+          "delta_ab": [
+            0,
+            -1
+          ],
+          "edge_index": 423
+        },
+        {
+          "source": "E5-2279-1442",
+          "target": "REC266-P068073",
+          "delta_ab": [
+            -1,
+            0
+          ],
+          "edge_index": 1968
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "E5-2279-1442",
+        "REC266-P068073"
+      ],
+      "steps": [
+        {
+          "source": "E5-2279-1442",
+          "target": "REC266-P068073",
+          "delta_ab": [
+            -1,
+            0
+          ],
+          "edge_index": 1968
+        }
+      ]
+    }
+  ],
+  "color_only_R347": {
+    "recorded_observations": 1059,
+    "indexed_nodes": 1041,
+    "links": 2290,
+    "usable_indexed_colors": 1040
+  },
+  "identity_quarantined": {
+    "recorded_observations": 1059,
+    "indexed_nodes": 1040,
+    "links": 2287,
+    "usable_indexed_colors": 1040,
+    "explanation": "Retain cue in archive, remove its identity-dependent constraints from the hypothetical active graph."
+  },
+  "full_node_deletion": {
+    "recorded_observations": 1058,
+    "indexed_nodes": 1040,
+    "links": 2287,
+    "usable_indexed_colors": 1040
+  },
+  "pattern": {
+    "supported": 201,
+    "conflicting": 0,
+    "insufficient": 7,
+    "observed_positions": 208,
+    "agreements": 1040,
+    "observations": 1040,
+    "color_evidence_identical_to_R347": true,
+    "trials": [
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 1,
+        "compatible": false,
+        "observed_residues": 1,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1284-0332",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 2,
+        "compatible": false,
+        "observed_residues": 2,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1284-0332",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 4,
+        "compatible": false,
+        "observed_residues": 4,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1893-2771",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 8,
+        "compatible": false,
+        "observed_residues": 8,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-0585-0548",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 13,
+        "compatible": false,
+        "observed_residues": 13,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-1772-0357",
+            "C-0712-0528"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 16,
+        "compatible": false,
+        "observed_residues": 16,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-1514-0255",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 26,
+        "compatible": false,
+        "observed_residues": 26,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-0712-0528",
+            "C-0639-0573"
+          ],
+          "colors": [
+            "red",
+            "yellow"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 52,
+        "compatible": false,
+        "observed_residues": 52,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1130-0364",
+            "C-0639-0573"
+          ],
+          "colors": [
+            "red",
+            "yellow"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 104,
+        "compatible": false,
+        "observed_residues": 104,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-2102-0824",
+            "C-0639-0573"
+          ],
+          "colors": [
+            "red",
+            "yellow"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 169,
+        "compatible": false,
+        "observed_residues": 169,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "K-0750-0506",
+            "C-2303-2026"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 208,
+        "compatible": true,
+        "observed_residues": 208,
+        "witness": null
+      },
+      {
+        "family": "A",
+        "count": 2704,
+        "period": 338,
+        "compatible": false,
+        "observed_residues": 338,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-2303-2026",
+            "C-1302-0316"
+          ],
+          "colors": [
+            "red",
+            "yellow"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 1,
+        "compatible": false,
+        "observed_residues": 1,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1284-0332",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 3,
+        "compatible": false,
+        "observed_residues": 3,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1893-2771",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 9,
+        "compatible": false,
+        "observed_residues": 9,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "C-1893-2771",
+            "C-0181-1316"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 13,
+        "compatible": false,
+        "observed_residues": 13,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-1772-0357",
+            "C-0712-0528"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 23,
+        "compatible": false,
+        "observed_residues": 23,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-2110-2601",
+            "C-0291-1436"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 39,
+        "compatible": false,
+        "observed_residues": 39,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-2140-0953",
+            "C-1048-0392"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 69,
+        "compatible": false,
+        "observed_residues": 69,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "K-0616-0554",
+            "C-1073-1515"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 117,
+        "compatible": false,
+        "observed_residues": 117,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "D40-K-2140-0953",
+            "C-1993-0580"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 207,
+        "compatible": false,
+        "observed_residues": 207,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "K-0616-0554",
+            "C-0191-1146"
+          ],
+          "colors": [
+            "black",
+            "yellow"
+          ]
+        }
+      },
+      {
+        "family": "B",
+        "count": 2691,
+        "period": 299,
+        "compatible": false,
+        "observed_residues": 299,
+        "witness": {
+          "residue": 0,
+          "ids": [
+            "NEW-2022-2729",
+            "E5-2304-1770"
+          ],
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      }
+    ]
+  },
+  "historical_closure_predates_target": true,
+  "saved_R332_anchor_dependencies": {
+    "accepted_additions": [],
+    "provisional_observations": [
+      "R332-R-0040-0037",
+      "R332-R-0038-0041",
+      "R332-R-0039-0042",
+      "R332-B-0036-0039"
+    ],
+    "remaining_candidates": [
+      "REC266-P068574",
+      "REC266-P067070",
+      "REC266-P066281",
+      "REC266-P065285",
+      "REC266-P067836",
+      "REC266-P071531",
+      "REC266-P065885",
+      "REC266-P069144",
+      "REC266-P072287",
+      "REC266-P064380",
+      "REC266-P065142",
+      "REC266-P070447",
+      "REC266-P068514",
+      "REC266-P069526",
+      "REC266-P071740",
+      "REC266-P069484",
+      "REC266-P073513",
+      "REC266-P072740",
+      "REC266-P072212",
+      "REC266-P067567",
+      "REC266-P072377",
+      "REC266-P071108",
+      "REC266-P074555",
+      "REC266-P066701",
+      "REC266-P065886",
+      "REC266-P073215",
+      "REC266-P070229",
+      "REC266-P063998",
+      "REC266-P067356",
+      "REC266-P074230",
+      "REC266-P063465",
+      "REC266-P067306",
+      "REC266-P067565",
+      "REC266-P070781",
+      "REC266-P069709",
+      "REC266-P068900",
+      "REC266-P071925",
+      "REC266-P066601",
+      "REC266-P071235",
+      "REC266-P067309",
+      "REC266-P064065",
+      "REC266-P074303",
+      "REC266-P069762",
+      "REC266-P070571",
+      "REC266-P070046",
+      "REC266-P070446",
+      "REC266-P070735",
+      "REC266-P064670",
+      "REC266-P072906",
+      "REC266-P070965",
+      "EDGE275-RF70T-K-2232-1478",
+      "EDGE275-DIM-2304-1546"
+    ]
+  },
+  "limitations": [
+    "Saved edge labels and other body identities are held fixed. Connected algebra does not prove photographic ownership.",
+    "R332 local fits can depend on all nearby admitted anchors; static deletion is not a counterfactual rerun of those proposals.",
+    "No new topology selection, camera/geometry fit, physical count or authentic-chart validation is performed."
+  ]
+}

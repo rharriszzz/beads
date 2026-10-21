@@ -69,4 +69,22 @@ validates the archived export and frozen inputs, preserves the raw answers,
 and reproduces four explicitly distinguished evidence epochs. It changes no
 historical scientific inputs. The browser's automatic save remains in browser
 local storage; the downloaded export is the readable handoff to this analysis.
-No source change to an earlier experiment, commit or push accompanies this step.
+No source change to an earlier experiment accompanied assessment construction;
+the later authorized delivery commit is recorded below.
+
+## R348 sensitivity follow-up
+
+The [R348 analysis](../../r348/SENSITIVITY.md) tests what the assessment did not:
+removing Q1's proposed identity and its three links from a hypothetical graph,
+rather than withholding its pigment alone. The remainder stays connected and
+independently yields the same cycle-displacement generator H=(214,201), with
+all remaining coordinates unchanged modulo H. It retains all 208 observed
+pattern positions, 201/0/7 support and the same conditional A/208 result. The
+historical graph and this R347 assessment's data are not modified.
+
+This is a static deletion sensitivity result, not a new body judgment or a
+counterfactual rerun of R332's local candidate generation. The latter limitation
+and the smallest possible local follow-up are documented in R348. This text
+supersedes treating Q1's retained graph constraints as an unexamined dependency;
+it does not establish independent physical topology. The original delivery was
+committed and pushed as `5d605663`; R348 updates documentation only around it.

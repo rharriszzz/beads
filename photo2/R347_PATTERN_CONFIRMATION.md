@@ -9,6 +9,15 @@ positions and 1040/1040 retained-color agreement. All 208 positions remain
 observed. The conditional finite check uniquely admits A/208; physical and
 original-chart validation remain separate. Historical R344 products are unchanged.
 
+**R348 follow-up:** [sensitivity analysis](r348/SENSITIVITY.md) distinguishes
+withholding pigment, uncertain identity, and complete hypothetical node deletion.
+Removing Q1 and its three links from a derived graph preserves connectivity,
+the edge-derived winding generator, remaining coordinates modulo H, all 208
+observed residues and conditional A/208 uniqueness. This does not independently
+validate the other photographic edges or replay the image-inference pipeline.
+See the [updated retrospective](RETROSPECTIVE.md) and
+[future-project methods](FUTURE_PROJECT_METHODS.md).
+
 [Open the answer form](r347/review/index.html). Questions 1–3 are complete; the seven remaining color checks are in the next group. A fresh browser starts unanswered, so import the saved export to restore existing answers if needed. Previous maker decisions remain unchanged.
 
 The running local address is [localhost:8347/photo2/r347/review/](http://localhost:8347/photo2/r347/review/). The form also works directly from its HTML file. Export answers before changing browsers or moving between the file and localhost addresses, because each address has separate browser storage. To restart the local server later, run this from `~/git/beads`:
@@ -77,12 +86,12 @@ When the chart is found, provide one complete repeat as R/Y/B or full color name
 
 The form computes the entered word's shortest repeated block and compares it with the candidate under **all cyclic starting offsets and both reading directions**. It accepts a longer sequence containing several complete copies. Check the independent-record box only for an authentic record belonging to this necklace, not a copy of the reconstruction. Matching a retyped reconstruction adds no independent evidence.
 
-An exact match to an authentic chart establishes recovery of the **intended design sequence**, up to start and direction. It does not by itself prove that every bead in the physical necklace follows the chart. To establish that stronger assembly claim, inspect the three discrepant bodies in a way tied to their photographed neighbors; if the physical object has been rearranged, its repeated motif alone may not uniquely locate a particular photographed occurrence. Independent total-count or repeat-count information is useful if available. The form leaves both unknown rather than prepopulating the inferred 2704/13.
+An exact match to an authentic chart establishes recovery of the **intended design sequence**, up to start and direction. It does not by itself prove that every bead in the physical necklace follows the chart. A stronger assembly claim requires independent observations tied to identifiable bodies and neighbors. The two R347 photo judgments have settled their recorded pigment conflicts; the unreadable Q1 should not be treated as a mandatory outstanding question. If the physical object has been rearranged, its repeated motif alone may not uniquely locate a particular photographed occurrence. Independent total-count or repeat-count information is useful if available. The form leaves both unknown rather than prepopulating the inferred 2704/13.
 
 If the chart differs, compare the actual differences before deciding whether the cause is a transcription convention, a design difference or a reconstruction error. A mismatch is informative and will not be forced into the candidate.
 
 ## Scope and preservation
 
-R347 prepares the proof certificate, an answer interface and the separately saved assessment of received answers. It runs no new detector, geometry optimizer or renderer, and changes no existing scientific source, label, graph, pattern, material, camera or light. The assessment records its corrections and withheld evidence separately. It leaves the retrospective documents and stopped R340 files untouched. No commit or push is part of this step.
+R347 prepared the proof certificate, an answer interface and the separately saved assessment of received answers. It ran no new detector, geometry optimizer or renderer, and changed no existing scientific source, label, graph, pattern, material, camera or light. The assessment records its corrections and withheld evidence separately. The authorized delivery was committed and pushed as `5d605663`. R348 updates explanatory documents and adds separately saved sensitivity data; stopped R340 work and historical scientific products remain untouched.
 
 The 10 literal crops are verified against the original decoded RGB, and retain its embedded color profile. [Artifact checks](r347/artifact-checks.json) and [browser checks](r347/review/browser-verification.json) document the delivered interface. Answers 1–3 have now been received and preserved separately; 4–10 and the original chart remain pending.

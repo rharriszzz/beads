@@ -1,12 +1,16 @@
 # Reverse engineering the necklace in beads photo 2
 
-Historical and technical retrospective through R346, 20 October 2026. Scientific baseline: [`8e9648b9`](https://github.com/rharriszzz/beads/commit/8e9648b9c9e1379fc66f256bddae0851f1bef39f), `photo-2-strategy-v3`. This report is for discussion; it introduces no reconstruction changes or optimization experiments.
+Historical and technical retrospective through R347 and its maker answers, updated in R348, 20 October 2026. Reconstruction baseline: [`8e9648b9`](https://github.com/rharriszzz/beads/commit/8e9648b9c9e1379fc66f256bddae0851f1bef39f); R347 documentation/evidence delivery: [`5d605663`](https://github.com/rharriszzz/beads/commit/5d6056634009310bd2d47744527f9db43f0809c9), `photo-2-strategy-v3`. R348 adds documentation and saved-graph sensitivity analysis only. Historical scientific products remain unchanged. Practical recommendations and a reusable failure-detection checklist are in [Future project methods](FUTURE_PROJECT_METHODS.md).
 
 ## 1 Executive summary
 
 The project has produced a strong candidate for the necklace's original color pattern, a substantial photographic lattice of bead relationships, a complete executable POV-Ray reconstruction, and a much better approximation to the necklace's broad cast shadow. **The result is close to the photograph, but the exact original stringing pattern and physical reconstruction have not been conclusively recovered.** That distinction agrees with the maker's current assessment.
 
-The strongest final pattern evidence is the 208-position block in R344. Under the working mapping from photographic lattice coordinates to string indices, 199 positions have uncontradicted support from at least three observations in three geographic blocks. Two positions remain conflicting and seven lack that level of geographic support. A separately identified provisional completion agrees with **1,038 of 1,041 indexed color labels**. Three contrary red observations remain at positions 83 and 189; the report and data retain them rather than recoloring them to agree with the majority. The seven insufficient positions provisionally contain black. All 208 positions have some observational support. [R344 report][r344], [pattern with source evidence][pattern208]
+**Current status through R347:** the unchanged 208-position candidate has **201 supported, 0 conflicting and 7 insufficiently corroborated positions**, with all 208 positions observed and **1,040/1,040 retained color observations agreeing** under the current indexing. Two old red readings were corrected to yellow by maker inspection of the original photograph. A third, R332-R-0037-0040, is withheld from pigment evidence at the maker's request because the photo is insufficient; its selected yellow depended on consulting the reconstruction and supplies no independent confirmation. The seven insufficient positions remain provisionally black. [Raw answers and assessment](r347/answers/ASSESSMENT.md)
+
+The R347 divisor calculation leaves **A/208 as the unique compatible case within the fixed lattice, H=(214,201), two specified family/count conventions, complete-repeat and shortest-period-below-400 assumptions**. R348 additionally finds that deleting the questionable node and its three links from a derived graph leaves connectivity, the cycle-displacement generator H, all remaining coordinates modulo H, pattern coverage and this conditional result unchanged. Neither calculation independently verifies the physical necklace, original chart, bead count, exact topology or geometry. [Conditional certificate](r347/answers/assessment.json), [deletion sensitivity and limits](r348/SENSITIVITY.md)
+
+**Historical R344 remains 199/2/7 and 1,038/1,041**, with three contrary software-red records at positions 83 and 189. Those are the correct figures for that evidence epoch, not the current unresolved-conflict count. R347's corrections and exclusion are saved separately; the provisional sequence and historical graph are unchanged. [R344 report][r344], [historical pattern with evidence][pattern208]
 
 This is much stronger than a pleasing render or a repetition guessed from a few similar patches. Geographic prediction, whole-occurrence prediction, comparison with shorter and alternative patterns, exact lattice equations, and direct photographic review support the candidate. Nevertheless, most labels are software or analyst interpretations of the same repeatedly studied photograph. The topology is a working reconstruction with preserved alternatives. Agreement with those labels is not independently measured accuracy against the original necklace.
 
@@ -42,13 +46,13 @@ All three repositories were present locally before substantive investigation:
 
 All origins were fetched with `--all --no-recurse-submodules --no-auto-gc`. Each uses the fetch refspec `+refs/heads/*:refs/remotes/origin/*`. All clones are non-shallow; an object traversal found no missing objects in their locally reachable histories. No clone or large binary download was needed. Fetching the two sibling repositories required access outside the read-only filesystem sandbox; those fetches succeeded. A sandbox DNS failure during an additional beads reference check also resolved with the permitted unrestricted Git command. There was no demonstrated GitHub authentication problem.
 
-The initial working branch was `photo-2-strategy-v3`, matching origin at `8e9648b9`. Existing untracked R340 work in beads and a modified `hsv_picker.py` in hsv_tools were preserved. Historical analysis of hsv_tools uses `git show HEAD:...`, not that modified working file. No branch checkout, source edit, scientific rerun, commit or push was performed for this retrospective. New files are documentation on the existing v3 branch.
+The original retrospective began on `photo-2-strategy-v3`, matching origin at `8e9648b9`. Existing untracked R340 work in beads and a modified `hsv_picker.py` in hsv_tools were preserved. Historical analysis of hsv_tools uses `git show HEAD:...`, not that modified working file. That initial investigation performed no checkout, source edit or historical scientific rerun. The later authorized documentation/R347 delivery was committed and pushed as `5d605663`; R348 extends it on the same branch, preserving unrelated work and historical scientific outputs.
 
-The machine-readable [branch inventory](retrospective/branch-inventory.csv), [commit index](retrospective/commit-index.csv), and [access record](retrospective/repository-access.json) accompany this report. There are **416 reachable distinct commits in beads, 5 in bead_map and 10 in hsv_tools**. These are repository-history counts, not counts of independent experiments. Numbered R entries also include questions, clarifications, reviews and delivery steps.
+The machine-readable [branch inventory](retrospective/branch-inventory.csv), [commit index](retrospective/commit-index.csv), and [access record](retrospective/repository-access.json) preserve the original pre-R347 snapshot: **416 reachable distinct commits in beads, 5 in bead_map and 10 in hsv_tools**. These are repository-history counts at that snapshot, not current totals or counts of independent experiments. Numbered R entries also include questions, clarifications, reviews and delivery steps.
 
 ### All branches newest first
 
-Dates below are tip **committer dates**, retaining their recorded UTC offsets. Local and matching remote-tracking references are one branch, not two developments; `origin/HEAD` is a symbolic default-branch reference and is not an extra branch.
+The following table preserves the original through-R346 branch snapshot. Dates are tip **committer dates**, retaining their recorded UTC offsets. Local and matching remote-tracking references are one branch, not two developments; `origin/HEAD` is a symbolic default-branch reference and is not an extra branch. The subsequent v3 tip before R348 is `5d605663`, dated 2026-10-20 19:49:18 −04:00, adding the retrospective and R347 evidence rather than a new reconstruction branch.
 
 | Repository and branch | Latest commit date | Tip | Purpose and relationship |
 |---|---|---|---|
@@ -287,6 +291,16 @@ R345 turns the provisional pattern into a complete actual POV-Ray scene. It reus
 
 R346 then changes lighting while sealing camera, geometry, pattern, materials and paper. Its first narrow paper-reference band was contaminated by the broad shadow and was rejected. The final reference uses distant paper across the image, enabling a meaningful full-loop comparison. Its success is not a recovery of the bead specular field, and should not be judged by those earlier experiments' unresolved highlight residuals. [R346][r346], [shadow analysis code][r346code]
 
+### October 20 R347 A finite conditional proof and maker answers
+
+R347 separated a testable pattern claim from physical rendering. It enumerated every divisor below 400 of conditional A=2704 and B=2691, preserving a contradictory-color witness for each rejected case. The original R344 labels rejected every case; a three-yellow hypothetical case admitted only A/208. This was a finite conditional calculation, not an optimization result or proof of its physical premises. A source-linked form asked about three contrary records and seven undercorroborated black entries. [Initial proof and question record](R347_PATTERN_CONFIRMATION.md), [finite certificate](r347/conditional-proof.json)
+
+The maker answered the first three questions. REC266-P035619 at83 and R332-R-0197-0183 at189 were judged yellow from the original photo. For R332-R-0037-0040 at83, the maker selected yellow but explicitly consulted the reconstruction, said the photographic evidence was inadequate and requested exclusion. The explanatory note changes the evidential meaning of the selection: it is not a third independent yellow confirmation. The maker also reiterated earlier instructions to skip unreadable dark edge cues, which should have prevented presenting this cue again as a mandatory conflict. [Exact exported answers](r347/answers/maker-2026-10-20.json)
+
+The separate assessment withholds that pigment and applies the two photo-based judgments. Position 83 retains six yellow observations in five geographic regions; 189 has eight in seven. Thus both satisfy the unchanged three-observation/three-region rule. Nothing is majority-recolored, no new observation is created and no pattern color changes. The result is 201/0/7 and 1040/1040 retained agreement; questions 4–10 remain unanswered. Repeating the finite divisor calculation again admits only A/208. The original chart and physical necklace are reportedly available but have not been supplied; their availability is not verification. [Assessment and four evidence epochs](r347/answers/ASSESSMENT.md)
+
+R347 retained the cue's working identity and links. R348 tests the stronger hypothetical deletion separately, as described below. This resolves the immediate arithmetic-dependence question without silently treating unreliable pigment, uncertain identity and absent graph constraints as equivalent operations.
+
 ## 4 Technical analysis
 
 ### Eight coupled problems with different endpoints
@@ -296,7 +310,7 @@ R346 then changes lighting while sealing camera, geometry, pattern, materials an
 | Identify beads and colors | HSV exploration; positive interiors; native support review; R336 identity safeguards; R339–R343 blackness and actual-glass hue checks | Substantial working inventory and much improved labels. Some source ownership and pigment interpretations remain uncertain. |
 | Locate individual beads | Peaks, connected bright patches, measured interiors, explicit source coordinates | Reliable locations for many *features*. They are not generally physical bead centers or one feature per bead. |
 | Recover arrangement and ordering | Manual graph cycles, joint two-family inference, connected patch growth and closure | Strong working lattice with retained alternatives; no universal independent correctness certificate. |
-| Recover color pattern and continuity | Partial-word/residue constraints, spatial translation, whole-section prediction, strict source support and divisor witnesses | Strong conditional primitive 208 candidate, nine unresolved strict entries, three contrary recorded observations. |
+| Recover color pattern and continuity | Partial-word/residue constraints, spatial translation, whole-section prediction, strict source support; R347 maker answers and finite divisor witnesses | 201 supported positions, seven provisional black entries lacking strict corroboration, no retained color conflict. A/208 uniquely compatible within stated premises; original design and physical continuity independently unverified. |
 | Model 3D crochet geometry | Exact rounded annulus, transported frames, shared dimensions, derived contact and curvature-aware spacing | Final scene physically nonintersecting. Mechanical equilibrium, actual thread path and individual bead poses unmeasured. |
 | Match photo beads to model beads | First-hit ownership, unmatched alternatives, discrete/continuous fitting; later lattice-to-index map | Many plausible correspondences; global mapping remains conditional. Low feature error alone never established identity. |
 | Estimate camera, shape and illumination | Shared-camera fits, dimensional cues, sensitivity audits, common-light trials, final paper-shadow inversion | Camera and dimensions approximate; global cast-shadow lighting materially improved, absolute physical calibration absent. |
@@ -354,7 +368,7 @@ The final source is at `(-5500,-700,4000)` in arbitrary scene units, diameter 60
 
 **Image formation obscures the relevant physical variables.** Surface features are not centers. Hidden bead profiles are unavailable. Camera, material, geometry and lighting compensate for each other. The R160 ambiguity and the optical/material tradeoffs in R301 are direct examples; exact physical recovery from this image cannot be presumed merely because the target exists.
 
-**There is no independent full ground truth.** Known synthetic scenes answer implementation questions, but often fail to reproduce the real photograph's failure modes. Human review of the same image improves evidence but cannot reveal occluded material. Geographic holdouts reduce some local overfitting; they do not create a second independent photograph.
+**There is no supplied independent full ground truth.** The maker reports that the physical necklace and original chart are available but may take time to find. Neither has yet been examined. Known synthetic scenes answer implementation questions, but often fail to reproduce the real photograph's failure modes. Human review of the same image improves evidence but cannot reveal occluded material. Geographic holdouts reduce some local overfitting; they do not create a second independent photograph.
 
 These are real constraints, but they do not account for every delay. The history contains avoidable computational and organizational problems as well.
 
@@ -377,6 +391,33 @@ These are real constraints, but they do not account for every delay. The history
 
 These examples are stronger than a general accusation that optimization was “stuck.” Several have controlled interventions or exact bookkeeping witnesses. Other causes remain hypotheses: for example, unrestricted 3D centerline freedom, a more elaborate camera, or a different glass model might improve the photo, but the history does not show they were necessary or sufficient.
 
+### Distinguish the failure before choosing the remedy
+
+**Optimizer failure** means an admissible good solution exists but the actual search/evaluator misses it. R301 supplies a known-answer witness: accurate replay at the generating parameters has zero positional error, while even known-owner inverse runs fail to recover that geometry. The coarse predictor adds a separate ranking approximation. The appropriate first response is a small accurate inverse/control test, not a claim that the model cannot represent reality. R311's missed phase/registration basin is another concrete search limitation, although its local repair did not solve the full photograph.
+
+**Model or formulation failure** means a required behavior is excluded or the objective rewards the wrong behavior. R263's count target cannot distinguish useful bodies from lost dark supports; R324's chart rule creates artificial fragmentation; R326's union can combine mutually incompatible patch hypotheses. R321's spacing repair shows a specific placement-law defect could be corrected. These call for changing the target, representation or constraint, rather than simply increasing iterations. A failed finite nonlinear search does not by itself prove the absence of a solution.
+
+**Measurement nonidentifiability** means different physical or discrete interpretations satisfy the available checks. R160's competing refitted families and the camera/scale gauge are examples. In that situation the appropriate output is a qualified family of answers or a request for a discriminating observation. R319's coupled/noisy sensitivities complicate search and identification simultaneously: its affine bounds do not prove nonlinear impossibility. All three diagnoses can coexist, and an unexplained stall must remain undiagnosed until a control distinguishes them. [Truth replay][r301truth], [R311][r311], [R319][r319], [detailed decision procedure](FUTURE_PROJECT_METHODS.md)
+
+An inadequate objective is also distinct from insufficient model capacity: a good physical solution may be representable, yet a correctly minimized count or highlight loss may favor a scientifically wrong answer. Independent task checks must distinguish that target failure from failure to minimize the stated target. These distinctions matter because wider search is a remedy for neither a misleading target nor a genuinely missing observation.
+
+### Earlier decision opportunities, with limits on hindsight
+
+| Evidence available at the time | Reasonable earlier decision | What remains uncertain |
+|---|---|---|
+| R231: old rejected seeds also pass synthetic ownership | Keep fixtures as implementation checks; add a failure-reproducing real/synthetic ownership control before adopting a repair | Building a representative glass/shadow fixture is difficult; it was not guaranteed to solve segmentation |
+| R263: cutoff238 reaches the count target while losing92/97 dark-enclosure supports | Reject count as a scientific acceptance metric; report distinct-body/reference coverage and abstentions | Dark enclosures themselves are not certified black bodies or a full census |
+| R297: old local fit worsens after extension | Replay old-region station/phase predictions before further fitting; require a preserved-fit baseline | Some local/global constraints genuinely conflict; preservation is not automatically free |
+| R301: exact synthetic truth replays, inverse recovery fails, and highlights improve as material worsens | Block scaling/adoption of that inversion; isolate approximation, owners and search with known-answer tests | The record does not prove a better optimizer would identify real-photo geometry uniquely |
+| R311: archived search misses joint basins and earlier useful starts | Audit actual joint exploration before interpreting an unsuccessful local search physically | Wider search found partial repairs, not a complete solution; finite coverage cannot certify optimality |
+| R319: serialized fields inactive, active responses coupled/noisy | Audit the evaluator and parameter influence before adding degrees of freedom or interpreting secant bounds | Some variables are only locally negligible; no broad model exclusion follows |
+| R322–R328: joint rows outperform isolated bands; overlap and compatible patch histories provide structure | Use the manual chart and discrete alternatives as the main pattern route, leaving full optics separate | The whole-loop breakthrough depended on accumulated candidate caches and overlapping context; an equally successful early implementation is unproved |
+| R332:122/126 additions were cached rather than freshly measured | Inspect source/alias/association coverage before designing another detector | New local fitting and careful native review were still needed to use those records |
+| R336: native dark pixels support a false body through prediction and recentering | Require independent body ownership before admitting counting/obstruction/indexing constraints | Weak evidence can still describe real bodies; a blanket dark-edge rejection would lose information |
+| R339–R343: simpler material tests repair some cases, yet window ownership failures persist | Compare a simple owned-glass baseline first; use explicit small material annotations to test sampling | R339 does not dominate all matched controls; a simple scalar or fixed offset is not universally reliable |
+
+These decisions were feasible diagnostic changes using then-available evidence. The strongest avoidable pattern was continuing to optimize a surrogate or expand a model before resolving a demonstrated prerequisite failure. The claim that modest annotation plus graph algorithms would have shortened the whole project is plausible and supported by later mechanisms, but remains a counterfactual. It should not be expressed as a promised number of saved rounds or a guarantee that every uncertainty was easy.
+
 ### Conduct, diagnosis and communication
 
 **The objective sometimes became a difficult intermediate product.** Broad masks, exact brightness paths, full contours and reflection minimax all received substantial attention before the topology was reliable. The June plan and R239 already allowed a useful partial subset to support the next step; R293 later had to restore that priority. This suggests a sequencing problem, although the final graph did benefit from the accumulated source candidates and surface tools.
@@ -391,32 +432,34 @@ These examples are stronger than a general accusation that optimization was “s
 
 **Small rounds improved accountability but could fragment the objective.** Frequent stops, extensive handoffs, tests, review pages and preservation work helped prevent silent changes. The chronology also includes many clarification and presentation rounds between scientific steps. The record supports saying that the process had coordination costs; it does **not** support assigning a numerical fraction of elapsed effort to documentation, reviews or any particular model/session choice.
 
+**Abstention instructions needed to become operational evidence policy.** The maker had repeatedly asked to skip especially ambiguous dark edge cases. R347 still presented Q1 as a contrary observation to settle, despite insufficient photographic evidence. Its exclusion loses neither residue coverage nor saved-graph connectivity. The useful policy is role-specific abstention before checking motif agreement: unknown pigment must not be forced into a color, and uncertain identity must not silently become a counting or obstruction fact. It is equally important not to discard genuine contrary observations merely because they disagree. [Maker note](r347/answers/maker-2026-10-20.json), [sensitivity and systematic policy](r348/SENSITIVITY.md)
+
 Finally, the calendar is misleading as a measure of continuous work. There are bursts in April 2025, January 2026, June 2026, late September and October 2026, with substantial gaps. The repository's 2017 origin is the preexisting forward-rendering history. It would be wrong to describe this as nine years of continuous inverse reconstruction or to equate 346 request numbers with 346 independent optimization campaigns.
 
 ## 6 What the final state establishes
 
 ### Pattern evidence
 
-The strict R344 block contains **62 red, 60 yellow, 77 black and 9 unknown** entries. The provisional completion contains **62 red, 62 yellow and 84 black**. Its nine tentative positions are:
+The **historical R344** strict block contains **62 red, 60 yellow, 77 black and 9 unknown** entries. Its provisional completion contains **62 red, 62 yellow and 84 black**. Its nine then-tentative positions were:
 
 | Status | Positions | Provisional choice |
 |---|---|---|
 | Conflicting | 83, 189 | Yellow at both |
 | Insufficient geographic support | 43, 75, 82, 89, 140, 147, 186 | Black at all seven |
 
-The three retained mismatches are:
+The three historical mismatches and their R347 dispositions are:
 
-| Observation | Residue | Recorded / provisional | Native XY |
-|---|---:|---|---|
-| R332-R-0037-0040 | 83 | Red / yellow | 2301.35, 1430.23 |
-| REC266-P035619 | 83 | Red / yellow | 2124.72, 736.69 |
-| R332-R-0197-0183 | 189 | Red / yellow | 599.64, 624.45 |
+| Observation | Residue | Historical / provisional | Native XY | R347 disposition |
+|---|---:|---|---|---|
+| R332-R-0037-0040 | 83 | Red / yellow | 2301.35, 1430.23 | Pigment withheld; photo inadequate, selected yellow reconstruction-dependent |
+| REC266-P035619 | 83 | Red / yellow | 2124.72, 736.69 | Maker photo-based yellow correction |
+| R332-R-0197-0183 | 189 | Red / yellow | 599.64, 624.45 | Maker photo-based yellow correction |
 
-They are inherited software-red records rather than contrary explicit individual maker pigments. Their thin/edge material could not be assigned safe cores in the latest review. They remain substantive unresolved evidence: if a red body and its association are independently confirmed, exact 208 repetition under that mapping is contradicted. If they are yellow, those two conflicts can resolve without altering the topology. Additional support is still needed for the seven black positions. [Native evidence and final ledger][r344]
+They were inherited software-red records, not contrary explicit individual maker pigments. R347's assessment now has **201 supported / 0 conflicting / 7 insufficient**, with **1040/1040** retained colors agreeing and all 208 residues observed. The complete provisional word is unchanged. The seven black positions still lack the old three-region corroboration, and questions 4–10 have not been answered. This is measured agreement with revised evidence, not1041/1041 agreement or independent physical accuracy. [Historical native evidence][r344], [updated assessment](r347/answers/ASSESSMENT.md)
 
-The best reported fitted agreement is not the only result:
+The historical predictive checks remain useful and are preserved unchanged. R347 did not rerun this cross-validation or turn its two targeted photo judgments into a blind validation set:
 
-| Evaluation against current recorded labels | Agreement |
+| Evaluation against historical R344 recorded labels | Agreement |
 |---|---:|
 | Provisional completion fitted to all indexed observations | 1038/1041 |
 | Strict entries on observations where the strict block emits a color | 1011/1011, with 30 abstentions |
@@ -430,7 +473,15 @@ The strict 100% follows its definition of uncontradicted support; it is not inde
 
 Every proper divisor of 208 has a pair of conflicting **strict** witness colors. Therefore every cyclic completion of the strict block has minimal cyclic period 208 **under the current indexing**. That mathematical statement is solid and useful. It does not prove physical count, exact repetition around the actual necklace, or that the working indexing is unique.
 
-The final active inventory is **1,059 observations, 1,041 indexed sites and 2,290 working links**, one component with H=(214,201). These are observations and working relations, not a certified complete physical census. The 37 explicit individual indexed pigment judgments all agree with the provisional pattern, but were selected during this investigation; they are not a random independent validation sample.
+The preserved active graph inventory is **1,059 observations, 1,041 indexed sites and 2,290 working links**, one component with H=(214,201). R347 uses only 1040 indexed pigments. These are observations and working relations, not a certified complete physical census. R344's 37 explicit individual indexed pigment judgments agreed with the provisional pattern; R347 adds two targeted photo-based judgments in its separate assessment. These selected same-photo judgments are not a random independent validation sample.
+
+### Conditional uniqueness and sensitivity to the ambiguous identity
+
+R347 tests every shortest-period divisor below 400 of A=2704 and B=2691 under their specified indexing maps. The two photo-based corrections plus Q1 pigment abstention leave only A/208, with all 208 residue colors determined by retained observations. This extends the proper-divisor primitivity result into a finite uniqueness result **within those premises**. It excludes neither other photographic row histories nor different construction/count assumptions; exact complete repetition is itself a premise. [All cases and contradictory witnesses](r347/answers/assessment.json)
+
+Color withholding retains the questionable body's proposed occupancy and links. Identity uncertainty instead requires marking those relationships tentative, and full hypothetical deletion removes them. R348 tests the last operation on derived data:1040 nodes and 2287 links remain in one component, with 1248 independent graph cycles rather than 1250. Integrating saved primitive edge deltas, without supplying H, recovers the same cycle-displacement subgroup generator (214,201) and the same remaining coordinates modulo H. The three old neighbors have target-free connecting paths of 1/2/1 edges. A target-free winding cycle is saved as an exact witness. The target also postdates R328's selection of H. [Sensitivity methods, results and certificate](r348/SENSITIVITY.md)
+
+Thus neither the retained graph's lattice/closure constraints nor the conditional A/208 color result depends on keeping this node. This is a statement about the saved graph with other edge labels fixed. R332 used local anchor/occupancy searches; static deletion does not prove that a counterfactual image pipeline would make every same selection. No saved accepted addition names Q1 as a direct fitting anchor, but some provisional/rejected candidates do. The smallest further test, if needed, is local reassessment of affected saved candidates with Q1 quarantined and unrelated inputs frozen, not a whole reconstruction campaign. It has not been run. Physical topology and all-bead correspondence remain independently unverified.
 
 ### Geometry and rendering evidence
 
@@ -448,7 +499,7 @@ The nonintersection result is stronger than a sample that happened not to hit ov
 |---|---|
 | A plausible reconstruction | **Achieved.** The final scene is coherent, complete, recognizable, executable and nonintersecting. |
 | Fits substantial portions of the photograph | **Achieved.** Many local patterns, the full loop arrangement and the broad cast shadow are close; explicit measurements support more than a visual impression. |
-| Exact bead sequence and topology convincingly established | **Strong conditional evidence, not complete establishment.** The 208 candidate is highly supported and conditionally primitive, but nine strict entries, three contrary observations and coherent global mapping alternatives prevent an exact physical claim. |
+| Exact bead sequence and topology convincingly established | **Strong conditional evidence, not complete establishment.** R347 resolves the retained color conflicts, supports201 positions and uniquely admits A208 within fixed premises; seven provisional black positions and coherent global mapping alternatives remain. The authentic chart, physical count, topology and correspondence have not been independently checked. |
 | Physically and visually convincing reproduction of the entire photograph | **Partially achieved.** Convincing at overall layout/pattern/shadow scale; enlarged geometry, correspondence, paper texture and optics still differ. No whole-image photorealistic or calibrated physical recovery has been demonstrated. |
 
 This assessment does not carry forward obsolete failures. The final rendered scene's interpenetration is solved; the broad cast shadow is substantially improved; black identification is no longer restricted to the early unreliable highlight/hue machinery; the 13-divisibility exclusion is withdrawn; and most late pattern conflicts have actually been resolved. Remaining uncertainty is attached to the latest evidence, not inferred from an early failed round.
@@ -460,6 +511,8 @@ This assessment does not carry forward obsolete failures. The final rendered sce
 Once the maker supplied the 1/6/7 rule, it was practical to annotate a few compact patches with stable IDs, explicit neighbor directions and a small genuine-glass pigment sample. The later 27-bead manual chart shows this was feasible. Exact cycle/duplicate checks could then validate bookkeeping, while source photographs validate the edges. This would have provided a real-image baseline for automatic indexing without demanding broad masks or a solved camera.
 
 The caveat is important: a single patch cannot establish a global winding or all hidden colors. Several geographically separated patches and explicit unresolved bridges would still be required. The alternative is not “do it all manually”; it is to obtain enough independent structure to diagnose an automatic method early.
+
+Some late discoveries depended on real prerequisites. R328 needed compatible overlapping row hypotheses and a sufficiently rich observation bank to test a photographic return. R347's finite uniqueness check needed a coherent lattice/closure and usable color evidence; its result could not simply have been asserted at the start. Quantitative R346 shadow fitting benefited from a complete nonintersecting scene and silhouette exclusions, even though a qualitative whole-shadow check was feasible much earlier. The proposal is to expose and test these dependencies sooner, not assume that every final result was available without them.
 
 ### Preserve feature types and identity before optimizing them
 
@@ -511,11 +564,17 @@ Keep one compact table of claims—body identity, topology, pattern, geometry, c
 
 The existing reproduction and preservation machinery is worth keeping. The improvement would be to make it serve cumulative scientific decisions, rather than allowing each local algorithm or review page to become a new stopping point. The history does not justify abandoning incremental work; it supports larger coherent milestones with clear evidence gates and fewer redundant prerequisite refinements.
 
-The remaining exact-pattern question now has a much narrower evidential target than it did early in the project: three contrary bodies/associations and seven insufficiently supported residues, together with the conditional global mapping. R344 already identifies independent reobservation of the three contrary bodies as the most informative possible next evidence. This retrospective has not begun that work or any further reconstruction experiment.
+The remaining exact-pattern question is now narrower than the R344 recommendation: the two contrary photo labels have been corrected, and the unreadable third pigment has been withheld without loss of coverage. The seven provisionally black residues and physical/global-mapping premises still need evidence appropriate to an exact claim. An authentic original chart is a direct check of the intended design under cyclic offset and reversal; it does not prove every assembled bead follows it. Re-questioning the unreadable Q1 as though it were a necessary conflict would repeat the process error.
+
+### Highest-priority changes for the next project
+
+The strongest lessons are to separate pattern recovery from full optics; establish a small trustworthy real-photo graph early; gate inverse campaigns on known-answer recovery and representative failure controls; and preserve independent task constraints when scores improve or fits expand. Active-parameter/search audits and a concise claim register should make these gates operational. Simple owned-material measurements deserve an early matched baseline, while their ownership errors remain explicit. More ambitious robust joint graph/period solvers and additional-view acquisition are promising, but their total benefit has not been measured here.
+
+An early warning should trigger a decision, not merely another report: stop adoption when essential correctness regresses, stop scaling when known-answer recovery fails, reconsider when the same independent counterexample survives repeated refinements, and seek new evidence when several coherent interpretations remain equivalent. Passing software tests and producing more artifacts do not override these conditions. The detailed [future-project methods](FUTURE_PROJECT_METHODS.md) gives costs, effectiveness checks, ranked recommendations, separate bead-pattern/rendering workflows, twelve failure diagnostics and a reusable `AGENTS.md` checklist. No new scientific campaign is begun by this recommendation.
 
 ## Evidence links
 
-The following references use immutable Git snapshots. Reports are paired throughout with implementations, numerical artifacts or original images where their distinction affects the conclusion. Existing verification receipts were examined as historical artifacts; a small independent static recount of the final graph reproduced 199/2/7 and the three mismatch IDs, and the emitted scene data reproduced 2,704 exact pattern assignments. Recomputing RMS from the saved observed/rendered profile arrays reproduced the R346 comparison. No historical optimizer or renderer was rerun for this report. [Document and preservation checks](retrospective/review-checks.json) record the final link audit and unchanged preexisting work.
+The reference definitions below use immutable Git snapshots. Relative links to later R347/R348 documents supplement them. Reports are paired throughout with implementations, numerical artifacts or original images where their distinction affects the conclusion. Existing receipts are historical artifacts: the original retrospective's static recount reproduced R344 199/2/7 and three mismatches, the emitted scene data reproduced 2,704 exact pattern assignments, and saved profile arrays reproduced the R346 RMS comparison. The original [document/preservation checks](retrospective/review-checks.json), including its original report hash, are preserved as an earlier snapshot, not a receipt for this updated text. R348 adds [saved-graph analysis](r348/SENSITIVITY.md) and [current validation](r348/validation.json). No historical optimizer, detector or renderer was rerun.
 
 [v3tip]: https://github.com/rharriszzz/beads/tree/8e9648b9c9e1379fc66f256bddae0851f1bef39f
 [mastertip]: https://github.com/rharriszzz/beads/tree/5d1258cd99301ec803b193ee3b78d9d5ff745d7b

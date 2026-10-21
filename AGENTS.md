@@ -1,3 +1,25 @@
+# R348 retrospective update and future methods; STOP
+
+User authorized documentation/bounded analysis and scoped commit/push/remote verify.
+Read photo2/RETROSPECTIVE.md, photo2/FUTURE_PROJECT_METHODS.md and
+photo2/r348/SENSITIVITY.md. The future-methods document contains ranked lessons,
+separate pattern/rendering workflows, twelve early warnings and a reusable checklist.
+R347 stays201supported/0conflicting/7insufficient; all208positions observed,
+1040/1040retained-color agreement. Historical R344199/2/7and1038/1041 unchanged.
+Q1 withholding is not independent yellow confirmation. R348 hypothetically removes
+R332-R-0037-0040 and its3links:1040nodes/2287links,onecomponent; integer edges
+independently yield H214,201; remaining coordinates identical moduloH. Target-free
+neighbor paths and winding cycle supplied. Same conditional A208 uniqueness; no
+physical/chart/count/topology/geometry validation. This is saved-graph sensitivity,
+NOT a counterfactual image-inference rerun or adoption of a modified active graph.
+Scripts:python3 -m photo2.r348.analyze; python3 -m photo2.r348.validate.
+No historical source/data/pattern/geometry/light changes; prior R340 preserved.
+Key gates:known-answer failure blocks scaling; independent correctness regression
+blocks adoption; audit actual parameter/search activity; distinguish search failure,
+model/target inadequacy and measurement ambiguity. Unreadable dark edge cues abstain
+by inference role before motif agreement is examined; no blanket dark-bead purge.
+Do not repeat solved Q1..3 or launch an automatic R349/reconstruction campaign.
+
 # Retrospective and R347 maker-answer assessment delivered; STOP
 
 User authorized the retrospective, then a proof/answer interface, and commit/push.
