@@ -1,0 +1,61 @@
+{
+  "profile": "Apple Wide Color Sharing Profile",
+  "purpose": "Sensitivity only; frozen primary metrology retains R345 encoded-RGB/sRGB-transfer convention. This control converts the source through its embedded ICC to sRGB and refits only the smooth paper reference on identical far-control coordinates. Lighting, geometry, color labels, observation eligibility and rendered profile weights remain fixed.",
+  "median_absolute_channel_code_change": [
+    0.0,
+    0.9999999999999964,
+    0.0
+  ],
+  "profile_scores_after_ICC": {
+    "R345": {
+      "alpha": 1.0,
+      "fit": {
+        "points": 19869,
+        "profiles": 107,
+        "rms": 0.20778961728002887,
+        "mae": 0.11480753647763407,
+        "robust_loss": 0.005547230044297378
+      },
+      "validation": {
+        "points": 6507,
+        "profiles": 35,
+        "rms": 0.20298693809670723,
+        "mae": 0.1101374380795736,
+        "robust_loss": 0.005278092918215285
+      },
+      "all": {
+        "points": 26376,
+        "profiles": 142,
+        "rms": 0.20661516238469152,
+        "mae": 0.11365541597884049,
+        "robust_loss": 0.0054808334989752605
+      }
+    },
+    "R346": {
+      "alpha": 1.0,
+      "fit": {
+        "points": 19869,
+        "profiles": 107,
+        "rms": 0.07244236643667672,
+        "mae": 0.055116899316291004,
+        "robust_loss": 0.0017390082948723759
+      },
+      "validation": {
+        "points": 6507,
+        "profiles": 35,
+        "rms": 0.06735320575720541,
+        "mae": 0.05168360360252523,
+        "robust_loss": 0.0015734286704494128
+      },
+      "all": {
+        "points": 26376,
+        "profiles": 142,
+        "rms": 0.07122066119586902,
+        "mae": 0.054269899952874505,
+        "robust_loss": 0.0016981595453986033
+      }
+    }
+  },
+  "R346_validation_RMS_change": 0.0030703835343941638,
+  "lighting_not_refitted": true
+}

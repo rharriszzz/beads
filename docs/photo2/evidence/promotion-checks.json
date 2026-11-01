@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "checked_on": "2026-11-01",
+  "scope": "Bounded curation validation; no historical scientific campaign rerun.",
+  "research_source": "628351437842b2ecd05f8a1765d17449fbea61f9",
+  "master_base": "5d1258cd99301ec803b193ee3b78d9d5ff745d7b",
+  "copied_images_and_receipts": 24,
+  "copied_bytes": 14717685,
+  "layout_dictionary_parity_cases": 192,
+  "current_r344_layout_exact": true,
+  "two_assessment_epoch_entries_exact": true,
+  "unchanged_candidate_exact": true,
+  "native_photo_crop_pixel_checks": 3,
+  "master_files_byte_preserved": 34,
+  "master_file_replaced": "index.html (old redirect, retained in Git history)",
+  "pinned_research_link_targets_verified_from_git_objects": 24,
+  "historical_scientific_files_edited": 0,
+  "original_demonstrations": {
+    "povray": "/usr/bin/povray, version 3.7.0.10",
+    "command_template": "/usr/bin/povray +Ibeads.pov +O/tmp/example-N.png +W160 +H120 +FN -D -J +Q0 +WT2 +K((N-.5)/8)",
+    "cases": [
+      {
+        "case": 1,
+        "clock": 0.0625,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 2,
+        "clock": 0.1875,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 3,
+        "clock": 0.3125,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 4,
+        "clock": 0.4375,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 5,
+        "clock": 0.5625,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 6,
+        "clock": 0.6875,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 7,
+        "clock": 0.8125,
+        "exit_code": 0,
+        "output_exists": true
+      },
+      {
+        "case": 8,
+        "clock": 0.9375,
+        "exit_code": 0,
+        "output_exists": true
+      }
+    ],
+    "qualification": "Low-resolution parse/render checks of the unchanged original program, not R345/R346 scientific reruns. System binary used because the stale /usr/local binary lacked shared libraries."
+  },
+  "browser": {
+    "passed": true,
+    "viewport_widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "checks": [
+      "R344 nine strict unknowns and nine tentative marks; R347 seven strict unknowns and seven tentative marks",
+      "Q1 present in historical position83 sources and absent in current; current six yellow readings",
+      "position selection, copy highlighting, seam click, keyboard, labels, zoom",
+      "no page overflow at tablet/390/320 widths",
+      "all actual images decode; historical gallery and missing-movie notice work",
+      "no script errors, failed requests or external runtime requests",
+      "JavaScript-disabled narrative and full static SVG remain usable"
+    ]
+  },
+  "limits": [
+    "No independent physical/chart verification.",
+    "Historical receipts are exact copies, not new scientific validation.",
+    "Live deployment is verified separately after integration."
+  ]
+}

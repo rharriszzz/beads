@@ -1,1 +1,155 @@
-<META HTTP-EQUIV="Refresh" Content="3; URL=beads.html">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="From a crocheted bead rope to a 208-position candidate pattern: photographs, graph paper, a complete POV-Ray model, and the limits of reconstruction.">
+  <meta name="theme-color" content="#faf8f3">
+  <title>Beads — a necklace, a photograph, a hidden pattern</title>
+  <link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site/style.css">
+  <script src="site/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#main"><span class="beadmark" aria-hidden="true"><i></i><i></i><i></i></span>Beads</a>
+    <nav aria-label="Main navigation">
+      <a href="#construction">Construction</a><a href="#pattern">Pattern</a><a href="#rendering">Reconstruction</a><a href="#study">Code &amp; sources</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Craft · geometry · photographic inference</p>
+      <h1>A necklace.<br>A photograph.<br>A hidden pattern.</h1>
+      <p class="intro">A crocheted rope carries a repeating string of red, yellow and black beads. Can one photograph reveal the sequence—even when much of it faces away?</p>
+      <div class="actions"><a class="button" href="#pattern">Explore the candidate</a><a href="beads.html">Original bead gallery ↗</a></div>
+    </div>
+    <figure>
+      <a href="beads-photo-2.jpg"><img src="beads-photo-2.jpg" width="2540" height="3182" alt="Original red, yellow and black beaded necklace arranged in a looping shape on pink paper" fetchpriority="high"></a>
+      <figcaption>01 / The original photograph. Occlusion, reflections and repeated colors make the inverse problem difficult. <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/beads-photo-2.jpg">Source photograph</a></figcaption>
+    </figure>
+  </div>
+  <aside class="status-band" aria-label="Research status">
+    <div class="wrap status-inner">
+      <div><p class="status-numbers">208 positions. 201 supported. Seven still tentative.</p><p class="status-note">A strong candidate, with complete retained-label agreement under the working indexing.</p></div>
+      <p class="status-note"><strong>Independent confirmation is still missing.</strong> The original chart, physical count and exact topology remain unverified. A convincing render cannot settle those questions.</p>
+    </div>
+  </aside>
+
+  <section class="wrap chapter" id="construction">
+    <div class="chapter-head"><span class="chapter-number">01</span><div class="chapter-title"><p class="eyebrow">What is a beaded rope?</p><h2>Thirteen beads.<br>Two turns around the tube.</h2></div></div>
+    <div class="chapter-body">
+      <div class="two-col">
+        <div><p>The original <a href="beads.pov">POV-Ray program</a> starts with a color sequence, places rounded beads with open bores along a coiled rope, and ray traces bracelets. Its eight built-in examples explore how a string becomes a surface pattern.</p><p>In the ideal <strong>6.5-beads-per-turn</strong> convention, thirteen string positions span two turns. Unroll the surface onto graph paper and the rows alternate between six and seven beads.</p></div>
+        <div><p>On the mathematical chart, each step adds <strong>+1 right, +6 up-left, or +7 up-right</strong>. The chart records string addresses; it is not a perspective picture of bead centers.</p><p>Side continuations reveal structures wrapping around the tube. They show the same addresses again and add no observations.</p><p class="small"><a href="https://github.com/rharriszzz/beads/blob/master/docs/graph-paper.md">Use the standalone graph-paper tool ↗</a><br><a href="BEADS_POV_SINE_ANGLE.md">Read the original model’s sine-angle qualification</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap chapter" id="pattern">
+    <div class="chapter-head"><span class="chapter-number">02</span><div class="chapter-title"><p class="eyebrow">How was the sequence inferred?</p><h2>Follow the neighbors.<br>Then test the repeat.</h2></div></div>
+    <div class="chapter-body">
+      <div class="text-wide"><p>A bright spot is a feature, not automatically a bead. The research connected proposed bodies using photographic row relationships, overlap and exact integer consistency. Those lattice addresses made it possible to combine color readings from different occurrences.</p><p>The result is a <strong>208-position candidate</strong>. Every position has a recorded observation somewhere in the photograph. Seven black positions have too little geographic corroboration to count as strictly supported.</p></div>
+      <div class="table-scroll"><table class="data-table"><caption class="small">Two evidence epochs, kept separate</caption><thead><tr><th>Assessment</th><th>Supported / conflicting / insufficient</th><th>Recorded-label agreement</th></tr></thead><tbody><tr><td>Historical R344</td><td>199 / 2 / 7</td><td>1,038 / 1,041</td></tr><tr><td>R347 maker answers</td><td><strong>201 / 0 / 7</strong></td><td><strong>1,040 / 1,040 retained</strong></td></tr></tbody></table></div>
+      <p class="small">“Supported” requires an uncontradicted color in at least three observations and three fixed geographic blocks. Agreement with these repeatedly studied photographic labels is not independently measured physical accuracy.</p>
+
+      <div class="viewer" aria-label="Interactive graph-paper pattern">
+        <fieldset class="viewer-controls" id="viewer-controls" hidden>
+          <legend class="small">Explore the saved candidate</legend>
+          <label>Evidence <select id="epoch"><option value="r347">R347 maker assessment</option><option value="r344">Historical R344</option></select></label>
+          <label>Colors <select id="interpretation"><option value="strict">Strict: unknowns retained</option><option value="candidate">Provisional completion</option></select></label>
+          <label><input type="checkbox" id="numbers"> Position labels</label>
+          <label>Zoom <input id="zoom" type="range" min="1" max="3" step=".25" value="1"></label>
+        </fieldset>
+        <div class="viewer-main">
+          <div class="paper-scroll" tabindex="0" aria-label="Scrollable chart; mathematical index direction increases upward">
+            <!-- PATTERN_VIEWER -->
+            <a class="viewer-fallback" href="docs/photo2/assets/r347-full-pattern.png"><img src="docs/photo2/assets/r347-full-pattern.png" width="2040" height="2940" alt="Complete current 208-position candidate; seven tentative blacks marked blue" loading="lazy"></a>
+            <!-- /PATTERN_VIEWER -->
+          </div>
+          <aside class="viewer-info" aria-label="Selected pattern position">
+            <h3 id="position-title">Position 0</h3>
+            <div class="position-nav"><button id="previous-position" type="button" aria-label="Previous position">←</button><label for="position">Index</label><input id="position" type="number" min="0" max="207" value="0"><button id="next-position" type="button" aria-label="Next position">→</button></div>
+            <p id="position-status" role="status">Current strict support; unknowns remain visible.</p>
+            <p id="position-evidence">Select a bead or enter a position to inspect its saved evidence.</p>
+            <p class="small">Observation IDs in this epoch:</p><ul class="source-list" id="position-sources"></ul>
+            <p class="small"><a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/r347/answers/ASSESSMENT.md">Read the source assessment ↗</a></p>
+            <div class="legend"><span><i></i> ? unknown</span><span><i class="tentative"></i> tentative completion</span></div>
+            <p class="small">Teal START / purple END cuts enclose 0–207 once. Solid side lines separate basic beads from seven continuations on each side. Mathematical y increases upward.</p>
+          </aside>
+        </div>
+        <div class="viewer-foot" id="epoch-summary">R347: 201 supported / 0 conflicting / 7 insufficient. Lateral and repeated display copies are not extra observations.</div>
+      </div>
+      <p class="small">Presentation regenerated from saved sequences using the extracted Python layout; no new inference. Select any copy to highlight its pattern position. <a href="docs/photo2/data/candidate.json">Download the two-epoch data</a> · <a href="docs/photo2/assets/r344-graph-paper.pdf">Historical R344 print PDF</a></p>
+
+      <details><summary>See the authentic R344 strict / provisional graph-paper figure</summary><div><figure><a href="docs/photo2/assets/r344-graph-paper.png"><img src="docs/photo2/assets/r344-graph-paper.png" width="4962" height="3507" alt="Historical R344 graph paper, strict left and provisional right, with nine unresolved entries and seven extensions per side" loading="lazy"></a><figcaption>Unchanged R344 figure: 199/2/7, with nine strict unknowns. It predates the R347 corrections and withholding. <a href="docs/photo2/assets/r344-graph-paper-numbered.pdf">Numbered print PDF</a> · <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/R344_REPORT.md">Original report</a></figcaption></figure></div></details>
+
+      <h3>Three reviewed cues; two corrections and one abstention</h3>
+      <p>Two former software-red readings received maker <strong>photo-based yellow</strong> corrections. Another cue was unreadable independently of the reconstruction and was withheld. Its selected yellow supplies no independent confirmation.</p>
+      <div class="evidence-strip">
+        <figure><img src="docs/photo2/assets/r347-q01-native.png" width="121" height="121" alt="Literal native-photo crop around Q1, an ambiguous dark edge cue" loading="lazy"><figcaption><strong>Q1 · position 83</strong>R332-R-0037-0040<br>Pigment withheld. Reconstruction-assisted yellow is not evidence.</figcaption></figure>
+        <figure><img src="docs/photo2/assets/r347-q02-native.png" width="121" height="121" alt="Literal native-photo crop around Q2, judged yellow by the maker" loading="lazy"><figcaption><strong>Q2 · position 83</strong>REC266-P035619<br>Maker photo-based yellow. Historical red preserved.</figcaption></figure>
+        <figure><img src="docs/photo2/assets/r347-q03-native.png" width="121" height="121" alt="Literal native-photo crop around Q3, judged yellow by the maker" loading="lazy"><figcaption><strong>Q3 · position 189</strong>R332-R-0197-0183<br>Maker photo-based yellow. Historical red preserved.</figcaption></figure>
+      </div>
+      <p class="small">Saved 121×121 native crops, with targets near their centers. These are image cues, not measured bead centers. <a href="docs/photo2/data/photo-questions.json">Exact source IDs, coordinates and crop boxes</a> · <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/r347/review/index.html">Original numbered keys and proposed adjacency</a>. Q1–3 are completed; no new answers are requested.</p>
+    </div>
+  </section>
+
+  <section class="wrap chapter" id="visibility">
+    <div class="chapter-head"><span class="chapter-number">03</span><div class="chapter-title"><p class="eyebrow">What about the hidden side?</p><h2>Different views can fill<br>the same pattern’s gaps.</h2></div></div>
+    <div class="chapter-body">
+      <p>A repeat divisible by thirteen returns each position to the same phase around the tube. Equally oriented repeats in one fixed view can keep the same colors hidden. Different viewing directions—or suitably oriented occurrences along a curved rope—can expose them, if their addresses can be matched reliably.</p>
+      <figure class="section-figure"><a href="docs/photo2/assets/visibility-complementary.png"><img src="docs/photo2/assets/visibility-complementary.png" width="2520" height="1920" alt="Constructed 52-bead example seen from three directions, with selected color readings combined into the complete word" loading="lazy"></a><figcaption><strong>Synthetic explanatory demonstration.</strong> Three known views of a 52-position word supply 20+16+16 selected readings. Actual POV-Ray renders and saved ownership checks support this constructed example. It does not establish the real necklace’s poses. <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/PATTERN_VISIBILITY_ILLUSTRATED.md">Explanation and checks</a></figcaption></figure>
+      <figure class="section-figure"><a href="docs/photo2/assets/r347-coverage.png"><img src="docs/photo2/assets/r347-coverage.png" width="3240" height="1650" alt="Saved occurrence-address matrix with 1040 retained color cells covering all 208 pattern positions" loading="lazy"></a><figcaption><strong>Saved photographic evidence under the working indexing.</strong> All 208 columns contain a retained observation. Rows are occurrence addresses in one photograph, not independent photographs of thirteen necklaces. Q1 supplies no pigment cell; the union adds no observations. <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/retrospective/visibility-example-checks.json">Source-address manifest</a></figcaption></figure>
+      <details><summary>A controlled example where the front cannot identify the back</summary><div><figure><img src="docs/photo2/assets/visibility-hidden.png" width="2520" height="1610" alt="Two constructed 26-bead words have identical front renders but different backs" loading="lazy"><figcaption>Synthetic example with stated opaque beads and core: two different primitive 26-bead words give pixel-identical front renders. The rear views differ. This finite-render result is not a claim about every bead shape or camera. <a href="docs/photo2/evidence/visibility-verification.json">Saved verification</a></figcaption></figure></div></details>
+    </div>
+  </section>
+
+  <section class="wrap chapter" id="rendering">
+    <div class="chapter-head"><span class="chapter-number">04</span><div class="chapter-title"><p class="eyebrow">What does the reconstruction look like?</p><h2>A complete numerical necklace.</h2></div></div>
+    <div class="chapter-body">
+      <div class="two-col">
+        <div><p>R345 constructs <strong>2,704 separate rounded, hollow beads</strong>, repeating the provisional 208-position word thirteen times with 416 minor turns. It uses the original bead shape and an approximate image-axis spline, with smooth whole-necklace station and phase adjustments.</p><p>Saved checks certify closure and nonintersection for all 8,112 nearby pairs needing examination. That solves interpenetration for this chosen scene.</p><div class="note">The count, thirteen repeats, camera and bead poses remain conditional or approximate construction choices. Scene validity does not verify the physical necklace.</div><p>The render is more regular and glossy than the photograph. Enlarged views retain real differences in spacing, pose, silhouette and paper texture.</p><p><a href="docs/photo2/assets/r345-render.png">Open the complete native-resolution render ↗</a></p></div>
+        <figure><a href="docs/photo2/assets/r345-render.png"><img src="docs/photo2/assets/r345-render.png" width="2540" height="3182" alt="Full R345 ray-traced necklace with 2704 rounded hollow beads on synthetic pink paper" loading="lazy"></a><figcaption>Unchanged R345 ray trace. Geometry, count and optics are explicit assumptions; no photograph is pasted onto the model. <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/R345_REPORT.md">Scene and validation report</a></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap chapter" id="shadow">
+    <div class="chapter-head"><span class="chapter-number">05</span><div class="chapter-title"><p class="eyebrow">How did the lighting improve?</p><h2>Let the whole shadow<br>describe the light.</h2></div></div>
+    <div class="chapter-body">
+      <p>R345’s shadow was too short and sharp. R346 kept the camera, every bead transform, all materials and the paper fixed. One large tilted area source and shared warm room fill produced a longer, softer whole-necklace shadow.</p>
+      <figure class="section-figure"><a href="docs/photo2/assets/r346-comparison.jpg"><img src="docs/photo2/assets/r346-comparison.jpg" width="1905" height="836" alt="Original photograph, R345 lighting, and R346 lighting compared at the same whole-necklace scale" loading="lazy"></a><figcaption>Original / R345 / R346. The last two use identical geometry and materials. This saved comparison is unchanged. <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/R346_REPORT.md">Whole-necklace shadow report</a></figcaption></figure>
+      <div class="metric-pair"><div><span class="mini-stat">20.4 → 6.8</span><p>Paper-profile RMS, percentage points<br>All eligible contours, R345 → R346</p></div><div><span class="mini-stat">20.0 → 6.4</span><p>Paper-profile RMS, percentage points<br>Reserved geographic stations, R345 → R346</p></div></div>
+      <p>The analysis samples 96 stations on both sides, using 142 of 192 contours after grayscale boundary checks. Conservative guards exclude bead material. A smooth paper reference is estimated far from the necklace; the measurement is relative photographic brightness loss, not calibrated physical accuracy.</p>
+      <figure class="section-figure"><a href="docs/photo2/assets/r346-shadow-fields.png"><img src="docs/photo2/assets/r346-shadow-fields.png" width="1802" height="788" alt="Whole-loop photographic and rendered paper-shadow fields; gray bands exclude material and uncertain boundaries" loading="lazy"></a><figcaption>Gray excludes material and uncertain edges. The photographic field depends on an estimated unshadowed-paper reference. Same image-coordinate paper comparisons also improve, with held RMS 19.8→8.1 points.</figcaption></figure>
+      <details><summary>Profiles and an enlarged bend</summary><div><figure class="section-figure"><img src="docs/photo2/assets/r346-shadow-profiles.png" width="2700" height="1134" alt="Saved R346 whole-loop shadow profiles comparing photograph, R345, and R346" loading="lazy"><figcaption>Native-photo pixel distances and normalized linear-light paper loss. <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/r346/output/shadow-measurements.json">Saved measurements and denominators</a></figcaption></figure><figure><img src="docs/photo2/assets/r346-inner-bend.jpg" width="1650" height="435" alt="Enlarged inner bend showing the original photo, R345 and R346 with remaining bead-scale discrepancies" loading="lazy"><figcaption>The broad shadow becomes closer; regular bead poses, gloss and local geometry still differ.</figcaption></figure></div></details>
+      <p class="small">A plausible shared light, not a unique lamp calibration. The true contact shadow under the bodies remains mostly hidden; paper-reference, silhouette and color-transfer uncertainty remain. No individual-bead shadow targets or section lights were introduced.</p>
+    </div>
+  </section>
+
+  <section class="wrap chapter" id="uncertainty">
+    <div class="chapter-head"><span class="chapter-number">06</span><div class="chapter-title"><p class="eyebrow">What remains uncertain?</p><h2>A candidate has premises.<br>A render has choices.</h2></div></div>
+    <div class="chapter-body">
+      <ul class="uncertainties"><li><strong>Seven provisional black positions:</strong> 43, 75, 82, 89, 140, 147 and 186. They have observations, but insufficient geographic corroboration.</li><li><strong>Count and topology:</strong> A/208 is uniquely compatible only within the accepted lattice, H=(214,201), specified A/B counting conventions, complete-repeat premise and period below 400. Those premises are not independently proven.</li><li><strong>Physical geometry and optics:</strong> the camera, centerline, dimensions, bead poses and lighting remain approximate. The full model’s validity does not make them measured quantities.</li><li><strong>Authentic chart and necklace:</strong> neither has yet supplied independent confirmation. A chart match under cyclic offset/reversal would confirm intended design, separately from every assembled bead.</li></ul>
+      <div class="note"><strong>R348 sensitivity:</strong> hypothetically deleting Q1 and its three links leaves the saved graph connected, with the same edge-derived winding generator, remaining coordinates modulo H, and conditional A/208 result. This is a saved-graph check—not a counterfactual image-inference rerun or adoption of a modified graph.</div>
+      <p>Future work should seek discriminating evidence: the authentic chart, usable independent views of tentative pigments, and physical count/correspondence checks. These are recommendations; this publication starts no new reconstruction campaign.</p>
+      <p class="small"><a href="https://github.com/rharriszzz/beads/blob/master/docs/photo2/overview.md">Current claim register</a> · <a href="https://github.com/rharriszzz/beads/blob/628351437842b2ecd05f8a1765d17449fbea61f9/photo2/r348/SENSITIVITY.md">R348 methods and limits</a></p>
+    </div>
+  </section>
+
+  <section class="wrap chapter" id="study">
+    <div class="chapter-head"><span class="chapter-number">07</span><div class="chapter-title"><p class="eyebrow">Study it. Reuse it.</p><h2>Small tools, an open record,<br>and the experiments behind it.</h2></div></div>
+    <div class="chapter-body resources">
+      <div><h3>Start with the useful parts</h3><ul class="resource-links"><li><a href="https://github.com/rharriszzz/beads/blob/master/docs/graph-paper.md">Sequence-only graph-paper tool ↗</a><small>Standard-library Python; arbitrary repeat lengths, negative indices and stepped cuts. Independent tests; no photographic inputs.</small></li><li><a href="https://github.com/rharriszzz/beads/blob/master/docs/photo2/reproducibility.md">Reproduction guide ↗</a><small>Small local site replay plus pinned full-scene sources, configurations, commands and validation limits.</small></li><li><a href="https://github.com/rharriszzz/beads/blob/master/docs/photo2/methods-and-lessons.md">Methods and lessons ↗</a><small>Separate pattern recovery from optics; test known answers; distinguish search failure, inadequate targets and ambiguous measurements.</small></li></ul></div>
+      <div><h3>Keep the complete history</h3><ul class="resource-links"><li><a href="https://github.com/rharriszzz/beads/tree/628351437842b2ecd05f8a1765d17449fbea61f9">Pinned research archive ↗</a><small>Full experiment history, including rejected methods. It remains on photo-2-strategy-v3; this site publishes only selected files.</small></li><li><a href="docs/photo2/provenance.json">Figure provenance and hashes</a><small>Exact original paths and fixed source commit for all copied illustrations and receipts. No historical image was regenerated.</small></li><li><a href="beads.html">Historical bead demonstration</a><small>Original photographs, links and simulated bracelets. The preexisting model and demonstration remain accessible.</small></li></ul></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><p>Beads · Richard Harris<br>Curated from research through R348 and the October 2026 visibility explanation.</p><p><a href="https://github.com/rharriszzz/beads">Repository</a> · <a href="https://rharriszzz.github.io/">More projects</a><br>Actual photographs and saved renders. Explicit scientific limits.</p></div></footer>
+</body>
+</html>

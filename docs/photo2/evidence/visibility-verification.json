@@ -1,0 +1,609 @@
+{
+  "scope": "Constructed illustrations and saved-observation display only; no reconstruction fit.",
+  "revised_toys": {
+    "pattern_A": "RRRBRRRRRRBRRRRRYRRRRRRYRR",
+    "pattern_B": "RRRYRRRRRRBRRRRRBRRRRRRYRR",
+    "pattern_27": "RRRBRRRRRRBRRRRRYRRRRRRYRRR",
+    "changed_rear_phases": [
+      3,
+      10
+    ],
+    "swapped_positions": [
+      3,
+      16
+    ],
+    "color_counts": {
+      "R": 22,
+      "B": 2,
+      "Y": 2
+    },
+    "shortest_periods": [
+      26,
+      26,
+      27,
+      52
+    ],
+    "distinct_up_to_rotation_and_reversal": true,
+    "reason": "First ray trace revealed rear phase-4 surface slivers; see development/rear-leak."
+  },
+  "front_render_pixels_compared": 452480,
+  "front_A_equals_B": true,
+  "changed_body_front_surface_pixels": 0,
+  "analytic_deep_rear_occlusion_bounds": [
+    {
+      "phase": 3,
+      "maximum_absolute_x": 1.6457263218638927,
+      "maximum_z": -1.6926875628868379
+    },
+    {
+      "phase": 10,
+      "maximum_absolute_x": 1.6457263218638933,
+      "maximum_z": -1.6926875628868374
+    }
+  ],
+  "back_differing_pixels": 36608,
+  "selected_position_3_visible_surface_pixels_by_27_copy": [
+    0,
+    945,
+    11925,
+    18384
+  ],
+  "illustrative_helix": {
+    "radius": 2.5,
+    "axial_step": 0.34,
+    "bead_radius": 0.95,
+    "bead_height_ratio": 0.55,
+    "opaque_core_radius": 1.85,
+    "matte_opaque": true,
+    "guard_beads_each_end": 13,
+    "minimum_center_distance": 2.3483591432871913,
+    "enclosing_sphere_diameter": 2.168415319997532
+  },
+  "middle_view_checks": [
+    {
+      "view_degrees": 0,
+      "selected_positions": [
+        0,
+        1,
+        6,
+        7,
+        12,
+        13,
+        14,
+        19,
+        20,
+        25,
+        26,
+        27,
+        32,
+        33,
+        38,
+        39,
+        40,
+        45,
+        46,
+        51
+      ],
+      "visible_surface_pixels_for_each_selected_body": {
+        "0": 16846,
+        "1": 21067,
+        "6": 28738,
+        "7": 28738,
+        "12": 25866,
+        "13": 27816,
+        "14": 25866,
+        "19": 28738,
+        "20": 28738,
+        "25": 25866,
+        "26": 27816,
+        "27": 25866,
+        "32": 28738,
+        "33": 28738,
+        "38": 25866,
+        "39": 27816,
+        "40": 25866,
+        "45": 28738,
+        "46": 28738,
+        "51": 15746
+      }
+    },
+    {
+      "view_degrees": 120,
+      "selected_positions": [
+        2,
+        3,
+        8,
+        9,
+        15,
+        16,
+        21,
+        22,
+        28,
+        29,
+        34,
+        35,
+        41,
+        42,
+        47,
+        48
+      ],
+      "visible_surface_pixels_for_each_selected_body": {
+        "2": 27798,
+        "3": 27186,
+        "8": 28154,
+        "9": 28734,
+        "15": 28400,
+        "16": 27186,
+        "21": 28154,
+        "22": 28734,
+        "28": 28400,
+        "29": 27186,
+        "34": 28154,
+        "35": 28734,
+        "41": 28400,
+        "42": 27186,
+        "47": 28154,
+        "48": 28734
+      }
+    },
+    {
+      "view_degrees": 240,
+      "selected_positions": [
+        4,
+        5,
+        10,
+        11,
+        17,
+        18,
+        23,
+        24,
+        30,
+        31,
+        36,
+        37,
+        43,
+        44,
+        49,
+        50
+      ],
+      "visible_surface_pixels_for_each_selected_body": {
+        "4": 28734,
+        "5": 28154,
+        "10": 27186,
+        "11": 28400,
+        "17": 28734,
+        "18": 28154,
+        "23": 27186,
+        "24": 28400,
+        "30": 28734,
+        "31": 28154,
+        "36": 27186,
+        "37": 28400,
+        "43": 28734,
+        "44": 28154,
+        "49": 26533,
+        "50": 23306
+      }
+    }
+  ],
+  "graph_paper_positions": 208,
+  "graph_paper_rows": 32,
+  "graph_paper_row_counts": [
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7
+  ],
+  "graph_paper_page_down_row_convention": true,
+  "seven_tentative_positions": [
+    43,
+    75,
+    82,
+    89,
+    140,
+    147,
+    186
+  ],
+  "occupied_occurrence_position_cells": 1040,
+  "retained_observations": 1040,
+  "actual_source_sha256": {
+    "photo2/r344/graph.json.gz": "f8ec341b72f0376f3c9dce2e6096f728c224e3069d5e159c6dbf1e7fbe015dbb",
+    "photo2/r347/answers/assessment.json": "5fcc8f28dc253eb235775efb1769ba0043315248ee4a0f89525449bd0b4a1f32",
+    "photo2/r344/pattern208.json": "1cec449725cc670128f62497b9339647dc7b4e1e12a65fadb303783417b26db8"
+  },
+  "bead_macro_source_sha256": "b8fb82afc5501f471b8bf5917a4f3766854c58e90ee5c2e5af41123eb3184d40",
+  "generator_sha256": "d2be7922b2aee99129ea937415581743765eebec179c54d02295455f6c3aaf9c",
+  "raw_source_id_coordinate_and_color_replay": true,
+  "render_commands": [
+    {
+      "scene": "photo2/retrospective/visibility/01-hidden-patterns.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/01-hidden-patterns.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/01-hidden-patterns.png",
+        "+W2520",
+        "+H1610",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-front-A.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-front-A.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-front-A.png",
+        "+W640",
+        "+H707",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-front-B.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-front-B.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-front-B.png",
+        "+W640",
+        "+H707",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-back-A.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-back-A.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-back-A.png",
+        "+W640",
+        "+H707",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-back-B.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-back-B.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-back-B.png",
+        "+W640",
+        "+H707",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-hidden-ownership.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-hidden-ownership.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-hidden-ownership.png",
+        "+W640",
+        "+H707",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/02-phase-shift.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/02-phase-shift.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/02-phase-shift.png",
+        "+W2400",
+        "+H1333",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/03-phase-shift-tubes.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/03-phase-shift-tubes.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/03-phase-shift-tubes.png",
+        "+W2400",
+        "+H1467",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-phase-copy-0.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-0.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-0.png",
+        "+W640",
+        "+H734",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-phase-copy-1.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-1.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-1.png",
+        "+W640",
+        "+H734",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-phase-copy-2.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-2.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-2.png",
+        "+W640",
+        "+H734",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-phase-copy-3.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-3.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-phase-copy-3.png",
+        "+W640",
+        "+H734",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/04-complementary-views.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/04-complementary-views.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/04-complementary-views.png",
+        "+W2520",
+        "+H1920",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-middle-view-1.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-middle-view-1.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-middle-view-1.png",
+        "+W800",
+        "+H1768",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-middle-view-2.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-middle-view-2.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-middle-view-2.png",
+        "+W800",
+        "+H1768",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/check-middle-view-3.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/check-middle-view-3.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/check-middle-view-3.png",
+        "+W800",
+        "+H1768",
+        "+FN",
+        "-D",
+        "-J",
+        "-A",
+        "+WT2",
+        "File_Gamma=1"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/05-full-pattern.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/05-full-pattern.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/05-full-pattern.png",
+        "+W2040",
+        "+H2940",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/06-observation-coverage.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/06-observation-coverage.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/06-observation-coverage.png",
+        "+W3240",
+        "+H1650",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/07-coverage-000-103.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/07-coverage-000-103.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/07-coverage-000-103.png",
+        "+W2480",
+        "+H1920",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    },
+    {
+      "scene": "photo2/retrospective/visibility/07-coverage-104-207.pov",
+      "command": [
+        "povray",
+        "+I/home/rharris/git/beads/photo2/retrospective/visibility/07-coverage-104-207.pov",
+        "+O/home/rharris/git/beads/photo2/retrospective/visibility/07-coverage-104-207.png",
+        "+W2480",
+        "+H1920",
+        "+FN",
+        "-D",
+        "-J",
+        "+WT2",
+        "+A0.12",
+        "+AM2",
+        "+R2"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "path": "photo2/retrospective/visibility/01-hidden-patterns.png",
+      "sha256": "a811689ab40c250069b597c6afd2a49f90e538e330eb8d5b0e928c1f113b92a3"
+    },
+    {
+      "path": "photo2/retrospective/visibility/02-phase-shift.png",
+      "sha256": "428a5a2acb9fe5002500f7249fa0a3160f7a4d82d1d2ac4e41330746611d14c4"
+    },
+    {
+      "path": "photo2/retrospective/visibility/03-phase-shift-tubes.png",
+      "sha256": "c6fbf9bd0a13655a80b95dc301fb781db8788f655918d2988dd6915efbc92e86"
+    },
+    {
+      "path": "photo2/retrospective/visibility/04-complementary-views.png",
+      "sha256": "c4e0c87c4fbc702e607165414475cfd4be5d71db64b4036b89de658a4e20b5ff"
+    },
+    {
+      "path": "photo2/retrospective/visibility/05-full-pattern.png",
+      "sha256": "af7d282bc9896d7c5af41ec1a7db03054b1be94f25c23e458d1f0c45d9b99980"
+    },
+    {
+      "path": "photo2/retrospective/visibility/06-observation-coverage.png",
+      "sha256": "0500d0b96f88825e6b8bd41d4f720f78f7a969a257f98bd73a23327b8d7b53ca"
+    },
+    {
+      "path": "photo2/retrospective/visibility/07-coverage-000-103.png",
+      "sha256": "62c7221308475df97582e466dd98ed3be6d2a00dcda233afb080a34b3c8e7833"
+    },
+    {
+      "path": "photo2/retrospective/visibility/07-coverage-104-207.png",
+      "sha256": "078f86a18d0f0de289b52ad397520c35ce945632653f403c85ee9fa52866d8e1"
+    }
+  ]
+}
