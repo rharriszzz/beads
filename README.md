@@ -95,7 +95,7 @@ of this promotion.
 
 ## Small local checks
 
-Python 3.10+ and Node 20+ suffice for the maintained tools and static site:
+Use Python 3.15 (or 3.14) and Node.js 24 LTS for the maintained tools and public static site:
 
 ```sh
 python3 -m unittest discover -s tests -v
